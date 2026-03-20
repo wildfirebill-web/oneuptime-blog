@@ -87,6 +87,7 @@ Before configuring the S3 backend, you need to create the required AWS resources
 
 ```hcl
 # bootstrap/main.tf
+
 # This configuration creates the infrastructure needed for the S3 backend
 # Run this once with local state, then migrate to the remote backend
 

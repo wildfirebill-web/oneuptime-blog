@@ -14,6 +14,7 @@ AWS EKS supports IPv6 pod networking using the AWS VPC CNI plugin. In IPv6 mode,
 
 ```bash
 # Create EKS cluster with IPv6 IP family
+
 eksctl create cluster \
     --name ipv6-cluster \
     --version 1.29 \
@@ -69,7 +70,7 @@ kubectl get pods -A -o wide | grep -v "^NAMESPACE" | \
 ## Configure Services for IPv6
 
 ```yaml
-# service-ipv6.yaml — Service with IPv6
+# service-ipv6.yaml - Service with IPv6
 apiVersion: v1
 kind: Service
 metadata:
@@ -91,7 +92,7 @@ spec:
 ```
 
 ```yaml
-# deployment-ipv6.yaml — Deployment targeting IPv6 service
+# deployment-ipv6.yaml - Deployment targeting IPv6 service
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -124,7 +125,7 @@ spec:
 ## Load Balancer Service for IPv6
 
 ```yaml
-# lb-service-ipv6.yaml — LoadBalancer with IPv6
+# lb-service-ipv6.yaml - LoadBalancer with IPv6
 apiVersion: v1
 kind: Service
 metadata:
@@ -182,4 +183,4 @@ kubectl exec pod-a -- ping6 -c 3 <pod-b-ipv6-address>
 
 ## Conclusion
 
-AWS EKS IPv6 mode assigns each pod a unique IPv6 address from the VPC's `/56` block, eliminating IPv4 exhaustion. Enable IPv6 at cluster creation with `--ip-family IPv6` — it cannot be changed after creation. Services in IPv6 clusters get IPv6 ClusterIPs. Use the AWS Load Balancer Controller with the `dualstack` annotation for ALBs that accept IPv6 client connections. Verify pod networking with `kubectl get pods -o wide` and confirm IPv6 addresses appear in the POD-IP column.
+AWS EKS IPv6 mode assigns each pod a unique IPv6 address from the VPC's `/56` block, eliminating IPv4 exhaustion. Enable IPv6 at cluster creation with `--ip-family IPv6` - it cannot be changed after creation. Services in IPv6 clusters get IPv6 ClusterIPs. Use the AWS Load Balancer Controller with the `dualstack` annotation for ALBs that accept IPv6 client connections. Verify pod networking with `kubectl get pods -o wide` and confirm IPv6 addresses appear in the POD-IP column.

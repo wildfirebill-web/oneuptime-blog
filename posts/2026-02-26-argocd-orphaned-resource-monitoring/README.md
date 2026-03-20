@@ -65,6 +65,7 @@ The `warn: true` setting makes ArgoCD report orphaned resources as warnings in t
 
 ```bash
 # Enable orphaned resource monitoring on an existing project
+
 argocd proj set production --orphaned-resources-warn
 ```
 

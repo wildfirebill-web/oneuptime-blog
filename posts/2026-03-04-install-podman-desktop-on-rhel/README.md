@@ -16,6 +16,7 @@ Ensure Podman is installed on your system:
 
 ```bash
 # Install Podman if not already present
+
 sudo dnf install -y podman
 
 # Verify Podman is working

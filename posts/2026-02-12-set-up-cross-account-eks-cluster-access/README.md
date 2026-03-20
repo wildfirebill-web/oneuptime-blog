@@ -57,6 +57,7 @@ Replace `111111111111` with Account A's ID. The external ID adds an extra layer 
 
 ```bash
 # In Account B: Create the cross-account role
+
 aws iam create-role \
   --role-name EKSCrossAccountAccess \
   --assume-role-policy-document file://trust-policy.json

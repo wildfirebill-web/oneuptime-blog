@@ -1,14 +1,14 @@
-# How to Configure the Tunnel Server Address for Edge Agents
+# How to Configure the Tunnel Server Address for Edge Agents - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Edge Agent, Tunnel Server, Configuration, Network
+Tags: Portainer, Edge Agent, Tunnel Server, Configuration, Networks
 
 Description: Configure the Portainer tunnel server address and port that Edge Agents use to establish their management connection.
 
 ## Introduction
 
-The Portainer tunnel server is the component that handles communication between edge agents and the Portainer server. When running Portainer in a custom network environment, you may need to configure a specific address or port for the tunnel server — particularly when using a reverse proxy or when running on non-standard ports.
+The Portainer tunnel server is the component that handles communication between edge agents and the Portainer server. When running Portainer in a custom network environment, you may need to configure a specific address or port for the tunnel server - particularly when using a reverse proxy or when running on non-standard ports.
 
 ## Default Tunnel Server Configuration
 
@@ -36,6 +36,7 @@ docker run -d \
 
 ```yaml
 # docker-compose.yml
+
 services:
   portainer:
     image: portainer/portainer-ce:latest

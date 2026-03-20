@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, epoll, Event-Driven, Linux, Networking
+Tags: Python, IPv4, Epoll, Event-Driven, Linux, Networking
 
-Description: Learn how to build a high-performance event-driven IPv4 server using the Linux epoll API directly in Python with the select module, enabling efficient handling of thousands of connections in a single thread.
+Description: Learn how to build a high-performance event-driven IPv4 server using the Linux epoll API directly in Python with the select module, enabling efficient handling of thousands of connections in a...
 
 ## What Is epoll?
 
@@ -17,6 +17,7 @@ import select
 import socket
 
 # Note: select.epoll is only available on Linux
+
 EPOLL_EDGE_TRIGGERED = select.EPOLLET  # only notify on transitions
 EPOLL_LEVEL_TRIGGERED = 0              # notify while fd is readable
 
@@ -71,7 +72,7 @@ try:
                 sent = connections[fd].send(buffers[fd])
                 buffers[fd] = buffers[fd][sent:]
                 if not buffers[fd]:
-                    # Nothing more to write — go back to reading
+                    # Nothing more to write - go back to reading
                     epoll.modify(fd, select.EPOLLIN)
 
             elif event & select.EPOLLHUP:
@@ -111,9 +112,9 @@ while True:
             break  # connection closed
         buffer += chunk
     except BlockingIOError:
-        break   # EAGAIN — no more data available right now
+        break   # EAGAIN - no more data available right now
 ```
 
 ## Conclusion
 
-`select.epoll` is Linux-only but provides the best performance for servers with thousands of connections. Level-triggered mode (default) fires whenever data is available — simpler to implement. Edge-triggered mode fires only on state changes — requires draining all data in the handler and handling `EAGAIN`. For cross-platform code, use `selectors.DefaultSelector` which uses `epoll` on Linux, `kqueue` on macOS, and falls back to `select` on other platforms. For new Python applications, `asyncio` provides a higher-level API on top of these same OS primitives.
+`select.epoll` is Linux-only but provides the best performance for servers with thousands of connections. Level-triggered mode (default) fires whenever data is available - simpler to implement. Edge-triggered mode fires only on state changes - requires draining all data in the handler and handling `EAGAIN`. For cross-platform code, use `selectors.DefaultSelector` which uses `epoll` on Linux, `kqueue` on macOS, and falls back to `select` on other platforms. For new Python applications, `asyncio` provides a higher-level API on top of these same OS primitives.

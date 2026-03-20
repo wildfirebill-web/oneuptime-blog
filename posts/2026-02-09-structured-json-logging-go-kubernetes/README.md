@@ -528,6 +528,7 @@ With structured JSON logging, query logs efficiently:
 
 ```logql
 # Find all errors for specific user
+
 {namespace="production"} | json | user_id="john" | level="error"
 
 # Calculate error rate by service

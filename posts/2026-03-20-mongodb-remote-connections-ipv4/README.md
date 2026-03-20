@@ -34,6 +34,7 @@ security:
 
 ```bash
 # First, connect without auth to create admin user:
+
 sudo systemctl stop mongod
 
 # Start without auth temporarily

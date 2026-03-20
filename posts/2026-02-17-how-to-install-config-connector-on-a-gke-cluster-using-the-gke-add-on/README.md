@@ -32,6 +32,7 @@ Let me show you how to enable those APIs if you have not already done so.
 
 ```bash
 # Enable the required APIs for Config Connector
+
 gcloud services enable container.googleapis.com \
   cloudresourcemanager.googleapis.com \
   --project=my-project-id

@@ -33,6 +33,7 @@ The `ip` command replaces the older `ifconfig` and `route` commands.
 
 ```bash
 # Show all network interfaces with their IP addresses
+
 ip addr show
 
 # Show only IPv4 addresses in a compact format

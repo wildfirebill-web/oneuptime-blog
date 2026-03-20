@@ -477,6 +477,7 @@ For production use, leverage established tools like `pict` or `allpairs`.
 
 ```bash
 # Install Microsoft PICT
+
 brew install pict
 
 # Create model file

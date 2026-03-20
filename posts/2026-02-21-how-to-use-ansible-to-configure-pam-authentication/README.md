@@ -39,6 +39,7 @@ The `community.general.pamd` module lets you modify PAM configuration files with
 
 ```yaml
 # configure-pam-basic.yml - Basic PAM configuration
+
 - name: Configure PAM authentication
   hosts: all
   become: yes

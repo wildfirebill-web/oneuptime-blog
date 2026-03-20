@@ -39,6 +39,7 @@ The External Secrets Operator syncs secrets from external providers (Vault, AWS 
 
 ```yaml
 # ArgoCD Application managing External Secrets
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

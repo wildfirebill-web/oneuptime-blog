@@ -42,6 +42,7 @@ For a quick health check, use the diagnostics command:
 
 ```bash
 # Get comprehensive diagnostics for your interconnect
+
 gcloud compute interconnects get-diagnostics my-interconnect \
     --format="yaml(result)"
 ```

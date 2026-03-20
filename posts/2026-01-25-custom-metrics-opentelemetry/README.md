@@ -230,6 +230,7 @@ module.exports = { processPayment, responseSizeHistogram };
 
 ```python
 # metrics.py
+
 import os
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider

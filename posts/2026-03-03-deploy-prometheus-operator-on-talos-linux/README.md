@@ -31,6 +31,7 @@ The recommended way to deploy the Prometheus Operator is through the kube-promet
 
 ```bash
 # Add the Helm repo
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

@@ -16,6 +16,7 @@ Run Trivy as a Docker container to scan any image without installing it:
 
 ```bash
 # Scan an image from Docker Hub
+
 docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
   aquasec/trivy:latest image nginx:latest
@@ -53,11 +54,11 @@ docker run --rm \
   "$IMAGE"
 
 if [ $? -ne 0 ]; then
-  echo "CRITICAL vulnerabilities found — blocking deployment"
+  echo "CRITICAL vulnerabilities found - blocking deployment"
   exit 1
 fi
 
-echo "Scan passed — proceeding with deployment"
+echo "Scan passed - proceeding with deployment"
 curl -X POST "$PORTAINER_WEBHOOK"
 ```
 
@@ -135,9 +136,9 @@ docker run --rm \
 
 Create a `.trivyignore` file to acknowledge accepted risk:
 
-```
+```text
 # .trivyignore
-CVE-2023-12345   # Not exploitable in our configuration — review by 2026-06-01
+CVE-2023-12345   # Not exploitable in our configuration - review by 2026-06-01
 CVE-2023-67890   # No fix available yet
 ```
 

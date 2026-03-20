@@ -31,6 +31,7 @@ First, install GORM and the database driver for your preferred database. We will
 
 ```bash
 # Install GORM core library
+
 go get -u gorm.io/gorm
 
 # Install PostgreSQL driver

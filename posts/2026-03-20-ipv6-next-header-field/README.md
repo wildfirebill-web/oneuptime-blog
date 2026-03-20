@@ -12,7 +12,7 @@ The IPv6 Next Header field is an 8-bit field that identifies what follows the cu
 
 ## How the Chain Works
 
-```
+```text
 IPv6 Base Header
   Next Header = 43 (Routing Header)
                 ↓
@@ -126,6 +126,7 @@ def walk_ipv6_headers(packet: bytes) -> list:
     return headers
 
 # Display header chain
+
 def display_chain(packet: bytes):
     chain = walk_ipv6_headers(packet)
     for i, (name, offset, length) in enumerate(chain):
@@ -156,7 +157,7 @@ sudo tcpdump -i eth0 "ip6[6] == 44"   # Fragment Header present
 
 ## No Next Header (59)
 
-When Next Header = 59, it means there is no following header — the IPv6 payload is empty or contains data that has no standard header:
+When Next Header = 59, it means there is no following header - the IPv6 payload is empty or contains data that has no standard header:
 
 ```bash
 # Capture packets with No Next Header

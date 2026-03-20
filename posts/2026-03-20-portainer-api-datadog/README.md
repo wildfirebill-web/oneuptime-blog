@@ -38,6 +38,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Configuration
+
 PORTAINER_URL = "https://portainer.example.com"
 PORTAINER_API_KEY = "your-portainer-api-key"
 DATADOG_API_KEY = "your-datadog-api-key"
@@ -255,4 +256,4 @@ services:
 
 ## Conclusion
 
-Integrating Portainer with Datadog gives you unified visibility across your entire infrastructure. Container metrics flow into Datadog alongside host metrics, application traces, and logs—enabling correlation analysis, SLO tracking, and anomaly detection across your containerized workloads.
+Integrating Portainer with Datadog gives you unified visibility across your entire infrastructure. Container metrics flow into Datadog alongside host metrics, application traces, and logs-enabling correlation analysis, SLO tracking, and anomaly detection across your containerized workloads.

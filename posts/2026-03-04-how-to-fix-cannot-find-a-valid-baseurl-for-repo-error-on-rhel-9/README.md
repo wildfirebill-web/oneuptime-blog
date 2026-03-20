@@ -79,6 +79,7 @@ sudo dnf makecache
 
 ```bash
 # If behind a proxy
+
 sudo subscription-manager config --server.proxy_hostname=proxy.example.com --server.proxy_port=8080
 ```
 

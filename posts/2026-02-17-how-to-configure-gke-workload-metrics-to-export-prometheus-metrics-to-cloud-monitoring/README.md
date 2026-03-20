@@ -18,6 +18,7 @@ GKE clusters running version 1.25 and later have managed collection enabled by d
 
 ```bash
 # Enable managed Prometheus collection on the cluster
+
 gcloud container clusters update my-cluster \
   --zone us-central1-a \
   --enable-managed-prometheus

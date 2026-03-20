@@ -320,6 +320,7 @@ def remove_field_from_index(index, field_name, batch_size=1000):
     return success, failed
 
 # Usage
+
 success, failed = remove_field_from_index("products", "deprecated_field")
 print(f"Updated {success} documents, {len(failed)} failures")
 ```

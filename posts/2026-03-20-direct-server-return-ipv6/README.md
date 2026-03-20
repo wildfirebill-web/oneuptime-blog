@@ -6,11 +6,11 @@ Tags: IPv6, DSR, Direct Server Return, Load Balancing, LVS, Performance
 
 Description: A guide to implementing Direct Server Return (DSR) load balancing with IPv6, where servers respond directly to clients bypassing the load balancer for outbound traffic.
 
-Direct Server Return (DSR) is a load balancing mode where the load balancer only processes inbound traffic — servers respond directly to clients without the return traffic passing through the load balancer. This dramatically increases throughput since the load balancer only sees half the traffic. DSR with IPv6 requires careful NDP/ARP handling.
+Direct Server Return (DSR) is a load balancing mode where the load balancer only processes inbound traffic - servers respond directly to clients without the return traffic passing through the load balancer. This dramatically increases throughput since the load balancer only sees half the traffic. DSR with IPv6 requires careful NDP/ARP handling.
 
 ## DSR Architecture
 
-```
+```text
                     ┌──────────────────────────────┐
                     │                              │
 Client → Load Balancer → Server 1               Client
@@ -26,6 +26,7 @@ The load balancer forwards packets to real servers with the destination VIP unch
 
 ```bash
 # On the load balancer: configure IPVS in DR mode
+
 sudo ipvsadm -A -6 -t [2001:db8::vip]:80 -s rr
 
 # Add real servers in DR (-g = gatewaying = DSR) mode
@@ -47,7 +48,7 @@ Each real server must accept packets destined for the VIP:
 # Add VIP to loopback interface on each server
 sudo ip -6 addr add 2001:db8::vip/128 dev lo
 
-# This is /128 (single address) — prevents NDP advertisements
+# This is /128 (single address) - prevents NDP advertisements
 # The server accepts packets to this address but doesn't respond to NDP for it
 
 # Verify the address is on loopback
@@ -83,7 +84,7 @@ sudo ip6tables -A INPUT -i eth0 \
 
 HAProxy can also implement DSR-like behavior using transparent mode:
 
-```
+```text
 # /etc/haproxy/haproxy.cfg
 
 global
@@ -127,4 +128,4 @@ tcpdump -i eth0 -n 'host 2001:db8::vip or host 2001:db8::server1 or host 2001:db
 | DR (DSR) | Inbound only | Very high | High-bandwidth apps |
 | TUN | Inbound only | High | Geographically distributed |
 
-DSR with IPv6 is particularly valuable for high-bandwidth services like video streaming where response traffic is much larger than request traffic — the load balancer only sees the small inbound requests while servers send large responses directly to IPv6 clients.
+DSR with IPv6 is particularly valuable for high-bandwidth services like video streaming where response traffic is much larger than request traffic - the load balancer only sees the small inbound requests while servers send large responses directly to IPv6 clients.

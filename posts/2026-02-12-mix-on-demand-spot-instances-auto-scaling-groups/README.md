@@ -203,6 +203,7 @@ Enable capacity rebalancing to proactively replace Spot instances that are at ri
 
 ```bash
 # Enable capacity rebalancing on an existing ASG
+
 aws autoscaling update-auto-scaling-group \
   --auto-scaling-group-name mixed-asg \
   --capacity-rebalance

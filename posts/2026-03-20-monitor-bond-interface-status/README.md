@@ -19,7 +19,7 @@ cat /proc/net/bonding/bond0
 ```
 
 Example output for active-backup bond:
-```
+```text
 Ethernet Channel Bonding Driver: v3.7.1
 
 Bonding Mode: fault-tolerance (active-backup)
@@ -47,6 +47,7 @@ Link Failure Count: 0
 
 ```bash
 # Check the currently active slave
+
 cat /sys/class/net/bond0/bonding/active_slave
 
 # Check all slave interfaces

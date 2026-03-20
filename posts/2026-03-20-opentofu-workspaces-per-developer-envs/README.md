@@ -10,7 +10,7 @@ Per-developer environments let engineers test infrastructure changes safely with
 
 ## Why Per-Developer Environments?
 
-When multiple developers share a staging environment, infrastructure changes can collide — one developer's test might destroy another's work. Per-developer environments solve this by:
+When multiple developers share a staging environment, infrastructure changes can collide - one developer's test might destroy another's work. Per-developer environments solve this by:
 
 - Isolating state so changes do not affect teammates.
 - Reducing "it works on my machine" incidents.
@@ -22,6 +22,7 @@ Use a consistent pattern so workspaces are easy to identify and clean up. A reco
 
 ```bash
 # Create a workspace for developer "alice"
+
 tofu workspace new dev-alice
 
 # Switch to Alice's workspace

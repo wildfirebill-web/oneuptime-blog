@@ -232,6 +232,7 @@ class SimpleVectorStore:
 
 
 # Example usage
+
 if __name__ == "__main__":
     # Create a store for 384-dimensional vectors
     store = SimpleVectorStore(dimension=384)

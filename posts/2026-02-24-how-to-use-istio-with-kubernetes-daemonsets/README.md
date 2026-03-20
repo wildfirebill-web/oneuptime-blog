@@ -94,7 +94,7 @@ kubectl get pods -l app=my-daemon -o jsonpath='{.items[0].spec.containers[*].nam
 
 You should see both `my-daemon` and `istio-proxy` in the output.
 
-## Resource Considerations
+Resource Considerations
 
 Since DaemonSets run on every node, the sidecar's resource usage is multiplied by the number of nodes. On a 50-node cluster, a sidecar using 100m CPU and 128Mi memory means 5 CPU cores and 6.25 GB memory consumed just by sidecars for one DaemonSet.
 

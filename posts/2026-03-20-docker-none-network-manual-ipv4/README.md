@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, none-network, IPv4, Containers, Security
+Tags: Docker, Networking, None-network, IPv4, Containers, Security
 
 Description: Use Docker's none network mode to create fully isolated containers, then manually configure IPv4 networking for precise control over container network namespaces.
 
@@ -21,6 +21,7 @@ Docker's `none` network mode creates a container with no network interfaces exce
 
 ```bash
 # Launch a container with no networking
+
 docker run -it --network none alpine sh
 
 # Inside the container, only loopback is present
@@ -75,7 +76,7 @@ ping 172.30.0.2
 
 ## Use Case: Custom CNI-Like Setup
 
-This approach mirrors how CNI plugins in Kubernetes configure pod networking — creating veth pairs and using `nsenter` to configure the pod-side interface.
+This approach mirrors how CNI plugins in Kubernetes configure pod networking - creating veth pairs and using `nsenter` to configure the pod-side interface.
 
 ## Security Considerations
 

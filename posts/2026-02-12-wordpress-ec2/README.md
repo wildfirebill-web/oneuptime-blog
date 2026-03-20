@@ -20,6 +20,7 @@ Launch the instance:
 
 ```bash
 # Create security group
+
 aws ec2 create-security-group \
   --group-name wordpress-sg \
   --description "WordPress server" \

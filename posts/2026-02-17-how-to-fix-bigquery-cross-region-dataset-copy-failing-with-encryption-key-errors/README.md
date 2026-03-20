@@ -46,6 +46,7 @@ First, check what encryption your source dataset is using.
 
 ```bash
 # Check the encryption configuration of the source dataset
+
 bq show --format=prettyjson project_id:source_dataset | grep -A 5 "encryptionConfiguration"
 ```
 

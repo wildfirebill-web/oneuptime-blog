@@ -29,6 +29,7 @@ Disable all network access during the build process.
 
 ```bash
 # Build with no network access
+
 podman build --network=none -t myapp:latest .
 ```
 

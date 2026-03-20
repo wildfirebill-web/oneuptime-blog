@@ -35,6 +35,7 @@ When a pod fails to start because of a missing secret, you will see errors like 
 
 ```bash
 # Check if the secret exists
+
 kubectl get secret myapp-secrets -n myapp
 
 # View pod events to find secret-related errors

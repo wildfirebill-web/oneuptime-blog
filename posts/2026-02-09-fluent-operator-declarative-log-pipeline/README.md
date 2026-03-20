@@ -30,6 +30,7 @@ Deploy Fluent Operator using manifests or Helm:
 
 ```bash
 # Using manifests
+
 kubectl apply -f https://raw.githubusercontent.com/fluent/fluent-operator/master/manifests/setup/setup.yaml
 
 # Wait for CRDs to be created

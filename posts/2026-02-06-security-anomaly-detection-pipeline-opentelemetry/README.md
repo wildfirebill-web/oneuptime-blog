@@ -23,6 +23,7 @@ First, instrument your application to emit the signals that matter for security:
 
 ```python
 # security_metrics.py
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("security.anomaly")

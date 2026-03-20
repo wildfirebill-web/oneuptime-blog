@@ -57,6 +57,7 @@ spec:
 ```bash
 sudo journalctl | grep "CALICO" | tail -30
 # Identify the blocking rule, fix selector or order
+
 calicoctl delete networkpolicy debug-log -n my-namespace
 ```
 

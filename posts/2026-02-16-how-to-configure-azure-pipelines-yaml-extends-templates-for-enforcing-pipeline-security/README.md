@@ -44,6 +44,7 @@ Let's build a security template that every pipeline in the organization must ext
 
 ```yaml
 # templates/secure-pipeline.yml
+
 # This is the security template that all pipelines must extend.
 # It enforces credential scanning, SAST, and artifact signing.
 

@@ -18,6 +18,7 @@ By default, Podman assigns a random name to a new pod. For production use, scrip
 
 ```bash
 # Create a pod with a descriptive name
+
 podman pod create --name my-web-app
 
 # Verify the pod name

@@ -74,6 +74,7 @@ Custom scripts in recovery plans run as Azure Automation runbooks. If you do not
 
 ```bash
 # Create an Azure Automation account in the DR region
+
 az automation account create \
     --resource-group rg-dr-centralus \
     --name auto-dr-scripts-centralus \

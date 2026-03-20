@@ -18,6 +18,7 @@ Before installing Istio, make sure your EKS Anywhere cluster is ready:
 
 ```bash
 # Verify cluster access
+
 kubectl cluster-info
 eksctl anywhere version
 

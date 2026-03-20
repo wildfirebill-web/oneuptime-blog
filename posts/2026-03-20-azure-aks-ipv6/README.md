@@ -18,6 +18,7 @@ LOCATION="eastus"
 CLUSTER_NAME="aks-dualstack"
 
 # Create resource group
+
 az group create --name "$RG" --location "$LOCATION"
 
 # Create dual-stack VNet
@@ -153,4 +154,4 @@ curl "http://[${OTHER_POD_IPV6}]/"
 
 ## Conclusion
 
-AKS dual-stack requires `--ip-families IPv4,IPv6` at cluster creation with both IPv4 and IPv6 pod CIDRs and service CIDRs. The dual-stack VNet subnet must have both IPv4 and IPv6 CIDR blocks. Services use `ipFamilyPolicy: PreferDualStack` with `ipFamilies: [IPv4, IPv6]` to get both ClusterIPs. LoadBalancer services create Azure Load Balancers with both IPv4 and IPv6 frontend configurations, enabling external clients to connect over either protocol. Once created, the IP family configuration cannot be changed — design for dual-stack from the start.
+AKS dual-stack requires `--ip-families IPv4,IPv6` at cluster creation with both IPv4 and IPv6 pod CIDRs and service CIDRs. The dual-stack VNet subnet must have both IPv4 and IPv6 CIDR blocks. Services use `ipFamilyPolicy: PreferDualStack` with `ipFamilies: [IPv4, IPv6]` to get both ClusterIPs. LoadBalancer services create Azure Load Balancers with both IPv4 and IPv6 frontend configurations, enabling external clients to connect over either protocol. Once created, the IP family configuration cannot be changed - design for dual-stack from the start.

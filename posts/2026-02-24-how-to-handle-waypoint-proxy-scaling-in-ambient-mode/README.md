@@ -144,7 +144,7 @@ spec:
 
 This ensures at least one waypoint pod is always running, even during node drains or upgrades.
 
-## Resource Configuration
+Resource Configuration
 
 Waypoint proxies are Envoy instances, so they need appropriate resources. Set requests and limits based on your traffic profile:
 
@@ -184,6 +184,7 @@ You can run different waypoint proxies for different purposes. For example, one 
 
 ```bash
 # Namespace-level waypoint
+
 istioctl waypoint apply --namespace default --name general-waypoint
 
 # Service-specific waypoint for a high-traffic service

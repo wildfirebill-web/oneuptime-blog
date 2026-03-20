@@ -18,6 +18,7 @@ podman-compose supports scaling services to run multiple replicas of a container
 
 ```bash
 # Scale the worker service to 3 instances
+
 podman-compose up -d --scale worker=3
 
 # Check the running instances

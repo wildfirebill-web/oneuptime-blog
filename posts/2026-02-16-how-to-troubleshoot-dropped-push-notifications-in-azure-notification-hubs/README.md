@@ -144,6 +144,7 @@ If registrations exist but the platform service is rejecting the notification, c
 
 ```bash
 # Check the notification hub configuration
+
 az notification-hub show \
   --name my-notification-hub \
   --namespace-name my-notification-ns \

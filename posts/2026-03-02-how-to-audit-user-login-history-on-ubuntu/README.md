@@ -42,6 +42,7 @@ reboot   system boot  5.15.0-91        Sun Mar  1 22:00
 
 ```bash
 # Show logins for a specific user only
+
 last alice
 
 # Show a limited number of entries

@@ -24,6 +24,7 @@ The most common setup. ExternalDNS needs IAM permissions to modify Route53 recor
 
 ```hcl
 # Create IAM policy for ExternalDNS
+
 resource "aws_iam_policy" "external_dns" {
   name = "external-dns"
 

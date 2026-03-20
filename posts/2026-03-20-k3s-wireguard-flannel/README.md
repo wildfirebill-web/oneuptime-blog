@@ -22,6 +22,7 @@ WireGuard support is required on all nodes:
 
 ```bash
 # Check if WireGuard is available (kernel 5.6+)
+
 modinfo wireguard 2>/dev/null && echo "WireGuard module available"
 
 # Check kernel version
@@ -161,7 +162,7 @@ The default WireGuard port is 51820. If you need to change it:
 ss -ulnp | grep 51820
 
 # K3s doesn't directly expose WireGuard port configuration
-# via config flags — the port is determined by Flannel
+# via config flags - the port is determined by Flannel
 
 # Ensure port 51820/UDP is open in your firewall
 # UFW

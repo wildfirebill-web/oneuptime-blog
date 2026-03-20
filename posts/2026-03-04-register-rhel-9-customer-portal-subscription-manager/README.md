@@ -29,6 +29,7 @@ The `subscription-manager` package should already be installed on a fresh RHEL s
 
 ```bash
 # Check that subscription-manager is available
+
 rpm -q subscription-manager
 ```
 

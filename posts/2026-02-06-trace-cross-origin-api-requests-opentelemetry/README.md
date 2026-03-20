@@ -190,6 +190,7 @@ module.exports = cors(corsOptions);
 # nginx/cors.conf
 
 # Handle CORS preflight and regular requests for the API
+
 location /api/ {
     # Preflight requests
     if ($request_method = 'OPTIONS') {

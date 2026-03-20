@@ -59,6 +59,7 @@ Before subscribing to messages, configure your Google Cloud credentials and inst
 
 ```bash
 # Set up authentication with Google Cloud
+
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
 
 # Install the Pub/Sub client library for Node.js

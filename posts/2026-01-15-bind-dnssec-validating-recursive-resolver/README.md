@@ -72,6 +72,7 @@ sudo dnf install bind bind-utils
 ```bash
 named -v
 # BIND 9.18.18-0ubuntu0.22.04.2-Ubuntu (Extended Support Version) <id:>
+
 ```
 
 ## Understanding BIND Directory Structure

@@ -39,6 +39,7 @@ When user input is directly concatenated into queries, an attacker can break out
 
 ```python
 # VULNERABLE - Never do this!
+
 def get_user(username):
     # Direct string concatenation allows SQL injection
     query = "SELECT * FROM users WHERE username = '" + username + "'"

@@ -20,6 +20,7 @@ The default quota varies by configuration. Upstream etcd defaults to 2GB, but Ta
 
 ```bash
 # Check the etcd configuration on your Talos node
+
 talosctl -n 192.168.1.10 get etcdmembers
 
 # To see the exact quota, check the etcd process arguments

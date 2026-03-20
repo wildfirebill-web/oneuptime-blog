@@ -114,6 +114,7 @@ resource = Resource.create({
 })
 
 # Trace exporter
+
 trace_exporter = OTLPSpanExporter(
     endpoint=LIGHTSTEP_ENDPOINT,
     headers=(("lightstep-access-token", LIGHTSTEP_TOKEN),),

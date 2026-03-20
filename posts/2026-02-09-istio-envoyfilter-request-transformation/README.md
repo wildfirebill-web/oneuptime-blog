@@ -436,6 +436,7 @@ Deploy test infrastructure:
 
 ```bash
 # Deploy test service
+
 kubectl apply -f - <<EOF
 apiVersion: v1
 kind: Pod

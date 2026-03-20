@@ -29,6 +29,7 @@ The CNI configuration for different IPAM modes:
 
 ```bash
 # View current CNI config (minimal - delegates to agent)
+
 kubectl debug node/<node-name> -it --image=ubuntu -- \
   cat /etc/cni/net.d/05-cilium.conf
 ```

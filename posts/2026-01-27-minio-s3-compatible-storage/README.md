@@ -30,6 +30,7 @@ The fastest way to get started is Docker. This gives you a working S3-compatible
 
 ```bash
 # Create a data directory for MinIO
+
 mkdir -p ~/minio/data
 
 # Run MinIO in standalone mode

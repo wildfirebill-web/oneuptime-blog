@@ -18,6 +18,7 @@ There are two main approaches: installing ubuntu-mate-desktop (full Ubuntu MATE 
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install the full Ubuntu MATE desktop metapackage

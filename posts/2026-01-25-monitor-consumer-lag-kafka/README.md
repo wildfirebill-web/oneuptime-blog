@@ -36,6 +36,7 @@ The quickest way to check lag is the built-in CLI tool:
 
 ```bash
 # Describe a consumer group and show lag
+
 kafka-consumer-groups.sh --bootstrap-server kafka:9092 \
     --group order-processor \
     --describe

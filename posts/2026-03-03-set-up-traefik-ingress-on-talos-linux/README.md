@@ -31,6 +31,7 @@ Verify your cluster is ready:
 
 ```bash
 # Confirm all nodes are in Ready state
+
 kubectl get nodes -o wide
 
 # Check that CoreDNS is running

@@ -29,6 +29,7 @@ Manage the VPA Recommender installation with Flux for consistent lifecycle manag
 
 ```yaml
 # clusters/production/vpa/kustomization.yaml - VPA components via Flux
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

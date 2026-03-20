@@ -59,6 +59,7 @@ The bare minimal profile is a starting point. For production, you want to harden
 
 ```yaml
 # istio-minimal-prod.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:
@@ -306,7 +307,7 @@ spec:
       interval: 15s
 ```
 
-## Resource Overhead
+Resource Overhead
 
 The minimal profile has the lowest control plane overhead:
 

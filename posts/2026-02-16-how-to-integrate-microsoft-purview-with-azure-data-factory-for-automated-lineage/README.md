@@ -38,6 +38,7 @@ Through Azure CLI:
 
 ```bash
 # Get the Data Factory managed identity object ID
+
 ADF_IDENTITY=$(az datafactory show \
   --resource-group my-resource-group \
   --name my-data-factory \

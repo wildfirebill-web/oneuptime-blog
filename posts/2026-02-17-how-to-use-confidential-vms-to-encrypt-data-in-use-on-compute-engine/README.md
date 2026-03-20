@@ -37,6 +37,7 @@ Creating a Confidential VM is just a matter of adding the `--confidential-comput
 
 ```bash
 # Create a Confidential VM using N2D machine type (AMD SEV)
+
 gcloud compute instances create my-confidential-vm \
     --zone=us-central1-a \
     --machine-type=n2d-standard-4 \

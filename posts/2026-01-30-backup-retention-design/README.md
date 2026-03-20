@@ -248,6 +248,7 @@ def calculate_retention(
 
 
 # Example usage
+
 if __name__ == "__main__":
     # Generate sample backup dates (daily backups for 2 years)
     today = datetime.now()

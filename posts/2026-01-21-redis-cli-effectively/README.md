@@ -16,6 +16,7 @@ The Redis CLI (redis-cli) is a powerful command-line interface for interacting w
 
 ```bash
 # Connect to local Redis
+
 redis-cli
 
 # Connect to remote Redis

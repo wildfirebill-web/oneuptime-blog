@@ -26,6 +26,7 @@ Install vLLM with pip. You need a GPU with CUDA support.
 
 ```bash
 # Install vLLM with CUDA 12.1 support
+
 pip install vllm
 
 # Or install from source for the latest features

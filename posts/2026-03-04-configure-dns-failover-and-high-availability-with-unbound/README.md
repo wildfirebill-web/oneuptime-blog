@@ -92,6 +92,7 @@ stub-zone:
 
 ```bash
 # Verify VIP is active
+
 ip addr show eth0
 
 # Stop unbound on master

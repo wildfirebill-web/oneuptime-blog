@@ -52,6 +52,7 @@ The following command pulls and runs the collector using Docker. We mount a loca
 
 ```bash
 # Pull the contrib distribution which includes Datadog-compatible components
+
 # We use contrib instead of core because it has the hostmetrics receiver,
 # the filelog receiver, and the datadog exporter built in
 docker run -d \

@@ -16,6 +16,7 @@ Ruby provides IPv6 support through the `IPAddr` class in the standard library an
 require 'ipaddr'
 
 # Parse and validate IPv6 addresses
+
 addr = IPAddr.new('2001:db8::1')
 puts addr            # 2001:db8::1
 puts addr.ipv6?      # true

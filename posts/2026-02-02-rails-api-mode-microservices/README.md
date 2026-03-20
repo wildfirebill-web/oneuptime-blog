@@ -40,6 +40,7 @@ Create a new Rails API project with PostgreSQL:
 
 ```bash
 # Create a new API-only Rails application
+
 # --api flag configures Rails for JSON-only responses
 # --database=postgresql sets up PostgreSQL instead of SQLite
 rails new orders_service --api --database=postgresql

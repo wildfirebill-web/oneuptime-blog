@@ -45,6 +45,7 @@ The `postStart` hook is useful for initialization tasks that should not block th
 
 ```yaml
 # deployment-with-poststart.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

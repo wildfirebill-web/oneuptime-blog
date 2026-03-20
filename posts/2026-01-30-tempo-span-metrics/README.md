@@ -118,6 +118,7 @@ Enable span metrics in your Tempo configuration:
 # tempo.yaml - Span metrics generator configuration
 
 # Enable the metrics generator component
+
 metrics_generator:
   # Ring configuration for distributed deployments
   ring:

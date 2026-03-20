@@ -239,6 +239,7 @@ If you use Kubernetes ResourceQuotas, monitor their usage:
 
 ```promql
 # Namespace CPU quota usage
+
 kube_resourcequota{type="used", resource="requests.cpu"} / kube_resourcequota{type="hard", resource="requests.cpu"} * 100
 
 # Namespace memory quota usage

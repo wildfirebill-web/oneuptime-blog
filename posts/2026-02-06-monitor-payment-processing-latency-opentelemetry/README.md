@@ -42,6 +42,7 @@ Before diving into traces, set up the metrics that will power your dashboards an
 
 ```python
 # payment_metrics.py
+
 from opentelemetry import metrics
 
 # Create a meter scoped to the payment domain

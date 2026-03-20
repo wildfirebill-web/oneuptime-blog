@@ -95,6 +95,7 @@ provider "vault" {
 }
 
 # Read static secrets
+
 data "vault_kv_secret_v2" "db" {
   mount = "secret"
   name  = "production/database"

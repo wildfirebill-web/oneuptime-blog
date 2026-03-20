@@ -35,6 +35,7 @@ graph TD
 
 ```bash
 # Create a managed Spot compute environment
+
 aws batch create-compute-environment \
   --compute-environment-name spot-compute-env \
   --type MANAGED \

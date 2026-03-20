@@ -69,6 +69,7 @@ Cilium follows the CNCF Code of Conduct. Reports of Code of Conduct violations c
 
 ```bash
 # In the Cilium GitHub repository
+
 cat MAINTAINERS.md
 ```
 

@@ -51,6 +51,7 @@ frontend http_front
 
 ```haproxy
 # Define a stick table for rate limiting
+
 frontend http_front
     bind *:80
     bind [::]:80

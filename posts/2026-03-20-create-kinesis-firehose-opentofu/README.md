@@ -111,6 +111,7 @@ resource "aws_kinesis_firehose_delivery_stream" "opensearch_delivery" {
 
 ```hcl
 # Source: Kinesis Data Stream
+
 resource "aws_kinesis_firehose_delivery_stream" "from_kinesis" {
   name        = "kinesis-stream-to-s3"
   destination = "extended_s3"

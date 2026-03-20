@@ -84,6 +84,7 @@ If a pod that should have a sidecar does not appear in `proxy-status`, the sidec
 
 ```bash
 # Check if the namespace has injection enabled
+
 kubectl get namespace default --show-labels | grep istio-injection
 
 # Check if the pod has the sidecar container

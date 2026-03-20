@@ -21,6 +21,7 @@ Start by restricting platform-wide defaults:
 
 ```bash
 # Disable default cluster roles for new users
+
 kubectl patch settings cluster-default-role -p '{"value": ""}'
 
 # Disable default project roles

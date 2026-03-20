@@ -9,13 +9,14 @@ Description: Learn how to use Wireshark to capture and analyze SIP signaling and
 ## VoIP Protocol Overview
 
 VoIP uses two main protocol layers:
-- **SIP (Session Initiation Protocol)**: Signaling — sets up, modifies, and tears down calls (UDP/TCP port 5060, TLS port 5061)
-- **RTP (Real-time Transport Protocol)**: Media — carries the actual voice/video data (dynamic UDP ports, typically 10000-20000)
+- **SIP (Session Initiation Protocol)**: Signaling - sets up, modifies, and tears down calls (UDP/TCP port 5060, TLS port 5061)
+- **RTP (Real-time Transport Protocol)**: Media - carries the actual voice/video data (dynamic UDP ports, typically 10000-20000)
 
 ## Step 1: Capture VoIP Traffic
 
 ```bash
 # Capture SIP signaling (port 5060) and RTP media
+
 sudo tcpdump -i eth0 -n -w /tmp/voip-capture.pcap 'port 5060 or udp portrange 10000-20000'
 
 # Or capture all UDP (VoIP uses UDP heavily)
@@ -27,7 +28,7 @@ sudo tcpdump -i eth0 -n -w /tmp/voip-udp.pcap 'udp'
 
 ## Step 2: Apply SIP Display Filter
 
-```
+```text
 In Wireshark display filter bar:
 
 sip                     → All SIP messages
@@ -43,7 +44,7 @@ sip or rtp or rtcp      → All VoIP traffic
 
 ## Step 3: Analyze SIP Call Flow
 
-```
+```sql
 Wireshark has a built-in VoIP call analyzer:
 Telephony → VoIP Calls
 
@@ -59,7 +60,7 @@ Or:
 Telephony → SIP Flows (shows SIP ladder diagram)
 ```
 
-```
+```text
 SIP call flow (Wireshark SIP Flows view):
 
 Client A (192.168.1.10)          Server (192.168.1.1)         Client B (192.168.1.20)
@@ -80,7 +81,7 @@ Client A (192.168.1.10)          Server (192.168.1.1)         Client B (192.168.
 
 ## Step 4: Diagnose SIP Call Failures
 
-```
+```text
 Common SIP error responses in Wireshark:
 
 404 Not Found:
@@ -109,7 +110,7 @@ sip.Status-Code >= 400 and sip.Status-Code < 600
 
 ## Step 5: Analyze RTP Stream Quality
 
-```
+```text
 Wireshark RTP analysis:
 Telephony → RTP → RTP Streams
 
@@ -139,7 +140,7 @@ tshark -r /tmp/voip-capture.pcap \
 
 ## Step 6: Play Back RTP Audio
 
-```
+```sql
 In Wireshark:
 Telephony → RTP → RTP Streams
 Select a stream → Analyze...
@@ -161,7 +162,7 @@ Listening to the audio helps diagnose:
 
 ```bash
 # One-way audio is the most common VoIP NAT problem
-# SIP sends IP:port in the SDP body — behind NAT, this is the private IP
+# SIP sends IP:port in the SDP body - behind NAT, this is the private IP
 
 # Filter SDP to see media negotiation
 sdp
@@ -186,4 +187,4 @@ sudo tcpdump -i eth0 -n 'udp portrange 10000-20000'
 
 ## Conclusion
 
-Wireshark's VoIP analysis tools are under the `Telephony` menu. Use `Telephony → VoIP Calls` for call summary and `Telephony → SIP Flows` for the signaling ladder diagram. Analyze RTP quality with `Telephony → RTP → RTP Streams` — look for jitter >50ms or packet loss >5% as quality thresholds. For SIP failures, filter `sip.Status-Code >= 400` to find error responses. One-way audio is almost always a NAT issue where private IPs appear in SDP — configure your SIP proxy to rewrite SDP with the public IP using STUN or ALG.
+Wireshark's VoIP analysis tools are under the `Telephony` menu. Use `Telephony → VoIP Calls` for call summary and `Telephony → SIP Flows` for the signaling ladder diagram. Analyze RTP quality with `Telephony → RTP → RTP Streams` - look for jitter >50ms or packet loss >5% as quality thresholds. For SIP failures, filter `sip.Status-Code >= 400` to find error responses. One-way audio is almost always a NAT issue where private IPs appear in SDP - configure your SIP proxy to rewrite SDP with the public IP using STUN or ALG.

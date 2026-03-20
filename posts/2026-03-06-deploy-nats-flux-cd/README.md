@@ -42,6 +42,7 @@ Start by defining a namespace for NATS. Create a file called `nats-namespace.yam
 
 ```yaml
 # nats-namespace.yaml
+
 # Defines the dedicated namespace for NATS components
 apiVersion: v1
 kind: Namespace

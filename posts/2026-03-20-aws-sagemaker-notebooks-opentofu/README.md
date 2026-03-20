@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, SageMaker, Notebooks, Machine Learning, Infrastructure as Code
+Tags: OpenTofu, AWS, SageMaker, Notebook, Machine Learning, Infrastructure as Code
 
 Description: Learn how to create AWS SageMaker Notebook Instances and SageMaker Studio domains for machine learning development using OpenTofu.
 
@@ -136,4 +136,4 @@ tofu apply tfplan
 
 ## Summary
 
-SageMaker Notebook Instances and Studio provide managed Jupyter environments for ML development. OpenTofu manages notebook instances, lifecycle configurations, Studio domains, and user profiles — giving your data science team a consistent, reproducible development environment.
+SageMaker Notebook Instances and Studio provide managed Jupyter environments for ML development. OpenTofu manages notebook instances, lifecycle configurations, Studio domains, and user profiles - giving your data science team a consistent, reproducible development environment.

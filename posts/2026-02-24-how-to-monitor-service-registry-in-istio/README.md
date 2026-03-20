@@ -26,6 +26,7 @@ The simplest way to see what's in the registry is through istiod's debug endpoin
 
 ```bash
 # All registered services
+
 kubectl exec deploy/istiod -n istio-system -- curl -s localhost:15014/debug/registryz
 ```
 

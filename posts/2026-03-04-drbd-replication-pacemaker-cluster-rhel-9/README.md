@@ -37,6 +37,7 @@ On both nodes, prepare a partition for DRBD (do not format it):
 
 ```bash
 # Verify the partition exists
+
 lsblk /dev/sdb1
 ```
 

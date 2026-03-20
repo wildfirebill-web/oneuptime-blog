@@ -22,6 +22,7 @@ Before you do anything else, read the release notes for the target Talos version
 
 ```bash
 # Check your current Talos version
+
 talosctl version --nodes <node-ip>
 ```
 

@@ -35,6 +35,7 @@ The most common coercion error is sending the wrong type.
 
 ```graphql
 # Schema expects Int
+
 type Query {
   user(id: Int!): User
 }

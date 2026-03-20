@@ -32,6 +32,7 @@ First, one party creates the collaboration:
 
 ```bash
 # CompanyA creates the collaboration
+
 aws cleanrooms create-collaboration \
     --name "retail-ads-measurement" \
     --description "Measure ad campaign effectiveness on retail purchases" \

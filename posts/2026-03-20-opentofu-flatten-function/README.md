@@ -1,4 +1,4 @@
-# How to Use the flatten Function in OpenTofu
+# How to Use the flatten Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,7 +16,7 @@ The `flatten` function in OpenTofu takes a list that may contain nested lists (t
 flatten(list)
 ```
 
-- **list** — a list that may contain nested lists
+- **list** - a list that may contain nested lists
 - Returns a single-level flat list
 - Non-list elements are kept as-is
 

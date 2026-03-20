@@ -28,6 +28,7 @@ If you do not already have a CDKTF project, initialize one:
 
 ```bash
 # Install CDKTF CLI
+
 npm install -g cdktf-cli
 
 # Create a new TypeScript project

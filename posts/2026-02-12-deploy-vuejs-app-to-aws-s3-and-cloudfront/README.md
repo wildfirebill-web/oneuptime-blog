@@ -16,6 +16,7 @@ Start by creating a production build of your Vue app. If you're using the Vue CL
 
 ```bash
 # Build for production
+
 npm run build
 ```
 

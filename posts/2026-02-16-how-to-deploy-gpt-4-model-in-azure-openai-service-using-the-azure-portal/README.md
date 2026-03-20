@@ -78,6 +78,7 @@ Here is a simple Python example showing how to call your deployed GPT-4 model. F
 
 ```bash
 # Install the OpenAI Python SDK
+
 pip install openai
 ```
 

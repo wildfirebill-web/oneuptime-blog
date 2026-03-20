@@ -44,6 +44,7 @@ An important distinction: `redirect` and `route` are mutually exclusive. A rule 
 
 ```yaml
 # This is WRONG - redirect and route cannot coexist
+
 - match:
     - uri:
         exact: "/old"

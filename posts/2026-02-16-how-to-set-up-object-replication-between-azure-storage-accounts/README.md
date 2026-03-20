@@ -36,6 +36,7 @@ Let me set up the prerequisites first:
 
 ```bash
 # Enable versioning on both storage accounts
+
 az storage account blob-service-properties update \
   --account-name sourcestorageaccount \
   --resource-group sourceresourcegroup \

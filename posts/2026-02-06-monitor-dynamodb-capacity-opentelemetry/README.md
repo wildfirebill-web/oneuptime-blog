@@ -39,6 +39,7 @@ Install the required packages for a Node.js application.
 
 ```bash
 # Install OpenTelemetry packages and the AWS SDK instrumentation
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/instrumentation-aws-sdk \
   @opentelemetry/exporter-metrics-otlp-http \

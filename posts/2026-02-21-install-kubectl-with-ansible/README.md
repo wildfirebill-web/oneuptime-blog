@@ -27,6 +27,7 @@ The most portable method downloads the official binary directly from Google:
 
 ```yaml
 # install_kubectl_binary.yml - Install kubectl from official binary release
+
 ---
 - name: Install kubectl from Official Binary
   hosts: all

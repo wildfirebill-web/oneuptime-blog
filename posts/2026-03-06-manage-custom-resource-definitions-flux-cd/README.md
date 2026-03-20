@@ -48,6 +48,7 @@ Create a dedicated Flux Kustomization for CRDs that runs before other resources:
 
 ```yaml
 # clusters/my-cluster/crds/kustomization.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

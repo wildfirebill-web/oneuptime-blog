@@ -15,7 +15,8 @@ Connection draining (also called deregistration delay or graceful removal) ensur
 ### Method 1: Admin Socket (Immediate)
 
 ```bash
-# Put server into DRAIN mode — stops new connections, lets existing finish
+# Put server into DRAIN mode - stops new connections, lets existing finish
+
 echo "set server web-backends/web2 state drain" | sudo socat stdio /run/haproxy/admin.sock
 
 # Wait for connections to drain
@@ -38,7 +39,7 @@ echo "set server web-backends/web2 state maint" | sudo socat stdio /run/haproxy/
 
 ### HAProxy timeout Tuning for Draining
 
-```
+```text
 defaults
     timeout client    30s
     timeout server    30s
@@ -52,7 +53,7 @@ Nginx OSS doesn't have native draining but you can implement it:
 
 ```bash
 # Remove server from upstream (edit config + reload)
-# nginx reload (nginx -s reload) is zero-downtime — existing connections complete
+# nginx reload (nginx -s reload) is zero-downtime - existing connections complete
 sudo nginx -s reload
 ```
 
@@ -74,7 +75,7 @@ aws elbv2 modify-target-group-attributes \
   --target-group-arn $TG_ARN \
   --attributes Key=deregistration_delay.timeout_seconds,Value=60
 
-# Deregister a target — ALB keeps sending existing connections for 60s
+# Deregister a target - ALB keeps sending existing connections for 60s
 aws elbv2 deregister-targets \
   --target-group-arn $TG_ARN \
   --targets Id=i-0abc123def456
@@ -134,7 +135,7 @@ spec:
 
 ## Draining Checklist
 
-```
+```text
 1. Mark server as draining/disabled in LB → no new connections
 2. Wait for active connection count to reach 0
 3. Stop the application gracefully (SIGTERM → graceful shutdown)

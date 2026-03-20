@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SI6 Networks, scan6, IPv6, Reconnaissance, Security Testing, Network Discovery
+Tags: SI6 Networks, Scan6, IPv6, Reconnaissance, Security Testing, Network Discovery
 
 Description: A guide to using the SI6 Networks scan6 tool for IPv6 host discovery and reconnaissance in authorized lab and security assessment environments.
 
@@ -14,6 +14,7 @@ The SI6 Networks IPv6 toolkit includes `scan6`, a specialized tool for IPv6 host
 
 ```bash
 # On Debian/Ubuntu
+
 sudo apt-get install ipv6toolkit
 
 # On Arch Linux
@@ -104,7 +105,7 @@ sudo scan6 -i eth0 -d 2001:db8::1 --timeout 5
 
 scan6 outputs discovered hosts with their IPv6 addresses and optionally MAC addresses:
 
-```
+```text
 2001:db8::1    (00:11:22:33:44:55)
 2001:db8::cafe (aa:bb:cc:dd:ee:ff)
 fe80::1        (00:11:22:33:44:55)

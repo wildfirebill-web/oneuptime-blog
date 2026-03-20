@@ -24,6 +24,7 @@ If you do not already have Cloud Identity set up, start there.
 
 ```bash
 # Verify your Cloud Identity configuration
+
 gcloud organizations list
 
 # Check the directory API is accessible

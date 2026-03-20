@@ -100,6 +100,7 @@ sdk.start();
 
 ```python
 # flask_status_strategy.py
+
 from opentelemetry import trace
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
 from functools import wraps

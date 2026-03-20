@@ -64,6 +64,7 @@ Let's start with a simple DaemonSet that runs an nginx container on every node. 
 
 ```yaml
 # basic-daemonset.yaml
+
 # A simple DaemonSet that runs nginx on every cluster node
 apiVersion: apps/v1
 kind: DaemonSet

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Event Hubs, Data Streaming, Infrastructure as Code
+Tags: OpenTofu, Azure, Event Hub, Data Streaming, Infrastructure as Code
 
 Description: Learn how to create Azure Event Hubs namespaces, event hubs, and consumer groups with OpenTofu for high-throughput data streaming and ingestion.
 
@@ -78,6 +78,7 @@ resource "azurerm_eventhub" "logs" {
 # Default consumer group is $Default (always exists)
 
 # Analytics consumer group
+
 resource "azurerm_eventhub_consumer_group" "analytics" {
   name                = "analytics"
   namespace_name      = azurerm_eventhub_namespace.main.name
@@ -97,7 +98,7 @@ resource "azurerm_eventhub_consumer_group" "archive" {
 ## Authorization Rules
 
 ```hcl
-# Namespace-level rule — access to all event hubs
+# Namespace-level rule - access to all event hubs
 resource "azurerm_eventhub_namespace_authorization_rule" "sender" {
   name                = "sender"
   namespace_name      = azurerm_eventhub_namespace.main.name
@@ -118,7 +119,7 @@ resource "azurerm_eventhub_namespace_authorization_rule" "receiver" {
   manage = false
 }
 
-# Hub-level rule — scoped to one event hub
+# Hub-level rule - scoped to one event hub
 resource "azurerm_eventhub_authorization_rule" "events_sender" {
   name                = "events-sender"
   namespace_name      = azurerm_eventhub_namespace.main.name

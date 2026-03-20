@@ -27,6 +27,7 @@ We'll use GitHub Actions for the CI part and Istio VirtualServices for the CD pa
 
 ```yaml
 # .github/workflows/deploy.yaml
+
 name: Deploy with Istio Canary
 
 on:

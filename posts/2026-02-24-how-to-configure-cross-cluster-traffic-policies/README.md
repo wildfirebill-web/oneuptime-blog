@@ -281,6 +281,7 @@ A common pattern is to use a GitOps tool like ArgoCD or Flux to sync policies ac
 
 ```bash
 # Apply to all clusters
+
 for ctx in cluster-a cluster-b; do
   kubectl apply -f traffic-policies/ --context=$ctx
 done

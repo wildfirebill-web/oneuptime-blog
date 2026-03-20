@@ -16,6 +16,7 @@ Before diving into custom health checks, it is important to understand the defau
 
 ```yaml
 # Basic Kustomization with built-in health checking
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

@@ -26,6 +26,7 @@ Checkov is Bridgecrew's open-source scanning engine for Terraform.
 
 ```bash
 # Install Checkov
+
 pip install checkov
 
 # Run a basic scan on Terraform files

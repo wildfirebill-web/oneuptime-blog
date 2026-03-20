@@ -34,6 +34,7 @@ resource "azurerm_virtual_wan" "main" {
 }
 
 # Primary hub in East US
+
 resource "azurerm_virtual_hub" "east_us" {
   name                = "${var.project_name}-hub-eastus"
   resource_group_name = var.resource_group_name
@@ -171,4 +172,4 @@ az network vhub get-effective-routes \
 
 ## Conclusion
 
-Virtual WAN Standard type supports any-to-any routing (branch-to-branch, branch-to-VNet, VNet-to-VNet across hubs) automatically—traffic routes through the hub without explicit route configuration. Each scale unit in VPN Gateway provides 500 Mbps; size the gateway based on aggregate branch bandwidth. Integrate Azure Firewall into Virtual WAN hubs (Secured Virtual Hubs) to inspect all traffic between spokes and branches without deploying individual firewalls in each VNet. Virtual WAN is significantly cheaper than managing individual VPN gateways in hub VNets when connecting more than 5-10 branches.
+Virtual WAN Standard type supports any-to-any routing (branch-to-branch, branch-to-VNet, VNet-to-VNet across hubs) automatically-traffic routes through the hub without explicit route configuration. Each scale unit in VPN Gateway provides 500 Mbps; size the gateway based on aggregate branch bandwidth. Integrate Azure Firewall into Virtual WAN hubs (Secured Virtual Hubs) to inspect all traffic between spokes and branches without deploying individual firewalls in each VNet. Virtual WAN is significantly cheaper than managing individual VPN gateways in hub VNets when connecting more than 5-10 branches.

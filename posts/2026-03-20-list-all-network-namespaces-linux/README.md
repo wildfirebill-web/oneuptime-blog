@@ -8,7 +8,7 @@ Description: List and inspect all network namespaces on a Linux system using ip 
 
 ## Introduction
 
-Listing network namespaces helps you understand what isolated network environments exist on a system — whether created manually, by containers, or by network tools. Linux provides several ways to enumerate namespaces depending on how they were created.
+Listing network namespaces helps you understand what isolated network environments exist on a system - whether created manually, by containers, or by network tools. Linux provides several ways to enumerate namespaces depending on how they were created.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Named namespaces (created with `ip netns add`) are stored as bind-mount files in
 
 ```bash
 # List all named network namespaces
+
 ip netns list
 
 # Example output:

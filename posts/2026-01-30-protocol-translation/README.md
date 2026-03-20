@@ -667,6 +667,7 @@ flowchart TB
 
 ```yaml
 # gateway-config.yaml
+
 routes:
   - path: /api/v1/users
     methods: [GET, POST]

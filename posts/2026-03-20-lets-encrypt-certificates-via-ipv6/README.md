@@ -16,6 +16,7 @@ Before starting, verify your server has a public IPv6 address and DNS is configu
 
 ```bash
 # Check your public IPv6 address
+
 curl -6 https://ifconfig.me/ip
 
 # Verify AAAA record exists for your domain
@@ -76,7 +77,7 @@ sudo certbot certonly \
 
 ## Method 3: DNS-01 Challenge (IPv6-Only Servers)
 
-For IPv6-only servers where inbound connections on port 80 aren't possible, DNS-01 is ideal — it requires no inbound connectivity at all:
+For IPv6-only servers where inbound connections on port 80 aren't possible, DNS-01 is ideal - it requires no inbound connectivity at all:
 
 ```bash
 # DNS-01 challenge via certbot with manual DNS

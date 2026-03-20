@@ -76,6 +76,7 @@ AWS security groups must allow Calico's encapsulation traffic:
 
 ```bash
 # Allow VXLAN (UDP 4789) between nodes
+
 aws ec2 authorize-security-group-ingress \
   --group-id sg-0123456789 \
   --protocol udp \

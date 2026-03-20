@@ -32,6 +32,7 @@ Run Redis with the RediSearch module using Docker.
 
 ```bash
 # Run Redis with RediSearch module
+
 docker run -d --name redis-search \
   -p 6379:6379 \
   redislabs/redisearch:latest

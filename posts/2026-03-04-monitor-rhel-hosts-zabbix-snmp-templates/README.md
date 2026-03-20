@@ -14,6 +14,7 @@ Sometimes installing a Zabbix agent on a host is not feasible. SNMP monitoring p
 
 ```bash
 # Install and configure snmpd on the host to monitor
+
 sudo dnf install -y net-snmp net-snmp-utils
 
 sudo tee /etc/snmp/snmpd.conf << 'CONF'

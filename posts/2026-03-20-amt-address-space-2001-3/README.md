@@ -23,7 +23,7 @@ Description: Understand the AMT (Automatic Multicast Tunneling) address space 20
 
 ## How AMT Works
 
-```
+```text
 Architecture:
   Multicast Source → Multicast Network → AMT Relay
                                               ↕ (UDP tunnel)
@@ -54,6 +54,7 @@ def is_amt_relay(addr_str: str) -> bool:
         return False
 
 # AMT relay addresses are assigned within 2001:3::/32
+
 # Typically by content providers or ISPs offering multicast
 
 # Example AMT relay assignment
@@ -67,7 +68,7 @@ print(f"Is AMT relay space: {is_amt_relay(example_relay)}")  # True
 
 ## AMT Protocol Exchange
 
-```
+```text
 1. Gateway sends Relay Discovery (UDP 2268)
    → dst: AMT anycast address or known relay
    → src: Gateway address
@@ -104,7 +105,7 @@ ip6tables -A INPUT -p udp --dport 2268 -j DROP
 
 ## AMT vs PIM-SM for Multicast
 
-```
+```text
 Native Multicast (PIM-SM):
   - Requires multicast-enabled routers throughout the path
   - Best for intranet multicast

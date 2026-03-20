@@ -44,6 +44,7 @@ You can estimate how much each log type contributes using this query in Logs Exp
 
 ```text
 # Count log entries by resource type and log name over the last day
+
 resource.type="gce_instance"
 ```
 

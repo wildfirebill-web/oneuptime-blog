@@ -60,6 +60,7 @@ flowchart LR
 
 ```bash
 # macOS with Homebrew
+
 brew install cosign
 
 # Linux (download from GitHub)

@@ -45,6 +45,7 @@ The model registry serves as the central repository for all model artifacts. It 
 
 ```python
 # model_registry.py
+
 # This module handles model registration and versioning with MLflow
 
 import mlflow

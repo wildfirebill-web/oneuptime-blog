@@ -27,6 +27,7 @@ The `ios_acls` resource module provides declarative ACL management. You define t
 
 ```yaml
 # configure_acls.yml - Create named ACLs using the resource module
+
 ---
 - name: Configure access control lists
   hosts: routers

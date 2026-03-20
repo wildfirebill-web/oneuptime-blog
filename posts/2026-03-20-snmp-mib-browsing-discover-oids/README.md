@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SNMP, MIB, OID, Network Monitoring, IPv4, snmpwalk, Linux, Discovery
+Tags: SNMP, MIB, OID, Network Monitoring, IPv4, Snmpwalk, Linux, Discovery
 
 Description: Learn how to use SNMP tools to browse MIBs and discover available OIDs on network devices over IPv4, enabling custom monitoring of vendor-specific metrics.
 
@@ -14,11 +14,12 @@ SNMP MIBs (Management Information Bases) are databases of OIDs (Object Identifie
 
 ```bash
 # Install SNMP utilities and MIB definitions
+
 apt install snmp snmp-mibs-downloader -y   # Debian/Ubuntu
 dnf install net-snmp-utils -y             # RHEL/Rocky
 ```
 
-## Method 1: snmpwalk — Walk the Entire OID Tree
+## Method 1: snmpwalk - Walk the Entire OID Tree
 
 ```bash
 # Walk the full SNMP tree of a device (SNMP v2c)
@@ -36,7 +37,7 @@ snmpwalk -v2c -c public -m ALL 192.168.1.10 system
 snmpwalk -v2c -c public 192.168.1.10 > /tmp/device-mibs.txt
 ```
 
-## Method 2: snmpget — Query a Specific OID
+## Method 2: snmpget - Query a Specific OID
 
 ```bash
 # Get the system description
@@ -49,7 +50,7 @@ snmpget -v2c -c public 192.168.1.10 1.3.6.1.2.1.2.2.1.5.1
 snmpget -v2c -c public 192.168.1.10 sysDescr.0 sysName.0 sysUpTime.0
 ```
 
-## Method 3: snmptranslate — Convert OID to MIB Name
+## Method 3: snmptranslate - Convert OID to MIB Name
 
 ```bash
 # Translate a numeric OID to human-readable name

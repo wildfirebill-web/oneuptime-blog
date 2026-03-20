@@ -46,6 +46,7 @@ Structure your repository with clear separation between application manifests an
 
 ```bash
 # Repository structure for gitless GitOps
+
 tree deploy/
 # deploy/
 # ├── apps/

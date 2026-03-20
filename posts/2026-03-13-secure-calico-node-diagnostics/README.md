@@ -16,6 +16,7 @@ Calico node diagnostics require privileged access: `kubectl exec` into calico-no
 
 ```yaml
 # calico-node-diagnostics-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

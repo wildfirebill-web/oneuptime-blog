@@ -23,6 +23,7 @@ The standard Ubuntu kernel is not optimized for real-time audio. Install the low
 
 ```bash
 # Update the system first
+
 sudo apt update && sudo apt upgrade -y
 
 # Install the low-latency kernel

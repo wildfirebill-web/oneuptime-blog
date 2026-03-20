@@ -14,6 +14,7 @@ Snapshots capture the state of a virtual machine at a specific point in time, in
 
 ```bash
 # Create a snapshot of a running VM (includes memory state)
+
 sudo virsh snapshot-create-as rhel9-vm \
   --name "before-update" \
   --description "Snapshot before applying kernel update"

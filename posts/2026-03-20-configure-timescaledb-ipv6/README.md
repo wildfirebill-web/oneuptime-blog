@@ -16,6 +16,7 @@ TimescaleDB is a PostgreSQL extension, so IPv6 configuration follows standard Po
 # /etc/postgresql/15/main/postgresql.conf
 
 # Listen on specific IPv6 address
+
 listen_addresses = '2001:db8::10'
 
 # Listen on all interfaces (IPv4 and IPv6)
@@ -30,7 +31,7 @@ port = 5432
 
 ## pg_hba.conf for IPv6 Clients
 
-```
+```text
 # /etc/postgresql/15/main/pg_hba.conf
 
 # Allow local IPv6 loopback connections

@@ -86,6 +86,7 @@ First, set up your Terraform provider development environment.
 
 ```bash
 # Create project directory
+
 mkdir terraform-provider-example && cd terraform-provider-example
 
 # Initialize Go module

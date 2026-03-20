@@ -12,6 +12,7 @@ When using the OpenTelemetry Collector with Axiom, you typically want each signa
 
 ```yaml
 # otel-collector-axiom.yaml
+
 receivers:
   otlp:
     protocols:

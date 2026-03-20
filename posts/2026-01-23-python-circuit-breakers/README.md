@@ -47,6 +47,7 @@ Basic usage:
 
 ```python
 # basic_circuit_breaker.py
+
 # Circuit breaker basics with pybreaker
 
 import pybreaker

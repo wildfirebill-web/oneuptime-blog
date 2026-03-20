@@ -20,6 +20,7 @@ Set up your personal configuration file from scratch.
 
 ```bash
 # Create the user configuration directory
+
 mkdir -p ~/.config/containers
 
 # Check if a user-level config already exists

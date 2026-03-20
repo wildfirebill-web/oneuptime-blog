@@ -191,6 +191,7 @@ Here is a simple Cloud Function that can reprocess dead letter messages from a P
 
 ```python
 # Cloud Function to reprocess dead letter messages
+
 import json
 from google.cloud import pubsub_v1
 

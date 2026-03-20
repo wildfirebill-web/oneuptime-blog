@@ -31,6 +31,7 @@ resource "aws_securityhub_account" "main" {
 
 ```hcl
 # AWS Foundational Security Best Practices
+
 resource "aws_securityhub_standards_subscription" "aws_fsbp" {
   depends_on    = [aws_securityhub_account.main]
   standards_arn = "arn:aws:securityhub:${var.region}::standards/aws-foundational-security-best-practices/v/1.0.0"
@@ -130,4 +131,4 @@ aws securityhub get-finding-statistics \
 
 ## Conclusion
 
-Security Hub's value compounds with integrations—enable GuardDuty, Inspector, Macie, and Config before enabling Security Hub to get populated findings immediately. The AWS Foundational Security Best Practices standard is the best starting point, providing actionable findings across 200+ controls. Use the finding aggregator to maintain a single-pane view in your security account, and route CRITICAL and HIGH findings to on-call channels for immediate response.
+Security Hub's value compounds with integrations-enable GuardDuty, Inspector, Macie, and Config before enabling Security Hub to get populated findings immediately. The AWS Foundational Security Best Practices standard is the best starting point, providing actionable findings across 200+ controls. Use the finding aggregator to maintain a single-pane view in your security account, and route CRITICAL and HIGH findings to on-call channels for immediate response.

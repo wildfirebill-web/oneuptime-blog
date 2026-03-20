@@ -18,6 +18,7 @@ First, get your GCP audit logs flowing into Chronicle. The simplest method is th
 
 ```hcl
 # chronicle-ingestion.tf
+
 # Set up audit log export to Chronicle SIEM
 
 # Create a dedicated log sink for Chronicle

@@ -26,6 +26,7 @@ graph LR
 
 ```bash
 # Create the Grafana repository file
+
 sudo vi /etc/yum.repos.d/grafana.repo
 ```
 

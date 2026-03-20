@@ -34,6 +34,7 @@ Use Helm for a production installation:
 
 ```yaml
 # values-gke.yaml
+
 global:
   image:
     tag: v2.10.0

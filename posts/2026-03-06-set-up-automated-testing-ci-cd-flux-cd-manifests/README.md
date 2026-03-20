@@ -38,6 +38,7 @@ The fastest tests check YAML syntax and formatting.
 
 ```yaml
 # .github/workflows/flux-ci.yaml
+
 name: Flux CD CI/CD Testing
 on:
   pull_request:

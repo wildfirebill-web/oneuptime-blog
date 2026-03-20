@@ -18,6 +18,7 @@ Creating a repo is straightforward.
 
 ```bash
 # Create a new repository
+
 aws codecommit create-repository \
   --repository-name my-application \
   --repository-description "Main application repository" \

@@ -16,6 +16,7 @@ You need Docker and the Molecule Docker driver installed.
 
 ```bash
 # Install Docker (Ubuntu/Debian)
+
 sudo apt-get update
 sudo apt-get install -y docker.io
 sudo systemctl start docker

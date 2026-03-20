@@ -35,6 +35,7 @@ When network connectivity is restored and Flux successfully fetches the Git repo
 
 ```bash
 # Monitor reconnection in real time
+
 watch -n5 "flux get sources git -A && echo '---' && flux get kustomizations -A"
 
 # The source will show a new revision when connectivity is restored

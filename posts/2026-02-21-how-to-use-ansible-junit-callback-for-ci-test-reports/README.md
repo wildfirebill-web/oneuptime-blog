@@ -18,6 +18,7 @@ The JUnit callback plugin comes with Ansible. Just enable it in your configurati
 
 ```ini
 # ansible.cfg
+
 [defaults]
 # Enable the junit callback plugin
 callbacks_enabled = junit

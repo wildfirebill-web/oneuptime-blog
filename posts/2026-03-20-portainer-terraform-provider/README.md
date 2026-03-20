@@ -8,7 +8,7 @@ Description: Learn how to set up and use the official Portainer Terraform provid
 
 ## Introduction
 
-The Portainer Terraform provider allows you to manage Portainer resources — environments, users, teams, registries, and stacks — using Terraform's declarative infrastructure-as-code approach. This enables version-controlled, reproducible Portainer configurations that integrate with your broader IaC workflow.
+The Portainer Terraform provider allows you to manage Portainer resources - environments, users, teams, registries, and stacks - using Terraform's declarative infrastructure-as-code approach. This enables version-controlled, reproducible Portainer configurations that integrate with your broader IaC workflow.
 
 ## Prerequisites
 
@@ -23,6 +23,7 @@ Create a `versions.tf` file:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.0"
 
@@ -72,7 +73,7 @@ variable "portainer_endpoint" {
 Create `terraform.tfvars` (add to `.gitignore`):
 
 ```hcl
-# terraform.tfvars — DO NOT commit to version control
+# terraform.tfvars - DO NOT commit to version control
 portainer_api_key = "ptr_YOUR_API_KEY"
 ```
 
@@ -185,10 +186,10 @@ variable "registry_password" {
 }
 ```
 
-## Step 7: Full Example — Complete Portainer Setup
+## Step 7: Full Example - Complete Portainer Setup
 
 ```hcl
-# main.tf — Complete Portainer infrastructure
+# main.tf - Complete Portainer infrastructure
 
 # ===== Environment =====
 resource "portainer_environment" "production" {

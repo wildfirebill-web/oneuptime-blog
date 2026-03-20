@@ -97,6 +97,7 @@ Here's a complete configuration for a production service:
 
 ```bash
 # Service identification
+
 export OTEL_SERVICE_NAME=checkout-service
 export OTEL_RESOURCE_ATTRIBUTES="deployment.environment=production,service.version=2.1.0,team=ecommerce,cloud.provider=aws,cloud.region=us-east-1"
 

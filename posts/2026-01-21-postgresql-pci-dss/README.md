@@ -26,6 +26,7 @@ PCI DSS compliance requires specific security controls for databases handling ca
 
 ```conf
 # postgresql.conf
+
 ssl = on
 ssl_cert_file = '/etc/postgresql/server.crt'
 ssl_key_file = '/etc/postgresql/server.key'

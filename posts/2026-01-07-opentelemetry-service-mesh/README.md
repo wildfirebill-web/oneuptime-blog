@@ -108,6 +108,7 @@ Create an Istio configuration that enables OpenTelemetry tracing:
 
 ```yaml
 # istio-otel-config.yaml
+
 # This ConfigMap configures Istio's mesh-wide settings for OpenTelemetry
 # It tells all Envoy sidecars to export traces using the OpenTelemetry protocol
 apiVersion: install.istio.io/v1alpha1

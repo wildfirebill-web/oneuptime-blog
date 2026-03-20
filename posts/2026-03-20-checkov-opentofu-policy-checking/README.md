@@ -14,6 +14,7 @@ Checkov goes beyond basic security scanning to support custom organizational pol
 
 ```bash
 # Install
+
 pip install checkov
 
 # Run with default policies
@@ -197,4 +198,4 @@ checkov -d . --baseline .checkov.baseline
 
 ## Conclusion
 
-Checkov's custom policy support transforms it from a security scanner into a policy enforcement platform. Encode organizational requirements — required tags, approved encryption algorithms, logging mandates — as custom checks that run alongside the built-in rules. The baseline mode enables gradual adoption in existing codebases by accepting the current state and only blocking new violations, making it practical to add policy checking to established projects.
+Checkov's custom policy support transforms it from a security scanner into a policy enforcement platform. Encode organizational requirements - required tags, approved encryption algorithms, logging mandates - as custom checks that run alongside the built-in rules. The baseline mode enables gradual adoption in existing codebases by accepting the current state and only blocking new violations, making it practical to add policy checking to established projects.

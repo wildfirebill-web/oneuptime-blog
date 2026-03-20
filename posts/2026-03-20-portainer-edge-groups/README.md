@@ -22,8 +22,8 @@ This guide walks you through creating Edge Groups, assigning edge endpoints to t
 
 Portainer supports two types of Edge Groups:
 
-1. **Static Groups** — You manually assign specific edge endpoints to the group.
-2. **Dynamic Groups** — Portainer automatically assigns endpoints to the group based on matching tags.
+1. **Static Groups** - You manually assign specific edge endpoints to the group.
+2. **Dynamic Groups** - Portainer automatically assigns endpoints to the group based on matching tags.
 
 Dynamic groups are especially useful when you have a large fleet where new devices are frequently added.
 
@@ -38,6 +38,7 @@ Dynamic groups are especially useful when you have a large fleet where new devic
 
 ```yaml
 # Example: Tagging edge agents at deployment time using docker-compose
+
 # Use this when deploying the Portainer Edge Agent to your devices
 
 version: "3.8"

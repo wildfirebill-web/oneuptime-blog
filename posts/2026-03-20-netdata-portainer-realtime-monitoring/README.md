@@ -75,12 +75,12 @@ Access the dashboard at `http://<your-host>:19999`.
 
 Netdata auto-discovers and displays:
 
-- **System Overview** — CPU, load, memory, swap, disk I/O, network
-- **Containers** — per-container CPU, memory, network, disk I/O (via cgroups)
-- **Applications** — per-application grouping with netdata apps plugin
-- **Disks** — per-disk throughput, utilization, latency
-- **Network Interfaces** — per-interface bandwidth and errors
-- **Docker** — container states, image counts
+- **System Overview** - CPU, load, memory, swap, disk I/O, network
+- **Containers** - per-container CPU, memory, network, disk I/O (via cgroups)
+- **Applications** - per-application grouping with netdata apps plugin
+- **Disks** - per-disk throughput, utilization, latency
+- **Network Interfaces** - per-interface bandwidth and errors
+- **Docker** - container states, image counts
 
 ### Step 4: Connect to Netdata Cloud (Optional)
 
@@ -88,6 +88,7 @@ Netdata Cloud provides a free centralized view across multiple nodes:
 
 ```bash
 # Get the claim token from app.netdata.cloud
+
 # Then claim the node from within the container
 docker exec -it netdata netdata-claim.sh \
   -token=<YOUR_CLAIM_TOKEN> \

@@ -103,6 +103,7 @@ conky.config = {
 
 conky.text = [[
 # ━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ${color #ff9500}SYSTEM${color}
 Hostname: ${nodename}
 Uptime:   ${uptime}

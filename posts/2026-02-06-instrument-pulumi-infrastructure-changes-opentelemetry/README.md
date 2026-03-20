@@ -39,6 +39,7 @@ Here is how to add OpenTelemetry tracing to a Python-based Pulumi program. The s
 
 ```python
 # __main__.py
+
 # A Pulumi program with OpenTelemetry instrumentation. The tracer wraps
 # each resource creation in a span so you can see exactly how long each
 # resource takes to provision and which ones fail.

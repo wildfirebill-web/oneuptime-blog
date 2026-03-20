@@ -53,6 +53,7 @@ k6 includes experimental Prometheus remote write support. Enable it with the `K6
 
 ```bash
 # Set Prometheus remote write endpoint
+
 K6_PROMETHEUS_RW_SERVER_URL=http://prometheus:9090/api/v1/write \
   k6 run --out experimental-prometheus-rw script.js
 ```

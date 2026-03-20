@@ -23,6 +23,7 @@ Python's OpenTelemetry SDK ships with `InMemorySpanExporter` out of the box.
 
 ```python
 # test_order_service.py
+
 import pytest
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

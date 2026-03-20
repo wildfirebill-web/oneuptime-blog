@@ -48,6 +48,7 @@ Create a new token on your Git provider. Do not revoke the old token yet.
 
 ```bash
 # Using GitHub CLI
+
 gh auth token
 
 # Or create a fine-grained PAT via the web UI:

@@ -120,6 +120,7 @@ flowchart TB
 
 ```yaml
 # Common compliance retention requirements
+
 compliance_requirements:
   sox:
     retention_years: 7

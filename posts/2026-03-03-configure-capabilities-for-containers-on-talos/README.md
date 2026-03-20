@@ -66,6 +66,7 @@ The safest starting point is to drop everything.
 
 ```yaml
 # minimal-capabilities.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

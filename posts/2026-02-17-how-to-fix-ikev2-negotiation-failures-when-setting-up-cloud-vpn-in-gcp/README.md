@@ -29,6 +29,7 @@ To verify the key on the GCP side:
 
 ```bash
 # Retrieve the shared secret for your VPN tunnel
+
 gcloud compute vpn-tunnels describe my-vpn-tunnel \
     --region=us-central1 \
     --format="value(sharedSecret)"

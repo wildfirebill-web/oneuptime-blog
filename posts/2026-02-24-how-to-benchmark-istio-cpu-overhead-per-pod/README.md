@@ -65,6 +65,7 @@ Generate traffic and measure:
 
 ```bash
 # Start traffic
+
 kubectl exec -n bench-plain deploy/load-generator -c fortio -- \
   fortio load -c 16 -qps 500 -t 120s http://echo-server.bench-plain:8080/echo &
 

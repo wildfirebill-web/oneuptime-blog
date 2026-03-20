@@ -8,7 +8,7 @@ Description: Configure tolerations for Longhorn components to deploy storage inf
 
 ## Introduction
 
-Kubernetes taints and tolerations control which pods can be scheduled on which nodes. Taints on a node repel all pods by default, while tolerations on a pod allow it to be scheduled on tainted nodes. For Longhorn, configuring tolerations allows you to deploy storage components on specialized nodes — such as dedicated storage nodes, nodes with specific hardware, or nodes in a particular region — that have taints applied.
+Kubernetes taints and tolerations control which pods can be scheduled on which nodes. Taints on a node repel all pods by default, while tolerations on a pod allow it to be scheduled on tainted nodes. For Longhorn, configuring tolerations allows you to deploy storage components on specialized nodes - such as dedicated storage nodes, nodes with specific hardware, or nodes in a particular region - that have taints applied.
 
 ## When to Use Tolerations for Longhorn
 
@@ -24,6 +24,7 @@ Tolerations are useful when:
 
 ```bash
 # Taint a node as a dedicated storage node
+
 kubectl taint nodes storage-node-1 dedicated=storage:NoSchedule
 
 # Taint a control-plane node (typically done by kubeadm)

@@ -39,6 +39,7 @@ Run it with gcloud:
 
 ```bash
 # Query for startup errors in the last hour
+
 gcloud logging read '
   resource.type="cloud_run_revision"
   AND resource.labels.service_name="my-service"

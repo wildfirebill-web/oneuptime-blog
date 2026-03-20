@@ -57,6 +57,7 @@ Mosquitto is the most popular open-source MQTT broker.
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update
 sudo apt install mosquitto mosquitto-clients
 

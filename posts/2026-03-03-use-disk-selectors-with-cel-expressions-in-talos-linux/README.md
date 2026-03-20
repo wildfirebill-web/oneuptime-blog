@@ -231,6 +231,7 @@ If your disk selector is not matching as expected, start by listing all availabl
 
 ```bash
 # List all disks with details
+
 talosctl disks --nodes 192.168.1.10
 
 # Get full disk properties in YAML

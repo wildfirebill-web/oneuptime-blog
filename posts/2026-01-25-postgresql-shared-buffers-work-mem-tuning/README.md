@@ -69,6 +69,7 @@ Beyond 8-16 GB, PostgreSQL also relies heavily on the operating system's page ca
 
 ```ini
 # postgresql.conf
+
 # For a 64GB RAM dedicated database server
 shared_buffers = 16GB
 ```

@@ -620,6 +620,7 @@ class CompressionServerInterceptor(grpc.ServerInterceptor):
 
 
 # Usage example
+
 def create_compressed_channel(target: str) -> grpc.Channel:
     """Create a channel with custom compression."""
     compressor = ZstdCompressor(level=3)

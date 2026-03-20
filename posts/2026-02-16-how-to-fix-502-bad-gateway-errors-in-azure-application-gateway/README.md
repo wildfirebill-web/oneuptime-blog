@@ -44,6 +44,7 @@ You can test the probe manually by SSHing into a VM in the same VNet and running
 
 ```bash
 # Test the health probe endpoint directly from within the VNet
+
 # Replace with your actual backend IP and probe path
 curl -v http://10.0.1.4:8080/health
 

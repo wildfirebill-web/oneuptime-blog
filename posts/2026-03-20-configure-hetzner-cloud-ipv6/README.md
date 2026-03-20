@@ -14,6 +14,7 @@ Hetzner Cloud assigns a /64 IPv6 subnet to each server by default. Unlike single
 
 ```bash
 # Hetzner Cloud assigns a /64 subnet
+
 # Example: 2a01:4f8:abc:1234::/64
 # Default address: 2a01:4f8:abc:1234::1/64
 

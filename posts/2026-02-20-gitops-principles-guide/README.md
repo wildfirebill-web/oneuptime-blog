@@ -33,6 +33,7 @@ Everything about your system - infrastructure, networking, policies, and applica
 
 ```yaml
 # deployment.yaml
+
 # Declares the desired state for the frontend service.
 # The GitOps agent reads this file and applies it to the cluster.
 apiVersion: apps/v1

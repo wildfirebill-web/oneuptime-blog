@@ -18,6 +18,7 @@ The core idea: define your conventions in structured YAML files, then use Weaver
 
 ```bash
 # Install via cargo (Rust toolchain required)
+
 cargo install weaver
 
 # Or download a pre-built binary from the releases page

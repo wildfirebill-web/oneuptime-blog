@@ -67,7 +67,7 @@ Use this for each service being migrated:
 
 ```bash
 #!/bin/bash
-# run_migration_checks.sh — automated checklist verification
+# run_migration_checks.sh - automated checklist verification
 
 FAIL=0
 PASS=0
@@ -95,6 +95,7 @@ check "IPv6 forwarding enabled (router)" sysctl -n net.ipv6.conf.all.forwarding
 echo ""
 echo "=== Service Layer IPv6 Checks ==="
 # Check each service listens on IPv6
+
 for port in 80 443 22 25 53; do
     check "Port $port listening on IPv6" bash -c "ss -tlnp | grep -q '\\[::'$port"
 done
@@ -117,4 +118,4 @@ echo "Result: PASS=$PASS FAIL=$FAIL"
 
 ## Conclusion
 
-An IPv6 migration checklist prevents the most common failure modes: services that were not enabled, DNS records not published, firewall rules that block IPv6, and monitoring that does not see IPv6 traffic. Organize the checklist by phase (pre-migration, per-service, post-migration) and assign items to specific teams. Automate what you can — shell scripts that verify service listening, connectivity, and DNS records catch issues before they cause incidents.
+An IPv6 migration checklist prevents the most common failure modes: services that were not enabled, DNS records not published, firewall rules that block IPv6, and monitoring that does not see IPv6 traffic. Organize the checklist by phase (pre-migration, per-service, post-migration) and assign items to specific teams. Automate what you can - shell scripts that verify service listening, connectivity, and DNS records catch issues before they cause incidents.

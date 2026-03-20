@@ -22,6 +22,7 @@ Before building the pipeline, install Tekton Pipelines and required tasks on you
 
 ```bash
 # Install Tekton Pipelines
+
 kubectl apply -f https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 
 # Install Tekton Triggers (optional, for webhook automation)

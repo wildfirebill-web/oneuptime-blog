@@ -47,6 +47,7 @@ graph TB
 
 ```bash
 # Download ClickHouse JDBC driver
+
 wget https://github.com/ClickHouse/clickhouse-java/releases/download/v0.6.0/clickhouse-jdbc-0.6.0-all.jar
 
 # For Tableau Desktop (macOS)

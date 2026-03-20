@@ -163,6 +163,7 @@ Create alerts for critical mesh health signals.
 
 ```bash
 # Create an alert policy for high error rates
+
 gcloud alpha monitoring policies create \
     --display-name="Mesh Service High Error Rate" \
     --condition-display-name="5xx error rate above 5%" \

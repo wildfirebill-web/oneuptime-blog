@@ -76,6 +76,7 @@ The Datadog receiver requires configuring endpoints for the different Datadog pr
 
 ```yaml
 # RECEIVERS: Define how telemetry enters the Collector
+
 receivers:
   # Datadog receiver implements multiple Datadog Agent APIs
   datadog:

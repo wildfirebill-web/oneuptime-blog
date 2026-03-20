@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Monitoring, IPv4, Connections, Management API, rabbitmqctl, Observability
+Tags: RabbitMQ, Monitoring, IPv4, Connection, Management API, Rabbitmqctl, Observability
 
 Description: Learn how to monitor active RabbitMQ client connections and filter by IPv4 address using the management API and CLI tools.
 
@@ -14,6 +14,7 @@ Monitoring RabbitMQ connections by client IPv4 address helps identify unauthoriz
 
 ```bash
 # List all connections with client addresses
+
 rabbitmqctl list_connections name peer_host peer_port user vhost state channels
 
 # Example output:

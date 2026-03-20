@@ -29,6 +29,7 @@ Start by creating a domain. This is the top-level container for all your governa
 
 ```bash
 # Create a DataZone domain - this is your governance boundary
+
 aws datazone create-domain \
     --name "company-data-domain" \
     --description "Central data governance domain for all business units" \

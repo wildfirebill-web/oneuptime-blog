@@ -47,6 +47,7 @@ First, find out which of your instances might be affected.
 
 ```bash
 # List all RDS instances with their engine versions
+
 aws rds describe-db-instances \
   --query 'DBInstances[*].{ID:DBInstanceIdentifier,Engine:Engine,Version:EngineVersion,Class:DBInstanceClass}' \
   --output table

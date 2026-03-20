@@ -9,7 +9,7 @@ Description: Learn how to list, start, stop, restart, and inspect Docker contain
 ## Container API Endpoints
 
 Portainer proxies Docker API calls through its endpoints. Container operations go through:
-```
+```text
 /api/endpoints/{endpointId}/docker/containers/{action}
 ```
 
@@ -21,6 +21,7 @@ API_TOKEN="your_access_token"
 ENDPOINT_ID=1
 
 # List all running containers
+
 curl -s "${PORTAINER_URL}/api/endpoints/${ENDPOINT_ID}/docker/containers/json" \
   -H "Authorization: Bearer ${API_TOKEN}" | \
   jq '[.[] | {id: .Id[0:12], name: .Names[0], image: .Image, status: .Status}]'

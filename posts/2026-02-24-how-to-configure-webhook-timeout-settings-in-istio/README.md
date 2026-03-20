@@ -18,6 +18,7 @@ Istio sets a default timeout of 10 seconds for its webhooks. You can see the cur
 
 ```bash
 # Check mutating webhook timeout
+
 kubectl get mutatingwebhookconfiguration istio-sidecar-injector \
   -o jsonpath='{.webhooks[0].timeoutSeconds}'
 

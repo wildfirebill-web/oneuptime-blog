@@ -16,6 +16,7 @@ When you set `verifier: name: ansible` in your `molecule.yml`, Molecule runs a p
 
 ```yaml
 # molecule/default/molecule.yml - using the Ansible verifier
+
 verifier:
   name: ansible
 ```

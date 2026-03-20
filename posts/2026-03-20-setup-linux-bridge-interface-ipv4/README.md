@@ -14,6 +14,7 @@ A Linux bridge acts as a virtual Layer 2 switch, connecting multiple interfaces 
 
 ```bash
 # Create a bridge named br0
+
 sudo ip link add name br0 type bridge
 
 # Bring the bridge up

@@ -25,6 +25,7 @@ Install a collection with the `ansible-galaxy collection install` command:
 
 ```bash
 # Install the community.general collection
+
 ansible-galaxy collection install community.general
 ```
 

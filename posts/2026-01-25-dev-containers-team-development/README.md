@@ -85,6 +85,7 @@ When base images do not include everything you need, create a custom Dockerfile:
 
 ```dockerfile
 # .devcontainer/Dockerfile
+
 # Start from the official Node.js dev container image
 FROM mcr.microsoft.com/devcontainers/javascript-node:18
 

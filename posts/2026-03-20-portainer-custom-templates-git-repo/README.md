@@ -21,7 +21,7 @@ Storing Portainer templates in a Git repository provides version control, collab
 
 Organize your template repository clearly:
 
-```
+```text
 portainer-templates/
 ├── README.md
 ├── stacks/
@@ -98,9 +98,10 @@ For GitHub personal access tokens, create one at **Settings → Developer settin
 
 ## Step 4: Add Template Metadata
 
-```
+```text
 Title:       Monitoring Stack (Prometheus + Grafana)
 Description: Production-ready monitoring with alerting
+
 Categories:  monitoring, observability
 Platform:    linux
 Type:        Stack
@@ -110,7 +111,7 @@ Type:        Stack
 
 Add variable definitions matching the Mustache variables in your Compose file:
 
-```
+```text
 Variable 1:
   Name:        admin_password
   Label:       Grafana admin password
@@ -155,13 +156,13 @@ To update the template configuration itself (variables, metadata):
 
 Point to specific tags for stable releases:
 
-```
+```text
 Repository reference: refs/tags/v2.0.0   # Always deploy from tag v2.0.0
 ```
 
 Or branches for environment-specific templates:
 
-```
+```text
 refs/heads/production    # Production template branch
 refs/heads/staging       # Staging template branch
 ```
@@ -172,6 +173,7 @@ refs/heads/staging       # Staging template branch
 
 ```bash
 # Create a fine-grained PAT with:
+
 # Repository: read access to Contents
 # No other permissions needed
 ```

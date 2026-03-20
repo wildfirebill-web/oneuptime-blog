@@ -134,6 +134,7 @@ sudo journalctl -u pacemaker --grep "resource-agent" --no-pager -n 50
 
 ```bash
 # Clean a specific resource
+
 sudo pcs resource cleanup WebServer
 
 # Clean all resources
@@ -212,7 +213,7 @@ If quorum is lost, check which nodes are offline and why.
 
 ## Common Issues and Solutions
 
-### Resource Stuck in "Starting" State
+Resource Stuck in "Starting" State
 
 The resource agent is taking too long. Increase the timeout:
 
@@ -220,7 +221,7 @@ The resource agent is taking too long. Increase the timeout:
 sudo pcs resource op add WebServer start timeout=120s
 ```
 
-### Resource Keeps Failing Over
+Resource Keeps Failing Over
 
 Check the migration threshold:
 

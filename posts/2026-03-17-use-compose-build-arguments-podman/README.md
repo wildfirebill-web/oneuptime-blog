@@ -18,6 +18,7 @@ Build arguments (ARGs) in Compose files let you pass values to the Containerfile
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   app:

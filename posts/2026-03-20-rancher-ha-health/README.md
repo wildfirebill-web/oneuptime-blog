@@ -1,4 +1,4 @@
-# How to Monitor Rancher HA Cluster Health
+# How to Monitor Rancher HA Cluster Health - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Proactive health monitoring of your Rancher HA deployment allows you to detect a
 
 ```bash
 # Continuous etcd health check script
+
 #!/bin/bash
 ETCDCTL_OPTS="--endpoints=https://127.0.0.1:2379 \
   --cacert=/var/lib/rancher/rke2/server/tls/etcd/server-ca.crt \

@@ -61,6 +61,7 @@ flowchart TB
 
 ```bash
 # Add MySQL Helm repository
+
 helm repo add mysql-operator https://mysql.github.io/mysql-operator/
 helm repo update
 

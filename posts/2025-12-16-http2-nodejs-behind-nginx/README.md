@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, NodeJS, HTTP2, Performance, DevOps
+Tags: Nginx, NodeJS, HTTP2, Performance, DevOps
 
 Description: Learn how to configure HTTP/2 between clients and Nginx, and optimize the connection between Nginx and your Node.js backend for maximum performance.
 
@@ -48,6 +48,7 @@ HTTP/2 requires TLS in browsers. Set up certificates first:
 
 ```bash
 # For production - use Let's Encrypt
+
 certbot certonly --nginx -d example.com -d www.example.com
 
 # For development - create self-signed certificate

@@ -287,6 +287,7 @@ After configuring aggregation, verify that the changes took effect:
 
 ```bash
 # Check active time series count in Prometheus
+
 curl -s http://prometheus:9090/api/v1/status/tsdb | jq '.data.seriesCountByMetricName[:10]'
 
 # Compare before and after

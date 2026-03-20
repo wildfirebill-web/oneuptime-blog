@@ -35,6 +35,7 @@ These metrics are scraped by Prometheus. Query them to understand communication 
 
 ```promql
 # All service-to-service communication pairs
+
 sum(rate(istio_requests_total[5m])) by (
   source_workload,
   source_workload_namespace,

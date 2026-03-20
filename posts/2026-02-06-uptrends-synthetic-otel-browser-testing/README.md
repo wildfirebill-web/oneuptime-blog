@@ -44,6 +44,7 @@ Uptrends has a webhook/API that reports check results. Set up a small service th
 
 ```python
 # uptrends_otel_bridge.py
+
 from flask import Flask, request, jsonify
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider

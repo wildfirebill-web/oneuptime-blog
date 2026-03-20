@@ -40,6 +40,7 @@ Here is a minimal Prometheus Remote Write exporter configuration:
 
 ```yaml
 # receivers configuration (how telemetry enters the Collector)
+
 receivers:
   otlp:
     protocols:
@@ -188,7 +189,7 @@ exporters:
 
 The exporter automatically translates OpenTelemetry metrics to Prometheus format and handles label mapping:
 
-### Resource Attributes to Labels
+Resource Attributes to Labels
 
 OpenTelemetry resource attributes become Prometheus labels:
 

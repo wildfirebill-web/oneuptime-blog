@@ -29,6 +29,7 @@ Install the External Secrets Operator using a Flux HelmRelease.
 
 ```yaml
 # infrastructure/external-secrets/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

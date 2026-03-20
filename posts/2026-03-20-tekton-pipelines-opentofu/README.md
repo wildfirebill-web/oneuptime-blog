@@ -14,6 +14,7 @@ Tekton is a Kubernetes-native CI/CD framework where pipelines are first-class Ku
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     kubernetes = {
@@ -218,7 +219,7 @@ resource "kubernetes_manifest" "ci_pipeline" {
 ## Best Practices
 
 - Use the Tekton Hub (hub.tekton.dev) to find community-maintained tasks rather than writing everything from scratch.
-- Use workspaces for sharing data between tasks — avoid embedding source paths in task parameters.
+- Use workspaces for sharing data between tasks - avoid embedding source paths in task parameters.
 - Configure resource limits on all task steps to prevent runaway builds from consuming cluster resources.
-- Use Tekton Chains for software supply chain security — it automatically signs your pipeline artifacts.
+- Use Tekton Chains for software supply chain security - it automatically signs your pipeline artifacts.
 - Store sensitive pipeline secrets (registry credentials, signing keys) as Kubernetes secrets referenced by tasks.

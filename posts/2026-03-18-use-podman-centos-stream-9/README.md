@@ -178,6 +178,7 @@ CentOS Stream 9 runs SELinux in enforcing mode by default. Podman handles SELinu
 
 ```bash
 # Z = private label (one container only)
+
 podman run -v /data:/data:Z myapp
 
 # z = shared label (multiple containers can access)

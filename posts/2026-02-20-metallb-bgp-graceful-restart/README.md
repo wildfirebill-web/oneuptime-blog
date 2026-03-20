@@ -62,6 +62,7 @@ Graceful restart is only available when MetalLB uses FRR mode. Confirm that FRR 
 
 ```bash
 # Check that speaker pods have the frr container
+
 SPEAKER_POD=$(kubectl get pod -n metallb-system -l component=speaker \
   -o jsonpath='{.items[0].metadata.name}')
 

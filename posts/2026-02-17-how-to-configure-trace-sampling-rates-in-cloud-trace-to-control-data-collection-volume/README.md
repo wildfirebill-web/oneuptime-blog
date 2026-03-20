@@ -31,6 +31,7 @@ The simplest samplers. Use AlwaysOn for development and AlwaysOff to disable tra
 
 ```python
 # Always sample every request (good for development, bad for production)
+
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.sampling import ALWAYS_ON, ALWAYS_OFF
 

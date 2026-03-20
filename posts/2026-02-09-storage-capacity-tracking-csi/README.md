@@ -26,6 +26,7 @@ Kubernetes 1.21 introduced storage capacity tracking as a beta feature, becoming
 
 ```bash
 # Check if storage capacity tracking is available
+
 kubectl get csidriver -o yaml | grep -A 5 storageCapacity
 
 # Verify scheduler configuration supports capacity tracking

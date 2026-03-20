@@ -30,6 +30,7 @@ Verify you have a Btrfs volume mounted:
 ```bash
 df -T | grep btrfs
 # or
+
 mount | grep btrfs
 ```
 

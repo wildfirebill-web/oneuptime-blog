@@ -14,6 +14,7 @@ LiteSpeed Web Server (LSWS) and OpenLiteSpeed have supported QUIC/HTTP/3 since e
 
 ```bash
 # Install OpenLiteSpeed on Ubuntu
+
 wget -O - https://rpms.litespeedtech.com/debian/enable_lst_debain_repo.sh | sudo bash
 sudo apt-get install openlitespeed
 
@@ -28,7 +29,7 @@ sudo systemctl start lsws
 
 Navigate to **Configuration → Listeners → Add**:
 
-```
+```text
 Listener Name: HTTPS-IPv6
 IP Address:    [::] (all IPv6 interfaces)
 Port:          443
@@ -38,7 +39,7 @@ Protocol:      HTTP/3, HTTP/2, HTTP/1.1
 
 Or via the configuration file at `/usr/local/lsws/conf/httpd_config.conf`:
 
-```
+```text
 listener HTTPS-IPv6 {
   # Bind to all IPv6 addresses
   address               [::]:443
@@ -52,7 +53,7 @@ listener HTTPS-IPv6 {
   certFile              /etc/ssl/certs/example.com.crt
   certChain             1
 
-  # SSL protocols — TLS 1.3 required for HTTP/3
+  # SSL protocols - TLS 1.3 required for HTTP/3
   sslProtocol           TLS1.3 TLS1.2
 
   # QUIC options
@@ -63,7 +64,7 @@ listener HTTPS-IPv6 {
 
 ## Step 2: Configure QUIC Parameters
 
-```
+```text
 # In the listener configuration
 quic {
   # Maximum connections
@@ -82,7 +83,7 @@ quic {
 
 ## Step 3: Virtual Host Configuration
 
-```
+```text
 virtualHost example.com {
   vhRoot                /var/www/example.com/
   configFile            $SERVER_ROOT/conf/vhosts/example.com/vhconf.conf
@@ -99,7 +100,7 @@ virtualHost example.com {
 
 The Alt-Svc header advertises HTTP/3 availability to browsers:
 
-```
+```text
 # In virtual host or server-level rewrite rules
 rewrite {
   rules                 <<<END_RULES

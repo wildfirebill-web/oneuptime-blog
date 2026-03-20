@@ -23,6 +23,7 @@ Regardless of your CI/CD platform, the steps are:
 
 ```bash
 # The universal ECR push pattern
+
 AWS_ACCOUNT_ID=123456789
 REGION=us-east-1
 REPO_NAME=my-web-app

@@ -16,6 +16,7 @@ The error appears in several forms:
 
 ```bash
 # During image pull
+
 Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
 
 # During build

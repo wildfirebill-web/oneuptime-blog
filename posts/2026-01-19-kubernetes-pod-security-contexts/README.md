@@ -38,6 +38,7 @@ flowchart TD
 
 ```yaml
 # secure-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

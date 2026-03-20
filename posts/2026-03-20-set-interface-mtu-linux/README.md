@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MTU, Linux, Interface, Networking, ip, Configuration
+Tags: MTU, Linux, Interface, Networking, IP, Configuration
 
 Description: Set interface MTU values on Linux using ip link, nmcli, and network configuration files to match network requirements and resolve fragmentation issues.
 
@@ -14,6 +14,7 @@ Setting the correct MTU on a network interface is fundamental to preventing frag
 
 ```bash
 # Set MTU immediately (does not survive reboot):
+
 ip link set eth0 mtu 1450
 
 # Verify change:

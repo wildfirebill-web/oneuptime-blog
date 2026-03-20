@@ -53,6 +53,7 @@ Use these commands to analyze your current network spend.
 
 ```bash
 # Get data transfer costs for the last 30 days
+
 aws ce get-cost-and-usage \
   --time-period Start=$(date -d '30 days ago' +%Y-%m-%d),End=$(date +%Y-%m-%d) \
   --granularity MONTHLY \

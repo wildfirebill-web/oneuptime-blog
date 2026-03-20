@@ -32,6 +32,7 @@ Check for request queue timeout errors in Cloud Logging.
 
 ```bash
 # Search for queue timeout errors
+
 gcloud logging read \
     'resource.type="cloud_run_revision" AND resource.labels.service_name="my-service" AND textPayload:"queue"' \
     --project=my-project \

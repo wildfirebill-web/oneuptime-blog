@@ -29,6 +29,7 @@ curl -X GET "https://localhost:9200/logs-2024.01,logs-2024.02,logs-2024.03/_sear
 
 ```bash
 # All logs indices
+
 curl -X GET "https://localhost:9200/logs-*/_search" \
   -H "Content-Type: application/json" \
   -u elastic:password \

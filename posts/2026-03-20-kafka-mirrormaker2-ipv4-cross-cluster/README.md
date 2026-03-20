@@ -24,6 +24,7 @@ graph LR
 # /etc/kafka/mm2.properties
 
 # --- Cluster aliases ---
+
 clusters = source, destination
 
 # --- Source cluster: DC A ---

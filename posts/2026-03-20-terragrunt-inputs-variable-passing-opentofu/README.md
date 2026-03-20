@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terragrunt, inputs, Variables, DRY Configuration
+Tags: OpenTofu, Terragrunt, Input, Variables, DRY Configuration
 
 Description: Learn how to use Terragrunt inputs blocks to pass environment-specific variable values to OpenTofu modules without creating tfvars files in every module directory.
 
@@ -14,6 +14,7 @@ Terragrunt's `inputs` block passes values to OpenTofu module variables, eliminat
 
 ```hcl
 # environments/prod/networking/terragrunt.hcl
+
 include "root" {
   path = find_in_parent_folders()
 }

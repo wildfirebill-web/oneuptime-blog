@@ -44,6 +44,7 @@ When a vhost error occurs, you will typically see one of these messages.
 
 ```text
 # Error when vhost does not exist
+
 pika.exceptions.ProbableAccessDeniedError: ConnectionClosedByBroker:
 (530) 'NOT_FOUND - no vhost '/myapp' in this cluster'
 

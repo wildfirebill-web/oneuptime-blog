@@ -29,6 +29,7 @@ First, instrument your application with the metrics that reflect real load. For 
 
 ```python
 # metrics.py - Application metrics for autoscaling
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("api-service")

@@ -43,6 +43,7 @@ The `galaxy.yml` file defines your collection metadata:
 
 ```yaml
 # galaxy.yml
+
 namespace: myorg
 name: myutils
 version: 1.2.0

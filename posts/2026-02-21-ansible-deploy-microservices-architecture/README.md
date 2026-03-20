@@ -76,6 +76,7 @@ Define your servers grouped by service:
 
 ```yaml
 # inventory/production/hosts.yml
+
 all:
   children:
     load_balancers:

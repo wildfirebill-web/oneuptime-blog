@@ -157,6 +157,7 @@ Let's set up a new React project with service worker support. If you're using Cr
 
 ```bash
 # Using Create React App with TypeScript
+
 npx create-react-app my-offline-app --template typescript
 
 # Navigate to the project

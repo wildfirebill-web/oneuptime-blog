@@ -30,6 +30,7 @@ For App Engine Standard Environment, add `warmup` to the `inbound_services` in y
 
 ```yaml
 # app.yaml - Enable warmup requests
+
 runtime: python312
 
 inbound_services:

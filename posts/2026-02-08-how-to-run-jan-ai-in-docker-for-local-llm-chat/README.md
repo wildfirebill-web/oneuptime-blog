@@ -31,6 +31,7 @@ Jan provides several features that make local LLM usage practical:
 
 ```bash
 # Verify Docker is available
+
 docker --version
 docker compose version
 

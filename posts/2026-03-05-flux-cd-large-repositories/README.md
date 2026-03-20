@@ -28,6 +28,7 @@ By default, Flux clones the full Git history. For most GitOps use cases, you onl
 
 ```yaml
 # GitRepository with shallow clone - only fetches the latest commit
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
@@ -144,7 +145,7 @@ spec:
 
 With webhooks, you can set a long polling interval (30 minutes or more) as a fallback, while changes are detected almost instantly via push events.
 
-## Resource Limits for Source Controller
+Resource Limits for Source Controller
 
 The source-controller pod may need more memory when processing large repositories. You can adjust its resource limits through Flux's Kustomization patches.
 

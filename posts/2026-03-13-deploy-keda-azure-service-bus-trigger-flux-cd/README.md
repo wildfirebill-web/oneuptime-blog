@@ -29,6 +29,7 @@ On AKS with Workload Identity enabled:
 
 ```bash
 # Create a managed identity for KEDA workers
+
 az identity create \
   --name keda-sbus-identity \
   --resource-group my-rg

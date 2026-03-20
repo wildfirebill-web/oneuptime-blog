@@ -22,6 +22,7 @@ The simplest command-line form:
 
 ```bash
 # Connect to target-server through jump-host
+
 ssh -J user@jump-host user@target-server
 
 # With different usernames on each hop

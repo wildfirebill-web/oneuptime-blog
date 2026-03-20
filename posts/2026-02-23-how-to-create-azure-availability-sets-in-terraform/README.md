@@ -40,6 +40,7 @@ Here is how to create an availability set with Terraform:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

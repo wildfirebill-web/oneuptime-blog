@@ -24,6 +24,7 @@ The BPF security model relies on the Linux kernel's BPF verifier to ensure progr
 
 ```bash
 # Verify Calico's seccomp profile restricts BPF syscall for non-privileged containers
+
 # Calico-node itself needs BPF syscall access, but other pods should not
 
 # Create a restrictive seccomp profile for application pods

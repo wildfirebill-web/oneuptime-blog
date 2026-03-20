@@ -34,6 +34,7 @@ If the node was just started or restarted, simply wait a minute or two and try a
 
 ```bash
 # Wait and retry
+
 sleep 60
 talosctl services --nodes 192.168.1.10
 ```

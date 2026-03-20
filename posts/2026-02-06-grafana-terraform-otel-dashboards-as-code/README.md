@@ -12,6 +12,7 @@ Manually creating Grafana dashboards through the UI works for prototyping, but i
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     grafana = {

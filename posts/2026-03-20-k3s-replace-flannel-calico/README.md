@@ -33,6 +33,7 @@ sudo tee /etc/rancher/k3s/config.yaml > /dev/null <<EOF
 token: "CalicoClusterToken"
 
 # Disable Flannel - we'll use Calico instead
+
 flannel-backend: "none"
 
 # Disable K3s's built-in network policy (Calico provides its own)

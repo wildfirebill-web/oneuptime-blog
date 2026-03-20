@@ -56,6 +56,7 @@ graph TD
 
 ```bash
 # install-istio.sh
+
 # Install Istio with the demo profile for evaluation
 
 # Download Istio CLI
@@ -265,7 +266,7 @@ spec:
       action: deny
 ```
 
-## Resource Usage Comparison
+Resource Usage Comparison
 
 ```mermaid
 graph LR

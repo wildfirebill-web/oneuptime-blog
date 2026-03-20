@@ -52,6 +52,7 @@ By default, the agent captures the full SQL statement. Sanitization replaces lit
 
 ```bash
 # This is usually on by default, but verify
+
 java -javaagent:opentelemetry-javaagent.jar \
      -Dotel.instrumentation.jdbc.statement-sanitizer.enabled=true \
      -jar myapp.jar

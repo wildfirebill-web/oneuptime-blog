@@ -28,6 +28,7 @@ Here's how to configure Route53 with geolocation routing:
 
 ```yaml
 # route53-config.yaml
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   ClusterEastHealthCheck:

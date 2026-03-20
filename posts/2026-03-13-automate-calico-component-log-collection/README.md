@@ -17,6 +17,7 @@ Automating Calico log collection ensures consistent diagnostic data across all n
 ```bash
 #!/bin/bash
 # collect-calico-logs.sh
+
 set -euo pipefail
 
 BUNDLE_DIR="calico-logs-$(date +%Y%m%d-%H%M%S)"

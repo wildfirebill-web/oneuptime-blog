@@ -63,6 +63,7 @@ Every Trivy custom policy needs specific metadata and at least one rule. Here is
 
 ```rego
 # METADATA
+
 # title: Descriptive title for the check
 # description: Explain what the policy checks and why
 # scope: package

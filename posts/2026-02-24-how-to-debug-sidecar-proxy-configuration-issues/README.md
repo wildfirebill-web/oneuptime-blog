@@ -56,6 +56,7 @@ Run istioctl analyze to catch common misconfigurations:
 
 ```bash
 # Analyze a specific namespace
+
 istioctl analyze -n production
 
 # Analyze the whole mesh

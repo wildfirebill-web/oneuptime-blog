@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, compact, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Compact, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the compact function in OpenTofu to remove null and empty string values from a list of strings.
 
@@ -103,7 +103,7 @@ locals {
   admin_cidr      = var.admin_ip != "" ? "${var.admin_ip}/32" : ""
   monitoring_cidr = var.monitoring_ip != "" ? "${var.monitoring_ip}/32" : ""
 
-  # compact removes empty strings — only non-empty CIDRs remain
+  # compact removes empty strings - only non-empty CIDRs remain
   management_cidrs = compact([local.admin_cidr, local.monitoring_cidr])
 }
 

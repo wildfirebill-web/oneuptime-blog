@@ -43,6 +43,7 @@ SCC Premium is enabled at the organization level and covers all projects within 
 
 ```bash
 # Enable the Security Command Center API at the organization level
+
 gcloud services enable securitycenter.googleapis.com \
     --project=security-project
 

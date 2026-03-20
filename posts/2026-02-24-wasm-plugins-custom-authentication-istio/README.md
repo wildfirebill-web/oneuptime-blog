@@ -257,6 +257,7 @@ For the HTTP callout to work, you need to configure the upstream cluster. The ea
 
 ```yaml
 # The auth service should be accessible as a Kubernetes service
+
 apiVersion: v1
 kind: Service
 metadata:

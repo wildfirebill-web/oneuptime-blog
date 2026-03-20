@@ -27,6 +27,7 @@ Here is how to configure your application services to include retention metadata
 
 ```yaml
 # Application deployment with retention metadata
+
 # Set via OTEL_RESOURCE_ATTRIBUTES environment variable
 env:
   - name: OTEL_RESOURCE_ATTRIBUTES

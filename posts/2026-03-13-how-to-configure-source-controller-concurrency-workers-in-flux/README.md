@@ -30,6 +30,7 @@ Create a Kustomize patch that overrides the controller arguments:
 
 ```yaml
 # clusters/my-cluster/flux-system/source-controller-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -103,7 +104,7 @@ kubectl exec -n flux-system deploy/source-controller -- \
 
 If the active workers metric stays close to your concurrency limit, the controller is fully utilizing the additional capacity.
 
-## Resource Considerations
+Resource Considerations
 
 Increasing concurrency means the controller will use more CPU and memory. Make sure the resource requests and limits on the source-controller deployment are adjusted accordingly. A common pattern is to add a resource patch alongside the concurrency patch:
 

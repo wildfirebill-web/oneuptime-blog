@@ -93,6 +93,7 @@ Control dynamic mapping behavior:
 
 ```bash
 # Enable dynamic mapping (default)
+
 curl -X PUT "https://localhost:9200/dynamic-true" \
   -H "Content-Type: application/json" \
   -u elastic:password \

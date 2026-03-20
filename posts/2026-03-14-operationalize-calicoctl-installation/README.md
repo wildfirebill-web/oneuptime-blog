@@ -31,6 +31,7 @@ Create a managed upgrade path that prevents version skew.
 ```bash
 #!/bin/bash
 # upgrade-calicoctl.sh
+
 # Standardized calicoctl upgrade procedure
 # Usage: ./upgrade-calicoctl.sh <new-version>
 

@@ -28,6 +28,7 @@ Before disconnecting, pull and push all Flux CD images to your local registry:
 ```bash
 #!/bin/bash
 # mirror-flux-images.sh
+
 LOCAL_REGISTRY="registry.internal.example.com"
 FLUX_VERSION="v2.2.3"
 

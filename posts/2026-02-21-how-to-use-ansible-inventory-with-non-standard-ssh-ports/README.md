@@ -20,6 +20,7 @@ The simplest way is to append the port directly after the hostname using a colon
 
 ```ini
 # inventory/hosts.ini
+
 # Specify non-standard SSH ports directly after the hostname
 [webservers]
 web01.example.com:2222

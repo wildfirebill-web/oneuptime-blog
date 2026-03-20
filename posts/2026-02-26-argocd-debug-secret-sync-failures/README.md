@@ -46,6 +46,7 @@ graph TD
 
 ```bash
 # Get the ExternalSecret status
+
 kubectl get externalsecret -n production app-secrets -o yaml
 
 # Look for the status section

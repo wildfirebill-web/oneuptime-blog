@@ -20,6 +20,7 @@ Watchtower supports Docker labels that override global settings on a per-contain
 
 ```yaml
 # Only update containers with explicit enable label
+
 # (Requires Watchtower flag: WATCHTOWER_LABEL_ENABLE=true)
 
 services:
@@ -94,7 +95,7 @@ services:
     image: nginx:alpine
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
-      # No monitor-only — auto-updates enabled
+      # No monitor-only - auto-updates enabled
 
   # Monitor-only for the database (high risk to auto-update)
   postgres:
@@ -104,7 +105,7 @@ services:
       - "com.centurylinklabs.watchtower.monitor-only=true"    # Notify but don't update
 ```
 
-## Step 5: Complete Example — Mixed Update Strategy in Portainer Stack
+## Step 5: Complete Example - Mixed Update Strategy in Portainer Stack
 
 ```yaml
 # Portainer stack with granular Watchtower control
@@ -131,7 +132,7 @@ services:
       - "com.centurylinklabs.watchtower.enable=true"
       - "com.centurylinklabs.watchtower.lifecycle.post-update=/app/healthcheck.sh"
 
-  # Database: monitor only — manual updates
+  # Database: monitor only - manual updates
   postgres:
     image: postgres:15-alpine
     volumes:
@@ -167,24 +168,24 @@ volumes:
 
 ## Step 6: Watchtower Labels Reference
 
-```
+```text
 com.centurylinklabs.watchtower.enable
-  true   — Include this container in updates
-  false  — Exclude this container from updates
+  true   - Include this container in updates
+  false  - Exclude this container from updates
   (when WATCHTOWER_LABEL_ENABLE=true, unlabeled containers are excluded)
 
 com.centurylinklabs.watchtower.monitor-only
-  true   — Check for updates but don't apply them (send notifications)
-  false  — Apply updates (default behavior)
+  true   - Check for updates but don't apply them (send notifications)
+  false  - Apply updates (default behavior)
 
 com.centurylinklabs.watchtower.lifecycle.pre-check
-  Script path inside container — runs before checking for updates
+  Script path inside container - runs before checking for updates
 
 com.centurylinklabs.watchtower.lifecycle.pre-update
-  Script path inside container — runs before stopping/recreating container
+  Script path inside container - runs before stopping/recreating container
 
 com.centurylinklabs.watchtower.lifecycle.post-update
-  Script path inside container — runs after new container starts
+  Script path inside container - runs after new container starts
 
 com.centurylinklabs.watchtower.lifecycle.post-update-timeout
   Seconds to wait for post-update script (default: 10)

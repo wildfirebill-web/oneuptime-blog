@@ -74,6 +74,7 @@ resource "akamai_property" "app" {
 }
 
 # Build property rules using the rules builder
+
 data "akamai_property_rules_builder" "app_rules" {
   rules_v2024_01_09 {
     name  = "default"

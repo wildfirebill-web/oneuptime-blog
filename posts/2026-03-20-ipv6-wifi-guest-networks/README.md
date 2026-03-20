@@ -12,7 +12,7 @@ Guest Wi-Fi networks need IPv6 internet access while being isolated from the cor
 
 ## Guest Network Architecture
 
-```
+```text
 IPv6 Guest Network Architecture:
 Internet (2001:db8::/32 from ISP)
          |
@@ -33,6 +33,7 @@ Corp Wi-Fi SSID     Guest Wi-Fi SSID
 # /etc/radvd.conf - Separate RA per SSID/VLAN
 
 # Corporate network (VLAN 10)
+
 interface vlan10 {
     AdvSendAdvert on;
     MinRtrAdvInterval 10;

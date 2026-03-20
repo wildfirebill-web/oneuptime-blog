@@ -21,12 +21,13 @@ The `2001:db8::/32` block is filtered by all responsible ISPs and should never a
 
 ## Common Usage Patterns
 
-```
+```text
 2001:db8::/32          # The full documentation block
 2001:db8::1            # Simple example host
 2001:db8::1/128        # Host route example
 
 # Subnetting examples
+
 2001:db8:0:1::/64      # First subnet
 2001:db8:0:2::/64      # Second subnet
 2001:db8:1::/48        # Site 1 example
@@ -109,7 +110,7 @@ sudo ip -6 addr add ::1/128 dev lo
 
 For completeness, RFC 5737 IPv4 equivalents:
 
-```
+```text
 IPv4 documentation: 192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24
 IPv6 documentation: 2001:db8::/32
 IPv6 (new, 2023):   3fff::/20  (RFC 9637)

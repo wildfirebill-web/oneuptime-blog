@@ -16,6 +16,7 @@ The connection between the wheel group and sudo is configured in `/etc/sudoers`:
 
 ```bash
 # View the relevant sudoers line (never edit this file directly)
+
 sudo grep wheel /etc/sudoers
 ```
 

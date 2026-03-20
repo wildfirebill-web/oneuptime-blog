@@ -26,6 +26,7 @@ The general pattern is that larger VMs support more NICs. Before planning a mult
 
 ```bash
 # Check the maximum NIC count for a VM size
+
 az vm list-sizes --location eastus \
   --query "[?name=='Standard_D4s_v5'].{Name:name, MaxNICs:maxNetworkInterfaces, Memory:memoryInMb, vCPUs:numberOfCores}" \
   -o table

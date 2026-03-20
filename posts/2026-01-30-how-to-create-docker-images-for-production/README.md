@@ -16,6 +16,7 @@ Start with the smallest base image that meets your requirements. Alpine Linux an
 
 ```dockerfile
 # Instead of using full ubuntu or debian
+
 FROM node:20-alpine
 
 # Or even better for production - distroless

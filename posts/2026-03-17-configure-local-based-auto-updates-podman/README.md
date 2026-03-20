@@ -25,6 +25,7 @@ The `local` auto-update policy is useful when you build images locally or pull t
 
 ```ini
 # ~/.config/containers/systemd/myapp.container
+
 [Unit]
 Description=Application with local auto-update
 

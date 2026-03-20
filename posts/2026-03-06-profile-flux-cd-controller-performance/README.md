@@ -27,6 +27,7 @@ Each Flux CD controller is a Go binary built on the controller-runtime library. 
 
 ```yaml
 # enable-pprof-patch.yaml
+
 # Apply this patch to enable the pprof endpoint on Flux controllers
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

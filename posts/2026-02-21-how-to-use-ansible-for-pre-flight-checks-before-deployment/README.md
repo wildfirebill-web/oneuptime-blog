@@ -16,6 +16,7 @@ Run this before every deployment:
 
 ```yaml
 # playbooks/preflight.yml
+
 # Comprehensive pre-flight checks before deployment
 - name: Pre-flight checks
   hosts: "{{ target_hosts | default('all') }}"

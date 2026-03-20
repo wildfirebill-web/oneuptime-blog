@@ -24,6 +24,7 @@ Talos Linux does not have a Docker daemon or a local Docker configuration file. 
 
 ```bash
 # Verify cluster access
+
 kubectl get nodes
 ```
 

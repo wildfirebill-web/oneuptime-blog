@@ -25,6 +25,7 @@ TopoLVM needs LVM support on the nodes. Create a machine config patch:
 
 ```yaml
 # topolvm-patch.yaml
+
 machine:
   install:
     extensions:

@@ -18,6 +18,7 @@ The most straightforward way to inspect loop variables is the `debug` module.
 
 ```yaml
 # debug-loop.yml
+
 # Inspects what item contains during each loop iteration
 - name: Debug loop variables
   hosts: localhost

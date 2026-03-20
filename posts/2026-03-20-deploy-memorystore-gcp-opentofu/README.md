@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Memorystore, Redis, GCP, Cache, Infrastructure as Code
 
-Description: Learn how to deploy Google Cloud Memorystore for Redis using OpenTofu — including instance configuration, private service access, high availability, and AUTH token management.
+Description: Learn how to deploy Google Cloud Memorystore for Redis using OpenTofu - including instance configuration, private service access, high availability, and AUTH token management.
 
 ## Introduction
 
-GCP Memorystore for Redis with OpenTofu uses `google_redis_instance` for standard Redis or `google_redis_cluster` for Redis Cluster mode. Memorystore uses private service access — no public IPs, connections route through your VPC.
+GCP Memorystore for Redis with OpenTofu uses `google_redis_instance` for standard Redis or `google_redis_cluster` for Redis Cluster mode. Memorystore uses private service access - no public IPs, connections route through your VPC.
 
 ## Private Service Access (Required for Memorystore)
 
 ```hcl
 # Enable Redis API
+
 resource "google_project_service" "redis" {
   service            = "redis.googleapis.com"
   disable_on_destroy = false

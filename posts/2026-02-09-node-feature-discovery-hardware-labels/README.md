@@ -18,6 +18,7 @@ Deploy NFD using Helm:
 
 ```bash
 # Add the NFD Helm repository
+
 helm repo add nfd https://kubernetes-sigs.github.io/node-feature-discovery/charts
 helm repo update
 

@@ -37,6 +37,7 @@ On each node, configure hugepages before installing VPP.
 ```bash
 echo 512 > /proc/sys/vm/nr_hugepages
 # Add to sysctl for persistence
+
 echo 'vm.nr_hugepages = 512' >> /etc/sysctl.d/99-hugepages.conf
 ```
 

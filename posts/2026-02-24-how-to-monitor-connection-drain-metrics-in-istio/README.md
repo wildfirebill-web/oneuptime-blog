@@ -28,6 +28,7 @@ Check the error rate during deployments by correlating with pod termination even
 
 ```bash
 # 5xx error rate for a specific service over the last 10 minutes
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant http://localhost:9090 \
   'sum(rate(istio_requests_total{destination_service="api.default.svc.cluster.local",response_code=~"5.."}[10m])) / sum(rate(istio_requests_total{destination_service="api.default.svc.cluster.local"}[10m]))'

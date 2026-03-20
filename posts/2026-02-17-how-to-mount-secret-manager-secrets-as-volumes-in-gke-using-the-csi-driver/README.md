@@ -42,6 +42,7 @@ For GKE Standard clusters, enable the Secret Manager add-on:
 
 ```bash
 # Enable the Secret Manager CSI driver add-on on an existing cluster
+
 gcloud container clusters update my-cluster \
   --region=us-central1 \
   --enable-secret-manager \

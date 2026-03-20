@@ -8,12 +8,13 @@ Description: Learn how to push OpenTofu provider plugins to OCI-compatible regis
 
 ## Introduction
 
-OpenTofu 1.8+ supports using OCI (Open Container Initiative) registries as a source for provider plugins. This lets you store providers alongside your container images in the same registry infrastructure — ECR, ACR, GCR, or any OCI-compliant registry. Pushing providers to OCI is different from pushing container images: you're packaging provider binaries as OCI artifacts, not Docker images.
+OpenTofu 1.8+ supports using OCI (Open Container Initiative) registries as a source for provider plugins. This lets you store providers alongside your container images in the same registry infrastructure - ECR, ACR, GCR, or any OCI-compliant registry. Pushing providers to OCI is different from pushing container images: you're packaging provider binaries as OCI artifacts, not Docker images.
 
 ## Prerequisites
 
 ```bash
 # Install oras (OCI Registry AS Storage) for pushing OCI artifacts
+
 # macOS
 brew install oras
 

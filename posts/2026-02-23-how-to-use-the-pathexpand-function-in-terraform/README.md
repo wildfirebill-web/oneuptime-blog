@@ -16,6 +16,7 @@ The `pathexpand` function takes a filesystem path string and expands any leading
 
 ```hcl
 # Expands ~ to the home directory
+
 # On a Linux system where the user is "deploy", this returns "/home/deploy/.ssh/id_rsa"
 output "ssh_key_path" {
   value = pathexpand("~/.ssh/id_rsa")

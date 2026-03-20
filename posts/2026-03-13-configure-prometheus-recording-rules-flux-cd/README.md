@@ -29,6 +29,7 @@ Define recording rules that pre-compute expensive or frequently used PromQL expr
 
 ```yaml
 # infrastructure/monitoring/recording-rules/api-recording-rules.yaml
+
 # PrometheusRule containing recording rules that pre-compute API metrics
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule

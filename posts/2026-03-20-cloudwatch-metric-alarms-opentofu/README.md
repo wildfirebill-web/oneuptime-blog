@@ -92,6 +92,7 @@ resource "aws_cloudwatch_metric_alarm" "ec2_cpu_high" {
 
 ```hcl
 # Alarm using metric math: error rate = errors / invocations * 100
+
 resource "aws_cloudwatch_metric_alarm" "lambda_error_rate" {
   alarm_name          = "${var.project_name}-lambda-error-rate"
   comparison_operator = "GreaterThanThreshold"

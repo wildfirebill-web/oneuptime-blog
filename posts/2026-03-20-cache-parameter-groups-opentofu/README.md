@@ -12,6 +12,7 @@ Parameter groups control the runtime behavior of ElastiCache clusters. Managing 
 
 ```hcl
 # Redis 7.x parameter group
+
 resource "aws_elasticache_parameter_group" "redis7" {
   family = "redis7"
   name   = "production-redis7"
@@ -66,7 +67,7 @@ resource "aws_elasticache_parameter_group" "redis7" {
 resource "aws_elasticache_parameter_group" "session_store" {
   family      = "redis7"
   name        = "session-store-redis7"
-  description = "For session storage — only evict expired keys"
+  description = "For session storage - only evict expired keys"
 
   parameter {
     name  = "maxmemory-policy"
@@ -78,7 +79,7 @@ resource "aws_elasticache_parameter_group" "session_store" {
 resource "aws_elasticache_parameter_group" "pure_cache" {
   family      = "redis7"
   name        = "pure-cache-redis7"
-  description = "For pure caching — evict any key when memory full"
+  description = "For pure caching - evict any key when memory full"
 
   parameter {
     name  = "maxmemory-policy"
@@ -90,7 +91,7 @@ resource "aws_elasticache_parameter_group" "pure_cache" {
 resource "aws_elasticache_parameter_group" "queue" {
   family      = "redis7"
   name        = "queue-redis7"
-  description = "For queues — never evict data"
+  description = "For queues - never evict data"
 
   parameter {
     name  = "maxmemory-policy"

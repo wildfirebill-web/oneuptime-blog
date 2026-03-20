@@ -58,6 +58,7 @@ If the pod logs indicate HNS errors:
 
 ```powershell
 # Check HNS service status
+
 Get-Service HNS
 Restart-Service HNS -Force
 

@@ -53,6 +53,7 @@ Snapshots are the primary backup mechanism in Cassandra. They create hard links 
 ```bash
 #!/bin/bash
 # create-snapshot.sh
+
 # Creates a named snapshot across all keyspaces on the current node
 
 # Define snapshot name with timestamp for easy identification

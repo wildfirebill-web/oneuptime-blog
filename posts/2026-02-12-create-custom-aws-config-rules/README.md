@@ -42,6 +42,7 @@ import json
 import boto3
 
 # List of approved AMI IDs
+
 APPROVED_AMIS = [
     'ami-0abcdef1234567890',
     'ami-0fedcba9876543210',

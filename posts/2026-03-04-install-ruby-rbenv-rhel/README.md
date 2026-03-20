@@ -14,6 +14,7 @@ rbenv is a lightweight Ruby version manager that lets you switch between Ruby ve
 
 ```bash
 # Install build tools and libraries needed to compile Ruby
+
 sudo dnf install -y git gcc gcc-c++ make bzip2 openssl-devel \
   readline-devel zlib-devel libffi-devel libyaml-devel \
   gdbm-devel ncurses-devel

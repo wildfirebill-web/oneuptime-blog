@@ -46,6 +46,7 @@ The following script helps you identify which Splunk OpenTelemetry packages are 
 
 ```bash
 # Check for Splunk OTel packages in a Node.js project
+
 # This lists all Splunk-specific OpenTelemetry dependencies
 npm list 2>/dev/null | grep -i splunk
 

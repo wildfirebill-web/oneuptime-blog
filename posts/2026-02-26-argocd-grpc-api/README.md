@@ -50,6 +50,7 @@ The `.proto` files live in the ArgoCD repository under `server/` directories.
 
 ```bash
 # Install grpcurl
+
 # macOS
 brew install grpcurl
 

@@ -27,6 +27,7 @@ class ServiceStatus(NamedTuple):
     has_aaaa: bool
 
 # All services that should have AAAA records
+
 ALL_SERVICES = [
     "www.example.com",
     "api.example.com",
@@ -198,4 +199,4 @@ if result['issues']:
 
 ## Conclusion
 
-IPv6 migration progress measurement uses four primary metrics: AAAA DNS record coverage (percentage of services reachable via IPv6), production IPv6 traffic percentage (business outcome metric), infrastructure readiness (devices and services with IPv6 configured), and application readiness score (code quality metric). Report these weekly during the migration phase in a simple dashboard. The IPv6 traffic percentage is the most meaningful outcome metric — it directly reflects how many real users benefit from IPv6 enablement.
+IPv6 migration progress measurement uses four primary metrics: AAAA DNS record coverage (percentage of services reachable via IPv6), production IPv6 traffic percentage (business outcome metric), infrastructure readiness (devices and services with IPv6 configured), and application readiness score (code quality metric). Report these weekly during the migration phase in a simple dashboard. The IPv6 traffic percentage is the most meaningful outcome metric - it directly reflects how many real users benefit from IPv6 enablement.

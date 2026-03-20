@@ -28,6 +28,7 @@ Create a base LimitRange that sets sensible defaults for container resource requ
 
 ```yaml
 # base/limitrange.yaml - Default LimitRange applied to application namespaces
+
 apiVersion: v1
 kind: LimitRange
 metadata:

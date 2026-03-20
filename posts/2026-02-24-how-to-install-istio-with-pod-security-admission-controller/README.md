@@ -42,6 +42,7 @@ The cleanest solution is to use the Istio CNI plugin, which eliminates the need 
 
 ```yaml
 # istio-cni-psa.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

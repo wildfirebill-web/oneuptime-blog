@@ -16,7 +16,7 @@ The `strrev` function in OpenTofu reverses the characters in a string. While it 
 strrev(string)
 ```
 
-- **string** — any string value
+- **string** - any string value
 - Returns the string with all characters in reverse order
 - Properly handles Unicode characters
 

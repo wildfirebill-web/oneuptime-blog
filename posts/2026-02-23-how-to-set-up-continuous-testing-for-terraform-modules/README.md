@@ -26,6 +26,7 @@ Run your full test suite on a schedule to catch environment-caused failures.
 
 ```yaml
 # .github/workflows/continuous-testing.yml
+
 name: Continuous Module Testing
 
 on:
@@ -105,7 +106,7 @@ jobs:
 
 Drift happens when infrastructure changes outside of Terraform. Scheduled plan checks detect this.
 
-```yaml
+````yaml
 # .github/workflows/drift-detection.yml
 name: Drift Detection
 
@@ -170,9 +171,9 @@ jobs:
 
             const body = `Drift detected in **${{ matrix.environment }}** environment.
 
-            \`\`\`
+            ```
             ${planOutput.slice(-2000)}
-            \`\`\`
+            ```
 
             Run ID: ${{ github.run_id }}`;
 
@@ -192,7 +193,7 @@ jobs:
                 body: body
               });
             }
-```
+````
 
 ## Provider Compatibility Testing
 

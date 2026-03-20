@@ -29,6 +29,7 @@ etcd exposes Prometheus metrics on port 2381. Query these metrics directly:
 
 ```bash
 # Check if metrics endpoint is accessible
+
 curl http://localhost:2381/metrics
 
 # Get specific latency metrics

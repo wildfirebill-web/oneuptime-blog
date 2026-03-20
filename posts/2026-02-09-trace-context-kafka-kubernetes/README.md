@@ -288,6 +288,7 @@ Deploy Kafka and traced services:
 
 ```yaml
 # kafka-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

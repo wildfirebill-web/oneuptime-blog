@@ -77,6 +77,7 @@ Configure your tracing settings in `application.yml`:
 
 ```yaml
 # Application identification - this name appears in your tracing backend
+
 spring:
   application:
     name: order-service

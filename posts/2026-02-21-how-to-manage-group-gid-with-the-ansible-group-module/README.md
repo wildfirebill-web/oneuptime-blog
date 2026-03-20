@@ -39,6 +39,7 @@ Use the `gid` parameter to specify the numeric ID:
 
 ```yaml
 # set-gid.yml - Create group with specific GID
+
 - name: Create group with specific GID
   hosts: all
   become: yes

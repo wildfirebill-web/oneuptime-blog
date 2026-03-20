@@ -28,6 +28,7 @@ The Lambda handler setting tells AWS which file and function to execute. It's in
 
 ```bash
 # Check your function's handler setting
+
 aws lambda get-function-configuration \
   --function-name my-function \
   --query 'Handler'

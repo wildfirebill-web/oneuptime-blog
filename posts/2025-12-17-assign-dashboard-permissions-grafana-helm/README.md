@@ -35,6 +35,7 @@ The Grafana Helm chart supports dashboard provisioning through ConfigMaps.
 
 ```yaml
 # Grafana Helm chart values
+
 grafana.ini:
   users:
     viewers_can_edit: false

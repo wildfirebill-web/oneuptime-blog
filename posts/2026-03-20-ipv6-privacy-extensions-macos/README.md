@@ -1,4 +1,4 @@
-# How to Configure IPv6 Privacy Extensions on macOS
+# How to Configure IPv6 Privacy Extensions on macOS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,6 +12,7 @@ macOS has supported IPv6 privacy extensions since OS X 10.7 Lion. By default, ma
 
 ```bash
 # List all IPv6 addresses on active interfaces
+
 ifconfig | grep "inet6"
 
 # More detailed view with interface names
@@ -22,8 +23,8 @@ ifconfig en0 | grep "inet6"
 # inet6 2001:db8:x:x:a1b2:c3d4:e5f6:7890 prefixlen 64 autoconf temporary
 # inet6 2001:db8:x:x:aabb:ccff:fedd:eeff prefixlen 64 autoconf secured
 
-# Look for "temporary" — this is the privacy extension address used for outbound
-# Look for "secured" — this is the stable privacy address (RFC 7217)
+# Look for "temporary" - this is the privacy extension address used for outbound
+# Look for "secured" - this is the stable privacy address (RFC 7217)
 ```
 
 ## macOS IPv6 Address Types

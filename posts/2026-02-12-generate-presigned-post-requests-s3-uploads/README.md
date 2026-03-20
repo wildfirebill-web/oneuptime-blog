@@ -33,6 +33,7 @@ import json
 s3 = boto3.client('s3')
 
 # Generate presigned POST data
+
 post = s3.generate_presigned_post(
     Bucket='my-upload-bucket',
     Key='user-uploads/${filename}',  # ${filename} is replaced by actual filename

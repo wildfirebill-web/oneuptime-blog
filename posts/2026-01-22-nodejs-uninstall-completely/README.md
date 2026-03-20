@@ -16,6 +16,7 @@ Check your current Node.js installation:
 
 ```bash
 # Check Node.js version and location
+
 node --version
 which node
 

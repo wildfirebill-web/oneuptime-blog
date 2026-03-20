@@ -34,6 +34,7 @@ Start by creating a Front Door profile. I recommend the Premium tier if you need
 
 ```bash
 # Create a Front Door profile
+
 az afd profile create \
   --profile-name fd-functions \
   --resource-group rg-functions \

@@ -25,6 +25,7 @@ Before configuring the collector, you need a certificate infrastructure. Here's 
 
 ```bash
 # Generate a Certificate Authority (CA)
+
 openssl genrsa -out ca-key.pem 4096
 openssl req -new -x509 -days 365 -key ca-key.pem -out ca-cert.pem \
   -subj "/CN=OpenTelemetry-CA"

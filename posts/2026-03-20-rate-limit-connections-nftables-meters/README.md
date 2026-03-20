@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: nftables, Linux, Firewall, Rate Limiting, DDoS Protection, Meters, Security
+Tags: nftables, Linux, Firewall, Rate Limiting, DDoS Protection, Meter, Security
 
 Description: Use nftables meters to track and rate-limit new connections per source IP address, protecting services from connection floods and brute-force attacks.
 
@@ -22,6 +22,7 @@ The simplest form of rate limiting applies a global rate to all traffic matching
 
 ```bash
 # Limit all new SSH connections to 5 per minute globally
+
 nft add rule inet filter input tcp dport 22 ct state new limit rate 5/minute accept
 nft add rule inet filter input tcp dport 22 drop
 ```

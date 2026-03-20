@@ -39,6 +39,7 @@ The ArgoCD provider needs to connect to your ArgoCD server. There are several au
 
 ```hcl
 # Option 1: Username and password
+
 provider "argocd" {
   server_addr = "argocd.example.com:443"
   username    = "admin"

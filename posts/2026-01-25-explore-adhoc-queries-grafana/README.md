@@ -34,6 +34,7 @@ Select your Prometheus data source and enter a query:
 
 ```promql
 # Check current request rate
+
 rate(http_requests_total{service="api-gateway"}[5m])
 ```
 

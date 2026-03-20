@@ -29,6 +29,7 @@ Store the OpenSearch admin credentials that Dashboards uses to connect:
 
 ```yaml
 # infrastructure/search/dashboards-secret.yaml (use SealedSecret in production)
+
 apiVersion: v1
 kind: Secret
 metadata:

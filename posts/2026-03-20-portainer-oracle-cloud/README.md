@@ -1,4 +1,4 @@
-# How to Deploy Portainer on Oracle Cloud Free Tier
+# How to Deploy Portainer on Oracle Cloud Free Tier - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -13,7 +13,7 @@ Oracle's Always Free tier includes:
 - **Up to 4 Ampere A1 cores and 24GB RAM** (ARM-based, significantly more powerful)
 - 200GB block storage total
 
-The A1 Ampere instances are excellent for Portainer — 4 cores and 24GB RAM is more than most cloud free tiers offer.
+The A1 Ampere instances are excellent for Portainer - 4 cores and 24GB RAM is more than most cloud free tiers offer.
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ OCI uses Security Lists for firewall rules (VCN-level):
 1. **Networking → Virtual Cloud Networks → your-vcn → Security Lists → Default**
 2. Add Ingress Rules:
 
-```
+```text
 Protocol: TCP, Source: 0.0.0.0/0, Port: 22     (SSH)
 Protocol: TCP, Source: 0.0.0.0/0, Port: 9443   (Portainer HTTPS)
 Protocol: TCP, Source: 0.0.0.0/0, Port: 80     (HTTP)
@@ -52,6 +52,7 @@ OCI Ubuntu instances have an additional iptables firewall:
 
 ```bash
 # SSH into the instance
+
 ssh ubuntu@<PUBLIC_IP>
 
 # Allow required ports in iptables
@@ -128,4 +129,4 @@ With 4 ARM cores and 24GB RAM on OCI Free Tier:
 
 ## Conclusion
 
-Oracle Cloud Free Tier's A1 Ampere instances are the most generous free cloud compute available for running Portainer. The ARM architecture is fully supported by Portainer and most Docker images. The main friction point is OCI's two-layer firewall (Security List + iptables) — remember to configure both.
+Oracle Cloud Free Tier's A1 Ampere instances are the most generous free cloud compute available for running Portainer. The ARM architecture is fully supported by Portainer and most Docker images. The main friction point is OCI's two-layer firewall (Security List + iptables) - remember to configure both.

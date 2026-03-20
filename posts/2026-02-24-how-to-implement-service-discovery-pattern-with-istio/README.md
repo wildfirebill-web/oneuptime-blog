@@ -258,6 +258,7 @@ Using `REGISTRY_ONLY` forces you to explicitly register all external services, w
 
 ```bash
 # Check what mode is currently active
+
 kubectl get configmap istio -n istio-system -o jsonpath='{.data.mesh}' | grep outboundTrafficPolicy
 ```
 

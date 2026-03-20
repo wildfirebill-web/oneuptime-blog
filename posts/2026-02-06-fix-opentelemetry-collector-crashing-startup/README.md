@@ -50,6 +50,7 @@ Check the logs immediately after the crash. In Kubernetes, use `kubectl logs` wi
 
 ```bash
 # Get logs from the most recently crashed collector pod
+
 kubectl logs -n monitoring otel-collector-0 --previous
 
 # For Docker containers

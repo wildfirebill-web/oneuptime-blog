@@ -21,6 +21,7 @@ HAProxy is a high-performance, battle-tested load balancer commonly used in fron
 
 ```bash
 # Ubuntu/Debian
+
 apt update
 apt install -y haproxy
 

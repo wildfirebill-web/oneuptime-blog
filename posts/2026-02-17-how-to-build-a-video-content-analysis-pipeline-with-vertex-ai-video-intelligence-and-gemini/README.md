@@ -42,6 +42,7 @@ Enable the required APIs and create the storage infrastructure:
 
 ```bash
 # Enable Video Intelligence and Vertex AI APIs
+
 gcloud services enable videointelligence.googleapis.com
 gcloud services enable aiplatform.googleapis.com
 

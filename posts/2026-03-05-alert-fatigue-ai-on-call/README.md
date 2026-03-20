@@ -67,6 +67,7 @@ Here's what this looks like in practice with OpenTelemetry:
 
 ```yaml
 # OpenTelemetry Collector config for trace-based topology
+
 processors:
   spanmetrics:
     metrics_exporter: prometheus

@@ -48,6 +48,7 @@ Before enforcing, run in audit mode to understand current traffic:
 
 ```bash
 # Apply audit mode annotation to the node's host endpoint
+
 kubectl annotate node <node-name> \
   policy.cilium.io/host-firewall-mode=audit
 ```

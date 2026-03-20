@@ -34,6 +34,7 @@ resource "azurerm_logic_app_workflow" "order_notification" {
 
 ```hcl
 # HTTP Request trigger
+
 resource "azurerm_logic_app_trigger_http_request" "order_trigger" {
   name         = "when-order-received"
   logic_app_id = azurerm_logic_app_workflow.order_notification.id
@@ -136,4 +137,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure Logic Apps simplify workflow automation and service integration. OpenTofu manages workflow resources, triggers, actions, and supporting storage — enabling reproducible, code-driven workflow infrastructure for both Consumption and Standard tiers.
+Azure Logic Apps simplify workflow automation and service integration. OpenTofu manages workflow resources, triggers, actions, and supporting storage - enabling reproducible, code-driven workflow infrastructure for both Consumption and Standard tiers.

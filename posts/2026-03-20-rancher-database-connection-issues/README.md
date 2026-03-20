@@ -20,6 +20,7 @@ Rancher HA installations rely on an external MySQL (or MySQL-compatible) databas
 
 ```bash
 # Check Rancher logs for database-related messages
+
 kubectl logs -n cattle-system -l app=rancher --tail=300 \
   | grep -iE "database|sql|mysql|connection|driver"
 

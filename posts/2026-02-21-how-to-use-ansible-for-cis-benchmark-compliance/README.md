@@ -16,6 +16,7 @@ The community maintains CIS hardening roles on Ansible Galaxy:
 
 ```bash
 # Install a CIS hardening role
+
 ansible-galaxy install ansible-lockdown.rhel9_cis
 ```
 

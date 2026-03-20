@@ -36,6 +36,7 @@ resource "aws_vpc" "main" {
 }
 
 # Public subnets: Load balancers, NAT gateways, bastion hosts
+
 resource "aws_subnet" "public" {
   count             = length(local.availability_zones)
   vpc_id            = aws_vpc.main.id

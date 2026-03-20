@@ -19,6 +19,7 @@ Before installing Kubernetes packages, several system-level configurations need 
 ```yaml
 ---
 # playbook: k8s-prerequisites.yml
+
 # Configure system prerequisites for Kubernetes
 - hosts: k8s_nodes
   become: true

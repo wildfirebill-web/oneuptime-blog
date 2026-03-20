@@ -20,6 +20,7 @@ Podman uses a layered filesystem, where each instruction in a Containerfile crea
 
 ```dockerfile
 # Containerfile optimized for layer caching
+
 # Dependencies change less frequently than source code,
 # so install them in earlier layers
 

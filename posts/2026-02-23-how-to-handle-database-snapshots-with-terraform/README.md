@@ -20,6 +20,7 @@ There are two types of snapshots: automated snapshots that AWS creates according
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

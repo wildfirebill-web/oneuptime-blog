@@ -31,6 +31,7 @@ Create a Pub/Sub topic to receive Batch job notifications.
 
 ```bash
 # Create the topic for batch job notifications
+
 gcloud pubsub topics create batch-job-notifications
 
 # Create a subscription for the Cloud Function

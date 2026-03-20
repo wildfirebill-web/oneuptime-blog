@@ -93,6 +93,7 @@ def generate_fingerprint(
 
 
 # Example usage
+
 alert = {
     "source": "prometheus",
     "alertname": "HighCPUUsage",

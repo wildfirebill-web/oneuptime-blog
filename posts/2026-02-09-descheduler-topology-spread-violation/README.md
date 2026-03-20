@@ -29,6 +29,7 @@ Here's how to enable the RemovePodsViolatingTopologySpreadConstraint strategy:
 
 ```yaml
 # descheduler-topology-violation.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

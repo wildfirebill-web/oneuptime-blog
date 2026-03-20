@@ -20,6 +20,7 @@ This task will always fail and print the given message:
 
 ```yaml
 # basic-fail.yml - Demonstrates the simplest fail usage
+
 ---
 - name: Demonstrate basic fail module
   hosts: localhost

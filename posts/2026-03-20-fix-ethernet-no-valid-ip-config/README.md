@@ -1,10 +1,10 @@
-# How to Fix "Ethernet Doesn't Have a Valid IP Configuration"
+# How to Fix 'Ethernet Doesn't Have a Valid IP Configuration'
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Ethernet, Windows, IP Configuration, Troubleshooting, DHCP
 
-Description: Learn how to fix the "Ethernet doesn't have a valid IP configuration" error in Windows, which causes complete loss of network connectivity despite the cable being connected.
+Description: Learn how to fix the 'Ethernet doesn't have a valid IP configuration' error in Windows, which causes complete loss of network connectivity despite the cable being connected.
 
 ## What This Error Means
 
@@ -30,7 +30,7 @@ REM If you still see 169.254.x.x (APIPA) or 0.0.0.0, continue troubleshooting
 ## Step 2: Reset Network Stack
 
 ```cmd
-REM Full TCP/IP stack reset — most effective fix
+REM Full TCP/IP stack reset - most effective fix
 netsh winsock reset catalog
 netsh int ip reset reset.log
 netsh int ipv6 reset reset.log
@@ -45,6 +45,7 @@ shutdown /r /t 0
 
 ```powershell
 # Restart the adapter cleanly
+
 Disable-NetAdapter -Name "Ethernet" -Confirm:$false
 Start-Sleep -Seconds 5
 Enable-NetAdapter -Name "Ethernet"
@@ -110,7 +111,7 @@ Start-Process devmgmt.msc
 REM Check if DHCP server is responding (Wireshark or tcpdump method)
 REM From another device on same network, check DHCP pool status
 
-REM On Cisco switch — verify port is in access mode
+REM On Cisco switch - verify port is in access mode
 REM show interfaces GigabitEthernet0/1 status
 REM show mac address-table interface GigabitEthernet0/1
 

@@ -562,6 +562,7 @@ Track pipeline metrics:
 
 ```bash
 # View pipeline metrics
+
 kubectl port-forward -n observability svc/otel-collector 8888:8888
 curl http://localhost:8888/metrics | grep pipeline
 

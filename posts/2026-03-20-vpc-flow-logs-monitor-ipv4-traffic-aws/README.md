@@ -25,6 +25,7 @@ VPC Flow Logs capture information about IP traffic flowing through network inter
 
 ```bash
 # To CloudWatch Logs
+
 aws ec2 create-flow-logs \
   --resource-type VPC \
   --resource-ids vpc-xxxxxxxxxxxxxxxxx \
@@ -48,13 +49,13 @@ aws ec2 create-flow-logs \
 
 Default flow log fields:
 
-```
+```text
 version account-id interface-id srcaddr dstaddr srcport dstport protocol packets bytes start end action log-status
 ```
 
 Example record:
 
-```
+```text
 2 123456789012 eni-abcdef01 10.0.1.10 10.0.2.20 54321 443 6 10 4340 1609459200 1609459260 ACCEPT OK
 ```
 
@@ -62,7 +63,7 @@ Example record:
 
 Find rejected IPv4 traffic:
 
-```
+```text
 fields @timestamp, srcAddr, dstAddr, dstPort, action
 | filter action = "REJECT" and ispresent(srcAddr)
 | filter not startsWith(srcAddr, "fe80:")
@@ -73,7 +74,7 @@ fields @timestamp, srcAddr, dstAddr, dstPort, action
 
 Top talkers by traffic volume:
 
-```
+```text
 fields @timestamp, srcAddr, dstAddr, bytes
 | stats sum(bytes) as totalBytes by srcAddr
 | sort totalBytes desc

@@ -499,6 +499,7 @@ When Jsonnet fails to render:
 
 ```bash
 # View rendered manifests
+
 argocd app manifests my-jsonnet-app
 
 # Get detailed error messages

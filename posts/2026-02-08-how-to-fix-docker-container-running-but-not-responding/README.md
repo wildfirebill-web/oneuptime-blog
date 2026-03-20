@@ -18,6 +18,7 @@ First, verify what "not responding" actually means. Is the application not accep
 
 ```bash
 # Check if the container is actually running
+
 docker ps --filter name=my-container
 
 # Check if the port mapping is correct

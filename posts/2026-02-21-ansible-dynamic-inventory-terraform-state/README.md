@@ -15,6 +15,7 @@ Instead of generating static inventory files, you can build a dynamic inventory 
 ```python
 #!/usr/bin/env python3
 # inventory/terraform_inventory.py - Dynamic inventory from Terraform state
+
 import json
 import subprocess
 import sys

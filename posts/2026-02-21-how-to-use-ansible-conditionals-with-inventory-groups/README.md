@@ -18,6 +18,7 @@ Given this inventory:
 
 ```ini
 # inventory/hosts.ini
+
 [webservers]
 web-01
 web-02

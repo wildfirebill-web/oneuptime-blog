@@ -33,6 +33,7 @@ Before you begin, make sure you have the Wrangler CLI installed and authenticate
 
 ```bash
 # Install Wrangler globally
+
 npm install -g wrangler
 
 # Authenticate with Cloudflare

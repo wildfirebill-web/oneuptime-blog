@@ -25,6 +25,7 @@ This guide covers techniques for extracting, parsing, and summarizing cilium-bug
 
 ```bash
 # Extract the bugtool archive
+
 mkdir -p /tmp/bugtool-analysis
 tar xzf /tmp/cilium-bugtool.tar.gz -C /tmp/bugtool-analysis
 

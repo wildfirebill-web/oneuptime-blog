@@ -1,8 +1,8 @@
-# How to Design Rancher Architecture for Production
+# How to Design Rancher Architecture for Production - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, architecture, production, kubernetes, best-practices
+Tags: Rancher, Architecture, Production, Kubernetes, Best-practices
 
 Description: Guide to designing a robust production-ready Rancher architecture for enterprise Kubernetes deployments.
 
@@ -24,6 +24,7 @@ Always define your Rancher configuration as code:
 
 ```yaml
 # cluster-definition.yaml - Define clusters declaratively
+
 apiVersion: provisioning.cattle.io/v1
 kind: Cluster
 metadata:

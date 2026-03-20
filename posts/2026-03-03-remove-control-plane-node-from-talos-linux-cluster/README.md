@@ -28,6 +28,7 @@ Check your cluster health first:
 
 ```bash
 # Verify the cluster is healthy before making changes
+
 talosctl health --nodes <any-control-plane-ip>
 ```
 

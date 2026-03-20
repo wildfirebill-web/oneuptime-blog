@@ -26,6 +26,7 @@ If this key ends up in a public Git repository, a client-side JavaScript file, o
 
 ```bash
 # Create a new API key
+
 gcloud services api-keys create \
   --display-name="Maps API Key - Production Website" \
   --project=my-project

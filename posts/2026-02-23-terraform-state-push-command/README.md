@@ -14,6 +14,7 @@ The `terraform state push` command uploads a local state file to the configured 
 
 ```bash
 # Push a local state file to the remote backend
+
 terraform state push terraform.tfstate
 ```
 

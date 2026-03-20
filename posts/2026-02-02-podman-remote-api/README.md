@@ -56,6 +56,7 @@ Before configuring the Podman Remote API, ensure you have the following installe
 
 ```bash
 # Install Podman on Fedora/RHEL/CentOS
+
 sudo dnf install podman
 
 # Install Podman on Ubuntu/Debian

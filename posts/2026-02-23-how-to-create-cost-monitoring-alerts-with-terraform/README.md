@@ -20,6 +20,7 @@ Many teams set up billing alerts manually through the AWS console and then forge
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

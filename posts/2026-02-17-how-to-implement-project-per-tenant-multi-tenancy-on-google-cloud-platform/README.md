@@ -30,6 +30,7 @@ First, you need a folder structure that organizes tenant projects. I recommend p
 
 ```hcl
 # Create a parent folder for all tenant projects
+
 resource "google_folder" "tenants" {
   display_name = "Tenant Projects"
   parent       = "organizations/${var.org_id}"

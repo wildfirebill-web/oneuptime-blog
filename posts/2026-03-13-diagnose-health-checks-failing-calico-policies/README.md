@@ -52,6 +52,7 @@ echo "Node IP: $NODE_IP"
 ```bash
 kubectl get networkpolicy -n <namespace> -o yaml | grep -B5 -A 30 "policyTypes"
 # Look for default-deny ingress without node CIDR allow
+
 ```
 
 **Step 4: Test probe port accessibility from node IP**

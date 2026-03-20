@@ -213,6 +213,7 @@ run "creates_log_group_when_enabled" {
 
 ```yaml
 # .github/workflows/unit-tests.yml
+
 name: Unit Tests
 
 on: [pull_request]
@@ -231,7 +232,7 @@ jobs:
       - name: Run unit tests
         run: tofu test tests/unit.tftest.hcl -verbose
         working-directory: modules/my-module
-        # No AWS credentials needed — uses mock providers
+        # No AWS credentials needed - uses mock providers
 ```
 
 ## Conclusion

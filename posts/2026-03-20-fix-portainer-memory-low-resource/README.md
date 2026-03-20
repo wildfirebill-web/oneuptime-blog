@@ -14,6 +14,7 @@ Portainer's memory footprint grows with the number of containers and snapshot fr
 
 ```bash
 # Check if Portainer was killed by OOM killer
+
 sudo dmesg | grep -E "oom|killed" | grep -i portainer
 
 # Check current Portainer memory usage

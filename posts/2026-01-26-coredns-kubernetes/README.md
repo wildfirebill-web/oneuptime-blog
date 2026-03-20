@@ -69,6 +69,7 @@ First, verify that CoreDNS is running in your cluster.
 
 ```bash
 # Check CoreDNS pods
+
 kubectl get pods -n kube-system -l k8s-app=kube-dns
 
 # Expected output:

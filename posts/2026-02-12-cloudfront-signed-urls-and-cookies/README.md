@@ -30,6 +30,7 @@ First, generate an RSA key pair:
 
 ```bash
 # Generate a 2048-bit RSA private key
+
 openssl genrsa -out private_key.pem 2048
 
 # Extract the public key

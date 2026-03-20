@@ -14,6 +14,7 @@ The `-exclude` flag (available in OpenTofu 1.9+) is the inverse of `-target`. Wh
 
 ```bash
 # Exclude a specific resource from the plan
+
 tofu plan -exclude=aws_instance.web
 
 # Exclude multiple resources
@@ -89,10 +90,10 @@ tofu apply -exclude=module.shared_security_groups
 
 ## Combining with -target
 
-You can combine `-target` and `-exclude` but it can be confusing — use one or the other:
+You can combine `-target` and `-exclude` but it can be confusing - use one or the other:
 
 ```bash
-# Usually avoid combining — pick one approach
+# Usually avoid combining - pick one approach
 # -target is more explicit for isolation
 # -exclude is better for "skip this one thing"
 ```
@@ -111,4 +112,4 @@ tofu plan
 
 ## Conclusion
 
-The `-exclude` flag is OpenTofu's complement to `-target`, offering a "skip this" rather than "only this" approach. Use it when you want to apply most of your configuration but need to temporarily skip a specific resource. Like `-target`, it's an escape hatch rather than a routine workflow tool — always follow up with a full plan to ensure state consistency.
+The `-exclude` flag is OpenTofu's complement to `-target`, offering a "skip this" rather than "only this" approach. Use it when you want to apply most of your configuration but need to temporarily skip a specific resource. Like `-target`, it's an escape hatch rather than a routine workflow tool - always follow up with a full plan to ensure state consistency.

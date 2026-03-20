@@ -16,6 +16,7 @@ The most common use case is keeping two directories in sync across two machines,
 
 ```bash
 # Install Unison on Ubuntu
+
 sudo apt update
 sudo apt install unison
 

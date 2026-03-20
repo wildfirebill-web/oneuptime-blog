@@ -78,6 +78,7 @@ Now link Firebase to your Azure Notification Hub. You can do this through the Az
 
 ```bash
 # For legacy FCM (GCM) - using the server key
+
 az notification-hub credential gcm update \
   --resource-group rg-notifications \
   --namespace-name my-notifications-ns \

@@ -20,6 +20,7 @@ Ensure Quay.io is available as a search registry in Podman.
 
 ```bash
 # Check if quay.io is already in the search list
+
 podman info --format '{{.Registries.Search}}'
 
 # Add quay.io to the search registries if missing

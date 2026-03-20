@@ -8,7 +8,7 @@ Description: Learn how to diagnose and fix unexpected plan changes in OpenTofu c
 
 ## Introduction
 
-Unexpected plan changes — where OpenTofu wants to modify resources even though you have not changed your configuration — are caused by drift between the recorded state and the actual cloud resource state, or by provider attribute normalization differences.
+Unexpected plan changes - where OpenTofu wants to modify resources even though you have not changed your configuration - are caused by drift between the recorded state and the actual cloud resource state, or by provider attribute normalization differences.
 
 ## Types of Unexpected Changes
 
@@ -21,6 +21,7 @@ Unexpected plan changes — where OpenTofu wants to modify resources even though
 
 ```bash
 # Run a refresh-only plan to see only drift, no config changes
+
 tofu plan -refresh-only
 
 # Run a full plan with verbose output
@@ -36,7 +37,7 @@ If the drift is intentional (you want to accept the current cloud state):
 tofu apply -refresh-only
 
 # Alternatively, refresh state without applying
-tofu refresh   # Deprecated in newer versions — use apply -refresh-only
+tofu refresh   # Deprecated in newer versions - use apply -refresh-only
 ```
 
 ## Fix 2: Add ignore_changes for Non-Critical Attributes
@@ -53,7 +54,7 @@ resource "aws_instance" "web" {
     ignore_changes = [
       tags["LastModified"],
       tags["CostCenter"],
-      # Ignore AMI changes after creation — prevent forced replacement
+      # Ignore AMI changes after creation - prevent forced replacement
       ami,
     ]
   }

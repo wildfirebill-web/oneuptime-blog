@@ -33,6 +33,7 @@ sudo nmcli con up "System eth0"
 
 ```bash
 # Test with ping (subtract 28 bytes for IP+ICMP headers)
+
 ping -M do -s 8972 remote-host
 ```
 

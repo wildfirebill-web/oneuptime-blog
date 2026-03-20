@@ -34,6 +34,7 @@ Here's a minimal configuration to get started with the OpenSearch exporter. This
 
 ```yaml
 # receivers section - collecting telemetry data
+
 receivers:
   otlp:
     protocols:

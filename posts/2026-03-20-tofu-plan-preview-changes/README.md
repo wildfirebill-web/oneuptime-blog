@@ -1,4 +1,4 @@
-# How to Use tofu plan to Preview Changes
+# How to Use tofu plan to Preview Changes - Tofu Preview Changes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to use tofu plan to preview infrastructure changes before
 
 ## Introduction
 
-`tofu plan` creates an execution plan showing what changes OpenTofu will make to your infrastructure. It's the most important safety mechanism in OpenTofu — always run plan and review it before applying changes to production.
+`tofu plan` creates an execution plan showing what changes OpenTofu will make to your infrastructure. It's the most important safety mechanism in OpenTofu - always run plan and review it before applying changes to production.
 
 ## Basic Usage
 
 ```bash
 # Preview changes
+
 tofu plan
 
 # Example output:
@@ -36,11 +37,11 @@ tofu plan
 
 The plan uses symbols to indicate the type of change:
 
-- `+` — Resource will be **created**
-- `-` — Resource will be **destroyed**
-- `~` — Resource will be **modified in place**
-- `-/+` — Resource will be **destroyed and recreated**
-- `<= ` — Data source will be **read**
+- `+` - Resource will be **created**
+- `-` - Resource will be **destroyed**
+- `~` - Resource will be **modified in place**
+- `-/+` - Resource will be **destroyed and recreated**
+- `<= ` - Data source will be **read**
 
 ```bash
 # Example: modify in place
@@ -121,7 +122,7 @@ tofu plan -detailed-exitcode
 
 The plan ends with a summary:
 
-```
+```text
 Plan: 3 to add, 1 to change, 0 to destroy.
 ```
 
@@ -133,10 +134,10 @@ Always check:
 ## Refresh Behavior
 
 ```bash
-# Plan with refresh (default) — queries actual infrastructure
+# Plan with refresh (default) - queries actual infrastructure
 tofu plan
 
-# Plan without refresh — faster but may miss drift
+# Plan without refresh - faster but may miss drift
 tofu plan -refresh=false
 
 # Plan to only refresh state (no infrastructure changes)
@@ -178,7 +179,7 @@ tofu show -json changes.tfplan | jq '
         issue_number: context.issue.number,
         owner: context.repo.owner,
         repo: context.repo.repo,
-        body: `## Terraform Plan\n\`\`\`\n${plan}\n\`\`\``
+        body: `## Terraform Plan\n```\n${plan}\n````
       });
 ```
 

@@ -16,6 +16,7 @@ The command checks whether you can perform specific actions on resources:
 
 ```bash
 # Check if you can create pods
+
 kubectl auth can-i create pods
 
 # Check if you can delete deployments

@@ -29,6 +29,7 @@ processors:
 
 ```bash
 # Check what resource attributes are present on exported telemetry
+
 # Use the debug exporter
 kubectl logs -n observability deployment/otel-collector | grep "Resource"
 

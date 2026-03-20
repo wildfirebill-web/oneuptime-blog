@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Database, Schema Migrations, RDS, PostgreSQL, Infrastructure as Code
+Tags: OpenTofu, Database, Schema Migration, RDS, PostgreSQL, Infrastructure as Code
 
 Description: Learn how to integrate database schema migrations with OpenTofu using null resources, local-exec, and migration tools like Flyway and Liquibase.
 
@@ -32,6 +32,7 @@ resource "aws_db_instance" "postgres" {
 }
 
 # Run Flyway migrations after DB is ready
+
 resource "null_resource" "db_migrations" {
   depends_on = [aws_db_instance.postgres]
 
@@ -56,7 +57,7 @@ resource "null_resource" "db_migrations" {
 
 ## Migration Files Structure
 
-```
+```text
 migrations/
 ├── V1__initial_schema.sql
 ├── V2__add_users_table.sql

@@ -30,6 +30,7 @@ Each fix in this guide addresses a specific blocking scenario. The most impactfu
 
 ```bash
 # Get kube-system actual labels
+
 kubectl get namespace kube-system --show-labels
 
 # Test DNS before fix

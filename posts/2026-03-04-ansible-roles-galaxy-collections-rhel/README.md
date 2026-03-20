@@ -33,6 +33,7 @@ graph TD
 
 ```bash
 # Create a new role with the standard directory structure
+
 ansible-galaxy role init roles/rhel_base
 ```
 

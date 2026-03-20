@@ -20,7 +20,7 @@ Description: Learn about OSPF LSA types 1 through 7, how they propagate between 
 
 ## Step 1: View the Complete OSPF Database
 
-```
+```text
 ! Show all LSAs in the OSPF database
 Router# show ip ospf database
 
@@ -37,7 +37,7 @@ OSPF Router with ID (1.1.1.1) (Process ID 1)
 
 Type-1 LSAs describe the router's directly connected links and their states:
 
-```
+```text
 ! Show Router LSAs in Area 0
 Router# show ip ospf database router
 
@@ -54,7 +54,7 @@ If a router's Type-1 LSA is missing from the database, check OSPF adjacency to t
 
 Type-3 LSAs are advertised by ABRs to share inter-area prefixes:
 
-```
+```text
 ! Show Summary LSAs
 Router# show ip ospf database summary
 
@@ -70,7 +70,7 @@ If a route from another area is missing, check whether the ABR is generating Typ
 
 Type-5 LSAs carry redistributed external routes from the ASBR:
 
-```
+```text
 ! Show AS External LSAs
 Router# show ip ospf database external
 
@@ -87,7 +87,7 @@ If external routes are missing, verify the ASBR is redistributing correctly and 
 
 Use the detailed OSPF database and route commands to trace a missing route:
 
-```
+```text
 ! Check if the prefix exists as an LSA
 Router# show ip ospf database summary | include 172.16.5.0
 
@@ -104,7 +104,7 @@ Router# show ip ospf 1 database filter-list
 
 LSAs have a maximum age of 3600 seconds (1 hour). An LSA approaching MaxAge is being refreshed or purged:
 
-```
+```text
 Router# show ip ospf database router | include Age
 
 ! Age 3600 = LSA is being flushed (MaxAge)
@@ -116,7 +116,7 @@ Router# show ip ospf database router | include Age
 
 Remember which LSA types are blocked by area type:
 
-```
+```text
 ! For a stub area router - Type 5 LSAs should NOT appear
 Router# show ip ospf database external
 

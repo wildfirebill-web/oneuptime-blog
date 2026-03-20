@@ -18,6 +18,7 @@ The primary way to view kernel logs on Talos Linux is through the `talosctl dmes
 
 ```bash
 # View kernel logs from a specific node
+
 talosctl -n 192.168.1.10 dmesg
 
 # View kernel logs from multiple nodes at once

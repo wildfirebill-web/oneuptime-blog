@@ -16,6 +16,7 @@ Check for OOMKilled containers:
 
 ```bash
 # Find pods with OOMKilled status
+
 kubectl get pods -A -o json | jq -r '.items[] | select(.status.containerStatuses[]?.lastState.terminated.reason == "OOMKilled") | "\(.metadata.namespace)/\(.metadata.name)"'
 
 # Describe a specific pod to see OOM details

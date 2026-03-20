@@ -25,6 +25,7 @@ If you do not already have a NATS server, you can deploy one in your cluster:
 
 ```bash
 # Deploy NATS using Helm
+
 helm repo add nats https://nats-io.github.io/k8s/helm/charts/
 helm repo update
 helm install nats nats/nats --namespace nats-system --create-namespace

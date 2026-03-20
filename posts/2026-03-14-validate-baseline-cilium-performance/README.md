@@ -33,6 +33,7 @@ set -euo pipefail
 echo "=== Cilium Baseline Validation ==="
 
 # Step 1: Measure host baseline
+
 HOST_BPS=$(kubectl exec host-iperf -- iperf3 -c $HOST_IP -t 20 -P 1 -J | \
   jq '.end.sum_sent.bits_per_second')
 echo "Host baseline: $(echo "scale=2; $HOST_BPS / 1000000000" | bc) Gbps"

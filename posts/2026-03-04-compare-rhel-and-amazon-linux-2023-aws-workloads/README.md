@@ -16,6 +16,7 @@ Amazon Linux 2023 is free on AWS with no per-hour OS licensing charge. RHEL on A
 
 ```bash
 # Launch an Amazon Linux 2023 instance (no OS cost)
+
 aws ec2 run-instances --image-id ami-0abcdef1234567890 \
   --instance-type t3.medium --key-name mykey
 

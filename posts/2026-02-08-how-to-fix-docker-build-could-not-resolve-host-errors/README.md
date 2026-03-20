@@ -41,6 +41,7 @@ The most reliable fix is to set DNS servers in Docker's daemon configuration. Th
 
 ```bash
 # Edit the Docker daemon configuration
+
 sudo nano /etc/docker/daemon.json
 ```
 

@@ -142,6 +142,7 @@ Check memory usage before adding Sidecar resources:
 
 ```bash
 # Baseline memory
+
 kubectl top pods -n production -l app=api-gateway --containers | grep istio-proxy
 
 # Check Envoy configuration size

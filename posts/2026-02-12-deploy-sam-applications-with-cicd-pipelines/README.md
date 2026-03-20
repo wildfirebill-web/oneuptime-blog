@@ -26,6 +26,7 @@ Here's how to get started with the interactive setup:
 
 ```bash
 # Initialize a CI/CD pipeline configuration for your SAM app
+
 sam pipeline init --bootstrap
 ```
 

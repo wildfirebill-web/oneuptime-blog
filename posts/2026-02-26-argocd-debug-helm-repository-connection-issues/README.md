@@ -31,6 +31,7 @@ The most common issue is a wrong URL. Helm repository URLs must point to the dir
 
 ```bash
 # ChartMuseum / basic Helm repos
+
 https://charts.example.com/
 
 # Artifactory

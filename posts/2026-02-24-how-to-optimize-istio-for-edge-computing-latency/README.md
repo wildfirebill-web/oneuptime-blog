@@ -205,6 +205,7 @@ Measure the actual latency impact with and without Istio using a simple test:
 
 ```bash
 # Deploy a latency test tool
+
 kubectl apply -f - <<EOF
 apiVersion: apps/v1
 kind: Deployment

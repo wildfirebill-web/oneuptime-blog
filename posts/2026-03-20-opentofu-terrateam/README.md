@@ -20,6 +20,7 @@ Learn how to configure Terrateam for GitHub-based OpenTofu workflows with automa
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

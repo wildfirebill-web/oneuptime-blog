@@ -14,6 +14,7 @@ Point-in-time benchmarks are insufficient for production networks. You need cont
 
 ```bash
 # node_exporter exposes IPv6 interface counters via /proc/net/if_inet6
+
 # Install and start
 wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
 tar xzf node_exporter*.tar.gz
@@ -76,7 +77,7 @@ if __name__ == "__main__":
 ## Prometheus Configuration
 
 ```yaml
-# prometheus.yml — scrape IPv6 exporters
+# prometheus.yml - scrape IPv6 exporters
 global:
   scrape_interval: 15s
 

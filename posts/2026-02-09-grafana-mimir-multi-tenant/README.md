@@ -24,6 +24,7 @@ Start with a simple multi-component Mimir deployment:
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

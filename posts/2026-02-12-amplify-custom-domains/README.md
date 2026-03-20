@@ -66,6 +66,7 @@ After you add the domain, Amplify creates these records:
 
 ```text
 # Amplify creates these DNS records automatically in Route 53
+
 Type: CNAME
 Name: _c3e2d7e8a9.yourdomain.com
 Value: _a1b2c3d4e5.acm-validations.aws  # For SSL validation

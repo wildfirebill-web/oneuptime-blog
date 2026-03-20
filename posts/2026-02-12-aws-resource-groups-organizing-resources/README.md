@@ -28,6 +28,7 @@ Using the CLI:
 
 ```bash
 # Create a resource group for production resources
+
 aws resource-groups create-group \
   --name "production-resources" \
   --description "All resources in the production environment" \
@@ -159,7 +160,7 @@ for service in payments user-auth notifications; do
 done
 ```
 
-## Resource Groups and Systems Manager
+Resource Groups and Systems Manager
 
 Resource Groups integrate directly with AWS Systems Manager. You can use a resource group as a target for Systems Manager operations like:
 
@@ -178,7 +179,7 @@ aws ssm send-command \
   --comment "Check system health on production instances"
 ```
 
-## Resource Groups with AWS Config
+Resource Groups with AWS Config
 
 AWS Config can use Resource Groups to scope its rules. Instead of evaluating compliance for all resources, you can evaluate only resources in a specific group:
 

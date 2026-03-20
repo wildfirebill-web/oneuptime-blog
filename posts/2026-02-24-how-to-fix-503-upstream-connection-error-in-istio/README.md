@@ -34,6 +34,7 @@ The most basic cause is that the destination service is down:
 
 ```bash
 # Check if the target pods are running
+
 kubectl get pods -n production -l app=orders-service
 
 # Check if the service has endpoints

@@ -1,19 +1,20 @@
-# How to Fix Endpoint Instability in Portainer
+# How to Fix Endpoint Instability in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Troubleshooting, Endpoints, Stability
+Tags: Portainer, Docker, Troubleshooting, Endpoint, Stability
 
 Description: Address Portainer endpoint instability where environments frequently switch between online and offline states, causing unreliable management and false alerts.
 
 ## Introduction
 
-An unstable endpoint in Portainer flickers between online and offline states — it shows green for a few minutes, then goes red, then recovers on its own. This is different from a permanently failed connection. Instability is usually caused by network intermittency, resource exhaustion, agent health check failures, or snapshot timeout issues.
+An unstable endpoint in Portainer flickers between online and offline states - it shows green for a few minutes, then goes red, then recovers on its own. This is different from a permanently failed connection. Instability is usually caused by network intermittency, resource exhaustion, agent health check failures, or snapshot timeout issues.
 
 ## Step 1: Identify the Pattern
 
 ```bash
 # Check Portainer logs for repeated connection/disconnection messages
+
 docker logs portainer 2>&1 | grep -i "endpoint\|connect\|disconnect\|timeout" | tail -50
 
 # Look for patterns like:

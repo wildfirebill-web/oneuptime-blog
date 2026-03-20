@@ -340,6 +340,7 @@ def estimate_partition_size(
     }
 
 # Example: User activities table
+
 # 1000 activities per user per month, 500 bytes average per activity
 estimate = estimate_partition_size(
     rows_per_partition=1000,

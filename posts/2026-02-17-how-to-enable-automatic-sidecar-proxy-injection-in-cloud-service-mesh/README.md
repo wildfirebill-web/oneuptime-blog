@@ -38,6 +38,7 @@ Cloud Service Mesh uses revision labels to manage multiple versions of the contr
 
 ```bash
 # List control plane revisions
+
 kubectl get controlplanerevision -n istio-system
 
 # For managed Cloud Service Mesh, the revision is typically:

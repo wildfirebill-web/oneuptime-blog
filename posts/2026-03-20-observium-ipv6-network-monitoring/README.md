@@ -33,6 +33,7 @@ $config['snmp']['v3'][0]['cryptoalgo'] = 'AES';
 
 ```bash
 # Add device by IPv6 address
+
 cd /opt/observium
 ./addhost.php 2001:db8::router1 v2c public 161 udp
 
@@ -135,4 +136,4 @@ snmpget -v2c -c public "[2001:db8::router1]" sysDescr.0
 tail -f /opt/observium/logs/observium.log | grep -i "ipv6\|error"
 ```
 
-Observium's SNMP-driven monitoring model works identically for IPv6 devices as for IPv4 — simply enter the IPv6 address when adding a device and Observium handles the rest, providing full interface graphs and BGP session visibility.
+Observium's SNMP-driven monitoring model works identically for IPv6 devices as for IPv4 - simply enter the IPv6 address when adding a device and Observium handles the rest, providing full interface graphs and BGP session visibility.

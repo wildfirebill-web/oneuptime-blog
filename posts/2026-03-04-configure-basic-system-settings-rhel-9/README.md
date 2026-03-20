@@ -20,6 +20,7 @@ Set a static hostname that persists across reboots:
 
 ```bash
 # Set the static hostname
+
 sudo hostnamectl set-hostname webserver01.example.com
 
 # Verify it took effect

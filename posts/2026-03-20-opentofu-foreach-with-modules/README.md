@@ -1,11 +1,10 @@
----
-title: "How to Use for_each with Modules in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, for_each
-description: "Learn how to use for_each with modules in OpenTofu to create multiple instances of a module from a map or set of strings."
----
+# How to Use for_each with Modules in OpenTofu - Foreach
 
-# How to Use for_each with Modules in OpenTofu
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, for_each
+
+Description: Learn how to use for_each with modules in OpenTofu to create multiple instances of a module from a map or set of strings.
 
 When you need to create multiple instances of a module based on a map or set of values, OpenTofu's `for_each` meta-argument provides a powerful and flexible approach. Unlike `count`, `for_each` lets you reference each instance by a meaningful key, making your infrastructure easier to manage.
 
@@ -108,6 +107,7 @@ output "primary_db_endpoint" {
 
 ```hcl
 # variables.tf
+
 variable "services" {
   type = map(object({
     image      = string

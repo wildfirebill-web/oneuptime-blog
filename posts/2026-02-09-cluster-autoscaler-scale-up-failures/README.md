@@ -24,6 +24,7 @@ Check for unschedulable pods and scale-up attempts.
 
 ```bash
 # Find unschedulable pods
+
 kubectl get pods --all-namespaces --field-selector=status.phase=Pending
 
 # Describe pending pod to see why it cannot schedule
@@ -241,7 +242,7 @@ kubectl get pods --all-namespaces -o json | \
       {pod: .metadata.name, namespace: .metadata.namespace}'
 ```
 
-## Resource Request Mismatches
+Resource Request Mismatches
 
 Pods request more resources than any node type provides.
 

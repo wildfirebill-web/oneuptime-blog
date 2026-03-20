@@ -14,6 +14,7 @@ WiFi configuration with Netplan is slightly more involved than wired networking 
 
 ```bash
 # List wireless interfaces
+
 iw dev
 
 # Or with ip command

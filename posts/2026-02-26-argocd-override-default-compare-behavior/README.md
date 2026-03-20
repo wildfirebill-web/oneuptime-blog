@@ -55,6 +55,7 @@ Server-side diff delegates the comparison to the Kubernetes API server using dry
 
 ```yaml
 # Enable globally
+
 data:
   controller.diff.server.side: "true"
 

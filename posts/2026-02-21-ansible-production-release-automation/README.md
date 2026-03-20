@@ -34,6 +34,7 @@ Always validate before deploying to production:
 
 ```yaml
 # playbooks/production-release.yml
+
 # Complete production release automation
 ---
 - name: Pre-release validation

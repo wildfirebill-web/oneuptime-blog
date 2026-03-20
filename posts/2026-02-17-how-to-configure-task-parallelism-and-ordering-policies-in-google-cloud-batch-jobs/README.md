@@ -38,6 +38,7 @@ When all tasks are independent and you want the job to finish as fast as possibl
 
 ```python
 # max_parallel_job.py - All tasks run simultaneously
+
 from google.cloud import batch_v1
 
 def create_fully_parallel_job(project_id, region):

@@ -19,6 +19,7 @@ Instead of hardcoding weight progressions in your CI pipeline, use a reusable sc
 ```bash
 #!/bin/bash
 # traffic-shift.sh
+
 # Usage: ./traffic-shift.sh <namespace> <virtualservice> <target-subset> <step-size> <interval> <max-error-rate>
 
 NAMESPACE=$1

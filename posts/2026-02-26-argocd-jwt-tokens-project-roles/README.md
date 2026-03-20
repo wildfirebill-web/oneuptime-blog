@@ -69,6 +69,7 @@ Or create the role via CLI:
 
 ```bash
 # Create the role
+
 argocd proj role create backend ci-deployer \
   --description "CI/CD pipeline token"
 

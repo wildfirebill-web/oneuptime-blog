@@ -14,6 +14,7 @@ RHEL provides system-wide crypto policies that let you control the minimum secur
 
 ```bash
 # Display the currently active crypto policy
+
 update-crypto-policies --show
 
 # This will output one of: DEFAULT, LEGACY, FUTURE, FIPS, or a custom policy

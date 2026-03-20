@@ -32,6 +32,7 @@ Depending on which certificate expired, you will see one or more of these.
 
 ```bash
 # Check the ArgoCD server's TLS certificate
+
 echo | openssl s_client -connect argocd.example.com:443 -servername argocd.example.com 2>/dev/null | openssl x509 -noout -dates -subject
 # Check "notAfter" date
 

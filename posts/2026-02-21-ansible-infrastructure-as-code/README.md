@@ -59,6 +59,7 @@ Here is a production inventory using YAML format:
 
 ```yaml
 # inventories/production/hosts.yml
+
 # Defines all production hosts grouped by function
 all:
   children:

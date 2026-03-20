@@ -16,6 +16,7 @@ Quoting strings in YAML is one of those things that seems simple until it is not
 
 ```yaml
 # These become booleans without quotes
+
 enable_feature: yes    # Boolean true
 disable_flag: no       # Boolean false
 ssl_on: on             # Boolean true

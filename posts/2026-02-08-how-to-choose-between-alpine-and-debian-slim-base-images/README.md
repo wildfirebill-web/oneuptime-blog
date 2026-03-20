@@ -22,6 +22,7 @@ Here is where this matters in practice:
 
 ```bash
 # This works on Debian-slim but may fail on Alpine
+
 pip install numpy
 # Alpine needs to compile from source because no musl wheels exist
 # This adds minutes to your build and requires gcc, musl-dev, etc.

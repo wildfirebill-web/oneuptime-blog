@@ -25,6 +25,7 @@ Start by checking which CRD fields are causing problems:
 
 ```bash
 # Check the diff for a specific application
+
 argocd app diff my-database-app
 
 # Get the live CRD resource to see all fields
@@ -234,7 +235,7 @@ kubectl get crd certificates.cert-manager.io -o jsonpath='{.status.storedVersion
 # Update your manifests to use v1
 ```
 
-## Resource Customization for CRD Comparison
+Resource Customization for CRD Comparison
 
 ArgoCD supports a `resource.customizations.knownTypeFields` configuration that tells ArgoCD which fields on a CRD are equivalent to built-in type fields:
 

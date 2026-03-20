@@ -42,6 +42,7 @@ def detect_language(text):
     return result
 
 # Detect language of various texts
+
 detect_language("The server is responding normally.")
 detect_language("El servidor esta respondiendo normalmente.")
 detect_language("Der Server antwortet normal.")

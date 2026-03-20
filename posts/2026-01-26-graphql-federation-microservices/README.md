@@ -88,6 +88,7 @@ The Users service owns the `User` type and exposes user-related queries.
 # services/users/schema.graphql
 
 # The @key directive marks User as an entity that can be referenced
+
 # by other subgraphs. The "id" field is the primary key.
 extend schema @link(url: "https://specs.apollo.dev/federation/v2.0", import: ["@key"])
 

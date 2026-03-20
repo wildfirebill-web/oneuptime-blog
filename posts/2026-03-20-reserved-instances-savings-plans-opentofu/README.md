@@ -22,7 +22,8 @@ graph LR
 ## Tracking Reserved Instance Commitments
 
 ```hcl
-# reserved_instances.tf — document RI commitments alongside infrastructure
+# reserved_instances.tf - document RI commitments alongside infrastructure
+
 locals {
   # Document active reservations for reference
   reserved_instances = {
@@ -58,7 +59,7 @@ resource "aws_launch_template" "app" {
 
   # On-demand only in base capacity to maximize RI coverage
   instance_market_options {
-    # Remove this block — on-demand uses RIs automatically
+    # Remove this block - on-demand uses RIs automatically
   }
 }
 ```
@@ -137,15 +138,15 @@ resource "aws_cloudwatch_metric_alarm" "ri_expiry" {
   statistic           = "Average"
   threshold           = 100
 
-  alarm_description = "Reserved instance utilization below 100% — check for upcoming expirations"
+  alarm_description = "Reserved instance utilization below 100% - check for upcoming expirations"
   alarm_actions     = [aws_sns_topic.cost_alerts.arn]
 }
 ```
 
 ## Best Practices
 
-- Analyze 3 months of on-demand usage before purchasing RIs — look for stable baseline workloads that run consistently.
-- Use Compute Savings Plans instead of EC2 RIs for flexibility — they apply across instance families, sizes, and regions.
+- Analyze 3 months of on-demand usage before purchasing RIs - look for stable baseline workloads that run consistently.
+- Use Compute Savings Plans instead of EC2 RIs for flexibility - they apply across instance families, sizes, and regions.
 - Set ASG `min_size` to match RI count to ensure you're always utilizing your reservations.
-- Alert on RI expiry at 90 days and 30 days before expiration — renewal decisions should be made in advance.
+- Alert on RI expiry at 90 days and 30 days before expiration - renewal decisions should be made in advance.
 - For RDS, use Reserved DB Instances tied to the specific instance class defined in your OpenTofu configuration.

@@ -36,6 +36,7 @@ sequenceDiagram
 
 ```bash
 # Get AOF information
+
 redis-cli INFO persistence
 
 # Key fields:

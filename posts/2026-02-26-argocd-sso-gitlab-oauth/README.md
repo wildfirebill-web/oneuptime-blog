@@ -202,6 +202,7 @@ If your self-hosted GitLab uses a self-signed certificate, configure both ArgoCD
 
 ```bash
 # Add GitLab's CA to ArgoCD's trust store
+
 kubectl -n argocd create configmap argocd-tls-certs-cm \
   --from-file=gitlab.internal.example.com=/path/to/gitlab-ca.crt \
   --dry-run=client -o yaml | kubectl apply -f -

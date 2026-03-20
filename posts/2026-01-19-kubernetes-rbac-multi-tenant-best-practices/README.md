@@ -82,6 +82,7 @@ Namespaces provide the logical boundary for team isolation:
 
 ```yaml
 # Team Alpha's isolated namespace
+
 apiVersion: v1
 kind: Namespace
 metadata:

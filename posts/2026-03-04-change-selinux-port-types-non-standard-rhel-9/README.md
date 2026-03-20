@@ -20,6 +20,7 @@ Instead of disabling SELinux when you move a service to a non-standard port, jus
 
 ```bash
 # Show all SELinux port type assignments
+
 sudo semanage port -l
 ```
 

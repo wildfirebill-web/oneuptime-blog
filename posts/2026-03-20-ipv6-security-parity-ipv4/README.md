@@ -26,6 +26,7 @@ This is why RFC 9099 and NIST SP 800-119 emphasize that organizations must treat
 
 ```bash
 # Export IPv4 rules to use as a template for IPv6
+
 iptables-save > /tmp/ipv4_rules.txt
 
 # Map IPv4-specific addresses to their IPv6 equivalents:
@@ -64,7 +65,7 @@ ip6tables -A INPUT  -p icmpv6 --icmpv6-type router-advertisement   -j ACCEPT
 nftables handles IPv4 and IPv6 in a single ruleset, reducing the risk of parity gaps:
 
 ```bash
-# /etc/nftables.conf — unified IPv4/IPv6 rules
+# /etc/nftables.conf - unified IPv4/IPv6 rules
 table inet filter {
     chain input {
         type filter hook input priority 0;
@@ -124,7 +125,7 @@ ss -6 -tlnp
 # Compare to IPv4
 ss -4 -tlnp
 
-# If a service is on IPv4 but not IPv6 — check application config
+# If a service is on IPv4 but not IPv6 - check application config
 # e.g., Nginx: listen [::]:443 ssl;
 # e.g., sshd: AddressFamily any  (in /etc/ssh/sshd_config)
 ```

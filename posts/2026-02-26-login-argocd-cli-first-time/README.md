@@ -18,6 +18,7 @@ Before you can login, the CLI needs to reach the ArgoCD API server. If you have 
 
 ```bash
 # Start port-forwarding to the ArgoCD server
+
 kubectl port-forward svc/argocd-server -n argocd 8080:443 &
 ```
 

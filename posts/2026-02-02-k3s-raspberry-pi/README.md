@@ -69,6 +69,7 @@ Enable cgroup memory support by editing the boot configuration. Cgroups allow Ku
 
 ```bash
 # Edit the boot configuration file
+
 # cgroup_memory and cgroup_enable parameters are required for container resource management
 sudo nano /boot/firmware/cmdline.txt
 ```

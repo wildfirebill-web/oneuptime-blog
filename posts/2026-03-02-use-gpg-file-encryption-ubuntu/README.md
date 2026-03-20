@@ -14,6 +14,7 @@ GPG (GNU Privacy Guard) is the open-source implementation of the OpenPGP standar
 
 ```bash
 # Check GPG version
+
 gpg --version
 
 # Ubuntu ships with GnuPG 2.x

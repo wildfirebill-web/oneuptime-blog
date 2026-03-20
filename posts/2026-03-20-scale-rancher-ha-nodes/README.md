@@ -1,4 +1,4 @@
-# How to Scale Rancher HA Nodes
+# How to Scale Rancher HA Nodes - Nodes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Add 2 new nodes (maintaining odd-number etcd membership):
 
 ```bash
 # Provision 2 new nodes with the same specs as existing servers
+
 # On each new node, install the base OS and configure:
 # - Same time synchronization (NTP)
 # - Same disk setup for etcd

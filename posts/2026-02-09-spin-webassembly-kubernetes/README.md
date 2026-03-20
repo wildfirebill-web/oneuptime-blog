@@ -26,6 +26,7 @@ The containerd-wasm-shim provides the bridge between containerd and WebAssembly 
 
 ```bash
 # Install containerd-wasm-shim
+
 curl -fsSL https://github.com/containerd/runwasi/releases/download/v0.3.0/containerd-wasm-shim-v0.3.0-linux-x86_64.tar.gz \
   -o containerd-wasm-shim.tar.gz
 

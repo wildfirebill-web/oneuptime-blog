@@ -35,6 +35,7 @@ The standard workflow is identical to a normal source build up until the install
 
 ```bash
 # Download and extract source (using htop as an example)
+
 wget https://github.com/htop-dev/htop/releases/download/3.3.0/htop-3.3.0.tar.xz
 tar -xf htop-3.3.0.tar.xz
 cd htop-3.3.0

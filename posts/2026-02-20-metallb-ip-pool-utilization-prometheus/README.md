@@ -33,6 +33,7 @@ Ensure Prometheus is scraping the MetalLB controller. The controller exposes met
 
 ```yaml
 # metallb-servicemonitor.yaml
+
 # ServiceMonitor for the MetalLB controller
 # The controller is where IP allocation metrics are exposed
 apiVersion: monitoring.coreos.com/v1

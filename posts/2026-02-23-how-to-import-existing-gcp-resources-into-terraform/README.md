@@ -62,6 +62,7 @@ resource "google_compute_instance" "app" {
 }
 
 # GCP import format: projects/{project}/zones/{zone}/instances/{name}
+
 import {
   to = google_compute_instance.app
   id = "projects/${var.project_id}/zones/us-central1-a/instances/app-server"

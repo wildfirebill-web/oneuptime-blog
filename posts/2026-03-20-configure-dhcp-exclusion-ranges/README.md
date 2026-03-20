@@ -2,20 +2,20 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Networking, Exclusion Ranges, IP Addressing, sysadmin
+Tags: DHCP, Networking, Exclusion Ranges, IP Addressing, Sysadmin
 
-Description: DHCP exclusion ranges prevent the server from dynamically assigning specific IP addresses within a scope, reserving them for statically configured devices like servers, printers, and network equipment.
+Description: DHCP exclusion ranges prevent the server from dynamically assigning specific IP addresses within a scope, reserving them for statically configured devices like servers, printers, and network...
 
 ## What Are Exclusion Ranges?
 
-Within a DHCP scope, the entire range between the start and end IP is considered available. Exclusion ranges carve out portions of that range that the server will never offer. This is the complement to reservations — exclusions protect addresses that may be statically assigned to any device.
+Within a DHCP scope, the entire range between the start and end IP is considered available. Exclusion ranges carve out portions of that range that the server will never offer. This is the complement to reservations - exclusions protect addresses that may be statically assigned to any device.
 
 ## Best Practice: Separate Static and Dynamic Ranges
 
-```
+```text
 Subnet: 192.168.1.0/24
-.1–.9:   Network equipment (router, switches) — outside pool
-.10–.49: Servers and printers — statically assigned (excluded or below pool)
+.1–.9:   Network equipment (router, switches) - outside pool
+.10–.49: Servers and printers - statically assigned (excluded or below pool)
 .50–.200: Dynamic DHCP pool
 .201–.254: Reserved for future static use
 ```
@@ -24,18 +24,18 @@ Subnet: 192.168.1.0/24
 
 In ISC dhcpd, exclusions are implemented by defining multiple range statements within a pool, leaving gaps:
 
-```
+```text
 subnet 192.168.1.0 netmask 255.255.255.0 {
-    # Skip .1–.49 (network equipment and servers — not in range)
+    # Skip .1–.49 (network equipment and servers - not in range)
     range 192.168.1.50 192.168.1.200;
-    # Skip .201–.254 (future static use — above range)
+    # Skip .201–.254 (future static use - above range)
     option routers 192.168.1.1;
 }
 ```
 
 For exclusions in the middle of a range, use multiple range statements:
 
-```
+```text
 subnet 10.0.10.0 netmask 255.255.255.0 {
     # Exclude .50–.59 in the middle (printer row)
     range 10.0.10.10 10.0.10.49;
@@ -48,6 +48,7 @@ subnet 10.0.10.0 netmask 255.255.255.0 {
 
 ```powershell
 # Add an exclusion range to an existing scope
+
 Add-DhcpServerv4ExclusionRange `
     -ScopeId 192.168.1.0 `
     -StartRange 192.168.1.1 `
@@ -73,7 +74,7 @@ Remove-DhcpServerv4ExclusionRange `
 
 In dnsmasq, the range statement implicitly excludes anything outside the start-end bounds:
 
-```
+```text
 # Only .50 to .200 are in the dynamic pool; all others are implicitly excluded
 dhcp-range=192.168.1.50,192.168.1.200,255.255.255.0,24h
 ```
@@ -105,6 +106,6 @@ for i in range(1, 255):
 ## Key Takeaways
 
 - Exclusion ranges protect addresses from dynamic assignment.
-- In ISC dhcpd, exclusions are implicit — only addresses within `range` statements are offered.
+- In ISC dhcpd, exclusions are implicit - only addresses within `range` statements are offered.
 - Windows Server has explicit `Add-DhcpServerv4ExclusionRange` cmdlets.
 - Best practice: keep static assignments (.1–.49), dynamic pool (.50–.200), and future reserve (.201–.254) clearly separated.

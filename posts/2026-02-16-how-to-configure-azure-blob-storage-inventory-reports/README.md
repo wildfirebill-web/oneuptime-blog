@@ -41,6 +41,7 @@ This creates a daily report that captures all blobs with their basic properties:
 
 ```bash
 # Create a blob inventory policy
+
 # The report runs daily and outputs CSV to the 'inventory' container
 az storage account blob-inventory-policy create \
   --account-name mystorageaccount \

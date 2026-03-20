@@ -16,6 +16,7 @@ This guide covers creating ConfigMaps with Terraform, including key-value data, 
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

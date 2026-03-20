@@ -199,6 +199,7 @@ Usage example showing how to integrate grounding verification into your pipeline
 
 ```python
 # Initialize the verifier
+
 verifier = GroundingVerifier()
 
 # Your RAG context (retrieved documents)

@@ -38,6 +38,7 @@ The patches in `spec.patches` use strategic merge patch format by default. Here 
 
 ```yaml
 # kustomization-smp.yaml - Strategic merge patch to modify a Deployment
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

@@ -55,6 +55,7 @@ curl -X GET "https://localhost:9200/products/_search" \
 
 ```bash
 # Custom AUTO thresholds
+
 curl -X GET "https://localhost:9200/products/_search" \
   -H "Content-Type: application/json" \
   -u elastic:password \

@@ -1,11 +1,10 @@
----
-title: "Setting Up an HTTPS Provider Mirror in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, mirror, https
-description: "Learn how to set up a network provider mirror served over HTTPS for centralized provider distribution across your organization."
----
-
 # Setting Up an HTTPS Provider Mirror in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Mirror, HTTPS
+
+Description: Learn how to set up a network provider mirror served over HTTPS for centralized provider distribution across your organization.
 
 An HTTPS network mirror serves provider packages over HTTP, allowing all workstations and CI/CD systems in your organization to install providers from a central location. This is ideal for large teams, controlled environments, and organizations with strict security requirements.
 
@@ -23,7 +22,7 @@ An HTTPS network mirror serves provider packages over HTTP, allowing all worksta
 
 The mirror must serve a specific JSON-based protocol. The URL structure is:
 
-```
+```text
 https://mirror.example.com/{hostname}/{namespace}/{type}/index.json
 https://mirror.example.com/{hostname}/{namespace}/{type}/{version}.json
 https://mirror.example.com/{hostname}/{namespace}/{type}/{filename}
@@ -33,6 +32,7 @@ https://mirror.example.com/{hostname}/{namespace}/{type}/{filename}
 
 ```hcl
 # ~/.tofurc
+
 provider_installation {
   network_mirror {
     url     = "https://mirror.example.com/providers/"
@@ -136,7 +136,7 @@ aws s3 sync /opt/terraform-mirror s3://my-company-terraform-mirror/providers/
 ```
 
 ```hcl
-# ~/.tofurc — using CloudFront-served S3 mirror
+# ~/.tofurc - using CloudFront-served S3 mirror
 provider_installation {
   network_mirror {
     url = "https://d1234abcd.cloudfront.net/providers/"
@@ -148,7 +148,7 @@ provider_installation {
 
 ```bash
 #!/bin/bash
-# update-mirror.sh — run periodically to update providers
+# update-mirror.sh - run periodically to update providers
 
 set -euo pipefail
 

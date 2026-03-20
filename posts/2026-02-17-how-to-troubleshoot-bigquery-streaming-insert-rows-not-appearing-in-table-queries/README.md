@@ -25,6 +25,7 @@ Key behaviors of the streaming buffer:
 
 ```bash
 # Check if a table has data in the streaming buffer
+
 bq show --format=prettyjson my_dataset.my_table | python3 -c "
 import json, sys
 table = json.load(sys.stdin)

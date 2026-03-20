@@ -28,6 +28,7 @@ One of the most impactful cost optimizations is choosing the right instance clas
 
 ```hcl
 # Cost-optimized RDS instance using Graviton processors
+
 resource "aws_db_instance" "cost_optimized" {
   identifier     = "production-db"
   engine         = "postgres"

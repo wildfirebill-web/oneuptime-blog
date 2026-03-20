@@ -53,6 +53,7 @@ The base `kustomization.yaml` references the raw manifests.
 
 ```yaml
 # apps/myapp/base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

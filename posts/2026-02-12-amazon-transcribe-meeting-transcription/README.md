@@ -63,6 +63,7 @@ def transcribe_meeting(job_name, audio_uri, max_speakers=10, vocabulary=None):
         time.sleep(15)
 
 # Transcribe a meeting
+
 result = transcribe_meeting(
     job_name='standup-2026-02-12',
     audio_uri='s3://meetings/recordings/standup-feb12.mp3',

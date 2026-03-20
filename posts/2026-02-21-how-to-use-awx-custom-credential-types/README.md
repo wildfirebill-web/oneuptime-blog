@@ -33,6 +33,7 @@ Let us create a credential type for a generic REST API that needs a URL and an A
 
 ```bash
 # Create a custom credential type for a REST API
+
 curl -s -X POST \
   -H "Authorization: Bearer ${AWX_TOKEN}" \
   -H "Content-Type: application/json" \

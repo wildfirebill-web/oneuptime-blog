@@ -196,6 +196,7 @@ service {
 #!/bin/bash
 
 # Exit codes:
+
 # 0 = passing
 # 1 = warning
 # 2+ = critical

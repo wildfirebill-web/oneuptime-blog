@@ -28,6 +28,7 @@ Before reaching for `deborphan`, try the built-in approach:
 
 ```bash
 # See what apt considers automatically removable
+
 sudo apt autoremove --dry-run
 
 # Remove the automatically installed packages no longer needed

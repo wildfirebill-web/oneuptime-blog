@@ -47,6 +47,7 @@ The following command starts a Vault server in development mode with a predictab
 
 ```bash
 # Start Vault in development mode with a fixed root token
+
 # The -dev flag enables development mode with in-memory storage
 # The -dev-root-token-id sets a predictable token for testing
 docker run --cap-add=IPC_LOCK \

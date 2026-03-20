@@ -55,6 +55,7 @@ Docker is the foundation of environment parity. The same container image runs ev
 
 ```dockerfile
 # Dockerfile
+
 # Use specific version tags, not 'latest'
 FROM node:20.10.0-alpine3.19
 

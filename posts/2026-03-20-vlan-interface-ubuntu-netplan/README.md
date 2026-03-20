@@ -23,6 +23,7 @@ Netplan configuration files live in `/etc/netplan/`. Create or edit a file to de
 
 ```yaml
 # /etc/netplan/01-vlan.yaml
+
 network:
   version: 2
   renderer: networkd  # or: renderer: NetworkManager

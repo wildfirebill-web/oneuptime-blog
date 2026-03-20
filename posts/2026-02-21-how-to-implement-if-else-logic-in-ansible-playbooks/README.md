@@ -16,6 +16,7 @@ The most common way to implement if/else in Ansible is by using two tasks with o
 
 ```yaml
 # If the OS is Debian, install with apt; otherwise, install with yum
+
 - name: Install package on Debian
   ansible.builtin.apt:
     name: nginx

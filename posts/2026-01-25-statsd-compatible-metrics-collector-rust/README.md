@@ -522,6 +522,7 @@ Send some test metrics using netcat:
 
 ```bash
 # Send a counter
+
 echo "api.requests:1|c" | nc -u -w0 127.0.0.1 8125
 
 # Send a gauge

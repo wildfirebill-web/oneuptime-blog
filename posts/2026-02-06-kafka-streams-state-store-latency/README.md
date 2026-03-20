@@ -74,6 +74,7 @@ service:
 
 ```text
 # State store operation latency
+
 kafka.streams.state.store.put.latency_avg     - Average put operation time
 kafka.streams.state.store.put.latency_max     - Max put operation time
 kafka.streams.state.store.get.latency_avg     - Average get operation time

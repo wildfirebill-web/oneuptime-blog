@@ -257,6 +257,7 @@ FROM node:20-alpine
 WORKDIR /app
 
 # Install dependencies first for better caching
+
 COPY package*.json ./
 RUN npm install
 
@@ -935,7 +936,7 @@ services:
         consistency: cached
 ```
 
-### Resource Limits
+Resource Limits
 
 Set resource limits to prevent containers from consuming too many resources:
 

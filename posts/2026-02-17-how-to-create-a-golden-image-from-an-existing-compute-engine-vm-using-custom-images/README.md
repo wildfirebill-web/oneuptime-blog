@@ -27,6 +27,7 @@ Start with a VM that has everything you need installed and configured. If you do
 
 ```bash
 # Create a base VM to configure
+
 gcloud compute instances create golden-image-base \
     --zone=us-central1-a \
     --machine-type=e2-medium \

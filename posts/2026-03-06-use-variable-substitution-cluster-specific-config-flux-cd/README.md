@@ -40,6 +40,7 @@ Create base manifests that use `${VARIABLE}` placeholders wherever cluster-speci
 
 ```yaml
 # base/apps/web-app/deployment.yaml
+
 # Deployment with variable placeholders for cluster-specific values
 apiVersion: apps/v1
 kind: Deployment

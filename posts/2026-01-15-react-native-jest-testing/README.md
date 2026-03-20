@@ -91,6 +91,7 @@ Install the required testing libraries:
 ```bash
 npm install --save-dev @testing-library/react-native @testing-library/jest-native jest-expo
 # or with yarn
+
 yarn add --dev @testing-library/react-native @testing-library/jest-native jest-expo
 ```
 

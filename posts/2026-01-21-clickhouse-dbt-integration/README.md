@@ -18,6 +18,7 @@ dbt (data build tool) enables analytics engineering with version-controlled, tes
 pip install dbt-clickhouse
 
 # Initialize project
+
 dbt init my_analytics_project
 # Select clickhouse when prompted
 ```

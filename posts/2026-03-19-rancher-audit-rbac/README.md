@@ -21,6 +21,7 @@ Start at the broadest scope. List all users with global roles:
 
 ```bash
 # List all global role bindings
+
 kubectl get globalrolebindings -o json | \
   jq -r '.items[] | "\(.userName // .groupPrincipalName)\t\(.globalRoleName)\t\(.metadata.creationTimestamp)"' | \
   column -t -s $'\t'

@@ -44,6 +44,7 @@ OPA Gatekeeper enforces policies at admission time. ArgoCD syncs will fail if re
 
 ```yaml
 # Constraint Template: require labels
+
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:

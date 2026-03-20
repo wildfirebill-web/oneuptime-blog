@@ -29,6 +29,7 @@ Here is a playbook that sets up a fundamental firewall using the iptables module
 
 ```yaml
 # basic_iptables.yml - Configure basic iptables firewall rules
+
 ---
 - name: Configure iptables firewall
   hosts: all

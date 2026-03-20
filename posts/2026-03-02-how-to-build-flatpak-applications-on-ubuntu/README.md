@@ -14,6 +14,7 @@ Building Flatpak applications means packaging your software with a manifest that
 
 ```bash
 # Install Flatpak if not already installed
+
 sudo apt install flatpak
 
 # Install flatpak-builder - the build tool

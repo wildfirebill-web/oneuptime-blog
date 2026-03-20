@@ -20,8 +20,8 @@ Portainer's Application Templates feature provides a catalog of pre-configured c
 
 Portainer supports two types of templates:
 
-1. **Container templates** — Deploy a single container with pre-set configuration
-2. **Stack templates** — Deploy a multi-service application using a Compose file
+1. **Container templates** - Deploy a single container with pre-set configuration
+2. **Stack templates** - Deploy a multi-service application using a Compose file
 
 Both types can include variables that you fill in before deploying, such as passwords, port numbers, or volume paths.
 
@@ -59,7 +59,7 @@ Each template card shows:
 1. Click on a container template (e.g., **Nginx**)
 2. The configuration panel expands with options:
 
-```
+```text
 Name:        nginx-web          # Container name
 Port mapping: 8080:80           # Host:Container port
 Volume:      /data/www:/usr/share/nginx/html   # Optional volume
@@ -75,7 +75,7 @@ Restart policy: Unless stopped
 1. Click on a stack template (e.g., **WordPress**)
 2. Configure the stack variables:
 
-```
+```text
 Stack name:       my-wordpress
 WordPress port:   8080
 MySQL root password: [your-secure-password]
@@ -105,6 +105,7 @@ Deploys a basic Nginx web server. Variables typically include the port mapping a
 
 ```yaml
 # Underlying template Compose file (simplified)
+
 version: "3"
 services:
   wordpress:
@@ -137,10 +138,10 @@ Deploys Redis with optional port exposure and persistence volume.
 
 Most templates allow you to customize:
 
-- **Exposed ports** — Change host-side port to avoid conflicts
-- **Volume paths** — Point to your preferred data directory
-- **Environment variables** — Set passwords, config values
-- **Network** — Choose which Docker network to join
+- **Exposed ports** - Change host-side port to avoid conflicts
+- **Volume paths** - Point to your preferred data directory
+- **Environment variables** - Set passwords, config values
+- **Network** - Choose which Docker network to join
 
 ## Adding Custom Templates
 

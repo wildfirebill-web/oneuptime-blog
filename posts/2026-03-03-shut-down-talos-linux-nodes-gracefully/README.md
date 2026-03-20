@@ -28,6 +28,7 @@ Talos Linux provides a clean shutdown command:
 
 ```bash
 # Shut down a single node
+
 talosctl shutdown --nodes <node-ip>
 ```
 

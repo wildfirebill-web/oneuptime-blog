@@ -24,6 +24,7 @@ The key difference when using OCI registries is the `repository` format. Instead
 
 ```hcl
 # providers.tf - configure Helm provider
+
 terraform {
   required_providers {
     helm = {

@@ -20,6 +20,7 @@ Here is how to save a model using TorchScript, which is the recommended approach
 
 ```python
 # save_model.py
+
 # Save a PyTorch model as TorchScript for Vertex AI
 
 import torch

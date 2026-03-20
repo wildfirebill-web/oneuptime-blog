@@ -30,6 +30,7 @@ Deno ships as a single executable. Pick your platform:
 
 ```bash
 # macOS / Linux - using the official install script
+
 curl -fsSL https://deno.land/install.sh | sh
 
 # macOS - using Homebrew

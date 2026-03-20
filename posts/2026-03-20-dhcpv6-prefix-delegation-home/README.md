@@ -32,6 +32,7 @@ On a home Linux router connected to the ISP via `eth0`:
 # /etc/dhcp/dhclient6.conf
 
 # Request a prefix delegation on the WAN interface
+
 interface "eth0" {
     send dhcp6.ia-pd 1;         # IA_PD with IAID=1
     request dhcp6.sip-servers,
@@ -92,7 +93,7 @@ To act as the ISP-side delegating server in a lab:
 
 For OpenWrt home routers, prefix delegation is configured in `/etc/config/network`:
 
-```
+```text
 # /etc/config/network
 
 config interface 'wan6'

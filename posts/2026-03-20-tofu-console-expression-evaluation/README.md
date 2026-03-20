@@ -1,4 +1,4 @@
-# How to Use tofu console for Expression Evaluation
+# How to Use tofu console for Expression Evaluation - Tofu Expression Evaluation
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,10 +14,11 @@ Description: Learn how to use the tofu console interactive REPL to evaluate Open
 
 ```bash
 # Open the interactive console
+
 tofu console
 
 # Output:
-# > (prompt appears — type expressions and press Enter)
+# > (prompt appears - type expressions and press Enter)
 ```
 
 Press `Ctrl+D` or `Ctrl+C` to exit.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Self-Hosted, Immich, PhotoPrism, Photo Gallery, Home Lab
+Tags: Portainer, Docker, Self-Hosted, Immich, Photoprism, Photo Gallery, Home Lab
 
 Description: Deploy Immich or PhotoPrism as a self-hosted Google Photos alternative using Portainer with AI-powered photo organization.
 
@@ -23,6 +23,7 @@ Immich is the most actively developed self-hosted Google Photos replacement with
 
 ```yaml
 # docker-compose.yml - Immich Photo Server
+
 version: "3.8"
 
 networks:

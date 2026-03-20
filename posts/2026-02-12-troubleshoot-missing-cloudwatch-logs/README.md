@@ -20,6 +20,7 @@ Regardless of the log source, start with these checks:
 
 ```bash
 # Check if the log group exists
+
 aws logs describe-log-groups \
   --log-group-name-prefix "/your/log/group" \
   --query "logGroups[].logGroupName"

@@ -142,6 +142,7 @@ This Dockerfile uses sbt to compile the application in the first stage and copie
 
 ```dockerfile
 # Dockerfile
+
 # Multi-stage build for Scala application
 
 # Build stage with full JDK and sbt

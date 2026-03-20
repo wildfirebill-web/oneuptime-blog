@@ -37,6 +37,7 @@ Create a `.gitignore` file in your repository root:
 
 ```bash
 # Create .gitignore file
+
 touch .gitignore
 ```
 

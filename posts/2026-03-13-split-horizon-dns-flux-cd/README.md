@@ -35,6 +35,7 @@ Internal clients use CoreDNS (cluster DNS), which is configured with stub zones 
 
 ```yaml
 # infrastructure/coredns/split-horizon-configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

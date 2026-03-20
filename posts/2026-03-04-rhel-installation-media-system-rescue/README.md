@@ -87,6 +87,7 @@ Run filesystem check:
 
 ```bash
 # For XFS (default on RHEL)
+
 xfs_repair /dev/sda2
 
 # For ext4

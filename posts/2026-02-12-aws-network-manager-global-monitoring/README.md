@@ -20,6 +20,7 @@ Create a global network and start registering resources:
 
 ```bash
 # Create the global network
+
 aws networkmanager create-global-network \
   --description "Production Network Monitoring" \
   --tags Key=ManagedBy,Value=NetworkOps

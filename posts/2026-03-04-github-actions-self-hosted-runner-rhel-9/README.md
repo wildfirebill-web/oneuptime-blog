@@ -14,6 +14,7 @@ GitHub Actions self-hosted runners let you execute workflow jobs on your own RHE
 
 ```bash
 # Install required packages
+
 sudo dnf install -y curl tar jq
 
 # Create a dedicated user for the runner

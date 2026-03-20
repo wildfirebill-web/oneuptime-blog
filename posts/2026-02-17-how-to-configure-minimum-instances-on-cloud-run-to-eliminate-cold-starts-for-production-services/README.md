@@ -47,6 +47,7 @@ The simplest way to configure minimum instances:
 
 ```bash
 # Set minimum instances to 1 to always keep at least one instance warm
+
 gcloud run services update my-service \
   --region=us-central1 \
   --min-instances=1

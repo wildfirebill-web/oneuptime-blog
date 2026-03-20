@@ -18,6 +18,7 @@ Your Redshift cluster needs an IAM role that allows reading from S3. Create one 
 
 ```bash
 # Create an IAM role for Redshift to access S3
+
 aws iam create-role \
   --role-name RedshiftS3ReadRole \
   --assume-role-policy-document '{

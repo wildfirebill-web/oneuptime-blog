@@ -83,6 +83,7 @@ Create a YAML configuration that describes the runbook metadata and flow.
 
 ```yaml
 # runbook-high-memory-pod.yaml
+
 # This configuration defines a runbook for handling pods with high memory usage.
 # It includes safety checks, graduated responses, and automatic rollback.
 

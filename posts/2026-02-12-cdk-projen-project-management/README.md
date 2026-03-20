@@ -18,6 +18,7 @@ Create a new CDK app with Projen:
 
 ```bash
 # Create a new CDK app project
+
 mkdir my-cdk-app && cd my-cdk-app
 npx projen new awscdk-app-ts
 ```

@@ -51,6 +51,7 @@ To suspend a Kustomization, use the `flux suspend ks` command followed by the na
 
 ```bash
 # Suspend a Kustomization named "my-app" in the flux-system namespace
+
 flux suspend ks my-app
 ```
 

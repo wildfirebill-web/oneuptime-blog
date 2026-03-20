@@ -43,6 +43,7 @@ The `auto` plugin is enabled by default in most Ansible installations. You can v
 
 ```ini
 # ansible.cfg
+
 [inventory]
 # The auto plugin is typically first in the list
 enable_plugins = ansible.builtin.auto, ansible.builtin.yaml, ansible.builtin.ini, ansible.builtin.host_list

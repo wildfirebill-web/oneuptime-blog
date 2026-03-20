@@ -29,6 +29,7 @@ Most CNI migration guides recommend the "big bang" approach of removing the old 
 
 ```bash
 # Pre-migration CNI state
+
 kubectl get pods --all-namespaces | grep ContainerCreating | wc -l
 ls /etc/cni/net.d/
 ```

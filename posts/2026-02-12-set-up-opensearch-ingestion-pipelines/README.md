@@ -34,6 +34,7 @@ Before creating a pipeline, you need an IAM role that gives OSI permission to wr
 
 ```bash
 # Create the trust policy for the pipeline role
+
 cat > osi-trust-policy.json << 'EOF'
 {
   "Version": "2012-10-17",

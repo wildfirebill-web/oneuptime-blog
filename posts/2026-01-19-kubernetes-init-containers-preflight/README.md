@@ -40,6 +40,7 @@ flowchart LR
 
 ```yaml
 # wait-for-dependencies.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

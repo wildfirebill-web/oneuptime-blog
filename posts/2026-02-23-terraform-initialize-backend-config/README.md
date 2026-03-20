@@ -16,6 +16,7 @@ The `-backend-config` flag comes in two forms:
 
 ```bash
 # Form 1: Key-value pair
+
 terraform init -backend-config="key=value"
 
 # Form 2: File reference

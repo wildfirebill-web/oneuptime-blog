@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VXLAN, Linux, ip link, Cleanup, Overlay Networking, Interface Management
+Tags: VXLAN, Linux, Ip link, Cleanup, Overlay Networking, Interface Management
 
 Description: Learn how to delete VXLAN interfaces on Linux, including detaching from bridges, removing associated routes, and cleaning up persistent configuration files.
 
@@ -14,6 +14,7 @@ Deleting a VXLAN interface requires detaching it from any bridge, removing the i
 
 ```bash
 # Simple deletion (if not attached to a bridge)
+
 ip link del vxlan10
 
 # Verify deletion
@@ -38,7 +39,7 @@ ip link show vxlan10        # Should show error
 ## Bringing Down and Deleting
 
 ```bash
-# Bring down first (optional — ip link del works on running interfaces too)
+# Bring down first (optional - ip link del works on running interfaces too)
 ip link set vxlan10 down
 ip link del vxlan10
 ```

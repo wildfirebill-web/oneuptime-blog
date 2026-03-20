@@ -31,6 +31,7 @@ Start by identifying what happened to the node.
 
 ```bash
 # Check node status in Kubernetes
+
 kubectl get nodes
 # Look for nodes in NotReady or Unknown state
 

@@ -45,6 +45,7 @@ For more granular permissions, assign specific roles:
 
 ```bash
 # Required roles for AKS provisioning
+
 az role assignment create --assignee <APP_ID> \
   --role "Azure Kubernetes Service Contributor" \
   --scope /subscriptions/$SUBSCRIPTION_ID

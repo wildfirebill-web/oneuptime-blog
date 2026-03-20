@@ -250,6 +250,7 @@ Create the BigQuery table to hold the data:
 
 ```bash
 # Create a dataset and table for incident metrics
+
 bq mk --dataset my-project:incident_metrics
 
 bq mk --table my-project:incident_metrics.weekly_metrics \

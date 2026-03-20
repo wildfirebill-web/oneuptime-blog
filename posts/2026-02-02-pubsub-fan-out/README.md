@@ -113,6 +113,7 @@ The following Python code demonstrates creating an SNS topic with multiple SQS q
 
 ```python
 # aws_fanout_setup.py
+
 import boto3
 import json
 

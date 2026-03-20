@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Networking, Packet Header, TCP/IP, Protocols
+Tags: IPv4, Networking, Packet Header, TCP/IP, Protocol
 
 Description: Learn the structure of the IPv4 packet header, what each field means, and how they work together to route packets across networks.
 
@@ -14,7 +14,7 @@ Every packet sent over an IPv4 network begins with a 20-byte header (minimum) th
 
 The IPv4 header consists of fields arranged in 32-bit (4-byte) rows.
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -43,7 +43,7 @@ The IPv4 header consists of fields arranged in 32-bit (4-byte) rows.
 | Identification | 16 bits | Identifies fragments of the same datagram |
 | Flags | 3 bits | Fragmentation control (DF, MF) |
 | Fragment Offset | 13 bits | Position of fragment in original datagram |
-| Time to Live | 8 bits | Hop limit — decremented at each router |
+| Time to Live | 8 bits | Hop limit - decremented at each router |
 | Protocol | 8 bits | Upper-layer protocol (6=TCP, 17=UDP, 1=ICMP) |
 | Header Checksum | 16 bits | Error detection for the header only |
 | Source Address | 32 bits | Sender's IP address |
@@ -97,6 +97,7 @@ def parse_ipv4_header(raw_bytes):
     }
 
 # Example: parse a raw packet captured with scapy or socket
+
 # raw = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, ...).recv(65535)
 # header = parse_ipv4_header(raw[14:])  # skip 14-byte Ethernet frame
 ```
@@ -124,13 +125,13 @@ tcpdump -n -XX -i eth0 -c 1 'ip'
 
 The minimal set of fields a router examines for each packet:
 
-1. **Version** — confirm this is IPv4 (not IPv6)
-2. **IHL** — find where the header ends and payload begins
-3. **Total Length** — know the complete packet size
-4. **TTL** — decrement; if it reaches 0, drop and send ICMP Time Exceeded
-5. **Destination Address** — look up in routing table to determine next hop
-6. **Header Checksum** — verify header integrity; recalculate after TTL decrement
+1. **Version** - confirm this is IPv4 (not IPv6)
+2. **IHL** - find where the header ends and payload begins
+3. **Total Length** - know the complete packet size
+4. **TTL** - decrement; if it reaches 0, drop and send ICMP Time Exceeded
+5. **Destination Address** - look up in routing table to determine next hop
+6. **Header Checksum** - verify header integrity; recalculate after TTL decrement
 
 ## Summary
 
-The IPv4 header is a 20-byte fixed structure followed by optional extensions. The most operationally significant fields are the destination address (for routing), TTL (for loop prevention), protocol (to hand off to TCP/UDP/ICMP), and total length (for reassembly). Understanding how to parse these fields — with tools like `tcpdump`, Wireshark, or Python `struct.unpack` — is essential for network debugging and building network-aware applications.
+The IPv4 header is a 20-byte fixed structure followed by optional extensions. The most operationally significant fields are the destination address (for routing), TTL (for loop prevention), protocol (to hand off to TCP/UDP/ICMP), and total length (for reassembly). Understanding how to parse these fields - with tools like `tcpdump`, Wireshark, or Python `struct.unpack` - is essential for network debugging and building network-aware applications.

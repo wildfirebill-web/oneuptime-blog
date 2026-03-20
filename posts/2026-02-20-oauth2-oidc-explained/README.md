@@ -75,6 +75,7 @@ PKCE (Proof Key for Code Exchange) adds security for public clients like SPAs an
 
 ```python
 # Step 1: Generate PKCE code verifier and challenge
+
 import hashlib
 import base64
 import secrets

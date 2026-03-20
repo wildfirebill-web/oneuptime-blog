@@ -16,6 +16,7 @@ The `end_host` meta action removes the current host from the rest of the play. O
 
 ```yaml
 # Basic end_host example
+
 ---
 - name: Update application on hosts that need it
   hosts: app_servers

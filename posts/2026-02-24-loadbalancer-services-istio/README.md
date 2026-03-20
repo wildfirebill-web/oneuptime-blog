@@ -340,6 +340,7 @@ If traffic is not reaching your service through the LoadBalancer:
 
 ```bash
 # Check the LoadBalancer external IP
+
 kubectl get svc istio-ingressgateway -n istio-system
 
 # Check if the LB health checks pass

@@ -27,6 +27,7 @@ Paused containers keep their network connections, file handles, and in-memory st
 
 ```bash
 # Start a container
+
 podman run -d --name my-app docker.io/library/nginx:latest
 
 # Pause the container

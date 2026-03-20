@@ -18,6 +18,7 @@ Before you start, make sure the Cloud Scheduler API is enabled.
 
 ```bash
 # Enable the Cloud Scheduler API
+
 gcloud services enable cloudscheduler.googleapis.com
 ```
 

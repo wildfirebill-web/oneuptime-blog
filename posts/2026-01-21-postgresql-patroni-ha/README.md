@@ -49,6 +49,7 @@ flowchart TB
 
 ```bash
 # On each etcd node
+
 sudo apt install etcd -y
 
 # Or download specific version

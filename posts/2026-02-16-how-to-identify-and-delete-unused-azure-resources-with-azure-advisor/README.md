@@ -18,6 +18,7 @@ Azure Advisor analyzes your resource usage patterns and surfaces cost-saving rec
 
 ```bash
 # List all cost recommendations from Azure Advisor
+
 az advisor recommendation list \
   --category Cost \
   --output table

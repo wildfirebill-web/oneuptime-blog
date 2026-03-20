@@ -29,6 +29,7 @@ This is the simplest option. It creates volumes on the local disk of whatever no
 
 ```bash
 # Install local-path provisioner
+
 kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/deploy/local-path-storage.yaml
 
 # Set as default storage class

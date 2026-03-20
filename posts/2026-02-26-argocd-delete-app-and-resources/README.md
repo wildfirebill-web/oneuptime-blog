@@ -26,6 +26,7 @@ If your Application does not have the finalizer:
 
 ```bash
 # Add the resources finalizer
+
 kubectl patch application my-app -n argocd \
   --type json \
   -p '[{"op": "add", "path": "/metadata/finalizers", "value": ["resources-finalizer.argocd.argoproj.io"]}]'
@@ -108,7 +109,7 @@ ArgoCD deletes all resources it tracks for the application. This includes:
 - Resources directly defined in your manifests (Deployments, Services, ConfigMaps, etc.)
 - Resources that ArgoCD created (like namespaces if CreateNamespace was used)
 
-### Resources That Are NOT Deleted
+Resources That Are NOT Deleted
 
 - Resources in the cluster that are not tracked by this Application
 - Resources managed by other ArgoCD Applications

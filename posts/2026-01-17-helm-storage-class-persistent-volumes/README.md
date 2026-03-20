@@ -77,6 +77,7 @@ helm repo update
 
 ```bash
 # Create IAM policy
+
 cat <<EOF > ebs-csi-policy.json
 {
   "Version": "2012-10-17",

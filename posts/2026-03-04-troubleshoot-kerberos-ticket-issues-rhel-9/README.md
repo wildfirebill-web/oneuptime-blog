@@ -16,6 +16,7 @@ Before diving into specific problems, here are the tools you need:
 
 ```bash
 # List tickets in the credential cache
+
 klist
 
 # List tickets with flags and encryption types

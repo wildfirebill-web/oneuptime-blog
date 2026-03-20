@@ -22,6 +22,7 @@ Find and edit the main PostgreSQL configuration file:
 
 ```bash
 # Locate the configuration file
+
 sudo pg_lsclusters
 # Output shows the version (e.g., 16) and cluster name (usually 'main')
 

@@ -62,6 +62,7 @@ This command launches an instance with hibernation enabled:
 
 ```bash
 # Launch an instance with hibernation enabled
+
 aws ec2 run-instances \
   --image-id ami-0abcdef1234567890 \
   --instance-type m5.xlarge \

@@ -83,6 +83,7 @@ Deploy it running every minute for maximum availability coverage.
 
 ```bash
 # Create the heartbeat canary
+
 aws synthetics create-canary \
   --name website-heartbeat \
   --artifact-s3-location "s3://canary-artifacts/heartbeat/" \

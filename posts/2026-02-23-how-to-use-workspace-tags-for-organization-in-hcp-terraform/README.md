@@ -35,6 +35,7 @@ Without tags, you end up with a flat list of workspace names and the hope that y
 
 ```hcl
 # Create a workspace with tags
+
 resource "tfe_workspace" "production_api" {
   name           = "production-api"
   organization   = "your-org"

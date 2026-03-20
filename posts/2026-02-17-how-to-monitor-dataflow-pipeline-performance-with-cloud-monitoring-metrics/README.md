@@ -32,6 +32,7 @@ Build a custom dashboard that shows all critical metrics at a glance.
 
 ```bash
 # Create a dashboard using gcloud (dashboard definition in JSON)
+
 gcloud monitoring dashboards create \
   --config-from-file=dataflow-dashboard.json
 ```

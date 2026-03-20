@@ -41,6 +41,7 @@ Start by verifying the API is accessible:
 
 ```bash
 # Check Podman version
+
 curl -s --unix-socket /run/podman/podman.sock \
   http://localhost/v4.0.0/libpod/version | jq .
 

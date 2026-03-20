@@ -16,6 +16,7 @@ Before pruning, understand what consumes disk space.
 
 ```bash
 # See a summary of Docker disk usage
+
 docker system df
 
 # Detailed breakdown with individual items

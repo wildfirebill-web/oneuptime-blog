@@ -37,6 +37,7 @@ The `community.vmware.vmware_guest_powerstate` module handles all power state ch
 
 ```yaml
 # power-operations.yml
+
 ---
 - name: Manage VM power states
   hosts: localhost

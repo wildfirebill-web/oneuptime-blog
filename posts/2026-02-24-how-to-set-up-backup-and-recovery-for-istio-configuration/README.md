@@ -42,6 +42,7 @@ BACKUP_DIR="istio-backup-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$BACKUP_DIR"
 
 # List of Istio CRD types
+
 ISTIO_RESOURCES=(
   "virtualservices"
   "destinationrules"

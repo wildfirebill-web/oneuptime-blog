@@ -535,6 +535,7 @@ Here are key parameters to tune:
 
 ```yaml
 # prometheus.yml
+
 storage:
   tsdb:
     min-block-duration: 2h

@@ -40,6 +40,7 @@ First, add the layer to your function. You can do this through the AWS Console, 
 
 ```bash
 # Add the OpenTelemetry Python layer to your function
+
 # Replace the ARN with the latest version for your region
 aws lambda update-function-configuration \
   --function-name my-python-function \

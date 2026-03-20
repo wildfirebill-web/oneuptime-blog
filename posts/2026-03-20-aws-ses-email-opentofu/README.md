@@ -8,12 +8,13 @@ Description: Learn how to configure AWS Simple Email Service (SES) using OpenTof
 
 ---
 
-AWS SES is a cost-effective email sending service for transactional and marketing emails. Setting up SES properly — with domain verification, DKIM, DMARC, and appropriate IAM policies — is essential for deliverability. OpenTofu manages this configuration as code, making domain identity setup repeatable.
+AWS SES is a cost-effective email sending service for transactional and marketing emails. Setting up SES properly - with domain verification, DKIM, DMARC, and appropriate IAM policies - is essential for deliverability. OpenTofu manages this configuration as code, making domain identity setup repeatable.
 
 ## Domain Identity and Verification
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -42,7 +43,7 @@ resource "aws_ses_domain_dkim" "main" {
 
 ```hcl
 # dns.tf
-# Using Route 53 — add the SES verification TXT record
+# Using Route 53 - add the SES verification TXT record
 resource "aws_route53_record" "ses_verification" {
   zone_id = var.route53_zone_id
   name    = "_amazonses.${var.email_domain}"
@@ -157,8 +158,8 @@ resource "aws_ses_identity_notification_topic" "complaint" {
 
 ## Best Practices
 
-- Set up DKIM, SPF, and DMARC — all three are required for good deliverability to major inbox providers.
+- Set up DKIM, SPF, and DMARC - all three are required for good deliverability to major inbox providers.
 - Subscribe to bounce and complaint notifications via SNS and handle them in your application to maintain a healthy sending reputation.
-- Start sending with a suppression list — SES automatically suppresses addresses that have bounced or complained.
-- Request production access (move out of sandbox) before going live — sandbox only allows verified email addresses.
+- Start sending with a suppression list - SES automatically suppresses addresses that have bounced or complained.
+- Request production access (move out of sandbox) before going live - sandbox only allows verified email addresses.
 - Monitor your bounce rate (keep below 5%) and complaint rate (keep below 0.1%) to maintain healthy sending reputation.

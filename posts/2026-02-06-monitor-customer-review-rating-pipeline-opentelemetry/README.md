@@ -32,6 +32,7 @@ tracer = trace.get_tracer("review.pipeline")
 meter = metrics.get_meter("review.pipeline")
 
 # Metrics for pipeline health
+
 review_submissions = meter.create_counter(
     "review.submissions.total",
     description="Total review submissions"

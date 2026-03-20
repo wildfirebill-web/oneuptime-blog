@@ -46,6 +46,7 @@ This Python example shows a custom span processor that redacts email addresses f
 
 ```python
 # pii_span_processor.py
+
 # Custom SpanProcessor that scrubs email addresses from span attributes
 import re
 from opentelemetry.sdk.trace import SpanProcessor

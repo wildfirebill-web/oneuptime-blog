@@ -45,6 +45,7 @@ Start by creating a new Blazor project using the .NET CLI.
 
 ```bash
 # Create a new Blazor WebAssembly project
+
 dotnet new blazorwasm -o MyBlazorApp
 
 # Or create a Blazor Server project

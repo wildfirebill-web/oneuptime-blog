@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, Bridge Network, docker0, Custom Bridge
+Tags: Docker, IPv6, Bridge Network, Docker0, Custom Bridge
 
 Description: Configure Docker bridge networks for IPv6, understand the difference between the default bridge and user-defined bridges, set IPv6 options on bridges, and verify container IPv6 connectivity.
 
@@ -14,6 +14,7 @@ The Docker bridge driver is the default network driver and the most common for c
 
 ```bash
 # Enable IPv6 on default bridge via daemon.json
+
 # /etc/docker/daemon.json:
 # {
 #   "ipv6": true,

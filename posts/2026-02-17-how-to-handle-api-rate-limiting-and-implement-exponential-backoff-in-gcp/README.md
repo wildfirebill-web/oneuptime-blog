@@ -25,6 +25,7 @@ You can check your current quotas:
 
 ```bash
 # Check quotas for a specific API
+
 gcloud services quotas list \
   --service=compute.googleapis.com \
   --project=my-project \

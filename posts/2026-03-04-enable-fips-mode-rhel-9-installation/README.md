@@ -27,6 +27,7 @@ The simplest way to enable FIPS during installation is to add a kernel parameter
 
 ```bash
 # At the RHEL installation boot menu:
+
 # 1. Highlight the installation option
 # 2. Press Tab to edit boot parameters
 # 3. Append: fips=1

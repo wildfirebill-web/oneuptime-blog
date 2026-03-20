@@ -34,6 +34,7 @@ This Terraform configuration sets up a REST API with a Cognito authorizer.
 
 ```hcl
 # Cognito User Pool for API authentication
+
 resource "aws_cognito_user_pool" "api_users" {
   name = "api-users"
 

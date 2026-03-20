@@ -51,6 +51,7 @@ When the Repo Server receives a request for manifests, it follows this pipeline:
 For Helm applications:
 ```bash
 # What the Repo Server runs internally for Helm apps
+
 helm template <release-name> <chart-path> \
   --namespace <target-namespace> \
   --values values.yaml \

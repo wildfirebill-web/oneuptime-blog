@@ -41,6 +41,7 @@ Key points:
 
 ```bash
 # Download the agent
+
 AGENT_VERSION="1.15.0"
 wget "https://releases.hashicorp.com/tfc-agent/${AGENT_VERSION}/tfc-agent_${AGENT_VERSION}_linux_amd64.zip"
 

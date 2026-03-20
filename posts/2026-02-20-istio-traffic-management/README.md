@@ -32,6 +32,7 @@ graph TD
 
 ```yaml
 # DestinationRule defines subsets (versions) of a service
+
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule
 metadata:

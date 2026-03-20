@@ -66,6 +66,7 @@ GitHub Actions provides native support for deployment environments with protecti
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Deploy Pipeline
 
 on:

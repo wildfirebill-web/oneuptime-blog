@@ -117,6 +117,7 @@ Push custom cost metrics for dashboard consumption:
 
 ```hcl
 # Lambda to calculate and push custom cost metrics
+
 resource "aws_lambda_function" "cost_metrics" {
   function_name = "push-cost-metrics"
   handler       = "index.handler"

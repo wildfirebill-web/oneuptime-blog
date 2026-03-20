@@ -25,6 +25,7 @@ Add the `google-cloud-profiler` package to your dependencies.
 
 ```bash
 # Install the profiler package
+
 pip install google-cloud-profiler
 ```
 

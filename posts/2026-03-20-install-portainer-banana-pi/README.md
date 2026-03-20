@@ -30,6 +30,7 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
 # Add your user to the docker group
+
 sudo usermod -aG docker $USER
 newgrp docker
 ```
@@ -64,7 +65,7 @@ docker run -d \
 
 Open a browser and navigate to:
 
-```
+```text
 https://<banana-pi-ip>:9443
 ```
 

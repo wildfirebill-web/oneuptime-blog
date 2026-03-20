@@ -33,6 +33,7 @@ Add the required gems to your Gemfile:
 # Gemfile
 
 # Core OpenTelemetry SDK
+
 gem 'opentelemetry-sdk'
 
 # OTLP exporter to send data to any OpenTelemetry-compatible backend
@@ -283,7 +284,7 @@ export OTEL_TRACES_SAMPLER="parentbased_traceidratio"
 export OTEL_TRACES_SAMPLER_ARG="0.5"
 ```
 
-## Resource Attributes
+Resource Attributes
 
 Add deployment metadata to all spans:
 

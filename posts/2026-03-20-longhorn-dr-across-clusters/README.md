@@ -26,6 +26,7 @@ The DR setup involves:
 
 ```bash
 # Verify kubectl contexts
+
 kubectl config get-contexts
 
 # Set aliases for easier multi-cluster management

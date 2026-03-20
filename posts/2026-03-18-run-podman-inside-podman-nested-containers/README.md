@@ -51,6 +51,7 @@ Build a custom image optimized for nested Podman:
 FROM quay.io/podman/stable
 
 # Install additional tools
+
 RUN dnf install -y \
     git \
     make \

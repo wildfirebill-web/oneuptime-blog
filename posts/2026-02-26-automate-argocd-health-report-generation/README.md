@@ -31,6 +31,7 @@ Here is a script that generates a comprehensive health report:
 ```bash
 #!/bin/bash
 # argocd-health-report.sh - Generate ArgoCD health report
+
 set -euo pipefail
 
 REPORT_DIR="${REPORT_DIR:-/reports}"

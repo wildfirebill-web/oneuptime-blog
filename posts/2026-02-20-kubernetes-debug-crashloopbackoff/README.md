@@ -48,6 +48,7 @@ Start by describing the pod to get detailed status information.
 
 ```bash
 # List pods and identify the failing one
+
 kubectl get pods -n your-namespace
 
 # Get detailed information about the pod

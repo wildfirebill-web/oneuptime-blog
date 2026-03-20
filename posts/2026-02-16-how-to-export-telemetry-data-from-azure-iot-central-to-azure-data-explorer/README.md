@@ -28,6 +28,7 @@ If you do not already have an ADX cluster, create one using the Azure CLI.
 
 ```bash
 # Create a resource group
+
 az group create --name iot-analytics-rg --location eastus
 
 # Create an ADX cluster (Dev/Test SKU for learning, Standard for production)

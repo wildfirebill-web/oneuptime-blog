@@ -8,7 +8,7 @@ Description: Learn how to configure AWS RDS Multi-AZ deployments with OpenTofu f
 
 ---
 
-RDS Multi-AZ deployments maintain a synchronous standby replica in a different Availability Zone. If the primary instance fails, RDS automatically fails over to the standby with minimal downtime — typically 1-2 minutes.
+RDS Multi-AZ deployments maintain a synchronous standby replica in a different Availability Zone. If the primary instance fails, RDS automatically fails over to the standby with minimal downtime - typically 1-2 minutes.
 
 ---
 
@@ -105,6 +105,7 @@ resource "aws_cloudwatch_metric_alarm" "rds_failover" {
 
 ```bash
 # Trigger a manual failover (for testing)
+
 aws rds reboot-db-instance   --db-instance-identifier main-db   --force-failover
 
 # Monitor events
@@ -115,4 +116,4 @@ aws rds describe-events   --source-identifier main-db   --source-type db-instanc
 
 ## Summary
 
-Set `multi_az = true` on `aws_db_instance` to enable synchronous standby replication in a second AZ. Ensure the `aws_db_subnet_group` includes subnets in at least two AZs. The endpoint address stays the same during failover — RDS updates the DNS record to point to the new primary. Monitor failovers with CloudWatch Events and test periodically with a manual reboot failover.
+Set `multi_az = true` on `aws_db_instance` to enable synchronous standby replication in a second AZ. Ensure the `aws_db_subnet_group` includes subnets in at least two AZs. The endpoint address stays the same during failover - RDS updates the DNS record to point to the new primary. Monitor failovers with CloudWatch Events and test periodically with a manual reboot failover.

@@ -8,11 +8,11 @@ Description: Understand the NDP MTU option in Router Advertisements, how it prop
 
 ## Introduction
 
-The NDP MTU option (Type 5) in Router Advertisements allows routers to explicitly communicate the link MTU to all hosts on the segment. This is especially important on links where the MTU is not the standard 1500 bytes — such as jumbo-frame networks, PPPoE links, or tunnels — ensuring all hosts configure their interfaces with the correct MTU for PMTU discovery.
+The NDP MTU option (Type 5) in Router Advertisements allows routers to explicitly communicate the link MTU to all hosts on the segment. This is especially important on links where the MTU is not the standard 1500 bytes - such as jumbo-frame networks, PPPoE links, or tunnels - ensuring all hosts configure their interfaces with the correct MTU for PMTU discovery.
 
 ## MTU Option Format
 
-```
+```text
 NDP MTU Option (Type 5, Length = 1):
 
  0                   1                   2                   3
@@ -37,7 +37,8 @@ When to include:
 ```bash
 # /etc/radvd.conf: include MTU option
 
-# Standard Ethernet (1500 bytes) — include for clarity
+# Standard Ethernet (1500 bytes) - include for clarity
+
 sudo tee /etc/radvd.conf << 'EOF'
 interface eth0 {
     AdvSendAdvert on;

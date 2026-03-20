@@ -18,6 +18,7 @@ By default, podman-compose creates a single network for all services. Custom net
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   web:

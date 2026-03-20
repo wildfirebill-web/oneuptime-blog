@@ -32,6 +32,7 @@ graph TD
 
 ```bash
 # Install ReaR
+
 sudo dnf install rear genisoimage syslinux-extlinux
 
 # Verify installation

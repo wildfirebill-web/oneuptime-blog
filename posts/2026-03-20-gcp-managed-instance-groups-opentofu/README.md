@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Compute Engine, Managed Instance Groups, OpenTofu, Autoscaling, Infrastructure
+Tags: GCP, Compute Engine, Managed Instance Group, OpenTofu, Autoscaling, Infrastructure
 
 Description: Learn how to create GCP Managed Instance Groups (MIGs) with OpenTofu for scalable, self-healing VM fleets with load balancing and rolling update support.
 
@@ -14,6 +14,7 @@ GCP Managed Instance Groups (MIGs) create and manage identical VM instances from
 
 ```hcl
 # main.tf - Zonal managed instance group
+
 resource "google_compute_instance_group_manager" "web_mig" {
   name               = "web-server-mig"
   zone               = "us-central1-a"

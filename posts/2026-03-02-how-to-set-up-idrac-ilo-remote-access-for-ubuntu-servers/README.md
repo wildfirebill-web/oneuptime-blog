@@ -26,6 +26,7 @@ Or configure via racadm from Ubuntu:
 
 ```bash
 # Install Dell racadm tool
+
 # Add Dell's repository first
 wget -q -O - https://linux.dell.com/repo/pgp_pubkeys/0x1285491434D8786F.asc | \
     sudo apt-key add -

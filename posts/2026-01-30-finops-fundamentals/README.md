@@ -56,6 +56,7 @@ Enforce tagging with policy-as-code tools. Here is an example using Terraform th
 
 ```hcl
 # Require mandatory tags on all resources
+
 # This Terraform variable validation runs at plan time
 # and blocks any apply that is missing required tags
 variable "required_tags" {

@@ -41,6 +41,7 @@ Sharp is a Node.js library for image processing. It uses native binaries, so you
 
 ```bash
 # Build the Sharp layer for Lambda (Amazon Linux 2)
+
 mkdir -p sharp-layer/nodejs
 cd sharp-layer/nodejs
 npm init -y

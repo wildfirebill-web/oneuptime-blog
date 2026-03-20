@@ -37,6 +37,7 @@ flowchart TB
 
 ```bash
 # Create a standard storage bucket in a specific region
+
 gcloud storage buckets create gs://my-app-data-bucket \
     --location=us-central1 \
     --storage-class=STANDARD \

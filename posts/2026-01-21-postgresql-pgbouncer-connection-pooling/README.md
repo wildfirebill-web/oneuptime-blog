@@ -38,6 +38,7 @@ PgBouncer solves these problems by:
 
 ```bash
 # Install from repository
+
 sudo apt update
 sudo apt install pgbouncer -y
 

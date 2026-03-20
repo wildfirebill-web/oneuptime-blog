@@ -152,6 +152,7 @@ Combine all checks into a single script:
 ```bash
 #!/bin/bash
 # /usr/local/bin/storage-monitor.sh
+
 # Comprehensive storage health monitoring
 
 LOG_TAG="storage-monitor"

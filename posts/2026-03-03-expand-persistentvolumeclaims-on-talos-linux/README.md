@@ -20,6 +20,7 @@ First, your StorageClass must allow volume expansion. Check for the `allowVolume
 
 ```bash
 # Check if your StorageClass supports expansion
+
 kubectl get storageclass -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.allowVolumeExpansion}{"\n"}{end}'
 ```
 

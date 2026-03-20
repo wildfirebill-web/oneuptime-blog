@@ -41,6 +41,7 @@ Flux creates the GitRepository and Kustomization controllers in the `flux-system
 
 ```yaml
 # clusters/production/apps/myapp.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

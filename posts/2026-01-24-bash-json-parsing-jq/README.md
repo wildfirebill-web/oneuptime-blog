@@ -21,6 +21,7 @@ This guide covers practical jq usage patterns for common DevOps and scripting sc
 # Install jq on various systems
 
 # Debian/Ubuntu
+
 sudo apt-get update && sudo apt-get install -y jq
 
 # RHEL/CentOS/Fedora

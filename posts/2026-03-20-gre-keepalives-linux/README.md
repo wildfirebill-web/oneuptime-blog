@@ -20,6 +20,7 @@ BFD detects forwarding path failures in milliseconds:
 
 ```bash
 # Install FRR (includes BFD support)
+
 apt install frr -y
 
 # Enable BFD in FRR

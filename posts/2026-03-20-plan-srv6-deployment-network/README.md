@@ -12,7 +12,7 @@ Deploying SRv6 requires planning across multiple dimensions: address allocation,
 
 ## Step 1: Address Space Planning
 
-```
+```javascript
 Allocate SRv6 address space from 5f00::/16 or your own prefix:
 
 Recommended hierarchy:
@@ -32,7 +32,7 @@ Example allocation:
 ```
 
 ```python
-# srv6_address_planner.py — generate SID allocations
+# srv6_address_planner.py - generate SID allocations
 
 import ipaddress
 
@@ -53,6 +53,7 @@ def allocate_node_sids(site: int, node: int,
     return sids
 
 # Allocate SIDs for Site 1, Node 1
+
 node_sids = allocate_node_sids(
     site=1, node=1,
     functions={"End": 0, "End.DT6": 0xe000, "End.DT4": 0xe001}
@@ -82,7 +83,7 @@ ip -6 route del 5f00:test::/32
 
 ## Step 3: Phased Deployment Plan
 
-```
+```text
 Phase 1: Lab Validation (Month 1-2)
   - Build topology with FRRouting or vendor test equipment
   - Validate IS-IS SRv6 locator advertisement
@@ -94,7 +95,7 @@ Phase 2: Core Network (Month 3-4)
   - Enable SRv6 on backbone/spine nodes
   - Configure locators and IS-IS advertisement
   - Establish BGP SR-Policy peering with controller
-  - NO service migration yet — underlay only
+  - NO service migration yet - underlay only
 
 Phase 3: First Services (Month 5-6)
   - Migrate one L3VPN customer from MPLS to SRv6 End.DT6
@@ -109,7 +110,7 @@ Phase 4: Scale and Optimize (Month 7+)
 
 ## Step 4: IS-IS Configuration for Locator Advertisement
 
-```
+```text
 ! IS-IS configuration template
 router isis CORE
  net 49.0001.0000.0001.00

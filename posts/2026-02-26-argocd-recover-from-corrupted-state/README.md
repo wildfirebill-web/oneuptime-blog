@@ -28,6 +28,7 @@ An application shows "Syncing" indefinitely and cannot be cancelled through the 
 
 ```bash
 # Check the operation state
+
 kubectl get application my-app -n argocd -o json | \
   jq '.status.operationState'
 

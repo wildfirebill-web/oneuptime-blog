@@ -65,6 +65,7 @@ Soft reset moves HEAD but keeps your staging area and working directory intact.
 
 ```bash
 # Move HEAD back one commit, keep all changes staged
+
 git reset --soft HEAD~1
 
 # Check what happened

@@ -37,6 +37,7 @@ Before configuring your IdP, grab the TFE SAML metadata:
 
 ```bash
 # Download the TFE SP metadata
+
 curl -o tfe-sp-metadata.xml https://tfe.example.com/users/saml/metadata
 
 # Key values you will need from this:

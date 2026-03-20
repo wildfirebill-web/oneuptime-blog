@@ -33,6 +33,7 @@ mkdir -p certs
 cd certs
 
 # If you have the Istio repo cloned:
+
 make -f /path/to/istio/tools/certs/Makefile.selfsigned.mk root-ca
 ```
 

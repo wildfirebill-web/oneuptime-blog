@@ -20,6 +20,7 @@ This guide covers the fundamentals of async programming in Python, from basic co
 
 ```python
 # basic_async.py
+
 # Introduction to async functions
 import asyncio
 

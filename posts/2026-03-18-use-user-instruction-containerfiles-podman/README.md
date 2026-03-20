@@ -33,6 +33,7 @@ The USER instruction accepts a username or UID, optionally with a group or GID:
 
 ```dockerfile
 # By username
+
 USER appuser
 
 # By UID

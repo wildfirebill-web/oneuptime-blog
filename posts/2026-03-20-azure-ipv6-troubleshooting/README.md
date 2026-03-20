@@ -14,6 +14,7 @@ Azure IPv6 troubleshooting requires checking multiple layers: VNet/subnet IPv6 c
 
 ```bash
 # Check if VM has IPv6 address assigned
+
 az vm show \
     --resource-group "$RG" \
     --name vm-web-01 \

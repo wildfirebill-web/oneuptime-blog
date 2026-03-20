@@ -22,6 +22,7 @@ We'll focus on provisioned clusters here, but most of the SQL and design concept
 
 ```bash
 # Create a Redshift cluster with 2 nodes
+
 aws redshift create-cluster \
   --cluster-identifier analytics-warehouse \
   --node-type ra3.xlplus \

@@ -24,6 +24,7 @@ Most CSI drivers expose metrics on a dedicated port. Verify your driver supports
 
 ```bash
 # Check if CSI controller exposes metrics
+
 kubectl get pods -n <csi-namespace> -o yaml | grep -A 5 "containerPort"
 
 # Port forward to access metrics locally

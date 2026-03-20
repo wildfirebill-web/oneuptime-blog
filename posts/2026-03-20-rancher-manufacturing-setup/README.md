@@ -1,8 +1,8 @@
-# How to Set Up Rancher for Manufacturing
+# How to Set Up Rancher for Manufacturing - Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, manufacturing, iot, edge, kubernetes, industry4
+Tags: Rancher, Manufacturing, IoT, Edge, Kubernetes, Industry4
 
 Description: A guide to deploying Rancher for manufacturing environments, covering IIoT data collection, OT/IT integration, edge cluster management, and production floor monitoring.
 
@@ -12,7 +12,7 @@ Manufacturing organizations are adopting Industry 4.0 principles, deploying cont
 
 ## Architecture
 
-```
+```text
 Enterprise Data Center
 └── Rancher Management (RKE2 HA)
     ├── MES (Manufacturing Execution System)
@@ -38,6 +38,7 @@ K3s clusters on production line hardware:
 
 ```bash
 # Install K3s on production line server
+
 curl -sfL https://get.k3s.io | sh - \
   --node-label="location=factory-floor" \
   --node-label="facility=plant-01" \

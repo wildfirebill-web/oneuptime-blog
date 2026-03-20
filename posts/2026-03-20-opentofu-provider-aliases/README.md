@@ -1,11 +1,10 @@
----
-title: "Using Provider Aliases in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, aliases
-description: "Learn how to use provider aliases in OpenTofu to manage multiple configurations of the same provider within a single workspace."
----
-
 # Using Provider Aliases in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Aliases
+
+Description: Learn how to use provider aliases in OpenTofu to manage multiple configurations of the same provider within a single workspace.
 
 Provider aliases let you use multiple configurations of the same provider in a single OpenTofu workspace. This is essential for multi-region deployments, cross-account setups, and managing resources in different environments simultaneously.
 
@@ -13,11 +12,12 @@ Provider aliases let you use multiple configurations of the same provider in a s
 
 ```hcl
 # Default provider (no alias)
+
 provider "aws" {
   region = "us-east-1"
 }
 
-# Aliased provider — explicitly named
+# Aliased provider - explicitly named
 provider "aws" {
   alias  = "west"
   region = "us-west-2"
@@ -145,7 +145,7 @@ module "database" {
 ```
 
 ```hcl
-# modules/rds/versions.tf — declare expected providers
+# modules/rds/versions.tf - declare expected providers
 terraform {
   required_providers {
     aws = {

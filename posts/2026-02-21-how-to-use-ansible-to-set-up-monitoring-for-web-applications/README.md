@@ -69,6 +69,7 @@ Node Exporter runs on every server you want to monitor. It exposes system metric
 
 ```yaml
 # roles/node_exporter/defaults/main.yml
+
 node_exporter_version: "1.7.0"
 node_exporter_port: 9100
 node_exporter_user: "node_exporter"

@@ -28,6 +28,7 @@ The sandbox image should contain only what is absolutely necessary to run the ta
 FROM alpine:3.19
 
 # Install only the runtime needed
+
 RUN apk add --no-cache python3
 
 # Create an unprivileged user

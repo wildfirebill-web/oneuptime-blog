@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # elasticsearch.tf
+
 resource "helm_release" "elasticsearch" {
   name             = "elasticsearch"
   repository       = "https://helm.elastic.co"
@@ -194,8 +195,8 @@ resource "helm_release" "filebeat" {
 
 ## Best Practices
 
-- Set JVM heap to 50% of the Elasticsearch pod memory limit — `esJavaOpts = "-Xmx2g -Xms2g"` when memory limit is 4Gi.
-- Use `gp3` storage class for Elasticsearch — it's faster than `gp2` at the same price.
+- Set JVM heap to 50% of the Elasticsearch pod memory limit - `esJavaOpts = "-Xmx2g -Xms2g"` when memory limit is 4Gi.
+- Use `gp3` storage class for Elasticsearch - it's faster than `gp2` at the same price.
 - Deploy 3 Elasticsearch nodes in production with an odd number to maintain quorum.
 - Set index lifecycle management (ILM) policies in Kibana to automatically delete old indices and control storage costs.
 - Use separate Logstash nodes for parsing heavy-volume logs rather than having Filebeat write directly to Elasticsearch.

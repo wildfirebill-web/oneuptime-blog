@@ -41,6 +41,7 @@ Here is the complete CI workflow for the application repository:
 
 ```yaml
 # .github/workflows/ci-cd.yaml
+
 name: CI/CD Pipeline
 
 on:

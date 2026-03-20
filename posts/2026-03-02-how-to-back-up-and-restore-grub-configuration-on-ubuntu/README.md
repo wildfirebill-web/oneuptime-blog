@@ -35,6 +35,7 @@ Before backing up, determine whether you are on a BIOS or UEFI system:
 
 ```bash
 # UEFI systems have this directory; BIOS systems do not
+
 ls /sys/firmware/efi 2>/dev/null && echo "UEFI" || echo "BIOS"
 
 # Check if EFI partition is mounted

@@ -105,6 +105,7 @@ If you are not using the Helm chart, deploy Sentinel manually:
 
 ```yaml
 # redis-sentinel-configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

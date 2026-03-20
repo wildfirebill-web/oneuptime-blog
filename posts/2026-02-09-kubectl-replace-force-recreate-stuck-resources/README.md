@@ -16,6 +16,7 @@ kubectl replace updates resources by replacing their entire definition:
 
 ```bash
 # Normal replace (updates existing resource)
+
 kubectl replace -f deployment.yaml
 
 # Forced replace (deletes then recreates)

@@ -224,6 +224,7 @@ class OrderQueue:
         return stats
 
 # Usage
+
 queue = OrderQueue()
 
 # Create order

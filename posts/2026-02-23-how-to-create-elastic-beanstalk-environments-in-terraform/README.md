@@ -47,6 +47,7 @@ The application is the top-level container. Environments sit under it:
 
 ```hcl
 # The Beanstalk application - a logical grouping of environments
+
 resource "aws_elastic_beanstalk_application" "app" {
   name        = "my-web-app"
   description = "Main web application"

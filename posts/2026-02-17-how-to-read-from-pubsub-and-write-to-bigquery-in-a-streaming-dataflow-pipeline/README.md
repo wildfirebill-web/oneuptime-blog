@@ -317,6 +317,7 @@ Deploy the pipeline with the Dataflow runner.
 
 ```bash
 # Launch the streaming pipeline
+
 mvn compile exec:java \
   -Dexec.mainClass=com.example.PubSubToBigQuery \
   -Dexec.args=" \

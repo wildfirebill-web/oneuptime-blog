@@ -41,6 +41,7 @@ Watch for these symptoms:
 
 ```bash
 # Check API server response times
+
 kubectl logs deployment/argocd-server -n argocd | \
   grep -i "slow\|timeout\|deadline"
 

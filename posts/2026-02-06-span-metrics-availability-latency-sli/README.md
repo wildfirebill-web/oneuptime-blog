@@ -29,6 +29,7 @@ Here is a complete collector configuration that derives SLI metrics from spans.
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

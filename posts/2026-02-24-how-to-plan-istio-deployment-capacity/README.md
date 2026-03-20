@@ -29,6 +29,7 @@ Start by getting a clear picture of what you are running today. You need to know
 
 ```bash
 # Count total pods across all namespaces
+
 kubectl get pods --all-namespaces --no-headers | wc -l
 
 # Count deployments

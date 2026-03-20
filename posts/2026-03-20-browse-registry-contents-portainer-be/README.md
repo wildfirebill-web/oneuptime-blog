@@ -33,6 +33,7 @@ The registry browser replaces these manual CLI workflows:
 
 ```bash
 # List all repositories in a registry (Docker Registry API v2)
+
 curl -u user:password \
   https://registry.mycompany.com/v2/_catalog
 

@@ -20,6 +20,7 @@ First, check your GitRepository status to confirm the error:
 
 ```bash
 # Check the status of all GitRepository resources
+
 kubectl get gitrepositories -A
 
 # Get detailed status for a specific GitRepository

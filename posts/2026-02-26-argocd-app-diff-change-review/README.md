@@ -16,6 +16,7 @@ The simplest form shows the diff between Git (desired state) and the cluster (li
 
 ```bash
 # Show diff for an application
+
 argocd app diff my-app
 ```
 
@@ -195,7 +196,7 @@ else
             --local "$APPS_DIR/$app/production/" 2>&1) || true
 
         if [ -n "$diff_result" ]; then
-            output="${output}\`\`\`diff\n${diff_result}\n\`\`\`\n\n"
+            output="${output}```diff\n${diff_result}\n```\n\n"
         else
             output="${output}No changes detected for this application.\n\n"
         fi
@@ -231,7 +232,7 @@ if [ -n "$diff_output" ]; then
                 \"type\": \"section\",
                 \"text\": {
                     \"type\": \"mrkdwn\",
-                    \"text\": \"\`\`\`${truncated}\`\`\`\"
+                    \"text\": \"```${truncated}```\"
                 }
             }]
         }"
@@ -280,7 +281,7 @@ diff /tmp/git-build.yaml /tmp/live-build.yaml
 
 Simple version bump. Review the changelog for v2.0.0 before syncing.
 
-### Resource Limit Change
+Resource Limit Change
 
 ```diff
            resources:
@@ -308,7 +309,7 @@ Resource changes can affect scheduling. Verify node capacity before syncing.
 
 New resource. Verify it does not conflict with existing resources.
 
-### Resource Removed
+Resource Removed
 
 ```diff
 ===== /Service production/my-app-legacy ======

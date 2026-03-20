@@ -35,6 +35,7 @@ Before setting up automatic triggers, test that ACR Tasks can build your image.
 
 ```bash
 # Run a quick build task from a local directory
+
 # This uploads your source code to ACR and builds it in the cloud
 az acr build \
   --registry myregistry \

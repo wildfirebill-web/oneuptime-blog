@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Confluent Cloud, Kafka, Streaming, Infrastructure as Code, Data Engineering, Managed Services
+Tags: OpenTofu, Confluent Cloud, Kafka, Streaming, Infrastructure as Code, Data Engineering, Managed Service
 
 Description: Learn how to provision Confluent Cloud Kafka clusters, topics, service accounts, and API keys using OpenTofu for fully managed, serverless Kafka deployments.
 
 ---
 
-Confluent Cloud is the fully managed Kafka service that handles all operational complexity. With OpenTofu's Confluent provider, you can define clusters, topics, ACLs, and service accounts as code — making your streaming infrastructure as reproducible as your application infrastructure.
+Confluent Cloud is the fully managed Kafka service that handles all operational complexity. With OpenTofu's Confluent provider, you can define clusters, topics, ACLs, and service accounts as code - making your streaming infrastructure as reproducible as your application infrastructure.
 
 ## Provider Configuration
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     confluent = {
@@ -191,7 +192,7 @@ resource "confluent_kafka_acl" "orders_producer_write" {
 ## Best Practices
 
 - Use `MULTI_ZONE` availability for production clusters to ensure broker failures don't cause downtime.
-- Use service accounts and API keys per application rather than sharing credentials — this enables per-application ACL management.
+- Use service accounts and API keys per application rather than sharing credentials - this enables per-application ACL management.
 - Set `min.insync.replicas=2` on all topics to prevent data loss during broker failures.
 - Use topic naming conventions (`<domain>.<entity>.<event>`) to make schemas self-documenting.
 - Enable Schema Registry to enforce Avro/Protobuf schemas and prevent incompatible producer changes from breaking consumers.

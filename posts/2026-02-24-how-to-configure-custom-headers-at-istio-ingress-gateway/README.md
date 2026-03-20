@@ -279,6 +279,7 @@ After applying your configuration, test it with curl:
 
 ```bash
 # Check response headers
+
 curl -I https://app.example.com/
 
 # Check that request headers are reaching the backend

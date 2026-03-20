@@ -264,6 +264,7 @@ Verify your HA setup actually works:
 
 ```bash
 # Kill one istiod pod and verify the mesh keeps working
+
 kubectl delete pod -n istio-system -l app=istiod --field-selector=metadata.name=istiod-xyz
 
 # Check that proxies reconnect to remaining replicas

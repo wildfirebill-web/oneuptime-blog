@@ -32,6 +32,7 @@ First, let us set up AWS Config to record all resource changes.
 
 ```hcl
 # S3 bucket for Config recordings
+
 resource "aws_s3_bucket" "config" {
   bucket = "company-aws-config-${data.aws_caller_identity.current.account_id}"
 

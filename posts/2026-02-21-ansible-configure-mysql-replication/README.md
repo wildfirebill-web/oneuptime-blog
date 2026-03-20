@@ -31,6 +31,7 @@ flowchart LR
 
 ```yaml
 # inventory/production/hosts.yml
+
 # MySQL replication cluster definition
 all:
   children:

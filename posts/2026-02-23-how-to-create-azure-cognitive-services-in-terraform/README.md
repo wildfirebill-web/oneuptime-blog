@@ -63,6 +63,7 @@ resource "azurerm_resource_group" "ai" {
 }
 
 # Multi-service Cognitive Services account
+
 resource "azurerm_cognitive_account" "multi_service" {
   name                = "cog-multi-prod-001"
   location            = azurerm_resource_group.ai.location

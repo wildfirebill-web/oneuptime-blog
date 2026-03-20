@@ -36,6 +36,7 @@ Here's a client config that only routes internal company traffic through the VPN
 
 ```bash
 # Client config with split tunneling
+
 sudo tee /etc/wireguard/wg0.conf > /dev/null << 'EOF'
 [Interface]
 PrivateKey = CLIENT_PRIVATE_KEY_HERE

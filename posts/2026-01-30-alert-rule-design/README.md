@@ -71,6 +71,7 @@ The example below shows a basic threshold alert that fires when error rate excee
 
 ```yaml
 # Prometheus alert rule for error rate threshold
+
 groups:
   - name: api-alerts
     rules:

@@ -14,14 +14,15 @@ Description: Troubleshoot systemd-networkd configuration and connectivity issues
 
 ```bash
 # List all interfaces with their operational and setup status
+
 networkctl list
 
 # Status meanings:
-# configured   — networkd has applied the configuration
-# unmanaged    — no .network file matches this interface
-# degraded     — some addresses failed (e.g., IPv6 RA)
-# failed       — configuration failed
-# linger       — carrier lost but interface still exists
+# configured   - networkd has applied the configuration
+# unmanaged    - no .network file matches this interface
+# degraded     - some addresses failed (e.g., IPv6 RA)
+# failed       - configuration failed
+# linger       - carrier lost but interface still exists
 ```
 
 ## Inspect a Specific Interface

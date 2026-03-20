@@ -31,6 +31,7 @@ Drift detection is configured per HelmRelease using the `spec.driftDetection` fi
 
 ```yaml
 # HelmRelease with drift detection enabled
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

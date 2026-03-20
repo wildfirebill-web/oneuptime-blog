@@ -55,6 +55,7 @@ Best for read-heavy workloads where query performance is critical:
 
 ```python
 # PySpark: Create Copy-on-Write table
+
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder \

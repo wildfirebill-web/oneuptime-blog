@@ -62,6 +62,7 @@ Verify you have sufficient cluster resources to run multiple replicas.
 
 ```bash
 # Check available nodes and their resources
+
 kubectl get nodes -o custom-columns=\
 NAME:.metadata.name,\
 CPU:.status.allocatable.cpu,\

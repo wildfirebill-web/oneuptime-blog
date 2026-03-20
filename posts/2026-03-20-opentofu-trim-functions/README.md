@@ -1,11 +1,10 @@
----
-title: "How to Use Trim Functions in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, strings
-description: "Learn how to use trim, trimspace, trimprefix, and trimsuffix functions in OpenTofu to clean up strings."
----
-
 # How to Use Trim Functions in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, String
+
+Description: Learn how to use trim, trimspace, trimprefix, and trimsuffix functions in OpenTofu to clean up strings.
 
 OpenTofu provides four trim functions for removing characters from strings: `trim`, `trimspace`, `trimprefix`, and `trimsuffix`. These are useful for cleaning user input, normalizing paths, and removing known prefixes/suffixes.
 

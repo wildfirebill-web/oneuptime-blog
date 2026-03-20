@@ -26,6 +26,7 @@ Here is a LimitRange that sets sensible defaults and constraints:
 
 ```yaml
 # platform/limits/production-limits.yaml
+
 apiVersion: v1
 kind: LimitRange
 metadata:

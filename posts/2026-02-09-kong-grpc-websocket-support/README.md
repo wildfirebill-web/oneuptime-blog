@@ -18,6 +18,7 @@ Configure Kong to route gRPC traffic.
 
 ```yaml
 # grpc-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

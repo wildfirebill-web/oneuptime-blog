@@ -209,7 +209,7 @@ command:
 
 This can significantly reduce Redis memory usage, especially for large manifests.
 
-## Resource Configuration
+Resource Configuration
 
 The repo server's resource needs depend on how many concurrent operations it handles and the size of your repositories.
 
@@ -353,6 +353,7 @@ The repo server exposes metrics on port 8084.
 
 ```bash
 # Port-forward to the metrics endpoint
+
 kubectl port-forward -n argocd deployment/argocd-repo-server 8084:8084
 curl localhost:8084/metrics | grep argocd_git
 ```

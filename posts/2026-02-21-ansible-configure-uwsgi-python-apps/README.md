@@ -49,6 +49,7 @@ uwsgi-setup/
 
 ```yaml
 # group_vars/all.yml
+
 uwsgi_mode: emperor  # single or emperor
 
 # Single app settings

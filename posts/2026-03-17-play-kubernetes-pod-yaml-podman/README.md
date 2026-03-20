@@ -18,6 +18,7 @@ Kubernetes Pod YAML is the most basic unit of deployment. Podman can interpret t
 
 ```bash
 # Create a Kubernetes Pod manifest
+
 cat > /tmp/simple-pod.yaml << 'EOF'
 apiVersion: v1
 kind: Pod

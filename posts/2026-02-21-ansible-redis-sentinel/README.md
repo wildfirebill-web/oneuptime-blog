@@ -43,6 +43,7 @@ You need an odd number of Sentinel instances (at least three) so they can reach 
 
 ```ini
 # inventory/redis-sentinel.ini
+
 [redis_master]
 redis-master ansible_host=10.0.1.10
 

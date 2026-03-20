@@ -57,6 +57,7 @@ Now calculate the nodes needed for your throughput requirements. Here is a Pytho
 
 ```python
 # bigtable_sizing.py - Calculate the minimum Bigtable cluster size
+
 def calculate_cluster_size(
     read_ops_per_second,
     write_ops_per_second,

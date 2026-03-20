@@ -29,6 +29,7 @@ First, capture the raw completion script:
 
 ```bash
 # Generate and save the completion output
+
 cilium-agent completion zsh > /tmp/cilium-agent-completion.zsh
 
 # Check the file size and line count

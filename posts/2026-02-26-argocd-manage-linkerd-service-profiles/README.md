@@ -56,6 +56,7 @@ Before managing ServiceProfiles, install Linkerd itself through ArgoCD:
 
 ```yaml
 # Linkerd CRDs
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

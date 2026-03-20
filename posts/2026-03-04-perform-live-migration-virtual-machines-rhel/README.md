@@ -21,6 +21,7 @@ Both hosts need:
 
 ```bash
 # Verify libvirt is running on both hosts
+
 sudo systemctl status libvirtd
 
 # Check CPU compatibility

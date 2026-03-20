@@ -20,6 +20,7 @@ Ensure you have Podman 5.x or later installed.
 
 ```bash
 # Verify Podman version
+
 podman --version
 
 # Check the rm subcommand

@@ -28,6 +28,7 @@ Fluent Bit collects logs from every node with minimal resource usage.
 
 ```yaml
 # fluent-bit-values.yaml
+
 config:
   inputs: |
     [INPUT]

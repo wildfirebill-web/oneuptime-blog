@@ -19,8 +19,8 @@ run "bucket_has_correct_name" {
   }
 
   # Each assert block has exactly two arguments:
-  # condition  — a boolean expression
-  # error_message — shown when condition is false
+  # condition  - a boolean expression
+  # error_message - shown when condition is false
   assert {
     condition     = aws_s3_bucket.this.bucket == "my-app-data-bucket"
     error_message = "Expected bucket name 'my-app-data-bucket', got '${aws_s3_bucket.this.bucket}'"
@@ -30,7 +30,7 @@ run "bucket_has_correct_name" {
 
 ## Asserting on Outputs
 
-Outputs are the primary interface of a module—test them explicitly:
+Outputs are the primary interface of a module-test them explicitly:
 
 ```hcl
 run "outputs_expose_bucket_arn" {
@@ -130,13 +130,14 @@ run "security_group_configuration" {
 Include the actual value in the error message using string interpolation so failures are self-explanatory:
 
 ```hcl
-# Vague — hard to debug
+# Vague - hard to debug
+
 assert {
   condition     = aws_instance.this.ami == var.expected_ami
   error_message = "AMI mismatch"
 }
 
-# Clear — includes both expected and actual values
+# Clear - includes both expected and actual values
 assert {
   condition     = aws_instance.this.ami == var.expected_ami
   error_message = "Expected AMI '${var.expected_ami}' but resource uses '${aws_instance.this.ami}'"

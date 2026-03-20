@@ -44,6 +44,7 @@ resource "aws_subnet" "public" {
 # modules/networking/outputs.tf
 
 # Expose the VPC ID so other modules can use it
+
 output "vpc_id" {
   description = "The ID of the created VPC"
   value       = aws_vpc.this.id

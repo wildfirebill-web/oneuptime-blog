@@ -16,6 +16,7 @@ The cleanest way to conditionally apply a role is with `include_role` and `when`
 
 ```yaml
 # site.yml
+
 # Conditionally include roles based on runtime conditions
 ---
 - hosts: all

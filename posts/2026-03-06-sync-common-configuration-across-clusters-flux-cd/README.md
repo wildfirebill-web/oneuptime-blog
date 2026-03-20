@@ -63,6 +63,7 @@ fleet-repo/
 
 ```yaml
 # common/security/pod-security.yaml
+
 # Enforce restricted pod security standards across all namespaces
 apiVersion: v1
 kind: Namespace

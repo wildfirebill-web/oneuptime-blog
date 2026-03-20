@@ -44,6 +44,7 @@ First, in your monitoring account, create an OAM sink. This is the receiving end
 
 ```bash
 # In the monitoring account: create an OAM sink
+
 aws oam create-sink \
   --name "central-monitoring-sink" \
   --region us-east-1

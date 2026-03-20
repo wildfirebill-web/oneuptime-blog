@@ -116,6 +116,7 @@ The following configuration file sets up a standalone Kafka Connect worker with 
 
 ```properties
 # standalone.properties
+
 # Kafka cluster connection
 bootstrap.servers=localhost:9092
 

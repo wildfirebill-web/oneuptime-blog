@@ -146,6 +146,7 @@ class BatchedEmbedder:
 
 
 # Usage example
+
 if __name__ == "__main__":
     embedder = BatchedEmbedder(batch_size=128)
 

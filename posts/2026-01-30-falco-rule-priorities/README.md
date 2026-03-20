@@ -83,6 +83,7 @@ Here is a basic example of a Falco rule with priority assignment:
 
 ```yaml
 # Rule to detect shell spawned in a container
+
 # Priority set to ALERT because this often indicates compromise
 - rule: Shell Spawned in Container
   desc: Detects when a shell is spawned inside a container

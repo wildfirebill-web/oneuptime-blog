@@ -33,6 +33,7 @@ The `imager` tool from Sidero Labs is the standard way to generate disk images.
 
 ```bash
 # Pull the imager container
+
 docker pull ghcr.io/siderolabs/imager:v1.7.0
 
 # Generate a raw disk image

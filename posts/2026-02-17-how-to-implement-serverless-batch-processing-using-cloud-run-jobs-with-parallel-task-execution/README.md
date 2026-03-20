@@ -38,6 +38,7 @@ Let's build a job that processes millions of records from BigQuery in parallel. 
 
 ```python
 # main.py - Batch processing job with parallel task execution
+
 import os
 import logging
 from google.cloud import bigquery

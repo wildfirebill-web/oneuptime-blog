@@ -20,6 +20,7 @@ Download the official PostgreSQL image.
 
 ```bash
 # Pull the latest PostgreSQL image
+
 podman pull docker.io/library/postgres:16
 
 # Verify the image

@@ -76,6 +76,7 @@ In your Databricks workspace, create a notebook that performs the data transform
 
 ```python
 # Notebook: /Shared/pipelines/transform_sales_data
+
 # This notebook is called by Azure Data Factory to transform raw sales data
 
 # Read the input path from ADF pipeline parameters

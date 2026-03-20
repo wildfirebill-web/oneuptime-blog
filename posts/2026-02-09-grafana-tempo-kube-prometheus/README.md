@@ -36,6 +36,7 @@ Create Tempo configuration:
 
 ```yaml
 # tempo-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

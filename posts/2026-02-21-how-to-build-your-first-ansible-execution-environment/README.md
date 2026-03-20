@@ -28,6 +28,7 @@ Install ansible-builder and ansible-navigator:
 
 ```bash
 # Install the tools you need
+
 pip install ansible-builder ansible-navigator
 ```
 

@@ -53,6 +53,7 @@ CodeQL is GitHub's free SAST tool that supports multiple languages. It builds a 
 
 ```yaml
 # .github/workflows/codeql.yml
+
 name: CodeQL Security Analysis
 
 on:

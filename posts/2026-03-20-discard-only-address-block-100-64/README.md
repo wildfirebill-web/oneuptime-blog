@@ -1,4 +1,4 @@
-# How to Understand the Discard-Only Address Block (100::/64)
+# How to Understand the Discard-Only Address Block (100::/64) - 100
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ RFC 6666 allocates `100::/64` as the IPv6 "Discard-Only" address block. Packets 
 
 ```bash
 # Announce 100::/64 routes to trigger discard at each router
+
 # Routers with this route silently drop matching traffic
 
 # Linux: add a black-hole route pointing to 100::/64
@@ -88,14 +89,14 @@ ip6tables -A OUTPUT -d 100::/64 -j LOG --log-prefix "DISCARD-ONLY: "
 ip6tables -A OUTPUT -d 100::/64 -j DROP
 ```
 
-## NGINX — Reject Traffic from Discard-Only Block
+## NGINX - Reject Traffic from Discard-Only Block
 
 ```nginx
-# nginx.conf — deny access from discard-only block
+# nginx.conf - deny access from discard-only block
 # (Defensive measure in case of routing misconfigurations)
 geo $ipv6_geo {
     default 1;
-    100::/64 0;  # Discard-only block — deny
+    100::/64 0;  # Discard-only block - deny
 }
 
 server {

@@ -67,6 +67,7 @@ Configure suppression via JVM arguments in your application server startup scrip
 
 ```bash
 # Suppress a single instrumentation
+
 -Dotel.instrumentation.jdbc.enabled=false
 
 # Suppress multiple instrumentations

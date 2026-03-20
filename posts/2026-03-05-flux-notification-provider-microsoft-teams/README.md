@@ -35,6 +35,7 @@ Store the Microsoft Teams webhook URL in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the Microsoft Teams webhook URL
+
 kubectl create secret generic msteams-webhook-url \
   --namespace=flux-system \
   --from-literal=address=https://outlook.office.com/webhook/XXXXXXXX/IncomingWebhook/YYYYYYYY/ZZZZZZZZ

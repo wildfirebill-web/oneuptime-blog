@@ -26,6 +26,7 @@ Here is how to create a forecast-based alert for disk usage:
 
 ```bash
 # Alert when disk usage is predicted to exceed 90% within the next 24 hours
+
 gcloud alpha monitoring policies create \
   --display-name="Capacity Warning: Disk Space Running Low" \
   --condition-display-name="Disk predicted to be >90% within 24h" \

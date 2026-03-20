@@ -30,6 +30,7 @@ Each entry includes:
 
 ```bash
 # View real-time authentication events
+
 sudo tail -f /var/log/auth.log
 
 # View recent auth events

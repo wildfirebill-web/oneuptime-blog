@@ -30,6 +30,7 @@ The first step is deploying a container registry inside your air-gapped network:
 
 ```bash
 # On a machine with internet access, pull the registry image
+
 docker pull registry:2
 docker save registry:2 -o registry-image.tar
 

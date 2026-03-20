@@ -163,6 +163,7 @@ class MyHandler(BaseHTTPRequestHandler):
         self.wfile.write(b'Hello World')
 
 # Global flag for shutdown
+
 shutdown_flag = False
 
 def shutdown_handler(signum, frame):

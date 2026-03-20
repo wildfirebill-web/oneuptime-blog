@@ -37,6 +37,7 @@ If you do not have one yet, here is how to create a private cluster:
 
 ```bash
 # Create a private GKE cluster
+
 gcloud container clusters create private-cluster \
   --zone=us-central1-a \
   --network=your-vpc \

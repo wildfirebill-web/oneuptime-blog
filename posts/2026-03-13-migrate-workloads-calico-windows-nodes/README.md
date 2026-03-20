@@ -32,6 +32,7 @@ kubectl get deployments -A -o yaml | grep -A5 "nodeSelector.*windows" > windows-
 
 ```bash
 # Scale down Windows-scheduled deployments
+
 kubectl scale deployment <windows-deployment> --replicas=0 -n <namespace>
 ```
 

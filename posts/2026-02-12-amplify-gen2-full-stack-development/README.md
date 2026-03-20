@@ -34,6 +34,7 @@ Start a new Gen 2 project or migrate an existing one:
 
 ```bash
 # Create a new Next.js app with Amplify Gen 2
+
 npm create amplify@latest
 
 # Or add Amplify to an existing project

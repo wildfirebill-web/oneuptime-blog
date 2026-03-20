@@ -56,6 +56,7 @@ variable "environment" {
 }
 
 # ExpressRoute circuit parameters
+
 variable "service_provider_name" {
   type        = string
   description = "The name of the ExpressRoute connectivity provider"
@@ -115,7 +116,7 @@ locals {
 }
 ```
 
-## Resource Group and ExpressRoute Circuit
+Resource Group and ExpressRoute Circuit
 
 The circuit is the first resource to create. After creation, you share the service key with your connectivity provider so they can provision the physical connection on their side.
 

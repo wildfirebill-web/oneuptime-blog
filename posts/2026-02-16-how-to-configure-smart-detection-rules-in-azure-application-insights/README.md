@@ -99,6 +99,7 @@ You can also use the Azure CLI to manage Smart Detection settings.
 
 ```bash
 # List all Smart Detection configurations for an Application Insights resource
+
 az monitor app-insights component proactive-detection show \
   --app my-app-insights \
   --resource-group rg-monitoring

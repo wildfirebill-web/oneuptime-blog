@@ -135,6 +135,7 @@ You can also configure SSO via the API:
 
 ```bash
 # Configure SAML SSO settings
+
 curl \
   --header "Authorization: Bearer $TFC_TOKEN" \
   --header "Content-Type: application/vnd.api+json" \

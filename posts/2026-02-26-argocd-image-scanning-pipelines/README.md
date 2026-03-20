@@ -34,6 +34,7 @@ If you use ArgoCD Image Updater to automatically update image tags, add a scanni
 
 ```yaml
 # argocd-image-updater annotations on your Application
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

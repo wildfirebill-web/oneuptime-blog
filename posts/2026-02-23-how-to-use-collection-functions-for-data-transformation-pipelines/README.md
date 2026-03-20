@@ -16,6 +16,7 @@ A data transformation pipeline in Terraform is a series of locals that progressi
 
 ```hcl
 # Raw input
+
 variable "raw_data" { ... }
 
 locals {

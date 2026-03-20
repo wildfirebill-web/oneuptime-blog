@@ -37,6 +37,7 @@ Private Google Access is enabled at the subnet level. You can enable it when cre
 
 ```bash
 # Create a new subnet with Private Google Access enabled
+
 gcloud compute networks subnets create private-subnet \
   --network=production-vpc \
   --region=us-central1 \

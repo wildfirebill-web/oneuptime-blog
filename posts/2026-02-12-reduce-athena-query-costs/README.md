@@ -170,6 +170,7 @@ Prevent runaway queries with workgroup-level scan limits:
 
 ```bash
 # Create a workgroup with a 10 GB per-query scan limit
+
 aws athena create-work-group \
   --name "production-queries" \
   --configuration '{

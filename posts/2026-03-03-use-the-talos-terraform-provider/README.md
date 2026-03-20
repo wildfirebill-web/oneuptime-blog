@@ -18,6 +18,7 @@ The Talos Terraform provider is published in the Terraform Registry. Add it to y
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

@@ -18,6 +18,7 @@ Netplan configuration files live in `/etc/netplan/`. The files are processed in 
 
 ```bash
 # See what Netplan files exist
+
 ls -la /etc/netplan/
 
 # Common defaults:

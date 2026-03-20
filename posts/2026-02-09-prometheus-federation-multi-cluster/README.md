@@ -77,6 +77,7 @@ Verify the endpoint is accessible:
 
 ```bash
 # Port-forward to local Prometheus
+
 kubectl port-forward -n monitoring svc/prometheus-operated 9090:9090
 
 # Test federation endpoint

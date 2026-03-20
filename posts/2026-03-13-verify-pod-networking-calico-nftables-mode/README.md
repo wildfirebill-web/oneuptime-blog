@@ -32,6 +32,7 @@ Should show `iptablesBackend: nft`.
 
 ```bash
 # SSH into a worker node
+
 nft list tables
 ```
 

@@ -75,6 +75,7 @@ Constraint Templates define the policy logic. Deploy them with ArgoCD:
 
 ```yaml
 # Require resource limits on all containers
+
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:

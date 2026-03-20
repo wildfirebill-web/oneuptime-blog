@@ -75,7 +75,7 @@ resource "azurerm_search_service" "high_capacity" {
   replica_count   = 3   # 3 replicas for read scaling
   partition_count = 3   # 3 partitions = 450 GB storage
 
-  hosting_mode = "default"  # or "highDensity" for standard3 — more indexes per partition
+  hosting_mode = "default"  # or "highDensity" for standard3 - more indexes per partition
 }
 ```
 
@@ -101,6 +101,7 @@ resource "azurerm_private_endpoint" "search" {
 
 ```hcl
 # Assign search contributor role to application managed identity
+
 resource "azurerm_role_assignment" "search_contributor" {
   scope                = azurerm_search_service.main.id
   role_definition_name = "Search Service Contributor"

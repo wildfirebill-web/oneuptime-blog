@@ -34,6 +34,7 @@ Define your AAA infrastructure in group variables.
 
 ```yaml
 # group_vars/all_network/aaa.yml - AAA configuration baseline
+
 ---
 aaa_config:
   # TACACS+ servers (primary auth/authz)

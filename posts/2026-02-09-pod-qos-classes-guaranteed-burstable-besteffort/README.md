@@ -309,6 +309,7 @@ Example eviction scenario:
 
 ```yaml
 # This pod will be evicted first (BestEffort)
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -461,7 +462,7 @@ Fix: Specify resources for all containers:
         cpu: "100m"
 ```
 
-## Resource Limit Ranges and QoS
+Resource Limit Ranges and QoS
 
 LimitRanges can affect QoS by automatically adding requests and limits:
 

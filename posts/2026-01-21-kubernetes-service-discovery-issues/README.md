@@ -30,6 +30,7 @@ When a pod accesses `my-service`, it:
 
 ```bash
 # Create debug pod
+
 kubectl run debug --image=busybox:1.36 --restart=Never -- sleep 3600
 
 # Test DNS resolution

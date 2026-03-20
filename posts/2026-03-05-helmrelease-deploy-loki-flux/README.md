@@ -23,6 +23,7 @@ Loki is published through the Grafana Helm chart repository.
 
 ```yaml
 # helmrepository-grafana.yaml - Grafana Helm chart repository (shared with Grafana charts)
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

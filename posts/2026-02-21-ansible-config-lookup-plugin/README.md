@@ -22,6 +22,7 @@ This playbook displays several key Ansible configuration values:
 
 ```yaml
 # playbook.yml - Query Ansible configuration settings
+
 ---
 - name: Display Ansible configuration
   hosts: localhost

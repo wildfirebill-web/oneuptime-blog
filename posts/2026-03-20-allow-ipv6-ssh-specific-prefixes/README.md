@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, SSH, ip6tables, Access Control, Security
+Tags: IPv6, SSH, Ip6tables, Access Control, Security
 
 Description: Learn how to restrict SSH access on IPv6 to specific prefixes using ip6tables, nftables, and sshd AllowFrom configuration, preventing unauthorized access while maintaining management access.
 
@@ -16,6 +16,7 @@ Restricting SSH access to specific IPv6 prefixes dramatically reduces the attack
 # Method 1: Allow SSH from specific prefix, drop everything else
 
 # Allow SSH from management network
+
 ip6tables -A INPUT -p tcp --dport 22 -s fd00:mgmt::/48 -j ACCEPT
 
 # Allow SSH from specific admin IPv6 addresses
@@ -75,7 +76,7 @@ table ip6 ssh-access {
 
 ## Layer 3: sshd AllowFrom (Application Level)
 
-Defense in depth — restrict at the application level too:
+Defense in depth - restrict at the application level too:
 
 ```bash
 # /etc/ssh/sshd_config
@@ -168,4 +169,4 @@ journalctl -k | grep "SSH-DENIED"
 
 ## Summary
 
-Restrict IPv6 SSH access using multiple layers: ip6tables rules that only accept TCP 22 from management prefixes (`-s fd00:mgmt::/48`), nftables named sets for maintainable allowlists, and sshd `AllowUsers` with address restrictions for defense-in-depth. Always log blocked SSH attempts (`-m limit --limit 1/min -j LOG --log-prefix "SSH-BLOCKED: "`) for monitoring. Use ULA prefixes (`fd00::/8`) for management networks — these addresses can never appear in internet routing, providing an inherent security boundary. Add explicit DROP rules for SSH from everywhere else, placed AFTER the allow rules.
+Restrict IPv6 SSH access using multiple layers: ip6tables rules that only accept TCP 22 from management prefixes (`-s fd00:mgmt::/48`), nftables named sets for maintainable allowlists, and sshd `AllowUsers` with address restrictions for defense-in-depth. Always log blocked SSH attempts (`-m limit --limit 1/min -j LOG --log-prefix "SSH-BLOCKED: "`) for monitoring. Use ULA prefixes (`fd00::/8`) for management networks - these addresses can never appear in internet routing, providing an inherent security boundary. Add explicit DROP rules for SSH from everywhere else, placed AFTER the allow rules.

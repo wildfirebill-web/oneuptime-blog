@@ -1,8 +1,8 @@
-# How to Use Terraform Data Sources to Read Portainer Resources
+# How to Use Terraform Data Sources to Read Portainer Resources (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Terraform, Data Sources, Infrastructure as Code, DevOps
+Tags: Portainer, Terraform, Data Source, Infrastructure as Code, DevOps
 
 Description: Learn how to use Terraform data sources to read existing Portainer resources and reference them without managing their lifecycle.
 
@@ -18,6 +18,7 @@ Data sources let you read existing resources without managing (creating/deleting
 
 ```hcl
 # Read an existing Portainer environment by name
+
 data "portainer_environment" "production" {
   name = "production"
 }

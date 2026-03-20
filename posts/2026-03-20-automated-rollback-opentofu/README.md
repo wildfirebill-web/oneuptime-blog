@@ -16,6 +16,7 @@ The simplest rollback strategy uses version-controlled infrastructure configurat
 
 ```bash
 # Rollback by reverting the Git commit and re-applying
+
 git revert HEAD
 git push origin main
 # CI/CD pipeline runs tofu apply on the reverted config automatically
@@ -197,8 +198,8 @@ jobs:
 
 ## Best Practices
 
-- Use ECS circuit breaker for application-layer rollbacks — it's automatic and doesn't require CI/CD pipeline involvement.
+- Use ECS circuit breaker for application-layer rollbacks - it's automatic and doesn't require CI/CD pipeline involvement.
 - Keep the last 3-5 infrastructure state snapshots to enable point-in-time recovery.
-- Define rollback SLOs — for production incidents, rollback should complete within 5 minutes.
-- Test rollback procedures regularly — an untested rollback procedure will fail at the worst possible time.
+- Define rollback SLOs - for production incidents, rollback should complete within 5 minutes.
+- Test rollback procedures regularly - an untested rollback procedure will fail at the worst possible time.
 - Document which resources can be rolled back automatically vs which require manual intervention.

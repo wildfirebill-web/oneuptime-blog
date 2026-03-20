@@ -266,6 +266,7 @@ Check sync health and status:
 
 ```bash
 # View sync status
+
 kubectl get config config -n gatekeeper-system -o yaml
 
 # Check synced resource counts

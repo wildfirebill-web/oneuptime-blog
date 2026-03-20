@@ -50,6 +50,7 @@ For development and testing:
 
 ```bash
 # Start a Java application with JMX enabled on port 9999
+
 # Authentication disabled for local development only
 java \
   -Dcom.sun.management.jmxremote \

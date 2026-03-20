@@ -54,6 +54,7 @@ The following commands install the Pulumi CLI on different operating systems:
 
 ```bash
 # macOS using Homebrew
+
 brew install pulumi/tap/pulumi
 
 # Windows using Chocolatey
@@ -1221,7 +1222,7 @@ pulumi cancel
 pulumi stack export | pulumi stack import
 ```
 
-### Resource Drift
+Resource Drift
 
 Detect and fix configuration drift:
 

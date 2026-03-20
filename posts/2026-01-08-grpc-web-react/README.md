@@ -54,6 +54,7 @@ graph LR
 
 ```bash
 # Create React app with TypeScript
+
 npx create-react-app grpc-web-react --template typescript
 cd grpc-web-react
 

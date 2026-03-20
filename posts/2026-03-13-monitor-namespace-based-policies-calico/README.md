@@ -24,6 +24,7 @@ Calico's Prometheus metrics combined with kube-state-metrics namespace label dat
 
 ```promql
 # Count namespaces with required labels
+
 count(kube_namespace_labels{label_environment!=""})
 
 # Namespaces missing environment label

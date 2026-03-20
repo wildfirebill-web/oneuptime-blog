@@ -18,6 +18,7 @@ The most common approach combines `docker ps` with `docker stop`.
 
 ```bash
 # Stop all running containers
+
 docker stop $(docker ps -q)
 ```
 

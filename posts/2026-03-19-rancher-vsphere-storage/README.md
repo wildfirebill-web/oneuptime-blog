@@ -259,6 +259,7 @@ spec:
 
 ```bash
 # Check CSI driver pods
+
 kubectl get pods -n vmware-system-csi
 
 # View CSI driver logs

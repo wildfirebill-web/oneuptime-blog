@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Tcpdump, Wireshark, Network Debugging, gRPC, OTLP, Packet Analysis, Troubleshooting
+Tags: OpenTelemetry, tcpdump, Wireshark, Network Debugging, gRPC, OTLP, Packet Analysis, Troubleshooting
 
 Description: A hands-on guide to using tcpdump and Wireshark to capture and analyze OpenTelemetry OTLP traffic for debugging export failures and network issues.
 
@@ -28,6 +28,7 @@ OTLP over gRPC uses port 4317 by default. Here is how to capture that traffic:
 
 ```bash
 # Capture all traffic on port 4317 (gRPC OTLP)
+
 # -i any: listen on all network interfaces
 # -w: write raw packets to a file for later analysis
 # -s 0: capture full packet contents, not just headers

@@ -16,6 +16,7 @@ Google provides pre-built packages for Debian-based systems:
 
 ```bash
 # Download the latest mod_pagespeed package
+
 # Check https://developers.google.com/speed/pagespeed/module/download for the latest version
 wget https://dl-ssl.google.com/dl/linux/direct/mod-pagespeed-stable_current_amd64.deb
 

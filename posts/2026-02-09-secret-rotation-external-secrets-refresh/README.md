@@ -50,6 +50,7 @@ Different secrets have different rotation needs:
 
 ```yaml
 # High-security secrets - frequent rotation
+
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:

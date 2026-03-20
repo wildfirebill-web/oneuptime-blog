@@ -66,6 +66,7 @@ The realm is created once and shared across all clusters. Start on your primary 
 
 ```bash
 # Create a new realm named 'production'
+
 # This will be the top-level container for all zones
 radosgw-admin realm create --rgw-realm=production --default
 

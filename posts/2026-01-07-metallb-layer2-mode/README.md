@@ -102,6 +102,7 @@ First, let's install MetalLB using the official manifests. The following command
 
 ```bash
 # Apply the MetalLB native manifest which includes:
+
 # - metallb-system namespace
 # - Controller deployment (handles IP address allocation)
 # - Speaker daemonset (announces IPs via ARP)

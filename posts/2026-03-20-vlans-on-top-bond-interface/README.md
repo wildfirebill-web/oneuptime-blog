@@ -20,6 +20,7 @@ Combining bonding and VLANs is one of the most common production Linux networkin
 
 ```bash
 # Load 8021q module
+
 modprobe 8021q
 
 # Ensure bond0 is up (with no IP for trunk mode)
@@ -59,7 +60,7 @@ network:
       parameters:
         mode: active-backup
         mii-monitor-interval: 100
-      dhcp4: false   # No IP on bond0 — it's a trunk
+      dhcp4: false   # No IP on bond0 - it's a trunk
 
   vlans:
     bond0.10:
@@ -123,11 +124,11 @@ ping -I bond0.10 10.10.0.254
 # Bring down the active slave
 ip link set eth0 down
 
-# Bond fails over to eth1 — all VLANs remain operational
+# Bond fails over to eth1 - all VLANs remain operational
 ping -I bond0.10 10.10.0.254 -c 5
 ping -I bond0.20 10.20.0.254 -c 5
 ```
 
 ## Conclusion
 
-VLANs on bond interfaces are configured identically to VLANs on physical interfaces — the bond acts as the parent device. VLAN subinterfaces inherit the bond's failover behavior: when the bond switches slaves, all VLAN traffic continues uninterrupted. Netplan and nmcli both support this configuration natively with their respective `vlans` and `bonds` sections.
+VLANs on bond interfaces are configured identically to VLANs on physical interfaces - the bond acts as the parent device. VLAN subinterfaces inherit the bond's failover behavior: when the bond switches slaves, all VLAN traffic continues uninterrupted. Netplan and nmcli both support this configuration natively with their respective `vlans` and `bonds` sections.

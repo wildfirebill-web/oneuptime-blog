@@ -18,6 +18,7 @@ The error log always reveals the specific cause:
 sudo tail -f /var/log/nginx/error.log
 
 # Common 502 messages and their meanings:
+
 # connect() failed (111: Connection refused) → backend not running on that port
 # connect() failed (110: Connection timed out) → backend unreachable/firewalled
 # upstream prematurely closed connection → backend crashed mid-response
@@ -58,8 +59,8 @@ Ensure backends listen on the correct interface:
 ```bash
 # On the backend server, verify it's not binding to loopback only
 ss -tlnp | grep 8080
-# BAD:  LISTEN 0 128 127.0.0.1:8080  — only accessible locally
-# GOOD: LISTEN 0 128 0.0.0.0:8080   — accessible on all interfaces
+# BAD:  LISTEN 0 128 127.0.0.1:8080  - only accessible locally
+# GOOD: LISTEN 0 128 0.0.0.0:8080   - accessible on all interfaces
 ```
 
 ## Step 4: Check Firewall Rules

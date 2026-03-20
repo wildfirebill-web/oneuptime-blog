@@ -1,4 +1,4 @@
-# How to Troubleshoot Longhorn Replica Rebuilding
+# How to Debug Longhorn Replica Rebuilding Issues
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -15,7 +15,8 @@ When a Longhorn replica fails or a new replica is added, Longhorn starts a rebui
 ## Step 1: Identify Replica Rebuild Status
 
 ```bash
-# Check volume robustness — "degraded" means a replica is missing or rebuilding
+# Check volume robustness - "degraded" means a replica is missing or rebuilding
+
 kubectl get lhvolume -n longhorn-system \
   -o custom-columns='NAME:.metadata.name,STATE:.status.state,ROBUSTNESS:.status.robustness,REPLICAS:.status.currentNodeID'
 
@@ -114,7 +115,7 @@ kubectl get lhreplica -n longhorn-system | grep RB | wc -l
 
 ## Best Practices
 
-- Set **replica count to 3** for production volumes — this gives you one failure tolerance while a rebuild completes.
+- Set **replica count to 3** for production volumes - this gives you one failure tolerance while a rebuild completes.
 - Monitor rebuild duration and alert if a rebuild takes longer than 2 hours.
 - After adding new nodes, verify Longhorn can schedule replicas by running **Replica Auto Balance**.
 - Keep node disk usage below 80% to ensure Longhorn always has space to schedule new replicas.

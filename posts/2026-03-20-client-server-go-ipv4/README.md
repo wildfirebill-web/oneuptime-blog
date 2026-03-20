@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, TCP, IPv4, Client-Server, Networking, net
+Tags: Go, TCP, IPv4, Client-Server, Networking, Net
 
 Description: Learn how to implement the client-server pattern with IPv4 TCP in Go using the net package, with goroutine-per-connection concurrency, length-prefixed framing, and graceful shutdown.
 
@@ -153,4 +153,4 @@ func main() {
 
 ## Conclusion
 
-Go's `net.Listen("tcp4", addr)` creates a listener restricted to IPv4. Spawn a goroutine per connection — goroutines are lightweight (2KB initial stack) so thousands of concurrent connections are practical. Use `io.ReadFull` for framed reads to ensure complete messages even when data arrives in fragments. Cancel the listener from a `context.Context` signal handler (`ln.Close()`) to unblock `Accept()` and trigger a clean shutdown. For large payloads, use `bufio.Reader`/`bufio.Writer` to reduce system call overhead.
+Go's `net.Listen("tcp4", addr)` creates a listener restricted to IPv4. Spawn a goroutine per connection - goroutines are lightweight (2KB initial stack) so thousands of concurrent connections are practical. Use `io.ReadFull` for framed reads to ensure complete messages even when data arrives in fragments. Cancel the listener from a `context.Context` signal handler (`ln.Close()`) to unblock `Accept()` and trigger a clean shutdown. For large payloads, use `bufio.Reader`/`bufio.Writer` to reduce system call overhead.

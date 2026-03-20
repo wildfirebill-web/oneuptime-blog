@@ -28,6 +28,7 @@ This guide covers the diagnostic tools and methodology for identifying exactly w
 
 ```bash
 # Find the application's CPU affinity
+
 APP_PID=$(kubectl exec my-app -- cat /proc/1/status | grep "^Pid:" | awk '{print $2}')
 
 # On the node, check CPU affinity

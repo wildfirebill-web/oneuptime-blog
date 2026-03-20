@@ -28,6 +28,7 @@ kubectl create namespace media-recommend   # recommendation engine
 kubectl create namespace media-billing     # subscription and billing
 
 # Only inject sidecars into API-oriented namespaces
+
 for ns in media-api media-auth media-recommend media-billing; do
   kubectl label namespace $ns istio-injection=enabled
 done

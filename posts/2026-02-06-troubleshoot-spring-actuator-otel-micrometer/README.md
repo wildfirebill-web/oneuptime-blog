@@ -14,6 +14,7 @@ You have Spring Boot Actuator configured:
 
 ```yaml
 # application.yml
+
 management:
   endpoints:
     web:

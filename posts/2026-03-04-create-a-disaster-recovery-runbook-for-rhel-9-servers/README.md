@@ -33,6 +33,7 @@ Production environments require systematic verification before, during, and afte
 
 ```bash
 # Quick system health check after recovery
+
 systemctl --failed
 journalctl -p err --since "1 hour ago"
 df -h

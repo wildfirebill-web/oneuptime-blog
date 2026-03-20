@@ -41,6 +41,7 @@ Linux stores user information in several critical files:
 
 ```bash
 # View the passwd file structure
+
 # Format: username:x:UID:GID:comment:home:shell
 cat /etc/passwd | head -5
 

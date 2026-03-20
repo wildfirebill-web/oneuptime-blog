@@ -10,9 +10,9 @@ Description: Understand why OpenTofu provisioners should be treated as a last re
 
 OpenTofu provisioners allow you to execute scripts or commands on local or remote machines as part of resource creation or destruction. They include:
 
-- `local-exec` — Runs a command on the machine running OpenTofu
-- `remote-exec` — Runs commands on a remote resource via SSH or WinRM
-- `file` — Copies files from the local machine to the remote resource
+- `local-exec` - Runs a command on the machine running OpenTofu
+- `remote-exec` - Runs commands on a remote resource via SSH or WinRM
+- `file` - Copies files from the local machine to the remote resource
 
 ## Why Provisioners Are a Last Resort
 
@@ -22,8 +22,9 @@ The OpenTofu documentation explicitly states that provisioners should be a "last
 
 ```hcl
 # Problem: Running this twice may fail or produce different results
+
 provisioner "remote-exec" {
-  inline = ["mkdir /app"]   # Fails on second run — directory already exists
+  inline = ["mkdir /app"]   # Fails on second run - directory already exists
 }
 ```
 
@@ -33,7 +34,7 @@ Provisioners do not appear in `tofu plan` output. You cannot preview what will r
 
 ### 3. They Create Hidden State
 
-Resources are not re-provisioned when the script changes — only when the resource is destroyed and recreated. This leads to configuration drift.
+Resources are not re-provisioned when the script changes - only when the resource is destroyed and recreated. This leads to configuration drift.
 
 ### 4. They Fail Silently or Disruptively
 
@@ -64,7 +65,7 @@ resource "aws_instance" "web" {
 Build AMIs with software pre-installed:
 
 ```hcl
-# Use a Packer-built AMI — no provisioner needed
+# Use a Packer-built AMI - no provisioner needed
 resource "aws_instance" "web" {
   ami           = data.aws_ami.app.id   # Pre-baked with nginx
   instance_type = "t3.micro"
@@ -105,7 +106,7 @@ Despite the warnings, some scenarios genuinely require provisioners:
 1. **Initial bootstrapping** when no API exists for the task
 2. **Legacy systems** that cannot use cloud-init or Packer
 3. **Third-party integrations** with no provider support
-4. **Destroy-time cleanup** — deregistering from external systems
+4. **Destroy-time cleanup** - deregistering from external systems
 
 ## Responsible Provisioner Usage
 
@@ -149,4 +150,4 @@ resource "aws_instance" "legacy" {
 
 ## Conclusion
 
-Provisioners are a powerful escape hatch in OpenTofu, but they come with significant tradeoffs: no plan visibility, broken idempotency, and fragile execution. Always exhaust alternatives — user data, Packer, provider resources, and configuration management tools — before reaching for a provisioner. When you do use one, write defensive scripts with `set -e`, explicit error handling, and verification steps.
+Provisioners are a powerful escape hatch in OpenTofu, but they come with significant tradeoffs: no plan visibility, broken idempotency, and fragile execution. Always exhaust alternatives - user data, Packer, provider resources, and configuration management tools - before reaching for a provisioner. When you do use one, write defensive scripts with `set -e`, explicit error handling, and verification steps.

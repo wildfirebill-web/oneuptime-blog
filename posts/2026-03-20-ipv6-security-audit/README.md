@@ -8,13 +8,13 @@ Description: Learn how to conduct a structured audit of your IPv6 security postu
 
 ## Overview
 
-An IPv6 security audit systematically validates that all IPv6-specific security controls are in place and functioning. Many organizations discover during audits that IPv6 is active on their networks but has no security policy — a common and dangerous gap that exists even in well-managed environments.
+An IPv6 security audit systematically validates that all IPv6-specific security controls are in place and functioning. Many organizations discover during audits that IPv6 is active on their networks but has no security policy - a common and dangerous gap that exists even in well-managed environments.
 
 ## Audit Scope and Preparation
 
 Before beginning the audit, define scope:
 
-```
+```text
 In scope:
 - All routers and switches with IPv6 enabled
 - All servers with AAAA DNS records or global IPv6 addresses
@@ -30,7 +30,8 @@ Out of scope (document separately):
 ## Step 1: Discover Active IPv6 Devices
 
 ```bash
-# Passive discovery — capture NDP traffic
+# Passive discovery - capture NDP traffic
+
 tcpdump -i eth0 'icmp6 and (ip6[40] == 135 or ip6[40] == 136)' -l -n \
   | awk '{print $3, $5}' | sort -u | tee /tmp/ipv6-hosts.txt
 
@@ -74,7 +75,7 @@ show run | include raguard
 show run interface GigabitEthernet0/1 | include raguard
 
 # Test RA Guard (from test host):
-# If you can send an RA and it's received by another host — RA Guard is NOT working
+# If you can send an RA and it's received by another host - RA Guard is NOT working
 ```
 
 ## Step 4: Check for Rogue IPv6 Routers
@@ -93,7 +94,7 @@ radvdump 2>/dev/null | head -50
 ## Step 5: Validate ICMPv6 Policy
 
 ```bash
-# Test Packet Too Big (must not be blocked — breaks PMTUD)
+# Test Packet Too Big (must not be blocked - breaks PMTUD)
 # From external host, send a large packet and check if PTB is received
 
 # Test essential ICMPv6 types
@@ -130,12 +131,12 @@ grep "IPv6" /var/log/syslog | wc -l
 
 # Verify NetFlow includes IPv6
 # On router:
-show ip flow export   # Cisco — should show IPv6 flows
+show ip flow export   # Cisco - should show IPv6 flows
 ```
 
 ## Audit Checklist
 
-```
+```text
 Network Discovery:
 [ ] All IPv6 devices inventoried
 [ ] No unexpected hosts with global addresses

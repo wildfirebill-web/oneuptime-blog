@@ -14,6 +14,7 @@ Kubernetes Vertical Pod Autoscaler automatically adjusts CPU and memory requests
 
 ```hcl
 # main.tf - Deploy VPA using Helm (requires VPA admission webhook)
+
 resource "helm_release" "vpa" {
   name       = "vpa"
   repository = "https://charts.fairwinds.com/stable"
@@ -153,4 +154,4 @@ resource "kubernetes_manifest" "full_vpa" {
 
 ## Summary
 
-Kubernetes VPA with OpenTofu automates resource request optimization. Start in "Off" mode to collect recommendations without disrupting workloads, then gradually move to "Initial" (apply at pod creation only) and "Auto" (actively right-size running pods). VPA and HPA can work together—use VPA for right-sizing and HPA for scaling.
+Kubernetes VPA with OpenTofu automates resource request optimization. Start in "Off" mode to collect recommendations without disrupting workloads, then gradually move to "Initial" (apply at pod creation only) and "Auto" (actively right-size running pods). VPA and HPA can work together-use VPA for right-sizing and HPA for scaling.

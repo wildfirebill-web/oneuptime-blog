@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, PHP, Laravel, Containerization, NGINX, DevOps, Web Development
+Tags: Docker, PHP, Laravel, Containerization, Nginx, DevOps, Web Development
 
 Description: Build and deploy Laravel applications with Docker using multi-stage builds, queue workers, schedulers, and production optimizations.
 
@@ -38,6 +38,7 @@ This multi-stage Dockerfile installs Composer dependencies, builds front-end ass
 # Dockerfile - Production Laravel application
 
 # === Stage 1: Composer dependencies ===
+
 FROM composer:2 AS composer
 
 WORKDIR /app

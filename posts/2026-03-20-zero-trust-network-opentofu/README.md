@@ -24,12 +24,13 @@ graph TD
 ## Network Micro-Segmentation
 
 ```hcl
-# micro_segmentation.tf — one security group per service, not per tier
+# micro_segmentation.tf - one security group per service, not per tier
 
-# API service — only accepts from load balancer and other internal services
+# API service - only accepts from load balancer and other internal services
+
 resource "aws_security_group" "api" {
   name        = "${var.prefix}-api"
-  description = "API service — explicit allowlist only"
+  description = "API service - explicit allowlist only"
   vpc_id      = var.vpc_id
 }
 
@@ -43,10 +44,10 @@ resource "aws_security_group_rule" "api_from_alb" {
   description              = "From load balancer only"
 }
 
-# Database — only accepts from API service
+# Database - only accepts from API service
 resource "aws_security_group" "database" {
   name        = "${var.prefix}-database"
-  description = "Database — API service only"
+  description = "Database - API service only"
   vpc_id      = var.vpc_id
 }
 
@@ -83,7 +84,7 @@ resource "aws_security_group_rule" "api_egress_https" {
 ## Kubernetes Network Policies
 
 ```hcl
-# network_policies.tf — zero trust at the pod level
+# network_policies.tf - zero trust at the pod level
 resource "kubernetes_network_policy" "api" {
   metadata {
     name      = "api-network-policy"
@@ -164,7 +165,7 @@ resource "kubernetes_network_policy" "api" {
 ## IAM Identity-Based Access
 
 ```hcl
-# identity_access.tf — IAM conditions enforce identity-based access
+# identity_access.tf - IAM conditions enforce identity-based access
 
 resource "aws_iam_policy" "zero_trust_s3" {
   name = "${var.prefix}-zero-trust-s3"
@@ -194,7 +195,7 @@ resource "aws_iam_policy" "zero_trust_s3" {
 ## mTLS Enforcement with Istio
 
 ```hcl
-# mtls.tf — enforce mutual TLS for all service communication
+# mtls.tf - enforce mutual TLS for all service communication
 resource "kubernetes_manifest" "strict_mtls" {
   manifest = {
     apiVersion = "security.istio.io/v1beta1"
@@ -265,8 +266,8 @@ resource "aws_cloudtrail" "zero_trust" {
 
 ## Best Practices
 
-- Start with `default-deny` network policies and explicitly allowlist required connections — this is the foundational principle of zero trust networking.
-- Use service identities (SPIFFE/SPIRE, IRSA, Workload Identity) rather than network location for access control — a pod's IP address is not a reliable identity, but its cryptographic identity is.
-- Enforce mTLS in STRICT mode for all service-to-service communication — PERMISSIVE mode allows unencrypted connections and should only be used during migration.
-- Log all access decisions, including allowed requests — zero trust requires continuous verification and anomaly detection, which depends on comprehensive audit logs.
-- Implement defense in depth — zero trust is not a single control but a combination of network micro-segmentation, identity verification, encryption, and continuous monitoring working together.
+- Start with `default-deny` network policies and explicitly allowlist required connections - this is the foundational principle of zero trust networking.
+- Use service identities (SPIFFE/SPIRE, IRSA, Workload Identity) rather than network location for access control - a pod's IP address is not a reliable identity, but its cryptographic identity is.
+- Enforce mTLS in STRICT mode for all service-to-service communication - PERMISSIVE mode allows unencrypted connections and should only be used during migration.
+- Log all access decisions, including allowed requests - zero trust requires continuous verification and anomaly detection, which depends on comprehensive audit logs.
+- Implement defense in depth - zero trust is not a single control but a combination of network micro-segmentation, identity verification, encryption, and continuous monitoring working together.

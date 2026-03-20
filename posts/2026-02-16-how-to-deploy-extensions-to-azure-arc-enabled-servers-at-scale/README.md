@@ -29,6 +29,7 @@ You can list all available extensions using the CLI:
 
 ```bash
 # List all available extension types for Arc servers
+
 az connectedmachine extension list \
     --machine-name "my-arc-server" \
     --resource-group "arc-servers-rg" \

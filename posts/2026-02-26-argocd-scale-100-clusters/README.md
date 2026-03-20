@@ -61,6 +61,7 @@ The meta instance is a standard ArgoCD installation that deploys and manages the
 
 ```yaml
 # Application that manages a regional ArgoCD instance
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -18,6 +18,7 @@ This is the most frequent vault error. It means Ansible tried to decrypt somethi
 
 ```bash
 # The error looks like this:
+
 ERROR! Decryption failed (no vault secrets were found that could decrypt)
 ```
 

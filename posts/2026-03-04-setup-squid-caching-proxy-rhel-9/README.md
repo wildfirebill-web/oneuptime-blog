@@ -26,6 +26,7 @@ Install the squid package from the default RHEL repositories:
 
 ```bash
 # Install squid
+
 sudo dnf install -y squid
 ```
 

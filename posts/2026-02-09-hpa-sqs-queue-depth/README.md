@@ -318,6 +318,7 @@ Verify your setup by sending test messages to the queue and watching the HPA:
 
 ```bash
 # Send test messages
+
 aws sqs send-message-batch \
   --queue-url https://sqs.us-east-1.amazonaws.com/123456789012/order-queue \
   --entries file://messages.json

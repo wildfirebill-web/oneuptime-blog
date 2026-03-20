@@ -1,4 +1,4 @@
-# How to Set Up a Microservices Gateway with Portainer and Traefik
+# How to Set Up a Microservices Gateway with Portainer and Traefik (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ An API gateway is the single entry point for all client requests to a microservi
 
 ```yaml
 # docker-compose.yml - Traefik API Gateway
+
 version: "3.8"
 
 networks:
@@ -256,4 +257,4 @@ curl http://localhost:8080/api/http/services | jq '.[].serverStatus'
 
 ## Conclusion
 
-Traefik is an excellent API gateway for microservice architectures managed with Portainer. Its Docker-native service discovery means you only need to add labels to new services — no gateway reconfiguration required. JWT authentication via ForwardAuth, rate limiting, CORS, and security headers are all configured as reusable middlewares. Portainer makes it easy to update the gateway configuration, view routing logs, and monitor service health across your entire microservice fleet.
+Traefik is an excellent API gateway for microservice architectures managed with Portainer. Its Docker-native service discovery means you only need to add labels to new services - no gateway reconfiguration required. JWT authentication via ForwardAuth, rate limiting, CORS, and security headers are all configured as reusable middlewares. Portainer makes it easy to update the gateway configuration, view routing logs, and monitor service health across your entire microservice fleet.

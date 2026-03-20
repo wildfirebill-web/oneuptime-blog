@@ -146,6 +146,7 @@ Track throughput trends to predict when you will need hardware upgrades:
 
 ```bash
 # Query Prometheus for 90-day trend
+
 curl -s "http://prometheus:9090/api/v1/query_range" \
   --data-urlencode "query=cilium_multi_stream_throughput_bps{streams='32'}" \
   --data-urlencode "start=$(date -d '90 days ago' +%s)" \

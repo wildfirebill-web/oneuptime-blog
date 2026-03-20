@@ -56,6 +56,7 @@ With connection reuse, you pay this cost once instead of per request.
 
 ```python
 # requests_session.py
+
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry

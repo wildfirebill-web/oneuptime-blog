@@ -47,6 +47,7 @@ flowchart TB
 
 ```hcl
 # Terraform example for GCP
+
 resource "google_compute_global_address" "default" {
   name = "global-ip"
 }

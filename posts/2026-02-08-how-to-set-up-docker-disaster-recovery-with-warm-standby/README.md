@@ -40,6 +40,7 @@ Start with a standard Docker Compose setup for your primary environment.
 
 ```yaml
 # docker-compose.primary.yml
+
 # Primary production environment with database, application, and cache
 version: "3.8"
 

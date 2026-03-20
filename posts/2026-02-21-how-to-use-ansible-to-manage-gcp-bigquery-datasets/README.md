@@ -44,6 +44,7 @@ gcloud services enable bigquery.googleapis.com --project=my-project-123
 
 ```yaml
 # create-dataset.yml - Create a BigQuery dataset
+
 ---
 - name: Create BigQuery Dataset
   hosts: localhost

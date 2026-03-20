@@ -1,10 +1,10 @@
-# How to Fix "IPv4 Not Connected" Error on Windows
+# How to Fix 'IPv4 Not Connected' Error on Windows
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Windows, Not Connected, Troubleshooting, Network
+Tags: IPv4, Windows, Not Connected, Troubleshooting, Networks
 
-Description: Learn how to fix the "IPv4 not connected" status in Windows Network and Sharing Center, covering TCP/IP stack resets, driver fixes, and DHCP troubleshooting.
+Description: Learn how to fix the 'IPv4 not connected' status in Windows Network and Sharing Center, covering TCP/IP stack resets, driver fixes, and DHCP troubleshooting.
 
 ## Step 1: Run the Network Troubleshooter
 
@@ -30,6 +30,7 @@ shutdown /r /t 0
 
 ```powershell
 # Check if IPv4 is enabled on the adapter
+
 Get-NetAdapterBinding -Name "Ethernet" | Where-Object {$_.ComponentID -eq "ms_tcpip"}
 
 # Enable IPv4 if disabled

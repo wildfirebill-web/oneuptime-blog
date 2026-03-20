@@ -1,4 +1,4 @@
-# How to Manage Confluent Cloud Resources with OpenTofu
+# How to Manage Confluent Cloud Resources with OpenTofu - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

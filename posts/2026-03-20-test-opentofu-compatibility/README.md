@@ -4,18 +4,19 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Terraform, Compatibility Testing, Migration, Infrastructure as Code, Testing
 
-Description: Learn how to test that existing Terraform configurations are compatible with OpenTofu — using plan comparison, provider validation, and automated test suites to validate the migration before switching production.
+Description: Learn how to test that existing Terraform configurations are compatible with OpenTofu - using plan comparison, provider validation, and automated test suites to validate the migration before...
 
 ## Introduction
 
-Before migrating production infrastructure from Terraform to OpenTofu, validate compatibility in a lower environment. The key test is: `tofu plan` should produce the same plan as `terraform plan` — no unexpected creates, updates, or destroys.
+Before migrating production infrastructure from Terraform to OpenTofu, validate compatibility in a lower environment. The key test is: `tofu plan` should produce the same plan as `terraform plan` - no unexpected creates, updates, or destroys.
 
 ## Test 1: Plan Comparison
 
-The most important test — identical plans mean OpenTofu is compatible:
+The most important test - identical plans mean OpenTofu is compatible:
 
 ```bash
 # Step 1: Generate Terraform plan as JSON
+
 terraform init
 terraform plan -out=tf-plan.binary
 terraform show -json tf-plan.binary > terraform-plan.json
@@ -25,7 +26,7 @@ tofu init
 tofu plan -out=tofu-plan.binary
 tofu show -json tofu-plan.binary > opentofu-plan.json
 
-# Step 3: Compare resource_changes — should be identical
+# Step 3: Compare resource_changes - should be identical
 jq '.resource_changes | map({address, change: {actions: .change.actions}})' terraform-plan.json > tf-changes.json
 jq '.resource_changes | map({address, change: {actions: .change.actions}})' opentofu-plan.json > tofu-changes.json
 
@@ -175,4 +176,4 @@ echo "Write-only attributes supported: $?"
 
 ## Conclusion
 
-Test OpenTofu compatibility by comparing plan JSON output from both tools — identical plans mean a safe migration. Run `tofu plan -detailed-exitcode` against existing Terraform state and verify exit code 0 (no changes). Automate this with a compatibility test script across all environments and modules. Use Terratest with `TerraformBinary: "tofu"` to validate module behavior. Only migrate to production after all compatibility tests pass in development and staging.
+Test OpenTofu compatibility by comparing plan JSON output from both tools - identical plans mean a safe migration. Run `tofu plan -detailed-exitcode` against existing Terraform state and verify exit code 0 (no changes). Automate this with a compatibility test script across all environments and modules. Use Terratest with `TerraformBinary: "tofu"` to validate module behavior. Only migrate to production after all compatibility tests pass in development and staging.

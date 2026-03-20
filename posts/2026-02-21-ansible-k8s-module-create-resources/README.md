@@ -32,6 +32,7 @@ The most direct approach puts the Kubernetes YAML right in the task:
 
 ```yaml
 # create_inline.yml - Create resources with inline definitions
+
 ---
 - name: Create Kubernetes Resources Inline
   hosts: localhost

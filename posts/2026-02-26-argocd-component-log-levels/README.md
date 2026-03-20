@@ -29,6 +29,7 @@ The simplest way to set log levels is through command-line arguments on each com
 
 ```yaml
 # Set debug log level on the ArgoCD API server
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

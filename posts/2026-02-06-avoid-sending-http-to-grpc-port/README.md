@@ -78,6 +78,7 @@ Make sure both protocols are configured if your services use different exporters
 
 ```bash
 # Test if port 4318 (HTTP) is responding
+
 curl -X POST http://localhost:4318/v1/traces \
   -H "Content-Type: application/json" \
   -d '{"resourceSpans":[]}'

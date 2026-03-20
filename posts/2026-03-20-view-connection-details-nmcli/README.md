@@ -14,6 +14,7 @@ Description: Use nmcli connection show to inspect all settings, IP addresses, ro
 
 ```bash
 # Short summary of all connections
+
 nmcli connection show
 
 # Show only active connections

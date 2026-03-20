@@ -60,6 +60,7 @@ Here is the `application.properties` configuration:
 
 ```properties
 # Cloud SQL instance connection name in the format project:region:instance
+
 spring.cloud.gcp.sql.instance-connection-name=my-project:us-central1:my-instance
 
 # Database name

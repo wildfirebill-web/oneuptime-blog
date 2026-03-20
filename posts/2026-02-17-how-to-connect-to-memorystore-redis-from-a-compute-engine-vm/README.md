@@ -35,6 +35,7 @@ If you have not created a Redis instance yet, do it now. Make note of the networ
 
 ```bash
 # Create a Redis instance on the default network
+
 gcloud redis instances create app-cache \
   --size=1 \
   --region=us-central1 \

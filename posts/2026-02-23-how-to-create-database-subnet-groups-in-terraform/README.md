@@ -22,6 +22,7 @@ Before creating subnet groups, you need a VPC with subnets:
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

@@ -55,6 +55,7 @@ Create a service account in the tenant namespace:
 
 ```yaml
 # Service account for tenant reconciliation
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

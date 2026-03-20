@@ -38,6 +38,7 @@ Automate backups with a dedicated role:
 
 ```yaml
 # roles/backup/tasks/main.yml
+
 # Automated backup tasks for all managed services
 
 - name: Create backup directory

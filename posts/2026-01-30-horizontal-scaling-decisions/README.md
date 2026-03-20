@@ -75,6 +75,7 @@ graph LR
 
 ```yaml
 # HPA configuration for variable traffic
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

@@ -12,7 +12,7 @@ Fragmentation failures cause application-level hangs: TCP connections establish 
 
 ## How Path MTU Discovery (PMTUD) Works
 
-```
+```text
 Sender sends 1500-byte packet with DF bit set
   → Router with 1400-byte MTU drops packet
   → Router sends ICMP Type 3 Code 4 "Fragmentation Needed"
@@ -28,6 +28,7 @@ If ICMP is blocked by firewall:
 
 ```bash
 # Find the maximum MTU that passes without fragmentation
+
 ping -M do -s 1472 192.168.1.10   # 1472 + 28 (IP+ICMP headers) = 1500
 ping -M do -s 1400 192.168.1.10   # Try smaller sizes
 ping -M do -s 1200 192.168.1.10
@@ -103,7 +104,7 @@ netstat -s | grep -i "fragment\|reassemb"
 
 ## Key Takeaways
 
-- PMTUD failures cause TCP connections that establish but stall during data transfer — the classic ICMP black hole.
+- PMTUD failures cause TCP connections that establish but stall during data transfer - the classic ICMP black hole.
 - Allow ICMP Type 3 Code 4 ("fragmentation needed") through firewalls; blocking it breaks PMTUD.
 - TCP MSS clamping (`--clamp-mss-to-pmtu`) is preferable to lowering MTU as it only affects TCP.
 - Use `ping -M do -s 1472` to binary search for the effective path MTU between two hosts.

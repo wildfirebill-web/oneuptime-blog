@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, API Gateway, WebSocket, Real-time, Lambda, Infrastructure as Code
+Tags: OpenTofu, AWS, API Gateway, WebSocket, Real-Time, Lambda, Infrastructure as Code
 
 Description: Learn how to create an API Gateway WebSocket API with OpenTofu to enable real-time two-way communication between clients and Lambda functions for chat, notifications, and live updates.
 
 ## Introduction
 
-API Gateway WebSocket APIs maintain persistent connections between clients and your backend, enabling real-time bidirectional communication without polling. AWS manages connection lifecycle—your Lambda functions handle `$connect`, `$disconnect`, and custom message routing events. Connection IDs allow you to push messages to connected clients at any time.
+API Gateway WebSocket APIs maintain persistent connections between clients and your backend, enabling real-time bidirectional communication without polling. AWS manages connection lifecycle-your Lambda functions handle `$connect`, `$disconnect`, and custom message routing events. Connection IDs allow you to push messages to connected clients at any time.
 
 ## Prerequisites
 
@@ -58,6 +58,7 @@ resource "aws_apigatewayv2_api" "websocket" {
 
 ```hcl
 # IAM role for WebSocket Lambda functions
+
 resource "aws_iam_role" "websocket_lambda" {
   name = "${var.project_name}-websocket-lambda-role"
 

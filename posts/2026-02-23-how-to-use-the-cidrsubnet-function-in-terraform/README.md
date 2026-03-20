@@ -16,6 +16,7 @@ The `cidrsubnet` function calculates a subnet address within a given IP network 
 
 ```hcl
 # Split 10.0.0.0/16 into /24 subnets and pick the first one
+
 output "subnet" {
   value = cidrsubnet("10.0.0.0/16", 8, 0)
   # Result: "10.0.0.0/24"

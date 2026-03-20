@@ -24,6 +24,7 @@ Create a ConfigMap with Metricbeat configuration:
 
 ```yaml
 # metricbeat-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

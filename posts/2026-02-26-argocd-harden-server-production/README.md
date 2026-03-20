@@ -49,6 +49,7 @@ If you need to keep the admin account for emergency access, at minimum change th
 
 ```bash
 # Change admin password
+
 argocd account update-password \
   --current-password <old-password> \
   --new-password <new-strong-password>

@@ -21,6 +21,7 @@ Crossplane is a Kubernetes add-on that enables you to manage any infrastructure 
 
 ```bash
 # Add Crossplane Helm repository
+
 helm repo add crossplane-stable https://charts.crossplane.io/stable
 helm repo update
 

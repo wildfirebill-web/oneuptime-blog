@@ -22,6 +22,7 @@ cd blob-storage-demo
 npm init -y
 
 # Install dependencies
+
 npm install express multer @azure/storage-blob @azure/identity dotenv
 ```
 

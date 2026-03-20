@@ -22,6 +22,7 @@ Start by extracting common jobs into separate files within your repository.
 
 ```yaml
 # .gitlab-ci.yml
+
 include:
   - local: '/.gitlab/ci/build.yml'
   - local: '/.gitlab/ci/test.yml'

@@ -32,6 +32,7 @@ First, the standalone creation approach:
 
 ```bash
 # Create a 128 GB Premium SSD managed disk
+
 az disk create \
   --resource-group myResourceGroup \
   --name myDataDisk \

@@ -44,6 +44,7 @@ Use kubectl to create a ConfigMap from binary files:
 
 ```bash
 # Create ConfigMap from binary files
+
 kubectl create configmap binary-assets \
   --from-file=logo.png \
   --from-file=favicon.ico \

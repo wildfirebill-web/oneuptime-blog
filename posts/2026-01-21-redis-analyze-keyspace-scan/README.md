@@ -24,6 +24,7 @@ SCAN provides cursor-based iteration that:
 
 ```bash
 # NEVER do this in production
+
 KEYS *
 
 # Use SCAN instead

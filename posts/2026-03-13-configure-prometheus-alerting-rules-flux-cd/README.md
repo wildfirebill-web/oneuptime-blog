@@ -29,6 +29,7 @@ Define alerting rules using the Prometheus Operator's PrometheusRule CRD.
 
 ```yaml
 # infrastructure/monitoring/rules/api-alerts.yaml
+
 # PrometheusRule defining alerting rules for the API service
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule

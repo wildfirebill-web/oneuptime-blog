@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Operators, IPv6, Dual-Stack, controller-runtime
+Tags: Kubernetes, Operator, IPv6, Dual-Stack, Controller-runtime
 
 Description: Manage Kubernetes services with both IPv4 and IPv6 endpoints in custom operators using controller-runtime and the Endpoints API.
 
@@ -100,6 +100,7 @@ func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Resu
 
 ```bash
 # Create a KIND cluster with dual-stack support
+
 cat > kind-dual-stack.yaml << EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4

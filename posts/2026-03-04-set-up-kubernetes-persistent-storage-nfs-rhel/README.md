@@ -16,6 +16,7 @@ On a dedicated RHEL NFS server (or one of your existing servers):
 
 ```bash
 # Install NFS server packages
+
 sudo dnf install nfs-utils -y
 
 # Create the export directory

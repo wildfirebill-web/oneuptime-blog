@@ -40,6 +40,7 @@ Apply and verify:
 kubectl apply -f stripe-se.yaml
 
 # Test from a pod
+
 kubectl exec deploy/payment-service -c payment-service -- \
   curl -s -o /dev/null -w "%{http_code}" https://api.stripe.com
 ```

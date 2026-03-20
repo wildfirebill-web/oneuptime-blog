@@ -16,6 +16,7 @@ Start by creating a regular YAML variable file with your secrets:
 
 ```yaml
 # group_vars/production/secrets.yml (before encryption)
+
 db_password: "SuperSecretPass123!"
 api_key: "sk-abc123def456ghi789"
 tls_private_key: |

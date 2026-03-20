@@ -29,6 +29,7 @@ kubectl get nodes
 calicoctl version
 
 # Verify nftables state before upgrade
+
 nft list tables | grep calico
 ```
 

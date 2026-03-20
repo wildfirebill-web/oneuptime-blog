@@ -29,6 +29,7 @@ Before getting started, ensure you have:
 
 ```bash
 # Install on macOS
+
 brew install tilt-dev/tap/tilt
 
 # Install on Linux

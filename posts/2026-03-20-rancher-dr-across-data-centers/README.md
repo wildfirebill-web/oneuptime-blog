@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, disaster-recovery, multi-datacenter, kubernetes, high-availability
+Tags: Rancher, Disaster-recovery, Multi-Datacenter, Kubernetes, High-Availability
 
 Description: Step-by-step guide to configuring disaster recovery for Rancher across multiple data centers for geographic redundancy.
 
@@ -34,6 +34,7 @@ Install the Rancher Backup Operator on your primary Rancher:
 
 ```bash
 # Add the Rancher chart repository
+
 helm repo add rancher-charts https://charts.rancher.io
 helm repo update
 

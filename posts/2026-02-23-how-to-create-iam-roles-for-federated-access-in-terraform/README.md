@@ -37,6 +37,7 @@ SAML is the most common federation method for enterprise SSO to AWS.
 
 ```hcl
 # Create the SAML provider using metadata from your IdP
+
 resource "aws_iam_saml_provider" "corporate" {
   name                   = "CorporateIdP"
   saml_metadata_document = file("${path.module}/saml-metadata.xml")

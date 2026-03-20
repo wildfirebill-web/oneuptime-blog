@@ -18,6 +18,7 @@ When `podman pod stop` takes too long or a container is unresponsive, `podman po
 
 ```bash
 # Create a pod with containers
+
 podman pod create --name app-pod
 podman run -d --pod app-pod --name web docker.io/library/nginx:alpine
 podman run -d --pod app-pod --name worker docker.io/library/alpine \

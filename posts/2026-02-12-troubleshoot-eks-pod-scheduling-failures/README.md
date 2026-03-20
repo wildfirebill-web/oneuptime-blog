@@ -18,6 +18,7 @@ The single most useful command when a pod won't schedule:
 
 ```bash
 # Describe the stuck pod to see scheduling events
+
 kubectl describe pod my-app-abc123
 
 # Or check events directly, filtered to the pod

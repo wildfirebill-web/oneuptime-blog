@@ -29,6 +29,7 @@ A PriorityClass is a cluster-scoped resource that defines a priority value and o
 
 ```yaml
 # PriorityClass defines a mapping from a priority class name to the priority
+
 # integer value. The value can be any valid integer.
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass

@@ -1,4 +1,4 @@
-# Best Practices for User and Team Management in Portainer
+# Best Practices for User and Team Management in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Establish and enforce naming conventions across your organization:
 
 ```bash
 # Example naming convention
+
 # Environment: {env}-{region}-{type}
 # Stack: {team}-{app}-{env}
 # Volume: {stack}-{service}-{purpose}

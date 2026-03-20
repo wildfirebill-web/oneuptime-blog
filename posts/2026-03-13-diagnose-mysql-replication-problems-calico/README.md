@@ -27,6 +27,7 @@ Before checking any Calico-specific configuration, verify basic TCP connectivity
 
 ```bash
 # Get primary and replica pod IPs
+
 PRIMARY_POD="mysql-0"
 REPLICA_POD="mysql-1"
 NAMESPACE="database"

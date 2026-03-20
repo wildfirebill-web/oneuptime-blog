@@ -14,6 +14,7 @@ Build a compose file that mirrors your production setup: your services, an OpenT
 
 ```yaml
 # docker-compose.test.yaml
+
 version: '3.8'
 
 services:

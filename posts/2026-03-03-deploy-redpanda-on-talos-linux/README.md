@@ -37,6 +37,7 @@ Redpanda needs specific system settings for optimal performance:
 
 ```yaml
 # talos-redpanda-patch.yaml
+
 machine:
   sysctls:
     # Redpanda performance tuning

@@ -51,6 +51,7 @@ When running any container you want to auto-update, add the `io.containers.autou
 
 ```bash
 # Run an Nginx container with the auto-update label
+
 podman run -d \
   --name nginx-web \
   -p 8080:80 \

@@ -141,6 +141,7 @@ Set up Prometheus metrics to track certificate status:
 
 ```text
 # Certificate expiry (seconds until expiration)
+
 citadel_server_root_cert_expiry_timestamp
 
 # Number of CSRs processed

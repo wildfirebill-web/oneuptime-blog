@@ -36,6 +36,7 @@ Service discovery is the most fundamental integration between Nomad and Consul. 
 
 ```hcl
 # web-app.nomad
+
 # A simple web application with Consul service registration
 
 job "web-app" {

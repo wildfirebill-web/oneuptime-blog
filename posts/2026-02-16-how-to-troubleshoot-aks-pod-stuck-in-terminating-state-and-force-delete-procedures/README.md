@@ -33,6 +33,7 @@ Start by looking at the pod details to understand what is going on.
 
 ```bash
 # Get the pod status and see how long it has been terminating
+
 kubectl get pod my-pod -o wide
 
 # Get detailed information including events

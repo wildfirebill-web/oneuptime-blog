@@ -24,7 +24,8 @@ SFTP (SSH File Transfer Protocol) runs over SSH on port 22 and provides encrypte
 ## Basic SFTP Setup (Already Included with OpenSSH)
 
 ```bash
-# SFTP is built into OpenSSH — no additional install needed
+# SFTP is built into OpenSSH - no additional install needed
+
 # Verify SFTP subsystem is enabled in sshd_config
 grep Subsystem /etc/ssh/sshd_config
 # Expected: Subsystem sftp /usr/lib/openssh/sftp-server
@@ -131,4 +132,4 @@ sftp -i ~/.ssh/sftp_key sftpuser1@203.0.113.10
 
 ## Conclusion
 
-SFTP is the modern replacement for FTP — it uses SSH on a single port, requires no passive mode configuration, and encrypts all traffic automatically. Set up SFTP-only users with `Match Group` and `ForceCommand internal-sftp` in sshd_config, create chroot directories owned by root, and restrict access by source IP using `Address` in Match blocks. Public key authentication eliminates password exposure entirely.
+SFTP is the modern replacement for FTP - it uses SSH on a single port, requires no passive mode configuration, and encrypts all traffic automatically. Set up SFTP-only users with `Match Group` and `ForceCommand internal-sftp` in sshd_config, create chroot directories owned by root, and restrict access by source IP using `Address` in Match blocks. Public key authentication eliminates password exposure entirely.

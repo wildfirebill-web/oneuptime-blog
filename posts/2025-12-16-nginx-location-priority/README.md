@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, Configuration, Routing, Web Server, Best Practices
+Tags: Nginx, Configuration, Routing, Web Server, Best Practices
 
 Description: Learn how Nginx evaluates and prioritizes location blocks, including exact matches, prefix matches, and regular expressions, to correctly route requests in your configuration.
 
@@ -338,6 +338,7 @@ Test with curl:
 ```bash
 curl -I http://localhost/test.php | grep X-Location
 # X-Location: regex-php
+
 ```
 
 ### Use Return for Testing

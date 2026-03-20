@@ -45,6 +45,7 @@ The base contains your application's core resources without any environment-spec
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

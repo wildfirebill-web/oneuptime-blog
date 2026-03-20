@@ -28,6 +28,7 @@ Key rings are containers for your encryption keys. They live in a specific locat
 
 ```bash
 # Create a key ring in the us-central1 region
+
 gcloud kms keyrings create my-storage-keyring \
     --location=us-central1 \
     --project=my-project-id

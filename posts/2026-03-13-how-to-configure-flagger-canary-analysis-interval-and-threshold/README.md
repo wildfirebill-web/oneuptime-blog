@@ -213,6 +213,7 @@ The threshold should account for transient metric fluctuations:
 
 ```yaml
 # For stable, high-traffic services
+
 threshold: 3
 
 # For services with occasional metric spikes

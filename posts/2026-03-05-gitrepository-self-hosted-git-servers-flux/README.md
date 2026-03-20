@@ -34,6 +34,7 @@ Generate a new SSH key pair for Flux:
 
 ```bash
 # Generate an ED25519 key pair without a passphrase
+
 ssh-keygen -t ed25519 -f flux-git-key -N "" -C "flux@cluster"
 ```
 

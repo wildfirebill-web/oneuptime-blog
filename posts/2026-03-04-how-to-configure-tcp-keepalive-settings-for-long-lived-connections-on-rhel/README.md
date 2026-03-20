@@ -14,6 +14,7 @@ TCP keepalive probes detect dead connections by sending periodic packets to the 
 
 ```bash
 # Time before first keepalive probe (default: 7200 seconds / 2 hours)
+
 sysctl net.ipv4.tcp_keepalive_time
 
 # Interval between keepalive probes (default: 75 seconds)

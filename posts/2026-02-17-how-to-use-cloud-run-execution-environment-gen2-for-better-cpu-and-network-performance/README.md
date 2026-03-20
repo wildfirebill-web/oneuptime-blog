@@ -71,6 +71,7 @@ You should consider Gen2 if your workload matches any of these scenarios:
 
 ```bash
 # Deploy a new service with Gen2 execution environment
+
 gcloud run deploy my-service \
   --image=us-central1-docker.pkg.dev/MY_PROJECT/my-repo/my-app:latest \
   --region=us-central1 \

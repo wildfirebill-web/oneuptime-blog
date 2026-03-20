@@ -308,6 +308,7 @@ Store routing rules in configuration, not code. This lets you change routing wit
 
 ```yaml
 # routing-rules.yaml
+
 rules:
   - name: high-value-fraud-check
     conditions:

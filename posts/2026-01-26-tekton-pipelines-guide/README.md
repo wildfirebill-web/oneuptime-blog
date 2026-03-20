@@ -92,6 +92,7 @@ Tekton Pipelines is the core component that provides the pipeline execution engi
 
 ```bash
 # Install the latest release of Tekton Pipelines
+
 kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 
 # Wait for the installation to complete

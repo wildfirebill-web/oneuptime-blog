@@ -28,6 +28,7 @@ Add to your Cilium HelmRelease values:
 
 ```yaml
 # In your existing Cilium HelmRelease values:
+
 # clusters/my-cluster/cilium/helmrelease.yaml
 # (partial - add to existing values)
     egressGateway:

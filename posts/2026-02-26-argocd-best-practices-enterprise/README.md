@@ -42,6 +42,7 @@ For most enterprises, a hybrid approach works best: one central ArgoCD instance 
 
 ```yaml
 # HA ArgoCD for production
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

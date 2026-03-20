@@ -8,7 +8,7 @@ Description: Configure DHCPv6 servers within virtualization platforms to assign 
 
 ## Introduction
 
-DHCPv6 assigns IPv6 addresses to virtual machines through a stateful protocol, unlike SLAAC which is stateless. In virtualization environments, DHCPv6 can run on the hypervisor host, within the virtual network (libvirt, OpenStack Neutron, NSX-T), or on a dedicated VM. DHCPv6 provides IPAM visibility — each lease is recorded with a timestamp and DUID — making it preferable to SLAAC for environments that require IP tracking.
+DHCPv6 assigns IPv6 addresses to virtual machines through a stateful protocol, unlike SLAAC which is stateless. In virtualization environments, DHCPv6 can run on the hypervisor host, within the virtual network (libvirt, OpenStack Neutron, NSX-T), or on a dedicated VM. DHCPv6 provides IPAM visibility - each lease is recorded with a timestamp and DUID - making it preferable to SLAAC for environments that require IP tracking.
 
 ## Kea DHCPv6 on the Hypervisor Host
 
@@ -65,6 +65,7 @@ DHCPv6 assigns IPv6 addresses to virtual machines through a stateful protocol, u
 
 ```bash
 # Enable and start Kea DHCPv6
+
 systemctl enable --now kea-dhcp6-server
 
 # Verify DHCPv6 leases
@@ -127,7 +128,7 @@ openstack port list --network my-network --long | grep "ip_address"
 
 ## VMware NSX-T DHCPv6
 
-```
+```text
 # NSX-T DHCPv6 configuration via UI:
 
 1. Networking → DHCP → Add DHCP Server Profile
@@ -148,10 +149,10 @@ openstack port list --network my-network --long | grep "ip_address"
 ```bash
 # LXC containers in Proxmox can use DHCPv6 from the host
 
-# /etc/pve/lxc/100.conf — Container network config
+# /etc/pve/lxc/100.conf - Container network config
 net0: name=eth0,bridge=vmbr0,hwaddr=52:54:00:aa:bb:cc,ip=dhcp,ip6=dhcp
 
-# Start container — it will request both DHCPv4 and DHCPv6
+# Start container - it will request both DHCPv4 and DHCPv6
 pct start 100
 
 # Check container got IPv6 from DHCPv6

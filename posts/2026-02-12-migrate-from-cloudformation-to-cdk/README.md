@@ -66,6 +66,7 @@ From a template file:
 
 ```bash
 # Generate CDK code from a CloudFormation template
+
 cdk migrate --stack-name MyStack \
   --from-path ./existing-template.yaml \
   --language typescript

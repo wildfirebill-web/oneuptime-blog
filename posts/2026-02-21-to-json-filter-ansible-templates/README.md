@@ -34,6 +34,7 @@ Here is a practical example where you generate a JSON configuration file for an 
 
 ```yaml
 # deploy_app.yml - Generate JSON config file
+
 - name: Deploy application configuration
   hosts: app_servers
   vars:

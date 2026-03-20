@@ -38,6 +38,7 @@ There's one restriction: you can only modify a volume once every 6 hours. After 
 
 ```bash
 # Increase a volume from its current size to 200 GB
+
 aws ec2 modify-volume \
     --volume-id vol-0123456789abcdef0 \
     --size 200

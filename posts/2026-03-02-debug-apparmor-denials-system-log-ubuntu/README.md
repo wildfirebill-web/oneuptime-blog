@@ -25,6 +25,7 @@ The most reliable place to check is the kernel log via journalctl:
 
 ```bash
 # Show all AppArmor denial messages from the current boot
+
 sudo journalctl -k | grep -i "apparmor"
 
 # Show only DENIED entries

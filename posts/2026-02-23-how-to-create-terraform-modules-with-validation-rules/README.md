@@ -16,6 +16,7 @@ Terraform lets you add `validation` blocks to any variable. Each validation bloc
 
 ```hcl
 # Basic string validation
+
 variable "environment" {
   description = "Deployment environment"
   type        = string

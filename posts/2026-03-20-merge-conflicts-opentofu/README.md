@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Merge Conflicts, Git, State Management, Team Workflow, Infrastructure as Code
+Tags: OpenTofu, Merge Conflicts, Git, State Management, Team Workflows, Infrastructure as Code
 
 Description: Learn how to prevent and resolve merge conflicts in OpenTofu configurations, including HCL formatting conventions, state file conflicts, and lock file conflict resolution strategies.
 
@@ -26,6 +26,7 @@ graph TD
 
 ```bash
 # Enforce consistent formatting to reduce cosmetic conflicts
+
 tofu fmt -recursive .
 
 # Pre-commit hook to auto-format before commit
@@ -41,7 +42,7 @@ repos:
 
 ```bash
 # .terraform.lock.hcl conflicts are common when two PRs update provider versions
-# DON'T manually edit lock files — regenerate them instead
+# DON'T manually edit lock files - regenerate them instead
 
 # 1. Accept one version of the conflict (either <<< or >>>)
 git checkout --ours .terraform.lock.hcl
@@ -83,7 +84,7 @@ variable "instance_type" {
 # Resolution: Use variable with no default, forcing explicit values per environment
 variable "instance_type" {
   type        = string
-  description = "EC2 instance type — set per environment in tfvars"
+  description = "EC2 instance type - set per environment in tfvars"
 }
 ```
 
@@ -127,7 +128,7 @@ tofu import aws_instance.web i-1234567890abcdef0
 ## Team Workflow to Minimize Conflicts
 
 ```bash
-# Keep PRs small — large PRs that touch many files create more conflicts
+# Keep PRs small - large PRs that touch many files create more conflicts
 
 # Update from main frequently
 git fetch origin
@@ -142,8 +143,8 @@ variable "enable_new_vpc_design" {
 
 ## Best Practices
 
-- Enforce `tofu fmt` via pre-commit hooks — most HCL conflicts are whitespace or formatting differences that automatic formatting eliminates.
-- Never manually edit `.terraform.lock.hcl` after a conflict — delete and regenerate with `tofu init`.
-- Keep infrastructure PRs small and focused — large PRs that touch many modules cause the most conflicts.
+- Enforce `tofu fmt` via pre-commit hooks - most HCL conflicts are whitespace or formatting differences that automatic formatting eliminates.
+- Never manually edit `.terraform.lock.hcl` after a conflict - delete and regenerate with `tofu init`.
+- Keep infrastructure PRs small and focused - large PRs that touch many modules cause the most conflicts.
 - Use `for_each` with named keys instead of `count` to avoid index-shifting conflicts when items are added or removed.
-- Serialize applies to the same environment — don't allow two PRs to target the same environment simultaneously.
+- Serialize applies to the same environment - don't allow two PRs to target the same environment simultaneously.

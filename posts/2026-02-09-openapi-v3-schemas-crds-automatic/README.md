@@ -359,6 +359,7 @@ If you're not using Kubebuilder's Makefile:
 
 ```bash
 # Install controller-gen
+
 go install sigs.k8s.io/controller-tools/cmd/controller-gen@latest
 
 # Generate CRDs

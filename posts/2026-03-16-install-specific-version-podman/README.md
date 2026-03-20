@@ -28,6 +28,7 @@ Before installing, determine which versions are available on your system.
 
 ```bash
 # List all available Podman versions
+
 sudo dnf list podman --showduplicates | sort -r
 
 # Example output:

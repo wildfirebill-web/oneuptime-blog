@@ -22,6 +22,7 @@ Pull and run QuestDB with a single command.
 
 ```bash
 # Start QuestDB with all interfaces exposed
+
 docker run -d \
   --name questdb \
   -p 9000:9000 \

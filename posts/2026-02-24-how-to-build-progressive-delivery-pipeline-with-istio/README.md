@@ -31,6 +31,7 @@ Before automating, understand how to do a canary manually:
 
 ```yaml
 # Stable deployment (already running)
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

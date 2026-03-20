@@ -56,6 +56,7 @@ This command creates a cluster placement group:
 
 ```bash
 # Create a cluster placement group
+
 aws ec2 create-placement-group \
   --group-name low-latency-cluster \
   --strategy cluster \

@@ -18,6 +18,7 @@ Consider this scenario with simple Istio timeouts:
 
 ```yaml
 # Frontend to Service A: 10s timeout
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

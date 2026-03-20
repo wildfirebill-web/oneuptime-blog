@@ -156,6 +156,7 @@ After running a query, check how much data was actually scanned vs. the full tab
 
 ```bash
 # Run a query with --dry_run to see bytes scanned without running it
+
 bq query --use_legacy_sql=false --dry_run \
     'SELECT * FROM `my-project.my_dataset.events_partitioned`
      WHERE DATE(event_timestamp) = "2026-02-17"'

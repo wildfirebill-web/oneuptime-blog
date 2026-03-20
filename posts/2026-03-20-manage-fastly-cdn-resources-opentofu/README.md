@@ -1,4 +1,4 @@
-# How to Manage Fastly CDN Resources with OpenTofu
+# How to Manage Fastly CDN Resources with OpenTofu - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

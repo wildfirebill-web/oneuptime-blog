@@ -39,6 +39,7 @@ Restart Docker to apply:
 
 ```bash
 # Restart Docker daemon with iptables disabled
+
 sudo systemctl restart docker
 ```
 

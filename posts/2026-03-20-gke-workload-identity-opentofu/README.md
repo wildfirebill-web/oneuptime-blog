@@ -14,6 +14,7 @@ GKE Workload Identity binds Kubernetes service accounts to GCP service accounts 
 
 ```hcl
 # main.tf - Enable Workload Identity on GKE cluster
+
 resource "google_container_cluster" "cluster" {
   name     = "workload-identity-cluster"
   location = "us-central1"

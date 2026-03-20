@@ -76,6 +76,7 @@ hazelcast:
 
 ```bash
 # Hazelcast runs on JVM - configure for IPv6
+
 # Required: prefer IPv6 stack
 
 # Set in startup script or environment

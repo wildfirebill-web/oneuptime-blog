@@ -20,6 +20,7 @@ FedRAMP adds specific requirements on top of NIST 800-53:
 
 ```hcl
 # FedRAMP workloads typically run in AWS GovCloud
+
 provider "aws" {
   region = "us-gov-west-1"  # or us-gov-east-1
 
@@ -32,7 +33,7 @@ provider "aws" {
 ## AC-2: Account Management
 
 ```hcl
-# Automated account management — no manual IAM user creation
+# Automated account management - no manual IAM user creation
 resource "aws_organizations_policy" "no_iam_users" {
   name = "FedRAMP-NoDirectIAMUsers"
   type = "SERVICE_CONTROL_POLICY"
@@ -104,7 +105,7 @@ resource "aws_alb_listener" "fedramp_https" {
 }
 ```
 
-## IR-6: Incident Reporting — Security Hub
+## IR-6: Incident Reporting - Security Hub
 
 ```hcl
 resource "aws_securityhub_account" "fedramp" {}

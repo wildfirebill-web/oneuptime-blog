@@ -238,6 +238,7 @@ After configuring timeouts, verify they work by running a long operation and che
 
 ```bash
 # Check the effective timeout on a specific route
+
 istioctl proxy-config routes deploy/minio -n storage -o json | \
   jq '.[].virtualHosts[].routes[].route.timeout'
 

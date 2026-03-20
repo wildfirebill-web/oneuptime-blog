@@ -16,6 +16,7 @@ You need the Google Cloud CLI installed and a GCP project:
 
 ```bash
 # Install gcloud CLI (if not already installed)
+
 # https://cloud.google.com/sdk/docs/install
 
 # Authenticate

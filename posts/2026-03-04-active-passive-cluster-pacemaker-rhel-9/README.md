@@ -50,6 +50,7 @@ For an active-passive configuration, group all resources together so they all ru
 
 ```bash
 # Virtual IP
+
 sudo pcs resource create ClusterVIP ocf:heartbeat:IPaddr2 \
     ip=192.168.1.100 cidr_netmask=24 \
     op monitor interval=30s

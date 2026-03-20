@@ -48,6 +48,7 @@ If you use the kube-prometheus-stack, create a ServiceMonitor:
 
 ```yaml
 # servicemonitor.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

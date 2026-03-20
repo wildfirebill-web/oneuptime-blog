@@ -25,6 +25,7 @@ graph TD
 
 ```bash
 # Create web roots and sample pages for two sites
+
 mkdir -p /var/www/site-a /var/www/site-b
 echo "<h1>Site A</h1>" > /var/www/site-a/index.html
 echo "<h1>Site B</h1>" > /var/www/site-b/index.html

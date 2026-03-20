@@ -49,6 +49,7 @@ Recovery requires:
 
 ```bash
 # List available base backups
+
 ls -la /var/lib/postgresql/backup/
 
 # For pgBackRest

@@ -32,7 +32,7 @@ Not all tags need to be required on all resources. You might require Environment
 
 Let me start with the fundamental queries and build up to more sophisticated ones.
 
-### Resources Missing a Specific Tag
+Resources Missing a Specific Tag
 
 ```kusto
 // Find all resources missing the 'Environment' tag
@@ -43,7 +43,7 @@ resources
 | take 20
 ```
 
-### Resources Missing Any Required Tags
+Resources Missing Any Required Tags
 
 ```kusto
 // Check multiple required tags at once
@@ -192,6 +192,7 @@ Resource Graph does not store historical compliance data, so you need to capture
 
 ```powershell
 # Daily compliance snapshot script for Azure Automation
+
 $date = Get-Date -Format "yyyy-MM-dd"
 
 $complianceQuery = @"

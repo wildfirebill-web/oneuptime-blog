@@ -44,6 +44,7 @@ For automation, the CLI is more practical. Here is how to generate a service SAS
 
 ```bash
 # Generate a SAS token for a container with read and list permissions
+
 # Valid for 24 hours from now
 az storage container generate-sas \
   --account-name mystorageaccount \

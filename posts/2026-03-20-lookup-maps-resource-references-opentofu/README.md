@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, lookup, Maps, Data Transformation
+Tags: OpenTofu, Terraform, HCL, Lookup, Maps, Data Transformation
 
 Description: Learn how to build lookup maps in OpenTofu to reference resources by logical names, simplifying complex cross-resource dependencies and reducing hard-coded IDs.
 
 ## Introduction
 
-Hard-coded resource IDs create brittle configurations. Lookup maps let you define a logical name-to-resource mapping once, then reference it consistently throughout your configuration — making your code more readable and easier to update.
+Hard-coded resource IDs create brittle configurations. Lookup maps let you define a logical name-to-resource mapping once, then reference it consistently throughout your configuration - making your code more readable and easier to update.
 
 ## Basic Lookup Map Pattern
 
@@ -16,6 +16,7 @@ Use `locals` to define a map that translates logical names to resource attribute
 
 ```hcl
 # Define AMI IDs per region as a lookup map
+
 locals {
   ami_ids = {
     "us-east-1"    = "ami-0c55b159cbfafe1f0"

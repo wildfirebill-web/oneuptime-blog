@@ -24,6 +24,7 @@ Sentinel is HashiCorp's policy language. Create your first policy:
 
 ```sentinel
 # policies/require-tags.sentinel
+
 import "tfplan/v2" as tfplan
 
 # Required tags for all resources

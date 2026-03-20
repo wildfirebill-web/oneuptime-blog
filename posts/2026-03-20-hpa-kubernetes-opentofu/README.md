@@ -14,6 +14,7 @@ The Horizontal Pod Autoscaler (HPA) automatically adjusts the number of pod repl
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     kubernetes = {
@@ -144,7 +145,7 @@ resource "kubernetes_horizontal_pod_autoscaler_v2" "app_multi" {
       }
     }
 
-    # Also scale on memory — HPA scales up if EITHER threshold is exceeded
+    # Also scale on memory - HPA scales up if EITHER threshold is exceeded
     metric {
       type = "Resource"
       resource {
@@ -156,7 +157,7 @@ resource "kubernetes_horizontal_pod_autoscaler_v2" "app_multi" {
       }
     }
 
-    # Scale-down behavior: be conservative — wait 5 minutes before scaling down
+    # Scale-down behavior: be conservative - wait 5 minutes before scaling down
     behavior {
       scale_down {
         stabilization_window_seconds = 300  # Wait 5 min before scaling down
@@ -227,7 +228,7 @@ resource "kubernetes_horizontal_pod_autoscaler_v2" "app_custom" {
 
 ## Best Practices
 
-- Always set resource requests on your pods — HPA cannot function without them when using resource-based metrics.
+- Always set resource requests on your pods - HPA cannot function without them when using resource-based metrics.
 - Configure scale-down stabilization windows to prevent thrashing during workload fluctuations.
 - Pair HPA with Cluster Autoscaler so new pods can actually be scheduled when scale-out occurs.
 - Monitor HPA events with `kubectl describe hpa` to understand scaling decisions.

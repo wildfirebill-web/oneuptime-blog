@@ -8,12 +8,13 @@ Description: Learn how to use OpenTofu workspaces to maintain separate state fil
 
 ---
 
-OpenTofu workspaces allow multiple state files from a single configuration directory. Each workspace is isolated — resources created in the `production` workspace don't affect the `staging` workspace. This guide covers workspace-based environment separation and when to choose it over directory-based separation.
+OpenTofu workspaces allow multiple state files from a single configuration directory. Each workspace is isolated - resources created in the `production` workspace don't affect the `staging` workspace. This guide covers workspace-based environment separation and when to choose it over directory-based separation.
 
 ## Creating and Switching Workspaces
 
 ```bash
 # List all workspaces (default is created automatically)
+
 tofu workspace list
 
 # Create a new workspace
@@ -107,7 +108,7 @@ terraform {
 
 ## Best Practices
 
-- Don't use the `default` workspace for production — its name gives no context.
+- Don't use the `default` workspace for production - its name gives no context.
 - Add `terraform.workspace` to all resource names and tags to make resources identifiable.
 - Use workspace validation to prevent applying dev-only configs to production.
 - Consider directory-based separation if environments diverge significantly over time.

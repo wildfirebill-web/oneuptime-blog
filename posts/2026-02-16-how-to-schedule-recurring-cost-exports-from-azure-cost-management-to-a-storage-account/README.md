@@ -66,6 +66,7 @@ The first export runs immediately, and subsequent exports follow the configured 
 
 ```bash
 # Create a daily actual cost export to a storage account
+
 az costmanagement export create \
   --name "daily-actual-costs" \
   --scope "/subscriptions/<sub-id>" \

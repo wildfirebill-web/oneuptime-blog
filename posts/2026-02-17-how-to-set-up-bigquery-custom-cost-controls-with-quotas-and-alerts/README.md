@@ -18,6 +18,7 @@ The most direct way to limit BigQuery costs is setting a quota on the maximum by
 
 ```bash
 # Set a project-level quota limiting daily query usage to 10 TB
+
 gcloud services set-quota \
   --project=my-project \
   --consumer=projects/my-project \

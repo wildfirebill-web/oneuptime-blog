@@ -24,6 +24,7 @@ Start by classifying your services. You can do this with a resource attribute, a
 
 ```yaml
 # Service priority classification
+
 # Tier 1 (Hot): Revenue-impacting, customer-facing
 #   - payment-service, checkout-service, auth-service
 # Tier 2 (Cold): Internal, batch, background

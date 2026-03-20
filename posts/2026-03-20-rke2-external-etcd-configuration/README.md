@@ -1,4 +1,4 @@
-# How to Configure RKE2 with External etcd
+# How to Configure RKE2 with External etcd - Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure RKE2 to use an external etcd cluster instead
 
 ---
 
-While RKE2's embedded etcd is sufficient for most deployments, using an external etcd cluster gives you independent control over the datastore — useful for large clusters or when you need to manage etcd backups separately from the Kubernetes cluster.
+While RKE2's embedded etcd is sufficient for most deployments, using an external etcd cluster gives you independent control over the datastore - useful for large clusters or when you need to manage etcd backups separately from the Kubernetes cluster.
 
 ---
 
@@ -26,6 +26,7 @@ Install and configure etcd on dedicated nodes:
 
 ```bash
 # Install etcd
+
 ETCD_VERSION="v3.5.13"
 wget https://github.com/etcd-io/etcd/releases/download/${ETCD_VERSION}/etcd-${ETCD_VERSION}-linux-amd64.tar.gz
 tar xvf etcd-${ETCD_VERSION}-linux-amd64.tar.gz
@@ -144,5 +145,5 @@ kubectl get componentstatuses
 
 - Run the external etcd cluster on **dedicated nodes** with SSDs for low-latency writes.
 - Back up the external etcd cluster **independently** using `etcdctl snapshot save`.
-- Monitor etcd latency — values above 10ms consistently indicate storage or network issues.
+- Monitor etcd latency - values above 10ms consistently indicate storage or network issues.
 - Set `--quota-backend-bytes` on etcd to 8GB for large clusters (default is 2GB).

@@ -45,6 +45,7 @@ Create a Standard SKU Load Balancer. Always use Standard for production because 
 
 ```bash
 # Create a public IP for the Load Balancer
+
 az network public-ip create \
   --name lb-public-ip \
   --resource-group myResourceGroup \

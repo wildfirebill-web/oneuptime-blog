@@ -8,11 +8,11 @@ Description: Use TCP sequence number analysis in Wireshark and tcpdump to identi
 
 ## Introduction
 
-TCP sequence numbers track every byte sent on a connection. When something goes wrong — lost packets, reordering, retransmissions — the sequence number timeline reveals exactly what happened. Wireshark builds time-sequence graphs automatically; tcpdump lets you trace sequence numbers in the terminal. Both approaches turn raw packet captures into a clear narrative of connection behavior.
+TCP sequence numbers track every byte sent on a connection. When something goes wrong - lost packets, reordering, retransmissions - the sequence number timeline reveals exactly what happened. Wireshark builds time-sequence graphs automatically; tcpdump lets you trace sequence numbers in the terminal. Both approaches turn raw packet captures into a clear narrative of connection behavior.
 
 ## Understanding Sequence Number Basics
 
-```
+```text
 Initial Sequence Number (ISN): random, chosen at SYN
 Subsequent segments: ISN + bytes_sent_so_far
 ACK number: "I've received up to byte N, send me N+1 next"
@@ -29,6 +29,7 @@ Data:       seq=1001, len=500  → RETRANSMIT! Same seq sent again
 
 ```bash
 # Capture with sequence numbers shown
+
 tcpdump -i eth0 -n -S host 10.20.0.5 and port 80
 # -S shows absolute sequence numbers (easier for correlation)
 
@@ -48,7 +49,7 @@ tcpdump -r capture.pcap -n | awk '{print $5}' | sort | uniq -d
 
 ## Wireshark Time-Sequence Graph
 
-```
+```sql
 In Wireshark:
 1. Open capture file
 2. Select a packet in the TCP stream

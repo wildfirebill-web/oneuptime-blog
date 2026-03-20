@@ -31,6 +31,7 @@ Click a node name to view:
 
 ```bash
 # CLI equivalent
+
 kubectl describe node <node-name>
 
 # Get node conditions only
@@ -109,4 +110,4 @@ DISKPRESSURE:.status.conditions[?(@.type=="DiskPressure")].status
 
 ## Conclusion
 
-Portainer provides a visual interface for common Kubernetes node management tasks. For operations like draining and cordoning, Portainer abstracts the kubectl commands into clear UI actions — making cluster maintenance accessible to team members who aren't kubectl experts.
+Portainer provides a visual interface for common Kubernetes node management tasks. For operations like draining and cordoning, Portainer abstracts the kubectl commands into clear UI actions - making cluster maintenance accessible to team members who aren't kubectl experts.

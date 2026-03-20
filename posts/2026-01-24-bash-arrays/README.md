@@ -43,6 +43,7 @@ flowchart TD
 # Multiple ways to declare indexed arrays
 
 # Method 1: Direct assignment with ()
+
 fruits=("apple" "banana" "cherry" "date")
 
 # Method 2: Declare explicitly

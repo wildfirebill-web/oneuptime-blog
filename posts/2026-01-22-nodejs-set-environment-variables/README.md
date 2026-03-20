@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Environment, Configuration, Security, Dotenv
+Tags: NodeJS, Environments, Configuration, Security, Dotenv
 
 Description: Learn how to set and manage environment variables in Node.js applications including using dotenv, cross-platform solutions, and best practices for configuration management.
 
@@ -30,6 +30,7 @@ console.log(`Environment: ${nodeEnv}`);
 
 ```bash
 # Set for a single command
+
 PORT=3000 node server.js
 
 # Set multiple variables

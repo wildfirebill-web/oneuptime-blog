@@ -55,6 +55,7 @@ First, we need to detect file types and route them to the appropriate extractor.
 
 ```python
 # src/extractors/base.py
+
 """
 Base extractor class and file type detection for document ingestion.
 Provides a unified interface for all document extractors.

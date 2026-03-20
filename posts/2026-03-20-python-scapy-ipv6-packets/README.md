@@ -19,6 +19,7 @@ from scapy.all import *
 from scapy.layers.inet6 import *
 
 # Basic IPv6 packet
+
 pkt = IPv6(dst="2001:db8::1") / ICMPv6EchoRequest()
 pkt.show()
 
@@ -165,7 +166,7 @@ hop_pkt = IPv6(dst="2001:db8::1") / \
           ]) / \
           ICMPv6EchoRequest()
 
-# IPv6 with Routing header (Type 0 — deprecated, for study only)
+# IPv6 with Routing header (Type 0 - deprecated, for study only)
 # Note: Type 0 RH is filtered by most modern routers
 route_pkt = IPv6(dst="2001:db8::2") / \
             IPv6ExtHdrRouting(addresses=["2001:db8::3"]) / \
@@ -179,4 +180,4 @@ parsed.show()
 
 ## Conclusion
 
-Scapy provides a Python API for crafting and parsing all IPv6 packet types: use `IPv6()` as the base layer, `ICMPv6EchoRequest()` for ping6, `ICMPv6ND_NS/NA/RA()` for Neighbor Discovery Protocol, and `TCP()`/`UDP()` for transport layer packets. Layer packets with `/` operator and send with `send()` (layer 3) or `sendp()` (layer 2 with Ethernet). Capture live traffic with `sniff(filter="ip6")` and use `pkt.haslayer()` to detect protocol layers. Always run as root or with `CAP_NET_RAW`/`CAP_NET_ADMIN` capabilities for raw packet operations. Use Scapy for testing NDP implementations, firewall rules, and protocol analyzers — not in production traffic flows.
+Scapy provides a Python API for crafting and parsing all IPv6 packet types: use `IPv6()` as the base layer, `ICMPv6EchoRequest()` for ping6, `ICMPv6ND_NS/NA/RA()` for Neighbor Discovery Protocol, and `TCP()`/`UDP()` for transport layer packets. Layer packets with `/` operator and send with `send()` (layer 3) or `sendp()` (layer 2 with Ethernet). Capture live traffic with `sniff(filter="ip6")` and use `pkt.haslayer()` to detect protocol layers. Always run as root or with `CAP_NET_RAW`/`CAP_NET_ADMIN` capabilities for raw packet operations. Use Scapy for testing NDP implementations, firewall rules, and protocol analyzers - not in production traffic flows.

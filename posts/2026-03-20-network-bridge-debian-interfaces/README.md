@@ -22,6 +22,7 @@ apt install bridge-utils -y
 # /etc/network/interfaces
 
 # Physical interface: no IP, added to bridge
+
 auto eth0
 iface eth0 inet manual
 
@@ -85,7 +86,7 @@ ip addr show br0
 ## Adding Multiple Interfaces to Bridge
 
 ```bash
-# /etc/network/interfaces — bridge across two physical NICs
+# /etc/network/interfaces - bridge across two physical NICs
 auto br0
 iface br0 inet static
   address 192.168.1.10

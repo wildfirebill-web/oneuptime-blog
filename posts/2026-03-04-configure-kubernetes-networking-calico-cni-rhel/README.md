@@ -16,6 +16,7 @@ Ensure your Kubernetes cluster was initialized with a pod CIDR that does not ove
 
 ```bash
 # If using kubeadm, you should have initialized with:
+
 # kubeadm init --pod-network-cidr=192.168.0.0/16
 
 # Verify the current cluster state

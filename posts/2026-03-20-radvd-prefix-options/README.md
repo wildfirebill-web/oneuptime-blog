@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, radvd, Prefix, SLAAC, Router Advertisement, Networking
+Tags: IPv6, Radvd, Prefix, SLAAC, Router Advertisement, Networking
 
 Description: Configure radvd prefix options to control how IPv6 clients autoconfigure their addresses, including on-link status, autonomous flag, and address lifetimes.
 
@@ -27,6 +27,7 @@ The `prefix` block in radvd's configuration is the most important part of the Ro
 
 ```text
 # /etc/radvd.conf
+
 # Standard prefix configuration for client address autoconfiguration
 
 interface eth1 {
@@ -113,7 +114,7 @@ prefix 2001:db8:1:1::/64 {
 
 ## Advertising Multiple Prefixes
 
-A single interface can advertise multiple prefixes — useful for multi-homed or transitional setups:
+A single interface can advertise multiple prefixes - useful for multi-homed or transitional setups:
 
 ```text
 interface eth1 {

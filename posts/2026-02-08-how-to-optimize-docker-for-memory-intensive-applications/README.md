@@ -16,6 +16,7 @@ Docker uses Linux cgroups to enforce memory limits. When a container tries to us
 
 ```bash
 # Check the current memory limit for a running container
+
 docker inspect --format '{{.HostConfig.Memory}}' mycontainer
 # 0 means unlimited
 

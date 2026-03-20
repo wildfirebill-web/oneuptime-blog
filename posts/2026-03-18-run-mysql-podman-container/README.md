@@ -20,6 +20,7 @@ Download the official MySQL image.
 
 ```bash
 # Pull the official MySQL 8.0 image
+
 podman pull docker.io/library/mysql:8.0
 
 # Verify the image

@@ -27,6 +27,7 @@ This guide covers a safe, zero-downtime migration strategy for existing Terrafor
 
 ```bash
 # List all existing Terraform workspaces in your state backend
+
 # For S3 backend:
 aws s3 ls s3://my-org-terraform-state/ --recursive | grep terraform.tfstate
 

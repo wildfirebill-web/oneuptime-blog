@@ -45,6 +45,7 @@ Before making any changes, stop Docker completely. This prevents data corruption
 
 ```bash
 # Stop the Docker daemon
+
 sudo systemctl stop docker
 
 # Also stop the containerd service

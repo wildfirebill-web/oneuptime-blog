@@ -28,6 +28,7 @@ Here are the default batch settings and some tuned alternatives:
 
 ```python
 # Default settings (Python client library)
+
 from google.cloud import pubsub_v1
 from google.cloud.pubsub_v1.types import BatchSettings
 

@@ -16,6 +16,7 @@ SOPS encrypts the values in your files while leaving the keys and structure visi
 
 ```yaml
 # Before SOPS encryption
+
 apiVersion: v1
 kind: Secret
 metadata:

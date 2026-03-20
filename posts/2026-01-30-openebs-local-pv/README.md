@@ -478,6 +478,7 @@ NDM discovers and manages block devices across your cluster:
 
 ```bash
 # List all discovered block devices
+
 kubectl get blockdevices -n openebs -o wide
 
 # Get details about a specific device

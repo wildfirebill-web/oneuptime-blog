@@ -36,6 +36,7 @@ Here's a minimal configuration to start sending data to Coralogix. This example 
 
 ```yaml
 # Receivers for collecting telemetry data
+
 receivers:
   otlp:
     protocols:

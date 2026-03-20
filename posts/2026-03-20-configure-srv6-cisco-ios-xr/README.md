@@ -12,7 +12,7 @@ Cisco IOS-XR supports SRv6 with native integration into IS-IS and BGP. This guid
 
 ## Global SRv6 Configuration
 
-```
+```text
 ! Enable SRv6
 segment-routing srv6
  encapsulation
@@ -29,7 +29,7 @@ segment-routing srv6
 
 ## Interface and Loopback SID Assignment
 
-```
+```text
 ! Assign loopback address within locator
 interface Loopback0
  ipv6 address 5f00:1::/128
@@ -44,7 +44,7 @@ interface GigabitEthernet0/0/0/0
 
 ## IS-IS Advertisement of SRv6 Locators
 
-```
+```text
 ! IS-IS configuration with SRv6
 router isis CORE
  is-type level-2-only
@@ -68,6 +68,7 @@ router isis CORE
 
 ```bash
 # Show SRv6 locators
+
 show segment-routing srv6 locator
 
 # Show all SRv6 SIDs
@@ -89,7 +90,7 @@ traceroute srv6-te policy POLICY-TO-R3
 
 ## SRv6 Traffic Engineering Policy
 
-```
+```text
 ! Create an SRv6 TE policy to steer traffic via R2
 segment-routing
  traffic-eng
@@ -113,7 +114,7 @@ segment-routing
 
 ## BGP with SRv6 for L3VPN
 
-```
+```text
 ! BGP L3VPN over SRv6
 router bgp 65001
  bgp router-id 1.1.1.1

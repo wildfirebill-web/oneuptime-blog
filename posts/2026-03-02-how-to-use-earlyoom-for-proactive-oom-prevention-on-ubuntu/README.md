@@ -24,6 +24,7 @@ The kernel's OOM killer activates when memory allocation genuinely cannot procee
 
 ```bash
 # Install from Ubuntu's repositories (available in Ubuntu 20.04+)
+
 sudo apt update
 sudo apt install -y earlyoom
 

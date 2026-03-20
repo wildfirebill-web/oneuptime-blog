@@ -24,6 +24,7 @@ Every container image that you want to automate needs its own ImageRepository.
 
 ```yaml
 # image-repositories.yaml
+
 # One ImageRepository per container image to scan
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository

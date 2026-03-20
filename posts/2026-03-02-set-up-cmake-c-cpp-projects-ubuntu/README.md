@@ -14,6 +14,7 @@ CMake is the de facto build system generator for C and C++ projects. It does not
 
 ```bash
 # Install CMake from Ubuntu repositories
+
 sudo apt update
 sudo apt install cmake cmake-doc ninja-build build-essential -y
 

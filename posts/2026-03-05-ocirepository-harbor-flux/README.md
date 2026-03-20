@@ -39,6 +39,7 @@ Use the Flux CLI to package and push manifests to Harbor.
 
 ```bash
 # Push Kubernetes manifests as an OCI artifact to Harbor
+
 flux push artifact oci://harbor.example.com/flux-artifacts/app:v1.0.0 \
   --path=./deploy \
   --source="$(git config --get remote.origin.url)" \

@@ -22,6 +22,7 @@ Use ftrace to trace kernel functions:
 
 ```bash
 # Mount debugfs if not already mounted
+
 sudo mount -t debugfs none /sys/kernel/debug
 
 # List available tracers

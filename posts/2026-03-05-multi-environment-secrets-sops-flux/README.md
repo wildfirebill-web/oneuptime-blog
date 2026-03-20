@@ -41,6 +41,7 @@ Age is the recommended encryption backend for SOPS with Flux. Generate a separat
 
 ```bash
 # Generate development key
+
 age-keygen -o dev-age-key.txt
 # Public key: age1dev...
 

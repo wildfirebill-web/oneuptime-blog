@@ -35,6 +35,7 @@ LVM tools come pre-installed on RHEL, but verify:
 
 ```bash
 # Check if LVM is installed
+
 sudo dnf install lvm2 -y
 ```
 

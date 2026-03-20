@@ -22,6 +22,7 @@ Forward a local port to a pod:
 
 ```bash
 # Forward local port 8080 to pod's port 80
+
 kubectl port-forward pod/nginx-abc123 8080:80
 
 # Output:

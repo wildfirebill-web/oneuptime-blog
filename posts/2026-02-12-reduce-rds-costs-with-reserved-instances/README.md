@@ -35,6 +35,7 @@ Before you purchase anything, you need to know what you're running. Here's how t
 
 ```bash
 # List all RDS instances with their engine, class, and Multi-AZ status
+
 aws rds describe-db-instances \
   --query "DBInstances[].{
     ID: DBInstanceIdentifier,

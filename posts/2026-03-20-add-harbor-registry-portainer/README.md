@@ -38,6 +38,7 @@ Robot accounts are service accounts in Harbor recommended for integrations:
 
 ```bash
 # Log in to Harbor via Docker CLI
+
 docker login harbor.mycompany.com \
   -u "robot\$portainer-puller" \
   -p <robot-token>

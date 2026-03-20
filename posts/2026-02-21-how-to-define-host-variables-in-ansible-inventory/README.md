@@ -18,6 +18,7 @@ The quickest way to set a host variable is directly in the inventory file, on th
 
 ```ini
 # inventory.ini
+
 # Variables follow the hostname, separated by spaces
 [webservers]
 web1.example.com ansible_host=10.0.1.10 http_port=8080 max_workers=4

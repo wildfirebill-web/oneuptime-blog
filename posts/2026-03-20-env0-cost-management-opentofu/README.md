@@ -16,6 +16,7 @@ Create an env0 environment via its OpenTofu provider:
 
 ```hcl
 # env0.tf
+
 terraform {
   required_providers {
     env0 = {
@@ -78,7 +79,7 @@ resource "env0_environment" "production" {
 
 Each pull request plan will now include a cost breakdown comment like:
 
-```
+```text
 Monthly cost estimate: $142.50
   aws_instance.web (t3.medium): $30.22/month
   aws_db_instance.main (db.t3.small): $27.60/month

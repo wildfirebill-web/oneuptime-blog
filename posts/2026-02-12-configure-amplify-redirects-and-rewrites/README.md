@@ -269,6 +269,7 @@ Instead of configuring rules in the console, you can define them in your `amplif
 
 ```yaml
 # amplify.yml - Redirects section
+
 customHeaders:
   - pattern: '**/*'
     headers:

@@ -14,6 +14,7 @@ Ephemeral locals in OpenTofu (introduced in 1.11) are local values derived from 
 
 ```hcl
 # Ephemeral variable (source of ephemeral data)
+
 variable "vault_token" {
   type      = string
   ephemeral = true
@@ -142,4 +143,4 @@ locals {
 
 ## Conclusion
 
-Ephemeral locals extend the ephemeral ecosystem by allowing you to compute derived values from ephemeral sources without persisting them to state. This is essential for building authentication flows, credential pipelines, and temporary configuration computation that should remain truly transient. By understanding ephemeral propagation — where accessing an ephemeral source makes the derived value ephemeral — you can build secure, zero-persistence secret handling pipelines in OpenTofu.
+Ephemeral locals extend the ephemeral ecosystem by allowing you to compute derived values from ephemeral sources without persisting them to state. This is essential for building authentication flows, credential pipelines, and temporary configuration computation that should remain truly transient. By understanding ephemeral propagation - where accessing an ephemeral source makes the derived value ephemeral - you can build secure, zero-persistence secret handling pipelines in OpenTofu.

@@ -21,6 +21,7 @@ Samba implements the SMB/CIFS protocol on Linux, allowing RHEL servers to share 
 
 ```bash
 # Install Samba server and client packages
+
 sudo dnf install -y samba samba-client samba-common
 ```
 

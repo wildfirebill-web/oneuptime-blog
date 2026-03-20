@@ -31,6 +31,7 @@ The best approach for AWS is to avoid long-lived access keys entirely. Use IAM r
 
 ```bash
 # Configure AWS SSO
+
 aws configure sso
 # Follow the prompts to set up your SSO profile
 

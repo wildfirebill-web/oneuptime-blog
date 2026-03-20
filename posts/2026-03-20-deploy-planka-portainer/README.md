@@ -20,6 +20,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Planka
+
 version: "3.8"
 
 services:
@@ -78,7 +79,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 DB_PASSWORD=your-postgres-password
 SECRET_KEY=your-random-64-char-secret
 PLANKA_DOMAIN=planka.yourdomain.com
@@ -115,4 +116,4 @@ docker run --rm -v planka_attachments:/data -v $(pwd):/backup alpine \
 
 ## Conclusion
 
-Planka stores all board data in PostgreSQL and files in Docker volumes. The `SECRET_KEY` is used for session signing — if changed, all existing sessions are invalidated. The `BASE_URL` must match the URL you use to access Planka, as it is used for email notifications and avatar generation.
+Planka stores all board data in PostgreSQL and files in Docker volumes. The `SECRET_KEY` is used for session signing - if changed, all existing sessions are invalidated. The `BASE_URL` must match the URL you use to access Planka, as it is used for email notifications and avatar generation.

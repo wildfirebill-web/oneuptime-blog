@@ -330,6 +330,7 @@ class VersionedEvent(ABC):
         pass
 
 # V1 Event
+
 @dataclass
 class OrderCreatedEventV1(VersionedEvent):
     metadata: EventMetadata = field(default_factory=EventMetadata)

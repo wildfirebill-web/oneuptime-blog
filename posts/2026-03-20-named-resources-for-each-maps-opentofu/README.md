@@ -8,7 +8,7 @@ Description: Learn how to use for_each with maps in OpenTofu to create named res
 
 ## Introduction
 
-`for_each` with a map creates one resource per map entry, identified by the map key rather than a numeric index. This gives resources stable identities — adding or removing entries only affects those specific resources, not the entire collection.
+`for_each` with a map creates one resource per map entry, identified by the map key rather than a numeric index. This gives resources stable identities - adding or removing entries only affects those specific resources, not the entire collection.
 
 ## Basic for_each with a Map
 
@@ -115,6 +115,7 @@ resource "aws_autoscaling_group" "envs" {
 
 ```hcl
 # Reference a specific resource by its map key
+
 output "prod_vpc_id" {
   value = aws_vpc.envs["prod"].id
 }

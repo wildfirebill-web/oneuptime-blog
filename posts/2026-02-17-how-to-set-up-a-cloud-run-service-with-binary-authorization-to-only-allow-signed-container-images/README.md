@@ -36,6 +36,7 @@ Enable the required APIs:
 
 ```bash
 # Enable Binary Authorization and related APIs
+
 gcloud services enable \
   binaryauthorization.googleapis.com \
   containeranalysis.googleapis.com \

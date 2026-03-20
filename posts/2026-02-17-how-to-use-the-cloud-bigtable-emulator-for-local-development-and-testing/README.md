@@ -18,6 +18,7 @@ The Bigtable emulator comes bundled with the Google Cloud SDK. If you have `gclo
 
 ```bash
 # Install the Bigtable emulator component via gcloud
+
 gcloud components install bigtable
 
 # Verify the installation

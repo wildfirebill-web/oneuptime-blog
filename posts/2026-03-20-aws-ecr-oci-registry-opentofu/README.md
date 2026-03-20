@@ -8,7 +8,7 @@ Description: Learn how to use AWS Elastic Container Registry as an OCI registry 
 
 ## Introduction
 
-AWS Elastic Container Registry (ECR) is OCI-compliant and works as both a container image registry and an OCI artifact store. For AWS-centric organizations, ECR provides native IAM authentication, cross-account access, lifecycle policies, and replication — making it a natural choice for OpenTofu provider and module distribution.
+AWS Elastic Container Registry (ECR) is OCI-compliant and works as both a container image registry and an OCI artifact store. For AWS-centric organizations, ECR provides native IAM authentication, cross-account access, lifecycle policies, and replication - making it a natural choice for OpenTofu provider and module distribution.
 
 ## Creating ECR Repositories for OpenTofu
 
@@ -16,6 +16,7 @@ AWS Elastic Container Registry (ECR) is OCI-compliant and works as both a contai
 # ecr.tf - Create ECR repositories for OpenTofu providers and modules
 
 # Repository for providers
+
 resource "aws_ecr_repository" "opentofu_providers" {
   name                 = "opentofu-providers/hashicorp-aws"
   image_tag_mutability = "MUTABLE"  # Allow tag updates for latest

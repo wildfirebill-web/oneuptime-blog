@@ -22,6 +22,7 @@ Install Kata Containers and its dependencies on all nodes where you want to run 
 
 ```bash
 # Add Kata Containers repository
+
 ARCH=$(arch)
 BRANCH="${BRANCH:-master}"
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/ /' > /etc/apt/sources.list.d/kata-containers.list"

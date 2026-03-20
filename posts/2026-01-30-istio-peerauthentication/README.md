@@ -70,6 +70,7 @@ The most common approach is to apply a policy to an entire namespace.
 
 ```yaml
 # peer-auth-namespace.yaml
+
 # Enforces mTLS for all workloads in the production namespace
 apiVersion: security.istio.io/v1beta1
 kind: PeerAuthentication

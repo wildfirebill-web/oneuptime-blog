@@ -55,6 +55,7 @@ For existing resources, use kubectl to add or change shard labels.
 
 ```bash
 # Assign a Kustomization to shard-1
+
 kubectl label kustomization production-apps \
   sharding.fluxcd.io/key=shard-1 \
   -n flux-system

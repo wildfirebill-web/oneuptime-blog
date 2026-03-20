@@ -18,6 +18,7 @@ The simplest way to read data from an internal API is the built-in HTTP data sou
 
 ```hcl
 # Read configuration from an internal API
+
 data "http" "service_config" {
   url = "https://internal-api.company.com/v1/config/web-service"
 

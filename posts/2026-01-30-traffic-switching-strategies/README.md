@@ -55,6 +55,7 @@ This configuration splits traffic 90/10 between two endpoints. The weights do no
 
 ```bash
 # Create weighted DNS records for gradual traffic shift
+
 aws route53 change-resource-record-sets \
   --hosted-zone-id Z1234567890ABC \
   --change-batch '{

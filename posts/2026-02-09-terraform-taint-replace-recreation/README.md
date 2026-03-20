@@ -25,6 +25,7 @@ Force recreation of a deployment:
 
 ```bash
 # Replace a specific deployment
+
 terraform apply -replace="kubernetes_deployment.api"
 
 # Replace multiple resources

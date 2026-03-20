@@ -124,6 +124,7 @@ Set your environment variable and start the Collector:
 
 ```bash
 # Export your Better Stack source token
+
 export BETTER_STACK_SOURCE_TOKEN="your-source-token-here"
 
 # Run the Collector with your config

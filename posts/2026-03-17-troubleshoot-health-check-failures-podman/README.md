@@ -18,6 +18,7 @@ Health check failures can be caused by many factors: incorrect commands, applica
 
 ```bash
 # View the current health status
+
 podman inspect --format='{{.State.Health.Status}}' my-app
 
 # View detailed health check logs

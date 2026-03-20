@@ -18,6 +18,7 @@ On Ubuntu 22.04+:
 
 ```bash
 # Add Nginx mainline repository
+
 sudo apt-get install nginx
 
 # Verify HTTP/3 QUIC support

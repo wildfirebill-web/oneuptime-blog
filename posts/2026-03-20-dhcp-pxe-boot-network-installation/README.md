@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, PXE Boot, Network Installation, sysadmin, Linux
+Tags: DHCP, PXE Boot, Network Installation, Sysadmin, Linux
 
 Description: PXE (Pre-boot Execution Environment) uses DHCP options 66 and 67 to deliver TFTP server address and boot filename to network-booting clients, enabling automated OS installation without physical media.
 
@@ -25,10 +25,11 @@ sequenceDiagram
 
 ## ISC dhcpd Configuration for PXE
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 
 # TFTP server and boot file for PXE clients
+
 next-server 10.0.0.10;              # TFTP server IP (option 66)
 filename "pxelinux.0";              # Boot filename (option 67)
 

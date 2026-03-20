@@ -151,6 +151,7 @@ Use transformation queries to create annotations based on specific event pattern
 
 ```promql
 # Annotation for pod restarts
+
 changes(kube_pod_container_status_restarts_total{namespace="$namespace", pod="$pod"}[5m]) > 0
 
 # Annotation for OOMKilled events

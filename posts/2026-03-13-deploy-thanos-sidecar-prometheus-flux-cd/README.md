@@ -30,6 +30,7 @@ Thanos needs credentials to write to object storage. Store them securely.
 
 ```bash
 # Create the Thanos object storage configuration secret
+
 # Use Sealed Secrets or ESO in production - never commit credentials to Git
 kubectl create secret generic thanos-objstore-config \
   --from-file=objstore.yml=thanos-objstore.yml \

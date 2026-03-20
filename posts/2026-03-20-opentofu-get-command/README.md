@@ -8,7 +8,7 @@ Description: Learn how to use tofu get to download and update modules referenced
 
 ## Introduction
 
-`tofu get` downloads modules referenced in the configuration into the `.terraform/modules` cache directory. It is a subset of what `tofu init` does — specifically the module download step. Use it when you have already initialized providers and only need to update module sources.
+`tofu get` downloads modules referenced in the configuration into the `.terraform/modules` cache directory. It is a subset of what `tofu init` does - specifically the module download step. Use it when you have already initialized providers and only need to update module sources.
 
 ## Basic Usage
 
@@ -16,6 +16,7 @@ Description: Learn how to use tofu get to download and update modules referenced
 tofu get
 
 # Output:
+
 # Downloading git::https://github.com/acme/terraform-aws-vpc for module.networking...
 # - module.networking in .terraform/modules/networking
 ```
@@ -59,7 +60,7 @@ In most workflows, `tofu init` is preferred because it handles all initializatio
 
 Downloaded modules are stored in `.terraform/modules`:
 
-```
+```text
 .terraform/
 └── modules/
     ├── modules.json          # Module registry
@@ -101,7 +102,7 @@ cat .terraform/modules/modules.json | jq '.'
 .terraform/
 ```
 
-Module sources are defined in configuration — the downloaded contents should not be committed.
+Module sources are defined in configuration - the downloaded contents should not be committed.
 
 ## get with No Modules
 
@@ -123,4 +124,4 @@ tofu get -update
 
 ## Conclusion
 
-`tofu get` downloads modules into the local cache for use by `tofu plan` and `tofu apply`. In most cases, run `tofu init` instead — it includes module downloads plus provider installation and backend configuration. Use `tofu get -update` specifically when you want to refresh module sources without re-initializing providers. Always gitignore the `.terraform/` directory since module and provider caches are local artifacts.
+`tofu get` downloads modules into the local cache for use by `tofu plan` and `tofu apply`. In most cases, run `tofu init` instead - it includes module downloads plus provider installation and backend configuration. Use `tofu get -update` specifically when you want to refresh module sources without re-initializing providers. Always gitignore the `.terraform/` directory since module and provider caches are local artifacts.

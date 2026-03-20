@@ -29,6 +29,7 @@ You will need:
 
 ```bash
 # Install the Google Cloud Ansible collection
+
 ansible-galaxy collection install google.cloud
 ```
 

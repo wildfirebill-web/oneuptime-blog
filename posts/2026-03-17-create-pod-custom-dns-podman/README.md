@@ -18,6 +18,7 @@ By default, containers inherit DNS configuration from the host. In many environm
 
 ```bash
 # Create a pod that uses Cloudflare and Google DNS
+
 podman pod create --name dns-pod \
   --dns 1.1.1.1 \
   --dns 8.8.8.8

@@ -12,7 +12,7 @@ Cisco Meraki is a cloud-managed networking platform. IPv6 is configured through 
 
 ## Meraki Dashboard IPv6 Configuration
 
-```
+```text
 Meraki Dashboard: Security & SD-WAN > Addressing & VLANs
 
 For each VLAN/subnet:
@@ -30,7 +30,7 @@ Mode options:
 
 ## Meraki MX IPv6 Addressing
 
-```
+```text
 Meraki Dashboard > Security & SD-WAN > Appliance Status
 
 WAN IPv6:
@@ -51,7 +51,7 @@ VLAN 1 (Default):
 
 ## Verify Meraki IPv6 via Dashboard
 
-```
+```nginx
 Dashboard > Network-wide > Clients
 
 Filter by: IPv6 address
@@ -131,7 +131,7 @@ if __name__ == '__main__':
 
 ## Meraki MR Access Point IPv6 Features
 
-```
+```text
 MR Access Points (Cloud Managed):
 - Transparent L2 bridge: Pass-through RA and DHCPv6 automatically
 - No local IPv6 configuration needed on APs
@@ -148,7 +148,7 @@ IPv6 SSID considerations:
 
 ## Firewall Policy for IPv6 on Meraki
 
-```
+```text
 Dashboard > Security & SD-WAN > Firewall
 
 IPv6 Rules (under L3 Outbound rules):
@@ -176,6 +176,7 @@ Rule 4: Allow established outbound
 # SSH into MX (if enabled) or use Dashboard Tools > Ping
 
 # From Dashboard > Tools > Ping
+
 # Target: 2606:4700:4700::1111 (Cloudflare DNS IPv6)
 # Interface: WAN1
 
@@ -192,4 +193,4 @@ Rule 4: Allow established outbound
 # Event type: IPv6 DHCP
 ```
 
-Meraki IPv6 deployment is largely automated through the Dashboard—enabling IPv6 on VLAN interfaces triggers automatic RA generation and DHCPv6 configuration. MR access points transparently bridge all ICMPv6 and DHCPv6 traffic, requiring no AP-specific IPv6 configuration for wireless clients to receive global IPv6 addresses.
+Meraki IPv6 deployment is largely automated through the Dashboard-enabling IPv6 on VLAN interfaces triggers automatic RA generation and DHCPv6 configuration. MR access points transparently bridge all ICMPv6 and DHCPv6 traffic, requiring no AP-specific IPv6 configuration for wireless clients to receive global IPv6 addresses.

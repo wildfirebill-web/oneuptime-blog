@@ -28,6 +28,7 @@ NFS requires a FileStorage account kind, not a general-purpose v2:
 
 ```bash
 # Create a premium FileStorage account for NFS support
+
 az storage account create \
   --name mynfsstorageaccount \
   --resource-group myresourcegroup \

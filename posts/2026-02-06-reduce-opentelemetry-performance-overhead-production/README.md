@@ -113,6 +113,7 @@ Monitor collector resource usage.
 
 ```promql
 # Collector CPU usage
+
 rate(process_cpu_seconds_total{job="otel-collector"}[5m])
 
 # Collector memory usage

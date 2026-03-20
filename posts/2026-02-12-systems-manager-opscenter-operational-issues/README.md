@@ -30,6 +30,7 @@ OpsCenter is part of Systems Manager and doesn't cost anything extra - you just 
 
 ```bash
 # Enable OpsCenter (Explorer needs to be set up first)
+
 aws ssm update-service-setting \
   --setting-id "arn:aws:ssm:us-east-1:123456789012:servicesetting/ssm/opsitem/EC2" \
   --setting-value "Enabled"

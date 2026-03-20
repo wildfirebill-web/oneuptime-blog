@@ -18,6 +18,7 @@ The base64 encoding is for data transport, not security. Here is what a typical 
 
 ```bash
 # Decode a secret value
+
 kubectl get secret my-secret -o jsonpath='{.data.password}' | base64 -d
 ```
 

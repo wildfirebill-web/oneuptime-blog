@@ -58,6 +58,7 @@ sequenceDiagram
 
 ```bash
 # Look for NotReady nodes
+
 kubectl get nodes
 
 # Get details on a NotReady node

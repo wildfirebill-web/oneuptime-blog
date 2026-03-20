@@ -6,12 +6,13 @@ Tags: OpenTofu, Dynamic Blocks, Refactoring, HCL, Infrastructure as Code
 
 Description: Learn how to refactor repetitive inline resource blocks in OpenTofu to dynamic blocks for cleaner, more maintainable configurations.
 
-When the same type of nested block appears multiple times within a resource — security group rules, listener rules, environment variables — inline repetition becomes hard to maintain. Dynamic blocks replace repeated inline blocks with a single, loop-driven block that generates them from a variable or local.
+When the same type of nested block appears multiple times within a resource - security group rules, listener rules, environment variables - inline repetition becomes hard to maintain. Dynamic blocks replace repeated inline blocks with a single, loop-driven block that generates them from a variable or local.
 
 ## The Problem: Repetitive Inline Blocks
 
 ```hcl
 # Hard to maintain: adding a rule requires editing the resource directly
+
 resource "aws_security_group" "web" {
   name   = "web-sg"
   vpc_id = var.vpc_id
@@ -76,7 +77,7 @@ resource "aws_security_group" "web" {
 
 ## Dynamic ECS Container Definitions
 
-Another common use case — ECS task definition environment variables:
+Another common use case - ECS task definition environment variables:
 
 ```hcl
 variable "env_vars" {

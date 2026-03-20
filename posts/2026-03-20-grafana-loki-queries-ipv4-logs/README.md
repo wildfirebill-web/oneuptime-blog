@@ -8,7 +8,7 @@ Description: Use Grafana Loki to collect, query, and visualize IPv4 address patt
 
 ## Introduction
 
-Loki stores and queries logs using LogQL. For IPv4 monitoring, you can filter logs by client IP address, count requests per source IP, identify top talkers, and alert on suspicious access patterns—all without indexing log content.
+Loki stores and queries logs using LogQL. For IPv4 monitoring, you can filter logs by client IP address, count requests per source IP, identify top talkers, and alert on suspicious access patterns-all without indexing log content.
 
 ## Loki Configuration for Log Collection
 
@@ -74,6 +74,7 @@ scrape_configs:
 
 ```logql
 # All Nginx access logs
+
 {job="nginx"}
 
 # Requests from specific IPv4

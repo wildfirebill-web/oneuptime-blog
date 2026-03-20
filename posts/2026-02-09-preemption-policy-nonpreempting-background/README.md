@@ -38,6 +38,7 @@ Set up a hierarchy of priority classes:
 
 ```yaml
 # Production workloads - can preempt
+
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
 metadata:

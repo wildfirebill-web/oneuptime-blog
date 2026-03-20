@@ -1,4 +1,4 @@
-# How to Configure the GitHub Provider in OpenTofu
+# How to Configure the GitHub Provider in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -32,6 +32,7 @@ terraform {
 }
 
 # Configure the provider with credentials
+
 provider "example" {
   # Use environment variables for credentials
   # EXAMPLE_API_KEY, EXAMPLE_TOKEN, etc.

@@ -49,6 +49,7 @@ Initialize the service in your target region:
 
 ```python
 # Initialize MGN in the target region
+
 import boto3
 
 mgn = boto3.client('mgn', region_name='us-east-1')

@@ -137,6 +137,7 @@ spec:
 
 ```bash
 # Test allowed method
+
 kubectl exec -n production client-pod -- \
   grpcurl -plaintext user-service:50051 \
   com.example.UserService/GetUser

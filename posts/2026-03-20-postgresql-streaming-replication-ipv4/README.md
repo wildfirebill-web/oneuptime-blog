@@ -27,6 +27,7 @@ graph LR
 # /etc/postgresql/15/main/postgresql.conf
 
 # Bind to the primary's IPv4 address (and localhost)
+
 listen_addresses = '10.0.0.10,127.0.0.1'
 
 # WAL settings for streaming replication
@@ -41,7 +42,7 @@ max_replication_slots = 5        # Allow replication slots if needed
 
 ### pg_hba.conf
 
-```
+```text
 # /etc/postgresql/15/main/pg_hba.conf
 # Allow the replication user from the standby server's IPv4 address
 host    replication     replicator     10.0.0.11/32     scram-sha-256

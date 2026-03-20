@@ -24,6 +24,7 @@ Deploy the Metrics Server using its official manifest:
 
 ```bash
 # Download and apply the Metrics Server components
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 

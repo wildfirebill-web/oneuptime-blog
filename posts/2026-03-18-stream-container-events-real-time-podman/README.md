@@ -20,6 +20,7 @@ The `podman events` command streams events in real-time by default. It blocks an
 
 ```bash
 # Start streaming all events in real-time
+
 # This will block and wait for events
 podman events
 ```

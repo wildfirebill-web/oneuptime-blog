@@ -16,6 +16,7 @@ The collection requires the `google-auth` Python library and optionally `request
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install google.cloud
 
 # Install Python dependencies

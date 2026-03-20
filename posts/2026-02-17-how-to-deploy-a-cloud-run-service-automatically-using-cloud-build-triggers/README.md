@@ -36,6 +36,7 @@ Before starting, make sure you have:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable cloudbuild.googleapis.com
 gcloud services enable run.googleapis.com
 gcloud services enable artifactregistry.googleapis.com

@@ -16,6 +16,7 @@ Graylog is a log management platform that uses OpenSearch or Elasticsearch for s
 # /etc/graylog/server/server.conf
 
 # Bind Graylog web interface to IPv6
+
 http_bind_address = [::]:9000
 
 # Elasticsearch (or OpenSearch) connection

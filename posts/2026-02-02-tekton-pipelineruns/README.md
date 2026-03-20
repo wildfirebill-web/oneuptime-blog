@@ -54,6 +54,7 @@ The following commands install Tekton Pipelines and the CLI tool for interacting
 
 ```bash
 # Install Tekton Pipelines
+
 kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 
 # Wait for Tekton to be ready

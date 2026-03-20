@@ -14,7 +14,7 @@ Many commercial SSL certificates require intermediate certificates to establish 
 
 A complete certificate chain includes:
 
-```
+```text
 Root CA Certificate (trusted by OS/browser)
     └── Intermediate CA Certificate
         └── Your Server Certificate (portainer.example.com)
@@ -28,6 +28,7 @@ Combine your server certificate with intermediate certificates in the correct or
 
 ```bash
 # Order is important: your cert FIRST, then intermediates in order
+
 # DO NOT include the root CA (it's pre-trusted by clients)
 
 cat your_domain.crt > /opt/portainer/certs/portainer.crt

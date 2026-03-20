@@ -38,6 +38,7 @@ First, allowlist the extension:
 
 ```bash
 # Add citus to the allowed extensions
+
 az postgres flexible-server parameter set \
   --resource-group myResourceGroup \
   --server-name my-pg-server \

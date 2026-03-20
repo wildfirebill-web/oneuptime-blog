@@ -43,6 +43,7 @@ Flux will create the `flux-system` namespace and configure a GitRepository point
 
 ```yaml
 # clusters/production/apps/myapp.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

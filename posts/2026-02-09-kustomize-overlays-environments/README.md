@@ -45,6 +45,7 @@ Define your base Kubernetes resources:
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

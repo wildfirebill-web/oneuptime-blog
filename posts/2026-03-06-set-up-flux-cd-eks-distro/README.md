@@ -39,6 +39,7 @@ This guide covers deploying EKS-D with kOps on AWS, the most common production s
 
 ```bash
 # Install Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Install kOps

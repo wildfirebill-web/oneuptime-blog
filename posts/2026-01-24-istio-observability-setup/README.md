@@ -50,6 +50,7 @@ The quickest way to get started is using the sample addons that come with Istio.
 
 ```bash
 # Navigate to your Istio installation directory
+
 cd istio-1.20.0
 
 # Install all observability addons
@@ -463,7 +464,7 @@ kubectl exec -it <any-pod> -c istio-proxy -- \
   curl -s localhost:15000/stats/prometheus | head -50
 ```
 
-### Resource Considerations
+Resource Considerations
 
 Observability tools consume resources. Plan accordingly.
 

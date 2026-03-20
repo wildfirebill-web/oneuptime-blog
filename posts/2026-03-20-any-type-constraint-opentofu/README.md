@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Type Constraints, any, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variables, Type Constraints, Any, Infrastructure as Code, DevOps
 
 Description: A guide to understanding and using the any type constraint in OpenTofu variables for flexible but cautious typing.
 
@@ -14,6 +14,7 @@ The `any` type constraint in OpenTofu tells the system to accept any value type 
 
 ```hcl
 # Variables with 'any' accept values of any type
+
 variable "flexible_config" {
   type = any
 }

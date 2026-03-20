@@ -50,6 +50,7 @@ Snort 3 is a complete rewrite with improved performance and a modern architectur
 
 ```dockerfile
 # Dockerfile - Snort 3 IDS
+
 # Builds Snort 3 from packages on Ubuntu
 FROM ubuntu:22.04
 

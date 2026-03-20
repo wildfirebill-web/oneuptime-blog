@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, http, HTTP, REST API, Infrastructure as Code, DevOps
+Tags: OpenTofu, Data Source, HTTP, REST API, Infrastructure as Code, DevOps
 
 Description: A guide to using the http data source in OpenTofu to fetch data from HTTP APIs and web endpoints during configuration.
 
@@ -27,6 +27,7 @@ terraform {
 
 ```hcl
 # Fetch data from a public API
+
 data "http" "ip_info" {
   url = "https://api.ipify.org?format=json"
 }

@@ -37,6 +37,7 @@ The simplest use case is checking whether a specific traffic flow is allowed:
 
 ```bash
 # Check if SSH traffic from the internet is allowed to a VM
+
 az network watcher test-ip-flow \
   --direction Inbound \
   --protocol TCP \

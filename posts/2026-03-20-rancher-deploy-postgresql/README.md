@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, PostgreSQL, Databases, Helm
+Tags: Rancher, Kubernetes, PostgreSQL, Database, Helm
 
 Description: Deploy a production-ready PostgreSQL database on Rancher with high availability using the Bitnami chart or the CloudNativePG operator for cloud-native management.
 
@@ -23,6 +23,7 @@ PostgreSQL is a powerful, enterprise-grade open-source relational database. This
 
 ```yaml
 # postgresql-values.yaml - Production PostgreSQL configuration
+
 auth:
   postgresPassword: "SecureP0stgresP@ss"
   username: "appuser"

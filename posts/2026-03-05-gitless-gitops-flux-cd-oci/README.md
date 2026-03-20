@@ -41,6 +41,7 @@ The `flux push artifact` command packages a directory of Kubernetes manifests in
 
 ```bash
 # Push the contents of ./deploy/production as an OCI artifact
+
 # The tag uses the Git SHA for traceability
 flux push artifact oci://ghcr.io/myorg/app-manifests:$(git rev-parse --short HEAD) \
   --path=./deploy/production \

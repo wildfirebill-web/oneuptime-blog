@@ -20,6 +20,7 @@ The exporter hashes the trace ID and maps it to one of the available backends. A
 
 ```yaml
 # agent-config.yaml
+
 receivers:
   otlp:
     protocols:

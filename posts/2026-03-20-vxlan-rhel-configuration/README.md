@@ -14,6 +14,7 @@ On RHEL, VXLAN interfaces are managed by NetworkManager via nmcli. This provides
 
 ```bash
 # Create a VXLAN connection
+
 nmcli connection add type vxlan \
   ifname vxlan10 \
   con-name vxlan10 \

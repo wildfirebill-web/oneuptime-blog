@@ -41,6 +41,7 @@ helm repo update
 
 ```yaml
 # loki-values.yaml
+
 loki:
   auth_enabled: false
   storage:

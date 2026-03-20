@@ -269,6 +269,7 @@ This matters because HTTP-specific fields (like `methods` and `paths`) only work
 
 ```yaml
 # This will NOT work as expected for a TCP port
+
 - to:
   - operation:
       ports:

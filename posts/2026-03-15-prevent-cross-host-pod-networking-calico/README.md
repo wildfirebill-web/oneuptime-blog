@@ -30,6 +30,7 @@ Ensure the underlying network always permits Calico traffic.
 
 ```bash
 # Define required ports and protocols in infrastructure-as-code
+
 # Terraform example for AWS security groups
 ```
 

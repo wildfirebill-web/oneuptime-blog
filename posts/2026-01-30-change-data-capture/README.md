@@ -654,6 +654,7 @@ class TriggerBasedCDC:
 
 
 # Usage example
+
 if __name__ == "__main__":
     db_config = {
         "host": "localhost",

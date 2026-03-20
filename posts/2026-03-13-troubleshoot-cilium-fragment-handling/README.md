@@ -29,6 +29,7 @@ Detect if fragmentation is causing connectivity problems.
 
 ```bash
 # Test connectivity with different payload sizes to identify MTU threshold
+
 kubectl exec <test-pod> -- ping -s 1400 -M dont <destination-ip>
 kubectl exec <test-pod> -- ping -s 1450 -M dont <destination-ip>
 kubectl exec <test-pod> -- ping -s 1480 -M dont <destination-ip>

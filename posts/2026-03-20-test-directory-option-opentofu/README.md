@@ -14,6 +14,7 @@ By default, `tofu test` searches for `.tftest.hcl` and `.tofutest.hcl` files in 
 
 ```bash
 # Run tests stored in a dedicated 'tests' subdirectory
+
 tofu test -test-directory=tests
 
 # Use an absolute path
@@ -29,7 +30,7 @@ tofu test -test-directory=../shared-tests
 
 For simple modules, co-locate tests in a `tests/` folder:
 
-```
+```text
 modules/s3/
 ├── main.tf
 ├── variables.tf
@@ -48,7 +49,7 @@ tofu test -test-directory=tests
 
 In a monorepo with multiple environments, centralise integration tests:
 
-```
+```text
 infra/
 ├── modules/
 │   ├── networking/
@@ -76,7 +77,7 @@ tofu test -test-directory=tests/integration
 
 A common pattern is to have a `fixtures/` folder alongside tests for reusable variable files:
 
-```
+```text
 tests/
 ├── fixtures/
 │   ├── dev.tfvars
@@ -120,7 +121,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: opentofu/setup-opentofu@v1
       - run: tofu init
-      # Fast unit tests on every PR—no cloud credentials needed
+      # Fast unit tests on every PR-no cloud credentials needed
       - run: tofu test -test-directory=tests/unit
 
   integration-tests:
@@ -151,4 +152,4 @@ tofu test \
 
 ## Conclusion
 
-The `-test-directory` option is a small but powerful flag that enables clean separation of test types and environments. Adopt a consistent directory convention early—it pays dividends as your infrastructure codebase scales.
+The `-test-directory` option is a small but powerful flag that enables clean separation of test types and environments. Adopt a consistent directory convention early-it pays dividends as your infrastructure codebase scales.

@@ -170,6 +170,7 @@ You can test draining behavior by simulating a rolling update while generating t
 
 ```bash
 # Start generating traffic in one terminal
+
 kubectl exec sleep-pod -- sh -c \
   'while true; do curl -s -o /dev/null -w "%{http_code}\n" http://my-app:8080/health; sleep 0.1; done'
 

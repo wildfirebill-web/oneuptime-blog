@@ -38,6 +38,7 @@ Use the SLSA GitHub generator to create provenance attestations for your contain
 
 ```yaml
 # .github/workflows/build-slsa.yaml
+
 name: Build with SLSA Provenance
 on:
   push:

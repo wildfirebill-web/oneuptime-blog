@@ -29,6 +29,7 @@ Port provides a Helm chart for the Kubernetes exporter that syncs cluster resour
 
 ```yaml
 # infrastructure/port/helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

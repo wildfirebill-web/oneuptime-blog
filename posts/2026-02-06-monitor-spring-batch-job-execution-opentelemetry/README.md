@@ -67,6 +67,7 @@ Configure Spring Batch with basic settings:
 
 ```yaml
 # application.yml
+
 spring:
   batch:
     job:

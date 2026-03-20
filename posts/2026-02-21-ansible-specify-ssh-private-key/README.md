@@ -16,6 +16,7 @@ The quickest way to specify a key for a single run is the `--private-key` flag (
 
 ```bash
 # Specify the SSH private key on the command line
+
 ansible-playbook -i inventory.ini site.yml --private-key ~/.ssh/deploy_key
 
 # Alternative syntax

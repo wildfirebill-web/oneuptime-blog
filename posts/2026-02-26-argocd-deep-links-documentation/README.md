@@ -167,6 +167,7 @@ The most flexible approach is to store documentation URLs directly in resource a
 
 ```yaml
 # In your application's deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

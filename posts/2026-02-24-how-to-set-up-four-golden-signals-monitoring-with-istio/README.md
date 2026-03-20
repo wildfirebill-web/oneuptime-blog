@@ -29,6 +29,7 @@ Successful request latency (P50, P95, P99):
 
 ```promql
 # P50 latency for successful requests
+
 histogram_quantile(0.50,
   sum(rate(istio_request_duration_milliseconds_bucket{
     destination_service_name="my-api",

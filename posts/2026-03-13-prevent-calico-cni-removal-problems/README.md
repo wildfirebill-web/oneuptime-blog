@@ -30,6 +30,7 @@ The most important preventive measure is to drain all workloads from the cluster
 
 ```bash
 # Pre-removal checklist: document what will be cleaned
+
 kubectl get all -n kube-system | grep calico
 kubectl get crd | grep calico
 calicoctl get ippool

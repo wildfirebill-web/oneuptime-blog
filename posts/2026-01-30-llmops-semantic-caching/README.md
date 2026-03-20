@@ -63,6 +63,7 @@ Let us start by creating a class that handles embedding generation. We will use 
 
 ```python
 # embedding_service.py
+
 # This module handles the conversion of text queries into vector embeddings.
 # Embeddings are numerical representations that capture semantic meaning.
 

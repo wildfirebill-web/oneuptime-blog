@@ -19,6 +19,7 @@ OpenTofu state contains a complete inventory of your managed resources with thei
 tofu state pull > /tmp/terraform.tfstate.json
 
 # Or for all workspaces
+
 for workspace in $(tofu workspace list | tr -d '* '); do
   tofu workspace select "$workspace"
   tofu state pull > "/tmp/state-${workspace}.json"
@@ -147,4 +148,4 @@ python3 scripts/cost_report.py /tmp/terraform.tfstate.json /tmp/cost_report.json
 
 ## Summary
 
-Combining OpenTofu state data with AWS Cost Explorer provides accurate cost attribution by team, environment, and project. The state file serves as a ground truth resource inventory, while Cost Explorer provides the actual spend data — together enabling FinOps-grade reporting without additional tooling.
+Combining OpenTofu state data with AWS Cost Explorer provides accurate cost attribution by team, environment, and project. The state file serves as a ground truth resource inventory, while Cost Explorer provides the actual spend data - together enabling FinOps-grade reporting without additional tooling.

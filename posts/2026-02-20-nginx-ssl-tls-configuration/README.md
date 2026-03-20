@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, SSL, TLS, Security, HTTPS
+Tags: Nginx, SSL, TLS, Security, HTTPS
 
 Description: Best practices for configuring SSL/TLS in Nginx including cipher suites, HSTS, OCSP stapling, and certificate management.
 
@@ -35,6 +35,7 @@ Start with a minimal HTTPS server block.
 
 ```nginx
 # /etc/nginx/conf.d/ssl.conf
+
 server {
     # Listen on port 443 with SSL and HTTP/2 enabled
     listen 443 ssl http2;

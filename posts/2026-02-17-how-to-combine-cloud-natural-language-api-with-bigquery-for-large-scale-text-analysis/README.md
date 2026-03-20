@@ -33,6 +33,7 @@ Install the required libraries with pip.
 
 ```bash
 # Install both the Natural Language and BigQuery client libraries
+
 pip install google-cloud-language google-cloud-bigquery
 ```
 

@@ -26,6 +26,7 @@ provider "aws" {
 }
 
 # Custom parameter group for MySQL 8.0
+
 resource "aws_db_parameter_group" "mysql" {
   name        = "custom-mysql80"
   family      = "mysql8.0"  # Must match the engine version

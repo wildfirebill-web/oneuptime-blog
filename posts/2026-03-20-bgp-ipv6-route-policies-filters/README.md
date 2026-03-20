@@ -76,7 +76,7 @@ end
 
 ## Cisco: Prefix List and Route Map Filtering
 
-```
+```text
 ! Create IPv6 prefix lists
 Router(config)# ipv6 prefix-list PEER_IN  seq 5  permit 2001:db8:peer::/48 le 64
 Router(config)# ipv6 prefix-list PEER_IN  seq 99 deny ::/0 le 128
@@ -96,6 +96,7 @@ Limit the number of prefixes accepted from a peer to prevent BGP table flooding:
 
 ```bash
 # FRRouting: limit prefixes from a peer
+
 router bgp 65001
  address-family ipv6 unicast
   ! Accept maximum 1000 prefixes; warn at 80%; tear down session at limit
@@ -103,7 +104,7 @@ router bgp 65001
  exit-address-family
 ```
 
-```
+```text
 ! Cisco
 Router(config-router-af)# neighbor 2001:db8:peer::2 maximum-prefix 1000 80 restart 5
 ```

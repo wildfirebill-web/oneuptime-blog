@@ -283,6 +283,7 @@ Once everything is deployed, test that rate limiting is working:
 
 ```bash
 # Send a burst of requests
+
 for i in $(seq 1 150); do
   curl -s -o /dev/null -w "%{http_code}\n" http://my-service.default.svc.cluster.local:8080/api/test
 done

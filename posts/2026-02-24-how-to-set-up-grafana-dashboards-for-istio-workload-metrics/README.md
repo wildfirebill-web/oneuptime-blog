@@ -130,6 +130,7 @@ For workloads using TCP connections:
 
 ```promql
 # Bytes sent per second
+
 sum(rate(istio_tcp_sent_bytes_total{
   reporter="destination",
   destination_workload=~"$workload",

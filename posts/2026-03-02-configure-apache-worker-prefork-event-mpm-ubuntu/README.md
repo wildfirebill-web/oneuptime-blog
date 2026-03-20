@@ -90,6 +90,7 @@ Main Process
 
 ```bash
 # Check which MPM is currently active
+
 sudo apache2ctl -M | grep mpm
 
 # More readable output

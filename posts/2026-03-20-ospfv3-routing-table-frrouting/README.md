@@ -14,6 +14,7 @@ On FRRouting, OSPFv3 verification happens at two levels: the FRR routing daemon'
 
 ```bash
 # Connect to the FRR CLI
+
 vtysh
 
 # Show all IPv6 routes including OSPFv3
@@ -28,7 +29,7 @@ show ipv6 ospf route
 
 ## Sample Output
 
-```
+```text
 Router# show ipv6 route ospf
 
 Codes: K - kernel route, C - connected, S - static, R - RIPng, O - OSPFv3,
@@ -119,4 +120,4 @@ systemctl restart frr
 
 ## Summary
 
-Verify FRRouting OSPFv3 routes with `show ipv6 route ospf` in vtysh (look for `>*` indicating best path and kernel installation) and confirm with `ip -6 route show proto ospf` in the shell. Routes showing `>` but not `*` indicate kernel installation failure — check Zebra logs and kernel forwarding settings.
+Verify FRRouting OSPFv3 routes with `show ipv6 route ospf` in vtysh (look for `>*` indicating best path and kernel installation) and confirm with `ip -6 route show proto ospf` in the shell. Routes showing `>` but not `*` indicate kernel installation failure - check Zebra logs and kernel forwarding settings.

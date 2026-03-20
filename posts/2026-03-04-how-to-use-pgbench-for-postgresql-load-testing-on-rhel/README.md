@@ -14,6 +14,7 @@ pgbench is a built-in benchmarking tool that ships with PostgreSQL. It runs a TP
 
 ```bash
 # Ensure PostgreSQL is installed and running
+
 sudo dnf install -y postgresql-server postgresql-contrib
 sudo postgresql-setup --initdb
 sudo systemctl enable --now postgresql

@@ -14,6 +14,7 @@ The "Network is unreachable" error means your system cannot find a route to the 
 
 ```bash
 # List all network interfaces and their state
+
 ip link show
 
 # Check if your primary interface is UP

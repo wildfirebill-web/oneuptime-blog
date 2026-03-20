@@ -305,6 +305,7 @@ spec:
 
 ```bash
 # Allow memberlist traffic between Loki pods
+
 iptables -A INPUT -p tcp --dport 7946 -j ACCEPT
 iptables -A INPUT -p udp --dport 7946 -j ACCEPT
 ```

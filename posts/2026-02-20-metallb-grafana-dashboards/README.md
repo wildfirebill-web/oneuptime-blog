@@ -16,6 +16,7 @@ You need Prometheus scraping MetalLB metrics and Grafana connected to Prometheus
 
 ```yaml
 # servicemonitor.yaml
+
 # Create a ServiceMonitor to tell Prometheus to scrape MetalLB metrics
 # This assumes you are using the Prometheus Operator
 apiVersion: monitoring.coreos.com/v1

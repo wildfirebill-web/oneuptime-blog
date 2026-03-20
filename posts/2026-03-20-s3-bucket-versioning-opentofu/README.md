@@ -29,6 +29,7 @@ resource "aws_s3_bucket" "versioned" {
 }
 
 # Enable versioning on the bucket
+
 resource "aws_s3_bucket_versioning" "main" {
   bucket = aws_s3_bucket.versioned.id
 
@@ -141,4 +142,4 @@ tofu apply
 
 ## Conclusion
 
-S3 versioning is a fundamental data protection feature that should be enabled on any bucket containing important data. Combine versioning with lifecycle rules to manage storage costs—transition old versions to STANDARD_IA or GLACIER and set expiration policies. Note that versioning cannot be disabled once enabled (only suspended), and versioning-enabled buckets incur storage charges for all versions.
+S3 versioning is a fundamental data protection feature that should be enabled on any bucket containing important data. Combine versioning with lifecycle rules to manage storage costs-transition old versions to STANDARD_IA or GLACIER and set expiration policies. Note that versioning cannot be disabled once enabled (only suspended), and versioning-enabled buckets incur storage charges for all versions.

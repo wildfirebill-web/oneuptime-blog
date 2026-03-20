@@ -14,6 +14,7 @@ Here is a job processing system that routes jobs to per-tenant queues and instru
 
 ```python
 # job_processor.py
+
 from opentelemetry import trace, metrics, context
 from opentelemetry.trace import StatusCode, Link
 import json

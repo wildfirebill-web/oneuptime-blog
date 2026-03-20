@@ -1,4 +1,4 @@
-# How to Deploy a Spring Boot + MySQL Stack via Portainer
+# How to Deploy a Spring Boot + MySQL Stack via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Spring Boot is the most widely used Java web framework, and MySQL is a popular r
 
 ```dockerfile
 # Dockerfile (multi-stage build)
+
 FROM maven:3.9-eclipse-temurin-21 AS builder
 
 WORKDIR /app
@@ -29,7 +30,7 @@ RUN mvn dependency:go-offline -q
 COPY src/ ./src/
 RUN mvn package -DskipTests -q
 
-# Runtime stage — much smaller image
+# Runtime stage - much smaller image
 FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app

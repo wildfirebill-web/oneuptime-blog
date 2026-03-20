@@ -29,6 +29,7 @@ The `BigQueryInsertJobOperator` is the go-to operator for running SQL queries:
 
 ```python
 # bq_query_dag.py - Run BigQuery queries from Cloud Composer
+
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobOperator

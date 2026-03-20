@@ -34,6 +34,7 @@ If someone manually changes something in the cluster that differs from Git, Conf
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   container.googleapis.com \
   gkehub.googleapis.com \

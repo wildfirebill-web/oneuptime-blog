@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Cloudflare, cloudflared, Stack, Docker Compose
+Tags: Portainer, Cloudflare, Cloudflared, Stacks, Docker Compose
 
 Description: Learn how to deploy cloudflared (Cloudflare Tunnel connector) as a Portainer-managed stack, enabling tunneled access to your services without command-line management.
 
 ## Overview
 
-Deploying cloudflared as a Portainer stack lets you manage your Cloudflare Tunnel connector through the Portainer UI — view logs, restart, update, and monitor the tunnel alongside your other services.
+Deploying cloudflared as a Portainer stack lets you manage your Cloudflare Tunnel connector through the Portainer UI - view logs, restart, update, and monitor the tunnel alongside your other services.
 
 ## Prerequisites
 
@@ -65,7 +65,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
-    # No ports published — cloudflared handles external access
+    # No ports published - cloudflared handles external access
 
   cloudflared:
     image: cloudflare/cloudflared:latest
@@ -99,15 +99,15 @@ From Portainer:
 
 1. Go to **Stacks → cloudflared**
 2. Click on the **cloudflared** service
-3. View **Logs** — a healthy tunnel shows:
+3. View **Logs** - a healthy tunnel shows:
 
-```
+```text
 2026-03-20T10:00:00Z INF Starting tunnel tunnelID=...
 2026-03-20T10:00:01Z INF Registered tunnel connection connIndex=0
 2026-03-20T10:00:01Z INF Connection registered with Cloudflare
 ```
 
-Also check in the Cloudflare Zero Trust dashboard under **Networks → Tunnels** — status should show **Healthy**.
+Also check in the Cloudflare Zero Trust dashboard under **Networks → Tunnels** - status should show **Healthy**.
 
 ## Updating cloudflared
 

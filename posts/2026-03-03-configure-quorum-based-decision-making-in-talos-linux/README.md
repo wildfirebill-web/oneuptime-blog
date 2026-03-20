@@ -63,6 +63,7 @@ Talos Linux configures etcd through the machine configuration. Here are the sett
 
 ```yaml
 # quorum-config-patch.yaml
+
 cluster:
   etcd:
     extraArgs:

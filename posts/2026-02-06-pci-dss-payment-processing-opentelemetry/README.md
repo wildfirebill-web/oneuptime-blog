@@ -18,6 +18,7 @@ The first step is to create a redaction processor that strips sensitive data bef
 
 ```python
 # pci_redaction.py
+
 import re
 from opentelemetry.sdk.trace import SpanProcessor
 

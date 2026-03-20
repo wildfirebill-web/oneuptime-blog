@@ -22,6 +22,7 @@ Create a launch template for EKS nodes:
 
 ```bash
 # Create launch template with AWS CLI
+
 aws ec2 create-launch-template \
   --launch-template-name eks-custom-nodes \
   --version-description "EKS custom node template v1" \

@@ -14,6 +14,7 @@ While local values are powerful, overusing them can make configurations harder t
 
 ```hcl
 # GOOD: Locals reduce repetition
+
 locals {
   common_tags = {
     Environment = var.environment
@@ -125,7 +126,7 @@ locals {
 
 ## Guidelines for Using Locals
 
-```
+```text
 USE locals when:
 ✅ The same value is used in 3+ places
 ✅ An expression is complex enough to benefit from naming

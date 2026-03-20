@@ -62,6 +62,7 @@ Start by initializing each module. Here is the setup process:
 
 ```bash
 # Create the project structure
+
 mkdir -p myproject/{api,worker,shared}
 cd myproject
 

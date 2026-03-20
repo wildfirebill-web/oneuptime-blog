@@ -27,6 +27,7 @@ Here is a complete GitHub Actions workflow that runs an Ansible playbook using a
 
 ```yaml
 # .github/workflows/ansible-deploy.yml
+
 name: Deploy with Ansible
 
 on:

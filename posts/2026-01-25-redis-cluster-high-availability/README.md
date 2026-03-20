@@ -41,6 +41,7 @@ Create a 6-node cluster (3 masters, 3 replicas):
 
 ```bash
 # Create directories for each node
+
 mkdir -p /data/redis-cluster/{7000,7001,7002,7003,7004,7005}
 
 # Create configuration for each node

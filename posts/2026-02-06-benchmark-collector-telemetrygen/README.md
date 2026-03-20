@@ -26,6 +26,7 @@ Install telemetrygen using Go:
 
 ```bash
 # Requires Go 1.20 or later
+
 go install github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen@latest
 
 # Verify installation

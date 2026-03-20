@@ -248,6 +248,7 @@ After configuring everything, validate that your setup is working correctly:
 
 ```bash
 # Check mTLS status between services
+
 istioctl authn tls-check deploy/frontend.default
 
 # Verify authorization policies are applied

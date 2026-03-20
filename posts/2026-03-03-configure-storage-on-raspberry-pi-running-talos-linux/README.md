@@ -25,6 +25,7 @@ Before configuring storage, understand how Talos uses disk space. When Talos ins
 
 ```bash
 # View the disk layout on a running Talos node
+
 talosctl -n <PI_IP> disks
 
 # View partition details

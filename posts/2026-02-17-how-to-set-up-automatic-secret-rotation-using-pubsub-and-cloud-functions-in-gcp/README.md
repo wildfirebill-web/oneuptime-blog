@@ -34,6 +34,7 @@ The rotation function needs to handle the full lifecycle: generate a new secret,
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   secretmanager.googleapis.com \
   cloudfunctions.googleapis.com \

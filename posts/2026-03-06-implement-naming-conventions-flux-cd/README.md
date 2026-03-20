@@ -27,6 +27,7 @@ A good naming convention should be predictable, parseable, and informative. Here
 
 ```yaml
 # docs/naming-convention.yaml
+
 # Reference document for resource naming standards
 
 # Pattern: <app>-<component>-<qualifier>

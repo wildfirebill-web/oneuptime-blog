@@ -28,6 +28,7 @@ Set up the rolling upgrade policy when creating the scale set or update it on an
 
 ```bash
 # Create a scale set with rolling upgrade policy
+
 az vmss create \
   --resource-group myResourceGroup \
   --name myScaleSet \

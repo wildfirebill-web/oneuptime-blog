@@ -10,10 +10,11 @@ Once MetalLB is installed with an IP pool, you can assign external IPs automatic
 
 ## Automatic Assignment from a Pool
 
-The simplest case — MetalLB picks an available IP from the pool:
+The simplest case - MetalLB picks an available IP from the pool:
 
 ```yaml
 # auto-assign-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

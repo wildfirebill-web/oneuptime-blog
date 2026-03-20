@@ -28,6 +28,7 @@ The first step in answering almost any Cilium question is confirming the install
 
 ```bash
 # Check the overall health of Cilium components
+
 cilium status
 
 # Run a connectivity test to verify the data plane is working

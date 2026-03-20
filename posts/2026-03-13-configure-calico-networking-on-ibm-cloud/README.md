@@ -46,6 +46,7 @@ For IBM Cloud Kubernetes Service, use the IBM Cloud CLI to get Calico credential
 ibmcloud login --apikey $IBM_API_KEY -r us-south
 
 # Get cluster credentials
+
 ibmcloud ks cluster config --cluster my-cluster
 
 # Download calicoctl config for the cluster

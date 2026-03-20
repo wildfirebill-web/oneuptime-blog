@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward StagedGlobalNetworkPoli
 
 ```bash
 # Verify current StagedGlobalNetworkPolicy resources
+
 calicoctl get stagedglobalnetworkpolicy -o yaml
 
 # Check the effective configuration on a specific node

@@ -20,6 +20,7 @@ Your kubeconfig, kubelet configurations on worker nodes, and any external tools 
 
 ```yaml
 # Example kubeconfig using VIP
+
 clusters:
   - cluster:
       server: https://192.168.1.100:6443    # VIP address

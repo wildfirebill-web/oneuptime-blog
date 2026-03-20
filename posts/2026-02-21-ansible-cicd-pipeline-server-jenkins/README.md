@@ -46,6 +46,7 @@ Define your Jenkins server in the inventory:
 
 ```ini
 # inventory/hosts.ini - Target Jenkins servers
+
 [jenkins]
 jenkins-server ansible_host=192.168.1.50 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
 ```

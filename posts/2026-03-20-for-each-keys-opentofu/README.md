@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, for_each, each.key, each.value, HCL, Infrastructure as Code
+Tags: OpenTofu, for_each, Each.key, Each.value, HCL, Infrastructure as Code
 
-Description: Learn how to use for_each with maps and sets in OpenTofu — understanding each.key, each.value, and how key selection affects state stability and resource naming.
+Description: Learn how to use for_each with maps and sets in OpenTofu - understanding each.key, each.value, and how key selection affects state stability and resource naming.
 
 ## Introduction
 
@@ -29,6 +29,7 @@ resource "aws_s3_bucket" "env_config" {
 }
 
 # State addresses:
+
 # aws_s3_bucket.env_config["dev"]
 # aws_s3_bucket.env_config["staging"]
 # aws_s3_bucket.env_config["prod"]
@@ -175,4 +176,4 @@ With `for_each`, removing a key only affects that one instance:
 
 ## Conclusion
 
-`for_each` with maps and sets creates stable, named resource instances. Use `each.key` for the resource identifier (name, tags, IDs) and `each.value` for configuration. Choose meaningful, stable keys — the key becomes part of the state address, and changing keys means destroy-and-recreate. Use `toset()` for simple string lists, for-expressions to convert lists of objects to maps, and always prefer `for_each` over `count` when resources have meaningful names.
+`for_each` with maps and sets creates stable, named resource instances. Use `each.key` for the resource identifier (name, tags, IDs) and `each.value` for configuration. Choose meaningful, stable keys - the key becomes part of the state address, and changing keys means destroy-and-recreate. Use `toset()` for simple string lists, for-expressions to convert lists of objects to maps, and always prefer `for_each` over `count` when resources have meaningful names.

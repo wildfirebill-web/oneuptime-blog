@@ -33,6 +33,7 @@ AppImages need FUSE to mount themselves:
 
 ```bash
 # For Ubuntu 22.04 and later (uses FUSE 3 by default, but AppImages often need FUSE 2)
+
 sudo apt install libfuse2
 
 # Verify FUSE is available

@@ -421,6 +421,7 @@ After applying all policies, verify that Flux reconciliation still works:
 
 ```bash
 # Force a full reconciliation
+
 flux reconcile source git flux-system
 flux reconcile kustomization flux-system
 

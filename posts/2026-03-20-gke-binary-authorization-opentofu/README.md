@@ -14,6 +14,7 @@ GKE Binary Authorization is a deploy-time security control that ensures only tru
 
 ```hcl
 # main.tf - Enable required APIs
+
 resource "google_project_service" "binary_authorization" {
   service = "binaryauthorization.googleapis.com"
 }

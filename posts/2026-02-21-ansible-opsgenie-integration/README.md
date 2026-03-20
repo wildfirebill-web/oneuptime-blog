@@ -37,6 +37,7 @@ graph TD
 
 ```yaml
 # group_vars/all.yml
+
 opsgenie_api_key: "{{ vault_opsgenie_api_key }}"
 opsgenie_api_url: "https://api.opsgenie.com/v2"
 opsgenie_alert_api_url: "https://api.opsgenie.com/v2/alerts"
@@ -193,6 +194,7 @@ Alert: {{ "{{ .Labels.alertname }}" }}
 Instance: {{ "{{ .Labels.instance }}" }}
 Severity: {{ "{{ .Labels.severity }}" }}
 Description: {{ "{{ .Annotations.description }}" }}
+
 Started: {{ "{{ .StartsAt.Format \"2006-01-02 15:04:05\" }}" }}
 {{ "{{ end }}" }}
 {{ "{{ end }}" }}

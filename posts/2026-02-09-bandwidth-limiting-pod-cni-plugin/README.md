@@ -29,6 +29,7 @@ Most CNI installations don't include the bandwidth plugin by default. Install it
 
 ```bash
 # Download CNI plugins
+
 CNI_VERSION="v1.3.0"
 wget https://github.com/containernetworking/plugins/releases/download/${CNI_VERSION}/cni-plugins-linux-amd64-${CNI_VERSION}.tgz
 

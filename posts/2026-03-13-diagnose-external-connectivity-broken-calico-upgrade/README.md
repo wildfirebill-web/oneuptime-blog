@@ -37,6 +37,7 @@ When pods lose external connectivity after an upgrade, they can no longer reach 
 kubectl get pods -n kube-system -l k8s-app=calico-node \
   -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.spec.containers[0].image}{"\n"}{end}'
 # All nodes should show the same Calico version
+
 ```
 
 **Step 2: Check IP pool natOutgoing setting**

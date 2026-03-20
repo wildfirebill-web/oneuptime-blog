@@ -237,6 +237,7 @@ export GATEWAY_IP=$(kubectl -n istio-system get service istio-ingressgateway \
   -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 # Test custom HTTP port
+
 curl -v -H "Host: app.example.com" "http://$GATEWAY_IP:8888/"
 
 # Verify the port is listening

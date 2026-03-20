@@ -28,6 +28,7 @@ Create the resource group and networking infrastructure:
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     azurerm = {

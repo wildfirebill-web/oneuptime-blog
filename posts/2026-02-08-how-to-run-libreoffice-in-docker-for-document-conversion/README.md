@@ -20,6 +20,7 @@ Convert a Word document to PDF with a single Docker command:
 
 ```bash
 # Convert a DOCX file to PDF using LibreOffice in headless mode
+
 docker run --rm \
   -v $(pwd)/docs:/docs \
   libreoffice/libreoffice:latest \

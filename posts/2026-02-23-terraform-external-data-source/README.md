@@ -63,6 +63,7 @@ import sys
 import urllib.request
 
 # Read the query from stdin
+
 input_data = json.load(sys.stdin)
 environment = input_data["environment"]
 region = input_data["region"]

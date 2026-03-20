@@ -221,6 +221,7 @@ Here's a quick script to check current Spot pricing for your target instance typ
 
 ```bash
 # Check current Spot prices for relevant instance types
+
 aws ec2 describe-spot-price-history \
   --instance-types m5.2xlarge m5a.2xlarge r5.2xlarge c5.2xlarge \
   --product-descriptions "Linux/UNIX" \

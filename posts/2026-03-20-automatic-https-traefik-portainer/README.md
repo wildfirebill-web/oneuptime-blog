@@ -83,6 +83,7 @@ Traefik reads the Docker labels and automatically creates the HTTPS router with 
 
 ```bash
 # Check Traefik logs for certificate issuance
+
 docker logs traefik | grep "certificate"
 
 # Test with curl

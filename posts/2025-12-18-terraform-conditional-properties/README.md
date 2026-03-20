@@ -96,6 +96,7 @@ resource "aws_db_instance" "main" {
 }
 
 # Conditionally create monitoring role
+
 resource "aws_iam_role" "monitoring" {
   count = var.enable_enhanced_monitoring ? 1 : 0
 

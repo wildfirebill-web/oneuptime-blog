@@ -43,6 +43,7 @@ For this guide, you need:
 
 ```bash
 # Set up kubeconfig contexts
+
 export CTX_CLUSTER1=cluster1
 export CTX_CLUSTER2=cluster2
 

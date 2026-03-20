@@ -48,6 +48,7 @@ This first component handles OS hardening based on CIS benchmarks:
 
 ```yaml
 # cis-hardening-component.yml
+
 name: CISHardening
 description: Apply CIS Level 1 hardening to Amazon Linux 2023
 schemaVersion: 1.0

@@ -53,6 +53,7 @@ curl -X PUT "localhost:9200/articles" -H 'Content-Type: application/json' -d'
 }'
 
 # Index a document
+
 curl -X POST "localhost:9200/articles/_doc/1" -H 'Content-Type: application/json' -d'
 {
   "title": "Understanding Elasticsearch Storage",

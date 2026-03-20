@@ -28,6 +28,7 @@ VXLAN is the default and most compatible backend. It encapsulates pod traffic in
 
 ```yaml
 # /etc/rancher/k3s/config.yaml
+
 flannel-backend: "vxlan"
 ```
 
@@ -220,4 +221,4 @@ kubectl logs mtu-check
 
 ## Conclusion
 
-K3s's Flannel backend flexibility allows you to optimize the network for your specific environment. VXLAN is the safe default for cloud and multi-segment networks. Use `host-gw` for maximum performance when all nodes are on the same L2 network. Choose `wireguard-native` when you need encryption with modern performance — it's the best choice for multi-site or cloud deployments. For organizations with strict compliance requirements, `ipsec` is available. If you need a CNI feature not available in Flannel (like advanced network policies), use `none` and install Calico or Cilium.
+K3s's Flannel backend flexibility allows you to optimize the network for your specific environment. VXLAN is the safe default for cloud and multi-segment networks. Use `host-gw` for maximum performance when all nodes are on the same L2 network. Choose `wireguard-native` when you need encryption with modern performance - it's the best choice for multi-site or cloud deployments. For organizations with strict compliance requirements, `ipsec` is available. If you need a CNI feature not available in Flannel (like advanced network policies), use `none` and install Calico or Cilium.

@@ -40,6 +40,7 @@ Store migration SQL files in a ConfigMap and run Flyway as a Kubernetes Job:
 
 ```yaml
 # infrastructure/databases/migrations/migration-scripts.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

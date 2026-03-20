@@ -14,6 +14,7 @@ Okteto transforms a Kubernetes container into a development environment: it repl
 
 ```bash
 # macOS
+
 brew install okteto
 
 # Linux

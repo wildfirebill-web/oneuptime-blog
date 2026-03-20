@@ -26,6 +26,7 @@ strongSwan has a flexible logging system with per-subsystem verbosity levels. In
 
 ```bash
 # Set IKE debug level to 4 (most verbose)
+
 sudo ipsec stroke loglevel ike 4
 sudo ipsec stroke loglevel knl 2
 sudo ipsec stroke loglevel cfg 2
@@ -82,7 +83,7 @@ sudo ipsec up site-to-site
 
 ### Successful IKEv2 Negotiation
 
-```
+```text
 # Stage 1: IKE_SA_INIT
 "initiating IKE_SA site-to-site[1] to 5.6.7.8"
 "sending packet: from 1.2.3.4[500] to 5.6.7.8[500]"
@@ -98,25 +99,25 @@ sudo ipsec up site-to-site
 "installing inbound ESP SPI ..."
 ```
 
-### Failed Negotiation — Algorithm Mismatch
+### Failed Negotiation - Algorithm Mismatch
 
-```
+```text
 "no IKE proposal found"
 "received NO_PROPOSAL_CHOSEN notify"
 → Fix: align ike= parameter with peer's capabilities
 ```
 
-### Failed Negotiation — Authentication Failure
+### Failed Negotiation - Authentication Failure
 
-```
+```text
 "authentication of '...' with PSK failed"
 "authentication failed, invalid certificate signature"
 → Fix: verify PSK matches exactly, or check certificate chain
 ```
 
-### Failed Negotiation — Timeout
+### Failed Negotiation - Timeout
 
-```
+```text
 "retransmit 5 of request with message ID 0"
 "giving up after 5 retransmits"
 → Fix: peer not reachable; check firewall for UDP 500

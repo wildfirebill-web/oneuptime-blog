@@ -1,4 +1,4 @@
-# How to Install K3s on Fedora
+# How to Install K3s on Fedora - Install
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ K3s is a lightweight Kubernetes distribution that installs in seconds. Fedora's 
 
 ```bash
 # Update the system
+
 sudo dnf upgrade -y
 
 # Install required packages
@@ -102,7 +103,7 @@ Get the server token and add worker nodes:
 # On the server node
 sudo cat /var/lib/rancher/k3s/server/node-token
 
-# On each agent node — replace SERVER_IP and TOKEN
+# On each agent node - replace SERVER_IP and TOKEN
 curl -sfL https://get.k3s.io | K3S_URL=https://<SERVER_IP>:6443 K3S_TOKEN=<TOKEN> sh -
 ```
 
@@ -123,5 +124,5 @@ sudo setenforce 0
 ## Best Practices
 
 - Always install the `k3s-selinux` package before K3s on SELinux-enabled Fedora systems.
-- Use `cgroups v2` (default on Fedora 31+) — K3s fully supports it.
+- Use `cgroups v2` (default on Fedora 31+) - K3s fully supports it.
 - Configure `firewall-cmd --zone=trusted --add-interface=cni0` to allow pod-to-pod communication.

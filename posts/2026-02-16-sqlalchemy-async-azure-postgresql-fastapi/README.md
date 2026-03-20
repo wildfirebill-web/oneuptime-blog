@@ -23,6 +23,7 @@ This guide walks through setting up SQLAlchemy's async engine with Azure Databas
 
 ```bash
 # Create a resource group
+
 az group create --name fastapi-demo-rg --location eastus
 
 # Create a PostgreSQL flexible server

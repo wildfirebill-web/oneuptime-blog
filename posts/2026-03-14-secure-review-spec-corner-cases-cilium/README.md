@@ -30,6 +30,7 @@ Search the specification for language that indicates optional or undefined behav
 
 ```bash
 # Common ambiguity indicators in protocol specs
+
 # Search the spec document for these patterns:
 # - "MAY" (optional behavior)
 # - "SHOULD" (recommended but not required)

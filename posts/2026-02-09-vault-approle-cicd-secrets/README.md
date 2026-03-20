@@ -22,6 +22,7 @@ Set up AppRole auth method:
 
 ```bash
 # Enable AppRole
+
 vault auth enable approle
 
 # Create role for CI/CD

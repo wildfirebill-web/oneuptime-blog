@@ -32,6 +32,7 @@ kubectl patch felixconfiguration default --type=merge -p '{"spec":{"prometheusMe
 
 ```promql
 # Denied packets rate
+
 rate(felix_denied_packets_total[5m])
 
 # Active policies

@@ -113,6 +113,7 @@ Add headers to help clients understand rate limits:
 
 ```nginx
 # Add rate limit headers
+
 location /api/ {
     limit_req zone=api_limit burst=20 delay=10;
 

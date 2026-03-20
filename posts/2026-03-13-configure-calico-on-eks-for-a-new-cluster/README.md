@@ -30,6 +30,7 @@ Create a new EKS cluster using `eksctl`.
 
 ```bash
 # Create a basic EKS cluster (without a network policy provider - we'll add Calico)
+
 eksctl create cluster \
   --name calico-eks-cluster \
   --region us-east-1 \

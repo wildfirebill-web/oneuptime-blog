@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Import, Config Generation, generate-config-out, HCL
+Tags: OpenTofu, Terraform, Import, Config Generation, Generate-config-out, HCL
 
 Description: Learn how to use OpenTofu's -generate-config-out flag to automatically generate HCL configuration from imported resources, accelerating the migration of existing infrastructure to code.
 
@@ -14,6 +14,7 @@ Writing HCL to match existing resources before importing is tedious and error-pr
 
 ```hcl
 # Step 1: Write just the import blocks (no resource config needed yet)
+
 # imports.tf
 import {
   to = aws_vpc.main

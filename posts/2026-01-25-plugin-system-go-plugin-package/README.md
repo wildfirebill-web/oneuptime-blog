@@ -153,6 +153,7 @@ Compile the plugin as a shared object:
 
 ```bash
 # Build the plugin - must use -buildmode=plugin
+
 go build -buildmode=plugin -o plugins/logger.so plugins/logger/main.go
 ```
 

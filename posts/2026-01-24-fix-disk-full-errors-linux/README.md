@@ -42,6 +42,7 @@ Linux tracks two types of storage resources:
 
 ```bash
 # Check disk space usage
+
 df -h
 
 # Check inode usage

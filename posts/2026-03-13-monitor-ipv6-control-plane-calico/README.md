@@ -32,6 +32,7 @@ Check IPv6 configuration in Calico's installation and Felix:
 
 ```bash
 # Verify IPv6 is enabled in the Calico installation
+
 kubectl get installation default -o yaml | grep -A5 "ipv6"
 
 # Check FelixConfiguration for IPv6 settings

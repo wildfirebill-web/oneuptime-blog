@@ -28,6 +28,7 @@ SLIs are the metrics that measure reliability. Common SLIs include:
 
 ```yaml
 # Availability SLI
+
 definition: Proportion of successful requests
 calculation: successful_requests / total_requests
 

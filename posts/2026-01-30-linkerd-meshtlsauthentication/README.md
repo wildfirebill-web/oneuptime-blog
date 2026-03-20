@@ -163,6 +163,7 @@ MeshTLSAuthentication alone does not enforce anything. You must pair it with an 
 
 ```yaml
 # Step 1: Define trusted identities
+
 apiVersion: policy.linkerd.io/v1alpha1
 kind: MeshTLSAuthentication
 metadata:

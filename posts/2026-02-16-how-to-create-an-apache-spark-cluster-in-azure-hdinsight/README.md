@@ -66,6 +66,7 @@ For repeatable deployments or automation, the Azure CLI is the better approach. 
 
 ```bash
 # Create an HDInsight Spark cluster with 4 worker nodes
+
 # Uses Azure Storage as the default filesystem
 az hdinsight create \
   --name my-spark-cluster \

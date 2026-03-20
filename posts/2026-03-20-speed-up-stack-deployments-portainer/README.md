@@ -1,4 +1,4 @@
-# How to Speed Up Stack Deployments in Portainer
+# How to Speed Up Stack Deployments in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,6 +27,7 @@ IMAGES=(
 echo "Pre-pulling images in parallel..."
 
 # Pull all images concurrently
+
 for image in "${IMAGES[@]}"; do
   docker pull "$image" &
 done

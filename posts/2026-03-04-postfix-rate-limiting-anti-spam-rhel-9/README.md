@@ -22,6 +22,7 @@ Add to `/etc/postfix/main.cf`:
 
 ```bash
 # Require clients to send HELO/EHLO
+
 smtpd_helo_required = yes
 
 # Reject invalid HELO hostnames

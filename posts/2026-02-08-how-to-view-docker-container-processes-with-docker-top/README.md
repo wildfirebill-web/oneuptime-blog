@@ -16,6 +16,7 @@ The syntax is straightforward. Pass the container name or ID to `docker top`:
 
 ```bash
 # View all processes running inside a container named "web-server"
+
 docker top web-server
 ```
 

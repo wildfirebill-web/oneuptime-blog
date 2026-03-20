@@ -41,6 +41,7 @@ The B-series, A-series, and F-series do not support nested virtualization. When 
 
 ```bash
 # Create a VM with a size that supports nested virtualization
+
 az vm create \
   --resource-group myResourceGroup \
   --name nestedVM \

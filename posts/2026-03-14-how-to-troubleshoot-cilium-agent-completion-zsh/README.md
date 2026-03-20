@@ -29,6 +29,7 @@ Start by checking whether zsh recognizes the completion function at all:
 
 ```bash
 # Check if the completion function is defined
+
 print -l $fpath | head -20
 
 # Look for the cilium-agent completion file in fpath directories

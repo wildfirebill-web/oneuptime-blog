@@ -56,6 +56,7 @@ First, let's get Redis running. You can install it locally or use Docker:
 
 ```bash
 # Using Docker (recommended for development)
+
 docker run -d --name redis-pubsub -p 6379:6379 redis:7-alpine
 
 # Verify it's running

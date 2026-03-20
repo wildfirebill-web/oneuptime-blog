@@ -1,4 +1,4 @@
-# How to Implement Blue-Green Deployments with Portainer
+# How to Implement Blue-Green Deployments with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to implement blue-green deployments with Portainer to ach
 
 ---
 
-Blue-green deployment maintains two identical production environments — "blue" (current) and "green" (new version). Traffic switches instantly between them, enabling zero-downtime releases and instant rollbacks.
+Blue-green deployment maintains two identical production environments - "blue" (current) and "green" (new version). Traffic switches instantly between them, enabling zero-downtime releases and instant rollbacks.
 
 ## Blue-Green with Traefik
 
@@ -44,7 +44,7 @@ services:
     networks:
       - proxy_net
 
-  # Green environment (new version — deployed but not receiving traffic)
+  # Green environment (new version - deployed but not receiving traffic)
   api-green:
     image: myregistry.example.com/my-app:v1.5.0
     labels:
@@ -65,6 +65,7 @@ To switch from blue to green, update the router's service label:
 
 ```bash
 # Update the stack: change the router service from api-blue to api-green
+
 # In Portainer, edit the stack and update this label:
 # "traefik.http.routers.api.service=api-green"
 
@@ -74,7 +75,7 @@ docker service update \
   my-stack_api-blue
 ```
 
-Traefik detects the label change and reroutes traffic within seconds — no downtime.
+Traefik detects the label change and reroutes traffic within seconds - no downtime.
 
 ## Rolling Back
 

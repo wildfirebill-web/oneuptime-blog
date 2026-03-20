@@ -24,6 +24,7 @@ Create a Cosmos DB account with the Gremlin (Graph) API.
 
 ```bash
 # Create a Cosmos DB account with Gremlin API
+
 az cosmosdb create \
   --name my-graph-db \
   --resource-group graph-rg \

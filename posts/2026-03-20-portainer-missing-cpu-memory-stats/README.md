@@ -1,4 +1,4 @@
-# How to Fix Missing CPU/Memory Stats in Portainer
+# How to Fix Missing CPU/Memory Stats in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Portainer displays CPU and memory usage by polling the Docker stats API. When st
 
 ```bash
 # Test if Docker stats work at all
+
 docker stats --no-stream
 
 # If all values are 0 or N/A, the issue is at the Docker/kernel level

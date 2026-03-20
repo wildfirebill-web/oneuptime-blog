@@ -8,13 +8,13 @@ Description: Understand the IPv6 Destination Options extension header, its two p
 
 ## Introduction
 
-The Destination Options Header (Next Header = 60) carries information that the final destination (and potentially intermediate routing destinations) needs to process. Unlike the Hop-by-Hop Options Header, Destination Options are ignored by transit routers — they reach the endpoint intact and are processed only by the packet's intended recipient.
+The Destination Options Header (Next Header = 60) carries information that the final destination (and potentially intermediate routing destinations) needs to process. Unlike the Hop-by-Hop Options Header, Destination Options are ignored by transit routers - they reach the endpoint intact and are processed only by the packet's intended recipient.
 
 ## The Two Positions of Destination Options
 
 The Destination Options Header can appear in two places in the extension header chain with different processing semantics:
 
-```
+```text
 Position 1: Before the Routing Header
   IPv6 Base → HbH (0) → [Dest Options (60)] → Routing (43) → Fragment (44) → TCP (6)
   → Processed by each node listed in the Routing Header's address list
@@ -28,7 +28,7 @@ Position 2: After the Routing Header and Fragment Header
 
 ## Header Format
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -45,7 +45,7 @@ Options use TLV encoding (same as Hop-by-Hop)
 
 Options within Destination Options use the same TLV encoding as Hop-by-Hop:
 
-```
+```text
 Option Type bits [7:6]:
   00 = skip unknown option, continue
   01 = discard packet silently
@@ -158,6 +158,7 @@ def parse_destination_options(header_bytes: bytes) -> list:
 
 ```bash
 # Capture packets with Destination Options header (Next Header = 60)
+
 sudo tcpdump -i eth0 -vv "ip6[6] == 60"
 
 # Mobile IPv6 traffic (Home Address Option)

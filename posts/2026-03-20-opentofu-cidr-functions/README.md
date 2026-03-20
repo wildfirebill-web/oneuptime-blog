@@ -1,11 +1,10 @@
----
-title: "How to Use CIDR Functions in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, network
-description: "Learn how to use cidrhost, cidrnetmask, cidrsubnet, cidrsubnets, and cidrcontains functions in OpenTofu for IP address management."
----
-
 # How to Use CIDR Functions in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Networks
+
+Description: Learn how to use cidrhost, cidrnetmask, cidrsubnet, cidrsubnets, and cidrcontains functions in OpenTofu for IP address management.
 
 OpenTofu provides five CIDR (Classless Inter-Domain Routing) functions for working with IP addresses and subnets. These are invaluable for automating network configuration without hardcoding IP addresses.
 
@@ -153,4 +152,4 @@ locals {
 
 ## Conclusion
 
-CIDR functions enable dynamic, calculation-based network configuration — no more manually figuring out subnet CIDRs. Use `cidrsubnet()` for consistent subnet calculation, `cidrsubnets()` for allocating multiple subnets at once, `cidrhost()` to address specific hosts, `cidrnetmask()` for subnet masks, and `cidrcontains()` for IP range membership checks. These functions make network topologies fully reproducible from a single VPC CIDR variable.
+CIDR functions enable dynamic, calculation-based network configuration - no more manually figuring out subnet CIDRs. Use `cidrsubnet()` for consistent subnet calculation, `cidrsubnets()` for allocating multiple subnets at once, `cidrhost()` to address specific hosts, `cidrnetmask()` for subnet masks, and `cidrcontains()` for IP range membership checks. These functions make network topologies fully reproducible from a single VPC CIDR variable.

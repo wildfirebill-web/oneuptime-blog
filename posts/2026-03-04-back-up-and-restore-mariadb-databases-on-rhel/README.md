@@ -16,6 +16,7 @@ MariaDB on RHEL offers two primary backup approaches: mysqldump for logical SQL 
 
 ```bash
 # Dump a single database
+
 mysqldump -u root -p mydb > /backup/mydb_$(date +%Y%m%d).sql
 
 # Dump with compression

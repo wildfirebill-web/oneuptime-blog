@@ -28,6 +28,7 @@ First, enable exemplars in your OpenTelemetry SDK:
 
 ```python
 # Python SDK with exemplar support
+
 from opentelemetry import metrics, trace
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

@@ -16,6 +16,7 @@ Set it in your `ansible.cfg`:
 
 ```ini
 # ansible.cfg - Enable the oneline callback
+
 [defaults]
 stdout_callback = oneline
 ```

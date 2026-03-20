@@ -6,19 +6,20 @@ Tags: AWS, Terraform, IPv6, Security Groups, Networking, Firewall
 
 Description: A guide to writing AWS Security Group rules that cover IPv6 traffic in Terraform, including common dual-stack patterns.
 
-AWS Security Groups control traffic at the instance level. IPv4 and IPv6 rules are specified separately — an IPv4 CIDR rule does not automatically apply to IPv6. This means dual-stack security groups must explicitly include both `cidr_blocks` (IPv4) and `ipv6_cidr_blocks` (IPv6) in each rule.
+AWS Security Groups control traffic at the instance level. IPv4 and IPv6 rules are specified separately - an IPv4 CIDR rule does not automatically apply to IPv6. This means dual-stack security groups must explicitly include both `cidr_blocks` (IPv4) and `ipv6_cidr_blocks` (IPv6) in each rule.
 
 ## Key Difference: IPv4 vs IPv6 Rules
 
 In Terraform's `aws_security_group` resource:
-- `cidr_blocks` — list of IPv4 CIDR ranges
-- `ipv6_cidr_blocks` — list of IPv6 CIDR ranges
+- `cidr_blocks` - list of IPv4 CIDR ranges
+- `ipv6_cidr_blocks` - list of IPv6 CIDR ranges
 - Both are required for dual-stack coverage
 
 ## Step 1: Create a Dual-Stack Web Security Group
 
 ```hcl
 # sg-web.tf - Security group allowing HTTP/HTTPS from both IPv4 and IPv6
+
 resource "aws_security_group" "web" {
   name        = "web-sg"
   description = "Allow HTTP and HTTPS from internet (IPv4 and IPv6)"
@@ -148,4 +149,4 @@ aws ec2 describe-security-groups \
   --query 'SecurityGroups[0].IpPermissions[*].Ipv6Ranges'
 ```
 
-Always pair every IPv4 rule with an equivalent IPv6 rule in dual-stack deployments — missing IPv6 rules are the most common cause of asymmetric connectivity in AWS dual-stack architectures.
+Always pair every IPv4 rule with an equivalent IPv6 rule in dual-stack deployments - missing IPv6 rules are the most common cause of asymmetric connectivity in AWS dual-stack architectures.

@@ -45,6 +45,7 @@ Key fields:
 
 ```bash
 # Events in default namespace
+
 kubectl get events
 
 # Events in specific namespace
@@ -190,7 +191,7 @@ Warning  Unhealthy  Liveness probe failed: connection refused
 Normal   Killing    Container myapp failed liveness probe, will be restarted
 ```
 
-### Resource Issues
+Resource Issues
 
 ```text
 Type     Reason    Message

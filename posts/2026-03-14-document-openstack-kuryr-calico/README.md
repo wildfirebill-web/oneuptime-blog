@@ -78,6 +78,7 @@ Document the component responsibilities:
 ```bash
 #!/bin/bash
 # troubleshoot-kuryr-calico.sh
+
 # Diagnose issues at the Kuryr-Calico boundary
 
 POD_NAME="${1:?Usage: $0 <pod-name> <namespace>}"

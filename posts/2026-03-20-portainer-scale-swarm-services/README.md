@@ -8,7 +8,7 @@ Description: Learn how to scale Docker Swarm services up and down using Portaine
 
 ## Introduction
 
-One of Docker Swarm's core strengths is the ability to scale services horizontally — adding or removing replicas to match demand. Portainer makes this process visual and immediate. This guide covers scaling services from the Portainer UI, understanding the scaling process, and best practices for production scaling.
+One of Docker Swarm's core strengths is the ability to scale services horizontally - adding or removing replicas to match demand. Portainer makes this process visual and immediate. This guide covers scaling services from the Portainer UI, understanding the scaling process, and best practices for production scaling.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ From the services list:
 
 When you increase replicas from 2 to 5:
 
-```
+```text
 Before scaling:
   web.1 → worker-01 (Running)
   web.2 → worker-02 (Running)
@@ -73,6 +73,7 @@ The Swarm scheduler distributes new tasks across nodes based on current load and
 
 ```bash
 # Monitor scale progress from CLI
+
 watch docker service ps web-frontend
 
 # Confirm final state
@@ -166,11 +167,11 @@ docker service update \
 
 ## Best Practices
 
-1. **Set resource limits before scaling** — Prevent one service from starving others
-2. **Monitor node capacity** — Ensure nodes can handle the additional tasks
-3. **Use placement constraints** — Prevent over-loading specific nodes
-4. **Configure health checks** — Swarm waits for health checks before marking tasks healthy
-5. **Test scale-down** — Verify graceful shutdown handles in-flight requests
+1. **Set resource limits before scaling** - Prevent one service from starving others
+2. **Monitor node capacity** - Ensure nodes can handle the additional tasks
+3. **Use placement constraints** - Prevent over-loading specific nodes
+4. **Configure health checks** - Swarm waits for health checks before marking tasks healthy
+5. **Test scale-down** - Verify graceful shutdown handles in-flight requests
 
 ## Conclusion
 

@@ -67,6 +67,7 @@ from opentelemetry import trace
 from opentelemetry.trace import Status, StatusCode
 
 # Get the tracer
+
 tracer = trace.get_tracer(__name__)
 
 def process_order(order_id, customer_id, items):

@@ -63,6 +63,7 @@ Let's start with a simple caching setup for a Node.js project. The example below
 
 ```yaml
 # .circleci/config.yml
+
 # Basic Node.js caching configuration
 # Caches node_modules based on package-lock.json checksum
 

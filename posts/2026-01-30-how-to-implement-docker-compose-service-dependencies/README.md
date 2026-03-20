@@ -129,6 +129,7 @@ A simple wait-for script in bash:
 ```bash
 #!/bin/bash
 # wait-for-it.sh
+
 host="$1"
 shift
 port="$1"

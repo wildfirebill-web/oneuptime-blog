@@ -18,6 +18,7 @@ The `range` function generates a list of numbers. It supports three calling styl
 
 ```hcl
 # One argument: generates 0 to (n-1)
+
 range(n)
 
 # Two arguments: generates from start to (end-1)

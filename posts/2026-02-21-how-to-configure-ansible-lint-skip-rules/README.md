@@ -18,6 +18,7 @@ The most common approach is adding rules to the `skip_list` in your `.ansible-li
 
 ```yaml
 # .ansible-lint - Skip rules project-wide
+
 ---
 profile: moderate
 

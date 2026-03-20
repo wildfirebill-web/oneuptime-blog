@@ -25,6 +25,7 @@ Install the necessary tools:
 
 ```bash
 # Install Cosign for fetching signed SBOMs
+
 brew install cosign
 
 # Install Flux CLI

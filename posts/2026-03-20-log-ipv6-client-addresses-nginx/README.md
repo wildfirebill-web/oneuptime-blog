@@ -103,6 +103,7 @@ http {
 
 ```bash
 # Count requests by IPv6 prefix (/64)
+
 awk '{print $1}' /var/log/nginx/access.log | \
     grep ':' | \
     sed 's/^\(.*:.*:.*:.*\):.*:.*:.*$/\1::\/64/' | \

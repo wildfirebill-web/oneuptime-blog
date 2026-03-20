@@ -20,6 +20,7 @@ Configure Falco to output JSON alerts:
 
 ```yaml
 # falco.yaml
+
 json_output: true
 json_include_output_property: true
 json_include_tags_property: true

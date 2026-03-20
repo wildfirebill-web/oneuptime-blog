@@ -24,6 +24,7 @@ Ephemeral values go further. They are:
 
 ```hcl
 # Regular sensitive value - hidden in output, but stored in state
+
 variable "db_password" {
   type      = string
   sensitive = true

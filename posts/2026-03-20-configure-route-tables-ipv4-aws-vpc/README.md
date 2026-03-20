@@ -16,6 +16,7 @@ VPC route tables are the routing control plane for your network. Every subnet mu
 VPC_ID=vpc-0abc123def456
 
 # List all route tables in the VPC
+
 aws ec2 describe-route-tables \
   --filters "Name=vpc-id,Values=$VPC_ID" \
   --query 'RouteTables[].{ID:RouteTableId,Name:Tags[?Key==`Name`]|[0].Value}' \

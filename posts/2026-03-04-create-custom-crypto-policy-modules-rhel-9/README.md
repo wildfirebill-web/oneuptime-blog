@@ -29,6 +29,7 @@ Custom policy modules are stored in:
 
 ```bash
 # System-provided modules
+
 ls /usr/share/crypto-policies/policies/modules/
 
 # Custom modules (create this directory if needed)

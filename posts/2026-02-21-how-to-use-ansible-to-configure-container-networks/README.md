@@ -14,6 +14,7 @@ Container networks control how containers communicate with each other and with e
 
 ```yaml
 # roles/container_networks/tasks/bridge.yml
+
 # Create isolated bridge networks for different application tiers
 - name: Create application networks
   community.docker.docker_network:

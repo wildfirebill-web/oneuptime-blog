@@ -93,6 +93,7 @@ This command demonstrates how to publish a policy bundle as an OCI artifact usin
 
 ```bash
 # Push a policy bundle to GitHub Container Registry as an OCI artifact
+
 # oras is the official OCI Registry As Storage client
 oras push ghcr.io/oneuptime/policies:rbac-v1 \
   # Specify the artifact type so consumers know this is an OPA policy

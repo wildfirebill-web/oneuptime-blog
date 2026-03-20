@@ -303,6 +303,7 @@ Before deploying, test your policies:
 
 ```bash
 # Simulate whether a role can access a specific S3 object
+
 aws iam simulate-principal-policy \
   --policy-source-arn arn:aws:iam::123456789012:role/AppRole \
   --action-names s3:GetObject s3:PutObject s3:ListBucket \

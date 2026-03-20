@@ -46,6 +46,7 @@ The key components:
 
 ```bash
 # Switch to DR cluster context
+
 kubectl config use-context dr-cluster
 
 # Create namespace

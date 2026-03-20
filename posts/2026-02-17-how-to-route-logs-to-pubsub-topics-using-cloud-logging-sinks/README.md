@@ -34,6 +34,7 @@ Start by creating a topic that will receive the log entries:
 
 ```bash
 # Create a Pub/Sub topic for log routing
+
 gcloud pubsub topics create log-export \
   --project=my-project
 ```

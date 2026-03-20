@@ -29,6 +29,7 @@ The following YAML manifest demonstrates creating a Kubernetes Secret with datab
 
 ```yaml
 # kubernetes/database-secret.yaml
+
 # This creates an Opaque secret type containing database credentials
 # Note: Values must be base64 encoded
 apiVersion: v1

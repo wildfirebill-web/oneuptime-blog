@@ -47,6 +47,7 @@ graph LR
 
 ```bash
 # Add the Fluent Helm chart repository
+
 helm repo add fluent https://fluent.github.io/helm-charts
 helm repo update
 

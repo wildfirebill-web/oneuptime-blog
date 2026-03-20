@@ -38,6 +38,7 @@ Lag = 9 - 5 = 4 messages
 
 ```bash
 # Basic lag check
+
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 \
   --describe --group my-consumer-group
 

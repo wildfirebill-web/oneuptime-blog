@@ -19,8 +19,8 @@ EIGRPv6 sends Hello packets to the ff02::a (All EIGRP routers) multicast address
 
 ## Verifying Link-Local Adjacencies
 
-```
-! Show EIGRPv6 neighbors — link-local addresses are shown
+```text
+! Show EIGRPv6 neighbors - link-local addresses are shown
 Router# show ipv6 eigrp neighbors
 
 IPv6-EIGRP neighbors for process 1
@@ -35,7 +35,7 @@ H   Address               Interface      Hold  Uptime   SRTT   RTO  Q  Seq Num
 
 Routes installed by EIGRPv6 use link-local next hops:
 
-```
+```text
 Router# show ipv6 route eigrp
 
 D   2001:DB8:2::/48 [90/30720]
@@ -48,7 +48,7 @@ The `via FE80::2` notation with the interface name `GigabitEthernet0/0` is the s
 
 ## Verifying Link-Local Address on Interface
 
-```
+```text
 ! Ensure the interface has a link-local address
 Router# show ipv6 interface GigabitEthernet0/0 | include link-local
   IPv6 is enabled, link-local address is FE80::1 [TENTATIVE]
@@ -62,14 +62,14 @@ Router(config-if)# ipv6 enable   ! This forces link-local address assignment
 
 For easier troubleshooting, assign a predictable link-local address:
 
-```
+```text
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ipv6 address FE80::1 link-local   ! Set specific link-local address
 ```
 
 ## Troubleshooting Link-Local Adjacency Failure
 
-```
+```text
 ! Step 1: Verify link-local address exists
 Router# show ipv6 interface GigabitEthernet0/0 | include link-local
 
@@ -80,7 +80,7 @@ Router# show ipv6 interface GigabitEthernet0/0 | include ff02::a
 ! In production, use SPAN/RSPAN to capture on the interface
 
 ! Step 4: Check for firewall blocking protocol 88
-! EIGRPv6 uses IP protocol 88 — not TCP/UDP
+! EIGRPv6 uses IP protocol 88 - not TCP/UDP
 
 ! Step 5: Verify hello/hold timer match
 Router# show ipv6 eigrp interfaces detail

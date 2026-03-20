@@ -24,6 +24,7 @@ Start with a common pattern - a ServiceAccount that can read pods:
 
 ```yaml
 # readonly-serviceaccount.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

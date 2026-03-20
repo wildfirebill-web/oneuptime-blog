@@ -16,6 +16,7 @@ The most straightforward way to get file content is using the `command` module w
 
 ```yaml
 # Read file content with command module
+
 ---
 - name: File content conditionals
   hosts: all

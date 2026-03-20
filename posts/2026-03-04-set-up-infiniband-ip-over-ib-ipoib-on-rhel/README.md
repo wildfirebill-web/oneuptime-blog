@@ -16,6 +16,7 @@ Ensure InfiniBand drivers and the subnet manager are running:
 
 ```bash
 # Verify InfiniBand is active
+
 ibstat
 
 # Check that ib0 interface exists

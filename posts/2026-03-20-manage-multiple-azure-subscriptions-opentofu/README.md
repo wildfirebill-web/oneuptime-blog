@@ -12,6 +12,7 @@ In enterprise Azure environments, resources are distributed across multiple subs
 
 ```hcl
 # Production subscription
+
 provider "azurerm" {
   alias           = "production"
   subscription_id = var.production_subscription_id
@@ -63,7 +64,7 @@ resource "azurerm_virtual_network" "production" {
 
 ## Cross-Subscription Resource References
 
-Reference resources across subscriptions — for example, VNet peering:
+Reference resources across subscriptions - for example, VNet peering:
 
 ```hcl
 resource "azurerm_virtual_network_peering" "prod_to_shared" {

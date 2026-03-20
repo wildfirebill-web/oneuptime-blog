@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Router Advertisements, SLAAC, sysctl
+Tags: IPv6, Linux, Router Advertisement, SLAAC, Sysctl
 
 Description: Learn how to configure the accept_ra sysctl parameter on Linux to control whether interfaces process Router Advertisements for SLAAC, default gateway, and prefix information.
 
@@ -17,6 +17,7 @@ The `accept_ra` parameter controls whether a Linux interface processes ICMPv6 Ro
 
 ```bash
 # Check current value
+
 cat /proc/sys/net/ipv6/conf/eth0/accept_ra
 
 # 0 = Do NOT accept RAs (ignore all router advertisements)

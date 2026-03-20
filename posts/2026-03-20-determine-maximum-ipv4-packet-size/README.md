@@ -29,6 +29,7 @@ The IPv4 Total Length field is 16 bits, allowing values from 0 to 65,535. Since 
 
 ```bash
 # Linux: show MTU for all interfaces
+
 ip link show
 
 # Or with ifconfig
@@ -46,7 +47,7 @@ Path MTU is the smallest MTU along the entire route to a destination. Use PMTUD:
 # Linux: ping with DF set and progressively larger payloads
 # -M do sets DF, -s sets payload size (total packet = s + 28 bytes IP+ICMP overhead)
 ping -M do -s 1472 8.8.8.8   # 1472 + 28 = 1500 (should succeed on Ethernet)
-ping -M do -s 1473 8.8.8.8   # 1501 bytes total — should fail if MTU is 1500
+ping -M do -s 1473 8.8.8.8   # 1501 bytes total - should fail if MTU is 1500
 
 # View the cached path MTU to a destination
 ip route get 8.8.8.8 | grep -i mtu

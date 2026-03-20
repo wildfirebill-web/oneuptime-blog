@@ -28,6 +28,7 @@ Verify that automatic rotation is working:
 
 ```bash
 # Watch SDS updates
+
 kubectl logs <pod-name> -c istio-proxy -f | grep -i "sds\|secret"
 
 # Check current certificate validity

@@ -20,6 +20,7 @@ Podman evaluates policies from most specific to least specific. A rule for `regi
 
 ```bash
 # View the current policy configuration
+
 cat /etc/containers/policy.json
 
 # Check user-level overrides

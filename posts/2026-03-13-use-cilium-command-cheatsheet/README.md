@@ -24,6 +24,7 @@ This cheatsheet covers the commands most frequently used by platform engineers m
 
 ```bash
 # Overall cluster status
+
 cilium status
 
 # Detailed status with component health

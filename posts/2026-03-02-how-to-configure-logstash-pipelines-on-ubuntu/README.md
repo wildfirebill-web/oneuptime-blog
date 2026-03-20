@@ -23,6 +23,7 @@ This guide focuses on writing practical Logstash pipeline configurations for com
 
 ```bash
 # Add Elastic repository (same key as Elasticsearch)
+
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   sudo gpg --dearmor -o /usr/share/keyrings/elastic-archive-keyring.gpg
 

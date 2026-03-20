@@ -29,6 +29,7 @@ DataSync needs permissions to read from the source bucket and write to the desti
 
 ```bash
 # Create the DataSync role
+
 aws iam create-role \
   --role-name DataSyncS3ToS3Role \
   --assume-role-policy-document '{

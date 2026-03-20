@@ -27,6 +27,7 @@ Check for orphan containers in your project:
 
 ```bash
 # List all containers for the current project
+
 docker compose ps -a
 
 # List all containers including those not in the current compose file

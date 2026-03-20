@@ -1,4 +1,4 @@
-# How to Manage Registries via the Portainer API
+# How to Manage Registries via the Portainer API - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -35,6 +35,7 @@ PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-admin-token"
 
 # List all registries
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   "${PORTAINER_URL}/api/registries" | \
   jq '.[] | {id: .Id, name: .Name, type: .Type, url: .URL}'
@@ -175,7 +176,7 @@ curl -s -H "Authorization: Bearer $TOKEN" \
 
 ```bash
 #!/bin/bash
-# setup-registries.sh — Configure all registries from environment variables
+# setup-registries.sh - Configure all registries from environment variables
 
 PORTAINER_URL="https://portainer.example.com"
 TOKEN=$(curl -s -X POST "${PORTAINER_URL}/api/auth" \

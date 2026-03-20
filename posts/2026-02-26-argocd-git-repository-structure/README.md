@@ -306,6 +306,7 @@ After setting up your structure, verify ArgoCD can render manifests from each pa
 
 ```bash
 # For Kustomize-based apps
+
 kustomize build apps/frontend/overlays/dev
 
 # For Helm-based apps

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, rhel, red-hat, docker, installation, enterprise-linux
+Tags: Portainer, RHEL, Red-hat, Docker, Installation, Enterprise-linux
 
 Description: A guide to installing Portainer Community Edition on Red Hat Enterprise Linux (RHEL) 8 and 9 with Docker CE.
 
@@ -29,6 +29,7 @@ RHEL ships with Podman, which conflicts with Docker:
 
 ```bash
 # Check for conflicting packages
+
 rpm -qa | grep -E 'docker|podman|containerd'
 
 # Remove podman and related tools (optional)

@@ -14,6 +14,7 @@ A serverless API on Azure uses Azure Functions for compute, Cosmos DB for global
 
 ```hcl
 # main.tf - Storage account required by Azure Functions
+
 resource "azurerm_storage_account" "functions" {
   name                     = "funcappstorage"
   resource_group_name      = azurerm_resource_group.rg.name

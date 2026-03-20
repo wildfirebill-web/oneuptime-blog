@@ -40,6 +40,7 @@ Create a values file for the Datadog Helm chart:
 
 ```yaml
 # datadog-values.yaml
+
 datadog:
   apiKey: <YOUR_DATADOG_API_KEY>
   appKey: <YOUR_DATADOG_APP_KEY>

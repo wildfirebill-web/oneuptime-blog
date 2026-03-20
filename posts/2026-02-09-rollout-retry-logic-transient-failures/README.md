@@ -75,6 +75,7 @@ Add multiple registry mirrors for redundancy:
 
 ```yaml
 # /etc/containerd/config.toml on nodes
+
 [plugins."io.containerd.grpc.v1.cri".registry.mirrors."docker.io"]
   endpoint = ["https://registry-1.docker.io", "https://mirror.gcr.io"]
 ```

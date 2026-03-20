@@ -52,6 +52,7 @@ flowchart TB
 
 ```logql
 # Total requests
+
 sum(count_over_time({job="application"} | json | endpoint!="" [$__range]))
 
 # Successful requests (status < 500)

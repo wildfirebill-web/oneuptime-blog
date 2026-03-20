@@ -34,6 +34,7 @@ The typical error message looks like this:
 ```bash
 git push origin main
 # To https://github.com/user/repo.git
+
 #  ! [rejected]        main -> main (fetch first)
 # error: failed to push some refs to 'https://github.com/user/repo.git'
 # hint: Updates were rejected because the remote contains work that you do

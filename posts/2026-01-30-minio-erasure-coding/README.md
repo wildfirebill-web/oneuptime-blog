@@ -66,6 +66,7 @@ First, prepare your drives. Each drive should be a separate physical disk or par
 
 ```bash
 # Create mount points for 4 drives
+
 # In production, these would be actual disks mounted here
 sudo mkdir -p /mnt/disk{1..4}
 

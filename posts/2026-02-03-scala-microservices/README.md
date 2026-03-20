@@ -757,6 +757,7 @@ Typesafe Config (HOCON format) is the standard for Scala applications. It suppor
 # src/main/resources/application.conf
 
 # Service identity
+
 service {
   name = "user-service"
   version = "1.0.0"

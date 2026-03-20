@@ -47,6 +47,7 @@ Enable the Cloud Trace API if it is not already enabled.
 
 ```bash
 # Enable the Cloud Trace API on your project
+
 gcloud services enable cloudtrace.googleapis.com
 ```
 

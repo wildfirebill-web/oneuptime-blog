@@ -43,6 +43,7 @@ The platform API needs permission to read and patch Flux objects.
 
 ```yaml
 # platform-api/rbac.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

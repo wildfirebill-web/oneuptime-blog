@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Nginx, Rate Limiting, Security, limit_req
+Tags: IPv6, Nginx, Rate Limiting, Security, Limit_req
 
 Description: Learn how to configure Nginx rate limiting for IPv6 clients, including per-address and per-subnet rate limits to protect against abuse while accommodating IPv6 address rotation.
 
@@ -32,7 +32,7 @@ http {
 
 ## IPv6-Specific Rate Limiting Consideration
 
-IPv6 clients may use many different addresses (privacy extensions rotate addresses). Rate limiting by `/128` may not be effective — consider limiting by `/64` subnet:
+IPv6 clients may use many different addresses (privacy extensions rotate addresses). Rate limiting by `/128` may not be effective - consider limiting by `/64` subnet:
 
 ```nginx
 http {
@@ -132,6 +132,7 @@ http {
 
 ```bash
 # Test rate limiting with IPv6 client
+
 for i in {1..20}; do
     curl -6 -s -o /dev/null -w "%{http_code}\n" http://example.com/api/test
 done
@@ -143,4 +144,4 @@ curl -6 -v http://example.com/api/ 2>&1 | grep -E 'HTTP|Retry|X-Rate'
 
 ## Summary
 
-Configure Nginx rate limiting for IPv6 with `limit_req_zone $binary_remote_addr zone=zone:10m rate=10r/s;` — this works for both IPv4 and IPv6 `$remote_addr`. Note that IPv6 clients may rotate addresses (privacy extensions), so per-address limiting may miss subnet-level abuse. Use `limit_req zone=name burst=N nodelay;` with `limit_req_status 429;` for RFC-compliant rate limit responses. Exempt trusted IPv6 subnets with `geo` module conditionals.
+Configure Nginx rate limiting for IPv6 with `limit_req_zone $binary_remote_addr zone=zone:10m rate=10r/s;` - this works for both IPv4 and IPv6 `$remote_addr`. Note that IPv6 clients may rotate addresses (privacy extensions), so per-address limiting may miss subnet-level abuse. Use `limit_req zone=name burst=N nodelay;` with `limit_req_status 429;` for RFC-compliant rate limit responses. Exempt trusted IPv6 subnets with `geo` module conditionals.

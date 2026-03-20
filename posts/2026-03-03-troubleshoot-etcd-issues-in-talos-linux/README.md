@@ -26,6 +26,7 @@ Start every troubleshooting session with a health check:
 
 ```bash
 # Check etcd member status on all control plane nodes
+
 talosctl -n 192.168.1.10,192.168.1.11,192.168.1.12 etcd status
 
 # List etcd members and their states

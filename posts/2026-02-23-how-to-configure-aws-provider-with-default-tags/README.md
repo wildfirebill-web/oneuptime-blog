@@ -27,6 +27,7 @@ Here is a minimal configuration with default tags:
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     aws = {

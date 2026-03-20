@@ -112,6 +112,7 @@ A more sophisticated approach uses the routing connector to switch between a pri
 
 ```yaml
 # Circuit breaker pattern using routing connector and health checks
+
 receivers:
   otlp:
     protocols:

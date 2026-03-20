@@ -33,6 +33,7 @@ Here's a simple configuration that renames a metric:
 
 ```yaml
 # Basic metrics transform configuration
+
 # Renames metrics and modifies labels
 receivers:
   otlp:

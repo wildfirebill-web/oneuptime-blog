@@ -188,6 +188,7 @@ Not all degradation is equal. Here are the thresholds that matter for clinical v
 
 ```yaml
 # alerting-rules.yaml for your monitoring backend
+
 rules:
   # Audio jitter above 30ms makes conversation difficult
   - alert: TelehealthAudioJitterHigh

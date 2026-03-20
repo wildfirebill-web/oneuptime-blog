@@ -14,6 +14,7 @@ Large Azure environments often use multiple subscriptions for isolation: one per
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     azurerm = {
@@ -23,7 +24,7 @@ terraform {
   }
 }
 
-# Default provider — primary subscription
+# Default provider - primary subscription
 provider "azurerm" {
   features {}
   subscription_id = var.prod_subscription_id

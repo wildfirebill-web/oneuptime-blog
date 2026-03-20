@@ -57,6 +57,7 @@ For a cluster with maximum 100 nodes at 50 pods per node:
 
 ```bash
 # Check current allocation
+
 calicoctl ipam show
 ```
 

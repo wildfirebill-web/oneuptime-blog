@@ -26,6 +26,7 @@ Common use cases:
 
 ```bash
 # Replace the root qdisc with SFQ (simple, single-class approach)
+
 sudo tc qdisc add dev eth0 root handle 1: sfq perturb 10
 
 # Parameters:

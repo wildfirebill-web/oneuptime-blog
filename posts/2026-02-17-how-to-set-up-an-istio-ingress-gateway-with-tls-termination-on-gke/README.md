@@ -31,6 +31,7 @@ For Cloud Service Mesh with the managed control plane, you deploy the gateway as
 
 ```yaml
 # ingress-gateway.yaml
+
 # Deploys an Istio ingress gateway with auto-injection
 apiVersion: v1
 kind: ServiceAccount

@@ -14,6 +14,7 @@ Decision environments (DEs) are container images that include everything needed 
 
 ```bash
 # Install ansible-builder for creating custom images
+
 pip install ansible-builder
 
 # Ensure podman is available for building container images

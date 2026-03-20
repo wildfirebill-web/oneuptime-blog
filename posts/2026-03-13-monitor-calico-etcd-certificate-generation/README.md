@@ -97,6 +97,7 @@ Create a Grafana panel showing days until expiry for each Calico etcd certificat
 
 ```plaintext
 # Prometheus query for dashboard
+
 (x509_cert_not_after{secret_name=~"calico-etcd.*"} - time()) / 86400
 ```
 

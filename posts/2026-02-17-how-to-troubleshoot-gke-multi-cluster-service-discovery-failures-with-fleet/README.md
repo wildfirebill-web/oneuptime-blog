@@ -44,6 +44,7 @@ Both clusters must be registered in the same Fleet:
 
 ```bash
 # List all Fleet members
+
 gcloud container fleet memberships list
 
 # Check a specific cluster's membership

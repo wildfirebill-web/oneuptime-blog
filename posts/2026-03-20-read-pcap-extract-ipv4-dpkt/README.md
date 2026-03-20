@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, dpkt, PCAP, IPv4, Packet Analysis, Networking
+Tags: Python, Dpkt, PCAP, IPv4, Packet Analysis, Networking
 
 Description: Learn how to read PCAP capture files and extract IPv4 traffic data using the dpkt library for efficient packet analysis in Python.
 

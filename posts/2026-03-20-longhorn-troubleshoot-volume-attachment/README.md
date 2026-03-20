@@ -27,6 +27,7 @@ Volume attachment failures prevent pods from starting and can cause application 
 
 ```bash
 # Describe the pod to see attachment errors
+
 kubectl describe pod <pod-name> -n <namespace>
 
 # Look for events like:
@@ -120,7 +121,7 @@ If a volume is stuck in `Detaching` state (usually after a node crash):
 ```bash
 # In the Longhorn UI: Volumes → select volume → Detach
 
-# Or via kubectl — patch the volume to force detach
+# Or via kubectl - patch the volume to force detach
 kubectl patch volume $VOLUME_NAME \
   -n longhorn-system \
   --type merge \
@@ -167,6 +168,6 @@ kubectl get node.longhorn.io -n longhorn-system
 
 ## Best Practices
 
-- Check the Longhorn dashboard first — it shows volume state, replica health, and which node a volume is attached to at a glance.
-- If a node crashes with volumes attached, wait for the node to come back up before attempting manual detachment — Longhorn will auto-reattach when the node rejoins.
-- Ensure `iscsid` is running on all nodes and the `iscsi_tcp` kernel module is loaded — these are the most common causes of attachment failures on fresh nodes.
+- Check the Longhorn dashboard first - it shows volume state, replica health, and which node a volume is attached to at a glance.
+- If a node crashes with volumes attached, wait for the node to come back up before attempting manual detachment - Longhorn will auto-reattach when the node rejoins.
+- Ensure `iscsid` is running on all nodes and the `iscsi_tcp` kernel module is loaded - these are the most common causes of attachment failures on fresh nodes.

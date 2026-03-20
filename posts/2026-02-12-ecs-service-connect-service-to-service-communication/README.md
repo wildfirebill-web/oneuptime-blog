@@ -37,6 +37,7 @@ You need a Cloud Map namespace. If you don't have one, create it:
 
 ```bash
 # Create an HTTP namespace for Service Connect
+
 aws servicediscovery create-http-namespace \
   --name production \
   --description "Production services namespace"

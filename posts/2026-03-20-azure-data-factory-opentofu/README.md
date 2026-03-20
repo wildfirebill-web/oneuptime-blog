@@ -14,6 +14,7 @@ Azure Data Factory (ADF) is Microsoft's cloud-based ETL and data integration ser
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     azurerm = {
@@ -147,7 +148,7 @@ resource "azurerm_role_assignment" "adf_keyvault_access" {
 
 ## Best Practices
 
-- Use managed identity authentication for linked services rather than storing credentials in ADF — it eliminates credential rotation overhead.
+- Use managed identity authentication for linked services rather than storing credentials in ADF - it eliminates credential rotation overhead.
 - Enable the managed virtual network on Data Factory to keep data movement within your Azure network perimeter.
 - Use Git integration to version control your pipeline definitions alongside your OpenTofu infrastructure code.
 - Monitor pipeline runs using ADF Monitor and set up alerts for pipeline failures.

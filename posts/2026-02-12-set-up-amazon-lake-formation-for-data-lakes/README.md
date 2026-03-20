@@ -18,6 +18,7 @@ You'll need an AWS account with admin access (at least initially), an S3 bucket 
 
 ```bash
 # Create the data lake bucket
+
 aws s3 mb s3://my-company-data-lake --region us-east-1
 
 # Create folder structure for raw and processed data

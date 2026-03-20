@@ -14,6 +14,7 @@ An AWS Landing Zone provides a pre-configured, secure multi-account environment.
 
 ```hcl
 # main.tf - AWS Organizations setup
+
 resource "aws_organizations_organization" "org" {
   aws_service_access_principals = [
     "cloudtrail.amazonaws.com",

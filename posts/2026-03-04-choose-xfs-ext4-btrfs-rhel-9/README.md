@@ -39,6 +39,7 @@ XFS is the default filesystem on RHEL for good reasons. It handles large files a
 
 ```bash
 # Create an XFS filesystem
+
 mkfs.xfs /dev/vg_data/lv_data
 
 # Grow XFS online (no unmount needed)

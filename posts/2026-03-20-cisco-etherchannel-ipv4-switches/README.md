@@ -10,7 +10,7 @@ Description: Configure EtherChannel (LACP and PAgP) on Cisco IOS switches to bun
 
 EtherChannel bundles 2–8 physical links into a single logical interface, multiplying bandwidth and providing link-level redundancy. For IPv4 routed interfaces, an EtherChannel delivers deterministic hashing-based load balancing across member links.
 
-## LACP EtherChannel (Recommended — IEEE 802.3ad)
+## LACP EtherChannel (Recommended - IEEE 802.3ad)
 
 ```cisco
 ! === Switch A ===

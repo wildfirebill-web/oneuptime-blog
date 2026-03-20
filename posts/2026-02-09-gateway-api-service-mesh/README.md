@@ -36,6 +36,7 @@ Install Istio with Gateway API support:
 
 ```bash
 # Install Istio with Gateway API experimental features
+
 istioctl install --set profile=default \
   --set values.pilot.env.PILOT_ENABLE_GATEWAY_API=true \
   --set values.pilot.env.PILOT_ENABLE_GATEWAY_API_STATUS=true \

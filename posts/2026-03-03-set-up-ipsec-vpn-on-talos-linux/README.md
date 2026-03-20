@@ -219,6 +219,7 @@ IPSec uses specific ports and protocols that must be allowed through any network
 
 ```text
 # Required for IKE negotiation
+
 UDP 500 (IKE)
 UDP 4500 (IKE NAT-Traversal)
 

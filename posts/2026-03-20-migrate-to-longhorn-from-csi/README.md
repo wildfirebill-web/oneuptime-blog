@@ -30,6 +30,7 @@ Migrating storage from one CSI driver to another in Kubernetes requires careful 
 
 ```bash
 # 1. List all PVCs and their storage classes
+
 kubectl get pvc --all-namespaces \
   -o custom-columns="NAMESPACE:.metadata.namespace,NAME:.metadata.name,CLASS:.spec.storageClassName,SIZE:.spec.resources.requests.storage,STATUS:.status.phase"
 

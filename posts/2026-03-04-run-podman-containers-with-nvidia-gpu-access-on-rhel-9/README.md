@@ -24,6 +24,7 @@ Edit the configuration file to match your environment:
 
 ```bash
 # Open the configuration file
+
 sudo vi /etc/<service>/config.conf
 ```
 

@@ -27,6 +27,7 @@ Prevents execution of any binary on the filesystem. Even if a user writes an exe
 
 ```bash
 # Mount /tmp with noexec
+
 mount -o remount,noexec /tmp
 
 # Test: this should fail

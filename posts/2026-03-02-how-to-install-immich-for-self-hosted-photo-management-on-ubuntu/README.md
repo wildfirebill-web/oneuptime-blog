@@ -19,6 +19,7 @@ Immich is a self-hosted photo and video backup solution that provides an experie
 
 ```bash
 # Install Docker and Docker Compose
+
 sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
 

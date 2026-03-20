@@ -118,6 +118,7 @@ If splitting is not practical, ensure the repo server has enough disk space and 
 
 ```yaml
 # Use emptyDir with a size limit for the clone directory
+
 spec:
   template:
     spec:

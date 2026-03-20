@@ -54,6 +54,7 @@ There are multiple ways to configure the service name, listed here in order of p
 
 ```bash
 # Set service name directly
+
 export OTEL_SERVICE_NAME="checkout-service"
 
 # Or with other resource attributes

@@ -20,6 +20,7 @@ Portainer Business Edition (BE) extends the free Community Edition with enterpri
 
 ```bash
 # Create a persistent volume for Portainer BE data and configuration
+
 docker volume create portainer_data
 ```
 

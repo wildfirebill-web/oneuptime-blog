@@ -29,6 +29,7 @@ Export all GitRepository resources:
 
 ```bash
 # Export all GitRepository resources from the flux-system namespace
+
 flux export source git --all > gitrepositories-backup.yaml
 
 # Export a specific GitRepository

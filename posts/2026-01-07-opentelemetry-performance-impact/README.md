@@ -65,6 +65,7 @@ from opentelemetry.sdk.trace.sampling import (
 )
 
 # TraceIdRatioBased samples a percentage of traces based on the trace ID.
+
 # A ratio of 0.1 means 10% of traces will be sampled.
 # This is deterministic - the same trace ID will always produce the same
 # sampling decision, which is crucial for distributed tracing consistency.
@@ -611,7 +612,7 @@ process.on('SIGINT', () => {
 });
 ```
 
-## Resource and Attribute Optimization
+Resource and Attribute Optimization
 
 Excessive attributes and inefficient resource configuration can significantly impact memory usage and export overhead.
 

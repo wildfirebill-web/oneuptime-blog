@@ -30,6 +30,7 @@ Enable and configure CES via Helm values:
 
 ```bash
 # Enable CES with default batch size
+
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \
   --reuse-values \

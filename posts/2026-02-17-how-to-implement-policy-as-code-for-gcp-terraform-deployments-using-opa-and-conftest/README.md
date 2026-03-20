@@ -43,6 +43,7 @@ Install Conftest on your machine or CI environment:
 
 ```bash
 # On macOS
+
 brew install conftest
 
 # On Linux

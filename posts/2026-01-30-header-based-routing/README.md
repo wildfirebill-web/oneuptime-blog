@@ -42,6 +42,7 @@ The simplest pattern - header value must match exactly.
 
 ```yaml
 # NGINX Ingress Controller
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

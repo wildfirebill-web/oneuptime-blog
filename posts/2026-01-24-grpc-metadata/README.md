@@ -448,6 +448,7 @@ class AuthInterceptor(grpc.ServerInterceptor):
 
 
 # Apply authentication interceptor
+
 server = grpc.server(
     futures.ThreadPoolExecutor(max_workers=50),
     interceptors=[

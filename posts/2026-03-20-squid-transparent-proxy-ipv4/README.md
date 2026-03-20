@@ -22,6 +22,7 @@ A transparent proxy intercepts HTTP traffic without clients needing proxy settin
 # /etc/squid/squid.conf
 
 # Transparent proxy port (intercept mode)
+
 http_port 0.0.0.0:3129 intercept
 
 # Standard proxy port (optional, for explicit proxy clients)

@@ -29,6 +29,7 @@ For Cloud SQL, enable binlog through the instance settings:
 
 ```bash
 # Enable binary logging on a Cloud SQL MySQL instance
+
 gcloud sql instances patch my-mysql-instance \
   --backup-start-time=00:00 \
   --enable-bin-log \

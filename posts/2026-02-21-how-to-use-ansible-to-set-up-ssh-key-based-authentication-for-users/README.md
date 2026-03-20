@@ -35,6 +35,7 @@ The `ansible.posix.authorized_key` module is purpose-built for managing SSH auth
 
 ```yaml
 # deploy-ssh-keys.yml - Deploy SSH public keys
+
 - name: Deploy SSH keys for users
   hosts: all
   become: yes

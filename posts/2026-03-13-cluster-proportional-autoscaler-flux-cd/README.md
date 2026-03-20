@@ -22,6 +22,7 @@ Cluster Proportional Autoscaler (CPA) scales deployments proportionally to the n
 
 ```yaml
 # clusters/production/infrastructure/coredns-cpa.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -34,6 +34,7 @@ Count log entries over a time range:
 
 ```logql
 # Count all logs in 5-minute windows
+
 count_over_time({namespace="production"}[5m])
 
 # Count errors

@@ -281,6 +281,7 @@ When a DaemonSet health check fails:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization logging
 
 # Check DaemonSet status

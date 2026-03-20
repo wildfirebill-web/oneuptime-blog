@@ -32,6 +32,7 @@ SELinux (used by RHEL) and AppArmor (used by Ubuntu) are both mandatory access c
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

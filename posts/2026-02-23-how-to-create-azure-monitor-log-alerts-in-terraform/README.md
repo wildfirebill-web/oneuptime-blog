@@ -32,6 +32,7 @@ resource "azurerm_resource_group" "monitoring" {
 }
 
 # Reference a Log Analytics workspace
+
 data "azurerm_log_analytics_workspace" "main" {
   name                = "law-production"
   resource_group_name = "rg-monitoring"
@@ -125,7 +126,7 @@ resource "azurerm_monitor_scheduled_query_rules_alert_v2" "failed_logins" {
 }
 ```
 
-## Resource Health Alert
+Resource Health Alert
 
 ```hcl
 # Alert when resources report errors

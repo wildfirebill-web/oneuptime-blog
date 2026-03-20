@@ -28,6 +28,7 @@ Use cert-manager to create certificates for the Cilium Operator metrics endpoint
 
 ```yaml
 # cilium-operator-metrics-cert.yaml
+
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

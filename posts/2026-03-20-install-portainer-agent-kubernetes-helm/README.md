@@ -20,6 +20,7 @@ The Portainer Agent for Kubernetes runs as a DaemonSet, deploying a pod on each 
 
 ```bash
 # Add the official Portainer Helm repository
+
 helm repo add portainer https://portainer.github.io/k8s/
 helm repo update
 

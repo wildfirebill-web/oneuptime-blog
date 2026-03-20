@@ -58,6 +58,7 @@ graph LR
 
 ```python
 # edge_collector.py
+
 # Collects and buffers data at the edge
 
 from dataclasses import dataclass, field, asdict

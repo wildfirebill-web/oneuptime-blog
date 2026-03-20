@@ -16,6 +16,7 @@ Before troubleshooting, you need to know what normal looks like. Google publishe
 
 ```bash
 # Basic latency test using ping (ICMP)
+
 ping -c 20 10.0.1.50
 
 # More accurate TCP-based latency test using hping3

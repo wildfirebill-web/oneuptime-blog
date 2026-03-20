@@ -1,10 +1,10 @@
-# How to Configure Harvester Logging
+# How to Configure Harvester Logging - Config
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Logging, Fluentd, Fluentbit, Elasticsearch, Kubernetes, Observability, SUSE Rancher
+Tags: Harvester, Logging, Fluentd, FluentBit, Elasticsearch, Kubernetes, Observability, SUSE Rancher
 
-Description: Learn how to configure centralized log collection in Harvester using the built-in logging stack, route logs to external destinations like Elasticsearch or Splunk, and create log filters for specific workloads.
+Description: Learn how to configure centralized log collection in Harvester using the built-in logging stack, route logs to external destinations like Elasticsearch or Splunk, and create log filters for...
 
 ---
 
@@ -16,6 +16,7 @@ Harvester includes a built-in logging stack based on Rancher Logging (Banzai Clo
 
 ```bash
 # Check if logging is enabled
+
 kubectl get pods -n cattle-logging-system
 
 # Enable via Harvester UI:
@@ -226,5 +227,5 @@ spec:
 ## Best Practices
 
 - Use `ClusterOutput` for sending logs to centralized systems (Elasticsearch, Splunk) and `Output` (namespace-scoped) for per-team log destinations.
-- Add `record_transformer` to include cluster name, environment, and region in every log record — this is essential when aggregating logs from multiple Harvester clusters.
-- Monitor Fluentd buffer size and tail it in Prometheus — a growing buffer indicates the output destination is too slow and logs may be dropped.
+- Add `record_transformer` to include cluster name, environment, and region in every log record - this is essential when aggregating logs from multiple Harvester clusters.
+- Monitor Fluentd buffer size and tail it in Prometheus - a growing buffer indicates the output destination is too slow and logs may be dropped.

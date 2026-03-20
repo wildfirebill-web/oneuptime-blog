@@ -20,6 +20,7 @@ Before optimizing, identify where the time is being spent. Run your build with t
 
 ```bash
 # Time the overall build
+
 time podman build -t myapp:latest .
 
 # Enable verbose logging to see each step

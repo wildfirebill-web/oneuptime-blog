@@ -45,6 +45,7 @@ Configure the application in `application.yml`:
 
 ```yaml
 # application.yml
+
 micronaut:
   application:
     name: gcp-demo

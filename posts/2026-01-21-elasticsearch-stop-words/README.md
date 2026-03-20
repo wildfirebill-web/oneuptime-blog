@@ -56,6 +56,7 @@ curl -X PUT "https://localhost:9200/articles" \
 
 ```bash
 # Test different language stop words
+
 curl -X POST "https://localhost:9200/_analyze" \
   -H "Content-Type: application/json" \
   -u elastic:password \

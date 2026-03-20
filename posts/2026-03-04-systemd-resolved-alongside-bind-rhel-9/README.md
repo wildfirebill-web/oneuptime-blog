@@ -68,6 +68,7 @@ rm /etc/resolv.conf
 
 cat > /etc/resolv.conf << 'EOF'
 # Point to local BIND instance
+
 nameserver 127.0.0.1
 search example.com
 EOF

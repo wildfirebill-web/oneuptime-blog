@@ -16,6 +16,7 @@ Ad hoc commands let you run a single Ansible task against your inventory without
 
 ```bash
 # Basic ad hoc command structure
+
 ansible <host-pattern> -m <module> -a "<module-arguments>"
 ```
 

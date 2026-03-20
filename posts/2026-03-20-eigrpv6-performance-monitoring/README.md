@@ -22,7 +22,7 @@ EIGRPv6 performance monitoring focuses on convergence speed, query propagation s
 
 ## Checking Active Routes (DUAL in Progress)
 
-```
+```text
 ! Check if any routes are in DUAL active state
 Router# show ipv6 eigrp topology active
 
@@ -37,7 +37,7 @@ Router# show ipv6 eigrp topology | include " A "
 
 SIA occurs when a router doesn't receive a Reply to its Query within the SIA timer (default 180 seconds):
 
-```
+```text
 ! Check for SIA events in logs
 Router# show logging | include SIA | include EIGRP
 
@@ -53,14 +53,14 @@ Router(config-rtr)# timers active-time 240   ! 240 seconds (was 180)
 
 A large query scope indicates poor network design (too flat, missing stub routers or summarization):
 
-```
+```text
 ! Enable EIGRP SIA notifications
 Router(config)# ipv6 router eigrp 1
 Router(config-rtr)# eigrp log-neighbor-warnings 60   ! Log warnings every 60 seconds
 
 ! Check how many neighbors are queried during convergence
 Router# debug ipv6 eigrp fsm
-! Count "Sending QUERY" lines — fewer is better
+! Count "Sending QUERY" lines - fewer is better
 ! "Suppressing queries" for stub neighbors is desired
 ```
 
@@ -68,7 +68,7 @@ Router# debug ipv6 eigrp fsm
 
 EIGRPv6 limits bandwidth usage on each interface:
 
-```
+```text
 ! Default: EIGRP uses maximum 50% of interface bandwidth
 ! Adjust per interface if needed
 Router(config)# interface GigabitEthernet0/0
@@ -82,7 +82,7 @@ Router# show ipv6 eigrp interfaces detail | include BW
 
 SRTT (Smooth Round-Trip Time) indicates neighbor responsiveness:
 
-```
+```text
 Router# show ipv6 eigrp neighbors
 
 H   Address           Interface   Hold  Uptime   SRTT   RTO  Q  Seq
@@ -96,7 +96,7 @@ H   Address           Interface   Hold  Uptime   SRTT   RTO  Q  Seq
 
 ## Convergence Time Testing
 
-```
+```text
 ! Simulate a link failure and measure convergence
 ! Step 1: Check routes
 Router# show ipv6 route eigrp | wc -l
@@ -115,6 +115,7 @@ Router(config-if)# shutdown
 
 ```bash
 # Poll EIGRP neighbor state via SNMP (CISCO-EIGRP-MIB)
+
 snmpwalk -v2c -c public router-ip CISCO-EIGRP-MIB::cEigrpPeerTable
 
 # Key OIDs:

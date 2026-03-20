@@ -1,8 +1,8 @@
-# How to Create Docker Networks with OpenTofu
+# How to Create Docker Networks with OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Docker, Infrastructure as Code, IaC, Docker Networks, Networking
+Tags: OpenTofu, Docker, Infrastructure as Code, IaC, Docker Network, Networking
 
 Description: Learn how to create Docker bridge, overlay, and macvlan networks with custom IPAM settings using OpenTofu.
 
@@ -61,6 +61,7 @@ variable "environment" {
 
 ```hcl
 # Create namespace
+
 resource "kubernetes_namespace" "app" {
   metadata {
     name = var.namespace

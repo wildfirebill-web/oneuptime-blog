@@ -382,6 +382,7 @@ Common issues and their fixes:
 
 ```bash
 # Check if the Collector is healthy
+
 kubectl logs deploy/otel-collector -n observability | tail -20
 
 # Verify OTLP endpoint is reachable from a proxy

@@ -248,6 +248,7 @@ async function sendWithRetry(url, payload, options) {
 
 ```bash
 # Deploy for Slack
+
 gcloud functions deploy forward-to-slack \
   --gen2 \
   --runtime=nodejs20 \

@@ -1,4 +1,4 @@
-# How to Understand the SRv6 SID Address Space (5f00::/16)
+# How to Understand the SRv6 SID Address Space (5f00::/16) - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ Before RFC 9602, operators used their own allocated prefixes for SIDs, making it
 import ipaddress
 
 # 5f00::/16 properties
+
 block = ipaddress.IPv6Network("5f00::/16")
 
 print(f"Network address: {block.network_address}")  # 5f00::
@@ -50,10 +51,10 @@ print(is_srv6_sid("6000::"))       # False
 
 ## Allocating from 5f00::/16
 
-```
+```text
 Recommended hierarchy:
-  5f00:SITE:NODE::/48   — Node locator
-  5f00:SITE:NODE:FUNC:: — Specific SID function
+  5f00:SITE:NODE::/48   - Node locator
+  5f00:SITE:NODE:FUNC:: - Specific SID function
 
 Example for a 3-site network:
   Site 1: 5f00:0001::/32

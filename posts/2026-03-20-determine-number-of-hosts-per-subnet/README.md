@@ -8,7 +8,7 @@ Description: The number of usable hosts in an IPv4 subnet is 2 to the power of t
 
 ## The Formula
 
-```
+```text
 Host bits = 32 - prefix_length
 Total addresses = 2^host_bits
 Usable hosts = 2^host_bits - 2
@@ -63,6 +63,7 @@ def hosts_per_subnet(prefix: int) -> dict:
     }
 
 # Print table
+
 for p in [8, 16, 24, 25, 26, 27, 28, 29, 30, 31, 32]:
     info = hosts_per_subnet(p)
     print(f"/{p:2d}: host_bits={info['host_bits']:2d}  "

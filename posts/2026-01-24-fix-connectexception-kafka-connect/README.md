@@ -59,6 +59,7 @@ org.apache.kafka.connect.errors.ConnectException:
 
 ```bash
 # Get connector status
+
 curl -s http://localhost:8083/connectors/my-connector/status | jq .
 
 # Example output showing failed task

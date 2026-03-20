@@ -1,4 +1,4 @@
-# How to Create an IPvlan Network in Portainer
+# How to Create an IPvlan Network in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -38,14 +38,14 @@ IPvlan is similar to Macvlan but with a key difference: instead of assigning eac
 2. Click **Add network**.
 3. Configure:
 
-```
+```text
 Name:    ipvlan-l2
 Driver:  ipvlan
 ```
 
 4. Network configuration:
 
-```
+```text
 Subnet:   192.168.1.0/24
 Gateway:  192.168.1.1
 IP Range: 192.168.1.200/26
@@ -53,7 +53,7 @@ IP Range: 192.168.1.200/26
 
 5. Advanced options:
 
-```
+```text
 parent: eth0
 ipvlan_mode: l2
 ```
@@ -64,6 +64,7 @@ ipvlan_mode: l2
 
 ```bash
 # IPvlan L2 (default):
+
 docker network create \
   --driver ipvlan \
   --subnet 192.168.1.0/24 \
@@ -138,14 +139,14 @@ docker run -d \
 
 For L3 containers to be reachable from the rest of the network, add a static route on the router:
 
-```
+```text
 # On your network router:
 route add 10.10.0.0/24 via <docker-host-ip>
 ```
 
 ## Step 5: IPvlan vs. Macvlan Decision Tree
 
-```
+```text
 Are you on a cloud VM (AWS EC2, GCP, Azure)?
   → YES: Use IPvlan (Macvlan often blocked by hypervisor)
   → NO: Either works

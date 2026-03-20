@@ -25,6 +25,7 @@ If you do not already have a cluster, create one with `doctl`.
 
 ```bash
 # Create a 3-node cluster in the NYC1 region
+
 doctl kubernetes cluster create argocd-cluster \
   --region nyc1 \
   --version 1.28.2-do.0 \

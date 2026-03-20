@@ -302,7 +302,7 @@ connectors:
 
 Shorter aggregation intervals provide more granular metrics but increase cardinality and storage requirements. Balance temporal resolution with resource constraints.
 
-## Resource Attribute Filtering
+Resource Attribute Filtering
 
 Control which spans or logs contribute to metrics using resource attribute filters:
 

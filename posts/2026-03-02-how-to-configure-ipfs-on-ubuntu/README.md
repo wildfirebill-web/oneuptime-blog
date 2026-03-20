@@ -16,6 +16,7 @@ This guide installs and configures Kubo (the reference IPFS implementation in Go
 
 ```bash
 # Download the latest Kubo release
+
 KUBO_VERSION=$(curl -s https://api.github.com/repos/ipfs/kubo/releases/latest | grep tag_name | cut -d'"' -f4)
 wget "https://github.com/ipfs/kubo/releases/download/${KUBO_VERSION}/kubo_${KUBO_VERSION}_linux-amd64.tar.gz"
 

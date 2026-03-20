@@ -26,6 +26,7 @@ Start by initializing a new Node.js project and installing the Firestore library
 
 ```bash
 # Create a new project directory and initialize it
+
 mkdir firestore-realtime && cd firestore-realtime
 npm init -y
 npm install @google-cloud/firestore

@@ -79,6 +79,7 @@ Ensure the following ports are accessible:
 
 ```bash
 # Wazuh server ports
+
 # 1514/TCP - Agent communication (events)
 # 1515/TCP - Agent enrollment
 # 1516/TCP - Cluster daemon

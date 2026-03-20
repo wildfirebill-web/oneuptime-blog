@@ -30,6 +30,7 @@ First, figure out what source IP your application is actually seeing:
 
 ```bash
 # Deploy a simple echo service
+
 kubectl apply -f - <<EOF
 apiVersion: apps/v1
 kind: Deployment

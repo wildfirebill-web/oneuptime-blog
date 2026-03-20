@@ -47,6 +47,7 @@ Create a Dockerfile that replicates the VM's runtime environment. This example c
 
 ```dockerfile
 # Use slim Python image (smaller than full debian-based image)
+
 FROM python:3.11-slim AS base
 WORKDIR /app
 

@@ -34,6 +34,7 @@ The database directory must be on shared storage. Do not start MariaDB yet.
 
 ```bash
 # Virtual IP
+
 sudo pcs resource create DB-VIP ocf:heartbeat:IPaddr2 \
     ip=192.168.1.100 cidr_netmask=24 \
     op monitor interval=30s

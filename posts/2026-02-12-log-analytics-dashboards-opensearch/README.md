@@ -254,6 +254,7 @@ Create saved queries for common investigations so your team doesn't have to reme
 
 ```text
 # High error rate from a specific service
+
 level:ERROR AND service:"payment-api" AND response_time_ms:>5000
 
 # Failed authentication attempts

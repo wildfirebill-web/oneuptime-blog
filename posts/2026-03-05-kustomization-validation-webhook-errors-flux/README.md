@@ -26,6 +26,7 @@ Webhook errors appear in the Kustomization status with messages that reference a
 
 ```bash
 # Check Kustomization status for webhook errors
+
 flux get ks my-app
 ```
 

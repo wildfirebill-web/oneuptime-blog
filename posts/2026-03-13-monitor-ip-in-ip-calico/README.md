@@ -32,6 +32,7 @@ Inspect IPIP mode configuration on all IP pools:
 
 ```bash
 # Show IPIP configuration for all IP pools
+
 calicoctl get ippools -o yaml | grep -E "name:|ipipMode:|vxlanMode:|cidr:"
 
 # Check IPIP mode on the default pool

@@ -32,6 +32,7 @@ This is the first command to run when diagnosing Docker disk usage. It provides 
 
 ```bash
 # Display disk space used by Docker resources
+
 docker system df
 ```
 

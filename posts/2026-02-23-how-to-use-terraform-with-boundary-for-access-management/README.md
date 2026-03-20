@@ -22,6 +22,7 @@ Start by deploying the Boundary controller and worker nodes.
 
 ```hcl
 # KMS keys for Boundary encryption
+
 resource "aws_kms_key" "boundary_root" {
   description             = "Boundary root KMS key"
   deletion_window_in_days = 7

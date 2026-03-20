@@ -580,6 +580,7 @@ def profile_query(es_client, index, query_body):
     return analysis
 
 # Usage
+
 es = Elasticsearch(["http://localhost:9200"])
 query = {
     "query": {

@@ -18,6 +18,7 @@ The simplest approach defines environment variables directly in the task definit
 
 ```hcl
 # ECS task definition with environment variables
+
 resource "aws_ecs_task_definition" "app" {
   family                   = "my-app"
   requires_compatibilities = ["FARGATE"]

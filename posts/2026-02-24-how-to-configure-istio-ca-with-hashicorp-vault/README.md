@@ -42,6 +42,7 @@ Enable the PKI secrets engine in Vault:
 
 ```bash
 # Enable PKI engine for root CA
+
 vault secrets enable -path=pki pki
 
 # Set max TTL to 10 years

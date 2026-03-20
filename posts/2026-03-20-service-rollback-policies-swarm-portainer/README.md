@@ -1,4 +1,4 @@
-# How to Configure Service Rollback Policies in Portainer on Swarm
+# How to Configure Service Rollback Policies in Portainer on Swarm (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Docker Swarm rollback policies define how a service reverts to its previous vers
 
 ## Automatic vs Manual Rollback
 
-- **Automatic**: Set `failure_action: rollback` in `update_config` — Swarm triggers rollback automatically when failure threshold is exceeded
+- **Automatic**: Set `failure_action: rollback` in `update_config` - Swarm triggers rollback automatically when failure threshold is exceeded
 - **Manual**: Operator triggers `docker service rollback` via Portainer's terminal
 
 ## Step 1: Configure Rollback in Stack YAML
@@ -49,6 +49,7 @@ If an update is partially deployed and you want to revert:
 
 ```bash
 # Roll back to the previous service version
+
 docker service rollback my-stack_api
 
 # Monitor rollback progress

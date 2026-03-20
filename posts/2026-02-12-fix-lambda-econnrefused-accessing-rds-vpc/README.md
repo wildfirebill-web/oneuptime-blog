@@ -41,6 +41,7 @@ First, find out where your RDS instance lives:
 
 ```bash
 # Get RDS instance VPC and subnet details
+
 aws rds describe-db-instances \
   --db-instance-identifier my-database \
   --query 'DBInstances[0].{VpcId:DBSubnetGroup.VpcId,Subnets:DBSubnetGroup.Subnets[*].SubnetIdentifier,SecurityGroups:VpcSecurityGroups[*].VpcSecurityGroupId,Endpoint:Endpoint}'

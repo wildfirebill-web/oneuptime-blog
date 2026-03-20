@@ -28,6 +28,7 @@ This guide provides a systematic troubleshooting approach for production Cilium 
 
 ```bash
 # Check agent status on all nodes
+
 kubectl get pods -n kube-system -l k8s-app=cilium -o wide
 
 # Look for OOMKilled or CrashLoopBackOff

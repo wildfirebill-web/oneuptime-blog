@@ -39,6 +39,7 @@ The most common cause is simply having the wrong expected value in your test.
 
 ```python
 # test_calculator.py
+
 # Common mistake: wrong expected value
 
 def test_addition():

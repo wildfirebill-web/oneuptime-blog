@@ -52,6 +52,7 @@ argocd repo add https://harbor.company.com/chartrepo/platform \
 
 ```yaml
 # harbor-chartrepo.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

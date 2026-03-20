@@ -25,6 +25,7 @@ Create a ConfigMap with the provisioning configuration:
 
 ```yaml
 # grafana-dashboard-provider.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

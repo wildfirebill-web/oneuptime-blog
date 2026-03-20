@@ -34,6 +34,7 @@ The `package` module auto-detects the package manager:
 
 ```yaml
 # Works on both apt and yum systems
+
 - name: Install package (cross-platform)
   package:
     name: curl

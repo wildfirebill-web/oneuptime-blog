@@ -28,6 +28,7 @@ Packages marked `Priority: required` are the bare minimum needed for the system 
 
 ```bash
 # View required packages
+
 dpkg -l | awk '$2 ~ /^lib/ {next} {print}' | head -5
 dpkg-query -Wf '${Package}\t${Priority}\n' | grep "\trequired" | awk '{print $1}' | head -20
 ```

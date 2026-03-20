@@ -14,6 +14,7 @@ The kube-prometheus-stack Helm chart deploys Prometheus Operator, Prometheus, Al
 
 ```hcl
 # main.tf - Deploy Prometheus Stack via Helm
+
 resource "random_password" "grafana_admin" {
   length  = 24
   special = false

@@ -16,6 +16,7 @@ Description: Learn how to use tofu show to display the current state or a saved 
 tofu show
 
 # Output:
+
 # # aws_s3_bucket.data:
 # resource "aws_s3_bucket" "data" {
 #     bucket        = "acme-data-production"

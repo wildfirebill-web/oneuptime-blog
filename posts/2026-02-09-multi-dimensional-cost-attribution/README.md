@@ -326,6 +326,7 @@ Schedule monthly allocation reports:
 
 ```yaml
 # allocation-report-cronjob.yaml
+
 apiVersion: batch/v1
 kind: CronJob
 metadata:

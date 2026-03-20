@@ -18,6 +18,7 @@ The most frequent use case is checking whether a file exists:
 
 ```yaml
 # Check if a file exists before acting on it
+
 - name: Check if config file exists
   ansible.builtin.stat:
     path: /etc/myapp/config.yml

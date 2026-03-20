@@ -20,6 +20,7 @@ Start by identifying your native platform.
 
 ```bash
 # Check your host architecture
+
 uname -m
 # Common outputs: x86_64, aarch64, s390x, ppc64le
 

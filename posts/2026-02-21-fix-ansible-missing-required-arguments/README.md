@@ -27,6 +27,7 @@ Always verify required parameters:
 
 ```bash
 # View module documentation
+
 ansible-doc apt
 ansible-doc user
 ansible-doc template

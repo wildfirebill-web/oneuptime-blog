@@ -27,6 +27,7 @@ System logs capture events from the Container Apps platform itself, including im
 
 ```bash
 # View system logs for recent container events
+
 az containerapp logs show \
   --name my-app \
   --resource-group my-rg \

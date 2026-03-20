@@ -53,6 +53,7 @@ Enable it via CLI:
 
 ```bash
 # Enable duration-based sticky sessions (1 hour)
+
 aws elbv2 modify-target-group-attributes \
   --target-group-arn arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/web-targets/1234567890 \
   --attributes \

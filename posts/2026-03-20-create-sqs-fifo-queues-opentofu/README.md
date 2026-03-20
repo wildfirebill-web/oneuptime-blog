@@ -36,6 +36,7 @@ resource "aws_sqs_queue" "orders" {
 
 ```hcl
 # Dead letter queue for failed messages
+
 resource "aws_sqs_queue" "orders_dlq" {
   name       = "orders-dlq.fifo"
   fifo_queue = true

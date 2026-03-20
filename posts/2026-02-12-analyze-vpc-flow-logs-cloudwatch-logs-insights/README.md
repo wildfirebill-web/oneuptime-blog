@@ -35,6 +35,7 @@ This query identifies the top source IPs generating rejected traffic - potential
 
 ```text
 # Top 20 source IPs with the most rejected connections
+
 fields srcAddr, dstAddr, dstPort, action
 | filter action = "REJECT"
 | stats count(*) as rejectedCount by srcAddr

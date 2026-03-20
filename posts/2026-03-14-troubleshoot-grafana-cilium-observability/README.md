@@ -28,6 +28,7 @@ When users cannot reach or log into Grafana:
 
 ```bash
 # Check Grafana pod status
+
 kubectl get pods -n monitoring -l app.kubernetes.io/name=grafana
 
 # Check Grafana logs for startup errors

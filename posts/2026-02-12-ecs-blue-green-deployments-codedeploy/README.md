@@ -52,6 +52,7 @@ You need two target groups and two listeners - one for production traffic and op
 
 ```hcl
 # Application Load Balancer
+
 resource "aws_lb" "main" {
   name               = "app-alb"
   internal           = false

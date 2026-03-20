@@ -28,6 +28,7 @@ Create a patch file for your Talos nodes:
 
 ```yaml
 # datadog-logging-patch.yaml
+
 # Configure Talos machine-level log forwarding
 machine:
   logging:

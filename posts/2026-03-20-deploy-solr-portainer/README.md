@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Apache Solr
+
 version: "3.8"
 
 services:
@@ -125,4 +126,4 @@ Open `http://<host>:8983/solr` to access the Solr Admin UI. Use the **Core Selec
 
 ## Conclusion
 
-Solr uses cores (single search indexes) or collections (SolrCloud distributed indexes). For a single-node deployment, cores are sufficient. The `SOLR_HEAP` env var controls JVM heap size — set it to roughly 50% of available RAM. Use `commit=true` after bulk indexing to make documents searchable immediately, or configure `autoCommit` in `solrconfig.xml` for production workloads.
+Solr uses cores (single search indexes) or collections (SolrCloud distributed indexes). For a single-node deployment, cores are sufficient. The `SOLR_HEAP` env var controls JVM heap size - set it to roughly 50% of available RAM. Use `commit=true` after bulk indexing to make documents searchable immediately, or configure `autoCommit` in `solrconfig.xml` for production workloads.

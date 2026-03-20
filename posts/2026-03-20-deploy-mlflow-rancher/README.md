@@ -1,10 +1,11 @@
-# How to Deploy MLflow on Rancher
+# How to Deploy MLflow on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, mlflow, mlops, kubernetes, experiment-tracking
+Tags: Rancher, MLflow, MLOps, Kubernetes, Experiment-tracking
 
 Description: Guide to deploying MLflow on Rancher for ML experiment tracking, model registry, and artifact storage.
+
 ## Introduction
 
 MLflow is an open-source MLOps platform for managing the ML lifecycle including experiment tracking, model registry, and deployment. This guide covers deploying a production-ready MLflow instance on Rancher.
@@ -21,6 +22,7 @@ MLflow consists of:
 
 ```yaml
 # postgres-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

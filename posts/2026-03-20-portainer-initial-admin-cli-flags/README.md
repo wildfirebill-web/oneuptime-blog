@@ -35,6 +35,7 @@ Pre-hash the password with bcrypt before passing it to Portainer:
 
 ```bash
 # Step 1: Generate a bcrypt hash of your desired password
+
 # Using htpasswd from Apache utils
 sudo apt-get install -y apache2-utils
 htpasswd -nbB admin 'MyStr0ngP@ssword!' | cut -d":" -f2
@@ -47,7 +48,7 @@ docker run --rm httpd:2.4-alpine htpasswd -nbB admin 'MyStr0ngP@ssword!' | cut -
 ```
 
 Example output (your hash will differ):
-```
+```bash
 $2y$05$AbCdEfGhIjKlMnOpQrStUuVwXyZ0123456789ABCDE
 ```
 

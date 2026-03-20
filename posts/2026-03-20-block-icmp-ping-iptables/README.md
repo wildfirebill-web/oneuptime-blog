@@ -12,7 +12,7 @@ Blocking ICMP ping requests prevents attackers from discovering your server via 
 
 Not all ICMP traffic is ping. Blocking all ICMP breaks networking:
 
-```
+```text
 Type  Name                     Purpose
 ----  -----------------------  ----------------------------------
 0     Echo Reply               Ping response
@@ -26,6 +26,7 @@ Type  Name                     Purpose
 
 ```bash
 # Drop all incoming ICMP echo-request (ping) packets
+
 sudo iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
 
 # Or use REJECT to send ICMP unreachable back to sender

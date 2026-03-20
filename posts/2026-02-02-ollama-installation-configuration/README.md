@@ -36,6 +36,7 @@ Download and run the installer from the Ollama website, or use Homebrew:
 
 ```bash
 # Install Ollama using Homebrew
+
 brew install ollama
 ```
 

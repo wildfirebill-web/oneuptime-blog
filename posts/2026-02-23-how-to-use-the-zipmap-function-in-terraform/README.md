@@ -16,6 +16,7 @@ The `zipmap` function takes two lists - one of keys and one of values - and comb
 
 ```hcl
 # Combine two lists into a map
+
 > zipmap(["name", "age", "city"], ["Alice", "30", "NYC"])
 {
   "age"  = "30"

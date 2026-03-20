@@ -16,6 +16,7 @@ Use Ansible to push IPv6 configurations to network switches. The following playb
 
 ```yaml
 # playbooks/configure_ipv6_tor.yml
+
 ---
 - name: Configure IPv6 on ToR Switches
   hosts: tor_switches
@@ -126,7 +127,7 @@ network-provision:
 
 ## Idempotency Checks
 
-Always validate that your automation is idempotent — running it twice should not cause errors or duplicate entries. Use Ansible's `--check` mode before applying:
+Always validate that your automation is idempotent - running it twice should not cause errors or duplicate entries. Use Ansible's `--check` mode before applying:
 
 ```bash
 ansible-playbook -i inventory/hosts.yml playbooks/configure_ipv6_tor.yml --check --diff

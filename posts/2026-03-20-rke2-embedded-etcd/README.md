@@ -29,6 +29,7 @@ RKE2's embedded etcd provides:
 # /etc/rancher/rke2/config.yaml - etcd configuration
 
 # =====================
+
 # ETCD SNAPSHOT CONFIGURATION
 # =====================
 

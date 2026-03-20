@@ -27,6 +27,7 @@ Before configuring software, confirm the hardware is detected:
 
 ```bash
 # Check if the IB adapter is recognized by the kernel
+
 lspci | grep -i mellanox
 
 # Check if the inbox kernel modules loaded

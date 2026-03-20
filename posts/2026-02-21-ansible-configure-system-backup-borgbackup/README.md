@@ -27,6 +27,7 @@ The key advantages that make Borg worth the setup effort:
 
 ```yaml
 # install-borg.yml - Install BorgBackup on all servers
+
 ---
 - name: Install BorgBackup
   hosts: backup_clients

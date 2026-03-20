@@ -16,6 +16,7 @@ Start by listing all network interfaces:
 
 ```bash
 # List all interfaces with their status
+
 ip link show
 
 # Show interfaces with MAC addresses and state

@@ -26,6 +26,7 @@ graph LR
 
 ```bash
 # Create a rescue image with only the drivers for the current hardware
+
 # The --hostonly flag strips out drivers for hardware not present
 sudo dracut --force \
     --hostonly \

@@ -42,6 +42,7 @@ Check if your probes are being rewritten:
 
 ```bash
 # View the actual pod spec (not the deployment spec)
+
 kubectl get pod my-pod -o yaml | grep -A 8 "livenessProbe"
 kubectl get pod my-pod -o yaml | grep -A 8 "readinessProbe"
 ```

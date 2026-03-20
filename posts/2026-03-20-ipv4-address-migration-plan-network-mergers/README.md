@@ -10,7 +10,7 @@ Description: Create a structured IPv4 address migration plan for network mergers
 
 Network mergers inevitably surface overlapping IPv4 address spaces. A structured migration plan resolves conflicts with minimal downtime using temporary NAT, phased renumbering, and a clear cutover timeline.
 
-## Phase 1 — Discovery and Conflict Analysis
+## Phase 1 - Discovery and Conflict Analysis
 
 ```python
 import ipaddress
@@ -43,9 +43,9 @@ for c in find_conflicts(company_a, company_b):
     print(f"CONFLICT: {c['a']} overlaps {c['b']}")
 ```
 
-## Phase 2 — Temporary NAT Bridge (Week 1–4)
+## Phase 2 - Temporary NAT Bridge (Week 1–4)
 
-```
+```text
 Until renumbering is complete, use policy-based NAT to allow
 communication between conflicting address spaces.
 
@@ -66,9 +66,9 @@ interface GigabitEthernet0/1
  ip nat outside
 ```
 
-## Phase 3 — New Address Allocation
+## Phase 3 - New Address Allocation
 
-```
+```text
 Post-merger master allocation: 10.0.0.0/8
 
   Legacy Company A:   10.10.0.0/12   (immediate keep, renumber over time)
@@ -78,9 +78,9 @@ Post-merger master allocation: 10.0.0.0/8
   DMZ / Cloud:        10.80.0.0/12
 ```
 
-## Phase 4 — Phased Renumbering Checklist
+## Phase 4 - Phased Renumbering Checklist
 
-```
+```text
 For each subnet being renumbered:
 
 [ ] Assign new address in IPAM
@@ -95,10 +95,11 @@ For each subnet being renumbered:
 [ ] Decommission NAT translation for that subnet
 ```
 
-## Phase 5 — DNS Strategy
+## Phase 5 - DNS Strategy
 
 ```bash
 # Run split-DNS during transition
+
 # Old IP still resolves until all clients move
 app-server.corp.com.  IN A  10.1.5.10   # old
 app-server.corp.com.  IN A  10.50.5.10  # new (add simultaneously)
@@ -109,7 +110,7 @@ app-server.corp.com.  IN A  10.50.5.10  # new (add simultaneously)
 
 ## Migration Timeline Template
 
-```
+```text
 Week 1-2:   Discovery, conflict mapping, new addressing plan
 Week 3-4:   NAT bridge in production, connectivity tested
 Week 5-8:   Renumber DMZ and servers (least client impact)

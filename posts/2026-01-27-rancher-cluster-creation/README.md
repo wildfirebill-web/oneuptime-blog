@@ -68,6 +68,7 @@ RKE1 is Docker-based and has been battle-tested for years.
 
 ```yaml
 # rke-cluster.yml - RKE1 cluster configuration
+
 # Defines a production-ready 3-node cluster with HA control plane
 
 nodes:

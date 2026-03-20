@@ -18,6 +18,7 @@ In Docker Compose, set `pid: "host"` on a service:
 
 ```yaml
 # docker-compose.yml - basic host PID mode
+
 version: "3.8"
 
 services:

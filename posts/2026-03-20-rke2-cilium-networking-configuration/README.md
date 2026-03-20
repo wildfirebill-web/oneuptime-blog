@@ -16,6 +16,7 @@ Cilium uses eBPF to implement Kubernetes networking at the kernel level, deliver
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 token: my-cluster-token
 tls-san:
   - "rke2.example.com"
@@ -26,7 +27,7 @@ cni: cilium
 cluster-cidr: 10.42.0.0/16
 service-cidr: 10.43.0.0/16
 
-# Disable kube-proxy — Cilium replaces it with eBPF
+# Disable kube-proxy - Cilium replaces it with eBPF
 kube-proxy-disabled: true
 ```
 
@@ -143,7 +144,7 @@ hubble observe \
 
 ## Best Practices
 
-- Enable `kubeProxyReplacement: strict` for maximum eBPF performance — this removes the kube-proxy DaemonSet entirely.
+- Enable `kubeProxyReplacement: strict` for maximum eBPF performance - this removes the kube-proxy DaemonSet entirely.
 - Use **WireGuard encryption** for node-to-node traffic if your infrastructure crosses untrusted networks.
-- Cilium requires Linux kernel 4.9.17+ — check kernel versions before deploying on older nodes.
+- Cilium requires Linux kernel 4.9.17+ - check kernel versions before deploying on older nodes.
 - Use Hubble flows as input to your SIEM for real-time network anomaly detection.

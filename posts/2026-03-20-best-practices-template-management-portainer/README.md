@@ -12,9 +12,9 @@ Portainer templates (App Templates) allow teams to define pre-configured applica
 
 ## Types of Portainer Templates
 
-- **Container templates** — single container deployments with pre-set configuration
-- **Stack templates** — Docker Compose-based multi-service deployments
-- **Edge stack templates** — Compose stacks for Edge Agent deployments
+- **Container templates** - single container deployments with pre-set configuration
+- **Stack templates** - Docker Compose-based multi-service deployments
+- **Edge stack templates** - Compose stacks for Edge Agent deployments
 
 ## Building a Custom Template Library
 
@@ -101,7 +101,7 @@ Create a `templates.json` file and host it on a web server or Git repository:
   "name": "ADMIN_PASSWORD",
   "label": "Admin Password",
   "description": "At least 16 characters",
-  "preset": false    // User must set this value — no default
+  "preset": false    // User must set this value - no default
 }
 ```
 
@@ -124,7 +124,7 @@ Common categories: `database`, `cms`, `monitoring`, `messaging`, `storage`, `sec
 
 Store your template library in Git:
 
-```
+```text
 portainer-templates/
 ├── templates.json            # Template index
 ├── stacks/
@@ -140,7 +140,7 @@ portainer-templates/
 └── CHANGELOG.md
 ```
 
-Use pull requests for template updates — changes go through review before reaching users.
+Use pull requests for template updates - changes go through review before reaching users.
 
 ## Testing Templates
 

@@ -14,6 +14,7 @@ Minecraft Java Edition supports IPv6 natively. Players can connect using IPv6 ad
 
 ```bash
 # Install Java
+
 sudo apt install openjdk-21-jre-headless -y
 java -version
 

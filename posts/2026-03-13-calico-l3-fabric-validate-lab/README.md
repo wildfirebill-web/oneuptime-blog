@@ -28,6 +28,7 @@ Verify the BGP configuration is as intended:
 ```bash
 calicoctl get bgpconfiguration default -o yaml
 # Expected:
+
 # spec:
 #   nodeToNodeMeshEnabled: true  (for small lab cluster)
 #   asNumber: 64512

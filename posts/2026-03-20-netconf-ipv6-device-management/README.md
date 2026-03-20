@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NETCONF, IPv6, Network Automation, ncclient, Python, RFC 6241, SSH
+Tags: NETCONF, IPv6, Network Automation, Ncclient, Python, RFC 6241, SSH
 
 Description: Use NETCONF (RFC 6241) with Python ncclient to manage IPv6 configurations on network devices, including get-config, edit-config, and commit operations.
 
@@ -22,6 +22,7 @@ pip install ncclient xmltodict
 from ncclient import manager
 
 # Connect to a device using its IPv6 management address
+
 def netconf_connect(host: str):
     """Open a NETCONF session to a device."""
     return manager.connect(
@@ -177,11 +178,11 @@ def safe_configure_ipv6(host: str, interface: str,
             conn.commit()
             return True
         except Exception as e:
-            print(f"Error: {e} — discarding candidate")
+            print(f"Error: {e} - discarding candidate")
             conn.discard_changes()
             return False
 ```
 
 ## Conclusion
 
-NETCONF provides transactional IPv6 configuration with validation and rollback — critical for production network changes. Connect via IPv6 management addresses, use IETF YANG filters for structured retrieval, and always validate the candidate before commit. The `discard_changes()` operation prevents partial configurations from being applied. Monitor NETCONF operations with OneUptime to detect failed configuration pushes.
+NETCONF provides transactional IPv6 configuration with validation and rollback - critical for production network changes. Connect via IPv6 management addresses, use IETF YANG filters for structured retrieval, and always validate the candidate before commit. The `discard_changes()` operation prevents partial configurations from being applied. Monitor NETCONF operations with OneUptime to detect failed configuration pushes.

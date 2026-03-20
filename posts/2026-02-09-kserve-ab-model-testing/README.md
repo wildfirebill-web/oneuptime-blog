@@ -29,6 +29,7 @@ Start by deploying your baseline model (version A):
 
 ```yaml
 # model-v1.yaml
+
 apiVersion: serving.kserve.io/v1beta1
 kind: InferenceService
 metadata:

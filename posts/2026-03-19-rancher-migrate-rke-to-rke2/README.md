@@ -33,6 +33,7 @@ Record your current configuration:
 
 ```bash
 # Rancher version
+
 kubectl get settings server-version -o jsonpath='{.value}' -n cattle-system
 
 # Helm values

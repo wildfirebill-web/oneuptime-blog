@@ -146,6 +146,7 @@ exports.handler = async (event) => {
 
 ```toml
 # netlify.toml
+
 [build]
   command = "npm run build"
   publish = "dist"
@@ -155,7 +156,7 @@ exports.handler = async (event) => {
   path = "/api/*"
   function = "ipv6-info"
 
-# No special IPv6 config needed — Netlify handles it at CDN layer
+# No special IPv6 config needed - Netlify handles it at CDN layer
 ```
 
 ## Conclusion

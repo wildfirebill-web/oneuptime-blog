@@ -149,6 +149,7 @@ load_assignment:
 
 ```bash
 # View endpoint health status
+
 curl http://127.0.0.1:9901/clusters | grep -E "health_flags|::cx_|::rq_"
 
 # Health flag values:

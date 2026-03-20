@@ -29,6 +29,7 @@ These attributes are stored in the inode and are independent of file permissions
 
 ```bash
 # Verify chattr is available
+
 which chattr
 # /usr/bin/chattr
 

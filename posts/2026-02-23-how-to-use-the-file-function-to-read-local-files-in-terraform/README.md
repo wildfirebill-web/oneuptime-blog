@@ -16,6 +16,7 @@ The `file` function takes a file path as its argument and returns the file's con
 
 ```hcl
 # file(path)
+
 # Reads the file at the given path and returns its contents as a string
 file("./scripts/startup.sh")
 ```

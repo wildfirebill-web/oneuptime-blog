@@ -50,6 +50,7 @@ For an existing instance:
 
 ```bash
 # Enable IAM authentication on an existing RDS instance
+
 aws rds modify-db-instance \
   --db-instance-identifier my-database \
   --enable-iam-database-authentication \

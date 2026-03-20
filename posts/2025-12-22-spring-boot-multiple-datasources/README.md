@@ -44,6 +44,7 @@ flowchart TD
 
 ```yaml
 # application.yml
+
 spring:
   datasource:
     primary:

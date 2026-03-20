@@ -74,6 +74,7 @@ DESCRIBE KEYSPACE my_keyspace;
 ```bash
 #!/bin/bash
 # assess_cassandra_cluster.sh
+
 # Run this script to gather cluster metrics before migration
 
 # Get cluster status and token distribution

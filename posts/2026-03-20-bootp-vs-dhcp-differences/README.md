@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: DHCP, BOOTP, Networking, Protocol History, IP Addressing
 
-Description: BOOTP was the predecessor to DHCP, providing static IP assignment based on MAC address via UDP broadcasts, while DHCP extended it with dynamic leasing, automatic address pools, and a much richer options framework.
+Description: BOOTP was the predecessor to DHCP, providing static IP assignment based on MAC address via UDP broadcasts, while DHCP extended it with dynamic leasing, automatic address pools, and a much richer...
 
 ## Historical Context
 
@@ -25,7 +25,7 @@ Description: BOOTP was the predecessor to DHCP, providing static IP assignment b
 
 ## BOOTP Packet Format (Shared with DHCP)
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -50,8 +50,8 @@ Description: BOOTP was the predecessor to DHCP, providing static IP assignment b
 DHCP uses the same packet format as BOOTP but adds:
 1. **Magic cookie** (0x63825363) at the start of the options field, signaling DHCP format.
 2. **Option 53** (DHCP message type) to distinguish DHCPDISCOVER, DHCPOFFER, etc.
-3. **Option 51** (lease time) — absent in BOOTP (permanent assignments).
-4. **Dynamic pools** — server can assign any available IP from a range.
+3. **Option 51** (lease time) - absent in BOOTP (permanent assignments).
+4. **Dynamic pools** - server can assign any available IP from a range.
 
 ## BOOTP Relay and DHCP
 
@@ -59,7 +59,7 @@ DHCP relay agents (like `ip helper-address` on Cisco) were originally designed f
 
 ## Is BOOTP Still Used?
 
-BOOTP itself is largely obsolete — modern systems use DHCP. However:
+BOOTP itself is largely obsolete - modern systems use DHCP. However:
 - DHCP servers often support BOOTP requests for legacy compatibility.
 - The packet format remains identical, so DHCP and BOOTP traffic is captured by the same `port 67 or port 68` filter.
 - ISC dhcpd handles BOOTP requests automatically if `allow bootp` is in the subnet declaration.

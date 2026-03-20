@@ -1,4 +1,4 @@
-# How to Deploy IoT Applications on Raspberry Pi with Portainer
+# How to Deploy IoT Applications on Raspberry Pi with Portainer - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,13 +8,13 @@ Description: Use Portainer on Raspberry Pi to deploy and manage IoT application 
 
 ## Introduction
 
-Raspberry Pi is one of the most popular platforms for IoT edge computing. Combining it with Portainer, you can manage a complete IoT stack — from MQTT message brokers to time-series databases and visualization — through a clean web interface. This guide builds an IoT data pipeline using Docker containers managed by Portainer.
+Raspberry Pi is one of the most popular platforms for IoT edge computing. Combining it with Portainer, you can manage a complete IoT stack - from MQTT message brokers to time-series databases and visualization - through a clean web interface. This guide builds an IoT data pipeline using Docker containers managed by Portainer.
 
 ## IoT Stack Architecture
 
 The typical IoT data pipeline:
 
-```
+```text
 IoT Sensors → MQTT Broker → Node-RED → InfluxDB → Grafana
                                 ↓
                          Home Assistant
@@ -111,6 +111,7 @@ After deploying the stack, configure Mosquitto authentication:
 
 ```bash
 # Access the Mosquitto container via Portainer Console or:
+
 docker exec -it mosquitto sh
 
 # Create password file

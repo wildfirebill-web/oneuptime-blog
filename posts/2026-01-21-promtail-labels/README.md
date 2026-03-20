@@ -103,6 +103,7 @@ scrape_configs:
 
 ```yaml
 # Path: /var/log/production/order-service/app.log
+
 relabel_configs:
   - source_labels: [__path__]
     regex: '/var/log/([^/]+)/([^/]+)/.*'

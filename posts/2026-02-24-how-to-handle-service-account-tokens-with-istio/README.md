@@ -134,6 +134,7 @@ Istio's proxy monitors the token file for changes and picks up the new token aut
 
 ```bash
 # Watch the token file for changes
+
 kubectl exec -n your-namespace deploy/your-app -c istio-proxy -- \
   stat /var/run/secrets/tokens/istio-token
 ```

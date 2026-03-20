@@ -204,6 +204,7 @@ locals {
 }
 
 # Use in an Auth0 client or similar OAuth resource
+
 resource "auth0_client" "app" {
   name = "my-app-${var.environment}"
 

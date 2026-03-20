@@ -1,4 +1,4 @@
-# How to Understand the SRv6 SID Format (5f00::/16)
+# How to Understand the SRv6 SID Format (5f00::/16) - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ RFC 9602 allocates the `5f00::/16` prefix as the global SRv6 SID address space. 
 
 ## The 5f00::/16 Address Block
 
-```
+```text
 5f00::/16 is allocated by IANA for SRv6 SIDs:
   Range: 5f00:: through 5fff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
   Purpose: SRv6 Segment Identifiers
@@ -23,7 +23,7 @@ RFC 9602 allocates the `5f00::/16` prefix as the global SRv6 SID address space. 
 
 A SRv6 SID is a 128-bit IPv6 address divided into three parts:
 
-```
+```javascript
 128 bits total:
 |<---- Locator ---->|<- Function ->|<--- Arguments --->|
 |     L bits        |   F bits     |      A bits       |
@@ -41,24 +41,24 @@ SID: 5f00:1:1:0:e000::
 
 The locator is the routable prefix that identifies the **node** (or cluster of nodes) owning this SID. It is advertised via IGP (IS-IS or OSPF) as a regular IPv6 prefix.
 
-```
+```text
 Locator examples:
-  5f00:1:1::/48  — Node 1, site 1
-  5f00:2:1::/48  — Node 1, site 2
-  5f00:1:2::/48  — Node 2, site 1
+  5f00:1:1::/48  - Node 1, site 1
+  5f00:2:1::/48  - Node 1, site 2
+  5f00:1:2::/48  - Node 2, site 1
 ```
 
 ### Function
 
 The function portion encodes what action the endpoint node should take when it receives a packet with this SID as the destination.
 
-```
+```javascript
 Function examples (16-bit):
-  0x0001  — End (plain routing)
-  0xe000  — End.DT6 (IPv6 L3 table lookup)
-  0xe001  — End.DT4 (IPv4 L3 table lookup)
-  0xe002  — End.DX4 (IPv4 decap + cross-connect)
-  0xe003  — End.DX6 (IPv6 decap + cross-connect)
+  0x0001  - End (plain routing)
+  0xe000  - End.DT6 (IPv6 L3 table lookup)
+  0xe001  - End.DT4 (IPv4 L3 table lookup)
+  0xe002  - End.DX4 (IPv4 decap + cross-connect)
+  0xe003  - End.DX6 (IPv6 decap + cross-connect)
 ```
 
 ### Arguments
@@ -101,6 +101,7 @@ def parse_srv6_sid(sid: str, locator_bits: int = 48,
     }
 
 # Example usage
+
 result = parse_srv6_sid("5f00:1:1:0:e000::")
 print(f"Locator: {result['locator']}")
 print(f"Function: {result['function']}")
@@ -132,10 +133,10 @@ ip -6 route add 5f00:1:1:0:e000::/128 \
 
 Before RFC 9602, operators used their own allocated prefixes for SIDs:
 
-```
+```text
 Before RFC 9602:
-  Operator A: 2001:db8:1::/48 — SRv6 SIDs
-  Operator B: 2001:db8:2::/48 — SRv6 SIDs
+  Operator A: 2001:db8:1::/48 - SRv6 SIDs
+  Operator B: 2001:db8:2::/48 - SRv6 SIDs
   (No globally recognized SRv6 prefix)
 
 After RFC 9602:

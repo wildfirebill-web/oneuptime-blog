@@ -26,6 +26,7 @@ Add an `Accept` header to request table format:
 
 ```bash
 # Request pods in table format
+
 kubectl get --raw /api/v1/namespaces/default/pods \
     -H "Accept: application/json;as=Table;v=v1;g=meta.k8s.io"
 ```

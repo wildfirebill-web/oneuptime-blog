@@ -53,6 +53,7 @@ Set `autoAssign: false` on any pool that holds limited or expensive addresses:
 
 ```yaml
 # pool-premium.yaml
+
 # Premium IP pool - locked down to prevent accidental allocation
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

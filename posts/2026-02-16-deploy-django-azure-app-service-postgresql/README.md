@@ -18,6 +18,7 @@ I will assume you already have a Django project. If not, here is a quick setup.
 
 ```bash
 # Create a project directory and virtual environment
+
 mkdir django-azure-demo && cd django-azure-demo
 python -m venv venv
 source venv/bin/activate

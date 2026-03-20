@@ -26,6 +26,7 @@ To pin a GitRepository to a specific commit, set `spec.ref.commit` to the full c
 
 ```yaml
 # gitrepository-commit.yaml - Pin to a specific commit SHA
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

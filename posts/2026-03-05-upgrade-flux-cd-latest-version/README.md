@@ -25,6 +25,7 @@ Start by identifying the version of Flux CD currently running in your cluster.
 
 ```bash
 # Check the installed Flux CLI version
+
 flux version
 
 # Check the versions of all Flux controllers running in the cluster

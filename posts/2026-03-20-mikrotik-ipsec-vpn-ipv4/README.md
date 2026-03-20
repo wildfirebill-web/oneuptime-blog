@@ -14,6 +14,7 @@ MikroTik RouterOS supports IPsec natively. A site-to-site IPsec VPN requires mat
 
 ```mikrotik
 # IKE Phase 1 proposal
+
 /ip ipsec proposal add \
   name=IKE-PROPOSAL \
   auth-algorithms=sha256 \
@@ -41,7 +42,7 @@ MikroTik RouterOS supports IPsec natively. A site-to-site IPsec VPN requires mat
   auth-method=pre-shared-key \
   secret=IPsecSharedKey123
 
-# Policy — what traffic to encrypt
+# Policy - what traffic to encrypt
 /ip ipsec policy add \
   src-address=192.168.1.0/24 \
   dst-address=192.168.2.0/24 \

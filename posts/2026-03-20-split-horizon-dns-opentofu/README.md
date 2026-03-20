@@ -25,9 +25,10 @@ graph TD
 
 ```hcl
 # public_dns.tf
+
 resource "aws_route53_zone" "public" {
   name    = var.domain_name
-  comment = "Public zone — internet-facing records"
+  comment = "Public zone - internet-facing records"
 
   tags = {
     Environment = var.environment
@@ -67,10 +68,10 @@ resource "aws_route53_record" "app_public" {
 ```hcl
 # private_dns.tf
 
-# Private zone uses same domain — VPC association makes it authoritative internally
+# Private zone uses same domain - VPC association makes it authoritative internally
 resource "aws_route53_zone" "private" {
   name    = var.domain_name
-  comment = "Private zone — VPC-only records"
+  comment = "Private zone - VPC-only records"
 
   vpc {
     vpc_id = aws_vpc.main.id
@@ -109,7 +110,7 @@ resource "aws_route53_record" "api_private" {
   }
 }
 
-# Internal database endpoint — only resolvable within VPC
+# Internal database endpoint - only resolvable within VPC
 resource "aws_route53_record" "db_private" {
   zone_id = aws_route53_zone.private.zone_id
   name    = "db.${var.domain_name}"
@@ -185,8 +186,8 @@ output "public_name_servers" {
 
 ## Best Practices
 
-- Use the same domain name for both zones — Route 53 automatically returns the private zone records when a query originates from an associated VPC.
-- Never put sensitive internal records (database endpoints, admin UIs) in the public zone — they will be publicly resolvable even if the ports are firewalled.
+- Use the same domain name for both zones - Route 53 automatically returns the private zone records when a query originates from an associated VPC.
+- Never put sensitive internal records (database endpoints, admin UIs) in the public zone - they will be publicly resolvable even if the ports are firewalled.
 - Use `lifecycle { ignore_changes = [vpc] }` on the private zone to avoid Terraform conflicts when associating additional VPCs using separate `aws_route53_zone_association` resources.
 - Keep TTLs low (60s) on private records for services that may change IPs during deployments.
 - Test split-horizon behavior by querying from inside and outside the VPC: `dig api.example.com` should return different IPs from each location.

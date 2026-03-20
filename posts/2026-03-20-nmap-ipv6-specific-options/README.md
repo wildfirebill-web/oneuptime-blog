@@ -12,6 +12,7 @@ Beyond the basic `-6` flag, nmap includes IPv6-specific NSE scripts, options for
 
 ```bash
 # The -6 flag enables IPv6 mode for ALL nmap operations
+
 # Without it, nmap defaults to IPv4 even if you specify an IPv6 address
 
 # Correct: Enable IPv6 mode
@@ -148,4 +149,4 @@ sudo nmap -6 -D 2001:db8::decoy1,2001:db8::decoy2 2001:db8::target
 
 **Note**: All scanning techniques on this page should only be used on networks and systems you are authorized to test. Unauthorized scanning is illegal.
 
-nmap's IPv6-specific features — from link-local interface binding to dedicated NSE scripts — provide a complete toolkit for authorized IPv6 network security assessments and network inventory.
+nmap's IPv6-specific features - from link-local interface binding to dedicated NSE scripts - provide a complete toolkit for authorized IPv6 network security assessments and network inventory.

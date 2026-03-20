@@ -10,14 +10,14 @@ Description: Learn how to configure secondary IPv4 addresses on Cisco router int
 
 Secondary IPv4 addresses on a router interface allow it to serve as the gateway for multiple subnets on the same physical segment:
 
-- **Network migration** — add a new subnet alongside the old one during transition
-- **VLAN-free multi-subnet** — serve multiple subnets on a single physical LAN
-- **DHCP relay** — relay DHCP for secondary subnets without additional interfaces
-- **Testing** — add a test subnet temporarily
+- **Network migration** - add a new subnet alongside the old one during transition
+- **VLAN-free multi-subnet** - serve multiple subnets on a single physical LAN
+- **DHCP relay** - relay DHCP for secondary subnets without additional interfaces
+- **Testing** - add a test subnet temporarily
 
 ## Step 1: Configure a Secondary IP Address
 
-```
+```text
 ! Primary address (existing)
 interface GigabitEthernet0/0
  ip address 192.168.1.1 255.255.255.0
@@ -35,7 +35,7 @@ interface GigabitEthernet0/0
 
 ## Step 2: Verify Secondary Addresses
 
-```
+```text
 RouterA# show ip interface GigabitEthernet0/0
 GigabitEthernet0/0 is up, line protocol is up
   Internet address is 192.168.1.1/24
@@ -52,7 +52,7 @@ Note: `show ip interface brief` only shows the primary address.
 
 ## Step 3: Configure DHCP Scopes for Secondary Subnets
 
-```
+```text
 ! Configure DHCP scopes for both primary and secondary subnets
 
 ip dhcp excluded-address 192.168.1.1 192.168.1.10
@@ -73,7 +73,7 @@ ip dhcp pool SECONDARY_SUBNET
 
 Migrating from 192.168.1.0/24 to 10.1.0.0/24 without downtime:
 
-```
+```text
 Phase 1: Add new subnet as secondary
   interface GigabitEthernet0/0
    ip address 10.1.0.1 255.255.255.0 secondary
@@ -99,7 +99,7 @@ Phase 5: Remove old primary address
 
 Secondary addresses are included in OSPF if the `network` statement covers them:
 
-```
+```text
 router ospf 1
   ! Include both primary and secondary subnet in OSPF
   network 192.168.1.0 0.0.0.255 area 0
@@ -116,6 +116,7 @@ Note: OSPF doesn't send Hellos on secondary interfaces, which may affect DR/BDR 
 
 ```bash
 # Linux: Add secondary IP addresses
+
 ip addr add 10.0.0.1/24 dev eth0        # Primary or additional address
 ip addr add 172.16.0.1/24 dev eth0      # Additional address
 

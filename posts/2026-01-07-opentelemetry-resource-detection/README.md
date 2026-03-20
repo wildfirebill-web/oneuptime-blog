@@ -45,7 +45,7 @@ graph TB
 
 Resource detectors are components that query the environment for specific attributes. When multiple detectors run, their results are merged into a single Resource object. If there are conflicts (same attribute key from multiple detectors), the later detector in the chain typically wins, though this behavior can be configured.
 
-## Resource Hierarchy and Semantic Conventions
+Resource Hierarchy and Semantic Conventions
 
 OpenTelemetry defines semantic conventions for resource attributes. Understanding this hierarchy helps you choose the right detectors and configure custom attributes correctly.
 
@@ -98,6 +98,7 @@ The following commands install the core OpenTelemetry SDK along with resource de
 
 ```bash
 # Install core OpenTelemetry packages
+
 npm install @opentelemetry/sdk-node \
             @opentelemetry/api \
             @opentelemetry/resources \
@@ -1500,7 +1501,7 @@ const initializeMultiCloudTracing = async () => {
 initializeMultiCloudTracing().catch(console.error);
 ```
 
-## Resource Detection Best Practices
+Resource Detection Best Practices
 
 ### Performance Considerations
 
@@ -1635,7 +1636,7 @@ const initializeSafeTracing = async () => {
 initializeSafeTracing().catch(console.error);
 ```
 
-## Resource Flow Diagram
+Resource Flow Diagram
 
 This diagram shows how resources flow through the OpenTelemetry SDK:
 

@@ -24,6 +24,7 @@ Config Sync is available on GKE clusters as part of Anthos Config Management. En
 
 ```bash
 # Enable Config Sync on existing cluster
+
 gcloud beta container fleet config-management enable \
   --project=my-project
 

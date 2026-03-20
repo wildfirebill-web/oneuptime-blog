@@ -24,6 +24,7 @@ Effective troubleshooting requires understanding the chain of events from Gatewa
 ```bash
 kubectl get gatewayclass cilium
 # ACCEPTED should be True
+
 ```
 
 If not accepted, check the operator is running and has the correct controller name:

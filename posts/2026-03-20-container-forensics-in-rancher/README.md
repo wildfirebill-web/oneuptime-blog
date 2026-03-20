@@ -8,7 +8,7 @@ Description: Learn how to investigate compromised or misbehaving containers in R
 
 ---
 
-Container forensics involves examining a running or terminated container to understand what happened — whether investigating a security incident, a crash, or unexpected behavior. Rancher provides several tools for this investigation.
+Container forensics involves examining a running or terminated container to understand what happened - whether investigating a security incident, a crash, or unexpected behavior. Rancher provides several tools for this investigation.
 
 ---
 
@@ -16,6 +16,7 @@ Container forensics involves examining a running or terminated container to unde
 
 ```bash
 # Via kubectl
+
 kubectl logs <pod-name> -n <namespace>
 kubectl logs <pod-name> -c <container-name> --previous  # crashed container logs
 

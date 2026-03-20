@@ -26,6 +26,7 @@ Kubebuilder projects include envtest by default. For existing projects, install 
 go get sigs.k8s.io/controller-runtime/pkg/envtest
 
 # Download test binaries
+
 go install sigs.k8s.io/controller-runtime/tools/setup-envtest@latest
 setup-envtest use
 ```

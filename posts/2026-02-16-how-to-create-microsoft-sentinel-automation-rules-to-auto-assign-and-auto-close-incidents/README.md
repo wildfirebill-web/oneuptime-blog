@@ -122,6 +122,7 @@ Here is a PowerShell script that creates an auto-close rule using the Az.Securit
 
 ```powershell
 # Install the module if you haven't already
+
 # Install-Module -Name Az.SecurityInsights -Force
 
 # Connect to Azure (interactive login)

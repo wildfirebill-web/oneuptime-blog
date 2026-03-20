@@ -75,6 +75,7 @@ Configure the OpenTelemetry Collector to use delta temporality:
 
 ```yaml
 # collector-delta-config.yaml
+
 receivers:
   otlp:
     protocols:

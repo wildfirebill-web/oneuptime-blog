@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, Rate Limiting, Security, Linux
+Tags: RHEL, Nginx, Rate Limiting, Security, Linux
 
 Description: Learn how to protect your Nginx web server from abuse by implementing rate limiting on RHEL, including per-IP limits, burst handling, and zone configuration.
 
@@ -37,6 +37,7 @@ Rate limit zones are defined in the `http` block:
 # /etc/nginx/nginx.conf (inside the http block)
 
 # Define a rate limit zone
+
 # $binary_remote_addr - use client IP as the key
 # zone=api_limit:10m - name the zone and allocate 10MB of shared memory
 # rate=10r/s - allow 10 requests per second

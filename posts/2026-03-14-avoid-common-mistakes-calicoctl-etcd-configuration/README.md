@@ -30,6 +30,7 @@ One of the most common and dangerous mistakes is configuring etcd endpoints with
 
 ```bash
 # WRONG: Using unencrypted HTTP endpoints
+
 export ETCD_ENDPOINTS=http://etcd1:2379,http://etcd2:2379
 export DATASTORE_TYPE=etcdv3
 calicoctl get nodes

@@ -34,6 +34,7 @@ ssh admin@<asustor-ip>
 
 ```bash
 # Create a directory on the NAS volume for Portainer data
+
 mkdir -p /volume1/Docker/portainer
 
 # Create a Docker volume pointing to NAS storage

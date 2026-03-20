@@ -15,6 +15,7 @@ Monitoring IPv6 IoT device connectivity requires different approaches than tradi
 ```bash
 #!/bin/bash
 # ping_iot_devices.sh
+
 # Monitor a list of IPv6 IoT device addresses
 
 DEVICES_FILE="/etc/iot/device-addresses.txt"

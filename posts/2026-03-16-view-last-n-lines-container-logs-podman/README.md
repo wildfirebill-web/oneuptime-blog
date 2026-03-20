@@ -18,6 +18,7 @@ Long-running containers can accumulate thousands or millions of log lines. Viewi
 
 ```bash
 # View the last 10 lines of container logs
+
 podman logs --tail 10 my-container
 
 # View the last 100 lines

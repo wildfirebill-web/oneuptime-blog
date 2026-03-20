@@ -59,6 +59,7 @@ EKS provides predefined access policies:
 
 ```bash
 # Grant admin access
+
 aws eks associate-access-policy \
   --cluster-name my-cluster \
   --principal-arn arn:aws:iam::ACCOUNT_ID:role/AdminRole \

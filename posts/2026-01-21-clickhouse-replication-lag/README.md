@@ -136,6 +136,7 @@ WHERE exception LIKE '%ZooKeeper%'
 **Fixes:**
 ```bash
 # Check ZooKeeper cluster health
+
 echo ruok | nc zookeeper-1 2181
 
 # Check ZK latency

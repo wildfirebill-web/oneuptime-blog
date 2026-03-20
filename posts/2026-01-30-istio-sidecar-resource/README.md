@@ -319,6 +319,7 @@ You can check the current configuration size for any proxy.
 
 ```bash
 # Get proxy configuration stats
+
 kubectl exec -n frontend deployment/web-app -c istio-proxy -- \
   pilot-agent request GET stats | grep -E "^cluster_manager"
 

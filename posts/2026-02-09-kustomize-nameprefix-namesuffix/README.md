@@ -22,6 +22,7 @@ Add a prefix to all resource names:
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -12,7 +12,7 @@ The IPv6 Flow Label is a 20-bit field unique to IPv6 with no IPv4 equivalent. De
 
 ## Flow Label Specification (RFC 6437)
 
-```
+```text
 Flow Label field: bits 12-31 of the first 32 bits of the IPv6 header
   Value 0x00000: not used / no specific flow request
   Non-zero:      identifies a specific flow (source-generated)
@@ -68,6 +68,7 @@ def generate_flow_label(src_addr: str, dst_addr: str,
     return flow_label if flow_label != 0 else 1
 
 # Example
+
 label = generate_flow_label(
     "2001:db8::1", "2001:db8::2",
     src_port=54321, dst_port=443, protocol=6
@@ -118,7 +119,7 @@ cat /proc/sys/net/ipv6/flowlabel_consistency
 cat /proc/sys/net/ipv6/flowlabel_reflect
 ```
 
-```
+```text
 ECMP hash computation with Flow Label:
 
 IPv4 typical ECMP hash: hash(src_ip, dst_ip, src_port, dst_port, protocol)

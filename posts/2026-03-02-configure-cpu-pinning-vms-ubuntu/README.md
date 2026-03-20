@@ -16,6 +16,7 @@ Before pinning, understand your host's CPU topology:
 
 ```bash
 # View CPU topology
+
 lscpu
 
 # Show NUMA node layout

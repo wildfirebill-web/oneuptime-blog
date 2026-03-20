@@ -20,9 +20,9 @@ Portainer Stacks provide a powerful way to manage multi-service applications usi
 
 A Portainer Stack is essentially a Docker Compose file managed through the Portainer UI. Stacks can be deployed on:
 
-- **Standalone Docker** — uses Docker Compose v2
-- **Docker Swarm** — uses Docker stack deploy under the hood
-- **Kubernetes** — converts Compose to Kubernetes manifests (limited support)
+- **Standalone Docker** - uses Docker Compose v2
+- **Docker Swarm** - uses Docker stack deploy under the hood
+- **Kubernetes** - converts Compose to Kubernetes manifests (limited support)
 
 ## Step 1: Navigate to Stacks
 
@@ -35,10 +35,10 @@ A Portainer Stack is essentially a Docker Compose file managed through the Porta
 
 Choose one of the deployment methods:
 
-- **Web editor** — write the Compose file directly in the browser
-- **Upload** — upload a `docker-compose.yml` file
-- **Repository** — pull from a Git repository
-- **Custom template** — use a saved template
+- **Web editor** - write the Compose file directly in the browser
+- **Upload** - upload a `docker-compose.yml` file
+- **Repository** - pull from a Git repository
+- **Custom template** - use a saved template
 
 ## Step 3: Write Your Docker Compose File
 
@@ -117,9 +117,9 @@ secrets:
 
 Before deploying, configure additional settings:
 
-- **Stack name** — give your stack a meaningful name (e.g., `my-webapp`)
-- **Environment variables** — add `.env` variables or define them inline
-- **Access control** — restrict stack management to specific teams (BE only)
+- **Stack name** - give your stack a meaningful name (e.g., `my-webapp`)
+- **Environment variables** - add `.env` variables or define them inline
+- **Access control** - restrict stack management to specific teams (BE only)
 
 ## Step 5: Deploy the Stack
 
@@ -162,10 +162,10 @@ In the Portainer UI, add `DB_PASSWORD` and `API_KEY` as environment variable ent
 
 ## Troubleshooting
 
-- **Image pull errors** — verify registry credentials are configured in Portainer
-- **Port conflicts** — check that host ports are not already in use
-- **Volume mount errors** — ensure the host path exists or use named volumes
-- **Network errors** — confirm network names are unique within the environment
+- **Image pull errors** - verify registry credentials are configured in Portainer
+- **Port conflicts** - check that host ports are not already in use
+- **Volume mount errors** - ensure the host path exists or use named volumes
+- **Network errors** - confirm network names are unique within the environment
 
 ## Conclusion
 

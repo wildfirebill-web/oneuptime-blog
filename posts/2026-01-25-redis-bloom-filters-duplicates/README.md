@@ -39,6 +39,7 @@ RedisBloom is a Redis module that provides Bloom Filter functionality. You can r
 
 ```bash
 # Run Redis with RedisBloom module
+
 # The redis/redis-stack image includes RedisBloom and other useful modules
 docker run -d --name redis-bloom \
   -p 6379:6379 \

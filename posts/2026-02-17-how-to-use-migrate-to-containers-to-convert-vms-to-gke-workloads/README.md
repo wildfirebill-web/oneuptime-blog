@@ -46,6 +46,7 @@ Create a GKE cluster and install Migrate to Containers:
 
 ```bash
 # Create a GKE cluster for M2C processing
+
 gcloud container clusters create m2c-cluster \
   --zone=us-central1-a \
   --machine-type=e2-standard-4 \

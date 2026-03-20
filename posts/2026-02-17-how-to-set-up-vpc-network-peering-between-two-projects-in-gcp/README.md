@@ -42,6 +42,7 @@ Before setting up peering, verify these conditions:
 
 ```bash
 # Check subnets in Project A
+
 gcloud compute networks subnets list \
   --project=project-a \
   --network=network-a \

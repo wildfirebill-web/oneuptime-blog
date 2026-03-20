@@ -20,6 +20,7 @@ The first step in any debugging session is enabling verbose output.
 
 ```bash
 # Enable debug mode
+
 trivy image --debug nginx:latest
 
 # Or set environment variable

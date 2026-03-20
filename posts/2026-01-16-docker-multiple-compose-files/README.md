@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Compose, DevOps, Configuration, Environment
+Tags: Docker, Docker Compose, DevOps, Configuration, Environments
 
 Description: Learn how to use multiple Docker Compose files for different environments (development, staging, production), override configurations, and manage complex multi-service applications.
 
@@ -16,6 +16,7 @@ When you specify multiple Compose files, Docker merges them in order. Later file
 
 ```bash
 # Merge base with overrides
+
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up
 ```
 

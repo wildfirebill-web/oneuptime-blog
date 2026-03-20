@@ -33,6 +33,7 @@ Verify feature gate:
 
 ```bash
 # Check if CSIStorageCapacity is enabled
+
 kubectl get --raw /api/v1 | jq '.resources[] | select(.name == "csistoragecapacities")'
 
 # If CSIStorageCapacity objects are available, the feature is enabled

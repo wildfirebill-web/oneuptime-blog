@@ -14,6 +14,7 @@ Configure Squid as an explicit forward proxy for IPv6 clients, with ACLs, cachin
 
 ```bash
 # Ensure IPv6 is enabled and functional
+
 ip -6 addr show
 ping6 -c 3 ::1
 

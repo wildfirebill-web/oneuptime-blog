@@ -31,6 +31,7 @@ Install the `community.rabbitmq` collection for native Ansible modules.
 
 ```bash
 # Install the RabbitMQ collection from Galaxy
+
 ansible-galaxy collection install community.rabbitmq
 ```
 

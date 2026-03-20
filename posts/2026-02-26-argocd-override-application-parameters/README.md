@@ -120,6 +120,7 @@ You can set parameter overrides with the ArgoCD CLI:
 
 ```bash
 # Set a Helm parameter
+
 argocd app set backend-api \
   --helm-set replicaCount=5
 

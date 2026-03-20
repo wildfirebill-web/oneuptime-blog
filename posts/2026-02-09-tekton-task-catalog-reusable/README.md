@@ -329,6 +329,7 @@ Create a catalog structure:
 
 ```bash
 # Catalog directory structure
+
 tekton-catalog/
 ├── tasks/
 │   ├── build/

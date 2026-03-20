@@ -45,6 +45,7 @@ Enable NAP on your GKE cluster with resource limits that cap how much compute NA
 
 ```bash
 # Enable Node Auto-Provisioning with resource limits
+
 gcloud container clusters update my-cluster \
   --region us-central1 \
   --enable-autoprovisioning \
@@ -249,7 +250,7 @@ gcloud container node-pools describe nap-abc123 \
 kubectl get events --field-selector reason=ScaleUp,reason=ScaleDown
 ```
 
-## Resource Limits and Cost Control
+Resource Limits and Cost Control
 
 The resource limits you set on NAP are your primary cost control mechanism.
 

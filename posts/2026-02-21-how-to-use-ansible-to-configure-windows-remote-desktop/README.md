@@ -18,6 +18,7 @@ On a fresh Windows Server install, RDP might be disabled. Here is how to enable 
 
 ```yaml
 # playbook-enable-rdp.yml
+
 # Enables Remote Desktop on Windows servers with basic security settings
 - name: Enable Remote Desktop
   hosts: windows

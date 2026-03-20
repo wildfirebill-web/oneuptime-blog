@@ -38,6 +38,7 @@ flowchart TB
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update
 sudo apt install -y barman barman-cli
 

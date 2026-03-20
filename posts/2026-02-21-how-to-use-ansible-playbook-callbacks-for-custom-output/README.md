@@ -16,6 +16,7 @@ Ansible ships with several callback plugins you can switch to immediately:
 
 ```bash
 # List all available callback plugins
+
 ansible-doc -t callback -l
 ```
 

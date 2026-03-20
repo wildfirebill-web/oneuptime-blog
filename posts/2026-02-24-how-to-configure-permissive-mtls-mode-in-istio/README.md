@@ -149,6 +149,7 @@ Test that both mTLS and plain text connections work:
 
 ```bash
 # From a pod WITH a sidecar (should use mTLS)
+
 kubectl exec deploy/service-a -c service-a -- curl -s http://service-b:8080/health
 
 # From a pod WITHOUT a sidecar (should use plain text)

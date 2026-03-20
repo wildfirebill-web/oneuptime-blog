@@ -53,6 +53,7 @@ You can measure state parsing time:
 
 ```bash
 # Time how long it takes to parse and list state
+
 time terraform state list > /dev/null
 
 # For a more detailed measurement

@@ -8,7 +8,7 @@ Description: Learn how to generate a Portainer Business Edition support bundle c
 
 ---
 
-When troubleshooting complex issues in Portainer BE, the support team may request a support bundle — a compressed archive containing logs, configuration details, and diagnostic data that helps identify the root cause without requiring direct access to your system.
+When troubleshooting complex issues in Portainer BE, the support team may request a support bundle - a compressed archive containing logs, configuration details, and diagnostic data that helps identify the root cause without requiring direct access to your system.
 
 ## What's in a Support Bundle
 
@@ -39,6 +39,7 @@ Some Portainer BE versions include a support bundle option in the **?** (Help) m
 
 ```bash
 # Authenticate
+
 TOKEN=$(curl -s -X POST \
   https://localhost:9443/api/auth \
   -H "Content-Type: application/json" \

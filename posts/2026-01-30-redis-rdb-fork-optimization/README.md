@@ -69,6 +69,7 @@ Monitor copy-on-write behavior using Redis INFO output:
 
 ```bash
 # Check fork stats in Redis
+
 redis-cli INFO persistence | grep -E "(rdb_|fork)"
 ```
 

@@ -50,6 +50,7 @@ https://<pbs-ip>:8007
 
 ```bash
 # Disable enterprise repository (requires subscription)
+
 echo "# Enterprise repo disabled" > /etc/apt/sources.list.d/pbs-enterprise.list
 
 # Add community repository

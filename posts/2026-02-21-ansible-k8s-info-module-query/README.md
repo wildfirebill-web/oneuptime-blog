@@ -39,6 +39,7 @@ The most direct query returns a single resource.
 
 ```yaml
 # playbook: query-by-name.yml
+
 # Retrieves a specific Deployment by name and extracts key details
 ---
 - name: Query specific resource

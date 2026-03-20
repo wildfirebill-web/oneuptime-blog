@@ -43,6 +43,7 @@ graph TD
 
 ```bash
 # List all network policies
+
 etcdctl get /calico/v1/policy/ --prefix --keys-only
 
 # Key paths:

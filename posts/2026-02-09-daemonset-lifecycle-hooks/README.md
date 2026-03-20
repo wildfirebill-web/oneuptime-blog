@@ -461,6 +461,7 @@ Track lifecycle hook behavior:
 
 ```bash
 # Check pod events for lifecycle hook failures
+
 kubectl get events --field-selector involvedObject.kind=Pod --sort-by='.lastTimestamp' | grep -i "poststart\|prestop"
 
 # View container logs during startup

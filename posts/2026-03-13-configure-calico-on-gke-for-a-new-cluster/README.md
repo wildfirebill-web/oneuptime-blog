@@ -29,6 +29,7 @@ Create a GKE Standard cluster without GKE's managed network policy (Calico requi
 
 ```bash
 # Set your project and region
+
 PROJECT_ID="my-gcp-project"
 CLUSTER_NAME="calico-gke-cluster"
 REGION="us-central1"

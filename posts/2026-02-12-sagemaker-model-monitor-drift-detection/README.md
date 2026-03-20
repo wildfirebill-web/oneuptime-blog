@@ -51,6 +51,7 @@ role = sagemaker.get_execution_role()
 bucket = session.default_bucket()
 
 # Configure data capture
+
 data_capture_config = DataCaptureConfig(
     enable_capture=True,
     sampling_percentage=100,  # Capture all requests (reduce for high-traffic endpoints)

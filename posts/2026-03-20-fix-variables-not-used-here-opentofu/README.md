@@ -1,4 +1,4 @@
-# How to Fix "Error: Variables May Not Be Used Here" in OpenTofu
+# How to Fix 'Error: Variables May Not Be Used Here' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,11 +8,11 @@ Description: Learn why OpenTofu prohibits input variables in certain contexts li
 
 ## Introduction
 
-OpenTofu evaluates certain blocks — most notably `backend` and some provider meta-arguments — during initialization, before input variables are available. Using a variable in these positions produces the "variables may not be used here" error.
+OpenTofu evaluates certain blocks - most notably `backend` and some provider meta-arguments - during initialization, before input variables are available. Using a variable in these positions produces the "variables may not be used here" error.
 
 ## Error Message
 
-```
+```text
 Error: Variables not allowed
   on backend.tf line 5, in terraform:
   5:     bucket = var.state_bucket
@@ -23,12 +23,13 @@ Error: References to input variables not supported here
   3:     required_version = var.tofu_version
 ```
 
-## Fix 1: Backend Block — Use -backend-config Instead
+## Fix 1: Backend Block - Use -backend-config Instead
 
 The backend block is evaluated at `tofu init` time, before variables exist:
 
 ```hcl
-# WRONG — variables not allowed in backend
+# WRONG - variables not allowed in backend
+
 terraform {
   backend "s3" {
     bucket = var.state_bucket   # Error!
@@ -36,7 +37,7 @@ terraform {
   }
 }
 
-# CORRECT — use an empty backend block
+# CORRECT - use an empty backend block
 terraform {
   backend "s3" {}
 }
@@ -61,7 +62,7 @@ EOF
 tofu init -backend-config=backend-prod.hcl
 ```
 
-## Fix 2: required_version — Use a Literal
+## Fix 2: required_version - Use a Literal
 
 `required_version` in the `terraform` block must be a literal string:
 
@@ -71,13 +72,13 @@ terraform {
   required_version = var.tofu_version   # Not allowed
 }
 
-# CORRECT — use a literal version constraint
+# CORRECT - use a literal version constraint
 terraform {
   required_version = ">= 1.8"
 }
 ```
 
-## Fix 3: Provider Source — Use Literals
+## Fix 3: Provider Source - Use Literals
 
 Provider source addresses and version constraints are static:
 
@@ -103,7 +104,7 @@ terraform {
 }
 ```
 
-## Fix 4: Provider Assume Role — Use Environment Variables
+## Fix 4: Provider Assume Role - Use Environment Variables
 
 For dynamic provider configuration (e.g., different roles per environment), use environment variables since the provider block is evaluated before full variable resolution:
 
@@ -134,7 +135,7 @@ locals {
 }
 
 terraform {
-  backend "s3" {}   # Still can't use locals here — use -backend-config
+  backend "s3" {}   # Still can't use locals here - use -backend-config
 }
 ```
 

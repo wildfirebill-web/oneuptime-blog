@@ -389,6 +389,7 @@ Implement a connection router at the application level to direct requests to the
 
 ```python
 # Python example: Tenant-aware connection pool
+
 import psycopg2
 from psycopg2 import pool
 from functools import lru_cache
@@ -513,7 +514,7 @@ AND metric_name IN ('cpu_usage', 'memory_usage', 'disk_io')
 ORDER BY bucket DESC;
 ```
 
-## Resource Quotas and Fair Usage
+Resource Quotas and Fair Usage
 
 Implement resource quotas to prevent noisy neighbors from affecting other tenants.
 

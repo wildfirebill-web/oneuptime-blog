@@ -34,6 +34,7 @@ If you do not already have a workspace:
 
 ```bash
 # Create a centralized Log Analytics workspace for backup monitoring
+
 RESOURCE_GROUP="rg-backup-monitoring"
 WORKSPACE_NAME="law-backup-central"
 LOCATION="eastus"

@@ -440,6 +440,7 @@ Publish your extension to make it available to your team:
 
 ```bash
 # Build for production
+
 npm run build
 
 # Publish to npm (for public extensions)

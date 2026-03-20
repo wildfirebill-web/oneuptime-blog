@@ -48,6 +48,7 @@ The base references the upstream ArgoCD manifests directly.
 
 ```yaml
 # argocd-install/base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

@@ -31,6 +31,7 @@ The `MachineRegistration` resource defines:
 
 ```yaml
 # machine-registration.yaml
+
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:

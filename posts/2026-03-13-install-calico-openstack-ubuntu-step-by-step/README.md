@@ -51,6 +51,7 @@ Configure Neutron to use Calico:
 
 ```ini
 # /etc/neutron/neutron.conf
+
 [DEFAULT]
 core_plugin = calico
 ```

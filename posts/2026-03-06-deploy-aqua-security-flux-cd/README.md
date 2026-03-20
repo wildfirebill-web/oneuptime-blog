@@ -49,6 +49,7 @@ Define a namespace for Aqua Security components.
 
 ```yaml
 # aqua-namespace.yaml
+
 # Dedicated namespace for Aqua Security platform
 apiVersion: v1
 kind: Namespace

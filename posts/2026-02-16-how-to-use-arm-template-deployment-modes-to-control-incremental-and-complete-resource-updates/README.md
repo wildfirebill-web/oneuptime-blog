@@ -18,6 +18,7 @@ Incremental mode is the default. When you deploy in incremental mode, Azure only
 
 ```bash
 # Deploy in incremental mode (this is the default)
+
 az deployment group create \
   --resource-group "my-rg" \
   --template-file main.bicep \

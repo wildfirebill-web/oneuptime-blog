@@ -30,6 +30,7 @@ Apply the following Helm values to configure advantages of the encapsulation mod
 
 ```yaml
 # cilium-encap-advantages-values.yaml
+
 # Configuration leveraging encapsulation advantages
 
 # VXLAN overlay works on any L3 network

@@ -37,6 +37,7 @@ Start by creating a route table in your resource group.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-routing-demo --location eastus
 
 # Create a route table

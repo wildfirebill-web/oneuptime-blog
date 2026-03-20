@@ -54,6 +54,7 @@ First, create a KMS keyring and key:
 
 ```bash
 # Create a keyring for DLP encryption keys
+
 gcloud kms keyrings create dlp-keyring \
   --location=global \
   --project=PROJECT_ID

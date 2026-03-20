@@ -24,6 +24,7 @@ Before starting, you need both clusters running and accessible:
 
 ```bash
 # Verify both clusters are healthy
+
 talosctl --talosconfig talos-primary.yaml health
 talosctl --talosconfig talos-secondary.yaml health
 

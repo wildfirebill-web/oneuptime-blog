@@ -22,6 +22,7 @@ Configure auth with the CLI:
 amplify add auth
 
 # Choose the configuration:
+
 # ? Default configuration vs Manual? Default configuration
 # ? How do you want users to sign in? Email
 # ? Do you want to configure advanced settings? Yes

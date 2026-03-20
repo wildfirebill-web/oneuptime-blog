@@ -46,6 +46,7 @@ Create custom rules that specifically monitor Istio components:
 
 ```yaml
 # istio-falco-rules.yaml
+
 - rule: Unexpected Process in Istio Proxy
   desc: Detect unexpected processes running in istio-proxy containers
   condition: >

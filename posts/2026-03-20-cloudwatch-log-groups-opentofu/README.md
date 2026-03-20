@@ -14,6 +14,7 @@ CloudWatch Log Groups are the containers for log streams in AWS. Without explici
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -181,7 +182,7 @@ resource "aws_cloudwatch_log_subscription_filter" "to_lambda" {
 
 ## Best Practices
 
-- Always set `retention_in_days` — the default is to never expire logs, which can be costly.
+- Always set `retention_in_days` - the default is to never expire logs, which can be costly.
 - Use consistent naming conventions like `/app/{env}/{service}` to make log discovery predictable.
 - Encrypt sensitive log groups (those containing PII or credentials) using KMS.
 - Use metric filters to turn operational signals (error rates, latency) into actionable alarms.

@@ -69,6 +69,7 @@ Set the OpenTofu binary path in Atlantis configuration.
 
 ```yaml
 # atlantis.yaml (in your repo root)
+
 version: 3
 
 projects:

@@ -12,9 +12,9 @@ EIGRPv6 neighbor issues have some unique causes compared to EIGRP for IPv4. The 
 
 ## Step 1: Check the Process is Not Shutdown
 
-**This is the #1 EIGRPv6 issue** — EIGRPv6 is shutdown by default in classic mode:
+**This is the #1 EIGRPv6 issue** - EIGRPv6 is shutdown by default in classic mode:
 
-```
+```text
 ! Check if EIGRPv6 is shutdown
 Router# show ipv6 eigrp
 
@@ -33,10 +33,10 @@ In Named mode, this is not an issue as Named EIGRP is active by default.
 
 EIGRPv6 requires an explicit Router ID on IPv6-only routers:
 
-```
+```text
 ! Check current Router ID
 Router# show ipv6 eigrp
-! Look for: Router-ID: 0.0.0.0  ← PROBLEM — no Router ID set
+! Look for: Router-ID: 0.0.0.0  ← PROBLEM - no Router ID set
 
 ! Fix:
 Router(config)# ipv6 router eigrp 1
@@ -46,7 +46,7 @@ Router(config-rtr)# no shutdown
 
 ## Step 3: Verify EIGRPv6 is Enabled on the Interface
 
-```
+```text
 ! Check which interfaces have EIGRPv6 enabled
 Router# show ipv6 eigrp interfaces
 
@@ -64,10 +64,10 @@ Router(config-if)# ipv6 eigrp 1    ! Add EIGRPv6 to missing interface
 
 Both routers must use the same AS number:
 
-```
+```text
 ! Verify AS number
 Router# show ipv6 eigrp
-! Look for: AS(1) — AS number must match on both sides
+! Look for: AS(1) - AS number must match on both sides
 
 ! If AS numbers differ, they will not form adjacency
 ! Check both routers:
@@ -77,7 +77,7 @@ Router# show ipv6 eigrp
 
 ## Step 5: Check Hello/Hold Timer Match
 
-```
+```text
 ! Show timer values per interface
 Router# show ipv6 eigrp interfaces detail
 
@@ -91,7 +91,7 @@ Router(config-if)# ipv6 hold-time eigrp 1 15
 
 ## Step 6: Verify Link-Local Address Exists
 
-```
+```text
 ! EIGRPv6 needs a link-local address on each interface
 Router# show ipv6 interface GigabitEthernet0/0 | include link-local
   IPv6 is enabled, link-local address is FE80::1
@@ -102,7 +102,7 @@ Router(config-if)# ipv6 enable
 
 ## Step 7: Check Authentication
 
-```
+```text
 ! If authentication is configured, keys must match
 Router# show ipv6 eigrp interfaces detail | include Auth
   Authentication mode is md5, key-chain is "EIGRP_KEY"
@@ -113,14 +113,14 @@ Router# show key chain EIGRP_KEY
 
 ## Step 8: Debug EIGRPv6
 
-```
+```text
 ! Enable EIGRPv6 neighbor debugging (caution: verbose)
 Router# debug ipv6 eigrp neighbor
 
 ! Look for:
 ! "Hello" messages being sent and received
 ! "Authentication failure" messages
-! "K value mismatch" messages — K values must match
+! "K value mismatch" messages - K values must match
 
 ! Disable after diagnosis
 Router# no debug all

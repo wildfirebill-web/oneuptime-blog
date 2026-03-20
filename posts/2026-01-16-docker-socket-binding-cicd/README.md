@@ -14,6 +14,7 @@ Docker socket binding (`/var/run/docker.sock`) allows containers to communicate 
 
 ```bash
 # Mount Docker socket into container
+
 docker run -v /var/run/docker.sock:/var/run/docker.sock docker:latest docker ps
 ```
 

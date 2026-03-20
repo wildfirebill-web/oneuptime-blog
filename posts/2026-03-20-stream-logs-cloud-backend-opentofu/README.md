@@ -14,6 +14,7 @@ When using the cloud backend with remote execution, `tofu plan` and `tofu apply`
 
 ```bash
 # Logs stream automatically to terminal during remote execution
+
 tofu plan
 
 # Output:
@@ -239,4 +240,4 @@ curl -X POST \
 
 ## Conclusion
 
-Terraform Cloud streams run logs to the local terminal automatically during remote execution. The same logs are accessible via API using the run ID, plan ID, or apply ID — enabling integration with external log management systems like Splunk, DataDog, or ELK. For CI/CD, capture output with `tee` and upload as artifacts for historical reference. Webhook notifications provide event-driven log forwarding without polling the API.
+Terraform Cloud streams run logs to the local terminal automatically during remote execution. The same logs are accessible via API using the run ID, plan ID, or apply ID - enabling integration with external log management systems like Splunk, DataDog, or ELK. For CI/CD, capture output with `tee` and upload as artifacts for historical reference. Webhook notifications provide event-driven log forwarding without polling the API.

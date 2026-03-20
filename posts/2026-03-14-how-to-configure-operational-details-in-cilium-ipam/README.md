@@ -28,6 +28,7 @@ The cluster-pool mode is the most common and provides the most control:
 
 ```yaml
 # cilium-ipam.yaml
+
 ipam:
   mode: cluster-pool
   operator:

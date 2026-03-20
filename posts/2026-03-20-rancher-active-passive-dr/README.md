@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, disaster-recovery, active-passive, kubernetes, high-availability
+Tags: Rancher, Disaster-recovery, Active-Passive, Kubernetes, High-Availability
 
 Description: A detailed guide to implementing active-passive disaster recovery for Rancher with automated failover capabilities.
 
@@ -29,6 +29,7 @@ In an active-passive setup:
 
 ```yaml
 # primary-backup-config.yaml
+
 apiVersion: resources.cattle.io/v1
 kind: Backup
 metadata:

@@ -28,6 +28,7 @@ These defaults cover the most impactful MySQL settings. Override them based on y
 
 ```yaml
 # roles/mysql_config/defaults/main.yml
+
 # Sensible defaults for MySQL configuration
 ---
 mysql_config_file: /etc/mysql/mysql.conf.d/mysqld.cnf

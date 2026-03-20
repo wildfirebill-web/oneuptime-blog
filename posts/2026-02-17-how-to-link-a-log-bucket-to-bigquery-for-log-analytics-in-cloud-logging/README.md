@@ -26,6 +26,7 @@ Here is how to create a new bucket with Log Analytics turned on from the start.
 
 ```bash
 # Create a new log bucket with Log Analytics enabled
+
 gcloud logging buckets create analytics-bucket \
   --location=global \
   --enable-analytics \

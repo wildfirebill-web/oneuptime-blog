@@ -16,6 +16,7 @@ The most common use of the debug module is printing the value of a variable:
 
 ```yaml
 # Print the value of a single variable
+
 - name: Show the target environment
   ansible.builtin.debug:
     var: target_env

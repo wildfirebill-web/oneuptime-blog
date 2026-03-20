@@ -43,6 +43,7 @@ Add both gems to your Gemfile:
 # Gemfile
 
 # Core SDK with trace API implementation
+
 gem 'opentelemetry-sdk'
 
 # OTLP exporter for sending traces
@@ -175,7 +176,7 @@ exporter = OpenTelemetry::Exporter::OTLP::Exporter.new(
 
 HTTP is simpler and works through most firewalls and proxies. gRPC is more efficient for high-volume scenarios but requires more network configuration.
 
-## Resource Attributes and Service Information
+Resource Attributes and Service Information
 
 Resources describe the entity producing telemetry. They include service name, version, environment, and other identifying information:
 

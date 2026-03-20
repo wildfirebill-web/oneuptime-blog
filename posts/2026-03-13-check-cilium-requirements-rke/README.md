@@ -28,6 +28,7 @@ Cilium requires a minimum kernel version. RKE supports multiple OS distributions
 
 ```bash
 # Check kernel version on all cluster nodes
+
 kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.nodeInfo.kernelVersion}{"\n"}{end}'
 
 # Minimum kernel requirements:

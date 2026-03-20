@@ -49,6 +49,7 @@ spec:
 ```bash
 #!/bin/bash
 # ipam-utilization-exporter.sh
+
 # Export IPAM utilization as Prometheus metrics on port 9099
 
 while true; do

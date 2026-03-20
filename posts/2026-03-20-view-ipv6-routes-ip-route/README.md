@@ -10,6 +10,7 @@ Description: A guide to using `ip -6 route` to view, filter, and interpret IPv6 
 
 ```bash
 # Show all IPv6 routes
+
 ip -6 route show
 
 # Short form

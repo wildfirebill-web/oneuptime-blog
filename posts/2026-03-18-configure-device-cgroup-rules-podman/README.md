@@ -20,6 +20,7 @@ Every device file in Linux has two numbers: a major number and a minor number. T
 
 ```bash
 # View major and minor numbers of device files
+
 ls -la /dev/sda /dev/ttyUSB0 /dev/video0 /dev/null 2>/dev/null
 # Example output:
 # brw-rw---- 1 root disk      8,   0 Mar 18 08:00 /dev/sda       (block, major 8, minor 0)

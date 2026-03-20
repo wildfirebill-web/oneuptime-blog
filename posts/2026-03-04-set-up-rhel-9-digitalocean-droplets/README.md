@@ -14,6 +14,7 @@ DigitalOcean does not provide a native RHEL image, but you can upload a custom R
 
 ```bash
 # On a local machine, download the RHEL cloud image
+
 # from the Red Hat Customer Portal (QCOW2 format)
 
 # Convert to raw format if needed

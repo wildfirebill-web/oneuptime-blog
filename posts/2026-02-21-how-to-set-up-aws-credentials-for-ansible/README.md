@@ -16,6 +16,7 @@ First, make sure you have the `amazon.aws` collection and the `boto3` Python lib
 
 ```bash
 # Install the Amazon AWS collection
+
 ansible-galaxy collection install amazon.aws
 
 # Install boto3 (the AWS SDK for Python)

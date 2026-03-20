@@ -43,6 +43,7 @@ Health checks determine whether backends are healthy enough to receive traffic:
 
 ```yaml
 # create-health-check.yml - Create an HTTP health check
+
 ---
 - name: Create Health Check
   hosts: localhost

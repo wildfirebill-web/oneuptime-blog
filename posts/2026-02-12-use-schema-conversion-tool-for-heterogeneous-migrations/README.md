@@ -160,6 +160,7 @@ You can also export the SQL scripts and apply them manually if you prefer:
 
 ```bash
 # Apply the exported schema conversion scripts to PostgreSQL
+
 psql -h target-db.example.com -U admin -d mydb -f converted_schema.sql
 ```
 

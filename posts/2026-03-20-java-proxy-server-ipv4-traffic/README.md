@@ -115,7 +115,7 @@ public class TCPProxy {
             }
             
         } catch (SocketException e) {
-            // Connection closed — normal
+            // Connection closed - normal
         } catch (IOException e) {
             logger.fine("Pipe error [" + direction + "]: " + e.getMessage());
         } finally {
@@ -165,6 +165,7 @@ private void logData(String direction, byte[] data, int length) {
 
 ```bash
 # Compile
+
 javac TCPProxy.java
 
 # Start proxy: listen on 8888, forward to backend:80
@@ -176,4 +177,4 @@ curl http://localhost:8888/api/endpoint
 
 ## Conclusion
 
-This bidirectional TCP proxy demonstrates Java's socket-level networking. The key pattern is spawning two goroutine-equivalent threads — one for each direction — and using `InputStream.read()` loops to move data. Add SSL termination by wrapping sockets in `SSLSocket` for HTTPS proxying.
+This bidirectional TCP proxy demonstrates Java's socket-level networking. The key pattern is spawning two goroutine-equivalent threads - one for each direction - and using `InputStream.read()` loops to move data. Add SSL termination by wrapping sockets in `SSLSocket` for HTTPS proxying.

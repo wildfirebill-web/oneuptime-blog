@@ -22,6 +22,7 @@ Before installing Istio, make sure your edge Kubernetes cluster meets the minimu
 
 ```bash
 # Install K3s on your edge node
+
 curl -sfL https://get.k3s.io | sh -
 
 # Verify the cluster is running

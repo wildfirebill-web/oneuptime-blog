@@ -27,6 +27,7 @@ BigQuery is the most popular destination for log analysis. Each log entry become
 
 ```hcl
 # BigQuery dataset for log storage
+
 resource "google_bigquery_dataset" "logs" {
   dataset_id  = "cloud_logs"
   project     = var.project_id

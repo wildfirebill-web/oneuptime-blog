@@ -121,6 +121,7 @@ The `split_queries_by_interval` setting controls how queries are divided. Smalle
 # loki-config.yaml
 
 # Query frontend configuration for optimal splitting
+
 query_frontend:
   # Split queries into 15-minute intervals
   # Smaller intervals = more parallelism but more overhead
@@ -581,7 +582,7 @@ sum(rate({job="checkout", level="error"}[5m]))
 
 ---
 
-## Resource Limits and Tenant Configuration
+Resource Limits and Tenant Configuration
 
 Proper resource limits prevent runaway queries from impacting cluster stability.
 

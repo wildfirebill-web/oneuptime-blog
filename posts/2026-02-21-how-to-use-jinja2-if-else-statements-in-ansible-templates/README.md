@@ -56,6 +56,7 @@ The playbook provides the variables:
 
 ```yaml
 # deploy-nginx.yml
+
 # Deploys Nginx config with conditional SSL
 - name: Deploy Nginx configuration
   hosts: webservers

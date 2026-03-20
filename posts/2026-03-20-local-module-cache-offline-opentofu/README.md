@@ -8,12 +8,13 @@ Description: Learn how to create and use a local module cache for offline OpenTo
 
 ## Introduction
 
-OpenTofu modules can come from the public registry, Git repositories, or HTTP URLs — all of which require internet access. For air-gapped environments, you need to pre-download modules and make them available locally. This guide covers strategies for caching public registry modules, Git modules, and hosting an internal module registry.
+OpenTofu modules can come from the public registry, Git repositories, or HTTP URLs - all of which require internet access. For air-gapped environments, you need to pre-download modules and make them available locally. This guide covers strategies for caching public registry modules, Git modules, and hosting an internal module registry.
 
 ## Understanding How OpenTofu Caches Modules
 
 ```bash
 # After tofu init, modules are cached in .terraform/modules/
+
 ls .terraform/modules/
 
 # modules.json tracks module sources and versions

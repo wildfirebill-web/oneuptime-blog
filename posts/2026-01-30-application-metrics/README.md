@@ -172,6 +172,7 @@ Let us implement RED metrics across popular languages. Each example includes Ope
 
 ```python
 # metrics_setup.py
+
 # Configure OpenTelemetry metrics for a Python application
 # This setup works with any OTLP-compatible backend (OneUptime, Prometheus, etc.)
 

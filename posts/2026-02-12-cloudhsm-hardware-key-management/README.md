@@ -56,6 +56,7 @@ This creates a CloudHSM cluster in your VPC:
 
 ```bash
 # Create the CloudHSM cluster
+
 aws cloudhsmv2 create-cluster \
   --hsm-type hsm1.medium \
   --subnet-ids subnet-aaa111 subnet-bbb222 \

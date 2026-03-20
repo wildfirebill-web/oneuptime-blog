@@ -12,6 +12,7 @@ Static routes added with `ip route add` are lost after reboot:
 
 ```bash
 # Add route to 10.0.0.0/24 via gateway 192.168.1.254
+
 ip route add 10.0.0.0/24 via 192.168.1.254
 
 # Add route via specific interface

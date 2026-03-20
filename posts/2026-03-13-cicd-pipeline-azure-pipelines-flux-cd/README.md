@@ -28,6 +28,7 @@ This guide covers setting up Azure Pipelines to work with Flux CD, using YAML pi
 
 ```bash
 # Using GitHub as the fleet repository
+
 flux bootstrap github \
   --owner=your-org \
   --repository=fleet-repo \

@@ -22,6 +22,7 @@ Rocky Linux is a community-driven enterprise Linux distribution designed to be a
 
 ```bash
 # Create the repository configuration
+
 cat <<EOF | sudo tee /etc/yum.repos.d/opentofu.repo
 [opentofu]
 name=opentofu

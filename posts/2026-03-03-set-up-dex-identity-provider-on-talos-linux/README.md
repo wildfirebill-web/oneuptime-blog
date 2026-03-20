@@ -33,6 +33,7 @@ Common use cases:
 
 ```bash
 # Create the dex namespace
+
 kubectl create namespace dex
 
 # If using LDAP connector, create the bind credentials secret

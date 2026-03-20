@@ -80,6 +80,7 @@ Here is a Python example showing how to calculate these SLIs from your request d
 
 ```python
 # Example: Calculating SLIs from request logs
+
 # This class helps you track and compute SLI values
 # from your application's request history
 

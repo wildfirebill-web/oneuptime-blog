@@ -28,6 +28,7 @@ When you run a container with `--privileged`, Podman:
 
 ```bash
 # Run a container in privileged mode
+
 podman run --privileged -it alpine sh
 
 # Inside the container, you can now see all host devices

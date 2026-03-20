@@ -231,6 +231,7 @@ If your wildcard routing is not working, check these things:
 
 ```bash
 # Verify the VirtualService was created
+
 kubectl get vs -A
 
 # Check the Gateway hosts match the VirtualService hosts

@@ -29,6 +29,7 @@ Here is the simplest way to use Kaniko in Cloud Build.
 
 ```yaml
 # cloudbuild.yaml - Basic Kaniko build
+
 steps:
   - name: 'gcr.io/kaniko-project/executor:latest'
     args:

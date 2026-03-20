@@ -94,6 +94,7 @@ Test the mutation:
 
 ```bash
 # Create a pod without security context
+
 kubectl run test --image=nginx:1.25
 
 # Check the created pod - security context should be automatically added

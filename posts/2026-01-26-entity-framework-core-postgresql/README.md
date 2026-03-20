@@ -28,6 +28,7 @@ The Npgsql provider for EF Core brings full support for these PostgreSQL-specifi
 
 ```bash
 # Create a new ASP.NET Core Web API project
+
 dotnet new webapi -n MyPostgresApp
 cd MyPostgresApp
 

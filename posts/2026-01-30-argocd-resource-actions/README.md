@@ -51,6 +51,7 @@ You can restart a deployment to pick up ConfigMap or Secret changes without modi
 
 ```bash
 # Using ArgoCD CLI
+
 argocd app actions run myapp restart --kind Deployment --resource-name my-deployment
 
 # This adds a restart annotation to trigger rolling restart
@@ -332,7 +333,7 @@ discovery.lua: |
   return actions
 ```
 
-## Resource Action Architecture
+Resource Action Architecture
 
 Understanding the flow helps with debugging and design.
 

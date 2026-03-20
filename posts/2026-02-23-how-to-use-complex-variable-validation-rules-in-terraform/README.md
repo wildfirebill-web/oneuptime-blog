@@ -311,6 +311,7 @@ Complex validations run during `terraform plan` and `terraform apply`. For very 
 
 ```hcl
 # Efficient - uses built-in functions
+
 validation {
   condition     = length(var.items) == length(toset(var.items))
   error_message = "Items must be unique."

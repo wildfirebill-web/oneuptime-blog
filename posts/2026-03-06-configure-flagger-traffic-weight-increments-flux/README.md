@@ -45,6 +45,7 @@ The simplest configuration uses a constant step weight.
 
 ```yaml
 # apps/my-app/canary.yaml
+
 apiVersion: flagger.app/v1beta1
 kind: Canary
 metadata:

@@ -18,6 +18,7 @@ The x2go project maintains its own PPA for Ubuntu:
 
 ```bash
 # Add the x2go PPA
+
 sudo apt-add-repository ppa:x2go/stable
 sudo apt update
 

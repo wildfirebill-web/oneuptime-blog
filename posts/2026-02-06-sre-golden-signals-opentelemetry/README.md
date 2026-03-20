@@ -38,6 +38,7 @@ All four signals share a common setup. Initialize the meter provider once at app
 
 ```python
 # golden_signals.py - OpenTelemetry golden signals implementation
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

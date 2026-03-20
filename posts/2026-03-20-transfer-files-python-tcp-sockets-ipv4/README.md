@@ -8,7 +8,7 @@ Description: Learn how to transfer files reliably over IPv4 using Python TCP soc
 
 ## File Transfer Protocol Design
 
-TCP is a byte stream—it has no built-in concept of message boundaries. To transfer a file, we must first send the file size so the receiver knows how many bytes to read.
+TCP is a byte stream-it has no built-in concept of message boundaries. To transfer a file, we must first send the file size so the receiver knows how many bytes to read.
 
 ## File Server
 

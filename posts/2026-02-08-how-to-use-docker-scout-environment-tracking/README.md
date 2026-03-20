@@ -37,6 +37,7 @@ You need a Docker Hub account with Scout enabled and the Docker Scout CLI plugin
 
 ```bash
 # Verify Docker Scout is available
+
 docker scout version
 
 # Log in to Docker Hub (required for environment features)

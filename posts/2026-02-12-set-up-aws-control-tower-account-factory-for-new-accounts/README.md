@@ -52,6 +52,7 @@ Here is a Terraform configuration that sets up Account Factory network defaults:
 
 ```hcl
 # Configure Account Factory network settings
+
 resource "aws_controltower_landing_zone" "network_config" {
   manifest_json = jsonencode({
     governedRegions = ["us-east-1", "us-west-2"]

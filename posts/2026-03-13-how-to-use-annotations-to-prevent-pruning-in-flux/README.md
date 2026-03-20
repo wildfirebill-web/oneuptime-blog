@@ -69,6 +69,7 @@ When you need to protect multiple resources, Kustomize patches provide a more sc
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

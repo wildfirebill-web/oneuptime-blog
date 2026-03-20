@@ -27,6 +27,7 @@ The simplest case is enabling become at the play level:
 
 ```yaml
 # basic-become.yml - Install packages as root
+
 ---
 - name: Setup web server
   hosts: webservers

@@ -309,6 +309,7 @@ sequenceDiagram
 
 ```yaml
 # Kubernetes StatefulSet for Kafka consumers with static membership
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

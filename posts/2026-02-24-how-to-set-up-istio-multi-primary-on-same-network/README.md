@@ -46,6 +46,7 @@ mkdir -p certs
 pushd certs
 
 # Generate root CA
+
 make -f ../tools/certs/Makefile.selfsigned.mk root-ca
 
 # Generate intermediate certs for each cluster

@@ -943,6 +943,7 @@ Configure your logging infrastructure to filter logs before storage.
 </filter>
 
 # Or use record transformer to sample DEBUG logs
+
 <filter app.**>
   @type record_transformer
   enable_ruby true

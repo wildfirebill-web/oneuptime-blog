@@ -16,6 +16,7 @@ RabbitMQ's default configuration already binds to 0.0.0.0 (all interfaces). Expl
 # /etc/rabbitmq/rabbitmq.conf
 
 # Explicit all-interface binding (this is the default behavior)
+
 listeners.tcp.1 = 0.0.0.0:5672
 
 # Restrict management to localhost only (security best practice)

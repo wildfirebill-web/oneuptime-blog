@@ -20,6 +20,7 @@ First, create a standard Kubernetes Pod manifest:
 
 ```yaml
 # ~/.config/containers/systemd/webapp-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

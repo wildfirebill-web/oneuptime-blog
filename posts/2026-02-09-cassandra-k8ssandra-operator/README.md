@@ -22,6 +22,7 @@ Deploy K8ssandra using Helm:
 
 ```bash
 # Add K8ssandra Helm repository
+
 helm repo add k8ssandra https://helm.k8ssandra.io/stable
 helm repo update
 

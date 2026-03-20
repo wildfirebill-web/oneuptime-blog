@@ -23,6 +23,7 @@ Ubuntu cloud images ship with cloud-init that supports multiple data sources: AW
 
 ```bash
 # Install cloud-image-utils (provides cloud-localds)
+
 sudo apt update
 sudo apt install cloud-image-utils qemu-system-x86 qemu-utils -y
 

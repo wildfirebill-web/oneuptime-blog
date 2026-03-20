@@ -34,6 +34,7 @@ On both the server and all clients:
 
 ```bash
 # Install the rsyslog GnuTLS module for TLS support
+
 sudo dnf install rsyslog-gnutls -y
 ```
 

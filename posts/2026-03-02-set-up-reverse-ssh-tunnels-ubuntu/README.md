@@ -27,6 +27,7 @@ On the home machine (the one behind NAT):
 
 ```bash
 # Create a reverse tunnel
+
 # -R sets up remote port forwarding
 # 2222 is the port on the relay server
 # localhost:22 is the SSH service on the home machine

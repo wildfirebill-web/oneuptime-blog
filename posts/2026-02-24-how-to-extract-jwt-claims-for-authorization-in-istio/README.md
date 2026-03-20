@@ -73,6 +73,7 @@ For nested objects in the JWT payload, use bracket notation to traverse the nest
 
 ```yaml
 # Token payload: {"realm_access": {"roles": ["admin", "user"]}}
+
 when:
   - key: request.auth.claims[realm_access][roles]
     values: ["admin"]

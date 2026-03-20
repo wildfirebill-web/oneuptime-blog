@@ -90,6 +90,7 @@ def diagnose_resource_exhausted(error):
 
 
 # Usage
+
 try:
     response = stub.MakeRequest(request)
 except grpc.RpcError as e:

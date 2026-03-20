@@ -26,6 +26,7 @@ Every CI/CD platform has a built-in secrets mechanism. This is the simplest star
 
 ```yaml
 # .github/workflows/terraform.yml
+
 name: Terraform Apply
 
 on:

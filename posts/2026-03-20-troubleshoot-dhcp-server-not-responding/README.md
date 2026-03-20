@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Troubleshooting, Networking, Network Diagnostics, sysadmin
+Tags: DHCP, Troubleshooting, Networking, Network Diagnostics, Sysadmin
 
-Description: When a DHCP server stops responding, clients fall back to APIPA (169.254.x.x) addresses, and systematic diagnosis involves checking service status, firewall rules, interface bindings, and pool availability.
+Description: When a DHCP server stops responding, clients fall back to APIPA (169.254.x.x) addresses, and systematic diagnosis involves checking service status, firewall rules, interface bindings, and pool...
 
 ## Symptoms
 
@@ -16,6 +16,7 @@ Description: When a DHCP server stops responding, clients fall back to APIPA (16
 
 ```bash
 # ISC dhcpd
+
 sudo systemctl status isc-dhcp-server
 journalctl -u isc-dhcp-server -n 50
 

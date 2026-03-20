@@ -8,7 +8,7 @@ Description: Deploy a manufacturing edge computing platform with Portainer to ru
 
 ---
 
-Manufacturing facilities increasingly run compute workloads at the edge — close to the machines and sensors — to reduce latency, handle network interruptions, and process data locally before forwarding to the cloud. Portainer's Edge Agent is purpose-built for this pattern.
+Manufacturing facilities increasingly run compute workloads at the edge - close to the machines and sensors - to reduce latency, handle network interruptions, and process data locally before forwarding to the cloud. Portainer's Edge Agent is purpose-built for this pattern.
 
 ## Manufacturing Edge Architecture
 
@@ -26,6 +26,7 @@ graph TB
 
 ```yaml
 # manufacturing-edge-stack.yml
+
 version: "3.8"
 
 services:
@@ -62,7 +63,7 @@ services:
     networks:
       - factory-net
 
-  # Local time-series store — keeps data during network outages
+  # Local time-series store - keeps data during network outages
   influxdb:
     image: influxdb:2.7
     environment:
@@ -77,7 +78,7 @@ services:
     networks:
       - factory-net
 
-  # Edge analytics — detects anomalies locally
+  # Edge analytics - detects anomalies locally
   edge-analytics:
     image: myregistry/edge-analytics:1.5
     environment:
@@ -155,8 +156,8 @@ Register the edge compute node with Portainer (see the IoT device management gui
 
 Keep the OT network isolated from the IT network. The edge compute node sits in a DMZ:
 
-- Port 1883 (MQTT) — internal to factory-net only
-- Port 8086 (InfluxDB) — internal to factory-net only
+- Port 1883 (MQTT) - internal to factory-net only
+- Port 8086 (InfluxDB) - internal to factory-net only
 - No external ports exposed from OT-facing containers
 
 ## Summary

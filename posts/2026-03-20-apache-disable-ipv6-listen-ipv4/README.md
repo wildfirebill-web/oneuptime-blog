@@ -16,6 +16,7 @@ On a typical Linux system with Apache default config:
 
 ```bash
 # Default: Apache listens on all IPv6 addresses (which includes IPv4 via dual-stack)
+
 sudo ss -tlnp | grep apache2
 # LISTEN 0 511 :::80 :::*  users:(("apache2",...))
 # This :::80 accepts BOTH IPv4 and IPv6 connections on most Linux systems

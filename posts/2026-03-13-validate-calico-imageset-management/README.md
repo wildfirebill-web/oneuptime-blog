@@ -27,6 +27,7 @@ This guide provides a comprehensive validation checklist and automated test scri
 
 ```bash
 # Verify ImageSet exists and has all required images
+
 kubectl get imageset -o yaml
 
 # Validate Installation registry setting

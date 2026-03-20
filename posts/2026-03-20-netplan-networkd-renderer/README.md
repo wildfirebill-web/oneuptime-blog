@@ -23,6 +23,7 @@ Set `renderer: networkd` in your Netplan YAML:
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   renderer: networkd          # Use systemd-networkd as the backend

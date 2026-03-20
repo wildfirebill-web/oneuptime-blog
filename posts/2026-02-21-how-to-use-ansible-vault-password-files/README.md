@@ -20,6 +20,7 @@ The simplest approach is a plain text file with your password:
 
 ```bash
 # Create a vault password file
+
 # Use a strong, randomly generated password in production
 echo "your-vault-password-here" > ~/.vault_pass.txt
 

@@ -18,6 +18,7 @@ Podman provides the `podman pod clone` command to create a copy of an existing p
 
 ```bash
 # Create a source pod
+
 podman pod create --name original-pod -p 8080:80
 podman run -d --pod original-pod --name web docker.io/library/nginx:alpine
 

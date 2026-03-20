@@ -1,4 +1,4 @@
-# How to Troubleshoot ImagePullBackOff Errors in Portainer
+# How to Troubleshoot ImagePullBackOff Errors in Portainer - Troubleshoot
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,11 +24,11 @@ ImagePullBackOff means Kubernetes cannot pull the container image for your pod. 
 
 In Portainer, open the failing pod and check the Events section:
 
-\`\`\`
+```text
 Events:
   Warning  Failed     BackOff pulling image "my-registry.internal/api:v1.5"
   Warning  Failed     Error: ImagePullBackOff
-\`\`\`
+```
 
 The exact error message in the Failed event tells you which cause applies.
 
@@ -36,13 +36,13 @@ The exact error message in the Failed event tells you which cause applies.
 
 Check that the image reference in your stack/manifest is spelled correctly:
 
-\`\`\`bash
-# Verify the image exists and is accessible
+```bash
+## Verify the image exists and is accessible
 docker pull my-registry.internal/api:v1.5
 
-# Check available tags
+## Check available tags
 curl -u user:pass https://my-registry.internal/v2/api/tags/list
-\`\`\`
+```
 
 ## Step 3: Check Registry Credentials in Portainer
 
@@ -56,30 +56,30 @@ Go to **Portainer > Registries** and verify the registry is configured:
 
 If using Kubernetes, ensure an imagePullSecret is referenced in your deployment:
 
-\`\`\`yaml
+```yaml
 spec:
   imagePullSecrets:
     - name: registry-credentials
   containers:
     - name: api
       image: my-registry.internal/api:v1.5
-\`\`\`
+```
 
 Create the secret:
 
-\`\`\`bash
+```bash
 kubectl create secret docker-registry registry-credentials   --docker-server=my-registry.internal   --docker-username=user   --docker-password=pass   -n production
-\`\`\`
+```
 
 ## Step 5: Test Network Access
 
 If the error indicates a network issue:
 
-\`\`\`bash
-# From inside a debug pod, test registry connectivity
+```bash
+## From inside a debug pod, test registry connectivity
 kubectl run debug --image=curlimages/curl --rm -it -- sh
 curl -v https://my-registry.internal/v2/
-\`\`\`
+```
 
 ## Summary
 

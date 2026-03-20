@@ -211,6 +211,7 @@ env.getCheckpointConfig().setCheckpointingMode(CheckpointingMode.EXACTLY_ONCE);
 
 ```yaml
 # State backend configuration for HashMapStateBackend
+
 # All working state is kept in the TaskManager JVM heap
 
 # Specify the state backend type

@@ -36,6 +36,7 @@ SeaweedFS ships as a single Go binary:
 
 ```bash
 # Download the latest release
+
 SEAWEED_VERSION=$(curl -s https://api.github.com/repos/seaweedfs/seaweedfs/releases/latest | grep tag_name | cut -d'"' -f4)
 wget "https://github.com/seaweedfs/seaweedfs/releases/download/${SEAWEED_VERSION}/linux_amd64.tar.gz"
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, tanzu, kubernetes, enterprise, comparison, vmware
+Tags: Rancher, Tanzu, Kubernetes, Enterprise, Comparison, VMware
 
 Description: A comprehensive comparison of SUSE Rancher and VMware Tanzu to help enterprise teams select the right Kubernetes platform.
 
@@ -45,6 +45,7 @@ Rancher runs as a lightweight deployment on any Kubernetes cluster. It manages d
 
 ```yaml
 # Rancher agent deployed on managed cluster
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

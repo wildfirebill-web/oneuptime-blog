@@ -16,6 +16,7 @@ Back up the entire root filesystem while excluding virtual filesystems and the b
 
 ```bash
 # Create a full system backup with gzip compression
+
 # Exclude virtual filesystems, temporary files, and the backup destination
 sudo tar czpf /backup/full-backup-$(date +%Y%m%d).tar.gz \
   --exclude=/proc \

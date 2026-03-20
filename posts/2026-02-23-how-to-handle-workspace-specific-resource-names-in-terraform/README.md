@@ -36,6 +36,7 @@ Each cloud provider and resource type has different rules:
 
 ```hcl
 # S3 buckets: lowercase, hyphens, dots. 3-63 chars. Globally unique.
+
 resource "aws_s3_bucket" "data" {
   bucket = lower("myapp-data-${terraform.workspace}")
 }

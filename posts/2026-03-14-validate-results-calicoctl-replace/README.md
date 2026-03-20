@@ -28,6 +28,7 @@ Compare the resource in the datastore against the intended definition:
 ```bash
 #!/bin/bash
 # validate-replace.sh
+
 # Validates that a replace operation produced the expected state
 
 set -euo pipefail

@@ -39,6 +39,7 @@ Start with a Dockerfile that includes Python, common scraping libraries, and a h
 
 ```dockerfile
 # Dockerfile - Python scraping environment with Chrome and Selenium
+
 FROM python:3.12-slim
 
 # Install Chrome dependencies and the browser itself

@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Azure, Blob Storage, Storage Account, Infrastructure as Code
 
-Description: Learn how to configure Azure Blob Storage with OpenTofu — creating storage accounts, containers, lifecycle management policies, private endpoints, and access tier optimization.
+Description: Learn how to configure Azure Blob Storage with OpenTofu - creating storage accounts, containers, lifecycle management policies, private endpoints, and access tier optimization.
 
 ## Introduction
 
-Azure Blob Storage stores unstructured data at scale. OpenTofu manages storage accounts, blob containers, lifecycle management policies, private endpoints for network security, and RBAC assignments — all as declarative code that can be versioned and reviewed.
+Azure Blob Storage stores unstructured data at scale. OpenTofu manages storage accounts, blob containers, lifecycle management policies, private endpoints for network security, and RBAC assignments - all as declarative code that can be versioned and reviewed.
 
 ## Storage Account
 
@@ -163,6 +163,7 @@ resource "azurerm_private_dns_zone_virtual_network_link" "storage" {
 }
 
 # Restrict access to private endpoint only
+
 resource "azurerm_storage_account_network_rules" "app" {
   storage_account_id = azurerm_storage_account.app.id
 
@@ -208,4 +209,4 @@ output "private_endpoint_ip" {
 
 ## Conclusion
 
-Azure Blob Storage with OpenTofu requires `allow_nested_items_to_be_public = false` and private endpoints for production security. Enable `versioning_enabled = true` and `delete_retention_policy` for data protection. The lifecycle management policy automatically tiers blobs from Hot to Cool to Archive, reducing storage costs by up to 80% for cold data. Use RBAC with managed identities rather than storage account keys — keys are symmetric secrets that can't be audited per-caller.
+Azure Blob Storage with OpenTofu requires `allow_nested_items_to_be_public = false` and private endpoints for production security. Enable `versioning_enabled = true` and `delete_retention_policy` for data protection. The lifecycle management policy automatically tiers blobs from Hot to Cool to Archive, reducing storage costs by up to 80% for cold data. Use RBAC with managed identities rather than storage account keys - keys are symmetric secrets that can't be audited per-caller.

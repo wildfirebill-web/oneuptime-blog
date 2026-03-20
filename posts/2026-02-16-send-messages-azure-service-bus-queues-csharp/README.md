@@ -23,6 +23,7 @@ Create a Service Bus namespace and queue if you do not have them.
 
 ```bash
 # Create namespace
+
 az servicebus namespace create \
     --name my-sb-namespace \
     --resource-group my-rg \

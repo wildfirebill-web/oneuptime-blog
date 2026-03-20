@@ -41,6 +41,7 @@ Cloud Composer is the right choice when you have complex DAGs with many tasks, d
 
 ```python
 # A Cloud Composer DAG for a complex data pipeline
+
 from airflow import DAG
 from airflow.providers.google.cloud.operators.bigquery import (
     BigQueryInsertJobOperator,

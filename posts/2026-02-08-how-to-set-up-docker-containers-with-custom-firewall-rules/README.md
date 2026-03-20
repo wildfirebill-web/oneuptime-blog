@@ -22,6 +22,7 @@ View Docker's current iptables rules:
 
 ```bash
 # List all rules in the DOCKER chain to see what Docker has opened
+
 sudo iptables -L DOCKER -n -v
 ```
 

@@ -68,6 +68,7 @@ If your cache is a pure pass-through cache where data can be quickly regenerated
 
 ```bash
 # Create a Premium Redis cache with RDB persistence enabled
+
 az redis create \
   --resource-group myResourceGroup \
   --name my-redis-persistent \

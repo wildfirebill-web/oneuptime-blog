@@ -109,6 +109,7 @@ Your S3 bucket needs CORS configured to accept uploads from your React app's dom
 
 ```bash
 # Set CORS configuration on the bucket
+
 aws s3api put-bucket-cors \
   --bucket user-uploads-bucket \
   --cors-configuration '{

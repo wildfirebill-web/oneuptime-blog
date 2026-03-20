@@ -30,6 +30,7 @@ Terraform does not have a `terraform state mv` command that works across workspa
 
 ```bash
 # Step 1: Record the resource ID from the source workspace
+
 terraform workspace select source-workspace
 terraform state show aws_instance.app
 # Note the id: i-0abc123def456
@@ -207,7 +208,7 @@ terraform plan -detailed-exitcode 2>&1 || {
 
 Some resources are trickier to migrate than others.
 
-### Resources With Sub-Resources
+Resources With Sub-Resources
 
 Resources like `aws_security_group` may have inline rules that are also tracked as separate resources:
 
@@ -238,7 +239,7 @@ terraform import aws_security_group_rule.web_http "$HTTP_RULE_ID"
 terraform import aws_security_group_rule.web_https "$HTTPS_RULE_ID"
 ```
 
-### Resources With count or for_each
+Resources With count or for_each
 
 Resources created with `count` or `for_each` need special attention:
 
@@ -261,7 +262,7 @@ terraform state rm 'aws_route53_record.records["www"]'
 terraform import 'aws_route53_record.records["www"]' "ZONE_ID_www.example.com_A"
 ```
 
-### Resources Within Modules
+Resources Within Modules
 
 Module resources have a module path prefix:
 

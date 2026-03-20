@@ -20,6 +20,7 @@ Install the Secret Manager client library.
 
 ```bash
 # Install the Secret Manager Python client
+
 pip install google-cloud-secret-manager
 ```
 

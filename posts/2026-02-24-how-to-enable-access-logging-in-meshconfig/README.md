@@ -163,6 +163,7 @@ The Telemetry API supports CEL (Common Expression Language) for filtering which 
 
 ```yaml
 # Only log errors
+
 filter:
   expression: "response.code >= 400"
 

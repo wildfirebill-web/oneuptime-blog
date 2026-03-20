@@ -18,6 +18,7 @@ Check if monetization is already enabled:
 
 ```bash
 # Check organization features
+
 curl "https://apigee.googleapis.com/v1/organizations/YOUR_ORG" \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" | jq '.addonsConfig'
 ```

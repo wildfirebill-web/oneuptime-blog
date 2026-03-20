@@ -24,6 +24,7 @@ Git hooks live in the `.git/hooks/` directory of each repository. Server-side ho
 
 ```yaml
 # playbook-pre-commit.yml
+
 # Deploys a pre-commit hook that runs linting before allowing commits
 - name: Deploy pre-commit hook
   hosts: development_servers

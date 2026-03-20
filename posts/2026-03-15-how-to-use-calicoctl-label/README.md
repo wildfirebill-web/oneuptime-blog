@@ -27,6 +27,7 @@ This guide covers practical examples of labeling Calico nodes, workload endpoint
 
 ```bash
 # Add or update a label
+
 calicoctl label <resource_type> <resource_name> <key>=<value>
 
 # Remove a label

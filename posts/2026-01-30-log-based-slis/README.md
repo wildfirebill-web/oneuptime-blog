@@ -230,6 +230,7 @@ The OpenTelemetry Collector can parse logs and extract metrics. This configurati
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   filelog:
     include:

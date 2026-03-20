@@ -75,6 +75,7 @@ Volumes are the primary way containers in a pod communicate and share data. Each
 
 ```yaml
 # shared-volume-pod.yaml
+
 # Demonstrates how two containers share data through a volume
 apiVersion: v1
 kind: Pod
@@ -1409,7 +1410,7 @@ spec:
 
 ## Best Practices Summary
 
-### Resource Management
+Resource Management
 
 ```yaml
 # Always set resource limits for sidecars

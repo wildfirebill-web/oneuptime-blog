@@ -96,6 +96,7 @@ Use the `--record` flag and provide your record key to upload results to the Das
 
 ```bash
 # Record key can be passed as flag or environment variable
+
 npx cypress run --record --key your-record-key-here
 
 # Or set as environment variable (recommended for CI)

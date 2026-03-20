@@ -134,6 +134,7 @@ import urequests  # Use 'requests' for full Python, 'urequests' for MicroPython
 import time
 
 # Configuration: Your unique OneUptime heartbeat endpoint
+
 HEARTBEAT_URL = "https://oneuptime.com/heartbeat/abc123"
 INTERVAL = 300  # Heartbeat interval in seconds (5 minutes)
 

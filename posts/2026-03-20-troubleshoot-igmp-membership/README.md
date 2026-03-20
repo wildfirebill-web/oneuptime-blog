@@ -14,6 +14,7 @@ IGMP (Internet Group Management Protocol) is the signaling protocol hosts use to
 
 ```bash
 # Capture all IGMP traffic:
+
 tcpdump -i eth0 -n 'igmp'
 
 # Example IGMP messages:

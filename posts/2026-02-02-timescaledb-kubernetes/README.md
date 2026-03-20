@@ -69,6 +69,7 @@ The TimescaleDB Helm chart simplifies deployment and configuration. Start by add
 
 ```bash
 # Add the Timescale Helm repository
+
 helm repo add timescale https://charts.timescale.com
 
 # Update Helm repositories to fetch latest charts

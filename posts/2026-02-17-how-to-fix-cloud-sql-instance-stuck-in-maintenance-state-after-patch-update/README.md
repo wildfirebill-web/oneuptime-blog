@@ -16,6 +16,7 @@ Your instance status shows `MAINTENANCE` or `PENDING_MAINTENANCE` and has been i
 
 ```bash
 # Check the instance state
+
 gcloud sql instances describe my-instance \
     --project=my-project \
     --format="table(state, maintenanceVersion, settings.maintenanceWindow)"

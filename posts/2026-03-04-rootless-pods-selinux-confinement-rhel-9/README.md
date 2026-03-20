@@ -78,6 +78,7 @@ When mounting host directories into rootless containers, use the `:z` or `:Z` su
 mkdir -p ~/poddata
 
 # Shared label (lowercase z) - multiple containers can access
+
 podman run --rm -v ~/poddata:/data:z registry.access.redhat.com/ubi9/ubi:latest ls /data
 
 # Private label (uppercase Z) - only this container can access

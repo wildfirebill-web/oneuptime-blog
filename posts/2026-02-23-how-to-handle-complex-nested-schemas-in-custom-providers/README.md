@@ -30,6 +30,7 @@ The main difference between nested attributes and nested blocks is syntax in HCL
 
 ```hcl
 # Nested attribute (uses = syntax)
+
 resource "example_server" "web" {
   network_config = {
     vpc_id    = "vpc-123"

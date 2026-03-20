@@ -16,6 +16,7 @@ However, THP has a complicated relationship with real-world workloads. Many data
 
 ```bash
 # Check THP setting
+
 cat /sys/kernel/mm/transparent_hugepage/enabled
 ```
 

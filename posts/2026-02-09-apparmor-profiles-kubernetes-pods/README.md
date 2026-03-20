@@ -22,6 +22,7 @@ Verify AppArmor support on your nodes:
 
 ```bash
 # Check if AppArmor is enabled
+
 ssh node01 "cat /sys/module/apparmor/parameters/enabled"
 # Output: Y
 

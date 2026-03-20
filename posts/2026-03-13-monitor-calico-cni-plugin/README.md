@@ -24,6 +24,7 @@ IPAM pool exhaustion is the most common CNI-related capacity issue:
 
 ```bash
 # Create a script to expose IPAM utilization as metrics
+
 kubectl create configmap ipam-metrics-script -n monitoring \
   --from-literal=check.sh='#!/bin/sh
 calicoctl ipam show --output=json | python3 -c "

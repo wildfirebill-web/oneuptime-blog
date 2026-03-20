@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Cache, Performance, Troubleshooting, Proxy Cache, FastCGI Cache
+Tags: Nginx, Cache, Performance, Troubleshooting, Proxy Cache, FastCGI Cache
 
 Description: A complete guide to clearing Nginx cache including proxy cache, FastCGI cache, and browser cache. Learn manual and automated cache purging methods with practical examples.
 
@@ -71,6 +71,7 @@ The simplest method is to remove all files from the cache directory:
 
 ```bash
 # Find your cache directory from nginx config
+
 grep -r "cache_path" /etc/nginx/
 
 # Clear proxy cache

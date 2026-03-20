@@ -81,6 +81,7 @@ Before implementing any caching strategy, you need to configure the cache store 
 
 ```ruby
 # config/environments/development.rb
+
 Rails.application.configure do
   # Enable caching in development for testing
   # Run: bin/rails dev:cache to toggle

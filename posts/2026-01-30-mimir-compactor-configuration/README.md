@@ -59,6 +59,7 @@ Here is a foundational configuration for the Mimir Compactor:
 
 ```yaml
 # Mimir Compactor basic configuration
+
 compactor:
   # Directory for temporary data during compaction
   data_dir: /data/compactor

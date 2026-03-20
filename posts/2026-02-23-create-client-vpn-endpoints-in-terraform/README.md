@@ -45,6 +45,7 @@ Client VPN requires a server certificate at minimum. For mutual authentication, 
 
 ```hcl
 # Import a server certificate into ACM
+
 resource "aws_acm_certificate" "vpn_server" {
   private_key       = file("${path.module}/certs/server.key")
   certificate_body  = file("${path.module}/certs/server.crt")

@@ -46,6 +46,7 @@ graph LR
 
 ```bash
 # Create an Azure Monitor Private Link Scope
+
 az monitor private-link-scope create \
   --name myAMPLS \
   --resource-group myRG \

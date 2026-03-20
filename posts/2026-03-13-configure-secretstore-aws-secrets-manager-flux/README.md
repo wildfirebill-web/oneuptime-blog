@@ -52,6 +52,7 @@ Annotate the ESO service account with the IAM role ARN to use IRSA:
 
 ```yaml
 # clusters/my-cluster/external-secrets/irsa-service-account.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

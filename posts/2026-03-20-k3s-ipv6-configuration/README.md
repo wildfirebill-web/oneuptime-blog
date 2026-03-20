@@ -21,6 +21,7 @@ As IPv4 addresses become scarce and IPv6 adoption grows, running Kubernetes with
 
 ```bash
 # Check if IPv6 is enabled
+
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 # 0 = enabled, 1 = disabled
 

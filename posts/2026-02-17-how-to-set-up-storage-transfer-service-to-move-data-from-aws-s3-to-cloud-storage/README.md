@@ -43,6 +43,7 @@ Key features:
 
 ```bash
 # Enable the Storage Transfer API
+
 gcloud services enable storagetransfer.googleapis.com --project=PROJECT_ID
 ```
 

@@ -30,6 +30,7 @@ You cannot run both AppArmor and SELinux simultaneously in a meaningful way. Dis
 
 ```bash
 # Stop the AppArmor service
+
 sudo systemctl stop apparmor
 
 # Disable it from starting at boot

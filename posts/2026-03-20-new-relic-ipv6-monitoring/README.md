@@ -14,6 +14,7 @@ The Infrastructure Agent collects system metrics and reports them to New Relic. 
 
 ```yaml
 # /etc/newrelic-infra.yml - Infrastructure Agent configuration
+
 license_key: "{{ your_license_key }}"
 
 # Agent connects to New Relic over IPv6 if preferred

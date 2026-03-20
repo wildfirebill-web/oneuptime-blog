@@ -29,6 +29,7 @@ Confirm the AKS cluster is using a compatible network plugin.
 
 ```bash
 # Check the network plugin used by the AKS cluster
+
 az aks show --resource-group <rg-name> --name <cluster-name> \
   --query networkProfile.networkPlugin
 

@@ -37,6 +37,7 @@ The DDoS Protection plan is a top-level resource that you link to virtual networ
 
 ```bash
 # Create a resource group
+
 az group create --name rg-ddos-demo --location eastus
 
 # Create a DDoS Protection plan

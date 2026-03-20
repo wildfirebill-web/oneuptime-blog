@@ -44,6 +44,7 @@ gantt
 
 ```bash
 # Scan your network for IPv4-only devices and services
+
 nmap -sn 192.168.0.0/16 -oX inventory.xml
 
 # Check which services listen only on IPv4
@@ -69,7 +70,7 @@ Identify team members who need IPv6 training:
 
 Document your IPv6 address allocation before deploying anything:
 
-```
+```text
 Organization IPv6 Prefix: 2001:db8:acme::/48 (received from ISP or RIR)
 
 Subnets:
@@ -116,7 +117,7 @@ Roll out dual-stack across all production infrastructure:
 
 **Checklist for each subnet:**
 - Router interface has IPv6 address and RA enabled
-- Firewall has equivalent IPv6 ACLs to IPv4 (critical — don't leave IPv6 open!)
+- Firewall has equivalent IPv6 ACLs to IPv4 (critical - don't leave IPv6 open!)
 - DHCP/SLAAC configured for client addressing
 - DNS has AAAA records for all services in the subnet
 - Monitoring checks both IPv4 and IPv6 paths

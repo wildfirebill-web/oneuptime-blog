@@ -24,6 +24,7 @@ The error appears to be in '/home/user/playbook/playbook.yml': line 5, column 7
 
 ```bash
 # Install a role from Galaxy
+
 ansible-galaxy install geerlingguy.docker
 
 # Install roles from a requirements file

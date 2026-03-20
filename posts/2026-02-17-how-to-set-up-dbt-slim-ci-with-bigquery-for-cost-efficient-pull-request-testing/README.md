@@ -42,6 +42,7 @@ First, your production dbt run needs to save its manifest somewhere accessible. 
 
 ```bash
 # In your production dbt pipeline, after the run completes
+
 # Upload the manifest to GCS for CI to reference
 
 # Run the production pipeline

@@ -39,6 +39,7 @@ Start by deploying Druid using Docker Compose. This configuration brings up a si
 
 ```yaml
 # docker-compose.yml for Apache Druid single-server deployment
+
 version: "3"
 
 services:

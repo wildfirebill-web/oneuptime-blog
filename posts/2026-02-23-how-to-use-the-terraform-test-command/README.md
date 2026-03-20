@@ -17,6 +17,7 @@ You need Terraform 1.6 or later. Check your version:
 ```bash
 terraform version
 # Terraform v1.7.0 or later recommended
+
 ```
 
 If you are on an older version, the test framework was available as an experimental feature in 1.5, but the syntax changed in 1.6. Stick with 1.6+ for the stable API.

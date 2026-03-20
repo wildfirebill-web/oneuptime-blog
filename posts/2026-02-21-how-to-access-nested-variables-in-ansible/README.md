@@ -17,6 +17,7 @@ Ansible supports two syntaxes for accessing nested values:
 ```yaml
 ---
 # access-patterns.yml
+
 # Two ways to access the same nested value
 
 - hosts: localhost

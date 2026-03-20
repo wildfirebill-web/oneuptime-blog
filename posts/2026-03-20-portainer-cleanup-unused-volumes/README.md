@@ -1,4 +1,4 @@
-# How to Identify and Clean Up Unused Volumes in Portainer
+# How to Identify and Clean Up Unused Volumes in Portainer - Cleanup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,7 +18,7 @@ Unused volumes accumulate when containers are removed without their volumes, whe
 
 A volume is "unused" when no containers (running or stopped) reference it. This happens when:
 
-1. Container removed but volume wasn't (default behavior — volumes persist).
+1. Container removed but volume wasn't (default behavior - volumes persist).
 2. Stack removed without the `--volumes` flag.
 3. Named volume was created but never assigned to a container.
 4. Container recreated with a different volume name.
@@ -26,13 +26,14 @@ A volume is "unused" when no containers (running or stopped) reference it. This 
 ## Step 1: Identify Unused Volumes via Portainer
 
 1. Navigate to **Volumes** in Portainer.
-2. Look at the **Containers** column — volumes with 0 containers are unused.
+2. Look at the **Containers** column - volumes with 0 containers are unused.
 3. Or filter by unused volumes if the UI supports it.
 
 ## Step 2: Identify Unused Volumes via CLI
 
 ```bash
 # List volumes with their usage:
+
 docker volume ls
 
 # Filter to show only unused volumes:
@@ -179,7 +180,7 @@ for volume in $(docker volume ls -f dangling=true -q); do
     # Get creation date (Docker volume timestamps in RFC3339 format)
     CREATED_AT=$(docker volume inspect "${volume}" --format '{{.CreatedAt}}')
 
-    # Calculate age in days (simplified — uses date command)
+    # Calculate age in days (simplified - uses date command)
     CREATED_EPOCH=$(date -d "${CREATED_AT}" +%s 2>/dev/null || date -j -f "%Y-%m-%dT%H:%M:%S" "${CREATED_AT%.*}" "+%s" 2>/dev/null)
     NOW_EPOCH=$(date +%s)
     AGE_DAYS=$(( (NOW_EPOCH - CREATED_EPOCH) / 86400 ))

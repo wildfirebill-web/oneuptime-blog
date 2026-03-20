@@ -38,6 +38,7 @@ flowchart TD
 
 ```bash
 # Enable the Assured Workloads API
+
 gcloud services enable assuredworkloads.googleapis.com
 
 # Verify the API is enabled

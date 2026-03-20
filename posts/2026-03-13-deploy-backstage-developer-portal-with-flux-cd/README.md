@@ -29,6 +29,7 @@ This guide deploys Backstage using the official Helm chart with PostgreSQL and G
 kubectl create namespace backstage
 
 # GitHub OAuth credentials for authentication
+
 kubectl create secret generic backstage-secrets \
   --namespace backstage \
   --from-literal=GITHUB_TOKEN=ghp_your_token_here \

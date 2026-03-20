@@ -20,6 +20,7 @@ The `podman exec` command runs a new process inside an already running container
 
 ```bash
 # Basic syntax
+
 podman exec [options] <container> <command> [args...]
 ```
 

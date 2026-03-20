@@ -36,6 +36,7 @@ Calculate your current call rate:
 
 ```yaml
 # Estimation formula:
+
 # API calls per hour = (number of GitRepositories) * (60 / interval_minutes) * (number of clusters)
 #
 # Example:

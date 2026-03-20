@@ -35,6 +35,7 @@ Before shrinking, protect yourself:
 
 ```bash
 # Create an LVM snapshot as insurance
+
 sudo lvcreate -L 20G -s -n db_data_snap /dev/data_vg/db_data
 
 # Or use rsync to back up to another location

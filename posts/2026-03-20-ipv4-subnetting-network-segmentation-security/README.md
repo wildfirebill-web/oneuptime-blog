@@ -8,14 +8,14 @@ Description: Plan IPv4 subnetting for security-driven network segmentation, crea
 
 ## Introduction
 
-Network segmentation limits the blast radius of security incidents. Placing workstations, servers, DMZ, and management on separate IPv4 subnets — enforced by firewall rules — prevents lateral movement when any single segment is compromised.
+Network segmentation limits the blast radius of security incidents. Placing workstations, servers, DMZ, and management on separate IPv4 subnets - enforced by firewall rules - prevents lateral movement when any single segment is compromised.
 
 ## Security Zone Model
 
-```
+```text
 Zone          Trust Level  Subnet           VLAN
 ────────────────────────────────────────────────────
-Internet      Untrusted    —                —
+Internet      Untrusted    -                -
 DMZ           Low          10.x.40.0/24     40
 User LAN      Medium       10.x.10.0/22     10
 Server LAN    High         10.x.20.0/23     20
@@ -25,23 +25,24 @@ Management    Admin only   10.x.99.0/27     99
 
 ## Inter-Zone Firewall Policy Matrix
 
-```
+```text
 FROM \ TO      Internet  DMZ   UserLAN  ServerLAN  Database  Mgmt
 ──────────────────────────────────────────────────────────────────
-Internet       —         ALLOW  DENY     DENY       DENY      DENY
-DMZ            ALLOW*    —      DENY     ALLOW*     DENY      DENY
-UserLAN        ALLOW     ALLOW  —        ALLOW*     DENY      DENY
-ServerLAN      ALLOW     ALLOW  ALLOW*   —          ALLOW*    DENY
-Database       DENY      DENY   DENY     ALLOW*     —         DENY
-Management     ALLOW     ALLOW  DENY     ALLOW      ALLOW     —
+Internet       -         ALLOW  DENY     DENY       DENY      DENY
+DMZ            ALLOW*    -      DENY     ALLOW*     DENY      DENY
+UserLAN        ALLOW     ALLOW  -        ALLOW*     DENY      DENY
+ServerLAN      ALLOW     ALLOW  ALLOW*   -          ALLOW*    DENY
+Database       DENY      DENY   DENY     ALLOW*     -         DENY
+Management     ALLOW     ALLOW  DENY     ALLOW      ALLOW     -
 
 * = specific ports only (not all traffic)
 ```
 
 ## Firewall Rule Examples (pfSense/pf syntax)
 
-```
+```text
 # Allow HTTP/HTTPS from DMZ to internet
+
 pass out on $ext_if from $dmz_net to any port {80, 443}
 
 # Allow application servers to reach database on port 5432
@@ -93,7 +94,7 @@ interface Vlan10
 
 ## Zero Trust Overlays
 
-```
+```text
 In a Zero Trust model, subnet membership alone does not grant access.
 Additional controls:
   - 802.1X authentication before VLAN assignment

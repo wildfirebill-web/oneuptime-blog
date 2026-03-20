@@ -8,7 +8,7 @@ Description: Learn how to write precise custom validation conditions and helpful
 
 ---
 
-The `validation` block in OpenTofu uses two attributes: `condition` (a boolean expression) and `error_message` (the message shown when validation fails). Writing clear, actionable error messages is as important as the validation logic itself — good messages tell users exactly what went wrong and how to fix it.
+The `validation` block in OpenTofu uses two attributes: `condition` (a boolean expression) and `error_message` (the message shown when validation fails). Writing clear, actionable error messages is as important as the validation logic itself - good messages tell users exactly what went wrong and how to fix it.
 
 ---
 
@@ -37,6 +37,7 @@ Compare vague vs actionable error messages:
 
 ```hcl
 # BAD: vague error message
+
 variable "region" {
   type = string
   validation {
@@ -150,7 +151,7 @@ resource "aws_instance" "web" {
   lifecycle {
     precondition {
       condition     = var.environment == "production" ? var.instance_type != "t3.micro" : true
-      error_message = "Production deployments cannot use t3.micro — use at least t3.small."
+      error_message = "Production deployments cannot use t3.micro - use at least t3.small."
     }
   }
 }

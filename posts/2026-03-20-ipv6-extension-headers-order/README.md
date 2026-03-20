@@ -12,7 +12,7 @@ When multiple IPv6 extension headers are present in a packet, they must appear i
 
 ## Recommended Extension Header Order (RFC 8200)
 
-```
+```text
 1. IPv6 base header                (always first, 40 bytes)
 2. Hop-by-Hop Options              (Next Header = 0)   ← MUST be first if present
 3. Destination Options             (Next Header = 60)   ← Before Routing Header
@@ -24,11 +24,11 @@ When multiple IPv6 extension headers are present in a packet, they must appear i
 9. Upper-layer header              (TCP=6, UDP=17, ICMPv6=58)
 ```
 
-Note: Destination Options can appear twice — once before the Routing Header (processed at each routing destination) and once after (processed only at the final destination).
+Note: Destination Options can appear twice - once before the Routing Header (processed at each routing destination) and once after (processed only at the final destination).
 
 ## Why Order Matters
 
-```
+```text
 1. Hop-by-Hop MUST be first:
    Routers check if Next Header == 0 immediately after the base header.
    If HbH is not first, routers will not find or process it.
@@ -37,7 +37,7 @@ Note: Destination Options can appear twice — once before the Routing Header (p
    The Routing Header specifies intermediate waypoints.
    Fragmentation happens after routing decisions are made.
    If Fragment came before Routing, the routing information
-   would be in the first fragment only — recipients couldn't
+   would be in the first fragment only - recipients couldn't
    process it correctly.
 
 3. AH before ESP:
@@ -51,7 +51,7 @@ Note: Destination Options can appear twice — once before the Routing Header (p
 
 ## Visual Example
 
-```
+```text
 Correct packet structure for a fragmented, routing-specified, secured packet:
 
 | IPv6 Base | HbH Options | Routing Header | Fragment Header | AH | ESP | TCP |
@@ -66,6 +66,7 @@ Base → 0 (HbH) → 43 (Routing) → 44 (Fragment) → 51 (AH) → 50 (ESP) →
 ```python
 EXTENSION_HEADER_ORDER = [0, 60, 43, 44, 51, 50, 60]
 # (HbH, DestOpts, Routing, Fragment, AH, ESP, DestOpts again)
+
 UPPER_LAYER = {6, 17, 58, 4, 41}
 
 def validate_ext_header_order(next_headers: list) -> tuple[bool, str]:
@@ -107,7 +108,7 @@ def validate_ext_header_order(next_headers: list) -> tuple[bool, str]:
         if order_positions[i][1] < order_positions[i-1][1]:
             return False, (
                 f"Extension header {order_positions[i][0]} appears before "
-                f"{order_positions[i-1][0]} — incorrect order"
+                f"{order_positions[i-1][0]} - incorrect order"
             )
 
     return True, "Extension header order is valid"
@@ -124,14 +125,14 @@ test_cases = [
 for headers, desc in test_cases:
     valid, reason = validate_ext_header_order(headers)
     status = "VALID" if valid else "INVALID"
-    print(f"{status}: {desc} — {reason}")
+    print(f"{status}: {desc} - {reason}")
 ```
 
 ## Destination Options: Two Positions
 
 The Destination Options header (Next Header = 60) has special semantics based on its position:
 
-```
+```text
 Position 1: Before the Routing Header
   → Processed at each intermediate node listed in the Routing Header
   → Applies to routing waypoints, not just the final destination

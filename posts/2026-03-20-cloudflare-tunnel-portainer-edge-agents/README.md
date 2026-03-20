@@ -16,7 +16,7 @@ Portainer Edge Agents poll the Portainer Server for instructions. Normally, the 
 
 ## Architecture
 
-```
+```text
 Remote Site (Edge Agent)
     ↓ outbound HTTPS connection
 Cloudflare (portainer-server.yourdomain.com)
@@ -30,6 +30,7 @@ On the central Portainer Server, set up cloudflared:
 
 ```bash
 # Create tunnel
+
 cloudflared tunnel create portainer-server
 
 # Configure tunnel to expose both Portainer ports
@@ -58,7 +59,7 @@ cloudflared tunnel route dns portainer-server portainer-edge.yourdomain.com
 
 In Portainer: **Settings → Edge Compute**:
 
-```
+```text
 Portainer URL:       https://portainer.yourdomain.com
 Tunnel Server URL:   https://portainer-edge.yourdomain.com:443
 ```
@@ -137,4 +138,4 @@ Protect the Portainer UI with identity verification while keeping the edge tunne
 
 ## Conclusion
 
-Cloudflare Tunnel is an excellent way to manage the Portainer Server's exposure while enabling Edge Agents from any internet-connected site to reach it. Edge Agents only make outbound HTTPS connections, meaning remote sites don't need any firewall changes — just Docker access and internet connectivity.
+Cloudflare Tunnel is an excellent way to manage the Portainer Server's exposure while enabling Edge Agents from any internet-connected site to reach it. Edge Agents only make outbound HTTPS connections, meaning remote sites don't need any firewall changes - just Docker access and internet connectivity.

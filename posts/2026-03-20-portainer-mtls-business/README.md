@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, mtls, mutual-tls, security, business-edition, certificates
+Tags: Portainer, mTLS, Mutual-tls, Security, Business-edition, Certificates
 
 Description: A guide to configuring mutual TLS (mTLS) authentication for Portainer Business Edition to enforce client certificate authentication.
 
@@ -28,6 +28,7 @@ Portainer uses TLS in two contexts:
 mkdir -p /opt/mtls-ca/{certs,keys,requests}
 
 # Generate CA key
+
 openssl genrsa -out /opt/mtls-ca/keys/ca.key 4096
 
 # Generate CA certificate
@@ -158,4 +159,4 @@ docker --tls \
 
 ## Conclusion
 
-mTLS between Portainer and Docker endpoints provides strong authentication — only Portainer with the correct client certificate can manage the Docker daemon. This prevents unauthorized access even if an attacker has network access to port 2376. Always keep CA keys secure, rotate certificates before expiry, and revoke compromised certificates by reissuing and distributing updated CRLs or OCSP.
+mTLS between Portainer and Docker endpoints provides strong authentication - only Portainer with the correct client certificate can manage the Docker daemon. This prevents unauthorized access even if an attacker has network access to port 2376. Always keep CA keys secure, rotate certificates before expiry, and revoke compromised certificates by reissuing and distributing updated CRLs or OCSP.

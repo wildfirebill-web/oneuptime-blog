@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, Timeouts, IPv4, Configuration, Performance, Networking
+Tags: HAProxy, Timeout, IPv4, Configuration, Performance, Networking
 
 Description: Learn how to configure HAProxy timeout directives for frontend and backend connections to prevent hung connections and optimize resource use on IPv4 networks.
 

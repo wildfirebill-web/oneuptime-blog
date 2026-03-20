@@ -37,6 +37,7 @@ Start by generating a root CA that will be shared across all clusters. Keep this
 
 ```bash
 # Create a directory structure
+
 mkdir -p certs
 cd certs
 

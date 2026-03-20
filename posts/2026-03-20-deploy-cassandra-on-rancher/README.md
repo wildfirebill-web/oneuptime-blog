@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Cassandra, Kubernetes, NoSQL, StatefulSet, Helm
+Tags: Rancher, Cassandra, Kubernetes, NoSQL, StatefulSets, Helm
 
 Description: A practical guide to deploying an Apache Cassandra cluster on Rancher using Helm with proper storage, resource limits, and cluster validation.
 
@@ -35,6 +35,7 @@ Cassandra requires careful resource and JVM tuning. Create a dedicated values fi
 
 ```yaml
 # cassandra-values.yaml
+
 replicaCount: 3   # One replica per availability zone
 
 dbUser:

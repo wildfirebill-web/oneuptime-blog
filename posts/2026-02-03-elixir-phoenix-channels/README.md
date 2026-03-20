@@ -777,6 +777,7 @@ Phoenix Channels scale horizontally out of the box. The PubSub system uses distr
 # config/prod.exs
 
 # Default distributed Erlang PubSub (works great up to ~20 nodes)
+
 config :realtime_chat, RealtimeChat.PubSub,
   name: RealtimeChat.PubSub,
   adapter: Phoenix.PubSub.PG2

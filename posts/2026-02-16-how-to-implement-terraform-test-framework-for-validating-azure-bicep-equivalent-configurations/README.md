@@ -44,6 +44,7 @@ First, let us define the Terraform module that we want to validate against a Bic
 
 ```hcl
 # main.tf - Terraform module to validate against Bicep equivalent
+
 variable "environment" {
   type    = string
   default = "prod"

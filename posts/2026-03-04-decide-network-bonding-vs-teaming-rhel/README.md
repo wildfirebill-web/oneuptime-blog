@@ -84,6 +84,7 @@ If you have existing team interfaces, migration is straightforward. Map the team
 
 ```bash
 # Team activebackup -> Bond active-backup
+
 nmcli connection add type bond con-name bond0 ifname bond0 \
   bond.options "mode=active-backup,miimon=100"
 

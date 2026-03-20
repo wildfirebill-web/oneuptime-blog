@@ -1,4 +1,4 @@
-# How to Deploy Portainer on AWS EC2
+# How to Deploy Portainer on AWS EC2 - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -54,6 +54,7 @@ Create a security group named `portainer-sg`:
 
 ```bash
 # Create security group
+
 aws ec2 create-security-group \
     --group-name portainer-sg \
     --description "Portainer container management" \

@@ -12,7 +12,7 @@ Cisco IOS supports IPv6 BGP through the `address-family ipv6 unicast` configurat
 
 ## Prerequisites
 
-```
+```text
 ! Enable IPv6 unicast routing (required)
 Router(config)# ipv6 unicast-routing
 
@@ -22,7 +22,7 @@ Router# show running-config | include ipv6 unicast-routing
 
 ## Basic IPv6 BGP Configuration
 
-```
+```text
 ! Configure BGP with IPv4 and IPv6 support
 Router(config)# router bgp 65001
 Router(config-router)# bgp router-id 1.1.1.1
@@ -40,7 +40,7 @@ Router(config-router-af)# exit-address-family
 
 ## Advertising IPv6 Networks
 
-```
+```text
 ! Method 1: Advertise a specific prefix from the routing table
 Router(config)# router bgp 65001
 Router(config-router)# address-family ipv6 unicast
@@ -53,7 +53,7 @@ Router(config)# ipv6 route 2001:db8:1::/48 Null0
 
 ## Configuring IPv6 BGP for iBGP
 
-```
+```text
 ! iBGP peer using IPv6 loopback address
 Router(config)# interface Loopback0
 Router(config-if)# ipv6 address 2001:db8::1/128
@@ -71,7 +71,7 @@ Router(config-router-af)# exit-address-family
 
 ## Redistribute Routes into BGP
 
-```
+```text
 ! Redistribute OSPFv3 routes into BGP IPv6
 Router(config)# router bgp 65001
 Router(config-router)# address-family ipv6 unicast
@@ -81,7 +81,7 @@ Router(config-router-af)# exit-address-family
 
 ## Verification Commands
 
-```
+```text
 ! Show BGP IPv6 summary (all neighbors and prefix counts)
 Router# show bgp ipv6 unicast summary
 
@@ -100,7 +100,7 @@ Router# show bgp neighbors 2001:db8:peer::2 | include AFI
 
 ## Sample show bgp ipv6 unicast Output
 
-```
+```text
 Router# show bgp ipv6 unicast
 
 BGP table version is 5, local router ID is 1.1.1.1

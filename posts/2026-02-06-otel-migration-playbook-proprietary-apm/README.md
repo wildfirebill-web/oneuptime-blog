@@ -47,6 +47,7 @@ The safest migration strategy is to run both systems simultaneously. Your servic
 
 ```python
 # During migration, both the old agent and OTel SDK are active
+
 # The old agent continues to work as before
 # OTel SDK sends data to your new backend
 

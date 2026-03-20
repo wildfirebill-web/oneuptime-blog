@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, sysctl, Performance, 10Gbps, Network Tuning, TCP
+Tags: Linux, Sysctl, Performance, 10Gbps, Network Tuning, TCP
 
 Description: Learn the complete set of sysctl parameters to optimize the Linux network stack for 10Gbps network adapters, covering buffer sizes, TCP behavior, and memory limits.
 
@@ -10,16 +10,17 @@ Description: Learn the complete set of sysctl parameters to optimize the Linux n
 
 Linux ships with conservative defaults tuned for small servers with limited RAM. On a 10 Gbps network with 10ms RTT, the theoretical maximum per-connection throughput requires:
 
-```
+```text
 BDP = 10 Gbps × 0.010s = 100,000,000 bits = 12.5 MB per connection
 ```
 
-Default TCP buffers (~200 KB) cap throughput at ~160 Mbps on such a link — far below 10 Gbps capability.
+Default TCP buffers (~200 KB) cap throughput at ~160 Mbps on such a link - far below 10 Gbps capability.
 
 ## Step 1: Check Current Baseline
 
 ```bash
 # View key current settings
+
 sysctl net.core.rmem_max net.core.wmem_max
 sysctl net.ipv4.tcp_rmem net.ipv4.tcp_wmem
 sysctl net.core.netdev_max_backlog
@@ -126,7 +127,7 @@ ethtool -K $IFACE tso on
 # Enable Generic Receive Offload (GRO)
 ethtool -K $IFACE gro on
 
-# Enable Large Receive Offload (LRO) — if supported
+# Enable Large Receive Offload (LRO) - if supported
 ethtool -K $IFACE lro on
 
 # Verify offloads are enabled

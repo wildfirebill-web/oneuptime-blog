@@ -31,6 +31,7 @@ Start by measuring your baseline:
 
 ```bash
 # Clean init (worst case)
+
 rm -rf .terraform .terraform.lock.hcl
 time terraform init
 

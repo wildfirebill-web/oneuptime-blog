@@ -62,6 +62,7 @@ The Terraform Registry requires that all provider releases are signed with a GPG
 
 ```bash
 # Generate a new GPG key pair
+
 gpg --full-generate-key
 
 # When prompted:

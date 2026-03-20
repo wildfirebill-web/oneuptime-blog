@@ -27,6 +27,7 @@ To pin an application to a specific commit, set the `targetRevision` to the full
 
 ```yaml
 # production-app.yaml - pinned to a specific commit
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -41,6 +41,7 @@ With static spreading, you specify the exact number of fault domains to use. Ins
 
 ```bash
 # Create a scale set with max spreading (recommended)
+
 az vmss create \
   --resource-group myResourceGroup \
   --name myScaleSet \

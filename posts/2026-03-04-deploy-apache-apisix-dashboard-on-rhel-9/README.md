@@ -31,6 +31,7 @@ Ensure your RHEL system has:
 
 ```bash
 # Enable EPEL repository
+
 sudo dnf install -y epel-release
 ```
 

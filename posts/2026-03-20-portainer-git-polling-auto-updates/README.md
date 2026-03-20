@@ -1,4 +1,4 @@
-# How to Configure Git Polling for Auto-Updates in Portainer
+# How to Configure Git Polling for Auto-Updates in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,7 +21,7 @@ Git polling is Portainer's mechanism for periodically checking your Git reposito
 1. Portainer records the commit hash at the time of deployment
 2. At each polling interval, it fetches the latest commit hash from the configured branch
 3. If the hash differs, it triggers a pull and redeploy of the stack
-4. The process is entirely pull-based — no inbound connections required
+4. The process is entirely pull-based - no inbound connections required
 
 ## Step 1: Enable Polling on an Existing Stack
 
@@ -36,11 +36,11 @@ Git polling is Portainer's mechanism for periodically checking your Git reposito
 
 | Interval | Use Case |
 |----------|----------|
-| `1m` | Active development — fast feedback, high server load |
-| `5m` | Standard CI/CD — good balance of speed and load |
-| `15m` | Stable applications — moderate update frequency |
-| `1h` | Configuration drift prevention — for rarely-changed stacks |
-| `24h` | Daily sync — for very stable production environments |
+| `1m` | Active development - fast feedback, high server load |
+| `5m` | Standard CI/CD - good balance of speed and load |
+| `15m` | Stable applications - moderate update frequency |
+| `1h` | Configuration drift prevention - for rarely-changed stacks |
+| `24h` | Daily sync - for very stable production environments |
 
 ## Step 3: Configure Polling via the Portainer API
 
@@ -51,6 +51,7 @@ ENDPOINT_ID=1
 STACK_ID=3
 
 # Enable polling with a 5-minute interval
+
 curl -s -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \

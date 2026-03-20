@@ -130,6 +130,7 @@ accept_loop:
 
 ```dockerfile
 # Dockerfile for x86-64 assembly application
+
 FROM ubuntu:22.04 AS builder
 
 # Install NASM assembler and linker

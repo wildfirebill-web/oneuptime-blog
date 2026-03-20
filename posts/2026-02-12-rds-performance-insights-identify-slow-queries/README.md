@@ -119,6 +119,7 @@ Long-running transactions holding row locks cause other sessions to queue up. Th
 
 ```python
 # Bad: doing external work inside a transaction
+
 with db.transaction():
     db.execute("UPDATE accounts SET balance = balance - 100 WHERE id = 42")
     result = call_external_payment_api()  # This could take seconds

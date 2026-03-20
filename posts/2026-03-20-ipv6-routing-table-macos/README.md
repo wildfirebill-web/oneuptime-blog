@@ -14,6 +14,7 @@ macOS uses the BSD-derived `netstat` and `route` commands to inspect the IPv6 ro
 
 ```bash
 # Show IPv6 routing table (no DNS resolution, verbose flags)
+
 netstat -rn -f inet6
 
 # Sample output:

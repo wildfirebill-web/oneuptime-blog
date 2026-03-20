@@ -26,6 +26,7 @@ On macOS using Homebrew:
 
 ```bash
 # Install Azure CLI via Homebrew package manager
+
 brew update && brew install azure-cli
 ```
 

@@ -18,6 +18,7 @@ Start with the simplest case: two services communicating over HTTP. The test spi
 
 ```python
 # test_http_propagation.py
+
 import pytest
 import requests
 from opentelemetry import trace

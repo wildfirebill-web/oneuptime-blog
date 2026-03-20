@@ -32,6 +32,7 @@ A well-structured DAG is easy to understand, maintain, and debug. Start with a c
 
 ```python
 # dags/example_dag.py
+
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator

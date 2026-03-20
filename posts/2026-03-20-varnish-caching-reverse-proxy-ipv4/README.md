@@ -8,7 +8,7 @@ Description: Install and configure Varnish Cache as a caching reverse proxy for 
 
 ## Introduction
 
-Varnish Cache is a high-performance HTTP accelerator placed in front of web servers. It caches HTTP responses in memory, serving cached content directly without hitting the backend. Varnish is configured using VCL (Varnish Configuration Language) — a domain-specific language for defining caching behavior.
+Varnish Cache is a high-performance HTTP accelerator placed in front of web servers. It caches HTTP responses in memory, serving cached content directly without hitting the backend. Varnish is configured using VCL (Varnish Configuration Language) - a domain-specific language for defining caching behavior.
 
 ## Installing Varnish
 
@@ -17,6 +17,7 @@ sudo apt-get update
 sudo apt-get install -y varnish
 
 # Check version
+
 varnishd -V
 ```
 
@@ -93,7 +94,7 @@ sub vcl_deliver {
 
 ## Configuring Varnish to Listen on Port 80
 
-```
+```text
 # /etc/default/varnish (or /etc/varnish/varnish.params on newer systems)
 DAEMON_OPTS="-a :80 \
              -T localhost:6082 \

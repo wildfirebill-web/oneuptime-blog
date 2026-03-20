@@ -39,6 +39,7 @@ The first step is ensuring you have enough historical data with the right granul
 
 ```python
 # traffic_metrics.py - Metrics for traffic pattern analysis
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("traffic.patterns")

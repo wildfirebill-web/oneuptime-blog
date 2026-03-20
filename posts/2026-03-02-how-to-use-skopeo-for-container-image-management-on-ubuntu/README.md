@@ -16,6 +16,7 @@ Skopeo is part of the containers ecosystem alongside Buildah and Podman. It uses
 
 ```bash
 # Install from Ubuntu repositories
+
 sudo apt update
 sudo apt install -y skopeo
 

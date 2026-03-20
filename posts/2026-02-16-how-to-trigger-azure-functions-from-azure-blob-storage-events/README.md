@@ -34,6 +34,7 @@ My recommendation: use the Event Grid trigger for new projects. The Blob trigger
 
 ```bash
 # Create a resource group
+
 az group create --name func-rg --location eastus
 
 # Create a storage account for the function app runtime

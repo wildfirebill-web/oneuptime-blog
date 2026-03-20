@@ -30,6 +30,7 @@ The most common mistake is enabling Calico eBPF while kube-proxy is still runnin
 ```bash
 kubectl get pods -n kube-system -l k8s-app=kube-proxy
 # If pods are Running, kube-proxy is still active
+
 ```
 
 **Fix**: Patch the kube-proxy DaemonSet to prevent scheduling:

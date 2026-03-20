@@ -8,12 +8,13 @@ Description: Enable DHCP on a Windows network adapter using PowerShell cmdlets, 
 
 ## Introduction
 
-When migrating a Windows machine from static IP to DHCP — such as when moving it from a server rack to an office network — PowerShell provides a clean, scriptable way to enable DHCP and clear static configuration in one sequence.
+When migrating a Windows machine from static IP to DHCP - such as when moving it from a server rack to an office network - PowerShell provides a clean, scriptable way to enable DHCP and clear static configuration in one sequence.
 
 ## Finding the Adapter
 
 ```powershell
 # List all adapters
+
 Get-NetAdapter | Select-Object Name, InterfaceIndex, Status
 
 # Find the current IP configuration
@@ -68,7 +69,7 @@ Get-NetIPAddress -InterfaceAlias "Ethernet" -AddressFamily IPv4
 
 Expected output:
 
-```
+```text
 IPAddress      InterfaceAlias PrefixLength SuffixOrigin
 ---------      -------------- ------------ ------------
 192.168.1.105  Ethernet       24           Dhcp

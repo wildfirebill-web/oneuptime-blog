@@ -77,6 +77,7 @@ Standardize label names across services. If one team uses `http_method` and anot
 
 ```yaml
 # Recommended naming conventions
+
 metric_name: http_request_duration_seconds
 labels:
   method: GET           # not http_method or request_method

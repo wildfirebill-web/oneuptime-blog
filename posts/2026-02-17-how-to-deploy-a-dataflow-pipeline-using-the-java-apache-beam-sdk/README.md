@@ -308,6 +308,7 @@ Compile and package the project with Maven.
 
 ```bash
 # Compile the project
+
 mvn clean compile
 
 # Run unit tests

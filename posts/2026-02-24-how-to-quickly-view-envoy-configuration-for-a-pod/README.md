@@ -122,6 +122,7 @@ This returns the complete Envoy configuration dump. It is a lot of data, but you
 
 ```bash
 # Get just the dynamic route configuration
+
 kubectl exec deploy/my-app -n default -c istio-proxy -- \
   curl -s localhost:15000/config_dump?resource=dynamic_route_configs
 

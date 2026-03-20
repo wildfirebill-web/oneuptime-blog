@@ -323,6 +323,7 @@ Verify that different endpoints have different limits:
 
 ```bash
 # Test the search endpoint (limit: 50/min)
+
 echo "Testing /api/v1/search..."
 for i in $(seq 1 55); do
   curl -s -o /dev/null -w "%{http_code} " http://my-api.default:8080/api/v1/search

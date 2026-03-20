@@ -35,6 +35,7 @@ If the boot chain changes (different kernel, modified bootloader, or BIOS update
 
 ```bash
 # Verify TPM 2.0 is available
+
 ls /dev/tpm*
 # Should show /dev/tpm0 and/or /dev/tpmrm0
 

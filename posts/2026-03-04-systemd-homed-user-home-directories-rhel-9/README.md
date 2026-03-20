@@ -27,6 +27,7 @@ graph TD
 
 ```bash
 # Install and start systemd-homed
+
 sudo systemctl enable --now systemd-homed
 
 # Verify it is running

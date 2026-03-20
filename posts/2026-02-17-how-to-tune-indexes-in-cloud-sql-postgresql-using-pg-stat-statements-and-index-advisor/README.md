@@ -16,6 +16,7 @@ pg_stat_statements tracks execution statistics for all SQL statements. On Cloud 
 
 ```bash
 # Enable pg_stat_statements on your Cloud SQL instance
+
 gcloud sql instances patch my-instance \
   --database-flags \
   cloudsql.enable_pg_stat_statements=on

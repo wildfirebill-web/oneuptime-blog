@@ -65,6 +65,7 @@ calicoctl get networkpolicy -n kube-system -o yaml 2>/dev/null
 kubectl run dns-diag --image=busybox --restart=Never -n default -- sleep 120
 kubectl exec dns-diag -- nslookup kubernetes.default
 # If this works: policy is blocking DNS in affected namespace
+
 # If this fails: DNS infrastructure problem
 kubectl delete pod dns-diag
 ```

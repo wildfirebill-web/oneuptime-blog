@@ -61,6 +61,7 @@ Serverless is configured at the account level, not the container level. You cann
 
 ```bash
 # Create a new Cosmos DB account with serverless capacity mode
+
 az cosmosdb create \
     --name myServerlessAccount \
     --resource-group myResourceGroup \

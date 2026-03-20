@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Networking, Option 82, DHCP Relay, Security, sysadmin
+Tags: DHCP, Networking, Option 82, DHCP Relay, Security, Sysadmin
 
-Description: DHCP Option 82 allows relay agents to insert circuit-ID and remote-ID sub-options into DHCP requests, enabling the DHCP server to make policy decisions based on which switch port or access point the client is connected to.
+Description: DHCP Option 82 allows relay agents to insert circuit-ID and remote-ID sub-options into DHCP requests, enabling the DHCP server to make policy decisions based on which switch port or access point...
 
 ## What Is Option 82?
 
@@ -18,7 +18,7 @@ The DHCP server can use this metadata to assign IPs from specific pools or apply
 ## Cisco IOS: Enabling Option 82
 
 On the relay agent (Layer-3 switch or router):
-```
+```text
 ! Enable Option 82 insertion on the relay agent
 ip dhcp relay information option
 
@@ -33,10 +33,11 @@ interface Vlan10
 
 The DHCP server can match on relay agent sub-options:
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 
 # Match on Circuit-ID to assign IPs from specific ranges
+
 class "floor-1-ports" {
     match if option agent.circuit-id = "GigabitEthernet0/1";
 }
@@ -62,7 +63,7 @@ subnet 10.0.10.0 netmask 255.255.255.0 {
 
 dnsmasq logs the relay agent info when Option 82 is present:
 
-```
+```text
 # /etc/dnsmasq.conf
 log-dhcp
 # Option 82 data appears in DHCP logs with "relay-agent-info" tag

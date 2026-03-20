@@ -57,6 +57,7 @@ Here are common patterns:
 
 ```text
 # Every 5 minutes
+
 cron(0/5 * * * ? *)
 
 # Every hour at :30

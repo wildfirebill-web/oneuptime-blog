@@ -24,6 +24,7 @@ Always use Standard Load Balancer for production scale sets.
 
 ```bash
 # Create a Standard Load Balancer
+
 az network lb create \
   --resource-group myResourceGroup \
   --name myLoadBalancer \

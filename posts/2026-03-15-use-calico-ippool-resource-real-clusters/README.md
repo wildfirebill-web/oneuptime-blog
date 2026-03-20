@@ -140,6 +140,7 @@ Calculate pool sizes based on your workload requirements:
 
 ```bash
 # Check current IPAM utilization
+
 calicoctl ipam show
 
 # View block allocations per node

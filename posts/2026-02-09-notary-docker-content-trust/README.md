@@ -42,6 +42,7 @@ Deploy Notary on Kubernetes:
 
 ```yaml
 # notary-deployment.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

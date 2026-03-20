@@ -242,6 +242,7 @@ Set up a dashboard that tracks sidecar memory for all pods in a namespace:
 
 ```promql
 # Memory usage trend for sidecars
+
 container_memory_working_set_bytes{container="istio-proxy", namespace="default"}
 
 # Memory limit to overlay

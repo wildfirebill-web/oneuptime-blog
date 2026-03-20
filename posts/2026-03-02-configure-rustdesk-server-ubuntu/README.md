@@ -25,6 +25,7 @@ Both services are lightweight and can run on the same server.
 
 ```bash
 # Create a dedicated user and directory
+
 sudo useradd -r -s /usr/sbin/nologin rustdesk
 sudo mkdir -p /opt/rustdesk
 sudo chown rustdesk:rustdesk /opt/rustdesk

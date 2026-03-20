@@ -1,4 +1,4 @@
-# How to Set Up the Helpdesk (Read-Only) Role in Portainer
+# How to Set Up the Helpdesk (Read-Only) Role in Portainer - Readonly
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -48,6 +48,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Assign team 4 (support team) to environment 1 with Helpdesk role
+
 curl -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -106,7 +107,7 @@ done
 
 A typical helpdesk investigation using read-only access:
 
-```
+```text
 1. User reports "Website is down"
 2. Helpdesk logs into Portainer
 3. Navigates to production environment
@@ -116,7 +117,7 @@ A typical helpdesk investigation using read-only access:
 7. DevOps restarts the container with correct config
 ```
 
-The helpdesk never needs to make changes — they gather information and escalate.
+The helpdesk never needs to make changes - they gather information and escalate.
 
 ## Viewing Container Logs as Helpdesk
 
@@ -138,4 +139,4 @@ curl -s \
 
 ## Conclusion
 
-The Helpdesk role provides the minimum access needed for support teams to do their job effectively — they can see everything but change nothing. Grant this role broadly to support staff and read-only stakeholders, then assign the minimum necessary write access only to those who need it. Combined with good logging and monitoring, helpdesk users can resolve most Level 1 issues without escalation.
+The Helpdesk role provides the minimum access needed for support teams to do their job effectively - they can see everything but change nothing. Grant this role broadly to support staff and read-only stakeholders, then assign the minimum necessary write access only to those who need it. Combined with good logging and monitoring, helpdesk users can resolve most Level 1 issues without escalation.

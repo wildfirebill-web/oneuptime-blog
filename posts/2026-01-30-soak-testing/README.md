@@ -52,6 +52,7 @@ This Docker Compose configuration sets up a test environment with Prometheus for
 
 ```yaml
 # docker-compose.soak-test.yml
+
 # Infrastructure for running soak tests with full observability
 
 version: '3.8'

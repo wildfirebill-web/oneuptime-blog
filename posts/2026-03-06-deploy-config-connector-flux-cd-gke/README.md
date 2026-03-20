@@ -40,6 +40,7 @@ Config Connector translates Kubernetes custom resources into GCP API calls. Flux
 
 ```bash
 # Enable the APIs needed for Config Connector
+
 gcloud services enable \
   cloudresourcemanager.googleapis.com \
   serviceusage.googleapis.com \
@@ -375,7 +376,7 @@ kubectl get storagebucket my-app-data-bucket -n config-connector \
 
 ## Troubleshooting
 
-### Resource Stuck in "Updating" State
+Resource Stuck in "Updating" State
 
 ```bash
 # Check the resource conditions for error details

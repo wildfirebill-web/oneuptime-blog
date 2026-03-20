@@ -76,6 +76,7 @@ You can set Spark defaults when creating the Dataproc cluster:
 
 ```bash
 # Create a Dataproc cluster with tuned Spark memory settings
+
 gcloud dataproc clusters create tuned-cluster \
   --region=us-central1 \
   --num-workers=4 \

@@ -105,6 +105,7 @@ Place the following configuration at the root of your infrastructure directory. 
 
 ```hcl
 # infrastructure/terragrunt.hcl
+
 # Root configuration inherited by all child modules
 
 # Configure remote state in S3 with DynamoDB locking
@@ -323,7 +324,7 @@ inputs = {
 }
 ```
 
-## Resource-Level Configuration
+Resource-Level Configuration
 
 Individual resource configurations include the shared module and can override specific values as needed.
 

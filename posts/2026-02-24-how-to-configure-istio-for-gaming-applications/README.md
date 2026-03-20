@@ -391,6 +391,7 @@ Track the metrics that matter for gaming:
 
 ```bash
 # Authentication latency (login should be fast)
+
 histogram_quantile(0.95, rate(istio_request_duration_milliseconds_bucket{destination_workload="auth-service"}[5m]))
 
 # Matchmaking latency

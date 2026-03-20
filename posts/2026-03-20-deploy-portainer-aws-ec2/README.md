@@ -80,6 +80,7 @@ resource "aws_security_group" "portainer" {
 
 ```bash
 # Get the public IP
+
 tofu output portainer_ip
 
 # Access the UI

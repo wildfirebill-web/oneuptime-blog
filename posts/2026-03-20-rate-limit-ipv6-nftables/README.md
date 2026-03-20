@@ -14,6 +14,7 @@ nftables provides more powerful and flexible rate limiting than ip6tables. The `
 
 ```bash
 # Limit incoming IPv6 ping rate globally
+
 nft add rule ip6 filter input \
   ip6 nexthdr icmpv6 icmpv6 type echo-request \
   limit rate 10/second burst 30 packets accept
@@ -64,7 +65,7 @@ table ip6 rate-limits {
             meter ping6-limit { ip6 saddr timeout 5s limit rate 5/second } accept
         ip6 nexthdr icmpv6 icmpv6 type echo-request drop
 
-        # NDP rate limit (NS per source — prevent NDP exhaustion)
+        # NDP rate limit (NS per source - prevent NDP exhaustion)
         ip6 nexthdr icmpv6 icmpv6 type nd-neighbor-solicit \
             meter ndp-limit { ip6 saddr timeout 10s limit rate 10/second } accept
         ip6 nexthdr icmpv6 icmpv6 type nd-neighbor-solicit drop
@@ -187,4 +188,4 @@ nft flush meter ip6 rate-control ssh-rate
 
 ## Summary
 
-nftables rate limiting uses `limit rate N/unit burst B` for global limits and `meter name { ip6 saddr limit rate N/unit }` for per-source limits. Meters are more powerful than ip6tables `hashlimit` — they're defined inline in rules without separate initialization. For IPv6, apply per-source rate limits to: SSH (4-10/minute), HTTP (50-100/second), ICMPv6 echo (10/second), and Neighbor Solicitations (10/second) to prevent NDP exhaustion. Use `nft list meters` to monitor active connections against rate limits.
+nftables rate limiting uses `limit rate N/unit burst B` for global limits and `meter name { ip6 saddr limit rate N/unit }` for per-source limits. Meters are more powerful than ip6tables `hashlimit` - they're defined inline in rules without separate initialization. For IPv6, apply per-source rate limits to: SSH (4-10/minute), HTTP (50-100/second), ICMPv6 echo (10/second), and Neighbor Solicitations (10/second) to prevent NDP exhaustion. Use `nft list meters` to monitor active connections against rate limits.

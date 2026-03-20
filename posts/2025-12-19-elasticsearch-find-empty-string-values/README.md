@@ -289,6 +289,7 @@ def audit_empty_values(index, fields):
     return results
 
 # Usage
+
 audit = audit_empty_values('users', ['name', 'email', 'phone', 'address'])
 for field, stats in audit.items():
     print(f"\n{field}:")

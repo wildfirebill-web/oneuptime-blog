@@ -38,6 +38,7 @@ Enable the required APIs:
 
 ```bash
 # Enable the Connect Gateway API
+
 gcloud services enable connectgateway.googleapis.com
 
 # Enable the GKE Hub API if not already enabled

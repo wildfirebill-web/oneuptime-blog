@@ -28,6 +28,7 @@ Additionally, applying any policy changes to the kube-system namespace requires 
 
 ```bash
 # Verify current kube-system policies
+
 kubectl get networkpolicy -n kube-system
 calicoctl get globalnetworkpolicy | grep kube-dns
 ```

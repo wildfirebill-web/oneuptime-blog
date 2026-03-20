@@ -24,6 +24,7 @@ The fundamental Istio pattern is the sidecar proxy. With Podman pods, this is st
 
 ```bash
 # Create a pod for the service
+
 podman pod create \
   --name bookinfo-productpage \
   -p 9080:9080 \

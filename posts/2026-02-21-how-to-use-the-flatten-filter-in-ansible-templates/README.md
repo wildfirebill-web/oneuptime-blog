@@ -18,6 +18,7 @@ The flatten filter collapses all levels of nesting by default:
 
 ```yaml
 # Flatten a nested list into a single flat list
+
 - name: Demonstrate basic flatten
   ansible.builtin.debug:
     msg: "{{ nested_list | flatten }}"

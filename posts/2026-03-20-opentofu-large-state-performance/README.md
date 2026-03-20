@@ -1,4 +1,4 @@
-# How to Manage Large State Files for Performance in OpenTofu
+# How to Manage Large State Files for Performance in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to manage large OpenTofu state files for better performan
 
 ## Introduction
 
-As infrastructure grows, state files can become large — sometimes containing thousands of resources. Large state files slow down every OpenTofu operation because each plan must process the entire state. This guide covers strategies to keep state files manageable and operations fast.
+As infrastructure grows, state files can become large - sometimes containing thousands of resources. Large state files slow down every OpenTofu operation because each plan must process the entire state. This guide covers strategies to keep state files manageable and operations fast.
 
 ## Measuring State Size
 
 ```bash
 # Count resources in state
+
 tofu state list | wc -l
 
 # Measure state file size
@@ -29,9 +30,9 @@ tofu state pull | jq '
 
 ## Strategy 1: Split State by Layer
 
-The most effective solution is architectural — split one large state into multiple smaller states:
+The most effective solution is architectural - split one large state into multiple smaller states:
 
-```
+```text
 Before: One state file with 500 resources
 After:
   networking/terraform.tfstate  (50 resources)
@@ -41,7 +42,7 @@ After:
 ```
 
 ```hcl
-# networking/ — manages VPC, subnets, security groups
+# networking/ - manages VPC, subnets, security groups
 terraform {
   backend "s3" {
     bucket = "my-state"
@@ -52,7 +53,7 @@ terraform {
 ```
 
 ```hcl
-# eks/ — reads networking outputs, manages cluster
+# eks/ - reads networking outputs, manages cluster
 data "terraform_remote_state" "networking" {
   backend = "s3"
   config = {
@@ -137,4 +138,4 @@ tofu state mv \
 
 ## Conclusion
 
-Large state files are a performance and operational risk. The most impactful solution is splitting state by architectural layer — networking, compute, data, and monitoring each in their own state file. Use `terraform_remote_state` data sources to pass outputs between layers. This pattern scales to hundreds of engineers working on the same infrastructure without performance degradation.
+Large state files are a performance and operational risk. The most impactful solution is splitting state by architectural layer - networking, compute, data, and monitoring each in their own state file. Use `terraform_remote_state` data sources to pass outputs between layers. This pattern scales to hundreds of engineers working on the same infrastructure without performance degradation.

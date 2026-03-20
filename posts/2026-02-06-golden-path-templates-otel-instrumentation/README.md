@@ -64,6 +64,7 @@ The core of the template is the telemetry module. It wraps the internal SDK wrap
 
 ```python
 # {{cookiecutter.service_name}}/app/telemetry.py
+
 """
 OpenTelemetry configuration for {{cookiecutter.service_name}}.
 Generated from the golden-path-python-flask template.

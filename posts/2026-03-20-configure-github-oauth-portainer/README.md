@@ -96,6 +96,7 @@ GitHub doesn't natively restrict OAuth to org members via scopes alone. Use thes
 
 ```bash
 # Option 1: Add 'read:org' scope and manually approve users
+
 # Option 2: Use GitHub's OAuth organization scopes
 "Scopes": "read:user user:email read:org"
 

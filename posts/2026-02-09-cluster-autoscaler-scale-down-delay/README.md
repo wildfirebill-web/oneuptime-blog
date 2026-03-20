@@ -96,6 +96,7 @@ Use node annotations to configure per-node-group behavior.
 
 ```yaml
 # For spot instance node groups
+
 command:
 - ./cluster-autoscaler
 - --scale-down-utilization-threshold=0.4  # More aggressive for spot nodes

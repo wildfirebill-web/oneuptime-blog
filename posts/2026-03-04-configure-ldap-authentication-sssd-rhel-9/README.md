@@ -32,6 +32,7 @@ Start by installing SSSD and the LDAP client tools:
 
 ```bash
 # Install SSSD with LDAP backend support
+
 sudo dnf install sssd sssd-ldap openldap-clients -y
 ```
 

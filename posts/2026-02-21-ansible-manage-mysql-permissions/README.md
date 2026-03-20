@@ -34,6 +34,7 @@ The simplest way to manage permissions is during user creation with the `priv` p
 
 ```yaml
 # playbooks/manage-mysql-permissions.yml
+
 # Create users with specific privilege sets
 ---
 - name: Manage MySQL permissions

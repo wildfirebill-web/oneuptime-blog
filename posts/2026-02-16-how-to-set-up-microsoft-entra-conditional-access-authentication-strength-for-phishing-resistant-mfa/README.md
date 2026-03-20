@@ -59,6 +59,7 @@ Before enforcing authentication strength, verify that your users have the requir
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "UserAuthenticationMethod.Read.All"
 
 # Check authentication methods registered for a specific user

@@ -57,6 +57,7 @@ Create a DCsv3 VM using the Azure CLI. Use an Ubuntu image that has the SGX driv
 
 ```bash
 # Create a resource group in a region that supports confidential computing
+
 az group create \
   --name confidential-rg \
   --location eastus

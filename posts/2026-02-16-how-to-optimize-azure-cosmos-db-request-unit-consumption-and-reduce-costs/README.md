@@ -172,6 +172,7 @@ If you are using provisioned throughput, review your actual RU consumption again
 
 ```bash
 # Query Cosmos DB metrics for actual vs provisioned RU consumption
+
 az monitor metrics list \
   --resource "/subscriptions/{sub-id}/resourceGroups/myRG/providers/Microsoft.DocumentDB/databaseAccounts/myCosmosDB" \
   --metric "TotalRequestUnits" \

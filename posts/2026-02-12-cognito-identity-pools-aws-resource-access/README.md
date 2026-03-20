@@ -41,6 +41,7 @@ Create the identity pool and link it to your user pool:
 
 ```bash
 # Create the identity pool
+
 aws cognito-identity create-identity-pool \
     --identity-pool-name MyAppIdentityPool \
     --allow-unauthenticated-identities true \

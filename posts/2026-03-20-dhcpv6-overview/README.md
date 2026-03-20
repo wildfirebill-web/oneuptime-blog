@@ -12,7 +12,7 @@ DHCPv6 (Dynamic Host Configuration Protocol for IPv6, RFC 8415) provides statefu
 
 ## DHCPv6 vs DHCPv4 Key Differences
 
-```
+```yaml
 DHCPv4 vs DHCPv6 Comparison:
 
 Feature             | DHCPv4              | DHCPv6
@@ -32,7 +32,7 @@ Message types       | DISCOVER/OFFER/...  | SOLICIT/ADVERTISE/...
 
 ## DHCPv6 Message Types
 
-```
+```text
 DHCPv6 Message Type Codes:
 
 Client-to-Server Messages:
@@ -57,7 +57,7 @@ Relay Messages:
 
 ## DHCPv6 Address Assignment Flow
 
-```
+```yaml
 Stateful DHCPv6 Address Assignment (DORA equivalent):
 
 Client                    Server
@@ -83,7 +83,7 @@ Client                    Server
 
 ## Rapid Commit (2-message Exchange)
 
-```
+```yaml
 Rapid Commit DHCPv6 (with Rapid-Commit option):
 
 Client                    Server
@@ -106,7 +106,7 @@ Enable Rapid Commit:
 
 ## DHCPv6 Option Structure
 
-```
+```text
 DHCPv6 Options Format:
 
  0                   1                   2                   3
@@ -134,7 +134,7 @@ Common DHCPv6 Option Codes:
 
 ## Renew and Rebind Process
 
-```
+```text
 DHCPv6 Lease Renewal:
 
 T1 timer (default: 50% of lease time):
@@ -161,6 +161,7 @@ Example for 24-hour lease:
 
 ```bash
 # Check if dhclient is running DHCPv6
+
 ps aux | grep dhclient
 
 # View DHCPv6 lease file

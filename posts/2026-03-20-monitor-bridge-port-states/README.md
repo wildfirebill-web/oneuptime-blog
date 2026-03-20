@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bridge, STP, Port State, Linux, brctl, bridge, Monitoring, Networking
+Tags: Bridge, STP, Port State, Linux, Brctl, Monitoring, Networking
 
 Description: Learn how to monitor Linux bridge port states including STP forwarding/blocking states, port statistics, and how to set up alerts when bridge port states change.
 
@@ -14,6 +14,7 @@ Monitoring bridge port states helps detect STP topology changes, blocked ports, 
 
 ```bash
 # Show all bridge ports and their states
+
 bridge link show
 
 # Output:
@@ -117,5 +118,5 @@ echo "bridge_port_state{bridge=\"br0\",port=\"eth0\"} $(cat /sys/class/net/br0/b
 
 - `bridge link show` gives a quick view of all ports and their STP states.
 - Port state 3 (forwarding) is normal; state 4 (blocking) means STP has blocked the port to prevent a loop.
-- Increasing `topology change count` in `brctl showstp` indicates STP reconvergence events — investigate flapping links.
+- Increasing `topology change count` in `brctl showstp` indicates STP reconvergence events - investigate flapping links.
 - Read `/sys/class/net/br0/brif/<port>/state` for machine-readable port state (0-4) suitable for monitoring scripts.

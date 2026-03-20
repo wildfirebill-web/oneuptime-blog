@@ -8,9 +8,9 @@ Description: Learn how to use Cloudflare Tunnel (formerly Argo Tunnel) to secure
 
 ## What Is Cloudflare Tunnel?
 
-Cloudflare Tunnel creates an outbound-only connection from your server to Cloudflare's network. Cloudflare then routes HTTPS traffic from your domain to Portainer through this tunnel — no ports need to be opened on your firewall.
+Cloudflare Tunnel creates an outbound-only connection from your server to Cloudflare's network. Cloudflare then routes HTTPS traffic from your domain to Portainer through this tunnel - no ports need to be opened on your firewall.
 
-```
+```text
 Browser → Cloudflare (your domain) → Tunnel → cloudflared → Portainer
                                     (no inbound ports needed)
 ```
@@ -32,6 +32,7 @@ Browser → Cloudflare (your domain) → Tunnel → cloudflared → Portainer
 
 ```bash
 # Install cloudflared
+
 curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb -o cloudflared.deb
 dpkg -i cloudflared.deb
 
@@ -68,7 +69,7 @@ cloudflared tunnel run portainer-tunnel
 5. Copy the install command shown (includes your token):
 
 ```bash
-# Cloudflare provides this command — run it on your server
+# Cloudflare provides this command - run it on your server
 cloudflared service install <YOUR_TOKEN>
 ```
 
@@ -93,7 +94,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
-    # No ports needed — tunnel handles external access
+    # No ports needed - tunnel handles external access
     restart: unless-stopped
 ```
 

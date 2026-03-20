@@ -1,4 +1,4 @@
-# How to Understand When Not to Use Workspaces in OpenTofu
+# How to Understand When Not to Use Workspaces in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ Workspaces share a single configuration. If your environments have fundamentally
 
 ```hcl
 # Anti-pattern: Too much conditional logic
+
 resource "aws_eks_cluster" "main" {
   count = terraform.workspace == "production" ? 1 : 0
   # Only production has EKS
@@ -42,7 +43,7 @@ resource "aws_ecs_service" "staging_app" {
 
 **Better approach**: Separate configurations in separate directories:
 
-```
+```text
 infrastructure/
 ├── development/     # EC2-based setup
 │   ├── main.tf
@@ -59,14 +60,14 @@ infrastructure/
 
 Workspaces share the same configuration and same backend bucket (though different state files). If different teams own different environments, they shouldn't share a configuration:
 
-```
+```text
 Problem: Platform team owns production, dev team owns development
 Both in the same workspace = both can accidentally apply to wrong environment
 ```
 
 **Better approach**: Separate repositories or directories with separate IAM policies:
 
-```
+```text
 infrastructure/
 ├── platform-team/
 │   └── production/     # Only platform team has IAM access to this backend
@@ -90,7 +91,7 @@ resource "aws_s3_bucket_public_access_block" "app" {
 
 ## Anti-Pattern 4: Per-Customer or Per-Tenant Infrastructure
 
-Each customer gets their own "environment" — this scales to hundreds of workspaces:
+Each customer gets their own "environment" - this scales to hundreds of workspaces:
 
 ```bash
 # Anti-pattern: Workspace per customer

@@ -16,6 +16,7 @@ The simplest invocation lists everything:
 
 ```bash
 # List all resources in the current state
+
 terraform state list
 ```
 

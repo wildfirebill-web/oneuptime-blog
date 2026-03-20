@@ -16,6 +16,7 @@ The simplest form of string matching is direct equality using `==`.
 
 ```yaml
 # Simple string equality check
+
 ---
 - name: Basic string comparison
   hosts: all

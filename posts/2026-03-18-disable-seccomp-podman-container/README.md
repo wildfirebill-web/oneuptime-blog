@@ -27,6 +27,7 @@ Certain tools and workloads require syscalls that the default seccomp profile bl
 
 ```bash
 # Demonstrate a seccomp restriction - strace needs ptrace syscalls
+
 # This will fail under the default seccomp profile in many configurations
 podman run --rm docker.io/library/alpine:latest \
   sh -c "apk add --no-cache strace && strace -e trace=open echo hello" \

@@ -29,6 +29,7 @@ Annotate nodes with their local router IP for auto-discovery:
 
 ```bash
 # Annotate each node with its upstream router IP
+
 kubectl annotate node worker-0 \
   "cilium.io/bgp-virtual-router.65100"='{"local-port":179,"peer-address":"10.0.0.1","peer-asn":65000}'
 

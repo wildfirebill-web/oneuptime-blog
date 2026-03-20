@@ -229,6 +229,7 @@ Deploy a test pod in each namespace and verify routing:
 
 ```bash
 # From team-a namespace
+
 kubectl exec deploy/test-client -n team-a -c test-client -- curl -s http://payment-service.shared-services.svc.cluster.local/version
 
 # From team-b namespace

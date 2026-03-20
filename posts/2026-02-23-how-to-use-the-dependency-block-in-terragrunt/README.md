@@ -26,6 +26,7 @@ include "root" {
 }
 
 # Declare a dependency on the VPC module
+
 dependency "vpc" {
   config_path = "../vpc"
 }

@@ -12,7 +12,7 @@ DHCPv6 provides two modes:
 - **Stateful**: Server assigns IPv6 addresses and options (like IPv4 DHCP)
 - **Stateless**: SLAAC assigns addresses, DHCPv6 provides only options (DNS, etc.)
 
-```
+```text
 Router RA → M flag = 1 → Clients use stateful DHCPv6 for addresses
 Router RA → O flag = 1 → Clients use stateless DHCPv6 for options only
 ```
@@ -21,6 +21,7 @@ Router RA → O flag = 1 → Clients use stateless DHCPv6 for options only
 
 ```powershell
 # Create a DHCPv6 scope (requires DHCP Server role installed)
+
 Add-DhcpServerv6Scope `
     -Name "IPv6 Production Scope" `
     -Description "DHCPv6 scope for production network" `
@@ -71,7 +72,7 @@ Get-DhcpServerv6OptionValue -Prefix "2001:db8::"
 
 ## Configure DHCPv6 via DHCP Manager GUI
 
-```
+```text
 Steps:
 1. Open DHCP Manager (dhcpmgmt.msc)
 

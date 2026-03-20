@@ -14,6 +14,7 @@ SSH's dynamic port forwarding (`-D`) creates a local SOCKS5 proxy that tunnels a
 
 ```bash
 # Create SOCKS5 proxy on port 1080 via IPv6 SSH server
+
 ssh -D 1080 user@2001:db8::sshserver
 
 # Bind the SOCKS port to localhost IPv6 only
@@ -30,7 +31,7 @@ ssh -D "[::1]:1080" -N -f user@2001:db8::sshserver
 
 ## Step 2: SSH Config for Persistent SOCKS Proxy
 
-```
+```text
 # ~/.ssh/config
 
 Host ipv6-proxy
@@ -70,7 +71,7 @@ curl --socks5-hostname "[::1]:1080" http://ipv6.icanhazip.com/
 ## Step 4: Configure Applications to Use the SOCKS Proxy
 
 ```python
-# Python — use SOCKS5 via socks module
+# Python - use SOCKS5 via socks module
 import socks
 import socket
 
@@ -129,7 +130,7 @@ systemctl enable --now ssh-socks-proxy
 
 ## Step 6: Firefox SOCKS Proxy via IPv6
 
-```
+```text
 Firefox Settings → Proxy → Manual configuration
 SOCKS Host: ::1
 Port: 1080

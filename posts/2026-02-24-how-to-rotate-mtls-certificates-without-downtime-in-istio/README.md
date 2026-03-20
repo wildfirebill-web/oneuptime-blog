@@ -86,6 +86,7 @@ The safe approach involves an overlap period where both the old and new root CAs
 
 ```bash
 # Generate new root CA key and certificate
+
 openssl req -x509 -newkey rsa:4096 -keyout new-root-key.pem -out new-root-cert.pem -days 3650 -nodes -subj "/O=my-org/CN=my-new-root-ca"
 ```
 

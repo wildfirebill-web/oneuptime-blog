@@ -38,6 +38,7 @@ This separation lets you snapshot root (`@`) for system snapshots without includ
 
 ```bash
 # List all subvolumes in the Btrfs filesystem mounted at /
+
 sudo btrfs subvolume list /
 ```
 

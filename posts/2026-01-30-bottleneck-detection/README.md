@@ -1083,6 +1083,7 @@ You cannot analyze traces you did not collect. Use tail-based sampling to keep i
 
 ```yaml
 # otel-collector-config.yaml
+
 processors:
   tail_sampling:
     decision_wait: 10s

@@ -39,6 +39,7 @@ Each directory is self-contained with its own host definitions and variables.
 
 ```yaml
 # inventories/dev/hosts.yml
+
 # Development environment - local VMs or cloud dev instances
 all:
   vars:

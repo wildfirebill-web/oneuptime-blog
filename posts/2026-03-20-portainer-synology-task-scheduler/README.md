@@ -36,6 +36,7 @@ In the **Task Settings** tab, paste the following script in the **Run command** 
 ```bash
 #!/bin/bash
 # Portainer auto-install script for Synology NAS
+
 # Runs at boot to ensure Portainer is always running
 
 PORTAINER_CONTAINER="portainer"
@@ -160,7 +161,7 @@ To test without rebooting:
 
 After the task runs:
 
-1. Open **Container Manager** — you should see the Portainer container running
+1. Open **Container Manager** - you should see the Portainer container running
 2. Access Portainer at `http://<synology-ip>:9000`
 
 ## Handling DSM Updates

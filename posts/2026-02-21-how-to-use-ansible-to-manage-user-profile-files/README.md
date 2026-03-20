@@ -28,6 +28,7 @@ If you want complete control over the profile files, use the `template` module.
 
 ```yaml
 # manage_profiles_template.yml - Deploy standardized .bashrc using templates
+
 ---
 - name: Manage user profile files with templates
   hosts: all

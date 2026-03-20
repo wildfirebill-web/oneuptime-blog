@@ -29,6 +29,7 @@ Track the K3s server process and its API availability:
 
 ```yaml
 # k3s-server-monitor.yaml
+
 # ServiceMonitor for K3s API server metrics
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor

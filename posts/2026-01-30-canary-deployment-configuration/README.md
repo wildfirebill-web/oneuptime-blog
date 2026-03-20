@@ -38,6 +38,7 @@ Here is a Rollout configuration with precise traffic percentages:
 
 ```yaml
 # rollout-traffic-control.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:

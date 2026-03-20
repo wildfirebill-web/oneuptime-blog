@@ -112,6 +112,7 @@ These commands create an EventBridge rule and connect it to a Lambda function:
 
 ```bash
 # Create a scheduled rule (daily at 8 AM UTC)
+
 aws events put-rule \
   --name daily-report \
   --schedule-expression "cron(0 8 * * ? *)" \

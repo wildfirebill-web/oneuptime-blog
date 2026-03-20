@@ -37,6 +37,7 @@ Here is a minimal Python detector:
 
 ```python
 # A basic custom resource detector that reads from environment variables
+
 from opentelemetry.sdk.resources import Resource, ResourceDetector
 import os
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, macOS, Networking, Network Diagnostics, sysadmin
+Tags: DHCP, macOS, Networking, Network Diagnostics, Sysadmin
 
 Description: Renewing a DHCP lease on macOS can be done through System Settings, the ipconfig command, or by using networksetup to toggle DHCP off and on for the target interface.
 
@@ -19,12 +19,13 @@ Description: Renewing a DHCP lease on macOS can be done through System Settings,
 
 ```bash
 # Show current DHCP lease information
+
 ipconfig getpacket en0
 
 # Release and renew the DHCP lease
 sudo ipconfig set en0 DHCP
 
-# For Wi-Fi (en0) or Ethernet (en1) — check with ifconfig
+# For Wi-Fi (en0) or Ethernet (en1) - check with ifconfig
 ifconfig | grep '^en' | awk '{print $1}'
 
 # Verbose renewal

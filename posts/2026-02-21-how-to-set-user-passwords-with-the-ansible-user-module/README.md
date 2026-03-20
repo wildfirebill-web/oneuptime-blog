@@ -22,6 +22,7 @@ The simplest way to generate a hash is with Python's `crypt` module or Ansible's
 
 ```bash
 # Generate a SHA-512 password hash using Python
+
 python3 -c "import crypt; print(crypt.crypt('MySecurePassword123', crypt.mksalt(crypt.METHOD_SHA512)))"
 ```
 

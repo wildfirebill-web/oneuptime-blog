@@ -52,6 +52,7 @@ The simplest rolling update: change the container image.
 
 ```yaml
 # playbook: rolling-update.yml
+
 # Performs a rolling update by changing the container image
 ---
 - name: Perform Rolling Update

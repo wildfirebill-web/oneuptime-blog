@@ -113,6 +113,7 @@ Every KRaft cluster needs a unique identifier:
 
 ```bash
 # Generate a new cluster ID
+
 KAFKA_CLUSTER_ID=$(kafka-storage.sh random-uuid)
 echo $KAFKA_CLUSTER_ID
 

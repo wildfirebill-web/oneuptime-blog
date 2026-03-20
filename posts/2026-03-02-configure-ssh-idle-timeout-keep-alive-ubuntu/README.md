@@ -33,6 +33,7 @@ These settings cause the server to probe idle clients and disconnect them if the
 
 ```text
 # Send a keep-alive message to the client every 300 seconds (5 minutes)
+
 ClientAliveInterval 300
 
 # Disconnect after 3 unanswered messages (15 minutes total of silence)

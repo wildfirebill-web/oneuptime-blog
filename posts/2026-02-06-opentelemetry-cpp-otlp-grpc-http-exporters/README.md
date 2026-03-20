@@ -334,6 +334,7 @@ Link the appropriate exporter libraries in your CMakeLists.txt:
 
 ```cmake
 # For gRPC exporter
+
 target_link_libraries(myapp
     PRIVATE
     opentelemetry-cpp::otlp_grpc_exporter

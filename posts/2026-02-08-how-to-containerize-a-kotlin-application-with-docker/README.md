@@ -78,6 +78,7 @@ Use a multi-stage build that builds with the JDK and runs with only the JRE:
 # Dockerfile - Multi-stage build for Ktor application
 
 # === Build Stage ===
+
 FROM eclipse-temurin:21-jdk-jammy AS builder
 
 WORKDIR /build

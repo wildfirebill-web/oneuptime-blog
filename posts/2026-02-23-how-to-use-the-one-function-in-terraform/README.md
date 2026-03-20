@@ -18,6 +18,7 @@ The `one` function takes a list or set and returns its single element. If the co
 
 ```hcl
 # Returns the single element, null for empty, or errors for multiple
+
 one(collection)
 ```
 

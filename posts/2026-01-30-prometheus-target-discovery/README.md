@@ -58,6 +58,7 @@ The simplest approach. List your targets directly in the Prometheus config.
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: 'web-servers'
     static_configs:

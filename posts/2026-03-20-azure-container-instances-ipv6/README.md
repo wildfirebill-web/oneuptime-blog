@@ -17,6 +17,7 @@ RG="rg-aci-ipv6"
 LOCATION="eastus"
 
 # Create resource group
+
 az group create --name "$RG" --location "$LOCATION"
 
 # Create VNet with IPv6 support
@@ -140,7 +141,7 @@ nslookup -type=AAAA google.com
 ## Multi-Container Group with IPv6
 
 ```yaml
-# aci-group.yaml — Multi-container group with IPv6
+# aci-group.yaml - Multi-container group with IPv6
 apiVersion: '2021-10-01'
 location: eastus
 name: aci-multi-container

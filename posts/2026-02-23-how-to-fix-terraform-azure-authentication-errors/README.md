@@ -48,6 +48,7 @@ This is the simplest method for local development. Terraform uses the credential
 
 ```bash
 # Log in to Azure
+
 az login
 
 # Verify your login

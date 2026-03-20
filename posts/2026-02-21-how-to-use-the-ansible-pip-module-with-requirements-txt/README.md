@@ -16,6 +16,7 @@ The `requirements` parameter points to a requirements file on the remote host:
 
 ```yaml
 # Install packages from a requirements file on the target host
+
 - name: Install application dependencies
   ansible.builtin.pip:
     requirements: /opt/myapp/requirements.txt

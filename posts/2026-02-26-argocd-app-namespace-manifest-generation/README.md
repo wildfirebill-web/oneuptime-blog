@@ -68,6 +68,7 @@ In your Helm templates, reference the value:
 
 ```yaml
 # templates/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

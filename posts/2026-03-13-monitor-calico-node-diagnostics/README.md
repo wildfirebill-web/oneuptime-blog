@@ -16,6 +16,7 @@ Monitoring Calico at the node level requires tracking Felix health metrics per n
 
 ```yaml
 # ServiceMonitor for Felix per-node metrics
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

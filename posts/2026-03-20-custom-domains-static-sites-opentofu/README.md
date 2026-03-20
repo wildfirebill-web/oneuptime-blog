@@ -26,6 +26,7 @@ graph TD
 # dns_aws.tf
 
 # Apex domain alias to CloudFront
+
 resource "aws_route53_record" "apex" {
   zone_id = aws_route53_zone.main.zone_id
   name    = var.domain_name
@@ -91,7 +92,7 @@ data "cloudflare_zone" "main" {
   name = var.domain_name
 }
 
-# Apex domain — CNAME flattening handles this at Cloudflare
+# Apex domain - CNAME flattening handles this at Cloudflare
 resource "cloudflare_record" "apex" {
   zone_id = data.cloudflare_zone.main.id
   name    = "@"
@@ -114,7 +115,7 @@ resource "cloudflare_record" "www" {
 ## Apex Domain Handling
 
 ```hcl
-# apex_redirect.tf — redirect www to apex or vice versa
+# apex_redirect.tf - redirect www to apex or vice versa
 
 # S3 bucket for www → apex redirect
 resource "aws_s3_bucket" "www_redirect" {
@@ -196,8 +197,8 @@ resource "aws_route53_record" "all_domains" {
 
 ## Best Practices
 
-- Use DNS alias records (Route 53 alias, Cloudflare CNAME flattening) rather than IP addresses for CDN hostnames — CDN IP addresses change without notice.
-- For apex domains (`example.com` without `www`), most DNS providers support CNAME-equivalent records (ALIAS, ANAME, or CNAME flattening) — verify your DNS provider supports this before choosing the domain structure.
-- Configure both IPv4 (`A`) and IPv6 (`AAAA`) records for modern clients — CloudFront and major CDNs support dual-stack.
-- Create separate CloudFront distributions for www redirect rather than handling it at the application level — this keeps the redirect fast (edge-level) and doesn't add origin load.
+- Use DNS alias records (Route 53 alias, Cloudflare CNAME flattening) rather than IP addresses for CDN hostnames - CDN IP addresses change without notice.
+- For apex domains (`example.com` without `www`), most DNS providers support CNAME-equivalent records (ALIAS, ANAME, or CNAME flattening) - verify your DNS provider supports this before choosing the domain structure.
+- Configure both IPv4 (`A`) and IPv6 (`AAAA`) records for modern clients - CloudFront and major CDNs support dual-stack.
+- Create separate CloudFront distributions for www redirect rather than handling it at the application level - this keeps the redirect fast (edge-level) and doesn't add origin load.
 - Test custom domain configuration with `dig +trace example.com` to verify the full DNS chain from registrar NS records to CDN endpoints.

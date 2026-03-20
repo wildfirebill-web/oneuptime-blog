@@ -14,6 +14,7 @@ The `-chdir` global option tells OpenTofu to switch to a specified directory bef
 
 ```bash
 # Run init in a specific directory
+
 tofu -chdir=./infrastructure/networking init
 
 # Plan from a different directory
@@ -31,7 +32,7 @@ Note: `-chdir` is a global option that comes BEFORE the subcommand.
 
 ```bash
 #!/bin/bash
-# deploy-all.sh — run from project root
+# deploy-all.sh - run from project root
 
 BASE_DIR="./infrastructure"
 

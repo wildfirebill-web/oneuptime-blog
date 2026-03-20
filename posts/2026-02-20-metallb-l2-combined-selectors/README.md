@@ -56,6 +56,7 @@ graph LR
 
 ```bash
 # Label the nodes that should handle external LoadBalancer traffic
+
 kubectl label node node-1 network-role=ingress
 kubectl label node node-2 network-role=ingress
 

@@ -14,6 +14,7 @@ Here is a rate limiter middleware that emits OpenTelemetry metrics for every dec
 
 ```python
 # rate_limiter.py
+
 from opentelemetry import metrics, trace
 import redis
 import time

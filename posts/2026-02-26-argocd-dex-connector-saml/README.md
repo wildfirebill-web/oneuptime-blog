@@ -98,6 +98,7 @@ Create a Kubernetes Secret or ConfigMap with the IdP's signing certificate:
 
 ```bash
 # Download the IdP certificate (extract from metadata or get from IdP admin)
+
 kubectl -n argocd create configmap saml-idp-cert \
   --from-file=idp-ca.pem=/path/to/idp-certificate.pem
 ```

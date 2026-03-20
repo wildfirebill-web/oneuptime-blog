@@ -80,6 +80,7 @@ locals {
 }
 
 # Create subnets using arithmetic for CIDR offsets
+
 resource "aws_subnet" "public" {
   count = local.az_count
 

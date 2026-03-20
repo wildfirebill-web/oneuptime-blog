@@ -14,6 +14,7 @@ Description: Diagnose and resolve 'Connection refused' errors when attempting SS
 
 ```bash
 # Check the SSH daemon status
+
 sudo systemctl status sshd
 
 # If it is not running, start it

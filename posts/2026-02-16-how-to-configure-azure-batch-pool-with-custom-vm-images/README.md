@@ -27,6 +27,7 @@ Start by creating a VM that you will use to build your custom image.
 
 ```bash
 # Create a VM from a marketplace image
+
 az vm create \
   --name batch-image-builder \
   --resource-group batch-rg \

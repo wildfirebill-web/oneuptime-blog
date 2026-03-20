@@ -60,6 +60,7 @@ The `rabbitmqctl set_policy` command creates policies from the command line. The
 
 ```bash
 # Basic syntax
+
 rabbitmqctl set_policy <name> <pattern> <definition> [--priority <n>] [--apply-to <type>]
 ```
 

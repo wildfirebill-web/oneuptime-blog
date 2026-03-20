@@ -25,6 +25,7 @@ Install Squid with SSL support:
 ```bash
 sudo apt update
 # The standard Ubuntu package may not include SSL bumping support
+
 # Check if it does
 squid -v | grep ssl
 

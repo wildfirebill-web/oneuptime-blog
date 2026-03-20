@@ -123,6 +123,7 @@ To query at a specific relative time:
 
 ```promql
 # Query value from 1 hour ago
+
 up offset 1h
 
 # Query value from start of day

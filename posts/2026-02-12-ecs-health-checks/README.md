@@ -105,6 +105,7 @@ app.get('/health', async (req, res) => {
 
 ```python
 # Health check endpoint in Flask
+
 @app.route('/health')
 def health_check():
     checks = {}

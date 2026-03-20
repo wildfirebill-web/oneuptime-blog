@@ -30,6 +30,7 @@ Before troubleshooting calicoctl, confirm the etcd cluster itself is healthy:
 
 ```bash
 # Check etcd cluster health with etcdctl
+
 etcdctl --endpoints=https://etcd1:2379,https://etcd2:2379,https://etcd3:2379 \
   --cert=/etc/calico/certs/cert.pem \
   --key=/etc/calico/certs/key.pem \

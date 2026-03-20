@@ -104,6 +104,7 @@ Now every resource file can reference `local.common_tags` and `local.name_prefix
 
 ```hcl
 # compute.tf
+
 resource "aws_instance" "app" {
   ami           = var.ami_id
   instance_type = var.instance_type

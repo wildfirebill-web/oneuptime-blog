@@ -35,6 +35,7 @@ flowchart TD
 # Common OOM error patterns
 
 # 1. Executor OOM during shuffle
+
 # "java.lang.OutOfMemoryError: Java heap space"
 # "ExecutorLostFailure (executor X exited caused by one of the running tasks)"
 

@@ -56,6 +56,7 @@ Create a new directory for your project and initialize it.
 
 ```bash
 # Create project structure
+
 mkdir serverless-discord-bot && cd serverless-discord-bot
 npm init -y
 npm install discord-interactions

@@ -1,10 +1,10 @@
-# How to Deploy Cloud SQL on GCP with OpenTofu
+# How to Deploy Cloud SQL on GCP with OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Cloud SQL, GCP, Database, PostgreSQL, MySQL, Infrastructure as Code
 
-Description: Learn how to deploy Cloud SQL on Google Cloud Platform using OpenTofu — including instance configuration, private IP, read replicas, and high availability setup.
+Description: Learn how to deploy Cloud SQL on Google Cloud Platform using OpenTofu - including instance configuration, private IP, read replicas, and high availability setup.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ GCP Cloud SQL supports PostgreSQL, MySQL, and SQL Server. OpenTofu manages Cloud
 
 ```hcl
 # Enable Service Networking API
+
 resource "google_project_service" "servicenetworking" {
   service            = "servicenetworking.googleapis.com"
   disable_on_destroy = false
@@ -201,4 +202,4 @@ output "database_name" {
 
 ## Conclusion
 
-Cloud SQL on GCP requires VPC peering setup before creating instances with private IPs — configure the private IP range and service networking connection first. Use `availability_type = "REGIONAL"` for production HA. Enable Query Insights for performance monitoring. For application authentication, prefer IAM database authentication over password-based users — it integrates with GCP's identity platform and avoids password rotation complexity.
+Cloud SQL on GCP requires VPC peering setup before creating instances with private IPs - configure the private IP range and service networking connection first. Use `availability_type = "REGIONAL"` for production HA. Enable Query Insights for performance monitoring. For application authentication, prefer IAM database authentication over password-based users - it integrates with GCP's identity platform and avoids password rotation complexity.

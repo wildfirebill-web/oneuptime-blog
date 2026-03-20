@@ -58,6 +58,7 @@ The Operator SDK CLI helps you scaffold, build, and test operators. Install it o
 
 ```bash
 # Install using Homebrew
+
 brew install operator-sdk
 
 # Verify installation
@@ -1200,7 +1201,7 @@ Return errors appropriately to trigger requeue:
 | Waiting for external resource | `ctrl.Result{RequeueAfter: time.Minute}, nil` |
 | Successfully reconciled | `ctrl.Result{}, nil` |
 
-### Resource Ownership
+Resource Ownership
 
 Always set owner references to enable garbage collection:
 

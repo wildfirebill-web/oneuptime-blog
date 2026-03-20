@@ -33,6 +33,7 @@ This guide covers migrating DigitalOcean Droplets, Managed Databases, Spaces, an
 
 ```python
 # Create a VPC matching your DigitalOcean VPC layout
+
 import boto3
 
 ec2 = boto3.client('ec2')

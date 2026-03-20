@@ -27,6 +27,7 @@ This post covers deploying Fluent Bit using the official Helm chart as a Flux He
 
 ```yaml
 # infrastructure/sources/fluent-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

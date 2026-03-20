@@ -108,6 +108,7 @@ For strict environments, enforce port naming conventions through admission webho
 
 ```yaml
 # OPA constraint example (conceptual)
+
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sRequiredServicePortProtocol
 metadata:

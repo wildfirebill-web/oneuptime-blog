@@ -32,6 +32,7 @@ Check what propagators are configured:
 from opentelemetry import propagate
 
 # Print the current propagator
+
 print(type(propagate.get_global_textmap()))
 # If this shows only TraceContextTextMapPropagator, baggage is NOT propagated
 ```

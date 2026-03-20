@@ -77,6 +77,7 @@ AWS Budgets provides comprehensive cost tracking and alerting capabilities. Here
 
 ```bash
 # Create a monthly cost budget with multiple alert thresholds
+
 # This budget tracks all AWS spending and sends alerts at 50%, 75%, 90%, and 100%
 
 aws budgets create-budget \

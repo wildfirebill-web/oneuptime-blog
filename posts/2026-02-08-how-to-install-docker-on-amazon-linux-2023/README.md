@@ -22,6 +22,7 @@ Start with a full system update.
 
 ```bash
 # Update all packages to the latest versions
+
 sudo dnf update -y
 ```
 

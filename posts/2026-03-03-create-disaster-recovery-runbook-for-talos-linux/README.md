@@ -30,6 +30,7 @@ Start by mapping out your entire cluster. Your runbook should include:
 
 ```yaml
 # Example cluster topology document
+
 cluster:
   name: production-cluster
   endpoint: https://k8s.example.com:6443

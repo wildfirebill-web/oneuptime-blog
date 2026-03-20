@@ -51,6 +51,7 @@ The app stack module encapsulates everything needed for one region:
 
 ```hcl
 # modules/app-stack/variables.tf
+
 variable "environment" {
   type = string
 }

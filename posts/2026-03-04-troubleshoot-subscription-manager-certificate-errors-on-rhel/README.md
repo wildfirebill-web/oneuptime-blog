@@ -20,6 +20,7 @@ Check the certificate dates:
 
 ```bash
 # List entitlement certificates and their expiry dates
+
 sudo ls -la /etc/pki/entitlement/
 sudo openssl x509 -in /etc/pki/entitlement/*.pem -noout -dates 2>/dev/null | head -10
 

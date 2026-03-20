@@ -201,6 +201,7 @@ public class IPv6NIOServer {
 
 ```bash
 # Prefer IPv6 addresses when resolving hostnames
+
 java -Djava.net.preferIPv6Addresses=true YourApp
 
 # Force IPv4 stack (disables IPv6)

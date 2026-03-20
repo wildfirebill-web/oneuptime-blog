@@ -18,6 +18,7 @@ Running GPU workloads in containers requires passing the GPU device and drivers 
 
 ```bash
 # Install the NVIDIA Container Toolkit
+
 # On Fedora/RHEL
 sudo dnf install nvidia-container-toolkit
 

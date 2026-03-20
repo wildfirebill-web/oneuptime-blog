@@ -58,6 +58,7 @@ Create the ZooKeeper configuration file for the first node. Each node needs a un
 # /etc/zookeeper/zoo.cfg - ZooKeeper Node 1
 
 # Basic settings
+
 # tickTime is the basic time unit in milliseconds used by ZooKeeper
 tickTime=2000
 

@@ -14,6 +14,7 @@ The Postfix mail queue holds messages awaiting delivery. Monitoring queue depth,
 
 ```bash
 # Show a brief summary of the queue
+
 mailq
 # or equivalently:
 postqueue -p
@@ -86,7 +87,7 @@ postsuper -r ALL deferred
 
 ```bash
 #!/bin/bash
-# queue_monitor.sh — Log queue size every minute
+# queue_monitor.sh - Log queue size every minute
 while true; do
     QUEUE=$(mailq | grep -c "^[A-F0-9]" 2>/dev/null || echo 0)
     echo "$(date '+%Y-%m-%d %H:%M:%S') queue_size=$QUEUE" >> /var/log/postfix_queue.log

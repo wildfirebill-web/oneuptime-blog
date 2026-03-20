@@ -30,6 +30,7 @@ If service CIDRs are missing from the configuration, they won't be advertised:
 
 ```bash
 # Add missing service CIDR
+
 calicoctl patch bgpconfiguration default --type merge \
   --patch '{"spec":{"serviceClusterIPs":[{"cidr":"10.96.0.0/12"}]}}'
 ```

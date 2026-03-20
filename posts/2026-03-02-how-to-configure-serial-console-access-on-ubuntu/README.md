@@ -47,6 +47,7 @@ Find and modify these lines:
 
 ```bash
 # Set the serial terminal as the GRUB display
+
 GRUB_TERMINAL="serial console"
 
 # Configure the serial port parameters

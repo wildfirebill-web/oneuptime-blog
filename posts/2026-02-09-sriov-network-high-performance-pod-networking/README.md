@@ -35,6 +35,7 @@ Verify your hardware supports SR-IOV:
 
 ```bash
 # Check if network card supports SR-IOV
+
 lspci -v | grep -i "single root"
 
 # List network devices
@@ -472,7 +473,7 @@ spec:
     sriov: enabled
 ```
 
-## Resource Management
+Resource Management
 
 Monitor SR-IOV resource usage:
 

@@ -74,6 +74,7 @@ Create the three environment branches from your main branch.
 
 ```bash
 # Start from the main branch (this represents production)
+
 git checkout main
 
 # Create the staging branch

@@ -41,6 +41,7 @@ Before installing Pi-hole, ensure your system meets these requirements:
 
 ```bash
 # Check Ubuntu version (18.04 LTS or later recommended)
+
 lsb_release -a
 
 # Verify system architecture

@@ -16,6 +16,7 @@ Labels are strings that can contain any information you choose. They persist wit
 
 ```bash
 # Add labels when running a container
+
 docker run -d \
   --name webapp \
   --label environment=production \

@@ -18,6 +18,7 @@ The events on the PVC almost always tell you what is wrong:
 
 ```bash
 # Describe the PVC to see events and status
+
 kubectl describe pvc your-pvc-name -n your-namespace
 ```
 

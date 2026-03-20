@@ -14,6 +14,7 @@ Amazon Redshift is AWS's fully managed data warehouse optimized for complex anal
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -27,7 +28,7 @@ provider "aws" {
   region = var.aws_region
 }
 
-# Subnet group — Redshift must run in a VPC
+# Subnet group - Redshift must run in a VPC
 resource "aws_redshift_subnet_group" "main" {
   name       = "${var.cluster_name}-subnet-group"
   subnet_ids = var.private_subnet_ids
@@ -87,7 +88,7 @@ resource "aws_redshift_parameter_group" "main" {
 
   parameter {
     name  = "wlm_json_configuration"
-    # Configure workload management — separate queues for ETL and reporting
+    # Configure workload management - separate queues for ETL and reporting
     value = jsonencode([
       {
         name            = "ETL Queue"
@@ -140,11 +141,11 @@ resource "aws_redshift_cluster" "main" {
   # Parameter group
   cluster_parameter_group_name = aws_redshift_parameter_group.main.name
 
-  # Automated snapshots — keep for 7 days
+  # Automated snapshots - keep for 7 days
   automated_snapshot_retention_period = 7
   preferred_maintenance_window        = "sun:05:00-sun:06:00"
 
-  # Enable enhanced VPC routing — data stays in VPC
+  # Enable enhanced VPC routing - data stays in VPC
   enhanced_vpc_routing = true
 
   # Skip final snapshot for dev; change for production
@@ -169,7 +170,7 @@ resource "aws_kms_key" "redshift" {
 
 ## Best Practices
 
-- Use RA3 node types for new deployments — they separate compute from storage and enable cross-instance restore.
+- Use RA3 node types for new deployments - they separate compute from storage and enable cross-instance restore.
 - Enable `require_ssl=true` in the parameter group to prevent unencrypted connections.
 - Set up Workload Management (WLM) queues to separate ETL jobs from interactive reporting queries.
 - Enable `enhanced_vpc_routing` to keep COPY and UNLOAD operations within your VPC.

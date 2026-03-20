@@ -1,4 +1,4 @@
-# How to Replicate Workloads Across Clusters in Rancher
+# How to Replicate Workloads Across Multiple Clusters in Rancher
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,7 +14,7 @@ Replicating workloads across multiple clusters ensures high availability, geogra
 
 ## Architecture
 
-```
+```text
 ┌─────────────────────────────────────────────────────────┐
 │                    Rancher (Fleet Manager)               │
 │                                                         │
@@ -32,6 +32,7 @@ Replicating workloads across multiple clusters ensures high availability, geogra
 
 ```yaml
 # gitrepo-multi-cluster.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -130,7 +131,7 @@ kubectl describe gitrepo my-app -n fleet-default
 
 The output shows per-cluster readiness:
 
-```
+```text
 Status:
   Summary:
     Ready: 2
@@ -147,7 +148,7 @@ Status:
 
 For configurations that differ significantly between clusters, use Kustomize overlays:
 
-```
+```text
 manifests/
 ├── base/
 │   ├── deployment.yaml
@@ -199,6 +200,6 @@ kubectl get events -n fleet-default \
 
 ## Best Practices
 
-- Use cluster labels (`region`, `env`, `tier`) rather than hardcoded cluster names in `fleet.yaml` targets — this makes it easy to add new clusters without modifying manifests.
+- Use cluster labels (`region`, `env`, `tier`) rather than hardcoded cluster names in `fleet.yaml` targets - this makes it easy to add new clusters without modifying manifests.
 - Keep base manifests generic and use `targetCustomizations` only for environment-specific differences like replica counts and resource limits.
-- Enable drift detection by leaving Fleet's default reconciliation enabled — it will automatically revert manual changes that bypass GitOps.
+- Enable drift detection by leaving Fleet's default reconciliation enabled - it will automatically revert manual changes that bypass GitOps.

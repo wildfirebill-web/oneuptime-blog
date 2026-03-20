@@ -23,6 +23,7 @@ Install build dependencies required to compile Python:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install dependencies for building Python from source

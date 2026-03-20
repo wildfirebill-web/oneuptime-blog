@@ -25,6 +25,7 @@ This guide covers the recommended approach: installing Calico as a network polic
 
 ```bash
 # Create EKS cluster using eksctl
+
 eksctl create cluster \
   --name my-eks-cluster \
   --region us-east-1 \

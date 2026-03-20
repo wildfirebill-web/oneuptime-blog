@@ -1,8 +1,8 @@
-# How to Write Your First Test with tofu test
+# How to Write Your First Test with tofu test - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, tofu test, Infrastructure as Code, Unit Testing
+Tags: OpenTofu, Testing, Tofu test, Infrastructure as Code, Unit Testing
 
 Description: A step-by-step guide to writing and running your first infrastructure test using the built-in `tofu test` command in OpenTofu.
 
@@ -17,10 +17,11 @@ OpenTofu ships with a native testing framework that lets you validate your modul
 
 ## Your First Module
 
-Start with a simple module that creates a local file—no cloud credentials required.
+Start with a simple module that creates a local file-no cloud credentials required.
 
 ```hcl
 # modules/greeter/main.tf
+
 variable "name" {
   type        = string
   description = "Name to greet"
@@ -78,7 +79,7 @@ tofu test -verbose
 
 Expected output:
 
-```
+```text
 greeter.tftest.hcl... pass
   run "greets_with_name"... pass
   run "greets_with_different_name"... pass
@@ -115,4 +116,4 @@ flowchart TD
 
 ## Conclusion
 
-The `tofu test` command makes infrastructure testing approachable. With a test file in place, you can run `tofu test` in CI to catch regressions before every merge—giving you the same safety net that application developers take for granted.
+The `tofu test` command makes infrastructure testing approachable. With a test file in place, you can run `tofu test` in CI to catch regressions before every merge-giving you the same safety net that application developers take for granted.

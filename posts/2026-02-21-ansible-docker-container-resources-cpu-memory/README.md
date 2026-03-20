@@ -43,6 +43,7 @@ The `docker_container` module accepts `memory` and `memory_reservation` paramete
 
 ```yaml
 # memory_limits.yml - Set memory limits on containers
+
 ---
 - name: Deploy Containers with Memory Limits
   hosts: docker_hosts
@@ -319,7 +320,7 @@ In Docker Swarm, resources are specified differently using `limits` and `reserva
 
 Swarm uses reservations for scheduling. If a node does not have enough unreserved resources, the service will not schedule there. Limits are still hard ceilings that cgroups enforce.
 
-## Resource Limit Sizing Guidelines
+Resource Limit Sizing Guidelines
 
 Getting resource limits right takes some iteration. Here are starting points for common services:
 

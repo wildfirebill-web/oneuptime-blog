@@ -8,7 +8,7 @@ Description: Learn how to configure SNMPv3 with SHA authentication and AES encry
 
 ## Why SNMPv3?
 
-SNMPv2c transmits community strings and data in cleartext—anyone who can capture network traffic can read your community strings and poll your devices. SNMPv3 adds:
+SNMPv2c transmits community strings and data in cleartext-anyone who can capture network traffic can read your community strings and poll your devices. SNMPv3 adds:
 - **Authentication:** Verifies the sender's identity (MD5 or SHA)
 - **Privacy (Encryption):** Encrypts the SNMP message body (DES, 3DES, or AES)
 - **Message integrity:** Prevents replay attacks
@@ -27,7 +27,7 @@ Always use `authPriv` in production.
 
 Groups define the security level and MIB views:
 
-```
+```text
 ! Create a group named 'NetOpsGroup' with authPriv security level
 Router(config)# snmp-server group NetOpsGroup v3 priv
 
@@ -42,7 +42,7 @@ Router(config)# snmp-server group NetOpsRO v3 priv read iso write iso
 
 Restrict what a user can read:
 
-```
+```text
 ! Create a view that only allows reading interface and system MIBs
 Router(config)# snmp-server view MONITORING_VIEW interfaces included
 Router(config)# snmp-server view MONITORING_VIEW system included
@@ -56,7 +56,7 @@ Router(config)# snmp-server group NetOpsGroup v3 priv read MONITORING_VIEW
 
 Users belong to groups and have individual authentication and privacy settings:
 
-```
+```text
 ! Create user with SHA authentication and AES-128 encryption
 Router(config)# snmp-server user nmsuser NetOpsGroup v3 \
   auth sha AuthPass@2026! \
@@ -72,7 +72,7 @@ Password requirements: minimum 8 characters for auth, minimum 8 for priv.
 
 ## Step 4: Configure SNMPv3 Trap Destination
 
-```
+```text
 ! Send SNMPv3 traps to NMS using the user credentials
 Router(config)# snmp-server host 192.168.1.100 version 3 priv nmsuser
 
@@ -84,7 +84,7 @@ Router(config)# snmp-server enable traps bgp
 
 ## Step 5: Verify SNMPv3 Configuration
 
-```
+```text
 ! Show configured users
 Router# show snmp user
 
@@ -106,6 +106,7 @@ Use Net-SNMP tools to verify the SNMPv3 configuration:
 
 ```bash
 # Test SNMPv3 GET with authentication and privacy
+
 snmpget -v3 \
   -l authPriv \
   -u nmsuser \
@@ -128,7 +129,7 @@ snmpwalk -v3 \
 
 ## Step 7: Restrict SNMPv3 Access with ACL
 
-```
+```text
 ! Create ACL to allow only the NMS server
 Router(config)# ip access-list standard SNMP_NMS_ONLY
 Router(config-std-nacl)# permit 192.168.1.100
@@ -141,4 +142,4 @@ Router(config)# snmp-server group NetOpsGroup v3 priv \
 
 ## Conclusion
 
-SNMPv3 with `authPriv` provides production-grade security for network monitoring. Create a group with `priv` security level, assign users with SHA authentication and AES encryption, and restrict access with an ACL. Always use SNMPv3 for new deployments—SNMPv2c is acceptable only on isolated management networks where cleartext is not a concern.
+SNMPv3 with `authPriv` provides production-grade security for network monitoring. Create a group with `priv` security level, assign users with SHA authentication and AES encryption, and restrict access with an ACL. Always use SNMPv3 for new deployments-SNMPv2c is acceptable only on isolated management networks where cleartext is not a concern.

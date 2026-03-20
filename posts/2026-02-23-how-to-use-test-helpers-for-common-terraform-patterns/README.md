@@ -356,6 +356,7 @@ For Terraform's built-in tests, create helper modules that encapsulate common se
 
 ```hcl
 # tests/helpers/random-name/main.tf
+
 # Helper module that generates unique test names
 
 variable "prefix" {

@@ -36,6 +36,7 @@ First, configure registry credentials in ArgoCD:
 
 ```yaml
 # argocd-oci-registry-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

@@ -24,6 +24,7 @@ Common issues include policies not applying to host-networked pods, host-network
 
 ```yaml
 # Host-networked pod
+
 apiVersion: v1
 kind: Pod
 metadata:

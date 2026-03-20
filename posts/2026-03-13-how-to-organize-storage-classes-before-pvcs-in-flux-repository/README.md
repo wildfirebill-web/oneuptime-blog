@@ -45,6 +45,7 @@ Install the CSI drivers that provide the storage backend:
 
 ```yaml
 # clusters/production/infrastructure.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

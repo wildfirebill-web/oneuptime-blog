@@ -393,6 +393,7 @@ After implementing rate limiting, monitor its effectiveness to tune limits appro
 
 ```bash
 # Check rate limit metrics in NGINX
+
 kubectl exec -n ingress-nginx deployment/ingress-nginx-controller -- \
   curl -s localhost:10254/metrics | grep nginx_ingress_controller_requests
 

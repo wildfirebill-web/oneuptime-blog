@@ -30,6 +30,7 @@ Network Analyzer is enabled by default when you use Network Intelligence Center,
 
 ```bash
 # Enable the Network Management API for Network Analyzer
+
 gcloud services enable networkmanagement.googleapis.com --project=my-project
 ```
 

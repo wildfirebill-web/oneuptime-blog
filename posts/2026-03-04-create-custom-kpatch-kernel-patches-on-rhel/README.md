@@ -14,6 +14,7 @@ While Red Hat provides official kpatch modules for critical CVEs, you can also b
 
 ```bash
 # Install kpatch build tools and kernel development packages
+
 sudo dnf install -y kpatch kpatch-build
 
 # Install kernel source and build dependencies

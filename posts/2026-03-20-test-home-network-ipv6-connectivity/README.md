@@ -19,7 +19,7 @@ Good IPv6 testing covers all layers:
 
 Test from the router itself (or log into router admin):
 
-```
+```text
 Router admin panel → Status → WAN
 Check: IPv6 Address field shows 2xxx:xxxx:... (global address)
 Check: IPv6 Gateway or Default Route is populated
@@ -29,6 +29,7 @@ If the router has SSH access:
 
 ```bash
 # On OpenWRT: check WAN IPv6
+
 ip -6 addr show wan
 ip -6 route show default
 ```

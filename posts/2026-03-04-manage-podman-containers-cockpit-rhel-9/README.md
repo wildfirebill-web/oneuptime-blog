@@ -18,6 +18,7 @@ Install the required packages:
 
 ```bash
 # Install Podman if not already present
+
 sudo dnf install podman -y
 
 # Install the Cockpit Podman integration

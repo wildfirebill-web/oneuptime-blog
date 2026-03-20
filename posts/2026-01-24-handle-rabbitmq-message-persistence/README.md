@@ -55,6 +55,7 @@ All three must be configured for complete message persistence.
 
 ```bash
 # Create a durable direct exchange
+
 rabbitmqadmin declare exchange name=orders_exchange type=direct durable=true
 
 # Create a durable topic exchange

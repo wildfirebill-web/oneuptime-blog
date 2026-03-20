@@ -14,6 +14,7 @@ On RHEL, nmcli is the standard tool for creating network bridges through Network
 
 ```bash
 # Create the bridge master
+
 nmcli connection add \
     type bridge \
     con-name br0 \

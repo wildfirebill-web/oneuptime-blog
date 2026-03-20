@@ -19,6 +19,7 @@ import redis
 import time
 
 # BAD: Creating new connection for each operation
+
 def get_user_bad(user_id):
     # New connection created and destroyed each call
     r = redis.Redis(host='localhost', port=6379, db=0)

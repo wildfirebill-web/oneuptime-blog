@@ -38,6 +38,7 @@ The best maintenance window time depends on your specific situation. Consider th
 
 ```bash
 # Check your cluster's resource usage patterns to find low-traffic periods
+
 # Run this over a week to identify patterns
 kubectl top pods --all-namespaces --sort-by=cpu
 ```

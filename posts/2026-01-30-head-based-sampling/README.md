@@ -227,6 +227,7 @@ sdk.start();
 
 ```python
 # probability_sampler.py
+
 from opentelemetry.sdk.trace.sampling import Sampler, Decision, SamplingResult
 from opentelemetry.trace import SpanKind, Link
 from opentelemetry.context import Context

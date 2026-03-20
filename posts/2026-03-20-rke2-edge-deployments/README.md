@@ -24,6 +24,7 @@ Configure RKE2 to use the minimum required resources on resource-constrained edg
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 token: "EdgeClusterToken"
 
 # Disable components not needed at the edge to save resources

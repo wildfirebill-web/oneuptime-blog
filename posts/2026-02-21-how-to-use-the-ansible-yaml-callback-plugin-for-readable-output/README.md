@@ -26,6 +26,7 @@ Everything is on one line. Good luck finding a specific value in there.
 
 ```ini
 # ansible.cfg
+
 [defaults]
 stdout_callback = yaml
 ```

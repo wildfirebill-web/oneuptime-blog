@@ -20,6 +20,7 @@ A platform is defined by the operating system and CPU architecture, formatted as
 
 ```bash
 # Common platforms
+
 # linux/amd64    - Standard x86_64 servers and desktops
 # linux/arm64    - ARM 64-bit (AWS Graviton, Apple Silicon in Linux VMs)
 # linux/arm/v7   - ARM 32-bit (Raspberry Pi)

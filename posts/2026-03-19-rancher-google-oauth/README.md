@@ -94,6 +94,7 @@ Enable the necessary Google APIs:
 
 ```bash
 # Using gcloud CLI
+
 gcloud services enable admin.googleapis.com --project=rancher-auth
 gcloud services enable people.googleapis.com --project=rancher-auth
 ```
@@ -115,6 +116,7 @@ To support group-based access, create a service account:
 Service Account Name: rancher-group-lookup
 Service Account ID: rancher-group-lookup
 Description: Service account for Rancher to lookup Google Workspace groups
+
 ```
 
 3. Click **Create and Continue**.

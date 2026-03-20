@@ -28,6 +28,7 @@ You need a running GKE cluster and a Datadog account with an API key. Make sure 
 
 ```bash
 # Verify your kubectl context points to the right GKE cluster
+
 kubectl config current-context
 
 # Confirm you can reach the cluster

@@ -246,6 +246,7 @@ EOF
 kubectl wait --for=condition=ready pod/fortio-load -n partition-test --timeout=60s
 
 # Apply the partition
+
 kubectl apply -n partition-test -f reviews-partition.yaml
 
 # Run load test

@@ -8,7 +8,7 @@ Description: Learn how to restart Docker containers in Portainer, including grac
 
 ## Introduction
 
-Restarting a container is a common operation — needed after configuration changes, to recover from a hung state, or to apply log rotation. Portainer provides direct restart controls in the container list and details view. This guide covers when and how to restart containers, and the difference between restart, stop+start, and recreate.
+Restarting a container is a common operation - needed after configuration changes, to recover from a hung state, or to apply log rotation. Portainer provides direct restart controls in the container list and details view. This guide covers when and how to restart containers, and the difference between restart, stop+start, and recreate.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Restarting a container is a common operation — needed after configuration chan
 3. Sends `SIGKILL` if the process hasn't stopped.
 4. Starts the container again from the same configuration.
 
-The container retains all its settings (volumes, environment, ports) — it just restarts the process.
+The container retains all its settings (volumes, environment, ports) - it just restarts the process.
 
 ## Step 1: Restart a Single Container
 
@@ -40,6 +40,7 @@ The container retains all its settings (volumes, environment, ports) — it just
 
 ```bash
 # Equivalent Docker CLI:
+
 docker restart my-container
 
 # With custom timeout:
@@ -170,14 +171,14 @@ docker inspect my-container | jq '.[].State'
 # - StartedAt: last start time
 ```
 
-Portainer shows the restart count on the container details page — a high count indicates a recurring problem.
+Portainer shows the restart count on the container details page - a high count indicates a recurring problem.
 
 ## Best Practices
 
 - **Use health checks** to enable automatic recovery without manual intervention.
-- **Investigate before restarting in a loop** — a container that keeps restarting has a bug that needs fixing.
+- **Investigate before restarting in a loop** - a container that keeps restarting has a bug that needs fixing.
 - **Use `restart: unless-stopped`** for production services so they auto-recover.
-- **Restart before investigating memory issues** — a restart confirms whether the issue is a memory leak that's fixed by restart, or a deeper configuration problem.
+- **Restart before investigating memory issues** - a restart confirms whether the issue is a memory leak that's fixed by restart, or a deeper configuration problem.
 - **Schedule restarts during maintenance windows** for non-high-availability services that benefit from periodic restarts.
 
 ## Conclusion

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Operators, IPv6, Testing, envtest
+Tags: Kubernetes, Operator, IPv6, Testing, Envtest
 
 Description: Test Kubernetes operators against dual-stack and IPv6-only clusters using envtest, KIND, and integration testing frameworks.
 
@@ -100,6 +100,7 @@ func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Resu
 
 ```bash
 # Create a KIND cluster with dual-stack support
+
 cat > kind-dual-stack.yaml << EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4

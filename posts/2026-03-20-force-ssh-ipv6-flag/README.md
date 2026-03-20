@@ -12,6 +12,7 @@ The `-6` flag forces SSH to use IPv6 addresses only, ignoring IPv4 even if both 
 
 ```bash
 # Force IPv6 for SSH connection
+
 ssh -6 user@server.example.com
 
 # Equivalent using -o AddressFamily
@@ -57,7 +58,7 @@ rsync -av -e "ssh -6 -p 2222" /local/ user@server.example.com:/remote/
 
 ## Permanent IPv6 Default in ~/.ssh/config
 
-```
+```text
 # ~/.ssh/config
 
 # Force IPv6 for ALL connections

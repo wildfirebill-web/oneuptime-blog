@@ -357,6 +357,7 @@ Track the lag between event production and projection updates:
 
 ```text
 # Command handler request rate (events being produced)
+
 sum(rate(istio_requests_total{destination_service="order-commands.production.svc.cluster.local",response_code="201"}[5m]))
 
 # Query handler request rate (reads from projections)

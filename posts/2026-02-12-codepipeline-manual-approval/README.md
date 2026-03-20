@@ -30,6 +30,7 @@ First, set up an SNS topic so approvers get notified:
 
 ```bash
 # Create SNS topic for approval notifications
+
 aws sns create-topic \
   --name pipeline-approval-notifications
 

@@ -124,6 +124,7 @@ One of Helm's biggest advantages is how easy it is to customize installations. C
 
 ```yaml
 # istiod-values.yaml
+
 pilot:
   resources:
     requests:

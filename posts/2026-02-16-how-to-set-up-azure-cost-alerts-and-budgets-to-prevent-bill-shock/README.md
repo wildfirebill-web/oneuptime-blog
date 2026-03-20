@@ -29,6 +29,7 @@ A budget tracks your spending against a target amount and sends alerts when you 
 
 ```bash
 # Create a monthly budget of $5,000 at the subscription level
+
 az consumption budget create \
   --budget-name "Monthly-Production-Budget" \
   --amount 5000 \

@@ -42,6 +42,7 @@ Download and configure Zookeeper on your servers:
 
 ```bash
 # Download Zookeeper
+
 wget https://downloads.apache.org/zookeeper/zookeeper-3.9.1/apache-zookeeper-3.9.1-bin.tar.gz
 tar -xzf apache-zookeeper-3.9.1-bin.tar.gz
 sudo mv apache-zookeeper-3.9.1-bin /opt/zookeeper

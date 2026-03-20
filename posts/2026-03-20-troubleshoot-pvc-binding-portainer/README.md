@@ -1,4 +1,4 @@
-# How to Troubleshoot PVC Binding Issues in Portainer
+# How to Troubleshoot PVC Binding Issues in Portainer - Troubleshoot
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,55 +23,55 @@ A PersistentVolumeClaim (PVC) stuck in Pending state means Kubernetes cannot fin
 
 Go to **Kubernetes > Volumes** in Portainer. Pending PVCs show with no Bound PV.
 
-\`\`\`bash
+```bash
 kubectl get pvc -n production
 kubectl describe pvc my-pvc -n production
-\`\`\`
+```
 
 The describe output shows the binding failure reason in Events.
 
 ## Step 2: List Available StorageClasses
 
-\`\`\`bash
+```bash
 kubectl get storageclass
 
-# Example output:
-# NAME                    PROVISIONER         RECLAIMPOLICY
-# standard (default)      rancher.io/local    Delete
-# nfs-storage             nfs-provisioner     Retain
-\`\`\`
+Example output:
+NAME                    PROVISIONER         RECLAIMPOLICY
+standard (default)      rancher.io/local    Delete
+## nfs-storage             nfs-provisioner     Retain
+```
 
 Verify your PVC's \`storageClassName\` matches an available class.
 
 ## Step 3: Check PV Availability
 
-\`\`\`bash
-# List all PVs and their status
+```bash
+## List all PVs and their status
 kubectl get pv
 
-# A PV in Released state needs to be reclaimed before reuse
+## A PV in Released state needs to be reclaimed before reuse
 kubectl describe pv <pv-name>
-\`\`\`
+```
 
 ## Step 4: Fix a Released PV
 
 A PV in Released state has the old claim reference blocking reuse. Clear it:
 
-\`\`\`bash
+```bash
 kubectl patch pv <pv-name> -p '{"spec":{"claimRef": null}}'
-\`\`\`
+```
 
 ## Step 5: Dynamic Provisioning
 
 If your cluster has a dynamic provisioner (AWS EBS, GCE PD, local-path), PVCs should bind automatically. If they don't:
 
-\`\`\`bash
-# Check if the provisioner pod is running
+```bash
+## Check if the provisioner pod is running
 kubectl get pods -n kube-system | grep provisioner
 
-# Check provisioner logs
+## Check provisioner logs
 kubectl logs -n kube-system -l app=local-path-provisioner
-\`\`\`
+```
 
 ## Summary
 

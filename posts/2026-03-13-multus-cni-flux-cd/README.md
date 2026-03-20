@@ -25,6 +25,7 @@ Managing Multus and its NetworkAttachmentDefinitions through Flux CD ensures con
 
 ```yaml
 # clusters/production/infrastructure/multus.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

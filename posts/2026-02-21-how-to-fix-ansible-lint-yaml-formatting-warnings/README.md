@@ -18,6 +18,7 @@ This is the single most common warning. The default limit is 160 characters.
 
 ```yaml
 # This line is way too long and will trigger yaml[line-length]
+
 - name: Install a bunch of packages needed for the production web application server including monitoring and logging tools
   ansible.builtin.apt:
     name: "{{ item }}"

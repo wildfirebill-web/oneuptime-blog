@@ -24,6 +24,7 @@ Run KeyDB with a single command.
 
 ```bash
 # Start KeyDB (drop-in Redis replacement on port 6379)
+
 docker run -d \
   --name keydb \
   -p 6379:6379 \

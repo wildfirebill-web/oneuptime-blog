@@ -125,6 +125,7 @@ Use the Kafka admin client or command-line tools to check broker settings.
 
 ```bash
 # Check broker configuration
+
 kafka-configs.sh --bootstrap-server localhost:9092 \
     --entity-type brokers \
     --entity-default \

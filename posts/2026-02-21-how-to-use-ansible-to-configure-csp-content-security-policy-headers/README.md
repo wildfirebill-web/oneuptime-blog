@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, CSP, Content Security Policy, Web Security, NGINX
+Tags: Ansible, CSP, Content Security Policy, Web Security, Nginx
 
 Description: Deploy and manage Content Security Policy headers across your web servers using Ansible to protect against XSS, data injection, and other client-side attacks.
 
@@ -48,6 +48,7 @@ This playbook configures a basic CSP header on Nginx:
 
 ```yaml
 # nginx_csp.yml - Configure CSP on Nginx
+
 ---
 - name: Configure CSP headers on Nginx
   hosts: webservers

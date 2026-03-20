@@ -16,6 +16,7 @@ In this post, we will build a complete Express.js application that uses the Cosm
 
 ```bash
 # Initialize the project
+
 mkdir express-cosmos && cd express-cosmos
 npm init -y
 

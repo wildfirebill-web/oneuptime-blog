@@ -33,6 +33,7 @@ The Trivy Operator by Aqua Security is the most popular choice for in-cluster vu
 
 ```bash
 # Add the Aqua Security Helm repository
+
 helm repo add aqua https://aquasecurity.github.io/helm-charts/
 
 # Update the chart cache

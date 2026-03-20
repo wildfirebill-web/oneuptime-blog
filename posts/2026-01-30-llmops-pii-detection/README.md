@@ -74,6 +74,7 @@ Presidio is an open-source PII detection and anonymization framework. It uses a 
 
 ```bash
 # Install Presidio analyzer and anonymizer
+
 pip install presidio-analyzer presidio-anonymizer
 
 # Download the spaCy model for NER

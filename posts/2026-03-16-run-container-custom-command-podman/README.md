@@ -22,6 +22,7 @@ The simplest way to run a custom command is to append it after the image name:
 
 ```bash
 # Run a simple echo command inside an Alpine container
+
 podman run alpine echo "Hello from Podman"
 ```
 

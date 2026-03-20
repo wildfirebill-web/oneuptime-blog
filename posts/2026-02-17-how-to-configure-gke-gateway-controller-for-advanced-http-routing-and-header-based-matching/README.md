@@ -41,6 +41,7 @@ The Gateway API controller is available on GKE clusters running version 1.24 or 
 
 ```bash
 # Verify the GatewayClass resources are available
+
 kubectl get gatewayclass
 
 # You should see:

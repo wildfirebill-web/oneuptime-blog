@@ -27,6 +27,7 @@ ArgoCD supports three resource tracking methods, and each behaves differently wh
 
 ```yaml
 # argocd-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

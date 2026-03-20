@@ -42,6 +42,7 @@ Start with these simple commands for immediate improvement:
 
 ```bash
 # Run garbage collection to pack loose objects
+
 git gc
 
 # Aggressive garbage collection (slower but more thorough)

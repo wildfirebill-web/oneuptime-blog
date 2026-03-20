@@ -50,6 +50,7 @@ Consider a logging service that writes encrypted audit logs but should never be 
 
 ```bash
 # Grant encrypt-only permission on a specific key
+
 gcloud kms keys add-iam-policy-binding audit-log-key \
     --location=us-central1 \
     --keyring=production-keyring \

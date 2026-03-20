@@ -36,6 +36,7 @@ Internet Monitor analyzes traffic flowing through AWS services (CloudFront, Work
 
 ```bash
 # Create an Internet Monitor for your application
+
 aws internetmonitor create-monitor \
   --monitor-name "production-app" \
   --resources \

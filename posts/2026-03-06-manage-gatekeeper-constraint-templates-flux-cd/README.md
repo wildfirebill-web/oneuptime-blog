@@ -59,6 +59,7 @@ Prevent containers from running in privileged mode.
 
 ```yaml
 # infrastructure/gatekeeper/templates/security/disallow-privileged.yaml
+
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:

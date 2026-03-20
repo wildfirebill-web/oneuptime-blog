@@ -18,6 +18,7 @@ When you run `kubectl apply`, Kubernetes stores the entire manifest you applied 
 
 ```bash
 # Look at the annotation on a resource
+
 kubectl get deployment my-app -o jsonpath='{.metadata.annotations.kubectl\.kubernetes\.io/last-applied-configuration}' | jq '.'
 ```
 

@@ -27,6 +27,7 @@ Pyroscope stores the profiles and provides the query API used by Grafana for vis
 
 ```yaml
 # profiler-daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

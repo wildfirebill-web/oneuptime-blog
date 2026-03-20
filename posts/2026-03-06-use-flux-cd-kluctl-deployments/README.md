@@ -28,6 +28,7 @@ Before starting, ensure you have:
 
 ```bash
 # Install on macOS
+
 brew install kluctl/tap/kluctl
 
 # Install on Linux

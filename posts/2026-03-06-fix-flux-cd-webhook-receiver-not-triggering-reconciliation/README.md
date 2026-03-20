@@ -27,6 +27,7 @@ Start by verifying the Receiver resource is healthy.
 
 ```bash
 # List all receivers
+
 kubectl get receivers -A
 
 # Get detailed status

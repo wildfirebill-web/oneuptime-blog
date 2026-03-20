@@ -39,6 +39,7 @@ The critical prerequisite is that all currently allocated IPs must fit within on
 ```bash
 #!/bin/bash
 # pre-split-validate.sh
+
 # Validates that a Calico IPAM split is safe to execute
 # Usage: ./pre-split-validate.sh 10.0.0.0/16 10.0.0.0/17 10.0.128.0/17
 

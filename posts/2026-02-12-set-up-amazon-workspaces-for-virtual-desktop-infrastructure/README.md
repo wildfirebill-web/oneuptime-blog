@@ -47,6 +47,7 @@ WorkSpaces requires a directory for user authentication. You can use AWS Managed
 
 ```bash
 # Create an AWS Managed Microsoft AD directory
+
 aws ds create-microsoft-ad \
   --name "corp.yourcompany.com" \
   --short-name "CORP" \

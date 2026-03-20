@@ -108,6 +108,7 @@ Prevent HPA from consuming entire cluster resources.
 
 ```bash
 # Check node capacity
+
 kubectl get nodes -o json | jq '.items[] | {name: .metadata.name, cpu: .status.capacity.cpu, memory: .status.capacity.memory}'
 
 # Calculate maximum pods for your deployment

@@ -55,6 +55,7 @@ Most common for isolated, reproducible builds:
 
 ```toml
 # /etc/gitlab-runner/config.toml
+
 [[runners]]
   name = "docker-runner"
   url = "https://gitlab.com/"
@@ -195,7 +196,7 @@ gitlab-runner register \
   --run-untagged=false
 ```
 
-## Resource Management
+Resource Management
 
 ### Concurrent Jobs
 
@@ -223,7 +224,7 @@ quick_job:
     - npm test
 ```
 
-### Resource Requests (Kubernetes)
+Resource Requests (Kubernetes)
 
 ```toml
 [[runners]]

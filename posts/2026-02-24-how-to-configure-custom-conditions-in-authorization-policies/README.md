@@ -32,6 +32,7 @@ Here are the most useful keys you can use in `when` conditions:
 
 ```yaml
 # Request headers
+
 when:
   - key: request.headers[x-custom-header]
     values: ["expected-value"]

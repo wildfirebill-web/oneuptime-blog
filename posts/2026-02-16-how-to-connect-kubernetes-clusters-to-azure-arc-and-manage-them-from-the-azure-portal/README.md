@@ -47,6 +47,7 @@ Install the required Azure CLI extensions:
 
 ```bash
 # Install or update the connectedk8s extension
+
 az extension add --name connectedk8s --upgrade
 
 # Install the k8s-configuration extension for GitOps

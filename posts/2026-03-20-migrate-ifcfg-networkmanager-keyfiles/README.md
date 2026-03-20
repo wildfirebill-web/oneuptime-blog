@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NetworkManager, ifcfg, Keyfile, Migration, RHEL, Linux, Network Configuration
+Tags: NetworkManager, Ifcfg, Keyfile, Migration, RHEL, Linux, Network Configuration
 
 Description: Learn how to migrate legacy ifcfg-style network configuration files to the modern NetworkManager keyfile format on RHEL/CentOS, including validation and rollback procedures.
 
@@ -15,6 +15,7 @@ Red Hat moved from ifcfg files (`/etc/sysconfig/network-scripts/`) to NetworkMan
 **Legacy ifcfg format:**
 ```bash
 # /etc/sysconfig/network-scripts/ifcfg-eth0
+
 TYPE=Ethernet
 BOOTPROTO=none
 DEVICE=eth0
@@ -143,5 +144,5 @@ nmcli connection reload
 
 - RHEL 9+ uses keyfiles by default; use `nmcli connection migrate` to auto-convert ifcfg files.
 - Keyfiles use INI format and are stored in `/etc/NetworkManager/system-connections/`.
-- Set `chmod 600` on keyfiles — NM refuses to load world-readable connection files containing passwords.
+- Set `chmod 600` on keyfiles - NM refuses to load world-readable connection files containing passwords.
 - Keep the `ifcfg-rh` plugin in `NetworkManager.conf` during migration as a fallback until all files are converted.

@@ -22,6 +22,7 @@ The simplest way to install PostgreSQL is from Ubuntu's default repositories.
 
 ```bash
 # Update package index
+
 sudo apt update
 
 # Install PostgreSQL and contrib package

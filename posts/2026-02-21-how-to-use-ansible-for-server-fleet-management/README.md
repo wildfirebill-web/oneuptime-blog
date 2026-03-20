@@ -16,6 +16,7 @@ Static inventory files do not scale for large fleets. Use dynamic inventory plug
 
 ```yaml
 # inventories/aws_ec2.yml
+
 # Automatically discover all managed EC2 instances
 plugin: amazon.aws.aws_ec2
 regions:

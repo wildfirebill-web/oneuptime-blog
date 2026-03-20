@@ -482,6 +482,7 @@ Verify your configuration files:
 
 ```bash
 # Check main configuration
+
 sudo named-checkconf
 
 # Check zone files

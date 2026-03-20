@@ -14,6 +14,7 @@ Via the web UI: IPAM → IP Addresses → + Add
 
 ```bash
 # Create an IP address via the API
+
 curl -X POST \
   -H "Authorization: Token <TOKEN>" \
   -H "Content-Type: application/json" \

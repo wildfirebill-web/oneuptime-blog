@@ -32,6 +32,7 @@ The kernel driver runs on the host, while everything else can live inside the co
 
 ```bash
 # Verify your AMD GPU is detected and the amdgpu driver is loaded
+
 lspci -k | grep -A 3 -i "VGA.*AMD"
 # Should show "Kernel driver in use: amdgpu"
 

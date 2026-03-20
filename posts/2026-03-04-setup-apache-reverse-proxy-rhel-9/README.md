@@ -24,6 +24,7 @@ Apache needs the proxy modules loaded. On RHEL, they are included but may not be
 
 ```bash
 # Check if proxy modules are loaded
+
 httpd -M | grep proxy
 ```
 

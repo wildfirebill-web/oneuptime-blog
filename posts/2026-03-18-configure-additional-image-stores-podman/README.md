@@ -20,6 +20,7 @@ Additional image stores provide read-only access to shared images.
 
 ```bash
 # View the current storage configuration
+
 podman info --format '{{.Store.GraphRoot}}'
 
 # Additional image stores are read-only overlay stores

@@ -47,6 +47,7 @@ The standard way to set CPU limits:
 
 ```yaml
 # pod-with-cpu-limits.yaml
+
 # Container with CPU request and limit
 apiVersion: v1
 kind: Pod

@@ -22,6 +22,7 @@ Trace library calls:
 
 ```bash
 # Install ltrace
+
 sudo dnf install -y ltrace
 
 # Trace library calls for a command

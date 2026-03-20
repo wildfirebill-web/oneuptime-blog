@@ -36,6 +36,7 @@ Let us start by creating a new Go project and installing the required dependenci
 
 ```bash
 # Create a new directory for our project
+
 mkdir go-job-queue
 cd go-job-queue
 

@@ -26,6 +26,7 @@ Copy the speech key and region from the resource overview.
 
 ```bash
 # Install the Azure Speech SDK
+
 pip install azure-cognitiveservices-speech
 ```
 

@@ -82,6 +82,7 @@ Create the GSI with `needsAttention` as the partition key:
 
 ```bash
 # Create a sparse GSI
+
 aws dynamodb update-table \
   --table-name Orders \
   --attribute-definitions \

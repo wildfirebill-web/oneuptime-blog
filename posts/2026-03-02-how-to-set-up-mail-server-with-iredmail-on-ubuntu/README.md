@@ -26,6 +26,7 @@ These DNS records must be configured before installation:
 
 ```text
 # A record - server hostname resolves to your IP
+
 mail.example.com.  IN  A  203.0.113.1
 
 # MX record - email for example.com goes to mail.example.com

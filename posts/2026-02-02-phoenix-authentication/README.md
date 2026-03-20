@@ -51,6 +51,7 @@ Run the generator to scaffold user authentication with email and password.
 
 ```bash
 # Generate authentication context with User schema
+
 mix phx.gen.auth Accounts User users
 
 # Run the generated migrations

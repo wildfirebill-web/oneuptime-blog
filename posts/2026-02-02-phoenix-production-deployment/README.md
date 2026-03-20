@@ -72,6 +72,7 @@ First, verify your `mix.exs` has the release configuration. The default Phoenix 
 
 ```elixir
 # mix.exs
+
 defmodule MyApp.MixProject do
   use Mix.Project
 

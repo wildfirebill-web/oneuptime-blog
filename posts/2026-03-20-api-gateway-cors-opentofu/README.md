@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, API Gateway, CORS, Cross-Origin, Web APIs, Infrastructure as Code
+Tags: OpenTofu, AWS, API Gateway, CORS, Cross-Origin, Web API, Infrastructure as Code
 
 Description: Learn how to configure CORS (Cross-Origin Resource Sharing) on API Gateway with OpenTofu for both REST API and HTTP API to allow browser-based applications to make cross-origin requests.
 
@@ -38,6 +38,7 @@ resource "aws_apigatewayv2_api" "main" {
 
 ```hcl
 # CORS OPTIONS method on a resource
+
 resource "aws_api_gateway_method" "options" {
   rest_api_id   = aws_api_gateway_rest_api.main.id
   resource_id   = aws_api_gateway_resource.resource.id
@@ -108,4 +109,4 @@ curl -X OPTIONS https://<api-id>.execute-api.<region>.amazonaws.com/prod/resourc
 
 ## Conclusion
 
-Use HTTP API (v2) with built-in `cors_configuration` whenever possible—it handles OPTIONS preflight automatically and is far simpler than manually configuring OPTIONS methods for each REST API resource. Never use `allow_origins = ["*"]` in production with `allow_credentials = true`—this combination is rejected by browsers. For REST API, ensure CORS headers are included in both the method response (declaring they exist) and the integration response (setting their values); forgetting either causes CORS failures.
+Use HTTP API (v2) with built-in `cors_configuration` whenever possible-it handles OPTIONS preflight automatically and is far simpler than manually configuring OPTIONS methods for each REST API resource. Never use `allow_origins = ["*"]` in production with `allow_credentials = true`-this combination is rejected by browsers. For REST API, ensure CORS headers are included in both the method response (declaring they exist) and the integration response (setting their values); forgetting either causes CORS failures.

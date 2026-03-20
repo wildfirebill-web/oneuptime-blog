@@ -32,6 +32,7 @@ rsyslog is the default syslog daemon on most Linux distributions. It handles hig
 
 ```bash
 # Start an rsyslog server that accepts logs on UDP and TCP port 514
+
 docker run -d \
   --name syslog-server \
   -p 514:514/udp \

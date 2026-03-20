@@ -1,4 +1,4 @@
-# How to Configure Longhorn Toleration Settings
+# How to Configure Longhorn Toleration Settings - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ A common pattern is to add a `dedicated=storage:NoSchedule` taint to specific no
 
 ```bash
 # Taint nodes reserved for Longhorn storage
+
 kubectl taint node storage-node-01 dedicated=storage:NoSchedule
 kubectl taint node storage-node-02 dedicated=storage:NoSchedule
 kubectl taint node storage-node-03 dedicated=storage:NoSchedule
@@ -91,7 +92,7 @@ kubectl patch setting.longhorn.io system-managed-components-node-selector \
 
 ## Step 5: Test Toleration Is Working
 
-Deploy a test pod without the toleration — it should not be scheduled on tainted nodes:
+Deploy a test pod without the toleration - it should not be scheduled on tainted nodes:
 
 ```bash
 # This pod should not be scheduled on tainted storage nodes
@@ -107,4 +108,4 @@ kubectl get pod no-toleration-pod -o jsonpath='{.spec.nodeName}'
 
 - Use `NoSchedule` taints (not `NoExecute`) for storage-only nodes unless you want to forcibly evict existing pods.
 - After adding tolerations, verify that Longhorn replicas are being placed on the storage-only nodes as intended.
-- Document your taint and toleration scheme — it is easy to accidentally add new nodes that are not tainted, leading to uneven storage distribution.
+- Document your taint and toleration scheme - it is easy to accidentally add new nodes that are not tainted, leading to uneven storage distribution.

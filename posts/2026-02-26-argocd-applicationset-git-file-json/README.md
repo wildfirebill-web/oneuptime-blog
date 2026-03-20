@@ -190,6 +190,7 @@ Note that arrays are tricky with the default template syntax. With Go templates,
 
 ```yaml
 # Access first element
+
 name: '{{index .environments 0}}'
 ```
 

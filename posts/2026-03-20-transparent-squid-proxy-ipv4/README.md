@@ -12,7 +12,7 @@ A transparent proxy intercepts HTTP traffic without clients needing to configure
 
 ## Architecture
 
-```
+```text
 Client (10.0.1.x)
     ↓ HTTP request to 0.0.0.0:80
 Linux Router/Gateway (10.0.1.1)
@@ -24,10 +24,11 @@ Destination Web Server
 
 ## Step 1: Configure Squid for Transparent Interception
 
-```
+```text
 # /etc/squid/squid.conf
 
 # Standard proxy port
+
 http_port 3128
 
 # Transparent interception port
@@ -99,7 +100,7 @@ sudo systemctl enable squid
 From a client on the 10.0.1.0/24 subnet (with default gateway pointing to 10.0.1.1):
 
 ```bash
-# No proxy settings configured — traffic goes through gateway
+# No proxy settings configured - traffic goes through gateway
 curl http://example.com
 
 # Check Squid access log on the gateway

@@ -22,6 +22,7 @@ Start with a simple static website deployment:
 
 ```yaml
 # iis-static-site.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

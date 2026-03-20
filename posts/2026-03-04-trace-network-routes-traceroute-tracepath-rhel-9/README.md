@@ -26,6 +26,7 @@ tracepath is included in RHEL by default. traceroute needs to be installed.
 
 ```bash
 # Install traceroute
+
 sudo dnf install -y traceroute
 ```
 

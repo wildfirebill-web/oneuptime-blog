@@ -27,6 +27,7 @@ Here is a Dockerfile for an Ubuntu 22.04 image with systemd support, which is pr
 
 ```dockerfile
 # Dockerfile.ubuntu2204 - Ubuntu 22.04 with systemd for Molecule
+
 FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive

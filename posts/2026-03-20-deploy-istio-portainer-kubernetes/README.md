@@ -25,7 +25,7 @@ Navigate to your Kubernetes environment in Portainer:
 2. Click **Add Repository**
 3. Enter the repository details:
 
-```
+```text
 Name: istio
 URL: https://istio-release.storage.googleapis.com/charts
 ```
@@ -36,6 +36,7 @@ Before installing Istio, create dedicated namespaces:
 
 ```yaml
 # istio-namespaces.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -237,4 +238,4 @@ These can be applied via Portainer's **Kubernetes** > **Manifests** section.
 
 ## Conclusion
 
-Deploying Istio via Portainer provides a streamlined experience for managing your service mesh infrastructure. The combination of Portainer's visual interface with Istio's powerful service mesh capabilities gives platform teams the ability to manage traffic, enforce security policies, and gain observability across their microservices — all through a unified control plane. By using Portainer's Helm integration and stack management, you can version-control and standardize Istio deployments across multiple Kubernetes clusters.
+Deploying Istio via Portainer provides a streamlined experience for managing your service mesh infrastructure. The combination of Portainer's visual interface with Istio's powerful service mesh capabilities gives platform teams the ability to manage traffic, enforce security policies, and gain observability across their microservices - all through a unified control plane. By using Portainer's Helm integration and stack management, you can version-control and standardize Istio deployments across multiple Kubernetes clusters.

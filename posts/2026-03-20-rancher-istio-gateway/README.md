@@ -27,6 +27,7 @@ The Istio Gateway works differently from a Kubernetes Ingress:
 
 ```bash
 # Get the external IP assigned to the ingress gateway
+
 kubectl get svc istio-ingressgateway -n istio-system
 
 # Store the IP for use in DNS configuration

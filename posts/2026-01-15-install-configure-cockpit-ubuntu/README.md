@@ -20,6 +20,7 @@ Cockpit is a web-based server management tool that provides a graphical interfac
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install Cockpit

@@ -16,6 +16,7 @@ You need a control node with Ansible installed and SSH access to your RHEL targe
 
 ```bash
 # Install Ansible on your control node
+
 dnf install -y ansible-core
 
 # On each target, install the SCAP Security Guide

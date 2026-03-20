@@ -26,6 +26,7 @@ Install the required collection and Python dependencies first.
 
 ```bash
 # Install the VMware community collection
+
 ansible-galaxy collection install community.vmware
 
 # Install required Python libraries

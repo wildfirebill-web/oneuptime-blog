@@ -330,6 +330,7 @@ Then you can create Istio-aware alerts based on health check failures:
 
 ```yaml
 # Prometheus alert rule
+
 groups:
 - name: spring-boot-health
   rules:

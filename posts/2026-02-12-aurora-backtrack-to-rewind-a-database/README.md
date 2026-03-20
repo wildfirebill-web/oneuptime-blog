@@ -36,6 +36,7 @@ To enable backtrack on a new cluster:
 
 ```bash
 # Create a new Aurora cluster with backtrack enabled (72-hour window)
+
 aws rds create-db-cluster \
   --db-cluster-identifier my-backtrack-cluster \
   --engine aurora-mysql \

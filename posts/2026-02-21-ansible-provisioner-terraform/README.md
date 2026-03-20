@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Terraform, Provisioner, DevOps, Automation
+Tags: Ansible, Terraform, Provisioners, DevOps, Automation
 
 Description: Use Terraform's local-exec provisioner to run Ansible playbooks automatically after infrastructure is created for seamless provisioning.
 
@@ -14,6 +14,7 @@ Terraform has a built-in mechanism to trigger external tools after resource crea
 
 ```hcl
 # main.tf - Run Ansible after VM creation
+
 resource "aws_instance" "web" {
   ami           = var.ami_id
   instance_type = "t3.medium"

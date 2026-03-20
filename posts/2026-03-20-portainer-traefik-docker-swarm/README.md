@@ -20,6 +20,7 @@ Docker Swarm with Traefik and Portainer creates a robust, scalable infrastructur
 
 ```bash
 # Initialize Swarm on manager node
+
 docker swarm init --advertise-addr 192.168.1.100
 
 # Note the join token for worker nodes

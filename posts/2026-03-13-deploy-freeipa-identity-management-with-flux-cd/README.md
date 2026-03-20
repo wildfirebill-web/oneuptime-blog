@@ -27,6 +27,7 @@ This guide deploys a standalone FreeIPA server using Kubernetes manifests manage
 
 ```yaml
 # clusters/my-cluster/freeipa/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

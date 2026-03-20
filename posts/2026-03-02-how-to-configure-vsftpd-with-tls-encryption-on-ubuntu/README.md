@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, FTP, Vsftpd, TLS, Security
+Tags: Ubuntu, FTP, vsftpd, TLS, Security
 
 Description: Secure vsftpd on Ubuntu with TLS encryption to protect FTP credentials and file transfers in transit, using self-signed or Let's Encrypt certificates.
 
@@ -25,6 +25,7 @@ vsftpd must be installed and working:
 
 ```bash
 # Verify vsftpd is installed
+
 sudo systemctl status vsftpd
 
 # Install if needed

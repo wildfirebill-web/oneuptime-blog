@@ -30,6 +30,7 @@ Let's start with a simple NACL that allows HTTP, HTTPS, and SSH traffic. First, 
 
 ```hcl
 # Define the AWS provider
+
 provider "aws" {
   region = "us-east-1"
 }

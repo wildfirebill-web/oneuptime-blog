@@ -94,6 +94,7 @@ Flux manages the installation and configuration of ArgoCD itself:
 
 ```yaml
 # infrastructure/argocd/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

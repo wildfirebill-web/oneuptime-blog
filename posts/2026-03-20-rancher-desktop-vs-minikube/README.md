@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher-desktop, minikube, kubernetes, local-development, comparison
+Tags: Rancher-desktop, Minikube, Kubernetes, Local-development, Comparison
 
 Description: A detailed comparison of Rancher Desktop and Minikube for running Kubernetes locally, covering features, performance, and developer experience.
 
@@ -41,12 +41,13 @@ Rancher Desktop is a desktop application (macOS, Windows, Linux) that provides b
 
 ### Rancher Desktop
 
-Download and install from https://rancherdesktop.io — no command-line setup required. The GUI handles everything.
+Download and install from https://rancherdesktop.io - no command-line setup required. The GUI handles everything.
 
 ### Minikube
 
 ```bash
 # Install minikube
+
 brew install minikube   # macOS
 
 # Start a cluster
@@ -101,7 +102,7 @@ minikube addons enable istio
 
 Rancher Desktop does not have an equivalent add-on system, but it integrates with Helm for deploying additional components.
 
-## Resource Requirements
+Resource Requirements
 
 | Aspect | Rancher Desktop | Minikube |
 |---|---|---|

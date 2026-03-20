@@ -8,7 +8,7 @@ Description: Learn how to use K3s's built-in auto-deploying manifests directory 
 
 ## Introduction
 
-K3s includes a powerful built-in feature called **auto-deploying manifests**: any YAML files placed in `/var/lib/rancher/k3s/server/manifests/` are automatically applied when K3s starts. This provides a simple form of GitOps for bootstrapping cluster infrastructure — no Helm, ArgoCD, or Flux required for basic use cases. This guide explains how to leverage this feature effectively.
+K3s includes a powerful built-in feature called **auto-deploying manifests**: any YAML files placed in `/var/lib/rancher/k3s/server/manifests/` are automatically applied when K3s starts. This provides a simple form of GitOps for bootstrapping cluster infrastructure - no Helm, ArgoCD, or Flux required for basic use cases. This guide explains how to leverage this feature effectively.
 
 ## How Auto-Deploy Works
 
@@ -25,6 +25,7 @@ K3s ships with several built-in manifests:
 
 ```bash
 # View the default K3s manifests
+
 ls /var/lib/rancher/k3s/server/manifests/
 
 # Common defaults:

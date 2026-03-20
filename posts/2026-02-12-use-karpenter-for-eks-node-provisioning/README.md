@@ -37,6 +37,7 @@ Start by defining some variables we'll use throughout the setup:
 
 ```bash
 # Set environment variables for Karpenter installation
+
 export KARPENTER_NAMESPACE="kube-system"
 export KARPENTER_VERSION="0.35.0"
 export CLUSTER_NAME="my-cluster"

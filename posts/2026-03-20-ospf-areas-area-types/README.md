@@ -24,6 +24,7 @@ OSPF divides networks into areas to limit the scope of Link State Advertisement 
 
 ```bash
 # /etc/frr/frr.conf - backbone router
+
 router ospf
   router-id 1.1.1.1
   network 192.168.0.0/24 area 0
@@ -57,7 +58,7 @@ router ospf
 
 ## Configuring a Totally Stubby Area
 
-Even more restrictive — blocks both Type 3 summary LSAs and Type 5 external LSAs:
+Even more restrictive - blocks both Type 3 summary LSAs and Type 5 external LSAs:
 
 ```bash
 # On the ABR only (internal routers use regular stub config)

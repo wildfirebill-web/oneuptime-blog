@@ -687,6 +687,7 @@ Configure OpenTelemetry through environment variables for different deployment s
 
 ```bash
 # .env.production
+
 # OpenTelemetry configuration for Fastify production deployment
 
 # OTLP exporter settings

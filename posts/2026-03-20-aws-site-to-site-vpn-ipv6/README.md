@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, Site-to-Site VPN, IPv6, IPsec, On-Premises, Dual-Stack, BGP
+Tags: AWS, Site-to-Site VPN, IPv6, IPsec, On-Premise, Dual-Stack, BGP
 
 Description: Configure AWS Site-to-Site VPN for IPv6 traffic between your on-premises network and AWS VPC using dual-stack VPN tunnels.
 
@@ -20,6 +20,7 @@ AWS Site-to-Site VPN IPv6 enables private IPv6 connectivity between cloud resour
 
 ```bash
 # Check VPC has IPv6 CIDR
+
 aws ec2 describe-vpcs --query 'Vpcs[].{VpcId:VpcId, IPv6CIDRs:Ipv6CidrBlockAssociationSet}'
 ```
 

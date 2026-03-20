@@ -31,6 +31,7 @@ flowchart TD
 
 ```bash
 # Check if border router received a prefix delegation from upstream
+
 ip -6 addr show eth0   # Upstream interface
 # Should show a global unicast address
 

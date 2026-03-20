@@ -28,6 +28,7 @@ Before creating the sink, you need a dataset to store the logs:
 
 ```bash
 # Create a BigQuery dataset for logs in the US multi-region
+
 bq mk --dataset \
   --location=US \
   --description="Exported Cloud Logging data" \

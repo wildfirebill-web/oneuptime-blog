@@ -49,6 +49,7 @@ transport="UDP"
 port="9929"
 
 # Site 1 cluster
+
 site="192.168.1.100"
 
 # Site 2 cluster

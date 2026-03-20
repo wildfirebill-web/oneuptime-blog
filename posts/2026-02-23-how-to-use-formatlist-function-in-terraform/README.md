@@ -16,6 +16,7 @@ The `formatlist` function works like `format`, but it operates on lists instead 
 
 ```hcl
 # Basic syntax
+
 formatlist(spec, values...)
 ```
 

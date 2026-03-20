@@ -52,6 +52,7 @@ Captures usage information:
 
 ```bash
 # Data Classification template
+
 gcloud data-catalog tag-templates create data_classification \
   --location=us-central1 \
   --display-name="Data Classification" \

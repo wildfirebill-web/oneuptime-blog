@@ -40,6 +40,7 @@ IoT Core is the MQTT broker that devices connect to. Each device needs a certifi
 
 ```bash
 # Create an IoT Thing (device representation)
+
 aws iot create-thing --thing-name "sensor-001"
 
 # Create a certificate for the device

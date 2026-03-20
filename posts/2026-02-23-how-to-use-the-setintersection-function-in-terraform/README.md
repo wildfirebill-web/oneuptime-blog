@@ -18,6 +18,7 @@ The `setintersection` function takes two or more sets and returns a new set cont
 
 ```hcl
 # Returns elements common to all input sets
+
 setintersection(set1, set2, ...)
 ```
 

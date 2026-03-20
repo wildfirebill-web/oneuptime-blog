@@ -28,6 +28,7 @@ Start by checking the current state of your ArgoCD pods:
 
 ```bash
 # Check repo server disk usage
+
 kubectl exec -n argocd deploy/argocd-repo-server -- df -h /tmp
 kubectl exec -n argocd deploy/argocd-repo-server -- du -sh /tmp/_argocd-repo
 

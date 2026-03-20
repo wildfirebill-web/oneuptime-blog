@@ -48,6 +48,7 @@ Here is how to configure it via the deployment manifest:
 
 ```yaml
 # argocd-server-deployment-patch.yaml
+
 # Patch to enable gRPC-Web on the ArgoCD API server
 apiVersion: apps/v1
 kind: Deployment

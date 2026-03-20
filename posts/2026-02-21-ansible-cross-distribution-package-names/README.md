@@ -16,6 +16,7 @@ Consider this simple task:
 
 ```yaml
 # This only works on RHEL-family
+
 - name: Install web server
   ansible.builtin.package:
     name: httpd

@@ -24,6 +24,7 @@ First, set up the necessary accounts and variable sets.
 
 ```hcl
 # octopus-setup.tf
+
 # Manage Octopus Deploy configuration with Terraform
 terraform {
   required_providers {

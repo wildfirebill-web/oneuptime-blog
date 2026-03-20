@@ -69,6 +69,7 @@ resource "aws_cloudwatch_log_group" "groups" {
 }
 
 # S3 bucket for log archival
+
 resource "aws_s3_bucket" "logs" {
   count  = var.enable_s3_export ? 1 : 0
   bucket = "${var.service_name}-${var.environment}-logs-${data.aws_caller_identity.current.account_id}"

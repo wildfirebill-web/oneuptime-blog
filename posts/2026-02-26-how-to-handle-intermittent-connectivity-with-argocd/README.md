@@ -45,6 +45,7 @@ The first thing to adjust is how often ArgoCD checks each application. For edge 
 
 ```yaml
 # argocd-cm ConfigMap - increase reconciliation timeout
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -202,7 +203,7 @@ spec:
             summary: "Edge cluster {{ $labels.name }} down for 8+ hours"
 ```
 
-## Resource Caching for Offline Resilience
+Resource Caching for Offline Resilience
 
 ArgoCD caches cluster state in Redis. When a connection drops, the cached state is still available, which means the UI still shows the last-known state rather than immediately showing everything as unknown.
 

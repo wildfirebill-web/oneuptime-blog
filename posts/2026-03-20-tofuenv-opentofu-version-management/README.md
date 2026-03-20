@@ -1,4 +1,4 @@
-# How to Install and Use tofuenv for OpenTofu Version Management
+# How to Install and Use tofuenv for OpenTofu Version Management (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to install and use tofuenv to manage multiple OpenTofu ve
 
 ---
 
-tofuenv is the OpenTofu equivalent of rbenv or nvm — it lets you install multiple OpenTofu versions side by side and switch between them with a single command. It's essential for teams that maintain infrastructure across projects requiring different OpenTofu versions.
+tofuenv is the OpenTofu equivalent of rbenv or nvm - it lets you install multiple OpenTofu versions side by side and switch between them with a single command. It's essential for teams that maintain infrastructure across projects requiring different OpenTofu versions.
 
 ---
 
@@ -16,6 +16,7 @@ tofuenv is the OpenTofu equivalent of rbenv or nvm — it lets you install multi
 
 ```bash
 # Clone tofuenv from GitHub
+
 git clone --depth=1 https://github.com/tofuutils/tofuenv.git ~/.tofuenv
 
 # Add tofuenv to your PATH

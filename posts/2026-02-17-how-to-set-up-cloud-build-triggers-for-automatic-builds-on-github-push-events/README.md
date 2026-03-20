@@ -40,8 +40,10 @@ With the repository connected, click "Create Trigger" on the Triggers page. Here
 
 ```yaml
 # Trigger configuration
+
 Name: build-on-push-to-main
 Description: Builds and pushes Docker image when code is pushed to main
+
 Event: Push to a branch
 ```
 

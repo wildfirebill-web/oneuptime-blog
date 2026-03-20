@@ -60,6 +60,7 @@ Even if the waypoint is running, traffic might not be routed through it. Check t
 
 ```bash
 # Check namespace label
+
 kubectl get namespace bookinfo -L istio.io/use-waypoint
 
 # Check service-level waypoint

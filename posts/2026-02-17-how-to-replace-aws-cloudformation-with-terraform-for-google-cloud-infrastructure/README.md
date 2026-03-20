@@ -73,6 +73,7 @@ Set up the backend for state management:
 
 ```hcl
 # backend.tf
+
 # Remote state storage in GCS (equivalent to S3 backend for CF state)
 
 terraform {

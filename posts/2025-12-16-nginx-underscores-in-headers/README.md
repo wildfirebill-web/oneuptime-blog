@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, HTTP Headers, Configuration, API, Troubleshooting
+Tags: Nginx, HTTP Headers, Configuration, API, Troubleshooting
 
 Description: Learn how to configure Nginx to accept HTTP headers with underscores in their names using the underscores_in_headers directive, including use cases, security considerations, and best practices.
 
@@ -25,6 +25,7 @@ graph LR
 
 ```bash
 # This header gets silently dropped
+
 curl -H "X_Custom_Header: test" http://example.com/api
 
 # Backend receives nothing for X_Custom_Header

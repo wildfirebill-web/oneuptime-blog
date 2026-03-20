@@ -24,6 +24,7 @@ Before deploying, check the current and historical spot prices:
 
 ```bash
 # Check the current spot price for a specific VM size and region
+
 az rest --method post \
   --uri "https://management.azure.com/subscriptions/{sub-id}/providers/Microsoft.Compute/locations/eastus/spotPriceHistory?api-version=2024-07-01" \
   --body '{"vmSizes": ["Standard_D4s_v5"]}'

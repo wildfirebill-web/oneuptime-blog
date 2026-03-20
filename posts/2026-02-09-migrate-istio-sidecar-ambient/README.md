@@ -41,6 +41,7 @@ Install ambient components without disrupting existing sidecar deployments:
 
 ```yaml
 # istio-ambient-install.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

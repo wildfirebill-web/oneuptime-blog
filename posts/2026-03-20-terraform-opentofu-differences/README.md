@@ -20,6 +20,7 @@ Learn the key technical differences between Terraform and OpenTofu including fea
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

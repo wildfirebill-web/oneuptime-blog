@@ -59,6 +59,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("payment-service")
 
 # Counter: records each payment as it happens
+
 payments_processed = meter.create_counter(
     name="payments.processed",
     description="Number of payments processed",

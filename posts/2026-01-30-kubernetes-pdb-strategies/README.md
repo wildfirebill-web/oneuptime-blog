@@ -218,6 +218,7 @@ Always verify your selectors match the intended pods:
 
 ```bash
 # Check which pods match a label selector
+
 kubectl get pods -l app=web-app -n production
 
 # Verify PDB status shows correct pod count

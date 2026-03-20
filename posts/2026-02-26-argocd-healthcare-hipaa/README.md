@@ -45,6 +45,7 @@ Configure ArgoCD with SSO so every user has a unique, traceable identity.
 
 ```yaml
 # argocd-cm ConfigMap - OIDC SSO Configuration
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

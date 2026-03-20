@@ -51,6 +51,7 @@ Blue-green mirroring requires Istio. Verify it is running.
 
 ```bash
 # Check Istio components
+
 kubectl get pods -n istio-system
 
 # Verify Istio version (mirroring is supported in Istio 1.10+)

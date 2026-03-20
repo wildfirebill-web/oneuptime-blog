@@ -8,7 +8,7 @@ Description: Learn how to enable and configure Kubernetes audit logging in K3s t
 
 ## Introduction
 
-Kubernetes audit logging records all API server requests — who did what, to which resource, and when. This is essential for security investigations, compliance requirements (SOC 2, PCI-DSS, HIPAA), and understanding cluster activity. K3s supports the full Kubernetes audit logging framework through kube-apiserver flags. This guide covers enabling and configuring comprehensive audit logging.
+Kubernetes audit logging records all API server requests - who did what, to which resource, and when. This is essential for security investigations, compliance requirements (SOC 2, PCI-DSS, HIPAA), and understanding cluster activity. K3s supports the full Kubernetes audit logging framework through kube-apiserver flags. This guide covers enabling and configuring comprehensive audit logging.
 
 ## Understanding Audit Log Levels
 
@@ -30,6 +30,7 @@ The audit policy defines which requests to log and at what level:
 
 ```yaml
 # /etc/rancher/k3s/audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 # Don't log requests to certain non-sensitive endpoints

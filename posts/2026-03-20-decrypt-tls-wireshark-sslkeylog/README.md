@@ -8,7 +8,7 @@ Description: Learn how to capture and decrypt TLS/HTTPS traffic in Wireshark usi
 
 ---
 
-Wireshark can decrypt TLS traffic if it has the session key material. Modern TLS uses ephemeral keys (ECDHE), making server private key decryption impossible — but the `SSLKEYLOGFILE` mechanism lets browsers and other TLS clients log the session keys as they're negotiated.
+Wireshark can decrypt TLS traffic if it has the session key material. Modern TLS uses ephemeral keys (ECDHE), making server private key decryption impossible - but the `SSLKEYLOGFILE` mechanism lets browsers and other TLS clients log the session keys as they're negotiated.
 
 ---
 
@@ -16,6 +16,7 @@ Wireshark can decrypt TLS traffic if it has the session key material. Modern TLS
 
 ```bash
 # Linux/macOS
+
 export SSLKEYLOGFILE=/tmp/tls-keys.log
 google-chrome &
 # or
@@ -26,7 +27,7 @@ set SSLKEYLOGFILE=C:	ls-keys.log
 "C:\Program Files\Google\Chrome\Application\chrome.exe"
 ```
 
-The log file grows as you browse — each TLS session appends its keys.
+The log file grows as you browse - each TLS session appends its keys.
 
 ---
 
@@ -52,7 +53,7 @@ TLS traffic now appears decrypted in the packet details.
 
 ## Apply Display Filters After Decryption
 
-```
+```text
 # Show decrypted HTTP/2 frames
 http2
 
@@ -79,7 +80,7 @@ tshark -r capture.pcap   -o "tls.keylog_file:/tmp/tls-keys.log"   -Y "http"   -T
 
 ## Security Considerations
 
-- The key log file contains session secrets — store securely and delete after use
+- The key log file contains session secrets - store securely and delete after use
 - Never use SSLKEYLOGFILE in production environments
 - Only works with TLS clients that support it (Chrome, Firefox, curl, Python requests)
 - Does not work if the server is using certificate pinning on the client

@@ -25,6 +25,7 @@ Description: Understand the IPv6 Benchmarking address space 2001:2::/48 (RFC 518
 
 ```bash
 # Assign benchmarking addresses to test interfaces
+
 ip -6 addr add 2001:2::1/48 dev eth0   # Source device
 ip -6 addr add 2001:2::2/48 dev eth0   # Destination device
 

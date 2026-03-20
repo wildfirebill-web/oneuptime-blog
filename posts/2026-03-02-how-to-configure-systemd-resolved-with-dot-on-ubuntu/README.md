@@ -14,6 +14,7 @@ Ubuntu 18.04 and later ships with `systemd-resolved` as the default DNS resolver
 
 ```bash
 # Check systemd version (need 239+ for DoT, 243+ for strict mode)
+
 systemd --version
 
 # Check if systemd-resolved is running

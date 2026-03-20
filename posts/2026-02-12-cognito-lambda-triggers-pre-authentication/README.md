@@ -347,6 +347,7 @@ Since Pre Authentication fires on every sign-in, performance matters:
 
 ```hcl
 # Provisioned concurrency for consistent performance
+
 resource "aws_lambda_provisioned_concurrency_config" "pre_auth" {
   function_name                  = aws_lambda_function.pre_auth.function_name
   provisioned_concurrent_executions = 5

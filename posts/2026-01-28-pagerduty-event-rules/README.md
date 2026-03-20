@@ -217,6 +217,7 @@ def send_pagerduty_event(routing_key, summary, severity, custom_details):
     return response.json()
 
 # Example: Send an event with fields your rules can match
+
 send_pagerduty_event(
     routing_key="YOUR_ROUTING_KEY",
     summary="High CPU usage on web-server-01",

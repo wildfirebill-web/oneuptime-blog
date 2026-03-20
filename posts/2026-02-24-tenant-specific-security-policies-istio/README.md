@@ -287,6 +287,7 @@ The real power comes from layering these policies. Here is what a well-secured t
 
 ```bash
 # Verify all policies are in place
+
 kubectl get peerauthentication -n tenant-a
 kubectl get requestauthentication -n tenant-a
 kubectl get authorizationpolicy -n tenant-a

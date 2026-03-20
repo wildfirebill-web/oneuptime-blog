@@ -34,6 +34,7 @@ The `shell` and `command` modules always report "changed" because Ansible cannot
 
 ```yaml
 # BAD: Always reports changed
+
 - name: Create directory
   command: mkdir -p /opt/myapp
 

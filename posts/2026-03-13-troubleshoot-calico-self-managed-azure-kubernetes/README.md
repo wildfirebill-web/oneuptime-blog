@@ -27,6 +27,7 @@ Azure VMs require IP forwarding to be enabled at the Azure networking level.
 
 ```bash
 # Enable IP forwarding on the VM's network interface
+
 NIC_ID=$(az vm nic list \
   --resource-group <rg-name> \
   --vm-name <vm-name> \

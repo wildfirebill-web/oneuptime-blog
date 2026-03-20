@@ -387,6 +387,7 @@ class RetryInterceptor(grpc.UnaryUnaryClientInterceptor):
 
 
 # Usage example
+
 def create_channel_with_retry(target: str) -> grpc.Channel:
     """Create a gRPC channel with retry interceptor."""
     config = RetryConfig(

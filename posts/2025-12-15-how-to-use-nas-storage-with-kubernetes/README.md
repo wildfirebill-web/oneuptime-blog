@@ -36,6 +36,7 @@ The NFS client package must be installed on every Kubernetes worker node that wi
 
 ```bash
 # Install NFS client utilities for mounting NFS shares
+
 # nfs-common includes mount.nfs required for NFS PersistentVolumes
 sudo apt-get update && sudo apt-get install -y nfs-common
 ```

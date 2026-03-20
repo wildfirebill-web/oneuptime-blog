@@ -36,6 +36,7 @@ Here is a basic headless Service:
 
 ```yaml
 # headless-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

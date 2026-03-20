@@ -30,6 +30,7 @@ Start with the basics. Each physical interface needs to be configured in the mac
 
 ```yaml
 # Basic physical interface configuration
+
 machine:
   network:
     interfaces:

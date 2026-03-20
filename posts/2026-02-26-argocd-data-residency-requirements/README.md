@@ -41,6 +41,7 @@ Register your clusters with jurisdiction metadata:
 
 ```yaml
 # argocd/clusters/eu-west-1.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

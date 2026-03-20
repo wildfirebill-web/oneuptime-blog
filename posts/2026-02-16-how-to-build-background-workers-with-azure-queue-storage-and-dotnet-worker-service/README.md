@@ -33,6 +33,7 @@ You can use the Azure CLI to create a storage account and queue.
 
 ```bash
 # Create a resource group
+
 az group create --name worker-demo-rg --location eastus
 
 # Create a storage account

@@ -49,6 +49,7 @@ The following command starts a single Kafka instance with embedded Zookeeper fun
 
 ```bash
 # Pull and run Kafka in standalone mode using KRaft (no Zookeeper required)
+
 # The KAFKA_CFG_NODE_ID identifies this broker uniquely
 # KAFKA_CFG_PROCESS_ROLES enables both broker and controller functionality
 docker run -d --name kafka \

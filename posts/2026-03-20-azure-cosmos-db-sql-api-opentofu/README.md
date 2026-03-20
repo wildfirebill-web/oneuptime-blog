@@ -14,6 +14,7 @@ Azure Cosmos DB with the SQL API provides a globally distributed, multi-model No
 
 ```hcl
 # main.tf - Cosmos DB account with SQL API
+
 resource "azurerm_cosmosdb_account" "cosmos" {
   name                = "my-cosmos-account"
   location            = azurerm_resource_group.rg.location

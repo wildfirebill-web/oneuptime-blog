@@ -24,6 +24,7 @@ You need an AlloyDB cluster with the google_ml_integration extension enabled and
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable alloydb.googleapis.com
 gcloud services enable aiplatform.googleapis.com
 

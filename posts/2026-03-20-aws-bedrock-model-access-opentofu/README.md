@@ -139,4 +139,4 @@ tofu apply tfplan
 
 ## Summary
 
-AWS Bedrock provides access to powerful foundation models for generative AI. While model access itself requires console approval, OpenTofu manages the IAM policies, knowledge bases, guardrails, and application infrastructure that consume Bedrock — enabling reproducible AI application deployments.
+AWS Bedrock provides access to powerful foundation models for generative AI. While model access itself requires console approval, OpenTofu manages the IAM policies, knowledge bases, guardrails, and application infrastructure that consume Bedrock - enabling reproducible AI application deployments.

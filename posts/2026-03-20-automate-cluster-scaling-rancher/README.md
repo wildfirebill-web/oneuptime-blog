@@ -14,6 +14,7 @@ Cluster scaling automation in Rancher operates at three levels: pod scaling (mor
 
 ```yaml
 # HPA scales pod count based on CPU/memory metrics
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

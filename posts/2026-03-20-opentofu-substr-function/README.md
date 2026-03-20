@@ -16,9 +16,9 @@ The `substr` function in OpenTofu extracts a portion of a string by specifying a
 substr(string, offset, length)
 ```
 
-- **string** — the input string
-- **offset** — the starting position (0-indexed; negative values count from the end)
-- **length** — the number of characters to extract (-1 for all remaining)
+- **string** - the input string
+- **offset** - the starting position (0-indexed; negative values count from the end)
+- **length** - the number of characters to extract (-1 for all remaining)
 - Returns the substring
 
 ## Basic Examples

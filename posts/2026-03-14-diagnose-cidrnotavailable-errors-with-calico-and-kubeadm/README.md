@@ -29,6 +29,7 @@ Start by confirming the exact error and its scope:
 
 ```bash
 # Check calico-node pod logs for relevant errors
+
 kubectl logs -n calico-system -l k8s-app=calico-node -c calico-node --tail=100 | grep -i "error\|fail\|warn"
 
 # Check recent events across the cluster

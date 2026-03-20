@@ -20,6 +20,7 @@ The `service` module has a clean interface. The two most important parameters ar
 
 ```yaml
 # Start the nginx service
+
 - name: Start nginx
   ansible.builtin.service:
     name: nginx

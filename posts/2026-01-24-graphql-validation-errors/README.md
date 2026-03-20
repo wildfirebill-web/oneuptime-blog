@@ -36,6 +36,7 @@ flowchart TD
 
 ```graphql
 # Schema
+
 type Query {
   user(id: ID!): User
   users(limit: Int, offset: Int): [User!]!

@@ -59,6 +59,7 @@ Build a central repository of vetted Flux configurations that teams can referenc
 
 ```bash
 # CoE template repository structure
+
 # flux-coe-templates/
 # ├── sources/
 # │   ├── git-repository.yaml       # Standard GitRepository template

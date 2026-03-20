@@ -70,6 +70,7 @@ This sequence registers the MetalLB chart repository, creates an isolated namesp
 
 ```bash
 # Add the official MetalLB Helm repository
+
 helm repo add metallb https://metallb.github.io/metallb
 
 # Refresh local chart cache to get latest versions

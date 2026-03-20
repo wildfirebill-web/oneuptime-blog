@@ -32,6 +32,7 @@ First, see how many addresses are actually available in the subnet.
 
 ```bash
 # Check available IP addresses in a subnet
+
 aws ec2 describe-subnets \
   --subnet-ids subnet-abc123 \
   --query 'Subnets[].{SubnetId: SubnetId, CIDR: CidrBlock, AvailableIPs: AvailableIpAddressCount, AZ: AvailabilityZone}'

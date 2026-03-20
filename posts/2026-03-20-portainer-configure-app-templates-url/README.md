@@ -36,7 +36,7 @@ Portainer fetches template definitions from a URL that returns a JSON file in th
 ```
 
 The default URL points to:
-```
+```text
 https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json
 ```
 
@@ -50,7 +50,7 @@ https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json
 
 You will see:
 
-```
+```text
 App Templates URL
 [https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json]
 ```
@@ -64,8 +64,9 @@ This is the currently configured URL.
 
 Examples:
 
-```
+```text
 # GitHub raw URL
+
 https://raw.githubusercontent.com/myorg/portainer-templates/main/templates.json
 
 # Internal web server
@@ -210,7 +211,7 @@ To restore the default Portainer templates:
 1. Go to **Settings**
 2. Enter the original URL:
 
-```
+```text
 https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json
 ```
 

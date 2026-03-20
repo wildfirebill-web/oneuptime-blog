@@ -57,6 +57,7 @@ Headless services solve this by enabling client-side load balancing:
 
 ```yaml
 # headless-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

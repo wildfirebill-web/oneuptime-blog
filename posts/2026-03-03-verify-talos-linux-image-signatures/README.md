@@ -40,6 +40,7 @@ You need cosign to verify Talos image signatures.
 
 ```bash
 # Install cosign on macOS
+
 brew install cosign
 
 # Install cosign on Linux

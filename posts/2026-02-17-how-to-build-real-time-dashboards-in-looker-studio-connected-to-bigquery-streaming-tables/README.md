@@ -57,6 +57,7 @@ Use the BigQuery Storage Write API for efficient streaming:
 
 ```python
 # Stream events into BigQuery using the Storage Write API
+
 from google.cloud import bigquery_storage_v1
 from google.cloud.bigquery_storage_v1 import types
 from google.protobuf import descriptor_pb2

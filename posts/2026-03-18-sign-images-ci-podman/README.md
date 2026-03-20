@@ -21,6 +21,7 @@ Image signing creates a cryptographic signature that can be verified before depl
 ```bash
 #!/bin/bash
 # Overview of the image signing workflow
+
 # 1. Build the image in CI
 # 2. Push the image to a registry
 # 3. Sign the image with a private key

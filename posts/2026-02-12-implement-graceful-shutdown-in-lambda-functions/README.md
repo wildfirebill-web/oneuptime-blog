@@ -130,6 +130,7 @@ export const handler = async (event) => {
 
 ```python
 # handler.py - Lambda handler with graceful shutdown
+
 import signal
 import sys
 import json

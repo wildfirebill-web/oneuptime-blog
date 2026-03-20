@@ -38,6 +38,7 @@ First, verify that port exhaustion is actually the problem:
 
 ```bash
 # Check for port exhaustion in NAT logs
+
 gcloud logging read \
   'resource.type="nat_gateway" AND jsonPayload.allocation_status="DROPPED"' \
   --project=your-project-id \

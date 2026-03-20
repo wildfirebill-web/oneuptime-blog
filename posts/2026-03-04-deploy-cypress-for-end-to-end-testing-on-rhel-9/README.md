@@ -20,6 +20,7 @@ Cypress is a JavaScript end-to-end testing framework that runs directly in the b
 
 ```bash
 # Install Node.js 18 from AppStream
+
 sudo dnf module install -y nodejs:18
 ```
 

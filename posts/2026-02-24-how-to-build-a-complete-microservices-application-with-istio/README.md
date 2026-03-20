@@ -27,6 +27,7 @@ Each service runs in its own Kubernetes deployment with an Istio sidecar.
 
 ```bash
 # Create the cluster
+
 kind create cluster --name ecommerce --config - <<EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4

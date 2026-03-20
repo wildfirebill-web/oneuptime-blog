@@ -113,6 +113,7 @@ On the Ingress or load balancer side, configure appropriate timeouts for WebSock
 
 ```yaml
 # Nginx Ingress example
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

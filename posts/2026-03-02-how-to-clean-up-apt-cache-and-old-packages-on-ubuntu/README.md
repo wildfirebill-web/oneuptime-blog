@@ -16,6 +16,7 @@ APT stores downloaded packages in `/var/cache/apt/archives/`. When you run `apt 
 
 ```bash
 # Check the current cache size
+
 du -sh /var/cache/apt/archives/
 du -sh /var/cache/apt/archives/partial/  # Partially downloaded packages
 

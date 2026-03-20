@@ -29,6 +29,7 @@ Snapshot policies define the schedule and retention for automated snapshots. You
 
 ```bash
 # Create a comprehensive snapshot policy
+
 az netappfiles snapshot policy create \
   --resource-group rg-netapp \
   --account-name na-production \

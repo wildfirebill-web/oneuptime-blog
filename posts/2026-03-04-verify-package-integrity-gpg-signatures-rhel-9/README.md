@@ -36,6 +36,7 @@ RHEL ships with Red Hat's GPG key pre-installed. Check what keys are on your sys
 
 ```bash
 # List all imported RPM GPG keys
+
 rpm -qa gpg-pubkey*
 ```
 

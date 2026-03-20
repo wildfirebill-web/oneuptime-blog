@@ -16,6 +16,7 @@ Apache Kafka is the dominant distributed streaming platform. Configuring Kafka f
 # /etc/kafka/server.properties
 
 # Broker ID
+
 broker.id=1
 
 # Listeners - what Kafka binds to

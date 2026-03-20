@@ -202,6 +202,7 @@ In multicluster meshes, each Istiod needs access to remote clusters to discover 
 
 ```bash
 # Give cluster1 access to cluster2's API server
+
 istioctl create-remote-secret \
   --context="${CTX_CLUSTER2}" \
   --name=cluster2 | \

@@ -33,6 +33,7 @@ First, install Scout via Composer:
 
 ```bash
 # Install the Laravel Scout package
+
 composer require laravel/scout
 ```
 

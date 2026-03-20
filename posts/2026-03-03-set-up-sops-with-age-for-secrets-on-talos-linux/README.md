@@ -30,6 +30,7 @@ Install both tools on your local machine.
 
 ```bash
 # Install SOPS on macOS
+
 brew install sops
 
 # Install Age on macOS

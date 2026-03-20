@@ -22,6 +22,7 @@ The ENV instruction has two forms:
 
 ```dockerfile
 # Form 1: Single variable
+
 ENV MY_VAR=value
 
 # Form 2: Multiple variables on one line

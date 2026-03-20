@@ -32,6 +32,7 @@ This method generates a new random encryption key at every boot. The swap data f
 
 ```bash
 # Check current swap usage
+
 swapon --show
 
 # Identify the swap device

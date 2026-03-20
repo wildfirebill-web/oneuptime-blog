@@ -47,6 +47,7 @@ First, define an IPAddressPool that includes the IP you want to assign:
 
 ```yaml
 # ip-address-pool.yaml
+
 # This pool defines a range of IPs available for MetalLB to assign.
 # The specific IP you want to request must fall within this range.
 apiVersion: metallb.io/v1beta1

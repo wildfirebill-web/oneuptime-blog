@@ -16,6 +16,7 @@ Make sure you have the Vertex AI SDK installed and configured:
 
 ```bash
 # Install the SDK
+
 pip install google-cloud-aiplatform
 
 # Authenticate

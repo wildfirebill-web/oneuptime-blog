@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, DNS, Reverse DNS, ip6.arpa, Nibble Format
+Tags: IPv6, DNS, Reverse DNS, Ip6.arpa, Nibble Format
 
 Description: A detailed explanation of the nibble-boundary format used for IPv6 reverse DNS zone delegation in ip6.arpa, including how to calculate zone boundaries correctly.
 
 ## Why Nibble Boundaries Matter for IPv6 rDNS
 
-IPv6 reverse DNS uses nibble-by-nibble representation, meaning each hex digit occupies one DNS label. Because DNS zones can only be delegated at label boundaries, IPv6 reverse DNS can only be delegated at **nibble boundaries** — multiples of 4 bits.
+IPv6 reverse DNS uses nibble-by-nibble representation, meaning each hex digit occupies one DNS label. Because DNS zones can only be delegated at label boundaries, IPv6 reverse DNS can only be delegated at **nibble boundaries** - multiples of 4 bits.
 
 This is a fundamental difference from IPv4, where delegation happens at octet (8-bit) boundaries.
 
@@ -16,19 +16,19 @@ This is a fundamental difference from IPv4, where delegation happens at octet (8
 
 The IPv6 address `2001:0db8:0000:0001:0000:0000:0000:0001` expanded to 32 hex digits is:
 
-```
+```text
 2 0 0 1 0 d b 8 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 ```
 
 Reversed nibble by nibble:
 
-```
+```text
 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 8 b d 0 1 0 0 2
 ```
 
 With dots between each nibble and `.ip6.arpa.` appended:
 
-```
+```text
 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa.
 ```
 
@@ -57,6 +57,7 @@ Use this Python script to compute the ip6.arpa zone name for any prefix:
 ```python
 #!/usr/bin/env python3
 # Calculate ip6.arpa zone name for an IPv6 prefix
+
 # Usage: python3 ipv6-zone.py 2001:db8::/48
 
 import ipaddress
@@ -95,7 +96,7 @@ python3 ipv6-zone.py 2001:db8::/32
 
 ## Common Prefix Lengths and Their Zone Names
 
-```
+```text
 ISP-level /32:
   Prefix: 2001:db8::/32
   Zone:   8.b.d.0.1.0.0.2.ip6.arpa.

@@ -29,7 +29,7 @@ struct ipv6hdr {
 ## Basic IPv6 Packet Parser (TC BPF)
 
 ```c
-// ipv6_parser.c — TC BPF program for IPv6 packet parsing
+// ipv6_parser.c - TC BPF program for IPv6 packet parsing
 #include <linux/bpf.h>
 #include <linux/if_ether.h>
 #include <linux/ipv6.h>
@@ -88,6 +88,7 @@ char LICENSE[] SEC("license") = "GPL";
 
 ```bash
 # Compile the eBPF program
+
 clang -O2 -g -target bpf \
     -I/usr/include/x86_64-linux-gnu \
     -c ipv6_parser.c -o ipv6_parser.o

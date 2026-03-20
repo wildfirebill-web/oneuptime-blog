@@ -32,6 +32,7 @@ Before configuring RTC, both source and destination buckets need versioning enab
 
 ```bash
 # Enable versioning on source bucket
+
 aws s3api put-bucket-versioning \
   --bucket source-bucket-us-east-1 \
   --versioning-configuration Status=Enabled

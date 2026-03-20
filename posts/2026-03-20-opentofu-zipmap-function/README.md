@@ -8,7 +8,7 @@ Description: Learn how to use the zipmap function in OpenTofu to combine two par
 
 ## Introduction
 
-The `zipmap` function in OpenTofu creates a map from two parallel lists — one providing keys and the other providing values. It is the inverse of using `keys()` and `values()` to split a map.
+The `zipmap` function in OpenTofu creates a map from two parallel lists - one providing keys and the other providing values. It is the inverse of using `keys()` and `values()` to split a map.
 
 ## Syntax
 
@@ -16,8 +16,8 @@ The `zipmap` function in OpenTofu creates a map from two parallel lists — one 
 zipmap(keyslist, valueslist)
 ```
 
-- **keyslist** — list of strings to use as map keys
-- **valueslist** — list of values (any type) corresponding to each key
+- **keyslist** - list of strings to use as map keys
+- **valueslist** - list of values (any type) corresponding to each key
 - Both lists must have the same length
 
 ## Basic Examples
@@ -143,4 +143,4 @@ tofu console
 
 ## Conclusion
 
-The `zipmap` function creates maps from parallel lists in OpenTofu, making it easy to build key-value configurations dynamically. It is the complement of `keys()` and `values()` — use it when you have two separate lists that logically form a map.
+The `zipmap` function creates maps from parallel lists in OpenTofu, making it easy to build key-value configurations dynamically. It is the complement of `keys()` and `values()` - use it when you have two separate lists that logically form a map.

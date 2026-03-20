@@ -24,6 +24,7 @@ Understanding the Linux audio stack helps you choose the right approach:
 
 ```bash
 # Check which audio system your host uses
+
 # For PulseAudio
 pactl info 2>/dev/null | head -5
 

@@ -54,6 +54,7 @@ If you are creating a new cluster, enable both features during creation:
 
 ```bash
 # Set variables for your environment
+
 RESOURCE_GROUP="rg-workload-identity-demo"
 CLUSTER_NAME="aks-workload-identity"
 LOCATION="eastus"

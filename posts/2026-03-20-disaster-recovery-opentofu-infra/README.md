@@ -8,11 +8,11 @@ Description: Learn how to leverage OpenTofu's code-driven approach to enable rap
 
 ## Introduction
 
-OpenTofu's greatest disaster recovery advantage is that infrastructure is defined as code — if you lose your cloud environment, you can recreate it from configuration files. But DR planning requires more than just having the code: state files, secrets, and provider credentials must also be preserved and accessible in a failure scenario.
+OpenTofu's greatest disaster recovery advantage is that infrastructure is defined as code - if you lose your cloud environment, you can recreate it from configuration files. But DR planning requires more than just having the code: state files, secrets, and provider credentials must also be preserved and accessible in a failure scenario.
 
 ## What to Protect for DR
 
-```
+```text
 1. Configuration files          → Git repository (replicated automatically)
 2. State files                  → S3 with cross-region replication
 3. State lock table             → DynamoDB (replicate or accept re-creation)
@@ -25,6 +25,7 @@ OpenTofu's greatest disaster recovery advantage is that infrastructure is define
 
 ```hcl
 # Replicate state bucket to a DR region
+
 resource "aws_s3_bucket_replication_configuration" "state_dr" {
   bucket = aws_s3_bucket.state.id
   role   = aws_iam_role.replication.arn
@@ -83,10 +84,10 @@ aws s3api get-object \
 
 Maintain a parallel configuration for the DR region:
 
-```
+```text
 environments/
 ├── prod/          → Primary region (us-east-1)
-└── prod-dr/       → DR region (us-west-2) — same modules, different inputs
+└── prod-dr/       → DR region (us-west-2) - same modules, different inputs
 ```
 
 ```hcl
@@ -101,7 +102,7 @@ instance_type = "t3.large"  # vs m5.2xlarge in primary
 
 ```bash
 #!/bin/bash
-# dr-recovery.sh — step-by-step recovery script
+# dr-recovery.sh - step-by-step recovery script
 
 set -euo pipefail
 
@@ -135,7 +136,7 @@ echo "Step 4: Apply DR environment (requires human confirmation)"
 ## Testing DR
 
 ```bash
-# Regular DR drills — apply the DR config in the DR region
+# Regular DR drills - apply the DR config in the DR region
 cd environments/prod-dr
 tofu plan   # Verify the config is current and valid
 
@@ -147,4 +148,4 @@ tofu destroy -var="environment=prod-dr"
 
 ## Conclusion
 
-OpenTofu-managed infrastructure is inherently more recoverable than click-ops infrastructure — the configuration IS the recovery plan. Protect state files with cross-region replication and versioning, maintain a DR-region configuration that can be applied at any time, and run regular DR drills to verify that recovery actually works within your RTO targets.
+OpenTofu-managed infrastructure is inherently more recoverable than click-ops infrastructure - the configuration IS the recovery plan. Protect state files with cross-region replication and versioning, maintain a DR-region configuration that can be applied at any time, and run regular DR drills to verify that recovery actually works within your RTO targets.

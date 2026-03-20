@@ -20,6 +20,7 @@ Scoop is a command-line package manager for Windows that installs programs in yo
 
 ```powershell
 # Set execution policy for current user (no admin needed)
+
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # Install Scoop

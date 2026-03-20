@@ -22,6 +22,7 @@ Set up an SNS topic that notifies your team whenever code is pushed to main.
 
 ```bash
 # Create an SNS topic for repository events
+
 aws sns create-topic --name codecommit-notifications
 
 # Subscribe your team's Slack webhook or email

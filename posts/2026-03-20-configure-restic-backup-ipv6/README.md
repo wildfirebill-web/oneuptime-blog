@@ -14,6 +14,7 @@ Restic is a modern, fast, and secure backup tool. It supports multiple backends 
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install restic -y
 
 # RHEL/CentOS
@@ -210,4 +211,4 @@ WantedBy=timers.target
 sudo systemctl enable --now restic-backup.timer
 ```
 
-Restic's support for multiple backends — SFTP, REST, and S3 — all of which can communicate over IPv6, makes it a versatile backup tool for modern IPv6 network infrastructure.
+Restic's support for multiple backends - SFTP, REST, and S3 - all of which can communicate over IPv6, makes it a versatile backup tool for modern IPv6 network infrastructure.

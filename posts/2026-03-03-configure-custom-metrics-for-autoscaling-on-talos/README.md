@@ -34,6 +34,7 @@ If you do not already have Prometheus running, deploy it using the kube-promethe
 
 ```bash
 # Add the Prometheus community Helm repo
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

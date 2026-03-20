@@ -52,6 +52,7 @@ Publishers send messages to topics. Subscriptions receive copies of messages fro
 
 ```bash
 # Create a simple topic
+
 gcloud pubsub topics create orders-topic
 
 # Create a topic with message retention (keeps messages even after ack)

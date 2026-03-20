@@ -242,6 +242,7 @@ Track authorization metrics:
 
 ```promql
 # Authorization requests
+
 envoy_http_ext_authz_total
 
 # Authorization denials

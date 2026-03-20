@@ -260,6 +260,7 @@ To deploy scheduler profiles, you need to configure the kube-scheduler component
 
 ```yaml
 # /etc/kubernetes/scheduler-config.yaml
+
 apiVersion: kubescheduler.config.k8s.io/v1
 kind: KubeSchedulerConfiguration
 profiles:

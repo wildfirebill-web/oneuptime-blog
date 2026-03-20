@@ -30,6 +30,7 @@ Example: The `meshConfig.disablePolicyChecks` field was deprecated and later rem
 
 ```yaml
 # This will cause an error after the upgrade
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

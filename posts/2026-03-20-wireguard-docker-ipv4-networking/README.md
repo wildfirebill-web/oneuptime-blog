@@ -56,7 +56,7 @@ services:
       - wireguard
 ```
 
-## Option 2: Client Mode — Route Container Traffic Through VPN
+## Option 2: Client Mode - Route Container Traffic Through VPN
 
 For a container that connects to an external WireGuard server:
 
@@ -92,6 +92,7 @@ Run WireGuard on the host and give containers access to VPN routes:
 
 ```bash
 # Bring up WireGuard on host
+
 sudo wg-quick up wg0
 
 # Create a Docker network that uses the VPN subnet
@@ -115,4 +116,4 @@ wget -qO- https://ifconfig.me
 ip route show
 ```
 
-The `network_mode: "service:wireguard"` pattern is the cleanest approach — any container using it automatically has all its traffic routed through the WireGuard tunnel without needing elevated privileges itself.
+The `network_mode: "service:wireguard"` pattern is the cleanest approach - any container using it automatically has all its traffic routed through the WireGuard tunnel without needing elevated privileges itself.

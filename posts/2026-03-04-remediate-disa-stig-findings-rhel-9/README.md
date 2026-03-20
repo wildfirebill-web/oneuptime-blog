@@ -16,6 +16,7 @@ Start by understanding the scope:
 
 ```bash
 # Run the initial scan
+
 oscap xccdf eval \
   --profile xccdf_org.ssgproject.content_profile_stig \
   --results /tmp/stig-results.xml \

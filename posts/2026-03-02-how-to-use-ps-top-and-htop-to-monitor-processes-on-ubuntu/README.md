@@ -18,6 +18,7 @@ Understanding what is running on your Ubuntu system is a fundamental sysadmin sk
 
 ```bash
 # Show your own processes in the current terminal
+
 ps
 
 # Show all processes for all users

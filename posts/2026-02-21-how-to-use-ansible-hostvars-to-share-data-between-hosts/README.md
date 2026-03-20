@@ -18,6 +18,7 @@ The `hostvars` variable is one of Ansible's "magic variables" that gives you acc
 
 ```yaml
 # Access the IP address of a specific host
+
 {{ hostvars['db-server-01']['ansible_default_ipv4']['address'] }}
 ```
 

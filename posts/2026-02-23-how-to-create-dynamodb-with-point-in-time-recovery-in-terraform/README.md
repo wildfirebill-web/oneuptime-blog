@@ -20,6 +20,7 @@ PITR works at the table level and covers all items, including those in local sec
 
 ```hcl
 # Configure Terraform with the AWS provider
+
 terraform {
   required_providers {
     aws = {

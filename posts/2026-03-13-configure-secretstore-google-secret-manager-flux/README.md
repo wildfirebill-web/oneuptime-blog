@@ -27,6 +27,7 @@ This guide covers configuring a `SecretStore` for Google Secret Manager using GK
 
 ```bash
 # Enable Workload Identity on the GKE cluster
+
 gcloud container clusters update my-cluster \
   --workload-pool=MY_PROJECT_ID.svc.id.goog \
   --region=us-central1

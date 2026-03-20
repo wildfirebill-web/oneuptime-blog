@@ -34,6 +34,7 @@ Create a policy file for image compliance:
 
 ```rego
 # policy/docker_compliance.rego
+
 # Defines compliance rules for Docker images
 
 package docker.compliance

@@ -44,6 +44,7 @@ SHOW STATUS LIKE 'Innodb_buffer_pool%';
 
 ```ini
 # my.cnf - Buffer pool configuration
+
 [mysqld]
 # Set buffer pool to 12GB for a server with 16GB RAM
 innodb_buffer_pool_size = 12G

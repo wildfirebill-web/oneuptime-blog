@@ -1,4 +1,4 @@
-# How to Troubleshoot DNS Resolution Issues in Portainer
+# How to Troubleshoot DNS Resolution Issues in Portainer - Troubleshoot
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ DNS failures are among the most common container networking issues. When contain
 
 ```bash
 # Access the container (via Portainer Exec or CLI)
+
 docker exec -it my_container bash
 
 # Check what DNS servers the container is using
@@ -180,4 +181,4 @@ docker exec api_container bash -c '
 
 ## Conclusion
 
-DNS failures in Docker containers have a small set of root causes: containers on different networks, broken iptables rules after Docker restart, unreliable upstream DNS servers, or misconfigured ndots settings. The systematic approach — check resolv.conf, test Docker's embedded DNS directly, verify shared network membership, then test external DNS — will identify the issue quickly. Portainer's Exec feature lets you run these diagnostics from the UI without SSH access to the host.
+DNS failures in Docker containers have a small set of root causes: containers on different networks, broken iptables rules after Docker restart, unreliable upstream DNS servers, or misconfigured ndots settings. The systematic approach - check resolv.conf, test Docker's embedded DNS directly, verify shared network membership, then test external DNS - will identify the issue quickly. Portainer's Exec feature lets you run these diagnostics from the UI without SSH access to the host.

@@ -49,6 +49,7 @@ First, disable default associations and propagations so you have full control:
 
 ```bash
 # Create a transit gateway without default route table behavior
+
 TGW_ID=$(aws ec2 create-transit-gateway \
   --options '{
     "DefaultRouteTableAssociation": "disable",

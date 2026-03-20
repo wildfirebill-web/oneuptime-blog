@@ -43,6 +43,7 @@ graph LR
 
 ```python
 # requirements.txt
+
 opentelemetry-distro
 opentelemetry-exporter-otlp
 opentelemetry-instrumentation-flask

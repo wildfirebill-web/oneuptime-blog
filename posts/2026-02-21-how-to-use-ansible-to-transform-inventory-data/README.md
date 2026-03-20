@@ -16,6 +16,7 @@ Ansible provides several built-in variables for working with inventory:
 
 ```yaml
 # playbook-access-inventory.yml
+
 # Shows how to access and display various inventory data structures
 - name: Access inventory data
   hosts: all

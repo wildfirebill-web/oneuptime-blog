@@ -22,6 +22,7 @@ Create a structured template specifically for Terraform incidents:
 
 ```yaml
 # post-mortem/template.yaml
+
 # Terraform Incident Post-Mortem Template
 
 incident:

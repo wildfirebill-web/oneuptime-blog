@@ -33,6 +33,7 @@ First, define the individual targets that will be part of the parallel deploymen
 
 ```yaml
 # targets.yaml - Individual cluster targets for parallel deployment
+
 apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:

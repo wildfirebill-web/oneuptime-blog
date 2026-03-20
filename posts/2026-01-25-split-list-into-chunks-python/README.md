@@ -17,6 +17,7 @@ You have a list and need to process it in groups of a specific size.
 ```python
 data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # Goal: Split into chunks of 3
+
 # Result: [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
 ```
 

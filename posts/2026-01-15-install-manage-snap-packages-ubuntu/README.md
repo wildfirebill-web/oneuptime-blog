@@ -19,6 +19,7 @@ Snap is Ubuntu's universal package format that bundles applications with their d
 
 ```bash
 # Install snapd
+
 sudo apt update
 sudo apt install snapd -y
 

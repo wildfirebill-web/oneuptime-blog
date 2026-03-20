@@ -16,6 +16,7 @@ The `indent` function takes a number of spaces and a string. It adds that many s
 
 ```hcl
 # Basic syntax
+
 indent(num_spaces, string)
 ```
 

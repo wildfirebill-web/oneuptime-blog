@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, PROXY Protocol, IPv4, Client IP, Load Balancer, HAProxy
+Tags: Nginx, Proxy Protocol, IPv4, Client IP, Load Balancer, HAProxy
 
 Description: Configure Nginx to receive and forward the PROXY Protocol header from upstream load balancers to preserve the original client IPv4 address in access logs and application headers.
 
@@ -12,7 +12,7 @@ When a load balancer (HAProxy, AWS NLB, etc.) proxies traffic to Nginx, the clie
 
 ## Architecture
 
-```
+```text
 Client (203.0.113.10)
     ↓ TCP connection
 HAProxy/NLB (10.0.1.1)
@@ -91,7 +91,7 @@ stream {
 
 On the upstream HAProxy load balancer:
 
-```
+```text
 backend nginx-backends
     server nginx1 10.0.1.10:80 send-proxy         # PROXY Protocol v1
     server nginx2 10.0.1.11:80 send-proxy-v2      # PROXY Protocol v2
@@ -101,6 +101,7 @@ backend nginx-backends
 
 ```bash
 # Enable PROXY Protocol v2 on an NLB target group
+
 aws elbv2 modify-target-group-attributes \
   --target-group-arn $TG_ARN \
   --attributes Key=proxy_protocol_v2.enabled,Value=true
@@ -133,4 +134,4 @@ real_ip_header proxy_protocol;
 
 ## Conclusion
 
-Add `proxy_protocol` to the `listen` directive to enable reception. Use `set_real_ip_from` to restrict which upstream IPs are trusted to send PROXY Protocol — otherwise clients can spoof their IPs. Set `$proxy_protocol_addr` in headers passed to backend applications. Configure the corresponding `send-proxy` or `send-proxy-v2` on the HAProxy backend, or enable it on AWS NLB target groups.
+Add `proxy_protocol` to the `listen` directive to enable reception. Use `set_real_ip_from` to restrict which upstream IPs are trusted to send PROXY Protocol - otherwise clients can spoof their IPs. Set `$proxy_protocol_addr` in headers passed to backend applications. Configure the corresponding `send-proxy` or `send-proxy-v2` on the HAProxy backend, or enable it on AWS NLB target groups.

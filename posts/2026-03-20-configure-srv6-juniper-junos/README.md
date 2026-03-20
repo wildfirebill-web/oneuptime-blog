@@ -12,8 +12,9 @@ Juniper Junos supports SRv6 on MX, PTX, and ACX platforms. Configuration uses th
 
 ## SRv6 Locator Configuration
 
-```
+```text
 # Junos SRv6 configuration
+
 set routing-options source-routing
 set protocols source-packet-routing srv6
 set protocols source-packet-routing srv6 locator MAIN prefix 5f00:2::/48
@@ -35,7 +36,7 @@ protocols {
 
 ## Loopback and Interface Configuration
 
-```
+```text
 # Assign locator to loopback
 set interfaces lo0 unit 0 family inet6 address 5f00:2::/128
 
@@ -62,7 +63,7 @@ interfaces {
 
 ## IS-IS with SRv6 Extensions
 
-```
+```text
 protocols {
     isis {
         level 2 wide-metrics-only;
@@ -107,7 +108,7 @@ ping 5f00:3:: routing-instance default source 5f00:2::
 
 ## SRv6 Traffic Engineering Policy
 
-```
+```text
 # SRv6 TE policy via Spring Traffic Engineering
 protocols {
     spring-traffic-engineering {
@@ -136,7 +137,7 @@ protocols {
 
 ## BGP with SRv6 for L3VPN
 
-```
+```text
 routing-instances {
     CUSTOMER-A {
         instance-type vrf;

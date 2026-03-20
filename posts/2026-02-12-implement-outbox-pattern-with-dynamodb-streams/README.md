@@ -47,6 +47,7 @@ You can use a separate outbox table or embed outbox events alongside your domain
 
 ```bash
 # Create the outbox table with DynamoDB Streams enabled
+
 aws dynamodb create-table \
   --table-name Outbox \
   --attribute-definitions \

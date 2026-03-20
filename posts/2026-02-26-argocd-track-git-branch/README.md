@@ -26,6 +26,7 @@ The simplest way to create an application that tracks a branch is with the `argo
 
 ```bash
 # Create an application tracking the 'develop' branch
+
 argocd app create my-app \
   --repo https://github.com/myorg/my-manifests.git \
   --path k8s/overlays/dev \

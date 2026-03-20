@@ -16,6 +16,7 @@ The simplest use case is cloning a repository to a target directory:
 
 ```yaml
 # playbook-basic-clone.yml
+
 # Clones a public Git repository to the specified destination
 - name: Clone a Git repository
   hosts: webservers

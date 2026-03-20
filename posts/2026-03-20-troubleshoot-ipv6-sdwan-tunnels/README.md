@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, SD-WAN, Troubleshooting, Tunnels, IPsec, Debugging, WAN
+Tags: IPv6, SD-WAN, Troubleshooting, Tunnel, IPsec, Debugging, WAN
 
 Description: Diagnose and resolve common IPv6 SD-WAN tunnel issues including tunnel establishment failures, IPv6 routing problems through SD-WAN overlays, and MTU/PMTU issues.
 
@@ -14,6 +14,7 @@ IPv6 SD-WAN tunnel troubleshooting requires checking tunnel state, verifying IPv
 
 ```bash
 # The underlay is the physical WAN transport
+
 # Check IPv6 WAN interface has a valid address
 ip -6 addr show eth0
 # Should show: inet6 <global-ipv6>/prefix scope global

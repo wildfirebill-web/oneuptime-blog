@@ -39,6 +39,7 @@ The following base HelmRelease includes patches that apply across all environmen
 
 ```yaml
 # base/helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

@@ -12,6 +12,7 @@ Flushing iptables rules (`iptables -F`) without changing the default policy firs
 
 ```bash
 # DANGEROUS if default policy is DROP:
+
 sudo iptables -F     # Flushes rules
 # At this point, if policy was DROP, all new connections are blocked
 # If your SSH connection closes, you're locked out!
@@ -24,7 +25,7 @@ sudo iptables -P INPUT DROP   # Without first ensuring SSH is allowed
 
 ```bash
 #!/bin/bash
-# safe-flush.sh — Flush iptables safely on remote servers
+# safe-flush.sh - Flush iptables safely on remote servers
 
 # Step 1: Set all policies to ACCEPT FIRST (before flushing)
 # This ensures traffic flows even with no rules
@@ -61,7 +62,7 @@ echo "sudo iptables-restore < /etc/iptables/rules.v4.backup" | sudo at now + 5 m
 echo "sudo iptables -P INPUT ACCEPT; sudo iptables -F" | sudo at now + 5 minutes
 
 # Now make your changes
-# If you get locked out, wait 5 minutes — the scheduled job will restore access
+# If you get locked out, wait 5 minutes - the scheduled job will restore access
 
 # If everything works, cancel the scheduled job
 sudo atq                     # List scheduled jobs
@@ -89,7 +90,7 @@ To fully reset iptables to defaults (as if freshly installed):
 
 ```bash
 #!/bin/bash
-# reset-iptables.sh — Complete reset to open state
+# reset-iptables.sh - Complete reset to open state
 
 # Set policies to ACCEPT first
 sudo iptables -P INPUT ACCEPT
@@ -136,4 +137,4 @@ sudo iptables -L -n -v
 # (empty)
 ```
 
-The golden rule: always set policies to ACCEPT before flushing rules — this one habit prevents the most common and most damaging iptables mistakes on remote servers.
+The golden rule: always set policies to ACCEPT before flushing rules - this one habit prevents the most common and most damaging iptables mistakes on remote servers.

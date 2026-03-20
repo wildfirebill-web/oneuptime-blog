@@ -58,6 +58,7 @@ Calico writes policy logs to the node's syslog or iptables log target. View them
 
 ```bash
 # On each node
+
 journalctl -u calico-node | grep "calico-packet"
 
 # Or check the calico-node pod logs

@@ -27,6 +27,7 @@ Certificate errors manifest differently depending on which component is affected
 
 ```bash
 # talosctl connection errors look like this:
+
 talosctl -n 10.0.0.1 version
 # rpc error: code = Unavailable desc = connection error: desc = "transport: authentication handshake failed: x509: certificate signed by unknown authority"
 

@@ -39,6 +39,7 @@ When you enable the `tracing` directive, Caddy automatically:
 
 ```text
 # Caddyfile
+
 {
     tracing {
         span "caddy-proxy"

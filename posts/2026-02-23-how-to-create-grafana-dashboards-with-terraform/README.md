@@ -35,6 +35,7 @@ variable "grafana_auth" { type = string; sensitive = true }
 
 ```hcl
 # Create a dashboard from a JSON model
+
 resource "grafana_dashboard" "infrastructure" {
   config_json = jsonencode({
     title = "Infrastructure Overview"

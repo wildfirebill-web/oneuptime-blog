@@ -67,6 +67,7 @@ def create_serving_config(project_id, serving_config_id, display_name):
     return result
 
 # Create a serving config for the homepage recommendations
+
 serving_config = create_serving_config(
     "my-gcp-project",
     "homepage-recs",

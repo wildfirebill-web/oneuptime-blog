@@ -20,6 +20,7 @@ Verify the network exists and containers are connected:
 
 ```bash
 # List networks created by Compose
+
 docker network ls | grep $(basename $(pwd))
 
 # Inspect the network to see connected containers

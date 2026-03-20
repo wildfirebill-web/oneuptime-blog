@@ -22,6 +22,7 @@ Set and read baggage values using the OpenTelemetry baggage API. Values propagat
 
 ```python
 # baggage_basics.py
+
 from opentelemetry import baggage, trace
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
 from opentelemetry.instrumentation.requests import RequestsInstrumentor

@@ -41,6 +41,7 @@ Wireshark runs on Windows, macOS, and Linux. Install the latest version from [wi
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install wireshark
 
 # macOS (Homebrew)

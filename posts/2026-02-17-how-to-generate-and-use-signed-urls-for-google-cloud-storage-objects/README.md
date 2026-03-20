@@ -43,6 +43,7 @@ The quickest way to generate a signed URL for testing:
 
 ```bash
 # Generate a signed URL valid for 1 hour for downloading an object
+
 gcloud storage sign-url gs://my-bucket/reports/quarterly-report.pdf \
   --duration=1h
 ```

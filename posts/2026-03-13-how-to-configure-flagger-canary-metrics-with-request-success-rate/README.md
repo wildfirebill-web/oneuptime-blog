@@ -282,6 +282,7 @@ If the success rate metric returns no data, the check is considered failed. Comm
 
 ```bash
 # Verify metrics are being collected
+
 kubectl port-forward -n monitoring svc/prometheus 9090:9090
 # Query Prometheus directly for your service's metrics
 ```

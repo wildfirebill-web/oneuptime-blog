@@ -28,6 +28,7 @@ Calculate how much RAM each PHP worker uses:
 
 ```bash
 # Check average memory usage of running PHP-FPM processes
+
 ps -ylC php-fpm8.3 --sort:rss | awk '{ sum+=$8 } END { print sum/NR/1024, "MB average" }'
 
 # Or use this more readable approach

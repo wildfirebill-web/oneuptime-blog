@@ -16,6 +16,7 @@ When you run nspawn without network flags, the container shares the host network
 
 ```bash
 # Container uses host networking by default
+
 sudo systemd-nspawn -bD /var/lib/machines/mycontainer
 ```
 

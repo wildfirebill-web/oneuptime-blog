@@ -45,6 +45,7 @@ If you are using the default local backend, the state file is `terraform.tfstate
 
 ```bash
 # Check file permissions
+
 ls -la terraform.tfstate
 
 # Fix ownership

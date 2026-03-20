@@ -12,7 +12,7 @@ Split-horizon (split-view) DNS returns different answers for the same domain bas
 
 ## Architecture
 
-```
+```text
 Internal IPv6 client (2001:db8:internal::/48)
     → DNS query: www.example.com AAAA
     → Split-horizon DNS
@@ -87,13 +87,14 @@ server:
     prefer-ip6: yes
 
 # Internal zone served by internal authoritative server
+
 stub-zone:
     name: "example.com"
     stub-addr: fd00::53   # Internal authoritative server
     stub-first: no
 
-# External zone — resolved from authoritative servers
-# (no override needed — recursive resolver handles it)
+# External zone - resolved from authoritative servers
+# (no override needed - recursive resolver handles it)
 ```
 
 ## Option 3: CoreDNS with View Plugin

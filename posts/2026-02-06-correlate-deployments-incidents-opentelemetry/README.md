@@ -14,6 +14,7 @@ The OpenTelemetry resource semantic conventions include deployment-related attri
 
 ```python
 # Set deployment attributes on the OTel resource
+
 from opentelemetry.sdk.resources import Resource
 from opentelemetry.semconv.resource import ResourceAttributes
 from opentelemetry.sdk.trace import TracerProvider

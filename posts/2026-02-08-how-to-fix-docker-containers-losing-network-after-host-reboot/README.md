@@ -26,6 +26,7 @@ Check the current state after a reboot:
 
 ```bash
 # Verify the Docker bridge interface exists
+
 ip link show docker0
 
 # Check if iptables has Docker's NAT rules

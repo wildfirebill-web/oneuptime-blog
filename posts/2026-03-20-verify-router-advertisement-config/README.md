@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Router Advertisement, Verification, radvd, Networking, Troubleshooting
+Tags: IPv6, Router Advertisement, Verification, Radvd, Networking, Troubleshooting
 
 Description: Verify IPv6 Router Advertisement configuration end-to-end from the router's radvd settings through to client address assignment and default route installation.
 
@@ -14,6 +14,7 @@ After configuring Router Advertisements, a systematic verification process ensur
 
 ```bash
 # Test radvd configuration file for syntax errors before reloading
+
 sudo radvd --configtest -C /etc/radvd.conf
 # Output: "configuration file is ok" or a specific error message
 

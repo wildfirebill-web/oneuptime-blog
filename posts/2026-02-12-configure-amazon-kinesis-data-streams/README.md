@@ -54,6 +54,7 @@ Here's how to calculate the shards you need.
 import math
 
 # Your workload parameters
+
 records_per_second = 5000
 avg_record_size_bytes = 500
 

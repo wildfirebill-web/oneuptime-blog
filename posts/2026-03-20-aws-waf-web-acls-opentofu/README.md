@@ -19,6 +19,7 @@ WAF Web ACLs (Access Control Lists) contain ordered rules that inspect web reque
 
 ```hcl
 # IP set for trusted office and VPN IPs
+
 resource "aws_wafv2_ip_set" "trusted_ips" {
   name               = "${var.project_name}-trusted-ips"
   scope              = "REGIONAL"
@@ -222,4 +223,4 @@ tofu apply
 
 ## Conclusion
 
-Ordering WAF rules by priority is critical—rules are evaluated in ascending priority order and the first matching rule's action applies. Use low priority numbers (1-10) for allowlist and blocklist rules that should take precedence over managed rules. Test custom rules with the WAF rule tester in the console before deploying to production, and start rules in `count` mode to validate they match the expected traffic before switching to `block`.
+Ordering WAF rules by priority is critical-rules are evaluated in ascending priority order and the first matching rule's action applies. Use low priority numbers (1-10) for allowlist and blocklist rules that should take precedence over managed rules. Test custom rules with the WAF rule tester in the console before deploying to production, and start rules in `count` mode to validate they match the expected traffic before switching to `block`.

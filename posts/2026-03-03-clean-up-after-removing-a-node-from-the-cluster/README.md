@@ -33,6 +33,7 @@ If the node is still responding, drain it first:
 
 ```bash
 # Cordon to prevent new scheduling
+
 kubectl cordon node-to-remove
 
 # Drain all workloads

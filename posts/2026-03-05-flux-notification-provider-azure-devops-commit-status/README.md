@@ -34,6 +34,7 @@ Store the Azure DevOps token in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the Azure DevOps PAT
+
 kubectl create secret generic azuredevops-token \
   --namespace=flux-system \
   --from-literal=token=YOUR_AZURE_DEVOPS_PAT

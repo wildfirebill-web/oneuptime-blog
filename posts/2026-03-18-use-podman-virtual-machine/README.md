@@ -55,6 +55,7 @@ Download a cloud image and create a VM:
 
 ```bash
 # Download Fedora cloud image
+
 wget https://download.fedoraproject.org/pub/fedora/linux/releases/40/Cloud/x86_64/images/Fedora-Cloud-Base-40-1.14.x86_64.qcow2
 
 # Create a larger disk from the cloud image

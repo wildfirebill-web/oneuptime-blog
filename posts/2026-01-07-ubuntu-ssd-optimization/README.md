@@ -48,6 +48,7 @@ Check if your drive is an SSD by examining the rotational flag:
 
 ```bash
 # Check if the drive is rotational (0 = SSD, 1 = HDD)
+
 # The lsblk command with the ROTA column shows rotation status
 cat /sys/block/sda/queue/rotational
 ```

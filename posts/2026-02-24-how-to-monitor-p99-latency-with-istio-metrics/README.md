@@ -207,6 +207,7 @@ Create a time series panel with three queries:
 
 ```promql
 # P50
+
 istio:request_duration_p50_5m{destination_service=~"$service"}
 
 # P90

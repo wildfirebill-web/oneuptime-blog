@@ -125,6 +125,7 @@ Kubernetes probes target **container ports**, not Service ports. The kubelet sen
 
 ```yaml
 # Correct - uses container port
+
 livenessProbe:
   httpGet:
     port: 8081

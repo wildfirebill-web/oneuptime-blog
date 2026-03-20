@@ -34,6 +34,7 @@ Here is a typical Lambda HTTP function:
 
 ```python
 # Original AWS Lambda function
+
 import json
 
 def lambda_handler(event, context):

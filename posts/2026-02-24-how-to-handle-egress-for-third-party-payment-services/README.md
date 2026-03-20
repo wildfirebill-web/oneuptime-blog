@@ -269,6 +269,7 @@ Before deploying to production, verify your configuration:
 
 ```bash
 # Test from the payment service pod
+
 kubectl exec -n payment-system deploy/payment-service -- curl -sI https://api.stripe.com/v1/charges
 
 # Test from a non-payment service (should be blocked)

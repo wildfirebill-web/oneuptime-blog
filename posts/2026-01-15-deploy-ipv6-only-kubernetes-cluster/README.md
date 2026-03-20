@@ -66,6 +66,7 @@ Kubernetes requires IPv6 forwarding to route traffic between pods. Enable it per
 
 ```bash
 # Create sysctl configuration for IPv6 networking
+
 cat <<EOF | sudo tee /etc/sysctl.d/99-kubernetes-ipv6.conf
 # Enable IPv6 forwarding for Kubernetes pod networking
 net.ipv6.conf.all.forwarding = 1

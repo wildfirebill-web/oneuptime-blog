@@ -24,6 +24,7 @@ StatefulSets have a distinct status structure:
 
 ```yaml
 # Example StatefulSet status
+
 status:
   observedGeneration: 5
   replicas: 3

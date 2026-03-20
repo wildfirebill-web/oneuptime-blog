@@ -51,6 +51,7 @@ The default driver stores logs as JSON in `/var/lib/docker/containers/<id>/<id>-
 
 ```bash
 # View raw log file location
+
 docker inspect mycontainer --format '{{.LogPath}}'
 
 # Check log file size

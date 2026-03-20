@@ -20,6 +20,7 @@ Podman reads trust policies from `/etc/containers/policy.json` for system-wide s
 
 ```bash
 # View the system-wide policy
+
 cat /etc/containers/policy.json
 
 # View the user-level policy (if it exists)

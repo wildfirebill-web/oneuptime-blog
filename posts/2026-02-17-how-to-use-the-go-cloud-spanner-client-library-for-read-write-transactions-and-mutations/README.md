@@ -18,6 +18,7 @@ Install the Spanner client library and create a test database.
 
 ```bash
 # Install the Go client library
+
 go get cloud.google.com/go/spanner
 
 # Create a Spanner instance (if you do not have one)

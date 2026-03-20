@@ -38,6 +38,7 @@ Here is a minimal unit test that validates a module's output:
 
 ```hcl
 # tests/unit.tftest.hcl
+
 # Unit tests for the VPC module
 
 # Run block defines a single test case

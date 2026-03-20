@@ -38,7 +38,7 @@ In **Swarm > Services**, Portainer shows each service with:
 - Last update timestamp
 - Image version currently running
 
-A service showing `1/3` running means replicas are failing — click the service to see which tasks failed and why.
+A service showing `1/3` running means replicas are failing - click the service to see which tasks failed and why.
 
 ## Step 3: Automated Health Monitoring with Prometheus
 
@@ -79,6 +79,7 @@ Prometheus scrape config:
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: 'swarm-nodes'
     static_configs:
@@ -110,7 +111,7 @@ docker node ls
 # All managers should show "Reachable" or "Leader" in the ManagerStatus column
 ```
 
-If a manager shows "Unreachable," the cluster may be approaching a quorum failure — address immediately.
+If a manager shows "Unreachable," the cluster may be approaching a quorum failure - address immediately.
 
 ## Summary
 

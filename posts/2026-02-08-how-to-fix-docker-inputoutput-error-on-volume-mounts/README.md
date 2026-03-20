@@ -26,6 +26,7 @@ Or when you try to list files inside the container:
 
 ```bash
 # Attempting to list files on a mounted volume
+
 ls /data/
 ls: reading directory '/data/': Input/output error
 ```

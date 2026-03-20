@@ -66,6 +66,7 @@ Here is a Python script that collects PostgreSQL replication lag and exports it 
 
 ```python
 # pg_replication_monitor.py - Collect PostgreSQL replication lag metrics
+
 import psycopg2
 import time
 from opentelemetry import metrics

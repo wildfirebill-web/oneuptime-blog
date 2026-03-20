@@ -16,6 +16,7 @@ By default, Docker containers run as root (UID 0). This user inside the containe
 
 ```bash
 # Default container runs as root
+
 docker run --rm alpine whoami
 # root
 

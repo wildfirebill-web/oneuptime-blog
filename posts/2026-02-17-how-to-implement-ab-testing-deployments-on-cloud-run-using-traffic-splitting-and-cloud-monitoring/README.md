@@ -31,6 +31,7 @@ Start with your current production version as the control:
 
 ```bash
 # Deploy version A (control) - this is your current production code
+
 gcloud run deploy my-app \
   --image=gcr.io/my-project/my-app:v2.0.0 \
   --region=us-central1 \

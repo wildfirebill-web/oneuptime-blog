@@ -24,6 +24,7 @@ This guide covers the setup of a complete eBPF troubleshooting environment inclu
 
 ```bash
 # Install bpftool on Ubuntu/Debian nodes
+
 kubectl debug node/<node-name> -it --image=ubuntu:22.04 -- bash <<'EOF'
 apt-get update -qq
 apt-get install -y linux-tools-$(uname -r) linux-tools-generic tcpdump iproute2

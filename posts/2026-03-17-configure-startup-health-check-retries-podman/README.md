@@ -18,6 +18,7 @@ The number of startup retries directly determines the maximum startup window for
 
 ```bash
 # Allow 30 retries during startup
+
 podman run -d \
   --name startup-app \
   --health-startup-cmd "curl -f http://localhost:8080/ready || exit 1" \

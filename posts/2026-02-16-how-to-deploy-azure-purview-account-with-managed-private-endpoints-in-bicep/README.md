@@ -421,6 +421,7 @@ output purviewScanEndpoint string = purviewAccount.properties.endpoints.scan
 
 ```bash
 # Create the resource group
+
 az group create --name rg-purview-prod --location eastus2
 
 # Deploy the Bicep template

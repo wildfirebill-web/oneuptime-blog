@@ -24,6 +24,7 @@ Static thresholds are explicit values you define based on known limits or SLA re
 
 ```yaml
 # Static threshold configuration
+
 alert:
   name: high_cpu_usage
   metric: system.cpu.utilization

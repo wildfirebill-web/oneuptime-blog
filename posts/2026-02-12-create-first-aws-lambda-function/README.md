@@ -40,6 +40,7 @@ Here's the simplest possible Lambda function in Python:
 
 ```python
 # The handler function - Lambda calls this when triggered
+
 def lambda_handler(event, context):
     # event contains the trigger data
     # context contains metadata about the invocation

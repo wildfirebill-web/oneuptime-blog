@@ -48,6 +48,7 @@ variable "domain" {
 
 ```hcl
 # cache-static.tf - Aggressive caching for static files
+
 resource "cloudflare_page_rule" "cache_static" {
   zone_id  = var.zone_id
   target   = "${var.domain}/static/*"

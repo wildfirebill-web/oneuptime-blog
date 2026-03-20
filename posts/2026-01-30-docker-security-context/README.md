@@ -44,6 +44,7 @@ You can specify the user at runtime or in the Dockerfile:
 
 ```dockerfile
 # Dockerfile approach
+
 FROM alpine:3.19
 
 # Create a non-root user

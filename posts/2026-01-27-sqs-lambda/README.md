@@ -83,6 +83,7 @@ First, create your SQS queue. You can use Standard or FIFO queues with Lambda.
 
 ```bash
 # Create a standard queue with recommended settings for Lambda integration
+
 # VisibilityTimeout should be 6x your Lambda timeout to prevent duplicate processing
 aws sqs create-queue \
     --queue-name order-processing-queue \

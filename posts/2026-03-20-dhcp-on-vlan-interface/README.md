@@ -20,6 +20,7 @@ When a DHCP server serves a VLAN, your VLAN subinterface can obtain its IP, gate
 
 ```bash
 # Bring up the VLAN interface first
+
 ip link set eth0 up
 ip link set eth0.100 up
 

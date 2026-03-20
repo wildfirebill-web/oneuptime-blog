@@ -26,6 +26,7 @@ Start with a demonstration that makes the risk real:
 
 ```bash
 # Deploy a pod with no egress restrictions
+
 kubectl run test-pod --image=nicolaka/netshoot -- sleep 3600
 
 # Show it can reach arbitrary external services

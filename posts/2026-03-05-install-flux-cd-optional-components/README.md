@@ -40,6 +40,7 @@ The `flux install` command accepts a `--components-extra` flag to install option
 
 ```bash
 # Install Flux with image automation controllers included
+
 flux install --components-extra=image-reflector-controller,image-automation-controller
 ```
 

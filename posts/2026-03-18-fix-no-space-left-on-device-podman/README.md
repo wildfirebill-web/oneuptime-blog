@@ -54,6 +54,7 @@ Podman accumulates stopped containers, dangling images, and unused volumes over 
 
 ```bash
 # Remove all stopped containers
+
 podman container prune -f
 
 # Remove all unused images (not just dangling ones)

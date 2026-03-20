@@ -122,6 +122,7 @@ Run a pod with your runtime and measure its baseline resource consumption:
 
 ```bash
 # Create a minimal pod
+
 kubectl run test-overhead --image=nginx --restart=Never --overrides='
 {
   "spec": {

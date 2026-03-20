@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, DNS, IPv4, resolve-prefer, Dynamic Resolution, Service Discovery
+Tags: HAProxy, DNS, IPv4, Resolve-prefer, Dynamic Resolution, Service Discovery
 
 Description: Configure HAProxy to resolve backend hostnames dynamically and prefer IPv4 addresses when both A and AAAA records exist using the resolve-prefer parameter.
 
 ## Introduction
 
-HAProxy supports dynamic DNS resolution for backend servers, allowing it to automatically update server IPs when DNS changes. The `resolve-prefer ipv4` parameter instructs HAProxy to prefer A records over AAAA records when both exist—critical for IPv4-only backend networks.
+HAProxy supports dynamic DNS resolution for backend servers, allowing it to automatically update server IPs when DNS changes. The `resolve-prefer ipv4` parameter instructs HAProxy to prefer A records over AAAA records when both exist-critical for IPv4-only backend networks.
 
 ## Configuring the Resolvers Section
 
@@ -103,6 +103,7 @@ Check which IPs have been resolved for servers:
 
 ```bash
 # View server states and resolved IPs
+
 echo "show servers state" | sudo socat stdio /run/haproxy/admin.sock | column -t
 
 # View DNS resolution cache

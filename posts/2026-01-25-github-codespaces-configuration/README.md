@@ -153,6 +153,7 @@ For applications requiring databases and other services, use Docker Compose:
 
 ```yaml
 # .devcontainer/docker-compose.yml
+
 version: '3.8'
 
 services:

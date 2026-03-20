@@ -158,6 +158,7 @@ Organize your media library for optimal scanner detection:
 
 ```bash
 # Recommended directory structure
+
 /srv/media/
   movies/
     Movie Name (2024)/

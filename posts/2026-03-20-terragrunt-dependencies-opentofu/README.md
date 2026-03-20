@@ -8,7 +8,7 @@ Description: Learn how to declare and consume inter-module dependencies in Terra
 
 ## Introduction
 
-In a real infrastructure project, modules depend on each other — EKS needs the VPC, RDS needs both the VPC and the security groups. Terragrunt's `dependency` blocks let you declare these relationships explicitly, share outputs between modules, and ensure `run-all` operations respect the correct order.
+In a real infrastructure project, modules depend on each other - EKS needs the VPC, RDS needs both the VPC and the security groups. Terragrunt's `dependency` blocks let you declare these relationships explicitly, share outputs between modules, and ensure `run-all` operations respect the correct order.
 
 ## Declaring a Dependency
 
@@ -16,6 +16,7 @@ The `dependency` block references another Terragrunt module and exposes its outp
 
 ```hcl
 # environments/prod/eks/terragrunt.hcl
+
 include "root" {
   path = find_in_parent_folders()
 }
@@ -109,7 +110,7 @@ terragrunt run-all destroy
 
 If Terragrunt reports a cycle, split the circular dependency by extracting shared resources into a separate module:
 
-```
+```text
 # Bad: module-a depends on module-b depends on module-a
 # Fix: extract the shared resource into module-shared
 module-shared  (no dependencies)

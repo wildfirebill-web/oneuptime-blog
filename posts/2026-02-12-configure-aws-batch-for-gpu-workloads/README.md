@@ -30,6 +30,7 @@ The compute environment defines what instance types Batch can use. For GPU workl
 
 ```bash
 # Create a managed compute environment with GPU instances
+
 aws batch create-compute-environment \
   --compute-environment-name gpu-compute-env \
   --type MANAGED \

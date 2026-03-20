@@ -12,14 +12,14 @@ IPv4-mapped IPv6 addresses (`::ffff:x.x.x.x`) are used by dual-stack sockets to 
 
 ## IPv4-Mapped Address Format
 
-```
+```text
 ::ffff:0:0/96      (IANA prefix for IPv4-mapped)
 ::ffff:192.168.1.1 (IPv4 192.168.1.1 mapped to IPv6)
 ::ffff:c0a8:0101   (same, in hex notation)
 ```
 
 The mapping is simple:
-```
+```text
 IPv4: w.x.y.z
 IPv6: ::ffff:w.x.y.z
 Binary: 80 zeros + 16 ones + 32-bit IPv4 address
@@ -151,6 +151,7 @@ def normalize_client_address(raw_ip: str) -> str:
         return raw_ip
 
 # Usage with socket accept
+
 server = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 server.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)
 server.bind(('::', 8080, 0, 0))

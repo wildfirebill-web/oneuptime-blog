@@ -88,6 +88,7 @@ locals {
 }
 
 # Now create resources with for_each
+
 resource "aws_vpc" "this" {
   for_each = var.vpcs
 

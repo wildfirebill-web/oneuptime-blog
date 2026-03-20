@@ -28,6 +28,7 @@ This guide covers the most common selector troubleshooting scenarios, including 
 
 ```bash
 # Check how many endpoints the selector matches
+
 calicoctl get hostendpoints --selector="node-role == 'worker'" -o wide
 
 # If no output, the selector matches nothing

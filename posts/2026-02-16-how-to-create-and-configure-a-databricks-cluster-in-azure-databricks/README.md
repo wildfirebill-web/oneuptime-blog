@@ -85,6 +85,7 @@ Add Spark configuration properties to tune the Spark engine for your workload.
 
 ```properties
 # Enable adaptive query execution for better join and aggregation performance
+
 spark.sql.adaptive.enabled true
 
 # Set the shuffle partition count (default 200 is often too high for small datasets)

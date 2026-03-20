@@ -39,6 +39,7 @@ Check the `argocd-cm` ConfigMap for custom checks:
 
 ```bash
 # List all custom health checks configured
+
 kubectl get configmap argocd-cm -n argocd -o yaml | grep "resource.customizations.health"
 ```
 
@@ -205,7 +206,7 @@ Verify that the right check is being applied by temporarily adding a distinctive
 
 ## Step 7: Handle Special Health Status Cases
 
-### Resources Stuck in "Progressing"
+Resources Stuck in "Progressing"
 
 If a resource is permanently showing "Progressing", either the health check never transitions to another state, or the resource genuinely never reaches a ready state.
 
@@ -217,7 +218,7 @@ kubectl get <resource> -n <namespace> -w
 kubectl events -n <namespace> --for=<resource-type>/<resource-name>
 ```
 
-### Resources Showing "Missing"
+Resources Showing "Missing"
 
 "Missing" means ArgoCD expects a resource that does not exist in the cluster. This is not a health check issue but rather a sync issue. The resource is in your Git repo but not deployed.
 
@@ -229,7 +230,7 @@ kubectl get <resource> -n <namespace>
 argocd app get my-app
 ```
 
-### Resources Always Showing "Healthy"
+Resources Always Showing "Healthy"
 
 If a CRD always shows as healthy regardless of its actual state, there is probably no custom health check defined for it. ArgoCD defaults to "Healthy" for unknown resource types.
 

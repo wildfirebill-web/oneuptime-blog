@@ -28,6 +28,7 @@ Using Terraform:
 
 ```hcl
 # Basic app client for a web application
+
 resource "aws_cognito_user_pool_client" "web_app" {
   name         = "web-app-client"
   user_pool_id = aws_cognito_user_pool.main.id

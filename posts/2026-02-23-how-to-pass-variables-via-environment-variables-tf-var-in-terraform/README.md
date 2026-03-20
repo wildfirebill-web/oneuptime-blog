@@ -18,6 +18,7 @@ The convention is simple: take your Terraform variable name, prefix it with `TF_
 
 ```bash
 # If your variable is named "environment"
+
 export TF_VAR_environment="production"
 
 # If your variable is named "instance_count"

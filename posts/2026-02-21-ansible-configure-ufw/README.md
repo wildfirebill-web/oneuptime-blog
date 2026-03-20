@@ -40,6 +40,7 @@ graph TD
 
 ```yaml
 # group_vars/all.yml
+
 # Default UFW settings applied to all servers
 ufw_default_incoming: deny
 ufw_default_outgoing: allow

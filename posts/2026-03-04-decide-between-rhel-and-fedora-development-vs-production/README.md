@@ -16,6 +16,7 @@ Fedora releases every 6 months with the latest packages. RHEL branches from a Fe
 
 ```bash
 # Fedora: Check your version (moves fast)
+
 cat /etc/fedora-release
 # Fedora release 41 (Forty One)
 

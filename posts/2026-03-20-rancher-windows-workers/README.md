@@ -22,6 +22,7 @@ Rancher supports hybrid Kubernetes clusters with both Linux and Windows worker n
 
 ```bash
 # Ensure cluster uses a Windows-compatible network plugin
+
 # RKE2 with Flannel (host-gw mode) works well for Windows
 
 # Check current network plugin

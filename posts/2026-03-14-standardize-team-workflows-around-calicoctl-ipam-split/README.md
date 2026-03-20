@@ -39,6 +39,7 @@ scheduled:
 ```bash
 #!/bin/bash
 # team-ipam-split.sh
+
 echo "=== calicoctl ipam split ==="
 echo "Operator: $USER"
 echo "Cluster: $(kubectl config current-context)"

@@ -89,6 +89,7 @@ Register services with Consul on startup:
 
 ```bash
 # Register a service with health check
+
 curl -X PUT http://consul:8500/v1/agent/service/register \
   -H "Content-Type: application/json" \
   -d '{

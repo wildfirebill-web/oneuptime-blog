@@ -26,6 +26,7 @@ Before diving into configuration, here are the key concepts:
 
 ```bash
 # Enable the Cloud Deploy API
+
 gcloud services enable \
   clouddeploy.googleapis.com \
   container.googleapis.com \

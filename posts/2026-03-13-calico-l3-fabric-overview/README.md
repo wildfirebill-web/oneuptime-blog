@@ -88,6 +88,7 @@ spec:
 
 ```bash
 # Disable node-to-node mesh (use with route reflectors)
+
 calicoctl patch bgpconfiguration default \
   -p '{"spec":{"nodeToNodeMeshEnabled":false}}'
 ```

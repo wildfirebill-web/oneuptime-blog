@@ -29,6 +29,7 @@ Tags are the most queried attribute in AWS, but they're stored as arrays, which 
 
 ```bash
 # Find EC2 instances with a specific tag
+
 aws ec2 describe-instances \
   --query "Reservations[].Instances[?Tags[?Key=='Environment' && Value=='production']].{
     Name: Tags[?Key=='Name'] | [0].Value,

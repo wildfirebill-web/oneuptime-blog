@@ -32,6 +32,7 @@ The simplest approach is preventing high-cardinality attributes from entering yo
 
 ```python
 # Python SDK configuration to drop high-cardinality attributes
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.view import View, DropAggregation

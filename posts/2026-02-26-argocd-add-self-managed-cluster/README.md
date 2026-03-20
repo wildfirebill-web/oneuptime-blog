@@ -29,6 +29,7 @@ If your kubeconfig already has access to the self-managed cluster:
 
 ```bash
 # Verify your kubeconfig contexts
+
 kubectl config get-contexts
 
 # Output:

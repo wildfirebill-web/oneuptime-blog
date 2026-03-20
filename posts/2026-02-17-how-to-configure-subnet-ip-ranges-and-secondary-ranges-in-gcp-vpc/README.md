@@ -53,6 +53,7 @@ GKE needs significantly more IPs than you might expect:
 
 ```bash
 # Example: for a GKE cluster with up to 256 nodes
+
 # Pod range: 256 nodes * /24 per node = /16 minimum (65,536 IPs)
 # Service range: /20 gives 4,096 service IPs
 

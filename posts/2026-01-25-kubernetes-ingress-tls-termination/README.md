@@ -39,6 +39,7 @@ Install an Ingress controller. nginx-ingress is the most common:
 
 ```bash
 # Install nginx Ingress controller
+
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.0/deploy/static/provider/cloud/deploy.yaml
 
 # Wait for it to be ready

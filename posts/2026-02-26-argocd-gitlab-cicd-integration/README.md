@@ -32,6 +32,7 @@ The standard GitOps pattern where GitLab CI updates the image tag in the deploym
 
 ```yaml
 # .gitlab-ci.yml in the application repository
+
 stages:
   - build
   - test

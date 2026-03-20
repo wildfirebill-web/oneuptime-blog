@@ -38,6 +38,7 @@ To see all targets on your system:
 
 ```bash
 # List all available targets
+
 systemctl list-units --type=target
 
 # List all targets including inactive ones

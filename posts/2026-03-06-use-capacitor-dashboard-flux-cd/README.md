@@ -27,6 +27,7 @@ Verify Flux is running:
 
 ```bash
 # Confirm Flux components are healthy
+
 flux check
 
 # List existing Flux resources

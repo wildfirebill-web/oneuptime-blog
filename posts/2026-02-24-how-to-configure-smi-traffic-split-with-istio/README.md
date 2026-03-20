@@ -251,6 +251,7 @@ For a blue-green deployment, you keep two full environments and switch traffic a
 
 ```yaml
 # All traffic to blue (v1)
+
 apiVersion: split.smi-spec.io/v1alpha2
 kind: TrafficSplit
 metadata:

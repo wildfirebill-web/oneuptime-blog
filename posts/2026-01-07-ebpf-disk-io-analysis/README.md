@@ -62,6 +62,7 @@ The following commands install BCC tools on common Linux distributions:
 
 ```bash
 # Install BCC tools on Ubuntu/Debian
+
 # This package includes pre-built tools like biosnoop, biolatency, and more
 sudo apt-get update
 sudo apt-get install -y bpfcc-tools linux-headers-$(uname -r)

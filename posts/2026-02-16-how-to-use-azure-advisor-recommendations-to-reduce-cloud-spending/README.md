@@ -90,6 +90,7 @@ You can list Advisor recommendations using the Azure CLI.
 
 ```bash
 # List all cost recommendations for the current subscription
+
 az advisor recommendation list \
   --category Cost \
   --query "[].{Resource:resourceGroup, Impact:impact, Problem:shortDescription.problem, Solution:shortDescription.solution, Savings:extendedProperties.annualSavingsAmount}" \

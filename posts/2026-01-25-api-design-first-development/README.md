@@ -28,6 +28,7 @@ OpenAPI (formerly Swagger) is the industry standard for describing REST APIs:
 
 ```yaml
 # openapi.yaml
+
 openapi: 3.1.0
 info:
   title: Order Management API

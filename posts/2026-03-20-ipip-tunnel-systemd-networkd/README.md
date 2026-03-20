@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPIP, Tunnel, systemd-networkd, Linux, IPv4, .netdev, ip-in-ip, Networking
+Tags: IPIP, Tunnel, systemd-networkd, Linux, IPv4, .netdev, IP-in-IP, Networking
 
 Description: Learn how to configure an IPIP (IP-in-IP) tunnel using systemd-networkd .netdev and .network files for persistent IPv4-over-IPv4 encapsulation.
 
 ---
 
-IPIP (IP-in-IP) tunnels encapsulate IPv4 packets inside IPv4 packets with minimal overhead — just 20 bytes per packet, less than GRE's 24 bytes. They're useful for simple point-to-point connectivity.
+IPIP (IP-in-IP) tunnels encapsulate IPv4 packets inside IPv4 packets with minimal overhead - just 20 bytes per packet, less than GRE's 24 bytes. They're useful for simple point-to-point connectivity.
 
 ## IPIP vs. GRE
 
@@ -26,6 +26,7 @@ IPIP (IP-in-IP) tunnels encapsulate IPv4 packets inside IPv4 packets with minima
 
 ```ini
 # /etc/systemd/network/ipip1.netdev
+
 [NetDev]
 Name=ipip1
 Kind=ipip
@@ -137,5 +138,5 @@ table ip filter {
 
 - IPIP tunnels use IP protocol 4 (not TCP/UDP); allow proto 4 between endpoints in firewall rules.
 - In systemd-networkd, use `Kind=ipip` in the `.netdev` file with `[Tunnel]` section for Local/Remote IPs.
-- IPIP has lower overhead than GRE but no support for multicast or tunnel keys — use GRE when those are needed.
+- IPIP has lower overhead than GRE but no support for multicast or tunnel keys - use GRE when those are needed.
 - MTU on IPIP tunnels is 20 bytes less than the physical interface (1500-20=1480 for standard Ethernet).

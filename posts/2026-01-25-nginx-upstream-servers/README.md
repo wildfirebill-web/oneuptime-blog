@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Upstream, Load Balancing, Backend, Proxy
+Tags: Nginx, Upstream, Load Balancing, Backend, Proxy
 
 Description: Learn how to configure upstream server groups in Nginx for load balancing, failover, and efficient connection management to your backend servers.
 
@@ -16,6 +16,7 @@ Define an upstream group and reference it in proxy_pass:
 
 ```nginx
 # Define upstream servers
+
 upstream backend {
     server 192.168.1.10:8080;
     server 192.168.1.11:8080;

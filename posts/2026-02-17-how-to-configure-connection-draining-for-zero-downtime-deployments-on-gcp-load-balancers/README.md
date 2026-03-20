@@ -44,6 +44,7 @@ Connection draining is configured on the backend service. The timeout value (in 
 
 ```bash
 # Set connection draining timeout to 5 minutes (300 seconds)
+
 gcloud compute backend-services update my-backend-service \
     --connection-draining-timeout=300 \
     --global

@@ -18,6 +18,7 @@ Machine features are configured under `machine.features` in the Talos machine co
 
 ```yaml
 # Basic machine features configuration
+
 machine:
   features:
     rbac: true

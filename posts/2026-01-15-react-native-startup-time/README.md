@@ -189,6 +189,7 @@ dependencies {
 
 ```ruby
 # ios/Podfile
+
 use_react_native!(
   :path => config[:reactNativePath],
   :hermes_enabled => true,

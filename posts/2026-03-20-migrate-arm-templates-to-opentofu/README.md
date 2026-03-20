@@ -16,6 +16,7 @@ Audit what is currently managed by ARM templates.
 
 ```bash
 # List all resource groups
+
 az group list --query '[*].name' -o tsv
 
 # List deployments in a resource group
@@ -100,7 +101,7 @@ tofu apply
 
 Map ARM template concepts to OpenTofu equivalents.
 
-```
+```hcl
 ARM Template         → OpenTofu equivalent
 --------------------------------------------
 parameters           → variable blocks

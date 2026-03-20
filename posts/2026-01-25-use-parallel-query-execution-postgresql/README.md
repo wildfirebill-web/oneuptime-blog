@@ -63,6 +63,7 @@ ORDER BY name;
 # postgresql.conf
 
 # Maximum workers per query (default: 2)
+
 max_parallel_workers_per_gather = 4
 
 # Total parallel workers across all queries

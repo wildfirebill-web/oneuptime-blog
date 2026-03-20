@@ -28,6 +28,7 @@ graph TD
 
 ```yaml
 # inventories/production/hosts.yml
+
 all:
   children:
     redis_cluster:

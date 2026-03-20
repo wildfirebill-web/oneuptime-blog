@@ -25,6 +25,7 @@ If you have not already created an LKE cluster, you can do so with the Linode CL
 
 ```bash
 # Create an LKE cluster with 3 nodes
+
 linode-cli lke cluster-create \
   --label my-argocd-cluster \
   --region us-east \

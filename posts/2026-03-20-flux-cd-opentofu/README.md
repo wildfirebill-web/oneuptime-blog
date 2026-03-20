@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     helm = {
@@ -189,8 +190,8 @@ resource "kubernetes_manifest" "reconciliation_alert" {
 
 ## Best Practices
 
-- Store Flux's bootstrap configuration in the same Git repository it manages — this ensures Flux can self-heal if it's accidentally deleted.
+- Store Flux's bootstrap configuration in the same Git repository it manages - this ensures Flux can self-heal if it's accidentally deleted.
 - Use SSH key authentication rather than HTTPS tokens for better security and easier rotation.
-- Enable Flux notifications so your team knows when reconciliation fails — silent failures are the worst kind.
+- Enable Flux notifications so your team knows when reconciliation fails - silent failures are the worst kind.
 - Use Kustomize overlays or HelmRelease values to manage environment-specific configuration within the Git repo.
 - Set resource limits on Flux controllers to prevent them from consuming excessive cluster resources.

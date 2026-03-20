@@ -8,11 +8,11 @@ Description: Understand how IPv6 Stateless Address Autoconfiguration (SLAAC) all
 
 ## Introduction
 
-Stateless Address Autoconfiguration (SLAAC, RFC 4862) is the mechanism by which IPv6 hosts automatically configure global unicast addresses using prefix information received from Router Advertisements (RAs). Unlike DHCPv4, SLAAC requires no central server — the host constructs its own address by combining the advertised prefix with a locally generated interface identifier. SLAAC is the default address configuration mechanism for IPv6 and is used on virtually all IPv6-capable networks.
+Stateless Address Autoconfiguration (SLAAC, RFC 4862) is the mechanism by which IPv6 hosts automatically configure global unicast addresses using prefix information received from Router Advertisements (RAs). Unlike DHCPv4, SLAAC requires no central server - the host constructs its own address by combining the advertised prefix with a locally generated interface identifier. SLAAC is the default address configuration mechanism for IPv6 and is used on virtually all IPv6-capable networks.
 
 ## SLAAC Overview
 
-```
+```text
 SLAAC Process Summary:
 
 1. Host connects to network
@@ -32,7 +32,7 @@ SLAAC Process Summary:
 
 ## SLAAC vs DHCPv4 vs DHCPv6
 
-```
+```text
 Address Configuration Comparison:
 
 DHCPv4 (IPv4):
@@ -63,7 +63,7 @@ Stateless DHCPv6 (IPv6):
 
 The Prefix Information option in RA contains the SLAAC configuration.
 
-```
+```text
 Prefix Information Option (Type 3):
 
  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -98,7 +98,7 @@ Lifetimes:
 
 ## Address Generation from Prefix
 
-```
+```text
 SLAAC Address Formation:
 
 Prefix from RA: 2001:db8::/64 (64-bit prefix)
@@ -127,7 +127,7 @@ Methods for Interface Identifier:
 
 ## SLAAC Lifecycle States
 
-```
+```text
 Address Lifecycle (RFC 4862 Section 5.5.4):
 
 TENTATIVE:
@@ -161,6 +161,7 @@ Timers:
 
 ```bash
 # Show all IPv6 addresses including SLAAC-generated
+
 ip -6 addr show
 
 # Example output:

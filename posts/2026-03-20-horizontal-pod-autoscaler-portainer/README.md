@@ -17,6 +17,7 @@ The Horizontal Pod Autoscaler (HPA) automatically adjusts the number of pod repl
 
 ```bash
 # Install Metrics Server if not present
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 
@@ -146,14 +147,14 @@ Add scaling behavior policies to prevent thrashing:
 spec:
   behavior:
     scaleDown:
-      # Scale down gradually — reduce by 10% every 60 seconds
+      # Scale down gradually - reduce by 10% every 60 seconds
       policies:
         - type: Percent
           value: 10
           periodSeconds: 60
       stabilizationWindowSeconds: 300
     scaleUp:
-      # Scale up quickly — allow doubling every 30 seconds
+      # Scale up quickly - allow doubling every 30 seconds
       policies:
         - type: Percent
           value: 100

@@ -18,6 +18,7 @@ Get EMQX running with a single command:
 
 ```bash
 # Start EMQX with the dashboard exposed
+
 docker run -d \
   --name emqx \
   -p 1883:1883 \

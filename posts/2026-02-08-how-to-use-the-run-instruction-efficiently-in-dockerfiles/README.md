@@ -22,6 +22,7 @@ The shell form passes the command to `/bin/sh -c`:
 
 ```dockerfile
 # Shell form - executed via /bin/sh -c
+
 RUN apt-get update && apt-get install -y curl
 ```
 

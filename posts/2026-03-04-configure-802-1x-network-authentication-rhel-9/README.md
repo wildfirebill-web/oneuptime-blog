@@ -51,6 +51,7 @@ Install the required wpa_supplicant package (usually already installed):
 
 ```bash
 # Install wpa_supplicant if not present
+
 dnf install wpa_supplicant -y
 
 # Verify it is installed

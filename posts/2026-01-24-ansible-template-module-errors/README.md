@@ -53,6 +53,7 @@ fatal: [webserver]: FAILED! => {
 
 ```yaml
 # templates/config.conf.j2
+
 # Template references undefined variable
 database_host = {{ database_host }}
 database_port = {{ database_port }}

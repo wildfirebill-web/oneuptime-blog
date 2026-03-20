@@ -16,6 +16,7 @@ wrk is not in the standard Ubuntu repositories, so you'll compile it from source
 
 ```bash
 # Install build dependencies
+
 sudo apt install build-essential libssl-dev git
 
 # Clone the repository

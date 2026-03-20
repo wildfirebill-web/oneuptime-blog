@@ -10,7 +10,7 @@ Description: Learn how NAT64 translates between IPv6 and IPv4 networks, how DNS6
 
 NAT64 (RFC 6146) allows IPv6-only clients to communicate with IPv4-only servers by translating IPv6 packets to IPv4 at the border. It is used during IPv6 transition periods when some services are still IPv4-only.
 
-```
+```text
 [IPv6-only client]     [NAT64 gateway]      [IPv4-only server]
   2001:db8::1    ←→    Translates    ←→     203.0.113.1
 ```
@@ -21,7 +21,7 @@ NAT64 uses a **Well-Known Prefix**: `64:ff9b::/96`
 
 To reach an IPv4 address (e.g., 203.0.113.1), an IPv6 client sends traffic to:
 
-```
+```text
 64:ff9b::203.0.113.1
 = 64:ff9b::cb00:7101  (hex form of 203.0.113.1)
 ```
@@ -36,7 +36,7 @@ The NAT64 gateway:
 
 IPv6-only clients can't directly query IPv4 DNS records. DNS64 synthesizes AAAA (IPv6) records from A (IPv4) records:
 
-```
+```text
 Client queries: example.com AAAA
 DNS64 server:
   → Queries example.com AAAA → No result
@@ -50,6 +50,7 @@ Client sends IPv6 traffic to: 64:ff9b::203.0.113.1 → NAT64 translates
 
 ```bash
 # Install Tayga (stateless NAT64)
+
 apt install tayga
 
 # /etc/tayga.conf
@@ -131,6 +132,4 @@ Many mobile carriers (especially in markets with IPv4 exhaustion) use NAT64:
 
 **Related Reading:**
 
-- [How to Compare IPv4 and IPv6 Header Structures](https://oneuptime.com/blog/post/2026-03-20-ipv4-vs-ipv6-headers/view)
 - [How to Configure NAT on Linux Using iptables](https://oneuptime.com/blog/post/2026-03-20-nat-linux-iptables/view)
-- [How to Understand IPv4 Address Exhaustion](https://oneuptime.com/blog/post/2026-03-20-ipv4-address-exhaustion/view)

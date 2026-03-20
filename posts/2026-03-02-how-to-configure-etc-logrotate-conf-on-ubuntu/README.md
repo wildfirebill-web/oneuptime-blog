@@ -26,6 +26,7 @@ A typical Ubuntu logrotate.conf:
 # see "man logrotate" for details
 
 # rotate log files weekly
+
 weekly
 
 # use the adm group by default, since this is the owning group

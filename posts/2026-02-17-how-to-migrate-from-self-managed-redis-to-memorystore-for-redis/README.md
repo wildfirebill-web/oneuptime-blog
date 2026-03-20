@@ -34,6 +34,7 @@ This command creates a 5GB Standard-tier Memorystore instance in the us-central1
 
 ```bash
 # Create a Standard-tier Memorystore instance with 5GB capacity
+
 gcloud redis instances create my-redis-instance \
   --size=5 \
   --region=us-central1 \

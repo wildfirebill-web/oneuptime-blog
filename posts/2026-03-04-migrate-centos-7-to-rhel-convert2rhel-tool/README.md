@@ -16,6 +16,7 @@ Before starting, ensure your system is ready:
 
 ```bash
 # Verify your current CentOS version
+
 cat /etc/centos-release
 # CentOS Linux release 7.9.2009 (Core)
 

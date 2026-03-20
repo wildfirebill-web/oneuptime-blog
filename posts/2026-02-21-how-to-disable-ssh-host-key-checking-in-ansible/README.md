@@ -28,6 +28,7 @@ The most popular approach is disabling host key checking in the Ansible configur
 
 ```ini
 # ansible.cfg
+
 [defaults]
 host_key_checking = False
 ```

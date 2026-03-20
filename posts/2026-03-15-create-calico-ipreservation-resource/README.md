@@ -151,6 +151,7 @@ Confirm your reservations are active:
 
 ```bash
 # List all reservations
+
 calicoctl get ipreservations -o wide
 
 # View details of a specific reservation

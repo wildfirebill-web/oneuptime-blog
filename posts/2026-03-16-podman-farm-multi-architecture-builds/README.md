@@ -28,6 +28,7 @@ The multi-arch build workflow with Podman farm follows these steps:
 
 ```bash
 # Add connections for each architecture
+
 podman system connection add x86-builder \
     --identity ~/.ssh/podman_farm \
     ssh://builder@x86.build.example.com/run/user/1000/podman/podman.sock

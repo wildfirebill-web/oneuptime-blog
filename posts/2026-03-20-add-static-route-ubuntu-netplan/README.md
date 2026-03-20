@@ -14,6 +14,7 @@ On Ubuntu, Netplan is the standard way to configure persistent static routes. Ro
 
 ```yaml
 # /etc/netplan/01-network.yaml
+
 network:
   version: 2
   renderer: networkd
@@ -70,7 +71,7 @@ routes:
 ```yaml
 routes:
   - to: 10.50.0.0/16
-    via: 0.0.0.0      # No gateway — use interface directly
+    via: 0.0.0.0      # No gateway - use interface directly
     on-link: true
 ```
 

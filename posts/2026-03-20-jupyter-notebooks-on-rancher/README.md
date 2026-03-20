@@ -8,7 +8,7 @@ Description: Deploy JupyterHub on Rancher to provide collaborative notebook envi
 
 ## Introduction
 
-JupyterHub provides managed Jupyter Notebook environments for teams. Deploying it on Rancher enables on-demand notebook servers with GPU access, persistent storage for notebooks, and SSO integration for authentication—replacing expensive cloud notebook services.
+JupyterHub provides managed Jupyter Notebook environments for teams. Deploying it on Rancher enables on-demand notebook servers with GPU access, persistent storage for notebooks, and SSO integration for authentication-replacing expensive cloud notebook services.
 
 ## Step 1: Install JupyterHub via Helm
 
@@ -17,6 +17,7 @@ helm repo add jupyterhub https://hub.jupyter.org/helm-chart/
 helm repo update
 
 # Create values file
+
 cat > jupyterhub-values.yaml << 'EOF'
 proxy:
   secretToken: "$(openssl rand -hex 32)"  # Required - run command and paste output

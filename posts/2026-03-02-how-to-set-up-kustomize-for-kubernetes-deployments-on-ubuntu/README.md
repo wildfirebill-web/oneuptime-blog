@@ -16,6 +16,7 @@ Kustomize ships as a standalone binary and is also embedded in `kubectl` (via `k
 
 ```bash
 # Download the latest Kustomize release
+
 KUSTOMIZE_VERSION=$(curl -s https://api.github.com/repos/kubernetes-sigs/kustomize/releases/latest | grep '"tag_name"' | grep 'kustomize' | sed 's/.*kustomize\/v//;s/".*//')
 echo "Installing kustomize v${KUSTOMIZE_VERSION}"
 

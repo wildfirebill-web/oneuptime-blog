@@ -32,6 +32,7 @@ If you already have a workspace, skip this step. Otherwise, here is how to creat
 
 ```bash
 # Create a resource group if you do not have one
+
 az group create --name rg-monitoring --location eastus
 
 # Create the Log Analytics workspace
@@ -126,7 +127,7 @@ search *
 
 You should see tables corresponding to the log categories you enabled. For example, Key Vault audit logs land in the `AzureDiagnostics` table (for resources using legacy mode) or in resource-specific tables like `AZKVAuditLogs` (for resources that support resource-specific mode).
 
-## Resource-Specific vs. Azure Diagnostics Mode
+Resource-Specific vs. Azure Diagnostics Mode
 
 This is a detail that trips people up. Older Azure resources send all their logs to a single `AzureDiagnostics` table. Newer resources support resource-specific mode, where each log category gets its own dedicated table.
 

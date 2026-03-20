@@ -56,6 +56,7 @@ Kyverno provides two cleanup policy types:
 
 ```yaml
 # Basic structure of a Kyverno CleanupPolicy
+
 apiVersion: kyverno.io/v2beta1
 kind: CleanupPolicy
 metadata:

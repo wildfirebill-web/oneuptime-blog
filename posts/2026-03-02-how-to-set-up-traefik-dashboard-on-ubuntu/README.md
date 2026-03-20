@@ -45,6 +45,7 @@ For production, route the dashboard through a proper Traefik router with authent
 
 ```yaml
 # traefik.yml - static config
+
 api:
   dashboard: true
   # insecure: false is the default

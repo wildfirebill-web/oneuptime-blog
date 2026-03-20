@@ -54,6 +54,7 @@ TOTP is the most common MFA method. Users generate codes with apps like Google A
 
 ```bash
 # Enable the TOTP MFA method
+
 # This creates a new MFA method named "my-totp"
 vault write sys/mfa/method/totp/my-totp \
     issuer="MyCompany" \

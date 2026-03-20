@@ -27,6 +27,7 @@ If any of these steps is broken, L7 policies will not be enforced.
 
 ```bash
 # Check for waypoint proxies in the namespace
+
 kubectl get gateways -n my-app
 
 # Verify the waypoint pod is running

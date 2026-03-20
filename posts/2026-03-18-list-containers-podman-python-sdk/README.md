@@ -310,6 +310,7 @@ def watch_containers(interval=5):
             time.sleep(interval)
 
 # Run the watcher
+
 try:
     watch_containers()
 except KeyboardInterrupt:

@@ -1,8 +1,8 @@
-# How to Deploy Cassandra on Rancher
+# How to Deploy Cassandra on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Cassandra, Databases, NoSQL, Wide-Column
+Tags: Rancher, Kubernetes, Cassandra, Database, NoSQL, Wide-Column
 
 Description: Deploy Apache Cassandra on Rancher for highly available, distributed wide-column storage optimized for write-heavy workloads and time-series data.
 
@@ -21,6 +21,7 @@ Apache Cassandra is a highly scalable, distributed NoSQL database designed for h
 
 ```yaml
 # cassandra-values.yaml - Cassandra configuration
+
 dbUser:
   user: cassandra
   password: "CassandraP@ss"

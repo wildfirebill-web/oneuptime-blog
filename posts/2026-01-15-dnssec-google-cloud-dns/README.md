@@ -66,6 +66,7 @@ If you haven't already installed the gcloud CLI, follow these steps:
 
 ```bash
 # Download and install the Google Cloud SDK
+
 curl https://sdk.cloud.google.com | bash
 
 # Restart your shell or run

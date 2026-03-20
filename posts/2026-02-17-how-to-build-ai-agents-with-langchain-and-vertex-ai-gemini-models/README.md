@@ -25,6 +25,7 @@ Install the required packages with pip:
 
 ```bash
 # Install LangChain core, the Google Vertex AI integration, and tools
+
 pip install langchain langchain-google-vertexai langchain-core google-cloud-aiplatform
 ```
 

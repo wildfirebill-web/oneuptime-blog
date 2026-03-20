@@ -87,6 +87,7 @@ Mayastor requires Kubernetes 1.25 or later with the following:
 
 ```bash
 # Check Kubernetes version
+
 kubectl version --short
 
 # Verify at least 3 nodes are available for HA

@@ -29,6 +29,7 @@ Locals are evaluated eagerly during planning. If you have locals that do heavy d
 
 ```hcl
 # Slow: Complex transformation on every plan
+
 locals {
   # This flattens and transforms a large nested structure
   all_security_rules = flatten([

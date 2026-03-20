@@ -179,6 +179,7 @@ After applying your configuration, verify that it's working correctly:
 
 ```bash
 # Check that the Telemetry resource was created
+
 kubectl get telemetry -A
 
 # Look at the actual Envoy configuration

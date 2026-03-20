@@ -14,6 +14,7 @@ Stack deployments that take minutes instead of seconds are often blocked on imag
 
 ```bash
 # Manually time an image pull to isolate the issue
+
 time docker pull <image-name>:<tag>
 
 # If the first few seconds are silent before pulling starts,

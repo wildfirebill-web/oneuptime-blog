@@ -12,7 +12,7 @@ An MTU black hole is a network condition where a router silently drops packets t
 
 ## Symptoms of an MTU Black Hole
 
-- TCP three-way handshake succeeds (SYN, SYN-ACK, ACK work fine — small packets)
+- TCP three-way handshake succeeds (SYN, SYN-ACK, ACK work fine - small packets)
 - HTTP HEAD requests work but GET requests for large files hang
 - SSH connects but then hangs when you type a command with long output
 - VPN tunnel works for small pings but fails for real traffic
@@ -22,6 +22,7 @@ An MTU black hole is a network condition where a router silently drops packets t
 
 ```bash
 # Test with progressively smaller DF-set packets
+
 # If large packets fail but small ones succeed: MTU black hole
 
 # Start at full MTU minus headers (1472 = 1500 - 20 IP - 8 ICMP)

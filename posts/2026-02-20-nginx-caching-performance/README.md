@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Caching, Performance, Proxy Cache, Optimization
+Tags: Nginx, Caching, Performance, Proxy Cache, Optimization
 
 Description: Learn how to configure Nginx proxy caching for improved application performance and reduced backend load.
 
@@ -32,6 +32,7 @@ Set up a cache zone in the `http` block and apply it to a `location`.
 
 ```nginx
 # /etc/nginx/nginx.conf
+
 http {
     # Define a cache zone
     # proxy_cache_path: directory where cached files are stored

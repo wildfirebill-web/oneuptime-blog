@@ -18,6 +18,7 @@ Install the standalone Kubeflow Pipelines deployment:
 
 ```bash
 # Set the pipeline version
+
 export PIPELINE_VERSION=2.0.5
 
 # Deploy Kubeflow Pipelines

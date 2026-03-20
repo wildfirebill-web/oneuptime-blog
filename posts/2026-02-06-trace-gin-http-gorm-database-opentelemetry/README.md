@@ -26,6 +26,7 @@ You need packages for both HTTP and database instrumentation, plus the OpenTelem
 
 ```bash
 # Core Gin and GORM packages
+
 go get -u github.com/gin-gonic/gin
 go get -u gorm.io/gorm
 go get -u gorm.io/driver/mysql  # or postgres, sqlite, etc.

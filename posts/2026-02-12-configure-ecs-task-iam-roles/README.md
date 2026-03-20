@@ -43,6 +43,7 @@ Start by creating an IAM role with a trust policy that allows ECS tasks to assum
 
 ```hcl
 # Terraform - Create the task role
+
 resource "aws_iam_role" "api_task_role" {
   name = "api-task-role"
 

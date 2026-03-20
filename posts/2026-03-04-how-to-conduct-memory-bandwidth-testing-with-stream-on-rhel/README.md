@@ -14,6 +14,7 @@ STREAM is a synthetic benchmark that measures sustainable memory bandwidth. It t
 
 ```bash
 # Install GCC compiler
+
 sudo dnf install -y gcc
 
 # Download the STREAM source code

@@ -32,6 +32,7 @@ Create a script that generates all the configuration needed for a cluster:
 set -euo pipefail
 
 # Cluster parameters
+
 CLUSTER_NAME="${CLUSTER_NAME:-my-cluster}"
 CLUSTER_ENDPOINT="${CLUSTER_ENDPOINT:-https://10.0.0.100:6443}"
 TALOS_VERSION="${TALOS_VERSION:-v1.6.0}"

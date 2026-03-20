@@ -22,6 +22,7 @@ Every shared module should follow semantic versioning strictly:
 
 ```hcl
 # modules/vpc/versions.tf
+
 # This module follows semantic versioning:
 # MAJOR.MINOR.PATCH
 # - MAJOR: Breaking changes (renamed variables, removed features)

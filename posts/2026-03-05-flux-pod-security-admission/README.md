@@ -24,6 +24,7 @@ Manage namespace PSA labels through your Git repository so they are version-cont
 
 ```yaml
 # namespaces/production.yaml
+
 # Production namespace with Restricted Pod Security Standard enforced
 apiVersion: v1
 kind: Namespace

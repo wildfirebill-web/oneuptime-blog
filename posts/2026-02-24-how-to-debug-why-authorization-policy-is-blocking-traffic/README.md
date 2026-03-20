@@ -55,6 +55,7 @@ Find every AuthorizationPolicy that could affect your workload:
 
 ```bash
 # Namespace-level policies
+
 kubectl get authorizationpolicy -n production
 
 # Mesh-level policies (in root namespace)

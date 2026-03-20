@@ -16,6 +16,7 @@ When a pod resolves a service name like "api-server", the DNS resolver doesn't i
 
 ```bash
 # Inside a pod in the 'production' namespace
+
 cat /etc/resolv.conf
 ```
 

@@ -23,6 +23,7 @@ Before starting, make sure you have:
 
 ```bash
 # Check your Docker installation
+
 docker --version
 docker compose version
 ```

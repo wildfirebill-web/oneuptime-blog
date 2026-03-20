@@ -39,6 +39,7 @@ Use the `flux reconcile ks` command to trigger an immediate reconciliation.
 
 ```bash
 # Force reconcile a Kustomization named "my-app"
+
 flux reconcile ks my-app
 ```
 

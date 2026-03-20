@@ -20,6 +20,7 @@ Destination NAT (DNAT) changes the destination address of incoming packets, rout
 
 ```bash
 # Enable immediately and persist
+
 sysctl -w net.ipv4.ip_forward=1
 echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.d/99-forwarding.conf
 ```

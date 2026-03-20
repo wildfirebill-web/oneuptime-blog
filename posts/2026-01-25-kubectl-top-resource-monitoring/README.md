@@ -16,6 +16,7 @@ kubectl top requires the Metrics Server to be installed:
 
 ```bash
 # Check if metrics-server is running
+
 kubectl get deployment metrics-server -n kube-system
 
 # Install if missing

@@ -30,6 +30,7 @@ The vault is where your backup data is stored:
 
 ```bash
 # Create a Recovery Services vault
+
 az backup vault create \
   --resource-group myResourceGroup \
   --name myRecoveryVault \

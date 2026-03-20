@@ -24,6 +24,7 @@ The concat plugin comes from the fluent-plugin-concat gem:
 
 ```bash
 # Install the plugin
+
 gem install fluent-plugin-concat
 
 # Or add to Gemfile for containerized deployments

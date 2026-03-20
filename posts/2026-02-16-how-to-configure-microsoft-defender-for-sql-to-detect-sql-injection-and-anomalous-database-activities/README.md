@@ -32,6 +32,7 @@ The quickest way to enable protection is at the subscription level, which covers
 
 ```bash
 # Enable Microsoft Defender for SQL at the subscription level
+
 az security pricing create \
   --name SqlServers \
   --tier Standard

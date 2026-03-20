@@ -24,6 +24,7 @@ The most common operation is setting a registry value.
 
 ```yaml
 # set-registry.yml - Set registry values
+
 ---
 - name: Configure registry settings
   hosts: windows_servers

@@ -16,6 +16,7 @@ Calico VPP troubleshooting has unique failure modes that don't exist in standard
 
 ```bash
 # WRONG: tcpdump on a host interface will NOT see VPP-encapsulated traffic
+
 tcpdump -i eth0 -n host <pod-ip>  # Misses all VPP-forwarded packets
 
 # WRONG: iptables rules don't apply to VPP traffic

@@ -8,7 +8,7 @@ Description: Learn how to exclude specific containers from Watchtower auto-updat
 
 ---
 
-Watchtower automatically updates running Docker containers to the latest image versions. However, some containers — like databases, stateful services, or pinned-version dependencies — should never be auto-updated. This guide covers how to exclude containers from Watchtower updates using Docker labels in Portainer.
+Watchtower automatically updates running Docker containers to the latest image versions. However, some containers - like databases, stateful services, or pinned-version dependencies - should never be auto-updated. This guide covers how to exclude containers from Watchtower updates using Docker labels in Portainer.
 
 ---
 
@@ -29,6 +29,7 @@ Watchtower checks container labels to determine whether to include or exclude a 
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:
@@ -141,7 +142,7 @@ services:
     image: myapp:dev-latest
     labels:
       - "com.centurylinklabs.watchtower.scope=dev"
-      # Not in prod scope — will not be touched by watchtower-prod
+      # Not in prod scope - will not be touched by watchtower-prod
 ```
 
 ---
@@ -176,10 +177,10 @@ docker run -d \
 
 ## Best Practices
 
-1. **Use opt-in mode in production** — only explicitly labeled containers get updated
-2. **Exclude all stateful services** — databases, volumes, message queues
+1. **Use opt-in mode in production** - only explicitly labeled containers get updated
+2. **Exclude all stateful services** - databases, volumes, message queues
 3. **Pin versions** rather than using `latest` for production containers
-4. **Monitor Watchtower logs** — integrate with your alerting system
+4. **Monitor Watchtower logs** - integrate with your alerting system
 5. **Test updates in staging** before allowing them in production
 
 ---
@@ -190,4 +191,4 @@ Watchtower's label-based exclusion system gives fine-grained control over which 
 
 ---
 
-*Monitor your Docker containers with [OneUptime](https://oneuptime.com) — uptime monitoring with container health checks.*
+*Monitor your Docker containers with [OneUptime](https://oneuptime.com) - uptime monitoring with container health checks.*

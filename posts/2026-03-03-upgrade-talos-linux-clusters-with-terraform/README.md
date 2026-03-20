@@ -39,6 +39,7 @@ If you are using the Talos Terraform provider, update the machine secrets and co
 
 ```hcl
 # Update the machine secrets with the new version
+
 resource "talos_machine_secrets" "cluster" {
   talos_version = var.talos_version
 }

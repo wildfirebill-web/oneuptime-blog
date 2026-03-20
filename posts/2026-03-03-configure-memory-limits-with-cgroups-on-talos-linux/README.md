@@ -29,6 +29,7 @@ Here is a concrete example:
 
 ```yaml
 # Pod with 512Mi request and 1Gi limit
+
 resources:
   requests:
     memory: "512Mi"

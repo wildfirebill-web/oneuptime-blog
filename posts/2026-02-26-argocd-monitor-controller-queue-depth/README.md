@@ -39,6 +39,7 @@ ArgoCD exposes several metrics related to the controller queue:
 
 ```promql
 # Current queue depth
+
 workqueue_depth{namespace="argocd", name="app_operation"}
 workqueue_depth{namespace="argocd", name="app_reconciliation"}
 ```

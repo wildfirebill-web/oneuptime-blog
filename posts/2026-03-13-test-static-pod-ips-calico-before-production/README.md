@@ -29,6 +29,7 @@ Create an IP pool that mirrors your production static IP pool.
 
 ```yaml
 # staging-static-pool.yaml - Staging IP pool for static assignment testing
+
 apiVersion: projectcalico.org/v3
 kind: IPPool
 metadata:

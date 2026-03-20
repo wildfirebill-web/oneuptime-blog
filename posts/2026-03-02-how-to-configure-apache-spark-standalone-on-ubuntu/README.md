@@ -29,6 +29,7 @@ Spark requires Java. Install it on all nodes:
 
 ```bash
 # Install Java 17 (LTS)
+
 sudo apt update
 sudo apt install -y openjdk-17-jdk
 

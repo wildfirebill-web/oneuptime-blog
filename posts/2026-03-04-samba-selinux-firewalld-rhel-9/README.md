@@ -18,6 +18,7 @@ On RHEL, Samba must satisfy both SELinux and firewalld to function correctly. SE
 
 ```bash
 # Add the Samba service to the default zone
+
 sudo firewall-cmd --permanent --add-service=samba
 sudo firewall-cmd --reload
 

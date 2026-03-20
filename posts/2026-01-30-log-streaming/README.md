@@ -122,6 +122,7 @@ def stream_logs(log_directory, on_log):
     observer.join()
 
 # Usage
+
 def print_log(filepath, line):
     filename = os.path.basename(filepath)
     print(f"[{filename}] {line}")

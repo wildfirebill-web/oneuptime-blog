@@ -102,6 +102,7 @@ calicoctl get hostendpoints -o yaml > "$OUTDIR/hostendpoints.yaml"
 calicoctl get globalnetworkpolicies -o yaml > "$OUTDIR/policies.yaml"
 
 # Generate selector summary
+
 calicoctl get globalnetworkpolicies -o json | \
   python3 -c "
 import json, sys

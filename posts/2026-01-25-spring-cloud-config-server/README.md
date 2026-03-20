@@ -94,6 +94,7 @@ Configure the server to connect to your Git repository.
 
 ```yaml
 # application.yml for Config Server
+
 server:
   port: 8888
 

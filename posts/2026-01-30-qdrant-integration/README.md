@@ -75,6 +75,7 @@ Start Qdrant using Docker for local development.
 
 ```bash
 # Pull and run the Qdrant container
+
 # Port 6333 is for REST API, 6334 is for gRPC
 docker run -p 6333:6333 -p 6334:6334 \
     -v $(pwd)/qdrant_storage:/qdrant/storage \

@@ -39,6 +39,7 @@ graph LR
 
 ```bash
 # Create an API Management instance (Consumption tier for serverless pricing)
+
 az apim create \
   --name my-api-gateway \
   --resource-group rg-api \

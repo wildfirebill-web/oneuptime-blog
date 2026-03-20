@@ -108,6 +108,7 @@ This Dockerfile produces a minimal container:
 
 ```dockerfile
 # Stage 1: Build the Go application
+
 FROM golang:1.22-alpine AS build
 
 WORKDIR /app

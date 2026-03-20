@@ -18,6 +18,7 @@ Most Azure Function apps created through the portal or CLI already have Applicat
 
 ```bash
 # Check if Application Insights is connected to your function app
+
 az functionapp config appsettings list \
   --name my-function-app \
   --resource-group my-resource-group \

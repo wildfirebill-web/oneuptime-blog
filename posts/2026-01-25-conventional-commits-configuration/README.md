@@ -48,6 +48,7 @@ docs(readme): update installation instructions
 
 ```bash
 # Using exclamation mark
+
 feat(api)!: change response format for /users endpoint
 
 # Using footer

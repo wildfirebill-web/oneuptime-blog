@@ -33,6 +33,7 @@ The cache operates in two policies:
 
 ```bash
 # Verify LVM2 is installed
+
 sudo apt install -y lvm2
 
 # Check dm-cache module is available

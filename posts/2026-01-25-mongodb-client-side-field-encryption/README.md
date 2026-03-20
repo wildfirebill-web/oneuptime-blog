@@ -340,6 +340,7 @@ from bson import Binary
 import os
 
 # Local master key (use KMS in production)
+
 local_master_key = os.urandom(96)
 
 def setup_encryption():

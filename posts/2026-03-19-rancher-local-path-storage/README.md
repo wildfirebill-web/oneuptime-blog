@@ -252,6 +252,7 @@ spec:
 
 ```bash
 # Check storage class
+
 kubectl get storageclass local-path
 
 # List PVCs using local-path

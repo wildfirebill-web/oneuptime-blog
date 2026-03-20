@@ -96,6 +96,7 @@ For GCP or Azure backends, adjust the configuration accordingly:
 
 ```yaml
 # GCP configuration
+
 configuration:
   backupStorageLocation:
     - name: default

@@ -14,6 +14,7 @@ Alibaba Cloud VPC supports IPv6 through a dual-stack model. IPv6 is enabled at t
 
 ```bash
 # Install Alibaba Cloud CLI
+
 pip install aliyun-cli
 
 # Configure credentials

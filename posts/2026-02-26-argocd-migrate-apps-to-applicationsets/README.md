@@ -37,6 +37,7 @@ First, document all existing applications and their configurations.
 
 ```bash
 # Export all current applications to a file
+
 kubectl get applications -n argocd -o yaml > applications-backup.yaml
 
 # List all applications with their key settings

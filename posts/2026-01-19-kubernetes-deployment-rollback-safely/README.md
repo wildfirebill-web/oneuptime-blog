@@ -38,6 +38,7 @@ flowchart TD
 
 ```bash
 # View rollout history
+
 kubectl rollout history deployment/myapp -n production
 
 # Output:

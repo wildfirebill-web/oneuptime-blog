@@ -23,6 +23,7 @@ For example, the AWS provider translates `resource "aws_instance" "web"` into ca
 
 ```hcl
 # Each resource type is provided by a specific provider
+
 resource "aws_instance" "web" {         # aws_ prefix = AWS provider
   ami           = "ami-0abcdef1234567890"
   instance_type = "t3.medium"
@@ -153,7 +154,7 @@ Best practice is to use environment variables or IAM roles for authentication ra
 
 Providers expose two main types of objects:
 
-### Resources
+Resources
 
 Resources represent infrastructure objects that Terraform manages. Terraform creates, updates, and deletes them based on your configuration:
 

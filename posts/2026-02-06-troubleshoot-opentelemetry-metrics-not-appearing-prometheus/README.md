@@ -37,6 +37,7 @@ First, confirm that your application is actually producing and exporting metrics
 
 ```python
 # app_metrics.py
+
 # Verify that the application is generating metrics by logging them locally
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider

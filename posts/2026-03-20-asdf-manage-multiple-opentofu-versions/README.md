@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, asdf, Version Management, DevOps, Infrastructure as Code, Shell
+Tags: OpenTofu, Asdf, Version Management, DevOps, Infrastructure as Code, Shell
 
 Description: Learn how to use asdf as a universal version manager to manage multiple OpenTofu versions alongside other tools like Node.js, Python, and kubectl.
 
@@ -16,6 +16,7 @@ asdf is a universal version manager that handles OpenTofu, Node.js, Python, Ruby
 
 ```bash
 # Clone asdf (latest version)
+
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 
 # Add to your shell config
@@ -91,7 +92,7 @@ tofu version
 asdf uses a `.tool-versions` file to pin all tool versions for a project.
 
 ```bash
-# .tool-versions — pin all tools for this project
+# .tool-versions - pin all tools for this project
 # Commit this file to your repository
 opentofu 1.8.5
 nodejs 20.11.0
@@ -132,7 +133,7 @@ tofu version
 ## Integrate asdf with CI/CD
 
 ```yaml
-# .github/workflows/tofu.yml — use asdf to install correct version
+# .github/workflows/tofu.yml - use asdf to install correct version
 - name: Install asdf
   uses: asdf-vm/actions/setup@v3
 

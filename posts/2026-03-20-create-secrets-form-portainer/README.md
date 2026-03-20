@@ -47,6 +47,7 @@ Portainer creates:
 
 ```yaml
 # What Portainer generates (values are automatically base64-encoded)
+
 apiVersion: v1
 kind: Secret
 metadata:

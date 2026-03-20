@@ -51,6 +51,7 @@ Define your tail-sampling rules in a structured format:
 
 ```yaml
 # sampling/tail-sampling.yaml
+
 # Version: 2.3.0
 # Last modified: 2026-02-06
 # Approved by: @platform-team

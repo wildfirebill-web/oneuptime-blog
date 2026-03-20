@@ -33,6 +33,7 @@ Configure ArgoCD notifications to alert on suspicious events:
 
 ```yaml
 # argocd-notifications-cm ConfigMap
+
 # Alert on sync from unknown users
 trigger.on-suspicious-sync: |
   - when: >-

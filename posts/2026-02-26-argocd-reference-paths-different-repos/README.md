@@ -92,6 +92,7 @@ If you find yourself referencing many sibling directories from the same parent p
 
 ```yaml
 # Instead of multiple sources for sibling directories...
+
 sources:
   - repoURL: https://github.com/your-org/infrastructure.git
     targetRevision: main

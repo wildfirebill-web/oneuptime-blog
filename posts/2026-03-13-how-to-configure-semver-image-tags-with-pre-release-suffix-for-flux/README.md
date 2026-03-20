@@ -145,6 +145,7 @@ The staging policy includes pre-releases while the production policy only matche
 
 ```yaml
 # Staging deployment
+
 containers:
   - name: my-app
     image: docker.io/myorg/my-app:1.0.0-beta.1 # {"$imagepolicy": "flux-system:my-app-staging"}

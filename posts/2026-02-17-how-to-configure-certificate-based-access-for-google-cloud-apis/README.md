@@ -28,6 +28,7 @@ If you do not have an existing enterprise CA, you can use Google Cloud's Certifi
 
 ```bash
 # Enable Certificate Authority Service
+
 gcloud services enable privateca.googleapis.com
 
 # Create a CA pool

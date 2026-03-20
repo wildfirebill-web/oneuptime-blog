@@ -55,6 +55,7 @@ You can also create projects from blueprints via the API:
 
 ```bash
 # Create a project from the Serverless API blueprint
+
 aws codecatalyst create-project \
   --space-name "my-company" \
   --display-name "Order API" \

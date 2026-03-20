@@ -205,6 +205,7 @@ Configure the propagator in your application. Python uses a similar composite pr
 
 ```python
 # telemetry.py
+
 import os
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

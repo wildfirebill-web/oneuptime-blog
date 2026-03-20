@@ -16,6 +16,7 @@ The `service` module is the primary tool for managing services. It works across 
 
 ```bash
 # Start a service
+
 ansible webservers -m service -a "name=nginx state=started" --become
 
 # Stop a service

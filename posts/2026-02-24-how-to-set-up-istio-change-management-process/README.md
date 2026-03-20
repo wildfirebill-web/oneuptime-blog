@@ -53,6 +53,7 @@ Set up validation that runs on every pull request:
 
 ```yaml
 # .github/workflows/istio-validate.yaml
+
 name: Validate Istio Config
 on:
   pull_request:

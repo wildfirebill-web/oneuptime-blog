@@ -37,6 +37,7 @@ A typical Ceph cluster inventory splits hosts into their roles. Here is an examp
 
 ```ini
 # inventory/ceph-cluster
+
 [mons]
 ceph-mon-01 ansible_host=10.0.1.10
 ceph-mon-02 ansible_host=10.0.1.11

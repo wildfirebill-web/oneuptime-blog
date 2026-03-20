@@ -18,6 +18,7 @@ The simplest health check verifies that an endpoint returns HTTP 200:
 
 ```yaml
 # basic health check that verifies HTTP 200 response
+
 ---
 - name: Basic health check
   hosts: localhost

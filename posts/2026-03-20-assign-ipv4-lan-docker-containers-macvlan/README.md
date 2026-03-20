@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, macvlan, IPv4, LAN, Containers
+Tags: Docker, Networking, Macvlan, IPv4, LAN, Containers
 
 Description: Configure Docker macvlan networking so containers receive IPv4 addresses from the physical LAN subnet, making them reachable from any device on the network without port mapping.
 
@@ -24,6 +24,7 @@ The container range (192.168.1.220–.250) must be excluded from the DHCP pool t
 
 ```bash
 # Use the full LAN subnet, gateway, and restrict auto-assigned IPs
+
 docker network create \
   --driver macvlan \
   --subnet 192.168.1.0/24 \
@@ -33,7 +34,7 @@ docker network create \
   lan-containers
 ```
 
-`192.168.1.220/27` covers `.220–.251` — a clean 32-address block.
+`192.168.1.220/27` covers `.220–.251` - a clean 32-address block.
 
 ## Assigning LAN IPs to Containers
 
@@ -104,7 +105,7 @@ By default, macvlan isolates the Docker host from its containers. The host canno
 
 For services to be findable by name, add DNS entries on your router or internal DNS:
 
-```
+```text
 pihole.local → 192.168.1.220
 homeassistant.local → 192.168.1.221
 ```

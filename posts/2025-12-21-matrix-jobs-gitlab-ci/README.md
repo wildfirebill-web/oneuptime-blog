@@ -356,6 +356,7 @@ stages:
   - integration
 
 # Build for multiple platforms
+
 build:
   stage: build
   image: docker:24.0

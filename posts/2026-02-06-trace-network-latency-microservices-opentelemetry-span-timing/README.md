@@ -40,6 +40,7 @@ Here is the tracing setup code that both services will share. This configures th
 
 ```python
 # tracing_setup.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

@@ -41,6 +41,7 @@ The application name is the most visible piece of metadata. It shows up in the A
 
 ```yaml
 # Pattern 1: service-environment
+
 metadata:
   name: user-service-production
 

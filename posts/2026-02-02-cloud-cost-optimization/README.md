@@ -76,6 +76,7 @@ The following AWS CLI command retrieves cost and usage data for the current mont
 
 ```bash
 # Get cost breakdown by service for current month
+
 # This helps identify which AWS services consume the most budget
 aws ce get-cost-and-usage \
     --time-period Start=$(date -d "$(date +%Y-%m-01)" +%Y-%m-%d),End=$(date +%Y-%m-%d) \
@@ -1635,7 +1636,7 @@ if __name__ == "__main__":
 
 ---
 
-## Resource Tagging Strategy
+Resource Tagging Strategy
 
 Effective cost allocation requires consistent resource tagging. The following policy enforces tagging compliance:
 

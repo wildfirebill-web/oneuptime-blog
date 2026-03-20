@@ -31,6 +31,7 @@ The WebSocket API in API Gateway handles connection lifecycle and message routin
 
 ```hcl
 # WebSocket API
+
 resource "aws_apigatewayv2_api" "websocket" {
   name                       = "websocket-api"
   protocol_type              = "WEBSOCKET"

@@ -28,6 +28,7 @@ Build a role that allows managing custom resources and performing leader electio
 
 ```yaml
 # namespace-operator-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

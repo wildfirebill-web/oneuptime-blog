@@ -20,6 +20,7 @@ systemd-networkd provides native WireGuard support through `.netdev` unit files,
 
 ```bash
 # Debian/Ubuntu
+
 apt install wireguard-tools
 
 # RHEL/CentOS

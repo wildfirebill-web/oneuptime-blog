@@ -29,6 +29,7 @@ First, install `wasm-pack`, the primary tool for building Rust-generated WebAsse
 
 ```bash
 # Install wasm-pack - the all-in-one tool for Rust WASM development
+
 # It handles compilation, wasm-bindgen, and npm package generation
 cargo install wasm-pack
 

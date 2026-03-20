@@ -123,6 +123,7 @@ helm status myapp -n production
 ```bash
 helm package myapp/
 # Creates myapp-0.1.0.tgz
+
 ```
 
 ## Conclusion

@@ -41,7 +41,7 @@ IPHC (IP Header Compression) can compress a 40-byte IPv6 header down to as few a
 - Inferring addresses from the IEEE 802.15.4 MAC address (EUI-64)
 - Eliding fields that have constant values in most IoT traffic (hop limit, traffic class)
 
-```
+```text
 Uncompressed IPv6 header: 40 bytes
 After IPHC compression:    2-7 bytes typical
 Savings: ~33-38 bytes per packet
@@ -76,6 +76,7 @@ The Linux kernel includes 6LoWPAN support through the `ieee802154` subsystem:
 
 ```bash
 # Check if 6LoWPAN kernel modules are available
+
 lsmod | grep lowpan
 # or
 modprobe -v lowpan

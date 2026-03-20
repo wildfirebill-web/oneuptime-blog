@@ -119,6 +119,7 @@ except s3.exceptions.NoSuchBucket:
     print("The bucket doesn't exist")
 
 # Works with resource interface too
+
 sqs = boto3.resource('sqs')
 try:
     queue = sqs.get_queue_by_name(QueueName='nonexistent-queue')

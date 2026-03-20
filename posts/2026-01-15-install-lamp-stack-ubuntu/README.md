@@ -22,6 +22,7 @@ Before installing any packages, update your system's package index.
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

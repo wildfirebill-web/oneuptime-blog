@@ -44,6 +44,7 @@ Before creating permission sets, you need to reference your existing SSO instanc
 
 ```hcl
 # Look up the SSO instance in your organization
+
 data "aws_ssoadmin_instances" "main" {}
 
 # Store the instance ARN and identity store ID for reuse

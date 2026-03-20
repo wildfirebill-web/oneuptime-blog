@@ -46,6 +46,7 @@ If you do not already have a cluster, create one with a Linux system node pool.
 
 ```bash
 # Create the AKS cluster with a Linux system node pool
+
 # The system pool runs Kubernetes system components
 az aks create \
   --resource-group myResourceGroup \
@@ -320,7 +321,7 @@ Windows containers take longer to start than Linux containers. Account for this 
 - **HPA scaling**: Expect slower scale-up for Windows workloads.
 - **Deployment timeouts**: Use longer timeouts for Helm deploys.
 
-### Resource Requests
+Resource Requests
 
 Windows nodes have higher base resource consumption for the OS. A Windows node with 4 vCPUs and 16 GB RAM has roughly 2.5 vCPUs and 10 GB available for pods after the OS and Kubernetes overhead.
 

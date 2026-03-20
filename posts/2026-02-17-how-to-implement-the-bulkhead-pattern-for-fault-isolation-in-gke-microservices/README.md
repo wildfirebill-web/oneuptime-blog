@@ -32,6 +32,7 @@ The simplest bulkhead is separating services into different Kubernetes namespace
 
 ```yaml
 # Create namespaces for different service groups
+
 apiVersion: v1
 kind: Namespace
 metadata:

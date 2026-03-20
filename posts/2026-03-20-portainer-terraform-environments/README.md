@@ -1,4 +1,4 @@
-# How to Manage Portainer Environments with Terraform
+# How to Manage Portainer Environments with Terraform - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Portainer environments represent managed infrastructure. Using Terraform to mana
 # environments.tf
 
 # Local Docker (Unix socket)
+
 resource "portainer_environment" "local_docker" {
   name             = "local"
   environment_url  = "unix:///var/run/docker.sock"
@@ -45,7 +46,7 @@ resource "portainer_environment" "production_docker" {
   group_id   = portainer_endpoint_group.production.id
 }
 
-# Remote Docker over TCP (no TLS — dev only)
+# Remote Docker over TCP (no TLS - dev only)
 resource "portainer_environment" "dev_docker" {
   name             = "development"
   environment_url  = "tcp://10.0.0.50:2375"
@@ -242,7 +243,7 @@ output "endpoint_group_ids" {
 # Initialize
 terraform init
 
-# Plan — see what will be created
+# Plan - see what will be created
 terraform plan -var-file="prod.tfvars"
 
 # Apply

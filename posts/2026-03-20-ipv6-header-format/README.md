@@ -8,11 +8,11 @@ Description: Understand the fixed 40-byte IPv6 header format, including all fiel
 
 ## Introduction
 
-The IPv6 header was redesigned from scratch with simplicity and efficiency in mind. It is fixed at exactly 40 bytes — compared to IPv4's variable-length header (20-60 bytes). All optional information has been moved to extension headers, enabling routers to process the fixed header at line rate without parsing variable-length options.
+The IPv6 header was redesigned from scratch with simplicity and efficiency in mind. It is fixed at exactly 40 bytes - compared to IPv4's variable-length header (20-60 bytes). All optional information has been moved to extension headers, enabling routers to process the fixed header at line rate without parsing variable-length options.
 
 ## The IPv6 Header Layout
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -91,6 +91,7 @@ def parse_ipv6_header(raw_bytes: bytes) -> dict:
     }
 
 # Example: build and parse a minimal IPv6 header
+
 def build_minimal_ipv6_header(src, dst, next_header=59, payload_len=0, hop_limit=64):
     """Build a minimal IPv6 header bytes object."""
     version_tc_fl = (6 << 28) | (0 << 20) | 0  # version=6, TC=0, FL=0

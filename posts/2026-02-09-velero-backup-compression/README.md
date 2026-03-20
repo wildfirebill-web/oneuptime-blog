@@ -25,6 +25,7 @@ Velero enables gzip compression by default for all backed-up resources:
 
 ```bash
 # Verify compression is enabled (default behavior)
+
 kubectl get deployment velero -n velero -o yaml | grep -A 5 "args:"
 ```
 

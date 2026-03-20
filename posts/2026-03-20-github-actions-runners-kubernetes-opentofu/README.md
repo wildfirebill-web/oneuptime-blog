@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitHub Actions, CI/CD, Kubernetes, ARC, Runner Scale Sets, Infrastructure as Code
+Tags: OpenTofu, GitHub Actions, CI/CD, Kubernetes, Arc, Runner Scale Sets, Infrastructure as Code
 
 Description: Learn how to deploy GitHub Actions Runner Controller (ARC) on Kubernetes with OpenTofu using runner scale sets for automatic scaling from zero, enabling cost-effective and isolated CI/CD workloads.
 
@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # arc.tf
+
 resource "kubernetes_namespace" "arc" {
   metadata {
     name = "arc-systems"
@@ -153,7 +154,7 @@ resource "helm_release" "runner_scale_set" {
 ## Dedicated Node Pool for Runners
 
 ```hcl
-# node_pool.tf — dedicated nodes for CI runners
+# node_pool.tf - dedicated nodes for CI runners
 
 # EKS node group example
 resource "aws_eks_node_group" "ci_runners" {
@@ -211,8 +212,8 @@ resource "kubernetes_cluster_role_binding" "arc" {
 
 ## Best Practices
 
-- Use GitHub App authentication rather than a Personal Access Token for ARC — GitHub Apps have higher rate limits and more granular permissions.
-- Run ARC runners on dedicated nodes with taints — this prevents CI workloads from competing with production workloads for resources.
-- Use Docker-in-Docker (DinD) carefully — DinD requires privileged containers. For security, consider Kaniko or Buildah for container builds instead.
-- Set `minRunners = 0` and rely on ARC's scaling — idle runner pods waste compute. ARC scales up within seconds when jobs are queued.
-- Set resource requests and limits on runner pods — without limits, a runaway build can consume all node resources and affect other workloads.
+- Use GitHub App authentication rather than a Personal Access Token for ARC - GitHub Apps have higher rate limits and more granular permissions.
+- Run ARC runners on dedicated nodes with taints - this prevents CI workloads from competing with production workloads for resources.
+- Use Docker-in-Docker (DinD) carefully - DinD requires privileged containers. For security, consider Kaniko or Buildah for container builds instead.
+- Set `minRunners = 0` and rely on ARC's scaling - idle runner pods waste compute. ARC scales up within seconds when jobs are queued.
+- Set resource requests and limits on runner pods - without limits, a runaway build can consume all node resources and affect other workloads.

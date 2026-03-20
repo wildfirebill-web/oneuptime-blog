@@ -179,6 +179,7 @@ Verify your configuration works:
 
 ```bash
 # First request - should get a Set-Cookie header
+
 curl -v http://my-web-app:8080/api/session
 
 # Subsequent requests with the cookie - should hit the same pod

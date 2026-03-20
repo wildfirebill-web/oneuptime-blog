@@ -41,6 +41,7 @@ The following example shows a basic egress policy structure.
 
 ```yaml
 # basic-egress-policy.yaml
+
 # Demonstrates the fundamental structure of an egress network policy
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy

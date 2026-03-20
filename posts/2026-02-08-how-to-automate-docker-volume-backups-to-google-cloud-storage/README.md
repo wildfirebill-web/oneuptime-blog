@@ -25,6 +25,7 @@ Set up your GCS bucket if you have not already:
 
 ```bash
 # Create a dedicated bucket for Docker volume backups
+
 gcloud storage buckets create gs://my-docker-backups \
   --location=us-central1 \
   --default-storage-class=NEARLINE

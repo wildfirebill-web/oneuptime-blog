@@ -46,6 +46,7 @@ Create PDB templates based on service tier and criticality.
 
 ```yaml
 # apps/web-api/pdb.yaml
+
 # High-traffic stateless service - allow 25% disruption
 apiVersion: policy/v1
 kind: PodDisruptionBudget

@@ -128,6 +128,7 @@ def generate_voice_samples(text, language_code="en-US", output_dir="voice_sample
     return generated
 
 # Generate samples with a representative text
+
 sample_text = (
     "Welcome to our monitoring platform. "
     "We have detected an issue with your production server. "

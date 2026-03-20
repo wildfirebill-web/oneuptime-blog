@@ -27,6 +27,7 @@ For this guide:
 
 ```bash
 # Add the Teleport repository
+
 curl https://apt.releases.teleport.dev/gpg -o /tmp/teleport-gpg.key
 sudo apt-key add /tmp/teleport-gpg.key
 

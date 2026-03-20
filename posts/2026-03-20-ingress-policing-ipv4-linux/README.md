@@ -21,6 +21,7 @@ Ingress policing drops or marks incoming packets that exceed a configured rate w
 
 ```bash
 # The ingress qdisc is a special placeholder for inbound filters
+
 sudo tc qdisc add dev eth0 ingress
 ```
 
@@ -36,10 +37,10 @@ sudo tc filter add dev eth0 parent ffff: \
   police rate 10mbit burst 100kb drop flowid :1
 
 # Parameters:
-# rate 10mbit  — allowed rate
-# burst 100kb  — burst allowance before policing kicks in
-# drop         — action for packets exceeding the rate (alternatives: continue, reclassify)
-# flowid :1    — flow ID for matched packets
+# rate 10mbit  - allowed rate
+# burst 100kb  - burst allowance before policing kicks in
+# drop         - action for packets exceeding the rate (alternatives: continue, reclassify)
+# flowid :1    - flow ID for matched packets
 ```
 
 ## Step 3: Police per Source IP

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GRE, Tunnel, Persistent, Linux, systemd-networkd, NetworkManager, IPv4, Reboots
+Tags: GRE, Tunnel, Persistent, Linux, systemd-networkd, NetworkManager, IPv4, Reboot
 
 Description: Learn how to make GRE tunnel configurations persistent across reboots on Linux using systemd-networkd, NetworkManager, or /etc/network/interfaces depending on your distribution.
 
@@ -14,6 +14,7 @@ GRE tunnels created with `ip tunnel add` are lost on reboot. Persistence require
 
 ```ini
 # /etc/systemd/network/gre1.netdev
+
 [NetDev]
 Name=gre1
 Kind=gre

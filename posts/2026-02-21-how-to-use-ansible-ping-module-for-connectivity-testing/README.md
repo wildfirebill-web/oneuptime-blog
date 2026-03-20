@@ -14,6 +14,7 @@ The `ansible.builtin.ping` module is the simplest way to verify that Ansible can
 
 ```bash
 # Test all hosts in inventory
+
 ansible all -m ping
 
 # Test a specific group

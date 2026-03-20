@@ -24,6 +24,7 @@ The simplest approach is a cron job on a machine outside the cluster that runs `
 
 ```bash
 # Create the backup script
+
 cat > /opt/scripts/etcd-backup.sh << 'SCRIPT'
 #!/bin/bash
 set -e

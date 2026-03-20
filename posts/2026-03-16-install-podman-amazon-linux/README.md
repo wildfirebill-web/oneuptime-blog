@@ -26,6 +26,7 @@ Amazon Linux is the go-to operating system for AWS EC2 instances. Amazon Linux 2
 
 ```bash
 # Update all packages
+
 sudo dnf update -y
 ```
 

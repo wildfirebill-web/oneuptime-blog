@@ -22,6 +22,7 @@ Grant exec and port-forward to developers in non-production namespaces.
 
 ```yaml
 # rbac-dev-debug-access.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```ini
 # ansible.cfg - Use /tmp instead of ~/.ansible/tmp
+
 [defaults]
 remote_tmp = /tmp/.ansible-${USER}/tmp
 ```

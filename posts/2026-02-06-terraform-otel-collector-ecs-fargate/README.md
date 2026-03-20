@@ -210,6 +210,7 @@ resource "aws_iam_role_policy_attachment" "ecs_execution" {
 }
 
 # Allow the execution role to read secrets
+
 resource "aws_iam_role_policy" "secrets_access" {
   name = "secrets-access"
   role = aws_iam_role.ecs_execution.id
@@ -272,7 +273,7 @@ variable "task_memory" {
 }
 ```
 
-## Resource Sizing
+Resource Sizing
 
 The Collector sidecar adds overhead to your Fargate task. Plan for approximately 128MB of memory and 0.25 vCPU for moderate throughput. Adjust the task's total CPU and memory accordingly.
 

@@ -246,6 +246,7 @@ Watch the provisioning workflow:
 
 ```bash
 # Create the PVC
+
 kubectl apply -f auto-pvc.yaml
 
 # Watch PVC status

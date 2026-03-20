@@ -18,6 +18,7 @@ Start by understanding what you have configured right now:
 
 ```bash
 # Check global proxy resource settings
+
 kubectl get configmap istio-sidecar-injector -n istio-system -o yaml | grep -A10 "resources"
 
 # Check istiod resources

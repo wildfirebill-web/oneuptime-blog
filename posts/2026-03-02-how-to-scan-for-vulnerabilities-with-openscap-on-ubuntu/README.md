@@ -24,6 +24,7 @@ The two main scan types are:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install the OpenSCAP scanner and utilities

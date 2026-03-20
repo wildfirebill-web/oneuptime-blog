@@ -25,6 +25,7 @@ The first step is to create a boot disk from an existing image and attach the ne
 
 ```bash
 # Create a disk from a Debian 12 image with the nested virtualization license
+
 gcloud compute disks create nested-vm-disk \
   --zone=us-central1-a \
   --image-family=debian-12 \

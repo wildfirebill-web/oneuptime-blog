@@ -127,6 +127,7 @@ def create_timestamped_snapshot(project_id: str, subscription_id: str) -> str:
 
 
 # Example usage
+
 if __name__ == "__main__":
     PROJECT_ID = "my-project"
     SUBSCRIPTION_ID = "orders-subscription"

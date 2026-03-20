@@ -28,6 +28,7 @@ GKE uses alias IP ranges for pod and service networking. To replicate this, conf
 
 ```bash
 # Create a VPC network
+
 gcloud compute networks create talos-vpc \
   --subnet-mode=custom
 

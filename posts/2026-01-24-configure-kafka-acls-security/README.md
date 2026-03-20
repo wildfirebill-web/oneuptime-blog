@@ -54,6 +54,7 @@ ACLs require authentication. Configure SASL/SCRAM or SSL authentication first.
 
 ```bash
 # Create admin user
+
 kafka-configs.sh --bootstrap-server localhost:9092 \
   --alter --add-config 'SCRAM-SHA-256=[password=admin-secret]' \
   --entity-type users --entity-name admin
@@ -282,7 +283,7 @@ kafka-acls.sh --bootstrap-server localhost:9092 \
   --topic '*'
 ```
 
-## Resource Pattern Types
+Resource Pattern Types
 
 ```mermaid
 flowchart TB

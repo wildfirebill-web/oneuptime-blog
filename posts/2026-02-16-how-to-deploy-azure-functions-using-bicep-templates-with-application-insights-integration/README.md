@@ -392,6 +392,7 @@ Deploy with the Azure CLI:
 
 ```bash
 # Create the resource group
+
 az group create --name rg-functions-prod --location eastus2
 
 # Deploy the main template

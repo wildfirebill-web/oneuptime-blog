@@ -37,6 +37,7 @@ Before diving into optimizations, verify the infrastructure is not the bottlenec
 
 ```bash
 # Check API server resource usage
+
 kubectl top pods -n argocd -l app.kubernetes.io/name=argocd-server
 
 # Check Redis health

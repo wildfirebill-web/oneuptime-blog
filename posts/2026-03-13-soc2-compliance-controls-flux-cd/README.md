@@ -37,6 +37,7 @@ Document this in your SOC 2 control evidence as "CC8.1 - Production changes requ
 
 ```yaml
 # The GitRepository Flux watches - production changes come ONLY from this branch
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

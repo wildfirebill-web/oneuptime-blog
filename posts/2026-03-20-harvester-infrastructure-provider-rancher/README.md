@@ -1,4 +1,4 @@
-# How to Use Harvester as Infrastructure Provider in Rancher
+# How to Use Harvester as Infrastructure Provider in Rancher - Rancher
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure and use Harvester as an infrastructure provi
 
 ## Introduction
 
-When Harvester is registered as an infrastructure provider in Rancher, it enables Rancher to automatically provision virtual machines in Harvester and use them as nodes for Kubernetes clusters. This creates an automated pipeline where requesting a new Kubernetes cluster automatically triggers VM creation in Harvester, OS installation, and Kubernetes bootstrap — all without manual intervention.
+When Harvester is registered as an infrastructure provider in Rancher, it enables Rancher to automatically provision virtual machines in Harvester and use them as nodes for Kubernetes clusters. This creates an automated pipeline where requesting a new Kubernetes cluster automatically triggers VM creation in Harvester, OS installation, and Kubernetes bootstrap - all without manual intervention.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ When Harvester is registered as an infrastructure provider in Rancher, it enable
 
 ```bash
 # Check if the Harvester node driver is active in Rancher
+
 kubectl get nodedriver harvester -n cattle-system
 
 # Via Rancher API
@@ -46,7 +47,7 @@ Cloud credentials store the connection information for Rancher to communicate wi
 3. Select **Harvester**
 4. Configure:
 
-```
+```sql
 Name: harvester-prod-creds
 Harvester Cluster: local-harvester  (select from dropdown)
 ```
@@ -95,7 +96,7 @@ Node templates define the VM specifications that Rancher will use when provision
 3. Select **Harvester**
 4. Configure the VM specification:
 
-```
+```text
 Template Name:  ubuntu-22-04-large
 Cloud Creds:    harvester-prod-creds
 Cluster:        local-harvester
@@ -261,4 +262,4 @@ helm:
 
 ## Conclusion
 
-Using Harvester as an infrastructure provider in Rancher enables fully automated, API-driven Kubernetes cluster provisioning on VM infrastructure. This combination is powerful for platform engineering teams that need to provide self-service Kubernetes clusters to development teams. The entire process — from requesting a cluster to having nodes provisioned in Harvester and Kubernetes bootstrapped — can be driven by a simple API call or a GitOps commit, dramatically reducing the time from cluster request to usable environment.
+Using Harvester as an infrastructure provider in Rancher enables fully automated, API-driven Kubernetes cluster provisioning on VM infrastructure. This combination is powerful for platform engineering teams that need to provide self-service Kubernetes clusters to development teams. The entire process - from requesting a cluster to having nodes provisioned in Harvester and Kubernetes bootstrapped - can be driven by a simple API call or a GitOps commit, dramatically reducing the time from cluster request to usable environment.

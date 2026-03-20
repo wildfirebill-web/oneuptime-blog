@@ -36,6 +36,7 @@ AWS provides curated domain lists for common threat categories:
 
 ```bash
 # List available managed domain lists
+
 aws route53resolver list-firewall-domain-lists \
   --query 'FirewallDomainLists[?ManagedOwnerName!=null].{Name:Name,Id:Id}'
 ```

@@ -14,6 +14,7 @@ Varnish Cache is a high-performance HTTP reverse proxy cache that can dramatical
 
 ```yaml
 # varnish-stack.yml
+
 version: "3.8"
 services:
   varnish:
@@ -35,7 +36,7 @@ services:
 
   webapp:
     image: myapp:1.2.3
-    # Don't expose to internet — Varnish is the front door
+    # Don't expose to internet - Varnish is the front door
     restart: unless-stopped
     networks:
       - varnish-net
@@ -50,7 +51,7 @@ networks:
 Create `/opt/varnish/default.vcl` on the host:
 
 ```vcl
-# default.vcl — Varnish Configuration Language
+# default.vcl - Varnish Configuration Language
 vcl 4.1;
 
 backend default {
@@ -61,7 +62,7 @@ backend default {
 }
 
 sub vcl_recv {
-    # Remove cookie for static assets — allows caching
+    # Remove cookie for static assets - allows caching
     if (req.url ~ "\.(css|js|png|jpg|gif|ico|woff2?|svg)$") {
         unset req.http.Cookie;
     }

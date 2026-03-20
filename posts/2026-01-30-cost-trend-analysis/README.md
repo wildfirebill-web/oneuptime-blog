@@ -118,6 +118,7 @@ class LinearTrendAnalyzer:
         return forecasts
 
 # Example usage
+
 daily_costs = [1200, 1220, 1180, 1250, 1280, 1310, 1290, 1350, 1380, 1400]
 dates = [datetime(2024, 1, 1) + timedelta(days=i) for i in range(len(daily_costs))]
 

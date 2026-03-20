@@ -16,6 +16,7 @@ Before jumping into replacement, confirm the node is truly failed. Sometimes a n
 
 ```bash
 # Check the status of all nodes
+
 kubectl get nodes
 
 # Look for nodes in NotReady state

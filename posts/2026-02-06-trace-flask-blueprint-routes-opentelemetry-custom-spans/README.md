@@ -23,6 +23,7 @@ from flask import Blueprint, jsonify
 from opentelemetry import trace
 
 # Create a tracer for this module
+
 tracer = trace.get_tracer(__name__)
 
 # Define a Blueprint for product operations

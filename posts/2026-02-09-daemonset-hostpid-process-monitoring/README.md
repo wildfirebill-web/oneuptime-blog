@@ -455,6 +455,7 @@ Test that your DaemonSet has proper hostPID access:
 
 ```bash
 # Get a pod from the DaemonSet
+
 POD=$(kubectl get pods -n monitoring -l app=process-monitor -o jsonpath='{.items[0].metadata.name}')
 
 # Check if you can see host processes

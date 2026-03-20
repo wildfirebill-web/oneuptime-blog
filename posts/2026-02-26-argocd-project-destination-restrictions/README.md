@@ -166,6 +166,7 @@ For example, to allow all namespaces except `kube-system`:
 
 ```yaml
 # There is no deny syntax, so you must list allowed namespaces explicitly
+
 # or use a prefix convention that excludes system namespaces
 destinations:
   - server: "https://kubernetes.default.svc"

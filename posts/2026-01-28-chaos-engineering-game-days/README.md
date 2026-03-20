@@ -55,6 +55,7 @@ Every game day needs clear objectives. Without them, you risk wasting time on ex
 
 ```yaml
 # game_day_objectives.yaml
+
 # Example objectives document for a game day
 
 game_day:

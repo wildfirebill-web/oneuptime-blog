@@ -28,6 +28,7 @@ Before running TensorFlow, confirm that GPUs are accessible:
 
 ```bash
 # Quick GPU verification test
+
 kubectl run tf-gpu-check --rm -it --restart=Never \
   --image=tensorflow/tensorflow:2.15.0-gpu \
   --limits=nvidia.com/gpu=1 \

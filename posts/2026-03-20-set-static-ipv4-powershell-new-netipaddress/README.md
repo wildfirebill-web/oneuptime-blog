@@ -19,6 +19,7 @@ Description: Assign a static IPv4 address, prefix length, and default gateway to
 
 ```powershell
 # List all adapters with alias and index
+
 Get-NetAdapter | Select-Object Name, InterfaceIndex, Status, MacAddress
 ```
 

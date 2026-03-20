@@ -1,4 +1,4 @@
-# How to Set Up Rolling Update Policies for Swarm Services in Portainer
+# How to Set Up Rolling Update Policies for Swarm Services in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -58,7 +58,7 @@ To deploy a new image version:
 2. Update the image tag from `1.5.0` to `1.6.0`
 3. Click **Update the stack**
 
-Portainer shows the rolling update progress in the Services view — each replica's status changes from Running (old) to Updating to Running (new).
+Portainer shows the rolling update progress in the Services view - each replica's status changes from Running (old) to Updating to Running (new).
 
 ## Step 3: Monitor Update Progress
 
@@ -86,6 +86,7 @@ If `failure_action: pause` and an update fails:
 
 ```bash
 # Check which replica failed and why
+
 docker service ps my-stack_api --no-trunc
 
 # Roll back manually
@@ -94,4 +95,4 @@ docker service rollback my-stack_api
 
 ## Summary
 
-Portainer's stack-based update workflow makes rolling deployments repeatable and auditable. By defining the update policy in the stack YAML, every deployment follows the same controlled rollout process — no manual orchestration required.
+Portainer's stack-based update workflow makes rolling deployments repeatable and auditable. By defining the update policy in the stack YAML, every deployment follows the same controlled rollout process - no manual orchestration required.

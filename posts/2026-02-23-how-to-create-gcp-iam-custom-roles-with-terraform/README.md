@@ -18,6 +18,7 @@ The most common use case is creating a custom role scoped to a specific project.
 
 ```hcl
 # Custom role for an application that needs to read from Pub/Sub
+
 # and write to BigQuery, but nothing else
 resource "google_project_iam_custom_role" "pubsub_to_bigquery" {
   role_id     = "pubsubToBigquery"

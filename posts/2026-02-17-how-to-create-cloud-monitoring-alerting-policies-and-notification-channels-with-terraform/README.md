@@ -30,6 +30,7 @@ Start by defining where alerts should go:
 # notification_channels.tf - Define where alerts get delivered
 
 # Email notification channel for the oncall team
+
 resource "google_monitoring_notification_channel" "email_oncall" {
   display_name = "Oncall Team Email"
   type         = "email"

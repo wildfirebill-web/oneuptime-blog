@@ -91,6 +91,7 @@ Calculate allocatable resources by subtracting reserved amounts:
 
 ```bash
 # Get kubelet config
+
 kubectl get --raw /api/v1/nodes/worker-1/proxy/configz | jq '.kubeletconfig.systemReserved'
 ```
 

@@ -51,6 +51,7 @@ Enable Origin Shield via the AWS CLI:
 
 ```bash
 # Get your current distribution config
+
 aws cloudfront get-distribution-config --id E1234567890ABC > dist-config.json
 
 # Edit the config to add Origin Shield to your origin

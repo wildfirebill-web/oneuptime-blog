@@ -45,6 +45,7 @@ By default Ubuntu hides the GRUB menu and boots immediately. To show the menu:
 # In /etc/default/grub
 
 # Show the menu instead of hiding it
+
 GRUB_TIMEOUT_STYLE=menu
 
 # Show for 5 seconds before auto-booting default entry

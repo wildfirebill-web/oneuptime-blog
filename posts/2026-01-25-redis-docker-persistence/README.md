@@ -31,6 +31,7 @@ flowchart TD
 
 ```bash
 # Create a named volume for Redis data
+
 docker volume create redis-data
 
 # Run Redis with AOF persistence

@@ -8,7 +8,7 @@ Description: Deploy a self-hosted bookmark manager using Linkwarden or Shiori wi
 
 ## Introduction
 
-Self-hosted bookmark managers let you save, organize, and archive web pages permanently — without relying on browser sync or commercial services that may shut down. This guide covers Linkwarden (collaborative, with page archiving) and Shiori (lightweight, CLI-friendly) deployed through Portainer.
+Self-hosted bookmark managers let you save, organize, and archive web pages permanently - without relying on browser sync or commercial services that may shut down. This guide covers Linkwarden (collaborative, with page archiving) and Shiori (lightweight, CLI-friendly) deployed through Portainer.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Linkwarden preserves full page archives (PDF + screenshots) alongside your bookm
 
 ```yaml
 # docker-compose.yml - Linkwarden with PostgreSQL
+
 version: "3.8"
 
 networks:

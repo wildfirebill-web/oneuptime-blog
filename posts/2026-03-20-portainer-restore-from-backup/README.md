@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, restore, disaster-recovery, backup
+Tags: Portainer, Restore, Disaster-recovery, Backup
 
 Description: A guide to restoring Portainer from a backup after data loss, corruption, or failed upgrades, covering both manual and API-based restoration methods.
 
@@ -16,6 +16,7 @@ This is the most common restore scenario:
 
 ```bash
 # Step 1: Stop and remove current Portainer container
+
 docker stop portainer 2>/dev/null || true
 docker rm portainer 2>/dev/null || true
 
@@ -177,4 +178,4 @@ tar tzf portainer-backup.tar.gz | head
 
 ## Conclusion
 
-Restoring Portainer from a backup is straightforward when you follow the correct steps. The key is to stop Portainer before restoring data to avoid corruption, restore to a fresh volume, and verify the restoration by logging in and checking your configuration. Always test your restore procedure before a real incident — restore to a test environment periodically to confirm backups are working correctly.
+Restoring Portainer from a backup is straightforward when you follow the correct steps. The key is to stop Portainer before restoring data to avoid corruption, restore to a fresh volume, and verify the restoration by logging in and checking your configuration. Always test your restore procedure before a real incident - restore to a test environment periodically to confirm backups are working correctly.

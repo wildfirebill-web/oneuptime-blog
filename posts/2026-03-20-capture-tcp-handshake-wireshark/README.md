@@ -14,6 +14,7 @@ Wireshark is the most powerful graphical packet analyzer available. For TCP hand
 
 ```bash
 # Option 1: Capture directly in Wireshark
+
 # Start Wireshark → select interface → start capture
 # Apply display filter: tcp.port == 80 && tcp.flags.syn == 1
 
@@ -28,7 +29,7 @@ curl http://10.20.0.5
 
 ## Wireshark Display Filters for Handshakes
 
-```
+```text
 # Show only SYN packets (connection initiations)
 tcp.flags.syn == 1 && tcp.flags.ack == 0
 
@@ -46,7 +47,7 @@ tcp.stream eq 0
 
 Click on the SYN packet in Wireshark and expand:
 
-```
+```text
 Internet Protocol Version 4
   Source: 192.168.1.10
   Destination: 10.20.0.5
@@ -66,7 +67,7 @@ Transmission Control Protocol
 
 ## Calculating Handshake Timing
 
-```
+```text
 # In Wireshark's Time column (relative timestamps):
 # Frame 1: 0.000000  SYN from client to server
 # Frame 2: 0.000823  SYN-ACK from server to client  ← 0.82ms server processing
@@ -80,7 +81,7 @@ Transmission Control Protocol
 
 Right-click a packet → Follow → TCP Stream:
 
-```
+```text
 # Shows the complete conversation in order
 # Useful for seeing application data right after the handshake
 GET / HTTP/1.1
@@ -94,9 +95,9 @@ Content-Type: text/html
 
 ## Using Wireshark Statistics
 
-```
+```text
 # Navigate to: Statistics → TCP Stream Graphs → Time-Sequence (Stevens)
-# Shows sequence number progression over time — good for seeing slow start,
+# Shows sequence number progression over time - good for seeing slow start,
 # congestion events, and retransmissions
 
 # Statistics → Conversations → TCP

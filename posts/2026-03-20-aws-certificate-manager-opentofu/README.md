@@ -43,6 +43,7 @@ resource "aws_acm_certificate" "main" {
 
 ```hcl
 # Create CNAME records for DNS validation
+
 resource "aws_route53_record" "cert_validation" {
   for_each = {
     for dvo in aws_acm_certificate.main.domain_validation_options : dvo.domain_name => {
@@ -160,4 +161,4 @@ aws acm describe-certificate \
 
 ## Conclusion
 
-ACM DNS validation via Route 53 is the recommended approach—it fully automates validation and renewal without manual intervention. The `create_before_destroy = true` lifecycle rule is critical for certificate rotation, ensuring a new certificate is validated and attached before the old one is removed. Always use the `aws_acm_certificate_validation` resource as a dependency for any resources that use the certificate to prevent deployment of services with unvalidated certificates.
+ACM DNS validation via Route 53 is the recommended approach-it fully automates validation and renewal without manual intervention. The `create_before_destroy = true` lifecycle rule is critical for certificate rotation, ensuring a new certificate is validated and attached before the old one is removed. Always use the `aws_acm_certificate_validation` resource as a dependency for any resources that use the certificate to prevent deployment of services with unvalidated certificates.

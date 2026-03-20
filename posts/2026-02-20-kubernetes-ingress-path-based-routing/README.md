@@ -29,6 +29,7 @@ Make sure you have an Ingress controller installed:
 
 ```bash
 # Install Nginx Ingress Controller using Helm
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 

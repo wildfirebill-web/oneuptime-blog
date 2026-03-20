@@ -39,6 +39,7 @@ Here is how to create an IAM user and access key with Terraform.
 
 ```hcl
 # Create the IAM user
+
 resource "aws_iam_user" "service_account" {
   name = "ci-cd-service-account"
   path = "/service-accounts/"

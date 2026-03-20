@@ -71,6 +71,7 @@ The following command exports and decompiles your current CRUSH map:
 
 ```bash
 # Export the current CRUSH map to a binary file
+
 ceph osd getcrushmap -o crushmap.bin
 
 # Decompile the binary CRUSH map to a human-readable format

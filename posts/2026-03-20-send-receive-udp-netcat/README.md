@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, netcat, Linux, Networking, Testing, Socket
+Tags: UDP, netcat, Linux, Networking, Testing, Sockets
 
 Description: Use netcat (nc) to send and receive UDP packets on Linux for testing UDP services, verifying port availability, and debugging UDP-based protocols.
 
@@ -14,6 +14,7 @@ Description: Use netcat (nc) to send and receive UDP packets on Linux for testin
 
 ```bash
 # Terminal 1: Listen for UDP on port 5000
+
 nc -ul 5000
 # -u: UDP mode
 # -l: listen mode
@@ -137,4 +138,4 @@ done
 
 ## Conclusion
 
-`netcat` in UDP mode (`-u`) is the fastest way to verify UDP connectivity. Send a test packet with `echo | nc -u host port`, listen with `nc -ul port`, and combine with `tcpdump` to see exactly where packets reach. Remember: unlike TCP, there is no confirmation of delivery in UDP itself — you only know a packet arrived if the application responds. ICMP port unreachable is the only automatic signal that a closed UDP port provides.
+`netcat` in UDP mode (`-u`) is the fastest way to verify UDP connectivity. Send a test packet with `echo | nc -u host port`, listen with `nc -ul port`, and combine with `tcpdump` to see exactly where packets reach. Remember: unlike TCP, there is no confirmation of delivery in UDP itself - you only know a packet arrived if the application responds. ICMP port unreachable is the only automatic signal that a closed UDP port provides.

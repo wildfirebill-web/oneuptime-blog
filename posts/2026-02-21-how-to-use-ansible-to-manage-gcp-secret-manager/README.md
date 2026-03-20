@@ -28,6 +28,7 @@ Compared to storing secrets in files, environment variables, or even Ansible Vau
 
 ```bash
 # Install the GCP Ansible collection
+
 ansible-galaxy collection install google.cloud
 
 # Enable the Secret Manager API

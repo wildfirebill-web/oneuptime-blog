@@ -27,6 +27,7 @@ Radarr is a movie collection manager that integrates with indexers and download 
 
 ```bash
 # Create the Radarr configuration directory
+
 mkdir -p ~/radarr/config
 
 # Ensure your movie library directory exists

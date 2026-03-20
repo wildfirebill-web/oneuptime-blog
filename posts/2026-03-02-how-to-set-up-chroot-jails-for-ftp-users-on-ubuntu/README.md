@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, FTP, Security, Vsftpd, ProFTPD
+Tags: Ubuntu, FTP, Security, vsftpd, ProFTPD
 
 Description: Restrict FTP users to specific directories using chroot jails on Ubuntu with vsftpd and ProFTPD, preventing directory traversal and unauthorized file system access.
 
@@ -30,6 +30,7 @@ sudo nano /etc/vsftpd.conf
 
 ```ini
 # Chroot all local users to their home directories
+
 chroot_local_user=YES
 
 # IMPORTANT: Do NOT set allow_writeable_chroot=YES if you want proper security.

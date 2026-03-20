@@ -47,6 +47,7 @@ GitHub-hosted runners come with Podman pre-installed. Here's a complete workflow
 
 ```yaml
 # .github/workflows/podman-build.yml
+
 name: Podman Build and Push
 
 on:

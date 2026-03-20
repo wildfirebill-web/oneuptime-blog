@@ -109,6 +109,7 @@ The Collector receives OTLP data and fans it out to each backend:
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

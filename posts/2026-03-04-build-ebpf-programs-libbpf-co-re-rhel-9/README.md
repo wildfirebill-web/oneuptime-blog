@@ -31,6 +31,7 @@ The key insight is that your compiled eBPF object file contains relocation recor
 
 ```bash
 # Install all required development packages
+
 sudo dnf install -y \
     clang \
     llvm \

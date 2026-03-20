@@ -1,4 +1,4 @@
-# How to Fix "Error 500 on Container Recreation" in Portainer
+# How to Fix 'Error 500 on Container Recreation' in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ An HTTP 500 error when recreating a container in Portainer means the Docker API 
 
 ```bash
 # Check Portainer logs for the 500 error details
+
 docker logs portainer --tail 50 2>&1 | grep -i "500\|error\|failed"
 
 # Check Docker daemon logs for more detail
@@ -191,4 +192,4 @@ docker run -d \
 
 ## Conclusion
 
-HTTP 500 errors during container recreation in Portainer almost always correspond to a specific Docker API error. The fastest path to diagnosis is to try the same operation from the Docker CLI — you'll get a descriptive error message instead of a generic 500. The most common causes are stale container names not fully cleaned up, missing volumes or network resources, and image pull failures due to registry authentication issues.
+HTTP 500 errors during container recreation in Portainer almost always correspond to a specific Docker API error. The fastest path to diagnosis is to try the same operation from the Docker CLI - you'll get a descriptive error message instead of a generic 500. The most common causes are stale container names not fully cleaned up, missing volumes or network resources, and image pull failures due to registry authentication issues.

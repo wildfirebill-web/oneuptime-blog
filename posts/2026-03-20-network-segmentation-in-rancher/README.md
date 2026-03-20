@@ -26,7 +26,7 @@ In Rancher:
 4. Assign namespaces to the project.
 
 Enable project network isolation:
-```
+```text
 Project Settings > Network Isolation > Enabled
 ```
 
@@ -178,6 +178,7 @@ This restricts traffic to specific HTTP methods and paths.
 
 ```bash
 # Test that frontend can reach backend
+
 kubectl exec -n frontend deploy/web -- curl -s http://api.backend.svc:8080/health
 
 # Test that frontend cannot reach database directly

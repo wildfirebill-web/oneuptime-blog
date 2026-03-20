@@ -27,6 +27,7 @@ This guide walks through deploying Triton Inference Server with GPU support usin
 
 ```yaml
 # clusters/my-cluster/triton/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -55,6 +55,7 @@ Once created, you cannot modify this ConfigMap:
 
 ```bash
 # This will fail
+
 kubectl patch configmap app-config-v1 -p '{"data":{"app.properties":"changed"}}'
 # Error: field is immutable
 ```

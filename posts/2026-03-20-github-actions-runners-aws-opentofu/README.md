@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitHub Actions, CI/CD, AWS, EC2, Auto Scaling, Runners, Infrastructure as Code
+Tags: OpenTofu, GitHub Actions, CI/CD, AWS, EC2, Auto Scaling, Runner, Infrastructure as Code
 
 Description: Learn how to deploy self-hosted GitHub Actions runners on AWS EC2 with auto-scaling using OpenTofu, providing cost-effective and secure CI/CD compute that scales with your workload.
 
@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # iam.tf
+
 resource "aws_iam_role" "runner" {
   name = "${var.prefix}-github-runner"
 
@@ -220,10 +221,10 @@ resource "aws_autoscaling_group" "runners" {
 ```hcl
 resource "aws_security_group" "runner" {
   name        = "${var.prefix}-github-runner"
-  description = "GitHub Actions runner — outbound only"
+  description = "GitHub Actions runner - outbound only"
   vpc_id      = var.vpc_id
 
-  # No inbound rules — runners connect outbound to GitHub
+  # No inbound rules - runners connect outbound to GitHub
   egress {
     from_port   = 0
     to_port     = 0
@@ -235,8 +236,8 @@ resource "aws_security_group" "runner" {
 
 ## Best Practices
 
-- Use `--ephemeral` flag in the runner configuration — ephemeral runners terminate after one job, preventing state leakage between jobs and ensuring clean environments.
-- Use Spot instances with multiple instance types for non-critical CI jobs — this reduces costs by 60-80% compared to On-Demand pricing.
-- Restrict the security group to outbound-only — runners don't need inbound access. GitHub uses long-polling over HTTPS for job dispatch.
+- Use `--ephemeral` flag in the runner configuration - ephemeral runners terminate after one job, preventing state leakage between jobs and ensuring clean environments.
+- Use Spot instances with multiple instance types for non-critical CI jobs - this reduces costs by 60-80% compared to On-Demand pricing.
+- Restrict the security group to outbound-only - runners don't need inbound access. GitHub uses long-polling over HTTPS for job dispatch.
 - Store the GitHub runner token in AWS Secrets Manager and fetch it in user data rather than embedding it in the launch template.
-- Scale the ASG to zero when no jobs are queued — use GitHub's runner scale sets or a Lambda function that watches queue depth to trigger scaling events.
+- Scale the ASG to zero when no jobs are queued - use GitHub's runner scale sets or a Lambda function that watches queue depth to trigger scaling events.

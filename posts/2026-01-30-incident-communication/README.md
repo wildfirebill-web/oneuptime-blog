@@ -324,6 +324,7 @@ class StatusPageClient:
 
 
 # Example usage demonstrating the complete workflow
+
 if __name__ == "__main__":
     # Initialize the client with your credentials
     client = StatusPageClient(

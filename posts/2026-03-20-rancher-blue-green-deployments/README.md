@@ -1,8 +1,8 @@
-# How to Implement Blue-Green Deployments in Rancher
+# How to Implement Blue-Green Deployments in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Blue-Green, Deployments, CI/CD
+Tags: Rancher, Kubernetes, Blue-Green, Deployment, CI/CD
 
 Description: Implement zero-downtime blue-green deployments in Rancher-managed Kubernetes clusters using service switching and GitOps automation.
 
@@ -23,6 +23,7 @@ graph LR
 
 ```yaml
 # blue-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -138,7 +139,7 @@ spec:
 
 ```bash
 #!/usr/bin/env bash
-# blue-green-switch.sh — Switch traffic between blue and green
+# blue-green-switch.sh - Switch traffic between blue and green
 
 NAMESPACE="production"
 SERVICE="myapp"
@@ -176,7 +177,7 @@ kubectl patch service "${SERVICE}" \
   -p "{\"spec\":{\"selector\":{\"slot\":\"${TARGET_SLOT}\"}}}"
 
 echo "✓ Traffic switched to ${TARGET_SLOT}"
-echo "  Previous slot (${CURRENT_SLOT}) is now idle — available for rollback"
+echo "  Previous slot (${CURRENT_SLOT}) is now idle - available for rollback"
 ```
 
 ## Step 4: Integrate with a CI/CD Pipeline
@@ -242,12 +243,12 @@ jobs:
 ## Step 5: Rollback
 
 ```bash
-# Instant rollback — just switch the selector back
+# Instant rollback - just switch the selector back
 kubectl patch service myapp \
   -n production \
   -p '{"spec":{"selector":{"slot":"blue"}}}'
 
-# This takes effect immediately — no redeployment needed
+# This takes effect immediately - no redeployment needed
 ```
 
 ## Conclusion

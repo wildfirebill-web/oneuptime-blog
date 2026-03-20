@@ -9,7 +9,7 @@ Description: Wildcard masks in ACLs define which bits of an IP address must matc
 ## ACL Wildcard Basics
 
 In a Cisco ACL entry:
-```
+```text
 permit ip <address> <wildcard>
 ```
 - Where the wildcard has a **0**: the corresponding IP bit must match the address.
@@ -18,24 +18,24 @@ permit ip <address> <wildcard>
 ## Common ACL Patterns
 
 ### Match a single host (wildcard = 0.0.0.0)
-```
+```text
 access-list 10 permit 192.168.1.100 0.0.0.0
 ! Equivalent to: host 192.168.1.100
 ```
 
 ### Match a /24 subnet (wildcard = 0.0.0.255)
-```
+```text
 access-list 10 permit 192.168.1.0 0.0.0.255
 ```
 
 ### Match any address (wildcard = 255.255.255.255)
-```
+```text
 access-list 10 permit 0.0.0.0 255.255.255.255
 ! Equivalent to: any
 ```
 
 ### Match a /22 summary (wildcard = 0.0.3.255)
-```
+```text
 access-list 10 permit 192.168.0.0 0.0.3.255
 ! Covers 192.168.0.0 through 192.168.3.255
 ```
@@ -51,6 +51,7 @@ def acl_entry(action: str, cidr: str) -> str:
     return f"{action} {net.network_address} {net.hostmask}"
 
 # Generate ACL entries for a list of permitted subnets
+
 permitted_subnets = [
     "10.0.10.0/24",
     "10.0.20.0/24",
@@ -64,7 +65,7 @@ print("  deny ip any any")
 ```
 
 Output:
-```
+```text
 ip access-list extended PERMIT_INTERNAL
   permit ip 10.0.10.0 0.0.0.255 any
   permit ip 10.0.20.0 0.0.0.255 any
@@ -76,7 +77,7 @@ ip access-list extended PERMIT_INTERNAL
 
 Wildcard masks don't have to be contiguous. This is a key difference from subnet masks:
 
-```
+```text
 ! Match any even-numbered host in 192.168.1.0/24
 ! Wildcard 0.0.0.254 = 11111110 → match if last bit = 0 (even)
 access-list 10 permit 192.168.1.0 0.0.0.254

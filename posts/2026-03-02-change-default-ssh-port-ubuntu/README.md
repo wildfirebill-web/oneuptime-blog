@@ -26,6 +26,7 @@ The SSH server configuration is in `/etc/ssh/sshd_config`:
 
 ```bash
 # Open the SSH daemon configuration file
+
 sudo nano /etc/ssh/sshd_config
 ```
 

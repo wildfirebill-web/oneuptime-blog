@@ -27,6 +27,7 @@ graph TD
 
 ```yaml
 # roles/container_rollback/tasks/track.yml
+
 # Track deployment versions for rollback capability
 - name: Read current version file
   ansible.builtin.slurp:

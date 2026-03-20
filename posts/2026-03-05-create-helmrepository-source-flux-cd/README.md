@@ -27,6 +27,7 @@ You can verify Flux is installed by running the following command.
 
 ```bash
 # Check that Flux components are running
+
 flux check
 ```
 

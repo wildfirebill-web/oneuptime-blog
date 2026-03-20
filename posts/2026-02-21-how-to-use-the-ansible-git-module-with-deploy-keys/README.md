@@ -28,6 +28,7 @@ First, generate an SSH key pair specifically for deployment:
 
 ```yaml
 # playbook-generate-deploy-key.yml
+
 # Generates an ed25519 SSH key pair for use as a Git deploy key
 - name: Generate deploy key
   hosts: localhost

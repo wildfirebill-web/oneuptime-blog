@@ -14,6 +14,7 @@ tshark is the command-line counterpart to Wireshark. It can capture live network
 
 ```bash
 # Install tshark (part of the Wireshark package)
+
 sudo apt install tshark
 
 # During installation, you'll be asked if non-root users should be able to capture

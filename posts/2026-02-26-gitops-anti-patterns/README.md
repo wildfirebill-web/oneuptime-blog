@@ -18,6 +18,7 @@ This is the most dangerous anti-pattern and it happens more often than you think
 
 ```yaml
 # DO NOT DO THIS
+
 apiVersion: v1
 kind: Secret
 metadata:

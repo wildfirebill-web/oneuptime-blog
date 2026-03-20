@@ -79,6 +79,7 @@ class PriorityQueue:
         self.redis.delete(self.key)
 
 # Usage
+
 pq = PriorityQueue('tasks', r)
 
 # Add tasks with priorities (lower = more urgent)

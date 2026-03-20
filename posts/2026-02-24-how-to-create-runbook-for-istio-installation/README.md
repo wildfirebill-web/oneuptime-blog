@@ -23,6 +23,7 @@ Before starting, verify all of the following:
 
 ```bash
 # 1. Kubernetes cluster version (Istio 1.24 supports K8s 1.28-1.31)
+
 kubectl version --short
 
 # 2. kubectl access with cluster-admin privileges

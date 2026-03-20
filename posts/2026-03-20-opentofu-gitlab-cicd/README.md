@@ -20,6 +20,7 @@ Learn how to configure GitLab CI/CD pipelines with OpenTofu for automated infras
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

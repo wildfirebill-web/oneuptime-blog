@@ -53,6 +53,7 @@ Rollback:
 
 ```bash
 # Monitor current BPF map usage trends
+
 # BPF maps have fixed maximum sizes set at compile time
 
 # Check current NAT table usage (service endpoints)

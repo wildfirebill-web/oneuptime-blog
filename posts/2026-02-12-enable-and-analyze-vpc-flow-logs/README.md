@@ -49,6 +49,7 @@ Create the role and attach a policy that grants write access to CloudWatch Logs.
 
 ```bash
 # Create the IAM role for flow logs
+
 aws iam create-role \
   --role-name VPCFlowLogsRole \
   --assume-role-policy-document file://trust-policy.json

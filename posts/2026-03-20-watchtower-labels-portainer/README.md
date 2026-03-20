@@ -1,4 +1,4 @@
-# How to Configure Per-Container Update Behavior with Watchtower Labels in Portainer
+# How to Configure Per-Container Updates with Watchtower in Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ When Watchtower runs with `WATCHTOWER_LABEL_ENABLE=true`, only labeled container
 
 ```yaml
 # In Portainer: Stacks > Add Stack
+
 services:
   frontend:
     image: myorg/frontend:latest

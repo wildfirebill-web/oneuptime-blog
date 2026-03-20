@@ -20,7 +20,7 @@ In Authentik, ensure:
 
 The correct redirect URI for Portainer OAuth:
 
-```
+```text
 https://portainer.example.com/
 ```
 
@@ -30,7 +30,7 @@ Note: Portainer's redirect URI is just the root URL with a trailing slash, not a
 
 In Portainer go to **Settings > Authentication > OAuth**:
 
-```
+```text
 Authorization URL: https://authentik.example.com/application/o/portainer/authorize/
 Access Token URL:  https://authentik.example.com/application/o/token/
 Resource URL:      https://authentik.example.com/application/o/userinfo/
@@ -47,6 +47,7 @@ This is the most common error. The URL in Portainer's OAuth settings must exactl
 
 ```bash
 # Check Portainer logs for OAuth errors
+
 docker logs portainer 2>&1 | grep -i "oauth\|redirect\|token\|state"
 
 # Error: "redirect_uri_mismatch" means the URIs do not match exactly

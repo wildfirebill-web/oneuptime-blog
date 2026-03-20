@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, EC2, Instance Metadata, IMDSv2, AWS, Security, Infrastructure as Code
 
-Description: Learn how to configure EC2 Instance Metadata Service with OpenTofu — enforcing IMDSv2, disabling metadata for sensitive workloads, and using metadata in user data scripts securely.
+Description: Learn how to configure EC2 Instance Metadata Service with OpenTofu - enforcing IMDSv2, disabling metadata for sensitive workloads, and using metadata in user data scripts securely.
 
 ## Introduction
 
@@ -20,7 +20,7 @@ resource "aws_launch_template" "app" {
 
   metadata_options {
     http_endpoint               = "enabled"
-    http_tokens                 = "required"     # IMDSv2 — session token required
+    http_tokens                 = "required"     # IMDSv2 - session token required
     http_put_response_hop_limit = 1              # Prevents container workloads from reaching IMDS
     instance_metadata_tags      = "enabled"      # Expose instance tags via IMDS
   }
@@ -31,6 +31,7 @@ resource "aws_launch_template" "app" {
 
 ```hcl
 # Enforce IMDSv2 as the default for all new instances in the account/region
+
 resource "aws_ec2_instance_metadata_defaults" "require_imdsv2" {
   http_tokens                 = "required"
   http_put_response_hop_limit = 2  # Allow containers on EC2 (hop limit 2)
@@ -42,7 +43,7 @@ resource "aws_ec2_instance_metadata_defaults" "require_imdsv2" {
 
 ```bash
 #!/bin/bash
-# IMDSv2 — step 1: get session token (TTL up to 21600 seconds = 6 hours)
+# IMDSv2 - step 1: get session token (TTL up to 21600 seconds = 6 hours)
 TOKEN=$(curl -s -X PUT "http://169.254.169.254/latest/api/token" \
   -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
 
@@ -159,7 +160,7 @@ resource "aws_cloudwatch_metric_alarm" "imdsv1_usage" {
   period              = 300
   statistic           = "Sum"
   threshold           = 0
-  alarm_description   = "Detected IMDSv1 (no token) requests — migrate to IMDSv2"
+  alarm_description   = "Detected IMDSv1 (no token) requests - migrate to IMDSv2"
 
   alarm_actions = [aws_sns_topic.security_alerts.arn]
 

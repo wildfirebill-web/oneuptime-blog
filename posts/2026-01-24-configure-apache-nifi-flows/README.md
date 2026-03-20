@@ -336,6 +336,7 @@ Configure bulletins and reporting for operational visibility:
 
 ```bash
 # nifi.properties for JVM tuning
+
 # Increase heap for large flows
 java.arg.2=-Xms4g
 java.arg.3=-Xmx8g

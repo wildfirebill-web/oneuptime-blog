@@ -24,6 +24,7 @@ First, verify your storage class supports volume snapshots:
 
 ```bash
 # Check if your storage class has snapshot capability
+
 kubectl get storageclass -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.provisioner}{"\n"}{end}'
 
 # List available VolumeSnapshotClasses

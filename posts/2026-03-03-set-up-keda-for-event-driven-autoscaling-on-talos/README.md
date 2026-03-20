@@ -27,6 +27,7 @@ The recommended installation method is Helm:
 
 ```bash
 # Add the KEDA Helm repository
+
 helm repo add kedacore https://kedacore.github.io/charts
 helm repo update
 

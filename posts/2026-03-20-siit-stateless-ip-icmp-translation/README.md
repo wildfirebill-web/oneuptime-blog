@@ -8,7 +8,7 @@ Description: A detailed explanation of SIIT (Stateless IP/ICMP Translation), the
 
 ## What Is SIIT?
 
-SIIT (Stateless IP/ICMP Translation) is defined in RFC 7915 and provides the algorithmic specification for translating between IPv4 and IPv6 packet headers. It is "stateless" because each packet is translated independently without maintaining connection state — unlike NAT which tracks sessions.
+SIIT (Stateless IP/ICMP Translation) is defined in RFC 7915 and provides the algorithmic specification for translating between IPv4 and IPv6 packet headers. It is "stateless" because each packet is translated independently without maintaining connection state - unlike NAT which tracks sessions.
 
 SIIT is the building block used by:
 - NAT64 (which adds stateful address mapping on top of SIIT)
@@ -50,7 +50,7 @@ When translating an IPv4 packet to IPv6:
 
 The key address mapping uses a configured NAT64 prefix (e.g., `64:ff9b::/96`). An IPv4 address is embedded in the last 32 bits of the IPv6 address:
 
-```
+```text
 IPv4: 93.184.216.34
 In hex: 5d b8 d8 22
 
@@ -63,7 +63,7 @@ Short form:   64:ff9b::5db8:d822
 
 SIIT also handles translation between ICMPv4 and ICMPv6, since they share functionality but have different type codes:
 
-```
+```text
 ICMPv4 Echo Request (type 8, code 0) → ICMPv6 Echo Request (type 128, code 0)
 ICMPv4 Echo Reply  (type 0, code 0) → ICMPv6 Echo Reply  (type 129, code 0)
 ICMPv4 Dest Unreach (type 3)        → ICMPv6 Dest Unreach (type 1)
@@ -95,8 +95,9 @@ SIIT is purely stateless. Each packet contains enough information to translate i
 
 For deployments where stateless 1:1 translation is needed between specific IPv4 and IPv6 addresses, SIIT uses an EAMT (Explicit Address Mapping Table) defined in RFC 7757:
 
-```
+```text
 # EAMT example: map IPv4 /24 to IPv6 /120
+
 # IPv4 host 192.168.1.5 maps to IPv6 2001:db8::c0a8:0105
 EAMT entry: 192.168.1.0/24 ↔ 2001:db8::c0a8:0100/120
 ```

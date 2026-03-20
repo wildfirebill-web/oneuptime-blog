@@ -24,6 +24,7 @@ Before we jump into Ansible playbooks, let us understand the available network d
 
 ```bash
 # Install the community.docker collection
+
 ansible-galaxy collection install community.docker
 
 # Install the Docker Python SDK

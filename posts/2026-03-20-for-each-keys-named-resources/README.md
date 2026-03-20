@@ -8,7 +8,7 @@ Description: Learn how to use OpenTofu's for_each with map keys to create multip
 
 ---
 
-`for_each` is the preferred way to create multiple instances of a resource in OpenTofu when each instance needs a stable identity. Unlike `count`, `for_each` uses keys to identify resources — adding or removing a key only affects that specific resource, not all others.
+`for_each` is the preferred way to create multiple instances of a resource in OpenTofu when each instance needs a stable identity. Unlike `count`, `for_each` uses keys to identify resources - adding or removing a key only affects that specific resource, not all others.
 
 ---
 
@@ -27,6 +27,7 @@ Description: Learn how to use OpenTofu's for_each with map keys to create multip
 
 ```hcl
 # Create one S3 bucket per environment
+
 variable "buckets" {
   default = {
     "prod-data"    = "us-east-1"
@@ -192,14 +193,14 @@ resource "aws_iam_user" "users" {
 ## Moving from count to for_each
 
 ```hcl
-# Old (count-based) — fragile
+# Old (count-based) - fragile
 resource "aws_instance" "web" {
   count = 3
   ami   = "ami-xxx"
   # ...
 }
 
-# New (for_each-based) — stable
+# New (for_each-based) - stable
 locals {
   web_instances = toset(["web-1", "web-2", "web-3"])
 }
@@ -216,7 +217,7 @@ resource "aws_instance" "web" {
 ## Best Practices
 
 1. **Prefer for_each over count** for any resource where the number might change
-2. **Use meaningful string keys** — they become part of the resource address in state
+2. **Use meaningful string keys** - they become part of the resource address in state
 3. **Use `toset()`** for simple lists without needing values
 4. **Derive keys from attribute names** that users would recognize (environment names, region names)
 5. **Use `moved` blocks** when converting existing `count` resources to `for_each` to avoid recreation

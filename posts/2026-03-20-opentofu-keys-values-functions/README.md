@@ -1,4 +1,4 @@
-# How to Use the keys and values Functions in OpenTofu
+# How to Use the keys and values Functions in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use the keys and values functions in OpenTofu to extra
 
 ## Introduction
 
-The `keys` and `values` functions in OpenTofu extract the keys and values from a map, returning them as sorted lists. These functions are fundamental for working with maps — enabling iteration, aggregation, and conversion to lists for use with `for_each`, `count`, and list functions.
+The `keys` and `values` functions in OpenTofu extract the keys and values from a map, returning them as sorted lists. These functions are fundamental for working with maps - enabling iteration, aggregation, and conversion to lists for use with `for_each`, `count`, and list functions.
 
 ## Syntax
 

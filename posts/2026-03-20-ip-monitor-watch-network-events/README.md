@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, ip command, iproute2, Monitoring, Networking, Real-time
+Tags: Linux, ip command, iproute2, Monitoring, Networking, Real-Time
 
 Description: Monitor real-time network events including interface state changes, IP address additions and deletions, and routing table changes using ip monitor.
 
 ## Introduction
 
-`ip monitor` watches the kernel's netlink socket and prints events as they happen — interface up/down, IP address changes, route additions/deletions, ARP changes, and more. Unlike polling tools, `ip monitor` is event-driven and shows changes the instant they occur.
+`ip monitor` watches the kernel's netlink socket and prints events as they happen - interface up/down, IP address changes, route additions/deletions, ARP changes, and more. Unlike polling tools, `ip monitor` is event-driven and shows changes the instant they occur.
 
 ## Monitor All Network Events
 
 ```bash
 # Watch all network events
+
 ip monitor
 
 # Press Ctrl+C to stop

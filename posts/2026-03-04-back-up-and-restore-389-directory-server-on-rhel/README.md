@@ -16,6 +16,7 @@ Backing up your 389 Directory Server is essential for disaster recovery. There a
 
 ```bash
 # Export all data to an LDIF file while the server is running
+
 sudo dsconf localhost backend export userroot --ldif /tmp/backup-$(date +%Y%m%d).ldif
 
 # Or export with the server stopped for consistency

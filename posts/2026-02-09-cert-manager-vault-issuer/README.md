@@ -28,6 +28,7 @@ First, set up Vault's PKI secrets engine. This example creates a simple PKI hier
 
 ```bash
 # Enable PKI secrets engine
+
 vault secrets enable pki
 
 # Configure max TTL (10 years for root CA)

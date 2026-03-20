@@ -33,6 +33,7 @@ Create a new RKE2 cluster via Rancher with Calico CNI selected:
 
 ```bash
 # Using the Rancher CLI to create a cluster with Calico
+
 # Alternatively, use the Rancher UI: Cluster Management > Create > Custom > Network > Calico
 
 # Export the Rancher cluster configuration template

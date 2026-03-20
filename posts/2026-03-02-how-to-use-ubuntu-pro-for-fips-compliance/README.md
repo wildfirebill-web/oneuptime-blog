@@ -37,6 +37,7 @@ Test FIPS in a non-production environment first.
 
 ```bash
 # Verify Ubuntu Pro is attached
+
 pro status | grep "Machine is"
 # Should show: Machine is attached to 'Ubuntu Pro'
 

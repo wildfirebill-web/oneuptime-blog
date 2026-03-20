@@ -33,6 +33,7 @@ The most common cause of all applications showing "Unknown" is a controller that
 
 ```bash
 # Check controller health
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-application-controller
 
 # Check if the controller is processing

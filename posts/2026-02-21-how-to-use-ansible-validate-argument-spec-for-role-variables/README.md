@@ -16,6 +16,7 @@ The argument spec lives in a file called `meta/argument_specs.yml` inside your r
 
 ```yaml
 # roles/webserver/meta/argument_specs.yml
+
 ---
 argument_specs:
   main:

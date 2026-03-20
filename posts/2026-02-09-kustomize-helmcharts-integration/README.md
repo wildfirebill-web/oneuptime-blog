@@ -24,6 +24,7 @@ The helmCharts field in kustomization.yaml lets you specify Helm charts to infla
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

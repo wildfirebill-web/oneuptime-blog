@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, asyncio, IPv4, Sockets, Async, Networking, Concurrency
+Tags: Python, Asyncio, IPv4, Sockets, Async, Networking, Concurrency
 
 Description: Learn how to use Python's asyncio library to build high-concurrency IPv4 TCP servers and clients without threads or blocking I/O.
 
@@ -98,7 +98,7 @@ asyncio.run(main())
 
 ## Handling Multiple Concurrent Clients
 
-asyncio handles concurrency natively — just run many client coroutines together:
+asyncio handles concurrency natively - just run many client coroutines together:
 
 ```python
 import asyncio
@@ -149,4 +149,4 @@ asyncio.run(client_with_timeout())
 
 ## Conclusion
 
-Python's `asyncio` makes it easy to build high-concurrency IPv4 TCP servers and clients with `asyncio.start_server` and `asyncio.open_connection`. By awaiting I/O operations, a single event loop thread can serve thousands of clients simultaneously—far more efficiently than one thread per connection.
+Python's `asyncio` makes it easy to build high-concurrency IPv4 TCP servers and clients with `asyncio.start_server` and `asyncio.open_connection`. By awaiting I/O operations, a single event loop thread can serve thousands of clients simultaneously-far more efficiently than one thread per connection.

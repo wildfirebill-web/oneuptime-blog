@@ -22,6 +22,7 @@ Trace a running process or command:
 
 ```bash
 # Trace a command
+
 strace -o /tmp/trace.log ls -la /etc
 
 # Trace a running process by PID

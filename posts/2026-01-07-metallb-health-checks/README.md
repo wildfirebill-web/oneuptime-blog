@@ -770,6 +770,7 @@ HAProxy configuration for health checking MetalLB endpoints:
 
 ```haproxy
 # HAProxy configuration for health checking MetalLB services
+
 frontend http_front
     bind *:80
     default_backend web_servers

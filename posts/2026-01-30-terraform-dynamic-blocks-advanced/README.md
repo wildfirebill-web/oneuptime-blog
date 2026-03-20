@@ -735,6 +735,7 @@ Third, use `for_each` with maps rather than lists for stable resource addressing
 
 ```hcl
 # Avoid: Nested computation in dynamic block
+
 dynamic "setting" {
   for_each = var.settings
   content {

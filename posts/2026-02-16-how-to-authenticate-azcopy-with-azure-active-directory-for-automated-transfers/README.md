@@ -33,6 +33,7 @@ For development and testing, the simplest approach is interactive login:
 
 ```bash
 # Log in interactively - opens a browser
+
 azcopy login
 
 # For a specific tenant

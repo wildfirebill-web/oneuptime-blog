@@ -18,6 +18,7 @@ The package is available in the base RHEL repositories. Nothing special needed h
 
 ```bash
 # Install the dnf-automatic package
+
 sudo dnf install dnf-automatic -y
 ```
 

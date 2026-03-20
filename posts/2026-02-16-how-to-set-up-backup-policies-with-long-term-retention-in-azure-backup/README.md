@@ -82,6 +82,7 @@ Here is how to create a backup policy with comprehensive long-term retention:
 
 ```bash
 # Create an Azure VM backup policy with long-term retention
+
 # This policy is designed for compliance-regulated workloads
 
 az backup policy create \

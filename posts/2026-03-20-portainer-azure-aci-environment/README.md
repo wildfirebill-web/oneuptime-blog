@@ -28,6 +28,7 @@ You need the following information from Azure:
 
 ```bash
 # Install Azure CLI if not present
+
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 # Log into Azure
@@ -92,7 +93,7 @@ SECRET=$(az ad app credential reset \
   --query 'password' -o tsv)
 
 echo "Client Secret: $SECRET"
-# Save this securely — it will not be shown again
+# Save this securely - it will not be shown again
 ```
 
 ## Step 6: Add ACI as an Environment in Portainer

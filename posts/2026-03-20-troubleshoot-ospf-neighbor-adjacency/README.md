@@ -24,7 +24,7 @@ Problems can occur at any stage. The `show ip ospf neighbor` command shows the c
 
 ## Step 1: Check Current Neighbor State
 
-```
+```text
 Router# show ip ospf neighbor
 
 Neighbor ID     Pri   State       Dead Time   Address       Interface
@@ -33,7 +33,7 @@ Neighbor ID     Pri   State       Dead Time   Address       Interface
 ```
 
 - `FULL`: Adjacency established (desired state)
-- `2WAY`: Seen each other, but both are DROTHER—normal for non-DR/BDR routers on multiaccess
+- `2WAY`: Seen each other, but both are DROTHER-normal for non-DR/BDR routers on multiaccess
 - `INIT`: Hello received but our Router ID not in the neighbor's Hello
 - `EXSTART/EXCHANGE`: MTU mismatch or DBD sequence number issue
 
@@ -41,7 +41,7 @@ Neighbor ID     Pri   State       Dead Time   Address       Interface
 
 Timer mismatches prevent OSPF neighbors from forming. Both sides must match:
 
-```
+```text
 ! Check timers on the interface
 Router# show ip ospf interface GigabitEthernet0/0
 
@@ -58,7 +58,7 @@ Router(config-if)# ip ospf dead-interval 40
 
 Both neighbors on the same link must be in the same OSPF area:
 
-```
+```text
 ! Check area assignments
 Router# show ip ospf interface GigabitEthernet0/0 | include area
 
@@ -75,7 +75,7 @@ router ospf 1
 
 If one side has OSPF authentication and the other doesn't:
 
-```
+```text
 ! Check authentication type
 Router# show ip ospf interface GigabitEthernet0/0 | include auth
 
@@ -90,7 +90,7 @@ Router# show run | section ospf | include auth
 
 MTU mismatch causes the OSPF exchange to fail after reaching EXSTART. Both sides send DBD packets but can't complete:
 
-```
+```text
 ! Check interface MTU
 Router# show interface GigabitEthernet0/0 | include MTU
 
@@ -105,7 +105,7 @@ Router(config-if)# ip ospf mtu-ignore
 
 OSPF neighbors on the same link must share the same subnet. A mask mismatch prevents Hello acceptance:
 
-```
+```text
 ! Check IP address and mask
 Router# show ip interface brief | include Gig0/0
 
@@ -118,7 +118,7 @@ Router# show ip interface brief | include Gig0/0
 
 Network type mismatches (e.g., one side Point-to-Point, other side Broadcast) cause issues:
 
-```
+```text
 ! Check network type on both sides of a link
 Router# show ip ospf interface GigabitEthernet0/0 | include network type
 
@@ -130,7 +130,7 @@ Router(config-if)# ip ospf network point-to-point
 
 ## Step 8: Use Debug for Real-Time Troubleshooting
 
-```
+```text
 ! Debug OSPF Hello packets for a specific interface
 Router# debug ip ospf hello
 

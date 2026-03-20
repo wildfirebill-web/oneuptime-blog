@@ -41,6 +41,7 @@ GRANT ALL ON SCHEMA public TO k3s_user;
 
 ```bash
 # On the first k3s server node
+
 export K3S_TOKEN="my-cluster-secret"
 export DB_PASSWORD="strong-password-here"
 

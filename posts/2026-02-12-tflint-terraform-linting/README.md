@@ -18,6 +18,7 @@ TFLint has straightforward installation on all major platforms:
 
 ```bash
 # macOS with Homebrew
+
 brew install tflint
 
 # Linux - using the install script

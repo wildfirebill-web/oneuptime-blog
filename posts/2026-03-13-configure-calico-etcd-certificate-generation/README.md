@@ -27,6 +27,7 @@ This guide covers generating etcd certificates for Calico using OpenSSL for manu
 
 ```bash
 # Generate CA private key
+
 openssl genrsa -out calico-etcd-ca.key 4096
 
 # Generate self-signed CA certificate (10-year validity)

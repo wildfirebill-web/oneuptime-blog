@@ -39,6 +39,7 @@ First, verify the Collector process is actually running:
 
 ```bash
 # On Linux/Mac
+
 ps aux | grep otelcol
 
 # Check process with more details

@@ -78,6 +78,7 @@ Create base manifests that both environments share.
 
 ```yaml
 # base/apps/api-server/deployment.yaml
+
 # Base API server deployment used by both staging and production
 apiVersion: apps/v1
 kind: Deployment

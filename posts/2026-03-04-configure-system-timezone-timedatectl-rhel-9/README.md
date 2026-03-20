@@ -16,6 +16,7 @@ Start by seeing what your system is set to:
 
 ```bash
 # Display current time and timezone settings
+
 timedatectl
 ```
 

@@ -106,6 +106,7 @@ Verify that your router has graceful restart enabled:
 
 ```bash
 # Cisco IOS - enable graceful restart
+
 router bgp 64513
   bgp graceful-restart
   bgp graceful-restart restart-time 120

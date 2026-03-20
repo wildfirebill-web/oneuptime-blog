@@ -52,6 +52,7 @@ Start with a clean API client that all chat platform handlers share.
 
 ```python
 # argocd_client.py
+
 # Shared ArgoCD API client for ChatOps integrations
 import requests
 from dataclasses import dataclass

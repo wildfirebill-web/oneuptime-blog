@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, NGINX, Kubernetes, Web Server, Reverse Proxy, DevOps
+Tags: Talos Linux, Nginx, Kubernetes, Web Server, Reverse Proxy, DevOps
 
 Description: Deploy Nginx web server on Talos Linux as a reverse proxy, load balancer, and static file server with production-ready configurations.
 
@@ -33,6 +33,7 @@ The most common Nginx deployment on Kubernetes is as an ingress controller:
 
 ```bash
 # Install Nginx Ingress Controller using Helm
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 

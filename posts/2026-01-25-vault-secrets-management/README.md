@@ -57,6 +57,7 @@ flowchart TB
 
 ```bash
 # Start Vault in development mode (not for production!)
+
 docker run --cap-add=IPC_LOCK -d --name=vault \
   -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' \
   -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:8200' \

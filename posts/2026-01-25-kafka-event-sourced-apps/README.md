@@ -344,6 +344,7 @@ Configure Kafka topics appropriately for event sourcing workloads.
 
 ```bash
 # Create topic with infinite retention - events are never deleted
+
 kafka-topics.sh --create \
   --topic order-events \
   --bootstrap-server localhost:9092 \

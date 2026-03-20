@@ -23,6 +23,7 @@ This command activates the MetalLB addon in your Microk8s cluster, allowing it t
 
 ```bash
 # Enable the MetalLB addon in Microk8s
+
 # This sets up MetalLB as the load balancer implementation for your cluster
 microk8s enable metallb
 ```

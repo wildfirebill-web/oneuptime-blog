@@ -27,6 +27,7 @@ This guide covers the hardware management practices that ensure reliable Cilium 
 
 ```bash
 # Document hardware requirements for test nodes
+
 cat << 'HWREQ'
 Test Node Hardware Requirements:
 - NIC: 25G+ with native XDP support

@@ -37,6 +37,7 @@ If you already have a certificate from a CA (Certificate Authority), configure i
 
 ```bash
 # Create the secret from your certificate and key files
+
 kubectl create secret tls argocd-server-tls \
   --cert=server.crt \
   --key=server.key \

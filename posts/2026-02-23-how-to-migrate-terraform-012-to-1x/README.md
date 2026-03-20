@@ -30,6 +30,7 @@ Terraform 0.13 introduced the `required_providers` block with source addresses. 
 
 ```bash
 # First, ensure you are on the latest 0.12.x
+
 terraform version  # Should be 0.12.31
 
 # Download Terraform 0.13.x

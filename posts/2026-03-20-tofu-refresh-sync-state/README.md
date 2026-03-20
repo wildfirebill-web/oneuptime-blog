@@ -1,4 +1,4 @@
-# How to Use tofu refresh to Sync State
+# How to Use tofu refresh to Sync State - Tofu Sync State
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ The recommended approach for refreshing state:
 
 ```bash
 # Preview what refresh would change
+
 tofu plan -refresh-only
 
 # Apply the refresh with confirmation
@@ -117,7 +118,7 @@ grep "Objects have changed" refresh-output.txt
 
 ```bash
 #!/bin/bash
-# daily-refresh.sh — Run via cron to detect drift
+# daily-refresh.sh - Run via cron to detect drift
 
 tofu plan -refresh-only -detailed-exitcode -json > refresh.json
 
@@ -129,7 +130,7 @@ if [ $EXIT_CODE -eq 2 ] && [ "$DRIFT_COUNT" -gt 0 ]; then
   jq '.resource_drift[].address' refresh.json
   # Send alert...
 elif [ $EXIT_CODE -eq 0 ]; then
-  echo "No drift detected — state is current"
+  echo "No drift detected - state is current"
 else
   echo "Error during refresh"
   exit 1

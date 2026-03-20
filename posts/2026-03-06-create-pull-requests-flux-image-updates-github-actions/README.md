@@ -39,6 +39,7 @@ First, set up the image repository and policy for scanning:
 
 ```yaml
 # clusters/production/image-repository.yaml
+
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:

@@ -25,6 +25,7 @@ gen_ai.response.model      - Model that actually served the request
 gen_ai.operation.name      - Type of operation ("chat", "text_completion", "embeddings")
 
 # Token usage attributes
+
 gen_ai.usage.input_tokens  - Number of tokens in the prompt
 gen_ai.usage.output_tokens - Number of tokens in the completion
 

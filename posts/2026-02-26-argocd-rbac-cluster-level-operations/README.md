@@ -27,6 +27,7 @@ The `clusters` resource in ArgoCD RBAC controls who can manage the cluster regis
 
 ```yaml
 # Cluster management actions
+
 p, role:cluster-admin, clusters, get, *, allow    # View cluster details
 p, role:cluster-admin, clusters, create, *, allow  # Register new clusters
 p, role:cluster-admin, clusters, update, *, allow  # Update cluster config

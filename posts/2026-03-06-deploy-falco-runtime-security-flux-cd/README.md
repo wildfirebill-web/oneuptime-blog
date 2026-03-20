@@ -46,6 +46,7 @@ Define a namespace for Falco components.
 
 ```yaml
 # falco-namespace.yaml
+
 # Dedicated namespace for Falco runtime security
 apiVersion: v1
 kind: Namespace

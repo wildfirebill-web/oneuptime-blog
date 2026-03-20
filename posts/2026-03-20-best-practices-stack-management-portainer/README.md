@@ -8,7 +8,7 @@ Description: Establish best practices for creating, versioning, and maintaining 
 
 ---
 
-Stacks (Docker Compose definitions) are the primary deployment unit in Portainer. Managing them well — with proper versioning, environment separation, and secret management — is key to reliable deployments.
+Stacks (Docker Compose definitions) are the primary deployment unit in Portainer. Managing them well - with proper versioning, environment separation, and secret management - is key to reliable deployments.
 
 ## 1. Use GitOps for Stack Definitions
 
@@ -30,7 +30,8 @@ This means your stack definitions are:
 Never hardcode environment-specific values in the compose file:
 
 ```yaml
-# Bad — hardcoded values
+# Bad - hardcoded values
+
 services:
   app:
     image: myapp:latest
@@ -38,7 +39,7 @@ services:
       - DATABASE_URL=postgres://prod-db:5432/mydb
       - API_KEY=abc123secret
 
-# Good — use Portainer environment variables
+# Good - use Portainer environment variables
 services:
   app:
     image: myapp:${APP_VERSION:-latest}
@@ -47,20 +48,20 @@ services:
       - API_KEY=${API_KEY}
 ```
 
-Set `APP_VERSION`, `DATABASE_URL`, and `API_KEY` as Portainer stack environment variables — different values per environment.
+Set `APP_VERSION`, `DATABASE_URL`, and `API_KEY` as Portainer stack environment variables - different values per environment.
 
 ## 3. Pin Image Versions
 
 Never use `latest` in production stacks:
 
 ```yaml
-# Bad — unpredictable
+# Bad - unpredictable
 image: nginx:latest
 
-# Good — pinned version
+# Good - pinned version
 image: nginx:1.25.4
 
-# Even better — pinned by digest for full reproducibility
+# Even better - pinned by digest for full reproducibility
 image: nginx@sha256:3b4b1b2b1b2b1b2b1b2b1b2b1b2b1b2b1b2b1b2b
 ```
 
@@ -103,10 +104,10 @@ services:
 ## 6. Use Restart Policies Appropriately
 
 ```yaml
-# Production services — always restart
+# Production services - always restart
 restart: unless-stopped
 
-# One-off jobs — don't restart
+# One-off jobs - don't restart
 restart: "no"
 
 # Services that should restart only on failure
@@ -132,7 +133,7 @@ Named volumes are managed by Docker and portable across environments.
 
 Use consistent stack names:
 
-```
+```text
 <app>-<tier>
 
 Examples:

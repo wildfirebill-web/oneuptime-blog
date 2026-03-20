@@ -36,6 +36,7 @@ If you do not already have a primary vault, create one in your main production r
 
 ```bash
 # Create the primary backup vault in the same region as your workloads
+
 gcloud backup-dr backup-vaults create vault-primary \
     --project=my-project \
     --location=us-central1 \

@@ -1,4 +1,4 @@
-# How to Deploy MinIO for ML Model Storage via Portainer
+# How to Deploy MinIO for ML Model Storage via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -88,6 +88,7 @@ After deployment, run initialization commands:
 
 ```bash
 # Access container via Portainer console
+
 # Run database migrations
 docker exec ml-tool python manage.py migrate
 

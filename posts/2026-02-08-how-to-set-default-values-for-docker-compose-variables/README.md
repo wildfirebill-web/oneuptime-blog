@@ -16,6 +16,7 @@ The most common way to set defaults is directly in the compose file using the `:
 
 ```yaml
 # docker-compose.yml - inline defaults with :- syntax
+
 version: "3.8"
 
 services:

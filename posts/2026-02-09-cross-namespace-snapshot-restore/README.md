@@ -27,6 +27,7 @@ Start with a snapshot in the production namespace:
 
 ```bash
 # Create a production database with data
+
 kubectl create namespace production
 
 kubectl apply -n production -f - <<EOF

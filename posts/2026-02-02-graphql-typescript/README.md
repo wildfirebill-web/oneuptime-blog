@@ -26,6 +26,7 @@ First, install the dependencies:
 
 ```bash
 # Core packages
+
 npm install graphql @graphql-codegen/cli
 
 # Plugins for TypeScript generation

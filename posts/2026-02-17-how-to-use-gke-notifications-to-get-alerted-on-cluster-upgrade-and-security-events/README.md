@@ -18,6 +18,7 @@ First, create a Pub/Sub topic that will receive the notifications:
 
 ```bash
 # Create a Pub/Sub topic for GKE notifications
+
 gcloud pubsub topics create gke-cluster-notifications
 ```
 

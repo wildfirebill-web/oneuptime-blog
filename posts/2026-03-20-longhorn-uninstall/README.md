@@ -1,4 +1,4 @@
-# How to Uninstall Longhorn Safely
+# How to Remove Longhorn from a Kubernetes Cluster
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ Uninstalling Longhorn without following the correct procedure can leave orphaned
 
 ```bash
 # Find all workloads using Longhorn PVCs
+
 kubectl get pvc -A -o json | \
   jq -r '.items[] | select(.spec.storageClassName | startswith("longhorn")) | "\(.metadata.namespace)/\(.metadata.name)"'
 
@@ -165,6 +166,6 @@ kubectl get pv | grep longhorn
 
 ## Best Practices
 
-- Always migrate data before uninstalling — Longhorn does not preserve volume data after uninstallation.
+- Always migrate data before uninstalling - Longhorn does not preserve volume data after uninstallation.
 - Use Velero or another backup tool to backup all Longhorn volumes before starting the uninstall process.
 - If uninstalling from a production cluster, schedule uninstallation during a maintenance window and test the procedure in a staging environment first.

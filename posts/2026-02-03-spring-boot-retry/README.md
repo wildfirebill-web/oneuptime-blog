@@ -1255,6 +1255,7 @@ public class RetryProperties {
 
 ```yaml
 # application.yml
+
 app:
   retry:
     max-attempts: 4

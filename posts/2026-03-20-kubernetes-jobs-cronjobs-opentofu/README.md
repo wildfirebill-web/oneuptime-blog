@@ -14,6 +14,7 @@ Kubernetes Jobs run one-off tasks to completion, while CronJobs schedule recurri
 
 ```hcl
 # main.tf - Database migration job
+
 resource "kubernetes_job_v1" "db_migration" {
   metadata {
     name      = "database-migration"

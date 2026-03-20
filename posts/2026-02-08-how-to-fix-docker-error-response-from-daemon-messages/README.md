@@ -28,6 +28,7 @@ This happens when you try to remove an image that is referenced by a container.
 
 ```bash
 # This fails because a container (running or stopped) uses the image
+
 docker rmi myapp:v1.0
 # Error response from daemon: conflict: unable to delete abc123 (must be forced) - image is being used by stopped container def456
 ```

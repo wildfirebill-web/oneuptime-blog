@@ -28,6 +28,7 @@ Verify the IPPool is configured correctly:
 ```bash
 calicoctl get ippools -o wide
 # Expected: At least one IPv4 IPPool with correct CIDR and mode
+
 ```
 
 Check that IPAM has allocated IPs to pods:

@@ -16,6 +16,7 @@ The `package` module has a deliberately simple interface:
 
 ```yaml
 # Install a package on any Linux distribution
+
 - name: Install git
   ansible.builtin.package:
     name: git

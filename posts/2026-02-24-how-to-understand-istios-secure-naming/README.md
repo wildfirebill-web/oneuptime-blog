@@ -152,6 +152,7 @@ You can verify secure naming is working by checking what SANs Envoy expects for 
 
 ```bash
 # Check the expected SANs for outbound connections to service-b
+
 istioctl proxy-config cluster service-a-pod \
   --fqdn "outbound|8080||service-b.default.svc.cluster.local" -o json | \
   python3 -c "

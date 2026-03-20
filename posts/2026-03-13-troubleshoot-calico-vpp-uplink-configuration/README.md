@@ -26,6 +26,7 @@ Calico VPP uplink configuration failures are among the most disruptive issues be
 
 ```bash
 # Check current NIC driver binding
+
 dpdk-devbind.py --status-dev net
 # If still showing Linux driver (e.g., ixgbe), binding failed
 

@@ -315,6 +315,7 @@ Access audit logs to view policy annotations:
 
 ```bash
 # If using audit log file
+
 sudo tail -f /var/log/kubernetes/audit/audit.log | \
   jq 'select(.annotations | has("resource-limits-check.total-cpu"))'
 

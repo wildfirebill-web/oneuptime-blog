@@ -16,6 +16,7 @@ The quickest way to check if Secure Boot is active:
 
 ```bash
 # Check Secure Boot status
+
 mokutil --sb-state
 ```
 

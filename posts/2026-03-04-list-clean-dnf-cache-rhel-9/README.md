@@ -16,6 +16,7 @@ The cache lives under `/var/cache/dnf/`. Each enabled repository gets its own su
 
 ```bash
 # Check the total size of the DNF cache
+
 du -sh /var/cache/dnf/
 
 # List the cache directories for each repo

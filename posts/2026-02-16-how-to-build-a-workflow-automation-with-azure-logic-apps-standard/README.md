@@ -22,6 +22,7 @@ Start by creating the resource using the Azure CLI.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-workflows --location eastus2
 
 # Create an App Service plan for the Logic App (WorkflowStandard is the SKU)

@@ -40,6 +40,7 @@ The first step in network security is to deny all traffic by default, then white
 
 ```yaml
 # playbook: create-default-deny.yml
+
 # Creates default deny policies for both ingress and egress in a namespace
 ---
 - name: Apply default deny Network Policies

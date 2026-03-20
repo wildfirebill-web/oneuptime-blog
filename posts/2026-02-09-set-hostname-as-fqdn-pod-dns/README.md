@@ -33,6 +33,7 @@ Running this pod shows:
 ```bash
 kubectl logs web-app-xyz123
 # Output: web-app-xyz123
+
 ```
 
 The FQDN exists in DNS, but it's not what the container sees as its hostname.

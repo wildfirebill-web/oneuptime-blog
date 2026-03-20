@@ -28,6 +28,7 @@ Benefits of using Hashes:
 
 ```bash
 # Set a single field
+
 HSET user:1 name "Alice"
 
 # Set multiple fields

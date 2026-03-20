@@ -14,6 +14,7 @@ tcpdump is the primary command-line tool for ICMPv6 debugging. Unlike Wireshark,
 
 ```bash
 # Capture all ICMPv6 traffic
+
 sudo tcpdump -i eth0 "icmp6"
 
 # Capture specific ICMPv6 types using byte offsets:

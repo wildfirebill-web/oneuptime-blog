@@ -33,6 +33,7 @@ Register the Azure NetApp Files resource provider and request capacity:
 
 ```bash
 # Register the NetApp resource provider
+
 az provider register --namespace Microsoft.NetApp
 
 # Wait for registration to complete

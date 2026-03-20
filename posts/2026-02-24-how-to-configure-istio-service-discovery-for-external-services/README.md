@@ -239,6 +239,7 @@ Istio generates metrics for all discovered services, including external ones:
 
 ```bash
 # Check if traffic is being tracked
+
 istioctl proxy-config stats deploy/my-app | grep external-service
 ```
 

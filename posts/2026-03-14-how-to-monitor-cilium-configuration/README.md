@@ -36,6 +36,7 @@ Key metrics:
 
 ```promql
 # Agent uptime (detects restarts from bad config)
+
 cilium_agent_uptime_seconds
 
 # BPF map operations

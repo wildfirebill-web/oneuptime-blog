@@ -22,6 +22,7 @@ Ubuntu uses `systemd-resolved` which binds to port 53. Disable the stub listener
 
 ```bash
 # Edit resolved config to disable the stub DNS listener
+
 sudo sed -i 's/#DNSStubListener=yes/DNSStubListener=no/' /etc/systemd/resolved.conf
 sudo systemctl restart systemd-resolved
 ```
@@ -75,7 +76,7 @@ On your router, set the primary DNS server to the Pi-hole host IP. All devices o
 
 In the Pi-hole admin UI go to **Group Management > Adlists** and add community block lists:
 
-```
+```text
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://adaway.org/hosts.txt
 ```

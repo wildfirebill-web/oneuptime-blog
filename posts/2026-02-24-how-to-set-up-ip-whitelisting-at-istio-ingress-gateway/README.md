@@ -197,6 +197,7 @@ And from a non-whitelisted IP (use a different network or a proxy):
 ```bash
 curl -v https://app.example.com/
 # Should get HTTP 403 Forbidden
+
 ```
 
 Check the ingress gateway logs to see the RBAC decisions:

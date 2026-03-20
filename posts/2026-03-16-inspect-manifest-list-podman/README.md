@@ -20,6 +20,7 @@ The primary command is `podman manifest inspect`.
 
 ```bash
 # Inspect a local manifest list
+
 podman manifest inspect myapp:latest
 ```
 

@@ -20,6 +20,7 @@ This is an example of what NOT to do. Credentials are hardcoded directly in the 
 
 ```yaml
 # BAD EXAMPLE - Do not do this in production
+
 exporters:
   otlp:
     endpoint: "https://backend.example.com:4317"

@@ -14,6 +14,7 @@ Compare startup times with and without the agent:
 
 ```bash
 # Without agent
+
 time java -jar myapp.jar
 # Started in 8.2 seconds
 

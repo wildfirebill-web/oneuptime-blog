@@ -14,6 +14,7 @@ When you configure Apache to serve content from a directory outside of `/var/www
 
 ```bash
 # Apache returns 403 Forbidden for content in /opt/website/
+
 # Check the error log
 sudo tail -20 /var/log/httpd/error_log
 

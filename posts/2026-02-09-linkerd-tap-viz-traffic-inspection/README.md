@@ -18,6 +18,7 @@ The Viz extension provides the dashboard and metrics components:
 
 ```bash
 # Install Linkerd core first
+
 linkerd install | kubectl apply -f -
 
 # Verify core installation

@@ -27,7 +27,8 @@ graph LR
 ```hcl
 # otel_collector.tf
 
-# DaemonSet mode — one collector per node (for log and metric collection)
+# DaemonSet mode - one collector per node (for log and metric collection)
+
 resource "helm_release" "otel_daemonset" {
   name             = "otel-collector-daemonset"
   repository       = "https://open-telemetry.github.io/opentelemetry-helm-charts"
@@ -150,7 +151,7 @@ resource "helm_release" "otel_daemonset" {
 ## Gateway Deployment Mode
 
 ```hcl
-# Centralized gateway — receives from all DaemonSets and routes to backends
+# Centralized gateway - receives from all DaemonSets and routes to backends
 resource "helm_release" "otel_gateway" {
   name       = "otel-collector-gateway"
   repository = "https://open-telemetry.github.io/opentelemetry-helm-charts"
@@ -174,7 +175,7 @@ resource "helm_release" "otel_gateway" {
         }
         processors = {
           batch = { timeout = "5s" }
-          # Tail sampling — keep only interesting traces
+          # Tail sampling - keep only interesting traces
           tail_sampling = {
             decision_wait = "10s"
             policies = [
@@ -203,8 +204,8 @@ resource "helm_release" "otel_gateway" {
 
 ## Best Practices
 
-- Always configure `memory_limiter` processor — without it, a burst of telemetry can OOM the collector.
-- Use tail sampling in the gateway collector for traces — it lets you keep 100% of error and slow traces without storing all traces.
+- Always configure `memory_limiter` processor - without it, a burst of telemetry can OOM the collector.
+- Use tail sampling in the gateway collector for traces - it lets you keep 100% of error and slow traces without storing all traces.
 - Use DaemonSet mode for host metrics and log collection; use Deployment mode for the centralized gateway.
-- Add `k8sattributes` processor to all pipelines — Kubernetes metadata (pod name, namespace, deployment) is essential for correlating telemetry.
+- Add `k8sattributes` processor to all pipelines - Kubernetes metadata (pod name, namespace, deployment) is essential for correlating telemetry.
 - Keep the collector configuration in a separate ConfigMap so it can be updated without redeploying the Helm release.

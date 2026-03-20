@@ -41,6 +41,7 @@ This is the default strategy. Cosmos DB picks the document with the highest valu
 
 ```bash
 # Create a container with Last Writer Wins conflict resolution
+
 az cosmosdb sql container create \
     --account-name myCosmosAccount \
     --database-name mydb \

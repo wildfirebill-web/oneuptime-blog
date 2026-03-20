@@ -50,6 +50,7 @@ Kubeflow uses several namespaces for its components.
 
 ```yaml
 # clusters/production/kubeflow/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

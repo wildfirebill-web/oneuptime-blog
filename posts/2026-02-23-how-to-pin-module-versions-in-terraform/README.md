@@ -18,6 +18,7 @@ Registry modules are the easiest to pin because they support the `version` argum
 
 ```hcl
 # Exact version pin - the most predictable option
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.5.1"

@@ -16,6 +16,7 @@ Every distribution has its own opinions about where config files should live:
 
 ```yaml
 # This only works on Debian/Ubuntu
+
 - name: Configure Apache
   ansible.builtin.template:
     src: apache.conf.j2

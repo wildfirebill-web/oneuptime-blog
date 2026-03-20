@@ -206,6 +206,7 @@ After configuring, verify that traffic flows correctly:
 
 ```bash
 # Check the proxy configuration for inbound listeners
+
 istioctl proxy-config listeners my-pod --port 8443
 
 # Check outbound clusters

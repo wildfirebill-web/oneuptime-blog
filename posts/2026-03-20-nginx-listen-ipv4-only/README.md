@@ -14,6 +14,7 @@ By default, Nginx may listen on both IPv4 and IPv6. To restrict Nginx to IPv4 on
 
 ```nginx
 # /etc/nginx/sites-available/default
+
 server {
     # Listen on all IPv4 addresses, port 80
     listen 80;
@@ -51,7 +52,7 @@ server {
 # /etc/nginx/nginx.conf
 http {
     server {
-        # IPv4 only — no [::] entries
+        # IPv4 only - no [::] entries
         listen 80;
         listen 443 ssl;
         server_name _;
@@ -68,7 +69,7 @@ http {
 nginx -t
 systemctl reload nginx
 
-# Check listening sockets — should show only 0.0.0.0:80
+# Check listening sockets - should show only 0.0.0.0:80
 ss -tlnp | grep nginx
 
 # Expected:

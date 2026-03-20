@@ -25,6 +25,7 @@ Point your application's OTLP exporter at the Docker Desktop endpoint:
 
 ```yaml
 # docker-compose.yaml
+
 version: "3.8"
 
 services:

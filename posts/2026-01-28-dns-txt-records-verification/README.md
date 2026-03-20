@@ -20,6 +20,7 @@ A TXT record is simply a DNS record that holds text data. Unlike A records (whic
 
 ```bash
 # Query TXT records for a domain
+
 dig TXT example.com +short
 
 # Example output

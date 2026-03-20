@@ -37,6 +37,7 @@ Create a subsystem and namespace:
 
 ```bash
 # Create subsystem
+
 sudo mkdir -p /sys/kernel/config/nvmet/subsystems/nvme-target1
 echo 1 | sudo tee /sys/kernel/config/nvmet/subsystems/nvme-target1/attr_allow_any_host
 

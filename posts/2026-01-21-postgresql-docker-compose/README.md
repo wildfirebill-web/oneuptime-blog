@@ -172,6 +172,7 @@ Create a `postgresql.conf` for custom settings:
 
 ```conf
 # Connection Settings
+
 listen_addresses = '*'
 max_connections = 200
 

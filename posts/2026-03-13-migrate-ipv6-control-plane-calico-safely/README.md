@@ -30,6 +30,7 @@ Before migrating Calico's control plane, confirm that all cluster components sup
 
 ```bash
 # Verify nodes have IPv6 addresses
+
 kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{range .status.addresses[*]}{.type}={.address}{" "}{end}{"\n"}{end}'
 
 # Test IPv6 connectivity between nodes

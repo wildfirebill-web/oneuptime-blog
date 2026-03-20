@@ -2,11 +2,11 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SI6 Networks, frag6, IPv6, Fragmentation, Security Testing, IDS Evasion
+Tags: SI6 Networks, Frag6, IPv6, Fragmentation, Security Testing, IDS Evasion
 
 Description: A guide to using the SI6 Networks frag6 tool to test IPv6 fragmentation handling, firewall evasion, and DoS vulnerabilities in authorized lab environments.
 
-The `frag6` tool from the SI6 Networks IPv6 toolkit tests IPv6 fragmentation handling. Unlike IPv4, where routers can fragment packets, IPv6 fragmentation is performed only by the source host. The Fragment Extension Header is a known attack vector — fragmentation can be used to evade firewalls and IDS, trigger reassembly timeouts, and cause resource exhaustion. `frag6` enables testing these attack scenarios.
+The `frag6` tool from the SI6 Networks IPv6 toolkit tests IPv6 fragmentation handling. Unlike IPv4, where routers can fragment packets, IPv6 fragmentation is performed only by the source host. The Fragment Extension Header is a known attack vector - fragmentation can be used to evade firewalls and IDS, trigger reassembly timeouts, and cause resource exhaustion. `frag6` enables testing these attack scenarios.
 
 **Warning**: Only use in authorized lab environments with explicit written permission.
 
@@ -28,6 +28,7 @@ IPv6 uses a Fragment Extension Header (Next Header value 44) to carry fragmented
 
 ```bash
 # Send fragmented packets to a target
+
 sudo frag6 -i eth0 -d 2001:db8::target
 
 # Fragment at a specific size
@@ -45,7 +46,7 @@ sudo frag6 -i eth0 -d 2001:db8::target --data "test payload"
 Small fragments can cause some firewalls to fail to inspect the upper-layer header:
 
 ```bash
-# Send extremely small fragments (8 bytes — minimum)
+# Send extremely small fragments (8 bytes - minimum)
 sudo frag6 -i eth0 -d 2001:db8::target --frag-size 8
 
 # The first fragment is too small to contain the full TCP/UDP header
@@ -54,7 +55,7 @@ sudo frag6 -i eth0 -d 2001:db8::target --frag-size 8
 
 ## Overlapping Fragment Attack
 
-Overlapping fragments cause ambiguity during reassembly — different OSes use different policies to resolve overlaps:
+Overlapping fragments cause ambiguity during reassembly - different OSes use different policies to resolve overlaps:
 
 ```bash
 # Send overlapping fragments (may bypass IDS signatures)
@@ -120,7 +121,7 @@ sudo ip6tables -A INPUT -m frag --fragmore -j DROP
 | Attack Type | Defense |
 |---|---|
 | Tiny fragments | Firewall minimum fragment size enforcement |
-| Overlapping fragments | RFC 5722 — discard overlapping fragments |
+| Overlapping fragments | RFC 5722 - discard overlapping fragments |
 | Reassembly DoS | Reduce frag timeout, limit memory |
 | Header inspection evasion | Deep packet inspection with reassembly |
 

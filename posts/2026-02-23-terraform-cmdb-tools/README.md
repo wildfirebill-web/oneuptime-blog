@@ -24,6 +24,7 @@ The simplest integration pattern is to use Terraform outputs combined with a pos
 
 ```hcl
 # main.tf - Define your infrastructure with outputs for CMDB
+
 resource "aws_instance" "web_server" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.medium"

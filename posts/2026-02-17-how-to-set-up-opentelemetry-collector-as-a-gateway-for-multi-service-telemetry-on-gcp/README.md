@@ -37,6 +37,7 @@ The collector configuration is a YAML file that defines receivers, processors, a
 
 ```yaml
 # otel-collector-config.yaml
+
 # This configuration receives telemetry via OTLP and exports to GCP services
 
 receivers:

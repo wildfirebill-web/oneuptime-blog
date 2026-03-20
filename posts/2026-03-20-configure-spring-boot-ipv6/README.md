@@ -16,6 +16,7 @@ Spring Boot embeds Tomcat, Jetty, or Netty as the web server. All three support 
 # application.properties
 
 # Bind to all interfaces including IPv6 (default behavior)
+
 server.address=0.0.0.0
 
 # To bind to IPv6 only

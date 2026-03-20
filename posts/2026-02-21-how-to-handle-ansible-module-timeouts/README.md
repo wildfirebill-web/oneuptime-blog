@@ -18,6 +18,7 @@ The `uri` module is one of the most commonly used modules with a built-in timeou
 
 ```yaml
 # module-timeout-uri.yml - Using the uri module's built-in timeout
+
 ---
 - name: API calls with module-level timeouts
   hosts: localhost

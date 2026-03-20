@@ -61,6 +61,7 @@ Here is a basic configuration:
 
 ```yaml
 # RECEIVERS: Accept traces via OTLP
+
 receivers:
   otlp:
     protocols:

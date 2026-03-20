@@ -20,6 +20,7 @@ Podman provides a special hostname that resolves to the host:
 
 ```bash
 # host.containers.internal resolves to the host machine
+
 podman run --rm docker.io/library/alpine:latest \
   ping -c 3 host.containers.internal
 

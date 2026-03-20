@@ -8,7 +8,7 @@ Description: Learn how to comprehensively test OpenTofu variable validation rule
 
 ## Introduction
 
-Variable validation rules in OpenTofu are a critical defensive layer that prevents misconfigured infrastructure from being planned. Testing them thoroughly — both that they accept valid values and reject invalid ones — ensures your module boundaries hold as configurations evolve.
+Variable validation rules in OpenTofu are a critical defensive layer that prevents misconfigured infrastructure from being planned. Testing them thoroughly - both that they accept valid values and reject invalid ones - ensures your module boundaries hold as configurations evolve.
 
 ## Variables with Validation Rules to Test
 
@@ -63,6 +63,7 @@ variable "environment" {
 
 ```hcl
 # tests/variable_validation.tftest.hcl
+
 mock_provider "aws" {}
 
 # ===== vpc_cidr tests =====

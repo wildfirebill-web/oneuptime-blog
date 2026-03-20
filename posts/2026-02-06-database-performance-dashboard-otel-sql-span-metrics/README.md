@@ -26,6 +26,7 @@ The Span Metrics Connector sits inside the OpenTelemetry Collector and generates
 
 ```yaml
 # otel-collector-config.yaml
+
 # Connector that derives metrics from span data
 connectors:
   spanmetrics:

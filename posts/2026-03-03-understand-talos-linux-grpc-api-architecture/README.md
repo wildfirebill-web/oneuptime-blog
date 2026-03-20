@@ -71,6 +71,7 @@ When you generate a Talos cluster configuration with `talosctl gen config`, the 
 
 ```bash
 # The talosconfig file contains client credentials
+
 talosctl config info
 
 # Output shows:
@@ -119,7 +120,7 @@ talosctl -n 10.0.0.11 mounts            # Mount points
 talosctl -n 10.0.0.11 disks             # Disk information
 ```
 
-### ResourceService
+ResourceService
 
 Provides access to the Talos resource model. You can query, watch, and list resources that represent the system state.
 
@@ -200,7 +201,7 @@ talosctl -n 10.0.0.11 pcap --interface eth0 --output capture.pcap
 talosctl -n 10.0.0.11 pcap --interface eth0 --duration 30s --output capture.pcap
 ```
 
-### Resource Watch
+Resource Watch
 
 ```bash
 # Watch resources for changes (uses server-side streaming)

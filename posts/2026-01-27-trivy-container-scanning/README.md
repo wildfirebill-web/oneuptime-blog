@@ -22,6 +22,7 @@ Trivy supports multiple installation methods depending on your operating system 
 
 ```bash
 # Install Trivy using Homebrew package manager
+
 brew install trivy
 
 # Verify the installation

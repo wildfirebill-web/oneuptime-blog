@@ -113,6 +113,7 @@ Configure the actuator endpoints.
 
 ```yaml
 # src/main/resources/application.yml
+
 server:
   port: 8080
 

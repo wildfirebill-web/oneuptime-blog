@@ -33,6 +33,7 @@ This gives you a clear picture of what will change when Flux reconciles.
 
 ```bash
 # Compare local changes against the live cluster state
+
 flux diff kustomization infrastructure \
   --path ./infrastructure/overlays/production \
   --kustomization-file ./clusters/production/infrastructure.yaml
@@ -240,7 +241,7 @@ jobs:
 
             if [ -n "$RESULT" ]; then
               HAS_CHANGES=true
-              DIFF_OUTPUT="${DIFF_OUTPUT}\n### Changes for \`${name}\`\n\`\`\`diff\n${RESULT}\n\`\`\`\n"
+              DIFF_OUTPUT="${DIFF_OUTPUT}\n### Changes for \`${name}\`\n```diff\n${RESULT}\n```\n"
             else
               DIFF_OUTPUT="${DIFF_OUTPUT}\n### \`${name}\`: No changes\n"
             fi

@@ -12,6 +12,7 @@ Rancher supports IPv6 through its managed Kubernetes distributions (RKE2, K3s) a
 
 ```bash
 # Run Rancher server listening on IPv6 (and IPv4)
+
 docker run -d \
   --restart=unless-stopped \
   -p 80:80 \

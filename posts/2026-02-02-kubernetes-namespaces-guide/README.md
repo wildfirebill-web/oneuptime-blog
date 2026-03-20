@@ -49,6 +49,7 @@ Every Kubernetes cluster comes with several pre-created namespaces. Understandin
 
 ```bash
 # List all namespaces in your cluster
+
 kubectl get namespaces
 
 # Output shows the default namespaces:
@@ -180,7 +181,7 @@ kubectl get deployments -A
 kubectl get pods -A --watch
 ```
 
-## Resource Quotas
+Resource Quotas
 
 Resource quotas prevent a single namespace from consuming all cluster resources. Without quotas, a runaway application in development could starve production workloads. Quotas enforce fair sharing of compute, memory, and storage resources.
 
@@ -764,7 +765,7 @@ kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get
 kubectl patch namespace staging -p '{"metadata":{"finalizers":null}}' --type=merge
 ```
 
-### Resource Quota Exceeded
+Resource Quota Exceeded
 
 When deployments fail due to quota exhaustion, identify the culprit and either clean up or request quota increases.
 

@@ -51,6 +51,7 @@ Install the required CLI extension:
 
 ```bash
 # Install the Azure DevOps extension for Azure CLI
+
 az extension add --name azure-devops
 
 # Verify it is installed

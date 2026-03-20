@@ -35,6 +35,7 @@ Before any change runs, validate prerequisites:
 
 ```yaml
 # playbooks/change-precheck.yml
+
 # Run pre-flight checks before executing a change
 - name: Change request pre-checks
   hosts: "{{ target_hosts }}"

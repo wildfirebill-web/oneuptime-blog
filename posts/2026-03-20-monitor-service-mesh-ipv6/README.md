@@ -10,10 +10,11 @@ Service meshes expose rich telemetry for all traffic, including IPv6. This guide
 
 ## Istio Metrics for IPv6 Traffic
 
-Istio's Envoy sidecars expose Prometheus metrics at port 15090. These metrics are IP-version agnostic — they count all traffic regardless of IPv4 or IPv6:
+Istio's Envoy sidecars expose Prometheus metrics at port 15090. These metrics are IP-version agnostic - they count all traffic regardless of IPv4 or IPv6:
 
 ```bash
 # Check available metrics from a sidecar
+
 kubectl exec <pod-name> -c istio-proxy -- \
   curl -s http://localhost:15090/stats/prometheus | \
   grep -E "istio_requests_total|istio_tcp_connections" | head -20
@@ -212,4 +213,4 @@ kubectl debug node/<node> -it --image=nicolaka/netshoot -- \
   chroot /host ip -6 -s neigh show
 ```
 
-Monitoring IPv6 service mesh traffic is largely the same as monitoring IPv4 — the same Prometheus metrics, Grafana dashboards, and distributed traces capture all traffic regardless of IP version. The key is ensuring metrics cardinality doesn't increase excessively by adding source IP labels, and using node-level socket statistics to verify IPv6 connections are actually being established.
+Monitoring IPv6 service mesh traffic is largely the same as monitoring IPv4 - the same Prometheus metrics, Grafana dashboards, and distributed traces capture all traffic regardless of IP version. The key is ensuring metrics cardinality doesn't increase excessively by adding source IP labels, and using node-level socket statistics to verify IPv6 connections are actually being established.

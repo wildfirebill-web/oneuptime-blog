@@ -51,6 +51,7 @@ Before installing ARC, ensure you have:
 
 ```bash
 # Kubernetes cluster (1.23+)
+
 kubectl version --client
 
 # Helm 3.x

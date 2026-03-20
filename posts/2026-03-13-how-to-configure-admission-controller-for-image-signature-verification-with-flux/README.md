@@ -26,6 +26,7 @@ Add the Kyverno Helm repository and deploy it through Flux:
 
 ```yaml
 # clusters/my-cluster/kyverno/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

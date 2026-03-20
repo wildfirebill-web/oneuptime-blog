@@ -18,6 +18,7 @@ Understand how namespace labels flow to workload endpoints via profiles:
 
 ```bash
 # See which labels a namespace profile applies
+
 calicoctl get profile kns.production -o json | python3 -c "
 import json, sys
 p = json.load(sys.stdin)

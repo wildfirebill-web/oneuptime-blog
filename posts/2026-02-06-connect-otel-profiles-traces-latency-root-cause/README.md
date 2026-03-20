@@ -24,6 +24,7 @@ For Java applications using the OpenTelemetry Java agent, enable profiling with 
 
 ```bash
 # Start your Java application with the OTel agent and profiling enabled
+
 java \
   -javaagent:/opt/opentelemetry-javaagent.jar \
   -Dotel.exporter.otlp.endpoint=http://localhost:4317 \

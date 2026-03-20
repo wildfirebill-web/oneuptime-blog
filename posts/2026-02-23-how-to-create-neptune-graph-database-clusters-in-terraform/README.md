@@ -20,6 +20,7 @@ Neptune supports two query languages: Gremlin for property graph traversals and 
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

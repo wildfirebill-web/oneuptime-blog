@@ -109,6 +109,7 @@ cluster-config/
 
 ```text
 # .github/CODEOWNERS
+
 /argocd/projects/       @platform-team
 /infrastructure/        @platform-team
 /services/payment-*/    @team-alpha

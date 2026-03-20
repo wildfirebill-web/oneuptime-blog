@@ -16,6 +16,7 @@ By default, Docker uses the `json-file` driver, which stores logs as JSON in `/v
 
 ```bash
 # Check current logging driver
+
 docker info | grep "Logging Driver"
 # Logging Driver: json-file
 

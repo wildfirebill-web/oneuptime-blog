@@ -9,14 +9,14 @@ Description: Learn how to use NAPALM's configuration management capabilities to 
 ## NAPALM's Declarative Configuration Model
 
 NAPALM supports two configuration approaches:
-- **merge_candidate()** — merges new config with running config
-- **load_replace_candidate()** — replaces entire config with the candidate
+- **merge_candidate()** - merges new config with running config
+- **load_replace_candidate()** - replaces entire config with the candidate
 
 Both methods support:
-- `compare_config()` — preview a diff before applying
-- `commit_config()` — apply the candidate configuration
-- `discard_config()` — cancel pending changes
-- `rollback()` — revert to the previous configuration
+- `compare_config()` - preview a diff before applying
+- `commit_config()` - apply the candidate configuration
+- `discard_config()` - cancel pending changes
+- `rollback()` - revert to the previous configuration
 
 ## Step 1: Load and Apply a Configuration Merge
 
@@ -34,6 +34,7 @@ device = driver(
 device.open()
 
 # Define configuration to merge
+
 config = """
 interface GigabitEthernet0/1
  description WAN_Link_ISP1
@@ -204,4 +205,4 @@ device.close()
 
 ## Conclusion
 
-NAPALM's declarative configuration model — `load_merge_candidate()` followed by `compare_config()` and `commit_config()` — enables safe, auditable configuration changes. Always call `compare_config()` to preview the diff before committing, and use `discard_config()` to cancel. Combine with Jinja2 templates to generate interface configurations from structured data, and YAML inventory files to scale across many devices. NAPALM's vendor abstraction means the same Python code works for Cisco IOS, Arista EOS, and Juniper JunOS.
+NAPALM's declarative configuration model - `load_merge_candidate()` followed by `compare_config()` and `commit_config()` - enables safe, auditable configuration changes. Always call `compare_config()` to preview the diff before committing, and use `discard_config()` to cancel. Combine with Jinja2 templates to generate interface configurations from structured data, and YAML inventory files to scale across many devices. NAPALM's vendor abstraction means the same Python code works for Cisco IOS, Arista EOS, and Juniper JunOS.

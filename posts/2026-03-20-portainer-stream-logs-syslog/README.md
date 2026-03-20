@@ -99,6 +99,7 @@ After logs are in your SIEM, useful queries:
 
 ```bash
 # Failed login attempts
+
 tag:portainer AND "authentication failed"
 
 # Stack deployments

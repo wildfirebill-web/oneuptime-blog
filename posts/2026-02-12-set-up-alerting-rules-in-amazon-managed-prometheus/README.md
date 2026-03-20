@@ -36,6 +36,7 @@ AMP organizes alerting and recording rules into namespaces (also called rule gro
 
 ```bash
 # Create a rule group namespace with alerting rules
+
 aws amp create-rule-groups-namespace \
   --workspace-id ws-abc123-def456 \
   --name "production-alerts" \
@@ -189,7 +190,7 @@ groups:
           description: "Deployment {{ $labels.deployment }} has {{ $value }} replicas but expected {{ $labels.spec_replicas }}"
 ```
 
-### Resource Utilization Rules
+Resource Utilization Rules
 
 ```yaml
   - name: resource_utilization

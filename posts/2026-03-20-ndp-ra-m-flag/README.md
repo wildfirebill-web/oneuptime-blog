@@ -12,7 +12,7 @@ The M (Managed Address Configuration) flag in Router Advertisements is a single 
 
 ## M Flag Semantics
 
-```
+```text
 M Flag (Managed Address Configuration):
 
 M = 0 (default):
@@ -31,7 +31,7 @@ M = 1:
 
 ## M Flag vs O Flag Combinations
 
-```
+```text
 M=0, O=0: Pure SLAAC
   → Addresses: from SLAAC prefix in RA
   → Other config (DNS, NTP): none via DHCPv6
@@ -57,7 +57,8 @@ M=1, O=1: Full DHCPv6
 ## Configuring M Flag in radvd
 
 ```bash
-# Pure SLAAC (M=0, O=0) — default
+# Pure SLAAC (M=0, O=0) - default
+
 sudo tee /etc/radvd.conf << 'EOF'
 interface eth0 {
     AdvSendAdvert on;
@@ -151,4 +152,4 @@ networkctl status eth0 | grep -E "DHCPv6|SLAAC|RA"
 
 ## Conclusion
 
-The M flag in Router Advertisements is the switch between SLAAC and stateful DHCPv6 for address assignment. M=0 (SLAAC) is simpler and requires no DHCPv6 server infrastructure; M=1 (stateful DHCPv6) provides address assignment control and tracking needed in enterprise environments. The M flag does not affect DNS or NTP configuration — that is controlled by the separate O flag. When deploying DHCPv6, always set both M=1 and O=1 in the RA, and disable the Autonomous (A) flag in Prefix Information Options to prevent hosts from forming SLAAC addresses in addition to their DHCPv6 addresses.
+The M flag in Router Advertisements is the switch between SLAAC and stateful DHCPv6 for address assignment. M=0 (SLAAC) is simpler and requires no DHCPv6 server infrastructure; M=1 (stateful DHCPv6) provides address assignment control and tracking needed in enterprise environments. The M flag does not affect DNS or NTP configuration - that is controlled by the separate O flag. When deploying DHCPv6, always set both M=1 and O=1 in the RA, and disable the Autonomous (A) flag in Prefix Information Options to prevent hosts from forming SLAAC addresses in addition to their DHCPv6 addresses.

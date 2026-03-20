@@ -18,6 +18,7 @@ Here is a basic example of working with Firestore Native mode:
 
 ```python
 # Working with Firestore in Native mode
+
 from google.cloud import firestore
 
 # Initialize the Firestore client

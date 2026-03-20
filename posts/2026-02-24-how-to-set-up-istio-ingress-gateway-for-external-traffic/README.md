@@ -291,6 +291,7 @@ The ingress gateway generates Istio metrics just like any other sidecar:
 
 ```text
 # Request rate at the ingress
+
 sum(rate(istio_requests_total{source_workload="istio-ingressgateway"}[5m]))
 
 # Error rate

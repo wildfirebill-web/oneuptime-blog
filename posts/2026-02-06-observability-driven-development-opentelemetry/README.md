@@ -41,6 +41,7 @@ Create a simple specification document for each feature:
 
 ```yaml
 # observability-spec/order-processing.yaml
+
 # This spec defines what telemetry the order processing feature must produce
 
 feature: order-processing

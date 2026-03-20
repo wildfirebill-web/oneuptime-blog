@@ -38,6 +38,7 @@ The RED method (Rate, Errors, Duration) is the foundation of service health moni
 
 ```python
 # red_metrics.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

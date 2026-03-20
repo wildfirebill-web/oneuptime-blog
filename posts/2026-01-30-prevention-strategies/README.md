@@ -111,6 +111,7 @@ Automation is crucial for consistent and rapid response to common failure scenar
 
 ```yaml
 # Kubernetes deployment with auto-healing configuration
+
 # This ensures pods are automatically restarted when they become unhealthy
 apiVersion: apps/v1
 kind: Deployment

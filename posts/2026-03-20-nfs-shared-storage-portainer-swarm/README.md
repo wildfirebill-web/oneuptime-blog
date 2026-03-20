@@ -8,7 +8,7 @@ Description: Learn how to configure NFS shared storage so all nodes in a Portain
 
 ---
 
-Docker Swarm services can run on any node in the cluster. Without shared storage, a container restarted on a different node loses access to its data. NFS (Network File System) solves this by providing a network-accessible directory that all nodes can mount — giving containers persistent storage that follows them across the cluster.
+Docker Swarm services can run on any node in the cluster. Without shared storage, a container restarted on a different node loses access to its data. NFS (Network File System) solves this by providing a network-accessible directory that all nodes can mount - giving containers persistent storage that follows them across the cluster.
 
 ---
 
@@ -32,6 +32,7 @@ Install and configure NFS on a dedicated storage server or on your Swarm manager
 
 ```bash
 # Install NFS server (Ubuntu/Debian)
+
 sudo apt update && sudo apt install -y nfs-kernel-server
 
 # Create the directory to export
@@ -39,7 +40,7 @@ sudo mkdir -p /exports/portainer-data
 sudo chown nobody:nogroup /exports/portainer-data
 sudo chmod 777 /exports/portainer-data
 
-# Export the directory — allow your Swarm nodes to access it
+# Export the directory - allow your Swarm nodes to access it
 # /etc/exports
 echo "/exports/portainer-data 192.168.1.0/24(rw,sync,no_subtree_check,no_root_squash)" | sudo tee -a /etc/exports
 
@@ -94,7 +95,7 @@ docker volume inspect portainer-shared-data
 In Portainer, deploy a stack that uses the shared NFS volume.
 
 ```yaml
-# nfs-app-stack.yml — Swarm stack with shared NFS storage
+# nfs-app-stack.yml - Swarm stack with shared NFS storage
 version: "3.8"
 
 services:

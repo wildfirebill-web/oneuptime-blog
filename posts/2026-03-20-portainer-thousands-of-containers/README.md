@@ -1,4 +1,4 @@
-# How to Configure Portainer for Thousands of Containers
+# How to Configure Portainer for Thousands of Containers - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -63,6 +63,7 @@ In Docker Swarm mode, Portainer manages services (logical groups) rather than in
 
 ```bash
 # Deploy a service with 50 replicas
+
 docker service create \
   --name web-workers \
   --replicas 50 \
@@ -134,4 +135,4 @@ docker run -d \
 | 2,000–5,000     | 8 vCPU | 4 GB | 50 GB |
 | 5,000+          | 16 vCPU | 8 GB | 100 GB |
 
-These are estimates for Portainer itself — the containers it manages run on separate hosts.
+These are estimates for Portainer itself - the containers it manages run on separate hosts.

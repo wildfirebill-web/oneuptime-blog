@@ -35,6 +35,7 @@ Before starting, make sure you have the required access and your environment is 
 
 ```bash
 # Enable the required GCP APIs
+
 gcloud services enable vmmigration.googleapis.com
 gcloud services enable compute.googleapis.com
 gcloud services enable servicemanagement.googleapis.com

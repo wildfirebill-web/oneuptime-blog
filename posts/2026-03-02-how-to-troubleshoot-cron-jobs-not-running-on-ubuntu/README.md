@@ -16,6 +16,7 @@ The very first thing to check is whether cron is actually running:
 
 ```bash
 # Check if cron daemon is running
+
 sudo systemctl status cron
 
 # If it is stopped, start it

@@ -42,6 +42,7 @@ Start with only the packages that work in the Workers runtime. Avoid anything th
 
 ```bash
 # Install the core API and SDK packages that are runtime-agnostic
+
 npm install @opentelemetry/api
 npm install @opentelemetry/sdk-trace-base
 npm install @opentelemetry/resources

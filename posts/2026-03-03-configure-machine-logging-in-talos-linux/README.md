@@ -18,6 +18,7 @@ Talos Linux captures logs from all its internal services - machined, apid, trust
 
 ```bash
 # View logs from a specific service
+
 talosctl logs kubelet --nodes 192.168.1.10
 
 # Follow logs in real time

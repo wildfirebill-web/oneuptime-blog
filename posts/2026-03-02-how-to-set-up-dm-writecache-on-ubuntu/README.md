@@ -34,6 +34,7 @@ For mixed read/write workloads, dm-cache or lvmcache may be more appropriate sin
 
 ```bash
 # Check kernel version (4.18+ required)
+
 uname -r
 
 # Verify dm-writecache module is available

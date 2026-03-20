@@ -60,6 +60,7 @@ Start by defining one GitRepository resource that points to the monorepo. All Ku
 
 ```yaml
 # gitrepository-monorepo.yaml
+
 # Single GitRepository source for the entire monorepo
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository

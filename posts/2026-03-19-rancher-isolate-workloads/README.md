@@ -32,6 +32,7 @@ Verify isolation is working:
 
 ```bash
 # As a user in Project A
+
 kubectl get pods -n project-b-namespace
 # Error from server (Forbidden): pods is forbidden
 

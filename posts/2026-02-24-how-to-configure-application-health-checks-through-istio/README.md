@@ -248,6 +248,7 @@ Here are some practical guidelines for probe timing with Istio:
 
 ```yaml
 # For most web services
+
 startupProbe:
   httpGet:
     path: /healthz

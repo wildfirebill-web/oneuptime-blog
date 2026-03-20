@@ -18,6 +18,7 @@ Talos exposes kubelet configuration through two mechanisms: `cluster.kubelet.ext
 
 ```yaml
 # Basic kubelet extra configuration
+
 machine:
   kubelet:
     extraArgs:
@@ -84,7 +85,7 @@ machine:
 
 Hard eviction thresholds trigger immediate pod eviction with no grace period. Soft eviction thresholds give pods a grace period to clean up. Setting these correctly prevents node crashes from resource exhaustion while giving workloads a chance to shut down gracefully.
 
-## Resource Reservation
+Resource Reservation
 
 Reserve resources for system processes to prevent workloads from consuming everything:
 

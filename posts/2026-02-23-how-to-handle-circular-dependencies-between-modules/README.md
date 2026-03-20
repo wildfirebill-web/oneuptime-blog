@@ -45,6 +45,7 @@ The cleanest solution is to extract the shared concern into its own module that 
 
 ```hcl
 # Create security groups in their own module - no dependency on compute
+
 module "security_groups" {
   source = "./modules/security-groups"
 

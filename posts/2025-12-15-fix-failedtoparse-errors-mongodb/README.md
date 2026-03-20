@@ -196,6 +196,7 @@ MongoDB configuration files have specific format requirements:
 
 ```yaml
 # BAD: Invalid YAML syntax in mongod.conf
+
 storage:
   dbPath: /var/lib/mongodb
     journal:  # Wrong indentation!

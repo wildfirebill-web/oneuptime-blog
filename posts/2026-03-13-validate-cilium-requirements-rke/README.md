@@ -25,6 +25,7 @@ RKE2 is particularly interesting for Cilium because it is designed with security
 
 ```bash
 # Check RKE2 version (on a cluster node)
+
 # rke2 --version
 
 # Verify Kubernetes version via kubectl

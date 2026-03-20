@@ -18,6 +18,7 @@ The simplest use inserts a block of text at the end of a file:
 
 ```yaml
 # Add a block of text to the end of a file
+
 - name: Add custom DNS settings
   ansible.builtin.blockinfile:
     path: /etc/resolv.conf

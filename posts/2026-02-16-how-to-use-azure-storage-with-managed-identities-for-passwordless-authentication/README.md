@@ -27,6 +27,7 @@ For most scenarios, system-assigned identities are simpler. Use user-assigned wh
 
 ```bash
 # Enable system-assigned managed identity on an existing VM
+
 az vm identity assign \
   --resource-group myResourceGroup \
   --name myVM

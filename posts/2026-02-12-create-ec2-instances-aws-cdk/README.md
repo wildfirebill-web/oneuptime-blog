@@ -20,6 +20,7 @@ Set up the CDK CLI and create a new project:
 
 ```bash
 # Install AWS CDK
+
 npm install -g aws-cdk
 
 # Verify installation

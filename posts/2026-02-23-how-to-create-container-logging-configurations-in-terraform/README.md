@@ -18,6 +18,7 @@ In this guide, we will explore how to configure logging drivers, set up log aggr
 
 ```hcl
 # CloudWatch Log Group with retention policy
+
 resource "aws_cloudwatch_log_group" "app" {
   name              = "/ecs/my-application"
   retention_in_days = 30

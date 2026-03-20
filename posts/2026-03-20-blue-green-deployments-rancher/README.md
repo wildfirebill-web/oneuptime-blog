@@ -8,7 +8,7 @@ Description: Learn how to implement blue-green deployments in Rancher-managed Ku
 
 ---
 
-Blue-green deployments eliminate downtime by running two identical environments — blue (current) and green (new). Traffic is switched atomically from blue to green after the new version passes verification, and rollback is instant.
+Blue-green deployments eliminate downtime by running two identical environments - blue (current) and green (new). Traffic is switched atomically from blue to green after the new version passes verification, and rollback is instant.
 
 ---
 
@@ -28,6 +28,7 @@ Deploy version 1 of your application labeled `slot: blue`:
 
 ```yaml
 # blue-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -133,7 +134,7 @@ kubectl rollout status deployment/my-app-green -n my-app
 Once the green deployment is healthy, patch the Service selector to point to green:
 
 ```bash
-# This is an atomic operation — traffic switches instantly
+# This is an atomic operation - traffic switches instantly
 kubectl patch service my-app \
   -n my-app \
   --type=json \

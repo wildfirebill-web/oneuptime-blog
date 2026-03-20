@@ -453,6 +453,7 @@ For mongod.conf:
 
 ```yaml
 # mongod.conf
+
 setParameter:
   cursorTimeoutMillis: 600000
 ```

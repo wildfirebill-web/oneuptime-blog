@@ -32,6 +32,7 @@ MinIO is a high-performance, S3-compatible object storage system. It's designed 
 
 ```bash
 # Download MinIO server
+
 wget https://dl.min.io/server/minio/release/linux-amd64/minio
 
 # Make executable

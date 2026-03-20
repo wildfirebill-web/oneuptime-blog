@@ -26,6 +26,7 @@ Install the Kyverno CLI for policy testing:
 
 ```bash
 # Install on Linux
+
 wget https://github.com/kyverno/kyverno/releases/download/v1.11.0/kyverno-cli_v1.11.0_linux_x86_64.tar.gz
 tar -xzf kyverno-cli_v1.11.0_linux_x86_64.tar.gz
 sudo mv kyverno /usr/local/bin/

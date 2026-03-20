@@ -16,6 +16,7 @@ eBPF troubleshooting mistakes often make problems worse. The most dangerous is t
 
 ```bash
 # WRONG - blindly restarting all calico-node pods
+
 # This causes rolling network disruption across ALL nodes
 kubectl rollout restart ds/calico-node -n calico-system
 # Don't do this unless you understand the consequence on all nodes!

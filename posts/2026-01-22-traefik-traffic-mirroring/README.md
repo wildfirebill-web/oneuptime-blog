@@ -46,6 +46,7 @@ Create a TraefikService with mirroring configuration:
 
 ```yaml
 # mirror-service.yaml
+
 apiVersion: traefik.io/v1alpha1
 kind: TraefikService
 metadata:

@@ -37,6 +37,7 @@ calicoctl ipam show --show-blocks
 
 ```yaml
 # CronJob that exports utilization as a Prometheus pushgateway metric
+
 apiVersion: batch/v1
 kind: CronJob
 metadata:

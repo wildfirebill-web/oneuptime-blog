@@ -30,6 +30,7 @@ When creating a new RDS instance, include the max allocated storage parameter:
 
 ```bash
 # Create an RDS instance with storage auto scaling enabled
+
 # Starts with 100GB, can grow up to 500GB
 aws rds create-db-instance \
   --db-instance-identifier my-database \

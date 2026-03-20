@@ -20,6 +20,7 @@ The system service creates a listening socket that exposes the Podman REST API.
 
 ```bash
 # Start the Podman system service with default settings
+
 podman system service
 
 # Start with a specific timeout (0 means run indefinitely)

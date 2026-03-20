@@ -14,6 +14,7 @@ Netplan is the default network configuration tool on Ubuntu 17.10+. It reads YAM
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   ethernets:
@@ -117,4 +118,4 @@ netplan try
 
 ## Conclusion
 
-Static IP in Netplan uses `dhcp4: false` with `addresses`, `routes` (for the default gateway), and `nameservers`. Apply changes with `netplan apply`. Use `netplan try` for safe testing — it auto-reverts if you don't confirm within 120 seconds.
+Static IP in Netplan uses `dhcp4: false` with `addresses`, `routes` (for the default gateway), and `nameservers`. Apply changes with `netplan apply`. Use `netplan try` for safe testing - it auto-reverts if you don't confirm within 120 seconds.

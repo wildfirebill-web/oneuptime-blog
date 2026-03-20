@@ -31,6 +31,7 @@ First, document everything that is currently running. The challenge is that `kub
 
 ```bash
 # Export all resources from a namespace
+
 kubectl get all -n production -o yaml > production-all.yaml
 
 # Export specific resource types

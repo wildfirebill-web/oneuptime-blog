@@ -211,6 +211,7 @@ You can also set up a simple monitoring script:
 ```bash
 #!/bin/bash
 # Check certificate expiry in ClusterTrustBundle
+
 BUNDLE=$(kubectl get clustertrustbundle istio-mesh-root -o jsonpath='{.spec.trustBundle}')
 echo "$BUNDLE" | openssl x509 -text -noout | grep "Not After"
 ```

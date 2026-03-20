@@ -29,6 +29,7 @@ Flux should reconcile only from a protected branch. When you bootstrap, point th
 
 ```yaml
 # clusters/production/flux-system/gotk-sync.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

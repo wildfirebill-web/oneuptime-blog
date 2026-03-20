@@ -10,6 +10,7 @@ Description: Learn how to configure etcd to listen on IPv6 addresses for client 
 
 ```bash
 # Start etcd on a specific IPv6 address
+
 etcd \
     --name node1 \
     --listen-client-urls http://[2001:db8::10]:2379,http://[::1]:2379 \
@@ -100,4 +101,4 @@ etcdctl member list --write-out=table
 
 ## Summary
 
-Configure etcd for IPv6 with `--listen-client-urls http://[2001:db8::10]:2379` and `--advertise-client-urls http://[2001:db8::10]:2379`. For clusters, set `--initial-cluster` with all member IPv6 addresses in bracket notation. Use HTTPS URLs with TLS certificates for production. Connect with `etcdctl --endpoints=http://[2001:db8::10]:2379`. etcd is commonly used in Kubernetes clusters — dual-stack Kubernetes requires IPv6-capable etcd.
+Configure etcd for IPv6 with `--listen-client-urls http://[2001:db8::10]:2379` and `--advertise-client-urls http://[2001:db8::10]:2379`. For clusters, set `--initial-cluster` with all member IPv6 addresses in bracket notation. Use HTTPS URLs with TLS certificates for production. Connect with `etcdctl --endpoints=http://[2001:db8::10]:2379`. etcd is commonly used in Kubernetes clusters - dual-stack Kubernetes requires IPv6-capable etcd.

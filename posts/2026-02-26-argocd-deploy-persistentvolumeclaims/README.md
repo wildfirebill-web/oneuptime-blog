@@ -31,6 +31,7 @@ Here is a PVC for a PostgreSQL database managed through ArgoCD:
 
 ```yaml
 # apps/postgres/pvc.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

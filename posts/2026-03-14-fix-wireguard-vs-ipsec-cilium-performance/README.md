@@ -50,6 +50,7 @@ helm upgrade cilium cilium/cilium --namespace kube-system \
   --set routingMode=native
 
 # Verify hardware offload is active
+
 ip xfrm state | grep -i offload
 ```
 

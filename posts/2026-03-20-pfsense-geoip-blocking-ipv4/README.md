@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: pfSense, GeoIP, IPv4, Firewall, Security, pfBlockerNG
+Tags: pfSense, GeoIP, IPv4, Firewall, Security, PfBlockerNG
 
 Description: Configure GeoIP-based IPv4 blocking on pfSense using the pfBlockerNG package to automatically block or allow traffic from specific countries using regularly updated IP lists.
 
@@ -29,7 +29,7 @@ Navigate to **Firewall > pfBlockerNG > IP > IPv4**:
 
 ### Add GeoIP Feed
 
-```
+```text
 Name:     GeoIP_Block
 Action:   Deny Both (inbound + outbound)
 Format:   Auto
@@ -45,7 +45,7 @@ Sources:
 
 Navigate to **Firewall > pfBlockerNG > IP > MaxMind GeoIP**:
 
-```
+```sql
 Country:    Select countries to block
   [x] CN  China
   [x] RU  Russia
@@ -62,7 +62,7 @@ Alert Suppression: checked
 
 Navigate to **Firewall > pfBlockerNG > IP > IPv4 > Add**:
 
-```
+```text
 Name:   CustomBlockList
 Format: CIDR
 State:  Enabled
@@ -83,7 +83,7 @@ Navigate to **Firewall > pfBlockerNG > Update**:
 
 Navigate to **Firewall > pfBlockerNG > IP > Suppress**:
 
-```
+```text
 Add IPs or CIDRs that should never be blocked:
   203.0.113.5   (trusted partner IP in blocked country)
   198.51.100.0/24
@@ -95,7 +95,8 @@ Navigate to **Firewall > pfBlockerNG > Reports > Alerts**:
 - Shows recent blocks with country code, source IP, destination
 
 ```bash
-# pfSense CLI — check generated tables
+# pfSense CLI - check generated tables
+
 pfctl -t pfB_GeoIP_Block_v4 -T show | head -20
 
 # Count blocked IPs

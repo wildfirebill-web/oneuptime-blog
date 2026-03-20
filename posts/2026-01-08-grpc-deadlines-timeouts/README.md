@@ -145,6 +145,7 @@ def get_user_with_deadline(
 
 
 # Usage
+
 def main():
     channel = grpc.insecure_channel('localhost:50051')
     stub = user_pb2_grpc.UserServiceStub(channel)

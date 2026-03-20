@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Netplan, IPv6, DNS, Ubuntu, systemd-resolved
+Tags: Netplan, IPv6, DNS, Ubuntu, Systemd-resolved
 
 Description: Configure IPv6 DNS servers in Netplan to enable AAAA record resolution and DNS-over-IPv6 communication.
 
@@ -22,6 +22,7 @@ Netplan configuration files are in  with  extension. Files are processed in lexi
 
 ```bash
 # List existing Netplan configs
+
 ls /etc/netplan/
 
 # View current config

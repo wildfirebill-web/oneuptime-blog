@@ -27,6 +27,7 @@ graph TD
 
 ```yaml
 # roles/migration/defaults/main.yml - Server migration settings
+
 migration_source_host: old-server.internal
 migration_target_host: new-server.internal
 migration_sync_dirs:

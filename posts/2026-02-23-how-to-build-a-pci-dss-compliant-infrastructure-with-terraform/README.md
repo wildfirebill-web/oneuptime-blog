@@ -33,6 +33,7 @@ The CDE must be isolated from all other networks.
 
 ```hcl
 # CDE VPC - completely isolated from other environments
+
 resource "aws_vpc" "cde" {
   cidr_block           = "10.100.0.0/16"
   enable_dns_hostnames = true

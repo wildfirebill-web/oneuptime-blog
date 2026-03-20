@@ -157,6 +157,7 @@ Here is how you might set different thresholds for different services in the sam
 
 ```yaml
 # Frontend API - strict threshold
+
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule
 metadata:

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, zipmap, Maps, Lists, Data Transformation
+Tags: OpenTofu, HCL, Zipmap, Maps, Lists, Data Transformation
 
 Description: Learn how to use OpenTofu's zipmap, tomap, and list manipulation functions to construct and transform data structures in HCL.
 
 ---
 
-OpenTofu's `zipmap` function creates a map from two lists — one of keys and one of values. Combined with `for` expressions and other collection functions, it enables powerful data structure transformations.
+OpenTofu's `zipmap` function creates a map from two lists - one of keys and one of values. Combined with `for` expressions and other collection functions, it enables powerful data structure transformations.
 
 ---
 
@@ -16,6 +16,7 @@ OpenTofu's `zipmap` function creates a map from two lists — one of keys and on
 
 ```hcl
 # Create a map from parallel lists
+
 locals {
   names  = ["alice", "bob", "carol"]
   emails = ["alice@example.com", "bob@example.com", "carol@example.com"]
@@ -59,7 +60,7 @@ locals {
 
 ---
 
-## tomap — Convert an Object to a Map
+## tomap - Convert an Object to a Map
 
 ```hcl
 locals {

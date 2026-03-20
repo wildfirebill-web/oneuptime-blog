@@ -100,6 +100,7 @@ The most common cause is transactions that hold locks for too long.
 
 ```python
 # Bad: Transaction holds locks while doing slow operations
+
 def process_order(order_id):
     connection.begin()
     cursor.execute("UPDATE orders SET status = 'processing' WHERE id = %s", (order_id,))

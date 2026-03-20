@@ -14,6 +14,7 @@ Wireshark's display filter language supports the `/prefix-length` notation for I
 
 ```wireshark
 # All traffic within the 2001:db8:1::/64 subnet (source OR destination)
+
 ipv6.addr == 2001:db8:1::/64
 
 # All traffic with source in the subnet

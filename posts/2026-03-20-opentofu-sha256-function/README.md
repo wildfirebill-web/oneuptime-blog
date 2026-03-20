@@ -1,11 +1,10 @@
----
-title: "How to Use the sha256() Function in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, crypto
-description: "Learn how to use the sha256() function in OpenTofu to compute SHA-256 hashes for data integrity."
----
-
 # How to Use the sha256() Function in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Crypto
+
+Description: Learn how to use the sha256() function in OpenTofu to compute SHA-256 hashes for data integrity.
 
 Learn how to use the sha256() function in OpenTofu to compute SHA-256 hashes for data integrity.
 
@@ -13,6 +12,7 @@ Learn how to use the sha256() function in OpenTofu to compute SHA-256 hashes for
 
 ```hcl
 # See OpenTofu documentation for full syntax
+
 ```
 
 ## Basic Example

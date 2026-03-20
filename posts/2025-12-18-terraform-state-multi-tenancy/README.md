@@ -36,6 +36,7 @@ Terraform workspaces provide logical separation within a single backend:
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "s3" {
     bucket         = "company-terraform-state"

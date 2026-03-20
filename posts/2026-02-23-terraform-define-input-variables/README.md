@@ -18,6 +18,7 @@ Here is the most basic variable declaration:
 
 ```hcl
 # Declare a variable with just a name
+
 variable "instance_type" {}
 ```
 

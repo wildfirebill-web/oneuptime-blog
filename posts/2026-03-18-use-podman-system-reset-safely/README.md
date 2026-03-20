@@ -30,6 +30,7 @@ For rootless Podman, this means everything under `~/.local/share/containers/` is
 
 ```bash
 # See what will be affected
+
 podman system info | grep -A5 "store"
 ```
 

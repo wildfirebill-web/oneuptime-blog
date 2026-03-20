@@ -1,4 +1,4 @@
-# How to Set Up Automated Testing with Portainer
+# How to Set Up Automated Testing with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Automated testing with Portainer involves running test containers against your d
 
 ## Running Tests in an Ephemeral Container
 
-Use a `test` service in your stack that runs and exits — Docker won't keep it running:
+Use a `test` service in your stack that runs and exits - Docker won't keep it running:
 
 ```yaml
 version: "3.8"
@@ -107,6 +107,7 @@ Run integration tests in CI after deploying to staging:
 set -euo pipefail
 
 # Deploy to staging
+
 curl -fsS -X POST "$PORTAINER_STAGING_WEBHOOK"
 
 # Wait for containers to become healthy

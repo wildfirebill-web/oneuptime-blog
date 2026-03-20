@@ -25,6 +25,7 @@ These layers can be in the same Terraform project or separated into different pr
 
 ```bash
 # Create project structure
+
 mkdir -p talos-cluster/
 cd talos-cluster/
 

@@ -14,6 +14,7 @@ Cassandra enables JMX by default on port 7199 for local connections. For remote 
 
 ```bash
 # In conf/cassandra-env.sh
+
 JVM_OPTS="$JVM_OPTS -Dcom.sun.management.jmxremote.port=7199"
 JVM_OPTS="$JVM_OPTS -Dcom.sun.management.jmxremote.ssl=false"
 JVM_OPTS="$JVM_OPTS -Dcom.sun.management.jmxremote.authenticate=false"

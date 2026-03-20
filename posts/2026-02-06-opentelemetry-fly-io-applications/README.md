@@ -35,6 +35,7 @@ Let's start with a Node.js application. Install the OpenTelemetry SDK and the au
 
 ```bash
 # Install OpenTelemetry SDK and common instrumentations
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/auto-instrumentations-node \
   @opentelemetry/exporter-trace-otlp-http \

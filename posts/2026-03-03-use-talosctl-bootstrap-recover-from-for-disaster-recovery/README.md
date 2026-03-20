@@ -43,6 +43,7 @@ Before running the command, you need:
 
 ```bash
 # 1. A valid etcd snapshot file
+
 ls -la ./etcd-backup.db
 
 # Optionally verify it with etcdctl

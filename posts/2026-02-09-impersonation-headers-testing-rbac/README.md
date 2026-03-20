@@ -27,6 +27,7 @@ The simplest way to impersonate is using kubectl flags:
 
 ```bash
 # Impersonate as a specific user
+
 kubectl get pods --as=john
 
 # Impersonate as a user in specific groups

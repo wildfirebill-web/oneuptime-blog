@@ -44,6 +44,7 @@ import boto3
 import json
 
 # Initialize the Bedrock Agent client
+
 bedrock_agent = boto3.client('bedrock-agent', region_name='us-east-1')
 
 # Create the agent with a foundation model and instructions

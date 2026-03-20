@@ -66,6 +66,7 @@ Start with a Docker deployment for learning. Create a collector configuration fi
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   # OTLP receiver accepts data from OpenTelemetry SDKs
   otlp:

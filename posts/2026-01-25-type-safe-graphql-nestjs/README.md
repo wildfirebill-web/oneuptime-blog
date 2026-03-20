@@ -30,6 +30,7 @@ Start by creating a new NestJS project and installing the required GraphQL packa
 
 ```bash
 # Create a new NestJS project
+
 npm i -g @nestjs/cli
 nest new graphql-api
 

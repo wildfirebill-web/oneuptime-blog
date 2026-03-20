@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, SQL, Elastic Pool, OpenTofu, Database, Cost Optimization
+Tags: Azure, SQL, Elastic Pools, OpenTofu, Database, Cost Optimization
 
 Description: Learn how to create and configure Azure SQL Elastic Pools with OpenTofu to share compute resources across multiple databases and reduce costs in multi-tenant scenarios.
 
@@ -14,6 +14,7 @@ Azure SQL Elastic Pools allow multiple databases to share a pool of compute reso
 
 ```hcl
 # main.tf - SQL Server to host the elastic pool
+
 resource "azurerm_mssql_server" "server" {
   name                         = "my-elastic-pool-server"
   resource_group_name          = azurerm_resource_group.rg.name

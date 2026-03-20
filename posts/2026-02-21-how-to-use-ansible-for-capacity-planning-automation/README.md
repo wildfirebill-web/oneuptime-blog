@@ -16,6 +16,7 @@ Gather resource utilization from every host:
 
 ```yaml
 # playbooks/capacity-audit.yml
+
 # Collect capacity metrics from all servers
 - name: Capacity planning data collection
   hosts: all

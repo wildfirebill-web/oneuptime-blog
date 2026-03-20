@@ -41,6 +41,7 @@ Every person who interacts with ArgoCD must have a unique identifier. Disable th
 
 ```yaml
 # argocd-cm.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

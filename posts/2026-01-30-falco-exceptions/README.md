@@ -16,6 +16,7 @@ Before creating exceptions, you need to understand how Falco rules work.
 
 ```yaml
 # A basic Falco rule has three main parts
+
 - rule: Write below etc
   desc: Detect writes below /etc directory
   condition: >

@@ -27,6 +27,7 @@ ICMP Type 3 (Destination Unreachable) is sent by routers or destination hosts to
 
 ```bash
 # Watch for all ICMP unreachable messages
+
 tcpdump -i eth0 -n -v 'icmp[0] = 3'
 
 # Example output:
@@ -40,7 +41,7 @@ nc -u 10.20.0.5 12345
 
 ## Diagnosing by Code
 
-### Code 0 — Net Unreachable
+### Code 0 - Net Unreachable
 
 ```bash
 # Symptom: router reports no route to the network
@@ -50,7 +51,7 @@ ip route show | grep "10.20.0"
 ip route add 10.20.0.0/24 via 192.168.1.1
 ```
 
-### Code 1 — Host Unreachable
+### Code 1 - Host Unreachable
 
 ```bash
 # Symptom: router has a route but ARP/Layer2 resolution fails
@@ -59,17 +60,17 @@ arp -n 10.20.0.5
 # If missing or incomplete, the host may be down or on a different VLAN
 ```
 
-### Code 4 — Fragmentation Needed
+### Code 4 - Fragmentation Needed
 
 ```bash
-# Symptom: PMTUD failure — packet too large, DF bit set
+# Symptom: PMTUD failure - packet too large, DF bit set
 # The ICMP message includes the MTU of the bottleneck link
 tcpdump -v 'icmp[0] = 3 and icmp[1] = 4'
 # Look for: "next-hop MTU = XXXX" in verbose output
 # Fix: clamp TCP MSS or reduce MTU
 ```
 
-### Code 13 — Communication Prohibited
+### Code 13 - Communication Prohibited
 
 ```bash
 # Symptom: firewall is sending ICMP rejects rather than silently dropping

@@ -1,4 +1,4 @@
-# How to Use tofu get to Download Modules
+# How to Use tofu get to Download Modules - Tofu Download Modules
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Description: Learn how to use tofu get to download and install OpenTofu modules 
 
 ```bash
 # Download all modules referenced in the configuration
+
 tofu get
 
 # Output:

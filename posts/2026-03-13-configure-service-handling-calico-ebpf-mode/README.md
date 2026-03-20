@@ -24,6 +24,7 @@ Understanding how eBPF handles each service type is important for troubleshootin
 
 ```bash
 # Check BPF NAT map contents
+
 kubectl exec -n calico-system ds/calico-node -- \
   calico-node -bpf-nat-dump | head -50
 

@@ -20,6 +20,7 @@ The simplest way to get a container's MAC address:
 
 ```bash
 # Start a container on a named network
+
 podman network create my-network 2>/dev/null
 podman run -d --name my-app --network my-network nginx:latest
 

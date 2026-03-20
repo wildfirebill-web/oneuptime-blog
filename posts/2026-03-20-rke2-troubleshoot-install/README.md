@@ -1,4 +1,4 @@
-# How to Troubleshoot RKE2 Installation Failures
+# How to Troubleshoot RKE2 Installation Failures - Install
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Before diving into logs, verify the system meets basic requirements:
 
 ```bash
 # Check OS and kernel version
+
 cat /etc/os-release
 uname -r
 
@@ -295,4 +296,4 @@ sudo journalctl -u rke2-server -f
 
 ## Conclusion
 
-Troubleshooting RKE2 installation failures requires a systematic approach starting from basic system requirements and working through to component-specific diagnostics. The most common causes of installation failures are swap not disabled, required ports being in use, kernel modules not loaded, and token mismatches between server and agent nodes. Always check `journalctl -u rke2-server -f` first — the error messages are usually descriptive and point directly to the root cause.
+Troubleshooting RKE2 installation failures requires a systematic approach starting from basic system requirements and working through to component-specific diagnostics. The most common causes of installation failures are swap not disabled, required ports being in use, kernel modules not loaded, and token mismatches between server and agent nodes. Always check `journalctl -u rke2-server -f` first - the error messages are usually descriptive and point directly to the root cause.

@@ -20,6 +20,7 @@ The interactive serial console is disabled by default for security reasons. You 
 
 ```bash
 # Enable interactive serial console access for all VMs in the project
+
 gcloud compute project-info add-metadata \
     --metadata serial-port-enable=TRUE
 ```

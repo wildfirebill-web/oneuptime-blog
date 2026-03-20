@@ -77,6 +77,7 @@ flowchart TD
 
 ```bash
 # Search for hung task messages in kernel log
+
 # The dmesg command shows recent kernel messages
 dmesg | grep -i "blocked for more than"
 

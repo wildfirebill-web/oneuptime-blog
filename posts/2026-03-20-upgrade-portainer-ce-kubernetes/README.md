@@ -1,4 +1,4 @@
-# How to Upgrade Portainer CE on Kubernetes
+# How to Upgrade Portainer CE on Kubernetes - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Before upgrading, snapshot the Portainer PersistentVolumeClaim:
 
 ```bash
 # Find the Portainer pod name
+
 kubectl get pods -n portainer -l app.kubernetes.io/name=portainer
 
 # Export the current Portainer configuration via API as a backup

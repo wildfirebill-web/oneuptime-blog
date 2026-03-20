@@ -44,6 +44,7 @@ The biggest risk with Lease-based election through Istio is latency. If sidecar 
 
 ```bash
 # Time a direct API server call vs through the sidecar
+
 kubectl exec my-pod -c app -- curl -w "%{time_total}" -o /dev/null -s https://kubernetes.default.svc:443/healthz
 ```
 

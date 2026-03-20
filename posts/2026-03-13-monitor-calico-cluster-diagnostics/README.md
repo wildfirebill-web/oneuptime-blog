@@ -62,6 +62,7 @@ spec:
 
 ```bash
 # Export IPAM utilization as a simple metric for Prometheus
+
 #!/bin/bash
 # Track IPAM utilization over time
 while true; do

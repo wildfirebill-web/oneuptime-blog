@@ -34,6 +34,7 @@ The first step is collecting the raw metrics you need to calculate error budget 
 
 ```python
 # error_budget_metrics.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

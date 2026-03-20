@@ -16,6 +16,7 @@ Before doing any upgrades, you need to refresh the package index. This is equiva
 
 ```yaml
 # Refresh the apt package cache
+
 - name: Update apt cache
   ansible.builtin.apt:
     update_cache: yes

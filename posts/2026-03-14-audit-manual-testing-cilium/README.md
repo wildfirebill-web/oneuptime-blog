@@ -28,6 +28,7 @@ Evaluate the test plan against known vulnerability classes:
 
 ```bash
 # Review the test plan document
+
 # Check for presence of required test categories
 
 echo "=== Test Plan Audit Checklist ==="

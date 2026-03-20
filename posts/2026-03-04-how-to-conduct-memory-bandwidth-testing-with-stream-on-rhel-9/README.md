@@ -17,6 +17,7 @@ sudo dnf install -y gcc
 curl -O https://www.cs.virginia.edu/stream/FTP/Code/stream.c
 
 # Compile with optimizations
+
 gcc -O3 -march=native -fopenmp -DSTREAM_ARRAY_SIZE=80000000 \
   -DNTIMES=20 stream.c -o stream
 ```

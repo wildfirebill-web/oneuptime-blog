@@ -27,6 +27,7 @@ Create a backup script that runs via cron:
 set -e
 
 # Configuration
+
 ETCD_ENDPOINTS="https://etcd-0:2379,https://etcd-1:2379,https://etcd-2:2379"
 BACKUP_DIR="/backups/etcd"
 RETENTION_DAYS=30

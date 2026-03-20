@@ -30,6 +30,7 @@ Here is how to grant the necessary role:
 
 ```bash
 # Get your project number
+
 PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format='value(projectNumber)')
 
 # Grant the Kubernetes Engine Developer role to the Cloud Build service account

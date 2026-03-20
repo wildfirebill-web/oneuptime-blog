@@ -51,6 +51,7 @@ Use the gcloud CLI to create a backup plan with your desired schedule and retent
 
 ```bash
 # Create a backup plan for production Compute Engine instances
+
 # This plan runs daily backups at 2 AM UTC and keeps them for 30 days
 gcloud backup-dr backup-plans create production-vm-daily \
     --project=my-project \

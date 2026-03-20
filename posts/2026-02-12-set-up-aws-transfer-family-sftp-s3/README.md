@@ -35,6 +35,7 @@ The logging role:
 
 ```bash
 # Create the logging role for Transfer Family
+
 aws iam create-role \
   --role-name TransferFamilyLoggingRole \
   --assume-role-policy-document '{

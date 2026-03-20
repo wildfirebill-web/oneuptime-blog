@@ -26,6 +26,7 @@ TFLint plugins are written in Go. Set up a new plugin project:
 
 ```bash
 # Create the project directory
+
 mkdir tflint-ruleset-myorg
 cd tflint-ruleset-myorg
 

@@ -62,6 +62,7 @@ aws ec2 describe-security-groups \
   --output table
 
 # Also check egress rules
+
 aws ec2 describe-security-groups \
   --filters "Name=egress.ip-permission.group-id,Values=sg-0abc123def456789" \
   --query "SecurityGroups[*].{ID:GroupId,Name:GroupName}" \

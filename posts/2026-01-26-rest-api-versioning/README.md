@@ -57,6 +57,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 # Version 1 - Returns basic user information
+
 @app.route('/api/v1/users/<int:user_id>', methods=['GET'])
 def get_user_v1(user_id):
     # V1 returns a flat structure with full_name

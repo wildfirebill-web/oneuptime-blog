@@ -22,6 +22,7 @@ This example reads the `max_connections` value from a database config file:
 
 ```yaml
 # playbook.yml - Reading a single value from an INI file
+
 ---
 - name: Read database configuration
   hosts: localhost

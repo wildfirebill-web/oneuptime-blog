@@ -18,6 +18,7 @@ When running multi-container applications with Podman Compose, you can define se
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

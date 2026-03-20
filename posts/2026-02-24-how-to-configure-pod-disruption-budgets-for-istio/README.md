@@ -215,6 +215,7 @@ If your PDB is too restrictive and you do not have enough replicas, node drains 
 
 ```yaml
 # BAD: Only 2 replicas with minAvailable: 2
+
 # This PDB will block ALL drains
 apiVersion: policy/v1
 kind: PodDisruptionBudget

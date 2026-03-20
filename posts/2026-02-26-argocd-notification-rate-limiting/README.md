@@ -86,6 +86,7 @@ ArgoCD reconciles applications on a fixed interval. Reducing the frequency reduc
 
 ```bash
 # Check current reconciliation timeout
+
 kubectl get configmap argocd-cm -n argocd -o json | \
   jq -r '.data["timeout.reconciliation"]'
 

@@ -32,6 +32,7 @@ Here are some examples:
 
 ```python
 # StatsD metrics examples
+
 # Counter: increment a counter
 "orders.processed:1|c"
 

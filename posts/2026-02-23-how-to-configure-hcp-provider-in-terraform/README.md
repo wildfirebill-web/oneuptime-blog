@@ -40,6 +40,7 @@ terraform {
 }
 
 # Configure the HCP provider with credentials
+
 provider "hcp" {
   client_id     = var.hcp_client_id
   client_secret = var.hcp_client_secret

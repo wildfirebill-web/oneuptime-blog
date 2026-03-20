@@ -372,6 +372,7 @@ def cleanup_old_images(max_age_days=30, dry_run=True):
         print(f"\n{'Would remove' if dry_run else 'Removed'} {removed} images")
 
 # Preview what would be removed
+
 cleanup_old_images(max_age_days=30, dry_run=True)
 ```
 

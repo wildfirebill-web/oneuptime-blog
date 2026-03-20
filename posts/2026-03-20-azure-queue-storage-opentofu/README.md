@@ -14,6 +14,7 @@ Azure Queue Storage provides a simple, cost-effective message queuing service fo
 
 ```hcl
 # main.tf - Storage account for queue storage
+
 resource "azurerm_resource_group" "rg" {
   name     = "my-queue-rg"
   location = "eastus"

@@ -103,12 +103,13 @@ resource "aws_api_gateway_method" "post_order" {
 ## Test Validation Behavior
 
 ```bash
-# Valid request — passes validation
+# Valid request - passes validation
+
 curl -X POST https://api.example.com/prod/orders?version=1 \
   -H "Content-Type: application/json" \
   -d '{"item_id": "ABC123", "quantity": 2}'
 
-# Missing required field — rejected by API Gateway (400)
+# Missing required field - rejected by API Gateway (400)
 curl -X POST https://api.example.com/prod/orders?version=1 \
   -H "Content-Type: application/json" \
   -d '{"item_id": "ABC123"}'

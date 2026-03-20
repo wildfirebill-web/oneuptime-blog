@@ -18,6 +18,7 @@ Let's start with the obvious. Check if your database is actually available:
 
 ```bash
 # Check RDS instance status
+
 aws rds describe-db-instances \
   --db-instance-identifier my-database \
   --query 'DBInstances[0].{Status:DBInstanceStatus,Endpoint:Endpoint.Address,Port:Endpoint.Port,AZ:AvailabilityZone}'

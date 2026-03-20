@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, systemd-networkd, Networking, systemd, Configuration
+Tags: Linux, systemd-networkd, Networking, Systemd, Configuration
 
 Description: Enable and start systemd-networkd on Linux to manage network interfaces declaratively using .network and .netdev configuration files.
 
@@ -14,6 +14,7 @@ Description: Enable and start systemd-networkd on Linux to manage network interf
 
 ```bash
 # Check current status
+
 systemctl status systemd-networkd
 
 # Quick check

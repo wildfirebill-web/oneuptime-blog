@@ -18,6 +18,7 @@ Quadlet `.volume` files define named Podman volumes that can be referenced by co
 
 ```ini
 # ~/.config/containers/systemd/pgdata.volume
+
 [Volume]
 # A basic named volume with default settings
 ```

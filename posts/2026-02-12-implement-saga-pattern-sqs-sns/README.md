@@ -50,6 +50,7 @@ This Terraform configuration sets up the topics and queues for the saga.
 
 ```hcl
 # SNS Topics for saga events
+
 resource "aws_sns_topic" "order_created" {
   name = "order-created"
 }

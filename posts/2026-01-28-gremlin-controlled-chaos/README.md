@@ -73,6 +73,7 @@ flowchart TB
 ```bash
 #!/bin/bash
 # install_gremlin.sh
+
 # Install Gremlin agent on Ubuntu/Debian
 
 # Add Gremlin repository

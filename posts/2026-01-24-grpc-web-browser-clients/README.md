@@ -274,6 +274,7 @@ Create an Envoy configuration file:
 
 ```yaml
 # envoy.yaml
+
 admin:
   address:
     socket_address:

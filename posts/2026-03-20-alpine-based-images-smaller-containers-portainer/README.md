@@ -28,6 +28,7 @@ Alpine uses `musl libc` and `busybox` instead of `glibc` and GNU coreutils, keep
 
 ```dockerfile
 # Use Alpine as the base
+
 FROM alpine:3.19
 
 # Install only what you need
@@ -54,7 +55,7 @@ WORKDIR /app
 COPY . .
 RUN go build -o server .
 
-# Runtime stage — minimal Alpine
+# Runtime stage - minimal Alpine
 FROM alpine:3.19
 RUN apk add --no-cache ca-certificates
 COPY --from=builder /app/server /usr/local/bin/server

@@ -95,6 +95,7 @@ server {
 }
 
 # Redirect HTTP to HTTPS
+
 server {
     listen 80;
     server_name api.example.com;

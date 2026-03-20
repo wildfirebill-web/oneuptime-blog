@@ -14,6 +14,7 @@ RHEL supports Bluetooth through the BlueZ stack. This guide covers enabling the 
 
 ```bash
 # Install the Bluetooth stack and utilities
+
 sudo dnf install -y bluez bluez-tools
 
 # For audio devices (headphones, speakers), also install PipeWire Bluetooth support

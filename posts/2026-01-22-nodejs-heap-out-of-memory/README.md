@@ -32,6 +32,7 @@ FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memor
 
 ```bash
 # Increase to 4GB
+
 node --max-old-space-size=4096 app.js
 
 # Increase to 8GB

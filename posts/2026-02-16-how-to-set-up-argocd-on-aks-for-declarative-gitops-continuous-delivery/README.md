@@ -26,6 +26,7 @@ Install ArgoCD using the official manifests or Helm. I will use the Helm approac
 
 ```bash
 # Add the ArgoCD Helm repository
+
 helm repo add argo https://argoproj.github.io/argo-helm
 helm repo update
 

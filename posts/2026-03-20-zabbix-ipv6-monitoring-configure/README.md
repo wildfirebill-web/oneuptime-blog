@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Zabbix, IPv6, Monitoring, Network, Agent, Configuration
+Tags: Zabbix, IPv6, Monitoring, Networks, Agent, Configuration
 
 Description: A guide to configuring Zabbix server, proxy, and agents to monitor IPv6 hosts and services, including interface configuration and ICMP checks.
 
@@ -14,6 +14,7 @@ Edit `/etc/zabbix/zabbix_server.conf`:
 
 ```ini
 # /etc/zabbix/zabbix_server.conf - Zabbix Server IPv6 configuration
+
 # Listen on all interfaces (IPv4 and IPv6)
 ListenIP=::
 
@@ -143,14 +144,14 @@ Template `Network interfaces by SNMP` will automatically collect IPv6 interface 
 
 ## Step 6: Create a Trigger for IPv6 Host Unavailability
 
-```
+```text
 # Trigger expression for ICMPv6 unavailability
 {web-01:icmpping[2001:db8::10,3,200,1024].last()}=0
 ```
 
 Or for consecutive failures:
 
-```
+```text
 {web-01:icmpping[2001:db8::10].count(#5,0,"eq")}>=3
 ```
 
@@ -166,4 +167,4 @@ zabbix_get -s 2001:db8::10 -p 10050 -k system.hostname
 # Verify latest data in Zabbix UI: Monitoring → Latest data → Filter by host
 ```
 
-Zabbix's native IPv6 support means no special plugins are required — simply use IPv6 addresses in the host interface configuration and Zabbix handles the rest automatically.
+Zabbix's native IPv6 support means no special plugins are required - simply use IPv6 addresses in the host interface configuration and Zabbix handles the rest automatically.

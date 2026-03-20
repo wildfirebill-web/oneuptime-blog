@@ -30,6 +30,7 @@ kubectl get cm -n kube-system cilium-config \
 kubectl get gatewayclass cilium \
   -o jsonpath='{.status.conditions[?(@.type=="Accepted")].status}'
 # Expected: True
+
 ```
 
 ## Step 2: Validate CRD Availability

@@ -35,6 +35,7 @@ For automation and version control, use the gcloud CLI.
 
 ```bash
 # Create an HTTPS uptime check for your API endpoint
+
 gcloud monitoring uptime create my-api-check \
   --display-name="API Health Check" \
   --resource-type=uptime-url \

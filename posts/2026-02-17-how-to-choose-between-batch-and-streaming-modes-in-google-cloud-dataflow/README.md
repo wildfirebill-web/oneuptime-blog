@@ -21,6 +21,7 @@ import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions
 
 # A batch pipeline reads from a bounded source
+
 options = PipelineOptions([
     '--runner=DataflowRunner',
     '--project=my-project',

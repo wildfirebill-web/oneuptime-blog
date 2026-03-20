@@ -12,6 +12,7 @@ The OpenTelemetry Collector includes a dedicated Elasticsearch receiver that con
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   elasticsearch:
     # Elasticsearch cluster endpoint

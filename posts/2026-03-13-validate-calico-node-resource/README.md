@@ -24,6 +24,7 @@ Validation should be performed after any node configuration change, after adding
 
 ```bash
 # Compare Kubernetes nodes with Calico Node resources
+
 echo "=== Kubernetes Nodes ==="
 kubectl get nodes -o name | sort
 

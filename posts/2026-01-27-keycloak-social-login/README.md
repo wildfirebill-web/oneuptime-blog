@@ -36,6 +36,7 @@ Navigate to the Google Cloud Console and create OAuth 2.0 credentials:
 
 ```bash
 # Google Cloud Console URL
+
 https://console.cloud.google.com/apis/credentials
 
 # You will need:

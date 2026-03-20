@@ -27,6 +27,7 @@ Spring Boot 2.x and later uses HikariCP as the default connection pool. It's kno
 
 ```properties
 # application.properties
+
 spring.datasource.url=jdbc:postgresql://localhost:5432/mydb
 spring.datasource.username=myuser
 spring.datasource.password=mypassword

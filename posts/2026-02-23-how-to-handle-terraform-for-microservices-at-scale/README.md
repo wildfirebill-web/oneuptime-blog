@@ -18,6 +18,7 @@ Create a standardized module that deploys everything a microservice needs:
 
 ```hcl
 # modules/microservice/main.tf
+
 # Everything a microservice needs in one module
 
 variable "service_name" {

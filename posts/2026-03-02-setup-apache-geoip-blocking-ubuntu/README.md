@@ -25,6 +25,7 @@ MaxMind requires a free account to download GeoLite2 databases:
 
 ```bash
 # Install the MaxMind database updater
+
 sudo add-apt-repository ppa:maxmind/ppa
 sudo apt-get update
 sudo apt-get install -y geoipupdate

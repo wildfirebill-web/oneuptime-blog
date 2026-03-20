@@ -29,6 +29,7 @@ Query a CSV file using the AWS CLI:
 
 ```bash
 # Query a CSV file with headers
+
 aws s3api select-object-content \
     --bucket my-data-bucket \
     --key data/sales-2026.csv \

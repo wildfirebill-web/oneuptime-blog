@@ -57,6 +57,7 @@ secrets/
 
 ```yaml
 # secrets/vault/Chart.yaml
+
 apiVersion: v2
 name: vault
 description: Wrapper chart for HashiCorp Vault

@@ -1,8 +1,8 @@
-# How to Configure Rancher Agent Resource Allocation
+# How to Configure Rancher Agent Resource Allocation - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Agent, Resource Management, cattle-system
+Tags: Rancher, Kubernetes, Agent, Resource Management, Cattle-system
 
 Description: Configure resource requests and limits for Rancher agents running in managed clusters to prevent resource contention and ensure reliable cluster management.
 
@@ -20,6 +20,7 @@ Every Rancher-managed cluster runs several cattle-system agents: cattle-cluster-
 
 ```bash
 # Check agent resource usage in a managed cluster
+
 kubectl top pods -n cattle-system
 kubectl top pods -n fleet-system
 

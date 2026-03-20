@@ -206,6 +206,7 @@ Remove the retry logic from your application code:
 
 ```python
 # Before
+
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, max=10))
 def call_payment_service():
     response = requests.get("http://payment-service/api/charge")

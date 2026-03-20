@@ -122,6 +122,7 @@ For interactive commands (sync, rollback, status), build a Slack bot that talks 
 
 ```python
 # chatops-bot/app.py
+
 import os
 import json
 import requests

@@ -22,6 +22,7 @@ ERROR! become_method requires become to be set to true
 
 ```yaml
 # WRONG: become_method without become
+
 - hosts: all
   become_method: sudo
   tasks:

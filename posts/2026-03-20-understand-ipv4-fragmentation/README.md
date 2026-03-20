@@ -12,7 +12,7 @@ IPv4 fragmentation occurs when a packet is larger than the Maximum Transmission 
 
 ## How Fragmentation Works
 
-```
+```text
 Original packet: 3000 bytes payload + 20 bytes IP header = 3020 bytes
 Path MTU: 1500 bytes (standard Ethernet)
 Fragments:
@@ -34,6 +34,7 @@ IP header fields used for fragmentation:
 
 ```bash
 # Fragmentation happens when:
+
 # 1. Source sends packet > MTU and DF bit is NOT set
 # 2. Router receives packet > link MTU and DF bit is NOT set
 

@@ -32,6 +32,7 @@ The recommended way to install DAPR on Kubernetes is through Helm. This installs
 
 ```bash
 # Add the DAPR Helm repository
+
 helm repo add dapr https://dapr.github.io/helm-charts/
 helm repo update
 

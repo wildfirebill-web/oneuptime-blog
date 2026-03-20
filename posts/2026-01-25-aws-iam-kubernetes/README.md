@@ -70,6 +70,7 @@ Create an EKS cluster with IRSA enabled or enable it on existing clusters:
 
 ```bash
 # Create new cluster with IRSA enabled
+
 eksctl create cluster \
   --name production \
   --region us-east-1 \

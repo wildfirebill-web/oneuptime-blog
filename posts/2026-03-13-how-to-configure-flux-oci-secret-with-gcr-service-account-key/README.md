@@ -28,6 +28,7 @@ If you do not already have a service account, create one with the required permi
 
 ```bash
 # Create the service account
+
 gcloud iam service-accounts create flux-gcr-reader \
   --display-name="Flux GCR Reader"
 

@@ -37,6 +37,7 @@ The simplest approach uses a PostSync hook that triggers rollback when verificat
 
 ```yaml
 # verify-and-rollback.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

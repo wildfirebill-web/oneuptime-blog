@@ -14,6 +14,7 @@ Testing email delivery over IPv6 requires verifying both the transport layer (IP
 
 ```bash
 # Install testing tools
+
 sudo apt install -y swaks telnet dnsutils mailutils
 
 # Install swaks (SMTP Swiss Army Knife) if not available
@@ -105,7 +106,7 @@ swaks --from sender@example.com \
 
 In Gmail, click the three-dot menu → **Show original** and look for:
 
-```
+```text
 Received: from mail.example.com ([2001:db8::10])
 Authentication-Results: mx.google.com;
    dkim=pass header.i=@example.com;

@@ -18,6 +18,7 @@ Every API request needs an authentication token. TFE supports several token type
 
 ```bash
 # User token - tied to your personal account
+
 # Generate at: https://tfe.example.com/app/settings/tokens
 
 # Team token - scoped to a team's permissions

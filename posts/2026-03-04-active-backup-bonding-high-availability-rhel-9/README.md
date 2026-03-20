@@ -36,6 +36,7 @@ sequenceDiagram
 
 ```bash
 # Create the bond with active-backup mode and 100ms link monitoring
+
 nmcli connection add type bond con-name bond0 ifname bond0 \
   bond.options "mode=active-backup,miimon=100,primary=eth0"
 ```

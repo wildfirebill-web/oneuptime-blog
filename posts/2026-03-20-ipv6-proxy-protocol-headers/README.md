@@ -14,7 +14,7 @@ The PROXY Protocol (designed by HAProxy) provides a standardized way to pass con
 
 ### Version 1 (Text)
 
-```
+```text
 PROXY TCP4 <src-ip> <dst-ip> <src-port> <dst-port>\r\n
 PROXY TCP6 <src-ipv6> <dst-ipv6> <src-port> <dst-port>\r\n
 
@@ -64,6 +64,7 @@ Configure Nginx to accept PROXY Protocol v1/v2 and extract the real client IP:
 
 ```nginx
 # /etc/nginx/nginx.conf
+
 stream {
     server {
         listen 8080 proxy_protocol;

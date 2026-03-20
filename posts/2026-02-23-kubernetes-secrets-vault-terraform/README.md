@@ -28,6 +28,7 @@ First, deploy Vault itself using the official Helm chart.
 
 ```hcl
 # Create the vault namespace
+
 resource "kubernetes_namespace" "vault" {
   metadata {
     name = "vault"

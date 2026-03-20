@@ -64,6 +64,7 @@ If you're running into connectivity issues, check both levels:
 
 ```bash
 # Pod-level iptables (inside the pod)
+
 kubectl exec -it deploy/my-app -c istio-proxy -- iptables -t nat -L -n
 
 # Host-level iptables (on the node)

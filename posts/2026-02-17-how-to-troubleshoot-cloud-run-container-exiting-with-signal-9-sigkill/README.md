@@ -30,6 +30,7 @@ Check your logs for memory-related messages.
 
 ```bash
 # Search for memory limit errors in Cloud Logging
+
 gcloud logging read \
     'resource.type="cloud_run_revision" AND resource.labels.service_name="my-service" AND textPayload:"memory"' \
     --project=my-project \

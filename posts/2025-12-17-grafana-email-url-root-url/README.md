@@ -44,6 +44,7 @@ Edit your Grafana configuration file (`grafana.ini` or `custom.ini`):
 ```ini
 [server]
 # The full public facing URL
+
 root_url = https://grafana.example.com
 
 # Protocol (http or https)

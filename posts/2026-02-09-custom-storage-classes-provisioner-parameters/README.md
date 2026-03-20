@@ -27,6 +27,7 @@ Create optimized StorageClasses for different AWS EBS volume types:
 
 ```yaml
 # High-performance SSD for databases
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

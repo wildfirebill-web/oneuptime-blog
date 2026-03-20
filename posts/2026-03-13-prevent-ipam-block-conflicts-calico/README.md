@@ -37,6 +37,7 @@ kubectl get deployment calico-kube-controllers -n kube-system
 ```bash
 #!/bin/bash
 # remove-node.sh <node-name>
+
 NODE=$1
 
 echo "=== Step 1: Drain node ==="

@@ -24,6 +24,7 @@ Helm repository caching is controlled by the `--helm-cache-max-size` flag on the
 
 ```yaml
 # clusters/my-cluster/flux-system/source-controller-cache-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

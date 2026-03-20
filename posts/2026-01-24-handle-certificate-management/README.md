@@ -33,6 +33,7 @@ Every certificate goes through this lifecycle. The goal is to automate each step
 ```bash
 #!/bin/bash
 # Install certbot
+
 apt-get update
 apt-get install -y certbot
 

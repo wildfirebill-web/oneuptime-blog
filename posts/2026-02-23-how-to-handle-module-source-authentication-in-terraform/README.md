@@ -16,6 +16,7 @@ SSH is the most common authentication method for private Git repositories. It wo
 
 ```hcl
 # SSH-based module source
+
 module "vpc" {
   source = "git::ssh://git@github.com/myorg/terraform-aws-vpc.git?ref=v1.0.0"
 }

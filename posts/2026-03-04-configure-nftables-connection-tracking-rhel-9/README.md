@@ -42,6 +42,7 @@ stateDiagram-v2
 
 ```bash
 # View the current conntrack table (active connections)
+
 sudo conntrack -L
 
 # Count the number of tracked connections

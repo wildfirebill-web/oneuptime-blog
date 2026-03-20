@@ -106,6 +106,7 @@ resource "aws_instance" "vault" {
 
 ```hcl
 # vault-init.sh.tpl - simplified for brevity
+
 ```
 
 ```hcl

@@ -54,6 +54,7 @@ Java auto-instrumentation uses a Java agent that attaches to your JVM at startup
 
 ```bash
 # Download the latest OpenTelemetry Java agent
+
 curl -L -O https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
 ```
 

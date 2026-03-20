@@ -1,4 +1,4 @@
-# How to Configure Init Containers in Kubernetes via Portainer
+# How to Configure Init Containers in Kubernetes via Portainer - K8s
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Init containers are specialized containers that run to completion before app con
 
 ```yaml
 # init-containers-demo.yml - deploy via Portainer
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -170,4 +171,4 @@ kubectl describe pod web-app-pod-xyz | grep -A5 "Init Containers"
 
 ## Conclusion
 
-Init containers deployed via Portainer provide a clean pattern for application dependencies and setup. They run sequentially, each must succeed before the next starts, and all must complete before app containers begin. This guarantees proper initialization order—migrations run before the app, configs are available before startup, and dependencies are ready before the application connects.
+Init containers deployed via Portainer provide a clean pattern for application dependencies and setup. They run sequentially, each must succeed before the next starts, and all must complete before app containers begin. This guarantees proper initialization order-migrations run before the app, configs are available before startup, and dependencies are ready before the application connects.

@@ -30,6 +30,7 @@ Discover and scrape metrics directly from pods:
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: 'kubernetes-pods'
     kubernetes_sd_configs:

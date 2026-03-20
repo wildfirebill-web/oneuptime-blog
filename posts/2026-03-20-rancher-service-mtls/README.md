@@ -28,6 +28,7 @@ mTLS: Both server AND client prove their identities to each other using certific
 
 ```yaml
 # peer-authentication-global.yaml - Enforce mTLS mesh-wide
+
 apiVersion: security.istio.io/v1beta1
 kind: PeerAuthentication
 metadata:
@@ -261,4 +262,4 @@ kubectl get certificates --all-namespaces \
 
 ## Conclusion
 
-mTLS is a foundational security control for microservice architectures. Service meshes like Istio and Linkerd make it trivial to enable mTLS for all inter-service communication with zero application code changes. For services outside the mesh, cert-manager provides automated certificate lifecycle management. Always combine mTLS with proper authorization policies to get the full benefit of strong service identity—authentication alone is not sufficient without access control.
+mTLS is a foundational security control for microservice architectures. Service meshes like Istio and Linkerd make it trivial to enable mTLS for all inter-service communication with zero application code changes. For services outside the mesh, cert-manager provides automated certificate lifecycle management. Always combine mTLS with proper authorization policies to get the full benefit of strong service identity-authentication alone is not sufficient without access control.

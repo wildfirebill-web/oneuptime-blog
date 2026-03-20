@@ -18,6 +18,7 @@ The NSA notes that IPv6 is enabled by default on all modern operating systems an
 
 ```bash
 # Check for active IPv6 on supposedly IPv4-only hosts
+
 ip -6 addr show | grep -v 'scope link'
 # Any output here means IPv6 is active
 
@@ -34,10 +35,10 @@ The NSA strongly prefers native dual-stack over automatic tunneling mechanisms:
 
 | Approach | NSA Stance |
 |----------|-----------|
-| Native dual-stack | Preferred — visibility and control |
+| Native dual-stack | Preferred - visibility and control |
 | Manual 6in4 tunnels | Acceptable with proper controls |
-| 6to4 (RFC 3056) | Avoid — deprecated, uncontrolled |
-| Teredo | Avoid — bypasses firewalls via UDP/NAT |
+| 6to4 (RFC 3056) | Avoid - deprecated, uncontrolled |
+| Teredo | Avoid - bypasses firewalls via UDP/NAT |
 | ISATAP | Avoid in external networks |
 
 ### 3. Block Tunneling at Network Boundary
@@ -64,14 +65,14 @@ iptables -A FORWARD -p 47 -j DROP
 
 The NSA recommends full deployment of first-hop security mechanisms on all network segments:
 
-```
+```text
 Priority 1: RA Guard on all access ports
 Priority 2: DHCPv6 Guard on all access ports
 Priority 3: SAVI (Source Address Validation) on access ports
 Priority 4: Port-security for NDP (limit neighbor table entries)
 ```
 
-```
+```text
 ! Cisco: Full first-hop security on access port
 ipv6 nd raguard policy HOST
   device-role host
@@ -93,7 +94,7 @@ The NSA warns that many organizations have IPv4 firewalls with no IPv6 capabilit
 # Send IPv6 traffic that should be blocked and verify it's dropped
 ping6 -c 3 2001:4860:4860::8888   # Google's IPv6 DNS
 
-# If ping succeeds but you have no IPv6 policy — you have a gap
+# If ping succeeds but you have no IPv6 policy - you have a gap
 # Check firewall logs for IPv6 entries
 ```
 
@@ -101,15 +102,15 @@ ping6 -c 3 2001:4860:4860::8888   # Google's IPv6 DNS
 
 NSA recommends validating that your entire security stack supports IPv6:
 
-```
-[ ] Firewall — supports stateful IPv6 inspection
-[ ] IDS/IPS — can decode IPv6 extension headers
-[ ] SIEM — ingests IPv6 log data
-[ ] Vulnerability Scanner — scans IPv6 addresses
-[ ] NetFlow/IPFIX — exports IPv6 flow records
-[ ] DNS — DNSSEC-enabled for AAAA records
-[ ] NTP — can sync over IPv6
-[ ] Syslog — can send/receive over IPv6
+```text
+[ ] Firewall - supports stateful IPv6 inspection
+[ ] IDS/IPS - can decode IPv6 extension headers
+[ ] SIEM - ingests IPv6 log data
+[ ] Vulnerability Scanner - scans IPv6 addresses
+[ ] NetFlow/IPFIX - exports IPv6 flow records
+[ ] DNS - DNSSEC-enabled for AAAA records
+[ ] NTP - can sync over IPv6
+[ ] Syslog - can send/receive over IPv6
 ```
 
 ### 7. Router and Switch Hardening
@@ -146,7 +147,7 @@ ip -6 neigh show | wc -l
 
 ## NSA IPv6 Security Checklist
 
-```
+```text
 Infrastructure:
 [ ] All routers and firewalls have explicit IPv6 policies
 [ ] IPv6 traffic is logged and monitored

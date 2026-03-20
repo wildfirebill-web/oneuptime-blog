@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Security, Headers, HTTPS, XSS Protection
+Tags: Nginx, Security, Headers, HTTPS, XSS Protection
 
 Description: Learn how to configure security headers in Nginx to protect your web applications from common attacks like XSS, clickjacking, and content sniffing.
 
@@ -62,6 +62,7 @@ HSTS tells browsers to always use HTTPS:
 
 ```nginx
 # Basic HSTS (1 year)
+
 add_header Strict-Transport-Security "max-age=31536000" always;
 
 # Include subdomains

@@ -25,6 +25,7 @@ The mailing list is the fastest notification channel. Subscribe to it:
 
 ```bash
 # Subscribe at:
+
 # https://groups.google.com/g/istio-security-announce
 ```
 

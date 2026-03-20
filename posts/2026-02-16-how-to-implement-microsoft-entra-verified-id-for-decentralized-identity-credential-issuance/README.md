@@ -61,6 +61,7 @@ The setup wizard walks you through:
 
 ```bash
 # Create a Key Vault for Verified ID signing keys
+
 az keyvault create \
   --name myVerifiedIdKeyVault \
   --resource-group myResourceGroup \

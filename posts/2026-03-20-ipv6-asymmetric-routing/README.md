@@ -16,6 +16,7 @@ Asymmetric routing occurs when IPv6 packets take different paths in each directi
 # Compare forward and reverse traceroutes
 
 # Forward path (your host to destination)
+
 traceroute6 -n 2001:db8::remote
 
 # Reverse path requires running traceroute6 FROM the remote host
@@ -42,9 +43,9 @@ ip -6 route show
 ip -6 route show | awk '{print $NF, $0}' | sort
 
 # In multi-homed host (two uplinks):
-# 2001:db8:a::/64 dev eth0 — ISP A prefix
-# 2001:db8:b::/64 dev eth1 — ISP B prefix
-# default via fe80::gw-a dev eth0 — default uses ISP A
+# 2001:db8:a::/64 dev eth0 - ISP A prefix
+# 2001:db8:b::/64 dev eth1 - ISP B prefix
+# default via fe80::gw-a dev eth0 - default uses ISP A
 # Traffic from ISP B might arrive on eth1 but responses go via eth0
 ```
 
@@ -91,7 +92,7 @@ ip -6 rule show
 sudo ip6tables -t raw -A PREROUTING -m rpfilter --invert -j DROP
 
 # This drops packets where the reply would not go back the same interface
-# (strict mode — may be too strict for asymmetric environments)
+# (strict mode - may be too strict for asymmetric environments)
 
 # Loose mode alternative: only drop if no route at all
 sudo ip6tables -t raw -A PREROUTING -m rpfilter --loose --invert -j DROP
@@ -135,4 +136,4 @@ sudo ip -6 route add 2001:db8::/32 \
 
 ## Conclusion
 
-Asymmetric IPv6 routing is common in multi-homed environments and doesn't inherently break connectivity — but it breaks stateful firewalls and connection tracking. Diagnose by capturing on all interfaces simultaneously and comparing which interface carries each flow direction. Fix with IPv6 policy-based routing to ensure responses leave through the same interface that received the request. Use `ip -6 rule add from <prefix> table <n>` for per-source routing tables, which is the standard Linux approach for multi-homed IPv6 hosts.
+Asymmetric IPv6 routing is common in multi-homed environments and doesn't inherently break connectivity - but it breaks stateful firewalls and connection tracking. Diagnose by capturing on all interfaces simultaneously and comparing which interface carries each flow direction. Fix with IPv6 policy-based routing to ensure responses leave through the same interface that received the request. Use `ip -6 rule add from <prefix> table <n>` for per-source routing tables, which is the standard Linux approach for multi-homed IPv6 hosts.

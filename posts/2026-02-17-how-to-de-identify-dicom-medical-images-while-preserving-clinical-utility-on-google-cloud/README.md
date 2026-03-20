@@ -39,6 +39,7 @@ This creates a new DICOM store to hold the de-identified output:
 
 ```bash
 # Create a destination DICOM store for de-identified images
+
 gcloud healthcare dicom-stores create deidentified-dicom-store \
   --dataset=my-dataset \
   --location=us-central1

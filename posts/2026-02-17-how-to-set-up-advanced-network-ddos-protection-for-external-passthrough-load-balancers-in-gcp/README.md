@@ -47,6 +47,7 @@ Advanced Network DDoS Protection requires a Cloud Armor Enterprise subscription.
 
 ```bash
 # Enable Cloud Armor Enterprise for the project
+
 gcloud compute security-policies create enterprise-policy \
   --type=CLOUD_ARMOR_NETWORK \
   --project=your-project-id

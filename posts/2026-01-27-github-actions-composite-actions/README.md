@@ -26,6 +26,7 @@ Every composite action needs an `action.yml` file at the root of the action dire
 
 ```yaml
 # action.yml - Define a composite action for Node.js setup
+
 name: 'Setup Node Project'
 description: 'Install Node.js and project dependencies with caching'
 

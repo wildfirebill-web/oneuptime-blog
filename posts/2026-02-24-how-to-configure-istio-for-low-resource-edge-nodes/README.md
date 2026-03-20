@@ -200,6 +200,7 @@ After applying these changes, monitor what is actually being consumed:
 
 ```bash
 # Check control plane usage
+
 kubectl top pods -n istio-system
 
 # Check sidecar usage in your workload namespace

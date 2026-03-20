@@ -25,6 +25,7 @@ Install the Palo Alto collection from Ansible Galaxy.
 
 ```bash
 # Install the official Palo Alto Networks collection
+
 ansible-galaxy collection install paloaltonetworks.panos
 ```
 

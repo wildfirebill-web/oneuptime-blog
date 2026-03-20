@@ -16,6 +16,7 @@ The Horizontal Pod Autoscaler (HPA) automatically adjusts the number of pod repl
 
 ```bash
 # Install Metrics Server (if not already installed)
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # Verify Metrics Server is working

@@ -36,6 +36,7 @@ Each GCP service has a different service agent email format. Here is how to find
 
 ```bash
 # Get the Cloud Storage service agent
+
 gcloud storage service-agent --project=my-project-id
 ```
 

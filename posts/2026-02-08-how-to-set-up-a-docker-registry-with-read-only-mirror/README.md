@@ -53,6 +53,7 @@ Docker's official registry image supports pull-through cache mode out of the box
 
 ```yaml
 # docker-compose.yml - Registry pull-through mirror
+
 version: "3.8"
 
 services:

@@ -12,7 +12,7 @@ SRv6 (Segment Routing over IPv6) replaces MPLS labels with IPv6 addresses as seg
 
 ## SRv6 vs MPLS Comparison
 
-```
+```javascript
 SRv6 vs MPLS/SR-MPLS:
 ┌──────────────────┬─────────────────────┬──────────────────────────┐
 │ Feature          │ MPLS / SR-MPLS      │ SRv6                     │
@@ -29,7 +29,7 @@ SRv6 vs MPLS/SR-MPLS:
 
 ## SRv6 Segment ID (SID) Structure
 
-```
+```text
 SRv6 SID Format: <Locator>:<Function>:<Arguments>
 
 Example: 2001:db8:router1:40::/64
@@ -53,7 +53,7 @@ SID Examples:
 
 ## Cisco IOS XE SRv6 Configuration
 
-```
+```text
 ! Enable SRv6 globally
 segment-routing srv6
 
@@ -91,6 +91,7 @@ show segment-routing srv6 forwarding
 # Linux kernel supports SRv6 natively (4.10+)
 
 # Enable IPv6 forwarding
+
 sysctl -w net.ipv6.conf.all.forwarding=1
 
 # Configure SRv6 End behavior (basic endpoint)
@@ -119,7 +120,7 @@ ping6 -I eth0 2001:db8:destination::1
 
 ## Migration Strategy: MPLS to SRv6
 
-```
+```text
 Phase 1: Deploy SRv6 in Parallel (Coexistence)
   - Enable IS-IS/OSPFv3 with SRv6 extensions on new routers
   - Run MPLS LDP and SRv6 simultaneously

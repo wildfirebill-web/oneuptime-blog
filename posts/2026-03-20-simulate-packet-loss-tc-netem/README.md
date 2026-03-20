@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, tc, netem, Traffic Control, Packet Loss, Network Testing
+Tags: Linux, tc, Netem, Traffic Control, Packet Loss, Network Testing
 
 Description: Simulate packet loss on Linux using tc netem to test application resilience, TCP performance, and network protocol behavior under lossy conditions.
 
@@ -14,6 +14,7 @@ Description: Simulate packet loss on Linux using tc netem to test application re
 
 ```bash
 # Drop 10% of all outgoing packets on eth0
+
 tc qdisc add dev eth0 root netem loss 10%
 
 # Verify the rule is active
@@ -34,7 +35,7 @@ ping -c 20 8.8.8.8
 # 5% loss with 25% correlation (burst loss more likely)
 tc qdisc add dev eth0 root netem loss 5% 25%
 
-# Random Bernoulli loss (default — no correlation)
+# Random Bernoulli loss (default - no correlation)
 tc qdisc add dev eth0 root netem loss random 5%
 ```
 
@@ -44,7 +45,7 @@ tc qdisc add dev eth0 root netem loss random 5%
 # State-based loss using 4-state Markov model
 tc qdisc add dev eth0 root netem loss state 5%
 
-# Gemodel (Gilbert-Elliott model — burst losses)
+# Gemodel (Gilbert-Elliott model - burst losses)
 tc qdisc add dev eth0 root netem loss gemodel 5% 10%
 ```
 

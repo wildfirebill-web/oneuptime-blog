@@ -30,6 +30,7 @@ Build a Python application that uses SQLite.
 
 ```dockerfile
 # Dockerfile
+
 FROM python:3.12-slim
 
 # SQLite is already included in Python's standard library

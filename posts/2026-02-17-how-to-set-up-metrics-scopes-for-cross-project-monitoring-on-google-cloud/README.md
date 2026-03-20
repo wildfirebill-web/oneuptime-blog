@@ -36,6 +36,7 @@ While you can use any project as your scoping project, best practice is to creat
 
 ```bash
 # Create a dedicated monitoring project
+
 gcloud projects create ops-monitoring \
   --name="Operations Monitoring" \
   --organization=YOUR_ORG_ID

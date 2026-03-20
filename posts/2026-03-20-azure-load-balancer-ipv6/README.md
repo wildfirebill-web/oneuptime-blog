@@ -19,6 +19,7 @@ LOCATION="eastus"
 az group create --name "$RG" --location "$LOCATION"
 
 # Create IPv6 public IP
+
 az network public-ip create \
     --resource-group "$RG" \
     --name pip-ipv6-frontend \
@@ -181,4 +182,4 @@ az network nic ip-config create \
 
 ## Conclusion
 
-Azure Standard Load Balancer supports dual-stack IPv6 through multiple frontend IP configurations. Create separate frontend configurations and load balancing rules for IPv4 and IPv6 traffic, sharing the same backend pool. Backend VMs need dual-stack NIC configurations with both IPv4 and IPv6 private IP addresses. The Standard SKU is required for IPv6 support — Basic Load Balancer does not support IPv6. After configuration, verify with `curl -6 http://[IPv6-public-ip]/` from an external IPv6 client.
+Azure Standard Load Balancer supports dual-stack IPv6 through multiple frontend IP configurations. Create separate frontend configurations and load balancing rules for IPv4 and IPv6 traffic, sharing the same backend pool. Backend VMs need dual-stack NIC configurations with both IPv4 and IPv6 private IP addresses. The Standard SKU is required for IPv6 support - Basic Load Balancer does not support IPv6. After configuration, verify with `curl -6 http://[IPv6-public-ip]/` from an external IPv6 client.

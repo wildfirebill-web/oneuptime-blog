@@ -128,6 +128,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 # Track readiness state
+
 _ready = False
 
 def create_app():

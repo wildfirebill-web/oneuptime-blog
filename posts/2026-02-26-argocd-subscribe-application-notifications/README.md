@@ -26,6 +26,7 @@ Before configuring subscriptions, ensure ArgoCD Notifications is installed and y
 
 ```yaml
 # argocd-notifications-cm ConfigMap - service configuration
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

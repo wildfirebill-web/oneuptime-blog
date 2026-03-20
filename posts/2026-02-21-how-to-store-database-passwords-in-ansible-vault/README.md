@@ -16,6 +16,7 @@ The recommended approach is to store encrypted passwords in vault files and refe
 
 ```yaml
 # group_vars/production/vault.yml (encrypted with ansible-vault)
+
 ---
 vault_postgres_admin_password: "StrongP0stgresAdm!n"
 vault_postgres_app_password: "AppUs3rP@ss2024"

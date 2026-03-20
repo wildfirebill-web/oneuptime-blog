@@ -24,6 +24,7 @@ Kubernetes automatically adds OS labels to nodes, but verify they're correct:
 
 ```bash
 # Check existing labels
+
 kubectl get nodes --show-labels
 
 # Verify OS label on Windows nodes

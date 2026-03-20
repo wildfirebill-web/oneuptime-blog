@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: longhorn, rook-ceph, kubernetes, storage, comparison
+Tags: Longhorn, Rook-Ceph, Kubernetes, Storage, Comparison
 
 Description: A comprehensive comparison of Longhorn and Rook-Ceph for cloud-native persistent storage in Kubernetes, covering performance, features, and operational complexity.
 
@@ -45,6 +45,7 @@ Rook is a CNCF-graduated storage orchestrator for Kubernetes that automates the 
 
 ```bash
 # Install Longhorn via Helm
+
 helm repo add longhorn https://charts.longhorn.io
 helm repo update
 

@@ -18,6 +18,7 @@ Provider credentials specified directly or through variables end up in state:
 
 ```hcl
 # BAD: API token could end up in state or plan output
+
 provider "github" {
   token = var.github_token   # stored in state as part of provider config hash
 }
@@ -82,7 +83,7 @@ provider "postgresql" {
   database = "app"
   username = ephemeral.vault_database_secret.pg_creds.username
   password = ephemeral.vault_database_secret.pg_creds.password
-  # Credentials are ephemeral — not stored in state
+  # Credentials are ephemeral - not stored in state
 }
 ```
 
@@ -138,7 +139,7 @@ provider "datadog" {
 
 ## Ephemeral Values in provider_meta
 
-Some providers accept configuration in a `provider_meta` block — these can also use ephemeral values:
+Some providers accept configuration in a `provider_meta` block - these can also use ephemeral values:
 
 ```hcl
 ephemeral "aws_ssm_parameter" "license_key" {
@@ -175,4 +176,4 @@ State files are often stored in S3 or remote backends with broad access. Any val
 
 ## Summary
 
-Use ephemeral resources to supply provider credentials dynamically — API tokens, database passwords, temporary AWS credentials, and TLS certificates. The provider uses the value during the operation, but it is never written to the state file. This is the recommended approach for any sensitive provider configuration value in OpenTofu 1.10+.
+Use ephemeral resources to supply provider credentials dynamically - API tokens, database passwords, temporary AWS credentials, and TLS certificates. The provider uses the value during the operation, but it is never written to the state file. This is the recommended approach for any sensitive provider configuration value in OpenTofu 1.10+.

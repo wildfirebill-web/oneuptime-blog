@@ -27,6 +27,7 @@ The most reliable way to determine your boot loader is to look at what is on the
 
 ```bash
 # List the contents of the EFI directory
+
 talosctl ls /boot/EFI/ --nodes <NODE_IP>
 
 # For systemd-boot, you will see:

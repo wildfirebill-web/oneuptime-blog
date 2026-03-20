@@ -24,6 +24,7 @@ Start by defining what your CoE is responsible for and what it is not:
 
 ```yaml
 # coe/charter.yaml
+
 # Terraform Center of Excellence Charter
 
 mission: >

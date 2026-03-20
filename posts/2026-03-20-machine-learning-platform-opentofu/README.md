@@ -172,4 +172,4 @@ resource "aws_sagemaker_pipeline" "training" {
 
 ## Summary
 
-A machine learning platform on AWS uses SageMaker Domain as the central workspace, separate S3 buckets for training data, artifacts, and model storage, SageMaker Feature Store for feature engineering, Model Package Groups for the model registry, and SageMaker Pipelines for automated training workflows. Enforce networking through private VPC configuration and security groups — SageMaker Studio kernels should not have direct internet access in production environments.
+A machine learning platform on AWS uses SageMaker Domain as the central workspace, separate S3 buckets for training data, artifacts, and model storage, SageMaker Feature Store for feature engineering, Model Package Groups for the model registry, and SageMaker Pipelines for automated training workflows. Enforce networking through private VPC configuration and security groups - SageMaker Studio kernels should not have direct internet access in production environments.

@@ -84,6 +84,7 @@ Description: Learn how to configure HashiCorp Consul agents and clusters to use 
 
 ```bash
 # Start Consul server
+
 consul agent -config-dir=/etc/consul.d/
 
 # Or as systemd service

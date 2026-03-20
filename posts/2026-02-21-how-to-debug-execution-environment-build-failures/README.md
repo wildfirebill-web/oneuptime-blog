@@ -16,6 +16,7 @@ The single most helpful thing you can do is increase verbosity. The default outp
 
 ```bash
 # Build with maximum verbosity
+
 ansible-builder build --tag debug-ee:latest --verbosity 3 2>&1 | tee build.log
 ```
 

@@ -71,6 +71,7 @@ Use the Rancher API for programmatic role assignment:
 
 ```bash
 # Get the project ID
+
 curl -s 'https://<rancher-url>/v3/projects' \
   -H 'Authorization: Bearer <api-token>' | jq '.data[] | {id, name}'
 

@@ -16,7 +16,7 @@ The `cidrnetmask` function in OpenTofu converts a CIDR notation prefix to its eq
 cidrnetmask(prefix)
 ```
 
-- **prefix** — a CIDR notation block (e.g., `"10.0.0.0/24"`)
+- **prefix** - a CIDR notation block (e.g., `"10.0.0.0/24"`)
 - Returns the subnet mask as a dotted decimal string (e.g., `"255.255.255.0"`)
 
 ## Basic Examples

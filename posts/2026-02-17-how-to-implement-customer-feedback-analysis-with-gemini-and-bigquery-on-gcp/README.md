@@ -29,6 +29,7 @@ You need a GCP project with these APIs enabled:
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable bigquery.googleapis.com \
     aiplatform.googleapis.com \
     bigqueryconnection.googleapis.com \

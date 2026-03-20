@@ -74,7 +74,7 @@ All page edits will be committed to your Git repository automatically.
 
 Wiki.js has granular permissions per page, group, and namespace. Create groups under **Administration > Groups** and assign permissions by path pattern:
 
-```
+```text
 /public/*     → Read for guests
 /internal/*   → Read/Write for Staff group only
 /admin/*      → Manage for Administrators only

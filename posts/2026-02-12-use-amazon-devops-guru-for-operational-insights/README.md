@@ -38,6 +38,7 @@ Setting it up is surprisingly simple. You can cover your entire account or speci
 
 ```python
 # Enable DevOps Guru with coverage for tagged resources
+
 import boto3
 
 devops_guru = boto3.client('devops-guru', region_name='us-east-1')

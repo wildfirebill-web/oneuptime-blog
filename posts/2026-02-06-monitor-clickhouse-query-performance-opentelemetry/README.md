@@ -69,6 +69,7 @@ After updating the configuration, restart ClickHouse and verify the endpoint is 
 
 ```bash
 # Verify the Prometheus endpoint is serving metrics
+
 # You should see a list of metric names and values in Prometheus format
 curl http://localhost:9363/metrics | head -20
 ```

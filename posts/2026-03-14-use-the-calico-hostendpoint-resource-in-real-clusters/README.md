@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward HostEndpoint configurat
 
 ```bash
 # Verify current HostEndpoint resources
+
 calicoctl get hostendpoint -o yaml
 
 # Check the effective configuration on a specific node

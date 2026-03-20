@@ -18,6 +18,7 @@ The following config sets up the hostmetrics receiver to scrape system metrics e
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   hostmetrics:
     collection_interval: 30s

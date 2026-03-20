@@ -27,6 +27,7 @@ Here is a Rego policy file that checks whether all exporters in an OTel Collecto
 
 ```rego
 # policy/otel_compliance.rego
+
 # This policy ensures every OTLP exporter has TLS configured
 
 package otel.compliance

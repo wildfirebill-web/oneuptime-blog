@@ -28,6 +28,7 @@ Create a Kubernetes secret with your Datadog API and application keys:
 
 ```bash
 # Create the secret in the namespace where your canary resources live
+
 kubectl create secret generic datadog-credentials \
   --namespace=demo \
   --from-literal=datadog_api_key=YOUR_API_KEY \

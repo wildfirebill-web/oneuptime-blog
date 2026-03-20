@@ -54,6 +54,7 @@ from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 from fastapi import FastAPI
 
 # Initialize the tracer provider
+
 provider = TracerProvider()
 processor = BatchSpanProcessor(OTLPSpanExporter(
     endpoint="http://localhost:4317",

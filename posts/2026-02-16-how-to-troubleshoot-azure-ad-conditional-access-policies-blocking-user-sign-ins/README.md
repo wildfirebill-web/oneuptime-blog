@@ -35,6 +35,7 @@ Navigate to Azure AD > Sign-in logs in the portal, or use the CLI:
 
 ```bash
 # Get recent failed sign-ins for a specific user
+
 az rest --method GET \
   --url "https://graph.microsoft.com/v1.0/auditLogs/signIns?\$filter=userPrincipalName eq 'user@company.com' and status/errorCode ne 0&\$top=10" \
   --headers "Content-Type=application/json"

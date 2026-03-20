@@ -46,6 +46,7 @@ First, configure your Django settings for file uploads:
 import os
 
 # Base directory for media files
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 

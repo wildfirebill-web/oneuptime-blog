@@ -16,6 +16,7 @@ Consider a typical e-commerce order API:
 
 ```python
 # The synchronous monolithic approach - everything in one request handler
+
 @app.route("/api/orders", methods=["POST"])
 def create_order(request):
     order_data = request.json

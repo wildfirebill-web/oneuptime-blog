@@ -32,6 +32,7 @@ When "Instant" is checked, Grafana sends a request to the `/api/v1/query` endpoi
 
 ```bash
 # Instant query - single point in time
+
 curl "http://prometheus:9090/api/v1/query?query=up&time=1704067200"
 
 # Response: Single value per series

@@ -37,6 +37,7 @@ from typing import Optional, Dict, List
 from urllib.parse import urlparse
 
 # Connect to Redis
+
 r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
 # Configuration

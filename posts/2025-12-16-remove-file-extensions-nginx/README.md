@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, SEO, Clean URLs, Web Server, Configuration
+Tags: Nginx, SEO, Clean URLs, Web Server, Configuration
 
 Description: Learn how to configure Nginx to serve clean URLs without file extensions, including try_files configurations, redirects for SEO, and handling both .php and .html files.
 
@@ -208,6 +208,7 @@ Preserve query strings during redirects:
 
 ```nginx
 # With query string preservation
+
 location ~ ^(.+)\.html$ {
     return 301 $scheme://$host$1$is_args$args;
 }

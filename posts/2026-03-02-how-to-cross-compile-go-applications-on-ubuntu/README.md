@@ -19,6 +19,7 @@ Go compiles everything to machine code for the target platform, including the st
 
 ```bash
 # See all valid GOOS/GOARCH combinations
+
 go tool dist list
 
 # Partial output:

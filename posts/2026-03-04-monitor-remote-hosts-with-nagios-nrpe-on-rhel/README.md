@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Nagios, NRPE, Remote Monitoring, Agents, Plugins
+Tags: RHEL, Nagios, NRPE, Remote Monitoring, Agent, Plugins
 
 Description: Install and configure Nagios NRPE on RHEL to execute monitoring plugins on remote hosts, enabling Nagios to check local resources like CPU, disk, and memory from a central server.
 
@@ -14,6 +14,7 @@ NRPE (Nagios Remote Plugin Executor) is an agent that runs on remote RHEL hosts 
 
 ```bash
 # Enable EPEL repository
+
 sudo dnf install -y epel-release
 
 # Install NRPE and Nagios plugins

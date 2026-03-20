@@ -22,6 +22,7 @@ You can use Terraform to provision the infrastructure that receives webhooks, su
 
 ```hcl
 # Create an API Gateway to receive webhooks
+
 resource "aws_apigatewayv2_api" "webhook_receiver" {
   name          = "terraform-webhook-receiver"
   protocol_type = "HTTP"

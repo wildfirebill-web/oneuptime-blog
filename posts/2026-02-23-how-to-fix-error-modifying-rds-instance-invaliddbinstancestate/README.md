@@ -75,6 +75,7 @@ If you previously applied a modification that requires a reboot or is still bein
 
 ```bash
 # Check for pending modifications
+
 aws rds describe-db-instances \
   --db-instance-identifier my-database \
   --query "DBInstances[0].PendingModifiedValues"

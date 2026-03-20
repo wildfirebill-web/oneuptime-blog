@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terragrunt, generate, Configuration Generation, DRY
+Tags: OpenTofu, Terragrunt, Generate, Configuration Generation, DRY
 
 Description: Learn how to use Terragrunt generate blocks to automatically create provider, backend, and version configuration files for OpenTofu modules without repeating them in every directory.
 
 ## Introduction
 
-Terragrunt `generate` blocks create files in the module directory before OpenTofu runs. This eliminates the need to copy provider, backend, and required_providers configuration into every module directory — one root `terragrunt.hcl` generates these files for all child modules.
+Terragrunt `generate` blocks create files in the module directory before OpenTofu runs. This eliminates the need to copy provider, backend, and required_providers configuration into every module directory - one root `terragrunt.hcl` generates these files for all child modules.
 
 ## Generating provider.tf
 
@@ -72,6 +72,7 @@ Generate different providers based on environment:
 
 ```hcl
 # In root terragrunt.hcl
+
 locals {
   env_vars    = read_terragrunt_config(find_in_parent_folders("env.hcl"))
   environment = local.env_vars.locals.environment

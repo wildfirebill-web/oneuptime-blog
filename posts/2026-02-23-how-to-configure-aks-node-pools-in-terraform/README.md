@@ -27,6 +27,7 @@ Start with a basic AKS cluster that has a minimal system node pool.
 
 ```hcl
 # main.tf
+
 # Resource group for all AKS resources
 
 resource "azurerm_resource_group" "aks" {

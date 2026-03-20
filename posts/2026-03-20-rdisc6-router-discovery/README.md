@@ -1,8 +1,8 @@
-# How to Use rdisc6 for Router Discovery Diagnostics
+# How to Use rdisc6 for Router Discovery Diagnostics - Router Discovery
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, rdisc6, Router Discovery, NDP, Router Advertisement, Network Diagnostics
+Tags: IPv6, Rdisc6, Router Discovery, NDP, Router Advertisement, Network Diagnostics
 
 Description: Use rdisc6 to send Router Solicitation messages and analyze Router Advertisement responses for IPv6 default gateway and prefix configuration diagnostics.
 
@@ -14,6 +14,7 @@ Description: Use rdisc6 to send Router Solicitation messages and analyze Router 
 
 ```bash
 # Ubuntu/Debian (part of ndisc6 package)
+
 sudo apt install -y ndisc6
 
 # RHEL/CentOS
@@ -41,7 +42,7 @@ rdisc6 -v eth0
 
 ## Understanding Router Advertisement Output
 
-```
+```text
 Soliciting ff02::2 (All-routers on eth0)...
 
 Hop limit                 :   64 (      0x40)
@@ -64,11 +65,11 @@ Retransmit time           :    0 (0x00000000) milliseconds
 
 Key fields:
 - **Hop limit**: Default TTL/hop limit for this router's network
-- **Stateful address conf.**: `M` flag — if Yes, use DHCPv6 for addresses
-- **Other stateful conf.**: `O` flag — if Yes, use DHCPv6 for other config (DNS, NTP)
+- **Stateful address conf.**: `M` flag - if Yes, use DHCPv6 for addresses
+- **Other stateful conf.**: `O` flag - if Yes, use DHCPv6 for other config (DNS, NTP)
 - **Router lifetime**: How long this router is valid as default gateway (0=not a router)
 - **Prefix**: IPv6 prefix for SLAAC address generation
-- **Autonomous address conf.**: `A` flag — if Yes, generate address via SLAAC
+- **Autonomous address conf.**: `A` flag - if Yes, generate address via SLAAC
 
 ## Diagnosing SLAAC Issues
 

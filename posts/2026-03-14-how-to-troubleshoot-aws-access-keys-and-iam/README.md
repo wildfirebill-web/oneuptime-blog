@@ -21,6 +21,7 @@ AWS access key and IAM role issues in Cilium prevent ENI management, causing pod
 
 ```bash
 # Check Cilium agent for auth errors
+
 kubectl logs -n kube-system -l k8s-app=cilium | \
   grep -iE "unauthorized|forbidden|accessdenied" | tail -10
 

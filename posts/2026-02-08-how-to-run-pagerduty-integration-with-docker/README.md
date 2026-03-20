@@ -18,6 +18,7 @@ You need a PagerDuty account (a free trial works) and at least one service confi
 
 ```bash
 # Store your PagerDuty integration key
+
 export PD_INTEGRATION_KEY="your-pagerduty-integration-key"
 
 docker --version

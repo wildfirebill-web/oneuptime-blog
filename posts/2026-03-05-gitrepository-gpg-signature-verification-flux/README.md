@@ -42,6 +42,7 @@ First, export the GPG public keys of all team members who are authorized to sign
 
 ```bash
 # List available GPG keys
+
 gpg --list-keys
 
 # Export a public key in ASCII armor format

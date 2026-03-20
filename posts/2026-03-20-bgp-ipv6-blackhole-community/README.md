@@ -17,7 +17,7 @@ BGP communities are attributes attached to route announcements that carry policy
 ## Standard Community Format
 
 Standard BGP communities (RFC 1997) are 32-bit values written as two 16-bit numbers:
-```
+```text
 ASN:value
 65000:100    # Well-known community
 65001:200    # Custom community
@@ -25,10 +25,11 @@ ASN:value
 
 ## BIRD2 Configuration Example
 
-```
+```javascript
 # /etc/bird/bird.conf
 
 # Define community functions
+
 function set_local_pref(int pref) {
     bgp_local_pref = pref;
 }
@@ -76,7 +77,7 @@ ip community-list standard MY-COMMUNITIES permit 65001:100
 
 ## Cisco IOS Community Configuration
 
-```
+```text
 ! Configure community for IPv6 BGP
 router bgp 64496
   neighbor 2001:db8:peer::1 remote-as 65001
@@ -114,4 +115,4 @@ Use [OneUptime](https://oneuptime.com) to monitor BGP session health for your IP
 
 ## Conclusion
 
-BGP communities work identically for IPv6 prefixes — you configure them in the same route maps and community lists. Always verify community propagation using BGP looking glasses and test policy changes in a lab environment before applying to production IPv6 BGP sessions.
+BGP communities work identically for IPv6 prefixes - you configure them in the same route maps and community lists. Always verify community propagation using BGP looking glasses and test policy changes in a lab environment before applying to production IPv6 BGP sessions.

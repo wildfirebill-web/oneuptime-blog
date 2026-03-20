@@ -18,6 +18,7 @@ When you run `docker build`, Docker sends everything in the build context (the d
 
 ```bash
 # See context size when building
+
 docker build . 2>&1 | head -1
 # Output: Sending build context to Docker daemon  847.3MB
 

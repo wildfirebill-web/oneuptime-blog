@@ -12,12 +12,12 @@ AWS Network ACLs (NACLs) are subnet-level stateless firewalls that apply rules t
 
 ## Understanding NACL Stateless Behavior
 
-```
+```text
 Stateless means: Each packet evaluated independently.
 For a web server:
   - Inbound rule: Allow TCP port 443 from ::/0 (client requests)
   - Outbound rule: Allow TCP ephemeral ports 1024-65535 to ::/0 (server responses)
-  - Both rules required — no automatic return traffic allowed
+  - Both rules required - no automatic return traffic allowed
 ```
 
 ## Add IPv6 Rules to NACL
@@ -26,6 +26,7 @@ For a web server:
 NACL_ID="acl-12345678"
 
 # Allow IPv6 HTTPS inbound (rule 100)
+
 aws ec2 create-network-acl-entry \
     --network-acl-id "$NACL_ID" \
     --rule-number 100 \
@@ -192,4 +193,4 @@ aws ec2 describe-network-acls \
 
 ## Conclusion
 
-AWS NACLs are stateless, requiring explicit rules for both inbound and outbound traffic including ephemeral return ports. For IPv6, all IPv4 rules must have corresponding IPv6 versions with `ipv6_cidr_block`. Always include ICMPv6 rules (protocol `58`) to allow NDP and Path MTU Discovery. Rule ordering matters — NACLs process rules from lowest to highest number and stop at the first match. Use paired rule numbers (100 for IPv4, 101 for IPv6) to keep corresponding rules adjacent and easy to audit.
+AWS NACLs are stateless, requiring explicit rules for both inbound and outbound traffic including ephemeral return ports. For IPv6, all IPv4 rules must have corresponding IPv6 versions with `ipv6_cidr_block`. Always include ICMPv6 rules (protocol `58`) to allow NDP and Path MTU Discovery. Rule ordering matters - NACLs process rules from lowest to highest number and stop at the first match. Use paired rule numbers (100 for IPv4, 101 for IPv6) to keep corresponding rules adjacent and easy to audit.

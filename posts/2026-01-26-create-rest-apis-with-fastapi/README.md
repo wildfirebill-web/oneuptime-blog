@@ -20,6 +20,7 @@ FastAPI has become the go-to choice for Python API development due to its speed,
 
 ```bash
 # Install FastAPI and an ASGI server
+
 pip install fastapi uvicorn[standard]
 
 # Additional useful packages

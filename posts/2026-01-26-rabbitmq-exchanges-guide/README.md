@@ -839,6 +839,7 @@ Use the RabbitMQ management API to monitor exchange health:
 
 ```bash
 # List all exchanges with their message rates
+
 curl -u guest:guest http://localhost:15672/api/exchanges
 
 # Get details for a specific exchange

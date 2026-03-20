@@ -14,14 +14,15 @@ Duplicate Address Detection (DAD) is the IPv6 process by which a host verifies t
 
 ```bash
 # Show interface addresses including DAD state
+
 ip -6 addr show dev eth0
 
 # Address states:
-# tentative  — DAD in progress, not yet usable
-# preferred  — DAD passed, address is valid
-# deprecated — address is being phased out
-# dadfailed  — DAD detected duplicate, address not assigned
-# temporary  — privacy extension address
+# tentative  - DAD in progress, not yet usable
+# preferred  - DAD passed, address is valid
+# deprecated - address is being phased out
+# dadfailed  - DAD detected duplicate, address not assigned
+# temporary  - privacy extension address
 
 # Show only tentative addresses (DAD in progress)
 ip -6 addr show dev eth0 tentative
@@ -92,7 +93,7 @@ sudo sysctl -w net.ipv6.conf.eth0.dad_transmits=0
 # Set number of DAD probes (default is 1)
 sudo sysctl -w net.ipv6.conf.eth0.dad_transmits=1
 
-# Optimistic DAD — use address before DAD completes
+# Optimistic DAD - use address before DAD completes
 sudo sysctl -w net.ipv6.conf.eth0.optimistic_dad=1
 ```
 
@@ -137,4 +138,4 @@ sudo sysctl -w net.ipv6.conf.eth0.addr_gen_mode=3
 
 ## Conclusion
 
-DAD failures occur when two devices attempt to use the same IPv6 address on the same link. Diagnose with `ip -6 addr show dadfailed` and `tcpdump` capturing Neighbor Solicitation packets with source `::`. The conflicting device responds to the DAD probe — capture that response to find its MAC address and identify it. Ensure firewalls allow ICMPv6 Neighbor Solicitation/Advertisement packets, as blocking them prevents DAD from completing and leaves addresses stuck in `tentative` state.
+DAD failures occur when two devices attempt to use the same IPv6 address on the same link. Diagnose with `ip -6 addr show dadfailed` and `tcpdump` capturing Neighbor Solicitation packets with source `::`. The conflicting device responds to the DAD probe - capture that response to find its MAC address and identify it. Ensure firewalls allow ICMPv6 Neighbor Solicitation/Advertisement packets, as blocking them prevents DAD from completing and leaves addresses stuck in `tentative` state.

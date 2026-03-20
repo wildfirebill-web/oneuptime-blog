@@ -20,6 +20,7 @@ Description: Debug common gRPC connection issues over IPv6 including address for
 
 ```bash
 # Check basic IPv6 connectivity first
+
 ping6 -c 4 2001:db8::1
 
 # Verify gRPC port is open over IPv6
@@ -54,13 +55,13 @@ node server.js
 IPv6 addresses in gRPC target strings must be wrapped in brackets:
 
 ```go
-// Wrong — will fail with "invalid address" or resolve as hostname
+// Wrong - will fail with "invalid address" or resolve as hostname
 conn, err := grpc.NewClient("2001:db8::1:50051", ...)  // WRONG
 
-// Correct — IPv6 with brackets
+// Correct - IPv6 with brackets
 conn, err := grpc.NewClient("[2001:db8::1]:50051", ...)  // CORRECT
 
-// Also correct — DNS resolution (returns AAAA records)
+// Also correct - DNS resolution (returns AAAA records)
 conn, err := grpc.NewClient("dns:///grpc.example.com:50051", ...)
 ```
 
@@ -120,7 +121,7 @@ openssl x509 -in server.crt -noout -ext subjectAltName
 # Capture gRPC traffic over IPv6
 sudo tcpdump -i eth0 -w grpc-ipv6.pcap "ip6 and tcp port 50051"
 
-# Open in Wireshark — filter for gRPC
+# Open in Wireshark - filter for gRPC
 # Display filter: grpc or http2
 
 # Or analyze directly

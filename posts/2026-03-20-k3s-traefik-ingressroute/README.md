@@ -20,6 +20,7 @@ K3s ships with Traefik as its default ingress controller, which supports not onl
 
 ```bash
 # Check Traefik pods and services
+
 kubectl get pods -n kube-system | grep traefik
 kubectl get svc -n kube-system | grep traefik
 

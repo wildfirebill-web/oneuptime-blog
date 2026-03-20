@@ -8,7 +8,7 @@ Description: Step-by-step guide to creating Elemental seed images (ISOs and raw 
 
 ## Introduction
 
-Elemental seed images are bootable media (ISOs, USB images, or PXE configurations) that contain everything needed for a machine to register itself with Rancher and install the Elemental OS. They embed the registration URL, CA certificates, and initial cloud-config so that the provisioning process is fully automated — no manual intervention required after booting.
+Elemental seed images are bootable media (ISOs, USB images, or PXE configurations) that contain everything needed for a machine to register itself with Rancher and install the Elemental OS. They embed the registration URL, CA certificates, and initial cloud-config so that the provisioning process is fully automated - no manual intervention required after booting.
 
 ## Prerequisites
 
@@ -29,6 +29,7 @@ Elemental seed images are bootable media (ISOs, USB images, or PXE configuration
 
 ```bash
 # Export registration URL
+
 REG_URL=$(kubectl get machineregistration my-nodes \
   -n fleet-default \
   -o jsonpath='{.status.registrationURL}')

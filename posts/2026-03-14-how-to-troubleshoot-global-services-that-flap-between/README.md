@@ -27,6 +27,7 @@ This guide provides a systematic approach to diagnosing and resolving global ser
 
 ```bash
 # Check ClusterMesh status
+
 cilium clustermesh status
 
 # Watch for service endpoint changes

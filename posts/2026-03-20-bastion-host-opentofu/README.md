@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Bastion Host, AWS, Security, SSH, Infrastructure as Code
 
-Description: Learn how to deploy a secure bastion host with OpenTofu — configuring a hardened EC2 instance, restrictive security groups, Session Manager as a bastion alternative, and audit logging for all connections.
+Description: Learn how to deploy a secure bastion host with OpenTofu - configuring a hardened EC2 instance, restrictive security groups, Session Manager as a bastion alternative, and audit logging for all...
 
 ## Introduction
 
@@ -13,10 +13,11 @@ A bastion host (jump server) provides controlled SSH access to private EC2 insta
 ## Bastion Security Group
 
 ```hcl
-# Security group for bastion — allow SSH only from corporate IP ranges
+# Security group for bastion - allow SSH only from corporate IP ranges
+
 resource "aws_security_group" "bastion" {
   name        = "${var.environment}-bastion-sg"
-  description = "Security group for bastion host — SSH access only"
+  description = "Security group for bastion host - SSH access only"
   vpc_id      = aws_vpc.main.id
 
   ingress {
@@ -137,7 +138,7 @@ resource "aws_iam_role" "bastion" {
   })
 }
 
-# Session Manager — replaces SSH bastion entirely
+# Session Manager - replaces SSH bastion entirely
 resource "aws_iam_role_policy_attachment" "ssm_core" {
   role       = aws_iam_role.bastion.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
@@ -192,7 +193,7 @@ resource "aws_vpc_endpoint" "ec2_messages" {
 ```hcl
 output "bastion_public_ip" {
   value       = aws_eip.bastion.public_ip
-  description = "Bastion host public IP — add to SSH config as ProxyJump"
+  description = "Bastion host public IP - add to SSH config as ProxyJump"
 }
 
 output "bastion_ssh_command" {
@@ -203,4 +204,4 @@ output "bastion_ssh_command" {
 
 ## Conclusion
 
-Bastion hosts with OpenTofu restrict private instance SSH access to a single hardened entry point. For higher security, replace the SSH bastion with AWS Systems Manager Session Manager — no inbound ports required, all sessions logged to CloudTrail, no key management. Use VPC endpoints for Session Manager to keep all traffic within the VPC. The `ProxyJump` SSH pattern (`ssh -J bastion private-instance`) avoids copying private keys to the bastion host.
+Bastion hosts with OpenTofu restrict private instance SSH access to a single hardened entry point. For higher security, replace the SSH bastion with AWS Systems Manager Session Manager - no inbound ports required, all sessions logged to CloudTrail, no key management. Use VPC endpoints for Session Manager to keep all traffic within the VPC. The `ProxyJump` SSH pattern (`ssh -J bastion private-instance`) avoids copying private keys to the bastion host.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, upgrade, docker-standalone, update
+Tags: Portainer, Upgrade, Docker-standalone, Updates
 
 Description: A step-by-step guide to upgrading Portainer CE on a Docker standalone host, ensuring zero data loss and minimal downtime.
 
@@ -22,6 +22,7 @@ Always back up before upgrading:
 
 ```bash
 # Backup Portainer data volume
+
 docker run --rm \
   -v portainer_data:/data \
   -v $(pwd):/backup \

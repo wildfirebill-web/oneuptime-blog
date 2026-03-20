@@ -20,6 +20,7 @@ SAP HANA System Replication (HSR) continuously replicates data from a primary HA
 
 ```bash
 # Switch to the HANA admin user
+
 su - hdbadm
 
 # Check current replication status

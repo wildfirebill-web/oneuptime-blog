@@ -171,6 +171,7 @@ DB_NAME="mydb"
 DB_USER="postgres"
 
 # Refresh materialized views
+
 psql -h "$DB_HOST" -U "$DB_USER" -d "$DB_NAME" <<EOF
 -- Refresh with timing
 \timing on

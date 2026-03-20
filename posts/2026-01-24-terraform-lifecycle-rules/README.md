@@ -33,6 +33,7 @@ When Terraform needs to replace a resource, it normally destroys the old one fir
 
 ```hcl
 # Without create_before_destroy:
+
 # 1. Destroy old instance
 # 2. Create new instance (downtime during this gap)
 

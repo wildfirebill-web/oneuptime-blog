@@ -27,6 +27,7 @@ You can view the manifest for any image using the `docker manifest inspect` comm
 
 ```bash
 # Inspect the manifest of the official nginx image
+
 docker manifest inspect nginx:latest
 ```
 

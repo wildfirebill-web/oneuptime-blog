@@ -20,6 +20,7 @@ To monitor consumer lag, you need to compare the sequence number of the last enq
 
 ```bash
 # Check the last enqueued sequence number for each partition
+
 # This tells you how far ahead the event stream is
 az eventhubs eventhub show \
   --resource-group myResourceGroup \

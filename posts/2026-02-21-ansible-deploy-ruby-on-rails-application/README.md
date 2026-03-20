@@ -50,6 +50,7 @@ rails-deploy/
 
 ```yaml
 # group_vars/all/vars.yml
+
 app_name: myrailsapp
 app_user: rails
 app_group: rails

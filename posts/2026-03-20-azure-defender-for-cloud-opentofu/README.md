@@ -14,6 +14,7 @@ Microsoft Defender for Cloud provides unified security management and threat pro
 
 ```hcl
 # main.tf - Enable Microsoft Defender for specific resource types
+
 # Defender for Servers
 resource "azurerm_security_center_subscription_pricing" "defender_servers" {
   tier          = "Standard"  # "Free" or "Standard" (Defender enabled)

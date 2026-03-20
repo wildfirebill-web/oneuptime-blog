@@ -22,6 +22,7 @@ Before deploying Velero with CSI snapshots, ensure your cluster has the CSI snap
 
 ```bash
 # Check if VolumeSnapshot CRDs exist
+
 kubectl get crd volumesnapshots.snapshot.storage.k8s.io
 kubectl get crd volumesnapshotcontents.snapshot.storage.k8s.io
 kubectl get crd volumesnapshotclasses.snapshot.storage.k8s.io

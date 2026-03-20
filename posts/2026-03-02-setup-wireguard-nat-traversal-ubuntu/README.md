@@ -22,6 +22,7 @@ For two peers both behind NAT, at least one of them typically needs a publicly r
 
 ```bash
 # Install WireGuard tools
+
 sudo apt update
 sudo apt install wireguard wireguard-tools
 

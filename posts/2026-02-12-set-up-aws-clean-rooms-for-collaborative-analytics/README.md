@@ -33,6 +33,7 @@ One party creates the collaboration and invites the other. Let's say you're the 
 
 ```bash
 # Create a collaboration
+
 aws cleanrooms create-collaboration \
   --name "retail-ad-campaign-analysis" \
   --description "Joint analysis of ad campaigns and purchase data" \

@@ -141,6 +141,7 @@ EOF
 
 ```bash
 # Should succeed
+
 kubectl exec -n aks-policy-test frontend -- \
   wget -qO- http://backend-svc
 

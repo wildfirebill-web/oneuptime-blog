@@ -30,6 +30,7 @@ Check the pod status:
 
 ```bash
 # Check if ArgoCD server is running
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server
 
 # Check pod logs for errors

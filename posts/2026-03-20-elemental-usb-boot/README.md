@@ -21,6 +21,7 @@ USB boot is the simplest provisioning method for Elemental, requiring no special
 
 ```bash
 # Get registration URL
+
 REG_URL=$(kubectl get machineregistration my-nodes \
   -n fleet-default \
   -o jsonpath='{.status.registrationURL}')

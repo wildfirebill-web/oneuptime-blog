@@ -18,6 +18,7 @@ You need at least two RHEL 9 servers with the High Availability add-on subscript
 
 ```bash
 # On both nodes, enable the HA repository
+
 sudo subscription-manager repos --enable=rhel-9-for-x86_64-highavailability-rpms
 
 # Install Pacemaker, Corosync, and PCS

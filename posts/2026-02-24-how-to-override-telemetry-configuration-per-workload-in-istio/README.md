@@ -252,6 +252,7 @@ Check the proxy configuration on a specific pod:
 
 ```bash
 # Get the pod name
+
 kubectl get pods -n production -l app=frontend
 
 # Check the proxy's tracing configuration

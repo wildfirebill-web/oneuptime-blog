@@ -28,6 +28,7 @@ The Jaeger Operator's webhook requires cert-manager for TLS certificate generati
 
 ```yaml
 # clusters/my-cluster/cert-manager/helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

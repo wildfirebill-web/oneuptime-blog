@@ -1,4 +1,4 @@
-# How to Build IPv6 Monitoring Tools in Python
+# How to Build IPv6 Monitoring Tools in Python - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -57,6 +57,7 @@ class IPv6Monitor:
             await asyncio.sleep(self.interval)
 
 # Run monitor
+
 targets = ["2001:4860:4860::8888", "2606:4700:4700::1111", "2001:db8::1"]
 monitor = IPv6Monitor(targets, interval=30)
 asyncio.run(monitor.run_forever())

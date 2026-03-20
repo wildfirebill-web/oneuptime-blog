@@ -20,6 +20,7 @@ You need a Kubernetes cluster and a GitHub Personal Access Token (PAT) or GitHub
 
 ```bash
 # Create a GitHub PAT with repo scope
+
 # Go to GitHub Settings > Developer settings > Personal access tokens
 # Or use GitHub CLI
 gh auth token

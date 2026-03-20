@@ -1,4 +1,4 @@
-# How to Optimize Portainer for Large-Scale Deployments
+# How to Optimize Portainer for Large-Scale Deployments - Optimization
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -74,6 +74,7 @@ The Portainer database grows over time with snapshot data. Compact it to reclaim
 
 ```bash
 # Stop Portainer before compacting
+
 docker stop portainer
 
 # Run compaction
@@ -98,7 +99,7 @@ docker run --rm -v portainer_data:/data alpine du -sh /data/portainer.db
 If many users or external systems are calling the Portainer API frequently, reduce unnecessary polling:
 
 ```bash
-# Use API tokens with appropriate scopes — avoid admin tokens for read-only scripts
+# Use API tokens with appropriate scopes - avoid admin tokens for read-only scripts
 # Implement caching in external scripts that poll Portainer
 
 # Rate-limit Portainer API via Nginx

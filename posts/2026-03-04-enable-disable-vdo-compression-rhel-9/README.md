@@ -180,6 +180,7 @@ sudo vdostats --human-readable
 ```bash
 sudo lvchange --compression n vg_vdo/lv_vdo
 # Write data, then check
+
 sudo vdostats --human-readable
 ```
 

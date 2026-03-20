@@ -16,6 +16,7 @@ Extensions are tied to specific GNOME Shell versions. Installing an extension bu
 
 ```bash
 # Check GNOME Shell version
+
 gnome-shell --version
 # Example output: GNOME Shell 44.3
 

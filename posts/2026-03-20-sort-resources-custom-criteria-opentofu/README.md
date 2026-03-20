@@ -8,7 +8,7 @@ Description: Learn how to sort lists and maps of resources by custom criteria in
 
 ## Introduction
 
-OpenTofu does not provision resources in a user-defined order by default — dependencies control that. However, for data processing, output generation, and selecting the "best" resource from a list (e.g., the latest AMI, the cheapest instance type), sorting is essential.
+OpenTofu does not provision resources in a user-defined order by default - dependencies control that. However, for data processing, output generation, and selecting the "best" resource from a list (e.g., the latest AMI, the cheapest instance type), sorting is essential.
 
 ## Alphabetical Sorting with sort
 
@@ -95,6 +95,7 @@ data "aws_ami" "app" {
 }
 
 # For multiple AMIs, use a data source that returns a list
+
 data "aws_ami_ids" "app_versions" {
   owners = ["self"]
 

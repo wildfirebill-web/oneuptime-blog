@@ -14,6 +14,7 @@ The "port already allocated" error occurs when Docker tries to bind a host port 
 
 ```bash
 # Common error messages
+
 docker: Error response from daemon: driver failed programming external connectivity
 on endpoint mycontainer: Bind for 0.0.0.0:8080 failed: port is already allocated.
 

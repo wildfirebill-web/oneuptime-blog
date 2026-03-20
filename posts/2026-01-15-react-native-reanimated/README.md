@@ -76,6 +76,7 @@ Let's get Reanimated installed and configured in your React Native project.
 
 ```bash
 # Using npm
+
 npm install react-native-reanimated
 
 # Using yarn

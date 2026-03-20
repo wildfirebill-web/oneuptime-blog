@@ -16,6 +16,7 @@ Rate limiting prevents a single IPv4 address from flooding your mail server with
 # /etc/postfix/main.cf
 
 # Connection rate limits (anvil service)
+
 smtpd_client_connection_rate_limit = 30    # Max 30 connections per minute per IP
 smtpd_client_connection_count_limit = 10   # Max 10 concurrent connections per IP
 smtpd_client_message_rate_limit = 30       # Max 30 messages per minute per IP

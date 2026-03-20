@@ -192,6 +192,7 @@ def post_review_to_github(repo_name, pr_number, review_result, github_token):
 
 ```yaml
 # cloudbuild-review.yaml - Triggered on PR creation
+
 steps:
   - name: 'python:3.11-slim'
     entrypoint: 'bash'
@@ -250,6 +251,7 @@ Generate a complete API endpoint based on this specification:
 
 Endpoint: {spec['method']} {spec['path']}
 Description: {spec['description']}
+
 Request body schema: {json.dumps(spec.get('request_body', {}))}
 Response schema: {json.dumps(spec.get('response', {}))}
 Database table: {spec.get('table', 'N/A')}

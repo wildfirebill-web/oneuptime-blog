@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, C#, Serverless, Queue Trigger, Table Storage, Bindings, .NET
+Tags: Azure Functions, C#, Serverless, Queue Trigger, Table Storage, Binding, .NET
 
 Description: Build serverless Azure Functions in C# using queue triggers and Azure Table Storage bindings for event-driven processing workflows.
 
@@ -18,6 +18,7 @@ Create an Azure Functions project using the isolated worker model.
 
 ```bash
 # Create the project
+
 func init QueueFunctions --dotnet-isolated --target-framework net8.0
 cd QueueFunctions
 

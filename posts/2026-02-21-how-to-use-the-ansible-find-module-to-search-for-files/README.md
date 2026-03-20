@@ -18,6 +18,7 @@ The simplest usage searches for files matching a glob pattern in a directory:
 
 ```yaml
 # Find all .log files in a directory
+
 - name: Find log files
   ansible.builtin.find:
     paths: /var/log/myapp

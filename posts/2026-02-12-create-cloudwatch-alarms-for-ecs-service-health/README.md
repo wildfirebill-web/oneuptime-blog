@@ -50,6 +50,7 @@ Container Insights provides more granular metrics than the default ECS metrics. 
 
 ```bash
 # Enable Container Insights on an existing cluster
+
 aws ecs update-cluster-settings \
   --cluster my-cluster \
   --settings name=containerInsights,value=enabled

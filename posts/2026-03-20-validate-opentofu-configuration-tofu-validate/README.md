@@ -1,8 +1,8 @@
-# How to Validate Your OpenTofu Configuration with tofu validate
+# How to Validate Your OpenTofu Configuration with tofu validate - Tofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu validate, Configuration Validation, DevOps, CI/CD, Infrastructure as Code
+Tags: OpenTofu, Tofu validate, Configuration Validation, DevOps, CI/CD, Infrastructure as Code
 
 Description: Learn how to use tofu validate to check your configuration for syntax errors, type mismatches, and invalid references before running plan or apply.
 
@@ -32,6 +32,7 @@ Description: Learn how to use tofu validate to check your configuration for synt
 
 ```bash
 # Run from your project directory (after tofu init)
+
 tofu validate
 
 # Success output:
@@ -100,7 +101,7 @@ resource "aws_instance" "web" {
 # ERROR: Type mismatch
 variable "count" {
   type    = number
-  default = "three"   # Error: Default value is not compatible — string not number
+  default = "three"   # Error: Default value is not compatible - string not number
 }
 
 # FIX: Use the correct type

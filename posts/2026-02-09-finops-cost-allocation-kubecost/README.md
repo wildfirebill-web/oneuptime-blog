@@ -16,6 +16,7 @@ Deploy Kubecost using Helm:
 
 ```bash
 # Add Kubecost Helm repository
+
 helm repo add kubecost https://kubecost.github.io/cost-analyzer/
 helm repo update
 

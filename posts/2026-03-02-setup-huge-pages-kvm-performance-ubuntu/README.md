@@ -24,6 +24,7 @@ For KVM VMs, there are two approaches:
 
 ```bash
 # Check current huge page configuration
+
 cat /proc/meminfo | grep -i huge
 
 # Example output:

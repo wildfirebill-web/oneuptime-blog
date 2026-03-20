@@ -18,6 +18,7 @@ Custom roles are scoped to either a project or an organization. Project-level cu
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     google = {
@@ -47,7 +48,7 @@ resource "google_project_iam_custom_role" "cloudsql_reader" {
     "cloudsql.users.list",
   ]
 
-  # ALPHA, BETA, or GA — use GA for stability
+  # ALPHA, BETA, or GA - use GA for stability
   stage = "GA"
 }
 ```
@@ -153,4 +154,4 @@ resource "google_project_iam_custom_role" "legacy_role" {
 - Test custom roles in a non-production project before deploying to production.
 - Use the GCP Permissions Reference (cloud.google.com/iam/docs/permissions-reference) to discover available permissions.
 - Follow a naming convention like `<team>.<purpose>Role` for role IDs to keep them organized.
-- Set the `stage` field to `GA` for stable production roles — avoid `ALPHA` roles that may have breaking changes.
+- Set the `stage` field to `GA` for stable production roles - avoid `ALPHA` roles that may have breaking changes.

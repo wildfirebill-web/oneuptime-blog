@@ -16,6 +16,7 @@ The fastest way to check disk space across all hosts:
 
 ```bash
 # Check disk usage on all servers
+
 ansible all -a "df -h"
 ```
 

@@ -106,6 +106,7 @@ resource "aws_instance" "app" {
 
 ```bash
 # Retrieve key from Secrets Manager
+
 aws secretsmanager get-secret-value \
   --secret-id app-ssh-private-key-prod \
   --query SecretString \
@@ -117,4 +118,4 @@ ssh -i app.pem ec2-user@<instance-public-ip>
 
 ## Conclusion
 
-OpenTofu provides flexible options for SSH key pair management — from uploading existing keys to generating new ones programmatically with the TLS provider. Storing generated private keys in Secrets Manager keeps them secure and accessible to authorized team members.
+OpenTofu provides flexible options for SSH key pair management - from uploading existing keys to generating new ones programmatically with the TLS provider. Storing generated private keys in Secrets Manager keeps them secure and accessible to authorized team members.

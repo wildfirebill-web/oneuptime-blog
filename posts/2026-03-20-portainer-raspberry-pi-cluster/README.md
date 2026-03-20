@@ -23,6 +23,7 @@ On each Pi, configure a static IP:
 
 ```bash
 # Example for Pi 1 (manager) at 192.168.1.10
+
 sudo tee /etc/dhcpcd.conf >> /dev/null << 'EOF'
 interface eth0
 static ip_address=192.168.1.10/24
@@ -182,4 +183,4 @@ Portainer will distribute replicas across all 3 Pis automatically.
 
 ## Conclusion
 
-A Raspberry Pi cluster running Docker Swarm with Portainer gives you a genuine highly available container platform for under $200. Portainer's Swarm support includes service deployment, node management, and rolling updates — all through a web interface. This setup is perfect for learning container orchestration before moving to production Kubernetes.
+A Raspberry Pi cluster running Docker Swarm with Portainer gives you a genuine highly available container platform for under $200. Portainer's Swarm support includes service deployment, node management, and rolling updates - all through a web interface. This setup is perfect for learning container orchestration before moving to production Kubernetes.

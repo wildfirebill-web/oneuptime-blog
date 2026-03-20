@@ -36,6 +36,7 @@ The simplest approach is to set the blob's tier to Hot, Cool, or Cold:
 
 ```bash
 # Rehydrate an archived blob to Hot tier
+
 az storage blob set-tier \
   --account-name mystorageaccount \
   --container-name mycontainer \

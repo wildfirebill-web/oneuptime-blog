@@ -179,6 +179,7 @@ If you really want to prove that traffic is encrypted on the wire, capture packe
 
 ```bash
 # Get the IP of the destination pod
+
 kubectl get pod <dest-pod> -o jsonpath='{.status.podIP}'
 
 # Capture traffic on the source pod's sidecar

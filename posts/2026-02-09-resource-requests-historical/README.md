@@ -89,6 +89,7 @@ Configure the kubelet to expose cAdvisor metrics:
 
 ```bash
 # cAdvisor metrics are available at the kubelet endpoint
+
 # Ensure your Prometheus scrape config includes kubelet targets
 ```
 

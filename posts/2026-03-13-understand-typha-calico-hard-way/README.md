@@ -62,6 +62,7 @@ The Calico project recommends deploying Typha for clusters with more than 50 nod
 
 ```bash
 # Check node count
+
 kubectl get nodes --no-headers | wc -l
 ```
 

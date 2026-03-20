@@ -16,6 +16,7 @@ The `select` filter keeps items that pass a test. The `reject` filter does the o
 
 ```yaml
 # Basic select example: keep only numbers greater than 5
+
 - name: Filter numbers greater than 5
   ansible.builtin.debug:
     msg: "{{ [1, 3, 5, 7, 9, 11] | select('greaterthan', 5) | list }}"

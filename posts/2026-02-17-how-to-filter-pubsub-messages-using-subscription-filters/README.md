@@ -24,6 +24,7 @@ Here is the basic setup. First, make sure your publishers include attributes:
 
 ```python
 # Publisher that includes filterable attributes with each message
+
 from google.cloud import pubsub_v1
 import json
 

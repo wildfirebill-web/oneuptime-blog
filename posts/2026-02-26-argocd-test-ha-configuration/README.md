@@ -42,6 +42,7 @@ Before testing, set up a test application and monitoring:
 
 ```bash
 # Create a test application
+
 argocd app create ha-test \
   --repo https://github.com/argoproj/argocd-example-apps \
   --path guestbook \

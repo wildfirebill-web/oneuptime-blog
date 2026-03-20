@@ -16,6 +16,7 @@ Before containerizing, understand what your application needs:
 
 ```bash
 # Check the Java version your application uses
+
 java -version
 
 # Check the application server or framework

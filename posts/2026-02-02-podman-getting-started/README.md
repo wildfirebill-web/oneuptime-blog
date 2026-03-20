@@ -37,6 +37,7 @@ Install Podman from the official repositories:
 
 ```bash
 # Update package index and install Podman
+
 sudo apt update
 sudo apt install -y podman
 ```

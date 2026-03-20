@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward FelixConfiguration conf
 
 ```bash
 # Verify current FelixConfiguration resources
+
 calicoctl get felixconfiguration -o yaml
 
 # Check the effective configuration on a specific node

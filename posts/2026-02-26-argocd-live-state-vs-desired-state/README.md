@@ -46,6 +46,7 @@ Consider a simple Deployment manifest from Git:
 
 ```yaml
 # What you wrote in Git (desired state)
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

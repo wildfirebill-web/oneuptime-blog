@@ -39,6 +39,7 @@ nodogsplash is not in the standard Ubuntu repositories. Install from source or u
 
 ```bash
 # Install build dependencies
+
 sudo apt-get install -y \
     git \
     build-essential \

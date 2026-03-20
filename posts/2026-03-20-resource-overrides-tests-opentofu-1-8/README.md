@@ -8,7 +8,7 @@ Description: Learn how to use resource overrides in OpenTofu 1.8 tests to custom
 
 ## Introduction
 
-OpenTofu 1.8 complemented provider mocking with resource overrides — a more surgical approach to test customization. Instead of mocking an entire provider, overrides let you selectively replace behavior for specific resource instances while leaving the rest of the configuration untouched.
+OpenTofu 1.8 complemented provider mocking with resource overrides - a more surgical approach to test customization. Instead of mocking an entire provider, overrides let you selectively replace behavior for specific resource instances while leaving the rest of the configuration untouched.
 
 ## Basic Resource Override
 
@@ -69,6 +69,7 @@ Overrides apply to a single `run` block; mock providers apply to the entire test
 # tests/selective.tftest.hcl
 
 # Mock the whole provider as a baseline
+
 mock_provider "aws" {
   mock_resource "aws_s3_bucket" {
     defaults = {

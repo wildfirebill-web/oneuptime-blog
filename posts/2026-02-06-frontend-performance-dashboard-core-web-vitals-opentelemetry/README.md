@@ -102,6 +102,7 @@ The collector needs to accept browser traffic (CORS headers) and extract useful 
 
 ```yaml
 # otel-collector-frontend.yaml
+
 receivers:
   otlp:
     protocols:

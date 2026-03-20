@@ -28,6 +28,7 @@ The built-in `httpcheck` receiver is good for basic up/down monitoring, but for 
 
 ```python
 # cdn_probe.py
+
 import time
 import urllib3
 from opentelemetry import metrics

@@ -16,6 +16,7 @@ This guide walks through creating Kubernetes Deployments with Terraform, coverin
 
 ```hcl
 # providers.tf - Set up the Kubernetes provider
+
 terraform {
   required_version = ">= 1.0"
 

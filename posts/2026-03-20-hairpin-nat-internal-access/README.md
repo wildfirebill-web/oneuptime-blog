@@ -12,14 +12,14 @@ Hairpin NAT (also called NAT loopback or NAT reflection) allows internal clients
 
 **Problem without hairpin NAT:**
 
-```
+```text
 Client (192.168.1.50) → DNS returns → 203.0.113.1 (public IP)
 Client sends to 203.0.113.1 → router → drops or sends to ISP (not looped back)
 ```
 
 **With hairpin NAT:**
 
-```
+```text
 Client (192.168.1.50) → 203.0.113.1 → router hairpins → 192.168.1.10 (web server)
 ```
 
@@ -27,6 +27,7 @@ Client (192.168.1.50) → 203.0.113.1 → router hairpins → 192.168.1.10 (web 
 
 ```bash
 # Interfaces:
+
 # eth0 = LAN (192.168.1.1/24)
 # eth1 = WAN (203.0.113.1/24)
 # Web server: 192.168.1.10:80

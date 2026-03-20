@@ -29,6 +29,7 @@ First, set up the Pub/Sub topic that will receive budget notifications:
 
 ```bash
 # Create a Pub/Sub topic for budget alerts
+
 gcloud pubsub topics create budget-alerts \
   --project=my-project
 

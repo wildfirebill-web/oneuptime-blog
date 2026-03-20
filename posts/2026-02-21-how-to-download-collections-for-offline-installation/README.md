@@ -16,6 +16,7 @@ The `ansible-galaxy collection download` command fetches collection tarballs wit
 
 ```bash
 # Download a single collection
+
 ansible-galaxy collection download community.general
 
 # Download a specific version

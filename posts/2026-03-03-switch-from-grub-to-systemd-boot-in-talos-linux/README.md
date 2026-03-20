@@ -32,6 +32,7 @@ Verify the following before proceeding:
 
 ```bash
 # Verify you can reach all nodes
+
 talosctl health
 
 # Confirm the node is UEFI-booted

@@ -21,6 +21,7 @@ import json
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 # Store a user object as a hash
+
 user_data = {
     'name': 'Alice Johnson',
     'email': 'alice@example.com',

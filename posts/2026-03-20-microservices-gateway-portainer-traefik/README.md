@@ -8,7 +8,7 @@ Description: Learn how to set up Traefik as a microservices API gateway with Por
 
 ---
 
-Traefik integrates tightly with Docker — it watches for container labels and automatically configures routing rules as services start and stop. Combined with Portainer for management, it provides a powerful microservices gateway without manual configuration.
+Traefik integrates tightly with Docker - it watches for container labels and automatically configures routing rules as services start and stop. Combined with Portainer for management, it provides a powerful microservices gateway without manual configuration.
 
 ## Architecture
 
@@ -92,7 +92,7 @@ volumes:
 
 ## Adding New Services
 
-Adding a new microservice requires only Docker labels — no Traefik config changes:
+Adding a new microservice requires only Docker labels - no Traefik config changes:
 
 ```yaml
   new-service:

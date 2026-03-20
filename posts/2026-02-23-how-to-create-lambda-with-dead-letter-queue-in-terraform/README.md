@@ -32,6 +32,7 @@ provider "aws" {
 }
 
 # IAM role for Lambda
+
 resource "aws_iam_role" "lambda" {
   name = "lambda-dlq-role"
 

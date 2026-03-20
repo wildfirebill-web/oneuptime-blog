@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WiFi Mesh, IPv4, Subnetting, 802.11s, Network Design
+Tags: WiFi Mesh, IPv4, Subnetting, 802.11, Network Design
 
 Description: Learn how to configure WiFi mesh networking (802.11s) with proper IPv4 subnetting, ensuring clients get consistent addressing across the mesh fabric.
 
@@ -24,7 +24,7 @@ graph TB
 
 All mesh nodes should serve clients from the **same subnet** so clients can roam without IP changes:
 
-```
+```text
 Mesh Backbone (management): 10.0.0.0/24
   Gateway: 10.0.0.1
   Node 1: 10.0.0.2
@@ -41,6 +41,7 @@ Client Network (all nodes): 192.168.1.0/24
 **Gateway node configuration:**
 ```bash
 # /etc/config/wireless
+
 config wifi-iface 'mesh_radio'
     option device 'radio1'       # Use 5GHz for mesh backhaul
     option mode 'mesh'

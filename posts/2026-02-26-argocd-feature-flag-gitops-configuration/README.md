@@ -30,6 +30,7 @@ The OpenFeature standard defines Kubernetes custom resources for feature flags. 
 
 ```yaml
 # flags/production/checkout-flags.yaml
+
 apiVersion: core.openfeature.dev/v1beta1
 kind: FeatureFlag
 metadata:

@@ -24,6 +24,7 @@ The module has two roles in the PAM stack:
 
 ```bash
 # pam_faillock is part of libpam-modules, installed by default
+
 dpkg -l libpam-modules
 
 # Verify the module exists

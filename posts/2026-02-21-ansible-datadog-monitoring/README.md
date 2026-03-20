@@ -24,6 +24,7 @@ graph LR
 
 ```yaml
 # roles/datadog_agent/tasks/main.yml
+
 ---
 - name: Install Datadog collection
   ansible.builtin.command:

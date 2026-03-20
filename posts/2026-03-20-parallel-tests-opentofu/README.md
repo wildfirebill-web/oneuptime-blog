@@ -12,7 +12,7 @@ OpenTofu automatically runs tests from different test files in parallel, while r
 
 ## How OpenTofu Test Parallelism Works
 
-```
+```hcl
 Test discovery: OpenTofu finds all .tftest.hcl files
 
 File 1: unit.tftest.hcl          File 2: integration.tftest.hcl
@@ -29,7 +29,8 @@ Run blocks in a single file share state and run in order:
 
 ```hcl
 # tests/integration.tftest.hcl
-# These three runs are sequential — each sees state from previous runs
+
+# These three runs are sequential - each sees state from previous runs
 
 run "create_vpc" {
   command = apply
@@ -55,7 +56,7 @@ run "verify_connectivity" {
 
 Design separate test files for parallel execution:
 
-```
+```text
 tests/
 ├── unit_compute.tftest.hcl     # Tests EC2 logic
 ├── unit_networking.tftest.hcl  # Tests VPC logic
@@ -83,7 +84,7 @@ variables {
 
 run "test_scenario_a" {
   command = apply
-  # Uses test-a- prefix — won't conflict with integration_b tests
+  # Uses test-a- prefix - won't conflict with integration_b tests
 }
 ```
 
@@ -96,7 +97,7 @@ variables {
 
 run "test_scenario_b" {
   command = apply
-  # Uses test-b- prefix — isolated from integration_a
+  # Uses test-b- prefix - isolated from integration_a
 }
 ```
 
@@ -134,16 +135,16 @@ jobs:
 
 ## Avoid Shared State in Parallel Tests
 
-Bad pattern — parallel files sharing the same resource names:
+Bad pattern - parallel files sharing the same resource names:
 
 ```hcl
-# tests/feature_a.tftest.hcl — PROBLEMATIC if run in parallel
+# tests/feature_a.tftest.hcl - PROBLEMATIC if run in parallel
 variables {
   bucket_name = "my-shared-test-bucket"  # ❌ Conflicts with feature_b
 }
 ```
 
-Good pattern — each file uses unique identifiers:
+Good pattern - each file uses unique identifiers:
 
 ```hcl
 # tests/feature_a.tftest.hcl

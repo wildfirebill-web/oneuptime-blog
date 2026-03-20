@@ -112,6 +112,7 @@ The following YAML shows the complete structure of an EnvoyFilter resource with 
 
 ```yaml
 # EnvoyFilter API version - networking.istio.io/v1alpha3 is the current version
+
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter
 metadata:

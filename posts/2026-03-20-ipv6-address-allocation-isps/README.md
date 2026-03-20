@@ -12,7 +12,7 @@ ISPs receive large IPv6 blocks from Regional Internet Registries (RIRs) and dele
 
 ## Typical ISP Allocation Structure
 
-```
+```text
 ISP Total Allocation: 2001:db8::/32
 
 Infrastructure:     2001:db8:0000::/40   (loopbacks, links)
@@ -37,8 +37,9 @@ Follow RFC 6177 recommendations for customer prefix sizes:
 
 Assign home prefixes dynamically using DHCPv6 Prefix Delegation:
 
-```
+```text
 # ISC Kea DHCPv6 configuration for residential PD
+
 {
   "Dhcp6": {
     "subnet6": [
@@ -61,7 +62,7 @@ Assign home prefixes dynamically using DHCPv6 Prefix Delegation:
 
 Never advertise individual customer /56s or /48s to the internet. Aggregate at the ISP level:
 
-```
+```nginx
 # Only advertise the ISP's summary blocks to upstream peers
 router bgp 65001
  address-family ipv6
@@ -91,7 +92,7 @@ for prefix in prefixes:
 
 Reserve a dedicated block for infrastructure (loopbacks, point-to-point links). Use /128s for loopbacks and /127s for point-to-point links (RFC 6164):
 
-```
+```text
 Router loopback: 2001:db8:0000::{router-id}/128
 P2P link:        2001:db8:0000:1000::{pair-id}/127
 ```

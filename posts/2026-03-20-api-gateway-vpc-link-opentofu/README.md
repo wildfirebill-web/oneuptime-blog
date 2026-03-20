@@ -20,6 +20,7 @@ API Gateway VPC Link enables API Gateway to communicate with private resources i
 
 ```hcl
 # NLB for internal services (required for REST API VPC Link)
+
 resource "aws_lb" "internal" {
   name               = "${var.project_name}-internal-nlb"
   internal           = true
@@ -155,4 +156,4 @@ curl https://{api-id}.execute-api.us-east-1.amazonaws.com/prod/health
 
 ## Conclusion
 
-VPC Links enable API Gateway to serve as the public-facing API layer for private backend services without exposing them to the internet. The internal NLB remains private within the VPC, and all traffic flows through the AWS network. Use HTTP API VPC Links for new deployments—they support both NLB and ALB targets and leverage PrivateLink for better security isolation compared to REST API VPC Links.
+VPC Links enable API Gateway to serve as the public-facing API layer for private backend services without exposing them to the internet. The internal NLB remains private within the VPC, and all traffic flows through the AWS network. Use HTTP API VPC Links for new deployments-they support both NLB and ALB targets and leverage PrivateLink for better security isolation compared to REST API VPC Links.

@@ -259,6 +259,7 @@ Check that the sidecar is originating TLS:
 
 ```bash
 # Check the cluster configuration
+
 istioctl proxy-config clusters deploy/sleep | grep api.external.com
 
 # Check the endpoint

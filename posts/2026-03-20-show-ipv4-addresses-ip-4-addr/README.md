@@ -20,7 +20,7 @@ ip -4 addr
 
 Sample output:
 
-```
+```text
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default
     inet 127.0.0.1/8 scope host lo
        valid_lft forever preferred_lft forever
@@ -45,7 +45,7 @@ ip -4 addr show eth0 | grep inet | awk '{print $2}'
 
 Output:
 
-```
+```text
 192.168.1.100/24
 ```
 
@@ -59,7 +59,7 @@ ip -4 addr show eth0 | grep inet | awk '{print $2}' | cut -d/ -f1
 
 Output:
 
-```
+```text
 192.168.1.100
 ```
 
@@ -79,7 +79,7 @@ ip -4 -br addr
 
 Output:
 
-```
+```text
 lo               UNKNOWN        127.0.0.1/8
 eth0             UP             192.168.1.100/24
 ```

@@ -30,6 +30,7 @@ Use the roadmap to plan your Cilium adoption:
 
 ```bash
 # Check current Cilium version
+
 cilium version
 
 # Compare with latest release

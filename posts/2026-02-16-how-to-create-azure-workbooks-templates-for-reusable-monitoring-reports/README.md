@@ -160,6 +160,7 @@ To export the template as an ARM resource for deployment across subscriptions:
 
 ```bash
 # Export the Workbook template as JSON
+
 az monitor workbook show \
   --resource-group myRG \
   --name "<workbook-resource-name>" \

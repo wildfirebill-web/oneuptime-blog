@@ -1,4 +1,4 @@
-# How to Set Shared Memory Size for Containers in Portainer
+# How to Set Shared Memory Size for Containers in Portainer - Size Containers
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ When creating or editing a container in Portainer:
 
 ```bash
 # Equivalent docker run command for device mapping
+
 docker run -d \
   --device /dev/video0:/dev/video0 \
   --device /dev/snd \

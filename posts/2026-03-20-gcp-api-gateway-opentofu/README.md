@@ -30,6 +30,7 @@ provider "google" {
 
 ```hcl
 # Enable required APIs
+
 resource "google_project_service" "apigateway" {
   service            = "apigateway.googleapis.com"
   disable_on_destroy = false

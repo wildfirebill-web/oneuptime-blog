@@ -42,6 +42,7 @@ ASO needs credentials to manage Azure resources. Workload identity is the recomm
 
 ```bash
 # Set variables
+
 export RESOURCE_GROUP="rg-fluxcd-demo"
 export CLUSTER_NAME="aks-fluxcd-demo"
 export LOCATION="eastus"
@@ -434,7 +435,7 @@ kubectl logs -n azureserviceoperator-system \
 
 ## Troubleshooting
 
-### Resource Stuck in Provisioning
+Resource Stuck in Provisioning
 
 ```bash
 # Check the resource conditions
@@ -464,7 +465,7 @@ If a CRD is not available, update the `crdPattern` in the HelmRelease values:
 kubectl get crds | grep azure.com | sort
 ```
 
-### Resource Deletion
+Resource Deletion
 
 When Flux prunes a resource, ASO will delete the corresponding Azure resource. To prevent accidental deletion, use the reconcile policy annotation:
 

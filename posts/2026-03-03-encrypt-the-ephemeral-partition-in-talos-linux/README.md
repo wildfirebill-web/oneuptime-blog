@@ -97,6 +97,7 @@ Check if your nodes support AES-NI:
 ```bash
 talosctl get cpuinfo --nodes 192.168.1.10 -o yaml
 # Look for "aes" in the flags
+
 ```
 
 If your nodes have AES-NI (most x86_64 processors from the last 10+ years do), the performance impact is minimal and encryption is worth enabling.

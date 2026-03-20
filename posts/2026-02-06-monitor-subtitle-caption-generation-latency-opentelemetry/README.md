@@ -31,6 +31,7 @@ tracer = trace.get_tracer("caption.pipeline", "1.0.0")
 meter = metrics.get_meter("caption.metrics", "1.0.0")
 
 # Pipeline-level metrics
+
 pipeline_duration = meter.create_histogram(
     name="caption.pipeline.duration",
     description="Total time to generate captions for a video",

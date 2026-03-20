@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, DNS, Route53, Azure DNS, Cloud DNS, Infrastructure as Code
 
-Description: Learn how to manage DNS zones and records with OpenTofu across AWS Route53, Azure DNS, and GCP Cloud DNS — automating record creation, weighted routing, and health checks.
+Description: Learn how to manage DNS zones and records with OpenTofu across AWS Route53, Azure DNS, and GCP Cloud DNS - automating record creation, weighted routing, and health checks.
 
 ## Introduction
 
@@ -16,6 +16,7 @@ DNS management with OpenTofu covers hosted zones, record sets, and routing polic
 
 ```hcl
 # Public hosted zone
+
 resource "aws_route53_zone" "public" {
   name = var.domain_name  # "example.com"
 
@@ -194,4 +195,4 @@ output "gcp_dns_nameservers" {
 
 ## Conclusion
 
-DNS management with OpenTofu enables version-controlled, peer-reviewed DNS changes. AWS Route53 supports advanced routing policies (weighted, latency, failover) with health checks. Azure DNS and GCP Cloud DNS provide simpler record management with high availability. Always output nameservers after creating hosted zones — these must be configured at your domain registrar to activate the zone. Use private hosted zones for internal service discovery within VPCs.
+DNS management with OpenTofu enables version-controlled, peer-reviewed DNS changes. AWS Route53 supports advanced routing policies (weighted, latency, failover) with health checks. Azure DNS and GCP Cloud DNS provide simpler record management with high availability. Always output nameservers after creating hosted zones - these must be configured at your domain registrar to activate the zone. Use private hosted zones for internal service discovery within VPCs.

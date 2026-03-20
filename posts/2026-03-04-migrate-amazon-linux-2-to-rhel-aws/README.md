@@ -14,6 +14,7 @@ Amazon Linux 2 reaches end of standard support in June 2025. If you need a comme
 
 ```bash
 # On Amazon Linux 2: Document installed packages
+
 rpm -qa --queryformat '%{NAME}\n' | sort > /tmp/al2-packages.txt
 
 # List running services

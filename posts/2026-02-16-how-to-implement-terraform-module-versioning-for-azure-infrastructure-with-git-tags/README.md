@@ -68,6 +68,7 @@ Start with v1.0.0 when your module is production-ready.
 
 ```bash
 # Make sure you are on the main branch with all changes committed
+
 git checkout main
 git pull origin main
 

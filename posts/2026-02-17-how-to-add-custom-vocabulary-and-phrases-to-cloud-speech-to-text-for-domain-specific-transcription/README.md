@@ -64,6 +64,7 @@ def transcribe_with_hints(audio_path, phrases):
     return response
 
 # Add domain-specific terms as phrase hints
+
 medical_terms = [
     "acetaminophen",
     "ibuprofen",

@@ -28,7 +28,7 @@ DR volumes are ideal for:
 
 ## Architecture Overview
 
-```
+```text
 Cluster A (Primary)                    Cluster B (Secondary)
 ┌─────────────────────┐               ┌─────────────────────┐
 │  App Pod            │               │  Standby (inactive) │
@@ -50,6 +50,7 @@ On Cluster A (primary), ensure backups are being created:
 
 ```yaml
 # recurring-backup-primary.yaml - Frequent backups from primary cluster
+
 apiVersion: longhorn.io/v1beta2
 kind: RecurringJob
 metadata:

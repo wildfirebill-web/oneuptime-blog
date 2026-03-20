@@ -22,6 +22,7 @@ The `prevent_destroy` rule is the simplest and most powerful. When set to `true`
 
 ```hcl
 # Protect a production SQL database from accidental deletion
+
 resource "azurerm_mssql_database" "production" {
   name      = "db-application-prod"
   server_id = azurerm_mssql_server.main.id

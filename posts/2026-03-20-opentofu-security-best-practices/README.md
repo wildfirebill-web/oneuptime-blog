@@ -16,6 +16,7 @@ Use environment variables or cloud-native authentication instead.
 
 ```hcl
 # BAD: Static credentials in configuration
+
 provider "aws" {
   access_key = "AKIAIOSFODNN7EXAMPLE"  # never do this
   secret_key = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
@@ -85,7 +86,7 @@ terraform {
 
 ## 5. Use Ephemeral Resources for Secrets
 
-Never store secrets in state — use ephemeral resources.
+Never store secrets in state - use ephemeral resources.
 
 ```hcl
 # BAD: Secret stored in state as a data source

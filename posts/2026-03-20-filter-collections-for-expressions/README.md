@@ -8,7 +8,7 @@ Description: Learn how to filter lists and maps in OpenTofu using for expression
 
 ---
 
-OpenTofu's for expressions allow you to transform and filter collections — lists, sets, and maps — using a compact, functional syntax. Adding an `if` clause to a for expression acts as a filter, including only elements that match a condition.
+OpenTofu's for expressions allow you to transform and filter collections - lists, sets, and maps - using a compact, functional syntax. Adding an `if` clause to a for expression acts as a filter, including only elements that match a condition.
 
 ---
 
@@ -16,6 +16,7 @@ OpenTofu's for expressions allow you to transform and filter collections — lis
 
 ```hcl
 # List transformation
+
 [for item in list : expression]
 
 # List filtering
@@ -202,8 +203,8 @@ resource "aws_route53_record" "services" {
 
 ## Best Practices
 
-1. **Use local values** to store filtered results — makes the filtering logic reusable and readable
-2. **Prefer maps over lists** when you need named resources — use `for_each` downstream
+1. **Use local values** to store filtered results - makes the filtering logic reusable and readable
+2. **Prefer maps over lists** when you need named resources - use `for_each` downstream
 3. **Add comments** explaining non-obvious filter conditions
 4. **Test with tofu console** before deploying:
    ```bash
@@ -219,4 +220,4 @@ For expression filtering in OpenTofu enables clean, readable collection manipula
 
 ---
 
-*Manage your infrastructure configuration with [OneUptime](https://oneuptime.com) — monitoring and alerting for all your deployments.*
+*Manage your infrastructure configuration with [OneUptime](https://oneuptime.com) - monitoring and alerting for all your deployments.*

@@ -66,6 +66,7 @@ Create a configuration that exposes metrics from a simple CRD:
 
 ```yaml
 # custom-resource-state.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -251,6 +251,7 @@ Define your SLO targets and track them:
 
 ```promql
 # SLO: 99.9% availability (less than 0.1% errors)
+
 1 - (
   sum(rate(istio_requests_total{response_code=~"5..", destination_service_name="my-api"}[30d]))
   /

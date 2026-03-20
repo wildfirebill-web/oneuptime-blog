@@ -38,6 +38,7 @@ First, check what environment variables are actually available in your container
 
 ```bash
 # Check environment variables in a running pod
+
 kubectl exec -it myapp-pod -- env | sort
 
 # If the pod is crashing, use a debug container

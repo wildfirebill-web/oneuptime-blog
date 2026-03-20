@@ -35,6 +35,7 @@ Check your host architecture:
 ```bash
 uname -m
 # x86_64 = AMD/Intel 64-bit
+
 # aarch64 = ARM 64-bit (Apple Silicon, Graviton, Raspberry Pi 4)
 # armv7l = ARM 32-bit (older Raspberry Pi)
 ```

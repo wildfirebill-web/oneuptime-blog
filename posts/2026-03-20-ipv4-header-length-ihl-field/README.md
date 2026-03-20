@@ -8,13 +8,13 @@ Description: Learn how the Internet Header Length (IHL) field in IPv4 packets sp
 
 ## Introduction
 
-The Internet Header Length (IHL) field occupies the lower 4 bits of the first byte in an IPv4 header. It specifies the total header length in 32-bit (4-byte) words. The minimum value is 5 (20 bytes, no options) and the maximum is 15 (60 bytes, with 40 bytes of options). Correctly reading the IHL is essential — it tells you exactly where the header ends and the payload (TCP, UDP, ICMP data) begins.
+The Internet Header Length (IHL) field occupies the lower 4 bits of the first byte in an IPv4 header. It specifies the total header length in 32-bit (4-byte) words. The minimum value is 5 (20 bytes, no options) and the maximum is 15 (60 bytes, with 40 bytes of options). Correctly reading the IHL is essential - it tells you exactly where the header ends and the payload (TCP, UDP, ICMP data) begins.
 
 ## IHL Field Position and Encoding
 
 The first byte of an IPv4 packet encodes both Version and IHL.
 
-```
+```text
 First byte:
   Bits 7-4: Version (always 4 for IPv4)
   Bits 3-0: IHL (header length in 32-bit words)
@@ -44,7 +44,7 @@ def get_payload(raw_packet: bytes) -> bytes:
 
 | IHL Value | Header Length | Meaning |
 |---|---|---|
-| 0-4 | — | Invalid; packet should be discarded |
+| 0-4 | - | Invalid; packet should be discarded |
 | 5 | 20 bytes | Minimum; no options (most common) |
 | 6 | 24 bytes | 4 bytes of options |
 | 7 | 28 bytes | 8 bytes of options |
@@ -55,6 +55,7 @@ def get_payload(raw_packet: bytes) -> bytes:
 
 ```bash
 # tcpdump shows header length in verbose mode
+
 tcpdump -n -v -i eth0 'ip' -c 5
 
 # Output includes: Header Length: 20 bytes (5)
@@ -160,4 +161,4 @@ def validate_ihl(raw_packet: bytes) -> bool:
 
 ## Summary
 
-The IHL field is the lower 4 bits of the first byte in an IPv4 header. It encodes the header length in 32-bit words: multiply by 4 to get bytes. IHL=5 (20 bytes) is by far the most common value — packets with IP options have IHL up to 15 (60 bytes). Always use IHL to locate the payload start rather than assuming a fixed 20-byte offset, especially when implementing packet parsers or network tools. Use `tcpdump 'ip[0] & 0x0f > 5'` to filter for packets with options in the wild.
+The IHL field is the lower 4 bits of the first byte in an IPv4 header. It encodes the header length in 32-bit words: multiply by 4 to get bytes. IHL=5 (20 bytes) is by far the most common value - packets with IP options have IHL up to 15 (60 bytes). Always use IHL to locate the payload start rather than assuming a fixed 20-byte offset, especially when implementing packet parsers or network tools. Use `tcpdump 'ip[0] & 0x0f > 5'` to filter for packets with options in the wild.

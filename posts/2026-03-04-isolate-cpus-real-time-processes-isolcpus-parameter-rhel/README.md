@@ -14,6 +14,7 @@ CPU isolation removes specific cores from the general kernel scheduler, ensuring
 
 ```bash
 # View CPU topology
+
 lscpu | grep -E "^CPU\(s\)|Thread|Core|Socket"
 
 # Show detailed CPU information

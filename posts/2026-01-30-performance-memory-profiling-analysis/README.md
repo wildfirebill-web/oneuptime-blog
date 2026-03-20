@@ -209,6 +209,7 @@ Java applications use different tools for heap dumps. Here are the common approa
 
 ```bash
 # Using jmap to dump heap of running process
+
 jmap -dump:format=b,file=heap.hprof <pid>
 
 # Using jcmd (preferred in newer Java versions)

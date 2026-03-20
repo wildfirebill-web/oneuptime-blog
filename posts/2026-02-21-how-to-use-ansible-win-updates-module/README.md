@@ -20,6 +20,7 @@ The simplest approach is to install everything that is available.
 
 ```yaml
 # install-all-updates.yml - Install all available Windows updates
+
 ---
 - name: Install all Windows updates
   hosts: windows_servers

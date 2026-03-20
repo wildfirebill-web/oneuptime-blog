@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, docker-compose, installation, docker, infrastructure-as-code
+Tags: Portainer, Docker-compose, Installation, Docker, Infrastructure-as-Code
 
 Description: A guide to installing Portainer CE and Portainer Business Edition using Docker Compose for a reproducible, version-controlled deployment.
 
@@ -20,6 +20,7 @@ Using Docker Compose to deploy Portainer provides a reproducible, version-contro
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

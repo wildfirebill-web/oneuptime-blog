@@ -12,7 +12,7 @@ The Prefix Information option (Type 3) is the most important option in Router Ad
 
 ## Prefix Information Option Format
 
-```
+```text
 NDP Prefix Information Option (Type 3, Length = 4):
 
  0                   1                   2                   3
@@ -36,7 +36,7 @@ Total: 32 bytes (Length=4 units of 8 bytes)
 
 ## Fields Explained
 
-```
+```text
 Prefix Length (8 bits):
   Number of high-order bits in the Prefix that are valid
   Typically 64 (for SLAAC)
@@ -130,6 +130,7 @@ def build_prefix_information_option(
     )
 
 # Test
+
 option = build_prefix_information_option("2001:db8::", 64)
 parsed = parse_prefix_information_option(option)
 print(f"Prefix: {parsed['prefix']}")

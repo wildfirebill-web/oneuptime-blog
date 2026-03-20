@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubewarden, Testing, Policy as Code, Kubernetes, kwctl, SUSE Rancher, Quality Assurance
+Tags: Kubewarden, Testing, Policy as Code, Kubernetes, Kwctl, SUSE Rancher, Quality Assurance
 
 Description: Learn how to test Kubewarden admission policies locally using kwctl and the bats testing framework before deploying them to a Kubernetes cluster.
 
@@ -16,6 +16,7 @@ Testing Kubewarden policies locally saves time by catching policy logic errors b
 
 ```bash
 # Install kwctl
+
 curl -Lo kwctl https://github.com/kubewarden/kwctl/releases/latest/download/kwctl-linux-amd64
 chmod +x kwctl
 sudo mv kwctl /usr/local/bin/
@@ -37,7 +38,7 @@ Pull a policy from the Kubewarden Policy Hub and test it:
 # Pull the policy locally
 kwctl pull registry://ghcr.io/kubewarden/policies/pod-privileged:v0.2.5
 
-# Create a test request — a pod requesting privileged mode
+# Create a test request - a pod requesting privileged mode
 cat > test-privileged-pod.json << EOF
 {
   "uid": "test-001",

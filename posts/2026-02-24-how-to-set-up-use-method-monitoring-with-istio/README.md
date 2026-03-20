@@ -29,6 +29,7 @@ Each Envoy sidecar consumes CPU. Track it:
 
 ```promql
 # CPU utilization per sidecar
+
 sum(rate(container_cpu_usage_seconds_total{container="istio-proxy"}[5m])) by (pod, namespace)
 
 # CPU utilization as a percentage of the limit

@@ -20,6 +20,7 @@ Before dataclasses, creating a simple data container required writing repetitive
 
 ```python
 # Traditional class - lots of boilerplate
+
 class User:
     def __init__(self, name: str, email: str, age: int, active: bool = True):
         self.name = name

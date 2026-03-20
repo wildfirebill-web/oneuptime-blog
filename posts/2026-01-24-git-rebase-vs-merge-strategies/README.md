@@ -29,6 +29,7 @@ gitGraph
 
 ```bash
 # Standard merge workflow
+
 git checkout main
 git merge feature-branch
 

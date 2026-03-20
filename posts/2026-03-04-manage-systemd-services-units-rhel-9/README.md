@@ -32,6 +32,7 @@ These are the commands I use daily. They cover 90% of what you'll need.
 
 ```bash
 # Start a service right now
+
 sudo systemctl start httpd.service
 
 # Stop a service

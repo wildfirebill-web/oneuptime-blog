@@ -55,6 +55,7 @@ The simplest deployment - a single container from a public image:
 
 ```hcl
 # Single container running nginx
+
 resource "azurerm_container_group" "web" {
   name                = "ci-web-prod"
   location            = azurerm_resource_group.aci.location

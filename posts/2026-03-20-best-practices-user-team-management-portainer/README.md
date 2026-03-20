@@ -28,7 +28,7 @@ Never grant Administrator to regular developers.
 
 Create teams that mirror your organizational structure:
 
-```
+```text
 Teams:
 - platform-engineers    → Environment Admin on all environments
 - backend-team          → Standard User on backend environments
@@ -43,7 +43,7 @@ For organizations with Active Directory or LDAP, configure SSO to avoid manual u
 
 In Portainer BE, go to **Settings > Authentication > LDAP**:
 
-```
+```text
 Server: ldap.company.com:389
 Reader DN: cn=portainer-reader,ou=service-accounts,dc=company,dc=com
 Base DN: dc=company,dc=com
@@ -94,6 +94,7 @@ For CI/CD pipelines and automation scripts, use dedicated service accounts:
 
 ```bash
 # Create service account via Portainer API
+
 curl -X POST "https://portainer.example.com/api/users" \
   -H "Authorization: Bearer $ADMIN_TOKEN" \
   -d '{"username": "ci-deploy", "password": "generated-strong-password", "role": 2}'

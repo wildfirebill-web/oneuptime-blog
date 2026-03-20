@@ -1,8 +1,8 @@
-# How to Configure GCS Backend with Workload Identity Federation in OpenTofu
+# How to Configure GCS Backend with Workload Identity Federation in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, GCP
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, GCP
 
 Description: Learn how to configure the OpenTofu GCS backend with Workload Identity Federation for keyless authentication from external CI/CD systems like GitHub Actions.
 
@@ -16,6 +16,7 @@ Workload Identity Federation allows external identities (GitHub Actions, GitLab 
 
 ```bash
 # Create the pool
+
 gcloud iam workload-identity-pools create "github-actions-pool" \
   --project="my-project" \
   --location="global" \
@@ -113,14 +114,14 @@ resource "google_service_account_iam_member" "workload_identity" {
 
 ## No Changes Needed in Backend Configuration
 
-The backend configuration remains unchanged — authentication is handled by the environment:
+The backend configuration remains unchanged - authentication is handled by the environment:
 
 ```hcl
 terraform {
   backend "gcs" {
     bucket = "my-tofu-state"
     prefix = "production"
-    # No credentials block needed — uses ADC from Workload Identity
+    # No credentials block needed - uses ADC from Workload Identity
   }
 }
 ```

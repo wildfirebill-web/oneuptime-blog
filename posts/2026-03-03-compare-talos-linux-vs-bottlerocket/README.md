@@ -26,6 +26,7 @@ Both systems share the goals of immutability, minimal attack surface, and automa
 
 ```bash
 # Bottlerocket: Enable the admin container for debugging
+
 # Through the AWS SSM agent or the API
 enable-admin-container
 
@@ -203,7 +204,7 @@ aws eks create-nodegroup --node-role arn:... --ami-type BOTTLEROCKET_x86_64
 talosctl cluster create --nodes 3 --controlplanes 1
 ```
 
-## Resource Usage
+Resource Usage
 
 Both systems are minimal compared to general-purpose distributions.
 

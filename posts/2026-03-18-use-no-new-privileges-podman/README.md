@@ -22,6 +22,7 @@ The `no_new_privs` bit is a process attribute in the Linux kernel. Once set, it 
 
 ```bash
 # Check if no_new_privs is set inside a default container
+
 # A value of 0 means it is not set; 1 means it is active
 podman run --rm docker.io/library/alpine:latest \
   sh -c "cat /proc/self/status | grep NoNewPrivs"

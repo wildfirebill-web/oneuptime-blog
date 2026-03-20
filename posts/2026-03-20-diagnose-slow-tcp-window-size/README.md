@@ -16,7 +16,7 @@ TCP window size controls how much data can be in flight between sender and recei
 
 The TCP receive window limits how much unacknowledged data the sender can transmit:
 
-```
+```text
 Throughput = Window Size / Round Trip Time (RTT)
 
 Example:
@@ -36,6 +36,7 @@ With window scaling:
 
 ```bash
 # Show TCP connections with window sizes
+
 ss -tni
 
 # Output includes:
@@ -65,7 +66,7 @@ sudo tcpdump -i eth0 -w /tmp/tcp_capture.pcap tcp and host 10.0.0.1
 
 ### Reading tcpdump Output
 
-```
+```text
 10:00:01.123456 IP 10.0.0.2.54321 > 10.0.0.1.80: Flags [P.], seq 1:1461, ack 1, win 502, length 1460
 
 # win 502 = window size of 502 * window_scale_factor bytes
@@ -75,7 +76,7 @@ sudo tcpdump -i eth0 -w /tmp/tcp_capture.pcap tcp and host 10.0.0.1
 
 ## Detecting Zero Window Events
 
-A zero window (ZWP — Zero Window Probe) means the receiver's buffer is full and the sender must stop:
+A zero window (ZWP - Zero Window Probe) means the receiver's buffer is full and the sender must stop:
 
 ```bash
 # Filter for zero window in tcpdump
@@ -140,8 +141,8 @@ sudo sysctl -w net.core.wmem_max=33554432
 
 Key Wireshark statistics for window size:
 
-1. **Statistics → TCP Stream Graph → Window Scaling** — visualizes window size over time
-2. **Statistics → TCP Stream Graph → Throughput** — shows actual throughput
+1. **Statistics → TCP Stream Graph → Window Scaling** - visualizes window size over time
+2. **Statistics → TCP Stream Graph → Throughput** - shows actual throughput
 3. Look for: **[TCP ZeroWindow]**, **[TCP Window Full]**, **[TCP Window Update]** annotations
 
 ---
@@ -185,10 +186,10 @@ sudo timeout 5 tcpdump -i any -nn 'tcp[14:2] = 0' 2>/dev/null | head -10
 
 ## Best Practices
 
-1. **Enable TCP window scaling** — essential for any link with BDP > 64KB
+1. **Enable TCP window scaling** - essential for any link with BDP > 64KB
 2. **Use BBR or CUBIC** congestion control on Linux for better window management
 3. **Set socket buffers** appropriately for your workload
-4. **Monitor Zero Window events** — they indicate bottlenecks at the receiver
+4. **Monitor Zero Window events** - they indicate bottlenecks at the receiver
 5. **Capture both sides** of a slow connection to determine if sender or receiver is limiting throughput
 
 ---
@@ -199,4 +200,4 @@ TCP window size is a fundamental performance parameter. Diagnose slow connection
 
 ---
 
-*Monitor application and network performance with [OneUptime](https://oneuptime.com) — end-to-end observability with real-time alerting.*
+*Monitor application and network performance with [OneUptime](https://oneuptime.com) - end-to-end observability with real-time alerting.*

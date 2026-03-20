@@ -14,6 +14,7 @@ OpenTofu's native state encryption feature encrypts state before writing it to t
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.7"  # State encryption requires OpenTofu 1.7+
 

@@ -51,6 +51,7 @@ Every lookup plugin extends the `LookupBase` class and implements a `run` method
 
 ```python
 # plugins/lookup/my_lookup.py
+
 from ansible.plugins.lookup import LookupBase
 
 class LookupModule(LookupBase):

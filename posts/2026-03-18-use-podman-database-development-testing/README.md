@@ -20,6 +20,7 @@ PostgreSQL is one of the most widely used relational databases. Here is how to r
 
 ```bash
 # Create a named volume for data persistence
+
 podman volume create pgdata
 
 # Run PostgreSQL with a named volume

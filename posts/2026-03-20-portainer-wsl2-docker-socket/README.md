@@ -25,6 +25,7 @@ WSL2 introduces some unique networking and socket challenges that can prevent Po
 
 ```bash
 # Check socket permissions
+
 ls -la /var/run/docker.sock
 # Should show: srw-rw---- 1 root docker ...
 
@@ -238,4 +239,4 @@ ss -tlnp | grep -E "9000|9443"
 
 ## Conclusion
 
-WSL2 Docker socket issues with Portainer are almost always related to daemon startup, socket permissions, or port forwarding. The systematic diagnostic approach — checking daemon status, socket permissions, and network connectivity in that order — resolves the vast majority of issues. Enabling systemd in WSL2 Ubuntu 22.04+ provides the most reliable Docker startup experience.
+WSL2 Docker socket issues with Portainer are almost always related to daemon startup, socket permissions, or port forwarding. The systematic diagnostic approach - checking daemon status, socket permissions, and network connectivity in that order - resolves the vast majority of issues. Enabling systemd in WSL2 Ubuntu 22.04+ provides the most reliable Docker startup experience.

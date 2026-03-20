@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Operators, IPv6, Go, controller-runtime
+Tags: Kubernetes, Operator, IPv6, Go, Controller-runtime
 
 Description: Build Kubernetes operators using controller-runtime that handle IPv6 addresses in custom resources, service management, and network configuration.
 

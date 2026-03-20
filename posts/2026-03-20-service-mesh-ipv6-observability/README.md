@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Service Mesh, IPv6, Observability, Tracing, Metrics, Kiali, Jaeger
 
-Description: A guide to implementing comprehensive observability for IPv6 traffic in service meshes, covering metrics collection, distributed tracing, service topology visualization, and IPv6-specific monitoring gaps.
+Description: A guide to implementing comprehensive observability for IPv6 traffic in service meshes, covering metrics collection, distributed tracing, service topology visualization, and IPv6-specific...
 
 Observability in a service mesh covers metrics (what happened), traces (how it flowed), and logs (what was recorded). For dual-stack clusters, observability must capture IPv6 traffic flows to provide a complete picture of service communication.
 
@@ -13,7 +13,8 @@ Observability in a service mesh covers metrics (what happened), traces (how it f
 Istio's telemetry v2 pipeline captures all traffic metrics regardless of IP version:
 
 ```yaml
-# Telemetry resource — customize metric collection
+# Telemetry resource - customize metric collection
+
 apiVersion: telemetry.istio.io/v1alpha1
 kind: Telemetry
 metadata:

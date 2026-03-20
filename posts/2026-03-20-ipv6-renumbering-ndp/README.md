@@ -30,13 +30,14 @@ sequenceDiagram
 
 ## Phase 1: Add New Prefix to radvd
 
-```
-# /etc/radvd.conf — Add new prefix alongside existing
+```text
+# /etc/radvd.conf - Add new prefix alongside existing
+
 interface eth0 {
     AdvSendAdvert on;
     MaxRtrAdvInterval 10;  # Frequent RAs during transition
 
-    # New prefix — fully active
+    # New prefix - fully active
     prefix 2001:db8:new::/64 {
         AdvOnLink on;
         AdvAutonomous on;
@@ -44,7 +45,7 @@ interface eth0 {
         AdvPreferredLifetime 14400;
     };
 
-    # Old prefix — still active (no changes yet)
+    # Old prefix - still active (no changes yet)
     prefix 2001:db8:old::/64 {
         AdvOnLink on;
         AdvAutonomous on;
@@ -56,13 +57,13 @@ interface eth0 {
 
 ## Phase 2: Deprecate Old Prefix
 
-```
-# /etc/radvd.conf — Deprecate old prefix (set preferred_lifetime=0)
+```text
+# /etc/radvd.conf - Deprecate old prefix (set preferred_lifetime=0)
 interface eth0 {
     AdvSendAdvert on;
     MaxRtrAdvInterval 10;
 
-    # New prefix — fully active
+    # New prefix - fully active
     prefix 2001:db8:new::/64 {
         AdvOnLink on;
         AdvAutonomous on;
@@ -70,7 +71,7 @@ interface eth0 {
         AdvPreferredLifetime 14400;
     };
 
-    # Old prefix — deprecated (preferred_lifetime=0)
+    # Old prefix - deprecated (preferred_lifetime=0)
     prefix 2001:db8:old::/64 {
         AdvOnLink on;
         AdvAutonomous on;
@@ -95,14 +96,14 @@ ip -6 addr show | grep -E "2001:db8:old|2001:db8:new"
 
 ## Phase 3: Remove Old Prefix
 
-```
+```text
 # Wait for all connections using old addresses to complete
 # Check: are there active connections to old addresses?
 ss -6 -n | grep "2001:db8:old"
 
 # Then remove old prefix from radvd.conf entirely
 # Before removing: set valid_lifetime to 0 briefly
-# (or simply remove — clients will use valid_lifetime countdown)
+# (or simply remove - clients will use valid_lifetime countdown)
 ```
 
 ```bash
@@ -133,7 +134,7 @@ EOF
 
 ```bash
 #!/bin/bash
-# monitor-renumbering.sh — Track renumbering across hosts
+# monitor-renumbering.sh - Track renumbering across hosts
 
 NEW_PREFIX="2001:db8:new::"
 OLD_PREFIX="2001:db8:old::"
@@ -156,7 +157,7 @@ done | sort | uniq -c | sort -rn
 For managed networks using DHCPv6, renumbering uses lease lifetime management:
 
 ```json
-// ISC Kea — Add new subnet, let old subnet expire naturally
+// ISC Kea - Add new subnet, let old subnet expire naturally
 {
     "Dhcp6": {
         "subnet6": [

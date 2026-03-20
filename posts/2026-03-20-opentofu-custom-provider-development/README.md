@@ -1,13 +1,12 @@
----
-title: "Developing a Custom Provider for OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, custom-provider, go
-description: "Learn the fundamentals of developing a custom OpenTofu provider to manage resources in your own APIs and services."
----
-
 # Developing a Custom Provider for OpenTofu
 
-Custom providers let you manage any resource through OpenTofu — internal APIs, specialized services, or systems not covered by existing providers. Providers are written in Go using the Terraform Plugin Framework.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Custom-provider, Go
+
+Description: Learn the fundamentals of developing a custom OpenTofu provider to manage resources in your own APIs and services.
+
+Custom providers let you manage any resource through OpenTofu - internal APIs, specialized services, or systems not covered by existing providers. Providers are written in Go using the Terraform Plugin Framework.
 
 ## Prerequisites
 
@@ -17,7 +16,7 @@ Custom providers let you manage any resource through OpenTofu — internal APIs,
 
 ## Project Structure
 
-```
+```text
 terraform-provider-petstore/
 ├── main.go
 ├── go.mod
@@ -93,7 +92,7 @@ func (p *PetstoreProvider) DataSources(_ context.Context) []func() datasource.Da
 }
 ```
 
-## Resource Implementation
+Resource Implementation
 
 ```go
 // internal/provider/pet_resource.go
@@ -203,6 +202,7 @@ output "pet_id" {
 
 ```bash
 # Build the provider
+
 go build -o terraform-provider-petstore
 
 # Install locally for testing

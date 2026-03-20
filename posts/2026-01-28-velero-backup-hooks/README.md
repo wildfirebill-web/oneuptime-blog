@@ -51,6 +51,7 @@ The simplest way to add hooks is through pod annotations. Velero reads these ann
 
 ```yaml
 # pod-with-hooks.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

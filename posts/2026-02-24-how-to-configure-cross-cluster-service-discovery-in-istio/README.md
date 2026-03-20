@@ -28,6 +28,7 @@ Generate and apply a remote secret using `istioctl`:
 
 ```bash
 # Give cluster1's Istiod access to cluster2
+
 istioctl create-remote-secret \
   --context="${CTX_CLUSTER2}" \
   --name=cluster2 | \

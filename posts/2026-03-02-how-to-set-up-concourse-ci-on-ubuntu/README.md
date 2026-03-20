@@ -44,6 +44,7 @@ Generate encryption keys. Concourse uses separate keys for different purposes:
 
 ```bash
 # Create the keys directory
+
 mkdir -p /opt/concourse/keys
 
 # Generate the web component keys

@@ -20,6 +20,7 @@ Labels are set in a Containerfile using the `LABEL` instruction.
 
 ```bash
 # Example Containerfile with labels
+
 cat > Containerfile << 'EOF'
 FROM docker.io/library/alpine:3.19
 LABEL maintainer="devteam@example.com"

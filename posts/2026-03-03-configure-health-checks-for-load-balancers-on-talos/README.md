@@ -136,6 +136,7 @@ Your application should expose meaningful health check endpoints, not just retur
 
 ```python
 # Python Flask example of a proper health check endpoint
+
 from flask import Flask, jsonify
 import psycopg2
 import redis

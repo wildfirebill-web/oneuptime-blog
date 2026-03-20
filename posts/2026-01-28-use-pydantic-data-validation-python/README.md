@@ -27,6 +27,7 @@ pip install pydantic[email]  # For email validation
 
 ```python
 # basic_model.py
+
 # Introduction to Pydantic models
 from pydantic import BaseModel
 from datetime import datetime

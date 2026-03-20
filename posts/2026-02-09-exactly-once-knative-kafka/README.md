@@ -24,6 +24,7 @@ Deploy Kafka with transactional support:
 
 ```yaml
 # kafka-cluster.yaml
+
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:

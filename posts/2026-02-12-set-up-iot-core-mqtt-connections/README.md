@@ -37,6 +37,7 @@ The most secure and recommended method. Each device has its own certificate.
 
 ```python
 # mqtt_x509.py - MQTT connection with X.509 certificate authentication
+
 from awscrt import mqtt, io, auth
 from awsiot import mqtt_connection_builder
 import time

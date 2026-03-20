@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, Kubernetes, Versions, Testing, Compatibility
+Tags: Rancher Desktop, Kubernetes, Version, Testing, Compatibility
 
 Description: Change the active Kubernetes version in Rancher Desktop to test application compatibility across different cluster versions.
 
@@ -30,6 +30,7 @@ Rancher Desktop simplifies local Kubernetes and container development by providi
 
 ```bash
 # Verify Rancher Desktop is installed and running
+
 rdctl version
 
 # Check Kubernetes cluster status

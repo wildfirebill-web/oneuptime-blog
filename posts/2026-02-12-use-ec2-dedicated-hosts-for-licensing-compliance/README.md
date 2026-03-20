@@ -38,6 +38,7 @@ Let's start by allocating a host. You need to specify the instance family and av
 
 ```bash
 # Allocate a Dedicated Host for m5 instances in us-east-1a
+
 aws ec2 allocate-hosts \
   --instance-type "m5.xlarge" \
   --quantity 1 \

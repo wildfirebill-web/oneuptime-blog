@@ -144,6 +144,7 @@ resource "aws_ecs_service" "app" {
 
 ```bash
 # Install Session Manager plugin for AWS CLI
+
 # https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
 
 # Get the task ID
@@ -206,4 +207,4 @@ tofu apply
 
 ## Conclusion
 
-ECS Exec provides production-safe debugging access without requiring SSH access or exposing container ports. Enable audit logging to both CloudWatch and S3 for compliance—CloudWatch enables real-time monitoring while S3 provides long-term retention. Restrict `ecs:ExecuteCommand` access to specific clusters and consider using IAM conditions to limit access to non-production environments for most developers.
+ECS Exec provides production-safe debugging access without requiring SSH access or exposing container ports. Enable audit logging to both CloudWatch and S3 for compliance-CloudWatch enables real-time monitoring while S3 provides long-term retention. Restrict `ecs:ExecuteCommand` access to specific clusters and consider using IAM conditions to limit access to non-production environments for most developers.

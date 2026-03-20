@@ -44,6 +44,7 @@ Store the Discord webhook URL as a Kubernetes secret.
 
 ```yaml
 # discord-webhook-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

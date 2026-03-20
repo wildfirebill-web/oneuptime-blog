@@ -29,6 +29,7 @@ Start with a complete basic configuration that enables all three Hubble componen
 
 ```yaml
 # hubble-basic-config.yaml
+
 hubble:
   enabled: true
 

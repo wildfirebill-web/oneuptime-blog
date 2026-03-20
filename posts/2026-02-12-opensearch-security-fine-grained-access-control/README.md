@@ -18,6 +18,7 @@ FGAC needs to be enabled when you create or update your OpenSearch domain. It re
 
 ```bash
 # Create an OpenSearch domain with fine-grained access control enabled
+
 aws opensearch create-domain \
     --domain-name "secure-search" \
     --engine-version "OpenSearch_2.11" \

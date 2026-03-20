@@ -31,6 +31,7 @@ Install compatible versions:
 
 ```bash
 # Check what version is supported
+
 pip install opentelemetry-instrumentation-grpc==0.44b0
 
 # Install the matching grpcio version

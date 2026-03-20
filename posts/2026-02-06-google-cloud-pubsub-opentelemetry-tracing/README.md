@@ -40,6 +40,7 @@ Install all the required packages. We need the OpenTelemetry SDK, the Pub/Sub cl
 
 ```bash
 # Install OpenTelemetry and Google Cloud Pub/Sub dependencies
+
 pip install opentelemetry-api \
   opentelemetry-sdk \
   opentelemetry-exporter-otlp-proto-grpc \

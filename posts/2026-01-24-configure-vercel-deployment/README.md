@@ -156,6 +156,7 @@ process.env.VERCEL_REGION;       // Current region (e.g., "iad1")
 
 ```bash
 # .env.local - Local development (git ignored)
+
 DATABASE_URL=postgresql://localhost:5432/mydb
 API_SECRET_KEY=local-secret-key
 NEXT_PUBLIC_API_URL=http://localhost:3001

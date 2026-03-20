@@ -311,6 +311,7 @@ CDC pipelines need extra monitoring because missed changes can create data incon
 
 ```python
 # monitoring.py - Script to check CDC pipeline health
+
 import requests
 from datetime import datetime, timedelta
 

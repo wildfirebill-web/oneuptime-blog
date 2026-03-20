@@ -25,6 +25,7 @@ Include reset configuration in your MachineRegistration:
 
 ```yaml
 # machine-registration-with-reset.yaml
+
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:

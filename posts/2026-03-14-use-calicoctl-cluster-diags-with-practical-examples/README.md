@@ -49,6 +49,7 @@ Diagnostics saved to calico-cluster-diags-20260314.tar.gz
 ```bash
 #!/bin/bash
 # collect-support-bundle.sh
+
 # Prepares a comprehensive support bundle
 
 BUNDLE_DIR="support-bundle-$(date +%Y%m%d-%H%M%S)"

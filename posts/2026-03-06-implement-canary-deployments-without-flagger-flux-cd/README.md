@@ -44,6 +44,7 @@ apps/
 
 ```yaml
 # clusters/my-cluster/canary.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

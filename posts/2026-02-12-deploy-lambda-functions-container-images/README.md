@@ -29,6 +29,7 @@ This Dockerfile creates a Node.js Lambda function using the AWS base image:
 
 ```dockerfile
 # Use the official AWS Lambda Node.js base image
+
 FROM public.ecr.aws/lambda/nodejs:20
 
 # Copy package files and install dependencies

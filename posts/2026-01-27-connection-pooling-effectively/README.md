@@ -136,6 +136,7 @@ pgBouncer sits between your application and PostgreSQL, pooling connections at t
 
 [databases]
 # Map logical database names to actual databases
+
 mydb = host=localhost port=5432 dbname=mydb
 
 [pgbouncer]

@@ -147,6 +147,7 @@ Before deploying the stack, create the Prometheus config. In Portainer navigate 
 
 ```yaml
 # prometheus.yml - global scrape configuration
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

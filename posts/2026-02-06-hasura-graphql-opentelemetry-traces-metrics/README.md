@@ -14,6 +14,7 @@ Hasura supports OpenTelemetry export natively. Configure it through environment 
 
 ```bash
 # Environment variables for Hasura Docker setup
+
 HASURA_GRAPHQL_ENABLED_APIS=metadata,graphql
 HASURA_GRAPHQL_ENABLE_TELEMETRY=false
 

@@ -63,6 +63,7 @@ Running CockroachDB locally for development is straightforward using Docker. The
 
 ```bash
 # Start a single-node CockroachDB cluster for development
+
 docker run -d \
   --name cockroach \
   -p 26257:26257 \

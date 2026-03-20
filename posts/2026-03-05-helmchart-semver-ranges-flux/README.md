@@ -54,6 +54,7 @@ Here is a HelmChart using range operators.
 
 ```yaml
 # helmchart-range-operators.yaml
+
 # HelmChart using explicit range operators
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmChart

@@ -42,6 +42,7 @@ For a single-node deployment, Minikube is the simplest path:
 
 ```bash
 # Install required packages
+
 sudo dnf install -y curl conntrack
 
 # Download minikube

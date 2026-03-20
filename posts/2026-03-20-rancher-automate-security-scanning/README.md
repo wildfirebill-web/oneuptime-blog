@@ -1,8 +1,8 @@
-# How to Automate Security Scanning in Rancher
+# How to Automate Security Scanning in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, security-scanning, cis, neuvector, trivy, automation
+Tags: Rancher, Security-scanning, CIS, NeuVector, Trivy, Automation
 
 Description: A guide to automating container image scanning, CIS benchmark scanning, and runtime security monitoring in Rancher environments.
 
@@ -16,6 +16,7 @@ Security scanning in Rancher environments encompasses multiple dimensions: conta
 
 ```yaml
 # GitHub Actions: Scan images on every push
+
 name: Security Scan
 on: [push, pull_request]
 

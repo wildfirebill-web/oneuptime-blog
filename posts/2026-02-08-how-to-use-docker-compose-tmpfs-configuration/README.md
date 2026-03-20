@@ -22,6 +22,7 @@ The simplest form mounts a tmpfs at a single path.
 
 ```yaml
 # Mount a tmpfs at /tmp inside the container
+
 version: "3.8"
 
 services:

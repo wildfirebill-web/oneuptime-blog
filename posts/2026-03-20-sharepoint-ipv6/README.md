@@ -14,6 +14,7 @@ SharePoint Server runs on IIS (Internet Information Services) on Windows Server.
 
 ```powershell
 # Configure IIS to listen on IPv6 for SharePoint web application
+
 # Open IIS Manager > Sites > SharePoint Web Application
 
 # Method 1: IIS Manager GUI
@@ -64,7 +65,7 @@ Get-WebBinding -Name "SharePoint Central Administration v4" |
 
 ## Alternate Access Mappings for IPv6
 
-```
+```text
 Configure AAM in Central Administration:
 
 1. Central Admin > Application Management

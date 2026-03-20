@@ -22,6 +22,7 @@ Every Swarm node has an availability setting that controls whether it accepts ne
 
 ```bash
 # Check the current availability of all nodes
+
 docker node ls
 ```
 

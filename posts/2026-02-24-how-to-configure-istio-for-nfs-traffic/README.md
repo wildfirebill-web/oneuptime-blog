@@ -133,6 +133,7 @@ The CSI driver controller runs as a pod. If Istio sidecar injection is enabled f
 
 ```yaml
 # In the CSI driver deployment
+
 metadata:
   annotations:
     sidecar.istio.io/inject: "false"

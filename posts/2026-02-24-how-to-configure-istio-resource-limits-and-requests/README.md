@@ -30,6 +30,7 @@ istiod's resource needs scale with the number of services, endpoints, and config
 
 ```yaml
 # With IstioOperator
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

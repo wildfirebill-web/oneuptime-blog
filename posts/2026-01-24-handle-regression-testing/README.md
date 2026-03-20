@@ -102,6 +102,7 @@ Run specific suites:
 
 ```bash
 # Run smoke tests on every commit
+
 npm test -- --selectProjects=smoke
 
 # Run full regression nightly

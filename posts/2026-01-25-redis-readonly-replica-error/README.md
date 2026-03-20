@@ -14,6 +14,7 @@ The "READONLY You can't write against a read only replica" error occurs when you
 
 ```python
 # Error appears as:
+
 # redis.exceptions.ReadOnlyError: READONLY You can't write against a read only replica.
 # redis.exceptions.ResponseError: READONLY You can't write against a read only replica.
 

@@ -57,6 +57,7 @@ Before setting up Supply Chain Twin, ensure you have the following.
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable supplychaintwin.googleapis.com
 gcloud services enable bigquery.googleapis.com
 gcloud services enable pubsub.googleapis.com

@@ -38,6 +38,7 @@ First, set up a new NestJS project with the required dependencies.
 
 ```bash
 # Create a new NestJS project
+
 nest new rbac-demo
 
 # Install required packages
@@ -459,7 +460,7 @@ export class RbacGuard implements CanActivate {
 }
 ```
 
-## Resource Ownership Guard
+Resource Ownership Guard
 
 Sometimes you need to check if a user owns a resource, not just has a permission. This guard handles that pattern.
 

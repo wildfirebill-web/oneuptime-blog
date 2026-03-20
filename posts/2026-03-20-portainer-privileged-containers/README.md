@@ -8,7 +8,7 @@ Description: Learn when and how to run privileged Docker containers in Portainer
 
 ## Introduction
 
-A privileged container has all Linux capabilities and access to almost all host resources — it essentially runs without security isolation. While this is sometimes necessary for system-level tools and certain drivers, it's a significant security risk that should be avoided whenever possible. This guide explains how to enable privileged mode in Portainer and presents safer alternatives.
+A privileged container has all Linux capabilities and access to almost all host resources - it essentially runs without security isolation. While this is sometimes necessary for system-level tools and certain drivers, it's a significant security risk that should be avoided whenever possible. This guide explains how to enable privileged mode in Portainer and presents safer alternatives.
 
 ## Prerequisites
 
@@ -49,6 +49,7 @@ This is essentially equivalent to running directly as root on the host.
 
 ```bash
 # Equivalent Docker CLI command:
+
 docker run --privileged \
   --name my-privileged-container \
   alpine:latest
@@ -119,7 +120,7 @@ services:
     # No privileged mode needed!
 ```
 
-Note: Mounting the Docker socket also grants significant host access — it's not truly safe, but it's safer than `--privileged` for most CI use cases.
+Note: Mounting the Docker socket also grants significant host access - it's not truly safe, but it's safer than `--privileged` for most CI use cases.
 
 ### Alternative 4: User Namespaces
 

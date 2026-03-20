@@ -100,6 +100,7 @@ TLS handshake failures indicate problems with the mTLS infrastructure. They can 
 
 ```promql
 # TLS handshake errors across the mesh
+
 sum(rate(envoy_cluster_ssl_handshake_error[5m])) by (cluster_name)
 ```
 

@@ -20,6 +20,7 @@ Deploy the official dashboard using the recommended manifest:
 
 ```bash
 # Install the latest stable version
+
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 
 # Verify installation

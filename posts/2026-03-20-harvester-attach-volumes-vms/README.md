@@ -36,7 +36,7 @@ Attaching volumes to VMs in Harvester allows you to add persistent data disks to
 2. Click on the running VM
 3. Click the **⋮** menu → **Add Volume**
 4. Select the existing PVC
-5. Click **Add** — the disk appears in the VM within seconds
+5. Click **Add** - the disk appears in the VM within seconds
 
 ## Method 2: Attach via kubectl (Cold Attach)
 
@@ -46,6 +46,7 @@ Edit the VM specification to add a new disk:
 # The VM spec needs both a disk entry and a volume entry
 
 # First, check the current VM spec
+
 kubectl get vm my-database-vm -n default -o yaml
 
 # Apply a patch to add a new data disk
@@ -262,4 +263,4 @@ kubectl get volumes.longhorn.io -n longhorn-system | grep database-data
 
 ## Conclusion
 
-Attaching volumes to VMs in Harvester is a flexible operation that supports both pre-planned multi-disk configurations and on-the-fly storage expansion via hot-plug. By separating application data from the OS disk, you make VMs more maintainable — you can recreate or upgrade the OS disk without touching data volumes. Hot-plug support means storage capacity can be increased without scheduling downtime, which is valuable for production database and application servers.
+Attaching volumes to VMs in Harvester is a flexible operation that supports both pre-planned multi-disk configurations and on-the-fly storage expansion via hot-plug. By separating application data from the OS disk, you make VMs more maintainable - you can recreate or upgrade the OS disk without touching data volumes. Hot-plug support means storage capacity can be increased without scheduling downtime, which is valuable for production database and application servers.

@@ -46,6 +46,7 @@ The app provides default subscriptions for common events, but you can customize 
 
 ```text
 # List current subscriptions
+
 /azdevops subscriptions
 
 # Subscribe to specific events

@@ -20,6 +20,7 @@ Triggering Jenkins builds automatically when code is pushed to GitHub eliminates
 
 ```bash
 # Install the plugin via Jenkins CLI (if you have CLI configured)
+
 java -jar jenkins-cli.jar -s http://localhost:8080/ install-plugin github
 
 # Or install from the UI:

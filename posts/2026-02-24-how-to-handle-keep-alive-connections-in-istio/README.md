@@ -198,6 +198,7 @@ Here are some signs of keep-alive problems and how to investigate:
 
 ```bash
 # Check how many connections each endpoint has
+
 kubectl exec my-pod -c istio-proxy -- \
   pilot-agent request GET stats | grep upstream_cx_active
 ```

@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ip6tables, Linux, Persistence, Firewall
+Tags: IPv6, Ip6tables, Linux, Persistence, Firewall
 
 Description: Learn how to save and restore ip6tables rules across reboots using iptables-persistent, systemd, and shell scripts, ensuring your IPv6 firewall survives system restarts.
 
 ## Overview
 
-ip6tables rules are in-memory only — they are lost on reboot unless explicitly saved. This guide covers all methods for making IPv6 firewall rules persistent: iptables-persistent, systemd service files, cloud-init, and manual approaches. Always save rules after testing to prevent accidentally losing your firewall configuration.
+ip6tables rules are in-memory only - they are lost on reboot unless explicitly saved. This guide covers all methods for making IPv6 firewall rules persistent: iptables-persistent, systemd service files, cloud-init, and manual approaches. Always save rules after testing to prevent accidentally losing your firewall configuration.
 
 ## Method 1: iptables-persistent (Debian/Ubuntu)
 
 ```bash
 # Install iptables-persistent
+
 sudo apt install iptables-persistent
 
 # During installation, it prompts to save current rules
@@ -120,7 +121,7 @@ chmod +x /etc/network/if-pre-up.d/ip6tables
 
 ```bash
 #!/bin/bash
-# safe-save-ip6tables.sh — Save with backup and verification
+# safe-save-ip6tables.sh - Save with backup and verification
 
 RULES_FILE="/etc/iptables/rules.v6"
 BACKUP_FILE="/etc/iptables/rules.v6.bak.$(date +%Y%m%d_%H%M%S)"
@@ -140,7 +141,7 @@ ip6tables-restore --test < "$RULES_FILE"
 if [ $? -eq 0 ]; then
     echo "Rules verified: file is syntactically valid"
 else
-    echo "ERROR: Rules file is invalid — restoring backup"
+    echo "ERROR: Rules file is invalid - restoring backup"
     cp "$BACKUP_FILE" "$RULES_FILE"
     exit 1
 fi
@@ -176,4 +177,4 @@ ip6tables -L -n -v
 
 ## Summary
 
-ip6tables rules are in-memory and require explicit saving. On Debian/Ubuntu, use `iptables-persistent` with `ip6tables-save > /etc/iptables/rules.v6` — rules reload at boot via `netfilter-persistent.service`. On RHEL/CentOS, use `ip6tables-services` with `service ip6tables save`. For portability, create a systemd unit running `ip6tables-restore` on startup. Always test rules with `ip6tables-restore --test < file` before applying. Maintain backups when updating rules, and use `--test` to validate syntax without applying changes.
+ip6tables rules are in-memory and require explicit saving. On Debian/Ubuntu, use `iptables-persistent` with `ip6tables-save > /etc/iptables/rules.v6` - rules reload at boot via `netfilter-persistent.service`. On RHEL/CentOS, use `ip6tables-services` with `service ip6tables save`. For portability, create a systemd unit running `ip6tables-restore` on startup. Always test rules with `ip6tables-restore --test < file` before applying. Maintain backups when updating rules, and use `--test` to validate syntax without applying changes.

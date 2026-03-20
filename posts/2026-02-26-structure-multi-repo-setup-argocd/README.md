@@ -75,6 +75,7 @@ The root Application bootstraps everything:
 
 ```yaml
 # root-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

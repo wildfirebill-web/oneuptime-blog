@@ -37,6 +37,7 @@ This guide provides a structured diagnosis that starts with basic connectivity t
 
 ```bash
 # Get pod locations
+
 kubectl get pods -o wide | grep -E "test-pod|your-pods"
 
 # Test same-node (both on node-a)

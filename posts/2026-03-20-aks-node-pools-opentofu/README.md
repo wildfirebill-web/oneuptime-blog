@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AKS, Azure, Kubernetes, Node Pools, Infrastructure as Code
+Tags: OpenTofu, AKS, Azure, Kubernetes, Node Pool, Infrastructure as Code
 
 Description: Learn how to define and manage Azure Kubernetes Service node pools using OpenTofu, including system and user pools with autoscaling.
 
@@ -94,6 +94,7 @@ resource "azurerm_kubernetes_cluster_node_pool" "gpu" {
 
 ```hcl
 # variables.tf
+
 variable "location" {
   description = "Azure region"
   default     = "eastus"

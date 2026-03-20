@@ -22,6 +22,7 @@ Before writing a custom profile, check what the default profile allows. Docker's
 
 ```bash
 # Download Docker's default seccomp profile for reference
+
 curl -sL https://raw.githubusercontent.com/moby/moby/master/profiles/seccomp/default.json \
   -o default-seccomp.json
 

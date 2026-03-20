@@ -47,6 +47,7 @@ Webhook triggers use a secret to verify that incoming requests are genuinely fro
 
 ```bash
 # Generate a random secret string for webhook authentication
+
 SECRET=$(openssl rand -base64 32)
 
 # Store it in Secret Manager

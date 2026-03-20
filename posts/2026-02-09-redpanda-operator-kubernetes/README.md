@@ -31,6 +31,7 @@ Start by installing the Redpanda Operator using Helm:
 
 ```bash
 # Add the Redpanda Helm repository
+
 helm repo add redpanda https://charts.redpanda.com
 helm repo update
 

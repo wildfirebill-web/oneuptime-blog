@@ -1,4 +1,4 @@
-# How to Set Up Watchtower Notifications with Portainer
+# How to Set Up Watchtower Notifications with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Watchtower supports multiple notification channels:
 
 ```yaml
 # In Portainer: Stacks > Add Stack > watchtower
+
 services:
   watchtower:
     image: containrrr/watchtower:latest
@@ -116,7 +117,7 @@ docker run --rm \
 
 A Slack notification from Watchtower looks like:
 
-```
+```text
 🐳 watchtower-prod
 
 Updated containers:

@@ -1,18 +1,18 @@
-# How to Fix "Error Acquiring the State Lock" in OpenTofu
+# How to Fix 'Error Acquiring the State Lock' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Troubleshooting, State Lock, DynamoDB, Error, Infrastructure as Code
 
-Description: Learn how to resolve the "error acquiring the state lock" message in OpenTofu, including diagnosing active vs stale locks and safely releasing them.
+Description: Learn how to resolve the 'error acquiring the state lock' message in OpenTofu, including diagnosing active vs stale locks and safely releasing them.
 
 ## Introduction
 
-"Error acquiring the state lock" is similar to the general state lock error but specifically refers to the lock acquisition step failing — usually due to a DynamoDB `ConditionalCheckFailedException` (AWS) or equivalent backend locking failure. This guide covers the most systematic approach to resolution.
+"Error acquiring the state lock" is similar to the general state lock error but specifically refers to the lock acquisition step failing - usually due to a DynamoDB `ConditionalCheckFailedException` (AWS) or equivalent backend locking failure. This guide covers the most systematic approach to resolution.
 
 ## The Full Error
 
-```
+```text
 Error: Error acquiring the state lock
 
 Error message: ConditionalCheckFailedException: The conditional request failed
@@ -31,12 +31,13 @@ Before doing anything, confirm the lock holder is truly inactive:
 
 ```bash
 # Is the CI job still running?
+
 # Check your CI/CD platform (GitHub Actions, GitLab CI, Jenkins)
 
 # Is there a local tofu process?
 ps aux | grep "[t]ofu"
 
-# Check when the lock was created — is it hours old?
+# Check when the lock was created - is it hours old?
 # Lock.Created older than 1 hour with no active process = stale
 ```
 
@@ -105,10 +106,10 @@ terraform {
 In CI/CD, prevent parallel apply jobs from competing for the same lock:
 
 ```yaml
-# GitHub Actions — use concurrency groups to serialize applies
+# GitHub Actions - use concurrency groups to serialize applies
 concurrency:
   group: opentofu-prod-apply
-  cancel-in-progress: false  # Don't cancel running applies — queue them
+  cancel-in-progress: false  # Don't cancel running applies - queue them
 ```
 
 ## Monitoring for Stale Locks

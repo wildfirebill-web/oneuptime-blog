@@ -141,6 +141,7 @@ For applications that need to handle duplicates gracefully:
 
 ```python
 # Python example with psycopg2
+
 import psycopg2
 from psycopg2 import errors
 

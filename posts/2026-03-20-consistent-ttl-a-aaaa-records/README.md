@@ -21,7 +21,7 @@ www.example.com.  86400 IN  AAAA  2001:db8::1   ; expires in 24 hours
 
 If you update the A record (e.g., during a failover):
 
-1. Old A record (`203.0.113.1`) expires from caches after 5 minutes — clients see the new IPv4
+1. Old A record (`203.0.113.1`) expires from caches after 5 minutes - clients see the new IPv4
 2. But AAAA record (`2001:db8::1`) stays cached for up to 24 hours
 
 If your AAAA backend also needs updating, IPv6 clients are stuck with a stale address for nearly a day. Conversely, if the AAAA record is updated first, IPv4 and IPv6 clients see different server versions for hours.
@@ -57,6 +57,7 @@ Use a script to check for TTL mismatches across your zone:
 ```bash
 #!/bin/bash
 # Check TTL consistency between A and AAAA records
+
 # Usage: ./check-ttl.sh example.com
 
 ZONE=$1

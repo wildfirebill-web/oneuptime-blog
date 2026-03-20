@@ -37,6 +37,7 @@ The Guest Configuration extension needs to be installed on each Arc server. You 
 
 ```bash
 # Install the Guest Configuration extension on a Linux Arc server
+
 az connectedmachine extension create \
     --machine-name "my-linux-server" \
     --resource-group "arc-servers-rg" \

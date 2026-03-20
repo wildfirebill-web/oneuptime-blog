@@ -18,6 +18,7 @@ Automatic restarts on health check failure are one of the most practical feature
 
 ```bash
 # Restart the container automatically when health check fails
+
 podman run -d \
   --name auto-restart-app \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \

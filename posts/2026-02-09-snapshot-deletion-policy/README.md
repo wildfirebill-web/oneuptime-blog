@@ -60,6 +60,7 @@ When you delete this snapshot, the underlying storage snapshot is removed:
 
 ```bash
 # Create the snapshot
+
 kubectl apply -f dev-snapshot.yaml
 
 # Check snapshot status

@@ -26,6 +26,7 @@ Performance standbys work with Integrated Storage (Raft). Configure Raft for hig
 
 ```hcl
 # vault-config.hcl
+
 ui = true
 
 listener "tcp" {

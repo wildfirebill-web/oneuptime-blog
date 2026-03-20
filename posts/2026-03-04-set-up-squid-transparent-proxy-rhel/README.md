@@ -21,6 +21,7 @@ sudo dnf install -y squid
 ```bash
 sudo tee /etc/squid/squid.conf << 'CONF'
 # Transparent proxy configuration
+
 # The "intercept" keyword enables transparent mode
 http_port 3128 intercept
 https_port 3129 intercept ssl-bump cert=/etc/squid/ssl/squid-ca.pem

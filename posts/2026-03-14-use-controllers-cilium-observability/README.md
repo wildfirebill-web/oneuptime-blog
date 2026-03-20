@@ -29,6 +29,7 @@ The primary interface for controller data is the `cilium status controllers` com
 
 ```bash
 # List all controllers with their current status
+
 kubectl -n kube-system exec ds/cilium -- cilium status controllers
 
 # Get a specific controller by name pattern

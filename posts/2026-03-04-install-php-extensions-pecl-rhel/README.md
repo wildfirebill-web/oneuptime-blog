@@ -14,6 +14,7 @@ PECL (PHP Extension Community Library) lets you compile and install PHP extensio
 
 ```bash
 # Install PHP development headers and build tools
+
 sudo dnf install -y php-devel php-pear gcc make autoconf
 
 # Verify PECL is available

@@ -33,6 +33,7 @@ Create a `.dockerignore` file in your project root (same location as your Docker
 
 ```text
 # Comments start with #
+
 pattern
 !exception
 ```

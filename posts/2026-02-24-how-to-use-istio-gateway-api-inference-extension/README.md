@@ -27,6 +27,7 @@ You need Istio installed with Gateway API support:
 
 ```bash
 # Install Istio with Gateway API support
+
 istioctl install --set profile=default \
   --set values.pilot.env.PILOT_ENABLE_ALPHA_GATEWAY_API=true
 

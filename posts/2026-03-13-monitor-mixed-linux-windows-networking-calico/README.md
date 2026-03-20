@@ -33,6 +33,7 @@ Check Calico pod and service status across all nodes:
 
 ```bash
 # List all nodes by OS type
+
 kubectl get nodes -o custom-columns=\
 NAME:.metadata.name,\
 OS:.status.nodeInfo.operatingSystem,\

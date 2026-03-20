@@ -18,6 +18,7 @@ Before working with Helm releases, you need to configure the Helm provider. This
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     helm = {

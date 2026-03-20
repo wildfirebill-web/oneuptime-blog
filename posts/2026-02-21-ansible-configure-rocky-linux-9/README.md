@@ -23,6 +23,7 @@ Rocky Linux 9 is a 1:1 RHEL rebuild, so the vast majority of configuration is id
 
 ```ini
 # inventory/hosts
+
 [rocky9]
 rocky-web01 ansible_host=10.0.3.10
 rocky-web02 ansible_host=10.0.3.11

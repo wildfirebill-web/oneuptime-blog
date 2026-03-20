@@ -27,6 +27,7 @@ First, update your package index to ensure you get the latest available version:
 
 ```bash
 # Update the package index and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

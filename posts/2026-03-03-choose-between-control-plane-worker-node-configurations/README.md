@@ -129,6 +129,7 @@ In Talos, you can remove this taint to allow scheduling:
 
 ```yaml
 # In your cluster configuration patch
+
 cluster:
   allowSchedulingOnControlPlanes: true
 ```

@@ -142,6 +142,7 @@ Verify that access outside the allowed scope is denied:
 ```bash
 kubectl --kubeconfig=/path/to/calicoctl-kubeconfig.yaml get secrets -n kube-system
 # Expected: Forbidden
+
 ```
 
 ## Troubleshooting

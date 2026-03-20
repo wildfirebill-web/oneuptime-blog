@@ -45,6 +45,7 @@ The most common pattern is triggering an HTTP endpoint on a schedule:
 
 ```hcl
 # Service account for the scheduler to authenticate with
+
 resource "google_service_account" "scheduler" {
   account_id   = "cloud-scheduler-sa"
   display_name = "Cloud Scheduler Service Account"

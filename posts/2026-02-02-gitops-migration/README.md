@@ -53,6 +53,7 @@ The first step involves documenting all configuration sources your applications 
 
 ```bash
 # Find all ConfigMaps used by your applications
+
 kubectl get configmaps --all-namespaces -o json | \
   jq -r '.items[] | select(.metadata.namespace != "kube-system") |
   "\(.metadata.namespace)/\(.metadata.name)"'

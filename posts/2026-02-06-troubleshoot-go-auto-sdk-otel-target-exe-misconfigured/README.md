@@ -29,6 +29,7 @@ RUN go build -o /app/server ./cmd/server
 FROM gcr.io/distroless/static
 COPY --from=builder /app/server /app/server
 # The binary is at /app/server in the container
+
 ```
 
 ```yaml

@@ -52,6 +52,7 @@ The test VMs must be created in a network that is isolated from both your produc
 
 ```bash
 # Create an isolated virtual network for test failovers
+
 # This network has no peering or gateway connections to production
 az network vnet create \
     --resource-group rg-dr-centralus \

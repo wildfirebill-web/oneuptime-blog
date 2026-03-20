@@ -12,7 +12,7 @@ BGP Weight is a Cisco-proprietary attribute that affects path selection only on 
 
 Key facts:
 - Cisco-proprietary (not in the BGP RFC)
-- Local to the router only—not sent to any peer
+- Local to the router only-not sent to any peer
 - Default weight: 0 for learned routes, 32768 for locally originated routes
 - Range: 0–65535
 - Evaluated first in the BGP path selection process
@@ -23,7 +23,7 @@ This makes Weight useful for quick, per-router path preference without changing 
 
 The simplest approach sets a weight for all routes received from a given neighbor:
 
-```
+```text
 router bgp 65001
  ! All routes from ISP1 get weight 200 (preferred)
  neighbor 203.0.113.1 remote-as 65100
@@ -40,7 +40,7 @@ All routes learned from ISP1 will now have weight 200, making them preferred ove
 
 For per-prefix weight control, use a route map:
 
-```
+```text
 ip prefix-list PREFERRED_DEST seq 10 permit 8.8.8.0/24
 
 ! Set weight 500 for a specific destination learned via ISP1
@@ -58,7 +58,7 @@ router bgp 65001
 
 ## Step 3: Verify Weight in the BGP Table
 
-```
+```text
 Router# show ip bgp
 
    Network          Next Hop            Metric LocPrf Weight Path
@@ -73,7 +73,7 @@ Router# show ip bgp
 
 After modifying neighbor weight or a route map, apply a soft reset to recalculate best paths:
 
-```
+```text
 ! Re-evaluate inbound routes with new weight settings
 Router# clear ip bgp 203.0.113.1 soft in
 Router# clear ip bgp 198.51.100.1 soft in
@@ -91,9 +91,9 @@ Use Weight for quick fixes on a single router. Use Local Preference when you nee
 
 ## Common Use Case: Overriding a Route Map on One Router
 
-Suppose a global route map sets local-preference 200 for ISP1, but on one specific router you want to use ISP2 instead. Set a higher weight on ISP2 routes on that router—Weight is evaluated before Local Preference:
+Suppose a global route map sets local-preference 200 for ISP1, but on one specific router you want to use ISP2 instead. Set a higher weight on ISP2 routes on that router-Weight is evaluated before Local Preference:
 
-```
+```text
 ! On the specific router where you want to use ISP2
 router bgp 65001
  neighbor 198.51.100.1 weight 1000    ! Override global preference locally

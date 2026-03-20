@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, AWS
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, AWS
 
 Description: Learn how to configure the OpenTofu S3 backend with DynamoDB state locking to prevent concurrent runs from corrupting your state file.
 
@@ -90,6 +90,7 @@ When a run starts, DynamoDB contains:
 
 ```bash
 # If another run holds the lock:
+
 tofu apply
 
 # Error: Error acquiring the state lock: ConditionalCheckFailedException

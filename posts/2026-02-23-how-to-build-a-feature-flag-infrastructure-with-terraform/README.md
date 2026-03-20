@@ -31,6 +31,7 @@ AppConfig provides managed feature flag functionality with built-in rollout stra
 
 ```hcl
 # AppConfig application
+
 resource "aws_appconfig_application" "main" {
   name        = "feature-flags"
   description = "Feature flag management"

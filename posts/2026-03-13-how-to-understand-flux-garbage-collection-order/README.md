@@ -45,6 +45,7 @@ Consider a scenario where you have a CRD and custom resources based on that CRD:
 
 ```yaml
 # crd.yaml
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
@@ -107,7 +108,7 @@ You can also check the kustomize-controller logs for detailed deletion ordering:
 kubectl logs -n flux-system deployment/kustomize-controller --follow | grep -i "delete\|prune\|garbage"
 ```
 
-## Resource Dependencies and Ordering
+Resource Dependencies and Ordering
 
 Flux uses the resource kind to determine ordering. The built-in ordering ensures that cluster-scoped resources are generally handled after namespaced resources during deletion. Here is how different resource categories are treated during garbage collection:
 

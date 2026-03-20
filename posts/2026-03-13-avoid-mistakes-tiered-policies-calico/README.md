@@ -42,6 +42,7 @@ egress:
 
 ```bash
 # Check policy order - lower order = higher priority
+
 calicoctl get networkpolicies -n production -o wide | sort -k4 -n
 ```
 

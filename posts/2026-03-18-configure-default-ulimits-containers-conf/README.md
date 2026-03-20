@@ -20,6 +20,7 @@ Ulimits define soft and hard resource limits for containers.
 
 ```bash
 # View current default ulimits in Podman
+
 podman run --rm alpine sh -c 'ulimit -a'
 
 # Key ulimit types:

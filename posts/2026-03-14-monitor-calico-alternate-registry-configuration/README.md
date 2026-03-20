@@ -31,6 +31,7 @@ Kubernetes events provide immediate visibility into image pull issues:
 ```bash
 #!/bin/bash
 # monitor-calico-image-pulls.sh
+
 # Monitors Calico image pull events and reports failures
 
 set -euo pipefail

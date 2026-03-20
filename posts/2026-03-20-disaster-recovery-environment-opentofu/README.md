@@ -59,7 +59,7 @@ resource "aws_backup_selection" "production" {
   name         = "production-resources"
   plan_id      = aws_backup_plan.production.id
 
-  # Tag-based selection — tag resources with Backup=true
+  # Tag-based selection - tag resources with Backup=true
   selection_tag {
     type  = "STRINGEQUALS"
     key   = "Backup"
@@ -101,6 +101,7 @@ resource "aws_db_instance" "main" {
 }
 
 # Cross-region snapshot copy
+
 resource "aws_db_instance_automated_backups_replication" "dr" {
   source_db_instance_arn = aws_db_instance.main.arn
   kms_key_id             = aws_kms_key.backup_dr.arn
@@ -111,7 +112,7 @@ resource "aws_db_instance_automated_backups_replication" "dr" {
 
 ## Infrastructure as Code: The Real DR Tool
 
-OpenTofu configurations are themselves the DR plan — any environment can be recreated.
+OpenTofu configurations are themselves the DR plan - any environment can be recreated.
 
 ```bash
 # In a disaster: recreate entire production environment from code

@@ -56,6 +56,7 @@ tracer = trace.get_tracer("dlq.processing")
 meter = metrics.get_meter("dlq.metrics")
 
 # Track DLQ routing events
+
 dlq_routed_counter = meter.create_counter(
     name="messaging.dlq.routed",
     description="Messages routed to dead letter queue",

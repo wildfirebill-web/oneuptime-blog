@@ -47,6 +47,7 @@ Before you start, you need:
 
 ```bash
 # Enable RAM sharing within your organization (run from management account)
+
 aws ram enable-sharing-with-aws-organization
 ```
 

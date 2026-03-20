@@ -51,6 +51,7 @@ Create base policies:
 
 ```yaml
 # base/validation/require-labels.yaml
+
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:

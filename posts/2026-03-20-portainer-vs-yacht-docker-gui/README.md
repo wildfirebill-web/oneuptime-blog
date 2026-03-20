@@ -1,4 +1,4 @@
-# Portainer vs Yacht: Lightweight Docker GUI Comparison
+# Portainer vs Yacht: Lightweight Docker GUI Comparison - Docker Gui
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,13 +28,14 @@ Yacht is a lightweight Docker management web UI that positions itself as a simpl
 
 Yacht targets home lab users who find Portainer overwhelming:
 
-- **Simpler UI** — fewer menu options, focused on container basics
-- **App templates** — a library of one-click self-hosted app templates
-- **Lower resource usage** — runs on resource-constrained hardware
-- **Easy setup** — straightforward Docker Compose deployment
+- **Simpler UI** - fewer menu options, focused on container basics
+- **App templates** - a library of one-click self-hosted app templates
+- **Lower resource usage** - runs on resource-constrained hardware
+- **Easy setup** - straightforward Docker Compose deployment
 
 ```yaml
 # yacht-stack.yml
+
 version: "3.8"
 
 services:
@@ -55,12 +56,12 @@ volumes:
 
 For anything beyond basic container management:
 
-- **Stacks management** — full Docker Compose support with variable substitution
-- **Kubernetes** — manage K8s clusters from the same UI
-- **Multi-environment** — manage containers on multiple Docker hosts
-- **Advanced RBAC** — team-level access control
-- **Webhooks** — trigger stack redeployments via webhooks (useful for CI/CD)
-- **API** — comprehensive REST API for automation
+- **Stacks management** - full Docker Compose support with variable substitution
+- **Kubernetes** - manage K8s clusters from the same UI
+- **Multi-environment** - manage containers on multiple Docker hosts
+- **Advanced RBAC** - team-level access control
+- **Webhooks** - trigger stack redeployments via webhooks (useful for CI/CD)
+- **API** - comprehensive REST API for automation
 
 ## When Yacht Is a Better Fit
 

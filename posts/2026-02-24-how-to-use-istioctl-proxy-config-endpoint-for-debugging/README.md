@@ -77,6 +77,7 @@ If the Kubernetes endpoints exist but Envoy does not have them, there might be a
 
 ```bash
 # Check proxy-status for EDS sync
+
 istioctl proxy-status productpage-v1-6b746f74dc-9rlmh.bookinfo
 ```
 

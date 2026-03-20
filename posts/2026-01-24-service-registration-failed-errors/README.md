@@ -49,6 +49,7 @@ The service cannot reach the discovery server.
 
 ```bash
 # Check connectivity to Consul
+
 curl -v http://consul.service.consul:8500/v1/status/leader
 
 # Check connectivity to Eureka

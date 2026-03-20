@@ -1,4 +1,4 @@
-# How to Create NFS Volumes in Portainer
+# How to Create NFS Volumes in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to create and mount NFS (Network File System) volumes in 
 
 ## Introduction
 
-NFS volumes allow Docker containers to access remote file storage over a network share. This is essential in multi-host environments where containers on different hosts need to share data — such as shared media storage, configuration files, or persistent data in distributed deployments. Portainer supports NFS volumes through Docker's local volume driver with NFS options.
+NFS volumes allow Docker containers to access remote file storage over a network share. This is essential in multi-host environments where containers on different hosts need to share data - such as shared media storage, configuration files, or persistent data in distributed deployments. Portainer supports NFS volumes through Docker's local volume driver with NFS options.
 
 ## Prerequisites
 
@@ -23,6 +23,7 @@ On the NFS server:
 
 ```bash
 # Install NFS server (Ubuntu/Debian):
+
 sudo apt-get install -y nfs-kernel-server
 
 # Create the export directory:
@@ -68,14 +69,14 @@ sudo umount /mnt/test
 2. Click **Add volume**.
 3. Configure:
 
-```
+```text
 Name:    nfs-shared-data
 Driver:  local
 ```
 
 4. Under **Driver options**, add:
 
-```
+```text
 Key: type     Value: nfs
 Key: o        Value: addr=nfs-server.example.com,rw,nfsvers=4
 Key: device   Value: :/exports/docker-data
@@ -141,7 +142,7 @@ volumes:
 
 Common NFS mount options:
 
-```
+```text
 addr=<ip>     IP or hostname of NFS server
 nfsvers=4     Use NFS version 4 (recommended)
 rw            Read/write access
@@ -156,7 +157,7 @@ noatime       Don't update access time (performance)
 ```
 
 For high availability:
-```
+```text
 o: "addr=nfs-server,rw,nfsvers=4,hard,timeo=600,retrans=5,intr"
 ```
 
@@ -231,7 +232,7 @@ volumes:
       device: ":/exports/data"
 ```
 
-```
+```text
 rsize=1048576  → Read block size (1MB)
 wsize=1048576  → Write block size (1MB)
 async          → Async writes (faster but less safe)
@@ -240,4 +241,4 @@ noatime        → Don't update access timestamps
 
 ## Conclusion
 
-NFS volumes in Portainer provide shared storage across multiple Docker hosts — essential for distributed applications, media servers, and multi-host deployments. The key steps are ensuring NFS server configuration, installing NFS client tools on Docker hosts, and creating volumes with the correct NFS mount options. Always test NFS connectivity manually before configuring Docker volumes to isolate any connectivity or permissions issues.
+NFS volumes in Portainer provide shared storage across multiple Docker hosts - essential for distributed applications, media servers, and multi-host deployments. The key steps are ensuring NFS server configuration, installing NFS client tools on Docker hosts, and creating volumes with the correct NFS mount options. Always test NFS connectivity manually before configuring Docker volumes to isolate any connectivity or permissions issues.

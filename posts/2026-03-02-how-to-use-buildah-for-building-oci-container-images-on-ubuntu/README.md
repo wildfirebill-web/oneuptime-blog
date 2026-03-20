@@ -14,6 +14,7 @@ Buildah is a tool for building OCI (Open Container Initiative) and Docker-compat
 
 ```bash
 # Install Buildah from Ubuntu's package repositories
+
 sudo apt update
 sudo apt install -y buildah
 

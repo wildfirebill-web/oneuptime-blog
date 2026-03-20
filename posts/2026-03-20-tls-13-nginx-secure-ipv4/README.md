@@ -20,6 +20,7 @@ Nginx 1.13.0+ with OpenSSL 1.1.1+ supports TLS 1.3.
 
 ```bash
 # Check Nginx version and TLS support
+
 nginx -V 2>&1 | grep -E "version|TLS|ssl"
 
 # Check OpenSSL version (must be 1.1.1+)

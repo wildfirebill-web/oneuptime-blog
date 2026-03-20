@@ -1,4 +1,4 @@
-# How to Check Which OpenTofu Version You Are Running
+# How to Check Which OpenTofu Version You Are Running - Which Running
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn all the ways to check which OpenTofu version is active in you
 
 ---
 
-Knowing exactly which OpenTofu version is running — and why — is essential for debugging version mismatch issues. This guide covers every method to check the active version, its source, and the binary location.
+Knowing exactly which OpenTofu version is running - and why - is essential for debugging version mismatch issues. This guide covers every method to check the active version, its source, and the binary location.
 
 ---
 
@@ -16,6 +16,7 @@ Knowing exactly which OpenTofu version is running — and why — is essential f
 
 ```bash
 # Show the current OpenTofu version
+
 tofu version
 # OpenTofu v1.9.0
 # on linux_amd64
@@ -115,7 +116,7 @@ ls ~/.tofuenv/versions/
 
 ```bash
 #!/bin/bash
-# get-tofu-version.sh — extract version in scripts
+# get-tofu-version.sh - extract version in scripts
 
 TOFU_VERSION=$(tofu version -json | python3 -c "
 import sys, json

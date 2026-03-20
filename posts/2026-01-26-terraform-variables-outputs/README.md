@@ -72,6 +72,7 @@ resource "aws_instance" "app" {
 
 ```hcl
 # String
+
 variable "name" {
   type    = string
   default = "myapp"

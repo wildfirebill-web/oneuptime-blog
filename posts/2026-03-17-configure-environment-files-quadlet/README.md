@@ -20,6 +20,7 @@ First, create a file containing your environment variables in `KEY=VALUE` format
 
 ```bash
 # Create the environment file
+
 cat > ~/.config/containers/systemd/myapp.env << 'ENVEOF'
 # Database configuration
 DATABASE_HOST=db.example.com

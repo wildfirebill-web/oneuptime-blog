@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, FreeBSD, Routing, rc.conf, Static Routes
+Tags: IPv6, FreeBSD, Routing, Rc.conf, Static Routes
 
 Description: Learn how to configure IPv6 routing on FreeBSD, including static routes, default gateways, IPv6 forwarding, and dynamic routing with routing daemons.
 
@@ -10,6 +10,7 @@ Description: Learn how to configure IPv6 routing on FreeBSD, including static ro
 
 ```bash
 # Show IPv6 routing table
+
 netstat -rn -f inet6
 
 # Show only default route

@@ -153,6 +153,7 @@ Combine kubectx and kubens with shell aliases for even faster navigation:
 # Add to ~/.bashrc or ~/.zshrc
 
 # Quick context switches
+
 alias kc-prod='kubectx production-us-west'
 alias kc-staging='kubectx staging-us-west'
 alias kc-dev='kubectx minikube'

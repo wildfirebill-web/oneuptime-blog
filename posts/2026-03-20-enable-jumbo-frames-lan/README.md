@@ -22,6 +22,7 @@ Benefits on LAN:
 
 ```bash
 # Check maximum MTU supported by the NIC
+
 ip link show eth0
 # look for "maxmtu XXXXX" field (if present)
 
@@ -86,7 +87,7 @@ sudo netplan apply
 All switches in the path must support jumbo frames. Example for common platforms:
 
 **Cisco Catalyst IOS:**
-```
+```text
 ! Enable jumbo frames globally (some models)
 system mtu jumbo 9000
 
@@ -96,7 +97,7 @@ interface GigabitEthernet1/0/1
 ```
 
 **Arista EOS:**
-```
+```text
 interface Ethernet1
    mtu 9214
 ```
@@ -146,4 +147,4 @@ iscsiadm -m node --op=update -n node.conn[0].iscsi.MaxXmitDataSegmentLength -v 6
 
 ## Conclusion
 
-Jumbo frames improve bulk transfer throughput on LANs by reducing per-packet overhead. Enable with `ip link set eth0 mtu 9000`, verify with a large fragmentation-forbidden ping, and persist through NetworkManager, netplan, or `/etc/network/interfaces`. Ensure all switches in the path are also configured for jumbo frames — a single standard-MTU device in the path will cause large packets to be fragmented or dropped.
+Jumbo frames improve bulk transfer throughput on LANs by reducing per-packet overhead. Enable with `ip link set eth0 mtu 9000`, verify with a large fragmentation-forbidden ping, and persist through NetworkManager, netplan, or `/etc/network/interfaces`. Ensure all switches in the path are also configured for jumbo frames - a single standard-MTU device in the path will cause large packets to be fragmented or dropped.

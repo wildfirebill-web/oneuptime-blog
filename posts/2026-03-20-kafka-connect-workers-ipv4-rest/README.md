@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Kafka Connect, IPv4, REST API, Configuration, Workers, Integration
+Tags: Kafka, Kafka Connect, IPv4, REST API, Configuration, Worker, Integration
 
 Description: Learn how to configure Kafka Connect distributed workers to bind their REST API to a specific IPv4 address for managing connectors over the network.
 
@@ -16,6 +16,7 @@ Kafka Connect provides a REST API for managing connectors. By default it listens
 # /etc/kafka/connect-distributed.properties
 
 # --- Kafka cluster connection ---
+
 bootstrap.servers=10.0.0.10:9092,10.0.0.11:9092,10.0.0.12:9092
 
 # --- REST API binding ---

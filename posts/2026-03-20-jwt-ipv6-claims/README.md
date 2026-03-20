@@ -95,6 +95,7 @@ module.exports = { validateTokenWithIPBinding };
 
 ```python
 # jwt_ipv6.py
+
 import jwt
 import hashlib
 import time

@@ -18,6 +18,7 @@ This guide assumes hostapd is already running as a WiFi access point with `wlan0
 
 ```bash
 # Install dnsmasq
+
 sudo apt-get install -y dnsmasq
 
 # Stop any existing systemd-resolved that might conflict on port 53

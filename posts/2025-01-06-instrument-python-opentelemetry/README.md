@@ -34,6 +34,7 @@ Install the core OpenTelemetry packages along with auto-instrumentation tools. T
 
 ```bash
 # Core OpenTelemetry packages - the foundation for all instrumentation
+
 pip install opentelemetry-api \
             opentelemetry-sdk \
             opentelemetry-exporter-otlp

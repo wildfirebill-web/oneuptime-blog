@@ -143,6 +143,7 @@ Check for BOM:
 
 ```bash
 # Look for BOM in the first bytes
+
 xxd config.json | head -1
 # If you see "efbb bf" at the start, there is a BOM
 ```

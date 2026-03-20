@@ -52,6 +52,7 @@ flowchart TB
 
 ```bash
 # Enable Deployment Manager API
+
 gcloud services enable deploymentmanager.googleapis.com
 
 # Verify it's enabled

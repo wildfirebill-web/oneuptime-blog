@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Svelte, SvelteKit, JavaScript, NGINX
+Tags: Flux CD, Kubernetes, GitOps, Svelte, SvelteKit, JavaScript, Nginx
 
 Description: Deploy a Svelte or SvelteKit application to Kubernetes using Flux CD, covering both static export and SSR adapter configurations.
 
@@ -57,6 +57,7 @@ export default {
 
 ```dockerfile
 # Dockerfile.static - Nginx serving static SvelteKit output
+
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./

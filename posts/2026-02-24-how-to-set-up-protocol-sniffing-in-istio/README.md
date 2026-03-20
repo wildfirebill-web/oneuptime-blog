@@ -129,6 +129,7 @@ To see how Istio detected the protocol for a specific service, examine the liste
 
 ```bash
 # Check inbound listeners on a pod
+
 istioctl proxy-config listeners deploy/my-api -n default --port 8080 -o json
 ```
 

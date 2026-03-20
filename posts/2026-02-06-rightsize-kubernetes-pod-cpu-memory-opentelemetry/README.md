@@ -30,6 +30,7 @@ You need two sets of metrics: what the pods request (from kube-state-metrics) an
 
 ```yaml
 # otel-collector-rightsizing.yaml
+
 receivers:
   # Collect actual resource usage from the kubelet
   kubeletstats:

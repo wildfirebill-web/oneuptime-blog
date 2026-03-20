@@ -26,6 +26,7 @@ PASS=0
 FAIL=0
 
 # Test 1: Frontend reachable from outside
+
 echo -n "Test 1 - Frontend accessible: "
 RESULT=$(kubectl exec -n demo deploy/frontend -- curl -s -o /dev/null -w "%{http_code}" http://localhost:80 --max-time 5)
 if [ "$RESULT" = "200" ]; then echo "PASS"; PASS=$((PASS+1)); else echo "FAIL ($RESULT)"; FAIL=$((FAIL+1)); fi

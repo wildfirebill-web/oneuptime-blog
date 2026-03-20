@@ -14,6 +14,7 @@ The systemd journal can grow to consume gigabytes of disk space if left unchecke
 
 ```bash
 # See how much space the journal occupies
+
 journalctl --disk-usage
 # Example output: Archived and active journals take up 1.2G in the file system.
 

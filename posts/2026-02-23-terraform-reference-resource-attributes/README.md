@@ -18,6 +18,7 @@ Every resource in Terraform follows this reference pattern:
 
 ```hcl
 # Syntax: <resource_type>.<resource_name>.<attribute>
+
 # Example: aws_instance.web.id
 ```
 

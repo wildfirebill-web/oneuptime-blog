@@ -24,6 +24,7 @@ Features available in Portainer's log viewer:
 
 ```bash
 # Get logs via Portainer API (proxy to Kubernetes API)
+
 POD_NAME="myapp-pod-xyz"
 NAMESPACE="production"
 

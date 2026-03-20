@@ -27,6 +27,7 @@ You can verify your Flux installation is healthy with the following command.
 
 ```bash
 # Check that all Flux components are running
+
 flux check
 ```
 

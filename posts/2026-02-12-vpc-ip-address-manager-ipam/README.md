@@ -41,6 +41,7 @@ Create an IPAM:
 
 ```bash
 # Create the IPAM
+
 aws ec2 create-ipam \
   --description "Organization IPAM" \
   --operating-regions RegionName=us-east-1 RegionName=eu-west-1 RegionName=ap-southeast-1 \

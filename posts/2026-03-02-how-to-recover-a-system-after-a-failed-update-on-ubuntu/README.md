@@ -30,6 +30,7 @@ If apt or dpkg was interrupted, it may leave lock files that prevent new operati
 
 ```bash
 # Check if any apt/dpkg processes are actually running
+
 ps aux | grep -E "apt|dpkg"
 
 # If no apt/dpkg processes are running but locks exist, remove them

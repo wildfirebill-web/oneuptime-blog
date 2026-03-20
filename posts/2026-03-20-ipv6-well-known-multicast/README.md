@@ -33,19 +33,20 @@ IPv6 relies heavily on multicast for its core protocols. Unlike IPv4 where broad
 
 ## Key Groups Explained
 
-### ff02::1 — All Nodes
+### ff02::1 - All Nodes
 
 Every IPv6 host on a link joins this group. Used by routers to send Router Advertisements to all hosts:
 
 ```bash
 # Verify your host is a member of ff02::1
+
 ip -6 maddr show dev eth0 | grep "ff02::1$"
 
 # Send a ping to all nodes on the link
 ping6 -I eth0 ff02::1
 ```
 
-### ff02::2 — All Routers
+### ff02::2 - All Routers
 
 Hosts send Router Solicitation messages to this address to discover routers:
 
@@ -57,7 +58,7 @@ sudo tcpdump -i eth0 -vv "icmp6 and ip6[40] == 134"
 rdisc6 eth0  # Requires ndisc6 package
 ```
 
-### ff02::1:ff00:0/104 — Solicited-Node Multicast
+### ff02::1:ff00:0/104 - Solicited-Node Multicast
 
 Each unicast address has a corresponding solicited-node multicast address used for address resolution (NDP equivalent of ARP):
 
@@ -82,7 +83,7 @@ print(solicited_node_multicast("2001:db8::1234:5678"))
 # Output: ff02::1:ff34:5678
 ```
 
-### ff02::1:2 — DHCPv6 All DHCP Agents
+### ff02::1:2 - DHCPv6 All DHCP Agents
 
 DHCPv6 clients send Solicit messages to this address. Both servers and relay agents listen on it:
 

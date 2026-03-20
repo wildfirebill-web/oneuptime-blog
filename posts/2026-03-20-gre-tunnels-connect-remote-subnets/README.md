@@ -8,14 +8,14 @@ Description: Connect two geographically separated subnets using a GRE tunnel on 
 
 ## Introduction
 
-GRE tunnels are commonly used to connect subnets at different sites — a classic site-to-site VPN scenario. Each site has a Linux router that creates a GRE tunnel to the other site. The routers forward traffic between local LAN interfaces and the tunnel, with static routes directing inter-site traffic through the tunnel.
+GRE tunnels are commonly used to connect subnets at different sites - a classic site-to-site VPN scenario. Each site has a Linux router that creates a GRE tunnel to the other site. The routers forward traffic between local LAN interfaces and the tunnel, with static routes directing inter-site traffic through the tunnel.
 
 ## Network Topology
 
-```
-Site A: 192.168.1.0/24 — Router A (eth0: 10.0.0.1, eth1: 192.168.1.1)
+```yaml
+Site A: 192.168.1.0/24 - Router A (eth0: 10.0.0.1, eth1: 192.168.1.1)
           |--- GRE tunnel: gre0 ---
-Site B: 192.168.2.0/24 — Router B (eth0: 10.0.0.2, eth1: 192.168.2.1)
+Site B: 192.168.2.0/24 - Router B (eth0: 10.0.0.2, eth1: 192.168.2.1)
 
 Tunnel IPs: 172.16.0.1 (A) ↔ 172.16.0.2 (B)
 ```
@@ -24,6 +24,7 @@ Tunnel IPs: 172.16.0.1 (A) ↔ 172.16.0.2 (B)
 
 ```bash
 # Enable IP forwarding
+
 sysctl -w net.ipv4.ip_forward=1
 
 # Load GRE module

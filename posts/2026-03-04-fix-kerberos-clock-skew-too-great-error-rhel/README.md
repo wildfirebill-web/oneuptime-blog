@@ -14,6 +14,7 @@ Kerberos requires that the clocks on the client and server (Key Distribution Cen
 
 ```bash
 # Check the current system time
+
 date
 
 # Compare with the domain controller

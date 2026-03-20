@@ -24,6 +24,7 @@ Think of it as "infrastructure as code" for your Helm releases.
 
 ```bash
 # Install Helmfile using Homebrew
+
 brew install helmfile
 ```
 

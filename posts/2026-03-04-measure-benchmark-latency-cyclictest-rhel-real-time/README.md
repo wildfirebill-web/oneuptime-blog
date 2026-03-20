@@ -14,6 +14,7 @@ cyclictest is the standard benchmarking tool for measuring real-time scheduling 
 
 ```bash
 # cyclictest is part of the rt-tests package
+
 sudo dnf install -y rt-tests
 
 # Verify the installation

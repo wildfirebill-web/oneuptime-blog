@@ -112,6 +112,7 @@ def setup_sac_queue():
 
 ```bash
 # Create SAC queue via CLI
+
 rabbitmqadmin declare queue name=orders.process durable=true \
   arguments='{"x-single-active-consumer": true}'
 

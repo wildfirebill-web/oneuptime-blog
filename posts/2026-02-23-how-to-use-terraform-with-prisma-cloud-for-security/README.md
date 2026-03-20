@@ -26,6 +26,7 @@ Set up the Prisma Cloud CLI for Terraform scanning.
 
 ```bash
 # Install the Prisma Cloud CLI (uses Checkov under the hood)
+
 pip install checkov
 
 # Authenticate with Prisma Cloud

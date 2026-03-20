@@ -14,6 +14,7 @@ MongoDB on Kubernetes with the Bitnami Helm chart provides a production-ready re
 
 ```hcl
 # main.tf - Deploy MongoDB via Bitnami Helm chart
+
 resource "random_password" "mongodb_root" {
   length  = 32
   special = false

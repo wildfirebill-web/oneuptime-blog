@@ -248,6 +248,7 @@ With the GitHub App service, use the built-in template format:
 
 ```bash
 # Subscribe to all status-related triggers
+
 kubectl annotate app my-app -n argocd \
   notifications.argoproj.io/subscribe.on-sync-running-github.github-status=""
 kubectl annotate app my-app -n argocd \

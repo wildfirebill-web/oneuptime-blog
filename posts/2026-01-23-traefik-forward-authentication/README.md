@@ -46,6 +46,7 @@ Create a forward auth middleware:
 
 ```yaml
 # forward-auth-middleware.yaml
+
 apiVersion: traefik.io/v1alpha1
 kind: Middleware
 metadata:

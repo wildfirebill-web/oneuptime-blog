@@ -8,7 +8,7 @@ Description: Learn how to configure Nginx to listen exclusively on IPv4 addresse
 
 ## Introduction
 
-By default, Nginx may listen on both IPv4 and IPv6 addresses. In some environments — such as networks that don't support IPv6, legacy applications, or specific compliance requirements — you may need Nginx to listen only on IPv4. This guide explains how to configure this correctly.
+By default, Nginx may listen on both IPv4 and IPv6 addresses. In some environments - such as networks that don't support IPv6, legacy applications, or specific compliance requirements - you may need Nginx to listen only on IPv4. This guide explains how to configure this correctly.
 
 ## Default Nginx Listen Behavior
 
@@ -55,6 +55,7 @@ Simply do not include `listen [::]:80`:
 
 ```nginx
 # nginx.conf or conf.d/default.conf
+
 server {
     listen 80;        # IPv4 only (when bindv6only = 0)
     # Do NOT add: listen [::]:80;
@@ -114,7 +115,7 @@ ss -tlnp | grep nginx
 
 Expected output (IPv4 only):
 
-```
+```text
 LISTEN  0  511  0.0.0.0:80   0.0.0.0:*  users:(("nginx",...))
 LISTEN  0  511  0.0.0.0:443  0.0.0.0:*  users:(("nginx",...))
 ```

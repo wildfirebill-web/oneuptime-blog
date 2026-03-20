@@ -39,6 +39,7 @@ Shared roles live in a central repo with versioned releases:
 
 ```yaml
 # ansible-shared-roles/roles/nginx/meta/main.yml
+
 galaxy_info:
   author: platform-team
   description: Nginx reverse proxy with SSL termination

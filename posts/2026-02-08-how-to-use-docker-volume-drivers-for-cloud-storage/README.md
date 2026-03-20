@@ -31,6 +31,7 @@ Docker volume plugins are installed through `docker plugin install`:
 
 ```bash
 # List currently installed plugins
+
 docker plugin ls
 
 # Install a volume plugin (example: REX-Ray for AWS)

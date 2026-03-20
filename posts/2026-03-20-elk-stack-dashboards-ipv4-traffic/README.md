@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ELK Stack, Elasticsearch, Kibana, Logstash, IPv4, Log Analysis, Visualization
 
-Description: Build ELK Stack dashboards for IPv4 traffic analysis by ingesting Nginx access logs with Logstash, enriching data with GeoIP, and creating Kibana visualizations for top IPs, error rates, and geographic distribution.
+Description: Build ELK Stack dashboards for IPv4 traffic analysis by ingesting Nginx access logs with Logstash, enriching data with GeoIP, and creating Kibana visualizations for top IPs, error rates, and...
 
 ## Introduction
 
@@ -87,8 +87,9 @@ PUT _index_template/nginx-access
 
 ## Kibana Queries
 
-```
-# KQL — find all requests from a subnet
+```text
+# KQL - find all requests from a subnet
+
 client_ip: "10.1.0.0/16"
 
 # Top error-generating IPs
@@ -105,20 +106,20 @@ geoip.country_code2: "CN"
 
 Create these visualizations in **Visualize Library**:
 
-1. **Data Table** — Top 20 client IPs by request count
+1. **Data Table** - Top 20 client IPs by request count
    - Aggregation: Top values of `client_ip`
    - Metric: Count
 
-2. **Area Chart** — Request rate over time by status category
+2. **Area Chart** - Request rate over time by status category
    - X-axis: Date histogram on `@timestamp`
    - Split series: `status_category`
 
-3. **Maps** — Geographic heatmap
+3. **Maps** - Geographic heatmap
    - Layer: Elasticsearch documents
    - Location: `geoip.location`
    - Color by: Count
 
-4. **Gauge** — Error rate percentage
+4. **Gauge** - Error rate percentage
    - Total = count all, Error = count where status ≥ 400
 
 ## Conclusion

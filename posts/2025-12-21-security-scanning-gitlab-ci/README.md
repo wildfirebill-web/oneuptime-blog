@@ -414,6 +414,7 @@ variables:
   DOCKER_TLS_CERTDIR: "/certs"
 
 # Build stage
+
 build:
   stage: build
   image: docker:24.0

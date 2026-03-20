@@ -8,11 +8,11 @@ Description: Diagnose why TCP connections remain stuck in CLOSE_WAIT state and f
 
 ## Introduction
 
-CLOSE_WAIT means the remote side has closed the connection (sent FIN) and the local side has acknowledged it, but the local application has not yet called `close()` on the socket. This is almost always an application bug — the code is holding onto connections it should have released. Unlike TIME_WAIT (which is normal), CLOSE_WAIT indicates a resource leak.
+CLOSE_WAIT means the remote side has closed the connection (sent FIN) and the local side has acknowledged it, but the local application has not yet called `close()` on the socket. This is almost always an application bug - the code is holding onto connections it should have released. Unlike TIME_WAIT (which is normal), CLOSE_WAIT indicates a resource leak.
 
 ## Understanding CLOSE_WAIT
 
-```
+```text
 Normal CLOSE_WAIT flow:
 1. Remote sends FIN → Local ACKs it → Connection enters CLOSE_WAIT
 2. Local application notices remote closed → calls close()
@@ -28,6 +28,7 @@ Stuck CLOSE_WAIT:
 
 ```bash
 # Count CLOSE_WAIT connections
+
 ss -tn state close-wait | wc -l
 
 # Show CLOSE_WAIT connections with process information
@@ -128,4 +129,4 @@ ss -K state close-wait "( dport = :5432 or sport = :5432 )"
 
 ## Conclusion
 
-CLOSE_WAIT connections are application-layer bugs, not kernel or network issues. They appear when code fails to call `close()` after detecting that the remote side has disconnected. The fix is always in the application: use context managers, handle EOF properly, and ensure close() is called in finally blocks. Monitor CLOSE_WAIT counts in production — a steadily increasing count signals a connection leak that will eventually exhaust file descriptors.
+CLOSE_WAIT connections are application-layer bugs, not kernel or network issues. They appear when code fails to call `close()` after detecting that the remote side has disconnected. The fix is always in the application: use context managers, handle EOF properly, and ensure close() is called in finally blocks. Monitor CLOSE_WAIT counts in production - a steadily increasing count signals a connection leak that will eventually exhaust file descriptors.

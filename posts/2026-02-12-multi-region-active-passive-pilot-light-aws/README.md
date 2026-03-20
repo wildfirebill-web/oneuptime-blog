@@ -78,6 +78,7 @@ Data replication is the foundation. If your data isn't current in the DR region,
 
 ```bash
 # Create an Aurora global database
+
 aws rds create-global-cluster \
   --global-cluster-identifier "app-global-db" \
   --source-db-cluster-identifier "arn:aws:rds:us-east-1:123456789:cluster:primary-cluster" \

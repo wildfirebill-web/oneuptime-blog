@@ -316,6 +316,7 @@ After applying your validation rules, test them:
 
 ```bash
 # Test missing API key
+
 curl -v http://my-api.default.svc.cluster.local:8080/api/v1/users
 
 # Test with API key

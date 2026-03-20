@@ -208,6 +208,7 @@ Once the cluster shows `Active`:
 
 ```bash
 # Download kubeconfig from Rancher
+
 kubectl get nodes -o wide
 kubectl get pods -n kube-system
 ```

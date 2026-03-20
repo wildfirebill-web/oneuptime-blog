@@ -14,6 +14,7 @@ The Terraform Cloud backend transforms OpenTofu from a local CLI tool into a col
 
 ```bash
 # Developer creates a plan
+
 tofu plan -out=plan.tfplan
 
 # Terraform Cloud shows the plan in the UI:
@@ -169,7 +170,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## OpenTofu Plan\n\`\`\`\n${truncated}\n\`\`\``
+              body: `## OpenTofu Plan\n```\n${truncated}\n````
             });
 ```
 
@@ -251,4 +252,4 @@ curl -X POST \
 
 ## Conclusion
 
-Terraform Cloud transforms OpenTofu into a collaborative tool by centralizing plan visibility, enforcing state locking, providing role-based access control, and maintaining an audit trail of all infrastructure changes. The key workflow is: developers propose changes via pull requests with plan output in PR comments, authorized team members approve applies in Terraform Cloud, and the audit trail records who approved what and when. Start with plan notifications and PR-based plan comments — these provide immediate collaboration value with minimal configuration.
+Terraform Cloud transforms OpenTofu into a collaborative tool by centralizing plan visibility, enforcing state locking, providing role-based access control, and maintaining an audit trail of all infrastructure changes. The key workflow is: developers propose changes via pull requests with plan output in PR comments, authorized team members approve applies in Terraform Cloud, and the audit trail records who approved what and when. Start with plan notifications and PR-based plan comments - these provide immediate collaboration value with minimal configuration.

@@ -14,6 +14,7 @@ Running a Spring Boot application as a systemd service provides automatic startu
 
 ```bash
 # Ensure Java is installed
+
 sudo dnf install -y java-17-openjdk-headless
 ```
 

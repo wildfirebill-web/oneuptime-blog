@@ -285,6 +285,7 @@ To verify your escape hatches produce the expected configuration:
 
 ```bash
 # Synthesize and inspect the output
+
 cdktf synth
 
 # Check the generated JSON

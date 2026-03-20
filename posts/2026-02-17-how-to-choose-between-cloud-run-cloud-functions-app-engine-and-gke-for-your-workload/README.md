@@ -39,6 +39,7 @@ Here is what a typical Cloud Functions deployment looks like:
 
 ```python
 # A Cloud Function triggered by Pub/Sub messages
+
 # Processes uploaded images and stores thumbnails
 import functions_framework
 from google.cloud import storage

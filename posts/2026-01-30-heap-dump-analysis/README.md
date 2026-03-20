@@ -76,6 +76,7 @@ The `jmap` tool ships with the JDK and is the most direct way to capture heap du
 
 ```bash
 # Find the Java process ID
+
 jps -l
 
 # Output:

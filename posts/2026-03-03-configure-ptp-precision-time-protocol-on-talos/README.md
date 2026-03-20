@@ -42,6 +42,7 @@ PTP support on Talos Linux comes through system extensions. You need the `ptp` e
 
 ```yaml
 # Machine configuration with PTP extension
+
 machine:
   install:
     image: ghcr.io/siderolabs/installer:v1.7.0

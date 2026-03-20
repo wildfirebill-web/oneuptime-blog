@@ -32,6 +32,7 @@ Whether you are setting up a new workspace or standardizing an existing one, thi
 
 ```hcl
 # versions.tf - Declare the Databricks provider
+
 terraform {
   required_version = ">= 1.0"
 

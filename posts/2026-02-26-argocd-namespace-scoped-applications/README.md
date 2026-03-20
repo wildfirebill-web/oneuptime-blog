@@ -140,6 +140,7 @@ Teams create Application resources in their own namespace:
 
 ```yaml
 # Applied by team-a members to team-a namespace
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -290,7 +291,7 @@ metadata:
 
 Both applications can coexist because they are in different namespaces. Reference them as `team-a/user-service` and `team-b/user-service`.
 
-## Resource Quotas for Application Resources
+Resource Quotas for Application Resources
 
 To prevent teams from creating too many Application resources, use Kubernetes ResourceQuotas:
 

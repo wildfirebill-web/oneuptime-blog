@@ -20,6 +20,7 @@ Verify your Docker installation:
 
 ```bash
 # Check Docker and Compose versions
+
 docker --version
 docker compose version
 ```

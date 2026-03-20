@@ -33,6 +33,7 @@ Financial infrastructure needs strict network isolation between tiers.
 
 ```hcl
 # VPC with dedicated subnets for each tier
+
 resource "aws_vpc" "fintech" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_hostnames = true

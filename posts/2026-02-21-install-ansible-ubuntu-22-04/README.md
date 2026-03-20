@@ -23,6 +23,7 @@ Update your package index first to avoid stale cache issues.
 
 ```bash
 # Always update the package index before installing anything
+
 sudo apt update && sudo apt upgrade -y
 ```
 

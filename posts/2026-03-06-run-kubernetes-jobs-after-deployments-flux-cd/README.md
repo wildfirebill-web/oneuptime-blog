@@ -39,6 +39,7 @@ Start with a standard deployment that Flux manages.
 
 ```yaml
 # apps/my-app/deploy/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

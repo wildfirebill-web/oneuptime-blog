@@ -99,6 +99,7 @@ For cases where you need to add RAID to an existing system or do more complex co
 
 ```bash
 # Install mdadm
+
 sudo apt install mdadm -y
 
 # Create RAID 1 with two disks

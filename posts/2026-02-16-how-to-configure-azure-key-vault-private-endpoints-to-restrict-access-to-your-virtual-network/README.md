@@ -67,6 +67,7 @@ You need:
 
 ```powershell
 # Step 1: Get the Key Vault and VNet resources
+
 $keyVault = Get-AzKeyVault -VaultName "mykeyvault" -ResourceGroupName "myapp-rg"
 $vnet = Get-AzVirtualNetwork -Name "app-vnet" -ResourceGroupName "networking-rg"
 $subnet = $vnet.Subnets | Where-Object { $_.Name -eq "private-endpoints-subnet" }

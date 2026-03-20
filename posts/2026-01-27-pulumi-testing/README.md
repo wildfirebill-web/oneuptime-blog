@@ -144,6 +144,7 @@ describe("S3 Infrastructure", () => {
 
 ```python
 # test_infrastructure.py
+
 # Unit tests for AWS infrastructure using Pulumi's Python testing framework
 
 import unittest

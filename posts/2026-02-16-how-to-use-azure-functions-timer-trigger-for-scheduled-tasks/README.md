@@ -107,6 +107,7 @@ You can also specify the timezone directly in the CRON expression by using the `
 
 ```bash
 # Set the timezone for the entire function app
+
 # Use Windows timezone names on Windows, IANA names on Linux
 az functionapp config appsettings set \
   --name my-function-app \

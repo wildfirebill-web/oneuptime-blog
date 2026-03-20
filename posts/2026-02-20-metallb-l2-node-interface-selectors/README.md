@@ -45,6 +45,7 @@ Label the nodes that should advertise LoadBalancer IPs:
 
 ```bash
 # Label nodes that should handle L2 advertisement
+
 kubectl label node node-1 network-role=ingress
 kubectl label node node-2 network-role=ingress
 

@@ -1,4 +1,4 @@
-# How to Create a Stack from the Web Editor in Portainer
+# How to Create a Stack from the Web Editor in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to create and deploy Docker Compose stacks directly from 
 
 ## Introduction
 
-Portainer's web editor allows you to paste or type Docker Compose YAML directly in the browser and deploy it as a stack — no file uploads or Git repositories needed. This is the fastest way to get a multi-container application running in Portainer and is ideal for quick deployments, testing configurations, and learning Docker Compose. The editor includes syntax highlighting and immediate environment variable substitution.
+Portainer's web editor allows you to paste or type Docker Compose YAML directly in the browser and deploy it as a stack - no file uploads or Git repositories needed. This is the fastest way to get a multi-container application running in Portainer and is ideal for quick deployments, testing configurations, and learning Docker Compose. The editor includes syntax highlighting and immediate environment variable substitution.
 
 ## Prerequisites
 
@@ -38,10 +38,11 @@ Paste a complete Compose file in the editor:
 
 ```yaml
 # Full-stack web application
+
 version: "3.8"
 
 services:
-  # Nginx reverse proxy — receives external traffic
+  # Nginx reverse proxy - receives external traffic
   nginx:
     image: nginx:alpine
     restart: unless-stopped
@@ -120,7 +121,7 @@ Below the editor, you'll find the **Environment variables** section:
 1. Click **Add an environment variable** for each variable.
 2. Enter the key and value:
 
-```
+```text
 DB_NAME        myapp_production
 DB_PASSWORD    supersecretpassword
 NODE_ENV       production
@@ -128,7 +129,7 @@ NODE_ENV       production
 
 Or use the **Advanced mode** to paste a `.env` file format:
 
-```
+```text
 DB_NAME=myapp_production
 DB_PASSWORD=supersecretpassword
 NODE_ENV=production
@@ -174,4 +175,4 @@ Portainer will apply only the changed services (rolling update).
 
 ## Conclusion
 
-The web editor is the quickest way to deploy multi-container applications in Portainer. Paste your Docker Compose YAML, set environment variables in the UI, and click Deploy. All containers, networks, and volumes are created as a single managed unit. For production deployments that need version control and auditability, consider deploying from a Git repository instead — but the web editor is ideal for rapid iteration, testing, and learning Docker Compose without any external tooling.
+The web editor is the quickest way to deploy multi-container applications in Portainer. Paste your Docker Compose YAML, set environment variables in the UI, and click Deploy. All containers, networks, and volumes are created as a single managed unit. For production deployments that need version control and auditability, consider deploying from a Git repository instead - but the web editor is ideal for rapid iteration, testing, and learning Docker Compose without any external tooling.

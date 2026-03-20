@@ -32,6 +32,7 @@ Harbor is an open-source container registry that stores, signs, and scans contai
 
 ```bash
 # Install Docker
+
 curl -fsSL https://get.docker.com | sh
 
 # Add user to docker group

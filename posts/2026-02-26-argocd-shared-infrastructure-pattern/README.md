@@ -87,6 +87,7 @@ Order matters for infrastructure components. Use sync waves to ensure dependenci
 
 ```yaml
 # apps/root.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

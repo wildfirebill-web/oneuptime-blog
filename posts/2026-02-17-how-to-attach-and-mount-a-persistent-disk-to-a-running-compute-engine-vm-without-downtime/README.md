@@ -18,6 +18,7 @@ First, create a new persistent disk in the same zone as your VM. This is importa
 
 ```bash
 # Create a 200 GB SSD persistent disk in the same zone as your VM
+
 gcloud compute disks create my-data-disk \
     --size=200GB \
     --type=pd-ssd \

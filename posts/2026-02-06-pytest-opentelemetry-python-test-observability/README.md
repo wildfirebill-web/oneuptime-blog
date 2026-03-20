@@ -29,6 +29,7 @@ The plugin is available on PyPI and works with pytest 7.x and later. Install it 
 
 ```bash
 # Install the pytest plugin and OTLP exporter
+
 pip install pytest-opentelemetry opentelemetry-sdk opentelemetry-exporter-otlp
 
 # Verify the plugin is recognized by pytest

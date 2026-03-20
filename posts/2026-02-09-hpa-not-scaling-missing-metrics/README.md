@@ -24,6 +24,7 @@ Check HPA status to confirm metrics are missing.
 
 ```bash
 # List HPAs
+
 kubectl get hpa -A
 
 # Output showing unknown metrics:

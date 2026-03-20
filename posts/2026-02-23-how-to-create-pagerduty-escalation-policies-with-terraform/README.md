@@ -33,6 +33,7 @@ variable "pagerduty_token" { type = string; sensitive = true }
 
 ```hcl
 # Reference existing users
+
 data "pagerduty_user" "alice" {
   email = "alice@company.com"
 }

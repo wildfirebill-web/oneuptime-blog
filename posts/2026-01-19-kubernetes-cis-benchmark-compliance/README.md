@@ -38,6 +38,7 @@ flowchart TD
 
 ```yaml
 # kube-bench-job.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

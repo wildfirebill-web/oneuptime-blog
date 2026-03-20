@@ -22,6 +22,7 @@ nftables supports matching multiple port values in one rule using a set literal 
 
 ```bash
 # Allow HTTP (80) and HTTPS (443) in one rule
+
 nft add rule inet filter input tcp dport { 80, 443 } accept
 ```
 

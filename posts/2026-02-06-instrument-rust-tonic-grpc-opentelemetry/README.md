@@ -41,6 +41,7 @@ Add the necessary crates to your `Cargo.toml`:
 ```toml
 [dependencies]
 # Core Tonic dependencies for gRPC
+
 tonic = "0.11"
 prost = "0.12"
 tokio = { version = "1.35", features = ["full"] }

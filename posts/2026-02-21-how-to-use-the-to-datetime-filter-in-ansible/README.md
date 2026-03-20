@@ -16,6 +16,7 @@ The `to_datetime` filter parses a date string using a format specification:
 
 ```yaml
 # Parse a date string into a datetime object
+
 - name: Parse a date string
   ansible.builtin.debug:
     msg: "{{ '2026-02-21 14:30:00' | to_datetime('%Y-%m-%d %H:%M:%S') }}"

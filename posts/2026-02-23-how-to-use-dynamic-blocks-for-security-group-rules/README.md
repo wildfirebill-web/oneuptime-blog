@@ -16,6 +16,7 @@ Here is what a security group looks like without dynamic blocks:
 
 ```hcl
 # This works but does not scale
+
 resource "aws_security_group" "app" {
   name   = "app-sg"
   vpc_id = aws_vpc.main.id

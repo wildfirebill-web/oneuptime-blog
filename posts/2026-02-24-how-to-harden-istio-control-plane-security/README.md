@@ -193,6 +193,7 @@ Rotate the CA certificates regularly. Set up monitoring for certificate expirati
 
 ```bash
 # Check CA cert expiration
+
 kubectl get secret cacerts -n istio-system -o jsonpath='{.data.ca-cert\.pem}' | \
   base64 -d | openssl x509 -enddate -noout
 ```

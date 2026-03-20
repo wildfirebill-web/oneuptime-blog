@@ -56,6 +56,7 @@ Here is how you can check task instance counts programmatically using the gcloud
 
 ```bash
 # List recent task instances for a specific DAG
+
 gcloud composer environments run my-environment \
   --location us-central1 \
   tasks list -- my-dag-id 2026-02-17

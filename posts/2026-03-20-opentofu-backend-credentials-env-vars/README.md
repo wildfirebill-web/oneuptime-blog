@@ -1,8 +1,8 @@
-# How to Pass Backend Credentials via Environment Variables in OpenTofu
+# How to Pass Backend Credentials via Environment Variables in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend
 
 Description: Learn how to pass backend credentials to OpenTofu using environment variables, keeping secrets out of configuration files and source control.
 
@@ -13,7 +13,8 @@ Hardcoding credentials in backend configuration is a security risk. OpenTofu bac
 ## S3 Backend: AWS Credentials
 
 ```hcl
-# backend.tf — no credentials
+# backend.tf - no credentials
+
 terraform {
   backend "s3" {
     bucket = "acme-tofu-state"
@@ -58,7 +59,7 @@ tofu init
 ## GCS Backend: Application Default Credentials
 
 ```bash
-# Use ADC — works for service accounts, Workload Identity, and local dev
+# Use ADC - works for service accounts, Workload Identity, and local dev
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/sa-key.json"
 
 # Or use gcloud login for local development

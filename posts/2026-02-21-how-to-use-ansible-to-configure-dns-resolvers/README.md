@@ -36,6 +36,7 @@ On systems with systemd-resolved, configure DNS through its configuration files:
 
 ```yaml
 # configure DNS via systemd-resolved
+
 ---
 - name: Configure DNS resolvers (systemd-resolved)
   hosts: ubuntu_servers

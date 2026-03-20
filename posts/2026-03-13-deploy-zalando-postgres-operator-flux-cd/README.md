@@ -27,6 +27,7 @@ The Zalando Postgres Operator is available via their GitHub-hosted Helm chart.
 
 ```yaml
 # infrastructure/sources/zalando-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

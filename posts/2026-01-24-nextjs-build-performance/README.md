@@ -44,6 +44,7 @@ Start by measuring current build times to establish a baseline.
 
 ```bash
 # Measure build time with detailed output
+
 time npm run build
 
 # Enable verbose build output

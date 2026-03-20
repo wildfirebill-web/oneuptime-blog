@@ -16,6 +16,7 @@ Create a new project and install the Google provider:
 
 ```bash
 # Initialize the project
+
 mkdir cdktf-gcp && cd cdktf-gcp
 cdktf init --template=typescript --local
 

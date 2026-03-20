@@ -41,6 +41,7 @@ This playbook installs and configures the OSSEC server:
 
 ```yaml
 # install_ossec_server.yml - Install OSSEC server
+
 ---
 - name: Install OSSEC Server
   hosts: ossec_server

@@ -26,6 +26,7 @@ PITR needs to be enabled on your Firestore database. You can do this through the
 
 ```bash
 # Enable PITR on your Firestore database
+
 gcloud firestore databases update \
   --database='(default)' \
   --enable-pitr \

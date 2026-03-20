@@ -10,7 +10,7 @@ The Linux `tc` command is the primary tool for network traffic control. It can l
 
 ## Core Concepts
 
-```
+```text
 tc architecture:
   Interface → Root qdisc → Classes → Leaf qdiscs → Packets
                     ↕
@@ -25,6 +25,7 @@ tc architecture:
 
 ```bash
 # View all qdiscs on an interface
+
 sudo tc qdisc show dev eth0
 
 # View classes

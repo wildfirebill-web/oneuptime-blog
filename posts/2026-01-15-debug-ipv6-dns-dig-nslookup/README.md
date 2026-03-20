@@ -43,6 +43,7 @@ On macOS:
 
 ```bash
 # dig and nslookup are pre-installed
+
 # Verify installation
 which dig
 which nslookup

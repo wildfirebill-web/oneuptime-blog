@@ -37,6 +37,7 @@ flowchart TB
 
 ```bash
 # Add Bitnami repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
 # Update repositories

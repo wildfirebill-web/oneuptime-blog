@@ -16,6 +16,7 @@ Pass a resource address to see its details:
 
 ```bash
 # Show all attributes of a specific resource
+
 terraform state show aws_instance.web
 ```
 
@@ -271,7 +272,7 @@ This is intentional - `terraform state show` protects sensitive values in its di
 
 ## Common Errors
 
-### Resource Not Found
+Resource Not Found
 
 ```text
 No instance found for the given address!

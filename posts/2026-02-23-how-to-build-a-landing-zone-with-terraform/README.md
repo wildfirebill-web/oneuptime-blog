@@ -28,6 +28,7 @@ Start with the organizational units (OUs) that match your team structure:
 
 ```hcl
 # The organization root
+
 resource "aws_organizations_organization" "main" {
   aws_service_access_principals = [
     "cloudtrail.amazonaws.com",

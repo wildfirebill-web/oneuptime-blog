@@ -16,15 +16,16 @@ The `cidrsubnet` function in OpenTofu calculates a subnet within a parent CIDR b
 cidrsubnet(prefix, newbits, netnum)
 ```
 
-- **prefix** — the parent CIDR block
-- **newbits** — the number of additional bits to extend the prefix
-- **netnum** — which subnet to select (starting from 0)
+- **prefix** - the parent CIDR block
+- **newbits** - the number of additional bits to extend the prefix
+- **netnum** - which subnet to select (starting from 0)
 - Returns the subnet CIDR
 
 ## Basic Examples
 
 ```hcl
 # VPC: 10.0.0.0/16
+
 # newbits=8 → /24 subnets (16+8=24)
 
 output "first_subnet" {

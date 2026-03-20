@@ -35,6 +35,7 @@ Start with a simple on-server change log before integrating with a ticketing sys
 
 ```bash
 # Create a change log directory
+
 sudo mkdir -p /var/log/change-management
 sudo chmod 750 /var/log/change-management
 
@@ -62,6 +63,7 @@ Host: $HOST
 User: $USER
 Ticket: $TICKET
 Description: $DESCRIPTION
+
 EOF
 
 echo "Change logged: $TICKET - $DESCRIPTION"

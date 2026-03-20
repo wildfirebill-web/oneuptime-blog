@@ -1,4 +1,4 @@
-# How to Configure Kubernetes Cluster Security Settings in Portainer
+# How to Configure Kubernetes Cluster Security Settings in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,12 +25,12 @@ In Portainer, navigate to your Kubernetes environment:
 
 Available security settings:
 
-```
+```text
 Cluster settings:
-  [x] Enable resource over-commit   — Allow workloads to request more than available
-  [ ] Restrict default namespace   — Prevent deploying to default namespace
-  [x] Use private registries       — Require registry credentials for image pulls
-  [x] Allow web editor             — Let users edit YAML directly
+  [x] Enable resource over-commit   - Allow workloads to request more than available
+  [ ] Restrict default namespace   - Prevent deploying to default namespace
+  [x] Use private registries       - Require registry credentials for image pulls
+  [x] Allow web editor             - Let users edit YAML directly
   [ ] Note: Disabling web editor enforces form-based deployments only
 ```
 
@@ -42,7 +42,7 @@ In Portainer BE, assign namespaces to teams:
 2. Click on a namespace
 3. Under **Access control**, assign to teams:
 
-```
+```text
 Namespace: production
 Access control:
   Team: backend-team    → Read/Write
@@ -58,6 +58,7 @@ Portainer creates Kubernetes RBAC resources when you configure team access. The 
 
 ```yaml
 # Portainer creates these resources automatically
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
@@ -89,7 +90,7 @@ roleRef:
 Apply network policies to restrict inter-namespace communication:
 
 ```yaml
-# deny-all-ingress.yaml — Default deny all ingress
+# deny-all-ingress.yaml - Default deny all ingress
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -102,7 +103,7 @@ spec:
 ```
 
 ```yaml
-# allow-frontend-to-api.yaml — Allow specific traffic
+# allow-frontend-to-api.yaml - Allow specific traffic
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -165,7 +166,7 @@ Portainer logs all user actions. View audit logs:
 1. Go to **Settings → Audit logs** (BE feature)
 2. Filter by user, action, or time range
 
-```
+```text
 2024-01-15 10:00:01  admin         CREATE   deployment  production/myapp
 2024-01-15 10:05:32  john.doe      DELETE   pod         staging/api-xxxx
 2024-01-15 10:10:44  jane.smith    UPDATE   configmap   development/app-config

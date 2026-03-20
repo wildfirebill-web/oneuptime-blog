@@ -271,6 +271,7 @@ For more control, use a bot account with the Mattermost API instead of incoming 
 
 ```bash
 # Check notification controller logs
+
 kubectl logs -n argocd deploy/argocd-notifications-controller -f
 
 # Test the webhook directly

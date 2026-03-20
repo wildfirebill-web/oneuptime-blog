@@ -23,6 +23,7 @@ Without conventions, container environments quickly look like this:
 ```bash
 podman ps --format "{{.Names}}"
 # my-db
+
 # test
 # nginx
 # app

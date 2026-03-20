@@ -18,6 +18,7 @@ By default, Elemental nodes use DHCP. This is configured automatically during re
 
 ```yaml
 # static-ip-config.yaml - Include in your MachineRegistration cloud-config
+
 cloud-config:
   write_files:
     # Create NetworkManager connection profile for static IP

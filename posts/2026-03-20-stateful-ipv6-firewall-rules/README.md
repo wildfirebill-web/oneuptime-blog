@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Firewall, Stateful, conntrack, nftables
+Tags: IPv6, Firewall, Stateful, Conntrack, nftables
 
 Description: Learn how to implement stateful IPv6 firewall rules using connection tracking to allow established connections while blocking new unauthorized connections.
 
@@ -26,6 +26,7 @@ Stateful firewalling tracks the state of each connection and allows packets that
 # Basic stateful INPUT policy:
 
 # 1. Allow loopback
+
 ip6tables -A INPUT -i lo -j ACCEPT
 
 # 2. Drop invalid packets (malformed, out of state)
@@ -53,11 +54,11 @@ table inet filter {
 
         iif lo accept
 
-        # Connection tracking — the stateful core
+        # Connection tracking - the stateful core
         ct state invalid drop
         ct state established,related accept
 
-        # NEW connections — only to authorized services
+        # NEW connections - only to authorized services
         ct state new tcp dport 22 accept
         ct state new tcp dport { 80, 443 } accept
 
@@ -103,11 +104,11 @@ table inet forward-filter {
 ICMPv6 is partially connection-tracked:
 
 ```bash
-# Echo request/reply — conntrack tracks these as ESTABLISHED
+# Echo request/reply - conntrack tracks these as ESTABLISHED
 ip6tables -A INPUT -p icmpv6 --icmpv6-type echo-request -m conntrack --ctstate NEW -j ACCEPT
 ip6tables -A INPUT -p icmpv6 --icmpv6-type echo-reply -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 
-# Error messages (Packet Too Big, Unreachable) — RELATED to the triggering flow
+# Error messages (Packet Too Big, Unreachable) - RELATED to the triggering flow
 ip6tables -A INPUT -p icmpv6 --icmpv6-type packet-too-big -m conntrack --ctstate RELATED -j ACCEPT
 ```
 
@@ -148,4 +149,4 @@ echo "net.netfilter.nf_conntrack_tcp_timeout_established = 3600" >> /etc/sysctl.
 
 ## Summary
 
-Stateful IPv6 firewalls use conntrack to track connection state (NEW, ESTABLISHED, RELATED, INVALID). The core rules are: `ct state invalid drop` (malformed/out-of-state packets), `ct state established,related accept` (return traffic for existing connections), and `ct state new <service> accept` (explicit allowlist for new connections). This pattern means you only need rules for new inbound connections — all return traffic is automatically allowed. Use `conntrack -L -f ipv6` to inspect the current state table and `conntrack -E -f ipv6 -e NEW` to monitor new IPv6 connections in real time.
+Stateful IPv6 firewalls use conntrack to track connection state (NEW, ESTABLISHED, RELATED, INVALID). The core rules are: `ct state invalid drop` (malformed/out-of-state packets), `ct state established,related accept` (return traffic for existing connections), and `ct state new <service> accept` (explicit allowlist for new connections). This pattern means you only need rules for new inbound connections - all return traffic is automatically allowed. Use `conntrack -L -f ipv6` to inspect the current state table and `conntrack -E -f ipv6 -e NEW` to monitor new IPv6 connections in real time.

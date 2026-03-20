@@ -103,6 +103,7 @@ The following command adds the MetalLB Helm repository to your local Helm config
 
 ```bash
 # Add the MetalLB Helm repository
+
 helm repo add metallb https://metallb.github.io/metallb
 
 # Update Helm repositories to fetch the latest chart versions

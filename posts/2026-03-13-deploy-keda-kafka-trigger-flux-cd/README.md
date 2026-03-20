@@ -29,6 +29,7 @@ For clusters using SASL authentication:
 
 ```yaml
 # clusters/my-cluster/keda-kafka/trigger-auth.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

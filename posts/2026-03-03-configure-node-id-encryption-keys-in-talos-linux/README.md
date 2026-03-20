@@ -34,6 +34,7 @@ The configuration is straightforward. Add the node ID key to your machine config
 
 ```yaml
 # Encrypt STATE partition with node ID key
+
 machine:
   systemDiskEncryption:
     state:

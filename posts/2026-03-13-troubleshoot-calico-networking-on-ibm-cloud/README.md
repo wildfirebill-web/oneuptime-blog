@@ -28,6 +28,7 @@ This guide covers the most common Calico networking failures on IBM Cloud and th
 
 ```bash
 # List all GlobalNetworkPolicies including IBM's
+
 calicoctl get globalnetworkpolicies -o wide | sort
 
 # IBM policies typically have names starting with "ibm-"

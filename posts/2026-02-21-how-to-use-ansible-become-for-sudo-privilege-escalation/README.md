@@ -29,6 +29,7 @@ The simplest way to use become is at the play level.
 
 ```yaml
 # playbooks/basic-become.yml
+
 # All tasks in this play run as root via sudo
 ---
 - name: System setup with sudo

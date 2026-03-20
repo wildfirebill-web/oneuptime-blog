@@ -12,9 +12,9 @@ Portainer and Coolify are both self-hosted platforms for managing containerized 
 
 ## Philosophy Comparison
 
-**Coolify**: "Deploy like Heroku/Render on your own server" — abstracts infrastructure, focuses on developer experience, handles SSL, domains, and git deployments automatically.
+**Coolify**: "Deploy like Heroku/Render on your own server" - abstracts infrastructure, focuses on developer experience, handles SSL, domains, and git deployments automatically.
 
-**Portainer**: "Manage Docker/Kubernetes through a visual interface" — exposes container primitives, requires some Docker knowledge, gives operators full control.
+**Portainer**: "Manage Docker/Kubernetes through a visual interface" - exposes container primitives, requires some Docker knowledge, gives operators full control.
 
 ## Feature Comparison
 
@@ -36,6 +36,7 @@ Coolify is designed for developers who want to deploy apps without managing cont
 
 ```bash
 # Coolify deployment workflow:
+
 # 1. Connect your Git repository
 # 2. Coolify detects the framework (Next.js, Laravel, etc.)
 # 3. Coolify builds with Nixpacks
@@ -45,7 +46,7 @@ Coolify is designed for developers who want to deploy apps without managing cont
 ```
 
 One-click database deployments:
-- PostgreSQL, MySQL, Redis, MongoDB — all provisioned with generated credentials
+- PostgreSQL, MySQL, Redis, MongoDB - all provisioned with generated credentials
 - Automatic backups
 - Connection strings injected into your app automatically
 

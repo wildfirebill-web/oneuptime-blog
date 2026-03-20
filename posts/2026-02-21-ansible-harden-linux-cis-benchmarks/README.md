@@ -56,6 +56,7 @@ Control which CIS sections to apply and configure exception handling.
 
 ```yaml
 # group_vars/all.yml
+
 # CIS Benchmark version
 cis_benchmark_version: "2.0.0"
 

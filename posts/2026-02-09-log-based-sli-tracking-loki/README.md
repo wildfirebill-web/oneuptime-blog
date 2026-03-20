@@ -361,6 +361,7 @@ Implement multi-window SLO tracking for better alerting:
 
 ```logql
 # 1-hour window (fast burn)
+
 (
   sum(rate({namespace="production", app="api-service"}
     | json

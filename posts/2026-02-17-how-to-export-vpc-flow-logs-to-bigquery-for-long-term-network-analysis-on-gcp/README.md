@@ -18,6 +18,7 @@ First, make sure flow logs are enabled on the subnets you want to analyze.
 
 ```bash
 # Enable flow logs on a subnet with metadata included
+
 gcloud compute networks subnets update production-subnet \
   --region=us-central1 \
   --enable-flow-logs \

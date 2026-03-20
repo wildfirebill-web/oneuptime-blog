@@ -196,6 +196,7 @@ After applying port-level mTLS settings, verify they are working:
 
 ```bash
 # Check the effective configuration
+
 istioctl x describe pod <pod-name> -n production
 ```
 

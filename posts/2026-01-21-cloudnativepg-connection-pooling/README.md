@@ -299,6 +299,7 @@ spec:
 
 ```bash
 # List pooler services
+
 kubectl get svc -l cnpg.io/poolerName
 
 # Services created:
@@ -490,7 +491,7 @@ default_pool_size = (max_connections * 0.8) / (num_databases * num_users)
 | Large app | 2000 | 30 | 200 |
 | High traffic | 5000 | 50 | 300 |
 
-### Resource Sizing
+Resource Sizing
 
 ```yaml
 # Small

@@ -31,6 +31,7 @@ Create a values file for your Mimir deployment:
 
 ```yaml
 # mimir-values.yaml
+
 mimir:
   structuredConfig:
     multitenancy_enabled: true

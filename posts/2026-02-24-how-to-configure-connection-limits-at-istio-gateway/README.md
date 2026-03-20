@@ -319,6 +319,7 @@ Track connection metrics to understand your capacity:
 
 ```promql
 # Active connections at the gateway
+
 envoy_server_total_connections{pod=~"istio-ingressgateway.*"}
 
 # Connection rate

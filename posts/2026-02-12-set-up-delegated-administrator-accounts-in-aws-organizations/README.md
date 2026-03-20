@@ -75,6 +75,7 @@ Some services use the Organizations API directly for delegation:
 
 ```bash
 # Register an account as a delegated administrator for a service
+
 aws organizations register-delegated-administrator \
   --account-id 222222222222 \
   --service-principal config-multiaccountsetup.amazonaws.com

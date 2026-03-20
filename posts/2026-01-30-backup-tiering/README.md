@@ -137,6 +137,7 @@ flowchart LR
 
 ```yaml
 # Storage cost comparison (per GB/month)
+
 aws:
   hot: $0.023      # S3 Standard
   warm: $0.0125    # S3 Infrequent Access

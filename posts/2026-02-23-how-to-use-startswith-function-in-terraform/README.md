@@ -16,6 +16,7 @@ The `startswith` function takes two arguments: a string and a prefix. It returns
 
 ```hcl
 # Basic syntax
+
 startswith(string, prefix)
 ```
 

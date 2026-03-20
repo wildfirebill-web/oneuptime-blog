@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Static Address, PowerShell, netsh
+Tags: IPv6, Windows, Static Address, PowerShell, Netsh
 
 Description: Learn how to assign static IPv6 addresses on Windows using PowerShell, netsh, and the GUI, including setting a gateway and DNS servers for full IPv6 connectivity.
 
@@ -10,6 +10,7 @@ Description: Learn how to assign static IPv6 addresses on Windows using PowerShe
 
 ```powershell
 # Get the interface index or alias
+
 Get-NetAdapter | Select-Object Name, InterfaceIndex, Status
 
 # Add a static IPv6 address
@@ -46,7 +47,7 @@ netsh interface ipv6 show routes
 
 ## Configure Static IPv6 via GUI
 
-```
+```sql
 Steps:
 1. Open ncpa.cpl (Win + R → ncpa.cpl)
 

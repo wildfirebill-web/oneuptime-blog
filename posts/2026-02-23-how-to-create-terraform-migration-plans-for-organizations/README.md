@@ -18,6 +18,7 @@ Before writing any migration plan, understand where you are starting from:
 
 ```yaml
 # migration/assessment.yaml
+
 # Infrastructure assessment for Terraform migration
 
 current_state:
@@ -139,7 +140,7 @@ phases:
       - Final documentation
 ```
 
-## Resource Import Strategy
+Resource Import Strategy
 
 For existing resources, you need a systematic import approach:
 

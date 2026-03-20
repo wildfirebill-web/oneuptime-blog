@@ -20,6 +20,7 @@ The traditional approach to sharing Kustomize bases looks like this:
 
 ```yaml
 # kustomization.yaml referencing a remote Git base
+
 resources:
   - https://github.com/my-org/k8s-bases//nginx-base?ref=v1.2.0
 ```

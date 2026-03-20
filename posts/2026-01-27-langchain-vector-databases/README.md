@@ -20,6 +20,7 @@ Before diving into implementations, it helps to understand how vector databases 
 
 ```python
 # embeddings_intro.py
+
 # Demonstrates how text becomes vectors for semantic search
 
 from langchain_openai import OpenAIEmbeddings

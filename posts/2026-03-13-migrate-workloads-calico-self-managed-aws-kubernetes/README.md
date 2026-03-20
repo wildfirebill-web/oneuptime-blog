@@ -33,6 +33,7 @@ Drain the first node to safely evict all workloads before modifying the CNI:
 
 ```bash
 # Identify all nodes in the cluster
+
 kubectl get nodes -o wide
 
 # Cordon the first worker node to prevent new scheduling

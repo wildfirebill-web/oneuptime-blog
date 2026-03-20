@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, HTTPS, TLS, NGINX, Security
+Tags: Ubuntu, HTTPS, TLS, Nginx, Security
 
 Description: Configure HTTPS on Ubuntu using ECDSA certificates for faster TLS handshakes and smaller key sizes compared to RSA, with Nginx and Let's Encrypt examples.
 
@@ -28,6 +28,7 @@ For a self-signed certificate or a CSR to submit to a CA:
 
 ```bash
 # Generate an ECDSA P-256 private key
+
 openssl ecparam -name prime256v1 -genkey -noout -out ecdsa-private.key
 
 # Generate an ECDSA P-384 key (stronger, slower)

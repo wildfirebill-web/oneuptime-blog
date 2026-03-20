@@ -65,6 +65,7 @@ This is where Aurora absolutely shines. Standard RDS replication uses logical re
 
 ```bash
 # Compare replication lag between RDS and Aurora
+
 # RDS MySQL - check replica lag
 mysql -h rds-replica.abc123.us-east-1.rds.amazonaws.com -u admin -p \
   -e "SHOW SLAVE STATUS\G" | grep "Seconds_Behind_Master"

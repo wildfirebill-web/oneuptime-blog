@@ -24,6 +24,7 @@ This command checks instance-level metadata for the OS Login setting:
 
 ```bash
 # Check if OS Login is enabled on a specific instance
+
 gcloud compute instances describe my-instance \
   --zone=us-central1-a \
   --format="value(metadata.items[key='enable-oslogin'].value)"

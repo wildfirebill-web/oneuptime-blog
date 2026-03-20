@@ -32,6 +32,7 @@ Before deploying with ArgoCD, understand the key concepts:
 
 ```yaml
 # Default deny all ingress - foundation of zero-trust
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

@@ -12,7 +12,7 @@ Neighbor Solicitation (NS) is ICMPv6 Type 135, the IPv6 replacement for ARP requ
 
 ## NS Message Format
 
-```
+```text
 ICMPv6 Neighbor Solicitation (Type 135):
 
  0                   1                   2                   3
@@ -36,7 +36,7 @@ IPv6 Header:
 
 ## Three Contexts for NS Messages
 
-```
+```text
 Context 1: Address Resolution (IPv6 → MAC mapping)
   Purpose:  Find the MAC address for a known IPv6 address
   Source:   Sender's link-local address (fe80::...)
@@ -68,6 +68,7 @@ Context 3: Neighbor Unreachability Detection (NUD)
 
 ```bash
 # Capture all Neighbor Solicitation messages
+
 sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 135"
 
 # Capture DAD NS messages (source is ::)

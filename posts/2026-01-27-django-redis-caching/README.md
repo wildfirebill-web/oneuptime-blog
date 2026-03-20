@@ -118,6 +118,7 @@ The cache API provides direct control over cached data.
 from django.core.cache import cache
 
 # Set a value with default timeout
+
 cache.set("user_123_profile", user_profile)
 
 # Set with custom timeout (seconds)

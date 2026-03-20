@@ -30,6 +30,7 @@ Run these commands to get an overview:
 
 ```bash
 # Check sidecar CPU and memory usage
+
 kubectl top pods --containers --all-namespaces | grep istio-proxy | sort -k4 -rn | head -20
 
 # Check istiod resource usage

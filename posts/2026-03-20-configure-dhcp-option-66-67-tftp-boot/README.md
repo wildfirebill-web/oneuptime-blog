@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, TFTP, PXE Boot, Option 66, Option 67, sysadmin
+Tags: DHCP, TFTP, PXE Boot, Option 66, Option 67, Sysadmin
 
 Description: DHCP option 66 delivers the TFTP server hostname or IP and option 67 delivers the boot filename to network-booting clients, together enabling PXE and VoIP phone provisioning workflows.
 
@@ -17,10 +17,11 @@ These options inform DHCP clients where to find their boot file and what file to
 
 ## ISC dhcpd Configuration
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 
 # For BIOS PXE boot
+
 subnet 10.0.0.0 netmask 255.255.255.0 {
     range 10.0.0.100 10.0.0.200;
     option routers 10.0.0.1;
@@ -51,7 +52,7 @@ class "BIOS" {
 
 ## dnsmasq Configuration
 
-```
+```text
 # /etc/dnsmasq.conf
 
 # Enable TFTP server built into dnsmasq
@@ -70,7 +71,7 @@ dhcp-boot=tag:!efi-x86_64,pxelinux.0,tftpserver,10.0.0.10
 
 ## For VoIP Phones (Generic)
 
-```
+```text
 # Phones needing firmware from TFTP
 subnet 10.0.30.0 netmask 255.255.255.0 {
     range 10.0.30.10 10.0.30.250;

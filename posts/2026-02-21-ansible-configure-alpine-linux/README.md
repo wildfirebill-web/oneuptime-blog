@@ -28,6 +28,7 @@ Alpine does not have Python pre-installed. Use the raw module to install it:
 ```yaml
 ---
 # bootstrap_alpine.yml
+
 - name: Bootstrap Alpine Linux
   hosts: alpine
   gather_facts: false

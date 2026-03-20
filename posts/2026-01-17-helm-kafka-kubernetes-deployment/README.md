@@ -55,6 +55,7 @@ flowchart TB
 
 ```bash
 # Add Bitnami repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
 # Update repositories
@@ -657,7 +658,7 @@ await consumer.run({
 });
 ```
 
-## Resource Sizing Guide
+Resource Sizing Guide
 
 | Cluster Size | Brokers | CPU/Broker | Memory/Broker | Storage |
 |--------------|---------|------------|---------------|---------|

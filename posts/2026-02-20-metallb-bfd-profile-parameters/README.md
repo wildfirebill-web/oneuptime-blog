@@ -74,6 +74,7 @@ Start with a baseline profile using MetalLB's defaults. This is a good starting 
 
 ```yaml
 # BFDProfile with default parameters
+
 # This provides sub-second failure detection (900ms)
 apiVersion: metallb.io/v1beta1
 kind: BFDProfile

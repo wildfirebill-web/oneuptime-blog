@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Network Mirror, Provider Cache, Air-Gap, Infrastructure as Code, Security
 
-Description: Learn how to set up and use OpenTofu's network mirror protocol — serving provider binaries from an internal server for air-gapped environments, faster CI downloads, and supply chain security.
+Description: Learn how to set up and use OpenTofu's network mirror protocol - serving provider binaries from an internal server for air-gapped environments, faster CI downloads, and supply chain security.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ OpenTofu's network mirror protocol allows you to serve provider binaries from an
 
 ## How Network Mirrors Work
 
-```
+```hcl
 Normal provider installation:
   tofu init → registry.opentofu.org → HashiCorp releases.hashicorp.com
 
@@ -24,15 +24,15 @@ With network mirror:
 
 The network mirror must serve files at these paths:
 
-```
-/{hostname}/{namespace}/{type}/index.json           — list versions
-/{hostname}/{namespace}/{type}/{version}.json       — per-version metadata
-/{hostname}/{namespace}/{type}/{version}/{filename} — provider binary
+```text
+/{hostname}/{namespace}/{type}/index.json           - list versions
+/{hostname}/{namespace}/{type}/{version}.json       - per-version metadata
+/{hostname}/{namespace}/{type}/{version}/{filename} - provider binary
 ```
 
 Example for `registry.opentofu.org/hashicorp/aws`:
 
-```
+```text
 /registry.opentofu.org/hashicorp/aws/index.json
 /registry.opentofu.org/hashicorp/aws/5.31.0.json
 /registry.opentofu.org/hashicorp/aws/5.31.0/terraform-provider-aws_5.31.0_linux_amd64.zip
@@ -78,6 +78,7 @@ Example for `registry.opentofu.org/hashicorp/aws`:
 
 ```bash
 # Download all required providers to a local directory
+
 cd your-tofu-project/
 
 tofu init  # First, initialize to resolve provider versions
@@ -141,13 +142,13 @@ provider_installation {
 ## Exclusive Mirror (Air-Gapped)
 
 ```hcl
-# ~/.terraformrc — no internet access, mirror only
+# ~/.terraformrc - no internet access, mirror only
 provider_installation {
   network_mirror {
     url     = "https://mirror.mycompany.internal/"
     include = ["*/*/*"]  # All providers must come from mirror
   }
-  # No 'direct' block — fail if not in mirror
+  # No 'direct' block - fail if not in mirror
 }
 ```
 
@@ -172,14 +173,14 @@ Using a network mirror in CI for faster builds:
 
 - name: OpenTofu Init
   run: tofu init
-  # Providers served from internal mirror — fast, no internet needed
+  # Providers served from internal mirror - fast, no internet needed
 ```
 
 ## Updating the Mirror
 
 ```bash
 #!/bin/bash
-# scripts/update-mirror.sh — sync latest provider versions to mirror
+# scripts/update-mirror.sh - sync latest provider versions to mirror
 
 PROVIDERS=(
   "registry.opentofu.org/hashicorp/aws"

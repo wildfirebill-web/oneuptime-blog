@@ -23,6 +23,7 @@ Rocket.Chat is a feature-complete team messaging platform with channels, DMs, vi
 
 ```yaml
 # docker-compose.yml - Rocket.Chat with MongoDB
+
 version: "3.8"
 
 networks:

@@ -59,6 +59,7 @@ Now you can use Tab to complete kubectl commands:
 ```bash
 kubectl get po<Tab>
 # Completes to: kubectl get pods
+
 ```
 
 ## Setting Up Autocompletion in Zsh

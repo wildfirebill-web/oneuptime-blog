@@ -195,6 +195,7 @@ Wait, this doesn't quite work as expected. AuthorizationPolicy for outbound traf
 
 ```yaml
 # Egress gateway authorization
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

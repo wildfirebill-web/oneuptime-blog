@@ -18,6 +18,7 @@ Start by setting up a new Blazor WebAssembly project. We will use the hosted tem
 
 ```bash
 # Create a new Blazor WASM standalone app
+
 dotnet new blazorwasm -n BlazorStaticDemo --no-https
 cd BlazorStaticDemo
 ```

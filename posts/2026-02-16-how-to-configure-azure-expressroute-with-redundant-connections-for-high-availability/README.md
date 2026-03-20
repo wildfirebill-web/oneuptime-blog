@@ -48,6 +48,7 @@ Create your first ExpressRoute circuit in your primary peering location:
 
 ```bash
 # Create the primary ExpressRoute circuit
+
 az network express-route create \
   --resource-group myResourceGroup \
   --name primaryCircuit \

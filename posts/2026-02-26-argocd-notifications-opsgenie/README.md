@@ -177,6 +177,7 @@ Note: The auto-close approach above uses the alert alias to identify which alert
 
 ```bash
 # Subscribe critical applications
+
 kubectl annotate app production-api -n argocd \
   notifications.argoproj.io/subscribe.on-sync-failed-opsgenie.opsgenie=""
 kubectl annotate app production-api -n argocd \

@@ -24,6 +24,7 @@ Certbot is the most popular Let's Encrypt client. Install it along with the web 
 
 ```yaml
 # install_certbot.yml - Install certbot and plugins
+
 ---
 - name: Install certbot
   hosts: webservers

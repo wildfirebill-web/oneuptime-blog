@@ -20,6 +20,7 @@ The devpts filesystem is typically mounted at `/dev/pts` inside containers and p
 
 ```bash
 # Check the default devpts mount in a container
+
 podman run --rm docker.io/library/alpine:latest mount | grep devpts
 # Output: devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,...)
 

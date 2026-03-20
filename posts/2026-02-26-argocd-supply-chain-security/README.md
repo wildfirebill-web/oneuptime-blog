@@ -34,6 +34,7 @@ A complete supply chain security implementation with ArgoCD includes these compo
 
 ```yaml
 # Deploy the entire security stack with an ApplicationSet
+
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:

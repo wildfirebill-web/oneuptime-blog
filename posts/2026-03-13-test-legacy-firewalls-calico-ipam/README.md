@@ -30,6 +30,7 @@ Understand how Calico assigns IPs to help plan firewall rules.
 
 ```bash
 # Check the CIDR range used by Calico IPAM
+
 calicoctl get ippools -o yaml | grep cidr
 
 # Deploy a test pod and record its initial IP

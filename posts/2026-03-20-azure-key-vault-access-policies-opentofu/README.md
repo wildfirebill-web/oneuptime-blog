@@ -14,6 +14,7 @@ Azure Key Vault uses access policies to control which users, applications, and s
 
 ```hcl
 # main.tf - Key Vault with access policy model
+
 data "azurerm_client_config" "current" {}
 
 resource "azurerm_key_vault" "kv" {

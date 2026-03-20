@@ -65,6 +65,7 @@ The `tf2pulumi` tool automatically converts Terraform HCL to Pulumi code in your
 
 ```bash
 # Install Pulumi CLI first (if not already installed)
+
 curl -fsSL https://get.pulumi.com | sh
 
 # Install tf2pulumi

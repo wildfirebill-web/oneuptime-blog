@@ -8,7 +8,7 @@ Description: Learn how peer-to-peer NAT traversal works for IPv4 networks, inclu
 
 ## Why NAT Traversal Is Needed
 
-```
+```text
 Peer A (192.168.1.10)   ←→   NAT (public IP 1.2.3.4)   ←→   Internet
 Peer B (10.0.0.5)       ←→   NAT (public IP 5.6.7.8)   ←→   Internet
 ```
@@ -22,6 +22,7 @@ import socket
 import struct
 
 # Minimal STUN binding request
+
 STUN_SERVERS = [
     ("stun.l.google.com",  19302),
     ("stun1.l.google.com", 19302),
@@ -73,7 +74,7 @@ print(f"External address: {ext_ip}:{ext_port}")
 ## Step 2: Rendezvous Server
 
 ```python
-# Simple UDP rendezvous server — runs on a public IP
+# Simple UDP rendezvous server - runs on a public IP
 import socket
 
 peers: dict[str, tuple[str, int]] = {}
@@ -127,9 +128,9 @@ def hole_punch(local_port: int, peer_ip: str, peer_port: int) -> socket.socket:
         print(f"P2P connection established with {addr}")
         return sock
     except socket.timeout:
-        raise RuntimeError("Hole punch failed — peers could not reach each other")
+        raise RuntimeError("Hole punch failed - peers could not reach each other")
 ```
 
 ## Conclusion
 
-UDP hole punching involves three steps: both peers use STUN to discover their external NAT address, exchange this information via a rendezvous server (on a public IP), and simultaneously send UDP packets to each other's external address to open symmetric NAT mappings. The key is simultaneity — both peers must send within a few seconds of each other. This technique works for most NAT types (full cone, address-restricted) but fails for symmetric NAT, which requires TURN relay as a fallback.
+UDP hole punching involves three steps: both peers use STUN to discover their external NAT address, exchange this information via a rendezvous server (on a public IP), and simultaneously send UDP packets to each other's external address to open symmetric NAT mappings. The key is simultaneity - both peers must send within a few seconds of each other. This technique works for most NAT types (full cone, address-restricted) but fails for symmetric NAT, which requires TURN relay as a fallback.

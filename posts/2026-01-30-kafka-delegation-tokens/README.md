@@ -63,6 +63,7 @@ Enable delegation tokens in your Kafka broker configuration:
 # server.properties
 
 # Enable delegation token authentication
+
 delegation.token.master.key=your-secret-master-key
 delegation.token.max.lifetime.ms=604800000
 delegation.token.expiry.time.ms=86400000

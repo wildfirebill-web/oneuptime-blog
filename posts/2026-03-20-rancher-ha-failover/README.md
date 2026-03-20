@@ -8,7 +8,7 @@ Description: Systematically test Rancher HA failover scenarios including node fa
 
 ## Introduction
 
-Failover testing is essential to validate that your Rancher HA configuration works as expected before you need it in production. This guide covers testing various failure scenarios—node failures, network issues, and etcd member loss—and documenting expected behavior and recovery times.
+Failover testing is essential to validate that your Rancher HA configuration works as expected before you need it in production. This guide covers testing various failure scenarios-node failures, network issues, and etcd member loss-and documenting expected behavior and recovery times.
 
 ## Prerequisites
 
@@ -23,6 +23,7 @@ Failover testing is essential to validate that your Rancher HA configuration wor
 # Record baseline metrics before testing
 
 # Check cluster health
+
 kubectl get nodes -o wide
 kubectl get pods -n cattle-system
 kubectl get pods -n kube-system | grep etcd

@@ -42,6 +42,7 @@ For reproducibility, use the CLI to generate tokens. Here is how to create an ac
 
 ```bash
 # Generate an account SAS token with read and list permissions
+
 # Valid for 24 hours, restricted to blob service only
 az storage account generate-sas \
   --account-name mystorageaccount \

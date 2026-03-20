@@ -29,7 +29,8 @@ graph LR
 Navigate to **Stacks > Add Stack** in Portainer. Use the following Compose definition for a development/staging setup using Jaeger all-in-one:
 
 ```yaml
-# Jaeger all-in-one stack — suitable for dev and small production setups
+# Jaeger all-in-one stack - suitable for dev and small production setups
+
 # For large-scale production, use separate collector/query/ingester components
 version: "3.8"
 
@@ -64,7 +65,7 @@ networks:
 Set the following environment variables in your application containers (add them via Portainer's environment variable editor):
 
 ```bash
-# OTLP HTTP exporter — simplest option for most languages
+# OTLP HTTP exporter - simplest option for most languages
 OTEL_EXPORTER_OTLP_ENDPOINT=http://jaeger:4318
 OTEL_SERVICE_NAME=order-service
 OTEL_TRACES_EXPORTER=otlp
@@ -73,7 +74,7 @@ OTEL_TRACES_EXPORTER=otlp
 For a Node.js application using the OTel SDK:
 
 ```javascript
-// tracing.js — initialize before importing your app code
+// tracing.js - initialize before importing your app code
 const { NodeSDK } = require("@opentelemetry/sdk-node");
 const { OTLPTraceExporter } = require("@opentelemetry/exporter-trace-otlp-http");
 const { getNodeAutoInstrumentations } = require("@opentelemetry/auto-instrumentations-node");
@@ -93,9 +94,9 @@ sdk.start();
 
 Open `http://<your-host>:16686` in your browser. You will see:
 
-1. **Search** — find traces by service, operation, tags, and duration
-2. **Trace Timeline** — visualize span hierarchy and timing
-3. **Dependency Graph** — see how services call each other
+1. **Search** - find traces by service, operation, tags, and duration
+2. **Trace Timeline** - visualize span hierarchy and timing
+3. **Dependency Graph** - see how services call each other
 
 ## Step 4: Production Storage Backend
 
@@ -128,7 +129,7 @@ volumes:
 
 Jaeger exposes health and metrics endpoints. Monitor them from Portainer or add them to your existing Prometheus scrape config:
 
-```
+```text
 GET http://jaeger:14269/metrics   # Prometheus metrics
 GET http://jaeger:14269/          # Health check
 ```

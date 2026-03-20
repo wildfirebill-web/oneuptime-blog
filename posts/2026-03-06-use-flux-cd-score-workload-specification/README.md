@@ -43,6 +43,7 @@ Install the Score CLI for Kubernetes target:
 
 ```bash
 # Install score-k8s on macOS
+
 brew install score-spec/tap/score-k8s
 
 # Or download directly for Linux
@@ -484,7 +485,7 @@ kubectl describe kustomization my-web-app -n flux-system
 flux reconcile kustomization my-web-app --with-source
 ```
 
-### Resource Reference Resolution
+Resource Reference Resolution
 
 If database or cache references are not resolving:
 

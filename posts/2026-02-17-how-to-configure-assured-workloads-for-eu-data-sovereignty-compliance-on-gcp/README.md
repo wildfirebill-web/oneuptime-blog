@@ -24,6 +24,7 @@ Before you start, you need an active Google Cloud organization, a billing accoun
 
 ```bash
 # Verify your organization
+
 gcloud organizations list
 
 # Check your current roles

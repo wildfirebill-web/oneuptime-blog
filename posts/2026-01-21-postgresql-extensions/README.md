@@ -57,6 +57,7 @@ DROP EXTENSION extension_name CASCADE;
 
 ```bash
 # Ubuntu/Debian - Install contrib extensions
+
 sudo apt install postgresql-contrib-16
 
 # Install specific extension package

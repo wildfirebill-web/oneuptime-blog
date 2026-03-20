@@ -14,21 +14,22 @@ Description: Configure PostgreSQL's pg_hba.conf to control which IPv4 hosts can 
 
 ```bash
 # Format:
+
 # TYPE  DATABASE  USER  ADDRESS  METHOD
 
 # TYPE values:
-# local    — Unix domain socket
-# host     — TCP/IP (SSL or non-SSL)
-# hostssl  — TCP/IP with SSL required
-# hostnossl — TCP/IP without SSL
+# local    - Unix domain socket
+# host     - TCP/IP (SSL or non-SSL)
+# hostssl  - TCP/IP with SSL required
+# hostnossl - TCP/IP without SSL
 
 # METHOD values:
-# trust      — Accept without password (local only!)
-# reject     — Reject always
-# md5        — MD5 password
-# scram-sha-256 — SCRAM-SHA-256 (recommended for PostgreSQL 14+)
-# peer       — OS username must match (local only)
-# ident      — Ident server (rare)
+# trust      - Accept without password (local only!)
+# reject     - Reject always
+# md5        - MD5 password
+# scram-sha-256 - SCRAM-SHA-256 (recommended for PostgreSQL 14+)
+# peer       - OS username must match (local only)
+# ident      - Ident server (rare)
 ```
 
 ## Common pg_hba.conf Patterns
@@ -36,7 +37,7 @@ Description: Configure PostgreSQL's pg_hba.conf to control which IPv4 hosts can 
 ```bash
 # /etc/postgresql/16/main/pg_hba.conf
 
-# Local connections (Unix socket) — trust for postgres user
+# Local connections (Unix socket) - trust for postgres user
 local   all             postgres                                peer
 
 # Local IPv4 loopback
@@ -64,7 +65,7 @@ host    all             all             0.0.0.0/0               reject
 ## Rule Ordering Matters
 
 ```bash
-# WRONG: Subnet ALLOW before specific IP DENY — specific IP still allowed!
+# WRONG: Subnet ALLOW before specific IP DENY - specific IP still allowed!
 host all all 10.0.0.0/24 md5
 host all all 10.0.0.99/32 reject   # Never reached for 10.0.0.99
 
@@ -104,4 +105,4 @@ sudo tail -f /var/log/postgresql/postgresql-16-main.log | grep -E "FATAL|auth"
 
 ## Conclusion
 
-`pg_hba.conf` rules are matched from top to bottom—order is critical. Place `reject` rules before `allow` rules when blocking specific IPs within an allowed subnet. Use `scram-sha-256` over `md5` for new PostgreSQL 14+ deployments. Always use `hostssl` for connections from untrusted networks, and reload (not restart) PostgreSQL after pg_hba.conf changes.
+`pg_hba.conf` rules are matched from top to bottom-order is critical. Place `reject` rules before `allow` rules when blocking specific IPs within an allowed subnet. Use `scram-sha-256` over `md5` for new PostgreSQL 14+ deployments. Always use `hostssl` for connections from untrusted networks, and reload (not restart) PostgreSQL after pg_hba.conf changes.

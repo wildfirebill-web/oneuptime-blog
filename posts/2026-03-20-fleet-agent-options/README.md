@@ -8,7 +8,7 @@ Description: Learn how to configure Fleet agent options to customize agent behav
 
 ## Introduction
 
-The Fleet agent runs in each managed cluster and is responsible for receiving bundle deployments and applying resources. Properly configuring the agent ensures it can operate correctly in your specific environment — whether that means setting proxy configurations, resource limits, custom tolerations, or connection settings.
+The Fleet agent runs in each managed cluster and is responsible for receiving bundle deployments and applying resources. Properly configuring the agent ensures it can operate correctly in your specific environment - whether that means setting proxy configurations, resource limits, custom tolerations, or connection settings.
 
 This guide covers all Fleet agent configuration options and how to apply them at installation time or update them for existing agents.
 
@@ -32,6 +32,7 @@ When installing the Fleet agent via Helm, you can configure all options:
 
 ```bash
 # Full Fleet agent installation with options
+
 helm install fleet-agent fleet/fleet-agent \
   --namespace cattle-fleet-system \
   --create-namespace \
@@ -260,4 +261,4 @@ kubectl get deployment fleet-agent \
 
 ## Conclusion
 
-Properly configuring the Fleet agent ensures reliable operation in diverse environments — from resource-constrained edge devices to enterprise clusters behind corporate proxies. By setting appropriate resource limits, configuring proxy settings where needed, and applying the right tolerations and node selectors, you ensure the Fleet agent runs stably and connects reliably to the Fleet manager. Regular verification of agent health and periodic updates keep your management infrastructure current and operational.
+Properly configuring the Fleet agent ensures reliable operation in diverse environments - from resource-constrained edge devices to enterprise clusters behind corporate proxies. By setting appropriate resource limits, configuring proxy settings where needed, and applying the right tolerations and node selectors, you ensure the Fleet agent runs stably and connects reliably to the Fleet manager. Regular verification of agent health and periodic updates keep your management infrastructure current and operational.

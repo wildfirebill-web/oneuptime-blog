@@ -22,6 +22,7 @@ Start by checking that the provider resource exists and has the correct configur
 
 ```bash
 # List all providers in the flux-system namespace
+
 kubectl get providers -n flux-system
 
 # View the full provider configuration

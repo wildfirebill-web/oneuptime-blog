@@ -36,7 +36,7 @@ spec:
 
 Setting `sidecar.istio.io/inject` to `"false"` skips injection for that pod, even if the namespace has injection enabled. This is useful for jobs, init-only pods, or services that should not be in the mesh.
 
-## Resource Annotations
+Resource Annotations
 
 Control CPU and memory for the sidecar proxy:
 
@@ -234,6 +234,7 @@ After deploying, check that annotations were applied:
 POD=$(kubectl get pod -l app=payment-service -o jsonpath='{.items[0].metadata.name}')
 
 # Check resource limits on the proxy
+
 kubectl get pod $POD -o jsonpath='{.spec.containers[?(@.name=="istio-proxy")].resources}' | jq .
 
 # Check environment variables

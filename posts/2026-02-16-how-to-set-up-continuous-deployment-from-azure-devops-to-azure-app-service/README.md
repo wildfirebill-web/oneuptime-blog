@@ -42,6 +42,7 @@ Create a file called `azure-pipelines.yml` in the root of your repository. Here 
 
 ```yaml
 # azure-pipelines.yml - CI pipeline for building and testing the app
+
 trigger:
   branches:
     include:

@@ -18,6 +18,7 @@ Cloud Functions Gen2 are HTTP-triggered by default. Here is how to call one from
 
 ```yaml
 # call-cloud-function.yaml
+
 # Workflow that calls a Cloud Function to process data
 
 main:

@@ -10,7 +10,7 @@ Description: Learn how to build a reliable data transfer protocol on top of IPv4
 
 Stop-and-wait ARQ (Automatic Repeat reQuest) sends one packet at a time, waits for an ACK, and retransmits on timeout. It's simple but has low throughput on high-latency links.
 
-```
+```text
 Sender                    Receiver
   │─── DATA seq=1 ──────►│
   │◄── ACK  seq=1 ────────│
@@ -89,13 +89,13 @@ class ReliableUDPReceiver:
             if mtype != DATA_MSG:
                 continue
 
-            # Send ACK regardless (handles lost ACKs — sender will retransmit)
+            # Send ACK regardless (handles lost ACKs - sender will retransmit)
             self.sock.sendto(pack(ACK_MSG, 0, seq), addr)
 
             if seq == self.expected_seq:
                 self.expected_seq = (self.expected_seq + 1) % (MAX_SEQ + 1)
                 return payload, addr
-            # Duplicate or out-of-order — discard (ACK already sent)
+            # Duplicate or out-of-order - discard (ACK already sent)
 
     def close(self) -> None:
         self.sock.close()
@@ -117,7 +117,7 @@ def reliable_send_file(filepath: str, dest_ip: str, dest_port: int) -> None:
             if not chunk:
                 break
             if not sender.send(chunk):
-                print("Transfer failed — giving up")
+                print("Transfer failed - giving up")
                 return
             sent += len(chunk)
             print(f"\rProgress: {sent/filesize*100:.1f}%", end="", flush=True)

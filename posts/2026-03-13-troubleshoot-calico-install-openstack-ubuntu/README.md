@@ -26,6 +26,7 @@ etcd is the foundation of Calico in OpenStack mode.
 
 ```bash
 # On the controller node
+
 etcdctl endpoint health
 etcdctl cluster-health
 ```

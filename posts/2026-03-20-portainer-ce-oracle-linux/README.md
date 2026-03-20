@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, oracle-linux, docker, installation, rhel-compatible
+Tags: Portainer, Oracle-linux, Docker, Installation, Rhel-compatible
 
 Description: A guide to installing Portainer Community Edition on Oracle Linux 8 and 9 with Docker, covering the Oracle-specific UEK kernel and Docker installation.
 
@@ -28,6 +28,7 @@ Oracle Linux ships with Podman which can conflict:
 
 ```bash
 # Check for conflicting packages
+
 rpm -qa | grep -E 'docker|podman|containerd'
 
 # Remove podman if desired

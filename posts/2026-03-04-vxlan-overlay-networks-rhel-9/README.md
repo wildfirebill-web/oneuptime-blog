@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, VXLAN, Networking, Overlay Networks, Linux
+Tags: RHEL, VXLAN, Networking, Overlay Network, Linux
 
 Description: Learn how to create VXLAN overlay networks on RHEL for extending Layer 2 segments across Layer 3 boundaries, enabling flexible network architectures.
 
@@ -33,6 +33,7 @@ graph TD
 
 ```bash
 # Create a VXLAN interface with VNI (VXLAN Network Identifier) 42
+
 # The remote IP is the underlay address of Host B
 # dstport 4789 is the standard VXLAN UDP port
 sudo ip link add vxlan42 type vxlan \

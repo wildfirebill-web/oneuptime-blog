@@ -33,6 +33,7 @@ Each marketplace package is a directory in a Git repository with a standard stru
 
 ```yaml
 # marketplace/packages/python-flask/manifest.yaml
+
 name: python-flask
 display_name: "Python Flask Service"
 description: "Dashboards and alerts for Flask services instrumented with OpenTelemetry"

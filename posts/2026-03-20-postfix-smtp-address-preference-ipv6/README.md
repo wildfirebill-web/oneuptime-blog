@@ -22,6 +22,7 @@ When `inet_protocols = all` is set in Postfix, both IPv4 and IPv6 may be availab
 
 ```bash
 # Check current preference setting
+
 postconf smtp_address_preference
 
 # Check along with related settings

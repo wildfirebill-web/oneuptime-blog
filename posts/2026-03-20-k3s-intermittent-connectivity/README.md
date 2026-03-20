@@ -8,7 +8,7 @@ Description: Learn how to configure K3s to operate reliably in environments with
 
 ## Introduction
 
-Many edge deployments operate in environments with unreliable connectivity — remote sites connected via cellular links, satellite internet, or low-bandwidth connections that frequently go offline. K3s is excellent in these scenarios because it continues running autonomously when disconnected, but workloads and configuration need to be designed with intermittent connectivity in mind. This guide covers strategies for resilient K3s deployments in connectivity-challenged environments.
+Many edge deployments operate in environments with unreliable connectivity - remote sites connected via cellular links, satellite internet, or low-bandwidth connections that frequently go offline. K3s is excellent in these scenarios because it continues running autonomously when disconnected, but workloads and configuration need to be designed with intermittent connectivity in mind. This guide covers strategies for resilient K3s deployments in connectivity-challenged environments.
 
 ## Key Challenges with Intermittent Connectivity
 
@@ -25,6 +25,7 @@ Ensure all required images are cached locally before deployment:
 ```bash
 #!/bin/bash
 # pre-pull-images.sh
+
 # Run this script during initial setup or maintenance windows
 
 IMAGES=(

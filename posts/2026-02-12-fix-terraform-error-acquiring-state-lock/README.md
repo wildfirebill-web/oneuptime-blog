@@ -18,6 +18,7 @@ When using a remote backend like S3 with DynamoDB locking, Terraform creates a l
 
 ```bash
 # Check the lock in DynamoDB
+
 aws dynamodb get-item \
     --table-name terraform-locks \
     --key '{"LockID": {"S": "my-bucket/terraform.tfstate"}}' \

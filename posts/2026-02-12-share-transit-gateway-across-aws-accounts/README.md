@@ -55,6 +55,7 @@ Enable RAM sharing in your Organization from the management account:
 
 ```bash
 # Run in the AWS Organizations management account
+
 aws ram enable-sharing-with-aws-organization
 ```
 

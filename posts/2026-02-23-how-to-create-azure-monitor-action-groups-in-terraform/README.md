@@ -18,6 +18,7 @@ An action group can contain multiple action types, and a single alert can trigge
 
 ```hcl
 # Configure the Azure provider
+
 terraform {
   required_providers {
     azurerm = {

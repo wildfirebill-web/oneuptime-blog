@@ -24,6 +24,7 @@ Set up monitoring to catch ztunnel issues before they cause cascading failures:
 
 ```bash
 # Check ztunnel pod status across all nodes
+
 kubectl get pods -n istio-system -l app=ztunnel -o wide
 
 # Look for restarts
@@ -122,7 +123,7 @@ kubectl exec -n istio-system ztunnel-xxxxx -- \
   curl -s http://istiod.istio-system:15014/debug/endpointz > /dev/null && echo "OK" || echo "FAIL"
 ```
 
-### Resource Pressure
+Resource Pressure
 
 On busy nodes, ztunnel might get CPU throttled or evicted due to resource pressure:
 

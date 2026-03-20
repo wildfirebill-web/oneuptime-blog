@@ -32,6 +32,7 @@ This guide covers automated installation strategies for cilium-bugtool bash comp
 ```bash
 #!/bin/bash
 # auto-install-bugtool-bash-completion.sh
+
 # Automated installer for cilium-bugtool bash completions
 
 set -euo pipefail

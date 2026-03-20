@@ -1,4 +1,4 @@
-# How to Configure SRv6 with BGP
+# How to Configure SRv6 with BGP - With
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,8 +27,8 @@ graph LR
 
 FRRouting (FRR) supports SRv6 BGP from version 8.0+.
 
-```
-! frr.conf — PE router with SRv6 BGP
+```bash
+! frr.conf - PE router with SRv6 BGP
 
 ! Configure SRv6 globally
 segment-routing
@@ -72,6 +72,7 @@ router bgp 65000
 
 ```bash
 # Check BGP VPNv6 routes with SRv6 SIDs (FRR)
+
 vtysh -c "show bgp vrf CUSTOMER_A ipv6 unicast detail"
 
 # Expected: each route has an SRv6 SID in the extended community
@@ -91,8 +92,8 @@ vtysh -c "show segment-routing srv6 locator detail"
 
 Distribute SRv6 TE policies via BGP from a controller.
 
-```
-! frr.conf — BGP SR-Policy configuration
+```text
+! frr.conf - BGP SR-Policy configuration
 router bgp 65000
   bgp router-id 10.0.0.1
   !
@@ -108,7 +109,7 @@ router bgp 65000
 
 On the remote PE receiving SRv6 VPN routes:
 
-```
+```text
 ! Remote PE: receive VPN routes and install with SRv6 next-hop
 router bgp 65000
   !
@@ -134,7 +135,7 @@ vtysh -c "show ipv6 route vrf CUSTOMER_A"
 
 ## Step 5: BGP EVPN with SRv6
 
-```
+```bash
 ! BGP EVPN with SRv6 for data center L2/L3 services
 router bgp 65000
   !
@@ -155,7 +156,7 @@ router bgp 65000
 
 ## Checking BGP SRv6 on Cisco IOS-XR
 
-```
+```text
 ! Cisco IOS-XR equivalent
 router bgp 65000
  address-family vpnv6 unicast

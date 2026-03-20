@@ -8,7 +8,7 @@ Description: Learn how to configure S3 Intelligent-Tiering storage class using O
 
 ## Introduction
 
-S3 Intelligent-Tiering automatically moves objects between access tiers based on changing access patterns, optimizing costs without performance impact or operational overhead. It's ideal for data with unknown or unpredictable access patterns—you pay a small monitoring fee but avoid manual tier management.
+S3 Intelligent-Tiering automatically moves objects between access tiers based on changing access patterns, optimizing costs without performance impact or operational overhead. It's ideal for data with unknown or unpredictable access patterns-you pay a small monitoring fee but avoid manual tier management.
 
 ## Prerequisites
 
@@ -28,6 +28,7 @@ resource "aws_s3_bucket" "intelligent" {
 
 ```hcl
 # Configure Intelligent-Tiering with archive tiers for maximum cost savings
+
 resource "aws_s3_bucket_intelligent_tiering_configuration" "archive" {
   bucket = aws_s3_bucket.intelligent.id
   name   = "archive-inactive-objects"
@@ -146,4 +147,4 @@ tofu apply
 
 ## Conclusion
 
-S3 Intelligent-Tiering eliminates the need to manually manage storage tiers for data with variable access patterns. Enable the Archive and Deep Archive tiers for maximum savings on infrequently accessed data. Note that Intelligent-Tiering has a minimum object size of 128 KB—smaller objects are not tiered and incur only the monitoring fee without cost savings, so apply separate lifecycle rules for small objects.
+S3 Intelligent-Tiering eliminates the need to manually manage storage tiers for data with variable access patterns. Enable the Archive and Deep Archive tiers for maximum savings on infrequently accessed data. Note that Intelligent-Tiering has a minimum object size of 128 KB-smaller objects are not tiered and incur only the monitoring fee without cost savings, so apply separate lifecycle rules for small objects.

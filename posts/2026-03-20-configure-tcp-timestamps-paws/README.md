@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Timestamps, PAWS, Linux, sysctl, Security
+Tags: TCP, Timestamp, PAWS, Linux, Sysctl, Security
 
 Description: Learn how TCP timestamps work, how they enable PAWS (Protection Against Wrapped Sequence numbers), and when to enable or disable them on Linux.
 
@@ -14,14 +14,15 @@ TCP timestamps (RFC 1323) add two 32-bit timestamp fields to each TCP segment:
 
 They serve two purposes:
 
-1. **PAWS (Protection Against Wrapped Sequence numbers)** — On high-speed links, the 32-bit sequence number can wrap around in under a minute. Old duplicate segments could be misaccepted. Timestamps allow the receiver to reject old duplicates even if sequence numbers wrapped.
+1. **PAWS (Protection Against Wrapped Sequence numbers)** - On high-speed links, the 32-bit sequence number can wrap around in under a minute. Old duplicate segments could be misaccepted. Timestamps allow the receiver to reject old duplicates even if sequence numbers wrapped.
 
-2. **RTT measurement** — More accurate RTT sampling by timestamping every segment, not just selected ones.
+2. **RTT measurement** - More accurate RTT sampling by timestamping every segment, not just selected ones.
 
 ## Step 1: Check Current Timestamp Setting
 
 ```bash
 # Check if TCP timestamps are enabled
+
 sysctl net.ipv4.tcp_timestamps
 # 0 = disabled
 # 1 = enabled (default)

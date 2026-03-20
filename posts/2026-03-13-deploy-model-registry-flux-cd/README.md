@@ -27,6 +27,7 @@ This guide covers deploying MLflow with a PostgreSQL backend and S3-compatible a
 
 ```yaml
 # clusters/my-cluster/mlflow/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

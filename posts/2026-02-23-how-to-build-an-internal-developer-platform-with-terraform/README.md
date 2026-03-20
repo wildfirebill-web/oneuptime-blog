@@ -28,6 +28,7 @@ Each team gets isolated environments that follow the same patterns.
 
 ```hcl
 # environments.tf - Standardized environment provisioning
+
 locals {
   environments = {
     dev = {

@@ -35,6 +35,7 @@ Health check logs are typically the highest volume and lowest value:
 
 ```hcl
 # Exclude load balancer health check logs
+
 resource "google_logging_project_exclusion" "health_checks" {
   name        = "exclude-health-checks"
   description = "Exclude load balancer health check log entries"

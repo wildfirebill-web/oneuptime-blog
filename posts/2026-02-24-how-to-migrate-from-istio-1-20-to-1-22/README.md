@@ -16,6 +16,7 @@ Before starting the migration, gather information about your current setup:
 
 ```bash
 # Current version details
+
 istioctl version
 
 # All proxy versions

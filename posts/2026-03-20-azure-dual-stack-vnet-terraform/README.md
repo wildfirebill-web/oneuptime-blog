@@ -12,6 +12,7 @@ Azure supports dual-stack Virtual Networks where both IPv4 and IPv6 address spac
 
 ```hcl
 # provider.tf
+
 terraform {
   required_providers {
     azurerm = {
@@ -38,7 +39,7 @@ resource "azurerm_resource_group" "main" {
 
 ## Step 3: Create a Dual-Stack Virtual Network
 
-Azure VNets support multiple address spaces — add both an IPv4 and an IPv6 range:
+Azure VNets support multiple address spaces - add both an IPv4 and an IPv6 range:
 
 ```hcl
 # vnet.tf - Dual-stack VNet with IPv4 and IPv6 address spaces

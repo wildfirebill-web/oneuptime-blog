@@ -18,6 +18,7 @@ The `batch` filter takes a list and splits it into sublists of a given size.
 
 ```yaml
 # basic-batch.yml
+
 # Shows how batch splits a list into chunks
 - name: Demonstrate batch filter
   hosts: localhost

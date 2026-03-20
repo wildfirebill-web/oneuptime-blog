@@ -78,6 +78,7 @@ resource "aws_ecs_cluster_capacity_providers" "main" {
 
 ```hcl
 # Private DNS namespace for service discovery
+
 resource "aws_service_discovery_private_dns_namespace" "main" {
   name        = "${var.project_name}.local"
   description = "Private DNS namespace for ${var.project_name} services"
@@ -160,4 +161,4 @@ aws ecs describe-clusters --clusters my-project-cluster
 
 ## Conclusion
 
-ECS clusters are lightweight—their primary purpose is grouping and naming. Container Insights is the most important configuration to enable, as it provides CPU, memory, network, and storage metrics for tasks and services in CloudWatch. The `execute_command_configuration` enables ECS Exec (interactive container access) for debugging, which requires the KMS key and log group to be configured before enabling it on services.
+ECS clusters are lightweight-their primary purpose is grouping and naming. Container Insights is the most important configuration to enable, as it provides CPU, memory, network, and storage metrics for tasks and services in CloudWatch. The `execute_command_configuration` enables ECS Exec (interactive container access) for debugging, which requires the KMS key and log group to be configured before enabling it on services.

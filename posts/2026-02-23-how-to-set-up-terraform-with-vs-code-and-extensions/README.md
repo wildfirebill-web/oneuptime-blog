@@ -16,6 +16,7 @@ If you do not have VS Code installed yet:
 
 ```bash
 # macOS (via Homebrew)
+
 brew install --cask visual-studio-code
 
 # Windows (via winget)

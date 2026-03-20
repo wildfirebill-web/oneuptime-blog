@@ -19,6 +19,7 @@ Using a Let's Encrypt certificate with Postfix provides trusted TLS encryption f
 
 ```bash
 # Install Certbot
+
 apt install certbot -y  # Debian/Ubuntu
 
 # Obtain a certificate for the mail hostname

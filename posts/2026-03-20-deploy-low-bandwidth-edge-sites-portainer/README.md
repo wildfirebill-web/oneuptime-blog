@@ -8,7 +8,7 @@ Description: Optimize Portainer Edge deployments for sites with slow or unreliab
 
 ---
 
-Edge sites in remote locations often have limited bandwidth — satellite links, cellular connections, or metered internet. Deploying containers to these sites requires careful attention to image sizes, transfer strategies, and offline operation capabilities.
+Edge sites in remote locations often have limited bandwidth - satellite links, cellular connections, or metered internet. Deploying containers to these sites requires careful attention to image sizes, transfer strategies, and offline operation capabilities.
 
 ## Challenges at Low-Bandwidth Sites
 
@@ -23,6 +23,7 @@ Choose the smallest viable base image for your containers:
 
 ```dockerfile
 # Instead of full Ubuntu (77MB compressed):
+
 FROM ubuntu:22.04
 
 # Use Alpine (3.5MB compressed):
@@ -31,7 +32,7 @@ FROM alpine:3.19
 # Or distroless for runtime-only (smaller, more secure):
 FROM gcr.io/distroless/static-debian12
 
-# For Go applications — single binary, no runtime needed:
+# For Go applications - single binary, no runtime needed:
 FROM scratch
 COPY myapp /myapp
 ENTRYPOINT ["/myapp"]
@@ -100,11 +101,11 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Copy dependency files first — these change rarely
+# Copy dependency files first - these change rarely
 COPY package*.json ./
 RUN npm ci --only=production
 
-# Copy app code last — this changes frequently but reuses the npm layer
+# Copy app code last - this changes frequently but reuses the npm layer
 COPY src/ ./src/
 
 CMD ["node", "src/index.js"]
@@ -154,7 +155,7 @@ Configure your application stacks with `restart: always` so containers automatic
 ```yaml
 services:
   data-collector:
-    image: myregistry/collector:1.2.3  # Pin to exact version — no pull needed
+    image: myregistry/collector:1.2.3  # Pin to exact version - no pull needed
     restart: always                     # Restart even if Portainer is unreachable
 ```
 

@@ -32,6 +32,7 @@ For this to work well, you also need centralized user authentication (LDAP, Free
 
 ```bash
 # Install NFS server
+
 sudo dnf install -y nfs-utils
 
 # Enable and start NFS

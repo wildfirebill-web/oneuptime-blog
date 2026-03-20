@@ -15,6 +15,7 @@ Squid's Access Control Lists (ACLs) provide granular control over what traffic i
 ```bash
 sudo tee /etc/squid/squid.conf << 'CONF'
 # Proxy port
+
 http_port 3128
 
 # Source-based ACLs

@@ -41,6 +41,7 @@ Use the OpenTelemetry Collector's transform processor to detect and redact PANs 
 
 ```yaml
 # Collector configuration that scrubs cardholder data from all signals
+
 # This prevents PAN, CVV, and expiry dates from reaching telemetry storage
 processors:
   transform/pci-redact:

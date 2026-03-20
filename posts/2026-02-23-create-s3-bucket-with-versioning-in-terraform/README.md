@@ -22,6 +22,7 @@ provider "aws" {
 }
 
 # Create the S3 bucket
+
 resource "aws_s3_bucket" "data" {
   bucket_prefix = "app-data-"
 

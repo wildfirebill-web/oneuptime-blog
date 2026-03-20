@@ -23,6 +23,7 @@ Install k3d:
 
 ```bash
 # macOS
+
 brew install k3d
 
 # Linux
@@ -235,7 +236,7 @@ istio-integration:
     - k3d cluster delete test
 ```
 
-## Resource Comparison: k3d vs Alternatives
+Resource Comparison: k3d vs Alternatives
 
 k3d is notably lighter than other options:
 

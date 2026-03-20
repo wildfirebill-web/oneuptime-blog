@@ -37,6 +37,7 @@ A solid backup testing pipeline includes:
 ```bash
 #!/bin/bash
 # /usr/local/bin/test-mysql-backup.sh
+
 # Tests MySQL backups by restoring to a test database
 
 set -euo pipefail

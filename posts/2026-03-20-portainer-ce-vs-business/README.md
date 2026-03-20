@@ -52,6 +52,7 @@ echo "=================================="
 echo ""
 
 # Team size check
+
 read -p "How many people will use Portainer? " TEAM_SIZE
 
 if [ $TEAM_SIZE -gt 5 ]; then
@@ -82,7 +83,7 @@ fi
 
 ### CE: Binary Access Model
 
-```
+```text
 CE has only two access levels:
 - Administrator: Full access to everything
 - Standard User: Can manage containers they own
@@ -93,7 +94,7 @@ No team-based restrictions. An admin can see everything.
 
 ### BE: Granular Team Access
 
-```
+```text
 BE team RBAC:
 - Environment Administrator: Full environment access
 - Standard User: Manage own resources, governed by quotas
@@ -211,4 +212,4 @@ docker run -d \
 
 ## Conclusion
 
-Portainer CE is an excellent choice for individual developers, homelab users, and small teams that don't require user management or compliance features. Business Edition is the right choice for any organization with more than a few users, compliance requirements (HIPAA, SOC2, PCI-DSS), LDAP/AD authentication needs, or multi-team environments requiring isolation. The upgrade path from CE to BE is seamless — the same data volume is used, so no migration is needed.
+Portainer CE is an excellent choice for individual developers, homelab users, and small teams that don't require user management or compliance features. Business Edition is the right choice for any organization with more than a few users, compliance requirements (HIPAA, SOC2, PCI-DSS), LDAP/AD authentication needs, or multi-team environments requiring isolation. The upgrade path from CE to BE is seamless - the same data volume is used, so no migration is needed.

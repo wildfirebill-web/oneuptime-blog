@@ -100,6 +100,7 @@ Installing Molecule dependencies on every build is slow. Build a custom Docker i
 
 ```dockerfile
 # Dockerfile for Jenkins Molecule agent
+
 FROM python:3.11-slim
 
 # Install Docker CLI (not the daemon, just the client)

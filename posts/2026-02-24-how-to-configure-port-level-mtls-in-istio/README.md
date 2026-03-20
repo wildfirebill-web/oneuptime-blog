@@ -127,6 +127,7 @@ A critical detail that trips people up: the port numbers in `portLevelMtls` refe
 
 ```yaml
 # Service definition
+
 apiVersion: v1
 kind: Service
 metadata:

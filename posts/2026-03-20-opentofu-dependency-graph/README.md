@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Dependency Graph, Internals, Infrastructure as Code, DevOps
 
-Description: Learn how OpenTofu builds and traverses the resource dependency graph — understanding implicit and explicit dependencies, cycle detection, and how the graph determines apply order.
+Description: Learn how OpenTofu builds and traverses the resource dependency graph - understanding implicit and explicit dependencies, cycle detection, and how the graph determines apply order.
 
 ## Introduction
 
@@ -18,6 +18,7 @@ When you reference an attribute from another resource, OpenTofu automatically cr
 
 ```hcl
 # aws_subnet depends on aws_vpc because of aws_vpc.main.id reference
+
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
 }
@@ -35,7 +36,7 @@ resource "aws_instance" "web" {
 
 OpenTofu's dependency graph for this config:
 
-```
+```text
 aws_vpc.main
     └── aws_subnet.public
             └── aws_instance.web
@@ -58,7 +59,7 @@ resource "aws_instance" "app" {
   instance_type = "t3.medium"
   iam_instance_profile = aws_iam_instance_profile.ec2.name
 
-  # Explicit dependency — ensure policy is attached before instance starts
+  # Explicit dependency - ensure policy is attached before instance starts
   depends_on = [aws_iam_role_policy.ec2_policy]
 }
 ```
@@ -67,7 +68,7 @@ resource "aws_instance" "app" {
 
 OpenTofu traverses the graph in topological order:
 
-```
+```text
 Create order:
 1. aws_vpc.main           (no dependencies)
 2. aws_subnet.public      (after aws_vpc.main)
@@ -86,7 +87,7 @@ The `-parallelism=N` flag controls how many resources are processed concurrently
 
 Destroy reverses the dependency graph:
 
-```
+```text
 Destroy order (reverse of create):
 1. aws_instance.web       (destroy first)
 2. aws_subnet.public      (after instance is gone)
@@ -142,7 +143,7 @@ tofu graph -plan=tfplan.binary | dot -Tpng > plan-graph.png
 
 OpenTofu detects circular dependencies and reports them clearly:
 
-```
+```hcl
 # This would create a cycle:
 resource "aws_security_group" "a" {
   ingress {
@@ -152,12 +153,12 @@ resource "aws_security_group" "a" {
 
 resource "aws_security_group" "b" {
   ingress {
-    security_groups = [aws_security_group.a.id]  # B depends on A — CYCLE!
+    security_groups = [aws_security_group.a.id]  # B depends on A - CYCLE!
   }
 }
 ```
 
-```
+```text
 Error: Cycle: aws_security_group.a, aws_security_group.b
 ```
 
@@ -180,4 +181,4 @@ resource "aws_security_group_rule" "a_to_b" {
 
 ## Conclusion
 
-OpenTofu's dependency graph is the engine that determines resource creation order, enables parallel execution, and prevents partial deployments. Implicit dependencies through attribute references are the recommended approach — they self-document which resources depend on which. Use `depends_on` only for side-effect dependencies that can't be expressed through references. Use `tofu graph | dot -Tpng` to visualize complex dependency chains when debugging ordering issues.
+OpenTofu's dependency graph is the engine that determines resource creation order, enables parallel execution, and prevents partial deployments. Implicit dependencies through attribute references are the recommended approach - they self-document which resources depend on which. Use `depends_on` only for side-effect dependencies that can't be expressed through references. Use `tofu graph | dot -Tpng` to visualize complex dependency chains when debugging ordering issues.

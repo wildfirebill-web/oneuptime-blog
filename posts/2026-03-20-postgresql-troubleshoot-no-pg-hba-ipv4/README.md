@@ -1,10 +1,10 @@
-# How to Fix "no pg_hba.conf entry" and PostgreSQL IPv4 Connection Errors
+# How to Fix 'no pg_hba.conf entry' and PostgreSQL IPv4 Connection Errors
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, IPv4, Troubleshooting, pg_hba.conf, Connection Error, Database
+Tags: PostgreSQL, IPv4, Troubleshooting, pg_hba.conf, Connection Errors, Database
 
-Description: Diagnose and fix common PostgreSQL connection errors including "no pg_hba.conf entry for host", "password authentication failed", and connection timeout issues on IPv4.
+Description: Diagnose and fix common PostgreSQL connection errors including 'no pg_hba.conf entry for host', 'password authentication failed', and connection timeout issues on IPv4.
 
 ## Introduction
 
@@ -26,6 +26,7 @@ PostgreSQL connection failures are usually one of three issues: the server isn't
 # The client's IP is not in pg_hba.conf
 
 # Check client's connecting IP from PostgreSQL log:
+
 sudo grep "FATAL" /var/log/postgresql/postgresql-16-main.log | tail -5
 # FATAL: no pg_hba.conf entry for host "10.0.0.50", user "appuser"...
 

@@ -367,6 +367,7 @@ Track TCP metrics for database connections:
 
 ```promql
 # Active connections to external databases
+
 sum(envoy_cluster_upstream_cx_active{
   cluster_name=~"outbound.*rds.amazonaws.com.*"
 }) by (cluster_name)

@@ -24,6 +24,7 @@ Tags like `node:20-alpine` are mutable. They point to different images over time
 
 ```dockerfile
 # Bad: mutable tag can change without notice
+
 FROM node:20-alpine
 
 # Good: pinned to a specific digest (immutable)

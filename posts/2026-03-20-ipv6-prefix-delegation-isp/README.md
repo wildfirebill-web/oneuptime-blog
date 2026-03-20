@@ -38,7 +38,7 @@ The PD process uses the standard DHCPv6 four-message exchange:
 
 ## Lease Timer Semantics
 
-```
+```text
 T1 (Renew time):      When CPE sends Renew to the same server
 T2 (Rebind time):     When CPE broadcasts Rebind to any server
 Preferred lifetime:   When the prefix becomes deprecated (but still valid)
@@ -54,6 +54,7 @@ Valid lifetime = 7 days (604800 seconds)
 
 ```bash
 # Check if a prefix was delegated (using dhclient)
+
 sudo dhclient -6 -P -v eth0
 # -6 = IPv6 mode
 # -P = request prefix delegation

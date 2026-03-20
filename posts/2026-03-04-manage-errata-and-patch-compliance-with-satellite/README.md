@@ -14,6 +14,7 @@ Red Hat Satellite provides centralized errata management for RHEL hosts. You can
 
 ```bash
 # List all errata available in the Satellite
+
 hammer erratum list --organization "MyOrg"
 
 # Filter by type (security, bugfix, enhancement)

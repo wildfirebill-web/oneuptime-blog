@@ -31,6 +31,7 @@ For most cases, system-assigned is simpler. Use user-assigned when you need to s
 
 ```bash
 # Enable system-assigned managed identity
+
 az webapp identity assign \
     --name my-app-service \
     --resource-group my-resource-group

@@ -14,6 +14,7 @@ Sequelize is a powerful ORM for Node.js that supports PostgreSQL, MySQL, MariaDB
 
 ```bash
 # Sequelize core
+
 npm install sequelize
 
 # Database driver (choose one)

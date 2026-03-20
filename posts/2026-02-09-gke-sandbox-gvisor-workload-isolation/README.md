@@ -37,6 +37,7 @@ gcloud container clusters create sandbox-cluster \
   --release-channel=regular
 
 # Add sandbox node pool
+
 gcloud container node-pools create sandbox-pool \
   --cluster=sandbox-cluster \
   --zone=us-central1-a \

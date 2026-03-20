@@ -14,6 +14,7 @@ Snort 3 supports IPv6 in its rule language with dedicated keywords for IPv6 head
 
 ```snort
 # Basic IPv6 rule syntax
+
 action proto src_ip src_port dir dst_ip dst_port (rule options)
 
 # IPv6 address in rules uses standard notation

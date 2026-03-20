@@ -39,6 +39,7 @@ The fixture calls the module with specific test values:
 
 ```hcl
 # modules/vpc/tests/fixtures/basic/main.tf
+
 # Minimal fixture for testing the VPC module
 
 module "vpc" {

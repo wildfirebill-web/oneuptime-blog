@@ -14,6 +14,7 @@ MediaWiki is the software that powers Wikipedia, and it works just as well for i
 
 ```yaml
 # roles/mediawiki/defaults/main.yml - MediaWiki configuration
+
 mediawiki_version: "1.41"
 mediawiki_minor: "1.41.0"
 mediawiki_domain: wiki.example.com

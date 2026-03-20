@@ -8,7 +8,7 @@ Description: Understand how IPv6 route metrics and administrative distances cont
 
 ## Overview
 
-When multiple routes exist for the same IPv6 prefix, the router must choose one. The selection process uses **metric** (also called administrative distance or preference) — a numeric value where lower numbers indicate more preferred routes.
+When multiple routes exist for the same IPv6 prefix, the router must choose one. The selection process uses **metric** (also called administrative distance or preference) - a numeric value where lower numbers indicate more preferred routes.
 
 ## Route Metrics in Linux
 
@@ -16,6 +16,7 @@ On Linux, each route has a `metric` field. When multiple routes match a destinat
 
 ```bash
 # Show routes with their metrics
+
 ip -6 route show
 # 2001:db8:1::/48 via fe80::1 dev eth0 proto static metric 100
 # 2001:db8:1::/48 via fe80::2 dev eth1 proto static metric 200
@@ -47,7 +48,7 @@ A floating static route is a backup route with a deliberately high metric that o
 # Primary route via ISP1 (metric 100)
 sudo ip -6 route add default via fe80::isp1 dev eth0 metric 100
 
-# Backup route via ISP2 (metric 500 — floating static)
+# Backup route via ISP2 (metric 500 - floating static)
 sudo ip -6 route add default via fe80::isp2 dev eth1 metric 500
 
 # If eth0 goes down, kernel removes the metric-100 route
@@ -66,7 +67,7 @@ In Cisco terminology, **administrative distance** determines preference between 
 | BGP iBGP | 200 | proto bgp |
 | RIPng | 120 | proto ripng |
 
-In Linux, the `metric` field plays both roles — it ranks routes regardless of their source.
+In Linux, the `metric` field plays both roles - it ranks routes regardless of their source.
 
 ## Routing Protocol Metrics
 
@@ -113,4 +114,4 @@ ip -6 route show 2001:db8:1::/48
 
 ## Summary
 
-IPv6 route selection on Linux is controlled by the `metric` field — lower values are preferred. Use low metrics for primary paths and high metrics for floating static backup routes. When multiple routes have the same prefix and metric, ECMP load-balancing applies. Always verify route selection with `ip -6 route get <destination>`.
+IPv6 route selection on Linux is controlled by the `metric` field - lower values are preferred. Use low metrics for primary paths and high metrics for floating static backup routes. When multiple routes have the same prefix and metric, ECMP load-balancing applies. Always verify route selection with `ip -6 route get <destination>`.

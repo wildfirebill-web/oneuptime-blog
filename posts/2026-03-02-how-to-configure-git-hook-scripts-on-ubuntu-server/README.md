@@ -36,6 +36,7 @@ Hook scripts live in `<repository>.git/hooks/`. Each hook is an executable file 
 
 ```bash
 # Check the hooks directory
+
 ls -la /home/git/repositories/myproject.git/hooks/
 
 # Git includes sample hooks (with .sample extension)

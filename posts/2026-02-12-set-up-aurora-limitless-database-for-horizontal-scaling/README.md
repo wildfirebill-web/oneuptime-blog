@@ -50,6 +50,7 @@ Aurora Limitless is available for Aurora PostgreSQL-Compatible Edition. You need
 
 ```bash
 # Create an Aurora Limitless Database cluster
+
 aws rds create-db-cluster \
   --db-cluster-identifier my-limitless-cluster \
   --engine aurora-postgresql \

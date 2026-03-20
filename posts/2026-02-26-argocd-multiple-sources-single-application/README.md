@@ -32,6 +32,7 @@ Instead of the singular `source` field, use the plural `sources` field (note: yo
 
 ```yaml
 # multi-source-app.yaml - Application with multiple sources
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

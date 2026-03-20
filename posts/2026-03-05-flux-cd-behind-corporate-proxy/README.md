@@ -35,6 +35,7 @@ If your workstation also sits behind the proxy, configure the proxy before insta
 
 ```bash
 # Set proxy environment variables on your workstation
+
 export HTTP_PROXY=http://proxy.corp.example.com:8080
 export HTTPS_PROXY=http://proxy.corp.example.com:8080
 export NO_PROXY=localhost,127.0.0.1,10.0.0.0/8,.cluster.local

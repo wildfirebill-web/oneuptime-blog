@@ -33,6 +33,7 @@ Download and install AzCopy on the machine that will run the transfer:
 
 ```bash
 # On Linux
+
 wget https://aka.ms/downloadazcopy-v10-linux -O azcopy.tar.gz
 tar -xzf azcopy.tar.gz
 sudo mv azcopy_linux_amd64_*/azcopy /usr/local/bin/

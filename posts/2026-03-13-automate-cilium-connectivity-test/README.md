@@ -28,6 +28,7 @@ Before automating, understand what the connectivity test does by running it manu
 
 ```bash
 # Run the full Cilium connectivity test suite
+
 # This deploys test pods to the 'cilium-test' namespace and runs all checks
 cilium connectivity test
 

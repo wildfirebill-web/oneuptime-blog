@@ -42,6 +42,7 @@ This playbook installs pwquality and deploys a configuration file with strong co
 
 ```yaml
 # password_complexity.yml - Configure password complexity rules
+
 ---
 - name: Configure password complexity
   hosts: all

@@ -153,6 +153,7 @@ If your entrypoint is a shell script, several issues can cause immediate exit:
 
 ```bash
 # Bad - no shebang
+
 echo "starting"
 my-app
 

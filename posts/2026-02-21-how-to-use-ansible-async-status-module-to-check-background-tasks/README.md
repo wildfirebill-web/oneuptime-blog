@@ -14,6 +14,7 @@ The `ansible.builtin.async_status` module checks the status of asynchronous task
 
 ```yaml
 # Launch a long-running task asynchronously
+
 - name: Start database backup
   ansible.builtin.command: pg_dump mydb > /backup/mydb.sql
   async: 3600    # Maximum runtime in seconds

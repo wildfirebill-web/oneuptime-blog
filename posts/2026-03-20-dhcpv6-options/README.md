@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: DHCPv6, IPv6, Networking, Options, ISC DHCP, Kea, Configuration
 
-Description: A comprehensive reference for DHCPv6 options including DNS servers, domain search, NTP, SNTP, SIP, and custom vendor options — with configuration examples for ISC DHCP and Kea.
+Description: A comprehensive reference for DHCPv6 options including DNS servers, domain search, NTP, SNTP, SIP, and custom vendor options - with configuration examples for ISC DHCP and Kea.
 
 ---
 
@@ -21,7 +21,7 @@ DHCPv6 options carry configuration data from server to client beyond just the IP
 | 3 | IA_NA | Identity Association for Non-temporary Addresses |
 | 4 | IA_TA | Identity Association for Temporary Addresses |
 | 5 | IAADDR | IPv6 address within an IA |
-| 6 | ORO | Options Request Option — list of requested options |
+| 6 | ORO | Options Request Option - list of requested options |
 | 7 | PREFERENCE | Server preference value (0–255) |
 | 11 | AUTH | Authentication |
 | 14 | RAPID_COMMIT | Enable rapid two-message exchange |
@@ -43,6 +43,7 @@ DHCPv6 options carry configuration data from server to client beyond just the IP
 
 ```text
 # /etc/dhcp/dhcpd6.conf
+
 # Global defaults
 default-lease-time 86400;
 max-lease-time 172800;
@@ -56,7 +57,7 @@ option dhcp6.domain-search "corp.example.com", "internal.example.com";
 # SNTP servers (option 31)
 option dhcp6.sntp-servers 2001:db8::123;
 
-# Information refresh time (option 32) — for stateless clients
+# Information refresh time (option 32) - for stateless clients
 option dhcp6.info-refresh-time 21600;
 
 subnet6 2001:db8::/32 {
@@ -182,7 +183,7 @@ UseNTP=yes
 Option 17 carries vendor-specific information using an enterprise number:
 
 ```text
-# ISC DHCP — Send vendor option
+# ISC DHCP - Send vendor option
 option dhcp6.vendor-opts 00:00:09:bf:  # Enterprise number 2495
     00:01:00:04:68:6f:73:74;           # Sub-option 1: "host"
 ```
@@ -196,7 +197,7 @@ For clients using SLAAC for addresses but needing DNS/NTP from DHCPv6:
 ```text
 # Server config for stateless mode
 subnet6 2001:db8::/32 {
-    # No range6 — address-free, options only
+    # No range6 - address-free, options only
     option dhcp6.name-servers 2001:db8::53;
     option dhcp6.domain-search "example.com";
     option dhcp6.info-refresh-time 21600;
@@ -208,7 +209,7 @@ subnet6 2001:db8::/32 {
 ## Verifying Options on Clients
 
 ```bash
-# Linux — check received options in resolv.conf
+# Linux - check received options in resolv.conf
 cat /etc/resolv.conf
 
 # systemd-networkd lease details
@@ -225,7 +226,7 @@ sudo tcpdump -i eth0 -vv udp port 546 or udp port 547 | grep -A5 "Reply"
 
 ## Best Practices
 
-1. **Always deliver DNS servers** — option 23 is the most critical option
+1. **Always deliver DNS servers** - option 23 is the most critical option
 2. **Include domain-search** for seamless short hostname resolution
 3. **Set information-refresh-time** for stateless clients (option 32)
 4. **Use ORO on clients** to request only needed options, reducing message size

@@ -88,6 +88,7 @@ The Dockerfile for the main app:
 
 ```dockerfile
 # Dockerfile for the main application
+
 FROM node:20-slim
 WORKDIR /app
 COPY package*.json ./
@@ -324,7 +325,7 @@ gcloud logging read 'resource.type="cloud_run_revision" AND resource.labels.serv
   --limit=20
 ```
 
-## Resource Allocation
+Resource Allocation
 
 Both containers share the total CPU and memory allocated to the service. Plan your resource limits accordingly:
 

@@ -60,6 +60,7 @@ Both approaches achieve the same result. The ConfigMap approach is cleaner for G
 
 ```yaml
 # Disable TLS on the server (when TLS is terminated at ingress/load balancer)
+
 - name: ARGOCD_SERVER_INSECURE
   value: "true"
 

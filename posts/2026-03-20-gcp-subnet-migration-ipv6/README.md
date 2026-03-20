@@ -8,7 +8,7 @@ Description: Migrate existing Google Cloud VPC subnets from IPv4-only to dual-st
 
 ## Introduction
 
-Google Cloud allows in-place conversion of existing IPv4-only subnets to dual-stack by updating `stack-type` to `IPV4_IPV6`. This migration is non-disruptive — existing VMs keep their IPv4 addresses and connectivity during the update. After the subnet is upgraded, VMs must be individually updated or restarted to receive IPv6 addresses. The `ipv6-access-type` (EXTERNAL or INTERNAL) is chosen at migration time and cannot be changed afterward.
+Google Cloud allows in-place conversion of existing IPv4-only subnets to dual-stack by updating `stack-type` to `IPV4_IPV6`. This migration is non-disruptive - existing VMs keep their IPv4 addresses and connectivity during the update. After the subnet is upgraded, VMs must be individually updated or restarted to receive IPv6 addresses. The `ipv6-access-type` (EXTERNAL or INTERNAL) is chosen at migration time and cannot be changed afterward.
 
 ## Migrate Subnet to Dual-Stack
 
@@ -17,6 +17,7 @@ PROJECT="my-project"
 REGION="us-east1"
 
 # Check current subnet configuration
+
 gcloud compute networks subnets describe existing-subnet \
     --region="$REGION" \
     --project="$PROJECT" \
@@ -144,7 +145,7 @@ resource "google_compute_subnetwork" "existing" {
 
   # Added: enable dual-stack
   stack_type       = "IPV4_IPV6"
-  ipv6_access_type = "INTERNAL"  # or "EXTERNAL" — cannot change later
+  ipv6_access_type = "INTERNAL"  # or "EXTERNAL" - cannot change later
 }
 ```
 
@@ -171,4 +172,4 @@ ping6 -c 3 2001:4860:4860::8888
 
 ## Conclusion
 
-Migrating GCP subnets from IPv4-only to dual-stack is a non-destructive in-place operation using `gcloud compute networks subnets update --stack-type=IPV4_IPV6 --ipv6-access-type=EXTERNAL|INTERNAL`. Existing VMs retain their IPv4 connectivity during the upgrade. After the subnet is upgraded, update each VM's network interface to receive IPv6. In Terraform, simply adding `stack_type` and `ipv6_access_type` to the existing subnetwork resource updates it in place without recreation. Choose `ipv6-access-type` carefully — it cannot be changed after subnet creation.
+Migrating GCP subnets from IPv4-only to dual-stack is a non-destructive in-place operation using `gcloud compute networks subnets update --stack-type=IPV4_IPV6 --ipv6-access-type=EXTERNAL|INTERNAL`. Existing VMs retain their IPv4 connectivity during the upgrade. After the subnet is upgraded, update each VM's network interface to receive IPv6. In Terraform, simply adding `stack_type` and `ipv6_access_type` to the existing subnetwork resource updates it in place without recreation. Choose `ipv6-access-type` carefully - it cannot be changed after subnet creation.

@@ -31,6 +31,7 @@ For BeyondCorp, we focus on access levels and how they apply to IAP-protected re
 
 ```bash
 # Enable the required API
+
 gcloud services enable accesscontextmanager.googleapis.com --project=my-project-id
 
 # Find your organization's access policy

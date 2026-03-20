@@ -37,6 +37,7 @@ Here is a simple Python Flask application that receives webhook events and trigg
 
 ```python
 # webhook_receiver.py
+
 # Flask app that listens for Git webhooks and triggers Ansible deployments
 import hmac
 import hashlib

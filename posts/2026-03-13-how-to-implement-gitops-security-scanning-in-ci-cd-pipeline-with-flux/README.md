@@ -26,6 +26,7 @@ Create a GitHub Actions workflow that triggers on pull requests modifying Flux m
 
 ```yaml
 # .github/workflows/gitops-security-scan.yaml
+
 name: GitOps Security Scan
 
 on:

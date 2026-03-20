@@ -57,8 +57,9 @@ curl http://localhost:9100/metrics | head -50
 
 You should see output like:
 
-```
+```text
 # HELP node_cpu_seconds_total Seconds the CPUs spent in each mode.
+
 # TYPE node_cpu_seconds_total counter
 node_cpu_seconds_total{cpu="0",mode="idle"} 12345.67
 node_cpu_seconds_total{cpu="0",mode="system"} 234.56

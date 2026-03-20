@@ -42,6 +42,7 @@ from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExport
 from opentelemetry.sdk.resources import Resource
 
 # Define service resource
+
 resource = Resource(attributes={
     "service.name": "async-user-service",
     "service.version": "2.0.0",

@@ -42,6 +42,7 @@ Fedora IoT is an immutable operating system designed for IoT deployments. Podman
 
 ```bash
 # Podman is pre-installed
+
 podman --version
 
 # If additional tools are needed
@@ -391,7 +392,7 @@ podman run -d --name sensor \
 
 ---
 
-## Resource Monitoring
+Resource Monitoring
 
 ### Lightweight Monitoring Script
 

@@ -1,8 +1,8 @@
-# How to Configure K3s with Custom kube-apiserver Flags
+# How to Configure K3s with Custom kube-apiserver Flags - Kube
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, kube-apiserver, Configuration, Kubernetes, Security, SUSE Rancher
+Tags: K3s, Kube-apiserver, Configuration, Kubernetes, Security, SUSE Rancher
 
 Description: Learn how to pass custom kube-apiserver flags to K3s for advanced configuration including feature gates, admission plugins, audit logging, and API server tuning.
 
@@ -16,6 +16,7 @@ K3s embeds the kube-apiserver and other Kubernetes components. You can pass cust
 
 ```yaml
 # /etc/rancher/k3s/config.yaml
+
 kube-apiserver-arg:
   - "enable-admission-plugins=NodeRestriction,PodSecurity"
   - "audit-log-path=/var/log/kubernetes/audit.log"
@@ -63,7 +64,7 @@ plugins:
 ```
 
 ```yaml
-# /etc/rancher/k3s/config.yaml — reference the config file
+# /etc/rancher/k3s/config.yaml - reference the config file
 kube-apiserver-arg:
   - "admission-control-config-file=/etc/rancher/k3s/pod-security-admission.yaml"
   - "enable-admission-plugins=NodeRestriction,PodSecurity"
@@ -180,6 +181,6 @@ cat /proc/$(pidof k3s server)/cmdline | tr '\0' '\n' | grep apiserver
 
 ## Best Practices
 
-- Pass all kube-apiserver customizations through `/etc/rancher/k3s/config.yaml` under `kube-apiserver-arg` — this is the supported way and survives K3s upgrades.
-- Enable audit logging (`--audit-log-path`) on any cluster used for production or compliance — it creates a record of all API server operations.
-- Test new kube-apiserver flags in a K3d local cluster before applying them to production — some flags can break API server startup if misconfigured.
+- Pass all kube-apiserver customizations through `/etc/rancher/k3s/config.yaml` under `kube-apiserver-arg` - this is the supported way and survives K3s upgrades.
+- Enable audit logging (`--audit-log-path`) on any cluster used for production or compliance - it creates a record of all API server operations.
+- Test new kube-apiserver flags in a K3d local cluster before applying them to production - some flags can break API server startup if misconfigured.

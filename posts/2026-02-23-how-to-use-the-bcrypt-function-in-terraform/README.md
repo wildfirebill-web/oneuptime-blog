@@ -16,6 +16,7 @@ The `bcrypt` function computes a bcrypt hash of a given string (typically a pass
 
 ```hcl
 # Hash a password using bcrypt
+
 output "hashed_password" {
   value     = bcrypt("my-secret-password")
   sensitive = true

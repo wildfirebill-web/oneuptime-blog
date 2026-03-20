@@ -26,6 +26,7 @@ The snapshot always represents the data as it was at creation time. You can read
 
 ```bash
 # Snapshot the root subvolume '@' to a snapshots directory
+
 sudo btrfs subvolume snapshot -r / /.snapshots/root_$(date +%Y%m%d_%H%M%S)
 ```
 

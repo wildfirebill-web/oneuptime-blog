@@ -20,6 +20,7 @@ Create a service account in your GCP project with the required permissions.
 
 ```bash
 # Create a service account for Datadog
+
 gcloud iam service-accounts create datadog-integration \
   --display-name="Datadog Integration" \
   --project=my-project

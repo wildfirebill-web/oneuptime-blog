@@ -155,6 +155,7 @@ class TracedKafkaProducer:
             self.producer.flush()
 
 # Usage
+
 producer = TracedKafkaProducer({
     "bootstrap.servers": "localhost:9092"
 })

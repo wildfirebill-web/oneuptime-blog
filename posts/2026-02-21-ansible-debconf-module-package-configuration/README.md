@@ -28,6 +28,7 @@ The Ansible `debconf` module sets answers in the debconf database before package
 
 ```yaml
 # Pre-seed iptables-persistent to save current rules during installation
+
 - name: Pre-configure iptables-persistent
   ansible.builtin.debconf:
     name: iptables-persistent

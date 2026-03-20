@@ -170,6 +170,7 @@ app.use((err, req, res, next) => {
 
 ```python
 # cors_config.py
+
 # Secure CORS configuration for Flask
 
 from flask import Flask, request, jsonify

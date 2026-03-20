@@ -24,6 +24,7 @@ Start by requesting an SSL/TLS certificate from ACM:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

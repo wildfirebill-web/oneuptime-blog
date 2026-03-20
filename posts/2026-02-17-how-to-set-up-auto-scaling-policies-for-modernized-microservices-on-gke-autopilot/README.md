@@ -26,6 +26,7 @@ First, the deployment with proper resource requests:
 
 ```yaml
 # api-deployment.yaml - Microservice deployment with resource requests
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

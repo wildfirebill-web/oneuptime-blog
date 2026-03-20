@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, S3, Replication, AWS, Disaster Recovery, Infrastructure as Code
 
-Description: Learn how to configure S3 Cross-Region Replication (CRR) and Same-Region Replication (SRR) with OpenTofu — including IAM roles, replication rules, filter-based replication, and replica modification sync.
+Description: Learn how to configure S3 Cross-Region Replication (CRR) and Same-Region Replication (SRR) with OpenTofu - including IAM roles, replication rules, filter-based replication, and replica...
 
 ## Introduction
 
-S3 Replication copies objects automatically between buckets — across regions (CRR) for disaster recovery, or within the same region (SRR) for log aggregation and compliance. OpenTofu manages the source bucket's replication configuration, the destination bucket, and the IAM role that S3 assumes to perform replication.
+S3 Replication copies objects automatically between buckets - across regions (CRR) for disaster recovery, or within the same region (SRR) for log aggregation and compliance. OpenTofu manages the source bucket's replication configuration, the destination bucket, and the IAM role that S3 assumes to perform replication.
 
 ## IAM Role for Replication
 
@@ -68,6 +68,7 @@ resource "aws_iam_role_policy" "replication" {
 
 ```hcl
 # Source bucket (us-east-1)
+
 resource "aws_s3_bucket" "source" {
   bucket = "${var.project}-source-${var.environment}"
 }
@@ -77,7 +78,7 @@ resource "aws_s3_bucket_versioning" "source" {
   versioning_configuration { status = "Enabled" }
 }
 
-# Destination bucket (eu-west-1) — requires separate provider
+# Destination bucket (eu-west-1) - requires separate provider
 resource "aws_s3_bucket" "destination" {
   provider = aws.eu_west_1
   bucket   = "${var.project}-replica-${var.environment}"
@@ -249,4 +250,4 @@ resource "aws_cloudwatch_metric_alarm" "replication_latency" {
 
 ## Conclusion
 
-S3 Replication with OpenTofu provides automated data redundancy without manual copy jobs. Enable versioning on both source and destination — it's required for replication. Use S3 Replication Time Control (RTC) for a 15-minute SLA when your RPO requires guaranteed replication timing. Set `delete_marker_replication = "Disabled"` for compliance archives to prevent accidental deletion propagation. Monitor `ReplicationLatency` and `BytesPendingReplication` CloudWatch metrics to detect replication lag before it impacts your RPO.
+S3 Replication with OpenTofu provides automated data redundancy without manual copy jobs. Enable versioning on both source and destination - it's required for replication. Use S3 Replication Time Control (RTC) for a 15-minute SLA when your RPO requires guaranteed replication timing. Set `delete_marker_replication = "Disabled"` for compliance archives to prevent accidental deletion propagation. Monitor `ReplicationLatency` and `BytesPendingReplication` CloudWatch metrics to detect replication lag before it impacts your RPO.

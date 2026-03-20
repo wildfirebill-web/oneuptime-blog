@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Kubeconfig, DevOps
+Tags: Portainer, Kubernetes, kubeconfig, DevOps
 
 Description: Learn how to import an existing Kubernetes cluster into Portainer using a kubeconfig file for quick cluster registration.
 
 ## Introduction
 
-Importing a Kubernetes cluster via kubeconfig is the quickest way to add an existing cluster to Portainer. Unlike the agent-based approach, kubeconfig import requires no additional installation on the target cluster — Portainer uses the kubeconfig credentials to talk directly to the Kubernetes API server. This guide covers the complete kubeconfig import process.
+Importing a Kubernetes cluster via kubeconfig is the quickest way to add an existing cluster to Portainer. Unlike the agent-based approach, kubeconfig import requires no additional installation on the target cluster - Portainer uses the kubeconfig credentials to talk directly to the Kubernetes API server. This guide covers the complete kubeconfig import process.
 
 ## Prerequisites
 
@@ -27,6 +27,7 @@ A kubeconfig file contains:
 
 ```yaml
 # Example kubeconfig structure
+
 apiVersion: v1
 kind: Config
 clusters:
@@ -170,7 +171,7 @@ KUBECONFIG=portainer-sa-kubeconfig.yaml kubectl get nodes
 
 After uploading:
 
-```
+```text
 Environment name:    production-cluster
 Namespace:          (leave blank for all namespaces)
 ```

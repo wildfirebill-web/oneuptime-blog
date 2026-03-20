@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, nginx, reverse-proxy, subpath, base-url, configuration
+Tags: Portainer, Nginx, Reverse-proxy, Subpaths, Base-url, Configuration
 
 Description: A guide to running Portainer under a URL subpath (e.g., /portainer/) using a reverse proxy, instead of at the root domain.
 
@@ -20,6 +20,7 @@ By default, Portainer serves at the root path (`/`). Running Portainer under a s
 
 ```nginx
 # /etc/nginx/conf.d/portainer.conf
+
 server {
     listen 443 ssl http2;
     server_name example.com;

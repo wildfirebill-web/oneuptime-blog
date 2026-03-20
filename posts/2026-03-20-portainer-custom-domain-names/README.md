@@ -1,8 +1,8 @@
-# How to Configure Custom Domain Names for Portainer Services
+# How to Configure Custom Domain Names for Portainer Services - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, DNS, Traefik, Nginx, Domains
+Tags: Portainer, DNS, Traefik, Nginx, Domain
 
 Description: Configure custom domain names for services managed by Portainer using Traefik or Nginx as a reverse proxy with automatic SSL.
 
@@ -22,6 +22,7 @@ Accessing services via custom domain names (like `myapp.example.com`) instead of
 
 ```yaml
 # traefik-stack.yml - deploy as a Portainer stack
+
 version: '3.8'
 
 services:

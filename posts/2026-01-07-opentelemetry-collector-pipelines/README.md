@@ -79,6 +79,7 @@ This configuration demonstrates running multiple pipelines for traces, each with
 
 ```yaml
 # Multi-pipeline configuration for traces
+
 # This setup routes traces to different backends with different processing needs
 receivers:
   # Single OTLP receiver that will feed multiple pipelines

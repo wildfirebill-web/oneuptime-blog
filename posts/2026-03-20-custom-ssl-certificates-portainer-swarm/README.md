@@ -14,6 +14,7 @@ When running Portainer on Docker Swarm, the best practice for managing SSL certi
 
 ```bash
 # Create Docker secrets from your certificate and key files
+
 # Run on the Swarm manager node
 
 # Create secret for the certificate

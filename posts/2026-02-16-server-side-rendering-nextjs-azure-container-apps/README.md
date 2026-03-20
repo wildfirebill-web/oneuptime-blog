@@ -30,6 +30,7 @@ For Next.js SSR, this means your dynamic pages render on the server for each req
 
 ```bash
 # Create a new Next.js app with the App Router
+
 npx create-next-app@latest nextjs-ssr-demo --typescript --app --src-dir
 cd nextjs-ssr-demo
 ```

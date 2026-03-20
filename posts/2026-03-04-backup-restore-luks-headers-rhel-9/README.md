@@ -41,6 +41,7 @@ Without a header backup, there is no way to recover data from a LUKS device with
 
 ```bash
 # Back up the LUKS header
+
 sudo cryptsetup luksHeaderBackup /dev/sdb \
     --header-backup-file /root/luks-header-sdb.img
 

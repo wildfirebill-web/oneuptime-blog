@@ -29,6 +29,7 @@ Click "Add a custom domain" and enter your domain name. If you have not verified
 
 ```text
 # Example TXT record for domain verification
+
 Type: TXT
 Name: @
 Value: google-site-verification=abc123xyz456...

@@ -18,6 +18,7 @@ Microsoft provides official IIS images through the Microsoft Container Registry.
 
 ```powershell
 # Pull the IIS image based on Windows Server Core
+
 docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2022
 
 # Pull the IIS image based on the full Windows image (for apps needing more APIs)

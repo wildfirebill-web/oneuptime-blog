@@ -14,6 +14,7 @@ Cloudflare rate limiting sits at the edge, blocking abusive traffic before it re
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     cloudflare = {
@@ -42,7 +43,7 @@ resource "cloudflare_ruleset" "rate_limiting" {
   kind        = "zone"
   phase       = "http_ratelimit"
 
-  # Rule 1: Limit login attempts — 5 per minute per IP
+  # Rule 1: Limit login attempts - 5 per minute per IP
   rules {
     action      = "block"
     description = "Block excessive login attempts"
@@ -61,7 +62,7 @@ resource "cloudflare_ruleset" "rate_limiting" {
     }
   }
 
-  # Rule 2: Global API rate limit — 100 requests per minute per IP
+  # Rule 2: Global API rate limit - 100 requests per minute per IP
   rules {
     action      = "block"
     description = "Global API rate limit"
@@ -77,7 +78,7 @@ resource "cloudflare_ruleset" "rate_limiting" {
     }
   }
 
-  # Rule 3: Registration rate limit — prevent account creation spam
+  # Rule 3: Registration rate limit - prevent account creation spam
   rules {
     action      = "block"
     description = "Limit new account registrations"
@@ -153,8 +154,8 @@ resource "cloudflare_ruleset" "bypass_rules" {
 
 ## Best Practices
 
-- Tune rate limits using Cloudflare Analytics before enabling block mode — observe actual traffic patterns first.
+- Tune rate limits using Cloudflare Analytics before enabling block mode - observe actual traffic patterns first.
 - Use multiple characteristics (`ip.src` + `cf.colo.id`) for stricter limits that account for shared IPs behind NAT.
 - Set `mitigation_timeout` to at least 5x the window period to prevent rapid retry attempts.
-- Return JSON error responses (not HTML) for API endpoints — clients need machine-readable errors.
+- Return JSON error responses (not HTML) for API endpoints - clients need machine-readable errors.
 - Exempt health check endpoints from rate limiting to prevent false monitoring alerts.

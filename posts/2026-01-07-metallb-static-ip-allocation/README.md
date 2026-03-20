@@ -48,6 +48,7 @@ The following configuration creates two IP pools: one for general services and o
 
 ```yaml
 # ip-address-pools.yaml
+
 # Define IP address pools for MetalLB to allocate from
 # We create separate pools for different use cases to ensure
 # critical services always have available addresses

@@ -21,6 +21,7 @@ Without namespace-specific DNS configuration, the namespace uses the host's `/et
 
 ```bash
 # Check DNS resolution in the namespace (uses host resolv.conf by default)
+
 ip netns exec ns1 cat /etc/resolv.conf
 # Shows the host's resolv.conf
 ```
@@ -133,4 +134,4 @@ ip netns exec $NS ping -c 2 google.com && echo "DNS working!"
 
 ## Conclusion
 
-Per-namespace DNS configuration is achieved through `/etc/netns/<name>/resolv.conf`. Linux automatically uses this file instead of `/etc/resolv.conf` when executing commands inside named namespaces with `ip netns exec`. This enables each namespace to have independent DNS servers and search domains — matching how container orchestrators configure per-container DNS.
+Per-namespace DNS configuration is achieved through `/etc/netns/<name>/resolv.conf`. Linux automatically uses this file instead of `/etc/resolv.conf` when executing commands inside named namespaces with `ip netns exec`. This enables each namespace to have independent DNS servers and search domains - matching how container orchestrators configure per-container DNS.

@@ -46,6 +46,7 @@ flowchart TD
 
 ```bash
 # In any Slack channel, run:
+
 /pd connect
 
 # Follow the OAuth flow to link your PagerDuty user account

@@ -12,7 +12,7 @@ EUI-64 (Extended Unique Identifier, 64-bit) is the original method for generatin
 
 ## EUI-64 Generation Algorithm
 
-```
+```text
 EUI-64 from MAC Address:
 
 Input MAC:  00:11:22:33:44:55
@@ -44,12 +44,12 @@ SLAAC Address:
 
 ## Universal/Local Bit Explained
 
-```
+```text
 The Universal/Local (U/L) Bit:
 
 In IEEE 802 MAC addresses:
-  Bit 0 of first byte: I/G bit (Individual/Group) — 0=unicast, 1=multicast
-  Bit 1 of first byte: U/L bit (Universal/Local)  — 0=global, 1=local
+  Bit 0 of first byte: I/G bit (Individual/Group) - 0=unicast, 1=multicast
+  Bit 1 of first byte: U/L bit (Universal/Local)  - 0=global, 1=local
 
   MAC 00:11:22:33:44:55
        ^^
@@ -100,6 +100,7 @@ def mac_to_eui64(mac_str: str) -> str:
     return iid
 
 # Examples:
+
 print(mac_to_eui64("00:11:22:33:44:55"))  # → 0211:22ff:fe33:4455
 print(mac_to_eui64("aa:bb:cc:dd:ee:ff"))  # → a8bb:ccff:fedd:eeff
 print(mac_to_eui64("f0:18:98:ab:cd:ef"))  # → f218:98ff:feab:cdef
@@ -143,7 +144,7 @@ ip -6 addr show eth0 | grep "scope global"
 
 EUI-64 embeds the MAC address in the IPv6 address, creating a privacy issue.
 
-```
+```bash
 EUI-64 Privacy Issue:
 
 Address: 2001:db8::211:22ff:fe33:4455
@@ -170,7 +171,7 @@ Enable privacy extensions on Linux:
 
 ## EUI-64 Use Cases Where It's Appropriate
 
-```
+```text
 When to use EUI-64 (despite privacy concerns):
 
 1. Router interfaces:

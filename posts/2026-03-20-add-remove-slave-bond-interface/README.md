@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bonding, Linux, Bond Slave, Network Interface, High Availability, ip link, ifenslave
+Tags: Bonding, Linux, Bond Slave, Network Interfaces, High Availability, Ip link, Ifenslave
 
 Description: Learn how to add and remove slave interfaces from a Linux bond interface at runtime and persistently, including safe procedures for live systems with active traffic.
 
@@ -14,6 +14,7 @@ Managing bond slaves at runtime allows you to replace failed NICs, add capacity,
 
 ```bash
 # Method 1: Using ip link (modern)
+
 ip link set eth2 down                          # Slave must be down before adding
 ip link set eth2 master bond0
 ip link set eth2 up
@@ -121,6 +122,6 @@ cat /proc/net/bonding/bond0
 ## Key Takeaways
 
 - A slave interface must be brought down (`ip link set down`) before adding it to a bond with `ip link set master`.
-- Remove a slave with `ip link set <iface> nomaster` — it becomes a standalone interface again.
+- Remove a slave with `ip link set <iface> nomaster` - it becomes a standalone interface again.
 - In active-backup mode, manually failover to another slave before removing the currently active slave.
 - Use `cat /proc/net/bonding/bond0` to verify slave state and active slave after changes.

@@ -295,6 +295,7 @@ module.exports = { JWTValidator, ValidationError };
 
 ```python
 # jwt_validator.py
+
 # Comprehensive JWT validation for Python applications
 
 import jwt

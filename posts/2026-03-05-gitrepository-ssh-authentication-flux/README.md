@@ -27,6 +27,7 @@ First, generate a dedicated SSH key pair for Flux. It is best practice to use a 
 
 ```bash
 # Generate an Ed25519 SSH key pair for Flux (no passphrase)
+
 ssh-keygen -t ed25519 -C "flux-readonly" -f ./flux-deploy-key -N ""
 ```
 

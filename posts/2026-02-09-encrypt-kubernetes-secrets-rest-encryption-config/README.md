@@ -55,6 +55,7 @@ Generate a random 32-byte key and base64-encode it:
 
 ```bash
 # Generate encryption key
+
 head -c 32 /dev/urandom | base64
 ```
 

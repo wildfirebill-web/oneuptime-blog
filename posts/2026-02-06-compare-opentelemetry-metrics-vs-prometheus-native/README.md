@@ -183,6 +183,7 @@ However, the OpenTelemetry Collector can also scrape Prometheus endpoints:
 
 ```yaml
 # OTel Collector scraping Prometheus endpoints
+
 # Bridges Prometheus instrumentation into the OTel pipeline
 receivers:
   prometheus:

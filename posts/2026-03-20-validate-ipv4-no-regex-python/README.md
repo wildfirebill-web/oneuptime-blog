@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Validation, ipaddress, Networking, stdlib
+Tags: Python, IPv4, Validation, Ipaddress, Networking, Stdlib
 
-Description: Learn how to validate IPv4 addresses in Python without regular expressions using the standard library ipaddress module, which handles all edge cases correctly including leading zeros, ranges, and malformed strings.
+Description: Learn how to validate IPv4 addresses in Python without regular expressions using the standard library ipaddress module, which handles all edge cases correctly including leading zeros, ranges, and...
 
 ## Basic Validation with ipaddress.IPv4Address
 
@@ -20,6 +20,7 @@ def is_valid_ipv4(s: str) -> bool:
         return False
 
 # Test cases
+
 cases = [
     ("192.168.1.1",     True),
     ("0.0.0.0",         True),
@@ -27,7 +28,7 @@ cases = [
     ("256.0.0.1",       False),   # Octet > 255
     ("192.168.1",       False),   # Missing octet
     ("192.168.1.1.1",   False),   # Extra octet
-    ("192.168.01.1",    False),   # Leading zero — rejected
+    ("192.168.01.1",    False),   # Leading zero - rejected
     ("::1",             False),   # IPv6
     ("",                False),   # Empty string
     ("localhost",       False),   # Hostname

@@ -14,6 +14,7 @@ DKIM (DomainKeys Identified Mail) adds a cryptographic signature to outgoing ema
 
 ```bash
 # Install OpenDKIM
+
 sudo apt install opendkim opendkim-tools
 
 # Generate DKIM key pair

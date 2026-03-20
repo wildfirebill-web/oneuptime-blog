@@ -281,6 +281,7 @@ Test with a large file download:
 
 ```bash
 # Download a file and measure the speed
+
 time curl -o /dev/null http://file-service.default:8080/large-file.zip
 
 # Or use curl's built-in speed display

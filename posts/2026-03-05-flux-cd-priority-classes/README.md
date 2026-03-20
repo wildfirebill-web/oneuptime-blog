@@ -33,6 +33,7 @@ Rather than using the system-level Priority Classes (which are reserved for core
 
 ```yaml
 # infrastructure/priority-classes/flux-critical.yaml
+
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
 metadata:

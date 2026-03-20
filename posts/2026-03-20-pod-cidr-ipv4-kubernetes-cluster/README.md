@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv4, Pod CIDR, CNI, Networking, kubeadm
+Tags: Kubernetes, IPv4, Pod CIDR, CNI, Networking, Kubeadm
 
 Description: Set the IPv4 Pod CIDR range during Kubernetes cluster initialization and understand how it is allocated across nodes by the controller manager.
 
@@ -10,7 +10,7 @@ The Pod CIDR defines the IPv4 address pool from which Kubernetes assigns address
 
 ## Planning the Pod CIDR
 
-```
+```text
 Recommended: 10.244.0.0/16 (default for Flannel)
 Alternative: 192.168.0.0/16 (default for Calico)
 Custom:      10.100.0.0/16 (use any private range not in use)
@@ -25,6 +25,7 @@ With /16 Pod CIDR and /24 per-node allocation:
 
 ```bash
 # Create a kubeadm configuration file
+
 cat > kubeadm-config.yaml << 'EOF'
 apiVersion: kubeadm.k8s.io/v1beta3
 kind: ClusterConfiguration
@@ -102,4 +103,4 @@ kubectl get pod test-pod -o wide
 kubectl get pods --all-namespaces -o wide | awk '{print $7}' | sort -u
 ```
 
-Choosing the correct Pod CIDR at cluster creation time is important — changing it later requires significant effort and potential downtime.
+Choosing the correct Pod CIDR at cluster creation time is important - changing it later requires significant effort and potential downtime.

@@ -32,6 +32,7 @@ Generated cookie affinity is the most reliable option for HTTP(S) load balancers
 
 ```bash
 # Enable generated cookie session affinity on a backend service
+
 gcloud compute backend-services update my-backend-service \
     --session-affinity=GENERATED_COOKIE \
     --affinity-cookie-ttl=3600 \

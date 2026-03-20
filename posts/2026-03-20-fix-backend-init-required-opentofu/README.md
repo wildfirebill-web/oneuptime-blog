@@ -1,10 +1,10 @@
-# How to Fix "Error: Backend Initialization Required" in OpenTofu
+# How to Fix 'Error: Backend Initialization Required' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Troubleshooting, Backend, Initialization, Error, Infrastructure as Code
 
-Description: Learn how to resolve the "backend initialization required" error in OpenTofu, which occurs when the backend configuration changes and requires re-initialization to migrate state.
+Description: Learn how to resolve the 'backend initialization required' error in OpenTofu, which occurs when the backend configuration changes and requires re-initialization to migrate state.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Description: Learn how to resolve the "backend initialization required" error in
 
 ## Error Messages
 
-```
+```hcl
 Error: Backend initialization required, please run "tofu init"
 
 Reason: Initial configuration of the requested backend "s3"
@@ -24,7 +24,7 @@ be initialized.
 Please run "tofu init" to continue with any further OpenTofu operations.
 ```
 
-```
+```hcl
 Error: Backend configuration changed
 
 A change in the backend configuration has been detected, which may require
@@ -47,6 +47,7 @@ When you modify the backend block (e.g., change the S3 bucket name or key), Open
 
 ```bash
 # Migrate state to the new backend
+
 tofu init -migrate-state
 
 # You will be prompted:
@@ -87,14 +88,14 @@ tofu init -reconfigure
 A common mistake is trying to use input variables in the backend block:
 
 ```hcl
-# WRONG — variables cannot be used in backend blocks
+# WRONG - variables cannot be used in backend blocks
 terraform {
   backend "s3" {
     bucket = var.state_bucket  # Not allowed!
   }
 }
 
-# CORRECT — use literal values or -backend-config flags
+# CORRECT - use literal values or -backend-config flags
 terraform {
   backend "s3" {}  # Empty block with all config via -backend-config
 }
@@ -129,4 +130,4 @@ Add `tofu init` as the first step in every CI/CD pipeline:
 
 ## Conclusion
 
-Backend initialization errors are resolved by running `tofu init`, with `-migrate-state` when the backend configuration has changed and you want to preserve existing state, or `-reconfigure` to start fresh. Never use input variables in backend blocks — pass configuration via `-backend-config` flags or a separate HCL file instead.
+Backend initialization errors are resolved by running `tofu init`, with `-migrate-state` when the backend configuration has changed and you want to preserve existing state, or `-reconfigure` to start fresh. Never use input variables in backend blocks - pass configuration via `-backend-config` flags or a separate HCL file instead.

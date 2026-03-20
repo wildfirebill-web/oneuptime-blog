@@ -35,6 +35,7 @@ The OpenTelemetry Operator simplifies deploying and managing collectors:
 
 ```bash
 # Install cert-manager if not already installed
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/latest/download/cert-manager.yaml
 kubectl wait --for=condition=Available deployment/cert-manager -n cert-manager --timeout=300s
 

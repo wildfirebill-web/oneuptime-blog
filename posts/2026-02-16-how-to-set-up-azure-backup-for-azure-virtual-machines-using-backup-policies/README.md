@@ -49,6 +49,7 @@ If you do not already have one, create a vault in the same region as your VMs:
 
 ```bash
 # Create a resource group for backup resources
+
 az group create \
     --name rg-backup-eastus2 \
     --location eastus2

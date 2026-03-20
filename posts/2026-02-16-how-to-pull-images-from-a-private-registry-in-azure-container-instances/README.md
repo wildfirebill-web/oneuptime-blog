@@ -20,6 +20,7 @@ The most straightforward method is providing registry credentials directly. This
 
 ```bash
 # Enable admin user on your ACR (if not already enabled)
+
 az acr update \
     --name myregistry \
     --admin-enabled true

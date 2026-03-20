@@ -14,6 +14,7 @@ GKE Network Policy controls which pods can communicate with each other and with 
 
 ```hcl
 # main.tf - GKE cluster with network policy enabled
+
 resource "google_container_cluster" "cluster" {
   name     = "network-policy-cluster"
   location = "us-central1"

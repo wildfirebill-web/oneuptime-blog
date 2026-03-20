@@ -59,6 +59,7 @@ Create separate ArgoCD Applications that watch different paths in the same repo:
 
 ```yaml
 # Dev environment - auto-sync enabled
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

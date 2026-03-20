@@ -121,6 +121,7 @@ First, install Podman for your operating system.
 
 ```bash
 # Ubuntu/Debian
+
 # Install Podman from the official repositories
 sudo apt update
 sudo apt install podman
@@ -685,7 +686,7 @@ systemctl --user start container-myapp-api.service
 loginctl enable-linger $USER
 ```
 
-### Resource Limits
+Resource Limits
 
 Specify CPU and memory limits:
 

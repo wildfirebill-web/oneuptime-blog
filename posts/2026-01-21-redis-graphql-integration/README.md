@@ -472,6 +472,7 @@ function generateCacheKey(
 
 ```graphql
 # schema.graphql
+
 type Query {
   # Cached for 5 minutes, public
   posts: [Post!]! @cacheControl(maxAge: 300)

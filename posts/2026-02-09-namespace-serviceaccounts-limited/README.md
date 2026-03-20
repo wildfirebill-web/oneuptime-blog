@@ -29,6 +29,7 @@ metadata:
   name: myapp
 ---
 # Service account for web frontend
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

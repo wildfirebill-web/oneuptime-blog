@@ -16,6 +16,7 @@ The most direct way to add a host alias is the `--add-host` flag on `docker run`
 
 ```bash
 # Add a custom host mapping: api.example.com resolves to 192.168.1.50
+
 docker run --rm --add-host api.example.com:192.168.1.50 alpine \
   cat /etc/hosts
 ```

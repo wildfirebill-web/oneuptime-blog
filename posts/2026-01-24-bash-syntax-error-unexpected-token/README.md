@@ -60,6 +60,7 @@ One of the most common causes is unbalanced quotes.
 
 ```bash
 # WRONG - Missing closing quote
+
 echo "Hello World
 echo "Next line"
 

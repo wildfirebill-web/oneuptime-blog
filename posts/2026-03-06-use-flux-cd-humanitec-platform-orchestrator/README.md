@@ -26,6 +26,7 @@ Before you begin, ensure you have:
 
 ```bash
 # Verify Flux is running
+
 flux check
 
 # Verify Humanitec CLI
@@ -559,7 +560,7 @@ flux get kustomization staging-apps -n flux-system -o yaml
 flux events --for Kustomization/staging-apps
 ```
 
-### Resource Conflicts
+Resource Conflicts
 
 If Flux and Humanitec conflict on resource ownership:
 

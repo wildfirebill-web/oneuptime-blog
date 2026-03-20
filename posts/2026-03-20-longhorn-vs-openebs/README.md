@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: longhorn, openebs, kubernetes, storage, comparison
+Tags: Longhorn, OpenEBS, Kubernetes, Storage, Comparison
 
 Description: A detailed comparison of Longhorn and OpenEBS for Kubernetes persistent storage, covering architecture, features, performance, and ease of use.
 
@@ -58,6 +58,7 @@ OpenEBS uses a modular approach with data plane (storage engines) and control pl
 
 ```bash
 # Simple Helm install
+
 helm repo add longhorn https://charts.longhorn.io
 helm install longhorn longhorn/longhorn \
   --namespace longhorn-system \
@@ -158,4 +159,4 @@ reclaimPolicy: Delete
 
 ## Conclusion
 
-Both Longhorn and OpenEBS are capable cloud-native storage solutions. Longhorn's strength is simplicity — it does one thing (replicated block storage) very well with an excellent UI and native Rancher integration. OpenEBS's strength is flexibility — its modular engine architecture lets you match the storage technology to your workload's specific requirements. For organizations with diverse storage needs, OpenEBS's multi-engine approach provides greater architectural options.
+Both Longhorn and OpenEBS are capable cloud-native storage solutions. Longhorn's strength is simplicity - it does one thing (replicated block storage) very well with an excellent UI and native Rancher integration. OpenEBS's strength is flexibility - its modular engine architecture lets you match the storage technology to your workload's specific requirements. For organizations with diverse storage needs, OpenEBS's multi-engine approach provides greater architectural options.

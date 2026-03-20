@@ -1,11 +1,10 @@
----
-title: "Using Module Package Subdirectories in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, git
-description: "Learn how to reference specific subdirectories within a module package source in OpenTofu using the double-slash notation."
----
-
 # Using Module Package Subdirectories in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Git
+
+Description: Learn how to reference specific subdirectories within a module package source in OpenTofu using the double-slash notation.
 
 OpenTofu allows you to reference a specific subdirectory within a module package using the `//` (double-slash) notation. This is especially useful when working with Git repositories or other sources that contain multiple modules.
 
@@ -25,6 +24,7 @@ Everything before `//` is the package address. Everything after is the subdirect
 
 ```hcl
 # Reference a specific module in a monorepo
+
 module "vpc" {
   source = "git::https://github.com/myorg/infrastructure.git//modules/vpc"
 }
@@ -95,7 +95,7 @@ module "app" {
 
 ## Practical Monorepo Pattern
 
-```
+```text
 terraform-modules/                    # Single repo
 ├── README.md
 ├── modules/
@@ -157,7 +157,7 @@ module "s3_notification" {
 ## Locking Submodule References
 
 ```hcl
-# versions.tf — document your module sources
+# versions.tf - document your module sources
 locals {
   module_ref = "v4.2.1"
 }

@@ -35,6 +35,7 @@ Foreman provides an installer script that handles the complexity of setting up t
 
 ```bash
 # Set the hostname to a proper FQDN
+
 sudo hostnamectl set-hostname foreman.example.com
 
 # Verify it resolves correctly

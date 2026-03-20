@@ -55,6 +55,7 @@ Install RabbitMQ on each server. Here we use Ubuntu as an example:
 
 ```bash
 # Add RabbitMQ signing key
+
 curl -1sLf 'https://keys.openpgp.org/vks/v1/by-fingerprint/0A9AF2115F4687BD29803A206B73A36E6026DFCA' | sudo gpg --dearmor -o /usr/share/keyrings/rabbitmq-archive-keyring.gpg
 
 # Add repository

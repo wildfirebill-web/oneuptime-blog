@@ -27,6 +27,7 @@ The standard IPv4 header is 20 bytes. When the IHL (Internet Header Length) fiel
 from scapy.all import IP, ICMP, IPOption_RR, sr1
 
 # Create a packet with the Record Route option
+
 # IPOption_RR pre-allocates space for 9 IP addresses
 pkt = IP(dst="8.8.8.8", options=IPOption_RR()) / ICMP()
 

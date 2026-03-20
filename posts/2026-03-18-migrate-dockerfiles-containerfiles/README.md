@@ -20,6 +20,7 @@ Containerfile and Dockerfile are interchangeable names for the same format.
 
 ```bash
 # Podman looks for Containerfile first, then Dockerfile
+
 # Both of these work identically:
 podman build -t myapp .          # Finds Containerfile or Dockerfile
 podman build -f Dockerfile .     # Explicitly use Dockerfile

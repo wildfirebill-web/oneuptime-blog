@@ -20,6 +20,7 @@ AWS Shield Advanced provides enhanced DDoS protection beyond the free Shield Sta
 
 ```hcl
 # Enable Shield Advanced for the account
+
 resource "aws_shield_subscription" "main" {
   auto_renew = "ENABLED"  # or "DISABLED"
 }

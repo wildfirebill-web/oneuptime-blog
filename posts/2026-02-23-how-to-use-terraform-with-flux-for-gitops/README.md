@@ -26,6 +26,7 @@ Start with Terraform to create the underlying infrastructure.
 
 ```hcl
 # providers.tf
+
 # Define required providers for the Terraform configuration
 terraform {
   required_version = ">= 1.0"

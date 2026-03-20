@@ -32,6 +32,7 @@ The `belongs_to` and `has_many` pair forms the backbone of most Rails applicatio
 
 ```ruby
 # app/models/author.rb
+
 class Author < ApplicationRecord
   # An author can write many articles
   # No foreign key in this table

@@ -26,6 +26,7 @@ The simplest and most common use case is restricting users to SFTP access within
 
 ```bash
 # Create the chroot base directory
+
 sudo mkdir -p /var/sftp/uploads
 
 # The chroot directory must be owned by root with no write access for the group/others

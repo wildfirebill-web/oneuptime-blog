@@ -22,6 +22,7 @@ Most policy engines automatically create PolicyReport resources. Install Policy 
 
 ```bash
 # Add Helm repository
+
 helm repo add policy-reporter https://kyverno.github.io/policy-reporter
 helm repo update
 

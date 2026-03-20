@@ -22,6 +22,7 @@ Several Docker images provide TeX Live. The most common options are:
 
 ```bash
 # Full TeX Live installation (4+ GB, has everything)
+
 docker pull texlive/texlive:latest
 
 # Smaller image with common packages

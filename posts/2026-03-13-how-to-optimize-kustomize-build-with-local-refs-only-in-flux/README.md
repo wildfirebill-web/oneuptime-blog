@@ -14,6 +14,7 @@ Kustomize supports referencing remote bases via Git URLs in your `kustomization.
 
 ```yaml
 # This triggers a network fetch during every build
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

@@ -31,6 +31,7 @@ Assuming you already have backend services and a load balancer set up, the URL r
 
 ```bash
 # Create backend services (if not already created)
+
 gcloud compute health-checks create http app-hc --port=8080
 
 gcloud compute backend-services create api-backend \

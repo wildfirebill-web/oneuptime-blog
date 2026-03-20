@@ -48,6 +48,7 @@ from vertexai.generative_models import GenerativeModel, Part
 from vertexai.preview import caching
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Create the cached content from a large document

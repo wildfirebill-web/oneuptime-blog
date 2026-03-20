@@ -250,6 +250,7 @@ If you manage ArgoCD with the community Helm chart:
 
 ```yaml
 # values.yaml
+
 server:
   config:
     # Override Deployment health check to be more lenient during rolling updates

@@ -14,6 +14,7 @@ Mattermost is an open-source alternative to Slack that you can host on your own 
 
 ```yaml
 # roles/mattermost/defaults/main.yml - Mattermost configuration
+
 mattermost_version: "9.3.0"
 mattermost_domain: chat.example.com
 mattermost_port: 8065

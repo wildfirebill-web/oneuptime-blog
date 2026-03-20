@@ -43,6 +43,7 @@ sshKey: '...'
 
 ```bash
 # Create installation directory and run installer
+
 mkdir -p ~/ocp-install
 cp install-config.yaml ~/ocp-install/
 openshift-install create cluster --dir=~/ocp-install --log-level=info

@@ -32,6 +32,7 @@ Inspect kernel versions across all nodes:
 
 ```bash
 # Check kernel versions on all nodes (need 5.3+ for kube-proxy replacement)
+
 kubectl get nodes -o custom-columns=\
 NAME:.metadata.name,\
 KERNEL:.status.nodeInfo.kernelVersion

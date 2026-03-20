@@ -299,6 +299,7 @@ from elasticsearch import Elasticsearch
 es = Elasticsearch("http://localhost:9200")
 
 # Using _source filtering
+
 response = es.search(
     index="products",
     body={

@@ -47,6 +47,7 @@ Set passwords interactively:
 
 ```bash
 # Interactive password setup
+
 sudo /usr/share/elasticsearch/bin/elasticsearch-setup-passwords interactive
 ```
 

@@ -10,7 +10,7 @@ Terragrunt is a thin wrapper around OpenTofu that adds DRY configuration, automa
 
 ## Directory Structure
 
-```
+```text
 infra/
 ├── terragrunt.hcl              # Root config (shared backend, provider vars)
 ├── accounts/
@@ -34,9 +34,10 @@ infra/
 ## Root terragrunt.hcl
 
 ```hcl
-# infra/terragrunt.hcl — Root configuration
+# infra/terragrunt.hcl - Root configuration
 
 # Automatically configure S3 backend for every module
+
 remote_state {
   backend = "s3"
   config = {

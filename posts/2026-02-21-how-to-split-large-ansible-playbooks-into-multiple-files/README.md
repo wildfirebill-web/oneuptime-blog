@@ -14,6 +14,7 @@ Large playbooks become unmanageable fast. When your single playbook file exceeds
 
 ```yaml
 # site.yml - master playbook that imports sub-playbooks
+
 - import_playbook: playbooks/infrastructure.yml
 - import_playbook: playbooks/databases.yml
 - import_playbook: playbooks/applications.yml

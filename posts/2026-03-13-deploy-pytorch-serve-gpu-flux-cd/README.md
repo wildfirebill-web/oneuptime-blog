@@ -27,6 +27,7 @@ This guide covers deploying TorchServe with GPU support on Kubernetes using Flux
 
 ```yaml
 # clusters/my-cluster/torchserve/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

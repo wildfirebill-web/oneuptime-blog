@@ -18,6 +18,7 @@ Make sure you have the ArgoCD CLI installed and authenticated:
 
 ```bash
 # Install ArgoCD CLI
+
 brew install argocd  # macOS
 # or
 curl -sSL -o argocd https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64

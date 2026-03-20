@@ -135,6 +135,7 @@ With the template file:
 
 ```yaml
 # manifests/virtual-service.yaml.tpl
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

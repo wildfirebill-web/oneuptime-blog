@@ -40,6 +40,7 @@ On the primary server, enable replication settings:
 # /etc/postgresql/15/main/postgresql.conf
 
 # Enable WAL archiving and replication
+
 wal_level = replica                    # Required for replication
 max_wal_senders = 5                    # Max number of replicas
 wal_keep_size = 1GB                    # Keep WAL for slow replicas

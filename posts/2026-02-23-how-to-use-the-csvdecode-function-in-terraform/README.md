@@ -14,6 +14,7 @@ The `csvdecode` function in Terraform parses a CSV-formatted string into a list 
 
 ```hcl
 # csvdecode(string)
+
 # Returns a list of maps
 
 csvdecode("name,age\nAlice,30\nBob,25")

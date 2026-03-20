@@ -20,6 +20,7 @@ Cross-account role assumption allows principals in one AWS account to assume rol
 
 ```hcl
 # In the TARGET account - create a role that the source account can assume
+
 resource "aws_iam_role" "cross_account_target" {
   name        = "CrossAccountAccessRole"
   description = "Role assumable from the central tooling account"
@@ -142,4 +143,4 @@ tofu apply
 
 ## Conclusion
 
-Cross-account role assumption is more secure than creating IAM users with long-lived credentials. Always use an `ExternalId` for third-party tool access to prevent the confused deputy problem. Set `session duration` appropriately—shorter for human users (1 hour) and longer for automated pipelines (up to 12 hours). Audit cross-account activity via CloudTrail in each account by filtering for `AssumeRole` events.
+Cross-account role assumption is more secure than creating IAM users with long-lived credentials. Always use an `ExternalId` for third-party tool access to prevent the confused deputy problem. Set `session duration` appropriately-shorter for human users (1 hour) and longer for automated pipelines (up to 12 hours). Audit cross-account activity via CloudTrail in each account by filtering for `AssumeRole` events.

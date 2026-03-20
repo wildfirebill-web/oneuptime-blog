@@ -39,6 +39,7 @@ defaults
 
 #----------------------------------------------
 # Frontend: accept IPv4 and IPv6 connections
+
 # ':::80' binds to all IPv6 addresses (and IPv4
 # via mapped addresses on Linux by default)
 #----------------------------------------------
@@ -114,6 +115,6 @@ curl -4 http://192.168.1.10/
 ## Key Takeaways
 
 - Use `bind :::80 v4v6` to accept both IPv6 and IPv4 connections on a single socket.
-- Backends remain unchanged — HAProxy opens new IPv4 connections to them.
+- Backends remain unchanged - HAProxy opens new IPv4 connections to them.
 - Use `option forwardfor` to preserve the client's original IPv6 address in logs and application headers.
 - For IPv6-only ingress, bind to a specific IPv6 address without the `v4v6` flag.

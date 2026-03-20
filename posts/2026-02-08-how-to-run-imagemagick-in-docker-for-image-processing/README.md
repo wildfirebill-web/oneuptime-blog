@@ -20,6 +20,7 @@ The fastest way to use ImageMagick in Docker is with the official dpokidov/image
 
 ```bash
 # Convert a PNG image to JPEG with 85% quality
+
 docker run --rm -v $(pwd)/images:/imgs dpokidov/imagemagick \
   /imgs/photo.png -quality 85 /imgs/photo.jpg
 ```

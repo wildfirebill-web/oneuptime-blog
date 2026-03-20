@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, .htaccess, IPv4, Security, Access Control, mod_authz_host, Firewall
+Tags: Apache, .htaccess, IPv4, Security, Access Control, Mod_authz_host, Firewall
 
 Description: Learn how to use Apache .htaccess files to block or allow specific IPv4 addresses and CIDR ranges from accessing your web application.
 
@@ -16,6 +16,7 @@ Before `.htaccess` rules work, the main Apache configuration must permit overrid
 
 ```apacheconf
 # /etc/apache2/sites-available/mysite.conf
+
 <Directory /var/www/mysite>
     # Allow .htaccess files to override access control
     AllowOverride AuthConfig Limit

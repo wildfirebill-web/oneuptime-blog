@@ -44,6 +44,7 @@ Ansible includes several useful callback plugins out of the box.
 
 ```bash
 # List all available callback plugins
+
 ansible-doc -t callback -l
 
 # Get details about a specific callback

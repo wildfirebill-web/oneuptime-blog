@@ -56,6 +56,7 @@ Store these securely in environment variables.
 
 ```bash
 # .env file - never commit this to version control
+
 GITHUB_CLIENT_ID=your_client_id_here
 GITHUB_CLIENT_SECRET=your_client_secret_here
 GITHUB_CALLBACK_URL=https://myapp.example.com/auth/github/callback

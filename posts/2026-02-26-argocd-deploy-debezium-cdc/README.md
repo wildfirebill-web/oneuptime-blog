@@ -37,6 +37,7 @@ Debezium connectors need to be packaged into a Kafka Connect image. Use the Stri
 
 ```yaml
 # debezium/production/kafka-connect.yaml
+
 apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaConnect
 metadata:

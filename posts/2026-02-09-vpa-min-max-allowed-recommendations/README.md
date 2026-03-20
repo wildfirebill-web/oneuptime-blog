@@ -242,6 +242,7 @@ Track when recommendations hit the configured limits.
 
 ```bash
 # Check VPA recommendations
+
 kubectl describe vpa web-app-vpa -n production
 
 # View recommended values

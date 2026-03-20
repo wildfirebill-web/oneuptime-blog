@@ -1,14 +1,14 @@
-# How to Configure Host Networking Mode for Containers in Portainer
+# How to Configure Host Networking Mode for Containers in Portainer - Mode
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Host Networking, Performance, Network, Linux
+Tags: Portainer, Docker, Host Networking, Performance, Networks, Linux
 
 Description: Configure containers to use host networking mode in Portainer for maximum network performance and direct access to host network interfaces, understanding the security tradeoffs.
 
 ---
 
-Host networking mode removes the Docker network namespace isolation — the container shares the host's network stack directly. This provides the best possible network performance but eliminates port mapping and network isolation.
+Host networking mode removes the Docker network namespace isolation - the container shares the host's network stack directly. This provides the best possible network performance but eliminates port mapping and network isolation.
 
 ## When to Use Host Networking
 
@@ -32,7 +32,7 @@ services:
   net-monitor:
     image: nicolaka/netshoot:latest
     network_mode: host    # Share host network namespace
-    # Note: No ports: section needed — container uses host ports directly
+    # Note: No ports: section needed - container uses host ports directly
     restart: unless-stopped
 
   # High-performance DPDK application
@@ -50,6 +50,7 @@ services:
 
 ```bash
 # Test network throughput with and without host networking
+
 # With bridge networking (default)
 docker run --rm networkstatic/iperf3 -c iperf-server
 # Typical: 8-9 Gbps on 10GbE
@@ -63,7 +64,7 @@ docker run --rm --network host networkstatic/iperf3 -c iperf-server
 
 ```yaml
 # With host networking:
-# 1. No port mapping — this WILL NOT work
+# 1. No port mapping - this WILL NOT work
 services:
   app:
     network_mode: host
@@ -72,7 +73,7 @@ services:
 
 # 2. Container binds directly to host port 8080
 # 3. Multiple containers cannot use the same host port
-# 4. No Docker DNS service discovery — use IP addresses or /etc/hosts
+# 4. No Docker DNS service discovery - use IP addresses or /etc/hosts
 
 # For multiple instances, use different listening ports in the app
 ```

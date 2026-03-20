@@ -52,6 +52,7 @@ kubectl exec -n flux-system deploy/helm-controller -- \
 
 ```promql
 # Average Helm install/upgrade time
+
 rate(gotk_reconcile_duration_seconds_sum{kind="HelmRelease"}[10m])
 /
 rate(gotk_reconcile_duration_seconds_count{kind="HelmRelease"}[10m])

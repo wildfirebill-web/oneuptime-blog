@@ -25,6 +25,7 @@ This guide covers how to verify diagnostic bundle completeness and how to extrac
 ```bash
 #!/bin/bash
 # validate-diag-bundle.sh
+
 # Validates that a Calico diagnostic bundle contains all expected files
 
 BUNDLE="$1"

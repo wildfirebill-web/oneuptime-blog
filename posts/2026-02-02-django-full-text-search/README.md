@@ -61,6 +61,7 @@ The following settings.py configuration ensures Django connects to PostgreSQL:
 
 ```python
 # settings.py
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',

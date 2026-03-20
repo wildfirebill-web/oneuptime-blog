@@ -24,6 +24,7 @@ Joining your Samba server to Active Directory means users authenticate with thei
 
 ```bash
 # Install Samba, AD integration, and Kerberos packages
+
 sudo dnf install -y samba samba-client samba-winbind samba-winbind-clients \
     krb5-workstation realmd oddjob oddjob-mkhomedir sssd adcli
 ```

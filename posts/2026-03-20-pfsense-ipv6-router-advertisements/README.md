@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: pfSense, IPv6, Router Advertisements, SLAAC, radvd
+Tags: pfSense, IPv6, Router Advertisement, SLAAC, Radvd
 
 Description: Configure Router Advertisement Daemon (radvd) settings in pfSense for IPv6 SLAAC autoconfiuration on the LAN.
 
@@ -22,7 +22,7 @@ Navigate to **System → Advanced → Networking** and ensure:
 - **Allow IPv6** is checked
 - IPv6 over IPv4 tunneling options are set appropriately
 
-```
+```text
 System → Advanced → Networking
   ✓ Allow IPv6
   ✓ IPv6 over IPv4 Tunneling (if using tunnels)
@@ -31,14 +31,14 @@ System → Advanced → Networking
 ## WAN IPv6 Configuration
 
 ### SLAAC (Stateless Autoconfiguration)
-```
+```nginx
 Interfaces → WAN
   IPv6 Configuration Type: SLAAC
   (Automatically receives IPv6 from upstream router)
 ```
 
 ### DHCPv6
-```
+```text
 Interfaces → WAN
   IPv6 Configuration Type: DHCPv6
   Request only an IPv6 prefix: checked (for PD)
@@ -46,7 +46,7 @@ Interfaces → WAN
 ```
 
 ### Static IPv6
-```
+```nginx
 Interfaces → WAN
   IPv6 Configuration Type: Static IPv6
   IPv6 Address: 2001:db8:wan::2/64
@@ -55,7 +55,7 @@ Interfaces → WAN
 
 ## LAN IPv6 Configuration
 
-```
+```text
 Interfaces → LAN
   IPv6 Configuration Type: Track Interface
   IPv6 Interface: WAN
@@ -64,7 +64,7 @@ Interfaces → LAN
 
 ## DHCPv6 Server Setup
 
-```
+```text
 Services → DHCPv6 Server & RA → LAN
   ✓ Enable DHCPv6 server on interface LAN
   Range From: 2001:db8:lan::100
@@ -74,8 +74,9 @@ Services → DHCPv6 Server & RA → LAN
 
 ## Essential IPv6 Firewall Rules
 
-```
-# Allow ICMPv6 (critical — do NOT block all ICMPv6)
+```text
+# Allow ICMPv6 (critical - do NOT block all ICMPv6)
+
 Firewall → Rules → LAN → Add
   Action: Pass
   TCP/IP Version: IPv6
@@ -93,7 +94,7 @@ Firewall → Rules → LAN → Add
 
 ## Diagnostics and Troubleshooting
 
-```
+```text
 # pfSense built-in diagnostics
 Diagnostics → Ping → IPv6 address
 Diagnostics → DNS Lookup → AAAA record

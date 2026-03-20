@@ -158,6 +158,7 @@ This script installs containerd from Docker's official repository, which provide
 
 ```bash
 # Install prerequisites for adding external repositories
+
 sudo apt-get update
 sudo apt-get install -y ca-certificates curl gnupg
 

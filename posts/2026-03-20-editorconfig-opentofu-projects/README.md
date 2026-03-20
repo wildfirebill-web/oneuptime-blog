@@ -14,6 +14,7 @@ EditorConfig sets editor-independent code style preferences that apply regardles
 
 ```ini
 # .editorconfig
+
 # EditorConfig documentation: https://editorconfig.org
 
 # Top-most EditorConfig file
@@ -188,4 +189,4 @@ repos:
 
 ## Conclusion
 
-EditorConfig works silently in the background to ensure consistent code style across team members using different editors. The key settings for OpenTofu are 2-space indentation (matching `tofu fmt`), LF line endings (important on Windows machines), and UTF-8 encoding. Pair it with `tofu fmt` in pre-commit hooks — EditorConfig handles the settings inside the editor, while `tofu fmt` corrects formatting when code is committed.
+EditorConfig works silently in the background to ensure consistent code style across team members using different editors. The key settings for OpenTofu are 2-space indentation (matching `tofu fmt`), LF line endings (important on Windows machines), and UTF-8 encoding. Pair it with `tofu fmt` in pre-commit hooks - EditorConfig handles the settings inside the editor, while `tofu fmt` corrects formatting when code is committed.

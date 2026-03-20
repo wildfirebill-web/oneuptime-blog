@@ -54,6 +54,7 @@ graph LR
 
 ```bash
 # Create a resource group
+
 az group create --name rg-expressroute-demo --location eastus
 
 # Create an ExpressRoute circuit

@@ -20,6 +20,7 @@ Before import blocks, you ran commands like this for each resource:
 terraform import azurerm_resource_group.main /subscriptions/xxx/resourceGroups/rg-production
 terraform import azurerm_storage_account.logs /subscriptions/xxx/resourceGroups/rg-production/providers/Microsoft.Storage/storageAccounts/stlogsprod
 # ... repeat 200 more times
+
 ```
 
 Each command had to be run in sequence, and if one failed, you had to figure out where you left off. There was no way to preview what the import would do before executing it.

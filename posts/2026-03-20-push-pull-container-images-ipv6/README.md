@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, Container Images, Registry, Podman, containerd, DevOps
+Tags: Docker, IPv6, Container Images, Registry, Podman, Containerd, DevOps
 
 Description: Push and pull container images over IPv6 using Docker, Podman, and containerd, covering registry authentication, IPv6 address syntax, and common runtime configurations.
 
@@ -32,6 +32,7 @@ When using a registry that only has an IPv6 address (or you want to force IPv6):
 
 ```bash
 # Pull from a registry at an IPv6 address
+
 # Use bracket notation for IPv6 in the registry URL
 docker pull [2001:db8::1]:5000/myapp:latest
 
@@ -181,4 +182,4 @@ ip -6 route show
 ping6 -c 3 2001:db8::1
 ```
 
-Container image operations over IPv6 work seamlessly with properly configured Docker daemons, Podman, or containerd — the main requirement is using correct bracket notation for IPv6 addresses in registry URLs.
+Container image operations over IPv6 work seamlessly with properly configured Docker daemons, Podman, or containerd - the main requirement is using correct bracket notation for IPv6 addresses in registry URLs.

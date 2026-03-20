@@ -44,6 +44,7 @@ Here is how to create an Event Hub with a specific partition count:
 
 ```bash
 # First, create the Event Hubs namespace
+
 az eventhubs namespace create \
   --resource-group my-resource-group \
   --name my-eventhubs-namespace \

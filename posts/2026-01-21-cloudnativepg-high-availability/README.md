@@ -267,6 +267,7 @@ spec:
 
 ```bash
 # Watch cluster status
+
 kubectl get cluster postgres-ha -w
 
 # Check current primary

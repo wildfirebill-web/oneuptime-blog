@@ -11,8 +11,8 @@ Description: Learn how to create and manage AWS PrivateLink VPC endpoints using 
 AWS PrivateLink allows you to access AWS services and services hosted by other AWS accounts (or AWS Marketplace partners) privately within your VPC, without exposing traffic to the public internet. Traffic stays on the AWS backbone network.
 
 VPC endpoints come in two types:
-- **Interface endpoints** — Uses an ENI in your VPC with a private IP (PrivateLink)
-- **Gateway endpoints** — For S3 and DynamoDB; uses route table entries
+- **Interface endpoints** - Uses an ENI in your VPC with a private IP (PrivateLink)
+- **Gateway endpoints** - For S3 and DynamoDB; uses route table entries
 
 ## Creating an Interface Endpoint
 
@@ -132,6 +132,7 @@ resource "aws_vpc_endpoint" "s3_restricted" {
 
 ```bash
 # From an EC2 instance in the VPC
+
 # Test S3 without internet
 curl https://s3.amazonaws.com -I
 

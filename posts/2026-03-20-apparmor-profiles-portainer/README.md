@@ -14,6 +14,7 @@ AppArmor is a Linux Security Module that enforces access control policies throug
 
 ```bash
 # Check if AppArmor is enabled
+
 sudo aa-status
 # Should show: apparmor module is loaded
 
@@ -222,4 +223,4 @@ docker inspect nginx_container --format '{{.AppArmorProfile}}'
 
 ## Conclusion
 
-AppArmor profiles complement seccomp profiles — AppArmor controls file system access and capabilities, while seccomp controls which system calls can be made. Together they provide defense-in-depth protection. Start with complain mode to discover what your container legitimately needs, review the logs, then enforce the profile in production. Docker's default profile is a good baseline, but a custom profile tailored to your specific application eliminates entire categories of potential exploit paths. Portainer's `security_opt` configuration makes it simple to deploy different AppArmor profiles per service in your stack YAML.
+AppArmor profiles complement seccomp profiles - AppArmor controls file system access and capabilities, while seccomp controls which system calls can be made. Together they provide defense-in-depth protection. Start with complain mode to discover what your container legitimately needs, review the logs, then enforce the profile in production. Docker's default profile is a good baseline, but a custom profile tailored to your specific application eliminates entire categories of potential exploit paths. Portainer's `security_opt` configuration makes it simple to deploy different AppArmor profiles per service in your stack YAML.

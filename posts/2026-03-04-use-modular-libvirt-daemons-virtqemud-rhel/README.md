@@ -16,6 +16,7 @@ The monolithic `libvirtd` is replaced by several specialized daemons:
 
 ```bash
 # Key modular daemons:
+
 # virtqemud    - QEMU/KVM virtual machine management
 # virtnetworkd - Virtual network management
 # virtstoraged - Storage pool and volume management

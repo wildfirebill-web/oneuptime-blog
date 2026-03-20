@@ -1,10 +1,10 @@
-# How to Fix "DHCP Is Not Enabled for WiFi" Error
+# How to Fix 'DHCP Is Not Enabled for WiFi' Error
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, WiFi, Windows, Troubleshooting, Network
+Tags: DHCP, WiFi, Windows, Troubleshooting, Networks
 
-Description: Learn how to fix the "DHCP is not enabled for WiFi" error message that appears when running the Windows network troubleshooter, by re-enabling automatic IP addressing.
+Description: Learn how to fix the 'DHCP is not enabled for WiFi' error message that appears when running the Windows network troubleshooter, by re-enabling automatic IP addressing.
 
 ## What Causes This Error?
 
@@ -24,6 +24,7 @@ This error appears when the WiFi adapter is configured to use a static (manual) 
 # Run as Administrator
 
 # Re-enable DHCP for Wi-Fi adapter
+
 Set-NetIPInterface -InterfaceAlias "Wi-Fi" -Dhcp Enabled
 
 # Clear any static DNS settings

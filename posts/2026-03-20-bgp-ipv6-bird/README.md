@@ -12,7 +12,7 @@ BIRD2 (version 2.x) provides a unified configuration for BGP IPv6. It is lightwe
 
 ## Basic eBGP IPv6 Configuration
 
-```
+```bash
 # /etc/bird/bird.conf
 
 router id 1.1.1.1;
@@ -29,6 +29,7 @@ protocol kernel {
 }
 
 # BGP eBGP peer
+
 protocol bgp EBGP_PEER {
     local 2001:db8:peer::1 as 65001;
     neighbor 2001:db8:peer::2 as 65002;
@@ -47,7 +48,7 @@ protocol static static_v6 {
 
 ## eBGP over Link-Local Address
 
-```
+```bash
 # Peer using link-local address (interface must be specified)
 protocol bgp EBGP_LL {
     local fe80::1 as 65001;
@@ -61,7 +62,7 @@ protocol bgp EBGP_LL {
 
 ## iBGP Configuration
 
-```
+```bash
 # iBGP with next-hop-self
 protocol bgp IBGP_PEER {
     local 2001:db8::1 as 65001;
@@ -76,7 +77,7 @@ protocol bgp IBGP_PEER {
 
 ## Filtering with Prefix Lists (BIRD filter language)
 
-```
+```python
 # Define a filter for inbound routes from peer
 filter ACCEPT_PEER_ROUTES {
     # Accept only specific prefixes from the peer
@@ -102,7 +103,7 @@ protocol bgp EBGP_PEER {
 
 ## Adding BGP Communities
 
-```
+```text
 # Set a community on exported routes
 filter EXPORT_WITH_COMMUNITY {
     if net = 2001:db8:1::/48 then {

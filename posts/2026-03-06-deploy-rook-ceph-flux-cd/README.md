@@ -47,6 +47,7 @@ Start by defining the namespace where Rook-Ceph will be deployed.
 
 ```yaml
 # clusters/my-cluster/storage/rook-ceph/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -37,6 +37,7 @@ Install iSCSI on all nodes:
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update && sudo apt install -y open-iscsi
 sudo systemctl enable --now iscsid
 

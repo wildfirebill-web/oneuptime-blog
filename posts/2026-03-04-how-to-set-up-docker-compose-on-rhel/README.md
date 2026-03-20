@@ -16,6 +16,7 @@ If you installed Docker CE with the compose plugin, it is already available:
 
 ```bash
 # Verify Docker Compose is installed
+
 docker compose version
 
 # If not installed, add the plugin

@@ -32,6 +32,7 @@ TARGET_VERSION="1.29"
 echo "Creating canary node pool with version $TARGET_VERSION..."
 
 # Create canary node group
+
 aws eks create-nodegroup \
   --cluster-name $CLUSTER_NAME \
   --nodegroup-name $CANARY_POOL \

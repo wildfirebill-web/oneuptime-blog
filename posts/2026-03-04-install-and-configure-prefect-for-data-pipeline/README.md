@@ -20,6 +20,7 @@ Prefect for Data Pipeline Orchestration can be installed and configured on RHEL 
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

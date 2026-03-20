@@ -26,6 +26,7 @@ Verify your setup:
 
 ```bash
 # Confirm Flux is running
+
 flux check
 ```
 

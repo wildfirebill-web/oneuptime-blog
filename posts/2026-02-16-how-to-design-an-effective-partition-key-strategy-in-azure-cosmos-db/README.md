@@ -161,6 +161,7 @@ Before committing to a partition key, analyze your actual data to check distribu
 
 ```python
 # Analyze candidate partition key distribution
+
 # Run this against your existing data to see how it would distribute
 import json
 from collections import Counter

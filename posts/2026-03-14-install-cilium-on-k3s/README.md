@@ -30,6 +30,7 @@ K3s must be installed with Flannel disabled so Cilium can take over networking:
 
 ```bash
 # Install K3s server (control plane) with Flannel disabled
+
 # The --flannel-backend=none flag prevents K3s from deploying Flannel
 # The --disable-network-policy flag prevents K3s from deploying its built-in network policy controller
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="\

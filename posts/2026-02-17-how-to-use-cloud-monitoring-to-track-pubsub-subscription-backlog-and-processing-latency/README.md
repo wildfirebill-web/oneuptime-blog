@@ -42,6 +42,7 @@ The most important chart is the backlog - how many messages are waiting to be pr
 
 ```text
 # Number of undelivered messages per subscription
+
 fetch pubsub_subscription
 | metric 'pubsub.googleapis.com/subscription/num_undelivered_messages'
 | group_by [resource.subscription_id], [val: mean(value.num_undelivered_messages)]

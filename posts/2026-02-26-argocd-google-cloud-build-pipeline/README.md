@@ -32,6 +32,7 @@ The `cloudbuild.yaml` in your application repository:
 
 ```yaml
 # cloudbuild.yaml
+
 steps:
   # Step 1: Run tests
   - id: 'test'

@@ -30,6 +30,7 @@ Install the Edge TPU runtime and PyCoral library on your host machine:
 
 ```bash
 # Add the Coral package repository
+
 echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | \
   sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -

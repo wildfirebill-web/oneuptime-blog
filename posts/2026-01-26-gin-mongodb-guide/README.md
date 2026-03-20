@@ -56,6 +56,7 @@ First, create a new Go project and install the required dependencies:
 
 ```bash
 # Create a new directory for your project
+
 mkdir gin-mongodb-api
 cd gin-mongodb-api
 

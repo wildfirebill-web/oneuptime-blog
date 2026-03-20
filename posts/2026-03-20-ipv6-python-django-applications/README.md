@@ -14,6 +14,7 @@ Configure Django's `settings.py` to allow IPv6 hosts:
 # settings.py
 
 # Allow IPv6 addresses in ALLOWED_HOSTS
+
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",

@@ -42,6 +42,7 @@ import boto3
 from sklearn.model_selection import train_test_split
 
 # Create a SageMaker session
+
 session = sagemaker.Session()
 bucket = session.default_bucket()
 prefix = 'training-demo'

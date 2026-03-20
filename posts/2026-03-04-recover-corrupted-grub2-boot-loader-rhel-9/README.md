@@ -47,6 +47,7 @@ flowchart TD
 
 ```bash
 # Change root to the installed system
+
 chroot /mnt/sysimage
 
 # Verify you are now in the installed system

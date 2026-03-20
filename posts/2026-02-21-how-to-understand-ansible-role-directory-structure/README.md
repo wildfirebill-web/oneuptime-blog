@@ -46,6 +46,7 @@ This is the only directory that is truly required. When Ansible applies a role, 
 
 ```yaml
 # roles/myrole/tasks/main.yml
+
 # Entry point - Ansible starts here when the role is invoked
 ---
 - name: Install required packages

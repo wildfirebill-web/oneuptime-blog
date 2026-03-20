@@ -1,10 +1,10 @@
-# How to Deploy PostgreSQL on AWS RDS with OpenTofu
+# How to Deploy PostgreSQL on AWS RDS with OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, PostgreSQL, RDS, AWS, Database, Infrastructure as Code
 
-Description: Learn how to deploy a production-ready PostgreSQL database on AWS RDS using OpenTofu — including subnet groups, parameter groups, security groups, automated backups, and encryption.
+Description: Learn how to deploy a production-ready PostgreSQL database on AWS RDS using OpenTofu - including subnet groups, parameter groups, security groups, automated backups, and encryption.
 
 ## Introduction
 
@@ -175,6 +175,7 @@ output "db_security_group_id" {
 
 ```hcl
 # Store password in AWS Secrets Manager
+
 resource "aws_secretsmanager_secret" "db_password" {
   name = "${var.environment}/postgres/password"
 }

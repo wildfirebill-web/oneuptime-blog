@@ -34,6 +34,7 @@ For most production use cases:
 
 ```bash
 # Check if the bonding module is loaded
+
 lsmod | grep bonding
 
 # Load it (usually auto-loaded when you configure bonding, but verify)

@@ -209,6 +209,7 @@ Check that locality information is properly propagated to Envoy:
 
 ```bash
 # See the cluster endpoints and their priorities
+
 istioctl proxy-config endpoints <pod-name> --cluster "outbound|80||order-service.default.svc.cluster.local"
 ```
 

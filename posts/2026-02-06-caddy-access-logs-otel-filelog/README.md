@@ -14,6 +14,7 @@ Enable structured access logging in your Caddyfile:
 
 ```text
 # Caddyfile
+
 {
     log {
         output file /var/log/caddy/access.log {

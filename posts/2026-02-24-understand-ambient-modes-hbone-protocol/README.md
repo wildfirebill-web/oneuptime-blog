@@ -82,6 +82,7 @@ On cloud providers with security groups:
 
 ```bash
 # AWS example - allow HBONE between nodes
+
 aws ec2 authorize-security-group-ingress \
   --group-id sg-xxxx \
   --protocol tcp \

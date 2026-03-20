@@ -27,6 +27,7 @@ Install the wandb package and authenticate:
 
 ```bash
 # Install W&B
+
 pip install wandb
 
 # Login (opens browser for authentication)

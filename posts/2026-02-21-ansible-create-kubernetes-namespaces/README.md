@@ -46,6 +46,7 @@ The most basic namespace creation:
 
 ```yaml
 # create_namespace.yml - Create a basic namespace
+
 ---
 - name: Create Kubernetes Namespace
   hosts: localhost

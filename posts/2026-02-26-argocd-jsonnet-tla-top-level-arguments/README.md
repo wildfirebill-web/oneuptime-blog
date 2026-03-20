@@ -42,6 +42,7 @@ ArgoCD supports TLAs through the `directory.jsonnet.tlas` field in the Applicati
 
 ```yaml
 # argocd-app-tla.yaml - ArgoCD Application with Jsonnet TLAs
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

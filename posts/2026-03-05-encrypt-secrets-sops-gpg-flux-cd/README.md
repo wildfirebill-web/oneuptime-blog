@@ -25,6 +25,7 @@ Generate a GPG key pair without a passphrase, as Flux needs non-interactive acce
 
 ```bash
 # Generate a GPG key pair for SOPS
+
 # The key must not have a passphrase for automated decryption
 export KEY_NAME="flux-sops"
 export KEY_COMMENT="Flux SOPS secret encryption"

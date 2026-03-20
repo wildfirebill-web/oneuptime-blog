@@ -14,7 +14,7 @@ A well-organized OpenTofu project structure makes your infrastructure code more 
 
 For simple projects:
 
-```
+```text
 my-infrastructure/
 ├── main.tf          # Main resources
 ├── variables.tf     # Input variable declarations
@@ -28,7 +28,7 @@ my-infrastructure/
 
 For most team projects:
 
-```
+```text
 my-infrastructure/
 ├── main.tf              # Primary resources
 ├── variables.tf         # Input variable declarations
@@ -49,7 +49,7 @@ my-infrastructure/
 
 For complex, reusable infrastructure:
 
-```
+```text
 infrastructure/
 ├── main.tf
 ├── variables.tf
@@ -92,6 +92,7 @@ infrastructure/
 
 ```hcl
 # versions.tf - Always have this file
+
 terraform {
   required_version = ">= 1.9.0, < 2.0.0"
 

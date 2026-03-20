@@ -43,6 +43,7 @@ Set up a dedicated project for the clean room:
 
 ```bash
 # Create a project for the clean room
+
 gcloud projects create clean-room-project \
   --name="Data Clean Room"
 

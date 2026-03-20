@@ -22,6 +22,7 @@ The fastest rollback is reverting the most recent commit:
 
 ```bash
 # Find the commit that broke things
+
 git log --oneline -10
 
 # Output:

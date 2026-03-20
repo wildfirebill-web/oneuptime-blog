@@ -120,6 +120,7 @@ When multiple VirtualServices bound to the mesh gateway have overlapping hosts:
 
 ```yaml
 # vs-1.yaml
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

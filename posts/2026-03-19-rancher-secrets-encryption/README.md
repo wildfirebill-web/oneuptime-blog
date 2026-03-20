@@ -21,6 +21,7 @@ RKE2 provides the simplest way to enable secrets encryption:
 
 ```bash
 # On the RKE2 server node
+
 cat >> /etc/rancher/rke2/config.yaml << 'EOF'
 secrets-encryption: true
 EOF

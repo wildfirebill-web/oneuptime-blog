@@ -45,6 +45,7 @@ Create a `vector.yaml` file. This configuration collects Docker container logs, 
 # vector.yaml - Observability pipeline configuration
 
 # Sources define where Vector collects data from
+
 sources:
   # Collect logs from Docker containers via the Docker API
   docker_logs:

@@ -29,6 +29,7 @@ If you're using a remote backend (and you should be), the first step is to pull 
 
 ```bash
 # Pull the current state into a local file
+
 terraform state pull > terraform.tfstate.backup
 
 # Make a second copy as your working copy

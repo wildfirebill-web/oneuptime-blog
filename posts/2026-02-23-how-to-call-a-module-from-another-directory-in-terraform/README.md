@@ -18,6 +18,7 @@ To call a module from another directory, you use a relative path in the `source`
 
 ```hcl
 # main.tf - Call a module in a subdirectory
+
 module "networking" {
   source = "./modules/networking"
 

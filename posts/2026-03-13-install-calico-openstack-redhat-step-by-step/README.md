@@ -27,6 +27,7 @@ Calico's Felix requires specific SELinux permissions.
 
 ```bash
 # Allow Felix to manage iptables and network interfaces
+
 sudo setsebool -P nis_enabled 1
 sudo setsebool -P httpd_can_network_connect 1
 

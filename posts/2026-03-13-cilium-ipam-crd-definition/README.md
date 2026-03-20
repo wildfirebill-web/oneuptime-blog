@@ -29,6 +29,7 @@ View and understand the CRD structure:
 
 ```bash
 # View the CiliumNode CRD schema
+
 kubectl get crd ciliumnodes.cilium.io \
   -o jsonpath='{.spec.versions[0].schema.openAPIV3Schema.properties.spec.properties.ipam}' | jq '.'
 

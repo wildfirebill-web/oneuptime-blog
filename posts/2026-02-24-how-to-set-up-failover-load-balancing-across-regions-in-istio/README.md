@@ -201,6 +201,7 @@ Track when failover happens with Prometheus:
 
 ```text
 # Requests by destination locality
+
 sum(rate(istio_requests_total{
   destination_service="search-api.default.svc.cluster.local"
 }[5m])) by (destination_canonical_revision, source_workload)

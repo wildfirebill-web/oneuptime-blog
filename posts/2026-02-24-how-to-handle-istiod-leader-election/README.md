@@ -154,6 +154,7 @@ If the leader is elected but its tasks are not running (status not updating, cle
 
 ```bash
 # Find the leader
+
 LEADER=$(kubectl get lease istiod-election -n istio-system -o jsonpath='{.spec.holderIdentity}' | cut -d'_' -f1)
 kubectl logs -n istio-system $LEADER | grep -i "leader\|election"
 ```

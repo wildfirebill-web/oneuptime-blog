@@ -29,6 +29,7 @@ A single API server replica means that any node failure or pod eviction takes do
 
 ```bash
 # Check if you are running only one replica (common mistake)
+
 kubectl get deployment calico-apiserver -n calico-apiserver \
   -o jsonpath='{.spec.replicas}'
 

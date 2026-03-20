@@ -35,6 +35,7 @@ On Linux servers, run:
 
 ```bash
 # Enable Tailscale SSH on this machine
+
 sudo tailscale up --ssh
 ```
 

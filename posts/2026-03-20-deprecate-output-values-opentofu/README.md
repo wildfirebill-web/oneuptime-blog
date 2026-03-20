@@ -16,6 +16,7 @@ When maintaining OpenTofu modules, you may need to rename outputs, change their 
 # modules/vpc/outputs.tf
 
 # OLD: Deprecated output
+
 output "id" {
   description = "DEPRECATED: Use vpc_id instead"
   value       = aws_vpc.this.id

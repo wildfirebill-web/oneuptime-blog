@@ -26,6 +26,7 @@ This guide provides practical examples of using `calicoctl validate` for differe
 
 ```bash
 # Create a policy file to validate
+
 cat > /tmp/test-policy.yaml <<EOF
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy

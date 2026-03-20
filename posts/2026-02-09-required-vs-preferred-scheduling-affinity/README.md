@@ -77,6 +77,7 @@ Use required affinity for technical or compliance requirements that must be met:
 
 ```yaml
 # PCI-DSS compliant workloads must run on compliant nodes
+
 affinity:
   nodeAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:

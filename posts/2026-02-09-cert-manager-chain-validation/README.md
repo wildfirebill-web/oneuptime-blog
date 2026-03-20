@@ -55,6 +55,7 @@ Verify the complete chain is present:
 
 ```bash
 # Get the certificate from a secret
+
 kubectl get secret example-tls -o jsonpath='{.data.tls\.crt}' | base64 -d > cert.pem
 
 # Check the chain

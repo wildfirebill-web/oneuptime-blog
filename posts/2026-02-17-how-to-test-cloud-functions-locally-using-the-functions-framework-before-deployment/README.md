@@ -20,6 +20,7 @@ The Functions Framework for Node.js is an npm package:
 
 ```bash
 # Install as a regular dependency (it is needed at runtime too)
+
 npm install @google-cloud/functions-framework
 ```
 

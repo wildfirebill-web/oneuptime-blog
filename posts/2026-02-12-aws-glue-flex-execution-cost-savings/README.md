@@ -29,6 +29,7 @@ Enabling Flex is straightforward - you just change the execution class when crea
 
 ```bash
 # Create a Glue job with Flex execution
+
 aws glue create-job \
     --name "daily-sales-etl-flex" \
     --role "arn:aws:iam::123456789012:role/GlueJobRole" \

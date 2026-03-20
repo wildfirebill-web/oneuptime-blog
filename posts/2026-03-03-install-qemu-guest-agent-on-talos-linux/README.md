@@ -30,6 +30,7 @@ Add the QEMU Guest Agent extension to your machine configuration.
 
 ```yaml
 # controlplane.yaml or worker.yaml
+
 machine:
   install:
     extensions:

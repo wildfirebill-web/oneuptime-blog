@@ -28,6 +28,7 @@ Here is how to configure a single GPU for a custom training job:
 
 ```python
 # single_gpu_training.py
+
 # Submit a training job with one NVIDIA T4 GPU
 
 from google.cloud import aiplatform

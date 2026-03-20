@@ -14,6 +14,7 @@ DR plans are only effective if tested regularly. OpenTofu provides a controlled 
 
 ```hcl
 # main.tf - DR test environment using workspace isolation
+
 variable "is_dr_test" {
   type        = bool
   default     = false

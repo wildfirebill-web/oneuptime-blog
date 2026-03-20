@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, falco, security, runtime, kubernetes
+Tags: Rancher, Falco, Security, Runtime, Kubernetes
 
 Description: Guide to deploying Falco runtime security on Rancher for detecting threats and anomalous container behavior.
 
@@ -31,6 +31,7 @@ How to Set Up Falco Runtime Security on Rancher addresses these challenges by ad
 
 ```bash
 # Run a basic security audit
+
 kubectl get pods --all-namespaces -o json | jq -r '
   .items[] | 
   select(

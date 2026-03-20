@@ -30,6 +30,7 @@ Let me walk through the entire setup using the Azure CLI. You can also use Terra
 
 ```bash
 # Create a resource group for all the resources
+
 az group create \
   --name rg-functions-premium \
   --location eastus2

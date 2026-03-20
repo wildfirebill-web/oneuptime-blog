@@ -126,6 +126,7 @@ class InventoryStore:
 
 
 # Usage
+
 r = redis.Redis(decode_responses=True)
 store = InventoryStore(r)
 

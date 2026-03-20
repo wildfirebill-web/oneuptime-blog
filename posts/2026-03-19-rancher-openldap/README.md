@@ -55,6 +55,7 @@ Create groups for Rancher access control:
 
 ```bash
 # Create admin group
+
 ldapadd -x -H ldaps://ldap.example.com:636 \
   -D "cn=admin,dc=example,dc=com" \
   -w "<admin-password>" <<EOF

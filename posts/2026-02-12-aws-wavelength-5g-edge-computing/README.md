@@ -47,6 +47,7 @@ Wavelength Zones are opt-in, just like Local Zones. You need to enable them befo
 
 ```bash
 # List available Wavelength zones
+
 aws ec2 describe-availability-zones \
   --filters "Name=zone-type,Values=wavelength-zone" \
   --query "AvailabilityZones[].{Zone:ZoneName, State:OptInStatus, Carrier:NetworkBorderGroup}" \

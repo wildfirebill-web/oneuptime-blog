@@ -26,6 +26,7 @@ This guide covers enabling debug logging, filtering for relevant messages, and i
 
 ```bash
 # Enable debug logging at runtime (no restart required)
+
 kubectl exec -n kube-system cilium-xxxxx -- \
   cilium config set debug true
 

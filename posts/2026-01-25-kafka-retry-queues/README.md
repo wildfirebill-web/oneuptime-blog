@@ -31,6 +31,7 @@ Create topics for each retry level with different retention settings.
 
 ```bash
 # Main topic
+
 kafka-topics.sh --create \
   --topic orders \
   --bootstrap-server localhost:9092 \

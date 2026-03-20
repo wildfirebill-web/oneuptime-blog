@@ -18,6 +18,7 @@ The simplest use of `unique` is removing duplicate strings from a flat list.
 
 ```yaml
 # basic-unique.yml
+
 # Removes duplicate package names before installation
 - name: Install packages without duplicates
   hosts: all

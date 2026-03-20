@@ -27,6 +27,7 @@ Prometheus uses a pull model, so you need a bridge. The common approach is to us
 
 ```python
 # callback_plugins/prometheus_pushgw.py - Push Ansible metrics to Prometheus
+
 import os
 import time
 from ansible.plugins.callback import CallbackBase

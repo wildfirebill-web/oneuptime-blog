@@ -14,6 +14,7 @@ Nginx `upstream` blocks define groups of backend servers for proxying and load b
 
 ```nginx
 # /etc/nginx/nginx.conf
+
 http {
     upstream backend {
         server 10.0.0.10:8080;

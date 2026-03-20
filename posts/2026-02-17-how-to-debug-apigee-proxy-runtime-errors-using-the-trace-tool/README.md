@@ -29,6 +29,7 @@ Start a debug session programmatically:
 
 ```bash
 # Start a debug session
+
 curl -X POST \
   "https://apigee.googleapis.com/v1/organizations/YOUR_ORG/environments/prod/apis/your-proxy/revisions/1/debugsessions" \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \

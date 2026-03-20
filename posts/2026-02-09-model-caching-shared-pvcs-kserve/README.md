@@ -42,6 +42,7 @@ First, create a PVC that will serve as your model cache. The size depends on how
 
 ```yaml
 # model-cache-pvc.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

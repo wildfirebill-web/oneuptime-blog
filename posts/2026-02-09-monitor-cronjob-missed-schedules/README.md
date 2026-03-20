@@ -18,6 +18,7 @@ Every CronJob maintains status information about its execution history:
 
 ```bash
 # View CronJob status
+
 kubectl get cronjob backup-job -o yaml
 
 # Key status fields:

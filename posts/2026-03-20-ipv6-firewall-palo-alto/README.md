@@ -14,7 +14,7 @@ Palo Alto Networks NGFW (PAN-OS) supports IPv6 in its security policy framework.
 
 Navigate to **Network → Interfaces → Ethernet → Edit**:
 
-```
+```text
 IPv6 tab:
   Enable IPv6 on Interface: ✓
   Address: 2001:db8:wan::1/64
@@ -25,6 +25,7 @@ Or via CLI:
 
 ```bash
 # PAN-OS CLI
+
 set network interface ethernet ethernet1/1 ipv6 enabled yes
 set network interface ethernet ethernet1/1 ipv6 prefix 2001:db8:wan::1/64 enable-on-interface yes
 set network interface ethernet ethernet1/2 ipv6 enabled yes
@@ -35,7 +36,7 @@ set network interface ethernet ethernet1/2 ipv6 prefix 2001:db8:lan::1/64
 
 Navigate to **Objects → Addresses → Add**:
 
-```
+```text
 Name:       IPv6-INTERNAL
 Type:       IP Netmask
 Address:    2001:db8:lan::/48 (IPv6 prefix)
@@ -54,7 +55,7 @@ Navigate to **Policies → Security → Add**:
 
 ### Allow Outbound IPv6
 
-```
+```text
 Name:           Allow-Outbound-IPv6
 Source Zone:    Trust
 Destination:    Untrust
@@ -69,7 +70,7 @@ Log:            ✓ Log at Session End
 
 ### Allow Specific Inbound Services
 
-```
+```text
 Name:           Allow-HTTPS-IPv6
 Source Zone:    Untrust
 Destination:    DMZ
@@ -83,7 +84,7 @@ Profile Group:  Best-Practice
 
 ### SSH from Management Only
 
-```
+```text
 Name:           Allow-SSH-Mgmt-IPv6
 Source Zone:    Untrust
 Destination:    Trust
@@ -120,7 +121,7 @@ set rulebase security rules ICMPv6-Essential action allow
 
 PAN-OS applies the same threat prevention profiles to IPv6:
 
-```
+```text
 Profile Group: Best-Practice
   - Antivirus: ✓
   - Anti-Spyware: ✓ (includes IPS)
@@ -146,7 +147,7 @@ debug dataplane state | match ipv6
 ```
 
 Navigate to **Monitor → Logs → Traffic** and filter:
-```
+```text
 addr.src in 2001:db8::/32 and ( app eq ssl or app eq ssh )
 ```
 
@@ -177,4 +178,4 @@ debug dataplane packet-diag set filter on
 
 ## Summary
 
-Palo Alto PAN-OS IPv6 security policies use the same framework as IPv4. Create address objects with IPv6 prefixes (`ip-netmask 2001:db8::/48`) and reference them in security rules with source/destination address. App-ID works for IPv6 — use application names (`ssl`, `ssh`, `icmp6`) rather than port numbers. Apply the same threat prevention profile groups to IPv6 policies as IPv4. All changes require `commit`. Monitor IPv6 traffic via **Monitor → Logs → Traffic** with IPv6 address filters.
+Palo Alto PAN-OS IPv6 security policies use the same framework as IPv4. Create address objects with IPv6 prefixes (`ip-netmask 2001:db8::/48`) and reference them in security rules with source/destination address. App-ID works for IPv6 - use application names (`ssl`, `ssh`, `icmp6`) rather than port numbers. Apply the same threat prevention profile groups to IPv6 policies as IPv4. All changes require `commit`. Monitor IPv6 traffic via **Monitor → Logs → Traffic** with IPv6 address filters.

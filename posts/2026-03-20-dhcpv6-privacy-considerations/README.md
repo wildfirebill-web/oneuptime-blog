@@ -14,8 +14,9 @@ DHCPv6 introduces privacy concerns that do not exist in the same form with DHCPv
 
 When a DHCPv6 client sends a Solicit or Request, it includes a **DUID** (DHCP Unique Identifier) in the Client Identifier option. DUIDs are often based on the MAC address or a UUID tied to the hardware.
 
-```
+```text
 # Typical DUID-LL (type 3) based on MAC address
+
 Client Identifier: 00:03:00:01:aa:bb:cc:dd:ee:ff
                    ^^^^^ ^^^^^ ^^^^^^^^^^^^^^^^
                    type  hw   MAC address

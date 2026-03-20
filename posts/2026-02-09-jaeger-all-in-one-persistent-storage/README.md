@@ -318,6 +318,7 @@ resources:
     cpu: "2000m"
 
 # For high-volume development environments
+
 resources:
   requests:
     memory: "1Gi"

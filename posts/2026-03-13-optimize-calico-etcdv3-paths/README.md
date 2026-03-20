@@ -26,6 +26,7 @@ etcd retains historical versions of every key by default. Compaction reclaims th
 
 ```bash
 # Enable automatic periodic compaction
+
 etcd --auto-compaction-mode=periodic \
      --auto-compaction-retention=1h
 ```

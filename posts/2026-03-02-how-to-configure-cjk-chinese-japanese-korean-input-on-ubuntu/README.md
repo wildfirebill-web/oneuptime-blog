@@ -21,6 +21,7 @@ An input method framework sits between the keyboard and applications. When you t
 
 ```bash
 # Update package list
+
 sudo apt update
 
 # Install IBus core (often pre-installed on Ubuntu Desktop)

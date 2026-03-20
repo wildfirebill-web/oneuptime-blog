@@ -45,6 +45,7 @@ The following commands clone the official Kubernetes autoscaler repository and r
 
 ```bash
 # Clone the autoscaler repo containing VPA manifests
+
 git clone https://github.com/kubernetes/autoscaler.git
 cd autoscaler/vertical-pod-autoscaler
 

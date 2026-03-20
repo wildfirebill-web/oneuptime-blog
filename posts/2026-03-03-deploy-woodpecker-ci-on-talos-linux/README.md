@@ -36,6 +36,7 @@ For Gitea or Forgejo, create an OAuth2 Application with the redirect URI set to 
 
 ```bash
 # Add the Woodpecker Helm repository
+
 helm repo add woodpecker https://woodpecker-ci.org/
 
 # Update the chart cache

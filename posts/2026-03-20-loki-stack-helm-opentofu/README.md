@@ -8,12 +8,13 @@ Description: Learn how to deploy the Grafana Loki stack on Kubernetes using Open
 
 ## Overview
 
-Grafana Loki is a log aggregation system inspired by Prometheus. Unlike Elasticsearch, Loki indexes only labels and stores log chunks in object storage, making it cost-effective for large-scale deployments. OpenTofu deploys the full Loki stack — Loki, Promtail, and Grafana — via Helm.
+Grafana Loki is a log aggregation system inspired by Prometheus. Unlike Elasticsearch, Loki indexes only labels and stores log chunks in object storage, making it cost-effective for large-scale deployments. OpenTofu deploys the full Loki stack - Loki, Promtail, and Grafana - via Helm.
 
 ## Step 1: Deploy Loki with Helm
 
 ```hcl
 # main.tf - Deploy Loki via Grafana Helm chart
+
 resource "helm_release" "loki" {
   name             = "loki"
   repository       = "https://grafana.github.io/helm-charts"

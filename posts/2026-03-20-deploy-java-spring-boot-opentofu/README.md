@@ -174,4 +174,4 @@ resource "aws_lb_target_group" "spring_boot" {
 
 ## Summary
 
-Deploying Spring Boot on ECS Fargate requires careful JVM memory configuration — use `-XX:+UseContainerSupport` and `-XX:MaxRAMPercentage=75.0` to let the JVM respect container memory limits. Set `health_check_grace_period_seconds` to at least 120 seconds to give Spring Boot time to fully start before ALB health checks begin. Use Spring Boot Actuator's `/actuator/health` endpoint for health checks, and store all database credentials in Secrets Manager with environment variable injection.
+Deploying Spring Boot on ECS Fargate requires careful JVM memory configuration - use `-XX:+UseContainerSupport` and `-XX:MaxRAMPercentage=75.0` to let the JVM respect container memory limits. Set `health_check_grace_period_seconds` to at least 120 seconds to give Spring Boot time to fully start before ALB health checks begin. Use Spring Boot Actuator's `/actuator/health` endpoint for health checks, and store all database credentials in Secrets Manager with environment variable injection.

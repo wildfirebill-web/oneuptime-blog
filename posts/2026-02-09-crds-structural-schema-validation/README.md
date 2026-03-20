@@ -253,6 +253,7 @@ Once you've created your CRD, test it thoroughly. Create a test resource that vi
 
 ```bash
 # Apply the CRD
+
 kubectl apply -f application-crd.yaml
 
 # Test invalid replica count

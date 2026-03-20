@@ -8,16 +8,16 @@ Description: Understand the IPv6 Authentication Header (AH) extension header, ho
 
 ## Introduction
 
-The Authentication Header (AH, Next Header = 51) is an IPsec extension header that provides data origin authentication and connectionless integrity for IPv6 packets. AH authenticates the entire IPv6 packet (including parts of the fixed header) using a cryptographic integrity check value (ICV). It does NOT provide confidentiality — for encryption, use ESP instead.
+The Authentication Header (AH, Next Header = 51) is an IPsec extension header that provides data origin authentication and connectionless integrity for IPv6 packets. AH authenticates the entire IPv6 packet (including parts of the fixed header) using a cryptographic integrity check value (ICV). It does NOT provide confidentiality - for encryption, use ESP instead.
 
 ## What AH Provides
 
-```
+```text
 AH provides:
   ✓ Data origin authentication (verifies the sender's identity)
   ✓ Data integrity (detects modification of the packet)
   ✓ Anti-replay protection (detects replayed packets)
-  ✗ Confidentiality (no encryption — use ESP for that)
+  ✗ Confidentiality (no encryption - use ESP for that)
   ✗ Protection against traffic analysis
 
 Scope of authentication:
@@ -29,7 +29,7 @@ Scope of authentication:
 
 ## AH Header Format
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -57,6 +57,7 @@ AH authenticates the IPv6 header but must skip "mutable" fields that change in t
 
 ```python
 # Fields EXCLUDED from AH authentication (mutable during routing):
+
 MUTABLE_IPV6_FIELDS = {
     "Traffic Class": "may be remarked at DSCP boundaries",
     "Flow Label": "may be set/modified by intermediate nodes",
@@ -78,7 +79,7 @@ IMMUTABLE_IPV6_FIELDS = {
 
 ## IPsec AH in Transport vs Tunnel Mode
 
-```
+```text
 Transport Mode (host-to-host):
   [IPv6 Header][AH][TCP/UDP][Data]
   Authenticates from original source to original destination

@@ -14,6 +14,7 @@ Squid is a high-performance caching and forwarding HTTP proxy. As a forward prox
 
 ```bash
 # Install Squid from the default repositories
+
 sudo dnf install -y squid
 
 # Check the installed version

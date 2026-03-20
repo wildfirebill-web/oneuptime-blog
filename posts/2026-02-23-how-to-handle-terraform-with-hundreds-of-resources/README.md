@@ -25,6 +25,7 @@ Your project has grown too large when:
 
 ```bash
 # Quick health check
+
 echo "Resource count:"
 terraform state list | wc -l
 

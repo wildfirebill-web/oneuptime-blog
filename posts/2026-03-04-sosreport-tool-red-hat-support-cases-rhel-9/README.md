@@ -20,6 +20,7 @@ On RHEL, the sos package should be installed by default. If it is not, install i
 
 ```bash
 # Install the sos package
+
 sudo dnf install sos -y
 
 # Verify the installation

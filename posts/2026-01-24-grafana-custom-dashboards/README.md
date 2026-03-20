@@ -47,6 +47,7 @@ Let us create a panel showing HTTP request rates by status code. In the query ed
 
 ```promql
 # Sum of HTTP requests per second, grouped by status code
+
 sum by (status_code) (
   rate(http_requests_total[5m])
 )

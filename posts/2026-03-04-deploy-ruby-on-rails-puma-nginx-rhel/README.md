@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ruby, Rails, Puma, NGINX, Deployment, Linux
+Tags: RHEL, Ruby, Rails, Puma, Nginx, Deployment, Linux
 
 Description: Deploy a Ruby on Rails application in production on RHEL using Puma as the application server and Nginx as a reverse proxy with systemd management.
 
@@ -14,6 +14,7 @@ Deploying Rails in production requires a proper application server and reverse p
 
 ```bash
 # Install Ruby, Nginx, and build dependencies
+
 sudo dnf module enable ruby:3.2 -y
 sudo dnf install -y ruby ruby-devel rubygem-bundler nginx \
   gcc gcc-c++ make postgresql-devel nodejs

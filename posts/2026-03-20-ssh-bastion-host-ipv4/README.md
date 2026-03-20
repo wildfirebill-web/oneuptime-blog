@@ -28,6 +28,7 @@ Harden the bastion SSH configuration:
 # /etc/ssh/sshd_config (on bastion server)
 
 # Listen on public IPv4 only
+
 ListenAddress 203.0.113.10
 Port 22
 

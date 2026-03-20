@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Fluxcd, GitOps, Backup, Export, Kubernetes, Disaster-Recovery, CLI
+Tags: Flux, Fluxcd, GitOps, Backup, Export, Kubernetes, Disaster-recovery, CLI
 
 Description: Learn how to use the flux export command to backup all your Flux CD resources for disaster recovery and migration purposes.
 
@@ -40,6 +40,7 @@ The quickest way to backup everything is to export all Flux resources at once:
 
 ```bash
 # Export all Flux resources across all namespaces
+
 flux export source all --all-namespaces > sources-backup.yaml
 
 # Export all Kustomization resources

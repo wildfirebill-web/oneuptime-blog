@@ -16,6 +16,7 @@ Every RHEL system has a main routing table that gets populated automatically:
 
 ```bash
 # View the current routing table
+
 ip route show
 
 # Show the default gateway

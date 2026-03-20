@@ -32,6 +32,7 @@ Modern Kubernetes versions (1.21+) use bound tokens by default. Verify your clus
 
 ```bash
 # Check API server configuration
+
 kubectl get pods -n kube-system -l component=kube-apiserver -o yaml | grep -i service-account
 
 # Look for these flags (should be enabled):

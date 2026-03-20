@@ -18,6 +18,7 @@ The most basic check. Sidecar injection only happens in namespaces that are labe
 
 ```bash
 # Check namespace labels
+
 kubectl get namespace my-namespace --show-labels
 
 # Look specifically for the injection label

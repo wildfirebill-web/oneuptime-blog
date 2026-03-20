@@ -18,6 +18,7 @@ Deploying untested YAML to a Kubernetes cluster can cause outages and debugging 
 
 ```bash
 # Use podman kube play --dry-run to validate without deploying
+
 # This is not a built-in flag, so we validate with other tools first
 
 # Check YAML syntax with python

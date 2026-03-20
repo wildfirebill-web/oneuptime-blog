@@ -53,6 +53,7 @@ Here's a simple configuration that uses a static bearer token for authenticating
 
 ```yaml
 # Define the bearer token auth extension
+
 extensions:
   # bearertoken extension with inline token
   bearertoken:

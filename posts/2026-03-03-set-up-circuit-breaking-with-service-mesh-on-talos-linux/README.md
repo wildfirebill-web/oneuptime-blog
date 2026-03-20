@@ -40,6 +40,7 @@ Istio provides circuit breaking through the DestinationRule resource. First, mak
 
 ```bash
 # Verify Istio is running
+
 kubectl get pods -n istio-system
 ```
 

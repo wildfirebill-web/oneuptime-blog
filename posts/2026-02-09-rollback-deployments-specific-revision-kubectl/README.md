@@ -20,6 +20,7 @@ Check your deployment's revision history:
 
 ```bash
 # View rollout history
+
 kubectl rollout history deployment/api-server
 
 # Output shows revisions

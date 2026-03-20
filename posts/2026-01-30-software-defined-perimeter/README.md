@@ -103,6 +103,7 @@ sequenceDiagram
 
 ```python
 # SPA packet implementation example
+
 import hashlib
 import hmac
 import json

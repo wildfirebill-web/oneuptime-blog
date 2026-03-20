@@ -16,6 +16,7 @@ Cloud Armor attaches to Google's Global External HTTP(S) Load Balancer. It inspe
 
 ```bash
 # Create a Cloud Armor security policy
+
 gcloud compute security-policies create web-app-policy \
   --description "Protection for web application"
 

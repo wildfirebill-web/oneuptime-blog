@@ -16,6 +16,7 @@ Using PowerShell on the Hyper-V host:
 
 ```powershell
 # Create a Generation 2 VM with 4 GB RAM and 50 GB disk
+
 New-VM -Name "RHEL9-Server" `
   -Generation 2 `
   -MemoryStartupBytes 4GB `

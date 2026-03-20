@@ -83,8 +83,9 @@ resource "portainer_stack" "app" {
 }
 ```
 
-```
+```text
 # templates/app-compose.tpl
+
 version: "3.8"
 
 services:

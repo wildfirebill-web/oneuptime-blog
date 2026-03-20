@@ -14,6 +14,7 @@ Edit `tempo.yaml` to bind all listening ports to IPv6:
 
 ```yaml
 # tempo.yaml - Tempo configuration with IPv6 listeners
+
 server:
   # Listen on all interfaces (both IPv4 and IPv6)
   # Use :: to bind all interfaces; [::] notation in the config
@@ -113,7 +114,7 @@ datasources:
 
 In the Grafana Explore view with Tempo selected, use TraceQL to find traces from IPv6 services:
 
-```
+```text
 # Find traces from services running on IPv6 addresses
 { .net.peer.ip =~ ".*:.*" }
 

@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, TCP, IPv4, File Transfer, Networking, Streams, net Module
+Tags: Node.js, TCP, IPv4, File Transfer, Networking, Streams, Net Module
 
 Description: Implement a simple file transfer protocol using Node.js TCP sockets over IPv4, with streaming support for large files and progress reporting.
 
 ## Introduction
 
-Transferring files over raw TCP sockets teaches the fundamentals of binary data streaming, protocol framing, and backpressure handling. This implementation sends a length-prefixed header followed by the file data — a common approach for custom binary protocols.
+Transferring files over raw TCP sockets teaches the fundamentals of binary data streaming, protocol framing, and backpressure handling. This implementation sends a length-prefixed header followed by the file data - a common approach for custom binary protocols.
 
 ## Protocol Design
 
-```
+```text
 [4 bytes: filename length][filename][8 bytes: file size][file data...]
 ```
 
@@ -191,6 +191,7 @@ sendFile(serverIp, 4000, filePath).catch(console.error);
 
 ```bash
 # Start the server
+
 node server.js
 
 # Send a file from another terminal (or machine)
@@ -199,4 +200,4 @@ node client.js 192.168.1.100 ./large-file.zip
 
 ## Conclusion
 
-This file transfer implementation demonstrates TCP framing, binary protocol design, stream backpressure handling, and progress reporting — all fundamental skills for building custom binary protocols over IPv4 TCP in Node.js.
+This file transfer implementation demonstrates TCP framing, binary protocol design, stream backpressure handling, and progress reporting - all fundamental skills for building custom binary protocols over IPv4 TCP in Node.js.

@@ -8,11 +8,11 @@ Description: Understand the UDP protocol structure, its properties compared to T
 
 ## Introduction
 
-UDP (User Datagram Protocol) is the other major transport layer protocol alongside TCP. It provides a minimal, connectionless datagram service: no handshake, no guaranteed delivery, no ordering, no congestion control. This simplicity is both its limitation and its strength — what it lacks in reliability it gains in speed, low overhead, and flexibility for applications that implement their own reliability.
+UDP (User Datagram Protocol) is the other major transport layer protocol alongside TCP. It provides a minimal, connectionless datagram service: no handshake, no guaranteed delivery, no ordering, no congestion control. This simplicity is both its limitation and its strength - what it lacks in reliability it gains in speed, low overhead, and flexibility for applications that implement their own reliability.
 
 ## UDP Header Structure
 
-```
+```yaml
 UDP Header (8 bytes total):
 +--------+--------+--------+--------+
 | Source | Dest   | Length | Chksum |
@@ -28,7 +28,7 @@ UDP Header (8 bytes total):
 
 ## UDP Properties
 
-```
+```text
 What UDP provides:
   ✓ Port-based multiplexing (like TCP)
   ✓ Error detection (checksum, when enabled)
@@ -49,6 +49,7 @@ What UDP does NOT provide:
 
 ```bash
 # Use UDP when:
+
 # 1. Latency matters more than reliability
 #    Examples: DNS queries, VoIP, gaming, real-time video
 #    Why: no handshake, no retransmit wait = lower latency
@@ -108,7 +109,7 @@ iperf3 -c 10.20.0.5 -u -b 1G -t 10   # UDP, target 1 Gbps
 
 ## Common UDP Applications
 
-```
+```text
 Port 53  - DNS queries
 Port 67/68 - DHCP
 Port 123 - NTP (time synchronization)
@@ -122,4 +123,4 @@ Port 9 - Wake-on-LAN
 
 ## Conclusion
 
-UDP is the right choice when you need raw performance, need to send to multiple receivers simultaneously, or when your application implements its own reliability semantics more appropriate than TCP's. DNS, NTP, VoIP, gaming, and modern protocols like QUIC all use UDP for these reasons. The key insight is that UDP's lack of reliability isn't a flaw — it's a design choice that gives applications full control over how (and whether) to handle retransmission and ordering.
+UDP is the right choice when you need raw performance, need to send to multiple receivers simultaneously, or when your application implements its own reliability semantics more appropriate than TCP's. DNS, NTP, VoIP, gaming, and modern protocols like QUIC all use UDP for these reasons. The key insight is that UDP's lack of reliability isn't a flaw - it's a design choice that gives applications full control over how (and whether) to handle retransmission and ordering.

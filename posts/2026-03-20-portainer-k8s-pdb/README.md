@@ -1,4 +1,4 @@
-# How to Set Up Pod Disruption Budgets via Portainer
+# How to Set Up Pod Disruption Budgets via Portainer - K8s Pdb
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ Or navigate to the namespace and create a resource via YAML.
 
 ```yaml
 # pdb-examples.yml - deploy via Portainer
+
 # Example 1: Web application must maintain 50% availability
 apiVersion: policy/v1
 kind: PodDisruptionBudget

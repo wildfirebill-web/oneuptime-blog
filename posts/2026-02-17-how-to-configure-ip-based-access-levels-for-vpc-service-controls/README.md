@@ -22,6 +22,7 @@ In this post, I will cover how to set up IP-based access levels for various netw
 
 ```bash
 # Get your access policy ID
+
 ACCESS_POLICY_ID=$(gcloud access-context-manager policies list \
   --organization=ORGANIZATION_ID \
   --format="value(name)")

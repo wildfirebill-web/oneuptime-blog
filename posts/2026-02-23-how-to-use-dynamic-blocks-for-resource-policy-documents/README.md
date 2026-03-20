@@ -346,6 +346,7 @@ Terraform supports merging policy documents with `source_policy_documents`:
 
 ```hcl
 # Base policy that all roles get
+
 data "aws_iam_policy_document" "base" {
   statement {
     sid     = "AllowCloudWatchLogs"

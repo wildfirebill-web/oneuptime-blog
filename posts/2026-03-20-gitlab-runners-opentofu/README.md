@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitLab, CI/CD, Runners, AWS, Kubernetes, Infrastructure as Code
+Tags: OpenTofu, GitLab, CI/CD, Runner, AWS, Kubernetes, Infrastructure as Code
 
 Description: Learn how to deploy GitLab CI/CD runners using OpenTofu on EC2 or Kubernetes, with auto-scaling configuration and secure registration token management.
 
@@ -16,6 +16,7 @@ The Kubernetes executor scales runners dynamically, spinning up a new pod for ea
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     helm = {
@@ -211,7 +212,7 @@ resource "aws_autoscaling_group" "runners" {
 ## Best Practices
 
 - Use the Kubernetes executor for dynamic scaling and better resource utilization in containerized environments.
-- Store runner registration tokens in AWS Secrets Manager or Kubernetes Secrets — never in plain-text variables.
+- Store runner registration tokens in AWS Secrets Manager or Kubernetes Secrets - never in plain-text variables.
 - Set appropriate `concurrent` limits to prevent a single repo from monopolizing all runner capacity.
 - Use runner tags to route specific job types (e.g., `docker`, `gpu`, `high-memory`) to appropriately configured runners.
 - Enable runner autoscaling to handle burst workloads without paying for idle capacity.

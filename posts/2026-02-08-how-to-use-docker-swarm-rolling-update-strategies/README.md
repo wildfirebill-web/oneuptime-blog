@@ -30,6 +30,7 @@ Set update parameters when you create a service:
 
 ```bash
 # Create a service with rolling update configuration
+
 docker service create \
   --name webapp \
   --replicas 6 \

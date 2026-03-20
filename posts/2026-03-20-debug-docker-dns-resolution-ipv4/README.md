@@ -20,26 +20,27 @@ Docker containers use one of two DNS configurations:
 
 ```bash
 # Inspect the container's resolver configuration
+
 docker exec my-container cat /etc/resolv.conf
 ```
 
 Expected for user-defined networks:
 
-```
+```text
 nameserver 127.0.0.11
 options ndots:0
 ```
 
 Expected for default bridge:
 
-```
+```text
 nameserver 8.8.8.8
 ```
 
 ## Step 2: Test Container Name Resolution
 
 ```bash
-# On user-defined networks — test by container name
+# On user-defined networks - test by container name
 docker exec my-container nslookup other-container
 
 # Test with the embedded DNS directly

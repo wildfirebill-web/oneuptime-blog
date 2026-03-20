@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NDP, ndisc6, Debugging, IPv6, Neighbor Discovery
+Tags: NDP, Ndisc6, Debugging, IPv6, Neighbor Discovery
 
 Description: Use the ndisc6 toolkit to debug NDP address resolution, send manual Neighbor Solicitations, and diagnose neighbor discovery failures.
 
@@ -14,6 +14,7 @@ The `ndisc6` package provides command-line tools for manually sending NDP messag
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install ndisc6
 
 # Fedora/RHEL

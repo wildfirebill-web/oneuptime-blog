@@ -26,6 +26,7 @@ The Cloud SQL Python Connector has several advantages over the traditional proxy
 
 ```bash
 # Install Django, the PostgreSQL adapter, and the Cloud SQL Python Connector
+
 pip install django psycopg2-binary "cloud-sql-python-connector[pg8000]"
 ```
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Subnetting, Powers of Two, Networking, Mental Math
 
-Description: The Powers of Two method for subnetting uses the observation that borrowed bits double the subnet count while halving host capacity, enabling quick mental calculation of subnet requirements without memorizing mask tables.
+Description: The Powers of Two method for subnetting uses the observation that borrowed bits double the subnet count while halving host capacity, enabling quick mental calculation of subnet requirements...
 
 ## The Core Relationship
 
@@ -87,4 +87,4 @@ for p in range(24, 33):
 - Each additional borrowed bit: subnets × 2, hosts ÷ 2.
 - To find prefix: host_bits = ⌈log₂(needed_hosts + 2)⌉, prefix = 32 − host_bits.
 - To find subnets: borrowed = new_prefix − parent_prefix, subnets = 2^borrowed.
-- This method works without memorizing mask tables — just powers of 2.
+- This method works without memorizing mask tables - just powers of 2.

@@ -12,6 +12,7 @@ If you run the OpenTelemetry Collector as a sidecar or gateway alongside your se
 
 ```yaml
 # otel-collector-baselime.yaml
+
 receivers:
   otlp:
     protocols:

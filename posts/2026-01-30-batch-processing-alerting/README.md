@@ -71,6 +71,7 @@ The foundation of batch alerting is accurate job state tracking. Every batch job
 
 ```python
 # job_tracker.py
+
 # This module provides utilities for tracking batch job execution states
 # and emitting metrics for alerting purposes.
 

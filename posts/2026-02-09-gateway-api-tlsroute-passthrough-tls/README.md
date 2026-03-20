@@ -33,6 +33,7 @@ Create a Gateway with a TLS listener in Passthrough mode:
 
 ```yaml
 # passthrough-gateway.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:

@@ -14,6 +14,7 @@ Selectors are how you pick which spans to assert on. They use a CSS-like syntax:
 
 ```yaml
 # Select a span by its name
+
 selector: span[name="GET /api/users"]
 
 # Select by span type (set by Tracetest based on span kind)

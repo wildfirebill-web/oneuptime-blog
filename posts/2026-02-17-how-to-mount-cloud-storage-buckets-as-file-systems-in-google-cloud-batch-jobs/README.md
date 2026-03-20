@@ -41,6 +41,7 @@ The simplest configuration mounts a single bucket at a specified path.
 
 ```bash
 # Create a batch job with a GCS FUSE mounted bucket
+
 gcloud batch jobs submit gcs-mount-job \
   --location=us-central1 \
   --config=- <<'EOF'

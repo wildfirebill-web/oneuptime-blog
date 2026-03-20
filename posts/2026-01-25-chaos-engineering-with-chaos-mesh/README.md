@@ -25,6 +25,7 @@ Install using Helm:
 
 ```bash
 # Add the Chaos Mesh repository
+
 helm repo add chaos-mesh https://charts.chaos-mesh.org
 
 # Create namespace

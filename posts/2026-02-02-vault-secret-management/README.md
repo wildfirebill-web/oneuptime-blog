@@ -66,6 +66,7 @@ This command starts Vault in development mode with a known root token for easy t
 
 ```bash
 # Run Vault in development mode
+
 docker run -d \
   --name vault \
   -p 8200:8200 \

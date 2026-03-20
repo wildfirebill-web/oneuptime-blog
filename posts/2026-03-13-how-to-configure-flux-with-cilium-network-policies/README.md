@@ -311,6 +311,7 @@ Cilium includes Hubble, an observability platform that shows policy verdicts in 
 
 ```bash
 # Install Hubble CLI if not present
+
 cilium hubble enable
 
 # Watch policy verdicts for flux-system

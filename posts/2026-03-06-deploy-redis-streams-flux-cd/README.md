@@ -44,6 +44,7 @@ Define a namespace for the Redis deployment.
 
 ```yaml
 # redis-namespace.yaml
+
 # Dedicated namespace for Redis Streams
 apiVersion: v1
 kind: Namespace

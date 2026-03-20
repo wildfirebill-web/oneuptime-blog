@@ -53,6 +53,7 @@ Storage = 100 GB x 30 x 0.10 = 300 GB
 
 ```yaml
 # loki-config.yaml
+
 limits_config:
   # Global retention period
   retention_period: 720h  # 30 days

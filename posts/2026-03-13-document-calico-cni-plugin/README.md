@@ -125,6 +125,7 @@ To change: Edit calico-config ConfigMap `cni_network_config` field.
 ### How to Expand an IP Pool
 calicoctl create -f new-pool.yaml  # Add additional pool
 # Note: You CANNOT shrink a pool that has active allocations
+
 ```
 
 ## Conclusion

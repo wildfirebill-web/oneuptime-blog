@@ -16,6 +16,7 @@ Before making changes, establish a baseline so you can measure improvement:
 
 ```bash
 # Install apache2-utils for ab (Apache Bench)
+
 sudo apt install apache2-utils
 
 # Basic benchmark - 1000 requests, 10 concurrent

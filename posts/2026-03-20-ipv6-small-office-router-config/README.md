@@ -25,6 +25,7 @@ flowchart TB
 
 ```bash
 # Create VLAN interfaces (assumes eth1 is trunk interface)
+
 sudo ip link add link eth1 name eth1.10 type vlan id 10
 sudo ip link add link eth1 name eth1.20 type vlan id 20
 sudo ip link add link eth1 name eth1.30 type vlan id 30

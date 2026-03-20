@@ -61,6 +61,7 @@ fatal: [webserver]: FAILED! => {
 
 ```yaml
 # Problem: Task runs as unprivileged user
+
 - name: Copy configuration file
   ansible.builtin.copy:
     src: config.conf

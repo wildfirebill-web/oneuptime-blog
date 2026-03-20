@@ -18,6 +18,7 @@ The key insight is that iptables rules are processed in order, and a rule does n
 
 ```bash
 # Check your current rules before making changes
+
 sudo iptables -L -n -v --line-numbers
 
 # Check for any existing logging rules

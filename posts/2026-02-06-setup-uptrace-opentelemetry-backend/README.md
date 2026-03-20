@@ -40,6 +40,7 @@ Create a `docker-compose.yml` file with the following configuration:
 
 ```yaml
 # Docker Compose file for Uptrace with all dependencies
+
 version: "3"
 
 services:

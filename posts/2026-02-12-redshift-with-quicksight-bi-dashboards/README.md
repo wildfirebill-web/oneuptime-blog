@@ -47,6 +47,7 @@ You can create the VPC connection using the CLI:
 
 ```bash
 # Create a VPC connection so QuickSight can reach your private Redshift cluster
+
 aws quicksight create-vpc-connection \
     --aws-account-id 123456789012 \
     --vpc-connection-id redshift-vpc-connection \

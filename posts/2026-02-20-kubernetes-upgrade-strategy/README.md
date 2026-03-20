@@ -29,6 +29,7 @@ Kubernetes only supports upgrading one minor version at a time. Jumping from v1.
 
 ```bash
 # pre-upgrade-checks.sh
+
 # Run these checks before starting any upgrade
 
 # 1. Check current cluster version

@@ -54,6 +54,7 @@ Obtain the CA certificate from your infrastructure team, or extract it from the 
 
 ```bash
 # Extract the CA certificate from a server
+
 openssl s_client -connect git.internal.example.com:443 -showcerts </dev/null 2>/dev/null | \
   openssl x509 -outform PEM > ca-cert.pem
 

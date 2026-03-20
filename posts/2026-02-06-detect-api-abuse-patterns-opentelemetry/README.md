@@ -12,6 +12,7 @@ API abuse comes in many forms. Credential stuffing uses stolen credentials to ta
 
 ```python
 # abuse_metrics.py
+
 from opentelemetry import metrics, trace
 
 meter = metrics.get_meter("security.abuse")

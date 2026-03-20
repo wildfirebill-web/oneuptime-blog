@@ -18,6 +18,7 @@ AWS uses IAM users, roles, and policies. Azure uses Azure Active Directory with 
 
 ```hcl
 # Configure all three cloud providers
+
 terraform {
   required_providers {
     aws = {

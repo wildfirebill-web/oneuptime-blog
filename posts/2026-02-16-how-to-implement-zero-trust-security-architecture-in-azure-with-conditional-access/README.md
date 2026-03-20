@@ -95,6 +95,7 @@ If you manage your Azure infrastructure as code, you can define Conditional Acce
 
 ```hcl
 # Define a Conditional Access policy requiring MFA for all users
+
 resource "azuread_conditional_access_policy" "require_mfa" {
   display_name = "Require MFA for all users"
   state        = "enabled"

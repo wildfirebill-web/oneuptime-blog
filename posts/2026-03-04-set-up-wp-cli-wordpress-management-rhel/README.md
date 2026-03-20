@@ -14,6 +14,7 @@ WP-CLI is the official command-line tool for managing WordPress. It lets you upd
 
 ```bash
 # Download WP-CLI
+
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 
 # Verify it works

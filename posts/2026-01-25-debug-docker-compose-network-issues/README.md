@@ -16,6 +16,7 @@ By default, Compose creates a bridge network named `<project>_default`:
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 services:
   api:

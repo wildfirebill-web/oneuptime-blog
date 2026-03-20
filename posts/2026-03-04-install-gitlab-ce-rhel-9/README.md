@@ -14,6 +14,7 @@ GitLab CE is a full DevOps platform that includes Git hosting, CI/CD pipelines, 
 
 ```bash
 # Install required dependencies
+
 sudo dnf install -y curl policycoreutils openssh-server openssh-clients perl postfix
 
 # Start and enable SSH and Postfix

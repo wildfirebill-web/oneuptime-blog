@@ -144,6 +144,7 @@ Test it:
 
 ```bash
 # Goes to v1
+
 curl http://product-api:8080/products
 
 # Goes to v2

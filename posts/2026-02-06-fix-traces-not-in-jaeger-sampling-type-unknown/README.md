@@ -81,6 +81,7 @@ builder.Services.AddOpenTelemetry()
 
 ```python
 # Python SDK
+
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.sampling import ALWAYS_ON
 

@@ -12,6 +12,7 @@ Windows Defender Firewall handles both IPv4 and IPv6 traffic. Firewall rules can
 
 ```powershell
 # View existing firewall rules that apply to IPv6
+
 Get-NetFirewallRule | Where-Object {$_.Enabled -eq "True"} |
     Get-NetFirewallAddressFilter |
     Where-Object {$_.RemoteAddress -like "*:*"}
@@ -111,7 +112,7 @@ netsh advfirewall firewall show rule name=all | findstr /i "ipv6\|::"
 
 ## Manage Rules via GUI
 
-```
+```sql
 Steps:
 1. Open Windows Defender Firewall with Advanced Security
    (wf.msc or search "Windows Firewall")

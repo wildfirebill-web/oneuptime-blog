@@ -39,6 +39,7 @@ Key rules:
 
 ```bash
 # Organization Administrator - manages the org structure itself
+
 gcloud organizations add-iam-policy-binding ORGANIZATION_ID \
   --member="group:org-admins@example.com" \
   --role="roles/resourcemanager.organizationAdmin"

@@ -627,6 +627,7 @@ Track filtering effectiveness with collector metrics:
 
 ```bash
 # Query collector metrics
+
 curl http://localhost:8888/metrics | grep processor
 
 # Key metrics:

@@ -1,4 +1,4 @@
-# How to Deploy a MEAN Stack via Portainer
+# How to Deploy a MEAN Stack via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,7 +20,7 @@ The MEAN stack (MongoDB, Express.js, Angular, Node.js) is a popular JavaScript-c
 
 Before creating the stack, organize your project:
 
-```
+```text
 mean-app/
 ├── frontend/          # Angular application
 │   ├── Dockerfile
@@ -95,7 +95,7 @@ services:
     networks:
       - mean-net
 
-  # Mongo Express — web-based MongoDB admin UI
+  # Mongo Express - web-based MongoDB admin UI
   mongo-express:
     image: mongo-express:latest
     container_name: mean-mongo-express
@@ -124,7 +124,7 @@ networks:
 ## Step 3: MongoDB Initialization Script
 
 ```javascript
-// mongo/init.js — creates the application database and user
+// mongo/init.js - creates the application database and user
 db = db.getSiblingDB('meanapp');
 
 db.createUser({
@@ -220,6 +220,7 @@ For production, build and use actual Docker images instead of running npm instal
 
 ```dockerfile
 # backend/Dockerfile
+
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./

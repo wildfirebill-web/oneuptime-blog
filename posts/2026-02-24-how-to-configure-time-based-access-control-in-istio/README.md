@@ -20,6 +20,7 @@ Create the "business hours" policy that allows access:
 
 ```yaml
 # business-hours-allow.yaml
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

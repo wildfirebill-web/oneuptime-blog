@@ -96,6 +96,7 @@ First, add the Cilium Helm repository and install Cilium with eBPF-based kube-pr
 
 ```bash
 # Add the Cilium Helm repository
+
 helm repo add cilium https://helm.cilium.io/
 
 # Update Helm repositories to get the latest charts

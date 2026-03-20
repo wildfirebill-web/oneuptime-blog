@@ -429,6 +429,7 @@ Once metrics are generated, query them in Prometheus:
 
 ```promql
 # View HTTP request rate
+
 rate(http_requests_total[5m])
 
 # Error rate percentage

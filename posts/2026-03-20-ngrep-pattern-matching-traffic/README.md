@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ngrep, Network Analysis, Packet Capture, Linux, Troubleshooting
+Tags: Ngrep, Network Analysis, Packet Capture, Linux, Troubleshooting
 
 Description: Learn how to use ngrep to capture and filter network traffic using regular expression pattern matching, making it a powerful tool for real-time network debugging.
 
@@ -14,6 +14,7 @@ ngrep (network grep) applies grep-like pattern matching to network packets. Unli
 
 ```bash
 # Ubuntu/Debian
+
 apt-get install ngrep
 
 # RHEL/CentOS/Fedora
@@ -27,12 +28,12 @@ brew install ngrep
 
 ## Basic Syntax
 
-```
+```text
 ngrep [options] [pattern] [filter expression]
 ```
 
-- `pattern` — a POSIX extended regular expression applied to the packet payload
-- `filter expression` — a BPF (Berkeley Packet Filter) expression to pre-filter packets
+- `pattern` - a POSIX extended regular expression applied to the packet payload
+- `filter expression` - a BPF (Berkeley Packet Filter) expression to pre-filter packets
 
 ## Basic Usage Examples
 
@@ -177,15 +178,15 @@ ngrep -I capture.pcap ""
 
 ngrep output format:
 
-```
+```text
 T 10.0.0.1:54321 -> 10.0.0.2:80 [AP]
   GET /api/users HTTP/1.1.
   Host: api.example.com.
   Authorization: Bearer eyJhb...
 ```
 
-- `T` — TCP packet
-- `AP` — ACK + PUSH flags
+- `T` - TCP packet
+- `AP` - ACK + PUSH flags
 - Source IP:port → destination IP:port
 
 ## Best Practices

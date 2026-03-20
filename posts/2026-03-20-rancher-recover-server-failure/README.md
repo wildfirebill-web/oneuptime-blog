@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, disaster-recovery, recovery, server-failure, kubernetes
+Tags: Rancher, Disaster-recovery, Recovery, Server-failure, Kubernetes
 
 Description: Step-by-step recovery guide for restoring Rancher after a complete server failure using backup files and the restore operator.
 
 ## Introduction
 
-When your Rancher server suffers a complete failure—hardware crash, OS corruption, or accidental deletion—you need to restore from backup quickly. This guide walks through the complete recovery process from a bare metal or fresh cloud instance.
+When your Rancher server suffers a complete failure-hardware crash, OS corruption, or accidental deletion-you need to restore from backup quickly. This guide walks through the complete recovery process from a bare metal or fresh cloud instance.
 
 ## What Gets Lost Without Backup
 
@@ -19,12 +19,13 @@ When your Rancher server suffers a complete failure—hardware crash, OS corrupt
 - Catalogs and app configurations
 - Alert, monitoring, and logging configurations
 
-Note: Downstream cluster workloads continue running even when Rancher is down—only management plane features are affected.
+Note: Downstream cluster workloads continue running even when Rancher is down-only management plane features are affected.
 
 ## Pre-Recovery Checklist
 
 ```bash
 # Before starting recovery, gather:
+
 echo "Required items:"
 echo "1. Backup file location (S3 bucket, NFS path)"
 echo "2. Backup encryption key (from secure storage)"

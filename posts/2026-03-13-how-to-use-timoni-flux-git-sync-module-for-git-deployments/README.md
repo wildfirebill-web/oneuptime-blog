@@ -43,6 +43,7 @@ Create a values file for a public repository:
 
 ```yaml
 # git-sync-values.yaml
+
 values:
   git:
     url: "https://github.com/your-org/fleet-infra"

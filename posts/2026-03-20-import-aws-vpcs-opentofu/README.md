@@ -8,7 +8,7 @@ Description: Learn how to import existing AWS VPCs and their associated resource
 
 ## Introduction
 
-Importing a VPC is rarely just about the VPC — you also need to import all associated resources: subnets, route tables, internet gateways, NAT gateways, and security groups. This guide covers the full import sequence for a complete VPC.
+Importing a VPC is rarely just about the VPC - you also need to import all associated resources: subnets, route tables, internet gateways, NAT gateways, and security groups. This guide covers the full import sequence for a complete VPC.
 
 ## Step 1: Inventory the VPC Resources
 
@@ -16,6 +16,7 @@ Importing a VPC is rarely just about the VPC — you also need to import all ass
 VPC_ID="vpc-0123456789abcdef0"
 
 # Get VPC details
+
 aws ec2 describe-vpcs --vpc-ids $VPC_ID
 
 # List subnets
@@ -143,4 +144,4 @@ resource "aws_default_vpc" "default" {
 
 ## Conclusion
 
-VPC import requires importing the entire resource tree in dependency order. Use declarative `import` blocks to version-control the import process. The key challenge is ensuring your HCL exactly matches the existing VPC configuration — pay close attention to DHCP options, DNS settings, and network ACLs which are easy to overlook.
+VPC import requires importing the entire resource tree in dependency order. Use declarative `import` blocks to version-control the import process. The key challenge is ensuring your HCL exactly matches the existing VPC configuration - pay close attention to DHCP options, DNS settings, and network ACLs which are easy to overlook.

@@ -24,6 +24,7 @@ Memory requests are mandatory for memory-based HPA:
 
 ```yaml
 # apps/myapp/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

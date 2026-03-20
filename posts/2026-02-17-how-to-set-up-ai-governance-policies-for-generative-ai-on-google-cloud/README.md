@@ -47,6 +47,7 @@ Control who can access generative AI services and at what level:
 
 ```bash
 # Create a custom IAM role for AI developers with limited permissions
+
 gcloud iam roles create aiDeveloper \
     --project=your-project-id \
     --title="AI Developer" \

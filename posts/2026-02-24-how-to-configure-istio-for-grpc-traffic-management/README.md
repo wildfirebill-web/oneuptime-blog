@@ -172,6 +172,7 @@ for i in $(seq 1 20); do
 done
 
 # Check access logs across pods
+
 kubectl logs -l app=order-service -c istio-proxy --tail=5
 ```
 

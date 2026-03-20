@@ -44,6 +44,7 @@ For scripting and automation, you can enable MFA through the AWS CLI.
 
 ```bash
 # Create a virtual MFA device for a user
+
 aws iam create-virtual-mfa-device \
   --virtual-mfa-device-name user-jane-mfa \
   --outfile /tmp/QRCode.png \

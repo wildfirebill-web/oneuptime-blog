@@ -162,6 +162,7 @@ For CI/CD pipelines that run on a schedule, create keys with a TTL that slightly
 
 ```bash
 # Create a key that expires in 2 hours (7200000 ms)
+
 curl -s -k -X POST \
   -H "Authorization: Bearer ${RANCHER_TOKEN}" \
   -H "Content-Type: application/json" \

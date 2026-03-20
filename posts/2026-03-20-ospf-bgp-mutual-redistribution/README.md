@@ -8,7 +8,7 @@ Description: Learn how to configure bidirectional route redistribution between O
 
 ## When Is Mutual Redistribution Needed?
 
-In enterprise networks, the edge router often runs both OSPF (for the internal LAN) and BGP (for ISP connectivity). To allow internal routers to reach Internet destinations, BGP routes must be redistributed into OSPF—or a default route can be used. And to allow external peers to reach internal prefixes, OSPF routes may need to be redistributed into BGP.
+In enterprise networks, the edge router often runs both OSPF (for the internal LAN) and BGP (for ISP connectivity). To allow internal routers to reach Internet destinations, BGP routes must be redistributed into OSPF-or a default route can be used. And to allow external peers to reach internal prefixes, OSPF routes may need to be redistributed into BGP.
 
 ## The Redistribution Loop Problem
 
@@ -30,7 +30,7 @@ graph LR
 
 Apply a tag to OSPF routes when redistributing them into BGP. Later, use this tag to prevent them from being re-imported:
 
-```
+```text
 ! Route map tags all OSPF routes before sending to BGP
 route-map OSPF_TO_BGP permit 10
  ! Set a tag to identify OSPF-originated routes in BGP
@@ -47,7 +47,7 @@ router bgp 65001
 
 When importing BGP routes back into OSPF, deny any route with tag 100 (which came from OSPF originally):
 
-```
+```text
 ! Deny routes that came from OSPF (tag=100) to prevent loops
 route-map BGP_TO_OSPF deny 10
  match tag 100
@@ -66,7 +66,7 @@ router ospf 1
 
 For most enterprise environments, redistribute a default route into OSPF instead of the full BGP table:
 
-```
+```text
 router ospf 1
  ! Inject a default route into OSPF from BGP
  default-information originate always metric 10
@@ -76,7 +76,7 @@ This keeps the OSPF database small while still providing Internet access to inte
 
 ## Step 4: Verify Redistribution
 
-```
+```text
 ! On the ASBR - check redistributed routes
 Router# show ip ospf database external
 
@@ -94,7 +94,7 @@ Router# show ip bgp 172.16.0.0/24
 
 ## Step 5: Check Routing Tables on Internal Routers
 
-```
+```text
 ! On an internal OSPF-only router
 InternalR# show ip route ospf
 
@@ -108,7 +108,7 @@ InternalR# show ip route ospf
 
 Use a prefix list to allow only specific BGP prefixes into OSPF:
 
-```
+```text
 ip prefix-list ALLOW_SPECIFIC_BGP seq 10 permit 0.0.0.0/0   ! Default only
 
 route-map BGP_TO_OSPF_FILTERED deny 10

@@ -27,6 +27,7 @@ This guide covers deploying the Kubeflow Training Operator using Flux CD and run
 
 ```yaml
 # clusters/my-cluster/training-operator/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

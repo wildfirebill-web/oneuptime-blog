@@ -58,6 +58,7 @@ helm install datadog-agent datadog/datadog \
   --set clusterAgent.metricsProvider.enabled=true
 
 # Verify external metrics API
+
 kubectl get apiservice | grep datadoghq
 ```
 

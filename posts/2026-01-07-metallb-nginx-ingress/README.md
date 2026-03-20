@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MetalLB, NGINX, Ingresses, Kubernetes, Load Balancing
+Tags: MetalLB, Nginx, Ingresses, Kubernetes, Load Balancing
 
 Description: A guide to using MetalLB with NGINX Ingress Controller for external traffic management.
 
@@ -92,6 +92,7 @@ First, let's install MetalLB using the official manifests. This creates the nece
 
 ```bash
 # Install MetalLB native manifests
+
 # This deploys the controller and speaker daemonset
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.9/config/manifests/metallb-native.yaml
 
@@ -699,7 +700,7 @@ kubectl apply -f nginx-performance-configmap.yaml
 kubectl rollout restart deployment ingress-nginx-controller -n ingress-nginx
 ```
 
-### Resource Limits and HPA
+Resource Limits and HPA
 
 Configure Horizontal Pod Autoscaler for dynamic scaling:
 

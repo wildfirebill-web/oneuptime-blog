@@ -90,6 +90,7 @@ Required tasks:
 
 ```yaml
 # Example: Self-hosted maintenance tasks
+
 Daily:
   - Monitor cluster health
   - Check replication status

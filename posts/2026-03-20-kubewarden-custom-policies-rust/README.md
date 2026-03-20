@@ -24,6 +24,7 @@ This guide walks through creating a complete Rust-based Kubewarden policy from s
 
 ```bash
 # Install Rust
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source ~/.cargo/env
 
@@ -53,7 +54,7 @@ cd my-custom-policy
 
 The generated project structure:
 
-```
+```text
 my-custom-policy/
 ├── Cargo.toml          # Rust dependencies
 ├── Makefile           # Build and test targets

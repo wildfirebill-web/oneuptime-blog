@@ -41,6 +41,7 @@ The simplest way to suspend a GitRepository is with the Flux CLI.
 
 ```bash
 # Suspend the GitRepository to stop reconciliation
+
 flux suspend source git my-app
 ```
 

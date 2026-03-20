@@ -16,6 +16,7 @@ The `int()` function expects a string that represents a valid integer:
 
 ```python
 # Valid conversions
+
 print(int("42"))     # 42
 print(int("-17"))    # -17
 print(int("  123 "))  # 123 (whitespace is OK)

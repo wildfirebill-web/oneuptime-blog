@@ -40,6 +40,7 @@ To use a JSON patch in `spec.patches`, format the `patch` field as a JSON array 
 
 ```yaml
 # kustomization-json-patch.yaml - JSON patch to change replicas
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

@@ -1,14 +1,14 @@
-# How to Export and Import Portainer Configuration
+# How to Export and Import Portainer Configuration - Config
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, backup, export, import, configuration, migration
+Tags: Portainer, Backup, Export, Import, Configuration, Migration
 
 Description: A comprehensive guide to exporting and importing Portainer configuration for backups, migrations, and environment cloning.
 
 ## Overview
 
-Portainer stores all configuration — endpoints, users, stacks, registries, and settings — in a BoltDB database. Exporting this configuration allows you to back up your setup, migrate to a new server, or clone environments. This guide covers all methods for exporting and importing Portainer configuration.
+Portainer stores all configuration - endpoints, users, stacks, registries, and settings - in a BoltDB database. Exporting this configuration allows you to back up your setup, migrate to a new server, or clone environments. This guide covers all methods for exporting and importing Portainer configuration.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ Portainer stores all configuration — endpoints, users, stacks, registries, and
 
 ## Understanding Portainer's Data Storage
 
-```
+```text
 portainer_data volume contains:
 ├── portainer.db          # BoltDB database (main config)
 ├── certs/                # TLS certificates
@@ -32,6 +32,7 @@ portainer_data volume contains:
 
 ```bash
 # Stop Portainer for consistent backup
+
 docker stop portainer
 
 # Export the entire data volume

@@ -16,6 +16,7 @@ Start by formalizing your SLO. A P99 latency SLO specifies that 99% of requests 
 
 ```yaml
 # slo-definitions.yaml
+
 slos:
   - name: "api-latency-slo"
     service: "api-service"

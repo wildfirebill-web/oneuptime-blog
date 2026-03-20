@@ -12,8 +12,8 @@ BGP is the control plane for distributing SRv6 SIDs across domains. BGP Prefix-S
 
 ## FRR BGP with SRv6 Locator
 
-```
-# /etc/frr/frr.conf — Leaf node with SRv6
+```text
+# /etc/frr/frr.conf - Leaf node with SRv6
 
 frr defaults traditional
 hostname leaf1
@@ -39,7 +39,7 @@ router bgp 65001
   neighbor 5f00:spine:: update-source lo
   neighbor 5f00:spine:: capability extended-nexthop
 
-  ! Global IPv6 unicast — advertise locator
+  ! Global IPv6 unicast - advertise locator
   address-family ipv6 unicast
     network 5f00:1::/48
     neighbor 5f00:spine:: activate
@@ -56,7 +56,7 @@ router bgp 65001
 
 ## BGP SRv6 L3VPN (VPNv6 with SRv6 SIDs)
 
-```
+```bash
 ! Leaf 1 VRF configuration
 router bgp 65001
   address-family ipv6 vpn
@@ -80,6 +80,7 @@ router bgp 65001
 
 ```python
 # BGP UPDATE with SRv6 SID attribute
+
 # The SRv6 L3 Service TLV carries the SID in NLRI
 
 # Example UPDATE structure (conceptual):
@@ -89,7 +90,7 @@ bgp_update = {
         "MP_REACH_NLRI": {
             "afi": 2,      # IPv6
             "safi": 128,   # VPN
-            "next_hop": "::ffff:0:0",  # Using SRv6 — no traditional next-hop
+            "next_hop": "::ffff:0:0",  # Using SRv6 - no traditional next-hop
         },
         "PREFIX_SID": {
             "srv6_l3_service_tlv": {
@@ -123,7 +124,7 @@ ip -6 route show | grep "encap seg6"
 
 ## BGP Route Reflector for SRv6
 
-```
+```text
 ! Spine as BGP route reflector
 router bgp 65001
   bgp router-id 100.100.100.100

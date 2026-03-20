@@ -44,6 +44,7 @@ graph TB
 
 ```yaml
 # tenants/base/team-a/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

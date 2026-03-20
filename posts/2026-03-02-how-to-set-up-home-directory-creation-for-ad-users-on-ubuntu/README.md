@@ -54,6 +54,7 @@ Add after the existing `session` lines:
 
 ```text
 # Create home directory on first login
+
 session required    pam_mkhomedir.so skel=/etc/skel umask=0022
 ```
 

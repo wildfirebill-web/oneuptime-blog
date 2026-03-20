@@ -14,6 +14,7 @@ Caddy's standout feature is automatic HTTPS. By default, every site configured w
 
 ```bash
 # Add the Caddy COPR repository
+
 sudo dnf install -y dnf-plugins-core
 sudo dnf copr enable @caddy/caddy -y
 sudo dnf install -y caddy

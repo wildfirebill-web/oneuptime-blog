@@ -42,6 +42,7 @@ For comparison, the command-line tools that give you similar data:
 
 ```bash
 # Quick snapshot of CPU usage
+
 top -bn1 | head -5
 
 # More detailed per-CPU breakdown

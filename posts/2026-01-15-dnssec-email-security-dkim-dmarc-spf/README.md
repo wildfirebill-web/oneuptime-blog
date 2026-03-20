@@ -131,6 +131,7 @@ SPF has a 10 DNS lookup limit. Each `include`, `a`, `mx`, and `redirect` counts 
 
 ```bash
 # Using dig
+
 dig +short TXT example.com | grep spf
 
 # Using online tools or local scripts

@@ -28,6 +28,7 @@ The first step in securing your cluster is denying all traffic by default, then 
 
 ```yaml
 # default-deny-all.yaml
+
 apiVersion: cilium.io/v2
 kind: CiliumClusterwideNetworkPolicy
 metadata:

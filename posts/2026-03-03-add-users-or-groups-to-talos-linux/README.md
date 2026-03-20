@@ -45,6 +45,7 @@ Talos defines several built-in roles:
 
 ```bash
 # Check your current role
+
 talosctl config info
 ```
 

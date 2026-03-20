@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, matchkeys, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Matchkeys, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the matchkeys function in OpenTofu to filter one list based on matching values in another list, like a SQL WHERE IN clause.
 
 ---
 
-`matchkeys()` takes three arguments: a list of values to return, a list of keys to search, and a list of keys to match against. It returns the values from the first list where the corresponding key appears in the third list — similar to a SQL `WHERE key IN (...)` operation.
+`matchkeys()` takes three arguments: a list of values to return, a list of keys to search, and a list of keys to match against. It returns the values from the first list where the corresponding key appears in the third list - similar to a SQL `WHERE key IN (...)` operation.
 
 ---
 
@@ -124,6 +124,7 @@ locals {
 # These produce equivalent results:
 
 # Using matchkeys
+
 local.result1 = matchkeys(values_list, keys_list, filter_set)
 
 # Using for expression (when you have objects):

@@ -22,6 +22,7 @@ Before connecting containers to networks, let's create a few to experiment with:
 
 ```bash
 # Create two custom bridge networks
+
 docker network create frontend
 docker network create backend
 ```

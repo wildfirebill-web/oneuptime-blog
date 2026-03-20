@@ -31,6 +31,7 @@ The principle of data minimization means you should only log what you genuinely 
 
 ```bash
 # Configure systemd-journald retention
+
 sudo nano /etc/systemd/journald.conf
 ```
 

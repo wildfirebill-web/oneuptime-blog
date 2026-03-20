@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SRv6, Linux, iproute2, Segment Routing, ip route, Kernel
+Tags: SRv6, Linux, iproute2, Segment Routing, Ip route, Kernel
 
 Description: Configure SRv6 segment routing on Linux using iproute2 commands, including encapsulation routes, endpoint behaviors, and local SID programming.
 
@@ -14,6 +14,7 @@ The Linux kernel has supported SRv6 since version 4.10 via the `seg6` and `seg6l
 
 ```bash
 # Enable SRv6 globally
+
 sysctl -w net.ipv6.conf.all.seg6_enabled=1
 sysctl -w net.ipv6.conf.default.seg6_enabled=1
 
@@ -109,7 +110,7 @@ tcpdump -i eth0 -n "ip6[6]==43" -XX | head -40
 
 ```bash
 #!/bin/bash
-# Run on each node — adjust NODE, LOCATOR, and peers accordingly
+# Run on each node - adjust NODE, LOCATOR, and peers accordingly
 
 NODE=1
 LOCATOR="5f00:${NODE}::/48"

@@ -24,6 +24,7 @@ Key monitoring signals are CiliumNode count vs Kubernetes node count divergence,
 
 ```promql
 # Track node count divergence
+
 abs(kube_node_info - cilium_operator_ces_slice_count) > 0
 
 # Operator GC events

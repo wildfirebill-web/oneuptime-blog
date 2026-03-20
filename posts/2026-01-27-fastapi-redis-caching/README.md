@@ -20,6 +20,7 @@ The `redis-py` library provides native async support through `redis.asyncio`. Th
 
 ```python
 # redis_client.py
+
 import redis.asyncio as redis
 from fastapi import FastAPI
 from contextlib import asynccontextmanager

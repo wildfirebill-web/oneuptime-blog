@@ -249,6 +249,7 @@ Execute the TDD cycle:
 
 ```bash
 # Run tests - expect failures initially for unimplemented features
+
 go test ./proxylib/myprotocol/... -v 2>&1 | head -50
 
 # Run only security boundary tests

@@ -28,6 +28,7 @@ Build a role that allows creating PVCs without StorageClass access:
 
 ```yaml
 # pvc-creator-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

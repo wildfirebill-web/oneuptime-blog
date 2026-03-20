@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, EBS, Snapshots, Infrastructure as Code
+Tags: OpenTofu, AWS, EBS, Snapshot, Infrastructure as Code
 
 Description: Learn how to automate EBS snapshot creation with OpenTofu using DLM lifecycle policies for consistent, cost-effective disk backup.
 
@@ -97,7 +97,7 @@ resource "aws_dlm_lifecycle_policy" "multi_schedule" {
   policy_details {
     resource_types = ["VOLUME"]
 
-    # Hourly snapshots for critical volumes — keep 24
+    # Hourly snapshots for critical volumes - keep 24
     schedule {
       name = "hourly"
 
@@ -115,7 +115,7 @@ resource "aws_dlm_lifecycle_policy" "multi_schedule" {
       }
     }
 
-    # Weekly snapshots — keep 12
+    # Weekly snapshots - keep 12
     schedule {
       name = "weekly"
 
@@ -143,6 +143,7 @@ resource "aws_dlm_lifecycle_policy" "multi_schedule" {
 
 ```hcl
 # Tag volumes for automatic inclusion in DLM policy
+
 resource "aws_ebs_volume" "app_data" {
   availability_zone = "us-east-1a"
   size              = 100

@@ -16,6 +16,7 @@ Before diving into patterns, let's clarify where modules can come from and how t
 
 ```hcl
 # Local module - relative path from current directory
+
 module "vpc" {
   source = "./modules/vpc"
 }

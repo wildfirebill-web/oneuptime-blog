@@ -30,6 +30,7 @@ Deploy two versions of your application as separate deployments, each with its o
 
 ```yaml
 # Stable version
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

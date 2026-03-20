@@ -37,6 +37,7 @@ The most common setup is authenticating with Google-issued tokens.
 
 ```yaml
 # openapi-with-google-jwt.yaml
+
 swagger: "2.0"
 info:
   title: "My Authenticated API"

@@ -14,6 +14,7 @@ Nexus Repository Manager is the enterprise artifact management solution that sup
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     helm = {
@@ -185,8 +186,8 @@ resource "null_resource" "configure_maven_proxy" {
 
 ## Best Practices
 
-- Allocate at least 200Gi of persistent storage — Nexus caches proxied artifacts and can grow large over time.
-- Increase JVM memory settings as your artifact counts grow — the default settings are too conservative for busy repositories.
+- Allocate at least 200Gi of persistent storage - Nexus caches proxied artifacts and can grow large over time.
+- Increase JVM memory settings as your artifact counts grow - the default settings are too conservative for busy repositories.
 - Enable anonymous access for proxy repositories so developers don't need credentials for public packages.
 - Use Nexus IQ Server (if licensed) to scan artifacts for security vulnerabilities.
 - Set `nginx.ingress.kubernetes.io/proxy-body-size: "0"` to remove the upload size limit for large artifacts.

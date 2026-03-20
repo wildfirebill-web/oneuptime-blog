@@ -32,6 +32,7 @@ First, instrument your services to emit the metrics you want to baseline. Latenc
 
 ```python
 # baseline_metrics.py - Instrument key signals for baseline tracking
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

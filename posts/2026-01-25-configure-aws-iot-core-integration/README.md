@@ -74,6 +74,7 @@ Things represent physical devices in AWS IoT Core.
 
 ```bash
 # Create a thing type for categorization
+
 aws iot create-thing-type \
   --thing-type-name "TemperatureSensor" \
   --thing-type-properties "thingTypeDescription=Temperature monitoring sensors"

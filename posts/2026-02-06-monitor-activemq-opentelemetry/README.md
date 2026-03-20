@@ -36,6 +36,7 @@ The JMX receiver in the OpenTelemetry Collector connects to ActiveMQ's JMX port 
 
 ```bash
 # In activemq.env or activemq startup script
+
 # Enable JMX remote access for the collector
 ACTIVEMQ_SUNJMX_START="-Dcom.sun.management.jmxremote \
   -Dcom.sun.management.jmxremote.port=1099 \

@@ -17,6 +17,7 @@ PROJECT="my-project-id"
 NETWORK="my-vpc-network"
 
 # Get network details
+
 gcloud compute networks describe $NETWORK --project=$PROJECT --format=json
 
 # List subnetworks

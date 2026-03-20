@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Multus, CNI, IPv6, Kubernetes, Multiple Networks, macvlan, ipvlan
+Tags: Multus, CNI, IPv6, Kubernetes, Multiple Networks, Macvlan, IPvlan
 
 Description: Configure Multus CNI to attach multiple IPv6 network interfaces to Kubernetes pods, enabling pods to participate in multiple IPv6 networks simultaneously.
 
 ## Introduction
 
-Multus CNI allows Kubernetes pods to have multiple network interfaces. This is useful for network functions, telco workloads, and applications that need separate data plane and management plane interfaces — each potentially with different IPv6 addresses.
+Multus CNI allows Kubernetes pods to have multiple network interfaces. This is useful for network functions, telco workloads, and applications that need separate data plane and management plane interfaces - each potentially with different IPv6 addresses.
 
 ## Step 1: Install Multus
 
 ```bash
 # Install Multus
+
 kubectl apply -f https://raw.githubusercontent.com/k8snetworkplumbingwg/multus-cni/master/deployments/multus-daemonset.yml
 
 # Verify

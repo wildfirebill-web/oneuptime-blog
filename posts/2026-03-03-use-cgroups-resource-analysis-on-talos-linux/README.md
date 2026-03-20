@@ -62,6 +62,7 @@ Since Talos Linux has no shell access, you use talosctl to inspect cgroup data:
 
 ```bash
 # List all cgroups on a node
+
 talosctl list /sys/fs/cgroup --nodes 10.0.0.10
 
 # View the kubepods cgroup hierarchy

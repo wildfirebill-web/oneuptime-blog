@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Terraform, Workspaces, Environment, Infrastructure as Code
+Tags: GCP, Terraform, Workspaces, Environments, Infrastructure as Code
 
 Description: Learn how to use Terraform workspaces to manage development, staging, and production environments on GCP with a single configuration and isolated state files.
 
@@ -20,6 +20,7 @@ Every Terraform configuration starts with a workspace called `default`. You can 
 
 ```bash
 # List current workspaces
+
 terraform workspace list
 
 # Create workspaces for each environment

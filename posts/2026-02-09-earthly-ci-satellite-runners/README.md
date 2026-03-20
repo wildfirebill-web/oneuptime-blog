@@ -34,6 +34,7 @@ Earthly provides a Kubernetes operator that manages Satellite lifecycle. Start b
 
 ```bash
 # Add the Earthly Helm repo
+
 helm repo add earthly https://helm.earthly.dev
 helm repo update
 

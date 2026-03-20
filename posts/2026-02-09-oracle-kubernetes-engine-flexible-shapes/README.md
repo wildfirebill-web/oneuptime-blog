@@ -24,6 +24,7 @@ Create an OKE cluster using OCI CLI:
 
 ```bash
 # Create VCN for the cluster
+
 oci network vcn create \
   --compartment-id ocid1.compartment.oc1..aaa \
   --cidr-block 10.0.0.0/16 \

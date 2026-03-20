@@ -28,6 +28,7 @@ Install and configure the IBM Cloud CLI with the required plugins.
 
 ```bash
 # Log in to IBM Cloud
+
 ibmcloud login --sso
 
 # Install the Kubernetes Service plugin

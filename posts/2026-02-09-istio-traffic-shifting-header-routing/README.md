@@ -26,6 +26,7 @@ First, deploy two versions of your application. We'll use a simple web service a
 
 ```yaml
 # deployment-v1.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

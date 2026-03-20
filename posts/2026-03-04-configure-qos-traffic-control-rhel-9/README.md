@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, QoS, Traffic Control, Tc, Linux
+Tags: RHEL, QoS, Traffic Control, tc, Linux
 
 Description: A comprehensive guide to setting up Quality of Service on RHEL using tc, including traffic classification, priority queuing, bandwidth guarantees, and practical QoS policies for common scenarios.
 
@@ -48,6 +48,7 @@ Total guaranteed: 1 Gbit (matches the link speed).
 
 ```bash
 # Remove any existing tc rules
+
 sudo tc qdisc del dev ens192 root 2>/dev/null
 ```
 

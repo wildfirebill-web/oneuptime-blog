@@ -24,6 +24,7 @@ The image automation pipeline works in three stages:
 
 ```bash
 # Check the status of all image automation components
+
 kubectl get imagerepository -A
 kubectl get imagepolicy -A
 kubectl get imageupdateautomation -A

@@ -25,6 +25,7 @@ Calico Profile issues are often subtle because profiles affect label inheritance
 
 ```bash
 # Check if namespace profile exists and has correct labelsToApply
+
 calicoctl get profile kns.production -o yaml
 
 # Check if workload endpoints have the namespace label

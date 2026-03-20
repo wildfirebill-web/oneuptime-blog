@@ -24,6 +24,7 @@ When disabled, Portainer prevents users from deploying containers with `privileg
 
 ```yaml
 # This spec would be blocked when privileged containers are disabled
+
 spec:
   containers:
     - name: app

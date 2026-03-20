@@ -29,6 +29,7 @@ First, let's understand why nested types exist.
 
 ```bash
 # Create index with regular object array
+
 curl -X PUT "localhost:9200/products_flat" -H 'Content-Type: application/json' -d'
 {
   "mappings": {

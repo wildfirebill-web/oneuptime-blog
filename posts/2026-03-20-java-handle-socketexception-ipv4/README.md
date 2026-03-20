@@ -12,13 +12,13 @@ Description: Properly handle Java SocketException and its subclasses for IPv4 TC
 
 ## SocketException Hierarchy
 
-```
+```text
 IOException
   └── SocketException
-        ├── BindException          — Cannot bind to local address/port
-        ├── ConnectException       — Connection refused or host unreachable
-        ├── NoRouteToHostException — No route to host
-        └── PortUnreachableException — Specific port unreachable
+        ├── BindException          - Cannot bind to local address/port
+        ├── ConnectException       - Connection refused or host unreachable
+        ├── NoRouteToHostException - No route to host
+        └── PortUnreachableException - Specific port unreachable
   └── SocketTimeoutException (read/connect timeout)
 ```
 
@@ -43,20 +43,20 @@ public class RobustSocketHandler {
                 socket.setSoTimeout(30000);
                 
                 processConnection(socket);
-                return; // Success — exit retry loop
+                return; // Success - exit retry loop
                 
             } catch (ConnectException e) {
-                // Connection refused — server is not listening or port is closed
-                System.err.printf("Connection refused: %s:%d — %s%n", host, port, e.getMessage());
+                // Connection refused - server is not listening or port is closed
+                System.err.printf("Connection refused: %s:%d - %s%n", host, port, e.getMessage());
                 if (attempt < MAX_RETRIES) sleep(2000 * attempt); // Exponential backoff
                 
             } catch (NoRouteToHostException e) {
-                // Network unreachable — routing problem, no retry
+                // Network unreachable - routing problem, no retry
                 System.err.println("No route to host: " + host);
-                return; // Fatal — don't retry
+                return; // Fatal - don't retry
                 
             } catch (BindException e) {
-                // Cannot bind local port — should not happen for outbound, but handle it
+                // Cannot bind local port - should not happen for outbound, but handle it
                 System.err.println("Bind error: " + e.getMessage());
                 return;
                 
@@ -66,7 +66,7 @@ public class RobustSocketHandler {
                 if (attempt < MAX_RETRIES) sleep(1000);
                 
             } catch (SocketException e) {
-                // Generic socket error — parse the message for context
+                // Generic socket error - parse the message for context
                 String msg = e.getMessage();
                 if (msg != null && (msg.contains("reset") || msg.contains("broken pipe"))) {
                     System.err.println("Connection reset by peer");
@@ -99,7 +99,7 @@ public class RobustSocketHandler {
             String response = reader.readLine();
             System.out.println("Server response: " + response);
         } catch (SocketTimeoutException e) {
-            System.err.println("Read timeout — server did not respond");
+            System.err.println("Read timeout - server did not respond");
             throw e;
         }
     }
@@ -133,7 +133,7 @@ public class RobustServer {
                 pool.submit(() -> handleClientSafely(client));
             } catch (SocketException e) {
                 if (server.isClosed()) {
-                    System.out.println("Server socket closed — shutting down");
+                    System.out.println("Server socket closed - shutting down");
                     break;
                 }
                 System.err.println("Accept error: " + e.getMessage());
@@ -166,7 +166,7 @@ public class RobustServer {
                 // Client disconnected abruptly (e.g., browser closed tab)
                 System.out.println("Client " + clientAddr + " reset connection");
             } else if (msg != null && msg.contains("closed")) {
-                // Our side closed — normal
+                // Our side closed - normal
             } else {
                 System.err.println("Socket error for " + clientAddr + ": " + msg);
             }

@@ -64,6 +64,7 @@ module "rds" {
 
 ```bash
 # Create an App Password in Bitbucket: Settings > Security > App passwords
+
 export BITBUCKET_USER="myusername"
 export BITBUCKET_APP_PASSWORD="your-app-password"
 

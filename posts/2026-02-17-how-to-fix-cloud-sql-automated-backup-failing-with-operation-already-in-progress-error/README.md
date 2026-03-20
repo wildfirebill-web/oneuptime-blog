@@ -45,6 +45,7 @@ The automated backup has a scheduled window, and if that window overlaps with an
 
 ```bash
 # List recent operations to find what was running during the backup window
+
 gcloud sql operations list \
     --instance=my-instance \
     --project=my-project \

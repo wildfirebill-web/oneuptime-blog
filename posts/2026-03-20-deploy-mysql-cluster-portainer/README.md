@@ -86,6 +86,7 @@ After the stack starts, configure replication from the primary node:
 
 ```bash
 # On the primary: create a replication user
+
 docker exec -it $(docker ps -qf name=mysql-primary) mysql -uroot -prootpassword -e "
 CREATE USER 'replicator'@'%' IDENTIFIED WITH mysql_native_password BY 'replpassword';
 GRANT REPLICATION SLAVE ON *.* TO 'replicator'@'%';

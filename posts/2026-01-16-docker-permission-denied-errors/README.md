@@ -29,6 +29,7 @@ Your user doesn't have permission to access the Docker socket.
 
 ```bash
 # Add current user to docker group
+
 sudo usermod -aG docker $USER
 
 # Apply changes without logging out

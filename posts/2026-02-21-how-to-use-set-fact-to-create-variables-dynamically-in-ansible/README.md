@@ -17,6 +17,7 @@ At its simplest, `set_fact` assigns a value to a new variable:
 ```yaml
 ---
 # basic-setfact.yml
+
 # Create simple variables with set_fact
 
 - hosts: webservers

@@ -41,6 +41,7 @@ graph LR
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
 

@@ -38,6 +38,7 @@ calicoctl get nodes -o yaml > backup-nodes.yaml
 
 ```bash
 # Find pods with duplicate IPs
+
 kubectl get pods -A -o wide | sort -k7 | awk 'NR>1{if($7==prev) print prev_line"\n"$0; prev=$7; prev_line=$0}'
 ```
 

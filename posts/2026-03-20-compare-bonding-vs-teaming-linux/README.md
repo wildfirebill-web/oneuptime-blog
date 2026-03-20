@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Bonding, Network Teaming, teamd, Comparison, Networking, High Availability
+Tags: Linux, Network Bonding, Network Teaming, Teamd, Comparison, Networking, High Availability
 
 Description: Compare Linux network bonding and network teaming architectures, configuration approaches, and use cases to choose the right link aggregation solution.
 
@@ -41,6 +41,7 @@ flowchart LR
 
 ```bash
 # Simple active-backup bond
+
 nmcli connection add type bond con-name bond0 ifname bond0 \
     bond.options "mode=active-backup,miimon=100"
 nmcli connection add type ethernet con-name bond-eth0 ifname eth0 master bond0

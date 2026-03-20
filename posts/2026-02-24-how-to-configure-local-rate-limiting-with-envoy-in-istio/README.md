@@ -259,6 +259,7 @@ Generate traffic to test the limits:
 
 ```bash
 # Send 150 requests rapidly
+
 for i in $(seq 1 150); do
   curl -s -o /dev/null -w "%{http_code} " http://my-service.default.svc.cluster.local/api
 done

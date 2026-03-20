@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, tftest.hcl, Infrastructure as Code, Test Files
+Tags: OpenTofu, Testing, Tftest.hcl, Infrastructure as Code, Test Files
 
 Description: Learn the structure and capabilities of `.tftest.hcl` test files in OpenTofu, including run blocks, assertions, variables, and provider overrides.
 
@@ -24,6 +24,7 @@ A `.tftest.hcl` file can contain three top-level block types:
 # example.tftest.hcl
 
 # Shared variables used by every run block unless overridden
+
 variables {
   region      = "us-east-1"
   environment = "test"
@@ -65,7 +66,7 @@ Each `run` block maps to one test case. The key arguments are:
 
 ```hcl
 run "descriptive_test_name" {
-  # "apply" (default) or "plan" — plan is faster but cannot check resource attributes
+  # "apply" (default) or "plan" - plan is faster but cannot check resource attributes
   command = apply
 
   # Override variables just for this run
@@ -139,4 +140,4 @@ Keep test files next to the module they test for co-location, or in a `tests/` s
 
 ## Conclusion
 
-`.tftest.hcl` files give you a declarative, HCL-native way to write infrastructure tests. Mastering the `variables`, `provider`, and `run` blocks lets you cover happy paths, error cases, and complex multi-step scenarios—all within the same familiar OpenTofu workflow.
+`.tftest.hcl` files give you a declarative, HCL-native way to write infrastructure tests. Mastering the `variables`, `provider`, and `run` blocks lets you cover happy paths, error cases, and complex multi-step scenarios-all within the same familiar OpenTofu workflow.

@@ -25,6 +25,7 @@ This guide covers creating SOPS-encrypted secrets for Terraform variables, consu
 
 ```yaml
 # Create a plaintext secret file (DO NOT commit this)
+
 # infrastructure/terraform/secrets/production-sensitive-vars.yaml (UNENCRYPTED)
 apiVersion: v1
 kind: Secret

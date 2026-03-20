@@ -26,6 +26,7 @@ Install Testinfra alongside Molecule.
 
 ```bash
 # Install Testinfra
+
 pip install pytest-testinfra
 
 # Or install everything together

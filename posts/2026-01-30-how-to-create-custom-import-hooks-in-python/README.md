@@ -18,6 +18,7 @@ At the heart of Python's import system lies `sys.meta_path`, a list of finder ob
 import sys
 
 # View the default meta path finders
+
 for finder in sys.meta_path:
     print(type(finder).__name__)
 ```

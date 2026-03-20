@@ -1,4 +1,4 @@
-# How to Deploy Windows Containers in Rancher
+# How to Deploy Windows Containers in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy Windows containers in Rancher Kubernetes clusters using prop
 
 ## Introduction
 
-Windows containers allow you to run Windows-native applications—including legacy .NET Framework apps, IIS, and Windows services—in Kubernetes. This guide covers deploying Windows containers in Rancher with correct image selection, scheduling configuration, and compatibility considerations.
+Windows containers allow you to run Windows-native applications-including legacy .NET Framework apps, IIS, and Windows services-in Kubernetes. This guide covers deploying Windows containers in Rancher with correct image selection, scheduling configuration, and compatibility considerations.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Windows containers allow you to run Windows-native applications—including lega
 
 ```dockerfile
 # Windows container image compatibility matrix:
+
 # - Windows Server 2022 nodes: can run Server 2022, LTSC 2019 images (with Hyper-V)
 # - Windows Server 2019 nodes: can run LTSC 2019 images
 

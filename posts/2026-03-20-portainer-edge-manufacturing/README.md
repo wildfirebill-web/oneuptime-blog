@@ -8,7 +8,7 @@ Description: Learn how to design and deploy a Portainer-based edge compute archi
 
 ## Introduction
 
-Manufacturing environments require edge compute for real-time data acquisition, quality control, predictive maintenance, and operational dashboards. Portainer provides the management layer to deploy and maintain containerized workloads on factory floor hardware — from ruggedized industrial PCs to DIN-rail-mounted edge gateways.
+Manufacturing environments require edge compute for real-time data acquisition, quality control, predictive maintenance, and operational dashboards. Portainer provides the management layer to deploy and maintain containerized workloads on factory floor hardware - from ruggedized industrial PCs to DIN-rail-mounted edge gateways.
 
 ## Prerequisites
 
@@ -33,6 +33,7 @@ Industrial gateways often need specific OS-level configuration:
 ```bash
 #!/bin/bash
 # factory-edge-setup.sh
+
 # Prepare an industrial Linux device for edge computing
 
 # Disable swap (Docker recommendation for consistent performance)
@@ -233,10 +234,10 @@ echo "Shift change recorded: ${DEVICE_ID} at ${TIMESTAMP}"
 ## Best Practices
 
 - **Separate OT and IT networks** using Docker network segmentation.
-- **Never expose PLC-facing containers to the internet** — use a DMZ architecture.
+- **Never expose PLC-facing containers to the internet** - use a DMZ architecture.
 - **Use hardware watchdog timers** on gateways for automatic recovery.
 - **Test stack updates during maintenance windows** to avoid production disruption.
-- **Keep edge analytics local** — reduce latency by processing at the edge, not the cloud.
+- **Keep edge analytics local** - reduce latency by processing at the edge, not the cloud.
 
 ## Conclusion
 

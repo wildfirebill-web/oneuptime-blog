@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tinyproxy, Proxy, IPv6, HTTP, Lightweight, Filtering, Access Control
+Tags: Tinyproxy, Proxy, IPv6, HTTP, Lightweight, Filtering, Access Control
 
 Description: Configure tinyproxy lightweight HTTP proxy to listen on IPv6 addresses, allow IPv6 clients, and use upstream IPv6 proxy connections.
 
@@ -22,6 +22,7 @@ apt-get install -y tinyproxy
 # /etc/tinyproxy/tinyproxy.conf
 
 # Listen on all IPv6 interfaces
+
 BindIPv6 ::
 
 # Port

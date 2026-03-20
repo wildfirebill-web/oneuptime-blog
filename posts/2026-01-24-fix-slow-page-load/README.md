@@ -137,6 +137,7 @@ function measureCoreWebVitals() {
 
 ```bash
 # Run Lighthouse from command line
+
 npx lighthouse https://example.com \
     --output=json \
     --output-path=./lighthouse-report.json \
@@ -282,7 +283,7 @@ def get_products():
 </body>
 ```
 
-### Resource Loading Strategy
+Resource Loading Strategy
 
 ```mermaid
 flowchart TD

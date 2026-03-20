@@ -21,6 +21,7 @@ GPU passthrough allows a virtual machine to directly access a physical NVIDIA GP
 
 ```bash
 # For Intel CPUs, add intel_iommu=on to kernel parameters
+
 sudo grubby --update-kernel=ALL --args="intel_iommu=on iommu=pt"
 
 # For AMD CPUs

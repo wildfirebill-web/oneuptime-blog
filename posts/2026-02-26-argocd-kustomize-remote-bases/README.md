@@ -18,6 +18,7 @@ A remote base is a `resources` entry that points to a directory in a remote Git 
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

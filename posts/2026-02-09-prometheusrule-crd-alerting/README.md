@@ -24,6 +24,7 @@ Here's a simple PrometheusRule that alerts when pod memory usage is high:
 
 ```yaml
 # basic-alert-rule.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

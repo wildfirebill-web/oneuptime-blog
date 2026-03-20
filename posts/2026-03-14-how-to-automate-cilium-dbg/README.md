@@ -32,6 +32,7 @@ This guide covers automation patterns for cilium-dbg, from simple multi-node scr
 ```bash
 #!/bin/bash
 # cilium-dbg-all-nodes.sh
+
 # Run a cilium-dbg command on all Cilium agent pods
 
 set -euo pipefail

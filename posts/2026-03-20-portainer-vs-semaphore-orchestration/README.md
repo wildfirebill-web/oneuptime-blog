@@ -1,4 +1,4 @@
-# Portainer vs Semaphore: Container Orchestration Comparison
+# Portainer vs Semaphore: Container Orchestration Comparison - Orchestration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ Deploy Semaphore:
 
 ```yaml
 # semaphore-stack.yml
+
 version: "3.8"
 services:
   semaphore:

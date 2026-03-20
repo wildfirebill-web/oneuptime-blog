@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, NetworkManager, Nmcli
+Tags: Ubuntu, Networking, NetworkManager, nmcli
 
 Description: A thorough guide to managing network connections on Ubuntu using nmcli, the command-line interface for NetworkManager, covering wired, wireless, VPN, and connection profiles.
 
@@ -18,6 +18,7 @@ Start with a general status overview:
 
 ```bash
 # General NetworkManager status
+
 nmcli general status
 
 # Show all network devices

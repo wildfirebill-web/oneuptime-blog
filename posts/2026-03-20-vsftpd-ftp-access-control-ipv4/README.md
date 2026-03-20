@@ -16,6 +16,7 @@ vsftpd supports TCP wrappers for IP-based access control. This is the classic an
 
 ```bash
 # /etc/hosts.allow
+
 # Allow FTP from the office network and a specific admin IP
 vsftpd: 192.168.1.0/24
 vsftpd: 203.0.113.5
@@ -76,7 +77,7 @@ For finer-grained control (restrict specific users to specific IPs):
 pam_service_name=vsftpd
 ```
 
-```
+```text
 # /etc/pam.d/vsftpd
 # Add this line to enable pam_access checking
 account required pam_access.so

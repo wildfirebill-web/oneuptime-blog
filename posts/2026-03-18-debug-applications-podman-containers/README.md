@@ -20,6 +20,7 @@ The first step in debugging any containerized application is checking its output
 
 ```bash
 # View logs from a running container
+
 podman logs my-container
 
 # Follow logs in real time (like tail -f)

@@ -184,6 +184,7 @@ To check how traffic is actually being distributed, look at the Envoy stats:
 
 ```bash
 # Check endpoint health status
+
 istioctl proxy-config endpoints deployment/sleep -n sample --context="${CTX_CLUSTER1}" | grep helloworld
 
 # Check cluster stats

@@ -14,6 +14,7 @@ The `-target` flag restricts OpenTofu operations to specific resources or module
 
 ```bash
 # Target a single resource
+
 tofu plan -target=aws_s3_bucket.data
 tofu apply -target=aws_s3_bucket.data
 ```
@@ -118,4 +119,4 @@ tofu destroy -target=aws_instance.old-web
 
 ## Conclusion
 
-The `-target` flag is a tactical tool for focused operations on specific resources. Use it for recovery, rapid iteration on new resources, or urgent fixes. Always follow a targeted apply with a full `tofu plan` to verify that the overall configuration remains consistent. Avoid making `-target` a routine part of your deployment workflow — it can mask configuration drift and leave state in a partially-applied state.
+The `-target` flag is a tactical tool for focused operations on specific resources. Use it for recovery, rapid iteration on new resources, or urgent fixes. Always follow a targeted apply with a full `tofu plan` to verify that the overall configuration remains consistent. Avoid making `-target` a routine part of your deployment workflow - it can mask configuration drift and leave state in a partially-applied state.

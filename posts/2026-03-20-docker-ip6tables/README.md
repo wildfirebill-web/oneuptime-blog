@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, ip6tables, Firewall, Network Isolation, Security
+Tags: Docker, IPv6, Ip6tables, Firewall, Network Isolation, Security
 
-Description: Enable and configure ip6tables in Docker to provide IPv6 network isolation between containers, manage IPv6 firewall rules for Docker networks, and understand how Docker manages ip6tables rules automatically.
+Description: Enable and configure ip6tables in Docker to provide IPv6 network isolation between containers, manage IPv6 firewall rules for Docker networks, and understand how Docker manages ip6tables rules...
 
 ## Introduction
 
@@ -25,6 +25,7 @@ When `ip6tables` is enabled in Docker's `daemon.json`, Docker automatically mana
 sudo systemctl restart docker
 
 # Verify ip6tables rules are being managed by Docker
+
 sudo ip6tables -L DOCKER -n
 # Should show DOCKER chain with per-network rules
 
@@ -105,7 +106,7 @@ docker info | grep -i "ip6tables"
 # Check FORWARD chain default policy
 sudo ip6tables -L FORWARD --policy
 
-# If DROP, Docker should add ACCEPT rules — verify Docker chain
+# If DROP, Docker should add ACCEPT rules - verify Docker chain
 sudo ip6tables -L FORWARD -n | grep DOCKER
 
 # Check if MASQUERADE is in place for outbound

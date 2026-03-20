@@ -9,14 +9,14 @@ Description: Learn how to design and implement a custom application protocol ove
 ## Protocol Design Principles
 
 A custom TCP protocol needs:
-1. **Framing** — how to find message boundaries in the TCP byte stream
-2. **Header** — version, message type, payload length, optional checksum
-3. **Command dispatch** — route messages to handlers
-4. **Error handling** — unknown commands, malformed messages
+1. **Framing** - how to find message boundaries in the TCP byte stream
+2. **Header** - version, message type, payload length, optional checksum
+3. **Command dispatch** - route messages to handlers
+4. **Error handling** - unknown commands, malformed messages
 
 ## Wire Format
 
-```
+```text
 +------+------+--------+--------+---------+
 | VER  | CMD  | FLAGS  | LENGTH |  PAYLOAD|
 | 1B   | 1B   | 2B     | 4B     |  N bytes|
@@ -153,4 +153,4 @@ with make_client("192.168.1.10", 9000) as s:
 
 ## Conclusion
 
-A custom TCP protocol needs a fixed-size header with a version byte (for future compatibility), a command/message-type byte, and a payload length field. The `recvn` helper ensures TCP fragmentation is handled correctly. Use a `cmd → handler` dispatch table to keep the server loop clean. Always validate the protocol version to reject incompatible clients early. When adding new commands, increment the version only when backward compatibility breaks — otherwise just add new command codes.
+A custom TCP protocol needs a fixed-size header with a version byte (for future compatibility), a command/message-type byte, and a payload length field. The `recvn` helper ensures TCP fragmentation is handled correctly. Use a `cmd → handler` dispatch table to keep the server loop clean. Always validate the protocol version to reject incompatible clients early. When adding new commands, increment the version only when backward compatibility breaks - otherwise just add new command codes.

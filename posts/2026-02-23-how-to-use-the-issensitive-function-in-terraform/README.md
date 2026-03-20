@@ -57,6 +57,7 @@ A module that adjusts its output behavior based on input sensitivity:
 
 ```hcl
 # In a reusable module (modules/config-store/main.tf)
+
 variable "config_value" {
   description = "A configuration value that may or may not be sensitive"
   type        = string

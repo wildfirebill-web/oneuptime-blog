@@ -55,6 +55,7 @@ Apply the configuration:
 
 ```bash
 # Create the service
+
 kubectl apply -f externalname-service.yaml
 
 # Verify service

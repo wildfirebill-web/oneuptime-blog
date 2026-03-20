@@ -50,6 +50,7 @@ Before diving into Ansible-specific troubleshooting, confirm that the target hos
 
 ```bash
 # Test basic connectivity to the target host
+
 # Replace 192.168.1.100 with your actual target IP
 ping -c 4 192.168.1.100
 

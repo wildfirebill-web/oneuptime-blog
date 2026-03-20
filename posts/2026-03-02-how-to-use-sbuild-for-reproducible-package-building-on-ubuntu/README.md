@@ -23,6 +23,7 @@ Both tools build packages in clean chroot environments, but they differ in appro
 
 ```bash
 # Install sbuild and schroot
+
 sudo apt update
 sudo apt install sbuild schroot debootstrap -y
 

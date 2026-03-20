@@ -57,6 +57,7 @@ def calculate_slot(key: str) -> int:
 
 
 # Examples
+
 keys = ['user:1001', 'user:1002', 'order:5001', 'product:101']
 for key in keys:
     slot = calculate_slot(key)

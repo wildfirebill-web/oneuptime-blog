@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, RHCSA, Networking, Nmcli, Firewall, Certification
+Tags: RHEL, RHCSA, Networking, nmcli, Firewall, Certification
 
 Description: Practice the network configuration tasks required for the RHCSA exam, including static IP setup with nmcli, hostname changes, and firewall rules.
 
@@ -14,6 +14,7 @@ The RHCSA exam requires you to configure network interfaces, set hostnames, and 
 
 ```bash
 # List connections
+
 nmcli connection show
 
 # Configure a static IP on connection "ens192"

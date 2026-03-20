@@ -8,7 +8,7 @@ Description: Deploy a self-hosted wiki using Wiki.js or BookStack with Portainer
 
 ## Introduction
 
-A self-hosted wiki gives your team a centralized place for documentation, procedures, and knowledge sharing — without sending sensitive information to third-party services. This guide covers deploying Wiki.js (a powerful modern wiki) and BookStack (a book-style documentation platform) using Portainer.
+A self-hosted wiki gives your team a centralized place for documentation, procedures, and knowledge sharing - without sending sensitive information to third-party services. This guide covers deploying Wiki.js (a powerful modern wiki) and BookStack (a book-style documentation platform) using Portainer.
 
 ## Prerequisites
 
@@ -26,6 +26,7 @@ In Portainer, navigate to **Stacks** > **Add stack**:
 
 ```yaml
 # docker-compose.yml - Wiki.js with PostgreSQL
+
 version: "3.8"
 
 networks:

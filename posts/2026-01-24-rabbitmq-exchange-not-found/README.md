@@ -47,6 +47,7 @@ connection = pika.BlockingConnection(
 channel = connection.channel()
 
 # This will fail if 'orders' exchange does not exist
+
 channel.basic_publish(
     exchange='orders',
     routing_key='new.order',

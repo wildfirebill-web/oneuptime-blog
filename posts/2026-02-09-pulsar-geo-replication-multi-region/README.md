@@ -35,6 +35,7 @@ Deploy separate Pulsar clusters in each region:
 
 ```yaml
 # Region: us-east
+
 # pulsar-us-east-values.yaml
 clusterName: pulsar-us-east
 namespace: pulsar-us-east

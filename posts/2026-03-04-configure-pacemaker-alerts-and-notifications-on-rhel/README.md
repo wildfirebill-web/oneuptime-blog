@@ -20,6 +20,7 @@ RHEL ships with a built-in email alert agent.
 
 ```bash
 # First, ensure mailx is installed for sending emails
+
 sudo dnf install -y mailx
 
 # Verify the alert agent exists

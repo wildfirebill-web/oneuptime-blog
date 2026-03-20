@@ -52,6 +52,7 @@ Let us set up the VNet, gateway subnet, and VPN gateway.
 
 ```bash
 # Create the resource group
+
 az group create \
   --name rg-vpn \
   --location eastus

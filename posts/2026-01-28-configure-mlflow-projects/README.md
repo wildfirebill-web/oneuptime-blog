@@ -55,6 +55,7 @@ The MLproject file is a YAML file that defines your project. Here is a complete 
 
 ```yaml
 # MLproject
+
 name: customer_churn_model
 
 # Specify the environment

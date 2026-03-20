@@ -281,6 +281,7 @@ Verify that cross-namespace traffic is blocked:
 
 ```bash
 # This should fail with a connection refused or RBAC denied error
+
 kubectl exec -it <pod-in-staging> -n staging -- \
   curl -s -o /dev/null -w "%{http_code}" \
   http://api-service.production.svc.cluster.local:8080/api/data

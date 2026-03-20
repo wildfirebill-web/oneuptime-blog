@@ -31,6 +31,7 @@ The standard Kubernetes metrics for pod resource usage come from cAdvisor and ku
 
 ```bash
 # Check that kube-state-metrics is running
+
 kubectl get pods -n monitoring -l app.kubernetes.io/name=kube-state-metrics
 
 # Check that Flux controller pods are running

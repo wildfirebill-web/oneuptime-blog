@@ -14,6 +14,7 @@ MikroTik RouterOS supports full IPv6 with a comprehensive feature set including 
 
 ```bash
 # Check that IPv6 package is installed
+
 /system package print
 # Look for "ipv6" in the list
 

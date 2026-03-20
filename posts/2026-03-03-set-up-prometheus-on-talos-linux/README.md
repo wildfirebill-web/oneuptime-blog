@@ -35,6 +35,7 @@ You will need:
 
 ```bash
 # Verify cluster and storage
+
 kubectl get nodes
 kubectl get storageclass
 ```

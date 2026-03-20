@@ -48,6 +48,7 @@ Most monitoring tools are available in the default Ubuntu repositories. Let us i
 
 ```bash
 # Update package lists to ensure we get the latest versions
+
 sudo apt update
 
 # Install sysstat package which includes iostat, sar, and other monitoring tools

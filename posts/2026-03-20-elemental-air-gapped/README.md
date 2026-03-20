@@ -20,6 +20,7 @@ Air-gapped deployments require all container images and OS artifacts to be avail
 
 ```bash
 # List all required Elemental images
+
 ELEMENTAL_VERSION="1.4.0"
 IMAGES=(
   "registry.suse.com/rancher/elemental-operator:${ELEMENTAL_VERSION}"

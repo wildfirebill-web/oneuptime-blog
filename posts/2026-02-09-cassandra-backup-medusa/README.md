@@ -196,6 +196,7 @@ It is critical to periodically verify that your backups are actually restorable.
 
 ```bash
 # List available backups
+
 kubectl get medusabackup -n cassandra
 
 # Check backup details

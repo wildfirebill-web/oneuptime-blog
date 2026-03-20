@@ -522,6 +522,7 @@ Generate keys:
 
 ```bash
 # Generate private key
+
 openssl genrsa -out private.pem 2048
 
 # Generate public key

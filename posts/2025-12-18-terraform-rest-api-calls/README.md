@@ -16,6 +16,7 @@ The simplest approach uses the built-in `http` data source for GET requests:
 
 ```hcl
 # Fetch data from a REST API
+
 data "http" "api_config" {
   url = "https://api.example.com/config"
 

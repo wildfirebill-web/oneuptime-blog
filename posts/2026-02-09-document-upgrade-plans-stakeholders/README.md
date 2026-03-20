@@ -145,6 +145,7 @@ Prepare communication templates for different stages of the upgrade.
 # create-communication-templates.sh
 
 # Pre-upgrade announcement
+
 cat > announcement-t7.md << 'EOF'
 Subject: Kubernetes Cluster Upgrade Scheduled - February 15, 2026
 

@@ -32,6 +32,7 @@ kubectl get pods -n calico-system -o wide
 kubectl get pods -n calico-apiserver -o wide
 
 # Get detailed error messages
+
 kubectl describe pod -n calico-system -l k8s-app=calico-node | grep -A5 "Events:"
 ```
 

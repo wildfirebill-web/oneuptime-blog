@@ -24,6 +24,7 @@ The most common way to access a ServiceAccount token is from within a pod. Kuber
 
 ```bash
 # From within a container
+
 TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
 echo $TOKEN
 ```

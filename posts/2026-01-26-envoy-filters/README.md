@@ -85,6 +85,7 @@ Before diving into filters, let's understand how Envoy configuration is structur
 
 ```yaml
 # envoy.yaml - Basic Envoy configuration structure
+
 # This file defines how Envoy listens for and routes traffic
 
 # Static resources are defined at startup and don't change

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Secrets Management, Security, Infrastructure as Code, Best Practices
 
-Description: Learn the key strategies for keeping secrets out of OpenTofu configuration files, plan output, and state — including environment variables, secret managers, and sensitive variable marking.
+Description: Learn the key strategies for keeping secrets out of OpenTofu configuration files, plan output, and state - including environment variables, secret managers, and sensitive variable marking.
 
 ## Introduction
 
@@ -13,13 +13,14 @@ Secrets in OpenTofu configurations are a common source of accidental credential 
 ## Never Hardcode Secrets
 
 ```hcl
-# BAD — never do this
+# BAD - never do this
+
 resource "aws_db_instance" "main" {
   username = "admin"
   password = "SuperSecretPassword123!"  # Hardcoded credential!
 }
 
-# GOOD — accept the password as a sensitive variable
+# GOOD - accept the password as a sensitive variable
 variable "db_password" {
   type      = string
   sensitive = true
@@ -33,7 +34,7 @@ resource "aws_db_instance" "main" {
 
 ## Strategy 1: Environment Variables
 
-Pass secrets as environment variables — they never touch disk:
+Pass secrets as environment variables - they never touch disk:
 
 ```bash
 # Set before running tofu plan/apply
@@ -55,7 +56,7 @@ In CI/CD pipelines, use the platform's secret store:
 
 ## Strategy 2: Read Secrets from AWS Secrets Manager
 
-Pull secrets at apply time using a data source — no secrets in code:
+Pull secrets at apply time using a data source - no secrets in code:
 
 ```hcl
 # Fetch the secret at runtime
@@ -110,14 +111,14 @@ variable "api_key" {
 
 output "api_endpoint" {
   value = "https://api.example.com"
-  # Don't output secrets — if you must, mark them sensitive
+  # Don't output secrets - if you must, mark them sensitive
 }
 ```
 
 ## Using .tfvars Files Safely
 
 ```hcl
-# secrets.tfvars — NEVER commit this file
+# secrets.tfvars - NEVER commit this file
 db_password = "SuperSecretPassword123!"
 api_key     = "sk-abc123def456"
 ```
@@ -149,4 +150,4 @@ git secrets --scan-history
 
 ## Conclusion
 
-The safest approach is to never let secrets reach OpenTofu configuration files at all — read them from a secrets manager data source at apply time, or inject them via environment variables. Always mark secret variables and outputs as `sensitive = true`, and use `.gitignore` to exclude any `.tfvars` files containing real credentials.
+The safest approach is to never let secrets reach OpenTofu configuration files at all - read them from a secrets manager data source at apply time, or inject them via environment variables. Always mark secret variables and outputs as `sensitive = true`, and use `.gitignore` to exclude any `.tfvars` files containing real credentials.

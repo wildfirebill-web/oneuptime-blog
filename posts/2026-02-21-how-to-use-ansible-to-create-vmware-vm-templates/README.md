@@ -34,6 +34,7 @@ Start by creating a VM that will become your template. This VM gets the OS insta
 
 ```yaml
 # create-template-base.yml
+
 ---
 - name: Create base VM for template conversion
   hosts: localhost

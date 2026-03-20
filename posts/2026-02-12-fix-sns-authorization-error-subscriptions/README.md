@@ -52,6 +52,7 @@ Check the topic's access policy with the AWS CLI.
 
 ```bash
 # Retrieve the SNS topic attributes, including its access policy
+
 aws sns get-topic-attributes \
   --topic-arn arn:aws:sns:us-east-1:123456789012:my-topic \
   --query 'Attributes.Policy' \

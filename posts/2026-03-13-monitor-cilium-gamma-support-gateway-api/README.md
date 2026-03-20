@@ -24,6 +24,7 @@ Unlike monitoring specific routes, controller-level monitoring tracks the health
 
 ```promql
 # Controller reconciliation rate
+
 rate(controller_runtime_reconcile_total{controller="httproute"}[5m])
 
 # Controller reconciliation errors

@@ -36,6 +36,7 @@ graph TD
 
 ```bash
 # Typical WiredTiger assertion error
+
 SEVERE: WiredTiger error (28) [1234567890:123456][1234:0x7f...]:
   __wt_block_read_off, 237: block at offset 12345 cannot be read
 assertion 28 WiredTiger: failed to read from file

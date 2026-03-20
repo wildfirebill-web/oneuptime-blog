@@ -122,6 +122,7 @@ Here is the equivalent setup using the Azure CLI.
 
 ```bash
 # Get the App Service plan resource ID
+
 ASP_ID=$(az appservice plan show \
   --name asp-prod \
   --resource-group rg-web \

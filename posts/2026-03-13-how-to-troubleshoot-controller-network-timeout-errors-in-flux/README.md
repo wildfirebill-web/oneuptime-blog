@@ -48,6 +48,7 @@ From inside the debug pod, test connectivity to your external services:
 
 ```bash
 # Test DNS resolution
+
 nslookup github.com
 nslookup registry.example.com
 

@@ -22,6 +22,7 @@ Sync waves assign a numerical value to resources. ArgoCD processes waves in asce
 
 ```yaml
 # The annotation syntax
+
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"  # Value must be a string

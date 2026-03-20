@@ -16,6 +16,7 @@ Understanding what ends up in state.
 
 ```hcl
 # This stores the password in state as a plaintext value
+
 resource "aws_db_instance" "main" {
   identifier = "myapp-db"
   password   = var.db_password  # ends up in terraform.tfstate as plaintext

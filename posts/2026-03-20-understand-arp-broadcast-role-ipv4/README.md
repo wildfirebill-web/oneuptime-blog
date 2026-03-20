@@ -8,7 +8,7 @@ Description: Understand how ARP uses Ethernet broadcast to resolve IPv4 addresse
 
 ## Introduction
 
-Address Resolution Protocol (ARP) bridges Layer 3 (IPv4) and Layer 2 (Ethernet). Before a host can send an IP packet to another device on the same subnet, it must discover the destination's MAC address — and ARP does this via broadcast.
+Address Resolution Protocol (ARP) bridges Layer 3 (IPv4) and Layer 2 (Ethernet). Before a host can send an IP packet to another device on the same subnet, it must discover the destination's MAC address - and ARP does this via broadcast.
 
 ## How ARP Broadcast Works
 
@@ -32,7 +32,7 @@ sequenceDiagram
 
 ## ARP Packet Structure
 
-```
+```text
 Hardware type:     1 (Ethernet)
 Protocol type:     0x0800 (IPv4)
 Hardware len:      6 (MAC = 6 bytes)
@@ -48,6 +48,7 @@ Target IP:         192.168.1.50
 
 ```bash
 # Capture all ARP traffic on eth0
+
 sudo tcpdump -i eth0 -n arp
 
 # Filter only ARP requests (broadcasts)
@@ -56,7 +57,7 @@ sudo tcpdump -i eth0 -n "arp and ether dst ff:ff:ff:ff:ff:ff"
 
 Example output:
 
-```
+```text
 14:00:01.123 ARP, Request who-has 192.168.1.50 tell 192.168.1.10, length 28
 14:00:01.125 ARP, Reply 192.168.1.50 is-at aa:bb:cc:dd:ee:ff, length 28
 ```
@@ -76,7 +77,7 @@ sudo ip neigh flush all
 # Delete a specific entry
 sudo ip neigh del 192.168.1.50 dev eth0
 
-# Add a static ARP entry (permanent — will not age out)
+# Add a static ARP entry (permanent - will not age out)
 sudo ip neigh add 192.168.1.50 lladdr aa:bb:cc:dd:ee:ff dev eth0 nud permanent
 ```
 

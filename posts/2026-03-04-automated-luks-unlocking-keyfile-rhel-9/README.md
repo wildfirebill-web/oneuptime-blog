@@ -29,6 +29,7 @@ The keyfile is stored on the encrypted root filesystem. Since root is unlocked f
 
 ```bash
 # Generate a high-quality random keyfile
+
 sudo dd if=/dev/urandom of=/root/luks-data.keyfile bs=4096 count=1
 
 # Set strict permissions (only root can read)

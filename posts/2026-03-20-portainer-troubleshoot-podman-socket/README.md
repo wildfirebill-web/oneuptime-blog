@@ -1,8 +1,8 @@
-# How to Troubleshoot Podman Socket Connection Issues in Portainer
+# How to Troubleshoot Podman Socket Connection Issues in Portainer - Socket
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Podman, Troubleshooting, Socket, Connectivity, API
+Tags: Portainer, Podman, Troubleshooting, Sockets, Connectivity, API
 
 Description: Learn how to diagnose and fix Podman socket connection issues when Portainer cannot communicate with the Podman API, including socket permissions and service configuration.
 
@@ -14,6 +14,7 @@ Connecting Portainer to a Podman socket involves more configuration than with Do
 
 ```bash
 # For system-level (rootful) Podman
+
 sudo systemctl status podman.socket
 # Should show: Active: active (listening)
 
@@ -62,7 +63,7 @@ docker run -d \
   portainer/portainer-ce:latest
 ```
 
-## Step 4: Fix "No Such File or Directory" — Enable the Socket Service
+## Step 4: Fix "No Such File or Directory" - Enable the Socket Service
 
 ```bash
 # Rootful: enable and start the socket

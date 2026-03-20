@@ -31,6 +31,7 @@ You need two separate backend services - one for each version of your applicatio
 
 ```bash
 # Create health checks
+
 gcloud compute health-checks create http app-health-check \
     --port=8080 \
     --request-path=/healthz

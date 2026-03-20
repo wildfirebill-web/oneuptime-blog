@@ -22,6 +22,7 @@ Calico IP Autodetection is a critical configuration aspect of Calico networking.
 
 ```bash
 # Check current state
+
 calicoctl get ippools -o yaml
 calicoctl ipam show --show-blocks
 kubectl get pods -A -o wide | head -10

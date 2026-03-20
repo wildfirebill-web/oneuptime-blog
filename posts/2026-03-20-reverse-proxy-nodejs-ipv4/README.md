@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Reverse Proxy, IPv4, HTTP, http-proxy, Networking
+Tags: Node.js, Reverse Proxy, IPv4, HTTP, Http-proxy, Networking
 
 Description: Learn how to build a reverse proxy in Node.js that forwards IPv4 HTTP traffic to upstream servers using the http-proxy library and native http module.
 

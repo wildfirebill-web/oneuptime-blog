@@ -37,6 +37,7 @@ The simplest approach is enabling the monitoring add-on directly on the AKS clus
 
 ```bash
 # Enable Container Insights with a new Log Analytics workspace
+
 # Azure creates the workspace in the same region as the cluster
 az aks enable-addons \
   --addon monitoring \

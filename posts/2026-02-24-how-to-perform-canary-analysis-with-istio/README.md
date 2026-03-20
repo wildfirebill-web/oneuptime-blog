@@ -133,6 +133,7 @@ The most important metrics to compare between the canary and the stable version 
 
 ```text
 # v1 error rate
+
 sum(rate(istio_requests_total{destination_service="my-app.production.svc.cluster.local",destination_version="v1",response_code=~"5.*"}[5m]))
 /
 sum(rate(istio_requests_total{destination_service="my-app.production.svc.cluster.local",destination_version="v1"}[5m]))

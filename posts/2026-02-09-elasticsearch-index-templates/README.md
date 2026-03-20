@@ -135,6 +135,7 @@ Reuse configuration across templates:
 
 ```bash
 # Create component for common settings
+
 curl -X PUT "https://elasticsearch.logging.svc:9200/_component_template/logs-settings?pretty" \
   -u elastic:$ELASTIC_PASSWORD \
   -H 'Content-Type: application/json' \

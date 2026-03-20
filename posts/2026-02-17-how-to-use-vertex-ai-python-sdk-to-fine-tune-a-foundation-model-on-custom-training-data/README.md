@@ -20,6 +20,7 @@ Install the Vertex AI SDK and authenticate.
 
 ```bash
 # Install the Vertex AI Python SDK
+
 pip install google-cloud-aiplatform
 
 # Authenticate for local development

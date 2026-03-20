@@ -43,6 +43,7 @@ Here is how to create a session token site key using gcloud:
 
 ```bash
 # Create a reCAPTCHA Enterprise session token site key
+
 gcloud recaptcha keys create \
   --display-name="cloud-armor-integration" \
   --web \

@@ -1,4 +1,4 @@
-# How to Set Up Automatic User Provisioning with Active Directory in Portainer
+# How to Set Up Automatic User Provisioning with Active Directory in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure Portainer to automatically create user accounts and team 
 
 ## Introduction
 
-Manual user provisioning — creating Portainer accounts for each employee — doesn't scale. Portainer's automatic user provisioning creates accounts automatically when AD users log in for the first time, optionally placing them in teams based on their AD group membership. This guide covers the full automatic provisioning setup.
+Manual user provisioning - creating Portainer accounts for each employee - doesn't scale. Portainer's automatic user provisioning creates accounts automatically when AD users log in for the first time, optionally placing them in teams based on their AD group membership. This guide covers the full automatic provisioning setup.
 
 ## How Automatic Provisioning Works
 
@@ -74,6 +74,7 @@ Pre-create teams in Portainer that correspond to AD groups:
 
 ```bash
 # Create teams that match AD group names
+
 AD_GROUPS=("IT-Admins" "Developers" "QA-Engineers" "Operations" "Security-Team")
 
 for group in "${AD_GROUPS[@]}"; do
@@ -141,7 +142,7 @@ curl -s -H "Authorization: Bearer $TOKEN" \
 To automatically give admin role to members of a specific AD group:
 
 In LDAP settings, configure the admin attribute:
-```
+```text
 Admin group: CN=Portainer-Admins,OU=Groups,DC=corp,DC=example,DC=com
 ```
 
@@ -168,4 +169,4 @@ curl -X DELETE \
 
 ## Conclusion
 
-Automatic user provisioning with Active Directory makes Portainer self-service — users log in with their corporate credentials and get appropriate access without any admin intervention. The key is establishing the AD group-to-Portainer-team mapping upfront, then configuring environment access per team. User lifecycle management (especially deprovisioning) still requires manual or scripted cleanup when users leave the organization.
+Automatic user provisioning with Active Directory makes Portainer self-service - users log in with their corporate credentials and get appropriate access without any admin intervention. The key is establishing the AD group-to-Portainer-team mapping upfront, then configuring environment access per team. User lifecycle management (especially deprovisioning) still requires manual or scripted cleanup when users leave the organization.

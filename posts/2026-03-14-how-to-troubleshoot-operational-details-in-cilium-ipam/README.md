@@ -40,6 +40,7 @@ graph TD
 
 ```bash
 # Check overall IPAM status
+
 cilium status | grep IPAM
 
 # View per-node IP usage

@@ -15,6 +15,7 @@ from scapy.all import *
 from scapy.layers.inet6 import *
 
 # Send a single ICMPv6 ping
+
 def send_icmpv6_ping(src, dst, count=3):
     pkt = IPv6(src=src, dst=dst) / ICMPv6EchoRequest(id=0x1234, seq=1)
     responses = []
@@ -76,7 +77,7 @@ generate_ipv6_udp_flood("2001:db8::/64", "2001:db8::server", 9000, 1000, 10)
 Cisco TRex is a stateless traffic generator capable of line-rate packet generation:
 
 ```python
-# trex_ipv6_profile.py — TRex traffic profile for IPv6
+# trex_ipv6_profile.py - TRex traffic profile for IPv6
 
 from trex_stl_lib.api import *
 
@@ -186,4 +187,4 @@ tcp_connect_rate("2001:db8::1", 80, 10, workers=20)
 
 ## Conclusion
 
-Scapy is the most flexible tool for IPv6 traffic generation in test labs — it supports any packet structure at any rate up to ~100k pkt/s on a modern CPU. TRex enables line-rate (100 Gbps+) IPv6 testing for performance benchmarking and capacity planning. NDP stress tests using Scapy ICMPv6ND packets validate NDP cache behavior under load. TCP connection rate tests measure server IPv6 stack performance. Combine these tools with network namespace topologies for comprehensive IPv6 stack testing.
+Scapy is the most flexible tool for IPv6 traffic generation in test labs - it supports any packet structure at any rate up to ~100k pkt/s on a modern CPU. TRex enables line-rate (100 Gbps+) IPv6 testing for performance benchmarking and capacity planning. NDP stress tests using Scapy ICMPv6ND packets validate NDP cache behavior under load. TCP connection rate tests measure server IPv6 stack performance. Combine these tools with network namespace topologies for comprehensive IPv6 stack testing.

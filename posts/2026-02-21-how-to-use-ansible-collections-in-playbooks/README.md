@@ -26,6 +26,7 @@ This playbook installs nginx using the fully qualified name for the yum module:
 
 ```yaml
 # install-nginx.yml - Uses FQCN to call the yum module
+
 ---
 - name: Install nginx on RHEL servers
   hosts: webservers

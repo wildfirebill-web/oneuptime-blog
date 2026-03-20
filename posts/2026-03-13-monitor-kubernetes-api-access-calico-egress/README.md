@@ -32,6 +32,7 @@ This guide covers deploying a synthetic API access probe, creating PrometheusRul
 
 ```bash
 # Check if any pods are failing API calls
+
 kubectl get events --all-namespaces | grep -i "unauthorized\|connection refused\|timeout" | tail -20
 
 # Check API server logs for connection issues

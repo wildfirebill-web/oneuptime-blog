@@ -83,6 +83,7 @@ flowchart LR
 
 ```bash
 # Tag an EC2 instance with cost allocation tags
+
 # Replace i-1234567890abcdef0 with your instance ID
 aws ec2 create-tags \
     --resources i-1234567890abcdef0 \

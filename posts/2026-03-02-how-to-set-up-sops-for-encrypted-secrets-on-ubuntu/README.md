@@ -33,6 +33,7 @@ Download the latest SOPS binary from GitHub releases:
 
 ```bash
 # Download the latest release (check https://github.com/getsops/sops/releases)
+
 SOPS_VERSION="3.9.1"
 wget "https://github.com/getsops/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux.amd64" \
   -O /tmp/sops

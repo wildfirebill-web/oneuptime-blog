@@ -48,6 +48,7 @@ Common symptoms of etcd problems:
 
 ```bash
 # For kubeadm clusters, etcd runs as a static pod
+
 kubectl get pods -n kube-system -l component=etcd
 
 # Check etcd pod logs

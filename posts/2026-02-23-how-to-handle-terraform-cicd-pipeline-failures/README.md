@@ -28,6 +28,7 @@ Build failure classification into your pipeline:
 ```bash
 #!/bin/bash
 # scripts/run-terraform.sh
+
 # Wrapper that classifies Terraform failures
 
 set +e
@@ -228,7 +229,7 @@ jobs:
 
 ## Automated Failure Notifications
 
-```yaml
+````yaml
 # .github/workflows/terraform-apply.yml
 - name: Notify on failure
   if: failure()
@@ -258,9 +259,9 @@ jobs:
         **Actor:** ${context.actor}
 
         ### Error Output (last 30 lines)
-        \`\`\`
+        ```
         ${errorDetails.substring(0, 60000)}
-        \`\`\`
+        ```
 
         ### Next Steps
         1. Review the error output above
@@ -270,7 +271,7 @@ jobs:
         `,
         labels: ['terraform-failure', 'needs-attention']
       });
-```
+````
 
 ## Pipeline Recovery Workflow
 

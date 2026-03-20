@@ -58,6 +58,7 @@ def announce(service_name: str, service_port: int,
     return t
 
 # Start announcing this service
+
 announce("my-api", int(os.environ.get("PORT", 8080)))
 ```
 

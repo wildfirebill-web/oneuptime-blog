@@ -40,6 +40,7 @@ Here is a complete playbook that performs a rolling deployment with health check
 
 ```yaml
 # playbooks/rolling-deploy.yml
+
 # Deploy application in rolling batches with health verification
 ---
 - name: Rolling deployment

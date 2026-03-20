@@ -60,6 +60,7 @@ HashiCorp Vault can generate short-lived database credentials automatically. Thi
 
 ```bash
 # Enable the database secrets engine
+
 vault secrets enable database
 
 # Configure the PostgreSQL connection

@@ -25,6 +25,7 @@ Generate a simple INI-format inventory file.
 
 ```hcl
 # main.tf
+
 resource "aws_instance" "web" {
   count         = 3
   ami           = "ami-0c55b159cbfafe1f0"

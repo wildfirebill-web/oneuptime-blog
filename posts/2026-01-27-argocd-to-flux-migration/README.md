@@ -77,6 +77,7 @@ graph LR
 
 ```yaml
 # ArgoCD Application maps to multiple Flux resources:
+
 #
 # ArgoCD                    -> Flux
 # -------                      ----

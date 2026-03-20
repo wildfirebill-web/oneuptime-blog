@@ -264,6 +264,7 @@ In your Dockerfile:
 
 ```dockerfile
 # syntax=docker/dockerfile:1
+
 FROM node:20
 RUN --mount=type=secret,id=npm_token \
     NPM_TOKEN=$(cat /run/secrets/npm_token) npm ci

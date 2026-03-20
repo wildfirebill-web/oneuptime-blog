@@ -8,7 +8,7 @@ Description: Learn how to debug gRPC connection issues on IPv4 networks using gr
 
 ## Quick Checklist
 
-```
+```bash
 1. Can you reach the server IP and port? (ping, telnet, nc)
 2. Is the server actually listening on that port? (ss, netstat)
 3. Is TLS configured correctly on both sides?
@@ -22,6 +22,7 @@ Description: Learn how to debug gRPC connection issues on IPv4 networks using gr
 
 ```bash
 # Install
+
 go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
 
 # List available services (requires server-side reflection)
@@ -134,4 +135,4 @@ openssl s_client -connect 192.168.1.10:50051 </dev/null 2>&1 | \
 
 ## Conclusion
 
-`grpcurl` should be your first tool — it tests the entire gRPC stack including reflection, TLS, and method dispatch. Enable server-side reflection in development so you can introspect live services. Use interceptors for per-call logging without cluttering business logic. `tcpdump` + Wireshark reveals TLS and HTTP/2 framing issues invisible at the gRPC level. Most connectivity issues come down to the server binding to the wrong address, a firewall rule, or expired certificates.
+`grpcurl` should be your first tool - it tests the entire gRPC stack including reflection, TLS, and method dispatch. Enable server-side reflection in development so you can introspect live services. Use interceptors for per-call logging without cluttering business logic. `tcpdump` + Wireshark reveals TLS and HTTP/2 framing issues invisible at the gRPC level. Most connectivity issues come down to the server binding to the wrong address, a firewall rule, or expired certificates.

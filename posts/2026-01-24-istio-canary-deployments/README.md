@@ -149,6 +149,7 @@ As confidence grows, shift more traffic to the canary:
 
 ```yaml
 # Week 1: 10% canary
+
 - destination:
     host: reviews
     subset: v1

@@ -49,6 +49,7 @@ Start by removing all Datadog-related Python packages from your project:
 
 ```bash
 # Remove the Datadog tracing library and its extensions
+
 pip uninstall ddtrace
 
 # Remove the Datadog API client if you used it for custom metrics

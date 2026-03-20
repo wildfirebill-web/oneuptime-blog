@@ -220,6 +220,7 @@ Monitor the v2 model's performance before increasing traffic:
 
 ```bash
 # Compare error rates between versions
+
 # In Prometheus:
 # sum(rate(istio_requests_total{destination_service="model-server", response_code=~"5.*"}[5m])) by (destination_version) /
 # sum(rate(istio_requests_total{destination_service="model-server"}[5m])) by (destination_version)

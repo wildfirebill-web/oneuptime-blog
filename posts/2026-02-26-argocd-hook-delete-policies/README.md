@@ -95,6 +95,7 @@ If you do not specify a hook delete policy, the hook resource is never automatic
 
 ```yaml
 # No delete policy - hook resources accumulate
+
 apiVersion: batch/v1
 kind: Job
 metadata:

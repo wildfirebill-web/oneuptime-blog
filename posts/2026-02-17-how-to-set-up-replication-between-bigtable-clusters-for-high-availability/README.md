@@ -37,6 +37,7 @@ Create a new instance with two clusters from the start:
 
 ```bash
 # Create an instance with two clusters in different zones
+
 # This gives you high availability from day one
 gcloud bigtable instances create my-ha-instance \
   --display-name="HA Instance" \

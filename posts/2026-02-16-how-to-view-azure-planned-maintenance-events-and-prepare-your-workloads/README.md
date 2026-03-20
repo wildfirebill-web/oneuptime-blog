@@ -37,6 +37,7 @@ You can also pull planned maintenance events programmatically:
 
 ```bash
 # Query Service Health events filtered to planned maintenance
+
 # The eventType filter narrows results to maintenance events only
 az rest --method get \
   --url "https://management.azure.com/subscriptions/<sub-id>/providers/Microsoft.ResourceHealth/events?api-version=2022-10-01&\$filter=eventType eq 'PlannedMaintenance'" \

@@ -12,7 +12,7 @@ PRTG Network Monitor supports IPv6 for device discovery, SNMP monitoring, and pi
 
 ## PRTG IPv6 Prerequisites
 
-```
+```text
 Requirements:
 - PRTG server needs an IPv6 address (or IPv6 connectivity)
 - Windows with IPv6 enabled (Control Panel > Network Adapters > IPv6)
@@ -26,7 +26,7 @@ Check: "IPv6 available" shows Yes
 
 ## Adding IPv6 Devices to PRTG
 
-```
+```text
 Method 1: Add by IPv6 Address
 1. Devices > Add Device
 2. IP Address/DNS Name: 2001:db8::router1
@@ -42,7 +42,7 @@ Method 2: Add by Hostname (AAAA record)
 
 ## IPv6 Ping Sensor Configuration
 
-```
+```sql
 Add Ping Sensor to IPv6 Device:
 1. Right-click device > Add Sensor
 2. Search for "Ping"
@@ -59,7 +59,7 @@ For explicit IPv6 ping:
 
 ## SNMP Sensors over IPv6
 
-```
+```sql
 SNMP Traffic Sensor for IPv6 Interface:
 1. Device > Add Sensor > SNMP Traffic
 2. Device: 2001:db8::switch1
@@ -74,7 +74,7 @@ for devices with IPv6 addresses
 
 ## PRTG Auto-Discovery for IPv6
 
-```
+```text
 Configure IPv6 Auto-Discovery:
 1. Group > Add Group > Auto-Discovery
 2. IP Range: 2001:db8:0:0::/64
@@ -106,7 +106,7 @@ Channel Name: IPv6 Packets Transmitted
 
 ## PRTG Notifications for IPv6 Devices
 
-```
+```text
 Configure alerts for IPv6 device issues:
 1. Setup > Notifications > Add Notification
 2. Trigger: Sensor goes Down
@@ -120,7 +120,7 @@ Tag all IPv6 devices:
 
 ## PRTG Remote Probe on IPv6 Network
 
-```
+```text
 For monitoring remote IPv6 network segments:
 1. Install PRTG Remote Probe on IPv6 segment
 2. Probe connects to PRTG Core Server
@@ -135,7 +135,7 @@ Remote Probe is particularly useful for:
 
 ## Troubleshooting PRTG IPv6 Issues
 
-```
+```text
 Common issues:
 1. "Unable to ping device" for IPv6 address
    - Verify PRTG server has IPv6 connectivity

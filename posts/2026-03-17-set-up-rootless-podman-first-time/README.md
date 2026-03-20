@@ -20,6 +20,7 @@ Ensure your system meets the requirements:
 
 ```bash
 # Check your Linux kernel version (4.18+ recommended)
+
 uname -r
 
 # Verify user namespace support is enabled

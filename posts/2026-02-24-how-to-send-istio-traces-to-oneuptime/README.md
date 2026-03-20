@@ -52,6 +52,7 @@ Apply this configuration:
 istioctl install -f istio-tracing-config.yaml -y
 
 # Restart workloads to pick up the new proxy config
+
 kubectl rollout restart deployment -n default
 ```
 

@@ -45,6 +45,7 @@ Apply the Job and monitor its progress. The Job controller creates a Pod and tra
 
 ```bash
 # Create the Job - Kubernetes will immediately start the migration Pod
+
 kubectl apply -f jobs/db-migrate.yaml
 
 # Check Job status - look for COMPLETIONS column (e.g., "1/1")

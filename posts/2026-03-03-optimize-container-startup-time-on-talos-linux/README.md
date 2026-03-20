@@ -33,6 +33,7 @@ The difference between a full Ubuntu image and a minimal base image is dramatic:
 
 ```dockerfile
 # Bad: 500MB+ image
+
 FROM ubuntu:22.04
 RUN apt-get update && apt-get install -y python3
 COPY app.py /app/

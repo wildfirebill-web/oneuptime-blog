@@ -263,6 +263,7 @@ Track schema compliance over time:
 
 ```promql
 # Overall schema compliance rate
+
 sum(rate(api_schema_valid_requests_total[1h]))
 /
 (sum(rate(api_schema_valid_requests_total[1h])) + sum(rate(api_schema_violations_total[1h])))

@@ -30,6 +30,7 @@ The Root CA should be created on an offline system and never connected to a netw
 
 ```bash
 # Create directory structure for the Root CA
+
 mkdir -p /opt/root-ca/{certs,crl,newcerts,private}
 chmod 700 /opt/root-ca/private
 touch /opt/root-ca/index.txt

@@ -10,6 +10,7 @@ Description: Configure Node.js gRPC servers and clients using @grpc/grpc-js to l
 
 ```bash
 # Install gRPC for Node.js
+
 npm install @grpc/grpc-js @grpc/proto-loader
 
 # Verify installation
@@ -50,7 +51,7 @@ function main() {
 
     server.addService(helloProto.Greeter.service, { sayHello });
 
-    // Bind to all IPv6 interfaces — use [::]:port format
+    // Bind to all IPv6 interfaces - use [::]:port format
     // 0.0.0.0:50051 would be IPv4-only on many systems
     const bindAddress = '[::]:50051';
 
@@ -90,7 +91,7 @@ const packageDefinition = protoLoader.loadSync(PROTO_PATH, {
 
 const helloProto = grpc.loadPackageDefinition(packageDefinition).helloworld;
 
-// Connect to IPv6 gRPC server — square brackets required
+// Connect to IPv6 gRPC server - square brackets required
 const target = '[2001:db8::1]:50051';
 
 const client = new helloProto.Greeter(
@@ -132,7 +133,7 @@ server.bindAsync('[::]:443', credentials, (error, port) => {
     }
 });
 
-// client-tls.js — connect to IPv6 with TLS
+// client-tls.js - connect to IPv6 with TLS
 const clientCreds = grpc.credentials.createSsl(
     fs.readFileSync('ca.crt')
 );

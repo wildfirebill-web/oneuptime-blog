@@ -44,6 +44,7 @@ Check the latest supported types with:
 
 ```bash
 # List instance types that support EFA
+
 aws ec2 describe-instance-types \
   --filters "Name=network-info.efa-supported,Values=true" \
   --query 'InstanceTypes[].InstanceType' \

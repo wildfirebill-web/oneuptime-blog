@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Crossplane, IPv6, Subnet, AWS, GCP
+Tags: Crossplane, IPv6, Subnets, AWS, GCP
 
 Description: Provision IPv6 subnets and assign IPv6 CIDR blocks to VPC subnets using Crossplane managed resources.
 
@@ -24,6 +24,7 @@ Crossplane manages cloud infrastructure as Kubernetes custom resources. For IPv6
 
 ```yaml
 # vpc-ipv6.yaml
+
 apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: VPC
 metadata:

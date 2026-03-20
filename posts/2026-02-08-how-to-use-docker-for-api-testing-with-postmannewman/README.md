@@ -105,6 +105,7 @@ The official Newman Docker image includes everything needed. Mount your collecti
 
 ```bash
 # Run a Postman collection with Newman in Docker
+
 docker run --rm \
   -v "$(pwd):/etc/newman" \
   postman/newman:6-alpine \

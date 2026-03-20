@@ -72,6 +72,7 @@ error code: 409
 
 ```bash
 # Check current compatibility level
+
 curl -X GET http://schema-registry:8081/config/orders-value
 
 # Get existing schema

@@ -140,6 +140,7 @@ void sigchld_handler(int s) {
 
 ```bash
 # Compile the server
+
 gcc -o server server.c
 
 # Start the server

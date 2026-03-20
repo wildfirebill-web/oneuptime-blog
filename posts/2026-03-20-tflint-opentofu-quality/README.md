@@ -20,6 +20,7 @@ Learn how to configure TFLint to enforce best practices and catch provider-speci
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

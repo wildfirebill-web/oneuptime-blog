@@ -16,6 +16,7 @@ The `async_status` module queries the status of an async task using its job ID. 
 
 ```yaml
 # basic-async-status.yml - Launch and wait for a single task
+
 ---
 - name: Run and wait for async task
   hosts: all

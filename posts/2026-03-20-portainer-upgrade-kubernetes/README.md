@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, upgrade, kubernetes, helm, update
+Tags: Portainer, Upgrade, Kubernetes, Helm, Updates
 
 Description: A guide to upgrading Portainer CE deployed on Kubernetes using Helm and kubectl, covering data preservation and rollback procedures.
 
@@ -16,6 +16,7 @@ If Portainer was installed with Helm:
 
 ```bash
 # Check current Portainer Helm release
+
 helm list -n portainer
 
 # Update Helm repository

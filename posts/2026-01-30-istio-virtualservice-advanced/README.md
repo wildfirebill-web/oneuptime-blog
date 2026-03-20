@@ -498,6 +498,7 @@ spec:
 
 ```yaml
 # Day 1: 5% canary
+
 weight: 95 / 5
 
 # Day 2: 25% canary

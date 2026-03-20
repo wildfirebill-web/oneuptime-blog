@@ -24,6 +24,7 @@ Create a new AKS cluster with overlay networking:
 
 ```bash
 # Create resource group
+
 az group create \
   --name production-rg \
   --location eastus

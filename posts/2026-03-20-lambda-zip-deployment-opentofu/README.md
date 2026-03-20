@@ -20,6 +20,7 @@ AWS Lambda executes code in response to events without managing servers. ZIP dep
 
 ```hcl
 # Package the Python function code into a ZIP archive
+
 data "archive_file" "lambda_zip" {
   type        = "zip"
   source_dir  = "${path.module}/src"

@@ -19,6 +19,7 @@ A DHCP scope defines the pool of IPv4 addresses a Windows DHCP server can assign
 
 ```powershell
 # Install DHCP Server role
+
 Install-WindowsFeature DHCP -IncludeManagementTools
 
 # Authorize the DHCP server in Active Directory

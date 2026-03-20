@@ -99,6 +99,7 @@ spec:
 
 ```yaml
 # Source definition
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

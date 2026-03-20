@@ -30,13 +30,14 @@ The script should be idempotent, resumable, and platform-aware.
 
 Create a comprehensive setup script:
 
-```bash
+````bash
 #!/bin/bash
 # onboard-developer.sh
 
 set -e
 
 # Colors for output
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -359,7 +360,7 @@ generate_documentation() {
 
 ## Quick Commands
 
-\`\`\`bash
+```bash
 # View your pods
 kubectl get pods
 
@@ -377,26 +378,26 @@ kubectl logs <pod-name>
 
 # Describe resources
 kubectl describe pod <pod-name>
-\`\`\`
+```
 
 ## Common Tasks
 
 ### Deploy an application
-\`\`\`bash
+```bash
 cd ~/workspace/myapp
 kubectl apply -f k8s/
-\`\`\`
+```
 
 ### Access cluster services
-\`\`\`bash
+```bash
 # Port forward to a service
 kubectl port-forward svc/myapp 8080:80
-\`\`\`
+```
 
 ### View cluster dashboard
-\`\`\`bash
+```bash
 k9s
-\`\`\`
+```
 
 ## Resources
 
@@ -446,7 +447,7 @@ EOF
 
 # Run main function
 main
-```
+````
 
 Make it executable:
 

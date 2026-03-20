@@ -39,6 +39,7 @@ SSH is strict about key file permissions. If your private key is readable by oth
 
 ```bash
 # Set the correct permissions on your key file - owner read only
+
 chmod 400 ~/path/to/your-key.pem
 ```
 

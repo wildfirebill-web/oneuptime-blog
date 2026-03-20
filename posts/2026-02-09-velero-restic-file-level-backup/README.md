@@ -38,6 +38,7 @@ Verify the node-agent pods are running:
 kubectl get pods -n velero -l name=node-agent
 
 # Should show one pod per node
+
 kubectl get daemonset -n velero node-agent
 ```
 

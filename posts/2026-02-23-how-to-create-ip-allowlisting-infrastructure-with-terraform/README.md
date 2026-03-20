@@ -24,6 +24,7 @@ Start with a variable that holds all trusted IP addresses:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

@@ -52,6 +52,7 @@ OpenTelemetry uses semantic conventions for database spans:
 
 ```bash
 # Install required packages
+
 npm install @opentelemetry/instrumentation-pg pg
 ```
 

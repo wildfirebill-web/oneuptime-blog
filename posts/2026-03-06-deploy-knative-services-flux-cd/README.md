@@ -27,6 +27,7 @@ Deploy Knative Serving and Eventing using Flux:
 
 ```yaml
 # infrastructure/knative/serving-source.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

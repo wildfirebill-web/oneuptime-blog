@@ -33,6 +33,7 @@ from vertexai.generative_models import (
 )
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Create a grounding tool with Google Search

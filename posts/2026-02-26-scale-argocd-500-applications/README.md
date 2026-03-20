@@ -30,6 +30,7 @@ Switch from the standard installation to the HA manifests.
 
 ```bash
 # Install ArgoCD HA
+
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/ha/install.yaml
 ```

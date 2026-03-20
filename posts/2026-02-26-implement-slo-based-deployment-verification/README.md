@@ -40,6 +40,7 @@ Your services need to expose metrics that Prometheus scrapes. The standard appro
 
 ```yaml
 # ServiceMonitor for Prometheus scraping
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

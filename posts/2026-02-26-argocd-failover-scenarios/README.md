@@ -42,6 +42,7 @@ flowchart TD
 
 ```bash
 # Verify automatic recovery
+
 kubectl get pods -n argocd -w
 
 # Check that the new pod is ready

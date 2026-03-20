@@ -86,6 +86,7 @@ my-project/
 
 ```ini
 # ansible.cfg
+
 [defaults]
 callback_plugins = ./callback_plugins
 stdout_callback = my_callback

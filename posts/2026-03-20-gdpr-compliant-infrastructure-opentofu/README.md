@@ -25,15 +25,16 @@ graph TD
 ## Data Residency Enforcement
 
 ```hcl
-# providers.tf — enforce EU region for personal data
+# providers.tf - enforce EU region for personal data
+
 provider "aws" {
   alias  = "eu"
-  region = "eu-west-1"  # Ireland — EU region
+  region = "eu-west-1"  # Ireland - EU region
 }
 
 provider "aws" {
   alias  = "eu_backup"
-  region = "eu-central-1"  # Frankfurt — EU region for backups
+  region = "eu-central-1"  # Frankfurt - EU region for backups
 }
 
 # Prevent accidental deployment to non-EU regions
@@ -60,7 +61,7 @@ variable "aws_region" {
 # gdpr_encryption.tf
 resource "aws_kms_key" "personal_data" {
   provider                = aws.eu
-  description             = "KMS key for personal data — GDPR Art. 32"
+  description             = "KMS key for personal data - GDPR Art. 32"
   deletion_window_in_days = 30
   enable_key_rotation     = true
 
@@ -97,7 +98,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "personal_data" {
 ## Data Retention Lifecycle
 
 ```hcl
-# gdpr_lifecycle.tf — automated data deletion (Art. 5, 17)
+# gdpr_lifecycle.tf - automated data deletion (Art. 5, 17)
 resource "aws_s3_bucket_lifecycle_configuration" "personal_data" {
   bucket = aws_s3_bucket.personal_data.id
 
@@ -150,7 +151,7 @@ resource "aws_dynamodb_table" "sessions" {
 ## Access Audit Logging
 
 ```hcl
-# gdpr_audit.tf — maintain records of processing (Art. 30)
+# gdpr_audit.tf - maintain records of processing (Art. 30)
 resource "aws_s3_bucket" "gdpr_audit_logs" {
   provider = aws.eu
   bucket   = "${var.company}-gdpr-audit-logs"
@@ -196,8 +197,8 @@ resource "aws_lambda_function" "erasure_handler" {
 
 ## Best Practices
 
-- Enforce EU regions through variable validation — GDPR data transfers outside the EU require additional legal basis (Standard Contractual Clauses or adequacy decisions).
-- Use S3 lifecycle policies and DynamoDB TTL for automated personal data expiry — manual deletion is error-prone.
-- Tag all resources containing personal data with `GDPR = "true"` and `DataCategory` — this enables targeted audits.
-- Log all access to personal data via CloudTrail data events — Article 30 requires records of processing activities.
-- Build erasure APIs that delete personal data from all storage systems: databases, S3, caches, backups — right to erasure applies to all copies.
+- Enforce EU regions through variable validation - GDPR data transfers outside the EU require additional legal basis (Standard Contractual Clauses or adequacy decisions).
+- Use S3 lifecycle policies and DynamoDB TTL for automated personal data expiry - manual deletion is error-prone.
+- Tag all resources containing personal data with `GDPR = "true"` and `DataCategory` - this enables targeted audits.
+- Log all access to personal data via CloudTrail data events - Article 30 requires records of processing activities.
+- Build erasure APIs that delete personal data from all storage systems: databases, S3, caches, backups - right to erasure applies to all copies.

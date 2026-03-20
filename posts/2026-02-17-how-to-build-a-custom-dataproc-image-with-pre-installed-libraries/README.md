@@ -28,6 +28,7 @@ You need the `generate_custom_image.py` script from Google's Dataproc custom ima
 
 ```bash
 # Clone the Dataproc custom images tool
+
 git clone https://github.com/GoogleCloudDataproc/custom-images.git
 cd custom-images
 

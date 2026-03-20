@@ -343,6 +343,7 @@ The following Python implementation demonstrates the claim check pattern using M
 
 ```python
 # Claim check pattern implementation using MinIO for external storage
+
 # Stores large payloads externally and sends references through RabbitMQ
 
 import json

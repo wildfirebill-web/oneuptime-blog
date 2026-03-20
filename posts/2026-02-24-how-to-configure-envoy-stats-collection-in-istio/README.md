@@ -121,6 +121,7 @@ Query examples:
 
 ```promql
 # Active connections per upstream cluster
+
 envoy_cluster_upstream_cx_active
 
 # Connection failures

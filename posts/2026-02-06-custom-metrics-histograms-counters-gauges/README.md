@@ -42,6 +42,7 @@ Start by installing the required packages and configuring the metrics pipeline:
 
 ```bash
 # Install the OpenTelemetry metrics SDK and OTLP exporter
+
 pip install opentelemetry-api \
             opentelemetry-sdk \
             opentelemetry-exporter-otlp-proto-grpc

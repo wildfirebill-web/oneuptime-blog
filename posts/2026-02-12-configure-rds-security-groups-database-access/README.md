@@ -37,6 +37,7 @@ These commands create the security groups and configure access from the app tier
 
 ```bash
 # Create security group for the application
+
 APP_SG=$(aws ec2 create-security-group \
   --group-name app-sg \
   --description "Application servers" \

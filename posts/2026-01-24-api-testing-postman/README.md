@@ -377,6 +377,7 @@ Newman is Postman's command-line runner for automated testing.
 
 ```bash
 # Install Newman
+
 npm install -g newman
 
 # Run a collection

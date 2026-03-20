@@ -31,6 +31,7 @@ Connection stalls happen when the parser requests more data than will ever arriv
 
 ```bash
 # Check for connections stuck in the proxy
+
 kubectl exec -n kube-system ds/cilium -- cilium bpf proxy list
 
 # Check Envoy proxy stats for timeouts

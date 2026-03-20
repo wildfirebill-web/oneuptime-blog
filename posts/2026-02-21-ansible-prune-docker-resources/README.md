@@ -31,6 +31,7 @@ The `community.docker` collection includes a `docker_prune` module that wraps Do
 
 ```yaml
 # prune_all.yml - Clean up all unused Docker resources
+
 ---
 - name: Prune All Docker Resources
   hosts: docker_hosts

@@ -1,4 +1,4 @@
-# How to Configure NeuVector Custom Compliance Checks
+# How to Configure NeuVector Custom Compliance Checks - Checks
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -32,6 +32,7 @@ A minimal compliance check script:
 ```bash
 #!/bin/bash
 # check-no-secrets-in-env.sh
+
 # Checks that no passwords or secrets are exposed as environment variables
 
 FAILED=0

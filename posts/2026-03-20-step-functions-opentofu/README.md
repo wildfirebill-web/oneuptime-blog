@@ -29,6 +29,7 @@ stateDiagram-v2
 
 ```hcl
 # iam.tf
+
 resource "aws_iam_role" "step_functions" {
   name = "${var.state_machine_name}-execution-role"
 
@@ -216,7 +217,7 @@ resource "aws_cloudwatch_log_group" "sfn_express" {
 ## Best Practices
 
 - Use Standard workflows for business-critical processes that need exactly-once execution and execution history.
-- Use Express workflows for high-throughput data pipelines — they're 10x cheaper but are at-least-once.
-- Always configure `Retry` on Lambda task states — Lambda can throttle under load.
+- Use Express workflows for high-throughput data pipelines - they're 10x cheaper but are at-least-once.
+- Always configure `Retry` on Lambda task states - Lambda can throttle under load.
 - Enable `include_execution_data = true` for Standard workflows to debug failures from the CloudWatch console.
-- Define error handling with `Catch` blocks at each task state rather than a single top-level catch — granular error handling produces better diagnostics.
+- Define error handling with `Catch` blocks at each task state rather than a single top-level catch - granular error handling produces better diagnostics.

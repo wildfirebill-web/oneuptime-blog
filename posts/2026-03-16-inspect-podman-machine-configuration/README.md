@@ -20,6 +20,7 @@ The `podman machine inspect` command provides detailed configuration information
 
 ```bash
 # Inspect the default machine
+
 podman machine inspect
 
 # Inspect a specific machine by name

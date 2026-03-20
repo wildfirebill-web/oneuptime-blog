@@ -18,6 +18,7 @@ Let's start with a user pool that uses email as the sign-in method:
 
 ```hcl
 # Cognito User Pool
+
 resource "aws_cognito_user_pool" "main" {
   name = "myapp-users"
 
@@ -343,7 +344,7 @@ Common use cases for triggers:
 
 For setting up the Lambda functions, see our post on [creating Lambda functions with Terraform](https://oneuptime.com/blog/post/2026-02-12-create-lambda-functions-with-terraform/view).
 
-## Resource Server (Custom Scopes)
+Resource Server (Custom Scopes)
 
 If your API needs custom OAuth scopes, define a resource server:
 

@@ -31,6 +31,7 @@ For most Ubuntu server workloads, containers are sufficient and much more effici
 
 ```bash
 # Install LXD via snap (the recommended method)
+
 sudo snap install lxd
 
 # Add your user to the lxd group

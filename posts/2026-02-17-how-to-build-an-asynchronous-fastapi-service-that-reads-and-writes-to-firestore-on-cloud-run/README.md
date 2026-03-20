@@ -20,6 +20,7 @@ Install the required packages.
 
 ```bash
 # Install FastAPI, Uvicorn, and the Firestore async client
+
 pip install fastapi uvicorn google-cloud-firestore
 ```
 

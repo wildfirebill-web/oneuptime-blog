@@ -185,6 +185,7 @@ Each production cluster must manage its own encryption keys. Use SOPS with age f
 
 ```bash
 # Generate a unique key per cluster
+
 age-keygen -o production-us-east.agekey
 
 # Store the key as a Kubernetes secret

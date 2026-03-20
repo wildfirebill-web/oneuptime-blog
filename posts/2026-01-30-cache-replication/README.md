@@ -96,6 +96,7 @@ Create a Docker Compose file that defines the primary and replica services with 
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

@@ -33,6 +33,7 @@ PCI DSS requires network segmentation to isolate the Cardholder Data Environment
 
 ```yaml
 # cde-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -35,6 +35,7 @@ In Grafana Cloud, OnCall is available by default. For self-hosted Grafana, you c
 
 ```bash
 # Using Docker Compose
+
 git clone https://github.com/grafana/oncall.git
 cd oncall
 docker compose up -d
@@ -286,6 +287,7 @@ Environment: {{ .CommonLabels.environment }}
 Summary: {{ .CommonAnnotations.summary }}
 {{ if .CommonAnnotations.description }}
 Description: {{ .CommonAnnotations.description }}
+
 {{ end }}
 
 {{ if .CommonAnnotations.runbook_url }}

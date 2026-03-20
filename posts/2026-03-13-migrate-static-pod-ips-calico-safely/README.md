@@ -29,6 +29,7 @@ Document all pods and services that currently rely on static IP addresses.
 
 ```bash
 # Find pods with existing Calico IP annotations
+
 kubectl get pods --all-namespaces -o jsonpath='{range .items[?(@.metadata.annotations.cni\.projectcalico\.org/ipAddrs)]}{.metadata.namespace}/{.metadata.name}{": "}{.metadata.annotations.cni\.projectcalico\.org/ipAddrs}{"\n"}{end}'
 
 # Find pods with nodeSelector that co-locate them with specific nodes for IP stability

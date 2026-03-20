@@ -54,6 +54,7 @@ Write `/config/configuration.yml` into the `authelia_config` volume before start
 
 ```yaml
 # /config/configuration.yml
+
 jwt_secret: a_very_long_random_secret_here   # Change this
 
 default_redirection_url: https://auth.example.com

@@ -16,6 +16,7 @@ Start with the basics:
 
 ```bash
 # Overview of memory and swap
+
 free -h
 ```
 

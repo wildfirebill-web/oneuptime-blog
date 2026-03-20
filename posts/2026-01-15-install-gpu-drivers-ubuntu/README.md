@@ -20,6 +20,7 @@ The most reliable way to identify your GPU is using the `lspci` command:
 
 ```bash
 # List all PCI devices and filter for VGA/3D controllers
+
 # The -nn flag shows both the text name and numeric IDs
 lspci -nn | grep -E "VGA|3D|Display"
 

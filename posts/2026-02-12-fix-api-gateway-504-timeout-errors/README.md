@@ -29,6 +29,7 @@ Check your current timeout setting:
 
 ```bash
 # For REST APIs - check the integration timeout
+
 aws apigateway get-integration \
   --rest-api-id abc123 \
   --resource-id xyz789 \

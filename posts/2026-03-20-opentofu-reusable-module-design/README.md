@@ -1,26 +1,26 @@
----
-title: "Designing Reusable Modules in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, best-practices
-description: "Learn best practices for designing reusable, composable OpenTofu modules that work across multiple environments and use cases."
----
-
 # Designing Reusable Modules in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Best-practices
+
+Description: Learn best practices for designing reusable, composable OpenTofu modules that work across multiple environments and use cases.
 
 A well-designed module is flexible enough to serve multiple use cases without being so abstract that it becomes hard to understand. This guide covers the principles and patterns for creating truly reusable OpenTofu modules.
 
 ## Core Principles of Reusable Modules
 
-1. **Single responsibility** — Each module should do one thing well
-2. **Configurable defaults** — Sensible defaults with override capability
-3. **Minimal assumptions** — Don't hardcode environment-specific values
-4. **Clear interfaces** — Well-documented inputs and outputs
-5. **Version stability** — Semantic versioning with backward compatibility
+1. **Single responsibility** - Each module should do one thing well
+2. **Configurable defaults** - Sensible defaults with override capability
+3. **Minimal assumptions** - Don't hardcode environment-specific values
+4. **Clear interfaces** - Well-documented inputs and outputs
+5. **Version stability** - Semantic versioning with backward compatibility
 
 ## Variable Design Patterns
 
 ```hcl
 # Bad: too rigid
+
 variable "instance_type" {
   default = "t3.medium"  # Hardcoded assumption
 }
@@ -92,7 +92,7 @@ resource "aws_cloudwatch_metric_alarm" "cpu" {
 ## Composable Outputs
 
 ```hcl
-# outputs.tf — expose everything callers might need
+# outputs.tf - expose everything callers might need
 output "id" {
   description = "ID of the created resource"
   value       = aws_instance.app.id
@@ -109,7 +109,7 @@ output "private_ip" {
 }
 
 output "security_group_id" {
-  description = "ID of the security group — useful for granting access from other modules"
+  description = "ID of the security group - useful for granting access from other modules"
   value       = aws_security_group.app.id
 }
 

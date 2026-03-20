@@ -380,6 +380,7 @@ In Grafana, configure Loki to link to Tempo traces:
 
 ```yaml
 # Grafana datasources
+
 datasources:
   - name: Loki
     type: loki

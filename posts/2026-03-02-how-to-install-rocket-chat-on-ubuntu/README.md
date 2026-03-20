@@ -24,6 +24,7 @@ This guide covers installation using Docker Compose, which is the most reliable 
 
 ```bash
 # Update package list and install prerequisites
+
 sudo apt update && sudo apt install -y ca-certificates curl gnupg
 
 # Add Docker's GPG key

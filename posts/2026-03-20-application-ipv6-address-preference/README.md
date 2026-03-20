@@ -20,8 +20,9 @@ System-level policy (`/etc/gai.conf`, `netsh`) affects all applications. But ind
 import socket
 
 # Force IPv6 only
+
 def connect_ipv6_only(host: str, port: int):
-    # AF_INET6 explicitly — fails if no AAAA record
+    # AF_INET6 explicitly - fails if no AAAA record
     results = socket.getaddrinfo(
         host, port,
         family=socket.AF_INET6,

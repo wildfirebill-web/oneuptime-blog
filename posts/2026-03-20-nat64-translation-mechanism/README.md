@@ -50,7 +50,7 @@ sequenceDiagram
 
 The NAT64 gateway maintains a stateful binding table with entries like:
 
-```
+```text
 Protocol  IPv6 Src            IPv6 Dst               IPv4 Src      IPv4 Dst       Timeout
 TCP       2001:db8::1:5000    64:ff9b::5db8:d822:80  203.0.113.5   93.184.216.34  7200s
 UDP       2001:db8::2:1234    64:ff9b::808:808:53    203.0.113.5   8.8.8.8        300s
@@ -72,7 +72,7 @@ Organizations can use their own prefix instead of `64:ff9b::/96`. RFC 6052 defin
 
 Example with a custom /48 prefix:
 
-```
+```text
 NAT64 prefix: 2001:db8:cafe::/48
 IPv4: 192.0.2.1 → 2001:db8:cafe::c000:0201
 ```

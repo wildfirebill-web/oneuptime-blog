@@ -62,6 +62,7 @@ Start with a simple webhook sender:
 
 ```python
 # locustfile.py - Basic webhook implementation
+
 from locust import HttpUser, task, between, events
 import requests
 import json

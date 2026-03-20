@@ -20,6 +20,7 @@ Create the aliases file:
 
 ```bash
 # Create a dedicated file for Docker aliases
+
 touch ~/.docker_aliases
 ```
 

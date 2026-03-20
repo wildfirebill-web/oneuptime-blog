@@ -22,6 +22,7 @@ The generator plugin ships with Ansible but is not enabled by default. You need 
 
 ```ini
 # ansible.cfg
+
 [inventory]
 # Enable the generator plugin alongside the default ones
 enable_plugins = ansible.builtin.generator, ansible.builtin.yaml, ansible.builtin.ini

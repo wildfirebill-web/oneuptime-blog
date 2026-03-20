@@ -18,6 +18,7 @@ Start by getting a complete picture of all service accounts across your organiza
 
 ```bash
 # List all service accounts in a specific project
+
 gcloud iam service-accounts list \
     --project=my-project \
     --format="table(email,displayName,disabled)"

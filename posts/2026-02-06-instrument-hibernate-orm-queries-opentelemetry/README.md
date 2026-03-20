@@ -65,6 +65,7 @@ Configure your application.properties to enable OpenTelemetry JDBC tracing:
 
 ```properties
 # Database configuration with OpenTelemetry JDBC wrapper
+
 spring.datasource.url=jdbc:otel:postgresql://localhost:5432/mydb
 spring.datasource.username=myuser
 spring.datasource.password=mypassword

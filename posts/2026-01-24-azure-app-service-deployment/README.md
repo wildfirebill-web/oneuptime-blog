@@ -41,6 +41,7 @@ Set up a Git remote directly to App Service for simple push-to-deploy workflows.
 
 ```bash
 # Enable local git deployment
+
 az webapp deployment source config-local-git \
   --name myapp \
   --resource-group mygroup

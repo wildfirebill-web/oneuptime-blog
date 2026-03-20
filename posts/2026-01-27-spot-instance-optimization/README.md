@@ -33,6 +33,7 @@ Use cloud provider CLIs to check current spot prices before provisioning. This h
 
 ```bash
 # AWS: Check spot price history for m5.large in us-east-1
+
 # The --start-time flag limits results to recent data
 aws ec2 describe-spot-price-history \
   --instance-types m5.large m5a.large m5d.large \

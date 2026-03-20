@@ -20,6 +20,7 @@ Start by understanding what permissions your Flux controllers currently have:
 
 ```bash
 # List all ClusterRoleBindings for Flux controllers
+
 kubectl get clusterrolebindings -o json | jq -r '.items[] | select(.subjects[]?.namespace=="flux-system") | .metadata.name + " -> " + .roleRef.name'
 
 # Check the permissions of the kustomize-controller

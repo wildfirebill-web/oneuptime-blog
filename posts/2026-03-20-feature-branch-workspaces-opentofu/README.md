@@ -16,6 +16,7 @@ Each workspace has its own state file, so `tofu apply` in the `feature-login` wo
 
 ```bash
 # Create a workspace for a feature branch
+
 tofu workspace new feature-user-auth
 
 # Switch to an existing workspace
@@ -93,7 +94,7 @@ variable "workspace_configs" {
       desired_count  = 2
       retention_days = 90
     }
-    # Feature branch workspaces — use smallest viable resources
+    # Feature branch workspaces - use smallest viable resources
     feature = {
       instance_type  = "t3.micro"
       desired_count  = 1
@@ -159,8 +160,8 @@ jobs:
 
 ## Best Practices
 
-- Use workspace names that match your branch naming convention — `feature-<ticket-number>` is a good pattern.
-- Always size down resources in feature workspaces to reduce costs — full production capacity isn't needed for testing.
+- Use workspace names that match your branch naming convention - `feature-<ticket-number>` is a good pattern.
+- Always size down resources in feature workspaces to reduce costs - full production capacity isn't needed for testing.
 - Automate cleanup: destroy workspaces when PRs are merged or closed to avoid orphaned resources.
 - Set cost budgets for workspace resources to prevent accidentally large deployments on feature branches.
 - Use `terraform.workspace` to add the workspace name to all resource names and tags for easy identification and cleanup.

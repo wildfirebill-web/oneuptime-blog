@@ -30,6 +30,7 @@ A `*` in any field means "every valid value for this field."
 
 ```bash
 # Run at midnight every day
+
 0 0 * * * /usr/local/bin/daily-backup.sh
 
 # Run at 2:30 AM every day

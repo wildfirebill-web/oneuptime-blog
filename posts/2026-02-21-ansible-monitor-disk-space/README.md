@@ -31,6 +31,7 @@ graph TD
 
 ```yaml
 # group_vars/all.yml
+
 # Disk usage thresholds (percentage)
 disk_warning_threshold: 80
 disk_critical_threshold: 90

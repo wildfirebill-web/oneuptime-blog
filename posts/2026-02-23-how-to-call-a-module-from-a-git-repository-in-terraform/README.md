@@ -22,6 +22,7 @@ The generic format works with any Git hosting provider:
 
 ```hcl
 # HTTPS URL with the git:: prefix
+
 module "vpc" {
   source = "git::https://github.com/myorg/terraform-modules.git//modules/vpc"
 

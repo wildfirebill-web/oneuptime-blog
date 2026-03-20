@@ -97,6 +97,7 @@ Determine appropriate overhead values by measuring actual runtime consumption:
 
 ```bash
 # Deploy a test pod with the runtime
+
 kubectl apply -f - <<EOF
 apiVersion: v1
 kind: Pod

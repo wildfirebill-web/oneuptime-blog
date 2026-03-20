@@ -31,6 +31,7 @@ Here is a straightforward Deployment creation:
 
 ```yaml
 # basic_deployment.yml - Create a simple Kubernetes Deployment
+
 ---
 - name: Deploy Application to Kubernetes
   hosts: localhost

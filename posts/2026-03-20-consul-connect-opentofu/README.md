@@ -26,6 +26,7 @@ graph TB
 
 ```hcl
 # consul.tf
+
 resource "helm_release" "consul" {
   name             = "consul"
   repository       = "https://helm.releases.hashicorp.com"
@@ -111,7 +112,7 @@ resource "kubernetes_namespace" "apps" {
 ## Service Intentions (Authorization)
 
 ```hcl
-# intentions.tf — define which services can talk to each other
+# intentions.tf - define which services can talk to each other
 resource "kubernetes_manifest" "allow_api_to_db" {
   manifest = {
     apiVersion = "consul.hashicorp.com/v1alpha1"
@@ -175,8 +176,8 @@ resource "kubernetes_manifest" "api_service_defaults" {
 
 ## Best Practices
 
-- Enable ACLs (`manageSystemACLs = true`) from the start — retrofitting ACLs on an existing Consul cluster is complex.
-- Use Service Intentions with a default-deny posture — define explicit `allow` intentions rather than relying on default-allow.
+- Enable ACLs (`manageSystemACLs = true`) from the start - retrofitting ACLs on an existing Consul cluster is complex.
+- Use Service Intentions with a default-deny posture - define explicit `allow` intentions rather than relying on default-allow.
 - Enable transparent proxy (`defaultEnabled = true`) so services communicate through Consul Connect automatically without application code changes.
 - Deploy an odd number of Consul servers (3 or 5) to maintain Raft quorum if a server fails.
-- Use gossip encryption and TLS from day one — rotating these credentials after initial deployment requires cluster downtime.
+- Use gossip encryption and TLS from day one - rotating these credentials after initial deployment requires cluster downtime.

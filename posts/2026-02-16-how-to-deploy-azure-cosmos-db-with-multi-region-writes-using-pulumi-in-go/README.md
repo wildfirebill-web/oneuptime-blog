@@ -18,6 +18,7 @@ Start by creating a new Pulumi project.
 
 ```bash
 # Create a new Pulumi project with Go
+
 mkdir cosmos-multi-region && cd cosmos-multi-region
 pulumi new azure-go --name cosmos-multi-region
 

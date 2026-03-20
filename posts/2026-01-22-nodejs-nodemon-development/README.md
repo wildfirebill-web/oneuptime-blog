@@ -14,6 +14,7 @@ Nodemon is a utility that monitors your Node.js application for changes and auto
 
 ```bash
 # Global installation
+
 npm install -g nodemon
 
 # Local development dependency (recommended)

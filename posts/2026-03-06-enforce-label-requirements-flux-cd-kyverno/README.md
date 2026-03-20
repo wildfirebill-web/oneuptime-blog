@@ -36,6 +36,7 @@ Labels serve critical functions in Kubernetes operations:
 
 ```yaml
 # clusters/
+
 #   my-cluster/
 #     label-policies/
 #       require-standard-labels.yaml

@@ -28,6 +28,7 @@ Istio traffic management is built on four core resources:
 
 ```bash
 # Create a namespace and enable injection
+
 kubectl create namespace traffic-demo
 kubectl label namespace traffic-demo istio-injection=enabled
 

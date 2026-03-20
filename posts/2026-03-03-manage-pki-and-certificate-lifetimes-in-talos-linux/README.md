@@ -44,6 +44,7 @@ Used for Kubernetes API aggregation layer certificates.
 
 ```bash
 # View all certificates and their CAs on a control plane node
+
 talosctl -n 10.0.1.10 get certificate
 
 # Check specific certificate details

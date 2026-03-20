@@ -42,6 +42,7 @@ CPU resources can typically run at higher utilization levels, but you need headr
 
 ```yaml
 # Example: Prometheus alerting rules for CPU utilization
+
 groups:
   - name: cpu_utilization_alerts
     rules:

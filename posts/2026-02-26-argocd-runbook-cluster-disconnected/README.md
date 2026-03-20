@@ -29,6 +29,7 @@ When a managed cluster becomes disconnected from ArgoCD, all applications deploy
 
 ```bash
 # List all clusters and their status
+
 argocd cluster list
 
 # Get detailed info about the problematic cluster

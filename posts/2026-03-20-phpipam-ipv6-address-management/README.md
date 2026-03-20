@@ -14,6 +14,7 @@ phpIPAM is a PHP-based open source IPAM solution with built-in IPv6 support incl
 
 ```bash
 # Install phpIPAM with Docker
+
 docker run -d --name phpipam-web \
     -p 80:80 \
     -e IPAM_DATABASE_HOST=phpipam-db \

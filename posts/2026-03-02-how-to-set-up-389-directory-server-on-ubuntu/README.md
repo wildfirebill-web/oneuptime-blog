@@ -23,6 +23,7 @@ Description: A complete guide to installing and configuring 389 Directory Server
 
 ```bash
 # Set the hostname
+
 sudo hostnamectl set-hostname ldap.example.com
 
 # Add the hostname to /etc/hosts if DNS is not configured

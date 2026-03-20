@@ -543,6 +543,7 @@ Check consumer group status to diagnose issues:
 
 ```bash
 # Describe consumer group
+
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 \
   --describe --group my-consumer-group
 

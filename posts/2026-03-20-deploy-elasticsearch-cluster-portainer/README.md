@@ -8,7 +8,7 @@ Description: Learn how to deploy a multi-node Elasticsearch cluster via Portaine
 
 ## Cluster Architecture
 
-```
+```text
 Client → Elasticsearch (coordinating) → Data Node 1
                                        → Data Node 2
                                        → Data Node 3
@@ -118,6 +118,7 @@ networks:
 
 ```bash
 # Check cluster health
+
 curl -u elastic:${ELASTIC_PASSWORD} http://localhost:9200/_cluster/health?pretty
 
 # Healthy cluster output:

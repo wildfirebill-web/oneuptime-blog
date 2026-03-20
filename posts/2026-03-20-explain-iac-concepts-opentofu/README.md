@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Concepts, Beginners, Education
+Tags: OpenTofu, Infrastructure as Code, Concepts, Beginner, Education
 
 Description: Learn core Infrastructure as Code concepts through practical OpenTofu examples, covering idempotency, desired state, and declarative configuration.
 
 ## Introduction
 
-Infrastructure as Code (IaC) treats your cloud resources the same way software developers treat application code — defined in text files, stored in version control, reviewed in pull requests, and deployed through automated pipelines. OpenTofu is one of the most popular IaC tools, using a declarative language called HCL.
+Infrastructure as Code (IaC) treats your cloud resources the same way software developers treat application code - defined in text files, stored in version control, reviewed in pull requests, and deployed through automated pipelines. OpenTofu is one of the most popular IaC tools, using a declarative language called HCL.
 
 ## Core Concept 1: Desired State vs Actual State
 
@@ -16,6 +16,7 @@ You describe what you want, not how to create it.
 
 ```hcl
 # You declare the desired state: "I want an S3 bucket named my-app-data"
+
 resource "aws_s3_bucket" "app_data" {
   bucket = "my-app-data"
 
@@ -49,7 +50,7 @@ tofu apply  # No changes
 
 Infrastructure changes go through the same review process as code.
 
-```
+```hcl
 Git workflow for infrastructure:
 
 feature/add-caching-layer branch
@@ -124,7 +125,7 @@ module "web_us_west" {
 
 OpenTofu maintains a state file that maps your HCL configuration to real cloud resources.
 
-```
+```yaml
 HCL Configuration         State File              Cloud
 -----------------         ----------              -----
 aws_s3_bucket.app  →→→→  id: "my-app-data"  →→→→  S3 Bucket

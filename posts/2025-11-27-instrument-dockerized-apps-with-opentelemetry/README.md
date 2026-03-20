@@ -104,6 +104,7 @@ This collector configuration file defines a complete telemetry pipeline. The rec
 
 ```yaml
 # Receivers: How the collector ingests data from applications
+
 # OTLP is the OpenTelemetry Protocol - the standard format for all signals
 receivers:
   otlp:

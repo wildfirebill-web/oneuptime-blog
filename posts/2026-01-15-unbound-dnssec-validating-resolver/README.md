@@ -176,6 +176,7 @@ Unbound's main configuration file is typically `/etc/unbound/unbound.conf`. Crea
 ```bash
 sudo tee /etc/unbound/unbound.conf << 'EOF'
 # Unbound configuration for DNSSEC-validating recursive resolver
+
 # Documentation: https://unbound.docs.nlnetlabs.nl/en/latest/
 
 server:

@@ -106,6 +106,7 @@ Check what the discovery service knows about your cluster:
 
 ```bash
 # View all discovered cluster members
+
 talosctl get discoveredmembers --nodes <node-ip>
 
 # View detailed discovery information

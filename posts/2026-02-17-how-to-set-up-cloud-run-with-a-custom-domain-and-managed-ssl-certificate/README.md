@@ -22,6 +22,7 @@ Before you can map a domain, Google needs to verify you own it. If you have not 
 
 ```bash
 # Initiate domain verification (opens a browser for verification)
+
 gcloud domains verify api.example.com
 ```
 

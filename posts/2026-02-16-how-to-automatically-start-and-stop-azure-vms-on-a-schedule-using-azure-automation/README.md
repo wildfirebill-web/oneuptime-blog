@@ -20,6 +20,7 @@ This is the most straightforward approach. You write two runbooks - one to stop 
 
 ```powershell
 # Runbook: Stop-DevVMs
+
 # Purpose: Stop all VMs in a specific resource group to save costs
 # Intended to run at end of business hours
 

@@ -1,4 +1,4 @@
-# How to Deploy InfluxDB via Portainer
+# How to Deploy InfluxDB via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ InfluxDB is the leading open-source time-series database, purpose-built for high
 
 ```yaml
 # docker-compose.yml - InfluxDB + Telegraf + Grafana
+
 version: "3.8"
 
 networks:

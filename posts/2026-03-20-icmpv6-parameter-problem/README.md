@@ -12,7 +12,7 @@ ICMPv6 Parameter Problem (Type 4) is generated when a node encounters a problem 
 
 ## Parameter Problem Message Format
 
-```
+```text
 ICMPv6 Parameter Problem (Type 4):
 
  0                   1                   2                   3
@@ -32,7 +32,7 @@ Pointer: Byte offset within the invoking packet where the error was found
 
 ## Parameter Problem Codes
 
-```
+```text
 Code 0: Erroneous header field encountered
   → A field in the IPv6 header or extension header has an invalid value
   → Pointer points to the byte that is problematic
@@ -54,7 +54,7 @@ Code 2: Unrecognized IPv6 option encountered
 
 ## Pointer Field Values for Common Fields
 
-```
+```text
 IPv6 header field positions for Pointer field:
 
 Byte 0:   Version (bits 7-4) / Traffic Class (bits 3-0 of byte 0)
@@ -125,6 +125,7 @@ def parse_parameter_problem(icmpv6_data: bytes) -> dict:
     }
 
 # Example: Pointer=6 (Next Header field invalid)
+
 msg = struct.pack("!BBHI", 4, 0, 0, 6) + b'\x00' * 40
 result = parse_parameter_problem(msg)
 print(f"Error at byte {result['pointer']}: {result['problem_field']}")
@@ -154,4 +155,4 @@ sudo tcpdump -i eth0 -vv "icmp6 and ip6[40] == 4" 2>&1 | \
 
 ## Conclusion
 
-ICMPv6 Parameter Problem is the IPv6 protocol's way of reporting malformed packets and unknown header types. The Pointer field is the key feature — it pinpoints the exact byte offset of the problem, enabling automated diagnosis of implementation bugs and configuration errors. Code 0 indicates an invalid field value, Code 1 indicates an unrecognized Next Header type, and Code 2 indicates an unrecognized option type that the option type encoding requires be reported. These messages are invaluable during IPv6 feature development and debugging.
+ICMPv6 Parameter Problem is the IPv6 protocol's way of reporting malformed packets and unknown header types. The Pointer field is the key feature - it pinpoints the exact byte offset of the problem, enabling automated diagnosis of implementation bugs and configuration errors. Code 0 indicates an invalid field value, Code 1 indicates an unrecognized Next Header type, and Code 2 indicates an unrecognized option type that the option type encoding requires be reported. These messages are invaluable during IPv6 feature development and debugging.

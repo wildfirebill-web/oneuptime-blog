@@ -40,6 +40,7 @@ Install Cypress and initialize your project:
 
 ```bash
 # Install Cypress as a dev dependency
+
 npm install --save-dev cypress
 
 # Open Cypress for the first time to generate config files

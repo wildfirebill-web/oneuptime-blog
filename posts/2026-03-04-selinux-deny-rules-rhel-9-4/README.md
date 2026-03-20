@@ -36,6 +36,7 @@ Use cases:
 
 ```bash
 # Verify you are running RHEL.4 or later
+
 cat /etc/redhat-release
 
 # Check the SELinux policy version

@@ -28,6 +28,7 @@ Initialize your plugin development environment:
 
 ```bash
 # Install Grafana plugin tools
+
 npm install -g @grafana/toolkit
 
 # Create plugin scaffold

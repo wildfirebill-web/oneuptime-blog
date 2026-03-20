@@ -21,7 +21,7 @@ IKE (Internet Key Exchange) is the protocol that negotiates and establishes IPse
 
 ## IKEv2 Negotiation Flow
 
-```
+```text
 Initiator                                    Responder
     |                                             |
     |--- IKE_SA_INIT (propose algorithms) ------->|
@@ -48,7 +48,7 @@ Initiator                                    Responder
 ## strongSwan Configuration for Each Phase
 
 ```conf
-# /etc/ipsec.conf — phase parameters
+# /etc/ipsec.conf - phase parameters
 
 conn my-vpn
     # Phase 1 (IKE SA) parameters
@@ -72,6 +72,7 @@ Phase 1 establishes an encrypted, authenticated channel for IKE traffic:
 
 ```conf
 # Format: encryption-integrity-dh_group
+
 # Recommended strong options:
 ike=aes256gcm128-prfsha384-ecp384!   # AES-GCM + SHA-384 + ECC P-384
 ike=aes256-sha256-modp2048!           # AES-256 + SHA-256 + DH group 14
@@ -112,7 +113,7 @@ sudo journalctl -u strongswan -f | grep -E "IKE|SA|proposal"
 ## Common Negotiation Failures
 
 ```bash
-# No proposal chosen — algorithm mismatch
+# No proposal chosen - algorithm mismatch
 # Fix: ensure both sides have matching ike= and esp= parameters
 
 # Deadlock in authentication

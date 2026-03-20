@@ -18,6 +18,7 @@ A single-stage Dockerfile includes everything in the final image: development de
 
 ```dockerfile
 # BAD: Single stage - everything ends up in the final image
+
 FROM node:20
 
 WORKDIR /app

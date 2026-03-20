@@ -23,6 +23,7 @@ Default eviction thresholds:
 
 ```yaml
 # Kubelet configuration
+
 evictionHard:
   memory.available: "100Mi"
   nodefs.available: "10%"

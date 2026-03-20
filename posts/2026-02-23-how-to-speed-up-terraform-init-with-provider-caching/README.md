@@ -30,6 +30,7 @@ The simplest optimization is Terraform's built-in plugin cache. When enabled, Te
 
 ```bash
 # Create the cache directory
+
 mkdir -p "$HOME/.terraform.d/plugin-cache"
 ```
 

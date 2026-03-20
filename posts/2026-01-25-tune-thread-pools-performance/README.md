@@ -51,6 +51,7 @@ Optimal threads = Number of CPU cores
 
 ```python
 # cpu_bound_pool.py
+
 import os
 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 

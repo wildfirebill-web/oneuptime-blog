@@ -18,6 +18,7 @@ Run ElasticMQ with a single command:
 
 ```bash
 # Start ElasticMQ with the SQS API on port 9324 and the UI on port 9325
+
 docker run -d \
   --name elasticmq \
   -p 9324:9324 \

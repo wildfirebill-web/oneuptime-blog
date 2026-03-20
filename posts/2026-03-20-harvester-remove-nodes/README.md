@@ -20,6 +20,7 @@ Removing a node from a Harvester cluster requires careful preparation to ensure 
 
 ```bash
 # 1. Check cluster node count
+
 kubectl get nodes | wc -l
 # Must leave at least 3 nodes after removal
 
@@ -213,4 +214,4 @@ kubectl get vmi -A -o custom-columns='NAME:.metadata.name,NODE:.status.nodeName'
 
 ## Conclusion
 
-Safely removing a node from a Harvester cluster requires a systematic approach: migrate VMs, evacuate Longhorn replicas, drain Kubernetes workloads, then remove. Rushing any of these steps can result in VM downtime or data loss. The key safeguard is ensuring Longhorn replica evacuation completes before node deletion — this ensures your data has 3 replicas on the remaining nodes before any single node is removed. After removal, Longhorn automatically rebuilds replicas to maintain the configured replica count on the remaining nodes.
+Safely removing a node from a Harvester cluster requires a systematic approach: migrate VMs, evacuate Longhorn replicas, drain Kubernetes workloads, then remove. Rushing any of these steps can result in VM downtime or data loss. The key safeguard is ensuring Longhorn replica evacuation completes before node deletion - this ensures your data has 3 replicas on the remaining nodes before any single node is removed. After removal, Longhorn automatically rebuilds replicas to maintain the configured replica count on the remaining nodes.

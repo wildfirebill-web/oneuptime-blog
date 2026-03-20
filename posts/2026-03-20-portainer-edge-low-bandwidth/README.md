@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Edge Computing, Low Bandwidth, Optimization, Edge Deployments
+Tags: Portainer, Docker, Edge Computing, Low Bandwidth, Optimization, Edge Deployment
 
 Description: Configure Portainer Edge Agent for low-bandwidth environments, reduce polling frequency, compress traffic, and manage edge containers efficiently with limited connectivity.
 
 ## Introduction
 
-Edge deployments — IoT gateways, remote offices, retail locations — often run on cellular connections or slow WAN links with data caps. Portainer's standard agent model assumes reliable, low-latency connectivity. The Edge Agent model reverses this: edge nodes initiate outbound connections to Portainer, and polling intervals are tunable to minimize bandwidth consumption. This guide covers configuring Portainer for edge deployments with limited connectivity.
+Edge deployments - IoT gateways, remote offices, retail locations - often run on cellular connections or slow WAN links with data caps. Portainer's standard agent model assumes reliable, low-latency connectivity. The Edge Agent model reverses this: edge nodes initiate outbound connections to Portainer, and polling intervals are tunable to minimize bandwidth consumption. This guide covers configuring Portainer for edge deployments with limited connectivity.
 
 ## Step 1: Deploy Portainer Edge Agent
 
@@ -16,6 +16,7 @@ The Edge Agent connects outbound through firewalls without requiring inbound por
 
 ```yaml
 # On the EDGE NODE - docker-compose.yml
+
 version: "3.8"
 
 services:
@@ -185,4 +186,4 @@ tc qdisc add dev eth0 root handle 1: htb
 
 ## Conclusion
 
-Edge environments require careful bandwidth budgeting. Portainer's Edge Agent was designed specifically for this scenario — outbound-only connections, tunable polling intervals, and stack deployment via configuration payloads rather than real-time API calls. Increase `EDGE_POLL_FREQUENCY` to 60-300 seconds for cellular connections, pre-stage images in local registries during maintenance windows, and use gzip compression on the Portainer server side. These changes can reduce edge agent bandwidth from 30+ MB/day to under 1 MB/day while maintaining full remote management capabilities.
+Edge environments require careful bandwidth budgeting. Portainer's Edge Agent was designed specifically for this scenario - outbound-only connections, tunable polling intervals, and stack deployment via configuration payloads rather than real-time API calls. Increase `EDGE_POLL_FREQUENCY` to 60-300 seconds for cellular connections, pre-stage images in local registries during maintenance windows, and use gzip compression on the Portainer server side. These changes can reduce edge agent bandwidth from 30+ MB/day to under 1 MB/day while maintaining full remote management capabilities.

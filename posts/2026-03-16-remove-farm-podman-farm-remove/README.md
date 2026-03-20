@@ -18,6 +18,7 @@ When a build farm is no longer needed, whether the machines have been decommissi
 
 ```bash
 # Remove a farm by name
+
 podman farm remove my-farm
 
 # Verify it was removed

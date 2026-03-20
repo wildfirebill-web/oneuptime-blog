@@ -16,6 +16,7 @@ Calico logs can contain sensitive information including IP addresses, network po
 
 ```yaml
 # fluent-bit-rbac.yaml
+
 # Grants Fluent Bit read-only access to pod logs in calico-system
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole

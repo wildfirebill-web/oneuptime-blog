@@ -38,6 +38,7 @@ Here is a script to help inventory Hive objects on your HDInsight cluster:
 
 ```bash
 # SSH into the HDInsight cluster and extract Hive metadata
+
 ssh sshuser@my-hdinsight-cluster-ssh.azurehdinsight.net
 
 # List all databases

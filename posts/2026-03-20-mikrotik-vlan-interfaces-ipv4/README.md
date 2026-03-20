@@ -14,6 +14,7 @@ MikroTik supports VLANs on physical interfaces and bridges. The modern recommend
 
 ```mikrotik
 # Trunk port receives tagged frames from a managed switch
+
 # Create VLAN sub-interfaces on ether1 (trunk)
 
 /interface vlan add name=vlan10 vlan-id=10 interface=ether1

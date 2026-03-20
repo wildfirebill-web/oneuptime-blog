@@ -49,6 +49,7 @@ OTLP support was added in Elastic APM Server 7.13 and is enabled by default in 8
 
 ```bash
 # Check your APM Server version
+
 # OTLP support requires 7.13 or later
 curl -s http://your-apm-server:8200/ | python3 -m json.tool
 

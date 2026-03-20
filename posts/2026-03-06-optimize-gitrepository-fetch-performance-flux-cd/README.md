@@ -36,6 +36,7 @@ The `.sourceignore` pattern and the `spec.ignore` field let you exclude files fr
 
 ```yaml
 # GitRepository with aggressive ignore patterns
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

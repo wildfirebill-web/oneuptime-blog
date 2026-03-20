@@ -20,6 +20,7 @@ The `podman stats` command provides live resource usage data.
 
 ```bash
 # Start a container to monitor
+
 podman run -d --name resource-test \
     --memory 256m \
     --cpus 1.0 \

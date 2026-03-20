@@ -22,6 +22,7 @@ Deploy the OpenTelemetry Operator using Helm, the recommended installation metho
 
 ```bash
 # Install cert-manager first
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.13.0/cert-manager.yaml
 
 # Wait for cert-manager to be ready

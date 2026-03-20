@@ -37,6 +37,7 @@ graph LR
 
 ```bash
 # Initialize module if not already done
+
 go mod init myproject
 
 # Download dependencies and create vendor/

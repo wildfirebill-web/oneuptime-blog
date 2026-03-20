@@ -107,6 +107,7 @@ Check the container's memory affinity:
 
 ```bash
 # Get container ID
+
 CONTAINER_ID=$(crictl ps | grep numa-aware-app | awk '{print $1}')
 
 # Check memory NUMA node

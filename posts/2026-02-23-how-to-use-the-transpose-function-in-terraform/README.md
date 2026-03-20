@@ -16,6 +16,7 @@ The `transpose` function takes a map where each value is a list of strings, and 
 
 ```hcl
 # Input: map of string to list of strings
+
 # Output: inverted map where values become keys
 > transpose({
   "group1" = ["alice", "bob"]

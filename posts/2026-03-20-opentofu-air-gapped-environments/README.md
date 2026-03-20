@@ -14,6 +14,7 @@ Air-gapped environments have no direct internet access for security or complianc
 
 ```bash
 # On internet-connected machine: download binary for target architecture
+
 # Linux amd64
 curl -Lo opentofu_1.7.0_linux_amd64.zip \
   https://github.com/opentofu/opentofu/releases/download/v1.7.0/opentofu_1.7.0_linux_amd64.zip

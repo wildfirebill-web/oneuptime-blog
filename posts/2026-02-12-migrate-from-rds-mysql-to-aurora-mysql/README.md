@@ -44,6 +44,7 @@ First, create a snapshot of your RDS MySQL instance:
 
 ```bash
 # Create a snapshot of the RDS MySQL instance
+
 aws rds create-db-snapshot \
   --db-instance-identifier my-rds-mysql \
   --db-snapshot-identifier mysql-to-aurora-snapshot

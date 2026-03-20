@@ -142,6 +142,7 @@ Here is a complete Prometheus configuration with WAL-relevant settings:
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

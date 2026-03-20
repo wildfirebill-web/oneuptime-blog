@@ -73,6 +73,7 @@ Sync waves give you explicit control over the apply order. Resources across all 
 
 ```yaml
 # Source 1 (platform-infra repo): namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

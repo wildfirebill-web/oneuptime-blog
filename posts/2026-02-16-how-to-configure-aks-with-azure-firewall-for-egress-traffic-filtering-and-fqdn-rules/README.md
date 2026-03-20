@@ -38,6 +38,7 @@ Set up the hub and spoke VNets with peering.
 
 ```bash
 # Create the resource group
+
 az group create --name aks-firewall-rg --location eastus
 
 # Create the hub VNet for Azure Firewall

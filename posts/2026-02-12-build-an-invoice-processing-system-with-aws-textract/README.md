@@ -36,6 +36,7 @@ Invoices come from multiple sources - email attachments, supplier portals, and m
 
 ```yaml
 # CloudFormation for invoice processing infrastructure
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   InvoiceBucket:

@@ -1,8 +1,8 @@
-# How to Set Up Database Operators in Rancher
+# How to Set Up Database Operators in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Database Operators, Operators, Cloud Native
+Tags: Rancher, Kubernetes, Database Operators, Operator, Cloud Native
 
 Description: Deploy and manage database operators in Rancher to enable declarative, Kubernetes-native management of databases with automated provisioning, scaling, and failover.
 
@@ -26,6 +26,7 @@ Kubernetes operators extend the platform's capabilities to manage complex statef
 
 ```bash
 # Install CloudNativePG operator
+
 helm repo add cnpg https://cloudnative-pg.github.io/charts
 helm install cnpg cnpg/cloudnative-pg \
   --namespace cnpg-system \

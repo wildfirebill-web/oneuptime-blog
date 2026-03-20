@@ -20,6 +20,7 @@ Here's a straightforward job definition for a data processing task.
 
 ```bash
 # Register a basic job definition for data processing
+
 aws batch register-job-definition \
   --job-definition-name data-processor \
   --type container \

@@ -30,6 +30,7 @@ Both the source and destination hosts must have:
 
 ```bash
 # Install CRIU
+
 sudo dnf install criu    # Fedora/RHEL
 sudo apt install criu     # Debian/Ubuntu
 

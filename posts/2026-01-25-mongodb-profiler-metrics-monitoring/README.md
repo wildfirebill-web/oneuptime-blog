@@ -36,6 +36,7 @@ Configure profiling at startup or dynamically per database.
 
 ```yaml
 # mongod.conf - startup configuration
+
 operationProfiling:
   # 0=off, 1=slowOps, 2=all
   mode: slowOp

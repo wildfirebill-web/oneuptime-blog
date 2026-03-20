@@ -26,7 +26,7 @@ provider "google" {
 }
 ```
 
-## Resource-Based Commitment (Compute Engine)
+Resource-Based Commitment (Compute Engine)
 
 ```hcl
 resource "google_compute_region_commitment" "production" {
@@ -113,6 +113,7 @@ resource "google_billing_budget" "cloud_sql" {
 
 ```bash
 # List active commitments
+
 gcloud compute commitments list --region=us-central1
 
 # Check commitment utilization

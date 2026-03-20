@@ -30,6 +30,7 @@ Configure this in your Talos machine configuration when bootstrapping each clust
 
 ```yaml
 # Cluster A machine config
+
 cluster:
   clusterName: cluster-a
   network:

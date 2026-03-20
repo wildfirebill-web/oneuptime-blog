@@ -20,6 +20,7 @@ This creates the IAM role, S3 bucket, configuration recorder, and delivery chann
 
 ```hcl
 # IAM role for AWS Config
+
 resource "aws_iam_role" "config" {
   name = "aws-config-role"
 

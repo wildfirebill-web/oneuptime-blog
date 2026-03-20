@@ -14,6 +14,7 @@ The HTTP Connection Manager (HCM) is Envoy's primary filter for HTTP traffic. It
 
 ```yaml
 # envoy-config.yaml
+
 static_resources:
   listeners:
     - name: http_listener

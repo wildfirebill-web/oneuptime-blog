@@ -164,6 +164,7 @@ TimeoutSec=30
 
 ```bash
 # Check status of a specific mount
+
 systemctl status data-backups.mount
 
 # View mount-related logs

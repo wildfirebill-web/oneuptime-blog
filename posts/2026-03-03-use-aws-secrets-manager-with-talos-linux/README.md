@@ -28,6 +28,7 @@ If you do not have a secret yet, create one for testing.
 
 ```bash
 # Create a secret in AWS Secrets Manager
+
 aws secretsmanager create-secret \
   --name production/my-app/database \
   --description "Database credentials for my-app" \

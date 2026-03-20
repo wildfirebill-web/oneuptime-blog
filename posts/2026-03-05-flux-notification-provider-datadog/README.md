@@ -29,6 +29,7 @@ Store the Datadog API key in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the Datadog API key
+
 kubectl create secret generic datadog-api-key \
   --namespace=flux-system \
   --from-literal=token=YOUR_DATADOG_API_KEY

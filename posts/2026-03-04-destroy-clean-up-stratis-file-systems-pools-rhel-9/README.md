@@ -55,6 +55,7 @@ Find and unmount all Stratis filesystems in the target pool:
 
 ```bash
 # Find mounted Stratis filesystems
+
 mount | grep stratis
 
 # Unmount each one

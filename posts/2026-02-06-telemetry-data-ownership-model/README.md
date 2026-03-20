@@ -22,6 +22,7 @@ Create ownership declarations as structured data:
 
 ```yaml
 # ownership/payment-service.yaml
+
 apiVersion: ownership.observability/v1
 kind: TelemetryOwnership
 metadata:

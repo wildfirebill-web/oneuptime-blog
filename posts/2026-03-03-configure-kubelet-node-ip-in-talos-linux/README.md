@@ -41,6 +41,7 @@ The simplest approach is to include the node IP configuration when generating yo
 
 ```bash
 # Create a config patch file
+
 cat > kubelet-nodeip-patch.yaml <<'EOF'
 machine:
   kubelet:

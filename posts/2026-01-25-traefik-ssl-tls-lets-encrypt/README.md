@@ -44,6 +44,7 @@ Create a ConfigMap with Traefik's static configuration:
 
 ```yaml
 # traefik-configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

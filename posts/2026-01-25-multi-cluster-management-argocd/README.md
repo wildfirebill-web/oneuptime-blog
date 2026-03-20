@@ -41,6 +41,7 @@ The simplest way to add a cluster is using the ArgoCD CLI:
 
 ```bash
 # First, ensure your kubeconfig has the target cluster context
+
 kubectl config get-contexts
 
 # Add a cluster using its kubeconfig context

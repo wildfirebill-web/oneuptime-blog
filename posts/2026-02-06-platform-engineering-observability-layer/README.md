@@ -14,6 +14,7 @@ From a developer's perspective, onboarding to observability should be this simpl
 
 ```yaml
 # Add to your service's platform config
+
 observability:
   enabled: true
   tier: standard  # or "critical" for higher sampling

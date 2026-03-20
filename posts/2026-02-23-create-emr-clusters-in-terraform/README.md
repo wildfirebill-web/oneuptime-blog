@@ -20,6 +20,7 @@ EMR needs two IAM roles: one for the service itself and one for the EC2 instance
 
 ```hcl
 # IAM role for the EMR service
+
 resource "aws_iam_role" "emr_service" {
   name = "emr-service-role"
 

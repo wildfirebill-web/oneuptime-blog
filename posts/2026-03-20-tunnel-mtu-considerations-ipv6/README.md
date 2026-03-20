@@ -8,7 +8,7 @@ Description: A practical guide to understanding MTU constraints when tunneling I
 
 ## Why MTU Matters for IPv6 Tunnels
 
-When you encapsulate IPv6 packets inside another protocol (such as in 6in4, GRE, or SIT tunnels), you add extra headers that consume bytes from the available path MTU. Unlike IPv4, IPv6 routers do not fragment packets in transit — only the source host performs fragmentation. This makes MTU configuration critical for tunnel setups.
+When you encapsulate IPv6 packets inside another protocol (such as in 6in4, GRE, or SIT tunnels), you add extra headers that consume bytes from the available path MTU. Unlike IPv4, IPv6 routers do not fragment packets in transit - only the source host performs fragmentation. This makes MTU configuration critical for tunnel setups.
 
 The default Ethernet MTU is 1500 bytes. Adding tunnel overhead reduces the effective MTU available to the inner IPv6 packet.
 
@@ -32,6 +32,7 @@ The following example sets the MTU on a 6in4 (SIT) tunnel interface. Run this af
 
 ```bash
 # Create a SIT tunnel interface (IPv6 over IPv4)
+
 ip tunnel add sit1 mode sit remote 203.0.113.1 local 192.0.2.1 ttl 64
 
 # Bring the tunnel interface up

@@ -124,6 +124,7 @@ Use `oras` (OCI Registry as Storage) to push the compiled Wasm binary:
 
 ```bash
 # Install oras
+
 brew install oras
 
 # Push the Wasm module

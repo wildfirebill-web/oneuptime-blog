@@ -18,6 +18,7 @@ Let's start with simple header addition and removal:
 
 ```yaml
 # envoy-header-manipulation.yaml
+
 static_resources:
   listeners:
   - name: listener_0

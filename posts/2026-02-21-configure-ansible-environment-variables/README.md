@@ -28,6 +28,7 @@ Points to a specific configuration file. This overrides the normal search order 
 
 ```bash
 # Use a specific config file
+
 export ANSIBLE_CONFIG=/opt/ansible/configs/production.cfg
 ansible-playbook deploy.yml
 ```

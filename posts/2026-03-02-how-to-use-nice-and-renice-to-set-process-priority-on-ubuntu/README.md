@@ -25,6 +25,7 @@ Normal users can only set nice values from 0 to 19 (making processes lower prior
 
 ```bash
 # View nice value in ps output
+
 ps -o pid,ni,cmd -p 1234
 
 # View nice values for all processes

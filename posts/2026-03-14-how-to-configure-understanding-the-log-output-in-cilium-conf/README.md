@@ -32,6 +32,7 @@ Before making configuration changes, review the current state and plan the chang
 
 ```bash
 # Review current Cilium configuration
+
 cilium config view
 
 # Check current Helm values

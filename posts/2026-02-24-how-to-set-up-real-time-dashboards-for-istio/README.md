@@ -340,6 +340,7 @@ Configure Grafana to load dashboards from ConfigMaps:
 
 ```yaml
 # Grafana Helm values
+
 sidecar:
   dashboards:
     enabled: true

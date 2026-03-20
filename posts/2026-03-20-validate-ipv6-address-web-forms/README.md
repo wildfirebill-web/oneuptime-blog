@@ -117,6 +117,7 @@ def validate_ipv6(address: str, allow_loopback: bool = False) -> Optional[str]:
     return str(addr)  # Canonical form
 
 # Test
+
 print(validate_ipv6("2001:DB8::1"))       # 2001:db8::1 (normalized)
 print(validate_ipv6("::1"))               # None (loopback rejected)
 print(validate_ipv6("::1", allow_loopback=True))  # ::1
@@ -147,4 +148,4 @@ class IPv6Address:
 
 ## Conclusion
 
-IPv6 validation requires handling compressed forms, mixed IPv4/IPv6 notation, and zone IDs. Use Python's `ipaddress.IPv6Address()` for server-side validation — it handles all valid forms. On the frontend, the URL constructor trick provides reliable browser-native validation. Always normalize to canonical form before storage. Add OneUptime monitors to test IPv6 form validation endpoints in staging environments.
+IPv6 validation requires handling compressed forms, mixed IPv4/IPv6 notation, and zone IDs. Use Python's `ipaddress.IPv6Address()` for server-side validation - it handles all valid forms. On the frontend, the URL constructor trick provides reliable browser-native validation. Always normalize to canonical form before storage. Add OneUptime monitors to test IPv6 form validation endpoints in staging environments.

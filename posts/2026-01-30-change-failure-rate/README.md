@@ -190,6 +190,7 @@ Send deployment events from your pipeline:
 
 ```yaml
 # GitHub Actions example
+
 name: Deploy
 
 on:

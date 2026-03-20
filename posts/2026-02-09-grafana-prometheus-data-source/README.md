@@ -424,6 +424,7 @@ Write efficient PromQL queries:
 
 ```yaml
 # Good: Specific label selectors
+
 up{job="kubernetes-nodes"}
 
 # Bad: Wide selector requiring more processing

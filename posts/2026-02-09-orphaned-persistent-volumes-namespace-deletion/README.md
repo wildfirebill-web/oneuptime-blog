@@ -63,6 +63,7 @@ Check for released volumes:
 
 ```bash
 # Find volumes in Released state
+
 kubectl get pv --field-selector status.phase=Released
 
 # Show details

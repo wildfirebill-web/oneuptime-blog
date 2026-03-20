@@ -30,6 +30,7 @@ Start with a broad health check before diving into specific issues:
 
 ```bash
 # Overall Cilium health status
+
 cilium status --verbose
 
 # Check for any Cilium pods that are not running

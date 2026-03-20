@@ -103,6 +103,7 @@ exports.handler = async (event, context) => {
 
 ```python
 # logger.py
+
 import json
 import logging
 import os

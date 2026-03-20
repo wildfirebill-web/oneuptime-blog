@@ -316,6 +316,7 @@ Run sharded tests:
 
 ```bash
 # Machine 1: Run first third of tests
+
 npx playwright test --shard=1/3
 
 # Machine 2: Run second third of tests
@@ -510,7 +511,7 @@ test.describe('user journey', () => {
 });
 ```
 
-### Resource-Aware Configuration
+Resource-Aware Configuration
 
 Adjust workers based on available resources.
 

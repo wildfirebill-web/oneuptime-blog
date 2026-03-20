@@ -148,6 +148,7 @@ Create authentication secret:
 
 ```bash
 # Docker Hub
+
 kubectl create secret generic registry-credentials \
   --from-file=config.json=<(echo '{
     "auths": {
@@ -473,7 +474,7 @@ buildah run <container-id> /bin/sh
 buildah diff <container-id>
 ```
 
-## Resource Requirements
+Resource Requirements
 
 Set appropriate limits:
 

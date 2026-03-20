@@ -40,6 +40,7 @@ Configure the application:
 
 ```properties
 # GCP project configuration
+
 spring.cloud.gcp.project-id=my-project-id
 spring.cloud.gcp.firestore.database-id=(default)
 

@@ -23,6 +23,7 @@ A brief conceptual overview helps before jumping into configuration:
 
 ```bash
 # Install FRRouting for PIM support
+
 curl -s https://deb.frrouting.org/frr/keys.gpg | sudo tee /usr/share/keyrings/frrouting.gpg > /dev/null
 
 echo "deb [signed-by=/usr/share/keyrings/frrouting.gpg] https://deb.frrouting.org/frr $(lsb_release -sc) frr-stable" | \

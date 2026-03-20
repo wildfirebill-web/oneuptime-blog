@@ -30,6 +30,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Create a partitioned Delta table
+
 df = spark.read.parquet("/raw/transactions")
 
 # Add partition columns if needed

@@ -177,6 +177,7 @@ When orphaned resource monitoring is enabled, the ArgoCD UI shows:
 
 ```bash
 # Get project details including orphaned resource warnings
+
 argocd proj get backend
 
 # List applications with their orphaned resource status

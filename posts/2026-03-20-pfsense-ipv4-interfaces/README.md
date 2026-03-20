@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: pfSense, IPv4, Network Configuration, Firewall, Interfaces, FreeBSD
+Tags: pfSense, IPv4, Network Configuration, Firewall, Interface, FreeBSD
 
 Description: Configure IPv4 addresses on pfSense interfaces including WAN with DHCP or static IP, LAN with a static gateway address, and optional OPT interfaces for DMZ or VLANs.
 
@@ -12,7 +12,7 @@ pfSense is a FreeBSD-based firewall and router. Interface configuration is done 
 
 ## Initial Console Setup
 
-```
+```text
 When first booting pfSense, the console wizard asks:
   1. Assign interfaces (WAN = em0, LAN = em1, etc.)
   2. Set LAN IPv4 address
@@ -20,18 +20,18 @@ When first booting pfSense, the console wizard asks:
   4. Set default gateway (WAN gateway entered later in GUI)
 ```
 
-## WAN Interface — Static IPv4
+## WAN Interface - Static IPv4
 
 Navigate to **Interfaces > WAN**:
 - IPv4 Configuration Type: **Static IPv4**
 - IPv4 Address: `203.0.113.2 /30`
 - IPv4 Upstream Gateway: Add new gateway `203.0.113.1`
 
-## WAN Interface — DHCP
+## WAN Interface - DHCP
 
 Navigate to **Interfaces > WAN**:
 - IPv4 Configuration Type: **DHCP**
-- DHCP Hostname: (optional — set if ISP requires it)
+- DHCP Hostname: (optional - set if ISP requires it)
 
 ## LAN Interface
 
@@ -54,6 +54,7 @@ Navigate to **Interfaces > LAN**:
 
 ```bash
 # Via console or GUI: Interfaces > Assignments > VLANs
+
 # Add VLAN:
 #   Parent interface: em1
 #   VLAN tag: 10

@@ -91,6 +91,7 @@ calicoctl get globalnetworkpolicies -o wide
 kubectl run test-pod --image=busybox --restart=Never -- sleep 3600
 kubectl exec test-pod -- wget -qO- http://google.com
 # Should timeout/fail - confirming default deny is active
+
 ```
 
 ## Architecture Diagram

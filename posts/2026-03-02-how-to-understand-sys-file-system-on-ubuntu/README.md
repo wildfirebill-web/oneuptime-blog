@@ -18,6 +18,7 @@ Every file in `/sys` corresponds to a kernel object attribute. Reading a file re
 ls /sys
 
 # Key subdirectories:
+
 # block/     - Block devices (disks, partitions)
 # bus/       - Kernel bus subsystems (pci, usb, i2c, etc.)
 # class/     - Device classes (net, input, sound, etc.)

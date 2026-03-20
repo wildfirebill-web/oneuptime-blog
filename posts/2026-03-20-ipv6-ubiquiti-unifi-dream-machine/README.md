@@ -1,4 +1,4 @@
-# How to Configure IPv6 on Ubiquiti UniFi Dream Machine
+# How to Configure IPv6 on Ubiquiti UniFi Dream Machine - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,7 +24,7 @@ flowchart LR
 
 Enable IPv6 on the WAN interface in UniFi Network application.
 
-```
+```text
 UniFi Network App → Settings → Internet → Primary (WAN1) → IPv6
 
 IPv6 Connection: DHCPv6
@@ -43,13 +43,13 @@ Advanced options:
 
 Assign a unique /64 from the delegated prefix to each network.
 
-```
+```text
 UniFi Network → Settings → Networks → [Network Name] → Advanced
 
 IPv6 Interface Type: Prefix Delegation
-IPv6 Prefix ID: 0    (default network — first /64)
-IPv6 Prefix ID: 1    (IoT VLAN — second /64)
-IPv6 Prefix ID: 2    (Guest VLAN — third /64)
+IPv6 Prefix ID: 0    (default network - first /64)
+IPv6 Prefix ID: 1    (IoT VLAN - second /64)
+IPv6 Prefix ID: 2    (Guest VLAN - third /64)
 ...
 Maximum prefix IDs with /56 delegation: 255 unique /64 networks
 
@@ -68,6 +68,7 @@ UniFi Dream Machine supports SSH for direct verification.
 
 ```bash
 # SSH into UDM
+
 ssh root@192.168.1.1    # default admin password
 
 # Check WAN IPv6 address
@@ -95,12 +96,12 @@ journalctl -u dhcpc6@eth8 | tail -30
 
 UniFi has IPv6 firewall rules separate from IPv4 rules.
 
-```
+```text
 UniFi Network → Settings → Firewall → IPv6
 
 Default behavior:
   WAN IN: Block all new sessions from internet
-  WAN OUT: Allow all (stateful — allows return traffic)
+  WAN OUT: Allow all (stateful - allows return traffic)
   LAN IN: Allow all (between VLANs)
 
 Add custom rules to allow inbound services:
@@ -145,4 +146,4 @@ curl -6 https://ipv6.google.com
 
 ## Conclusion
 
-UniFi Dream Machine configures IPv6 under Settings → Internet → WAN → IPv6 using DHCPv6-PD. Set the prefix delegation size to /56 to receive enough address space to assign a unique /64 to each network and VLAN — configure each network's Prefix ID (0, 1, 2...) so UDM automatically carves the /56 into /64s. Enable Router Advertisement on each network so that connected devices receive IPv6 via SLAAC. UniFi's IPv6 firewall blocks all inbound connections by default; add explicit rules for any services you want accessible from the internet. SSH into the UDM to verify DHCPv6-PD lease status and radvd configuration directly when troubleshooting.
+UniFi Dream Machine configures IPv6 under Settings → Internet → WAN → IPv6 using DHCPv6-PD. Set the prefix delegation size to /56 to receive enough address space to assign a unique /64 to each network and VLAN - configure each network's Prefix ID (0, 1, 2...) so UDM automatically carves the /56 into /64s. Enable Router Advertisement on each network so that connected devices receive IPv6 via SLAAC. UniFi's IPv6 firewall blocks all inbound connections by default; add explicit rules for any services you want accessible from the internet. SSH into the UDM to verify DHCPv6-PD lease status and radvd configuration directly when troubleshooting.

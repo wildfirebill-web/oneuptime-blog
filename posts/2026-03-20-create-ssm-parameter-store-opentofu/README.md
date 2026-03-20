@@ -134,6 +134,7 @@ resource "aws_iam_role_policy" "read_ssm_params" {
 
 ```hcl
 # ECS task definition references SSM parameters as environment variables
+
 resource "aws_ecs_task_definition" "app" {
   family             = "myapp"
   execution_role_arn = aws_iam_role.ecs_execution.arn

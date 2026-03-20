@@ -38,6 +38,7 @@ For most reverse proxy setups, run ArgoCD in insecure mode and let the proxy han
 
 ```yaml
 # argocd-cmd-params-cm.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

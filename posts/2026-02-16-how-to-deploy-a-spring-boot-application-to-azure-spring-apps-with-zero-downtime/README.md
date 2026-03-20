@@ -27,6 +27,7 @@ Install the Azure Spring Apps extension if you have not already:
 
 ```bash
 # Install the spring extension for Azure CLI
+
 az extension add --name spring --upgrade
 ```
 

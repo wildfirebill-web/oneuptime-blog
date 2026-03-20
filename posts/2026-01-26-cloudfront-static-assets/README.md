@@ -47,6 +47,7 @@ First, set up an S3 bucket to store your static files. The bucket does not need 
 
 ```bash
 # Create the S3 bucket for static assets
+
 # Replace 'my-static-assets-bucket' with your preferred name
 aws s3 mb s3://my-static-assets-bucket --region us-east-1
 

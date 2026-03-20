@@ -33,6 +33,7 @@ The bridge libraries are available for Go, Python, Java, and JavaScript. Let's s
 
 ```bash
 # Install the OpenTelemetry SDK and the OpenCensus bridge for Go
+
 go get go.opentelemetry.io/otel
 go get go.opentelemetry.io/otel/sdk
 go get go.opentelemetry.io/otel/sdk/metric

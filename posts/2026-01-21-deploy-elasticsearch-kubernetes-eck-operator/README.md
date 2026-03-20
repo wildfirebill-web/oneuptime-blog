@@ -40,6 +40,7 @@ The simplest way to install ECK is using kubectl to apply the official manifests
 
 ```bash
 # Install the ECK operator CRDs
+
 kubectl create -f https://download.elastic.co/downloads/eck/2.11.1/crds.yaml
 
 # Install the ECK operator with RBAC rules

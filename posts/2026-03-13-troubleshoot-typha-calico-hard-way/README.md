@@ -74,6 +74,7 @@ FELIX_CA=$(kubectl get secret calico-felix-typha-tls -n calico-system -o jsonpat
 
 ```bash
 # Check if Typha is fanning out updates
+
 kubectl port-forward -n calico-system deployment/calico-typha 9093:9093 &
 curl -s http://localhost:9093/metrics | grep typha_updates_sent
 ```

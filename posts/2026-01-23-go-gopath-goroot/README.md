@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, GOPATH, GOROOT, Environment, Setup, Configuration
+Tags: Go, Golang, GOPATH, GOROOT, Environments, Setup, Configuration
 
 Description: Understand the difference between GOPATH and GOROOT, when you need to set them, and how to properly configure your Go development environment.
 
@@ -34,6 +34,7 @@ GOROOT is where Go is installed. It contains:
 
 ```bash
 # See current GOROOT
+
 go env GOROOT
 
 # Typical locations:

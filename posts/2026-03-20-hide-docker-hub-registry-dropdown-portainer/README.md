@@ -35,6 +35,7 @@ You can also manage registry visibility via the Portainer API:
 
 ```bash
 # List all registries to find the Docker Hub registry ID
+
 curl -H "Authorization: Bearer $TOKEN" \
   http://localhost:9000/api/registries
 
@@ -60,7 +61,7 @@ This ensures all image pulls go through your approved registry with vulnerabilit
 
 When Docker Hub is hidden, users who attempt to reference a Docker Hub image in a stack deployment will see a pull failure if no credentials are configured. Provide documentation explaining:
 
-```
+```text
 All images must be pulled from registry.mycompany.com
 Tag your images as: registry.mycompany.com/myteam/myimage:tag
 ```

@@ -26,6 +26,7 @@ The `include` field specifies a glob pattern that files must match to be include
 
 ```yaml
 # argocd-app-include.yaml - Only deploy specific files
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

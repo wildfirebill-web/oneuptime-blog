@@ -11,14 +11,14 @@ Description: Learn how to configure IPv4 loopback interfaces on routers for mana
 Loopback interfaces are virtual interfaces that are always up as long as the router is operational. Unlike physical interfaces, they don't go down when a link fails.
 
 Uses:
-- **Router ID** — OSPF and BGP use the loopback as the stable router identifier
-- **Management address** — SSH/SNMP target that doesn't change when physical links change
-- **iBGP peering** — iBGP peers connect via loopbacks for stability
-- **SNMP/NTP source** — consistent source IP for management protocols
+- **Router ID** - OSPF and BGP use the loopback as the stable router identifier
+- **Management address** - SSH/SNMP target that doesn't change when physical links change
+- **iBGP peering** - iBGP peers connect via loopbacks for stability
+- **SNMP/NTP source** - consistent source IP for management protocols
 
 ## Step 1: Configure Loopback on Cisco IOS
 
-```
+```text
 ! Create loopback interface
 interface Loopback0
  description Router_Management_and_RouterID
@@ -34,9 +34,9 @@ show ip interface brief | include Loopback
 
 Reserve a dedicated /24 for all router loopbacks:
 
-```
+```text
 Loopback address scheme:
-  10.255.0.0/24 — All router loopbacks
+  10.255.0.0/24 - All router loopbacks
 
   10.255.0.1/32 = Core-Router-01
   10.255.0.2/32 = Core-Router-02
@@ -49,7 +49,7 @@ Loopback address scheme:
 
 ## Step 3: Advertise Loopback in OSPF
 
-```
+```text
 ! Advertise loopback so all routers can reach it
 router ospf 1
   router-id 10.255.0.1            ! Use loopback as OSPF router ID
@@ -66,7 +66,7 @@ router ospf 1
 
 ## Step 4: Use Loopbacks for iBGP Peering
 
-```
+```text
 ! iBGP peers use loopbacks for stability
 ! (If a physical link fails, BGP session remains up via alternate path)
 
@@ -80,7 +80,7 @@ router bgp 65001
 
 ## Step 5: Configure Management Access via Loopback
 
-```
+```text
 ! Allow SSH only to loopback address
 ip access-list standard SSH_ALLOWED
  permit 10.0.0.0 0.255.255.255    ! Management network
@@ -97,6 +97,7 @@ line vty 0 4
 
 ```bash
 # Linux: Create loopback address
+
 ip addr add 10.255.0.10/32 dev lo
 
 # Make persistent

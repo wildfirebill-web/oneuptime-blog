@@ -25,6 +25,7 @@ Before installation, SSH into each cluster node and install the required package
 
 ```bash
 # Ubuntu/Debian nodes
+
 apt-get install -y open-iscsi nfs-common
 systemctl enable --now iscsid
 
@@ -101,7 +102,7 @@ service:
 
 1. After configuring the values, click **Install**
 2. Rancher will display a progress log showing the Helm install output
-3. Wait for all resources to be created — this typically takes 2–5 minutes
+3. Wait for all resources to be created - this typically takes 2–5 minutes
 
 ## Step 6: Verify the Installation
 
@@ -131,11 +132,11 @@ Rancher provides a direct link to the Longhorn UI:
 1. In the Rancher UI, navigate to the cluster
 2. Go to **Apps** → **Installed Apps**
 3. Find the `longhorn` entry and click on it
-4. Look for the **Endpoints** section — click the Longhorn UI URL
+4. Look for the **Endpoints** section - click the Longhorn UI URL
 
 Alternatively, use the direct Rancher proxy URL:
 
-```
+```text
 https://<rancher-url>/k8s/clusters/<cluster-id>/api/v1/namespaces/longhorn-system/services/http:longhorn-frontend:80/proxy/
 ```
 

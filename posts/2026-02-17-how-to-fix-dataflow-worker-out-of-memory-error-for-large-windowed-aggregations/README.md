@@ -26,6 +26,7 @@ First, verify your worker memory and see if the OOM is a simple resource constra
 
 ```bash
 # Check the current worker configuration
+
 gcloud dataflow jobs describe JOB_ID \
     --region=us-central1 \
     --format="json(environment.workerPools)"

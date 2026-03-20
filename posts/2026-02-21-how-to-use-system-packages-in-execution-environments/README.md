@@ -18,6 +18,7 @@ The configuration lives in a file called `bindep.txt` referenced from your EE de
 
 ```yaml
 # execution-environment.yml
+
 ---
 version: 3
 

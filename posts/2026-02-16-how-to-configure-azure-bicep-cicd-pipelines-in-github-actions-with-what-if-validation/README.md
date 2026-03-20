@@ -42,6 +42,7 @@ GitHub Actions authenticates to Azure using OpenID Connect (OIDC), which is more
 
 ```bash
 # Create a service principal for GitHub Actions
+
 az ad sp create-for-rbac --name "github-actions-bicep" \
   --role contributor \
   --scopes /subscriptions/YOUR_SUBSCRIPTION_ID
@@ -215,7 +216,7 @@ jobs:
               const file = `whatif-${env}.txt`;
               if (fs.existsSync(file)) {
                 const content = fs.readFileSync(file, 'utf8');
-                body += `### ${env}\n\`\`\`\n${content.substring(0, 10000)}\n\`\`\`\n\n`;
+                body += `### ${env}\n```\n${content.substring(0, 10000)}\n```\n\n`;
               }
             }
 

@@ -26,6 +26,7 @@ graph LR
 
 ```bash
 # List all registered clusters
+
 argocd cluster list
 
 # Output:

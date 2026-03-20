@@ -46,6 +46,7 @@ Here's an example of a security-focused Dockerfile:
 
 ```dockerfile
 # Use a specific version tag instead of 'latest' for reproducibility
+
 # Alpine images have a smaller attack surface
 FROM node:20-alpine AS builder
 

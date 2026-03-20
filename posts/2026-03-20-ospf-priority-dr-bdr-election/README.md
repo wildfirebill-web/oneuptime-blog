@@ -24,7 +24,7 @@ If the wrong router becomes DR (e.g., a low-powered access switch), OSPF perform
 
 ## Step 1: Check Current DR/BDR on a Segment
 
-```
+```text
 Router# show ip ospf interface GigabitEthernet0/0
 
 GigabitEthernet0/0 is up, line protocol is up
@@ -41,7 +41,7 @@ GigabitEthernet0/0 is up, line protocol is up
 
 Set the priority to 100 on the router you want to be DR, and 50 on the BDR:
 
-```
+```text
 ! On the intended DR - high priority
 DR_Router(config)# interface GigabitEthernet0/0
 DR_Router(config-if)# ip ospf priority 200
@@ -59,7 +59,7 @@ Other_Router(config-if)# ip ospf priority 1
 
 Set priority to 0 on access switches and routers that should never be DR:
 
-```
+```text
 ! Access switch - never become DR
 Switch(config)# interface GigabitEthernet0/0
 Switch(config-if)# ip ospf priority 0
@@ -71,7 +71,7 @@ A router with priority 0 still forms adjacencies with the DR and BDR and partici
 
 Because DR election is non-preemptive, you must clear the OSPF process to trigger a new election:
 
-```
+```text
 ! Warning: this resets all OSPF adjacencies on the router briefly
 Router# clear ip ospf process
 
@@ -83,7 +83,7 @@ Router(config-if)# no shutdown
 
 ## Step 5: Verify DR/BDR After Election
 
-```
+```text
 ! Confirm new DR/BDR roles
 Router# show ip ospf neighbor
 
@@ -99,7 +99,7 @@ The router with priority 200 is correctly elected DR.
 
 In a data center with two core switches as DR and BDR, and multiple access switches:
 
-```
+```text
 ! Core Switch 1 - Primary DR
 CS1(config-if)# ip ospf priority 200
 
@@ -113,4 +113,4 @@ AS2(config-if)# ip ospf priority 0
 
 ## Conclusion
 
-OSPF interface priority controls DR/BDR election on multi-access networks. Set higher priorities on capable, stable routers that should be DR/BDR; set priority 0 on access-layer devices. Remember that OSPF election is non-preemptive—you must clear the OSPF process or bring interfaces down/up to trigger re-election after priority changes.
+OSPF interface priority controls DR/BDR election on multi-access networks. Set higher priorities on capable, stable routers that should be DR/BDR; set priority 0 on access-layer devices. Remember that OSPF election is non-preemptive-you must clear the OSPF process or bring interfaces down/up to trigger re-election after priority changes.

@@ -24,6 +24,7 @@ Check the Collector logs for timestamp-related warnings:
 kubectl logs -n observability deployment/otel-collector | grep -i "timestamp\|time\|spanmetrics"
 
 # Common messages:
+
 # "dropping data point with start time before previous data point"
 # "metric timestamp is before the start timestamp"
 ```

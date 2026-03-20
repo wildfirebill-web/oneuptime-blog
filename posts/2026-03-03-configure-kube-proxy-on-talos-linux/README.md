@@ -20,6 +20,7 @@ Check the current kube-proxy status:
 
 ```bash
 # View kube-proxy pods
+
 kubectl get pods -n kube-system -l k8s-app=kube-proxy
 
 # Check the kube-proxy configuration

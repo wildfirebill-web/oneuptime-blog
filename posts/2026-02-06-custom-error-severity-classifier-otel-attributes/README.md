@@ -25,6 +25,7 @@ Define a consistent set of attributes that your services should attach to error 
 
 ```python
 # severity_attributes.py - Standard attributes for severity classification
+
 """
 Attribute schema for error severity classification.
 All services should attach these to error spans where applicable.

@@ -39,6 +39,7 @@ The ArgoCD CLI supports syncing specific resources using the `--resource` flag. 
 
 ```bash
 # Sync a single Deployment
+
 argocd app sync my-app --resource apps:Deployment:my-deployment
 
 # Sync a ConfigMap (core resources have an empty group)
@@ -101,7 +102,7 @@ For syncing multiple specific resources from the UI:
 
 This gives you a checklist-style interface where you can pick exactly which resources to include in the sync operation.
 
-## Resource Identification Format
+Resource Identification Format
 
 Understanding the resource identification format is key to using selective sync effectively.
 

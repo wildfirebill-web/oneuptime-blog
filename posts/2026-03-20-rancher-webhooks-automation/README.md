@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, webhooks, automation, alerting, integration
+Tags: Rancher, Webhooks, Automation, Alerting, Integration
 
 Description: A guide to using Rancher alerting webhooks and custom webhook integrations to automate responses to cluster events and alerts.
 
 ## Overview
 
-Rancher's alerting system can deliver notifications via webhooks, enabling integration with chat systems (Slack, Teams), ticketing systems (Jira, ServiceNow), and custom automation workflows. Webhooks allow you to build automated responses to cluster events — from spinning up replacement nodes to creating incident tickets automatically. This guide covers webhook configuration and integration patterns.
+Rancher's alerting system can deliver notifications via webhooks, enabling integration with chat systems (Slack, Teams), ticketing systems (Jira, ServiceNow), and custom automation workflows. Webhooks allow you to build automated responses to cluster events - from spinning up replacement nodes to creating incident tickets automatically. This guide covers webhook configuration and integration patterns.
 
 ## Configuring Rancher Alert Receivers (Alertmanager)
 
@@ -18,6 +18,7 @@ Rancher Monitoring uses Prometheus Alertmanager for routing and delivering alert
 
 ```yaml
 # AlertmanagerConfig for webhook routing
+
 apiVersion: monitoring.coreos.com/v1alpha1
 kind: AlertmanagerConfig
 metadata:

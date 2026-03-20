@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Go, GraphQL, Resolvers, Tracing, Gqlgen
+Tags: OpenTelemetry, Go, GraphQL, Resolver, Tracing, Gqlgen
 
 Description: Implement comprehensive OpenTelemetry instrumentation for GraphQL resolvers to trace queries, mutations, field resolvers, and data loaders with context propagation.
 
@@ -34,6 +34,7 @@ The gqlgen library is the most popular GraphQL server implementation for Go. Sta
 
 ```graphql
 # schema.graphql
+
 type Query {
     user(id: ID!): User
     users(limit: Int): [User!]!

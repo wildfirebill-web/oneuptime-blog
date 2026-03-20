@@ -29,6 +29,7 @@ Check current pool usage before expanding:
 
 ```bash
 # Check current pool configuration
+
 kubectl -n kube-system get configmap cilium-config \
   -o jsonpath='{.data.cluster-pool-ipv4-cidr}'
 

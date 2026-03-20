@@ -38,6 +38,7 @@ Deploy Zipkin to collect and visualize traces. The simplest approach is using Do
 
 ```bash
 # Run Zipkin with in-memory storage (development only)
+
 docker run -d -p 9411:9411 openzipkin/zipkin
 
 # For production, use persistent storage

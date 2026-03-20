@@ -91,6 +91,7 @@ Start by generating the cluster secrets that will be shared across all control p
 
 ```bash
 # Generate cluster secrets
+
 talosctl gen secrets -o secrets.yaml
 
 # Generate configuration from secrets

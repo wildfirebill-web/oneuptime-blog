@@ -52,6 +52,7 @@ First, install the required packages for your Flask and Celery integration.
 
 ```bash
 # Install Flask, Celery, and Redis client
+
 pip install flask celery redis
 
 # For monitoring (optional but recommended)

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, IPv6, Router Advertisements, radvd, SLAAC, Networking
+Tags: Ansible, IPv6, Router Advertisement, Radvd, SLAAC, Networking
 
 Description: A guide to deploying and configuring the Router Advertisement Daemon (radvd) on Linux using Ansible to enable SLAAC for IPv6 clients.
 
@@ -10,7 +10,7 @@ Router Advertisements (RAs) are ICMPv6 messages sent by routers to inform client
 
 ## Role Structure
 
-```
+```text
 radvd-role/
 ├── tasks/main.yml
 ├── templates/radvd.conf.j2
@@ -22,6 +22,7 @@ radvd-role/
 
 ```yaml
 # defaults/main.yml
+
 ---
 radvd_interfaces:
   - name: "eth0"
@@ -79,7 +80,7 @@ radvd_interfaces:
 
 ## radvd Configuration Template
 
-```
+```text
 # templates/radvd.conf.j2 - Router Advertisement daemon configuration
 # Managed by Ansible - do not edit manually
 

@@ -25,6 +25,7 @@ Create a secure shared secret that GitHub and ArgoCD will use to verify webhook 
 
 ```bash
 # Generate a random 32-character hex secret
+
 WEBHOOK_SECRET=$(openssl rand -hex 32)
 echo "Save this secret: $WEBHOOK_SECRET"
 ```

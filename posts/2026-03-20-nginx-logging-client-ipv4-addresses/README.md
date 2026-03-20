@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, Logging, IPv4, Access Log, X-Forwarded-For, Security
+Tags: Nginx, Logging, IPv4, Access Logs, X-Forwarded-For, Security
 
 Description: Configure Nginx access logs to accurately capture client IPv4 addresses, including handling reverse proxies and X-Forwarded-For headers for correct attribution.
 
@@ -16,6 +16,7 @@ By default, Nginx logs the direct TCP connection IP:
 
 ```nginx
 # Default combined log format (built into Nginx)
+
 log_format combined '$remote_addr - $remote_user [$time_local] '
                     '"$request" $status $body_bytes_sent '
                     '"$http_referer" "$http_user_agent"';

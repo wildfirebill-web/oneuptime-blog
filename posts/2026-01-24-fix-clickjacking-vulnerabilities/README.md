@@ -65,6 +65,7 @@ app.get('/embeddable-widget', (req, res) => {
 
 ```nginx
 # nginx.conf - Global configuration
+
 http {
     # Add X-Frame-Options to all responses
     add_header X-Frame-Options "DENY" always;

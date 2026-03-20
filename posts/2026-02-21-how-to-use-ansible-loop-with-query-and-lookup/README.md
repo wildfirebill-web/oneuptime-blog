@@ -21,6 +21,7 @@ Since `loop` expects a list, `query` is the natural fit:
 
 ```yaml
 # Using query (returns a list - works directly with loop)
+
 - name: Process files with query
   ansible.builtin.debug:
     msg: "{{ item }}"

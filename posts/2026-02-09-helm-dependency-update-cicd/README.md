@@ -16,6 +16,7 @@ Chart dependencies are defined in Chart.yaml and downloaded to the charts/ direc
 
 ```yaml
 # Chart.yaml
+
 apiVersion: v2
 name: myapp
 version: 1.0.0

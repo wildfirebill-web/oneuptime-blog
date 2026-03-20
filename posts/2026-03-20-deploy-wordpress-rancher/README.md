@@ -1,8 +1,8 @@
-# How to Deploy WordPress on Rancher
+# How to Deploy WordPress on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, wordpress, cms, kubernetes, helm
+Tags: Rancher, WordPress, CMS, Kubernetes, Helm
 
 Description: Complete guide to deploying WordPress with MySQL on Rancher for scalable web content management.
 
@@ -22,6 +22,7 @@ This guide covers deploying uwordpress on Rancher with production-ready configur
 
 ```bash
 # Add the chart repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 

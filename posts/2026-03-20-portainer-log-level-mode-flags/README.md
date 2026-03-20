@@ -1,4 +1,4 @@
-# How to Use the --log-level and --log-mode Flags in Portainer
+# How to Use the --log-level and --log-mode Flags in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -33,6 +33,7 @@ Portainer's logging behavior is controlled by two flags: `--log-level` sets how 
 
 ```bash
 # Restart Portainer with debug logging for troubleshooting
+
 docker stop portainer && docker rm portainer
 
 docker run -d \
@@ -253,4 +254,4 @@ docker inspect portainer | jq '.[0].LogPath' | xargs ls -lh
 
 ## Conclusion
 
-Use `--log-level=DEBUG` when troubleshooting specific issues, then revert to `--log-level=INFO` or `--log-level=WARN` for production. Configure `--log-mode=JSON` whenever you're using a log aggregation system (Elasticsearch, Loki, Graylog) — structured logs are much easier to parse, filter, and alert on than human-readable text.
+Use `--log-level=DEBUG` when troubleshooting specific issues, then revert to `--log-level=INFO` or `--log-level=WARN` for production. Configure `--log-mode=JSON` whenever you're using a log aggregation system (Elasticsearch, Loki, Graylog) - structured logs are much easier to parse, filter, and alert on than human-readable text.

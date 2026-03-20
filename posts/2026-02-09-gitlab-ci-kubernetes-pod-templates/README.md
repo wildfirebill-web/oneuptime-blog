@@ -20,6 +20,7 @@ Deploy GitLab Runner using Helm:
 
 ```bash
 # Add GitLab Helm repository
+
 helm repo add gitlab https://charts.gitlab.io
 helm repo update
 

@@ -53,6 +53,7 @@ Named volumes live in Podman's storage directory and persist independently of co
 
 ```bash
 # Create a new named volume
+
 podman volume create mydata
 
 # Create a volume with custom options

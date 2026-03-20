@@ -16,8 +16,8 @@ The `log` function in OpenTofu computes the logarithm of a number to a specified
 log(number, base)
 ```
 
-- **number** — the value to compute the logarithm of (must be > 0)
-- **base** — the logarithm base (must be > 0 and not 1)
+- **number** - the value to compute the logarithm of (must be > 0)
+- **base** - the logarithm base (must be > 0 and not 1)
 - Returns a float
 
 ## Basic Examples
@@ -139,7 +139,7 @@ locals {
 ## Common Pitfalls
 
 - `log(0, base)` is undefined and will return an error. Always ensure the input is positive.
-- `log(1, base)` returns `0` for any base — this is mathematically correct.
+- `log(1, base)` returns `0` for any base - this is mathematically correct.
 - Floating-point precision may produce results like `9.999999` instead of `10`. Use `round` (via `floor(x + 0.5)`) if you need an exact integer.
 
 ## Conclusion

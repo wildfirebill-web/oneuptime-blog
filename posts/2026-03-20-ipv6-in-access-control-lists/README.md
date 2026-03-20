@@ -85,6 +85,7 @@ class IPv6ACL:
         return True  # No whitelist = allow all non-blacklisted
 
 # Usage
+
 acl = IPv6ACL()
 
 # Whitelist internal networks

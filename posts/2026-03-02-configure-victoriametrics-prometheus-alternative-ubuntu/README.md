@@ -29,6 +29,7 @@ VictoriaMetrics provides single-node and cluster versions. The single-node versi
 
 ```bash
 # Set the version to download
+
 VM_VERSION="v1.99.0"
 
 # Download the single-node binary

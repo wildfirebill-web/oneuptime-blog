@@ -14,6 +14,7 @@ Consider testing a function that creates spans with duration information:
 
 ```python
 # Without a custom clock, this test is flaky
+
 def test_span_duration():
     with tracer.start_as_current_span("operation"):
         time.sleep(0.1)  # Approximately 100ms

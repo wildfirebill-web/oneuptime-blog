@@ -31,6 +31,7 @@ Extract key information from a Dockerfile using grep:
 
 ```bash
 # Extract all FROM instructions (base images used)
+
 grep -E "^FROM " Dockerfile
 # Output: FROM python:3.12-slim AS builder
 #         FROM debian:bookworm-slim

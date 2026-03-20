@@ -79,6 +79,7 @@ First, create some infrastructure that we will target with chaos experiments. Th
 
 ```hcl
 # Resource group
+
 resource "azurerm_resource_group" "chaos" {
   name     = "rg-${local.name_prefix}"
   location = var.location

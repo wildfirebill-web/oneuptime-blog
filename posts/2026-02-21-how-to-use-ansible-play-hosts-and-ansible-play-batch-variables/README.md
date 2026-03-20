@@ -16,6 +16,7 @@ The `ansible_play_hosts` variable contains a list of all hostnames that are stil
 
 ```yaml
 # play-hosts-demo.yml - Show ansible_play_hosts contents
+
 ---
 - name: Demonstrate ansible_play_hosts
   hosts: all

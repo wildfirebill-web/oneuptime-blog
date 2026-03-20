@@ -551,6 +551,7 @@ kaParams := keepalive.ClientParameters{
 
 ```yaml
 # ConfigMap for gRPC keepalive settings
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

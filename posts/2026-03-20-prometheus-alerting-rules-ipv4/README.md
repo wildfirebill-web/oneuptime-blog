@@ -120,6 +120,7 @@ rule_files:
 
 ```bash
 # Validate rule syntax
+
 promtool check rules /etc/prometheus/rules/ipv4_infra_alerts.yml
 # Expected: SUCCESS
 

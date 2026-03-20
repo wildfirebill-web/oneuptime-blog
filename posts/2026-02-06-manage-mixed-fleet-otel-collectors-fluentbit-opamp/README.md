@@ -59,6 +59,7 @@ Fluent Bit does not natively speak OpAMP, so you need a supervisor wrapper, simi
 
 ```yaml
 # fluent-bit-supervisor.yaml
+
 server:
   endpoint: wss://opamp-server.internal:4320/v1/opamp
 

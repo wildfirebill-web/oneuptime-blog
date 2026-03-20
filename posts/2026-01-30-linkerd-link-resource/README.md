@@ -44,6 +44,7 @@ Before creating a Link resource, you need:
 
 ```bash
 # Install Linkerd multi-cluster extension on both clusters
+
 linkerd multicluster install | kubectl apply -f -
 
 # Verify the installation

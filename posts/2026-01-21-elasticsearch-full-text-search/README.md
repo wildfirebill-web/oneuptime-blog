@@ -161,6 +161,7 @@ Different scoring strategies:
 
 ```bash
 # best_fields (default) - Score from best matching field
+
 curl -X GET "https://localhost:9200/articles/_search" \
   -H "Content-Type: application/json" \
   -u elastic:password \

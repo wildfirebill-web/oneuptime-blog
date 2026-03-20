@@ -18,6 +18,7 @@ Common public Helm repositories:
 
 ```text
 # Bitnami
+
 https://charts.bitnami.com/bitnami
 
 # Prometheus Community

@@ -74,6 +74,7 @@ sequenceDiagram
 
 ```bash
 # Apply L7 policy
+
 kubectl apply -f https://raw.githubusercontent.com/cilium/cilium/HEAD/examples/minikube/sw_l3_l4_l7_policy.yaml
 
 # Test: allowed endpoint

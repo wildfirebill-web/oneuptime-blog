@@ -43,6 +43,7 @@ This associates a partner event source with a new event bus:
 
 ```bash
 # List available partner event sources
+
 aws events list-event-sources
 
 # Create an event bus from the partner event source

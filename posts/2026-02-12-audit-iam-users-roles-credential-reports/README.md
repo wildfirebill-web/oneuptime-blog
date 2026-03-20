@@ -28,6 +28,7 @@ Credential reports are generated on demand. They take a few seconds to build.
 
 ```bash
 # Generate a fresh credential report
+
 aws iam generate-credential-report
 
 # Wait for it to complete (usually 5-10 seconds)

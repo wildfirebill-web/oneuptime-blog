@@ -24,6 +24,7 @@ For a human user who will log in and work on the system:
 
 ```bash
 # Add a new user interactively
+
 sudo adduser alice
 
 # You'll be prompted for:

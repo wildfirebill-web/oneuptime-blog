@@ -26,6 +26,7 @@ Google Cloud Platform offers robust workload identity features that eliminate th
 
 ```bash
 # Set your project ID
+
 export PROJECT_ID="my-gcp-project"
 
 # Create a dedicated service account for Crossplane

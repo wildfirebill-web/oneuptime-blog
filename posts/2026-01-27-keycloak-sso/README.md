@@ -133,6 +133,7 @@ Setting up clients correctly is the foundation of a working SSO implementation. 
 
 ```bash
 # Authenticate with Keycloak admin CLI
+
 /opt/keycloak/bin/kcadm.sh config credentials \
   --server http://localhost:8080 \
   --realm master \

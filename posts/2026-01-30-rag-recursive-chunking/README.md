@@ -202,6 +202,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 
 # Initialize the splitter with configuration
+
 splitter = RecursiveCharacterTextSplitter(
     # Maximum characters per chunk
     chunk_size=1000,

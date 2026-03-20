@@ -32,6 +32,7 @@ terraform {
 }
 
 # Configure the provider with credentials
+
 provider "example" {
   # Use environment variables for credentials
   # EXAMPLE_API_KEY, EXAMPLE_TOKEN, etc.

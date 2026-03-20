@@ -33,6 +33,7 @@ For variables that should be available to all users, use `/etc/environment`:
 
 ```yaml
 # system-wide-env.yml - Set system-wide environment variables
+
 - name: Set system-wide environment variables
   hosts: all
   become: yes

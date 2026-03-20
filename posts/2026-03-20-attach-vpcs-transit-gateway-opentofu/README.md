@@ -74,7 +74,8 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "main" {
 ```hcl
 # cross_account_attachments.tf
 
-# Step 1: In the TGW account — share the TGW with other accounts
+# Step 1: In the TGW account - share the TGW with other accounts
+
 resource "aws_ram_resource_share" "tgw" {
   name                      = "${var.prefix}-tgw"
   allow_external_principals = false
@@ -92,7 +93,7 @@ resource "aws_ram_principal_association" "accounts" {
   resource_share_arn = aws_ram_resource_share.tgw.arn
 }
 
-# Step 2: In the spoke account — create the attachment
+# Step 2: In the spoke account - create the attachment
 # This is typically in a separate terraform configuration per account
 
 provider "aws" {
@@ -118,7 +119,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "spoke" {
   }
 }
 
-# Step 3: In the TGW account — accept the cross-account attachment
+# Step 3: In the TGW account - accept the cross-account attachment
 resource "aws_ec2_transit_gateway_vpc_attachment_accepter" "spoke" {
   transit_gateway_attachment_id = aws_ec2_transit_gateway_vpc_attachment.spoke.id
 
@@ -138,7 +139,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment_accepter" "spoke" {
 ```hcl
 # route_management.tf
 
-# Segmented route tables — production can't reach dev, both can reach shared
+# Segmented route tables - production can't reach dev, both can reach shared
 resource "aws_ec2_transit_gateway_route_table" "by_env" {
   for_each = toset(["production", "development"])
 
@@ -196,7 +197,7 @@ resource "aws_ec2_transit_gateway_route" "from_shared_to_dev" {
 ## VPC Route Table Updates
 
 ```hcl
-# vpc_routes.tf — update VPC route tables to route inter-VPC traffic via TGW
+# vpc_routes.tf - update VPC route tables to route inter-VPC traffic via TGW
 
 resource "aws_route" "private_to_shared" {
   count = length(var.private_route_table_ids)
@@ -211,8 +212,8 @@ resource "aws_route" "private_to_shared" {
 
 ## Best Practices
 
-- Create dedicated `/28` or `/27` subnets per AZ for TGW attachments — these subnets are exclusively used by Transit Gateway and should not contain workload resources.
-- Use `transit_gateway_default_route_table_association = false` and `propagation = false` on all attachments — managing route tables explicitly gives you control over which VPCs can communicate.
-- For cross-account attachments, use Resource Access Manager within an AWS Organization — this avoids the complexity of cross-account accepters and reduces the risk of routing errors.
-- Structure TGW route tables around security boundaries, not just team ownership — production and development should be in separate route tables even if managed by the same team.
-- After adding attachments, verify connectivity with `traceroute` before updating production route tables — this confirms the attachment, route table, and VPC routes are all configured correctly.
+- Create dedicated `/28` or `/27` subnets per AZ for TGW attachments - these subnets are exclusively used by Transit Gateway and should not contain workload resources.
+- Use `transit_gateway_default_route_table_association = false` and `propagation = false` on all attachments - managing route tables explicitly gives you control over which VPCs can communicate.
+- For cross-account attachments, use Resource Access Manager within an AWS Organization - this avoids the complexity of cross-account accepters and reduces the risk of routing errors.
+- Structure TGW route tables around security boundaries, not just team ownership - production and development should be in separate route tables even if managed by the same team.
+- After adding attachments, verify connectivity with `traceroute` before updating production route tables - this confirms the attachment, route table, and VPC routes are all configured correctly.

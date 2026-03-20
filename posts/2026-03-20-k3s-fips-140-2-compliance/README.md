@@ -24,6 +24,7 @@ Before configuring K3s, the underlying OS must be in FIPS mode:
 
 ```bash
 # Install FIPS modules
+
 dnf install -y crypto-policies-scripts
 
 # Enable FIPS mode (requires reboot)

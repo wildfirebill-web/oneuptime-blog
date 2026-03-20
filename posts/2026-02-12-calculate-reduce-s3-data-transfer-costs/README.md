@@ -34,6 +34,7 @@ Use the AWS Cost Explorer to see your actual S3 data transfer spending.
 
 ```bash
 # Get S3 data transfer costs for the last 30 days
+
 aws ce get-cost-and-usage \
   --time-period Start=2026-01-12,End=2026-02-12 \
   --granularity MONTHLY \

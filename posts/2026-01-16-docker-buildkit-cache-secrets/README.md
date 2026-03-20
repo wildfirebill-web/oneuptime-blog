@@ -16,6 +16,7 @@ BuildKit is Docker's modern build engine that provides significant improvements 
 
 ```bash
 # Enable BuildKit for a single build
+
 DOCKER_BUILDKIT=1 docker build -t myimage .
 
 # Enable permanently (add to shell profile)

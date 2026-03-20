@@ -25,6 +25,7 @@ The serial port on server hardware is typically `ttyS0` (COM1) or `ttyS1` (COM2)
 
 ```bash
 # Edit GRUB configuration
+
 sudo nano /etc/default/grub
 ```
 

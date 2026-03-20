@@ -79,6 +79,7 @@ The simplest chain authorization verifies the immediate caller at each hop:
 
 ```yaml
 # Order service: only accepts calls from the API gateway
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

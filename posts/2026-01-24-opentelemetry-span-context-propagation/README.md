@@ -106,6 +106,7 @@ sdk.start();
 
 ```python
 # propagation_setup.py
+
 # Configure context propagation in Python
 
 from opentelemetry import propagate

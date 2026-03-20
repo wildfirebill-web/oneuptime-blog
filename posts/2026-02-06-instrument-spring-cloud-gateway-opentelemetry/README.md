@@ -53,6 +53,7 @@ First, download the agent JAR:
 
 ```bash
 # Download the latest OpenTelemetry Java agent
+
 curl -L -o opentelemetry-javaagent.jar \
   https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
 ```

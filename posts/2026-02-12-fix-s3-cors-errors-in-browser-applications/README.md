@@ -86,6 +86,7 @@ Then apply it with the following command:
 
 ```bash
 # Apply the CORS configuration to your bucket
+
 aws s3api put-bucket-cors --bucket my-bucket --cors-configuration file://cors.json
 ```
 

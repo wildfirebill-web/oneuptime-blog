@@ -22,6 +22,7 @@ ArgoCD publishes its Helm charts through the Argo project repository.
 
 ```yaml
 # helmrepository-argocd.yaml - ArgoCD Helm chart repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

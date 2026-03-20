@@ -42,6 +42,7 @@ Before force removing a member, verify:
 
 ```bash
 # Verify cluster status
+
 talosctl etcd members --nodes <healthy-cp-ip>
 
 # Check which members are healthy

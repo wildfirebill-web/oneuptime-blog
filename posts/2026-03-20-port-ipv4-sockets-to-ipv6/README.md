@@ -177,6 +177,7 @@ freeaddrinfo(result);
 
 ```bash
 # Compile with IPv6 support
+
 gcc -o server server.c -Wall -Wextra
 
 # Verify server listens on IPv6

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OSPFv3, IPv6, Stub Areas, OSPF, Routing
+Tags: OSPFv3, IPv6, Stub Area, OSPF, Routing
 
 Description: Learn how to configure OSPFv3 stub and totally stub areas to reduce LSA flooding and simplify routing in branch office environments.
 
@@ -20,7 +20,7 @@ OSPFv3 stub areas reduce routing overhead in branch locations that only need a d
 
 ## Configuring a Stub Area on Cisco IOS
 
-```
+```text
 ! Configure Area 1 as a stub area on ALL routers in that area
 ! This must be configured identically on all routers in the area
 
@@ -40,8 +40,8 @@ Router-Branch(config-router-af)# area 1 stub
 
 A totally stub area blocks both external (Type 5) and inter-area (Type 3) LSAs. Only one Type 3 LSA (the default route) is allowed in:
 
-```
-! On the ABR ONLY — add no-summary to create totally stub
+```text
+! On the ABR ONLY - add no-summary to create totally stub
 Router-ABR(config)# router ospfv3 1
 Router-ABR(config-router)# address-family ipv6 unicast
 Router-ABR(config-router-af)# area 1 stub no-summary
@@ -62,7 +62,7 @@ configure terminal
 router ospf6
  area 0.0.0.1 stub
 
-! Configure as totally stub (no-summary) — ABR only
+! Configure as totally stub (no-summary) - ABR only
 router ospf6
  area 0.0.0.1 stub no-summary
 
@@ -74,7 +74,7 @@ write memory
 
 The ABR injects a default route into the stub area. You can control its cost:
 
-```
+```text
 ! Cisco: Set default route cost for stub area
 Router-ABR(config)# router ospfv3 1
 Router-ABR(config-router)# address-family ipv6 unicast
@@ -83,6 +83,7 @@ Router-ABR(config-router-af)# area 1 default-cost 100
 
 ```bash
 # FRRouting: Set default-metric for the stub area
+
 vtysh
 configure terminal
 router ospf6
@@ -92,7 +93,7 @@ end
 
 ## Verifying Stub Area Configuration
 
-```
+```text
 ! Cisco: Verify stub area flag in OSPF database
 Router# show ospfv3 database summary
 
@@ -112,11 +113,11 @@ ip -6 route show default proto ospf
 
 ## Benefits of Stub Areas
 
-- **Reduced LSDB size** — External LSAs are not flooded into the area
-- **Reduced memory usage** — Fewer LSAs stored on branch routers
-- **Simplified routing** — Branch routers only need a default route, not full topology
-- **Faster convergence** — Smaller LSDB means faster SPF calculations
+- **Reduced LSDB size** - External LSAs are not flooded into the area
+- **Reduced memory usage** - Fewer LSAs stored on branch routers
+- **Simplified routing** - Branch routers only need a default route, not full topology
+- **Faster convergence** - Smaller LSDB means faster SPF calculations
 
 ## Summary
 
-OSPFv3 stub areas prevent AS-external LSAs from flooding into branch areas. Configure `area <id> stub` on all routers in the area — the ABR automatically injects a default route. Use `stub no-summary` (totally stub) on the ABR to also block inter-area LSAs, giving branch routers only a single default route.
+OSPFv3 stub areas prevent AS-external LSAs from flooding into branch areas. Configure `area <id> stub` on all routers in the area - the ABR automatically injects a default route. Use `stub no-summary` (totally stub) on the ABR to also block inter-area LSAs, giving branch routers only a single default route.

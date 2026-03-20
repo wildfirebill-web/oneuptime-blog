@@ -91,6 +91,7 @@ resource "azurerm_kubernetes_cluster" "monitored" {
 
 ```hcl
 # Azure Monitor workspace for Prometheus metrics
+
 resource "azurerm_monitor_workspace" "prometheus" {
   name                = "${var.project_name}-prometheus-workspace"
   resource_group_name = var.resource_group_name
@@ -200,4 +201,4 @@ kubectl logs -n production deployment/api-server -f
 
 ## Conclusion
 
-Enable `msi_auth_for_monitoring_enabled = true` to use managed identity for the OMS agent rather than workspace keys, simplifying secret management. Container Insights generates significant log volume in large clusters—use log filtering with the Data Collection Rule API to exclude verbose container logs from specific namespaces or containers. Enable Azure Managed Prometheus alongside Container Insights: Container Insights excels at cluster health and Kubernetes events, while Prometheus captures application-level custom metrics. Use Log Analytics workbooks (pre-built at `portal.azure.com`) for cluster overview dashboards without writing custom queries.
+Enable `msi_auth_for_monitoring_enabled = true` to use managed identity for the OMS agent rather than workspace keys, simplifying secret management. Container Insights generates significant log volume in large clusters-use log filtering with the Data Collection Rule API to exclude verbose container logs from specific namespaces or containers. Enable Azure Managed Prometheus alongside Container Insights: Container Insights excels at cluster health and Kubernetes events, while Prometheus captures application-level custom metrics. Use Log Analytics workbooks (pre-built at `portal.azure.com`) for cluster overview dashboards without writing custom queries.

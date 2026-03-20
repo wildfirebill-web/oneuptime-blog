@@ -8,7 +8,7 @@ Description: Learn how to configure keyless authentication for AWS, Azure, and G
 
 ## Introduction
 
-Multi-cloud OpenTofu deployments need to authenticate to multiple providers in the same CI run. The modern approach uses OIDC (OpenID Connect) to exchange short-lived tokens from your CI provider (GitHub Actions, GitLab) for cloud credentials — no long-lived secrets stored in CI variables.
+Multi-cloud OpenTofu deployments need to authenticate to multiple providers in the same CI run. The modern approach uses OIDC (OpenID Connect) to exchange short-lived tokens from your CI provider (GitHub Actions, GitLab) for cloud credentials - no long-lived secrets stored in CI variables.
 
 ## AWS: OIDC with GitHub Actions
 
@@ -16,6 +16,7 @@ Set up an IAM OIDC identity provider and role:
 
 ```hcl
 # AWS OIDC provider for GitHub Actions
+
 resource "aws_iam_openid_connect_provider" "github" {
   url             = "https://token.actions.githubusercontent.com"
   client_id_list  = ["sts.amazonaws.com"]
@@ -187,4 +188,4 @@ jobs:
 
 ## Conclusion
 
-Use OIDC/Workload Identity Federation for all three major cloud providers — it eliminates long-lived credentials from CI. For AWS, configure an IAM OIDC provider; for Azure, use federated credentials on an App Registration; for GCP, create a Workload Identity Pool. Set `permissions: id-token: write` in GitHub Actions to enable token exchange. No secrets need to be stored in CI variables when using these keyless authentication patterns.
+Use OIDC/Workload Identity Federation for all three major cloud providers - it eliminates long-lived credentials from CI. For AWS, configure an IAM OIDC provider; for Azure, use federated credentials on an App Registration; for GCP, create a Workload Identity Pool. Set `permissions: id-token: write` in GitHub Actions to enable token exchange. No secrets need to be stored in CI variables when using these keyless authentication patterns.

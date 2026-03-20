@@ -28,6 +28,7 @@ Azure Files lives inside a standard Azure Storage account. You can use an existi
 
 ```bash
 # Create a storage account optimized for Azure Files
+
 az storage account create \
   --name myfilesaccount \
   --resource-group myresourcegroup \

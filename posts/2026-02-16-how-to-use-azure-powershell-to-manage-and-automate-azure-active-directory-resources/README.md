@@ -20,6 +20,7 @@ Install the required modules:
 
 ```powershell
 # Install the Microsoft Graph PowerShell modules for identity management
+
 Install-Module Microsoft.Graph.Users -Scope CurrentUser -Force
 Install-Module Microsoft.Graph.Groups -Scope CurrentUser -Force
 Install-Module Microsoft.Graph.Applications -Scope CurrentUser -Force

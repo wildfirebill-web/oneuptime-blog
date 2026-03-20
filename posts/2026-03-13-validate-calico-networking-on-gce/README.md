@@ -37,6 +37,7 @@ done
 
 ```bash
 # List all Calico-related firewall rules
+
 gcloud compute firewall-rules list \
   --filter="name~calico OR name~kubelet OR name~vxlan" \
   --format="table(name,direction,allowed[].map().firewall_rule():label=ALLOW,targetTags.list())"

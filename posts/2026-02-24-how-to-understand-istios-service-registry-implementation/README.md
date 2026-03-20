@@ -182,6 +182,7 @@ In a multi-cluster setup, each istiod instance watches its local Kubernetes API 
 
 ```bash
 # Remote secrets that enable multi-cluster
+
 kubectl get secrets -n istio-system -l istio/multiCluster=true
 ```
 

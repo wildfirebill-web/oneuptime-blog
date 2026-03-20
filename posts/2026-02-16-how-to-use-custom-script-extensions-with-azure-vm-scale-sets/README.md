@@ -30,6 +30,7 @@ Here is a basic example that installs nginx and deploys a web application on eac
 
 ```bash
 # Add the Custom Script Extension to a scale set
+
 az vmss extension set \
   --resource-group myResourceGroup \
   --vmss-name myScaleSet \

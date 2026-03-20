@@ -16,6 +16,7 @@ The simplest way to check if a file on a remote host matches what Ansible would 
 
 ```yaml
 # Check if the remote config matches the expected template
+
 - name: Check if nginx config is in sync
   ansible.builtin.template:
     src: templates/nginx.conf.j2

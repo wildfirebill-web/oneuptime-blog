@@ -18,6 +18,7 @@ To switch to Cilium on Talos Linux, you can modify your machine configuration:
 
 ```yaml
 # talos-machine-config.yaml snippet
+
 cluster:
   network:
     cni:

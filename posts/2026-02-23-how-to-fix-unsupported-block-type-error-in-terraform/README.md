@@ -51,6 +51,7 @@ The most common case is simply using the wrong name for a block:
 
 ```hcl
 # WRONG - the block is called "network_interface", not "network"
+
 resource "aws_instance" "web" {
   ami           = "ami-0123456789abcdef0"
   instance_type = "t3.micro"

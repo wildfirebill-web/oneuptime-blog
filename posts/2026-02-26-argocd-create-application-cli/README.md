@@ -16,6 +16,7 @@ Make sure the CLI is installed and connected:
 
 ```bash
 # Check CLI version
+
 argocd version --client
 
 # Login to ArgoCD

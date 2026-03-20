@@ -63,6 +63,7 @@ On-demand is ideal for unpredictable workloads, new applications, or traffic wit
 
 ```python
 # AWS SDK (boto3) example: Creating a table with on-demand capacity
+
 # On-demand mode automatically scales to handle any traffic level
 # You pay per request rather than for pre-allocated capacity
 

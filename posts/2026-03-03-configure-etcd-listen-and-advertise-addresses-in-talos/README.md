@@ -41,6 +41,7 @@ To override the default etcd configuration, modify the machine config for your c
 
 ```yaml
 # controlplane-patch.yaml
+
 cluster:
   etcd:
     # Advertise address for this etcd member

@@ -19,7 +19,7 @@ Benefits:
 
 Define the peer group under the BGP router process:
 
-```
+```text
 router bgp 65001
  ! Create a peer group called CUSTOMERS
  neighbor CUSTOMERS peer-group
@@ -36,7 +36,7 @@ router bgp 65001
 
 Define policy once on the group instead of on each neighbor:
 
-```
+```text
 router bgp 65001
  ! Apply prefix lists to peer group
  neighbor CUSTOMERS prefix-list CUSTOMER_PREFIXES in
@@ -53,7 +53,7 @@ router bgp 65001
 
 Now assign individual neighbor IPs to the peer group:
 
-```
+```text
 router bgp 65001
  ! Individual customers inherit all CUSTOMERS peer group settings
  neighbor 10.1.1.1 peer-group CUSTOMERS
@@ -68,7 +68,7 @@ Each neighbor automatically inherits the group's route maps, prefix lists, timer
 
 Use multiple peer groups for different peer types:
 
-```
+```text
 router bgp 65001
 
  ! iBGP peer group for internal route reflector clients
@@ -100,7 +100,7 @@ router bgp 65001
 
 Individual neighbors can override specific peer group settings:
 
-```
+```text
 router bgp 65001
  ! Member 10.1.5.1 needs a higher max-prefix limit than the group default
  neighbor 10.1.5.1 peer-group CUSTOMERS
@@ -111,7 +111,7 @@ Most per-neighbor settings override peer group defaults.
 
 ## Step 6: Verify Peer Group Configuration
 
-```
+```text
 ! Show peer group details
 Router# show ip bgp peer-group CUSTOMERS
 
@@ -131,7 +131,7 @@ Router# show ip bgp neighbors 10.1.1.1 | include peer-group
 
 In the address-family model, activate peer groups within the address family:
 
-```
+```text
 router bgp 65001
  neighbor CUSTOMERS peer-group
  neighbor CUSTOMERS remote-as 65100

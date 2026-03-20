@@ -22,6 +22,7 @@ Add binary media types to your REST API:
 
 ```bash
 # Add specific binary media types
+
 aws apigateway update-rest-api \
   --rest-api-id abc123api \
   --patch-operations \

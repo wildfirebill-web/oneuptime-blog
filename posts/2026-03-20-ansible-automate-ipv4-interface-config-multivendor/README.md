@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Multi-Vendor, IPv4, Network Automation, IOS, JunOS, EOS, VyOS
+Tags: Ansible, Multi-Vendor, IPv4, Network Automation, IOS, Junos, EOS, VyOS
 
 Description: Build an Ansible playbook that configures IPv4 interfaces across Cisco IOS, Arista EOS, Juniper JunOS, and VyOS devices using a single role with vendor-specific task files.
 
@@ -12,7 +12,7 @@ Multi-vendor networks require different modules for each OS, but the desired sta
 
 ## Directory Structure
 
-```
+```text
 ipv4_interfaces/
 ├── inventory.ini
 ├── site.yml
@@ -62,7 +62,7 @@ vy1 ansible_host=10.1.1.30 wan_interface=eth0 wan_ip=198.51.100.2 wan_prefix=30 
 
 ```yaml
 ---
-- name: Configure IPv4 interfaces — all vendors
+- name: Configure IPv4 interfaces - all vendors
   hosts: all
   gather_facts: false
 

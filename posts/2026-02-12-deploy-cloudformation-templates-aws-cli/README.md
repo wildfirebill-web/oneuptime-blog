@@ -18,6 +18,7 @@ If you haven't installed the CLI yet, grab version 2:
 
 ```bash
 # Install AWS CLI v2 on macOS
+
 brew install awscli
 
 # Or on Linux

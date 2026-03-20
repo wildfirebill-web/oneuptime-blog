@@ -16,6 +16,7 @@ Most AWS resources use the simple map format:
 
 ```hcl
 # Simple map format - used by most resources
+
 resource "aws_instance" "app" {
   ami           = data.aws_ami.app.id
   instance_type = "t3.medium"

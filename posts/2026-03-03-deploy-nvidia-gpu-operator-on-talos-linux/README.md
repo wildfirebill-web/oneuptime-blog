@@ -41,6 +41,7 @@ First, create a custom Talos image that includes the NVIDIA system extensions:
 
 ```bash
 # Build custom Talos installer with NVIDIA extensions
+
 docker run --rm -t -v $PWD/_out:/out \
   ghcr.io/siderolabs/imager:v1.6.0 installer \
   --system-extension-image ghcr.io/siderolabs/nvidia-open-gpu-kernel-modules:535.129.03-v1.6.0 \

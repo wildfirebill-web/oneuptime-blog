@@ -44,6 +44,7 @@ Add each target cluster to ArgoCD:
 
 ```bash
 # Add US-East cluster
+
 argocd cluster add us-east-cluster \
   --name us-east \
   --kubeconfig /path/to/us-east-kubeconfig

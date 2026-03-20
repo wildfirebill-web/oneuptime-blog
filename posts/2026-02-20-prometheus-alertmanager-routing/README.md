@@ -30,6 +30,7 @@ The Alertmanager configuration file has three main sections: `global`, `route`, 
 
 ```yaml
 # alertmanager.yml
+
 # Global settings apply to all notification integrations
 global:
   # Default SMTP settings for email notifications

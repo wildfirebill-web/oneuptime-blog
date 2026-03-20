@@ -46,6 +46,7 @@ sequenceDiagram
 
 ```bash
 # Generate Ed25519 key pair
+
 # -t ed25519: Use Ed25519 algorithm (fast, secure, short keys)
 # -C: Add a comment (usually email) for identification
 ssh-keygen -t ed25519 -C "your.email@example.com"

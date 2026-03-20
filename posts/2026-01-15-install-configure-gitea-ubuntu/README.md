@@ -33,6 +33,7 @@ Gitea is a lightweight, self-hosted Git service written in Go. It provides GitHu
 
 ```bash
 # Update system
+
 sudo apt update
 
 # Install Git

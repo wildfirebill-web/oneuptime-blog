@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tc, netem, Packet Corruption, Network Testing, IPv4, Linux, QoS
+Tags: tc, Netem, Packet Corruption, Network Testing, IPv4, Linux, QoS
 
 Description: Use Linux tc netem to inject artificial packet corruption on a network interface to test application resilience and error handling under degraded IPv4 network conditions.
 
@@ -20,6 +20,7 @@ Apply a netem qdisc to a network interface:
 
 ```bash
 # Add netem qdisc with 0.1% packet corruption to eth0
+
 sudo tc qdisc add dev eth0 root netem corrupt 0.1%
 
 # Verify the rule was added

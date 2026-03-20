@@ -29,6 +29,7 @@ A simple CORS rule that allows GET requests from a specific domain.
 
 ```hcl
 # Create the S3 bucket
+
 resource "aws_s3_bucket" "assets" {
   bucket_prefix = "app-assets-"
 

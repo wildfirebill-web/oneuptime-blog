@@ -28,6 +28,7 @@ Here is a Python implementation using the `websockets` library with a simple cha
 
 ```python
 # server.py - WebSocket server for real-time communication
+
 import os
 import json
 import asyncio

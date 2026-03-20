@@ -268,6 +268,7 @@ Test each allowed path to make sure it works:
 
 ```bash
 # Should succeed - order-service calling inventory-service
+
 kubectl exec deploy/order-service -n backend -c order-service -- \
   curl -s -o /dev/null -w "%{http_code}" http://inventory-service:8080/api/inventory/item-123
 

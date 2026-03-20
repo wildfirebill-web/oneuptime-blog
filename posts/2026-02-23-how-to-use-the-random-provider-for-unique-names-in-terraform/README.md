@@ -20,6 +20,7 @@ The random provider is a utility provider maintained by HashiCorp that generates
 
 ```hcl
 # main.tf - Configure the random provider
+
 terraform {
   required_version = ">= 1.5.0"
 

@@ -38,6 +38,7 @@ Start with a simple in-memory toggle system. This works for development and smal
 
 ```python
 # toggles/basic.py
+
 # Simple in-memory feature toggle implementation
 from typing import Dict, Any, Optional
 from dataclasses import dataclass

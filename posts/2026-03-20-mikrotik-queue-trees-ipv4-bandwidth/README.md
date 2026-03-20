@@ -14,6 +14,7 @@ MikroTik Queue Trees implement hierarchical token bucket (HTB) queuing. Combined
 
 ```mikrotik
 # Limit a single host to 5 Mbps download / 2 Mbps upload
+
 /queue simple add \
   name=limit-pc1 \
   target=192.168.1.100/32 \
@@ -28,7 +29,7 @@ MikroTik Queue Trees implement hierarchical token bucket (HTB) queuing. Combined
   comment="Guest Wi-Fi cap"
 ```
 
-## Queue Tree — Hierarchical Bandwidth
+## Queue Tree - Hierarchical Bandwidth
 
 ```mikrotik
 # Step 1: Mark traffic with mangle
@@ -65,7 +66,7 @@ MikroTik Queue Trees implement hierarchical token bucket (HTB) queuing. Combined
   packet-mark=VOIP \
   priority=1 \
   max-limit=10M \
-  comment="VoIP — high priority"
+  comment="VoIP - high priority"
 
 /queue tree add \
   name=GENERAL-DOWNLOAD \

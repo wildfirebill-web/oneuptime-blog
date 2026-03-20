@@ -20,6 +20,7 @@ Consider this scenario:
 
 ```yaml
 # This is NOT sufficient for reliable startup
+
 services:
   app:
     build: .

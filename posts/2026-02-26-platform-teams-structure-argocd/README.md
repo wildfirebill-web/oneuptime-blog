@@ -51,6 +51,7 @@ Each team gets an AppProject that defines what they can deploy and where.
 
 ```yaml
 # projects/team-alpha.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

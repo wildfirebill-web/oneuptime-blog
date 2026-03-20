@@ -33,6 +33,7 @@ This guide covers preventative measures across the full lifecycle: initial setup
 
 ```bash
 # Audit current IP pool CIDRs for overlaps with node subnets
+
 calicoctl get ippool -o yaml
 
 # Check node subnet allocations

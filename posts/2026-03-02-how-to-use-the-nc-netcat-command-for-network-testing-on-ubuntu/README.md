@@ -16,6 +16,7 @@ Ubuntu typically includes `netcat-openbsd` by default. Verify or install it:
 
 ```bash
 # Check what is installed
+
 which nc
 nc -h 2>&1 | head -5
 

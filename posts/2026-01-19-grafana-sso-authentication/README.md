@@ -29,6 +29,7 @@ OAuth is the most common SSO method. Configure it in `grafana.ini` or environmen
 
 ```ini
 # /etc/grafana/grafana.ini
+
 [auth.generic_oauth]
 enabled = true
 name = Corporate SSO

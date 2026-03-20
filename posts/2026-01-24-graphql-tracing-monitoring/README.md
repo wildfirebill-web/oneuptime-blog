@@ -453,6 +453,7 @@ Configure alerts for GraphQL-specific issues.
 
 ```yaml
 # prometheus-alerts.yml
+
 # Alert rules for GraphQL API monitoring
 
 groups:

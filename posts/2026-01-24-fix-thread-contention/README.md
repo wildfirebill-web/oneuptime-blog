@@ -46,6 +46,7 @@ sequenceDiagram
 
 ```bash
 # Get thread dump from running Java process
+
 jstack <pid> > threaddump.txt
 
 # Or trigger from within the JVM

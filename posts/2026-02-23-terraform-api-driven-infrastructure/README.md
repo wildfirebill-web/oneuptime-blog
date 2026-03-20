@@ -24,6 +24,7 @@ The Terraform Cloud API is comprehensive and well-documented. Here are the essen
 
 ```bash
 # Set up API authentication
+
 export TFC_TOKEN="your-terraform-cloud-token"
 export TFC_ORG="your-organization"
 export TFC_API="https://app.terraform.io/api/v2"

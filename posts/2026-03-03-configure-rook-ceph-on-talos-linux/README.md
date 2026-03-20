@@ -50,6 +50,7 @@ Apply the configuration to your nodes:
 
 ```bash
 # Apply to all worker nodes that will run Ceph
+
 talosctl apply-config --nodes 192.168.1.11 --file worker-ceph.yaml
 talosctl apply-config --nodes 192.168.1.12 --file worker-ceph.yaml
 talosctl apply-config --nodes 192.168.1.13 --file worker-ceph.yaml

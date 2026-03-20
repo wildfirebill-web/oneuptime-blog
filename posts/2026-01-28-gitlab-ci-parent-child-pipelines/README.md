@@ -38,6 +38,7 @@ trigger-child:
 
 ```yaml
 # .gitlab/child-pipeline.yml
+
 stages:
   - test
   - package

@@ -27,6 +27,7 @@ Remove dangling images only:
 
 ```bash
 # Remove images with no tag and no container reference (dangling)
+
 docker image prune -f
 ```
 

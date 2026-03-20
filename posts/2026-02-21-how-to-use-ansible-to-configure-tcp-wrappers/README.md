@@ -39,6 +39,7 @@ This playbook checks which installed services support TCP Wrappers:
 
 ```yaml
 # check_tcpwrappers.yml - Check TCP Wrapper support
+
 ---
 - name: Check TCP Wrapper support on services
   hosts: all

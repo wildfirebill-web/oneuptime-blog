@@ -20,6 +20,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - PocketBase
+
 version: "3.8"
 
 services:
@@ -124,4 +125,4 @@ docker cp pocketbase:/pb/pb_data/data.db ./pocketbase_backup.db
 
 ## Conclusion
 
-PocketBase's SQLite-backed design means zero external database dependencies — the entire application state lives in a single directory. The `pb_data` volume contains `data.db` (the SQLite database) and uploaded files. For production, mount `pb_data` on fast storage (SSD) and back up the directory regularly. PocketBase also supports JS/Go hooks for custom server-side logic via the `pb_hooks` directory.
+PocketBase's SQLite-backed design means zero external database dependencies - the entire application state lives in a single directory. The `pb_data` volume contains `data.db` (the SQLite database) and uploaded files. For production, mount `pb_data` on fast storage (SSD) and back up the directory regularly. PocketBase also supports JS/Go hooks for custom server-side logic via the `pb_hooks` directory.

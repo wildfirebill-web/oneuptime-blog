@@ -14,6 +14,7 @@ Environment variables are the most portable authentication method for OpenTofu w
 
 ```bash
 # Long-term access key credentials
+
 export AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
 export AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 
@@ -29,7 +30,7 @@ With these variables set, the AWS provider requires no explicit configuration:
 ```hcl
 provider "aws" {
   # Region can also come from AWS_DEFAULT_REGION or AWS_REGION
-  # No credentials needed here — they come from environment variables
+  # No credentials needed here - they come from environment variables
 }
 ```
 
@@ -135,4 +136,4 @@ Environment variables take precedence over credential files and instance metadat
 
 ## Conclusion
 
-Environment variables are the most flexible and portable way to authenticate OpenTofu with AWS. Combine them with OIDC authentication in GitHub Actions or IAM instance profiles for production workloads—eliminating long-lived static credentials entirely.
+Environment variables are the most flexible and portable way to authenticate OpenTofu with AWS. Combine them with OIDC authentication in GitHub Actions or IAM instance profiles for production workloads-eliminating long-lived static credentials entirely.

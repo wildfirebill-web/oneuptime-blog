@@ -90,6 +90,7 @@ For production, disable node-to-node mesh at scale and configure route reflector
 
 ```bash
 # Disable mesh for large clusters
+
 calicoctl patch bgpconfiguration default \
   -p '{"spec":{"nodeToNodeMeshEnabled":false,"asNumber":65000}}'
 ```

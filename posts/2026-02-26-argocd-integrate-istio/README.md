@@ -116,6 +116,7 @@ The biggest source of diff noise is Istio's sidecar injection. Configure ArgoCD 
 
 ```yaml
 # argocd-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

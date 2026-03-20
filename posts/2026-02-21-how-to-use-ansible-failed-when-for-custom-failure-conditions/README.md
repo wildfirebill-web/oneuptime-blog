@@ -16,6 +16,7 @@ Consider this example: you run a database migration script that always exits wit
 
 ```yaml
 # Without failed_when, this reports success even when migration fails
+
 - name: Run database migration
   ansible.builtin.command:
     cmd: /opt/app/bin/migrate.sh

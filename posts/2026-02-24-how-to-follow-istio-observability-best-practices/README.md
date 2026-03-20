@@ -25,6 +25,7 @@ Build your SLI/SLO dashboards around request rate, error rate, and latency (the 
 
 ```text
 # Error rate
+
 sum(rate(istio_requests_total{response_code=~"5.*"}[5m])) by (destination_service)
 /
 sum(rate(istio_requests_total[5m])) by (destination_service)

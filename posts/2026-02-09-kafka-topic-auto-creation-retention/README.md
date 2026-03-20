@@ -84,6 +84,7 @@ Apply the configuration:
 kubectl apply -f kafka-cluster.yaml
 
 # Verify auto-creation is disabled
+
 kubectl exec -n kafka production-cluster-kafka-0 -- bin/kafka-configs.sh \
   --bootstrap-server localhost:9092 \
   --entity-type brokers \

@@ -38,6 +38,7 @@ Before starting, make sure you have:
 
 ```bash
 # Check your systemd version
+
 systemd --version
 
 # Install systemd-container which includes portablectl

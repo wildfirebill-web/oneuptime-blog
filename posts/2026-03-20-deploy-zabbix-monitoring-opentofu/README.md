@@ -185,4 +185,4 @@ resource "aws_service_discovery_service" "zabbix_server" {
 
 ## Conclusion
 
-Deploying Zabbix with OpenTofu on AWS creates a scalable monitoring platform. The MySQL parameter group tuning is important for Zabbix performance — the default MySQL settings are inadequate for the write-heavy monitoring workload. Use Cloud Map for service discovery between the Zabbix server and web frontend containers. For monitoring agents (Zabbix proxies), deploy them as sidecar containers or separate ECS services in the networks where the monitored hosts reside.
+Deploying Zabbix with OpenTofu on AWS creates a scalable monitoring platform. The MySQL parameter group tuning is important for Zabbix performance - the default MySQL settings are inadequate for the write-heavy monitoring workload. Use Cloud Map for service discovery between the Zabbix server and web frontend containers. For monitoring agents (Zabbix proxies), deploy them as sidecar containers or separate ECS services in the networks where the monitored hosts reside.

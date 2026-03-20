@@ -21,6 +21,7 @@ Upgrade Istio from the current version to a target version using the canary upgr
 
 ```bash
 # 1. Record current version
+
 istioctl version
 CURRENT_VERSION=$(istioctl version --short --remote=false)
 

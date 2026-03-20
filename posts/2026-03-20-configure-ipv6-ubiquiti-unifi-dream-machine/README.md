@@ -23,7 +23,7 @@ Navigate to `https://192.168.1.1` (default gateway) or your custom UniFi Network
 2. Click on your WAN connection
 3. Under **IPv6 Connection**, configure:
 
-```
+```text
 IPv6 Connection Type:
   ○ Disabled
   ● DHCPv6  ← (most common for cable/fiber ISPs)
@@ -43,7 +43,7 @@ IPv6 Rapid Commit: ☑ Enable
 2. Click your LAN network (or create a new one)
 3. Under **IPv6**, configure:
 
-```
+```text
 IPv6 Interface Type: Prefix Delegation
 
 IPv6 RA (Router Advertisement):
@@ -63,7 +63,7 @@ DNS Server: [auto from ISP or custom]
 
 For home labs with multiple VLANs, each can get its own /64 from the delegated prefix:
 
-```
+```text
 LAN (VLAN 1):   2001:db8::/64   (from /56 delegation)
 IoT (VLAN 10):  2001:db8:10::/64
 Lab (VLAN 20):  2001:db8:20::/64
@@ -79,7 +79,7 @@ UniFi's default IPv6 firewall blocks all inbound traffic. Add rules for specific
 2. Select **IPv6 Rules** tab
 3. Click **Create New Rule**:
 
-```
+```text
 Rule: Allow inbound HTTPS to home server
 Direction: WAN Local (or WAN In for transit)
 IPv6 Protocol: TCP
@@ -90,7 +90,7 @@ Action: Accept
 
 Critical: Always allow ICMPv6 (required for NDP and PMTUD):
 
-```
+```text
 Rule: Allow ICMPv6
 Direction: WAN In
 Protocol: ICMPv6
@@ -102,12 +102,13 @@ Action: Accept
 In UniFi Network console:
 
 1. Go to **Statistics → Network** to see IPv6 traffic
-2. Check **Clients** — each device should show both IPv4 and IPv6 addresses
+2. Check **Clients** - each device should show both IPv4 and IPv6 addresses
 
 From the command line (SSH to UDM):
 
 ```bash
 # SSH to UDM
+
 ssh root@192.168.1.1
 
 # Check WAN IPv6 address
@@ -124,7 +125,7 @@ cat /run/dhclient6.eth8.pid
 
 Configure custom IPv6 DNS in **Settings → Networks → DNS**:
 
-```
+```text
 DNS Server 1: 2001:4860:4860::8888
 DNS Server 2: 2606:4700:4700::1111
 ```

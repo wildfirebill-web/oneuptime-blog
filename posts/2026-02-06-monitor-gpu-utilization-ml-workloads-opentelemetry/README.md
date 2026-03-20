@@ -44,6 +44,7 @@ The most straightforward way to collect GPU metrics is by querying NVIDIA's mana
 
 ```bash
 # Install the required packages
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp pynvml
 ```
 

@@ -26,6 +26,7 @@ Certificate authentication is stronger than passwords and integrates with your P
 
 ```bash
 # Create a dedicated CA for Calico etcd clients
+
 openssl genrsa -out calico-etcd-ca.key 4096
 openssl req -x509 -new -key calico-etcd-ca.key \
   -out calico-etcd-ca.crt -days 3650 \

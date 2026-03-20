@@ -70,6 +70,7 @@ Bursting (default):
 
 ```bash
 # Create with bursting throughput (the default)
+
 aws efs create-file-system \
   --throughput-mode bursting \
   --encrypted \

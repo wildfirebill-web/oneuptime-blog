@@ -18,6 +18,7 @@ By default, talosctl looks for its configuration at `~/.talos/config`. You can o
 
 ```bash
 # Default location
+
 ~/.talos/config
 
 # Override with environment variable

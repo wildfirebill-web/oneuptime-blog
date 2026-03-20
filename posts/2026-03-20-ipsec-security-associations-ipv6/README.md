@@ -8,7 +8,7 @@ Description: Learn how IPsec Security Associations work in IPv6 networks, includ
 
 ## Overview
 
-A Security Association (SA) is a one-way logical connection between two IPv6 hosts that defines the cryptographic parameters (algorithm, key, SPI) for IPsec processing. Every IPsec tunnel requires two SAs — one in each direction. Understanding SAs is fundamental to troubleshooting IPsec issues.
+A Security Association (SA) is a one-way logical connection between two IPv6 hosts that defines the cryptographic parameters (algorithm, key, SPI) for IPsec processing. Every IPsec tunnel requires two SAs - one in each direction. Understanding SAs is fundamental to troubleshooting IPsec issues.
 
 ## SA Components
 
@@ -26,7 +26,7 @@ Together these form the SA selector: `(SPI, dst, protocol)`
 
 The SAD contains all active SAs. Each entry includes:
 
-```
+```text
 SA Parameters:
   SPI:           0xABC123
   Protocol:      ESP
@@ -44,6 +44,7 @@ SA Parameters:
 
 ```bash
 # View SAD on Linux
+
 ip xfrm state list
 
 # Detailed view

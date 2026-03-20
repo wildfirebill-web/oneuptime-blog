@@ -36,6 +36,7 @@ You need:
 
 ```bash
 # Check your current storage layout
+
 lsblk
 pvs
 vgs

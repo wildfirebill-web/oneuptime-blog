@@ -26,6 +26,7 @@ A `KafkaTopic` resource maps directly to a Kafka topic with all its configuratio
 
 ```yaml
 # The minimal KafkaTopic structure:
+
 apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaTopic
 metadata:

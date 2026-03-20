@@ -20,6 +20,7 @@ Launch an instance for the VPN server:
 
 ```bash
 # Create security group
+
 aws ec2 create-security-group \
   --group-name openvpn-sg \
   --description "OpenVPN server" \

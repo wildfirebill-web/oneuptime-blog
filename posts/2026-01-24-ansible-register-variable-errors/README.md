@@ -41,6 +41,7 @@ Basic register usage:
 ```yaml
 ---
 # Basic register example
+
 - name: Get current date
   ansible.builtin.command: date
   register: date_output

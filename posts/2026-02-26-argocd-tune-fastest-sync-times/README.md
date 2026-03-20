@@ -33,6 +33,7 @@ Configure a webhook in your Git provider that points to your ArgoCD API server.
 
 ```yaml
 # ArgoCD webhook endpoint
+
 # GitHub: https://argocd.example.com/api/webhook
 # GitLab: https://argocd.example.com/api/webhook
 # Bitbucket: https://argocd.example.com/api/webhook

@@ -31,6 +31,7 @@ The Tang server should be a separate, hardened machine on your network. Install 
 
 ```bash
 # Install Tang
+
 sudo apt update
 sudo apt install -y tang
 

@@ -8,12 +8,13 @@ Description: Understand the IPv6 documentation address spaces 2001:db8::/32 and 
 
 ## Introduction
 
-RFC 3849 reserves `2001:db8::/32` for use in documentation, books, and examples — similar to IPv4's `192.0.2.0/24`. RFC 9637 allocates the additional `3fff::/20` block for documentation purposes. These addresses must never appear in production configurations.
+RFC 3849 reserves `2001:db8::/32` for use in documentation, books, and examples - similar to IPv4's `192.0.2.0/24`. RFC 9637 allocates the additional `3fff::/20` block for documentation purposes. These addresses must never appear in production configurations.
 
 ## Usage in Examples
 
 ```bash
 # CORRECT: Use 2001:db8:: in all documentation/examples
+
 ping6 2001:db8::1
 ssh 2001:db8::server
 curl http://[2001:db8::1]/

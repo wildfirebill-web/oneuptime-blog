@@ -262,6 +262,7 @@ Keep an eye on storage consumption to make sure your retention policies are work
 
 ```bash
 # Check Prometheus TSDB status
+
 kubectl exec -n monitoring prometheus-0 -- promtool tsdb list /prometheus
 
 # Check storage usage

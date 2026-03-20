@@ -53,6 +53,7 @@ Deploy a collector in each network zone. The on-premise collector exports to a c
 
 ```yaml
 # on-premise-collector-config.yaml
+
 # Collector in the on-premise data center.
 # Exports to the cloud gateway collector over a VPN or direct connect link.
 receivers:

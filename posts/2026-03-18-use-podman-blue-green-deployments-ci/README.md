@@ -21,6 +21,7 @@ The blue-green pattern involves two environments: one serves live traffic while 
 ```bash
 #!/bin/bash
 # Blue-green deployment concept:
+
 #
 # Blue (active) <-- Load Balancer --> Users
 # Green (idle)

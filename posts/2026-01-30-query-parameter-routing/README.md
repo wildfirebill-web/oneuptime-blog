@@ -42,6 +42,7 @@ The most fundamental operation is matching a specific query parameter value.
 
 ```yaml
 # Kong Gateway Configuration
+
 services:
   - name: users-api-v2
     url: http://users-v2.internal:8080

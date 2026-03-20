@@ -20,6 +20,7 @@ Custom metrics infrastructure often grows organically. Someone adds a metric fil
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

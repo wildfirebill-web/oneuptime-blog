@@ -26,6 +26,7 @@ List all hosted clusters and their CIDRs to ensure there is no overlap.
 
 ```bash
 # On the management cluster
+
 oc get hostedcluster -A -o jsonpath='{range .items[*]}{.metadata.name}: {.spec.networking.clusterNetwork[0].cidr}{"\n"}{end}'
 ```
 

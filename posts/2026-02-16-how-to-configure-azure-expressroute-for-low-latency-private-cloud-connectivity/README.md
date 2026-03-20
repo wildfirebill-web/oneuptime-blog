@@ -64,6 +64,7 @@ Start by creating the circuit in Azure:
 
 ```bash
 # Create the ExpressRoute circuit
+
 # The provider and peering location depend on your connectivity provider
 az network express-route create \
   --resource-group network-rg \

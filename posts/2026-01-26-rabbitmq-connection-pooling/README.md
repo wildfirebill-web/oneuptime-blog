@@ -148,6 +148,7 @@ class RabbitMQConnectionPool:
 
 
 # Context manager for automatic release
+
 class PooledConnection:
     def __init__(self, pool):
         self.pool = pool

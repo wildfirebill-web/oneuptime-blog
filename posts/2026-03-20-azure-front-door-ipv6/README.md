@@ -8,7 +8,7 @@ Description: Configure Azure Front Door to accept IPv6 client connections, enabl
 
 ## Introduction
 
-Azure Front Door is a global HTTP/HTTPS load balancer and CDN that supports IPv6 by default. All Front Door endpoints accept IPv6 connections from clients because Front Door operates from Microsoft's anycast network which has global IPv6 presence. Backend origins can be IPv4-only — Front Door handles IPv6 termination and connects to backends over IPv4 or IPv6 as available.
+Azure Front Door is a global HTTP/HTTPS load balancer and CDN that supports IPv6 by default. All Front Door endpoints accept IPv6 connections from clients because Front Door operates from Microsoft's anycast network which has global IPv6 presence. Backend origins can be IPv4-only - Front Door handles IPv6 termination and connects to backends over IPv4 or IPv6 as available.
 
 ## Azure Front Door Classic with IPv6
 
@@ -16,6 +16,7 @@ Azure Front Door is a global HTTP/HTTPS load balancer and CDN that supports IPv6
 RG="rg-frontdoor"
 
 # Front Door Classic (legacy) supports IPv6 by default
+
 # Just create the profile and IPv6 works automatically
 
 az network front-door create \
@@ -156,4 +157,4 @@ az network dns record-set cname set-record \
 
 ## Conclusion
 
-Azure Front Door supports IPv6 natively — all Front Door endpoints automatically respond to IPv6 clients through Microsoft's anycast network. No special IPv6 configuration is required. The Front Door domain names have AAAA records resolving to anycast IPv6 addresses. Custom domains using CNAME to the Front Door endpoint inherit IPv6 accessibility. Backends can be IPv4-only since Front Door terminates IPv6 connections at the edge and connects to origins over IPv4 or IPv6 as needed.
+Azure Front Door supports IPv6 natively - all Front Door endpoints automatically respond to IPv6 clients through Microsoft's anycast network. No special IPv6 configuration is required. The Front Door domain names have AAAA records resolving to anycast IPv6 addresses. Custom domains using CNAME to the Front Door endpoint inherit IPv6 accessibility. Backends can be IPv4-only since Front Door terminates IPv6 connections at the edge and connects to origins over IPv4 or IPv6 as needed.

@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Security Scanning, Trivy, Falco, CIS, Kubernetes, Vulnerability Management
 
-Description: Automate security scanning in Rancher using Trivy for container image vulnerabilities, CIS benchmark scanning for cluster hardening, NeuVector for runtime scanning, and integrate findings into CI/CD pipelines.
+Description: Automate security scanning in Rancher using Trivy for container image vulnerabilities, CIS benchmark scanning for cluster hardening, NeuVector for runtime scanning, and integrate findings into...
 
 ## Introduction
 
-Security scanning in Rancher must be continuous—new CVEs emerge daily, configurations drift, and new images are deployed constantly. Automating security scanning at multiple layers (images in CI/CD, running containers, cluster configuration) creates a continuous security posture that catches vulnerabilities before they become incidents.
+Security scanning in Rancher must be continuous-new CVEs emerge daily, configurations drift, and new images are deployed constantly. Automating security scanning at multiple layers (images in CI/CD, running containers, cluster configuration) creates a continuous security posture that catches vulnerabilities before they become incidents.
 
 ## Step 1: Image Scanning with Trivy Operator
 
 ```bash
 # Install Trivy Operator for continuous image scanning
+
 helm repo add aqua https://aquasecurity.github.io/helm-charts/
 helm install trivy-operator aqua/trivy-operator \
   --namespace trivy-system \
@@ -226,4 +227,4 @@ done
 
 ## Conclusion
 
-Automated security scanning in Rancher creates continuous visibility into vulnerabilities across the entire Kubernetes environment. Trivy Operator scans running containers continuously, CIS benchmark scans run weekly to catch configuration drift, and CI/CD pipeline scanning blocks critical vulnerabilities before deployment. Falco provides runtime threat detection for active attack indicators. Feed all findings into a central dashboard and alert on critical issues immediately—automated remediation (quarantine) for pods with critical CVEs reduces exposure time.
+Automated security scanning in Rancher creates continuous visibility into vulnerabilities across the entire Kubernetes environment. Trivy Operator scans running containers continuously, CIS benchmark scans run weekly to catch configuration drift, and CI/CD pipeline scanning blocks critical vulnerabilities before deployment. Falco provides runtime threat detection for active attack indicators. Feed all findings into a central dashboard and alert on critical issues immediately-automated remediation (quarantine) for pods with critical CVEs reduces exposure time.

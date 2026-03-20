@@ -26,6 +26,7 @@ Each probe location runs a lightweight collector that executes HTTP checks and f
 
 ```yaml
 # probe-collector.yaml
+
 # Deployed in each monitoring region. Runs HTTP checks against all API
 # endpoints and forwards the results to the central aggregation collector.
 

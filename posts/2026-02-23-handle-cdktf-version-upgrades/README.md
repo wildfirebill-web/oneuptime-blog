@@ -29,6 +29,7 @@ Before upgrading anything, document what you are running:
 
 ```bash
 # Check CDKTF CLI version
+
 cdktf --version
 
 # Check installed packages

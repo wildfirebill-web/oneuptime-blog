@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SSH, Security, IPv4, sshd_config, Tunneling, Access Control, AllowTcpForwarding
+Tags: SSH, Security, IPv4, Sshd_config, Tunneling, Access Control, AllowTcpForwarding
 
 Description: Learn how to restrict SSH tunneling and port forwarding to specific IPv4 addresses in sshd_config to prevent unauthorized tunnel abuse.
 
@@ -25,6 +25,7 @@ SSH tunneling (port forwarding) is a powerful feature that can be abused to bypa
 # /etc/ssh/sshd_config
 
 # --- Global: disable all TCP forwarding by default ---
+
 AllowTcpForwarding no
 GatewayPorts no
 
@@ -75,7 +76,7 @@ Match User deployment_bot
 
 For key-based authentication, you can restrict tunneling on a per-key basis in `~/.ssh/authorized_keys`:
 
-```
+```text
 # Allow this key only from 192.168.1.10; disable port forwarding for this key
 from="192.168.1.10",no-port-forwarding,no-x11-forwarding,no-agent-forwarding ssh-ed25519 AAAA... comment
 ```

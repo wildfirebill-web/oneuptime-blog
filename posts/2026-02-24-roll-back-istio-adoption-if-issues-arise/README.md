@@ -30,6 +30,7 @@ If a specific Istio resource is causing issues, just delete it:
 
 ```bash
 # Remove a problematic VirtualService
+
 kubectl delete virtualservice my-service -n my-namespace
 
 # Remove an authorization policy that is blocking traffic

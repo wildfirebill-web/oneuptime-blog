@@ -191,6 +191,7 @@ You can also manually trigger a refresh:
 
 ```bash
 # Manually refresh a materialized view
+
 bq query --nouse_legacy_sql \
     "CALL BQ.REFRESH_MATERIALIZED_VIEW('my-project-id.analytics.hourly_metrics')"
 ```

@@ -17,7 +17,7 @@ Without MIPv6, when a device moves from one network to another:
 2. All existing TCP connections break
 3. Applications must reconnect
 
-MIPv6 solves this by providing address transparency — the Mobile Node keeps its permanent "Home Address" while physically connected elsewhere.
+MIPv6 solves this by providing address transparency - the Mobile Node keeps its permanent "Home Address" while physically connected elsewhere.
 
 ## Key Components
 
@@ -72,7 +72,7 @@ sequenceDiagram
 
 MIPv6 uses a Mobility Header (Next Header = 135) with sub-types for different messages.
 
-```
+```text
 IPv6 Header
 ├── Next Header = 135 (Mobility)
 └── Mobility Header
@@ -88,6 +88,7 @@ IPv6 Header
 
 ```bash
 # Install the UMIP (USAGI Mobile IPv6) daemon
+
 sudo apt-get install mip6d
 
 # Example Mobile Node configuration
@@ -119,9 +120,9 @@ sudo mip6d -n
 
 ## RFC References
 
-- RFC 6275 — Mobile IPv6 (MIPv6) specification
-- RFC 3775 — Original MIPv6 specification (obsoleted by 6275)
-- RFC 4877 — Mobile IPv6 Operation with IKEv2 and IPsec
+- RFC 6275 - Mobile IPv6 (MIPv6) specification
+- RFC 3775 - Original MIPv6 specification (obsoleted by 6275)
+- RFC 4877 - Mobile IPv6 Operation with IKEv2 and IPsec
 
 ## Conclusion
 

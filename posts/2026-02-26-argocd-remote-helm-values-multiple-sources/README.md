@@ -61,6 +61,7 @@ Each ArgoCD Application references the same config repo:
 
 ```yaml
 # nginx-ingress deployment
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -25,6 +25,7 @@ K3s can be installed with a single command. This script downloads and installs K
 
 ```bash
 # Install K3s with the official install script
+
 curl -sfL https://get.k3s.io | sh -
 ```
 

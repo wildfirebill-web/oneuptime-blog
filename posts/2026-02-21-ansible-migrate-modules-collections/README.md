@@ -66,6 +66,7 @@ cp module_utils/*.py collections/ansible_collections/my_namespace/my_collection/
 
 ```python
 # Before
+
 from ansible.module_utils.helpers import MyHelper
 
 # After

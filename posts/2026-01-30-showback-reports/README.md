@@ -77,6 +77,7 @@ Tags are the foundation of attribution. Without consistent tagging, showback rep
 
 ```yaml
 # Kubernetes pod labels example
+
 metadata:
   labels:
     team: payments

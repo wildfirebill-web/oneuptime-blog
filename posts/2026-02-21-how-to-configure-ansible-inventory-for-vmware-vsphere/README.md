@@ -19,6 +19,7 @@ You need:
 
 ```bash
 # Install the VMware collection
+
 ansible-galaxy collection install community.vmware
 
 # Install the Python SDK

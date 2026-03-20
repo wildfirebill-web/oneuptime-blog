@@ -40,6 +40,7 @@ Reserved concurrency sets aside a fixed amount of concurrency for a specific fun
 
 ```bash
 # Reserve 100 concurrent executions for the order processor
+
 aws lambda put-function-concurrency \
   --function-name order-processor \
   --reserved-concurrent-executions 100

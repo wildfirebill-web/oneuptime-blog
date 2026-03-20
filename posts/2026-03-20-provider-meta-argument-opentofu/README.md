@@ -14,6 +14,7 @@ The `provider` meta-argument lets you specify which provider configuration to us
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     aws = {

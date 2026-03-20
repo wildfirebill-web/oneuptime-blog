@@ -59,6 +59,7 @@ Create a VPC with both public and private subnets. The public subnets are for NA
 
 ```yaml
 # eksctl-private-cluster.yaml - Private cluster configuration
+
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

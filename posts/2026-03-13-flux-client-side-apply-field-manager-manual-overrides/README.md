@@ -28,6 +28,7 @@ Flux uses a specific field manager name when applying resources.
 
 ```bash
 # See all field managers for a deployment
+
 kubectl get deployment my-service -n team-alpha \
   -o jsonpath='{.metadata.managedFields[*].manager}' | tr ' ' '\n'
 # Output might include:

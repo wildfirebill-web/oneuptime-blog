@@ -57,6 +57,7 @@ The `analyze` command is your best friend for finding configuration issues:
 
 ```bash
 # Analyze the entire cluster
+
 istioctl analyze --all-namespaces
 ```
 
@@ -247,7 +248,7 @@ istioctl version
 
 This shows the client version, the control plane version, and the data plane (proxy) versions. Mismatched versions can cause subtle issues.
 
-## Resource Usage Check
+Resource Usage Check
 
 Verify Istio components have enough resources:
 

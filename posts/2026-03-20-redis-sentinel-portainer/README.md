@@ -14,6 +14,7 @@ Redis Sentinel provides automatic failover for Redis. It monitors Redis instance
 
 ```yaml
 # docker-compose.yml - Redis with Sentinel
+
 version: "3.8"
 
 networks:

@@ -636,6 +636,7 @@ def console_notification_handler(alert: Alert):
 
 
 # Usage
+
 if __name__ == '__main__':
     alerter = RedisAlerter(
         redis_host='localhost',

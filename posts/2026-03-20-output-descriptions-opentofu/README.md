@@ -40,6 +40,7 @@ output "load_balancer_dns" {
 
 ```hcl
 # BAD: Too vague
+
 output "id" {
   description = "The ID"
   value       = aws_vpc.main.id

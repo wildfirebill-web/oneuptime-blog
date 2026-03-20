@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SI6 Networks, rd6, IPv6, Redirect, NDP, Security Testing
+Tags: SI6 Networks, Rd6, IPv6, Redirect, NDP, Security Testing
 
 Description: A guide to using the SI6 Networks rd6 tool to test ICMPv6 Redirect message handling and traffic redirection vulnerabilities in authorized lab environments.
 
@@ -12,7 +12,7 @@ The `rd6` tool from the SI6 Networks IPv6 toolkit crafts ICMPv6 Redirect message
 
 ## Understanding ICMPv6 Redirects
 
-```
+```text
 Normal flow:         Host A → Router → Destination
 After rogue redirect: Host A → Attacker → Destination (MITM)
 ```
@@ -30,6 +30,7 @@ sudo pacman -S ipv6toolkit          # Arch Linux
 
 ```bash
 # Send a basic ICMPv6 Redirect message
+
 sudo rd6 -i eth0
 
 # Redirect traffic from target to attacker

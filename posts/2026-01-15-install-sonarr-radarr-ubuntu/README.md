@@ -37,6 +37,7 @@ Update your system packages first.
 
 ```bash
 # Update package lists and upgrade existing packages
+
 # This ensures you have the latest security patches and dependencies
 sudo apt update && sudo apt upgrade -y
 ```

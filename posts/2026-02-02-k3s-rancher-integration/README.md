@@ -71,6 +71,7 @@ First, install K3s on your Rancher server.
 
 ```bash
 # Install K3s with specific options for running Rancher
+
 # The write-kubeconfig-mode flag makes the config readable without sudo
 curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644
 ```

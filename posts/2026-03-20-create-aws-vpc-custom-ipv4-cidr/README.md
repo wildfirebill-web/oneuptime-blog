@@ -25,12 +25,13 @@ AWS reserves 5 IPs per subnet (first 4 and last 1).
 
 ```bash
 # Create a VPC with a /20 CIDR block
+
 aws ec2 create-vpc \
   --cidr-block 10.0.0.0/20 \
   --tag-specifications 'ResourceType=vpc,Tags=[{Key=Name,Value=production-vpc}]' \
   --region us-east-1
 
-# Output includes VpcId — save it
+# Output includes VpcId - save it
 # "VpcId": "vpc-0abc123def456"
 ```
 
@@ -96,7 +97,7 @@ aws cloudformation deploy \
 
 For a typical 3-AZ deployment with public/private subnets:
 
-```
+```text
 VPC: 10.0.0.0/16
 
 Public subnets:

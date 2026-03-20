@@ -39,6 +39,7 @@ The events on the pod are the first place to look:
 
 ```bash
 # Get detailed pod information including events
+
 kubectl describe pod your-pod-name -n your-namespace
 ```
 

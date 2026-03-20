@@ -95,6 +95,7 @@ Create `/etc/elasticsearch/synonyms/products.txt`:
 
 ```text
 # Product synonyms
+
 laptop, notebook, portable computer
 phone, mobile, cellphone, smartphone
 tv, television, telly

@@ -78,6 +78,7 @@ Navigate to `http://<host>:8082` and log in with the admin credentials. Then:
 
 ```python
 # Example: validate a Keycloak JWT in Python using python-jose
+
 from jose import jwt
 
 # Fetch the public key from Keycloak's JWKS endpoint

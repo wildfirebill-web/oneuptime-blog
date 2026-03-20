@@ -182,6 +182,7 @@ The following script calculates cycle time for completed items.
 # calculate-cycle-time.sh - Fetch completed items and calculate average cycle time
 
 # Set your organization and project
+
 ORG="myorg"
 PROJECT="myproject"
 PAT="your-pat-token"

@@ -55,6 +55,7 @@ If you do not already have an Event Hub, create one.
 
 ```bash
 # Create an Event Hubs namespace
+
 az eventhubs namespace create \
   --name my-eh-namespace \
   --resource-group my-resource-group \

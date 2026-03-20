@@ -41,6 +41,7 @@ All Istio configuration should live in Git. This is your primary backup:
 
 ```bash
 # Export all Istio resources as a secondary backup
+
 for resource in virtualservices destinationrules gateways serviceentries authorizationpolicies peerauthentications requestauthentications envoyfilters sidecars; do
   kubectl get $resource -A -o yaml > backup/istio-${resource}-$(date +%Y%m%d).yaml
 done

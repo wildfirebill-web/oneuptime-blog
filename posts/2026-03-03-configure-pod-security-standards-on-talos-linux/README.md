@@ -58,6 +58,7 @@ Configure default Pod Security Admission through the Talos machine configuration
 
 ```yaml
 # Machine configuration
+
 cluster:
   apiServer:
     admissionControl:

@@ -18,6 +18,7 @@ Let us start with a common Docker Compose setup - a web application with an API 
 
 ```yaml
 # docker-compose.yml - Typical multi-service application
+
 version: "3.8"
 
 services:

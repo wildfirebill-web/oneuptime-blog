@@ -14,6 +14,7 @@ Watching IGMP Join and Leave events in real time lets you verify that receivers 
 
 ```bash
 # Capture all IGMP events on eth0 with timestamps and full decode
+
 sudo tcpdump -i eth0 -n -v -l "ip proto 2" 2>/dev/null
 ```
 
@@ -21,7 +22,7 @@ The `-l` flag flushes output line-by-line, making it suitable for piping to othe
 
 Example output:
 
-```
+```text
 14:02:11.001234 IP 192.168.1.50 > 224.0.0.22: igmp v3 report, 1 group record(s)
   group address 239.1.2.3, mode IS_EXCLUDE, 0 sources
 14:02:45.678901 IP 192.168.1.50 > 224.0.0.2: igmp leave 239.1.2.3

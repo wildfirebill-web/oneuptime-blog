@@ -14,6 +14,7 @@ Portainer works well out of the box for small deployments, but as you scale to h
 
 ```yaml
 # docker-compose.yml - Portainer optimized for large-scale
+
 version: "3.8"
 
 services:

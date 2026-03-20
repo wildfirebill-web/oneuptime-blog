@@ -8,7 +8,7 @@ Description: Learn how to design loosely coupled OpenTofu modules that are reusa
 
 ## Introduction
 
-Tightly coupled modules depend on specific implementation details of other modules, making them impossible to reuse in different contexts. When a module hardcodes assumptions about its environment — specific VPC CIDRs, fixed subnet naming conventions, or direct module-to-module data sharing — it becomes fragile and hard to maintain. This post shows how to design modules with clean, stable interfaces.
+Tightly coupled modules depend on specific implementation details of other modules, making them impossible to reuse in different contexts. When a module hardcodes assumptions about its environment - specific VPC CIDRs, fixed subnet naming conventions, or direct module-to-module data sharing - it becomes fragile and hard to maintain. This post shows how to design modules with clean, stable interfaces.
 
 ## What Tight Coupling Looks Like
 
@@ -16,6 +16,7 @@ Modules that reference other modules directly or assume specific structures.
 
 ```hcl
 # BAD: modules/app/main.tf uses terraform_remote_state directly
+
 data "terraform_remote_state" "networking" {
   backend = "s3"
   config = {
@@ -51,7 +52,7 @@ variable "security_group_ids" {
   description = "List of security group IDs to attach to instances"
 }
 
-# modules/app/main.tf — no external data sources
+# modules/app/main.tf - no external data sources
 resource "aws_instance" "app" {
   subnet_id              = var.subnet_id
   vpc_security_group_ids = var.security_group_ids
@@ -76,7 +77,7 @@ module "app" {
 
 ## Designing Good Module Interfaces
 
-A module's variables are its API — design them like a library interface.
+A module's variables are its API - design them like a library interface.
 
 ```hcl
 # BAD: Module assumes too much about the environment
@@ -125,7 +126,7 @@ module "c" {
   source = "../c"
 }
 
-# Debugging is a nightmare — where does the value come from?
+# Debugging is a nightmare - where does the value come from?
 
 # GOOD: Flat module structure, root module wires everything
 module "networking" { source = "./modules/networking" }

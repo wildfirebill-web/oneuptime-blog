@@ -67,6 +67,7 @@ Enable the federation plugin on all participating brokers.
 
 ```bash
 # Enable federation plugin
+
 rabbitmq-plugins enable rabbitmq_federation
 
 # Enable management interface for federation (recommended)

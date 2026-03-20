@@ -33,6 +33,7 @@ Here is how to create a simple IAM policy using the data source.
 
 ```hcl
 # Define the policy document using the data source
+
 data "aws_iam_policy_document" "s3_read_only" {
   statement {
     sid    = "AllowS3ReadOnly"

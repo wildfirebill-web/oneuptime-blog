@@ -41,6 +41,7 @@ Tape Gateway needs two types of local storage: cache and upload buffer.
 
 ```bash
 # List available local disks
+
 aws storagegateway list-local-disks \
   --gateway-arn arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678
 

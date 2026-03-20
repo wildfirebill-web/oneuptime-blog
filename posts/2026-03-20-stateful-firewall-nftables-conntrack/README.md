@@ -51,7 +51,7 @@ table inet filter {
     }
 
     chain output {
-        # Accept all outbound traffic — conntrack will track it
+        # Accept all outbound traffic - conntrack will track it
         type filter hook output priority 0; policy accept;
     }
 }
@@ -63,6 +63,7 @@ The order matters for performance. `established` and `related` packets represent
 
 ```bash
 # Efficient: check established state early
+
 nft add rule inet filter input ct state established,related accept
 nft add rule inet filter input ct state invalid drop
 nft add rule inet filter input tcp dport 22 ct state new accept
@@ -105,7 +106,7 @@ conntrack -C
 ## Flush the Connection Tracking Table
 
 ```bash
-# Remove all tracked connections (use with caution — drops all sessions)
+# Remove all tracked connections (use with caution - drops all sessions)
 conntrack -F
 
 # Flush only connections from a specific host

@@ -544,6 +544,7 @@ For cross-platform distribution, you can target different operating systems:
 
 ```bash
 # Compile for macOS ARM64 (Apple Silicon)
+
 bun build ./cli.ts --compile --target=bun-darwin-arm64 --outfile my-cli-macos-arm64
 
 # Compile for macOS x64 (Intel)

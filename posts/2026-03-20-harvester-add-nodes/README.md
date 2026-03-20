@@ -8,7 +8,7 @@ Description: Learn how to expand your Harvester cluster by adding new nodes for 
 
 ## Introduction
 
-Adding nodes to a Harvester cluster is how you scale capacity — more nodes means more VMs, more CPU and memory, and more distributed storage through Longhorn. The process involves installing Harvester on the new node and joining it to the existing cluster using the cluster token. New nodes automatically join the control plane (Harvester uses RKE2 with each node running etcd and the control plane) and Longhorn begins replicating data to the new node's disks.
+Adding nodes to a Harvester cluster is how you scale capacity - more nodes means more VMs, more CPU and memory, and more distributed storage through Longhorn. The process involves installing Harvester on the new node and joining it to the existing cluster using the cluster token. New nodes automatically join the control plane (Harvester uses RKE2 with each node running etcd and the control plane) and Longhorn begins replicating data to the new node's disks.
 
 ## Prerequisites
 
@@ -24,6 +24,7 @@ Before installing on the new node, collect the join information from the existin
 
 ```bash
 # SSH into any existing cluster node
+
 ssh rancher@192.168.1.11
 
 # Get the cluster token
@@ -63,7 +64,7 @@ sudo dd if=harvester-${HARVESTER_VERSION}-amd64.iso of=/dev/sdX bs=4M status=pro
 
 During the join installation wizard:
 
-```
+```text
 # Management Network Configuration
 Interface:    eth0
 Method:       Static

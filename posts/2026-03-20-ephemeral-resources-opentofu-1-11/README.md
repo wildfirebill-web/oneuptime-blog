@@ -8,7 +8,7 @@ Description: Learn how to use ephemeral resources introduced in OpenTofu 1.11 to
 
 ## Introduction
 
-OpenTofu 1.11 introduced ephemeral resources — a new resource kind that is opened and closed during a plan or apply operation but never written to state. This makes them ideal for retrieving short-lived credentials, rotating secrets, or accessing values that should never be persisted.
+OpenTofu 1.11 introduced ephemeral resources - a new resource kind that is opened and closed during a plan or apply operation but never written to state. This makes them ideal for retrieving short-lived credentials, rotating secrets, or accessing values that should never be persisted.
 
 ## Declaring an Ephemeral Resource
 
@@ -16,6 +16,7 @@ Ephemeral resources use the `ephemeral` block instead of `resource`.
 
 ```hcl
 # Retrieve an AWS Secrets Manager secret without storing it in state
+
 ephemeral "aws_secretsmanager_secret_version" "db_password" {
   secret_id = "prod/myapp/db-password"
 }
@@ -91,14 +92,14 @@ resource "kubernetes_secret" "app_config" {
 
 Ephemeral resources have a distinct lifecycle compared to regular resources.
 
-```
+```hcl
 Plan/Apply lifecycle:
 
 1. OpenTofu opens ephemeral resource (calls provider's OpenEphemeralResource)
 2. Ephemeral value is available in memory for the duration of the operation
 3. OpenTofu uses the value to configure resources and providers
 4. Operation completes → OpenTofu closes the ephemeral resource
-5. Value is discarded — never written to state file
+5. Value is discarded - never written to state file
 
 This means:
 - No secret leakage into .tfstate files
@@ -125,4 +126,4 @@ check "secret_accessible" {
 
 ## Summary
 
-Ephemeral resources in OpenTofu 1.11 solve a long-standing problem with secrets management in IaC — sensitive values leaking into state files. By using the `ephemeral` block for secrets, credentials, and short-lived tokens, you keep your state clean while still using dynamic values during plan and apply. This is the preferred pattern for any value that should never be persisted.
+Ephemeral resources in OpenTofu 1.11 solve a long-standing problem with secrets management in IaC - sensitive values leaking into state files. By using the `ephemeral` block for secrets, credentials, and short-lived tokens, you keep your state clean while still using dynamic values during plan and apply. This is the preferred pattern for any value that should never be persisted.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, Performance, IPv4, Tuning, worker_connections, Linux, Web Server
+Tags: Nginx, Performance, IPv4, Tuning, Worker_connections, Linux, Web Server
 
 Description: Learn how to tune Nginx worker_connections alongside OS file descriptor limits to handle high-traffic IPv4 workloads without running out of connections.
 
@@ -14,7 +14,7 @@ Description: Learn how to tune Nginx worker_connections alongside OS file descri
 
 The total concurrent connections Nginx can handle is:
 
-```
+```text
 max_connections = worker_processes × worker_connections
 ```
 
@@ -26,6 +26,7 @@ Each connection consumes a file descriptor. The OS must allow enough.
 
 ```bash
 # Check the current soft limit for the nginx process (or current user)
+
 ulimit -n
 
 # Check system-wide hard limits

@@ -26,6 +26,7 @@ Run a quick scan to find likely candidates:
 
 ```bash
 # Search for common secret-related variable names in your project
+
 grep -rn "password\|secret\|token\|api_key\|private_key" \
   group_vars/ host_vars/ roles/ --include="*.yml" --include="*.yaml"
 ```

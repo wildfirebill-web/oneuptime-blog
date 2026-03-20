@@ -32,6 +32,7 @@ Add `throttle` to any task to limit its concurrency:
 
 ```yaml
 # basic-throttle.yml - Limit concurrent API calls
+
 ---
 - name: Register all servers with monitoring service
   hosts: all  # Could be 100+ servers

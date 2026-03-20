@@ -84,6 +84,7 @@ Python has the same issue. The `opentelemetry-instrument` command handles this f
 
 ```python
 # tracing.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

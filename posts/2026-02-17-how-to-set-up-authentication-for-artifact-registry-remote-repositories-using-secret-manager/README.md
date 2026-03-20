@@ -26,6 +26,7 @@ You could theoretically pass credentials directly when creating the remote repos
 
 ```bash
 # Enable Secret Manager and Artifact Registry APIs
+
 gcloud services enable \
   secretmanager.googleapis.com \
   artifactregistry.googleapis.com \

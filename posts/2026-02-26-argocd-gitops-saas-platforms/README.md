@@ -94,6 +94,7 @@ Each tenant gets their own namespace with resource quotas and network policies:
 
 ```yaml
 # tenants/enterprise/tenant-a/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

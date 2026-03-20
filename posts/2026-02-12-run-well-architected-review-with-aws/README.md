@@ -46,6 +46,7 @@ Create a workload in the Well-Architected Tool to begin your review.
 
 ```bash
 # Create a workload for review
+
 aws wellarchitected create-workload \
     --workload-name "Payment Service" \
     --description "Payment processing application including web tier, API, and database" \

@@ -18,6 +18,7 @@ Install the required collection and configure your inventory:
 
 ```bash
 # Install the Cisco IOS collection
+
 ansible-galaxy collection install cisco.ios
 ```
 

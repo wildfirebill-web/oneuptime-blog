@@ -14,6 +14,7 @@ Description: Monitor real-time network interface and connection changes using nm
 
 ```bash
 # Watch all NetworkManager events
+
 nmcli monitor
 
 # Ctrl+C to stop

@@ -29,6 +29,7 @@ When you encrypt a file or string with a vault ID, the label gets embedded in th
 
 ```bash
 # Encrypt files with specific vault IDs
+
 ansible-vault encrypt --vault-id dev@dev_pass.txt group_vars/dev/vault.yml
 ansible-vault encrypt --vault-id staging@staging_pass.txt group_vars/staging/vault.yml
 ansible-vault encrypt --vault-id prod@prod_pass.txt group_vars/prod/vault.yml

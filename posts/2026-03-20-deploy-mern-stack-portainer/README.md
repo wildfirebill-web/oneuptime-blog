@@ -75,6 +75,7 @@ For production, serve the built React app from Nginx:
 
 ```dockerfile
 # frontend/Dockerfile.frontend
+
 FROM node:20-alpine AS build
 WORKDIR /app
 COPY package*.json ./

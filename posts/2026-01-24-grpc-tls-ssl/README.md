@@ -45,6 +45,7 @@ flowchart TD
 ```bash
 #!/bin/bash
 # generate-certs.sh
+
 # Script to generate TLS certificates for gRPC development
 
 # Configuration

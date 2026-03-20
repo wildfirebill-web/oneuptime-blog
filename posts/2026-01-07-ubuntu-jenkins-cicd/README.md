@@ -111,6 +111,7 @@ Before installing Jenkins, ensure your Ubuntu system meets the following require
 
 ```bash
 # Display the current Ubuntu version and release information
+
 # This helps ensure compatibility with Jenkins requirements
 lsb_release -a
 ```

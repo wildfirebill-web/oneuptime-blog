@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Controllers, IPv6, Networking, Go
+Tags: Kubernetes, Controller, IPv6, Networking, Go
 
 Description: Reconcile custom IPv6 network resources in Kubernetes controllers including IP allocation, route management, and network policy.
 
@@ -100,6 +100,7 @@ func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Resu
 
 ```bash
 # Create a KIND cluster with dual-stack support
+
 cat > kind-dual-stack.yaml << EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4

@@ -18,6 +18,7 @@ Before fixing, identify which type of error you're seeing:
 sudo apt-get update 2>&1
 
 # Run with more verbose output
+
 sudo apt-get update -o Debug::Acquire::http=true 2>&1 | head -50
 ```
 

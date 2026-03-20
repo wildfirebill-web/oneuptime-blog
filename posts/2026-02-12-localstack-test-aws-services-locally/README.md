@@ -16,6 +16,7 @@ The fastest way to run LocalStack is through Docker.
 
 ```bash
 # Pull and run LocalStack
+
 docker run -d \
   --name localstack \
   -p 4566:4566 \

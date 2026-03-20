@@ -75,6 +75,7 @@ Create a dedicated health check script:
 set -e  # Exit immediately if a command exits with a non-zero status
 
 # Check 1: Database connectivity
+
 psql -U postgres -c "SELECT 1" > /dev/null 2>&1
 if [ $? -ne 0 ]; then
     echo "Database connection failed"

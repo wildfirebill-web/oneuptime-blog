@@ -30,6 +30,7 @@ A network-level fix (opening the egress path) does not automatically restart stu
 
 ```bash
 # Check current state
+
 NAMESPACE=<affected-namespace>
 KUBE_IP=$(kubectl get svc kubernetes -o jsonpath='{.spec.clusterIP}')
 POD=$(kubectl get pods -n $NAMESPACE -o name | head -1)

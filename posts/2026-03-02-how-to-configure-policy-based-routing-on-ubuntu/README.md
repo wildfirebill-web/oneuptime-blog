@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Routing, Policy-Based Routing, Iproute2
+Tags: Ubuntu, Networking, Routing, Policy-Based Routing, iproute2
 
 Description: Learn how to configure policy-based routing on Ubuntu using iproute2 rules and multiple routing tables for advanced traffic control scenarios.
 
@@ -22,6 +22,7 @@ When a packet needs to be routed, the kernel walks through the rule list (ordere
 
 ```bash
 # View the current rule list
+
 ip rule list
 
 # Output will look like:

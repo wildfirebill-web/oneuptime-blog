@@ -28,6 +28,7 @@ ArgoCD allows you to specify semver version constraints for Helm chart sources. 
 
 ```yaml
 # Track the latest patch release of 1.5.x
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

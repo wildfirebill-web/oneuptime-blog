@@ -1,4 +1,4 @@
-# How to Attach ConfigMaps to Applications in Portainer
+# How to Attach ConfigMaps to Applications in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,14 +24,14 @@ ConfigMaps allow you to decouple configuration from container images, making app
 3. Click **+ Add ConfigMap**
 4. Fill in:
 
-```
+```text
 Name:        app-config
 Namespace:   production
 ```
 
 5. Add key-value pairs:
 
-```
+```text
 Key: NODE_ENV          Value: production
 Key: LOG_LEVEL         Value: info
 Key: DB_HOST           Value: postgres.production.svc.cluster.local
@@ -92,7 +92,7 @@ When creating/editing an application:
 2. Click **+ From ConfigMap**
 3. Select:
 
-```
+```sql
 ConfigMap: app-config
   [x] Import all keys as environment variables
 
@@ -130,7 +130,7 @@ This is ideal for configuration files that need to be present on the filesystem.
 
 In the application editor under **Volumes**:
 
-```
+```text
 Volume type:    ConfigMap
 ConfigMap:      nginx-config
 Mount path:     /etc/nginx/conf.d
@@ -170,6 +170,7 @@ spec:
 
 ```bash
 # Check if ConfigMap exists
+
 kubectl get configmap app-config -n production
 
 # View ConfigMap contents
@@ -226,4 +227,4 @@ data:
 
 ## Conclusion
 
-ConfigMaps in Portainer provide a clean, Kubernetes-native way to manage application configuration. Use environment variable references for simple key-value configuration and volume mounts for configuration files. Remember that ConfigMap changes are not automatically picked up by running pods for environment variables — plan for pod restarts when updating critical configuration.
+ConfigMaps in Portainer provide a clean, Kubernetes-native way to manage application configuration. Use environment variable references for simple key-value configuration and volume mounts for configuration files. Remember that ConfigMap changes are not automatically picked up by running pods for environment variables - plan for pod restarts when updating critical configuration.

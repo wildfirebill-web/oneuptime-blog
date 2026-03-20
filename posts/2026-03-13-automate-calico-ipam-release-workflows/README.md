@@ -17,6 +17,7 @@ Automating IPAM release workflows requires a careful approach: the detection and
 ```bash
 #!/bin/bash
 # detect-ipam-leaks.sh
+
 # Finds IPs allocated in IPAM but with no corresponding running pod
 
 echo "=== Calico IPAM Leak Detection $(date) ==="

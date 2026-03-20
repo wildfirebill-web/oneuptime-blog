@@ -49,6 +49,7 @@ Here's a minimal configuration that enables zPages on the default endpoint:
 
 ```yaml
 # Basic zPages configuration
+
 extensions:
   # Enable the zPages extension with default settings
   zpages:

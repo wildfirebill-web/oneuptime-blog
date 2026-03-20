@@ -110,6 +110,7 @@ CACHES = {
 from django.core.cache import cache
 
 # Set a value
+
 cache.set('my_key', 'my_value', timeout=300)  # 5 minutes
 
 # Get a value

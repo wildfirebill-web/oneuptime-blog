@@ -16,6 +16,7 @@ Quagga is the predecessor to FRRouting (FRR) and is still found on older systems
 
 ```bash
 # Debian/Ubuntu (older systems)
+
 sudo apt install quagga
 
 # RHEL/CentOS 7
@@ -46,7 +47,7 @@ Quagga uses separate config files for each daemon:
 sudo nano /etc/quagga/ripngd.conf
 ```
 
-```
+```text
 ! /etc/quagga/ripngd.conf
 !
 hostname ripngd
@@ -78,7 +79,7 @@ vtysh
 
 ## Configuration via Console
 
-```
+```text
 # In the ripngd console or vtysh
 ripngd# configure terminal
 ripngd(config)# router ripng
@@ -92,7 +93,7 @@ ripngd# write memory
 
 ## Verification Commands
 
-```
+```text
 ! Show RIPng routes
 ripngd# show ipv6 ripng
 

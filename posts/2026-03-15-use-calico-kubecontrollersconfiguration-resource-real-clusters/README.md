@@ -144,6 +144,7 @@ Set up monitoring for the calico-kube-controllers pod:
 
 ```bash
 # Check health endpoint
+
 kubectl exec -n calico-system deployment/calico-kube-controllers -- wget -qO- http://localhost:9094/readiness
 
 # View controller metrics
@@ -151,7 +152,7 @@ kubectl port-forward -n calico-system deployment/calico-kube-controllers 9094:90
 curl -s http://localhost:9094/metrics | grep controller
 ```
 
-## Resource Limits for Controllers
+Resource Limits for Controllers
 
 Ensure the controller pod has appropriate resource limits in the deployment:
 

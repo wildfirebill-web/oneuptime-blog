@@ -34,6 +34,7 @@ You need:
 
 ```bash
 # Verify organization access
+
 gcloud organizations list
 
 # Enable the Assured Workloads API

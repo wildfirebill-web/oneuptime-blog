@@ -33,6 +33,7 @@ On RHEL, Ansible is available from the default repositories.
 
 ```bash
 # Install Ansible core
+
 sudo dnf install ansible-core
 
 # Verify the installation

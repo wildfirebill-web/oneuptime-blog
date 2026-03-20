@@ -37,6 +37,7 @@ Temporary credentials from STS or IAM role assumption require `AWS_SESSION_TOKEN
 ```bash
 aws sts get-caller-identity
 # {
+
 #   "UserId": "AIDACKCEVSQ6C2EXAMPLE",
 #   "Account": "123456789012",
 #   "Arn": "arn:aws:iam::123456789012:user/myuser"

@@ -24,6 +24,7 @@ The cluster agent is the most resource-intensive agent. Configure it based on cl
 
 ```yaml
 # Patch the cluster agent deployment resources
+
 kubectl patch deployment cattle-cluster-agent \
   -n cattle-system \
   --type=merge \

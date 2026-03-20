@@ -14,6 +14,7 @@ HAProxy ACLs (Access Control Lists) are conditional expressions that let you mak
 
 ```bash
 # Install HAProxy on Ubuntu
+
 sudo apt update
 sudo apt install haproxy
 

@@ -23,6 +23,7 @@ Define SLAs as structured data:
 
 ```yaml
 # sla-definitions.yaml
+
 slas:
   - service: payment-api
     tier: critical

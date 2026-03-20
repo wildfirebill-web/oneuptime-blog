@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Canary Deployment, Rancher, Kubernetes, Progressive Delivery, DevOps, Traffic Splitting, Deployment
+Tags: Canary Deployments, Rancher, Kubernetes, Progressive Delivery, DevOps, Traffic Splitting, Deployment
 
 Description: Learn how to implement canary deployments in Rancher-managed Kubernetes to gradually shift traffic to a new version and catch issues before a full rollout.
 
@@ -29,6 +29,7 @@ Kubernetes distributes traffic proportionally based on replica count, making pod
 
 ```yaml
 # stable-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

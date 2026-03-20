@@ -83,6 +83,7 @@ The first line of defense is validating that incoming data matches the expected 
 
 ```python
 # schema_validator.py
+
 # Validates incoming data records against a strict schema
 # before they enter the data pipeline
 

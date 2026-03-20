@@ -135,4 +135,4 @@ print("Server closed")
 
 ## Conclusion
 
-The client-server pattern with TCP sockets involves three phases: connection (`accept` / `connect`), data exchange (framing is essential — use length prefixes for message boundaries), and disconnection (detect with `recv` returning empty bytes). A thread per connection is the simplest concurrent model. Use `SO_REUSEADDR` to allow fast server restart. Signal handlers with `threading.Event` provide clean shutdown. For higher concurrency, replace threads with `asyncio.start_server`.
+The client-server pattern with TCP sockets involves three phases: connection (`accept` / `connect`), data exchange (framing is essential - use length prefixes for message boundaries), and disconnection (detect with `recv` returning empty bytes). A thread per connection is the simplest concurrent model. Use `SO_REUSEADDR` to allow fast server restart. Signal handlers with `threading.Event` provide clean shutdown. For higher concurrency, replace threads with `asyncio.start_server`.

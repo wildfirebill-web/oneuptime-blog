@@ -33,6 +33,7 @@ Create separate buckets for each stage of the pipeline:
 
 ```bash
 # Landing zone - where raw files arrive
+
 gcloud storage buckets create gs://my-project-data-landing \
   --location=us-central1
 

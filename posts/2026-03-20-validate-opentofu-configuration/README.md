@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu validate, Configuration Validation, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu validate, Configuration Validation, Infrastructure as Code, DevOps
 
 Description: A guide to using tofu validate to check your OpenTofu configurations for syntax errors and logical issues before planning or applying.
 
@@ -14,6 +14,7 @@ Description: A guide to using tofu validate to check your OpenTofu configuration
 
 ```bash
 # Validate the current directory
+
 tofu validate
 
 # Success output:

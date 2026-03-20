@@ -47,6 +47,7 @@ Start with the VPC itself.
 
 ```yaml
 # create-vpc.yml
+
 ---
 - name: Create a VPC
   hosts: localhost

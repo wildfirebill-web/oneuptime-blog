@@ -18,6 +18,7 @@ nvm is the most widely used tool for managing Node.js versions. It installs Node
 
 ```bash
 # Download and run the install script
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 
 # Or with wget

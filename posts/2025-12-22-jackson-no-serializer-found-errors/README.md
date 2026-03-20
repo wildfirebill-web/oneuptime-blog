@@ -219,6 +219,7 @@ public class EmptyResponse {
 
 ```yaml
 # application.yml
+
 spring:
   jackson:
     serialization:

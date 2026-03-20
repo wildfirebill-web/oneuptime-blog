@@ -40,6 +40,7 @@ graph TB
 
 ```bash
 # Repository structure for active-active
+
 fleet-infra/
   clusters/
     base/                         # Shared configurations

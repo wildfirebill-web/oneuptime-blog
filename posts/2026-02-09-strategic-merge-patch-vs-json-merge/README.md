@@ -115,6 +115,7 @@ This is where the patch types differ most significantly.
 
 ```bash
 # Original pod has two containers
+
 apiVersion: v1
 kind: Pod
 spec:

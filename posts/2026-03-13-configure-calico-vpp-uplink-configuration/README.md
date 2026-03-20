@@ -29,6 +29,7 @@ Calico VPP supports several uplink modes:
 
 ```bash
 # List network interfaces and their PCI addresses
+
 lspci -D | grep -i "network\|ethernet"
 
 # Example output:

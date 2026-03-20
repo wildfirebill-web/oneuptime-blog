@@ -18,6 +18,7 @@ One of the most common challenges with rootless Podman is file permission mismat
 
 ```bash
 # Without keep-id: your host UID appears as root inside
+
 podman run --rm alpine:latest id
 # Output: uid=0(root) gid=0(root)
 

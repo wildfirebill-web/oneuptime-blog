@@ -1,4 +1,4 @@
-# How to Deploy an AKS Cluster with OpenTofu on Azure
+# How to Deploy an AKS Cluster with OpenTofu on Azure - Deploy
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -80,7 +80,7 @@ resource "azurerm_kubernetes_cluster_node_pool" "apps" {
     "workload-type" = "application"
   }
 
-  node_taints = []  # No taints — all pods can schedule here
+  node_taints = []  # No taints - all pods can schedule here
 
   tags = { Environment = var.environment }
 }

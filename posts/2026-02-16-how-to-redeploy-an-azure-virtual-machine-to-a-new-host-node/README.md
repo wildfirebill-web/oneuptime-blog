@@ -58,6 +58,7 @@ For scripting and automation, use the CLI:
 
 ```bash
 # Redeploy a VM to a new host node
+
 az vm redeploy \
   --resource-group myResourceGroup \
   --name myVM

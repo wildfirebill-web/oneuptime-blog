@@ -66,6 +66,7 @@ The configuration below routes 10% of traffic to the canary upstream while sendi
 
 ```nginx
 # Define the traffic split based on client IP hash
+
 # This ensures the same client consistently hits the same backend
 split_clients "${remote_addr}" $backend_pool {
     10%     canary;      # 10% of requests go to canary

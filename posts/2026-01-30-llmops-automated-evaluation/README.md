@@ -110,6 +110,7 @@ BLEU (Bilingual Evaluation Understudy) measures n-gram overlap between generated
 
 ```python
 # bleu_evaluation.py
+
 # BLEU score measures n-gram precision between candidate and reference texts.
 # Scores range from 0 to 1, where 1 indicates perfect match.
 
@@ -1894,7 +1895,7 @@ def ci_regression_check(
 
 Integrate automated evaluation into your deployment pipeline.
 
-```yaml
+````yaml
 # .github/workflows/llm-evaluation.yml
 # GitHub Actions workflow for automated LLM evaluation.
 # Runs on every PR and blocks merge if quality drops.
@@ -2005,9 +2006,9 @@ jobs:
             <details>
             <summary>View detailed results</summary>
 
-            \`\`\`json
+            ```json
             ${JSON.stringify(results.metrics, null, 2)}
-            \`\`\`
+            ```
 
             </details>`;
 
@@ -2173,7 +2174,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-```
+````
 
 ---
 

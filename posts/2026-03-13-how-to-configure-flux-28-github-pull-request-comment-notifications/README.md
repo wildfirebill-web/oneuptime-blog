@@ -35,6 +35,7 @@ Alternatively, use a GitHub App for better security and scoping:
 
 ```yaml
 # github-app-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

@@ -14,6 +14,7 @@ Description: Diagnose and fix DNS resolution failures on RHEL by checking resolv
 
 ```bash
 # Test DNS resolution
+
 host google.com
 dig google.com
 nslookup google.com

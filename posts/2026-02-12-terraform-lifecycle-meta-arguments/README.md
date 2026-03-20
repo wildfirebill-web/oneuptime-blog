@@ -20,6 +20,7 @@ Here's a classic example with a security group. If you change the name or descri
 
 ```hcl
 # Without create_before_destroy, EC2 instances lose their
+
 # security group briefly during replacement
 resource "aws_security_group" "app" {
   name_prefix = "app-"

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, IPv4, Header, Networking, Packet Analysis, Protocol
+Tags: Wireshark, IPv4, Headers, Networking, Packet Analysis, Protocol
 
 Description: Read and understand every field in the IPv4 header as displayed in Wireshark's packet detail pane, including version, TTL, protocol, flags, and checksum fields.
 
@@ -10,7 +10,7 @@ The IPv4 header contains 14 fields that control routing, fragmentation, QoS, and
 
 ## IPv4 Header Layout
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -30,7 +30,7 @@ The IPv4 header contains 14 fields that control routing, fragmentation, QoS, and
 
 Click on any packet, then expand "Internet Protocol Version 4" in the detail pane:
 
-```
+```text
 Internet Protocol Version 4
   0100 .... = Version: 4
   .... 0101 = Header Length: 20 bytes (5)          ← 5 × 4 = 20 bytes (no options)
@@ -53,7 +53,7 @@ Internet Protocol Version 4
 
 ## Key Fields and What They Mean
 
-```
+```text
 Field              Value        Interpretation
 -----------------  ----------   ----------------------------------------
 Version            4            IPv4 (6 = IPv6)
@@ -78,6 +78,7 @@ Fragment Offset    > 0          This is a non-first fragment
 
 ```wireshark
 # Find fragmented packets (DF=0 and MF=1 or offset > 0)
+
 ip.flags.mf == 1 or ip.frag_offset > 0
 
 # Find packets with IP options

@@ -93,6 +93,7 @@ backend app_servers
 
 ```bash
 # List all entries in a stick table
+
 echo "show table backend app_servers" | sudo socat stdio /run/haproxy/admin.sock
 
 # Show entries for a specific source IP

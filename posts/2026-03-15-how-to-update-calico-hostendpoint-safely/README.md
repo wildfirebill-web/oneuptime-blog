@@ -103,6 +103,7 @@ If the node interface changes (for example from eth0 to ens192), create the new 
 
 ```bash
 # Step 1: Create new HostEndpoint
+
 cat <<EOF | calicoctl apply -f -
 apiVersion: projectcalico.org/v3
 kind: HostEndpoint

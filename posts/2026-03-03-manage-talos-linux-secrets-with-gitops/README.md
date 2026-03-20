@@ -30,6 +30,7 @@ SOPS (Secrets OPerationS) encrypts specific values in YAML files while leaving t
 
 ```bash
 # Install SOPS
+
 brew install sops  # macOS
 # or
 curl -LO https://github.com/getsops/sops/releases/latest/download/sops-v3-linux-amd64

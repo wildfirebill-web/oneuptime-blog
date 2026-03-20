@@ -60,6 +60,7 @@ Start by removing the old Application Insights NuGet packages from your project.
 
 ```bash
 # Remove the classic Application Insights packages
+
 # These will be fully replaced by OpenTelemetry equivalents
 dotnet remove package Microsoft.ApplicationInsights.AspNetCore
 dotnet remove package Microsoft.ApplicationInsights.WorkerService

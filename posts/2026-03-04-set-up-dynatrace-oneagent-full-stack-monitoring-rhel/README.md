@@ -18,6 +18,7 @@ You need a Dynatrace environment (SaaS or Managed) with the Environment ID and A
 
 ```bash
 # Download the OneAgent installer from your Dynatrace environment
+
 # Replace YOUR_ENVIRONMENT_ID and YOUR_API_TOKEN with your values
 curl -o /tmp/dynatrace-oneagent.sh \
   "https://YOUR_ENVIRONMENT_ID.live.dynatrace.com/api/v1/deployment/installer/agent/unix/default/latest?Api-Token=YOUR_API_TOKEN&arch=x86&flavor=default"

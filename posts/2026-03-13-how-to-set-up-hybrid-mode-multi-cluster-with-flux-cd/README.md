@@ -341,6 +341,7 @@ Monitor both patterns from their respective control planes:
 
 ```bash
 # Check non-production from the management cluster
+
 kubectl config use-context management-cluster
 flux get kustomizations
 

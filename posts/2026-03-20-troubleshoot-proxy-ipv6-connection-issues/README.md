@@ -16,6 +16,7 @@ Before blaming the proxy, confirm IPv6 connectivity exists on the host:
 
 ```bash
 # Check if IPv6 is enabled and addresses are assigned
+
 ip -6 addr show
 
 # Test basic IPv6 reachability to a known host
@@ -155,4 +156,4 @@ while true; do
 done
 ```
 
-Systematic diagnosis — from basic connectivity to application-level URL parsing — will resolve the majority of IPv6 proxy connection failures efficiently.
+Systematic diagnosis - from basic connectivity to application-level URL parsing - will resolve the majority of IPv6 proxy connection failures efficiently.

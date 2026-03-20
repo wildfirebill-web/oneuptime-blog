@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ip Command, Networking, Linux
+Tags: RHEL, ip command, Networking, Linux
 
 Description: A thorough guide to using the ip command on RHEL for managing network interfaces, addresses, routes, and neighbors, replacing the legacy ifconfig and route commands.
 
@@ -28,6 +28,7 @@ graph TD
 
 ```bash
 # Show all interfaces
+
 ip link show
 
 # Show a specific interface

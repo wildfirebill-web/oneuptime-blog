@@ -27,6 +27,7 @@ This guide uses the Upbound provider-family-azure package, which organizes Azure
 
 ```bash
 # Create a service principal with Contributor role scoped to your subscription
+
 az ad sp create-for-rbac \
   --name "crossplane-provider" \
   --role Contributor \

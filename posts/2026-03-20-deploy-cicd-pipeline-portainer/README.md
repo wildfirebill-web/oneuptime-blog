@@ -37,7 +37,8 @@ The webhook triggers Portainer to pull the latest images and redeploy the stack.
 Call the webhook at the end of your CI pipeline:
 
 ```bash
-# Generic CI step — trigger Portainer stack redeploy
+# Generic CI step - trigger Portainer stack redeploy
+
 curl -X POST "https://portainer.example.com/api/stacks/webhooks/YOUR-WEBHOOK-UUID"
 
 # With a success check

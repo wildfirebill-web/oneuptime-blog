@@ -24,6 +24,7 @@ The simplest way to send Slack messages from Ansible is with the `community.gene
 
 ```bash
 # Install the community collection that includes the Slack module
+
 ansible-galaxy collection install community.general
 ```
 

@@ -41,6 +41,7 @@ The first place to look is RDS events. They'll tell you exactly when the failove
 
 ```bash
 # Get recent events for the Aurora cluster
+
 aws rds describe-events \
   --source-identifier my-aurora-cluster \
   --source-type db-cluster \

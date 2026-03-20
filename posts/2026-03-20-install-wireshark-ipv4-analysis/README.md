@@ -6,12 +6,13 @@ Tags: Wireshark, IPv4, Linux, Packet Analysis, Networking, Security
 
 Description: Install Wireshark on Linux or macOS, configure it for IPv4 packet analysis, and set up permissions to capture without running as root.
 
-Wireshark is the most powerful graphical packet analyzer available. It decodes hundreds of protocols, provides visual filtering, and enables deep inspection of every packet field — essential for complex network debugging.
+Wireshark is the most powerful graphical packet analyzer available. It decodes hundreds of protocols, provides visual filtering, and enables deep inspection of every packet field - essential for complex network debugging.
 
 ## Install Wireshark
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install wireshark -y
 
 # During install, when asked "Should non-superusers be able to capture packets?"
@@ -63,7 +64,7 @@ tshark -i eth0 -f 'port 80'
 
 In the Wireshark GUI:
 
-```
+```sql
 1. Start screen shows list of interfaces with traffic graphs
 2. Double-click an interface to start capturing immediately
 3. Or: Capture → Options → select interface(s) → Start

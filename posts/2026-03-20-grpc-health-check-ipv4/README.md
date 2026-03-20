@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, Health Check, IPv4, Python, Go, Kubernetes
+Tags: gRPC, Health Checks, IPv4, Python, Go, Kubernetes
 
-Description: Learn how to implement gRPC health checking using the standard grpc.health.v1 protocol in Python and Go, configure Kubernetes liveness/readiness probes, and use grpc_health_probe to test health endpoints.
+Description: Learn how to implement gRPC health checking using the standard grpc.health.v1 protocol in Python and Go, configure Kubernetes liveness/readiness probes, and use grpc_health_probe to test health...
 
 ## gRPC Health Protocol
 
@@ -111,6 +111,7 @@ func main() {
 
 ```bash
 # Install grpc_health_probe
+
 wget https://github.com/grpc-ecosystem/grpc-health-probe/releases/latest/download/grpc_health_probe-linux-amd64
 chmod +x grpc_health_probe-linux-amd64
 mv grpc_health_probe-linux-amd64 /usr/local/bin/grpc_health_probe
@@ -137,4 +138,4 @@ readinessProbe:
 
 ## Conclusion
 
-Use the standard `grpc.health.v1.Health` service for gRPC health checking — it is supported by Kubernetes probes via `grpc_health_probe`, load balancers, and service meshes. Register the health servicer alongside your application servicers and call `SetServingStatus` when your service starts and when it becomes unhealthy (e.g., DB connection lost). Mark the service `NOT_SERVING` during graceful shutdown to drain traffic before the pod terminates.
+Use the standard `grpc.health.v1.Health` service for gRPC health checking - it is supported by Kubernetes probes via `grpc_health_probe`, load balancers, and service meshes. Register the health servicer alongside your application servicers and call `SetServingStatus` when your service starts and when it becomes unhealthy (e.g., DB connection lost). Mark the service `NOT_SERVING` during graceful shutdown to drain traffic before the pod terminates.

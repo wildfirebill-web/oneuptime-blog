@@ -96,7 +96,7 @@ async def connect_with_retry(uri: str) -> None:
         except (websockets.ConnectionClosed, OSError, ConnectionRefusedError) as e:
             import random
             jitter = random.uniform(0, delay * 0.5)
-            log.warning("Disconnected: %s — retry in %.1fs", e, delay + jitter)
+            log.warning("Disconnected: %s - retry in %.1fs", e, delay + jitter)
             await asyncio.sleep(delay + jitter)
             delay = min(delay * 2, max_delay)
 

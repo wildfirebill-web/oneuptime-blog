@@ -95,6 +95,7 @@ The Setters strategy relies on inline comments that reference an ImagePolicy. Th
 
 ```json
 # {"$imagepolicy": "<namespace>:<policy-name>"}
+
 ```
 
 ### Updating the Full Image Reference

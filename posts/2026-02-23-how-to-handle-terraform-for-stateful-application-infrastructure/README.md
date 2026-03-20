@@ -18,6 +18,7 @@ The most important Terraform feature for stateful resources is lifecycle managem
 
 ```hcl
 # stateful/database.tf
+
 # Production database with comprehensive protection
 
 resource "aws_db_instance" "production" {

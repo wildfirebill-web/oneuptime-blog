@@ -1,10 +1,10 @@
-# How to Fix "Unable to Connect to Agent" Errors in Portainer
+# How to Fix 'Unable to Connect to Agent' Errors in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Troubleshooting, Agent, Networking
 
-Description: Diagnose and fix "Unable to Connect to Agent" errors in Portainer, covering network connectivity, secret mismatches, TLS issues, and agent configuration problems.
+Description: Diagnose and fix 'Unable to Connect to Agent' errors in Portainer, covering network connectivity, secret mismatches, TLS issues, and agent configuration problems.
 
 ## Introduction
 
@@ -20,6 +20,7 @@ When Portainer shows "Unable to Connect to Agent" for an environment, it means t
 
 ```bash
 # SSH to the agent host
+
 # Check if the agent container is running
 docker ps | grep portainer-agent
 
@@ -59,13 +60,13 @@ nc -zv agent-host 9001
 ## Step 3: Check Firewall Rules on the Agent Host
 
 ```bash
-# Ubuntu/Debian — UFW
+# Ubuntu/Debian - UFW
 sudo ufw status
 sudo ufw allow from portainer-server-ip to any port 9001
 # Or allow from anywhere (less secure)
 sudo ufw allow 9001/tcp
 
-# CentOS/RHEL — firewalld
+# CentOS/RHEL - firewalld
 sudo firewall-cmd --list-ports
 sudo firewall-cmd --permanent --add-port=9001/tcp
 sudo firewall-cmd --reload

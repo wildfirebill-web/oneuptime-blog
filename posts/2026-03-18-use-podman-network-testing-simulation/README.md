@@ -22,6 +22,7 @@ Create separate networks to isolate groups of containers:
 
 ```bash
 # Create isolated networks
+
 podman network create frontend-net
 podman network create backend-net
 podman network create database-net

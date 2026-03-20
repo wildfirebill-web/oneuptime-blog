@@ -14,6 +14,7 @@ TCP throughput problems have multiple possible causes: small windows, packet los
 
 ```bash
 # Measure current throughput (install iperf3 on both ends)
+
 # Server side: iperf3 -s
 iperf3 -c 10.20.0.5 -t 30
 

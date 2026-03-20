@@ -31,6 +31,7 @@ The Authentication option uses a shared secret and HMAC-MD5 or HMAC-SHA to sign 
 # /etc/dhcp/dhcpd6.conf
 
 # Define an authentication key
+
 key "dhcpv6-auth-key" {
     algorithm hmac-md5;
     secret "c2VjcmV0a2V5MTIzNDU2Nzg=";  # Base64-encoded shared secret
@@ -62,10 +63,10 @@ key "dhcpv6-auth-key" {
 
 For environments where implementing cryptographic authentication is complex, use network-layer protections:
 
-**DHCPv6-Shield (RFC 7610)** — Implemented on managed switches to drop DHCPv6 server messages arriving on untrusted ports.
+**DHCPv6-Shield (RFC 7610)** - Implemented on managed switches to drop DHCPv6 server messages arriving on untrusted ports.
 
-```
-! Cisco IOS — Enable DHCPv6 Guard on access ports
+```text
+! Cisco IOS - Enable DHCPv6 Guard on access ports
 ipv6 dhcp guard policy CLIENT_PORTS
  device-role client
 
@@ -90,11 +91,11 @@ sudo tcpdump -i eth0 -n "udp port 547" | grep "dhcp6 advertise"
 
 ## Best Practices
 
-1. **Deploy DHCPv6 Guard on all switches** — This is the most practical protection in most environments.
-2. **Use authentication in high-security environments** — HMAC authentication prevents message tampering.
-3. **Monitor for rogue Advertise messages** — Set up IDS rules to alert on unknown DHCPv6 sources.
-4. **Limit DHCPv6 multicast to known VLANs** — Use VLAN segmentation to reduce exposure.
-5. **Log all DHCPv6 assignments** — Correlate IP assignments with switch port data to detect anomalies.
+1. **Deploy DHCPv6 Guard on all switches** - This is the most practical protection in most environments.
+2. **Use authentication in high-security environments** - HMAC authentication prevents message tampering.
+3. **Monitor for rogue Advertise messages** - Set up IDS rules to alert on unknown DHCPv6 sources.
+4. **Limit DHCPv6 multicast to known VLANs** - Use VLAN segmentation to reduce exposure.
+5. **Log all DHCPv6 assignments** - Correlate IP assignments with switch port data to detect anomalies.
 
 ## Checking for Rogue Servers with nmap
 

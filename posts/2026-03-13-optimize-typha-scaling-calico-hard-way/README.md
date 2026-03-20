@@ -32,6 +32,7 @@ The `FelixConfiguration` field `typhaReadTimeout` determines how long Felix wait
 
 ```yaml
 # felixconfig-optimized.yaml
+
 # FelixConfiguration with tuned Typha timeouts for better connection distribution
 apiVersion: projectcalico.org/v3
 kind: FelixConfiguration

@@ -18,6 +18,7 @@ Check your current versions:
 
 ```bash
 # Control plane version
+
 istioctl version
 
 # See all proxy versions in the mesh

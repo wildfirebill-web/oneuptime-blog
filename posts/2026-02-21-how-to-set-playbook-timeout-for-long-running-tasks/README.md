@@ -28,6 +28,7 @@ Set it in `ansible.cfg`:
 
 ```ini
 # ansible.cfg - Configure SSH connection timeout
+
 [defaults]
 timeout = 30  # Wait 30 seconds for SSH connection (default is 10)
 

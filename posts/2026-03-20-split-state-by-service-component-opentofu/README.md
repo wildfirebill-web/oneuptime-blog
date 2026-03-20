@@ -8,11 +8,11 @@ Description: Learn how to split OpenTofu state files by service or component to 
 
 ## Introduction
 
-Large state files are slow to plan, risky to apply, and create contention when multiple teams work concurrently. Splitting state by service or component isolates changes and enables parallel deployment — changes to the networking layer don't block service deployments.
+Large state files are slow to plan, risky to apply, and create contention when multiple teams work concurrently. Splitting state by service or component isolates changes and enables parallel deployment - changes to the networking layer don't block service deployments.
 
 ## Component-Based State Structure
 
-```
+```text
 infrastructure/
 ├── prod/
 │   ├── networking/       # VPC, subnets, route tables
@@ -29,6 +29,7 @@ infrastructure/
 
 ```hcl
 # prod/networking/backend.tf
+
 terraform {
   backend "s3" {
     bucket = "my-company-tofu-state"
@@ -120,7 +121,7 @@ deploy_component "services/worker"
 
 Guidelines for deciding when to create a new state file:
 
-- **Split by deployment frequency**: Networking changes weekly; services deploy hourly — separate them
+- **Split by deployment frequency**: Networking changes weekly; services deploy hourly - separate them
 - **Split by team ownership**: If different teams manage different components, give them separate state
 - **Split by blast radius**: Never put production databases in the same state as frequently-changing services
 - **Split by plan time**: If `tofu plan` takes more than 2 minutes, consider splitting

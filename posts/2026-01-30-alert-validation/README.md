@@ -45,6 +45,7 @@ Start with basic YAML and schema validation. This catches structural errors befo
 
 ```yaml
 # alerting-rules.yaml
+
 groups:
   - name: api-alerts
     rules:
@@ -952,7 +953,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## Threshold Analysis Report\n\`\`\`\n${report}\n\`\`\``
+              body: `## Threshold Analysis Report\n```\n${report}\n````
             });
 ```
 

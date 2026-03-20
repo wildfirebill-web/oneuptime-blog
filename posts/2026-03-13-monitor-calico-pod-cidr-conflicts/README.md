@@ -68,6 +68,7 @@ spec:
 
 ```bash
 # Check for pod IPs that match node IPs (sign of CIDR conflict)
+
 NODE_IPS=$(kubectl get nodes \
   -o jsonpath='{range .items[*]}{.status.addresses[?(@.type=="InternalIP")].address}{" "}{end}')
 POD_IPS=$(kubectl get pods --all-namespaces \

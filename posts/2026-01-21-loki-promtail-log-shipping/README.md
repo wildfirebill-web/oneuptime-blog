@@ -25,6 +25,7 @@ Before starting, ensure you have:
 
 ```bash
 # Download latest release
+
 PROMTAIL_VERSION="2.9.4"
 curl -LO "https://github.com/grafana/loki/releases/download/v${PROMTAIL_VERSION}/promtail-linux-amd64.zip"
 unzip promtail-linux-amd64.zip

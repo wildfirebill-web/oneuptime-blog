@@ -40,6 +40,7 @@ API Management serves as the gateway between the Power App and your backend. It 
 
 ```bash
 # Create an API Management instance
+
 az apim create \
   --name field-app-apim \
   --resource-group rg-power-apps \

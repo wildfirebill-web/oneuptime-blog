@@ -8,7 +8,7 @@ Description: Learn how to use the fileset function in OpenTofu to list files mat
 
 ## Introduction
 
-The `fileset` function in OpenTofu returns a set of file paths matching a glob pattern within a given directory. It is the foundation of data-driven multi-file operations — uploading all files in a directory to S3, deploying all Kubernetes manifests, or reading all config files.
+The `fileset` function in OpenTofu returns a set of file paths matching a glob pattern within a given directory. It is the foundation of data-driven multi-file operations - uploading all files in a directory to S3, deploying all Kubernetes manifests, or reading all config files.
 
 ## Syntax
 
@@ -16,8 +16,8 @@ The `fileset` function in OpenTofu returns a set of file paths matching a glob p
 fileset(path, pattern)
 ```
 
-- **path** — the base directory to search in
-- **pattern** — a glob pattern relative to `path`
+- **path** - the base directory to search in
+- **pattern** - a glob pattern relative to `path`
 - Returns a `set(string)` of relative paths
 
 ## Basic Examples

@@ -29,6 +29,7 @@ The `cilium-agent hive dot-graph` command produces DOT format output:
 
 ```bash
 # Capture the output
+
 CILIUM_POD=$(kubectl -n kube-system get pods -l k8s-app=cilium \
   -o jsonpath='{.items[0].metadata.name}')
 

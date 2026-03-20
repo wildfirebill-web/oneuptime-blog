@@ -77,6 +77,7 @@ On a node, inspect the routing table to confirm pod routes are present.
 
 ```bash
 # SSH into a worker node
+
 ip route show | grep 192.168
 ```
 

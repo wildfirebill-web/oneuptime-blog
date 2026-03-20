@@ -68,6 +68,7 @@ The following script downloads the K3s binary, installation script, and required
 ```bash
 #!/bin/bash
 # download-k3s-bundle.sh
+
 # Run this script on a machine with internet access
 
 K3S_VERSION="v1.29.0+k3s1"

@@ -1,4 +1,4 @@
-# How to Combine Variables and Locals Effectively in OpenTofu
+# How to Combine Variables and Locals Effectively in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Variables and locals serve different purposes: variables receive input from outs
 
 ```hcl
 # variables.tf - INPUTS from outside
+
 variable "environment" {
   type = string
 }

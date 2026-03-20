@@ -22,6 +22,7 @@ This means ArgoCD cannot find a plugin matching the name in your Application spe
 
 ```bash
 # Check if the sidecar is running
+
 kubectl get pods -n argocd \
   -l app.kubernetes.io/name=argocd-repo-server \
   -o jsonpath='{range .items[*]}{.status.containerStatuses[*].name}{"\n"}{end}'

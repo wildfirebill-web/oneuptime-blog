@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Non-Blocking, Sockets, IPv4, Networking, select
+Tags: Python, Non-Blocking, Sockets, IPv4, Networking, Select
 
 Description: Learn how to implement non-blocking IPv4 sockets in Python to handle multiple connections in a single thread without blocking on I/O operations.
 
 ## Blocking vs Non-Blocking Sockets
 
-By default, Python socket calls like `recv()` and `accept()` block—the thread sleeps until data arrives or a connection is made. Non-blocking sockets raise `BlockingIOError` (or `socket.error` with errno `EAGAIN`) immediately if the operation can't complete, allowing a single thread to manage multiple connections.
+By default, Python socket calls like `recv()` and `accept()` block-the thread sleeps until data arrives or a connection is made. Non-blocking sockets raise `BlockingIOError` (or `socket.error` with errno `EAGAIN`) immediately if the operation can't complete, allowing a single thread to manage multiple connections.
 
 ## Setting a Socket to Non-Blocking Mode
 
@@ -16,6 +16,7 @@ By default, Python socket calls like `recv()` and `accept()` block—the thread 
 import socket
 
 # Method 1: setblocking(False)
+
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.setblocking(False)
 

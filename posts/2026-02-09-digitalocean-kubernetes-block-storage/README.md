@@ -24,6 +24,7 @@ DOKS clusters include the CSI driver by default. Verify installation:
 
 ```bash
 # Check CSI driver pods
+
 kubectl get pods -n kube-system -l app.kubernetes.io/name=csi-do
 
 # View CSI driver version

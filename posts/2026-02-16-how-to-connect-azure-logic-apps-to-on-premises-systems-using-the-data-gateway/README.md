@@ -60,6 +60,7 @@ After installing the gateway software, create a corresponding resource in Azure 
 
 ```bash
 # Create the on-premises data gateway resource in Azure
+
 # The gateway must already be installed and registered
 az resource create \
   --resource-group rg-workflows \

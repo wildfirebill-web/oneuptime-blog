@@ -183,6 +183,7 @@ Developers add the `preview` label to their PR when they want a deployment.
 
 ```bash
 # Add the label using GitHub CLI
+
 gh pr edit 42 --add-label preview
 ```
 
@@ -204,7 +205,7 @@ generators:
     - branchMatch: "^(feature|fix)/.*"
 ```
 
-## Resource Limits for Preview Environments
+Resource Limits for Preview Environments
 
 Preview environments should use fewer resources than production. Configure resource quotas in the preview namespace.
 

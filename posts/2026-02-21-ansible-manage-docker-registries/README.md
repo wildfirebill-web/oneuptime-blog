@@ -29,6 +29,7 @@ Install the required Ansible collection if you have not already:
 
 ```bash
 # Install the community.docker collection from Ansible Galaxy
+
 ansible-galaxy collection install community.docker
 ```
 

@@ -68,6 +68,7 @@ By default, PR previews use the same build settings as the target branch. But yo
 
 ```yaml
 # amplify.yml - Conditional build for PR previews
+
 version: 1
 frontend:
   phases:

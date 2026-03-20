@@ -14,6 +14,7 @@ StorageClasses define the type of storage that can be dynamically provisioned fo
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     kubernetes = {
@@ -34,7 +35,7 @@ provider "kubernetes" {
 
 ```hcl
 # storage_classes.tf
-# GP3 SSD storage — good default for most workloads
+# GP3 SSD storage - good default for most workloads
 resource "kubernetes_storage_class" "gp3" {
   metadata {
     name = "gp3"
@@ -174,5 +175,5 @@ resource "kubernetes_storage_class" "gcp_regional_ssd" {
 - Set `WaitForFirstConsumer` as the volume binding mode when using zone-aware storage to prevent pods from being scheduled in a different zone than their volume.
 - Use `Retain` reclaim policy for database storage to prevent accidental data loss when a PVC is deleted.
 - Enable volume expansion (`allow_volume_expansion = true`) so you can increase volume size without recreating the PVC.
-- Only mark one StorageClass as default — having multiple defaults causes unpredictable behavior.
-- Use encrypted volumes in production by setting the encryption parameter — many compliance frameworks require this.
+- Only mark one StorageClass as default - having multiple defaults causes unpredictable behavior.
+- Use encrypted volumes in production by setting the encryption parameter - many compliance frameworks require this.

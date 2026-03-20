@@ -37,6 +37,7 @@ calicoctl ipam show --show-blocks | grep -E "free|used"
 
 ```yaml
 # For a cluster expecting 500 pods, use /16 (65536 addresses)
+
 # For 50 pods, /24 is risky - use /22 (1024) minimum
 apiVersion: projectcalico.org/v3
 kind: IPPool

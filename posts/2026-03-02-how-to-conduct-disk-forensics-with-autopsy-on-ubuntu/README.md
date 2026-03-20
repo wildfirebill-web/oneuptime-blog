@@ -20,6 +20,7 @@ Autopsy's official packages target Windows and macOS. On Ubuntu, you have a coup
 
 ```bash
 # Install from apt - quick but typically several versions behind
+
 sudo apt update
 sudo apt install -y autopsy sleuthkit
 

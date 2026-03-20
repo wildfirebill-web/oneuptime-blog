@@ -55,6 +55,7 @@ For the Istio-specific scrape job:
 
 ```yaml
 # prometheus-additional.yaml
+
 - job_name: 'istio-proxy'
   scrape_interval: 10s
   scrape_timeout: 8s
@@ -252,7 +253,7 @@ Key settings for fast alerting:
 - `group_interval: 10s` - check for new alerts in the group every 10 seconds
 - `resolve_timeout: 1m` - resolve alerts quickly once the condition clears
 
-## Resource Considerations
+Resource Considerations
 
 Running a real-time monitoring stack requires more resources than a relaxed setup:
 

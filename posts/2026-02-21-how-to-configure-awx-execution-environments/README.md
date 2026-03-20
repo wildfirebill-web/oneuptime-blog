@@ -22,6 +22,7 @@ The `ansible-builder` tool is what creates execution environment images. Install
 
 ```bash
 # Install ansible-builder
+
 pip3 install ansible-builder
 
 # Verify the installation

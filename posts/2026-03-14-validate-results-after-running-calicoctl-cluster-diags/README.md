@@ -37,6 +37,7 @@ echo "Size: $(du -h $BUNDLE | cut -f1)"
 CONTENTS=$(tar tzf "$BUNDLE")
 
 # Check for expected resource types
+
 EXPECTED="nodes ippools felixconfiguration bgpconfiguration"
 MISSING=0
 

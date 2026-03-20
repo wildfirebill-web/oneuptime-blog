@@ -32,6 +32,7 @@ A well-structured playbook has these essential sections:
 
 ```yaml
 # Playbook: Database Connection Pool Exhaustion
+
 # Version: 2.3
 # Last Updated: 2026-01-15
 # Owner: Platform Team

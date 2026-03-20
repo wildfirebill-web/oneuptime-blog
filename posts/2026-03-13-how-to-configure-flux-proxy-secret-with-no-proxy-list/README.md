@@ -53,6 +53,7 @@ Create a patch file that adds the environment variables to the source-controller
 
 ```yaml
 # patches/source-controller-proxy.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

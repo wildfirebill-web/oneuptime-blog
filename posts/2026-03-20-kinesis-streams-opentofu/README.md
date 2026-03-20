@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Kinesis, Streaming, Data Ingestion, Infrastructure as Code, Real-time
+Tags: OpenTofu, AWS, Kinesis, Streaming, Data Ingestion, Infrastructure as Code, Real-Time
 
 Description: Learn how to create and configure AWS Kinesis Data Streams using OpenTofu for real-time data ingestion with proper shard capacity, encryption, and consumer configuration.
 
@@ -14,6 +14,7 @@ Amazon Kinesis Data Streams is AWS's managed real-time data streaming service. I
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -31,7 +32,7 @@ provider "aws" {
 resource "aws_kinesis_stream" "events" {
   name             = "${var.environment}-events-stream"
   shard_count      = var.shard_count  # Each shard supports 1MB/s write, 2MB/s read
-  retention_period = 24               # Hours — default is 24, max is 8760 (365 days)
+  retention_period = 24               # Hours - default is 24, max is 8760 (365 days)
 
   # Enable server-side encryption
   encryption_type = "KMS"
@@ -57,7 +58,7 @@ For variable workloads, on-demand mode automatically scales capacity.
 resource "aws_kinesis_stream" "on_demand" {
   name = "${var.environment}-auto-scaling-stream"
 
-  # On-demand mode — no shard management required
+  # On-demand mode - no shard management required
   stream_mode_details {
     stream_mode = "ON_DEMAND"
   }
@@ -80,7 +81,7 @@ resource "aws_kms_key" "kinesis" {
 
 ```hcl
 # iam.tf
-# Producer policy — allows writing to the stream
+# Producer policy - allows writing to the stream
 resource "aws_iam_policy" "kinesis_producer" {
   name        = "KinesisProducerPolicy"
   description = "Allows writing records to Kinesis streams"
@@ -102,7 +103,7 @@ resource "aws_iam_policy" "kinesis_producer" {
   })
 }
 
-# Consumer policy — allows reading from the stream
+# Consumer policy - allows reading from the stream
 resource "aws_iam_policy" "kinesis_consumer" {
   name        = "KinesisConsumerPolicy"
   description = "Allows reading records from Kinesis streams"
@@ -184,8 +185,8 @@ resource "aws_cloudwatch_metric_alarm" "iterator_age" {
 
 ## Best Practices
 
-- Use on-demand mode for variable or unpredictable traffic patterns — it eliminates the need to pre-provision shards.
-- Enable enhanced fan-out for consumers that need low latency — shared throughput consumers share 2MB/s per shard across all consumers.
+- Use on-demand mode for variable or unpredictable traffic patterns - it eliminates the need to pre-provision shards.
+- Enable enhanced fan-out for consumers that need low latency - shared throughput consumers share 2MB/s per shard across all consumers.
 - Monitor `GetRecords.IteratorAgeMilliseconds` to detect when consumers are falling behind producers.
 - Set retention to at least 24 hours (default) and consider 7 days for analytics workloads to allow for reprocessing.
 - Use KMS encryption for streams containing PII or sensitive business data.

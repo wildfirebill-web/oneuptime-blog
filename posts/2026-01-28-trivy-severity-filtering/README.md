@@ -52,6 +52,7 @@ The `--severity` flag filters which vulnerabilities appear in results.
 
 ```bash
 # Show only CRITICAL vulnerabilities
+
 trivy image --severity CRITICAL nginx:latest
 
 # Show CRITICAL and HIGH

@@ -417,6 +417,7 @@ Here is a complete implementation using FastAPI with Pydantic for validation.
 
 ```python
 # field_selection.py
+
 from typing import Optional, List, Dict, Any, Set
 from fastapi import FastAPI, Query, HTTPException
 from pydantic import BaseModel, Field

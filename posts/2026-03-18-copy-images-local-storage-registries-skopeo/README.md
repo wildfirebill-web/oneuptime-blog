@@ -20,6 +20,7 @@ Skopeo uses transport prefixes to identify where images live.
 
 ```bash
 # Transport types:
+
 # docker://         - Remote Docker-compatible registry
 # containers-storage: - Local Podman/CRI-O storage
 # dir:              - Local directory with raw blobs

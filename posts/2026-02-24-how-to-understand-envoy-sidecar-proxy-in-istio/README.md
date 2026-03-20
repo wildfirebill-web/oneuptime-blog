@@ -18,6 +18,7 @@ In Istio, Envoy runs as a sidecar container called `istio-proxy` in every pod. I
 
 ```bash
 # Look at the Envoy version running in your mesh
+
 kubectl exec deploy/my-app -c istio-proxy -- envoy --version
 ```
 
@@ -214,7 +215,7 @@ istioctl proxy-config secret deploy/my-app -n default -o json | \
 
 This will show you the SPIFFE identity, validity period, and issuer of the workload certificate.
 
-## Resource Consumption
+Resource Consumption
 
 Each Envoy sidecar consumes resources. The defaults in Istio are:
 

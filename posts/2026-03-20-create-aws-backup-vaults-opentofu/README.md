@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Backup, Backup Vaults, Infrastructure as Code
+Tags: OpenTofu, AWS, Backup, Backup Vault, Infrastructure as Code
 
 Description: Learn how to create AWS Backup vaults with OpenTofu for encrypted, access-controlled backup storage with immutable vault lock for compliance.
 
@@ -12,6 +12,7 @@ AWS Backup vaults are encrypted repositories where backup data is stored. Managi
 
 ```hcl
 # KMS key for backup encryption
+
 resource "aws_kms_key" "backup" {
   description             = "Backup vault encryption key"
   deletion_window_in_days = 14
@@ -100,7 +101,7 @@ resource "aws_backup_vault_policy" "production" {
 ## Vault Lock (Immutable Backup Storage)
 
 ```hcl
-# Compliance mode vault lock — cannot be removed or changed
+# Compliance mode vault lock - cannot be removed or changed
 resource "aws_backup_vault_lock_configuration" "compliance" {
   backup_vault_name = aws_backup_vault.production.name
 

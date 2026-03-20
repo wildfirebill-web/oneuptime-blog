@@ -90,6 +90,7 @@ import json
 from datetime import datetime
 
 # Define metrics
+
 backup_last_success = Gauge(
     'backup_last_success_timestamp',
     'Timestamp of last successful backup',

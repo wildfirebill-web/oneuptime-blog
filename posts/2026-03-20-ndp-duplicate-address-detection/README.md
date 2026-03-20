@@ -12,7 +12,7 @@ Duplicate Address Detection (DAD) is an NDP mechanism that verifies an IPv6 addr
 
 ## DAD Process
 
-```
+```text
 DAD Process (RFC 4862):
 
 1. Interface is configured with a new IPv6 address (SLAAC or manual)
@@ -35,6 +35,7 @@ DAD Process (RFC 4862):
 
 ```bash
 # Watch DAD happening when interface comes up
+
 # Monitor for NS with source = ::
 sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 135 and src ::"
 
@@ -87,7 +88,7 @@ cat /proc/sys/net/ipv6/conf/eth0/use_tempaddr
 # The link-local address (fe80::...) is the FIRST address configured
 # and must pass DAD before any NDP communication can occur
 
-# If link-local DAD fails (extremely rare — would need MAC collision):
+# If link-local DAD fails (extremely rare - would need MAC collision):
 # The interface cannot function at all for IPv6
 
 # Watch for link-local DAD NS

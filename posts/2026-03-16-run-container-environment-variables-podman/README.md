@@ -20,6 +20,7 @@ Use the `-e` or `--env` flag to set an environment variable:
 
 ```bash
 # Set a single environment variable
+
 podman run -d --name db \
     -e POSTGRES_PASSWORD=mysecret \
     postgres:16

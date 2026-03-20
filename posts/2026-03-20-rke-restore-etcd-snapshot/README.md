@@ -8,7 +8,7 @@ Description: Step-by-step guide to restoring an RKE cluster from an etcd snapsho
 
 ## Introduction
 
-When a catastrophic event occurs — such as accidental deletion of critical resources, data corruption, or hardware failure — restoring from an etcd snapshot is often the fastest path to recovery. RKE provides a built-in restore command that automates the complex process of stopping the cluster, restoring the etcd data, and bringing everything back online.
+When a catastrophic event occurs - such as accidental deletion of critical resources, data corruption, or hardware failure - restoring from an etcd snapshot is often the fastest path to recovery. RKE provides a built-in restore command that automates the complex process of stopping the cluster, restoring the etcd data, and bringing everything back online.
 
 ## Prerequisites
 
@@ -33,6 +33,7 @@ What is NOT restored:
 
 ```bash
 # If the cluster is partially accessible, document current state
+
 export KUBECONFIG=kube_config_cluster.yml
 kubectl get nodes
 kubectl get pods --all-namespaces

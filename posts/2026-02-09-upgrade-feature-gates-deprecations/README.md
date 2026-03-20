@@ -27,6 +27,7 @@ Identify which feature gates are currently enabled in your cluster.
 echo "Checking current feature gates..."
 
 # For API server
+
 kubectl get pod -n kube-system -l component=kube-apiserver -o yaml | \
   grep -A 10 "feature-gates"
 

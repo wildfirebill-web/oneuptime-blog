@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MTU, PMTUD, Networking, Linux, tracepath, Troubleshooting
+Tags: MTU, PMTUD, Networking, Linux, Tracepath, Troubleshooting
 
 Description: Discover the Path MTU (PMTU) between two hosts using tracepath, ping with DF bit, and socket-level PMTU discovery to determine the maximum packet size.
 
@@ -14,6 +14,7 @@ Path MTU is the smallest MTU of any link on the path between two hosts. Knowing 
 
 ```bash
 # tracepath automatically discovers MTU at each hop:
+
 tracepath -n 10.20.0.5
 # Output:
 # 1: 10.20.0.1          0.5ms
@@ -102,7 +103,7 @@ if mtu:
 
 ## Common Path MTU Values
 
-```
+```text
 Network Type             | Typical Path MTU
 -------------------------|------------------
 Standard Ethernet        | 1500 bytes
@@ -139,4 +140,4 @@ ss -tin state established dst 10.20.0.5 | grep mss
 
 ## Conclusion
 
-Use `tracepath -n` for a quick path MTU discovery — it reports the MTU at each hop and shows where the bottleneck is. For programmatic use, the socket `IP_PMTUDISC_PROBE` option returns the kernel's current path MTU estimate after sending. TCP discovers path MTU automatically using PMTUD; configure VPN tunnels and application-level UDP protocols to use `path_mtu - overhead` to avoid fragmentation. The common problem environments are IPsec VPNs (50-80 bytes overhead) and VXLAN overlays (50 bytes overhead) where the effective path MTU is significantly less than the underlying Ethernet MTU.
+Use `tracepath -n` for a quick path MTU discovery - it reports the MTU at each hop and shows where the bottleneck is. For programmatic use, the socket `IP_PMTUDISC_PROBE` option returns the kernel's current path MTU estimate after sending. TCP discovers path MTU automatically using PMTUD; configure VPN tunnels and application-level UDP protocols to use `path_mtu - overhead` to avoid fragmentation. The common problem environments are IPsec VPNs (50-80 bytes overhead) and VXLAN overlays (50 bytes overhead) where the effective path MTU is significantly less than the underlying Ethernet MTU.

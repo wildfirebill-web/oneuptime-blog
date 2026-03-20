@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, ipconfig, DNS, Cache, Troubleshooting
+Tags: Windows, Networking, Ipconfig, DNS, Cache, Troubleshooting
 
 Description: Flush the Windows DNS resolver cache using ipconfig /flushdns to clear stale DNS records and force fresh lookups, resolving hostname resolution issues after DNS changes.
 
@@ -19,7 +19,7 @@ ipconfig /flushdns
 
 Expected output:
 
-```
+```text
 Windows IP Configuration
 
 Successfully flushed the DNS Resolver Cache.
@@ -58,6 +58,7 @@ ping hostname.example.com
 
 ```powershell
 # Clear the DNS cache (Windows 8+)
+
 Clear-DnsClientCache
 
 # Verify
@@ -96,7 +97,7 @@ sc query dnscache
 
 ## Notes on Negative Caching
 
-Windows caches **negative responses** (NXDOMAIN — "host not found") too. These are also cleared by `ipconfig /flushdns`. This is relevant when testing a new hostname that did not exist until recently.
+Windows caches **negative responses** (NXDOMAIN - "host not found") too. These are also cleared by `ipconfig /flushdns`. This is relevant when testing a new hostname that did not exist until recently.
 
 ## Conclusion
 

@@ -38,6 +38,7 @@ Create HelmRelease resources to install ASO:
 
 ```yaml
 # aso-helm-repo.yaml
+
 # HelmRepository for the ASO Helm chart
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository

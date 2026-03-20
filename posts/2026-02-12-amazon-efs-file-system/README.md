@@ -36,6 +36,7 @@ Let's create the security group first:
 
 ```bash
 # Create a security group for EFS
+
 EFS_SG=$(aws ec2 create-security-group \
   --group-name "efs-mount-target-sg" \
   --description "Security group for EFS mount targets" \

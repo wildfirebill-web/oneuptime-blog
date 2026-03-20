@@ -173,6 +173,7 @@ After enabling mTLS, verify it's actually being enforced:
 
 ```bash
 # Check the mTLS status of your services
+
 istioctl x describe pod <pod-name> -n production
 ```
 

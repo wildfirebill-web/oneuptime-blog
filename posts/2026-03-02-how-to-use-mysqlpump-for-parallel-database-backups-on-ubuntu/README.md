@@ -29,6 +29,7 @@ mysqlpump is particularly useful when backing up servers with dozens of database
 
 ```bash
 # Verify mysqlpump is installed (comes with mysql-client)
+
 which mysqlpump
 mysqlpump --version
 

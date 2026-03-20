@@ -32,6 +32,7 @@ Define the performance environment to match production:
 
 ```yaml
 # environments/performance.yml
+
 # Performance testing environment - mirrors production
 ---
 env_name: perf

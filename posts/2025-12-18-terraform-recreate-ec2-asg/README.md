@@ -134,6 +134,7 @@ resource "aws_autoscaling_group" "app" {
 }
 
 # Trigger refresh when launch template changes
+
 resource "null_resource" "asg_instance_refresh" {
   triggers = {
     launch_template_version = aws_launch_template.app.latest_version

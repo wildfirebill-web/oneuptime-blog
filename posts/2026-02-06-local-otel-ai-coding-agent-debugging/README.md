@@ -26,6 +26,7 @@ Use a minimal local setup: an OpenTelemetry Collector writing to a file, plus a 
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

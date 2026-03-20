@@ -47,6 +47,7 @@ def synthesize_ssml(ssml_text, output_path="output.mp3"):
     print(f"Audio saved to: {output_path}")
 
 # Basic SSML example
+
 ssml = """
 <speak>
     Hello, and welcome to our platform.

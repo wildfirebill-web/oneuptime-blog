@@ -8,13 +8,13 @@ Description: A detailed explanation of solicited-node multicast addresses in IPv
 
 ## What Are Solicited-Node Multicast Addresses?
 
-A solicited-node multicast address is an IPv6 multicast address automatically derived from a unicast or anycast address. It is used by Neighbor Discovery Protocol (NDP) to find the MAC address of a neighboring host — the IPv6 equivalent of ARP.
+A solicited-node multicast address is an IPv6 multicast address automatically derived from a unicast or anycast address. It is used by Neighbor Discovery Protocol (NDP) to find the MAC address of a neighboring host - the IPv6 equivalent of ARP.
 
 ## Why Solicited-Node Multicast Instead of Broadcast?
 
 In IPv4, ARP sends broadcast packets (`ff:ff:ff:ff:ff:ff`) to all hosts on the link. Every host must process the broadcast, even if it's not the intended target.
 
-IPv6 replaces this broadcast with targeted multicast: only the host(s) sharing the same last 24 bits of their address will receive and process the solicited-node multicast — everyone else discards it at the network interface level.
+IPv6 replaces this broadcast with targeted multicast: only the host(s) sharing the same last 24 bits of their address will receive and process the solicited-node multicast - everyone else discards it at the network interface level.
 
 ## How the Solicited-Node Address Is Computed
 
@@ -22,7 +22,7 @@ The solicited-node address is formed by:
 1. Starting with the prefix `ff02::1:ff00:0/104`
 2. Appending the last 24 bits (3 bytes) of the unicast/anycast address
 
-```
+```text
 Unicast address: 2001:0db8:0000:0000:0200:5eff:fe00:5301
 Last 24 bits:    00:53:01 (hexadecimal)
 
@@ -33,6 +33,7 @@ Solicited-node: ff02::1:ff00:5301
 
 ```bash
 # Python script to compute solicited-node address
+
 python3 -c "
 import ipaddress
 
@@ -116,7 +117,7 @@ ip -6 addr add 2001:db8::100/64 dev eth0
 
 Because solicited-node groups share the last 24 bits, different addresses can share the same solicited-node group (1 in 2^24 = ~16 million chance per address):
 
-```
+```text
 2001:db8::1 → ff02::1:ff00:0001
 2001:db8:1::1 → ff02::1:ff00:0001  (same solicited-node!)
 ```

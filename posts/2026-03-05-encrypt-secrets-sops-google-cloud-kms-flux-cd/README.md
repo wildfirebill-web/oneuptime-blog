@@ -24,6 +24,7 @@ Ensure the Cloud KMS API is enabled in your Google Cloud project.
 
 ```bash
 # Enable the Cloud KMS API
+
 gcloud services enable cloudkms.googleapis.com --project my-project
 ```
 

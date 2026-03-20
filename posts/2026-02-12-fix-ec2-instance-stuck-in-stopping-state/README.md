@@ -35,6 +35,7 @@ Check the current state:
 
 ```bash
 # Check instance state and state transition reason
+
 aws ec2 describe-instances \
   --instance-ids i-0abc123 \
   --query 'Reservations[0].Instances[0].{

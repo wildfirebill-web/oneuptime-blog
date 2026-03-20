@@ -16,6 +16,7 @@ The most common pattern is mutual security group references.
 
 ```hcl
 # This creates a cycle: sg_a → sg_b → sg_a
+
 resource "aws_security_group" "app" {
   name   = "app-sg"
   vpc_id = aws_vpc.main.id
@@ -152,4 +153,4 @@ resource "aws_iam_role" "lambda" {
 
 ## Summary
 
-Circular dependencies in OpenTofu are resolved by restructuring how resources reference each other. The most common fix is separating resource creation from relationship configuration — create security groups first, then add rules separately. For module cycles, ensure data flows in one direction (network module → app module, never the reverse). Use `tofu graph` to visualize dependencies when diagnosing complex cycles. Avoid adding `depends_on` to resources that already have implicit dependencies through attribute references.
+Circular dependencies in OpenTofu are resolved by restructuring how resources reference each other. The most common fix is separating resource creation from relationship configuration - create security groups first, then add rules separately. For module cycles, ensure data flows in one direction (network module → app module, never the reverse). Use `tofu graph` to visualize dependencies when diagnosing complex cycles. Avoid adding `depends_on` to resources that already have implicit dependencies through attribute references.

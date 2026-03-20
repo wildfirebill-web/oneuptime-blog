@@ -104,6 +104,7 @@ def detect_landmarks_from_url(image_url):
     return results
 
 # Detect landmarks from a publicly accessible image
+
 results = detect_landmarks_from_url("https://example.com/eiffel-tower-photo.jpg")
 ```
 

@@ -10,14 +10,14 @@ Bogon addresses are IP ranges that should never appear as packet sources on the 
 
 ## What Are Bogon Addresses?
 
-```
+```text
 Range               Type            Reason
 ------------------  --------------  ------------------------------------
 0.0.0.0/8           This network    Source should never be 0.x.x.x
-10.0.0.0/8          RFC 1918        Private — invalid on internet
+10.0.0.0/8          RFC 1918        Private - invalid on internet
 100.64.0.0/10       Shared address  Carrier-grade NAT space
 127.0.0.0/8         Loopback        Local loopback
-169.254.0.0/16      Link-local      APIPA — not routable
+169.254.0.0/16      Link-local      APIPA - not routable
 172.16.0.0/12       RFC 1918        Private
 192.0.0.0/24        IETF protocol   Reserved
 192.168.0.0/16      RFC 1918        Private
@@ -25,7 +25,7 @@ Range               Type            Reason
 198.51.100.0/24     Documentation   Example docs only
 203.0.113.0/24      Documentation   Example docs only
 224.0.0.0/4         Multicast       Not valid as source IP
-240.0.0.0/4         Reserved        Class E — not assigned
+240.0.0.0/4         Reserved        Class E - not assigned
 255.255.255.255/32  Broadcast       Not valid as source
 ```
 
@@ -35,7 +35,7 @@ Drop these ranges arriving on your external interface:
 
 ```bash
 #!/bin/bash
-# bogon-filter.sh — Drop packets from bogon source IPs
+# bogon-filter.sh - Drop packets from bogon source IPs
 
 IFACE="eth0"  # External/public interface
 
@@ -70,6 +70,7 @@ Individual iptables rules for each range work, but ipset is faster:
 
 ```bash
 # Create a bogon set
+
 sudo ipset create bogons hash:net family inet
 
 # Add all bogon ranges
@@ -128,4 +129,4 @@ sudo iptables -L INPUT -n -v | grep bogons
 # The packets/bytes column should increment if attacks are hitting the rule
 ```
 
-Bogon filtering is cheap to implement and delivers immediate security benefits — the vast majority of internet attack traffic originates from spoofed bogon addresses.
+Bogon filtering is cheap to implement and delivers immediate security benefits - the vast majority of internet attack traffic originates from spoofed bogon addresses.

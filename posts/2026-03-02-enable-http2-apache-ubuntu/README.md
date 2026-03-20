@@ -22,6 +22,7 @@ Check your Apache version:
 ```bash
 apache2 -version
 # Should show 2.4.17 or newer
+
 ```
 
 ## The MPM Problem: Why HTTP/2 Requires Event MPM

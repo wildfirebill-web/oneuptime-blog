@@ -8,7 +8,7 @@ Description: Learn why Portainer locks itself after 5 minutes without admin acco
 
 ## Introduction
 
-When you first install Portainer, you have exactly 5 minutes to navigate to the UI and create an admin account. If that window expires, Portainer displays an error and refuses all access. This security feature prevents unauthorized users from claiming your uninitialized instance — but it can catch new users off guard.
+When you first install Portainer, you have exactly 5 minutes to navigate to the UI and create an admin account. If that window expires, Portainer displays an error and refuses all access. This security feature prevents unauthorized users from claiming your uninitialized instance - but it can catch new users off guard.
 
 ## What Happens After the Timeout
 
@@ -23,6 +23,7 @@ The cleanest approach is to provide the admin password at startup:
 
 ```bash
 # Stop and remove the existing container (keep or remove the volume)
+
 docker stop portainer
 docker rm portainer
 
@@ -37,7 +38,7 @@ docker run -d \
   portainer/portainer-ce:latest \
   --admin-password='$2y$05$8qOfvkl7D4FtcC/eCIbVGeFNQtYjC6.gg5bflnEsOxOinqPgXHzaC'
 
-# The hash above is bcrypt for "admin123" — generate your own:
+# The hash above is bcrypt for "admin123" - generate your own:
 # docker run --rm httpd:2.4-alpine htpasswd -nbB admin yourpassword | cut -d ':' -f 2
 
 # Option B: Password from environment variable
@@ -66,7 +67,7 @@ docker rm portainer
 # Remove the old data volume
 docker volume rm portainer_data
 
-# Start fresh — you'll have a new 5-minute window
+# Start fresh - you'll have a new 5-minute window
 docker run -d \
   -p 9000:9000 \
   -p 9443:9443 \
@@ -97,7 +98,7 @@ docker run --rm \
   alpine:latest \
   rm /data/portainer.db
 
-# Restart Portainer — you'll have a fresh 5-minute window
+# Restart Portainer - you'll have a fresh 5-minute window
 docker restart portainer
 ```
 

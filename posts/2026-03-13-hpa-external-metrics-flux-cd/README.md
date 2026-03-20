@@ -23,6 +23,7 @@ External metrics HPA allows Kubernetes to scale based on metrics from sources ou
 
 ```yaml
 # clusters/production/infrastructure/keda.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, Virtualization, HCI, VM Images
+Tags: Harvester, Kubernetes, Virtualization, HCI, VM Image
 
 Description: A guide to managing virtual machine images in Harvester, including importing, organizing, and maintaining images for VM deployments.
 
@@ -27,6 +27,7 @@ Images are stored as Longhorn volumes and replicated across nodes based on the c
 
 ```bash
 # List all VM images via kubectl
+
 kubectl get virtualmachineimages -A
 
 # Get detailed info about a specific image
@@ -112,7 +113,7 @@ For images that aren't available via public URL (e.g., Windows, custom builds):
 2. Select **Upload** instead of URL
 3. Set the **Name** and **Namespace**
 4. Click **Choose File** and select the `.qcow2`, `.img`, or `.iso` file
-5. Click **Create** — the upload begins immediately
+5. Click **Create** - the upload begins immediately
 
 ### Via the Harvester API
 
@@ -215,7 +216,7 @@ kubectl get virtualmachineimage -A -o json | jq '
 ```
 
 **Naming Convention:**
-```
+```text
 {os}-{version}-{variant}-{date}
 Examples:
   ubuntu-22-04-server-20240101

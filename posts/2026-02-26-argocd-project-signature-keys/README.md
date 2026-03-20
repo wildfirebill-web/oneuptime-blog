@@ -52,6 +52,7 @@ If your team does not already have GPG keys:
 
 ```bash
 # Generate a new GPG key
+
 gpg --full-generate-key
 
 # Choose:

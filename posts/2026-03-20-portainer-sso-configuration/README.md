@@ -1,4 +1,4 @@
-# How to Configure SSO (Single Sign-On) in Portainer
+# How to Configure SSO (Single Sign-On) in Portainer - Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,7 +23,7 @@ SSO (Single Sign-On) in Portainer means users who are already authenticated with
 | OAuth only | User sees Portainer login page with an "OAuth Login" button |
 | SSO enabled | User is automatically redirected to IdP (no login page shown) |
 
-SSO is an enhancement on top of OAuth — it's only relevant once OAuth is configured.
+SSO is an enhancement on top of OAuth - it's only relevant once OAuth is configured.
 
 ## Enabling SSO via UI
 
@@ -45,6 +45,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Enable SSO in OAuth settings
+
 curl -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -69,7 +70,7 @@ curl -X PUT \
 
 ## How SSO Works Step by Step
 
-```
+```text
 1. User visits https://portainer.example.com/
 2. Portainer detects no active session
 3. (SSO enabled) Portainer immediately redirects to:
@@ -117,4 +118,4 @@ Azure AD supports silent authentication if the user has an active SSO session. W
 
 ## Conclusion
 
-SSO in Portainer creates a seamless experience for users who already have an active session with the corporate IdP — they simply visit the Portainer URL and are logged in immediately. Combined with `HideInternalAuth`, the Portainer login page is invisible to regular users. Always maintain an emergency internal admin account accessible via `?skipSSO=true` for operational continuity when the IdP is unavailable.
+SSO in Portainer creates a seamless experience for users who already have an active session with the corporate IdP - they simply visit the Portainer URL and are logged in immediately. Combined with `HideInternalAuth`, the Portainer login page is invisible to regular users. Always maintain an emergency internal admin account accessible via `?skipSSO=true` for operational continuity when the IdP is unavailable.

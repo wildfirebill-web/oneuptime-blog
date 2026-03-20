@@ -36,6 +36,7 @@ Regardless of which external Redis you use, the ArgoCD configuration follows the
 # argocd-external-redis-values.yaml
 
 # Disable built-in Redis
+
 redis:
   enabled: false
 

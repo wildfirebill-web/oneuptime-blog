@@ -14,7 +14,7 @@ The `X-Forwarded-For` (XFF) header is added by load balancers and proxies to pre
 
 The XFF header format for a chain of proxies:
 
-```
+```text
 X-Forwarded-For: <client>, <proxy1>, <proxy2>
 
 Examples with IPv6:
@@ -30,6 +30,7 @@ Configure Nginx to forward the real client IPv6 address to upstream applications
 
 ```nginx
 # /etc/nginx/conf.d/proxy.conf
+
 server {
     listen 80;
     listen [::]:80;

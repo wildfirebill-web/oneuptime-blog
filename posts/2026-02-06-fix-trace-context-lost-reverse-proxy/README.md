@@ -23,6 +23,7 @@ When a reverse proxy strips these headers (either intentionally for security or 
 
 ```bash
 # Check what headers arrive at the downstream service
+
 # Add a debug endpoint or middleware that logs headers
 
 # In the downstream service (Python/Flask example):

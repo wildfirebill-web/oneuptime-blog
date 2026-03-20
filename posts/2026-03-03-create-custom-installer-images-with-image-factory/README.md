@@ -26,6 +26,7 @@ Create a YAML file that describes what your installer should contain:
 
 ```yaml
 # installer-schematic.yaml
+
 # Custom installer with storage and networking extensions
 customization:
   systemExtensions:

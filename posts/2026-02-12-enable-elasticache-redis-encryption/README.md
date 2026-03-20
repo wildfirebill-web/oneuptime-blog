@@ -22,6 +22,7 @@ Encryption at rest encrypts the data stored on disk, including backups and snaps
 
 ```bash
 # Create a Redis replication group with encryption at rest
+
 aws elasticache create-replication-group \
   --replication-group-id my-encrypted-redis \
   --replication-group-description "Encrypted Redis cluster" \

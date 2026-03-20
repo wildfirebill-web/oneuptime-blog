@@ -109,6 +109,7 @@ VCS Triggers:
 
 ```hcl
 # First, get the OAuth token ID from your VCS provider connection
+
 data "tfe_oauth_client" "github" {
   organization     = var.organization
   service_provider = "github"

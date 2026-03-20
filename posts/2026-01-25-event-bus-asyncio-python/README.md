@@ -37,6 +37,7 @@ Let's start with a minimal async event bus:
 
 ```python
 # event_bus.py
+
 import asyncio
 from typing import Callable, Dict, List, Any, Coroutine
 from dataclasses import dataclass, field

@@ -34,6 +34,7 @@ The simplest approach uses different tags within the same registry to represent 
 
 ```bash
 # Build and push to dev tag
+
 docker build -t registry.example.com/myapp:dev-abc123 .
 docker push registry.example.com/myapp:dev-abc123
 

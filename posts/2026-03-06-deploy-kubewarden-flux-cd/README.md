@@ -29,6 +29,7 @@ Organize your Git repository to separate Kubewarden infrastructure from policy d
 
 ```yaml
 # Directory structure
+
 # clusters/
 #   my-cluster/
 #     kubewarden/

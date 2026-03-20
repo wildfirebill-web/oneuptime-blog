@@ -39,6 +39,7 @@ Add the resource to your template with its current configuration. The template m
 
 ```yaml
 # template.yaml - includes the resource to import
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Application stack with imported database
 
@@ -163,7 +164,7 @@ aws cloudformation create-change-set \
   ]'
 ```
 
-## Resource Identifiers by Type
+Resource Identifiers by Type
 
 Each resource type has a specific identifier key for imports:
 

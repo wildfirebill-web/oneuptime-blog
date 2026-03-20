@@ -1,14 +1,14 @@
-# How to Deploy Bookstack via Portainer
+# How to Deploy Bookstack via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Bookstack, Wiki, Documentation, Self-Hosted
+Tags: Portainer, Docker, BookStack, Wiki, Documentation, Self-Hosted
 
 Description: Deploy Bookstack via Portainer as a self-hosted wiki and documentation platform with a book/chapter/page hierarchy for organized knowledge management.
 
 ## Introduction
 
-Bookstack is an opinionated, self-hosted wiki platform organized around books, chapters, and pages — just like a real bookshelf. It's simpler than MediaWiki or Confluence while being more structured than flat wikis. Deploy via Portainer for team documentation, personal knowledge bases, or project wikis.
+Bookstack is an opinionated, self-hosted wiki platform organized around books, chapters, and pages - just like a real bookshelf. It's simpler than MediaWiki or Confluence while being more structured than flat wikis. Deploy via Portainer for team documentation, personal knowledge bases, or project wikis.
 
 ## Deploy as a Stack
 
@@ -76,7 +76,7 @@ Default credentials:
 
 Bookstack uses a hierarchy:
 
-```
+```text
 📚 Shelves (optional top-level grouping)
   📖 Books (main containers)
     📑 Chapters (sections within books)
@@ -85,7 +85,7 @@ Bookstack uses a hierarchy:
 
 Example structure for a company wiki:
 
-```
+```bash
 📚 Company Knowledge Base
   📖 Engineering
     📑 Infrastructure
@@ -119,6 +119,7 @@ environment:
 
 ```bash
 # Backup configuration (includes uploads)
+
 docker run --rm \
   -v bookstack_data:/source \
   -v /backups:/backup \

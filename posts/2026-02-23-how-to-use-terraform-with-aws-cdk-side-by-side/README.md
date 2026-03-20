@@ -32,6 +32,7 @@ A clean separation puts networking and core infrastructure in Terraform and appl
 
 ```hcl
 # terraform/networking/main.tf
+
 # Terraform manages VPC and core networking
 provider "aws" {
   region = "us-east-1"

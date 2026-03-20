@@ -342,6 +342,7 @@ def get_latest_per_group(index, group_field, timestamp_field,
     return results
 
 # Usage
+
 latest_readings = get_latest_per_group(
     index="sensor_readings",
     group_field="sensor_id",

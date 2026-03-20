@@ -29,6 +29,7 @@ Before starting upgrades:
 
 ```bash
 # 1. Check cluster health
+
 kubectl get nodes
 kubectl get pods --all-namespaces
 

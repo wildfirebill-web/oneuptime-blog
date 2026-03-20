@@ -22,6 +22,7 @@ Configure kubelet to enable graceful shutdown. Edit the kubelet configuration fi
 
 ```bash
 # Create or edit kubelet config
+
 sudo mkdir -p /var/lib/kubelet
 sudo nano /var/lib/kubelet/config.yaml
 ```

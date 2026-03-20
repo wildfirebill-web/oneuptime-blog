@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, Kubernetes, Ingresses, NGINX, Networking, DevOps
+Tags: WebSocket, Kubernetes, Ingresses, Nginx, Networking, DevOps
 
 Description: A practical guide to configuring WebSocket connections through Kubernetes Ingress controllers, including timeout settings, sticky sessions, and troubleshooting common issues.
 
@@ -243,6 +243,7 @@ Create the TLS secret from your certificates.
 
 ```bash
 # Create TLS secret from certificate files
+
 kubectl create secret tls websocket-tls-secret \
   --cert=path/to/cert.pem \
   --key=path/to/key.pem \

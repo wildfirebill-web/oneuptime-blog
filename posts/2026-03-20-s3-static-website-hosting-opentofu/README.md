@@ -25,6 +25,7 @@ resource "aws_s3_bucket" "website" {
 }
 
 # Configure the bucket as a website
+
 resource "aws_s3_bucket_website_configuration" "website" {
   bucket = aws_s3_bucket.website.id
 

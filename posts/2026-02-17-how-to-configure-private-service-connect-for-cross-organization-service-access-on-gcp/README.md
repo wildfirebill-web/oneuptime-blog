@@ -28,6 +28,7 @@ First, set up the backend service with an internal load balancer.
 
 ```bash
 # Create a subnet for the internal load balancer
+
 gcloud compute networks subnets create producer-ilb-subnet \
   --network=producer-vpc \
   --region=us-central1 \

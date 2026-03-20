@@ -26,6 +26,7 @@ Here is the collector configuration:
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

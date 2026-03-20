@@ -6,15 +6,15 @@ Tags: Portainer, Resource Quotas, Kubernetes, Governance, DevOps
 
 Description: Learn how to apply CPU, memory, and object count quotas to Portainer environments and namespaces to prevent resource exhaustion.
 
-## Resource Quotas in Docker Environments
+Resource Quotas in Docker Environments
 
 For Docker standalone and Swarm environments, Portainer applies resource limits at the container level through its deployment forms and security policies.
 
-## Resource Quotas in Kubernetes Environments
+Resource Quotas in Kubernetes Environments
 
 Kubernetes environments support namespace-level ResourceQuotas. Portainer exposes these through the namespace management UI.
 
-### Setting Quotas During Namespace Creation
+## Setting Quotas During Namespace Creation
 
 1. Go to **Namespaces > Add namespace**.
 2. Enable **Resource assignment**.
@@ -37,6 +37,7 @@ For more granular control, apply a ResourceQuota manifest directly:
 
 ```yaml
 # Comprehensive namespace quota
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

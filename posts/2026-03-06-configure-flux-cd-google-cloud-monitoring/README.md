@@ -41,6 +41,7 @@ GKE clusters created after GKE version 1.27 have managed collection enabled by d
 
 ```bash
 # Check if managed collection is enabled
+
 gcloud container clusters describe my-cluster \
   --zone us-central1-a \
   --format="value(monitoringConfig.managedPrometheusConfig.enabled)"

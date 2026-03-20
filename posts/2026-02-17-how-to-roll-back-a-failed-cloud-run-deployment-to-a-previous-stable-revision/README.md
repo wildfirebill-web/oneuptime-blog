@@ -18,6 +18,7 @@ Every time you deploy to Cloud Run - whether by updating the container image, ch
 
 ```bash
 # List all revisions for a service
+
 gcloud run revisions list \
     --service=my-service \
     --region=us-central1 \

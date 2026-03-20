@@ -25,6 +25,7 @@ The VS Code integration is particularly powerful because it works with your loca
 
 ```bash
 # Install the AWS Toolkit extension
+
 code --install-extension amazonwebservices.aws-toolkit-vscode
 
 # Open a SAM template file and use the

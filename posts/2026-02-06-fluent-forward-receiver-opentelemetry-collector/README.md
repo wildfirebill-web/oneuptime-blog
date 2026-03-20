@@ -128,6 +128,7 @@ To send logs from Fluentd to the OpenTelemetry Collector, configure a forward ou
 
 ```conf
 # Fluentd configuration to forward logs to OpenTelemetry Collector
+
 <source>
   @type tail
   path /var/log/app/*.log

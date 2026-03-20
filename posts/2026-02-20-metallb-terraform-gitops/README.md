@@ -41,6 +41,7 @@ Use the Kubernetes provider to manage MetalLB CRDs as native Terraform resources
 
 ```hcl
 # providers.tf
+
 # Configure the Kubernetes provider to talk to your cluster
 terraform {
   required_version = ">= 1.5.0"

@@ -24,6 +24,7 @@ Using the AWS-managed key:
 
 ```bash
 # Create an encrypted file system with the AWS-managed key
+
 aws efs create-file-system \
   --encrypted \
   --tags "Key=Name,Value=encrypted-storage"

@@ -33,6 +33,7 @@ HTTP client and server instrumentation handles context propagation automatically
 
 ```python
 # service_a.py - Python service making HTTP calls
+
 from flask import Flask, request
 import requests
 from opentelemetry import trace

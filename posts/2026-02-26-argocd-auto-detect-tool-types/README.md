@@ -87,6 +87,7 @@ After checking built-in tools, ArgoCD evaluates the `discover` rules of all inst
 
 ```yaml
 # Example plugin discovery
+
 discover:
   find:
     glob: "**/*.cue"  # Matches if any .cue file exists

@@ -25,6 +25,7 @@ Regular Java applications on Cloud Run can take 3-10 seconds for a cold start. A
 
 ```bash
 # Create a new Quarkus project with REST extensions
+
 mvn io.quarkus.platform:quarkus-maven-plugin:3.6.0:create \
   -DprojectGroupId=com.example \
   -DprojectArtifactId=quarkus-cloudrun \

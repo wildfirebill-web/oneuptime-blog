@@ -1,13 +1,12 @@
----
-title: "Using tofu state push in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, state
-description: "Learn how to use tofu state push to upload a local state file to your configured remote backend, and when this advanced operation is appropriate."
----
-
 # Using tofu state push in OpenTofu
 
-The `tofu state push` command uploads a local state file to the configured remote backend. It's an advanced operation used in specific recovery and migration scenarios. Use it with extreme caution — uploading incorrect state can cause serious problems.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, State
+
+Description: Learn how to use tofu state push to upload a local state file to your configured remote backend, and when this advanced operation is appropriate.
+
+The `tofu state push` command uploads a local state file to the configured remote backend. It's an advanced operation used in specific recovery and migration scenarios. Use it with extreme caution - uploading incorrect state can cause serious problems.
 
 ## When to Use state push
 
@@ -26,6 +25,7 @@ The `tofu state push` command uploads a local state file to the configured remot
 
 ```bash
 # Upload a local state file to the configured backend
+
 tofu state push terraform.tfstate
 
 # Output:
@@ -74,7 +74,7 @@ EOF
 tofu init
 # Do you want to copy existing state to the new backend? yes
 
-# OpenTofu handles this automatically — you don't need state push
+# OpenTofu handles this automatically - you don't need state push
 # state push is for when you need manual control
 ```
 
@@ -164,7 +164,7 @@ tofu import aws_vpc.main vpc-0abc12345
 
 # Step 4: Init and migrate
 tofu init
-# OpenTofu will offer to copy state — say yes
+# OpenTofu will offer to copy state - say yes
 
 # If it doesn't offer:
 tofu state push terraform.tfstate

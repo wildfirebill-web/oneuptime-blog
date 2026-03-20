@@ -42,6 +42,7 @@ Stopping a cluster is a single command.
 
 ```bash
 # Stop the AKS cluster
+
 az aks stop \
   --resource-group myDevResourceGroup \
   --name myDevCluster

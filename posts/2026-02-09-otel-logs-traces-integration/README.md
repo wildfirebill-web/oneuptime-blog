@@ -22,6 +22,7 @@ Configure Python's logging module to include trace context in log records.
 
 ```python
 # python_logging_integration.py
+
 import logging
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

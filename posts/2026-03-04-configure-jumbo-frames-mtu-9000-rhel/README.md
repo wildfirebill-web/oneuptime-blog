@@ -18,6 +18,7 @@ All network devices in the path (NICs, switches, routers) must support jumbo fra
 
 ```bash
 # Check the current MTU on the interface
+
 ip link show ens192 | grep mtu
 
 # Set MTU to 9000 using nmcli

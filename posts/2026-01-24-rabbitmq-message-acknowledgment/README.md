@@ -89,6 +89,7 @@ def callback(ch, method, properties, body):
         ch.basic_nack(delivery_tag=method.delivery_tag, requeue=True)
 
 # Establish connection
+
 connection = pika.BlockingConnection(
     pika.ConnectionParameters(host='localhost')
 )

@@ -22,6 +22,7 @@ sudo dnf install -y perf systemtap systemtap-runtime kernel-debuginfo kernel-dev
 
 ```bash
 # Profile the entire system for 30 seconds
+
 sudo perf record -a -g -- sleep 30
 
 # Profile a specific command

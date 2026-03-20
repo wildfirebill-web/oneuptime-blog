@@ -29,6 +29,7 @@ Without arguments, iftop tries to detect your primary interface automatically. T
 
 ```bash
 # Monitor a specific interface
+
 sudo iftop -i eth0
 
 # On modern Ubuntu with predictable interface names

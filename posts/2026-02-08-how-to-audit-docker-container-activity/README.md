@@ -18,6 +18,7 @@ Docker ships with an event system that tracks container lifecycle actions. Every
 
 ```bash
 # Watch Docker events in real time
+
 docker events
 
 # Filter events for a specific container

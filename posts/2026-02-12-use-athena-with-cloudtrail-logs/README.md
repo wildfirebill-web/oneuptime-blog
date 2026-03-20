@@ -364,6 +364,7 @@ Set up automated queries for daily security reports:
 
 ```python
 # Run a daily security check query and send results via SNS
+
 import boto3
 import json
 

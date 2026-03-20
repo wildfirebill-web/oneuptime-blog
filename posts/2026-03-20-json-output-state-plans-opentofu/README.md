@@ -19,6 +19,7 @@ OpenTofu's state and plan files contain rich information about infrastructure re
 
 ```bash
 # Show current state as JSON
+
 tofu show -json
 
 # Show state for a specific resource
@@ -160,7 +161,7 @@ tofu show -json | jq '
 1. **Always use `-json` with `tofu show`** rather than parsing human-readable output
 2. **Save plans to files** before converting to JSON for repeatability
 3. **Integrate plan analysis** as a CI/CD gate to catch destructive changes
-4. **Version JSON schemas** — format_version in the output indicates the schema version
+4. **Version JSON schemas** - format_version in the output indicates the schema version
 5. **Use jq for quick analysis** and Python/Go for complex tooling
 
 ## Conclusion

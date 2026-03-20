@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, Azure, Private Endpoints, API Gateway, OpenTofu, Security, PrivateLink
+Tags: AWS, Azure, Private Endpoint, API Gateway, OpenTofu, Security, PrivateLink
 
 Description: Learn how to configure private API endpoints on AWS and Azure using OpenTofu to restrict API access to within VPCs, eliminating public internet exposure.
 
@@ -14,6 +14,7 @@ Private API endpoints expose APIs only within a VPC, preventing any public inter
 
 ```hcl
 # main.tf - Private API Gateway using VPC endpoint
+
 resource "aws_vpc_endpoint" "apigw" {
   vpc_id              = module.vpc.vpc_id
   service_name        = "com.amazonaws.us-east-1.execute-api"

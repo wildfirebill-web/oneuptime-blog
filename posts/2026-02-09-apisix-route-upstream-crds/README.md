@@ -30,6 +30,7 @@ Deploy a simple route that forwards requests to a backend service:
 
 ```yaml
 # basic-route.yaml
+
 apiVersion: apisix.apache.org/v2
 kind: ApisixRoute
 metadata:

@@ -18,6 +18,7 @@ Run Squid with default settings:
 
 ```bash
 # Start Squid proxy on port 3128
+
 docker run -d \
   --name squid \
   -p 3128:3128 \

@@ -65,6 +65,7 @@ Let's build a networking module that creates a VPC with subnets:
 
 ```hcl
 # modules/networking/variables.tf
+
 # Define all inputs the module needs
 
 variable "vpc_cidr" {

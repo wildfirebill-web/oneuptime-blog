@@ -33,6 +33,7 @@ Canvas runs inside SageMaker Studio. To access it, your admin needs to enable Ca
 import boto3
 
 # Admin: Enable Canvas for a user profile
+
 client = boto3.client('sagemaker')
 
 client.update_user_profile(

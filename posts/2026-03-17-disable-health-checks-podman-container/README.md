@@ -20,6 +20,7 @@ If the image has a HEALTHCHECK instruction, you can disable it at runtime:
 
 ```bash
 # Disable the health check defined in the image
+
 podman run -d \
   --name no-healthcheck \
   --health-cmd none \

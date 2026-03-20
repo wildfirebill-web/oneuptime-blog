@@ -23,6 +23,7 @@ This guide walks through deploying ArgoCD on IKS, integrating it with IBM Cloud 
 
 ```bash
 # Login to IBM Cloud
+
 ibmcloud login
 
 # Set the cluster context

@@ -64,6 +64,7 @@ Test by connecting from another terminal:
 ```bash
 ssh user@your-server
 # Banner should appear before the password prompt
+
 ```
 
 ## Configuring the Console Pre-Login Banner

@@ -48,6 +48,7 @@ from datetime import timedelta
 app = Flask(__name__)
 
 # Configuration - in production, use environment variables
+
 app.config['JWT_SECRET_KEY'] = 'your-secret-key-change-in-production'
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=1)
 app.config['JWT_REFRESH_TOKEN_EXPIRES'] = timedelta(days=30)

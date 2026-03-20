@@ -67,6 +67,7 @@ resource "google_artifact_registry_repository" "docker" {
 
 ```hcl
 # Maven repository for Java artifacts
+
 resource "google_artifact_registry_repository" "maven" {
   location      = "us-central1"
   repository_id = "maven-packages"

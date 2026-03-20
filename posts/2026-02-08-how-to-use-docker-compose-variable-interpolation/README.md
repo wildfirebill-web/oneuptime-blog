@@ -16,6 +16,7 @@ The syntax is `${VARIABLE_NAME}`. Docker Compose replaces these placeholders wit
 
 ```yaml
 # docker-compose.yml - basic variable interpolation
+
 version: "3.8"
 
 services:

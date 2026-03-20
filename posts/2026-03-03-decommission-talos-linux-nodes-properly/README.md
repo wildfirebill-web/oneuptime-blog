@@ -22,6 +22,7 @@ Make sure the remaining nodes can handle the workload:
 
 ```bash
 # Check current resource utilization
+
 kubectl top nodes
 
 # Check resource requests across the cluster

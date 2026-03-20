@@ -32,6 +32,7 @@ The most common use case is reading YAML files from remote hosts and parsing the
 
 ```yaml
 # read_yaml.yml - Read and parse a YAML config file
+
 - name: Read existing application config
   ansible.builtin.slurp:
     src: /etc/myapp/config.yml

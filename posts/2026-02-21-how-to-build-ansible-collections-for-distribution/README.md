@@ -18,6 +18,7 @@ At its simplest, building a collection is one command:
 
 ```bash
 # Navigate to your collection root
+
 cd ansible_collections/my_namespace/my_collection
 
 # Build the collection tarball

@@ -19,7 +19,7 @@ OpenTofu 1.8+ processes files in this order:
 
 ## Using .tofu Files for OpenTofu-Specific Features
 
-```
+```hcl
 project/
 ├── main.tf              # shared config (works in both Terraform and OpenTofu)
 ├── variables.tf         # shared variables
@@ -30,6 +30,7 @@ project/
 
 ```hcl
 # encryption.tofu – only processed by OpenTofu
+
 # Terraform will ignore this file
 
 terraform {

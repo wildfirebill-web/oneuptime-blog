@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Firewall, Testing, ip6tables, Safety
+Tags: IPv6, Firewall, Testing, Ip6tables, Safety
 
 Description: Learn safe techniques for testing IPv6 firewall rules without risking loss of remote access, using safety timers, testing frameworks, and staged deployment.
 
 ## Overview
 
-Incorrectly applied firewall rules can lock you out of a remote server permanently — especially dangerous for IPv6 where you might be relying on a specific global address for SSH access. This guide covers safe testing practices: scheduled auto-revert timers, rule testing tools, and staged deployment approaches.
+Incorrectly applied firewall rules can lock you out of a remote server permanently - especially dangerous for IPv6 where you might be relying on a specific global address for SSH access. This guide covers safe testing practices: scheduled auto-revert timers, rule testing tools, and staged deployment approaches.
 
 ## The Safety Timer Pattern
 
@@ -19,6 +19,7 @@ The most important technique: schedule a rule revert BEFORE applying changes:
 # ALWAYS run this before testing new firewall rules
 
 # Schedule automatic revert in 5 minutes
+
 at now + 5 minutes << 'EOF'
 echo "SAFETY REVERT: Restoring firewall rules" | logger -t firewall
 ip6tables -F
@@ -116,10 +117,10 @@ apply_and_test() {
     # Test: can we do basic operations?
     # Check: are our own connections still established?
     if conntrack -L -f ipv6 2>/dev/null | grep -q "ESTABLISHED"; then
-        echo "Conntrack shows established connections — rules likely OK"
+        echo "Conntrack shows established connections - rules likely OK"
         return 0
     else
-        echo "WARNING: No established connections found — reverting"
+        echo "WARNING: No established connections found - reverting"
         ip6tables-restore < "$BACKUP"
         return 1
     fi
@@ -144,7 +145,7 @@ ip6tables -D INPUT -s 2001:db8:test::/48 -j ACCEPT
 ## nftables Testing
 
 ```bash
-# nftables atomic load — entire file loads or nothing does
+# nftables atomic load - entire file loads or nothing does
 nft -f /etc/nftables.conf
 # If it fails, old rules remain
 
@@ -198,7 +199,7 @@ ping6 -c 3 -s 1450 your-server.example.com
 # 5. Traceroute6 works (tests Time Exceeded)
 traceroute6 your-server.example.com
 
-# 6. Log inspection — no unexpected drops
+# 6. Log inspection - no unexpected drops
 journalctl -k | grep "ip6" | tail -20
 ```
 

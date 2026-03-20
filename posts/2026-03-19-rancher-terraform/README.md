@@ -29,6 +29,7 @@ Create the provider configuration file:
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

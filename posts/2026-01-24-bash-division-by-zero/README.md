@@ -33,6 +33,7 @@ Bash uses integer arithmetic by default. When you attempt to divide by zero, Bas
 #!/bin/bash
 
 # This will cause an error
+
 result=$((10 / 0))
 echo "Result: $result"  # Never reached
 ```

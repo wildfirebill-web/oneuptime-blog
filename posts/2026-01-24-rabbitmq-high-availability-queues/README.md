@@ -35,6 +35,7 @@ Before configuring HA queues, you need a RabbitMQ cluster.
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

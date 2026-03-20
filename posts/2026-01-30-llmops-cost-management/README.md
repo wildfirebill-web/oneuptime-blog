@@ -24,6 +24,7 @@ Most LLM providers charge per token, with different rates for input (prompt) and
 
 ```python
 # Example: Token cost calculation for different models
+
 # Prices shown are illustrative and may vary
 
 LLM_PRICING = {

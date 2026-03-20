@@ -22,6 +22,7 @@ Here is a GitLab CI pipeline that demonstrates the core DevSecOps stages:
 
 ```yaml
 # .gitlab-ci.yml
+
 # DevSecOps pipeline with security at every stage
 
 stages:

@@ -40,6 +40,7 @@ The same change applies to the OTLP HTTP exporter:
 
 ```yaml
 # OLD
+
 exporters:
   otlphttp:
     endpoint: http://backend:4318

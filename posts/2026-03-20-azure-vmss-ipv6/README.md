@@ -16,6 +16,7 @@ Azure VM Scale Sets (VMSS) support dual-stack IPv6 networking by adding an IPv6 
 # vmss_ipv6.tf
 
 # Load balancer for VMSS
+
 resource "azurerm_lb" "vmss" {
   name                = "lb-vmss"
   location            = azurerm_resource_group.main.location
@@ -196,4 +197,4 @@ curl -6 "http://[${IPV6_LB}]/"
 
 ## Conclusion
 
-Azure VMSS dual-stack requires configuring two IP configurations in the NIC profile — one IPv4 (primary) and one IPv6. Both IP configurations can be associated with load balancer backend pools to receive traffic from the respective IPv4 and IPv6 LB frontend rules. New instances added during scale-out automatically receive both IPv4 and IPv6 addresses. The Standard Load Balancer with separate IPv4 and IPv6 frontend configurations handles traffic distribution to the VMSS backend pool for both protocols.
+Azure VMSS dual-stack requires configuring two IP configurations in the NIC profile - one IPv4 (primary) and one IPv6. Both IP configurations can be associated with load balancer backend pools to receive traffic from the respective IPv4 and IPv6 LB frontend rules. New instances added during scale-out automatically receive both IPv4 and IPv6 addresses. The Standard Load Balancer with separate IPv4 and IPv6 frontend configurations handles traffic distribution to the VMSS backend pool for both protocols.

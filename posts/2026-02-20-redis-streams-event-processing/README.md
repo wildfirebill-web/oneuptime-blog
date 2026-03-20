@@ -42,6 +42,7 @@ import json
 import time
 
 # Connect to Redis
+
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
 def produce_event(stream: str, event_type: str, data: dict) -> str:

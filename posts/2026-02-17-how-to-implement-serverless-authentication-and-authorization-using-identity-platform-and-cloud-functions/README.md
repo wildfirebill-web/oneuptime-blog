@@ -18,6 +18,7 @@ Enable Identity Platform and configure the sign-in providers you want to support
 
 ```bash
 # Enable the Identity Platform API
+
 gcloud services enable identitytoolkit.googleapis.com
 
 # Enable email/password authentication

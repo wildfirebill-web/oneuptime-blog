@@ -14,6 +14,7 @@ The trial lifecycle has distinct stages that need tracking:
 
 ```python
 # trial_metrics.py
+
 from opentelemetry import metrics, trace
 from datetime import datetime, timedelta
 

@@ -36,6 +36,7 @@ flowchart LR
 
 ```yaml
 # kong-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

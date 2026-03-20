@@ -8,7 +8,7 @@ Description: Learn how to design and deploy a centralized shared services VPC on
 
 ## Introduction
 
-A shared services VPC centralizes common infrastructure components—such as internal DNS resolvers, monitoring agents, artifact registries, and CI/CD tooling—into a single VPC that multiple workload VPCs connect to. This reduces duplication and simplifies management.
+A shared services VPC centralizes common infrastructure components-such as internal DNS resolvers, monitoring agents, artifact registries, and CI/CD tooling-into a single VPC that multiple workload VPCs connect to. This reduces duplication and simplifies management.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ A shared services VPC centralizes common infrastructure components—such as int
 
 ```hcl
 # Create the shared services VPC with DNS support enabled
+
 resource "aws_vpc" "shared" {
   cidr_block           = "10.100.0.0/16"
   enable_dns_support   = true

@@ -8,11 +8,11 @@ Description: Learn how to use the IPv6 Traffic Class field's DSCP bits to implem
 
 ## Introduction
 
-The upper 6 bits of the IPv6 Traffic Class byte are the DSCP (Differentiated Services Code Point) field, defined in RFC 2474. DSCP provides a Per-Hop Behavior (PHB) framework for traffic differentiation — network devices inspect DSCP markings and apply corresponding queuing and scheduling policies. This guide covers marking IPv6 traffic with DSCP and building QoS policies around those markings.
+The upper 6 bits of the IPv6 Traffic Class byte are the DSCP (Differentiated Services Code Point) field, defined in RFC 2474. DSCP provides a Per-Hop Behavior (PHB) framework for traffic differentiation - network devices inspect DSCP markings and apply corresponding queuing and scheduling policies. This guide covers marking IPv6 traffic with DSCP and building QoS policies around those markings.
 
 ## DSCP Field Position
 
-```
+```yaml
 Traffic Class byte (8 bits):
   Bit 7 6 5 4 3 2 | 1 0
   |<--- DSCP  --->|<ECN>|
@@ -26,7 +26,7 @@ Traffic Class = 0x2E << 2 = 0xB8
 
 ## Key PHB Classes and Their Use Cases
 
-```
+```text
 Expedited Forwarding (EF, DSCP 46):
   → VoIP, interactive video, real-time gaming
   → Lowest latency, jitter, and packet loss
@@ -52,6 +52,7 @@ Best Effort (BE, DSCP 0):
 
 ```bash
 # Install iptables-persistent or nftables
+
 # Mark outbound VoIP (SIP + RTP) with EF
 sudo ip6tables -t mangle -A OUTPUT -p udp --dport 5060 -j DSCP --set-dscp-class EF
 sudo ip6tables -t mangle -A OUTPUT -p udp --dport 16384:32767 -j DSCP --set-dscp-class EF

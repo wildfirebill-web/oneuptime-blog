@@ -30,6 +30,7 @@ Install httpx with pip. The base package supports HTTP/1.1. Add the http2 extra 
 
 ```bash
 # Basic installation
+
 pip install httpx
 
 # With HTTP/2 support

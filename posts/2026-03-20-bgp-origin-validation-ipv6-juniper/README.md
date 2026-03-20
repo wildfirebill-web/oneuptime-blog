@@ -12,8 +12,9 @@ Juniper Junos supports RPKI origin validation natively. Routers connect to an RP
 
 ## Step 1: Configure the RPKI Cache Session
 
-```
-# /etc/juniper config — set RPKI cache server
+```text
+# /etc/juniper config - set RPKI cache server
+
 set routing-options validation group rpki-validator session 2001:db8:validator::1
 set routing-options validation group rpki-validator session 2001:db8:validator::1 port 3323
 set routing-options validation group rpki-validator session 2001:db8:validator::1 refresh-time 600
@@ -23,7 +24,7 @@ set routing-options validation group rpki-validator session 2001:db8:validator::
 
 Or in curly-brace syntax:
 
-```
+```text
 routing-options {
     validation {
         group rpki-validators {
@@ -40,7 +41,7 @@ routing-options {
 
 ## Step 2: Verify the Cache Connection
 
-```
+```text
 # Check RPKI session status
 show validation session
 
@@ -54,7 +55,7 @@ show validation database inet6
 
 ## Step 3: Create Routing Policies Based on Validation State
 
-```
+```python
 policy-options {
     policy-statement RPKI-IMPORT {
         # Prefer valid routes
@@ -100,7 +101,7 @@ policy-options {
 
 ## Step 4: Apply the Policy to BGP Neighbors
 
-```
+```text
 protocols {
     bgp {
         group UPSTREAM-IPV6 {
@@ -123,7 +124,7 @@ protocols {
 
 ## Step 5: Monitor Validation
 
-```
+```text
 # Show BGP routes with validation status
 show route validation-state valid table inet6.0
 show route validation-state invalid table inet6.0
@@ -138,7 +139,7 @@ show route validation-state invalid table inet6.0 | count
 
 ## Step 6: Configure Logging for Invalid Routes
 
-```
+```text
 routing-options {
     # Log invalid route events using syslog
     validation {

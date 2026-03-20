@@ -28,6 +28,7 @@ Before reaching out for help, collect a diagnostic bundle so you can provide con
 
 ```bash
 # Generate a comprehensive Cilium diagnostic report
+
 cilium debuginfo
 
 # Check overall Cilium health status

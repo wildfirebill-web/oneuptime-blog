@@ -34,6 +34,7 @@ You need:
 
 ```bash
 # Check if OIDC is enabled
+
 aws eks describe-cluster --name my-cluster \
   --query "cluster.identity.oidc.issuer" --output text
 

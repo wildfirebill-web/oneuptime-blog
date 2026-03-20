@@ -188,6 +188,7 @@ Check the waypoint proxy's configuration to verify your plugin is loaded:
 
 ```bash
 # Find the waypoint pod
+
 WAYPOINT_POD=$(kubectl get pods -n my-app -l gateway.networking.k8s.io/gateway-name=waypoint -o jsonpath='{.items[0].metadata.name}')
 
 # Check loaded extensions

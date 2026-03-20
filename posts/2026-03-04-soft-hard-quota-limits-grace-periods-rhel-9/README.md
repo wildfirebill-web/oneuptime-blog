@@ -42,6 +42,7 @@ For ext4 filesystems using the standard quota tools:
 
 ```bash
 # Set both soft and hard limits for a user
+
 # Values are in kilobytes
 # 10 GB soft = 10485760 KB, 12 GB hard = 12582912 KB
 setquota -u jsmith 10485760 12582912 0 0 /home

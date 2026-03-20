@@ -17,6 +17,7 @@ The `combine` filter merges two or more dictionaries. When keys overlap, the rig
 ```yaml
 ---
 # basic-combine.yml
+
 # Merge two dictionaries together
 
 - hosts: localhost

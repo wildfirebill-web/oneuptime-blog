@@ -24,6 +24,7 @@ The main architectural differences:
 
 ```bash
 # Check if nftables is installed
+
 which nft
 
 # Check version

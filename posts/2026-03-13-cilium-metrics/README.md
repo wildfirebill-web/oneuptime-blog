@@ -29,6 +29,7 @@ Enable metrics in Cilium:
 
 ```bash
 # Enable agent and operator Prometheus metrics
+
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \
   --reuse-values \

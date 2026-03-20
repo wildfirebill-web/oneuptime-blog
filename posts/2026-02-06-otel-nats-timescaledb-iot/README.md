@@ -26,6 +26,7 @@ Set up NATS with JetStream enabled for durable message storage:
 
 ```conf
 # nats-server.conf
+
 server_name: iot-nats
 
 # Listen on all interfaces

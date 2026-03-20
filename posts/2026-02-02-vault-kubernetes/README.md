@@ -63,6 +63,7 @@ Run the following commands to add the Helm repository and update your local cach
 
 ```bash
 # Add the HashiCorp Helm repository
+
 helm repo add hashicorp https://helm.releases.hashicorp.com
 
 # Update your local Helm chart repository cache

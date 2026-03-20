@@ -37,6 +37,7 @@ Store GitHub App credentials in a secret:
 
 ```bash
 # Create secret with GitHub credentials
+
 kubectl create secret generic argocd-notifications-secret \
   -n argocd \
   --from-literal=github-app-id=YOUR_APP_ID \

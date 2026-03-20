@@ -36,6 +36,7 @@ flowchart TD
 
 ```bash
 # Set the previous kernel as default
+
 sudo grubby --set-default=/boot/vmlinuz-<previous-version>
 
 # Verify

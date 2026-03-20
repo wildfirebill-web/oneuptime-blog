@@ -27,6 +27,7 @@ Access the server's BIOS/UEFI settings and look for:
 
 ```bash
 # Check if the NIC supports WoL
+
 sudo ethtool ens192 | grep "Wake-on"
 # Output:
 #   Supports Wake-on: pumbg

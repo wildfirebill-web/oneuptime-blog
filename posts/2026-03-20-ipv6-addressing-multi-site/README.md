@@ -27,7 +27,7 @@ graph TD
 
 If the organization has a /40 allocation:
 
-```
+```text
 /40 → 256 possible /48 allocations (one per site)
 /48 per site → 65,536 /64 subnets per site
 
@@ -41,7 +41,7 @@ Site numbering in the 3rd octet:
 
 ## Example Multi-Site Address Plan
 
-```
+```text
 Organization prefix: 2001:db8:a::/40
 
 Headquarters (Site 0x01):
@@ -99,6 +99,7 @@ def site_subnets(site_prefix_48: ipaddress.IPv6Network, count=10):
     return list(site_prefix_48.subnets(new_prefix=64))[:count]
 
 # Generate site prefixes
+
 org = "2001:db8:a::/40"
 for site_id, site_name in [(0x01, "HQ"), (0x02, "NYC"), (0x03, "LDN"), (0xe1, "AWS")]:
     prefix = site_prefix(org, site_id)
@@ -109,7 +110,7 @@ for site_id, site_name in [(0x01, "HQ"), (0x02, "NYC"), (0x03, "LDN"), (0xe1, "A
 
 Point-to-point WAN links between sites should use /127 prefixes:
 
-```
+```text
 HQ <-> NYC link:     2001:db8:a:ff00::/127
 HQ <-> London link:  2001:db8:a:ff01::/127
 NYC <-> London link: 2001:db8:a:ff02::/127

@@ -48,6 +48,7 @@ import pika
 import json
 
 # Establish connection
+
 connection = pika.BlockingConnection(
     pika.ConnectionParameters('localhost')
 )

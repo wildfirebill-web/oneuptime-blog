@@ -188,6 +188,7 @@ For automation and CI/CD, use dedicated service accounts:
 
 ```bash
 # Create a service account in Rancher for CI/CD
+
 curl -X POST \
   'https://rancher.yourdomain.com/v3/users' \
   -H 'Authorization: Bearer ADMIN_TOKEN' \

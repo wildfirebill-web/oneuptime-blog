@@ -8,7 +8,7 @@ Description: Learn how to deploy ModSecurity with the OWASP Core Rule Set as a W
 
 ## What Is a WAF?
 
-A Web Application Firewall inspects HTTP/HTTPS traffic and blocks requests that match known attack patterns—SQL injection, cross-site scripting (XSS), path traversal, and more. Unlike network firewalls, a WAF operates at Layer 7 and understands HTTP semantics.
+A Web Application Firewall inspects HTTP/HTTPS traffic and blocks requests that match known attack patterns-SQL injection, cross-site scripting (XSS), path traversal, and more. Unlike network firewalls, a WAF operates at Layer 7 and understands HTTP semantics.
 
 ## Option 1: ModSecurity with Nginx
 
@@ -18,6 +18,7 @@ ModSecurity is the most widely used open-source WAF engine. The `ngx_http_modsec
 
 ```bash
 # Debian/Ubuntu
+
 apt-get install -y libmodsecurity3 libmodsecurity-dev
 
 # Clone the Nginx connector
@@ -61,7 +62,7 @@ Include /etc/nginx/owasp-crs/rules/*.conf
 
 Set to detection mode first:
 
-```
+```text
 # modsecurity.conf
 SecRuleEngine DetectionOnly   # Change to 'On' to block
 SecRequestBodyAccess On

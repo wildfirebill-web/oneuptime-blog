@@ -46,6 +46,7 @@ Let's Encrypt issues free wildcard certificates, but they require DNS-01 validat
 
 ```bash
 # Install certbot if you do not have it
+
 # Use DNS challenge for wildcard certificates
 sudo certbot certonly \
     --manual \

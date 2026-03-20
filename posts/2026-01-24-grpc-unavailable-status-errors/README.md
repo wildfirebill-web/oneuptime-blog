@@ -371,6 +371,7 @@ When using a load balancer or proxy, ensure proper gRPC support.
 
 ```yaml
 # nginx.conf - NGINX configuration for gRPC
+
 upstream grpc_servers {
     server backend1:50051;
     server backend2:50051;

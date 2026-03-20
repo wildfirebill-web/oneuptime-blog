@@ -152,6 +152,7 @@ Python's mysql-connector and MySQLdb have similar issues with cursors.
 import mysql.connector
 
 # Problem: Unbuffered cursor not consumed
+
 conn = mysql.connector.connect(
     host="localhost",
     user="user",

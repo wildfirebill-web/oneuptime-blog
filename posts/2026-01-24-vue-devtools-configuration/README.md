@@ -48,6 +48,7 @@ flowchart TB
 
 ```bash
 # Chrome Web Store
+
 # Search "Vue.js devtools" in Chrome Web Store
 # Or visit: https://chrome.google.com/webstore/detail/vuejs-devtools
 

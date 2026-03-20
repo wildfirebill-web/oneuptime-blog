@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Router Advertisement, Wi-Fi, SLAAC, radvd, NDP, Wireless
+Tags: IPv6, Router Advertisement, Wi-Fi, SLAAC, Radvd, NDP, Wireless
 
 Description: Configure IPv6 Router Advertisement (RA) for wireless networks using radvd, including prefix announcement, RA flags for SLAAC vs DHCPv6, and securing RA to prevent rogue advertisements on Wi-Fi.
 
@@ -44,6 +44,7 @@ interface wlan0 {
 
 ```bash
 # Start radvd
+
 sudo systemctl enable --now radvd
 
 # Verify RA is being sent
@@ -56,7 +57,7 @@ sudo journalctl -u radvd -f
 
 ## RA Flags Explained
 
-```
+```text
 RA Flag Reference:
 ┌─────┬───────────────────────────────────────────────────────────┐
 │ M   │ Managed Address Configuration: Use DHCPv6 for addresses   │

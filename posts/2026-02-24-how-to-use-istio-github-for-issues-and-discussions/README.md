@@ -33,6 +33,7 @@ Before you file a bug, do a quick search to see if someone has already reported 
 
 ```bash
 # Search existing issues on GitHub
+
 # https://github.com/istio/istio/issues?q=is:issue+your+search+terms
 
 # Also generate a diagnostic bundle first

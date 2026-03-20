@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, PHP, Symfony, Containerization, NGINX, DevOps, Production
+Tags: Docker, PHP, Symfony, Containerization, Nginx, DevOps, Production
 
 Description: Build optimized Docker images for Symfony applications with proper environment handling, Messenger workers, and production caching.
 
@@ -39,6 +39,7 @@ This Dockerfile handles Composer dependencies, frontend assets, and builds an op
 # Dockerfile - Symfony production build
 
 # === Stage 1: Composer dependencies ===
+
 FROM composer:2 AS composer
 
 WORKDIR /app

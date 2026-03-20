@@ -8,7 +8,7 @@ Description: Learn how to design a compliance module for OpenTofu that enables A
 
 ## Introduction
 
-Compliance infrastructure needs to be consistent across all accounts and environments. A compliance module encapsulates AWS Config rule sets, Security Hub standards, CloudTrail configuration, and AWS Organizations policy enforcement — making compliance-as-code reproducible.
+Compliance infrastructure needs to be consistent across all accounts and environments. A compliance module encapsulates AWS Config rule sets, Security Hub standards, CloudTrail configuration, and AWS Organizations policy enforcement - making compliance-as-code reproducible.
 
 ## variables.tf
 
@@ -65,6 +65,7 @@ locals {
 }
 
 # AWS Config Recorder
+
 resource "aws_config_configuration_recorder" "main" {
   count    = var.enable_config ? 1 : 0
   name     = "default"

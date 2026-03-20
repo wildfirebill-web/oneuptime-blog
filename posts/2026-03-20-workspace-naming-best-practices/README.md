@@ -1,4 +1,4 @@
-# How to Name Workspaces Following Best Practices in OpenTofu
+# How to Name Workspaces Following Best Practices in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Workspace names become part of your state file paths, resource names, and tags. 
 
 ```bash
 # Standard environment names
+
 tofu workspace new development
 tofu workspace new staging
 tofu workspace new production
@@ -31,7 +32,7 @@ tofu workspace new stg
 tofu workspace new prod
 ```
 
-Use the full name for clarity or abbreviations for brevity — just be consistent.
+Use the full name for clarity or abbreviations for brevity - just be consistent.
 
 ## Regional Workspace Naming
 

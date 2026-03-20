@@ -8,11 +8,11 @@ Description: Diagnose and fix Path MTU Discovery failures caused by ICMP blockin
 
 ## Introduction
 
-PMTUD (Path MTU Discovery) is the mechanism by which TCP dynamically discovers the maximum packet size that can traverse a network path without fragmentation. When it fails — because ICMP messages are blocked — TCP connections appear to work for small data but hang or drop when sending larger payloads. This is called an "MTU black hole" and is one of the most perplexing network problems.
+PMTUD (Path MTU Discovery) is the mechanism by which TCP dynamically discovers the maximum packet size that can traverse a network path without fragmentation. When it fails - because ICMP messages are blocked - TCP connections appear to work for small data but hang or drop when sending larger payloads. This is called an "MTU black hole" and is one of the most perplexing network problems.
 
 ## Symptoms of PMTUD Failure
 
-```
+```text
 Classic PMTUD failure symptoms:
 - TCP connects successfully (SYN/SYN-ACK small packets work)
 - Small responses work (HTTP headers, initial data)
@@ -26,6 +26,7 @@ Classic PMTUD failure symptoms:
 
 ```bash
 # Step 1: Test if large packets reach the destination
+
 ping -M do -s 1400 10.20.0.5 && echo "1400 works"
 ping -M do -s 1472 10.20.0.5 && echo "1472 works"
 # If smaller sizes work but larger fail: MTU bottleneck found

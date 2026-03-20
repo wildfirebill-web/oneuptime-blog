@@ -33,6 +33,7 @@ The canary strategy is defined in the pipeline configuration at the stage level.
 
 ```yaml
 # pipeline.yaml - Pipeline with canary deployment strategy for production
+
 apiVersion: deploy.cloud.google.com/v1
 kind: DeliveryPipeline
 metadata:

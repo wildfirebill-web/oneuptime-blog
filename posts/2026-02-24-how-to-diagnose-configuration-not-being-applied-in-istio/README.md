@@ -27,6 +27,7 @@ A failure at any step means your configuration is not applied. Here is how to ch
 
 ```bash
 # Check that the resource was created
+
 kubectl get virtualservice my-vs -n my-namespace -o yaml
 
 # Check for any status conditions

@@ -24,6 +24,7 @@ Use the gcloud CLI to set flags when creating or updating an instance:
 
 ```bash
 # Set flags when creating an instance
+
 gcloud alloydb instances create my-primary \
   --cluster=my-alloydb-cluster \
   --region=us-central1 \

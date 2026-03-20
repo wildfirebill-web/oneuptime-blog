@@ -315,6 +315,7 @@ The Flux Kustomization in each cluster directory should define proper dependenci
 
 ```yaml
 # clusters/cluster-1/sources.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

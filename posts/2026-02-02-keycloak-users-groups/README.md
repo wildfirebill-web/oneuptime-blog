@@ -72,6 +72,7 @@ The Admin CLI offers scripted user creation for automation and bulk operations. 
 
 ```bash
 # Authenticate to Keycloak Admin CLI
+
 # Replace credentials and server URL with your values
 ./kcadm.sh config credentials \
   --server http://localhost:8080 \

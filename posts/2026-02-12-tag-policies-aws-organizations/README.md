@@ -18,6 +18,7 @@ First, enable tag policies in your organization:
 
 ```bash
 # Get the root ID
+
 ROOT_ID=$(aws organizations list-roots --query 'Roots[0].Id' --output text)
 
 # Enable tag policies

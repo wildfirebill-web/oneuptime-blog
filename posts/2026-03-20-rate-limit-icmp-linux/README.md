@@ -16,6 +16,7 @@ The simplest approach: limit total ICMP echo requests to a safe rate:
 
 ```bash
 # Allow ICMP echo at 5/second with burst of 10
+
 # Packets exceeding this rate are dropped
 iptables -A INPUT -p icmp --icmp-type echo-request \
   -m limit --limit 5/sec --limit-burst 10 \
@@ -88,14 +89,14 @@ sysctl -w net.ipv4.icmp_ratelimit=100
 
 # Configure which ICMP types are rate-limited
 sysctl net.ipv4.icmp_ratemask
-# Default: 6168 — bitmask of ICMP types to rate-limit
+# Default: 6168 - bitmask of ICMP types to rate-limit
 # Bit 3 = Dest Unreachable, Bit 11 = TTL Exceeded
 ```
 
 ## Monitoring Rate Limit Effectiveness
 
 ```bash
-# Watch iptables rule counters — drops indicate rate limiting is working
+# Watch iptables rule counters - drops indicate rate limiting is working
 watch -n 2 "iptables -L INPUT -n -v | grep icmp"
 
 # Check kernel ICMP statistics for rate-limited messages
@@ -109,4 +110,4 @@ nstat -z | grep -i "icmp"
 
 ## Conclusion
 
-ICMP rate limiting is a lightweight but effective protection against ping floods. Use the `limit` module for global rate control and `hashlimit` for per-source limits that prevent a single attacker from exhausting the global allowance. Always apply rate limiting separately from blocking — rate-limited ICMP provides operational value while protecting resources.
+ICMP rate limiting is a lightweight but effective protection against ping floods. Use the `limit` module for global rate control and `hashlimit` for per-source limits that prevent a single attacker from exhausting the global allowance. Always apply rate limiting separately from blocking - rate-limited ICMP provides operational value while protecting resources.

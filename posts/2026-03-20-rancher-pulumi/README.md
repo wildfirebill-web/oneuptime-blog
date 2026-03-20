@@ -1,4 +1,4 @@
-# How to Use Pulumi with Rancher
+# How to Use Pulumi with Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Pulumi allows you to define infrastructure using real programming languages (Typ
 
 ```bash
 # Create a new Pulumi project
+
 mkdir rancher-infrastructure && cd rancher-infrastructure
 pulumi new typescript
 
@@ -285,4 +286,4 @@ jobs:
 
 ## Conclusion
 
-Pulumi with TypeScript provides a developer-friendly alternative to Terraform's HCL for managing Rancher infrastructure. Real programming language features—loops, conditions, functions, and type safety—make complex infrastructure patterns more maintainable. The ability to define environment-specific configurations using simple objects and functions reduces duplication significantly compared to HCL. For teams already proficient in TypeScript or Python, Pulumi offers a natural progression into infrastructure as code.
+Pulumi with TypeScript provides a developer-friendly alternative to Terraform's HCL for managing Rancher infrastructure. Real programming language features-loops, conditions, functions, and type safety-make complex infrastructure patterns more maintainable. The ability to define environment-specific configurations using simple objects and functions reduces duplication significantly compared to HCL. For teams already proficient in TypeScript or Python, Pulumi offers a natural progression into infrastructure as code.

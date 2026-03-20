@@ -40,6 +40,7 @@ If you do not already have an Automation Account, create one.
 
 ```powershell
 # Create the Automation Account with a system-assigned identity
+
 New-AzAutomationAccount `
   -ResourceGroupName "rg-automation" `
   -Name "aa-dsc-management" `

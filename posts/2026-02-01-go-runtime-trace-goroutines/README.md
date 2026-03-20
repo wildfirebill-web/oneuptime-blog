@@ -95,6 +95,7 @@ For existing codebases, the easiest approach is tracing through `go test`. This 
 
 ```bash
 # Run tests with tracing enabled
+
 # The -trace flag tells go test to write trace data to the specified file
 go test -trace=trace.out ./...
 

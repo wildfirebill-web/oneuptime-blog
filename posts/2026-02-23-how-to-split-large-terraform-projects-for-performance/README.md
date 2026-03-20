@@ -52,6 +52,7 @@ Once you have decided on boundaries, you need to move resources from the monolit
 
 ```bash
 # Step 1: Pull the current state locally
+
 terraform state pull > monolith.tfstate
 
 # Step 2: Move networking resources to a new state

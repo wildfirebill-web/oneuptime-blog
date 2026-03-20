@@ -34,6 +34,7 @@ Glue supports specific data types. Using unsupported types will cause schema val
 
 ```hcl
 # Incorrect - using unsupported type
+
 resource "aws_glue_catalog_table" "example_bad" {
   name          = "example_table"
   database_name = aws_glue_catalog_database.example.name

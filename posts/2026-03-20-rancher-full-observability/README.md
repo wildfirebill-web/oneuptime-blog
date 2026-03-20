@@ -1,4 +1,4 @@
-# How to Set Up Full Observability Stack on Rancher
+# How to Set Up Full Observability Stack on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Full observability means having correlated visibility into all three pillars: me
 
 ## Architecture Overview
 
-```
+```text
 Applications
     │
     ▼
@@ -39,6 +39,7 @@ OpenTelemetry Collector (central pipeline)
 
 ```bash
 # Install Rancher Monitoring from the Apps catalog
+
 # Or via Helm
 helm install rancher-monitoring rancher-charts/rancher-monitoring \
   --namespace cattle-monitoring-system \

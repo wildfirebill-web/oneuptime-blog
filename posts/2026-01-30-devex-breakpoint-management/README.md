@@ -1893,6 +1893,7 @@ Store breakpoint configurations for team sharing:
 
 ```yaml
 # .breakpoints.yaml
+
 # Shared breakpoint configuration for the team.
 # These breakpoints are automatically loaded when the project opens.
 

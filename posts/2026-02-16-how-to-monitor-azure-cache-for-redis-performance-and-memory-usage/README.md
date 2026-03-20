@@ -64,6 +64,7 @@ You can also pull metrics programmatically using the Azure CLI. This is useful f
 
 ```bash
 # Get the used memory percentage over the last hour (1-minute intervals)
+
 az monitor metrics list \
   --resource "/subscriptions/<sub-id>/resourceGroups/<rg>/providers/Microsoft.Cache/redis/<cache-name>" \
   --metric "usedmemorypercentage" \

@@ -8,7 +8,7 @@ Description: Learn how to deploy Traefik as a standalone application via Portain
 
 ## Overview
 
-While many guides deploy Traefik alongside Portainer in the same compose file, deploying Traefik as its own Portainer stack makes it independently manageable — you can update Traefik's configuration or version without touching Portainer itself.
+While many guides deploy Traefik alongside Portainer in the same compose file, deploying Traefik as its own Portainer stack makes it independently manageable - you can update Traefik's configuration or version without touching Portainer itself.
 
 ## Traefik Stack via Portainer
 
@@ -77,7 +77,7 @@ volumes:
 
 ## Environment Variables
 
-```
+```text
 ACME_EMAIL = admin@yourdomain.com
 TRAEFIK_DASHBOARD_USERS = admin:$$apr1$$HASH_HERE
 ```
@@ -98,6 +98,7 @@ Or in Portainer: **Networks → Add Network → Name: proxy, Driver: bridge**
 
 ```bash
 # On the Docker host
+
 touch /var/lib/docker/volumes/traefik_traefik_data/_data/acme.json
 chmod 600 /var/lib/docker/volumes/traefik_traefik_data/_data/acme.json
 ```
@@ -141,4 +142,4 @@ Traefik restarts with the new version; all routes resume immediately because con
 
 ## Conclusion
 
-Traefik as a standalone Portainer stack decouples the reverse proxy lifecycle from Portainer's own lifecycle. Update Traefik independently, roll back if needed, and manage its configuration through Portainer's stack editor — all without touching Portainer's own deployment.
+Traefik as a standalone Portainer stack decouples the reverse proxy lifecycle from Portainer's own lifecycle. Update Traefik independently, roll back if needed, and manage its configuration through Portainer's stack editor - all without touching Portainer's own deployment.

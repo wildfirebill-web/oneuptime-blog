@@ -33,6 +33,7 @@ The following commands create a resource group, VNet, and subnet for the cluster
 
 ```bash
 # Create a resource group for all AKS resources
+
 az group create --name aks-kubenet-rg --location eastus
 
 # Create a VNet with a /16 address space

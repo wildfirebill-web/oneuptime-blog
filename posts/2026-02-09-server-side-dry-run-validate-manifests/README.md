@@ -18,6 +18,7 @@ Use dry run with kubectl:
 
 ```bash
 # Server-side dry run
+
 kubectl apply -f deployment.yaml --dry-run=server
 
 # Client-side dry run (syntax only)

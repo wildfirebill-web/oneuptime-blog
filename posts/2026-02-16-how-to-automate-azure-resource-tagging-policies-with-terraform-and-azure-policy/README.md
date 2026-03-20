@@ -33,6 +33,7 @@ The first policy prevents resource creation if required tags are missing:
 # policies/require-tags.tf - Deny resource creation without required tags
 
 # Define one policy per required tag for flexibility
+
 resource "azurerm_policy_definition" "require_environment_tag" {
   name         = "require-environment-tag"
   display_name = "Require Environment tag on resources"

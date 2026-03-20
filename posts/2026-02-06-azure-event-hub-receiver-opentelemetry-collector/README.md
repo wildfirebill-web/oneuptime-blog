@@ -109,6 +109,7 @@ Here's a minimal configuration to start consuming logs from Azure Event Hubs. Th
 
 ```yaml
 # Configure the Azure Event Hub receiver
+
 receivers:
   # The azureeventhub receiver consumes from Event Hubs
   azureeventhub:

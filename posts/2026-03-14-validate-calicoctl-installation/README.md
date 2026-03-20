@@ -30,6 +30,7 @@ Verify the binary is genuine, correct architecture, and correct version.
 ```bash
 #!/bin/bash
 # validate-binary.sh
+
 # Validate calicoctl binary
 
 echo "=== Binary Validation ==="

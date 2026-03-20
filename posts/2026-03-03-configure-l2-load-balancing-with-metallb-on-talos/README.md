@@ -29,6 +29,7 @@ First, make sure MetalLB is installed:
 
 ```bash
 # Install MetalLB via Helm
+
 helm repo add metallb https://metallb.github.io/metallb
 helm repo update
 

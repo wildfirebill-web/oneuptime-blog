@@ -20,6 +20,7 @@ Learn how to create Makefiles to standardize OpenTofu workflows for init, plan, 
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

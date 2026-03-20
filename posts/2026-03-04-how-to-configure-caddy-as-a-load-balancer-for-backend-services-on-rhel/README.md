@@ -22,6 +22,7 @@ sudo dnf install -y caddy
 
 ```bash
 # /etc/caddy/Caddyfile
+
 app.example.com {
     reverse_proxy localhost:3001 localhost:3002 localhost:3003
 }

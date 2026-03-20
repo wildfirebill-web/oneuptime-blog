@@ -20,6 +20,7 @@ Quick check of your current error rates:
 
 ```promql
 # Overall mesh error rate
+
 sum(rate(istio_requests_total{response_code=~"5.*"}[5m]))
 /
 sum(rate(istio_requests_total[5m]))

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Reverse Proxy, Timeouts, IPv4, Nginx, HAProxy, Troubleshooting
+Tags: Reverse Proxy, Timeout, IPv4, Nginx, HAProxy, Troubleshooting
 
 Description: Diagnose and fix IPv4 connection timeout errors in Nginx and HAProxy reverse proxies, including upstream connect timeouts, read timeouts, and client idle timeouts.
 
 ## Introduction
 
-Timeout errors in reverse proxies typically manifest as 502 Bad Gateway, 503 Service Unavailable, or 504 Gateway Timeout. Each timeout has a specific meaning and requires a different fix. Understanding the timeout chain — from client to proxy to backend — is essential for diagnosis.
+Timeout errors in reverse proxies typically manifest as 502 Bad Gateway, 503 Service Unavailable, or 504 Gateway Timeout. Each timeout has a specific meaning and requires a different fix. Understanding the timeout chain - from client to proxy to backend - is essential for diagnosis.
 
 ## Nginx Timeout Types
 
@@ -25,6 +25,7 @@ Timeout errors in reverse proxies typically manifest as 502 Bad Gateway, 503 Ser
 
 ```bash
 # Check error log for timeout messages
+
 sudo tail -f /var/log/nginx/error.log | grep -i timeout
 
 # Common messages:
@@ -72,7 +73,7 @@ server {
 
 ## HAProxy Timeout Configuration
 
-```
+```text
 defaults
     timeout connect   5s
     timeout client   30s

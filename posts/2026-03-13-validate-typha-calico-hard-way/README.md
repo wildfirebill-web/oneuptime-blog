@@ -81,6 +81,7 @@ spec:
 EOF
 
 # Typha should log a policy update
+
 kubectl logs -n calico-system deployment/calico-typha | grep "NetworkPolicy" | tail -5
 
 # Verify iptables rule exists on a node

@@ -40,6 +40,7 @@ The most reliable first step is clearing the local package cache and re-download
 
 ```bash
 # Remove all cached package lists
+
 sudo rm -rf /var/lib/apt/lists/*
 
 # Clear the downloaded package cache too

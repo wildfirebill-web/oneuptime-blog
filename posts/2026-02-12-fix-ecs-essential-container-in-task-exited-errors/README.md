@@ -43,6 +43,7 @@ The exit code tells you why the container stopped. Find it in the stopped task d
 
 ```bash
 # Get details about stopped tasks
+
 aws ecs describe-tasks \
     --cluster my-cluster \
     --tasks $(aws ecs list-tasks --cluster my-cluster --desired-status STOPPED --query 'taskArns[0]' --output text) \

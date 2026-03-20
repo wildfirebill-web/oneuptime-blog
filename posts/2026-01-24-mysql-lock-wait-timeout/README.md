@@ -343,6 +343,7 @@ await executeWithRetry(pool, async (conn) => {
 
 ```python
 # Python retry pattern
+
 import pymysql
 import time
 from functools import wraps

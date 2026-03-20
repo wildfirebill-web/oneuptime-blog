@@ -22,6 +22,7 @@ Before starting, understand how your workloads are distributed across worker nod
 
 ```bash
 # See which pods are running on each worker node
+
 kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=<worker-node>
 
 # Check resource utilization per node

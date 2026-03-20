@@ -468,6 +468,7 @@ Create a deployment manifest:
 
 ```yaml
 # deployment.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

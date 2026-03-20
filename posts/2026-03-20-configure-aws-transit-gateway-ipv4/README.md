@@ -60,6 +60,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "vpc_b" {
 
 ```hcl
 # Route in VPC A pointing to VPC B via TGW
+
 resource "aws_route" "vpc_a_to_vpc_b" {
   route_table_id         = aws_route_table.vpc_a_private.id
   destination_cidr_block = aws_vpc.vpc_b.cidr_block

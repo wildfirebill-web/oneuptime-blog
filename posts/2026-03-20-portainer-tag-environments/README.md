@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environments, Tags, Organization, Edge Computing
+Tags: Portainer, Environments, Tags, Organizations, Edge Computing
 
 Description: Use tags in Portainer to label environments with metadata for filtering, organization, and dynamic edge group creation.
 
 ## Introduction
 
-Tags in Portainer are key-value labels attached to environments. Unlike groups (hierarchical), tags are flat and flexible — an environment can have multiple tags. Tags enable filtering in the UI and are the foundation for dynamic edge groups that automatically include environments based on tag matches.
+Tags in Portainer are key-value labels attached to environments. Unlike groups (hierarchical), tags are flat and flexible - an environment can have multiple tags. Tags enable filtering in the UI and are the foundation for dynamic edge groups that automatically include environments based on tag matches.
 
 ## Creating Tags
 
@@ -31,6 +31,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create tags
+
 TAGS=("production" "staging" "development" "us-east" "eu-west" "kubernetes" "docker" "edge")
 
 for tag in "${TAGS[@]}"; do
@@ -147,7 +148,7 @@ In the Portainer UI:
 
 Use consistent naming conventions for tags:
 
-```
+```text
 # Stage tags
 production, staging, development, testing
 
@@ -166,4 +167,4 @@ high-availability, low-latency, gpu-enabled
 
 ## Conclusion
 
-Tags provide a flexible, multi-dimensional way to describe your environments beyond simple group membership. While groups organize environments hierarchically, tags allow many dimensions simultaneously — a single environment can be "production", "us-east", "kubernetes", and "high-availability" all at once. This multi-dimensional tagging is especially powerful for dynamic edge groups that automatically track environments as tags are assigned or removed.
+Tags provide a flexible, multi-dimensional way to describe your environments beyond simple group membership. While groups organize environments hierarchically, tags allow many dimensions simultaneously - a single environment can be "production", "us-east", "kubernetes", and "high-availability" all at once. This multi-dimensional tagging is especially powerful for dynamic edge groups that automatically track environments as tags are assigned or removed.

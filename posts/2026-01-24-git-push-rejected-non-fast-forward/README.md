@@ -16,6 +16,7 @@ The non-fast-forward error occurs when your local branch has diverged from the r
 
 ```bash
 # Attempt to push
+
 git push origin main
 
 # Error message

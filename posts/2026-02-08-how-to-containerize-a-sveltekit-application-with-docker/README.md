@@ -16,6 +16,7 @@ SvelteKit's default adapter targets static hosting. Switch to the Node.js adapte
 
 ```bash
 # Install the Node.js adapter
+
 npm install -D @sveltejs/adapter-node
 ```
 

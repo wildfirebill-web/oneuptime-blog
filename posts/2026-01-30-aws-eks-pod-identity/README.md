@@ -80,6 +80,7 @@ Before configuring Pod Identity, ensure you have:
 
 ```bash
 # Check your EKS cluster version (must be 1.24+)
+
 aws eks describe-cluster \
   --name my-cluster \
   --query "cluster.version"

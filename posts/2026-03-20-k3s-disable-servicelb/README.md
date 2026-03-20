@@ -37,6 +37,7 @@ disable:
 EOF
 
 # Install K3s
+
 curl -sfL https://get.k3s.io | sudo sh -
 ```
 
@@ -227,4 +228,4 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
 
 ## Conclusion
 
-Disabling ServiceLB in K3s and replacing it with MetalLB gives you a production-grade load balancer that properly handles IP address assignment and ARP announcements. MetalLB's Layer 2 mode is straightforward to set up on any network, while BGP mode provides full integration with enterprise network fabrics. The transition is simple — disable ServiceLB in the K3s config, restart K3s, deploy MetalLB, and configure IP address pools. Existing LoadBalancer Services will automatically receive IPs from MetalLB's pool.
+Disabling ServiceLB in K3s and replacing it with MetalLB gives you a production-grade load balancer that properly handles IP address assignment and ARP announcements. MetalLB's Layer 2 mode is straightforward to set up on any network, while BGP mode provides full integration with enterprise network fabrics. The transition is simple - disable ServiceLB in the K3s config, restart K3s, deploy MetalLB, and configure IP address pools. Existing LoadBalancer Services will automatically receive IPs from MetalLB's pool.

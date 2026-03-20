@@ -52,6 +52,7 @@ Using Terraform:
 
 ```hcl
 # OIDC identity provider
+
 resource "aws_cognito_identity_provider" "oidc" {
   user_pool_id  = aws_cognito_user_pool.main.id
   provider_name = "MyOIDCProvider"

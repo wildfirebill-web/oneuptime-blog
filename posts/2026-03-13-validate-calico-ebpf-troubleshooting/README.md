@@ -25,6 +25,7 @@ Run this validation after initial setup and after any changes to security polici
 ```bash
 #!/bin/bash
 # validate-ebpf-troubleshooting-readiness.sh
+
 FAILURES=0
 
 check() {

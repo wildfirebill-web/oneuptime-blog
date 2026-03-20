@@ -67,6 +67,7 @@ Create an isolated environment where flag state is fully controllable:
 
 ```yaml
 # docker-compose.test.yml
+
 version: '3.8'
 
 services:

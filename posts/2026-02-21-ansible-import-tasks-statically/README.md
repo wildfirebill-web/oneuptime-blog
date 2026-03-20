@@ -16,6 +16,7 @@ Create a task file and import it from your playbook.
 
 ```yaml
 # tasks/common-setup.yml - shared setup tasks
+
 ---
 - name: Set timezone
   timezone:

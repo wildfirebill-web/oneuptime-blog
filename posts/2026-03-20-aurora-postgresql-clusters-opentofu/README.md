@@ -160,6 +160,7 @@ tofu plan
 tofu apply
 
 # Verify cluster status
+
 aws rds describe-db-clusters \
   --db-cluster-identifier my-project-aurora-pg \
   --query 'DBClusters[0].{Status: Status, Endpoint: Endpoint, Reader: ReaderEndpoint}'

@@ -37,6 +37,7 @@ Use the `provider-family-aws` package, which installs the provider controller an
 
 ```yaml
 # infrastructure/crossplane/providers/aws/provider.yaml
+
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:

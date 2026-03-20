@@ -21,6 +21,7 @@ Common reasons to customize ID generation:
 
 ```python
 # custom_id_generator.py
+
 import time
 import os
 import struct

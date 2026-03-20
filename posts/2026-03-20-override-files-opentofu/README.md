@@ -24,6 +24,7 @@ Override files that OpenTofu looks for:
 
 ```hcl
 # main.tf - Original configuration
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.large"  # Production size

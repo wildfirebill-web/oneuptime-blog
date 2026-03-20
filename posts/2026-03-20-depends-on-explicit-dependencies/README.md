@@ -8,12 +8,13 @@ Description: A guide to using depends_on to create explicit dependency relations
 
 ## Introduction
 
-OpenTofu automatically determines dependencies between resources based on reference expressions. However, some dependencies are implicit — they exist due to side effects not captured by references. The `depends_on` meta-argument lets you declare these hidden dependencies explicitly.
+OpenTofu automatically determines dependencies between resources based on reference expressions. However, some dependencies are implicit - they exist due to side effects not captured by references. The `depends_on` meta-argument lets you declare these hidden dependencies explicitly.
 
 ## When depends_on Is Needed
 
 ```hcl
 # Automatic dependency (no depends_on needed):
+
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
 }
@@ -177,4 +178,4 @@ resource "aws_subnet" "public" {
 
 ## Conclusion
 
-`depends_on` is a powerful tool for expressing dependencies that OpenTofu cannot automatically detect from resource references. It's particularly important for resources with side effects (like `null_resource` provisioners), IAM policy attachments, and any scenario where one resource's completion affects another's functionality without a direct reference. Use it sparingly — unnecessary `depends_on` slows down deployments by preventing parallelism that would otherwise be safe.
+`depends_on` is a powerful tool for expressing dependencies that OpenTofu cannot automatically detect from resource references. It's particularly important for resources with side effects (like `null_resource` provisioners), IAM policy attachments, and any scenario where one resource's completion affects another's functionality without a direct reference. Use it sparingly - unnecessary `depends_on` slows down deployments by preventing parallelism that would otherwise be safe.

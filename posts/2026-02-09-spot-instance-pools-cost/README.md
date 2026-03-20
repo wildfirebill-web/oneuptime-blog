@@ -129,6 +129,7 @@ Maintain a baseline of on-demand instances for critical capacity with spot insta
 
 ```yaml
 # On-demand node pool - guaranteed capacity
+
 managedNodeGroups:
 - name: on-demand-baseline
   instanceTypes:

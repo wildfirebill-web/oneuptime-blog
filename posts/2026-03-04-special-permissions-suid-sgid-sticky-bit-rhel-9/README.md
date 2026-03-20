@@ -20,6 +20,7 @@ The classic example is the `passwd` command:
 
 ```bash
 # Check the permissions on passwd - notice the 's' in the owner execute position
+
 ls -l /usr/bin/passwd
 # -rwsr-xr-x. 1 root root 32656 ... /usr/bin/passwd
 ```

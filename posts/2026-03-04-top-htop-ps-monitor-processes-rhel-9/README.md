@@ -185,6 +185,7 @@ Use ps for snapshots and top/htop for real-time monitoring:
 
 ```bash
 # Find top 5 CPU consumers right now
+
 ps aux --sort=-%cpu | head -6
 
 # Watch them in real time

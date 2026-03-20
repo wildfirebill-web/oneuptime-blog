@@ -25,6 +25,7 @@ resource "aws_db_instance" "production" {
 }
 
 # tofu destroy will fail with:
+
 # Error: Instance cannot be destroyed
 # Resource ... has lifecycle.prevent_destroy set to true.
 

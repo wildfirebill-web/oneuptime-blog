@@ -26,6 +26,7 @@ If you do not already have an Event Hub, create one using the Azure CLI:
 
 ```bash
 # Create a resource group
+
 az group create --name flux-events-rg --location eastus
 
 # Create an Event Hub namespace

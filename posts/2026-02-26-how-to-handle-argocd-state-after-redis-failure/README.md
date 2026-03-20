@@ -47,6 +47,7 @@ Here are the signs that Redis is causing problems.
 
 ```bash
 # Check if Redis is running
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-redis
 
 # Check application controller logs for Redis errors

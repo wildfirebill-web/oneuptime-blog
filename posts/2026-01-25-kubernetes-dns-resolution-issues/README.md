@@ -26,6 +26,7 @@ Every pod gets a resolv.conf pointing to the cluster DNS service:
 
 ```bash
 # Check pod's DNS configuration
+
 kubectl exec -it myapp -- cat /etc/resolv.conf
 
 # Output:

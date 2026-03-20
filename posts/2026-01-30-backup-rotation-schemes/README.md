@@ -227,6 +227,7 @@ WEEKLY_KEEP=4
 MONTHLY_KEEP=12
 
 # Create backup directories
+
 mkdir -p "$BACKUP_DIR"/{daily,weekly,monthly}
 
 # Get current date info

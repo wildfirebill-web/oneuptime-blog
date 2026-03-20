@@ -86,6 +86,7 @@ Since V is not available in standard package repositories, we build it from sour
 
 ```dockerfile
 # Basic V Dockerfile - builds V compiler and application
+
 FROM ubuntu:22.04
 
 # Install build dependencies
@@ -342,7 +343,7 @@ EXPOSE 8080
 CMD ["sh", "-c", "v -o server main.v && ./server"]
 ```
 
-## Resource Usage
+Resource Usage
 
 V applications are lightweight:
 

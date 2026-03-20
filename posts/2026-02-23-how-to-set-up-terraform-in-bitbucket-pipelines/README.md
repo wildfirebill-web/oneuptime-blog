@@ -18,6 +18,7 @@ Enable Bitbucket Pipelines in your repository settings, then create a `bitbucket
 
 ```yaml
 # bitbucket-pipelines.yml
+
 # Basic Terraform pipeline
 
 image: hashicorp/terraform:1.7.5

@@ -41,6 +41,7 @@ First, add the required gems to your Gemfile. The instrumentation-all gem pulls 
 
 ```ruby
 # Add to your Gemfile
+
 gem 'opentelemetry-sdk'
 gem 'opentelemetry-exporter-otlp'
 gem 'opentelemetry-instrumentation-all'

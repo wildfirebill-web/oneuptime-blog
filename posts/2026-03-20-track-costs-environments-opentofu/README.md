@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # locals.tf
+
 locals {
   cost_tags = {
     Environment  = var.environment
@@ -163,8 +164,8 @@ resource "aws_ce_anomaly_subscription" "environment" {
 
 ## Best Practices
 
-- Activate cost allocation tags in AWS Cost Explorer before they appear in cost reports — there's a 24-hour activation delay.
-- Use Infracost in CI/CD to show cost impact of each PR — teams make better decisions when they see the dollar impact.
+- Activate cost allocation tags in AWS Cost Explorer before they appear in cost reports - there's a 24-hour activation delay.
+- Use Infracost in CI/CD to show cost impact of each PR - teams make better decisions when they see the dollar impact.
 - Enable AWS Cost Anomaly Detection per environment to catch unexpected spend spikes automatically.
 - Create a monthly cost report in Slack or email that breaks down spend by environment and team.
-- Budget alerts are reactive; anomaly detection is proactive — use both for comprehensive cost coverage.
+- Budget alerts are reactive; anomaly detection is proactive - use both for comprehensive cost coverage.

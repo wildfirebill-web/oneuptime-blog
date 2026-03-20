@@ -35,6 +35,7 @@ The default and most commonly used patch type:
 
 ```bash
 # Update replica count
+
 kubectl patch deployment web-app -n production \
   -p '{"spec":{"replicas":5}}'
 

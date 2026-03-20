@@ -60,6 +60,7 @@ Let us start by creating a new Node.js project and installing the required depen
 
 ```bash
 # Create a new directory and initialize the project
+
 mkdir graphql-api && cd graphql-api
 npm init -y
 

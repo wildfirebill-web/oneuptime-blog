@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: sysctl, RHEL, Linux, Performance Tuning, TCP, High Throughput, Networking
+Tags: Sysctl, RHEL, Linux, Performance Tuning, TCP, High Throughput, Networking
 
 Description: Learn how to tune Linux kernel sysctl parameters on RHEL for high-throughput network workloads, including TCP buffer sizes, connection queues, and socket settings.
 
@@ -16,6 +16,7 @@ High-throughput applications require kernel networking parameters tuned beyond t
 # /etc/sysctl.d/99-network-performance.conf
 
 # TCP socket receive and send buffer sizes
+
 # Default is ~212KB; increase to 16MB for high-throughput
 net.core.rmem_default = 262144
 net.core.wmem_default = 262144

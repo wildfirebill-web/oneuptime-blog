@@ -46,6 +46,7 @@ Start with a simple static lookup configuration that enriches service names with
 
 ```yaml
 # Basic Lookup processor configuration
+
 processors:
   lookup:
     # Define the lookup table name

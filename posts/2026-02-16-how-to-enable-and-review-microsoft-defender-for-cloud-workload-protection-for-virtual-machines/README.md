@@ -71,6 +71,7 @@ Enabling at the subscription level protects all VMs in the subscription:
 
 ```powershell
 # Enable Defender for Servers Plan 2 on a subscription
+
 Connect-AzAccount
 
 Set-AzSecurityPricing `

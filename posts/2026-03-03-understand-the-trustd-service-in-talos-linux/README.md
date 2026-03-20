@@ -43,6 +43,7 @@ The `trustd` service runs on control plane nodes by default. It listens on port 
 
 ```bash
 # Check trustd status on a control plane node
+
 talosctl -n 192.168.1.10 service trustd
 
 # Expected output

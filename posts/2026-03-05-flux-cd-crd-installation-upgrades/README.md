@@ -28,6 +28,7 @@ Here is a typical pattern where CRDs are installed by one Kustomization, and the
 
 ```yaml
 # First Kustomization: installs the CRDs
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

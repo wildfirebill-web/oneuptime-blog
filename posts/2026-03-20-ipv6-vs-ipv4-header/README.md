@@ -27,7 +27,7 @@ The IPv6 header is not simply an IPv4 header with bigger addresses. It was redes
 | Source Address | 32 | Source Address | Expanded to 128 bits |
 | Destination Address | 32 | Destination Address | Expanded to 128 bits |
 | Options | Variable | **Removed** → Extension Headers | Moved to optional extension headers |
-| — | — | Flow Label | **New** in IPv6 (20 bits) |
+| - | - | Flow Label | **New** in IPv6 (20 bits) |
 
 ## IPv4 Fields That Were Removed
 
@@ -48,7 +48,7 @@ IPv4 options made header parsing unpredictable. IPv6 moves all options to extens
 
 ## IPv6 New Field: Flow Label
 
-```
+```text
 Flow Label (20 bits): identifies a flow for special handling
 
 Purpose:
@@ -98,7 +98,7 @@ compare_headers()
 ```
 
 Output:
-```
+```text
 IPv4 minimum header: 160 bits = 20 bytes
 IPv6 header:         320 bits = 40 bytes
 ```
@@ -109,6 +109,7 @@ Note: Despite IPv6 being 40 bytes vs IPv4's 20 bytes minimum, the **address fiel
 
 ```bash
 # Capture IPv4 and IPv6 packets simultaneously
+
 sudo tcpdump -i eth0 -vv "(ip or ip6)" | head -40
 
 # Compare TTL/HopLimit behavior
@@ -118,4 +119,4 @@ sudo tcpdump -i eth0 -v "(tcp port 80 or tcp port 443)" 2>/dev/null | \
 
 ## Conclusion
 
-The IPv6 header redesign removed fragmentation fields, the checksum, options, and the variable-length header in exchange for a simpler, faster-to-process 40-byte structure. The additions — Flow Label and expanded addresses — enable new capabilities. The result is a header that routers can process at wire speed without variable-length parsing, checksumming, or fragmentation decisions, which was not achievable with the IPv4 header design.
+The IPv6 header redesign removed fragmentation fields, the checksum, options, and the variable-length header in exchange for a simpler, faster-to-process 40-byte structure. The additions - Flow Label and expanded addresses - enable new capabilities. The result is a header that routers can process at wire speed without variable-length parsing, checksumming, or fragmentation decisions, which was not achievable with the IPv4 header design.

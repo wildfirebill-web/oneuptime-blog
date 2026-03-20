@@ -306,6 +306,7 @@ Deploy the function with the right memory and timeout settings.
 
 ```bash
 # Deploy the Cloud Function
+
 gcloud functions deploy generate-text \
   --gen2 \
   --runtime=go122 \

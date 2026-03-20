@@ -120,6 +120,7 @@ The Azure CLI is great for scripting and automation. Here are the key commands.
 
 ```bash
 # Add a server-level firewall rule using Azure CLI
+
 az sql server firewall-rule create \
     --resource-group myResourceGroup \
     --server myserver \

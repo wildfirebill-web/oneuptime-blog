@@ -24,6 +24,7 @@ Without proper monitoring, task queue systems fail silently. Messages get lost, 
 
 ```bash
 # Install Dramatiq with Redis broker support
+
 pip install dramatiq redis
 
 # Install OpenTelemetry packages

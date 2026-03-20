@@ -12,7 +12,7 @@ Longhorn implements ReadWriteMany (RWX) volumes using an internal NFSv4.1 server
 
 ## How Longhorn's Share Manager Works
 
-```
+```text
 Pod A (Node 1) ──NFSv4.1──┐
                            ├──→ Share Manager Pod ──→ Longhorn Volume (Block)
 Pod B (Node 2) ──NFSv4.1──┘
@@ -31,6 +31,7 @@ The Share Manager pod:
 
 ```bash
 # Ubuntu/Debian
+
 apt-get install -y nfs-common
 
 # RHEL/CentOS

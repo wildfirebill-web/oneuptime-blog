@@ -29,6 +29,7 @@ Istio provides the most mature egress gateway implementation. Start by installin
 
 ```bash
 # Download Istio
+
 curl -L https://istio.io/downloadIstio | sh -
 cd istio-1.20.2
 export PATH=$PWD/bin:$PATH

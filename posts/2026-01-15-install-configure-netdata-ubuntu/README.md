@@ -32,6 +32,7 @@ Netdata is a distributed, real-time performance and health monitoring system. It
 
 ```bash
 # Install Netdata using official script
+
 wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh && sh /tmp/netdata-kickstart.sh
 ```
 

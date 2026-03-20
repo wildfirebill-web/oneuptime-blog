@@ -63,6 +63,7 @@ Start with the security group:
 
 ```bash
 # Create security group for resolver endpoints
+
 aws ec2 create-security-group \
   --group-name resolver-endpoints-sg \
   --description "Allow DNS traffic for Route 53 Resolver" \

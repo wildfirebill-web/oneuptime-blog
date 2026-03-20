@@ -56,6 +56,7 @@ For large tables, standard ALTER TABLE can lock the table. Tools like `pt-online
 
 ```bash
 # Using gh-ost for MySQL online schema change
+
 # This creates a shadow table, copies data, then swaps
 gh-ost \
   --host=db-primary.example.com \

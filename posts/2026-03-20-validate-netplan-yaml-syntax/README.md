@@ -14,6 +14,7 @@ Invalid YAML or incorrect Netplan syntax can break network connectivity when app
 
 ```bash
 # Check all .yaml files in /etc/netplan/ for errors
+
 netplan generate
 
 # No output = valid configuration
@@ -86,7 +87,7 @@ cat /run/systemd/network/10-netplan-eth0.network
 ## Use netplan try for Safe Validation + Application
 
 ```bash
-# Applies temporarily — auto-reverts if you don't confirm
+# Applies temporarily - auto-reverts if you don't confirm
 netplan try
 
 # If network breaks, it auto-reverts after 120 seconds
@@ -116,4 +117,4 @@ yamllint /etc/netplan/01-netcfg.yaml
 
 ## Conclusion
 
-Always run `netplan generate` before `netplan apply` to catch YAML and Netplan-specific syntax errors. For remote servers, use `netplan try` which auto-reverts if connectivity breaks. Ensure files are owned by root with correct permissions — Netplan rejects files with incorrect ownership.
+Always run `netplan generate` before `netplan apply` to catch YAML and Netplan-specific syntax errors. For remote servers, use `netplan try` which auto-reverts if connectivity breaks. Ensure files are owned by root with correct permissions - Netplan rejects files with incorrect ownership.

@@ -163,6 +163,7 @@ Many providers offer IPv6 blocks that can be used for anycast:
 **AWS BYOIP (Bring Your Own IP)**
 ```bash
 # Register your IPv6 prefix with AWS
+
 aws ec2 provision-byoip-cidr \
     --cidr "2001:db8:1234::/48" \
     --cidr-authorization-context Message="...",Signature="..."

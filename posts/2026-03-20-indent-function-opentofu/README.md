@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, indent, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Indent, String Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the indent function in OpenTofu to add consistent indentation to multi-line strings when embedding them in YAML or other indentation-sensitive formats.
 
@@ -18,7 +18,7 @@ The `indent()` function adds a specified number of spaces to the beginning of ea
 indent(num_spaces, string)
 ```
 
-The first line of the string is **not** indented — only subsequent lines receive the indentation. This matches how you'd embed a multi-line value in an already-indented context.
+The first line of the string is **not** indented - only subsequent lines receive the indentation. This matches how you'd embed a multi-line value in an already-indented context.
 
 ---
 
@@ -123,6 +123,7 @@ locals {
 
 ```hcl
 # For complex multi-line embeddings, templatefile() with %{ directives }
+
 # may be cleaner than indent() for some cases
 
 resource "aws_ssm_parameter" "config" {

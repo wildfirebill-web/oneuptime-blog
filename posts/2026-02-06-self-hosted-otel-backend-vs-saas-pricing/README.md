@@ -45,6 +45,7 @@ For this comparison, we will model a mid-size organization with the following te
 
 ```yaml
 # Telemetry profile for cost modeling
+
 daily_telemetry:
   traces:
     spans_per_day: 500_000_000       # 500M spans/day

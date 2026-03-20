@@ -35,6 +35,7 @@ The easiest method on RHEL:
 
 ```bash
 # Install scap-security-guide which includes the Ansible content
+
 dnf install -y scap-security-guide ansible-core
 
 # The role is installed to:

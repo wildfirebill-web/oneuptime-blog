@@ -312,6 +312,7 @@ spec:
 
 ```bash
 # Get a test token
+
 TOKEN=$(curl -s -X POST https://auth.example.com/oauth/token \
   -d 'grant_type=client_credentials&client_id=test&client_secret=secret' | jq -r .access_token)
 

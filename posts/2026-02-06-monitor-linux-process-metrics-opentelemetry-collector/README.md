@@ -47,6 +47,7 @@ To enable process metric collection, add the `process` scraper to the hostmetric
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   hostmetrics:
     collection_interval: 30s

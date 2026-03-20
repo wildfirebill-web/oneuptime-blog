@@ -50,6 +50,7 @@ terraform {
 # providers.tf
 
 # Get EKS cluster data
+
 data "aws_eks_cluster" "cluster" {
   name = var.cluster_name
 }

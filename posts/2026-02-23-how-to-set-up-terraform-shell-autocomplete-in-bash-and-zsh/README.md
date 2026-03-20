@@ -16,6 +16,7 @@ Terraform includes a built-in command that installs autocomplete for you:
 
 ```bash
 # Install Terraform autocomplete (works for both Bash and Zsh)
+
 terraform -install-autocomplete
 ```
 

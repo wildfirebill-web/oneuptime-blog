@@ -220,6 +220,7 @@ Quality metrics complement traditional error rates by adding a correctness dimen
 
 ```python
 # Combined quality and availability metrics
+
 # Tracks both HTTP success and semantic correctness
 
 from prometheus_client import Counter, Histogram

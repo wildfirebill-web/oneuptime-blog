@@ -219,6 +219,7 @@ Use the IAM Policy Simulator with context keys to test your IP conditions:
 
 ```bash
 # Test that access is allowed from the corporate network
+
 aws iam simulate-custom-policy \
   --policy-input-list file://ip-policy.json \
   --action-names s3:GetObject \

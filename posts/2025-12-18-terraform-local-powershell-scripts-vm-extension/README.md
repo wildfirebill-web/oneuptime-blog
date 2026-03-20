@@ -29,6 +29,7 @@ First, create the foundational Azure resources:
 
 ```hcl
 # Provider configuration
+
 terraform {
   required_providers {
     azurerm = {

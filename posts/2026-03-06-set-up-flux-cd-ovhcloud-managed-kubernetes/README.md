@@ -27,6 +27,7 @@ You can create the cluster through the OVHcloud Control Panel or using the API.
 
 ```bash
 # Using the OVH API via curl
+
 # First, get your service name (Public Cloud project ID)
 export OVH_PROJECT_ID="your-project-id"
 export OVH_REGION="GRA7"

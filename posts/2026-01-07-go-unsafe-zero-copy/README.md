@@ -1030,6 +1030,7 @@ These tools can detect some unsafe violations:
 
 ```bash
 # Run go vet with all checks
+
 go vet ./...
 
 # Install and run staticcheck for more comprehensive analysis

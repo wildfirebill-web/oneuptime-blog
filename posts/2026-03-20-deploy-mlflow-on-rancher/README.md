@@ -32,6 +32,7 @@ helm install postgresql bitnami/postgresql \
 
 ```bash
 # Create the MLflow artifacts bucket
+
 aws s3 mb s3://mlflow-artifacts
 
 # Create Kubernetes secret with S3 credentials

@@ -14,6 +14,7 @@ Envoy supports custom access log formats. Add trace ID and span ID fields using 
 
 ```yaml
 # envoy.yaml - access_log section within http_connection_manager
+
 static_resources:
   listeners:
     - name: listener_0

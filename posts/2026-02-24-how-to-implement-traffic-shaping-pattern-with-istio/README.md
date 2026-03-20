@@ -56,6 +56,7 @@ A typical canary deployment looks like this:
 
 ```bash
 # Start at 1%
+
 # Edit VirtualService: v1=99, v2=1
 kubectl apply -f virtualservice-1pct.yaml
 # Monitor for 10 minutes

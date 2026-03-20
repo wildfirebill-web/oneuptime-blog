@@ -275,6 +275,7 @@ After applying the configuration, test it with a sample pipeline run:
 
 ```bash
 # Create a simple TaskRun
+
 kubectl create -f - <<EOF
 apiVersion: tekton.dev/v1
 kind: TaskRun

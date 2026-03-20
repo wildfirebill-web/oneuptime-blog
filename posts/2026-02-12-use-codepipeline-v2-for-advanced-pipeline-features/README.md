@@ -38,6 +38,7 @@ You specify the V2 type when creating a pipeline:
 
 ```bash
 # Create a V2 pipeline
+
 aws codepipeline create-pipeline \
   --pipeline '{
     "name": "my-service-pipeline",

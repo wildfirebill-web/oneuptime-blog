@@ -33,6 +33,7 @@ variable "project_id" { type = string }
 
 ```hcl
 # Create an HTTP uptime check
+
 resource "google_monitoring_uptime_check_config" "website" {
   display_name = "Website Availability Check"
   timeout      = "10s"

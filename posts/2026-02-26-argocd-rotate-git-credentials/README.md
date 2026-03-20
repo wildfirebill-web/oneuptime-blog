@@ -28,6 +28,7 @@ flowchart TD
 
 ```bash
 # List all repository credential secrets
+
 kubectl get secrets -n argocd -l argocd.argoproj.io/secret-type=repository
 
 # List all credential template secrets

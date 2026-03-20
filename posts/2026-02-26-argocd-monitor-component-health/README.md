@@ -49,6 +49,7 @@ If you use the Prometheus Operator, create ServiceMonitors:
 
 ```yaml
 # argocd-metrics-servicemonitor.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

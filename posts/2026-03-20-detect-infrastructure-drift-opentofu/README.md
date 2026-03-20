@@ -8,12 +8,13 @@ Description: Learn how to use OpenTofu's plan -refresh-only command and schedule
 
 ## Introduction
 
-Infrastructure drift occurs when the actual cloud resources diverge from the state recorded by OpenTofu — usually because someone made a manual change in the cloud console. Detecting drift early, before a planned change, prevents "apply works locally but breaks in CI" surprises.
+Infrastructure drift occurs when the actual cloud resources diverge from the state recorded by OpenTofu - usually because someone made a manual change in the cloud console. Detecting drift early, before a planned change, prevents "apply works locally but breaks in CI" surprises.
 
 ## What Drift Looks Like
 
-```
+```text
 # Drift: someone manually changed a security group rule
+
   ~ aws_security_group.web (drift)
       ~ ingress {
             from_port       = 443
@@ -27,7 +28,7 @@ Infrastructure drift occurs when the actual cloud resources diverge from the sta
 ## Detecting Drift with plan -refresh-only
 
 ```bash
-# Refresh-only plan shows ONLY drift — no config changes included
+# Refresh-only plan shows ONLY drift - no config changes included
 tofu plan -refresh-only -no-color
 
 # If output shows:
@@ -103,7 +104,7 @@ jobs:
             github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Infrastructure Drift Detected — ${{ matrix.environment }}`,
+              title: `Infrastructure Drift Detected - ${{ matrix.environment }}`,
               body: `Drift was detected in the \`${{ matrix.environment }}\` environment.\n\nRun \`tofu plan -refresh-only\` to review the drift.`,
               labels: ['infrastructure', 'drift']
             });
@@ -121,7 +122,7 @@ tofu plan -refresh-only -detailed-exitcode
 DRIFT_EXIT_CODE=$?
 
 if [ "$DRIFT_EXIT_CODE" -eq 2 ]; then
-  echo "DRIFT DETECTED — investigation required"
+  echo "DRIFT DETECTED - investigation required"
   exit 1
 elif [ "$DRIFT_EXIT_CODE" -eq 0 ]; then
   echo "No drift detected"
@@ -130,4 +131,4 @@ fi
 
 ## Conclusion
 
-Regular drift detection with `tofu plan -refresh-only` on a schedule keeps your infrastructure honest. Catching drift early — before it compounds or causes an incident — is far cheaper than discovering it during an emergency. Automate detection with CI, create alerts for detected drift, and investigate every drift report to understand whether it was authorized or unauthorized.
+Regular drift detection with `tofu plan -refresh-only` on a schedule keeps your infrastructure honest. Catching drift early - before it compounds or causes an incident - is far cheaper than discovering it during an emergency. Automate detection with CI, create alerts for detected drift, and investigate every drift report to understand whether it was authorized or unauthorized.

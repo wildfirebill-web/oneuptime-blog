@@ -15,6 +15,7 @@ OpenTofu's workspace command exits with a non-zero code if a workspace already e
 ```bash
 #!/usr/bin/env bash
 # ensure-workspace.sh
+
 # Creates the workspace if it does not already exist, then selects it.
 set -euo pipefail
 
@@ -156,7 +157,7 @@ while IFS= read -r workspace; do
 done < workspaces.txt
 ```
 
-```
+```text
 # workspaces.txt
 staging
 qa

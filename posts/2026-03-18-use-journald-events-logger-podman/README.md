@@ -20,6 +20,7 @@ The journald backend is the default on most Linux distributions with systemd. Ve
 
 ```bash
 # Check current events logger
+
 podman info --format '{{.Host.EventLogger}}'
 ```
 

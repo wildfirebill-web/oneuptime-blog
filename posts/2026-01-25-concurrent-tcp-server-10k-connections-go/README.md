@@ -298,6 +298,7 @@ Increase file descriptor limits - each connection is a file descriptor.
 
 ```bash
 # Check current limits
+
 ulimit -n
 
 # Set for current session

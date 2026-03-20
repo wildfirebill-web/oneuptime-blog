@@ -32,6 +32,7 @@ Create the APIM instance and configure it as the gateway for your external APIs:
 
 ```bash
 # Create the API Management instance
+
 az apim create \
   --name apim-d365-gateway \
   --resource-group rg-d365-virtual-entities \

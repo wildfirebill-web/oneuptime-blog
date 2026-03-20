@@ -20,6 +20,7 @@ By default, Podman builds use a private network namespace with NAT-based interne
 
 ```bash
 # Build with default networking
+
 podman build -t myapp:latest .
 
 # Verify network access during build

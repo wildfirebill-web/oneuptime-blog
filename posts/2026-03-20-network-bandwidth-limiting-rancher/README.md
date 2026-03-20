@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, bandwidth, qos, kubernetes, networking
+Tags: Rancher, Bandwidth, QoS, Kubernetes, Networking
 
 Description: Guide to implementing network bandwidth limiting and QoS policies in Rancher clusters.
 
@@ -25,6 +25,7 @@ Network configuration in Rancher-managed Kubernetes clusters leverages the CNI (
 
 ```bash
 # Check current CNI plugin
+
 kubectl get configmap -n kube-system kube-proxy -o yaml | grep mode
 
 # Check network policies

@@ -16,6 +16,7 @@ pip is Python's package installer. It lets you install libraries from the Python
 
 ```bash
 # Install a package
+
 pip install requests
 
 # Install specific version

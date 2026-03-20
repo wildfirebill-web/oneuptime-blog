@@ -199,6 +199,7 @@ The following code demonstrates how Docker's copy-on-write filesystem works. Eac
 
 ```bash
 # Three containers from the same image share base layers
+
 docker run -d --name app1 nginx:alpine  # Uses ~10 MB unique memory
 docker run -d --name app2 nginx:alpine  # Shares base, ~10 MB unique
 docker run -d --name app3 nginx:alpine  # Shares base, ~10 MB unique

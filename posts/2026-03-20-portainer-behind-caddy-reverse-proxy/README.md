@@ -8,7 +8,7 @@ Description: Use Caddy as a reverse proxy for Portainer with automatic HTTPS cer
 
 ## Introduction
 
-Caddy is renowned for its simplicity — it automatically obtains and renews TLS certificates from Let's Encrypt with zero configuration. Setting up Portainer behind Caddy takes just a few lines in a Caddyfile, making it an excellent choice for teams who want HTTPS without complexity.
+Caddy is renowned for its simplicity - it automatically obtains and renews TLS certificates from Let's Encrypt with zero configuration. Setting up Portainer behind Caddy takes just a few lines in a Caddyfile, making it an excellent choice for teams who want HTTPS without complexity.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Create `caddy/Caddyfile`:
 
 ```caddyfile
 # Caddy automatically handles HTTPS - just provide the domain
+
 portainer.example.com {
     # Reverse proxy to Portainer's HTTPS port
     reverse_proxy portainer:9443 {
@@ -145,7 +146,7 @@ For a more dynamic setup, use the `caddy-docker-proxy` plugin:
 
 **Trusted origins error**: Add `--trusted-origins=https://portainer.example.com` to Portainer's command.
 
-**Caddy using staging certificates**: Check `/data/caddy/certificates` — if you see `acme-staging`, Caddy hit rate limits. Wait and force renewal.
+**Caddy using staging certificates**: Check `/data/caddy/certificates` - if you see `acme-staging`, Caddy hit rate limits. Wait and force renewal.
 
 ## Conclusion
 

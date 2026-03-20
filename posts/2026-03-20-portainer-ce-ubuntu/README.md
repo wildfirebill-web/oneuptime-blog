@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, ubuntu, docker, installation, container-management
+Tags: Portainer, Ubuntu, Docker, Installation, Container-management
 
 Description: A step-by-step guide to installing Portainer Community Edition on Ubuntu Linux with Docker, including Docker installation and first-time setup.
 
@@ -21,6 +21,7 @@ Portainer CE is a lightweight, open-source container management UI that makes it
 
 ```bash
 # Update package index and upgrade existing packages
+
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
@@ -114,11 +115,11 @@ sudo ufw status
 
 Open your browser and navigate to:
 
-```
+```text
 https://<your-server-ip>:9443
 ```
 
-You will see a certificate warning for the self-signed certificate — proceed to the page.
+You will see a certificate warning for the self-signed certificate - proceed to the page.
 
 **First-time setup:**
 1. Create an admin account with a strong password (minimum 12 characters)

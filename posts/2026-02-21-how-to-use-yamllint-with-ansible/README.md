@@ -16,6 +16,7 @@ In this guide, we will set up yamllint for an Ansible project with a configurati
 
 ```bash
 # Install with pip
+
 pip install yamllint
 
 # Or with your system package manager

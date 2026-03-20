@@ -12,8 +12,9 @@ Wireshark's ICMPv6 dissector provides rich decoding of all ICMPv6 message types,
 
 ## Essential ICMPv6 Wireshark Filters
 
-```
+```text
 # Show all ICMPv6 traffic
+
 icmpv6
 
 # Filter by message type
@@ -42,7 +43,7 @@ icmpv6.type >= 133 and icmpv6.type <= 137
 
 ## Diagnosing PMTU Black Holes
 
-```
+```text
 Wireshark workflow for PMTU diagnosis:
 
 1. Capture filter to get relevant traffic:
@@ -71,7 +72,7 @@ Wireshark workflow for PMTU diagnosis:
 
 ## Diagnosing NDP Failures
 
-```
+```text
 Wireshark workflow for NDP (address resolution) diagnosis:
 
 1. Filter for NDP: icmpv6.type >= 133 and icmpv6.type <= 136
@@ -128,7 +129,7 @@ tshark -r /tmp/icmpv6-debug.pcap -Y "icmpv6.type <= 4" \
 
 ## Wireshark Statistics for ICMPv6
 
-```
+```text
 Using Wireshark statistics for ICMPv6 analysis:
 
 Statistics → Protocol Hierarchy:

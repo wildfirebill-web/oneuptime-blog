@@ -27,6 +27,7 @@ The most common approach is to enable automatic injection at the namespace level
 
 ```bash
 # Enable automatic sidecar injection for a specific namespace
+
 kubectl label namespace my-app istio-injection=enabled
 
 # Verify the label

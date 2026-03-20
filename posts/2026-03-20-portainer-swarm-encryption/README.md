@@ -20,6 +20,7 @@ Docker Swarm encrypts two layers automatically when initialized with `--autolock
 
 ```bash
 # Initialize swarm with autolock (encrypts Raft logs)
+
 docker swarm init \
   --advertise-addr 192.168.1.10 \
   --autolock=true

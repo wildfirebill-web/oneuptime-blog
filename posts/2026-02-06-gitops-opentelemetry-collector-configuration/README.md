@@ -54,6 +54,7 @@ The base configuration contains the common setup that applies to all environment
 
 ```yaml
 # base/collector-config.yaml
+
 # Base collector configuration. Environment-specific settings
 # are applied as Kustomize overlays.
 apiVersion: v1

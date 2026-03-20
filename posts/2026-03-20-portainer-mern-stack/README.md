@@ -1,4 +1,4 @@
-# How to Deploy a MERN Stack via Portainer
+# How to Deploy a MERN Stack via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy a complete MERN (MongoDB, Express, React, Node.js) stack usi
 
 ## Introduction
 
-The MERN stack (MongoDB, Express.js, React, Node.js) is one of the most popular JavaScript full-stack combinations for building modern web applications. Using Portainer Stacks, you can deploy and manage all components — database, API server, and frontend — with a single Docker Compose file. This guide covers development and production configurations.
+The MERN stack (MongoDB, Express.js, React, Node.js) is one of the most popular JavaScript full-stack combinations for building modern web applications. Using Portainer Stacks, you can deploy and manage all components - database, API server, and frontend - with a single Docker Compose file. This guide covers development and production configurations.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Go to **Stacks** → **Add Stack** → **Web Editor**. Name the stack `mern-app`
 version: "3.8"
 
 services:
-  # MongoDB — document database
+  # MongoDB - document database
   mongodb:
     image: mongo:7.0
     container_name: mern-mongodb
@@ -217,7 +217,8 @@ export default App;
 ## Step 6: Production Compose Override
 
 ```yaml
-# docker-compose.prod.yml — override for production
+# docker-compose.prod.yml - override for production
+
 version: "3.8"
 
 services:

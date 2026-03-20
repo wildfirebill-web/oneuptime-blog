@@ -37,6 +37,7 @@ The most basic failures. TypeScript catches them.
 
 ```bash
 # You'll see errors like:
+
 # error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'
 
 # Fix: Run the TypeScript compiler to get clear error messages

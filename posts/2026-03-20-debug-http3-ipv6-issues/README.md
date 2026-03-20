@@ -20,6 +20,7 @@ Description: Debug common HTTP/3 and QUIC issues over IPv6, including handshake 
 
 ```bash
 # Check if server advertises HTTP/3
+
 curl -6 -I https://example.com | grep -i alt-svc
 
 # If missing, server doesn't advertise HTTP/3 support
@@ -35,7 +36,7 @@ nc -6 -u -zv 2001:db8::1 443
 # If that fails, check firewall
 sudo ip6tables -L INPUT -v -n | grep 443
 
-# Test from the server side — capture UDP on 443
+# Test from the server side - capture UDP on 443
 sudo tcpdump -i eth0 "ip6 and udp port 443" -c 20
 
 # If no packets arrive, the firewall is blocking UDP
@@ -67,7 +68,7 @@ openssl s_client -connect [2001:db8::1]:443 -tls1_3 2>&1 | grep "Protocol\|ALPN"
 # Expected: Protocol : TLSv1.3
 # If TLS 1.3 not supported, QUIC cannot work
 
-# Check ALPN negotiation — should include h3
+# Check ALPN negotiation - should include h3
 openssl s_client -connect [2001:db8::1]:443 -alpn h3 2>&1 | grep -E "ALPN|Protocol"
 ```
 

@@ -31,6 +31,7 @@ from opentelemetry import trace
 from opentelemetry.instrumentation.logging import LoggingInstrumentor
 
 # This automatically injects trace_id and span_id
+
 # into every Python log record
 LoggingInstrumentor().instrument(set_logging_format=True)
 

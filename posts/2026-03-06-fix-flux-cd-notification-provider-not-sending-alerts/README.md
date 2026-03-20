@@ -25,6 +25,7 @@ Start by verifying that the Provider resource is healthy.
 
 ```bash
 # List all providers
+
 kubectl get providers -A
 
 # Describe a specific provider for detailed status

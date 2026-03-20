@@ -20,6 +20,7 @@ When you publish a port, Podman sets up NAT rules so that host traffic is forwar
 
 ```bash
 # View NAT rules related to container port forwarding
+
 sudo iptables -t nat -L -n --line-numbers
 
 # View filter rules for container traffic

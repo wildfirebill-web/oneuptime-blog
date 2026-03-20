@@ -62,6 +62,7 @@ Run the following command to create a new SSH key pair dedicated to ArgoCD. Usin
 
 ```bash
 # Generate an ED25519 key pair for better security
+
 ssh-keygen -t ed25519 -C "argocd@example.com" -f ~/.ssh/argocd-deploy-key -N ""
 
 # View the public key to add to your Git provider

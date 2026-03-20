@@ -74,6 +74,7 @@ Install community nodes via the **Manage Palette** menu in the editor, or via ex
 
 ```bash
 # Install dashboard UI nodes via exec in Portainer
+
 docker exec -it nodered npm install @flowfuse/node-red-dashboard
 # Then restart the container via Portainer
 ```

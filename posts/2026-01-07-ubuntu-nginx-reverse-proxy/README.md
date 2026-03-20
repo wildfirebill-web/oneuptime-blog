@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Linux, NGINX, Reverse Proxy, SSL, TLS, Let's Encrypt
+Tags: Ubuntu, Linux, Nginx, Reverse Proxy, SSL, TLS, Let's Encrypt
 
 Description: Configure Nginx as a reverse proxy on Ubuntu with SSL termination using Let's Encrypt for secure HTTPS traffic handling.
 
@@ -43,6 +43,7 @@ Let's start by installing Nginx from the official Ubuntu repositories.
 
 ```bash
 # Update the package index to ensure we get the latest version
+
 sudo apt update
 
 # Install Nginx web server

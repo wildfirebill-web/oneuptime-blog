@@ -31,6 +31,7 @@ Instead of excluding directories, narrow your include path to cover only the dir
 
 ```yaml
 # Instead of scanning ./clusters/production and excluding ./clusters/production/legacy
+
 # Use a more specific path:
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageUpdateAutomation

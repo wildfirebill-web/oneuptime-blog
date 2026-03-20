@@ -117,6 +117,7 @@ Reference it in the RKE2 configuration:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 kube-apiserver-arg:
   - "encryption-provider-config=/etc/rancher/rke2/encryption-config.yaml"
 ```

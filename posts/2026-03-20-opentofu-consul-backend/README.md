@@ -1,8 +1,8 @@
-# How to Configure the Consul Backend in OpenTofu
+# How to Configure the Consul Backend in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend
 
 Description: Learn how to configure the Consul backend in OpenTofu to store state in HashiCorp Consul's key-value store with built-in locking.
 
@@ -67,7 +67,7 @@ terraform {
   backend "consul" {
     address = "localhost:8500"
     path    = "terraform/state"
-    lock    = true  # Default — enable locking
+    lock    = true  # Default - enable locking
   }
 }
 ```
@@ -76,7 +76,7 @@ terraform {
 
 Use Consul's KV path hierarchy to organize multiple configurations:
 
-```
+```text
 terraform/
 ├── networking/state
 ├── eks/state
@@ -88,6 +88,7 @@ terraform/
 
 ```hcl
 # networking/backend.tf
+
 terraform {
   backend "consul" {
     path = "terraform/networking/state"

@@ -20,6 +20,7 @@ Podman provides several log driver options.
 
 ```bash
 # Check the current default log driver
+
 podman info --format '{{.Host.LogDriver}}'
 
 # Available log drivers:

@@ -27,6 +27,7 @@ The simplest form of the command:
 
 ```bash
 # Generate configurations for a cluster named "my-cluster"
+
 # with the Kubernetes API endpoint at the given URL
 talosctl gen config my-cluster https://10.0.0.1:6443
 ```

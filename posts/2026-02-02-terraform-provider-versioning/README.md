@@ -45,6 +45,7 @@ The required_providers block inside terraform block defines which providers your
 
 ```hcl
 # main.tf - Declaring provider versions with constraints
+
 terraform {
   # Minimum Terraform version required
   required_version = ">= 1.5.0"

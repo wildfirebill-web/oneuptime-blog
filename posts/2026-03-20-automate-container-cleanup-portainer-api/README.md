@@ -26,6 +26,7 @@ In Portainer UI:
 
 ```bash
 # List all Portainer environments and their IDs
+
 PORTAINER_URL="https://portainer.example.com"
 API_KEY="ptr_your_api_key_here"
 
@@ -48,7 +49,7 @@ This script removes stopped containers, dangling images, and unused volumes via 
 
 ```bash
 #!/bin/bash
-# portainer-cleanup.sh — automated cleanup via Portainer API
+# portainer-cleanup.sh - automated cleanup via Portainer API
 
 PORTAINER_URL="https://portainer.example.com"
 API_KEY="ptr_your_api_key_here"

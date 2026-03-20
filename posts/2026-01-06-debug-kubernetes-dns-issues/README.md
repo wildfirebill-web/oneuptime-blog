@@ -38,6 +38,7 @@ These three commands give you a rapid assessment of your cluster's DNS health. R
 
 ```bash
 # Check CoreDNS pods are running - should show Running status
+
 kubectl get pods -n kube-system -l k8s-app=kube-dns
 
 # Check CoreDNS service exists and has a ClusterIP assigned

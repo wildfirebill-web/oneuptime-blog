@@ -14,6 +14,7 @@ SSHFS (SSH Filesystem) lets you mount a directory from a remote server on your l
 
 ```bash
 # Update package list and install sshfs
+
 sudo apt update
 sudo apt install sshfs
 

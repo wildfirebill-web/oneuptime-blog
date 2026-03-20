@@ -1,4 +1,4 @@
-# How to Configure Longhorn Support Bundle Manager
+# How to Configure Longhorn Support Bundle Manager - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use Longhorn's support bundle feature to collect compr
 
 ---
 
-Longhorn's support bundle feature collects all diagnostic information — pod logs, settings, volume status, node conditions, and Kubernetes events — into a single archive. This makes it easy to share relevant information with the Longhorn team or your support provider.
+Longhorn's support bundle feature collects all diagnostic information - pod logs, settings, volume status, node conditions, and Kubernetes events - into a single archive. This makes it easy to share relevant information with the Longhorn team or your support provider.
 
 ---
 
@@ -30,7 +30,7 @@ The simplest way is through the Longhorn UI:
 1. Navigate to **Support**
 2. Click **Generate Support Bundle**
 3. Enter a description (e.g., "Volume XXX stuck in attaching state")
-4. Click **Generate** — the bundle is created as a zip archive
+4. Click **Generate** - the bundle is created as a zip archive
 5. Download the bundle
 
 ---
@@ -39,6 +39,7 @@ The simplest way is through the Longhorn UI:
 
 ```yaml
 # Create a SupportBundle resource
+
 apiVersion: longhorn.io/v1beta2
 kind: SupportBundle
 metadata:
@@ -109,7 +110,7 @@ kubectl delete lhsupportbundle support-bundle-2026-03-20 -n longhorn-system
 
 ## Best Practices
 
-- Generate a support bundle **immediately** when you notice an issue — logs are rotated and historical data may be lost if you wait.
+- Generate a support bundle **immediately** when you notice an issue - logs are rotated and historical data may be lost if you wait.
 - Include a clear description of the issue in the bundle so support engineers understand the context.
-- Share the bundle via a private channel — it contains cluster topology and configuration information.
+- Share the bundle via a private channel - it contains cluster topology and configuration information.
 - Run support bundle generation before performing risky operations (upgrades, node removals) as a baseline snapshot.

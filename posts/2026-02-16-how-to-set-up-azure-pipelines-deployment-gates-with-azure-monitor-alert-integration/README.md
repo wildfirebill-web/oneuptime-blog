@@ -52,6 +52,7 @@ First, make sure you have relevant alert rules in Azure Monitor. Here is how to 
 
 ```bash
 # Create a metric alert that fires when HTTP 5xx errors exceed 10 in 5 minutes
+
 az monitor metrics alert create \
   --name "High-Error-Rate-WebApp" \
   --resource-group "production-rg" \

@@ -18,6 +18,7 @@ The most straightforward approach is storing credentials as repository secrets. 
 
 ```yaml
 # .github/workflows/terraform.yml
+
 name: Terraform
 
 on:

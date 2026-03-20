@@ -25,6 +25,7 @@ SUSE Observability (formerly StackState) provides topology-aware observability f
 
 ```bash
 # Add the Helm chart repository
+
 helm repo add suse-observability https://charts.rancher.com/server-charts/prime/suse-observability
 helm repo update
 
@@ -185,6 +186,6 @@ In the Observability UI:
 
 ## Best Practices
 
-- Use a dedicated StorageClass with SSD-backed volumes for Elasticsearch and Kafka — these are I/O intensive components.
+- Use a dedicated StorageClass with SSD-backed volumes for Elasticsearch and Kafka - these are I/O intensive components.
 - Set the `apiKey` value as a Kubernetes Secret rather than hardcoding it in the values file.
-- Install the SUSE Observability agent on every cluster you want to monitor — each cluster needs its own agent deployment.
+- Install the SUSE Observability agent on every cluster you want to monitor - each cluster needs its own agent deployment.

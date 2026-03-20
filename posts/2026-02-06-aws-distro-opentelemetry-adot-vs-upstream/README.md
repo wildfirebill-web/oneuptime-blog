@@ -116,6 +116,7 @@ Enable the ADOT add-on through the AWS CLI:
 
 ```bash
 # Install the ADOT add-on for your EKS cluster
+
 # This deploys the collector as a managed component
 aws eks create-addon \
   --cluster-name my-cluster \

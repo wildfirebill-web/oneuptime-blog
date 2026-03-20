@@ -29,6 +29,7 @@ First, initialize your project and install the required dependencies.
 
 ```bash
 # Initialize a new npm project
+
 npm init -y
 
 # Install TypeScript and Webpack

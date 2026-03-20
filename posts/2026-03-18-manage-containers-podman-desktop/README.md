@@ -20,6 +20,7 @@ The Containers tab in Podman Desktop shows all containers on your system.
 
 ```bash
 # CLI equivalent: list all containers (running and stopped)
+
 podman ps -a
 
 # List only running containers

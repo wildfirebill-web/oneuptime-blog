@@ -27,6 +27,7 @@ Before switching, you need to know what contexts are available:
 
 ```bash
 # List all available contexts
+
 talosctl config contexts
 ```
 

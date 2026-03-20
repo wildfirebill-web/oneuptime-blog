@@ -18,6 +18,7 @@ Let us start with a minimal workflow that runs an Ansible playbook when you push
 
 ```yaml
 # .github/workflows/ansible-deploy.yml
+
 name: Run Ansible Playbook
 
 on:

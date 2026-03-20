@@ -27,6 +27,7 @@ First, you need to get network policy violations into your telemetry pipeline. C
 
 ```yaml
 # Deploy the OpenTelemetry Collector with Cilium Hubble receiver
+
 # otel-collector-daemonset.yaml
 apiVersion: apps/v1
 kind: DaemonSet

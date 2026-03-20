@@ -158,6 +158,7 @@ The repository is available on GitHub. To set it up:
 
 ```bash
 # Clone the developer portal repository
+
 git clone https://github.com/Azure/api-management-developer-portal.git
 cd api-management-developer-portal
 

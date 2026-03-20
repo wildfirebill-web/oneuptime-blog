@@ -43,6 +43,7 @@ Here is a comprehensive ansible.cfg with all plugin paths configured:
 
 ```ini
 # ansible.cfg
+
 [defaults]
 # Module path (custom modules)
 library = ./library:/opt/shared/ansible/modules

@@ -30,6 +30,7 @@ The DISA Kubernetes STIG (STIG ID: K8S) covers:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml - API server STIG settings
+
 kube-apiserver-arg:
   # STIG V-242390: Disable anonymous authentication
   - "anonymous-auth=false"

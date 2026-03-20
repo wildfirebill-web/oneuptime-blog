@@ -43,6 +43,7 @@ For Python applications:
 
 ```python
 # Set the version when initializing Cloud Profiler
+
 import googlecloudprofiler
 
 # Use the git commit hash or deployment tag as the version

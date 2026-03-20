@@ -24,6 +24,7 @@ Design your cluster with a mix of On-Demand nodes for critical system components
 
 ```yaml
 # cluster-config.yaml
+
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

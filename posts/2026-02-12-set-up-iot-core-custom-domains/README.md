@@ -49,6 +49,7 @@ You have two options for the server certificate: use AWS Certificate Manager (AC
 
 ```bash
 # Request a certificate from ACM for your IoT domain
+
 aws acm request-certificate \
   --domain-name "iot.yourcompany.com" \
   --validation-method DNS \

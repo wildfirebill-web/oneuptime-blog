@@ -27,6 +27,7 @@ graph TD
 
 ```bash
 # Check available platforms
+
 docker buildx ls
 
 # Create a builder with multi-platform support

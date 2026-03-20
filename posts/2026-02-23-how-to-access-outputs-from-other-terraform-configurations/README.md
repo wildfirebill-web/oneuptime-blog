@@ -20,6 +20,7 @@ The `terraform_remote_state` data source reads the state file of another Terrafo
 # application/main.tf
 
 # Read outputs from the networking configuration
+
 data "terraform_remote_state" "network" {
   backend = "s3"
 

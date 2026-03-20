@@ -21,6 +21,7 @@ Check the Collector's GC stats:
 
 ```bash
 # Enable GC debug logging
+
 GODEBUG=gctrace=1 ./otelcol-contrib --config config.yaml
 ```
 

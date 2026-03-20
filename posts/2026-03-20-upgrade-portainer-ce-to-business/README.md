@@ -1,4 +1,4 @@
-# How to Upgrade from Portainer CE to Business Edition
+# How to Upgrade from Portainer CE to Business Edition - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Back up your Portainer data volume before proceeding:
 
 ```bash
 # Create a backup tar of the Portainer data volume before upgrading
+
 docker run --rm \
   -v portainer_data:/data \
   -v $(pwd):/backup \

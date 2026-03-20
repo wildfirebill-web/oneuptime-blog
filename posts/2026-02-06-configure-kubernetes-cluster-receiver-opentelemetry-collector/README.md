@@ -48,6 +48,7 @@ Start with a minimal configuration:
 
 ```yaml
 # Basic Kubernetes Cluster Receiver configuration
+
 # Requires RBAC permissions to list and watch cluster resources
 receivers:
   k8s_cluster:
@@ -148,7 +149,7 @@ Node conditions provide binary status (true/false) about node health. The receiv
 
 Allocatable resources show what's available for scheduling after accounting for system daemons and Kubernetes components.
 
-## Resource Distribution Metrics
+Resource Distribution Metrics
 
 Track how resources are distributed across nodes:
 
@@ -436,7 +437,7 @@ roleRef:
 
 These are read-only permissions. The receiver never modifies cluster state.
 
-## Resource Filtering
+Resource Filtering
 
 Collect metrics for specific resources:
 

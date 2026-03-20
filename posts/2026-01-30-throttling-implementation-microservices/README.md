@@ -1063,6 +1063,7 @@ Track throttling metrics to understand system behavior and tune limits.
 
 ```yaml
 # Prometheus metrics for throttling
+
 # Add these to your service metrics
 
 # Counter: Total requests by throttle decision

@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Troubleshooting, Virtual Machines, KVM, VMware, NDP, SLAAC
+Tags: IPv6, Troubleshooting, Virtual Machine, KVM, VMware, NDP, SLAAC
 
 Description: Diagnose and resolve common IPv6 connectivity problems in virtual machine environments, covering address assignment failures, NDP issues, routing problems, and hypervisor-specific configurations.
 
 ## Introduction
 
-IPv6 connectivity problems in virtual machine environments arise from multiple layers: the hypervisor virtual switch, the host kernel's bridge/forwarding configuration, the guest OS network stack, and the physical network. A systematic diagnostic approach — starting from address assignment and working up the stack — identifies the failure point quickly.
+IPv6 connectivity problems in virtual machine environments arise from multiple layers: the hypervisor virtual switch, the host kernel's bridge/forwarding configuration, the guest OS network stack, and the physical network. A systematic diagnostic approach - starting from address assignment and working up the stack - identifies the failure point quickly.
 
 ## Common IPv6 VM Issues
 
-```
+```nginx
 Problem Categories:
 │
 ├─ No IPv6 address assigned
@@ -39,6 +39,7 @@ Problem Categories:
 
 ```bash
 # Inside the VM: check IPv6 addresses
+
 ip -6 addr show
 
 # Expected output for a working VM:
@@ -47,7 +48,7 @@ ip -6 addr show
 #        valid_lft 86299sec preferred_lft 14299sec
 #     inet6 fe80::5054:ff:feab:cd01/64 scope link
 
-# If only link-local (fe80::) — SLAAC/DHCPv6 not working:
+# If only link-local (fe80::) - SLAAC/DHCPv6 not working:
 # Check if Router Advertisements are being received
 tcpdump -i eth0 -n -c5 "icmp6 and icmp6[0] == 134"
 # Type 134 = Router Advertisement
@@ -136,8 +137,8 @@ traceroute6 2001:4860:4860::8888
 
 ```bash
 # Test MTU with different packet sizes
-ping6 -s 100 2001:4860:4860::8888    # Small — should work
-ping6 -s 1400 2001:4860:4860::8888  # Large — may fail if MTU issue
+ping6 -s 100 2001:4860:4860::8888    # Small - should work
+ping6 -s 1400 2001:4860:4860::8888  # Large - may fail if MTU issue
 ping6 -M do -s 1452 2001:4860:4860::8888  # DF-bit set
 
 # If large packets fail: MTU mismatch (likely due to overlay encapsulation)

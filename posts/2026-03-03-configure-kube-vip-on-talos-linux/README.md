@@ -26,6 +26,7 @@ Talos Linux has built-in VIP support that works similarly to kube-vip. You can c
 
 ```yaml
 # talos-controlplane.yaml
+
 machine:
   network:
     interfaces:

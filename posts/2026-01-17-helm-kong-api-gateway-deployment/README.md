@@ -63,6 +63,7 @@ flowchart TB
 
 ```bash
 # Add Kong Helm repository
+
 helm repo add kong https://charts.konghq.com
 helm repo update
 

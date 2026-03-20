@@ -26,6 +26,7 @@ Confirm that Calico is fully operational before adding Cilium.
 
 ```bash
 # Check Calico node status
+
 kubectl get pods -n calico-system
 # or for older installations:
 kubectl get pods -n kube-system | grep calico

@@ -21,6 +21,7 @@ Every metric and trace we collect should carry these attributes for proper slice
 
 ```python
 # slice_metrics.py
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("network.slice")

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, IPv4, Monitoring, Health Check, Python, Node.js
+Tags: WebSocket, IPv4, Monitoring, Health Checks, Python, Node.js
 
 Description: Learn how to monitor WebSocket connection health over IPv4 using ping/pong keepalives, connection counters, Prometheus metrics, and external health check probes.
 
@@ -42,6 +42,7 @@ async def handler(ws):
         stats.total_disconnected += 1
 
 # Health endpoint served over regular HTTP
+
 from aiohttp import web
 
 async def health(request):
@@ -145,4 +146,4 @@ asyncio.run(main())
 
 ## Conclusion
 
-Expose a separate HTTP health endpoint alongside the WebSocket server — Kubernetes liveness probes and monitoring systems can query it without maintaining a WebSocket connection. Export Prometheus metrics for active connection count, message throughput, and error rates. Use server-side ping/pong (`ping_interval` in `websockets.serve`) to detect dead connections and clean up the client registry. Build an external probe that connects, sends a test message, and verifies the response for end-to-end health verification.
+Expose a separate HTTP health endpoint alongside the WebSocket server - Kubernetes liveness probes and monitoring systems can query it without maintaining a WebSocket connection. Export Prometheus metrics for active connection count, message throughput, and error rates. Use server-side ping/pong (`ping_interval` in `websockets.serve`) to detect dead connections and clean up the client registry. Build an external probe that connects, sends a test message, and verifies the response for end-to-end health verification.

@@ -101,6 +101,7 @@ Track rotation events through the proxy logs:
 
 ```bash
 # Watch for certificate rotation in sidecar logs
+
 kubectl logs <pod-name> -c istio-proxy -f | grep -i "SDS"
 ```
 
@@ -153,7 +154,7 @@ kubectl exec <pod-name> -c istio-proxy -- \
   cut -d. -f2 | base64 -d 2>/dev/null | python3 -m json.tool
 ```
 
-### Resource Limits
+Resource Limits
 
 If istiod is resource-constrained, it might not be able to process CSRs fast enough:
 

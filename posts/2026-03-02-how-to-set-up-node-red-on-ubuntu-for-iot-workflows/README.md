@@ -22,6 +22,7 @@ Node-RED requires Node.js. The version from Ubuntu's default repositories is oft
 
 ```bash
 # Install Node.js 20.x via NodeSource
+
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt-get install -y nodejs
 

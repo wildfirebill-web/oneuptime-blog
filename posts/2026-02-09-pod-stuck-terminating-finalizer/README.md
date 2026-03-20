@@ -26,6 +26,7 @@ Check for pods stuck in Terminating state across your cluster.
 
 ```bash
 # Find terminating pods
+
 kubectl get pods --all-namespaces --field-selector=status.phase=Running | \
   grep Terminating
 

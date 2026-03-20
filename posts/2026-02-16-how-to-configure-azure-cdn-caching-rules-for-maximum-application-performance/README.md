@@ -37,6 +37,7 @@ Here is how to set a global caching rule using Azure CLI that forces a specific 
 
 ```bash
 # Set a global caching rule to cache all content for 7 days
+
 # Override means ignore origin cache headers
 az cdn endpoint rule add \
   --resource-group myResourceGroup \

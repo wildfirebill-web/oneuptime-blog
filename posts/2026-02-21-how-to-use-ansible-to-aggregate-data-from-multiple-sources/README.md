@@ -14,6 +14,7 @@ Modern infrastructure data lives in many places: CMDBs, cloud APIs, monitoring s
 
 ```yaml
 # playbook-multi-api.yml
+
 # Pulls data from three different APIs and combines into a single inventory
 - name: Aggregate from multiple APIs
   hosts: localhost

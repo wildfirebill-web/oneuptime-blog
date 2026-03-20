@@ -29,6 +29,7 @@ Install cert-manager using Helm. This deploys the cert-manager controller, webho
 
 ```bash
 # Add the Jetstack Helm repository (cert-manager maintainers)
+
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
 

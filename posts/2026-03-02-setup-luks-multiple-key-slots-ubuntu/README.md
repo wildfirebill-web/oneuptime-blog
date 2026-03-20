@@ -43,6 +43,7 @@ To see which slots are in use on an existing LUKS volume:
 
 ```bash
 # For LUKS1
+
 sudo cryptsetup luksDump /dev/sdb1
 
 # For LUKS2

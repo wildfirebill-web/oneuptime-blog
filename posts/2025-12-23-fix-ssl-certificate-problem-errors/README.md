@@ -270,6 +270,7 @@ For Docker containers, add certificates at build time:
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
 # Copy and trust internal CA certificate
+
 COPY certs/internal-ca.crt /usr/local/share/ca-certificates/
 RUN update-ca-certificates
 

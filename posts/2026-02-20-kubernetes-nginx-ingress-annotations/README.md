@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, NGINX, Ingresses, Annotations, Configuration
+Tags: Kubernetes, Nginx, Ingresses, Annotations, Configuration
 
 Description: A practical reference guide to the most useful Nginx Ingress Controller annotations for rate limiting, rewrites, SSL, and more.
 
@@ -34,6 +34,7 @@ Redirect all HTTP traffic to HTTPS:
 
 ```yaml
 # https-redirect.yaml
+
 # Force all traffic to use HTTPS
 apiVersion: networking.k8s.io/v1
 kind: Ingress

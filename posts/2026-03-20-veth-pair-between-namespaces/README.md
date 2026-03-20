@@ -8,7 +8,7 @@ Description: Create virtual ethernet (veth) pairs and move each end into separat
 
 ## Introduction
 
-A veth (virtual ethernet) pair is a pair of virtual network interfaces that are connected like a pipe — packets sent into one end come out the other. By placing each end of a veth pair in a different network namespace, you create a point-to-point link between two otherwise isolated network environments. This is how container runtimes connect containers to a host bridge.
+A veth (virtual ethernet) pair is a pair of virtual network interfaces that are connected like a pipe - packets sent into one end come out the other. By placing each end of a veth pair in a different network namespace, you create a point-to-point link between two otherwise isolated network environments. This is how container runtimes connect containers to a host bridge.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ A veth (virtual ethernet) pair is a pair of virtual network interfaces that are 
 
 ```bash
 # Create two namespaces
+
 ip netns add ns1
 ip netns add ns2
 
@@ -29,7 +30,7 @@ ip netns list
 
 ## Step 2: Create a veth Pair
 
-Create the veth pair on the host — both interfaces start in the host (default) namespace:
+Create the veth pair on the host - both interfaces start in the host (default) namespace:
 
 ```bash
 # Create a veth pair: veth0 and veth1 are linked

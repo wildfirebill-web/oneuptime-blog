@@ -32,6 +32,7 @@ Key characteristics of Rego:
 
 ```bash
 # macOS
+
 brew install opa
 
 # Linux (download binary)

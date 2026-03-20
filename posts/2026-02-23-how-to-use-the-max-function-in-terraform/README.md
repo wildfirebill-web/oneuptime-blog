@@ -16,6 +16,7 @@ The `max` function takes one or more numbers as arguments and returns the greate
 
 ```hcl
 # max(number1, number2, ...)
+
 # Returns the largest number
 max(5, 12, 3)  # Returns: 12
 max(1, 1, 1)   # Returns: 1

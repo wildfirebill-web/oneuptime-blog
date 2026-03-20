@@ -28,6 +28,7 @@ graph TB
 # istio.tf
 
 # Step 1: Install Istio base (CRDs)
+
 resource "helm_release" "istio_base" {
   name             = "istio-base"
   repository       = "https://istio-release.storage.googleapis.com/charts"
@@ -219,8 +220,8 @@ resource "kubernetes_manifest" "virtual_service" {
 
 ## Best Practices
 
-- Install Istio in the order: base (CRDs) → istiod → gateways — use `depends_on` to enforce this.
+- Install Istio in the order: base (CRDs) → istiod → gateways - use `depends_on` to enforce this.
 - Enable `STRICT` mTLS mode at the mesh level and use `PERMISSIVE` temporarily during migration to avoid breaking existing traffic.
-- Set sidecar proxy resource limits — without them, proxies consume unbounded memory on high-traffic services.
-- Use `kubernetes_manifest` for Istio CRD resources (Gateway, VirtualService, PeerAuthentication) — these aren't covered by standard Kubernetes providers.
-- Pin Helm chart versions and test Istio upgrades in staging first — Istio upgrades can break traffic routing if versions are mismatched.
+- Set sidecar proxy resource limits - without them, proxies consume unbounded memory on high-traffic services.
+- Use `kubernetes_manifest` for Istio CRD resources (Gateway, VirtualService, PeerAuthentication) - these aren't covered by standard Kubernetes providers.
+- Pin Helm chart versions and test Istio upgrades in staging first - Istio upgrades can break traffic routing if versions are mismatched.

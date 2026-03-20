@@ -31,6 +31,7 @@ The Envoy-based internal load balancer needs a dedicated proxy-only subnet. This
 
 ```bash
 # Create a proxy-only subnet in the same region as your load balancer
+
 gcloud compute networks subnets create proxy-only-subnet \
     --purpose=REGIONAL_MANAGED_PROXY \
     --role=ACTIVE \

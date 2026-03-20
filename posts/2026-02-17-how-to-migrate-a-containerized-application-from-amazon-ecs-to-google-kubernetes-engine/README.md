@@ -36,6 +36,7 @@ Set up the GKE cluster that will host your workloads:
 
 ```bash
 # Create a GKE Autopilot cluster (managed node scaling)
+
 gcloud container clusters create-auto ecs-migration-cluster \
   --region=us-central1 \
   --project=PROJECT_ID

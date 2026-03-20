@@ -17,6 +17,7 @@ DynamoDB is AWS's fully managed NoSQL database, and it is one of those services 
 
 ```bash
 # Install the required collections
+
 ansible-galaxy collection install amazon.aws community.aws
 ```
 

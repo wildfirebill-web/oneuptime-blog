@@ -228,6 +228,7 @@ Alternatively, if each tenant has a separate deployment:
 
 ```yaml
 # Generated per tenant
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

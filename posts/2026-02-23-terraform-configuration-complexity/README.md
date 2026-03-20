@@ -49,6 +49,7 @@ Each directory gets its own state file and its own plan/apply cycle. The benefit
 
 ```hcl
 # application/main.tf
+
 # Only references foundation outputs, does not manage networking
 
 data "terraform_remote_state" "foundation" {

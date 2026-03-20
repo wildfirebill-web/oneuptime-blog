@@ -20,6 +20,7 @@ The random_id resource generates a specified number of random bytes and makes th
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

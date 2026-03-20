@@ -34,6 +34,7 @@ The simplest way to authenticate is using the session endpoint. This is identica
 
 ```bash
 # Authenticate and get a session token
+
 curl -s -k https://argocd.example.com/api/v1/session \
   -H "Content-Type: application/json" \
   -d '{

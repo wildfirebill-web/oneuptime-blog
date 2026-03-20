@@ -37,6 +37,7 @@ The best time to add labels is when you create the resource. Here is how to labe
 
 ```yaml
 # create-labeled-vm.yml - Create a VM with comprehensive labels
+
 ---
 - name: Create Labeled VM Instance
   hosts: localhost

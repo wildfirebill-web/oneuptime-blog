@@ -18,6 +18,7 @@ Proper exception handling separates robust applications from fragile ones. Pytho
 
 ```python
 # Basic exception handling
+
 try:
     result = 10 / 0
 except ZeroDivisionError:

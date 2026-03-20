@@ -27,6 +27,7 @@ Check the key policy first.
 
 ```bash
 # Retrieve the key policy to see who has access
+
 aws kms get-key-policy \
   --key-id arn:aws:kms:us-east-1:123456789012:key/abcd1234 \
   --policy-name default \

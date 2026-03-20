@@ -26,6 +26,7 @@ Cloud Scheduler is the simplest replacement for cron. It is a fully managed job 
 
 ```bash
 # Create a Cloud Scheduler job that triggers an HTTP endpoint
+
 gcloud scheduler jobs create http daily-report \
   --schedule "0 6 * * *" \
   --uri "https://us-central1-my-project.cloudfunctions.net/generate-daily-report" \

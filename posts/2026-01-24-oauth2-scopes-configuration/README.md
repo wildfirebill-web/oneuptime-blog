@@ -571,6 +571,7 @@ sequenceDiagram
 
 ```python
 # scope_manager.py
+
 # Python implementation of OAuth2 scope management
 
 from typing import List, Dict, Set, Optional, Any

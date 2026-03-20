@@ -50,6 +50,7 @@ Generate intermediate CAs for each mesh (5-year validity):
 
 ```bash
 # Generate key and CSR for mesh-west
+
 openssl req -new -newkey rsa:4096 -nodes \
   -keyout west-key.pem \
   -out west-csr.pem \

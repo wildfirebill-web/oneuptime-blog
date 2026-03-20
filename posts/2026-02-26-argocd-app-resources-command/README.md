@@ -46,6 +46,7 @@ The JSON output includes full details for each resource:
 
 ```bash
 # Get resource names only
+
 argocd app resources my-app -o json | jq '.[].name'
 
 # Get resources with their health status
@@ -107,7 +108,7 @@ argocd app resources my-app --kind Service --namespace production
 
 ## Practical Use Cases
 
-### Resource Inventory Report
+Resource Inventory Report
 
 ```bash
 #!/bin/bash
@@ -211,7 +212,7 @@ echo "In production but not in staging:"
 diff <(echo "$STAGING_RESOURCES") <(echo "$PROD_RESOURCES") | grep "^>" | sed 's/^> /  /'
 ```
 
-## Resource Actions from Resources List
+Resource Actions from Resources List
 
 After identifying resources with `argocd app resources`, you can take action on specific ones:
 

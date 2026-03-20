@@ -22,6 +22,7 @@ The failover connector monitors export errors on the primary pipeline. When the 
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

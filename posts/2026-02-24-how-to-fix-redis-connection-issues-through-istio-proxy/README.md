@@ -176,6 +176,7 @@ Measure the overhead:
 
 ```bash
 # From inside the pod, directly to Redis (bypassing proxy)
+
 kubectl exec <pod-name> -c my-app -- redis-cli -h 127.0.0.1 -p 6379 --latency-history
 
 # Through the service name (going through proxy)

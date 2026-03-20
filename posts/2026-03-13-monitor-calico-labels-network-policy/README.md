@@ -27,6 +27,7 @@ This guide shows you how to set up monitoring for label-based Calico policies, i
 
 ```promql
 # Count pods missing the tier label
+
 count(kube_pod_info) - count(kube_pod_labels{label_tier!=""})
 
 # Percentage of pods with required labels

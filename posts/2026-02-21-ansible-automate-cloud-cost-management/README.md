@@ -30,6 +30,7 @@ Tags are the foundation of cost allocation. Without them, you cannot tell which 
 
 ```yaml
 # enforce-tags.yml - Find and tag untagged EC2 instances
+
 ---
 - name: Enforce AWS resource tagging
   hosts: localhost

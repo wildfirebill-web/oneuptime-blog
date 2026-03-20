@@ -32,6 +32,7 @@ Set up the network infrastructure:
 
 ```bash
 # Create a VPC network
+
 gcloud compute networks create private-network \
   --subnet-mode=custom
 

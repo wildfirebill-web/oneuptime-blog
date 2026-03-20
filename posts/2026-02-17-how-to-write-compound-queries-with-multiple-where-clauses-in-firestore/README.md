@@ -206,6 +206,7 @@ The easiest way. Run your query, get the error message, click the link. Firestor
 
 ```bash
 # Create a composite index for querying by category and price
+
 gcloud firestore indexes composite create \
     --collection-group=products \
     --field-config=field-path=category,order=ASCENDING \

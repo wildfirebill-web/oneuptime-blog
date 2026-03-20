@@ -34,6 +34,7 @@ Before enabling large file shares, verify your storage account's current setting
 
 ```bash
 # Check the current configuration
+
 az storage account show \
   --name stfiles2026 \
   --resource-group rg-files \

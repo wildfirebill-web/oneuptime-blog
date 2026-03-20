@@ -16,6 +16,7 @@ Artillery runs on Node.js and can be installed globally or as a project dependen
 
 ```bash
 # Install globally for quick testing
+
 npm install -g artillery
 
 # Or as a dev dependency (recommended for projects)

@@ -12,6 +12,7 @@ Ansible can automate IPv6 connectivity testing across large server fleets, provi
 
 ```yaml
 # test-ping6.yml - Test IPv6 reachability to specified targets
+
 ---
 - name: Test IPv6 ICMP connectivity
   hosts: all

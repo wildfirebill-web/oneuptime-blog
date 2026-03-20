@@ -51,6 +51,7 @@ S3 is typically the highest-volume data transfer target. Start here for maximum 
 
 ```bash
 # Get your VPC ID and route table IDs
+
 VPC_ID=$(aws ec2 describe-vpcs \
   --filters "Name=isDefault,Values=false" \
   --query 'Vpcs[0].VpcId' \

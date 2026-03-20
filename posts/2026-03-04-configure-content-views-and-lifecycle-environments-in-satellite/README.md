@@ -16,6 +16,7 @@ Lifecycle environments form a promotion path. Content moves through them sequent
 
 ```bash
 # Create the Development environment (parent is Library)
+
 hammer lifecycle-environment create \
     --name "Development" \
     --prior "Library" \

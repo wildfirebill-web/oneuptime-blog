@@ -33,6 +33,7 @@ First, create an OAC:
 
 ```bash
 # Create an Origin Access Control
+
 aws cloudfront create-origin-access-control \
     --origin-access-control-config '{
         "Name": "my-s3-oac",

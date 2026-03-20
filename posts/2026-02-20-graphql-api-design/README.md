@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, API Design, Schema, Resolvers, Backend
+Tags: GraphQL, API Design, Schema, Resolver, Backend
 
 Description: Learn how to design and build GraphQL APIs including schema design, resolvers, pagination, and error handling.
 
@@ -30,6 +30,7 @@ A single GraphQL query can replace multiple REST calls:
 
 ```graphql
 # One query fetches user, their orders, and order items
+
 query {
   user(id: "1") {
     name

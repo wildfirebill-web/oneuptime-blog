@@ -26,6 +26,7 @@ Master servers should run with at least three replicas for high availability usi
 
 ```yaml
 # seaweedfs-master-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

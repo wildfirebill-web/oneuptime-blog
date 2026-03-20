@@ -19,6 +19,7 @@ go version
 # go version go1.22.0 darwin/amd64
 
 # Also need Node.js for CDKTF CLI
+
 node --version
 
 # And the CDKTF CLI

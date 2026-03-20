@@ -12,9 +12,9 @@ IAM policies control what actions users, roles, and services can perform in AWS.
 
 ## Types of IAM Policies
 
-- **Managed Policies** — Standalone policies attachable to multiple identities
-- **Inline Policies** — Embedded directly into a user, group, or role
-- **AWS Managed Policies** — Pre-built policies maintained by AWS
+- **Managed Policies** - Standalone policies attachable to multiple identities
+- **Inline Policies** - Embedded directly into a user, group, or role
+- **AWS Managed Policies** - Pre-built policies maintained by AWS
 
 ## Defining a Custom Managed Policy
 
@@ -115,11 +115,11 @@ resource "aws_iam_policy" "mfa_required" {
 
 ## Best Practices
 
-1. **Least privilege** — Grant only the permissions needed for the task
-2. **Avoid wildcards** — Prefer specific actions and resources over `*`
-3. **Use conditions** — Restrict by IP, MFA, time, or other context
-4. **Separate managed vs inline** — Use managed policies for reuse; inline for one-off restrictions
-5. **Audit regularly** — Use AWS Access Analyzer to detect overly permissive policies
+1. **Least privilege** - Grant only the permissions needed for the task
+2. **Avoid wildcards** - Prefer specific actions and resources over `*`
+3. **Use conditions** - Restrict by IP, MFA, time, or other context
+4. **Separate managed vs inline** - Use managed policies for reuse; inline for one-off restrictions
+5. **Audit regularly** - Use AWS Access Analyzer to detect overly permissive policies
 
 ## Conclusion
 

@@ -30,6 +30,7 @@ This is the most common cause. The S3 origin domain must use the regional endpoi
 
 ```hcl
 # WRONG - using the global S3 endpoint
+
 resource "aws_cloudfront_distribution" "cdn" {
   origin {
     domain_name = "my-bucket.s3.amazonaws.com"  # This can cause issues

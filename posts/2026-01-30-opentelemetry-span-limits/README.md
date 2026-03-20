@@ -117,6 +117,7 @@ The simplest approach uses environment variables:
 
 ```bash
 # Set span limits via environment
+
 export OTEL_SPAN_ATTRIBUTE_COUNT_LIMIT=64
 export OTEL_SPAN_EVENT_COUNT_LIMIT=64
 export OTEL_SPAN_LINK_COUNT_LIMIT=64

@@ -371,6 +371,7 @@ flowchart LR
 
 ```nginx
 # Nginx configuration for WebSocket support
+
 upstream websocket_backend {
     server 127.0.0.1:8080;
 }

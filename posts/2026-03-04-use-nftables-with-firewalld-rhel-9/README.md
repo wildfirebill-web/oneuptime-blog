@@ -102,6 +102,7 @@ firewalld has a "direct" interface that lets you insert raw rules. However, this
 
 ```bash
 # Add a direct rule (deprecated but still works)
+
 firewall-cmd --permanent --direct --add-rule inet filter INPUT 0 -s 203.0.113.0/24 -j DROP
 firewall-cmd --reload
 ```

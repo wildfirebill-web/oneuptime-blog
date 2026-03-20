@@ -16,6 +16,7 @@ kubectl searches your PATH for executables matching `kubectl-*`. When you run `k
 
 ```bash
 # Create a simple plugin
+
 cat > kubectl-hello << 'EOF'
 #!/bin/bash
 echo "Hello from kubectl plugin!"

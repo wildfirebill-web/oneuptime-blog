@@ -39,6 +39,7 @@ The most common reason is simply timing. ArgoCD does not watch your Git repo in 
 
 ```bash
 # Force ArgoCD to refresh immediately
+
 argocd app get my-app --hard-refresh
 
 # Or trigger a refresh from the UI (click Refresh then Hard Refresh)

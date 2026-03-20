@@ -28,6 +28,7 @@ Create a simple mapping that routes requests to a backend service:
 
 ```yaml
 # basic-mapping.yaml
+
 apiVersion: getambassador.io/v3alpha1
 kind: Mapping
 metadata:

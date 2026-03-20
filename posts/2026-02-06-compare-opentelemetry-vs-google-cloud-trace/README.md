@@ -77,6 +77,7 @@ For Python applications:
 
 ```python
 # Python application sending traces to Google Cloud Trace
+
 # Uses the opentelemetry-exporter-gcp-trace package
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

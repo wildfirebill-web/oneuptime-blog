@@ -1,4 +1,4 @@
-# How to Set Up a Custom OAuth Provider with Portainer
+# How to Set Up a Custom OAuth Provider with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure Portainer to use any OIDC-compatible OAuth provider inclu
 
 ## Introduction
 
-Portainer's custom OAuth option allows integration with any OAuth 2.0 / OpenID Connect provider. Whether you're using a self-hosted IdP like Keycloak, a cloud service like Okta, or a custom solution, the configuration process is the same — you need five pieces of information from your provider and one redirect URI to register.
+Portainer's custom OAuth option allows integration with any OAuth 2.0 / OpenID Connect provider. Whether you're using a self-hosted IdP like Keycloak, a cloud service like Okta, or a custom solution, the configuration process is the same - you need five pieces of information from your provider and one redirect URI to register.
 
 ## What You Need from Your OAuth Provider
 
@@ -25,6 +25,7 @@ Most modern OIDC providers publish their endpoints at a well-known URL:
 
 ```bash
 # Get all endpoints automatically via discovery
+
 ISSUER_URL="https://idp.example.com"
 curl -s "${ISSUER_URL}/.well-known/openid-configuration" | python3 -m json.tool
 

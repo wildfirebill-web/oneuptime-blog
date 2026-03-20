@@ -38,6 +38,7 @@ This playbook installs SOPS:
 
 ```yaml
 # install_sops.yml - Install Mozilla SOPS
+
 ---
 - name: Install SOPS
   hosts: localhost

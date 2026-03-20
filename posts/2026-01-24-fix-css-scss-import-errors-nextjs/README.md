@@ -32,6 +32,7 @@ One of the most frequent errors is attempting to import global CSS from a compon
 
 ```bash
 # Error message
+
 ./styles/globals.css
 Global CSS cannot be imported from files other than your Custom <App>.
 Due to the Global nature of stylesheets, and to avoid conflicts,

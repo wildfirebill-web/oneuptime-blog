@@ -29,6 +29,7 @@ The simplest way to install Redis is from the default package repositories:
 
 ```bash
 # Update package index
+
 sudo apt update
 
 # Install Redis server

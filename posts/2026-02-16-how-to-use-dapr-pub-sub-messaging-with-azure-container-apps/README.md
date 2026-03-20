@@ -27,6 +27,7 @@ Azure Service Bus is the most common pub/sub backend for production workloads on
 
 ```bash
 # Create a Service Bus namespace
+
 az servicebus namespace create \
   --name my-servicebus-ns \
   --resource-group my-rg \

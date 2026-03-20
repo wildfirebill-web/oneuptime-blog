@@ -411,6 +411,7 @@ new LazyLoader();
 
 ```bash
 # Using pyftsubset to create subset containing only needed characters
+
 pyftsubset font.ttf \
   --output-file=font-subset.woff2 \
   --flavor=woff2 \

@@ -46,6 +46,7 @@ When AKS detects this ConfigMap, it merges your custom configuration into the Co
 
 ```bash
 # Check if any custom CoreDNS config already exists
+
 kubectl get configmap coredns-custom -n kube-system 2>/dev/null
 
 # View the current CoreDNS configuration

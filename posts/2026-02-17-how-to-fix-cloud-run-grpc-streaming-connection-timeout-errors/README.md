@@ -24,6 +24,7 @@ This is the most basic requirement and the first thing to check. By default, Clo
 
 ```bash
 # Check if HTTP/2 is enabled
+
 gcloud run services describe my-grpc-service \
     --region=us-central1 \
     --format="value(spec.template.metadata.annotations['run.googleapis.com/launch-stage'])"

@@ -1,4 +1,4 @@
-# How to Set Up DNS-Based Service Discovery in Portainer
+# How to Set Up DNS-Based Service Discovery in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,7 +30,7 @@ Configure DNS-based service discovery for containers in Portainer using Docker's
 
 Design your network topology before implementation:
 
-```
+```text
 Internet
    |
 [Nginx/Traefik] (DMZ network)
@@ -48,6 +48,7 @@ Navigate to **Networks** > **Add Network**:
 
 ```yaml
 # Define networks in your stack
+
 version: "3.8"
 
 networks:

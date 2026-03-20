@@ -34,6 +34,7 @@ Total time the container was throttled:
 
 ```promql
 # Total throttled time
+
 container_cpu_cfs_throttled_seconds_total{container!="", container!="POD"}
 ```
 

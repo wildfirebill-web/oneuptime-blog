@@ -26,6 +26,7 @@ Create a new EKS cluster with `eksctl`:
 
 ```bash
 # Create an EKS cluster with two managed node groups
+
 eksctl create cluster \
   --name flagger-demo \
   --region us-west-2 \

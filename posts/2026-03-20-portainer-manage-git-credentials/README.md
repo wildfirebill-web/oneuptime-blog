@@ -19,9 +19,9 @@ Portainer Business Edition allows you to store Git credentials centrally and reu
 ## Types of Git Authentication
 
 Portainer supports:
-1. **Username + Personal Access Token (PAT)** — Most common, works with all major Git providers
-2. **Username + Password** — Deprecated by most providers, not recommended
-3. **SSH Key** — For SSH-based Git URLs
+1. **Username + Personal Access Token (PAT)** - Most common, works with all major Git providers
+2. **Username + Password** - Deprecated by most providers, not recommended
+3. **SSH Key** - For SSH-based Git URLs
 
 ## Step 1: Generate a Personal Access Token
 
@@ -32,7 +32,7 @@ Portainer supports:
 3. Set expiration and permissions:
    - Repository access: Select specific repositories or all
    - Permissions: `Contents: Read` at minimum
-4. Copy the token — it's shown once
+4. Copy the token - it's shown once
 
 ### GitLab PAT
 
@@ -47,7 +47,7 @@ Portainer supports:
 3. Click **Add credentials**
 4. Fill in:
 
-```
+```text
 Name:     my-github-credentials
 Username: your-github-username
 Personal Access Token: ghp_your_token_here
@@ -70,6 +70,7 @@ When creating or editing a stack from a Git repository:
 
 ```bash
 # Get admin token
+
 TOKEN=$(curl -s -X POST \
   https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
@@ -120,7 +121,7 @@ When a PAT expires or is rotated:
 3. All stacks using the saved credential automatically use the new token
 4. Revoke the old PAT in your Git provider
 
-This is the key advantage of saved credentials — updating in one place updates all deployments.
+This is the key advantage of saved credentials - updating in one place updates all deployments.
 
 ## Sharing Credentials vs. Per-User Credentials
 

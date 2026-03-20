@@ -34,6 +34,7 @@ You need:
 
 ```bash
 # Create a new Pulumi project
+
 mkdir talos-pulumi && cd talos-pulumi
 pulumi new aws-typescript
 

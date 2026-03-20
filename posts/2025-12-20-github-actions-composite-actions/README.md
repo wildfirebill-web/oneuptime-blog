@@ -38,6 +38,7 @@ Create an action in your repository or a dedicated actions repository:
 
 ```yaml
 # .github/actions/setup-node-pnpm/action.yml
+
 name: 'Setup Node.js with pnpm'
 description: 'Sets up Node.js and pnpm with caching'
 

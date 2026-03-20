@@ -33,6 +33,7 @@ Set up your kubectl contexts:
 
 ```bash
 # Verify you can reach both clusters
+
 kubectl --context=cluster1 get nodes
 kubectl --context=cluster2 get nodes
 ```

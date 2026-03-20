@@ -38,6 +38,7 @@ The htpasswd file stores usernames and bcrypt-hashed passwords. Never use plain 
 
 ```bash
 # Create the auth directory
+
 mkdir -p auth
 
 # Generate htpasswd with bcrypt hashing using a Docker container

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx Ingress, MetalLB, Kubernetes, IPv4, Load Balancing, Networking
+Tags: NGINX Ingress, MetalLB, Kubernetes, IPv4, Load Balancing, Networking
 
 Description: Deploy the Nginx Ingress Controller on bare-metal Kubernetes with MetalLB providing an external IPv4 address for HTTP and HTTPS routing.
 
@@ -12,6 +12,7 @@ The Nginx Ingress Controller handles HTTP/HTTPS routing inside Kubernetes while 
 
 ```bash
 # Ensure MetalLB is installed and configured
+
 kubectl get ipaddresspool -n metallb-system
 kubectl get l2advertisement -n metallb-system
 

@@ -32,6 +32,7 @@ The easiest fix is to disable Python's output buffering entirely:
 
 ```dockerfile
 # Dockerfile
+
 FROM python:3.11-slim
 
 # Disable Python output buffering

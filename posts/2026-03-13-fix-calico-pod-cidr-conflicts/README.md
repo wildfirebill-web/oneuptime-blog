@@ -31,6 +31,7 @@ This process requires pod rescheduling, which means a brief disruption for each 
 calicoctl get ippool -o yaml
 kubectl get nodes -o wide
 # Confirm the specific overlap
+
 ```
 
 ## Solution

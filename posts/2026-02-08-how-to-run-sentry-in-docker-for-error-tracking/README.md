@@ -35,6 +35,7 @@ Self-hosted Sentry requires significant resources. The minimum recommendation is
 
 ```bash
 # Check available resources
+
 docker info --format '{{.MemTotal}}'
 docker --version
 docker compose version

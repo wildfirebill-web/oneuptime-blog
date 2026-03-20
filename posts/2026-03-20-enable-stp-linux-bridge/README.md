@@ -14,6 +14,7 @@ Spanning Tree Protocol (STP) prevents network loops in bridged networks by block
 
 ```bash
 # Enable STP on the bridge
+
 ip link set br0 type bridge stp_state 1
 
 # Verify STP is enabled

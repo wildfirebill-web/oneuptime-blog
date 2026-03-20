@@ -36,6 +36,7 @@ flux bootstrap github \
 
 ```yaml
 # contour-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

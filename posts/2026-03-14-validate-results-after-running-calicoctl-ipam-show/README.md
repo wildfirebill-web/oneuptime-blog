@@ -24,6 +24,7 @@ After running `calicoctl ipam show`, you need to verify that the output makes se
 
 ```bash
 # Run the command and capture output
+
 calicoctl ipam show  2>&1 | tee /tmp/ipam-output.txt
 
 # Check for errors in output

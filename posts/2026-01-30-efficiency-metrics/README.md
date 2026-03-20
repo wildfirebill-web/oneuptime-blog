@@ -200,6 +200,7 @@ class CostPerTransactionCalculator:
 
 
 # Example usage
+
 calculator = CostPerTransactionCalculator()
 
 # Add sample cost data
@@ -254,7 +255,7 @@ for category, metrics in breakdown.items():
     print(f"  {category}: ${metrics['total_cost']:,.2f} ({metrics['percentage_of_total']:.1f}%)")
 ```
 
-## Resource Utilization Ratios
+Resource Utilization Ratios
 
 Utilization ratios measure how effectively you use provisioned resources. Low utilization indicates overprovisioning, while consistently high utilization may indicate performance risks.
 

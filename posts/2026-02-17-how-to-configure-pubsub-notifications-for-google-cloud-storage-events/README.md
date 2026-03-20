@@ -38,6 +38,7 @@ First, find your project's Cloud Storage service account:
 
 ```bash
 # Get the Cloud Storage service account for your project
+
 gcloud storage service-agent --project=my-project-id
 ```
 

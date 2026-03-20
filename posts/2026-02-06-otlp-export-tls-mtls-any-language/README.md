@@ -40,6 +40,7 @@ Before configuring any SDK, you need certificates. For production, use your orga
 
 ```bash
 # Generate a CA (Certificate Authority) key and certificate.
+
 # This CA will sign both the server and client certificates.
 openssl genrsa -out ca.key 4096
 openssl req -new -x509 -days 365 -key ca.key -out ca.crt \

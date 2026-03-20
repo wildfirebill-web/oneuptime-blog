@@ -161,6 +161,7 @@ Test that your creation rules work correctly before committing:
 
 ```bash
 # Dry run to see which rule matches
+
 sops --encrypt --verbose test-secret.yaml 2>&1 | head -20
 
 # Encrypt and then decrypt to verify round-trip

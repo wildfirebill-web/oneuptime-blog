@@ -16,6 +16,7 @@ The `substr` function extracts a portion of a string based on a starting offset 
 
 ```hcl
 # Basic syntax
+
 substr(string, offset, length)
 ```
 

@@ -1,4 +1,4 @@
-# How to Set Up OAuth Authentication in Portainer
+# How to Set Up OAuth Authentication in Portainer - Set
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure OAuth 2.0 authentication in Portainer Busine
 
 ---
 
-OAuth authentication in Portainer allows users to log in using their organization's identity provider (IdP) — such as GitHub, Google, Azure AD, or any OAuth 2.0 / OpenID Connect provider. This eliminates the need to manage separate Portainer passwords.
+OAuth authentication in Portainer allows users to log in using their organization's identity provider (IdP) - such as GitHub, Google, Azure AD, or any OAuth 2.0 / OpenID Connect provider. This eliminates the need to manage separate Portainer passwords.
 
 ## Prerequisites
 
@@ -49,6 +49,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Configure OAuth authentication
+
 curl -X PUT \
   https://localhost:9443/api/settings \
   -H "Authorization: Bearer $TOKEN" \
@@ -92,13 +93,13 @@ curl -X PUT \
 
 The redirect URL in Portainer must exactly match what's registered in your OAuth provider:
 
-```
+```text
 https://portainer.example.com/
 ```
 
-Note the trailing slash — it's required. If Portainer is on a non-standard port:
+Note the trailing slash - it's required. If Portainer is on a non-standard port:
 
-```
+```text
 https://portainer.example.com:9443/
 ```
 

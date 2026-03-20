@@ -36,6 +36,7 @@ If the application was deleted with `--cascade=false`, all Kubernetes resources 
 
 ```bash
 # Option A: If your applications are defined in Git (declarative setup)
+
 # Just re-sync the parent app-of-apps, or manually apply:
 kubectl apply -f apps/my-app.yaml
 

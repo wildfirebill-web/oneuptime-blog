@@ -340,6 +340,7 @@ Check your rate limiting stats through Envoy's stats endpoint:
 
 ```bash
 # Check local rate limit stats
+
 kubectl exec <pod-name> -c istio-proxy -- \
   curl -s localhost:15000/stats | grep rate_limit
 

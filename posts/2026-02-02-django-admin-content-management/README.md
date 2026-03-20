@@ -18,6 +18,7 @@ Let's start with a simple blog application. Here are the models we'll be working
 
 ```python
 # models.py
+
 from django.db import models
 from django.contrib.auth.models import User
 

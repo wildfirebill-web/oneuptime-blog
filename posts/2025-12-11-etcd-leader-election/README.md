@@ -514,6 +514,7 @@ class LeaderElection:
         self.client.close()
 
 # Usage example
+
 def leader_work():
     """Work to do when elected as leader."""
     while election.is_leader:

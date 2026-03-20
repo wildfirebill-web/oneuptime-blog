@@ -64,6 +64,7 @@ Find the consumer's namespace:
 
 ```bash
 # Get the namespace of the consumer cluster
+
 aws redshift describe-clusters \
   --cluster-identifier consumer-cluster \
   --query 'Clusters[0].ClusterNamespaceArn'

@@ -16,6 +16,7 @@ The hosted zone ID is the most commonly mistyped piece of the puzzle. It looks s
 
 ```bash
 # List all hosted zones in the account
+
 aws route53 list-hosted-zones \
     --query 'HostedZones[].{Id:Id,Name:Name,Private:Config.PrivateZone}' \
     --output table

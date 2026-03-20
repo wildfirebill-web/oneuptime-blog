@@ -86,6 +86,7 @@ resource "terraform_data" "config" {
 }
 
 # Reference the output in another resource
+
 resource "aws_instance" "app" {
   ami           = var.ami_id
   instance_type = "t3.medium"

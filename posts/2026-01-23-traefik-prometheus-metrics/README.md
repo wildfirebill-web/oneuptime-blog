@@ -18,6 +18,7 @@ Add the metrics configuration to Traefik's static configuration:
 
 ```yaml
 # traefik-metrics-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

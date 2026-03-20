@@ -34,6 +34,7 @@ First, verify that autoscaling is actually turned on for your node pool:
 
 ```bash
 # Check autoscaling configuration for all node pools
+
 gcloud container node-pools list \
   --cluster your-cluster \
   --zone us-central1-a \

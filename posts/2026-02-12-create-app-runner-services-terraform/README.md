@@ -81,6 +81,7 @@ These IAM roles give App Runner permission to pull from ECR and give the contain
 
 ```hcl
 # Access role - lets App Runner pull images from ECR
+
 resource "aws_iam_role" "apprunner_ecr_access" {
   name = "apprunner-ecr-access"
 

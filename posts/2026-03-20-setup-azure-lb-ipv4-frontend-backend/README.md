@@ -19,6 +19,7 @@ LOCATION="eastus"
 az group create --name $RESOURCE_GROUP --location $LOCATION
 
 # Create VNet and subnet
+
 az network vnet create \
   --resource-group $RESOURCE_GROUP \
   --name lb-vnet \

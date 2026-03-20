@@ -31,13 +31,13 @@ Resource quotas can limit:
 4. Find the **Resource quota** section
 5. Configure limits:
 
-```
+```text
 Resource quotas for namespace: production
 ──────────────────────────────────────────
-CPU requests:       4 (cores)      — Total CPU requests across all pods
-CPU limits:         8 (cores)      — Total CPU limits
-Memory requests:    8Gi            — Total memory requests
-Memory limits:      16Gi           — Total memory limits
+CPU requests:       4 (cores)      - Total CPU requests across all pods
+CPU limits:         8 (cores)      - Total CPU limits
+Memory requests:    8Gi            - Total memory requests
+Memory limits:      16Gi           - Total memory limits
 
 Object counts:
   Pods:             50
@@ -98,6 +98,7 @@ Different environments get different quota sizes:
 
 ```yaml
 # Production: large quotas
+
 ---
 apiVersion: v1
 kind: ResourceQuota
@@ -170,7 +171,7 @@ In Portainer: the namespace detail view shows quota usage.
 
 When a deployment fails due to quota:
 
-```
+```text
 Error from server (Forbidden): pods "my-app-xxx" is forbidden:
 exceeded quota: production-quota, requested: requests.memory=512Mi,
 used: requests.memory=15.5Gi, limited: requests.memory=16Gi
@@ -178,9 +179,9 @@ used: requests.memory=15.5Gi, limited: requests.memory=16Gi
 
 **Resolution options:**
 
-1. **Increase quota** — Edit the ResourceQuota
-2. **Reduce pod resources** — Lower requests on existing deployments
-3. **Remove unused resources** — Delete old/unnecessary deployments
+1. **Increase quota** - Edit the ResourceQuota
+2. **Reduce pod resources** - Lower requests on existing deployments
+3. **Remove unused resources** - Delete old/unnecessary deployments
 
 ```bash
 # Find top memory consumers

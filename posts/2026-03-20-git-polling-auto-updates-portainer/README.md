@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, GitOps, Git Polling, Auto-Updates, Automation
+Tags: Portainer, GitOps, Git Polling, Auto-Update, Automation
 
 Description: Learn how to configure Portainer to automatically poll a Git repository and redeploy stacks when changes are detected.
 
@@ -46,6 +46,7 @@ Portainer compares the current deployed commit hash with the latest commit on th
 
 ```bash
 # Portainer internally does something equivalent to:
+
 CURRENT_SHA=$(git rev-parse HEAD)
 LATEST_SHA=$(git ls-remote origin refs/heads/main | cut -f1)
 
@@ -81,7 +82,7 @@ curl -X POST "${PORTAINER_URL}/api/stacks/${STACK_ID}/git/redeploy?endpointId=${
 ## Best Practices
 
 - **Use specific branches** (`main`, `production`) rather than tags for polling, since tag polling requires new tags for each deployment.
-- **Combine with image tags**: Have your CI pipeline update the image tag in the Compose file and commit to Git — Portainer will detect the change and redeploy.
+- **Combine with image tags**: Have your CI pipeline update the image tag in the Compose file and commit to Git - Portainer will detect the change and redeploy.
 - **Monitor poll logs**: Check stack events in Portainer to confirm polling is working.
 
 ## Polling vs. Webhooks

@@ -32,6 +32,7 @@ Set it per play:
 
 ```yaml
 # host-pinned.yml - Use host_pinned strategy
+
 ---
 - name: Configure servers with host pinning
   hosts: all

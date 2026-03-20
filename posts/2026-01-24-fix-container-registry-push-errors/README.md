@@ -46,6 +46,7 @@ This is the most common GCR error. It means your authentication is not configure
 
 ```bash
 # Error message
+
 denied: Token exchange failed for project 'my-project'.
 Caller does not have permission 'storage.buckets.get'.
 ```

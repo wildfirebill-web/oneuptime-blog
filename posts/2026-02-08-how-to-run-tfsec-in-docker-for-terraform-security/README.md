@@ -31,6 +31,7 @@ The tfsec team publishes official Docker images. Run a quick scan with a single 
 
 ```bash
 # Scan the current directory for Terraform security issues
+
 docker run --rm \
   -v "$(pwd):/src" \
   aquasec/tfsec /src

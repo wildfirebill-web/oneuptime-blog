@@ -8,7 +8,7 @@ Description: Learn how to use Java NIO's ServerSocketChannel and SocketChannel f
 
 ## Why Java NIO?
 
-Traditional `java.net` sockets are blocking—each connection needs its own thread. Java NIO (Non-blocking I/O) channels allow a single thread to handle thousands of connections using a `Selector`, similar to `epoll` on Linux.
+Traditional `java.net` sockets are blocking-each connection needs its own thread. Java NIO (Non-blocking I/O) channels allow a single thread to handle thousands of connections using a `Selector`, similar to `epoll` on Linux.
 
 ## Basic NIO TCP Server
 
@@ -160,4 +160,4 @@ client.setOption(StandardSocketOptions.SO_RCVBUF, 65536);     // Recv buffer
 
 ## Conclusion
 
-Java NIO channels with `Selector` enable event-driven I/O where a single thread multiplexes thousands of connections—similar to Node.js's event loop. The key operations are registering channels with `OP_ACCEPT` and `OP_READ` interest sets, then reacting to ready events in the selector loop. For new Java projects, consider `java.nio.channels.AsynchronousServerSocketChannel` (AIO) or Netty/Vert.x frameworks for higher-level abstractions.
+Java NIO channels with `Selector` enable event-driven I/O where a single thread multiplexes thousands of connections-similar to Node.js's event loop. The key operations are registering channels with `OP_ACCEPT` and `OP_READ` interest sets, then reacting to ready events in the selector loop. For new Java projects, consider `java.nio.channels.AsynchronousServerSocketChannel` (AIO) or Netty/Vert.x frameworks for higher-level abstractions.

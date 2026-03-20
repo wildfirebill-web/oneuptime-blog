@@ -20,6 +20,7 @@ This command exports your Realtime Database to a JSON file for analysis:
 
 ```bash
 # Export the entire database to JSON
+
 firebase database:get / --project YOUR_PROJECT_ID > rtdb-export.json
 
 # Check the file size to understand the volume

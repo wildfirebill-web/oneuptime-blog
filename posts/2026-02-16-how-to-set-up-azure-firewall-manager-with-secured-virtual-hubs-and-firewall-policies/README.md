@@ -50,6 +50,7 @@ If you do not already have a Virtual WAN:
 
 ```powershell
 # Create a resource group for the WAN infrastructure
+
 New-AzResourceGroup -Name "wan-rg" -Location "eastus"
 
 # Create the Virtual WAN

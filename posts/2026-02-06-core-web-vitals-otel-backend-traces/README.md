@@ -89,6 +89,7 @@ On the server side, receive the browser metrics and convert them to OpenTelemetr
 
 ```python
 # browser_metrics_endpoint.py
+
 from flask import Flask, request, jsonify
 from opentelemetry import metrics, trace
 

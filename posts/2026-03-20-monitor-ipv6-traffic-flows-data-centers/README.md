@@ -14,8 +14,9 @@ In IPv6 data centers, every device has a globally routable address. Flow monitor
 
 Configure IPFIX flow export on Nexus switches to collect IPv6 flow data:
 
-```
+```bash
 # Cisco Nexus IPFIX configuration
+
 feature netflow
 
 ! Define flow record capturing IPv6 fields
@@ -51,7 +52,7 @@ interface Ethernet1/1
 
 `pmacct` is a powerful open-source flow collector that handles IPv6 IPFIX:
 
-```
+```text
 # /etc/pmacct/nfacctd.conf
 daemonize: true
 pidfile: /var/run/nfacctd.pid

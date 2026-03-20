@@ -28,6 +28,7 @@ Here is the basic Python setup for creating a meter provider and exporting metri
 
 ```python
 # toil_metrics.py - Initialize OpenTelemetry metrics for toil tracking
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

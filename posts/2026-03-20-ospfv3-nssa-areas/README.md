@@ -26,7 +26,7 @@ graph LR
 
 ## Configuring NSSA on Cisco IOS
 
-```
+```text
 ! Configure Area 1 as NSSA on ALL routers in the area
 
 ! On the ABR
@@ -39,7 +39,7 @@ Router-Branch(config)# router ospfv3 1
 Router-Branch(config-router)# address-family ipv6 unicast
 Router-Branch(config-router-af)# area 1 nssa
 
-! Configure NSSA with no-summary (totally NSSA — block Type 3 LSAs)
+! Configure NSSA with no-summary (totally NSSA - block Type 3 LSAs)
 Router-ABR(config-router-af)# area 1 nssa no-summary
 ```
 
@@ -47,8 +47,8 @@ Router-ABR(config-router-af)# area 1 nssa no-summary
 
 The ASBR in the NSSA redistributes external routes as Type 7 LSAs:
 
-```
-! On the ASBR in the NSSA area — redistribute static routes
+```text
+! On the ASBR in the NSSA area - redistribute static routes
 Router-ASBR(config)# router ospfv3 1
 Router-ASBR(config-router)# address-family ipv6 unicast
 Router-ASBR(config-router-af)# redistribute static
@@ -79,7 +79,7 @@ write memory
 
 ## Verifying NSSA Configuration
 
-```
+```text
 ! Cisco: Verify NSSA flag in area database
 Router# show ospfv3 database
 ! Should show area is NSSA
@@ -93,6 +93,7 @@ Router# show ospfv3 database external
 
 ```bash
 # FRRouting: Verify NSSA configuration
+
 vtysh -c "show ipv6 ospf"
 # Area 0.0.0.1 is [NSSA]
 
@@ -104,7 +105,7 @@ vtysh -c "show ipv6 ospf database as-nssa"
 
 The ABR can inject a default route into the NSSA area:
 
-```
+```text
 ! Cisco: Inject default route into NSSA
 Router-ABR(config)# router ospfv3 1
 Router-ABR(config-router)# address-family ipv6 unicast

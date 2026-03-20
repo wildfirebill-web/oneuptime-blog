@@ -48,6 +48,7 @@ graph TD
 
 ```bash
 # Create the global network - this is the top-level container
+
 aws networkmanager create-global-network \
     --description "Company Global WAN" \
     --tags 'Key=Environment,Value=production'

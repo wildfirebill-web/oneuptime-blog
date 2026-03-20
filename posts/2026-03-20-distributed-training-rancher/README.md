@@ -1,8 +1,8 @@
-# How to Set Up Distributed Training on Rancher
+# How to Set Up Distributed Training on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, distributed-training, pytorch, tensorflow, kubernetes
+Tags: Rancher, Distributed-training, PyTorch, TensorFlow, Kubernetes
 
 Description: Comprehensive guide to configuring distributed ML model training across multiple GPU nodes in Rancher.
 
@@ -21,6 +21,7 @@ Distributed training splits model training across multiple GPUs or machines, dra
 
 ```bash
 # Install Kubeflow Training Operator
+
 kubectl apply -k "github.com/kubeflow/training-operator/manifests/overlays/standalone?ref=v1.7.0"
 
 # Verify CRDs

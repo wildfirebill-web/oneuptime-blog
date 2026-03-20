@@ -70,6 +70,7 @@ Set an output value that other steps can reference:
 
 ```yaml
 # .github/workflows/output-example.yml
+
 name: Output Variables Example
 
 on: push
@@ -645,7 +646,7 @@ Save and restore state between steps:
 
 Properly handle and report errors:
 
-```yaml
+````yaml
 - name: Build with error handling
   id: build
   run: |
@@ -668,9 +669,9 @@ Properly handle and report errors:
 
     Exit code: $BUILD_STATUS
 
-    \`\`\`
+    ```
     $ERROR_MSG
-    \`\`\`
+    ```
     EOF
 
       echo "status=failed" >> $GITHUB_OUTPUT
@@ -679,7 +680,7 @@ Properly handle and report errors:
 
     echo "status=success" >> $GITHUB_OUTPUT
     echo "::notice::Build completed successfully"
-```
+````
 
 ---
 

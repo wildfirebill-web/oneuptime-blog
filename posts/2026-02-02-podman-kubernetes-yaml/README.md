@@ -54,6 +54,7 @@ Create a simple pod manifest and run it with Podman.
 
 ```yaml
 # pod.yaml
+
 # Define a basic Kubernetes Pod with an nginx container
 # Podman will create a pod with the same structure
 apiVersion: v1

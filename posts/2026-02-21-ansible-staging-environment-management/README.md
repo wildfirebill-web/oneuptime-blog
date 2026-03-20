@@ -33,6 +33,7 @@ Use the same roles for both environments with different variable files:
 
 ```yaml
 # inventories/staging/group_vars/all.yml
+
 # Staging environment configuration
 ---
 environment_name: staging

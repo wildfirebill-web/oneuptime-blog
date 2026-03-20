@@ -32,6 +32,7 @@ Flagger is a Kubernetes operator that automates canary deployments. Install it w
 
 ```bash
 # Add Flagger Helm repository
+
 helm repo add flagger https://flagger.app
 
 # Install Flagger with Prometheus metrics support

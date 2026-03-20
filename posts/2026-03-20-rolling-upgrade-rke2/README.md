@@ -1,4 +1,4 @@
-# How to Perform a Rolling Upgrade of RKE2
+# How to Perform a Rolling Upgrade of RKE2 - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ The System Upgrade Controller (SUC) automates rolling upgrades in RKE2 clusters 
 
 ```bash
 # Install SUC into the cluster
+
 kubectl apply -f \
   https://github.com/rancher/system-upgrade-controller/releases/latest/download/system-upgrade-controller.yaml
 
@@ -158,7 +159,7 @@ kubectl delete plan rke2-server rke2-agent -n system-upgrade
 
 ## Best Practices
 
-- Set `concurrency: 1` for server nodes — losing two control plane nodes simultaneously can break etcd quorum.
+- Set `concurrency: 1` for server nodes - losing two control plane nodes simultaneously can break etcd quorum.
 - Use `drain.skipWaitForDeleteTimeout: 60` to avoid blocking on pods that take too long to evict.
 - Apply `PodDisruptionBudgets` to all production deployments before running upgrades.
 - Label a canary worker node and upgrade it first before applying the plan to all workers.

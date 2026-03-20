@@ -30,6 +30,7 @@ Let us say you have CSV files in a Cloud Storage bucket.
 
 ```bash
 # View the structure of your CSV files
+
 gsutil cat gs://my-data-bucket/sales/2026-01/sales_data.csv | head -5
 ```
 

@@ -31,6 +31,7 @@ Through the AWS CLI, you can enable connection draining with a 300-second timeou
 
 ```bash
 # Enable connection draining on a Classic Load Balancer with a 300-second timeout
+
 aws elb modify-load-balancer-attributes \
   --load-balancer-name my-classic-lb \
   --load-balancer-attributes "{\"ConnectionDraining\":{\"Enabled\":true,\"Timeout\":300}}"

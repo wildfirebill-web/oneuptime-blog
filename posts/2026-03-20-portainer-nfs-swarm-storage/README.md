@@ -1,4 +1,4 @@
-# How to Set Up NFS Shared Storage for Portainer Swarm
+# How to Set Up NFS Shared Storage for Portainer Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ NFS (Network File System) is a simple, widely-supported solution for shared stor
 
 ```bash
 # Install NFS server (Ubuntu/Debian)
+
 sudo apt-get update && sudo apt-get install -y nfs-kernel-server
 
 # Create export directories

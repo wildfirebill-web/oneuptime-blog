@@ -21,6 +21,7 @@ WireGuard is a modern VPN protocol that is faster, simpler, and more secure than
 
 ```yaml
 # install_wireguard.yml - Install WireGuard on Linux hosts
+
 ---
 - name: Install WireGuard
   hosts: vpn_servers

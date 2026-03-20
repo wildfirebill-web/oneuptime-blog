@@ -16,6 +16,7 @@ On the server, in your Easy-RSA directory:
 cd ~/openvpn-ca
 
 # Generate a client key and certificate signing request
+
 # Replace "client1" with the user's name
 ./easyrsa gen-req client1 nopass
 
@@ -27,7 +28,7 @@ cd ~/openvpn-ca
 
 For each client you need these five files:
 
-```
+```text
 ca.crt          - The CA certificate (shared by all clients)
 client1.crt     - The client's certificate
 client1.key     - The client's private key

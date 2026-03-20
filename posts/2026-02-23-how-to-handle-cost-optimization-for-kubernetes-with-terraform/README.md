@@ -18,6 +18,7 @@ The most common source of Kubernetes cost waste is over-provisioned node groups.
 
 ```hcl
 # EKS cluster definition
+
 resource "aws_eks_cluster" "main" {
   name     = "app-cluster-${var.environment}"
   role_arn = aws_iam_role.cluster.arn
@@ -248,7 +249,7 @@ resource "kubectl_manifest" "karpenter_nodepool" {
 }
 ```
 
-## Resource Quotas and Limit Ranges
+Resource Quotas and Limit Ranges
 
 Prevent teams from over-requesting resources by setting quotas and limits at the namespace level.
 

@@ -46,6 +46,7 @@ Create `cache_plugins/sqlite_cache.py`:
 
 ```python
 # sqlite_cache.py - Custom cache plugin using SQLite as the backend
+
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 

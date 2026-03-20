@@ -18,6 +18,7 @@ Dynamic inventory is essential for IoT fleets because devices come and go:
 
 ```yaml
 # inventories/iot/plugin_inventory.yml
+
 # Dynamic inventory from device management database
 plugin: community.general.linode
 regions:

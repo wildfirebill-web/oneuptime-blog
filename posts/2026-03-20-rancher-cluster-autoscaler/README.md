@@ -1,4 +1,4 @@
-# How to Configure Cluster Autoscaler in Rancher
+# How to Configure Cluster Autoscaler in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ The Kubernetes Cluster Autoscaler automatically adjusts the number of worker nod
 
 ```bash
 # Create IAM policy for Cluster Autoscaler
+
 cat > cluster-autoscaler-policy.json << 'EOF'
 {
   "Version": "2012-10-17",

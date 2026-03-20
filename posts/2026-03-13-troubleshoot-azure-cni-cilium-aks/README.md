@@ -29,6 +29,7 @@ Confirm Cilium is running correctly on the AKS cluster.
 
 ```bash
 # Check Cilium pod status across all nodes
+
 kubectl get pods -n kube-system -l k8s-app=cilium -o wide
 
 # Run Cilium status check

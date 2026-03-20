@@ -26,6 +26,7 @@ Check your workloads for these issues:
 
 ```bash
 # Find pods using host network
+
 kubectl get pods --all-namespaces -o json | \
   python3 -c "import json,sys; pods=json.load(sys.stdin); [print(f\"{p['metadata']['namespace']}/{p['metadata']['name']}\") for p in pods['items'] if p['spec'].get('hostNetwork')]"
 

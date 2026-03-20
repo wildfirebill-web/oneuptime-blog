@@ -22,6 +22,7 @@ Before deploying cross-datacenter replication, establish network connectivity be
 
 ```bash
 # For cloud providers, enable VPC peering
+
 # AWS example:
 aws ec2 create-vpc-peering-connection \
   --vpc-id vpc-cluster1 \

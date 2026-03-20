@@ -29,6 +29,7 @@ Enable Workload Identity on your AKS cluster and create a managed identity:
 
 ```bash
 # Enable OIDC issuer and Workload Identity on AKS
+
 az aks update --resource-group myRG --name myAKS \
   --enable-oidc-issuer --enable-workload-identity
 

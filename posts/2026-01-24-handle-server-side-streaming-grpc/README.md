@@ -582,6 +582,7 @@ func progressBar(percent int) string {
 
 ```python
 # server.py
+
 import grpc
 from concurrent import futures
 import time

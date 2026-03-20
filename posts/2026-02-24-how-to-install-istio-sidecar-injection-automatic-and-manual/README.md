@@ -180,6 +180,7 @@ Make sure the sidecar is ready before your application starts:
 
 ```yaml
 # In the IstioOperator or mesh config
+
 meshConfig:
   defaultConfig:
     holdApplicationUntilProxyStarts: true

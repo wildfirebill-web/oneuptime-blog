@@ -44,6 +44,7 @@ Kubeflow uses ML Metadata (MLMD) to track experiments, runs, and artifacts:
 
 ```bash
 # Verify MLMD is running
+
 kubectl get pods -n kubeflow | grep metadata
 
 # Check the metadata service

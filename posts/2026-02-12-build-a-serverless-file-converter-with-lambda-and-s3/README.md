@@ -30,6 +30,7 @@ graph LR
 
 ```bash
 # Create input and output buckets
+
 aws s3 mb s3://my-file-converter-input
 aws s3 mb s3://my-file-converter-output
 ```

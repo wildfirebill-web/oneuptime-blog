@@ -18,6 +18,7 @@ The `sensitive` flag on output values prevents Terraform from displaying the val
 
 ```hcl
 # Database password output - marked as sensitive
+
 output "database_password" {
   description = "The master password for the RDS instance"
   value       = aws_db_instance.main.password

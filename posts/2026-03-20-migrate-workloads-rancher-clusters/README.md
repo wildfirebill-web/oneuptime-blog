@@ -1,4 +1,4 @@
-# How to Migrate Workloads Between Rancher Clusters
+# How to Migrate Workloads Between Rancher Clusters - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Migrating workloads between clusters is necessary when upgrading Kubernetes vers
 
 ```bash
 # Ensure target cluster has necessary storage classes
+
 kubectl get storageclasses --context target-cluster
 
 # Create namespaces that will receive migrated workloads

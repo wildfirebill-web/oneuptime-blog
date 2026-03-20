@@ -28,6 +28,7 @@ The `Server` resource declares how a service port should be handled:
 
 ```yaml
 # clusters/my-cluster/linkerd-policies/api-server-policy.yaml
+
 apiVersion: policy.linkerd.io/v1beta3
 kind: Server
 metadata:

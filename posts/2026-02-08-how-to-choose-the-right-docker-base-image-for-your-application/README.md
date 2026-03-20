@@ -31,6 +31,7 @@ Docker base images fall into a few broad categories:
 
 ```dockerfile
 # Build a static Go binary
+
 FROM golang:1.22 AS build
 WORKDIR /app
 COPY . .

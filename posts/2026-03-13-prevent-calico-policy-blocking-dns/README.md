@@ -26,6 +26,7 @@ Preventing Calico policies from blocking DNS requires making UDP/TCP port 53 to 
 
 ```bash
 # Audit all namespaces for missing DNS allow
+
 for NS in $(kubectl get namespaces -o jsonpath='{.items[*].metadata.name}'); do
   HAS_POLICY=$(kubectl get networkpolicy -n $NS --no-headers 2>/dev/null | wc -l)
   HAS_DNS=$(kubectl get networkpolicy -n $NS -o yaml 2>/dev/null | grep -c "port: 53" || true)

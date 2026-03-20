@@ -61,6 +61,7 @@ iostat is part of the sysstat package:
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt update
 sudo apt install sysstat
 

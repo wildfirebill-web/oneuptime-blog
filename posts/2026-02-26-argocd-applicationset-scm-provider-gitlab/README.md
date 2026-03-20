@@ -34,6 +34,7 @@ Create a GitLab personal access token or group access token with the `read_api` 
 
 ```bash
 # Create a GitLab token with 'read_api' scope
+
 # Navigate to: GitLab > Settings > Access Tokens
 
 # Store the token in Kubernetes

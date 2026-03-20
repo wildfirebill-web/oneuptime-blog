@@ -8,12 +8,13 @@ Description: Identify signs of DNS cache poisoning attacks, detect suspicious DN
 
 ## Introduction
 
-DNS cache poisoning (the Kaminsky attack and its variants) involves injecting false DNS records into a resolver's cache. Once poisoned, clients resolving a hostname get an attacker's IP instead of the legitimate one — enabling man-in-the-middle attacks, credential theft, and malware delivery. DNSSEC is the definitive protection, but detecting poisoning attempts and hardening resolvers provides defense-in-depth.
+DNS cache poisoning (the Kaminsky attack and its variants) involves injecting false DNS records into a resolver's cache. Once poisoned, clients resolving a hostname get an attacker's IP instead of the legitimate one - enabling man-in-the-middle attacks, credential theft, and malware delivery. DNSSEC is the definitive protection, but detecting poisoning attempts and hardening resolvers provides defense-in-depth.
 
 ## Signs of Cache Poisoning
 
 ```bash
 # 1. IP address changed unexpectedly:
+
 # Compare what your resolver returns vs authoritative server:
 DOMAIN="example.com"
 RESOLVER_IP=$(dig $DOMAIN +short | head -1)
@@ -153,4 +154,4 @@ done
 
 ## Conclusion
 
-DNS cache poisoning detection requires comparing resolver responses against authoritative server responses — they should always match. Anomalies (different IPs from different resolvers, unexpected TTLs) warrant investigation. DNSSEC is the only cryptographically sound defense — enable validation on your resolver with `auto-trust-anchor-file`. Harden resolvers by ensuring source port randomization is not defeated by NAT devices. Regularly verify that critical domain resolutions return expected IP addresses using automated monitoring.
+DNS cache poisoning detection requires comparing resolver responses against authoritative server responses - they should always match. Anomalies (different IPs from different resolvers, unexpected TTLs) warrant investigation. DNSSEC is the only cryptographically sound defense - enable validation on your resolver with `auto-trust-anchor-file`. Harden resolvers by ensuring source port randomization is not defeated by NAT devices. Regularly verify that critical domain resolutions return expected IP addresses using automated monitoring.

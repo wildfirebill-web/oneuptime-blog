@@ -40,6 +40,7 @@ The connection happens through the ADF pipeline settings. Here is how to enable 
 
 ```bash
 # Link Azure Data Factory to Purview for automated lineage
+
 # This is done in the ADF portal under Manage > Purview
 # Or via ARM template:
 az resource update \

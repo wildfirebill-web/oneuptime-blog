@@ -38,6 +38,7 @@ The error occurs when you use a permissions policy structure in the `assume_role
 
 ```hcl
 # WRONG - This causes the error
+
 resource "aws_iam_role" "example" {
   name = "my-role"
 

@@ -28,6 +28,7 @@ This guide covers deploying Flux CD on an Anthos Bare Metal cluster, configuring
 
 ```bash
 # Your ABM cluster kubeconfig is typically at:
+
 export KUBECONFIG=~/bmctl-workspace/my-abm-cluster/my-abm-cluster-kubeconfig
 
 # Verify cluster is ready

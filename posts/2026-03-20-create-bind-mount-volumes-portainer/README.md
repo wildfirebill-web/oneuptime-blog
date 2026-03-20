@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Bind Mount, Volumes, Storage
+Tags: Portainer, Docker, Bind Mounts, Volumes, Storage
 
 Description: Configure bind mounts in Portainer to map host directories directly into Docker containers.
 
@@ -18,6 +18,7 @@ Go to **Volumes** in the left sidebar to see all volumes on the connected enviro
 
 ```bash
 # Create a simple named volume
+
 docker volume create myapp-data
 
 # Create with custom driver options

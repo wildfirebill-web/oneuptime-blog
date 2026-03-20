@@ -38,6 +38,7 @@ If your cluster supports ephemeral containers, this gives you a clean view. Alte
 
 ```bash
 # Find the PID of your container
+
 CONTAINER_PID=$(docker inspect --format '{{.State.Pid}}' <container-id>)
 
 # Enter the network namespace and list rules

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Policy Table, RFC 6724, Linux, gai.conf, Address Selection
+Tags: IPv6, Policy Table, RFC 6724, Linux, Gai.conf, Address Selection
 
 Description: Configure the IPv6 address selection policy table on Linux using ip addrlabel and /etc/gai.conf to control source and destination address preferences.
 
@@ -21,12 +21,13 @@ Most applications use `getaddrinfo()`, so `/etc/gai.conf` controls what they see
 
 ```bash
 # Kernel label table
+
 ip addrlabel list
 
 # gai.conf (userspace destination selection)
 cat /etc/gai.conf
 
-# Effective behavior — trace getaddrinfo calls
+# Effective behavior - trace getaddrinfo calls
 strace -e trace=socket,connect,sendto python3 -c "
 import socket
 socket.getaddrinfo('example.com', 80, type=socket.SOCK_STREAM)
@@ -38,7 +39,7 @@ socket.getaddrinfo('example.com', 80, type=socket.SOCK_STREAM)
 The `gai.conf` file directly controls `getaddrinfo()` output ordering:
 
 ```bash
-# /etc/gai.conf — Full configuration with comments
+# /etc/gai.conf - Full configuration with comments
 cat > /etc/gai.conf << 'EOF'
 # label <prefix> <label>
 # Addresses in the same label group prefer each other as source/destination
@@ -177,7 +178,7 @@ systemctl restart systemd-networkd
 
 ```bash
 #!/bin/bash
-# test-policy.sh — Validate address selection after policy change
+# test-policy.sh - Validate address selection after policy change
 
 DEST_IPV6="2001:db8::1"
 DEST_ULA="fd00::1"

@@ -62,6 +62,7 @@ ACR comes in three tiers:
 
 ```hcl
 # Basic container registry for development
+
 resource "azurerm_container_registry" "dev" {
   name                = "myappcrdev"
   resource_group_name = azurerm_resource_group.acr.name

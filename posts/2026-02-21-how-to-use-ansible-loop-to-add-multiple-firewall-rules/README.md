@@ -18,6 +18,7 @@ UFW is the default firewall on Ubuntu. The `community.general.ufw` module makes 
 
 ```yaml
 # ufw-rules.yml
+
 # Applies a set of UFW firewall rules for a web server
 - name: Configure UFW firewall
   hosts: webservers

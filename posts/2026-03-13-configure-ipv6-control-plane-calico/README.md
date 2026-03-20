@@ -30,6 +30,7 @@ Before configuring Calico, ensure IPv6 forwarding is enabled on every node in yo
 
 ```bash
 # Enable IPv6 forwarding on the current node (run on each node)
+
 sudo sysctl -w net.ipv6.conf.all.forwarding=1
 
 # Make the setting persistent across reboots

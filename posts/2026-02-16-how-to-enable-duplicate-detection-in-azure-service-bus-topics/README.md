@@ -39,6 +39,7 @@ Duplicate detection must be enabled when creating the topic or queue. It cannot 
 
 ```bash
 # Create a topic with duplicate detection enabled
+
 # The detection window is the time period during which duplicates are checked
 az servicebus topic create \
   --name order-events \

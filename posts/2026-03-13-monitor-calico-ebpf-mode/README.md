@@ -24,6 +24,7 @@ Felix exposes Prometheus metrics that include eBPF-specific counters when runnin
 
 ```yaml
 # felixconfiguration-metrics.yaml
+
 apiVersion: projectcalico.org/v3
 kind: FelixConfiguration
 metadata:

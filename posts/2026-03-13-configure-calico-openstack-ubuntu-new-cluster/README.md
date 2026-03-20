@@ -74,6 +74,7 @@ EOF
 
 ```ini
 # /etc/calico/felix.cfg
+
 [global]
 DatastoreType = etcdv3
 EtcdEndpoints = http://<controller-ip>:2379

@@ -286,6 +286,7 @@ curl -X PUT "https://localhost:9200/_transform/order_durations" \
   }'
 
 # Start the transform
+
 curl -X POST "https://localhost:9200/_transform/order_durations/_start" \
   -u elastic:password
 ```

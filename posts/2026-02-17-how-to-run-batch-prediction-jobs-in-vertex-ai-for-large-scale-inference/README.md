@@ -29,6 +29,7 @@ Here is an example of preparing JSONL input for a tabular model:
 
 ```python
 # prepare_input.py
+
 # Prepare input data in JSONL format for batch predictions
 
 import json

@@ -78,6 +78,7 @@ kubectl get pods --all-namespaces | grep ContainerCreating | \
 ```bash
 kubectl get pods --all-namespaces | grep ContainerCreating | wc -l
 # Expected: 0
+
 ```
 
 ```mermaid

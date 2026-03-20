@@ -14,6 +14,7 @@ Flushing all IPv4 addresses from an interface at once is faster than deleting th
 
 ```bash
 # Remove all IPv4 addresses from eth0
+
 sudo ip -4 addr flush dev eth0
 
 # Verify the interface is now address-free

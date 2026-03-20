@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NeuVector, Compliance, Reporting, CIS Benchmarks, Kubernetes
+Tags: NeuVector, Compliance, Reporting, CIS Benchmark, Kubernetes
 
 Description: Generate comprehensive compliance reports from NeuVector covering CIS Benchmarks, PCI DSS, HIPAA, and other regulatory frameworks for auditors and stakeholders.
 
@@ -34,6 +34,7 @@ Before generating reports, ensure fresh scan data:
 
 ```bash
 # Trigger compliance scan on all nodes
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/bench/host/all" \
   -H "X-Auth-Token: ${TOKEN}"

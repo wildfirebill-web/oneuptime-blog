@@ -767,6 +767,7 @@ flowchart TB
 
 ```bash
 # Set compatibility strategy for a namespace using pulsar-admin CLI
+
 # This affects all topics in the namespace
 
 # Set to BACKWARD (recommended for most cases)

@@ -10,19 +10,20 @@ Description: Learn how to configure policy-based routing (PBR) on Linux using ip
 
 Policy-Based Routing (PBR) allows routing decisions based on criteria beyond just the destination IP:
 
-- **Source IP address** — route different clients through different uplinks
-- **Packet mark** — route marked packets via a VPN
-- **IP TOS/DSCP** — prioritize certain traffic classes
-- **Incoming interface** — route based on which interface traffic arrived on
+- **Source IP address** - route different clients through different uplinks
+- **Packet mark** - route marked packets via a VPN
+- **IP TOS/DSCP** - prioritize certain traffic classes
+- **Incoming interface** - route based on which interface traffic arrived on
 
 ## How PBR Works on Linux
 
 Linux implements PBR with:
-1. **Routing tables** — multiple routing tables (not just the main table)
-2. **IP rules** — rules that select which table to use for a packet
+1. **Routing tables** - multiple routing tables (not just the main table)
+2. **IP rules** - rules that select which table to use for a packet
 
 ```bash
 # View current rules
+
 ip rule show
 
 # Default rules:

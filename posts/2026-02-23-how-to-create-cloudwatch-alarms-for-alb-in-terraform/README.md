@@ -14,6 +14,7 @@ Application Load Balancers (ALBs) are the front door for most web applications o
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

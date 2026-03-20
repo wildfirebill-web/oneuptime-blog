@@ -8,7 +8,7 @@ Description: Compare Portainer and Docker Desktop to understand which tool fits 
 
 ## Introduction
 
-Docker Desktop and Portainer are both graphical tools for managing Docker containers, but they serve very different purposes. Docker Desktop is a local development tool for macOS and Windows that runs Docker in a VM. Portainer is a server-side web UI for managing Docker and Kubernetes in any environment, from local Linux servers to multi-cluster Kubernetes. Understanding their differences helps you choose the right tool — or use both together.
+Docker Desktop and Portainer are both graphical tools for managing Docker containers, but they serve very different purposes. Docker Desktop is a local development tool for macOS and Windows that runs Docker in a VM. Portainer is a server-side web UI for managing Docker and Kubernetes in any environment, from local Linux servers to multi-cluster Kubernetes. Understanding their differences helps you choose the right tool - or use both together.
 
 ## Target Audience and Use Case
 
@@ -25,7 +25,7 @@ Docker Desktop and Portainer are both graphical tools for managing Docker contai
 
 ### Docker Desktop Architecture
 
-```
+```bash
 macOS/Windows Host
 └── Docker Desktop App (Electron)
     ├── Docker VM (Linux)
@@ -38,7 +38,7 @@ Docker Desktop runs a Linux VM on macOS and Windows to host the Docker daemon. T
 
 ### Portainer Architecture
 
-```
+```bash
 Linux Server (bare metal or VM)
 ├── Docker Daemon (native)
 ├── Portainer Container
@@ -72,6 +72,7 @@ Portainer runs directly on the Linux host with the Docker daemon, with no VM ove
 
 ```bash
 # Docker Desktop on macOS: install via DMG or Homebrew
+
 brew install --cask docker
 
 # After install, Docker Desktop provides:

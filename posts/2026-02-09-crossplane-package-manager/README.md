@@ -86,6 +86,7 @@ Use the Crossplane CLI to build packages:
 
 ```bash
 # Install the Crossplane CLI
+
 curl -sL https://raw.githubusercontent.com/crossplane/crossplane/master/install.sh | sh
 sudo mv crossplane /usr/local/bin/
 

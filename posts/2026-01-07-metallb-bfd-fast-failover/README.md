@@ -76,6 +76,7 @@ Verify your MetalLB version supports BFD by checking the installed version:
 
 ```bash
 # Check the MetalLB controller version
+
 # This command retrieves the image version from the controller deployment
 kubectl get deployment -n metallb-system controller -o jsonpath='{.spec.template.spec.containers[0].image}'
 ```

@@ -236,6 +236,7 @@ Before deploying custom templates to production, test them locally:
 
 ```bash
 # Create a test pod YAML
+
 cat <<EOF > test-pod.yaml
 apiVersion: v1
 kind: Pod

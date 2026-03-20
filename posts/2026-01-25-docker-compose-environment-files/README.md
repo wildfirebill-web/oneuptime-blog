@@ -31,6 +31,7 @@ graph TD
 
 ```bash
 # Shell variable takes precedence over .env file
+
 export DATABASE_URL="postgres://prod:secret@db:5432/app"
 docker compose up
 

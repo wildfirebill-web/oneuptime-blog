@@ -18,6 +18,7 @@ By default, Terraform updates resources in place when possible and destroys then
 
 ```hcl
 # This change triggers a destroy-and-recreate because
+
 # the AMI change requires a new instance
 resource "aws_instance" "web" {
   ami           = "ami-new-version"  # Changed from ami-old-version

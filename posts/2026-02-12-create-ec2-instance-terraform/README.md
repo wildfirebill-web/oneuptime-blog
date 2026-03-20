@@ -20,6 +20,7 @@ Install Terraform and configure AWS credentials:
 
 ```bash
 # Install Terraform (macOS with Homebrew)
+
 brew install terraform
 
 # Configure AWS credentials

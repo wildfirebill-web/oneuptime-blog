@@ -21,6 +21,7 @@ The difference between source and destination latency tells you how much time is
 
 ```promql
 # Source-side P99 latency
+
 histogram_quantile(0.99,
   sum(rate(istio_request_duration_milliseconds_bucket{reporter="source",destination_workload="my-service"}[5m])) by (le)
 )

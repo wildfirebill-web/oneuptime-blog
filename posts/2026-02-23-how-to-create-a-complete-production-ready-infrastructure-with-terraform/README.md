@@ -20,6 +20,7 @@ Our production infrastructure includes networking with multi-AZ redundancy, an E
 
 ```hcl
 # production/networking.tf
+
 # Production networking with multi-AZ redundancy
 
 module "vpc" {

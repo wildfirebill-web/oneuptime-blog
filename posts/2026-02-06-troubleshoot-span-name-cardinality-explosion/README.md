@@ -26,6 +26,7 @@ This problem affects both server-side and client-side spans.
 
 ```bash
 # Count unique span names in your backend
+
 # This query syntax depends on your backend
 
 # In Jaeger, check the operation dropdown - if it has thousands of entries,

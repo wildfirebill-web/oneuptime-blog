@@ -208,6 +208,7 @@ Wait for the pods to become ready, then test the login:
 
 ```bash
 # Test via CLI
+
 argocd login argocd.corp.example.com --sso
 
 # This should open a browser window for AD authentication

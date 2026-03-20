@@ -279,6 +279,7 @@ To verify that rewrites are working:
 
 ```bash
 # Check the route configuration on the proxy
+
 istioctl proxy-config routes <pod-name> -n <namespace> -o json
 
 # Test with curl (from inside the mesh)

@@ -26,6 +26,7 @@ On macOS using Homebrew:
 
 ```bash
 # Install Terragrunt via Homebrew
+
 brew install terragrunt
 ```
 

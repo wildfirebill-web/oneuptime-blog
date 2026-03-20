@@ -30,6 +30,7 @@ You can check the exit code after running AIDE:
 
 ```bash
 # Run the check and capture the exit code
+
 sudo aide --check
 echo "Exit code: $?"
 ```

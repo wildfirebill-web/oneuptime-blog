@@ -295,6 +295,7 @@ Enable transaction support on your Kafka brokers:
 # server.properties
 
 # Transaction coordinator settings
+
 transaction.state.log.replication.factor=3
 transaction.state.log.min.isr=2
 

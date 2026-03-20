@@ -20,6 +20,7 @@ System-wide settings live in a specific path and require root privileges to edit
 
 ```bash
 # Check if a system-wide configuration file already exists
+
 ls -la /etc/containers/containers.conf 2>/dev/null || echo "No system-wide config found"
 
 # View the vendor-supplied defaults (read-only reference)

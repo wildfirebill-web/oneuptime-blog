@@ -30,6 +30,7 @@ You can set metadata at the instance level or the project level.
 
 ```bash
 # Set custom metadata on a specific instance
+
 gcloud compute instances add-metadata my-vm \
     --zone=us-central1-a \
     --metadata=app-version=v2.3.1,environment=production,log-level=info,db-host=10.128.0.50

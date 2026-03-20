@@ -25,6 +25,7 @@ BCC (BPF Compiler Collection) provides a Python/Lua framework for writing eBPF p
 
 ```bash
 # Install BCC on Ubuntu 22.04+
+
 sudo apt update
 sudo apt install bpfcc-tools linux-headers-$(uname -r) python3-bpfcc
 

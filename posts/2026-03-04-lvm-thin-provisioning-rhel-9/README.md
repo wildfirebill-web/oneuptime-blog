@@ -34,6 +34,7 @@ First, create a volume group if you do not already have one:
 
 ```bash
 # Create PV and VG
+
 sudo pvcreate /dev/sdb
 sudo vgcreate thinvg /dev/sdb
 ```

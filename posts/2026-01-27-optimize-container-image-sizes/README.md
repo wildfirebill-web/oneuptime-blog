@@ -22,6 +22,7 @@ Multi-stage builds are the single most effective technique for reducing image si
 
 ```dockerfile
 # =============================================================================
+
 # Stage 1: Build Environment
 # This stage contains all the tools needed to compile and build the application
 # None of these tools will exist in the final production image

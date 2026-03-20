@@ -38,6 +38,7 @@ Easy DKIM is the simplest option. SES generates and manages the DKIM keys for yo
 
 ```bash
 # Enable Easy DKIM for your domain
+
 aws ses verify-domain-dkim \
   --domain "example.com" \
   --region us-east-1

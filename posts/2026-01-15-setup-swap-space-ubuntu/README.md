@@ -28,6 +28,7 @@ Before creating swap, check if any exists:
 
 ```bash
 # Show current swap usage
+
 free -h
 
 # Display detailed swap information

@@ -20,6 +20,7 @@ By default, health check results are stored in the container state and accessibl
 
 ```bash
 # Start a container with a health check
+
 podman run -d \
   --name default-logging \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \

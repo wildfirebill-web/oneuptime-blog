@@ -53,6 +53,7 @@ aws ecr get-login-password --region us-east-1 | \
 ```bash
 az acr login --name myregistry
 # Or manually:
+
 timoni registry login myregistry.azurecr.io \
   --username your-sp-app-id \
   --password your-sp-password

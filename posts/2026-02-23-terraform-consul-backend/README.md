@@ -28,6 +28,7 @@ If you do not already have Consul running, here is a quick setup for testing:
 
 ```bash
 # Install Consul (macOS)
+
 brew install consul
 
 # Start a development server

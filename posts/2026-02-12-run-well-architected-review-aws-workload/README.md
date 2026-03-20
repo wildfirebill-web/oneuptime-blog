@@ -214,6 +214,7 @@ You can use AWS Config to automatically assess some aspects:
 
 ```hcl
 # Conformance pack that checks Well-Architected best practices
+
 resource "aws_config_conformance_pack" "well_architected" {
   name = "well-architected-checks"
 

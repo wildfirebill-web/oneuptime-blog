@@ -35,6 +35,7 @@ For an automated approach using the Rancher API:
 
 ```bash
 # Create an RKE2 cluster with Calico via Rancher API
+
 curl -X POST \
   -H "Authorization: Bearer $RANCHER_TOKEN" \
   -H "Content-Type: application/json" \

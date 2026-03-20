@@ -232,6 +232,7 @@ Configure Prometheus to scrape this endpoint:
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: 'otel-collector'
     static_configs:

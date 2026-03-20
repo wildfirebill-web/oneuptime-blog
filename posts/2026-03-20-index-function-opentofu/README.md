@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, index, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Index, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the index function in OpenTofu to find the position of a value within a list.
 
@@ -76,7 +76,7 @@ variable "deploy_region" {
 }
 
 locals {
-  # Safe lookup — check first
+  # Safe lookup - check first
   region_supported = contains(var.supported_regions, var.deploy_region)
   region_index     = local.region_supported ? index(var.supported_regions, var.deploy_region) : -1
 }
@@ -114,6 +114,7 @@ variable "ordered_regions" {
 }
 
 # Create a map ordered by priority (lower index = higher priority)
+
 locals {
   region_priority = {
     for region in var.ordered_regions :
@@ -138,4 +139,4 @@ They are inverses of each other: `element(list, index(list, v)) == v` when `v` i
 
 ## Summary
 
-`index(list, value)` returns the zero-based position of a value in a list. Use it to find the position of a known value — such as the index of a preferred availability zone in a list of zones, or to map values to their ordinal positions. Always use `contains()` first to guard against the error thrown when the value isn't found. For the reverse operation (position to value), use `element()`.
+`index(list, value)` returns the zero-based position of a value in a list. Use it to find the position of a known value - such as the index of a preferred availability zone in a list of zones, or to map values to their ordinal positions. Always use `contains()` first to guard against the error thrown when the value isn't found. For the reverse operation (position to value), use `element()`.

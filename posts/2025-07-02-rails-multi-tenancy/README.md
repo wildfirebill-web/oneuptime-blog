@@ -75,6 +75,7 @@ Let's start with a fresh Rails application that we will make multi-tenant:
 
 ```bash
 # Create a new Rails application
+
 rails new multi_tenant_app --database=postgresql
 
 # Navigate to the project

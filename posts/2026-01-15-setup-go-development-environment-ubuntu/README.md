@@ -28,6 +28,7 @@ If you have a previous Go installation, remove it first:
 
 ```bash
 # Remove existing Go installation (if any)
+
 sudo rm -rf /usr/local/go
 ```
 

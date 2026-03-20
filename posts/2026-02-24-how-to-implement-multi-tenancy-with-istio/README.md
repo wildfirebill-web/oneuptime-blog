@@ -79,6 +79,7 @@ The most important part is preventing Tenant A from calling Tenant B's services.
 
 ```yaml
 # Default deny for Tenant A's namespace
+
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:

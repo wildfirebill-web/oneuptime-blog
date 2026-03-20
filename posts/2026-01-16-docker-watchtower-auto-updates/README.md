@@ -51,6 +51,7 @@ services:
 
 ```bash
 # Check every hour
+
 docker run -d \
   --name watchtower \
   -v /var/run/docker.sock:/var/run/docker.sock \

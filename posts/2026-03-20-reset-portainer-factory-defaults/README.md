@@ -1,4 +1,4 @@
-# How to Reset Portainer to Factory Defaults
+# How to Reset Portainer to Factory Defaults - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ A factory reset of Portainer wipes all users, settings, registries, and environm
 
 ```bash
 # Create a backup of the current Portainer database
+
 docker run --rm -v portainer_data:/data alpine \
   tar czf - /data > portainer-backup-$(date +%Y%m%d-%H%M%S).tar.gz
 

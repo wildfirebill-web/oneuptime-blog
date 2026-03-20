@@ -246,6 +246,7 @@ import vertexai
 app = Flask(__name__)
 
 # Initialize on cold start
+
 aiplatform.init(project="your-project-id", location="us-central1")
 endpoint = aiplatform.MatchingEngineIndexEndpoint(
     "projects/YOUR_PROJECT/locations/us-central1/indexEndpoints/ENDPOINT_ID"

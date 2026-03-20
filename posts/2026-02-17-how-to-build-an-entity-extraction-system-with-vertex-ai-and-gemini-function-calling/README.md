@@ -48,6 +48,7 @@ from vertexai.generative_models import (
 )
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Define the entity extraction schema as a function declaration

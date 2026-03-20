@@ -16,6 +16,7 @@ Calico Grafana dashboards expose sensitive network information including topolog
 
 ```bash
 # Create a read-only viewer role for Calico dashboards
+
 curl -X POST "http://grafana.monitoring.svc:3000/api/teams" \
   -H "Authorization: Bearer ${ADMIN_TOKEN}" \
   -H "Content-Type: application/json" \

@@ -27,6 +27,7 @@ Before writing any code, you need two things: the protobuf compiler (`protoc`) a
 
 ```bash
 # Install protoc on macOS
+
 brew install protobuf
 
 # Install protoc on Ubuntu/Debian

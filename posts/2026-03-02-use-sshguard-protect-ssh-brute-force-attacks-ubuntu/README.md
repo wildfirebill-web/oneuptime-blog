@@ -18,6 +18,7 @@ sshguard parses log output, looking for failed authentication messages. When an 
 
 ```bash
 # Update the package list
+
 sudo apt update
 
 # Install sshguard

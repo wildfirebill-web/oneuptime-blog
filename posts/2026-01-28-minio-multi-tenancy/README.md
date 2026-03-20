@@ -43,6 +43,7 @@ The most common approach uses a single MinIO cluster with IAM policies to isolat
 
 ```bash
 # Create dedicated buckets for each tenant
+
 mc mb myminio/tenant-alpha-data
 mc mb myminio/tenant-beta-data
 mc mb myminio/tenant-gamma-data

@@ -8,7 +8,7 @@ Description: Learn how to safely upgrade providers with breaking changes in Open
 
 ## Introduction
 
-Provider major version upgrades often contain breaking changes — renamed resources, changed attribute types, removed arguments, or different import formats. Without careful planning, upgrading providers can cause unexpected plan changes or apply failures. This guide covers a safe upgrade process.
+Provider major version upgrades often contain breaking changes - renamed resources, changed attribute types, removed arguments, or different import formats. Without careful planning, upgrading providers can cause unexpected plan changes or apply failures. This guide covers a safe upgrade process.
 
 ## Pinning Provider Versions
 
@@ -16,6 +16,7 @@ Use version constraints to control when upgrades happen.
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     aws = {

@@ -46,6 +46,7 @@ The most common cause is trying to checkout a remote branch that has not been fe
 
 ```bash
 # This fails if the branch only exists on remote
+
 git checkout feature-xyz
 # error: pathspec 'feature-xyz' did not match any file(s) known to git
 ```

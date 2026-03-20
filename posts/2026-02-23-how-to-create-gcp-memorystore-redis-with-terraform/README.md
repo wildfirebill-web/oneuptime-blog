@@ -16,6 +16,7 @@ Terraform makes it easy to define Memorystore instances as code, so you can spin
 
 ```hcl
 # Enable the Memorystore API
+
 resource "google_project_service" "redis" {
   project = var.project_id
   service = "redis.googleapis.com"

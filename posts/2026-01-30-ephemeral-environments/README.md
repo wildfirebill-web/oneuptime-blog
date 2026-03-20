@@ -70,6 +70,7 @@ The environment controller is the brain of your ephemeral environment system. It
 
 ```yaml
 # environment-controller/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -775,7 +776,7 @@ func ptr[T any](v T) *T {
 }
 ```
 
-## Resource Cleanup
+Resource Cleanup
 
 Proper resource cleanup is critical to prevent orphaned resources and runaway costs. Implement multiple cleanup strategies to ensure no resources are left behind.
 
@@ -1180,7 +1181,7 @@ func (t *CostTracker) EnforceBudgetLimits(ctx context.Context) error {
 }
 ```
 
-### Resource Quotas and Limits
+Resource Quotas and Limits
 
 Apply quotas to prevent any single environment from consuming too many resources:
 

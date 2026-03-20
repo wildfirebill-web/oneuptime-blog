@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, CI/CD, DevOps, Jenkins, Gitea, Pipeline
+Tags: Portainer, Docker, CI/CD, DevOps, Jenkins, Gitea, Pipelines
 
 Description: Build a complete self-hosted CI/CD pipeline with Gitea, Jenkins, and Portainer webhooks for automated build, test, and deployment workflows.
 
 ## Introduction
 
-A complete CI/CD pipeline automates the journey from code commit to production deployment. This guide builds an entirely self-hosted pipeline using Gitea (Git hosting), Jenkins (CI/CD), a Docker registry, and Portainer webhooks for deployments — no reliance on GitHub Actions or external services.
+A complete CI/CD pipeline automates the journey from code commit to production deployment. This guide builds an entirely self-hosted pipeline using Gitea (Git hosting), Jenkins (CI/CD), a Docker registry, and Portainer webhooks for deployments - no reliance on GitHub Actions or external services.
 
 ## Architecture
 
-```
+```text
 Developer → Gitea (Git) → Jenkins (Build/Test) → Registry → Portainer (Deploy)
 ```
 
@@ -20,6 +20,7 @@ Developer → Gitea (Git) → Jenkins (Build/Test) → Registry → Portainer (D
 
 ```yaml
 # docker-compose.yml - Self-hosted CI/CD Stack
+
 version: "3.8"
 
 networks:
@@ -279,4 +280,4 @@ curl -X PUT \
 
 ## Conclusion
 
-Your self-hosted CI/CD pipeline now automates the entire software delivery process. Gitea hosts your code, Jenkins builds, tests, and packages it, the private registry stores your Docker images, and Portainer webhooks trigger deployments. This stack runs entirely on your own infrastructure — no third-party dependencies, no data leaving your network, and no per-seat pricing. Portainer sits at the center of the deployment stage, making it easy to track what version is running in each environment.
+Your self-hosted CI/CD pipeline now automates the entire software delivery process. Gitea hosts your code, Jenkins builds, tests, and packages it, the private registry stores your Docker images, and Portainer webhooks trigger deployments. This stack runs entirely on your own infrastructure - no third-party dependencies, no data leaving your network, and no per-seat pricing. Portainer sits at the center of the deployment stage, making it easy to track what version is running in each environment.

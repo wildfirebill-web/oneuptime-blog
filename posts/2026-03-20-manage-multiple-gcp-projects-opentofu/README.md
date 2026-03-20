@@ -14,6 +14,7 @@ GCP uses projects as the fundamental isolation boundary. Large organizations mai
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     google = {
@@ -23,7 +24,7 @@ terraform {
   }
 }
 
-# Default provider — production project
+# Default provider - production project
 provider "google" {
   project = var.prod_project_id
   region  = "us-central1"
@@ -94,7 +95,7 @@ resource "google_compute_shared_vpc_service_project" "prod" {
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account.json"
 
 # Workload Identity (preferred for GKE)
-# No explicit credentials needed — uses Workload Identity Federation
+# No explicit credentials needed - uses Workload Identity Federation
 
 # For GitHub Actions
 # Use Workload Identity Federation instead of service account keys

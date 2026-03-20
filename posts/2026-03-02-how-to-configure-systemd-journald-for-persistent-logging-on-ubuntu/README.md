@@ -19,6 +19,7 @@ The journal operates in two modes:
 
 ```bash
 # Check current storage mode
+
 journalctl --disk-usage
 
 # Identify where journals are stored

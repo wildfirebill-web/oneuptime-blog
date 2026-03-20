@@ -37,6 +37,7 @@ kubectl logs $NODE_POD -n kube-system -c calico-node | grep -i "felix\|error" | 
 
 ```bash
 # Verify calico-config has correct datastore settings
+
 kubectl get configmap calico-config -n kube-system -o yaml
 
 # For Kubernetes datastore: verify API server is reachable

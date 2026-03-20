@@ -175,6 +175,7 @@ Note the `Set-Cookie` header value. Then test affinity:
 
 ```bash
 # All of these should hit the same pod
+
 curl -b "SERVER_ID=abc123def" http://web-app/
 curl -b "SERVER_ID=abc123def" http://web-app/
 curl -b "SERVER_ID=abc123def" http://web-app/

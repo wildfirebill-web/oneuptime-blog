@@ -30,6 +30,7 @@ mkdir -p certs
 cd certs
 
 # Generate root CA
+
 make -f ../tools/certs/Makefile.selfsigned.mk root-ca
 
 # Generate certs for each cluster

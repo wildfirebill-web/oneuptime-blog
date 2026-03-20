@@ -50,6 +50,7 @@ Here is a script to analyze your current Aurora costs and estimate savings.
 
 ```python
 # Analyze Aurora costs and estimate I/O-Optimized savings
+
 import boto3
 from datetime import datetime, timedelta
 

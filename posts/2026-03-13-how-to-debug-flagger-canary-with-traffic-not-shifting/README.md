@@ -28,6 +28,7 @@ Confirm that Flagger is configured with the correct mesh provider.
 
 ```bash
 # Check Flagger's mesh provider setting
+
 kubectl get deployment flagger -n <flagger-namespace> -o yaml | grep meshProvider
 
 # Verify the Canary resource provider matches

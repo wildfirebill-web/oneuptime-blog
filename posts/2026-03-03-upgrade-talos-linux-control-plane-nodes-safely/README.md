@@ -24,6 +24,7 @@ This is the most critical pre-check. Never start a control plane upgrade with an
 
 ```bash
 # Check etcd status
+
 talosctl etcd status --nodes <cp-node-1>
 
 # Verify all members are present and healthy

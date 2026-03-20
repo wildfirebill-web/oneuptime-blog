@@ -19,6 +19,7 @@ The first few lines of a Bash script set the foundation for everything that foll
 # Use env to find bash, making the script portable across systems
 
 # Exit on error, undefined variables, and pipe failures
+
 set -euo pipefail
 
 # Enable debug mode if DEBUG environment variable is set

@@ -16,6 +16,7 @@ A Docker context is a named configuration that tells the Docker CLI where to sen
 
 ```bash
 # List all contexts
+
 docker context ls
 
 # Output:

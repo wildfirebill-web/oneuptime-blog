@@ -28,6 +28,7 @@ Most CI/CD platforms support concurrency controls that serialize pipeline runs:
 
 ```yaml
 # .github/workflows/terraform.yml
+
 name: Terraform Apply
 
 on:

@@ -1,4 +1,4 @@
-# How to Monitor Container CPU and Memory Stats in Portainer
+# How to Monitor Container CPU and Memory Stats in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to view real-time CPU, memory, network, and disk I/O stat
 
 ## Introduction
 
-Portainer includes a real-time container statistics view powered by Docker's stats API. This gives you instant visibility into CPU usage, memory consumption, network traffic, and disk I/O for any running container — directly in the web browser, without needing external monitoring tools.
+Portainer includes a real-time container statistics view powered by Docker's stats API. This gives you instant visibility into CPU usage, memory consumption, network traffic, and disk I/O for any running container - directly in the web browser, without needing external monitoring tools.
 
 ## Prerequisites
 
@@ -31,10 +31,11 @@ The stats view shows real-time metrics refreshing every few seconds:
 
 ### CPU Usage
 
-```
+```text
 CPU Usage: 12.4%
 
 # This represents the container's CPU usage as a percentage
+
 # of the total available CPU on the host (across all cores)
 # For a 4-core host: 100% CPU = using all 4 cores fully
 # For a 2-core limit: 100% CPU = using both allocated cores
@@ -42,7 +43,7 @@ CPU Usage: 12.4%
 
 ### Memory Usage
 
-```
+```text
 Memory Usage: 256 MiB / 512 MiB  (50%)
 
 # "256 MiB" = memory currently in use by the container
@@ -55,7 +56,7 @@ Memory Usage: 256 MiB / 62.9 GiB (0.4%)  (shows total host RAM)
 
 ### Network I/O
 
-```
+```text
 Network I/O: 1.2 GB / 450 MB
 # "1.2 GB" = data received (inbound)
 # "450 MB" = data transmitted (outbound)
@@ -64,7 +65,7 @@ Network I/O: 1.2 GB / 450 MB
 
 ### Block I/O (Disk)
 
-```
+```text
 Block I/O: 2.5 GB / 1.1 GB
 # "2.5 GB" = data read from disk
 # "1.1 GB" = data written to disk
@@ -102,7 +103,7 @@ redis         0.3%    45MiB / 256MiB      5.2MB / 3.1MB  0B / 0B
 
 If CPU usage is consistently above 80%:
 
-1. Check if the container has a CPU limit — it may be throttled.
+1. Check if the container has a CPU limit - it may be throttled.
 2. Look for infinite loops or high-load queries.
 3. Consider adding a CPU limit to prevent starvation of other containers.
 4. Scale horizontally if one container can't keep up.

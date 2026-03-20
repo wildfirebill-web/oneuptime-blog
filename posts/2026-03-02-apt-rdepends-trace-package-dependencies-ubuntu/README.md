@@ -14,6 +14,7 @@ Understanding package dependencies becomes important when you're troubleshooting
 
 ```bash
 # Install apt-rdepends
+
 sudo apt install apt-rdepends
 ```
 

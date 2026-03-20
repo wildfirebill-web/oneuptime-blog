@@ -137,6 +137,7 @@ Helm provides pre-install and pre-upgrade hooks for migrations:
 
 ```yaml
 # templates/db-migrate-job.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

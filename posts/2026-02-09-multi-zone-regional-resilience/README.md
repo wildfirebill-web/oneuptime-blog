@@ -22,6 +22,7 @@ Most cloud providers offer three or more zones per region. Deploying across all 
 
 ```bash
 # List available zones in your region (GCP)
+
 gcloud compute zones list --filter="region:us-central1"
 
 # List availability zones (AWS)

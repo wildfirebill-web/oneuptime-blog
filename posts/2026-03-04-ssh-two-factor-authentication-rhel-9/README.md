@@ -24,6 +24,7 @@ There are several ways to combine factors:
 
 ```bash
 # Enable EPEL repository
+
 sudo dnf install epel-release -y
 
 # Install the PAM module

@@ -18,6 +18,7 @@ The default VPC comes with firewall rules that allow SSH and RDP from anywhere o
 
 ```bash
 # Delete all firewall rules in the default network
+
 gcloud compute firewall-rules list \
   --filter="network=default" \
   --format="value(name)" | while read rule; do

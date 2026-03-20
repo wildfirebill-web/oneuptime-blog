@@ -8,7 +8,7 @@ Description: Learn how to configure BGP route dampening to suppress unstable rou
 
 ## What Is BGP Route Flapping?
 
-A BGP route flap occurs when a prefix is withdrawn and re-advertised repeatedly—typically due to an unstable link or interface. Each flap causes UPDATE messages to propagate across the Internet, consuming CPU and bandwidth. BGP dampening penalizes flapping routes by suppressing them temporarily.
+A BGP route flap occurs when a prefix is withdrawn and re-advertised repeatedly-typically due to an unstable link or interface. Each flap causes UPDATE messages to propagate across the Internet, consuming CPU and bandwidth. BGP dampening penalizes flapping routes by suppressing them temporarily.
 
 ## How Dampening Works
 
@@ -22,7 +22,7 @@ Each time a route flaps (is withdrawn), its penalty increases by 1000 (default).
 
 Enable dampening globally for all BGP routes using default values:
 
-```
+```text
 router bgp 65001
  ! Enable dampening with default parameters
  bgp dampening
@@ -30,7 +30,7 @@ router bgp 65001
 
 Or configure custom parameters:
 
-```
+```text
 router bgp 65001
  ! Custom: half-life=15min, reuse=750, suppress=2000, max-suppress=60min
  bgp dampening 15 750 2000 60
@@ -40,7 +40,7 @@ router bgp 65001
 
 Apply dampening only to specific prefixes using a route map:
 
-```
+```text
 ! Define which prefixes to dampen
 ip prefix-list DAMPEN_THESE seq 10 permit 0.0.0.0/0 ge 25
 
@@ -59,7 +59,7 @@ router bgp 65001
 
 ## Step 3: View Dampened Routes
 
-```
+```text
 ! Show all currently dampened routes
 Router# show ip bgp dampened-paths
 
@@ -71,7 +71,7 @@ d  192.168.99.0/24  203.0.113.1      00:45:00  65100 65200 i
 ! The 'Reuse' column shows how long until the route is re-advertised
 ```
 
-```
+```text
 ! Show history - routes that had penalties but aren't suppressed yet
 Router# show ip bgp flap-statistics
 
@@ -81,7 +81,7 @@ Router# show ip bgp flap-statistics
 
 ## Step 4: Check a Route's Current Penalty
 
-```
+```text
 Router# show ip bgp 192.168.99.0/24
 
 BGP routing table entry for 192.168.99.0/24
@@ -94,7 +94,7 @@ BGP routing table entry for 192.168.99.0/24
 
 If a route has been stabilized and you want to re-advertise it immediately:
 
-```
+```text
 ! Clear dampening for a specific prefix
 Router# clear ip bgp dampening 192.168.99.0/24
 

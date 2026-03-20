@@ -20,6 +20,7 @@ Ensure your Elasticsearch cluster is accessible from the Kubernetes cluster. If 
 
 ```bash
 # Check Elasticsearch service
+
 kubectl get svc -n logging elasticsearch
 
 # Verify connectivity

@@ -41,6 +41,7 @@ Snapshot tests use the same Jest setup as unit tests. No additional dependencies
 
 ```bash
 # Run snapshot tests (same as running any Jest test)
+
 npm test
 
 # Update snapshots when you've made intentional changes

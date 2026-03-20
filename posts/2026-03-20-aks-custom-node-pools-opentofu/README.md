@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, AKS, Node Pools, Kubernetes, Autoscaling, Infrastructure as Code
+Tags: OpenTofu, Azure, AKS, Node Pool, Kubernetes, Autoscaling, Infrastructure as Code
 
 Description: Learn how to create AKS clusters with custom node pools using OpenTofu, including system and user node pools with different VM sizes, autoscaling, and node pool taints for workload isolation.
 
 ## Introduction
 
-AKS node pools are groups of VMs with the same configuration within a Kubernetes cluster. Every AKS cluster has at least one system node pool for Kubernetes system components (kube-system), and you can add user node pools for application workloads. Different node pools can use different VM sizes, OS types, availability zones, and autoscaling settings—enabling you to match compute resources to specific workload requirements (GPU nodes for ML, high-memory for databases, general-purpose for APIs).
+AKS node pools are groups of VMs with the same configuration within a Kubernetes cluster. Every AKS cluster has at least one system node pool for Kubernetes system components (kube-system), and you can add user node pools for application workloads. Different node pools can use different VM sizes, OS types, availability zones, and autoscaling settings-enabling you to match compute resources to specific workload requirements (GPU nodes for ML, high-memory for databases, general-purpose for APIs).
 
 ## Prerequisites
 
@@ -75,6 +75,7 @@ resource "azurerm_kubernetes_cluster" "main" {
 
 ```hcl
 # General-purpose workload pool
+
 resource "azurerm_kubernetes_cluster_node_pool" "app" {
   name                  = "app"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.main.id
@@ -192,4 +193,4 @@ az aks nodepool scale \
 
 ## Conclusion
 
-Use `only_critical_addons_enabled = true` on system node pools to prevent user workloads from running alongside Kubernetes system components, reducing risk of resource starvation on critical cluster services. Use `os_disk_type = "Ephemeral"` for node pools when possible—ephemeral OS disks use VM host cache and provide better read performance, lower latency, and zero OS disk cost. Set GPU node pools to `min_count = 0` with Cluster Autoscaler to scale down to zero during idle periods, dramatically reducing GPU costs.
+Use `only_critical_addons_enabled = true` on system node pools to prevent user workloads from running alongside Kubernetes system components, reducing risk of resource starvation on critical cluster services. Use `os_disk_type = "Ephemeral"` for node pools when possible-ephemeral OS disks use VM host cache and provide better read performance, lower latency, and zero OS disk cost. Set GPU node pools to `min_count = 0` with Cluster Autoscaler to scale down to zero during idle periods, dramatically reducing GPU costs.

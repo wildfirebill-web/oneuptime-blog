@@ -337,6 +337,7 @@ Test that rate limiting works correctly by sending requests with different consu
 
 ```bash
 # Test premium tier
+
 for i in $(seq 1 20); do
   curl -s -o /dev/null -w "%{http_code}\n" \
     -H "X-API-Tier: premium" \

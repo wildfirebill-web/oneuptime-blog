@@ -41,6 +41,7 @@ Convert2RHEL will:
 
 ```bash
 # Verify conversion
+
 cat /etc/redhat-release
 sudo subscription-manager status
 sudo dnf update -y

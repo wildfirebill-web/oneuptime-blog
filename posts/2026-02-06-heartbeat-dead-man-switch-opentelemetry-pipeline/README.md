@@ -38,6 +38,7 @@ The OpenTelemetry Collector does not emit a built-in heartbeat metric by default
 
 ```yaml
 # otel-collector-config.yaml
+
 # Enable the Collector's internal metrics and expose them for scraping
 service:
   telemetry:

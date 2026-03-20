@@ -20,6 +20,7 @@ Install Tekton Triggers after Tekton Pipelines:
 
 ```bash
 # Install Tekton Pipelines
+
 kubectl apply -f https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 
 # Install Tekton Triggers

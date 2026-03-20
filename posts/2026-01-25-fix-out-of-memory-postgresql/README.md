@@ -114,6 +114,7 @@ ORDER BY query_start;
 
 ```bash
 # Check system memory
+
 free -h
 
 # Check PostgreSQL process memory

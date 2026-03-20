@@ -50,6 +50,7 @@ AWS provides a managed policy specifically for this purpose:
 
 ```hcl
 # Lambda execution role
+
 resource "aws_iam_role" "lambda" {
   name = "lambda-vpc-execution-role"
 

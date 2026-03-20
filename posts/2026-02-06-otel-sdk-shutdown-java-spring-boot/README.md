@@ -133,6 +133,7 @@ Spring Boot 2.3+ supports graceful shutdown. Configure it to work with OpenTelem
 
 ```yaml
 # application.yml
+
 server:
   shutdown: graceful
 

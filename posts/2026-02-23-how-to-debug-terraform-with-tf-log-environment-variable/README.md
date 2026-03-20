@@ -18,6 +18,7 @@ TF_LOG supports five logging levels, from least to most verbose:
 
 ```bash
 # ERROR - Only errors
+
 export TF_LOG=ERROR
 
 # WARN - Errors and warnings

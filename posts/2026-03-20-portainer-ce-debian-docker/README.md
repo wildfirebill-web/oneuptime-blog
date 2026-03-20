@@ -90,6 +90,7 @@ docker inspect portainer
 docker stop portainer && docker rm portainer
 docker pull portainer/portainer-ce:latest
 # Re-run the deploy command from Step 4
+
 ```
 
 ## Conclusion

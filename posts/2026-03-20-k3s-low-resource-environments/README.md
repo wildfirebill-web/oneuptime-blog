@@ -1,4 +1,4 @@
-# How to Configure K3s for Low-Resource Environments
+# How to Configure K3s for Low-Resource Environments - Environments
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ The biggest wins come from disabling unused built-in components:
 
 ```yaml
 # /etc/rancher/k3s/config.yaml
+
 # Disable all non-essential components
 disable:
   - traefik         # ~50MB RAM savings

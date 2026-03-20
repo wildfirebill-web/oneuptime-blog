@@ -1,4 +1,4 @@
-# How to Configure Per-Cluster Registry Access in Portainer for Kubernetes
+# How to Configure Per-Cluster Registry Access in Portainer for Kubernetes (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure registry access on a per-Kubernetes-cluster 
 
 ## Introduction
 
-In multi-cluster Portainer environments, different Kubernetes clusters may use different container registries. Portainer allows you to configure registry access per cluster — ensuring each cluster's deployments can only use approved registries with appropriate credentials. This guide covers configuring per-cluster registry access in Portainer for Kubernetes.
+In multi-cluster Portainer environments, different Kubernetes clusters may use different container registries. Portainer allows you to configure registry access per cluster - ensuring each cluster's deployments can only use approved registries with appropriate credentials. This guide covers configuring per-cluster registry access in Portainer for Kubernetes.
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ For each Kubernetes cluster, specify which registries it can access:
 3. Navigate to **Registry access**
 4. Select which registries this cluster can use:
 
-```
+```bash
 Environment: production-k8s
 Allowed registries:
   [x] production-registry.company.com    (allow)
@@ -48,6 +48,7 @@ For Kubernetes to pull from private registries, create image pull secrets in eac
 
 ```bash
 # Create pull secret for a private registry
+
 kubectl create secret docker-registry regcred \
   --docker-server=registry.company.com \
   --docker-username=portainer-user \

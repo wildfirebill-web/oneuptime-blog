@@ -268,6 +268,7 @@ Check replication status:
 
 ```bash
 # On primary - check replication connections
+
 kubectl exec postgres-primary-0 -n database -- \
   psql -U postgres -c "SELECT * FROM pg_stat_replication;"
 

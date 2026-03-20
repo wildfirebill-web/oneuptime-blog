@@ -162,6 +162,7 @@ For resources that are truly shared across teams, create a dedicated namespace:
 
 ```yaml
 # Namespace for shared Istio resources
+
 apiVersion: v1
 kind: Namespace
 metadata:

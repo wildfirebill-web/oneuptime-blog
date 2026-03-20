@@ -42,6 +42,7 @@ Kyverno tests are defined in YAML files. A test manifest specifies which policie
 
 ```yaml
 # kyverno-test.yaml
+
 name: require-labels-test          # Name of the test suite
 policies:                          # List of policy files to test
   - policies/require-labels.yaml
@@ -77,7 +78,7 @@ policy-tests/
     └── namespace-trigger.yaml
 ```
 
-## Resource Fixtures and Expected Results
+Resource Fixtures and Expected Results
 
 Resource fixtures are Kubernetes manifests that represent the inputs to your policies.
 

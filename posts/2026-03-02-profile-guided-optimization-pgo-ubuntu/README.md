@@ -30,6 +30,7 @@ The profile data helps the compiler make better decisions about:
 
 ```bash
 # Install GCC and necessary build tools
+
 sudo apt update
 sudo apt install gcc g++ make -y
 

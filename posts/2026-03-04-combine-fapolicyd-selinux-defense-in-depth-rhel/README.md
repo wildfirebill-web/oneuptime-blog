@@ -16,6 +16,7 @@ SELinux enforces mandatory access controls based on security contexts. It restri
 
 ```bash
 # Check SELinux status
+
 getenforce
 
 # Check fapolicyd status

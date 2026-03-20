@@ -20,6 +20,7 @@ IP blacklisting allows you to drop traffic from known malicious hosts. With nfta
 
 ```bash
 # Create the filter table if it doesn't exist
+
 nft add table inet filter
 
 # Add an input chain

@@ -8,11 +8,11 @@ Description: Understand the IPv6 Routing Header extension header, routing header
 
 ## Introduction
 
-The IPv6 Routing Header (Next Header = 43) specifies one or more intermediate nodes that a packet must visit on its way to the destination. This is source routing — the packet originator can specify the exact path. Due to serious security vulnerabilities in the original Type 0 Routing Header (RH0), its use has been deprecated. The currently used Routing Header type is Type 2, designed specifically for Mobile IPv6.
+The IPv6 Routing Header (Next Header = 43) specifies one or more intermediate nodes that a packet must visit on its way to the destination. This is source routing - the packet originator can specify the exact path. Due to serious security vulnerabilities in the original Type 0 Routing Header (RH0), its use has been deprecated. The currently used Routing Header type is Type 2, designed specifically for Mobile IPv6.
 
 ## Routing Header General Format
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -31,16 +31,16 @@ Segments Left: Number of explicitly listed nodes still to visit
 | Type | Name | Status | RFC |
 |---|---|---|---|
 | 0 | Type 0 (RH0) | Deprecated / drop required | RFC 5095 |
-| 1 | Nimrod | Never deployed | — |
+| 1 | Nimrod | Never deployed | - |
 | 2 | Mobile IPv6 | Active use | RFC 6275 |
 | 3 | RPL Source Routing | IoT/low-power networks | RFC 6554 |
 | 4 | Segment Routing (SRH) | Active deployment | RFC 8754 |
 
-## Type 0 (RH0) — Why It Was Deprecated
+## Type 0 (RH0) - Why It Was Deprecated
 
 Type 0 Routing Header allowed a source to list up to 127 IPv6 addresses for the packet to visit in sequence. This created a devastating amplification attack:
 
-```
+```text
 Attack scenario with RH0 (RFC 5095 explains this):
 
 Attacker → Victim1 (via Victim2) → Victim1 (via Victim2) → Victim1 ...
@@ -59,6 +59,7 @@ RFC 5095 (2007) deprecated RH0. All routers MUST drop packets with RH0:
 
 ```bash
 # Linux: configure to drop RH0 packets
+
 # (Linux drops RH0 by default since kernel 2.6.21)
 cat /proc/sys/net/ipv6/conf/all/accept_source_route
 # 0 = reject source routing
@@ -70,9 +71,9 @@ sudo sysctl -w net.ipv6.conf.all.accept_source_route=0
 sudo sysctl -w net.ipv6.conf.default.accept_source_route=0
 ```
 
-## Type 2 — Mobile IPv6 Routing Header
+## Type 2 - Mobile IPv6 Routing Header
 
-Type 2 carries exactly one address — the mobile node's home address. It is used by the home agent to forward packets to the mobile node's care-of address while preserving the home address as the destination:
+Type 2 carries exactly one address - the mobile node's home address. It is used by the home agent to forward packets to the mobile node's care-of address while preserving the home address as the destination:
 
 ```python
 import struct
@@ -118,7 +119,7 @@ print(f"Type 2 Routing Header ({len(rh2)} bytes): {rh2.hex()}")
 
 RFC 8754 defines the Segment Routing Header for traffic engineering in modern networks:
 
-```
+```javascript
 SRH enables:
 - Explicit path through specific network nodes
 - Traffic engineering in SP networks
@@ -142,4 +143,4 @@ sudo sysctl -w net.ipv6.conf.all.seg6_enabled=1
 
 ## Conclusion
 
-The IPv6 Routing Header's history is a lesson in security-conscious protocol design. Type 0's source routing was a powerful but exploitable feature — deprecated after its amplification attack potential was recognized. Modern deployments use Type 2 (Mobile IPv6) and Type 4 (Segment Routing) for legitimate source routing applications. Always disable RH0 acceptance on your routers and hosts; Linux rejects it by default, but confirm this in your network policy.
+The IPv6 Routing Header's history is a lesson in security-conscious protocol design. Type 0's source routing was a powerful but exploitable feature - deprecated after its amplification attack potential was recognized. Modern deployments use Type 2 (Mobile IPv6) and Type 4 (Segment Routing) for legitimate source routing applications. Always disable RH0 acceptance on your routers and hosts; Linux rejects it by default, but confirm this in your network policy.

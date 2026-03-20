@@ -214,6 +214,7 @@ Since cluster resources are denied by default (unless whitelisted), blacklists f
 
 ```yaml
 # Allow all cluster resources except the most dangerous ones
+
 clusterResourceWhitelist:
   - group: "*"
     kind: "*"

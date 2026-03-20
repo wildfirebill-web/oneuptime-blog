@@ -1,4 +1,4 @@
-# How to Fix "Custom Registry Credentials Ignored" in Portainer
+# How to Fix 'Custom Registry Credentials Ignored' in Portainer - Ignored
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,8 +12,9 @@ A common frustration with Portainer is configuring a custom private registry and
 
 ## Common Symptoms
 
-```
+```bash
 # Pull fails even though registry is configured
+
 Error: pull access denied for registry.company.com/myimage,
 repository does not exist or may require 'docker login'
 
@@ -28,9 +29,9 @@ Pulling from docker.io instead of registry.company.com
 
 ### Cause 1: URL Mismatch
 
-The most common cause — the URL in Portainer's registry config doesn't match the image URL prefix.
+The most common cause - the URL in Portainer's registry config doesn't match the image URL prefix.
 
-```
+```text
 Portainer registry URL:  registry.company.com
 Image in stack:          https://registry.company.com/myimage:latest  ← Has https://
 
@@ -98,7 +99,7 @@ docker login harbor.company.com \
   --username portainer-user \
   --password mypassword
 
-# If this fails, the credentials are wrong — fix them in Portainer
+# If this fails, the credentials are wrong - fix them in Portainer
 ```
 
 ## Step 3: Clear Docker Credential Cache
@@ -205,7 +206,7 @@ This is a workaround, not a permanent fix. The root cause should still be identi
 
 ## Prevention Checklist
 
-```
+```bash
 [ ] Registry URL in Portainer matches image URL prefix exactly
 [ ] No https:// prefix in the registry URL
 [ ] Port number included if non-standard (e.g., :5000)

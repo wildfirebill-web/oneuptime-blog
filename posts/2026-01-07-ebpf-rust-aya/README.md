@@ -59,6 +59,7 @@ First, install the Rust toolchain with the nightly compiler and the BPF target. 
 
 ```bash
 # Install Rust with rustup if not already installed
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Install the nightly toolchain - required for eBPF compilation

@@ -38,6 +38,7 @@ Envoy Gateway provides retry support through BackendTrafficPolicy:
 
 ```yaml
 # envoy-retry-policy.yaml
+
 apiVersion: gateway.envoyproxy.io/v1alpha1
 kind: BackendTrafficPolicy
 metadata:

@@ -8,17 +8,17 @@ Description: Learn how to configure BGP using the address-family model for IPv4 
 
 ## The Old Model vs. the Address-Family Model
 
-In older Cisco IOS BGP configurations, IPv4 neighbors were activated automatically and network statements lived directly under `router bgp`. The newer address-family model (required for multiprotocol BGP—MP-BGP) separates IPv4, IPv6, and VPN route families into explicit `address-family` blocks.
+In older Cisco IOS BGP configurations, IPv4 neighbors were activated automatically and network statements lived directly under `router bgp`. The newer address-family model (required for multiprotocol BGP-MP-BGP) separates IPv4, IPv6, and VPN route families into explicit `address-family` blocks.
 
 **Old model (legacy):**
-```
+```text
 router bgp 65001
  neighbor 10.0.0.1 remote-as 65002
  network 192.168.1.0 mask 255.255.255.0
 ```
 
 **Address-family model (current standard):**
-```
+```text
 router bgp 65001
  neighbor 10.0.0.1 remote-as 65002
  !
@@ -30,7 +30,7 @@ router bgp 65001
 
 ## Step 1: Basic IPv4 Unicast Address Family Configuration
 
-```
+```text
 router bgp 65001
  bgp router-id 1.1.1.1
 
@@ -61,7 +61,7 @@ router bgp 65001
 
 In the address-family model, disable automatic route summarization to prevent unexpected prefix aggregation:
 
-```
+```text
 router bgp 65001
  address-family ipv4 unicast
   ! Disable automatic summarization to classful boundaries
@@ -76,7 +76,7 @@ router bgp 65001
 
 The same neighbor can participate in multiple address families:
 
-```
+```text
 router bgp 65001
  neighbor 10.0.0.1 remote-as 65001   ! iBGP neighbor
 
@@ -103,7 +103,7 @@ router bgp 65001
 
 By default, Cisco IOS automatically activates neighbors in the IPv4 unicast address family. To require explicit activation (recommended for clarity):
 
-```
+```text
 router bgp 65001
  ! Require explicit activation - neighbors not active until added to address-family
  no bgp default ipv4-unicast
@@ -121,7 +121,7 @@ This prevents accidental activation of neighbors in address families they should
 
 ## Step 5: Verify Address Family Configuration
 
-```
+```text
 ! View active neighbors per address family
 Router# show ip bgp ipv4 unicast summary
 
@@ -136,7 +136,7 @@ Router# show ip bgp neighbors 203.0.113.1 | include address family
 
 Route maps for filtering, attribute manipulation, and redistribution all go inside the address family:
 
-```
+```text
 router bgp 65001
  address-family ipv4 unicast
   ! Apply route map inbound from ISP

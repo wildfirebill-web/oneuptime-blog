@@ -30,6 +30,7 @@ If you have not added Docker's repository yet, do it now.
 
 ```bash
 # Install prerequisites
+
 sudo apt-get update
 sudo apt-get install -y ca-certificates curl gnupg
 

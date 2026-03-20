@@ -29,6 +29,7 @@ The simplest rotation policy removes files older than a specified age:
 
 ```bash
 # Remove backup files older than 30 days
+
 find /mnt/backup -name "backup-*.tar.gz" -mtime +30 -delete
 
 # Remove older than 2 weeks

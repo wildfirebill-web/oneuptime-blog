@@ -18,6 +18,7 @@ Check what your gateway sees:
 
 ```bash
 # Look at access logs
+
 kubectl logs -n istio-system <istio-ingressgateway-pod> | head -20
 ```
 

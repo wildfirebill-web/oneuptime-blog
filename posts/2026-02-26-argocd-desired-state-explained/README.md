@@ -33,6 +33,7 @@ Kubernetes itself is built on the concept of desired state. When you create a De
 
 ```yaml
 # This YAML declares a desired state
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -18,6 +18,7 @@ Run helm lint against your chart directory to see immediate feedback about probl
 
 ```bash
 # Basic linting of a chart
+
 helm lint ./my-chart
 
 # Lint with custom values

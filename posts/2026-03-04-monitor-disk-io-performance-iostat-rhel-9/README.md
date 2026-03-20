@@ -170,6 +170,7 @@ When you see these signs, investigate with:
 
 ```bash
 # Which processes are doing I/O
+
 iotop -oP
 
 # What files are being accessed

@@ -44,6 +44,7 @@ Front Door Standard/Premium uses rule sets to configure caching behavior. First,
 
 ```bash
 # Create origin group and origin first
+
 az afd origin-group create \
   --resource-group myResourceGroup \
   --profile-name myFrontDoor \

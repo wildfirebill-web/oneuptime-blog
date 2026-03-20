@@ -14,6 +14,7 @@ Assigning static IPs to Docker Compose services is useful when other systems ref
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:
@@ -90,7 +91,7 @@ The specified `ipv4_address` must:
 
 ## Referencing Services by Name Instead
 
-Static IPs are often unnecessary — Docker Compose creates DNS entries for each service name:
+Static IPs are often unnecessary - Docker Compose creates DNS entries for each service name:
 
 ```yaml
 services:

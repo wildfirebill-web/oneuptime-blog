@@ -160,6 +160,7 @@ You will need to copy this Secret into each MR namespace. Add a resource templat
 
 ```yaml
 # Add to the resources array
+
 - apiVersion: v1
   kind: Secret
   metadata:

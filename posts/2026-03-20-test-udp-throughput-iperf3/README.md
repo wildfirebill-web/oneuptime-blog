@@ -14,6 +14,7 @@ Description: Use iperf3 to measure UDP throughput, packet loss, and jitter betwe
 
 ```bash
 # Start iperf3 server on the remote host:
+
 iperf3 -s
 
 # Run UDP test from client (sends at 100 Mbps for 10 seconds):
@@ -31,7 +32,7 @@ iperf3 -c 10.20.0.5 -u -b 100M -t 10
 
 ## Key UDP Metrics
 
-```
+```text
 Bitrate (sender):   Rate iperf3 actually sent
 Bitrate (receiver): Rate that was received (< sender = loss)
 Jitter:             Average delay variation (ms) - critical for VoIP/media
@@ -116,4 +117,4 @@ EOF
 
 ## Conclusion
 
-`iperf3 -u` measures UDP throughput, packet loss, and jitter with a single command. Always specify the `-b` rate for UDP tests — without it, iperf3 defaults to 1 Mbps. Use the sweep test to find the point where loss begins increasing. For VoIP and real-time applications, focus on jitter: target under 5ms for acceptable call quality. The JSON output (`-J`) enables automated integration with monitoring systems.
+`iperf3 -u` measures UDP throughput, packet loss, and jitter with a single command. Always specify the `-b` rate for UDP tests - without it, iperf3 defaults to 1 Mbps. Use the sweep test to find the point where loss begins increasing. For VoIP and real-time applications, focus on jitter: target under 5ms for acceptable call quality. The JSON output (`-J`) enables automated integration with monitoring systems.

@@ -27,6 +27,7 @@ First, configure the Google Cloud provider in your Terraform configuration:
 
 ```hcl
 # Configure the Google Cloud provider
+
 terraform {
   required_providers {
     google = {

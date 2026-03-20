@@ -8,7 +8,7 @@ Description: Deploy Grafana Mimir on Rancher for scalable, long-term Prometheus-
 
 ## Introduction
 
-Grafana Mimir is a horizontally scalable, highly available metrics storage system compatible with the Prometheus remote write API. It scales to billions of metric series and provides unlimited long-term retention using object storage—making it the modern replacement for Thanos in new deployments.
+Grafana Mimir is a horizontally scalable, highly available metrics storage system compatible with the Prometheus remote write API. It scales to billions of metric series and provides unlimited long-term retention using object storage-making it the modern replacement for Thanos in new deployments.
 
 ## Prerequisites
 
@@ -36,6 +36,7 @@ kubectl create secret generic mimir-bucket-secret \
 
 ```yaml
 # mimir-values.yaml
+
 mimir:
   structuredConfig:
     common:

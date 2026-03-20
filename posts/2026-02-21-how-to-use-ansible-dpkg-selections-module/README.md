@@ -27,6 +27,7 @@ The most common use case is preventing a package from being upgraded:
 
 ```yaml
 # Hold a package to prevent any upgrades
+
 - name: Hold PostgreSQL at current version
   ansible.builtin.dpkg_selections:
     name: postgresql-15

@@ -431,7 +431,7 @@ spec:
       secretName: docker-credentials
 ```
 
-## Resource Limits
+Resource Limits
 
 Set appropriate resource limits:
 
@@ -465,6 +465,7 @@ Large builds need more memory.
 **Out of memory errors:**
 ```yaml
 # Increase memory limit
+
 resources:
   limits:
     memory: "4Gi"

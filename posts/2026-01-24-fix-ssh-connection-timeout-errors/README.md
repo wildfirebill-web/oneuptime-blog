@@ -55,6 +55,7 @@ Connection reset by peer
 
 ```bash
 # Ping the server
+
 ping -c 4 example.com
 
 # If ping works, try traceroute

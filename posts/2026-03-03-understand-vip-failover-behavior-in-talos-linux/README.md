@@ -24,6 +24,7 @@ VIP is configured in the machine config of your control plane nodes:
 
 ```yaml
 # Control plane machine config with VIP
+
 machine:
   network:
     interfaces:

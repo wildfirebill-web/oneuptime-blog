@@ -360,6 +360,7 @@ When deploying to production, configure your exporter endpoint through environme
 
 ```bash
 # .env
+
 OTEL_EXPORTER_OTLP_ENDPOINT=https://your-otel-collector:4318/v1/traces
 OTEL_SERVICE_NAME=production-api
 OTEL_TRACES_SAMPLER=parentbased_traceidratio

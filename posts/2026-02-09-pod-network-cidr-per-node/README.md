@@ -65,6 +65,7 @@ The node CIDR mask size determines how many pods each node can support. Here's h
 
 ```bash
 # /24 subnet: 256 addresses, ~254 pods per node
+
 --node-cidr-mask-size=24
 
 # /25 subnet: 128 addresses, ~126 pods per node

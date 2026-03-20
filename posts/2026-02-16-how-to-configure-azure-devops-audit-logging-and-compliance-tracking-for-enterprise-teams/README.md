@@ -34,6 +34,7 @@ For programmatic access, use the Audit API:
 
 ```bash
 # Fetch audit events from the last 24 hours
+
 # Replace ORG with your organization name
 PAT="your-personal-access-token"
 ORG="myorganization"

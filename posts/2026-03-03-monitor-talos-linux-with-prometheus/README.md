@@ -18,6 +18,7 @@ The fastest way to get a full monitoring setup is through the kube-prometheus-st
 
 ```bash
 # Add the Helm repository
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

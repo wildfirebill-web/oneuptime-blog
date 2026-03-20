@@ -23,6 +23,7 @@ Create a Kubernetes secret with a token for webhook authentication.
 
 ```bash
 # Generate a random token
+
 TOKEN=$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f1)
 
 # Create the secret

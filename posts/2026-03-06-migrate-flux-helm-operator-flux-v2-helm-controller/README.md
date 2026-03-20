@@ -39,6 +39,7 @@ Before starting the migration, ensure you have the following:
 
 ```bash
 # Install the Flux v2 CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify the CLI version

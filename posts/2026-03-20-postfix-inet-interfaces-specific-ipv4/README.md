@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Postfix, IPv4, inet_interfaces, SMTP, Mail Server, Configuration
+Tags: Postfix, IPv4, Inet_interfaces, SMTP, Mail Server, Configuration
 
 Description: Configure the Postfix inet_interfaces parameter to control which IPv4 addresses the SMTP server listens on for incoming mail connections.
 
@@ -16,6 +16,7 @@ Description: Configure the Postfix inet_interfaces parameter to control which IP
 # /etc/postfix/main.cf
 
 # Listen only on specific IPv4 address
+
 inet_interfaces = 203.0.113.10
 
 # Listen on multiple specific IPs

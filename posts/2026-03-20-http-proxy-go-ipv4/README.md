@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, HTTP, Proxy, IPv4, Networking, httputil
+Tags: Go, HTTP, Proxy, IPv4, Networking, Httputil
 
 Description: Learn how to build a simple HTTP reverse proxy in Go that forwards IPv4 traffic using net/http/httputil's ReverseProxy.
 

@@ -21,6 +21,7 @@ Description: Write effective threat detection rules for IPv6-specific attacks an
 
 ```yaml
 # sigma-ndp-flood.yml
+
 # Detect NDP cache overflow attack
 
 title: NDP Cache Overflow Attack
@@ -80,7 +81,7 @@ level: high
 
 ## Splunk: IPv6 Threat Detection SPL
 
-```
+```text
 | SPL: Detect IPv6 scanning activity
 
 index=firewall protocol=tcp action=drop
@@ -93,7 +94,7 @@ index=firewall protocol=tcp action=drop
 | sort -unique_dests
 ```
 
-```
+```text
 | SPL: Detect NDP flooding
 
 index=firewall protocol=icmpv6 icmpv6_type=135
@@ -104,7 +105,7 @@ index=firewall protocol=icmpv6 icmpv6_type=135
 | table _time, dst_ip, ns_count, sources, severity
 ```
 
-```
+```text
 | SPL: Detect 6to4 and Teredo tunneling
 
 index=network

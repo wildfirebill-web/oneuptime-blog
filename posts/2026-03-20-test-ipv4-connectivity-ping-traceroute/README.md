@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, ping, traceroute, IPv4, Network Diagnostics
+Tags: Linux, Networking, Ping, Traceroute, IPv4, Network Diagnostics
 
 Description: Use ping and traceroute to test IPv4 connectivity, measure latency and packet loss, and identify where in the network path failures or delays are occurring.
 
@@ -13,7 +13,8 @@ Description: Use ping and traceroute to test IPv4 connectivity, measure latency 
 ## Basic ping
 
 ```bash
-# Ping a host — sends 4 ICMP echo requests by default (Linux sends continuously)
+# Ping a host - sends 4 ICMP echo requests by default (Linux sends continuously)
+
 ping -c 4 8.8.8.8
 
 # Ping the gateway to test local network
@@ -25,7 +26,7 @@ ping -I eth0 -c 3 8.8.8.8
 
 ## Reading ping Output
 
-```
+```yaml
 PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 64 bytes from 8.8.8.8: icmp_seq=1 ttl=118 time=11.2 ms
 64 bytes from 8.8.8.8: icmp_seq=2 ttl=118 time=10.8 ms
@@ -45,17 +46,17 @@ rtt min/avg/max/mdev = 10.8/11.0/11.2/0.200 ms
 ## Continuous Monitoring with ping
 
 ```bash
-# Ping every 0.2 seconds — good for watching intermittent loss
+# Ping every 0.2 seconds - good for watching intermittent loss
 ping -i 0.2 192.168.1.1
 
-# Flood ping (requires root) — tests bandwidth
+# Flood ping (requires root) - tests bandwidth
 sudo ping -f -c 1000 192.168.1.1
 ```
 
 ## Setting Ping TTL (to test TTL exhaustion)
 
 ```bash
-# Set TTL to 1 — ping will die at the first hop
+# Set TTL to 1 - ping will die at the first hop
 ping -t 1 8.8.8.8
 # Output: From 192.168.1.1: Time to live exceeded
 ```
@@ -75,7 +76,7 @@ traceroute -i eth0 8.8.8.8
 
 ## Reading traceroute Output
 
-```
+```text
 traceroute to 8.8.8.8, 30 hops max
  1  192.168.1.1     1.234 ms   1.100 ms   1.150 ms
  2  10.5.0.1        5.321 ms   5.210 ms   5.300 ms
@@ -87,14 +88,14 @@ traceroute to 8.8.8.8, 30 hops max
 - `* * *`: no ICMP Time Exceeded reply (hop is filtering ICMP, but path continues)
 - Three latency values: three separate probe packets per hop
 
-## tracepath — Alternative Without Root
+## tracepath - Alternative Without Root
 
 ```bash
 # tracepath works without root and discovers PMTU along the way
 tracepath 8.8.8.8
 ```
 
-## mtr — Combined ping + traceroute
+## mtr - Combined ping + traceroute
 
 ```bash
 # Install mtr

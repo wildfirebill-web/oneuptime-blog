@@ -28,6 +28,7 @@ The fastest way to run Talos in CI is the Docker provider. It runs Talos nodes a
 
 ```bash
 # Create a single-node Talos cluster using Docker
+
 talosctl cluster create \
   --provisioner docker \
   --name ci-cluster \

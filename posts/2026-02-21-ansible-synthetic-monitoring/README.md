@@ -57,6 +57,7 @@ Deploy monitoring agents in multiple geographic locations for realistic results.
 
 ```ini
 # inventory/hosts.ini
+
 [synthetic_agents]
 probe-us-east ansible_host=10.1.1.10 probe_location=us-east
 probe-us-west ansible_host=10.2.1.10 probe_location=us-west

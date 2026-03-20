@@ -34,6 +34,7 @@ The most common use case is parsing JSON output from shell commands:
 
 ```yaml
 # parse_docker.yml - Parse Docker inspect output
+
 - name: Get container information
   ansible.builtin.shell: docker inspect mycontainer --format '{{ '{{' }}json .{{ '}}' }}'
   register: docker_inspect_raw

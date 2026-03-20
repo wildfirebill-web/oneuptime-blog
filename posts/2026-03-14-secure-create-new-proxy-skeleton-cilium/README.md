@@ -32,6 +32,7 @@ Create a well-organized directory for your new protocol parser:
 cd cilium
 
 # Create the new parser directory
+
 mkdir -p proxylib/myprotocol
 
 # Create the required files

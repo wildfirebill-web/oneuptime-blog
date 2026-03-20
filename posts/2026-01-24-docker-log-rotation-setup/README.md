@@ -16,6 +16,7 @@ By default, Docker stores container logs as JSON files without size limits:
 
 ```bash
 # Check log file sizes
+
 sudo du -sh /var/lib/docker/containers/*/*-json.log
 
 # Example output showing a 15GB log file

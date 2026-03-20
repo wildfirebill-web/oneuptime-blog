@@ -28,6 +28,7 @@ If your GCP project does not already have Firebase enabled:
 
 ```bash
 # Install Firebase CLI
+
 npm install -g firebase-tools
 
 # Login and initialize Firebase for your GCP project

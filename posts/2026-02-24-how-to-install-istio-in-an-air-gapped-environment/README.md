@@ -27,6 +27,7 @@ Before going into the air-gapped network, you need to collect:
 ISTIO_VERSION=1.24.0
 
 # Download the release archive
+
 curl -L https://github.com/istio/istio/releases/download/${ISTIO_VERSION}/istio-${ISTIO_VERSION}-linux-amd64.tar.gz -o istio-${ISTIO_VERSION}.tar.gz
 
 # Extract

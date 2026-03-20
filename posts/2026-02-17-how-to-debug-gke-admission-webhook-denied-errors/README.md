@@ -40,6 +40,7 @@ The error message usually contains the webhook name. Look for it in the full err
 
 ```bash
 # Try to create the resource and capture the full error
+
 kubectl apply -f your-resource.yaml 2>&1
 ```
 

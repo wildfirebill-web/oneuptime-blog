@@ -20,6 +20,7 @@ API Gateway Usage Plans define throttling limits and quotas for API consumers, i
 
 ```hcl
 # Free tier usage plan
+
 resource "aws_api_gateway_usage_plan" "free" {
   name        = "${var.project_name}-free-tier"
   description = "Free tier: 100 requests/day, 10 req/s"

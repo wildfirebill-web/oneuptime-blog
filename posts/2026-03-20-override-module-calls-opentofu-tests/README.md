@@ -42,6 +42,7 @@ Apply an override to all `run` blocks by placing it at the file level:
 
 ```hcl
 # Override the shared services module for all tests in this file
+
 override_module {
   target = module.shared_services
 
@@ -103,7 +104,7 @@ Testing only the compute module's logic:
 mock_provider "aws" {}
 
 run "compute_uses_correct_subnet" {
-  # Stub out networking — we're only testing compute logic
+  # Stub out networking - we're only testing compute logic
   override_module {
     target = module.networking
 
@@ -114,7 +115,7 @@ run "compute_uses_correct_subnet" {
     }
   }
 
-  # Stub out the database — not relevant to this test
+  # Stub out the database - not relevant to this test
   override_module {
     target = module.database
 
@@ -140,4 +141,4 @@ run "compute_uses_correct_subnet" {
 
 ## Conclusion
 
-`override_module` completes the OpenTofu testing toolkit for module composition. Combined with `mock_provider`, `override_resource`, and `override_data`, it allows you to test any layer of your infrastructure stack in complete isolation—fast, cheap, and without cloud credentials.
+`override_module` completes the OpenTofu testing toolkit for module composition. Combined with `mock_provider`, `override_resource`, and `override_data`, it allows you to test any layer of your infrastructure stack in complete isolation-fast, cheap, and without cloud credentials.

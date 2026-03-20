@@ -36,6 +36,7 @@ terraform-provider-taskmanager/
 
 ```bash
 # Create the project directory
+
 mkdir terraform-provider-taskmanager
 cd terraform-provider-taskmanager
 

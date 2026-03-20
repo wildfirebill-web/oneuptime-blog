@@ -12,7 +12,7 @@ Nagle's algorithm improves network efficiency by coalescing multiple small write
 
 ## Understanding the Nagle Delay
 
-```
+```text
 Without Nagle:
 App writes "GET /" (5 bytes) → immediate TCP segment sent
 App receives response immediately
@@ -33,6 +33,7 @@ Result: 40ms minimum latency for every small request!
 
 ```bash
 # Capture timing of small packets to see Nagle delays
+
 tcpdump -i eth0 -n -w /tmp/nagle_test.pcap 'tcp and host 10.20.0.5'
 
 # Analyze gaps between consecutive small TCP segments
@@ -127,4 +128,4 @@ client.connect(('10.20.0.5', 8080))
 
 ## Conclusion
 
-Nagle algorithm delays are especially insidious because they only affect applications with a request-response pattern using small messages. The 40ms delay (from the interaction with delayed ACK) can make interactive systems feel laggy. Always enable TCP_NODELAY for interactive applications. For bulk transfer clients, keep Nagle enabled — it actually helps by reducing packet count and network overhead.
+Nagle algorithm delays are especially insidious because they only affect applications with a request-response pattern using small messages. The 40ms delay (from the interaction with delayed ACK) can make interactive systems feel laggy. Always enable TCP_NODELAY for interactive applications. For bulk transfer clients, keep Nagle enabled - it actually helps by reducing packet count and network overhead.

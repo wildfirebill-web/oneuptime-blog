@@ -16,6 +16,7 @@ On your Ansible control node:
 
 ```bash
 # Install the system roles package
+
 sudo dnf install rhel-system-roles -y
 
 # Verify the NBDE roles are available

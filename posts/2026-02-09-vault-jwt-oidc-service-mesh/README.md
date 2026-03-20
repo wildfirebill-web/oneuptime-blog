@@ -22,6 +22,7 @@ Istio uses SPIFFE identities and issues JWT tokens that can be validated by Vaul
 
 ```bash
 # Enable JWT auth method
+
 vault auth enable jwt
 
 # Configure JWT auth with Istio's JWKS endpoint

@@ -59,6 +59,7 @@ AES-GCM with different key providers uses different key sizes:
 
 ```hcl
 # PBKDF2 with 256-bit key (default)
+
 key_provider "pbkdf2" "key_256" {
   passphrase = var.passphrase
   key_length = 32  # 32 bytes = 256 bits
@@ -118,7 +119,7 @@ The `enforced` parameter controls behavior when encryption fails:
 ```hcl
 state {
   method   = method.aes_gcm.my_method
-  enforced = true   # Default: true — fail if encryption cannot be applied
+  enforced = true   # Default: true - fail if encryption cannot be applied
 }
 
 # With enforced = false, OpenTofu will read unencrypted state

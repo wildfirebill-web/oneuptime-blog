@@ -6,7 +6,7 @@ Tags: IPv6, Router Advertisement, Spoofing, Security Testing, Lab, SLAAC
 
 Description: A guide to performing Router Advertisement spoofing attacks in authorized lab environments to test RA Guard effectiveness and IPv6 SLAAC security.
 
-Router Advertisement (RA) spoofing is one of the most impactful IPv6 attacks on local network segments. A rogue RA can give every host on a segment a new default gateway, new DNS servers, and a new IPv6 prefix — all controlled by the attacker. This guide demonstrates the attack for authorized security testing.
+Router Advertisement (RA) spoofing is one of the most impactful IPv6 attacks on local network segments. A rogue RA can give every host on a segment a new default gateway, new DNS servers, and a new IPv6 prefix - all controlled by the attacker. This guide demonstrates the attack for authorized security testing.
 
 **Warning**: Only perform in isolated lab environments with explicit authorization.
 
@@ -22,6 +22,7 @@ A malicious RA sent to `ff02::1` (all-nodes multicast) can:
 
 ```bash
 # Announce attacker as default router with new prefix
+
 sudo fake_router6 eth0 2001:db8:attacker::/64
 
 # Announce with high router preference (overrides existing routers)
@@ -147,4 +148,4 @@ sudo ip6tables -A INPUT \
 | NDPMon | Alerts on new routers |
 | radvd monitoring | Detect competing RA sources |
 
-RA spoofing testing reveals whether your network's switch-level RA Guard is actually enabled and effective — a critical control for any IPv6 network.
+RA spoofing testing reveals whether your network's switch-level RA Guard is actually enabled and effective - a critical control for any IPv6 network.

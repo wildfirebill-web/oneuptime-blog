@@ -20,6 +20,7 @@ First, confirm that an OOM kill actually occurred.
 
 ```bash
 # Check if a container was OOM-killed
+
 podman inspect --format '{{.State.OOMKilled}}' my-container
 
 # Check the exit code (137 = SIGKILL, often OOM)

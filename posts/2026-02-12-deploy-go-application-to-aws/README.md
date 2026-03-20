@@ -82,6 +82,7 @@ Go binaries are self-contained, so your final Docker image can be incredibly sma
 
 ```dockerfile
 # Dockerfile
+
 FROM golang:1.22-alpine AS builder
 
 WORKDIR /app

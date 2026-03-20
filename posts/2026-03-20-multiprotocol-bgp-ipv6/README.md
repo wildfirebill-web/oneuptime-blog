@@ -8,13 +8,13 @@ Description: Understand Multiprotocol BGP (MP-BGP) and how it extends BGP-4 to c
 
 ## Overview
 
-BGP-4 was originally designed only for IPv4. **Multiprotocol BGP (MP-BGP)**, defined in RFC 4760, extends BGP to carry routing information for multiple network layer protocols — including IPv6, VPN, and multicast — using the concept of **Address Families**.
+BGP-4 was originally designed only for IPv4. **Multiprotocol BGP (MP-BGP)**, defined in RFC 4760, extends BGP to carry routing information for multiple network layer protocols - including IPv6, VPN, and multicast - using the concept of **Address Families**.
 
 ## What MP-BGP Adds
 
 MP-BGP adds two new optional, non-transitive BGP path attributes:
-1. **MP_REACH_NLRI** — carries reachable next-hop and prefix information for non-IPv4 protocols
-2. **MP_UNREACH_NLRI** — carries withdrawn (unreachable) prefixes for non-IPv4 protocols
+1. **MP_REACH_NLRI** - carries reachable next-hop and prefix information for non-IPv4 protocols
+2. **MP_UNREACH_NLRI** - carries withdrawn (unreachable) prefixes for non-IPv4 protocols
 
 These attributes allow a single BGP session to carry prefixes from multiple address families simultaneously.
 
@@ -59,7 +59,8 @@ When using link-local addresses, the next hop must include both the link-local a
 Before IPv6 prefixes can be exchanged, both BGP peers must negotiate support for the IPv6 address family during the OPEN message exchange. If either side does not support IPv6 AF, only IPv4 prefixes will be exchanged.
 
 ```bash
-# FRRouting — verify negotiated capabilities
+# FRRouting - verify negotiated capabilities
+
 vtysh -c "show bgp neighbors <neighbor-ip>"
 # Look for:
 # Neighbor capabilities:
@@ -70,7 +71,7 @@ vtysh -c "show bgp neighbors <neighbor-ip>"
 
 In dual-stack deployments, a single BGP session can carry both IPv4 and IPv6 routes:
 
-```
+```text
 # FRRouting configuration for dual-stack BGP
 router bgp 65001
  neighbor 2001:db8::peer remote-as 65002

@@ -40,6 +40,7 @@ flowchart TB
 
 ```bash
 # Install helm-diff plugin
+
 helm plugin install https://github.com/databus23/helm-diff
 
 # Verify installation

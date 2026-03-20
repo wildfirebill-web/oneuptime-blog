@@ -267,6 +267,7 @@ When things go wrong, check the Envoy access logs and the config dump:
 
 ```bash
 # Check if the EnvoyFilter was applied
+
 istioctl proxy-config listener <pod-name> -o json | grep -A 20 "lua"
 
 # Watch the proxy logs for Lua errors

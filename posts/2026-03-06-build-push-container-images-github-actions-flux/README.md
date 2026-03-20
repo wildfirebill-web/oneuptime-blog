@@ -27,6 +27,7 @@ Start with a straightforward workflow that builds and pushes a Docker image to G
 
 ```yaml
 # .github/workflows/build.yaml
+
 name: Build and Push Container Image
 
 on:

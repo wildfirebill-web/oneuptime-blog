@@ -25,7 +25,7 @@ Portainer's Kubernetes environment dashboard gives you a comprehensive view of y
 
 The dashboard displays key metrics:
 
-```
+```text
 Cluster Overview
 ──────────────────────────────────────
 Nodes:            5 (4 Ready, 1 Unschedulable)
@@ -41,7 +41,7 @@ Secrets:          31
 
 Click **Cluster → Nodes** to see detailed node information:
 
-```
+```text
 NAME        STATUS   ROLES          CPU (Req/Limit)    MEMORY (Req/Limit)
 master-01   Ready    control-plane  2.1/4.0 cores      4.2/8.0 GiB
 worker-01   Ready    worker         3.2/4.0 cores      5.1/8.0 GiB
@@ -60,6 +60,7 @@ Click on a node to see:
 
 ```bash
 # View resource usage from kubectl
+
 kubectl top nodes
 
 # NAME          CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%
@@ -74,7 +75,7 @@ In Portainer, the Cluster view shows aggregated resource requests/limits.
 
 In Portainer cluster details:
 
-```
+```text
 Kubernetes Version:   1.28.4
 Platform:             linux/amd64
 Container Runtime:    containerd://1.7.3
@@ -90,7 +91,7 @@ kubectl get nodes -o jsonpath='{.items[0].status.nodeInfo.kubeletVersion}'
 
 Navigate to **Namespaces** for a summary of all namespaces:
 
-```
+```text
 NAMESPACE           STATUS   WORKLOADS   CPU REQUEST   MEMORY REQUEST
 default             Active   3           150m          256Mi
 production          Active   18          4500m         8192Mi

@@ -28,6 +28,7 @@ Require Prometheus to authenticate itself with a client certificate:
 
 ```yaml
 # prometheus-client-cert.yaml
+
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

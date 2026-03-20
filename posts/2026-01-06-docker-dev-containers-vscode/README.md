@@ -31,6 +31,7 @@ These commands verify Docker is working and install the required VS Code extensi
 
 ```bash
 # Verify Docker is running - should display client and server versions
+
 docker version
 
 # Install the Dev Containers extension from the command line

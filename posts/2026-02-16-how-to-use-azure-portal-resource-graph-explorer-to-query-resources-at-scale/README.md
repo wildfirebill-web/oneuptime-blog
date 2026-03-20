@@ -182,6 +182,7 @@ You can run the same queries from Azure CLI or PowerShell, which is useful for s
 
 ```bash
 # Run a Resource Graph query from Azure CLI
+
 az graph query -q "
 Resources
 | where type == 'microsoft.compute/virtualmachines'

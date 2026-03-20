@@ -34,6 +34,7 @@ Start with conservative defaults in the base deployment:
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -331,7 +332,7 @@ spec:
       type: Container
 ```
 
-## ResourceQuota for Environment Budget Control
+ResourceQuota for Environment Budget Control
 
 Control total resource consumption per environment with ResourceQuota:
 

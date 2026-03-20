@@ -20,6 +20,7 @@ HashiCorp Consul provides service discovery, configuration management, and servi
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Add HashiCorp repository

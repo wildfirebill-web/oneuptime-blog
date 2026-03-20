@@ -30,6 +30,7 @@ The relevant constraint is `iam.disableServiceAccountKeyCreation`. When enforced
 
 ```bash
 # Check if the constraint is already enforced
+
 gcloud resource-manager org-policies describe iam.disableServiceAccountKeyCreation \
     --organization=ORG_ID
 ```

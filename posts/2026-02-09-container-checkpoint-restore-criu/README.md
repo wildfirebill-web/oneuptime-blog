@@ -26,6 +26,7 @@ CRIU must be installed on every node where you want to perform checkpoints or re
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get update
 sudo apt-get install -y criu
 

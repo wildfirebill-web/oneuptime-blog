@@ -16,6 +16,7 @@ Not every NVIDIA GPU supports every CUDA version. Before anything else, confirm 
 
 ```bash
 # See your GPU model
+
 lspci | grep -i nvidia
 
 # Look up compute capability at:

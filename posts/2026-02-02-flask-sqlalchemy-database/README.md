@@ -29,6 +29,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # Configure the database URI - using SQLite for simplicity
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 
 # Disable modification tracking (saves memory)

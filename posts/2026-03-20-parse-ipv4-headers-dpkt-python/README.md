@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, dpkt, IPv4, Packet Parsing, Networking, PCAP
+Tags: Python, Dpkt, IPv4, Packet Parsing, Networking, PCAP
 
 Description: Learn how to parse IPv4 packet headers using the dpkt library in Python to extract source/destination addresses, TTL, and protocol fields.
 
@@ -124,6 +124,7 @@ import socket
 import dpkt
 
 # Binary -> dotted decimal
+
 src_str = socket.inet_ntoa(ip.src)
 
 # Dotted decimal -> binary (for filtering)

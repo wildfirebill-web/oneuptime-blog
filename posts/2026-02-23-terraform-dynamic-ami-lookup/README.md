@@ -14,6 +14,7 @@ Hardcoding AMI IDs in Terraform configurations is a maintenance headache. AMI ID
 
 ```hcl
 # Don't do this
+
 resource "aws_instance" "web" {
   ami           = "ami-0abcdef1234567890"  # What is this? Which OS? Which version?
   instance_type = "t3.medium"

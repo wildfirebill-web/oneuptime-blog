@@ -36,6 +36,7 @@ The key stages are: upload the source video to Blob Storage, create an encoding 
 
 ```bash
 # Create a resource group
+
 az group create --name rg-media --location eastus
 
 # Create a storage account for Media Services

@@ -21,6 +21,7 @@ Postfix is a powerful mail transfer agent (MTA) that can send email notification
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install Postfix and mail utilities

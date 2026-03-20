@@ -34,6 +34,7 @@ graph TB
 
 ```bash
 # Create a resource group
+
 az group create --name rg-rhel9 --location eastus
 
 # Create the VM with RHEL

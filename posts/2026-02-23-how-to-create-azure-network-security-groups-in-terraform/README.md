@@ -35,6 +35,7 @@ provider "azurerm" {
 }
 
 # Reference an existing resource group
+
 data "azurerm_resource_group" "networking" {
   name = "rg-networking-prod-eus"
 }

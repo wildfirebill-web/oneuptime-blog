@@ -44,6 +44,7 @@ Insights is not enabled by default. You need to turn it on for a specific trail.
 
 ```bash
 # Enable both types of Insights on your trail
+
 aws cloudtrail put-insight-selectors \
   --trail-name my-trail \
   --insight-selectors '[

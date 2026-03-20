@@ -29,6 +29,7 @@ Create a clear policy document that specifies which calicoctl version to use:
 
 ```yaml
 # team-tools/calico-versions.yaml
+
 # This file defines the approved calicoctl versions for each environment
 apiVersion: v1
 kind: ConfigMap

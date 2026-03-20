@@ -47,6 +47,7 @@ The following command creates a topic and a pull subscription using the gcloud C
 
 ```bash
 # Create a topic for order events
+
 gcloud pubsub topics create order-events
 
 # Create a pull subscription with default settings

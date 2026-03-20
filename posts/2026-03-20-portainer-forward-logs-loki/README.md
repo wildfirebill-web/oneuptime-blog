@@ -1,4 +1,4 @@
-# How to Forward Container Logs to Loki via Portainer
+# How to Forward Container Logs to Loki via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ docker plugin install grafana/loki-docker-driver:latest \
   --grant-all-permissions
 
 # Verify it's installed
+
 docker plugin ls
 ```
 

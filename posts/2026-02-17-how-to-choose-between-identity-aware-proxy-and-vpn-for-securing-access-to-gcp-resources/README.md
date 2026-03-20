@@ -40,6 +40,7 @@ IAP is perfect for internal web applications that should only be accessible to s
 
 ```bash
 # Step 1: Deploy an internal application on Cloud Run
+
 gcloud run deploy internal-dashboard \
     --image=gcr.io/my-project/dashboard:latest \
     --region=us-central1 \

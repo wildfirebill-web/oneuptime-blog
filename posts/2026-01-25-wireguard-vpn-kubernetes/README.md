@@ -46,6 +46,7 @@ First, install WireGuard on each node. The following script handles installation
 ```bash
 #!/bin/bash
 # install-wireguard.sh
+
 # Installs WireGuard kernel module and tools
 
 # Detect the operating system

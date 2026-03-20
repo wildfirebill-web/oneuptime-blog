@@ -16,6 +16,7 @@ OpenTofu can output its execution plan as structured JSON with `tofu show -json`
 
 ```bash
 # Save the plan
+
 tofu plan -out=tfplan
 
 # Convert to JSON
@@ -40,7 +41,7 @@ tofu show -json tfplan > plan.json
 
 ---
 
-## Resource Changes Array
+Resource Changes Array
 
 Each entry in `resource_changes` represents one resource:
 
@@ -98,7 +99,7 @@ jq -r '.resource_changes[] | select(.type | startswith("aws_iam")) | .address' p
 ```bash
 DESTROYS=$(jq '[.resource_changes[] | select(.change.actions[] == "delete")] | length' plan.json)
 if [ "$DESTROYS" -gt 0 ]; then
-  echo "ERROR: Plan contains $DESTROYS resource deletions — manual approval required"
+  echo "ERROR: Plan contains $DESTROYS resource deletions - manual approval required"
   exit 1
 fi
 ```

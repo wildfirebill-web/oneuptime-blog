@@ -61,6 +61,7 @@ terraform {
 }
 
 # Default provider - networking subscription (where the hub lives)
+
 provider "azurerm" {
   features {}
   subscription_id = var.networking_subscription_id

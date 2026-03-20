@@ -51,6 +51,7 @@ RPF can drop return packets from pods that arrive on unexpected interfaces:
 ```bash
 cat /proc/sys/net/ipv4/conf/all/rp_filter
 # 0 = off, 1 = strict, 2 = loose
+
 ```
 
 For Calico BGP with asymmetric routing, set to loose:

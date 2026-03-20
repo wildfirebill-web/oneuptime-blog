@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # s3.tf
+
 resource "aws_s3_bucket" "site" {
   bucket = var.domain_name
 
@@ -33,7 +34,7 @@ resource "aws_s3_bucket" "site" {
   }
 }
 
-# Block all public access — serve via CloudFront OAC only
+# Block all public access - serve via CloudFront OAC only
 resource "aws_s3_bucket_public_access_block" "site" {
   bucket = aws_s3_bucket.site.id
 
@@ -50,7 +51,7 @@ resource "aws_s3_bucket_versioning" "site" {
   }
 }
 
-# Bucket policy — allow CloudFront OAC only
+# Bucket policy - allow CloudFront OAC only
 resource "aws_s3_bucket_policy" "site" {
   bucket = aws_s3_bucket.site.id
 
@@ -79,7 +80,7 @@ resource "aws_s3_bucket_policy" "site" {
 ```hcl
 # cloudfront.tf
 
-# Origin Access Control — replaces deprecated OAI
+# Origin Access Control - replaces deprecated OAI
 resource "aws_cloudfront_origin_access_control" "site" {
   name                              = var.domain_name
   description                       = "OAC for ${var.domain_name}"
@@ -108,12 +109,12 @@ resource "aws_cloudfront_distribution" "site" {
     viewer_protocol_policy = "redirect-to-https"
     compress               = true
 
-    # Use managed cache policy — optimized for S3 origins
+    # Use managed cache policy - optimized for S3 origins
     cache_policy_id            = "658327ea-f89d-4fab-a63d-7e88639e58f6"  # CachingOptimized
     origin_request_policy_id   = "88a5eaf4-2fd4-4709-b370-b4c650ea3fcf"  # CORS-S3Origin
   }
 
-  # SPA routing — serve index.html for 404s
+  # SPA routing - serve index.html for 404s
   custom_error_response {
     error_code            = 404
     response_code         = 200
@@ -201,8 +202,8 @@ resource "aws_route53_record" "www" {
 
 ## Best Practices
 
-- Use Origin Access Control (OAC) rather than the deprecated Origin Access Identity (OAI) — OAC supports AWS Signature Version 4 and is the current best practice for S3-CloudFront integration.
-- Set `block_public_access` on the S3 bucket — the bucket should never be publicly accessible directly; only CloudFront should access it.
-- Set `price_class = "PriceClass_100"` unless you have global traffic — it restricts distribution to US/Canada/Europe and reduces costs significantly.
-- Use managed cache policies (`CachingOptimized`) rather than custom cache behaviors — they're maintained by AWS and optimized for common use cases.
-- For single-page applications, add custom error responses for 403 and 404 that return `index.html` with 200 status — this enables client-side routing.
+- Use Origin Access Control (OAC) rather than the deprecated Origin Access Identity (OAI) - OAC supports AWS Signature Version 4 and is the current best practice for S3-CloudFront integration.
+- Set `block_public_access` on the S3 bucket - the bucket should never be publicly accessible directly; only CloudFront should access it.
+- Set `price_class = "PriceClass_100"` unless you have global traffic - it restricts distribution to US/Canada/Europe and reduces costs significantly.
+- Use managed cache policies (`CachingOptimized`) rather than custom cache behaviors - they're maintained by AWS and optimized for common use cases.
+- For single-page applications, add custom error responses for 403 and 404 that return `index.html` with 200 status - this enables client-side routing.

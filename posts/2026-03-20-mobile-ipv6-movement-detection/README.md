@@ -18,6 +18,7 @@ The MN monitors Router Advertisements (RAs) from the default router. A new or di
 
 ```bash
 # Monitor incoming Router Advertisements
+
 sudo tcpdump -i eth0 -n "icmp6 and ip6[40] == 134" -v
 # Type 134 = Router Advertisement
 
@@ -41,7 +42,7 @@ class MovementDetector:
         new_router = ra.source_address  # link-local of the router
 
         if self.current_prefix is None:
-            # First RA — establish baseline
+            # First RA - establish baseline
             self.current_prefix = new_prefix
             self.current_default_router = new_router
             return
@@ -59,7 +60,7 @@ class MovementDetector:
         If router becomes unreachable, assume movement occurred.
         """
         if not self.is_router_reachable(self.current_default_router):
-            print("Default router unreachable — movement likely!")
+            print("Default router unreachable - movement likely!")
             self.on_movement_detected(None, None)
 
     def on_movement_detected(self, new_prefix, new_router):
@@ -131,7 +132,7 @@ def is_genuine_movement(mn_state) -> bool:
 ## Configuring Movement Detection in UMIP
 
 ```bash
-# /etc/mip6d.conf — tuning movement detection
+# /etc/mip6d.conf - tuning movement detection
 NodeConfig MN;
 
 Interface "eth0" {

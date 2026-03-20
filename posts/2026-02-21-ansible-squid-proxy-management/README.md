@@ -14,6 +14,7 @@ Squid is a widely-used proxy server that provides web caching, access control, a
 
 ```yaml
 # roles/squid/tasks/main.yml
+
 ---
 - name: Install Squid
   ansible.builtin.apt:

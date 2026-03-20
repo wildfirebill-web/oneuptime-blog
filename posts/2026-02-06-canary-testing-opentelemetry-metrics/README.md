@@ -14,6 +14,7 @@ The foundation of canary analysis is a label that distinguishes which version ha
 
 ```yaml
 # For the baseline deployment
+
 env:
   - name: OTEL_RESOURCE_ATTRIBUTES
     value: "service.name=checkout,service.version=1.4.2,deployment.type=baseline"

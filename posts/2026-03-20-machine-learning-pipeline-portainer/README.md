@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Machine Learning, MLOps, Portainer, Docker, Pipeline, Airflow, MLflow
+Tags: Machine Learning, MLOps, Portainer, Docker, Pipelines, Airflow, MLflow
 
 Description: Build an end-to-end machine learning pipeline using Portainer stacks, connecting data ingestion, training, evaluation, and model serving components into a managed workflow.
 
 ---
 
-A production ML pipeline covers data ingestion, preprocessing, training, evaluation, model registration, and serving — all as repeatable, automated stages. This guide shows how to deploy this pipeline using Portainer stacks with Airflow for orchestration and MLflow for experiment tracking.
+A production ML pipeline covers data ingestion, preprocessing, training, evaluation, model registration, and serving - all as repeatable, automated stages. This guide shows how to deploy this pipeline using Portainer stacks with Airflow for orchestration and MLflow for experiment tracking.
 
 ## Pipeline Architecture
 
@@ -28,6 +28,7 @@ graph LR
 
 ```yaml
 # ml-pipeline-stack.yml
+
 version: "3.8"
 
 services:
@@ -183,9 +184,9 @@ with DAG(
 
 After deploying the stack:
 
-- **Airflow UI**: `http://<host>:8080` — trigger and monitor pipeline runs
-- **MLflow UI**: `http://<host>:5000` — view experiments and model registry
-- **MinIO Console**: `http://<host>:9001` — manage datasets and artifacts
+- **Airflow UI**: `http://<host>:8080` - trigger and monitor pipeline runs
+- **MLflow UI**: `http://<host>:5000` - view experiments and model registry
+- **MinIO Console**: `http://<host>:9001` - manage datasets and artifacts
 
 ## Summary
 

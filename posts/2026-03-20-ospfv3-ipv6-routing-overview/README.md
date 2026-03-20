@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OSPFv3, IPv6, Routing Protocols, OSPF, Networking
 
-Description: Understand the fundamentals of OSPFv3 — the OSPF variant designed natively for IPv6 — including its key differences from OSPFv2 and how it operates.
+Description: Understand the fundamentals of OSPFv3 - the OSPF variant designed natively for IPv6 - including its key differences from OSPFv2 and how it operates.
 
 ## Overview
 
@@ -58,6 +58,7 @@ OSPFv3 removes network-layer addressing from OSPF packets and LSAs. Key changes:
 
 ```bash
 # Access the FRRouting CLI
+
 vtysh
 
 # Show OSPFv3 neighbors
@@ -74,7 +75,7 @@ show ipv6 route ospf
 
 OSPFv3 requires a 32-bit Router ID, just like OSPFv2. If no IPv4 address is configured on the router, you must set the Router ID manually:
 
-```
+```text
 ! Cisco IOS
 router ospfv3 1
  router-id 1.1.1.1

@@ -46,6 +46,7 @@ Lightsail offers two types of blueprints: OS-only (like Ubuntu, Amazon Linux, De
 
 ```hcl
 # OS Blueprints
+
 # ubuntu_22_04    - Ubuntu 22.04 LTS
 # amazon_linux_2  - Amazon Linux 2
 # debian_11       - Debian 11

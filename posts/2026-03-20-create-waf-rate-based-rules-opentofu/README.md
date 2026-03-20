@@ -181,7 +181,7 @@ resource "aws_cloudwatch_metric_alarm" "high_block_rate" {
   period              = 300
   statistic           = "Sum"
   threshold           = 1000
-  alarm_description   = "High number of WAF rate-limit blocks — potential DDoS"
+  alarm_description   = "High number of WAF rate-limit blocks - potential DDoS"
   alarm_actions       = [aws_sns_topic.security_alerts.arn]
 
   dimensions = {

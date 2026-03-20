@@ -20,6 +20,7 @@ The simplest inventory is a text file listing hostnames or IP addresses.
 
 ```ini
 # inventory/hosts.ini
+
 # Basic inventory with groups and host variables
 
 # Ungrouped hosts (not recommended for production)

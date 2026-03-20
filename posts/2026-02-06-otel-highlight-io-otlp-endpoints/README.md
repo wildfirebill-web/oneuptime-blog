@@ -32,6 +32,7 @@ import logging
 HIGHLIGHT_PROJECT_ID = "your-highlight-project-id"
 
 # The resource must include highlight.project_id
+
 resource = Resource.create({
     "service.name": "api-backend",
     "service.version": "1.0.0",

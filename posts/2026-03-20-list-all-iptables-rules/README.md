@@ -6,15 +6,16 @@ Tags: iptables, Linux, Firewall, Security, Diagnostics
 
 Description: List all iptables rules across all chains and tables using various formats, including line numbers, packet counters, and verbose output for auditing and troubleshooting.
 
-Knowing how to read and list iptables rules is fundamental to firewall management. Different listing options reveal different aspects of the rule set — from quick summaries to verbose debugging output.
+Knowing how to read and list iptables rules is fundamental to firewall management. Different listing options reveal different aspects of the rule set - from quick summaries to verbose debugging output.
 
 ## Basic Rule Listing
 
 ```bash
 # List INPUT chain rules
+
 sudo iptables -L INPUT
 
-# List with numeric output (no DNS resolution — faster)
+# List with numeric output (no DNS resolution - faster)
 sudo iptables -L -n
 
 # List all chains
@@ -125,4 +126,4 @@ sudo iptables -Z OUTPUT
 sudo iptables -Z FORWARD
 ```
 
-Reading iptables rules correctly — especially understanding the packet counters and chain policies — is essential for verifying your firewall is actually working as intended.
+Reading iptables rules correctly - especially understanding the packet counters and chain policies - is essential for verifying your firewall is actually working as intended.

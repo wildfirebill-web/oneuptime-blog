@@ -61,6 +61,7 @@ resource "azurerm_storage_share" "hot" {
 
 ```bash
 # Get the storage account key
+
 STORAGE_KEY=$(az storage account keys list   --account-name myfilesstorage   --resource-group storage-rg   --query '[0].value' -o tsv)
 
 # Mount via SMB

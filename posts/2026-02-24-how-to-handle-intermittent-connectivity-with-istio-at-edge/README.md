@@ -242,6 +242,7 @@ Set up monitoring to track the health of your edge-to-remote connections:
 
 ```bash
 # Check retry statistics from a sidecar
+
 kubectl exec -n edge-app deploy/my-app -c istio-proxy -- \
   pilot-agent request GET /stats | grep retry
 

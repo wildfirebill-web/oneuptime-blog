@@ -12,7 +12,7 @@ ARP spoofing (also called ARP poisoning) is a man-in-the-middle attack where an 
 
 ## How ARP Spoofing Works
 
-```
+```text
 Normal:  Gateway (192.168.1.1) → MAC: aa:bb:cc:dd:ee:ff
 Attack:  Attacker broadcasts: "192.168.1.1 is at 11:22:33:44:55:66"
 Result:  Hosts send traffic for 192.168.1.1 to the attacker's MAC
@@ -132,6 +132,7 @@ if __name__ == "__main__":
 
 ```bash
 # Run on a specific interface
+
 sudo python3 arp_detect.py eth0
 
 # Run on default interface

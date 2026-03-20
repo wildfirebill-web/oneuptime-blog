@@ -196,6 +196,7 @@ A common pattern uses precedence to manage multiple environments from a single s
 
 ```yaml
 # staging kustomization
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

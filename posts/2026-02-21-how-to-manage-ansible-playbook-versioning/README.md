@@ -20,6 +20,7 @@ Apply semantic versioning (SemVer) to your Ansible project:
 
 ```bash
 # Tag a release
+
 git tag -a v2.3.0 -m "Release 2.3.0: Add Redis cluster role and update nginx SSL defaults"
 
 # Push tags

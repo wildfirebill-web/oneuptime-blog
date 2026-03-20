@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Nmap, Security, Port Scanning
+Tags: Ubuntu, Networking, nmap, Security, Port Scanning
 
 Description: Use nmap on Ubuntu for network discovery, port scanning, service detection, and OS fingerprinting with practical command examples and output interpretation.
 
@@ -33,6 +33,7 @@ Before scanning ports, find which hosts are alive on a network.
 
 ```bash
 # Discover live hosts in a subnet without port scanning
+
 # -sn = no port scan (formerly -sP)
 sudo nmap -sn 192.168.1.0/24
 ```

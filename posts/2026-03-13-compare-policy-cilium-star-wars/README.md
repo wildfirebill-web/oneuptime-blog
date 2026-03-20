@@ -123,6 +123,7 @@ graph TD
 
 ```bash
 # Standard NetworkPolicy works on Cilium without changes
+
 kubectl apply -f standard-network-policy.yaml
 
 # But to use L7 features, convert to CiliumNetworkPolicy

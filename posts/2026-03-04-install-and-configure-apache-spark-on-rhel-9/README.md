@@ -20,6 +20,7 @@ Apache Spark can be installed and configured on RHEL to provide robust functiona
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

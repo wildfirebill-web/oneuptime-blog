@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Iperf, Network Performance, Throughput Testing, Pod Networking
+Tags: Kubernetes, iperf, Network Performance, Throughput Testing, Pod Networking
 
 Description: Master network performance testing between Kubernetes pods using iperf to measure throughput, identify bottlenecks, and optimize your cluster network.
 
@@ -20,6 +20,7 @@ First, deploy an iperf server that will receive test traffic. This pod runs iper
 
 ```yaml
 # iperf-server.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

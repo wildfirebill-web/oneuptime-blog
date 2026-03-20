@@ -39,6 +39,7 @@ Standard distributed traces work well for synchronous request-response flows. Bu
 
 ```python
 # claim_tracing.py - Trace management for long-running claims
+
 from opentelemetry import trace, context
 from opentelemetry.trace import Link, SpanKind
 from opentelemetry.sdk.trace import TracerProvider

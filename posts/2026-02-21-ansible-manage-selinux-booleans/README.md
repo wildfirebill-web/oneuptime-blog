@@ -29,6 +29,7 @@ First, verify SELinux is actually running on your servers:
 
 ```yaml
 # check-selinux.yml - Audit SELinux status across the fleet
+
 ---
 - name: Audit SELinux status
   hosts: all

@@ -14,6 +14,7 @@ Container registry IPv6 failures manifest as pull errors, authentication failure
 
 ```bash
 # Check IPv6 is functional
+
 ip -6 addr show | grep "scope global"
 ping6 -c 4 2001:4860:4860::8888
 
@@ -161,4 +162,4 @@ kubectl get nodes -o wide
 ssh node1 "ip -6 route show && curl -6 https://registry.example.com/v2/"
 ```
 
-Structured troubleshooting — from basic connectivity and DNS through TLS, firewall, and daemon configuration — resolves the majority of container registry IPv6 access failures efficiently.
+Structured troubleshooting - from basic connectivity and DNS through TLS, firewall, and daemon configuration - resolves the majority of container registry IPv6 access failures efficiently.

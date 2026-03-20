@@ -1,8 +1,8 @@
-# How to Use tofu.applying for Plan vs Apply Differentiation in OpenTofu
+# How to Use tofu.applying for Plan vs Apply Differentiation in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu.applying, Ephemeral, Plan, Apply, HCL, Infrastructure as Code
+Tags: OpenTofu, Tofu.applying, Ephemeral, Plan, Apply, HCL, Infrastructure as Code
 
 Description: Learn how to use the tofu.applying built-in value in OpenTofu to differentiate behavior between plan and apply phases within ephemeral expressions.
 
@@ -16,6 +16,7 @@ Description: Learn how to use the tofu.applying built-in value in OpenTofu to di
 
 ```hcl
 # tofu.applying is:
+
 # - false during: tofu plan
 # - true during:  tofu apply
 
@@ -32,7 +33,7 @@ ephemeral "aws_ssm_parameter" "config" {
 
 ```hcl
 ephemeral "aws_secretsmanager_secret_version" "db_password" {
-  # Only fetch the actual secret during apply — use a placeholder during plan
+  # Only fetch the actual secret during apply - use a placeholder during plan
   secret_id = tofu.applying ? "production/database/password" : null
 
   # During plan, this will be null (no API call)

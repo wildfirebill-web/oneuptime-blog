@@ -38,6 +38,7 @@ provider "aws" {
 }
 
 # ECS Cluster with Container Insights enabled
+
 resource "aws_ecs_cluster" "main" {
   name = "production-cluster"
 

@@ -47,6 +47,7 @@ Start by defining an application in AppRegistry:
 
 ```bash
 # Create an application in AppRegistry
+
 aws servicecatalog-appregistry create-application \
   --name "payment-processing" \
   --description "Payment processing microservices and infrastructure"

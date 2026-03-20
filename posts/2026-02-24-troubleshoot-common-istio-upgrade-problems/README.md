@@ -35,6 +35,7 @@ Fix: The new Istio version does not recognize a field in your IstioOperator or m
 ```bash
 kubectl get istiooperator -n istio-system -o yaml > config.yaml
 # Edit config.yaml to remove the invalid field
+
 kubectl apply -f config.yaml
 ```
 

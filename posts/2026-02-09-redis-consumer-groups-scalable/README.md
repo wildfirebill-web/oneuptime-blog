@@ -34,6 +34,7 @@ Create a stream and consumer group:
 
 ```bash
 # Create stream
+
 redis-cli XADD orders * order_id 123 amount 99.99
 
 # Create consumer group starting from beginning

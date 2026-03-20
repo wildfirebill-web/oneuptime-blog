@@ -14,6 +14,7 @@ DNS resolution failures on Linux manifest as "name not found," "Could not resolv
 
 ```bash
 # Step 1: Can you resolve at all?
+
 dig google.com
 # Works: DNS generally functional for external domains
 # Fails: Check resolver connectivity

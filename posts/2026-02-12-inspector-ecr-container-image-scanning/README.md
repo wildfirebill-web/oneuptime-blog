@@ -28,6 +28,7 @@ Enable Inspector with ECR as a resource type.
 
 ```bash
 # Enable Inspector for ECR scanning
+
 aws inspector2 enable \
   --resource-types ECR
 

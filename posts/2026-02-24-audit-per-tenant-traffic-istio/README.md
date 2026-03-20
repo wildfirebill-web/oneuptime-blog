@@ -305,6 +305,7 @@ TENANT=$1
 MONTH=$(date -d "last month" +%Y-%m)
 
 # Query Elasticsearch for audit summary
+
 curl -s "http://elasticsearch:9200/istio-audit/_search" \
   -H "Content-Type: application/json" \
   -d "{

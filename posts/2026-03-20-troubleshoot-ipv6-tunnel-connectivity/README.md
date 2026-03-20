@@ -10,16 +10,17 @@ Description: A step-by-step guide to diagnosing and resolving IPv6 tunnel connec
 
 IPv6 tunnel issues typically fall into a few categories:
 
-1. **Tunnel interface not up** — misconfigured or missing interface setup
-2. **MTU mismatch** — oversized packets silently dropped
-3. **Firewall blocking** — outer IPv4 protocol (41, GRE, etc.) blocked by firewall
-4. **Routing problems** — missing or incorrect routes inside/outside the tunnel
-5. **ICMPv6 blocked** — neighbor discovery or PMTUD messages filtered
+1. **Tunnel interface not up** - misconfigured or missing interface setup
+2. **MTU mismatch** - oversized packets silently dropped
+3. **Firewall blocking** - outer IPv4 protocol (41, GRE, etc.) blocked by firewall
+4. **Routing problems** - missing or incorrect routes inside/outside the tunnel
+5. **ICMPv6 blocked** - neighbor discovery or PMTUD messages filtered
 
 ## Step 1: Verify the Tunnel Interface is Up
 
 ```bash
 # Check all interfaces including tunnel interfaces
+
 ip link show
 
 # Check a specific tunnel interface

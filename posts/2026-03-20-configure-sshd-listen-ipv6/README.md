@@ -2,16 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, SSH, sshd, OpenSSH, Remote Access, Security
+Tags: IPv6, SSH, Sshd, OpenSSH, Remote Access, Security
 
 Description: Learn how to configure OpenSSH server (sshd) to listen on IPv6 addresses, restrict to specific interfaces, and enable dual-stack SSH access.
 
 ## sshd_config IPv6 Listen Address
 
-```
+```text
 # /etc/ssh/sshd_config
 
 # Listen on specific IPv6 address and port
+
 ListenAddress 2001:db8::10
 
 # Listen on IPv6 loopback
@@ -35,7 +36,7 @@ Port 22
 
 ## IPv6-Only sshd Configuration
 
-```
+```text
 # /etc/ssh/sshd_config
 
 # Only accept IPv6 connections

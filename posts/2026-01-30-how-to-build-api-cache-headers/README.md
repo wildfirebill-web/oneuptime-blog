@@ -911,6 +911,7 @@ Verify your cache headers work correctly:
 
 ```bash
 # Check response headers
+
 curl -I https://api.example.com/products
 
 # Test conditional request with ETag

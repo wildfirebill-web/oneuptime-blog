@@ -315,6 +315,7 @@ import time
 app = Flask(__name__)
 
 # Metrics with consistent labels
+
 REQUEST_COUNT = Counter(
     'http_requests_total',
     'Total HTTP requests',

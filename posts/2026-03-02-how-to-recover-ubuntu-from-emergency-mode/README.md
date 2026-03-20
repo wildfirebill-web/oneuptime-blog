@@ -31,6 +31,7 @@ Once logged in:
 
 ```bash
 # View recent boot logs with context
+
 journalctl -xb
 
 # Look specifically at failed units

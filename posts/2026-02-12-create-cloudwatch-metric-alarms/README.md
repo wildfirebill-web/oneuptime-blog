@@ -38,6 +38,7 @@ Here's a simple alarm that triggers when CPU utilization exceeds 80%:
 
 ```bash
 # Create a basic CPU alarm
+
 aws cloudwatch put-metric-alarm \
   --alarm-name "high-cpu-web-server" \
   --alarm-description "CPU utilization above 80% on web server" \

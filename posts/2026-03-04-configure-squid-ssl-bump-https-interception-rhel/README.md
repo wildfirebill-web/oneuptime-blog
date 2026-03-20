@@ -14,6 +14,7 @@ Squid SSL Bump allows the proxy to intercept HTTPS connections by dynamically ge
 
 ```bash
 # Check if Squid was built with SSL support
+
 squid -v | grep -- '--with-openssl'
 
 # If not, you may need to rebuild Squid with SSL support

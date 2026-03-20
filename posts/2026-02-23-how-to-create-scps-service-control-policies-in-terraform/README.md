@@ -42,6 +42,7 @@ Before creating SCPs, you need to enable them in your organization.
 
 ```hcl
 # Enable SCP policy type for the organization
+
 resource "aws_organizations_organization" "main" {
   feature_set = "ALL"
 

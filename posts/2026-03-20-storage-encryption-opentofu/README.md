@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Encryption, KMS, AWS, Azure, GCP, Security, Infrastructure as Code
 
-Description: Learn how to configure storage encryption with OpenTofu across AWS, Azure, and GCP — managing KMS keys, enabling encryption at rest for S3, EBS, RDS, and Azure/GCP equivalents.
+Description: Learn how to configure storage encryption with OpenTofu across AWS, Azure, and GCP - managing KMS keys, enabling encryption at rest for S3, EBS, RDS, and Azure/GCP equivalents.
 
 ## Introduction
 
-Storage encryption protects data at rest against unauthorized access to underlying physical media. OpenTofu manages encryption configuration for every storage service — S3, EBS, RDS on AWS; Azure Disk, Blob, SQL on Azure; and GCS, Cloud SQL, Persistent Disk on GCP — using customer-managed keys (CMK) for full control.
+Storage encryption protects data at rest against unauthorized access to underlying physical media. OpenTofu manages encryption configuration for every storage service - S3, EBS, RDS on AWS; Azure Disk, Blob, SQL on Azure; and GCS, Cloud SQL, Persistent Disk on GCP - using customer-managed keys (CMK) for full control.
 
 ## AWS KMS Key Setup
 
@@ -63,6 +63,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "app" {
 }
 
 # Deny unencrypted uploads
+
 resource "aws_s3_bucket_policy" "require_encryption" {
   bucket = aws_s3_bucket.app.id
 
@@ -237,4 +238,4 @@ resource "google_compute_disk" "app" {
 
 ## Conclusion
 
-Storage encryption with OpenTofu should be enforced at every layer — object storage, block storage, and databases. Use customer-managed keys (CMK) rather than provider-managed keys when you need audit trails, key rotation control, or the ability to revoke access by disabling the key. Enable `bucket_key_enabled = true` for S3 with KMS to reduce API costs. On AWS, set `aws_ebs_encryption_by_default` to ensure no EC2 volume is ever created unencrypted, even from manual console actions.
+Storage encryption with OpenTofu should be enforced at every layer - object storage, block storage, and databases. Use customer-managed keys (CMK) rather than provider-managed keys when you need audit trails, key rotation control, or the ability to revoke access by disabling the key. Enable `bucket_key_enabled = true` for S3 with KMS to reduce API costs. On AWS, set `aws_ebs_encryption_by_default` to ensure no EC2 volume is ever created unencrypted, even from manual console actions.

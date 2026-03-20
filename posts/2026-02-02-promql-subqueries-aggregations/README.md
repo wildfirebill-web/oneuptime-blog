@@ -51,6 +51,7 @@ The following example demonstrates the difference between fetching the current C
 
 ```promql
 # Instant vector - current value of http_requests_total
+
 http_requests_total
 
 # Range vector - values over the last 5 minutes

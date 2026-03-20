@@ -100,6 +100,7 @@ ORDER BY replay_lag DESC NULLS LAST;
 
 ```yaml
 # Key replication metrics
+
 pg_stat_replication_pg_wal_lsn_diff
 pg_replication_lag_seconds
 ```

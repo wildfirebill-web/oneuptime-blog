@@ -1,4 +1,4 @@
-# How to Use Key Provider Aliasing in OpenTofu State Encryption
+# How to Use Key Provider Aliasing in OpenTofu State Encryption (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use multiple named key providers in OpenTofu state enc
 
 ## Introduction
 
-Key provider aliasing in OpenTofu's state encryption system allows you to define multiple key providers with different names and use them independently for different purposes — such as primary encryption with one key and fallback decryption with another. This is essential for key rotation and multi-key strategies.
+Key provider aliasing in OpenTofu's state encryption system allows you to define multiple key providers with different names and use them independently for different purposes - such as primary encryption with one key and fallback decryption with another. This is essential for key rotation and multi-key strategies.
 
 ## Basic Aliasing Syntax
 
@@ -146,6 +146,7 @@ Always use `PROVIDER_TYPE.ALIAS` notation to reference key providers and methods
 
 ```hcl
 # Reference pattern: BLOCK_TYPE.PROVIDER_TYPE.ALIAS
+
 keys   = key_provider.aws_kms.primary
 method = method.aes_gcm.new
 ```

@@ -81,6 +81,7 @@ After setup, verify everything is running.
 
 ```bash
 # Check the landing zone status
+
 aws controltower list-landing-zones \
   --query "landingZones[].{Id:identifier, Status:status}" \
   --output table

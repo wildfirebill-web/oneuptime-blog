@@ -50,6 +50,7 @@ Apply this configuration by modifying the scheduler manifest:
 
 ```bash
 # On kubeadm clusters
+
 vi /etc/kubernetes/manifests/kube-scheduler.yaml
 
 # Add the config file mount and argument

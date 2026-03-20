@@ -72,6 +72,7 @@ resource "tfe_workspace" "agent_example" {
 
 ```hcl
 # main.tf
+
 terraform {
   cloud {
     organization = "your-org"

@@ -32,6 +32,7 @@ First, create a simple gRPC service for testing. Using Go:
 
 ```bash
 # Install Go and gRPC tools
+
 sudo dnf install -y golang
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest

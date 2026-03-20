@@ -19,6 +19,7 @@ S3 Block Public Access settings provide a centralized way to ensure S3 buckets a
 
 ```hcl
 # Block all public access at the account level
+
 # This overrides individual bucket settings
 resource "aws_s3_account_public_access_block" "account" {
   # Blocks any ACL that grants public access
@@ -135,4 +136,4 @@ tofu apply
 
 ## Conclusion
 
-Enabling S3 Block Public Access at the account level is the most effective way to prevent accidental data exposure—it provides a safety net even if individual bucket configurations are misconfigured. Apply this setting to all accounts that should never have public S3 buckets, and use AWS Config rules to detect any drift. For websites and CDN origins, use CloudFront with Origin Access Control rather than making buckets directly public.
+Enabling S3 Block Public Access at the account level is the most effective way to prevent accidental data exposure-it provides a safety net even if individual bucket configurations are misconfigured. Apply this setting to all accounts that should never have public S3 buckets, and use AWS Config rules to detect any drift. For websites and CDN origins, use CloudFront with Origin Access Control rather than making buckets directly public.

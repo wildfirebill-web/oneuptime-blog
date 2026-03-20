@@ -16,6 +16,7 @@ A typical webhook pipeline has these components: an event producer, a delivery q
 
 ```python
 # webhook_sender.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace import StatusCode
 import httpx

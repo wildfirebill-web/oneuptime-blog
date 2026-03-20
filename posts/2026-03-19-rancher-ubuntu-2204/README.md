@@ -192,6 +192,7 @@ If you encounter issues, check the following:
 
 ```bash
 # Check Docker status
+
 sudo systemctl status docker
 
 # Check Rancher container logs

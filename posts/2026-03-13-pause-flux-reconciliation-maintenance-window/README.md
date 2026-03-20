@@ -27,6 +27,7 @@ Before suspending, know exactly what you're pausing.
 
 ```bash
 # List all Kustomizations across all namespaces
+
 flux get kustomizations --all-namespaces
 # NAMESPACE       NAME                   SUSPENDED  READY
 # flux-system     flux-system            False      True

@@ -39,6 +39,7 @@ Let's start with the basics. A daily backup with 30-day retention:
 
 ```bash
 # Create a simple daily backup plan
+
 aws backup create-backup-plan \
   --backup-plan '{
     "BackupPlanName": "simple-daily",
@@ -251,7 +252,7 @@ aws backup create-backup-plan \
 
 This combines continuous backup (for PITR within 35 days) with weekly snapshots (for long-term retention up to a year). It's the best of both worlds for databases.
 
-## Resource Selection Strategies
+Resource Selection Strategies
 
 Choosing the right selection strategy is just as important as the plan itself.
 

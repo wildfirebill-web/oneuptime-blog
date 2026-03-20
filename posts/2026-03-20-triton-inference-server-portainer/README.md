@@ -1,4 +1,4 @@
-# How to Deploy NVIDIA Triton Inference Server via Portainer
+# How to Deploy NVIDIA Triton Inference Server via Portainer - Server
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Ensure your system meets the requirements:
 
 ```bash
 # Check available resources
+
 free -h
 nproc
 df -h

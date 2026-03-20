@@ -8,7 +8,7 @@ Description: Build IPv6 network scanners in Python using NDP discovery, multicas
 
 ## IPv6 Scanning Strategy
 
-IPv6 /64 networks have 2^64 addresses — exhaustive scanning is impractical. Effective IPv6 scanning uses:
+IPv6 /64 networks have 2^64 addresses - exhaustive scanning is impractical. Effective IPv6 scanning uses:
 1. **NDP cache inspection**: Query the kernel's neighbor table
 2. **Multicast ping**: Ping `ff02::1` to find all nodes on a link
 3. **Targeted range scanning**: Scan known address patterns (::1, ::2, etc.)
@@ -16,7 +16,7 @@ IPv6 /64 networks have 2^64 addresses — exhaustive scanning is impractical. Ef
 
 ## Scanner 1: NDP Cache Dumper
 
-The fastest way to find active hosts — query the existing NDP cache:
+The fastest way to find active hosts - query the existing NDP cache:
 
 ```python
 import subprocess
@@ -34,7 +34,7 @@ class NeighborEntry:
 def scan_ndp_cache(interface: str = None) -> list[NeighborEntry]:
     """
     Scan the NDP neighbor cache to find active IPv6 hosts.
-    This doesn't send any packets — just reads kernel state.
+    This doesn't send any packets - just reads kernel state.
     """
     cmd = ["ip", "-6", "neigh", "show"]
     if interface:
@@ -60,6 +60,7 @@ def scan_ndp_cache(interface: str = None) -> list[NeighborEntry]:
     return entries
 
 # Scan and display
+
 hosts = scan_ndp_cache("eth0")
 print(f"Found {len(hosts)} hosts in NDP cache:")
 for host in hosts:
@@ -149,7 +150,7 @@ common_ports = [22, 80, 443, 8080, 8443]
 
 open_services = asyncio.run(scan_hosts(hosts, common_ports))
 for host, port in open_services:
-    print(f"  [{host}]:{port} — OPEN")
+    print(f"  [{host}]:{port} - OPEN")
 ```
 
 ## Scanner 4: DNS-Based Discovery

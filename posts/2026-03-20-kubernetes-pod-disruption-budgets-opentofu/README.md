@@ -14,6 +14,7 @@ Pod Disruption Budgets (PDBs) limit the number of pods that can be voluntarily d
 
 ```hcl
 # main.tf - Ensure at least 3 pods are always available
+
 resource "kubernetes_pod_disruption_budget_v1" "web_app_pdb" {
   metadata {
     name      = "web-app-pdb"

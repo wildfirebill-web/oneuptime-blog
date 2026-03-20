@@ -33,6 +33,7 @@ Common use cases:
 
 ```bash
 # Push to the left (head)
+
 LPUSH mylist "first"
 LPUSH mylist "second"
 # List: ["second", "first"]

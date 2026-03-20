@@ -16,6 +16,7 @@ Capacity planning requires resource utilization metrics at the service level, no
 
 ```python
 # capacity_metrics.py - Key metrics for capacity planning
+
 from opentelemetry import metrics
 import psutil
 

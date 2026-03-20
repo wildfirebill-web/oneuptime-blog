@@ -71,6 +71,7 @@ kubectl label namespace istio-system topology.istio.io/network=network2 --contex
 
 ```yaml
 # cluster1-primary.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

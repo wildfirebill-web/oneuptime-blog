@@ -105,6 +105,7 @@ In the ArgoCD UI, open your application and click the **Refresh** button. Hold S
 
 ```bash
 # Soft refresh - uses cache if valid
+
 argocd app get my-app --refresh
 
 # Hard refresh - bypasses cache, fetches fresh index

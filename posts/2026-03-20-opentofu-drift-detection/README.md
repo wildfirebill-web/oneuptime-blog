@@ -20,6 +20,7 @@ Learn how to implement automated drift detection and remediation using OpenTofu 
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

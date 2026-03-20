@@ -40,6 +40,7 @@ If you need to create a new NSG:
 
 ```bash
 # Create a new Network Security Group
+
 az network nsg create \
   --resource-group myResourceGroup \
   --name myNSG \

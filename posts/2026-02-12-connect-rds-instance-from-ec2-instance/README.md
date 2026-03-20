@@ -39,6 +39,7 @@ These commands create the security groups and configure the inbound rule.
 
 ```bash
 # Create security group for EC2
+
 aws ec2 create-security-group \
   --group-name app-sg \
   --description "Security group for application instances" \

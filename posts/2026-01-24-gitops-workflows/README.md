@@ -32,6 +32,7 @@ A well-organized repository structure makes GitOps workflows manageable as your 
 
 ```bash
 # Recommended monorepo structure for GitOps
+
 gitops-repo/
 ├── apps/                          # Application configurations
 │   ├── production/

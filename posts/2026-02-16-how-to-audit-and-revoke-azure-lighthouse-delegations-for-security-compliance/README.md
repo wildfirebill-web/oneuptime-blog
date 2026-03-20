@@ -35,6 +35,7 @@ For a more programmatic approach, use the Azure CLI to list all delegations:
 
 ```bash
 # List all registration definitions in a subscription
+
 # This shows what access has been defined
 az managedservices definition list \
   --subscription "your-subscription-id" \

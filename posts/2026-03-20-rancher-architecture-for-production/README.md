@@ -8,11 +8,11 @@ Description: Design a production-grade Rancher architecture with high availabili
 
 ## Introduction
 
-A production Rancher architecture must address high availability, scalability, security, and operational simplicity. Poor architectural decisions—single-point-of-failure management planes, undersized etcd clusters, flat network topologies—lead to outages and security incidents. This guide covers the key architectural decisions for a production Rancher deployment.
+A production Rancher architecture must address high availability, scalability, security, and operational simplicity. Poor architectural decisions-single-point-of-failure management planes, undersized etcd clusters, flat network topologies-lead to outages and security incidents. This guide covers the key architectural decisions for a production Rancher deployment.
 
 ## Reference Architecture
 
-```
+```text
                     ┌─────────────────────────────┐
                     │    Global Load Balancer      │
                     │    (AWS ALB / F5 / NGINX)    │
@@ -41,6 +41,7 @@ Use a dedicated RKE2 cluster (not a downstream workload cluster) for Rancher:
 
 ```yaml
 # rke2-rancher-management.yaml
+
 nodes:
   - address: rancher-1.internal.com
     user: rke2

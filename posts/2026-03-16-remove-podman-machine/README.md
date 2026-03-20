@@ -20,6 +20,7 @@ The `podman machine rm` command removes a Podman machine and its associated reso
 
 ```bash
 # Remove a machine by name
+
 podman machine rm my-machine
 ```
 

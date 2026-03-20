@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, netaddr, IPv6, Subnetting, CIDR, Network Operations, IP Library
+Tags: Python, Netaddr, IPv6, Subnetting, CIDR, Network Operations, IP Library
 
 Description: Use Python's netaddr library for advanced IPv6 operations including subnetting, IP set operations, prefix manipulation, and network address calculations.
 
 ## Introduction
 
-The `netaddr` library provides richer IPv6 operations than Python's built-in `ipaddress` module. It supports IP sets (combining multiple prefixes), iteration over subnets, CIDR merging, and address spanning — useful for firewall rule generation and IP address management.
+The `netaddr` library provides richer IPv6 operations than Python's built-in `ipaddress` module. It supports IP sets (combining multiple prefixes), iteration over subnets, CIDR merging, and address spanning - useful for firewall rule generation and IP address management.
 
 ## Installation
 
@@ -22,6 +22,7 @@ pip install netaddr
 from netaddr import IPAddress, IPNetwork, IPSet, cidr_merge, cidr_exclude
 
 # Create IPv6 address
+
 addr = IPAddress("2001:db8::1")
 print(addr.version)        # 6
 print(addr.is_private())   # False

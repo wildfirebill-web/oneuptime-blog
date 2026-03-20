@@ -96,6 +96,7 @@ Store all Cilium and cluster configurations in version control. Use GitOps tools
 
 ```bash
 # Store Cilium values in Git
+
 git add cilium-values.yaml
 git commit -m "Cilium performance configuration baseline"
 

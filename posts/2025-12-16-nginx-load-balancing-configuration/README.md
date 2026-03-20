@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Load Balancing, High Availability, Scaling, DevOps, Infrastructure
+Tags: Nginx, Load Balancing, High Availability, Scaling, DevOps, Infrastructure
 
 Description: Learn how to configure Nginx as a load balancer to distribute traffic across multiple backend servers, including different balancing algorithms, health checks, and session persistence.
 
@@ -36,6 +36,7 @@ flowchart TB
 
 ```nginx
 # Define upstream servers
+
 upstream backend {
     server 192.168.1.10:8080;
     server 192.168.1.11:8080;

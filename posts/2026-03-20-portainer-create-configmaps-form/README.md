@@ -1,4 +1,4 @@
-# How to Create ConfigMaps via Form in Portainer
+# How to Create ConfigMaps via Form in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,11 +19,11 @@ ConfigMaps store non-sensitive configuration data as key-value pairs in Kubernet
 
 ConfigMaps hold non-sensitive data such as:
 
-```
-Application settings     — database URLs (not passwords), feature flags
-Configuration files      — nginx.conf, app.properties, application.yaml
-Environment-specific     — API endpoints, log levels, timeouts
-Script content           — initialization scripts, migration files
+```text
+Application settings     - database URLs (not passwords), feature flags
+Configuration files      - nginx.conf, app.properties, application.yaml
+Environment-specific     - API endpoints, log levels, timeouts
+Script content           - initialization scripts, migration files
 ```
 
 For sensitive data (passwords, tokens, keys), use Secrets instead.
@@ -40,7 +40,7 @@ For sensitive data (passwords, tokens, keys), use Secrets instead.
 
 The ConfigMap creation form has the following fields:
 
-```
+```text
 Name:              my-app-config
 Namespace:         production        (auto-filled from namespace selector)
 
@@ -59,7 +59,7 @@ Click **+ Add entry** to add more key-value pairs.
 
 For configuration files stored in a ConfigMap, use the multi-line value editor:
 
-```
+```nginx
 Key: nginx.conf
 Value: (multi-line text)
   server {
@@ -73,7 +73,7 @@ Value: (multi-line text)
   }
 ```
 
-```
+```text
 Key: application.properties
 Value:
   spring.datasource.url=jdbc:postgresql://postgres:5432/mydb
@@ -96,6 +96,7 @@ After creation, verify via Portainer or kubectl:
 
 ```bash
 # List ConfigMaps in the namespace
+
 kubectl get configmaps -n production
 
 # View ConfigMap contents

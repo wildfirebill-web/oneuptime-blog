@@ -32,6 +32,7 @@ graph TD
 
 ```yaml
 # group_vars/all.yml
+
 # SELinux mode: enforcing, permissive, or disabled
 selinux_state: enforcing
 selinux_policy: targeted

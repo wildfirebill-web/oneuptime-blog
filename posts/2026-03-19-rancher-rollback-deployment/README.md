@@ -141,6 +141,7 @@ StatefulSets also support rollbacks, but the process differs slightly:
 
 ```bash
 # View revision history
+
 kubectl rollout history statefulset/my-statefulset -n default
 
 # Roll back to previous revision

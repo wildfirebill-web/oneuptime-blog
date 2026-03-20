@@ -34,6 +34,7 @@ New workloads should always use Spot VMs. Preemptible VMs are still available bu
 
 ```bash
 # Create a Spot VM
+
 gcloud compute instances create my-spot-vm \
   --zone=us-central1-a \
   --machine-type=e2-standard-4 \

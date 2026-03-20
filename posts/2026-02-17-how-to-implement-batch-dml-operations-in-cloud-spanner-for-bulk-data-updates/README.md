@@ -29,6 +29,7 @@ Let's start with a straightforward example. Suppose you need to update order sta
 
 ```python
 # Python: Execute multiple DML statements in a single batch
+
 from google.cloud import spanner
 
 client = spanner.Client(project='my-project')

@@ -279,6 +279,7 @@ Check that telemetry is flowing:
 
 ```bash
 # Verify the collector is running
+
 kubectl get pods -n istio-system -l app=otel-collector
 
 # Check collector logs for received data

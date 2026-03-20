@@ -43,6 +43,7 @@ The full splat expression works with any list or set and is the most flexible op
 
 ```hcl
 # Given a list of EC2 instances
+
 resource "aws_instance" "web" {
   count = 3
   ami           = "ami-0c55b159cbfafe1f0"

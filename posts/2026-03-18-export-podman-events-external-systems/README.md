@@ -20,6 +20,7 @@ The export pattern is straightforward: stream JSON events from Podman and forwar
 
 ```bash
 # The basic export pattern
+
 podman events --format json | <forwarder> | <destination>
 
 # Verify events are flowing

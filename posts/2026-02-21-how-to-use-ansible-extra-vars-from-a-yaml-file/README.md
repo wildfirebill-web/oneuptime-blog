@@ -16,6 +16,7 @@ Pass a YAML file to a playbook using the `@` prefix.
 
 ```bash
 # Pass variables from a YAML file
+
 ansible-playbook deploy.yml -e @deploy-vars.yml
 ```
 

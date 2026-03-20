@@ -24,6 +24,7 @@ Securing derived policy validation means ensuring that the translation from poli
 
 ```bash
 # View the derived policy for a specific endpoint
+
 cilium endpoint list
 cilium endpoint get <endpoint-id> -o json | jq '.status.policy'
 

@@ -6,7 +6,7 @@ Tags: IPv6, Load Balancer, Client IP, X-Forwarded-For, Proxy Protocol, Logging
 
 Description: A guide to preserving and forwarding the real IPv6 client IP address through load balancers to backend servers for logging, security, and geo-based decisions.
 
-When a load balancer accepts an IPv6 client connection and proxies it to a backend, the backend typically sees the load balancer's IP as the source — not the client's IPv6 address. Preserving the original client IPv6 address is critical for logging, rate limiting, geo-blocking, and security monitoring.
+When a load balancer accepts an IPv6 client connection and proxies it to a backend, the backend typically sees the load balancer's IP as the source - not the client's IPv6 address. Preserving the original client IPv6 address is critical for logging, rate limiting, geo-blocking, and security monitoring.
 
 ## Methods for IPv6 Client IP Preservation
 
@@ -19,7 +19,7 @@ When a load balancer accepts an IPv6 client connection and proxies it to a backe
 
 ## HAProxy: X-Forwarded-For for IPv6
 
-```
+```text
 # /etc/haproxy/haproxy.cfg
 
 frontend ipv6_frontend
@@ -37,7 +37,7 @@ backend web_backends
 ```
 
 The `X-Forwarded-For` header for an IPv6 client looks like:
-```
+```text
 X-Forwarded-For: 2001:db8::client, 2001:db8::lb
 ```
 
@@ -45,8 +45,9 @@ X-Forwarded-For: 2001:db8::client, 2001:db8::lb
 
 Proxy Protocol v2 works at Layer 4, carrying the original source and destination addresses before the actual connection data:
 
-```
+```text
 # HAProxy sender (front-end LB)
+
 frontend ipv6_frontend
     bind [::]:443 ssl crt /etc/ssl/cert.pem
     default_backend nginx_backends
@@ -167,4 +168,4 @@ log_format ipv6_aware '$realip_remote_addr [$time_local] '
 access_log /var/log/nginx/access.log ipv6_aware;
 ```
 
-IPv6 client IP preservation requires configuring both the load balancer to forward the original address and the backend to trust and read the forwarded address — ensuring accurate logging and security controls for IPv6 traffic.
+IPv6 client IP preservation requires configuring both the load balancer to forward the original address and the backend to trust and read the forwarded address - ensuring accurate logging and security controls for IPv6 traffic.

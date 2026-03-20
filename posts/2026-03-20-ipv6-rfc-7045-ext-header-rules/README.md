@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, RFC 7045, Extension Headers, Standards, Middleboxes
+Tags: IPv6, RFC 7045, Extension Headers, Standard, Middleboxes
 
 Description: Understand the requirements defined in RFC 7045 for how routers and middleboxes must handle IPv6 extension headers they do not recognize.
 
@@ -16,7 +16,7 @@ RFC 7045 (November 2013) titled "Transmission and Processing of IPv6 Extension H
 
 RFC 7045 Section 2.2 states:
 
-```
+```text
 If a forwarding node discards a packet because of an unrecognized
 extension header, it SHOULD send an appropriate ICMPv6 error message
 to the source of the packet (subject to the standard limitations on
@@ -35,7 +35,7 @@ Key requirements:
 
 ### For IPv6 Nodes (Endpoints)
 
-```
+```text
 Destination nodes MUST be able to:
   - Accept extension headers in the recommended order
   - Process extension headers they understand
@@ -51,7 +51,7 @@ Destination nodes MUST be able to:
 
 RFC 7045 introduced the concept of an IANA registry for extension headers:
 
-```
+```text
 IANA registry: "IPv6 Extension Header Types"
 https://www.iana.org/assignments/ipv6-parameters/
 
@@ -74,7 +74,7 @@ Currently registered extension headers:
 
 The RFC introduced a framework for operators to manage extension headers:
 
-```
+```text
 Documented policies that forwarding nodes may implement:
 
 1. "Allow" policy:
@@ -103,6 +103,7 @@ The RFC explicitly discourages the common practice of:
 # RFC 7045 compliant extension header handling
 
 # 1. Registered extension headers: ALLOW by default
+
 REGISTERED_HEADERS="0 43 44 50 51 59 60 135 139 140"
 echo "Allowing registered extension headers: $REGISTERED_HEADERS"
 
@@ -137,7 +138,7 @@ ping6 -s 1400 -M want <target>
 # You should receive ICMPv6 Parameter Problem back
 
 # Test 3: Are your drops documented?
-# Review your firewall rules — can you justify each extension header drop?
+# Review your firewall rules - can you justify each extension header drop?
 
 # Self-assessment checklist:
 echo "RFC 7045 Self-Assessment:"

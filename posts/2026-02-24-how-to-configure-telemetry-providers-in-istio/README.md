@@ -323,6 +323,7 @@ You can override telemetry configuration at the namespace or workload level:
 
 ```yaml
 # Namespace-level: increase tracing for staging namespace
+
 apiVersion: telemetry.istio.io/v1alpha1
 kind: Telemetry
 metadata:

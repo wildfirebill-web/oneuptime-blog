@@ -60,6 +60,7 @@ Before migrating, review your current aws-auth ConfigMap to understand existing 
 
 ```bash
 # Export current aws-auth ConfigMap
+
 kubectl get configmap aws-auth -n kube-system -o yaml > aws-auth-backup.yaml
 
 # View the ConfigMap in readable format

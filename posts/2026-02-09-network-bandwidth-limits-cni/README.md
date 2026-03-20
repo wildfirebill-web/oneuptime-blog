@@ -18,6 +18,7 @@ First, ensure the bandwidth plugin binary is installed on all nodes:
 
 ```bash
 # Check if bandwidth plugin exists
+
 ls -la /opt/cni/bin/bandwidth
 
 # If not present, install CNI plugins

@@ -14,6 +14,7 @@ Set the `OTEL_EXPORTER_OTLP_ENDPOINT` environment variable before running your b
 
 ```bash
 # Point Buildx at your Collector
+
 export OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
 
 # Run the build with tracing enabled

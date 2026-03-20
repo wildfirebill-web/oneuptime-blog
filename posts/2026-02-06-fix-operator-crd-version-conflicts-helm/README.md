@@ -14,6 +14,7 @@ Helm has a well-known limitation: it installs CRDs on the first `helm install` b
 
 ```bash
 # After upgrading the Operator Helm chart, you might see:
+
 kubectl logs -n opentelemetry-operator-system deployment/opentelemetry-operator-controller-manager
 
 # Error: "no kind \"OpenTelemetryCollector\" is registered for version

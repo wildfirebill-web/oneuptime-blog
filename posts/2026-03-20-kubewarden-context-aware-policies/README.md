@@ -8,7 +8,7 @@ Description: Learn how to write and deploy Kubewarden context-aware policies tha
 
 ## Introduction
 
-Standard Kubewarden policies evaluate resources in isolation — they look at the incoming request object and decide allow/deny based on that alone. Context-aware policies go further: they can query the Kubernetes API server to get additional information about the cluster state before making their decision.
+Standard Kubewarden policies evaluate resources in isolation - they look at the incoming request object and decide allow/deny based on that alone. Context-aware policies go further: they can query the Kubernetes API server to get additional information about the cluster state before making their decision.
 
 This enables sophisticated policies like:
 - Checking if a Service exists before creating a pod that references it
@@ -34,6 +34,7 @@ Context-aware policies require special configuration because they need additiona
 
 ```yaml
 # metadata.yml for a context-aware policy
+
 rules:
   - apiGroups: [""]
     apiVersions: ["v1"]
@@ -264,4 +265,4 @@ kubectl annotate clusteradmissionpolicy validate-configmap-refs \
 
 ## Conclusion
 
-Context-aware policies unlock a whole class of Kubewarden use cases that are impossible with stateless validation — checking referenced resources exist, validating cross-resource relationships, and enforcing namespace-level requirements. The key is declaring the Kubernetes resources your policy needs access to, which allows Kubewarden to set up the appropriate RBAC permissions automatically. While context-aware policies add some admission latency due to API calls, for many use cases the additional validation capability is worth the tradeoff.
+Context-aware policies unlock a whole class of Kubewarden use cases that are impossible with stateless validation - checking referenced resources exist, validating cross-resource relationships, and enforcing namespace-level requirements. The key is declaring the Kubernetes resources your policy needs access to, which allows Kubewarden to set up the appropriate RBAC permissions automatically. While context-aware policies add some admission latency due to API calls, for many use cases the additional validation capability is worth the tradeoff.

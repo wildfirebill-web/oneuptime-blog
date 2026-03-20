@@ -68,6 +68,7 @@ For programmatic monitoring, the API is your primary tool.
 
 ```bash
 # Get the current run for a workspace
+
 WORKSPACE_ID="ws-xxxxxxxxxxxxxxxx"
 
 curl \

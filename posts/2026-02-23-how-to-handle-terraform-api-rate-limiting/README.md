@@ -32,6 +32,7 @@ The most direct fix is to reduce Terraform's parallelism:
 
 ```bash
 # Default parallelism is 10, reduce it
+
 terraform plan -parallelism=5
 
 # For very large projects with frequent rate limiting

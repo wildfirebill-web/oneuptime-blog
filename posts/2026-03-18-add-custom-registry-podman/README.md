@@ -20,6 +20,7 @@ Before adding a custom registry, confirm your Podman installation and note your 
 
 ```bash
 # Verify Podman is installed
+
 podman --version
 
 # Confirm the registry is reachable from your machine

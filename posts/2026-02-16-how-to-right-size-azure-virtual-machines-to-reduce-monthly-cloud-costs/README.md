@@ -27,6 +27,7 @@ Azure Advisor analyzes your VM usage over the past 7 days and flags VMs that are
 
 ```bash
 # Get cost recommendations from Azure Advisor
+
 az advisor recommendation list \
   --category Cost \
   --query "[?shortDescription.problem=='Right-size or shutdown underutilized virtual machines'].{VM: resourceMetadata.resourceId, CurrentSize: extendedProperties.currentSku, RecommendedSize: extendedProperties.targetSku, Savings: extendedProperties.annualSavingsAmount}" \

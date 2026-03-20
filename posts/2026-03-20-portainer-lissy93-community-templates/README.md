@@ -8,7 +8,7 @@ Description: Learn how to use the popular Lissy93 community template collection 
 
 ## Introduction
 
-The Lissy93 community templates collection (also known as the Portainer Templates project) is a community-maintained catalog of Docker applications ready to deploy via Portainer. It includes hundreds of self-hosted applications — from media servers and home automation to development tools and productivity apps. This guide shows you how to add it to your Portainer instance.
+The Lissy93 community templates collection (also known as the Portainer Templates project) is a community-maintained catalog of Docker applications ready to deploy via Portainer. It includes hundreds of self-hosted applications - from media servers and home automation to development tools and productivity apps. This guide shows you how to add it to your Portainer instance.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ It includes applications in categories such as:
 3. Find the **App Templates** section
 4. Replace the current URL with:
 
-```
+```text
 https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.json
 ```
 
@@ -61,7 +61,7 @@ https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.jso
 2. Click on the Uptime Kuma template
 3. Configure:
 
-```
+```text
 Container name: uptime-kuma
 Port:          3001 → 3001
 Volume:        /data/uptime-kuma → /app/data
@@ -75,7 +75,7 @@ Volume:        /data/uptime-kuma → /app/data
 1. Search for "Vaultwarden"
 2. Configure the stack template:
 
-```
+```text
 Stack name:    vaultwarden
 Port:          80 → 80
 Data volume:   /data/vaultwarden → /data
@@ -89,7 +89,7 @@ Admin token:   [generate-secure-token]
 1. Search for "Pi-hole"
 2. Configure:
 
-```
+```text
 Container name:    pihole
 Web password:      [your-admin-password]
 DNS port:          53 → 53/udp
@@ -102,6 +102,7 @@ Many community templates use standard environment variable patterns. Override th
 
 ```bash
 # Common customizations
+
 TZ=America/New_York          # Set your timezone
 PUID=1000                    # User ID for file permissions
 PGID=1000                    # Group ID for file permissions

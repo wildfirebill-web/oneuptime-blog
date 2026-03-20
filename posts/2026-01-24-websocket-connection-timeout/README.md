@@ -566,6 +566,7 @@ server {
 
 ```yaml
 # AWS Application Load Balancer - CloudFormation example
+
 Resources:
   WebSocketTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup

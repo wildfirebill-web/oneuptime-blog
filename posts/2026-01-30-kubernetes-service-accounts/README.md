@@ -30,6 +30,7 @@ The simplest service account requires just a name and namespace.
 
 ```yaml
 # service-account-basic.yaml
+
 # Creates a minimal service account for application workloads
 apiVersion: v1
 kind: ServiceAccount

@@ -40,6 +40,7 @@ Put your Redis configuration parameters in group variables so they are easy to o
 
 ```yaml
 # group_vars/redis_servers.yml
+
 ---
 # Network settings
 redis_bind_address: "127.0.0.1"

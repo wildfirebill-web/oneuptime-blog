@@ -30,6 +30,7 @@ Every data source follows the same pattern. You declare it with the `data` block
 
 ```hcl
 # Basic data source structure
+
 data "aws_ami" "ubuntu" {
   most_recent = true
 

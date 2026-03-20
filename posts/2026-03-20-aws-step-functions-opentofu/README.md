@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Step Functions, Serverless, Workflows
+Tags: OpenTofu, AWS, Step Functions, Serverless, Workflow
 
 Description: Learn how to define and deploy AWS Step Functions state machines with OpenTofu for orchestrating serverless workflows and Lambda function chains.
 

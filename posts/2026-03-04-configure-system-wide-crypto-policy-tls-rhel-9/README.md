@@ -33,6 +33,7 @@ graph TD
 
 ```bash
 # Display the current system-wide crypto policy
+
 update-crypto-policies --show
 ```
 

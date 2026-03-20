@@ -137,6 +137,7 @@ If you have lost the root password, you can reset it using safe mode.
 
 ```bash
 # Stop MySQL service
+
 sudo systemctl stop mysql
 
 # Start MySQL without authentication (be careful - anyone can connect!)

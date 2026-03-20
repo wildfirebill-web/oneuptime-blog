@@ -38,6 +38,7 @@ Add LizardFS packages to all servers:
 
 ```bash
 # Add the LizardFS repository
+
 curl -s https://ppa.lizardfs.com/lizardfs.key | sudo apt-key add -
 echo "deb https://ppa.lizardfs.com/stable/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/lizardfs.list
 sudo apt update

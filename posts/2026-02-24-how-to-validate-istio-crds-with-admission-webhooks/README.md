@@ -102,6 +102,7 @@ The `istioctl analyze` command provides deeper analysis than the webhook alone:
 
 ```bash
 # Analyze a specific file
+
 istioctl analyze my-virtualservice.yaml
 
 # Analyze a namespace

@@ -16,6 +16,7 @@ The `terraform.workspace` variable is a built-in string that always holds the na
 
 ```hcl
 # terraform.workspace returns the current workspace name as a string
+
 # In the default workspace, it returns "default"
 # In a workspace named "prod", it returns "prod"
 

@@ -14,6 +14,7 @@ Write a pytest plugin that creates a span for every test:
 
 ```python
 # conftest.py
+
 import pytest
 import time
 from opentelemetry import trace

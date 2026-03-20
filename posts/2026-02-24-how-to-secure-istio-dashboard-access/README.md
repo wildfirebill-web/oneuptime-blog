@@ -127,6 +127,7 @@ Update the Grafana deployment or Helm values:
 
 ```yaml
 # grafana.ini configuration
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

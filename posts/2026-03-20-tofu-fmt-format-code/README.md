@@ -1,4 +1,4 @@
-# How to Use tofu fmt to Format Code
+# How to Use tofu fmt to Format Code - Tofu Format Code
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Description: Learn how to use tofu fmt to automatically format OpenTofu configur
 
 ```bash
 # Format all .tf files in the current directory
+
 tofu fmt
 
 # Output: lists files that were reformatted
@@ -186,4 +187,4 @@ python3 -m json.tool config.tf.json > /dev/null
 
 ## Conclusion
 
-`tofu fmt` is essential for maintaining consistent, readable OpenTofu code. Integrate it as a pre-commit hook and CI check to enforce formatting across your team. The formatter is opinionated by design — don't fight it. Just run `tofu fmt -recursive` before every commit and let the tool handle the style details while you focus on the infrastructure logic.
+`tofu fmt` is essential for maintaining consistent, readable OpenTofu code. Integrate it as a pre-commit hook and CI check to enforce formatting across your team. The formatter is opinionated by design - don't fight it. Just run `tofu fmt -recursive` before every commit and let the tool handle the style details while you focus on the infrastructure logic.

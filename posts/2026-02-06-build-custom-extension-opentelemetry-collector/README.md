@@ -46,6 +46,7 @@ Create a new Go module for your custom extension.
 
 ```bash
 # Create project directory
+
 mkdir custom-extension
 cd custom-extension
 

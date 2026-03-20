@@ -28,6 +28,7 @@ Cilium BGP Control Plane does not support inbound route filtering. Routes receiv
 
 ```bash
 # Verify what routes are being received - no filtering possible
+
 cilium bgp routes available ipv4 unicast
 ```
 

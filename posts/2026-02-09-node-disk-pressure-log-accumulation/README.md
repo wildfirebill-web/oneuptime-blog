@@ -24,6 +24,7 @@ Check node conditions for DiskPressure status.
 
 ```bash
 # Check all nodes for disk pressure
+
 kubectl get nodes -o custom-columns=\
 NAME:.metadata.name,\
 DISK_PRESSURE:.status.conditions[?(@.type==\"DiskPressure\")].status

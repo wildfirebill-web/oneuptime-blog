@@ -16,6 +16,7 @@ AlmaLinux initially aimed for bug-for-bug RHEL compatibility but shifted to ABI 
 
 ```bash
 # AlmaLinux: Check the release
+
 cat /etc/almalinux-release
 # AlmaLinux release 9.3 (Shamrock Pampas Cat)
 

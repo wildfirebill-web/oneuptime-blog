@@ -14,6 +14,7 @@ TigerVNC is a high-performance VNC server available on RHEL that lets you access
 
 ```bash
 # Install TigerVNC server
+
 sudo dnf install -y tigervnc-server
 
 # Install a desktop environment if not already present

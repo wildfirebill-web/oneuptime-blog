@@ -24,6 +24,7 @@ The integration works through these components:
 
 ```bash
 # Create a simple key/value secret
+
 aws secretsmanager create-secret \
   --name production/my-app/database \
   --description "Database credentials for my-app" \

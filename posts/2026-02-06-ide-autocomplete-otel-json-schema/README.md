@@ -54,6 +54,7 @@ If you want to pin the schema version or use it offline, download the schema and
 
 ```bash
 # Download the schema to your project
+
 mkdir -p .schemas
 curl -o .schemas/otel-config-schema.json \
   https://raw.githubusercontent.com/open-telemetry/opentelemetry-configuration/main/schema/opentelemetry_configuration.json

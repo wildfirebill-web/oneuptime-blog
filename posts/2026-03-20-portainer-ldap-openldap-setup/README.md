@@ -16,6 +16,7 @@ For a test setup, run OpenLDAP in Docker:
 
 ```yaml
 # openldap-stack.yml
+
 version: "3.8"
 
 services:
@@ -122,7 +123,7 @@ docker exec openldap ldapadd \
 
 In Portainer Settings → Authentication → LDAP:
 
-```
+```text
 Server:                ldap.example.com:389
 Anonymous Bind:        Off
 Reader DN:             cn=readonly,dc=example,dc=com
@@ -138,7 +139,7 @@ Group Filter:          (objectClass=groupOfNames)
 ```
 
 For the osixia/openldap image with readonly user:
-```
+```text
 Reader DN: cn=portainer-bind,dc=example,dc=com
 ```
 

@@ -18,6 +18,7 @@ Start with the built-in option. AWS can email you when you reach 85% of a free t
 
 ```bash
 # Check if billing alerts are enabled
+
 aws ce get-preferences
 
 # The free tier alerts are enabled through the Billing console

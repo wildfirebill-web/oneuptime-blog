@@ -39,6 +39,7 @@ flowchart TB
 
 ```bash
 # Add external-dns repository
+
 helm repo add external-dns https://kubernetes-sigs.github.io/external-dns/
 helm repo update
 

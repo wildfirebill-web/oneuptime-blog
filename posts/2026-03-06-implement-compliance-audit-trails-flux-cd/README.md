@@ -16,6 +16,7 @@ Every change in a GitOps workflow is a Git commit. Git provides cryptographic in
 
 ```bash
 # Every deployment has a traceable history
+
 git log --pretty=format:"%H | %ai | %an | %s" -- apps/production/
 
 # Output:

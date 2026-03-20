@@ -35,6 +35,7 @@ The first thing to solve is network connectivity. Your Ansible control node need
 
 ```yaml
 # For on-premises, Ansible connects directly
+
 # For cloud, you have several options:
 # 1. VPN tunnel from on-prem to cloud (best for production)
 # 2. SSH jump host / bastion

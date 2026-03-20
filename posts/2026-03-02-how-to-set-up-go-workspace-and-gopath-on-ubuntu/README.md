@@ -22,6 +22,7 @@ The default `GOPATH` is `$HOME/go`. You rarely need to change this.
 
 ```bash
 # Check current GOPATH
+
 go env GOPATH
 # /home/youruser/go
 

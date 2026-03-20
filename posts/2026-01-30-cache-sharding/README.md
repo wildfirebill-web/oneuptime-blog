@@ -48,6 +48,7 @@ This function converts any key into a shard index between 0 and the total shard 
 
 ```python
 # Modulo hashing: simple but rigid
+
 def get_shard(key: str, num_shards: int) -> int:
     # Python's built-in hash is deterministic per process
     # Use a stable hash like MD5 or xxHash in production

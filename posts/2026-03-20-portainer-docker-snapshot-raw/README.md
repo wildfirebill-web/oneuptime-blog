@@ -1,4 +1,4 @@
-# How to Fix Large DockerSnapshotRaw Payloads Slowing Portainer
+# How to Fix Large DockerSnapshotRaw Payloads Slowing Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Reduce oversized DockerSnapshotRaw payloads stored in Portainer's d
 
 ## Introduction
 
-Portainer stores Docker environment snapshots in its BoltDB database as `DockerSnapshotRaw` entries. In environments with many containers, networks, volumes, and images, these snapshots can become very large — sometimes hundreds of megabytes — causing slow API responses, large database files, and UI sluggishness. This guide explains how to manage and reduce these payloads.
+Portainer stores Docker environment snapshots in its BoltDB database as `DockerSnapshotRaw` entries. In environments with many containers, networks, volumes, and images, these snapshots can become very large - sometimes hundreds of megabytes - causing slow API responses, large database files, and UI sluggishness. This guide explains how to manage and reduce these payloads.
 
 ## What Is DockerSnapshotRaw?
 
@@ -18,6 +18,7 @@ Every time Portainer takes a snapshot of a Docker environment, it serializes the
 
 ```bash
 # Check the size of Portainer's database
+
 docker run --rm \
   -v portainer_data:/data \
   alpine ls -lh /data/portainer.db
@@ -57,7 +58,7 @@ docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v portainer_data:/data \
   portainer/portainer-ce:latest \
-  --snapshot-interval=600   # 10 minutes — reduces write frequency
+  --snapshot-interval=600   # 10 minutes - reduces write frequency
 ```
 
 ## Step 4: Compact the Database

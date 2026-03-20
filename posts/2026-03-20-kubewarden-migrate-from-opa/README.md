@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Kubewarden, OPA, Gatekeeper, Migration, Policy as Code, Kubernetes, Admission Control, SUSE Rancher
 
-Description: Learn how to migrate Kubernetes admission policies from OPA Gatekeeper to Kubewarden, including mapping ConstraintTemplates to ClusterAdmissionPolicies and translating Rego logic to supported languages.
+Description: Learn how to migrate Kubernetes admission policies from OPA Gatekeeper to Kubewarden, including mapping ConstraintTemplates to ClusterAdmissionPolicies and translating Rego logic to supported...
 
 ---
 
@@ -28,6 +28,7 @@ Migrating from OPA Gatekeeper to Kubewarden involves three main steps: understan
 
 ```bash
 # List all ConstraintTemplates
+
 kubectl get constrainttemplate
 
 # List all Constraint instances
@@ -177,7 +178,7 @@ kubectl delete namespace gatekeeper-system
 
 ## Migration Timeline
 
-```
+```text
 Week 1: Inventory Gatekeeper policies → identify Hub equivalents
 Week 2: Write custom policies for gaps → test with kwctl
 Week 3: Deploy Kubewarden in monitor mode alongside Gatekeeper
@@ -188,6 +189,6 @@ Week 4: Validate coverage → switch to enforce → remove Gatekeeper
 
 ## Best Practices
 
-- Always run Kubewarden in `monitor` mode before removing Gatekeeper — this ensures no coverage gap.
+- Always run Kubewarden in `monitor` mode before removing Gatekeeper - this ensures no coverage gap.
 - Use the Kubewarden Policy Hub to find ready-made replacements for common Gatekeeper policies.
 - Rewriting Rego in Go is usually the most straightforward migration path for teams familiar with Go.

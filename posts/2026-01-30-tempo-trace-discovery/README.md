@@ -197,6 +197,7 @@ Configure the `metrics_generator` and `overrides` sections in your Tempo configu
 # tempo.yaml configuration for tag-based search
 
 # Enable search on specific tags
+
 search:
   # Maximum number of concurrent search jobs
   concurrent_jobs: 2000

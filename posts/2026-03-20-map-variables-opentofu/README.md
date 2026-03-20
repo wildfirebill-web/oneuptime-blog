@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Map, Collections, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variables, Maps, Collections, Infrastructure as Code, DevOps
 
 Description: A guide to using map type variables in OpenTofu to manage key-value pairs and environment-specific configurations.
 
@@ -14,6 +14,7 @@ Map variables hold key-value pairs where all values have the same type. They are
 
 ```hcl
 # Map of strings
+
 variable "instance_types" {
   type = map(string)
 }

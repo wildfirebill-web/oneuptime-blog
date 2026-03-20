@@ -50,6 +50,7 @@ After installing K3s, verify that Traefik is running:
 
 ```bash
 # Check Traefik pods in the kube-system namespace
+
 kubectl get pods -n kube-system | grep traefik
 
 # Expected output:

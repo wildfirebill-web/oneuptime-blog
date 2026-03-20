@@ -66,6 +66,7 @@ Update your package list and upgrade existing packages to ensure system stabilit
 
 ```bash
 # Update the package list to get information about newest versions
+
 sudo apt update
 
 # Upgrade all installed packages to their latest versions

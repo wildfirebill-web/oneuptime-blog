@@ -20,6 +20,7 @@ NestJS offers two approaches to building GraphQL APIs: schema-first and code-fir
 
 ```bash
 # Create a new NestJS project
+
 npx @nestjs/cli new graphql-api
 cd graphql-api
 

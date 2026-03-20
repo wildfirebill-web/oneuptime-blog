@@ -1,4 +1,4 @@
-# How to Configure Longhorn Priority Classes
+# How to Configure Longhorn Priority Classes - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,6 +27,7 @@ Create a Longhorn-specific priority class:
 
 ```yaml
 # longhorn-priority-class.yaml
+
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
 metadata:
@@ -102,7 +103,7 @@ spec:
 
 ## Priority Class Hierarchy for Longhorn Clusters
 
-```
+```text
 kube-system pods    ~2,000,000,000 (built-in)
 longhorn-critical   ~1,000,000       (protect storage layer)
 database-workloads  ~  800,000       (stateful apps)
@@ -116,5 +117,5 @@ default (user pods) ~        0
 ## Best Practices
 
 - Set Longhorn priority class **before** installing Longhorn, or restart Longhorn pods after updating.
-- Do not set Longhorn's priority class above cluster system components — Longhorn should not preempt CoreDNS or kube-proxy.
+- Do not set Longhorn's priority class above cluster system components - Longhorn should not preempt CoreDNS or kube-proxy.
 - Create separate priority classes for your stateful vs. stateless workloads to control eviction order independently.

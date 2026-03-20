@@ -28,6 +28,7 @@ The first thing to verify is what mTLS policy applies to the destination service
 
 ```bash
 # List all PeerAuthentication policies in the destination namespace
+
 kubectl get peerauthentication -n <destination-namespace>
 
 # Check the mesh-wide policy

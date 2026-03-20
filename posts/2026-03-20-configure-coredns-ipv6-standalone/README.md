@@ -14,6 +14,7 @@ CoreDNS is a flexible, plugin-based DNS server written in Go. Originally created
 
 ```bash
 # Download binary
+
 curl -LO https://github.com/coredns/coredns/releases/latest/download/coredns_linux_amd64.tgz
 tar -xzf coredns_linux_amd64.tgz
 mv coredns /usr/local/bin/
@@ -113,7 +114,7 @@ www IN  A    203.0.113.10
 ## Step 4: Split Horizon (Different Answers for Internal/External)
 
 ```corefile
-# Internal view — serve local AAAA records
+# Internal view - serve local AAAA records
 example.com.:53 {
     view internal {
         expr incidr(client_ip(), "2001:db8::/32")
@@ -162,4 +163,4 @@ curl -s http://[::1]:9153/metrics | grep coredns_dns_requests_total
 
 ## Conclusion
 
-CoreDNS serves IPv6 by default when bound to `::` — no special flag required. The plugin system makes it easy to combine authoritative zones, forwarding, caching, and DNSSEC in one binary. Use the Prometheus plugin and OneUptime to monitor DNS query counts, error rates, and latency.
+CoreDNS serves IPv6 by default when bound to `::` - no special flag required. The plugin system makes it easy to combine authoritative zones, forwarding, caching, and DNSSEC in one binary. Use the Prometheus plugin and OneUptime to monitor DNS query counts, error rates, and latency.

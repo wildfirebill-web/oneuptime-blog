@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, macOS, Network Configuration, networksetup, System Settings
+Tags: IPv6, macOS, Network Configuration, Networksetup, System Settings
 
 Description: Learn how to enable IPv6 on macOS using System Settings, the networksetup command, and how to verify IPv6 is working correctly.
 
@@ -12,6 +12,7 @@ IPv6 is typically enabled by default on macOS. Check the current status:
 
 ```bash
 # Show all network interfaces with IPv6 status
+
 networksetup -getinfo "Wi-Fi"
 networksetup -getinfo "Ethernet"
 
@@ -27,7 +28,7 @@ ifconfig | grep inet6
 
 ## Enable IPv6 via System Settings (macOS Ventura/Sonoma)
 
-```
+```sql
 Steps:
 1. Apple menu → System Settings
 
@@ -68,7 +69,7 @@ networksetup -setv6off Wi-Fi
 
 ## Enable IPv6 via System Preferences (macOS Monterey and earlier)
 
-```
+```sql
 Steps:
 1. System Preferences → Network
 
@@ -123,4 +124,4 @@ netstat -rn -f inet6
 
 ## Summary
 
-On macOS, enable IPv6 via **System Settings → Network → TCP/IP → Configure IPv6 → Automatically** or with `networksetup -setv6automatic Wi-Fi`. Verify with `ifconfig en0 | grep inet6` — you should see a link-local (`fe80::`) and, if a router is present, a global (`2xxx::`) address. Test connectivity with `ping6 ipv6.google.com`. Use `networksetup -getv6additional "Wi-Fi"` to view current IPv6 settings.
+On macOS, enable IPv6 via **System Settings → Network → TCP/IP → Configure IPv6 → Automatically** or with `networksetup -setv6automatic Wi-Fi`. Verify with `ifconfig en0 | grep inet6` - you should see a link-local (`fe80::`) and, if a router is present, a global (`2xxx::`) address. Test connectivity with `ping6 ipv6.google.com`. Use `networksetup -getv6additional "Wi-Fi"` to view current IPv6 settings.

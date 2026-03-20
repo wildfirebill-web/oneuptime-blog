@@ -18,6 +18,7 @@ The SAM CLI is separate from the AWS CLI. Install it based on your platform:
 
 ```bash
 # macOS (using Homebrew)
+
 brew install aws-sam-cli
 
 # Linux

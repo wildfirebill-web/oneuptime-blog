@@ -47,6 +47,7 @@ Before diving into Kustomize configurations, let's install Flux on your cluster.
 
 ```bash
 # Check Flux prerequisites
+
 # This command verifies your cluster meets Flux requirements
 flux check --pre
 ```

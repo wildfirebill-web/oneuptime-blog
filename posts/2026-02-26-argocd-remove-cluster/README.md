@@ -16,6 +16,7 @@ Before removing a cluster, understand what is deployed to it:
 
 ```bash
 # List all applications targeting this cluster
+
 argocd app list --dest-server https://cluster-to-remove.k8s.example.com
 
 # Or by cluster name

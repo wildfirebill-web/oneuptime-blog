@@ -43,6 +43,7 @@ If you are using Azure Firewall directly (classic rules):
 
 ```bash
 # Enable threat intelligence with alert and deny mode
+
 az network firewall update \
   --resource-group myResourceGroup \
   --name myFirewall \

@@ -19,7 +19,7 @@ Each entry in the IPv6 routing table contains the following fields:
 | **Destination** | The IPv6 prefix this route matches (e.g., `2001:db8::/32`) |
 | **Next Hop** | The next-hop router address to forward packets to |
 | **Interface** | The outgoing network interface |
-| **Metric** | Route cost — lower is preferred |
+| **Metric** | Route cost - lower is preferred |
 | **Protocol** | How the route was learned (kernel, static, ospf, bgp, etc.) |
 | **Flags** | U=Up, G=Gateway, H=Host route, etc. |
 
@@ -27,6 +27,7 @@ Each entry in the IPv6 routing table contains the following fields:
 
 ```bash
 # Show full IPv6 routing table
+
 ip -6 route show
 
 # Show with more detail including protocol and metric
@@ -41,7 +42,7 @@ ip -6 route show table all
 
 ## Route Types in the IPv6 Table
 
-```
+```text
 # Connected route (directly attached subnet)
 2001:db8::/64 dev eth0 proto kernel scope link src 2001:db8::1
 

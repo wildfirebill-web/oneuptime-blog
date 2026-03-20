@@ -30,6 +30,7 @@ Create a dedicated namespace with strict isolation:
 
 ```bash
 # Create isolated test namespace
+
 kubectl create namespace cilium-parser-test
 
 # Label the namespace for network policy targeting

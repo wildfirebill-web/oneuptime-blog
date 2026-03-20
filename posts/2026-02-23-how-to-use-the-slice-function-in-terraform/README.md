@@ -16,6 +16,7 @@ The `slice` function extracts a contiguous portion of a list, given a start inde
 
 ```hcl
 # slice(list, start_index, end_index)
+
 # start_index is inclusive, end_index is exclusive
 > slice(["a", "b", "c", "d", "e"], 1, 3)
 [

@@ -378,6 +378,7 @@ Track verification status across all deployments:
 
 ```yaml
 # Grafana dashboard query for verification status
+
 # Panel: Verification Pass Rate
 # Query:
 argocd_app_info{health_status="Healthy"} / argocd_app_info

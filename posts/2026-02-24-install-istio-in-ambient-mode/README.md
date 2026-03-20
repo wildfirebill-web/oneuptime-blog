@@ -18,6 +18,7 @@ Before installing, check your environment:
 
 ```bash
 # Kubernetes version 1.27+
+
 kubectl version
 
 # istioctl version 1.22+ (1.24+ recommended for GA ambient features)

@@ -35,6 +35,7 @@ The most common use: ensure temporary files are deleted when a script finishes, 
 #!/bin/bash
 
 # Create a temp file at the start
+
 tmp_file=$(mktemp /tmp/myscript.XXXXXX)
 
 # Register cleanup to run on exit

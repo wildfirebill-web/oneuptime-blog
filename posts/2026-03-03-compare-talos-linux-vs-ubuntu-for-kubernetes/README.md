@@ -30,6 +30,7 @@ Setting up Kubernetes on Ubuntu involves several manual steps. You install the O
 # Ubuntu: Installing Kubernetes with kubeadm
 
 # Step 1: System preparation
+
 sudo apt update && sudo apt upgrade -y
 sudo swapoff -a
 sudo sed -i '/swap/d' /etc/fstab
@@ -214,7 +215,7 @@ On Talos, configuration drift is impossible. The root filesystem is immutable, a
 # There is no way to make ad-hoc changes
 ```
 
-## Resource Usage
+Resource Usage
 
 Ubuntu has a larger footprint because it includes many packages and services that are not needed for Kubernetes.
 

@@ -30,6 +30,7 @@ On Talos Linux, RBAC is enabled by default. You can verify this:
 
 ```bash
 # Check the API server authorization mode
+
 talosctl logs kube-apiserver -n <control-plane-ip> | grep authorization-mode
 
 # You should see: --authorization-mode=Node,RBAC

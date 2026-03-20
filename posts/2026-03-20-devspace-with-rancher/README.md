@@ -14,6 +14,7 @@ DevSpace is a developer tool for Kubernetes that provides hot reloading, file sy
 
 ```bash
 # macOS
+
 brew install devspace
 
 # Linux/macOS via curl

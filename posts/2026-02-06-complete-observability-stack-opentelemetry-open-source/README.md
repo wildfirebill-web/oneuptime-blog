@@ -50,6 +50,7 @@ Start with a Docker Compose setup for local development and testing:
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

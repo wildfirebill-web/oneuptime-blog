@@ -198,6 +198,7 @@ app.get('/api/content', (req, res) => {
 # nginx.conf
 
 # Define cache zone
+
 proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=api_cache:100m
                  max_size=10g inactive=60m use_temp_path=off;
 

@@ -39,6 +39,7 @@ helm repo update
 
 ```yaml
 # thanos-objstore-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

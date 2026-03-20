@@ -40,6 +40,7 @@ Most current-generation instances have ENA enabled by default. Let's verify:
 
 ```bash
 # Check if ENA is enabled on a running instance
+
 aws ec2 describe-instances \
   --instance-ids i-0abc123 \
   --query 'Reservations[0].Instances[0].{

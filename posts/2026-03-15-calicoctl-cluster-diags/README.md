@@ -93,6 +93,7 @@ You can focus diagnostic collection using available options:
 
 ```bash
 # Collect diagnostics from the last hour only
+
 calicoctl cluster diags --since=1h
 
 # Focus on specific nodes and limit log collection

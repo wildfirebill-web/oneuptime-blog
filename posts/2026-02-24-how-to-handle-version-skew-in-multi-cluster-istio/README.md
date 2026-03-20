@@ -22,6 +22,7 @@ Check your current versions across clusters:
 
 ```bash
 # Control plane version in each cluster
+
 istioctl version --context=cluster-a
 istioctl version --context=cluster-b
 

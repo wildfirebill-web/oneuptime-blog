@@ -47,6 +47,7 @@ Use the `OTEL_PYTHON_DISABLED_INSTRUMENTATIONS` environment variable to turn off
 
 ```bash
 # Disable specific auto-instrumentation libraries via environment variable
+
 # Comma-separated list of instrumentor names (without the opentelemetry-instrumentation- prefix)
 export OTEL_PYTHON_DISABLED_INSTRUMENTATIONS="urllib3,requests,system-metrics,threading"
 

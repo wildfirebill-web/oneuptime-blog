@@ -34,6 +34,7 @@ For Cloud Run, if you write structured logs to stdout as JSON, include the trace
 
 ```python
 # Structured logging on Cloud Run with automatic trace correlation
+
 import json
 import sys
 import os

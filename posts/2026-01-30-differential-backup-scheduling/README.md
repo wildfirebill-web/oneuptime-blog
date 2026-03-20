@@ -114,6 +114,7 @@ Here's a production-ready differential backup implementation in Bash:
 ```bash
 #!/bin/bash
 # differential-backup.sh
+
 # Production differential backup system
 
 set -euo pipefail

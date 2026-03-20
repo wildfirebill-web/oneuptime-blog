@@ -56,6 +56,7 @@ Enable the feature in the AWS Billing console or via the CLI:
 
 ```bash
 # Enable split cost allocation for ECS
+
 aws ce update-cost-allocation-tags-status \
   --cost-allocation-tags-status '[
     {

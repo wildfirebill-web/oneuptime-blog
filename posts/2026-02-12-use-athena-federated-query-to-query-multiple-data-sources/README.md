@@ -57,6 +57,7 @@ The easiest way is through the AWS Serverless Application Repository:
 
 ```bash
 # Deploy the DynamoDB connector from the Serverless Application Repository
+
 aws serverlessrepo create-cloud-formation-change-set \
   --application-id arn:aws:serverlessrepo:us-east-1:292517598671:applications/AthenaDynamoDBConnector \
   --stack-name athena-dynamodb-connector \

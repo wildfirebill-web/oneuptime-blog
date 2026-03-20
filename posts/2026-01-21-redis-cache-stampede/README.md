@@ -135,6 +135,7 @@ def wait_for_cache(key: str, timeout: float) -> Optional[Any]:
     return None
 
 # Usage
+
 def get_product(product_id: int) -> dict:
     return get_with_lock(
         f"product:{product_id}",

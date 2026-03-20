@@ -26,6 +26,7 @@ For commands that modify IPAM state, recovery depends on the specific operation:
 
 ```bash
 # Check current IPAM state
+
 calicoctl ipam show
 calicoctl ipam check
 

@@ -288,6 +288,7 @@ Schedule the vault loading using Cloud Scheduler and BigQuery scheduled queries.
 
 ```bash
 # Schedule the hub loading to run every hour
+
 bq mk --transfer_config \
   --target_dataset=raw_vault \
   --display_name="Load Hubs Hourly" \

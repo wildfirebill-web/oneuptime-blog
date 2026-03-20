@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: TCP RST, Connection Reset, Wireshark, tcpdump, Troubleshooting
 
-Description: Learn how to diagnose TCP connection resets by capturing and analyzing RST packets with tcpdump and Wireshark, then identify whether the cause is firewall rules, application errors, timewall timeouts, or network equipment.
+Description: Learn how to diagnose TCP connection resets by capturing and analyzing RST packets with tcpdump and Wireshark, then identify whether the cause is firewall rules, application errors, timewall...
 
 ## What Causes TCP RST Packets?
 
@@ -20,6 +20,7 @@ RST (Reset) packets immediately abort a TCP connection. Sources include:
 
 ```bash
 # Capture all TCP RST packets
+
 sudo tcpdump -i eth0 'tcp[tcpflags] & tcp-rst != 0' -v -n
 
 # Example RST output:
@@ -37,7 +38,7 @@ sudo tcpdump -i eth0 'tcp[tcpflags] & tcp-rst != 0' -w /tmp/rst-capture.pcap
 ## Step 2: Identify the Source of RSTs
 
 ```bash
-# Count RSTs by source IP — which device is sending them?
+# Count RSTs by source IP - which device is sending them?
 sudo tcpdump -i eth0 'tcp[tcpflags] & tcp-rst != 0' -n 2>/dev/null | \
     awk '{print $3}' | sed 's/\.[0-9]*$//' | sort | uniq -c | sort -rn | head -10
 
@@ -53,7 +54,7 @@ sudo tcpdump -i eth0 'tcp[tcpflags] & tcp-rst != 0' -n 2>/dev/null | \
 
 ## Step 3: Wireshark Analysis
 
-```
+```text
 Wireshark filters for RST analysis:
 
 1. All RST packets:
@@ -69,13 +70,13 @@ Wireshark filters for RST analysis:
    tcp.flags.reset == 1 and tcp.analysis.idle_time > 60
 
 Statistics → Conversations → TCP
-Shows connection duration — very short durations suggest RST issues
+Shows connection duration - very short durations suggest RST issues
 ```
 
 ## Step 4: Check Firewall for RST Injection
 
 ```bash
-# iptables — check for REJECT rules (send RST to TCP)
+# iptables - check for REJECT rules (send RST to TCP)
 sudo iptables -L -n | grep -i "reject\|rst"
 
 # REJECT --reject-with tcp-reset sends RST to client
@@ -92,7 +93,7 @@ sudo conntrack -L | grep TIME_WAIT | wc -l
 ## Step 5: Fix Idle Connection Timeouts
 
 ```bash
-# Linux — TCP keepalive settings
+# Linux - TCP keepalive settings
 # Keepalive probes prevent NAT/firewall from expiring idle connections
 
 sysctl net.ipv4.tcp_keepalive_time     # 7200 = 2 hours (too long)
@@ -111,7 +112,7 @@ sudo sysctl -p
 ## Step 6: Fix Application-Level RSTs
 
 ```python
-# Python — handle RST gracefully and reconnect
+# Python - handle RST gracefully and reconnect
 import socket
 import time
 
@@ -146,7 +147,7 @@ nstat -z | grep TcpEstabResets     # Established connections that got RST
 
 # Monitor with ss
 ss -tan | awk '{print $1}' | sort | uniq -c
-# Watch TIME-WAIT count — should stabilize, not grow indefinitely
+# Watch TIME-WAIT count - should stabilize, not grow indefinitely
 ```
 
 ## Conclusion

@@ -23,6 +23,7 @@ graph TD
 
 ```yaml
 # playbooks/install-ansible-alongside-puppet.yml
+
 ---
 - name: Install Ansible on Puppet-managed hosts
   hosts: puppet_managed

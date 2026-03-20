@@ -95,6 +95,7 @@ http {
 
 ```bash
 # Check Nginx config syntax
+
 nginx -t
 
 # Reload

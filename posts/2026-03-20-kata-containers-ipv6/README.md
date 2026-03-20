@@ -10,7 +10,7 @@ Kata Containers runs each container (or pod) inside a lightweight VM for stronge
 
 ## How Kata Containers Networking Works
 
-```
+```text
 Host Network Namespace
     │
     ├── CNI plugin creates veth pair + assigns IPv6 address
@@ -26,6 +26,7 @@ The Kata runtime (`kata-runtime`) passes CNI-provided network configuration into
 
 ```bash
 # Install Kata Containers (Ubuntu)
+
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/kata-containers/kata-containers/main/utils/kata-manager.sh) install-kata-tools"
 
 # Or via snap
@@ -73,7 +74,7 @@ kata-runtime --version
 ## Using Kata with containerd and IPv6
 
 ```toml
-# /etc/containerd/config.toml — add Kata runtime class
+# /etc/containerd/config.toml - add Kata runtime class
 
 [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.kata]
   runtime_type = "io.containerd.kata.v2"
@@ -143,7 +144,7 @@ kernel = "/opt/kata/share/kata-containers/vmlinuz.container"
 image = "/opt/kata/share/kata-containers/kata-containers.img"
 
 # Networking: Kata uses tap devices for VM network interface
-# IPv6 is handled by the guest kernel — no special Kata-side config needed
+# IPv6 is handled by the guest kernel - no special Kata-side config needed
 
 [runtime]
 # Enable debug for networking issues

@@ -16,6 +16,7 @@ Install the Helm CLI on your local machine. Helm 3 is the current major version 
 
 ```bash
 # macOS - using Homebrew package manager
+
 brew install helm
 
 # Linux - using the official installation script

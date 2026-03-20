@@ -31,6 +31,7 @@ flowchart TD
 
 ```python
 # Incorrect - typo in scope name
+
 SCOPES = [
     'openid',
     'profle',  # Typo: should be 'profile'

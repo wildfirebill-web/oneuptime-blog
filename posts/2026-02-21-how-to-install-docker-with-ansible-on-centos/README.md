@@ -30,6 +30,7 @@ If you have installed Docker on Ubuntu before, here is what changes for CentOS:
 
 ```ini
 # inventory.ini - CentOS/RHEL servers for Docker installation
+
 [docker_hosts]
 centos1 ansible_host=192.168.1.20
 centos2 ansible_host=192.168.1.21

@@ -18,6 +18,7 @@ Rancher Projects wrap namespaces and allow you to set cluster-level resource quo
 
 ```yaml
 # Applied via Rancher management API or UI
+
 apiVersion: management.cattle.io/v3
 kind: Project
 metadata:

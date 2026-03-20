@@ -16,6 +16,7 @@ Whisker provides a built-in visual dashboard that requires no configuration to d
 
 ```bash
 # Verify Whisker is running
+
 kubectl get pods -n calico-system | grep whisker
 
 # Access Whisker UI

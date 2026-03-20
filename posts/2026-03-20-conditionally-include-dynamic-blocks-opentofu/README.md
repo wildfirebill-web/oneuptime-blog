@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Dynamic Blocks, Conditionals, HCL, Advanced
+Tags: OpenTofu, Terraform, Dynamic Blocks, Conditional, HCL, Advanced
 
 Description: Learn how to conditionally include or exclude dynamic blocks in OpenTofu based on variable values, enabling optional resource configuration sections.
 
 ## Introduction
 
-Sometimes a resource block should only include certain sub-blocks under specific conditions — for example, only add an HTTPS listener if a certificate is provided, or only include a lifecycle policy if retention is enabled. OpenTofu's dynamic block with a conditional `for_each` achieves this cleanly.
+Sometimes a resource block should only include certain sub-blocks under specific conditions - for example, only add an HTTPS listener if a certificate is provided, or only include a lifecycle policy if retention is enabled. OpenTofu's dynamic block with a conditional `for_each` achieves this cleanly.
 
 ## The Core Pattern: Empty List vs Single-Element List
 
@@ -66,6 +66,7 @@ resource "aws_lb" "app" {
 }
 
 # HTTP listener always created
+
 resource "aws_lb_listener" "http" {
   load_balancer_arn = aws_lb.app.arn
   port              = 80

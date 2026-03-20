@@ -20,6 +20,7 @@ Use the `-p` flag to map a container port to a host port:
 
 ```bash
 # Map host port 8080 to container port 80
+
 podman run -d --name web -p 8080:80 nginx
 
 # Access the container from the host

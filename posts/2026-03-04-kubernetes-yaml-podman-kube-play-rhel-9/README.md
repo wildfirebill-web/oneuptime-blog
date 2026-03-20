@@ -292,6 +292,7 @@ podman kube play --replace simple-pod.yaml
 
 ```bash
 # Play the YAML and start containers in detached mode
+
 podman kube play simple-pod.yaml --start
 ```
 

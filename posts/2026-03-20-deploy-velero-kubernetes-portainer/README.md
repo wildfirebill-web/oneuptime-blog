@@ -1,4 +1,4 @@
-# How to Deploy Velero for Kubernetes Backup via Portainer
+# How to Deploy Velero for Kubernetes Backup via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Velero is an open-source tool for safely backing up and restoring Kubernetes clu
 
 ```bash
 # Download Velero CLI (Linux/macOS)
+
 VERSION=v1.13.2
 curl -L https://github.com/vmware-tanzu/velero/releases/download/${VERSION}/velero-${VERSION}-linux-amd64.tar.gz \
   -o velero.tar.gz

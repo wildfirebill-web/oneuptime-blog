@@ -85,6 +85,7 @@ Active Storage comes with Rails. Generate the required migrations:
 
 ```bash
 # Generate Active Storage tables
+
 rails active_storage:install
 
 # Run the migration

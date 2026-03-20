@@ -71,6 +71,7 @@ Install Gatekeeper using kubectl or Helm.
 
 ```bash
 # Install the latest Gatekeeper release
+
 # This creates CRDs, deployments, and webhook configurations
 kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gatekeeper/v3.14.0/deploy/gatekeeper.yaml
 ```

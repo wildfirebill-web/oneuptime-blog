@@ -32,6 +32,7 @@ First, make sure you have `ansible-test` available. It ships with `ansible-core`
 
 ```bash
 # Install ansible-core which includes ansible-test
+
 pip install ansible-core
 
 # Verify ansible-test is available

@@ -22,6 +22,7 @@ In Docker Compose, each service gets its own IP address on a shared bridge netwo
 
 ```yaml
 # Docker Compose: services use hostnames
+
 services:
   api:
     environment:

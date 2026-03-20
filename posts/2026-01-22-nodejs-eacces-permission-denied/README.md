@@ -39,6 +39,7 @@ Create a directory for global installations:
 
 ```bash
 # Create directory for global packages
+
 mkdir ~/.npm-global
 
 # Configure npm to use this directory

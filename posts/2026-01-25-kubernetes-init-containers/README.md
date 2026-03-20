@@ -24,6 +24,7 @@ graph LR
 
 ```yaml
 # Basic init container example
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -316,7 +317,7 @@ kubectl get pod app-with-init
 # This means 0 of 2 init containers completed
 ```
 
-## Resource Management for Init Containers
+Resource Management for Init Containers
 
 Init containers can have their own resource limits:
 

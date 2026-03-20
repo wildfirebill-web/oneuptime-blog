@@ -61,6 +61,7 @@ db = firestore.Client()
 post_ref = db.collection('posts').document('post-123')
 
 # Atomically increment multiple numeric fields at once
+
 # Each increment is applied independently and atomically
 post_ref.update({
     'likes': firestore.Increment(1),

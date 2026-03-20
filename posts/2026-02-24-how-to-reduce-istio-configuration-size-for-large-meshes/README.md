@@ -23,6 +23,7 @@ To see how big your current configuration is:
 
 ```bash
 # Count clusters (services) known to a proxy
+
 istioctl proxy-config cluster deploy/my-app -n my-namespace | wc -l
 
 # Count endpoints

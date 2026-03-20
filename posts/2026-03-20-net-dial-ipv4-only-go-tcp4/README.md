@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, net.Dial, IPv4, tcp4, Networking, Dual-Stack
+Tags: Go, Net.Dial, IPv4, Tcp4, Networking, Dual-Stack
 
 Description: Learn how to force IPv4-only TCP connections in Go using the tcp4 network type with net.Dial and net.Dialer to avoid dual-stack ambiguity.
 
 ## Why Force IPv4?
 
-By default, `net.Dial("tcp", ...)` may use IPv6 if the target resolves to a dual-stack host. Explicitly using `"tcp4"` forces Go's network stack to use IPv4 only—useful for environments where IPv6 is not fully configured or for compliance with IPv4-only infrastructure.
+By default, `net.Dial("tcp", ...)` may use IPv6 if the target resolves to a dual-stack host. Explicitly using `"tcp4"` forces Go's network stack to use IPv4 only-useful for environments where IPv6 is not fully configured or for compliance with IPv4-only infrastructure.
 
 ## Using "tcp4" Network Type
 

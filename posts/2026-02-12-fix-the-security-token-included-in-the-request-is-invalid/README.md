@@ -38,6 +38,7 @@ Check if your credentials are temporary.
 
 ```bash
 # If AWS_SESSION_TOKEN is set, you're using temporary credentials
+
 echo $AWS_SESSION_TOKEN
 
 # Check who the CLI thinks you are

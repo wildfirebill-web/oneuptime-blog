@@ -48,6 +48,7 @@ The simplest network mirror is a static file server. Generate the mirror content
 
 ```bash
 # On a machine with internet access
+
 # Create a temporary Terraform project with all needed providers
 mkdir /tmp/mirror-source && cd /tmp/mirror-source
 

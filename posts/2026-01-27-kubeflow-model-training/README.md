@@ -26,6 +26,7 @@ Kubeflow is an open-source ML platform designed to make deployments of machine l
 
 ```bash
 # Verify Kubernetes cluster is running
+
 kubectl cluster-info
 
 # Ensure you have at least 16GB RAM and 4 CPUs available

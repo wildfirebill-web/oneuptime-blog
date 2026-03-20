@@ -26,12 +26,13 @@ graph TD
     H --> I[Client Response]
 ```
 
-## Resource Naming Conventions
+Resource Naming Conventions
 
 Use nouns for resources, not verbs. Resources represent entities in your system.
 
 ```text
 # Good - nouns, plural, lowercase
+
 GET    /api/v1/users
 GET    /api/v1/users/123
 POST   /api/v1/users

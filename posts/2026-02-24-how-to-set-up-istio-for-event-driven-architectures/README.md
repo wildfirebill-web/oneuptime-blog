@@ -233,6 +233,7 @@ Control which services can publish and consume events:
 
 ```yaml
 # Only order-service can produce to the order topic (through the producer API)
+
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:

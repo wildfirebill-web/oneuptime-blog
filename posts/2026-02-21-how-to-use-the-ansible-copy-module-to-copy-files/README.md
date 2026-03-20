@@ -18,6 +18,7 @@ At its simplest, you specify a source file on the control node and a destination
 
 ```yaml
 # Copy a file from the control node to the remote host
+
 - name: Copy application configuration
   ansible.builtin.copy:
     src: files/app.conf

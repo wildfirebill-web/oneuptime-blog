@@ -20,6 +20,7 @@ For production, always use release mode:
 
 ```bash
 # Build an optimized release binary
+
 cargo build --release
 ```
 

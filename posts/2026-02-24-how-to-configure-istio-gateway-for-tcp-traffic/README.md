@@ -298,6 +298,7 @@ export GATEWAY_IP=$(kubectl -n istio-system get service istio-ingressgateway \
   -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 # Test PostgreSQL
+
 psql -h $GATEWAY_IP -p 5432 -U myuser -d mydb
 
 # Test MongoDB

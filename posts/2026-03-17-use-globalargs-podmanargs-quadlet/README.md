@@ -25,6 +25,7 @@ PodmanArgs appends flags to the `podman run` command:
 
 ```ini
 # ~/.config/containers/systemd/myapp.container
+
 [Unit]
 Description=Application with custom Podman arguments
 

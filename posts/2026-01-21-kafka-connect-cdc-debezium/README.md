@@ -167,6 +167,7 @@ SELECT pg_create_logical_replication_slot('debezium_slot', 'pgoutput');
 
 ```bash
 # Create connector
+
 curl -X POST -H "Content-Type: application/json" \
   --data @postgres-connector.json \
   http://localhost:8083/connectors

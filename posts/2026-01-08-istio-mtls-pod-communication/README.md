@@ -34,6 +34,7 @@ Before starting, ensure you have:
 
 ```bash
 # Kubernetes cluster
+
 kubectl cluster-info
 
 # Istio installed

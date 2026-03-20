@@ -30,6 +30,7 @@ Start by seeing how many messages are stuck.
 
 ```bash
 # Get queue details including dead-letter message count
+
 az servicebus queue show \
   --resource-group my-rg \
   --namespace-name my-servicebus \

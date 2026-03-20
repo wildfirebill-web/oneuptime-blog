@@ -8,7 +8,7 @@ Description: A comprehensive guide to diagnosing and resolving Fleet Git reposit
 
 ## Introduction
 
-Git repository sync issues are among the most common problems encountered with Fleet. When a GitRepo resource fails to sync, applications stop getting updates and your clusters can fall out of sync with your desired state. Quickly identifying the root cause — whether it's authentication, network connectivity, YAML syntax, or Fleet configuration — is essential for maintaining reliable GitOps pipelines.
+Git repository sync issues are among the most common problems encountered with Fleet. When a GitRepo resource fails to sync, applications stop getting updates and your clusters can fall out of sync with your desired state. Quickly identifying the root cause - whether it's authentication, network connectivity, YAML syntax, or Fleet configuration - is essential for maintaining reliable GitOps pipelines.
 
 This guide provides a systematic debugging approach for Fleet Git sync issues.
 
@@ -22,6 +22,7 @@ This guide provides a systematic debugging approach for Fleet Git sync issues.
 
 ```bash
 # 1. Check GitRepo conditions
+
 kubectl get gitrepo my-app -n fleet-default -o jsonpath='{.status.conditions}' | python3 -m json.tool
 
 # 2. Check for sync errors
@@ -45,10 +46,10 @@ kubectl get gitrepo my-app -n fleet-default \
 ```
 
 Possible conditions:
-- `Ready: True` — All syncing successfully
-- `Ready: False` — Sync is failing (check message)
-- `Stalled: True` — Persistent failure, manual intervention needed
-- `Synced: True` — Latest commit has been synced
+- `Ready: True` - All syncing successfully
+- `Ready: False` - Sync is failing (check message)
+- `Stalled: True` - Persistent failure, manual intervention needed
+- `Synced: True` - Latest commit has been synced
 
 ## Debugging Authentication Failures
 

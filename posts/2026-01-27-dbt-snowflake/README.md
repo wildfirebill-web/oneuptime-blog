@@ -20,6 +20,7 @@ The `profiles.yml` file configures how dbt connects to your Snowflake account. T
 
 ```yaml
 # ~/.dbt/profiles.yml
+
 # This file contains your Snowflake connection settings
 # Never commit this file to version control
 

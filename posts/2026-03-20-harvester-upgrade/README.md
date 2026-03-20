@@ -28,6 +28,7 @@ Before starting the upgrade, verify cluster health:
 
 ```bash
 # Check all nodes are Ready
+
 kubectl get nodes
 
 # Check no nodes are cordoned or in maintenance mode

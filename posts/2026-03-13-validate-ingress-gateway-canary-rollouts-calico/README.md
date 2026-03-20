@@ -24,6 +24,7 @@ This pattern is particularly valuable for microservices where a buggy new versio
 
 ```yaml
 # Stable version
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

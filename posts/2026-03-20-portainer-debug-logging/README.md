@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, debugging, logging, troubleshooting, diagnostics
+Tags: Portainer, Debugging, Logging, Troubleshooting, Diagnostics
 
 Description: A guide to enabling and using debug logging in Portainer for troubleshooting issues and diagnosing problems.
 
@@ -29,6 +29,7 @@ Portainer's default log level is INFO, which records significant events but omit
 
 ```bash
 # Stop existing container
+
 docker stop portainer
 docker rm portainer
 
@@ -99,7 +100,7 @@ docker logs portainer 2>&1 | grep -i "auth\|login\|token\|jwt"
 ```
 
 Expected debug output:
-```
+```text
 level=debug msg="User authentication successful" username=admin
 level=debug msg="JWT token created" userID=1
 ```

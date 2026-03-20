@@ -471,6 +471,7 @@ Apply the rules to your Loki deployment:
 
 ```bash
 # Create ConfigMap with rules
+
 kubectl apply -f loki-security-rules.yaml
 
 # Mount rules in Loki deployment

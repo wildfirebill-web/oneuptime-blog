@@ -16,6 +16,7 @@ Before optimizing, measure how much bandwidth ArgoCD currently uses. The applica
 
 ```bash
 # Check how many API requests ArgoCD makes to each cluster
+
 kubectl exec -n argocd deploy/argocd-application-controller -- \
   curl -s localhost:8082/metrics | grep argocd_cluster_api
 

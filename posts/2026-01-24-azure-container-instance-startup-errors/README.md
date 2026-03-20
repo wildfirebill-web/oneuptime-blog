@@ -35,6 +35,7 @@ The first step in debugging any startup error is getting detailed information ab
 
 ```bash
 # Get container instance details including state and events
+
 # The --query parameter filters to show only relevant debugging info
 az container show \
   --resource-group myResourceGroup \

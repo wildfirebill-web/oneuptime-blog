@@ -35,6 +35,7 @@ Make sure you have the necessary Azure CLI extensions installed.
 
 ```bash
 # Install or update the k8s-extension CLI extension
+
 az extension add --name k8s-extension --upgrade
 
 # Install or update the ml CLI extension

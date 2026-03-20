@@ -14,6 +14,7 @@ LDAP-based authentication in Squid lets you control proxy access using your exis
 
 ```bash
 # Install Squid and LDAP utilities
+
 sudo dnf install -y squid openldap-clients
 ```
 

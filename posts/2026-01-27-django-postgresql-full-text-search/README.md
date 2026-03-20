@@ -20,6 +20,7 @@ Before starting, ensure you have PostgreSQL as your database backend and Django'
 
 ```python
 # settings.py
+
 # PostgreSQL is required for full-text search features
 DATABASES = {
     'default': {

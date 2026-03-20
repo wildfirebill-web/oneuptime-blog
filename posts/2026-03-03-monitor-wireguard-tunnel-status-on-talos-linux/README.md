@@ -28,6 +28,7 @@ The quickest way to check WireGuard status on a Talos node is through talosctl.
 
 ```bash
 # Read the WireGuard interface status
+
 talosctl -n 192.168.1.1 read /proc/net/wireguard
 
 # Example output:

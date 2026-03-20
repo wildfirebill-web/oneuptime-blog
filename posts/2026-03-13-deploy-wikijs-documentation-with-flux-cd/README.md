@@ -29,6 +29,7 @@ This guide deploys WikiJS with a PostgreSQL database and configures an Ingress e
 kubectl create namespace wikijs
 
 # PostgreSQL credentials
+
 kubectl create secret generic wikijs-db-secret \
   --namespace wikijs \
   --from-literal=postgresql-password=wikijsdbpass \

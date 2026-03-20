@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, configuration, ports, networking, docker
+Tags: Portainer, Configuration, Ports, Networking, Docker
 
 Description: A guide to changing Portainer's default HTTP and HTTPS ports for security hardening or to avoid conflicts with other services.
 
@@ -28,6 +28,7 @@ Portainer listens on port 9443 (HTTPS) and 8000 (Edge agent tunnel) by default. 
 
 ```bash
 # Stop and remove existing container
+
 docker stop portainer
 docker rm portainer
 
@@ -159,4 +160,4 @@ docker run -d \
 
 ## Conclusion
 
-Changing Portainer's default ports is straightforward for Docker standalone deployments — simply remove and redeploy the container with different port mappings. For Swarm and Kubernetes, use the respective service/Helm update mechanisms. Always update firewall rules and Edge agent configurations after changing ports to ensure continued connectivity.
+Changing Portainer's default ports is straightforward for Docker standalone deployments - simply remove and redeploy the container with different port mappings. For Swarm and Kubernetes, use the respective service/Helm update mechanisms. Always update firewall rules and Edge agent configurations after changing ports to ensure continued connectivity.

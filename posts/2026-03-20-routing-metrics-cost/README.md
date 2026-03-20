@@ -10,7 +10,7 @@ Description: Learn what routing metrics are, how different protocols calculate c
 
 A routing metric is a value assigned to a route that indicates the **cost** of using that path. When a routing protocol has multiple paths to the same destination, the path with the **lowest metric** is preferred.
 
-Metrics are only compared **within the same protocol** — for cross-protocol comparison, use Administrative Distance.
+Metrics are only compared **within the same protocol** - for cross-protocol comparison, use Administrative Distance.
 
 ## Metrics by Protocol
 
@@ -26,7 +26,7 @@ Metrics are only compared **within the same protocol** — for cross-protocol co
 
 RIP counts the number of routers between source and destination:
 
-```
+```text
 Destination: 10.0.0.0/24
 
 Path A: R1 → R2 → R3 → 10.0.0.0  (hop count = 3)
@@ -41,7 +41,7 @@ Problem: RIP doesn't consider bandwidth. A 3-hop path over gigabit may be better
 
 OSPF uses interface cost based on bandwidth:
 
-```
+```text
 Cost = Reference Bandwidth / Interface Bandwidth
 
 Default reference bandwidth: 100 Mbps (100,000 Kbps)
@@ -56,7 +56,7 @@ Path cost = sum of all interface costs along the path.
 
 ### OSPF Cost on FRRouting
 
-```
+```text
 ! Manually set cost on an interface
 interface eth1
  ip ospf cost 10
@@ -74,6 +74,7 @@ On Linux, metrics for static routes are set manually:
 
 ```bash
 # Add route with metric
+
 ip route add 10.0.0.0/24 via 192.168.1.254 metric 100
 
 # Multiple routes with different metrics (failover)
@@ -85,7 +86,7 @@ ip route add 10.0.0.0/24 via 192.168.2.1 metric 200  # Secondary (failover)
 
 BGP uses multiple attributes in order:
 
-```
+```text
 1. Highest Weight (Cisco-specific)
 2. Highest Local Preference
 3. Locally originated routes
@@ -134,7 +135,7 @@ ip route replace 10.0.0.0/24 via 192.168.1.254 metric 50
 
 ### RIP: Offset Metric
 
-```
+```text
 interface eth1
  ip rip metric-offset 3   ! Add 3 to all routes received on this interface
 exit
@@ -162,7 +163,7 @@ for iface, bw in interfaces:
 ```
 
 Output:
-```
+```text
 Interface  BW       Cost
 eth0       1000 Mbps  1
 eth1        100 Mbps  1

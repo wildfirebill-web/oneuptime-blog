@@ -16,6 +16,7 @@ Description: Learn how to use vmstat on Ubuntu to monitor virtual memory, CPU ac
 
 ```bash
 # Check if it's available
+
 which vmstat
 
 # Install if missing

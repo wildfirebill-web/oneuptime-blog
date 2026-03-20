@@ -8,7 +8,7 @@ Description: Learn how to provision end-to-end ML pipeline infrastructure using 
 
 ---
 
-An ML pipeline connects data ingestion, feature engineering, model training, evaluation, and serving into a repeatable workflow. OpenTofu provisions the underlying infrastructure — compute, storage, IAM, and orchestration — that ML pipelines run on.
+An ML pipeline connects data ingestion, feature engineering, model training, evaluation, and serving into a repeatable workflow. OpenTofu provisions the underlying infrastructure - compute, storage, IAM, and orchestration - that ML pipelines run on.
 
 ## ML Pipeline Architecture
 
@@ -28,6 +28,7 @@ graph LR
 
 ```hcl
 # storage.tf
+
 locals {
   ml_buckets = {
     raw       = "raw data ingested from sources"
@@ -215,7 +216,7 @@ resource "aws_cloudwatch_event_target" "ml_pipeline" {
 ## MLflow Tracking Server
 
 ```hcl
-# mlflow.tf — self-hosted MLflow for experiment tracking
+# mlflow.tf - self-hosted MLflow for experiment tracking
 resource "aws_ecs_task_definition" "mlflow" {
   family                   = "${var.prefix}-mlflow"
   requires_compatibilities = ["FARGATE"]
@@ -241,8 +242,8 @@ resource "aws_ecs_task_definition" "mlflow" {
 
 ## Best Practices
 
-- Use Step Functions for ML pipeline orchestration — it provides built-in retry logic, failure handling, visual execution history, and integrations with SageMaker/Glue/Lambda.
-- Version all datasets in S3 with date-partitioned prefixes — reproducible training requires knowing exactly which data was used for each run.
-- Implement a model quality gate before registration — automate the evaluation step and only register models that exceed accuracy, latency, and fairness thresholds.
-- Schedule retraining during off-peak hours using EventBridge — GPU-intensive training jobs should run when compute costs are lowest (usually nights and weekends).
-- Track all experiments in MLflow or a managed experiment tracker — without experiment tracking, it's impossible to compare model versions or reproduce results.
+- Use Step Functions for ML pipeline orchestration - it provides built-in retry logic, failure handling, visual execution history, and integrations with SageMaker/Glue/Lambda.
+- Version all datasets in S3 with date-partitioned prefixes - reproducible training requires knowing exactly which data was used for each run.
+- Implement a model quality gate before registration - automate the evaluation step and only register models that exceed accuracy, latency, and fairness thresholds.
+- Schedule retraining during off-peak hours using EventBridge - GPU-intensive training jobs should run when compute costs are lowest (usually nights and weekends).
+- Track all experiments in MLflow or a managed experiment tracker - without experiment tracking, it's impossible to compare model versions or reproduce results.

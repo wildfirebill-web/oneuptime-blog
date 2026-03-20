@@ -69,6 +69,7 @@ First, define a GitRepository source that points to the Git repository containin
 
 ```yaml
 # gitrepository.yaml
+
 # GitRepository source pointing to a repo that contains Helm charts
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository

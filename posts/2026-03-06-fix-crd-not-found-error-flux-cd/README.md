@@ -20,6 +20,7 @@ When Flux encounters this error, the Kustomization status will show something li
 
 ```bash
 # Check the Kustomization status
+
 kubectl get kustomization -n flux-system my-app -o yaml
 ```
 

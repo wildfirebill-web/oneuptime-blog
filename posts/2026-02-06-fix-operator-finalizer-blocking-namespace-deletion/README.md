@@ -16,6 +16,7 @@ If the Operator cannot complete cleanup (usually due to missing RBAC permissions
 
 ```bash
 # Check why the namespace is stuck
+
 kubectl get namespace my-namespace -o yaml
 
 # Look for:

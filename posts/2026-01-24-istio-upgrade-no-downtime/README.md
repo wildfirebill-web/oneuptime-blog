@@ -42,6 +42,7 @@ Before starting, verify your cluster is ready:
 
 ```bash
 # Check current Istio version
+
 istioctl version
 
 # Verify the mesh is healthy

@@ -940,6 +940,7 @@ The manifest file tells Kafka Connect about your connector.
 
 ```properties
 # src/main/resources/META-INF/services/org.apache.kafka.connect.source.SourceConnector
+
 com.example.connector.ApiSourceConnector
 ```
 

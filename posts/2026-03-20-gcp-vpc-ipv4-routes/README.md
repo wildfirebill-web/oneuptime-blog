@@ -8,7 +8,7 @@ Description: Create and manage custom IPv4 static routes in a GCP VPC to direct 
 
 ## Introduction
 
-GCP VPCs have system-generated routes for subnets and a default internet gateway route. You can add custom static routes to direct traffic to specific next-hops — such as a NAT instance, VPN tunnel, or virtual appliance — overriding the default routing behavior.
+GCP VPCs have system-generated routes for subnets and a default internet gateway route. You can add custom static routes to direct traffic to specific next-hops - such as a NAT instance, VPN tunnel, or virtual appliance - overriding the default routing behavior.
 
 ## Route Types in GCP
 
@@ -23,6 +23,7 @@ GCP VPCs have system-generated routes for subnets and a default internet gateway
 
 ```bash
 # Route traffic to 192.168.0.0/16 through a VPN tunnel
+
 gcloud compute routes create route-to-onprem \
   --network my-vpc \
   --destination-range 192.168.0.0/16 \

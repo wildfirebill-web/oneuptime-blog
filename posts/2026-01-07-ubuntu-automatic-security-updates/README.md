@@ -39,6 +39,7 @@ The unattended-upgrades package automatically installs security updates. Install
 
 ```bash
 # Update package lists to ensure we get the latest version
+
 sudo apt update
 
 # Install unattended-upgrades and apt-listchanges

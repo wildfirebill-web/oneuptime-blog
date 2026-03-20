@@ -24,6 +24,7 @@ Create a directory structure for your backups:
 
 ```bash
 # Create backup and snapshot directories
+
 mkdir -p /mnt/backup/tar-backups
 mkdir -p /mnt/backup/snapshots
 ```

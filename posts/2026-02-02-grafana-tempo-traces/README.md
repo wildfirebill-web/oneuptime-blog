@@ -108,6 +108,7 @@ The following Docker Compose configuration creates a complete tracing environmen
 
 ```yaml
 # docker-compose.yaml
+
 # Complete tracing stack for local development and testing
 
 version: "3.9"

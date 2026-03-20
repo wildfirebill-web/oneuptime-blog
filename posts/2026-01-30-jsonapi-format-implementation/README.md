@@ -1133,6 +1133,7 @@ from functools import wraps
 app = Flask(__name__)
 
 # Initialize serializer
+
 serializer = JsonApiSerializer(base_url='http://localhost:5000/api')
 
 # Register resource types

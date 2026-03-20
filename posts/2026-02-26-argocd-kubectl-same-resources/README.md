@@ -35,6 +35,7 @@ You can see what changed with the ArgoCD CLI.
 
 ```bash
 # Show the diff between Git and live state
+
 argocd app diff my-app
 
 # Show detailed diff with full resource contents

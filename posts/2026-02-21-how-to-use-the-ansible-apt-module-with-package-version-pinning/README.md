@@ -16,6 +16,7 @@ The most direct approach is specifying the exact version in the package name:
 
 ```yaml
 # Install an exact version of a package
+
 - name: Install specific Redis version
   ansible.builtin.apt:
     name: redis-server=5:7.0.12-1

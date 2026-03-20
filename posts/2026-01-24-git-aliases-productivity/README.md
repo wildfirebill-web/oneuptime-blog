@@ -30,6 +30,7 @@ There are two ways to create Git aliases: using the command line or editing the 
 
 ```bash
 # Basic syntax
+
 git config --global alias.shortcut 'full-command'
 
 # Examples

@@ -36,6 +36,7 @@ Clonezilla SE is designed for enterprise environments where you need to deploy i
 # Clonezilla supports several cloning modes:
 
 # 1. savedisk - Save entire disk as an image
+
 # Example: Create complete backup of /dev/sda including all partitions
 
 # 2. saveparts - Save specific partitions as an image

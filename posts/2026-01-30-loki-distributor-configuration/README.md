@@ -65,6 +65,7 @@ Here is a foundational distributor configuration:
 
 ```yaml
 # loki-config.yaml
+
 # Basic distributor configuration for log ingestion
 
 distributor:

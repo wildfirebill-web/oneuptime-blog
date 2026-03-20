@@ -25,6 +25,7 @@ The TiDB Operator manages TiDB clusters on Kubernetes through the `TidbCluster` 
 
 ```yaml
 # infrastructure/sources/pingcap-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

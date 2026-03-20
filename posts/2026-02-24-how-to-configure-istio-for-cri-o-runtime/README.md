@@ -127,6 +127,7 @@ CRI-O stores logs in the CRI log format under `/var/log/pods/`. This is the same
 
 ```bash
 # Access through kubectl (always works)
+
 kubectl logs deploy/my-app -c istio-proxy --tail=50
 
 # Direct access on node
@@ -142,7 +143,7 @@ log_size_max = 8192
 
 Make sure this isn't set too low, or you might miss important Istio sidecar logs during debugging.
 
-## Resource Management
+Resource Management
 
 CRI-O uses cgroups for resource management, just like other runtimes. Configure sidecar resources in your Istio installation:
 

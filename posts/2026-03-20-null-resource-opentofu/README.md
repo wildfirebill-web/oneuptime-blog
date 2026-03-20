@@ -2,20 +2,21 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, null_resource, Provisioners, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Null_resource, Provisioners, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use null_resource in OpenTofu to run arbitrary local or remote commands as part of your infrastructure provisioning without creating actual cloud resources.
 
 ---
 
-`null_resource` is a resource from the `hashicorp/null` provider that does nothing on its own — it creates no cloud resources. Its value is in the provisioners and `triggers` attached to it. Use it to run scripts, execute local commands, or trigger re-execution based on changing inputs.
+`null_resource` is a resource from the `hashicorp/null` provider that does nothing on its own - it creates no cloud resources. Its value is in the provisioners and `triggers` attached to it. Use it to run scripts, execute local commands, or trigger re-execution based on changing inputs.
 
 ---
 
 ## Add the null Provider
 
 ```hcl
-# versions.tf — include the null provider
+# versions.tf - include the null provider
+
 terraform {
   required_providers {
     null = {
@@ -144,4 +145,4 @@ resource "terraform_data" "configure" {
 
 ## Summary
 
-`null_resource` runs local or remote provisioner commands without creating cloud resources. The `triggers` map determines when the resource re-executes — change any trigger value and it re-runs on the next apply. For new configurations, prefer `terraform_data` which has the same functionality without requiring the null provider.
+`null_resource` runs local or remote provisioner commands without creating cloud resources. The `triggers` map determines when the resource re-executes - change any trigger value and it re-runs on the next apply. For new configurations, prefer `terraform_data` which has the same functionality without requiring the null provider.

@@ -14,6 +14,7 @@ OpenTofu 1.8 introduced early variable evaluation, allowing input variables to b
 
 ```hcl
 # Previously, you couldn't do this:
+
 variable "aws_region" {
   type    = string
   default = "us-east-1"

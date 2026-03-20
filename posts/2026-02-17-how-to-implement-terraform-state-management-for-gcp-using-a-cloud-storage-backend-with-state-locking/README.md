@@ -34,6 +34,7 @@ The state bucket needs to be created before Terraform can use it. This is a chic
 
 ```bash
 # Create the state bucket with versioning enabled
+
 # Versioning is critical - it lets you recover previous state versions
 gcloud storage buckets create gs://my-org-terraform-state \
   --project=my-terraform-admin \

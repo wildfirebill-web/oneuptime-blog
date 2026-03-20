@@ -38,6 +38,7 @@ PROJECT_ID=$(gcloud config get-value project)
 SA_EMAIL="rancher-gke-provisioner@${PROJECT_ID}.iam.gserviceaccount.com"
 
 # Grant required roles
+
 gcloud projects add-iam-policy-binding $PROJECT_ID \
   --member="serviceAccount:${SA_EMAIL}" \
   --role="roles/container.admin"

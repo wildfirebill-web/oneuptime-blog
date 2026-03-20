@@ -15,7 +15,7 @@ When a device gets an IP address (via DHCP or static config), it performs ARP pr
 ## Step 1: Confirm Duplicate Address Detection
 
 ```cmd
-REM Windows Event Viewer — check for Event ID 4199
+REM Windows Event Viewer - check for Event ID 4199
 eventvwr.msc
 REM Navigate: Windows Logs → System
 REM Filter: Source = "Tcpip" or Event ID = 4199
@@ -34,6 +34,7 @@ REM If adapter shows no IP or 0.0.0.0, it was disabled due to conflict
 
 ```bash
 # Find all devices responding to the conflicted IP
+
 # Use arping (Linux/macOS)
 sudo arping -c 5 192.168.1.50 -I eth0
 
@@ -47,7 +48,7 @@ sudo arping -c 5 192.168.1.50 -I eth0
 ```
 
 ```cmd
-REM Windows — check ARP cache
+REM Windows - check ARP cache
 arp -a | findstr "192.168.1.50"
 
 REM Scan network to find devices
@@ -75,7 +76,7 @@ ipconfig /all
 
 ```bash
 # Option A: Exclude the static IP from DHCP pool (ISC DHCPD)
-# /etc/dhcp/dhcpd.conf — add a reservation
+# /etc/dhcp/dhcpd.conf - add a reservation
 host conflict_device {
     hardware ethernet AA:BB:CC:DD:EE:11;
     fixed-address 192.168.1.50;
@@ -93,7 +94,7 @@ sudo systemctl restart isc-dhcp-server
 **If DHCP gave out the same IP twice (lease file corruption):**
 
 ```bash
-# ISC DHCPD — clear corrupt lease file
+# ISC DHCPD - clear corrupt lease file
 sudo systemctl stop isc-dhcp-server
 sudo cp /var/lib/dhcp/dhcpd.leases /var/lib/dhcp/dhcpd.leases.bak
 sudo truncate -s 0 /var/lib/dhcp/dhcpd.leases
@@ -103,7 +104,7 @@ sudo systemctl start isc-dhcp-server
 ## Step 5: Enable DHCP Conflict Detection
 
 ```bash
-# ISC DHCPD — ping-check before assigning IPs
+# ISC DHCPD - ping-check before assigning IPs
 # /etc/dhcp/dhcpd.conf
 ping-check true;
 ping-timeout 2;

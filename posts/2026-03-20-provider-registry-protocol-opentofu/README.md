@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Provider Registry, Protocol, Internals, Infrastructure as Code
 
-Description: Learn how the OpenTofu provider registry protocol works — how providers are discovered, downloaded, and verified, and how to set up network mirrors for air-gapped environments.
+Description: Learn how the OpenTofu provider registry protocol works - how providers are discovered, downloaded, and verified, and how to set up network mirrors for air-gapped environments.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ When you run `tofu init`, OpenTofu uses the provider registry protocol to discov
 
 ## Provider Source Address Format
 
-```
+```text
 [<HOSTNAME>/]<NAMESPACE>/<TYPE>
 
 Examples:
@@ -26,6 +26,7 @@ Examples:
 
 ```bash
 # OpenTofu first discovers the registry's API endpoints
+
 curl -s https://registry.opentofu.org/.well-known/terraform.json | jq .
 
 # Response:
@@ -106,8 +107,8 @@ The network mirror must implement the provider mirror protocol:
 
 ```bash
 # Mirror URL structure:
-# /providers/{hostname}/{namespace}/{type}/index.json  — list versions
-# /providers/{hostname}/{namespace}/{type}/{version}.json — platform downloads
+# /providers/{hostname}/{namespace}/{type}/index.json  - list versions
+# /providers/{hostname}/{namespace}/{type}/{version}.json - platform downloads
 
 # index.json
 {
@@ -145,7 +146,7 @@ tofu providers mirror /opt/tofu-provider-mirror
 ```
 
 ```hcl
-# ~/.terraformrc — use filesystem mirror
+# ~/.terraformrc - use filesystem mirror
 provider_installation {
   filesystem_mirror {
     path    = "/opt/tofu-provider-mirror"
@@ -187,4 +188,4 @@ tofu providers lock \
 
 ## Conclusion
 
-The OpenTofu provider registry protocol is a REST API that enables service discovery, version listing, platform-specific downloads, and cryptographic verification. For air-gapped environments, implement a network mirror or use `tofu providers mirror` to populate a filesystem mirror. The `.terraform.lock.hcl` file records provider hashes for supply chain verification — always commit it to version control and use `-lockfile=readonly` in CI to enforce it.
+The OpenTofu provider registry protocol is a REST API that enables service discovery, version listing, platform-specific downloads, and cryptographic verification. For air-gapped environments, implement a network mirror or use `tofu providers mirror` to populate a filesystem mirror. The `.terraform.lock.hcl` file records provider hashes for supply chain verification - always commit it to version control and use `-lockfile=readonly` in CI to enforce it.

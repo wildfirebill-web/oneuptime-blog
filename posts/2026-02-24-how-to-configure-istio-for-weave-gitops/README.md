@@ -26,6 +26,7 @@ Then install Weave GitOps:
 brew install weaveworks/tap/gitops
 
 # Or install the Helm chart
+
 helm repo add ww-gitops https://helm.gitops.weave.works
 helm install weave-gitops ww-gitops/weave-gitops \
   --namespace flux-system \

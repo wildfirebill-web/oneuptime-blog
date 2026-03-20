@@ -42,6 +42,7 @@ Start by mapping the paths that must work for your application to be considered 
 
 ```python
 # smoke_test_config.py
+
 """
 Define critical paths for smoke testing.
 These are the absolute minimum features that must work.

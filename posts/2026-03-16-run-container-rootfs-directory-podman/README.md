@@ -26,6 +26,7 @@ You can create a rootfs from an existing container image or build one from scrat
 
 ```bash
 # Create a directory for the rootfs
+
 mkdir -p /tmp/my-rootfs
 
 # Export an existing image's filesystem

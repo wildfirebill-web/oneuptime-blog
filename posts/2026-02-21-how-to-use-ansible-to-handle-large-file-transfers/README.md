@@ -24,6 +24,7 @@ Here is a basic example that syncs a large directory to remote hosts:
 
 ```yaml
 # Sync a large application directory to remote hosts using rsync
+
 - name: Sync application bundle to servers
   ansible.posix.synchronize:
     src: /opt/releases/myapp-v2.5.0/

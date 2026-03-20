@@ -32,6 +32,7 @@ jsonencode(true)
 
 jsonencode(null)
 # Result: "null"
+
 ```
 
 ## Type Mapping

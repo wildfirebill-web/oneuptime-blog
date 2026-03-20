@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, ipaddress, Networking, CIDR, stdlib
+Tags: Python, IPv4, Ipaddress, Networking, CIDR, Stdlib
 
 Description: Learn how to create and work with IPv4Network and IPv4Interface objects in Python's ipaddress module for subnet management, address enumeration, and network operations.
 
@@ -11,7 +11,8 @@ Description: Learn how to create and work with IPv4Network and IPv4Interface obj
 ```python
 import ipaddress
 
-# From CIDR string — strict=True (default) requires no host bits set
+# From CIDR string - strict=True (default) requires no host bits set
+
 net = ipaddress.IPv4Network("192.168.1.0/24")
 print(net)                     # 192.168.1.0/24
 print(net.network_address)     # 192.168.1.0

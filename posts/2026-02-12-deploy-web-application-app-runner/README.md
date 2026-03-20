@@ -53,6 +53,7 @@ And a Dockerfile to containerize it:
 
 ```dockerfile
 # Dockerfile
+
 FROM node:20-alpine
 
 WORKDIR /app

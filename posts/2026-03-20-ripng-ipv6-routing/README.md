@@ -56,7 +56,7 @@ Each RTE (Route Table Entry) contains:
 - Prefix Length (1 byte)
 - Metric (1 byte: 1-15 for reachable, 16 for unreachable)
 
-```
+```yaml
 RIPng message structure:
 +--------+--------+-------------------------------+
 | Command | Version | Must Be Zero                 |
@@ -82,4 +82,4 @@ RIPng is appropriate for:
 
 ## Summary
 
-RIPng is the IPv6 adaptation of RIP — it uses hop count, UDP port 521, and the ff02::9 multicast address. The 15-hop limit makes it suitable only for small networks. For production IPv6 routing in networks larger than a few sites, prefer OSPFv3 or BGP.
+RIPng is the IPv6 adaptation of RIP - it uses hop count, UDP port 521, and the ff02::9 multicast address. The 15-hop limit makes it suitable only for small networks. For production IPv6 routing in networks larger than a few sites, prefer OSPFv3 or BGP.

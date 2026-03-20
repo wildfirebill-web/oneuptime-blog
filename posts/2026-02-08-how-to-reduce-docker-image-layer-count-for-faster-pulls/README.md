@@ -18,6 +18,7 @@ Check your current image layer count:
 
 ```bash
 # Count layers in an image
+
 docker inspect --format '{{len .RootFS.Layers}}' myapp:latest
 # Output: 23
 

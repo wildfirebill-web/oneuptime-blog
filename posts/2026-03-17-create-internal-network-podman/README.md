@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Internal, Isolation, Security
+Tags: Podman, Containers, DevOps, Networking, Internals, Isolation, Security
 
 Description: Learn how to create internal networks in Podman that allow container-to-container communication but block external access.
 
@@ -18,6 +18,7 @@ An internal network in Podman has no gateway to the outside world. Containers on
 
 ```bash
 # Create an internal-only network
+
 podman network create --internal backend
 
 # Verify the network is internal

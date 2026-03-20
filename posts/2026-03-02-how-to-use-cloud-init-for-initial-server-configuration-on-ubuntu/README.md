@@ -30,6 +30,7 @@ Cloud-init accepts several formats. The most common is cloud-config YAML, which 
 ```yaml
 #cloud-config
 # This is a cloud-config document - starts with #cloud-config on the first line
+
 # Whitespace and case matter in YAML
 ```
 

@@ -14,6 +14,7 @@ Keycloak is a widely-used enterprise identity and access management solution. In
 
 ```bash
 # Or use the master realm for testing
+
 # In Keycloak Admin Console:
 # Realm Settings > New Realm > Name: "infrastructure"
 ```

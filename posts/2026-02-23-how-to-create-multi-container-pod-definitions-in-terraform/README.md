@@ -27,6 +27,7 @@ The most common multi-container patterns are:
 
 ```hcl
 # Kubernetes deployment with sidecar container
+
 resource "kubernetes_deployment" "app_with_sidecar" {
   metadata {
     name      = "web-app"

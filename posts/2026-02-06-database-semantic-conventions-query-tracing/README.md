@@ -18,6 +18,7 @@ Without standardized naming, database telemetry gets messy fast. Consider three 
 
 ```text
 # Service A (Python + PostgreSQL)
+
 db_type: "postgres"
 query: "SELECT * FROM users WHERE id = $1"
 database: "myapp_prod"

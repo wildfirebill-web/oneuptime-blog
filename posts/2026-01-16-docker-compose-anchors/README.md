@@ -45,6 +45,7 @@ flowchart LR
 version: '3.8'
 
 # Define common configurations using extension fields (x-)
+
 x-common-env: &common-env
   TZ: UTC
   LOG_LEVEL: info

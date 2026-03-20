@@ -256,6 +256,7 @@ Connectors are configured using YAML files or command-line arguments. Here's how
 
 ```yaml
 # jdbc-source-config.yaml
+
 # Configuration for ingesting data from PostgreSQL into Pulsar
 
 # Connector metadata

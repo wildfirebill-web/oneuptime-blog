@@ -46,6 +46,7 @@ Examine your CodeDeploy setup:
 
 ```bash
 # List CodeDeploy applications
+
 aws deploy list-applications
 
 # Get deployment group details

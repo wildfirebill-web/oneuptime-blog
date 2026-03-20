@@ -24,6 +24,7 @@ You can verify this behavior:
 
 ```bash
 # Check your current session scope
+
 cat /proc/self/cgroup
 
 # Check if lingering is enabled for your user

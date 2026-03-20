@@ -8,12 +8,13 @@ Description: Configure BorgBackup to create deduplicated, encrypted backups over
 
 ---
 
-BorgBackup (borg) is a deduplicating, encrypting backup tool. It uses SSH for remote repository access, making IPv6 support straightforward — you just need to use the correct SSH syntax for IPv6 addresses.
+BorgBackup (borg) is a deduplicating, encrypting backup tool. It uses SSH for remote repository access, making IPv6 support straightforward - you just need to use the correct SSH syntax for IPv6 addresses.
 
 ## Installing BorgBackup
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install borgbackup -y
 
 # RHEL/CentOS
@@ -176,4 +177,4 @@ crontab -e
 0 2 * * * /usr/local/bin/borg_backup_ipv6.sh 2>&1
 ```
 
-BorgBackup's reliance on SSH for remote connections makes IPv6 support seamless — correctly configured SSH keys and host aliases eliminate the need for special IPv6-specific borg syntax in most use cases.
+BorgBackup's reliance on SSH for remote connections makes IPv6 support seamless - correctly configured SSH keys and host aliases eliminate the need for special IPv6-specific borg syntax in most use cases.

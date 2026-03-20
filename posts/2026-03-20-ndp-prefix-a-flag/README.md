@@ -12,7 +12,7 @@ The A (Autonomous Address Configuration) flag is a single bit in the Prefix Info
 
 ## Prefix Information Option Format
 
-```
+```text
 NDP Prefix Information Option:
 
  0                   1                   2                   3
@@ -42,7 +42,7 @@ A flag (Autonomous):
 
 ## A Flag Use Cases
 
-```
+```text
 A=1, L=1 (typical SLAAC configuration):
   Hosts form SLAAC addresses using the prefix
   Prefix is on-link (direct routes to prefix)
@@ -68,7 +68,8 @@ A=0, L=0:
 ## Configuring A Flag in radvd
 
 ```bash
-# SLAAC enabled (A=1) — default behavior
+# SLAAC enabled (A=1) - default behavior
+
 sudo tee /etc/radvd.conf << 'EOF'
 interface eth0 {
     AdvSendAdvert on;
@@ -83,7 +84,7 @@ interface eth0 {
 };
 EOF
 
-# DHCPv6 only — disable SLAAC (A=0)
+# DHCPv6 only - disable SLAAC (A=0)
 sudo tee /etc/radvd.conf << 'EOF'
 interface eth0 {
     AdvSendAdvert on;

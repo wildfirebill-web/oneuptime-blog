@@ -8,7 +8,7 @@ Description: Install the Portainer Agent on your Unraid server to manage it from
 
 ## Introduction
 
-The Portainer Agent allows you to manage a remote Docker host from a central Portainer instance. This is ideal for home labs where you want one Portainer dashboard managing multiple machines — including your Unraid server — without exposing the Docker socket directly.
+The Portainer Agent allows you to manage a remote Docker host from a central Portainer instance. This is ideal for home labs where you want one Portainer dashboard managing multiple machines - including your Unraid server - without exposing the Docker socket directly.
 
 ## Prerequisites
 
@@ -50,6 +50,7 @@ The Portainer Agent allows you to manage a remote Docker host from a central Por
 
 ```bash
 # SSH into Unraid
+
 ssh root@<unraid-ip>
 
 # Deploy the Portainer Agent

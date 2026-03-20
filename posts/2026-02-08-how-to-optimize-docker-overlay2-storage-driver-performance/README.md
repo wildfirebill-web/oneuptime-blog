@@ -34,6 +34,7 @@ For most Docker workloads, xfs performs better:
 
 ```bash
 # Check your current filesystem
+
 df -T /var/lib/docker
 # Look at the Type column
 

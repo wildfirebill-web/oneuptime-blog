@@ -295,6 +295,7 @@ metadata:
 
 ```bash
 # Using CLI
+
 argocd app diff myapp
 
 # Detailed diff

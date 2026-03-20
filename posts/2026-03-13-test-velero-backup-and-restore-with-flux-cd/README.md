@@ -27,6 +27,7 @@ Before testing restores, ensure backups are complete.
 
 ```bash
 # List recent backups and check their status
+
 velero backup get --selector schedule=production-apps-hourly
 
 # Check that the backup contains the expected resources

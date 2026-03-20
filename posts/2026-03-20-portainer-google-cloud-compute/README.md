@@ -1,4 +1,4 @@
-# How to Deploy Portainer on Google Cloud Compute Engine
+# How to Deploy Portainer on Google Cloud Compute Engine - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ Google Cloud Compute Engine offers competitive pricing and excellent network per
 
 ```bash
 # Set project
+
 gcloud config set project YOUR_PROJECT_ID
 
 # Create instance

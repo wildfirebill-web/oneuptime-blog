@@ -1,13 +1,12 @@
----
-title: "Using tofu state replace-provider in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, state, providers
-description: "Learn how to use tofu state replace-provider to update provider references in state when migrating between provider sources."
----
-
 # Using tofu state replace-provider in OpenTofu
 
-The `tofu state replace-provider` command updates the provider source addresses stored in state. It's essential when migrating from one provider source to another — for example, moving from a community provider fork to an official release, or switching registry hosts.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, State, Provider
+
+Description: Learn how to use tofu state replace-provider to update provider references in state when migrating between provider sources.
+
+The `tofu state replace-provider` command updates the provider source addresses stored in state. It's essential when migrating from one provider source to another - for example, moving from a community provider fork to an official release, or switching registry hosts.
 
 ## When to Use replace-provider
 
@@ -29,6 +28,7 @@ When migrating from Terraform to OpenTofu, some provider sources may need updati
 
 ```bash
 # Migrate from Terraform registry to OpenTofu registry
+
 tofu state replace-provider \
   registry.terraform.io/hashicorp/aws \
   registry.opentofu.org/hashicorp/aws

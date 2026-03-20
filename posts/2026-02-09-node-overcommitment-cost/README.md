@@ -24,6 +24,7 @@ Before overcommitting, measure actual resource usage:
 
 ```promql
 # Average CPU usage vs requests
+
 avg_over_time(
   container_cpu_usage_seconds_total[24h]
 ) / on(pod) group_left()

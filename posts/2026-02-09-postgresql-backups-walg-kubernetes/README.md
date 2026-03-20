@@ -22,6 +22,7 @@ Create a PostgreSQL StatefulSet with WAL-G sidecar for backup operations:
 
 ```yaml
 # postgres-with-walg.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

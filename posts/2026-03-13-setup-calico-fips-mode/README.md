@@ -29,6 +29,7 @@ FIPS mode must be enabled at the OS level before Calico can operate in FIPS mode
 
 ```bash
 # RHEL 8/9
+
 fips-mode-setup --enable
 reboot
 

@@ -16,6 +16,7 @@ Every registered variable is a dictionary with a predictable structure. The exac
 
 ```yaml
 # show-registered-var.yml - Inspect a registered variable
+
 ---
 - name: Inspect registered variable structure
   hosts: localhost

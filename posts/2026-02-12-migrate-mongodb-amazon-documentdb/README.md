@@ -29,6 +29,7 @@ Run the Amazon DocumentDB compatibility tool against your existing MongoDB to ge
 
 ```bash
 # Clone the compatibility assessment tool
+
 git clone https://github.com/awslabs/amazon-documentdb-tools.git
 cd amazon-documentdb-tools/compat-tool
 

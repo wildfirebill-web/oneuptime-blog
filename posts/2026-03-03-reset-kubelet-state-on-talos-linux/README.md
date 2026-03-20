@@ -31,6 +31,7 @@ The simplest approach is restarting kubelet. This does not wipe any state but fo
 
 ```bash
 # Restart the kubelet service
+
 talosctl service kubelet restart --nodes 10.0.0.50
 
 # Check the service status

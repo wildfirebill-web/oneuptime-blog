@@ -18,6 +18,7 @@ This is different from just running `terraform plan`. A plan tells you what Terr
 
 ```bash
 # Create a test workspace for your feature branch
+
 terraform workspace new test-add-redis-cache
 
 # Apply the configuration in the test workspace

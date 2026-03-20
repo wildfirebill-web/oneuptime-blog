@@ -22,6 +22,7 @@ Any environment variable prefixed with `TF_VAR_` is automatically mapped to a Te
 
 ```bash
 # Set a database password via environment variable
+
 export TF_VAR_db_password="my-secret-password"
 
 # This maps to the Terraform variable "db_password"

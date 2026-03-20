@@ -75,6 +75,7 @@ Here is a typical Core configuration:
 
 ```yaml
 # config-core.yaml
+
 # Simple pipeline using only Core components
 
 receivers:

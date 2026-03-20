@@ -14,6 +14,7 @@ BlueStore is the default Ceph OSD backend. It writes directly to raw block devic
 
 ```bash
 # Verify OSDs are using BlueStore
+
 sudo ceph osd metadata osd.0 | grep osd_objectstore
 
 # View current BlueStore settings for an OSD

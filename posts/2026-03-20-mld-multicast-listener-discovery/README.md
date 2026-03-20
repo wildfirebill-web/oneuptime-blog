@@ -14,7 +14,7 @@ MLD is defined in RFC 2710 (MLDv1) and RFC 3810 (MLDv2). It is a sub-protocol of
 
 ## Why MLD Is Needed
 
-Without MLD, routers would have to forward all multicast traffic to all links — wasting bandwidth. MLD allows routers to learn which links have active listeners for each multicast group and only forward traffic to those links.
+Without MLD, routers would have to forward all multicast traffic to all links - wasting bandwidth. MLD allows routers to learn which links have active listeners for each multicast group and only forward traffic to those links.
 
 ## MLD Message Types
 
@@ -60,6 +60,7 @@ Sent by routers to `ff02::1` to discover all group memberships:
 
 ```bash
 # Capture general MLD queries
+
 tcpdump -i eth0 -n 'icmp6 and ip6[40] == 130'
 
 # Typical output:
@@ -128,7 +129,7 @@ MLD requires network support at the layer 2 device level:
 
 MLD messages are carried as ICMPv6 messages with the Hop-by-Hop Options extension header containing the Router Alert option. This ensures that routers process MLD messages even when they are not the destination:
 
-```
+```text
 IPv6 Header
   - Hop-by-Hop Options Header (with Router Alert = MLD)
   - ICMPv6 (type 130/131/132/143 = MLD message)

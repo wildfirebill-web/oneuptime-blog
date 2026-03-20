@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NeuVector, Compliance, Container Security, CIS Benchmarks, Kubernetes
+Tags: NeuVector, Compliance, Container Security, CIS Benchmark, Kubernetes
 
 Description: Configure NeuVector's compliance scanning to automatically assess your Kubernetes cluster and containers against security standards and regulatory requirements.
 
@@ -14,12 +14,12 @@ NeuVector's compliance scanning evaluates your containers and Kubernetes cluster
 
 NeuVector covers these compliance standards:
 
-- **CIS Kubernetes Benchmark** — Kubernetes cluster hardening
-- **CIS Docker Benchmark** — Container host hardening
-- **PCI DSS** — Payment card industry requirements
-- **HIPAA** — Healthcare data protection
-- **GDPR** — European data privacy regulation
-- **NIST 800-190** — Application Container Security Guide
+- **CIS Kubernetes Benchmark** - Kubernetes cluster hardening
+- **CIS Docker Benchmark** - Container host hardening
+- **PCI DSS** - Payment card industry requirements
+- **HIPAA** - Healthcare data protection
+- **GDPR** - European data privacy regulation
+- **NIST 800-190** - Application Container Security Guide
 
 ## Prerequisites
 
@@ -40,6 +40,7 @@ Via API:
 
 ```bash
 # Trigger compliance scan on all nodes
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/bench/host/all" \
   -H "X-Auth-Token: ${TOKEN}"

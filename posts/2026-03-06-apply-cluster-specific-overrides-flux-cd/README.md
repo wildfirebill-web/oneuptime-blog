@@ -61,6 +61,7 @@ The most straightforward method for cluster-specific overrides is Kustomize stra
 
 ```yaml
 # base/apps/web-app/deployment.yaml
+
 # Base deployment shared across all clusters
 apiVersion: apps/v1
 kind: Deployment

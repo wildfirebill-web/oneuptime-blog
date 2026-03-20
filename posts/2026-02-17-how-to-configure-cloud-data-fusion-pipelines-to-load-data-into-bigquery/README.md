@@ -43,6 +43,7 @@ Let's use a GCS source as our example. Drag the "GCS" source from the left panel
 
 ```yaml
 # GCS source configuration example
+
 Reference Name: customer_data_source
 Path: gs://my-data-bucket/customer_exports/
 Format: csv

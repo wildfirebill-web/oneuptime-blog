@@ -89,6 +89,7 @@ echo "=== IPAM Usage Report - $(date) ===" > "$OUTPUT_FILE"
 calicoctl ipam show --show-blocks >> "$OUTPUT_FILE"
 
 # Extract utilization percentage
+
 TOTAL=$(calicoctl ipam show 2>/dev/null | grep "IP Pool" | awk '{print $6}')
 USED=$(calicoctl ipam show 2>/dev/null | grep "IP Pool" | awk '{print $8}')
 

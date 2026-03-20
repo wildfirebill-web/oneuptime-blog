@@ -16,6 +16,7 @@ When you use `count`, Terraform creates resource instances with zero-based numer
 
 ```hcl
 # Resource using count
+
 resource "aws_instance" "web" {
   count         = 3
   ami           = var.ami_id

@@ -51,6 +51,7 @@ kubectl exec $NODE_POD -n kube-system -- \
 
 ```bash
 # Restart calico-node to retry datastore connection
+
 kubectl delete pod $NODE_POD -n kube-system
 ```
 

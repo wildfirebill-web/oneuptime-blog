@@ -8,11 +8,11 @@ Description: Understand the structure and purpose of ICMPv6 Packet Too Big messa
 
 ## Introduction
 
-ICMPv6 Packet Too Big (Type 2) is the mechanism that replaces IPv4 router fragmentation. When an IPv6 router receives a packet that is too large to forward on the next link, it cannot fragment the packet — instead, it drops the packet and sends a Packet Too Big message back to the source. The source uses this information to reduce its packet size and retransmit.
+ICMPv6 Packet Too Big (Type 2) is the mechanism that replaces IPv4 router fragmentation. When an IPv6 router receives a packet that is too large to forward on the next link, it cannot fragment the packet - instead, it drops the packet and sends a Packet Too Big message back to the source. The source uses this information to reduce its packet size and retransmit.
 
 ## Packet Too Big Message Format
 
-```
+```text
 ICMPv6 Packet Too Big Message (RFC 4443):
 
  0                   1                   2                   3
@@ -26,7 +26,7 @@ ICMPv6 Packet Too Big Message (RFC 4443):
 +   packet exceeding the minimum IPv6 MTU (1280 bytes)          |
 ```
 
-```
+```text
 Field definitions:
   Type:  2 (Packet Too Big)
   Code:  0 (always zero for this message type)
@@ -39,7 +39,7 @@ Field definitions:
 
 ## How Routers Generate Packet Too Big
 
-```
+```text
 Router PTB generation process:
 
 1. Router receives IPv6 packet from ingress interface
@@ -144,6 +144,7 @@ print(handle_packet_too_big(1400, "2001:db8::2", cache))  # Normal case
 
 ```bash
 # Capture all incoming PTB messages
+
 sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 2"
 
 # Show PTB with the MTU value (bytes 44-47 of IPv6+ICMPv6)

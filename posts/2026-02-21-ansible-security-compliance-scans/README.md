@@ -22,6 +22,7 @@ This playbook installs OpenSCAP and the security guide content on target hosts:
 
 ```yaml
 # install-openscap.yml - Installs OpenSCAP scanner and SCAP content
+
 ---
 - name: Install OpenSCAP on all servers
   hosts: all

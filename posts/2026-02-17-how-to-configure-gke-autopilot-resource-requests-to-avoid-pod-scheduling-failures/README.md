@@ -32,6 +32,7 @@ Here is a properly configured deployment for Autopilot:
 
 ```yaml
 # deployment.yaml - Deployment with explicit resource requests for Autopilot
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -82,7 +83,7 @@ This matters because you are billed based on the actual resource requests, not w
 kubectl get pod my-pod -o jsonpath='{.spec.containers[*].resources}' | python3 -m json.tool
 ```
 
-## Resource Request Ratios
+Resource Request Ratios
 
 Autopilot requires specific ratios between CPU and memory. You cannot request 8 CPUs with 512Mi of memory because the ratio is too skewed. The allowed ratios are:
 

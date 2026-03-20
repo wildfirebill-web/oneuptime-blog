@@ -20,6 +20,7 @@ The `command` module runs a binary directly without invoking a shell at all. It 
 
 ```yaml
 # command module runs the binary directly, no shell involved
+
 - name: List files (no shell processing)
   ansible.builtin.command:
     cmd: ls -la /var/log

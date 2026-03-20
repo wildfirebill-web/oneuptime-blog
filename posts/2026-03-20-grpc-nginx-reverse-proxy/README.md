@@ -10,6 +10,7 @@ Description: Learn how to configure Nginx as an IPv4 reverse proxy for gRPC serv
 
 ```nginx
 # /etc/nginx/sites-available/grpc
+
 upstream grpc_backend {
     server 127.0.0.1:50051;
     keepalive 32;
@@ -128,4 +129,4 @@ server {
 
 ## Conclusion
 
-Nginx supports gRPC proxying natively with `grpc_pass` on HTTP/2 listeners. TLS termination decouples certificate management from the gRPC service — the backend runs plain HTTP/2 while clients see a valid TLS server. Use `keepalive` in the upstream block to reuse connections to backends (gRPC channels map to HTTP/2 connections). Return gRPC status `14` (UNAVAILABLE) from the `error_page` handler so clients receive a proper gRPC error instead of an HTTP 502 response.
+Nginx supports gRPC proxying natively with `grpc_pass` on HTTP/2 listeners. TLS termination decouples certificate management from the gRPC service - the backend runs plain HTTP/2 while clients see a valid TLS server. Use `keepalive` in the upstream block to reuse connections to backends (gRPC channels map to HTTP/2 connections). Return gRPC status `14` (UNAVAILABLE) from the `error_page` handler so clients receive a proper gRPC error instead of an HTTP 502 response.

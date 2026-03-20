@@ -41,6 +41,7 @@ Define a Gateway that HTTPRoutes will attach to:
 
 ```yaml
 # gateway.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:

@@ -49,6 +49,7 @@ tomcat-setup/
 
 ```yaml
 # group_vars/all.yml
+
 tomcat_version: "10.1.18"
 tomcat_major_version: "10"
 tomcat_user: tomcat

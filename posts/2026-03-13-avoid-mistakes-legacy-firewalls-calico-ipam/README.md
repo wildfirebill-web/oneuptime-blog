@@ -28,6 +28,7 @@ The most fundamental mistake is writing firewall rules for specific pod IPs. Pod
 
 ```bash
 # WRONG: Firewall rule targeting a specific pod IP
+
 # iptables -A FORWARD -s 10.244.1.5 -d 10.10.0.100 -j ACCEPT
 # This rule breaks the next time the pod restarts and gets a new IP
 

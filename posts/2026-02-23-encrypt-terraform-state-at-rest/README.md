@@ -32,6 +32,7 @@ AWS S3 is one of the most popular Terraform backends. Enabling encryption is str
 
 ```hcl
 # backend.tf - S3 backend with AES-256 server-side encryption
+
 terraform {
   backend "s3" {
     bucket         = "my-terraform-state"

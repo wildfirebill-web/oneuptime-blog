@@ -26,6 +26,7 @@ graph TD
 # iam_soc2.tf
 
 # Enforce MFA for console access
+
 resource "aws_iam_account_password_policy" "soc2" {
   minimum_password_length        = 14
   require_symbols                = true
@@ -88,7 +89,7 @@ resource "aws_cloudwatch_metric_alarm" "root_account_usage" {
   period              = 300
   statistic           = "Sum"
   threshold           = 0
-  alarm_description   = "Root account was used — SOC 2 violation"
+  alarm_description   = "Root account was used - SOC 2 violation"
   alarm_actions       = [aws_sns_topic.security_alerts.arn]
 }
 ```
@@ -179,8 +180,8 @@ resource "aws_iam_role" "external_auditor" {
 
 ## Best Practices
 
-- Enable AWS Security Hub, GuardDuty, and Config before your SOC 2 audit period begins — auditors need 3-6 months of operating evidence.
+- Enable AWS Security Hub, GuardDuty, and Config before your SOC 2 audit period begins - auditors need 3-6 months of operating evidence.
 - Store CloudTrail and Config logs in a separate, locked-down audit account so production engineers cannot modify evidence.
-- Enable root account alerts — SOC 2 auditors specifically look for evidence that root account usage is detected and responded to.
-- Document OpenTofu as your change management control — it's strong evidence of formal change procedures.
-- Test incident response procedures quarterly and document the tests — SOC 2 requires evidence of incident response capability, not just policies.
+- Enable root account alerts - SOC 2 auditors specifically look for evidence that root account usage is detected and responded to.
+- Document OpenTofu as your change management control - it's strong evidence of formal change procedures.
+- Test incident response procedures quarterly and document the tests - SOC 2 requires evidence of incident response capability, not just policies.

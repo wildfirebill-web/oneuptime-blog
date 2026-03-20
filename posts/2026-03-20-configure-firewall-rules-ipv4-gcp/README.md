@@ -16,6 +16,7 @@ GCP firewall rules are stateful and applied at the VPC level. Rules use priority
 PROJECT_ID="my-gcp-project"
 
 # Allow HTTP from anywhere to instances tagged "web-server"
+
 gcloud compute firewall-rules create allow-http \
   --project=$PROJECT_ID \
   --network=prod-vpc \
@@ -100,7 +101,7 @@ gcloud compute firewall-rules create allow-egress-http \
 
 ## Using Service Accounts as Targets
 
-More secure than tags — service accounts cannot be spoofed:
+More secure than tags - service accounts cannot be spoofed:
 
 ```bash
 # Allow internal traffic to instances running a specific service account

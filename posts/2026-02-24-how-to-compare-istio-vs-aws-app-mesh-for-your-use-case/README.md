@@ -44,6 +44,7 @@ Istio works primarily with Kubernetes. It does not integrate natively with ECS o
 
 ```bash
 # App Mesh works across EKS and ECS
+
 aws appmesh create-virtual-node \
   --mesh-name my-mesh \
   --virtual-node-name my-ecs-service \

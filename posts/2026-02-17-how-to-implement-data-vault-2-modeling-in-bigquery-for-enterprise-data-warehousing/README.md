@@ -262,6 +262,7 @@ Use a DAG in Cloud Composer to orchestrate the loading sequence:
 
 ```python
 # Simplified Airflow DAG for Data Vault loading
+
 from airflow import DAG
 from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobOperator
 from datetime import datetime

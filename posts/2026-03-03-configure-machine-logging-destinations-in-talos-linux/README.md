@@ -20,6 +20,7 @@ The machine logging destination configuration controls where Talos sends its sys
 
 ```bash
 # View machine logs without any destination configured
+
 # These are from the in-memory buffer only
 talosctl -n 192.168.1.10 logs machined
 talosctl -n 192.168.1.10 logs apid

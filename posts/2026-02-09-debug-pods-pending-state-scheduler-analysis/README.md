@@ -31,6 +31,7 @@ Start with these essential commands to gather information:
 
 ```bash
 # Check pod status
+
 kubectl get pod my-pod
 
 # View detailed pod information

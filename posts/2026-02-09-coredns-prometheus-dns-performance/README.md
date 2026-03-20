@@ -57,6 +57,7 @@ Query metrics directly:
 
 ```bash
 # Port forward to CoreDNS metrics endpoint
+
 kubectl port-forward -n kube-system svc/kube-dns 9153:9153
 
 # In another terminal, fetch metrics

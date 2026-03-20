@@ -228,6 +228,7 @@ Monitor quota usage with PromQL:
 
 ```promql
 # CPU request quota usage percentage
+
 kube_resourcequota{namespace="production", type="used", resource="requests.cpu"}
 /
 kube_resourcequota{namespace="production", type="hard", resource="requests.cpu"}

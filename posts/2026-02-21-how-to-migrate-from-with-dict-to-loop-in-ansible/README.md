@@ -20,6 +20,7 @@ Before:
 
 ```yaml
 # OLD: Iterating over a dictionary with with_dict
+
 - name: Create user accounts
   hosts: all
   become: true

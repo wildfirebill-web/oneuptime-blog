@@ -56,6 +56,7 @@ If you don't already have a bucket, create one:
 
 ```bash
 # Create an S3 bucket for the file gateway
+
 aws s3api create-bucket \
   --bucket my-file-gateway-data \
   --region us-east-1

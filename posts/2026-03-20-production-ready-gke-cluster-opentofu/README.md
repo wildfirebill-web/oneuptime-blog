@@ -189,6 +189,7 @@ resource "google_service_account" "gke_nodes" {
 }
 
 # Minimal permissions for nodes
+
 resource "google_project_iam_member" "gke_nodes_logging" {
   project = var.project_id
   role    = "roles/logging.logWriter"

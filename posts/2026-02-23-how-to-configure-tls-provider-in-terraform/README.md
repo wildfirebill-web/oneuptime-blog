@@ -21,6 +21,7 @@ This is particularly useful for development environments, internal services, and
 
 ```hcl
 # versions.tf - Declare the TLS provider
+
 terraform {
   required_version = ">= 1.0"
 

@@ -256,6 +256,7 @@ For audit purposes, you might need to prove that the minimum TLS version is enfo
 
 ```bash
 # Mesh-wide config
+
 kubectl get configmap istio -n istio-system -o jsonpath='{.data.mesh}' > mesh-config.yaml
 
 # Gateway configs

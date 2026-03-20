@@ -18,6 +18,7 @@ This guide covers creating container registries with lifecycle policies across A
 
 ```hcl
 # ECR repository with image scanning and encryption
+
 resource "aws_ecr_repository" "app" {
   name                 = "my-application"
   image_tag_mutability = "IMMUTABLE"  # Prevent tag overwriting

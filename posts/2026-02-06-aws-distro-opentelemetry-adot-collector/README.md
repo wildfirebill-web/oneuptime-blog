@@ -50,6 +50,7 @@ The fastest way to try ADOT is by pulling the official Docker image. This image 
 
 ```bash
 # Pull the latest ADOT Collector image from the AWS ECR public gallery
+
 docker pull public.ecr.aws/aws-observability/aws-otel-collector:latest
 ```
 
@@ -249,7 +250,7 @@ aws lambda update-function-configuration \
 
 The Lambda layer wraps your function handler, automatically capturing invocation spans, cold start metrics, and downstream call traces.
 
-## Resource Detection for AWS
+Resource Detection for AWS
 
 One of the most valuable features of ADOT is the resource detection processor. It automatically discovers metadata about the AWS environment your collector is running in and attaches it to all telemetry as resource attributes.
 

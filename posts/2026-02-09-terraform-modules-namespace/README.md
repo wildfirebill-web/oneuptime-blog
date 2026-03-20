@@ -32,6 +32,7 @@ Start with `versions.tf` to declare provider requirements:
 
 ```hcl
 # modules/kubernetes-namespace/versions.tf
+
 terraform {
   required_version = ">= 1.5"
   required_providers {
@@ -168,7 +169,7 @@ resource "kubernetes_namespace" "this" {
 }
 ```
 
-## Resource Quotas
+Resource Quotas
 
 Resource quotas prevent any single namespace from consuming too many cluster resources:
 

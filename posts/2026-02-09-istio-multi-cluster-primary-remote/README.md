@@ -45,6 +45,7 @@ Set up CA certificates for cross-cluster trust:
 
 ```bash
 # Create root CA
+
 mkdir -p certs
 cd certs
 

@@ -14,6 +14,7 @@ Azure App Service autoscaling automatically adjusts the number of instances base
 
 ```hcl
 # main.tf - Standard or Premium plan is required for autoscaling
+
 resource "azurerm_service_plan" "autoscale_plan" {
   name                = "autoscale-app-plan"
   location            = azurerm_resource_group.rg.location

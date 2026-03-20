@@ -60,6 +60,7 @@ Here's a workflow that uses semantic-release to automate the entire versioning p
 
 ```yaml
 # .github/workflows/release.yml
+
 name: Semantic Release
 
 # Trigger on pushes to main branch or manual dispatch

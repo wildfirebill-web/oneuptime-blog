@@ -35,6 +35,7 @@ First, find which specific resource in your application is preventing the health
 
 ```bash
 # List all resources in the application with health status
+
 argocd app resources my-app
 
 # Filter for non-healthy resources

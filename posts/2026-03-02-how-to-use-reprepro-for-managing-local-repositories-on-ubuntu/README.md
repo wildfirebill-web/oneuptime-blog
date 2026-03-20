@@ -24,6 +24,7 @@ Before the setup, consider why you might need a local repository:
 
 ```bash
 # Install reprepro and GPG for signing
+
 sudo apt-get update
 sudo apt-get install -y reprepro gnupg nginx
 
@@ -90,6 +91,7 @@ Version: 22.04
 Architectures: amd64 arm64
 Components: main contrib
 Description: Internal package repository for MyCompany
+
 SignWith: packages@mycompany.internal
 
 # Separate configuration for Ubuntu 24.04 (Noble) if needed

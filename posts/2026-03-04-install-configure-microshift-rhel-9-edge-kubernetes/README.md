@@ -55,6 +55,7 @@ RHEL for Edge supports automatic OS updates with Greenboot health checks:
 
 ```bash
 # Greenboot scripts in /etc/greenboot/check/required.d/
+
 # If any script fails, the system rolls back to the previous version
 ```
 

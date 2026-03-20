@@ -18,6 +18,7 @@ Start by creating a new Pulumi project for your APIM infrastructure.
 
 ```bash
 # Create a new Pulumi project with TypeScript
+
 mkdir apim-infrastructure && cd apim-infrastructure
 pulumi new azure-typescript
 ```

@@ -1,8 +1,8 @@
-# How to Use asdf to Manage Multiple OpenTofu Versions
+# How to Use asdf to Manage Multiple OpenTofu Versions - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, asdf, Version Management, Infrastructure as Code, DevOps
+Tags: OpenTofu, Asdf, Version Management, Infrastructure as Code, DevOps
 
 Description: A guide to using asdf as a universal version manager to install and switch between multiple OpenTofu versions.
 
@@ -14,6 +14,7 @@ asdf is a universal version manager that supports dozens of programming language
 
 ```bash
 # Clone asdf
+
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 
 # Add to shell (bash)
@@ -85,7 +86,7 @@ tofu version
 cat .tool-versions
 ```
 
-```
+```hcl
 nodejs 20.11.0
 python 3.12.0
 opentofu 1.9.0

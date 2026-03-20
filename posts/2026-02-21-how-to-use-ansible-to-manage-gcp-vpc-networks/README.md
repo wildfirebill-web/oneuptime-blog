@@ -45,6 +45,7 @@ For production workloads, always use custom mode:
 
 ```yaml
 # create-vpc.yml - Create a custom mode VPC network
+
 ---
 - name: Create GCP VPC Network
   hosts: localhost

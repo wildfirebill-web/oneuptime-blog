@@ -28,6 +28,7 @@ Here is a quick example of launching a custom training job on Vertex AI:
 
 ```python
 # Submit a custom training job to Vertex AI
+
 from google.cloud import aiplatform
 
 aiplatform.init(project="my-project", location="us-central1")

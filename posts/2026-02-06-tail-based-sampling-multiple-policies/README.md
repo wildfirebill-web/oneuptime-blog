@@ -44,6 +44,7 @@ Let's build a realistic configuration step by step. We will start with the most 
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

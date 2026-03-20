@@ -28,6 +28,7 @@ For Basic tiers, you can increase capacity in 1 GB increments:
 
 ```bash
 # Scale up a Basic HDD instance from 1TB to 2TB
+
 gcloud filestore instances update my-filestore \
   --zone=us-central1-a \
   --file-share=name=vol1,capacity=2TB

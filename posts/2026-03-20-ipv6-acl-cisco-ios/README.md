@@ -8,20 +8,20 @@ Description: Learn how to create and apply IPv6 Access Control Lists on Cisco IO
 
 ## Overview
 
-Cisco IOS uses Named IPv6 Access Control Lists for packet filtering. IPv6 ACLs work similarly to IPv4 ACLs but use 128-bit addresses and support ICMPv6-specific matches. They are stateless (no connection tracking) — each packet is evaluated independently. For stateful inspection, use the Zone-Based Firewall (ZBF) or Cisco ASA instead.
+Cisco IOS uses Named IPv6 Access Control Lists for packet filtering. IPv6 ACLs work similarly to IPv4 ACLs but use 128-bit addresses and support ICMPv6-specific matches. They are stateless (no connection tracking) - each packet is evaluated independently. For stateful inspection, use the Zone-Based Firewall (ZBF) or Cisco ASA instead.
 
 ## Creating a Basic IPv6 ACL
 
-```
+```text
 ! Create a named IPv6 ACL
 ipv6 access-list BASIC-IPV6-FILTER
 
- ! Allow established TCP connections (approximate — no real conntrack)
+ ! Allow established TCP connections (approximate - no real conntrack)
  permit tcp any any established
 
  ! Allow ICMPv6 essential types
  permit icmp any any destination-unreachable  ! Type 1
- permit icmp any any packet-too-big           ! Type 2 — NEVER block
+ permit icmp any any packet-too-big           ! Type 2 - NEVER block
  permit icmp any any time-exceeded            ! Type 3
  permit icmp any any parameter-problem        ! Type 4
 
@@ -37,12 +37,12 @@ ipv6 access-list BASIC-IPV6-FILTER
  ! Allow SSH from management network
  permit tcp FD00:MGMT::/48 any eq 22
 
- ! Implicit deny (any any deny — IOS adds this automatically)
+ ! Implicit deny (any any deny - IOS adds this automatically)
 ```
 
 ## Applying ACLs to Interfaces
 
-```
+```text
 ! Apply inbound filter on internet-facing interface
 interface GigabitEthernet0/0
  ipv6 traffic-filter BASIC-IPV6-FILTER in
@@ -56,7 +56,7 @@ interface GigabitEthernet0/0
 
 Cisco IOS supports named ICMPv6 types in IPv6 ACLs:
 
-```
+```text
 ! Named ICMPv6 types in IOS:
 permit icmp any any echo           ! Type 128 (Echo Request)
 permit icmp any any echo-reply     ! Type 129 (Echo Reply)
@@ -75,7 +75,7 @@ permit icmp any any 135            ! Neighbor Solicitation
 
 ## Complete Router Protection ACL
 
-```
+```text
 ! ACL to protect the router itself (applied to all interfaces inbound)
 ipv6 access-list PROTECT-ROUTER-V6
 
@@ -101,7 +101,7 @@ ipv6 access-list PROTECT-ROUTER-V6
  ! Allow OSPF/IS-IS (routing protocol multicast)
  permit 89 any FF02::5/128        ! OSPFv3 all-routers
  permit 89 any FF02::6/128        ! OSPFv3 DR
- permit icmp any FF02::5 8        ! Echo to OSPFv3 group — not needed, just example
+ permit icmp any FF02::5 8        ! Echo to OSPFv3 group - not needed, just example
 
  ! Block everything else to router
  deny ipv6 any any log
@@ -109,7 +109,7 @@ ipv6 access-list PROTECT-ROUTER-V6
 
 ## ACL for Filtering Transit Traffic
 
-```
+```nginx
 ! ACL on upstream interface to filter transit (forwarded) traffic
 ipv6 access-list TRANSIT-FILTER
 
@@ -129,7 +129,7 @@ interface GigabitEthernet0/0
 
 ## Viewing and Verifying ACLs
 
-```
+```text
 ! Show ACL contents
 Router# show ipv6 access-list BASIC-IPV6-FILTER
 
@@ -151,7 +151,7 @@ Router# show ipv6 interface GigabitEthernet0/0 | include access list
 
 ## Editing ACL Entries
 
-```
+```text
 ! IPv6 ACLs don't support sequence numbers like IPv4 extended ACLs
 ! To edit: delete and recreate, or use sequence-based editing
 
@@ -170,4 +170,4 @@ no ipv6 access-list BASIC-IPV6-FILTER
 
 ## Summary
 
-Cisco IOS IPv6 ACLs are created with `ipv6 access-list NAME` and applied with `ipv6 traffic-filter NAME in|out`. Unlike IPv4 ACLs, IPv6 ACLs support named ICMPv6 types directly (`packet-too-big`, `nd-ns`, `router-advertisement`). Always include `permit icmp any any packet-too-big` — IOS won't add this automatically and blocking it breaks PMTUD. ACLs are stateless — use `permit tcp any any established` to allow return TCP traffic. Verify with `show ipv6 access-list NAME` which shows hit counts per rule.
+Cisco IOS IPv6 ACLs are created with `ipv6 access-list NAME` and applied with `ipv6 traffic-filter NAME in|out`. Unlike IPv4 ACLs, IPv6 ACLs support named ICMPv6 types directly (`packet-too-big`, `nd-ns`, `router-advertisement`). Always include `permit icmp any any packet-too-big` - IOS won't add this automatically and blocking it breaks PMTUD. ACLs are stateless - use `permit tcp any any established` to allow return TCP traffic. Verify with `show ipv6 access-list NAME` which shows hit counts per rule.

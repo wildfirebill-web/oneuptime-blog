@@ -27,6 +27,7 @@ Here is the fundamental pattern:
 
 ```yaml
 # prometheus-app.yaml - Helm chart with external values file
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

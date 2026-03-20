@@ -58,6 +58,7 @@ sequenceDiagram
 
 ```python
 # tests/contract/test_user_service_consumer.py
+
 import pytest
 import atexit
 from pact import Consumer, Provider, Like, EachLike, Term

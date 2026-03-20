@@ -12,8 +12,9 @@ Apache access logs use the Combined Log Format by default, with the client IPv4 
 
 ## Apache Log Format
 
-```
+```text
 # Combined Log Format (default):
+
 # %h %l %u %t "%r" %>s %O "%{Referer}i" "%{User-Agent}i"
 
 Example:

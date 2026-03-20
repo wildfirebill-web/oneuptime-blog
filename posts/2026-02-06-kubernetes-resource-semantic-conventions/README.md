@@ -80,6 +80,7 @@ Here is a Kubernetes deployment manifest that injects the necessary metadata int
 
 ```yaml
 # Deployment manifest exposing Kubernetes metadata as environment variables.
+
 # The fieldRef entries pull values from the pod spec at runtime,
 # making them available to the OpenTelemetry SDK inside the container.
 apiVersion: apps/v1

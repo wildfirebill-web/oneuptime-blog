@@ -247,6 +247,7 @@ One of the most practical uses of DENY policies is as a safety net on top of ALL
 
 ```yaml
 # Safety net - always block these paths regardless of ALLOW policies
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

@@ -21,6 +21,7 @@ k9s Terminal UI for Kubernetes can be installed and configured on RHEL to provid
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

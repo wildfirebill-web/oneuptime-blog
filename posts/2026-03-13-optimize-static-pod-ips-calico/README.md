@@ -28,6 +28,7 @@ This guide covers the full lifecycle - from pool design to pod annotation to mon
 Create a dedicated IP pool for static pod IPs to keep them separate from the dynamic allocation pool.
 ```yaml
 # static-ip-pool.yaml
+
 # Dedicated IP pool for statically assigned pod IPs
 apiVersion: projectcalico.org/v3
 kind: IPPool

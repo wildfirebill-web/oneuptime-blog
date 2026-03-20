@@ -27,6 +27,7 @@ The most basic coverage metric: which resources in your module have at least one
 ```bash
 #!/bin/bash
 # scripts/resource-coverage.sh
+
 # Measure what percentage of resources have tests
 
 MODULE_DIR="${1:-.}"

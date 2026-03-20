@@ -28,6 +28,7 @@ Before using VolumeSnapshots, ensure your cluster meets these requirements:
 
 ```bash
 # Check if snapshot CRDs are installed
+
 kubectl get crd | grep snapshot
 
 # You should see:

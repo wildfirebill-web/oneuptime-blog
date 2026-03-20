@@ -27,6 +27,7 @@ When you write `import something`, Python searches for the module in this order:
 import sys
 
 # View all paths Python searches
+
 for path in sys.path:
     print(path)
 ```

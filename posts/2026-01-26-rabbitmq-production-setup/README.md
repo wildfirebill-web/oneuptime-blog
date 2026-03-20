@@ -62,6 +62,7 @@ Start with a clean Ubuntu 22.04 server. First, add the official RabbitMQ reposit
 
 ```bash
 # Install prerequisites
+
 sudo apt-get update
 sudo apt-get install -y curl gnupg apt-transport-https
 

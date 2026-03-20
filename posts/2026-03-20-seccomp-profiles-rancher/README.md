@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, seccomp, security, kubernetes, syscalls
+Tags: Rancher, Seccomp, Security, Kubernetes, Syscalls
 
 Description: Guide to creating and applying seccomp security profiles to pods in Rancher for syscall filtering.
 
@@ -31,6 +31,7 @@ How to Configure Seccomp Profiles in Rancher addresses these challenges by addin
 
 ```bash
 # Run a basic security audit
+
 kubectl get pods --all-namespaces -o json | jq -r '
   .items[] | 
   select(

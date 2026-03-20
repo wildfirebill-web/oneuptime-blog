@@ -39,6 +39,7 @@ cd autoscaler/vertical-pod-autoscaler
 
 ```bash
 # Install VPA with default settings
+
 ./hack/vpa-up.sh
 
 # Verify installation
@@ -134,7 +135,7 @@ spec:
     updateMode: "Auto"
 ```
 
-## Resource Policies
+Resource Policies
 
 Control VPA behavior with resource policies.
 

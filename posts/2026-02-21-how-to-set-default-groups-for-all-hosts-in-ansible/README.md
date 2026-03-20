@@ -16,6 +16,7 @@ Ansible automatically creates an `all` group that contains every host in your in
 
 ```yaml
 # inventory/group_vars/all.yml
+
 # These variables apply to every single host
 ansible_user: deploy
 ntp_server: ntp.example.com

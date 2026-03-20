@@ -8,7 +8,7 @@ Description: Use packet captures and Wireshark filters to identify incomplete TC
 
 ## Introduction
 
-A failed TCP handshake means a connection never reached the ESTABLISHED state. The failure mode — unanswered SYN, RST response, or SYN-ACK never followed by ACK — tells you where to look for the problem. Packet captures provide definitive proof of what happened at the transport layer.
+A failed TCP handshake means a connection never reached the ESTABLISHED state. The failure mode - unanswered SYN, RST response, or SYN-ACK never followed by ACK - tells you where to look for the problem. Packet captures provide definitive proof of what happened at the transport layer.
 
 ## Types of Failed Handshakes
 
@@ -18,6 +18,7 @@ The client sends SYN but never receives SYN-ACK. The OS retransmits SYN several 
 
 ```bash
 # Identify unanswered SYNs: SYN sent, retransmitted multiple times, no SYN-ACK
+
 tcpdump -n 'tcp[tcpflags] & tcp-syn != 0'
 
 # Signs: same SYN packet appears 3-6 times with no intervening SYN-ACK
@@ -25,14 +26,14 @@ tcpdump -n 'tcp[tcpflags] & tcp-syn != 0'
 ```
 
 Wireshark filter:
-```
+```text
 # Find SYN retransmissions
 tcp.analysis.retransmission && tcp.flags.syn == 1 && tcp.flags.ack == 0
 ```
 
 ### Type 2: RST Response to SYN
 
-Server receives SYN but sends RST instead of SYN-ACK — connection actively refused.
+Server receives SYN but sends RST instead of SYN-ACK - connection actively refused.
 
 ```bash
 # Capture: SYN from client → RST from server
@@ -42,7 +43,7 @@ tcpdump -n 'tcp[tcpflags] & tcp-rst != 0 and host 10.20.0.5'
 ```
 
 Wireshark filter:
-```
+```text
 # Find RSTs that come right after SYNs (same stream)
 tcp.flags.reset == 1
 ```
@@ -60,8 +61,8 @@ ss -tn state syn-received | wc -l
 ```
 
 Wireshark filter:
-```
-# Find SYN-ACK packets — check if matching ACK follows
+```text
+# Find SYN-ACK packets - check if matching ACK follows
 tcp.flags.syn == 1 && tcp.flags.ack == 1
 ```
 

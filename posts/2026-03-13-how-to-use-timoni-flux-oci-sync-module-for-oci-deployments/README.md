@@ -37,6 +37,7 @@ Create a values file for a basic OCI deployment:
 
 ```yaml
 # oci-sync-values.yaml
+
 values:
   oci:
     url: "oci://ghcr.io/your-org/app-manifests"

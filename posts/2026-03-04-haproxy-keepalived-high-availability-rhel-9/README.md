@@ -39,6 +39,7 @@ Run this on both the primary and secondary:
 
 ```bash
 # Install HAProxy and Keepalived
+
 sudo dnf install -y haproxy keepalived
 ```
 

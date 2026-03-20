@@ -92,6 +92,7 @@ The following configuration deploys an application with a Fluent Bit sidecar tha
 
 ```yaml
 # logging-sidecar-deployment.yaml
+
 # Deployment with Fluent Bit sidecar for centralized logging
 apiVersion: apps/v1
 kind: Deployment
@@ -990,7 +991,7 @@ data:
 
 ## Best Practices for Sidecar Implementation
 
-### Resource Management
+Resource Management
 
 Sidecars consume resources that can impact your main application. Follow these guidelines for resource allocation.
 

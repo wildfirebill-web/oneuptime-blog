@@ -36,6 +36,7 @@ Key options:
 
 ```bash
 # Anonymous search - list base entry
+
 ldapsearch -x -H ldap://ldap.example.com \
   -b "dc=example,dc=com" \
   -s base "(objectClass=*)"

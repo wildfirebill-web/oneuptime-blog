@@ -60,6 +60,7 @@ Install the east-west gateway if you do not have one:
 
 ```yaml
 # eastwest-gateway.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

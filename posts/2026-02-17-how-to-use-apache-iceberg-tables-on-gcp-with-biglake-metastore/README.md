@@ -24,6 +24,7 @@ First, enable the required APIs and create a BigLake Metastore catalog.
 
 ```bash
 # Enable the BigLake API
+
 gcloud services enable biglake.googleapis.com
 
 # Create a BigLake Metastore catalog

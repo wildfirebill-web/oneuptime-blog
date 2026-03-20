@@ -158,6 +158,7 @@ def create_http_api(name, routes):
 
 
 # Migrate
+
 routes = get_rest_api_config("rest-api-id")
 http_api_id = create_http_api("my-api-v2", routes)
 print(f"Created HTTP API: {http_api_id}")

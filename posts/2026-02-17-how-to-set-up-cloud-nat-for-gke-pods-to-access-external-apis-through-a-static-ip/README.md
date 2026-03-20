@@ -33,6 +33,7 @@ First, reserve the static IP addresses that Cloud NAT will use:
 
 ```bash
 # Reserve a static external IP address for NAT
+
 gcloud compute addresses create nat-ip-1 \
   --region us-central1
 

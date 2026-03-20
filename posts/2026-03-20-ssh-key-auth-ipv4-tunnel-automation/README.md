@@ -12,10 +12,11 @@ Automated SSH tunnels (e.g., for persistent VPN-like access or scheduled data tr
 
 ## Generating a Dedicated Tunnel Key
 
-Use a separate key pair for tunnel automation — never reuse interactive session keys.
+Use a separate key pair for tunnel automation - never reuse interactive session keys.
 
 ```bash
 # Generate an Ed25519 key pair for tunnel automation (no passphrase for automation)
+
 ssh-keygen -t ed25519 -f ~/.ssh/tunnel_automation_key -N "" \
   -C "tunnel-automation-$(hostname)-$(date +%Y%m%d)"
 

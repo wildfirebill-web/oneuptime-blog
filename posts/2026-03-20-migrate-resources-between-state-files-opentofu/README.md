@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, State Migration, tofu state mv, State Management
+Tags: OpenTofu, Terraform, State Migration, Tofu state mv, State Management
 
 Description: Learn how to safely migrate resources between OpenTofu state files without destroying and recreating infrastructure, using state move operations and moved blocks.
 
 ## Introduction
 
-As infrastructure grows, you may need to reorganize state files — moving resources from a monolithic state into component states, or from one module hierarchy to another. OpenTofu provides `tofu state mv` and the `moved` block to accomplish this without resource recreation.
+As infrastructure grows, you may need to reorganize state files - moving resources from a monolithic state into component states, or from one module hierarchy to another. OpenTofu provides `tofu state mv` and the `moved` block to accomplish this without resource recreation.
 
 ## Using tofu state mv
 
@@ -16,6 +16,7 @@ The `state mv` command moves a resource from one state file to another.
 
 ```bash
 # Step 1: Identify the source resource address
+
 tofu -chdir=old-stack state list
 # aws_vpc.main
 # aws_subnet.private[0]
@@ -114,7 +115,7 @@ tofu -chdir=environments/prod state list | grep aws_vpc
 
 ## Safe Migration Checklist
 
-```
+```hcl
 1. [ ] Take a full backup of both state files before starting
 2. [ ] Verify the new HCL configuration is correct before migrating state
 3. [ ] Run state mv in a dry-run by checking with state list first

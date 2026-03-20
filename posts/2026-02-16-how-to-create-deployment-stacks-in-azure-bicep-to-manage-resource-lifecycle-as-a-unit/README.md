@@ -47,6 +47,7 @@ Check your CLI version:
 
 ```bash
 # Verify Azure CLI version supports deployment stacks
+
 az version --output table
 ```
 

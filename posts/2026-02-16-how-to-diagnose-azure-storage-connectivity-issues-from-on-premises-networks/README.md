@@ -30,6 +30,7 @@ Run a DNS lookup from an affected machine:
 
 ```bash
 # Check if DNS resolves the storage account endpoint
+
 # You should get back an IP address or a CNAME chain
 nslookup mystorageaccount.blob.core.windows.net
 

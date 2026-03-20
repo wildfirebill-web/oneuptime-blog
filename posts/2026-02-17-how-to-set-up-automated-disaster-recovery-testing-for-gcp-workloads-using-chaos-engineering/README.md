@@ -34,6 +34,7 @@ I will use Litmus Chaos for GKE workloads and custom scripts for GCP-managed ser
 
 ```bash
 # Install Litmus Chaos on GKE
+
 kubectl apply -f https://litmuschaos.github.io/litmus/3.0.0/litmus-3.0.0.yaml
 
 # Verify the installation

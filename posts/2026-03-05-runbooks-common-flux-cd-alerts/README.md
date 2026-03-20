@@ -47,6 +47,7 @@ groups:
 
 ```bash
 # Check which resources are failing
+
 flux get all --status-selector ready=false
 
 # Get detailed status for the failing resource

@@ -16,6 +16,7 @@ Deploy OpenFaaS using arkade or Helm:
 
 ```bash
 # Using arkade (recommended)
+
 curl -sLS https://get.arkade.dev | sudo sh
 arkade install openfaas
 

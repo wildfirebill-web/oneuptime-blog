@@ -107,6 +107,7 @@ Here is a Python function that calculates error rate from Prometheus metrics.
 
 ```python
 # error_rate.py
+
 import requests
 from datetime import datetime, timedelta
 

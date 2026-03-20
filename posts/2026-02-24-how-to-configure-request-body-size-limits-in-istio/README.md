@@ -151,6 +151,7 @@ You can scope the EnvoyFilter using route configuration matching. But a simpler 
 
 ```yaml
 # Small limit for regular API
+
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter
 metadata:

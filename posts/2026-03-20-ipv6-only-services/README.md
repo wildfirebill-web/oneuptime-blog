@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, IPv6-Only, Service, SingleStack, Networking
+Tags: Kubernetes, IPv6, IPv6-Only, Services, SingleStack, Networking
 
-Description: Create and deploy IPv6-only Kubernetes Services that have exclusively IPv6 ClusterIPs, configure workloads to communicate over IPv6 only, and understand use cases for IPv6-only services in dual-stack clusters.
+Description: Create and deploy IPv6-only Kubernetes Services that have exclusively IPv6 ClusterIPs, configure workloads to communicate over IPv6 only, and understand use cases for IPv6-only services in...
 
 ## Introduction
 
@@ -14,6 +14,7 @@ In Kubernetes dual-stack clusters, you can create IPv6-only Services that have e
 
 ```yaml
 # ipv6-only-svc.yaml
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -167,4 +168,4 @@ kubectl exec ipv4-test -- sh -c "
 
 ## Conclusion
 
-Deploy IPv6-only Kubernetes Services by setting `ipFamilyPolicy: SingleStack` and `ipFamilies: [IPv6]`. The service gets a single IPv6 ClusterIP from the cluster's IPv6 service CIDR. This is useful for incrementally migrating services to IPv6 in dual-stack clusters. Pods can access IPv6-only services using the IPv6 ClusterIP directly or via DNS hostname (CoreDNS returns AAAA records). IPv4-only clients cannot reach IPv6-only services by ClusterIP — they must use the hostname and have IPv6 connectivity.
+Deploy IPv6-only Kubernetes Services by setting `ipFamilyPolicy: SingleStack` and `ipFamilies: [IPv6]`. The service gets a single IPv6 ClusterIP from the cluster's IPv6 service CIDR. This is useful for incrementally migrating services to IPv6 in dual-stack clusters. Pods can access IPv6-only services using the IPv6 ClusterIP directly or via DNS hostname (CoreDNS returns AAAA records). IPv4-only clients cannot reach IPv6-only services by ClusterIP - they must use the hostname and have IPv6 connectivity.

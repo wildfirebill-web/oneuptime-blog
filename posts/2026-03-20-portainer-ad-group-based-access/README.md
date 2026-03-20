@@ -1,4 +1,4 @@
-# How to Configure AD Group-Based Access in Portainer
+# How to Configure AD Group-Based Access in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Active Directory group-based access in Portainer enables you to control who can 
 
 ## Architecture Overview
 
-```
+```text
 AD Security Group: CN=Portainer-DevOps,OU=Groups,DC=corp,DC=example,DC=com
         |
         v
@@ -26,6 +26,7 @@ Environment Access: Production Environment (Standard User role)
 
 ```powershell
 # Create groups for different access levels
+
 New-ADGroup -Name "Portainer-DevOps" `
   -SamAccountName "Portainer-DevOps" `
   -GroupScope Global `
@@ -57,7 +58,7 @@ Add-ADGroupMember -Identity "Portainer-ReadOnly" -Members eve
 
 In Settings → Authentication → LDAP:
 
-```
+```text
 Group Base DN:            OU=Groups,DC=corp,DC=example,DC=com
 Group Membership Attr:    memberOf
 Group Filter:             (objectClass=group)
@@ -128,7 +129,7 @@ With LDAP configured and groups set up:
 
 If your users belong to nested AD groups, use the recursive memberOf LDAP_MATCHING_RULE_IN_CHAIN OID:
 
-```
+```text
 Group Filter: (memberOf:1.2.840.113556.1.4.1941:=CN=Portainer-DevOps,OU=Groups,DC=corp,DC=example,DC=com)
 ```
 

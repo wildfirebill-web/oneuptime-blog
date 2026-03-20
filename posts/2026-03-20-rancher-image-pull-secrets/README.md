@@ -29,6 +29,7 @@ Kubernetes supports two approaches:
 
 ```bash
 # Create a generic registry secret
+
 kubectl create secret docker-registry my-registry-secret \
   --docker-server=registry.example.com \
   --docker-username=myuser \

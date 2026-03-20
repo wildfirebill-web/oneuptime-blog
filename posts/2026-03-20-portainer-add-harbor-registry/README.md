@@ -1,4 +1,4 @@
-# How to Add a Harbor Registry to Portainer
+# How to Add a Harbor Registry to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,22 +19,23 @@ Harbor is an open-source cloud-native registry that provides security, identity,
 
 ## Harbor Registry URL Format
 
-```
+```text
 {harbor-domain}/{project}/{repository}:{tag}
 # Examples:
+
 harbor.company.com/myproject/myapp:latest
 harbor.company.com/team/api:v2.0
 ```
 
 ## Step 1: Create a Harbor Robot Account
 
-Robot accounts are the recommended way to give Portainer access to Harbor — they are dedicated to automation and have controlled scopes:
+Robot accounts are the recommended way to give Portainer access to Harbor - they are dedicated to automation and have controlled scopes:
 
 1. Log in to your Harbor instance as admin
 2. Go to **Administration → Robot Accounts**
 3. Click **+ New Robot Account**
 4. Configure:
-   ```
+   ```text
    Name:         portainer-pull
    Duration:     365 (days)
    Description:  Portainer deployment access
@@ -55,7 +56,7 @@ Robot accounts are the recommended way to give Portainer access to Harbor — th
 
 ## Step 3: Configure Harbor Connection
 
-```
+```text
 Name:     Harbor Registry
 URL:      https://harbor.company.com
 Username: robot$portainer-pull      (include the "robot$" prefix)
@@ -153,8 +154,8 @@ For Portainer to enforce content trust, configure the Docker daemon:
 
 Harbor can scan images for vulnerabilities automatically. Configure scan policies in Harbor:
 
-1. **Harbor → Interrogation Services → Scanners** — Add Trivy or Clair
-2. **Harbor → Projects → {project} → Configuration → Vulnerability scanning** — Enable
+1. **Harbor → Interrogation Services → Scanners** - Add Trivy or Clair
+2. **Harbor → Projects → {project} → Configuration → Vulnerability scanning** - Enable
 3. Configure vulnerability policy to prevent pulling images with critical CVEs
 
 ```bash
@@ -167,7 +168,7 @@ curl -u 'robot$portainer-pull:secret' \
 
 ### Robot Account Access Denied
 
-```
+```text
 Error: unauthorized: unauthorized to access repository
 ```
 
@@ -177,7 +178,7 @@ Error: unauthorized: unauthorized to access repository
 
 ### Certificate Error
 
-```
+```text
 Error: x509: certificate signed by unknown authority
 ```
 

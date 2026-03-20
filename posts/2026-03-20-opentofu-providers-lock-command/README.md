@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Providers
+Tags: OpenTofu, Terraform, Infrastructure as Code, Provider
 
 Description: Learn how to use the tofu providers lock command to add checksums for multiple platforms to your lock file without running tofu init on each platform.
 
 ## Introduction
 
-The `tofu providers lock` command updates the `.terraform.lock.hcl` file with checksums for specified platforms. This is essential when your team develops on macOS but deploys from Linux CI/CD — the lock file needs checksums for both platforms, and `tofu init` only adds checksums for the current platform.
+The `tofu providers lock` command updates the `.terraform.lock.hcl` file with checksums for specified platforms. This is essential when your team develops on macOS but deploys from Linux CI/CD - the lock file needs checksums for both platforms, and `tofu init` only adds checksums for the current platform.
 
 ## Basic Usage
 
 ```bash
 # Add checksums for the current platform
+
 tofu providers lock
 
 # Add checksums for specific platforms
@@ -30,7 +31,7 @@ tofu providers lock \
 When a developer runs `tofu init` on macOS:
 
 ```hcl
-# .terraform.lock.hcl — only darwin checksums initially
+# .terraform.lock.hcl - only darwin checksums initially
 provider "registry.opentofu.org/hashicorp/aws" {
   version     = "5.31.0"
   constraints = "~> 5.0"

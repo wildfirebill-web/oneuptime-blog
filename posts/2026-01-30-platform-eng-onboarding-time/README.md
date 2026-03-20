@@ -444,6 +444,7 @@ class GitWebhookHandler {
 
 ```yaml
 # onboarding-tracker/scripts/setup-environment.yaml
+
 #
 # This script runs during developer environment setup.
 # It reports progress to the onboarding tracker automatically.

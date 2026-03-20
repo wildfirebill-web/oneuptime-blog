@@ -24,6 +24,7 @@ Before building workflows, ensure Knative Eventing is installed:
 
 ```bash
 # Install Knative Eventing
+
 kubectl apply -f https://github.com/knative/eventing/releases/latest/download/eventing-crds.yaml
 kubectl apply -f https://github.com/knative/eventing/releases/latest/download/eventing-core.yaml
 

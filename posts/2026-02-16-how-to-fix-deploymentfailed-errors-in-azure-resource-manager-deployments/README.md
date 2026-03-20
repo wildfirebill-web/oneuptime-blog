@@ -18,6 +18,7 @@ The DeploymentFailed message itself is not very helpful. You need to look at the
 
 ```bash
 # Get detailed deployment error information
+
 az deployment group show \
   --resource-group myResourceGroup \
   --name myDeployment \

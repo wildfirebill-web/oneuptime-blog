@@ -22,6 +22,7 @@ The most intuitive use case is cleaning up files or directories.
 
 ```yaml
 # basic_removes.yml - Run cleanup only if the target exists
+
 ---
 - name: Clean up temporary build artifacts
   hosts: all

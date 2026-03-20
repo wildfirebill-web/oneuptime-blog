@@ -27,6 +27,7 @@ Install WireGuard tools:
 
 ```bash
 # Fedora/RHEL
+
 sudo dnf install wireguard-tools
 
 # Ubuntu/Debian

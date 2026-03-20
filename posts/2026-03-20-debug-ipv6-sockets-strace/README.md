@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, strace, ltrace, Debugging, Socket Programming, Linux, Networking
+Tags: IPv6, Strace, Ltrace, Debugging, Socket Programming, Linux, Networking
 
 Description: Use strace and ltrace to debug IPv6 socket issues in Linux applications by tracing system calls and library functions related to address families and socket operations.
 
@@ -14,6 +14,7 @@ Description: Use strace and ltrace to debug IPv6 socket issues in Linux applicat
 
 ```bash
 # Trace all socket-related system calls
+
 strace -e trace=network ./your-app
 
 # Common socket syscalls to trace

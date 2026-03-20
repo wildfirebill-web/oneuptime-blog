@@ -205,7 +205,7 @@ spec:
     namespace: argocd
 ```
 
-## Resource Tuning for Large Scale
+Resource Tuning for Large Scale
 
 At enterprise scale, the default resource allocations are too small. Here are recommended starting points for different scales:
 
@@ -213,6 +213,7 @@ At enterprise scale, the default resource allocations are too small. Here are re
 
 ```yaml
 # Controller
+
 resources:
   requests:
     cpu: "2"

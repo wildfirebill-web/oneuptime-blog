@@ -41,6 +41,7 @@ The write latency difference is the tradeoff. MemoryDB writes take single-digit 
 
 ```bash
 # Create a subnet group spanning multiple AZs for durability
+
 aws memorydb create-subnet-group \
   --subnet-group-name my-memorydb-subnets \
   --description "Subnets for MemoryDB cluster" \

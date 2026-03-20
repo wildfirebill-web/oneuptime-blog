@@ -29,6 +29,7 @@ Start by confirming the exporter is running and producing output:
 
 ```bash
 # Check if the exporter is configured
+
 kubectl -n kube-system exec ds/cilium -- cilium status --verbose | grep -i export
 
 # Verify the export file exists

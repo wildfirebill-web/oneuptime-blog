@@ -12,7 +12,7 @@ Redis Sentinel provides high availability through monitoring, notification, and 
 
 ## Architecture
 
-```
+```text
 App → Sentinel 1 (10.0.0.1:26379) ─┐
 App → Sentinel 2 (10.0.0.2:26379) ─┼→ Monitor → Redis Master (10.0.0.1:6379)
 App → Sentinel 3 (10.0.0.3:26379) ─┘               ↓ replicates
@@ -40,6 +40,7 @@ requirepass "RedisPassword123"
 port 6379
 
 # Connect to master
+
 replicaof 10.0.0.1 6379
 masterauth "RedisPassword123"
 ```

@@ -100,6 +100,7 @@ For streaming ingestion, use the BigQuery Storage Write API or Pub/Sub to BigQue
 
 ```bash
 # Create a Pub/Sub subscription that writes directly to BigQuery
+
 gcloud pubsub subscriptions create orders-to-bronze \
   --topic=order-events \
   --bigquery-table=my-project:bronze.orders_raw \

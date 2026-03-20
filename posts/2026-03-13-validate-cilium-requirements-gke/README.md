@@ -27,6 +27,7 @@ Cilium on GKE requires VPC-native (alias IP) clusters.
 
 ```bash
 # Check if the cluster uses VPC-native mode
+
 gcloud container clusters describe <cluster-name> \
   --zone <zone> \
   --format="get(ipAllocationPolicy.useIpAliases)"

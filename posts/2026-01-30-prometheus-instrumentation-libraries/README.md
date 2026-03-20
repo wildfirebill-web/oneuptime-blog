@@ -65,6 +65,7 @@ Create a metrics module that defines all your application metrics in one place. 
 
 ```python
 # metrics.py
+
 from prometheus_client import Counter, Gauge, Histogram, Summary, Info
 
 # Counter: Track total number of HTTP requests

@@ -20,6 +20,7 @@ Start by gathering information about the failure:
 
 ```bash
 # Try starting the machine and capture the error
+
 podman machine start my-machine 2>&1
 
 # Check the machine state

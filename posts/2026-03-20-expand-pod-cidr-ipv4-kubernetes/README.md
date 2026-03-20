@@ -24,6 +24,7 @@ Calico's IPAM supports multiple IP pools natively:
 
 ```yaml
 # secondary-pool.yaml
+
 apiVersion: crd.projectcalico.org/v1
 kind: IPPool
 metadata:

@@ -22,6 +22,7 @@ The Cilium echo app is used for testing networking and policies. When it does no
 
 ```bash
 # Check pod status
+
 kubectl get pods -n cilium-test
 
 # Check events for failing pods

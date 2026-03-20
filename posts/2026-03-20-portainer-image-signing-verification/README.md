@@ -1,4 +1,4 @@
-# How to Set Up Image Signing and Verification in Portainer
+# How to Set Up Image Signing and Verification in Portainer - Verification
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ Docker Content Trust uses Notary to sign images at push time and verify them at 
 
 ```bash
 # Enable Content Trust globally
+
 export DOCKER_CONTENT_TRUST=1
 
 # Or make it permanent
@@ -32,7 +33,7 @@ With DCT enabled:
 ### Signing an Image
 
 ```bash
-# Generate a key pair (interactive — sets a passphrase)
+# Generate a key pair (interactive - sets a passphrase)
 docker trust key generate my-signing-key
 
 # Initialize signing for your repository
@@ -103,10 +104,10 @@ COSIGN_PUBLIC_KEY="/etc/cosign/cosign.pub"
 echo "Verifying signature for $IMAGE..."
 
 if cosign verify --key "$COSIGN_PUBLIC_KEY" "$IMAGE" > /dev/null 2>&1; then
-  echo "Signature verified — deploying"
+  echo "Signature verified - deploying"
   curl -X POST "$PORTAINER_WEBHOOK"
 else
-  echo "Signature verification FAILED — blocking deployment"
+  echo "Signature verification FAILED - blocking deployment"
   exit 1
 fi
 ```
@@ -124,7 +125,7 @@ helm install connaisseur connaisseur/connaisseur \
   --set validators[0].trust_roots[0].key="$(cat cosign.pub)"
 ```
 
-Once deployed, Kubernetes rejects any pod using an unsigned image — enforced at the cluster level, visible in Portainer's Kubernetes view.
+Once deployed, Kubernetes rejects any pod using an unsigned image - enforced at the cluster level, visible in Portainer's Kubernetes view.
 
 ## Summary of Approaches
 

@@ -30,6 +30,7 @@ Before performing maintenance, assess the current etcd state.
 
 ```bash
 # Configure etcd environment
+
 export ETCDCTL_API=3
 export ETCDCTL_CACERT=/etc/kubernetes/pki/etcd/ca.crt
 export ETCDCTL_CERT=/etc/kubernetes/pki/etcd/server.crt

@@ -27,6 +27,7 @@ graph LR
 
 ```bash
 # Add 100ms of latency to all outbound packets
+
 sudo tc qdisc add dev ens192 root netem delay 100ms
 
 # Verify with ping

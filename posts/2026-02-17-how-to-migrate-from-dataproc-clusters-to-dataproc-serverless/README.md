@@ -56,6 +56,7 @@ Here is a common pattern change in your Spark code:
 
 ```python
 # Before: reading from HDFS on a Dataproc cluster
+
 df = spark.read.parquet("hdfs:///data/events/2025/")
 
 # After: reading from Cloud Storage for serverless

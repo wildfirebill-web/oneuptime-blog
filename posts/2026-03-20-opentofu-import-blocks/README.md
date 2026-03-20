@@ -1,4 +1,4 @@
-# How to Use Import Blocks for Declarative Import in OpenTofu
+# How to Use Import Blocks for Declarative Import in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to use import blocks in OpenTofu to declaratively import 
 
 ## Introduction
 
-Import blocks provide a declarative alternative to the `tofu import` CLI command. You define the import in configuration, and OpenTofu performs it as part of the normal plan/apply cycle. This approach gives you a preview of the import before committing it, works with version control and code review, and is reversible — remove the import block after the resource is imported.
+Import blocks provide a declarative alternative to the `tofu import` CLI command. You define the import in configuration, and OpenTofu performs it as part of the normal plan/apply cycle. This approach gives you a preview of the import before committing it, works with version control and code review, and is reversible - remove the import block after the resource is imported.
 
 ## Basic Import Block
 
 ```hcl
 # import.tf
+
 import {
   to = aws_s3_bucket.existing
   id = "my-existing-bucket"

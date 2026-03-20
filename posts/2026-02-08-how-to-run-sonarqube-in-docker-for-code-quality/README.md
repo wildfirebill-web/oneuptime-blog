@@ -18,6 +18,7 @@ SonarQube runs Elasticsearch internally, which requires a specific kernel parame
 
 ```bash
 # Required on Linux: increase virtual memory limit for Elasticsearch
+
 sudo sysctl -w vm.max_map_count=524288
 
 # Make it persistent across reboots

@@ -210,6 +210,7 @@ Connect to MySQL databases from PostgreSQL:
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install postgresql-16-mysql-fdw
 
 # Or build from source

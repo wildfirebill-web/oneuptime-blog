@@ -128,6 +128,7 @@ Here is a good rule of thumb:
 
 ```yaml
 # Good: CPU limit >= concurrency
+
 annotations:
   proxy.istio.io/config: |
     concurrency: 4

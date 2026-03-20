@@ -100,6 +100,7 @@ from opentelemetry.semconv.trace import SpanAttributes
 from opentelemetry.semconv.resource import ResourceAttributes
 
 # Python provides attribute constants through the semconv package.
+
 # Always import from semconv rather than typing attribute names manually.
 def add_http_attributes(span, method, status_code):
     span.set_attribute(SpanAttributes.HTTP_REQUEST_METHOD, method)

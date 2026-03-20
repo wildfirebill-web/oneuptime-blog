@@ -22,6 +22,7 @@ The EXPOSE instruction takes one or more port numbers with an optional protocol:
 
 ```dockerfile
 # Expose a single TCP port (TCP is the default)
+
 EXPOSE 8080
 
 # Expose with explicit protocol

@@ -27,6 +27,7 @@ You need:
 
 ```bash
 # Verify Docker is running
+
 docker info
 
 # Verify talosctl is installed

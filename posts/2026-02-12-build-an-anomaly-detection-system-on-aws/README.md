@@ -38,6 +38,7 @@ If your anomaly detection target is infrastructure metrics already in CloudWatch
 
 ```python
 # Enable anomaly detection on a CloudWatch metric
+
 import boto3
 
 cloudwatch = boto3.client('cloudwatch')

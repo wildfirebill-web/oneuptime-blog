@@ -68,6 +68,7 @@ stateDiagram-v2
 
 ```python
 # circuit_breaker.py
+
 # A complete circuit breaker implementation.
 # Tracks failures and opens the circuit when a threshold is exceeded.
 

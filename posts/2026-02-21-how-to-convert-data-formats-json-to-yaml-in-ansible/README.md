@@ -16,6 +16,7 @@ The most common conversion. Parse JSON with `from_json`, then output as YAML wit
 
 ```yaml
 # playbook-json-to-yaml.yml
+
 # Reads a JSON configuration file and writes it out as YAML
 - name: Convert JSON to YAML
   hosts: localhost

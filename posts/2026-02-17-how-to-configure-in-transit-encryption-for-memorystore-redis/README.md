@@ -35,6 +35,7 @@ Enable TLS when creating the instance:
 
 ```bash
 # Create a Redis instance with in-transit encryption enabled
+
 gcloud redis instances create secure-redis \
   --size=2 \
   --region=us-central1 \

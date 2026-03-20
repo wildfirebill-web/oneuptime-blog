@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Zabbix, Monitoring, Agents, Linux
+Tags: RHEL, Zabbix, Monitoring, Agent, Linux
 
 Description: Install and configure Zabbix Agent 2 on RHEL to collect system metrics and send them to a Zabbix server for centralized monitoring.
 
@@ -14,6 +14,7 @@ Zabbix Agent 2 is a rewrite of the original agent in Go, offering plugin support
 
 ```bash
 # Add the Zabbix repository
+
 sudo rpm -Uvh https://repo.zabbix.com/zabbix/7.0/rhel/9/x86_64/zabbix-release-latest-7.0.el9.noarch.rpm
 sudo dnf clean all
 

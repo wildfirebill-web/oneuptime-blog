@@ -29,6 +29,7 @@ Create HelmRepository resources for the chart repositories your services use.
 
 ```yaml
 # clusters/production/sources/internal-charts.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

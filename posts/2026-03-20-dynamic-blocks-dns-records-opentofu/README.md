@@ -8,7 +8,7 @@ Description: Learn how to use dynamic blocks and for_each in OpenTofu to manage 
 
 ## Introduction
 
-Managing dozens of DNS records as individual resources is tedious. OpenTofu's `for_each` and dynamic blocks let you define all records in a structured data format — a YAML or JSON file — and create every record with a single resource block.
+Managing dozens of DNS records as individual resources is tedious. OpenTofu's `for_each` and dynamic blocks let you define all records in a structured data format - a YAML or JSON file - and create every record with a single resource block.
 
 ## Managing Route53 Records with for_each
 
@@ -44,6 +44,7 @@ data "aws_route53_zone" "main" {
 }
 
 # Create one Route53 record per entry in the map
+
 resource "aws_route53_record" "records" {
   for_each = var.dns_records
 

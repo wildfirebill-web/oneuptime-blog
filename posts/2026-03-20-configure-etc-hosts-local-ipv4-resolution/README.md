@@ -8,16 +8,17 @@ Description: Configure /etc/hosts on Linux to resolve hostnames to IPv4 addresse
 
 ## Introduction
 
-`/etc/hosts` is the simplest name resolution mechanism — a flat text file mapping hostnames to IP addresses. The kernel checks it before querying DNS (by default), making it useful for local development, testing, and overriding specific DNS entries.
+`/etc/hosts` is the simplest name resolution mechanism - a flat text file mapping hostnames to IP addresses. The kernel checks it before querying DNS (by default), making it useful for local development, testing, and overriding specific DNS entries.
 
 ## /etc/hosts Format
 
 Each line follows the format: `<IP address> <canonical hostname> [aliases...]`
 
-```
+```text
 # /etc/hosts
 
 # Loopback addresses
+
 127.0.0.1       localhost
 127.0.1.1       myhostname
 
@@ -43,7 +44,7 @@ sudo nano /etc/hosts
 echo "192.168.1.50 mydevserver" | sudo tee -a /etc/hosts
 ```
 
-Changes take effect immediately — no service restart needed.
+Changes take effect immediately - no service restart needed.
 
 ## Verifying Resolution
 
@@ -72,7 +73,7 @@ grep ^hosts /etc/nsswitch.conf
 
 To check DNS first and only fall back to hosts:
 
-```
+```text
 hosts: dns files
 ```
 
@@ -80,7 +81,7 @@ hosts: dns files
 
 Override production endpoints with local development versions:
 
-```
+```text
 # Point staging API to a local container
 127.0.0.1    api.staging.example.com
 127.0.0.1    cdn.staging.example.com
@@ -91,7 +92,7 @@ Override production endpoints with local development versions:
 
 ## Multiple Hostnames per IP
 
-```
+```text
 # A server with multiple roles
 192.168.1.10    primary-db db01 db mysql
 ```
@@ -100,7 +101,7 @@ All four names resolve to the same IP.
 
 ## Blocking Hosts (Ad-blocking / Security)
 
-```
+```text
 # Block malicious or tracking domains
 127.0.0.1    malware.example.com
 0.0.0.0      tracking.thirdparty.com   # 0.0.0.0 fails faster than 127.0.0.1

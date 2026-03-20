@@ -14,6 +14,7 @@ Packer builds Azure Managed Images or Azure Compute Gallery images with pre-inst
 
 ```hcl
 # packer/azure-web-server.pkr.hcl
+
 packer {
   required_plugins {
     azure = {

@@ -35,6 +35,7 @@ Create a bucket for your IoT data with appropriate settings.
 
 ```bash
 # Create the S3 bucket for IoT data
+
 aws s3 mb s3://my-iot-data-lake --region us-east-1
 
 # Enable versioning (recommended for data protection)

@@ -84,6 +84,7 @@ For scripted or automated configuration, edit the Docker Desktop settings JSON f
 
 ```bash
 # Location of Docker Desktop settings on macOS
+
 cat ~/Library/Group\ Containers/group.com.docker/settings.json | python3 -m json.tool
 ```
 

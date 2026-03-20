@@ -22,6 +22,7 @@ Application Insights identifies your resource using either an instrumentation ke
 
 ```bash
 # Get the connection string for your Application Insights resource
+
 az monitor app-insights component show \
   --app my-app-insights \
   --resource-group my-rg \

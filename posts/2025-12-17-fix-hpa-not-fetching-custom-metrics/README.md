@@ -29,6 +29,7 @@ Check if the custom metrics API service is available.
 
 ```bash
 # List API services
+
 kubectl get apiservice | grep custom
 
 # Expected output:

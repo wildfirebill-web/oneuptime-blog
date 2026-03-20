@@ -18,6 +18,7 @@ Ensure you have a working two-node Pacemaker/Corosync cluster with fencing confi
 
 ```bash
 # Verify cluster is healthy
+
 sudo pcs status
 
 # Confirm fencing is active

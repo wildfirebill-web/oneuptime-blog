@@ -1,8 +1,8 @@
-# How to Use the trimprefix and trimsuffix Functions in OpenTofu
+# How to Use the trimprefix and trimsuffix Functions in OpenTofu - Functions
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, trimprefix, trimsuffix, String Functions, HCL, Infrastructure as Code
+Tags: OpenTofu, Trimprefix, Trimsuffix, String Functions, HCL, Infrastructure as Code
 
 Description: Learn how to use the trimprefix and trimsuffix functions in OpenTofu to remove specific prefixes and suffixes from strings.
 

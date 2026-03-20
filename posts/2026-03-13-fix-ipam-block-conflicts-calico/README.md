@@ -35,6 +35,7 @@ calicoctl ipam show --show-blocks
 
 ```bash
 # Identify nodes that no longer exist
+
 CURRENT_NODES=$(kubectl get nodes -o jsonpath='{.items[*].metadata.name}')
 
 for BA in $(calicoctl get blockaffinity -o jsonpath='{.items[*].metadata.name}' 2>/dev/null); do

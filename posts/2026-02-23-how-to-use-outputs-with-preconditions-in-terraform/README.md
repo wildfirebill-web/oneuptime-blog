@@ -36,6 +36,7 @@ Variable validation checks inputs before anything is created. Output preconditio
 
 ```hcl
 # Input validation - checks BEFORE creating resources
+
 variable "instance_type" {
   type = string
   validation {

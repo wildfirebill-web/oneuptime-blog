@@ -30,6 +30,7 @@ Here is a typical Cloud Build configuration using the standard Docker builder:
 
 ```yaml
 # Standard Docker build - no layer caching
+
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/my-app:latest', '.']

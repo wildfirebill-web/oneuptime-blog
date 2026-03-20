@@ -25,6 +25,7 @@ Install the required collection first.
 
 ```bash
 # Install the community MongoDB collection from Ansible Galaxy
+
 ansible-galaxy collection install community.mongodb
 ```
 

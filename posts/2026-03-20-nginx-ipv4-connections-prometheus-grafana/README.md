@@ -23,6 +23,7 @@ Enable the `stub_status` module in your Nginx configuration:
 
 ```nginx
 # /etc/nginx/conf.d/status.conf
+
 server {
     listen 127.0.0.1:8080;  # Bind to loopback only for security
     server_name _;
@@ -49,7 +50,7 @@ curl http://127.0.0.1:8080/nginx_status
 ```
 
 Output:
-```
+```text
 Active connections: 42
 server accepts handled requests
  1234 1234 5678
@@ -119,7 +120,7 @@ Create a new dashboard with the following panels:
 
 ### Active Connections Panel
 
-```
+```text
 # PromQL query
 nginx_connections_active
 ```
@@ -128,7 +129,7 @@ Panel type: Stat / Time series
 
 ### Connection States Panel
 
-```
+```text
 # PromQL - stacked by connection state
 nginx_connections_reading
 nginx_connections_writing
@@ -139,7 +140,7 @@ Panel type: Time series with stack mode
 
 ### Request Rate Panel
 
-```
+```text
 # Requests per second (rate over 5 minute window)
 rate(nginx_http_requests_total[5m])
 ```

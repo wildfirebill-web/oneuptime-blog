@@ -27,6 +27,7 @@ First, create a Kubernetes secret containing a shared token that GitHub will use
 
 ```bash
 # Generate a random token for webhook authentication
+
 TOKEN=$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f1)
 
 # Create the Kubernetes secret

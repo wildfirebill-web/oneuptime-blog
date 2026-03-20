@@ -6,14 +6,15 @@ Tags: iptables, Linux, Security, Logging, Firewall, Auditing
 
 Description: Configure iptables LOG target to record dropped packets to syslog for security auditing, intrusion detection, and traffic analysis.
 
-Logging dropped packets gives you visibility into what your firewall is blocking. Without logs, you're flying blind — you can't detect attacks, debug rules, or prove compliance.
+Logging dropped packets gives you visibility into what your firewall is blocking. Without logs, you're flying blind - you can't detect attacks, debug rules, or prove compliance.
 
 ## How iptables Logging Works
 
-The `LOG` target writes packet metadata to the kernel log (viewable via `dmesg` or `/var/log/syslog`). Unlike `DROP`, `LOG` is non-terminating — the packet continues through the chain, so you must follow it with `DROP`.
+The `LOG` target writes packet metadata to the kernel log (viewable via `dmesg` or `/var/log/syslog`). Unlike `DROP`, `LOG` is non-terminating - the packet continues through the chain, so you must follow it with `DROP`.
 
 ```bash
 # Basic pattern: LOG before DROP
+
 sudo iptables -A INPUT -p tcp --dport 23 -j LOG --log-prefix "TELNET-ATTEMPT: "
 sudo iptables -A INPUT -p tcp --dport 23 -j DROP
 ```

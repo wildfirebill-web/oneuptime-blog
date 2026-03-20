@@ -28,6 +28,7 @@ Create an Event Hubs namespace with Kafka support enabled.
 
 ```bash
 # Create resource group
+
 az group create --name eventhubs-micro-rg --location eastus
 
 # Create Event Hubs namespace (Standard or higher for Kafka support)

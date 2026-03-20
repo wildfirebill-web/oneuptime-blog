@@ -53,6 +53,7 @@ flowchart TB
 
 ```bash
 # Add helm-exporter repository
+
 helm repo add sstarcher https://shanestarcher.com/helm-charts/
 helm repo update
 

@@ -38,6 +38,7 @@ Check whether your HTTP client is injecting trace headers:
 
 ```python
 # Python: verify W3C traceparent header is being sent
+
 import requests
 from opentelemetry import trace
 from opentelemetry.propagate import inject

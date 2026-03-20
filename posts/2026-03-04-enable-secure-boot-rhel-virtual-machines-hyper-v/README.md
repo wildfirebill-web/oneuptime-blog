@@ -21,6 +21,7 @@ The default Secure Boot template uses the Microsoft Windows certificate, which w
 
 ```powershell
 # Power off the VM first (Secure Boot settings cannot be changed while running)
+
 Stop-VM -Name "RHEL9-Server"
 
 # Set the Secure Boot template for Linux

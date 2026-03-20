@@ -26,6 +26,7 @@ This guide provides a repeatable test framework for namespace-based policies, in
 
 ```bash
 # Create test pods in three namespaces
+
 for ns in production staging monitoring; do
   kubectl run test-pod -n $ns --image=busybox --restart=Never \
     --labels="app=test" -- sleep 3600

@@ -60,6 +60,7 @@ The most common error - the package cannot be found in configured repositories.
 ```yaml
 ---
 # fix-package-not-found.yml - Handle package not found errors
+
 - name: Fix package not found errors
   hosts: all
   become: yes

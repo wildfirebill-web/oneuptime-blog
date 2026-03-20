@@ -12,7 +12,7 @@ Every OpenTofu operation follows a well-defined lifecycle. Understanding the sta
 
 ## The Full Lifecycle
 
-```
+```hcl
 tofu plan lifecycle:
 
 1. Load Configuration
@@ -46,6 +46,7 @@ tofu plan lifecycle:
 
 ```bash
 # OpenTofu reads all .tf files in the current directory
+
 tofu plan
 
 # You can specify variables at plan time
@@ -59,7 +60,7 @@ tofu plan -chdir=environments/prod
 
 Understanding the symbols in plan output.
 
-```
+```hcl
 + resource will be created
 - resource will be destroyed
 ~ resource will be updated in-place
@@ -118,7 +119,7 @@ tofu apply -parallelism=5  # slower but less API pressure
 
 OpenTofu respects the dependency graph when creating resources.
 
-```
+```text
 Dependency graph resolution example:
 
 aws_vpc.main

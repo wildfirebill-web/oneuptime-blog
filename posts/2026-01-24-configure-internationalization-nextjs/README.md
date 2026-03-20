@@ -497,6 +497,7 @@ For a more robust solution, consider using the next-intl library:
 
 ```bash
 # Install next-intl
+
 npm install next-intl
 ```
 

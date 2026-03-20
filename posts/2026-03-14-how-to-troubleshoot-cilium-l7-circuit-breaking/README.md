@@ -26,6 +26,7 @@ Cilium implements circuit breaking through Envoy CDS (Cluster Discovery Service)
 
 ```yaml
 # Example CiliumNetworkPolicy with L7 rules that trigger Envoy
+
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy
 metadata:

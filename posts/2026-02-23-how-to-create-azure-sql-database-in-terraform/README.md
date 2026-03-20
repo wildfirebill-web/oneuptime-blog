@@ -18,6 +18,7 @@ Make sure your provider is configured to work with Azure SQL resources.
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -38,7 +39,7 @@ provider "azurerm" {
 }
 ```
 
-## Resource Group
+Resource Group
 
 Group all database resources together.
 

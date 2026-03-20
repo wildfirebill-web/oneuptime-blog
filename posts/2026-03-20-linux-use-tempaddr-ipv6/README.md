@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, use_tempaddr, sysctl, Privacy Extensions, SLAAC
+Tags: IPv6, Linux, Use_tempaddr, Sysctl, Privacy Extensions, SLAAC
 
-Description: A deep dive into the Linux `use_tempaddr` sysctl parameter for IPv6 privacy extensions, covering all three values, address lifecycle management, preferred lifetime tuning, and per-interface configuration.
+Description: A deep dive into the Linux `use_tempaddr` sysctl parameter for IPv6 privacy extensions, covering all three values, address lifecycle management, preferred lifetime tuning, and per-interface...
 
 The `net.ipv6.conf.*.use_tempaddr` sysctl controls how Linux generates and uses temporary IPv6 addresses from SLAAC (Router Advertisement). This parameter implements RFC 8981 (formerly RFC 4941) privacy extensions on Linux.
 
@@ -12,6 +12,7 @@ The `net.ipv6.conf.*.use_tempaddr` sysctl controls how Linux generates and uses 
 
 ```bash
 # Check current value
+
 sysctl net.ipv6.conf.all.use_tempaddr
 sysctl net.ipv6.conf.eth0.use_tempaddr
 
@@ -83,10 +84,10 @@ ip -6 monitor address
 sysctl -a | grep "temp"
 
 # Key parameters:
-# net.ipv6.conf.*.temp_prefered_lft  — preferred lifetime for temp addresses (default: 86400 = 24h)
-# net.ipv6.conf.*.temp_valid_lft     — valid lifetime for temp addresses (default: 604800 = 7d)
-# net.ipv6.conf.*.regen_max_retry    — max retries for generating non-conflicting temp address
-# net.ipv6.conf.*.max_desync_factor  — randomization factor subtracted from preferred_lft
+# net.ipv6.conf.*.temp_prefered_lft  - preferred lifetime for temp addresses (default: 86400 = 24h)
+# net.ipv6.conf.*.temp_valid_lft     - valid lifetime for temp addresses (default: 604800 = 7d)
+# net.ipv6.conf.*.regen_max_retry    - max retries for generating non-conflicting temp address
+# net.ipv6.conf.*.max_desync_factor  - randomization factor subtracted from preferred_lft
 
 # Set shorter preferred lifetime (rotate every 6 hours)
 cat > /etc/sysctl.d/99-ipv6-tempaddr.conf << 'EOF'
@@ -112,14 +113,14 @@ sysctl --system
 ```bash
 # Enable for client interfaces, disable for server interfaces
 cat > /etc/sysctl.d/99-ipv6-tempaddr-selective.conf << 'EOF'
-# Client interface (laptop WiFi/ethernet) — enable privacy
+# Client interface (laptop WiFi/ethernet) - enable privacy
 net.ipv6.conf.wlan0.use_tempaddr = 2
 net.ipv6.conf.eth0.use_tempaddr = 2
 
-# Server interface — disable privacy (needs stable address for DNS)
+# Server interface - disable privacy (needs stable address for DNS)
 net.ipv6.conf.eth1.use_tempaddr = 0
 
-# Container/VM bridge interface — disable (containers use their own addressing)
+# Container/VM bridge interface - disable (containers use their own addressing)
 net.ipv6.conf.docker0.use_tempaddr = 0
 net.ipv6.conf.br-default.use_tempaddr = 0
 EOF
@@ -135,7 +136,7 @@ sysctl --system
 
 # Check source address used for a specific destination
 ip -6 route get 2001:4860:4860::8888
-# Look for "src" field — should show temporary address
+# Look for "src" field - should show temporary address
 
 # Confirm with an actual connection
 curl -6 --interface "" https://ipv6.icanhazip.com
@@ -158,7 +159,7 @@ ip -6 addr show eth0 | grep mngtmpaddr
 # If mngtmpaddr flag is missing, temporary addresses won't be generated
 # This can happen after manually adding an address:
 ip -6 addr add 2001:db8::1/64 dev eth0
-# This doesn't get mngtmpaddr — temporary addresses still come from SLAAC
+# This doesn't get mngtmpaddr - temporary addresses still come from SLAAC
 
 # Stable SLAAC addresses have both "dynamic" and "mngtmpaddr" flags:
 # inet6 2001:db8::xxx/64 scope global dynamic mngtmpaddr

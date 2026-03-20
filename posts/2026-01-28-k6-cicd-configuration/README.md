@@ -115,6 +115,7 @@ export default function () {
 
 ```yaml
 # .github/workflows/performance.yml
+
 name: Performance Tests
 
 on:

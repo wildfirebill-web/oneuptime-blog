@@ -14,6 +14,7 @@ Terragrunt's `remote_state` block generates the OpenTofu backend configuration f
 
 ```hcl
 # Root terragrunt.hcl
+
 locals {
   env_vars   = read_terragrunt_config(find_in_parent_folders("env.hcl"))
   env        = local.env_vars.locals.environment
@@ -147,4 +148,4 @@ cat backend.tf
 
 ## Conclusion
 
-Terragrunt's `remote_state` block eliminates the most painful part of multi-module OpenTofu setups — managing backend configuration in every directory. The auto-generated `backend.tf` with a path-based key creates an intuitive state file hierarchy that mirrors your directory structure, making it easy to find and inspect any module's state.
+Terragrunt's `remote_state` block eliminates the most painful part of multi-module OpenTofu setups - managing backend configuration in every directory. The auto-generated `backend.tf` with a path-based key creates an intuitive state file hierarchy that mirrors your directory structure, making it easy to find and inspect any module's state.

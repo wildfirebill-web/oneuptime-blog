@@ -20,6 +20,7 @@ React Native requires special consideration for OpenTelemetry dependencies since
 
 ```bash
 # Install core OpenTelemetry packages
+
 npm install @opentelemetry/api @opentelemetry/sdk-trace-base @opentelemetry/core
 
 # Install React Native specific packages

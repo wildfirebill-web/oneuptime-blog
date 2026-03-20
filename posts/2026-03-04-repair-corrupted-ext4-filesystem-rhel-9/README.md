@@ -120,6 +120,7 @@ If that fails, remove and recreate the journal:
 
 ```bash
 # Remove the journal
+
 sudo tune2fs -O ^has_journal /dev/vg_data/lv_data
 
 # Run e2fsck without journal

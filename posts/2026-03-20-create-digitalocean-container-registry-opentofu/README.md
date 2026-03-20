@@ -68,6 +68,7 @@ resource "digitalocean_kubernetes_cluster" "main" {
 }
 
 # Create a Kubernetes pull secret for the registry
+
 resource "digitalocean_container_registry_docker_credentials" "k8s" {
   registry_name = digitalocean_container_registry.main.name
   write         = false  # Read-only for Kubernetes pull

@@ -18,6 +18,7 @@ The `length` function returns the size of a collection or the character count of
 
 ```hcl
 # Works with lists, maps, and strings
+
 length(value)
 ```
 

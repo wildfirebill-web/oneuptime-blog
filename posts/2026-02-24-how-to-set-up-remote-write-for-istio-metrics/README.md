@@ -207,6 +207,7 @@ Prometheus exposes metrics about the remote write queue:
 
 ```promql
 # Samples pending in the queue
+
 prometheus_remote_storage_pending_samples
 
 # Failed sample sends

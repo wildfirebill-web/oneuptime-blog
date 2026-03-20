@@ -43,6 +43,7 @@ Volumes contain persistent data like database content. List and back up importan
 
 ```bash
 # List all Docker volumes
+
 docker volume ls
 
 # Back up a specific volume to a tar archive

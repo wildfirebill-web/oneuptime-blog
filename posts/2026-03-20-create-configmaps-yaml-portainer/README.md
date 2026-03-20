@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMap, YAML, Configuration Management
+Tags: Portainer, Kubernetes, ConfigMaps, YAML, Configuration Management
 
 Description: Learn how to create Kubernetes ConfigMaps by writing or pasting YAML manifests directly in the Portainer UI.
 
@@ -30,6 +30,7 @@ While the form interface is convenient for simple key-value pairs, YAML is bette
 
 ```yaml
 # Simple application configuration
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

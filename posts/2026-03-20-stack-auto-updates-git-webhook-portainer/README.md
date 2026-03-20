@@ -1,4 +1,4 @@
-# How to Set Up Stack Auto-Updates from Git in Portainer (Webhook)
+# How to Set Up Stack Auto-Updates from Git in Portainer (Webhook) (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Navigate to **Stacks > Add stack** to create a new stack. You can:
 
 ```yaml
 # Paste this in the Portainer web editor
+
 version: "3.8"
 
 services:

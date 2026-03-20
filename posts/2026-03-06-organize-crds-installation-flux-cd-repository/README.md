@@ -22,6 +22,7 @@ Consider this failure scenario:
 
 ```yaml
 # This will fail because the Certificate CR is applied
+
 # before the cert-manager CRDs are registered
 Error: unable to recognize "certificate.yaml":
   no matches for kind "Certificate" in version "cert-manager.io/v1"

@@ -18,6 +18,7 @@ bootc (boot containers) is a technology for managing RHEL as a container-native 
 
 ```toml
 # fips-bootc.toml
+
 name = "fips-bootc"
 description = "FIPS-enabled RHEL bootc image"
 version = "1.0.0"

@@ -27,6 +27,7 @@ graph LR
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
     aiplatform.googleapis.com \
     storage.googleapis.com \

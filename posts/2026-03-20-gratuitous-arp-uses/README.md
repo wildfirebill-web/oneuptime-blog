@@ -22,7 +22,7 @@ A Gratuitous ARP is an ARP request or reply where a host announces its own IP-to
 
 ## Gratuitous ARP Format
 
-```
+```text
 Gratuitous ARP Request:
   Sender MAC:  aa:bb:cc:dd:ee:01  (new or announcing host)
   Sender IP:   192.168.1.1
@@ -39,6 +39,7 @@ Or as a Reply:
 
 ```bash
 # Using arping (send 1 gratuitous ARP on eth0)
+
 arping -A -c 1 -I eth0 192.168.1.10
 
 # Using arping (update neighbors)
@@ -90,7 +91,7 @@ tcpdump -n -e 'arp and arp[6:2] = 1'
 
 In Wireshark, filter with:
 
-```
+```text
 arp.isgratuitous == true
 ```
 

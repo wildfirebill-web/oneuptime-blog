@@ -16,6 +16,7 @@ The fastest way to export all applications:
 
 ```bash
 # Export all applications as YAML
+
 kubectl get applications.argoproj.io -n argocd -o yaml > applications-export.yaml
 
 # Export as individual files (one per application)

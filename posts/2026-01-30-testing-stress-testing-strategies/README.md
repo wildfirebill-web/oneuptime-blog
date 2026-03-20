@@ -187,6 +187,7 @@ Before stress testing, capture normal operation metrics. This Python script coll
 
 ```python
 # baseline_collector.py
+
 # Collects baseline metrics before stress testing begins
 
 import requests

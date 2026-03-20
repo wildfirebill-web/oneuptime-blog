@@ -27,6 +27,7 @@ Enable PITR if it's not already on:
 
 ```bash
 # Enable point-in-time recovery
+
 aws dynamodb update-continuous-backups \
   --table-name Orders \
   --point-in-time-recovery-specification PointInTimeRecoveryEnabled=true

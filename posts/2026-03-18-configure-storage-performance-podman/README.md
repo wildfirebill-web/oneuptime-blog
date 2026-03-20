@@ -20,6 +20,7 @@ Podman stores data in two primary locations:
 
 ```bash
 # Check current storage configuration
+
 podman info --format '{{.Store.GraphRoot}}'
 podman info --format '{{.Store.RunRoot}}'
 podman info --format '{{.Store.GraphDriverName}}'

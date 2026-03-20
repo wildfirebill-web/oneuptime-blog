@@ -8,7 +8,7 @@ Description: Understand and configure Longhorn's volume replication system to en
 
 ## Introduction
 
-Longhorn's replication is one of its core features. Each Longhorn volume maintains multiple replicas — copies of the data — distributed across different nodes. If a node fails, Longhorn can automatically rebuild the replica on another healthy node, ensuring your data remains safe and accessible. This guide explains how to configure and manage volume replication.
+Longhorn's replication is one of its core features. Each Longhorn volume maintains multiple replicas - copies of the data - distributed across different nodes. If a node fails, Longhorn can automatically rebuild the replica on another healthy node, ensuring your data remains safe and accessible. This guide explains how to configure and manage volume replication.
 
 ## How Longhorn Replication Works
 
@@ -25,6 +25,7 @@ Longhorn creates multiple replicas of each volume and distributes them across no
 
 ```bash
 # Patch the Longhorn global setting for default replica count
+
 kubectl patch settings.longhorn.io default-replica-count \
   -n longhorn-system \
   --type merge \

@@ -23,6 +23,7 @@ Your options are:
 
 ```bash
 # Install Chromium as a Snap (this is what apt does too)
+
 sudo snap install chromium
 
 # Verify installation
@@ -112,6 +113,7 @@ Version: 999
 Maintainer: local
 Architecture: amd64
 Description: Dummy package to prevent Snap installation
+
 EOF
 equivs-build chromium-no-snap.ctl
 sudo dpkg -i chromium-browser_999_amd64.deb

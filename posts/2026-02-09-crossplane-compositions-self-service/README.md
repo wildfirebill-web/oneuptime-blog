@@ -26,6 +26,7 @@ Start by installing Crossplane in your cluster:
 
 ```bash
 # Add Crossplane Helm repo
+
 helm repo add crossplane-stable https://charts.crossplane.io/stable
 helm repo update
 

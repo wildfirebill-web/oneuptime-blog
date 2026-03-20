@@ -81,6 +81,7 @@ flowchart TD
 
 ```yaml
 # A task can have multiple tags
+
 - name: Deploy application
   copy:
     src: app/

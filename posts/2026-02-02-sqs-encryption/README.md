@@ -77,6 +77,7 @@ The following command creates a new SQS queue with encryption enabled using the 
 
 ```bash
 # Create an encrypted queue with AWS managed key
+
 aws sqs create-queue \
     --queue-name my-encrypted-queue \
     --attributes '{

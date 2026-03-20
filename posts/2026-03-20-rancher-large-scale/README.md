@@ -19,7 +19,7 @@ Rancher is capable of managing hundreds of Kubernetes clusters from a single con
 
 ## Step 1: Architecture for Scale
 
-```
+```text
 Large-Scale Rancher Architecture:
 ├── Rancher Local Cluster (RKE2, 3-5 control plane nodes)
 │   ├── etcd nodes: 3 dedicated m5.2xlarge nodes (NVMe SSD)
@@ -39,6 +39,7 @@ Large-Scale Rancher Architecture:
 
 ```bash
 # Rancher supports up to 2000 clusters in a single instance
+
 # (with proper hardware and configuration)
 
 # Recommended hardware for 100+ cluster deployments:

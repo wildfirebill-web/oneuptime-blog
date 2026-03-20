@@ -1,4 +1,4 @@
-# How to Use the concat Function in OpenTofu
+# How to Use the concat Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

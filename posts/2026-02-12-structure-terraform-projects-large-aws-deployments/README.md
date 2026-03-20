@@ -72,6 +72,7 @@ The most important decision is how to split your Terraform into separate state f
 
 ```text
 # Each of these gets its own state file
+
 environments/prod/us-east-1/
   networking/          # VPC, subnets, NAT gateways
     main.tf

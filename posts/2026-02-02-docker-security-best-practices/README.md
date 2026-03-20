@@ -63,6 +63,7 @@ Distroless images contain only your application and its runtime dependencies. No
 
 ```dockerfile
 # Build stage: Use full image with all build tools
+
 # This stage compiles the Go application but is not included in the final image
 FROM golang:1.22-bullseye AS builder
 

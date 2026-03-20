@@ -45,6 +45,7 @@ Start with the most common pool - public-facing IPs that MetalLB can hand out to
 
 ```yaml
 # pool-public.yaml
+
 # Public IP pool for internet-facing services
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

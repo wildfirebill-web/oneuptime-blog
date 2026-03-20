@@ -21,7 +21,7 @@ With Rancher Turtles installed, you can create Kubernetes clusters by applying s
 
 A CAPI cluster requires these resources:
 
-```
+```text
 Cluster (cluster.x-k8s.io)
 ├── InfrastructureCluster (e.g., AWSCluster)
 ├── ControlPlane (e.g., RKE2ControlPlane)
@@ -36,6 +36,7 @@ The Docker provider is useful for testing CAPI workflows:
 
 ```bash
 # Initialize Docker provider
+
 clusterctl init --infrastructure docker
 
 # Generate cluster manifest

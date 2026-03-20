@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Virtual Machines, KVM, VirtualBox, VMware, Network Virtualization
+Tags: IPv6, Virtual Machine, KVM, VirtualBox, VMware, Network Virtualization
 
 Description: Configure IPv6 for virtual machines in KVM/QEMU, VirtualBox, and VMware environments, including bridged, NAT, and host-only networking modes.
 
@@ -14,6 +14,7 @@ Virtual machines present unique challenges for IPv6: the hypervisor network stac
 
 ```bash
 # Create a network with IPv6 enabled
+
 cat << 'EOF' > /tmp/ipv6-network.xml
 <network>
   <name>ipv6-net</name>

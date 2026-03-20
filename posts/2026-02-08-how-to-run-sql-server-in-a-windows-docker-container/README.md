@@ -18,6 +18,7 @@ SQL Server runs on both Linux and Windows containers. The Linux variant is light
 
 ```powershell
 # Linux-based SQL Server (recommended for most use cases)
+
 docker pull mcr.microsoft.com/mssql/server:2022-latest
 
 # Windows-based SQL Server (for Windows-only environments)

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Ulimits, Resource Limits, Security, Linux, System Tuning
+Tags: Portainer, Docker, Ulimit, Resource Limits, Security, Linux, System Tuning
 
 Description: Configure Linux ulimits for Docker containers in Portainer to control resource limits like open file descriptors, max processes, and stack sizes for production workloads.
 
@@ -100,7 +100,7 @@ Configure Docker daemon defaults to apply to all new containers:
 }
 ```
 
-This sets the baseline — individual containers can override it higher if needed.
+This sets the baseline - individual containers can override it higher if needed.
 
 ## Checking Current Ulimits
 
@@ -108,6 +108,7 @@ Verify ulimits inside a running container:
 
 ```bash
 # From the Portainer container console
+
 ulimit -a
 
 # Or check specific limits
@@ -124,7 +125,7 @@ cat /proc/1/limits    # PID 1 (container init process) limits
 Common errors from insufficient ulimits:
 
 ```bash
-# "Too many open files" — increase nofile limit
+# "Too many open files" - increase nofile limit
 java.io.IOException: Too many open files
 
 # Fix: increase nofile ulimit
@@ -133,7 +134,7 @@ ulimits:
     soft: 65535
     hard: 65535
 
-# "Resource temporarily unavailable" during fork — increase nproc
+# "Resource temporarily unavailable" during fork - increase nproc
 bash: fork: Resource temporarily unavailable
 
 # Fix: increase nproc limit or set PID limit appropriately

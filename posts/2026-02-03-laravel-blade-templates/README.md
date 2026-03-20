@@ -965,6 +965,7 @@ For components with complex logic, create a class-based component.
 
 ```bash
 # Generate a component class and view
+
 php artisan make:component Alert
 
 # This creates:

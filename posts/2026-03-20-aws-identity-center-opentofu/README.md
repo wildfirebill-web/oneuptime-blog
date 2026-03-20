@@ -31,6 +31,7 @@ locals {
 
 ```hcl
 # Create a user in Identity Center
+
 resource "aws_identitystore_user" "developer" {
   identity_store_id = local.identity_store_id
 

@@ -50,6 +50,7 @@ stateDiagram-v2
 
 ```bash
 # List all canary resources across all namespaces
+
 kubectl get canaries --all-namespaces
 
 # List canaries in a specific namespace with additional columns

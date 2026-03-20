@@ -44,6 +44,7 @@ Helm stores release history in Kubernetes secrets, which grow with each upgrade.
 
 ```bash
 # Check release secret sizes
+
 kubectl get secrets -n my-namespace -l owner=helm -o custom-columns="NAME:.metadata.name,SIZE:.data" | head -20
 
 # Check specific release history size
@@ -124,7 +125,7 @@ env:
     value: {{ .Values.url }}  # Pre-resolve in values
 ```
 
-## Resource Count Optimization
+Resource Count Optimization
 
 ### Split Large Charts
 

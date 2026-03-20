@@ -26,6 +26,7 @@ Events are Kubernetes objects that describe state changes and errors. Each event
 
 ```bash
 # View all events in the flux-system namespace
+
 kubectl get events -n flux-system
 
 # View events sorted by last timestamp (most recent last)

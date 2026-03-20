@@ -57,6 +57,7 @@ sequenceDiagram
 
 ```nginx
 # WRONG: Missing WebSocket configuration
+
 # This causes the proxy to treat WebSocket as regular HTTP
 location /ws {
     proxy_pass http://backend;

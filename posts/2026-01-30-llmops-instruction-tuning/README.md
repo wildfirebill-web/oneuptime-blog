@@ -183,6 +183,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
 
 # Configure logging for the data pipeline
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'

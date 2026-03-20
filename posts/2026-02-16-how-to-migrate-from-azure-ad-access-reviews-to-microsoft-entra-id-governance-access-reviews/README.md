@@ -51,6 +51,7 @@ Before making any changes, document your current access review configuration. Th
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "AccessReview.ReadWrite.All"
 
 # List all existing access review definitions

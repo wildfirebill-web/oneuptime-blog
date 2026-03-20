@@ -46,6 +46,7 @@ Start with a simple listener that terminates TLS using static certificates.
 
 ```yaml
 # envoy.yaml - Basic TLS termination configuration
+
 static_resources:
   listeners:
     - name: https_listener

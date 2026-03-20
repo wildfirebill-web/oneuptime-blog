@@ -308,6 +308,7 @@ import boto3
 s3 = boto3.client("s3")
 
 # Upload with retention tag
+
 s3.put_object(
     Bucket="my-company-data",
     Key="reports/2026/q1-report.pdf",

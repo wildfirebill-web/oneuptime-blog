@@ -26,6 +26,7 @@ Deployment slots require the Standard tier (S1) or higher. Free, Shared, and Bas
 
 ```bash
 # Create a staging deployment slot
+
 az webapp deployment slot create \
   --resource-group myAppRG \
   --name myapp \

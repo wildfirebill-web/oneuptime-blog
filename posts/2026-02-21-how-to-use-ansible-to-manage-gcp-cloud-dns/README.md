@@ -44,6 +44,7 @@ Public zones serve DNS records to the internet. Private zones serve records only
 
 ```yaml
 # create-public-zone.yml - Create a public Cloud DNS zone
+
 ---
 - name: Create Public DNS Zone
   hosts: localhost

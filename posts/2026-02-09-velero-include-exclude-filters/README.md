@@ -27,6 +27,7 @@ The simplest filter targets specific namespaces:
 
 ```bash
 # Backup only production namespace
+
 velero backup create production-only \
   --include-namespaces production
 
@@ -59,7 +60,7 @@ spec:
     ttl: 168h0m0s
 ```
 
-## Resource Type Filtering
+Resource Type Filtering
 
 Include or exclude specific Kubernetes resource types:
 
@@ -277,7 +278,7 @@ data:
 
 This ConfigMap will be excluded from all backups regardless of other filters.
 
-## Resource Policies for Advanced Filtering
+Resource Policies for Advanced Filtering
 
 Create resource policies for complex exclusion rules:
 

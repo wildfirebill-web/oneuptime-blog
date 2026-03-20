@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Datadog, Infrastructure as Code, Log Pipelines, Log Processing, Observability
+Tags: OpenTofu, Datadog, Infrastructure as Code, Log Pipeline, Log Processing, Observability
 
 Description: Learn how to configure and manage Datadog log processing pipelines with parsers, processors, and filters using OpenTofu.
 
@@ -39,6 +39,7 @@ provider "datadog" {
 
 ```hcl
 # log_pipelines.tf
+
 resource "datadog_logs_pipeline" "nginx" {
   name       = "Nginx Access Logs"
   is_enabled = true

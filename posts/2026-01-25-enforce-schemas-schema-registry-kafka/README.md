@@ -38,6 +38,7 @@ Deploy Schema Registry alongside your Kafka cluster. It stores schemas in an int
 
 ```bash
 # Docker Compose example
+
 docker run -d \
   --name schema-registry \
   -p 8081:8081 \

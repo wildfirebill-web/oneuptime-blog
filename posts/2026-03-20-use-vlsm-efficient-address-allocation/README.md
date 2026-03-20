@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, VLSM, Subnetting, Networking, Address Allocation, Network Design
 
-Description: Variable Length Subnet Masking (VLSM) allows different subnets within the same address block to use different prefix lengths, allocating exactly the right number of addresses to each segment and minimizing waste.
+Description: Variable Length Subnet Masking (VLSM) allows different subnets within the same address block to use different prefix lengths, allocating exactly the right number of addresses to each segment and...
 
 ## What Is VLSM?
 
@@ -62,6 +62,7 @@ def vlsm_allocate(parent: str, segments: list) -> list:
     return results
 
 # Example: allocate from 192.168.10.0/24
+
 segments = [
     ("Department-A",  100),
     ("Department-B",   50),

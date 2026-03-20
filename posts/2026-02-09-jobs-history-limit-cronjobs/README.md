@@ -117,6 +117,7 @@ View retained job history:
 
 ```bash
 # List jobs from a specific CronJob
+
 kubectl get jobs -l cronjob-name=backup-job
 
 # Sort by completion time

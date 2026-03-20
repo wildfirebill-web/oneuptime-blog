@@ -60,6 +60,7 @@ This is the most common rollback scenario. You migrated a service, something wen
 
 ```bash
 # Option 1: Disable sidecar injection for specific pods
+
 kubectl patch deployment my-service -n production -p '{
   "spec": {
     "template": {

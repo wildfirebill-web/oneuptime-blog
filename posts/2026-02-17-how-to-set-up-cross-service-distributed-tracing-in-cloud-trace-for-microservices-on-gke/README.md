@@ -41,6 +41,7 @@ Before your pods can export traces to Cloud Trace, they need the right permissio
 
 ```bash
 # Enable Workload Identity on the cluster (if not already enabled)
+
 gcloud container clusters update my-cluster \
   --region=us-central1 \
   --workload-pool=YOUR_PROJECT_ID.svc.id.goog

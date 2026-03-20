@@ -18,6 +18,7 @@ Initialize a Go module and install the Docker SDK:
 
 ```bash
 # Create a new Go project for Docker automation
+
 mkdir docker-automation && cd docker-automation
 go mod init docker-automation
 

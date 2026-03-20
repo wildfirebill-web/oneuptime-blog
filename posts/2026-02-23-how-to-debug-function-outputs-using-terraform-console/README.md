@@ -18,6 +18,7 @@ The basic usage is simple. Navigate to a directory containing Terraform configur
 
 ```bash
 # Start the interactive console
+
 terraform console
 ```
 

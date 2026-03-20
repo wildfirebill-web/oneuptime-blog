@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, replace, Force Recreation, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resources, Replace, Force Recreation, Infrastructure as Code, DevOps
 
 Description: A guide to using the -replace flag in OpenTofu to force specific resources to be destroyed and recreated during apply.
 
@@ -14,6 +14,7 @@ The `-replace` flag in OpenTofu lets you force a specific resource to be destroy
 
 ```bash
 # Force replace a specific resource
+
 tofu apply -replace="aws_instance.web"
 
 # Preview what will happen (plan only)

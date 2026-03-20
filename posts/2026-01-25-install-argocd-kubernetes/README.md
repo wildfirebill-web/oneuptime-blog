@@ -53,6 +53,7 @@ The simplest way to get ArgoCD running is using the official manifests.
 
 ```bash
 # Create the argocd namespace
+
 kubectl create namespace argocd
 
 # Apply the installation manifests

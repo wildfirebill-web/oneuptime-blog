@@ -25,6 +25,7 @@ First, check which CNI your Talos cluster uses and whether it supports network p
 
 ```bash
 # Check the CNI in use
+
 kubectl get pods -n kube-system | grep -E 'cilium|calico|flannel'
 
 # For Cilium, verify network policy support

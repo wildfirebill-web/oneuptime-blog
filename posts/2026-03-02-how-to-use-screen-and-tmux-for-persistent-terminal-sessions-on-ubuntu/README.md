@@ -28,6 +28,7 @@ The core use cases:
 
 ```bash
 # Install screen (usually pre-installed)
+
 sudo apt install screen
 
 # Start a new screen session

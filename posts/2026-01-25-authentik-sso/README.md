@@ -67,6 +67,7 @@ Create the docker-compose file:
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

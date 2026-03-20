@@ -18,9 +18,9 @@ OpenTofu's `cidrsubnet` function lets you calculate subnet CIDR blocks programma
 cidrsubnet(prefix, newbits, netnum)
 ```
 
-- `prefix` — the base CIDR block (e.g., `"10.0.0.0/16"`)
-- `newbits` — number of bits to add to the prefix length
-- `netnum` — the subnet number (0-based index)
+- `prefix` - the base CIDR block (e.g., `"10.0.0.0/16"`)
+- `newbits` - number of bits to add to the prefix length
+- `netnum` - the subnet number (0-based index)
 
 ---
 
@@ -28,6 +28,7 @@ cidrsubnet(prefix, newbits, netnum)
 
 ```hcl
 # Divide 10.0.0.0/16 into /24 subnets (adding 8 bits)
+
 cidrsubnet("10.0.0.0/16", 8, 0)   # → "10.0.0.0/24"
 cidrsubnet("10.0.0.0/16", 8, 1)   # → "10.0.1.0/24"
 cidrsubnet("10.0.0.0/16", 8, 10)  # → "10.0.10.0/24"

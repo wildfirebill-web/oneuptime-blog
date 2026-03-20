@@ -45,6 +45,7 @@ Update your `Cargo.toml` to remove the old crate and add the new ones:
 ```toml
 [dependencies]
 # Remove this line:
+
 # actix-web-opentelemetry = "0.14"
 
 # Add these instead:

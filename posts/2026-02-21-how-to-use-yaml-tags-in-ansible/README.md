@@ -16,6 +16,7 @@ The most important YAML tag in Ansible is `!vault`, which marks a string as Ansi
 
 ```yaml
 # Variable with vault-encrypted value
+
 database_password: !vault |
   $ANSIBLE_VAULT;1.1;AES256
   63613531623363336...encrypted_data...

@@ -76,6 +76,7 @@ resource "azurerm_kubernetes_cluster" "private" {
 
 ```hcl
 # Create custom private DNS zone for the API server
+
 resource "azurerm_private_dns_zone" "aks" {
   name                = "privatelink.${var.location}.azmk8s.io"
   resource_group_name = var.resource_group_name
@@ -240,4 +241,4 @@ az aks command invoke \
 
 ## Conclusion
 
-The `az aks command invoke` command allows running kubectl commands against private clusters from anywhere with Azure CLI access—it routes through the Azure control plane without requiring network connectivity to the private endpoint. This is useful for emergency access and CI/CD pipelines that can't reach the private VNet. For ongoing CI/CD, deploy self-hosted GitHub Actions runners or Azure DevOps agents within the VNet. Using `private_dns_zone_id = "System"` is the simplest configuration—Azure manages the private DNS zone automatically; use a custom zone only when you need to share it with multiple peered VNets.
+The `az aks command invoke` command allows running kubectl commands against private clusters from anywhere with Azure CLI access-it routes through the Azure control plane without requiring network connectivity to the private endpoint. This is useful for emergency access and CI/CD pipelines that can't reach the private VNet. For ongoing CI/CD, deploy self-hosted GitHub Actions runners or Azure DevOps agents within the VNet. Using `private_dns_zone_id = "System"` is the simplest configuration-Azure manages the private DNS zone automatically; use a custom zone only when you need to share it with multiple peered VNets.

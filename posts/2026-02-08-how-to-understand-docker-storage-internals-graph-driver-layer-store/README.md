@@ -34,6 +34,7 @@ Docker stores all image data using content-addressable storage. Every piece of d
 
 ```bash
 # View where Docker stores its data
+
 sudo ls /var/lib/docker/
 
 # The image directory contains the layer metadata

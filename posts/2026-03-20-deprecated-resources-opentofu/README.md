@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Deprecated Resources, Migration, Providers, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Deprecated Resources, Migration, Provider, Best Practices, Infrastructure as Code
 
 Description: Learn how to identify, migrate from, and safely replace deprecated OpenTofu provider resources without causing infrastructure disruptions.
 
@@ -14,6 +14,7 @@ Provider resources are deprecated when cloud services introduce better replaceme
 
 ```bash
 # Run validate to surface deprecation warnings
+
 tofu validate
 
 # Run plan with upgrade flag to see migration hints

@@ -12,6 +12,7 @@ Best practice: use a loopback IPv6 address as the VTEP source IP for stability:
 
 ```bash
 # Add VTEP loopback address
+
 ip addr add 2001:db8:1::1/128 dev lo
 
 # Create VXLAN interface sourced from loopback

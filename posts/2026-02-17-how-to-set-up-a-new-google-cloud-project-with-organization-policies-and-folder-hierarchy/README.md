@@ -60,6 +60,7 @@ Create the folders:
 
 ```bash
 # Get your organization ID
+
 gcloud organizations list
 
 # Create top-level folders

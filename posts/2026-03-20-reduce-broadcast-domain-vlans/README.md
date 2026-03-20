@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, VLANs, Broadcast, Switching, Network Design, Cisco
+Tags: Networking, VLAN, Broadcast, Switching, Network Design, Cisco
 
 Description: Reduce the size of broadcast domains by segmenting a flat network into multiple VLANs, limiting the reach of ARP, DHCP, and other broadcast traffic to smaller, more manageable groups.
 
 ## Introduction
 
-A broadcast domain is the set of all devices that receive a broadcast frame. In a flat network, every device hears every broadcast. As networks grow, broadcast overhead consumes increasing bandwidth and CPU. VLANs solve this by partitioning the Layer 2 domain into isolated segments — each VLAN is its own broadcast domain.
+A broadcast domain is the set of all devices that receive a broadcast frame. In a flat network, every device hears every broadcast. As networks grow, broadcast overhead consumes increasing bandwidth and CPU. VLANs solve this by partitioning the Layer 2 domain into isolated segments - each VLAN is its own broadcast domain.
 
 ## Why Broadcast Domain Size Matters
 
@@ -21,7 +21,7 @@ Splitting into 10 VLANs of 50 hosts each reduces broadcast radius by 90%.
 
 ## Creating VLANs on a Cisco Switch
 
-```
+```text
 ! Create VLANs 10, 20, and 30
 vlan 10
  name Engineering
@@ -56,7 +56,7 @@ interface GigabitEthernet0/24
 
 To allow traffic between VLANs, configure Switch Virtual Interfaces (SVIs):
 
-```
+```text
 ! Create L3 gateway for each VLAN (on a multilayer switch)
 interface vlan 10
  ip address 192.168.10.1 255.255.255.0
@@ -77,6 +77,7 @@ ip routing
 
 ```bash
 # Create VLAN 10 and VLAN 20 subinterfaces on eth0
+
 sudo ip link add link eth0 name eth0.10 type vlan id 10
 sudo ip link add link eth0 name eth0.20 type vlan id 20
 
@@ -108,7 +109,7 @@ sudo tcpdump -i eth0.20 -n "dst 192.168.10.255"
 |---|---|---|
 | Data center server VLAN | /24 (254 hosts) | Low (servers rarely broadcast) |
 | Office workstation VLAN | /25 (126 hosts) | Medium |
-| IoT / building automation | /26 (62 hosts) | Low — isolate from user VLANs |
+| IoT / building automation | /26 (62 hosts) | Low - isolate from user VLANs |
 | VoIP phones | Dedicated /24 | Keep QoS isolated |
 
 ## Conclusion

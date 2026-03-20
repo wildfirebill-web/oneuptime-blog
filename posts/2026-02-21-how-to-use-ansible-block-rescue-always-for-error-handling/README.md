@@ -16,6 +16,7 @@ Here is the fundamental pattern showing all three sections.
 
 ```yaml
 # Basic block/rescue/always structure
+
 ---
 - name: Error handling demo
   hosts: webservers

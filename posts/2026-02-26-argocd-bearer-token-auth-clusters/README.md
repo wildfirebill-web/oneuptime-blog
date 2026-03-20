@@ -35,6 +35,7 @@ On the remote cluster, create a dedicated ServiceAccount for ArgoCD:
 
 ```yaml
 # argocd-manager-sa.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

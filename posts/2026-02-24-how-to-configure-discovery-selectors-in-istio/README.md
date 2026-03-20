@@ -140,6 +140,7 @@ For the best results, use both:
 
 ```yaml
 # MeshConfig: Istiod only watches mesh namespaces
+
 meshConfig:
   discoverySelectors:
     - matchLabels:

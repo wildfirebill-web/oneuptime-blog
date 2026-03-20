@@ -29,6 +29,7 @@ The post-renderer is configured directly on the HelmRelease resource using `spec
 
 ```yaml
 # HelmRelease with a Kustomize post-renderer that adds labels
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

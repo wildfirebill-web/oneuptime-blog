@@ -22,6 +22,7 @@ Start by initializing a Policy Pack project. This creates the scaffolding needed
 
 ```bash
 # Create a new Policy Pack
+
 mkdir kubernetes-compliance-pack
 cd kubernetes-compliance-pack
 pulumi policy new aws-typescript

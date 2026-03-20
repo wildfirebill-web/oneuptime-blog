@@ -16,6 +16,7 @@ Connect your Android phone via USB and set the connection mode to "File Transfer
 
 ```bash
 # Install the MTP filesystem tools
+
 sudo apt update
 sudo apt install mtp-tools jmtpfs -y
 

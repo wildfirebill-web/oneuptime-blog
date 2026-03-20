@@ -57,6 +57,7 @@ Insights generates Ansible playbooks for remediation:
 
 ```bash
 # Download a remediation playbook from the console
+
 # Then apply it
 ansible-playbook remediation-playbook.yml
 ```

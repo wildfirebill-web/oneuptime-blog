@@ -24,6 +24,7 @@ Enable the Transit secrets engine in Vault if it is not already active.
 
 ```bash
 # Enable the transit secrets engine
+
 vault secrets enable transit
 
 # Verify it is enabled

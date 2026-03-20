@@ -110,6 +110,7 @@ Measure the impact:
 
 ```bash
 # Check the size of the Envoy configuration
+
 kubectl exec -it <pod-name> -c istio-proxy -- curl -s localhost:15000/config_dump | wc -c
 ```
 

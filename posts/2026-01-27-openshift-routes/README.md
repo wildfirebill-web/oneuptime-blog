@@ -42,6 +42,7 @@ Edge termination decrypts TLS at the router level. The router handles certificat
 
 ```yaml
 # edge-route.yaml
+
 # Edge termination - TLS ends at the router
 # Traffic between router and pod is unencrypted (HTTP)
 apiVersion: route.openshift.io/v1

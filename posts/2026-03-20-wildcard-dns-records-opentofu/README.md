@@ -16,7 +16,8 @@ data "aws_route53_zone" "main" {
   private_zone = false
 }
 
-# Wildcard A record — matches *.example.com
+# Wildcard A record - matches *.example.com
+
 resource "aws_route53_record" "wildcard" {
   zone_id = data.aws_route53_zone.main.zone_id
   name    = "*.example.com"
@@ -106,7 +107,7 @@ resource "aws_route53_record" "www" {
 ## Multi-Level Wildcard for Environments
 
 ```hcl
-# *.staging.example.com — all staging subdomains
+# *.staging.example.com - all staging subdomains
 resource "aws_route53_record" "staging_wildcard" {
   zone_id = data.aws_route53_zone.main.zone_id
   name    = "*.staging.example.com"
@@ -115,7 +116,7 @@ resource "aws_route53_record" "staging_wildcard" {
   records = [var.staging_ip]
 }
 
-# *.dev.example.com — per-developer environments
+# *.dev.example.com - per-developer environments
 resource "aws_route53_record" "dev_wildcard" {
   zone_id = data.aws_route53_zone.main.zone_id
   name    = "*.dev.example.com"

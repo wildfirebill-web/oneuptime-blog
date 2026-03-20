@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Environments, Socket, Configuration
+Tags: Portainer, Docker, Environments, Sockets, Configuration
 
 Description: Add a local Docker standalone environment to Portainer using the Docker socket for direct host management.
 
@@ -35,6 +35,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Add environment via API
+
 curl -X POST \
   https://localhost:9443/api/endpoints \
   -H "Authorization: Bearer $TOKEN" \

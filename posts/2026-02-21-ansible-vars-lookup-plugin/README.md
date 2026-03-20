@@ -22,6 +22,7 @@ This playbook demonstrates basic variable resolution:
 
 ```yaml
 # playbook.yml - Basic vars lookup usage
+
 ---
 - name: Resolve variables dynamically
   hosts: localhost

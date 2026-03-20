@@ -27,6 +27,7 @@ Before upgrading any CNI plugin, thoroughly test in a staging environment and ve
 echo "Checking CNI plugin health before upgrade..."
 
 # Identify current CNI plugin
+
 CNI_PLUGIN=$(kubectl get ds -n kube-system -o json | \
   jq -r '.items[] | select(.metadata.name | test("calico|cilium|flannel|weave")) | .metadata.name')
 

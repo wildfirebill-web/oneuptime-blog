@@ -35,6 +35,7 @@ Every batch job should emit these fundamental metrics:
 
 ```python
 # Python example using OpenTelemetry
+
 import time
 from opentelemetry import metrics
 

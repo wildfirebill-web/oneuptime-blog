@@ -16,6 +16,7 @@ Both sides must be configured with the same secret:
 
 ```bash
 # Portainer Server side
+
 docker run ... portainer/portainer-ce:latest --agent-secret mysecrettoken
 
 # Portainer Agent side

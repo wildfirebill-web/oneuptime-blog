@@ -17,6 +17,7 @@ Automating cluster-wide Calico diagnostics ensures that when incidents occur, co
 ```bash
 #!/bin/bash
 # collect-calico-cluster-diags.sh
+
 set -euo pipefail
 BUNDLE="calico-cluster-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "${BUNDLE}"

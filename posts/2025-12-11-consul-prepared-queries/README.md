@@ -37,6 +37,7 @@ Create queries using the HTTP API or CLI.
 
 ```bash
 # Create a prepared query via API
+
 curl --request POST \
   --data '{
     "Name": "api-query",

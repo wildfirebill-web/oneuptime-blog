@@ -28,6 +28,7 @@ You can also configure this with the GitHub API:
 
 ```bash
 # Create environment with required reviewers using gh CLI
+
 gh api repos/myorg/infrastructure/environments/production \
   --method PUT \
   --field wait_timer=0 \

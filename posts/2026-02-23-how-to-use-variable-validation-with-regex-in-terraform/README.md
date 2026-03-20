@@ -279,6 +279,7 @@ Here are a few things to remember when writing regex in HCL:
 
 ```hcl
 # Common regex patterns for reference
+
 locals {
   patterns = {
     ipv4         = "^([0-9]{1,3}\\.){3}[0-9]{1,3}$"

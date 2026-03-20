@@ -30,6 +30,7 @@ TrueNAS SCALE 24.10+ supports Docker natively. Enable it:
 
 ```bash
 # SSH into TrueNAS SCALE
+
 ssh admin@<truenas-ip>
 
 # Create a dataset for Portainer data (recommended)

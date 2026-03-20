@@ -16,6 +16,7 @@ The Mezmo exporter is part of the `opentelemetry-collector-contrib` distribution
 
 ```yaml
 # otel-collector-mezmo.yaml
+
 receivers:
   otlp:
     protocols:

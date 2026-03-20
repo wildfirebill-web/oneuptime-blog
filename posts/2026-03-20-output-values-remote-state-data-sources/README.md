@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Remote State, Data Sources, Outputs, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Remote State, Data Source, Outputs, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to read output values from another OpenTofu configuration's remote state using the terraform_remote_state data source.
 
 ---
 
-The `terraform_remote_state` data source lets you read output values from another OpenTofu configuration's state file. This is the standard way to share infrastructure values between separate OpenTofu configurations — for example, reading VPC IDs from a networking configuration in an application configuration.
+The `terraform_remote_state` data source lets you read output values from another OpenTofu configuration's state file. This is the standard way to share infrastructure values between separate OpenTofu configurations - for example, reading VPC IDs from a networking configuration in an application configuration.
 
 ---
 
@@ -16,7 +16,7 @@ The `terraform_remote_state` data source lets you read output values from anothe
 
 Instead of hardcoding IDs or duplicating resources, reference the outputs of a separate infrastructure configuration:
 
-```
+```text
 networking-config/
   → outputs: vpc_id, subnet_ids
   → state stored in s3://my-state/networking.tfstate
@@ -31,7 +31,7 @@ application-config/
 ## Configure the Remote State Data Source
 
 ```hcl
-# In your application configuration — read from networking state
+# In your application configuration - read from networking state
 
 data "terraform_remote_state" "networking" {
   backend = "s3"
@@ -44,6 +44,7 @@ data "terraform_remote_state" "networking" {
 }
 
 # Now reference the networking configuration's outputs
+
 resource "aws_eks_cluster" "main" {
   name = "my-cluster"
 
@@ -59,7 +60,7 @@ resource "aws_eks_cluster" "main" {
 ## Example: Multi-Tier Architecture
 
 ```hcl
-# infrastructure.tf — app config reading from base infra state
+# infrastructure.tf - app config reading from base infra state
 
 # Read the base infrastructure state (VPC, subnets)
 data "terraform_remote_state" "base" {

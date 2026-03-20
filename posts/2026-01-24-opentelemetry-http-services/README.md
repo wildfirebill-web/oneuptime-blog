@@ -48,6 +48,7 @@ For Node.js applications using Express, OpenTelemetry provides automatic instrum
 
 ```bash
 # Install core OpenTelemetry packages
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/auto-instrumentations-node \
   @opentelemetry/exporter-trace-otlp-http \

@@ -60,6 +60,7 @@ Update DNS with low TTL and split traffic:
 
 ```bash
 # Add new LB IP as secondary DNS record
+
 # Keep old NodePort/LB as primary
 # Monitor error rates
 

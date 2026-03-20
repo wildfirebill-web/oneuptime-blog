@@ -24,6 +24,7 @@ Apache on RHEL ships with three Multi-Processing Modules. Check which one is act
 
 ```bash
 # Check the current MPM
+
 httpd -V | grep MPM
 ```
 

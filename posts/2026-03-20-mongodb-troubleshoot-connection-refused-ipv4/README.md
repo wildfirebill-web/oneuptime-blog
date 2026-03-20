@@ -1,4 +1,4 @@
-# How to Troubleshoot MongoDB "Connection Refused" on IPv4
+# How to Troubleshoot MongoDB 'Connection Refused' on IPv4
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ MongoDB "Connection refused" errors on IPv4 usually mean the server isn't listen
 
 ```bash
 # Step 1: Is mongod running?
+
 sudo systemctl status mongod
 sudo systemctl start mongod   # If not running
 
@@ -48,7 +49,7 @@ sudo tail -50 /var/log/mongodb/mongod.log
 ```bash
 # Check current bindIp
 sudo grep bindIp /etc/mongod.conf
-# If: bindIp: 127.0.0.1  — only localhost
+# If: bindIp: 127.0.0.1  - only localhost
 
 # Fix:
 sudo nano /etc/mongod.conf
@@ -93,7 +94,7 @@ mongosh "mongodb://username:password@10.0.0.5:27017/dbname"
 
 # Or check what auth is set:
 sudo grep -A5 "security:" /etc/mongod.conf
-# If authorization: enabled — must provide credentials
+# If authorization: enabled - must provide credentials
 
 # Error: "Authentication failed"
 # Check user exists:
@@ -120,4 +121,4 @@ mongosh "mongodb://10.0.0.5:27017" --verbose 2>&1 | head -20
 
 ## Conclusion
 
-MongoDB connection failures on IPv4 follow a clear diagnostic path: check if mongod is running, verify `bindIp` includes the target IP, test port reachability with `nc`, check firewall rules, and inspect the MongoDB log. Authentication failures are separate from connection failures—if you reach the port but get auth errors, the networking is fine and the issue is credentials or user configuration.
+MongoDB connection failures on IPv4 follow a clear diagnostic path: check if mongod is running, verify `bindIp` includes the target IP, test port reachability with `nc`, check firewall rules, and inspect the MongoDB log. Authentication failures are separate from connection failures-if you reach the port but get auth errors, the networking is fine and the issue is credentials or user configuration.

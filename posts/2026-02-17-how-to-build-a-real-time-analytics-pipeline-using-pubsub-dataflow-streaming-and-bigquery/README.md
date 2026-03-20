@@ -33,6 +33,7 @@ Create the topic and subscription for your event stream:
 
 ```bash
 # Create the main events topic
+
 gcloud pubsub topics create user-events \
   --message-retention-duration=1d
 

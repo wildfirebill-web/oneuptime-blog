@@ -1,8 +1,8 @@
-# How to Test Variable Validation Rules in OpenTofu
+# How to Test Variable Validation Rules in OpenTofu - Rules
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Testing, Variable Validation, Infrastructure as Code, tofu test
+Tags: OpenTofu, Terraform, Testing, Variable Validation, Infrastructure as Code, Tofu test
 
 Description: Learn how to write tests that verify variable validation rules in OpenTofu reject invalid inputs and accept valid ones using the native tofu test framework.
 
@@ -14,6 +14,7 @@ OpenTofu's built-in `tofu test` command supports `expect_failures` blocks that l
 
 ```hcl
 # variables.tf
+
 variable "instance_type" {
   type        = string
   description = "EC2 instance type"

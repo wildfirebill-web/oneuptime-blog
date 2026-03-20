@@ -14,6 +14,7 @@ Static routes in NetworkManager are stored per-connection in `ipv4.routes`. They
 
 ```bash
 # Add a route to 192.168.50.0/24 via gateway 10.0.0.2
+
 nmcli connection modify "Wired connection 1" \
     +ipv4.routes "192.168.50.0/24 10.0.0.2"
 

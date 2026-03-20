@@ -27,6 +27,7 @@ Verify your setup:
 
 ```bash
 # Confirm Flux is operational
+
 flux check
 
 # List suspended resources to see what needs resuming
@@ -302,7 +303,7 @@ Be aware that if many changes accumulated while the resource was suspended, the 
 
 ## Troubleshooting
 
-### Resource Fails to Reconcile After Resumption
+Resource Fails to Reconcile After Resumption
 
 If a resource enters a failed state after being resumed:
 

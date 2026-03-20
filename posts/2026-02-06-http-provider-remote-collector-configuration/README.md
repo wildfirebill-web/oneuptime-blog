@@ -30,6 +30,7 @@ Enable the HTTP provider in your collector configuration:
 
 ```yaml
 # collector-config.yaml
+
 # Base configuration with HTTP provider
 providers:
   http:

@@ -27,6 +27,7 @@ Verify the roles and user assignments are in place:
 
 ```bash
 # List all roles
+
 etcdctl --endpoints=https://etcd:2379 \
   --cacert=/etc/etcd/ca.crt --cert=/etc/etcd/root.crt --key=/etc/etcd/root.key \
   role list

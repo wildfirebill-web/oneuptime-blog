@@ -24,6 +24,7 @@ Install HAProxy on the load balancer node to distribute API server traffic:
 
 ```bash
 # On the load balancer node
+
 sudo dnf install haproxy -y
 
 # Configure HAProxy for Kubernetes API server

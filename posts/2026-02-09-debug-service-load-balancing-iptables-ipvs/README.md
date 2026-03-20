@@ -26,6 +26,7 @@ First, identify which mode your cluster uses:
 
 ```bash
 # Check kube-proxy config
+
 kubectl get configmap kube-proxy -n kube-system -o yaml | grep mode
 
 # Or check kube-proxy logs

@@ -40,6 +40,7 @@ Install OpenYurt using the official installer:
 
 ```bash
 # Download yurtadm
+
 wget https://github.com/openyurtio/openyurt/releases/download/v1.4.0/yurtadm
 chmod +x yurtadm
 sudo mv yurtadm /usr/local/bin/

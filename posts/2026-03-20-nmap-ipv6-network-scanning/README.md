@@ -8,12 +8,13 @@ Description: Use nmap with IPv6 support to scan hosts, discover open ports, dete
 
 ## Introduction
 
-nmap is the industry-standard network scanner that fully supports IPv6 with the `-6` flag. IPv6 scanning differs from IPv4 scanning because `/64` subnets contain billions of addresses — making subnet sweeps impractical. Effective IPv6 scanning uses targeted lists, multicast probes, and NDP-based discovery instead.
+nmap is the industry-standard network scanner that fully supports IPv6 with the `-6` flag. IPv6 scanning differs from IPv4 scanning because `/64` subnets contain billions of addresses - making subnet sweeps impractical. Effective IPv6 scanning uses targeted lists, multicast probes, and NDP-based discovery instead.
 
 ## Basic IPv6 Host Scanning
 
 ```bash
 # Scan a specific IPv6 address
+
 nmap -6 2001:db8::1
 
 # Scan with verbose output

@@ -18,6 +18,7 @@ The simplest form of a loop-based package install looks like this. We define a l
 
 ```yaml
 # install-packages.yml
+
 # Installs a list of common packages on Debian/Ubuntu systems
 - name: Install common packages on Debian
   hosts: webservers

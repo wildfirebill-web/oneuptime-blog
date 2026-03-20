@@ -45,6 +45,7 @@ def batch_update_metadata(bucket_name, prefix, metadata_updates):
     print(f"Total updated: {len(blobs)} objects")
 
 # Update metadata on all objects in a prefix
+
 batch_update_metadata(
     "my-bucket",
     "data/2026/",

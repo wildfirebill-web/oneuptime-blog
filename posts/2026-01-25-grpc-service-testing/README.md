@@ -616,6 +616,7 @@ Use ghz for gRPC load testing:
 
 ```bash
 # Install ghz
+
 go install github.com/bojand/ghz/cmd/ghz@latest
 
 # Run load test

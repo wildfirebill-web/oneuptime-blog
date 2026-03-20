@@ -8,7 +8,7 @@ Description: Learn how to implement RPKI Route Origin Validation to cryptographi
 
 ## What Is RPKI?
 
-Resource Public Key Infrastructure (RPKI) is a cryptographic framework that allows IP address holders to create Route Origin Authorizations (ROAs)—digitally signed records stating which AS is authorized to originate a specific prefix. BGP routers validate incoming routes against the RPKI cache and can reject INVALID routes.
+Resource Public Key Infrastructure (RPKI) is a cryptographic framework that allows IP address holders to create Route Origin Authorizations (ROAs)-digitally signed records stating which AS is authorized to originate a specific prefix. BGP routers validate incoming routes against the RPKI cache and can reject INVALID routes.
 
 RPKI validation states:
 - **Valid:** The prefix/AS pair matches a ROA
@@ -35,6 +35,7 @@ Install Routinator (an open-source RPKI validator) on a Linux server:
 
 ```bash
 # Install Routinator via package manager (Debian/Ubuntu)
+
 sudo apt-get install routinator
 
 # Initialize the TAL (Trust Anchor Locator) files
@@ -53,7 +54,7 @@ Routinator downloads ROAs from all five RIRs and serves them to routers via the 
 
 Configure the router to connect to your Routinator server:
 
-```
+```text
 ! Define the RPKI cache server (Routinator)
 router bgp 65001
  bgp rpki server tcp 192.168.1.100 port 3323 refresh 600
@@ -61,7 +62,7 @@ router bgp 65001
 
 Verify the connection:
 
-```
+```text
 Router# show ip bgp rpki servers
 
 BGP RPKI cache-server 192.168.1.100 port 3323:
@@ -75,7 +76,7 @@ BGP RPKI cache-server 192.168.1.100 port 3323:
 
 Enable validation for the BGP neighbor and configure behavior for each validation state:
 
-```
+```text
 router bgp 65001
  ! Enable validation
  bgp bestpath prefix-validate allow-invalid
@@ -90,7 +91,7 @@ router bgp 65001
 
 Use route maps to apply policy based on the RPKI validation state:
 
-```
+```text
 ! Drop INVALID routes - never install them
 route-map RPKI_POLICY deny 10
  match rpki invalid
@@ -134,7 +135,7 @@ This protects your prefix from being hijacked by unauthorized ASes.
 
 ## Step 7: Monitor Validation Results
 
-```
+```text
 ! Check validation state for a specific prefix
 Router# show ip bgp 198.51.100.0/24
 

@@ -167,6 +167,7 @@ import time
 from functools import wraps
 
 # Configure the meter provider
+
 exporter = OTLPMetricExporter(endpoint="https://otel.oneuptime.com/v1/metrics")
 reader = PeriodicExportingMetricReader(exporter, export_interval_millis=60000)
 provider = MeterProvider(metric_readers=[reader])

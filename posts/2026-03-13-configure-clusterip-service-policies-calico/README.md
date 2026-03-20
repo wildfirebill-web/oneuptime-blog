@@ -67,6 +67,7 @@ spec:
 
 ```bash
 # Apply the policy
+
 calicoctl apply -f configure-clusterip-services.yaml
 
 # Verify traffic behavior

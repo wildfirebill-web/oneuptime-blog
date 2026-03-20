@@ -674,7 +674,7 @@ spec:
         # ... rest of container spec
 ```
 
-## Resource Management
+Resource Management
 
 Set appropriate resource requests and limits for DaemonSet pods:
 
@@ -737,6 +737,7 @@ Monitor your collector DaemonSet with these techniques:
 
 ```yaml
 # ServiceMonitor for Prometheus Operator
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

@@ -22,6 +22,7 @@ We will use both the AWS and PagerDuty providers:
 
 ```hcl
 # main.tf - Configure providers for incident management
+
 terraform {
   required_version = ">= 1.5.0"
 

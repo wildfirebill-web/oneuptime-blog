@@ -35,6 +35,7 @@ Start here. Most problems show up in the SSSD logs.
 
 ```bash
 # Check if SSSD is running
+
 sudo systemctl status sssd
 
 # If SSSD is not running, check why

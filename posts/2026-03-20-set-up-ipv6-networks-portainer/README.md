@@ -1,4 +1,4 @@
-# How to Set Up IPv6 Networks in Portainer
+# How to Set Up IPv6 Networks in Portainer - Set
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ Docker networking is fundamental to container communication. Portainer provides 
 
 ```bash
 # Bridge network (most common)
+
 docker network create \
   --driver bridge \
   --subnet 172.20.0.0/16 \

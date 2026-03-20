@@ -35,6 +35,7 @@ When you deploy a new version, you can assign a tag and route zero production tr
 
 ```bash
 # Deploy a new revision with a tag, but send no production traffic
+
 gcloud run deploy my-service \
   --image=us-central1-docker.pkg.dev/MY_PROJECT/my-repo/my-app:v2 \
   --region=us-central1 \

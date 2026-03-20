@@ -73,6 +73,7 @@ Data tiering uses r6gd node types. Create a cluster with the appropriate setting
 
 ```bash
 # Create a parameter group optimized for data tiering
+
 aws elasticache create-cache-parameter-group \
   --cache-parameter-group-name redis-data-tiering \
   --cache-parameter-group-family redis7 \

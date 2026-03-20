@@ -92,6 +92,7 @@ Grafana's native timeline panel can display this data. You need to transform the
 
 ```yaml
 # In Grafana, use a table panel with timeline visualization
+
 # The query should return data in this format:
 # | timestamp | thread_id | state        |
 # |-----------|-----------|--------------|

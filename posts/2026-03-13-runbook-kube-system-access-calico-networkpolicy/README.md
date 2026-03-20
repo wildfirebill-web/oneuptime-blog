@@ -32,6 +32,7 @@ Rapid DNS restoration is the priority. Once DNS is working, other kube-system se
 
 ```bash
 # Find namespaces where DNS is failing
+
 for NS in $(kubectl get namespaces -o jsonpath='{.items[*].metadata.name}'); do
   kubectl run dns-check --image=busybox -n $NS --restart=Never --rm -i \
     --timeout=10s -- nslookup kubernetes.default 2>&1 | grep -q "Address" \

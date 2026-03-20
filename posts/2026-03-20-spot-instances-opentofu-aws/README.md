@@ -104,6 +104,7 @@ Configure a termination handler to drain gracefully:
 
 ```bash
 # Check for spot interruption notice every 5 seconds
+
 while true; do
   STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
     http://169.254.169.254/latest/meta-data/spot/termination-time)

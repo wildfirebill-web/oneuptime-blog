@@ -65,6 +65,7 @@ Automation scripts can control Transmission via its JSON-RPC API:
 
 ```bash
 # Add a torrent by URL using curl
+
 curl -s \
   -u admin:changeme \
   -H "X-Transmission-Session-Id: $(curl -s -u admin:changeme http://localhost:9091/transmission/rpc | grep -oP 'X-Transmission-Session-Id: \K[^<]+')" \

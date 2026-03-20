@@ -28,6 +28,7 @@ Store the policy JSON in a ConfigMap so it is version-controlled and diffable in
 
 ```yaml
 # infrastructure/logging/ilm-policy-configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

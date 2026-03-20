@@ -18,6 +18,7 @@ Here is the basic syntax:
 
 ```yaml
 # Load vars/production.yml instead of (or alongside) vars/main.yml
+
 - hosts: webservers
   tasks:
     - name: Include nginx role with production variables

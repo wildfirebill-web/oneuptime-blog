@@ -17,12 +17,13 @@ Duplicate Address Detection (DAD) is an IPv6 mechanism that verifies a candidate
 
 2. If no response is received within 1 second, the address is unique and gets assigned.
 
-3. If a **Neighbor Advertisement** is received, there is a duplicate — the address is NOT assigned.
+3. If a **Neighbor Advertisement** is received, there is a duplicate - the address is NOT assigned.
 
 ## Display Filters for DAD
 
 ```wireshark
 # Show ALL DAD-related Neighbor Solicitations
+
 # DAD NS packets have source address ::
 icmpv6.type == 135 && ipv6.src == ::
 
@@ -56,7 +57,7 @@ In the packet timeline:
 
 A successful DAD for address `2001:db8::10`:
 
-```
+```text
 Time  | Src         | Dst                  | Info
 0.000 | ::          | ff02::1:ff00:0010    | NS target=2001:db8::10
 1.000 | [silence]                          | No reply -> address is unique!
@@ -65,7 +66,7 @@ Time  | Src         | Dst                  | Info
 
 ## DAD Failure Sequence (Conflict)
 
-```
+```text
 Time  | Src              | Dst               | Info
 0.000 | ::               | ff02::1:ff00:0010 | NS target=2001:db8::10 (DAD probe)
 0.005 | 2001:db8::10     | ff02::1           | NA (conflict! address already in use)

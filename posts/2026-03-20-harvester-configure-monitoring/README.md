@@ -8,7 +8,7 @@ Description: Learn how to set up and configure Harvester's built-in monitoring s
 
 ## Introduction
 
-Harvester includes a built-in monitoring stack based on Prometheus and Grafana. This monitoring solution collects metrics from all cluster components — nodes, VMs, storage, and networking — and provides pre-built dashboards for visualization. This guide covers enabling monitoring, accessing Grafana dashboards, configuring alerting rules, and integrating with external monitoring systems.
+Harvester includes a built-in monitoring stack based on Prometheus and Grafana. This monitoring solution collects metrics from all cluster components - nodes, VMs, storage, and networking - and provides pre-built dashboards for visualization. This guide covers enabling monitoring, accessing Grafana dashboards, configuring alerting rules, and integrating with external monitoring systems.
 
 ## Harvester Monitoring Components
 
@@ -32,6 +32,7 @@ Harvester includes a built-in monitoring stack based on Prometheus and Grafana. 
 
 ```yaml
 # harvester-monitoring.yaml
+
 # Enable and configure Harvester monitoring
 
 apiVersion: harvesterhci.io/v1beta1

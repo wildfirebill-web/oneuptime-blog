@@ -37,6 +37,7 @@ If you have not provisioned Apigee yet:
 
 ```bash
 # Enable the Apigee API
+
 gcloud services enable apigee.googleapis.com --project YOUR_PROJECT_ID
 
 # Provision an Apigee organization (this takes 30-60 minutes)

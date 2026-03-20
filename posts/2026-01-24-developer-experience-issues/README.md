@@ -57,6 +57,7 @@ This script collects basic DevEx metrics from git and CI systems.
 ```python
 #!/usr/bin/env python3
 # scripts/devex_metrics.py
+
 # Collect developer experience metrics from your development workflow
 
 import subprocess

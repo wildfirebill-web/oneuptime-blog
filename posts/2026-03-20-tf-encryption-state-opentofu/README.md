@@ -24,8 +24,9 @@ graph LR
 
 ```hcl
 # encryption.tf or main.tf
+
 terraform {
-  # State encryption — OpenTofu 1.7+ feature
+  # State encryption - OpenTofu 1.7+ feature
   encryption {
     # Key provider: AWS KMS
     key_provider "aws_kms" "main" {
@@ -67,7 +68,7 @@ terraform {
 ## KMS Key Configuration
 
 ```hcl
-# kms.tf — create the encryption key before enabling state encryption
+# kms.tf - create the encryption key before enabling state encryption
 resource "aws_kms_key" "state_encryption" {
   description             = "OpenTofu state encryption key for ${var.project}"
   enable_key_rotation     = true
@@ -212,8 +213,8 @@ cat /tmp/state.json  # Should show encrypted binary data, not JSON
 
 ## Best Practices
 
-- Create the KMS key separately from the encrypted state — if the KMS key and state are managed in the same configuration, you need an unencrypted state to create the key, creating a bootstrapping problem.
-- Enable key rotation on KMS keys used for state encryption — `enable_key_rotation = true` automatically rotates the key annually without needing to re-encrypt state.
-- Use the `fallback` block when migrating from unencrypted state — without it, OpenTofu will fail to read the existing state when encryption is first enabled.
+- Create the KMS key separately from the encrypted state - if the KMS key and state are managed in the same configuration, you need an unencrypted state to create the key, creating a bootstrapping problem.
+- Enable key rotation on KMS keys used for state encryption - `enable_key_rotation = true` automatically rotates the key annually without needing to re-encrypt state.
+- Use the `fallback` block when migrating from unencrypted state - without it, OpenTofu will fail to read the existing state when encryption is first enabled.
 - Store passphrase-based encryption keys in a secrets manager (AWS Secrets Manager, HashiCorp Vault) rather than hardcoding them or storing in `.tfvars` files.
-- Grant KMS key access only to the specific IAM roles that run OpenTofu — broad KMS permissions defeat the purpose of state encryption.
+- Grant KMS key access only to the specific IAM roles that run OpenTofu - broad KMS permissions defeat the purpose of state encryption.

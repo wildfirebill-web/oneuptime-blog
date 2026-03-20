@@ -38,6 +38,7 @@ Benefits include:
 
 ```yaml
 # /etc/prometheus/rules/recording-rules.yml
+
 groups:
   - name: example-recording-rules
     interval: 30s
@@ -148,7 +149,7 @@ groups:
           sum(rate(http_request_duration_seconds_count[5m])) by (service)
 ```
 
-### Resource Utilization
+Resource Utilization
 
 ```yaml
 groups:

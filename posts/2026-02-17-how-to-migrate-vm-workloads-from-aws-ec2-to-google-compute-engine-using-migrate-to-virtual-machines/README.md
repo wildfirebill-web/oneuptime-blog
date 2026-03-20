@@ -44,6 +44,7 @@ flowchart LR
 
 ```bash
 # Enable the VM Migration API and related services
+
 gcloud services enable vmmigration.googleapis.com \
   compute.googleapis.com \
   servicemanagement.googleapis.com \

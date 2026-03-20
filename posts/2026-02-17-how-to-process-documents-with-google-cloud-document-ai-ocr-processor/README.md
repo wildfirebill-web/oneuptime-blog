@@ -31,6 +31,7 @@ First, enable the Document AI API and create a processor.
 
 ```bash
 # Enable the Document AI API
+
 gcloud services enable documentai.googleapis.com
 
 # Install the Python client library

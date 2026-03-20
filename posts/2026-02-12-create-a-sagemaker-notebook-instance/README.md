@@ -18,6 +18,7 @@ You need an IAM role for SageMaker. If you haven't created one yet:
 
 ```bash
 # Create the SageMaker execution role
+
 aws iam create-role \
   --role-name SageMakerNotebookRole \
   --assume-role-policy-document '{

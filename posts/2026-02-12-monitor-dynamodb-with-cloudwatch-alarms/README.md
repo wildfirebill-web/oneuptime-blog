@@ -40,6 +40,7 @@ Here's how to set up throttle alarms for both reads and writes.
 
 ```bash
 # Alarm for read throttle events
+
 # Triggers when any read throttling occurs in a 5-minute period
 aws cloudwatch put-metric-alarm \
   --alarm-name "DynamoDB-Users-ReadThrottleEvents" \

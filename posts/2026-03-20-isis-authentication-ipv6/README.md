@@ -20,7 +20,7 @@ IS-IS authentication prevents rogue routers from injecting false LSPs into the n
 
 ## Cisco IOS IS-IS Authentication
 
-```
+```text
 ! Step 1: Create a key chain
 Router(config)# key chain ISIS_AUTH
 Router(config-keychain)# key 1
@@ -42,8 +42,9 @@ Router(config-router)# authentication key-chain ISIS_AUTH level-2
 
 ## Juniper IS-IS Authentication
 
-```
+```text
 # Interface-level authentication (Hello PDUs)
+
 set protocols isis interface ge-0/0/0.0 level 2 hello-authentication-key "secretkey"
 set protocols isis interface ge-0/0/0.0 level 2 hello-authentication-type md5
 
@@ -82,7 +83,7 @@ write memory
 
 SHA-256 is more secure than MD5 and is supported on Cisco IOS-XR, FRRouting, and newer Juniper platforms:
 
-```
+```text
 ! Cisco IOS-XR
 router isis CORE
  authentication keychain ISIS_SHA_KEY hmac-sha-256
@@ -91,7 +92,7 @@ router isis CORE
 
 ## Verifying Authentication
 
-```
+```text
 ! Cisco: Check authentication is active
 Router# show isis interface GigabitEthernet0/0 | include Auth
   Authentication mode: MD5, key-chain: ISIS_AUTH
@@ -116,7 +117,7 @@ vtysh -c "show isis neighbor"
 
 To add authentication without dropping adjacencies:
 
-```
+```text
 ! Step 1: Configure authentication in "send-only" mode first
 ! This sends authenticated PDUs but accepts both authenticated and unauthenticated
 

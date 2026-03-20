@@ -24,6 +24,7 @@ This depth of validation is important for production deployments where subtle mi
 
 ```bash
 # Check node graph statistics
+
 kubectl exec -n calico-vpp-dataplane ds/calico-vpp-node -c vpp -- \
   vppctl show node counters
 

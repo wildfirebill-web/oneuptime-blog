@@ -31,6 +31,7 @@ Casdoor is an open-source identity and access management platform with a web UI,
 CASDOOR_URL="https://casdoor.example.com"
 
 # Casdoor discovery URL
+
 curl "$CASDOOR_URL/.well-known/openid-configuration" | \
   python3 -c "
 import sys, json

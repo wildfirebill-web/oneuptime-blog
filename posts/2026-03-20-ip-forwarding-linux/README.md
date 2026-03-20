@@ -20,6 +20,7 @@ IP forwarding allows a Linux host to forward packets between network interfaces.
 
 ```bash
 # Check if IPv4 forwarding is enabled
+
 cat /proc/sys/net/ipv4/ip_forward
 # 0 = disabled, 1 = enabled
 

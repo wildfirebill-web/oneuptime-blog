@@ -43,6 +43,7 @@ Create a `.gitlab-ci.yml` file in the root of your application repository. This 
 
 ```yaml
 # .gitlab-ci.yml
+
 # Pipeline to build and push container images for Flux CD
 
 stages:

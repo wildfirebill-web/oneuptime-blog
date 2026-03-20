@@ -13,7 +13,7 @@ Skipper is a flexible HTTP routing engine and ingress controller developed by Za
 ## Install Skipper Ingress with IPv6
 
 ```yaml
-# skipper-deployment.yaml — Skipper ingress with IPv6
+# skipper-deployment.yaml - Skipper ingress with IPv6
 
 apiVersion: apps/v1
 kind: Deployment
@@ -52,7 +52,7 @@ spec:
 ```
 
 ```yaml
-# skipper-service.yaml — Dual-stack LoadBalancer service
+# skipper-service.yaml - Dual-stack LoadBalancer service
 
 apiVersion: v1
 kind: Service
@@ -115,7 +115,7 @@ spec:
 ## RouteGroup for Advanced IPv6 Routing
 
 ```yaml
-# routegroup-ipv6.yaml — Zalando RouteGroup CRD
+# routegroup-ipv6.yaml - Zalando RouteGroup CRD
 
 apiVersion: zalando.org/v1
 kind: RouteGroup
@@ -159,6 +159,7 @@ spec:
 
 ```eskip
 # Skipper Eskip route files (for manual route configuration)
+
 # /etc/skipper/routes.eskip
 
 # Route IPv6 clients to a specific backend

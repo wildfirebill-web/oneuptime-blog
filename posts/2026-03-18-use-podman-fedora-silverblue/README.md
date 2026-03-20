@@ -112,6 +112,7 @@ rpm-ostree install distrobox
 systemctl reboot
 
 # Create an Ubuntu-based environment
+
 distrobox create --name ubuntu-dev --image docker.io/library/ubuntu:24.04
 distrobox enter ubuntu-dev
 

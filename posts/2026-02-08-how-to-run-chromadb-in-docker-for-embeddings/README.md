@@ -22,6 +22,7 @@ Run ChromaDB as a standalone server.
 
 ```bash
 # Start ChromaDB server
+
 docker run -d \
   --name chromadb \
   -p 8000:8000 \

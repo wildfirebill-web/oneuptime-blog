@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Subnetting, Tools, Networking, Address Planning
 
-Description: Learn how to use IPv6 subnet calculators — both online tools and Python scripts — to compute subnet ranges, host counts, and prefix relationships.
+Description: Learn how to use IPv6 subnet calculators - both online tools and Python scripts - to compute subnet ranges, host counts, and prefix relationships.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ IPv6 subnetting involves 128-bit arithmetic that is tedious to do by hand. Subne
 
 ```bash
 # Install sipcalc (powerful IPv6 subnet calculator)
+
 sudo apt install sipcalc      # Debian/Ubuntu
 brew install sipcalc           # macOS
 

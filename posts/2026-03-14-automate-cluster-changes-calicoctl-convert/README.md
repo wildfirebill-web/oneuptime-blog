@@ -28,6 +28,7 @@ Convert all Kubernetes NetworkPolicies from a cluster to Calico format:
 ```bash
 #!/bin/bash
 # auto-convert-all.sh
+
 # Automatically converts all K8s NetworkPolicies to Calico format
 
 set -euo pipefail

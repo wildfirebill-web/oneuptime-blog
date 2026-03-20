@@ -18,6 +18,7 @@ Before doing anything else, check that the peering is actually connected on both
 
 ```bash
 # Check peering status on VNet A
+
 az network vnet peering show \
   --resource-group rgVNetA \
   --vnet-name vnetA \

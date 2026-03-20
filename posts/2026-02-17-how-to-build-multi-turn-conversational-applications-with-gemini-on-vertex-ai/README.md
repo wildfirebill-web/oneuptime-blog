@@ -25,6 +25,7 @@ import vertexai
 from vertexai.generative_models import GenerativeModel
 
 # Initialize the Vertex AI environment
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Create a model instance

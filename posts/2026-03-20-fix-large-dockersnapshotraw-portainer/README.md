@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Troubleshooting, Performance, Snapshots, BoltDB, Optimization
+Tags: Portainer, Troubleshooting, Performance, Snapshot, BoltDB, Optimization
 
 Description: Learn how to reduce oversized DockerSnapshotRaw payloads in the Portainer database that cause slow UI rendering and high memory usage during snapshot processing.
 
@@ -23,6 +23,7 @@ Portainer stores a full snapshot of each Docker environment in its BoltDB databa
 
 ```bash
 # Check the Portainer database size
+
 docker run --rm -v portainer_data:/data alpine ls -lh /data/portainer.db
 
 # For more detail, use bolt CLI to inspect bucket sizes

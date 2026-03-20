@@ -55,6 +55,7 @@ All components run in a single process. Ideal for development, testing, or small
 
 ```yaml
 # mimir-monolithic.yaml
+
 # Single binary deployment for small-scale environments
 # Suitable for development and testing (up to 1M active series)
 apiVersion: apps/v1

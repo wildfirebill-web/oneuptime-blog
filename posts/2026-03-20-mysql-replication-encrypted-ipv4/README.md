@@ -15,7 +15,8 @@ MySQL replication over plain TCP exposes your data to network-level interception
 Use MySQL's built-in SSL generator or openssl:
 
 ```bash
-# On the primary server — generate CA, server cert, and client cert
+# On the primary server - generate CA, server cert, and client cert
+
 mysql_ssl_rsa_setup --uid=mysql
 
 # Or manually with openssl

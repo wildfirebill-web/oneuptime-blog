@@ -24,6 +24,7 @@ When SUID is set on an executable, it runs with the permissions of the file owne
 
 ```bash
 # passwd has SUID set - it runs as root so users can change their password
+
 ls -l /usr/bin/passwd
 # -rwsr-xr-x. 1 root root 32648 ... /usr/bin/passwd
 ```

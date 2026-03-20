@@ -46,6 +46,7 @@ The Cluster Autoscaler needs permissions to describe and modify Auto Scaling Gro
 
 ```bash
 # Tag ASGs so the Cluster Autoscaler can discover them
+
 aws autoscaling create-or-update-tags \
   --tags \
     ResourceId=my-worker-asg \

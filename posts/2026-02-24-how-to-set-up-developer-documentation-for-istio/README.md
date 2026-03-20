@@ -303,6 +303,7 @@ If you have custom CRDs, generate reference documentation automatically:
 
 ```bash
 # Using crd-ref-docs
+
 crd-ref-docs \
   --source-path=./api/v1/ \
   --config=./docs-config.yaml \

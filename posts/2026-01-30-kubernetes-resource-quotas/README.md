@@ -35,6 +35,7 @@ Start with the fundamentals: CPU and memory limits. This quota restricts how muc
 
 ```yaml
 # compute-quota.yaml
+
 # This quota limits total CPU and memory across all pods in the namespace
 apiVersion: v1
 kind: ResourceQuota

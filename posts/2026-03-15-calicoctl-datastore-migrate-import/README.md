@@ -84,6 +84,7 @@ fi
 echo "=== Pre-Import Validation ==="
 
 # Check file exists and is not empty
+
 if [ ! -s "$EXPORT_FILE" ]; then
   echo "FAIL: Export file is empty or does not exist"
   exit 1

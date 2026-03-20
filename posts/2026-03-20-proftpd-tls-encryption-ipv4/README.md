@@ -14,6 +14,7 @@ Plain FTP transmits credentials and data in cleartext. FTPS (FTP over TLS) encry
 
 ```bash
 # Enable mod_tls module (usually bundled with ProFTPD)
+
 apt install proftpd-mod-crypto -y  # Debian/Ubuntu
 ```
 

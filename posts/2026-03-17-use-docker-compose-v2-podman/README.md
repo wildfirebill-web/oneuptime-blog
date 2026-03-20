@@ -18,6 +18,7 @@ Docker Compose v2 is the Go-based rewrite of Docker Compose that runs as a Docke
 
 ```bash
 # Download the Docker Compose v2 plugin
+
 DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 mkdir -p $DOCKER_CONFIG/cli-plugins
 

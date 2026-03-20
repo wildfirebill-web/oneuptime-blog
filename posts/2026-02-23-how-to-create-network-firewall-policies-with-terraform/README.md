@@ -26,6 +26,7 @@ Create a VPC with firewall, public, and private subnets:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

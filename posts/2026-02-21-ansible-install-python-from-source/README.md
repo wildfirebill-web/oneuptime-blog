@@ -20,6 +20,7 @@ Ensure your target hosts have SSH access and a base Python installation:
 
 ```ini
 # inventory/hosts
+
 [app_servers]
 app01 ansible_host=10.0.1.10
 app02 ansible_host=10.0.1.11

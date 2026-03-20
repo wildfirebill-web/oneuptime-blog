@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, merge, Maps, Functions, Configuration
+Tags: OpenTofu, Terraform, Merge, Maps, Functions, Configuration
 
 Description: Learn how to merge multiple maps with priority ordering in OpenTofu using the merge function, enabling layered configuration defaults with environment and service-level overrides.
 
@@ -42,6 +42,7 @@ locals {
 
 ```hcl
 # Global defaults applied to every resource
+
 locals {
   global_defaults = {
     instance_type       = "t3.micro"
@@ -264,4 +265,4 @@ resource "aws_eks_node_group" "app" {
 
 ## Summary
 
-The `merge` function is the foundation of layered configuration management in OpenTofu. By ordering arguments from lowest to highest priority — global defaults, environment overrides, service overrides, caller-provided overrides — each layer can selectively override only the settings it cares about. The conditional override pattern using ternary expressions with empty maps (`var.x != null ? { key = var.x } : {}`) enables optional overrides without resorting to complex conditionals.
+The `merge` function is the foundation of layered configuration management in OpenTofu. By ordering arguments from lowest to highest priority - global defaults, environment overrides, service overrides, caller-provided overrides - each layer can selectively override only the settings it cares about. The conditional override pattern using ternary expressions with empty maps (`var.x != null ? { key = var.x } : {}`) enables optional overrides without resorting to complex conditionals.

@@ -37,7 +37,7 @@ K3s is a lightweight, certified Kubernetes distribution that requires significan
 
 ### Cluster Configuration
 
-```
+```text
 Cluster Name:       dev-k3s-cluster
 Kubernetes:         K3s v1.27.x (latest)
 CNI:                Flannel (K3s default, lighter weight)
@@ -47,7 +47,7 @@ CNI:                Flannel (K3s default, lighter weight)
 
 For a simple dev cluster, a combined control-plane/worker node works:
 
-```
+```text
 Pool Name:          all-in-one
 Count:              1 (or 3 for HA)
 Roles:              etcd, Control Plane, Worker
@@ -61,6 +61,7 @@ VM Disk Size:       30 GB
 
 ```yaml
 # k3s-harvester-cluster.yaml
+
 # K3s cluster on Harvester for development workloads
 
 apiVersion: provisioning.cattle.io/v1

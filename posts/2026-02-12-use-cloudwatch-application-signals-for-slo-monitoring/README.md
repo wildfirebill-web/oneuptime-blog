@@ -67,6 +67,7 @@ If you are running on EKS, you can enable Application Signals through the EKS ad
 
 ```bash
 # Enable CloudWatch Application Signals add-on on EKS
+
 aws eks create-addon \
   --cluster-name my-cluster \
   --addon-name amazon-cloudwatch-observability \

@@ -27,6 +27,7 @@ LXD is distributed as a snap package:
 
 ```bash
 # Install LXD snap
+
 sudo snap install lxd
 
 # If upgrading from the older apt package

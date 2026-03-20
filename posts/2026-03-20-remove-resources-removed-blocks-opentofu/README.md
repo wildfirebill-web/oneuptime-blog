@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, removed, Resources, Refactoring, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Removed, Resources, Refactoring, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use removed blocks in OpenTofu to stop managing a resource without destroying it, keeping the infrastructure intact.
 
 ---
 
-When you delete a resource block from your OpenTofu configuration, the next `tofu apply` destroys that resource. Sometimes you want to stop managing a resource without deleting it — for example, when transferring management to another team or configuration. The `removed` block lets you do this cleanly.
+When you delete a resource block from your OpenTofu configuration, the next `tofu apply` destroys that resource. Sometimes you want to stop managing a resource without deleting it - for example, when transferring management to another team or configuration. The `removed` block lets you do this cleanly.
 
 ---
 
@@ -16,12 +16,13 @@ When you delete a resource block from your OpenTofu configuration, the next `tof
 
 ```hcl
 # This resource is in your config:
+
 resource "aws_s3_bucket" "legacy" {
   bucket = "company-legacy-data"
 }
 
 # If you delete this block, the next apply will destroy the bucket!
-# You don't want that — you just want to stop managing it.
+# You don't want that - you just want to stop managing it.
 ```
 
 ---
@@ -37,7 +38,7 @@ removed {
   from = aws_s3_bucket.legacy
 
   lifecycle {
-    destroy = false   # do NOT destroy the resource — just remove from state
+    destroy = false   # do NOT destroy the resource - just remove from state
   }
 }
 ```

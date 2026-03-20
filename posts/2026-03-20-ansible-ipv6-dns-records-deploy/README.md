@@ -12,6 +12,7 @@ Managing IPv6 DNS records with Ansible ensures AAAA records are created, updated
 
 ```yaml
 # tasks/bind-aaaa.yml - Add AAAA records to a BIND zone file
+
 ---
 - name: Add AAAA record to BIND zone file
   ansible.builtin.blockinfile:

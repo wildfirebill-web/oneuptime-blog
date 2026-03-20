@@ -35,6 +35,7 @@ This is the most important alarm for file systems using bursting throughput mode
 
 ```bash
 # Alert when burst credits fall below 1 TB
+
 aws cloudwatch put-metric-alarm \
   --alarm-name "efs-burst-credits-critical" \
   --alarm-description "EFS burst credits below 1 TB - throughput may degrade soon" \

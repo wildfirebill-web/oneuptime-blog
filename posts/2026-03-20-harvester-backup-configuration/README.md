@@ -28,6 +28,7 @@ RKE2 (the Kubernetes distribution in Harvester) supports automated etcd snapshot
 
 ```yaml
 # rke2-server-config.yaml
+
 # Configure RKE2 etcd snapshots on each server node
 # /etc/rancher/rke2/config.yaml
 
@@ -317,4 +318,4 @@ rm -rf ${EXTRACT_DIR}
 
 ## Conclusion
 
-A complete Harvester configuration backup strategy combines etcd snapshots (for rapid cluster recovery), exported Kubernetes resource definitions (for documentation and partial recovery), and node-level configuration files (for OS-level recovery). Store all backups in an external location — preferably S3 or another cloud storage — separate from the Harvester cluster itself. Test your restore procedures regularly; a backup that has never been tested is of uncertain value. With comprehensive configuration backups in place, you can confidently recover from hardware failures, misconfiguration events, or complete cluster loss.
+A complete Harvester configuration backup strategy combines etcd snapshots (for rapid cluster recovery), exported Kubernetes resource definitions (for documentation and partial recovery), and node-level configuration files (for OS-level recovery). Store all backups in an external location - preferably S3 or another cloud storage - separate from the Harvester cluster itself. Test your restore procedures regularly; a backup that has never been tested is of uncertain value. With comprehensive configuration backups in place, you can confidently recover from hardware failures, misconfiguration events, or complete cluster loss.

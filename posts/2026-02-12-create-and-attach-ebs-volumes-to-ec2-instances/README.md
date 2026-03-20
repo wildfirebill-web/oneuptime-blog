@@ -38,6 +38,7 @@ A few things to know upfront:
 
 ```bash
 # Create a 100 GB gp3 volume in us-east-1a
+
 aws ec2 create-volume \
     --volume-type gp3 \
     --size 100 \

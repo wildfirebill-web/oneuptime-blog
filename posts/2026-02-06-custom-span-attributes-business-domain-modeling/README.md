@@ -51,6 +51,7 @@ Use dot-separated namespaces that mirror your business domain. Start with the do
 
 ```text
 # Good: clear hierarchy
+
 order.type
 order.value
 order.item_count

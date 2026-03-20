@@ -16,8 +16,8 @@ The `regex` function in OpenTofu applies a regular expression to a string and re
 regex(pattern, string)
 ```
 
-- **pattern** — a RE2 syntax regular expression
-- **string** — the string to match against
+- **pattern** - a RE2 syntax regular expression
+- **string** - the string to match against
 - Returns the match (string) or captures (list/map)
 
 ## Basic Examples

@@ -1,4 +1,4 @@
-# How to Implement RBAC Best Practices in Rancher
+# How to Implement RBAC Best Practices in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Role-Based Access Control in Rancher operates at two levels: Rancher global RBAC
 
 ## Rancher RBAC Hierarchy
 
-```
+```text
 Global Roles (Rancher-level)
   ├── Cluster Roles (per downstream cluster)
   │   ├── Cluster Owner: full control
@@ -29,6 +29,7 @@ Global Roles (Rancher-level)
 
 ```yaml
 # Custom role for developers - view + deploy, no delete
+
 apiVersion: management.cattle.io/v3
 kind: RoleTemplate
 metadata:

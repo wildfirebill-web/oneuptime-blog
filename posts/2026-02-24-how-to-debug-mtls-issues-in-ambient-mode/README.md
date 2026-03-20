@@ -25,6 +25,7 @@ Verify that mTLS is being used for connections:
 
 ```bash
 # Check from ztunnel metrics
+
 ZTUNNEL=$(kubectl get pods -n istio-system -l app=ztunnel -o jsonpath='{.items[0].metadata.name}')
 
 kubectl exec -n istio-system $ZTUNNEL -- \

@@ -1,4 +1,4 @@
-# How to Optimize Docker Snapshot Intervals for Performance
+# How to Optimize Docker Snapshot Intervals for Performance - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,12 +19,13 @@ Each snapshot captures the full state of a Docker environment:
 - Container resource stats (CPU, memory, network)
 - Stack states and service replica counts
 
-Portainer stores these snapshots in its BoltDB database and serves them to the UI. The UI does not call Docker directly — it reads from the snapshot.
+Portainer stores these snapshots in its BoltDB database and serves them to the UI. The UI does not call Docker directly - it reads from the snapshot.
 
 ## Default and Recommended Intervals
 
 ```bash
 # Default: 60 seconds
+
 portainer/portainer-ce:latest
 # Equivalent to:
 portainer/portainer-ce:latest --snapshot-interval 60

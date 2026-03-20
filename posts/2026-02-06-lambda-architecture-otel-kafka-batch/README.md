@@ -26,6 +26,7 @@ Configure the Collector to send data directly to your query backend for immediat
 
 ```yaml
 # speed-layer-collector.yaml
+
 receivers:
   otlp:
     protocols:

@@ -34,6 +34,7 @@ from aws_lambda_powertools import Metrics
 from aws_lambda_powertools.metrics import MetricUnit
 
 # Create a Metrics instance with namespace and service
+
 metrics = Metrics(namespace="OrderService", service="order-processor")
 
 @metrics.log_metrics(capture_cold_start_metric=True)

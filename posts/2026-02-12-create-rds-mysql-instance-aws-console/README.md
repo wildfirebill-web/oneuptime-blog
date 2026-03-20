@@ -147,6 +147,7 @@ Test the connection with the MySQL client.
 
 ```bash
 # Connect using the mysql client
+
 mysql -h my-app-mysql.abc123xyz.us-east-1.rds.amazonaws.com \
   -u admin -p \
   --port 3306

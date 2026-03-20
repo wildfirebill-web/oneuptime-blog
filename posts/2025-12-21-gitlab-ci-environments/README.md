@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab CI, Environment, DevOps, Deployment, CI/CD
+Tags: GitLab CI, Environments, DevOps, Deployment, CI/CD
 
 Description: Learn how to use GitLab CI environments to manage deployments across development, staging, and production.
 
@@ -33,6 +33,7 @@ The simplest way to define an environment is to add the `environment` keyword to
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - build
   - test

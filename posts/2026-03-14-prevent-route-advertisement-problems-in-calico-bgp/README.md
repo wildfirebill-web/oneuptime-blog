@@ -29,6 +29,7 @@ Start with a validated BGP configuration that accounts for common failure modes:
 
 ```yaml
 # bgp-configuration-production.yaml
+
 # Production-ready BGP configuration for Calico
 apiVersion: projectcalico.org/v3
 kind: BGPConfiguration

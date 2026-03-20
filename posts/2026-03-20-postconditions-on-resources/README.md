@@ -1,4 +1,4 @@
-# How to Use Postconditions on Resources in OpenTofu
+# How to Use Postconditions on Resources in OpenTofu - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use lifecycle postconditions on OpenTofu resources to 
 
 ## Introduction
 
-Postconditions run after a resource is created or modified. If a postcondition fails, OpenTofu marks the resource as tainted and the operation fails. Use postconditions to verify that a resource was created with the expected properties — catching cases where the cloud provider ignores or overrides your configuration.
+Postconditions run after a resource is created or modified. If a postcondition fails, OpenTofu marks the resource as tainted and the operation fails. Use postconditions to verify that a resource was created with the expected properties - catching cases where the cloud provider ignores or overrides your configuration.
 
 ## Basic Postcondition Syntax
 
@@ -149,6 +149,7 @@ Postconditions on module outputs validate that the module returns valid data:
 
 ```hcl
 # modules/vpc/outputs.tf
+
 output "vpc_id" {
   value = aws_vpc.main.id
 

@@ -16,6 +16,7 @@ Before diving into specific issues, here are the commands you will reach for mos
 
 ```bash
 # Check overall ArgoCD component health
+
 kubectl get pods -n argocd
 
 # View application status

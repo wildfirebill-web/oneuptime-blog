@@ -33,6 +33,7 @@ Update the aws-node DaemonSet to disable the AWS network policy controller:
 
 ```bash
 # Disable the AWS network policy controller to avoid conflicts with Calico
+
 kubectl set env daemonset aws-node \
   -n kube-system \
   ENABLE_NETWORK_POLICY_CONTROLLER=false

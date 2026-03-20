@@ -10,12 +10,13 @@ Description: Learn how to configure 6rd IPv6 tunneling on customer premises equi
 
 Customer Premises Equipment (CPE) implementing 6rd receives tunnel parameters from the ISP (via DHCPv4 option 212 or manual configuration) and establishes a 6rd tunnel to the ISP Border Relay (BR). The CPE then advertises the derived IPv6 prefix to the home LAN via Router Advertisement.
 
-## DHCPv4 Option 212 — Auto-Provisioning
+## DHCPv4 Option 212 - Auto-Provisioning
 
 6rd parameters are typically delivered via DHCPv4:
 
 ```bash
-# isc-dhcp-client — request option 212 in /etc/dhcp/dhclient.conf
+# isc-dhcp-client - request option 212 in /etc/dhcp/dhclient.conf
+
 also request option 212;
 
 # When lease is obtained, extract parameters:
@@ -58,7 +59,7 @@ uci commit network
 
 ```bash
 #!/bin/bash
-# 6rd-setup.sh — configure 6rd tunnel based on ISP parameters
+# 6rd-setup.sh - configure 6rd tunnel based on ISP parameters
 
 # ISP-provided parameters (normally from DHCPv4 option 212)
 BR_IPV4="198.51.100.1"          # Border Relay IPv4

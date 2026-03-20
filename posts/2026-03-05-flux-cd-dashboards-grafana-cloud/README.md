@@ -26,6 +26,7 @@ Deploy Grafana Agent via Flux to scrape and forward metrics:
 
 ```yaml
 # infrastructure/monitoring/grafana-agent-helmrepo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

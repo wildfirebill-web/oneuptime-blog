@@ -1,4 +1,4 @@
-# How to Create an ECR Repository with OpenTofu on AWS
+# How to Create an ECR Repository with OpenTofu on AWS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -155,6 +155,7 @@ tofu plan
 tofu apply
 
 # Login to ECR
+
 aws ecr get-login-password --region us-east-1 | \
   docker login --username AWS --password-stdin \
   $(tofu output -raw repository_url | cut -d/ -f1)

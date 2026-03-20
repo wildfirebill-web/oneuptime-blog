@@ -53,6 +53,7 @@ flowchart TB
 
 ```logql
 # Error count over time by service
+
 sum by (service) (
   count_over_time({job="application"} | json | level="error" [5m])
 )

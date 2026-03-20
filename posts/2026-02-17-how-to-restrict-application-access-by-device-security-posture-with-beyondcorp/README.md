@@ -44,6 +44,7 @@ The minimum security requirement for most organizations.
 
 ```yaml
 # encryption-required-spec.yaml
+
 # Blocks access from devices without full disk encryption
 - devicePolicy:
     allowedEncryptionStatuses:

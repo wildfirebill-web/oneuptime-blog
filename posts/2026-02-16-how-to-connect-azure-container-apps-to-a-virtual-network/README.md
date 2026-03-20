@@ -26,6 +26,7 @@ Azure Container Apps requires a dedicated subnet with a minimum of /23 CIDR rang
 
 ```bash
 # Create a VNet with a large enough address space
+
 az network vnet create \
   --name my-vnet \
   --resource-group my-rg \

@@ -21,6 +21,7 @@ The `debugger` keyword can be set at the task, block, play, or role level:
 ```yaml
 ---
 # Play-level: debugger activates for any failed task in this play
+
 - name: Deploy application
   hosts: webservers
   debugger: on_failed

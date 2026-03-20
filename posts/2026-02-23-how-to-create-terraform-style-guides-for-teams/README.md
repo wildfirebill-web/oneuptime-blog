@@ -26,6 +26,7 @@ Define how files should be organized within a Terraform configuration:
 # Standard file structure for each environment or module:
 
 # main.tf - Primary resource definitions
+
 # This file contains the core resources for this configuration.
 # For large configurations, split resources into domain-specific files
 # like networking.tf, compute.tf, database.tf.

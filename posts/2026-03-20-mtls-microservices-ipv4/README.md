@@ -4,21 +4,22 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: mTLS, Microservices, IPv4, TLS, Security, Python
 
-Description: Learn how to configure mutual TLS (mTLS) authentication between microservices communicating over IPv4, including certificate generation, server and client configuration in Python, and Nginx passthrough.
+Description: Learn how to configure mutual TLS (mTLS) authentication between microservices communicating over IPv4, including certificate generation, server and client configuration in Python, and Nginx...
 
 ## What Is mTLS?
 
-In standard TLS the server presents a certificate to the client. In mutual TLS (mTLS) both sides present certificates — the server authenticates the client and the client authenticates the server. This provides strong identity verification between microservices.
+In standard TLS the server presents a certificate to the client. In mutual TLS (mTLS) both sides present certificates - the server authenticates the client and the client authenticates the server. This provides strong identity verification between microservices.
 
-```
-Client Microservice ←— verify server cert ——→ Server Microservice
-Client Microservice ←— verify client cert ——→ Server Microservice
+```text
+Client Microservice ←- verify server cert --→ Server Microservice
+Client Microservice ←- verify client cert --→ Server Microservice
 ```
 
 ## Generate Certificates with OpenSSL
 
 ```bash
 # 1. Create CA key and certificate
+
 openssl req -x509 -newkey rsa:4096 -days 3650 -nodes \
     -keyout ca.key -out ca.crt \
     -subj "/CN=MyCA"

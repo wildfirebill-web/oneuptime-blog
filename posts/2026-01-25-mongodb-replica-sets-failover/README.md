@@ -43,6 +43,7 @@ On each server, modify the MongoDB configuration file:
 
 ```yaml
 # /etc/mongod.conf on server 1 (mongo1.example.com)
+
 storage:
   dbPath: /var/lib/mongodb
 

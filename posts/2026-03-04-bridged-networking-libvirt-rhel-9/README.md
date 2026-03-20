@@ -37,6 +37,7 @@ With NAT, VMs use a private 192.168.122.0/24 range and the host translates. With
 
 ```bash
 # Install virtualization packages if not already present
+
 dnf install -y qemu-kvm libvirt virt-install bridge-utils
 
 # Start and enable libvirtd

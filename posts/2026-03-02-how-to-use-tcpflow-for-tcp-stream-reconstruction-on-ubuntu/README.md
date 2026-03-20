@@ -37,6 +37,7 @@ Like most packet capture tools, tcpflow requires elevated privileges:
 
 ```bash
 # Capture all TCP traffic on eth0
+
 sudo tcpflow -i eth0
 ```
 

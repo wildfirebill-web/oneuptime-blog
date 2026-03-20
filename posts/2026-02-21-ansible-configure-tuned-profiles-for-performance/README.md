@@ -32,6 +32,7 @@ flowchart TD
 
 ```yaml
 # install-tuned.yml - Install and enable the tuned daemon
+
 ---
 - name: Install and enable tuned
   hosts: all

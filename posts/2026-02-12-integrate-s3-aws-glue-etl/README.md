@@ -31,6 +31,7 @@ Create separate buckets (or prefixes) for raw and processed data. Keeping them s
 
 ```bash
 # Create buckets for the data pipeline
+
 aws s3 mb s3://company-data-raw
 aws s3 mb s3://company-data-processed
 

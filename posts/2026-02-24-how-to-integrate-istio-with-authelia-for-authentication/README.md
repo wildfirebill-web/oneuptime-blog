@@ -320,6 +320,7 @@ Verify the integration works:
 
 ```bash
 # Should redirect to Authelia login (302)
+
 curl -v https://app.mycompany.com/
 
 # After logging in, the session cookie should grant access

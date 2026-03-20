@@ -20,6 +20,7 @@ JupyterHub is the multi-user version of Jupyter Notebook, ideal for data science
 
 ```yaml
 # jupyterhub-stack.yml
+
 version: "3.8"
 
 services:
@@ -61,7 +62,7 @@ from dockerspawner import DockerSpawner
 # Use DockerSpawner to start each user in their own container
 c.JupyterHub.spawner_class = DockerSpawner
 
-# User notebook image — customize with your required libraries
+# User notebook image - customize with your required libraries
 c.DockerSpawner.image = "jupyter/datascience-notebook:latest"
 
 # Persist user home directories
@@ -78,7 +79,7 @@ c.DockerSpawner.use_internal_ip = True
 c.DockerSpawner.mem_limit = "4G"
 c.DockerSpawner.cpu_limit = 2.0
 
-# Authentication — use PAM (system users) or OAuth
+# Authentication - use PAM (system users) or OAuth
 c.JupyterHub.authenticator_class = "jupyterhub.auth.PAMAuthenticator"
 
 # Admin users
@@ -143,4 +144,4 @@ Use Portainer to view:
 
 ## Summary
 
-JupyterHub on Portainer gives data science teams a self-managed notebook environment. Portainer handles the container lifecycle, and JupyterHub handles user isolation and authentication — a clean separation of concerns for platform teams.
+JupyterHub on Portainer gives data science teams a self-managed notebook environment. Portainer handles the container lifecycle, and JupyterHub handles user isolation and authentication - a clean separation of concerns for platform teams.

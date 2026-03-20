@@ -23,6 +23,7 @@ When Ansible encounters `import_role`, it reads the role's tasks, handlers, and 
 
 ```yaml
 # site.yml
+
 # Import a role statically as a task
 ---
 - hosts: web_servers

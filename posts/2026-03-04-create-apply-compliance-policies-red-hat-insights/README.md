@@ -14,6 +14,7 @@ Red Hat Insights Compliance integrates with OpenSCAP to let you define security 
 
 ```bash
 # Install the OpenSCAP scanner and SCAP security guide
+
 sudo dnf install -y openscap-scanner scap-security-guide
 
 # Verify the installation

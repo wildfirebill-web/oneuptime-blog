@@ -16,6 +16,7 @@ At its simplest, `talosctl gen config` takes two required arguments: a cluster n
 
 ```bash
 # Generate machine configurations
+
 talosctl gen config my-cluster https://192.168.1.100:6443
 ```
 

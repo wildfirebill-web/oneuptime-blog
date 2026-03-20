@@ -37,6 +37,7 @@ Lambda is the most flexible destination. Your function receives batched log even
 
 ```bash
 # Give CloudWatch Logs permission to invoke the Lambda
+
 aws lambda add-permission \
   --function-name "my-log-processor" \
   --statement-id "cloudwatch-invoke" \

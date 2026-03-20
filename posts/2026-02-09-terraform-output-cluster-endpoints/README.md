@@ -74,6 +74,7 @@ The kubeconfig template might look like:
 
 ```yaml
 # templates/kubeconfig.tpl
+
 apiVersion: v1
 kind: Config
 clusters:

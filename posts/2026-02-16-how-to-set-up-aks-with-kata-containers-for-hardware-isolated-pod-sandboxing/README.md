@@ -49,6 +49,7 @@ Kata Containers on AKS require nested virtualization support, which means you ne
 
 ```bash
 # VM sizes that support nested virtualization (Dv3, Dsv3, Ev3, Esv3 and newer)
+
 # Standard_D4s_v3, Standard_D8s_v5, Standard_E4s_v5, etc.
 
 # Verify your cluster can support Kata

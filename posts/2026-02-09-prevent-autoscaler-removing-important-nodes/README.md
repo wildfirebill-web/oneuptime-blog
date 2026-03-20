@@ -180,6 +180,7 @@ Annotate nodes themselves to prevent removal:
 
 ```bash
 # Prevent scale-down of a specific node
+
 kubectl annotate node node-1 \
   cluster-autoscaler.kubernetes.io/scale-down-disabled="true"
 ```

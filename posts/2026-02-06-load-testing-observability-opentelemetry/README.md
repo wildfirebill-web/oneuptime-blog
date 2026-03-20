@@ -35,6 +35,7 @@ The first thing you need is a way to distinguish load test traffic from real pro
 
 ```python
 # load_test_middleware.py
+
 from opentelemetry import trace, context
 from opentelemetry.baggage import set_baggage, get_baggage
 

@@ -200,6 +200,7 @@ Unmount and destroy all filesystems first:
 
 ```bash
 # Unmount all
+
 sudo umount /mountpoint1
 sudo umount /mountpoint2
 

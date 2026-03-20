@@ -34,6 +34,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Get the Kubernetes environment ID
+
 ENVS=$(curl -s https://localhost:9443/api/endpoints \
   -H "Authorization: Bearer $TOKEN" --insecure)
 echo "Environments:"

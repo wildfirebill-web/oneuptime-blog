@@ -56,6 +56,7 @@ Now configure the alert conditions:
 
 ```bash
 # Create a monthly budget of $5000 for a subscription
+
 az consumption budget create \
   --budget-name "prod-monthly" \
   --amount 5000 \

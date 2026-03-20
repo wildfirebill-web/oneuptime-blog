@@ -31,6 +31,7 @@ Here is the base application for Istio CRDs:
 
 ```yaml
 # istio-crds-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

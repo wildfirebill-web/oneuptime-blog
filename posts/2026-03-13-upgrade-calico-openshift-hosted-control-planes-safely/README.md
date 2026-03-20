@@ -41,6 +41,7 @@ Confirm worker nodes can reach the management cluster API server.
 
 ```bash
 # From a pod on the worker nodes
+
 kubectl exec -n calico-system -it <calico-node-pod> -- curl -sk \
   https://kubernetes.default.svc.cluster.local/healthz
 ```

@@ -26,6 +26,7 @@ This guide provides a step-by-step troubleshooting approach for WireGuard latenc
 
 ```bash
 # Test with WireGuard enabled
+
 WG_RR=$(kubectl exec netperf-client -- \
   netperf -H $SERVER_IP -t TCP_RR -l 20 -- -r 1,1 2>/dev/null | tail -1 | awk '{print $1}')
 

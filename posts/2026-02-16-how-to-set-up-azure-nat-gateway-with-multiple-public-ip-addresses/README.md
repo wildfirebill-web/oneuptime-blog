@@ -45,6 +45,7 @@ Create the public IPs that will be used by the NAT Gateway:
 
 ```bash
 # Create the first public IP
+
 az network public-ip create \
   --resource-group myResourceGroup \
   --name natGwPIP1 \

@@ -1,8 +1,8 @@
-# How to Configure Egress Gateway in Rancher
+# How to Configure Egress Gateway in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, egress, gateway, istio, kubernetes
+Tags: Rancher, Egress, Gateway, Istio, Kubernetes
 
 Description: Guide to configuring egress gateways in Rancher for controlling outbound traffic from pods.
 
@@ -25,6 +25,7 @@ Network configuration in Rancher-managed Kubernetes clusters leverages the CNI (
 
 ```bash
 # Check current CNI plugin
+
 kubectl get configmap -n kube-system kube-proxy -o yaml | grep mode
 
 # Check network policies

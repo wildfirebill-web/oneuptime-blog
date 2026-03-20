@@ -58,6 +58,7 @@ If you have the certificate in DER format, convert it:
 
 ```bash
 # Convert DER to PEM format if needed
+
 openssl x509 -inform DER -in myCA.cer -out myCA.pem -outform PEM
 ```
 

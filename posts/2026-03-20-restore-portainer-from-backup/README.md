@@ -1,4 +1,4 @@
-# How to Restore Portainer from a Backup
+# How to Restore Portainer from a Backup - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Whether you're recovering from a failed upgrade, migrating to a new server, or r
 
 ```bash
 # Stop the running Portainer container (if it exists)
+
 docker stop portainer 2>/dev/null || true
 docker container rm portainer 2>/dev/null || true
 ```

@@ -46,6 +46,7 @@ When a producer retries after a network timeout, it may send duplicate messages:
 
 ```python
 # Problem: Non-idempotent producer creates duplicates on retry
+
 from kafka import KafkaProducer
 
 # This producer will create duplicates if retries happen

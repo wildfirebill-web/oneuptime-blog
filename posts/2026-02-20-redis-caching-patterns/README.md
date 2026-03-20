@@ -34,6 +34,7 @@ import redis
 import json
 
 # Create a Redis connection
+
 r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
 def get_user(user_id: str) -> dict:

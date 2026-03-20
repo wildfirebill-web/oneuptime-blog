@@ -20,6 +20,7 @@ Amazon SQS is the workhorse of AWS messaging. Let us build a reusable module for
 # modules/sqs_queue/main.tf
 
 # Dead letter queue catches messages that fail processing
+
 resource "aws_sqs_queue" "dlq" {
   name                      = "${var.queue_name}-dlq"
   message_retention_seconds = 1209600 # 14 days max retention

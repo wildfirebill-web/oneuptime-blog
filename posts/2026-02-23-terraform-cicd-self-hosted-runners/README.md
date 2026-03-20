@@ -31,6 +31,7 @@ Deploy a runner instance inside your VPC:
 
 ```hcl
 # runner.tf
+
 # EC2 instance for GitHub Actions runner
 resource "aws_instance" "github_runner" {
   ami           = data.aws_ami.ubuntu.id

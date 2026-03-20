@@ -8,7 +8,7 @@ Description: Configure IPvlan L3 mode for Layer 3 routing between container netw
 
 ## Introduction
 
-IPvlan L3 mode operates at Layer 3 (network layer), meaning the host acts as a router between container networks. Unlike L2, containers in L3 mode are in completely separate broadcast domains — they communicate via routing, not bridging. This is ideal for creating isolated network segments with routing control. This guide covers IPvlan L3 configuration via Portainer.
+IPvlan L3 mode operates at Layer 3 (network layer), meaning the host acts as a router between container networks. Unlike L2, containers in L3 mode are in completely separate broadcast domains - they communicate via routing, not bridging. This is ideal for creating isolated network segments with routing control. This guide covers IPvlan L3 configuration via Portainer.
 
 ## L2 vs L3 Key Differences
 
@@ -25,6 +25,7 @@ IPvlan L3 mode operates at Layer 3 (network layer), meaning the host acts as a r
 
 ```bash
 # IPvlan L3 uses subnets completely separate from your LAN
+
 # The host acts as the router for these subnets
 
 # Create first IPvlan L3 network

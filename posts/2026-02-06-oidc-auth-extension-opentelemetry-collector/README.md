@@ -56,6 +56,7 @@ Here's a minimal OIDC configuration for protecting a collector receiver:
 
 ```yaml
 # Define the OIDC auth extension
+
 extensions:
   # oidc extension configuration
   oidc:

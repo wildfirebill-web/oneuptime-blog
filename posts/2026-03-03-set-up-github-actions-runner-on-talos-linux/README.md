@@ -47,6 +47,7 @@ Create a GitHub App in your organization settings with the following permissions
 
 ```bash
 # Create a Kubernetes secret with the GitHub App credentials
+
 kubectl create namespace arc-system
 
 kubectl create secret generic github-app-secret \
@@ -337,7 +338,7 @@ spec:
         - port: 22
 ```
 
-### Resource Quotas
+Resource Quotas
 
 Prevent runners from consuming all cluster resources.
 

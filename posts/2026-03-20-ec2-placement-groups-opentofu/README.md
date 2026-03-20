@@ -19,6 +19,7 @@ EC2 placement groups control how instances are physically placed in AWS infrastr
 
 ```hcl
 # Cluster placement group packs instances into a single AZ
+
 # for maximum network throughput and minimal latency
 # Best for HPC, big data, and ML training workloads
 resource "aws_placement_group" "cluster" {

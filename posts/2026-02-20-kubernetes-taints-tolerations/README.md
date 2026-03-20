@@ -31,6 +31,7 @@ A taint has three parts:
 
 ```bash
 # Taint a node so only GPU workloads can schedule on it
+
 kubectl taint nodes gpu-node-1 dedicated=gpu:NoSchedule
 kubectl taint nodes gpu-node-2 dedicated=gpu:NoSchedule
 

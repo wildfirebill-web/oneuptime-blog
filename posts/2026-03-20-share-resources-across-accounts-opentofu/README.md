@@ -6,7 +6,7 @@ Tags: OpenTofu, Multi-Account, Resource Sharing, AWS RAM, Infrastructure as Code
 
 Description: Learn how to share AWS resources across accounts with OpenTofu using AWS Resource Access Manager (RAM) and cross-account IAM roles.
 
-Sharing resources across AWS accounts — VPCs, Transit Gateways, Route 53 zones, AMIs — avoids resource duplication and reduces costs. AWS Resource Access Manager (RAM) and cross-account IAM roles are the primary mechanisms, and both are manageable with OpenTofu.
+Sharing resources across AWS accounts - VPCs, Transit Gateways, Route 53 zones, AMIs - avoids resource duplication and reduces costs. AWS Resource Access Manager (RAM) and cross-account IAM roles are the primary mechanisms, and both are manageable with OpenTofu.
 
 ## Sharing a VPC Subnet with AWS RAM
 
@@ -20,6 +20,7 @@ provider "aws" {
 }
 
 # Create a resource share in the shared services account
+
 resource "aws_ram_resource_share" "vpc_subnets" {
   provider                  = aws.shared_services
   name                      = "vpc-subnet-share"

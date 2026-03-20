@@ -38,6 +38,7 @@ You need:
 
 ```bash
 # Verify your contexts
+
 kubectl config get-contexts
 
 # Verify connectivity to both clusters

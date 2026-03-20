@@ -26,6 +26,7 @@ KDE Connect bridges the gap between your Ubuntu desktop and Android phone. Once 
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install KDE Connect

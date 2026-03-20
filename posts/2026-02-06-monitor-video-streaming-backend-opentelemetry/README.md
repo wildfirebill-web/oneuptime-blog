@@ -49,6 +49,7 @@ from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExp
 from opentelemetry.sdk.resources import Resource
 
 # Identify this service in all telemetry
+
 resource = Resource.create({
     "service.name": "video-streaming-backend",
     "service.version": "2.4.1",

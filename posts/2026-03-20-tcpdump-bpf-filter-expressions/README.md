@@ -6,11 +6,11 @@ Tags: tcpdump, BPF, Linux, Networking, Packet Capture, Filtering
 
 Description: Master Berkeley Packet Filter (BPF) syntax to write precise tcpdump filters using byte offset matching, protocol fields, and bitwise operations.
 
-BPF (Berkeley Packet Filter) is the engine behind tcpdump's filtering. Understanding its byte-offset syntax unlocks powerful filtering capabilities — matching specific protocol fields, flag combinations, and payload content that simple host/port filters can't express.
+BPF (Berkeley Packet Filter) is the engine behind tcpdump's filtering. Understanding its byte-offset syntax unlocks powerful filtering capabilities - matching specific protocol fields, flag combinations, and payload content that simple host/port filters can't express.
 
 ## BPF Syntax Fundamentals
 
-```
+```text
 proto[offset:size] operator value
 
 proto:   ip, ip6, tcp, udp, icmp, arp, ether
@@ -27,7 +27,7 @@ Examples:
 
 ## Common Protocol Header Offsets
 
-```
+```text
 IP Header (byte offsets):
   0: version+IHL    4: DSCP/ECN
   2: total length   8: TTL
@@ -45,6 +45,7 @@ TCP Header (byte offsets, relative to TCP start):
 
 ```bash
 # Named flags (preferred for readability)
+
 sudo tcpdump 'tcp[tcpflags] & tcp-syn != 0'    # SYN set
 sudo tcpdump 'tcp[tcpflags] & tcp-ack != 0'    # ACK set
 sudo tcpdump 'tcp[tcpflags] & tcp-rst != 0'    # RST set
@@ -75,7 +76,7 @@ sudo tcpdump 'ip[1] & 0xfc = 46'  # DSCP EF (Expedited Forwarding)
 sudo tcpdump 'ip[9] = 6'     # TCP (protocol 6)
 sudo tcpdump 'ip[9] = 17'    # UDP (protocol 17)
 sudo tcpdump 'ip[9] = 1'     # ICMP (protocol 1)
-sudo tcpdump 'ip[9] = 50'    # ESP (protocol 50 — IPsec)
+sudo tcpdump 'ip[9] = 50'    # ESP (protocol 50 - IPsec)
 
 # Packets with IP options set (IHL > 5)
 sudo tcpdump 'ip[0] & 0x0f > 5'
@@ -123,4 +124,4 @@ sudo tcpdump 'icmp[icmptype] = icmp-unreach'       # type 3
 sudo tcpdump 'icmp[0] = 5'
 ```
 
-Mastering BPF byte-offset syntax transforms tcpdump from a simple "capture everything" tool into a surgical instrument that captures exactly — and only — the packets you need.
+Mastering BPF byte-offset syntax transforms tcpdump from a simple "capture everything" tool into a surgical instrument that captures exactly - and only - the packets you need.

@@ -20,6 +20,7 @@ import boto3
 s3 = boto3.client('s3')
 
 # Upload a single file
+
 s3.upload_file(
     Filename='report.pdf',
     Bucket='my-documents-bucket',

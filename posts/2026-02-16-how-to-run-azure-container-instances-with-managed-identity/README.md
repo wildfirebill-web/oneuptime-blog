@@ -29,6 +29,7 @@ Use system-assigned for simple cases where the identity lifecycle matches the co
 
 ```bash
 # Create a container group with a system-assigned managed identity
+
 az container create \
     --resource-group my-resource-group \
     --name my-container \

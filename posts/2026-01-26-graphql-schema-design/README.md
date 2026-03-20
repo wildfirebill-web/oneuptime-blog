@@ -34,6 +34,7 @@ The best GraphQL schemas reflect your business domain, not your database structu
 
 ```graphql
 # Define types based on business concepts, not database tables
+
 # This User type represents how the business thinks about users,
 # not necessarily how they're stored in the database
 

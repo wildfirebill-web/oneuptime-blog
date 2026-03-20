@@ -52,6 +52,7 @@ class ExpensiveObject:
 
 
 # Create an object and a weak reference to it
+
 obj = ExpensiveObject("Resource-A")
 weak_ref = weakref.ref(obj)
 

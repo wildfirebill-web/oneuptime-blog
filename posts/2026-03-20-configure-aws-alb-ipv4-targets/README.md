@@ -16,6 +16,7 @@ AWS Application Load Balancer (ALB) operates at Layer 7 (HTTP/HTTPS). It support
 VPC_ID="vpc-0abc123def456"
 
 # Create an IPv4 target group
+
 TG_ARN=$(aws elbv2 create-target-group \
   --name web-tg \
   --protocol HTTP \

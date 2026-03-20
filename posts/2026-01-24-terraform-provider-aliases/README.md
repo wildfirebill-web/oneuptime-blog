@@ -39,6 +39,7 @@ Define the default provider without an alias, then add aliased versions.
 
 ```hcl
 # Default provider - no alias needed
+
 provider "aws" {
   region = "us-east-1"
 }

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, Performance, Web Server
+Tags: Ubuntu, Nginx, Performance, Web Server
 
 Description: A practical guide to tuning Nginx worker processes, connections, buffers, and OS-level settings to handle high concurrency on Ubuntu servers.
 
@@ -22,6 +22,7 @@ The number of worker processes should match the number of CPU cores:
 
 ```bash
 # Check how many CPU cores you have
+
 nproc --all
 # Or
 grep -c ^processor /proc/cpuinfo

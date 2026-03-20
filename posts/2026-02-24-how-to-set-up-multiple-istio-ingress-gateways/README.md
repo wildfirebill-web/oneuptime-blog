@@ -92,6 +92,7 @@ Each Istio Gateway resource targets a specific gateway deployment through the se
 
 ```yaml
 # Public gateway configuration
+
 apiVersion: networking.istio.io/v1
 kind: Gateway
 metadata:

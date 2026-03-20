@@ -49,6 +49,7 @@ The critical difference from overlay: the packet on the physical network has **p
 **Verify the routing artifacts**:
 ```bash
 # On Node 1: BGP-learned route in routing table
+
 ip route show 10.0.2.0/26
 # Expected: 10.0.2.0/26 via <Node2-IP> dev eth0 proto bird
 

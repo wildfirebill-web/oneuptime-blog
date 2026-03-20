@@ -33,6 +33,7 @@ First, define outputs in your Terraform configuration:
 
 ```hcl
 # terraform/outputs.tf
+
 # Output the web server IPs for Ansible
 output "web_server_ips" {
   value = aws_instance.web[*].private_ip

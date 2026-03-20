@@ -26,6 +26,7 @@ Deploy Loki as a central log backend:
 
 ```yaml
 # loki-values.yaml
+
 loki:
   auth_enabled: true  # Enable multi-tenancy
   schemaConfig:

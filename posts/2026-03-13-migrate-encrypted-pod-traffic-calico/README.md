@@ -26,6 +26,7 @@ This guide covers migrate WireGuard Encryption in Calico, including enabling Wir
 
 ```bash
 # Enable WireGuard encryption cluster-wide
+
 kubectl patch felixconfiguration default --type=merge -p '{
   "spec": {
     "wireguardEnabled": true,

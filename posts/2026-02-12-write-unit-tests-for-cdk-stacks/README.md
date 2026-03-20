@@ -18,6 +18,7 @@ If you initialized your project with `cdk init`, you already have a test file an
 
 ```bash
 # Install testing dependencies
+
 npm install --save-dev jest @types/jest ts-jest
 ```
 

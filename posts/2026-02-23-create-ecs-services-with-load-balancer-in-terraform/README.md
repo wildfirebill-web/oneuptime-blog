@@ -18,6 +18,7 @@ Start with the ALB and its supporting resources:
 
 ```hcl
 # Application Load Balancer
+
 resource "aws_lb" "main" {
   name               = "myapp-alb"
   internal           = false

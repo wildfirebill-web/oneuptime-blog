@@ -1,4 +1,4 @@
-# How to Create a Kubernetes NetworkPolicy to Allow IPv4 Ingress from Specific CIDRs
+# How to Create a Kubernetes NetworkPolicy for IPv4 Ingress CIDRs
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,6 +12,7 @@ NetworkPolicy is a Kubernetes resource that controls traffic to and from pods. B
 
 ```yaml
 # allow-ingress-from-cidr.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

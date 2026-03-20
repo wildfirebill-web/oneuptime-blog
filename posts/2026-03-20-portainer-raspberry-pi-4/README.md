@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, raspberry-pi, arm64, docker, home-lab
+Tags: Portainer, Raspberry-pi, ARM64, Docker, Home-lab
 
 Description: A step-by-step guide to installing Portainer CE on a Raspberry Pi 4 running Raspberry Pi OS (64-bit), perfect for home lab Docker management.
 
@@ -14,14 +14,14 @@ The Raspberry Pi 4 with 4GB or 8GB RAM is an excellent platform for running Port
 
 - Raspberry Pi 4 (4GB or 8GB RAM recommended)
 - MicroSD card (32GB+, Class 10 or better)
-- Raspberry Pi OS (64-bit, Bookworm or Bullseye) — NOT 32-bit
+- Raspberry Pi OS (64-bit, Bookworm or Bullseye) - NOT 32-bit
 - Internet connection (wired recommended for stability)
 
 ## Step 1: Flash Raspberry Pi OS 64-bit
 
 Use Raspberry Pi Imager to flash the SD card:
 1. Download Raspberry Pi Imager from https://www.raspberrypi.com/software/
-2. Select "Raspberry Pi OS (64-bit)" — must be 64-bit for ARM64 Docker
+2. Select "Raspberry Pi OS (64-bit)" - must be 64-bit for ARM64 Docker
 3. In advanced settings, enable SSH and set hostname/password
 4. Flash to MicroSD card and boot
 
@@ -29,6 +29,7 @@ Use Raspberry Pi Imager to flash the SD card:
 
 ```bash
 # SSH into your Pi
+
 ssh pi@raspberrypi.local
 
 # Update system

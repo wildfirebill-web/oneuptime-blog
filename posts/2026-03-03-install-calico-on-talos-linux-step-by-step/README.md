@@ -28,6 +28,7 @@ Talos ships with Flannel as its default CNI. You need to disable it before insta
 
 ```yaml
 # calico-talos-patch.yaml
+
 cluster:
   network:
     # Disable the default Flannel CNI

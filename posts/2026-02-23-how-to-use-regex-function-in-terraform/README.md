@@ -16,6 +16,7 @@ The `regex` function applies a regular expression pattern to a string and return
 
 ```hcl
 # Basic syntax
+
 regex(pattern, string)
 ```
 

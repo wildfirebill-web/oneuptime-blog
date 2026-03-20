@@ -16,6 +16,7 @@ Create a `.gitlab-ci.yml` file in your repository root:
 
 ```yaml
 # .gitlab-ci.yml - Basic ansible-lint pipeline
+
 ---
 stages:
   - lint

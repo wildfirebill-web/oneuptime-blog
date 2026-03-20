@@ -25,6 +25,7 @@ Traffic control applies to **egress** (outgoing) traffic by default. Controlling
 
 ```bash
 # Show all qdiscs on an interface
+
 tc qdisc show dev eth0
 
 # Show all classes

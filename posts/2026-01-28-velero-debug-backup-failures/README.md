@@ -46,6 +46,7 @@ Start with these commands to gather information about the failure:
 
 ```bash
 # List all backups and their status
+
 velero backup get
 
 # Get detailed information about a specific failed backup

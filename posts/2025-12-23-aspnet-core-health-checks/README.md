@@ -50,6 +50,7 @@ Most applications depend on databases. Add the appropriate NuGet package for you
 
 ```bash
 # For SQL Server
+
 dotnet add package AspNetCore.HealthChecks.SqlServer
 
 # For PostgreSQL

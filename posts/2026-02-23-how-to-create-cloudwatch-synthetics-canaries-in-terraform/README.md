@@ -18,6 +18,7 @@ A canary is a Lambda function that runs on a schedule and performs synthetic mon
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

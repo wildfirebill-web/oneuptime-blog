@@ -94,6 +94,7 @@ from opentelemetry import trace
 provider = TracerProvider()
 
 # Add the enrichment processor first so attributes are set before export
+
 provider.add_span_processor(DeploymentEnrichmentProcessor())
 
 # Then add the exporter processor, which handles batching and sending

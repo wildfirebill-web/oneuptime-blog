@@ -37,6 +37,7 @@ When SAST tools flag potential SQL injection, they usually detect string concate
 
 ```python
 # BAD: String concatenation vulnerable to SQL injection
+
 # SAST will flag this as HIGH severity
 def get_user_bad(user_id):
     query = "SELECT * FROM users WHERE id = " + user_id

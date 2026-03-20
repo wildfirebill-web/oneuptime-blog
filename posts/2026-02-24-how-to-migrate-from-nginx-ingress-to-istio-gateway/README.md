@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, NGINX, Ingresses, Migration, Kubernetes, Gateway
+Tags: Istio, Nginx, Ingresses, Migration, Kubernetes, Gateway
 
 Description: A step-by-step guide to migrating from NGINX Ingress Controller to Istio Ingress Gateway with configuration mapping and zero-downtime cutover strategies.
 
@@ -32,6 +32,7 @@ First, catalog everything you're running through NGINX:
 
 ```bash
 # List all Ingress resources
+
 kubectl get ingress --all-namespaces
 
 # Get detailed config for each ingress

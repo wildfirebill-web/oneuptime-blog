@@ -199,6 +199,7 @@ Apply registry changes to your nodes:
 
 ```bash
 # Apply to a single node
+
 talosctl apply-config --nodes 10.0.0.5 --file worker.yaml
 
 # Or patch the configuration

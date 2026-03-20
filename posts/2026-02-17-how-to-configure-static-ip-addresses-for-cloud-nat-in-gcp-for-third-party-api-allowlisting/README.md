@@ -28,6 +28,7 @@ Reserve the static IPs that will be used for NAT:
 
 ```bash
 # Reserve static external IP addresses in the same region as your NAT
+
 gcloud compute addresses create nat-static-ip-1 \
   --region=us-central1 \
   --project=your-project-id

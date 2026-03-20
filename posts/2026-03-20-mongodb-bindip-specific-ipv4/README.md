@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, IPv4, bindIp, Configuration, Security, Database
+Tags: MongoDB, IPv4, BindIp, Configuration, Security, Database
 
 Description: Configure MongoDB's bindIp setting in mongod.conf to listen on specific IPv4 addresses, restrict network exposure, and verify the binding is correct.
 
@@ -29,6 +29,7 @@ net:
 
 ```bash
 # Apply changes
+
 sudo systemctl restart mongod
 
 # Verify MongoDB is listening on expected addresses

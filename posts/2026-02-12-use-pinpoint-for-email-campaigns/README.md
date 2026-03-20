@@ -48,6 +48,7 @@ def create_email_template(name, subject, html, text, default_subs=None):
     print(f"Template '{name}' created")
 
 # Create a monthly newsletter template
+
 create_email_template(
     'monthly-newsletter',
     'Hey {{User.UserAttributes.FirstName}}, your {{Month}} update is here',

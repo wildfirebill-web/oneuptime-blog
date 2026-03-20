@@ -14,6 +14,7 @@ Zabbix Proxy collects monitoring data on behalf of the Zabbix Server, reducing b
 
 ```bash
 # On the proxy server
+
 sudo rpm -Uvh https://repo.zabbix.com/zabbix/7.0/rhel/9/x86_64/zabbix-release-latest-7.0.el9.noarch.rpm
 sudo dnf clean all
 ```

@@ -22,6 +22,7 @@ This playbook randomly selects a greeting:
 
 ```yaml
 # playbook.yml - Pick a random item from a list
+
 ---
 - name: Random selection example
   hosts: localhost

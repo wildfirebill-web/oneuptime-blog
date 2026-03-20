@@ -50,6 +50,7 @@ kubectl apply -f argocd-cmd-params-cm.yaml
 kubectl rollout restart deployment argocd-server -n argocd
 
 # Verify the server started in insecure mode
+
 kubectl logs -n argocd -l app.kubernetes.io/name=argocd-server | grep "insecure"
 ```
 

@@ -20,6 +20,7 @@ Start with a module that deploys a standard Kubernetes application:
 
 ```hcl
 # modules/k8s-app/variables.tf
+
 variable "app_name" {
   description = "Application name"
   type        = string

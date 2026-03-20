@@ -16,6 +16,7 @@ Istiod (the "d" stands for daemon) is a single process that combines what used t
 
 ```bash
 # There is usually just one Deployment for the entire control plane
+
 kubectl get deploy -n istio-system
 # NAME     READY   UP-TO-DATE   AVAILABLE
 # istiod   1/1     1            1

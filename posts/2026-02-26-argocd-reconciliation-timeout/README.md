@@ -50,6 +50,7 @@ Apply the change and restart the application controller:
 
 ```bash
 # Apply the updated ConfigMap
+
 kubectl apply -f argocd-cm.yaml
 
 # The controller picks up config changes automatically,

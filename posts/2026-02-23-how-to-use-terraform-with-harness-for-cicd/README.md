@@ -24,6 +24,7 @@ First, set up the connectors Harness needs to access your Git repository and clo
 
 ```hcl
 # harness-connectors.tf
+
 # Use Terraform to manage Harness itself
 terraform {
   required_providers {

@@ -38,6 +38,7 @@ Before starting, ensure you have:
 
 ```bash
 # Update your system first
+
 sudo apt update && sudo apt upgrade -y
 
 # Install Postfix if not already installed

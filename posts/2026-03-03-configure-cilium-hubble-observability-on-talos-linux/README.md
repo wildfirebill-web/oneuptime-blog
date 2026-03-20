@@ -36,6 +36,7 @@ If you installed Cilium without Hubble, enable it by upgrading your Helm release
 
 ```bash
 # Enable Hubble with Relay and UI
+
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \
   --reuse-values \

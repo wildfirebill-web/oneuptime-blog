@@ -18,6 +18,7 @@ Vertex AI Workbench depends on several APIs.
 
 ```hcl
 # Enable Vertex AI and Notebooks APIs
+
 resource "google_project_service" "notebooks" {
   project = var.project_id
   service = "notebooks.googleapis.com"

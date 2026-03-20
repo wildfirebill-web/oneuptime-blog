@@ -20,6 +20,7 @@ The `podman manifest add` command adds an image to an existing manifest list.
 
 ```bash
 # Syntax
+
 podman manifest add <manifest-list> <image>
 
 # Example: Add a local image

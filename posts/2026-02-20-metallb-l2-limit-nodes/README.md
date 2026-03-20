@@ -56,6 +56,7 @@ First, label the nodes that should handle L2 traffic. Pick a label that makes se
 
 ```bash
 # Label nodes that should respond to ARP requests for LoadBalancer IPs
+
 # Use a descriptive label that indicates the node's role
 kubectl label node node-1 node-role.kubernetes.io/ingress=true
 

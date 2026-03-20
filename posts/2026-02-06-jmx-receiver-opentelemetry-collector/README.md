@@ -65,6 +65,7 @@ Verify JMX is accessible:
 
 ```bash
 # Using jconsole (GUI)
+
 jconsole localhost:9999
 
 # Using jmxterm (CLI)

@@ -8,12 +8,13 @@ Description: Configure network, process, and filesystem isolation for Docker con
 
 ## Introduction
 
-Container isolation prevents a compromised container from affecting other containers, the host, or sensitive data. Docker uses Linux namespaces for isolation by default, but the defaults leave several communication paths open: shared default bridge network, host filesystem mounts, and inter-container process visibility. This guide covers hardening isolation across all dimensions — network, process, filesystem, and IPC — in Portainer-managed deployments.
+Container isolation prevents a compromised container from affecting other containers, the host, or sensitive data. Docker uses Linux namespaces for isolation by default, but the defaults leave several communication paths open: shared default bridge network, host filesystem mounts, and inter-container process visibility. This guide covers hardening isolation across all dimensions - network, process, filesystem, and IPC - in Portainer-managed deployments.
 
 ## Step 1: Network Isolation with Internal Networks
 
 ```yaml
 # docker-compose.yml - Network isolation by tier
+
 version: "3.8"
 
 networks:
@@ -209,4 +210,4 @@ done
 
 ## Conclusion
 
-Container isolation is layered — network isolation prevents lateral movement, capability dropping limits what a compromised process can do, and resource limits prevent denial of service. No single control is sufficient; the combination creates defense-in-depth. Start with `internal: true` networks for databases, `no-new-privileges: true` for all services, and `cap_drop: [ALL]` with explicit additions. Portainer's container inspection and stack YAML editor make it easy to review and enforce isolation policies across your entire environment.
+Container isolation is layered - network isolation prevents lateral movement, capability dropping limits what a compromised process can do, and resource limits prevent denial of service. No single control is sufficient; the combination creates defense-in-depth. Start with `internal: true` networks for databases, `no-new-privileges: true` for all services, and `cap_drop: [ALL]` with explicit additions. Portainer's container inspection and stack YAML editor make it easy to review and enforce isolation policies across your entire environment.

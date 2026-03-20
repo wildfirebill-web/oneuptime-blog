@@ -31,6 +31,7 @@ TypeScript integration with Vue 3 is first-class, with excellent IDE support and
 
 ```bash
 # Create new project with TypeScript
+
 npm create vue@latest my-vue-app
 
 # Select options:

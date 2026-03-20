@@ -29,6 +29,7 @@ The workspace is the top-level container for all health data services:
 
 ```bash
 # Set up variables
+
 RESOURCE_GROUP="rg-health-data"
 WORKSPACE_NAME="healthworkspace01"
 LOCATION="eastus"

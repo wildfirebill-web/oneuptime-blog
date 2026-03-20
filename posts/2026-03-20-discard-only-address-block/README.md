@@ -25,6 +25,7 @@ Description: Understand the Discard-Only Address Block 100::/64 (RFC 6666), its 
 
 ```bash
 # The typical RTBH use case:
+
 # 1. Install a null route to 100::/64 on all routers
 ip -6 route add 100::/64 dev null
 

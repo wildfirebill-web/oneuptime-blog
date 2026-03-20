@@ -243,6 +243,7 @@ Test that restrictions are working:
 
 ```bash
 # Try to deploy a resource outside the allowed namespace
+
 # This should fail if RBAC is configured correctly
 
 # Check what the service account can do

@@ -18,6 +18,7 @@ In multi-tier applications, a container sometimes needs to communicate with serv
 
 ```bash
 # Create a frontend network
+
 podman network create frontend-net
 
 # Create a backend network

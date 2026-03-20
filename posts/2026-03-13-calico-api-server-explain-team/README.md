@@ -30,6 +30,7 @@ Demonstrate this:
 
 ```bash
 # With Calico API server - kubectl works natively
+
 kubectl get networkpolicies.projectcalico.org -n production
 kubectl apply -f calico-policy.yaml  # Uses projectcalico.org/v3
 kubectl describe globalnetworkpolicies.projectcalico.org default-deny

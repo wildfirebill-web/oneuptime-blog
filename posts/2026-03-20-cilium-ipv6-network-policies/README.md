@@ -14,6 +14,7 @@ Configure Cilium CiliumNetworkPolicy and CiliumClusterWideNetworkPolicy for fine
 
 ```bash
 # Ensure IPv6 is enabled and functional
+
 ip -6 addr show
 ping6 -c 3 ::1
 

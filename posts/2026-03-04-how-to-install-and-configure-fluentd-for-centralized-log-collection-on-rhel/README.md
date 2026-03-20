@@ -14,6 +14,7 @@ Fluentd is an open-source data collector that unifies log collection and consump
 
 ```bash
 # Install the td-agent package (Fluentd distribution by Treasure Data)
+
 curl -fsSL https://toolbelt.treasuredata.com/sh/install-redhat-fluent-package5-lts.sh | sh
 
 # Start and enable the service

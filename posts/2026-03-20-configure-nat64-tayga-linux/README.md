@@ -16,6 +16,7 @@ Tayga implements SIIT (Stateless IP/ICMP Translation) defined in RFC 7915 and ma
 
 ```bash
 # On Ubuntu/Debian
+
 apt update && apt install tayga
 
 # On RHEL/CentOS (may need EPEL)

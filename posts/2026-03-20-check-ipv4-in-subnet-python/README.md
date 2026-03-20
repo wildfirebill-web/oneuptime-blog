@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Subnet, CIDR, ipaddress, Networking
+Tags: Python, IPv4, Subnets, CIDR, Ipaddress, Networking
 
 Description: Learn how to check whether an IPv4 address belongs to a given subnet in Python using the ipaddress module, with practical examples for firewall rules, access control, and network segmentation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Bundle, Offline, Air-Gapped, DevOps
+Tags: OpenTofu, Bundles, Offline, Air-Gapped, DevOps
 
 Description: Learn how to create a self-contained bundle of OpenTofu with all its providers and modules for deployment in completely offline or air-gapped environments.
 
@@ -12,7 +12,7 @@ A self-contained OpenTofu bundle packages the binary, all required provider plug
 
 ## Bundle Structure
 
-```
+```text
 opentofu-bundle/
 ├── install.sh                    # Automated installer
 ├── binary/
@@ -48,6 +48,7 @@ CONFIG_SOURCE="${CONFIG_SOURCE:-./infrastructure}"  # Path to your OpenTofu conf
 echo "Creating OpenTofu bundle: $BUNDLE_NAME"
 
 # Create directory structure
+
 mkdir -p "$BUNDLE_DIR"/{binary,providers,modules,config}
 
 # ----------------------------------------

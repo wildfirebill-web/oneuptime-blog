@@ -14,6 +14,7 @@ When Samba stops responding, the cause is almost always one of four things: the 
 
 ```bash
 # Check status of smbd and nmbd
+
 sudo systemctl status smbd nmbd
 
 # If not running:

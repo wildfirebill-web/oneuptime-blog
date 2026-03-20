@@ -29,6 +29,7 @@ Set up the Vision API and install the client library:
 
 ```bash
 # Enable the Vision API
+
 gcloud services enable vision.googleapis.com
 
 # Install required packages

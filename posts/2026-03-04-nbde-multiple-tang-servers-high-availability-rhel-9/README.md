@@ -41,6 +41,7 @@ Verify both are operational:
 
 ```bash
 # Test Tang Server A
+
 curl -sf http://10.0.1.10/adv | python3 -m json.tool
 
 # Test Tang Server B

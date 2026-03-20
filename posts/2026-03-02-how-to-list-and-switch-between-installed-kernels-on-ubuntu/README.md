@@ -14,6 +14,7 @@ Ubuntu systems sometimes need to run on a specific kernel version - whether that
 
 ```bash
 # Show running kernel version
+
 uname -r
 ```
 

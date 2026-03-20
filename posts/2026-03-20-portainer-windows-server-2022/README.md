@@ -1,4 +1,4 @@
-# How to Install Portainer on Windows Server 2022 with Docker
+# How to Install Portainer on Windows Server 2022 with Docker - 2022
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Open PowerShell as Administrator:
 
 ```powershell
 # Install Hyper-V and containers features
+
 Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 Install-WindowsFeature -Name Containers
 
@@ -141,7 +142,7 @@ Switch Docker to Windows container mode:
 # Deploy a Windows container via Portainer
 # In Portainer, create a new container:
 # Image: mcr.microsoft.com/windows/servercore:ltsc2022
-# (Windows container images are larger — typically 3-5GB)
+# (Windows container images are larger - typically 3-5GB)
 ```
 
 ## Troubleshooting

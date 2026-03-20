@@ -28,6 +28,7 @@ provider "aws" {
 }
 
 # Parent hosted zone (example.com)
+
 resource "aws_route53_zone" "parent" {
   name    = "example.com"
   comment = "Parent zone for example.com"

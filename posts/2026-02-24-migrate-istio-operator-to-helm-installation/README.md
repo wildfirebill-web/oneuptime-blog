@@ -29,6 +29,7 @@ Before migrating, capture exactly how Istio is currently configured:
 
 ```bash
 # Export the IstioOperator resource
+
 kubectl get istiooperator -n istio-system -o yaml > istio-operator-config.yaml
 
 # List installed components

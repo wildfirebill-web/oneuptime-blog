@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, NGINX, Web Server
+Tags: Podman, Containers, DevOps, Quadlet, Nginx, Web Server
 
 Description: Learn how to deploy and manage an Nginx web server as a systemd service using Podman Quadlet.
 
@@ -18,6 +18,7 @@ Running a web server with Quadlet gives you systemd's reliability features inclu
 
 ```bash
 # Create a directory for the website content
+
 mkdir -p ~/website
 
 # Create a simple index page

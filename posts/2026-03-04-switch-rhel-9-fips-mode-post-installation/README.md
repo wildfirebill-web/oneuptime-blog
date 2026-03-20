@@ -14,6 +14,7 @@ Ideally, you enable FIPS during installation. But real life does not always work
 
 ```bash
 # Check if FIPS is currently enabled
+
 fips-mode-setup --check
 
 # Check the kernel parameter

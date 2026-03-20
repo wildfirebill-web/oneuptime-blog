@@ -1,4 +1,4 @@
-# How to Configure a GRE Tunnel with systemd-networkd
+# How to Configure a GRE Tunnel with systemd-networkd - Config
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,13 +8,13 @@ Description: Learn how to configure a GRE (Generic Routing Encapsulation) tunnel
 
 ---
 
-GRE (Generic Routing Encapsulation) tunnels encapsulate network layer packets for transport across another network. Unlike VPNs, GRE provides no encryption — it's used for routing and network interconnection. This guide covers configuring GRE tunnels with systemd-networkd.
+GRE (Generic Routing Encapsulation) tunnels encapsulate network layer packets for transport across another network. Unlike VPNs, GRE provides no encryption - it's used for routing and network interconnection. This guide covers configuring GRE tunnels with systemd-networkd.
 
 ---
 
 ## GRE Tunnel Overview
 
-```
+```text
 Host A (192.168.1.10) ←→ Internet ←→ Host B (203.0.113.20)
        [GRE tunnel: 10.100.0.1/30 ←→ 10.100.0.2/30]
 ```
@@ -37,6 +37,7 @@ GRE encapsulates packets in IP, adding a 24-byte overhead. The underlying transp
 
 ```ini
 # /etc/systemd/network/10-gre-tunnel.netdev
+
 [NetDev]
 Name=gre-to-hostb
 Kind=gre
@@ -245,7 +246,7 @@ ip route get 10.200.0.1
 1. **Set MTU explicitly** to 1476 (1500 - 24 GRE header) to avoid fragmentation
 2. **Use TCP MSS clamping** to handle MTU for TCP traffic over the tunnel
 3. **Consider IPsec** if you need encrypted GRE tunnels
-4. **Monitor tunnel interface** — GRE tunnels fail silently if the remote endpoint is unreachable
+4. **Monitor tunnel interface** - GRE tunnels fail silently if the remote endpoint is unreachable
 5. **Use keepalives** or monitoring to detect tunnel failures promptly
 
 ---

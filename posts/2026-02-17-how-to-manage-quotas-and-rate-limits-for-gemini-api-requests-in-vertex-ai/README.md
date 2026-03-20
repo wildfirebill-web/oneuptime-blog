@@ -36,6 +36,7 @@ Alternatively, use the gcloud CLI to list quotas programmatically:
 
 ```bash
 # List all Vertex AI quotas for your project
+
 # Filter for Gemini-related entries
 gcloud services quotas list \
     --service=aiplatform.googleapis.com \

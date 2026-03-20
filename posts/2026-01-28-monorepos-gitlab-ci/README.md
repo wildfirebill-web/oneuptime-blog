@@ -201,6 +201,7 @@ Use child pipelines for cleaner organization.
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - trigger
 

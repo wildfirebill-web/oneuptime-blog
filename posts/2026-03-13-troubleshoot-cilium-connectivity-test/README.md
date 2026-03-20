@@ -24,6 +24,7 @@ Connectivity test failures fall into a few broad categories: infrastructure fail
 
 ```bash
 # Run connectivity test with verbose output
+
 cilium connectivity test --verbose 2>&1 | tee /tmp/connectivity-test.log
 
 # Run only specific test scenarios to isolate failures

@@ -64,6 +64,7 @@ If you are creating a new vault, enable RBAC from the start:
 
 ```powershell
 # Create a new Key Vault with RBAC authorization enabled
+
 # The -EnableRbacAuthorization flag is the key setting
 $vault = New-AzKeyVault `
     -VaultName "myapp-keyvault-rbac" `

@@ -23,6 +23,7 @@ Identify the registries Flux accesses by listing your image automation and Helm 
 
 ```bash
 # List OCI repositories
+
 kubectl get ocirepositories -A -o jsonpath='{range .items[*]}{.spec.url}{"\n"}{end}'
 
 # List Helm repositories using OCI

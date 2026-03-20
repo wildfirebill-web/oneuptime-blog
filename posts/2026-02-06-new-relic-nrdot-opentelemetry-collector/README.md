@@ -41,6 +41,7 @@ New Relic provides an installer script:
 
 ```bash
 # Download and install NRDOT on Linux
+
 # This sets up the collector as a systemd service
 curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash
 

@@ -26,6 +26,7 @@ Install the scanning tools:
 
 ```bash
 # Install Trivy
+
 brew install trivy  # macOS
 # or
 curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin

@@ -30,6 +30,7 @@ This is the most important metric for validating that OTel Arrow is delivering v
 
 ```promql
 # Current compression ratio (higher is better)
+
 # A ratio of 5.0 means the data is 5x smaller after Arrow + compression
 otelcol_otelarrow_exporter_compression_ratio
 ```

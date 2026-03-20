@@ -16,6 +16,7 @@ Input variables in OpenTofu allow you to parameterize your configurations, makin
 # variables.tf
 
 # Minimal variable (type is 'any' if not specified)
+
 variable "aws_region" {}
 
 # Variable with type constraint

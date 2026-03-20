@@ -16,6 +16,7 @@ Instead of giving users full sudo access, create groups with specific permission
 
 ```bash
 # Create groups for different roles
+
 sudo groupadd web-admins
 sudo groupadd db-admins
 sudo groupadd deploy-users

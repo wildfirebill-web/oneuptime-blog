@@ -222,6 +222,7 @@ Debian is known for security. Enhance your Rancher installation with these addit
 
 ```bash
 # Install fail2ban to protect against brute force attacks
+
 sudo apt install -y fail2ban
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban

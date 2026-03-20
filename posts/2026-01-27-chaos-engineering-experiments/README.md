@@ -41,6 +41,7 @@ Every chaos experiment starts with defining what "normal" looks like. This is yo
 
 ```yaml
 # Steady state hypothesis
+
 name: "Payment service resilience"
 hypothesis: "When the payment database replica fails, the system continues processing payments with less than 5% degradation in success rate"
 

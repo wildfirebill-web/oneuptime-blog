@@ -26,6 +26,7 @@ Isolate whether the failure is at DNS, TCP, or HTTPS level.
 
 ```bash
 # Create a diagnostic pod
+
 kubectl run api-diag --image=nicolaka/netshoot --restart=Never -- sleep 3600
 kubectl wait pod/api-diag --for=condition=Ready --timeout=60s
 

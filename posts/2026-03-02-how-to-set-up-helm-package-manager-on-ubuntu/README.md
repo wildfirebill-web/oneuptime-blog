@@ -18,6 +18,7 @@ The recommended installation method pulls the binary directly from Helm's offici
 
 ```bash
 # Download and run the official install script
+
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 # Verify the installation

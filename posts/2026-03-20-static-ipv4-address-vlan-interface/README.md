@@ -19,6 +19,7 @@ After creating a VLAN subinterface, you need to assign a static IPv4 address to 
 
 ```bash
 # Assign a static IP to the VLAN interface
+
 ip addr add 192.168.100.10/24 dev eth0.100
 
 # Bring the VLAN interface up

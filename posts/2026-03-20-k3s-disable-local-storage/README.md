@@ -45,6 +45,7 @@ curl -sfL https://get.k3s.io | sudo sh -
 
 ```bash
 # Add local-storage to the disable list
+
 echo "  - local-storage" >> /etc/rancher/k3s/config.yaml
 
 # Restart K3s

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, portainer, kubernetes, docker, comparison
+Tags: Rancher, Portainer, Kubernetes, Docker, Comparison
 
 Description: A side-by-side comparison of Rancher and Portainer to help teams choose the right container management platform for their needs.
 
@@ -44,6 +44,7 @@ Portainer is a lightweight, open-source container management UI. Originally buil
 
 ```bash
 # Rancher requires a running Kubernetes cluster first
+
 # Then install via Helm
 helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
 kubectl create namespace cattle-system
@@ -101,4 +102,4 @@ Portainer CE has basic RBAC. Portainer Business Edition adds more granular acces
 
 ## Conclusion
 
-Rancher and Portainer are not direct competitors — they occupy different segments of the container management market. If you are running a multi-cluster Kubernetes environment at scale, Rancher is the clear choice. If you need a simple, lightweight UI for managing Docker containers, Docker Swarm, or small Kubernetes setups, Portainer excels. Many organizations actually use both: Portainer for development environments and Rancher for production Kubernetes clusters.
+Rancher and Portainer are not direct competitors - they occupy different segments of the container management market. If you are running a multi-cluster Kubernetes environment at scale, Rancher is the clear choice. If you need a simple, lightweight UI for managing Docker containers, Docker Swarm, or small Kubernetes setups, Portainer excels. Many organizations actually use both: Portainer for development environments and Rancher for production Kubernetes clusters.

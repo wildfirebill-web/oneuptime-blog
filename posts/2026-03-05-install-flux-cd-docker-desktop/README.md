@@ -33,6 +33,7 @@ Verify the cluster is running.
 
 ```bash
 # Check the Kubernetes node status
+
 kubectl get nodes
 ```
 

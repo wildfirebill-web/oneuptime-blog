@@ -441,7 +441,7 @@ You should see the nginx welcome page HTML.
 
 Edge and IoT deployments often have unique requirements. Here are some advanced configurations.
 
-### Resource-Optimized MetalLB Installation
+Resource-Optimized MetalLB Installation
 
 For resource-constrained IoT devices, you can limit MetalLB's resource usage. Create a values file for Helm installation:
 

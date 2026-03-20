@@ -37,6 +37,7 @@ Instead of putting all image tags in a single kustomization.yaml, separate them:
 
 ```yaml
 # Instead of one big kustomization.yaml with all images:
+
 # overlays/production/kustomization.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

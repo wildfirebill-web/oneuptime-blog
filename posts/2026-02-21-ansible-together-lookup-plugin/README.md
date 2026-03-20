@@ -22,6 +22,7 @@ This playbook creates users from paired lists of names and UIDs:
 
 ```yaml
 # playbook.yml - Pair usernames with UIDs
+
 ---
 - name: Create users from paired lists
   hosts: all

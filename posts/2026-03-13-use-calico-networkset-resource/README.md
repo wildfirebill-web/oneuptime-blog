@@ -58,6 +58,7 @@ Update automation:
 ```bash
 #!/bin/bash
 # update-threat-blocklist.sh - Run daily via CronJob
+
 FEED_URL="https://threat-intel.example.com/iplist.txt"
 
 # Download current threat feed

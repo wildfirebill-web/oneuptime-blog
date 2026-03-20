@@ -34,6 +34,7 @@ Start with the provider setup and a remote backend for state management.
 
 ```hcl
 # main.tf - provider and backend configuration
+
 terraform {
   required_version = ">= 1.5"
 

@@ -21,6 +21,7 @@ The Random provider generates random values during Terraform runs and stores the
 
 ```hcl
 # versions.tf - Declare the Random provider
+
 terraform {
   required_version = ">= 1.0"
 
@@ -40,7 +41,7 @@ The provider needs no configuration at all.
 provider "random" {}
 ```
 
-## Resource Types
+Resource Types
 
 The Random provider offers several resource types, each designed for different use cases.
 

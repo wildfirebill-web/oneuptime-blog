@@ -22,6 +22,7 @@ Talos Linux uses a multi-layered certificate system. There are several types of 
 
 ```bash
 # View the Talos-level certificates
+
 talosctl get certificate -n <control-plane-ip>
 
 # Check specific certificate details

@@ -8,7 +8,7 @@ Description: Learn how to use SSH escape sequences to add, list, and remove IPv4
 
 ---
 
-SSH escape sequences are special key combinations that let you interact with the SSH session itself — not the remote shell. They allow you to add or remove port forwards, check connection status, and even background the session, all from an active interactive session.
+SSH escape sequences are special key combinations that let you interact with the SSH session itself - not the remote shell. They allow you to add or remove port forwards, check connection status, and even background the session, all from an active interactive session.
 
 ## Entering the SSH Escape Prompt
 
@@ -31,6 +31,7 @@ The default escape character is `~`. To activate it, press `Enter` then `~` then
 
 ```bash
 # In an active SSH session, press Enter then ~C to open the command prompt
+
 # You'll see:
 ssh>
 

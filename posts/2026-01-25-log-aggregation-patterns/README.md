@@ -171,6 +171,7 @@ Deploy an agent alongside each application:
 
 ```yaml
 # patterns/sidecar-deployment.yaml
+
 # Kubernetes deployment with logging sidecar
 
 apiVersion: apps/v1

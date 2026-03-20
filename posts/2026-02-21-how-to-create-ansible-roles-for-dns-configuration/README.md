@@ -35,6 +35,7 @@ roles/dns/
 
 ```yaml
 # roles/dns/defaults/main.yml
+
 # Mode: client, server, or both
 dns_mode: client
 

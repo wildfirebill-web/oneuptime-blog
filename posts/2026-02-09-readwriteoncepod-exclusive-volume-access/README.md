@@ -39,6 +39,7 @@ ReadWriteOncePod requires Kubernetes 1.22+ and CSI drivers that support the feat
 
 ```bash
 # Check Kubernetes version
+
 kubectl version --short
 
 # Verify CSI driver supports RWOP

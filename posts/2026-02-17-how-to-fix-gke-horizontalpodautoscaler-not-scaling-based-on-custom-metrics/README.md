@@ -39,6 +39,7 @@ Start by looking at what the HPA is reporting:
 
 ```bash
 # Get HPA status with conditions
+
 kubectl get hpa your-hpa -n your-namespace
 
 # Get detailed status including targets and conditions

@@ -8,7 +8,7 @@ Description: Learn how to configure the Kubernetes provider in OpenTofu to manag
 
 ## Introduction
 
-The Kubernetes provider allows OpenTofu to manage Kubernetes resources—Deployments, Services, ConfigMaps, and more—using the same HCL syntax as cloud resources. You can configure it from a kubeconfig file, inline credentials, or dynamically from an EKS/AKS/GKE cluster resource.
+The Kubernetes provider allows OpenTofu to manage Kubernetes resources-Deployments, Services, ConfigMaps, and more-using the same HCL syntax as cloud resources. You can configure it from a kubeconfig file, inline credentials, or dynamically from an EKS/AKS/GKE cluster resource.
 
 ## Configuration from Kubeconfig File
 
@@ -99,4 +99,4 @@ resource "kubernetes_namespace" "monitoring" {
 
 ## Conclusion
 
-The Kubernetes provider is most powerful when configured dynamically from a just-created cloud cluster resource—this ensures the provider always uses fresh, valid credentials. Avoid hardcoding kubeconfig paths in shared configurations; prefer dynamic token-based authentication for CI/CD pipelines.
+The Kubernetes provider is most powerful when configured dynamically from a just-created cloud cluster resource-this ensures the provider always uses fresh, valid credentials. Avoid hardcoding kubeconfig paths in shared configurations; prefer dynamic token-based authentication for CI/CD pipelines.

@@ -1,4 +1,4 @@
-# How to Browse Registry Contents in Portainer Business Edition
+# How to Browse Registry Contents in Portainer Business Edition (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use Portainer Business Edition's registry browser to n
 
 ## Introduction
 
-Portainer Business Edition includes a built-in registry browser that lets you explore registry contents — repositories, images, and tags — without needing separate tools. Instead of knowing image paths by memory or using the registry's own web UI, you can browse and select images directly within Portainer. This guide covers using the registry browser.
+Portainer Business Edition includes a built-in registry browser that lets you explore registry contents - repositories, images, and tags - without needing separate tools. Instead of knowing image paths by memory or using the registry's own web UI, you can browse and select images directly within Portainer. This guide covers using the registry browser.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ The registry browser opens.
 
 The browser shows the registry hierarchy:
 
-```
+```text
 Registry: harbor.company.com
 ├── production/
 │   ├── myapp          (repository)
@@ -67,7 +67,7 @@ Registry: harbor.company.com
    - Creation date
    - Image size
 
-```
+```text
 Repository: harbor.company.com/production/myapp
 ────────────────────────────────────────────────
 Tag        Digest              Created        Size
@@ -114,7 +114,7 @@ This creates a new tag pointing to the same image digest without duplicating sto
 
 Click on a specific image tag to see detailed metadata:
 
-```
+```text
 Image: myapp:v2.1.0
 ──────────────────────────────────────────────────
 Digest:       sha256:abc123def456...
@@ -140,9 +140,9 @@ In Portainer BE, control which teams can access registry browsing:
 
 1. Go to **Registries → {registry} → Registry access**
 2. Assign access to specific teams:
-   - **Admin** — Full access including delete
-   - **Read only** — Can browse and pull
-   - **No access** — Cannot use the registry
+   - **Admin** - Full access including delete
+   - **Read only** - Can browse and pull
+   - **No access** - Cannot use the registry
 
 ## Comparing Registry Browser vs Registry UI
 

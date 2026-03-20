@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, URLs, Parsing, RFC 2732, Web Development, Programming
+Tags: IPv6, URL, Parsing, RFC 2732, Web Development, Programming
 
 Description: Parse IPv6 addresses from URLs correctly across multiple languages, handling bracket notation, zone IDs, and port numbers per RFC 2732 and RFC 3986.
 
@@ -14,7 +14,7 @@ IPv6 addresses in URLs require bracket notation per RFC 2732 and RFC 3986 to dis
 
 Per RFC 3986, the IPv6 format in URLs is:
 
-```
+```text
 scheme://[ipv6address]:port/path?query#fragment
 
 Examples:
@@ -58,6 +58,7 @@ def parse_ipv6_url(url: str) -> dict:
     }
 
 # Test cases
+
 urls = [
     'http://[2001:db8::1]:8080/api/v1',
     'https://[::1]/admin',
@@ -197,7 +198,7 @@ print(build_url('http', '192.168.1.1', 8080, '/'))
 
 ## Common Mistakes
 
-```
+```text
 # WRONG: IPv6 without brackets causes parsing ambiguity
 http://2001:db8::1:8080/  # Ambiguous - is 8080 part of the address?
 

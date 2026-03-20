@@ -72,6 +72,7 @@ First, label each Kubernetes node with its rack location. This is essential for 
 
 ```bash
 # Label nodes in Rack 1
+
 kubectl label node k8s-node-1 topology.kubernetes.io/rack=rack-1
 kubectl label node k8s-node-2 topology.kubernetes.io/rack=rack-1
 

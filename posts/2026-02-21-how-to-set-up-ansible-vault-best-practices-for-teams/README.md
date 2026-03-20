@@ -24,6 +24,7 @@ Store the vault password in a team password manager like 1Password, Bitwarden, o
 
 ```bash
 # Each team member retrieves the vault password from the team password manager
+
 # Example using 1Password CLI
 op read "op://DevOps/AnsibleVault/password" > ~/.ansible/vault_password
 chmod 600 ~/.ansible/vault_password

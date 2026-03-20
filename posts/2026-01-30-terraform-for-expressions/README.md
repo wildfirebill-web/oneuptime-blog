@@ -91,6 +91,7 @@ locals {
 }
 
 # Result: ["DEV", "STAGING", "PROD"]
+
 ```
 
 You can also access the index of each element by using a two-variable form:

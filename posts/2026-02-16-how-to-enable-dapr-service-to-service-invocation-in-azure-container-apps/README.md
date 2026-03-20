@@ -30,6 +30,7 @@ Here is how to create two services - an order service and a payment service - wi
 
 ```bash
 # Create the order service with Dapr enabled
+
 az containerapp create \
   --name order-service \
   --resource-group my-rg \

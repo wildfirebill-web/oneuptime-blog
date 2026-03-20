@@ -29,6 +29,7 @@ ClickHouse works best with certain kernel settings:
 
 ```yaml
 # talos-clickhouse-patch.yaml
+
 machine:
   sysctls:
     # ClickHouse opens many files during queries

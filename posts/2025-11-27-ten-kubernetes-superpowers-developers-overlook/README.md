@@ -191,6 +191,7 @@ This command injects a busybox container into the running Pod, sharing the netwo
 
 ```bash
 # Inject a debug container into the payments deployment
+
 # --target joins the network/process namespace of the 'api' container
 kubectl debug deploy/payments -it --image=busybox:1.36 --target=api
 ```

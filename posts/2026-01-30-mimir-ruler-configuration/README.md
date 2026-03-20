@@ -65,6 +65,7 @@ The Ruler is configured in the main Mimir configuration file. Here is a minimal 
 
 ```yaml
 # mimir-config.yaml
+
 # Basic Ruler configuration for Grafana Mimir
 
 ruler:

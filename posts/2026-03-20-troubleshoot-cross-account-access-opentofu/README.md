@@ -12,7 +12,7 @@ Managing infrastructure across multiple AWS accounts is common in enterprise env
 
 ## Understanding the Error Pattern
 
-```
+```text
 Error: configuring Terraform AWS Provider: getting caller identity:
 operation error STS: GetCallerIdentity, https response error StatusCode: 403,
 RequestID: ..., api error AccessDenied: User: arn:aws:iam::111111111111:user/ci-user
@@ -27,6 +27,7 @@ The target role must explicitly trust the source identity.
 
 ```bash
 # Check the trust policy of the role you're trying to assume
+
 aws iam get-role \
   --role-name OpenTofuRole \
   --query 'Role.AssumeRolePolicyDocument' \
@@ -174,4 +175,4 @@ resource "aws_s3_bucket_policy" "state" {
 
 ## Summary
 
-Cross-account access failures follow a checklist: verify the target role's trust policy includes the source identity, confirm the source has `sts:AssumeRole` permission for the target role ARN, check provider alias `assume_role` configuration matches the exact role ARN, and for state buckets in another account, add a bucket policy granting the assumed role access. Use `aws sts assume-role` manually to test each hop before debugging OpenTofu — if the CLI fails, OpenTofu will too.
+Cross-account access failures follow a checklist: verify the target role's trust policy includes the source identity, confirm the source has `sts:AssumeRole` permission for the target role ARN, check provider alias `assume_role` configuration matches the exact role ARN, and for state buckets in another account, add a bucket policy granting the assumed role access. Use `aws sts assume-role` manually to test each hop before debugging OpenTofu - if the CLI fails, OpenTofu will too.

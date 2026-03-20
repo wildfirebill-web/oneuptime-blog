@@ -36,6 +36,7 @@ Real-time logs require a Kinesis Data Stream as the delivery target:
 
 ```bash
 # Create a Kinesis data stream for CloudFront logs
+
 aws kinesis create-stream \
   --stream-name cloudfront-realtime-logs \
   --shard-count 2 \

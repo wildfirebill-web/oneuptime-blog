@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6 Renumbering, SLAAC, IPv6, Network Management, RFC 7084
 
-Description: Perform IPv6 network renumbering using SLAAC mechanisms — advertising new prefix, deprecating old prefix, and completing the transition without service disruption.
+Description: Perform IPv6 network renumbering using SLAAC mechanisms - advertising new prefix, deprecating old prefix, and completing the transition without service disruption.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ One of SLAAC's design goals is enabling network renumbering with minimal disrupt
 
 ## Renumbering Overview
 
-```
+```text
 SLAAC Renumbering Phases:
 
 Phase 1: Both prefixes active (parallel operation)
@@ -44,6 +44,7 @@ Total time: Depends on lifetime settings in RA
 
 ```bash
 # radvd: Add new prefix alongside existing prefix
+
 # Edit /etc/radvd.conf to advertise BOTH prefixes:
 
 cat > /etc/radvd.conf << 'EOF'
@@ -147,7 +148,7 @@ sudo systemctl reload radvd
 
 ## Cisco IOS Renumbering
 
-```
+```text
 ! Phase 1: Add new prefix to RA
 interface GigabitEthernet0/1
  ipv6 nd prefix 2001:db8:a::/64 2592000 604800
@@ -189,7 +190,7 @@ done > /tmp/addr_transitions.log
 
 ## Handling DNS During Renumbering
 
-```
+```text
 SLAAC Renumbering Limitation: DNS is not automatic
 
 Challenge:
@@ -220,4 +221,4 @@ Solutions:
 
 ## Conclusion
 
-SLAAC renumbering follows a three-phase process: introduce the new prefix, deprecate the old prefix (set preferred lifetime to 0), and finally withdraw the old prefix. Hosts automatically generate addresses for new prefixes and gracefully stop using deprecated ones. The main challenge is DNS — SLAAC does not automatically update DNS records. Plan DNS updates as part of renumbering. Use short RA intervals during the transition to propagate changes quickly. The deprecation window (time between preferred=0 and valid=0) determines how long existing connections have before the old address is invalidated.
+SLAAC renumbering follows a three-phase process: introduce the new prefix, deprecate the old prefix (set preferred lifetime to 0), and finally withdraw the old prefix. Hosts automatically generate addresses for new prefixes and gracefully stop using deprecated ones. The main challenge is DNS - SLAAC does not automatically update DNS records. Plan DNS updates as part of renumbering. Use short RA intervals during the transition to propagate changes quickly. The deprecation window (time between preferred=0 and valid=0) determines how long existing connections have before the old address is invalidated.

@@ -16,6 +16,7 @@ Ubuntu's default repositories include Redis, but may not have the latest version
 
 ```bash
 # Option 1: Install from Ubuntu repositories (simpler, slightly older version)
+
 sudo apt update
 sudo apt install redis-server
 

@@ -16,6 +16,7 @@ The first sign of a node-level issue is that problems are isolated to a single n
 
 ```bash
 # Check pod status grouped by node
+
 kubectl get pods -n my-app -o wide --sort-by='.spec.nodeName'
 
 # Check ztunnel status per node

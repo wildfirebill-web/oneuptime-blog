@@ -62,6 +62,7 @@ flowchart TB
 
 ```bash
 # Add PowerDNS repository
+
 echo "deb [arch=amd64] http://repo.powerdns.com/ubuntu $(lsb_release -cs)-auth-48 main" | sudo tee /etc/apt/sources.list.d/pdns.list
 
 # Add repository key

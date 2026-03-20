@@ -37,6 +37,7 @@ This playbook installs AIDE on both Debian and RHEL systems:
 
 ```yaml
 # install_aide.yml - Install AIDE file integrity monitoring
+
 ---
 - name: Install AIDE
   hosts: all

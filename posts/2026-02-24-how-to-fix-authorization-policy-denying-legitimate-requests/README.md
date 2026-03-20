@@ -202,6 +202,7 @@ If you have both ALLOW and DENY policies, DENY always wins. A common mistake is 
 
 ```yaml
 # This DENY will block the request even if an ALLOW matches
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

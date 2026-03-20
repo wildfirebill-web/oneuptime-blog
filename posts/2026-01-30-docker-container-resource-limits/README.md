@@ -29,6 +29,7 @@ Check if your system supports cgroups v2:
 
 ```bash
 # Check cgroup version
+
 cat /sys/fs/cgroup/cgroup.controllers
 
 # Expected output on cgroups v2:
@@ -756,7 +757,7 @@ docker info | grep "Storage Driver"
 
 ---
 
-## Resource Limit Best Practices
+Resource Limit Best Practices
 
 ### Memory
 

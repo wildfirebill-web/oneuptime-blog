@@ -18,6 +18,7 @@ Many projects start with Docker Compose for local development but eventually nee
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   web:

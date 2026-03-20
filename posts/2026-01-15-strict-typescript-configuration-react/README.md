@@ -66,6 +66,7 @@ Let's start by creating a new React project with TypeScript or adding TypeScript
 
 ```bash
 # Using Vite (recommended)
+
 npm create vite@latest my-app -- --template react-ts
 
 # Using Create React App

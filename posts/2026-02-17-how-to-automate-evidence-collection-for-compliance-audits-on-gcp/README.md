@@ -344,6 +344,7 @@ Run evidence collection on a regular schedule so you always have fresh data for 
 
 ```bash
 # Deploy the evidence collector as a Cloud Function
+
 gcloud functions deploy collect-audit-evidence \
   --runtime=python311 \
   --trigger-topic=collect-evidence \

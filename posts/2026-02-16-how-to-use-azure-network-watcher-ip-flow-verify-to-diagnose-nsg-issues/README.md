@@ -35,6 +35,7 @@ The most common scenario: your VM cannot reach a destination. Check if the outbo
 
 ```bash
 # Check if VM can send TCP traffic to destination on port 443
+
 az network watcher test-ip-flow \
   --resource-group myResourceGroup \
   --vm myVM \

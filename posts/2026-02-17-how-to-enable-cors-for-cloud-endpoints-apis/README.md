@@ -26,6 +26,7 @@ Here is a basic OpenAPI spec with CORS enabled for a simple API:
 
 ```yaml
 # openapi-spec.yaml - OpenAPI spec with CORS configuration for Cloud Endpoints
+
 swagger: "2.0"
 info:
   title: "My API"

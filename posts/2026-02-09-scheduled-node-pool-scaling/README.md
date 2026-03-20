@@ -24,6 +24,7 @@ Create scale-down and scale-up CronJobs:
 
 ```yaml
 # scale-down-cronjob.yaml
+
 apiVersion: batch/v1
 kind: CronJob
 metadata:

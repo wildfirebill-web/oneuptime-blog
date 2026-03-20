@@ -14,24 +14,24 @@ The Binding Cache is the state table maintained by Home Agents (and optionally C
 
 Each entry in the Binding Cache contains:
 
-```
+```text
 Binding Cache Entry:
-├── Home Address (HoA)        — Key: MN's permanent address
-├── Care-of Address (CoA)     — Current location
-├── Binding ID                — Unique identifier
-├── Lifetime                  — Remaining validity in seconds
-├── Sequence Number           — Last accepted BU sequence
+├── Home Address (HoA)        - Key: MN's permanent address
+├── Care-of Address (CoA)     - Current location
+├── Binding ID                - Unique identifier
+├── Lifetime                  - Remaining validity in seconds
+├── Sequence Number           - Last accepted BU sequence
 ├── Flags
-│   ├── R: Registration       — True for Home Registrations
-│   ├── P: Proxy Registration — True for PMIPv6 entries
-│   └── A: Active             — True when routing via this entry
-└── Timestamp                 — When entry was created/updated
+│   ├── R: Registration       - True for Home Registrations
+│   ├── P: Proxy Registration - True for PMIPv6 entries
+│   └── A: Active             - True when routing via this entry
+└── Timestamp                 - When entry was created/updated
 ```
 
 ## Binding Cache Operations
 
 ```python
-# binding_cache.py — simplified Binding Cache implementation
+# binding_cache.py - simplified Binding Cache implementation
 
 import time
 from dataclasses import dataclass, field
@@ -120,6 +120,7 @@ class BindingCache:
 
 ```bash
 # View the Binding Cache contents
+
 sudo mip6d -n
 
 # Example output:
@@ -157,7 +158,7 @@ cat /proc/net/mip6
 
 ## Lifetime Management
 
-```
+```text
 Binding lifetime negotiation:
   MN requests:  600 seconds (MN's BU lifetime field)
   HA grants:    600 seconds (or less, based on policy)

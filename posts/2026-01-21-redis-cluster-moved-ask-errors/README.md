@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Redis Cluster, Troubleshooting, MOVED, ASK, Sharding
+Tags: Redis, Redis Cluster, Troubleshooting, Moved, ASK, Sharding
 
 Description: A comprehensive guide to understanding and resolving Redis Cluster MOVED and ASK redirections, including client configuration, slot migration issues, and cluster topology problems.
 
@@ -44,6 +44,7 @@ First, verify the overall cluster state:
 
 ```bash
 # Connect to any cluster node
+
 redis-cli -c -h 192.168.1.100 -p 6379
 
 # Check cluster status

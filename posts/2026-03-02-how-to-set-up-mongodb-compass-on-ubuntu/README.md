@@ -35,6 +35,7 @@ MongoDB provides Compass as a `.deb` package. Download the latest version:
 
 ```bash
 # Check the MongoDB Compass releases page for the latest version number
+
 # As of writing, download version 1.x
 wget https://downloads.mongodb.com/compass/mongodb-compass_1.44.0_amd64.deb
 

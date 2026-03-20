@@ -14,6 +14,7 @@ Kubernetes microsegmentation uses Network Policies to control traffic between po
 
 ```hcl
 # main.tf - Default deny all ingress and egress per namespace
+
 resource "kubernetes_network_policy" "default_deny" {
   for_each = toset(["production", "staging", "database"])
 

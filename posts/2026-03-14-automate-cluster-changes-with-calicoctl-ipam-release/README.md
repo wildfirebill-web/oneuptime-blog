@@ -83,6 +83,7 @@ jobs:
 
 ```bash
 # Test the CronJob
+
 kubectl create job --from=cronjob/calico-ipam-release-job test-job -n calico-system
 kubectl logs -n calico-system -l job-name=test-job -f
 ```

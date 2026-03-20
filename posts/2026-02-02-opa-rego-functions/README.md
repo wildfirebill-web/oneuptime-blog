@@ -36,6 +36,7 @@ Every Rego rule consists of a head (what it produces) and a body (the conditions
 
 ```rego
 # policy.rego
+
 # Basic rule structure - head := value { body }
 package authz
 
@@ -378,7 +379,7 @@ walk_up(employee, n) = result {
 
 Complex policies often need to aggregate data: counting resources, summing quotas, or calculating averages. Rego provides aggregation functions that work with comprehensions.
 
-### Resource Quota Enforcement
+Resource Quota Enforcement
 
 Enforce limits on resource creation by aggregating current usage and comparing against quotas.
 

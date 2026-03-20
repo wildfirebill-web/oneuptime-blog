@@ -261,6 +261,7 @@ fn on_http_response_headers(&mut self, _num_headers: usize, _end_of_stream: bool
 
 ```bash
 # Send requests and observe rate limiting
+
 for i in $(seq 1 120); do
   STATUS=$(kubectl exec test-pod -n my-app -- curl -s -o /dev/null -w "%{http_code}" \
     -H "x-api-key: test-key" http://api-gateway:8080/api/data)

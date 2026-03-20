@@ -41,6 +41,7 @@ For Ubuntu/Debian:
 
 ```bash
 # Install build dependencies
+
 sudo apt-get update
 sudo apt-get install php8.2-dev pkg-config build-essential
 

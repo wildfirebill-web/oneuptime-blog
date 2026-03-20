@@ -64,6 +64,7 @@ You can verify your Istio installation with the following command:
 
 ```bash
 # Verify Istio installation and check the version
+
 istioctl version
 ```
 

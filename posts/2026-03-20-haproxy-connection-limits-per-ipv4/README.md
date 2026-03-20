@@ -112,6 +112,7 @@ frontend http_in
 
 ```bash
 # Show stick table contents with connection counts
+
 echo "show table http_in" | sudo socat stdio /run/haproxy/admin.sock
 
 # Sample output:

@@ -16,6 +16,7 @@ tmux runs a server process on the remote machine. Your SSH session connects to t
 
 ```bash
 # The tmux server runs as a background process
+
 ps aux | grep tmux
 
 # Example output:

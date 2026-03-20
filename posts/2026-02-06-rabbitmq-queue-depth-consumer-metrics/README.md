@@ -158,6 +158,7 @@ processors:
 
 ```yaml
 # Queue depth growing
+
 - alert: RabbitMQQueueBacklog
   condition: rabbitmq.message.current{state="ready"} > 10000
   for: 10m

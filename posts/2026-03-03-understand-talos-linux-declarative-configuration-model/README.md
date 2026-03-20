@@ -18,6 +18,7 @@ In imperative configuration, you tell the system what to do step by step:
 
 ```bash
 # Imperative approach (traditional Linux)
+
 hostnamectl set-hostname worker-01
 ip addr add 10.0.0.11/24 dev eth0
 ip route add default via 10.0.0.1

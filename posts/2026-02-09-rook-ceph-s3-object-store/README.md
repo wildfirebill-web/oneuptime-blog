@@ -22,6 +22,7 @@ Create a CephObjectStore resource to provision RGW daemons and storage pools.
 
 ```yaml
 # object-store.yaml
+
 apiVersion: ceph.rook.io/v1
 kind: CephObjectStore
 metadata:

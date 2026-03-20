@@ -20,6 +20,7 @@ Learn how to configure Azure DevOps pipelines to run OpenTofu plan and apply wit
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

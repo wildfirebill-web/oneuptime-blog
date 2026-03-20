@@ -291,6 +291,7 @@ flowchart TD
 
 ```bash
 # .gitattributes - Use Git LFS for screenshots
+
 *.png filter=lfs diff=lfs merge=lfs -text
 tests/**/__snapshots__/** filter=lfs diff=lfs merge=lfs -text
 ```
@@ -334,7 +335,7 @@ updateBaselines();
 
 ### Handling Baseline Updates in Pull Requests
 
-```yaml
+````yaml
 # .github/workflows/visual-tests.yml
 name: Visual Regression Tests
 
@@ -393,14 +394,14 @@ jobs:
               1. Download the [test artifacts](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})
               2. Review the differences in \`playwright-report/index.html\`
               3. If changes are intentional, update baselines with:
-                 \`\`\`
+                 ```
                  npx playwright test --update-snapshots
                  git add tests/**/__snapshots__
                  git commit -m "chore: update visual baselines"
-                 \`\`\`
+                 ```
               `
             });
-```
+````
 
 ---
 

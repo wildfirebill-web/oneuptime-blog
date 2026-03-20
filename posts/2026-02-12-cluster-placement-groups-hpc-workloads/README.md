@@ -43,6 +43,7 @@ Let's build an HPC cluster from scratch. First, create the placement group:
 
 ```bash
 # Create a cluster placement group for HPC
+
 aws ec2 create-placement-group \
   --group-name hpc-cluster \
   --strategy cluster \

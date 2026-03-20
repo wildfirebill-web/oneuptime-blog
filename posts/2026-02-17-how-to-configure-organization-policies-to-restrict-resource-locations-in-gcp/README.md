@@ -37,6 +37,7 @@ If your compliance requirement is to keep all resources in the United States:
 
 ```yaml
 # us-only-policy.yaml
+
 # Restrict all resources to US locations
 constraint: constraints/gcp.resourceLocations
 listPolicy:

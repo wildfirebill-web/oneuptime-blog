@@ -16,6 +16,7 @@ The API server exposes metrics at the `/metrics` endpoint:
 
 ```bash
 # Access metrics through kubectl
+
 kubectl get --raw /metrics
 
 # The output is in Prometheus format

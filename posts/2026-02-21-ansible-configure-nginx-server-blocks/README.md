@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, NGINX, Virtual Hosts, Web Server Configuration
+Tags: Ansible, Nginx, Virtual Hosts, Web Server Configuration
 
 Description: Learn how to manage multiple Nginx server blocks for different websites and applications using Ansible templates and variables.
 
@@ -29,6 +29,7 @@ The key to managing multiple server blocks with Ansible is defining them as a li
 
 ```yaml
 # group_vars/webservers.yml
+
 ---
 nginx_server_blocks:
   - name: webapp

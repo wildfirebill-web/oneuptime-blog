@@ -14,7 +14,7 @@ RFC 8200 mandates that every link carrying IPv6 traffic must support a minimum M
 
 The 1280-byte minimum was set to satisfy several constraints simultaneously:
 
-```
+```text
 Design requirements for the IPv6 minimum MTU:
 
 1. Must be larger than IPv6 base header (40 bytes) by a useful amount
@@ -37,7 +37,7 @@ Design requirements for the IPv6 minimum MTU:
 
 ## Comparison with IPv4 Minimums
 
-```
+```text
 IPv4:
   RFC 791: Minimum MTU = 68 bytes
   RFC 1191: Recommended minimum = 576 bytes
@@ -52,7 +52,7 @@ IPv6:
 
 ## Practical Impact on Network Design
 
-```
+```text
 Links where MTU challenges arise:
 
 1. DSL PPPoE:
@@ -80,6 +80,7 @@ Links where MTU challenges arise:
 
 ```bash
 # Check current MTU on all interfaces
+
 ip link show | grep -E "^[0-9]+:|mtu"
 
 # Specifically check IPv6-relevant MTU

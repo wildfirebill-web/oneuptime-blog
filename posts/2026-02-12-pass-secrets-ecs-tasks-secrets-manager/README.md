@@ -36,6 +36,7 @@ First, create your secrets in Secrets Manager. You can store them as plain strin
 
 ```bash
 # Store a simple string secret
+
 aws secretsmanager create-secret \
   --name production/database/password \
   --secret-string "my-super-secret-password"

@@ -36,6 +36,7 @@ Bedrock Knowledge Bases connect to an S3 data source, process documents automati
 
 ```python
 # Create a Bedrock Knowledge Base with S3 data source
+
 import boto3
 import json
 import time

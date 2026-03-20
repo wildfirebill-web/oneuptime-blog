@@ -16,6 +16,7 @@ Start with the basics:
 
 ```bash
 # Current resource usage
+
 kubectl top pod -n istio-system -l app=istiod
 
 # Resource limits

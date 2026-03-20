@@ -40,6 +40,7 @@ Start by installing Flux CD alongside your existing Jenkins-managed deployments.
 
 ```bash
 # Install the Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Bootstrap Flux into your cluster with your Git repository

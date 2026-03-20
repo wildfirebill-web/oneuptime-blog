@@ -27,6 +27,7 @@ Create a new Backstage application:
 
 ```bash
 # Create a new Backstage app
+
 npx @backstage/create-app@latest
 
 # Follow the prompts

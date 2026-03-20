@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Monitoring, Prometheus, Alerting, Network
+Tags: Python, IPv6, Monitoring, Prometheus, Alerting, Networks
 
 Description: Build IPv6 network monitoring tools in Python that check reachability, measure latency, and expose metrics via Prometheus.
 
@@ -45,6 +45,7 @@ def ping6(host: str, count: int = 3) -> PingResult:
     )
 
 # Monitor a list of IPv6 hosts
+
 targets = [
     "2001:4860:4860::8888",   # Google DNS
     "2606:4700:4700::1111",   # Cloudflare DNS

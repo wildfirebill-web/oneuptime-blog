@@ -30,6 +30,7 @@ The Hubble exporter runs as part of the Cilium agent. Enable it through Helm val
 
 ```yaml
 # cilium-exporter-values.yaml
+
 hubble:
   enabled: true
   export:

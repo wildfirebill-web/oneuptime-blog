@@ -1,4 +1,4 @@
-# How to Inspect Helm Chart Details in Portainer
+# How to Inspect Helm Chart Details in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,7 +22,7 @@ After deploying Helm charts in Portainer, you need visibility into what was depl
 
 The release list shows:
 
-```
+```text
 RELEASE         NAMESPACE     CHART                    VERSION   STATUS     AGE
 nginx-ingress   ingress-nginx nginx-ingress-controller  4.8.0    deployed   3d
 prometheus      monitoring    kube-prometheus-stack     54.0.0   deployed   7d
@@ -34,7 +34,7 @@ my-app          production    my-app-chart              1.2.0    deployed   1d
 
 Click on a release name to see detailed information:
 
-```
+```text
 Release: nginx-ingress
 ──────────────────────────────────────────────────
 Chart:          nginx-ingress-controller-4.8.0
@@ -49,7 +49,7 @@ App version:    1.9.4
 
 Helm chart notes appear after deployment and provide important post-install instructions:
 
-```
+```bash
 NOTES:
 The nginx-ingress-controller has been installed.
 
@@ -80,6 +80,7 @@ controller:
 
 ```bash
 # CLI equivalent
+
 helm get values nginx-ingress --namespace ingress-nginx
 
 # Show ALL values (user + defaults)

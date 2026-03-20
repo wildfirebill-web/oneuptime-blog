@@ -77,6 +77,7 @@ Every request to your application needs to carry tenant context. Here is how to 
 
 ```python
 # middleware/tenant_context.py
+
 import contextvars
 from functools import wraps
 from flask import request, g

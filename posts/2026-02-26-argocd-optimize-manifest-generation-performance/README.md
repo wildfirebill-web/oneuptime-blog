@@ -48,6 +48,7 @@ The biggest Helm performance win is pre-building chart dependencies. When a Helm
 
 ```bash
 # In your CI pipeline, pre-build dependencies
+
 cd charts/my-app
 helm dependency build
 

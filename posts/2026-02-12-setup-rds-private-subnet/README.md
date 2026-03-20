@@ -45,6 +45,7 @@ This creates a VPC with a CIDR block large enough for multiple subnets.
 
 ```bash
 # Create the VPC
+
 VPC_ID=$(aws ec2 create-vpc \
   --cidr-block 10.0.0.0/16 \
   --tag-specifications 'ResourceType=vpc,Tags=[{Key=Name,Value=my-app-vpc}]' \

@@ -26,6 +26,7 @@ Create the project directory structure:
 
 ```bash
 # Create project directories for Caddy configuration and site files
+
 mkdir -p caddy-docker/{site,data,config}
 cd caddy-docker
 ```

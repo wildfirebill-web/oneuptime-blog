@@ -32,6 +32,7 @@ Find labels contributing to cardinality explosions:
 
 ```promql
 # Count unique values per label
+
 count by (__name__, label_name) (
   {__name__=~".+"}
 )

@@ -25,6 +25,7 @@ A GitOps approach to backup configuration also makes disaster recovery testing r
 
 ```yaml
 # infrastructure/databases/postgres/backup-credentials.yaml (use SealedSecret)
+
 apiVersion: v1
 kind: Secret
 metadata:

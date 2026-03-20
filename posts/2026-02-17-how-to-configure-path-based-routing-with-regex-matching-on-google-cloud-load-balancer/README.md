@@ -28,6 +28,7 @@ Before configuring routing, create the backend services that will receive traffi
 
 ```bash
 # Create health checks for each backend
+
 gcloud compute health-checks create http api-health-check \
   --port=8080 \
   --request-path=/health \

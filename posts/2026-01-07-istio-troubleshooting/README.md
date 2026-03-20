@@ -66,6 +66,7 @@ The `istioctl` command-line tool is your primary debugging companion. Ensure you
 
 ```bash
 # Check the current istioctl version and ensure it matches your cluster
+
 # This is critical because version mismatches can cause configuration issues
 istioctl version
 

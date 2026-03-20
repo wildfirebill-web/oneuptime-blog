@@ -42,6 +42,7 @@ These tell you about the Envoy process itself:
 
 ```promql
 # Is the proxy alive? (1 = live, 0 = not)
+
 envoy_server_live{pod="my-service-abc123"}
 
 # Memory allocated by Envoy

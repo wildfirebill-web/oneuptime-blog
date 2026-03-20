@@ -27,6 +27,7 @@ This guide provides a structured migration process from an open-by-default clust
 
 ```bash
 # List all existing Kubernetes NetworkPolicies
+
 kubectl get networkpolicies --all-namespaces -o json | jq '.items[] | {name: .metadata.name, namespace: .metadata.namespace}'
 
 # List all Calico policies

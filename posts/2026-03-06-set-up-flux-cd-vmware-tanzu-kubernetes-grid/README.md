@@ -31,6 +31,7 @@ Install the Flux CLI on your workstation:
 
 ```bash
 # Install Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify the installation

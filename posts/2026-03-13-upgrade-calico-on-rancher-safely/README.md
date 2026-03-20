@@ -30,6 +30,7 @@ Determine whether Calico is managed by Rancher or installed separately.
 
 ```bash
 # Check if Calico is managed by Rancher (bundled in RKE2)
+
 kubectl get pods -n kube-system | grep -E "calico|canal"
 
 # Check if Tigera Operator is present (operator-managed Calico)

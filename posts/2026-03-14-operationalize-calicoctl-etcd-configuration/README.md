@@ -31,6 +31,7 @@ Create automated etcd backups that capture all Calico data:
 ```bash
 #!/bin/bash
 # calico-etcd-backup.sh
+
 # Automated backup of Calico data from etcd
 
 set -euo pipefail

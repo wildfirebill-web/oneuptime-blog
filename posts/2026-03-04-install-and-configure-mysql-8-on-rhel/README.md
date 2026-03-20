@@ -14,6 +14,7 @@ RHEL ships with MariaDB by default, but you can install MySQL 8.0 from the offic
 
 ```bash
 # Download and install the MySQL repository package
+
 sudo dnf install -y https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
 
 # Verify the repository is enabled

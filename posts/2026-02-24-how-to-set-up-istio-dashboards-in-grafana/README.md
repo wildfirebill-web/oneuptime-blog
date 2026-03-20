@@ -71,6 +71,7 @@ Create ConfigMaps with the dashboard JSON and label them so Grafana's sidecar pi
 
 ```bash
 # Download the dashboard JSON files
+
 ISTIO_VERSION=1.24.0
 
 for dashboard in mesh workload service pilot; do

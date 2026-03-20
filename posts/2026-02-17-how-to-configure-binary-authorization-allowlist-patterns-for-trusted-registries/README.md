@@ -46,6 +46,7 @@ These are essential. Without them, GKE system components like kube-proxy, metric
 
 ```bash
 # Export the current Binary Authorization policy
+
 gcloud container binauthz policy export --project=my-project-id
 ```
 

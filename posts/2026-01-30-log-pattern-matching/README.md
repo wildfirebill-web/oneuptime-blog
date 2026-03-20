@@ -47,6 +47,7 @@ from datetime import datetime
 from typing import Optional, Dict, Any
 
 # Define a pattern for standard log format
+
 # Example: "2026-01-30 14:23:45 INFO User login successful"
 LOG_PATTERN = re.compile(
     r"(?P<timestamp>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\s+"  # Capture timestamp

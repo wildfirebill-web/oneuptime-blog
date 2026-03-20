@@ -45,6 +45,7 @@ These recommendations are based on well-established cloud architecture best prac
 
 ```bash
 # Create an Advisor alert for new reliability recommendations
+
 az advisor configuration create-or-update \
   --resource-group rg-monitoring
 

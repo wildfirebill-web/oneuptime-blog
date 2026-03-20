@@ -1,4 +1,4 @@
-# How to Use the Operator Role in Portainer for Kubernetes
+# How to Use the Operator Role in Portainer for Kubernetes - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure and use the Operator role in Portainer for Kubernetes env
 
 ## Introduction
 
-The Operator role in Portainer is designed specifically for Kubernetes environments. It provides a middle ground between the Standard User and Administrator roles — operators can deploy and manage applications but cannot modify cluster-level resources or infrastructure settings. This guide covers the Operator role's capabilities and configuration.
+The Operator role in Portainer is designed specifically for Kubernetes environments. It provides a middle ground between the Standard User and Administrator roles - operators can deploy and manage applications but cannot modify cluster-level resources or infrastructure settings. This guide covers the Operator role's capabilities and configuration.
 
 ## Operator vs. Standard User vs. Administrator in Kubernetes
 
@@ -51,6 +51,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Assign team 3 (developers) to Kubernetes environment 5 with Operator role
+
 curl -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -98,7 +99,7 @@ curl -X PUT \
 
 ## Typical Kubernetes Team Structure
 
-```
+```text
 Organization Kubernetes Access Design:
 
 Platform Team → Administrator role → All environments
@@ -125,4 +126,4 @@ Scale a deployment:
 
 ## Conclusion
 
-The Operator role is ideal for development teams working in Kubernetes environments where the platform team wants to maintain control over cluster infrastructure while empowering developers to self-service their application deployments. Combined with namespace-level access control, it provides the exact level of access needed — enough to be productive, not enough to cause cluster-level issues.
+The Operator role is ideal for development teams working in Kubernetes environments where the platform team wants to maintain control over cluster infrastructure while empowering developers to self-service their application deployments. Combined with namespace-level access control, it provides the exact level of access needed - enough to be productive, not enough to cause cluster-level issues.

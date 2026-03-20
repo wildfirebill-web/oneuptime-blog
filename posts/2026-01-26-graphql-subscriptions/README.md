@@ -49,6 +49,7 @@ Let's build a complete example using Apollo Server. First, initialize your proje
 
 ```bash
 # Create a new project directory
+
 mkdir graphql-subscriptions-demo
 cd graphql-subscriptions-demo
 

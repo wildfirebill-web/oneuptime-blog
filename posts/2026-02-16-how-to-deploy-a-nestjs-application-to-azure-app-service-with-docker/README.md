@@ -18,6 +18,7 @@ Scaffold a new NestJS project.
 
 ```bash
 # Install the NestJS CLI
+
 npm install -g @nestjs/cli
 
 # Create a new project

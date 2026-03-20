@@ -99,6 +99,7 @@ Check which images exist in each store:
 
 ```bash
 # Rootless images
+
 podman images
 
 # Rootful images

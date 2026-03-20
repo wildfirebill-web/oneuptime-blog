@@ -14,6 +14,7 @@ The "CLUSTERDOWN The cluster is down" error indicates that your Redis Cluster ca
 
 ```python
 # Error message:
+
 # redis.exceptions.ResponseError: CLUSTERDOWN The cluster is down
 
 # Or more specific:

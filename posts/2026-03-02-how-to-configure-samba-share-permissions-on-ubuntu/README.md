@@ -26,6 +26,7 @@ Before configuring Samba, ensure the Linux filesystem permissions are correct:
 
 ```bash
 # Create the share directory
+
 sudo mkdir -p /srv/samba/department
 
 # Set ownership: owned by root, group access for the 'finance' group

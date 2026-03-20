@@ -1,4 +1,4 @@
-# How to Set Up a Rust Development Environment with Portainer
+# How to Set Up a Rust Development Environment with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Rust development in Docker can be challenging due to long compile times, but wit
 
 ```dockerfile
 # Dockerfile.dev - Rust development environment
+
 FROM rust:1.76-slim-bookworm
 
 # Install system dependencies

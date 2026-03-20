@@ -141,6 +141,7 @@ Apply it and watch the metrics:
 kubectl apply -f virtualservice-canary.yaml
 
 # Verify the config
+
 istioctl proxy-config routes deploy/my-app-v1 --name "80" -o json
 ```
 

@@ -136,6 +136,7 @@ Confirm that the shard controller is running and reconciling resources in its as
 
 ```bash
 # Check shard controller pods
+
 kubectl get pods -n flux-system -l app=kustomize-controller-shard-alpha
 
 # Check reconciliation status in the sharded namespace

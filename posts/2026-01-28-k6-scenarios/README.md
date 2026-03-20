@@ -422,6 +422,7 @@ Run with different configurations:
 
 ```bash
 # Smoke test
+
 k6 run -e TEST_TYPE=smoke script.js
 
 # Stress test

@@ -30,6 +30,7 @@ Each nspawn container runs as a systemd service named `systemd-nspawn@<name>.ser
 
 ```bash
 # Create an override for the container service
+
 sudo systemctl edit systemd-nspawn@mycontainer.service
 ```
 

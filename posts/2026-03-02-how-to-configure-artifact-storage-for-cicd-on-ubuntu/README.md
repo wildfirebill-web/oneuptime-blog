@@ -31,6 +31,7 @@ Nexus requires Java 11 or 17 and at least 4GB RAM.
 
 ```bash
 # Install Java 17
+
 sudo apt update
 sudo apt install -y openjdk-17-jdk
 

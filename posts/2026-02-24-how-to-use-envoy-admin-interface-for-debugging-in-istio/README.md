@@ -58,6 +58,7 @@ This is massive output. Filter by config type:
 
 ```bash
 # Just listeners
+
 kubectl exec my-pod -c istio-proxy -- curl -s "localhost:15000/config_dump?resource=dynamic_listeners"
 
 # Just routes

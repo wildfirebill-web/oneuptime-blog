@@ -242,6 +242,7 @@ A common pattern is using S3 cross-region replication with an origin group for s
 
 ```bash
 # Create an S3 bucket in the secondary region
+
 aws s3 mb s3://my-website-secondary --region us-west-2
 
 # Enable cross-region replication from primary to secondary

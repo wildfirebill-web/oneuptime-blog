@@ -101,6 +101,7 @@ Take an etcd snapshot of the management cluster:
 
 ```bash
 # For RKE2
+
 rke2 etcd-snapshot save --name pre-upgrade-$(date +%Y%m%d%H%M%S)
 ```
 

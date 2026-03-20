@@ -8,7 +8,7 @@ Description: A practical guide to understanding how DHCPv6 T1 and T2 timers cont
 
 ## Overview
 
-DHCPv6 uses two timers — **T1 (Renew)** and **T2 (Rebind)** — to manage the lifecycle of leased addresses and prefixes. Understanding these timers is critical for maintaining stable IPv6 connectivity and avoiding address expiration.
+DHCPv6 uses two timers - **T1 (Renew)** and **T2 (Rebind)** - to manage the lifecycle of leased addresses and prefixes. Understanding these timers is critical for maintaining stable IPv6 connectivity and avoiding address expiration.
 
 ## The DHCPv6 Lease Lifecycle
 
@@ -38,8 +38,8 @@ sequenceDiagram
 |-------|---------|---------|
 | **T1** | 0.5 × valid lifetime | Time after which client sends Renew to the original server via unicast |
 | **T2** | 0.8 × valid lifetime | Time after which client sends Rebind to any server via multicast |
-| **Preferred Lifetime** | — | After this, address becomes deprecated (still usable but new connections avoided) |
-| **Valid Lifetime** | — | After this, address is fully expired and removed |
+| **Preferred Lifetime** | - | After this, address becomes deprecated (still usable but new connections avoided) |
+| **Valid Lifetime** | - | After this, address is fully expired and removed |
 
 ## Viewing Timer Values on Linux
 
@@ -47,6 +47,7 @@ The `ip` command shows the current state of DHCPv6-assigned addresses, including
 
 ```bash
 # Show IPv6 address details including preferred and valid lifetimes
+
 ip -6 addr show dev eth0
 
 # Example output:
@@ -93,10 +94,10 @@ If neither the original server nor any other server responds before the valid li
 
 ## Best Practices
 
-- **Set T1 to 50% of valid lifetime** — This is the RFC 8415 recommendation and provides ample time for renewal before expiry.
-- **Set T2 to 80% of valid lifetime** — Gives the client a window to try any available server before the lease expires.
-- **Keep valid lifetime longer than preferred lifetime** — This allows for graceful deprecation without abrupt disconnection.
-- **Monitor renewal failures** — If clients are consistently hitting T2 before renewing, your primary DHCPv6 server may be unreachable or overloaded.
+- **Set T1 to 50% of valid lifetime** - This is the RFC 8415 recommendation and provides ample time for renewal before expiry.
+- **Set T2 to 80% of valid lifetime** - Gives the client a window to try any available server before the lease expires.
+- **Keep valid lifetime longer than preferred lifetime** - This allows for graceful deprecation without abrupt disconnection.
+- **Monitor renewal failures** - If clients are consistently hitting T2 before renewing, your primary DHCPv6 server may be unreachable or overloaded.
 
 ## Summary
 

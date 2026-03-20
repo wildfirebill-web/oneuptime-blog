@@ -24,6 +24,7 @@ Increasing disk size is the one resize operation that requires no restart and ca
 
 ```bash
 # Increase storage size - no restart required
+
 gcloud sql instances patch my-instance \
     --storage-size=200GB
 ```

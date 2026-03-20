@@ -74,6 +74,7 @@ netsh interface ipv6 reset
 
 ```powershell
 # No built-in PowerShell cmdlets for prefix policy table
+
 # Use netsh via PowerShell:
 $policies = netsh interface ipv6 show prefixpolicies
 $policies

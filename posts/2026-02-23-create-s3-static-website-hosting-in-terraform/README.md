@@ -22,6 +22,7 @@ provider "aws" {
 }
 
 # Create the S3 bucket for the website
+
 resource "aws_s3_bucket" "website" {
   bucket = "my-awesome-website-2026"  # Must be globally unique
 

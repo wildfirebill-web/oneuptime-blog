@@ -16,6 +16,7 @@ Create an IPAM and scope:
 
 ```bash
 # Create IPAM
+
 aws ec2 create-ipam \
   --region us-east-1 \
   --description "Organization IPAM" \

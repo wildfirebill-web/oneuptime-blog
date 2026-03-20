@@ -68,6 +68,7 @@ The architecture consists of three main components:
 
 ```bash
 # Install Celery with Redis support
+
 pip install celery[redis] redis
 
 # For RabbitMQ support

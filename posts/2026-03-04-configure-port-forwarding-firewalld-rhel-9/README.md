@@ -28,6 +28,7 @@ Redirect traffic from one port to another on the same machine.
 
 ```bash
 # Forward incoming port 80 to local port 8080
+
 firewall-cmd --zone=public --add-forward-port=port=80:proto=tcp:toport=8080 --permanent
 firewall-cmd --reload
 ```

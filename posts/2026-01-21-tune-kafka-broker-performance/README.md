@@ -28,6 +28,7 @@ Kafka requires many file descriptors for partition log segments and network conn
 
 ```bash
 # Check current limits
+
 ulimit -n
 
 # Set in /etc/security/limits.conf

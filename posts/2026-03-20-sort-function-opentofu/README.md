@@ -1,8 +1,8 @@
-# How to Use the sort Function in OpenTofu
+# How to Use the sort Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, sort, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Sort, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the sort function in OpenTofu to sort a list of strings in lexicographic (alphabetical) order.
 
@@ -148,4 +148,4 @@ locals {
 
 ## Summary
 
-`sort(list)` returns a lexicographically sorted list of strings. Use it to normalize the order of resource name lists, IP address lists, and tag keys so that plans are consistent even when input order varies. For descending order, use `reverse(sort(list))`. Sorting is only supported for lists of strings — to sort numbers, convert to strings first or use a for expression with a custom comparator.
+`sort(list)` returns a lexicographically sorted list of strings. Use it to normalize the order of resource name lists, IP address lists, and tag keys so that plans are consistent even when input order varies. For descending order, use `reverse(sort(list))`. Sorting is only supported for lists of strings - to sort numbers, convert to strings first or use a for expression with a custom comparator.

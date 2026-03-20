@@ -32,6 +32,7 @@ Google maintains a repository of community builders at `gcr.io/cloud-builders/`.
 
 ```yaml
 # Some popular community and official builders
+
 steps:
   # kubectl for Kubernetes operations
   - name: 'gcr.io/cloud-builders/kubectl'

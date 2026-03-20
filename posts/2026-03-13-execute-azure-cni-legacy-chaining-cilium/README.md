@@ -26,6 +26,7 @@ Check that Azure CNI is running and pods have VNet IP addresses.
 
 ```bash
 # Confirm Azure CNI DaemonSet is running
+
 kubectl get pods -n kube-system | grep azure
 
 # Verify pods have VNet CIDR IPs

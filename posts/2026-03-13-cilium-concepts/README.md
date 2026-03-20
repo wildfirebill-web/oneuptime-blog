@@ -29,6 +29,7 @@ Understand and configure the key Cilium objects:
 
 ```bash
 # Cilium Endpoints - representation of pods/processes on this node
+
 kubectl -n kube-system exec ds/cilium -- cilium endpoint list
 
 # Cilium Identities - security identity derived from labels

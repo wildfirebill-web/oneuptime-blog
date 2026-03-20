@@ -32,6 +32,7 @@ flowchart LR
 
 ```bash
 # Initialize the project
+
 mkdir eventdriven-service && cd eventdriven-service
 go mod init eventdriven-service
 

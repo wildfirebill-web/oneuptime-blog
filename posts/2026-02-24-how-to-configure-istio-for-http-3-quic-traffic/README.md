@@ -203,6 +203,7 @@ Test with curl (version 7.88+ compiled with HTTP/3 support):
 
 ```bash
 # First request - HTTP/2 (gets Alt-Svc header)
+
 curl -v --http2 https://app.example.com/
 
 # Force HTTP/3

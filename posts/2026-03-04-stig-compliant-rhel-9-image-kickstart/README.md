@@ -33,6 +33,7 @@ The scap-security-guide includes a Kickstart file for STIG:
 
 ```bash
 # Install the SSG on your build server
+
 dnf install -y scap-security-guide
 
 # Find the STIG Kickstart template

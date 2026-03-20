@@ -14,6 +14,7 @@ A VXLAN interface can operate in two ways: it can have an IP address (for Layer 
 
 ```bash
 # Create the VXLAN interface with VNI 100
+
 ip link add vxlan0 type vxlan \
     id 100 \
     dstport 4789 \
@@ -78,12 +79,12 @@ ip route get 192.168.100.2
 ## Multiple VXLANs with Different IPs
 
 ```bash
-# VNI 100 — Overlay subnet A
+# VNI 100 - Overlay subnet A
 ip link add vxlan100 type vxlan id 100 dstport 4789 local 10.0.0.1 dev eth0
 ip addr add 10.100.0.1/24 dev vxlan100
 ip link set vxlan100 up
 
-# VNI 200 — Overlay subnet B
+# VNI 200 - Overlay subnet B
 ip link add vxlan200 type vxlan id 200 dstport 4789 local 10.0.0.1 dev eth0
 ip addr add 10.200.0.1/24 dev vxlan200
 ip link set vxlan200 up

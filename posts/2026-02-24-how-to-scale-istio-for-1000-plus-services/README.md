@@ -210,6 +210,7 @@ At scale, you need to monitor istiod actively. Key metrics to watch:
 
 ```bash
 # Check push metrics
+
 kubectl exec -n istio-system deploy/istiod -- \
   curl -s localhost:15014/metrics | grep -E "pilot_xds_pushes|pilot_push_triggers|pilot_proxy_convergence_time"
 ```

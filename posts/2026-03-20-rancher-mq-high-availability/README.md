@@ -1,8 +1,8 @@
-# How to Configure Message Queue High Availability in Rancher
+# How to Configure Message Queue High Availability in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Message Queue, High Availability, RabbitMQ, Kafka
+Tags: Rancher, Kubernetes, Message Queues, High Availability, RabbitMQ, Kafka
 
 Description: Configure high availability for message queue deployments in Rancher using quorum queues, replication, and pod anti-affinity rules to ensure zero message loss.
 
@@ -24,6 +24,7 @@ Quorum queues provide Raft-based consensus for guaranteed delivery:
 
 ```yaml
 # rabbitmq-ha-cluster.yaml - High availability RabbitMQ
+
 apiVersion: rabbitmq.com/v1beta1
 kind: RabbitmqCluster
 metadata:

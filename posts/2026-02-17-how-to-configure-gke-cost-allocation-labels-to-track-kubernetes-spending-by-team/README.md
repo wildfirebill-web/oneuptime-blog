@@ -20,6 +20,7 @@ Enable it on an existing cluster:
 
 ```bash
 # Enable cost allocation on an existing GKE cluster
+
 gcloud container clusters update my-cluster \
   --zone us-central1-a \
   --enable-cost-allocation

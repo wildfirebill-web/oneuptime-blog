@@ -45,6 +45,7 @@ from opentelemetry.trace import Link, SpanContext, TraceFlags
 tracer = trace.get_tracer("link-test")
 
 # Create a fake span context to link to.
+
 # In production, this would come from an actual span.
 linked_context = SpanContext(
     trace_id=0x5CE0E9A56015FEC5AADFA328AE398115,

@@ -313,6 +313,7 @@ Set up your test matrix to cover different API versions:
 
 ```yaml
 # .github/workflows/test.yml
+
 jobs:
   acceptance-tests:
     strategy:

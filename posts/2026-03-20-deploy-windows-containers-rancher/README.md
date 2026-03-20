@@ -21,6 +21,7 @@ Windows containers enable running legacy Windows applications (.NET Framework, I
 
 ```dockerfile
 # Windows Server 2022 container
+
 FROM mcr.microsoft.com/windows/servercore:ltsc2022
 
 # Windows Server 2019 container
@@ -142,4 +143,4 @@ readinessProbe:
 
 ## Conclusion
 
-Windows containers in Rancher enable running legacy Windows applications in Kubernetes with minimal code changes. The critical requirement is matching your container's base image Windows version to your worker node's OS version—mismatched versions result in container startup failures with cryptic error messages.
+Windows containers in Rancher enable running legacy Windows applications in Kubernetes with minimal code changes. The critical requirement is matching your container's base image Windows version to your worker node's OS version-mismatched versions result in container startup failures with cryptic error messages.

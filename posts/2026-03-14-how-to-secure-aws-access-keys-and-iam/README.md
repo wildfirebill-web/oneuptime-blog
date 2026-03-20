@@ -24,6 +24,7 @@ The security hierarchy from least to most secure is: static access keys, instanc
 
 ```bash
 # Step 1: Create OIDC provider
+
 eksctl utils associate-iam-oidc-provider --cluster my-cluster --approve
 
 # Step 2: Create IAM role with trust policy

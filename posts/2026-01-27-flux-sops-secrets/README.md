@@ -49,6 +49,7 @@ Install the required tools:
 
 ```bash
 # Install SOPS
+
 # macOS
 brew install sops
 

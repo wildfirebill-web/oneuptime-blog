@@ -20,6 +20,7 @@ After creating a network namespace and moving or creating interfaces inside it, 
 
 ```bash
 # Assign an IPv4 address to interface veth0 inside namespace ns1
+
 # Format: ip netns exec <namespace> ip addr add <ip>/<prefix> dev <interface>
 ip netns exec ns1 ip addr add 192.168.10.1/24 dev veth0
 

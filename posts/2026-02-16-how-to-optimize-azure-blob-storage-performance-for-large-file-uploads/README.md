@@ -62,6 +62,7 @@ file_path = "/data/backup-2026-02-16.tar.gz"
 file_size = os.path.getsize(file_path)
 
 # Calculate block size based on file size
+
 # Using 64 MB blocks for files over 1 GB, 8 MB for smaller files
 if file_size > 1 * 1024 * 1024 * 1024:
     block_size = 64 * 1024 * 1024   # 64 MB blocks

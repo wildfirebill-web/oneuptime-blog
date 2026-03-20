@@ -196,6 +196,7 @@ func (s *UserService) GetUser(ctx context.Context, req *pb.GetUserRequest) (*pb.
 
 ```dockerfile
 # Dockerfile
+
 FROM golang:1.21-alpine AS builder
 
 WORKDIR /app

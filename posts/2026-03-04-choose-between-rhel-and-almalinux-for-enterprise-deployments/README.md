@@ -37,6 +37,7 @@ AlmaLinux is another community-driven RHEL-compatible distribution that emerged 
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

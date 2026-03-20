@@ -27,6 +27,7 @@ Start with a `.gitlab-ci.yml` in the root of your Ansible role repository. The s
 
 ```yaml
 # .gitlab-ci.yml - Basic Molecule testing pipeline
+
 stages:
   - lint
   - test

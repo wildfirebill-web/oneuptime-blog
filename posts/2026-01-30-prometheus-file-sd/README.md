@@ -366,6 +366,7 @@ OUTPUT_FILE="/etc/prometheus/targets/ec2-targets.json"
 TEMP_FILE="${OUTPUT_FILE}.tmp"
 
 # Query EC2 instances with monitoring enabled
+
 instances=$(aws ec2 describe-instances \
   --filters "Name=tag:monitoring,Values=enabled" \
             "Name=instance-state-name,Values=running" \

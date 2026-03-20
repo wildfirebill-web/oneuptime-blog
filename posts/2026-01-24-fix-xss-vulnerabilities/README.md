@@ -264,6 +264,7 @@ export default {
 
 ```python
 # views.py
+
 def profile(request):
     return render(request, 'profile.html', {
         'username': request.GET.get('name')  # Auto-escaped in template

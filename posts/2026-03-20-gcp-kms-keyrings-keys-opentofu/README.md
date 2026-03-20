@@ -14,6 +14,7 @@ Google Cloud KMS provides centralized cryptographic key management for encryptin
 
 ```hcl
 # main.tf - Key rings organize cryptographic keys by environment/purpose
+
 resource "google_kms_key_ring" "production_keyring" {
   name     = "production-keyring"
   location = "us-central1"  # Keys are regional or global

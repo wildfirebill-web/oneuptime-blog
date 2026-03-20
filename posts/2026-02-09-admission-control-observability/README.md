@@ -34,6 +34,7 @@ Key Kyverno metrics:
 
 ```promql
 # Policy execution time
+
 histogram_quantile(0.95,
   sum(rate(kyverno_policy_execution_duration_seconds_bucket[5m])) by (le, policy_name)
 )

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VXLAN, nolearning, FDB, Linux, EVPN, Overlay Networking, Static FDB
+Tags: VXLAN, Nolearning, FDB, Linux, EVPN, Overlay Networking, Static FDB
 
 Description: Learn how to disable MAC learning on a Linux VXLAN interface and why you would do so, including the use cases for static FDB entries and EVPN-based MAC distribution.
 
@@ -21,6 +21,7 @@ Disabling MAC learning on VXLAN forces all forwarding decisions to use static FD
 
 ```bash
 # Disable MAC learning at creation time
+
 ip link add vxlan10 type vxlan \
   id 10 \
   dstport 4789 \
@@ -108,6 +109,6 @@ bridge fdb show dev vxlan10 | grep -v permanent
 ## Key Takeaways
 
 - `nolearning` prevents the kernel from populating FDB entries from incoming VXLAN packets.
-- Without learning, you must provide FDB entries statically or via EVPN — otherwise unknown traffic is dropped.
+- Without learning, you must provide FDB entries statically or via EVPN - otherwise unknown traffic is dropped.
 - `nolearning` is recommended for production deployments using EVPN, where BGP distributes all MAC-IP bindings.
 - Disabling learning also prevents MAC flooding attacks from propagating false VTEP associations.

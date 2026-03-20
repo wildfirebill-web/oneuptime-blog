@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Linux, VXLAN, ip link, Overlay Network, Tunneling
+Tags: Networking, Linux, VXLAN, Ip link, Overlay Network, Tunneling
 
 Description: Learn how to create and configure VXLAN overlay network interfaces on Linux using the ip link command with type vxlan.
 
@@ -16,6 +16,7 @@ VXLAN (Virtual Extensible LAN) encapsulates Layer 2 Ethernet frames within UDP p
 
 ```bash
 # Create VXLAN tunnel with VNI 10
+
 sudo ip link add vxlan10 type vxlan   id 10   remote 192.168.1.2   local 192.168.1.1   dev eth0   dstport 4789
 
 # Bring the interface up

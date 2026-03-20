@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, PrivateLink, AWS, VPC Endpoints, Networking, Infrastructure as Code
 
-Description: Learn how to configure AWS PrivateLink using OpenTofu — creating interface VPC endpoints for AWS services and custom services, and gateway endpoints for S3 and DynamoDB.
+Description: Learn how to configure AWS PrivateLink using OpenTofu - creating interface VPC endpoints for AWS services and custom services, and gateway endpoints for S3 and DynamoDB.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ AWS PrivateLink enables private connectivity to AWS services and custom services
 
 ```hcl
 # Common AWS services to access privately
+
 locals {
   interface_endpoints = {
     ssm        = "com.amazonaws.${var.aws_region}.ssm"
@@ -46,7 +47,7 @@ resource "aws_vpc_endpoint" "interface" {
 }
 ```
 
-## Gateway Endpoints (S3 and DynamoDB — Free)
+## Gateway Endpoints (S3 and DynamoDB - Free)
 
 ```hcl
 resource "aws_vpc_endpoint" "s3" {
@@ -169,4 +170,4 @@ output "endpoint_service_name" {
 
 ## Conclusion
 
-AWS PrivateLink with OpenTofu enables private connectivity to AWS services (interface and gateway endpoints) and custom services. Gateway endpoints for S3 and DynamoDB are free — always use them in private subnets to avoid NAT Gateway costs and improve performance. Interface endpoints for SSM, Secrets Manager, ECR, and KMS are essential for private instances that need AWS API access without internet connectivity. For custom services, create an endpoint service backed by an NLB and require acceptance for controlled access.
+AWS PrivateLink with OpenTofu enables private connectivity to AWS services (interface and gateway endpoints) and custom services. Gateway endpoints for S3 and DynamoDB are free - always use them in private subnets to avoid NAT Gateway costs and improve performance. Interface endpoints for SSM, Secrets Manager, ECR, and KMS are essential for private instances that need AWS API access without internet connectivity. For custom services, create an endpoint service backed by an NLB and require acceptance for controlled access.

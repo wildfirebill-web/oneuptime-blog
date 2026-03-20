@@ -21,6 +21,7 @@ For OTel Collector-specific metrics, you need a custom metrics adapter that read
 
 ```bash
 # Check HPA status
+
 kubectl get hpa otel-collector-hpa -n observability
 
 # Output might show:

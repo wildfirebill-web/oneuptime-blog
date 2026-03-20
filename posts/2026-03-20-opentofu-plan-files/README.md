@@ -8,12 +8,13 @@ Description: Learn how to save OpenTofu plans to files and apply them later to g
 
 ## Introduction
 
-OpenTofu can save a plan to a binary file with `tofu plan -out=<file>`. Applying a saved plan file guarantees that exactly what was reviewed is what gets applied — no risk of new changes appearing between plan and apply. This is the recommended pattern for production CI/CD pipelines.
+OpenTofu can save a plan to a binary file with `tofu plan -out=<file>`. Applying a saved plan file guarantees that exactly what was reviewed is what gets applied - no risk of new changes appearing between plan and apply. This is the recommended pattern for production CI/CD pipelines.
 
 ## Saving a Plan
 
 ```bash
 # Save plan to a file
+
 tofu plan -out=tfplan
 
 # With variables
@@ -26,7 +27,7 @@ tofu plan -out=tfplan -var-file=environments/production.tfvars
 # Apply the exact saved plan
 tofu apply tfplan
 
-# No confirmation prompt — the plan file IS the approval
+# No confirmation prompt - the plan file IS the approval
 # No -auto-approve needed
 ```
 
@@ -55,11 +56,11 @@ tofu apply tfplan
 
 ## Plan Files Are Binary
 
-Plan files are binary — do not try to edit them or view them with a text editor. Use `tofu show` to read them.
+Plan files are binary - do not try to edit them or view them with a text editor. Use `tofu show` to read them.
 
 ```bash
 # Do NOT do this
-cat tfplan | jq .  # Won't work — not a JSON file
+cat tfplan | jq .  # Won't work - not a JSON file
 
 # DO this
 tofu show -json tfplan | jq .  # Works correctly

@@ -92,6 +92,7 @@ Boot from your Talos Linux USB drive or PXE. The UEFI firmware will detect the E
 
 ```bash
 # If using USB, flash the ISO
+
 sudo dd if=metal-amd64.iso of=/dev/sdX bs=4M status=progress conv=fsync
 
 # Boot from USB - the UEFI firmware launches the EFI bootloader

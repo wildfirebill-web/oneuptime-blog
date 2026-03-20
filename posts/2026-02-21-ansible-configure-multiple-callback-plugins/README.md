@@ -26,6 +26,7 @@ Set your stdout callback with `stdout_callback` and notification callbacks with 
 
 ```ini
 # ansible.cfg - Configure multiple callback plugins
+
 [defaults]
 # One stdout callback (controls terminal output)
 stdout_callback = yaml

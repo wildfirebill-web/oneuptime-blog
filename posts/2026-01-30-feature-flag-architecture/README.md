@@ -381,6 +381,7 @@ class SegmentEvaluator:
         return True
 
 # Example segment definitions
+
 beta_testers = Segment(
     key="beta_testers",
     name="Beta Testers",

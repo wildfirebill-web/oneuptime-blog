@@ -24,6 +24,7 @@ VPC Flow Logs capture information about IP traffic going to and from network int
 
 ```hcl
 # Create a CloudWatch Log Group to store flow logs
+
 resource "aws_cloudwatch_log_group" "flow_logs" {
   name              = "/vpc/flow-logs"
   retention_in_days = 30  # Retain logs for 30 days to balance cost and visibility

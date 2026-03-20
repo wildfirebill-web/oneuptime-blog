@@ -26,6 +26,7 @@ Adjust the number of concurrent resource uploads:
 
 ```bash
 # Install Velero with increased concurrency
+
 velero install \
   --provider aws \
   --bucket velero-backups \

@@ -45,6 +45,7 @@ maxmemory 256mb
 maxmemory-policy allkeys-lru
 
 # Persistence
+
 save 900 1
 save 300 10
 save 60 10000

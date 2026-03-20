@@ -14,6 +14,7 @@ Open vSwitch (OVS) is a software-defined networking virtual switch that supports
 
 ```bash
 # Install Open vSwitch
+
 apt-get install -y openvswitch-switch
 
 # Create an OVS bridge

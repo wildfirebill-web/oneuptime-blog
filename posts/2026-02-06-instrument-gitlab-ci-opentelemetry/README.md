@@ -44,6 +44,7 @@ For self-managed GitLab, add the configuration to your GitLab Rails settings.
 
 ```ruby
 # /etc/gitlab/gitlab.rb
+
 # Enable OpenTelemetry tracing for CI/CD pipelines.
 # This sends trace data for all pipeline runs to the specified OTLP endpoint.
 

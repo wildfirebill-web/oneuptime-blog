@@ -60,6 +60,7 @@ import redis
 from openai import OpenAI
 
 # Initialize Redis client
+
 # Using decode_responses=True to automatically decode bytes to strings
 redis_client = redis.Redis(
     host='localhost',

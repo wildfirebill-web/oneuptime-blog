@@ -31,6 +31,7 @@ Here is a simple example. A webapp role that depends on a java role and an nginx
 
 ```yaml
 # roles/webapp/meta/main.yml
+
 # This role requires Java and Nginx to be installed first
 ---
 galaxy_info:

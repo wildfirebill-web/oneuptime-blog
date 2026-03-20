@@ -39,6 +39,7 @@ These settings control what user IDs and group IDs get assigned to new accounts.
 
 ```bash
 # View the current UID/GID range settings
+
 grep -E '^(UID|GID)' /etc/login.defs
 ```
 

@@ -26,6 +26,7 @@ Start by creating a dedicated KMS key for Terraform state encryption:
 
 ```hcl
 # kms.tf - Create a KMS key for state encryption
+
 resource "aws_kms_key" "terraform_state" {
   description             = "KMS key for Terraform state file encryption"
   deletion_window_in_days = 30

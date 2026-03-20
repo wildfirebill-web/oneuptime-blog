@@ -31,6 +31,7 @@ You'll need a [cluster](https://oneuptime.com/blog/post/2026-02-12-first-ecs-clu
 
 ```bash
 # Create a Fargate service with 3 replicas
+
 aws ecs create-service \
   --cluster my-first-cluster \
   --service-name web-api \

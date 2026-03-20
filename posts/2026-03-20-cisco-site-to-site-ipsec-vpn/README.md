@@ -12,7 +12,7 @@ Site-to-site IPsec VPN creates an encrypted tunnel between two routers, connecti
 
 ## Configuration on Both Routers
 
-```
+```text
 Topology:
   Router A public IP: 203.0.113.1   LAN: 192.168.1.0/24
   Router B public IP: 203.0.113.2   LAN: 192.168.2.0/24
@@ -21,7 +21,7 @@ Topology:
 ## Router A Configuration
 
 ```cisco
-! Phase 1 — IKE Policy
+! Phase 1 - IKE Policy
 crypto isakmp policy 10
  encryption aes 256
  hash sha256
@@ -32,7 +32,7 @@ crypto isakmp policy 10
 ! Pre-shared key for Router B
 crypto isakmp key VPNSecret123 address 203.0.113.2
 
-! Phase 2 — IPsec Transform Set
+! Phase 2 - IPsec Transform Set
 crypto ipsec transform-set VPN-TS esp-aes 256 esp-sha256-hmac
  mode tunnel
 

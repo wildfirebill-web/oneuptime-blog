@@ -90,6 +90,7 @@ This abstract base class defines the contract for all format converters. Each co
 
 ```python
 # converters/base.py
+
 from abc import ABC, abstractmethod
 from typing import Any, Dict, List, Optional, Iterator
 from dataclasses import dataclass

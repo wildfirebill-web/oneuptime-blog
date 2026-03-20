@@ -30,6 +30,7 @@ Here's a comparison of the key models available on Bedrock. Prices are per 1,000
 
 ```python
 # Model pricing comparison (approximate, check current AWS pricing)
+
 models = {
     "Claude 3 Opus": {
         "input_per_1k": 0.015,

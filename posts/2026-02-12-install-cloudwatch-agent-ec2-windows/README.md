@@ -22,6 +22,7 @@ SSM is the cleanest installation method for Windows:
 
 ```powershell
 # From your local machine, use SSM to install the agent
+
 aws ssm send-command `
   --document-name "AWS-ConfigureAWSPackage" `
   --parameters '{"action":["Install"],"name":["AmazonCloudWatchAgent"]}' `

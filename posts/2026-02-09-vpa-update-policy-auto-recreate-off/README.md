@@ -126,6 +126,7 @@ VPA only recreates pods when recommendations change significantly. The threshold
 
 ```yaml
 # VPA Recommender deployment
+
 args:
 - --recommender-interval=1m
 - --pod-recommendation-min-cpu-millicores=25

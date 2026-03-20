@@ -39,6 +39,7 @@ The ARP table on the client has a TTL (time to live). Entries expire after a few
 
 ```bash
 # Show the current ARP table on Linux
+
 # Each entry maps an IPv4 address to a MAC address
 arp -n
 ```

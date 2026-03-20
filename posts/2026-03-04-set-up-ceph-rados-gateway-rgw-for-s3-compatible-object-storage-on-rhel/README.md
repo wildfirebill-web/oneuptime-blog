@@ -14,6 +14,7 @@ The RADOS Gateway (RGW) is a Ceph component that provides RESTful APIs compatibl
 
 ```bash
 # Deploy a single RGW instance
+
 sudo ceph orch apply rgw mystore --placement="1 node1"
 
 # Or deploy multiple RGW instances for high availability

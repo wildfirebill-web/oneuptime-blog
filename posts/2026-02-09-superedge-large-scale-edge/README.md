@@ -28,6 +28,7 @@ Verify your cluster is ready:
 
 ```bash
 # Check cluster status
+
 kubectl cluster-info
 kubectl get nodes
 

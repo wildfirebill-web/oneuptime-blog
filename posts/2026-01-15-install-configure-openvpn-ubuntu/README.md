@@ -21,6 +21,7 @@ OpenVPN is a robust, open-source VPN solution that provides secure encrypted tun
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install OpenVPN and Easy-RSA for certificate management

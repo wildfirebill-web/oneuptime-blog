@@ -28,6 +28,7 @@ The most common cause is a timeout during long-running tasks:
 
 ```ini
 # ansible.cfg - Increase SSH connection timeouts
+
 [defaults]
 timeout = 60
 

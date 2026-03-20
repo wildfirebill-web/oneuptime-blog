@@ -41,6 +41,7 @@ import 'dotenv/config';
 
 ```bash
 # .env (DO NOT COMMIT)
+
 NODE_ENV=development
 PORT=3000
 DATABASE_URL=postgresql://localhost/myapp

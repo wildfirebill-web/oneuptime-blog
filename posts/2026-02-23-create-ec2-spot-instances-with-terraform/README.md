@@ -18,6 +18,7 @@ The most basic approach is adding `instance_market_options` to a regular `aws_in
 
 ```hcl
 # Create a single spot instance
+
 resource "aws_instance" "spot_worker" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.large"

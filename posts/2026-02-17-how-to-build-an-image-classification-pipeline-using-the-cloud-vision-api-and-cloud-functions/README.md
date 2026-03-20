@@ -37,6 +37,7 @@ Start by enabling the required APIs and creating the needed resources:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
     vision.googleapis.com \
     cloudfunctions.googleapis.com \

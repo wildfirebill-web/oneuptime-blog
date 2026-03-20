@@ -23,6 +23,7 @@ To find the IP addresses of your Git hosting provider:
 
 ```bash
 # For GitHub
+
 dig github.com +short
 
 # For GitLab

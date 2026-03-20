@@ -25,6 +25,7 @@ To make this audit trail useful, enforce discipline around commits:
 
 ```bash
 # Good commit message - clear what changed and why
+
 git commit -m "Increase backend-api replicas from 3 to 5 for holiday traffic
 
 Approved by: @sre-lead

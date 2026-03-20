@@ -246,6 +246,7 @@ class ArticleSearch:
         return text
 
 # Usage
+
 connection = mysql.connector.connect(
     host='localhost',
     database='myapp',

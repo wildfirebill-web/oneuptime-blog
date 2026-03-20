@@ -14,6 +14,7 @@ Wireshark display filters allow you to selectively show packets from captured tr
 
 ```wireshark
 # Show all IPv6 traffic
+
 ipv6
 
 # Show only ICMPv6 traffic
@@ -170,7 +171,7 @@ tshark -r capture.pcap -Y "ipv6" \
 
 In Wireshark, add custom columns for IPv6 analysis:
 
-```
+```text
 Column Name: IPv6 Src
 Field: ipv6.src
 

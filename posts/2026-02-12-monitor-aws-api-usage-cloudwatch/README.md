@@ -20,6 +20,7 @@ CloudTrail records API calls and delivers them to CloudWatch Logs, where you can
 
 ```bash
 # Create a CloudWatch log group for CloudTrail
+
 aws logs create-log-group \
   --log-group-name "/aws/cloudtrail/api-activity"
 

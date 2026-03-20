@@ -43,6 +43,7 @@ Before writing any rules, document what each role actually needs:
 
 ```bash
 # Create role-based groups
+
 sudo groupadd webadmins
 sudo groupadd dbadmins
 sudo groupadd monitoring

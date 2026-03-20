@@ -16,6 +16,7 @@ OpenTelemetry records exceptions as span events. When you call `span.recordExcep
 
 ```python
 # rollbar_span_processor.py
+
 import requests
 import json
 from opentelemetry.sdk.trace import SpanProcessor

@@ -33,6 +33,7 @@ The simplest GitRepo requires only the repository URL:
 
 ```yaml
 # minimal-gitrepo.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:

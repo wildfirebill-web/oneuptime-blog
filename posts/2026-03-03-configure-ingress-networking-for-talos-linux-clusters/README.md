@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Ingresses, Networking, Kubernetes, NGINX, Traefik
+Tags: Talos Linux, Ingresses, Networking, Kubernetes, Nginx, Traefik
 
 Description: Complete guide to setting up ingress controllers and configuring external traffic routing for Talos Linux Kubernetes clusters on bare metal.
 
@@ -40,6 +40,7 @@ MetalLB is the most common solution for assigning external IPs on bare metal:
 
 ```bash
 # Install MetalLB
+
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.5/config/manifests/metallb-native.yaml
 
 # Wait for MetalLB pods to be ready

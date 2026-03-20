@@ -110,6 +110,7 @@ Containers requesting less than 50m CPU or more than 4 CPU are rejected:
 ```bash
 kubectl apply -f pod-with-10-cpu.yaml
 # Error: containers "app" is invalid: spec.containers[0].resources.requests: Invalid value: "10": must be less than or equal to cpu limit
+
 ```
 
 ## Combining Defaults with Min/Max

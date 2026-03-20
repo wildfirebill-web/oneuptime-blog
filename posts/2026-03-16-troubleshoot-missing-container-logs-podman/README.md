@@ -18,6 +18,7 @@ When `podman logs` returns nothing, it does not necessarily mean the application
 
 ```bash
 # Check if the container exists (including stopped containers)
+
 podman ps -a | grep my-container
 
 # If not found, the container and its logs were removed

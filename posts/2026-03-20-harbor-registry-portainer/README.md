@@ -23,6 +23,7 @@ Harbor recommends using its offline installer. Run these commands on the Docker 
 
 ```bash
 # Download the latest Harbor offline installer
+
 wget https://github.com/goharbor/harbor/releases/download/v2.11.0/harbor-offline-installer-v2.11.0.tgz
 
 # Extract the archive
@@ -150,4 +151,4 @@ docker compose down
 
 ## Conclusion
 
-Harbor provides enterprise-grade registry capabilities — vulnerability scanning, RBAC, and image signing — all manageable via Portainer stacks. This combination gives your team a powerful, self-hosted container supply chain without needing cloud registry services.
+Harbor provides enterprise-grade registry capabilities - vulnerability scanning, RBAC, and image signing - all manageable via Portainer stacks. This combination gives your team a powerful, self-hosted container supply chain without needing cloud registry services.

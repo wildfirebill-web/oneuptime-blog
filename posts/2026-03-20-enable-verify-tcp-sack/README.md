@@ -30,6 +30,7 @@ SACK reduces the number of retransmissions significantly on lossy links.
 
 ```bash
 # Check SACK status (should be 1/enabled by default)
+
 sysctl net.ipv4.tcp_sack
 
 # Expected: net.ipv4.tcp_sack = 1

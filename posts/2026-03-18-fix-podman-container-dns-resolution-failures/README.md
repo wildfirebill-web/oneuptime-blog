@@ -22,6 +22,7 @@ Start by identifying exactly what is failing:
 
 ```bash
 # Test if DNS works at all
+
 podman run --rm alpine nslookup google.com
 
 # Test if raw IP connectivity works (bypasses DNS)

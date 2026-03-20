@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # iam.tf
+
 resource "aws_iam_role" "lambda_execution" {
   name = "${var.function_name}-execution-role"
 
@@ -37,7 +38,7 @@ resource "aws_iam_role" "lambda_execution" {
   })
 }
 
-# Basic execution — CloudWatch Logs
+# Basic execution - CloudWatch Logs
 resource "aws_iam_role_policy_attachment" "basic_execution" {
   role       = aws_iam_role.lambda_execution.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
@@ -195,8 +196,8 @@ resource "aws_lambda_permission" "eventbridge" {
 
 ## Best Practices
 
-- Pre-create the CloudWatch log group with explicit retention — otherwise Lambda creates it without a retention policy and logs accumulate indefinitely.
+- Pre-create the CloudWatch log group with explicit retention - otherwise Lambda creates it without a retention policy and logs accumulate indefinitely.
 - Use `source_code_hash` to trigger redeployments only when function code actually changes.
 - Enable X-Ray tracing (`mode = "Active"`) for production functions to trace latency across services.
 - Use Lambda aliases (`live`, `staging`) with weighted routing for canary deployments.
-- Grant least-privilege permissions — start with `AWSLambdaBasicExecutionRole` and add specific permissions rather than broad policies.
+- Grant least-privilege permissions - start with `AWSLambdaBasicExecutionRole` and add specific permissions rather than broad policies.

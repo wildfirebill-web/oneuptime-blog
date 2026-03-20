@@ -14,6 +14,7 @@ Cockpit is a web-based administration interface included with RHEL. With the vir
 
 ```bash
 # Install Cockpit and the virtual machines plugin
+
 sudo dnf install -y cockpit cockpit-machines
 
 # Ensure libvirt is installed

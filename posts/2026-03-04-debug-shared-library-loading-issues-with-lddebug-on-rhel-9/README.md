@@ -22,6 +22,7 @@ Use LD_DEBUG to troubleshoot library loading:
 
 ```bash
 # Show all library loading activity
+
 LD_DEBUG=all ./my_program 2>&1 | head -100
 
 # Show only library search paths

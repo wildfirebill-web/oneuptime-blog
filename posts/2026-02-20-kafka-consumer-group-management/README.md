@@ -76,6 +76,7 @@ graph LR
 
 ```python
 # auto_commit_consumer.py
+
 # Uses automatic offset commits - simple but may lose or duplicate messages
 from confluent_kafka import Consumer
 

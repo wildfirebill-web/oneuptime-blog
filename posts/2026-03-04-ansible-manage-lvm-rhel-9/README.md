@@ -28,6 +28,7 @@ graph TD
 
 ```yaml
 # playbook-lvm-create.yml
+
 # Set up LVM storage on RHEL servers
 ---
 - name: Configure LVM storage

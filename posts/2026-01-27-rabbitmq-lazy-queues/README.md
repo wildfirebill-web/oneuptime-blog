@@ -261,6 +261,7 @@ Policies allow you to change queue behavior without modifying application code.
 
 ```bash
 # Apply lazy mode to all queues matching pattern
+
 rabbitmqctl set_policy lazy-pattern \
   "^(batch|archive|backup)\." \
   '{"queue-mode":"lazy"}' \

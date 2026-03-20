@@ -37,6 +37,7 @@ graph TB
 
 ```bash
 # Enable required APIs
+
 gcloud services enable healthcare.googleapis.com
 gcloud services enable aiplatform.googleapis.com
 gcloud services enable documentai.googleapis.com

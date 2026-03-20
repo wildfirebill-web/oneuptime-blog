@@ -24,6 +24,7 @@ Kind (Kubernetes IN Docker) is a tool for running local Kubernetes clusters usin
 
 ```bash
 # macOS (Homebrew)
+
 brew install kind
 
 # Linux (binary download)

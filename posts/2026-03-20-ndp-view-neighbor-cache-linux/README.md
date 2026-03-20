@@ -14,6 +14,7 @@ The IPv6 neighbor cache on Linux stores the mapping between IPv6 addresses and l
 
 ```bash
 # Show all IPv6 neighbor cache entries
+
 ip -6 neigh show
 
 # Example output:

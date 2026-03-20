@@ -31,6 +31,7 @@ Perform upfront calculations to ensure your CIDR allocation is sufficient for pl
 ```python
 #!/usr/bin/env python3
 # cidr-calculator.py - Calculate required address space for Kubernetes cluster
+
 import ipaddress, math
 
 # Cluster parameters

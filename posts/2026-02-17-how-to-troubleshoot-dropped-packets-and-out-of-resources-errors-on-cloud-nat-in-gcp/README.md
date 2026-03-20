@@ -38,6 +38,7 @@ First, make sure logging is enabled:
 
 ```bash
 # Enable comprehensive NAT logging
+
 gcloud compute routers nats update your-nat-gateway \
   --router=your-router \
   --region=us-central1 \

@@ -100,6 +100,7 @@ Using the CLI:
 
 ```bash
 # Set individual parameters
+
 argocd app set my-app -p replicaCount=3
 argocd app set my-app -p image.tag=v2.0.0
 argocd app set my-app -p ingress.enabled=true

@@ -16,6 +16,7 @@ Description: Install and configure the just command runner on Ubuntu, write just
 
 ```bash
 # Install via the install script (recommended)
+
 curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /usr/local/bin
 
 # Verify installation

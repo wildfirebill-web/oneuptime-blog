@@ -28,6 +28,7 @@ Start with the fundamentals. CloudWatch alarms on key infrastructure metrics:
 
 ```hcl
 # Module for creating standardized alarms
+
 # modules/cloudwatch_alarm/main.tf
 resource "aws_cloudwatch_metric_alarm" "this" {
   alarm_name          = var.alarm_name

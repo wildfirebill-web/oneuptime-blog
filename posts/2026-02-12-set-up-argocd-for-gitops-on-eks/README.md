@@ -37,6 +37,7 @@ Create a namespace and install ArgoCD:
 
 ```bash
 # Create the ArgoCD namespace
+
 kubectl create namespace argocd
 
 # Install ArgoCD

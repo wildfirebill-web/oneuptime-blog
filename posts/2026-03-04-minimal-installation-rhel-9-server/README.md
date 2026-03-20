@@ -58,6 +58,7 @@ Using LVM for everything except /boot and /boot/efi gives you flexibility to res
 
 ```bash
 # After install, verify the layout
+
 lsblk
 df -hT
 ```

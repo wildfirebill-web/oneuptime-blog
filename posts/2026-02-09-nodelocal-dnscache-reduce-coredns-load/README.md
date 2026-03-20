@@ -42,6 +42,7 @@ Edit the manifest to replace placeholder values:
 
 ```bash
 # Replace with your actual values
+
 CLUSTER_DNS_IP="10.96.0.10"
 LOCAL_DNS_IP="169.254.20.10"
 DNS_DOMAIN="cluster.local"

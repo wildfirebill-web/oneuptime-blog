@@ -52,6 +52,7 @@ graph LR
 
 ```python
 # data_model.py
+
 # Time-series data model for IoT
 
 from dataclasses import dataclass, field

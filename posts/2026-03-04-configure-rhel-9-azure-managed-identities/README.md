@@ -31,6 +31,7 @@ sequenceDiagram
 
 ```bash
 # Enable managed identity on an existing VM
+
 az vm identity assign \
   --resource-group rg-rhel9 \
   --name rhel9-vm

@@ -27,6 +27,7 @@ Document your change classification in the repository:
 
 ```yaml
 # docs/change-classification.yaml
+
 # This ConfigMap serves as living documentation of the change approval matrix
 apiVersion: v1
 kind: ConfigMap

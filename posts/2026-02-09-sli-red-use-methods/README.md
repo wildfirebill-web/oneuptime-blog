@@ -16,6 +16,7 @@ The RED method tracks three key dimensions for request-driven services: request 
 
 ```yaml
 # Prometheus configuration for RED metrics
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

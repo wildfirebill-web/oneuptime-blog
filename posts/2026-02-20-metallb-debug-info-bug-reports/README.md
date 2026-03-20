@@ -42,6 +42,7 @@ Start with the basics. The MetalLB version and Kubernetes version are critical b
 
 ```bash
 # Collect Kubernetes cluster version
+
 # Both client and server versions matter for compatibility
 kubectl version --output=yaml > /tmp/k8s-version.yaml
 

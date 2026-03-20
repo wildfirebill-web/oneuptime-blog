@@ -232,6 +232,7 @@ You need to track cache hit rates to know if your caching configuration is worki
 
 ```bash
 # Key metrics to monitor
+
 # Cache hit rate for manifest generation
 argocd_git_request_total{request_type="fetch"}
 argocd_git_request_total{request_type="ls-remote"}

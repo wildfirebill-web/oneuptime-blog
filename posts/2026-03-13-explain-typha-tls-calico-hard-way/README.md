@@ -39,6 +39,7 @@ The certificates are just X.509 standard certificates. The only Typha-specific a
 
 ```bash
 # Is TLS enabled on Typha?
+
 kubectl get deployment calico-typha -n calico-system -o yaml | grep -c "TYPHA_CAFILE"
 
 # What CA is Typha using?

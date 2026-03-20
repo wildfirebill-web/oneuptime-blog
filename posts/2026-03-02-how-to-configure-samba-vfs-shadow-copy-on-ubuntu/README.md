@@ -32,6 +32,7 @@ Check your current LVM setup:
 
 ```bash
 # Show volume groups
+
 sudo vgs
 
 # Show logical volumes

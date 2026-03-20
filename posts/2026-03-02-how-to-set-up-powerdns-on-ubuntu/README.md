@@ -32,6 +32,7 @@ sudo apt update
 sudo apt install -y mysql-server
 
 # Secure the installation
+
 sudo mysql_secure_installation
 ```
 

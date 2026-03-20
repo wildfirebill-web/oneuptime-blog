@@ -33,6 +33,7 @@ Regardless of your CI/CD platform, these principles apply:
 
 ```bash
 # Method 1: Official installer script
+
 curl --proto '=https' --tlsv1.2 -fsSL https://get.opentofu.org/install-opentofu.sh | sh -s -- --install-method standalone
 
 # Method 2: Direct binary download
@@ -144,7 +145,7 @@ echo "Apply successful"
 
 Post the plan output as a PR comment so reviewers can see what changes:
 
-```bash
+````bash
 #!/bin/bash
 # pr-plan.sh
 
@@ -158,12 +159,12 @@ PLAN_OUTPUT=$(cat plan-output.txt)
 gh pr comment "$PR_NUMBER" --body "$(cat <<EOF
 ## OpenTofu Plan Output
 
-\`\`\`
+```
 ${PLAN_OUTPUT}
-\`\`\`
+```
 EOF
 )"
-```
+````
 
 ## Multi-Environment Pipelines
 

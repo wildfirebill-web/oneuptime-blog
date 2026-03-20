@@ -14,6 +14,7 @@ Understand how Cilium uses eBPF programs and BPF maps to implement high-performa
 
 ```bash
 # Ensure IPv6 is enabled and functional
+
 ip -6 addr show
 ping6 -c 3 ::1
 

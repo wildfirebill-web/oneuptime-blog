@@ -8,7 +8,7 @@ Description: Learn how to create OpenTofu infrastructure blueprints that enable 
 
 ---
 
-Self-service infrastructure empowers development teams to provision what they need without waiting for the platform team. OpenTofu blueprints — opinionated, parameterized templates — are the delivery mechanism. Teams fill in a few variables and the blueprint handles all the complexity.
+Self-service infrastructure empowers development teams to provision what they need without waiting for the platform team. OpenTofu blueprints - opinionated, parameterized templates - are the delivery mechanism. Teams fill in a few variables and the blueprint handles all the complexity.
 
 ## Blueprint Structure
 
@@ -16,6 +16,7 @@ A blueprint is a module that encapsulates an entire service pattern. Teams insta
 
 ```hcl
 # blueprints/web-service/main.tf
+
 # Blueprint for a standard web service with load balancer, containers, and database
 
 variable "service_name" {
@@ -67,7 +68,7 @@ variable "database_engine" {
 ```hcl
 # blueprints/web-service/resources.tf
 locals {
-  # Tier mapping — environment determines resource sizing
+  # Tier mapping - environment determines resource sizing
   tier_config = {
     production = {
       ecs_cpu    = 1024
@@ -133,7 +134,7 @@ resource "aws_ecs_task_definition" "service" {
   }])
 }
 
-# Optional database — conditionally created
+# Optional database - conditionally created
 resource "aws_db_instance" "service" {
   count = var.database_required ? 1 : 0
 
@@ -148,7 +149,7 @@ resource "aws_db_instance" "service" {
 
 ```hcl
 # services/payment-service/main.tf
-# How a team uses the blueprint — just variables
+# How a team uses the blueprint - just variables
 
 module "payment_service" {
   source = "git::https://github.com/myorg/infra-blueprints.git//web-service?ref=v3.2.0"
@@ -169,7 +170,7 @@ output "service_url" {
 
 ## Pull Request Workflow for Self-Service
 
-```yaml
+````yaml
 # .github/pull_request_template.md
 ## Infrastructure Change Request
 
@@ -195,12 +196,12 @@ database_required = false
 - [ ] I have run `tofu plan` and reviewed the output
 - [ ] This change does not affect shared infrastructure
 - [ ] I have updated service documentation
-```
+````
 
 ## Best Practices
 
 - Provide sensible defaults for all blueprint variables so teams can get started with minimal configuration.
-- Include `validation` blocks to catch invalid inputs early — before teams wait for a failed `apply`.
+- Include `validation` blocks to catch invalid inputs early - before teams wait for a failed `apply`.
 - Publish a catalog of available blueprints with descriptions, examples, and change logs.
 - Require `tofu plan` output in pull request comments for automated verification of proposed changes.
 - Log all blueprint instantiations with team and purpose metadata for chargeback and capacity planning.

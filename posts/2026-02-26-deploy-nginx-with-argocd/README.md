@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, NGINX
+Tags: ArgoCD, GitOps, Kubernetes, Nginx
 
 Description: Step-by-step tutorial on deploying a simple Nginx application using ArgoCD with GitOps principles, from Git repository setup to production deployment.
 
@@ -26,6 +26,7 @@ First, create a Git repository to hold your Nginx manifests. This is the "single
 
 ```bash
 # Create the project structure
+
 mkdir -p nginx-gitops/manifests
 cd nginx-gitops
 git init

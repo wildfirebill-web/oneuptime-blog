@@ -549,6 +549,7 @@ Using an API token:
 # Get your API token from Jenkins user settings
 
 # Trigger without parameters
+
 curl -X POST \
   "https://jenkins.example.com/job/my-pipeline/build" \
   -u "username:api-token"

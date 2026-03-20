@@ -8,11 +8,11 @@ Description: Understand the O (Other Configuration) flag in ICMPv6 Router Advert
 
 ## Introduction
 
-The O (Other Configuration) flag in Router Advertisements tells hosts to use DHCPv6 for "other" configuration — DNS servers, NTP servers, domain search lists — without using DHCPv6 for address assignment. When O=1 and M=0, hosts use SLAAC for addresses but contact a stateless DHCPv6 server for DNS and NTP. This mode combines the simplicity of SLAAC with the flexibility of DHCPv6 for configuration distribution.
+The O (Other Configuration) flag in Router Advertisements tells hosts to use DHCPv6 for "other" configuration - DNS servers, NTP servers, domain search lists - without using DHCPv6 for address assignment. When O=1 and M=0, hosts use SLAAC for addresses but contact a stateless DHCPv6 server for DNS and NTP. This mode combines the simplicity of SLAAC with the flexibility of DHCPv6 for configuration distribution.
 
 ## O Flag Semantics
 
-```
+```text
 O Flag (Other Configuration):
 
 O = 0 (default):
@@ -37,6 +37,7 @@ Stateless DHCPv6 (O=1, M=0):
 
 ```bash
 # radvd configuration: SLAAC + Stateless DHCPv6 (M=0, O=1)
+
 sudo tee /etc/radvd.conf << 'EOF'
 interface eth0 {
     AdvSendAdvert on;
@@ -93,7 +94,7 @@ sudo /usr/sbin/dhcpd -6 -cf /etc/dhcp/dhcpd6.conf eth0
 
 ## O Flag vs RA RDNSS Option
 
-```
+```text
 Two ways to distribute DNS server addresses in IPv6:
 
 Method 1: RA RDNSS option (RFC 8106)
@@ -143,4 +144,4 @@ resolvectl status eth0 | grep -E "DNS|Domain"
 
 ## Conclusion
 
-The O flag enables stateless DHCPv6 — a DHCPv6 mode where addresses still come from SLAAC but DNS, NTP, and other configuration parameters come from a DHCPv6 server. The DHCPv6 server in this mode responds to Information-Request messages without maintaining address leases, making it simpler to operate than full stateful DHCPv6. For new IPv6 deployments, consider using both the RA RDNSS option and O=1 together for maximum client compatibility. Setting O=1 is especially important in enterprise environments where a central DNS server must be distributed to all hosts.
+The O flag enables stateless DHCPv6 - a DHCPv6 mode where addresses still come from SLAAC but DNS, NTP, and other configuration parameters come from a DHCPv6 server. The DHCPv6 server in this mode responds to Information-Request messages without maintaining address leases, making it simpler to operate than full stateful DHCPv6. For new IPv6 deployments, consider using both the RA RDNSS option and O=1 together for maximum client compatibility. Setting O=1 is especially important in enterprise environments where a central DNS server must be distributed to all hosts.

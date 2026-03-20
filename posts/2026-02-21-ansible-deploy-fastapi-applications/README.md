@@ -16,6 +16,7 @@ Your Ansible control node needs SSH access to target servers. Set up your invent
 
 ```ini
 # inventory/hosts
+
 [app_servers]
 app01 ansible_host=10.0.1.10
 app02 ansible_host=10.0.1.11

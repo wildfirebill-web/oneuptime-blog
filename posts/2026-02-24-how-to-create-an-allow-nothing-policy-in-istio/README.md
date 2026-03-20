@@ -52,6 +52,7 @@ Verify it blocks everything:
 ```bash
 kubectl exec -n my-app deploy/sleep -- curl -s -o /dev/null -w "%{http_code}" http://my-service:8080/api/data
 # Expected: 403
+
 ```
 
 ## Namespace-Wide Allow-Nothing

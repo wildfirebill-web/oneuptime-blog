@@ -209,6 +209,7 @@ When the limit is hit, Envoy records it but does not eject the pod. The `ejectio
 
 ```bash
 # Check if ejections are being blocked by the percentage limit
+
 kubectl exec deploy/my-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep "ejections_overflow"
 

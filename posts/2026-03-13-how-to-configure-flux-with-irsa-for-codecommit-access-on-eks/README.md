@@ -29,6 +29,7 @@ aws codecommit create-repository \
   --repository-description "Flux GitOps repository"
 
 # Get the clone URL
+
 REPO_URL=$(aws codecommit get-repository \
   --repository-name flux-repo \
   --query 'repositoryMetadata.cloneUrlHttp' \

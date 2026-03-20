@@ -37,6 +37,7 @@ B2C uses a separate tenant from your regular Azure AD. Create one specifically f
 
 ```bash
 # Create a new Azure AD B2C tenant
+
 # Note: This must be done through the Azure portal initially
 # Navigate to: Azure Portal > Create a resource > Azure Active Directory B2C
 

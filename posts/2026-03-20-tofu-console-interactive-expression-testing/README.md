@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu console, HCL, Debugging, DevOps, Infrastructure as Code
+Tags: OpenTofu, Tofu console, HCL, Debugging, DevOps, Infrastructure as Code
 
 Description: Learn how to use tofu console as an interactive REPL to test HCL expressions, explore state values, and debug your OpenTofu configurations.
 
@@ -16,6 +16,7 @@ Description: Learn how to use tofu console as an interactive REPL to test HCL ex
 
 ```bash
 # Start the interactive console
+
 tofu console
 
 # The console prompt appears

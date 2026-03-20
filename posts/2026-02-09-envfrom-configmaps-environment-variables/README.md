@@ -72,6 +72,7 @@ Compare this to the alternative without envFrom:
 
 ```yaml
 # Without envFrom (verbose and repetitive)
+
 containers:
 - name: app
   env:

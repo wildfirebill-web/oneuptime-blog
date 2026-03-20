@@ -18,6 +18,7 @@ The `flatten` function takes a list that may contain other lists and returns a s
 
 ```hcl
 # Recursively flattens nested lists into a single list
+
 flatten(list)
 ```
 

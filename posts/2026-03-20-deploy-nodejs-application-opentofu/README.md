@@ -195,4 +195,4 @@ resource "aws_appautoscaling_policy" "cpu" {
 
 ## Summary
 
-This OpenTofu configuration deploys a Node.js application on ECS Fargate with HTTPS load balancing, automatic scaling based on CPU utilization, deployment circuit breakers for automatic rollbacks, and secrets managed through AWS Secrets Manager. The ECR repository stores container images with automatic cleanup of old images. Deploy new versions by updating the `app_version` variable and applying — ECS handles the rolling deployment.
+This OpenTofu configuration deploys a Node.js application on ECS Fargate with HTTPS load balancing, automatic scaling based on CPU utilization, deployment circuit breakers for automatic rollbacks, and secrets managed through AWS Secrets Manager. The ECR repository stores container images with automatic cleanup of old images. Deploy new versions by updating the `app_version` variable and applying - ECS handles the rolling deployment.

@@ -40,6 +40,7 @@ Let's start with practical examples. This check verifies that critical S3 bucket
 
 ```hcl
 # Verify production buckets have versioning enabled
+
 check "s3_versioning" {
   data "aws_s3_bucket" "production_data" {
     bucket = aws_s3_bucket.production_data.id

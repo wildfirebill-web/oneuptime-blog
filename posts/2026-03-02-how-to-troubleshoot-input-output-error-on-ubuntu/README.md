@@ -16,6 +16,7 @@ When you see an I/O error, check the system log immediately:
 
 ```bash
 # Check recent kernel messages for I/O errors
+
 sudo dmesg | tail -50 | grep -iE "error|fail|warning|I/O"
 
 # Check with timestamps

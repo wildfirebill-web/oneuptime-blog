@@ -1,4 +1,4 @@
-# How to Browse Volume Contents in Portainer (Swarm/Agent)
+# How to Browse Volume Contents in Portainer (Swarm/Agent) - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to browse and view the contents of Docker volumes directl
 
 ## Introduction
 
-Portainer Business Edition and environments using the Portainer Agent provide a built-in volume browser that lets you navigate volume contents, view files, and download or upload files — all from the web interface. This is extremely useful for debugging, data verification, and quick file management without SSH access.
+Portainer Business Edition and environments using the Portainer Agent provide a built-in volume browser that lets you navigate volume contents, view files, and download or upload files - all from the web interface. This is extremely useful for debugging, data verification, and quick file management without SSH access.
 
 ## Prerequisites
 
@@ -79,6 +79,7 @@ If the volume browser isn't available, use a running container:
 
 ```bash
 # If you have a container with the volume mounted, use exec:
+
 docker exec -it my-container ls -la /app/data/
 
 # Or open the Portainer console:

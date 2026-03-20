@@ -54,6 +54,7 @@ flowchart TB
 
 ```bash
 # Add Harbor repository
+
 helm repo add harbor https://helm.goharbor.io
 helm repo update
 

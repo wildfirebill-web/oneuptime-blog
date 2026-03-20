@@ -45,6 +45,7 @@ Apply this configuration and reboot the node:
 
 ```bash
 # Apply configuration with additional disk
+
 talosctl apply-config --nodes 192.168.1.10 --file worker-with-storage.yaml
 
 # Reboot to apply disk changes

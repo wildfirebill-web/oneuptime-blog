@@ -32,6 +32,7 @@ Install Emissary-Ingress if needed:
 
 ```bash
 # Install Emissary-Ingress CRDs
+
 kubectl apply -f https://app.getambassador.io/yaml/emissary/3.9.1/emissary-crds.yaml
 
 # Install Emissary-Ingress with Helm

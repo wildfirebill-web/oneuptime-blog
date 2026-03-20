@@ -27,6 +27,7 @@ LXD installs with a `default` profile applied to every container:
 
 ```bash
 # View the default profile
+
 lxc profile show default
 ```
 

@@ -48,6 +48,7 @@ Remove any write permissions (`create`, `update`, `delete`, `patch`) if present.
 ```bash
 kubectl edit clusterrole calico-typha
 # Verify only "watch", "list", "get" verbs are present
+
 ```
 
 ## Step 3: Apply NetworkPolicy to Restrict Typha Access

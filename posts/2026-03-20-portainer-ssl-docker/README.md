@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, ssl, tls, docker, security, certificates
+Tags: Portainer, SSL, TLS, Docker, Security, Certificates
 
 Description: A comprehensive guide to configuring SSL/TLS certificates for Portainer running on Docker standalone.
 
 ## Overview
 
-Portainer generates a self-signed certificate by default, which causes browser warnings. This guide covers configuring Portainer with proper SSL/TLS certificates — both self-signed CA certificates and certificates from a public CA — for Docker standalone deployments.
+Portainer generates a self-signed certificate by default, which causes browser warnings. This guide covers configuring Portainer with proper SSL/TLS certificates - both self-signed CA certificates and certificates from a public CA - for Docker standalone deployments.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Portainer generates a self-signed certificate by default, which causes browser w
 
 ```bash
 # Create directory for certificates
+
 mkdir -p /opt/portainer/certs
 
 # Generate CA key and certificate

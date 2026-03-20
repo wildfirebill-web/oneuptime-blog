@@ -28,6 +28,7 @@ Unlike the other Terraform imports, `tfrun` does not have a version suffix:
 
 ```python
 # Import run metadata - no version suffix needed
+
 import "tfrun"
 ```
 

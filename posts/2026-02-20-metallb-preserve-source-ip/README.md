@@ -42,6 +42,7 @@ Here is a complete example with a deployment and LoadBalancer service that prese
 
 ```yaml
 # deployment.yaml
+
 # Deploy an nginx instance that logs client IPs.
 apiVersion: apps/v1
 kind: Deployment

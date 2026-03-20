@@ -114,6 +114,7 @@ Run the baseline benchmark:
 
 ```bash
 # From the load generator pod in the non-istio namespace
+
 kubectl exec -n bench-no-istio deploy/load-generator -c fortio -- \
   fortio load -c 16 -qps 1000 -t 60s -json /tmp/baseline.json \
   http://echo-server.bench-no-istio:8080/echo

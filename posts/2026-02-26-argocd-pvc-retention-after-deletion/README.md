@@ -24,6 +24,7 @@ There are three categories of PVCs to consider:
 
 ```bash
 # Check which PVCs are tracked by your ArgoCD application
+
 argocd app resources my-app | grep PersistentVolumeClaim
 
 # Example output:

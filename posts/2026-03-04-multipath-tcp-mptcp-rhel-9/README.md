@@ -38,6 +38,7 @@ graph LR
 
 ```bash
 # Check if MPTCP is available in the kernel
+
 sysctl net.mptcp.enabled
 # Output: net.mptcp.enabled = 1
 

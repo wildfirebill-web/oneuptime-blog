@@ -31,6 +31,7 @@ Neither is encrypted by default in etcd. If you need real encryption for Secrets
 
 ```bash
 # Create a ConfigMap from literal key-value pairs
+
 kubectl create configmap app-config \
   --from-literal=database_host=db.example.com \
   --from-literal=database_port=5432 \

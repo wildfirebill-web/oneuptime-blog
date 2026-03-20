@@ -25,6 +25,7 @@ A realm is a security domain in Keycloak. Each realm manages its own set of user
 
 ```bash
 # Using the Keycloak Admin CLI
+
 # First, authenticate to the master realm
 ./kcadm.sh config credentials \
   --server http://localhost:8080 \
@@ -205,7 +206,7 @@ curl -X POST \
 # }
 ```
 
-### Resource Owner Password Flow
+Resource Owner Password Flow
 
 Only for trusted applications - avoid in production when possible.
 

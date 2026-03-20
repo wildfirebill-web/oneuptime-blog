@@ -18,6 +18,7 @@ Before deploying Pi-hole, check that port 53 is available on your host. On many 
 
 ```bash
 # Check if port 53 is in use
+
 sudo lsof -i :53
 
 # If systemd-resolved is using it, disable it

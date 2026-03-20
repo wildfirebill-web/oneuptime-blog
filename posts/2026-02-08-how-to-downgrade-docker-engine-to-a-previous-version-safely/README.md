@@ -26,6 +26,7 @@ Common reasons for downgrading Docker:
 
 ```bash
 # Record your current Docker version
+
 docker version
 docker info | grep "Server Version"
 ```

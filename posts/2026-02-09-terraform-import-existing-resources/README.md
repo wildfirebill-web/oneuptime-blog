@@ -30,6 +30,7 @@ Start with a simple example importing an existing namespace:
 
 ```hcl
 # Write the configuration first
+
 resource "kubernetes_namespace" "app" {
   metadata {
     name = "application"

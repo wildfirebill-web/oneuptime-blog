@@ -1,4 +1,4 @@
-# How to Troubleshoot Active Directory Login Failures in Portainer
+# How to Troubleshoot Active Directory Login Failures in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ AD authentication failures in Portainer can be frustrating. This guide provides 
 
 ```bash
 # Enable debug logging and watch for AD-related messages
+
 docker logs portainer 2>&1 | grep -i "ldap\|auth\|error\|warn" | tail -50
 
 # Real-time debug monitoring during a login attempt
@@ -70,7 +71,7 @@ ldapwhoami \
 
 ## Common AD Errors and Fixes
 
-### Error: "data 52e" — Invalid Credentials
+### Error: "data 52e" - Invalid Credentials
 
 ```bash
 # Error code 52e means bad username or password
@@ -86,7 +87,7 @@ ldapsearch -H ldaps://dc01.corp.example.com:636 \
   sAMAccountName userPrincipalName
 ```
 
-### Error: "data 525" — User Not Found
+### Error: "data 525" - User Not Found
 
 ```bash
 # Search filter not matching the user
@@ -97,7 +98,7 @@ ldapsearch -H ldaps://dc01.corp.example.com:636 \
   "(sAMAccountName=jsmith)" dn
 ```
 
-### Error: "data 533" — Account Disabled
+### Error: "data 533" - Account Disabled
 
 ```bash
 # User account is disabled in AD

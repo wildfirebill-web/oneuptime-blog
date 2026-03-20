@@ -24,6 +24,7 @@ Mobile devices often operate on limited bandwidth. GraphQL allows you to request
 
 ```graphql
 # Instead of fetching entire user objects
+
 query GetUserProfile {
   user(id: "123") {
     name

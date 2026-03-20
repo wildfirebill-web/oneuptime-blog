@@ -22,6 +22,7 @@ Launch your instance:
 
 ```bash
 # Launch a t3.large for MEAN stack
+
 aws ec2 run-instances \
   --image-id ami-0abc123def456 \
   --instance-type t3.large \

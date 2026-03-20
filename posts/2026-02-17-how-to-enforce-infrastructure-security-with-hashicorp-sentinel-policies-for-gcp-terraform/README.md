@@ -56,6 +56,7 @@ The root sentinel.hcl file defines which policies are active and their enforceme
 
 ```hcl
 # sentinel.hcl
+
 # Policy configuration for GCP Terraform workspaces
 
 policy "gcp-networking" {

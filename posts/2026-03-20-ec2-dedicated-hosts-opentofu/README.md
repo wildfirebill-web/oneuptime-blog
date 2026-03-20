@@ -20,6 +20,7 @@ EC2 Dedicated Hosts are physical servers fully dedicated to your use. They enabl
 
 ```hcl
 # Allocate a dedicated physical host for c5 instances
+
 resource "aws_ec2_host" "dedicated" {
   instance_family   = "c5"         # Instance family supported on this host
   availability_zone = "us-east-1a"
@@ -130,4 +131,4 @@ tofu apply
 
 ## Conclusion
 
-EC2 Dedicated Hosts provide physical server isolation for compliance and BYOL licensing scenarios. The host_recovery feature ensures high availability by automatically restarting instances on replacement hardware if the physical host fails. Be mindful of costs—dedicated hosts are billed per host-hour regardless of whether instances are running on them.
+EC2 Dedicated Hosts provide physical server isolation for compliance and BYOL licensing scenarios. The host_recovery feature ensures high availability by automatically restarting instances on replacement hardware if the physical host fails. Be mindful of costs-dedicated hosts are billed per host-hour regardless of whether instances are running on them.

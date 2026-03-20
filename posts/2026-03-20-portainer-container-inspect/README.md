@@ -42,6 +42,7 @@ This is equivalent to:
 
 ```bash
 # Docker CLI:
+
 docker inspect my-container
 
 # Pretty-printed with jq:
@@ -211,21 +212,21 @@ docker inspect my-container | jq '.[].Image'
 ### "Why can't my container reach service X?"
 
 Check the network configuration:
-```
+```bash
 Inspect → NetworkSettings → Networks
 Verify both containers are on the same Docker network
 ```
 
 ### "Is my environment variable set correctly?"
 
-```
+```text
 Inspect → Config → Env
 Look for your variable in the list
 ```
 
 ### "Why is my container restarting?"
 
-```
+```text
 Inspect → State → ExitCode and Error
 Check OOMKilled field
 Review logs for the crash reason
@@ -233,7 +234,7 @@ Review logs for the crash reason
 
 ### "What volumes are mounted?"
 
-```
+```text
 Inspect → Mounts
 Verify Source paths exist on the host
 Check RW field for read/write vs read-only
@@ -241,4 +242,4 @@ Check RW field for read/write vs read-only
 
 ## Conclusion
 
-Portainer's container inspection view puts the full `docker inspect` output at your fingertips in a readable web interface. By understanding the key sections — State, NetworkSettings, Mounts, Config, and HostConfig — you can quickly diagnose issues, audit container configurations, and verify that your deployments are running exactly as intended.
+Portainer's container inspection view puts the full `docker inspect` output at your fingertips in a readable web interface. By understanding the key sections - State, NetworkSettings, Mounts, Config, and HostConfig - you can quickly diagnose issues, audit container configurations, and verify that your deployments are running exactly as intended.

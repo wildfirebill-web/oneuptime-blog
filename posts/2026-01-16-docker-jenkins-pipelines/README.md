@@ -23,6 +23,7 @@ Jenkins pipelines provide powerful automation for building, testing, and deployi
 
 ```bash
 # Add jenkins user to docker group
+
 sudo usermod -aG docker jenkins
 
 # Restart Jenkins

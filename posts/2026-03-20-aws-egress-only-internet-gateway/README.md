@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, IPv6, Egress-Only Internet Gateway, VPC, Security, Private Subnets
+Tags: AWS, IPv6, Egress-Only Internet Gateway, VPC, Security, Private Subnet
 
 Description: Configure an AWS Egress-Only Internet Gateway (EIGW) to allow private subnet instances to initiate outbound IPv6 connections while blocking all inbound IPv6 traffic.
 
 ## Introduction
 
-The AWS Egress-Only Internet Gateway (EIGW) is the IPv6 equivalent of a NAT Gateway for outbound connectivity — it allows instances in private subnets to initiate IPv6 connections to the internet while blocking all inbound connections initiated from outside. Unlike NAT Gateway, which translates addresses, the EIGW maintains IPv6 addresses while simply blocking inbound-initiated flows using stateful connection tracking.
+The AWS Egress-Only Internet Gateway (EIGW) is the IPv6 equivalent of a NAT Gateway for outbound connectivity - it allows instances in private subnets to initiate IPv6 connections to the internet while blocking all inbound connections initiated from outside. Unlike NAT Gateway, which translates addresses, the EIGW maintains IPv6 addresses while simply blocking inbound-initiated flows using stateful connection tracking.
 
 ## How EIGW Works
 
-```
+```text
 Private Subnet Instance (2600:1f14::100):
   - Can initiate: connections to external IPv6 hosts (outbound)
   - Blocked: external hosts cannot initiate connections to instance
@@ -29,6 +29,7 @@ vs Internet Gateway (public subnets):
 VPC_ID="vpc-12345678"
 
 # Create EIGW
+
 EIGW_ID=$(aws ec2 create-egress-only-internet-gateway \
     --vpc-id "$VPC_ID" \
     --tag-specifications "ResourceType=egress-only-internet-gateway,Tags=[{Key=Name,Value=main-eigw}]" \
@@ -112,7 +113,7 @@ ping6 -c 3 2001:4860:4860::8888
 ## Security Group Considerations
 
 ```hcl
-# Security groups still apply — EIGW is for routing, not access control
+# Security groups still apply - EIGW is for routing, not access control
 
 resource "aws_security_group" "private_instances" {
   vpc_id = aws_vpc.main.id

@@ -373,6 +373,7 @@ Check that the host key is properly configured:
 
 ```bash
 # List current known hosts
+
 argocd cert list --cert-type ssh
 
 # Verify the key matches what the server provides

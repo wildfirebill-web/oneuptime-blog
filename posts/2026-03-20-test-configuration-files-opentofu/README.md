@@ -13,13 +13,14 @@ OpenTofu test files use the `.tftest.hcl` (or `.tofutest.hcl`) extension and con
 ## Test File Top-Level Blocks
 
 ```hcl
-# Top-level variables block — applies to all run blocks
+# Top-level variables block - applies to all run blocks
+
 variables {
   region      = "us-east-1"
   environment = "test"
 }
 
-# Top-level provider override — replaces provider config in module
+# Top-level provider override - replaces provider config in module
 provider "aws" {
   region = "us-east-1"
 }

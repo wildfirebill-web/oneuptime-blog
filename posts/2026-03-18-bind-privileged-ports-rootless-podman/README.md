@@ -20,6 +20,7 @@ When you try to bind a privileged port in rootless mode, Podman reports an error
 
 ```bash
 # This will fail in rootless mode with a permission error
+
 podman run -d -p 80:80 --name webserver nginx
 
 # You will see an error like:

@@ -27,6 +27,7 @@ The safest approach pins to an exact chart version:
 
 ```yaml
 # application.yaml - exact version pin
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -28,6 +28,7 @@ Here's how to create a security group for a web server that needs HTTP, HTTPS, a
 
 ```bash
 # Create a security group in your VPC
+
 aws ec2 create-security-group \
   --group-name web-server-sg \
   --description "Security group for web servers" \

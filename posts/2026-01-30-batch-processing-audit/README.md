@@ -69,6 +69,7 @@ Start with a well-designed audit event structure that captures everything you ne
 
 ```python
 # audit_models.py
+
 # Core data models for batch audit events
 
 from dataclasses import dataclass, field

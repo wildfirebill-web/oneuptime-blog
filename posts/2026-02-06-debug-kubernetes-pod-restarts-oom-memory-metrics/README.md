@@ -20,6 +20,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("runtime-metrics")
 
 # Create observable gauges for memory stats
+
 def get_memory_stats(callback_options):
     process = psutil.Process(os.getpid())
     mem_info = process.memory_info()

@@ -79,6 +79,7 @@ You can create this document through the AWS CLI:
 
 ```bash
 # Create the Automation document from a YAML file
+
 aws ssm create-document \
   --name "Restart-EC2-Instance" \
   --document-type "Automation" \

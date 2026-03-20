@@ -18,6 +18,7 @@ In automation and scripting, you often need to wait for a container to finish be
 
 ```bash
 # Run a container in the background
+
 podman run -d --name my-task docker.io/library/alpine:latest \
   sh -c 'echo "Working..."; sleep 5; echo "Done"'
 

@@ -16,6 +16,7 @@ IAM roles provide temporary credentials to AWS services, eliminating the need to
 
 ```bash
 # Create the trust policy
+
 cat > trust-policy.json <<'EOF'
 {
   "Version": "2012-10-17",

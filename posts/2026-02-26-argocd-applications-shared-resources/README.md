@@ -36,6 +36,7 @@ ArgoCD supports three tracking methods, and choosing the right one affects how s
 
 ```yaml
 # In argocd-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

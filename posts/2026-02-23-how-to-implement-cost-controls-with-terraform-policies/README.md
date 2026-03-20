@@ -20,6 +20,7 @@ Sentinel is the policy-as-code framework built into HCP Terraform:
 
 ```python
 # restrict-instance-sizes.sentinel
+
 # Prevent deployment of expensive instance types
 
 import "tfplan/v2" as tfplan

@@ -23,6 +23,7 @@ Install the AWS collection if you have not already:
 
 ```bash
 # Install the official AWS collection from Ansible Galaxy
+
 ansible-galaxy collection install amazon.aws
 ```
 

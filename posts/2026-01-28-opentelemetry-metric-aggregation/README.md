@@ -104,6 +104,7 @@ module.exports = { meterProvider };
 
 ```python
 # metrics_config.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

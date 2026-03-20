@@ -22,6 +22,7 @@ Design modules with extension points for edge cases:
 
 ```hcl
 # modules/web-service/variables.tf
+
 # Standard variables plus escape hatches
 
 # Standard inputs

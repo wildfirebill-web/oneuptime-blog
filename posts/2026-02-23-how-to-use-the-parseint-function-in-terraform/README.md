@@ -16,6 +16,7 @@ The `parseint` function takes two arguments: a string containing the number and 
 
 ```hcl
 # parseint(string, base)
+
 # Converts a string number in the given base to a decimal integer
 parseint("FF", 16)   # Returns: 255
 parseint("100", 2)   # Returns: 4

@@ -30,6 +30,7 @@ Verify cluster and Calico health before the upgrade.
 
 ```bash
 # Check Kubernetes node status
+
 kubectl get nodes -o wide
 
 # Verify all Calico components are healthy

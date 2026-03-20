@@ -31,6 +31,7 @@ Create a private network for your cluster:
 
 ```bash
 # Create a private network
+
 hcloud network create --name talos-network --ip-range 10.0.0.0/8
 
 # Create a subnet within the network

@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Prometheus, Grafana, Monitoring, Kubernetes, Helm, kube-prometheus-stack, Infrastructure as Code
+Tags: OpenTofu, Prometheus, Grafana, Monitoring, Kubernetes, Helm, Kube-prometheus-stack, Infrastructure as Code
 
-Description: Learn how to deploy a complete Prometheus and Grafana monitoring stack on Kubernetes using OpenTofu and the kube-prometheus-stack Helm chart, with persistent storage, alerting, and ingress configuration.
+Description: Learn how to deploy a complete Prometheus and Grafana monitoring stack on Kubernetes using OpenTofu and the kube-prometheus-stack Helm chart, with persistent storage, alerting, and ingress...
 
 ---
 
@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # monitoring.tf
+
 resource "helm_release" "kube_prometheus_stack" {
   name             = "kube-prometheus-stack"
   repository       = "https://prometheus-community.github.io/helm-charts"
@@ -190,8 +191,8 @@ resource "kubernetes_manifest" "custom_alert_rules" {
 
 ## Best Practices
 
-- Set Prometheus retention based on environment — 30 days for production, 7 days for dev to save storage costs.
-- Use persistent storage for Prometheus and Grafana — losing metrics history after a pod restart is disruptive.
-- Configure Alertmanager routes before going to production — default routes don't alert anyone.
-- Enable kube-state-metrics and node-exporter — they provide essential Kubernetes and host-level metrics.
+- Set Prometheus retention based on environment - 30 days for production, 7 days for dev to save storage costs.
+- Use persistent storage for Prometheus and Grafana - losing metrics history after a pod restart is disruptive.
+- Configure Alertmanager routes before going to production - default routes don't alert anyone.
+- Enable kube-state-metrics and node-exporter - they provide essential Kubernetes and host-level metrics.
 - Store Grafana admin password in Kubernetes Secrets or Sealed Secrets, not in plaintext Helm values.

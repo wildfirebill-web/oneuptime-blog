@@ -29,6 +29,7 @@ When a container exceeds its memory limit:
 
 ```bash
 # Demonstrate OOM kill behavior (default)
+
 podman run --rm --memory 32m alpine sh -c "
   echo 'Attempting to exceed 32MB memory limit...'
   dd if=/dev/zero of=/tmp/fill bs=1M count=64 2>&1 || echo 'Process was killed or hit limit'

@@ -14,6 +14,7 @@ Docker health checks run commands inside containers to verify they are functioni
 
 ```yaml
 # healthcheck-demo-stack.yml
+
 version: '3.8'
 
 services:
@@ -180,9 +181,9 @@ exit 0
 
 ## Viewing Health Status in Portainer
 
-Navigate to: **Environments > Containers** — containers show health status badges.
+Navigate to: **Environments > Containers** - containers show health status badges.
 
-Or in **Swarm > Services** — see task health distribution per service.
+Or in **Swarm > Services** - see task health distribution per service.
 
 ## Conclusion
 

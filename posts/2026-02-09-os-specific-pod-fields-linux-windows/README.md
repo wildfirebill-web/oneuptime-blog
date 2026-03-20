@@ -162,6 +162,7 @@ For unsafe sysctls (like `kernel.*`), you need to enable them in kubelet configu
 
 ```yaml
 # Node-level kubelet config (not pod spec)
+
 apiVersion: kubelet.config.k8s.io/v1beta1
 kind: KubeletConfiguration
 allowedUnsafeSysctls:

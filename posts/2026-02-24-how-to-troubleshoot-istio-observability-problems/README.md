@@ -20,6 +20,7 @@ Check if the Envoy sidecar is producing metrics:
 
 ```bash
 # Port-forward to the sidecar's admin interface
+
 kubectl port-forward <pod-name> -n production 15000:15000 &
 
 # Check if stats are being generated

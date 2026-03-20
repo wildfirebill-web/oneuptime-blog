@@ -25,6 +25,7 @@ This guide covers the server mode for team use on Ubuntu.
 
 ```bash
 # Download the latest Focalboard server package
+
 # Check https://github.com/mattermost/focalboard/releases for latest version
 cd /tmp
 curl -LO https://github.com/mattermost/focalboard/releases/download/v7.11.4/focalboard-server-linux-amd64.tar.gz

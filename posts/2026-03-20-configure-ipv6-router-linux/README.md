@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Routing, Networking, Router, sysctl
+Tags: IPv6, Linux, Routing, Networking, Router, Sysctl
 
 Description: Configure a Linux system as an IPv6 router by enabling packet forwarding, assigning prefix addresses to interfaces, and setting up basic IPv6 routing between network segments.
 
@@ -22,6 +22,7 @@ By default, Linux does not forward packets between interfaces. Enable IPv6 forwa
 
 ```bash
 # Enable IPv6 forwarding immediately
+
 sudo sysctl -w net.ipv6.conf.all.forwarding=1
 
 # Make it persistent across reboots

@@ -16,6 +16,7 @@ Add it to your callback whitelist:
 
 ```ini
 # ansible.cfg - Enable task profiling
+
 [defaults]
 callback_whitelist = profile_tasks
 ```

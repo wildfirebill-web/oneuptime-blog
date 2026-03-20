@@ -428,6 +428,7 @@ flowchart TD
 
 ```python
 # state_manager.py
+
 # Python implementation of OAuth2 state parameter handling
 
 import secrets

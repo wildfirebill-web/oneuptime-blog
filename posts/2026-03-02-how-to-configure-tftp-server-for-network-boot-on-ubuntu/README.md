@@ -16,6 +16,7 @@ Ubuntu's recommended TFTP server is `tftpd-hpa`, a robust implementation that ha
 
 ```bash
 # Update package list and install tftpd-hpa
+
 sudo apt update
 sudo apt install tftpd-hpa
 

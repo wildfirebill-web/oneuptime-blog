@@ -160,6 +160,7 @@ Deploy the Lambda, then create the subscription filter:
 
 ```bash
 # Give CloudWatch Logs permission to invoke the Lambda
+
 aws lambda add-permission \
   --function-name "log-processor" \
   --statement-id "allow-cloudwatch-logs" \

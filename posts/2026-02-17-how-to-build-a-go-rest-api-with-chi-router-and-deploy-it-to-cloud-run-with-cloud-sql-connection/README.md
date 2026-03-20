@@ -18,6 +18,7 @@ Start by initializing your Go module and pulling in the dependencies.
 
 ```bash
 # Create the project and install dependencies
+
 mkdir chi-api && cd chi-api
 go mod init chi-api
 go get github.com/go-chi/chi/v5

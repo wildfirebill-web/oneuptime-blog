@@ -25,6 +25,7 @@ The `ansible.builtin.setup` module gathers facts about remote hosts. While Ansib
 
 ```yaml
 # Only gather network facts (faster than gathering everything)
+
 - name: Gather network facts only
   ansible.builtin.setup:
     gather_subset:

@@ -16,6 +16,7 @@ If you know set theory, this is the intersection operation. Given two sets, you 
 
 ```yaml
 # Find common elements between two lists
+
 - name: Basic intersection
   ansible.builtin.debug:
     msg: "{{ list_a | intersect(list_b) }}"

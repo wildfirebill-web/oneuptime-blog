@@ -87,6 +87,7 @@ Before you can push images, configure the gcloud credential helper.
 
 ```bash
 # Configure Docker credential helper for Artifact Registry
+
 gcloud auth configure-docker us-central1-docker.pkg.dev
 
 # Verify the repository exists (or create it)

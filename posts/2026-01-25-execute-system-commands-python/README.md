@@ -22,6 +22,7 @@ The `subprocess.run()` function is the recommended way to run commands in Python
 import subprocess
 
 # Run a simple command
+
 result = subprocess.run(['ls', '-la'], capture_output=True, text=True)
 
 print("Return code:", result.returncode)

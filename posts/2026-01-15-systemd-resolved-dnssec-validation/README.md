@@ -144,6 +144,7 @@ Here is a comprehensive configuration file that enables DNSSEC along with other 
 
 [Resolve]
 # Enable strict DNSSEC validation
+
 DNSSEC=yes
 
 # Use DNS-over-TLS for encrypted queries

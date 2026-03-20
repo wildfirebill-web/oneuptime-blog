@@ -18,6 +18,7 @@ When a pod fails to mount a Filestore volume, the first place to look is the pod
 
 ```bash
 # Describe the failing pod to see mount errors
+
 kubectl describe pod MY_POD_NAME
 ```
 

@@ -307,6 +307,7 @@ Deploy multiple DaemonSets using different schedulers for different node types:
 
 ```yaml
 # DaemonSet for GPU nodes
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

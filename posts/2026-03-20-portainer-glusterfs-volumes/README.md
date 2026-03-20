@@ -1,4 +1,4 @@
-# How to Set Up GlusterFS Volumes with Portainer
+# How to Set Up GlusterFS Volumes with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ GlusterFS is a distributed filesystem that provides replicated, scalable storage
 
 ```bash
 # Run on ALL Swarm nodes
+
 # Ubuntu/Debian
 sudo apt-get update && sudo apt-get install -y glusterfs-server
 sudo systemctl enable --now glusterd

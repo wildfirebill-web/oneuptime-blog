@@ -88,6 +88,7 @@ Monitor the repo server to find the right value for your workload:
 
 ```bash
 # Check repo server CPU and memory
+
 kubectl top pods -n argocd -l app.kubernetes.io/name=argocd-repo-server
 
 # Check for queued requests

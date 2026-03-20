@@ -18,6 +18,7 @@ Here is the most straightforward example.
 
 ```yaml
 # Check if a command succeeded before proceeding
+
 ---
 - name: Success test basics
   hosts: localhost

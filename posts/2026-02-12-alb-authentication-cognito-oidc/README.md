@@ -40,6 +40,7 @@ Create a Cognito User Pool:
 
 ```bash
 # Create the user pool
+
 aws cognito-idp create-user-pool \
   --pool-name "app-users" \
   --auto-verified-attributes email \

@@ -279,6 +279,7 @@ Fix: Delete the lock file manually from your object storage bucket:
 
 ```bash
 # For S3
+
 aws s3 rm s3://your-bucket/loki/compactor/lock
 
 # For GCS

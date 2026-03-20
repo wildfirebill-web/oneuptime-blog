@@ -22,6 +22,7 @@ Edit `/etc/powerdns/pdns.conf`:
 
 ```bash
 # IPv6 listen address (:: means all IPv6 interfaces)
+
 local-address=0.0.0.0, ::
 
 # Bind to port 53 explicitly
@@ -36,7 +37,7 @@ enable-lua-records=yes
 PowerDNS uses `pdnsutil` to manage DNSSEC keys and policies:
 
 ```bash
-# Secure the zone — PowerDNS generates KSK and ZSK automatically
+# Secure the zone - PowerDNS generates KSK and ZSK automatically
 sudo pdnsutil secure-zone example.com
 
 # Verify the zone is secured and keys are created

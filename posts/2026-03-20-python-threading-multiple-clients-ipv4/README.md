@@ -114,6 +114,7 @@ If multiple threads need to share state (e.g., a list of connected clients), use
 import threading
 
 # Shared registry of active connections
+
 clients: dict[tuple, socket.socket] = {}
 clients_lock = threading.Lock()
 

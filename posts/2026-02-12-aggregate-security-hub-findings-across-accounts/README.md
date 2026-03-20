@@ -38,6 +38,7 @@ In the Organizations management account, designate a security account as the Sec
 
 ```bash
 # In the management account
+
 aws securityhub enable-organization-admin-account \
   --admin-account-id 555555555555
 ```

@@ -48,6 +48,7 @@ Here is a minimal configuration to start collecting file system metrics:
 
 ```yaml
 # config.yaml - File system monitoring with the host metrics receiver
+
 receivers:
   hostmetrics:
     collection_interval: 30s

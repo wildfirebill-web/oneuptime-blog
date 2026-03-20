@@ -22,6 +22,7 @@ Enable concurrent image layer downloads to speed up image pulling, which often d
 
 ```toml
 # /etc/crio/crio.conf
+
 [crio.image]
 # Enable parallel image pulls
 parallel_image_pull = true

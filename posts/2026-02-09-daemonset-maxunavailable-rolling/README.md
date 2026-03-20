@@ -222,6 +222,7 @@ After applying your DaemonSet update, monitor the rollout progress:
 
 ```bash
 # Watch the rollout status
+
 kubectl rollout status daemonset/logging-agent -n kube-system
 
 # Check which pods are being updated

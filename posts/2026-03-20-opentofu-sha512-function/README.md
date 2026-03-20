@@ -1,11 +1,10 @@
----
-title: "How to Use the sha512() Function in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, crypto
-description: "Learn how to use the sha512() function in OpenTofu to compute SHA-512 hashes."
----
-
 # How to Use the sha512() Function in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Crypto
+
+Description: Learn how to use the sha512() function in OpenTofu to compute SHA-512 hashes.
 
 Learn how to use the sha512() function in OpenTofu to compute SHA-512 hashes.
 
@@ -13,6 +12,7 @@ Learn how to use the sha512() function in OpenTofu to compute SHA-512 hashes.
 
 ```hcl
 # See OpenTofu documentation for full syntax
+
 ```
 
 ## Basic Example

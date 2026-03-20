@@ -1,4 +1,4 @@
-# How to Deploy Containers to Azure ACI via Portainer
+# How to Deploy Containers to Azure ACI via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -33,9 +33,9 @@ With Azure ACI configured as an environment in Portainer, you can deploy contain
 - **Image**: `nginx:1.25` (or your container image)
 - **OS type**: Linux or Windows
 
-### Resource Configuration
+Resource Configuration
 
-```
+```text
 CPU:    0.5 vCPU  (minimum: 0.1)
 Memory: 1.5 GB    (minimum: 0.1)
 ```
@@ -52,7 +52,7 @@ For HTTPS:
 
 Add environment variables your container needs:
 
-```
+```text
 APP_ENV=production
 DATABASE_URL=postgresql://user:pass@db.example.com:5432/mydb
 API_KEY=your-api-key-value
@@ -77,6 +77,7 @@ For automated deployments to ACI:
 
 ```bash
 # Authenticate with Portainer
+
 TOKEN=$(curl -s -X POST https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
   -d '{"username":"admin","password":"yourpassword"}' | jq -r '.jwt')

@@ -16,6 +16,7 @@ A typical IAM policy has multiple statements, each with different actions, resou
 
 ```hcl
 # This is manageable with a few statements but becomes unwieldy at scale
+
 data "aws_iam_policy_document" "app" {
   statement {
     sid    = "ReadS3"

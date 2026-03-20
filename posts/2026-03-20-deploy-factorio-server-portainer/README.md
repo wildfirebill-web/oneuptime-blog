@@ -14,6 +14,7 @@ Factorio is a factory-building game with excellent multiplayer support. The offi
 
 ```yaml
 # factorio-stack.yml
+
 version: "3.8"
 
 services:
@@ -106,7 +107,7 @@ The `stable` tag always points to the latest stable release. Use Watchtower to a
 
 Access the Factorio server console via Portainer's container console to run admin commands:
 
-```
+```text
 /players                    # List connected players
 /ban PlayerName reason      # Ban a player
 /kick PlayerName reason     # Kick a player  

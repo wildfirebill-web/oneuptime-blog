@@ -16,6 +16,7 @@ Always check the resource documentation for the import format:
 
 ```bash
 # Check the provider docs or use the OpenTofu registry
+
 # The import section at the bottom of each resource page shows the format
 ```
 
@@ -123,4 +124,4 @@ tofu plan  # should show no changes
 
 ## Summary
 
-Complex import IDs in OpenTofu follow provider-specific conventions — composite keys separated by `/`, `:`, or `_`. The resource's documentation import section is the authoritative reference. Using import blocks with `for_each` (OpenTofu 1.7+) simplifies bulk imports. Always run `tofu plan` after importing to verify the state matches the live resource configuration.
+Complex import IDs in OpenTofu follow provider-specific conventions - composite keys separated by `/`, `:`, or `_`. The resource's documentation import section is the authoritative reference. Using import blocks with `for_each` (OpenTofu 1.7+) simplifies bulk imports. Always run `tofu plan` after importing to verify the state matches the live resource configuration.

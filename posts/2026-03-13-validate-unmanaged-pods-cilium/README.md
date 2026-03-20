@@ -28,6 +28,7 @@ List pods that Cilium is not managing as endpoints.
 
 ```bash
 # List all Cilium-managed endpoints
+
 cilium endpoint list
 
 # Get the count of managed endpoints

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, NGINX, Load Balancing, High Availability, DevOps
+Tags: Ansible, Nginx, Load Balancing, High Availability, DevOps
 
 Description: Configure Nginx load balancing with Ansible including round-robin, least connections, IP hash, health checks, and sticky sessions.
 
@@ -58,6 +58,7 @@ Define your load balancer and backend servers separately.
 
 ```yaml
 # inventory/production.yml
+
 all:
   children:
     load_balancers:

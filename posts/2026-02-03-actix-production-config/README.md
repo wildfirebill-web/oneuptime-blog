@@ -547,6 +547,7 @@ Here is a multi-stage Dockerfile that produces a minimal production image.
 
 ```dockerfile
 # Build stage
+
 FROM rust:1.75-bookworm AS builder
 
 WORKDIR /app

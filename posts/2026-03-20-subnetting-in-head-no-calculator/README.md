@@ -4,12 +4,12 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Subnetting, Networking, Mental Math, Certification
 
-Description: Mental subnetting uses the "block size" (magic number) method and memorized octet values to quickly determine network addresses, broadcast addresses, and host ranges without a calculator.
+Description: Mental subnetting uses the 'block size' (magic number) method and memorized octet values to quickly determine network addresses, broadcast addresses, and host ranges without a calculator.
 
 ## The Magic Number / Block Size Method
 
 For any subnet mask, the "block size" (or magic number) in the interesting octet is:
-```
+```text
 Block size = 256 - (interesting octet of the mask)
 ```
 
@@ -55,7 +55,7 @@ The interesting octet is the first non-255, non-0 octet in the mask.
 
 ## Quick Formula Summary
 
-```
+```text
 1. Find the interesting octet (first non-255, non-0 octet in mask)
 2. Block = 256 - mask_octet
 3. Subnet = largest multiple of Block ≤ IP octet

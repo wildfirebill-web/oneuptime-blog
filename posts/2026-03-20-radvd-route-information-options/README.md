@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, radvd, Route Information, RFC4191, Routing, Networking
+Tags: IPv6, Radvd, Route Information, RFC4191, Routing, Networking
 
 Description: Configure radvd Route Information Options per RFC 4191 to advertise specific IPv6 routes to clients, enabling multi-router environments and more specific routing without DHCPv6.
 
@@ -21,6 +21,7 @@ Standard Router Advertisements provide a default route (`::/0`). Route Informati
 
 ```text
 # /etc/radvd.conf
+
 # Advertise route information alongside prefix and DNS
 
 interface eth1 {

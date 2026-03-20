@@ -29,6 +29,7 @@ Resource quotas prevent runaway costs by capping resource consumption per namesp
 
 ```yaml
 # clusters/production/resource-quotas/development-quota.yaml
+
 # This ResourceQuota limits resource consumption in the development namespace
 apiVersion: v1
 kind: ResourceQuota

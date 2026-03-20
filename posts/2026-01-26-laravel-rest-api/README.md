@@ -35,6 +35,7 @@ Make sure you have PHP 8.2 or higher and Composer installed. This guide uses Lar
 
 ```bash
 # Check your PHP version
+
 php -v
 # Should output something like: PHP 8.2.0
 

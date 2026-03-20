@@ -100,6 +100,7 @@ flowchart TB
 # mm2.properties
 
 # Cluster aliases
+
 clusters = primary, dr
 
 # Primary cluster

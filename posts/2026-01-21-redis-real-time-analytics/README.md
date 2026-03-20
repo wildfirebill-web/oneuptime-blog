@@ -33,6 +33,7 @@ import redis
 from datetime import datetime
 
 # Connect to Redis
+
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 def track_page_view(page_id: str) -> int:

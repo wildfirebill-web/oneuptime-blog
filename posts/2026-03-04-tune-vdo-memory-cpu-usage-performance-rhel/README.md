@@ -20,6 +20,7 @@ VDO memory usage has two main parts:
 
 ```bash
 # View current VDO configuration
+
 sudo vdo status --name=vdo0 | grep -E "index|memory|thread"
 
 # Check actual memory consumption

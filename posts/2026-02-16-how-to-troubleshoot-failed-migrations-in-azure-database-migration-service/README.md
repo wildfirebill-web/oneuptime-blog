@@ -18,6 +18,7 @@ Before troubleshooting, you need to know what actually went wrong. DMS provides 
 
 ```bash
 # Get the overall status and any error messages
+
 az dms project task show \
   --name my-migration-task \
   --resource-group rg-migration \

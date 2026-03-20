@@ -33,6 +33,7 @@ Host internal-server
 
 ```bash
 # Connect directly using the config
+
 ssh internal-server
 ```
 
@@ -69,8 +70,8 @@ Host internal-server
     User admin
     # ssh through bastion, opening a pipe to the target host's SSH port
     ProxyCommand ssh -W %h:%p -q jumpuser@203.0.113.10
-    #             -W %h:%p — forward stdin/stdout to host:port (%h=%hostname, %p=%port)
-    #             -q       — quiet mode
+    #             -W %h:%p - forward stdin/stdout to host:port (%h=%hostname, %p=%port)
+    #             -q       - quiet mode
 ```
 
 ## Using netcat as ProxyCommand

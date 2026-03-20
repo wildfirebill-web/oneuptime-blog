@@ -49,6 +49,7 @@ Enable the necessary APIs in your Google Cloud project using the gcloud CLI:
 
 ```bash
 # Enable Pub/Sub and BigQuery APIs
+
 gcloud services enable pubsub.googleapis.com
 gcloud services enable bigquery.googleapis.com
 

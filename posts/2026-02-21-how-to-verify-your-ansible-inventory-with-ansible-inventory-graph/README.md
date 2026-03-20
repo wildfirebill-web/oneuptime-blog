@@ -16,6 +16,7 @@ The `--graph` flag displays your inventory as an ASCII tree, showing group hiera
 
 ```bash
 # Display the inventory as a tree
+
 ansible-inventory -i inventory/hosts.yml --graph
 ```
 

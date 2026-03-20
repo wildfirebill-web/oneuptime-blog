@@ -31,6 +31,7 @@ Inspect the CNI conflist on a node:
 
 ```bash
 # View the CNI configuration files on the node
+
 ls -la /etc/cni/net.d/
 
 # Read the active conflist (Cilium creates 05-cilium.conflist or similar)

@@ -31,6 +31,7 @@ tracer = trace.get_tracer("inventory.reservation", "1.0.0")
 meter = metrics.get_meter("inventory.reservation", "1.0.0")
 
 # Track reservation outcomes
+
 reservation_counter = meter.create_counter(
     name="inventory.reservations_total",
     description="Total reservation attempts",

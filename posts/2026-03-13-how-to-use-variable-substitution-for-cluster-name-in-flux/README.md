@@ -297,6 +297,7 @@ Check that variables are being resolved correctly:
 
 ```bash
 # Check the ConfigMap is in place
+
 kubectl get configmap cluster-info -n flux-system -o yaml
 
 # Check the Kustomization status

@@ -293,6 +293,7 @@ Track your Redis connection metrics:
 
 ```bash
 # Total connections opened
+
 istio_tcp_connections_opened_total{destination_service="redis.cache.svc.cluster.local"}
 
 # Bytes transferred

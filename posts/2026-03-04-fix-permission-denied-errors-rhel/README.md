@@ -14,6 +14,7 @@ Description: A systematic approach to diagnosing and fixing 'Permission Denied' 
 
 ```bash
 # View permissions on the file or directory
+
 ls -la /path/to/file
 
 # The output shows: permissions owner group

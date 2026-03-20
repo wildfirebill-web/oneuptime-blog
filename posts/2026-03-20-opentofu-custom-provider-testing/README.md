@@ -1,19 +1,18 @@
----
-title: "Testing Custom OpenTofu Providers"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, testing, go
-description: "Learn how to write unit tests and acceptance tests for custom OpenTofu providers using the Terraform Plugin Testing framework."
----
-
 # Testing Custom OpenTofu Providers
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Testing, Go
+
+Description: Learn how to write unit tests and acceptance tests for custom OpenTofu providers using the Terraform Plugin Testing framework.
 
 Testing custom providers is essential for reliability. The Terraform Plugin Testing framework provides tools for both unit testing provider logic and running full acceptance tests against real or mock APIs.
 
 ## Types of Provider Tests
 
-1. **Unit tests** — Test individual functions and logic in Go
-2. **Acceptance tests** — Full integration tests that create real resources
-3. **Mock tests** — Tests using a mock API server (no real resources)
+1. **Unit tests** - Test individual functions and logic in Go
+2. **Acceptance tests** - Full integration tests that create real resources
+3. **Mock tests** - Tests using a mock API server (no real resources)
 
 ## Setting Up the Test Framework
 
@@ -35,7 +34,7 @@ import (
     "terraform-provider-petstore/internal/provider"
 )
 
-// Test provider factories — used in all tests
+// Test provider factories - used in all tests
 var testAccProtoV6ProviderFactories = map[string]func() (tfprotov6.ProviderServer, error){
     "petstore": providerserver.NewProtocol6WithError(provider.New()),
 }
@@ -174,6 +173,7 @@ data "petstore_pet" "test" {
 
 ```bash
 # Run unit tests
+
 go test ./internal/provider/ -v
 
 # Run acceptance tests (requires environment setup)

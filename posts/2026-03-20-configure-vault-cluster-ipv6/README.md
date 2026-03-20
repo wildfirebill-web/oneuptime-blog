@@ -16,6 +16,7 @@ HashiCorp Vault manages secrets and protects sensitive data. Deploying a Vault H
 # /etc/vault.d/vault.hcl
 
 # HTTP/HTTPS API listener on IPv6
+
 listener "tcp" {
   address       = "[2001:db8::1]:8200"
   tls_cert_file = "/etc/vault.d/certs/vault.crt"

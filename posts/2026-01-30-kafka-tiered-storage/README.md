@@ -113,6 +113,7 @@ Tiered storage is available in:
 
 ```bash
 # Check your Kafka version
+
 kafka-broker-api-versions.sh --bootstrap-server localhost:9092 | head -5
 
 # Verify tiered storage support

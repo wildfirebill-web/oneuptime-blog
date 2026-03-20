@@ -58,6 +58,7 @@ Check that the port names match the actual protocols. Here is what to look for:
 
 ```yaml
 # WRONG: Port named http but service speaks gRPC
+
 ports:
   - name: http-api
     port: 8080

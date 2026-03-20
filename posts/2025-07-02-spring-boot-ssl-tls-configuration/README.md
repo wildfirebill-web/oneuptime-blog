@@ -62,6 +62,7 @@ For development and testing, you can generate a self-signed certificate using Ja
 
 ```bash
 # Generate a self-signed certificate in PKCS12 format
+
 # This creates both the private key and certificate in one keystore file
 keytool -genkeypair \
   -alias myapp \

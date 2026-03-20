@@ -46,6 +46,7 @@ Before configuring Windows hosts, ensure you have the following:
 
 ```bash
 # Install pywinrm and its dependencies
+
 pip install pywinrm
 
 # For Kerberos authentication (optional but recommended for domains)

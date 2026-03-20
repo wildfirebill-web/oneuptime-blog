@@ -1,11 +1,10 @@
----
-title: "How to Use strcontains(), startswith(), and endswith() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, strings
-description: "Learn how to use strcontains, startswith, and endswith functions in OpenTofu for string checking."
----
-
 # How to Use strcontains(), startswith(), and endswith() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, String
+
+Description: Learn how to use strcontains, startswith, and endswith functions in OpenTofu for string checking.
 
 These three functions test whether a string contains a specific substring, begins with a specific prefix, or ends with a specific suffix. They return boolean values, making them ideal for use in conditions and validations.
 

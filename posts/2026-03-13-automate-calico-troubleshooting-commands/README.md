@@ -17,6 +17,7 @@ Running individual Calico troubleshooting commands manually during an incident i
 ```bash
 #!/bin/bash
 # calico-diag-bundle.sh
+
 set -euo pipefail
 BUNDLE="calico-diag-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "${BUNDLE}"

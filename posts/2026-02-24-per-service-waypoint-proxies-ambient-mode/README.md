@@ -27,6 +27,7 @@ To create a waypoint for a specific service, you use istioctl with the `--for` f
 
 ```bash
 # Create a waypoint for a specific service
+
 istioctl waypoint apply -n my-app --name reviews-waypoint
 ```
 

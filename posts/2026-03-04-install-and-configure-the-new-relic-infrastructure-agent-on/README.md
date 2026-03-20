@@ -20,6 +20,7 @@ The New Relic Infrastructure Agent monitors system health metrics on RHEL and se
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

@@ -24,6 +24,7 @@ When peering fails, the error message usually tells you which ranges overlap. Bu
 
 ```bash
 # List all subnets and their IP ranges in VPC A
+
 gcloud compute networks subnets list \
   --network=vpc-a \
   --format="table(name, region, ipCidrRange, secondaryIpRanges[].ipCidrRange:label=SECONDARY)"

@@ -62,6 +62,7 @@ Ensure all container images come from approved registries.
 
 ```yaml
 # policies/base/validation/restrict-image-registries.yaml
+
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:

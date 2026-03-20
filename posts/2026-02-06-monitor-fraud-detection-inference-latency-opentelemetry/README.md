@@ -56,6 +56,7 @@ Feature extraction is often the slowest part because it requires pulling data fr
 import time
 
 # Latency histograms for each pipeline stage
+
 feature_extraction_latency = meter.create_histogram(
     name="fraud.feature_extraction_ms",
     description="Time spent extracting features for fraud scoring",

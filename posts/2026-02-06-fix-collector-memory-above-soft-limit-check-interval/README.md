@@ -109,6 +109,7 @@ Then query these metrics:
 
 ```text
 # Current memory usage as seen by the memory limiter
+
 otelcol_process_memory_rss
 
 # Number of times data was refused

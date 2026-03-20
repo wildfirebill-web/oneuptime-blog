@@ -12,7 +12,7 @@ Cisco IOS GRE tunnels carrying IPv6 use `tunnel mode gre ip` (the default) with 
 
 ## Basic GRE Tunnel for IPv6
 
-```
+```text
 ! Router-A: 203.0.113.10 (Site A)
 ! Router-B: 198.51.100.1 (Site B)
 
@@ -23,7 +23,7 @@ Router-A(config-if)# description GRE to Site-B
 Router-A(config-if)# ipv6 address 2001:db8:link::1/64
 Router-A(config-if)# tunnel source GigabitEthernet0/0
 Router-A(config-if)# tunnel destination 198.51.100.1
-Router-A(config-if)# tunnel mode gre ip              ! Default mode — IPv4 encap
+Router-A(config-if)# tunnel mode gre ip              ! Default mode - IPv4 encap
 Router-A(config-if)# ipv6 mtu 1476                  ! 1500 - 24 bytes GRE overhead
 Router-A(config-if)# ipv6 tcp adjust-mss 1436       ! TCP MSS clamping
 
@@ -31,7 +31,7 @@ Router-A(config-if)# ipv6 tcp adjust-mss 1436       ! TCP MSS clamping
 Router-A(config)# ipv6 route 2001:db8:siteB::/48 Tunnel0 2001:db8:link::2
 ```
 
-```
+```text
 ! Router-B (mirror configuration)
 Router-B(config)# ipv6 unicast-routing
 
@@ -49,7 +49,7 @@ Router-B(config)# ipv6 route 2001:db8:siteA::/48 Tunnel0 2001:db8:link::1
 
 ## GRE Tunnel with Keepalives
 
-```
+```text
 ! Enable keepalives for tunnel status monitoring
 Router-A(config)# interface Tunnel0
 Router-A(config-if)# keepalive 10 3   ! 10s interval, 3 retries before down
@@ -61,7 +61,7 @@ Without keepalives, a GRE tunnel stays "up" even if the remote end is unreachabl
 
 Running OSPFv3 over GRE distributes IPv6 routes dynamically:
 
-```
+```text
 ! Enable OSPFv3 on tunnel and LAN interfaces
 Router-A(config)# ipv6 router ospf 1
 Router-A(config-rtr)# router-id 1.1.1.1
@@ -82,7 +82,7 @@ Router-A# show ipv6 route ospf
 
 ## GRE Tunnel MTU Verification
 
-```
+```text
 ! Check effective MTU
 Router-A# show interface Tunnel0 | include MTU
   MTU 17916 bytes, BW 100 Kbit/sec, DLY 500000 usec
@@ -98,7 +98,7 @@ Router-A# ping ipv6 2001:db8:link::2 size 1400
 
 ## Protect GRE with ACL
 
-```
+```text
 ! Allow GRE (proto 47) only from authorized remote
 Router-A(config)# ip access-list extended PROTECT-GRE
 Router-A(config-ext-nacl)# permit gre host 198.51.100.1 host 203.0.113.10
@@ -113,7 +113,7 @@ Router-A(config-if)# ip access-group PROTECT-GRE in
 
 For encrypted GRE:
 
-```
+```text
 ! IKEv2 configuration (abbreviated)
 crypto ikev2 proposal IKEV2-PROP
   encryption aes-cbc-256
@@ -139,7 +139,7 @@ interface GigabitEthernet0/0
 
 ## Verification
 
-```
+```text
 ! Tunnel status
 Router-A# show interface Tunnel0
 ! Tunnel0 is up, line protocol is up

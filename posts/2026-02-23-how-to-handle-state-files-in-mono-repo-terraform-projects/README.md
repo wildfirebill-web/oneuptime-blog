@@ -67,6 +67,7 @@ Each component directory has its own backend configuration:
 
 ```hcl
 # environments/prod/networking/backend.tf
+
 terraform {
   backend "s3" {
     bucket         = "myorg-terraform-state"

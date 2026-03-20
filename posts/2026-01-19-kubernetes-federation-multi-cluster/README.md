@@ -57,6 +57,7 @@ flowchart TD
 
 ```bash
 # Install kubefedctl CLI
+
 VERSION=0.10.0
 curl -LO "https://github.com/kubernetes-sigs/kubefed/releases/download/v${VERSION}/kubefedctl-${VERSION}-linux-amd64.tgz"
 tar -xzf kubefedctl-${VERSION}-linux-amd64.tgz

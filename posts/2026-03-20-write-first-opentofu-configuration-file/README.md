@@ -1,4 +1,4 @@
-# How to Write Your First OpenTofu Configuration File
+# How to Write Your First OpenTofu Configuration File - Write Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: A beginner's guide to writing your first OpenTofu configuration fil
 
 ---
 
-OpenTofu configuration files use HashiCorp Configuration Language (HCL) — a declarative language designed to be human-readable while being machine-parseable. Your first configuration file teaches the core building blocks: providers, resources, variables, and outputs. This guide walks through each one.
+OpenTofu configuration files use HashiCorp Configuration Language (HCL) - a declarative language designed to be human-readable while being machine-parseable. Your first configuration file teaches the core building blocks: providers, resources, variables, and outputs. This guide walks through each one.
 
 ---
 
@@ -17,14 +17,15 @@ OpenTofu configuration files use HashiCorp Configuration Language (HCL) — a de
 OpenTofu files use the `.tf` extension. By convention, a simple project starts with `main.tf`.
 
 ```hcl
-# main.tf — your first OpenTofu configuration file
+# main.tf - your first OpenTofu configuration file
 
 # 1. The terraform block: declares OpenTofu version requirements and providers
+
 terraform {
   required_version = ">= 1.8.0"
 
   required_providers {
-    # Use the local provider — it works without credentials for learning
+    # Use the local provider - it works without credentials for learning
     local = {
       source  = "hashicorp/local"
       version = "~> 2.4"
@@ -37,7 +38,7 @@ provider "local" {
   # The local provider needs no configuration
 }
 
-# 3. Declare a resource — this creates a file on your local filesystem
+# 3. Declare a resource - this creates a file on your local filesystem
 resource "local_file" "hello" {
   # The file content
   content  = "Hello from OpenTofu!"
@@ -46,7 +47,7 @@ resource "local_file" "hello" {
   filename = "${path.module}/hello.txt"
 }
 
-# 4. Declare an output — displays information after apply
+# 4. Declare an output - displays information after apply
 output "file_path" {
   description = "The path of the created file"
   value       = local_file.hello.filename
@@ -86,7 +87,7 @@ cat hello.txt
 Make the configuration reusable by adding an input variable.
 
 ```hcl
-# variables.tf — input variables
+# variables.tf - input variables
 variable "greeting" {
   type        = string
   description = "The greeting message to write to the file"
@@ -101,7 +102,7 @@ variable "output_filename" {
 ```
 
 ```hcl
-# main.tf — updated to use variables
+# main.tf - updated to use variables
 resource "local_file" "hello" {
   content  = var.greeting
   filename = "${path.module}/${var.output_filename}"
@@ -112,7 +113,7 @@ resource "local_file" "hello" {
 
 ## The Complete Project Structure
 
-```
+```hcl
 my-first-project/
 ├── main.tf           # resources and providers
 ├── variables.tf      # input variable declarations

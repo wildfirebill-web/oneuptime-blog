@@ -16,6 +16,7 @@ RKE2 installation can fail for a variety of reasons including firewall rules, SE
 
 ```bash
 # Check RKE2 service status
+
 systemctl status rke2-server
 systemctl status rke2-agent
 
@@ -37,7 +38,7 @@ dmesg | tail -50
 # View the last 50 lines of the service log
 journalctl -u rke2-server -n 50
 
-# Common error: "address already in use" — another process is using port 6443
+# Common error: "address already in use" - another process is using port 6443
 ss -tlnp | grep 6443
 
 # If kubelet or another k8s distribution is running, stop it
@@ -51,7 +52,7 @@ systemctl stop kubelet
 **Symptoms**: Agent node shows `not found` or times out trying to connect to the server.
 
 ```bash
-# On the agent node — test connectivity to the server
+# On the agent node - test connectivity to the server
 curl -k https://<SERVER_IP>:9345/ping
 curl -k https://<SERVER_IP>:6443/version
 
@@ -149,6 +150,6 @@ If all else fails, run the RKE2 uninstall script and start fresh:
 
 ## Best Practices
 
-- Always check `journalctl -u rke2-server -f` before declaring an installation failed — startup can take 2-3 minutes.
+- Always check `journalctl -u rke2-server -f` before declaring an installation failed - startup can take 2-3 minutes.
 - Verify firewall rules before installing, especially for multi-node clusters.
 - Use `--debug` flag when running RKE2 manually to get verbose output.

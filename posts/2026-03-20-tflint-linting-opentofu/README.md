@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tflint, Linting, Code Quality, Infrastructure as Code, DevOps
+Tags: OpenTofu, TFLint, Linting, Code Quality, Infrastructure as Code, DevOps
 
 Description: Learn how to use tflint to catch configuration errors, deprecated attributes, and provider-specific best practice violations in OpenTofu configurations before planning.
 
 ## Introduction
 
-`tflint` goes beyond `tofu validate` — while validate catches syntax errors, tflint catches semantic issues: deprecated attributes, invalid instance types, missing required module arguments, and provider-specific configuration mistakes. It integrates with provider plugins to know what valid values look like.
+`tflint` goes beyond `tofu validate` - while validate catches syntax errors, tflint catches semantic issues: deprecated attributes, invalid instance types, missing required module arguments, and provider-specific configuration mistakes. It integrates with provider plugins to know what valid values look like.
 
 ## Installing tflint
 
 ```bash
 # macOS
+
 brew install tflint
 
 # Linux
@@ -114,7 +115,7 @@ tflint --format=json
 # Error: "t2.nano" is an invalid value as instance_type
 resource "aws_instance" "web" {
   ami           = data.aws_ami.amazon_linux.id
-  instance_type = "t2.nano"   # Invalid — use t3.nano
+  instance_type = "t2.nano"   # Invalid - use t3.nano
 }
 
 # FIX
@@ -161,4 +162,4 @@ repos:
 
 ## Conclusion
 
-tflint catches issues that `tofu validate` misses — invalid cloud resource configurations, deprecated syntax, and naming convention violations. Install provider plugins to get provider-specific rule checking, configure naming convention rules to enforce your team's standards, and run tflint in pre-commit hooks and CI to prevent these issues from reaching code review.
+tflint catches issues that `tofu validate` misses - invalid cloud resource configurations, deprecated syntax, and naming convention violations. Install provider plugins to get provider-specific rule checking, configure naming convention rules to enforce your team's standards, and run tflint in pre-commit hooks and CI to prevent these issues from reaching code review.

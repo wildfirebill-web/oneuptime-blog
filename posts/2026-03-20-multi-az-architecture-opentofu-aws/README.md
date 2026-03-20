@@ -1,4 +1,4 @@
-# How to Deploy a Multi-AZ Architecture with OpenTofu on AWS
+# How to Deploy a Multi-AZ Architecture with OpenTofu on AWS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

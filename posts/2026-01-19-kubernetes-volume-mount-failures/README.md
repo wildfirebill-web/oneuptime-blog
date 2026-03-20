@@ -38,6 +38,7 @@ flowchart TD
 
 ```bash
 # Get detailed pod information
+
 kubectl describe pod <pod-name>
 
 # Look for Events section:

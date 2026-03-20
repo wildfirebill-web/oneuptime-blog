@@ -39,6 +39,7 @@ Before upgrading, review what changed:
 
 ```bash
 # Check the module changelog on GitHub or the registry
+
 # For registry modules:
 # https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest?tab=changelog
 

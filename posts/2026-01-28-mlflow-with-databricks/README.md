@@ -42,6 +42,7 @@ MLflow is pre-installed in Databricks Runtime. You can start tracking experiment
 
 ```python
 # In a Databricks notebook
+
 import mlflow
 
 # MLflow is automatically configured to use the workspace tracking server

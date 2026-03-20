@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, openshift, kubernetes, comparison, enterprise
+Tags: Rancher, OpenShift, Kubernetes, Comparison, Enterprise
 
 Description: A detailed comparison of Rancher and OpenShift to help you choose the right enterprise Kubernetes platform for your organization.
 
@@ -12,7 +12,7 @@ Choosing the right Kubernetes management platform can define the trajectory of y
 
 ## What Is Rancher?
 
-Rancher, developed by SUSE, is an open-source Kubernetes management platform that can deploy and manage Kubernetes clusters across any infrastructure — on-premises, cloud, or edge. It is distribution-agnostic, meaning it can manage clusters running RKE2, K3s, EKS, AKS, GKE, and more.
+Rancher, developed by SUSE, is an open-source Kubernetes management platform that can deploy and manage Kubernetes clusters across any infrastructure - on-premises, cloud, or edge. It is distribution-agnostic, meaning it can manage clusters running RKE2, K3s, EKS, AKS, GKE, and more.
 
 ## What Is OpenShift?
 
@@ -39,7 +39,8 @@ Red Hat OpenShift is an enterprise Kubernetes distribution built on top of vanil
 ### Rancher
 
 ```bash
-# Install Rancher using Helm — straightforward and fast
+# Install Rancher using Helm - straightforward and fast
+
 helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
 helm install rancher rancher-stable/rancher \
   --namespace cattle-system \

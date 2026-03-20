@@ -14,6 +14,7 @@ Kubernetes Jobs run containers to completion for batch processing, database migr
 
 ```yaml
 # database-migration-job.yml - deploy via Portainer
+
 apiVersion: batch/v1
 kind: Job
 metadata:

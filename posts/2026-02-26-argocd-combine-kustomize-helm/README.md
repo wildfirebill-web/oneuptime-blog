@@ -96,6 +96,7 @@ Kustomize 4.1.0+ can inflate Helm charts natively using the `helmCharts` field:
 
 ```yaml
 # apps/ingress-nginx/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

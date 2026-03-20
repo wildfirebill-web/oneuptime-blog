@@ -327,7 +327,7 @@ class ConfluenceConnector implements SourceConnector {
 
 API reference documentation often lives in OpenAPI specs. This connector converts specs into browsable documentation.
 
-```typescript
+````typescript
 import SwaggerParser from '@apidevtools/swagger-parser';
 import { OpenAPI } from 'openapi-types';
 
@@ -425,9 +425,9 @@ ${op.description || ''}
 
 ## Request
 
-\`\`\`
+```
 ${method.toUpperCase()} ${path}
-\`\`\`
+```
 
 ${this.describeParameters(op)}
 
@@ -476,7 +476,7 @@ ${this.describeResponses(op)}
     return order[method] || 99;
   }
 }
-```
+````
 
 ## Content Indexing for Search
 

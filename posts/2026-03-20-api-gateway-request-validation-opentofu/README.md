@@ -20,6 +20,7 @@ API Gateway request validation rejects malformed requests before they reach your
 
 ```hcl
 # Validator for body + parameters
+
 resource "aws_api_gateway_request_validator" "full" {
   name                        = "full-validation"
   rest_api_id                 = var.api_gateway_id

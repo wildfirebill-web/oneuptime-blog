@@ -56,6 +56,7 @@ Custom topics let you publish your own events. Start by creating one:
 
 ```bash
 # Set variables
+
 RESOURCE_GROUP="rg-events-demo"
 LOCATION="eastus"
 TOPIC_NAME="myapp-events"

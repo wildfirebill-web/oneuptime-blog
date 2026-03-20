@@ -31,6 +31,7 @@ graph TD
 
 ```yaml
 # group_vars/all.yml
+
 # CA certificate settings
 ca_dir: /opt/ansible-ca
 ca_country: US

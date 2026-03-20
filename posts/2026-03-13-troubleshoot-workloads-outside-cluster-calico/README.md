@@ -26,6 +26,7 @@ Option 1: Static routes on external hosts:
 
 ```bash
 # On external host: add route to pod CIDR via a Kubernetes node
+
 ip route add 10.244.0.0/16 via <kubernetes-node-ip>
 
 # Make permanent

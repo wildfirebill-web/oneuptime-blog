@@ -16,7 +16,7 @@ The `chomp` function in OpenTofu removes trailing newline characters from the en
 chomp(string)
 ```
 
-- **string** — any string value
+- **string** - any string value
 - Removes trailing `\n`, `\r\n`, and `\r` characters
 - Returns the string with trailing newlines stripped
 
@@ -46,6 +46,7 @@ output "multiple_newlines" {
 
 ```hcl
 # Read an API key stored in a file, stripping the trailing newline
+
 locals {
   api_key = chomp(file("${path.module}/secrets/api_key.txt"))
 }
@@ -135,7 +136,7 @@ output "hostnames" {
 
 ## Step-by-Step Usage
 
-1. Identify strings that may have trailing newlines — typically from `file()` or external sources.
+1. Identify strings that may have trailing newlines - typically from `file()` or external sources.
 2. Wrap the string with `chomp()`.
 3. Use the cleaned string in resource arguments.
 4. Test with `tofu console`:
@@ -160,4 +161,4 @@ Use `chomp` when you only want to strip trailing newlines but preserve other whi
 
 ## Conclusion
 
-The `chomp` function is a small but important string utility in OpenTofu. Files and external data sources almost always include trailing newlines, and forgetting to strip them can cause subtle bugs in resource configurations — especially for API keys, SSH keys, and hostnames. Make it a habit to `chomp` any string read from a file before using it in a sensitive resource attribute.
+The `chomp` function is a small but important string utility in OpenTofu. Files and external data sources almost always include trailing newlines, and forgetting to strip them can cause subtle bugs in resource configurations - especially for API keys, SSH keys, and hostnames. Make it a habit to `chomp` any string read from a file before using it in a sensitive resource attribute.

@@ -24,6 +24,7 @@ Before attempting a resize, check which sizes are available for your current VM.
 
 ```bash
 # List all VM sizes available for the current VM's hardware cluster
+
 az vm list-vm-resize-options \
   --resource-group myResourceGroup \
   --name myVM \

@@ -68,6 +68,7 @@ Full extraction pulls all data from the source on every run. Despite being "simp
 
 ```python
 # full_extractor.py
+
 # Full extraction pattern with pagination and consistency checks
 
 import logging

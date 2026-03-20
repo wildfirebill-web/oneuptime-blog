@@ -12,6 +12,7 @@ NetBox is an open-source IP address management (IPAM) and data center infrastruc
 
 ```bash
 # Docker and Docker Compose are required
+
 docker --version   # 20.10+
 docker compose version  # v2.0+
 

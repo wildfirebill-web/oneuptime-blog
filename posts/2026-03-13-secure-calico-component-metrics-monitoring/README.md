@@ -24,6 +24,7 @@ Securing Calico metrics involves: TLS encryption for metrics transport, network 
 
 ```yaml
 # Create a certificate for Felix metrics
+
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

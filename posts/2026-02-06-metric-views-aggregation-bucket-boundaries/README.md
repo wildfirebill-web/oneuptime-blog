@@ -36,6 +36,7 @@ Here is how to configure custom buckets in Python:
 
 ```python
 # Configuring custom histogram buckets with metric views
+
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader, ConsoleMetricExporter
 from opentelemetry.sdk.metrics.view import View, ExplicitBucketHistogramAggregation

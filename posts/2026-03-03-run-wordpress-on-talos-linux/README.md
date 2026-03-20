@@ -29,6 +29,7 @@ WordPress needs a MySQL or MariaDB database:
 
 ```yaml
 # wordpress-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

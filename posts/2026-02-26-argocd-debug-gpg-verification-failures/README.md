@@ -47,6 +47,7 @@ First, find out which commit ArgoCD is trying to verify:
 
 ```bash
 # Get the target revision for the application
+
 argocd app get my-app -o json | jq '{
   targetRevision: .spec.source.targetRevision,
   syncRevision: .status.sync.revision,

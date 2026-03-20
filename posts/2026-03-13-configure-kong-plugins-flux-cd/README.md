@@ -30,6 +30,7 @@ Kong Ingress Controller installs the plugin CRDs automatically. Verify they are 
 
 ```bash
 # Check Kong CRDs are available
+
 kubectl get crd | grep konghq.com
 
 # Expected output includes:

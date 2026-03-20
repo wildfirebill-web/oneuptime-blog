@@ -38,6 +38,7 @@ The simplest case: pull one value from the external store into one Kubernetes Se
 
 ```yaml
 # clusters/my-cluster/apps/myapp/externalsecret-simple.yaml
+
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:

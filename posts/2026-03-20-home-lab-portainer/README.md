@@ -21,6 +21,7 @@ A home lab is a personal computing environment where you can experiment with sof
 
 ```bash
 # Update your system
+
 sudo apt update && sudo apt upgrade -y
 
 # Install Docker using the convenience script

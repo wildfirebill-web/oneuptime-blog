@@ -67,6 +67,7 @@ metrics/
 
 ```yaml
 # metrics/mimir/Chart.yaml
+
 apiVersion: v2
 name: mimir
 description: Wrapper chart for Grafana Mimir

@@ -32,6 +32,7 @@ Add the required crates to your `Cargo.toml`. The OpenTelemetry ecosystem in Rus
 ```toml
 [dependencies]
 # Core OpenTelemetry APIs and SDK
+
 opentelemetry = "0.24"
 opentelemetry_sdk = { version = "0.24", features = ["rt-tokio"] }
 

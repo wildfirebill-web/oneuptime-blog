@@ -16,6 +16,7 @@ Blue-green cluster upgrades maintain two complete Kubernetes clusters: one servi
 
 ```yaml
 # Infrastructure definition for blue cluster
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

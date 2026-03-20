@@ -8,11 +8,11 @@ Description: Fix packet fragmentation and MTU-related performance issues in GRE,
 
 ## Introduction
 
-VPN tunnels add overhead to packets — headers for encapsulation, encryption, and authentication. This reduces the effective MTU inside the tunnel. When tunnel MTU is not properly configured, packets get fragmented inside the tunnel, causing performance degradation, increased CPU load, and in some cases, connection hangs. The fix requires calculating the correct MTU for each tunnel type and applying it consistently.
+VPN tunnels add overhead to packets - headers for encapsulation, encryption, and authentication. This reduces the effective MTU inside the tunnel. When tunnel MTU is not properly configured, packets get fragmented inside the tunnel, causing performance degradation, increased CPU load, and in some cases, connection hangs. The fix requires calculating the correct MTU for each tunnel type and applying it consistently.
 
 ## Understand Tunnel Overhead
 
-```
+```text
 Protocol Overhead (reduces available packet size):
 
 GRE tunnel:
@@ -52,6 +52,7 @@ VXLAN:
 
 ```bash
 # Set GRE tunnel interface MTU:
+
 # Interface: gre0 (or tun0, etc.)
 
 # Check current MTU:

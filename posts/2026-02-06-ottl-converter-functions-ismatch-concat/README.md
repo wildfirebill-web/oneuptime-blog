@@ -14,6 +14,7 @@ Converter functions return a value. They do not modify telemetry on their own bu
 
 ```yaml
 # Pattern: set(target, ConverterFunction(args)) where Condition(args)
+
 - set(attributes["key"], Concat(["a", "b"], "-")) where IsMatch(name, "http.*")
 ```
 

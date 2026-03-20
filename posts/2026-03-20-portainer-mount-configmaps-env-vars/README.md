@@ -1,4 +1,4 @@
-# How to Mount ConfigMaps as Environment Variables in Portainer
+# How to Mount ConfigMaps as Environment Variables in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Before mounting, ensure the ConfigMap exists:
 
 ```bash
 # Verify the ConfigMap exists
+
 kubectl get configmap my-app-config -n production
 
 # View its contents
@@ -52,7 +53,7 @@ When creating or editing an application in Portainer:
 2. Find the **Environment variables** section
 3. Click **+ Add environment variable**
 4. Choose **ConfigMap** as the source:
-   ```
+   ```text
    Environment variable name: DATABASE_HOST
    Source: ConfigMap
    ConfigMap name: my-app-config

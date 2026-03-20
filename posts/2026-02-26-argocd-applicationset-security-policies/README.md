@@ -228,12 +228,13 @@ spec:
       deny: true
 ```
 
-## Resource Quota Protection
+Resource Quota Protection
 
 Prevent ApplicationSets from overwhelming the cluster.
 
 ```yaml
 # Limit the number of Applications that can exist in the argocd namespace
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

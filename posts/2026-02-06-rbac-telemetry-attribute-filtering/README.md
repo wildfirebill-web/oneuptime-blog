@@ -27,6 +27,7 @@ All Services -> Shared Agent Collector -> RBAC Gateway Collector
 
 ```yaml
 # rbac-gateway-config.yaml
+
 receivers:
   otlp:
     protocols:

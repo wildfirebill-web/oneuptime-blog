@@ -21,6 +21,7 @@ This guide provides step-by-step instructions for completing this task on RHEL. 
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install PostgreSQL

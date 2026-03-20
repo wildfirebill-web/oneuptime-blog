@@ -4,12 +4,12 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Subnet Mask, Binary, Decimal, Subnetting, Networking
 
-Description: Converting subnet masks between binary and dotted-decimal notation requires understanding that each octet's set bits map to power-of-two values, and the mask is always a string of contiguous 1-bits followed by 0-bits.
+Description: Converting subnet masks between binary and dotted-decimal notation requires understanding that each octet's set bits map to power-of-two values, and the mask is always a string of contiguous...
 
 ## Binary to Decimal Conversion
 
 Each octet is independent. For the third octet of 255.255.**240**.0:
-```
+```text
 Binary:  11110000
 Powers:  128 64 32 16 | 8 4 2 1
          128+ 64+ 32+ 16 + 0+ 0+ 0+ 0 = 240
@@ -18,7 +18,7 @@ Powers:  128 64 32 16 | 8 4 2 1
 ## Decimal to Binary Conversion
 
 For the octet value **224**:
-```
+```text
 224 ≥ 128? Yes → 1, remainder 96
  96 ≥  64? Yes → 1, remainder 32
  32 ≥  32? Yes → 1, remainder  0
@@ -52,6 +52,7 @@ def prefix_to_binary(prefix: int) -> str:
     return '.'.join(f'{b:08b}' for b in packed)
 
 # Examples
+
 masks = ["255.255.255.0", "255.255.240.0", "255.255.255.252", "255.0.0.0"]
 for mask in masks:
     binary = mask_to_binary(mask)
@@ -79,7 +80,7 @@ def is_valid_mask(mask: str) -> bool:
         if bit == '0':
             found_zero = True
         elif found_zero:
-            return False  # Found a 1 after a 0 — invalid
+            return False  # Found a 1 after a 0 - invalid
     return True
 
 print(is_valid_mask("255.255.240.0"))   # True

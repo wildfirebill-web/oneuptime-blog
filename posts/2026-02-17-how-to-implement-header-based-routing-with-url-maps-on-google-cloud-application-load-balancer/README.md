@@ -31,6 +31,7 @@ Let us create the backend services that we will route to.
 
 ```bash
 # Create a health check
+
 gcloud compute health-checks create http app-hc \
     --port=8080 \
     --request-path=/healthz

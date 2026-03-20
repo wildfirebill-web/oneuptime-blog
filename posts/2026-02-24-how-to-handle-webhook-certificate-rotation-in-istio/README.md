@@ -30,6 +30,7 @@ If any of these steps fail (expired certificate, mismatched CA, etc.), the webho
 
 ```bash
 # Extract and check the CA bundle from the mutating webhook
+
 kubectl get mutatingwebhookconfiguration istio-sidecar-injector \
   -o jsonpath='{.webhooks[0].clientConfig.caBundle}' | \
   base64 -d | openssl x509 -noout -text -dates

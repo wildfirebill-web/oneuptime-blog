@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Automotive, Edge Computing, Docker, OTA Updates, V2X
 
-Description: Configure Portainer to manage containerized applications on automotive edge computing platforms — from in-vehicle compute modules to roadside units and manufacturing line controllers.
+Description: Configure Portainer to manage containerized applications on automotive edge computing platforms - from in-vehicle compute modules to roadside units and manufacturing line controllers.
 
 ---
 
@@ -46,13 +46,13 @@ docker run -d \
 
 ## Step 2: Create Edge Groups by Vehicle Model or Region
 
-```
+```text
 Edge Group: model-x-gen3-vehicles
 Edge Group: rsus-california
 Edge Group: plant-detroit-line1
 ```
 
-Group vehicles by model year for targeted software updates — a new feature may only apply to Gen 3 hardware, not Gen 2.
+Group vehicles by model year for targeted software updates - a new feature may only apply to Gen 3 hardware, not Gen 2.
 
 ## Step 3: Enroll Edge Compute Units
 
@@ -60,6 +60,7 @@ For automotive-grade Linux targets (e.g., running Automotive Grade Linux or GENI
 
 ```bash
 # Initial enrollment script for edge compute module
+
 docker run -d \
   --name portainer-agent \
   --restart always \
@@ -111,7 +112,7 @@ For safety-critical automotive software, use staged rollouts:
 4. Keep rollback image available for immediate revert
 
 ```bash
-# Portainer API — update edge stack to previous version
+# Portainer API - update edge stack to previous version
 curl -X PUT https://portainer-fleet:9443/api/edge/stacks/42 \
   -H "Authorization: Bearer $TOKEN" \
   -d '{"StackFileContent": "...previous-version-yaml..."}'

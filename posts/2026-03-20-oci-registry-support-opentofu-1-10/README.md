@@ -30,6 +30,7 @@ Package your module as an OCI artifact and push it to a registry.
 
 ```bash
 # Install the oras CLI tool for OCI artifact management
+
 brew install oras
 
 # Package module files as an OCI artifact
@@ -114,7 +115,7 @@ module "vpc" {
 
 OCI registries offer several advantages for module distribution.
 
-```
+```text
 Git source:     git::https://github.com/org/module.git?ref=v1.2.0
 OCI source:     oci://ghcr.io/org/modules/vpc:v1.2.0
 

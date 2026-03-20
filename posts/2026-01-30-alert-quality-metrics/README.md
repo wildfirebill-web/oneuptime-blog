@@ -190,6 +190,7 @@ const signalToNoiseRatio = new Gauge({
 
 ```promql
 # Signal-to-noise ratio over the last 7 days
+
 sum(alert_outcome_total{outcome="actionable"}) by (service)
 /
 sum(alert_outcome_total) by (service)

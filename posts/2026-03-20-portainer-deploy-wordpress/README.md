@@ -1,4 +1,4 @@
-# How to Deploy WordPress via Portainer
+# How to Deploy WordPress via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -132,6 +132,7 @@ services:
 
 ```bash
 # Backup WordPress files
+
 docker run --rm \
   -v wordpress_data:/source \
   -v /backups:/backup \

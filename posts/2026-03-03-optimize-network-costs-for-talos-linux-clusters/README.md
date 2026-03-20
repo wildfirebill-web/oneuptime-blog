@@ -30,6 +30,7 @@ Before optimizing, measure what you are actually spending. Deploy a network moni
 
 ```bash
 # Install Kubecost with network cost monitoring
+
 helm install kubecost kubecost/cost-analyzer \
   --namespace kubecost \
   --create-namespace \

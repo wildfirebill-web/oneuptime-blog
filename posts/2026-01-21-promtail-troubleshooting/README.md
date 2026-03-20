@@ -24,6 +24,7 @@ Promtail is the primary log collection agent for Grafana Loki. When logs stop ap
 
 ```bash
 # Check if Promtail is running
+
 systemctl status promtail
 # or
 docker logs promtail --tail 100

@@ -14,6 +14,7 @@ External Secrets Operator synchronizes secrets from external secret stores into 
 
 ```hcl
 # main.tf - Deploy ESO via Helm
+
 resource "helm_release" "external_secrets" {
   name             = "external-secrets"
   repository       = "https://charts.external-secrets.io"

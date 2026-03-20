@@ -32,6 +32,7 @@ Before anything else, confirm the server is reachable:
 
 ```bash
 # Ping the server to check basic connectivity
+
 ping -c 4 server.example.com
 
 # Test TCP connectivity on port 22 specifically

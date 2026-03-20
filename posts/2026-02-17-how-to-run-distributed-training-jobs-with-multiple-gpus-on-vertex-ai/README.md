@@ -131,6 +131,7 @@ from google.cloud import aiplatform
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # Create a custom training job with 4 GPUs on a single machine
+
 job = aiplatform.CustomJob(
     display_name="distributed-training-4gpu",
     worker_pool_specs=[

@@ -24,6 +24,7 @@ The first step is to get the right Talos image. Omni requires a specific image t
 
 ```bash
 # Download the Omni Talos image for your platform
+
 # For bare metal nodes, use the ISO or PXE image
 curl -LO https://omni.siderolabs.com/image/talos/v1.6.0/metal-amd64.iso
 

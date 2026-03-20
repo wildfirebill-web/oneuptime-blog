@@ -58,6 +58,7 @@ The AppSpec file defines which files to deploy and which hooks to run:
 
 ```yaml
 # appspec.yml for EC2/on-premises deployment
+
 version: 0.0
 os: linux
 

@@ -326,6 +326,7 @@ On the remote server, start your application with the inspect flag:
 
 ```bash
 # Start Node.js with remote debugging enabled
+
 node --inspect=0.0.0.0:9229 server.js
 
 # For breaking on first line

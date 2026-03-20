@@ -1,4 +1,4 @@
-# How to Build IPv6 Load Testers in Go
+# How to Build IPv6 Load Testers in Go - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -286,4 +286,4 @@ func main() {
 
 ## Conclusion
 
-IPv6 load testing in Go uses `net.DialTimeout("tcp6", "[addr]:port", timeout)` to force IPv6 connections and `http.Transport` with a custom `DialContext` to control address family selection. Use `sync/atomic` for thread-safe counters and goroutine pools with a semaphore channel to control concurrency. Compare IPv6 vs IPv4 performance by racing both protocols — a latency gap greater than 5ms indicates routing or peering issues. For production load testing, use existing tools like `wrk` or `k6` with IPv6 targets (`http://[2001:db8::1]/`); build custom Go load testers when you need IPv6-specific metrics or protocol-level testing of TCP connection establishment rates.
+IPv6 load testing in Go uses `net.DialTimeout("tcp6", "[addr]:port", timeout)` to force IPv6 connections and `http.Transport` with a custom `DialContext` to control address family selection. Use `sync/atomic` for thread-safe counters and goroutine pools with a semaphore channel to control concurrency. Compare IPv6 vs IPv4 performance by racing both protocols - a latency gap greater than 5ms indicates routing or peering issues. For production load testing, use existing tools like `wrk` or `k6` with IPv6 targets (`http://[2001:db8::1]/`); build custom Go load testers when you need IPv6-specific metrics or protocol-level testing of TCP connection establishment rates.

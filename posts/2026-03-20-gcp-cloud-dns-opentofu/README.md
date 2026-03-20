@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Cloud DNS, DNS, Zones, Records, Private DNS, Infrastructure as Code
+Tags: OpenTofu, GCP, Cloud DNS, DNS, Zones, Record, Private DNS, Infrastructure as Code
 
 Description: Learn how to create and manage GCP Cloud DNS managed zones and record sets using OpenTofu, including public zones, private VPC zones, DNS peering, and forwarding for hybrid connectivity.
 
@@ -23,6 +23,7 @@ graph TD
 
 ```hcl
 # dns.tf
+
 resource "google_dns_managed_zone" "public" {
   name        = "${replace(var.domain_name, ".", "-")}-public"
   dns_name    = "${var.domain_name}."
@@ -127,7 +128,7 @@ resource "google_dns_record_set" "database" {
 ## DNS Forwarding Zone
 
 ```hcl
-# forwarding.tf — forward on-premises domain queries to on-prem DNS
+# forwarding.tf - forward on-premises domain queries to on-prem DNS
 resource "google_dns_managed_zone" "forwarding" {
   name        = "${var.prefix}-onprem-forward"
   dns_name    = "${var.onprem_domain}."
@@ -152,8 +153,8 @@ resource "google_dns_managed_zone" "forwarding" {
 
 ## Best Practices
 
-- Always end DNS names with a trailing dot in Cloud DNS (`"example.com."`) — without the trailing dot, Cloud DNS treats the name as relative to the zone, causing resolution failures.
-- Enable DNSSEC on public zones to prevent DNS spoofing — after enabling, update your registrar's DS records using the output from `google_dns_managed_zone.dnssec_config`.
-- Use private zones with `private_visibility_config` scoped to specific VPCs rather than making internal records public — this prevents internal service endpoints from being publicly resolvable.
-- Use forwarding zones for on-premises domains accessible via Cloud Interconnect or VPN — this allows GCP resources to resolve on-premises hostnames using corporate DNS.
-- After creating a public zone, update your domain registrar's name servers with the `name_servers` output — Cloud DNS zones don't work until the registrar is updated.
+- Always end DNS names with a trailing dot in Cloud DNS (`"example.com."`) - without the trailing dot, Cloud DNS treats the name as relative to the zone, causing resolution failures.
+- Enable DNSSEC on public zones to prevent DNS spoofing - after enabling, update your registrar's DS records using the output from `google_dns_managed_zone.dnssec_config`.
+- Use private zones with `private_visibility_config` scoped to specific VPCs rather than making internal records public - this prevents internal service endpoints from being publicly resolvable.
+- Use forwarding zones for on-premises domains accessible via Cloud Interconnect or VPN - this allows GCP resources to resolve on-premises hostnames using corporate DNS.
+- After creating a public zone, update your domain registrar's name servers with the `name_servers` output - Cloud DNS zones don't work until the registrar is updated.

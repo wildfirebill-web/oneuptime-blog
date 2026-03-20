@@ -53,6 +53,7 @@ Create the IAM role with the necessary permissions:
 
 ```bash
 # Create the trust policy for Aurora
+
 cat > aurora-ml-trust-policy.json << 'JSONEOF'
 {
   "Version": "2012-10-17",

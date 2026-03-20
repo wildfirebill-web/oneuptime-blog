@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OSPF, Verification, Routing, FRR, Cisco, IPv4, Troubleshooting, show commands
+Tags: OSPF, Verification, Routing, FRR, Cisco, IPv4, Troubleshooting, Show Commands
 
 Description: Learn how to use OSPF show commands to verify neighbor adjacencies, LSDB contents, route propagation, and overall OSPF health on FRR and Cisco routers.
 
@@ -14,6 +14,7 @@ Systematic use of `show ip ospf` commands is the primary method for verifying OS
 
 ```bash
 # FRR
+
 vtysh -c "show ip ospf"
 
 # Key things to check:
@@ -105,7 +106,7 @@ vtysh -c "show ip ospf"
 
 ## Cisco IOS Quick Reference
 
-```
+```text
 show ip ospf                     ! Overall OSPF status
 show ip ospf neighbor            ! Neighbor adjacencies
 show ip ospf interface brief     ! Interface participation summary
@@ -116,7 +117,7 @@ show ip ospf statistics          ! SPF and LSA statistics
 
 ## Key Takeaways
 
-- Always start verification with `show ip ospf neighbor` — `Full` state is the goal for every expected adjacency.
+- Always start verification with `show ip ospf neighbor` - `Full` state is the goal for every expected adjacency.
 - `show ip ospf interface` reveals configuration parameters like hello intervals and area assignments that must match between neighbors.
 - All routers in an area must have identical LSDBs; compare `show ip ospf database` output across routers if you suspect database inconsistency.
 - `O IA` routes come from another area; `O E1/E2` routes come from redistribution.

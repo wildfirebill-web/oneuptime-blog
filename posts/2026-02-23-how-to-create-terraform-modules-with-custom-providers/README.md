@@ -26,6 +26,7 @@ Third-party providers from the Terraform Registry work just like official ones. 
 
 ```hcl
 # modules/monitoring/versions.tf
+
 # Using a third-party provider from the registry
 terraform {
   required_providers {

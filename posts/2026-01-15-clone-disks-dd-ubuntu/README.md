@@ -18,6 +18,7 @@ The `dd` command, often called "disk dump" or jokingly "disk destroyer," is a lo
 
 ```bash
 # Basic dd syntax
+
 dd if=<source> of=<destination> [options]
 
 # Key parameters:

@@ -36,6 +36,7 @@ For Bitbucket Cloud:
 
 ```hcl
 # Create a workspace connected to Bitbucket
+
 resource "tfe_workspace" "app_infra" {
   name           = "app-infrastructure"
   organization   = "your-org"
@@ -252,7 +253,7 @@ terraform {
 
 Bitbucket Pipelines can post comments on pull requests:
 
-```yaml
+````yaml
 # Pull request pipeline with comment
 pull-requests:
   '**':
@@ -275,9 +276,9 @@ pull-requests:
             PLAN_OUTPUT=$(cat /tmp/plan.txt | head -c 30000)
             COMMENT_BODY=$(jq -n --arg content "## Terraform Plan
 
-            \`\`\`
+            ```
             $PLAN_OUTPUT
-            \`\`\`
+            ```
 
             *Pipeline: $BITBUCKET_BUILD_NUMBER*" '{"content": {"raw": $content}}')
 
@@ -286,7 +287,7 @@ pull-requests:
               -u "$BITBUCKET_USER:$BITBUCKET_APP_PASSWORD" \
               -d "$COMMENT_BODY" \
               "https://api.bitbucket.org/2.0/repositories/$BITBUCKET_REPO_FULL_NAME/pullrequests/$BITBUCKET_PR_ID/comments"
-```
+````
 
 You will need to add `BITBUCKET_USER` and `BITBUCKET_APP_PASSWORD` as repository variables for the API authentication.
 

@@ -48,6 +48,7 @@ Let's start with a Python project that calls OpenAI and captures full prompt/com
 
 ```bash
 # Install OpenTelemetry SDK, OTLP exporter, and OpenAI client
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp openai
 ```
 

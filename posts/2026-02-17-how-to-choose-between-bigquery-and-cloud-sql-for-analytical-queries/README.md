@@ -50,6 +50,7 @@ With an index on `(store_id, created_at)`, Cloud SQL processes this in milliseco
 
 ```bash
 # Create an appropriate index for the query pattern
+
 gcloud sql connect my-instance --user=postgres <<EOF
 CREATE INDEX idx_orders_store_date
 ON orders (store_id, created_at)

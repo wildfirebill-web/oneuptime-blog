@@ -31,6 +31,7 @@ Bash arithmetic only supports integers. When you try to use floating-point numbe
 
 ```bash
 # Example 1: Floating-point number
+
 $ echo $((3.14 * 2))
 bash: 3.14 * 2: syntax error: invalid arithmetic operator (error token is ".14 * 2")
 

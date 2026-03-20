@@ -19,6 +19,7 @@ Before installing Flatpak applications, you need Flatpak itself and at least one
 ```yaml
 ---
 # playbook: setup-flatpak.yml
+
 # Install Flatpak and configure the Flathub repository
 - hosts: workstations
   become: true

@@ -20,6 +20,7 @@ Silly Window Syndrome (SWS) occurs when TCP sends or advertises very small amoun
 
 ```bash
 # Capture and look for very small TCP segments
+
 tcpdump -i eth0 -n -v 'tcp' 2>/dev/null | \
   awk '/length/ {
     match($0, /length ([0-9]+)/, a)
@@ -35,7 +36,7 @@ tcpdump -i eth0 -n -v 'tcp' 2>/dev/null | \
 
 Nagle's algorithm prevents sender SWS by requiring that the sender always have at most one unacknowledged small segment:
 
-```
+```text
 Nagle's rule: If you have data to send and there's unacknowledged data in flight,
 wait until either:
 1. You have a full MSS worth of data, OR
@@ -53,7 +54,7 @@ ss -tin state established | grep nodelay
 # To enable Nagle explicitly in application code
 import socket
 s = socket.socket()
-# Nagle is ON by default — don't set TCP_NODELAY unless you need low latency
+# Nagle is ON by default - don't set TCP_NODELAY unless you need low latency
 # s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 0)  # Enable Nagle
 ```
 
@@ -61,13 +62,13 @@ s = socket.socket()
 
 Clark's algorithm prevents receiver SWS by not advertising window updates until the receiver has enough buffer to hold either a full MSS or half the socket buffer:
 
-```
+```text
 Clark's rule: Don't send window updates for small increments.
 Only send a window update when:
 1. The buffer space freed >= 1 MSS (typically 1460 bytes), OR
 2. The buffer space freed >= half the maximum receive window
 
-Linux implements this automatically — you don't need to configure it.
+Linux implements this automatically - you don't need to configure it.
 ```
 
 ## Checking for SWS in Application Code
@@ -109,4 +110,4 @@ s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)  # Disable Nagle
 
 ## Conclusion
 
-Silly Window Syndrome is an efficiency problem where TCP sends packets that are mostly header with tiny payloads. Nagle's algorithm (enabled by default) prevents sender SWS by coalescing small writes. Clark's algorithm in the kernel prevents receiver SWS by holding back small window updates. Only disable Nagle's algorithm for interactive applications that need sub-millisecond responsiveness — the cost is more small packets on the network.
+Silly Window Syndrome is an efficiency problem where TCP sends packets that are mostly header with tiny payloads. Nagle's algorithm (enabled by default) prevents sender SWS by coalescing small writes. Clark's algorithm in the kernel prevents receiver SWS by holding back small window updates. Only disable Nagle's algorithm for interactive applications that need sub-millisecond responsiveness - the cost is more small packets on the network.

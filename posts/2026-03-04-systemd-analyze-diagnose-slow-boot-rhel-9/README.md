@@ -18,6 +18,7 @@ Start with the overall boot time summary.
 
 ```bash
 # Show the total boot time broken down by phase
+
 systemd-analyze time
 ```
 

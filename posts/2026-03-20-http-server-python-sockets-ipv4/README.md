@@ -10,7 +10,7 @@ Description: Learn how to build a minimal HTTP/1.1 server from scratch using Pyt
 
 HTTP is a text-based protocol over TCP. A request looks like:
 
-```
+```text
 GET /path HTTP/1.1\r\n
 Host: example.com\r\n
 \r\n
@@ -18,7 +18,7 @@ Host: example.com\r\n
 
 A response looks like:
 
-```
+```text
 HTTP/1.1 200 OK\r\n
 Content-Type: text/plain\r\n
 Content-Length: 13\r\n
@@ -113,6 +113,7 @@ if __name__ == "__main__":
 
 ```bash
 # Test root endpoint
+
 curl http://localhost:8080/
 
 # Test health endpoint

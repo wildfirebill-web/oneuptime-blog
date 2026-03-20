@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Grafana, cAdvisor, Container Metrics, Dashboard
+Tags: Portainer, Grafana, cAdvisor, Container Metrics, Dashboards
 
 Description: Learn how to build a Grafana dashboard showing per-container CPU, memory, and network metrics sourced from cAdvisor, deployed and managed via Portainer.
 
@@ -16,14 +16,14 @@ Description: Learn how to build a Grafana dashboard showing per-container CPU, m
 
 In Grafana: **Configuration → Data Sources → Add Data Source → Prometheus**
 
-```
+```text
 URL: http://prometheus:9090    (container name if on same network)
      http://localhost:9090     (if Grafana is on host)
 
 Access: Server (default)
 ```
 
-Click **Save & Test** — should show "Data source is working."
+Click **Save & Test** - should show "Data source is working."
 
 ## Step 2: Import the cAdvisor Dashboard
 
@@ -99,7 +99,7 @@ container_memory_working_set_bytes{name=~"$container"}
 
 In any panel: **Alert → Create alert rule**
 
-```
+```text
 Condition: WHEN last() OF A IS ABOVE 80    (CPU > 80%)
 Evaluate every: 1m, for: 5m
 
@@ -116,6 +116,7 @@ Annotations:
 
 ```promql
 # Top 5 containers by CPU
+
 topk(5, sum(rate(container_cpu_usage_seconds_total{name!=""}[5m])) by (name) * 100)
 
 # Containers exceeding 1GB RAM
@@ -131,4 +132,4 @@ container_memory_working_set_bytes{name!=""} /
 
 ## Conclusion
 
-A Grafana container metrics dashboard powered by cAdvisor and Prometheus gives you instant visibility into which containers are consuming resources. Deployed and managed via Portainer, the entire monitoring stack — from scraper to dashboard — is maintained through the same interface you use to manage application containers.
+A Grafana container metrics dashboard powered by cAdvisor and Prometheus gives you instant visibility into which containers are consuming resources. Deployed and managed via Portainer, the entire monitoring stack - from scraper to dashboard - is maintained through the same interface you use to manage application containers.

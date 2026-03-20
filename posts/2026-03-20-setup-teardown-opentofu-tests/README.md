@@ -14,7 +14,7 @@ OpenTofu tests automatically handle cleanup: after a test file completes, the fr
 
 OpenTofu automatically destroys applied resources when a test file completes:
 
-```
+```hcl
 Test lifecycle:
 1. Run "setup" block → apply → creates VPC, subnets
 2. Run "test" block → apply → creates main resources
@@ -23,12 +23,13 @@ Test lifecycle:
 5. OpenTofu destroys: main resources → VPC, subnets (reverse order)
 ```
 
-This means you don't need to write explicit teardown — it's automatic.
+This means you don't need to write explicit teardown - it's automatic.
 
 ## Setup with a Dedicated Setup Module
 
 ```hcl
-# tests/setup/main.tf — creates test prerequisites
+# tests/setup/main.tf - creates test prerequisites
+
 terraform {
   required_providers {
     aws = { source = "hashicorp/aws" }
@@ -95,7 +96,7 @@ run "creates_database" {
   }
 }
 
-# TEARDOWN: Happens automatically — OpenTofu destroys
+# TEARDOWN: Happens automatically - OpenTofu destroys
 # run.creates_database resources, then run.setup resources
 ```
 
@@ -206,4 +207,4 @@ run "test_with_real_vpc" {
 
 ## Conclusion
 
-OpenTofu's test framework handles teardown automatically — resources created with `command = apply` are destroyed after the test file completes, in reverse order. Use setup modules to create prerequisites, reference their outputs in subsequent runs, and rely on automatic cleanup. Use unique suffixes with timestamps to make orphaned resources identifiable if cleanup fails. For unit tests with mocked providers, no teardown is needed since no real resources are created.
+OpenTofu's test framework handles teardown automatically - resources created with `command = apply` are destroyed after the test file completes, in reverse order. Use setup modules to create prerequisites, reference their outputs in subsequent runs, and rely on automatic cleanup. Use unique suffixes with timestamps to make orphaned resources identifiable if cleanup fails. For unit tests with mocked providers, no teardown is needed since no real resources are created.

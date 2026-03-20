@@ -160,6 +160,7 @@ Here are the Sidecar configurations for each layer:
 
 ```yaml
 # Frontend namespace - can only reach API Gateway
+
 apiVersion: networking.istio.io/v1
 kind: Sidecar
 metadata:

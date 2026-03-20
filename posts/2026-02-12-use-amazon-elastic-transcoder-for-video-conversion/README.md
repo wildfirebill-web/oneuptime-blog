@@ -51,6 +51,7 @@ A pipeline connects your input S3 bucket, output S3 bucket, and IAM role:
 
 ```bash
 # Create a transcoding pipeline
+
 aws elastictranscoder create-pipeline \
   --name "video-processing" \
   --input-bucket "my-video-uploads-123456789012" \

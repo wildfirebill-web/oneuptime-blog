@@ -1,8 +1,8 @@
-# How to Understand the Mobility Header in IPv6
+# How to Understand the Mobility Header in IPv6 - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Mobile IPv6, Mobility Header, RFC 6275, Extension Header
+Tags: IPv6, Mobile IPv6, Mobility Header, RFC 6275, Extension Headers
 
 Description: Understand the IPv6 Mobility Header extension header, its message types, and how it enables Mobile IPv6 signaling between mobile nodes and home agents.
 
@@ -12,7 +12,7 @@ The Mobility Header is an IPv6 extension header (Next Header value 135) defined 
 
 ## Mobility Header Structure
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -44,7 +44,7 @@ The Mobility Header is an IPv6 extension header (Next Header value 135) defined 
 
 ## Binding Update Message Format
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -65,6 +65,7 @@ Key flags:
 
 ```bash
 # Capture Mobility Header packets (Next Header = 135)
+
 tcpdump -i eth0 -n "ip6 proto 135" -v
 
 # With Wireshark display filter
@@ -115,4 +116,4 @@ def parse_mobility_header(data: bytes) -> dict:
 
 ## Conclusion
 
-The IPv6 Mobility Header (Next Header 135) is the signaling protocol for Mobile IPv6. Its message types — particularly Binding Update and Binding Acknowledgment — coordinate home address registration and route optimization. Use tcpdump with `ip6 proto 135` to capture and diagnose Mobile IPv6 signaling. Monitor Mobility Header traffic patterns with OneUptime to detect unexpected binding activity.
+The IPv6 Mobility Header (Next Header 135) is the signaling protocol for Mobile IPv6. Its message types - particularly Binding Update and Binding Acknowledgment - coordinate home address registration and route optimization. Use tcpdump with `ip6 proto 135` to capture and diagnose Mobile IPv6 signaling. Monitor Mobility Header traffic patterns with OneUptime to detect unexpected binding activity.

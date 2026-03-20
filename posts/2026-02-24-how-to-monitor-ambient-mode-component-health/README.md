@@ -29,6 +29,7 @@ ztunnel exposes a health endpoint:
 
 ```bash
 # Check readiness
+
 kubectl exec -n istio-system ztunnel-xxxxx -- \
   curl -s localhost:15021/healthz/ready
 ```

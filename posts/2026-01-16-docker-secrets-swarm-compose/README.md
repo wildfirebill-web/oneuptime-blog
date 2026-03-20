@@ -33,6 +33,7 @@ Docker Swarm has native secret management. Secrets are encrypted and distributed
 
 ```bash
 # Create secret from a file
+
 echo "my-super-secret-password" > db_password.txt
 docker secret create db_password db_password.txt
 rm db_password.txt  # Remove the file after creating secret

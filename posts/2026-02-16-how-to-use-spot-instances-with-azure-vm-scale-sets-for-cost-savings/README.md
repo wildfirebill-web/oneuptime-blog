@@ -27,6 +27,7 @@ Here is how to create a scale set that uses Spot instances:
 
 ```bash
 # Create a Spot VM Scale Set
+
 az vmss create \
   --resource-group myResourceGroup \
   --name mySpotScaleSet \

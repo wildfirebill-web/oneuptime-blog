@@ -191,6 +191,7 @@ If you prefer the terminal over dashboards:
 
 ```bash
 # Watch proxy status in real time
+
 watch -n 10 'istioctl proxy-status 2>/dev/null | tail -5; echo "---"; istioctl proxy-status 2>/dev/null | grep -c SYNCED; echo "SYNCED proxies"'
 ```
 

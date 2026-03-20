@@ -40,6 +40,7 @@ Your VirtualService routes to `subset: v2` but the DestinationRule does not defi
 
 ```bash
 # Check what subsets are defined
+
 kubectl get destinationrule my-service-dr -o yaml | grep -A5 subsets
 ```
 

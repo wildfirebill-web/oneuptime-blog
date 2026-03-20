@@ -109,6 +109,7 @@ The most common reason for "no free leases":
 
 ```bash
 # Check the lease file
+
 cat /var/lib/dhcpd/dhcpd.leases | grep "^lease" | wc -l
 ```
 

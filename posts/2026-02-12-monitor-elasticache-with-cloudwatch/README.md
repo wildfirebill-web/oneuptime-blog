@@ -22,6 +22,7 @@ Not all CloudWatch metrics are equally important. Here are the ones that actuall
 
 ```bash
 # Check CPU utilization across all nodes
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/ElastiCache \
   --metric-name CPUUtilization \

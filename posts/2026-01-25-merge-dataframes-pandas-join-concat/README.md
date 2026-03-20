@@ -30,6 +30,7 @@ Inner join returns only rows where keys exist in both DataFrames.
 import pandas as pd
 
 # Sample DataFrames representing orders and customers
+
 orders = pd.DataFrame({
     'order_id': [1, 2, 3, 4],
     'customer_id': [101, 102, 103, 104],

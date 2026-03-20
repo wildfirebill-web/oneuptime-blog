@@ -237,6 +237,7 @@ You should regularly test that failover actually works. Here is a simple approac
 
 ```bash
 # Check current endpoints across clusters
+
 istioctl proxy-config endpoints deploy/sleep --cluster "outbound|8080||payment.default.svc.cluster.local"
 
 # Scale down in cluster A

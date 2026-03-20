@@ -97,6 +97,7 @@ For engineers new to Terraform:
 
 ```hcl
 # Week 1 Lab Exercise: Build a VPC
+
 # Students create this from scratch, not copy-paste
 
 # Configure the provider

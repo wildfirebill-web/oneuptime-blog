@@ -1,18 +1,18 @@
----
-title: "Using for_each with Providers in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, for_each
-description: "Learn how OpenTofu 1.7+ supports for_each on provider blocks, enabling dynamic multi-region and multi-account deployments."
----
-
 # Using for_each with Providers in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, for_each
+
+Description: Learn how OpenTofu 1.7+ supports for_each on provider blocks, enabling dynamic multi-region and multi-account deployments.
 
 OpenTofu 1.7 introduced the ability to use `for_each` with provider configurations, enabling truly dynamic multi-region and multi-account deployments without repeating provider blocks.
 
 ## The Problem Before for_each
 
 ```hcl
-# Old approach — manual repetition for each region
+# Old approach - manual repetition for each region
+
 provider "aws" {
   alias  = "us_east_1"
   region = "us-east-1"

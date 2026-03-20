@@ -62,6 +62,7 @@ The following commands install the OpenTelemetry SDK along with testing utilitie
 
 ```bash
 # Install OpenTelemetry core packages for trace generation and export
+
 npm install @opentelemetry/api @opentelemetry/sdk-trace-node
 
 # Install the in-memory exporter which captures spans for test assertions

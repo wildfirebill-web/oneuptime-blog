@@ -50,6 +50,7 @@ Here's an example using AWS Route 53 weighted routing:
 
 ```yaml
 # route53-weighted-routing.yaml
+
 # This is pseudo-YAML for illustration (actual setup via AWS CLI/Console)
 HostedZone: example.com
 RecordSets:

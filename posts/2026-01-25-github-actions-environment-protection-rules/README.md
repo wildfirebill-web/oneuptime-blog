@@ -42,6 +42,7 @@ Or use the GitHub CLI:
 
 ```bash
 # Create an environment
+
 gh api repos/{owner}/{repo}/environments/production -X PUT
 
 # Note: Protection rules must be configured via UI or API with specific payloads

@@ -35,6 +35,7 @@ import redis
 import json
 
 # Initialize Redis connection
+
 r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
 def get_user_profile(user_id):

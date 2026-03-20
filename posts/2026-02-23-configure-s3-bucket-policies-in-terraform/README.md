@@ -22,6 +22,7 @@ resource "aws_s3_bucket" "data" {
 }
 
 # Basic bucket policy allowing a specific IAM role to read objects
+
 resource "aws_s3_bucket_policy" "data" {
   bucket = aws_s3_bucket.data.id
 

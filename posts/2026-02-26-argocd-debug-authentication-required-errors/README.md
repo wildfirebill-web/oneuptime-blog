@@ -16,6 +16,7 @@ The error manifests in several forms:
 
 ```text
 # HTTPS authentication failure
+
 rpc error: code = Unknown desc = authentication required
 
 # SSH authentication failure

@@ -30,6 +30,7 @@ Create or use an existing Helm chart:
 
 ```bash
 # Create a new chart
+
 helm create my-app
 
 # Or use an existing chart directory

@@ -179,6 +179,7 @@ For production applications requiring robust caching, `react-native-fast-image` 
 
 ```bash
 # Using npm
+
 npm install react-native-fast-image
 
 # Using yarn

@@ -22,6 +22,7 @@ When you run `terraform login`, several things happen behind the scenes:
 
 ```bash
 # Run the login command
+
 terraform login
 
 # Output:

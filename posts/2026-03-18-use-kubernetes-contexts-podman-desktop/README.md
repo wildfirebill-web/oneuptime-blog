@@ -20,6 +20,7 @@ A Kubernetes context is a combination of a cluster, user, and namespace. Your ku
 
 ```bash
 # View your current kubeconfig file location
+
 echo $KUBECONFIG
 # Defaults to ~/.kube/config if not set
 

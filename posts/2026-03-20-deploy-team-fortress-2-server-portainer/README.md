@@ -14,6 +14,7 @@ Team Fortress 2 is a free-to-play class-based shooter with a vibrant community. 
 
 ```yaml
 # tf2-stack.yml
+
 version: "3.8"
 
 services:
@@ -97,7 +98,7 @@ volumes:
 
 Create a mapcycle.txt to rotate through your maps:
 
-```
+```text
 cp_dustbowl
 ctf_2fort
 pl_badwater

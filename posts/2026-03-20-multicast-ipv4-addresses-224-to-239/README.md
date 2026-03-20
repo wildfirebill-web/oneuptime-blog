@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Multicast, Networking, IGMP, IP Addressing
 
-Description: IPv4 multicast addresses in the 224.0.0.0/4 range allow a single packet to be delivered to a group of interested receivers, enabling efficient one-to-many data distribution for streaming, routing protocols, and service discovery.
+Description: IPv4 multicast addresses in the 224.0.0.0/4 range allow a single packet to be delivered to a group of interested receivers, enabling efficient one-to-many data distribution for streaming, routing...
 
 ## The Multicast Address Space
 
@@ -38,6 +38,7 @@ The entire `224.0.0.0/4` block (224.0.0.0 through 239.255.255.255) is reserved f
 
 ```bash
 # View multicast group memberships
+
 ip maddr show
 
 # View IGMP group membership

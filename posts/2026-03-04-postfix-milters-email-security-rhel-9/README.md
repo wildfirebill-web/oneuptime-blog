@@ -48,6 +48,7 @@ Add to `/etc/postfix/main.cf`:
 
 ```bash
 # Default action if a milter is unavailable
+
 milter_default_action = accept
 
 # Milter protocol version

@@ -74,6 +74,7 @@ The simplest form of custom instrumentation wraps a function call with a span. H
 
 ```python
 # payment_gateway.py
+
 # A proprietary payment library that needs custom instrumentation
 
 from opentelemetry import trace

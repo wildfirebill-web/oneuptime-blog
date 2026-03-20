@@ -62,6 +62,7 @@ Create a simple Flask application with Redis connection:
 
 ```python
 # app.py
+
 from flask import Flask
 import redis
 import os

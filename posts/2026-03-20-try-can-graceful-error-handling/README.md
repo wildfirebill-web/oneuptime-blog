@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, Error Handling, try, can, Infrastructure as Code
+Tags: OpenTofu, Terraform, HCL, Error Handling, Try, Can, Infrastructure as Code
 
 Description: Learn how to use the `try` and `can` functions in OpenTofu to handle errors gracefully in expressions, providing fallback values and conditional logic without failing the entire plan.
 
@@ -16,6 +16,7 @@ OpenTofu's `try` and `can` functions allow you to handle potential errors in exp
 
 ```hcl
 # Check if a CIDR block is valid
+
 variable "cidr_block" {
   type = string
 }
@@ -112,7 +113,7 @@ locals {
 
 ## Common Pitfalls
 
-Avoid using `try` to hide genuine errors — it should handle expected optional scenarios, not mask bugs:
+Avoid using `try` to hide genuine errors - it should handle expected optional scenarios, not mask bugs:
 
 ```hcl
 # Bad: masking a real configuration error

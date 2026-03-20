@@ -18,6 +18,7 @@ This means the client can reach the server, but the NFS service is not respondin
 
 ```bash
 # Check if the NFS server process is running
+
 sudo systemctl status nfs-server
 
 # Check if port 2049 is listening

@@ -14,6 +14,7 @@ Kubernetes Horizontal Pod Autoscalers automatically scale the number of pod repl
 
 ```hcl
 # main.tf - HPA based on CPU utilization
+
 resource "kubernetes_horizontal_pod_autoscaler_v2" "web_app_hpa" {
   metadata {
     name      = "web-app-hpa"

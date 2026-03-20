@@ -20,6 +20,7 @@ Description: Learn how to diagnose and fix gRPC IPv4 connection failures using s
 
 ```bash
 # Install grpcurl
+
 go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
 
 # List services (server must have reflection enabled)
@@ -37,7 +38,7 @@ grpcurl -cacert ca.crt -cert client.crt -key client.key \
 ## Enable gRPC Verbose Logging
 
 ```bash
-# Python — set environment variable before running
+# Python - set environment variable before running
 GRPC_VERBOSITY=DEBUG GRPC_TRACE=all python client.py
 
 # Go
@@ -97,10 +98,10 @@ ss -tlnp | grep 50051
 # 2. Firewall blocking port
 iptables -I INPUT -p tcp --dport 50051 -j ACCEPT
 
-# 3. Pod not ready — check readiness probe
+# 3. Pod not ready - check readiness probe
 kubectl describe pod grpc-server-xxx | grep -A5 "Conditions"
 
-# 4. Wrong proto version — regenerate stubs
+# 4. Wrong proto version - regenerate stubs
 python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. hello.proto
 ```
 

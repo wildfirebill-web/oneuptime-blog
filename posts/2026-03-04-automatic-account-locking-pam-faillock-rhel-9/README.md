@@ -16,6 +16,7 @@ The recommended way to enable faillock is through authselect, not by manually ed
 
 ```bash
 # Enable the faillock feature on the current profile
+
 sudo authselect enable-feature with-faillock
 
 # Verify it was enabled

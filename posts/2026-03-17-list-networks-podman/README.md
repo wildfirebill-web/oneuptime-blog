@@ -18,6 +18,7 @@ Podman provides the `podman network ls` command to list all configured networks.
 
 ```bash
 # List all networks
+
 podman network ls
 
 # Example output:

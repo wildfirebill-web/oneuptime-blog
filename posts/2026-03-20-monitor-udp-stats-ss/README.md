@@ -14,6 +14,7 @@ The `ss` command provides socket-level statistics for UDP in a way that `netstat
 
 ```bash
 # List all UDP sockets
+
 ss -un
 
 # List with process info (requires root for other users' processes)
@@ -33,7 +34,7 @@ ss -una
 
 ## UDP States
 
-```
+```text
 UDP socket states in ss:
 - UNCONN: Socket is bound but not connected (listening for any sender)
          Most UDP servers are in this state

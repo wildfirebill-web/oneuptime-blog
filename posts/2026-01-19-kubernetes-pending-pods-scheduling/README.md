@@ -36,6 +36,7 @@ flowchart TD
 
 ```bash
 # Check pod status and events
+
 kubectl describe pod <pod-name>
 
 # Look for the Events section:

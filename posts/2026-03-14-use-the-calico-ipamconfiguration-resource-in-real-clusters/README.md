@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward IPAMConfiguration confi
 
 ```bash
 # Verify current IPAMConfiguration resources
+
 calicoctl get ipamconfiguration -o yaml
 
 # Check the effective configuration on a specific node

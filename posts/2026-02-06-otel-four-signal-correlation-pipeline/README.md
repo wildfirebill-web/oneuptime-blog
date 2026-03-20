@@ -31,6 +31,7 @@ Here is the full configuration for a four-signal collector with correlation:
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

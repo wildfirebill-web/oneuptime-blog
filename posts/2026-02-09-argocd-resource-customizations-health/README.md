@@ -324,6 +324,7 @@ Or use Kustomize to manage it declaratively:
 
 ```yaml
 # argocd-cm-patch.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

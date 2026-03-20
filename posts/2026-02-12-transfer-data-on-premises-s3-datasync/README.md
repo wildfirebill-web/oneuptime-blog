@@ -31,6 +31,7 @@ Set up the destination bucket with the right configuration:
 
 ```bash
 # Create the S3 bucket
+
 aws s3api create-bucket \
   --bucket my-onprem-migration \
   --region us-east-1

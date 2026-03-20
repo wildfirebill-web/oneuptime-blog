@@ -48,6 +48,7 @@ On bare metal servers with bonded NICs, VLAN interfaces, or multiple physical po
 
 ```bash
 # List all interfaces on a node
+
 ip link show
 ip addr show
 

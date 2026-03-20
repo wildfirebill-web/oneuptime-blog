@@ -326,6 +326,7 @@ RTB systems produce enormous volumes of telemetry. The collector configuration n
 
 ```yaml
 # otel-collector-rtb.yaml
+
 receivers:
   otlp:
     protocols:

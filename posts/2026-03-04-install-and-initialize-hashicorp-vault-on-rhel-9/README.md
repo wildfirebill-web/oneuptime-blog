@@ -20,6 +20,7 @@ HashiCorp Vault provides secrets management, encryption as a service, and identi
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Add HashiCorp repository

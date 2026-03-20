@@ -25,6 +25,7 @@ The platform admin creates the tenant's namespace, service account, RBAC, and re
 
 ```yaml
 # tenants/team-alpha/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

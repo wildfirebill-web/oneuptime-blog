@@ -181,6 +181,7 @@ curl -X POST "https://localhost:9200/_reindex" \
 
 ```bash
 # 1. Create new index with updated mappings
+
 curl -X PUT "https://localhost:9200/products_v2" \
   -H "Content-Type: application/json" \
   -u elastic:password \

@@ -28,6 +28,7 @@ Node Exporter collects system metrics from Linux machines.
 
 ```bash
 # Install node_exporter
+
 wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
 tar xvfz node_exporter-*.tar.gz
 cd node_exporter-*
@@ -210,7 +211,7 @@ Thresholds:
   - 0: red
 ```
 
-### Resource Utilization Heatmap
+Resource Utilization Heatmap
 
 ```promql
 # CPU utilization by server

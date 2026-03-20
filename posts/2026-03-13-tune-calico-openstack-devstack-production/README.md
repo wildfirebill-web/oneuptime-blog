@@ -47,6 +47,7 @@ Apply a new Security Group rule and measure how long it takes Felix to program i
 TIME_BEFORE=$(date +%s%N)
 openstack security group rule create --protocol tcp --dst-port 8080 test-sg
 # Check when iptables rule appears
+
 while ! sudo iptables -L | grep -q "dpt:8080"; do sleep 0.1; done
 TIME_AFTER=$(date +%s%N)
 echo "Policy convergence: $(( ($TIME_AFTER - $TIME_BEFORE) / 1000000 )) ms"

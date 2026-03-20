@@ -39,6 +39,7 @@ flowchart LR
 
 ```bash
 # Watch pod startup events
+
 kubectl get events --watch --field-selector involvedObject.kind=Pod
 
 # Calculate startup time
@@ -369,7 +370,7 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
 ```
 
-## Resource Optimization
+Resource Optimization
 
 ### Burst Resources for Startup
 

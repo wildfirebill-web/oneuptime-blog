@@ -22,6 +22,7 @@ Create a namespace resource in your chart templates.
 
 ```yaml
 # templates/namespace.yaml
+
 {{- if .Values.namespaceCreation.enabled }}
 apiVersion: v1
 kind: Namespace

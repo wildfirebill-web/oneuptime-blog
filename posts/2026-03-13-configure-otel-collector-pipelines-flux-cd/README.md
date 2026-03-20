@@ -29,6 +29,7 @@ Register the OTel Helm repository as a Flux HelmRepository source.
 
 ```yaml
 # infrastructure/otel-collector/helmrepository.yaml
+
 # Flux HelmRepository pointing to the OpenTelemetry Helm chart registry
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository

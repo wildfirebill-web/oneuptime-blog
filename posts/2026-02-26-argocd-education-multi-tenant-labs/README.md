@@ -38,6 +38,7 @@ Start with a Git repository that defines your course. The student list drives ev
 
 ```yaml
 # courses/kubernetes-101/students.yaml
+
 students:
   - id: student-001
     name: "Alice Johnson"

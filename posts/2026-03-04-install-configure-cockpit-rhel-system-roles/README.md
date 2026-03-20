@@ -35,6 +35,7 @@ Install the required packages on the control node:
 
 ```bash
 # Install Ansible core
+
 sudo dnf install ansible-core -y
 
 # Install RHEL System Roles

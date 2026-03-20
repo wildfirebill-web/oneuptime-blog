@@ -125,6 +125,7 @@ Note: The TLS secret must be in the `istio-system` namespace (where the ingress 
 
 ```bash
 # Copy the secret to istio-system
+
 kubectl get secret api-tls -n default -o yaml | \
   sed 's/namespace: default/namespace: istio-system/' | \
   kubectl apply -f -

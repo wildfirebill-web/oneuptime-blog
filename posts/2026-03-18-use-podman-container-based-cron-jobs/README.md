@@ -40,6 +40,7 @@ Create a Quadlet container unit file (the modern replacement for the deprecated 
 
 ```ini
 # ~/.config/containers/systemd/backup-job.container
+
 [Container]
 ContainerName=backup-job
 Image=backup-image:latest
@@ -143,7 +144,7 @@ find /backups -name "db_backup_*.sql.gz" -mtime +7 -delete
 echo "[$(date)] Old backups cleaned up"
 ```
 
-## Resource-Limited Cron Jobs
+Resource-Limited Cron Jobs
 
 Prevent runaway jobs from consuming all system resources:
 

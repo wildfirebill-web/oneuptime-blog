@@ -36,6 +36,7 @@ Finding the latest official AMI via CLI:
 
 ```bash
 # Find the latest Ubuntu 24.04 LTS AMI for us-east-1
+
 aws ec2 describe-images \
   --owners 099720109477 \
   --filters \

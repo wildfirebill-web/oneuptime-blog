@@ -18,6 +18,7 @@ Every file and process on an SELinux system has a security context. You can see 
 
 ```bash
 # View SELinux labels on files in a directory
+
 ls -laZ /var/lib/docker/volumes/
 ```
 

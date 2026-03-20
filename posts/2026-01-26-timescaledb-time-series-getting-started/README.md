@@ -55,6 +55,7 @@ The fastest way to get started is with Docker. TimescaleDB provides official ima
 
 ```bash
 # Pull and run TimescaleDB container
+
 docker run -d \
   --name timescaledb \
   -p 5432:5432 \

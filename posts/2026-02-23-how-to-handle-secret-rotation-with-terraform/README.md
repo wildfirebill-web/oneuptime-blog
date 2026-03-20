@@ -20,6 +20,7 @@ The solution is to have Terraform set up the rotation infrastructure but not man
 
 ```hcl
 # Create the secret
+
 resource "aws_secretsmanager_secret" "database" {
   name        = "${var.project}/database/credentials"
   description = "Database credentials with automatic rotation"

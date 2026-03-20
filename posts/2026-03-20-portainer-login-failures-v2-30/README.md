@@ -1,4 +1,4 @@
-# How to Fix Login Failures in Portainer v2.30.0
+# How to Fix Login Failures in Portainer v2.30.0 - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Different error messages indicate different causes:
 
 ```bash
 # Test login via API for detailed error messages
+
 curl -v -X POST http://localhost:9000/api/auth \
   -H "Content-Type: application/json" \
   -d '{"Username":"admin","Password":"yourpassword"}' 2>&1

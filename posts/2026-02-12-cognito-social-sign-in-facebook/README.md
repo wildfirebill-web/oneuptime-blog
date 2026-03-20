@@ -42,6 +42,7 @@ Using Terraform:
 
 ```hcl
 # Facebook identity provider
+
 resource "aws_cognito_identity_provider" "facebook" {
   user_pool_id  = aws_cognito_user_pool.main.id
   provider_name = "Facebook"

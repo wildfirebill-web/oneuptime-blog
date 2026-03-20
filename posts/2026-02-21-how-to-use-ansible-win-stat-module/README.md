@@ -24,6 +24,7 @@ Install the collection if you have not already:
 
 ```bash
 # Install the ansible.windows collection from Ansible Galaxy
+
 ansible-galaxy collection install ansible.windows
 ```
 

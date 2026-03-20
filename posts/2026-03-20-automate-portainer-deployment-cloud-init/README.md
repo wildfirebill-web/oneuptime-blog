@@ -1,8 +1,8 @@
-# How to Automate Portainer Deployment with Cloud-Init
+# How to Automate Portainer Deployment with Cloud-Init - Deployment
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Cloud-Init, Automation, DevOps, Docker, Infrastructure, Cloud
+Tags: Portainer, Cloud-init, Automation, DevOps, Docker, Infrastructure, Cloud
 
 Description: Automate the full Portainer installation on any cloud VM or bare-metal server using a Cloud-Init user-data script, so new nodes are ready to manage containers from first boot.
 
@@ -12,7 +12,7 @@ Manually installing Portainer on every new server is tedious. Cloud-Init is a st
 
 ## How Cloud-Init Works
 
-When a virtual machine starts for the first time, Cloud-Init reads the **user-data** script provided at instance creation, then runs it as root during the boot sequence. This is where you can install Docker, pull Portainer, and configure it — all without SSH access.
+When a virtual machine starts for the first time, Cloud-Init reads the **user-data** script provided at instance creation, then runs it as root during the boot sequence. This is where you can install Docker, pull Portainer, and configure it - all without SSH access.
 
 ## Complete Cloud-Init Script
 
@@ -21,6 +21,7 @@ The following user-data script installs Docker Engine, deploys Portainer Busines
 ```yaml
 #cloud-config
 # Cloud-Init user-data for Portainer auto-deployment
+
 # Tested on Ubuntu 22.04 LTS and Debian 12
 
 package_update: true
@@ -108,7 +109,7 @@ resource "aws_instance" "portainer_node" {
 
 After the instance boots (allow 3-5 minutes for Cloud-Init to complete), visit:
 
-```
+```text
 https://<instance-ip>:9443
 ```
 

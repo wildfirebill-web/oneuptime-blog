@@ -13,13 +13,14 @@ Managing 100+ resources in OpenTofu without deliberate structure leads to fragil
 ## Pattern 1: Use for_each Instead of count for Named Resources
 
 ```hcl
-# AVOID — count index-based naming causes resource churn when items are removed
+# AVOID - count index-based naming causes resource churn when items are removed
+
 resource "aws_iam_user" "ci_users" {
   count = length(var.ci_users)
   name  = var.ci_users[count.index]
 }
 
-# PREFER — for_each keys are stable; removing one user doesn't shift others
+# PREFER - for_each keys are stable; removing one user doesn't shift others
 variable "ci_users" {
   type    = set(string)
   default = ["alice", "bob", "charlie"]
@@ -68,7 +69,7 @@ tofu apply -target=aws_instance.fleet["web-prod-1"]
 tofu apply -target=module.networking
 
 # Always run a full plan before merging
-tofu plan   # No -target — full configuration
+tofu plan   # No -target - full configuration
 ```
 
 ## Pattern 4: State Lists for Auditing
@@ -123,7 +124,7 @@ resource "aws_instance" "fleet" {
   lifecycle {
     # Prevent accidental destruction of instances
     prevent_destroy = true
-    # Don't replace when AMI is updated — update in-place or via separate process
+    # Don't replace when AMI is updated - update in-place or via separate process
     ignore_changes  = [ami]
     # Create new instances before destroying old ones
     create_before_destroy = true

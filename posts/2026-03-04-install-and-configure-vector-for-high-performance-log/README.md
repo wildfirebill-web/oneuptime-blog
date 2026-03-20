@@ -20,6 +20,7 @@ Vector for High-Performance Log Collection can be installed and configured on RH
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

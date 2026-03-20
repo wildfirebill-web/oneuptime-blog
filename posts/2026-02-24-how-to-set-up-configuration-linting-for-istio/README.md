@@ -43,6 +43,7 @@ Add Istio linting to your CI pipeline. Here is a GitHub Actions example:
 
 ```yaml
 # .github/workflows/istio-lint.yaml
+
 name: Lint Istio Configuration
 on:
   pull_request:
@@ -331,7 +332,7 @@ pre-commit install
 
 For a better developer experience, have your CI bot comment on PRs with lint results:
 
-```yaml
+````yaml
 # In your CI pipeline
 - name: Run Istio Lint and Comment
   run: |
@@ -342,15 +343,15 @@ For a better developer experience, have your CI bot comment on PRs with lint res
       gh pr comment ${{ github.event.pull_request.number }} --body "$(cat <<EOF
     ## Istio Configuration Lint Results
 
-    \`\`\`
+    ```
     $RESULT
-    \`\`\`
+    ```
 
     Please fix the issues above before merging.
     EOF
     )"
       exit 1
     fi
-```
+````
 
 Configuration linting is not a nice-to-have. It is a requirement for any team that wants to maintain a reliable Istio mesh. The combination of YAML syntax checking, istioctl analysis, and custom OPA policies catches the vast majority of configuration mistakes before they can cause problems. Set it up once and it protects you forever.

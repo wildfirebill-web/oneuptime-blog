@@ -14,6 +14,7 @@ DDoS protection requires multiple layers: volumetric attack absorption at the ne
 
 ```hcl
 # main.tf - AWS Shield Advanced subscription
+
 resource "aws_shield_subscription" "main" {
   auto_renew = "ENABLED"
 }

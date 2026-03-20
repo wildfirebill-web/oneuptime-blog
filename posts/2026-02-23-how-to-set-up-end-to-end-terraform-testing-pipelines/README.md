@@ -30,6 +30,7 @@ The fastest checks run first. No cloud credentials needed.
 
 ```yaml
 # .github/workflows/terraform-pipeline.yml
+
 name: Terraform Testing Pipeline
 
 on:

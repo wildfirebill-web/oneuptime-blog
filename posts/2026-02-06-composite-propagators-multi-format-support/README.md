@@ -65,6 +65,7 @@ from opentelemetry.sdk.trace.export import ConsoleSpanExporter, SimpleSpanProces
 from opentelemetry.propagate import set_global_textmap, inject
 
 # Import all the propagators we need
+
 from opentelemetry.propagators.composite import CompositePropagator
 from opentelemetry.trace.propagation import TraceContextTextMapPropagator
 from opentelemetry.baggage.propagation import W3CBaggagePropagator

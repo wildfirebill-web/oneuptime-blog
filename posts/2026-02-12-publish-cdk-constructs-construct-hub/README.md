@@ -18,6 +18,7 @@ jsii (JavaScript Interoperability Interface) is what makes your TypeScript const
 
 ```bash
 # Initialize a new jsii project
+
 mkdir cdk-aurora-monitoring && cd cdk-aurora-monitoring
 npx projen new awscdk-construct
 ```

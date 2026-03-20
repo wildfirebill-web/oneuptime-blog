@@ -35,6 +35,7 @@ If you need a Cloud Run service to work with:
 
 ```bash
 # Deploy a sample Cloud Run service
+
 gcloud run deploy my-web-app \
     --image=gcr.io/cloudrun/hello \
     --platform=managed \

@@ -30,6 +30,7 @@ Enable the API and install the client:
 
 ```bash
 # Enable the Natural Language API
+
 gcloud services enable language.googleapis.com
 
 # Install the Python client

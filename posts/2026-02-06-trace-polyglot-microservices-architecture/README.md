@@ -39,6 +39,7 @@ First, install the required packages:
 
 ```bash
 # Install the OpenTelemetry Go SDK and instrumentation libraries
+
 go get go.opentelemetry.io/otel
 go get go.opentelemetry.io/otel/sdk/trace
 go get go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp

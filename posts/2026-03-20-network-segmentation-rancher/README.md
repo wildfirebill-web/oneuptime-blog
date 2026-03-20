@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, network-policy, segmentation, security, kubernetes
+Tags: Rancher, Network-policy, Segmentation, Security, Kubernetes
 
 Description: Guide to implementing network segmentation in Rancher using NetworkPolicies for zero-trust networking.
 
@@ -31,6 +31,7 @@ How to Configure Network Segmentation in Rancher addresses these challenges by a
 
 ```bash
 # Run a basic security audit
+
 kubectl get pods --all-namespaces -o json | jq -r '
   .items[] | 
   select(

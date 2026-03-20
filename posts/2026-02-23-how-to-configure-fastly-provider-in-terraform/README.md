@@ -40,6 +40,7 @@ terraform {
 }
 
 # Configure the Fastly provider with an API token
+
 provider "fastly" {
   api_key = var.fastly_api_key
 }

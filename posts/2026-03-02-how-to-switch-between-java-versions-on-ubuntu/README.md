@@ -16,6 +16,7 @@ Before switching between versions, you need them installed. Install each version
 
 ```bash
 # Update package index
+
 sudo apt update
 
 # Install multiple JDK versions

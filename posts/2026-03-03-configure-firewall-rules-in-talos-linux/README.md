@@ -31,6 +31,7 @@ Let us start with a basic firewall configuration that allows essential Talos and
 
 ```yaml
 # Basic firewall configuration for a Talos Linux node
+
 machine:
   network:
     nftablesRules:

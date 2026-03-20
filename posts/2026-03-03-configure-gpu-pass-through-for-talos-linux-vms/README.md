@@ -34,6 +34,7 @@ Start by enabling IOMMU in your BIOS and kernel parameters:
 
 ```bash
 # For Intel CPUs - edit /etc/default/grub
+
 GRUB_CMDLINE_LINUX="intel_iommu=on iommu=pt"
 
 # For AMD CPUs

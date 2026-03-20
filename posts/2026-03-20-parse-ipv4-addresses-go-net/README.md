@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv4, net.ParseIP, Networking, IP Addresses, Validation
+Tags: Go, IPv4, Net.ParseIP, Networking, IP Addresses, Validation
 
 Description: Learn how to parse, validate, and manipulate IPv4 addresses in Go using the net package's ParseIP, IP, and related types.
 

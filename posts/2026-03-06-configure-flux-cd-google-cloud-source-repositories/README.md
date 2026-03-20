@@ -27,6 +27,7 @@ Enable the required API and create a repository.
 
 ```bash
 # Set environment variables
+
 export PROJECT_ID=$(gcloud config get-value project)
 
 # Enable the Cloud Source Repositories API

@@ -55,6 +55,7 @@ Let's work through a practical example. You have an orders table where the prima
 
 ```bash
 # Create a GSI on an existing table
+
 aws dynamodb update-table \
     --table-name Orders \
     --attribute-definitions \

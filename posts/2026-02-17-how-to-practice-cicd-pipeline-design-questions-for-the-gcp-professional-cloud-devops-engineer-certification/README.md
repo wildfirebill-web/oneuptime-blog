@@ -34,6 +34,7 @@ Gradually replace old instances with new ones. Zero downtime but both versions r
 
 ```yaml
 # GKE deployment with rolling update strategy
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

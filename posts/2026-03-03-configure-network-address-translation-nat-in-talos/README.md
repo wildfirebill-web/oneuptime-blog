@@ -52,6 +52,7 @@ You can inspect the NAT rules on a Talos node using a debug pod:
 
 ```bash
 # Check iptables NAT rules
+
 kubectl debug node/talos-node-1 -it --image=nicolaka/netshoot -- \
   iptables -t nat -L -n -v
 

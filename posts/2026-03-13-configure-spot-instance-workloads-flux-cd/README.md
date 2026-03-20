@@ -30,6 +30,7 @@ Ensure your spot nodes carry the right labels. Most managed Kubernetes services 
 
 ```bash
 # AWS EKS - spot nodes typically have this label
+
 kubectl get nodes -l "eks.amazonaws.com/capacityType=SPOT" --show-labels
 
 # GKE - preemptible nodes

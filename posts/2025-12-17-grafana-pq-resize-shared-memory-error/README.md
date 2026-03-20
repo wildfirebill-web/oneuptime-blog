@@ -37,6 +37,7 @@ Docker containers default to 64MB for `/dev/shm`. PostgreSQL often needs more fo
 
 ```bash
 # Check current /dev/shm size in container
+
 docker exec grafana-postgres df -h /dev/shm
 
 # Output showing default 64MB

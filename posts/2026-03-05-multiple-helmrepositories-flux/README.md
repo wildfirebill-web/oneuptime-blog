@@ -16,6 +16,7 @@ Each Helm chart publisher has its own repository. Here is a complete set of Helm
 
 ```yaml
 # Prometheus community charts for monitoring
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

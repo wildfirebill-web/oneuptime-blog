@@ -26,6 +26,7 @@ Create a WAF Web ACL with a simple rate-based rule:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

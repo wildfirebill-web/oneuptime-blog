@@ -37,12 +37,13 @@ flowchart TD
 | Resource Quota | Namespace | Total resource limits for all objects |
 | Limit Range | Namespace | Default/min/max limits per object |
 
-## Resource Quotas
+Resource Quotas
 
 ### Basic CPU and Memory Quota
 
 ```yaml
 # resource-quota-basic.yaml
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

@@ -43,6 +43,7 @@ resource "aws_rds_cluster" "aurora" {
 
 ```hcl
 # Writer instance
+
 resource "aws_rds_cluster_instance" "writer" {
   identifier         = "aurora-writer"
   cluster_identifier = aws_rds_cluster.aurora.id
@@ -107,4 +108,4 @@ output "reader_endpoint" {
 
 ## Summary
 
-Create `aws_rds_cluster` for the Aurora cluster definition, then add `aws_rds_cluster_instance` resources for writer and reader instances. Use the cluster's `endpoint` for write traffic and `reader_endpoint` for read traffic — Aurora automatically routes to the current writer and distributes reads. For variable workloads, use Serverless v2 with `instance_class = "db.serverless"`.
+Create `aws_rds_cluster` for the Aurora cluster definition, then add `aws_rds_cluster_instance` resources for writer and reader instances. Use the cluster's `endpoint` for write traffic and `reader_endpoint` for read traffic - Aurora automatically routes to the current writer and distributes reads. For variable workloads, use Serverless v2 with `instance_class = "db.serverless"`.

@@ -31,6 +31,7 @@ This guide provides the specific steps for managing identity-relevant labels in 
 set -euo pipefail
 
 # Check identity count
+
 IDS=$(cilium identity list | wc -l)
 PODS=$(kubectl get pods --all-namespaces --no-headers | wc -l)
 RATIO=$(echo "scale=2; $IDS / $PODS" | bc)

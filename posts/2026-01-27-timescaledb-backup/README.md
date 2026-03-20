@@ -45,6 +45,7 @@ For smaller TimescaleDB instances or when you need portable, human-readable back
 ```bash
 #!/bin/bash
 # timescale_logical_backup.sh
+
 # Creates a logical backup of a TimescaleDB database with proper hypertable handling
 
 # Configuration

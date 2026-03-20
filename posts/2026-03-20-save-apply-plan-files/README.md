@@ -1,4 +1,4 @@
-# How to Save and Apply Plan Files in OpenTofu
+# How to Save and Apply Plan Files in OpenTofu - Save Apply
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to save OpenTofu plan files with -out, review them, and a
 
 ## Introduction
 
-Saving plan files (`tofu plan -out`) and applying them later (`tofu apply planfile`) is one of the most important safety practices in OpenTofu. It ensures that the exact changes you reviewed are the changes that get applied — no drift can occur between the review and deployment.
+Saving plan files (`tofu plan -out`) and applying them later (`tofu apply planfile`) is one of the most important safety practices in OpenTofu. It ensures that the exact changes you reviewed are the changes that get applied - no drift can occur between the review and deployment.
 
 ## Saving a Plan
 
 ```bash
 # Save plan to a file
+
 tofu plan -out=changes.tfplan
 
 # With variables

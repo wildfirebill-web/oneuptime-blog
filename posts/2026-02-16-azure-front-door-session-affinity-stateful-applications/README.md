@@ -57,6 +57,7 @@ Let us walk through the setup using the Azure CLI. We will create a Front Door p
 
 ```bash
 # Create a resource group for the Front Door resources
+
 az group create \
   --name rg-frontdoor \
   --location eastus

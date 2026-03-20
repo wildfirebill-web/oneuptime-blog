@@ -16,6 +16,7 @@ Before configuring anything, find your wireless interface name:
 
 ```bash
 # List all network interfaces
+
 ip link show
 
 # Filter to show only wireless interfaces

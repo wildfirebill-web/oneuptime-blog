@@ -42,6 +42,7 @@ On a machine with internet access, use `terraform providers mirror` to download 
 
 ```bash
 # Download providers to a local directory
+
 terraform providers mirror /path/to/mirror
 
 # Download for specific platforms

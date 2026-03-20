@@ -87,6 +87,7 @@ The following command verifies your Ceph cluster status and MGR availability:
 
 ```bash
 # Check overall cluster health and ensure MGR daemons are running
+
 # This command provides a quick overview of cluster status
 ceph status
 

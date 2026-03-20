@@ -36,6 +36,7 @@ This sets up tag policies at the organization level and enforces them via Config
 
 ```hcl
 # Organization-level tag policy
+
 resource "aws_organizations_policy" "tagging" {
   name    = "cost-allocation-tags"
   type    = "TAG_POLICY"

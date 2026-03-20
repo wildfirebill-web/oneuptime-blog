@@ -33,6 +33,7 @@ The official extensions repository is at `github.com/siderolabs/extensions`. You
 
 ```bash
 # Clone the extensions repository to browse locally
+
 git clone https://github.com/siderolabs/extensions.git
 ls extensions/
 ```

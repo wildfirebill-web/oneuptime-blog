@@ -49,6 +49,7 @@ While Azure services like Blob Storage and Resource Groups have built-in Event G
 
 ```bash
 # Create a custom Event Grid topic
+
 az eventgrid topic create \
   --name my-app-events \
   --resource-group myResourceGroup \

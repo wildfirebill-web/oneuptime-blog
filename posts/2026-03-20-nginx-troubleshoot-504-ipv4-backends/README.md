@@ -12,7 +12,7 @@ A 504 Gateway Timeout means Nginx connected to the upstream server but the backe
 
 ## Understanding Nginx Timeout Directives
 
-```
+```text
 Client ──→ Nginx ──→ Backend
            │          │
            │──proxy_connect_timeout──▶ TCP connect established
@@ -31,6 +31,7 @@ Check the error log for the specific timeout type:
 sudo tail -f /var/log/nginx/error.log
 
 # 504 indicators:
+
 # upstream timed out (110: Connection timed out) while reading response header
 # upstream timed out (110: Connection timed out) while sending request to upstream
 # upstream timed out (60: Operation timed out) while reading upstream
@@ -70,7 +71,7 @@ server {
     location / {
         proxy_pass http://slow_backend;
 
-        # Time to establish TCP connection (default 60s — usually fine)
+        # Time to establish TCP connection (default 60s - usually fine)
         proxy_connect_timeout 10s;
 
         # Time to send the full request body (increase for large uploads)
@@ -146,4 +147,4 @@ location /jobs {
 
 ## Conclusion
 
-504 Gateway Timeout in Nginx is always a backend performance issue—the connection succeeded but the response was too slow. Start by measuring actual backend response times directly, then tune `proxy_read_timeout` to match realistic maximums. Instrument your access logs with `$upstream_response_time` to identify problematic endpoints, and fix slow database queries or resource contention at the backend level for a permanent solution.
+504 Gateway Timeout in Nginx is always a backend performance issue-the connection succeeded but the response was too slow. Start by measuring actual backend response times directly, then tune `proxy_read_timeout` to match realistic maximums. Instrument your access logs with `$upstream_response_time` to identify problematic endpoints, and fix slow database queries or resource contention at the backend level for a permanent solution.

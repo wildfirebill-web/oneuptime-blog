@@ -26,6 +26,7 @@ A typical small setup has one or two lighthouses with public IPs, and many regul
 
 ```bash
 # Download the latest Nebula release for Linux amd64
+
 # Check https://github.com/slackhq/nebula/releases for the latest version
 curl -LO https://github.com/slackhq/nebula/releases/download/v1.9.0/nebula-linux-amd64.tar.gz
 

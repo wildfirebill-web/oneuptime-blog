@@ -296,6 +296,7 @@ OpenSearch publishes many metrics to CloudWatch. Set up alarms on the critical o
 
 ```bash
 # Alert on cluster health
+
 aws cloudwatch put-metric-alarm \
   --alarm-name opensearch-cluster-red \
   --metric-name ClusterStatus.red \

@@ -26,6 +26,7 @@ Karpenter needs two IAM roles: one for the Karpenter controller pod, and one for
 
 ```hcl
 # Data sources for the EKS cluster
+
 data "aws_eks_cluster" "cluster" {
   name = var.cluster_name
 }

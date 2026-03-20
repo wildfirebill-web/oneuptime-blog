@@ -53,6 +53,7 @@ Start by mapping your organizational domains to GCP projects and BigQuery datase
 
 ```bash
 # Create projects for each domain
+
 gcloud projects create orders-domain-prod --name="Orders Domain"
 gcloud projects create payments-domain-prod --name="Payments Domain"
 gcloud projects create customers-domain-prod --name="Customer Domain"

@@ -31,6 +31,7 @@ Validate that calicoctl can reach all etcd endpoints at the network level:
 ```bash
 #!/bin/bash
 # validate-etcd-network.sh
+
 # Validates network connectivity to all etcd endpoints
 
 set -euo pipefail

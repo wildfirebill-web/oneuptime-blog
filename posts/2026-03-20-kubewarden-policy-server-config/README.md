@@ -1,4 +1,4 @@
-# How to Configure Kubewarden Policy Server
+# How to Configure Kubewarden Policy Server - Config
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,7 +14,7 @@ The Kubewarden Policy Server is the component that runs WebAssembly policies and
 
 ## Policy Server Architecture
 
-```
+```text
 ┌─────────────────────────────────────────────┐
 │           Kubernetes Cluster                │
 │                                             │
@@ -38,6 +38,7 @@ The Kubewarden Policy Server is the component that runs WebAssembly policies and
 
 ```bash
 # Check the default policy server
+
 kubectl get policyserver -n kubewarden
 
 # Describe for full configuration
@@ -272,5 +273,5 @@ curl http://localhost:8080/metrics | grep kubewarden
 ## Best Practices
 
 - Run at least 2 replicas of the Policy Server in production and configure pod anti-affinity to spread replicas across nodes.
-- Create separate Policy Servers for security-critical policies vs. general policies — this isolates performance issues and lets you apply different resource limits.
+- Create separate Policy Servers for security-critical policies vs. general policies - this isolates performance issues and lets you apply different resource limits.
 - Enable JSON logging and send logs to your centralized log aggregation system to maintain an audit trail of all admission decisions.

@@ -29,6 +29,7 @@ Before any policy changes, establish a traffic baseline using Calico flow logs:
 
 ```bash
 # Enable flow logging in Felix
+
 kubectl patch felixconfiguration default --type=merge -p '{"spec":{"flowLogsEnabled":true}}'
 
 # Review logs after 24 hours

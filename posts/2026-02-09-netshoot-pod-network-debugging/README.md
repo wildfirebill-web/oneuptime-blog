@@ -24,6 +24,7 @@ The simplest way to use netshoot is deploying it as a standalone debugging pod:
 
 ```bash
 # Create a netshoot pod
+
 kubectl run netshoot --rm -it --image=nicolaka/netshoot -- bash
 
 # You get an interactive shell with all tools available

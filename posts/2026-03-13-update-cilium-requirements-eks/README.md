@@ -30,6 +30,7 @@ Cilium supports specific Kubernetes version ranges. Verify your EKS cluster vers
 
 ```bash
 # Check current EKS cluster version
+
 aws eks describe-cluster \
   --name <cluster-name> \
   --region <region> \

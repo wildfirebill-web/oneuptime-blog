@@ -40,6 +40,7 @@ Set these environment variables in your deployment manifests:
 
 ```yaml
 # kubernetes deployment for the canary version
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

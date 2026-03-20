@@ -22,6 +22,7 @@ For quick benchmarks of small code snippets, use `timeit`:
 import timeit
 
 # Time a simple expression
+
 time_taken = timeit.timeit('sum(range(1000))', number=10000)
 print(f"Time: {time_taken:.4f} seconds for 10000 iterations")
 

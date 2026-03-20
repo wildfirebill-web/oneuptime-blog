@@ -41,6 +41,7 @@ flowchart TD
 
 ```yaml
 # roles/fips-enable/tasks/main.yaml
+
 ---
 - name: Check if FIPS is already enabled
   command: fips-mode-setup --check

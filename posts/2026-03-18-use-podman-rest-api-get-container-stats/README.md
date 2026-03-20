@@ -255,6 +255,7 @@ Common error scenarios when fetching stats:
 
 ```bash
 # Container not found
+
 curl -s -o /dev/null -w "%{http_code}" --unix-socket /run/podman/podman.sock \
   "http://localhost/v4.0.0/libpod/containers/stats?stream=false&containers=nonexistent"
 # Returns: 404

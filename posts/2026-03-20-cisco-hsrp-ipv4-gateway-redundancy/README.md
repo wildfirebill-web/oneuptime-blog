@@ -13,7 +13,7 @@ HSRP creates a virtual IP gateway shared between two or more routers. End hosts 
 ## Basic HSRP Configuration (Two Routers)
 
 ```cisco
-! === Router 1 (becomes Active — higher priority) ===
+! === Router 1 (becomes Active - higher priority) ===
 interface GigabitEthernet0/0
  description LAN-Segment
  ip address 10.1.10.2 255.255.255.0
@@ -56,7 +56,7 @@ show standby brief
 
 ```cisco
 ! Use different groups for different VLANs
-! Router 1 — Active for VLAN 10, Standby for VLAN 20
+! Router 1 - Active for VLAN 10, Standby for VLAN 20
 interface GigabitEthernet0/0.10
  encapsulation dot1Q 10
  ip address 10.1.10.2 255.255.255.0
@@ -71,7 +71,7 @@ interface GigabitEthernet0/0.20
  standby 20 priority 90       ! Standby for VLAN 20
  standby 20 preempt
 
-! Router 2 — mirror priorities (Active for VLAN 20)
+! Router 2 - mirror priorities (Active for VLAN 20)
 interface GigabitEthernet0/0.10
  standby 10 priority 90
 interface GigabitEthernet0/0.20

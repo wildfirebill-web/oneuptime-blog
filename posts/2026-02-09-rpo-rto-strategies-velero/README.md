@@ -47,6 +47,7 @@ For tighter RPO requirements, increase frequency:
 
 ```yaml
 # RPO 1 hour - hourly backups
+
 apiVersion: velero.io/v1
 kind: Schedule
 metadata:

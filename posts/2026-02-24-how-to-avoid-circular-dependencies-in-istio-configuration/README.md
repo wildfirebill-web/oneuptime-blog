@@ -20,6 +20,7 @@ The simplest case:
 
 ```yaml
 # Service A sends /api requests to Service B
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

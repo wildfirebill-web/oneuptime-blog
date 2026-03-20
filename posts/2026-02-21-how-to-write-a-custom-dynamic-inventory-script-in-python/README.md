@@ -151,6 +151,7 @@ Make it executable and test it:
 
 ```bash
 # Make the script executable
+
 chmod +x inventory.py
 
 # Test the --list output

@@ -20,6 +20,7 @@ The installation depends on your operating system.
 
 ```bash
 # macOS (using Homebrew)
+
 brew tap azure/azd && brew install azd
 
 # Linux (using the install script)

@@ -13,7 +13,7 @@ The GCS (Google Cloud Storage) backend stores OpenTofu state in a GCS bucket. It
 ## Step 1: Create the GCS Bucket
 
 ```hcl
-# bootstrap/main.tf — Run once to create state storage
+# bootstrap/main.tf - Run once to create state storage
 
 provider "google" {
   project = "my-project"
@@ -51,6 +51,7 @@ resource "google_storage_bucket" "terraform_state" {
 }
 
 # Prevent public access
+
 resource "google_storage_bucket_iam_binding" "prevent_public_access" {
   bucket = google_storage_bucket.terraform_state.name
   role   = "roles/storage.objectViewer"
@@ -77,7 +78,7 @@ terraform {
 
 The `prefix` parameter creates a directory structure within the bucket:
 
-```
+```text
 GCS bucket: my-terraform-state-bucket
 ├── prod/default.tfstate          ← production, default workspace
 ├── networking/default.tfstate    ← networking stack
@@ -87,7 +88,7 @@ GCS bucket: my-terraform-state-bucket
 
 For workspaces:
 
-```
+```text
 GCS bucket:
 ├── prod/default.tfstate          ← default workspace
 ├── prod/staging.tfstate          ← staging workspace
@@ -138,7 +139,7 @@ terraform {
 
 ### Workload Identity (GKE)
 
-When running on GKE with Workload Identity, credentials are automatic — no configuration needed.
+When running on GKE with Workload Identity, credentials are automatic - no configuration needed.
 
 ## State Locking
 

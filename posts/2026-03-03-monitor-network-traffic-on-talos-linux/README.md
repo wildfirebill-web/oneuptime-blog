@@ -26,6 +26,7 @@ Start with what Talos gives you out of the box:
 
 ```bash
 # View network interfaces on a node
+
 talosctl get addresses --nodes 10.0.0.10
 
 # View routing tables

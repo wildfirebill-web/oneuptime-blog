@@ -41,6 +41,7 @@ SSH to your edge device and install K3s:
 
 ```bash
 # Basic installation (SQLite is default for single server)
+
 curl -sfL https://get.k3s.io | sh -
 
 # With custom settings for resource constraints

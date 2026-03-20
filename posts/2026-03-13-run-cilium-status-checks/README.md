@@ -26,6 +26,7 @@ Understanding what a healthy Cilium status looks like - and what warning signs t
 Get a summary of all Cilium components.
 ```bash
 # Run the top-level Cilium status check
+
 cilium status
 
 # Wait for all components to be OK (useful after install/upgrade)

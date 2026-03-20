@@ -14,6 +14,7 @@ Squid is a widely-used proxy caching server that reduces internet bandwidth usag
 
 ```yaml
 # squid-stack.yml
+
 version: "3.8"
 services:
   squid:
@@ -36,7 +37,7 @@ volumes:
 Create `/opt/squid/squid.conf`:
 
 ```conf
-# squid.conf — basic proxy cache configuration
+# squid.conf - basic proxy cache configuration
 
 # Network Access Control
 acl localnet src 172.16.0.0/12   # Docker networks
@@ -125,7 +126,7 @@ tail -f /var/log/squid/access.log
 For caching HTTPS content (requires certificate injection into clients):
 
 ```conf
-# SSL configuration (advanced — requires client trust of Squid CA cert)
+# SSL configuration (advanced - requires client trust of Squid CA cert)
 https_port 3129 intercept ssl-bump cert=/etc/squid/squid.pem
 ssl_bump server-first all
 sslcrtd_program /usr/lib/squid/security_file_certgen -s /var/lib/squid/ssl_db -M 4MB

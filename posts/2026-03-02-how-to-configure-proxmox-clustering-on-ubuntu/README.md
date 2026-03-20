@@ -36,6 +36,7 @@ On each node, ensure all nodes resolve correctly:
 
 ```bash
 # /etc/hosts on each node (add entries for all cluster members)
+
 cat >> /etc/hosts << 'EOF'
 192.168.1.101   pve1.cluster.local pve1
 192.168.1.102   pve2.cluster.local pve2

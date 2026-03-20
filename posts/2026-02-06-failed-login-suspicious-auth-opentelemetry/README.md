@@ -12,6 +12,7 @@ Failed login attempts are the earliest signal of credential-based attacks. But r
 
 ```python
 # login_metrics.py
+
 from opentelemetry import metrics, trace
 
 meter = metrics.get_meter("auth.security")

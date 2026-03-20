@@ -42,6 +42,7 @@ pip install google-api-python-client google-cloud-pubsub
 
 ```bash
 # Create a healthcare dataset if you do not have one
+
 gcloud healthcare datasets create clinical-data \
   --location=us-central1
 

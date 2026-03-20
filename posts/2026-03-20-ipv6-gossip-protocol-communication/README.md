@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Gossip Protocol, IPv6, Distributed Systems, Cluster Communication, Serf, Hashicorp
+Tags: Gossip Protocol, IPv6, Distributed Systems, Cluster Communication, Serf, HashiCorp
 
 Description: Handle IPv6 addressing in gossip protocol-based distributed systems including Consul, Cassandra, and custom gossip implementations for reliable peer communication.
 
@@ -49,6 +49,7 @@ Cassandra uses gossip for ring management:
 
 ```yaml
 # cassandra.yaml
+
 # The listen_address is what Cassandra gossips to other nodes
 listen_address: 2001:db8::1
 broadcast_address: 2001:db8::1

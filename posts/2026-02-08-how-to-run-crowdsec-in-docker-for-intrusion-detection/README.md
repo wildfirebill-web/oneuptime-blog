@@ -33,6 +33,7 @@ You need Docker and Docker Compose installed. CrowdSec itself is lightweight, us
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

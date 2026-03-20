@@ -80,6 +80,7 @@ For teams practicing GitOps, provisioning contact points through configuration f
 
 ```yaml
 # /etc/grafana/provisioning/alerting/contact-points.yaml
+
 apiVersion: 1
 
 contactPoints:

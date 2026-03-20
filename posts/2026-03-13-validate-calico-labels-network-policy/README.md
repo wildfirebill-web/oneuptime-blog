@@ -26,6 +26,7 @@ Validation should happen at three points: before applying policies (static analy
 ```python
 #!/usr/bin/env python3
 # validate-selectors.py
+
 import yaml
 import subprocess
 import sys

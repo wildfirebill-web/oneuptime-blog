@@ -20,6 +20,7 @@ Run a container with a health check:
 
 ```bash
 # Start an Nginx container with an HTTP health check
+
 docker run -d \
   --name web \
   --restart unless-stopped \

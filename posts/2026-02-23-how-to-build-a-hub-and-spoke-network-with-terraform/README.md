@@ -29,6 +29,7 @@ AWS Transit Gateway acts as a regional network router. It is the backbone of our
 
 ```hcl
 # The central transit gateway
+
 resource "aws_ec2_transit_gateway" "main" {
   description                     = "${var.project_name} transit gateway"
   default_route_table_association = "disable"

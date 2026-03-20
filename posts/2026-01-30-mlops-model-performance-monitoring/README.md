@@ -126,6 +126,7 @@ Evidently is an open-source library for ML monitoring. Here is a complete implem
 
 ```python
 # Install required packages
+
 # pip install evidently pandas scikit-learn
 
 import pandas as pd

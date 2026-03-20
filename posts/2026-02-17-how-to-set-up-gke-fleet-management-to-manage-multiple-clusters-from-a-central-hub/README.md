@@ -26,6 +26,7 @@ Register a GKE cluster to the fleet:
 
 ```bash
 # Register an existing GKE cluster with the project's fleet
+
 gcloud container clusters update production-us \
   --zone us-central1-a \
   --fleet-project=my-project

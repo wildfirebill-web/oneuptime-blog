@@ -26,6 +26,7 @@ graph TD
 
 ```yaml
 # roles/container_volumes/tasks/named.yml
+
 # Create named volumes before deploying containers
 - name: Create application volumes
   community.docker.docker_volume:

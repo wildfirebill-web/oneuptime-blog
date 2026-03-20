@@ -27,6 +27,7 @@ Calico upgrades are required when a new Calico version adds important bug fixes,
 ```bash
 #!/bin/bash
 # pre-upgrade-calico.sh
+
 echo "=== Pre-Upgrade Calico Checklist ==="
 
 # 1. Current version

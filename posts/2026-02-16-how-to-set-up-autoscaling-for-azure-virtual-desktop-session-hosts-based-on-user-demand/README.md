@@ -45,6 +45,7 @@ The AVD autoscaling service needs permission to start and stop your session host
 
 ```bash
 # Get the Azure Virtual Desktop service principal object ID
+
 # The app ID for AVD is: 9cdead84-a844-4324-93f2-b2e6bb768d07
 AVD_SP_ID=$(az ad sp show --id "9cdead84-a844-4324-93f2-b2e6bb768d07" --query "id" --output tsv)
 

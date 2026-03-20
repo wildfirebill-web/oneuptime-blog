@@ -63,6 +63,7 @@ Instead of destroying everything, target only the resources you want to remove:
 
 ```bash
 # Destroy only specific resources
+
 terraform destroy -target=aws_instance.web
 terraform destroy -target=aws_instance.worker
 terraform destroy -target=module.application

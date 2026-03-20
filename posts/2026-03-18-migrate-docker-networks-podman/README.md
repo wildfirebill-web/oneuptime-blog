@@ -20,6 +20,7 @@ Before migrating, understand the key differences between Docker and Podman netwo
 
 ```bash
 # Check which network backend Podman uses
+
 podman info | grep networkBackend
 # Output: networkBackend: netavark (or cni)
 

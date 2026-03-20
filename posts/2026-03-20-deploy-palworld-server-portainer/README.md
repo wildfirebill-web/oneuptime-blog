@@ -14,6 +14,7 @@ Palworld is a creature-collecting survival game that took the gaming world by st
 
 ```yaml
 # palworld-stack.yml
+
 version: "3.8"
 
 services:

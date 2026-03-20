@@ -27,7 +27,7 @@ graph TD
 Kea is widely used in ISP environments for its performance and scalability:
 
 ```json
-// /etc/kea/kea-dhcp6.conf — ISP Delegating Router
+// /etc/kea/kea-dhcp6.conf - ISP Delegating Router
 {
   "Dhcp6": {
     "interfaces-config": {
@@ -65,7 +65,7 @@ Kea is widely used in ISP environments for its performance and scalability:
 
 Cisco Broadband Network Gateways use RADIUS-integrated DHCPv6 PD:
 
-```
+```text
 ! Define the local DHCPv6 prefix pool
 ipv6 local pool ISP-PD-POOL 2001:db8:1000::/36 56
 
@@ -83,8 +83,9 @@ interface GigabitEthernet0/0/0
 
 ## Juniper MX Delegating Router
 
-```
-# Juniper MX — DHCPv6 prefix delegation configuration
+```text
+# Juniper MX - DHCPv6 prefix delegation configuration
+
 set access address-assignment pool CUSTOMER_PD family inet6
 set access address-assignment pool CUSTOMER_PD family inet6 prefix 2001:db8:1000::/36
 set access address-assignment pool CUSTOMER_PD family inet6 prefix-length 56
@@ -97,9 +98,9 @@ set system services dhcp-local-server dhcpv6 group SUBSCRIBERS interface ge-0/0/
 
 | Allocation Size | Use Case |
 |-----------------|----------|
-| **/48** | Business customers — allows 65,536 /64 subnets |
-| **/56** | Residential with multiple segments — 256 /64 subnets |
-| **/60** | Minimal residential — 16 /64 subnets |
+| **/48** | Business customers - allows 65,536 /64 subnets |
+| **/56** | Residential with multiple segments - 256 /64 subnets |
+| **/60** | Minimal residential - 16 /64 subnets |
 | **/64** | Single-segment residential (not recommended) |
 
 ARIN and RIPE both recommend at minimum /56 for residential customers.

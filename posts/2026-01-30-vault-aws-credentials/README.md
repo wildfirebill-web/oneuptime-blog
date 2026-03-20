@@ -41,6 +41,7 @@ Before configuring the AWS secrets engine, you need:
 
 ```bash
 # Verify Vault is accessible
+
 vault status
 
 # Authenticate to Vault (example using token)

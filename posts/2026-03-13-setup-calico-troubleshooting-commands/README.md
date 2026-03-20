@@ -22,6 +22,7 @@ Having the right troubleshooting commands ready before an incident is the differ
 
 ```bash
 # Install calicoctl matching your Calico version
+
 CALICO_VERSION=$(kubectl get installation default \
   -o jsonpath='{.spec.variant}' 2>/dev/null || echo "v3.27.0")
 

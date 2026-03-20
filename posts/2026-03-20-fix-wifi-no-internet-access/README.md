@@ -1,10 +1,10 @@
-# How to Fix IPv4 Connectivity Showing "No Internet Access" on WiFi
+# How to Fix IPv4 Connectivity Showing 'No Internet Access' on WiFi
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: WiFi, Windows, No Internet, IPv4, Troubleshooting, DHCP
 
-Description: Learn how to fix the "No Internet Access" warning on Windows WiFi when you have an IP address but cannot reach the internet, covering DNS, gateway, and routing issues.
+Description: Learn how to fix the 'No Internet Access' warning on Windows WiFi when you have an IP address but cannot reach the internet, covering DNS, gateway, and routing issues.
 
 ## Understanding the "No Internet Access" Warning
 
@@ -56,6 +56,7 @@ If DNS resolution fails:
 
 ```powershell
 # Change DNS to Google's public DNS
+
 Set-DnsClientServerAddress -InterfaceAlias "Wi-Fi" -ServerAddresses 8.8.8.8, 8.8.4.4
 
 # Or use Cloudflare

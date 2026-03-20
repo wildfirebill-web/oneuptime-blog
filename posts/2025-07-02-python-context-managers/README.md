@@ -24,6 +24,7 @@ Without context managers, resource handling looks like this:
 
 ```python
 # BAD: Manual resource management - error prone
+
 file = open('data.txt', 'r')
 try:
     content = file.read()
@@ -42,7 +43,7 @@ with open('data.txt', 'r') as file:
 # File is automatically closed, even if process_data() raises an exception
 ```
 
-### Resource Lifecycle with Context Managers
+Resource Lifecycle with Context Managers
 
 ```mermaid
 flowchart TB

@@ -26,6 +26,7 @@ sudo usermod -aG docker pi
 
 ```bash
 # Create the volume
+
 docker volume create portainer_data
 
 # Deploy Portainer (ARM-compatible)

@@ -1,4 +1,4 @@
-# How to Automate Portainer User Onboarding
+# How to Automate Portainer User Onboarding - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -212,6 +212,7 @@ if __name__ == '__main__':
 ```bash
 #!/bin/bash
 # bulk-onboard.sh
+
 # CSV format: username,email,team,env_ids(;separated)
 
 CSV_FILE="${1:-users.csv}"

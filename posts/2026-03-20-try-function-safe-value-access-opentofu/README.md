@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, try Function, Error Handling, HCL, Infrastructure as Code
+Tags: OpenTofu, Try Function, Error Handling, HCL, Infrastructure as Code
 
 Description: Learn how to use OpenTofu's try function to safely access values that might cause errors, providing fallbacks when expressions fail.
 
@@ -12,6 +12,7 @@ The `try` function evaluates a sequence of expressions and returns the value of 
 
 ```hcl
 # try(expression1, expression2, ..., fallback)
+
 # Returns the first expression that succeeds, or the last value as a fallback.
 try(some_expression, fallback_value)
 ```
@@ -112,7 +113,7 @@ locals {
 
 ## What try Does NOT Cover
 
-`try` only catches *evaluation errors* — type errors, missing keys, null dereferences. It does not:
+`try` only catches *evaluation errors* - type errors, missing keys, null dereferences. It does not:
 - Catch errors from provider API calls.
 - Suppress validation errors from variable type constraints.
 - Handle errors in `provisioner` or `connection` blocks.
@@ -125,7 +126,7 @@ For map key access specifically, `lookup` is often cleaner and more explicit:
 # lookup is explicit about what it does
 local.value = lookup(var.config_map, "key", "default")
 
-# try is more general — works for any expression
+# try is more general - works for any expression
 local.value = try(var.config_map["key"], "default")
 ```
 

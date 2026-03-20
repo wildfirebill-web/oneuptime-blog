@@ -22,6 +22,7 @@ Start by cataloging all OpenShift-specific resources in your cluster:
 
 ```bash
 # Export all OpenShift Routes
+
 oc get routes --all-namespaces -o yaml > openshift-routes.yaml
 
 # Export BuildConfigs

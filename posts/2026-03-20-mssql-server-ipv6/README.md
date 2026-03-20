@@ -12,7 +12,7 @@ Microsoft SQL Server supports IPv6 natively on Windows. Enabling IPv6 connection
 
 ## Configuring SQL Server for IPv6
 
-```
+```text
 SQL Server Configuration Manager:
 
 1. Open SQL Server Configuration Manager
@@ -42,6 +42,7 @@ SQL Server Configuration Manager:
 
 ```powershell
 # Enable SQL Server Browser service for named instances
+
 Set-Service -Name 'SQLBrowser' -StartupType Automatic
 Start-Service -Name 'SQLBrowser'
 
@@ -141,7 +142,7 @@ sqlcmd -S "tcp:[2001:db8::sql-server],1433" -U sa -P password
 
 ## Always On Availability Groups over IPv6
 
-```
+```text
 For SQL Server Always On AG with IPv6:
 
 1. Listener DNS name must have AAAA record:

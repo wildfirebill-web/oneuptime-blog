@@ -31,6 +31,7 @@ On both the source and target hosts, verify Podman and CRIU are installed and wo
 
 ```bash
 # Run on both hosts
+
 podman --version
 criu --version
 sudo criu check

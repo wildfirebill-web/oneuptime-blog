@@ -30,6 +30,7 @@ The following YAML defines three stages: Build, DeployStaging, and DeployProduct
 
 ```yaml
 # azure-pipelines.yml - Multi-stage pipeline with three environments
+
 trigger:
   branches:
     include:

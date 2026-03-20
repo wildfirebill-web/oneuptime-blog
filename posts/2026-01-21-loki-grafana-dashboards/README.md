@@ -768,6 +768,7 @@ Ensure all panels use the same time range variables:
 
 ```logql
 # Good - uses label matcher
+
 {service="api-server"} |= "error"
 
 # Less efficient - parses all logs first

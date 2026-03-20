@@ -32,6 +32,7 @@ Install using Helm:
 
 ```bash
 # Add Volcano Helm repository
+
 helm repo add volcano-sh https://volcano-sh.github.io/helm-charts
 helm repo update
 
@@ -389,7 +390,7 @@ spec:
               cpu: "8"
 ```
 
-## Resource Reservation and Quotas
+Resource Reservation and Quotas
 
 Set queue resource limits:
 

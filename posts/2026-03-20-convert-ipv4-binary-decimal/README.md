@@ -25,7 +25,7 @@ Full binary: `11000000.10101000.00001010.00000101`
 
 Each bit position has a positional value (128, 64, 32, 16, 8, 4, 2, 1):
 
-```
+```text
 Bit positions: 128  64  32  16   8   4   2   1
 Binary:          1   1   0   0   0   0   0   0
                 128+ 64+  0+  0+  0+  0+  0+  0 = 192
@@ -56,6 +56,7 @@ def int_to_ipv4(n: int) -> str:
     return socket.inet_ntoa(struct.pack("!I", n))
 
 # Examples
+
 ip = "192.168.10.5"
 binary = ipv4_to_binary(ip)
 print(f"{ip} -> {binary}")

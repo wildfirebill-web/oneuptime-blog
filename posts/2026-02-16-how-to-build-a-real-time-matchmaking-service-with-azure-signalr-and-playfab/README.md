@@ -33,6 +33,7 @@ SignalR Service handles the WebSocket connections to your game clients. For matc
 
 ```bash
 # Create the SignalR Service
+
 az signalr create \
   --name game-matchmaking-signalr \
   --resource-group gaming-rg \

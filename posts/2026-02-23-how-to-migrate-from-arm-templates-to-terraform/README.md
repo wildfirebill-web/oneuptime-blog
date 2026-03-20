@@ -24,6 +24,7 @@ List all deployments and their resources:
 
 ```bash
 # List deployments in a resource group
+
 az deployment group list \
   --resource-group my-rg \
   --query '[].{Name:name,State:properties.provisioningState,Timestamp:properties.timestamp}' \

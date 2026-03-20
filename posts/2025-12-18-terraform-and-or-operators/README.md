@@ -121,6 +121,7 @@ variable "create_nat_gateway" {
 }
 
 # Create NAT gateway only if both VPC and NAT gateway are requested
+
 resource "aws_nat_gateway" "main" {
   count = var.create_vpc && var.create_nat_gateway ? 1 : 0
 

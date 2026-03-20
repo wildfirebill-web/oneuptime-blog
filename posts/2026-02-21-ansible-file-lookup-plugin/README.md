@@ -26,6 +26,7 @@ Here is the simplest use case: reading a file and using its contents in a task.
 
 ```yaml
 # basic_file_lookup.yml - Read a local file and deploy it
+
 ---
 - name: Deploy SSH public key from local file
   hosts: all

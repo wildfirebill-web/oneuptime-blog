@@ -18,6 +18,7 @@ The simplest and most performant approach uses a dedicated `server` block for po
 # /etc/nginx/conf.d/example.com.conf
 
 # HTTP - redirect to HTTPS
+
 server {
     listen 80;
     listen [::]:80;   # Also listen on IPv6

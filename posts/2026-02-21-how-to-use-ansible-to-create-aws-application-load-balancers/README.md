@@ -24,6 +24,7 @@ You will need:
 
 ```bash
 # Install dependencies
+
 ansible-galaxy collection install amazon.aws
 pip install boto3 botocore
 ```

@@ -14,6 +14,7 @@ Apache2 is the most widely deployed web server on the internet. On Ubuntu, it's 
 
 ```bash
 # Update package list
+
 sudo apt update
 
 # Install Apache2

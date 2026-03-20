@@ -18,6 +18,7 @@ These commands show how to find and measure container log files. Without limits,
 
 ```bash
 # Find the log file location for a container
+
 docker inspect --format='{{.LogPath}}' mycontainer
 # /var/lib/docker/containers/<id>/<id>-json.log
 

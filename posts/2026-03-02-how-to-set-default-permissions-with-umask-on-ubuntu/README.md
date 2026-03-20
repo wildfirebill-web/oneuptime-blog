@@ -25,6 +25,7 @@ This is the standard Ubuntu default and it works well for most desktop and serve
 
 ```bash
 # Show umask in octal notation
+
 umask
 
 # Show umask in symbolic notation (more human-readable)

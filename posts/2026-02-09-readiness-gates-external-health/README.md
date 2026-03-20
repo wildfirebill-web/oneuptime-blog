@@ -219,6 +219,7 @@ if [ -z "$NAMESPACE" ] || [ -z "$DEPLOYMENT" ]; then
 fi
 
 # Get all pods for deployment
+
 PODS=$(kubectl get pods -n $NAMESPACE -l app=$DEPLOYMENT -o name)
 
 echo "Pods pending approval:"

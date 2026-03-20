@@ -77,6 +77,7 @@ The deployment manifest defines how your application runs in the cluster. Notice
 
 ```yaml
 # k8s/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

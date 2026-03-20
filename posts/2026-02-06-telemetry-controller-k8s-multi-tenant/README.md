@@ -14,6 +14,7 @@ First, define a CRD that represents a tenant's observability configuration:
 
 ```yaml
 # crd-telemetry-tenant.yaml
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

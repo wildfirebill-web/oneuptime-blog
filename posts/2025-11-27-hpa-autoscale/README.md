@@ -16,6 +16,7 @@ The HPA depends on real-time CPU and memory metrics. These commands verify that 
 
 ```bash
 # Check if metrics-server is deployed in the kube-system namespace
+
 kubectl get deployment metrics-server -n kube-system
 # Display CPU and memory usage for all nodes
 kubectl top nodes

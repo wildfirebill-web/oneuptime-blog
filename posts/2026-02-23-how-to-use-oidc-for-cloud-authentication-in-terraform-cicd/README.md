@@ -28,6 +28,7 @@ The result is that your pipeline gets temporary credentials scoped to exactly wh
 
 ```hcl
 # oidc.tf - Set up GitHub as an OIDC provider in AWS
+
 resource "aws_iam_openid_connect_provider" "github" {
   url = "https://token.actions.githubusercontent.com"
 

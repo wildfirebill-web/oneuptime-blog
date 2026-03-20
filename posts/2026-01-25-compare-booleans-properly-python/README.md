@@ -16,6 +16,7 @@ Many developers, especially those coming from other languages, write boolean com
 
 ```python
 # Overly verbose - do not do this
+
 if is_valid == True:
     process()
 

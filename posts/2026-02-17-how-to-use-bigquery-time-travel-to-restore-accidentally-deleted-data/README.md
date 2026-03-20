@@ -116,6 +116,7 @@ If someone dropped a table entirely using DROP TABLE, you can recover it using t
 
 ```bash
 # Recover a dropped table using bq cp with a time travel decorator
+
 # The @0 suffix means "at the time of deletion"
 bq cp \
   my_project:analytics.events@1708099200000 \

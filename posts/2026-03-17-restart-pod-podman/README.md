@@ -18,6 +18,7 @@ Sometimes you need to cycle all containers in a pod without tearing it down. The
 
 ```bash
 # Restart a pod by name
+
 podman pod restart my-pod
 
 # Verify the pod is running again

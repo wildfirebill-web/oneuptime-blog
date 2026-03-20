@@ -20,6 +20,7 @@ AWS Client VPN is a managed OpenVPN-based service that enables employees to secu
 
 ```hcl
 # Server certificate for Client VPN
+
 # Note: For mutual TLS, both server and client certs must be imported to ACM
 # This typically requires generating certs with easy-rsa or similar tools
 
@@ -156,4 +157,4 @@ aws ec2 export-client-vpn-client-configuration \
 
 ## Conclusion
 
-Enable `split_tunnel = true` unless you need to route all internet traffic through the VPN—split tunnel reduces VPN bandwidth requirements and improves performance for internet access. Configure `session_timeout_hours` to force periodic re-authentication, improving security. Log all connections to CloudWatch to maintain an audit trail of who connected when and from where.
+Enable `split_tunnel = true` unless you need to route all internet traffic through the VPN-split tunnel reduces VPN bandwidth requirements and improves performance for internet access. Configure `session_timeout_hours` to force periodic re-authentication, improving security. Log all connections to CloudWatch to maintain an audit trail of who connected when and from where.

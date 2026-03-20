@@ -18,6 +18,7 @@ The community.docker collection provides modules for all Docker operations.
 
 ```bash
 # Install the Docker collection
+
 ansible-galaxy collection install community.docker
 
 # Install Python Docker SDK (required by modules)

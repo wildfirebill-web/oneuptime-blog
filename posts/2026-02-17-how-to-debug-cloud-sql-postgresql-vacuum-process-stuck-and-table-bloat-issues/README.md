@@ -170,6 +170,7 @@ Cloud SQL's default autovacuum settings are often too conservative for high-writ
 
 ```bash
 # Check current autovacuum settings
+
 gcloud sql instances describe my-instance \
     --format="json(settings.databaseFlags)" \
     --project=my-project

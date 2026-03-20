@@ -8,12 +8,13 @@ Description: Learn how to pass provider configurations to child modules in OpenT
 
 ## Introduction
 
-By default, child modules inherit the provider configurations from their parent (root) module. However, when you need a module to use a specific provider alias — for multi-region or multi-account deployments — you must explicitly pass the provider using the `providers` argument.
+By default, child modules inherit the provider configurations from their parent (root) module. However, when you need a module to use a specific provider alias - for multi-region or multi-account deployments - you must explicitly pass the provider using the `providers` argument.
 
 ## Default Provider Inheritance
 
 ```hcl
-# Root module — default provider
+# Root module - default provider
+
 provider "aws" {
   region = "us-east-1"
 }
@@ -21,7 +22,7 @@ provider "aws" {
 # Child module inherits the default provider automatically
 module "vpc" {
   source = "./modules/vpc"
-  # No providers argument needed — inherits default aws provider
+  # No providers argument needed - inherits default aws provider
 }
 ```
 
@@ -57,7 +58,7 @@ terraform {
   }
 }
 
-# modules/vpc/main.tf — declare provider in resource
+# modules/vpc/main.tf - declare provider in resource
 resource "aws_vpc" "this" {
   provider   = aws  # uses the passed-in provider
   cidr_block = var.cidr_block

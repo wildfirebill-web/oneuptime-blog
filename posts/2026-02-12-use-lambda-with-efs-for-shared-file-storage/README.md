@@ -52,6 +52,7 @@ First, create the EFS file system and mount targets:
 
 ```bash
 # Create the EFS file system
+
 aws efs create-file-system \
   --performance-mode generalPurpose \
   --throughput-mode bursting \

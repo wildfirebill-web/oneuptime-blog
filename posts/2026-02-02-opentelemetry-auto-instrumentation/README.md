@@ -123,6 +123,7 @@ Use the Node.js `--require` flag to load instrumentation before your application
 
 ```bash
 # Using the require flag ensures instrumentation loads first
+
 node --require ./instrumentation.js app.js
 
 # Or set it via NODE_OPTIONS environment variable

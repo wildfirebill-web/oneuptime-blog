@@ -16,6 +16,7 @@ The first instinct is to put everything in one inventory file with environment-b
 
 ```ini
 # inventory/hosts.ini - this gets messy fast
+
 [webservers_dev]
 dev-web01 ansible_host=10.1.1.10
 

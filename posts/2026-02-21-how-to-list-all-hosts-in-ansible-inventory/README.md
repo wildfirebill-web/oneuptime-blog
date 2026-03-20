@@ -16,6 +16,7 @@ The `ansible-inventory` command is the primary tool for inspecting inventory. Th
 
 ```bash
 # List all hosts and groups as JSON
+
 ansible-inventory -i inventory.ini --list
 ```
 

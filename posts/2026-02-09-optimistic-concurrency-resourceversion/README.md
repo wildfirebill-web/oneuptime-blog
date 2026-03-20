@@ -33,6 +33,7 @@ When you update a resource, Kubernetes checks if the `resourceVersion` in your u
 
 ```bash
 # View resourceVersion in any resource
+
 kubectl get deployment nginx -o yaml | grep resourceVersion
 
 # Output:

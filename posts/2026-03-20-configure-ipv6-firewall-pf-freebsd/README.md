@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, FreeBSD, pf, Firewall, Network Security
+Tags: IPv6, FreeBSD, Pf, Firewall, Network Security
 
 Description: Learn how to configure IPv6 firewall rules using pf (Packet Filter) on FreeBSD, including allowing essential ICMPv6 traffic and creating rules for IPv6 services.
 
@@ -10,6 +10,7 @@ Description: Learn how to configure IPv6 firewall rules using pf (Packet Filter)
 
 ```bash
 # Enable pf in /etc/rc.conf
+
 cat >> /etc/rc.conf << 'EOF'
 pf_enable="YES"
 pf_rules="/etc/pf.conf"
@@ -136,4 +137,4 @@ pfctl -s info
 
 ## Summary
 
-Configure IPv6 firewall rules in pf with `inet6` keyword in rules. Always allow essential ICMPv6 types (unreach, toobig, timex, neighbrsol, neighbradv, routersol, routeradv) — blocking them breaks IPv6 NDP and PMTUD. Block specific hosts with `block in quick inet6 from <address>`, allow subnets with `pass in inet6 from <prefix>`. Check syntax with `pfctl -nf /etc/pf.conf` before loading rules.
+Configure IPv6 firewall rules in pf with `inet6` keyword in rules. Always allow essential ICMPv6 types (unreach, toobig, timex, neighbrsol, neighbradv, routersol, routeradv) - blocking them breaks IPv6 NDP and PMTUD. Block specific hosts with `block in quick inet6 from <address>`, allow subnets with `pass in inet6 from <prefix>`. Check syntax with `pfctl -nf /etc/pf.conf` before loading rules.

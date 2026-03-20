@@ -66,6 +66,7 @@ nagios/
 
 ```yaml
 # roles/nagios_server/defaults/main.yml
+
 nagios_version: "4.4.14"
 nagios_plugins_version: "2.4.8"
 

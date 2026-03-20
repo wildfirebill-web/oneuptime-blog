@@ -18,6 +18,7 @@ Terraform delivers value across multiple dimensions. Each needs to be measured a
 
 ```yaml
 # roi/value-categories.yaml
+
 # Categories of value delivered by Terraform
 
 categories:

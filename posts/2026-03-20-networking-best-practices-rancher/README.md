@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Networking, CNI, Network Policies, Calico, Security, Kubernetes
 
-Description: Implement networking best practices in Rancher including CNI selection, network policy enforcement, service mesh considerations, ingress configuration, and DNS management for production Kubernetes deployments.
+Description: Implement networking best practices in Rancher including CNI selection, network policy enforcement, service mesh considerations, ingress configuration, and DNS management for production Kubernetes...
 
 ## Introduction
 
@@ -22,6 +22,7 @@ Network architecture in Rancher clusters affects performance, security, and oper
 
 ```yaml
 # Calico VXLAN configuration for cloud deployments
+
 apiVersion: operator.tigera.io/v1
 kind: Installation
 metadata:

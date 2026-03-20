@@ -21,6 +21,7 @@ fdisk is one of the oldest disk partitioning tools on Linux and it still works p
 
 ```bash
 # List all block devices
+
 lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT
 
 # Check if the disk has any existing partition table

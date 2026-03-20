@@ -77,6 +77,7 @@ Create a controller to handle incoming webhooks:
 
 ```ruby
 # app/controllers/webhooks_controller.rb
+
 class WebhooksController < ApplicationController
   # Skip CSRF protection for webhook endpoints
   # Webhooks come from external services without Rails CSRF tokens

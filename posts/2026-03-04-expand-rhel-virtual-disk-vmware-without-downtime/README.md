@@ -23,6 +23,7 @@ Note: The VM does not need to be powered off for this step.
 
 ```bash
 # Tell the kernel to rescan the SCSI bus to detect the new disk size
+
 echo 1 | sudo tee /sys/class/scsi_device/*/device/rescan
 
 # Verify the new size is detected

@@ -22,6 +22,7 @@ Robot accounts in Harbor are purpose-built for automated access. They can be sco
 
 ```bash
 # Using Harbor API to create a robot account
+
 curl -X POST \
   -H "Content-Type: application/json" \
   -u "admin:Harbor12345" \

@@ -33,6 +33,7 @@ Verify rsyslog is installed and running:
 
 ```bash
 # Check rsyslog version
+
 rsyslogd -v
 
 # Check service status

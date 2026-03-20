@@ -36,6 +36,7 @@ The simplest approach is deploying the entire stack as one ArgoCD application:
 
 ```yaml
 # monitoring/application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

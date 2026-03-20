@@ -50,6 +50,7 @@ In the CloudWatch console:
 
 ```bash
 # You can also query metrics via the CLI
+
 aws cloudwatch list-metrics \
   --namespace "AWS/AmplifyHosting" \
   --dimensions Name=App,Value=d1234abcde

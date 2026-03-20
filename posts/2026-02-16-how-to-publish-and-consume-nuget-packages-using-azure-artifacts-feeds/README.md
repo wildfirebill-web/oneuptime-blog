@@ -43,6 +43,7 @@ The following commands create a simple class library with a useful extension met
 
 ```bash
 # Create a new class library project
+
 dotnet new classlib -n MyCompany.Utilities -o src/MyCompany.Utilities
 
 # Navigate to the project

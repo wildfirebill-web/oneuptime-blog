@@ -8,11 +8,11 @@ Description: Learn how to build and distribute a shared OpenTofu module library 
 
 ---
 
-A shared module library lets teams provision infrastructure using pre-approved, tested building blocks instead of writing the same patterns from scratch. Well-designed modules encode organizational standards — tagging, security defaults, naming conventions — so teams automatically comply without extra effort.
+A shared module library lets teams provision infrastructure using pre-approved, tested building blocks instead of writing the same patterns from scratch. Well-designed modules encode organizational standards - tagging, security defaults, naming conventions - so teams automatically comply without extra effort.
 
 ## Module Library Structure
 
-```
+```text
 modules/
 ├── compute/
 │   ├── ec2-instance/
@@ -33,6 +33,7 @@ modules/
 
 ```hcl
 # modules/storage/s3-bucket/main.tf
+
 variable "bucket_name" {
   type        = string
   description = "Name of the S3 bucket"
@@ -168,7 +169,7 @@ func TestS3BucketModule(t *testing.T) {
 ## Best Practices
 
 - Version all modules with semantic versioning and require callers to pin to `~> MAJOR.MINOR` to get patches automatically.
-- Encode non-negotiable standards (encryption, tagging, access controls) in module logic — don't make them optional variables.
+- Encode non-negotiable standards (encryption, tagging, access controls) in module logic - don't make them optional variables.
 - Write a `README.md` for every module using terraform-docs to auto-generate input/output documentation.
 - Test modules with Terratest or `tofu test` before releasing new versions.
-- Keep modules focused — a module for an S3 bucket should not also create IAM policies. Compose modules at the root level.
+- Keep modules focused - a module for an S3 bucket should not also create IAM policies. Compose modules at the root level.

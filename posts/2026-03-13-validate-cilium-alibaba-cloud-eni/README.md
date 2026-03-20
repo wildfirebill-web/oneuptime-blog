@@ -30,6 +30,7 @@ Confirm that Cilium is configured to use ENI mode for IP allocation.
 
 ```bash
 # Check the Cilium ConfigMap for IPAM mode
+
 kubectl -n kube-system get configmap cilium-config \
   -o jsonpath='{.data.ipam}'
 

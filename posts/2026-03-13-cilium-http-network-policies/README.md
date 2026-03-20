@@ -114,6 +114,7 @@ toPorts:
 
 ```bash
 # Test allowed request
+
 kubectl exec -n production client-pod -- \
   curl -s -o /dev/null -w "%{http_code}" http://user-service:8080/api/v1/users
 # Expected: 200

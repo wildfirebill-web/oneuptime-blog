@@ -27,6 +27,7 @@ Ensure Calico is installed with DNS policy support:
 
 ```bash
 # Check if DNS policy is enabled
+
 kubectl get felixconfiguration default -o yaml | grep DNSPolicy
 ```
 

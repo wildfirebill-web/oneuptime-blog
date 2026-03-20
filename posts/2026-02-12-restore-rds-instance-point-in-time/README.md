@@ -137,6 +137,7 @@ Look for anomalies in database metrics around the time of the incident.
 
 ```bash
 # Check write IOPS for spikes that might indicate a bad batch operation
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/RDS \
   --metric-name WriteIOPS \

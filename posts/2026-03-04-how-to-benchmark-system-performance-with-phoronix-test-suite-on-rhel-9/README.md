@@ -16,6 +16,7 @@ The Phoronix Test Suite provides comprehensive system benchmarking on RHEL 9 wit
 sudo dnf install -y php-cli php-xml php-json
 wget https://phoronixtest-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_10.8.4_all.deb
 # Or install from source
+
 git clone https://github.com/phoronix-test-suite/phoronix-test-suite.git
 cd phoronix-test-suite
 sudo ./install-sh

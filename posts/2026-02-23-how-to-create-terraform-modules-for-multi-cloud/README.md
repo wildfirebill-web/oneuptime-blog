@@ -44,6 +44,7 @@ Start by defining what inputs and outputs should be consistent across clouds.
 
 ```hcl
 # modules/compute/interface/variables.tf
+
 # These variables are shared across all cloud implementations
 
 variable "name" {

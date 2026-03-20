@@ -128,6 +128,7 @@ If you are using LDAP, SSSD, or other centralized authentication, ensure those m
 
 ```bash
 # Test user lookup
+
 getent passwd $(whoami)
 
 # Test group lookup

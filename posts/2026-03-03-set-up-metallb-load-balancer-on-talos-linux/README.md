@@ -33,6 +33,7 @@ Check your kube-proxy mode:
 
 ```bash
 # Check kube-proxy mode
+
 kubectl get configmap kube-proxy -n kube-system -o yaml | grep mode
 ```
 

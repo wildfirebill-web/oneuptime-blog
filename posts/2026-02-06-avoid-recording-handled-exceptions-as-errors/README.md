@@ -129,6 +129,7 @@ Span events are the right tool for recording exceptions that were handled. They 
 
 ```python
 # Record handled exception as an event (informational)
+
 span.add_event("handled_exception", {
     "exception.type": type(e).__name__,
     "exception.message": str(e),

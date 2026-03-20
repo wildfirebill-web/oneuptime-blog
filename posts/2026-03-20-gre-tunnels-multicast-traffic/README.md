@@ -18,6 +18,7 @@ Many WAN links and internet paths do not support IP multicast routing. GRE encap
 
 ```bash
 # Create GRE tunnel with multicast support
+
 # The key flag is the tunnel mode and enabling multicast on the interface
 
 ip tunnel add gre1 \

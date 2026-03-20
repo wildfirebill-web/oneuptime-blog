@@ -41,6 +41,7 @@ Outline needs PostgreSQL for data storage, Redis for caching and real-time featu
 
 ```bash
 # Create the Outline project directory
+
 mkdir -p ~/outline/{db,redis,minio-data}
 cd ~/outline
 ```

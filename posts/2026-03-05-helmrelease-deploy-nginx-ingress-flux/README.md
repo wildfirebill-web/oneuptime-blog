@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, NGINX, Ingress Controller, Load Balancer
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Nginx, Ingress Controller, Load Balancer
 
 Description: Learn how to deploy the NGINX Ingress Controller on Kubernetes using a Flux HelmRelease for production-grade HTTP routing and load balancing.
 
@@ -22,6 +22,7 @@ The official NGINX Ingress Controller chart is maintained by the Kubernetes comm
 
 ```yaml
 # helmrepository-ingress-nginx.yaml - Official ingress-nginx Helm repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

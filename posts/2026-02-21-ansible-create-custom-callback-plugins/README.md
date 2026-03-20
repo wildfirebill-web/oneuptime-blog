@@ -25,6 +25,7 @@ Here is the simplest possible callback plugin:
 
 ```python
 # callback_plugins/my_callback.py - A minimal notification callback
+
 from ansible.plugins.callback import CallbackBase
 
 

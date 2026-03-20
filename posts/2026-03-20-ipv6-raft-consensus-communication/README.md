@@ -12,7 +12,7 @@ Raft is the consensus algorithm used by etcd, Vault, CockroachDB, and many other
 
 ## Raft IPv6 Address Requirements
 
-```
+```text
 Raft peer communication needs:
 1. Leader election: Each node advertises its IPv6 address for voting
 2. Log replication: Leader connects to followers over IPv6
@@ -26,6 +26,7 @@ etcd uses Raft internally. The peer URLs must use IPv6 bracket notation:
 
 ```bash
 # Start etcd with IPv6 Raft peers
+
 etcd \
   --name node1 \
   # Peer URLs - where other Raft members connect to this node

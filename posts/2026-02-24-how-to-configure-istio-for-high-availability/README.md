@@ -285,6 +285,7 @@ Monitor these signals to detect availability issues early:
 
 ```bash
 # Control plane readiness
+
 kubectl get pods -n istio-system -l app=istiod -o wide
 
 # Check if any sidecars are disconnected from the control plane

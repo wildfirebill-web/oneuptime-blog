@@ -30,6 +30,7 @@ The `containers.podman.podman_image` module handles both pulling and building im
 
 ```yaml
 # build_image.yml - Build a Podman image from a Containerfile
+
 ---
 - name: Build Container Image with Podman
   hosts: build_servers

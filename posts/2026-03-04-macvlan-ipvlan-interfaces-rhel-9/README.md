@@ -33,6 +33,7 @@ graph TD
 
 ```bash
 # Create a MACVLAN interface in bridge mode
+
 # Bridge mode allows MACVLAN interfaces to communicate with each other
 sudo ip link add macvlan0 link ens3 type macvlan mode bridge
 

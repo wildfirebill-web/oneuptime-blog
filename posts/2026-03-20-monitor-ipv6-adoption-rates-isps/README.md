@@ -74,6 +74,7 @@ Count AAAA vs A query ratios in DNS resolver logs:
 
 ```bash
 # Analyze BIND query log for IPv6 vs IPv4 DNS query ratio
+
 # Assuming query logging is enabled in named.conf
 
 grep "query:" /var/log/named/queries.log | \

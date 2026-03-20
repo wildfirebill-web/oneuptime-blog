@@ -8,12 +8,13 @@ Description: Learn how to configure OpenTofu state encryption using Azure Key Va
 
 ## Introduction
 
-Azure Key Vault as the key provider for OpenTofu state encryption enables envelope encryption with Azure-managed keys. Combined with the azurerm backend, this provides client-side encryption before data reaches Azure Blob Storage — protecting state even if storage access controls are bypassed.
+Azure Key Vault as the key provider for OpenTofu state encryption enables envelope encryption with Azure-managed keys. Combined with the azurerm backend, this provides client-side encryption before data reaches Azure Blob Storage - protecting state even if storage access controls are bypassed.
 
 ## Configuration
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.7"
 
@@ -96,7 +97,7 @@ export ARM_CLIENT_SECRET="your-client-secret"
 export ARM_TENANT_ID="your-tenant-id"
 export ARM_SUBSCRIPTION_ID="your-subscription-id"
 
-# Managed Identity (when running on Azure VM/AKS — recommended)
+# Managed Identity (when running on Azure VM/AKS - recommended)
 # No credentials needed
 
 # Azure CLI (local development)

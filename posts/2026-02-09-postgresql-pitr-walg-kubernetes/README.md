@@ -25,6 +25,7 @@ WAL-G is a backup tool that handles both base backups and continuous WAL archivi
 
 ```bash
 # Download WAL-G binary
+
 wget https://github.com/wal-g/wal-g/releases/download/v2.0.1/wal-g-pg-ubuntu-20.04-amd64.tar.gz
 tar -xzf wal-g-pg-ubuntu-20.04-amd64.tar.gz
 ```

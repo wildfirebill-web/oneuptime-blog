@@ -8,12 +8,13 @@ Description: Configure S3-compatible object storage endpoints over IPv6, includi
 
 ## Introduction
 
-S3-compatible object storage — including AWS S3 itself, MinIO, Ceph RADOS Gateway, and others — can serve API requests over IPv6. The primary considerations are endpoint URL formatting (bracket notation for IPv6 addresses), SDK configuration for IPv6 endpoints, and ensuring that storage servers listen on IPv6 interfaces.
+S3-compatible object storage - including AWS S3 itself, MinIO, Ceph RADOS Gateway, and others - can serve API requests over IPv6. The primary considerations are endpoint URL formatting (bracket notation for IPv6 addresses), SDK configuration for IPv6 endpoints, and ensuring that storage servers listen on IPv6 interfaces.
 
 ## AWS CLI with IPv6 Endpoint
 
 ```bash
 # AWS S3 now supports IPv6 through dual-stack endpoints
+
 # Use the dual-stack endpoint URL format
 
 # Configure AWS CLI to use dual-stack endpoint
@@ -77,7 +78,7 @@ print(f"Buckets: {buckets}")
 ## Ceph RADOS Gateway (RGW) S3 over IPv6
 
 ```ini
-# /etc/ceph/ceph.conf — RGW section
+# /etc/ceph/ceph.conf - RGW section
 [client.rgw.rgw1]
 host = ceph-rgw1
 # Bind to all IPv6 interfaces

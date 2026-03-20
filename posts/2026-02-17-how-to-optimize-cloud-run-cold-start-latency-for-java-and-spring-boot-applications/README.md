@@ -22,6 +22,7 @@ Before optimizing, measure your current cold start time. Deploy your service and
 
 ```bash
 # Deploy your service with min-instances set to 0
+
 gcloud run deploy my-java-service \
     --image=gcr.io/my-project/my-java-service:latest \
     --region=us-central1 \

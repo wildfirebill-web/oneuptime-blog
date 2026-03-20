@@ -29,6 +29,7 @@ The most straightforward fix is adding the missing labels to namespaces that sho
 
 ```bash
 # First, review existing labels on all namespaces
+
 kubectl get namespaces --show-labels
 
 # Add labels to specific namespaces

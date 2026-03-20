@@ -1,4 +1,4 @@
-# How to Install K3s in an Air-Gapped Environment
+# How to Install K3s in an Air-Gapped Environment - Install
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Download all required files on a machine with internet access:
 K3S_VERSION="v1.30.2+k3s1"
 
 # Download the K3s binary
+
 curl -Lo k3s https://github.com/k3s-io/k3s/releases/download/${K3S_VERSION}/k3s
 chmod +x k3s
 
@@ -46,7 +47,7 @@ scp k3s k3s-airgap-images-amd64.tar.gz install.sh user@node-ip:/tmp/
 ## Step 3: Install K3s on the Server Node
 
 ```bash
-# On the server node — run all commands as root
+# On the server node - run all commands as root
 
 # Place the binary in PATH
 cp /tmp/k3s /usr/local/bin/

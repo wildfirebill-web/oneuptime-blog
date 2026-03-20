@@ -29,6 +29,7 @@ High CPU on Cilium agent pods is the most common Hubble performance symptom:
 
 ```bash
 # Check CPU usage across all Cilium pods
+
 kubectl -n kube-system top pod -l k8s-app=cilium --sort-by=cpu
 
 # Compare with expected baseline (Cilium without Hubble typically uses 50-200m)

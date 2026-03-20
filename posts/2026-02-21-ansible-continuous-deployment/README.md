@@ -34,6 +34,7 @@ The core deployment playbook needs to handle pulling the new artifact, stopping 
 
 ```yaml
 # playbooks/deploy.yml
+
 # Main deployment playbook with rolling update strategy
 ---
 - name: Deploy application

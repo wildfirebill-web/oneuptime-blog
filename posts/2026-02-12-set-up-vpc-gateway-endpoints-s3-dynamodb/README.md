@@ -44,6 +44,7 @@ The setup is straightforward. Create the endpoint and associate it with your rou
 
 ```bash
 # Create an S3 gateway endpoint
+
 S3_ENDPOINT=$(aws ec2 create-vpc-endpoint \
   --vpc-id $VPC_ID \
   --service-name com.amazonaws.us-east-1.s3 \

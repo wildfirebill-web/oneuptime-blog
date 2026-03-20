@@ -312,6 +312,7 @@ Verify the redirect works correctly:
 
 ```bash
 # Test HTTP redirect (should return 301)
+
 curl -v http://app.example.com/
 
 # Follow the redirect

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VLAN, Debian, /etc/network/interfaces, 802.1Q, vlan-raw-device, Linux, IPv4
+Tags: VLAN, Debian, /etc/network/interfaces, 802.1Q, Vlan-raw-device, Linux, IPv4
 
 Description: Learn how to configure 802.1Q VLAN interfaces on Debian Linux using /etc/network/interfaces, including tagged and untagged VLANs with static IP and DHCP assignment.
 
@@ -14,6 +14,7 @@ Debian uses the `vlan` package and `/etc/network/interfaces` to configure 802.1Q
 
 ```bash
 # Install vlan package (provides vconfig and kernel module support)
+
 apt install vlan -y
 
 # Load 8021q module
@@ -26,7 +27,7 @@ echo "8021q" >> /etc/modules
 ```bash
 # /etc/network/interfaces
 
-# Physical interface (no IP — acts as trunk port)
+# Physical interface (no IP - acts as trunk port)
 auto eth0
 iface eth0 inet manual
 

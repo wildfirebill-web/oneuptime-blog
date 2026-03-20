@@ -18,6 +18,7 @@ Before creating any Pub/Sub resources, make sure your Terraform configuration in
 
 ```hcl
 # Configure the Google provider with your project and region
+
 terraform {
   required_providers {
     google = {

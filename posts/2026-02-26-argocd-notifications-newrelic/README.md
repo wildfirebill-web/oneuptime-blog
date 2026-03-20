@@ -268,6 +268,7 @@ SINCE 24 hours ago
 
 ```bash
 # Check ArgoCD notification controller logs
+
 kubectl logs -n argocd deploy/argocd-notifications-controller -f
 
 # Test New Relic Event API

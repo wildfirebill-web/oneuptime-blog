@@ -14,6 +14,7 @@ FRRouting (FRR) is an open-source routing protocol suite for Linux that supports
 
 ```bash
 # Add the FRR repository and install
+
 sudo apt-get update
 sudo apt-get install -y curl gnupg2
 
@@ -49,7 +50,7 @@ sudo vtysh
 
 Inside vtysh, configure BGP the same way as Cisco IOS:
 
-```
+```text
 hostname# configure terminal
 
 ! Set up BGP with AS 65001
@@ -91,7 +92,7 @@ hostname# show running-config
 
 ## Step 5: Verify BGP Neighbors
 
-```
+```text
 hostname# show bgp summary
 
 Neighbor        V         AS MsgRcvd MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd
@@ -115,7 +116,7 @@ sudo sysctl -p /etc/sysctl.d/99-ip-forward.conf
 
 ## Step 7: View BGP Routes in the FRR Table
 
-```
+```bash
 ! Show BGP routes
 hostname# show bgp ipv4 unicast
 

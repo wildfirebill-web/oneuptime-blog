@@ -26,6 +26,7 @@ If you are generating these for testing, here is how to create them with OpenSSL
 
 ```bash
 # Generate root CA
+
 openssl req -x509 -sha256 -nodes -days 3650 -newkey rsa:4096 \
   -subj "/O=MyOrg/CN=Root CA" \
   -keyout root-key.pem -out root-cert.pem

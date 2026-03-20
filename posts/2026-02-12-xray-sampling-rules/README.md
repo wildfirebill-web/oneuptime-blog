@@ -58,6 +58,7 @@ Here's how to create sampling rules for common scenarios:
 
 ```bash
 # Create a rule that traces 100% of requests to a problematic endpoint
+
 aws xray create-sampling-rule \
   --sampling-rule '{
     "RuleName": "HighSample-PaymentEndpoint",

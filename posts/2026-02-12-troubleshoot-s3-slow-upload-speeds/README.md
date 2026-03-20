@@ -18,6 +18,7 @@ Before fixing anything, measure what you're actually getting.
 
 ```bash
 # Create a test file of known size
+
 dd if=/dev/urandom of=test-100mb.bin bs=1M count=100
 
 # Upload and time it

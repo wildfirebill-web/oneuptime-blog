@@ -34,6 +34,7 @@ Check and fix with the CLI.
 
 ```bash
 # Check if system-assigned managed identity is enabled
+
 az webapp identity show --resource-group myResourceGroup --name myAppService
 
 # If the output is empty or principalId is null, enable it

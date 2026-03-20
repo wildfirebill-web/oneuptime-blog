@@ -39,6 +39,7 @@ Tests that pass in one order but fail in another.
 
 ```python
 # test_order_dependent.py
+
 # BAD: These tests depend on execution order
 
 # Global state that persists between tests

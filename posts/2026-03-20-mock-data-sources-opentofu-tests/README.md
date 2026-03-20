@@ -194,4 +194,4 @@ run "iam_policy_references_correct_account" {
 
 ## Conclusion
 
-Mock data sources with `mock_data` blocks eliminate the need for real cloud infrastructure in unit tests. Define realistic default values for the attributes your module reads from data sources. This approach ensures your module's logic—which depends on data source results—is tested without making any API calls, enabling fast and credential-free unit testing.
+Mock data sources with `mock_data` blocks eliminate the need for real cloud infrastructure in unit tests. Define realistic default values for the attributes your module reads from data sources. This approach ensures your module's logic-which depends on data source results-is tested without making any API calls, enabling fast and credential-free unit testing.

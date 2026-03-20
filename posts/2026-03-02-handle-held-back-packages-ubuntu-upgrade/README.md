@@ -27,6 +27,7 @@ The most common reason: upgrading the package would require installing a new dep
 
 ```bash
 # dist-upgrade is equivalent to full-upgrade - both handle dependency changes
+
 sudo apt dist-upgrade
 
 # Or explicitly

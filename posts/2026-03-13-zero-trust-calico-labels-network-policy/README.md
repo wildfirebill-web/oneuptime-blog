@@ -27,6 +27,7 @@ This guide shows you how to implement zero trust microsegmentation using Calico 
 
 ```yaml
 # Three-tier application labels
+
 # Frontend:  app=web, tier=frontend, env=prod
 # API:       app=api, tier=backend, env=prod
 # Database:  app=db, tier=data, env=prod

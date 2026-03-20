@@ -23,6 +23,7 @@ Install kind if you haven't:
 
 ```bash
 # macOS
+
 brew install kind
 
 # Linux

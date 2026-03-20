@@ -39,6 +39,7 @@ The first question is always: which service account is actually making the reque
 
 ```bash
 # Check what credentials are active in your gcloud session
+
 gcloud auth list
 
 # Check if a service account key file is being used

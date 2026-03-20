@@ -46,6 +46,7 @@ Define a namespace for Kubescape.
 
 ```yaml
 # kubescape-namespace.yaml
+
 # Dedicated namespace for Kubescape security platform
 apiVersion: v1
 kind: Namespace

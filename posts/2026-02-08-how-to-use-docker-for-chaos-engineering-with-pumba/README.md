@@ -18,6 +18,7 @@ Pumba runs as a standalone binary or, fittingly, as a Docker container. Running 
 
 ```bash
 # Run Pumba as a Docker container
+
 docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
   gaiaadm/pumba --help

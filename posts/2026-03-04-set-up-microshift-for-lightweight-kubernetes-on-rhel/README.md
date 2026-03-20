@@ -18,6 +18,7 @@ You need RHEL with a valid subscription and at least 2 CPU cores and 2 GB of RAM
 
 ```bash
 # Enable the MicroShift repository
+
 sudo subscription-manager repos \
   --enable rhocp-4.14-for-rhel-9-x86_64-rpms \
   --enable fast-datapath-for-rhel-9-x86_64-rpms
@@ -77,7 +78,7 @@ oc expose pod nginx --port=80 --type=NodePort -n test-app
 oc get svc -n test-app
 ```
 
-## Resource Usage
+Resource Usage
 
 MicroShift is designed to be lightweight. Check its resource footprint:
 

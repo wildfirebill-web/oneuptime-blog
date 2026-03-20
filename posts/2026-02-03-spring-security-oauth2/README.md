@@ -86,6 +86,7 @@ Register your application in the Google Cloud Console first, then configure Spri
 
 ```yaml
 # application.yml
+
 spring:
   security:
     oauth2:
@@ -300,7 +301,7 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
 ---
 
-## Resource Server Configuration
+Resource Server Configuration
 
 When your Spring Boot application serves as an API, it acts as a resource server that validates incoming tokens. This is separate from the client role.
 
@@ -328,7 +329,7 @@ spring:
           # jwk-set-uri: https://your-auth-server/.well-known/jwks.json
 ```
 
-### Resource Server Security Config
+Resource Server Security Config
 
 Separate the resource server config from the client config if your app serves both roles.
 

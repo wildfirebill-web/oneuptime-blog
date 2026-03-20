@@ -40,6 +40,7 @@ Here's a minimal Schema Processor configuration that transforms telemetry to sem
 
 ```yaml
 # Configure receivers to accept telemetry
+
 receivers:
   otlp:
     protocols:

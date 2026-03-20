@@ -20,6 +20,7 @@ Docker provides an embedded DNS server at 127.0.0.11 for user-defined networks. 
 
 ```bash
 # Check DNS configuration inside a container
+
 docker run --rm alpine cat /etc/resolv.conf
 
 # Output on user-defined network:

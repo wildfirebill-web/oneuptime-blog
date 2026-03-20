@@ -35,6 +35,7 @@ Create a Redis instance on the same network as your GKE cluster:
 
 ```bash
 # Create a Memorystore Redis instance on the same VPC as GKE
+
 gcloud redis instances create gke-redis-cache \
   --size=2 \
   --region=us-central1 \

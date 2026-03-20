@@ -20,6 +20,7 @@ GoatCounter for Website Analytics can be installed and configured on RHEL to pro
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

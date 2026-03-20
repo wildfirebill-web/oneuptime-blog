@@ -27,6 +27,7 @@ Before optimizing, know what you're paying for:
 
 ```bash
 # Install AWS CLI if not present
+
 sudo apt-get install -y awscli
 
 # Configure credentials

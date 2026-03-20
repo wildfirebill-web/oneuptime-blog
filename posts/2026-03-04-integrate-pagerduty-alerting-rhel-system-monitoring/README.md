@@ -16,6 +16,7 @@ The PagerDuty Agent runs on your RHEL server and forwards events to PagerDuty:
 
 ```bash
 # Add the PagerDuty repository
+
 sudo tee /etc/yum.repos.d/pdagent.repo << 'EOF'
 [pdagent]
 name=PDAgent

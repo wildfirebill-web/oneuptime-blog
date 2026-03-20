@@ -16,6 +16,7 @@ Start with the hosted zone. This is your DNS namespace:
 
 ```hcl
 # Create a public hosted zone
+
 resource "aws_route53_zone" "primary" {
   name    = "example.com"
   comment = "Primary domain hosted zone"

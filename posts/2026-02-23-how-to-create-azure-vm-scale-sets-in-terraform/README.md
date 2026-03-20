@@ -73,6 +73,7 @@ Scale sets work best behind a load balancer:
 
 ```hcl
 # Public IP for the load balancer
+
 resource "azurerm_public_ip" "lb" {
   name                = "pip-lb-vmss-prod"
   location            = azurerm_resource_group.vmss.location

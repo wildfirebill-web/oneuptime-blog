@@ -8,7 +8,7 @@ Description: Learn how creation-time provisioners work in OpenTofu and when they
 
 ---
 
-Creation-time provisioners in OpenTofu run once when a resource is first created. They are explicitly a last-resort tool — the OpenTofu documentation recommends cloud-init or configuration management tools instead. But understanding them is important for legacy code and specific use cases.
+Creation-time provisioners in OpenTofu run once when a resource is first created. They are explicitly a last-resort tool - the OpenTofu documentation recommends cloud-init or configuration management tools instead. But understanding them is important for legacy code and specific use cases.
 
 ---
 
@@ -61,6 +61,7 @@ By default, provisioners run only at creation time. The resource must be tainted
 
 ```bash
 # Taint a resource to force re-creation (and re-run provisioners)
+
 tofu taint aws_instance.web
 tofu apply
 ```
@@ -76,7 +77,7 @@ provisioner "remote-exec" {
 }
 ```
 
-Default is `on_failure = fail` — the resource is tainted if the provisioner fails.
+Default is `on_failure = fail` - the resource is tainted if the provisioner fails.
 
 ---
 
@@ -84,10 +85,10 @@ Default is `on_failure = fail` — the resource is tainted if the provisioner fa
 
 - Generating a local inventory file after resource creation
 - Triggering an external system (webhook, notification) via `local-exec`
-- When the resource is in a private network without SSH access is NOT suitable — use cloud-init
+- When the resource is in a private network without SSH access is NOT suitable - use cloud-init
 
 ---
 
 ## Summary
 
-Creation-time provisioners (`local-exec` and `remote-exec`) execute commands when a resource is first created. Use `local-exec` for local operations like writing inventory files. Prefer cloud-init (`user_data`) over `remote-exec` for instance bootstrapping — it's more reliable, doesn't require SSH at apply time, and works with private instances. Provisioners should be the last resort.
+Creation-time provisioners (`local-exec` and `remote-exec`) execute commands when a resource is first created. Use `local-exec` for local operations like writing inventory files. Prefer cloud-init (`user_data`) over `remote-exec` for instance bootstrapping - it's more reliable, doesn't require SSH at apply time, and works with private instances. Provisioners should be the last resort.

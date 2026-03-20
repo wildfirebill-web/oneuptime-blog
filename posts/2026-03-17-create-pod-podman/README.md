@@ -18,6 +18,7 @@ A pod is a group of one or more containers that share the same network namespace
 
 ```bash
 # Create a new empty pod
+
 podman pod create --name my-pod
 
 # Verify the pod was created

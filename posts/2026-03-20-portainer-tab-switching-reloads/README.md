@@ -1,4 +1,4 @@
-# How to Fix Tab Switching Causing Long Reloads in Portainer
+# How to Fix Tab Switching Causing Long Reloads in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -47,6 +47,7 @@ By default, Portainer sessions expire after a period of inactivity:
 
 ```bash
 # Check current session settings
+
 # Via API: not directly configurable via API
 # Via UI: Settings → Authentication → Session lifetime
 
@@ -153,7 +154,7 @@ These avoid triggering a full page re-render.
 
 Instead of navigating through multiple pages, bookmark direct URLs:
 
-```
+```text
 # Direct URL to containers list (filtered to running)
 http://portainer.yourdomain.com/#!/1/docker/containers?status=running
 

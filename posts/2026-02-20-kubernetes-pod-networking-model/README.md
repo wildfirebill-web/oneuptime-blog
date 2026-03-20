@@ -39,6 +39,7 @@ Unlike Docker's default bridge networking where containers share the host's IP w
 
 ```yaml
 # multi-container-pod.yaml
+
 # Both containers share the same IP and network namespace
 apiVersion: v1
 kind: Pod

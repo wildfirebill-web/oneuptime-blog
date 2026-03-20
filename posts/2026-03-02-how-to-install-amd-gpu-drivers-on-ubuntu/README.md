@@ -22,6 +22,7 @@ For gaming and desktop use, the kernel driver is usually sufficient. For ML or O
 
 ```bash
 # List all PCIe devices and filter for AMD
+
 lspci | grep -i amd
 
 # Check if the kernel already loaded amdgpu

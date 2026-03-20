@@ -65,6 +65,7 @@ One important thing - Elastic Beanstalk expects the application to listen on por
 
 ```properties
 # src/main/resources/application.properties
+
 server.port=5000
 spring.application.name=my-eb-app
 ```

@@ -36,6 +36,7 @@ A merge reverts the origin LV to exactly the state it was in when the snapshot w
 
 ```bash
 # Stop anything writing to the origin LV
+
 sudo systemctl stop postgresql
 # or nginx, mysql, etc.
 ```

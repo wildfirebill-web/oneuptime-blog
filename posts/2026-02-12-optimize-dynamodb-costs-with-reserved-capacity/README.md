@@ -96,6 +96,7 @@ def get_capacity_stats(table_name, metric_name, days=30):
     return baseline
 
 # Analyze your tables
+
 tables = ['Users', 'Orders', 'Products']
 for table in tables:
     get_capacity_stats(table, 'ConsumedReadCapacityUnits')

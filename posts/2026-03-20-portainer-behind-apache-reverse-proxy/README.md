@@ -38,6 +38,7 @@ Portainer will now listen on port 9000 (HTTP) internally, which Apache will prox
 
 ```bash
 # Enable required modules
+
 sudo a2enmod proxy
 sudo a2enmod proxy_http
 sudo a2enmod proxy_wstunnel   # Required for WebSocket (terminal feature)
@@ -141,4 +142,4 @@ docker exec portainer netstat -tlnp
 
 ## Conclusion
 
-Apache's `mod_proxy` and `mod_proxy_wstunnel` provide everything needed to proxy Portainer, including WebSocket support for the container terminal. The configuration shown here handles HTTP-to-HTTPS redirection, proper forwarded headers, and WebSocket upgrading — all the requirements for a fully functional Portainer installation behind Apache.
+Apache's `mod_proxy` and `mod_proxy_wstunnel` provide everything needed to proxy Portainer, including WebSocket support for the container terminal. The configuration shown here handles HTTP-to-HTTPS redirection, proper forwarded headers, and WebSocket upgrading - all the requirements for a fully functional Portainer installation behind Apache.

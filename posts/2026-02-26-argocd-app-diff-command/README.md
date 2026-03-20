@@ -45,6 +45,7 @@ The exit code is critical for scripting:
 
 ```bash
 # Use exit codes in scripts
+
 argocd app diff my-app
 if [ $? -eq 0 ]; then
   echo "Application is in sync, nothing to deploy"
@@ -242,7 +243,7 @@ jobs:
             const diff = `${{ steps.diff.outputs.diff }}`;
             const body = diff.trim() === ''
               ? '### ArgoCD Diff Preview\nNo changes detected.'
-              : `### ArgoCD Diff Preview\n\`\`\`diff\n${diff}\n\`\`\``;
+              : `### ArgoCD Diff Preview\n```diff\n${diff}\n````;
             github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,

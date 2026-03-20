@@ -35,6 +35,7 @@ PORT  = 5000
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
 
 # Set TTL = 1: multicast stays on the local subnet only
+
 ttl = 1
 sock.setsockopt(socket.IPPROTO_IP, socket.IP_MULTICAST_TTL, ttl)
 
@@ -81,7 +82,7 @@ sudo tcpdump -i eth0 -n -v "dst net 224.0.0.0/4" | grep "ttl"
 
 Example output showing TTL = 1 (link-local sender):
 
-```
+```text
 IP (ttl 1, proto UDP, length 52) 192.168.1.10.5000 > 239.1.2.3.5000
 ```
 
@@ -89,7 +90,7 @@ IP (ttl 1, proto UDP, length 52) 192.168.1.10.5000 > 239.1.2.3.5000
 
 On a Cisco router, set the TTL threshold per interface to prevent forwarding low-TTL multicast:
 
-```
+```text
 interface GigabitEthernet0/1
  ip multicast ttl-threshold 16
 ```

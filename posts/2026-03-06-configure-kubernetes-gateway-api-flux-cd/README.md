@@ -46,6 +46,7 @@ First, install the Gateway API CRDs using a Flux Kustomization that pulls from t
 
 ```yaml
 # clusters/my-cluster/gateway-api/crds-source.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:

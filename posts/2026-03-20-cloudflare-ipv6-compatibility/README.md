@@ -10,7 +10,7 @@ Cloudflare offers two IPv6 settings: **IPv6 Compatibility** (automatic IPv6 for 
 
 ## How Cloudflare IPv6 Compatibility Works
 
-```
+```text
 IPv6 Client → Cloudflare Edge (IPv6) → Cloudflare Network → Your Origin (IPv4)
               ↑ Cloudflare assigns IPv6 address to your domain
               ↑ Translates IPv6 client connection to IPv4 origin connection
@@ -31,6 +31,7 @@ Your origin server remains IPv4-only. Cloudflare handles the translation at its 
 
 ```bash
 # Enable IPv6 Compatibility via API
+
 curl -X PATCH "https://api.cloudflare.com/client/v4/zones/{zone_id}/settings/ipv6" \
   -H "Authorization: Bearer $CF_API_TOKEN" \
   -H "Content-Type: application/json" \
@@ -134,4 +135,4 @@ async function handleRequest(request) {
 }
 ```
 
-Cloudflare's IPv6 Compatibility feature is the zero-effort path to IPv6 support — a single toggle in the dashboard provides IPv6 access to your domain without any changes to your origin infrastructure.
+Cloudflare's IPv6 Compatibility feature is the zero-effort path to IPv6 support - a single toggle in the dashboard provides IPv6 access to your domain without any changes to your origin infrastructure.

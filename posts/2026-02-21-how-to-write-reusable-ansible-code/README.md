@@ -16,6 +16,7 @@ The foundation of reusable code is parameterization. Never hardcode values in ta
 
 ```yaml
 # roles/app_deploy/defaults/main.yml
+
 # Every configurable aspect has a default value
 app_deploy_repo: ""
 app_deploy_version: "main"

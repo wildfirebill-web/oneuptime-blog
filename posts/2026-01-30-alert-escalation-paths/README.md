@@ -86,6 +86,7 @@ The simplest approach where alerts move sequentially through a defined chain.
 
 ```yaml
 # Example escalation policy configuration
+
 escalation_policy:
   name: "Production Critical"
   description: "Escalation path for critical production alerts"

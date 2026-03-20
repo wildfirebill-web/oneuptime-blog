@@ -24,6 +24,7 @@ Debian's default repositories include older Docker packages under different name
 
 ```bash
 # Remove any legacy Docker packages from the default Debian repos
+
 sudo apt-get remove -y docker docker-engine docker.io containerd runc
 ```
 

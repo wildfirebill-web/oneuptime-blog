@@ -1,14 +1,14 @@
-# How to Pass Providers to Child Modules in OpenTofu
+# How to Pass Providers to Child Modules in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules, Providers
+Tags: OpenTofu, Terraform, Infrastructure as Code, Modules, Provider
 
 Description: Learn how to pass provider configurations to child modules in OpenTofu using the providers argument and required_providers declarations.
 
 ## Introduction
 
-By default, child modules inherit the default provider configuration from their parent. When you have multiple provider aliases — for example, deploying to several AWS regions — you need to explicitly pass the right provider configuration to each module using the `providers` argument.
+By default, child modules inherit the default provider configuration from their parent. When you have multiple provider aliases - for example, deploying to several AWS regions - you need to explicitly pass the right provider configuration to each module using the `providers` argument.
 
 ## Default Provider Inheritance
 
@@ -16,6 +16,7 @@ If your module only uses one provider with no aliases, it inherits automatically
 
 ```hcl
 # Root module
+
 provider "aws" {
   region = "us-east-1"
 }
@@ -150,7 +151,7 @@ terraform {
 ## Important Notes
 
 - If a module uses provider aliases internally, it must re-export them in its own `providers` argument when calling sub-modules.
-- Do not configure providers inside child modules — always pass them from the root.
+- Do not configure providers inside child modules - always pass them from the root.
 - The `providers` map keys must match the provider local names used inside the module.
 - Omitting `providers` causes the module to inherit all default (non-aliased) provider configurations.
 

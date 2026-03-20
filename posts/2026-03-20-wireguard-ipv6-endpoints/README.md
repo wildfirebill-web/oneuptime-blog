@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WireGuard, IPv6, VPN, Endpoints, Network Configuration, Tunneling
+Tags: WireGuard, IPv6, VPN, Endpoint, Network Configuration, Tunneling
 
 Description: A guide to configuring WireGuard VPN with IPv6 endpoints, allowing WireGuard peers to connect using IPv6 addresses.
 
@@ -19,6 +19,7 @@ In WireGuard, the `Endpoint` directive specifies where to reach a peer. For IPv6
 
 [Interface]
 # Server's tunnel IPv6 address
+
 Address = fd00:wg::/64
 Address = 10.0.0.1/24
 
@@ -107,7 +108,7 @@ If your server has a DNS name that resolves to both IPv4 and IPv6:
 ```ini
 [Peer]
 PublicKey = <server-public-key>
-# WireGuard resolves the hostname — if it has AAAA record, IPv6 is used
+# WireGuard resolves the hostname - if it has AAAA record, IPv6 is used
 Endpoint = vpn.example.com:51820
 AllowedIPs = 0.0.0.0/0, ::/0
 ```
@@ -152,4 +153,4 @@ sudo ss -6 -ulnp | grep 51820
 nc -6 -u 2001:db8::wireguard-server 51820
 ```
 
-WireGuard's clean configuration model makes IPv6 endpoint support straightforward — just use bracket notation for IPv6 addresses in the Endpoint directive.
+WireGuard's clean configuration model makes IPv6 endpoint support straightforward - just use bracket notation for IPv6 addresses in the Endpoint directive.

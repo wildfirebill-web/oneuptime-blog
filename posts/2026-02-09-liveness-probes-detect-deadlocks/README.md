@@ -279,6 +279,7 @@ def liveness():
         return jsonify({'status': 'deadlocked', 'components': status}), 503
 
 # Start worker threads
+
 threading.Thread(target=message_processor, daemon=True).start()
 threading.Thread(target=database_sync, daemon=True).start()
 

@@ -20,6 +20,7 @@ You can configure it to automatically suppress addresses that generate bounces, 
 
 ```bash
 # Enable account-level suppression for both bounces and complaints
+
 aws sesv2 put-account-suppression-attributes \
   --suppressed-reasons BOUNCE COMPLAINT
 

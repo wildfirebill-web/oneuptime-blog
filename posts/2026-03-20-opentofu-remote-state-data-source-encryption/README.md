@@ -1,4 +1,4 @@
-# How to Configure Encryption for Remote State Data Sources in OpenTofu
+# How to Configure Encryption for Remote State Data Sources in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -13,7 +13,8 @@ When you use the `terraform_remote_state` data source to read outputs from anoth
 ## Basic Configuration
 
 ```hcl
-# versions.tf — reading from another config with encrypted state
+# versions.tf - reading from another config with encrypted state
+
 terraform {
   encryption {
     key_provider "aws_kms" "remote_state" {
@@ -82,7 +83,7 @@ terraform {
     }
 
     remote_state_data_sources {
-      # Named source — matches the data source name in configuration
+      # Named source - matches the data source name in configuration
       source "data.terraform_remote_state.networking" {
         method = method.aes_gcm.networking
       }

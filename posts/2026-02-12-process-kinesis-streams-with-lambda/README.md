@@ -273,6 +273,7 @@ Track these CloudWatch metrics to understand your processing performance:
 
 ```bash
 # Check iterator age - the most important metric
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/Lambda \
   --metric-name IteratorAge \

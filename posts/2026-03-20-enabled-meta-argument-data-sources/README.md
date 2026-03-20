@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, enabled, count, Conditional, HCL, Infrastructure as Code
+Tags: OpenTofu, Data Source, Enabled, Count, Conditional, HCL, Infrastructure as Code
 
 Description: Learn how to conditionally enable or disable data sources in OpenTofu using the count trick and the enabled pattern for conditional data source evaluation.
 
@@ -23,6 +23,7 @@ variable "use_existing_vpc" {
 }
 
 # Only query the VPC if use_existing_vpc is true
+
 data "aws_vpc" "existing" {
   count = var.use_existing_vpc ? 1 : 0
 

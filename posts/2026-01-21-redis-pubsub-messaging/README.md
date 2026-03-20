@@ -35,6 +35,7 @@ Redis Pub/Sub follows the publish-subscribe pattern:
 
 ```bash
 # Publish a message to a channel
+
 redis-cli PUBLISH notifications "Hello, World!"
 
 # Returns the number of subscribers that received the message

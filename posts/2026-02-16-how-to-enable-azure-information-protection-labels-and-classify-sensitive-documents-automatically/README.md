@@ -83,6 +83,7 @@ You can also create labels using PowerShell for repeatability.
 
 ```powershell
 # Connect to the Security and Compliance PowerShell module
+
 Connect-IPPSSession
 
 # Create the Confidential sensitivity label with encryption

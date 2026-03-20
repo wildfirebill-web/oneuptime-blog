@@ -34,6 +34,7 @@ Most rules need versions for both 64-bit and 32-bit system calls:
 
 ```bash
 # Both architectures for completeness
+
 -a always,exit -F arch=b64 -S syscall_name -k key
 -a always,exit -F arch=b32 -S syscall_name -k key
 ```

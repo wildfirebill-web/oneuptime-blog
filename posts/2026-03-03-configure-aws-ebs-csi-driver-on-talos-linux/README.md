@@ -63,6 +63,7 @@ Save this as `ebs-csi-policy.json` and create the policy:
 
 ```bash
 # Create the IAM policy for the EBS CSI driver
+
 aws iam create-policy \
   --policy-name AmazonEBSCSIDriverPolicy \
   --policy-document file://ebs-csi-policy.json

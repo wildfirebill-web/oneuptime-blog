@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, TCP, Socket, Iterative Server, C, POSIX, Networking
+Tags: IPv4, TCP, Sockets, Iterative Server, C, POSIX, Networking
 
-Description: Learn how to build an iterative (single-threaded, one-at-a-time) IPv4 TCP server in C and Python — the simplest possible server architecture, ideal for understanding the socket API and low-concurrency applications.
+Description: Learn how to build an iterative (single-threaded, one-at-a-time) IPv4 TCP server in C and Python - the simplest possible server architecture, ideal for understanding the socket API and...
 
 ## What Is an Iterative Server?
 
@@ -14,7 +14,7 @@ An iterative server handles one client at a time, from accept to close, before m
 flowchart TD
     A[socket] --> B[bind]
     B --> C[listen]
-    C --> D[accept — blocks]
+    C --> D[accept - blocks]
     D --> E[handle client]
     E --> F[close client fd]
     F --> D
@@ -155,6 +155,7 @@ gcc -Wall -o iterative_server iterative_server.c
 ./iterative_server
 
 # Test: second connection waits in the backlog queue
+
 echo "client 1" | nc 127.0.0.1 9000 &
 echo "client 2" | nc 127.0.0.1 9000    # queued until client 1 disconnects
 ```
@@ -168,4 +169,4 @@ echo "client 2" | nc 127.0.0.1 9000    # queued until client 1 disconnects
 
 ## Conclusion
 
-An iterative TCP server calls `accept()`, services the returned client socket completely inside a `handle_client()` function, closes the socket, and loops back to `accept()`. New connection attempts queue in the kernel backlog (controlled by the `backlog` argument to `listen()`) while the current client is being served. The backlog is not a hard concurrency limit — it is the queue depth before the kernel starts refusing connections. Iterative servers are simple, deterministic, and easy to debug, making them the best starting point for learning socket programming before moving on to threaded or event-driven designs.
+An iterative TCP server calls `accept()`, services the returned client socket completely inside a `handle_client()` function, closes the socket, and loops back to `accept()`. New connection attempts queue in the kernel backlog (controlled by the `backlog` argument to `listen()`) while the current client is being served. The backlog is not a hard concurrency limit - it is the queue depth before the kernel starts refusing connections. Iterative servers are simple, deterministic, and easy to debug, making them the best starting point for learning socket programming before moving on to threaded or event-driven designs.

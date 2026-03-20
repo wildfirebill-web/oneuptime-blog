@@ -1,4 +1,4 @@
-# How to Test Custom Validation Rules in OpenTofu
+# How to Test Custom Validation Rules in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to write tests that verify custom variable validation rul
 
 ## Introduction
 
-OpenTofu modules often include `validation` blocks on variables to enforce naming conventions, allowed values, or format constraints. Testing these rules ensures that helpful error messages are shown when callers supply bad inputs—and that valid inputs are accepted without error.
+OpenTofu modules often include `validation` blocks on variables to enforce naming conventions, allowed values, or format constraints. Testing these rules ensures that helpful error messages are shown when callers supply bad inputs-and that valid inputs are accepted without error.
 
 ## Defining a Variable with Validation
 
@@ -47,7 +47,7 @@ run "valid_bucket_name_passes" {
     bucket_name = "my-valid-bucket-name"
   }
 
-  # No expect_failures — we expect this to succeed
+  # No expect_failures - we expect this to succeed
   assert {
     condition     = var.bucket_name == "my-valid-bucket-name"
     error_message = "Valid bucket name should be accepted without errors"
@@ -64,7 +64,7 @@ run "rejects_bucket_name_too_short" {
   command = plan
 
   variables {
-    # Only 2 characters — should fail the length validation
+    # Only 2 characters - should fail the length validation
     bucket_name = "ab"
   }
 
@@ -105,6 +105,7 @@ Preconditions on resources work the same way:
 
 ```hcl
 # modules/ec2/main.tf
+
 resource "aws_instance" "web" {
   ami           = var.ami_id
   instance_type = var.instance_type
@@ -160,7 +161,7 @@ run "vpc_postcondition_passes" {
     cidr_block = "10.0.0.0/16"
   }
 
-  # No expect_failures — postcondition should be satisfied
+  # No expect_failures - postcondition should be satisfied
   assert {
     condition     = aws_vpc.main.enable_dns_support == true
     error_message = "VPC DNS support should be enabled"

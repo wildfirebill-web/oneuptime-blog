@@ -41,6 +41,7 @@ For quick debugging changes that will last only minutes:
 
 ```bash
 # Step 1: Suspend the Kustomization managing your deployment
+
 flux suspend kustomization my-service -n team-alpha
 
 # Step 2: Confirm suspension

@@ -14,6 +14,7 @@ The `timecmp` function in Terraform compares two timestamps and tells you which 
 
 ```hcl
 # timecmp(timestamp_a, timestamp_b)
+
 # Returns: -1 if a < b, 0 if a == b, 1 if a > b
 
 timecmp("2026-01-01T00:00:00Z", "2026-06-01T00:00:00Z")

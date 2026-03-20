@@ -24,6 +24,7 @@ Migrating from Elasticsearch to OpenSearch requires careful planning due to API 
 
 ```bash
 # Elasticsearch version
+
 curl -X GET "localhost:9200/"
 
 # Response

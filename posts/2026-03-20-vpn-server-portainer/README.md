@@ -8,7 +8,7 @@ Description: Deploy a self-hosted WireGuard VPN server using Portainer to secure
 
 ## Introduction
 
-A self-hosted VPN lets you securely access your home network and self-hosted services from anywhere. WireGuard is the modern, high-performance VPN protocol of choice — it's faster, simpler, and more secure than OpenVPN or IPSec. This guide covers deploying WireGuard with a management UI using Portainer.
+A self-hosted VPN lets you securely access your home network and self-hosted services from anywhere. WireGuard is the modern, high-performance VPN protocol of choice - it's faster, simpler, and more secure than OpenVPN or IPSec. This guide covers deploying WireGuard with a management UI using Portainer.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ A self-hosted VPN lets you securely access your home network and self-hosted ser
 
 ```bash
 # Check if WireGuard is available
+
 modprobe wireguard && echo "WireGuard available"
 
 # Install WireGuard tools (Ubuntu/Debian)

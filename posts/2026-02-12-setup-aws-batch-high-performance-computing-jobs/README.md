@@ -35,6 +35,7 @@ The Batch service role lets Batch manage EC2 instances on your behalf.
 
 ```bash
 # Create the trust policy for the Batch service role
+
 cat > /tmp/batch-trust-policy.json << 'EOF'
 {
   "Version": "2012-10-17",

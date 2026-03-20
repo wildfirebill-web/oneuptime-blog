@@ -42,6 +42,7 @@ If you have not already set up a Buildkite agent, deploy one that has Docker acc
 
 ```bash
 # Install the Buildkite agent on a machine with Docker
+
 # Using the official install script
 TOKEN="your-agent-token" bash -c \
   'bash <(curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh)'

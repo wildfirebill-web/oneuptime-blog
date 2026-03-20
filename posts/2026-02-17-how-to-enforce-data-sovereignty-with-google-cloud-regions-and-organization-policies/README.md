@@ -34,6 +34,7 @@ The `gcp.resourceLocations` organization policy constraint restricts where resou
 
 ```bash
 # Set the organization policy to restrict resource creation to EU regions only
+
 # Apply this to the folder containing EU customer data projects
 gcloud resource-manager org-policies set-policy \
   --folder=EU_FOLDER_ID \

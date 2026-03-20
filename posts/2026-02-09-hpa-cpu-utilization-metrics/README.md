@@ -24,6 +24,7 @@ Before configuring HPA, ensure the Metrics Server is running in your cluster.
 
 ```bash
 # Check if Metrics Server is installed
+
 kubectl get deployment metrics-server -n kube-system
 
 # If not installed, deploy it

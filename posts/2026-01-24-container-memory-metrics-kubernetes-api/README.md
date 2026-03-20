@@ -16,6 +16,7 @@ The Kubernetes Metrics API requires metrics-server to be installed:
 
 ```bash
 # Check if metrics-server is running
+
 kubectl get pods -n kube-system | grep metrics-server
 
 # If not installed, install it

@@ -18,6 +18,7 @@ Here is the basic syntax compared to `delegate_to`:
 
 ```yaml
 # local-action-syntax.yml - Comparing local_action and delegate_to syntax
+
 ---
 - name: Compare local_action and delegate_to
   hosts: webservers

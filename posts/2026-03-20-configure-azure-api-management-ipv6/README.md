@@ -25,6 +25,7 @@ Azure Front Door automatically provides IPv6 endpoints.
 
 ```bash
 # Create a Front Door profile
+
 az afd profile create \
   --profile-name my-afd-profile \
   --resource-group my-rg \

@@ -18,6 +18,7 @@ The official ArgoCD Helm chart is the recommended installation method.
 
 ```hcl
 # Create the ArgoCD namespace
+
 resource "kubernetes_namespace" "argocd" {
   metadata {
     name = "argocd"

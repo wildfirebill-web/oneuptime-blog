@@ -30,6 +30,7 @@ Create a dedicated namespace with test workloads:
 
 ```bash
 # Create test namespace
+
 kubectl create namespace perf-test
 
 # Deploy server pods on specific nodes for controlled testing

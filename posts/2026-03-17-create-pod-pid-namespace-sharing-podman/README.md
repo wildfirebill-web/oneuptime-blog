@@ -18,6 +18,7 @@ By default, each container in a Podman pod has its own PID namespace. Enabling P
 
 ```bash
 # Create a pod with PID namespace sharing
+
 podman pod create --name pid-pod --share pid,net,ipc
 
 # Run an application container

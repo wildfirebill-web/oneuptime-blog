@@ -73,6 +73,7 @@ To verify your Istio installation, run the following command:
 
 ```bash
 # Verify Istio installation and check that all components are running
+
 istioctl version
 
 # Expected output shows client and control plane versions

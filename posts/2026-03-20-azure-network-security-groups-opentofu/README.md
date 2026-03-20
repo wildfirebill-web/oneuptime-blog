@@ -124,4 +124,4 @@ resource "azurerm_network_security_rule" "dynamic" {
 
 ## Conclusion
 
-NSGs in Azure are stateful firewalls—allow one direction and the return traffic is automatically permitted. Use Azure Service Tags (like `AzureLoadBalancer`, `Internet`, `VirtualNetwork`) instead of CIDRs where possible, as they automatically update when Azure IP ranges change.
+NSGs in Azure are stateful firewalls-allow one direction and the return traffic is automatically permitted. Use Azure Service Tags (like `AzureLoadBalancer`, `Internet`, `VirtualNetwork`) instead of CIDRs where possible, as they automatically update when Azure IP ranges change.

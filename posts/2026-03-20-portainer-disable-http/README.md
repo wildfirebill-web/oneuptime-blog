@@ -1,8 +1,8 @@
-# How to Disable HTTP Access in Portainer
+# How to Disable HTTP Access in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, security, http, https, hardening
+Tags: Portainer, Security, HTTP, HTTPS, Hardening
 
 Description: A guide to disabling HTTP access in Portainer to enforce encrypted HTTPS-only connections.
 
@@ -27,6 +27,7 @@ Portainer's HTTP port (9000) transmits credentials and session tokens in plainte
 
 ```bash
 # Test HTTPS access before disabling HTTP
+
 curl -k https://localhost:9443/api/status
 # Expected: {"Version":"2.x.x","InstanceID":"..."}
 

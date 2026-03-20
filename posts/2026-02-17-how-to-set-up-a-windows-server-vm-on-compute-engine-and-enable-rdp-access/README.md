@@ -18,6 +18,7 @@ GCP provides several Windows Server image families. Here are the most common:
 
 ```bash
 # List available Windows Server images
+
 gcloud compute images list --project=windows-cloud --filter="family:windows"
 ```
 

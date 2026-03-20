@@ -38,6 +38,7 @@ Let's create a forwarding zone that uses an FQDN instead of an IP address.
 
 ```bash
 # Create a forwarding zone with an FQDN target
+
 gcloud dns managed-zones create external-forward \
     --dns-name=partner.example.com. \
     --description="Forward queries to partner DNS via FQDN" \

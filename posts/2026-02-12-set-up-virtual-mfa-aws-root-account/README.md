@@ -63,6 +63,7 @@ You can verify MFA is enabled through the CLI (using an IAM user with appropriat
 
 ```bash
 # Check if the root account has MFA enabled
+
 aws iam get-account-summary \
   --query 'SummaryMap.AccountMFAEnabled'
 ```

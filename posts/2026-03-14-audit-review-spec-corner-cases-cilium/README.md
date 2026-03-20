@@ -28,6 +28,7 @@ Verify that the review process covered all areas of the specification:
 
 ```bash
 # Check that each spec section has been reviewed for corner cases
+
 echo "=== Specification Section Coverage ==="
 echo "Section 1 - Connection Setup: ___ corner cases documented"
 echo "Section 2 - Message Format: ___ corner cases documented"

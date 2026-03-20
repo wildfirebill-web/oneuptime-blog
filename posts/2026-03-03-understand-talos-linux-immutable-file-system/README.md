@@ -20,6 +20,7 @@ On a traditional Linux system, you might see something like this:
 
 ```bash
 # On traditional Linux - everything is writable
+
 $ mount | grep " / "
 /dev/sda1 on / type ext4 (rw,relatime)
 

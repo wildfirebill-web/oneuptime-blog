@@ -16,6 +16,7 @@ Before RKE can use custom Docker options, configure the Docker daemon on each no
 
 ```bash
 # Create or edit the Docker daemon configuration
+
 sudo mkdir -p /etc/docker
 
 sudo tee /etc/docker/daemon.json > /dev/null <<EOF

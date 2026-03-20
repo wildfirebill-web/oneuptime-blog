@@ -38,6 +38,7 @@ graph TD
 
 ```bash
 # Show all available package groups
+
 dnf group list
 ```
 

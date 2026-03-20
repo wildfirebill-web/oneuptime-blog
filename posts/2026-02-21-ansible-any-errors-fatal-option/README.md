@@ -18,6 +18,7 @@ Consider a database migration scenario. You have three database replicas and nee
 
 ```yaml
 # dangerous-migration.yml - without any_errors_fatal
+
 ---
 - name: Run database migration
   hosts: dbservers

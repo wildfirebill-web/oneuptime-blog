@@ -1,4 +1,4 @@
-# How to Deploy Prometheus via Portainer
+# How to Deploy Prometheus via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -82,6 +82,7 @@ Create `prometheus.yml`:
 
 ```yaml
 # prometheus.yml - global configuration
+
 global:
   scrape_interval: 15s      # Default scrape interval
   evaluation_interval: 15s   # Rule evaluation interval

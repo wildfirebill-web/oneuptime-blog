@@ -28,6 +28,7 @@ Checkov is a Python package:
 
 ```bash
 # Install with pip
+
 pip install checkov
 
 # Or use pipx for isolated installation

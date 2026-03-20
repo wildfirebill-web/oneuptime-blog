@@ -41,6 +41,7 @@ Install the necessary packages. You'll need the OpenTelemetry SDK, both LLM clie
 
 ```bash
 # Install OpenTelemetry core packages
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp
 
 # Install the LLM client libraries

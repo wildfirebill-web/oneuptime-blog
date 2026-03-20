@@ -18,6 +18,7 @@ Since Quadlet containers are managed by systemd, restart behavior is controlled 
 
 ```ini
 # ~/.config/containers/systemd/webapp.container
+
 [Unit]
 Description=Web application with restart policy
 

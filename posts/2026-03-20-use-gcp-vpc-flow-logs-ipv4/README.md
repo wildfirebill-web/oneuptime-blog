@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, VPC Flow Logs, IPv4, Monitoring, Network, Cloud Logging
+Tags: GCP, VPC Flow Logs, IPv4, Monitoring, Networks, Cloud Logging
 
 Description: Enable and analyze GCP VPC Flow Logs to monitor IPv4 traffic flows between VM instances, external endpoints, and Google services for security and performance analysis.
 
@@ -17,6 +17,7 @@ PROJECT_ID="my-gcp-project"
 REGION="us-central1"
 
 # Enable flow logs with default sampling (0.5 = 50%)
+
 gcloud compute networks subnets update app-subnet \
   --project=$PROJECT_ID \
   --region=$REGION \

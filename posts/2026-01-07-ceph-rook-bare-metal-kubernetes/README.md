@@ -87,6 +87,7 @@ Ceph requires the RBD kernel module for block storage. Load it on all nodes.
 Run this on each node that will host OSDs:
 ```bash
 # Load the RBD module
+
 sudo modprobe rbd
 
 # Ensure the module loads on boot

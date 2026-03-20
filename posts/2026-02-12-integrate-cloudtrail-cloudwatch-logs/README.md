@@ -53,6 +53,7 @@ Save that as `trust-policy.json` and create the role.
 
 ```bash
 # Create the IAM role for CloudTrail
+
 aws iam create-role \
   --role-name CloudTrailToCloudWatch \
   --assume-role-policy-document file://trust-policy.json

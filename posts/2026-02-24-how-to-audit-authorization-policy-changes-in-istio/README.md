@@ -18,6 +18,7 @@ Kubernetes audit logs capture every API request, including changes to Istio CRDs
 
 ```yaml
 # audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

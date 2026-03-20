@@ -32,6 +32,7 @@ The workflow for snapshot testing is:
 
 ```bash
 # Generate a plan and convert to JSON
+
 terraform plan -out=tfplan
 terraform show -json tfplan > plan.json
 ```

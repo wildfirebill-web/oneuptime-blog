@@ -16,6 +16,7 @@ systemd-networkd supports VXLAN natively through `.netdev` files, enabling persi
 
 ```ini
 # /etc/systemd/network/vxlan10.netdev
+
 [NetDev]
 Name=vxlan10
 Kind=vxlan

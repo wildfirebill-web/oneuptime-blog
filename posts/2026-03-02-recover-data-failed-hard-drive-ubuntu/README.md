@@ -33,6 +33,7 @@ For logical and partial physical failures, the tools below can recover significa
 
 ```bash
 # Install smartmontools
+
 sudo apt install smartmontools -y
 
 # Run a quick SMART check (identify the device with lsblk)

@@ -252,6 +252,7 @@ Make sure logs are shipped to a tamper-proof log storage:
 
 ```bash
 # Example: ship logs to an immutable S3 bucket with object lock
+
 kubectl apply -f - <<EOF
 apiVersion: v1
 kind: ConfigMap

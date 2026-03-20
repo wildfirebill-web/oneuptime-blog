@@ -22,6 +22,7 @@ ServerAddress 203.0.113.10
 Port          21
 
 # Passive mode: public IP clients connect to for data
+
 MasqueradeAddress 203.0.113.10
 
 # Passive port range
@@ -38,7 +39,7 @@ AuthOrder     mod_auth_pam.c mod_auth_unix.c
 # /etc/proftpd/proftpd.conf
 
 # Resolve hostname for MasqueradeAddress (useful for dynamic IPs)
-# ProFTPD resolves at startup — use a script to update if IP changes
+# ProFTPD resolves at startup - use a script to update if IP changes
 
 # Option: Use a dynamic DNS hostname
 MasqueradeAddress ftp.example.com
@@ -85,7 +86,7 @@ lftp -e "set ftp:passive-mode yes; ls; bye" \
 # Test with curl (passive by default)
 curl -v ftp://username:password@203.0.113.10/
 
-# Manual FTP session — test PASV command
+# Manual FTP session - test PASV command
 ftp 203.0.113.10
 > PASV
 # 227 Entering Passive Mode (203,0,113,10,117,49)

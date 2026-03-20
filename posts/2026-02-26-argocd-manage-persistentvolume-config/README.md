@@ -206,6 +206,7 @@ storage-config/
 
 ```yaml
 # Cluster-scoped PVs
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

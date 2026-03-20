@@ -16,6 +16,7 @@ Managing disks and filesystems on Ubuntu requires understanding three closely re
 
 ```bash
 # Basic output
+
 lsblk
 ```
 

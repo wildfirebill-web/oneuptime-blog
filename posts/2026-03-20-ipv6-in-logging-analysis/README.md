@@ -16,6 +16,7 @@ Nginx logs IPv6 addresses correctly by default. Verify your log format:
 
 ```nginx
 # /etc/nginx/nginx.conf
+
 http {
     # Default combined log format - works with IPv6
     log_format combined '$remote_addr - $remote_user [$time_local] '
@@ -28,7 +29,7 @@ http {
 ```
 
 IPv6 addresses in Nginx logs appear without brackets:
-```
+```text
 2001:db8::1 - - [19/Mar/2026:12:00:00 +0000] "GET / HTTP/1.1" 200 1234 "-" "curl/7.88.1"
 ```
 

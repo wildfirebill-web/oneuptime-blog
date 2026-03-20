@@ -178,6 +178,7 @@ With batching, your Lambda function receives an array of items instead of a sing
 
 ```python
 # Lambda function that processes a batch of records from Distributed Map
+
 import json
 
 def handler(event, context):

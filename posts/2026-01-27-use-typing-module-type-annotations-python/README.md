@@ -20,6 +20,7 @@ This guide covers everything you need to know about type annotations in Python, 
 
 ```python
 # basic_types.py
+
 # Basic type annotations for functions
 
 def greet(name: str) -> str:

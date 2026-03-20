@@ -1,8 +1,8 @@
-# How to Deploy Grafana on Rancher
+# How to Deploy Grafana on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, grafana, monitoring, dashboards, kubernetes
+Tags: Rancher, Grafana, Monitoring, Dashboards, Kubernetes
 
 Description: Complete guide to deploying Grafana on Rancher for metrics visualization and operational dashboards.
 
@@ -24,6 +24,7 @@ How to Deploy Grafana on Rancher on Rancher gives your team a production-ready d
 kubectl create namespace grafana
 
 # Configure project in Rancher
+
 kubectl annotate namespace grafana   field.cattle.io/projectId=YOUR_PROJECT_ID
 ```
 

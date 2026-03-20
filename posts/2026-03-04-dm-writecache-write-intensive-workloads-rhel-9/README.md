@@ -50,6 +50,7 @@ You need:
 
 ```bash
 # Check current setup
+
 lsblk
 vgs
 lvs

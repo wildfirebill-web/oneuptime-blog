@@ -36,6 +36,7 @@ Install the Spin CLI with this command:
 
 ```bash
 # Install the latest Spin CLI from Fermyon
+
 curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash
 sudo mv spin /usr/local/bin/
 ```

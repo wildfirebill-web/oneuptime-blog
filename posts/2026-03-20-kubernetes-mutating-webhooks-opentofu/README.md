@@ -14,6 +14,7 @@ Kubernetes Mutating Admission Webhooks intercept API requests before objects are
 
 ```hcl
 # main.tf - Deploy the mutating webhook server
+
 resource "kubernetes_deployment_v1" "webhook_server" {
   metadata {
     name      = "mutating-webhook-server"

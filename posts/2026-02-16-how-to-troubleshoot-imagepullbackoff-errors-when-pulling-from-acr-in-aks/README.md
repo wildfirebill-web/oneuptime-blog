@@ -21,6 +21,7 @@ To see what is actually happening, describe the pod.
 
 ```bash
 # Get detailed information about the failing pod
+
 # The Events section at the bottom shows the pull error details
 kubectl describe pod <pod-name> -n <namespace>
 ```

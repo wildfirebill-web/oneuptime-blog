@@ -28,6 +28,7 @@ In this guide you will deploy JupyterHub using Flux CD with GitHub OAuth authent
 
 ```yaml
 # clusters/production/sources/jupyterhub.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

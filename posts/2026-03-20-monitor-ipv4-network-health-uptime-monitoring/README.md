@@ -8,12 +8,13 @@ Description: Monitor IPv4 network health and service availability using Promethe
 
 ## Introduction
 
-IPv4 network health monitoring covers ICMP reachability, TCP port availability, and HTTP endpoint health. A layered approach — active probing at regular intervals with alerting on failure — provides early warning before users are impacted.
+IPv4 network health monitoring covers ICMP reachability, TCP port availability, and HTTP endpoint health. A layered approach - active probing at regular intervals with alerting on failure - provides early warning before users are impacted.
 
 ## Prometheus Blackbox Exporter
 
 ```yaml
 # blackbox.yml
+
 modules:
   icmp_check:
     prober: icmp
@@ -101,7 +102,7 @@ groups:
 
 ```bash
 #!/bin/bash
-# monitor_ipv4.sh — simple ping-based monitor
+# monitor_ipv4.sh - simple ping-based monitor
 
 HOSTS=(
   "10.1.1.1:Core-Router"
@@ -145,7 +146,7 @@ docker run -d \
 
 ## Key Metrics to Monitor
 
-```
+```text
 Network Layer:
   ICMP RTT to gateway:        < 5ms (LAN), < 50ms (WAN)
   Packet loss to gateway:     = 0%

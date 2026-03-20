@@ -23,6 +23,7 @@ This part is straightforward. Configure the OTel Collector to export to Kafka:
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

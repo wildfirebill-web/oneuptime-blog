@@ -18,6 +18,7 @@ The `passwd -l` command locks the account by prepending an exclamation mark (`!`
 
 ```bash
 # Lock the user's password
+
 sudo passwd -l jsmith
 ```
 

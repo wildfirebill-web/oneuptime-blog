@@ -122,6 +122,7 @@ When you need to look at what Envoy is actually configured with, `proxy-config` 
 
 ```bash
 # View listeners
+
 istioctl proxy-config listeners httpbin-abc123.default
 
 # View routes

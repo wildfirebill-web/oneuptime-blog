@@ -18,6 +18,7 @@ Let's start with a fresh project. Playwright has a handy init command that scaff
 
 ```bash
 # Create a new project directory
+
 mkdir playwright-demo && cd playwright-demo
 
 # Initialize Playwright - this installs dependencies and creates config files

@@ -41,6 +41,7 @@ The most common cause is not having a memory limiter processor configured. This 
 
 ```yaml
 # PROBLEM: No memory protection
+
 processors:
   batch:
     timeout: 5s

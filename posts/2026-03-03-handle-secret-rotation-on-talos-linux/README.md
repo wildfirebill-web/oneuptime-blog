@@ -43,6 +43,7 @@ Let us start with the manual approach, which is fine for small clusters or infre
 
 ```bash
 # Update a secret with new credentials
+
 kubectl create secret generic db-credentials \
   --from-literal=username=dbadmin \
   --from-literal=password='NewR0tatedP@ss2024!' \

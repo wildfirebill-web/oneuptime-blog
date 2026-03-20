@@ -34,6 +34,7 @@ The file-based approach is strongly recommended because:
 
 ```yaml
 # customHttp.yml - Custom HTTP headers configuration
+
 customHeaders:
   - pattern: '**/*'
     headers:

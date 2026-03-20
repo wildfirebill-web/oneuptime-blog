@@ -39,6 +39,7 @@ flowchart LR
 
 ```yaml
 # jaeger-all-in-one.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

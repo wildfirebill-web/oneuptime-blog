@@ -18,6 +18,7 @@ By default, Quadlet generates container names based on the unit file name with a
 
 ```ini
 # ~/.config/containers/systemd/webapp.container
+
 [Container]
 Image=docker.io/library/nginx:alpine
 PublishPort=8080:80

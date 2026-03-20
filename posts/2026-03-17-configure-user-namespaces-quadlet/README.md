@@ -24,6 +24,7 @@ Let Podman automatically configure the user namespace:
 
 ```ini
 # ~/.config/containers/systemd/secure-app.container
+
 [Unit]
 Description=Application with automatic user namespace
 

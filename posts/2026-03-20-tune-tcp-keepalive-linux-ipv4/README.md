@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP Keepalive, Linux, sysctl, IPv4, Networking, Connection Tuning, Performance
+Tags: TCP Keepalive, Linux, Sysctl, IPv4, Networking, Connection Tuning, Performance
 
 Description: Learn how to tune TCP keepalive parameters on Linux to detect dead connections, prevent NAT table timeouts, and maintain long-lived IPv4 connections in production environments.
 
@@ -14,6 +14,7 @@ TCP keepalive probes detect dead connections without application-layer heartbeat
 
 ```bash
 # View current values
+
 sysctl net.ipv4.tcp_keepalive_time
 sysctl net.ipv4.tcp_keepalive_intvl
 sysctl net.ipv4.tcp_keepalive_probes

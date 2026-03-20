@@ -1,4 +1,4 @@
-# How to Exclude Containers from Watchtower Updates via Portainer
+# How to Exclude Containers from Watchtower Updates via Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Run Watchtower with `WATCHTOWER_LABEL_ENABLE=true` so it only updates explicitly
 
 ```yaml
 # watchtower stack
+
 services:
   watchtower:
     image: containrrr/watchtower:latest

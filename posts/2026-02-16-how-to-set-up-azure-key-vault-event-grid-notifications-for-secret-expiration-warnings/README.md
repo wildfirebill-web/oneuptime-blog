@@ -40,6 +40,7 @@ If you have never used Event Grid in your subscription, you may need to register
 
 ```bash
 # Register the Event Grid resource provider
+
 az provider register --namespace Microsoft.EventGrid
 
 # Check registration status - wait until it shows "Registered"

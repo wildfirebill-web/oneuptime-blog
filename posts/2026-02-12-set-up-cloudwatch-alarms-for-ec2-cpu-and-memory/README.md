@@ -16,6 +16,7 @@ Before creating alarms, you need somewhere to send the alerts. Create an SNS top
 
 ```bash
 # Create an SNS topic for EC2 alerts
+
 TOPIC_ARN=$(aws sns create-topic --name ec2-alerts --query 'TopicArn' --output text)
 
 # Subscribe an email address

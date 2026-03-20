@@ -89,6 +89,7 @@ Define a minimum set of tags that every resource must have:
 
 ```yaml
 # Minimum required tags
+
 cost-center: "engineering-platform"
 product: "api-gateway"
 team: "gateway-team"

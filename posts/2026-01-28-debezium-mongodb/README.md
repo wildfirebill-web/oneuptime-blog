@@ -74,6 +74,7 @@ Docker Compose for development:
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 services:
   mongodb:

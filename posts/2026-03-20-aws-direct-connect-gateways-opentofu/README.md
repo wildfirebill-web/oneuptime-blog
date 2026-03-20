@@ -23,6 +23,7 @@ resource "aws_dx_gateway" "main" {
 
 ```hcl
 # A Private Virtual Interface connects to a VGW or DXGW
+
 resource "aws_dx_private_virtual_interface" "main" {
   connection_id    = var.dx_connection_id  # the Direct Connect connection ID
   name             = "${var.app_name}-pvif"
@@ -122,4 +123,4 @@ tofu apply tfplan
 
 ## Summary
 
-AWS Direct Connect provides dedicated, reliable hybrid connectivity. OpenTofu manages Direct Connect Gateways, virtual interfaces, Transit Gateway associations, and CloudWatch alarms — creating a complete, code-managed hybrid networking setup.
+AWS Direct Connect provides dedicated, reliable hybrid connectivity. OpenTofu manages Direct Connect Gateways, virtual interfaces, Transit Gateway associations, and CloudWatch alarms - creating a complete, code-managed hybrid networking setup.

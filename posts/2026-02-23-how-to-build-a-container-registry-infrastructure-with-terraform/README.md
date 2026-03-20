@@ -29,6 +29,7 @@ First, let's create a reusable module for ECR repositories that encodes all our 
 
 ```hcl
 # modules/ecr-repository/main.tf - Reusable ECR repository module
+
 variable "name" {
   type        = string
   description = "Repository name (e.g., team/service)"

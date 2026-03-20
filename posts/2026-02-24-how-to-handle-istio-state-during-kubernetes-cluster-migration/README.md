@@ -18,6 +18,7 @@ Before you start, inventory everything:
 
 ```bash
 # Count all Istio resources
+
 echo "=== Istio Resource Inventory ==="
 for group in networking.istio.io security.istio.io telemetry.istio.io; do
   resources=$(kubectl api-resources --api-group="$group" -o name 2>/dev/null)

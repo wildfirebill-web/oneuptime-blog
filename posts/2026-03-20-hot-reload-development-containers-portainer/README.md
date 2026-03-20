@@ -1,4 +1,4 @@
-# How to Set Up Hot Reload for Development Containers in Portainer
+# How to Set Up Hot Reload for Development Containers in Portainer - Development
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure hot reload for development containers in Por
 
 ---
 
-Hot reload — automatically restarting or refreshing the application when code changes — is essential for productive development. This guide covers the common patterns for enabling hot reload across different tech stacks in Portainer-managed containers.
+Hot reload - automatically restarting or refreshing the application when code changes - is essential for productive development. This guide covers the common patterns for enabling hot reload across different tech stacks in Portainer-managed containers.
 
 ## The Core Principle: Bind Mounts
 
@@ -16,6 +16,7 @@ Hot reload works by mounting your local source code directory into the container
 
 ```yaml
 # Key: use a bind mount (host path) instead of a COPY in Dockerfile
+
 volumes:
   - ./src:/app    # Changes on host are immediately visible inside container
   # NOT: - app_data:/app  (named volumes don't reflect host file changes)

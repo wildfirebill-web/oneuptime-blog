@@ -34,6 +34,7 @@ With the above configuration, every taggable resource automatically gets those t
 
 ```hcl
 # These tags are set explicitly
+
 resource "aws_instance" "web" {
   ami           = var.ami_id
   instance_type = "t3.micro"

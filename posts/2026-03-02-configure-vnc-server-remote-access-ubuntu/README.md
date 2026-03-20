@@ -25,6 +25,7 @@ This guide covers TigerVNC for standalone virtual desktops and x11vnc for sharin
 
 ```bash
 # Install TigerVNC server and a desktop environment
+
 sudo apt update
 sudo apt install -y tigervnc-standalone-server tigervnc-common
 

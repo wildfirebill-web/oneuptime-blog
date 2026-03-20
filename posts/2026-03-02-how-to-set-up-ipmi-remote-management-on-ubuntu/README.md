@@ -23,6 +23,7 @@ Vendor implementations: Dell iDRAC, HP iLO, Supermicro IPMI, Lenovo XClarity.
 
 ```bash
 # Install ipmitool
+
 sudo apt update
 sudo apt install -y ipmitool
 

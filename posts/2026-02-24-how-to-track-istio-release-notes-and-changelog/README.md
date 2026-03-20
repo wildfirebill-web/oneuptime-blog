@@ -49,6 +49,7 @@ Every release is tagged on GitHub with detailed notes:
 
 ```bash
 # List recent releases
+
 gh release list --repo istio/istio --limit 10
 
 # View a specific release

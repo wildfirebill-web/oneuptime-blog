@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Networking, Containers, Bridge Network, Overlay Networks, DevOps
+Tags: Docker, Docker Networking, Containers, Bridge Network, Overlay Network, DevOps
 
 Description: Master Docker network commands to create, inspect, connect, and troubleshoot container networks for reliable service communication.
 
@@ -119,6 +119,7 @@ Extract specific fields with Go template formatting:
 
 ```bash
 # Get the subnet of a network
+
 docker network inspect --format '{{range .IPAM.Config}}{{.Subnet}}{{end}}' my-app-network
 ```
 

@@ -55,6 +55,7 @@ The quickest way to get started is using Docker Compose. This configuration incl
 
 ```yaml
 # docker-compose.yml
+
 version: '3.4'
 services:
   weaviate:

@@ -42,6 +42,7 @@ flowchart LR
 
 ```bash
 # macOS
+
 brew install tilt-dev/tap/tilt
 
 # Linux
@@ -296,7 +297,7 @@ k8s_resource('postgres', labels=['database'])
 k8s_resource('redis', labels=['cache'])
 ```
 
-### Resource Dependencies
+Resource Dependencies
 
 ```python
 # Tiltfile with dependencies
@@ -518,7 +519,7 @@ RUN npm prune --production
 CMD ["node", "src/index.js"]
 ```
 
-## Resource Management
+Resource Management
 
 ### Custom Resource Labels
 

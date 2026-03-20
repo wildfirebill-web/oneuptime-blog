@@ -33,6 +33,7 @@ Before enforcing zero trust, ensure the baseline is accurate:
 
 ```bash
 # Review discovered process profiles
+
 curl -sk \
   "https://neuvector-manager:8443/v1/group?start=0&limit=100" \
   -H "X-Auth-Token: ${TOKEN}" | \
@@ -282,4 +283,4 @@ curl -sk \
 
 ## Conclusion
 
-Implementing zero trust with NeuVector requires a systematic approach: start in Discover mode, review and promote learned rules, add default-deny policies, harden process profiles, and gradually transition to Protect mode. The result is a security posture where every container action is explicitly authorized — making breaches detectable and limiting their blast radius. Zero trust is a journey, not a destination; continuously refine your policies as your applications evolve.
+Implementing zero trust with NeuVector requires a systematic approach: start in Discover mode, review and promote learned rules, add default-deny policies, harden process profiles, and gradually transition to Protect mode. The result is a security posture where every container action is explicitly authorized - making breaches detectable and limiting their blast radius. Zero trust is a journey, not a destination; continuously refine your policies as your applications evolve.

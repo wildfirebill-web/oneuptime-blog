@@ -345,6 +345,7 @@ func checkPaymentService() bool {
 
 ```yaml
 # DO: Check dependencies in readiness, not liveness
+
 readinessProbe:
   httpGet:
     path: /ready  # Checks dependencies

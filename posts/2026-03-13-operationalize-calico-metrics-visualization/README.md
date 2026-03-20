@@ -35,6 +35,7 @@ Escalation criteria:
 
 ```promql
 # IP pool forecast: at current growth rate, when will pool fill up?
+
 predict_linear(
   sum(ipam_allocations_per_node)[7d:1h],
   7 * 24 * 3600  # predict 7 days out

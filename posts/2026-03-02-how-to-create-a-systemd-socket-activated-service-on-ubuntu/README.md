@@ -49,6 +49,7 @@ Documentation=https://docs.myapp.example.com
 
 [Socket]
 # Listen on TCP port 8080
+
 ListenStream=8080
 
 # Or listen on a Unix domain socket

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, System Administration, Troubleshooting, Network Interfaces, Systemd-networkd, NetworkManager
+Tags: Linux, Networking, System Administration, Troubleshooting, Network Interfaces, systemd-networkd, NetworkManager
 
 Description: A practical guide to diagnosing and resolving network interface failures on Linux systems, covering hardware checks, driver issues, and configuration problems.
 
@@ -40,6 +40,7 @@ stateDiagram-v2
 
 ```bash
 # List all network interfaces with their states
+
 # Shows whether interfaces are UP, DOWN, or have NO-CARRIER
 ip link show
 

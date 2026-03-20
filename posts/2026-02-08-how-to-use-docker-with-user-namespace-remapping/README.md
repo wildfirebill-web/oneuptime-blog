@@ -18,6 +18,7 @@ Check what UID your containers actually use on the host:
 
 ```bash
 # Start a container running as root
+
 docker run -d --name test-root nginx:latest
 
 # Check the process UID on the host

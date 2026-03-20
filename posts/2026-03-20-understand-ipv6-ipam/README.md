@@ -39,6 +39,7 @@ graph TD
 ```python
 #!/usr/bin/env python3
 # ipv6_address_plan.py
+
 import ipaddress
 
 def show_address_plan(org_prefix: str):

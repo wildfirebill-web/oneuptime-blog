@@ -22,6 +22,7 @@ Portainer uses a subset of Mustache/Go template syntax for variables:
 
 ```yaml
 # Basic variable substitution
+
 {{ .variable_name }}
 
 # Variable with a default value
@@ -116,7 +117,7 @@ services:
       - {{ .config_dir | default "/etc/myapp" }}:/config
 ```
 
-### Resource Limits
+Resource Limits
 
 ```yaml
 services:
@@ -208,10 +209,10 @@ For each Mustache variable, add a corresponding entry in the **Variables** secti
 ## Tips and Best Practices
 
 1. **Always use defaults for optional settings** to make templates more user-friendly
-2. **Never set defaults for passwords** — force users to provide their own
-3. **Use descriptive labels** — "MySQL root password" is clearer than "root_pw"
-4. **Avoid complex logic** — Portainer's Mustache support is limited; keep variables simple
-5. **Test substitution** — mentally substitute test values to verify YAML remains valid
+2. **Never set defaults for passwords** - force users to provide their own
+3. **Use descriptive labels** - "MySQL root password" is clearer than "root_pw"
+4. **Avoid complex logic** - Portainer's Mustache support is limited; keep variables simple
+5. **Test substitution** - mentally substitute test values to verify YAML remains valid
 
 ## Known Limitations
 

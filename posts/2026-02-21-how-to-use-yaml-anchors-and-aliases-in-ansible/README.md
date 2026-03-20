@@ -16,6 +16,7 @@ An anchor is defined with `&name` and referenced with `*name`:
 
 ```yaml
 # Define an anchor with &
+
 defaults: &default_settings
   timeout: 30
   retries: 3

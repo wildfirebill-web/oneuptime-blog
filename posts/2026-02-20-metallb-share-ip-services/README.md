@@ -50,6 +50,7 @@ For two services to share an IP address in MetalLB, they must meet these conditi
 
 ```yaml
 # ip-pool.yaml
+
 # A standard IP address pool - no special config needed for sharing.
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

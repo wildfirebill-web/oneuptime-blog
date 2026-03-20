@@ -1,8 +1,8 @@
-# How to Test Kubewarden Policies Locally
+# How to Test Kubewarden Policies Locally - Locally
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubewarden, Kubernetes, Policy, Testing, kwctl
+Tags: Kubewarden, Kubernetes, Policy, Testing, Kwctl
 
 Description: Learn how to test Kubewarden policies locally using kwctl before deploying them to your cluster, ensuring they behave as expected without risking production disruptions.
 
@@ -21,6 +21,7 @@ Testing Kubewarden policies before deploying them to your cluster is essential f
 
 ```bash
 # Linux (amd64)
+
 curl -LO https://github.com/kubewarden/kwctl/releases/latest/download/kwctl-linux-amd64
 chmod +x kwctl-linux-amd64
 sudo mv kwctl-linux-amd64 /usr/local/bin/kwctl

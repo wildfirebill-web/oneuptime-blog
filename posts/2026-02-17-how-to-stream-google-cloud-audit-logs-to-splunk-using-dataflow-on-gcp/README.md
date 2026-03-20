@@ -46,6 +46,7 @@ Make sure the audit log types you need are enabled. Admin Activity logs are alwa
 
 ```bash
 # Enable Data Access audit logs for all services
+
 # Create the audit config
 cat > audit-config.json << 'EOF'
 {

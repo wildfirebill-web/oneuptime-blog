@@ -30,6 +30,7 @@ These are typically listed alongside the download link. You can also fetch them 
 
 ```bash
 # Download the release files for Ubuntu 24.04 LTS
+
 cd ~/Downloads
 
 # Download the ISO

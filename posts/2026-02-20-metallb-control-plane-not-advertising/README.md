@@ -36,6 +36,7 @@ flowchart TD
 
 ```bash
 # List speaker pods and the nodes they are running on
+
 kubectl get pods -n metallb-system -l component=speaker -o wide
 ```
 

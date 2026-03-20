@@ -46,6 +46,7 @@ Add `skipAnalysis: true` to your Canary resource:
 
 ```yaml
 # canary-skip.yaml
+
 apiVersion: flagger.app/v1beta1
 kind: Canary
 metadata:

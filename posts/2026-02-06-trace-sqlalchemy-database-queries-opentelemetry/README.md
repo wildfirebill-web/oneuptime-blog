@@ -50,6 +50,7 @@ from opentelemetry.sdk.resources import Resource
 from opentelemetry.instrumentation.sqlalchemy import SQLAlchemyInstrumentor
 
 # Define your service information
+
 resource = Resource(attributes={
     "service.name": "user-service",
     "service.version": "1.0.0",

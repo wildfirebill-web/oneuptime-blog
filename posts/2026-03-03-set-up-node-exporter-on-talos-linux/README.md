@@ -38,6 +38,7 @@ You need:
 
 ```bash
 # Verify your cluster
+
 kubectl get nodes
 ```
 

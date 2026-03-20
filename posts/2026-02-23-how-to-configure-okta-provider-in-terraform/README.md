@@ -30,6 +30,7 @@ This guide covers setting up the Okta provider, authenticating with API tokens, 
 
 ```hcl
 # versions.tf - Declare the Okta provider
+
 terraform {
   required_version = ">= 1.0"
 

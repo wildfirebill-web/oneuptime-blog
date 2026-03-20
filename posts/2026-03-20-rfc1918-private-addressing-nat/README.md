@@ -20,7 +20,7 @@ RFC 1918 defines three ranges for private (non-routable) IPv4 use:
 
 NAT translates private source IPs to a public IP on outbound packets:
 
-```
+```text
 Internal host: 192.168.1.10 → internet destination 8.8.8.8
 NAT gateway replaces:
   Source IP: 192.168.1.10 → 203.0.113.1 (public IP)
@@ -34,6 +34,7 @@ Return traffic:
 
 ```bash
 # Enable IP forwarding
+
 echo 1 > /proc/sys/net/ipv4/ip_forward
 echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.d/99-nat.conf
 sysctl -p /etc/sysctl.d/99-nat.conf
@@ -59,7 +60,7 @@ iptables-save > /etc/iptables/rules.v4
 
 Port Address Translation (PAT) = many-to-one NAT:
 
-```
+```text
 ! Define inside and outside interfaces
 interface GigabitEthernet0/0
  ip address 192.168.1.1 255.255.255.0
@@ -89,7 +90,7 @@ show ip nat statistics
 
 For outbound NAT with a pool of public IPs (instead of single IP):
 
-```
+```text
 ! Define NAT pool
 ip nat pool PUBLIC_POOL 203.0.113.100 203.0.113.110 netmask 255.255.255.0
 
@@ -101,7 +102,7 @@ ip nat inside source list INTERNAL_HOSTS pool PUBLIC_POOL overload
 
 For servers that must be reachable from the internet:
 
-```
+```text
 ! Map internal server to public IP (static NAT)
 ip nat inside source static 192.168.1.50 203.0.113.50
 

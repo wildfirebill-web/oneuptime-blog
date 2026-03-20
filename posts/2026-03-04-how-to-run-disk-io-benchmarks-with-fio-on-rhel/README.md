@@ -14,6 +14,7 @@ fio (Flexible I/O Tester) is the standard tool for disk benchmarking on Linux. I
 
 ```bash
 # Install fio from the base RHEL repository
+
 sudo dnf install -y fio
 ```
 

@@ -20,6 +20,7 @@ import time
 r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
 # Producer: Add messages to queue
+
 def enqueue(queue_name, message):
     """Add message to end of queue"""
     payload = json.dumps({

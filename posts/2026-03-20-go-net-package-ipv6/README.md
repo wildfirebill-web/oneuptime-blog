@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, Networking, net package, TCP, UDP, Programming
+Tags: Go, IPv6, Networking, Net package, TCP, UDP, Programming
 
 Description: Learn how to use Go's standard library net package to build IPv6-compatible TCP servers, UDP listeners, dial connections, and handle dual-stack IPv4/IPv6 networking.
 
@@ -173,7 +173,7 @@ func parseIPv6Examples() {
         "::1",
         "fe80::1",
         "::ffff:192.168.1.1",  // IPv4-mapped IPv6
-        "192.168.1.1",          // IPv4 — not IPv6
+        "192.168.1.1",          // IPv4 - not IPv6
         "invalid",
     }
 
@@ -273,7 +273,7 @@ func resolveIPv6(hostname string) {
 
 ## Best Practices
 
-1. **Use `":port"` not `"0.0.0.0:port"`** — the former enables dual-stack on most systems
+1. **Use `":port"` not `"0.0.0.0:port"`** - the former enables dual-stack on most systems
 2. **Use `net.SplitHostPort()`** to handle both IPv4 and IPv6 address:port strings
 3. **Check `ip.To4() == nil`** to determine if an address is truly IPv6
 4. **Use zone IDs** (`%eth0`) when working with link-local addresses
@@ -287,4 +287,4 @@ Go's `net` package makes IPv6 development straightforward. Most server and clien
 
 ---
 
-*Monitor your Go services with [OneUptime](https://oneuptime.com) — application monitoring with IPv6 support.*
+*Monitor your Go services with [OneUptime](https://oneuptime.com) - application monitoring with IPv6 support.*

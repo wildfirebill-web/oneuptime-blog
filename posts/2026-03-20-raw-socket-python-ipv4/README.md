@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Raw Socket, ICMP, Networking, Linux
+Tags: Python, IPv4, Raw Sockets, ICMP, Networking, Linux
 
 Description: Learn how to work with raw IPv4 sockets in Python to craft and send custom packets, implement ICMP ping, and receive raw IP traffic for network analysis purposes.
 
@@ -10,7 +10,7 @@ Description: Learn how to work with raw IPv4 sockets in Python to craft and send
 
 Raw sockets (`SOCK_RAW`) bypass the transport layer and give direct access to IP packets. They require root/administrator privileges on Linux/macOS.
 
-```
+```text
 Normal Socket:    App ↔ TCP/UDP ↔ IP ↔ Ethernet
 Raw Socket:       App           ↔ IP ↔ Ethernet
 ```
@@ -69,6 +69,7 @@ def ping(dest_ip: str, count: int = 4, timeout: float = 2.0) -> None:
                 print(f"Request timeout for seq={seq}")
 
 # Must run as root / Administrator
+
 # ping("8.8.8.8")
 ```
 
@@ -116,4 +117,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_IP) as s:
 
 ## Conclusion
 
-Raw sockets give direct access to IP-layer packets but require elevated privileges. Use them for diagnostic tools (ping, traceroute), network monitors, and custom protocol implementations. For IPv4 sniffing, `socket.IPPROTO_IP` with `IP_HDRINCL` includes the IP header in received data. For production network analysis, prefer libraries like Scapy or PyShark which handle platform differences and provide higher-level packet parsing. Never use raw sockets to forge source IPs for malicious purposes — most ISPs implement ingress filtering (BCP38) that drops spoofed packets.
+Raw sockets give direct access to IP-layer packets but require elevated privileges. Use them for diagnostic tools (ping, traceroute), network monitors, and custom protocol implementations. For IPv4 sniffing, `socket.IPPROTO_IP` with `IP_HDRINCL` includes the IP header in received data. For production network analysis, prefer libraries like Scapy or PyShark which handle platform differences and provide higher-level packet parsing. Never use raw sockets to forge source IPs for malicious purposes - most ISPs implement ingress filtering (BCP38) that drops spoofed packets.

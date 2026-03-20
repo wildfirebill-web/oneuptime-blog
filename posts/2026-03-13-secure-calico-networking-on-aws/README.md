@@ -47,6 +47,7 @@ Apply minimum required rules to worker node security groups:
 
 ```bash
 # Create a restrictive worker security group
+
 SG_ID=$(aws ec2 create-security-group \
   --group-name k8s-workers-sg \
   --description "Calico Kubernetes Workers" \

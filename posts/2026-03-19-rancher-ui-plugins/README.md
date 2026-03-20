@@ -405,6 +405,7 @@ Add translations for your plugin:
 
 ```yaml
 # l10n/en-us.yaml
+
 product:
   my-plugin: "My Plugin"
 

@@ -32,6 +32,7 @@ Ensure you have the following tools installed:
 
 ```bash
 # For Cilium
+
 cilium version
 hubble version
 

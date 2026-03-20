@@ -24,6 +24,7 @@ HashiCorp publishes official Packer images on Docker Hub. Start with a simple ve
 
 ```bash
 # Verify Packer runs correctly in Docker
+
 docker run --rm hashicorp/packer:latest version
 ```
 

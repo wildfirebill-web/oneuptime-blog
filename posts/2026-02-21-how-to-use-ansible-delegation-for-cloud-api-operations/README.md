@@ -28,6 +28,7 @@ Here is a playbook that provisions and configures AWS infrastructure alongside s
 
 ```yaml
 # aws-cloud-ops.yml - AWS operations mixed with server configuration
+
 ---
 - name: Deploy application with AWS resource management
   hosts: webservers

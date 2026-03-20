@@ -41,6 +41,7 @@ This is the most important managed rule group. It covers the OWASP Top 10 vulner
 
 ```bash
 # Add the Common Rule Set to your Web ACL
+
 aws wafv2 update-web-acl \
   --name my-app-waf \
   --scope REGIONAL \

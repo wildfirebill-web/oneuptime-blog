@@ -39,6 +39,7 @@ output "parsed_csv" {
 
 ```hcl
 # instances.csv:
+
 # name,instance_type,environment
 # web-1,t3.micro,dev
 # web-2,t3.medium,staging
@@ -153,7 +154,7 @@ tofu console
 
 ## Important Notes
 
-- All values are strings — convert numbers with `tonumber()` as needed.
+- All values are strings - convert numbers with `tonumber()` as needed.
 - CSV values with commas must be quoted: `"value,with,commas"`.
 - Empty cells produce empty strings.
 

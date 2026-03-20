@@ -482,6 +482,7 @@ Check which resources Kyverno has generated:
 
 ```bash
 # List all generated resources
+
 kubectl get clusterpolicy -o yaml | grep -A 10 generate
 
 # Check for generate rules in policy reports

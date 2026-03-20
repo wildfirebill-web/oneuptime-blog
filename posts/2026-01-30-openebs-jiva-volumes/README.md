@@ -109,6 +109,7 @@ Create a values file to configure the installation:
 
 ```yaml
 # openebs-values.yaml
+
 localprovisioner:
   enabled: true
   basePath: "/var/openebs/local"
@@ -584,7 +585,7 @@ Jiva performance depends on network and disk speed. Here are tuning recommendati
 2. **Separate system and storage disks**: Avoid I/O contention.
 3. **Monitor disk utilization**: Alert when disks are over 80% full.
 
-### Resource Limits
+Resource Limits
 
 Adjust controller and replica resources based on workload:
 

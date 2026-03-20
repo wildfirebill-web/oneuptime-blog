@@ -14,6 +14,7 @@ Compliance reporting in Kubernetes environments is time-consuming when done manu
 
 ```bash
 # Schedule regular CIS benchmark scans
+
 kubectl apply -f - <<EOF
 apiVersion: batch/v1
 kind: CronJob

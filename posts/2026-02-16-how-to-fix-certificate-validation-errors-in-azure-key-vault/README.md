@@ -25,6 +25,7 @@ Key Vault supports two formats for import:
 
 ```bash
 # Check if a PFX file is valid and readable
+
 # You will be prompted for the password
 openssl pkcs12 -info -in mycert.pfx -nokeys
 

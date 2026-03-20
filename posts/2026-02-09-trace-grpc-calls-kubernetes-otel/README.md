@@ -204,6 +204,7 @@ Deploy gRPC services with proper configuration:
 
 ```yaml
 # payment-service-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

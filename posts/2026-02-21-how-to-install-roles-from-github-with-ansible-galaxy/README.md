@@ -18,6 +18,7 @@ The simplest case is a public repo. Use the `src` field in your requirements fil
 
 ```yaml
 # requirements.yml - install a role from a public GitHub repo
+
 ---
 roles:
   - name: my_nginx_role

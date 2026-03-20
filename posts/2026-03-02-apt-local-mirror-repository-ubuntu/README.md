@@ -29,6 +29,7 @@ This post covers configuring APT clients to use these mirrors, with focus on the
 
 ```bash
 # Install apt-cacher-ng on your designated cache server
+
 sudo apt install apt-cacher-ng
 
 # Start and enable the service

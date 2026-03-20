@@ -20,6 +20,7 @@ First, create a secret using the Podman CLI:
 
 ```bash
 # Create a secret from a string
+
 echo -n "my-database-password" | podman secret create db_password -
 
 # Create a secret from a file

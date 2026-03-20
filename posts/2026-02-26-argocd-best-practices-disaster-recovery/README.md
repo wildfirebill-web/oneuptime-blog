@@ -38,6 +38,7 @@ Understanding what needs to be recovered:
 
 ```bash
 # Export all ArgoCD resources
+
 argocd admin export > argocd-backup-$(date +%Y%m%d-%H%M%S).yaml
 
 # This exports:

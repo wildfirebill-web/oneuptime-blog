@@ -119,6 +119,7 @@ Now connect the CLU model to your bot. Install the Azure AI Language SDK:
 
 ```bash
 # Install the Azure AI Language client library
+
 pip install azure-ai-language-conversations
 ```
 

@@ -18,6 +18,7 @@ Check pod events for OOMKilled containers.
 
 ```bash
 # View pod events
+
 kubectl describe pod my-app-abc123 -n production | grep -A 5 Events
 
 # Check for OOMKilled containers

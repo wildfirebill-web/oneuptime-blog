@@ -30,6 +30,7 @@ The fix is to switch the exporter to HTTP/protobuf, which works over HTTP/1.1:
 
 ```yaml
 # collector-config.yaml
+
 exporters:
   otlphttp:
     endpoint: "https://otlp.backend.example.com"

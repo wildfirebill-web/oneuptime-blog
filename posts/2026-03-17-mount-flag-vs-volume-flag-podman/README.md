@@ -20,6 +20,7 @@ The `-v` flag uses a colon-separated string with three fields:
 
 ```bash
 # Syntax: -v source:destination:options
+
 # Named volume
 podman run -d -v mydata:/app/data docker.io/library/nginx:latest
 

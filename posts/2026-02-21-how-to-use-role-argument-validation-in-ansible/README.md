@@ -36,6 +36,7 @@ Here is a simple argument spec for a webserver role:
 
 ```yaml
 # roles/webserver/meta/argument_specs.yml
+
 # Define the expected inputs for this role
 ---
 argument_specs:

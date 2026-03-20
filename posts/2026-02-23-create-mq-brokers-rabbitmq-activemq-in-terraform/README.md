@@ -44,6 +44,7 @@ A single-instance broker is good for development and testing. It runs on one ins
 
 ```hcl
 # Security group for the ActiveMQ broker
+
 resource "aws_security_group" "activemq" {
   name        = "activemq-broker-sg"
   description = "Security group for Amazon MQ ActiveMQ broker"

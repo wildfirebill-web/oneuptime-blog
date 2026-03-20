@@ -14,6 +14,7 @@ Jenkins on RHEL works best with Java 17, which is the recommended LTS version. T
 
 ```bash
 # Install OpenJDK 17 (JDK includes the compiler, JRE is runtime only)
+
 sudo dnf install -y java-17-openjdk java-17-openjdk-devel
 
 # Verify the installed version

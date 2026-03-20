@@ -213,6 +213,7 @@ Now add your Istio resources to the repository. For example, a mesh-wide PeerAut
 
 ```yaml
 # infrastructure/istio/mesh-config/peer-authentication.yaml
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

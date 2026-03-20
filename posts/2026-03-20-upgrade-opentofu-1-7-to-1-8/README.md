@@ -21,6 +21,7 @@ OpenTofu 1.8 introduced early variable/local evaluation, the `tofu.applying` bui
 
 ```bash
 # Check current version
+
 tofu version
 # OpenTofu v1.7.x
 

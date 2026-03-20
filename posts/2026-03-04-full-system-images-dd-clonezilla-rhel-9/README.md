@@ -26,6 +26,7 @@ Sometimes you need a complete disk image, not just file backups. dd creates byte
 
 ```bash
 # Create an image of the entire disk
+
 # WARNING: Run this from a live/rescue environment, not the running system
 sudo dd if=/dev/sda of=/backup/sda-image-$(date +%Y%m%d).img bs=64K status=progress
 

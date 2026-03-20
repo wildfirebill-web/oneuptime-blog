@@ -30,6 +30,7 @@ Define all your virtual hosts in a clean variable structure.
 
 ```yaml
 # group_vars/apache_servers.yml
+
 ---
 apache_vhosts:
   - name: company-website

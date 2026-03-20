@@ -32,6 +32,7 @@ graph TD
 
 ```yaml
 # namespaces.yaml
+
 # Create separate namespaces for different teams.
 apiVersion: v1
 kind: Namespace
@@ -50,7 +51,7 @@ metadata:
     environment: production
 ```
 
-## Resource Quotas
+Resource Quotas
 
 ### Compute Resource Quotas
 

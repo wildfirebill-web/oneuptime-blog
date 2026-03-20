@@ -29,6 +29,7 @@ You need Vagrant and a VM provider installed.
 
 ```bash
 # Install Vagrant
+
 # macOS
 brew install vagrant
 

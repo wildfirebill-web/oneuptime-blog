@@ -75,6 +75,7 @@ Install the ECK operator using kubectl:
 
 ```bash
 # Install ECK Custom Resource Definitions
+
 kubectl create -f https://download.elastic.co/downloads/eck/2.11.0/crds.yaml
 
 # Install ECK operator with RBAC

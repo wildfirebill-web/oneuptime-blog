@@ -20,6 +20,7 @@ Without multi-stage builds, you either ship build tools in your production image
 
 ```bash
 # Single-stage build: large image with build tools
+
 # Resulting image includes Go compiler, source code, and binary
 
 # Multi-stage build: tiny image with only the binary

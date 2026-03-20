@@ -57,6 +57,7 @@ If you are fine with the bucket owner having full control (which is the case for
 
 ```hcl
 # Before - this breaks
+
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "my-bucket-name"
   acl    = "private"

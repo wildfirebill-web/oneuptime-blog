@@ -29,6 +29,7 @@ Here is a Python example that redacts known PHI attribute patterns:
 
 ```python
 # Custom SpanProcessor that redacts PHI attributes before export
+
 from opentelemetry.sdk.trace import SpanProcessor
 import re
 

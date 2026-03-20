@@ -20,6 +20,7 @@ The Istio ingress gateway already has a health check endpoint built in on port 1
 
 ```bash
 # From inside the cluster
+
 kubectl exec <any-pod> -- curl -s http://istio-ingressgateway.istio-system:15021/healthz/ready
 ```
 

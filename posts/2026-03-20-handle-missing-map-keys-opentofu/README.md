@@ -17,6 +17,7 @@ variable "settings" {
 }
 
 # This fails if "instance_type" is not in the map
+
 output "instance_type" {
   value = var.settings["instance_type"]  # Error: key not found
 }
@@ -39,7 +40,7 @@ The third argument is required in OpenTofu when you want a default. If you omit 
 
 ## Solution 2: try Function
 
-`try` is more flexible — it works for any expression, not just map access:
+`try` is more flexible - it works for any expression, not just map access:
 
 ```hcl
 locals {
@@ -99,7 +100,7 @@ variable "config" {
 }
 
 resource "aws_instance" "app" {
-  # No lookup needed — all keys have defaults
+  # No lookup needed - all keys have defaults
   instance_type = var.config.instance_type
 }
 ```

@@ -27,6 +27,7 @@ Linkerd requires certificates for mTLS identity. Generate them before installing
 
 ```bash
 # Generate trust anchor certificate (valid for 10 years)
+
 step certificate create root.linkerd.cluster.local ca.crt ca.key \
   --profile root-ca --no-password --insecure --not-after=87600h
 

@@ -41,6 +41,7 @@ AWS EventBridge is an excellent event router for Terraform automation. You can c
 
 ```hcl
 # Create an EventBridge event bus for infrastructure events
+
 resource "aws_cloudwatch_event_bus" "infrastructure" {
   name = "infrastructure-events"
 }

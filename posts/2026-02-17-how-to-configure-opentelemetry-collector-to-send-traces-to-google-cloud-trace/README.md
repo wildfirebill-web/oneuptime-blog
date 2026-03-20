@@ -35,6 +35,7 @@ This configuration sets up the collector to receive OTLP traces and export them 
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   # OTLP receiver accepts traces from applications
   otlp:

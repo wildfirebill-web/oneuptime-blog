@@ -36,6 +36,7 @@ Install the `containers.podman` collection from Ansible Galaxy:
 
 ```bash
 # Install the Podman collection
+
 ansible-galaxy collection install containers.podman
 ```
 

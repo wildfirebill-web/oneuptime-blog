@@ -16,6 +16,7 @@ Jenkins requires Java. Install OpenJDK 17:
 
 ```bash
 # Install Java 17
+
 sudo dnf install -y java-17-openjdk java-17-openjdk-devel
 
 # Verify the installation

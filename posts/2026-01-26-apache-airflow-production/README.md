@@ -70,6 +70,7 @@ Docker Compose provides a solid foundation for production deployments, especiall
 
 ```yaml
 # docker-compose.yaml
+
 # Production Airflow deployment with CeleryExecutor
 
 version: '3.8'

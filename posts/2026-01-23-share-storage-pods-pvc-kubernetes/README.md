@@ -58,6 +58,7 @@ Set up a simple NFS server for testing or small deployments:
 
 ```yaml
 # nfs-server.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

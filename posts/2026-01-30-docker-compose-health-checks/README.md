@@ -370,6 +370,7 @@ For complex health checks, create a dedicated script:
 # healthcheck.sh
 
 # Check if the main process is running
+
 if ! pgrep -x "myprocess" > /dev/null; then
     echo "Main process not running"
     exit 1

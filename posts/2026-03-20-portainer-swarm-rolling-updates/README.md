@@ -14,6 +14,7 @@ Rolling updates deploy new versions of a service gradually, replacing old tasks 
 
 ```yaml
 # rolling-update-stack.yml
+
 version: '3.8'
 
 services:

@@ -49,6 +49,7 @@ Create a service with Local policy:
 
 ```yaml
 # service-local.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

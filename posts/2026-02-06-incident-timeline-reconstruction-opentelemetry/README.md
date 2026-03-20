@@ -34,6 +34,7 @@ The first requirement is making sure your logs carry trace context. Here is how 
 
 ```python
 # Configure OpenTelemetry logging with trace context injection
+
 import logging
 from opentelemetry import trace
 from opentelemetry.sdk._logs import LoggerProvider, LoggingHandler

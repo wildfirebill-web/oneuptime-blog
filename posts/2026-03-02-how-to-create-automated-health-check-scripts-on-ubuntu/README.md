@@ -26,6 +26,7 @@ Start with a simple script that checks multiple services and reports failures.
 ```bash
 #!/bin/bash
 # /usr/local/bin/health-check.sh
+
 # Basic service health check with alerting
 
 set -euo pipefail
@@ -171,7 +172,7 @@ check_http http://localhost/health  # App health endpoint
 check_ssl_cert example.com 443 30  # SSL cert expiry check
 ```
 
-## Resource Utilization Checks
+Resource Utilization Checks
 
 ```bash
 #!/bin/bash

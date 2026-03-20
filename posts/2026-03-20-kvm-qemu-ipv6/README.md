@@ -8,7 +8,7 @@ Description: Configure IPv6 networking in KVM/QEMU virtual machines using bridge
 
 ## Introduction
 
-KVM/QEMU virtual machines access IPv6 networks through virtual networking modes: bridged (VM on same L2 as host), NAT (via virbr0 MASQUERADE with IPv6 prefix), and macvtap/SR-IOV for direct IPv6. Bridged networking is the simplest for IPv6 — VMs receive SLAAC addresses from the physical router just like physical machines.
+KVM/QEMU virtual machines access IPv6 networks through virtual networking modes: bridged (VM on same L2 as host), NAT (via virbr0 MASQUERADE with IPv6 prefix), and macvtap/SR-IOV for direct IPv6. Bridged networking is the simplest for IPv6 - VMs receive SLAAC addresses from the physical router just like physical machines.
 
 ## Bridged Networking for IPv6
 
@@ -16,6 +16,7 @@ KVM/QEMU virtual machines access IPv6 networks through virtual networking modes:
 # Create a bridge on the host for VMs to share the physical IPv6 network
 
 # Using ip commands
+
 ip link add name br0 type bridge
 ip link set br0 up
 ip link set eth0 master br0

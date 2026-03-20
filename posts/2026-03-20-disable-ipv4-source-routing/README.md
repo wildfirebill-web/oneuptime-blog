@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Security, IPv4, Source Routing, sysctl, Hardening
+Tags: Linux, Security, IPv4, Source Routing, Sysctl, Hardening
 
 Description: Disable IPv4 source routing options (LSRR and SSRR) on Linux to prevent attackers from manipulating packet paths and bypassing network controls.
 
@@ -12,11 +12,11 @@ IPv4 source routing allows the sender to specify the exact route a packet must t
 
 IPv4 source routing is an IP header option that embeds routing directives:
 
-```
+```text
 IP Header Options:
-  LSRR (Loose Source and Record Route) — packet must pass through
+  LSRR (Loose Source and Record Route) - packet must pass through
          specified hops but can take any path between them
-  SSRR (Strict Source and Record Route) — packet must follow
+  SSRR (Strict Source and Record Route) - packet must follow
          the exact specified path
 
 Attack uses:
@@ -29,6 +29,7 @@ Attack uses:
 
 ```bash
 # Check if source routing is currently accepted (0 = disabled, 1 = enabled)
+
 cat /proc/sys/net/ipv4/conf/all/accept_source_route
 
 # Check each interface
@@ -105,7 +106,7 @@ sudo tcpdump -i eth0 -n 'ip[0] & 0xf > 5' -c 5
 
 Disabling source routing is required by many security frameworks:
 
-```
+```bash
 CIS Benchmark for Linux: Controls 3.2.1
 DISA STIG for RHEL: V-72283, V-72285
 NIST 800-53: SC-5 (Denial of Service Protection)

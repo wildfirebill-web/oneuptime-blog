@@ -41,6 +41,7 @@ Before configuring policies, you need an ASG. Here's a basic setup:
 
 ```bash
 # Create an Auto Scaling group with a launch template
+
 aws autoscaling create-auto-scaling-group \
     --auto-scaling-group-name webapp-asg \
     --launch-template LaunchTemplateName=webapp-template,Version='$Latest' \

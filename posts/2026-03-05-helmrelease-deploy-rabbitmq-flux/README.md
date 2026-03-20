@@ -22,6 +22,7 @@ Bitnami charts are distributed as OCI artifacts.
 
 ```yaml
 # helmrepository-bitnami.yaml - Bitnami OCI Helm chart repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

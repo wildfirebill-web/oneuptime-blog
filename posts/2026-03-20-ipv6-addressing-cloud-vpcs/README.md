@@ -34,6 +34,7 @@ AWS assigns a /56 from their own IPv6 address space to each VPC. You then carve 
 
 ```python
 # AWS assigns a /56 like 2600:1f18:1234:5600::/56
+
 # You create /64 subnets from it
 
 # Example AWS VPC structure
@@ -117,7 +118,7 @@ gcloud compute networks subnets describe my-subnet \
 
 For organizations that want consistent IPv6 addressing across clouds:
 
-```
+```text
 Organization /40: 2001:db8:a::/40
 
 Cloud regions:

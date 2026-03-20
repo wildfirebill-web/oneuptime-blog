@@ -712,7 +712,7 @@ describe('Error Handling', () => {
 
 ---
 
-## Resource Exhaustion Testing
+Resource Exhaustion Testing
 
 Simulate running out of memory, CPU, or disk to verify your service degrades gracefully.
 
@@ -1328,6 +1328,7 @@ Integrate fault injection tests into your CI/CD pipeline for continuous resilien
 
 ```yaml
 # .github/workflows/fault-injection.yml
+
 name: Fault Injection Tests
 
 on:

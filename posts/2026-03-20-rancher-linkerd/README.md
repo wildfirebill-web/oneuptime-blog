@@ -22,6 +22,7 @@ Linkerd is a lightweight, open-source service mesh designed for simplicity and p
 
 ```bash
 # Install Linkerd CLI using the official install script
+
 curl --proto '=https' --tlsv1.2 -sSfL https://run.linkerd.io/install | sh
 
 # Add to PATH

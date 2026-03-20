@@ -20,6 +20,7 @@ Cordoning marks a node as unschedulable without affecting existing pods. This pr
 
 ```bash
 # Cordon a single node
+
 kubectl cordon node-1
 
 # Verify cordon status

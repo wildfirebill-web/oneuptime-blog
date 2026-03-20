@@ -18,6 +18,7 @@ Check the Kustomization status:
 
 ```bash
 # List all Kustomizations and their readiness
+
 kubectl get kustomizations -A
 
 # Get the detailed error message

@@ -43,6 +43,7 @@ Verify your cluster is healthy:
 
 ```bash
 # Check that all nodes are in Ready state
+
 kubectl get nodes
 
 # Confirm the control plane pods are running

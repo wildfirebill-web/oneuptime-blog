@@ -45,6 +45,7 @@ Below is a basic pipeline configuration showing how to define stages and assign 
 
 ```yaml
 # .gitlab-ci.yml
+
 # Stages are defined in execution order
 stages:
   - build

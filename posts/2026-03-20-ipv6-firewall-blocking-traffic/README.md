@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Firewall, ip6tables, nftables, Troubleshooting, Security, ICMPv6
+Tags: IPv6, Firewall, Ip6tables, nftables, Troubleshooting, Security, ICMPv6
 
 Description: Diagnose and fix IPv6 traffic being blocked by firewalls, including ip6tables rules, nftables policies, and essential ICMPv6 exceptions required for IPv6 to function.
 
@@ -14,6 +14,7 @@ IPv6 firewalls can silently break IPv6 networking by blocking essential ICMPv6 m
 
 ```bash
 # Show all ip6tables rules
+
 sudo ip6tables -L -n -v
 
 # Check INPUT, OUTPUT, FORWARD chains
@@ -56,7 +57,7 @@ sudo ip6tables -A FORWARD -p icmpv6 -j ACCEPT
 
 # OR selectively allow critical types:
 
-# NDP — Neighbor Discovery (required for on-link communication)
+# NDP - Neighbor Discovery (required for on-link communication)
 sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 135 -j ACCEPT  # NS
 sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 136 -j ACCEPT  # NA
 sudo ip6tables -A OUTPUT -p icmpv6 --icmpv6-type 135 -j ACCEPT
@@ -66,7 +67,7 @@ sudo ip6tables -A OUTPUT -p icmpv6 --icmpv6-type 136 -j ACCEPT
 sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 133 -j ACCEPT   # RS
 sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 134 -j ACCEPT   # RA
 
-# PMTUD — Packet Too Big (required to avoid MTU black holes)
+# PMTUD - Packet Too Big (required to avoid MTU black holes)
 sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 2 -j ACCEPT
 
 # Destination Unreachable and Time Exceeded (for connectivity feedback)
@@ -136,7 +137,7 @@ ip6tables -L -n -v
 ## nftables Equivalent
 
 ```bash
-# /etc/nftables.conf — IPv6 firewall with ICMPv6 allowed
+# /etc/nftables.conf - IPv6 firewall with ICMPv6 allowed
 cat << 'EOF' | sudo tee /etc/nftables.conf
 table ip6 filter {
     chain input {
@@ -160,4 +161,4 @@ sudo systemctl restart nftables
 
 ## Conclusion
 
-IPv6 firewalls must allow ICMPv6 to function correctly. The most common mistake is blocking all ICMP including ICMPv6, which breaks NDP (Layer 2 resolution), PMTUD (MTU discovery), and router/prefix discovery. Always allow ICMPv6 types 1, 2, 3, 133, 134, 135, and 136 at minimum. Test by temporarily flushing ip6tables rules — if IPv6 immediately works, a rule is the cause. Use packet drop counters (`ip6tables -L -n -v`) to identify which rule is dropping traffic.
+IPv6 firewalls must allow ICMPv6 to function correctly. The most common mistake is blocking all ICMP including ICMPv6, which breaks NDP (Layer 2 resolution), PMTUD (MTU discovery), and router/prefix discovery. Always allow ICMPv6 types 1, 2, 3, 133, 134, 135, and 136 at minimum. Test by temporarily flushing ip6tables rules - if IPv6 immediately works, a rule is the cause. Use packet drop counters (`ip6tables -L -n -v`) to identify which rule is dropping traffic.

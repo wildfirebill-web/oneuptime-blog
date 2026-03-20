@@ -20,6 +20,7 @@ The most straightforward way to remove duplicates is converting your list to a s
 
 ```python
 # Basic list with duplicates
+
 numbers = [1, 2, 2, 3, 4, 4, 4, 5]
 
 # Convert to set (removes duplicates) then back to list

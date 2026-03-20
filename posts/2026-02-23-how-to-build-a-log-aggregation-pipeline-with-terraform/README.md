@@ -26,6 +26,7 @@ Most AWS services already send logs to CloudWatch. The first step is making sure
 
 ```hcl
 # Standard log group for an ECS service
+
 resource "aws_cloudwatch_log_group" "service" {
   name              = "/ecs/${var.service_name}"
   retention_in_days = 30 # Short retention since we archive to S3

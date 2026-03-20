@@ -20,6 +20,7 @@ Before pushing, you need an image to push and credentials for your target regist
 
 ```bash
 # Build or have an image ready
+
 podman build -t myapp:v1.0.0 .
 
 # Or pull an existing image to retag

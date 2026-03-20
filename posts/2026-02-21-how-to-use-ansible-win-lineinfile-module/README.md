@@ -24,6 +24,7 @@ Here is a minimal inventory file for reference:
 
 ```ini
 # inventory/hosts.ini
+
 [windows]
 win-server-01 ansible_host=192.168.1.100
 

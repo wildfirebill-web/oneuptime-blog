@@ -221,6 +221,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "-1"
 ---
 # Network policy to restrict Redis access
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

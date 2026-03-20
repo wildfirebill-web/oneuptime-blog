@@ -38,6 +38,7 @@ First, confirm your Talos nodes are running cgroup v2:
 
 ```bash
 # Check cgroup version on a Talos node
+
 talosctl read /proc/filesystems --nodes <node-ip> | grep cgroup
 
 # You should see:

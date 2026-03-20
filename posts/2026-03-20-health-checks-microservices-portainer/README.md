@@ -14,6 +14,7 @@ Docker health checks automatically monitor container health and inform orchestra
 
 ```dockerfile
 # Dockerfile - Built-in health check
+
 FROM python:3.12-slim
 
 WORKDIR /app

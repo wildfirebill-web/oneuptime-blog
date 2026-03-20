@@ -53,6 +53,7 @@ First, create a secret with your bucket credentials.
 
 ```bash
 # Create a secret with S3-compatible credentials
+
 kubectl create secret generic bucket-creds \
   --namespace flux-system \
   --from-literal=accesskey=YOUR_ACCESS_KEY \

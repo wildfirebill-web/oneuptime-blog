@@ -26,6 +26,7 @@ Start by examining the status of the HelmChart resource that is failing.
 
 ```bash
 # Get the status of all HelmChart resources
+
 flux get sources chart --all-namespaces
 ```
 

@@ -12,6 +12,7 @@ OpenTofu can serialize its plan output as structured JSON, making it possible to
 
 ```bash
 # Step 1: Create a binary plan file
+
 tofu plan -out=tfplan
 
 # Step 2: Convert the binary plan to JSON
@@ -67,7 +68,7 @@ The `actions` array can contain: `["create"]`, `["update"]`, `["delete"]`, `["de
 
 ```python
 #!/usr/bin/env python3
-# parse-plan.py — summarize resource changes from a tofu plan JSON file
+# parse-plan.py - summarize resource changes from a tofu plan JSON file
 
 import json
 import sys
@@ -131,4 +132,4 @@ jq '.variables | to_entries[] | {name: .key, value: .value.value}' plan.json
 
 ## Conclusion
 
-Exporting the OpenTofu plan as JSON enables powerful automated analysis workflows. Use Python or `jq` to parse `resource_changes`, detect destructive operations, enforce policies, and build custom approval dashboards — all without parsing human-readable text output.
+Exporting the OpenTofu plan as JSON enables powerful automated analysis workflows. Use Python or `jq` to parse `resource_changes`, detect destructive operations, enforce policies, and build custom approval dashboards - all without parsing human-readable text output.

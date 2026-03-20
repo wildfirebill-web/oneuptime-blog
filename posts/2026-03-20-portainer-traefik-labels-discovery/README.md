@@ -8,7 +8,7 @@ Description: Learn how Traefik uses Docker labels for automatic service discover
 
 ## Introduction
 
-Traefik reads Docker container labels to automatically discover services and configure routing rules without any manual configuration files. When containers are deployed through Portainer, adding the right labels means they are automatically routed by Traefik — no restart, no config reload required. This guide covers the complete Traefik label reference for Portainer-managed services.
+Traefik reads Docker container labels to automatically discover services and configure routing rules without any manual configuration files. When containers are deployed through Portainer, adding the right labels means they are automatically routed by Traefik - no restart, no config reload required. This guide covers the complete Traefik label reference for Portainer-managed services.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ labels:
   - "traefik.http.services.myapp.loadbalancer.server.port=8080"
 ```
 
-The name `myapp` is a user-defined identifier — it must be unique per service.
+The name `myapp` is a user-defined identifier - it must be unique per service.
 
 ## Step 2: Routing Rule Patterns
 
@@ -55,7 +55,7 @@ labels:
   # Match by header
   - "traefik.http.routers.app.rule=Host(`example.com`) && Headers(`X-App-Version`, `v2`)"
 
-  # Match any host (wildcard — use carefully)
+  # Match any host (wildcard - use carefully)
   - "traefik.http.routers.app.rule=HostRegexp(`{subdomain:[a-z]+}.example.com`)"
 ```
 
@@ -91,6 +91,7 @@ labels:
 
 ```yaml
 # docker-compose.yml: Connect to both the proxy network and a private database network
+
 services:
   myapp:
     image: myapp:latest
@@ -139,7 +140,7 @@ services:
 When creating a stack in Portainer, include labels in the `deploy` section (Swarm) or container `labels` section (standalone):
 
 ```yaml
-# Portainer stack editor — Standalone compose
+# Portainer stack editor - Standalone compose
 version: "3.8"
 
 services:
@@ -169,7 +170,7 @@ After deploying through Portainer, Traefik automatically detects the new contain
 curl -s http://localhost:8080/api/http/routers | jq '.[] | select(.name | contains("webapp"))'
 
 # Check Traefik dashboard
-# Open: https://traefik.example.com — your service should appear under HTTP Routers
+# Open: https://traefik.example.com - your service should appear under HTTP Routers
 
 # Test the routing
 curl -I https://webapp.example.com
@@ -177,4 +178,4 @@ curl -I https://webapp.example.com
 
 ## Conclusion
 
-Traefik's Docker label-based service discovery makes Portainer deployments self-configuring for routing. By attaching labels at deploy time, each new container automatically registers itself with Traefik — eliminating manual proxy configuration updates. The key patterns to remember are: use `traefik.enable=true` to opt in, specify the correct network when containers have multiple attachments, and always define both the router rule and the service port.
+Traefik's Docker label-based service discovery makes Portainer deployments self-configuring for routing. By attaching labels at deploy time, each new container automatically registers itself with Traefik - eliminating manual proxy configuration updates. The key patterns to remember are: use `traefik.enable=true` to opt in, specify the correct network when containers have multiple attachments, and always define both the router rule and the service port.

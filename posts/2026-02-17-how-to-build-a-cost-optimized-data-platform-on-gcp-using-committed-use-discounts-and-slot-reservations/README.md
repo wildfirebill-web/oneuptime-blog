@@ -28,6 +28,7 @@ Here is how to create slot reservations using the BigQuery Reservation API:
 
 ```bash
 # Purchase a commitment of 500 slots for one year (annual commitment)
+
 bq mk \
   --project_id=my-project \
   --location=US \

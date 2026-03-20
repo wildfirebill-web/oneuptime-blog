@@ -29,6 +29,7 @@ Set up a proxy for the public npm registry:
 
 ```bash
 # Create a remote npm repository that proxies npmjs.org
+
 gcloud artifacts repositories create npm-proxy \
   --repository-format=npm \
   --location=us-central1 \

@@ -32,6 +32,7 @@ The simplest approach is to forward audit events to syslog, where you can proces
 
 ```bash
 # Install the audispd plugins package
+
 sudo dnf install audispd-plugins
 
 # Enable the syslog plugin
@@ -181,7 +182,7 @@ send_webhook() {
     curl -s -X POST "$WEBHOOK_URL" \
         -H 'Content-type: application/json' \
         -d "{
-            \"text\": \"*Audit Alert [$severity]* on \`$HOSTNAME\`\n\`\`\`$message\`\`\`\"
+            \"text\": \"*Audit Alert [$severity]* on \`$HOSTNAME\`\n```$message```\"
         }" > /dev/null 2>&1
 }
 

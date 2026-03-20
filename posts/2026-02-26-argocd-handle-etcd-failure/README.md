@@ -41,6 +41,7 @@ When etcd is temporarily unavailable, ArgoCD components will log errors but will
 
 ```bash
 # While etcd is down, you will see these errors in ArgoCD logs
+
 kubectl logs -n argocd deploy/argocd-application-controller --tail=50
 # "etcdserver: leader changed"
 # "context deadline exceeded"

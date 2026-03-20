@@ -66,6 +66,7 @@ bucket = session.default_bucket()
 prefix = 'multi-model-endpoint/models'
 
 # Let's say you have models for different customer segments
+
 # Each model was trained separately and saved as a .tar.gz
 
 # Example: package a model artifact

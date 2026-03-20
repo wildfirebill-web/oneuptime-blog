@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Cisco, IOS, Networking, Router Configuration, sysadmin
+Tags: DHCP, Cisco, IOS, Networking, Router Configuration, Sysadmin
 
 Description: Cisco IOS routers have a built-in DHCP server that can be configured with address pools, excluded ranges, and options to serve clients on directly connected interfaces without a dedicated DHCP server.
 
 ## Basic DHCP Configuration
 
-```
+```text
 ! Define addresses to exclude from dynamic assignment (static devices)
 ip dhcp excluded-address 192.168.1.1 192.168.1.20
 
@@ -23,8 +23,8 @@ ip dhcp pool OFFICE_LAN
 
 ## Multi-Pool Configuration
 
-```
-! Pool for VLAN 10 — Servers (7-day leases)
+```text
+! Pool for VLAN 10 - Servers (7-day leases)
 ip dhcp excluded-address 10.0.10.1 10.0.10.49
 
 ip dhcp pool VLAN10_SERVERS
@@ -33,7 +33,7 @@ ip dhcp pool VLAN10_SERVERS
    dns-server 10.0.0.53
    lease 7
 
-! Pool for VLAN 20 — Users (1-day leases)
+! Pool for VLAN 20 - Users (1-day leases)
 ip dhcp excluded-address 10.0.20.1 10.0.20.49
 
 ip dhcp pool VLAN20_USERS
@@ -43,7 +43,7 @@ ip dhcp pool VLAN20_USERS
    domain-name corp.example.com
    lease 1
 
-! Pool for VLAN 99 — Guests (2-hour leases)
+! Pool for VLAN 99 - Guests (2-hour leases)
 ip dhcp excluded-address 10.0.99.1
 
 ip dhcp pool VLAN99_GUEST
@@ -55,7 +55,7 @@ ip dhcp pool VLAN99_GUEST
 
 ## Static DHCP Reservations on Cisco
 
-```
+```text
 ! Reserve a specific IP for a device by MAC
 ip dhcp pool WEBSERVER
    host 192.168.1.50 255.255.255.0
@@ -66,7 +66,7 @@ ip dhcp pool WEBSERVER
 
 ## Cisco DHCP Options
 
-```
+```text
 ! Option 150: TFTP server IP for VoIP phones
 ip dhcp pool VOIP_PHONES
    network 10.0.30.0 255.255.255.0
@@ -78,7 +78,7 @@ ip dhcp pool VOIP_PHONES
 
 ## Verification Commands
 
-```
+```text
 ! View all active DHCP bindings (assigned leases)
 show ip dhcp binding
 
@@ -96,7 +96,7 @@ debug ip dhcp server events
 ## DHCP Relay on Cisco (Helper Address)
 
 If the DHCP server is on a different subnet:
-```
+```text
 interface Vlan10
   ip address 10.0.10.1 255.255.255.0
   ip helper-address 10.0.0.53   ! Forward DHCP to server

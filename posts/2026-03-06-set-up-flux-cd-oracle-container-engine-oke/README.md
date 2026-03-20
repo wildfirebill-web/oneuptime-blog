@@ -31,6 +31,7 @@ If you do not already have an OKE cluster, create one using the OCI CLI.
 
 ```bash
 # Create a VCN for the cluster
+
 oci network vcn create \
   --compartment-id $COMPARTMENT_ID \
   --display-name "flux-vcn" \

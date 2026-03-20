@@ -39,6 +39,7 @@ Cloud DLP has built-in detectors for common sensitive data types. Start with the
 # dlp_config.py - Central configuration for DLP scanning
 
 # InfoTypes to scan for, grouped by sensitivity level
+
 INFOTYPE_CONFIG = {
     "critical": [
         {"name": "CREDIT_CARD_NUMBER"},

@@ -29,6 +29,7 @@ Understand and configure Cilium's CNI installation:
 
 ```bash
 # Check Cilium CNI configuration on a node
+
 kubectl debug node/<node-name> -it --image=ubuntu -- \
   cat /etc/cni/net.d/05-cilium.conf
 

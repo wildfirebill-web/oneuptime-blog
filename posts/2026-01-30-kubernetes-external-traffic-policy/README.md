@@ -312,6 +312,7 @@ When using Local mode, Kubernetes automatically allocates a health check node po
 
 ```bash
 # Get the service details including health check node port
+
 kubectl get service my-app -o yaml | grep -A5 "healthCheckNodePort"
 
 # Test the health check endpoint directly

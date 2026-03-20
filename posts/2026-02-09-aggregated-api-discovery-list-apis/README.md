@@ -16,6 +16,7 @@ Traditionally, API discovery required multiple requests:
 
 ```bash
 # List core API
+
 kubectl get --raw /api
 
 # List each API group separately

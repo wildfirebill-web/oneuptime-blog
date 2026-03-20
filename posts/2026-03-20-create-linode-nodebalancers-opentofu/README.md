@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Linode, NodeBalancers, Load Balancers, Infrastructure as Code
+Tags: OpenTofu, Linode, NodeBalancers, Load Balancer, Infrastructure as Code
 
 Description: Learn how to create Linode NodeBalancers with OpenTofu to distribute traffic across Linode instances with configurable health checks and protocols.
 
@@ -105,4 +105,4 @@ resource "linode_nodebalancer_config" "tcp" {
 
 ## Conclusion
 
-Linode NodeBalancers are simple to configure with OpenTofu. Define the NodeBalancer, add a configuration for each port you need (HTTP, HTTPS, or TCP), and attach backend nodes via their private IP addresses. Use the `mode` attribute on nodes to control traffic routing — `drain` gracefully removes a node from rotation during deployments.
+Linode NodeBalancers are simple to configure with OpenTofu. Define the NodeBalancer, add a configuration for each port you need (HTTP, HTTPS, or TCP), and attach backend nodes via their private IP addresses. Use the `mode` attribute on nodes to control traffic routing - `drain` gracefully removes a node from rotation during deployments.

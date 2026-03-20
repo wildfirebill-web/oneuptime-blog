@@ -51,6 +51,7 @@ The first step is gaining access to a working environment to diagnose and fix th
 # During boot, hold SHIFT (BIOS) or ESC (UEFI) to access GRUB menu
 
 # Select "Advanced options for Ubuntu" (or similar)
+
 # Choose a kernel version with "(recovery mode)"
 
 # From recovery menu, select:

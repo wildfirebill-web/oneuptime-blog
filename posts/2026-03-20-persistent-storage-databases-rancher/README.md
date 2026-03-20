@@ -48,6 +48,7 @@ After installation, Longhorn registers a StorageClass automatically.
 
 ```bash
 # List available StorageClasses
+
 kubectl get storageclass
 
 # Set Longhorn as the default StorageClass

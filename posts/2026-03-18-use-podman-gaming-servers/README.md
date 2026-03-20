@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Gaming, Game Servers, Containers, Multiplayer
+Tags: Podman, Gaming, Game Server, Containers, Multiplayer
 
 Description: Learn how to deploy and manage dedicated gaming servers using Podman containers for games like Minecraft, Valheim, and Terraria with persistent world data and automated backups.
 
@@ -142,12 +142,13 @@ podman run -d \
   docker.io/factoriotools/factorio:stable
 ```
 
-## Resource Management
+Resource Management
 
 Game servers can be resource-hungry. Use Podman's resource controls to prevent one server from starving others:
 
 ```bash
 # Limit memory and CPU
+
 podman run -d \
   --name game-server \
   --memory=4g \

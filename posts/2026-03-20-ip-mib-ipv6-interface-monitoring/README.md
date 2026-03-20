@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IP-MIB, SNMP, IPv6, Network Monitoring, RFC 4293, OIDs, MIB
+Tags: IP-MIB, SNMP, IPv6, Network Monitoring, RFC 4293, OID, MIB
 
 Description: Use the IP-MIB (RFC 4293) to monitor IPv6 addresses, routing table entries, and IP statistics on network devices and servers via SNMP.
 
@@ -12,7 +12,7 @@ The IP-MIB (RFC 4293) unifies IPv4 and IPv6 management in a single MIB structure
 
 ## IP-MIB Structure for IPv6
 
-```
+```text
 IP-MIB Objects for IPv6:
 - ipAddressTable        : All IPv4 and IPv6 addresses
 - ipAddressEntry        : Per-address information
@@ -31,6 +31,7 @@ IP-MIB Objects for IPv6:
 
 ```bash
 # Get all IPv6 addresses on device
+
 snmpwalk -v2c -c public udp6:[2001:db8::device]:161 \
   IP-MIB::ipAddressTable
 

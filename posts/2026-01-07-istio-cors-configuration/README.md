@@ -115,6 +115,7 @@ This basic configuration allows requests from a specific origin with common HTTP
 
 ```yaml
 # Basic VirtualService with CORS policy
+
 # This configuration enables cross-origin requests from a specific frontend domain
 # to access the API service through the Istio gateway
 apiVersion: networking.istio.io/v1beta1

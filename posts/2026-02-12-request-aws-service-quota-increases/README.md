@@ -18,6 +18,7 @@ Before requesting an increase, verify which quota is actually the bottleneck:
 
 ```bash
 # List quotas for a specific service with current values
+
 aws service-quotas list-service-quotas \
   --service-code lambda \
   --query "Quotas[].{

@@ -22,6 +22,7 @@ Check service status to see if external IPs are pending.
 
 ```bash
 # List services showing external IPs
+
 kubectl get svc -A
 
 # Example output showing pending LoadBalancer

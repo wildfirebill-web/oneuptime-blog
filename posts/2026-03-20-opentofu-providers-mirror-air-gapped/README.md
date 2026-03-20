@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Providers
+Tags: OpenTofu, Terraform, Infrastructure as Code, Provider
 
 Description: Learn how to use the tofu providers mirror command to download provider binaries for transfer to air-gapped environments that have no internet access.
 
@@ -14,6 +14,7 @@ The `tofu providers mirror` command downloads all provider binaries required by 
 
 ```bash
 # Download providers for the current configuration into ./mirror-dir
+
 tofu providers mirror ./mirror-dir
 ```
 
@@ -33,7 +34,7 @@ tofu providers mirror \
 
 ## Output Directory Structure
 
-```
+```text
 /tmp/provider-mirror/
 └── registry.opentofu.org/
     └── hashicorp/
@@ -100,7 +101,7 @@ EOF
 
 ```bash
 cd /opt/infra
-tofu init  # Uses local mirror — no internet required
+tofu init  # Uses local mirror - no internet required
 
 # Output:
 # Initializing provider plugins...

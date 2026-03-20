@@ -1,10 +1,10 @@
-# How to Fix "Image Not Found" Errors When Deploying in Portainer
+# How to Fix 'Image Not Found' Errors When Deploying in Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Troubleshooting, Docker Images, Registry, Deployment, Pull Errors
 
-Description: Learn how to diagnose and fix "image not found" errors in Portainer deployments, covering registry authentication, image tag issues, and private registry configuration.
+Description: Learn how to diagnose and fix 'image not found' errors in Portainer deployments, covering registry authentication, image tag issues, and private registry configuration.
 
 ---
 
@@ -14,6 +14,7 @@ Description: Learn how to diagnose and fix "image not found" errors in Portainer
 
 ```bash
 # Test pulling the image directly on the Docker host
+
 docker pull <image-name>:<tag>
 
 # Common mistakes:

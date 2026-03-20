@@ -24,6 +24,7 @@ Crossplane needs Kubernetes. The fastest way to get a local cluster running in D
 
 ```bash
 # Install kind if you do not have it
+
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.22.0/kind-linux-amd64
 chmod +x ./kind
 sudo mv ./kind /usr/local/bin/kind

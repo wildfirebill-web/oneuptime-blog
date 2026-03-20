@@ -121,6 +121,7 @@ spec:
 
 ```yaml
 # Exact match
+
 - match:
     - uri:
         exact: /api/v1/users

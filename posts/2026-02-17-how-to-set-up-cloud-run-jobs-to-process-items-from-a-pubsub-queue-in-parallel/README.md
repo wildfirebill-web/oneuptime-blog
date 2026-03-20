@@ -55,6 +55,7 @@ Create the topic and subscription if they do not already exist:
 
 ```bash
 # Create the Pub/Sub topic
+
 gcloud pubsub topics create work-items
 
 # Create a subscription with a reasonable ack deadline

@@ -33,6 +33,7 @@ You can have multiple O fields, and each one becomes a separate group.
 
 ```bash
 # Example CSR with username and two groups
+
 openssl req -new -key user.key -out user.csr \
     -subj "/CN=jane@example.com/O=developers/O=team-frontend"
 ```

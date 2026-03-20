@@ -16,6 +16,7 @@ The minimum requirement is opening the UDP port that WireGuard listens on.
 
 ```bash
 # Allow WireGuard's default port
+
 sudo firewall-cmd --permanent --add-port=51820/udp
 
 # If you use a custom port

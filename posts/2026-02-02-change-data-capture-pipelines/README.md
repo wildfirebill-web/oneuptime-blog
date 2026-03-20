@@ -434,6 +434,7 @@ First, configure PostgreSQL for logical replication. This requires modifying the
 
 ```bash
 # Edit postgresql.conf to enable logical replication
+
 # These settings allow Debezium to read the transaction log
 
 # Set the write-ahead log level to logical for CDC support

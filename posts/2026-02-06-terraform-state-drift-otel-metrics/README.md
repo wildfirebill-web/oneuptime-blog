@@ -17,6 +17,7 @@ We wrap Terraform commands with a script that measures execution time, counts re
 ```python
 #!/usr/bin/env python3
 # terraform_instrumented.py
+
 """
 Wrapper script that runs Terraform commands and exports
 metrics to an OpenTelemetry Collector.

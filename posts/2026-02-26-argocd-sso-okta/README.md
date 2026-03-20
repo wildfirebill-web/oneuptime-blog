@@ -115,6 +115,7 @@ Store the Okta client secret in the `argocd-secret` Secret:
 
 ```bash
 # Patch the argocd-secret with the Okta client secret
+
 kubectl -n argocd patch secret argocd-secret --type merge -p '
 {
   "stringData": {

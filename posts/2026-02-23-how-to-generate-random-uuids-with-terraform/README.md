@@ -20,6 +20,7 @@ A UUID version 4 looks like this: `a1b2c3d4-e5f6-4890-abcd-ef1234567890`. It con
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

@@ -39,6 +39,7 @@ CloudFront requires an SSL certificate in the **us-east-1** region. This is non-
 
 ```bash
 # Request a certificate in us-east-1 - required for CloudFront
+
 aws acm request-certificate \
   --domain-name example.com \
   --subject-alternative-names "*.example.com" \

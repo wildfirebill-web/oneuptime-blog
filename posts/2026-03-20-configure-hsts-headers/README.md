@@ -15,7 +15,7 @@ HSTS (HTTP Strict Transport Security) is a response header that instructs browse
 
 ## HSTS Header Format
 
-```
+```text
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 ```
 
@@ -63,6 +63,7 @@ HSTS can be difficult to remove once deployed with a long max-age. Deploy progre
 
 ```bash
 # Week 1: Short max-age (5 minutes) - test for issues
+
 add_header Strict-Transport-Security "max-age=300" always;
 
 # Week 2: Increase to 1 day - still reversible

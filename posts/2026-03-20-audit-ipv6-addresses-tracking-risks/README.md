@@ -18,6 +18,7 @@ In a full IPv6 address, this appears as `xxxx:xxff:fexx:xxxx` in the last four g
 
 ```bash
 # Quick check: does an address contain the ff:fe EUI-64 signature?
+
 ADDRESS="2001:db8::021a:2bff:fe3c:4d5e"
 if echo "$ADDRESS" | grep -qiE ":[0-9a-f]{0,2}ff:fe[0-9a-f]{0,2}:"; then
     echo "WARNING: EUI-64 address detected in $ADDRESS"

@@ -28,6 +28,7 @@ ArgoCD exposes Prometheus metrics on port 8082 (controller) and 8083 (server). H
 
 ```yaml
 # Key ArgoCD metrics
+
 argocd_app_info                    # Application metadata (labels, project, health)
 argocd_app_sync_total              # Total sync operations
 argocd_app_reconcile_count         # Reconciliation counts

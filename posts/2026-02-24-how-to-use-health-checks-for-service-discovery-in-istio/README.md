@@ -237,6 +237,7 @@ Track how health checks affect your service mesh:
 
 ```bash
 # Check endpoint health in Envoy
+
 istioctl proxy-config endpoints <pod-name> | grep backend-service
 
 # See outlier detection ejections

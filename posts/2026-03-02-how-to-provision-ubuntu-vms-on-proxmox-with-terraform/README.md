@@ -25,6 +25,7 @@ Before Terraform can create VMs, you need a base template. Run these commands on
 
 ```bash
 # Download the Ubuntu 22.04 cloud image
+
 wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
 
 # Install qemu-guest-agent into the image (useful for Proxmox integration)

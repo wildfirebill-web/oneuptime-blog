@@ -8,7 +8,7 @@ Description: Configure reliable inter-service communication between Docker conta
 
 ## Introduction
 
-Microservices need to communicate with each other reliably. Docker provides built-in DNS-based service discovery within networks. This guide covers synchronous HTTP/gRPC communication, asynchronous messaging with RabbitMQ, and patterns for resilient inter-service calls — all managed through Portainer.
+Microservices need to communicate with each other reliably. Docker provides built-in DNS-based service discovery within networks. This guide covers synchronous HTTP/gRPC communication, asynchronous messaging with RabbitMQ, and patterns for resilient inter-service calls - all managed through Portainer.
 
 ## Communication Patterns
 
@@ -21,6 +21,7 @@ All services that need to communicate must share a Docker network:
 
 ```yaml
 # docker-compose.yml - Shared network setup
+
 version: "3.8"
 
 networks:

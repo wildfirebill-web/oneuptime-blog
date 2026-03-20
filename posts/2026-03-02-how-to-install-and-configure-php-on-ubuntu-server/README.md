@@ -54,6 +54,7 @@ For Nginx, you must use PHP-FPM since Nginx cannot run PHP directly.
 
 ```bash
 # Check PHP version
+
 php --version
 
 # Check PHP-FPM is installed

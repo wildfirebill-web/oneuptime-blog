@@ -77,6 +77,7 @@ Configure each MySQL instance with the following settings in `/etc/mysql/mysql.c
 ```ini
 [mysqld]
 # Server identification
+
 server_id=1  # Unique for each node (1, 2, 3...)
 bind-address=0.0.0.0
 

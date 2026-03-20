@@ -16,6 +16,7 @@ Go to **Stacks > Add Stack** and use the following definition. This setup includ
 
 ```yaml
 # zipkin-stack.yml
+
 version: "3.8"
 
 services:

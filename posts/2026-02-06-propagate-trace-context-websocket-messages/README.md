@@ -277,6 +277,7 @@ When WebSockets connect backend services (for example, a real-time data pipeline
 
 ```python
 # ws_processor.py - Python WebSocket service with trace propagation
+
 import json
 import asyncio
 import websockets

@@ -1,4 +1,4 @@
-# How to Use Check Blocks for Infrastructure Validation in OpenTofu
+# How to Use Check Blocks for Infrastructure Validation in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use check blocks in OpenTofu to validate infrastructur
 
 ## Introduction
 
-Check blocks are OpenTofu's continuous validation mechanism. Unlike preconditions and postconditions (which block apply on failure), check blocks emit warnings without stopping the deployment. They are designed to validate the overall state of your infrastructure after resources are created — asserting things like API reachability, DNS resolution, or compliance with naming conventions.
+Check blocks are OpenTofu's continuous validation mechanism. Unlike preconditions and postconditions (which block apply on failure), check blocks emit warnings without stopping the deployment. They are designed to validate the overall state of your infrastructure after resources are created - asserting things like API reachability, DNS resolution, or compliance with naming conventions.
 
 ## Basic Check Block
 
@@ -25,6 +25,7 @@ check "s3_bucket_public_access" {
 
 ```hcl
 # Check blocks can query data sources for validation
+
 check "api_healthy" {
   data "http" "health" {
     url = "https://api.acme-corp.com/health"
@@ -146,4 +147,4 @@ Use check blocks for:
 
 ## Conclusion
 
-Check blocks validate infrastructure state after deployment without blocking the apply. They are continuous validation — every `tofu plan` and `tofu apply` evaluates them. Use check blocks for non-critical assertions that should warn operators without stopping deployment. For critical invariants that must be enforced, use `precondition` or `postcondition` lifecycle blocks instead.
+Check blocks validate infrastructure state after deployment without blocking the apply. They are continuous validation - every `tofu plan` and `tofu apply` evaluates them. Use check blocks for non-critical assertions that should warn operators without stopping deployment. For critical invariants that must be enforced, use `precondition` or `postcondition` lifecycle blocks instead.

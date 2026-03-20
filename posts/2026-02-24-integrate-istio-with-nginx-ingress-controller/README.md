@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, NGINX, Ingress Controller, Kubernetes, Networking
+Tags: Istio, Nginx, Ingress Controller, Kubernetes, Networking
 
 Description: How to run NGINX Ingress Controller alongside Istio service mesh and get the best of both tools.
 
@@ -122,6 +122,7 @@ Because NGINX pods have Istio sidecars, the outbound connections from NGINX to b
 
 ```bash
 # Check that mTLS is being used
+
 istioctl authn tls-check <nginx-pod-name>.ingress-nginx <backend-service>.default.svc.cluster.local
 ```
 

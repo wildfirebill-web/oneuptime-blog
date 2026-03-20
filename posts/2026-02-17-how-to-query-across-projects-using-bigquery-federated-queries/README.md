@@ -38,6 +38,7 @@ You reference tables using the full path: `project-id.dataset.table`. The user r
 
 ```bash
 # Grant the analytics team read access to the CRM project's customer dataset
+
 gcloud projects add-iam-policy-binding crm-project \
     --member="group:analytics-team@company.com" \
     --role="roles/bigquery.dataViewer" \

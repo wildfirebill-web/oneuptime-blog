@@ -212,6 +212,7 @@ When installing operators, the operator deployment must be ready before creating
 
 ```hcl
 # Install the operator
+
 resource "kubernetes_deployment" "cert_manager" {
   metadata {
     name      = "cert-manager"

@@ -49,6 +49,7 @@ Before configuring DNS forwarding, verify that GCP can reach your on-premises DN
 
 ```bash
 # From a GCP VM, test connectivity to the on-premises DNS server
+
 nc -zv 192.168.1.10 53
 
 # Test DNS resolution directly against the on-premises server

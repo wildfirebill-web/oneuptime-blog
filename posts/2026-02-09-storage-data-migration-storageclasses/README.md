@@ -24,6 +24,7 @@ The simplest approach involves scaling down the application, mounting both volum
 
 ```yaml
 # migration-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

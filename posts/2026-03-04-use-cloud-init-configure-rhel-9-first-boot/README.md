@@ -33,6 +33,7 @@ graph TB
 # Basic RHEL cloud-init configuration
 
 # Set the hostname
+
 hostname: web-server-01
 fqdn: web-server-01.example.com
 

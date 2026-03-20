@@ -21,6 +21,7 @@ Most production Docker deployments run on headless servers, machines with no mon
 
 ```bash
 # Connect to your server via SSH
+
 ssh user@your-server-ip
 
 # Or with a specific SSH key

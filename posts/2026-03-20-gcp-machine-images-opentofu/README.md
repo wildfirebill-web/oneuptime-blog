@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Machine Images, Compute Engine, OpenTofu, Infrastructure, Golden Images
+Tags: GCP, Machine Image, Compute Engine, OpenTofu, Infrastructure, Golden Image
 
 Description: Learn how to create GCP Machine Images with OpenTofu to capture complete VM state including all disks and configuration for cloning and disaster recovery.
 
@@ -14,6 +14,7 @@ GCP Machine Images capture the complete state of a Compute Engine instance, incl
 
 ```hcl
 # main.tf - Source VM to create a machine image from
+
 resource "google_compute_instance" "source_vm" {
   name         = "golden-image-source"
   machine_type = "e2-medium"

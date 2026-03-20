@@ -46,6 +46,7 @@ The most common reasons for UF errors:
 
 ```bash
 # Check what port the service expects
+
 kubectl get svc my-service -o yaml | grep -A3 ports
 
 # Check what port the container actually listens on

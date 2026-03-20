@@ -49,6 +49,7 @@ Before making changes, review what's already there:
 
 ```bash
 # View the sshd PAM config
+
 cat /etc/pam.d/sshd
 
 # View the sudo PAM config

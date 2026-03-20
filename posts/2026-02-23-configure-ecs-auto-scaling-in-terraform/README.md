@@ -18,6 +18,7 @@ Before creating scaling policies, register the ECS service as a scalable target:
 
 ```hcl
 # Register the ECS service as a scalable target
+
 resource "aws_appautoscaling_target" "ecs" {
   max_capacity       = var.max_tasks
   min_capacity       = var.min_tasks

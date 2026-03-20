@@ -35,6 +35,7 @@ This guide assumes you have a MySQL primary at `10.0.0.1` and replicas at `10.0.
 
 ```bash
 # Add ProxySQL repository
+
 wget -O- 'https://repo.proxysql.com/ProxySQL/proxysql-2.x-repo/proxysql_pub_key' | \
     sudo apt-key add -
 echo "deb https://repo.proxysql.com/ProxySQL/proxysql-2.x-repo/$(lsb_release -sc)/ ./" | \

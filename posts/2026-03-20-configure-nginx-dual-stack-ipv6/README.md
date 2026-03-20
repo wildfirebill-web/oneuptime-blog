@@ -10,6 +10,7 @@ Description: Learn how to configure Nginx to listen on both IPv4 and IPv6 simult
 
 ```nginx
 # The key to dual-stack in Nginx is using separate listen directives
+
 # for IPv4 and IPv6
 
 server {

@@ -42,6 +42,7 @@ This creates a VPC Flow Log with custom fields sent to CloudWatch:
 
 ```bash
 # Create log group first
+
 aws logs create-log-group --log-group-name /vpc/flow-logs/custom
 
 # Create flow log with custom fields

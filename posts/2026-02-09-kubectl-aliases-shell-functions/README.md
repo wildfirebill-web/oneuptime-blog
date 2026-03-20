@@ -20,6 +20,7 @@ Start with simple one-to-one replacements for common commands:
 
 ```bash
 # Add to ~/.bashrc or ~/.zshrc
+
 alias k='kubectl'
 alias kg='kubectl get'
 alias kd='kubectl describe'
@@ -77,7 +78,7 @@ alias kgpc='kubectl get pods -o custom-columns=NAME:.metadata.name,STATUS:.statu
 
 These reduce typing when you need specific output formats frequently.
 
-## Resource Management Aliases
+Resource Management Aliases
 
 Create shortcuts for resource creation, editing, and deletion:
 
@@ -232,7 +233,7 @@ kwatch() {
 
 These functions combine multiple commands into single debugging workflows.
 
-## Resource Creation Helpers
+Resource Creation Helpers
 
 Simplify creating common resources:
 

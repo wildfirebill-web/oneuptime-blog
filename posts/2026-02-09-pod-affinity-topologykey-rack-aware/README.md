@@ -26,6 +26,7 @@ First, label nodes with rack topology:
 
 ```bash
 # Label nodes in rack-1
+
 kubectl label nodes node-1 node-2 node-3 topology.kubernetes.io/rack=rack-1
 
 # Label nodes in rack-2

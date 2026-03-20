@@ -42,6 +42,7 @@ First, export the Flux installation manifests:
 
 ```bash
 # Export Flux manifests for customization
+
 flux install --export > flux-install.yaml
 ```
 

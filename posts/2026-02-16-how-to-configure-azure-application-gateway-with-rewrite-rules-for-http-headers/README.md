@@ -35,6 +35,7 @@ One of the most common rewrite rule use cases is adding security headers that yo
 
 ```bash
 # Create a rewrite rule set
+
 az network application-gateway rewrite-rule set create \
   --gateway-name myAppGateway \
   --resource-group myResourceGroup \

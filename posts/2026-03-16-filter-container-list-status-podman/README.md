@@ -29,6 +29,7 @@ Podman containers can be in these states:
 
 ```bash
 # Show only running containers
+
 podman ps -a --filter status=running
 
 # Get just the names of running containers

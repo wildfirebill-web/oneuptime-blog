@@ -74,6 +74,7 @@ Different sources require different collection methods.
 
 ```bash
 # Create a subscription filter to forward Lambda logs to Kinesis
+
 aws logs put-subscription-filter \
   --log-group-name "/aws/lambda/my-function" \
   --filter-name "forward-to-kinesis" \

@@ -43,6 +43,7 @@ The simplest approach hashes the prompt and stores the response. This works well
 
 ```python
 # exact_cache.py
+
 # Simple exact-match prompt cache using Redis
 import hashlib
 import json

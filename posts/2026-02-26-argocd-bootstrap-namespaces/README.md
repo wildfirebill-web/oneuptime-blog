@@ -68,6 +68,7 @@ Labels on namespaces are critical. They drive network policy selection, cost all
 
 ```yaml
 # bootstrap/namespaces/team-alpha/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -94,7 +95,7 @@ metadata:
     team-slack: "#team-alpha"
 ```
 
-## ResourceQuotas
+ResourceQuotas
 
 ResourceQuotas prevent any single namespace from consuming the entire cluster. Set them based on team size and workload requirements.
 

@@ -132,6 +132,7 @@ The script below documents a sample network layout. Adjust these values for your
 ```bash
 #!/bin/bash
 # network-plan.sh
+
 # Document your network configuration before deployment
 
 # Etcd cluster nodes - dedicated machines for the datastore

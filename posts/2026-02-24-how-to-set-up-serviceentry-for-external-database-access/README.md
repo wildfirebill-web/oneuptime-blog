@@ -41,6 +41,7 @@ Apply it and test connectivity:
 kubectl apply -f rds-postgres-se.yaml
 
 # Test from a pod
+
 kubectl exec deploy/backend-api -c backend-api -- \
   pg_isready -h mydb.abc123.us-east-1.rds.amazonaws.com -p 5432
 ```

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Multi-homing, Routing, Policy Routing, Source Address Selection, Network
+Tags: IPv6, Multi-homing, Routing, Policy Routing, Source Address Selection, Networks
 
 Description: Configure IPv6 routing correctly on hosts with multiple network interfaces, ensuring proper source address selection and policy-based routing for each uplink.
 
@@ -12,7 +12,7 @@ Multi-homed IPv6 hosts have multiple network interfaces, each potentially with d
 
 ## Understanding the Problem
 
-```
+```text
 Multi-homed host:
   eth0: 2001:db8:a::100/64, gateway fe80::gw-a
   eth1: 2001:db8:b::100/64, gateway fe80::gw-b
@@ -28,6 +28,7 @@ Problem: Traffic arriving on eth1 gets response from fe80::gw-a
 
 ```bash
 # Show all interfaces and addresses
+
 ip -6 addr show
 
 # Show routing table
@@ -72,7 +73,7 @@ cat /etc/gai.conf | grep -v "^#\|^$"
 
 # Test source address selection
 ip -6 route get 2001:db8:external::1
-# Look for "src" in output — that's the selected source address
+# Look for "src" in output - that's the selected source address
 
 # Force specific source for a route
 sudo ip -6 route add 2001:db8:external::/48 \

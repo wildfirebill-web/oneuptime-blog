@@ -24,6 +24,7 @@ IPv6 uses extension headers to carry optional information between the main IPv6 
 
 ```wireshark
 # Show packets with ANY IPv6 extension header
+
 ipv6.nxt != 6 && ipv6.nxt != 17 && ipv6.nxt != 58 && ipv6
 
 # Show packets with Hop-by-Hop Options header
@@ -122,4 +123,4 @@ tshark -r capture.pcap -Y "ipv6" \
 | Any | 44 | Fragmentation in use |
 | Any | 0 | Hop-by-Hop options in use |
 
-IPv6 extension header analysis in Wireshark reveals advanced packet characteristics like fragmentation behavior, IPsec tunneling, and Segment Routing — all critical for security auditing and advanced network troubleshooting.
+IPv6 extension header analysis in Wireshark reveals advanced packet characteristics like fragmentation behavior, IPsec tunneling, and Segment Routing - all critical for security auditing and advanced network troubleshooting.

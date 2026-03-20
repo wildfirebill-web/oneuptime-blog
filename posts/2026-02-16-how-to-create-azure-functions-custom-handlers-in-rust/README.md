@@ -35,6 +35,7 @@ Start by creating a new Rust project alongside the Azure Functions configuration
 
 ```bash
 # Create the Rust project
+
 cargo init azure-function-rust --name handler
 cd azure-function-rust
 

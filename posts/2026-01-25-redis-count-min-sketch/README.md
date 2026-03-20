@@ -60,6 +60,7 @@ RedisBloom provides CMS along with other probabilistic data structures:
 
 ```bash
 # Using Docker with Redis Stack (includes RedisBloom)
+
 docker run -p 6379:6379 redis/redis-stack:latest
 
 # Or load RedisBloom module into existing Redis

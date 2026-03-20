@@ -22,6 +22,7 @@ Before adding rules, you need a table and an input chain. If you are starting fr
 
 ```bash
 # Create an inet table (handles both IPv4 and IPv6)
+
 nft add table inet filter
 
 # Create an input chain with a default drop policy
@@ -37,7 +38,7 @@ nft add chain inet filter output { type filter hook output priority 0 \; policy 
 Always allow established/related connections first so existing sessions are not interrupted, then allow new SSH connections.
 
 ```bash
-# Allow already-established connections (critical — run this before adding drop policies)
+# Allow already-established connections (critical - run this before adding drop policies)
 nft add rule inet filter input ct state established,related accept
 
 # Allow loopback interface traffic

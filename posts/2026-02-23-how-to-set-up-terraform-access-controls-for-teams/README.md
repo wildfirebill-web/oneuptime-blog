@@ -52,6 +52,7 @@ Implement this using GitHub teams and CODEOWNERS:
 
 ```text
 # .github/CODEOWNERS
+
 # Restrict who can approve merges for different areas
 
 # Production environments need platform lead approval

@@ -28,6 +28,7 @@ AWS Marketplace offers SUSE Rancher as a managed subscription, allowing you to d
 
 ```bash
 # Create a dedicated EKS cluster for Rancher management
+
 eksctl create cluster \
   --name rancher-management \
   --region us-east-1 \

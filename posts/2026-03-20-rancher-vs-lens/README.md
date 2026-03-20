@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, lens, kubernetes, ide, comparison, developer-tools
+Tags: Rancher, Lens, Kubernetes, IDE, Comparison, Developer-tools
 
 Description: A detailed comparison of Rancher and Lens to help Kubernetes users choose the right tool for cluster management and development workflows.
 
@@ -46,6 +46,7 @@ Lens automatically discovers clusters from your local kubeconfig file. You can a
 
 ```bash
 # Lens picks up clusters from your default kubeconfig
+
 # You can merge multiple kubeconfig files:
 export KUBECONFIG=~/.kube/config:~/.kube/cluster2.yaml
 kubectl config view --merge --flatten > ~/.kube/merged-config
@@ -97,7 +98,7 @@ Rancher ships with Rancher Monitoring based on Prometheus Operator and Grafana, 
 
 ## Can You Use Both?
 
-Yes — many teams use Lens for individual developer workflows (quick access, debugging, port forwarding) and Rancher as the organizational platform for provisioning, access control, and production management. They complement each other well.
+Yes - many teams use Lens for individual developer workflows (quick access, debugging, port forwarding) and Rancher as the organizational platform for provisioning, access control, and production management. They complement each other well.
 
 ## Conclusion
 

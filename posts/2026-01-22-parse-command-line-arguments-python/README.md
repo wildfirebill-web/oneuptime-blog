@@ -22,6 +22,7 @@ Python's `argparse` module is the standard way to handle command-line arguments.
 import argparse
 
 # Create parser
+
 parser = argparse.ArgumentParser(description='Process some files.')
 
 # Add arguments

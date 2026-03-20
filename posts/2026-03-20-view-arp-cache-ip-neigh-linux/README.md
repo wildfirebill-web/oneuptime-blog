@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, ARP, ip neigh, IPv4, Network Diagnostics
+Tags: Linux, Networking, ARP, Ip neigh, IPv4, Network Diagnostics
 
 Description: View, filter, add, and delete ARP cache entries on Linux using the ip neigh command, and understand the NUD (Neighbor Unreachability Detection) state machine.
 
@@ -14,6 +14,7 @@ The ARP cache (neighbor table) stores IP-to-MAC address mappings learned from AR
 
 ```bash
 # Show all neighbor (ARP) entries
+
 ip neigh show
 
 # Show only IPv4 entries
@@ -28,7 +29,7 @@ ip neigh show 192.168.1.1
 
 Sample output:
 
-```
+```text
 192.168.1.1 dev eth0 lladdr aa:bb:cc:dd:ee:ff REACHABLE
 192.168.1.50 dev eth0 lladdr 11:22:33:44:55:66 STALE
 192.168.1.200 dev eth0  FAILED
@@ -44,7 +45,7 @@ Every ARP entry cycles through states:
 | STALE | Not recently used, will be re-verified on next use |
 | DELAY | Waiting for confirmation after use |
 | PROBE | Sending ARP unicast probes to confirm reachability |
-| FAILED | All probes failed — host unreachable |
+| FAILED | All probes failed - host unreachable |
 | PERMANENT | Manually set, never ages out |
 | NOARP | Interface does not use ARP (e.g., loopback) |
 

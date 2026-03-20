@@ -66,6 +66,7 @@ Matchers determine which alerts the silence applies to. You can match on any ale
 
 ```yaml
 # Example matcher configurations
+
 # Match by alertname
 alertname = HighCPUUsage
 

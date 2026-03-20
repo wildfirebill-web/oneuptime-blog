@@ -32,7 +32,7 @@ During Harvester installation, you configure the management network interactivel
 
 ### Static IP Configuration
 
-```
+```text
 Interface:    eth0
 Method:       Static
 IP Address:   192.168.1.11/24
@@ -43,7 +43,7 @@ NTP Servers:  pool.ntp.org
 
 ### DHCP Configuration
 
-```
+```text
 Interface:    eth0
 Method:       DHCP
 ```
@@ -56,6 +56,7 @@ For automated deployments, define the management network in the Harvester config
 
 ```yaml
 # harvester-config.yaml
+
 # Management network configuration section
 
 scheme_version: 1
@@ -128,7 +129,7 @@ bonds:
 ```
 
 **Switch configuration for LACP:**
-```
+```text
 ! Cisco IOS example
 interface Port-channel1
   description Harvester-Node-01-Bond
@@ -253,4 +254,4 @@ netstat -i | grep harvester-mgmt
 
 ## Conclusion
 
-The management network is the backbone of your Harvester cluster — all cluster communication flows through it. Configuring it with redundancy (bonding), correct static IPs, proper DNS, and synchronized NTP ensures a stable and reliable cluster. While changes to the management network can be made post-installation, they require careful planning to avoid disrupting cluster operations. For production deployments, invest in proper switch configuration with LACP bonding and dedicated management VLANs to isolate management traffic from VM traffic.
+The management network is the backbone of your Harvester cluster - all cluster communication flows through it. Configuring it with redundancy (bonding), correct static IPs, proper DNS, and synchronized NTP ensures a stable and reliable cluster. While changes to the management network can be made post-installation, they require careful planning to avoid disrupting cluster operations. For production deployments, invest in proper switch configuration with LACP bonding and dedicated management VLANs to isolate management traffic from VM traffic.

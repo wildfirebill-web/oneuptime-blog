@@ -36,6 +36,7 @@ The locale system has multiple categories, each controllable independently:
 
 ```bash
 # Show all current locale settings
+
 locale
 
 # Example output:

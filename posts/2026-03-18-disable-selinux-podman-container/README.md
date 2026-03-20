@@ -27,6 +27,7 @@ Common situations where disabling SELinux for a container may be necessary:
 
 ```bash
 # Check current SELinux mode on the host
+
 getenforce
 
 # View recent SELinux denials that may be affecting containers

@@ -65,6 +65,7 @@ Configure OpenTelemetry to capture chaos experiment context:
 
 ```python
 # chaos_telemetry.py
+
 # OpenTelemetry setup for chaos experiment monitoring
 
 from opentelemetry import trace, metrics

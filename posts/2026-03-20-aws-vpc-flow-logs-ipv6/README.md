@@ -17,6 +17,7 @@ VPC_ID="vpc-12345678"
 LOG_GROUP="/aws/vpc/flowlogs"
 
 # Create CloudWatch log group
+
 aws logs create-log-group --log-group-name "$LOG_GROUP"
 
 # Create IAM role for flow logs
@@ -95,7 +96,7 @@ resource "aws_iam_role_policy" "flow_logs" {
 
 ## Query IPv6 Flow Logs in CloudWatch Insights
 
-```
+```text
 # CloudWatch Logs Insights queries for IPv6 traffic
 
 # All IPv6 traffic

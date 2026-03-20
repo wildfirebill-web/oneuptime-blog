@@ -29,6 +29,7 @@ The recommended way to change log levels for all components:
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -31,6 +31,7 @@ The severity label on your Prometheus alert rules drives the routing behavior in
 
 ```yaml
 # prometheus-alerts.yaml
+
 # Alert rules with severity levels mapped to OpsGenie priorities
 
 groups:

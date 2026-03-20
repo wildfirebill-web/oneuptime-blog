@@ -53,6 +53,7 @@ The browser module is included in k6 but requires Chrome or Chromium.
 
 ```bash
 # macOS
+
 brew install k6
 
 # Linux (Debian/Ubuntu)
@@ -643,7 +644,7 @@ k6 run browser-modes.js
 k6 run -e HEADLESS=false -e DEBUG=true browser-modes.js
 ```
 
-## Resource Usage Considerations
+Resource Usage Considerations
 
 Browser tests consume significantly more resources than protocol tests.
 

@@ -312,6 +312,7 @@ Deploy httpbin and test:
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samples/httpbin/httpbin.yaml
 
 # Send a POST request and check what the backend received
+
 kubectl exec deploy/sleep -- curl -s -X POST \
   -H "Content-Type: application/json" \
   -d '{"name": "test", "value": 42}' \

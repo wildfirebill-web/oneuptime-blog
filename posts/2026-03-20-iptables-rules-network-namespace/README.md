@@ -8,7 +8,7 @@ Description: Apply iptables firewall rules within a specific network namespace t
 
 ## Introduction
 
-Each network namespace has its own independent iptables (and nftables) ruleset. Rules applied in the host namespace do not affect namespaces, and vice versa. This allows you to create fine-grained, per-namespace firewall policies — useful for multi-tenant setups, testing, and security isolation.
+Each network namespace has its own independent iptables (and nftables) ruleset. Rules applied in the host namespace do not affect namespaces, and vice versa. This allows you to create fine-grained, per-namespace firewall policies - useful for multi-tenant setups, testing, and security isolation.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Use `ip netns exec` to run any iptables command inside a namespace:
 
 ```bash
 # List iptables rules inside namespace ns1
+
 ip netns exec ns1 iptables -L -n -v
 
 # By default, a new namespace has empty iptables rules
@@ -108,7 +109,7 @@ setup_namespace_firewall $NS
 ## Namespace vs Host Firewall Independence
 
 ```bash
-# Block port 80 in the namespace — does NOT affect the host
+# Block port 80 in the namespace - does NOT affect the host
 ip netns exec ns1 iptables -A INPUT -p tcp --dport 80 -j DROP
 
 # The host can still receive port 80 traffic

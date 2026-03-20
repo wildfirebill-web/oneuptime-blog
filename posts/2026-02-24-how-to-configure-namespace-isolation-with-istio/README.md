@@ -189,6 +189,7 @@ Here's a Kustomize approach:
 
 ```yaml
 # base/authorization-policy.yaml
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

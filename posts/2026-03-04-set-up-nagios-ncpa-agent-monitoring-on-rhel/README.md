@@ -14,6 +14,7 @@ NCPA (Nagios Cross-Platform Agent) is a modern alternative to NRPE. It provides 
 
 ```bash
 # Add the Nagios NCPA repository
+
 sudo rpm -Uvh https://repo.nagios.com/nagios/7/nagios-repo-7-1.el9.noarch.rpm
 
 # Install NCPA

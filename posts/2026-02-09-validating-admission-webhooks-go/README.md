@@ -28,6 +28,7 @@ cd validation-webhook
 go mod init github.com/example/validation-webhook
 
 # Install dependencies
+
 go get k8s.io/api/admission/v1
 go get k8s.io/apimachinery/pkg/apis/meta/v1
 go get k8s.io/apimachinery/pkg/runtime

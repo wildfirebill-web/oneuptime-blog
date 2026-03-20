@@ -20,6 +20,7 @@ ArgoCD renders Helm charts using `helm template` during the sync process. It doe
 
 ```yaml
 # ArgoCD Application using Helm
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

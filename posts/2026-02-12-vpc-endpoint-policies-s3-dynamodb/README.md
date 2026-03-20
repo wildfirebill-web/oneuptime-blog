@@ -30,6 +30,7 @@ This creates an S3 gateway endpoint with a policy that only allows access to spe
 
 ```bash
 # Create S3 gateway endpoint with restrictive policy
+
 aws ec2 create-vpc-endpoint \
   --vpc-id vpc-12345678 \
   --service-name com.amazonaws.us-east-1.s3 \

@@ -23,6 +23,7 @@ from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExporter
 
 # Configure the OTLP exporter pointing to your collector
+
 exporter = OTLPMetricExporter(endpoint="http://otel-collector:4317")
 reader = PeriodicExportingMetricReader(exporter, export_interval_millis=10000)
 

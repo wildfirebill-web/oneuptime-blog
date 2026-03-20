@@ -49,6 +49,7 @@ Cloud DNS uses Compute Engine health checks to determine endpoint availability. 
 
 ```bash
 # Create a health check for the primary endpoint
+
 gcloud compute health-checks create http primary-health-check \
   --host=app.example.com \
   --port=443 \

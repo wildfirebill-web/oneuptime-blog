@@ -24,6 +24,7 @@ Run this to confirm your setup is ready:
 
 ```bash
 # Check your active project and authenticated account
+
 gcloud config list
 ```
 

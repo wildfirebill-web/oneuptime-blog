@@ -1,4 +1,4 @@
-# How to Use Creation-Time Provisioners in OpenTofu
+# How to Use Creation-Time Provisioners in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -135,9 +135,10 @@ Write provisioner scripts so they can be safely run multiple times. This is impo
 
 ```bash
 #!/usr/bin/env bash
-# scripts/install-nginx.sh — idempotent installation
+# scripts/install-nginx.sh - idempotent installation
 
 # Only install if not already present
+
 if ! command -v nginx &>/dev/null; then
   apt-get update -y
   apt-get install -y nginx

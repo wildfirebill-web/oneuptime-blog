@@ -20,6 +20,7 @@ Learn how to diagnose and fix provider authentication errors in OpenTofu for AWS
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

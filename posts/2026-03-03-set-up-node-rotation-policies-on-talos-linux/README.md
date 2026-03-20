@@ -30,6 +30,7 @@ Start by defining how often nodes should be rotated and what triggers rotation.
 
 ```yaml
 # node-rotation-policy.yaml
+
 policy:
   name: "standard-rotation"
   version: "1.0"

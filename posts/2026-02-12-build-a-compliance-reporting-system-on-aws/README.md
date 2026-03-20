@@ -39,6 +39,7 @@ AWS Config continuously records the configuration of your AWS resources and eval
 
 ```bash
 # Enable AWS Config with a delivery channel
+
 aws configservice put-configuration-recorder \
   --configuration-recorder '{
     "name": "default",

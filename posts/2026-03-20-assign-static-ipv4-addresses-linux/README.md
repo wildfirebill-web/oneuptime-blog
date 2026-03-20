@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, IPv4, Networking, Network Configuration, Static IP, sysadmin
+Tags: Linux, IPv4, Networking, Network Configuration, Static IP, Sysadmin
 
 Description: Assigning a static IPv4 address on Linux can be done temporarily with the ip command or permanently through network configuration files using Netplan, NetworkManager, or systemd-networkd.
 
@@ -12,6 +12,7 @@ The `ip` command sets an address immediately but the change is lost on reboot:
 
 ```bash
 # Assign a static IP to eth0
+
 sudo ip addr add 192.168.1.100/24 dev eth0
 
 # Set the default gateway
@@ -100,7 +101,7 @@ sudo systemctl restart systemd-networkd
 
 ## Legacy Method: /etc/network/interfaces (Debian)
 
-```
+```text
 auto eth0
 iface eth0 inet static
     address 192.168.1.100

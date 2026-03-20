@@ -20,6 +20,7 @@ Recommendations AI serves predictions through the Retail API's Predict method. E
 from google.cloud import retail_v2
 
 # Initialize the prediction client
+
 predict_client = retail_v2.PredictionServiceClient()
 
 def get_recommendations(project_id, serving_config_id, visitor_id,

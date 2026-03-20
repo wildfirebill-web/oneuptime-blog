@@ -26,6 +26,7 @@ This guide covers configuring CiliumNetworkPolicy resources using Flux CD for in
 
 ```yaml
 # clusters/my-cluster/cilium-policies/default-deny.yaml
+
 # Deny all ingress and egress by default for the production namespace
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy

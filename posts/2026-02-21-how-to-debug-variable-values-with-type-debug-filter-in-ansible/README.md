@@ -16,6 +16,7 @@ The `type_debug` filter returns a string representing the Python type name of th
 
 ```yaml
 # type-debug-basic.yml - Inspect variable types
+
 ---
 - name: Show variable types
   hosts: localhost

@@ -16,6 +16,7 @@ Most OpenID Connect providers publish their endpoints at a discovery URL:
 
 ```bash
 # OpenID Connect providers expose a discovery document
+
 # Replace with your provider's base URL
 curl https://your-provider.example.com/.well-known/openid-configuration | \
   python3 -m json.tool | grep -E "authorization|token|userinfo"

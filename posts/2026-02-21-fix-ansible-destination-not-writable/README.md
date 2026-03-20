@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # Add become: yes to write to system directories
+
 - name: Deploy nginx config
   template:
     src: nginx.conf.j2

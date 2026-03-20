@@ -91,6 +91,7 @@ volumes:
 
 ```bash
 # Check controller node (via Portainer exec on any broker)
+
 kafka-metadata-shell.sh --snapshot /var/lib/kafka/data/__cluster_metadata-0/00000000000000000000.log
 
 # List brokers via topics

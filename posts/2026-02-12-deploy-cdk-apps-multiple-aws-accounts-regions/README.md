@@ -33,6 +33,7 @@ CDK bootstrap must be run in each account/region combination you want to deploy 
 
 ```bash
 # Bootstrap the deployment account (where your pipeline runs)
+
 cdk bootstrap aws://444444444444/us-east-1
 
 # Bootstrap target accounts with trust to the deployment account

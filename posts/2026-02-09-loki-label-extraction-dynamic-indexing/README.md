@@ -222,6 +222,7 @@ For occasional queries that need specific labels, extract them at query time ins
 
 ```logql
 # Extract user_id from JSON logs for specific investigation
+
 {namespace="production", app="api"}
   | json
   | user_id="12345"

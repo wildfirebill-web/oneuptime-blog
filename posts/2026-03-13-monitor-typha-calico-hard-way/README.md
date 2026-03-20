@@ -72,6 +72,7 @@ If using Prometheus with scrape configs directly:
 
 ```yaml
 # prometheus.yml scrape_config addition
+
 - job_name: 'calico-typha'
   kubernetes_sd_configs:
   - role: pod

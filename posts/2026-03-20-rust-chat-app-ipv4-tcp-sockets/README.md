@@ -1,8 +1,8 @@
-# How to Build a Chat Application in Rust Using IPv4 TCP Sockets
+# How to Build a Chat Application in Rust Using IPv4 TCP Sockets (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, TCP, IPv4, Chat, Networking, Threads, Arc, Mutex
+Tags: Rust, TCP, IPv4, Chat, Networking, Thread, Arc, Mutex
 
 Description: Build a multi-user chat server in Rust using TcpListener, threads, and shared state with Arc and Mutex to broadcast messages between IPv4 clients.
 
@@ -170,6 +170,7 @@ fn main() -> std::io::Result<()> {
 cargo run
 
 # Connect from multiple terminals
+
 telnet localhost 3000
 # Or
 nc localhost 3000

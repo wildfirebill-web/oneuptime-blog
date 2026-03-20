@@ -18,6 +18,7 @@ Forward a single port from a pod:
 
 ```bash
 # Forward local port 8080 to pod port 80
+
 kubectl port-forward pod/nginx-pod 8080:80
 
 # Forward to same port number (8080:8080)

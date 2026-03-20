@@ -30,6 +30,7 @@ The most direct solution for AWS Lambda:
 
 ```hcl
 # Lambda function optimized for cold starts
+
 resource "aws_lambda_function" "api" {
   filename         = data.archive_file.api.output_path
   function_name    = "api-handler"

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Palworld, Game Servers, Containers, Self-Hosted, Gaming, Multiplayer, Steam
+Tags: Docker, Palworld, Game Server, Containers, Self-Hosted, Gaming, Multiplayer, Steam
 
 Description: Set up a dedicated Palworld server in Docker with custom world settings, player management, and automated backups for your creature-collecting adventures.
 
@@ -23,6 +23,7 @@ You need:
 
 ```bash
 # Confirm Docker is installed
+
 docker --version
 docker compose version
 ```

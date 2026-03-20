@@ -20,6 +20,7 @@ By default, Podman uses the same detach keys as Docker:
 
 ```bash
 # The default: Ctrl+P followed by Ctrl+Q
+
 # This can conflict with:
 # - Bash readline: Ctrl+P = previous command in history
 # - Nano editor: Ctrl+P = previous line

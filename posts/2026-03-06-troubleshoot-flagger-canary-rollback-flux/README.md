@@ -27,6 +27,7 @@ Start by examining the current state of the Canary resource.
 
 ```bash
 # Get the canary status
+
 kubectl get canary -n default
 
 # Get detailed canary information

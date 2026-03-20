@@ -1,10 +1,10 @@
-# How to Fix "Network Unreachable" Errors Due to Missing Routes
+# How to Fix 'Network Unreachable' Errors Due to Missing Routes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Network Unreachable, Routing, ip route, OSPF, Troubleshooting
+Tags: Network Unreachable, Routing, Ip route, OSPF, Troubleshooting
 
-Description: Learn how to diagnose and fix "Network Unreachable" ICMP errors caused by missing routes in routing tables, preventing packets from reaching their destination networks.
+Description: Learn how to diagnose and fix 'Network Unreachable' ICMP errors caused by missing routes in routing tables, preventing packets from reaching their destination networks.
 
 ## What "Network Unreachable" Means
 
@@ -18,13 +18,14 @@ ping 10.20.30.1
 
 ping 10.20.30.1
 # From 192.168.1.1 icmp_seq=1 Destination Network Unreachable
-# This version comes from a REMOTE router — it has no route
+
+# This version comes from a REMOTE router - it has no route
 ```
 
 ## Step 1: Check the Local Routing Table
 
 ```bash
-# Linux — show all routes
+# Linux - show all routes
 ip route show
 route -n   # Older syntax
 
@@ -39,14 +40,14 @@ netstat -rn
 
 # Check if default route exists
 ip route show default
-# 'default via 192.168.1.1 dev eth0' — this is your default gateway
+# 'default via 192.168.1.1 dev eth0' - this is your default gateway
 # If missing, all non-local traffic will fail
 ```
 
 ## Step 2: Add a Missing Default Route
 
 ```bash
-# Linux — add default gateway
+# Linux - add default gateway
 sudo ip route add default via 192.168.1.1 dev eth0
 
 # Verify
@@ -62,7 +63,7 @@ sudo netplan apply
 ```
 
 ```cmd
-REM Windows — add default gateway
+REM Windows - add default gateway
 route add 0.0.0.0 mask 0.0.0.0 192.168.1.1
 
 REM Permanent (persist across reboots)
@@ -89,11 +90,11 @@ nmcli con up "Wired connection 1"
 
 ## Step 4: Fix Missing Routes on Cisco Routers
 
-```
+```text
 ! Check routing table for missing prefix
 Router# show ip route 10.20.30.0
 
-! If "% Subnet not in table" — route is missing
+! If "% Subnet not in table" - route is missing
 ! Add static route
 Router(config)# ip route 10.20.30.0 255.255.255.0 192.168.1.254
 

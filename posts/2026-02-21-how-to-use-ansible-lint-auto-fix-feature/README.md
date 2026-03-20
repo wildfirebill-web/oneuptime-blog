@@ -28,6 +28,7 @@ The simplest way to use auto-fix is with the `--fix` flag.
 
 ```bash
 # Run ansible-lint with auto-fix enabled on a single playbook
+
 ansible-lint --fix playbook.yml
 
 # Auto-fix all playbooks in a directory

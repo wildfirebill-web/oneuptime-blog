@@ -135,6 +135,7 @@ Deploy the hub:
 kubectl apply -f nats-hub.yaml
 
 # Get the LoadBalancer IP
+
 HUB_IP=$(kubectl get svc nats-hub -n nats -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 echo "Hub cluster available at: $HUB_IP"
 ```

@@ -16,6 +16,7 @@ The `strrev` function takes a string and returns it with the character order rev
 
 ```hcl
 # Basic syntax
+
 strrev(string)
 ```
 

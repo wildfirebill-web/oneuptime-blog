@@ -14,6 +14,7 @@ Alibaba Cloud ECS supports RHEL as a marketplace image. This guide covers launch
 
 ```bash
 # Using Alibaba Cloud CLI
+
 aliyun ecs RunInstances \
   --RegionId us-east-1 \
   --ImageId rhel_9_x64_20G \

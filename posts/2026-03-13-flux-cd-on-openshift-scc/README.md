@@ -35,6 +35,7 @@ The `restricted-v2` SCC in OpenShift 4.11+ or `restricted` SCC in older versions
 
 ```bash
 # Create the flux-system namespace with OpenShift labels
+
 oc create namespace flux-system
 
 # Label the namespace (not needed for SCC assignment but useful for policies)

@@ -8,11 +8,11 @@ Description: Deploy the complete IPv6 First Hop Security suite on Cisco IOS swit
 
 ## Introduction
 
-Cisco IOS implements IPv6 First Hop Security (FHS) as a coordinated set of features under the `ipv6 first-hop-security` umbrella. The four components — RA Guard, DHCPv6 Guard, IPv6 Snooping, and IPv6 Source Guard — work together to protect IPv6 networks from first-hop attacks. This guide provides a complete, production-ready configuration for Cisco Catalyst switches running IOS 15.0 or later.
+Cisco IOS implements IPv6 First Hop Security (FHS) as a coordinated set of features under the `ipv6 first-hop-security` umbrella. The four components - RA Guard, DHCPv6 Guard, IPv6 Snooping, and IPv6 Source Guard - work together to protect IPv6 networks from first-hop attacks. This guide provides a complete, production-ready configuration for Cisco Catalyst switches running IOS 15.0 or later.
 
 ## Prerequisites and Requirements
 
-```
+```text
 Cisco FHS Requirements:
 
 Hardware:
@@ -32,7 +32,7 @@ Requirements:
 
 ## Step 1: Enable IPv6 and Verify SDM Template
 
-```
+```text
 ! Check current SDM template
 show sdm prefer
 
@@ -51,7 +51,7 @@ show ipv6 general-prefix
 
 ## Step 2: Configure RA Guard
 
-```
+```text
 ! RA Guard policies
 ipv6 nd raguard policy FHS_HOST_RA
  device-role host
@@ -63,7 +63,7 @@ ipv6 nd raguard policy FHS_ROUTER_RA
 
 ## Step 3: Configure DHCPv6 Guard
 
-```
+```text
 ! DHCPv6 Guard policies
 ipv6 dhcp guard policy FHS_HOST_DHCP
  device-role client
@@ -74,7 +74,7 @@ ipv6 dhcp guard policy FHS_SERVER_DHCP
 
 ## Step 4: Configure IPv6 Snooping
 
-```
+```text
 ! IPv6 Snooping policy (ND Inspection + binding table)
 ipv6 snooping policy FHS_SNOOP
  security-level guard
@@ -91,7 +91,7 @@ vlan configuration 20
 
 ## Step 5: Configure IPv6 Source Guard
 
-```
+```text
 ! IPv6 Source Guard policy
 ipv6 source-guard policy FHS_SRC_GUARD
  deny global-autoconf
@@ -102,7 +102,7 @@ ipv6 source-guard policy FHS_SRC_GUARD
 
 ## Step 6: Apply Policies to Interfaces
 
-```
+```text
 ! Apply all FHS policies to access (host) ports
 interface range GigabitEthernet1/0/1 - 23
  description Access ports - FHS protected
@@ -128,7 +128,7 @@ interface GigabitEthernet1/0/24
 
 ## Step 7: Deploy Source Guard After Binding Table Populated
 
-```
+```text
 ! Wait for binding table to populate (allow 30+ minutes for hosts to connect)
 show ipv6 neighbor binding
 
@@ -146,7 +146,7 @@ interface range GigabitEthernet1/0/1 - 23
 
 ## Verification Commands
 
-```
+```text
 ! Verify all FHS policies configured
 show ipv6 first-hop-security summary
 
@@ -183,7 +183,7 @@ show ipv6 first-hop-security statistics
 
 ## Troubleshooting
 
-```
+```text
 ! Problem: Hosts lose connectivity after enabling Source Guard
 ! Cause: Binding table incomplete when Source Guard was enabled
 ! Fix:
@@ -208,4 +208,4 @@ debug ipv6 snooping
 
 ## Conclusion
 
-Complete Cisco IPv6 First Hop Security deployment requires all four components: RA Guard, DHCPv6 Guard, IPv6 Snooping, and IPv6 Source Guard. Deploy in order — RA Guard and DHCPv6 Guard first (immediate benefit, no risk), then Snooping (builds binding table), then Source Guard (only after binding table is populated). Use `show ipv6 first-hop-security summary` to verify all features are active. Regular review of binding table counts and statistics confirms the protection is functioning.
+Complete Cisco IPv6 First Hop Security deployment requires all four components: RA Guard, DHCPv6 Guard, IPv6 Snooping, and IPv6 Source Guard. Deploy in order - RA Guard and DHCPv6 Guard first (immediate benefit, no risk), then Snooping (builds binding table), then Source Guard (only after binding table is populated). Use `show ipv6 first-hop-security summary` to verify all features are active. Regular review of binding table counts and statistics confirms the protection is functioning.

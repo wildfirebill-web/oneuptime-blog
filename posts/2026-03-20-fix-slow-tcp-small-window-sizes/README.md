@@ -14,6 +14,7 @@ If TCP transfers are slower than the available bandwidth should allow, a small w
 
 ```bash
 # Step 1: Measure actual throughput
+
 iperf3 -c 10.20.0.5 -t 30
 # Suppose result: 45 Mbps
 
@@ -51,7 +52,7 @@ sysctl net.core.wmem_max   # system max send buffer
 ## Step 2: Increase Buffer Sizes
 
 ```bash
-# Set larger buffers — values are in bytes
+# Set larger buffers - values are in bytes
 sysctl -w net.ipv4.tcp_rmem="4096 262144 16777216"
 #                             min   default  max
 # default 256KB starts larger, max 16MB allows full auto-tuning

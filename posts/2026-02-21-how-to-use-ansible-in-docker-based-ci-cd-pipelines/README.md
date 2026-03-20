@@ -18,6 +18,7 @@ Start with a Docker image that has everything you need for your Ansible playbook
 
 ```dockerfile
 # Dockerfile.ansible
+
 FROM python:3.11-slim
 
 # Install system dependencies

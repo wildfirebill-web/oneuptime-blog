@@ -22,6 +22,7 @@ You need a CNI that enforces network policies. On Talos Linux, Cilium is the mos
 
 ```bash
 # Install Cilium on your Talos cluster
+
 cilium install --version 1.15.0
 
 # Verify it is running

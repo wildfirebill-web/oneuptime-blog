@@ -23,6 +23,7 @@ Deploy a probe that continuously tests your critical external APIs.
 
 ```yaml
 # api-connectivity-probe.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

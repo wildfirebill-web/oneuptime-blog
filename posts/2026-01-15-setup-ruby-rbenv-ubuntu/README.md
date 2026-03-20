@@ -41,6 +41,7 @@ Before installing rbenv, ensure your Ubuntu system is up to date and has the nec
 
 ```bash
 # Update your package lists and upgrade existing packages
+
 # This ensures you have the latest security patches and software versions
 sudo apt update && sudo apt upgrade -y
 

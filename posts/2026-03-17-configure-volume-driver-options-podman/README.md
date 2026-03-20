@@ -20,6 +20,7 @@ The local driver accepts three main options: `type`, `device`, and `o` (mount op
 
 ```bash
 # Create a volume with specific driver options
+
 podman volume create --driver local \
   --opt type=tmpfs \
   --opt o=size=500m,noexec \

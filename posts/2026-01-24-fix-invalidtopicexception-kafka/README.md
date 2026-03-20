@@ -53,6 +53,7 @@ Only alphanumeric characters, periods (.), underscores (_), and hyphens (-) are 
 
 ```bash
 # Invalid topic names
+
 my topic          # spaces not allowed
 user@events       # @ not allowed
 orders#processed  # # not allowed

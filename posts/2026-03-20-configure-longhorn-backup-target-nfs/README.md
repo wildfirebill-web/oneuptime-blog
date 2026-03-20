@@ -21,6 +21,7 @@ NFS (Network File System) is a popular choice for on-premises Longhorn backup ta
 
 ```bash
 # Ubuntu/Debian
+
 apt-get install -y nfs-common
 
 # RHEL/CentOS/Rocky Linux
@@ -117,7 +118,7 @@ In the Longhorn UI, navigate to **Backup** and verify no connection errors appea
 
 Longhorn automatically creates a directory structure on the NFS share:
 
-```
+```text
 /export/longhorn-backups/
   backupstore/
     volumes/

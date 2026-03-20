@@ -31,6 +31,7 @@ SOC 2 (System and Organization Controls 2) is an auditing framework developed by
 
 ```yaml
 # rancher-auth-config.yaml - Configure LDAP/AD authentication for Rancher
+
 # This is configured in Rancher UI under Global Settings > Authentication
 # Key requirements for SOC 2:
 

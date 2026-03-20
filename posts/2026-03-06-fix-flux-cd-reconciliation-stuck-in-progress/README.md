@@ -18,6 +18,7 @@ This guide covers the most common reasons reconciliation gets stuck and how to u
 
 ```bash
 # List all Kustomizations and check their status
+
 kubectl get kustomization -A
 
 # Example output showing a stuck reconciliation

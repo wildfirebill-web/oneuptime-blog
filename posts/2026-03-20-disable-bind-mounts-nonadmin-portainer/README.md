@@ -37,11 +37,11 @@ Portainer allows administrators to disable bind mount capability for non-admin u
 
 Non-admin users who attempt to create a container with a bind mount will see an error:
 
-```
+```text
 Error: Bind mounts are not allowed for this environment.
 ```
 
-Admins can still create bind mounts — the restriction applies only to standard users.
+Admins can still create bind mounts - the restriction applies only to standard users.
 
 ## Allowing Specific Named Volumes Instead
 
@@ -49,6 +49,7 @@ Redirect users from bind mounts to named volumes, which are safer:
 
 ```yaml
 # Container with a named volume (allowed)
+
 services:
   app:
     image: myapp:latest

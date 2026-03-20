@@ -14,6 +14,7 @@ NetworkManager issues typically fall into categories: interface not connecting, 
 
 ```bash
 # Is NetworkManager running?
+
 systemctl status NetworkManager
 
 # Restart if needed

@@ -38,6 +38,7 @@ resource "aws_iam_role_policy_attachment" "lambda_basic" {
 
 ```hcl
 # Archive the Lambda function code
+
 data "archive_file" "lambda_zip" {
   type        = "zip"
   source_dir  = "${path.module}/lambda/handler"

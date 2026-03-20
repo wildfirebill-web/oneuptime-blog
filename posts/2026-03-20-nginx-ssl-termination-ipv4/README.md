@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, SSL, TLS, IPv4, HTTPS, Certificate, Security
+Tags: Nginx, SSL, TLS, IPv4, HTTPS, Certificates, Security
 
 Description: Configure Nginx as an SSL termination proxy on a specific IPv4 address, handling HTTPS encryption while forwarding plain HTTP to backend servers.
 
@@ -28,6 +28,7 @@ graph LR
 
 ```bash
 # Install Certbot
+
 sudo apt install certbot python3-certbot-nginx
 
 # Obtain certificate for your domain

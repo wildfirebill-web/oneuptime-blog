@@ -21,6 +21,7 @@ Deploying a full OpenShift Container Platform cluster on RHEL 9 provides enterpr
 
 ```bash
 # Download from console.redhat.com
+
 tar xzf openshift-install-linux.tar.gz
 sudo mv openshift-install /usr/local/bin/
 tar xzf openshift-client-linux.tar.gz

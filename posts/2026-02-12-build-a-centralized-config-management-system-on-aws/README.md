@@ -44,6 +44,7 @@ Set up the hierarchy with a script:
 
 ```python
 # Script to bootstrap configuration hierarchy in Parameter Store
+
 import boto3
 
 ssm = boto3.client('ssm')

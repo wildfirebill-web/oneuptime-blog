@@ -20,6 +20,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - NocoDB
+
 version: "3.8"
 
 services:
@@ -70,7 +71,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 DB_PASSWORD=your-postgres-password
 JWT_SECRET=your-jwt-secret-min-32-chars
 NOCODB_DOMAIN=nocodb.yourdomain.com
@@ -119,4 +120,4 @@ curl "http://localhost:8080/api/v1/db/data/noco/{project-id}/{table-name}/export
 
 ## Conclusion
 
-NocoDB stores its own metadata in the `NC_DB` database while connecting to your existing databases as data sources. The `NC_AUTH_JWT_SECRET` secures API tokens. NocoDB supports row-level permissions per view — use shared views for embedding spreadsheets publicly without exposing admin access.
+NocoDB stores its own metadata in the `NC_DB` database while connecting to your existing databases as data sources. The `NC_AUTH_JWT_SECRET` secures API tokens. NocoDB supports row-level permissions per view - use shared views for embedding spreadsheets publicly without exposing admin access.

@@ -28,6 +28,7 @@ Here is how to register a TensorFlow model:
 
 ```python
 # register_model.py
+
 # Register a trained model in the Vertex AI Model Registry
 
 from google.cloud import aiplatform

@@ -29,6 +29,7 @@ Use the Azure CLI to create an AKS cluster with Calico as the network policy pro
 
 ```bash
 # Set your environment variables
+
 RESOURCE_GROUP="aks-calico-rg"
 CLUSTER_NAME="calico-aks-cluster"
 LOCATION="eastus"

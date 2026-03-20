@@ -63,6 +63,7 @@ Deploy this with the Azure CLI.
 
 ```bash
 # Create the resource group and deploy the registry
+
 az group create --name rg-bicep-registry --location eastus
 
 az deployment group create \

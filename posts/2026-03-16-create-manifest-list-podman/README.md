@@ -24,6 +24,7 @@ Use `podman manifest create` to start a new manifest list.
 
 ```bash
 # Create an empty manifest list
+
 podman manifest create myapp:latest
 
 # Verify it was created

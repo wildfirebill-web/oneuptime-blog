@@ -42,6 +42,7 @@ The standard tool for checking CIS compliance is kube-bench. You can run it as a
 
 ```yaml
 # kube-bench-job.yaml
+
 # Runs CIS benchmark checks against your cluster
 apiVersion: batch/v1
 kind: Job

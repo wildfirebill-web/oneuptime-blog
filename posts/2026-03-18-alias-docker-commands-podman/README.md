@@ -20,6 +20,7 @@ The quickest way to redirect Docker commands to Podman is a shell alias.
 
 ```bash
 # Add to your ~/.bashrc or ~/.zshrc
+
 alias docker=podman
 
 # Apply the change immediately

@@ -1,4 +1,4 @@
-# How to Remove Namespaces in Portainer
+# How to Remove Namespaces in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to safely remove Kubernetes namespaces and all their reso
 
 ## Warning: Namespace Deletion Is Destructive
 
-Deleting a namespace removes **all** resources within it — deployments, pods, services, ConfigMaps, Secrets, and PVCs. This action is irreversible. Always verify the contents of a namespace before deletion.
+Deleting a namespace removes **all** resources within it - deployments, pods, services, ConfigMaps, Secrets, and PVCs. This action is irreversible. Always verify the contents of a namespace before deletion.
 
 ## Removing a Namespace in Portainer
 
@@ -23,6 +23,7 @@ Alternatively, click on the namespace and find a **Delete** button in the detail
 
 ```bash
 # Check all resources in a namespace before deleting it
+
 kubectl get all --namespace=my-namespace
 
 # Check PVCs (not shown by 'get all')
@@ -83,4 +84,4 @@ In Portainer, restrict namespace management to environment administrators only.
 
 ## Conclusion
 
-Namespace deletion in Portainer is quick but irreversible. Always audit a namespace's contents — especially PVCs with important data — before removing it. Use the `kubectl get all` and `kubectl get pvc` commands to do a final check before confirming deletion.
+Namespace deletion in Portainer is quick but irreversible. Always audit a namespace's contents - especially PVCs with important data - before removing it. Use the `kubectl get all` and `kubectl get pvc` commands to do a final check before confirming deletion.

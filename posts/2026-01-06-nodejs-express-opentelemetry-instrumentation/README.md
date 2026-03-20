@@ -108,6 +108,7 @@ Alternatively, use Node's `-r` flag to preload the tracing module:
 
 ```bash
 # This loads tracing.js before app.js runs
+
 node -r ./tracing.js app.js
 ```
 

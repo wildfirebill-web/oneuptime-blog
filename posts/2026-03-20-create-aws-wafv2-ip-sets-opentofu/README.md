@@ -11,7 +11,8 @@ WAFv2 IP sets store collections of IP addresses and CIDR ranges for use in Web A
 ## Creating an IP Set
 
 ```hcl
-# Allowlist — trusted office and VPN IPs
+# Allowlist - trusted office and VPN IPs
+
 resource "aws_wafv2_ip_set" "office_ips" {
   name               = "office-and-vpn-ips"
   description        = "Trusted office and VPN IP ranges"

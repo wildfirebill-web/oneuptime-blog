@@ -1,8 +1,8 @@
-# How to Set Up a Machine Learning Pipeline with Portainer
+# How to Set Up a Machine Learning Pipeline with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Machine Learning, MLOps, Docker, Pipeline
+Tags: Portainer, Machine Learning, MLOps, Docker, Pipelines
 
 Description: Build a complete end-to-end machine learning pipeline using containerized tools managed by Portainer.
 
@@ -88,6 +88,7 @@ After deployment, run initialization commands:
 
 ```bash
 # Access container via Portainer console
+
 # Run database migrations
 docker exec ml-tool python manage.py migrate
 

@@ -16,6 +16,7 @@ The single most impactful practice is wrapping all logic in roles. Playbooks sho
 
 ```yaml
 # playbooks/webservers.yml
+
 # Thin playbook that only maps roles to hosts
 - name: Configure web servers
   hosts: webservers

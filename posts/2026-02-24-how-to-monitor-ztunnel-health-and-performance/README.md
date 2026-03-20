@@ -96,6 +96,7 @@ To get logs from a specific node's ztunnel:
 
 ```bash
 # Find which ztunnel runs on a specific node
+
 NODE_NAME="your-node-name"
 ZTUNNEL_POD=$(kubectl get pods -n istio-system -l app=ztunnel --field-selector spec.nodeName=$NODE_NAME -o jsonpath='{.items[0].metadata.name}')
 kubectl logs -n istio-system $ZTUNNEL_POD --tail=200
@@ -113,7 +114,7 @@ Watch for these log patterns that indicate problems:
 - `policy denied` - Authorization policy blocking traffic
 - `upstream connect error` - Network connectivity issues between nodes
 
-## Resource Monitoring
+Resource Monitoring
 
 ztunnel handles all ambient mesh traffic on a node, so its resource usage matters. Monitor CPU and memory:
 

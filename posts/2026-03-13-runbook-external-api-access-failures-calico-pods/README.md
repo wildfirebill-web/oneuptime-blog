@@ -34,6 +34,7 @@ The response focuses on quickly identifying whether Calico network policy is blo
 APP_POD=$(kubectl get pods -n <namespace> -l app=<app-name> -o jsonpath='{.items[0].metadata.name}')
 
 # Test DNS first
+
 kubectl exec $APP_POD -n <namespace> -- nslookup api.external.com 2>&1
 # Then test TCP
 kubectl exec $APP_POD -n <namespace> -- curl -v --connect-timeout 5 https://api.external.com 2>&1 | tail -20

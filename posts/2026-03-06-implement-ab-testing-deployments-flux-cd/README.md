@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, Ab testing, GitOps, Traffic Splitting, NGINX, Istio
+Tags: Flux CD, Kubernetes, Ab testing, GitOps, Traffic Splitting, Nginx, Istio
 
 Description: A practical guide to implementing A/B testing deployments in Kubernetes using Flux CD with traffic splitting based on headers, cookies, and weighted routing.
 
@@ -44,6 +44,7 @@ apps/
 
 ```yaml
 # clusters/my-cluster/ab-testing.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

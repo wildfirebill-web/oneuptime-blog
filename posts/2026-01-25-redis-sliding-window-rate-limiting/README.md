@@ -49,6 +49,7 @@ Redis sorted sets provide an elegant way to implement sliding window rate limiti
 
 ```bash
 # Add a request timestamp to the sorted set
+
 ZADD rate_limit:user:123 1706180400000 "request_1706180400000_abc123"
 
 # Remove old entries outside the window

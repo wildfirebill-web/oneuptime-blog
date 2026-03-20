@@ -16,6 +16,7 @@ PostgreSQL is a popular alternative to MySQL for K3s's external datastore. It su
 
 ```bash
 # Install PostgreSQL 14+
+
 sudo apt-get install -y postgresql postgresql-contrib
 
 sudo systemctl enable --now postgresql
@@ -103,7 +104,7 @@ kubectl get nodes
 journalctl -u k3s -n 50 | grep -i "kine\|datastore"
 ```
 
-K3s uses **kine** as a shim between etcd's gRPC API and SQL databases — you may see kine log entries.
+K3s uses **kine** as a shim between etcd's gRPC API and SQL databases - you may see kine log entries.
 
 ---
 
@@ -122,5 +123,5 @@ psql -h 192.168.1.50 -U k3suser k3s < k3s-backup-20260320.sql
 ## Best Practices
 
 - Enable PostgreSQL connection pooling (PgBouncer) between K3s servers and the database to reduce connection overhead.
-- Use `sslmode=verify-full` in production — never `sslmode=disable` on untrusted networks.
-- Monitor PostgreSQL table bloat in the `k3s` database — kine can accumulate rows that need periodic vacuuming.
+- Use `sslmode=verify-full` in production - never `sslmode=disable` on untrusted networks.
+- Monitor PostgreSQL table bloat in the `k3s` database - kine can accumulate rows that need periodic vacuuming.

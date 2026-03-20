@@ -1,8 +1,8 @@
-# How to Configure K3s to Use containerd
+# How to Configure K3s to Use containerd - Config
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, containerd, Container Runtime, Kubernetes, Configuration, SUSE Rancher
+Tags: K3s, Containerd, Container Runtime, Kubernetes, Configuration, SUSE Rancher
 
 Description: Learn how to configure K3s with containerd including private registry authentication, mirror configuration, runtime settings, and debugging containerd issues.
 
@@ -16,12 +16,12 @@ K3s uses containerd as its default container runtime. Understanding how to confi
 
 K3s manages its own containerd instance, separate from any system-wide containerd:
 
-```
+```text
 /var/lib/rancher/k3s/agent/etc/containerd/config.toml       # Active config (managed by K3s)
 /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl  # Template (edit this one)
 ```
 
-To customize containerd, edit the `.tmpl` file — K3s uses it to regenerate `config.toml` on startup.
+To customize containerd, edit the `.tmpl` file - K3s uses it to regenerate `config.toml` on startup.
 
 ---
 
@@ -29,6 +29,7 @@ To customize containerd, edit the `.tmpl` file — K3s uses it to regenerate `co
 
 ```yaml
 # /etc/rancher/k3s/registries.yaml
+
 mirrors:
   "registry.example.com":
     endpoint:
@@ -165,6 +166,6 @@ spec:
 
 ## Best Practices
 
-- Always use `/etc/rancher/k3s/registries.yaml` for registry configuration instead of editing the containerd config directly — K3s reads registries.yaml and manages the containerd config automatically.
+- Always use `/etc/rancher/k3s/registries.yaml` for registry configuration instead of editing the containerd config directly - K3s reads registries.yaml and manages the containerd config automatically.
 - After any containerd configuration change, verify by pulling a test image: `k3s ctr images pull docker.io/library/hello-world:latest`.
 - Enable `SystemdCgroup = true` in the containerd runc options when running on systemd-based Linux distributions for correct cgroup management.

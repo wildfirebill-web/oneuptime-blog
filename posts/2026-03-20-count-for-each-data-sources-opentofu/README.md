@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, count, for_each, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Data Source, Count, for_each, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use count and for_each meta-arguments with data sources in OpenTofu to query multiple resources dynamically.
 
@@ -23,6 +23,7 @@ variable "region_names" {
 }
 
 # Look up the current AMI in each region
+
 data "aws_ami" "amazon_linux" {
   count    = length(var.region_names)
   provider = aws.by_region[count.index]   # use provider aliased per region

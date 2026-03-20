@@ -20,6 +20,7 @@ Create a Containerfile for your E2E test runner with browser dependencies.
 
 ```dockerfile
 # Containerfile.e2e
+
 # E2E test runner image with Playwright and browsers
 FROM mcr.microsoft.com/playwright:v1.42.0-jammy
 

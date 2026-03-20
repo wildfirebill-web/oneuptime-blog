@@ -16,7 +16,7 @@ DHCPv6 normally requires a 4-message exchange (Solicit → Advertise → Request
 
 ### Standard 4-Message Exchange
 
-```
+```text
 Client                    Server
   |                          |
   |--- Solicit ------------->|
@@ -27,7 +27,7 @@ Client                    Server
 
 ### Rapid Commit 2-Message Exchange
 
-```
+```text
 Client                    Server
   |                          |
   |--- Solicit (rapid-commit)->|
@@ -42,6 +42,7 @@ Both server and client must support Rapid Commit. If the server does not support
 
 ```text
 # /etc/dhcp/dhcpd6.conf
+
 subnet6 2001:db8::/32 {
     range6 2001:db8::100 2001:db8::500;
     option dhcp6.name-servers 2001:db8::53;
@@ -130,7 +131,7 @@ RapidCommit=yes
 # Capture DHCPv6 traffic
 sudo tcpdump -i eth0 -vv udp port 546 or udp port 547
 
-# In Wireshark — filter for Rapid Commit option
+# In Wireshark - filter for Rapid Commit option
 # dhcpv6.option.type == 14
 
 # Expected sequence when Rapid Commit is active:
@@ -154,10 +155,10 @@ sudo tcpdump -i eth0 -vv udp port 546 or udp port 547
 
 ## Considerations and Caveats
 
-1. **Both sides must opt in** — if the client sends Rapid Commit but the server doesn't respond with it, the server should fall back to standard exchange
-2. **Single server environments** — Rapid Commit works best when there's one server (avoids duplicate assignment race conditions)
-3. **HA environments** — ensure both HA nodes are configured identically for Rapid Commit
-4. **Address conflicts** — standard exchange allows Decline; Rapid Commit is faster but offers less time to detect conflicts
+1. **Both sides must opt in** - if the client sends Rapid Commit but the server doesn't respond with it, the server should fall back to standard exchange
+2. **Single server environments** - Rapid Commit works best when there's one server (avoids duplicate assignment race conditions)
+3. **HA environments** - ensure both HA nodes are configured identically for Rapid Commit
+4. **Address conflicts** - standard exchange allows Decline; Rapid Commit is faster but offers less time to detect conflicts
 
 ---
 
@@ -166,8 +167,8 @@ sudo tcpdump -i eth0 -vv udp port 546 or udp port 547
 1. **Enable globally** in single-server deployments for maximum benefit
 2. **Test with packet capture** to confirm the 2-message exchange is occurring
 3. **Monitor lease database** for any duplicate address issues after enabling
-4. **Use with HA** in hot-standby mode only — load-balancing HA may conflict
-5. **Enable on both server and client** — half-configured deployments fall back to standard exchange
+4. **Use with HA** in hot-standby mode only - load-balancing HA may conflict
+5. **Enable on both server and client** - half-configured deployments fall back to standard exchange
 
 ---
 
@@ -177,4 +178,4 @@ DHCPv6 Rapid Commit is a simple configuration change that cuts address assignmen
 
 ---
 
-*Monitor network connectivity and DHCP performance with [OneUptime](https://oneuptime.com) — real-time uptime monitoring with full IPv6 support.*
+*Monitor network connectivity and DHCP performance with [OneUptime](https://oneuptime.com) - real-time uptime monitoring with full IPv6 support.*

@@ -131,6 +131,7 @@ After applying the resources, check that Flux can connect through the proxy.
 
 ```bash
 # Check GitRepository status
+
 kubectl get gitrepository -n flux-system my-app -o yaml
 
 # Look for successful fetch events

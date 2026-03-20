@@ -8,7 +8,7 @@ Description: Learn how to configure Azure NAT Gateway with OpenTofu to provide s
 
 ## Introduction
 
-Azure NAT Gateway provides outbound-only internet connectivity for VMs in private subnets. Unlike Load Balancer SNAT or instance-level public IPs, NAT Gateway scales automatically to support up to 64,512 SNAT ports per public IP address and is zone-redundant. It eliminates SNAT port exhaustion issues that plague high-connection-count workloads (such as microservices making many outbound API calls) and provides a stable source IP for outbound connections—useful for IP allowlisting with external services.
+Azure NAT Gateway provides outbound-only internet connectivity for VMs in private subnets. Unlike Load Balancer SNAT or instance-level public IPs, NAT Gateway scales automatically to support up to 64,512 SNAT ports per public IP address and is zone-redundant. It eliminates SNAT port exhaustion issues that plague high-connection-count workloads (such as microservices making many outbound API calls) and provides a stable source IP for outbound connections-useful for IP allowlisting with external services.
 
 ## Prerequisites
 
@@ -48,6 +48,7 @@ resource "azurerm_nat_gateway" "main" {
 }
 
 # Associate public IP with NAT Gateway
+
 resource "azurerm_nat_gateway_public_ip_association" "main" {
   nat_gateway_id       = azurerm_nat_gateway.main.id
   public_ip_address_id = azurerm_public_ip.nat.id
@@ -134,4 +135,4 @@ curl https://ifconfig.me  # Should return the NAT Gateway public IP
 
 ## Conclusion
 
-NAT Gateway overrides other outbound rules (Load Balancer SNAT, instance-level public IPs) for subnets it's associated with—only one outbound mechanism applies to a subnet at a time. Use a Public IP Prefix instead of individual IPs when you need to allowlist your outbound IP range with external partners—a `/29` prefix gives 8 consecutive IPs that can be specified as a single CIDR range. Keep `idle_timeout_in_minutes = 4` for most workloads; only increase it for long-lived idle connections that would otherwise be terminated mid-session. NAT Gateway is zone-specific, not zone-redundant—deploy one NAT Gateway per zone for true zone redundancy.
+NAT Gateway overrides other outbound rules (Load Balancer SNAT, instance-level public IPs) for subnets it's associated with-only one outbound mechanism applies to a subnet at a time. Use a Public IP Prefix instead of individual IPs when you need to allowlist your outbound IP range with external partners-a `/29` prefix gives 8 consecutive IPs that can be specified as a single CIDR range. Keep `idle_timeout_in_minutes = 4` for most workloads; only increase it for long-lived idle connections that would otherwise be terminated mid-session. NAT Gateway is zone-specific, not zone-redundant-deploy one NAT Gateway per zone for true zone redundancy.

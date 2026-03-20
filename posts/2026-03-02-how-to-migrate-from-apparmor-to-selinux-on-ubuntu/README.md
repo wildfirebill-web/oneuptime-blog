@@ -18,6 +18,7 @@ Before touching anything, document your current AppArmor setup:
 
 ```bash
 # List all loaded AppArmor profiles and their modes
+
 sudo apparmor_status
 
 # Export all current profiles for reference

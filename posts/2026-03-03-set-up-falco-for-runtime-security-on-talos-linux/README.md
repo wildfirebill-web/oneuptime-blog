@@ -41,6 +41,7 @@ The recommended way to deploy Falco on Kubernetes is using the official Helm cha
 
 ```bash
 # Add the Falco Helm repository
+
 helm repo add falcosecurity https://falcosecurity.github.io/charts
 helm repo update
 

@@ -1,4 +1,4 @@
-# How to Test OpenTofu Configurations with Checkov
+# How to Test OpenTofu Configurations with Checkov - Configurations
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -15,6 +15,7 @@ Checkov is an open-source static analysis tool that scans infrastructure-as-code
 ```bash
 pip install checkov
 # or
+
 brew install checkov
 ```
 
@@ -42,7 +43,7 @@ checkov -f main.tf
 
 Checkov outputs pass/fail for each check:
 
-```
+```text
 Check: CKV_AWS_23: "Ensure every security groups rule has a description"
   PASSED for resource: aws_security_group.web
   File: /main.tf:10-25

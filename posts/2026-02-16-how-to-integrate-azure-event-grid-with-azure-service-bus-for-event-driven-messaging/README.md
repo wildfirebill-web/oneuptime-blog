@@ -37,6 +37,7 @@ graph LR
 
 ```bash
 # Create a Service Bus namespace
+
 az servicebus namespace create \
   --name my-servicebus-ns \
   --resource-group rg-events \

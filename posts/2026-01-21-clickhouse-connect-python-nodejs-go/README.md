@@ -28,6 +28,7 @@ The simplest way to connect to ClickHouse from Python:
 import clickhouse_connect
 
 # Create a client with basic connection parameters
+
 client = clickhouse_connect.get_client(
     host='localhost',
     port=8123,

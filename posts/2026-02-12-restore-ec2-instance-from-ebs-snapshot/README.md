@@ -20,6 +20,7 @@ This is the simplest case. You have a snapshot of a data volume (not the root/OS
 
 ```bash
 # Create a new volume from the snapshot
+
 # IMPORTANT: The AZ must match your instance's AZ
 INSTANCE_AZ=$(aws ec2 describe-instances \
     --instance-ids i-0123456789abcdef0 \

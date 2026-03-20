@@ -24,6 +24,7 @@ Before adding a worker node, make sure you have:
 
 ```bash
 # Verify your cluster is healthy
+
 talosctl -n <any-existing-node-ip> health
 
 # Check current nodes

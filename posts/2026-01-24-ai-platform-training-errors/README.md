@@ -73,6 +73,7 @@ Ensure the service account has the necessary IAM roles.
 
 ```bash
 # Get the default Compute Engine service account
+
 PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
 SERVICE_ACCOUNT="$PROJECT_NUMBER-compute@developer.gserviceaccount.com"
 

@@ -39,6 +39,7 @@ RediSearch is only available on the Enterprise and Enterprise Flash tiers. You c
 
 ```bash
 # Create a resource group
+
 az group create --name rg-redis-search --location eastus
 
 # Create an Enterprise E10 cache with the RediSearch module enabled

@@ -42,6 +42,7 @@ Set memory limit as a fraction of available RAM:
 # /etc/rabbitmq/rabbitmq.conf
 
 # Trigger alarm at 60% of available RAM (default is 40%)
+
 vm_memory_high_watermark.relative = 0.6
 ```
 

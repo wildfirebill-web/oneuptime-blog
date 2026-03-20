@@ -56,6 +56,7 @@ The most practical approach is to start with broader permissions and systematica
 
 ```bash
 # Generate an IAM policy based on actual CloudTrail activity
+
 aws accessanalyzer generate-policy \
   --policy-generation-details '{"principalArn": "arn:aws:iam::123456789012:role/MyAppRole"}' \
   --cloud-trail-details '{

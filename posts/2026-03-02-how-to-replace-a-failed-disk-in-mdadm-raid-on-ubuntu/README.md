@@ -18,6 +18,7 @@ You should have email notifications configured for mdadm events. If not, check t
 
 ```bash
 # Check overall RAID status
+
 cat /proc/mdstat
 
 # Detailed status of a specific array

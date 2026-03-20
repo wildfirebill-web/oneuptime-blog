@@ -25,6 +25,7 @@ Install the Velero CLI on your local machine to interact with Velero installatio
 
 ```bash
 # Install Velero CLI on macOS using Homebrew
+
 # macOS
 brew install velero
 

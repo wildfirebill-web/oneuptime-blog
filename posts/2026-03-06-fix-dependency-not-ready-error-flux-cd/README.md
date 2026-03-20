@@ -18,6 +18,7 @@ The error appears in the dependent Kustomization or HelmRelease status:
 
 ```bash
 # Check for dependency errors
+
 flux get kustomizations -A
 flux get helmreleases -A
 

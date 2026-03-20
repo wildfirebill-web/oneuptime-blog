@@ -31,6 +31,7 @@ Check your volume group for free space:
 
 ```bash
 # Show volume groups with free space
+
 vgs
 ```
 

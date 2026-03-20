@@ -2,9 +2,10 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, nvidia, mig, gpu, kubernetes, a100
+Tags: Rancher, NVIDIA, MIG, GPU, Kubernetes, A100
 
 Description: Guide to configuring NVIDIA Multi-Instance GPU (MIG) technology on A100 and H100 GPUs in Rancher for workload isolation.
+
 ## Introduction
 
 NVIDIA Multi-Instance GPU (MIG) technology allows a single A100 or H100 GPU to be partitioned into up to 7 independent GPU instances, each with dedicated memory and compute resources. This guide covers MIG configuration in Rancher.
@@ -23,6 +24,7 @@ NVIDIA Multi-Instance GPU (MIG) technology allows a single A100 or H100 GPU to b
 
 ```bash
 # SSH to GPU node
+
 ssh admin@gpu-node-01
 
 # Enable MIG mode on the GPU

@@ -32,6 +32,7 @@ Create an IAM role for the CSI driver using IRSA (IAM Roles for Service Accounts
 
 ```bash
 # Get your cluster OIDC provider
+
 CLUSTER_NAME="my-eks-cluster"
 OIDC_ID=$(aws eks describe-cluster \
   --name $CLUSTER_NAME \

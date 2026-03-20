@@ -16,6 +16,7 @@ Ansible supports four levels of verbosity, controlled by adding more `v` flags.
 
 ```bash
 # Level 1: Shows task results and basic module output
+
 ansible-playbook -i inventory.ini site.yml -v
 
 # Level 2: Adds input parameters for each task

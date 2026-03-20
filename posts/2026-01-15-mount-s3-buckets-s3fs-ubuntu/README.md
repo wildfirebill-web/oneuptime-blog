@@ -39,6 +39,7 @@ The simplest way to install s3fs on Ubuntu is through the official repositories:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install s3fs

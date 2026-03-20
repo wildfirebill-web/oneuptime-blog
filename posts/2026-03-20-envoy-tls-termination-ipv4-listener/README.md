@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, TLS, SSL, IPv4, HTTPS, Certificate, Security
+Tags: Envoy, TLS, SSL, IPv4, HTTPS, Certificates, Security
 
 Description: Configure Envoy to terminate TLS/HTTPS connections on a specific IPv4 listener, handling certificate management and forwarding decrypted traffic to backend clusters.
 
@@ -144,6 +144,7 @@ filter_chains:
 
 ```bash
 # Verify TLS negotiation
+
 openssl s_client -connect 203.0.113.10:443 -servername example.com
 
 # Check TLS version and cipher

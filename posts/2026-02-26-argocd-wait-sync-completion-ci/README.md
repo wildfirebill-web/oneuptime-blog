@@ -41,6 +41,7 @@ The simplest and most reliable approach is the `argocd app wait` command.
 
 ```bash
 # Wait for sync and health
+
 argocd app wait my-app \
   --server $ARGOCD_SERVER \
   --auth-token $ARGOCD_TOKEN \

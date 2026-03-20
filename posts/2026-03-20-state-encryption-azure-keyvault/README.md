@@ -1,4 +1,4 @@
-# How to Configure State Encryption with Azure Key Vault in OpenTofu
+# How to Configure State Encryption with Azure Key Vault in OpenTofu - Keyvault
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Azure Key Vault provides enterprise-grade key management for OpenTofu state encr
 
 ```hcl
 # keyvault.tf
+
 resource "azurerm_resource_group" "state" {
   name     = "rg-terraform-state"
   location = "East US"
@@ -129,7 +130,7 @@ export ARM_TENANT_ID="00000000-0000-0000-0000-000000000000"
 export ARM_SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000"
 
 # Managed Identity (for Azure-hosted runners)
-# Automatically uses the VM's managed identity — no credentials needed
+# Automatically uses the VM's managed identity - no credentials needed
 ```
 
 ## Step 5: Using with Azure Backend

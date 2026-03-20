@@ -27,6 +27,7 @@ The registry exposes metrics on a configurable endpoint. Enable it in the regist
 
 ```yaml
 # config.yml - Registry with Prometheus metrics enabled
+
 version: 0.1
 
 storage:

@@ -16,6 +16,7 @@ Before setting up monitoring, you need to understand the resources that KubeSpan
 
 ```bash
 # KubeSpan Identity - the node's own WireGuard identity
+
 talosctl get kubespanidentity --nodes <node-ip>
 
 # KubeSpan Peer Status - the status of each peer connection

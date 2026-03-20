@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Error Handling, Result, Option, Operator
+Tags: Rust, Error Handling, Result, Options, Operator
 
 Description: Learn how to use the ? operator for clean error propagation in Rust. Understand how it works with Result and Option, and master error conversion patterns.
 

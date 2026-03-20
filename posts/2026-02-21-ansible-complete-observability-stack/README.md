@@ -30,6 +30,7 @@ graph TD
 
 ```yaml
 # roles/observability/defaults/main.yml - Full observability stack
+
 prometheus_port: 9090
 loki_port: 3100
 tempo_port: 3200

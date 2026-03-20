@@ -1,4 +1,4 @@
-# How to Set Up a .NET Development Environment with Portainer
+# How to Set Up a .NET Development Environment with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Description: Build a complete .NET 8 development environment with hot-reload, re
 
 ```dockerfile
 # Dockerfile.dev - .NET 8 development environment
+
 FROM mcr.microsoft.com/dotnet/sdk:8.0
 
 # Install tools

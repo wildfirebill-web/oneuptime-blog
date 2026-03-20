@@ -22,6 +22,7 @@ Navigate to **Manage Jenkins > Manage Plugins > Available** and search for "Kube
 
 ```yaml
 # jenkins-casc.yaml
+
 # Jenkins Configuration as Code for Kubernetes plugin installation
 jenkins:
   systemMessage: "Jenkins configured with Kubernetes agents"
@@ -444,7 +445,7 @@ pipeline {
 }
 ```
 
-## Resource Limits and Requests
+Resource Limits and Requests
 
 Properly configured resource limits prevent builds from consuming excessive cluster resources.
 
@@ -1043,7 +1044,7 @@ spec:
 - Use read-only root filesystems where possible
 - Run containers as non-root users with security contexts
 
-### Resource Management Best Practices
+Resource Management Best Practices
 
 - Set CPU requests to typical usage and limits to peak usage
 - Set memory requests equal to limits to avoid OOM surprises

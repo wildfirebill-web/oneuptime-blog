@@ -37,6 +37,7 @@ You assign a resource to a sync phase using the `argocd.argoproj.io/hook` annota
 
 ```yaml
 # PreSync hook - runs before main resources
+
 apiVersion: batch/v1
 kind: Job
 metadata:

@@ -493,6 +493,7 @@ app.get('/api/orders', async (req, res) => {
 
 ```python
 # middleware.py
+
 from opentelemetry import trace, baggage
 from opentelemetry.context import attach, detach
 from fastapi import Request

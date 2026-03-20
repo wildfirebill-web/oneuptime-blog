@@ -65,6 +65,7 @@ The model should produce positive outcomes at equal rates across groups.
 
 ```python
 # demographic_parity.py
+
 # Measures whether positive prediction rates are equal across groups.
 # A ratio of 1.0 indicates perfect parity.
 

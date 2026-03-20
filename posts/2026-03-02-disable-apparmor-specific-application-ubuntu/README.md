@@ -28,6 +28,7 @@ Before making changes, check the current state of profiles:
 
 ```bash
 # List all loaded profiles with their status
+
 sudo aa-status
 
 # Show just profile names and modes

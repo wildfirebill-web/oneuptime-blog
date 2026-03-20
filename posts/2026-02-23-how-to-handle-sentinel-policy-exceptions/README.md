@@ -28,6 +28,7 @@ The simplest exception mechanism is using soft-mandatory enforcement. When a pol
 
 ```hcl
 # sentinel.hcl
+
 policy "restrict-instance-types" {
     source            = "./policies/restrict-instance-types.sentinel"
     enforcement_level = "soft-mandatory"

@@ -27,6 +27,7 @@ Flagger provides a built-in load testing service that can generate HTTP and gRPC
 
 ```yaml
 # load-tester-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

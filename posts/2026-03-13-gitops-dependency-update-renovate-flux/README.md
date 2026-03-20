@@ -97,6 +97,7 @@ Renovate understands Flux `HelmRelease` resources natively. It detects the chart
 
 ```yaml
 # Example HelmRelease that Renovate will update
+
 # apps/production/cert-manager/helmrelease.yaml
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease

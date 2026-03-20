@@ -20,6 +20,7 @@ First, create an Azure Container Registry to host your Bicep modules. Any ACR ti
 
 ```bash
 # Create a resource group for the registry
+
 az group create --name "rg-bicep-registry" --location "eastus"
 
 # Create an Azure Container Registry

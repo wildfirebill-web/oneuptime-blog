@@ -304,6 +304,7 @@ For service accounts and CI/CD pipelines, generate JWT tokens:
 
 ```bash
 # Generate a token for the ci-bot role
+
 argocd proj role create-token backend-team ci-bot
 
 # Generate a token with expiration

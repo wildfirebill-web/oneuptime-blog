@@ -27,6 +27,7 @@ Presto is available as an optional component in Dataproc. Include it when creati
 
 ```bash
 # Create a Dataproc cluster with Presto installed
+
 gcloud dataproc clusters create presto-cluster \
   --region=us-central1 \
   --zone=us-central1-a \

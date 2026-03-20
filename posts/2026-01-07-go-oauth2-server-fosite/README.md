@@ -1441,7 +1441,7 @@ For more advanced features, consider adding:
 - Token revocation endpoints
 - Audit logging for security compliance
 
-## Resources
+Resources
 
 - [fosite GitHub Repository](https://github.com/ory/fosite)
 - [OAuth 2.0 RFC 6749](https://tools.ietf.org/html/rfc6749)

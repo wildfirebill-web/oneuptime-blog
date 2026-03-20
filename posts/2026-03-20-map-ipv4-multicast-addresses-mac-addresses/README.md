@@ -24,7 +24,7 @@ Because only 23 bits of the 28-bit multicast group ID are used, the mapping is *
 
 For group `239.1.2.3`:
 
-```
+```text
 IP in binary:
 239 = 1110 1111
   1 = 0000 0001
@@ -59,6 +59,7 @@ def multicast_ip_to_mac(group: str) -> str:
     return mac
 
 # Examples
+
 groups = ["224.0.0.1", "224.0.0.251", "239.1.2.3", "232.10.20.30"]
 for g in groups:
     print(f"{g:16s}  →  {multicast_ip_to_mac(g)}")
@@ -66,7 +67,7 @@ for g in groups:
 
 Output:
 
-```
+```text
 224.0.0.1         →  01:00:5e:00:00:01
 224.0.0.251       →  01:00:5e:00:00:fb
 239.1.2.3         →  01:00:5e:01:02:03

@@ -16,6 +16,7 @@ Start with real-time stats to understand current CPU consumption:
 
 ```bash
 # Live CPU stats for all containers
+
 docker stats
 
 # Format output for easier reading

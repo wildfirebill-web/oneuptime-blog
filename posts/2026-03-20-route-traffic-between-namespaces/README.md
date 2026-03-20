@@ -30,6 +30,7 @@ ip netns add router
 
 ```bash
 # veth pair between ns1 and router
+
 ip link add veth0 type veth peer name veth-r1
 ip link set veth0 netns ns1
 ip link set veth-r1 netns router
@@ -93,7 +94,7 @@ ip netns exec ns2 ping -c 3 10.0.1.2
 If two namespaces share the same subnet via a veth pair, no routing namespace is needed:
 
 ```bash
-# ns1 and ns2 on same /24 — no routing needed
+# ns1 and ns2 on same /24 - no routing needed
 ip netns exec ns1 ip route show
 # Directly connected routes are added automatically
 ```

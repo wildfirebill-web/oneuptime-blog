@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, GitOps, Webhook, DevOps
+Tags: Portainer, Docker, Stacks, GitOps, Webhooks, DevOps
 
 Description: Learn how to configure Portainer stack webhooks triggered by Git pushes for instant redeployment without polling delays.
 
@@ -18,7 +18,7 @@ While polling auto-update checks for changes at regular intervals, webhook-based
 
 ## How Webhook Auto-Update Works
 
-```
+```text
 1. Developer pushes to Git repository
 2. GitHub/GitLab/Bitbucket sends HTTP POST to Portainer webhook URL
 3. Portainer receives the request, pulls latest Compose from Git
@@ -32,7 +32,7 @@ While polling auto-update checks for changes at regular intervals, webhook-based
 2. Under **Automatic updates**, select **Webhook** (instead of Polling).
 3. Portainer generates and displays the webhook URL:
 
-```
+```text
 https://your-portainer.example.com/api/stacks/webhooks/abc123def456...
 ```
 
@@ -45,7 +45,7 @@ https://your-portainer.example.com/api/stacks/webhooks/abc123def456...
 2. Navigate to **Settings** → **Webhooks** → **Add webhook**.
 3. Configure:
 
-```
+```text
 Payload URL:   https://your-portainer.example.com/api/stacks/webhooks/abc123def456
 Content type:  application/json
 Secret:        (leave blank or set a secret)
@@ -54,7 +54,7 @@ Active:        ✓ checked
 ```
 
 4. Click **Add webhook**.
-5. GitHub sends a ping event — verify it shows a green checkmark.
+5. GitHub sends a ping event - verify it shows a green checkmark.
 
 ## Step 3: Configure the Webhook in GitLab
 
@@ -62,7 +62,7 @@ Active:        ✓ checked
 2. Navigate to **Settings** → **Webhooks**.
 3. Configure:
 
-```
+```text
 URL:           https://your-portainer.example.com/api/stacks/webhooks/abc123def456
 Secret token:  (optional)
 Trigger:       Push events
@@ -79,6 +79,7 @@ Trigger the Portainer webhook as part of a CI/CD pipeline:
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Deploy to Production
 
 on:
@@ -140,7 +141,7 @@ jobs:
           git commit -m "Update API image to ${{ github.sha }}"
           git push
 
-      # Step above pushed to main — the webhook fires automatically
+      # Step above pushed to main - the webhook fires automatically
       # No need to call the webhook manually; GitHub fires it on push
 ```
 
@@ -149,7 +150,7 @@ jobs:
 Protect the webhook endpoint from unauthorized access:
 
 ```bash
-# 1. Webhook URL contains a secret token — treat it like a password
+# 1. Webhook URL contains a secret token - treat it like a password
 #    Never commit it to your repository
 
 # 2. Store in GitHub as a repository secret:
@@ -177,4 +178,4 @@ curl -X POST \
 
 ## Conclusion
 
-Webhook-based auto-updates provide instant redeployment with zero polling overhead. Configure Portainer to generate a webhook URL, add it to your Git repository's webhook settings, and every push triggers an immediate redeploy. For the most complete CI/CD workflow, combine this with GitHub Actions or GitLab CI: build and push the image, update the image tag in the Compose file (or environment variables), push to Git, and let the webhook fire automatically. Store webhook URLs as CI/CD secrets — they are effectively authentication tokens.
+Webhook-based auto-updates provide instant redeployment with zero polling overhead. Configure Portainer to generate a webhook URL, add it to your Git repository's webhook settings, and every push triggers an immediate redeploy. For the most complete CI/CD workflow, combine this with GitHub Actions or GitLab CI: build and push the image, update the image tag in the Compose file (or environment variables), push to Git, and let the webhook fire automatically. Store webhook URLs as CI/CD secrets - they are effectively authentication tokens.

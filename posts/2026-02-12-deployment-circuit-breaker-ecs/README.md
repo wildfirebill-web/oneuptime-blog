@@ -100,6 +100,7 @@ Via the AWS CLI:
 
 ```bash
 # Enable circuit breaker on an existing service
+
 aws ecs update-service \
   --cluster my-cluster \
   --service api-service \

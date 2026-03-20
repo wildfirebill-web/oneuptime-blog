@@ -24,6 +24,7 @@ Start with a Packer template that builds an AMI with your application dependenci
 # packer/app-server.pkr.hcl
 
 # Required plugins
+
 packer {
   required_plugins {
     amazon = {

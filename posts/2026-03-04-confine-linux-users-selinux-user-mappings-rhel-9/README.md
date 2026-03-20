@@ -38,6 +38,7 @@ graph TD
 
 ```bash
 # Show all SELinux user mappings
+
 sudo semanage login -l
 ```
 

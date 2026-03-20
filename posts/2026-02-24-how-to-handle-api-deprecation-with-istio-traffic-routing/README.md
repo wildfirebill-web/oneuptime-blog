@@ -103,6 +103,7 @@ Query Prometheus to find clients still using v1:
 
 ```text
 # Total v1 requests per client
+
 sum(increase(istio_requests_total{api_version="v1", request_url_path=~"/api/v1/users.*"}[7d])) by (client_id)
 
 # v1 request trend over time

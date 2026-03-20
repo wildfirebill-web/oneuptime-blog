@@ -232,6 +232,7 @@ class HealthCheck:
 health = HealthCheck()
 
 # Database check
+
 def check_database():
     conn = psycopg2.connect(
         host="localhost",

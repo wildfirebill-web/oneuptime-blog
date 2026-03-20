@@ -45,6 +45,7 @@ flowchart TB
 
 ```bash
 # List all users
+
 mc admin user list myminio
 
 # Check specific user info

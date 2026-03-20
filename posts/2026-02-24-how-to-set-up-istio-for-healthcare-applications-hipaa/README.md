@@ -72,6 +72,7 @@ HIPAA requires that only authorized users and systems can access PHI. Implement 
 
 ```yaml
 # Deny all by default in the healthcare namespace
+
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:

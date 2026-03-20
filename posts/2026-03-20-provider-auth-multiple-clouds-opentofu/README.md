@@ -12,7 +12,7 @@ Modern infrastructure often spans multiple cloud providers. OpenTofu supports th
 
 ## Project Structure
 
-```
+```text
 multi-cloud/
 ├── main.tf
 ├── providers.tf
@@ -24,6 +24,7 @@ multi-cloud/
 
 ```hcl
 # providers.tf
+
 provider "aws" {
   region = var.aws_region
 
@@ -172,7 +173,7 @@ variable "gcp_credentials_file" {
 ## Best Practices
 
 1. **Use OIDC/Workload Identity** instead of long-lived service account keys in CI/CD
-2. **Never commit credentials** to version control — use environment variables or secret managers
+2. **Never commit credentials** to version control - use environment variables or secret managers
 3. **Use separate service accounts** with minimum required permissions per cloud
 4. **Rotate credentials regularly** and audit access logs
 5. **Use `sensitive = true`** on all credential variables to prevent them appearing in logs

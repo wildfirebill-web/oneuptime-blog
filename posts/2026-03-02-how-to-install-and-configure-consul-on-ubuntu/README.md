@@ -34,6 +34,7 @@ HashiCorp provides an official APT repository:
 
 ```bash
 # Install required packages
+
 sudo apt-get update && sudo apt-get install -y gnupg curl
 
 # Add HashiCorp GPG key

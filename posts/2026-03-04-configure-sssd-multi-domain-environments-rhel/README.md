@@ -19,6 +19,7 @@ sudo vi /etc/sssd/sssd.conf
 ```ini
 [sssd]
 # List all domains, separated by commas
+
 # SSSD searches them in the order listed
 domains = ad.example.com, ldap.internal.com
 services = nss, pam

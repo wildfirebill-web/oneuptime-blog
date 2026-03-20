@@ -29,6 +29,7 @@ Check that Cilium is correctly specified in the k0s cluster configuration.
 
 ```bash
 # View the k0s cluster config to confirm Cilium is the CNI extension
+
 k0s config status
 
 # If you have the config file, check the network and extension sections

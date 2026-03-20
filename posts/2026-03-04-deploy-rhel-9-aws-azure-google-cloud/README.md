@@ -27,6 +27,7 @@ AWS provides RHEL images through the EC2 AMI catalog. You can search for them in
 
 ```bash
 # Search for official RHEL AMIs in your region
+
 aws ec2 describe-images \
   --owners 309956199498 \
   --filters "Name=name,Values=RHEL-9*" \

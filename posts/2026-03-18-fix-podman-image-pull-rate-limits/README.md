@@ -35,6 +35,7 @@ You can check your current rate limit status:
 
 ```bash
 # Check rate limit headers (anonymous)
+
 podman run --rm docker.io/ratelimitpreview/test:latest
 
 # Or use curl to check headers

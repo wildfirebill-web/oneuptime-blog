@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, Round Robin, Load Balancing, IPv4, HTTP, Servers
+Tags: Nginx, Round Robin, Load Balancing, IPv4, HTTP, Server
 
 Description: Configure Nginx to distribute HTTP requests across multiple IPv4 backend servers using the default round-robin algorithm and verify even traffic distribution.
 
 ## Introduction
 
-Nginx's default load balancing algorithm is round robin — requests are distributed to backend servers in sequential order. Each server receives requests one at a time in rotation. This is ideal for stateless applications where all backend servers are identical in capability.
+Nginx's default load balancing algorithm is round robin - requests are distributed to backend servers in sequential order. Each server receives requests one at a time in rotation. This is ideal for stateless applications where all backend servers are identical in capability.
 
 ## Configuration
 
@@ -16,7 +16,7 @@ Nginx's default load balancing algorithm is round robin — requests are distrib
 # /etc/nginx/conf.d/roundrobin.conf
 
 upstream backend-pool {
-    # Round robin is the default — no directive needed
+    # Round robin is the default - no directive needed
     server 10.0.1.10:8080;
     server 10.0.1.11:8080;
     server 10.0.1.12:8080;
@@ -43,7 +43,7 @@ server {
 
 ## How Round Robin Works
 
-```
+```text
 Request 1 → 10.0.1.10
 Request 2 → 10.0.1.11
 Request 3 → 10.0.1.12
@@ -58,13 +58,14 @@ Each backend should add a response header or body identifying itself:
 
 ```bash
 # Send 9 requests and record which server responds
+
 for i in $(seq 1 9); do
   curl -s -H "Host: lb.example.com" http://localhost/ | grep "server-id"
 done
 ```
 
 Expected output (3 servers):
-```
+```text
 server-id: 10.0.1.10
 server-id: 10.0.1.11
 server-id: 10.0.1.12
@@ -131,4 +132,4 @@ curl http://localhost:8080/nginx_status
 
 ## Conclusion
 
-Nginx round-robin is the default — just list servers in an `upstream` block without a `least_conn` or `ip_hash` directive. Add `max_fails` and `fail_timeout` for passive health detection. Use `proxy_next_upstream` to retry failed requests automatically. Log `$upstream_addr` to verify distribution in production.
+Nginx round-robin is the default - just list servers in an `upstream` block without a `least_conn` or `ip_hash` directive. Add `max_fails` and `fail_timeout` for passive health detection. Use `proxy_next_upstream` to retry failed requests automatically. Log `$upstream_addr` to verify distribution in production.

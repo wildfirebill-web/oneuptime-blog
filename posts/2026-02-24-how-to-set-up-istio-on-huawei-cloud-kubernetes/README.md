@@ -93,6 +93,7 @@ Create a CCE-specific configuration with Huawei's Elastic Load Balance (ELB) ann
 
 ```yaml
 # istio-cce.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

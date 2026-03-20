@@ -16,6 +16,7 @@ The simplest deployment uses the `community.vmware.vmware_guest` module with the
 
 ```yaml
 # deploy-from-template.yml
+
 ---
 - name: Deploy a VM from a template
   hosts: localhost

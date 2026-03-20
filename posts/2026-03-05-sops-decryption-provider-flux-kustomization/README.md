@@ -27,6 +27,7 @@ The minimal configuration requires setting the decryption provider to `sops` and
 
 ```yaml
 # kustomization.yaml - Basic SOPS decryption configuration
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

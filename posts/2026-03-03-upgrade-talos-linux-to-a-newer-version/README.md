@@ -18,6 +18,7 @@ Every Talos release has release notes that document breaking changes, new featur
 
 ```bash
 # Check your current Talos version
+
 talosctl version --nodes 192.168.1.10
 
 # Check the latest available version

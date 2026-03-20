@@ -27,6 +27,7 @@ This tutorial walks you through deploying Chaos Mesh using a Flux HelmRelease, e
 
 ```yaml
 # clusters/my-cluster/chaos-mesh/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -53,6 +53,7 @@ First, get the resource IDs and peering details for both circuits:
 
 ```bash
 # Get details of the first circuit (London)
+
 az network express-route show \
   --resource-group rgLondon \
   --name londonCircuit \

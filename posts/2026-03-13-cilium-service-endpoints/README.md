@@ -26,6 +26,7 @@ This guide explains how Cilium manages service endpoints, how to inspect the end
 
 ```bash
 # List all services Cilium is managing
+
 cilium service list
 
 # Show detailed endpoint state for a specific service

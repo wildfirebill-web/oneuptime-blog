@@ -20,6 +20,7 @@ The simplest test is analyzing the `terraform plan` output:
 
 ```bash
 # Generate a detailed plan
+
 terraform plan -detailed-exitcode -out=migration.tfplan 2>&1 | tee plan-output.log
 
 # Exit codes:

@@ -37,6 +37,7 @@ role = sagemaker.get_execution_role()
 bucket = session.default_bucket()
 
 # Create a Clarify processor
+
 clarify_processor = clarify.SageMakerClarifyProcessor(
     role=role,
     instance_count=1,

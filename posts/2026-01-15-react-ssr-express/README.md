@@ -86,6 +86,7 @@ react-ssr-express/
 
 ```bash
 # Initialize project
+
 npm init -y
 
 # Core dependencies

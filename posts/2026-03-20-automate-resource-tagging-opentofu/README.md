@@ -35,6 +35,7 @@ provider "aws" {
 
 ```hcl
 # modules/tagging/main.tf
+
 variable "environment" { type = string }
 variable "project"     { type = string }
 variable "team"        { type = string }

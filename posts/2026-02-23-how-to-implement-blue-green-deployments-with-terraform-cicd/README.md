@@ -24,6 +24,7 @@ In a blue-green setup:
 
 ```hcl
 # variables.tf
+
 variable "active_environment" {
   description = "Which environment is currently active (blue or green)"
   type        = string

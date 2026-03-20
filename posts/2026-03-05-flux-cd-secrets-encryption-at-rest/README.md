@@ -23,6 +23,7 @@ Create an EncryptionConfiguration that tells the API server how to encrypt Secre
 
 ```yaml
 # encryption-config.yaml
+
 # Kubernetes API server encryption configuration for Secrets
 apiVersion: apiserver.config.k8s.io/v1
 kind: EncryptionConfiguration

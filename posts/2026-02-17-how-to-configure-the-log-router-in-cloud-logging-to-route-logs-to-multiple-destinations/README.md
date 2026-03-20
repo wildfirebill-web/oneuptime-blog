@@ -54,6 +54,7 @@ First, create a BigQuery dataset:
 
 ```bash
 # Create a BigQuery dataset for log storage
+
 bq mk --dataset --location=US my-project:application_logs
 ```
 

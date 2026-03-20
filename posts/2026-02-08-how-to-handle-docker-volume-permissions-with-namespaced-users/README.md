@@ -18,6 +18,7 @@ When you enable user namespaces, Docker sets up a mapping using the `dockremap` 
 
 ```bash
 # View the subordinate UID and GID ranges
+
 cat /etc/subuid
 cat /etc/subgid
 ```

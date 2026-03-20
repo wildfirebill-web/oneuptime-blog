@@ -8,10 +8,11 @@ Description: Build reproducible IPv6 network labs with Containerlab using topolo
 
 ## Containerlab Overview
 
-Containerlab creates network topologies from YAML definitions, orchestrating Docker containers as network nodes. It handles link creation, IP assignment, and lifecycle management — making IPv6 lab setup fully declarative.
+Containerlab creates network topologies from YAML definitions, orchestrating Docker containers as network nodes. It handles link creation, IP assignment, and lifecycle management - making IPv6 lab setup fully declarative.
 
 ```bash
 # Install Containerlab
+
 bash -c "$(curl -sL https://get.containerlab.dev)"
 
 # Verify installation
@@ -99,7 +100,7 @@ bgpd=yes
 staticd=yes
 ```
 
-```
+```text
 ! configs/r1/frr.conf
 interface eth1
  ipv6 address 2001:db8:12::1/64
@@ -121,7 +122,7 @@ interface lo
 ## Multi-Tier Data Center Lab
 
 ```yaml
-# dc-lab.yml — Spine-Leaf with EVPN over IPv6
+# dc-lab.yml - Spine-Leaf with EVPN over IPv6
 name: dc-ipv6
 
 topology:
@@ -201,7 +202,7 @@ done
 
 ```bash
 #!/bin/bash
-# test-ipv6-lab.sh — Run after containerlab deploy
+# test-ipv6-lab.sh - Run after containerlab deploy
 
 PASS=0
 FAIL=0

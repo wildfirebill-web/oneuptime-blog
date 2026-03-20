@@ -44,6 +44,7 @@ The most common cause is missing `@types` packages.
 
 ```bash
 # Install types for common libraries
+
 npm install --save-dev @types/node    # For NodeJS namespace
 npm install --save-dev @types/react   # For React namespace
 npm install --save-dev @types/express # For Express namespace

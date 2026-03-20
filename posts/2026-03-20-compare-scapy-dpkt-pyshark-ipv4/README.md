@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Scapy, dpkt, PyShark, IPv4, Packet Analysis, Networking
+Tags: Python, Scapy, Dpkt, PyShark, IPv4, Packet Analysis, Networking
 
 Description: A side-by-side comparison of Scapy, dpkt, and PyShark for IPv4 packet analysis, covering their strengths, weaknesses, and ideal use cases.
 
@@ -84,9 +84,9 @@ bar
     bar [250000, 50000, 5000]
 ```
 
-- **dpkt**: ~250,000 pkt/s — fastest, minimal overhead
-- **Scapy**: ~50,000 pkt/s — feature-rich, moderate overhead
-- **PyShark**: ~5,000 pkt/s — subprocess-based, richest dissection
+- **dpkt**: ~250,000 pkt/s - fastest, minimal overhead
+- **Scapy**: ~50,000 pkt/s - feature-rich, moderate overhead
+- **PyShark**: ~5,000 pkt/s - subprocess-based, richest dissection
 
 ## When to Use Each
 
@@ -114,10 +114,11 @@ bar
 from scapy.all import IP, TCP, send
 
 # Only Scapy supports packet crafting
+
 pkt = IP(dst="10.0.0.1") / TCP(dport=80, flags="S")
 send(pkt)
 ```
 
 ## Conclusion
 
-Choose your library based on the task: dpkt for high-speed PCAP processing, Scapy for packet crafting and research, and PyShark for rich protocol analysis leveraging Wireshark's dissectors. In many workflows, multiple libraries complement each other—use dpkt for bulk analysis and Scapy for crafting specific test packets.
+Choose your library based on the task: dpkt for high-speed PCAP processing, Scapy for packet crafting and research, and PyShark for rich protocol analysis leveraging Wireshark's dissectors. In many workflows, multiple libraries complement each other-use dpkt for bulk analysis and Scapy for crafting specific test packets.

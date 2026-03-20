@@ -28,6 +28,7 @@ The simplest way to build a dependency map is from Istio's metrics in Prometheus
 
 ```bash
 # Get all service-to-service communication pairs
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant http://localhost:9090 \
   'sum(istio_requests_total) by (source_workload, source_workload_namespace, destination_service, destination_service_namespace)'

@@ -37,6 +37,7 @@ Create a log adapter that converts plain-text Apache logs to structured JSON:
 
 ```python
 # log-adapter/adapter.py
+
 # Reads Apache-style access logs and converts them to structured JSON
 
 import json

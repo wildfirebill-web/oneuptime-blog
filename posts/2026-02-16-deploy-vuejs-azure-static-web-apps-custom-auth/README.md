@@ -24,6 +24,7 @@ This guide covers deploying a Vue.js application with custom authentication, pro
 
 ```bash
 # Create a new Vue.js project with Vite
+
 npm create vue@latest vue-swa-auth -- --typescript --router --pinia
 cd vue-swa-auth
 npm install

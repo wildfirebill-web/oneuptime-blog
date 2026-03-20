@@ -32,6 +32,7 @@ flowchart TD
 
 ```bash
 # Create new Vite project with React and TypeScript
+
 npm create vite@latest my-app -- --template react-ts
 cd my-app
 npm install

@@ -28,6 +28,7 @@ When a node is freshly installed with Talos Linux and has not been configured ye
 
 ```bash
 # Apply configuration to a new, unconfigured node
+
 talosctl apply-config --insecure --nodes <node-ip> --file controlplane.yaml
 ```
 

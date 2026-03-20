@@ -112,6 +112,7 @@ With the Admin SDK:
 
 ```python
 # Python Admin SDK: sum the quantity field for a specific product
+
 from google.cloud import firestore
 from google.cloud.firestore_v1.aggregation import SumAggregation
 

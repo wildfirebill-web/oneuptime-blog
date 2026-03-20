@@ -26,6 +26,7 @@ Let's start with a set of common org policies:
 # org_policies.tf - Define organization-level constraints
 
 # Restrict resource locations to specific regions
+
 resource "google_org_policy_policy" "restrict_locations" {
   name   = "organizations/${var.org_id}/policies/gcp.resourceLocations"
   parent = "organizations/${var.org_id}"

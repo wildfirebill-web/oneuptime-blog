@@ -20,6 +20,7 @@ A dangling image is an image that has lost all its tag references. It shows as `
 
 ```bash
 # List all images including dangling ones
+
 podman images -a
 
 # Dangling images appear as:

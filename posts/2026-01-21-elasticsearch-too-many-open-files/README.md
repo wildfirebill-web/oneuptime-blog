@@ -46,6 +46,7 @@ max file descriptors [4096] for elasticsearch process is too low, increase to at
 
 ```bash
 # Find Elasticsearch PID
+
 pgrep -f elasticsearch
 
 # Check current limits for the process

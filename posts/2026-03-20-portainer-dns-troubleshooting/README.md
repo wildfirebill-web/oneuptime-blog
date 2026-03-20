@@ -16,6 +16,7 @@ Test DNS from inside a container:
 
 ```bash
 # Test internal DNS (service name resolution)
+
 docker exec -it $(docker ps -qf name=api) nslookup postgres
 
 # Test external DNS
@@ -89,7 +90,7 @@ services:
     dns_search:
       - .
     dns_opt:
-      - ndots:1      # Reduce from default 5 — fewer unnecessary lookups
+      - ndots:1      # Reduce from default 5 - fewer unnecessary lookups
       - timeout:2    # Seconds before retry
       - attempts:3   # Retry count
 ```
@@ -109,7 +110,7 @@ docker exec -it $(docker ps -qf name=api) cat /etc/resolv.conf | grep options
 
 ### Issue 5: DNS on the Default Bridge Network
 
-Containers on the default `docker0` bridge cannot use DNS names — only IPs. Move containers to a custom network:
+Containers on the default `docker0` bridge cannot use DNS names - only IPs. Move containers to a custom network:
 
 ```yaml
 services:

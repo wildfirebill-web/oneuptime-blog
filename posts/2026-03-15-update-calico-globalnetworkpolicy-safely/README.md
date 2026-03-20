@@ -149,6 +149,7 @@ When updating a policy selector, first verify which pods the new selector matche
 
 ```bash
 # Check what the current selector matches
+
 kubectl get pods --all-namespaces -l role=backend --no-headers | wc -l
 
 # Check what the new selector would match

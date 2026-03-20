@@ -34,6 +34,7 @@ from datetime import datetime, timedelta
 r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
 # Generate with: Fernet.generate_key()
+
 ENCRYPTION_KEY = b'your-32-byte-encryption-key-here='
 
 class OAuthTokenCache:

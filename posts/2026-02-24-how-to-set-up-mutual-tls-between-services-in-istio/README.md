@@ -69,6 +69,7 @@ Even in permissive mode, sidecars will use mTLS when talking to other sidecars. 
 
 ```bash
 # Check if mTLS is active between two services
+
 istioctl x describe pod <pod-name> -n <namespace>
 ```
 

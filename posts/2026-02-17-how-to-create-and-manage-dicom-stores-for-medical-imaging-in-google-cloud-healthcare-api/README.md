@@ -38,6 +38,7 @@ pip install google-api-python-client pydicom requests
 
 ```bash
 # Create a healthcare dataset
+
 gcloud healthcare datasets create imaging-data \
   --location=us-central1
 

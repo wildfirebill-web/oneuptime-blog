@@ -24,6 +24,7 @@ You can check the current SSL enforcement status:
 
 ```bash
 # Check if SSL is required
+
 az mysql flexible-server parameter show \
   --resource-group myResourceGroup \
   --server-name my-mysql-server \

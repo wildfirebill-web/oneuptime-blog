@@ -37,6 +37,7 @@ Event Hubs acts as the buffer between your payment system and the fraud detectio
 
 ```bash
 # Create the Event Hub for transaction events
+
 az eventhubs namespace create \
   --name fraud-detect-ns \
   --resource-group fraud-rg \

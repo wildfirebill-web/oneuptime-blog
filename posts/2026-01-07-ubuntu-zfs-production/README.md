@@ -41,6 +41,7 @@ Ubuntu includes native ZFS support. Let us install the necessary packages.
 ### Update the system and install ZFS utilities
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install ZFS utilities and kernel modules

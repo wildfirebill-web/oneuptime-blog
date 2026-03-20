@@ -57,6 +57,7 @@ Here is the complete list of variable precedence in Ansible, from lowest to high
 
 ```yaml
 # Variable Precedence Order (1 = lowest, 22 = highest)
+
 #
 # 1.  command line values (e.g., -u my_user)
 # 2.  role defaults (defined in role/defaults/main.yml)

@@ -18,6 +18,7 @@ Traffic policies for external services are configured using DestinationRule reso
 
 ```yaml
 # First, the ServiceEntry
+
 apiVersion: networking.istio.io/v1
 kind: ServiceEntry
 metadata:

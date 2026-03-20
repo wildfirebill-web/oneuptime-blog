@@ -33,6 +33,7 @@ Make sure your primary cluster is healthy and running:
 
 ```bash
 # Check the primary cluster status
+
 gcloud alloydb clusters describe my-primary-cluster \
   --region=us-central1 \
   --format="yaml(state,clusterType,primaryConfig)"

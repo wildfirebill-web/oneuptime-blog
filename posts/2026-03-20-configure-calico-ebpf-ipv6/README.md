@@ -14,6 +14,7 @@ Calico eBPF mode uses the Linux eBPF subsystem instead of iptables for packet pr
 
 ```bash
 # Requirements for eBPF mode:
+
 # - Linux kernel >= 5.3
 # - Calico >= 3.13
 # - Kubernetes >= 1.16

@@ -38,6 +38,7 @@ This is particularly useful in upgrade scenarios. When you run an upgrade comman
 
 ```bash
 # Check the current Talos version stored in metadata
+
 talosctl get meta --nodes 192.168.1.10
 
 # You can also inspect specific meta keys

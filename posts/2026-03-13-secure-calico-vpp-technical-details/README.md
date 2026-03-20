@@ -24,6 +24,7 @@ VPP's binary API socket must be restricted to authorized processes:
 
 ```bash
 # Set strict permissions on VPP API socket
+
 chmod 600 /run/vpp/api.sock
 chown vpp:vpp /run/vpp/api.sock
 

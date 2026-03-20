@@ -127,6 +127,7 @@ Before setting up your IPv6 tunnel, ensure you have the following:
 
 ```bash
 # Check your current kernel version (Linux)
+
 uname -r
 # Should be 2.6.x or higher (virtually all modern systems)
 

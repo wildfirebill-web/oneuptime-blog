@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, WebSocket, Proxy, Linux
+Tags: RHEL, Nginx, WebSocket, Proxy, Linux
 
 Description: How to configure Nginx to proxy WebSocket connections on RHEL for real-time applications.
 
@@ -38,6 +38,7 @@ The server responds with a 101 Switching Protocols, and from that point the conn
 
 ```bash
 # Create a WebSocket proxy configuration
+
 sudo tee /etc/nginx/conf.d/websocket.conf > /dev/null <<'EOF'
 # Map the Upgrade header to the Connection header
 map $http_upgrade $connection_upgrade {

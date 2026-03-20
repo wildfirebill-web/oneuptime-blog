@@ -23,6 +23,7 @@ import boto3
 from boto3.dynamodb.conditions import Key
 
 # Using the resource interface (recommended for queries)
+
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('orders')
 

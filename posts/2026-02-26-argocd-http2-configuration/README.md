@@ -46,6 +46,7 @@ NGINX Ingress Controller supports HTTP/2 backend connections. You need to tell i
 
 ```yaml
 # NGINX Ingress with HTTP/2 backend for ArgoCD gRPC
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

@@ -24,6 +24,7 @@ Start with a ServiceAccount that reads pods across all namespaces:
 
 ```yaml
 # cross-namespace-reader.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

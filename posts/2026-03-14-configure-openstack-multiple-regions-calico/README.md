@@ -30,6 +30,7 @@ Assign non-overlapping IP pools to each region to prevent address conflicts.
 
 ```yaml
 # region-a-ippool.yaml
+
 # IP pool for Region A
 apiVersion: projectcalico.org/v3
 kind: IPPool

@@ -30,6 +30,7 @@ Deploy a three-node etcd cluster for production use:
 
 ```yaml
 # etcd-cluster.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

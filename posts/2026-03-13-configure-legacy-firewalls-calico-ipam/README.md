@@ -29,6 +29,7 @@ Create Calico IP pools that correspond exactly to the IP ranges allowed by your 
 
 ```yaml
 # ippool-firewall-approved.yaml - IP pools using firewall-approved address ranges
+
 apiVersion: projectcalico.org/v3
 kind: IPPool
 metadata:

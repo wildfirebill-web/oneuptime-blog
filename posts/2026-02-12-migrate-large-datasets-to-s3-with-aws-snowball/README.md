@@ -40,6 +40,7 @@ Create a job through the AWS Snow Family console or SDK:
 
 ```python
 # Create a Snowball import job
+
 import boto3
 
 snowball = boto3.client('snowball')

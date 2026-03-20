@@ -291,6 +291,7 @@ The Tekton CLI provides convenient parameter passing.
 
 ```bash
 # Run a task with parameters
+
 tkn task start build-image \
   --param IMAGE=registry.example.com/myapp:latest \
   --param DOCKERFILE=./Dockerfile.prod \

@@ -44,6 +44,7 @@ Cloud Functions expects source code in a Cloud Storage bucket as a zip file. Let
 
 ```yaml
 # prepare-function-source.yml - Package and upload function source code
+
 ---
 - name: Prepare Function Source
   hosts: localhost

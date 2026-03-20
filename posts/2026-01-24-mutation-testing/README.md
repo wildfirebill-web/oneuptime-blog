@@ -42,6 +42,7 @@ Common mutation operators include:
 
 ```bash
 # Install Stryker
+
 npm install --save-dev @stryker-mutator/core @stryker-mutator/jest-runner
 ```
 

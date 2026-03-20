@@ -346,6 +346,7 @@ Okta application settings:
 
 ```yaml
 # Okta SAML Settings
+
 General Settings:
   App name: Your Application
   App logo: (optional)

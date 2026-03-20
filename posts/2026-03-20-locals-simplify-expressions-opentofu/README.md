@@ -1,4 +1,4 @@
-# How to Use Locals to Simplify Complex Expressions in OpenTofu
+# How to Use Locals to Simplify Complex Expressions in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Complex expressions embedded directly in resource arguments are hard to read and
 
 ```hcl
 # HARD TO READ: Complex inline condition
+
 resource "aws_rds_cluster" "main" {
   # What does this mean?
   backup_retention_period = var.environment == "prod" ? 30 : (var.environment == "staging" ? 14 : 1)

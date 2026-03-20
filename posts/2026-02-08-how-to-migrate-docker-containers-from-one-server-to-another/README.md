@@ -26,6 +26,7 @@ Start with an inventory:
 
 ```bash
 # Generate a complete inventory of the source server
+
 echo "=== Docker Migration Inventory ==="
 echo "Source server: $(hostname)"
 echo "Date: $(date)"

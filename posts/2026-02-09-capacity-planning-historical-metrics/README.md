@@ -22,6 +22,7 @@ Prometheus stores historical resource metrics for capacity analysis.
 
 ```yaml
 # Prometheus configuration for long-term storage
+
 global:
   scrape_interval: 30s
   evaluation_interval: 30s
@@ -285,7 +286,7 @@ top_cpu_consumers = |
 
 Understanding which workloads drive growth helps target capacity additions.
 
-## Resource Waste Analysis
+Resource Waste Analysis
 
 Identify over-provisioned resources to reclaim capacity.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Resource-Management, Best-Practices
+Tags: Kubernetes, Resource-Management, Best-practices
 
 Description: Learn how to configure default resource quotas and limit ranges for namespaces to prevent resource exhaustion, ensure fair resource allocation, and maintain cluster stability across multiple tenants.
 
@@ -157,6 +157,7 @@ Create different configs for different environments:
 
 ```yaml
 # Development environment
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

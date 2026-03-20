@@ -26,6 +26,7 @@ Deploy the operator to your cluster:
 
 ```bash
 # Install operator via manifests
+
 kubectl create namespace k6-operator-system
 kubectl apply -f https://github.com/grafana/k6-operator/releases/download/v0.0.14/bundle.yaml
 

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, CI/CD, Auto Scaling, GitHub Actions, GitLab, Runners, Kubernetes, Infrastructure as Code
+Tags: OpenTofu, CI/CD, Auto Scaling, GitHub Actions, GitLab, Runner, Kubernetes, Infrastructure as Code
 
-Description: Learn how to implement elastic scaling for CI/CD runners using OpenTofu with queue-depth-based auto scaling, scheduled scaling for peak hours, and cost optimization through spot instances and scale-to-zero.
+Description: Learn how to implement elastic scaling for CI/CD runners using OpenTofu with queue-depth-based auto scaling, scheduled scaling for peak hours, and cost optimization through spot instances and...
 
 ---
 
-Scaling CI/CD runners requires matching compute capacity to pipeline demand — too few runners cause queue delays, too many waste money on idle compute. OpenTofu manages the scaling policies, node pools, and queue monitoring that enable elastic CI/CD infrastructure.
+Scaling CI/CD runners requires matching compute capacity to pipeline demand - too few runners cause queue delays, too many waste money on idle compute. OpenTofu manages the scaling policies, node pools, and queue monitoring that enable elastic CI/CD infrastructure.
 
 ## Runner Scaling Architecture
 
@@ -23,7 +23,7 @@ graph TD
 ## Queue-Depth-Based Scaling with Lambda
 
 ```hcl
-# scaling.tf — Lambda checks GitHub/GitLab queue and adjusts ASG
+# scaling.tf - Lambda checks GitHub/GitLab queue and adjusts ASG
 
 resource "aws_lambda_function" "runner_scaler" {
   function_name = "${var.prefix}-runner-scaler"
@@ -45,6 +45,7 @@ resource "aws_lambda_function" "runner_scaler" {
 }
 
 # Run scaler every minute
+
 resource "aws_cloudwatch_event_rule" "scaler" {
   name                = "${var.prefix}-runner-scaler"
   schedule_expression = "rate(1 minute)"
@@ -209,8 +210,8 @@ resource "aws_cloudwatch_dashboard" "runners" {
 
 ## Best Practices
 
-- Implement scale-to-zero for non-business-hours — CI workloads are predictable and bursty. Scheduling zero capacity at night and on weekends can reduce runner costs by 60%+.
-- Use Spot instances with diverse instance types — specify at least 5-6 instance types so the ASG can always find available capacity at a good price.
-- Monitor queue depth, not instance count — the right metric to scale on is the number of pending jobs, not CPU utilization. Idle runners waiting for jobs look healthy on CPU metrics but waste money.
-- Set aggressive scale-down thresholds for runner nodes — `scaleDownUnneededTime = 2m` is appropriate for CI nodes since they have no stateful workloads.
+- Implement scale-to-zero for non-business-hours - CI workloads are predictable and bursty. Scheduling zero capacity at night and on weekends can reduce runner costs by 60%+.
+- Use Spot instances with diverse instance types - specify at least 5-6 instance types so the ASG can always find available capacity at a good price.
+- Monitor queue depth, not instance count - the right metric to scale on is the number of pending jobs, not CPU utilization. Idle runners waiting for jobs look healthy on CPU metrics but waste money.
+- Set aggressive scale-down thresholds for runner nodes - `scaleDownUnneededTime = 2m` is appropriate for CI nodes since they have no stateful workloads.
 - Tag runner instances with the CI job ID so costs can be attributed to specific pipelines or teams in AWS Cost Explorer.

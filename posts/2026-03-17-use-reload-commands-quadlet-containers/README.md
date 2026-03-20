@@ -24,6 +24,7 @@ Nginx reloads its configuration when it receives a SIGHUP signal:
 
 ```ini
 # ~/.config/containers/systemd/nginx.container
+
 [Unit]
 Description=Nginx with reload support
 

@@ -8,7 +8,7 @@ Description: Learn how to enforce network security policies using OpenTofu, incl
 
 ---
 
-Network misconfigurations — open security groups, unintended public exposure, missing flow logs — are among the most common cloud security issues. OpenTofu enforces network security requirements at plan time and continuously with AWS Config.
+Network misconfigurations - open security groups, unintended public exposure, missing flow logs - are among the most common cloud security issues. OpenTofu enforces network security requirements at plan time and continuously with AWS Config.
 
 ## Network Security Architecture
 
@@ -26,6 +26,7 @@ graph TD
 
 ```hcl
 # security_groups.tf
+
 variable "allowed_cidr_blocks" {
   type = list(string)
 
@@ -46,7 +47,7 @@ resource "aws_security_group" "app" {
   lifecycle {
     precondition {
       condition = var.vpc_id != ""
-      error_message = "VPC ID is required — never use the default VPC"
+      error_message = "VPC ID is required - never use the default VPC"
     }
   }
 }
@@ -62,7 +63,7 @@ resource "aws_security_group_rule" "app_ingress_alb" {
   description              = "Allow traffic from ALB only"
 }
 
-# No direct SSH — use SSM Session Manager
+# No direct SSH - use SSM Session Manager
 resource "aws_security_group_rule" "deny_ssh" {
   # Explicitly document that SSH is not allowed
   # Access via SSM: aws ssm start-session --target i-xxxx
@@ -171,8 +172,8 @@ resource "null_resource" "remove_default_vpc" {
 
 ## Best Practices
 
-- Never use the default VPC for any workloads — delete it or prevent its use via SCPs.
+- Never use the default VPC for any workloads - delete it or prevent its use via SCPs.
 - Deny security group rules that allow `0.0.0.0/0` ingress using OpenTofu `validation` blocks and AWS Config rules.
-- Enable VPC Flow Logs on all VPCs — network visibility is essential for incident response and anomaly detection.
+- Enable VPC Flow Logs on all VPCs - network visibility is essential for incident response and anomaly detection.
 - Use security group chaining (source_security_group_id) instead of CIDR blocks for internal service communication.
-- Disable SSH and RDP to instances — use SSM Session Manager for shell access without open ports.
+- Disable SSH and RDP to instances - use SSM Session Manager for shell access without open ports.

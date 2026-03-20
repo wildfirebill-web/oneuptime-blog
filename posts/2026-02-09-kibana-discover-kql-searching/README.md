@@ -58,6 +58,7 @@ Wildcard at the beginning or end:
 
 ```text
 # Find services starting with "user"
+
 service.name: user*
 
 # Find log messages ending with "failed"

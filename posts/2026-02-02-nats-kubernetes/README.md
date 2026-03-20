@@ -60,6 +60,7 @@ Ensure you have the following tools installed and configured before proceeding w
 
 ```bash
 # Verify kubectl is installed and connected to your cluster
+
 kubectl version --client
 
 # Check cluster connectivity
@@ -900,7 +901,7 @@ spec:
 
 Follow these recommendations for reliable NATS deployments in production.
 
-### Resource Planning
+Resource Planning
 
 Calculate resource requirements based on your message throughput and retention needs. JetStream storage should account for message size, retention period, and replication factor.
 

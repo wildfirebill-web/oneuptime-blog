@@ -45,6 +45,7 @@ The simplest fix - the repository credentials were never added to ArgoCD.
 
 ```bash
 # For HTTPS with username/password (or token)
+
 argocd repo add https://github.com/org/private-repo \
   --username your-username \
   --password your-token

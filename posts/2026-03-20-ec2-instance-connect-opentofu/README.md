@@ -20,6 +20,7 @@ EC2 Instance Connect provides a secure way to connect to instances using short-l
 
 ```hcl
 # IAM policy granting permission to use Instance Connect
+
 data "aws_iam_policy_document" "instance_connect" {
   statement {
     sid    = "AllowInstanceConnect"

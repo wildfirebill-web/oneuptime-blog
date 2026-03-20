@@ -108,6 +108,7 @@ describe('Provider Verification', () => {
 
 ```bash
 # Set environment variables
+
 export PACT_BROKER_URL=https://your-broker.pactflow.io
 export PACT_BROKER_TOKEN=your-token
 export GIT_COMMIT_SHA=$(git rev-parse HEAD)

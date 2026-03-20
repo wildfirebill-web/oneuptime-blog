@@ -1,4 +1,4 @@
-# How to Set Up Rancher HA on K3s
+# How to Set Up Rancher HA on K3s - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ K3s is a lightweight Kubernetes distribution ideal for edge, IoT, and resource-c
 
 ```bash
 # On server-1 - Initialize the embedded etcd cluster
+
 curl -sfL https://get.k3s.io | \
   K3S_TOKEN="mysupersecrettoken" \
   sh -s - server \

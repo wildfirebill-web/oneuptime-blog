@@ -69,6 +69,7 @@ Understand timing implications:
 
 ```yaml
 # Example 1: Conservative liveness
+
 livenessProbe:
   periodSeconds: 10
   failureThreshold: 5

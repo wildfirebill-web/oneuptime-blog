@@ -22,6 +22,7 @@ You will need:
 
 ```bash
 # Make sure the collection is installed
+
 ansible-galaxy collection install ansible.windows
 ```
 

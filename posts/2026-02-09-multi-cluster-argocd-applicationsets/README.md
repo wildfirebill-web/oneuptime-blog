@@ -23,6 +23,7 @@ Install the ApplicationSet controller (included in ArgoCD 2.6+):
 
 ```bash
 # Verify ApplicationSet CRD exists
+
 kubectl get crd applicationsets.argoproj.io
 ```
 

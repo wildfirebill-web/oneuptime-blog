@@ -322,6 +322,7 @@ Conversion webhooks require TLS. Generate certificates with cert-manager or manu
 
 ```bash
 # Generate CA key and certificate
+
 openssl genrsa -out ca.key 2048
 openssl req -x509 -new -nodes -key ca.key -days 365 -out ca.crt -subj "/CN=conversion-webhook-ca"
 

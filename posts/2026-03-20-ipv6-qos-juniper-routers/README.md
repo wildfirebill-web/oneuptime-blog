@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Juniper, IPv6, QoS, DSCP, Class of Service, JunOS, Router
+Tags: Juniper, IPv6, QoS, DSCP, Class of Service, Junos, Router
 
 Description: Configure IPv6 Quality of Service on Juniper routers using Class of Service (CoS), including DSCP rewriting, forwarding classes, scheduler policies, and interface application.
 
@@ -12,10 +12,11 @@ Juniper JunOS uses Class of Service (CoS) for QoS configuration. CoS handles IPv
 
 ## Juniper CoS Classifier for IPv6
 
-```
+```text
 # Juniper JunOS CoS Configuration
 
 # Define DSCP classifier (applies to both IPv4 and IPv6)
+
 set class-of-service classifiers dscp IPv6-DSCP-CLASSIFIER \
   forwarding-class VOIP-MEDIA loss-priority low code-point 101110  # EF
 set class-of-service classifiers dscp IPv6-DSCP-CLASSIFIER \
@@ -32,7 +33,7 @@ commit
 
 ## Forwarding Classes and Queues
 
-```
+```text
 # Define forwarding classes (mapped to queues)
 set class-of-service forwarding-classes queue 0 BEST-EFFORT
 set class-of-service forwarding-classes queue 1 DATA
@@ -45,7 +46,7 @@ commit
 
 ## Scheduler Policy for IPv6 QoS
 
-```
+```text
 # Define scheduler for each forwarding class
 set class-of-service schedulers SCHED-VOIP-MEDIA \
   transmit-rate percent 30 \
@@ -86,7 +87,7 @@ commit
 
 ## Rewrite Rules for IPv6 DSCP
 
-```
+```text
 # Define rewrite rules (for remarking IPv6 Traffic Class)
 set class-of-service rewrite-rules dscp IPv6-DSCP-REWRITE \
   forwarding-class VOIP-MEDIA loss-priority low code-point 101110  # EF
@@ -100,7 +101,7 @@ commit
 
 ## Applying CoS to IPv6 Interface
 
-```
+```text
 # Apply CoS to interface (handles both IPv4 and IPv6)
 set class-of-service interfaces ge-0/0/0 \
   scheduler-map WAN-SCHED-MAP
@@ -117,7 +118,7 @@ commit
 
 ## Monitoring IPv6 QoS on Juniper
 
-```
+```text
 # Check queue statistics
 show class-of-service interface ge-0/0/0 comprehensive
 
@@ -140,7 +141,7 @@ run test class-of-service dscp-classifier IPv6-DSCP-CLASSIFIER \
 
 ## Firewall Filter for IPv6 QoS (Alternative Approach)
 
-```
+```text
 # Using firewall filter to classify and mark IPv6 traffic
 set firewall family inet6 filter IPV6-QOS-MARK \
   term VOIP-MEDIA from protocol udp \

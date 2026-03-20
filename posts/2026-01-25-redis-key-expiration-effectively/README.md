@@ -37,6 +37,7 @@ This means expired keys might exist in memory briefly until either accessed or s
 
 ```bash
 # Set key with expiration in seconds
+
 SET session:12345 "user_data" EX 3600
 
 # Set key with expiration in milliseconds

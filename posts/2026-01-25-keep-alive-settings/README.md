@@ -41,6 +41,7 @@ Configure system-wide TCP keep-alive settings:
 # tcp_keepalive_tuning.sh - Configure TCP keep-alive parameters
 
 # View current settings
+
 echo "Current TCP keep-alive settings:"
 echo "  tcp_keepalive_time:   $(cat /proc/sys/net/ipv4/tcp_keepalive_time) seconds"
 echo "  tcp_keepalive_intvl:  $(cat /proc/sys/net/ipv4/tcp_keepalive_intvl) seconds"

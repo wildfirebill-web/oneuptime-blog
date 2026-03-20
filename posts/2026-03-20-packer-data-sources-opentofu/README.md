@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Packer, Data Sources, AMI Lookup, Image Management
+Tags: OpenTofu, Packer, Data Source, AMI Lookup, Image Management
 
 Description: Learn how to use OpenTofu data sources to find and reference Packer-built images across AWS, Azure, and GCP, with filtering strategies for different deployment scenarios.
 
@@ -14,6 +14,7 @@ OpenTofu data sources query the cloud provider's image catalog at plan time to f
 
 ```hcl
 # Find the most recent Packer-built image
+
 data "aws_ami" "app_server" {
   most_recent = true
   owners      = ["self"]  # Only images owned by your account

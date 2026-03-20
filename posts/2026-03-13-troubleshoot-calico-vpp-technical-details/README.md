@@ -26,6 +26,7 @@ VPP's built-in packet tracer captures packet processing at each graph node:
 
 ```bash
 # Enable packet tracing (captures next 100 packets from dpdk-input)
+
 kubectl exec -n calico-vpp-dataplane ds/calico-vpp-node -c vpp -- \
   vppctl trace add dpdk-input 100
 

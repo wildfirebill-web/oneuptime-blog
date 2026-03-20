@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Testing, Test Directory, Infrastructure as Code, tofu test
+Tags: OpenTofu, Terraform, Testing, Test Directory, Infrastructure as Code, Tofu test
 
 Description: Learn how to use the test directory option in OpenTofu's native testing framework to organize test files in a dedicated directory separate from your module code.
 
@@ -14,7 +14,7 @@ OpenTofu's built-in testing framework (`tofu test`) supports a `--test-directory
 
 By default, `tofu test` looks for `.tftest.hcl` files in the current directory and a `tests/` subdirectory:
 
-```
+```text
 module/
 ├── main.tf
 ├── variables.tf
@@ -48,7 +48,7 @@ tofu test -test-directory=integration-tests
 
 For larger modules, organize tests by type:
 
-```
+```text
 module/
 ├── main.tf
 ├── variables.tf
@@ -97,6 +97,7 @@ run "validate_basic_plan" {
 
 ```yaml
 # CI/CD pipeline
+
 - name: Run unit tests
   run: tofu test --test-directory=unit-tests
 

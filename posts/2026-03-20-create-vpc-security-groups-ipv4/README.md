@@ -8,7 +8,7 @@ Description: Learn how to create AWS VPC security groups with IPv4 ingress and e
 
 ---
 
-Security groups act as virtual firewalls for EC2 instances, RDS databases, and other AWS resources. They are stateful — responses to allowed inbound traffic are automatically allowed outbound and vice versa.
+Security groups act as virtual firewalls for EC2 instances, RDS databases, and other AWS resources. They are stateful - responses to allowed inbound traffic are automatically allowed outbound and vice versa.
 
 ---
 

@@ -16,6 +16,7 @@ YAML recognizes several strings as boolean values. This is broader than most peo
 
 ```yaml
 # yaml-booleans.yml - YAML recognizes many boolean representations
+
 ---
 # All of these are parsed as boolean true by YAML:
 var1: true

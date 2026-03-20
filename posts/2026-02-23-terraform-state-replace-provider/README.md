@@ -36,6 +36,7 @@ When Terraform 0.13 introduced the provider registry, built-in providers moved t
 
 ```bash
 # Migrate from the legacy provider address to the registry address
+
 terraform state replace-provider \
   "registry.terraform.io/-/aws" \
   "registry.terraform.io/hashicorp/aws"
@@ -349,7 +350,7 @@ terraform {
 }
 ```
 
-### Resources Show as Needing Recreation
+Resources Show as Needing Recreation
 
 If `terraform plan` shows resources being destroyed and recreated after a provider replacement, the new provider might use a different resource schema. This is common when switching to a fork that has diverged from the original. Review the plan carefully before applying.
 

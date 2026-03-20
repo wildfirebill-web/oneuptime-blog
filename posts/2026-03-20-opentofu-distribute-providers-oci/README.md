@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Providers, OCI
+Tags: OpenTofu, Terraform, Infrastructure as Code, Provider, OCI
 
 Description: Learn how to distribute custom OpenTofu providers using OCI registries as an alternative to the public registry for internal or private provider distribution.
 
 ## Introduction
 
-OpenTofu supports distributing providers via OCI (Open Container Initiative) registries. This is an OpenTofu-specific feature that lets organizations use existing container registry infrastructure — Amazon ECR, Google Artifact Registry, Azure Container Registry, or any OCI-compliant registry — to distribute private providers without operating a separate provider registry.
+OpenTofu supports distributing providers via OCI (Open Container Initiative) registries. This is an OpenTofu-specific feature that lets organizations use existing container registry infrastructure - Amazon ECR, Google Artifact Registry, Azure Container Registry, or any OCI-compliant registry - to distribute private providers without operating a separate provider registry.
 
 ## Building the Provider Binary
 
 ```bash
 # Build for multiple platforms
+
 GOOS=linux  GOARCH=amd64 go build -o bin/terraform-provider-internal_linux_amd64
 GOOS=linux  GOARCH=arm64 go build -o bin/terraform-provider-internal_linux_arm64
 GOOS=darwin GOARCH=arm64 go build -o bin/terraform-provider-internal_darwin_arm64

@@ -281,6 +281,7 @@ Point your domain to the NodeBalancer IP:
 
 ```bash
 # Get the NodeBalancer IP
+
 NODEBALANCER_IP=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 echo "Create an A record pointing to: $NODEBALANCER_IP"

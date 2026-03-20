@@ -35,6 +35,7 @@ You will need:
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable iap.googleapis.com \
   accesscontextmanager.googleapis.com \
   beyondcorp.googleapis.com \

@@ -14,6 +14,7 @@ Description: Use journalctl on Ubuntu to view, filter, and search systemd servic
 
 ```bash
 # View all journal entries (oldest first, paginated with 'less')
+
 journalctl
 
 # View in reverse chronological order (newest first)

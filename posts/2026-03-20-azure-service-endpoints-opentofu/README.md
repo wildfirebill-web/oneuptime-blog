@@ -85,6 +85,7 @@ resource "azurerm_sql_server" "main" {
 }
 
 # VNet rule restricts SQL to specified subnets
+
 resource "azurerm_sql_virtual_network_rule" "app_subnet" {
   name                = "allow-app-subnet"
   resource_group_name = var.resource_group_name
@@ -189,4 +190,4 @@ az storage blob list \
 
 ## Conclusion
 
-Service Endpoints are simpler than Private Endpoints and have no additional cost, but they don't provide private IP addresses for the services—the service's public endpoint still resolves to a public IP (traffic just takes the Azure backbone path). For strict network isolation where services must be unreachable from the public internet entirely, use Private Endpoints instead. Service Endpoint Policies add another security layer by restricting which specific Azure resources are reachable via Service Endpoints, preventing data exfiltration to unauthorized storage accounts within the same service.
+Service Endpoints are simpler than Private Endpoints and have no additional cost, but they don't provide private IP addresses for the services-the service's public endpoint still resolves to a public IP (traffic just takes the Azure backbone path). For strict network isolation where services must be unreachable from the public internet entirely, use Private Endpoints instead. Service Endpoint Policies add another security layer by restricting which specific Azure resources are reachable via Service Endpoints, preventing data exfiltration to unauthorized storage accounts within the same service.

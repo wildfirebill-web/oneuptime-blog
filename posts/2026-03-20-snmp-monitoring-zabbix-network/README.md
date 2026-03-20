@@ -14,6 +14,7 @@ Zabbix is an enterprise-grade open-source monitoring platform with excellent SNM
 
 ```bash
 # Install Zabbix 7.0 on Ubuntu
+
 wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_7.0-1+ubuntu22.04_all.deb
 sudo dpkg -i zabbix-release_7.0-1+ubuntu22.04_all.deb
 sudo apt-get update
@@ -91,7 +92,7 @@ The template `Network Interfaces SNMPv2` automatically:
 
 To manually add an item for interface bandwidth:
 
-```
+```text
 # Custom SNMP item for GigabitEthernet0/0 inbound bytes
 OID: 1.3.6.1.2.1.2.2.1.10.1   (ifInOctets for interface index 1)
 Type: SNMP agent
@@ -104,7 +105,7 @@ Update interval: 60s
 
 Zabbix built-in templates include interface status triggers. To create a custom one:
 
-```
+```text
 # Trigger expression for interface down
 {core-router-01:if.status[1.3.6.1.2.1.2.2.1.8.1].last()}=2
 

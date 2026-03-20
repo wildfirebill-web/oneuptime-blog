@@ -28,6 +28,7 @@ The simplest way to use bulk insert is through gcloud. This creates 100 instance
 
 ```bash
 # Create 100 instances in bulk across us-central1
+
 gcloud compute instances bulk create \
   --name-pattern="worker-####" \
   --count=100 \

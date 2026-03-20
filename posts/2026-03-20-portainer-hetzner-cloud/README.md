@@ -1,4 +1,4 @@
-# How to Deploy Portainer on Hetzner Cloud
+# How to Deploy Portainer on Hetzner Cloud - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,7 +25,7 @@ Hetzner Cloud offers some of the best price-to-performance ratios in the cloud h
 3. Configure:
    - **Location**: Choose EU or US datacenter
    - **Image**: Ubuntu 24.04
-   - **Type**: CX22 (2 vCPU, 4GB RAM, 40GB SSD) — excellent value
+   - **Type**: CX22 (2 vCPU, 4GB RAM, 40GB SSD) - excellent value
    - **SSH Keys**: Add your SSH key
    - **Name**: `portainer-server`
 4. Click **Create & Buy now**
@@ -34,6 +34,7 @@ Hetzner Cloud offers some of the best price-to-performance ratios in the cloud h
 
 ```bash
 # Install hcloud
+
 brew install hcloud  # macOS
 # or: https://github.com/hetznercloud/cli
 

@@ -1,8 +1,8 @@
-# How to Deploy Apache Kafka on Rancher
+# How to Deploy Apache Kafka on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Kafka, Message Queue, Streaming, Strimzi
+Tags: Rancher, Kubernetes, Kafka, Message Queues, Streaming, Strimzi
 
 Description: Deploy Apache Kafka on Rancher-managed Kubernetes clusters using the Strimzi Kafka Operator for distributed event streaming and message processing.
 
@@ -21,6 +21,7 @@ Apache Kafka is a distributed event streaming platform used by thousands of comp
 
 ```bash
 # Install Strimzi Kafka Operator via Helm
+
 helm repo add strimzi https://strimzi.io/charts/
 helm repo update
 

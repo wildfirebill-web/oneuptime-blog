@@ -42,6 +42,7 @@ gunicorn-setup/
 
 ```yaml
 # group_vars/all.yml
+
 app_name: myapp
 app_user: appuser
 app_group: appuser

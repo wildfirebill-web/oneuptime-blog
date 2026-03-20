@@ -26,8 +26,9 @@ Portainer supports multiple registry types:
 
 Add registries via **Registries > Add Registry**. For credentials:
 
-```
+```bash
 # Do NOT use personal credentials for shared Portainer instances
+
 # Create a dedicated service account/robot account in your registry
 
 # Docker Hub: Create a Personal Access Token (not your password)
@@ -112,7 +113,7 @@ Schedule regular image cleanup to manage disk space:
 
 ```bash
 #!/bin/bash
-# image-prune.sh — run as a Portainer scheduled job
+# image-prune.sh - run as a Portainer scheduled job
 
 # Remove dangling images (untagged layers)
 docker image prune -f

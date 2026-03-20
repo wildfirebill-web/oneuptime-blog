@@ -12,7 +12,7 @@ Round robin is HAProxy's default load balancing algorithm. It sends each new con
 
 ## Basic Roundrobin Configuration
 
-```
+```text
 # /etc/haproxy/haproxy.cfg
 
 global
@@ -47,7 +47,7 @@ sudo systemctl restart haproxy
 
 Assign different weights to balance unequal server capacities:
 
-```
+```text
 backend web-servers
     balance roundrobin
     server web1 10.0.1.10:8080 check weight 10   # 50% of traffic
@@ -55,13 +55,13 @@ backend web-servers
     server web3 10.0.1.12:8080 check weight 4    # 20% of traffic
 ```
 
-Weights are relative — total weight is 20 in this example. Server web1 receives 10/20 = 50%.
+Weights are relative - total weight is 20 in this example. Server web1 receives 10/20 = 50%.
 
 ## Slow Start for Newly Enabled Servers
 
 Prevent newly added servers from being immediately flooded:
 
-```
+```text
 backend web-servers
     balance roundrobin
     server web1 10.0.1.10:8080 check slowstart 60s
@@ -74,6 +74,7 @@ During the slowstart period (60 seconds), weight increases gradually from 0 to t
 
 ```bash
 # Send 9 requests and check which server responds
+
 for i in $(seq 1 9); do
   curl -s http://localhost/server-id
 done
@@ -84,7 +85,7 @@ done
 
 ## HAProxy Stats to Monitor Distribution
 
-```
+```text
 frontend stats
     bind 0.0.0.0:8404
     stats enable

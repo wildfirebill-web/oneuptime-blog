@@ -24,6 +24,7 @@ Setting high-priority classes prevents this by telling Kubernetes that Longhorn 
 
 ```bash
 # View existing priority classes
+
 kubectl get priorityclasses
 
 # Default priority classes:

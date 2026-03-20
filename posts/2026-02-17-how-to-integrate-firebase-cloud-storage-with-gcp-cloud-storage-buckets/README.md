@@ -24,6 +24,7 @@ Verify this by listing your buckets:
 
 ```bash
 # List all buckets in your project - you will see the Firebase bucket
+
 gsutil ls -p YOUR_PROJECT_ID
 ```
 

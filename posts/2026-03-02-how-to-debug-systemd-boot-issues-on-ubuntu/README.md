@@ -16,6 +16,7 @@ The first thing to understand about a slow boot is where the time is going:
 
 ```bash
 # Show total boot time broken down by kernel, initrd, and userspace
+
 systemd-analyze time
 ```
 

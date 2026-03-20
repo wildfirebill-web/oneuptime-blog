@@ -46,6 +46,7 @@ Specify `gather_subset` at the play level:
 ```yaml
 ---
 # Gather only network facts
+
 - hosts: webservers
   gather_facts: true
   gather_subset:

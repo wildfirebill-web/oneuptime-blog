@@ -143,6 +143,7 @@ Apply different filtering rules to different namespaces:
 
 ```yaml
 # Production: minimal metrics for efficiency
+
 apiVersion: telemetry.istio.io/v1alpha1
 kind: Telemetry
 metadata:

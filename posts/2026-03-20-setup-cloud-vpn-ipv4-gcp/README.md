@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud VPN, IPv4, Site-to-Site, Hybrid Connectivity, IPSec
+Tags: GCP, Cloud VPN, IPv4, Site-to-Site, Hybrid Connectivity, IPsec
 
 Description: Configure GCP Cloud VPN to create an IPSec VPN tunnel between a GCP VPC and an on-premises IPv4 network, using both Classic VPN and HA VPN options.
 
@@ -36,6 +36,7 @@ gcloud compute vpn-gateways create ha-vpn-gw \
   --region=$REGION
 
 # View the two external IPs assigned
+
 gcloud compute vpn-gateways describe ha-vpn-gw \
   --project=$PROJECT_ID \
   --region=$REGION \
@@ -156,4 +157,4 @@ gcloud compute forwarding-rules create vpn-udp4500 --region=$REGION --ip-protoco
 
 ## Conclusion
 
-Use HA VPN with two tunnels and BGP for production workloads — it provides 99.99% SLA and automatic failover. Classic VPN is simpler but offers only 99.9% SLA with static routing. Always use IKEv2 for modern compatibility. Monitor tunnel status with `gcloud compute vpn-tunnels list` and BGP sessions with `gcloud compute routers get-status`.
+Use HA VPN with two tunnels and BGP for production workloads - it provides 99.99% SLA and automatic failover. Classic VPN is simpler but offers only 99.9% SLA with static routing. Always use IKEv2 for modern compatibility. Monitor tunnel status with `gcloud compute vpn-tunnels list` and BGP sessions with `gcloud compute routers get-status`.

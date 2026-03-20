@@ -16,6 +16,7 @@ Let's start with what happens without `allow_duplicates`:
 
 ```yaml
 # This only runs the virtual_host role ONCE
+
 - hosts: webservers
   become: yes
   roles:

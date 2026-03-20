@@ -118,6 +118,7 @@ if __name__ == "__main__":
 
 ```bash
 # Make the script executable
+
 chmod +x inventory/opentofu_inventory.py
 
 # Set working directory
@@ -171,4 +172,4 @@ state = get_state_from_s3(
 
 ## Conclusion
 
-A dynamic inventory script that reads OpenTofu state eliminates the gap between infrastructure changes and Ansible's view of the world. The script is most useful in environments where infrastructure changes frequently — new servers are automatically discovered without any manual inventory updates. Cache the inventory with `cache_timeout` to avoid calling `tofu show` on every Ansible task.
+A dynamic inventory script that reads OpenTofu state eliminates the gap between infrastructure changes and Ansible's view of the world. The script is most useful in environments where infrastructure changes frequently - new servers are automatically discovered without any manual inventory updates. Cache the inventory with `cache_timeout` to avoid calling `tofu show` on every Ansible task.

@@ -16,6 +16,7 @@ RHEL follows a predictable release cycle with minor versions (e.g., 9.2, 9.3). C
 
 ```bash
 # Check your CentOS Stream version
+
 cat /etc/centos-release
 # Example: CentOS Stream release 9
 

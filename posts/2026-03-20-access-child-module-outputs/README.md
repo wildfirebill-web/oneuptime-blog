@@ -16,6 +16,7 @@ When using modules in OpenTofu, child modules expose their outputs which can the
 # Syntax: module.<MODULE_NAME>.<OUTPUT_NAME>
 
 # Example child module call
+
 module "networking" {
   source = "./modules/networking"
 

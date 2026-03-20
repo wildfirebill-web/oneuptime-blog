@@ -71,6 +71,7 @@ The simplest configuration requires just one property pointing to your authoriza
 
 ```yaml
 # application.yml
+
 spring:
   security:
     oauth2:

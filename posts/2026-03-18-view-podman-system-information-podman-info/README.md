@@ -20,6 +20,7 @@ The most straightforward way to view system information is to run the command wi
 
 ```bash
 # Display full Podman system information in YAML format (default)
+
 podman info
 ```
 

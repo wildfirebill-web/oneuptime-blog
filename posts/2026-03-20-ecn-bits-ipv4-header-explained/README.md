@@ -37,6 +37,7 @@ sequenceDiagram
 
 ```bash
 # Check current ECN setting (0=off, 1=on when both sides support, 2=always)
+
 cat /proc/sys/net/ipv4/tcp_ecn
 
 # Enable ECN for connections where both sides agree

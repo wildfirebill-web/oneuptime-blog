@@ -14,7 +14,7 @@ IPv6 extension headers are a fundamental protocol feature that can also be abuse
 
 IPv6 uses a chain of headers, each pointing to the next via the "Next Header" field:
 
-```
+```text
 IPv6 Header → Hop-by-Hop Options → Destination Options → Routing Header
            → Fragment Header → Authentication Header → ESP → Payload
 ```
@@ -25,24 +25,25 @@ Each header has a fixed or variable length, making offset computation complex fo
 
 ### 1. Non-Initial Fragment Attack
 
-A firewall may only inspect the first fragment of a packet (which contains the transport layer header). Subsequent fragments contain payload only — no port numbers. Attackers can send a very large Routing Header in the first fragment to push the TCP/UDP header beyond what the firewall inspects.
+A firewall may only inspect the first fragment of a packet (which contains the transport layer header). Subsequent fragments contain payload only - no port numbers. Attackers can send a very large Routing Header in the first fragment to push the TCP/UDP header beyond what the firewall inspects.
 
 ### 2. Hop-by-Hop Options Header DoS
 
 The Hop-by-Hop Options header is processed by every router on the path:
 
-```
+```text
 An attacker sends packets with crafted Hop-by-Hop Options headers
 → Every router must process them → CPU exhaustion
 ```
 
 ```bash
 # Detect and filter Hop-by-Hop headers
+
 ip6tables -A INPUT -m ipv6header --header hop-by-hop -j DROP
 # This drops all packets with Hop-by-Hop headers (RFC 6192 recommendation for hosts)
 ```
 
-### 3. Routing Header Type 0 (RH0) — Deprecated
+### 3. Routing Header Type 0 (RH0) - Deprecated
 
 Type 0 Routing Headers allowed attackers to amplify traffic (packet magnification):
 

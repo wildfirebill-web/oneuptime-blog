@@ -17,6 +17,7 @@ Post-upgrade validation for Calico is a multi-step process that confirms the upg
 ```bash
 #!/bin/bash
 # validate-calico-post-upgrade.sh
+
 TARGET_VERSION="${1:?Provide target Calico version}"
 FAILURES=0
 

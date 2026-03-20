@@ -30,6 +30,7 @@ If you created your Function App through the Azure Portal, Application Insights 
 
 ```bash
 # Create an Application Insights resource and connect it to a Function App
+
 az monitor app-insights component create \
   --app my-functions-insights \
   --location eastus \

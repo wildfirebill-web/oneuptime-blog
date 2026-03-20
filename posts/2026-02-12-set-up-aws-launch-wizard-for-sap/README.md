@@ -57,6 +57,7 @@ You need SAP installation media uploaded to S3:
 
 ```bash
 # Create a bucket for SAP media
+
 aws s3 mb s3://my-sap-media --region us-east-1
 
 # Upload SAP HANA installation media

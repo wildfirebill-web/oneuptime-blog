@@ -127,6 +127,7 @@ All communication must be encrypted. Configure TLS for every ArgoCD connection:
 
 ```yaml
 # ArgoCD server TLS
+
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

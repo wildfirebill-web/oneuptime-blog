@@ -27,6 +27,7 @@ This guide covers monitoring Cilium node health, diagnosing agent failures, chec
 
 ```bash
 # Comprehensive health status for the local node
+
 cilium status --verbose
 
 # Check all Cilium pods across the cluster

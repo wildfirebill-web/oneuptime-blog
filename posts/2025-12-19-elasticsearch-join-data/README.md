@@ -52,6 +52,7 @@ Embed related data directly in documents.
 
 ```bash
 # Instead of separate customer reference
+
 # {"order_id": "1", "customer_id": "CUST-001"}
 
 # Denormalize customer data into order

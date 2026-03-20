@@ -38,6 +38,7 @@ sudo apt update
 sudo apt install distcc
 
 # Verify installation
+
 distcc --version
 ```
 

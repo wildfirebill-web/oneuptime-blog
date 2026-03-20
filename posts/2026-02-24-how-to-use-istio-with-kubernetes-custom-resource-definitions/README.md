@@ -237,6 +237,7 @@ When you see resources with multiple versions, prefer the stable `v1` version:
 
 ```yaml
 # Preferred
+
 apiVersion: networking.istio.io/v1
 
 # Older versions (still work but may be deprecated)

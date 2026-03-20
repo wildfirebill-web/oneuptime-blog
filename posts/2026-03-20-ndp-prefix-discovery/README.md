@@ -12,7 +12,7 @@ IPv6 Prefix Discovery allows hosts to learn which IPv6 prefixes are on-link (dir
 
 ## Prefix Discovery Mechanism
 
-```
+```text
 Prefix Discovery process:
 
 1. Host receives Router Advertisement
@@ -35,6 +35,7 @@ Prefix Discovery process:
 
 ```bash
 # View current prefix list (shown as on-link routes)
+
 ip -6 route show
 
 # On-link routes are shown as:

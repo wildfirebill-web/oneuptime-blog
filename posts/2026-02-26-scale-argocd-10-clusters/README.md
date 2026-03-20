@@ -70,6 +70,7 @@ For 10 clusters, the hub-and-spoke pattern works well. At 20+ clusters, federate
 
 ```bash
 # Register each cluster using the ArgoCD CLI
+
 argocd cluster add production-us --name production-us
 argocd cluster add production-eu --name production-eu
 argocd cluster add staging --name staging
@@ -387,7 +388,7 @@ data:
   controller.k8s.client.burst: "100"
 ```
 
-### Resource Sizing for 10 Clusters
+Resource Sizing for 10 Clusters
 
 With 10 clusters and moderate application count per cluster:
 

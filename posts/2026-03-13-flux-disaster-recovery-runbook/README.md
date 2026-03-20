@@ -69,6 +69,7 @@ kubectl logs -n flux-system deployment/source-controller --tail=50
 **Recovery:**
 ```bash
 # Step 1: Check if the namespace exists
+
 kubectl get namespace flux-system
 
 # Step 2: If namespace is present, restart controllers

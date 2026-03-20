@@ -38,6 +38,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/dex/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

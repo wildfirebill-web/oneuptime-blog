@@ -35,6 +35,7 @@ graph TD
 
 ```yaml
 # roles/container_security/tasks/daemon.yml
+
 # Harden the Docker daemon configuration
 - name: Deploy hardened Docker daemon configuration
   ansible.builtin.template:

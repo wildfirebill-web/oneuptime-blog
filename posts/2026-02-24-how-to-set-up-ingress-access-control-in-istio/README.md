@@ -27,6 +27,7 @@ Authorization policies applied to the gateway work exactly like policies on any 
 
 ```bash
 # Find your gateway's labels
+
 kubectl get pods -n istio-system -l istio=ingressgateway --show-labels
 ```
 

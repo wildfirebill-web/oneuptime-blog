@@ -139,6 +139,7 @@ Set default quotas that apply to all clients without specific overrides:
 
 ```bash
 # Set default producer quota (10 MB/s)
+
 kafka-configs.sh --bootstrap-server localhost:9092 \
   --alter --add-config 'producer_byte_rate=10485760' \
   --entity-type clients --entity-default

@@ -22,6 +22,7 @@ Work with core dumps using coredumpctl:
 
 ```bash
 # List all captured core dumps
+
 coredumpctl list
 
 # Show info about the latest crash

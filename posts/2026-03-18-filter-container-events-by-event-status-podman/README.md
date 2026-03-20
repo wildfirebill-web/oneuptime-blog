@@ -20,6 +20,7 @@ Podman containers emit events with the following statuses:
 
 ```bash
 # Lifecycle statuses
+
 # create   - Container was created
 # init     - Container was initialized
 # start    - Container started running

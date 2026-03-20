@@ -81,6 +81,7 @@ The recommended way to distribute Wasm plugins is through OCI (container) regist
 
 ```bash
 # Build your Wasm plugin
+
 tinygo build -o plugin.wasm -scheduler=none -target=wasi main.go
 
 # Push to an OCI registry using oras or buildah

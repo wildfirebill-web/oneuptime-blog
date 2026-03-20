@@ -2,11 +2,11 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SI6 Networks, na6, IPv6, Neighbor Advertisement, NDP Spoofing, Security Testing
+Tags: SI6 Networks, Na6, IPv6, Neighbor Advertisement, NDP Spoofing, Security Testing
 
 Description: A guide to using the SI6 Networks na6 tool to test IPv6 Neighbor Advertisement spoofing and NDP cache poisoning in authorized lab environments.
 
-The `na6` tool from the SI6 Networks IPv6 toolkit crafts and sends ICMPv6 Neighbor Advertisement (NA) messages — the IPv6 equivalent of ARP replies. By sending spoofed NAs, attackers can perform NDP cache poisoning to redirect traffic in a man-in-the-middle attack. `na6` enables security researchers to test these attacks in authorized lab environments.
+The `na6` tool from the SI6 Networks IPv6 toolkit crafts and sends ICMPv6 Neighbor Advertisement (NA) messages - the IPv6 equivalent of ARP replies. By sending spoofed NAs, attackers can perform NDP cache poisoning to redirect traffic in a man-in-the-middle attack. `na6` enables security researchers to test these attacks in authorized lab environments.
 
 **Warning**: NDP spoofing on production networks is illegal and causes traffic disruption. Only use in isolated lab environments with explicit authorization.
 
@@ -21,6 +21,7 @@ sudo pacman -S ipv6toolkit          # Arch Linux
 
 ```bash
 # Send a Neighbor Advertisement from eth0
+
 sudo na6 -i eth0
 
 # Send an NA claiming to be the owner of a specific address

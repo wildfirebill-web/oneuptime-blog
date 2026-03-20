@@ -14,6 +14,7 @@ Instead of relying on human judgment under pressure, define severity levels base
 
 ```python
 # Severity classification rules based on OTel signal patterns
+
 SEVERITY_RULES = {
     "P1": {
         "description": "Critical - customer-facing outage",

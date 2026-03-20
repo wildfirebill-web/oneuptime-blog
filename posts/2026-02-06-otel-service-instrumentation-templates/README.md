@@ -92,6 +92,7 @@ process.on('SIGTERM', () => {
 
 ```python
 # otel_setup.py
+
 # Import this module at the top of your application entry point
 
 import os

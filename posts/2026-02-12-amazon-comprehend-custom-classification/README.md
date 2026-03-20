@@ -119,6 +119,7 @@ s3 = boto3.client('s3', region_name='us-east-1')
 comprehend = boto3.client('comprehend', region_name='us-east-1')
 
 # Upload training data to S3
+
 bucket = 'my-comprehend-training'
 s3.upload_file(
     'training_data.csv',

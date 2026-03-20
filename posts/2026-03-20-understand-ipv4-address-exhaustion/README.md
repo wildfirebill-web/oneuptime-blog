@@ -31,6 +31,7 @@ IPv4 uses 32 bits, providing 2^32 = 4,294,967,296 unique addresses. In the 1980s
 
 ```python
 # IPv4 address space breakdown
+
 total = 2 ** 32
 private_a = 2 ** 24          # 10.0.0.0/8
 private_b = 2 ** 20          # 172.16.0.0/12

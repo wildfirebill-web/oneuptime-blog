@@ -197,6 +197,7 @@ If your Azure DevOps Server uses self-signed certificates:
 
 ```bash
 # Add CA certificate to ArgoCD
+
 kubectl create configmap argocd-tls-certs-cm \
   -n argocd \
   --from-file=tfs.company.com=/path/to/ca-cert.pem

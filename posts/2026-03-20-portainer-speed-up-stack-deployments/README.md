@@ -14,10 +14,10 @@ Slow stack deployments in Portainer are usually caused by slow image pulls. This
 
 The main causes of slow deployments:
 
-1. **Large images** — pulling a 2 GB image takes minutes on a slow connection
-2. **No registry authentication cached** — re-authenticating on every pull
-3. **Sequential image pulls** — images pulled one at a time
-4. **No local cache** — same image pulled multiple times across nodes
+1. **Large images** - pulling a 2 GB image takes minutes on a slow connection
+2. **No registry authentication cached** - re-authenticating on every pull
+3. **Sequential image pulls** - images pulled one at a time
+4. **No local cache** - same image pulled multiple times across nodes
 
 ## Solution 1: Pre-Pull Images Before Deployment
 
@@ -108,13 +108,14 @@ services:
 Reduce image sizes with multi-stage builds to minimize pull time:
 
 ```dockerfile
-# Build stage — large dependencies
+# Build stage - large dependencies
+
 FROM node:20 AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --only=production
 
-# Runtime stage — minimal image
+# Runtime stage - minimal image
 FROM node:20-alpine AS runtime
 WORKDIR /app
 COPY --from=builder /app/node_modules ./node_modules
@@ -149,4 +150,4 @@ docker compose pull && time docker compose up -d
 
 ## Portainer Stack Deployment Timeout
 
-If large stacks time out during Portainer deployment, the images are too large or the registry is too slow — solutions 2 and 3 above solve this. The Portainer deploy timeout is not user-configurable but pre-pulling images eliminates the risk.
+If large stacks time out during Portainer deployment, the images are too large or the registry is too slow - solutions 2 and 3 above solve this. The Portainer deploy timeout is not user-configurable but pre-pulling images eliminates the risk.

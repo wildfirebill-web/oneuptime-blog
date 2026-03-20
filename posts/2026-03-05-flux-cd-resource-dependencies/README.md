@@ -20,6 +20,7 @@ The `spec.dependsOn` field accepts a list of references to other Kustomization o
 
 ```yaml
 # Infrastructure must be ready before apps are deployed
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

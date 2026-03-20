@@ -35,7 +35,8 @@ graph TD
 ## Performance: Global Settings
 
 ```hcl
-# ~/.terraformrc — enterprise-wide settings
+# ~/.terraformrc - enterprise-wide settings
+
 plugin_cache_dir   = "/shared/tofu-plugin-cache"
 
 # CI runners should mount this as a shared volume

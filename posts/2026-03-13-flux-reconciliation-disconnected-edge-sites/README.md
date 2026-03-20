@@ -30,6 +30,7 @@ On a connected machine, download all Flux components:
 
 ```bash
 # On a connected machine, download Flux install manifests
+
 flux install --export > flux-install.yaml
 
 # Download all Flux controller images

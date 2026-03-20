@@ -38,6 +38,7 @@ flowchart TD
 
 ```yaml
 # simple-job.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

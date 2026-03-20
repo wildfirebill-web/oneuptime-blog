@@ -25,6 +25,7 @@ S3 is one of the most common services where encryption gets overlooked. Here is 
 
 ```python
 # enforce-s3-encryption.sentinel
+
 # Requires server-side encryption on all S3 buckets
 
 import "tfplan/v2" as tfplan

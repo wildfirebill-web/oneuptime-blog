@@ -6,12 +6,13 @@ Tags: OpenTofu, NIST 800-53, Compliance, Security Controls, Infrastructure as Co
 
 Description: Learn how to implement key NIST SP 800-53 security control families with OpenTofu to support federal compliance requirements on AWS.
 
-NIST SP 800-53 defines security and privacy controls for federal information systems. OpenTofu lets you codify the most infrastructure-relevant control families — access control, audit logging, system integrity, and media protection — as verifiable, version-controlled resources.
+NIST SP 800-53 defines security and privacy controls for federal information systems. OpenTofu lets you codify the most infrastructure-relevant control families - access control, audit logging, system integrity, and media protection - as verifiable, version-controlled resources.
 
-## AC — Access Control
+## AC - Access Control
 
 ```hcl
-# AC-2: Account Management — least-privilege IAM roles
+# AC-2: Account Management - least-privilege IAM roles
+
 resource "aws_iam_role" "app_role" {
   name = "app-service-role"
 
@@ -37,7 +38,7 @@ resource "aws_iam_role_policy" "app_least_privilege" {
   })
 }
 
-# AC-3: Access Enforcement — S3 bucket policy denies non-HTTPS
+# AC-3: Access Enforcement - S3 bucket policy denies non-HTTPS
 resource "aws_s3_bucket_policy" "enforce_tls" {
   bucket = aws_s3_bucket.data.id
   policy = jsonencode({
@@ -56,10 +57,10 @@ resource "aws_s3_bucket_policy" "enforce_tls" {
 }
 ```
 
-## AU — Audit and Accountability
+## AU - Audit and Accountability
 
 ```hcl
-# AU-2, AU-3: Audit Events — CloudTrail with all management events
+# AU-2, AU-3: Audit Events - CloudTrail with all management events
 resource "aws_cloudtrail" "nist" {
   name                          = "nist-cloudtrail"
   s3_bucket_name                = aws_s3_bucket.cloudtrail.id
@@ -73,23 +74,23 @@ resource "aws_cloudtrail" "nist" {
   }
 }
 
-# AU-9: Protection of Audit Information — encrypted CloudTrail logs
+# AU-9: Protection of Audit Information - encrypted CloudTrail logs
 resource "aws_cloudtrail" "nist_encrypted" {
   kms_key_id = aws_kms_key.audit.arn
   # ...
 }
 
-# AU-11: Audit Record Retention — 7-year log retention
+# AU-11: Audit Record Retention - 7-year log retention
 resource "aws_cloudwatch_log_group" "audit" {
   name              = "/aws/cloudtrail/nist"
   retention_in_days = 2555  # 7 years
 }
 ```
 
-## SI — System and Information Integrity
+## SI - System and Information Integrity
 
 ```hcl
-# SI-2: Flaw Remediation — AWS Systems Manager Patch Manager
+# SI-2: Flaw Remediation - AWS Systems Manager Patch Manager
 resource "aws_ssm_patch_baseline" "nist" {
   name             = "nist-patch-baseline"
   operating_system = "AMAZON_LINUX_2023"
@@ -108,7 +109,7 @@ resource "aws_ssm_patch_baseline" "nist" {
   }
 }
 
-# SI-3: Malicious Code Protection — GuardDuty
+# SI-3: Malicious Code Protection - GuardDuty
 resource "aws_guardduty_detector" "main" {
   enable = true
 
@@ -122,10 +123,10 @@ resource "aws_guardduty_detector" "main" {
 }
 ```
 
-## SC — System and Communications Protection
+## SC - System and Communications Protection
 
 ```hcl
-# SC-8: Transmission Confidentiality — ALB HTTPS only
+# SC-8: Transmission Confidentiality - ALB HTTPS only
 resource "aws_alb_listener" "https" {
   load_balancer_arn = aws_lb.main.arn
   port              = "443"
@@ -139,16 +140,16 @@ resource "aws_alb_listener" "https" {
   }
 }
 
-# SC-28: Protection of Information at Rest — KMS encryption
+# SC-28: Protection of Information at Rest - KMS encryption
 resource "aws_ebs_encryption_by_default" "main" {
   enabled = true
 }
 ```
 
-## IA — Identification and Authentication
+## IA - Identification and Authentication
 
 ```hcl
-# IA-5: Authenticator Management — require MFA via SCP
+# IA-5: Authenticator Management - require MFA via SCP
 resource "aws_organizations_policy" "require_mfa" {
   name = "RequireMFA"
   type = "SERVICE_CONTROL_POLICY"
@@ -171,4 +172,4 @@ resource "aws_organizations_policy" "require_mfa" {
 
 ## Conclusion
 
-NIST 800-53 controls map directly to AWS services — CloudTrail for audit logging, GuardDuty for malicious code protection, KMS for encryption at rest, TLS policies for in-transit protection, and IAM for access control. Implement them with OpenTofu to make compliance posture visible in code reviews, detectable in CI drift checks, and auditable through version history.
+NIST 800-53 controls map directly to AWS services - CloudTrail for audit logging, GuardDuty for malicious code protection, KMS for encryption at rest, TLS policies for in-transit protection, and IAM for access control. Implement them with OpenTofu to make compliance posture visible in code reviews, detectable in CI drift checks, and auditable through version history.

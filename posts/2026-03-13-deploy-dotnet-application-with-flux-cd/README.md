@@ -27,6 +27,7 @@ This guide covers the multi-stage .NET Dockerfile, ASP.NET Core health check int
 
 ```dockerfile
 # Dockerfile - multi-stage build: SDK for compile, runtime for execution
+
 FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS builder
 WORKDIR /src
 # Restore dependencies first (cached separately from source)

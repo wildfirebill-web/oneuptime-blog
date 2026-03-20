@@ -46,6 +46,7 @@ HA mode requires all external services - there is no option for embedded databas
 
 ```hcl
 # AWS RDS Aurora PostgreSQL for TFE HA
+
 resource "aws_rds_cluster" "tfe" {
   cluster_identifier      = "tfe-postgres"
   engine                  = "aurora-postgresql"

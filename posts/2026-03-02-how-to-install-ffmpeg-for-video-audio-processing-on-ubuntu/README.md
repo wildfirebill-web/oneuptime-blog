@@ -19,6 +19,7 @@ sudo apt-get update
 sudo apt-get install -y ffmpeg
 
 # Verify installation and check codecs
+
 ffmpeg -version
 ffmpeg -encoders | head -30
 ffmpeg -decoders | head -30

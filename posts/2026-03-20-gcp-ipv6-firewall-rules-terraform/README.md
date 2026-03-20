@@ -14,6 +14,7 @@ ICMPv6 is required for IPv6 Neighbor Discovery Protocol (NDP) and should always 
 
 ```hcl
 # fw-icmpv6.tf - Allow all ICMPv6 traffic (essential for IPv6 operation)
+
 resource "google_compute_firewall" "allow_icmpv6" {
   name    = "allow-icmpv6-ingress"
   network = google_compute_network.main.name

@@ -22,7 +22,7 @@ services:
     image: apache/kafka:3.7.0
     restart: unless-stopped
     environment:
-      # KRaft mode — no ZooKeeper needed
+      # KRaft mode - no ZooKeeper needed
       KAFKA_NODE_ID: 1
       KAFKA_PROCESS_ROLES: broker,controller
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093
@@ -67,6 +67,7 @@ volumes:
 
 ```bash
 # Create a topic
+
 kafka-topics.sh --create \
   --bootstrap-server localhost:9092 \
   --topic my-topic \

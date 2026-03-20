@@ -18,6 +18,7 @@ The stack is: Physical Disk -> DRBD (replication) -> VDO (deduplication) -> File
 
 ```bash
 # Install VDO and DRBD
+
 sudo dnf install -y vdo kmod-kvdo lvm2
 sudo dnf install -y https://www.elrepo.org/elrepo-release-9.el9.elrepo.noarch.rpm
 sudo dnf install -y kmod-drbd9x drbd9x-utils --enablerepo=elrepo

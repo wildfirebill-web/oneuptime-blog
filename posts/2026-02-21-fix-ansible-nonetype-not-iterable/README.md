@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # Problem: packages variable is not defined
+
 - name: Install packages
   apt:
     name: "{{ item }}"

@@ -23,6 +23,7 @@ module "vpc" {
 }
 
 # Terraform knows to create the VPC first because of the reference
+
 module "ecs" {
   source = "./modules/ecs-service"
   subnet_ids = module.vpc.private_subnet_ids  # Implicit dependency

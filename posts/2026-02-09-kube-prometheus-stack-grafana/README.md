@@ -37,6 +37,7 @@ First, add the Prometheus community Helm repository:
 
 ```bash
 # Add the Prometheus community Helm repository
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 
 # Update your local Helm chart repository cache

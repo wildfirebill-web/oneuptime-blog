@@ -18,6 +18,7 @@ ZONE="us-central1-a"
 INSTANCE="my-app-vm"
 
 # Get instance details
+
 gcloud compute instances describe $INSTANCE \
   --zone=$ZONE \
   --project=$PROJECT \
@@ -146,4 +147,4 @@ resource "google_compute_instance" "worker" {
 
 ## Conclusion
 
-GCP Compute instances use the `PROJECT/ZONE/INSTANCE_NAME` format for import IDs. The most important `ignore_changes` setting is the boot disk image reference — GCP image families regularly publish new versions, and without this ignore the instance will appear to need replacement every time the base image is updated.
+GCP Compute instances use the `PROJECT/ZONE/INSTANCE_NAME` format for import IDs. The most important `ignore_changes` setting is the boot disk image reference - GCP image families regularly publish new versions, and without this ignore the instance will appear to need replacement every time the base image is updated.

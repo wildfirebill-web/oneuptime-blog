@@ -30,6 +30,7 @@ Apply the following Helm values to configure disadvantages of native routing in 
 
 ```yaml
 # cilium-native-routing-mitigations.yaml
+
 # Mitigating native routing disadvantages
 
 # Ensure pod CIDR does not overlap with infrastructure

@@ -16,6 +16,7 @@ Kafka exposes extensive metrics via JMX (Java Management Extensions). Enabling J
 # /etc/kafka/kafka-env.sh (or add to the Kafka startup script)
 
 # Enable JMX on a specific IPv4 address and port
+
 export JMX_PORT=9999
 export KAFKA_JMX_OPTS="-Dcom.sun.management.jmxremote \
   -Dcom.sun.management.jmxremote.authenticate=false \
@@ -63,7 +64,7 @@ rules:
 ```
 
 ```bash
-# /etc/kafka/kafka-env.sh — add the agent to the JVM
+# /etc/kafka/kafka-env.sh - add the agent to the JVM
 export KAFKA_OPTS="-javaagent:/opt/jmx_prometheus_javaagent.jar=9998:/etc/kafka/kafka-jmx-exporter.yaml"
 # Port 9998 is the Prometheus HTTP scrape port (separate from JMX port 9999)
 ```
@@ -95,5 +96,5 @@ scrape_configs:
 
 - Set `java.rmi.server.hostname` to the broker's IPv4 address to ensure remote JMX clients connect to the correct IP.
 - JMX Exporter converts JMX metrics to Prometheus format, eliminating the need for direct JMX access from Prometheus.
-- The JMX Exporter HTTP port (e.g., 9998) and JMX RMI port (e.g., 9999) are separate — only expose the HTTP port to Prometheus.
+- The JMX Exporter HTTP port (e.g., 9998) and JMX RMI port (e.g., 9999) are separate - only expose the HTTP port to Prometheus.
 - Monitor `UnderReplicatedPartitions` as the most critical Kafka health metric.

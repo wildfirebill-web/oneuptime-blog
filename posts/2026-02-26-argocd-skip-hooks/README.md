@@ -24,6 +24,7 @@ The Skip annotation tells ArgoCD: "This resource exists in the repo, but pretend
 
 ```yaml
 # This resource will be ignored by ArgoCD
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -37,7 +38,7 @@ data:
 
 ## When to Use Skip
 
-### Resources Managed by Other Tools
+Resources Managed by Other Tools
 
 If you have resources that are managed by Terraform, Helm outside of ArgoCD, or another operator, but you want to keep their manifests in the same repo:
 
@@ -74,7 +75,7 @@ data:
   custom_api_key: "REPLACE_ME"
 ```
 
-### Resources for Manual Operations
+Resources for Manual Operations
 
 Some resources should only be applied manually, like one-time data seeding jobs:
 

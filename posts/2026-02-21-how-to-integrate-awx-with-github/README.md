@@ -45,6 +45,7 @@ AWX needs credentials to clone private repositories and update commit statuses. 
 
 ```bash
 # Create an SCM credential for GitHub
+
 curl -s -X POST \
   -H "Authorization: Bearer ${AWX_TOKEN}" \
   -H "Content-Type: application/json" \

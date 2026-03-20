@@ -30,6 +30,7 @@ Deploy the same application configuration to multiple clusters using a single `G
 
 ```yaml
 # gitrepo-federated.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -139,7 +140,7 @@ sum by (cluster) (
 
 ## Best Practices
 
-- Treat each cluster as an autonomous unit — federation should augment, not couple clusters tightly.
+- Treat each cluster as an autonomous unit - federation should augment, not couple clusters tightly.
 - Use Fleet's **per-cluster value overrides** to customize behavior (replicas, resource limits) per cluster.
 - Test cross-cluster failover regularly to ensure Submariner tunnels remain healthy.
 - Apply federated RBAC via Rancher role templates to avoid per-cluster permission drift.

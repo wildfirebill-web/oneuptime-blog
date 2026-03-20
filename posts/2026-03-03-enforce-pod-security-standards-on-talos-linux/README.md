@@ -38,6 +38,7 @@ The simplest way to apply Pod Security Standards is through namespace labels.
 
 ```bash
 # Apply Baseline enforcement with Restricted warnings
+
 kubectl label namespace my-app \
   pod-security.kubernetes.io/enforce=baseline \
   pod-security.kubernetes.io/enforce-version=latest \

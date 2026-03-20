@@ -21,6 +21,7 @@ java -version
 
 ```bash
 # Download Artemis
+
 curl -L https://downloads.apache.org/activemq/activemq-artemis/2.33.0/apache-artemis-2.33.0-bin.tar.gz \
   -o /tmp/artemis.tar.gz
 sudo tar xzf /tmp/artemis.tar.gz -C /opt/

@@ -26,6 +26,7 @@ ArgoCD health checks are Lua scripts configured in the `argocd-cm` ConfigMap:
 
 ```yaml
 # argocd-cm ConfigMap with custom health checks
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

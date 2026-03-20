@@ -21,7 +21,7 @@ ICMP Redirect (Type 5) is sent by a router to a host when it determines that the
 
 ## When ICMP Redirect Is Generated
 
-```
+```text
 Host (192.168.1.10) sends packet to Router A (192.168.1.1)
 Router A sees: "I can reach 10.20.0.5 via Router B (192.168.1.2)"
 Router A sends: ICMP Redirect to Host, saying "use 192.168.1.2 for 10.20.0.5"
@@ -32,6 +32,7 @@ Host updates its routing cache to use Router B directly
 
 ```bash
 # Capture ICMP redirect messages
+
 tcpdump -i eth0 -n -v 'icmp[0] = 5'
 
 # Example output:

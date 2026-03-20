@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Providers, Modules
+Tags: OpenTofu, Terraform, Infrastructure as Code, Provider, Modules
 
 Description: Learn how to pass provider configurations between modules in OpenTofu using the providers argument and proxy provider declarations.
 
@@ -16,6 +16,7 @@ Without explicit passing, child modules inherit the default (non-aliased) provid
 
 ```hcl
 # Root module
+
 provider "aws" {
   region = "us-east-1"
 }
@@ -66,7 +67,7 @@ terraform {
 }
 ```
 
-The child module uses `aws` as its local name — the root module maps whichever alias to fill that slot.
+The child module uses `aws` as its local name - the root module maps whichever alias to fill that slot.
 
 ## Passing Multiple Providers
 
@@ -94,7 +95,7 @@ module "application" {
 When writing a module that will pass a provider to a nested sub-module, declare the intermediate provider as a proxy:
 
 ```hcl
-# modules/app/versions.tf — intermediate module
+# modules/app/versions.tf - intermediate module
 terraform {
   required_providers {
     aws = {
@@ -107,7 +108,7 @@ terraform {
 ```
 
 ```hcl
-# modules/app/main.tf — pass the alternate provider to a nested module
+# modules/app/main.tf - pass the alternate provider to a nested module
 module "replica" {
   source = "./replica"
   providers = {

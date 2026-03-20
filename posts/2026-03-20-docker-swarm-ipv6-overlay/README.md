@@ -12,6 +12,7 @@ Docker Swarm's overlay networking supports IPv6 through dual-stack configuration
 
 ```bash
 # Enable IPv6 in Docker daemon
+
 cat > /etc/docker/daemon.json << 'EOF'
 {
   "ipv6": true,

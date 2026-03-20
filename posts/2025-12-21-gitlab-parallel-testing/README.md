@@ -33,6 +33,7 @@ Add the `parallel` keyword to any job to run multiple instances.
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - build
   - test

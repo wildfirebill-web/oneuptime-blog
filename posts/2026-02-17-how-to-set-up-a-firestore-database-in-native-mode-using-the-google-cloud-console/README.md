@@ -90,6 +90,7 @@ If you prefer to set things up from the command line:
 
 ```bash
 # Enable the Firestore API
+
 gcloud services enable firestore.googleapis.com
 
 # Create the Firestore database in Native mode

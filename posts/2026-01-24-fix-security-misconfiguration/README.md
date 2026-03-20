@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Security, OWASP, Configuration, DevOps, Hardening, Best Practices, Node.js, Python, NGINX
+Tags: Security, OWASP, Configuration, DevOps, Hardening, Best Practices, Node.js, Python, Nginx
 
 Description: Learn how to identify and fix security misconfiguration vulnerabilities in web applications, servers, and cloud infrastructure with practical examples.
 
@@ -56,6 +56,7 @@ Security misconfigurations typically fall into these categories:
 
 ```nginx
 # /etc/nginx/nginx.conf
+
 # Secure Nginx configuration
 
 # Run as non-privileged user

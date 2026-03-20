@@ -13,9 +13,10 @@ A forward proxy accepts client requests and forwards them to origin servers. Con
 ## IPv6-Focused squid.conf
 
 ```squid
-# /etc/squid/squid.conf — IPv6 Forward Proxy
+# /etc/squid/squid.conf - IPv6 Forward Proxy
 
 # Listen on IPv6 only (port 3128)
+
 http_port [::]:3128
 
 # Listen on both IPv4 and IPv6 (dual-stack)
@@ -43,7 +44,7 @@ cache_dir ufs /var/spool/squid 10000 16 256
 maximum_object_size 10 MB
 cache_mem 256 MB
 
-# Logging — logs client IPv6 addresses
+# Logging - logs client IPv6 addresses
 access_log /var/log/squid/access.log squid
 ```
 

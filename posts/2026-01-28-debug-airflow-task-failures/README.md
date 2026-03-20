@@ -56,6 +56,7 @@ The fastest way to see logs:
 
 ```bash
 # View logs for specific task instance
+
 airflow tasks logs my_dag my_task 2024-01-15T00:00:00+00:00
 
 # Follow logs in real-time

@@ -363,7 +363,7 @@ Combine results from parallel runs:
           reporter: java-junit
 ```
 
-## Resource Management
+Resource Management
 
 Control parallel job limits:
 

@@ -36,6 +36,7 @@ Before changing anything, check what you have now.
 
 ```bash
 # Show the current default boot target
+
 systemctl get-default
 ```
 

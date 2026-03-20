@@ -38,6 +38,7 @@ The simplest check is to look at the first line:
 
 ```bash
 # Show the first line of a file
+
 head -1 group_vars/production/vault.yml
 
 # Output for encrypted file:

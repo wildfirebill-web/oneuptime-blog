@@ -43,6 +43,7 @@ sequenceDiagram
 
 ```bash
 # Install the in-app messaging package
+
 npm install aws-amplify @aws-amplify/notifications
 ```
 

@@ -31,6 +31,7 @@ First, identify the CoreDNS service endpoints in each cluster:
 
 ```bash
 # In cluster-1
+
 kubectl get svc -n kube-system kube-dns -o wide
 
 # Note the ClusterIP, let's say it's 10.96.0.10

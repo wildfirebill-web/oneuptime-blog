@@ -69,6 +69,7 @@ The MIGRATE command atomically transfers keys between Redis instances.
 
 ```bash
 # Migrate a single key
+
 redis-cli -h source MIGRATE target-host 6379 mykey 0 5000
 
 # Migrate multiple keys (Redis 3.0.6+)

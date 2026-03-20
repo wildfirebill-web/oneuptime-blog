@@ -294,6 +294,7 @@ To make sure your rewrites are working:
 
 ```bash
 # Apply the config
+
 kubectl apply -f virtualservice.yaml
 
 # Check the proxy config

@@ -29,6 +29,7 @@ cAdvisor runs on every Docker host and exposes container metrics:
 
 ```yaml
 # roles/container_monitoring/tasks/cadvisor.yml
+
 # Deploy cAdvisor for container metrics collection
 - name: Run cAdvisor container
   community.docker.docker_container:

@@ -34,6 +34,7 @@ The hard refresh is more expensive but catches issues that a normal refresh miss
 
 ```bash
 # Hard refresh the application
+
 argocd app get my-app --hard-refresh
 ```
 

@@ -20,6 +20,7 @@ Start by identifying which containers are CPU-heavy, then drill into the specifi
 
 ```bash
 # Get CPU usage per container
+
 podman stats --no-stream --format \
   "table {{.Name}}\t{{.CPUPerc}}\t{{.CPU}}"
 

@@ -14,7 +14,7 @@ IPv6 is uniquely suited for IoT: its vast address space eliminates the NAT compl
 
 IoT devices should be isolated from the main network. A typical IPv6 IoT addressing plan creates dedicated subnets per device category:
 
-```
+```text
 Site prefix: 2001:db8:site::/48
 
 IoT zones (using high subnet numbers):
@@ -32,7 +32,7 @@ IoT zones (using high subnet numbers):
 
 6LoWPAN (IPv6 over Low-Power Wireless Personal Area Networks, RFC 4944) adapts IPv6 for IEEE 802.15.4 networks used by Zigbee, Thread, and similar protocols:
 
-```
+```text
 Key 6LoWPAN features:
   - Header compression (reduce 40-byte IPv6 header to ~4 bytes)
   - Fragmentation for 127-byte 802.15.4 frame size
@@ -62,7 +62,7 @@ graph TD
 
 ## Device Address Assignment
 
-For IoT devices, SLAAC (EUI-64 based) provides a useful advantage — the MAC/EUI-64 address is embedded in the IPv6 address, making it easy to identify devices:
+For IoT devices, SLAAC (EUI-64 based) provides a useful advantage - the MAC/EUI-64 address is embedded in the IPv6 address, making it easy to identify devices:
 
 ```python
 def device_eui64_address(subnet_prefix, eui64_mac):
@@ -83,6 +83,7 @@ def device_eui64_address(subnet_prefix, eui64_mac):
     return f"{prefix}{iid}"
 
 # Example: temperature sensor with EUI-64 = 00:11:22:ff:fe:33:44:55
+
 subnet = "2001:db8:site:4005::"
 eui64 = "00:11:22:ff:fe:33:44:55"
 print(device_eui64_address(subnet, eui64))

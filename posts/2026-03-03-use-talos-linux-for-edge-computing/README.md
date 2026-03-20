@@ -54,6 +54,7 @@ At many edge locations, you only have one machine. Talos supports single-node cl
 
 ```bash
 # Generate config for a single-node edge cluster
+
 talosctl gen config edge-site-a https://<NODE_IP>:6443 \
   --config-patch '[
     {"op": "add", "path": "/cluster/allowSchedulingOnControlPlanes", "value": true}

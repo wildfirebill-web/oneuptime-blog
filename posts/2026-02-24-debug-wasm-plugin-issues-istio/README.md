@@ -34,6 +34,7 @@ Start by checking the proxy logs:
 
 ```bash
 # Check the istio-proxy container logs for Wasm errors
+
 kubectl logs -n my-app -l app=my-service -c istio-proxy | grep -i "wasm\|plugin\|failed"
 ```
 

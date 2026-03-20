@@ -27,6 +27,7 @@ The biggest structural change is going from one package to many.
 
 ```bash
 # v2 - one package for everything
+
 npm install aws-sdk
 
 # v3 - individual packages per service

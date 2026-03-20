@@ -137,6 +137,7 @@ First, identify the network interfaces on each node. Each Ceph node should have 
 
 ```bash
 # List all available network interfaces
+
 # This command shows interface names, states, and basic information
 ip link show
 

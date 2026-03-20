@@ -1,11 +1,10 @@
----
-title: "How to Use regex() and regexall() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions
-description: "Learn how to use the regex() and regexall() functions in OpenTofu to match and extract patterns from strings."
----
-
 # How to Use regex() and regexall() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions
+
+Description: Learn how to use the regex() and regexall() functions in OpenTofu to match and extract patterns from strings.
 
 `regex()` returns the first match of a regular expression in a string (or errors if no match), while `regexall()` returns all matches as a list. They use RE2 syntax, which excludes lookaheads and backreferences but covers most common patterns.
 
@@ -19,18 +18,19 @@ Returns the matched string, or a list/map of captured groups:
 
 ```hcl
 # Simple match
+
 > regex("[0-9]+", "server-123-prod")
 "123"
 
-# With capture group — returns string
+# With capture group - returns string
 > regex("([a-z]+)-([0-9]+)", "server-123")
 # Returns the whole match, not captures in this form
 
-# Named capture groups — returns map
+# Named capture groups - returns map
 > regex("(?P<name>[a-z]+)-(?P<num>[0-9]+)", "server-123")
 {"name" = "server", "num" = "123"}
 
-# Multiple unnamed groups — returns list
+# Multiple unnamed groups - returns list
 > regex("([a-z]+)-([0-9]+)", "server-123")
 ["server", "123"]
 ```
@@ -150,7 +150,7 @@ locals {
 
 ## RE2 Syntax Reference
 
-```
+```bash
 .       Any character (except newline by default)
 [abc]   Character class
 [^abc]  Negated character class

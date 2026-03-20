@@ -29,6 +29,7 @@ Start every setup script with this foundation:
 ```bash
 #!/bin/bash
 # server_setup.sh - Ubuntu server base configuration
+
 # Version: 1.0
 # Usage: sudo ./server_setup.sh [--environment prod|staging|dev]
 

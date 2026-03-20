@@ -28,6 +28,7 @@ Agentless replication avoids all of that. The Azure Migrate appliance communicat
 
 ```bash
 # Create the Azure Migrate project
+
 RESOURCE_GROUP="rg-migration"
 PROJECT_NAME="datacenter-migration-2026"
 LOCATION="eastus"

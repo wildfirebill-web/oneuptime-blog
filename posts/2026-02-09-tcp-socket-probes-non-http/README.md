@@ -308,6 +308,7 @@ Choose TCP probes when:
 
 ```yaml
 # YES: Database servers
+
 kind: StatefulSet
 metadata:
   name: mongodb

@@ -8,13 +8,13 @@ Description: Learn how to use tofu refresh and plan-time refresh to synchronize 
 
 ## Introduction
 
-`tofu refresh` queries the provider APIs for all managed resources and updates the state file with the current real-world values. This detects drift — differences between what state records and what actually exists. Understanding when and how to use refresh is essential for accurate planning.
+`tofu refresh` queries the provider APIs for all managed resources and updates the state file with the current real-world values. This detects drift - differences between what state records and what actually exists. Understanding when and how to use refresh is essential for accurate planning.
 
 ## How Refresh Works
 
 By default, `tofu plan` runs a refresh step before comparing configuration to state:
 
-```
+```hcl
 tofu plan
   → Refresh state (query all resources from API)
   → Compare refreshed state to configuration
@@ -25,6 +25,7 @@ tofu plan
 
 ```bash
 # Refresh state without planning or applying
+
 tofu refresh
 
 # Output shows detected drift:
@@ -80,7 +81,7 @@ If a resource was deleted outside OpenTofu, refresh detects it:
 tofu apply -refresh-only
 
 # Plan shows:
-# - aws_instance.obsolete  (will be removed from state — already deleted)
+# - aws_instance.obsolete  (will be removed from state - already deleted)
 
 # Apply removes the deleted resource from state
 # Next plan: OpenTofu will try to create it (unless you remove the config block)

@@ -22,6 +22,7 @@ Here is a HelmRelease with common upgrade options.
 
 ```yaml
 # helmrelease.yaml - HelmRelease with upgrade configuration
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

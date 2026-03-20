@@ -29,6 +29,7 @@ Edit the journald configuration:
 
 ```bash
 # Open the journald configuration file
+
 sudo vi /etc/systemd/journald.conf
 ```
 

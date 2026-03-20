@@ -16,6 +16,7 @@ The `templatefile` function reads a file and renders it as a template, replacing
 
 ```hcl
 # Basic syntax
+
 templatefile(path, vars)
 ```
 

@@ -35,6 +35,7 @@ Here is a playbook that writes a daemon.json file with common production setting
 
 ```yaml
 # configure_daemon.yml - Configure Docker daemon settings
+
 ---
 - name: Configure Docker Daemon
   hosts: docker_hosts

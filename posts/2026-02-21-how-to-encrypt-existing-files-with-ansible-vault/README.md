@@ -16,6 +16,7 @@ Encrypting an existing file is a one-liner:
 
 ```bash
 # Encrypt an existing file in place
+
 ansible-vault encrypt group_vars/production/secrets.yml
 ```
 

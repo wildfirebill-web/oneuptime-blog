@@ -22,6 +22,7 @@ Check that the DNS peering zone exists and is configured correctly:
 
 ```bash
 # List all DNS managed zones and look for peering zones
+
 gcloud dns managed-zones list \
     --format="table(name, dnsName, visibility, peeringConfig)"
 

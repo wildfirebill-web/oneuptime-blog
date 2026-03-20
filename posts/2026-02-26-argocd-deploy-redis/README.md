@@ -34,6 +34,7 @@ The simplest deployment for an application cache:
 
 ```yaml
 # apps/redis/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

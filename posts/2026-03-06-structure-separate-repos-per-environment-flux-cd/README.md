@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Repository Structure, Environment, GitOps, Kubernetes, Multi-Environment, Best Practices
+Tags: Flux CD, Repository Structure, Environments, GitOps, Kubernetes, Multi-Environment, Best Practices
 
 Description: A practical guide to organizing separate Git repositories per environment for Flux CD, with strategies for promotion, consistency, and access control.
 
@@ -109,6 +109,7 @@ Bootstrap Flux for each environment pointing to its respective repository:
 
 ```bash
 # Bootstrap development environment
+
 flux bootstrap github \
   --owner=my-org \
   --repository=fleet-infra-dev \

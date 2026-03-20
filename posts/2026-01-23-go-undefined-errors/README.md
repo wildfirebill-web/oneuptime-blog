@@ -52,6 +52,7 @@ Most editors with Go support auto-import. Manual fix:
 
 ```bash
 # Use goimports to fix imports automatically
+
 go install golang.org/x/tools/cmd/goimports@latest
 goimports -w .
 ```

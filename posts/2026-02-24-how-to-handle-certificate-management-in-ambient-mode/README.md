@@ -69,6 +69,7 @@ To verify rotation is working, watch the certificates and check their ages:
 
 ```bash
 # Check certificate validity times
+
 istioctl ztunnel-config certificates | grep -E "VALID|EXPIRED"
 ```
 

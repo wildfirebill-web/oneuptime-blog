@@ -22,6 +22,7 @@ Gather the information you will need:
 
 ```bash
 # Get the webhook path
+
 WEBHOOK_PATH=$(kubectl -n flux-system get receiver github-receiver -o jsonpath='{.status.webhookPath}')
 echo "Webhook path: $WEBHOOK_PATH"
 

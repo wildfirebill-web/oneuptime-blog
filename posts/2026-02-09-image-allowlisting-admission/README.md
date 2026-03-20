@@ -24,6 +24,7 @@ Create OPA Gatekeeper policies that restrict images to approved registries:
 
 ```yaml
 # registry-allowlist-template.yaml
+
 apiVersion: templates.gatekeeper.sh/v1beta1
 kind: ConstraintTemplate
 metadata:

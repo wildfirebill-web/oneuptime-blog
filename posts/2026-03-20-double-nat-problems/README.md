@@ -14,23 +14,24 @@ Double NAT occurs when traffic passes through two NAT devices before reaching th
 - You add your own router behind it
 - Both devices perform NAT
 
-```
+```text
 [Your PC]         [Your Router]          [ISP Modem/Router]         [Internet]
 192.168.1.10 → NAT → 192.168.0.100 → NAT → 203.0.113.1 → 8.8.8.8
 ```
 
 ## Problems Caused by Double NAT
 
-1. **Port forwarding fails** — forwarding on your router goes to its NAT'd IP, not the end host
-2. **VoIP/SIP issues** — SIP ALG interacts badly with nested NAT
-3. **VPN problems** — IPsec/IKE NAT traversal is complicated by double NAT
-4. **Gaming issues** — strict NAT type (Type 3 on PlayStation, NAT D on others)
-5. **UPnP doesn't work** — UPnP only programs one router's port forwards
+1. **Port forwarding fails** - forwarding on your router goes to its NAT'd IP, not the end host
+2. **VoIP/SIP issues** - SIP ALG interacts badly with nested NAT
+3. **VPN problems** - IPsec/IKE NAT traversal is complicated by double NAT
+4. **Gaming issues** - strict NAT type (Type 3 on PlayStation, NAT D on others)
+5. **UPnP doesn't work** - UPnP only programs one router's port forwards
 
 ## Detecting Double NAT
 
 ```bash
 # Check your private IP
+
 ip addr show
 
 # Check the next hop (gateway)

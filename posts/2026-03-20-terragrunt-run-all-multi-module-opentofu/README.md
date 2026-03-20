@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terragrunt, run-all, Multi-Module, Orchestration
+Tags: OpenTofu, Terragrunt, Run-all, Multi-Module, Orchestration
 
 Description: Learn how to use Terragrunt's run-all command to apply, plan, and destroy multiple OpenTofu modules simultaneously while respecting dependency order.
 
@@ -14,6 +14,7 @@ Terragrunt's `run-all` command discovers all `terragrunt.hcl` files beneath a di
 
 ```bash
 # Plan all modules under environments/prod
+
 terragrunt run-all plan --terragrunt-working-dir environments/prod
 
 # Apply all modules (prompts for confirmation)
@@ -31,7 +32,7 @@ terragrunt run-all apply
 
 Given this directory structure:
 
-```
+```text
 environments/prod/
 ├── networking/           # no dependencies
 ├── database/             # depends on networking
@@ -43,7 +44,7 @@ environments/prod/
 
 Terragrunt automatically determines the correct apply order:
 
-```
+```text
 1. networking (parallelizable - no deps)
 2. database, cache (parallelizable - both depend only on networking)
 3. api, worker (parallelizable - after all their deps)

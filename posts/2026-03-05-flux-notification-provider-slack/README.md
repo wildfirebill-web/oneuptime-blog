@@ -37,6 +37,7 @@ Store the Slack webhook URL in a Kubernetes secret in the same namespace where F
 
 ```bash
 # Create a secret containing the Slack webhook URL
+
 kubectl create secret generic slack-webhook-url \
   --namespace=flux-system \
   --from-literal=address=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX

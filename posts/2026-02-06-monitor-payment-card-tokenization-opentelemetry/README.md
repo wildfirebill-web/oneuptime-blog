@@ -47,6 +47,7 @@ import time
 import hashlib
 
 # Tokenization metrics
+
 tokenize_latency = meter.create_histogram(
     name="tokenization.latency_ms",
     description="Latency of tokenization requests",

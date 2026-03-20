@@ -20,6 +20,7 @@ Traditional Unix security gives root all privileges and regular users almost non
 
 ```bash
 # List the default capabilities of a Podman container
+
 podman run --rm docker.io/library/alpine:latest sh -c "cat /proc/1/status | grep Cap"
 ```
 

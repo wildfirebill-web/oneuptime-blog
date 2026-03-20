@@ -159,6 +159,7 @@ The following YAML configuration defines scoring rules for a service scorecard. 
 
 ```yaml
 # scorecard-rules.yaml
+
 rules:
   # Observability checks
   - id: obs-001

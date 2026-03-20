@@ -24,6 +24,7 @@ Verify your cluster is accessible with the following command.
 
 ```bash
 # Confirm kubectl can reach your EKS Anywhere cluster
+
 kubectl cluster-info
 ```
 

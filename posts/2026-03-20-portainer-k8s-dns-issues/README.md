@@ -12,8 +12,9 @@ DNS is the backbone of Kubernetes service discovery. When DNS fails, services ca
 
 ## Common DNS Error Symptoms
 
-```
+```text
 # Application logs showing DNS failures:
+
 Error: getaddrinfo ENOTFOUND my-service.production.svc.cluster.local
 dial tcp: lookup postgres on 10.96.0.10:53: no such host
 Connection refused: could not resolve host "redis"
@@ -132,7 +133,7 @@ kubectl get configmap coredns -n kube-system -o yaml
 
 Common issues in the Corefile:
 
-```
+```text
 # Corefile example with fixes:
 .:53 {
     errors

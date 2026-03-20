@@ -30,6 +30,7 @@ Let me create a simple three-service architecture: an API gateway, a user servic
 
 ```yaml
 # k8s/user-service.yaml - User service deployment and service
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

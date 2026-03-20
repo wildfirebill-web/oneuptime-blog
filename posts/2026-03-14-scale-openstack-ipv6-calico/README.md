@@ -30,6 +30,7 @@ Set up IPv6 IP pools alongside existing IPv4 pools for dual-stack operation.
 
 ```yaml
 # ipv6-ippool.yaml
+
 # IPv6 IP pool for OpenStack VMs
 apiVersion: projectcalico.org/v3
 kind: IPPool

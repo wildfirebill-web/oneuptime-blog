@@ -74,6 +74,7 @@ The following command installs the CockroachDB Operator using kubectl. The opera
 
 ```bash
 # Apply the CockroachDB Operator CRDs and deployment
+
 kubectl apply -f https://raw.githubusercontent.com/cockroachdb/cockroach-operator/v2.14.0/install/crds.yaml
 kubectl apply -f https://raw.githubusercontent.com/cockroachdb/cockroach-operator/v2.14.0/install/operator.yaml
 

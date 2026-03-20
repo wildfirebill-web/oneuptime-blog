@@ -46,6 +46,7 @@ Start with the root CA. This should be done on a secure, air-gapped machine:
 
 ```bash
 # Generate a strong root key
+
 openssl genrsa -out root-key.pem 4096
 
 # Create root CA configuration

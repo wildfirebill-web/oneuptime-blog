@@ -33,6 +33,7 @@ Store configuration values in Parameter Store:
 
 ```bash
 # Simple string parameter
+
 aws ssm put-parameter \
   --name "/myapp/production/api-endpoint" \
   --type String \

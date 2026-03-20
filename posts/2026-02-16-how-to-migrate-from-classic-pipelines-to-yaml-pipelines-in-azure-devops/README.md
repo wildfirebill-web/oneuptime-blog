@@ -60,6 +60,7 @@ Here is what a typical exported pipeline looks like before cleanup.
 
 ```yaml
 # Exported from classic pipeline - needs cleanup
+
 trigger:
   branches:
     include:

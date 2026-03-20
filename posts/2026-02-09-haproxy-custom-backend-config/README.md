@@ -25,6 +25,7 @@ Configure active and passive health checks.
 
 ```yaml
 # health-check-ingress.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

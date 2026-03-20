@@ -14,6 +14,7 @@ The `ss` (socket statistics) command on Linux provides detailed per-connection T
 
 ```bash
 # Show detailed TCP info for all established connections
+
 ss -tin state established
 
 # Example output (annotated):

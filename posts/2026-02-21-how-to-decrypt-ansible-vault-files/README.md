@@ -16,6 +16,7 @@ The `decrypt` command removes the encryption from a file, leaving the plain-text
 
 ```bash
 # Decrypt a file permanently (replaces encrypted content with plain text)
+
 ansible-vault decrypt group_vars/production/vault.yml
 ```
 

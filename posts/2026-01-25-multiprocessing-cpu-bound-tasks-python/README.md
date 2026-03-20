@@ -14,6 +14,7 @@ Python's `multiprocessing` module enables true parallel execution by using separ
 
 ```python
 # Use multiprocessing for CPU-bound tasks:
+
 # - Mathematical calculations
 # - Image/video processing
 # - Data transformation

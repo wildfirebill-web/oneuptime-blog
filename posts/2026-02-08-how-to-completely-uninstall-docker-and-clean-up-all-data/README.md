@@ -18,6 +18,7 @@ Docker volumes may contain databases, application state, or other important data
 
 ```bash
 # List all Docker volumes
+
 docker volume ls
 
 # Inspect a specific volume to see its mount point

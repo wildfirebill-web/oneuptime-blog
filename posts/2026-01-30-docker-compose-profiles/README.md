@@ -35,6 +35,7 @@ To assign a profile to a service, use the `profiles` attribute in your service d
 
 ```yaml
 # docker-compose.yml
+
 version: "3.9"
 
 services:

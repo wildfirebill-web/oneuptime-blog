@@ -68,6 +68,7 @@ Always pin provider and module versions:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0, < 2.0.0"
 
@@ -169,7 +170,7 @@ output "database_password" {
 }
 ```
 
-## Resource Naming
+Resource Naming
 
 Use consistent naming patterns:
 

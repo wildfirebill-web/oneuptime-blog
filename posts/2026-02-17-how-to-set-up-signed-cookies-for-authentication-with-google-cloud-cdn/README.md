@@ -50,6 +50,7 @@ If you already have a signing key from a signed URL setup, you can reuse it. Oth
 
 ```bash
 # Generate a 128-bit signing key
+
 head -c 16 /dev/urandom | base64 > cdn-signing-key.txt
 
 # Add the key to your backend service

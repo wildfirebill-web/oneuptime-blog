@@ -25,6 +25,7 @@ Every pod runs as a ServiceAccount. If you do not specify one, it uses the `defa
 
 ```yaml
 # apps/myapp/serviceaccount.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

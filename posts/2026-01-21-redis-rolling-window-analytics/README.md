@@ -74,6 +74,7 @@ class RollingWindow:
         return r.zcount(self.key, cutoff, '+inf')
 
 # Usage
+
 window = RollingWindow('metrics:latency:5min', 300)  # 5-minute window
 
 # Add some data

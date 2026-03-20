@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Linux, Networking, Server Configuration, IP Addressing, sysadmin
+Tags: DHCP, Linux, Networking, Server Configuration, IP Addressing, Sysadmin
 
 Description: Setting up a DHCP server on Linux using ISC dhcpd or dnsmasq enables automatic IP address assignment to clients on your network, configured through subnet declarations and option statements.
 
@@ -12,6 +12,7 @@ Description: Setting up a DHCP server on Linux using ISC dhcpd or dnsmasq enable
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install isc-dhcp-server
 
 # RHEL/CentOS
@@ -20,7 +21,7 @@ sudo yum install dhcp-server
 
 ### Configuration: /etc/dhcp/dhcpd.conf
 
-```
+```nginx
 # Global options
 option domain-name "example.local";
 option domain-name-servers 8.8.8.8, 1.1.1.1;
@@ -68,7 +69,7 @@ sudo apt install dnsmasq
 
 Edit `/etc/dnsmasq.conf`:
 
-```
+```text
 interface=eth0
 dhcp-range=192.168.1.100,192.168.1.200,24h
 dhcp-option=option:router,192.168.1.1

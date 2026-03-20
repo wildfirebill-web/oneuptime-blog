@@ -37,6 +37,7 @@ Create a new Azure Functions project with TypeScript and Durable Functions suppo
 
 ```bash
 # Create the project
+
 func init durable-demo --typescript --model V4
 cd durable-demo
 

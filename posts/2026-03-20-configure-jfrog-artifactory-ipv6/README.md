@@ -14,6 +14,7 @@ JFrog Artifactory is a universal artifact repository supporting Docker, Maven, n
 
 ```bash
 # Docker-based installation (recommended)
+
 docker run -d \
   --name artifactory \
   -p 8081:8081 \

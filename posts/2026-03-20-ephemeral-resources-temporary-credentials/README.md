@@ -8,7 +8,7 @@ Description: Learn how to use ephemeral resources in OpenTofu to obtain and use 
 
 ---
 
-Temporary credentials — like AWS STS tokens, Vault dynamic secrets, or short-lived API tokens — are perfect candidates for ephemeral resources. They should only exist for the duration of an OpenTofu operation, not be persisted to state files.
+Temporary credentials - like AWS STS tokens, Vault dynamic secrets, or short-lived API tokens - are perfect candidates for ephemeral resources. They should only exist for the duration of an OpenTofu operation, not be persisted to state files.
 
 ---
 
@@ -16,6 +16,7 @@ Temporary credentials — like AWS STS tokens, Vault dynamic secrets, or short-l
 
 ```hcl
 # Get temporary credentials by assuming a role
+
 ephemeral "aws_iam_role" "cross_account" {
   role_arn     = "arn:aws:iam::987654321098:role/deploy-role"
   session_name = "opentofu-deploy-${var.environment}"
@@ -43,7 +44,7 @@ resource "aws_s3_bucket" "data" {
 ## Reading Secrets from AWS Secrets Manager
 
 ```hcl
-# Fetch the database password — never stored in state
+# Fetch the database password - never stored in state
 ephemeral "aws_secretsmanager_secret_version" "db_password" {
   secret_id = "production/database/password"
 }
@@ -55,7 +56,7 @@ resource "aws_db_instance" "main" {
   instance_class = "db.t3.medium"
   username       = "dbadmin"
 
-  # Write-only attribute — uses ephemeral value without storing it
+  # Write-only attribute - uses ephemeral value without storing it
   password = ephemeral.aws_secretsmanager_secret_version.db_password.secret_string
 
   # The password is never written to the state file
@@ -105,7 +106,7 @@ resource "aws_instance" "app" {
   instance_type = "t3.micro"
   key_name      = aws_key_pair.deploy.key_name
 
-  # Provision using the ephemeral SSH key — never stored in state
+  # Provision using the ephemeral SSH key - never stored in state
   connection {
     type        = "ssh"
     user        = "ec2-user"

@@ -22,6 +22,7 @@ First, install the required packages:
 
 ```bash
 # Install Kubeflow Pipelines SDK and Vertex AI SDK
+
 pip install kfp google-cloud-aiplatform google-cloud-pipeline-components
 ```
 

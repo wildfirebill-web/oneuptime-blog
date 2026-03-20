@@ -22,6 +22,7 @@ Make sure you have:
 
 ```bash
 # Confirm Docker is installed and running
+
 docker --version
 docker compose version
 ```

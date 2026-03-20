@@ -16,6 +16,7 @@ InSpec is distributed by Progress Chef. Install it from their official package r
 
 ```bash
 # Install required dependencies
+
 sudo apt-get update
 sudo apt-get install -y curl wget
 

@@ -24,6 +24,7 @@ Podman offers two squash-related flags:
 
 ```bash
 # --squash: Squash all new layers into a single layer on top of the base image
+
 podman build --squash -t myapp:squashed .
 
 # --squash-all: Squash everything including the base image into one layer

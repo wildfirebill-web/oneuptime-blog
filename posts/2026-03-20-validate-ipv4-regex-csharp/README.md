@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CSharp, Regex, IPv4, Validation, Networking, dotnet
+Tags: CSharp, Regex, IPv4, Validation, Networking, DotNet
 
 Description: Learn how to validate IPv4 address strings using regular expressions in C#, with a compiled Regex pattern that enforces the 0-255 octet range and rejects leading zeros.
 
@@ -15,7 +15,7 @@ using System.Text.RegularExpressions;
 var naive = new Regex(@"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$");
 
 Console.WriteLine(naive.IsMatch("192.168.1.1"));    // True
-Console.WriteLine(naive.IsMatch("999.999.999.999")); // True — WRONG
+Console.WriteLine(naive.IsMatch("999.999.999.999")); // True - WRONG
 ```
 
 ## Strict Regex (Validates 0-255)
@@ -26,7 +26,7 @@ using System.Text.RegularExpressions;
 
 public static class Ipv4Validator
 {
-    // Compiled + cached for performance — Regex is thread-safe when compiled
+    // Compiled + cached for performance - Regex is thread-safe when compiled
     private static readonly Regex StrictIPv4 = new Regex(
         @"^(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)" +
         @"(?:\.(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)){3}$",
@@ -81,7 +81,7 @@ bool IsValidIPv4Simple(string s)
 Console.WriteLine(IsValidIPv4Simple("192.168.1.1"));   // True
 Console.WriteLine(IsValidIPv4Simple("256.0.0.1"));     // False
 Console.WriteLine(IsValidIPv4Simple("::1"));           // False (IPv6)
-// Note: IPAddress.TryParse accepts some leading-zero forms — use regex when strict
+// Note: IPAddress.TryParse accepts some leading-zero forms - use regex when strict
 ```
 
 ## Extracting IPs from Text

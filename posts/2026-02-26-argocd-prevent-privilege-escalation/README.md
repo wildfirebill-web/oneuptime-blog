@@ -138,6 +138,7 @@ Never use wildcard namespace patterns in production:
 
 ```yaml
 # DANGEROUS - allows deployment to any namespace
+
 destinations:
   - server: https://kubernetes.default.svc
     namespace: "*"  # DO NOT DO THIS

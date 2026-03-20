@@ -16,6 +16,7 @@ OpenTofu 1.5+ can generate HCL from imported resources:
 
 ```hcl
 # Step 1: Write import blocks for all resources
+
 # import-blocks.tf
 
 import {

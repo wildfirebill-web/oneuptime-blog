@@ -37,6 +37,7 @@ Important to understand: Cloud Storage FUSE is not a traditional file system. It
 
 ```bash
 # Add the Cloud Storage FUSE repository
+
 export GCSFUSE_REPO=gcsfuse-$(lsb_release -c -s)
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.asc] https://packages.cloud.google.com/apt $GCSFUSE_REPO main" | sudo tee /etc/apt/sources.list.d/gcsfuse.list
 

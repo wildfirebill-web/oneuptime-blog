@@ -14,6 +14,7 @@ The first step is reliably detecting whether a given invocation is a cold start.
 
 ```python
 # lambda_handler.py
+
 import time
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider

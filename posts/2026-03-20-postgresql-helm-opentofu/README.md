@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, PostgreSQL, Database, OpenTofu, Helm, StatefulSet, High Availability
+Tags: Kubernetes, PostgreSQL, Database, OpenTofu, Helm, StatefulSets, High Availability
 
 Description: Learn how to deploy PostgreSQL on Kubernetes using OpenTofu and the Bitnami Helm chart with replication, persistent storage, connection pooling with PgBouncer, and automated backups.
 
@@ -14,6 +14,7 @@ PostgreSQL on Kubernetes with the Bitnami Helm chart provides a production-ready
 
 ```hcl
 # main.tf - Deploy PostgreSQL via Bitnami Helm chart
+
 resource "random_password" "postgres_admin" {
   length  = 32
   special = false

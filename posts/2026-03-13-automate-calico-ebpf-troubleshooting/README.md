@@ -24,6 +24,7 @@ Automated eBPF troubleshooting scripts also create reproducible diagnostic bundl
 ```bash
 #!/bin/bash
 # collect-calico-ebpf-diagnostics.sh
+
 set -euo pipefail
 
 BUNDLE_DIR="calico-ebpf-diag-$(date +%Y%m%d-%H%M%S)"

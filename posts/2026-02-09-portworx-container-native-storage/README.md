@@ -26,6 +26,7 @@ Portworx Enterprise requires a valid license. You can obtain a trial license fro
 
 ```bash
 # Install px command-line tool
+
 curl -fsSL https://install.portworx.com/px-kubectl | bash
 
 # Verify installation

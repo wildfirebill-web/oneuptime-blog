@@ -206,6 +206,7 @@ spec:
       jwksUri: "https://auth.example.com/.well-known/jwks.json"
 ---
 # Public paths - no auth needed
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

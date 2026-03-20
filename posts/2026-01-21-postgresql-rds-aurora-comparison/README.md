@@ -42,6 +42,7 @@ Choosing between managed and self-hosted PostgreSQL affects operational complexi
 
 ```bash
 # Create RDS instance
+
 aws rds create-db-instance \
     --db-instance-identifier mydb \
     --db-instance-class db.r6g.large \

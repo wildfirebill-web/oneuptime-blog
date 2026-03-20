@@ -362,6 +362,7 @@ When `outboundTrafficPolicy` is set to `REGISTRY_ONLY`, only services with Servi
 
 ```yaml
 # In the mesh config
+
 meshConfig:
   outboundTrafficPolicy:
     mode: REGISTRY_ONLY

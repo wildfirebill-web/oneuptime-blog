@@ -158,6 +158,7 @@ read -p "Jaeger endpoint (default: jaeger:4317): " JAEGER_ENDPOINT
 JAEGER_ENDPOINT=${JAEGER_ENDPOINT:-jaeger:4317}
 
 # Generate the config file
+
 cat > collector-config.yaml << EOF
 receivers:
   otlp:

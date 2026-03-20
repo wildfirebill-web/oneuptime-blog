@@ -22,6 +22,7 @@ Zero downtime is not just about how you run the upgrade. It requires that your c
 
 ```bash
 # Check current resource usage
+
 kubectl top nodes
 
 # Check allocatable vs requested resources

@@ -74,6 +74,7 @@ The ephemeral client stores data in memory and is perfect for testing and develo
 import chromadb
 
 # Create an ephemeral client - data exists only in memory
+
 client = chromadb.Client()
 
 # Verify the connection
@@ -881,7 +882,7 @@ Key takeaways:
 
 With these patterns and practices, you can build robust AI applications that leverage the full power of vector search and retrieval-augmented generation.
 
-## Resources
+Resources
 
 - [ChromaDB Documentation](https://docs.trychroma.com/)
 - [ChromaDB GitHub Repository](https://github.com/chroma-core/chroma)

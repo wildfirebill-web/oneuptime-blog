@@ -33,6 +33,7 @@ You need a server (physical or VM) that has a GPS receiver attached. Common opti
 
 ```bash
 # On your internal NTP server (a standard Linux machine)
+
 # Install chrony and gpsd
 apt-get install chrony gpsd gpsd-clients
 

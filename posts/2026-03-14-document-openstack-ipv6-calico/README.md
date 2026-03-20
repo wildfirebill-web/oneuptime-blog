@@ -70,6 +70,7 @@ Document the IPv6 address types operators will encounter:
 ```bash
 #!/bin/bash
 # troubleshoot-ipv6.sh
+
 # IPv6-specific troubleshooting procedures
 
 VM_V6="${1:?Usage: $0 <vm-ipv6-address>}"

@@ -43,6 +43,7 @@ You can inspect this chain:
 
 ```bash
 # View the root certificate
+
 kubectl get configmap istio-ca-root-cert -n default -o jsonpath='{.data.root-cert\.pem}' | \
   openssl x509 -text -noout
 

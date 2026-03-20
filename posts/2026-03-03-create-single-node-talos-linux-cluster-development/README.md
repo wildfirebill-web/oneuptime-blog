@@ -33,6 +33,7 @@ If you have Docker installed on your workstation, you can spin up a Talos cluste
 
 ```bash
 # Create a single-node cluster using Docker
+
 talosctl cluster create \
   --name dev-cluster \
   --controlplanes 1 \
@@ -185,7 +186,7 @@ kubectl describe node | grep -A5 Taints
 # Or at most, the control plane taint should not be NoSchedule
 ```
 
-## Resource Considerations
+Resource Considerations
 
 A single-node Talos cluster running Kubernetes uses roughly:
 

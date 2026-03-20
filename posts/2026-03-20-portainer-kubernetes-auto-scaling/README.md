@@ -1,4 +1,4 @@
-# How to Configure Auto-Scaling for Kubernetes Apps in Portainer
+# How to Configure Auto-Scaling for Kubernetes Apps in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ HPA requires the metrics-server to function:
 
 ```bash
 # Install metrics-server
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # Verify installation
@@ -46,7 +47,7 @@ When creating or editing an application:
 2. Toggle **Auto-scaling** to enabled
 3. Configure:
 
-```
+```text
 Min replicas:      2         (never go below this)
 Max replicas:      10        (never exceed this)
 

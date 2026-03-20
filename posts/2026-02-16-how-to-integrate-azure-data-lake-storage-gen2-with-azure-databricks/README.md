@@ -28,6 +28,7 @@ First, create a service principal in Azure AD.
 
 ```bash
 # Create an Azure AD app registration
+
 az ad app create --display-name "databricks-adls-access"
 
 # Note the application (client) ID from the output

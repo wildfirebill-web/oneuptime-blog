@@ -28,6 +28,7 @@ For straightforward transformations, use a function with `beam.Map` or `beam.Fla
 
 ```python
 # simple_transforms.py
+
 # Basic function transforms for common data operations
 import apache_beam as beam
 import json

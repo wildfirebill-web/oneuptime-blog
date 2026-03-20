@@ -25,6 +25,7 @@ Native routing in eBPF mode eliminates the need for VXLAN or IP-in-IP encapsulat
 
 ```bash
 # Disable kube-proxy before enabling eBPF
+
 kubectl patch ds -n kube-system kube-proxy -p   '{"spec":{"template":{"spec":{"nodeSelector":{"non-calico":"true"}}}}}'
 
 # Enable eBPF mode

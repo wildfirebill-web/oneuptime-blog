@@ -20,6 +20,7 @@ Velero is an open-source tool for backing up and restoring Kubernetes cluster re
 
 ```bash
 # Download Velero CLI
+
 wget https://github.com/vmware-tanzu/velero/releases/download/v1.13.0/velero-v1.13.0-linux-amd64.tar.gz
 tar -xvf velero-v1.13.0-linux-amd64.tar.gz
 sudo mv velero-v1.13.0-linux-amd64/velero /usr/local/bin/

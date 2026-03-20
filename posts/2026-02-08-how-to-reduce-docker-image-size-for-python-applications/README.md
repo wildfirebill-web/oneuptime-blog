@@ -16,6 +16,7 @@ Here is the Dockerfile that many Python developers use:
 
 ```dockerfile
 # Starting point: typically 1.1GB+
+
 FROM python:3.12
 WORKDIR /app
 COPY . .

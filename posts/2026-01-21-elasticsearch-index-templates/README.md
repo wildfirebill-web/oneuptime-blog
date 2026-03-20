@@ -223,6 +223,7 @@ When multiple templates match an index pattern, priority determines which applie
 
 ```bash
 # General template (lower priority)
+
 curl -X PUT "https://localhost:9200/_index_template/general-logs" \
   -H "Content-Type: application/json" \
   -u elastic:password \

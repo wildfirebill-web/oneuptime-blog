@@ -98,6 +98,7 @@ def get_label_results(job_id):
     return labels_by_timestamp
 
 # Start analysis and get results
+
 job_id = start_label_detection('my-video-bucket', 'videos/office-tour.mp4')
 
 # Wait for the job to complete

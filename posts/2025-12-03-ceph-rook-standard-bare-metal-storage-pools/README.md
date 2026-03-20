@@ -97,6 +97,7 @@ First, register the official Rook Helm repository and update your local chart ca
 
 ```bash
 # Add the official Rook Helm repository for production-ready charts
+
 helm repo add rook-release https://charts.rook.io/release
 
 # Update local cache to fetch the latest chart versions

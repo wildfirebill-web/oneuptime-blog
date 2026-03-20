@@ -16,6 +16,7 @@ This guide focuses on practical patterns - the kinds of things you actually need
 
 ```bash
 # Ubuntu 22.04+ comes with Python 3, verify version
+
 python3 --version
 
 # Install pip and venv

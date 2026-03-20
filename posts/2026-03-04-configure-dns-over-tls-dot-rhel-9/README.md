@@ -230,6 +230,7 @@ Test from a client that supports DoT. You can use `kdig` from the `knot-utils` p
 dnf install knot-utils -y
 
 # Test DoT connection
+
 kdig @192.168.1.10 +tls google.com
 ```
 

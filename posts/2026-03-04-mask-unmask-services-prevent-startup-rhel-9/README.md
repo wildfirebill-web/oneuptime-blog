@@ -20,6 +20,7 @@ When you mask a service, systemd creates a symbolic link from the service's unit
 
 ```bash
 # Mask the bluetooth service
+
 sudo systemctl mask bluetooth
 ```
 

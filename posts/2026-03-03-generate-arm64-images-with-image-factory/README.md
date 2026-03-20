@@ -24,6 +24,7 @@ The process starts with a schematic, just like AMD64. Extensions are the same, b
 
 ```yaml
 # arm64-schematic.yaml
+
 customization:
   systemExtensions:
     officialExtensions:

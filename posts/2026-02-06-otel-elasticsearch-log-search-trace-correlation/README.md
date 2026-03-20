@@ -18,6 +18,7 @@ The Collector needs to receive both logs and traces via OTLP and export them to 
 
 ```yaml
 # otel-collector.yaml
+
 receivers:
   otlp:
     protocols:

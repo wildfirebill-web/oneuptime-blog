@@ -87,6 +87,7 @@ Here is a detailed breakdown for common GCP services:
 
 ```bash
 # Create a BigQuery dataset for compliance tracking
+
 bq mk --dataset \
     --location=US \
     --description="Shared responsibility compliance tracking" \

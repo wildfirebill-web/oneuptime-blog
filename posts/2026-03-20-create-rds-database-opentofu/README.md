@@ -8,7 +8,7 @@ Description: Learn how to provision an AWS RDS database instance with subnet gro
 
 ---
 
-AWS RDS provides managed relational databases. OpenTofu automates provisioning the entire RDS stack — subnet groups, parameter groups, security groups, and the database instance — ensuring consistent, repeatable deployments.
+AWS RDS provides managed relational databases. OpenTofu automates provisioning the entire RDS stack - subnet groups, parameter groups, security groups, and the database instance - ensuring consistent, repeatable deployments.
 
 ---
 

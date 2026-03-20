@@ -218,6 +218,7 @@ class ScalingThresholdCalculator:
 
 
 # Example calculation for a typical web service
+
 calculator = ScalingThresholdCalculator(
     pod_startup_time=30,           # 30 seconds to start
     lb_warmup_time=10,             # 10 seconds for LB

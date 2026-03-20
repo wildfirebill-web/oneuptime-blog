@@ -18,6 +18,7 @@ The simplest approach uses the `packages` key:
 #cloud-config
 
 # Ensure package lists are updated before installing
+
 package_update: true
 
 # Upgrade existing packages

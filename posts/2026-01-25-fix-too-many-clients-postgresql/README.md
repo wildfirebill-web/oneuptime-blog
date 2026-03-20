@@ -120,6 +120,7 @@ AND pid != pg_backend_pid();
 
 ```ini
 # postgresql.conf
+
 max_connections = 200  # Default is typically 100
 
 # Also increase superuser_reserved_connections if needed

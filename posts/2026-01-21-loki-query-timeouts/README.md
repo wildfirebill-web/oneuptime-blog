@@ -37,6 +37,7 @@ Error: Query timeout
 
 ```bash
 # Query duration metrics
+
 curl -s http://loki:3100/metrics | grep "loki_request_duration"
 
 # Query frontend queue length
@@ -331,7 +332,7 @@ spec:
           averageUtilization: 70
 ```
 
-### Resource Allocation
+Resource Allocation
 
 ```yaml
 # Kubernetes deployment

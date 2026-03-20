@@ -33,6 +33,7 @@ Check Cilium agent connectivity and NSX segment reachability:
 
 ```bash
 # Check Cilium agent status on all nodes
+
 cilium status --wait
 
 # List Cilium endpoints and verify they have NSX-assigned IPs

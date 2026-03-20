@@ -35,6 +35,7 @@ Before starting, you need:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable sqladmin.googleapis.com
 gcloud services enable managedidentities.googleapis.com
 ```

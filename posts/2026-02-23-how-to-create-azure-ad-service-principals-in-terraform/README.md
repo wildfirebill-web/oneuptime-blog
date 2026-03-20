@@ -16,6 +16,7 @@ This guide covers creating service principals with Terraform, configuring creden
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

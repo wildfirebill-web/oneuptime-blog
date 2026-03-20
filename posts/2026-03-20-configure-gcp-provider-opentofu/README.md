@@ -8,7 +8,7 @@ Description: Learn how to configure the Google Cloud provider in OpenTofu with p
 
 ## Introduction
 
-The Google Cloud provider (hashicorp/google) enables OpenTofu to manage GCP resources. Configuration covers project selection, region/zone defaults, and authentication—which can use service account keys, Workload Identity, or Application Default Credentials.
+The Google Cloud provider (hashicorp/google) enables OpenTofu to manage GCP resources. Configuration covers project selection, region/zone defaults, and authentication-which can use service account keys, Workload Identity, or Application Default Credentials.
 
 ## Minimal Configuration
 
@@ -60,6 +60,7 @@ provider "google" {
 }
 
 # Beta resources require the google-beta provider
+
 provider "google-beta" {
   project = var.project_id
   region  = var.region

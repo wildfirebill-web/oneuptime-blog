@@ -1,4 +1,4 @@
-# How to Set Up Automated Stack Deployment on Git Push with Portainer
+# How to Set Up Automated Stack Deployment on Git Push with Portainer - Deploy
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure automatic stack deployment in Portainer triggered by Git 
 
 ## Introduction
 
-GitOps makes your Git repository the source of truth for infrastructure state. With Portainer's Git integration and webhook support, pushes to specific branches automatically trigger stack deployments—no manual Portainer UI interaction required after the initial setup.
+GitOps makes your Git repository the source of truth for infrastructure state. With Portainer's Git integration and webhook support, pushes to specific branches automatically trigger stack deployments-no manual Portainer UI interaction required after the initial setup.
 
 ## Method 1: Portainer Git Integration with Polling
 
@@ -16,6 +16,7 @@ Portainer's built-in Git polling checks for changes on a schedule:
 
 ```bash
 # In Portainer: Stacks > Add Stack > Repository
+
 # Configure:
 # - Repository URL: https://github.com/yourorg/your-repo
 # - Repository reference: refs/heads/main

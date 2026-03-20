@@ -25,6 +25,7 @@ This guide is a hands-on walkthrough of applying the L3/L4 policy, verifying it 
 
 ```bash
 # Confirm open access before applying policy
+
 kubectl exec tiefighter -- curl -s -XPOST deathstar.default.svc.cluster.local/v1/request-landing
 # Expected: Ship landed
 

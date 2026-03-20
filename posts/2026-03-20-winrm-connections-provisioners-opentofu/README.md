@@ -8,7 +8,7 @@ Description: Learn how to configure WinRM connection blocks in OpenTofu to authe
 
 ## Introduction
 
-Windows instances do not use SSH by default—they use WinRM (Windows Remote Management). OpenTofu supports WinRM connections in `connection` blocks, enabling `file` and `remote-exec` provisioners to run against Windows servers, IIS hosts, and Active Directory domain controllers.
+Windows instances do not use SSH by default-they use WinRM (Windows Remote Management). OpenTofu supports WinRM connections in `connection` blocks, enabling `file` and `remote-exec` provisioners to run against Windows servers, IIS hosts, and Active Directory domain controllers.
 
 ## Enabling WinRM on an EC2 Windows Instance
 

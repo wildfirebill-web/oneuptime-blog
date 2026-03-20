@@ -25,6 +25,7 @@ Azure DevOps supports two URL formats:
 
 ```bash
 # HTTPS format
+
 https://dev.azure.com/{organization}/{project}/_git/{repository}
 
 # SSH format

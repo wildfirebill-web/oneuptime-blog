@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, IPv4, advertised.listeners, NAT, Client, Broker
+Tags: Kafka, IPv4, Advertised.listeners, NAT, Client, Broker
 
 Description: Configure Kafka advertised.listeners to ensure clients receive the correct IPv4 address for connecting, essential for NAT environments and multi-network deployments.
 
@@ -12,7 +12,7 @@ Description: Configure Kafka advertised.listeners to ensure clients receive the 
 
 ## How advertised.listeners Works
 
-```
+```text
 1. Client connects to broker IP (from DNS/config)
 2. Broker responds with metadata including advertised.listeners addresses
 3. Client uses those addresses for all subsequent producer/consumer connections
@@ -35,6 +35,7 @@ With correct advertised.listeners:
 # /etc/kafka/server.properties
 
 # What the broker actually binds to (can use 0.0.0.0)
+
 listeners=PLAINTEXT://0.0.0.0:9092
 
 # What clients are told to connect to (must be reachable by clients!)
@@ -111,4 +112,4 @@ kafka-console-consumer.sh --bootstrap-server 203.0.113.10:9092 --topic test \
 
 ## Conclusion
 
-`advertised.listeners` must contain the IP address or hostname that clients can actually reach. For NAT or cloud environments, this is the public IP, not the internal bind address. Use separate named listeners (INTERNAL/EXTERNAL) to serve different client networks from the same broker. Always test from the client's network perspective—not from the broker itself.
+`advertised.listeners` must contain the IP address or hostname that clients can actually reach. For NAT or cloud environments, this is the public IP, not the internal bind address. Use separate named listeners (INTERNAL/EXTERNAL) to serve different client networks from the same broker. Always test from the client's network perspective-not from the broker itself.

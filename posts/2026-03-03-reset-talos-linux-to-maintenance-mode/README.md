@@ -31,6 +31,7 @@ The most common way to reach maintenance mode is by wiping the STATE partition, 
 
 ```bash
 # Drain and remove from the cluster first
+
 kubectl drain node-name --ignore-daemonsets --delete-emptydir-data
 kubectl delete node node-name
 

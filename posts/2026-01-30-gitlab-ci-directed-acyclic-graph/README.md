@@ -189,6 +189,7 @@ variables:
   DOCKER_REGISTRY: registry.example.com
 
 # Shared libraries must build first
+
 build-shared-libs:
   stage: build
   script:

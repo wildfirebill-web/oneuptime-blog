@@ -41,6 +41,7 @@ This configuration creates a KMS key with the right policy for CloudWatch Logs, 
 
 ```hcl
 # KMS key for log encryption
+
 resource "aws_kms_key" "log_encryption" {
   description             = "KMS key for CloudWatch log encryption"
   deletion_window_in_days = 7

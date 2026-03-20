@@ -36,6 +36,7 @@ First, set up your UDP servers. Here is an example creating instances with a sta
 
 ```bash
 # Create a VM instance running a UDP service
+
 gcloud compute instances create udp-server-1 \
     --zone=us-central1-a \
     --machine-type=e2-medium \

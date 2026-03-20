@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Service, ClusterIP, Dual-Stack, Networking
+Tags: Kubernetes, IPv6, Services, ClusterIP, Dual-Stack, Networking
 
 Description: Configure Kubernetes Services with IPv6 ClusterIPs in dual-stack clusters, understand how ipFamilyPolicy controls address assignment, and create services with both IPv4 and IPv6 cluster addresses.
 
@@ -14,6 +14,7 @@ Kubernetes Services in dual-stack clusters can have both IPv4 and IPv6 ClusterIP
 
 ```yaml
 # dual-stack-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -146,4 +147,4 @@ kubectl exec client -- nslookup web-headless.default.svc.cluster.local
 
 ## Conclusion
 
-Kubernetes Services in dual-stack clusters support IPv6 ClusterIPs through `ipFamilyPolicy: PreferDualStack` or `RequireDualStack`. The `clusterIPs` field shows all assigned ClusterIPs (one per IP family). IPv6 ClusterIPs allow pods to connect to services using IPv6 addresses — useful for testing IPv6 connectivity or for services that must be IPv6-accessible. CoreDNS returns AAAA records for services with IPv6 ClusterIPs. Use `kubectl get svc -o jsonpath='{.spec.clusterIPs}'` to view all ClusterIPs for a service.
+Kubernetes Services in dual-stack clusters support IPv6 ClusterIPs through `ipFamilyPolicy: PreferDualStack` or `RequireDualStack`. The `clusterIPs` field shows all assigned ClusterIPs (one per IP family). IPv6 ClusterIPs allow pods to connect to services using IPv6 addresses - useful for testing IPv6 connectivity or for services that must be IPv6-accessible. CoreDNS returns AAAA records for services with IPv6 ClusterIPs. Use `kubectl get svc -o jsonpath='{.spec.clusterIPs}'` to view all ClusterIPs for a service.

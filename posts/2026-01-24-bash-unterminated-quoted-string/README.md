@@ -22,6 +22,7 @@ Bash requires matching quotes for string delimiters. When you open a quote (sing
 #!/bin/bash
 
 # This causes an unterminated quoted string error
+
 echo "Hello, World!
 
 # Bash keeps reading, looking for the closing "

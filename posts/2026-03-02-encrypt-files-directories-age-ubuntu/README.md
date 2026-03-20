@@ -14,6 +14,7 @@ Description: Learn how to use age, a modern and simple file encryption tool, to 
 
 ```bash
 # Method 1: Install from Ubuntu repositories (Ubuntu 22.04+)
+
 sudo apt update
 sudo apt install age -y
 

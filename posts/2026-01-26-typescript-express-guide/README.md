@@ -19,6 +19,7 @@ mkdir express-typescript-app && cd express-typescript-app
 npm init -y
 
 # Install production dependencies
+
 npm install express cors helmet
 
 # Install development dependencies

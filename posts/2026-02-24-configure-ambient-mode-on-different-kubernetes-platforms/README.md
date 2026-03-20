@@ -41,6 +41,7 @@ Autopilot enforces resource requests on all pods. Make sure your ztunnel and ist
 
 ```yaml
 # ztunnel values
+
 resources:
   requests:
     cpu: 100m

@@ -69,6 +69,7 @@ module "vpc" {
 }
 
 # Use the VPC module's outputs in other resources
+
 resource "aws_instance" "app" {
   ami           = var.ami_id
   instance_type = "t3.medium"

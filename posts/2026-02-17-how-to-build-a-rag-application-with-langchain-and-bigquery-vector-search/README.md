@@ -38,6 +38,7 @@ Install the required packages and configure your project.
 
 ```python
 # Install dependencies
+
 # pip install langchain langchain-google-vertexai langchain-google-community
 # pip install google-cloud-bigquery
 

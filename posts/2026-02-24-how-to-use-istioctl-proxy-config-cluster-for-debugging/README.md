@@ -220,6 +220,7 @@ For proxies with many clusters, filter by various criteria:
 
 ```bash
 # Filter by FQDN
+
 istioctl proxy-config cluster <pod>.<ns> --fqdn "reviews"
 
 # Filter by port

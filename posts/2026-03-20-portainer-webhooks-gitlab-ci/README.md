@@ -1,4 +1,4 @@
-# How to Integrate Portainer Webhooks with GitLab CI
+# How to Integrate Portainer Webhooks with GitLab CI - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,14 +23,14 @@ In your GitLab project:
 1. Go to **Settings > CI/CD > Variables**.
 2. Add the following variables (mark as **Protected** and **Masked** for secrets):
 
-```
+```text
 PORTAINER_WEBHOOK_URL   → Full webhook URL from Portainer (Protected, Masked)
 PORTAINER_WEBHOOK_STAGING → Staging webhook URL
 PORTAINER_WEBHOOK_PROD    → Production webhook URL
 ```
 
 For external registry (if not using GitLab Registry):
-```
+```text
 DOCKER_REGISTRY         → registry.example.com
 DOCKER_REGISTRY_USER    → Registry username
 DOCKER_REGISTRY_PASS    → Registry password (Masked)
@@ -40,6 +40,7 @@ DOCKER_REGISTRY_PASS    → Registry password (Masked)
 
 ```yaml
 # .gitlab-ci.yml
+
 # Basic build + deploy pipeline with Portainer
 
 stages:
@@ -243,7 +244,7 @@ verify-staging:
           exit 0
         fi
 
-        echo "Attempt $i/$MAX_ATTEMPTS: HTTP $STATUS — waiting ${SLEEP_SECONDS}s..."
+        echo "Attempt $i/$MAX_ATTEMPTS: HTTP $STATUS - waiting ${SLEEP_SECONDS}s..."
         sleep $SLEEP_SECONDS
       done
 
@@ -339,7 +340,7 @@ notify-failure:
       curl -X POST "${SLACK_WEBHOOK_URL}" \
         -H "Content-Type: application/json" \
         -d "{
-          \"text\": \"❌ Deployment FAILED for ${CI_PROJECT_NAME} — check pipeline ${CI_PIPELINE_URL}\",
+          \"text\": \"❌ Deployment FAILED for ${CI_PROJECT_NAME} - check pipeline ${CI_PIPELINE_URL}\",
           \"username\": \"GitLab CI\"
         }"
   when: on_failure

@@ -12,7 +12,7 @@ A VXLAN overlay network creates a virtual LAN that spans two or more physical ho
 
 ## Network Plan
 
-```
+```text
 Underlay: Host A = 10.0.0.1, Host B = 10.0.0.2
 VXLAN VNI: 1000
 Overlay: Host A bridge = 10.200.0.1/24, Host B bridge = 10.200.0.2/24
@@ -30,6 +30,7 @@ VNI=1000
 OVERLAY_IP=10.200.0.1/24
 
 # Create VXLAN interface
+
 ip link add vxlan${VNI} type vxlan \
     id ${VNI} \
     dstport 4789 \
@@ -99,7 +100,7 @@ iptables -A INPUT -p udp --dport 4789 -j ACCEPT
 # From Host A, ping Host B's overlay IP
 ping -c 3 10.200.0.2
 
-# Traceroute — should show direct VXLAN path
+# Traceroute - should show direct VXLAN path
 traceroute 10.200.0.2
 
 # Check MAC address learning via VXLAN

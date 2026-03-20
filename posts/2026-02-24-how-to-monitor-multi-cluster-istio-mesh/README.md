@@ -78,6 +78,7 @@ Set up a central Prometheus that federates from each cluster's Prometheus. You n
 
 ```yaml
 # Central federation Prometheus configuration
+
 global:
   scrape_interval: 30s
   evaluation_interval: 30s

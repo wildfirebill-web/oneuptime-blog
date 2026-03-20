@@ -10,6 +10,7 @@ Description: Learn how to configure HAProxy backend sections with IPv6 server ad
 
 ```haproxy
 # Backend with IPv6 server addresses
+
 backend app_servers
     balance roundrobin
 

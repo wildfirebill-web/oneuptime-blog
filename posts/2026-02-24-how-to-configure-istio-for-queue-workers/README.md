@@ -268,6 +268,7 @@ Track your worker's broker connections:
 
 ```promql
 # TCP bytes sent/received to broker
+
 istio_tcp_sent_bytes_total{source_workload="order-processor", destination_service="rabbitmq.messaging.svc.cluster.local"}
 istio_tcp_received_bytes_total{source_workload="order-processor", destination_service="rabbitmq.messaging.svc.cluster.local"}
 

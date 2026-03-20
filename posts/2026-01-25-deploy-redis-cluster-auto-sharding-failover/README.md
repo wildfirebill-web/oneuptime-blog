@@ -55,6 +55,7 @@ Each node needs a specific configuration file. Create this template for each nod
 
 ```bash
 # redis-7001.conf
+
 # Configuration for first cluster node
 
 port 7001

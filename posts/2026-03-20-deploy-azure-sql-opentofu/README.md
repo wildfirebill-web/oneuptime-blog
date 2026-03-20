@@ -1,10 +1,10 @@
-# How to Deploy Azure SQL Database with OpenTofu
+# How to Deploy Azure SQL Database with OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Azure SQL, Azure, Database, Infrastructure as Code, DevOps
 
-Description: Learn how to deploy Azure SQL Database using OpenTofu — including logical server, database, firewall rules, private endpoints, and Elastic Pool configuration.
+Description: Learn how to deploy Azure SQL Database using OpenTofu - including logical server, database, firewall rules, private endpoints, and Elastic Pool configuration.
 
 ## Introduction
 
@@ -114,6 +114,7 @@ resource "azurerm_private_dns_zone_virtual_network_link" "sql" {
 
 ```hcl
 # Allow Azure services (for ADF, Functions, etc.)
+
 resource "azurerm_mssql_firewall_rule" "azure_services" {
   name             = "AllowAzureServices"
   server_id        = azurerm_mssql_server.main.id
@@ -184,4 +185,4 @@ output "connection_string" {
 
 ## Conclusion
 
-Azure SQL Database deployment with OpenTofu requires the logical server (`azurerm_mssql_server`), the database (`azurerm_mssql_database`), and access control via either firewall rules or private endpoints. Use private endpoints for production deployments — disable public network access and route connections through the VNet. Enable Azure AD administrator for modern authentication. Use Elastic Pools for multi-tenant SaaS applications where multiple databases share a pool of compute resources.
+Azure SQL Database deployment with OpenTofu requires the logical server (`azurerm_mssql_server`), the database (`azurerm_mssql_database`), and access control via either firewall rules or private endpoints. Use private endpoints for production deployments - disable public network access and route connections through the VNet. Enable Azure AD administrator for modern authentication. Use Elastic Pools for multi-tenant SaaS applications where multiple databases share a pool of compute resources.

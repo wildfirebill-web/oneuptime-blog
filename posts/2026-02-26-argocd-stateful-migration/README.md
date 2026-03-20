@@ -40,6 +40,7 @@ First, create the new PVCs alongside the existing ones. Your Git repository shou
 
 ```yaml
 # storage/new-postgres-pvc.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

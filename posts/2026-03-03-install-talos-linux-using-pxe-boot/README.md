@@ -36,6 +36,7 @@ You need the following infrastructure:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 ```
 

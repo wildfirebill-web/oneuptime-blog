@@ -20,6 +20,7 @@ Install the BigQuery adapter:
 
 ```bash
 # Install dbt with the BigQuery adapter
+
 # This installs dbt-core and the bigquery-specific plugin
 pip install dbt-bigquery
 ```

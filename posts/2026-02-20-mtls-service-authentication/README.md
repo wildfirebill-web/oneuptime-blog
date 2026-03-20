@@ -40,6 +40,7 @@ For internal services, you create your own Certificate Authority (CA) to issue c
 ```bash
 #!/bin/bash
 # setup_ca.sh
+
 # Create a self-signed Certificate Authority for internal mTLS
 
 set -e

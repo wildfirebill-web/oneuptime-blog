@@ -29,6 +29,7 @@ Or via CLI:
 
 ```bash
 # Enable billing alerts (must be run in us-east-1)
+
 aws ce update-cost-allocation-tags-status \
   --region us-east-1 \
   --cost-allocation-tags-status Key=aws:createdBy,Status=Active

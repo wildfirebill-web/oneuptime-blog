@@ -134,6 +134,7 @@ ArgoCD uses GitHub Discussions for longer-form conversations that do not fit int
 
 ```bash
 # Browse discussions
+
 gh browse --repo argoproj/argo-cd -- discussions
 
 # Common discussion categories:

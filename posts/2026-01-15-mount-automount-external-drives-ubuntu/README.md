@@ -23,6 +23,7 @@ A mount point is a directory where a filesystem becomes accessible. Common mount
 
 ```bash
 # Show all block devices with details
+
 lsblk
 
 # Show with filesystem information

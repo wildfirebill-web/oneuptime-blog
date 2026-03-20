@@ -18,6 +18,7 @@ Before doing anything else, run the analyzer. It catches a surprising number of 
 
 ```bash
 # Analyze everything in the mesh
+
 istioctl analyze --all-namespaces
 
 # Analyze a specific namespace

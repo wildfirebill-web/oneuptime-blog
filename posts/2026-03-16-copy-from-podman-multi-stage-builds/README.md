@@ -38,6 +38,7 @@ EOF
 
 cat > Containerfile <<'EOF'
 # Stage 1: Build the application
+
 FROM golang:1.22-alpine AS builder
 WORKDIR /src
 COPY go.mod main.go ./

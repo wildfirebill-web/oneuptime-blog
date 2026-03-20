@@ -24,6 +24,7 @@ Make sure you have:
 
 ```bash
 # Install required collection and Python packages
+
 ansible-galaxy collection install community.vmware
 pip install pyvmomi requests
 ```

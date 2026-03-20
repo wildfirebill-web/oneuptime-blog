@@ -298,6 +298,7 @@ data:
 
 ```yaml
 # argocd-cm ConfigMap
+
 data:
   resource.customizations.ignoreDifferences.all: |
     managedFieldsManagers:

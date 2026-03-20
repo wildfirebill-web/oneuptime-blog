@@ -27,6 +27,7 @@ This guide covers the diagnostic process for identifying server-side bottlenecks
 
 ```bash
 # Check iperf3 server is running correctly
+
 kubectl exec iperf-server -- ps aux | grep iperf3
 kubectl exec iperf-server -- iperf3 --version
 

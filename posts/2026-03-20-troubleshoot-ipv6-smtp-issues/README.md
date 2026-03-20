@@ -24,11 +24,12 @@ IPv6 SMTP issues often present differently from IPv4 problems because of unique 
 
 ```bash
 # Check IPv6 addresses on the server
+
 ip -6 addr show scope global
 
 # Check for a default IPv6 route
 ip -6 route show default
-# If empty, there is no IPv6 default gateway — fix this first
+# If empty, there is no IPv6 default gateway - fix this first
 
 # Test basic internet connectivity over IPv6
 ping6 -c 3 2001:4860:4860::8888

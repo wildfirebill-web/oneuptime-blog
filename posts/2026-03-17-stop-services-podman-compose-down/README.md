@@ -18,6 +18,7 @@ The `podman-compose down` command stops all running containers defined in your c
 
 ```bash
 # Stop and remove containers and networks
+
 podman-compose down
 ```
 

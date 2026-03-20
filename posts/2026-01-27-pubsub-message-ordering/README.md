@@ -180,6 +180,7 @@ The key insight: **Choose ordering keys that maximize parallelism while maintain
 
 ```python
 # Bad: Single ordering key = no parallelism
+
 # All messages processed sequentially
 ordering_key = "all-orders"
 

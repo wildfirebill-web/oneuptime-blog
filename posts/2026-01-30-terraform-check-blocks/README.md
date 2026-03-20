@@ -379,6 +379,7 @@ Name your checks clearly to make warning messages actionable.
 
 ```hcl
 # Good
+
 check "database_backup_encryption_enabled" { ... }
 
 # Bad

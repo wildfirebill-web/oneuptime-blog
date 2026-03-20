@@ -27,6 +27,7 @@ The changes should be applied incrementally, measuring after each one, because i
 
 ```bash
 # Set NIC queues to match or exceed process count
+
 ethtool -L eth0 combined 32
 
 # Optimize RSS hash for maximum flow distribution

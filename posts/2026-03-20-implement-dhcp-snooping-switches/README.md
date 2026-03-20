@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, DHCP Snooping, Network Security, Cisco, Switching, sysadmin
+Tags: DHCP, DHCP Snooping, Network Security, Cisco, Switching, Sysadmin
 
 Description: DHCP snooping is a switch-level security feature that drops DHCP server responses on untrusted ports, preventing rogue DHCP servers from distributing malicious network configuration to clients.
 
@@ -15,7 +15,7 @@ The switch builds a DHCP snooping binding table: `{MAC, IP, VLAN, interface}` fo
 
 ## Cisco IOS Configuration
 
-```
+```text
 ! Enable DHCP snooping globally
 ip dhcp snooping
 
@@ -38,7 +38,7 @@ show ip dhcp snooping binding
 
 ## Cisco IOS-XE Additional Options
 
-```
+```text
 ! Insert Option 82 on snooped packets
 ip dhcp snooping information option
 
@@ -55,6 +55,7 @@ On a Linux bridge/switch:
 
 ```bash
 # Drop DHCP offers/acks from non-server ports (untrusted)
+
 # eth0 = server port (trusted), eth1/eth2/eth3 = client ports (untrusted)
 
 # Block DHCP server responses from client ports
@@ -80,8 +81,8 @@ show ip dhcp snooping binding
 
 DHCP snooping bindings are used by Dynamic ARP Inspection (DAI) to validate ARP packets:
 
-```
-! Enable DAI — validates ARP against DHCP snooping table
+```text
+! Enable DAI - validates ARP against DHCP snooping table
 ip arp inspection vlan 10,20,30
 ```
 

@@ -24,6 +24,7 @@ Review the upgrade notes for the target version. Istio publishes release notes a
 
 ```bash
 # Download the new version
+
 curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.24.1 sh -
 export PATH=$HOME/istio-1.24.1/bin:$PATH
 

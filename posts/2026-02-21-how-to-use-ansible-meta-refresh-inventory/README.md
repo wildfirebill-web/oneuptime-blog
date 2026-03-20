@@ -16,6 +16,7 @@ The most common scenario is a two-phase playbook: the first phase creates infras
 
 ```yaml
 # The problem: new hosts are not visible
+
 ---
 - name: Phase 1 - Create infrastructure
   hosts: localhost

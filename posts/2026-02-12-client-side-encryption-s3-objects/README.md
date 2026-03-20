@@ -39,6 +39,7 @@ from s3_encryption_sdk.materials_providers.kms import KMSMasterKeyProvider
 import boto3
 
 # Create a KMS master key provider
+
 kms_key_id = 'arn:aws:kms:us-east-1:123456789012:key/your-key-id'
 kms_provider = KMSMasterKeyProvider(key_id=kms_key_id)
 

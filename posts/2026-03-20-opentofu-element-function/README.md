@@ -1,4 +1,4 @@
-# How to Use the element Function in OpenTofu
+# How to Use the element Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,8 +16,8 @@ The `element` function in OpenTofu retrieves an element from a list by index, wi
 element(list, index)
 ```
 
-- **list** — the list to access
-- **index** — the index (0-based); wraps using modulo if >= length
+- **list** - the list to access
+- **index** - the index (0-based); wraps using modulo if >= length
 - Returns the element at that position
 
 ## Basic Examples
@@ -113,7 +113,7 @@ resource "aws_instance" "nodes" {
 ## Step-by-Step Usage
 
 1. Identify the list and the index.
-2. Use `element(list, index)` — safe even for out-of-bounds indices due to wrapping.
+2. Use `element(list, index)` - safe even for out-of-bounds indices due to wrapping.
 3. Test in `tofu console`:
 
 ```bash

@@ -39,6 +39,7 @@ Before changing anything, check the current mTLS configuration across your mesh.
 
 ```bash
 # Check existing PeerAuthentication policies
+
 kubectl get peerauthentication --all-namespaces
 
 # Check the mesh-wide default

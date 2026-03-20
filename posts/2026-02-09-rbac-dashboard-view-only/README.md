@@ -36,6 +36,7 @@ Build a ClusterRole that grants read permissions across all namespaces:
 
 ```yaml
 # dashboard-viewer-clusterrole.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

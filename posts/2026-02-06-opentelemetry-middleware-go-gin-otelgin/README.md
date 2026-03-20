@@ -20,6 +20,7 @@ First, you need to install the necessary packages for your Go project.
 
 ```bash
 # Install Gin web framework
+
 go get -u github.com/gin-gonic/gin
 
 # Install OpenTelemetry SDK and API

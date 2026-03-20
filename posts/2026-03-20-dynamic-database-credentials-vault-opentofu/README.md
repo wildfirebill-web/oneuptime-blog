@@ -14,7 +14,7 @@ Static database passwords stored in configuration files or environment variables
 
 ## Architecture
 
-```
+```hcl
 Application/OpenTofu → Vault (Database Secrets Engine) → Database
                                                               ↓
                                                    Temporary user created
@@ -27,6 +27,7 @@ Application/OpenTofu → Vault (Database Secrets Engine) → Database
 
 ```bash
 # Enable the database secrets engine
+
 vault secrets enable database
 
 # Configure PostgreSQL connection
@@ -46,7 +47,7 @@ vault write -force database/rotate-root/postgresql
 ## Step 2: Create Database Roles in Vault
 
 ```bash
-# App role — read/write access
+# App role - read/write access
 vault write database/roles/app-role \
     db_name=postgresql \
     creation_statements="CREATE ROLE \"{{name}}\" WITH LOGIN PASSWORD '{{password}}' VALID UNTIL '{{expiration}}';
@@ -208,7 +209,7 @@ vault lease renew database/creds/app-role/xyz789
 
 1. **Use Vault Agent** in applications to handle credential renewal automatically
 2. **Set short TTLs** (1–4 hours) and let Vault handle renewal
-3. **Never log credentials** — Vault audit logs only show lease IDs, not secrets
+3. **Never log credentials** - Vault audit logs only show lease IDs, not secrets
 4. **Use separate roles** for each application (principle of least privilege)
 5. **Rotate root credentials** immediately after configuring the database connection
 
@@ -220,4 +221,4 @@ Vault's database secrets engine eliminates static database passwords from your i
 
 ---
 
-*Monitor your database and application health with [OneUptime](https://oneuptime.com) — full-stack observability.*
+*Monitor your database and application health with [OneUptime](https://oneuptime.com) - full-stack observability.*

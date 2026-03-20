@@ -81,6 +81,7 @@ The common role handles tasks that every OS needs, adapting automatically:
 
 ```yaml
 # roles/common/tasks/main.yml
+
 - name: Load OS-specific variables
   ansible.builtin.include_vars: "{{ item }}"
   with_first_found:

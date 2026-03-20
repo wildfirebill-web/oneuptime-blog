@@ -36,6 +36,7 @@ Deploy Kafka Connect with Debezium connectors.
 
 ```yaml
 # docker-compose.yml
+
 version: '3'
 services:
   zookeeper:

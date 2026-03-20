@@ -18,6 +18,7 @@ An AML workspace requires several supporting resources. Let us create them all.
 
 ```hcl
 # main.tf
+
 # Azure Machine Learning workspace with all required dependencies
 
 terraform {

@@ -18,6 +18,7 @@ Macvlan networks allow containers to have their own MAC and IP addresses on the 
 
 ```bash
 # Create a macvlan network attached to the host's physical interface
+
 sudo podman network create \
   --driver macvlan \
   --opt parent=eth0 \

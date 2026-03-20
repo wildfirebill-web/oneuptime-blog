@@ -46,6 +46,7 @@ The simplest example - run a shell command on a single instance:
 
 ```bash
 # Run a command on a single instance
+
 aws ssm send-command \
   --instance-ids "i-0abc123def456" \
   --document-name "AWS-RunShellScript" \

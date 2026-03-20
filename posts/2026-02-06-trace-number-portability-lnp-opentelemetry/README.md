@@ -24,6 +24,7 @@ A number port typically follows these steps:
 
 ```python
 # lnp_tracing.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace import StatusCode, SpanKind
 import time

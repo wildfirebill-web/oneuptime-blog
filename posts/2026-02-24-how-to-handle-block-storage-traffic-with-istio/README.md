@@ -248,6 +248,7 @@ Even though block storage traffic bypasses the mesh, you should still monitor st
 
 ```bash
 # Check iSCSI sessions from a node
+
 kubectl debug node/worker-1 -it --image=busybox -- iscsiadm -m session
 
 # Check NVMe connections

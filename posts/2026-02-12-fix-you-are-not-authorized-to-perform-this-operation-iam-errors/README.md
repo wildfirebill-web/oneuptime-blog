@@ -30,6 +30,7 @@ Before you can fix permissions, you need to know exactly which identity is makin
 
 ```bash
 # This tells you your current identity
+
 aws sts get-caller-identity
 ```
 

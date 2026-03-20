@@ -32,6 +32,7 @@ The CIS benchmark is one of the most widely adopted compliance frameworks. Here 
 
 ```python
 # cis-cloudtrail.sentinel
+
 # CIS 3.1 - Ensure CloudTrail is enabled in all regions
 
 import "tfplan/v2" as tfplan

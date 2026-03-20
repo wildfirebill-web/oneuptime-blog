@@ -14,6 +14,7 @@ FreeIPA is a comprehensive identity management solution integrating LDAP, Kerber
 
 ```bash
 # Verify IPv6 is functional
+
 ip -6 addr show
 ping6 -c 3 2001:4860:4860::8888
 
@@ -167,4 +168,4 @@ sudo firewall-cmd --reload
 sudo firewall-cmd --list-all
 ```
 
-FreeIPA's integrated IPv6 support — covering LDAP, Kerberos, and DNS — makes it an excellent choice for identity management in modern dual-stack and IPv6-only enterprise environments.
+FreeIPA's integrated IPv6 support - covering LDAP, Kerberos, and DNS - makes it an excellent choice for identity management in modern dual-stack and IPv6-only enterprise environments.

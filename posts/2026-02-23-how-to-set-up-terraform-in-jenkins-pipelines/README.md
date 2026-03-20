@@ -26,6 +26,7 @@ If you manage your own agents, install Terraform:
 
 ```bash
 # On the Jenkins agent
+
 TERRAFORM_VERSION="1.7.5"
 wget "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
 unzip "terraform_${TERRAFORM_VERSION}_linux_amd64.zip"

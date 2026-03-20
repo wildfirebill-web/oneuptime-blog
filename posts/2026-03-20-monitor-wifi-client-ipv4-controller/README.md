@@ -12,7 +12,7 @@ Tracking which IPv4 address is assigned to each WiFi client helps troubleshoot c
 
 ## UniFi Controller: Client Monitoring
 
-```
+```text
 Clients → Active Clients
   Filter: Wireless only
   Columns: MAC Address, IP Address, SSID, AP, Signal, Channel, Last Seen
@@ -21,6 +21,7 @@ Clients → Active Clients
 From CLI (UniFi OS shell):
 ```bash
 # List all connected wireless clients and their IPs
+
 mca-dump | python3 -m json.tool | grep -E '"ip"|"mac"|"essid"'
 ```
 

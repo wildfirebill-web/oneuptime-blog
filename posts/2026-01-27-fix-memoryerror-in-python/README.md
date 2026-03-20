@@ -24,6 +24,7 @@ Python raises MemoryError when it cannot allocate more memory for an operation. 
 
 ```python
 # This will cause MemoryError on most systems
+
 # Do not run this!
 huge_list = [0] * (10 ** 10)  # 10 billion integers
 ```

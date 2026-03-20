@@ -60,6 +60,7 @@ When forced tunneling is enabled, Azure Firewall needs a separate management sub
 
 ```bash
 # Create a resource group
+
 az group create --name rg-forced-tunnel-demo --location eastus
 
 # Create the hub VNet with AzureFirewallSubnet

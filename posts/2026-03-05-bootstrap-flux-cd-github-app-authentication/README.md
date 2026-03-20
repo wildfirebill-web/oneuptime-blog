@@ -54,6 +54,7 @@ Verify the key file is valid:
 
 ```bash
 # Check the private key format
+
 openssl rsa -in your-app-name.2026-03-05.private-key.pem -check -noout
 ```
 

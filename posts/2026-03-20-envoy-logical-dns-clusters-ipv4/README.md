@@ -23,6 +23,7 @@ Envoy supports several cluster discovery types. `LOGICAL_DNS` resolves the hostn
 
 ```yaml
 # envoy-config.yaml
+
 static_resources:
   clusters:
     - name: external_api
@@ -38,7 +39,7 @@ static_resources:
               - endpoint:
                   address:
                     socket_address:
-                      # Hostname — resolved fresh for each new connection
+                      # Hostname - resolved fresh for each new connection
                       address: api.external-service.com
                       port_value: 443
       # TLS configuration for HTTPS to the external service

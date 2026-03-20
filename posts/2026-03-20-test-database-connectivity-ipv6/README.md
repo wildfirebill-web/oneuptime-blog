@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Database, Testing, Connectivity, Network
+Tags: IPv6, Database, Testing, Connectivity, Networks
 
 Description: Learn how to systematically test database connectivity over IPv6 for PostgreSQL, MySQL, Redis, MongoDB, and other databases using command-line tools and scripts.
 
@@ -10,6 +10,7 @@ Description: Learn how to systematically test database connectivity over IPv6 fo
 
 ```bash
 # Test ICMP reachability
+
 ping6 -c 4 2001:db8::10
 
 # Test TCP port reachability with netcat

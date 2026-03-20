@@ -20,6 +20,7 @@ Learn how to use terraform-docs to generate and maintain consistent documentatio
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

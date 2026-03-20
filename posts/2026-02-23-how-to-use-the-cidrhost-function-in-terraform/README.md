@@ -16,6 +16,7 @@ The `cidrhost` function calculates a full host IP address within a given network
 
 ```hcl
 # Given the network 10.0.0.0/16, host number 5 yields 10.0.0.5
+
 output "host_ip" {
   value = cidrhost("10.0.0.0/16", 5)
   # Result: "10.0.0.5"

@@ -18,6 +18,7 @@ First, create the Artifact Registry repositories. I recommend mirroring your ECR
 
 ```hcl
 # artifact-registry.tf
+
 # Create Artifact Registry repositories matching ECR structure
 
 resource "google_artifact_registry_repository" "app_images" {

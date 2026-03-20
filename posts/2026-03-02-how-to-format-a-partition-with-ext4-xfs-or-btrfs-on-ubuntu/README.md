@@ -33,6 +33,7 @@ After creating partitions, you need to create a filesystem on them before they c
 
 ```bash
 # Basic ext4 format
+
 sudo mkfs.ext4 /dev/sdb1
 
 # With a volume label (makes identifying the filesystem easier)

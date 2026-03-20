@@ -49,6 +49,7 @@ First, enable the backup policy type in your organization:
 
 ```bash
 # Enable backup policies at the organization level
+
 aws organizations enable-policy-type \
   --root-id r-xxxx \
   --policy-type BACKUP_POLICY

@@ -18,6 +18,7 @@ You need Python 3.8 or later, pip, and the CDK CLI.
 
 ```bash
 # Verify Python is installed
+
 python3 --version
 
 # Verify pip is available

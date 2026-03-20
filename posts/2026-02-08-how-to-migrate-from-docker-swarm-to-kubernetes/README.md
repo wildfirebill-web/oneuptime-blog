@@ -33,6 +33,7 @@ Here is a typical Docker Swarm stack file we will migrate:
 
 ```yaml
 # docker-stack.yml (Docker Swarm)
+
 version: "3.8"
 
 services:

@@ -41,6 +41,7 @@ manifests/
 
 ```yaml
 # .github/workflows/publish-manifests.yml
+
 name: Publish Manifests as OCI Artifact
 
 on:

@@ -169,6 +169,7 @@ Runtime logs show telemetry data flowing through pipelines. Understanding these 
 
 ```yaml
 # Configuration with debug logging enabled
+
 receivers:
   otlp:
     protocols:

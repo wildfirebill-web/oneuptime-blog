@@ -198,6 +198,7 @@ When a health check fails, Flux marks the Kustomization as not ready and reports
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization my-app
 
 # Check the Deployment status

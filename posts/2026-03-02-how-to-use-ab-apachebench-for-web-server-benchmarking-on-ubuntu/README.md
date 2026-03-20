@@ -16,6 +16,7 @@ ab is not a sophisticated load testing framework - it doesn't simulate realistic
 
 ```bash
 # Install apache2-utils (includes ab)
+
 sudo apt install apache2-utils
 
 # Verify

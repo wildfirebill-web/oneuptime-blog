@@ -26,6 +26,7 @@ Everything that happens inside a namespace is isolated from other namespaces and
 
 ```bash
 # Create a new network namespace
+
 sudo ip netns add testns
 
 # List all namespaces

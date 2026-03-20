@@ -42,6 +42,7 @@ graph TD
 
 ```bash
 # Create a worktree for an existing branch
+
 git worktree add ../project-hotfix hotfix/login-bug
 
 # Create a worktree with a new branch

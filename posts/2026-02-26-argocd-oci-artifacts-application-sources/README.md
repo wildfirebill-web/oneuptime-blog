@@ -41,6 +41,7 @@ To use an OCI-hosted Helm chart as an ArgoCD application source, use the `chart`
 
 ```yaml
 # oci-helm-app.yaml - ArgoCD Application using OCI Helm chart
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

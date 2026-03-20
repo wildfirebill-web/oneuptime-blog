@@ -31,6 +31,7 @@ The General Data Protection Regulation (GDPR) requires organizations processing 
 
 ```bash
 # Label pods that process personal data
+
 kubectl label pods -l app=user-service gdpr-scope=true -n app
 kubectl label pods -l app=customer-api gdpr-scope=true -n app
 kubectl label pods -l app=analytics gdpr-scope=personal-data -n app
@@ -311,4 +312,4 @@ echo "GDPR controls documentation generated: gdpr-controls.md"
 
 ## Conclusion
 
-NeuVector supports GDPR compliance by providing the technical safeguards required for protecting personal data in containerized environments. While GDPR compliance also requires organizational measures, policies, and processes, the technical controls NeuVector provides — DLP, access control, vulnerability management, audit logging, and runtime security — form the foundation of a defensible GDPR security program. Document your NeuVector configurations as part of your Records of Processing Activities (RoPA) and Data Protection Impact Assessments (DPIAs).
+NeuVector supports GDPR compliance by providing the technical safeguards required for protecting personal data in containerized environments. While GDPR compliance also requires organizational measures, policies, and processes, the technical controls NeuVector provides - DLP, access control, vulnerability management, audit logging, and runtime security - form the foundation of a defensible GDPR security program. Document your NeuVector configurations as part of your Records of Processing Activities (RoPA) and Data Protection Impact Assessments (DPIAs).

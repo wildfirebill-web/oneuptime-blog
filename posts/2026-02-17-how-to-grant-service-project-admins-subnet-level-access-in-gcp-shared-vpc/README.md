@@ -28,6 +28,7 @@ The cleanest approach is to grant `roles/compute.networkUser` at the individual 
 
 ```bash
 # Grant the web team access to only the web subnet
+
 gcloud compute networks subnets add-iam-policy-binding web-subnet \
   --project=host-project \
   --region=us-central1 \

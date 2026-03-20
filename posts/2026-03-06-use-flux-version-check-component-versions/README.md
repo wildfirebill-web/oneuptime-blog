@@ -26,6 +26,7 @@ The simplest way to check versions:
 
 ```bash
 # Check CLI and all controller versions
+
 flux version
 ```
 

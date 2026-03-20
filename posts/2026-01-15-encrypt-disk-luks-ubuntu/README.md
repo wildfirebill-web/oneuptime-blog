@@ -56,6 +56,7 @@ Before encrypting your partitions, careful planning is essential.
 
 ```bash
 # Check your Ubuntu version
+
 lsb_release -a
 
 # Verify kernel supports dm-crypt

@@ -30,6 +30,7 @@ Before configuring retries, understand the types of failures:
 
 ```yaml
 # basic-retry.yaml - Simple retry policy
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

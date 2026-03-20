@@ -14,6 +14,7 @@ SonarQube is the leading platform for continuous inspection of code quality. It 
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     helm = {
@@ -187,8 +188,8 @@ resource "kubernetes_daemon_set_v1" "sysctl" {
 
 ## Best Practices
 
-- Use an external PostgreSQL instance rather than the bundled one for production — it's easier to back up, scale, and upgrade independently.
-- Set `vm.max_map_count=524288` on all nodes — SonarQube will fail to start without this due to Elasticsearch requirements.
-- Configure authentication with LDAP or SAML for production deployments — avoid sharing the admin account.
-- Set memory limits appropriate for your codebase size — large projects require significantly more JVM heap.
+- Use an external PostgreSQL instance rather than the bundled one for production - it's easier to back up, scale, and upgrade independently.
+- Set `vm.max_map_count=524288` on all nodes - SonarQube will fail to start without this due to Elasticsearch requirements.
+- Configure authentication with LDAP or SAML for production deployments - avoid sharing the admin account.
+- Set memory limits appropriate for your codebase size - large projects require significantly more JVM heap.
 - Enable SonarQube's webhook integration to fail pull requests that violate quality gates.

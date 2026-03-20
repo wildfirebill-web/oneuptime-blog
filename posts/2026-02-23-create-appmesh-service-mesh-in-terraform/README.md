@@ -44,6 +44,7 @@ The mesh is the top-level resource. All other App Mesh resources exist within a 
 
 ```hcl
 # Create the service mesh
+
 resource "aws_appmesh_mesh" "main" {
   name = "production-mesh"
 

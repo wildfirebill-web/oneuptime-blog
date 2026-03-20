@@ -35,6 +35,7 @@ These are the intended customization points of the role. They have the lowest pr
 
 ```yaml
 # roles/webserver/defaults/main.yml
+
 # These values are defaults. Users of this role should override these.
 
 webserver_port: 80

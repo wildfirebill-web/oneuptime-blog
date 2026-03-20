@@ -38,6 +38,7 @@ Create a simple Gateway for HTTP traffic:
 
 ```yaml
 # basic-gateway.yaml
+
 # Istio Gateway for basic HTTP traffic
 apiVersion: networking.istio.io/v1
 kind: Gateway

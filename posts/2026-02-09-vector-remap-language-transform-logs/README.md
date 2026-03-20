@@ -484,6 +484,7 @@ Test VRL code with the Vector CLI:
 
 ```bash
 # Create test input
+
 cat > test-log.json << EOF
 {
   "message": "{\"level\":\"error\",\"service\":\"api\",\"duration_ms\":1500}",

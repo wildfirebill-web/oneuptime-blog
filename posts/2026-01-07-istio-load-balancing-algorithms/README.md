@@ -707,6 +707,7 @@ Here is a complete example showing a production-ready configuration with multipl
 
 ```yaml
 # API Gateway - uses LEAST_CONN because request durations vary significantly
+
 # based on the downstream services being called
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule

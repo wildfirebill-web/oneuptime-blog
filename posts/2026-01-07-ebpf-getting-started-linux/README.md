@@ -128,6 +128,7 @@ The following commands install the necessary development tools and libraries for
 
 ```bash
 # Update package lists to get the latest versions
+
 sudo apt update
 
 # Install essential build tools and headers
@@ -1004,7 +1005,7 @@ struct {
 // Each CPU has its own copy - no contention
 ```
 
-## Resources for Further Learning
+Resources for Further Learning
 
 - **Official Documentation**: [kernel.org eBPF docs](https://docs.kernel.org/bpf/)
 - **libbpf Repository**: [github.com/libbpf/libbpf](https://github.com/libbpf/libbpf)

@@ -26,6 +26,7 @@ graph TD
 
 ```bash
 # Install Amanda server package
+
 sudo dnf install amanda-server amanda-client
 
 # The amanda user is created automatically

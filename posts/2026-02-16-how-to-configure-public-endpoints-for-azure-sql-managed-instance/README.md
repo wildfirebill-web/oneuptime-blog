@@ -37,6 +37,7 @@ The change takes a few minutes to apply. The instance does not restart, but netw
 
 ```bash
 # Enable the public endpoint on an existing Managed Instance
+
 # The --public-data-endpoint-enabled flag controls this setting
 az sql mi update \
     --resource-group myResourceGroup \

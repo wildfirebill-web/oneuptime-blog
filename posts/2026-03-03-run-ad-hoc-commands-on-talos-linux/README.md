@@ -20,6 +20,7 @@ Talos Linux exposes many common operations directly through talosctl. These cove
 
 ```bash
 # List running processes (similar to ps aux)
+
 talosctl processes --nodes 192.168.1.10
 
 # Get system stats (similar to top)

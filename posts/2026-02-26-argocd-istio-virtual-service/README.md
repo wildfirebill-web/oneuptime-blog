@@ -34,6 +34,7 @@ First, decide whether to include ArgoCD in the Istio mesh. If you want mTLS and 
 
 ```bash
 # Enable Istio sidecar injection for ArgoCD namespace
+
 kubectl label namespace argocd istio-injection=enabled
 
 # Restart ArgoCD pods to get sidecars injected

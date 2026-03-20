@@ -32,6 +32,7 @@ You'll designate one account as the management (payer) account. This should be a
 
 ```bash
 # From the management account, create the organization
+
 aws organizations create-organization --feature-set ALL
 
 # Verify the organization was created

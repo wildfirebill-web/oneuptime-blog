@@ -18,6 +18,7 @@ Here is a basic example that runs an Alpine container, prints a message, and the
 
 ```bash
 # Run a container that removes itself after printing "hello"
+
 docker run --rm alpine echo "hello from a temporary container"
 ```
 

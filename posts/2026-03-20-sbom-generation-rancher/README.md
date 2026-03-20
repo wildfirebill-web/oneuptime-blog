@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, sbom, security, compliance, kubernetes
+Tags: Rancher, SBOM, Security, Compliance, Kubernetes
 
 Description: Guide to automating SBOM (Software Bill of Materials) generation for container images in Rancher.
 
@@ -31,6 +31,7 @@ How to Set Up SBOM Generation in Rancher addresses these challenges by adding de
 
 ```bash
 # Run a basic security audit
+
 kubectl get pods --all-namespaces -o json | jq -r '
   .items[] | 
   select(

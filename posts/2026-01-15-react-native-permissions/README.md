@@ -47,6 +47,7 @@ The `react-native-permissions` library provides a unified API for handling permi
 
 ```bash
 # Using npm
+
 npm install react-native-permissions
 
 # Using yarn

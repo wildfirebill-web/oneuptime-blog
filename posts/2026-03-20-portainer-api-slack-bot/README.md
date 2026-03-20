@@ -32,6 +32,7 @@ ChatOps brings deployment commands into team chat, providing visibility and conv
 
 ```bash
 # Initialize project
+
 mkdir portainer-slack-bot && cd portainer-slack-bot
 npm init -y
 npm install @slack/bolt axios dotenv
@@ -241,7 +242,7 @@ docker run -d \
 
 ## Slack Command Examples
 
-```
+```text
 # List running containers in staging
 /containers staging
 

@@ -16,6 +16,7 @@ The `recursive` parameter tells the git module to initialize and update submodul
 
 ```yaml
 # playbook-recursive-clone.yml
+
 # Clones a repository and automatically initializes all submodules
 - name: Clone repository with submodules
   hosts: webservers

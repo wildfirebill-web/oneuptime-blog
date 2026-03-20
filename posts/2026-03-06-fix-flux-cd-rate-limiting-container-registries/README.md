@@ -26,6 +26,7 @@ Different registries have different rate limit policies:
 
 ```bash
 # Check image repository scan status
+
 kubectl get imagerepositories -A
 
 # Look for rate limit errors

@@ -26,6 +26,7 @@ Flux controllers emit Kubernetes events for every reconciliation. These events a
 
 ```bash
 # View Flux events for a specific tenant namespace
+
 kubectl get events -n team-alpha --field-selector involvedObject.kind=Kustomization
 
 # View events across all namespaces

@@ -1,4 +1,4 @@
-# How to Use Preconditions on Resources in OpenTofu
+# How to Use Preconditions on Resources in OpenTofu - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -125,6 +125,7 @@ Preconditions in modules provide useful error messages to module callers:
 
 ```hcl
 # modules/rds/main.tf
+
 variable "instance_class" {
   type = string
 }

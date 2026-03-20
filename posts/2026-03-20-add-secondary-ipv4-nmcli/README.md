@@ -1,4 +1,4 @@
-# How to Add a Secondary IPv4 Address with nmcli
+# How to Add a Secondary IPv4 Address with nmcli - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to add a secondary IPv4 address to a network interface on
 
 ---
 
-Adding a secondary IPv4 address to an interface allows a host to be reachable on multiple IP addresses on the same network segment — useful for virtual hosting, failover setups, or running multiple services bound to distinct IPs.
+Adding a secondary IPv4 address to an interface allows a host to be reachable on multiple IP addresses on the same network segment - useful for virtual hosting, failover setups, or running multiple services bound to distinct IPs.
 
 ---
 
@@ -16,6 +16,7 @@ Adding a secondary IPv4 address to an interface allows a host to be reachable on
 
 ```bash
 # List all NetworkManager connections
+
 nmcli connection show
 
 # Show details of a specific connection

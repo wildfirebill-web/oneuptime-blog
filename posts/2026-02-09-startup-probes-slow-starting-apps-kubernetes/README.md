@@ -394,6 +394,7 @@ Lazy-load non-critical components:
 
 ```python
 # Instead of loading everything at startup
+
 models = load_all_models()  # Slow
 
 # Load models on-demand

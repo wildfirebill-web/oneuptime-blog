@@ -19,6 +19,7 @@ auto lo
 iface lo inet loopback
 
 # Physical NIC passed to bridge
+
 auto eth0
 iface eth0 inet manual
 
@@ -72,7 +73,7 @@ xe pif-list params=uuid,device,IPv6
 ## Create a Xen domU VM with IPv6 (xl config)
 
 ```bash
-# /etc/xen/myvm.cfg — xl VM configuration
+# /etc/xen/myvm.cfg - xl VM configuration
 
 name = "myvm"
 memory = 2048

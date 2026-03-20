@@ -14,6 +14,7 @@ Kubernetes Pod Security Standards (PSS) replaced PodSecurityPolicies in Kubernet
 
 ```hcl
 # main.tf - Production namespace with restricted security standard
+
 resource "kubernetes_namespace_v1" "production" {
   metadata {
     name = "production"

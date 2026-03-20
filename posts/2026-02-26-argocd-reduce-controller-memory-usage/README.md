@@ -36,6 +36,7 @@ Sharding splits applications across multiple controller replicas, distributing m
 
 ```yaml
 # Use StatefulSet-based sharding
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

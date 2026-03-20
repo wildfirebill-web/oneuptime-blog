@@ -42,6 +42,7 @@ Generate the root CA:
 
 ```bash
 # Create root CA private key
+
 openssl genrsa -out root-key.pem 4096
 
 # Create root CA certificate (10-year validity)

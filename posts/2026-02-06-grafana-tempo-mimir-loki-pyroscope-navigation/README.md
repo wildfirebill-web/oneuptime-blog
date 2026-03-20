@@ -23,6 +23,7 @@ Start with Mimir since metrics are typically the starting point for investigatio
 
 ```yaml
 # grafana/provisioning/datasources/mimir.yaml
+
 apiVersion: 1
 datasources:
   - name: Mimir

@@ -40,6 +40,7 @@ The most common cause is a protocol mismatch. If you registered `https://example
 
 ```python
 # Incorrect - Using HTTP in development but HTTPS registered
+
 redirect_uri = "http://localhost:3000/auth/callback"
 
 # Correct - Match exactly what is registered

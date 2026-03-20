@@ -64,7 +64,7 @@ In the main application list, each application shows:
 
 When you click into an application, you see the resource tree. Each resource node shows its own health and sync status.
 
-### Resource Tree Node Colors
+Resource Tree Node Colors
 
 ```mermaid
 flowchart TD
@@ -77,7 +77,7 @@ flowchart TD
     end
 ```
 
-### Resource Tree Layout
+Resource Tree Layout
 
 The resource tree shows parent-child relationships:
 
@@ -201,6 +201,7 @@ The application list supports filtering:
 
 ```text
 # Filter by health status
+
 Health: Degraded     -> Shows only unhealthy applications
 Health: Progressing  -> Shows only rolling out applications
 

@@ -120,6 +120,7 @@ Verify DNS proxying is working:
 
 ```bash
 # Check if DNS is captured
+
 istioctl proxy-config bootstrap deployment/frontend -n default --context="${CTX_CLUSTER1}" -o json | \
   jq '.bootstrap.node.metadata.DNS_CAPTURE'
 ```

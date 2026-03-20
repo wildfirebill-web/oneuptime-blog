@@ -30,6 +30,7 @@ The inventory file stays minimal:
 
 ```ini
 # inventory.ini
+
 # Clean inventory with no inline variables
 [webservers]
 web1.example.com ansible_host=10.0.1.10

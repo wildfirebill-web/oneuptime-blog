@@ -16,6 +16,7 @@ Terraform is a natural fit here because API Gateway involves three separate reso
 
 ```hcl
 # Enable required APIs
+
 resource "google_project_service" "apigateway" {
   project = var.project_id
   service = "apigateway.googleapis.com"

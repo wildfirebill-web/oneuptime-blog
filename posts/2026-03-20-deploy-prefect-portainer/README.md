@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Prefect Server
+
 version: "3.8"
 
 services:
@@ -74,7 +75,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 DB_PASSWORD=your-postgres-password
 PREFECT_HOST=prefect.yourdomain.com
 ```
@@ -142,4 +143,4 @@ prefect worker start --pool default-agent-pool
 
 ## Conclusion
 
-Prefect Server requires PostgreSQL for storing flow metadata, run history, and schedules. The `PREFECT_UI_API_URL` must be reachable from the browser — set it to the external hostname of your server. Workers (agents) poll the server for scheduled runs and execute them locally or in a Docker container. Use `@task(cache_key_fn=task_input_hash)` for idempotent pipelines that skip recomputation of unchanged inputs.
+Prefect Server requires PostgreSQL for storing flow metadata, run history, and schedules. The `PREFECT_UI_API_URL` must be reachable from the browser - set it to the external hostname of your server. Workers (agents) poll the server for scheduled runs and execute them locally or in a Docker container. Use `@task(cache_key_fn=task_input_hash)` for idempotent pipelines that skip recomputation of unchanged inputs.

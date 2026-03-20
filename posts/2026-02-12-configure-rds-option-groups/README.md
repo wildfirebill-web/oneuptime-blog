@@ -76,6 +76,7 @@ This creates the IAM role for SQL Server native backup/restore.
 
 ```bash
 # Create the role
+
 aws iam create-role \
   --role-name rds-sqlserver-backup-role \
   --assume-role-policy-document '{

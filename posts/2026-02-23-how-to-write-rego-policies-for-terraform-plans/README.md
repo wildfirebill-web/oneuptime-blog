@@ -16,6 +16,7 @@ Before writing Rego, you need to understand what you are evaluating. Generate a 
 
 ```bash
 # Generate plan and export as JSON
+
 terraform plan -out=tfplan
 terraform show -json tfplan > plan.json
 ```

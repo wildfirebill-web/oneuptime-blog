@@ -18,6 +18,7 @@ The first step is agreeing on a standard set of tags that all teams must apply. 
 
 ```hcl
 # variables.tf - Define the standard tag schema
+
 variable "required_tags" {
   description = "Tags required on all resources"
   type = object({

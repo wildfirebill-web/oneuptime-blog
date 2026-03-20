@@ -16,6 +16,7 @@ The first thing to do when something goes wrong is increase the log level:
 
 ```bash
 # Show debug-level output from Terragrunt
+
 export TERRAGRUNT_LOG_LEVEL=debug
 terragrunt plan
 

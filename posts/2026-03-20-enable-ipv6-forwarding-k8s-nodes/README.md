@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Linux, sysctl, Networking, Node Configuration
+Tags: Kubernetes, IPv6, Linux, Sysctl, Networking, Node Configuration
 
 Description: A step-by-step guide to enabling IPv6 packet forwarding on Kubernetes nodes so that pods can route IPv6 traffic between networks.
 
@@ -16,6 +16,7 @@ When a Kubernetes node receives an IPv6 packet destined for a pod on another nod
 
 ```bash
 # Check the current IPv6 forwarding state (0 = disabled, 1 = enabled)
+
 sysctl net.ipv6.conf.all.forwarding
 ```
 
@@ -83,7 +84,7 @@ kubectl exec -it <pod-name> -- ping6 -c 3 <other-pod-ipv6>
 ## Important Notes
 
 - **CNI plugins** such as Calico or Cilium may set this value automatically, but it is a best practice to set it in sysctl config as well.
-- Enabling IPv6 forwarding does **not** affect IPv4 forwarding — use `net.ipv4.ip_forward` for that separately.
+- Enabling IPv6 forwarding does **not** affect IPv4 forwarding - use `net.ipv4.ip_forward` for that separately.
 - On nodes that use `systemd-networkd`, you can also set `IPv6Forwarding=yes` in the relevant `.network` file.
 
 IPv6 forwarding is a foundational kernel setting that must be in place before any IPv6 Kubernetes networking can function correctly.

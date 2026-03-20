@@ -22,6 +22,7 @@ Your Ansible control node needs kubectl configured and access to the target Kube
 
 ```bash
 # Install Kubernetes collection for Ansible
+
 ansible-galaxy collection install kubernetes.core
 pip install kubernetes openshift
 ```

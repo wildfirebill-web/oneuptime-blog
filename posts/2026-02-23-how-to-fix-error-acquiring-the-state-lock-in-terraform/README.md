@@ -53,6 +53,7 @@ Before you do anything else, verify whether the lock holder is actually still ru
 
 ```bash
 # If it is a CI/CD runner, check if the pipeline is still active
+
 # For GitHub Actions, check the Actions tab
 # For GitLab, check the pipeline page
 

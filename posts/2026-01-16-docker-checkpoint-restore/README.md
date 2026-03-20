@@ -14,6 +14,7 @@ Docker checkpoint and restore allows saving a running container's state and rest
 
 ```bash
 # Install CRIU (Ubuntu/Debian)
+
 sudo apt-get install criu
 
 # Verify CRIU installation

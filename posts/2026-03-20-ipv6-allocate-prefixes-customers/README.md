@@ -33,6 +33,7 @@ For business customers with stable requirements:
 
 ```bash
 # Document static assignment in IPAM
+
 # Customer: ACME Corp
 # Prefix: 2001:db8:2001::/48
 # Assigned: 2026-03-20
@@ -180,4 +181,4 @@ for cust_id in ["CUST-001", "CUST-002", "CUST-003"]:
 
 ## Conclusion
 
-Allocating IPv6 prefixes to customers involves automated delegation via DHCPv6-PD for residential users and static assignment for business customers. Track all allocations in an IPAM system with customer metadata, allocation timestamps, and expiry information. DHCPv6-PD makes the process transparent to end users — their CPE router requests a prefix and automatically configures the LAN with proper /64 subnets.
+Allocating IPv6 prefixes to customers involves automated delegation via DHCPv6-PD for residential users and static assignment for business customers. Track all allocations in an IPAM system with customer metadata, allocation timestamps, and expiry information. DHCPv6-PD makes the process transparent to end users - their CPE router requests a prefix and automatically configures the LAN with proper /64 subnets.

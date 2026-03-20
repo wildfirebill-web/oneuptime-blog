@@ -85,6 +85,7 @@ First, create a self-signed Certificate Authority that will sign all broker and 
 ```bash
 #!/bin/bash
 # generate-ca.sh
+
 # Creates a Certificate Authority for signing Kafka certificates
 
 # Configuration

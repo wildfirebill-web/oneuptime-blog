@@ -24,6 +24,7 @@ Install the Camel K operator using the CLI:
 
 ```bash
 # Download and install Camel K CLI (kamel)
+
 curl -L https://github.com/apache/camel-k/releases/download/v2.0.0/camel-k-client-2.0.0-linux-64bit.tar.gz | tar xz
 sudo mv kamel /usr/local/bin/
 

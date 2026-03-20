@@ -16,6 +16,7 @@ When you add a cluster to ArgoCD, it stores the connection details in a Kubernet
 
 ```bash
 # View the cluster secret
+
 kubectl get secret -n argocd -l argocd.argoproj.io/secret-type=cluster
 
 # Inspect a specific cluster secret

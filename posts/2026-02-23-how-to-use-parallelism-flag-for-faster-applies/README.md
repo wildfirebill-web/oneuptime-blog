@@ -18,6 +18,7 @@ Terraform builds a dependency graph of all resources and operations. Resources t
 
 ```text
 # Default: 10 concurrent operations
+
 terraform apply
 
 # Increase parallelism
@@ -117,7 +118,7 @@ terraform apply -parallelism=5
 terraform apply -parallelism=5
 ```
 
-### Resource Dependencies on External Systems
+Resource Dependencies on External Systems
 
 When resources depend on external systems that cannot handle high concurrency:
 

@@ -26,6 +26,7 @@ The host has a default (root) namespace. Docker creates additional namespaces fo
 
 ```bash
 # List network namespaces visible to the ip command
+
 sudo ip netns list
 ```
 

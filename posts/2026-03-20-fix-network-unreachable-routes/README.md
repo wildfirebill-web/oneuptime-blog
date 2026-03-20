@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, Routing, Troubleshooting, ip route, Network Unreachable
+Tags: Linux, Networking, Routing, Troubleshooting, Ip route, Network Unreachable
 
-Description: Learn how to diagnose and fix "Network is unreachable" errors on Linux by examining the routing table, adding missing routes, and correcting gateway misconfigurations.
+Description: Learn how to diagnose and fix 'Network is unreachable' errors on Linux by examining the routing table, adding missing routes, and correcting gateway misconfigurations.
 
 ---
 
-"Network is unreachable" is one of the most common Linux networking errors. It means the kernel has no route to the destination — there is no entry in the routing table that matches the target IP, and no default gateway to fall back on. This guide shows how to find and fix the root cause.
+"Network is unreachable" is one of the most common Linux networking errors. It means the kernel has no route to the destination - there is no entry in the routing table that matches the target IP, and no default gateway to fall back on. This guide shows how to find and fix the root cause.
 
 ---
 
@@ -19,6 +19,7 @@ ping 8.8.8.8
 # connect: Network is unreachable
 
 # This means: no route exists in the routing table for 8.8.8.8
+
 # Either the default route is missing, or no matching route exists
 ```
 
@@ -138,7 +139,7 @@ GATEWAY=192.168.1.1
 ```bash
 # Symptom: Works until reboot, fails after
 ip route show | grep default
-# (empty — default route not persisted)
+# (empty - default route not persisted)
 
 # Fix: Add to network config file (see above)
 # Verify persistence by rebooting and checking again
@@ -198,7 +199,7 @@ ip route get 10.5.0.1
 
 ## Best Practices
 
-1. **Always persist routes** — temporary `ip route add` commands are lost on reboot
+1. **Always persist routes** - temporary `ip route add` commands are lost on reboot
 2. **Use `ip route get X.X.X.X`** to verify routing before testing with ping
 3. **Check `ip route show table all`** for routes in non-default tables
 4. **Use `ip route show cache`** to see cached route decisions

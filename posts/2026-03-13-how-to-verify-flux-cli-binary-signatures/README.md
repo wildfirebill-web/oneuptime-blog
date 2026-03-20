@@ -23,6 +23,7 @@ Install Cosign if needed:
 
 ```bash
 # macOS
+
 brew install cosign
 
 # Linux

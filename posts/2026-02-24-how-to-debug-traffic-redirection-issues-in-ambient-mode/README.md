@@ -48,6 +48,7 @@ The Istio CNI agent runs as a DaemonSet and is responsible for configuring redir
 
 ```bash
 # Check CNI agent pods
+
 kubectl get pods -n istio-system -l k8s-app=istio-cni-node -o wide
 
 # Check CNI agent logs for errors

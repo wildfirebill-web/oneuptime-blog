@@ -27,6 +27,7 @@ The agent runs on every node and should aggressively reduce data volume:
 
 ```yaml
 # agent-config.yaml
+
 receivers:
   otlp:
     protocols:

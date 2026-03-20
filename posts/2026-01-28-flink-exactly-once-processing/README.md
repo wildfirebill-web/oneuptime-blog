@@ -428,6 +428,7 @@ Example Prometheus metrics to track:
 
 ```yaml
 # Alert rules for checkpoint monitoring
+
 groups:
   - name: flink_checkpoints
     rules:

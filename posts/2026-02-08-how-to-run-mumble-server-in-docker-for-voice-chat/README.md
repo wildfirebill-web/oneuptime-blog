@@ -22,6 +22,7 @@ The fastest way to get Murmur running is a single Docker command.
 
 ```bash
 # Start a Murmur server with default settings
+
 # Port 64738 handles both TCP (control) and UDP (voice) traffic
 docker run -d \
   --name mumble-server \

@@ -279,6 +279,7 @@ limits:
   max_global_series_per_user: 1000000
 
 # Per-tenant overrides
+
 overrides:
   tenant-prod:
     ingestion_rate: 100000

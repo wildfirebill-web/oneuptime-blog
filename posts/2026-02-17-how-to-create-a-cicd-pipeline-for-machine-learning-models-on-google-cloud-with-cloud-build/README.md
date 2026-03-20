@@ -68,6 +68,7 @@ The `cloudbuild.yaml` defines each step of the pipeline. Each step runs in a con
 
 ```yaml
 # cloudbuild.yaml
+
 steps:
   # Step 1: Install dependencies and run linting
   - name: 'python:3.10'

@@ -16,6 +16,7 @@ In Cloud Workflows, you assign variables using the `assign` step type. Variables
 
 ```yaml
 # Basic variable assignment in Cloud Workflows
+
 main:
   steps:
     - initialize_variables:

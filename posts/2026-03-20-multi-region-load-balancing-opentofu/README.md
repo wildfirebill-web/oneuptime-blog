@@ -202,4 +202,4 @@ tofu apply -var-file=production.tfvars
 
 ## Conclusion
 
-OpenTofu makes multi-region load balancing manageable through provider aliases and reusable modules. By combining ALBs with Route 53 latency routing, you achieve global traffic distribution with automatic failover — all defined and deployed as reproducible infrastructure code.
+OpenTofu makes multi-region load balancing manageable through provider aliases and reusable modules. By combining ALBs with Route 53 latency routing, you achieve global traffic distribution with automatic failover - all defined and deployed as reproducible infrastructure code.

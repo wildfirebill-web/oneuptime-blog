@@ -8,7 +8,7 @@ Description: Learn how to configure S3 lifecycle policies, Intelligent Tiering, 
 
 ---
 
-Storage costs accumulate silently — S3 objects, EBS snapshots, and CloudWatch logs from years ago continue to accrue charges. Lifecycle policies automate the transition to cheaper storage tiers and deletion of expired data, reducing costs without manual intervention.
+Storage costs accumulate silently - S3 objects, EBS snapshots, and CloudWatch logs from years ago continue to accrue charges. Lifecycle policies automate the transition to cheaper storage tiers and deletion of expired data, reducing costs without manual intervention.
 
 ## Storage Cost Optimization Strategy
 
@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # s3_lifecycle.tf
+
 resource "aws_s3_bucket_lifecycle_configuration" "data_lake" {
   bucket = aws_s3_bucket.data_lake.id
 
@@ -193,8 +194,8 @@ resource "aws_cloudwatch_log_group" "app" {
 
 ## Best Practices
 
-- Set lifecycle rules on every S3 bucket — objects without lifecycle policies accumulate indefinitely.
+- Set lifecycle rules on every S3 bucket - objects without lifecycle policies accumulate indefinitely.
 - Use `abort_incomplete_multipart_upload` rules on all buckets to delete failed upload fragments that silently accumulate.
-- Use Intelligent Tiering for data with unknown access patterns — it automatically moves data to cheaper tiers without predefined rules.
-- Set CloudWatch Log Group retention policies when creating log groups in OpenTofu — the default is to keep logs forever.
-- EBS snapshot policies save significantly over time — without policies, teams often accumulate years of daily snapshots.
+- Use Intelligent Tiering for data with unknown access patterns - it automatically moves data to cheaper tiers without predefined rules.
+- Set CloudWatch Log Group retention policies when creating log groups in OpenTofu - the default is to keep logs forever.
+- EBS snapshot policies save significantly over time - without policies, teams often accumulate years of daily snapshots.

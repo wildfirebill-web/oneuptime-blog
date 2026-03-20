@@ -29,6 +29,7 @@ Here is a basic INI inventory with a jump host configured:
 
 ```ini
 # inventory/hosts.ini
+
 # Bastion host that serves as the entry point
 [bastion]
 jump01.example.com ansible_user=admin

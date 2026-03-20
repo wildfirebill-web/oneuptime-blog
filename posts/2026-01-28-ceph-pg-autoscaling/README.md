@@ -41,6 +41,7 @@ Check if the autoscaler is enabled:
 
 ```bash
 # Check module status
+
 ceph mgr module ls | grep pg_autoscaler
 
 # Enable the module if needed

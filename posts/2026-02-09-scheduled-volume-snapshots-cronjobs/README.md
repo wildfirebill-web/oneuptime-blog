@@ -107,6 +107,7 @@ kubectl apply -f snapshot-cronjob.yaml
 kubectl apply -f snapshot-rbac.yaml
 
 # Verify CronJob is scheduled
+
 kubectl get cronjob daily-database-snapshot -n production
 
 # Check schedule

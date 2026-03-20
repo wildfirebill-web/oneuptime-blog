@@ -18,6 +18,7 @@ Every managed IAM policy in AWS can have up to five versions. One version is alw
 
 ```hcl
 # Configure AWS provider
+
 terraform {
   required_providers {
     aws = {

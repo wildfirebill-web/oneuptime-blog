@@ -8,7 +8,7 @@ Description: Resolve compatibility issues between Portainer and Docker Engine 29
 
 ## Introduction
 
-Docker Engine 29 introduced changes to the API, networking defaults, and deprecated several older behaviors. If you upgraded to Docker Engine 29.x and are experiencing Portainer issues — errors in the UI, missing containers, network creation failures — this guide covers the known compatibility issues and their fixes.
+Docker Engine 29 introduced changes to the API, networking defaults, and deprecated several older behaviors. If you upgraded to Docker Engine 29.x and are experiencing Portainer issues - errors in the UI, missing containers, network creation failures - this guide covers the known compatibility issues and their fixes.
 
 ## Known Issues with Docker Engine 29 and Portainer
 
@@ -22,6 +22,7 @@ Docker Engine 29 introduced changes to the API, networking defaults, and depreca
 
 ```bash
 # Check Docker server version and API version
+
 docker version
 
 # Example output:
@@ -148,7 +149,7 @@ curl --unix-socket /var/run/docker.sock \
   http://localhost/v1.45/networks | jq '.[].Name'
 
 # If some networks appear in API but not in Portainer
-# This is a Portainer version issue — update to 2.21+
+# This is a Portainer version issue - update to 2.21+
 ```
 
 ## Step 8: Fix Image Pull Errors
@@ -189,4 +190,4 @@ sudo systemctl restart docker
 
 ## Conclusion
 
-Docker Engine 29 compatibility with Portainer is primarily addressed by updating Portainer to version 2.21 or later, which was built to support the Docker Engine 29 API. IPv6 default enablement and BuildKit changes are the most common secondary causes of unexpected behavior — both are easily addressed with daemon configuration changes.
+Docker Engine 29 compatibility with Portainer is primarily addressed by updating Portainer to version 2.21 or later, which was built to support the Docker Engine 29 API. IPv6 default enablement and BuildKit changes are the most common secondary causes of unexpected behavior - both are easily addressed with daemon configuration changes.

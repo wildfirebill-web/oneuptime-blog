@@ -25,13 +25,14 @@ Resources have four key properties:
 
 ```bash
 # List all resource types (resource definitions)
+
 talosctl -n 10.0.0.11 get rd
 
 # This outputs dozens of resource types, each representing
 # a different aspect of system state
 ```
 
-## Resource Definitions
+Resource Definitions
 
 A resource definition (RD) describes a type of resource. It is like a schema that tells you what fields a resource of that type will have. You can think of it as a CustomResourceDefinition (CRD) in Kubernetes.
 
@@ -213,7 +214,7 @@ talosctl -n 10.0.0.11,10.0.0.12,10.0.0.13 get addresses
 talosctl -n 10.0.0.11,10.0.0.12 get members
 ```
 
-## Resource Namespaces
+Resource Namespaces
 
 Resources are organized into namespaces. This is not the same as Kubernetes namespaces. Talos resource namespaces are categories for different aspects of the system.
 
@@ -228,7 +229,7 @@ Resources are organized into namespaces. This is not the same as Kubernetes name
 # etcd       - etcd cluster state (control plane)
 ```
 
-## Resource Layers and Priority
+Resource Layers and Priority
 
 Resources can originate from different layers, and layers have priority. This matters when multiple sources try to set the same value.
 

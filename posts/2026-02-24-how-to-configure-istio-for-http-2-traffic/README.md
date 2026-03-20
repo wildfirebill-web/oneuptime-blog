@@ -184,6 +184,7 @@ Verify end-to-end HTTP/2:
 
 ```bash
 # From inside the mesh
+
 kubectl exec deploy/sleep -c sleep -- \
   curl -v --http2-prior-knowledge http://h2-service:8080/status
 ```

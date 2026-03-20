@@ -8,12 +8,13 @@ Description: Diagnose TCP connection drops that occur after successful establish
 
 ## Introduction
 
-Application-level TCP connection drops occur after the three-way handshake succeeds — the connection is established, but then unexpectedly terminates. These are harder to diagnose than connection failures because the network is working. The cause is usually application timeout logic, resource exhaustion, or middleware (load balancer, proxy) terminating idle connections.
+Application-level TCP connection drops occur after the three-way handshake succeeds - the connection is established, but then unexpectedly terminates. These are harder to diagnose than connection failures because the network is working. The cause is usually application timeout logic, resource exhaustion, or middleware (load balancer, proxy) terminating idle connections.
 
 ## Identifying Application-Level Drops
 
 ```bash
 # Signs of application-level drops:
+
 # 1. "Connection reset by peer" errors in application logs
 # 2. "Broken pipe" errors when writing to a socket
 # 3. Connections that work sometimes but fail others

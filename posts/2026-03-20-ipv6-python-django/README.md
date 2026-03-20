@@ -10,12 +10,13 @@ Description: Configure Django to handle IPv6 clients, validate IPv6 addresses in
 
 ```bash
 # Django's manage.py runserver supports IPv6 directly
+
 python manage.py runserver "[::]:8000"
 
 # IPv6 localhost only
 python manage.py runserver "[::1]:8000"
 
-# Dual-stack — bind to all interfaces IPv4 and IPv6
+# Dual-stack - bind to all interfaces IPv4 and IPv6
 python manage.py runserver "0.0.0.0:8000"   # IPv4
 # Then separately:
 python manage.py runserver "[::]:8000"       # IPv6
@@ -35,7 +36,7 @@ ALLOWED_HOSTS = [
     ".example.com",             # all subdomains
 ]
 
-# For development — allow all
+# For development - allow all
 # ALLOWED_HOSTS = ["*"]
 
 # Use X-Forwarded-For from trusted proxy
@@ -181,7 +182,7 @@ class IPv6LoggingMiddleware:
 ## Deploy Django with Gunicorn + Nginx (IPv6)
 
 ```bash
-# Gunicorn — bind to IPv6
+# Gunicorn - bind to IPv6
 gunicorn \
     --bind "[::]:8000" \
     --workers 4 \

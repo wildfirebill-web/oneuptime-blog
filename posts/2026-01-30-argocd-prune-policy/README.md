@@ -85,6 +85,7 @@ If you have an existing application, you can enable pruning using the CLI.
 
 ```bash
 # Enable auto-prune on existing application
+
 argocd app set myapp --auto-prune
 
 # Verify the setting
@@ -413,7 +414,7 @@ argocd app delete myapp --cascade --force
 
 ## Troubleshooting Prune Issues
 
-### Resources Not Being Pruned
+Resources Not Being Pruned
 
 If resources are not being pruned as expected, check these common issues.
 

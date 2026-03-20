@@ -28,6 +28,7 @@ The first approach is a non-graceful reset through the Talos API. This skips the
 
 ```bash
 # Non-graceful reset - skips etcd leave and pod draining
+
 talosctl reset --nodes 10.0.0.50 \
   --graceful=false \
   --reboot=true

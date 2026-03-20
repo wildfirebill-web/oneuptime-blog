@@ -270,6 +270,7 @@ For Prometheus-based monitoring:
 
 ```promql
 # Current replica count
+
 kube_horizontalpodautoscaler_status_current_replicas{
   namespace="istio-system",
   horizontalpodautoscaler="istiod"

@@ -28,6 +28,7 @@ Even though disk resizing is safe, I always take a snapshot first. It takes a mi
 
 ```bash
 # Create a snapshot of the boot disk before resizing
+
 gcloud compute disks snapshot my-vm \
     --zone=us-central1-a \
     --snapshot-names=my-vm-pre-resize-snapshot

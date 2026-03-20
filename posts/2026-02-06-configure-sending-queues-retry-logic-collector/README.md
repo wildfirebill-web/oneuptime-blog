@@ -407,6 +407,7 @@ Key metrics to monitor:
 
 ```promql
 # Current queue size (how many batches are buffered)
+
 otelcol_exporter_queue_size{exporter="otlp/backend"}
 
 # Queue capacity

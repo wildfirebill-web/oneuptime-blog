@@ -20,6 +20,7 @@ With automatic replication, Secret Manager stores the secret data in multiple Go
 
 ```bash
 # Create a secret with automatic replication
+
 echo -n "my-api-key" | gcloud secrets create api-key \
   --data-file=- \
   --replication-policy="automatic" \

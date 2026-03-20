@@ -31,6 +31,7 @@ RHEL ships with Python 3.9. To test against multiple versions:
 
 ```bash
 # Install Python 3.9 (default on RHEL)
+
 sudo dnf install -y python3 python3-pip python3-devel
 ```
 

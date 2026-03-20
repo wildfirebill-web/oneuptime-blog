@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, Disks, Configuration, Capacity
+Tags: Longhorn, Kubernetes, Storage, Disk, Configuration, Capacity
 
 Description: Step-by-step guide for adding new disks to Kubernetes nodes and registering them with Longhorn to expand storage capacity.
 
@@ -22,6 +22,7 @@ SSH into the target node and identify the new disk:
 
 ```bash
 # List all block devices
+
 lsblk
 
 # Example output:
@@ -175,7 +176,7 @@ kubectl get nodes.longhorn.io worker-node-1 \
   -n longhorn-system -o yaml | grep storageAvailable
 ```
 
-In the Longhorn UI, navigate to **Dashboard** — the total storage should reflect the new disk capacity.
+In the Longhorn UI, navigate to **Dashboard** - the total storage should reflect the new disk capacity.
 
 ## Adding Disks at Scale with DaemonSet
 

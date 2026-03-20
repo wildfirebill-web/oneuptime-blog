@@ -41,6 +41,7 @@ Argo Rollouts provides the Rollout CRD that replaces Deployments:
 
 ```bash
 # Install Argo Rollouts
+
 kubectl create namespace argo-rollouts
 kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
 

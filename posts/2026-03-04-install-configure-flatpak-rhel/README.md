@@ -14,6 +14,7 @@ Flatpak is a framework for distributing desktop applications on Linux. Applicati
 
 ```bash
 # Install Flatpak
+
 sudo dnf install -y flatpak
 
 # Install the GNOME Software Flatpak plugin for graphical management

@@ -22,6 +22,7 @@ Here is a role with the default handler file:
 
 ```yaml
 # roles/nginx/handlers/main.yml
+
 # Default handlers - graceful reload and restart via systemd
 - name: reload nginx
   ansible.builtin.systemd:

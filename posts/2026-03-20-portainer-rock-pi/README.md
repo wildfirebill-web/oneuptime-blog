@@ -12,10 +12,10 @@ Rock Pi boards from Radxa are powerful ARM64 single-board computers featuring Ro
 
 ## Supported Models
 
-- Rock Pi 4 (RK3399) — 4 TOPS NPU, 4GB LPDDR4
-- Rock Pi X (Intel Atom) — x86_64 architecture
+- Rock Pi 4 (RK3399) - 4 TOPS NPU, 4GB LPDDR4
+- Rock Pi X (Intel Atom) - x86_64 architecture
 - Rock 4 SE (RK3399-T)
-- Rock 5B (RK3588) — 6 TOPS NPU, up to 16GB RAM
+- Rock 5B (RK3588) - 6 TOPS NPU, up to 16GB RAM
 - Rock 5A (RK3588S)
 
 ## Prerequisites
@@ -30,6 +30,7 @@ Download the official Ubuntu image for your Rock Pi from Radxa's wiki. Flash usi
 
 ```bash
 # SSH in with default credentials
+
 ssh rock@<rock-pi-ip>  # or ssh radxa@<ip>
 
 # Update system
@@ -135,7 +136,7 @@ sudo ufw allow ssh
 sudo ufw enable
 ```
 
-## Rock Pi 5 with RK3588 — Performance Stack
+## Rock Pi 5 with RK3588 - Performance Stack
 
 The Rock 5B with RK3588 supports running much heavier workloads. Example high-performance stack:
 

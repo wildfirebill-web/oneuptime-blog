@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Static Route, Arch Linux, systemd-networkd, IPv4, .network, Networking
+Tags: Static Routes, Arch Linux, systemd-networkd, IPv4, .network, Networking
 
 Description: Learn how to add persistent static routes on Arch Linux using systemd-networkd .network files, including multiple routes, route metrics, and table assignments.
 
@@ -14,6 +14,7 @@ Arch Linux typically uses systemd-networkd for network configuration. Static rou
 
 ```bash
 # Enable and start systemd-networkd
+
 systemctl enable --now systemd-networkd
 
 # For DNS resolution, also enable systemd-resolved

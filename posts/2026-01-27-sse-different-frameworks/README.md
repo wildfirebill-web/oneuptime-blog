@@ -159,6 +159,7 @@ FastAPI uses async generators with `StreamingResponse` for SSE.
 
 ```python
 # main.py - FastAPI SSE implementation
+
 from fastapi import FastAPI, Request
 from fastapi.responses import StreamingResponse
 from asyncio import Queue, create_task, sleep

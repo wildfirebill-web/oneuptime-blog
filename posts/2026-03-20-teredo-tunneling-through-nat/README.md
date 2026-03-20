@@ -12,7 +12,7 @@ Teredo (RFC 4380) was designed to provide IPv6 connectivity for hosts behind IPv
 
 ## How Teredo Works
 
-```
+```text
 [Client behind NAT]                [Teredo Server]
   Private IPv4: 192.168.1.10         Public IPv4: 203.0.113.1
   Public IPv4:  203.0.113.50         UDP port: 3544
@@ -30,7 +30,7 @@ Teredo Relay: decapsulates UDP and forwards to IPv6 internet
 
 Teredo addresses use the `2001::/32` prefix:
 
-```
+```text
 2001:0000:SSSS:SSSS:FFFF:PPPP:~CCCC:CCCC
          │         │    │    │
          │         │    │    └─ ~client_IPv4 (bitwise NOT)
@@ -83,7 +83,7 @@ Teredo created serious security risks in enterprise environments:
 
 ### 1. Firewall Bypass
 
-```
+```text
 Enterprise IPv4 firewall blocks all outbound ports except 80/443
 But allows UDP port 3544 (or even all UDP)
 
@@ -96,15 +96,15 @@ Attacker uses Teredo to:
 
 ### 2. Unexpected Inbound Connectivity
 
-Teredo relays serve as entry points — hosts that were considered "behind NAT" and unreachable become reachable via IPv6 through Teredo relays.
+Teredo relays serve as entry points - hosts that were considered "behind NAT" and unreachable become reachable via IPv6 through Teredo relays.
 
 ### 3. No Enterprise Control
 
-Unlike 6in4 where you configure a specific tunnel broker, Teredo auto-discovers servers — the enterprise has no control over which relay is used.
+Unlike 6in4 where you configure a specific tunnel broker, Teredo auto-discovers servers - the enterprise has no control over which relay is used.
 
 ## Why Teredo Is Deprecated
 
-- Modern ISPs provide native IPv6 — NAT traversal no longer needed
+- Modern ISPs provide native IPv6 - NAT traversal no longer needed
 - Windows 8 and later disable Teredo when native IPv6 is available
 - Windows 11 disables Teredo by default completely
 - Security tools cannot reliably inspect IPv6-in-UDP payloads
@@ -113,7 +113,8 @@ Unlike 6in4 where you configure a specific tunnel broker, Teredo auto-discovers 
 ## Checking Teredo Status
 
 ```powershell
-# Windows — check Teredo state
+# Windows - check Teredo state
+
 netsh interface teredo show state
 
 # Example output:
@@ -123,7 +124,7 @@ netsh interface teredo show state
 # Network:          : unmanaged
 # NAT:              : cone
 
-# If state is "dormant" or "offline" — Teredo is inactive
+# If state is "dormant" or "offline" - Teredo is inactive
 ```
 
 ## Summary

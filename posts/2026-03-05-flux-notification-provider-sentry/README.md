@@ -35,6 +35,7 @@ Store the Sentry DSN in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the Sentry DSN
+
 kubectl create secret generic sentry-dsn \
   --namespace=flux-system \
   --from-literal=address=https://EXAMPLEKEY@o123456.ingest.sentry.io/1234567

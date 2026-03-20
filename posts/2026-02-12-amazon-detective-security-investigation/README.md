@@ -28,6 +28,7 @@ Detective is straightforward to enable. It starts ingesting data immediately and
 
 ```bash
 # Enable Detective
+
 aws detective create-graph \
   --tags '{"Environment": "production", "ManagedBy": "security-team"}'
 ```

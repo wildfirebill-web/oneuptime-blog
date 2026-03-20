@@ -14,6 +14,7 @@ Traefik is a modern reverse proxy and load balancer that natively supports autom
 
 ```bash
 # Download the Traefik binary
+
 curl -L https://github.com/traefik/traefik/releases/download/v3.0.0/traefik_v3.0.0_linux_amd64.tar.gz \
   -o /tmp/traefik.tar.gz
 tar xzf /tmp/traefik.tar.gz -C /tmp/

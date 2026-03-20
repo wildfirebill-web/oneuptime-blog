@@ -43,6 +43,7 @@ Generate a strong random password:
 
 ```bash
 # Generate a 32-byte random password, base64 encoded
+
 NEW_PASSWORD=$(openssl rand -base64 32)
 echo "New vault password: ${NEW_PASSWORD}"
 

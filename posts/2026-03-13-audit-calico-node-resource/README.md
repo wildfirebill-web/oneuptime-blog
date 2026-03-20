@@ -24,6 +24,7 @@ Regular audits prevent these configuration artifacts from causing hard-to-diagno
 ```bash
 #!/bin/bash
 # find-orphaned-calico-nodes.sh
+
 echo "=== Checking for orphaned Calico Node resources ==="
 
 K8S_NODES=$(kubectl get nodes -o name | sed 's|node/||' | sort)

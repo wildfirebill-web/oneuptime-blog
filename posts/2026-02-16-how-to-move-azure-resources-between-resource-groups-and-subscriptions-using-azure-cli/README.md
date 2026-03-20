@@ -59,7 +59,7 @@ Not all Azure resources support moves. Before attempting anything, validate that
 - Container Registries
 - Log Analytics Workspaces
 
-### Resources That Cannot Be Moved
+Resources That Cannot Be Moved
 
 - Azure Active Directory Domain Services
 - Azure Backup vaults (with active backups)
@@ -72,6 +72,7 @@ Azure provides a validation API that checks whether a move will succeed without 
 
 ```bash
 # Validate that resources can be moved to a new resource group
+
 az resource invoke-action \
   --action validateMoveResources \
   --ids "/subscriptions/{sub-id}/resourceGroups/rg-old" \

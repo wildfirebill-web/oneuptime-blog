@@ -1,8 +1,8 @@
-# How to Override Data Sources in OpenTofu Tests
+# How to Override Data Sources in OpenTofu Tests - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, Data Sources, Mock, Infrastructure as Code
+Tags: OpenTofu, Testing, Data Source, Mock, Infrastructure as Code
 
 Description: Learn how to override data source responses in OpenTofu tests using override_data to control test inputs without making real cloud API calls.
 

@@ -41,6 +41,7 @@ This creates a private bucket with CORS enabled so browsers can upload directly:
 
 ```bash
 # Create the upload bucket
+
 aws s3 mb s3://my-upload-bucket-unique-name
 
 # Enable CORS for browser uploads

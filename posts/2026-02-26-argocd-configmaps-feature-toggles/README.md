@@ -29,6 +29,7 @@ Start with a simple JSON-based toggle configuration:
 
 ```yaml
 # toggles/production/feature-toggles.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

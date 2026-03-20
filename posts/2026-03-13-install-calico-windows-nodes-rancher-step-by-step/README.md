@@ -47,6 +47,7 @@ Or update the RKE2 config:
 
 ```yaml
 # rke2-cluster.yaml
+
 spec:
   rkeConfig:
     machineGlobalConfig:

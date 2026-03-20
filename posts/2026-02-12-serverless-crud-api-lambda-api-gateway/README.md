@@ -254,6 +254,7 @@ This template defines four API routes and connects each to a Lambda function:
 
 ```yaml
 # template.yaml - SAM template for the CRUD API
+
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 

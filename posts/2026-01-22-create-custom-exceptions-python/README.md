@@ -24,6 +24,7 @@ class ValidationError(Exception):
     pass
 
 # Usage
+
 def validate_email(email):
     if '@' not in email:
         raise ValidationError(f"Invalid email: {email}")

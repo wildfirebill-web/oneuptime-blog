@@ -36,6 +36,7 @@ You can watch resources using kubectl:
 
 ```bash
 # Watch all pods in default namespace
+
 kubectl get pods --watch
 
 # Watch with output formatting

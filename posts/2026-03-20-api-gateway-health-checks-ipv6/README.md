@@ -2,20 +2,20 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API Gateway, IPv6, Health Checks, NGINX, Kong, Monitoring
+Tags: API Gateway, IPv6, Health Checks, Nginx, Kong, Monitoring
 
 Description: Configure active and passive health checks for API gateway upstream services that communicate over IPv6, covering NGINX, Kong, and AWS configurations.
 
 ## Introduction
 
-Health checks ensure your API gateway routes traffic only to healthy backends. When upstreams communicate over IPv6, health check probes must also use IPv6 — otherwise you may route traffic to an address family that is not actually reachable.
+Health checks ensure your API gateway routes traffic only to healthy backends. When upstreams communicate over IPv6, health check probes must also use IPv6 - otherwise you may route traffic to an address family that is not actually reachable.
 
 ## NGINX Upstream Health Checks over IPv6
 
 NGINX Plus supports active health checks; open-source NGINX uses passive checks.
 
 ```nginx
-# nginx.conf — upstream pool with IPv6 backend addresses
+# nginx.conf - upstream pool with IPv6 backend addresses
 
 upstream api_backends {
     # IPv6 backends in bracket notation
@@ -54,6 +54,7 @@ Kong's health checker natively supports IPv6 upstream addresses.
 
 ```bash
 # Create an upstream with active health checks
+
 curl -X POST http://[::1]:8001/upstreams \
   -H "Content-Type: application/json" \
   -d '{
@@ -95,7 +96,7 @@ curl -X POST http://[::1]:8001/upstreams/ipv6-backend/targets \
   -d "weight=100"
 ```
 
-## AWS API Gateway — Lambda Health Check Endpoint
+## AWS API Gateway - Lambda Health Check Endpoint
 
 For AWS API Gateway backed by Lambda, implement a health endpoint that tests IPv6 connectivity to your downstream services.
 
@@ -105,7 +106,7 @@ import json
 
 def health_handler(event, context):
     """
-    Health check Lambda — verifies IPv6 connectivity to downstream.
+    Health check Lambda - verifies IPv6 connectivity to downstream.
     """
     backend_host = "2001:db8::10"
     backend_port = 8080
@@ -130,8 +131,8 @@ def health_handler(event, context):
 
 ## Haproxy Health Checks over IPv6
 
-```
-# haproxy.cfg — backend with IPv6 servers and TCP health checks
+```text
+# haproxy.cfg - backend with IPv6 servers and TCP health checks
 backend api_ipv6
     balance roundrobin
     option tcp-check

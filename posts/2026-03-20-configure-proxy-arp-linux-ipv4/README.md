@@ -30,6 +30,7 @@ sequenceDiagram
 
 ```bash
 # Enable proxy ARP on eth0
+
 echo 1 | sudo tee /proc/sys/net/ipv4/conf/eth0/proxy_arp
 
 # Verify

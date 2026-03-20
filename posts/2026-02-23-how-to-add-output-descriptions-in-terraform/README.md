@@ -70,6 +70,7 @@ If you publish your module to the Terraform Registry, descriptions appear on the
 terraform console
 > output
 # Shows outputs with their descriptions in some versions
+
 ```
 
 ### IDE Support

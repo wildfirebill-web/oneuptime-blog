@@ -30,6 +30,7 @@ graph LR
 
 ```bash
 # Install TensorFlow Privacy - Google's DP training library
+
 pip install tensorflow-privacy tensorflow google-cloud-aiplatform
 
 # Enable Vertex AI for running training jobs

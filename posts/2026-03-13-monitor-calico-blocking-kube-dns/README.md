@@ -26,6 +26,7 @@ Monitoring for Calico blocking kube-dns requires cluster-wide DNS availability a
 
 ```bash
 # Check CoreDNS error rate
+
 kubectl exec -n kube-system \
   $(kubectl get pods -n kube-system -l k8s-app=kube-dns -o name | head -1) \
   -- wget -qO- http://localhost:9153/metrics | grep -E "responses_total|requests_total"

@@ -25,6 +25,7 @@ The two supported URL formats:
 
 ```bash
 # HTTPS format
+
 https://source.developers.google.com/p/{project-id}/r/{repo-name}
 
 # SSH format

@@ -24,6 +24,7 @@ flowchart LR
 
 ```bash
 # Create dashboard via Grafana API
+
 curl -X POST http://admin:password@localhost:3000/api/dashboards/db \
   -H "Content-Type: application/json" \
   -d @ipv6-dashboard.json

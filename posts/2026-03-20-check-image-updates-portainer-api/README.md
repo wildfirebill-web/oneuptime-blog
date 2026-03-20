@@ -14,6 +14,7 @@ Portainer can check if newer versions of container images are available from the
 
 ```bash
 # Trigger Portainer to re-fetch image information for an endpoint
+
 curl -X POST \
   "${PORTAINER_URL}/api/endpoints/${ENDPOINT_ID}/docker/images/create?fromImage=registry.mycompany.com/myapp:latest" \
   -H "Authorization: Bearer ${API_TOKEN}" \

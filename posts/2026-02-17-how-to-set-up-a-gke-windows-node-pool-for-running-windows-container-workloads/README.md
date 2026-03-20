@@ -28,6 +28,7 @@ If you are creating a new cluster, enable Windows node support from the start:
 
 ```bash
 # Create a GKE cluster with the Windows node support addon
+
 gcloud container clusters create my-cluster \
   --zone us-central1-a \
   --num-nodes=2 \

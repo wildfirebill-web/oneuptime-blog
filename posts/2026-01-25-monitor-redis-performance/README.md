@@ -18,6 +18,7 @@ The INFO command provides comprehensive statistics:
 
 ```bash
 # Get all statistics
+
 redis-cli INFO
 
 # Get specific section

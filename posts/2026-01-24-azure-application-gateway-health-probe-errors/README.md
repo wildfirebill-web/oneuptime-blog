@@ -50,6 +50,7 @@ This is the most common error you will see in the Azure portal. The backend pool
 
 ```bash
 # Get the health status of your Application Gateway backend pool
+
 az network application-gateway show-backend-health \
     --resource-group myResourceGroup \
     --name myAppGateway \

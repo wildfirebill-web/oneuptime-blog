@@ -28,6 +28,7 @@ Unlike GCR, which automatically creates storage when you push, Artifact Registry
 
 ```bash
 # Create a Docker repository in Artifact Registry
+
 gcloud artifacts repositories create my-docker-repo \
   --repository-format=docker \
   --location=us-central1 \

@@ -28,6 +28,7 @@ First, ensure Cilium Ingress is enabled:
 
 ```bash
 # Check if Ingress is enabled
+
 cilium status | grep -i ingress
 
 # Enable Ingress controller

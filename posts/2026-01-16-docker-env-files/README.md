@@ -18,6 +18,7 @@ Docker Compose automatically loads `.env` from the project directory.
 
 ```bash
 # .env
+
 DATABASE_URL=postgres://user:pass@db:5432/myapp
 REDIS_URL=redis://redis:6379
 DEBUG=false

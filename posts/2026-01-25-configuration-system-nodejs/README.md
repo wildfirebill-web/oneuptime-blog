@@ -675,6 +675,7 @@ Document the environment variables your application accepts.
 
 ```bash
 # Application settings
+
 APP_APP_NAME=my-app
 APP_APP_ENV=production
 APP_APP_PORT=3000

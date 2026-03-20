@@ -24,6 +24,7 @@ To explicitly configure DHCP on a specific interface:
 
 ```yaml
 # machine-config.yaml
+
 machine:
   network:
     interfaces:

@@ -24,6 +24,7 @@ NFS is commonly used for shared home directories, centralized log storage, appli
 
 ```bash
 # Install the NFS server utilities
+
 sudo dnf install -y nfs-utils
 ```
 

@@ -922,6 +922,7 @@ public class ReportController {
 
 ```yaml
 # application.yml
+
 spring:
   mvc:
     async:

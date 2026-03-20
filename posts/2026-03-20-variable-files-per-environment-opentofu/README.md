@@ -1,4 +1,4 @@
-# How to Use Variable Files Per Environment in OpenTofu
+# How to Use Variable Files Per Environment in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,13 +8,13 @@ Description: Learn how to organize OpenTofu variable files for multiple environm
 
 ---
 
-Using per-environment variable files is the standard approach for managing configuration differences between development, staging, and production in OpenTofu. The same configuration files work across all environments — only the variable values change.
+Using per-environment variable files is the standard approach for managing configuration differences between development, staging, and production in OpenTofu. The same configuration files work across all environments - only the variable values change.
 
 ---
 
 ## Recommended File Structure
 
-```
+```text
 infrastructure/
 ├── main.tf               # resources (unchanged across environments)
 ├── variables.tf          # variable declarations (unchanged across environments)
@@ -32,7 +32,7 @@ infrastructure/
 ## Variable Declarations (Shared)
 
 ```hcl
-# variables.tf — one file for all environments
+# variables.tf - one file for all environments
 
 variable "environment" {
   type = string
@@ -65,6 +65,7 @@ variable "tags" {
 
 ```hcl
 # envs/dev.tfvars
+
 environment                = "development"
 instance_type              = "t3.micro"
 instance_count             = 1
@@ -174,7 +175,7 @@ jobs:
 Each environment should have its own state file to prevent cross-environment interference.
 
 ```hcl
-# backend.tf — use workspace or key per environment
+# backend.tf - use workspace or key per environment
 terraform {
   backend "s3" {
     bucket = "my-terraform-state"

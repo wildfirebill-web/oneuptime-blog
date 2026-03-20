@@ -33,6 +33,7 @@ First, install OPA Gatekeeper in your cluster. This is best done through ArgoCD 
 
 ```yaml
 # gatekeeper-application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

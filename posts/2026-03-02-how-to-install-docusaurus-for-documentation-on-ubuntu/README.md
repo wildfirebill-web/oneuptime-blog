@@ -22,6 +22,7 @@ The output is a static site - a directory of HTML, CSS, and JavaScript files tha
 
 ```bash
 # Install Node.js 20 LTS using NodeSource repository
+
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install -y nodejs
 

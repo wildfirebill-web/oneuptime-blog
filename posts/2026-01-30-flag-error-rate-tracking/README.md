@@ -1082,6 +1082,7 @@ Configure alerts that fire before users notice problems.
 
 ```yaml
 # prometheus-alerts.yaml
+
 groups:
   - name: flag-error-correlation
     rules:

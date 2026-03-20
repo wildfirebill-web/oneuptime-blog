@@ -24,6 +24,7 @@ Create a reusable function for sending Teams messages:
 ```bash
 #!/bin/bash
 # /usr/local/bin/teams-alert.sh
+
 # Send alert messages to Microsoft Teams
 
 WEBHOOK_URL="https://outlook.office.com/webhook/YOUR_WEBHOOK_URL"

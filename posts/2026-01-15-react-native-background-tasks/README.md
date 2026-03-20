@@ -280,6 +280,7 @@ The `react-native-background-fetch` library provides a unified API for implement
 
 ```bash
 # Using npm
+
 npm install react-native-background-fetch
 
 # Using yarn

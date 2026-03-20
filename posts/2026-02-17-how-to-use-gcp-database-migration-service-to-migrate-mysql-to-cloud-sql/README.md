@@ -41,6 +41,7 @@ The migration follows these phases:
 
 ```bash
 # Enable the Database Migration Service API
+
 gcloud services enable datamigration.googleapis.com --project=PROJECT_ID
 ```
 

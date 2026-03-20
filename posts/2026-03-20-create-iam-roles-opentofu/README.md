@@ -14,6 +14,7 @@ IAM roles in AWS grant permissions to services, users, and applications. Creatin
 
 ```hcl
 # Trust policy: who can assume this role
+
 data "aws_iam_policy_document" "ec2_assume_role" {
   statement {
     effect  = "Allow"
@@ -179,4 +180,4 @@ output "instance_profile_arn" { value = aws_iam_instance_profile.app.arn }
 
 ## Conclusion
 
-Creating IAM roles with OpenTofu combines `aws_iam_role` (the role itself), `data.aws_iam_policy_document` (the policy JSON), `aws_iam_policy` (for reusable custom policies), and `aws_iam_role_policy_attachment` (to link policies to roles). Always use `data.aws_iam_policy_document` instead of raw JSON strings — it's easier to read, validate, and merge policies. Follow least-privilege: grant only the specific actions and resources the role needs.
+Creating IAM roles with OpenTofu combines `aws_iam_role` (the role itself), `data.aws_iam_policy_document` (the policy JSON), `aws_iam_policy` (for reusable custom policies), and `aws_iam_role_policy_attachment` (to link policies to roles). Always use `data.aws_iam_policy_document` instead of raw JSON strings - it's easier to read, validate, and merge policies. Follow least-privilege: grant only the specific actions and resources the role needs.

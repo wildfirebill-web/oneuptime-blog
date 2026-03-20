@@ -39,6 +39,7 @@ spec:
 
 ```powershell
 # On Windows node
+
 Invoke-WebRequest -Uri https://github.com/projectcalico/calico/releases/download/v3.27.0/calico-windows-v3.27.0.zip -OutFile calico-windows.zip
 Expand-Archive calico-windows.zip -DestinationPath C:\CalicoWindows
 

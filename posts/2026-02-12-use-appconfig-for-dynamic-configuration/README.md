@@ -18,6 +18,7 @@ Create the application and environment hierarchy.
 
 ```bash
 # Create the application
+
 APP_ID=$(aws appconfig create-application \
     --name "payment-service" \
     --description "Configuration for the payment service" \

@@ -179,6 +179,7 @@ metadata:
   name: environment-specific-policies
 webhooks:
 # Strict policy for production
+
 - name: validate-prod.example.com
   failurePolicy: Fail
   timeoutSeconds: 5

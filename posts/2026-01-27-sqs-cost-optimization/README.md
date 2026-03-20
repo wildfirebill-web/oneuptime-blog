@@ -69,6 +69,7 @@ Batching is the single most impactful optimization. SQS allows up to 10 messages
 
 ```python
 # sqs_batch_sender.py
+
 # Demonstrates batching messages for cost optimization
 # Key insight: 10 messages in 1 batch = 1 request cost (not 10)
 

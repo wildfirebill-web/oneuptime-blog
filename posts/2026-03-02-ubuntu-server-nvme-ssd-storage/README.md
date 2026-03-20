@@ -34,6 +34,7 @@ Download the Ubuntu Server 24.04 LTS ISO and write it to a USB drive:
 
 ```bash
 # Write from a Linux or Mac machine
+
 sudo dd if=ubuntu-24.04-live-server-amd64.iso of=/dev/sdX bs=4M status=progress oflag=sync
 ```
 

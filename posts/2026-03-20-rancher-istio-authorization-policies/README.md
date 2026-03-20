@@ -29,6 +29,7 @@ Start with a default deny-all policy and explicitly allow required traffic:
 
 ```yaml
 # deny-all.yaml - Block all traffic in a namespace by default
+
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:

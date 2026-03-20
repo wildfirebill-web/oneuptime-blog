@@ -65,6 +65,7 @@ Consistent naming makes modules discoverable and their purpose clear.
 
 ```text
 # Repository naming: terraform-<provider>-<purpose>
+
 terraform-aws-vpc
 terraform-aws-ecs-service
 terraform-aws-rds-postgres

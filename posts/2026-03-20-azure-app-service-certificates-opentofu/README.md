@@ -25,6 +25,7 @@ graph TD
 
 ```hcl
 # app_service.tf
+
 resource "azurerm_resource_group" "app" {
   name     = "rg-app-${var.environment}"
   location = var.location
@@ -51,7 +52,7 @@ resource "azurerm_linux_web_app" "main" {
   https_only = true
 }
 
-# Custom domain binding — must verify domain ownership first
+# Custom domain binding - must verify domain ownership first
 resource "azurerm_app_service_custom_hostname_binding" "main" {
   hostname            = "api.${var.domain_name}"
   app_service_name    = azurerm_linux_web_app.main.name
@@ -84,7 +85,7 @@ resource "azurerm_app_service_certificate_binding" "main" {
 ## Key Vault Certificate
 
 ```hcl
-# key_vault_cert.tf — import your own certificate
+# key_vault_cert.tf - import your own certificate
 
 resource "azurerm_key_vault" "certs" {
   name                = "kv-certs-${var.environment}"
@@ -188,8 +189,8 @@ resource "azurerm_dns_txt_record" "app_verify" {
 
 ## Best Practices
 
-- Use managed certificates for most App Service deployments — they're free, auto-renewed, and require no management overhead. Use Key Vault certificates only when you need wildcard or multi-SAN certs.
-- Always create the DNS records before binding custom domains — Azure validates domain ownership during binding and will fail if the DNS records don't exist.
-- Create the TXT verification record (`asuid.<subdomain>`) in addition to the CNAME — Azure requires this to prove domain ownership.
+- Use managed certificates for most App Service deployments - they're free, auto-renewed, and require no management overhead. Use Key Vault certificates only when you need wildcard or multi-SAN certs.
+- Always create the DNS records before binding custom domains - Azure validates domain ownership during binding and will fail if the DNS records don't exist.
+- Create the TXT verification record (`asuid.<subdomain>`) in addition to the CNAME - Azure requires this to prove domain ownership.
 - Set `https_only = true` on all App Service resources to enforce HTTPS and prevent accidental HTTP access.
-- For production, use `SniEnabled` SSL state rather than `IpBasedEnabled` — SNI-based TLS is more cost-effective and supports multiple certificates per IP.
+- For production, use `SniEnabled` SSL state rather than `IpBasedEnabled` - SNI-based TLS is more cost-effective and supports multiple certificates per IP.

@@ -29,6 +29,7 @@ Machine pods are defined under `machine.pods` as a list of pod manifests in the 
 
 ```yaml
 # Define a static pod in the machine config
+
 machine:
   pods:
     - apiVersion: v1
@@ -271,7 +272,7 @@ kubectl delete pod node-exporter-worker-01 -n monitoring
 
 To actually remove a static pod, you need to remove it from the machine configuration and reapply.
 
-## Resource Considerations
+Resource Considerations
 
 Static pods consume resources on your node just like any other pod. Make sure to set resource requests and limits to prevent them from consuming too many resources:
 

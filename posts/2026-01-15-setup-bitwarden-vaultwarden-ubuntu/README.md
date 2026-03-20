@@ -42,6 +42,7 @@ Start with a fresh system update.
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install essential utilities

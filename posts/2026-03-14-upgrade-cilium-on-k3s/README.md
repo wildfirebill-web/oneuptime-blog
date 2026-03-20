@@ -30,6 +30,7 @@ Verify the cluster is healthy before starting the upgrade:
 
 ```bash
 # Check current Cilium version
+
 cilium version
 kubectl exec -n kube-system ds/cilium -- cilium version
 

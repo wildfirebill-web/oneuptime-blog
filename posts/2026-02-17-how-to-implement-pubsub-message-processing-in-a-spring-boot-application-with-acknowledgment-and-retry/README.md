@@ -48,6 +48,7 @@ Configuration:
 
 ```properties
 # GCP project
+
 spring.cloud.gcp.project-id=my-project
 
 # Subscriber settings

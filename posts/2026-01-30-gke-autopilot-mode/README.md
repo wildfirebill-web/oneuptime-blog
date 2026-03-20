@@ -67,6 +67,7 @@ Enable the required APIs with this command:
 
 ```bash
 # Enable GKE and related APIs
+
 gcloud services enable container.googleapis.com \
     compute.googleapis.com \
     cloudresourcemanager.googleapis.com
@@ -209,7 +210,7 @@ You will see nodes created automatically as you deploy workloads.
 
 ## Deploying Workloads
 
-### Resource Requests Are Required
+Resource Requests Are Required
 
 Autopilot requires resource requests on all containers. This is how it knows what nodes to provision:
 

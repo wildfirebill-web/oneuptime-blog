@@ -38,6 +38,7 @@ First, confirm that you have a notification provider configured. Here is an exam
 
 ```yaml
 # Provider resource that sends notifications to Slack
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

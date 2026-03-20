@@ -40,6 +40,7 @@ The most important rule is that Git remains the only source of truth. Never make
 
 ```yaml
 # clusters/base/policies/deny-direct-changes.yaml
+
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:

@@ -45,6 +45,7 @@ If the security group already exists and you want Terraform to manage it, import
 
 ```bash
 # First, find the security group ID
+
 aws ec2 describe-security-groups \
   --filters "Name=group-name,Values=my-security-group" \
   --query "SecurityGroups[*].{ID:GroupId,Name:GroupName,VPC:VpcId}" \

@@ -38,6 +38,7 @@ Use `ansible-galaxy` to scaffold a role with the correct directory structure.
 
 ```bash
 # Create a new role called 'nginx' in the roles directory
+
 ansible-galaxy role init roles/nginx
 
 # This creates the following structure:

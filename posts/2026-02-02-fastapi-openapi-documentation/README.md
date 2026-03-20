@@ -36,6 +36,7 @@ Here is a minimal FastAPI app with automatic documentation:
 
 ```python
 # main.py
+
 from fastapi import FastAPI
 
 # Create the FastAPI app with basic metadata

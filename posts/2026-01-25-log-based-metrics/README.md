@@ -554,6 +554,7 @@ Create alerts using extracted metrics:
 
 ```yaml
 # prometheus-alerts.yaml
+
 # Alerts based on log-derived metrics
 
 groups:

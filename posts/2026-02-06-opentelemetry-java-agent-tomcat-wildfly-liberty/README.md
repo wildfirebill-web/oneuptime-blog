@@ -36,6 +36,7 @@ Before configuring application servers, download the latest OpenTelemetry Java a
 
 ```bash
 # Download the latest stable release
+
 curl -L -o opentelemetry-javaagent.jar \
   https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
 

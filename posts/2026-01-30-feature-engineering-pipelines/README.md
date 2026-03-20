@@ -643,6 +643,7 @@ from datetime import datetime, timedelta
 
 
 # Sample e-commerce data
+
 def generate_sample_data(n_rows: int = 1000) -> pd.DataFrame:
     """Generate sample e-commerce interaction data."""
     np.random.seed(42)

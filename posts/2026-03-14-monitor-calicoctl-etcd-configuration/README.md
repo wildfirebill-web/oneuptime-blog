@@ -30,6 +30,7 @@ etcd exposes Prometheus metrics on port 2379 by default. Configure Prometheus to
 
 ```yaml
 # prometheus-etcd-scrape.yaml
+
 # Add to Prometheus scrape configuration
 scrape_configs:
   - job_name: 'etcd'

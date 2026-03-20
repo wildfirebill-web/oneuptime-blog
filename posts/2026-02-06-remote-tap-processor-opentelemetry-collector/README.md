@@ -39,6 +39,7 @@ Here is a basic configuration example:
 
 ```yaml
 # Basic Remote Tap processor configuration
+
 processors:
   remotetap:
     # Specify the endpoint to receive duplicated telemetry

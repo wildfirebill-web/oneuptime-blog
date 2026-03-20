@@ -34,6 +34,7 @@ You need:
 
 ```bash
 # Install SSSD and related packages
+
 sudo dnf install sssd sssd-ldap sssd-tools oddjob oddjob-mkhomedir -y
 ```
 

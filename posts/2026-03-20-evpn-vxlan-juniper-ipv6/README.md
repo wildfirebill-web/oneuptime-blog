@@ -8,8 +8,9 @@ Description: Configure BGP EVPN with VXLAN over an IPv6 underlay on Juniper QFX 
 
 ## IPv6 Underlay Configuration (Junos)
 
-```
+```text
 # Junos configuration on QFX Leaf
+
 # Loopback for VTEP source
 set interfaces lo0 unit 0 family inet6 address 2001:db8:1::1/128
 
@@ -23,8 +24,8 @@ set protocols ospf3 area 0.0.0.0 interface xe-0/0/1.0
 
 ## BGP EVPN Configuration
 
-```
-# BGP with IPv6 underlay — sessions use IPv6 loopbacks
+```text
+# BGP with IPv6 underlay - sessions use IPv6 loopbacks
 set protocols bgp group EVPN-OVERLAY type internal
 set protocols bgp group EVPN-OVERLAY local-address 2001:db8:1::1
 set protocols bgp group EVPN-OVERLAY family evpn signaling
@@ -37,7 +38,7 @@ set routing-options autonomous-system 65001
 
 ## VXLAN Tunnel (VTEP) Definition
 
-```
+```text
 # Define tunnel endpoint using IPv6 loopback
 set interfaces vtep unit 0 tunnel-endpoint vxlan
 set interfaces vtep unit 0 family inet6
@@ -56,7 +57,7 @@ set protocols evpn default-gateway no-gateway-community
 
 ## IRB for Distributed Anycast Gateway
 
-```
+```text
 # Integrated Routing and Bridging (IRB) interface
 set interfaces irb unit 100 family inet address 10.100.0.1/24 virtual-gateway-address 10.100.0.254
 set interfaces irb unit 100 family inet6 address 2001:db8:100::1/64 virtual-gateway-address 2001:db8:100::ffff
@@ -72,7 +73,7 @@ set routing-instances tenant1 protocols evpn ip-prefix-routes advertise direct-n
 
 ## Route-Target and RD Policy
 
-```
+```python
 # Import/export policy for EVPN routes
 set policy-options policy-statement EVPN-EXPORT term 1 from protocol direct
 set policy-options policy-statement EVPN-EXPORT term 1 then community add RT65001
@@ -86,7 +87,7 @@ set routing-instances tenant1 vrf-export EVPN-EXPORT
 
 ## Verification Commands
 
-```
+```text
 # Show BGP EVPN peers
 show bgp summary | match EVPN
 
@@ -112,7 +113,7 @@ ping routing-instance tenant1 2001:db8:100::2
 
 ## Spine Route Reflector Configuration
 
-```
+```text
 # Junos spine as BGP Route Reflector
 set protocols bgp group LEAF-OVERLAY type internal
 set protocols bgp group LEAF-OVERLAY cluster 10.0.0.1

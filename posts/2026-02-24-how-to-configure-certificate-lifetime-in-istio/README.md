@@ -233,6 +233,7 @@ Check Prometheus metrics:
 
 ```text
 # CSR processing rate
+
 rate(citadel_server_csr_count[5m])
 
 # CSR processing errors

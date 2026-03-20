@@ -28,6 +28,7 @@ A ServiceProfile defines routes matching HTTP methods and paths:
 
 ```yaml
 # Route naming: <method> <path>
+
 # Retryable: GET requests (idempotent)
 # Not retryable: POST requests (not idempotent by default)
 ```

@@ -20,6 +20,7 @@ The simplest way to see health status is with `podman ps`:
 
 ```bash
 # List containers with their health status
+
 podman ps --format "table {{.Names}}\t{{.Status}}"
 
 # Example output:

@@ -22,6 +22,7 @@ Start with a compelling business case that speaks the language procurement and f
 
 ```yaml
 # procurement/business-case.yaml
+
 # Business case for Terraform Enterprise investment
 
 executive_summary:

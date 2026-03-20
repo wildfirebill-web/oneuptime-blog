@@ -23,6 +23,7 @@ This guide covers installing Elasticsearch 8.x on Ubuntu with the default securi
 
 ```bash
 # Install prerequisites
+
 sudo apt update && sudo apt install -y apt-transport-https curl gnupg
 
 # Add Elasticsearch GPG key

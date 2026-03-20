@@ -66,6 +66,7 @@ The Dockerfile compiles the Go binary in one stage and copies it to a minimal ru
 
 ```dockerfile
 # Dockerfile.server - Multi-stage build for the gRPC server
+
 FROM golang:1.22-alpine AS builder
 
 WORKDIR /app

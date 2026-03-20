@@ -33,6 +33,7 @@ The configuration lives in `ansible.cfg`:
 
 ```ini
 # ansible.cfg - three Galaxy servers configured
+
 [galaxy]
 server_list = private_hub, certified_hub, community_galaxy
 

@@ -160,6 +160,7 @@ Track how each signal type flows through the Arrow streams:
 
 ```promql
 # Spans exported via Arrow
+
 rate(otelcol_exporter_sent_spans{exporter="otelarrow"}[5m])
 
 # Metric data points exported via Arrow

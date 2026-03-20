@@ -42,6 +42,7 @@ First, confirm your cluster supports IPv6:
 
 ```bash
 # Check node addresses
+
 kubectl get nodes -o wide
 
 # Verify pods have IPv6 addresses

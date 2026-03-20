@@ -16,6 +16,7 @@ tmux reads `~/.tmux.conf` on startup. Changes take effect after reloading:
 
 ```bash
 # Reload config from inside tmux
+
 tmux source-file ~/.tmux.conf
 
 # Or add a keybinding to reload (covered below)

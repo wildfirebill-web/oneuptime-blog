@@ -77,6 +77,7 @@ If your HTTP client is not instrumented, outgoing requests will not carry trace 
 
 ```python
 # WRONG: Using requests without instrumentation
+
 import requests
 from opentelemetry import trace
 

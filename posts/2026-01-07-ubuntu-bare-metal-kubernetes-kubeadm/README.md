@@ -69,6 +69,7 @@ First, update your system packages and install necessary dependencies.
 
 ```bash
 # Update package lists and upgrade installed packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install required packages for Kubernetes installation

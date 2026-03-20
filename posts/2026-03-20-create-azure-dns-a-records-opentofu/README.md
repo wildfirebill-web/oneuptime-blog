@@ -39,6 +39,7 @@ resource "azurerm_dns_zone" "main" {
 }
 
 # Output the nameservers to configure at your registrar
+
 output "nameservers" {
   value = azurerm_dns_zone.main.name_servers
 }

@@ -286,6 +286,7 @@ But this has the downside of also triggering on any other metric failure. The be
 
 ```bash
 # Manual rollback
+
 kubectl annotate canary api-service -n production "flagger.app/rollback=true"
 ```
 

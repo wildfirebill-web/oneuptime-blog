@@ -1,4 +1,4 @@
-# How to Deploy the EFK Stack (Elasticsearch, Fluentd, Kibana) via Portainer
+# How to Deploy the EFK Stack (Elasticsearch, Fluentd, Kibana) via Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -159,8 +159,9 @@ After deployment, configure Kibana:
 
 ## Sample Kibana Queries
 
-```
+```text
 # Find all ERROR logs
+
 log_level: "ERROR" AND container_id: *
 
 # Find logs from a specific container

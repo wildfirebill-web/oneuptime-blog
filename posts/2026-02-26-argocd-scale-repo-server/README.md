@@ -37,6 +37,7 @@ Watch for these symptoms:
 
 ```bash
 # Check repo server logs for timeout or resource issues
+
 kubectl logs deployment/argocd-repo-server -n argocd | \
   grep -i "timeout\|error\|oom\|deadline"
 

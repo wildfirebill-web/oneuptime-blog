@@ -70,6 +70,7 @@ Creating a dedicated user for node_exporter follows the principle of least privi
 
 ```bash
 # Create a system user named 'node_exporter' with no login shell and no home directory
+
 # --no-create-home: Prevents creating a home directory (not needed for service accounts)
 # --shell /bin/false: Prevents interactive login for security
 sudo useradd --no-create-home --shell /bin/false node_exporter

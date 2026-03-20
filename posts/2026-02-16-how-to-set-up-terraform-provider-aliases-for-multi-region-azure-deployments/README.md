@@ -18,6 +18,7 @@ By default, Terraform uses a single provider configuration per provider type. Wh
 
 ```hcl
 # Default provider - primary region
+
 provider "azurerm" {
   features {}
   subscription_id = var.subscription_id

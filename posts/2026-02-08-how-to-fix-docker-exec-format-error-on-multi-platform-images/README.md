@@ -25,6 +25,7 @@ docker run myapp:latest
 
 docker logs myapp
 # exec /usr/local/bin/docker-entrypoint.sh: exec format error
+
 ```
 
 The container starts but the process inside cannot execute because the binary was compiled for a different CPU architecture.

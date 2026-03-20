@@ -29,6 +29,7 @@ Set up directories for Jellyfin configuration, cache, and media:
 
 ```bash
 # Create directories for Jellyfin data
+
 mkdir -p ~/jellyfin/config    # Configuration and database
 mkdir -p ~/jellyfin/cache     # Transcoding cache and image cache
 

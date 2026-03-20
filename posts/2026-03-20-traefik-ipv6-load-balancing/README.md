@@ -103,6 +103,7 @@ http:
 
 ```yaml
 # Traefik IngressRoute for Kubernetes
+
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:

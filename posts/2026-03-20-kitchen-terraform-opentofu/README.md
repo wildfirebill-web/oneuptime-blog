@@ -20,6 +20,7 @@ Learn how to use Kitchen-Terraform to test OpenTofu configurations with multiple
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

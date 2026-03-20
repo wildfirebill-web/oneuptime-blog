@@ -16,6 +16,7 @@ DISA and the community provide Ansible content for STIGs:
 
 ```bash
 # Install STIG hardening role
+
 ansible-galaxy install ansible-lockdown.rhel9_stig
 ```
 

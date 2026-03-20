@@ -347,6 +347,7 @@ SELECT * FROM users_current FINAL;
 
 ```python
 # Generate deterministic event ID
+
 import hashlib
 
 def get_event_id(user_id, event_type, timestamp):

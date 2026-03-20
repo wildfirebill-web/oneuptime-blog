@@ -41,6 +41,7 @@ RDB creates compact, single-file backups perfect for disaster recovery. A backgr
 # redis.conf - RDB settings
 
 # Enable RDB
+
 # Format: save <seconds> <changes>
 # Snapshot if at least <changes> keys changed in <seconds>
 save 900 1      # Save after 15 min if at least 1 key changed

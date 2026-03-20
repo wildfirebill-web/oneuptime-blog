@@ -16,6 +16,7 @@ As data and query volume grow, Elasticsearch clusters can become overloaded. Hig
 
 ```bash
 # Basic cluster health
+
 curl -X GET "https://localhost:9200/_cluster/health" \
   -u elastic:password
 
@@ -344,7 +345,7 @@ curl -X POST "https://localhost:9200/logs-2024.01.01/_forcemerge?max_num_segment
   -u elastic:password
 ```
 
-## Resource Management
+Resource Management
 
 ### 1. Configure Thread Pools
 

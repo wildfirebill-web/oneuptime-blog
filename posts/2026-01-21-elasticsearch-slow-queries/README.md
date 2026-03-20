@@ -79,6 +79,7 @@ Default location: `$ES_HOME/logs/<cluster_name>_index_search_slowlog.json`
 
 ```bash
 # Find slowest queries
+
 cat elasticsearch_index_search_slowlog.json | jq -s 'sort_by(.took_millis) | reverse | .[0:10] | .[] | {took: .took, source: .source}'
 
 # Count queries by index

@@ -30,6 +30,7 @@ This guide provides the specific steps and commands for native routing performan
 cilium status --verbose | grep -E "DatapathMode|Host Routing"
 cilium config view | grep -E "tunnel|routing-mode"
 # Should show: tunnel=disabled, routing-mode=native
+
 ```
 
 ## Checking Route Tables

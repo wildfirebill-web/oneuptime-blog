@@ -145,6 +145,7 @@ Once you identify the N+1, the fix is usually straightforward. Replace the loop 
 
 ```python
 # Before: N+1 pattern
+
 def get_orders_with_items_bad(user_id):
     orders = db.query("SELECT * FROM orders WHERE user_id = ?", [user_id])
     for order in orders:

@@ -1,4 +1,4 @@
-# How to Troubleshoot IPv6 DNS Resolution Failures
+# How to Troubleshoot IPv6 DNS Resolution Failures - Troubleshoot
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,6 +19,7 @@ Description: A systematic troubleshooting guide for diagnosing and resolving IPv
 
 ```bash
 # Query directly against authoritative nameserver to bypass caching
+
 dig AAAA www.example.com @$(dig NS example.com +short | head -1) +short
 
 # If empty: no AAAA record exists for this domain

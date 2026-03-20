@@ -24,6 +24,7 @@ MAAS is distributed as a snap, which is the recommended installation method.
 
 ```bash
 # Install MAAS snap (includes both region and rack controller)
+
 sudo snap install maas
 
 # Or install a specific channel

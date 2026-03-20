@@ -35,6 +35,7 @@ First, look at the events being generated in your cluster to understand the patt
 
 ```bash
 # List recent events from Flux resources
+
 kubectl get events -n flux-system --sort-by='.lastTimestamp'
 
 # View events for a specific resource type

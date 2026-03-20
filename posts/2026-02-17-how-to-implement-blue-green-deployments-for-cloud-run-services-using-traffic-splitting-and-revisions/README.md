@@ -42,6 +42,7 @@ Start with your current production version:
 
 ```bash
 # Deploy the initial version
+
 gcloud run deploy my-service \
   --image=gcr.io/my-project/my-app:v1.2.0 \
   --region=us-central1 \

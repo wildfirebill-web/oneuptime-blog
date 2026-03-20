@@ -16,6 +16,7 @@ Calico upgrade failures on OpenShift often have OpenShift-specific root causes t
 
 ```bash
 # Check pod events for SCC-related failures
+
 oc describe pod <calico-node-pod> -n calico-system | grep -A10 "Events:"
 
 # Common SCC errors:

@@ -12,7 +12,7 @@ NDP exhaustion (also called the "NDP neighbor cache exhaustion" attack) occurs w
 
 ## How NDP Exhaustion Works
 
-```
+```text
 NDP Exhaustion Attack:
 
 IPv6 subnet: 2001:db8::/64 (2^64 = 18 quintillion addresses)
@@ -49,6 +49,7 @@ Linux has several sysctl parameters to control neighbor cache size and eviction.
 
 ```bash
 # Show current neighbor cache statistics
+
 ip -6 neigh show | wc -l
 cat /proc/net/stat/ndisc_cache
 
@@ -117,7 +118,7 @@ sudo ip6tables -A OUTPUT -p icmpv6 --icmpv6-type neighbor-solicitation \
 
 Limit the number of addresses per port to prevent table exhaustion.
 
-```
+```text
 ! Cisco: Limit addresses per access port
 ipv6 snooping policy LIMIT_POLICY
  security-level guard
@@ -143,7 +144,7 @@ show ipv6 snooping counters | include limit
 
 Cisco IOS has built-in NDP throttle for routers.
 
-```
+```text
 ! On Cisco IOS router: limit ND resolution rate
 ipv6 nd cache interface-limit 512
 

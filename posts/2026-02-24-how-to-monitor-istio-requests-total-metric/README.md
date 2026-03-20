@@ -66,6 +66,7 @@ Here's what each label means:
 
 ```promql
 # Requests per second for a specific service
+
 sum(rate(istio_requests_total{
   reporter="destination",
   destination_workload="api-service",

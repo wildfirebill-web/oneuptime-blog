@@ -22,6 +22,7 @@ Start with the standard AWS provider configuration:
 
 ```hcl
 # Configure Terraform and the AWS provider
+
 terraform {
   required_providers {
     aws = {

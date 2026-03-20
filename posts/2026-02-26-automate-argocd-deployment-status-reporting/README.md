@@ -28,6 +28,7 @@ This script generates a report of recent deployment activities across all applic
 ```bash
 #!/bin/bash
 # deployment-status-report.sh - Report recent ArgoCD deployments
+
 set -euo pipefail
 
 HOURS="${REPORT_HOURS:-24}"

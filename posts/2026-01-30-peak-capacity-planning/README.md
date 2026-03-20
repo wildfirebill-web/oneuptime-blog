@@ -203,6 +203,7 @@ Headroom is meaningless if you haven't validated it with load testing:
 
 ```bash
 # Example k6 load test ramping to 150% of forecasted peak
+
 k6 run --vus 100 --duration 30m \
   -e TARGET_RPS=390 \
   peak-test.js

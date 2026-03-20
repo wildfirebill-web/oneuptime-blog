@@ -54,6 +54,7 @@ The following command verifies your kernel version supports eBPF tuning:
 
 ```bash
 # Check your current kernel version - eBPF tuning requires kernel 4.9+
+
 # with optimal support in 5.4+ versions
 uname -r
 

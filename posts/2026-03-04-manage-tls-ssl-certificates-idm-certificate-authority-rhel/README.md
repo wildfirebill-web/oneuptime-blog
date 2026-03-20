@@ -14,6 +14,7 @@ IdM includes a Dogtag Certificate Authority that can issue TLS/SSL certificates 
 
 ```bash
 # Authenticate as admin
+
 kinit admin
 
 # Ensure the service principal exists

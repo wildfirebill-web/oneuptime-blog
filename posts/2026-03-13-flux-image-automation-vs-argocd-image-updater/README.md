@@ -26,6 +26,7 @@ Flux CD requires three resources for image automation:
 
 ```yaml
 # 1. ImageRepository: polls the container registry
+
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:

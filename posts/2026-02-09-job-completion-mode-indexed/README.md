@@ -51,6 +51,7 @@ import os
 import sys
 
 # Define all files to process
+
 FILES = [
     "/data/input/january.csv",
     "/data/input/february.csv",

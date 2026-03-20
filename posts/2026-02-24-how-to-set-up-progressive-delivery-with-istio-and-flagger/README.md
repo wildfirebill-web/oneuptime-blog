@@ -351,6 +351,7 @@ For different rollout speeds:
 
 ```yaml
 # Fast rollout (for staging)
+
 analysis:
   interval: 15s
   threshold: 3

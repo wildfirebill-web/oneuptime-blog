@@ -42,6 +42,7 @@ The VPN gateway requires a special subnet named exactly `GatewaySubnet`. Do not 
 
 ```bash
 # Create a resource group
+
 az group create --name rg-vpn-demo --location eastus
 
 # Create a virtual network

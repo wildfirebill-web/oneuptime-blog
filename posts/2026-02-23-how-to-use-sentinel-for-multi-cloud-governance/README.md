@@ -28,6 +28,7 @@ The first step is identifying which cloud provider a resource belongs to:
 
 ```python
 # lib/cloud-detection.sentinel
+
 # Helper functions for multi-cloud policies
 
 # Detect cloud provider from resource type

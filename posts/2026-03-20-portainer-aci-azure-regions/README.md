@@ -20,7 +20,7 @@ When deploying containers to Azure Container Instances through Portainer, select
 
 Not all Azure regions support ACI. As of 2026, commonly available ACI regions include:
 
-```
+```text
 Americas:
   - eastus (East US - Virginia)
   - eastus2 (East US 2 - Virginia)
@@ -51,6 +51,7 @@ Asia Pacific:
 
 ```bash
 # Log into Azure CLI
+
 az login
 
 # Check ACI availability in all regions
@@ -117,7 +118,7 @@ EU_REGIONS=("westeurope" "northeurope" "uksouth" "francecentral" "germanywestcen
 
 ACI pricing varies by region. Generally:
 
-```
+```text
 Typically lowest cost: East US, West US 2
 Higher cost: Australia, Brazil, Japan
 ```
@@ -134,7 +135,7 @@ Use Portainer's API to deploy the same container to multiple regions:
 
 ```bash
 #!/bin/bash
-# deploy-multi-region.sh — Deploy container to multiple ACI regions
+# deploy-multi-region.sh - Deploy container to multiple ACI regions
 
 PORTAINER_URL="https://portainer.example.com"
 ACI_ENDPOINT=5  # Your ACI endpoint ID

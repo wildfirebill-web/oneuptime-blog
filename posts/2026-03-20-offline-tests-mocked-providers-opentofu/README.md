@@ -8,7 +8,7 @@ Description: Learn how to configure OpenTofu tests that run completely offline u
 
 ## Introduction
 
-Running infrastructure tests without cloud access is a superpower for developer productivity. With OpenTofu's mock provider feature and a few configuration tricks, you can execute a full test suite on a laptop with no internet connection—or in a restricted CI runner with no cloud credentials.
+Running infrastructure tests without cloud access is a superpower for developer productivity. With OpenTofu's mock provider feature and a few configuration tricks, you can execute a full test suite on a laptop with no internet connection-or in a restricted CI runner with no cloud credentials.
 
 ## What Makes a Test "Offline"?
 
@@ -23,7 +23,8 @@ An offline test:
 ```hcl
 # tests/offline/networking_offline.tftest.hcl
 
-# Replace AWS provider entirely — no AWS API calls
+# Replace AWS provider entirely - no AWS API calls
+
 mock_provider "aws" {
   # Provide deterministic values for resources
   mock_resource "aws_vpc" {
@@ -138,13 +139,13 @@ jobs:
         run: tofu init
 
       - name: Run offline tests
-        # No AWS_* environment variables set — tests must be fully mocked
+        # No AWS_* environment variables set - tests must be fully mocked
         run: tofu test -test-directory=tests/offline
 ```
 
 ## Structuring Offline vs Online Tests
 
-```
+```text
 tests/
 ├── offline/           ← mock_provider only; no credentials needed
 │   ├── vpc.tftest.hcl
@@ -172,11 +173,11 @@ unset AWS_PROFILE
 # Also block the metadata endpoint used by IAM role auth
 export AWS_EC2_METADATA_DISABLED=true
 
-# Run offline tests — if any use real providers, they will fail here
+# Run offline tests - if any use real providers, they will fail here
 tofu test -test-directory=tests/offline
 echo "All offline tests passed without credentials!"
 ```
 
 ## Conclusion
 
-Offline tests with mocked providers are the fastest and most accessible form of infrastructure testing. By investing in a solid offline test suite, you give every developer on your team instant feedback on their changes—regardless of where or how they are working.
+Offline tests with mocked providers are the fastest and most accessible form of infrastructure testing. By investing in a solid offline test suite, you give every developer on your team instant feedback on their changes-regardless of where or how they are working.

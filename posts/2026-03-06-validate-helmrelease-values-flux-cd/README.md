@@ -23,6 +23,7 @@ A Flux CD HelmRelease can specify values in multiple ways:
 
 ```yaml
 # apps/production/redis.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

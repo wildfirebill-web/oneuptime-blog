@@ -33,6 +33,7 @@ First, understand what swap you currently have configured.
 
 ```bash
 # Show all swap areas
+
 swapon --show
 
 # Or use free to see swap totals

@@ -10,7 +10,7 @@ Description: Learn how to build a production-ready Azure Kubernetes Service clus
 
 A production-ready AKS cluster requires more than the default configuration. You need multiple node pools for workload isolation, Azure AD integration for RBAC, cluster autoscaling, Azure Monitor integration, pod identity or Workload Identity for secret access, and proper network policies. This guide covers all of these.
 
-## Resource Group and Networking
+Resource Group and Networking
 
 ```hcl
 resource "azurerm_resource_group" "aks" {

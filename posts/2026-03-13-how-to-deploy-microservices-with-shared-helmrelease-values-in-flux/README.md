@@ -29,6 +29,7 @@ Create a ConfigMap containing values shared across all microservices.
 
 ```yaml
 # clusters/production/shared/common-helm-values.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

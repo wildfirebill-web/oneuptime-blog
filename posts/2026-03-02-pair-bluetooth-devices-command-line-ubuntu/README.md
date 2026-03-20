@@ -14,6 +14,7 @@ Pairing Bluetooth devices without a GUI is something you need when working on he
 
 ```bash
 # Ensure BlueZ is installed and running
+
 sudo apt install bluetooth bluez -y
 sudo systemctl start bluetooth
 sudo systemctl enable bluetooth

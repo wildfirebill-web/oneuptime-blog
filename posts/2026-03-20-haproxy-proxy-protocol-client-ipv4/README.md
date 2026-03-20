@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, PROXY Protocol, IPv4, Client IP, TCP, Networking
+Tags: HAProxy, Proxy Protocol, IPv4, Client IP, TCP, Networking
 
 Description: Use the PROXY protocol in HAProxy to forward the original client IPv4 address to backend servers that handle TCP connections without HTTP headers.
 
@@ -89,6 +89,7 @@ Configure Nginx backends to read the PROXY protocol header:
 
 ```nginx
 # Nginx: accept PROXY protocol and use real_ip from it
+
 server {
     listen 8080 proxy_protocol;
 
@@ -122,4 +123,4 @@ ssh 192.168.1.10 "tail -f /var/log/nginx/access.log"
 
 ## Conclusion
 
-The PROXY protocol is the correct way to pass client IPv4 addresses to non-HTTP backends. Use `send-proxy-v2` (binary, efficient) on server lines in backends that support it, and `accept-proxy` on bind lines when receiving PROXY protocol from upstream. Always configure the receiving service (Nginx, Postgres, etc.) to trust and parse the PROXY header—otherwise connections may fail or real IPs won't be extracted.
+The PROXY protocol is the correct way to pass client IPv4 addresses to non-HTTP backends. Use `send-proxy-v2` (binary, efficient) on server lines in backends that support it, and `accept-proxy` on bind lines when receiving PROXY protocol from upstream. Always configure the receiving service (Nginx, Postgres, etc.) to trust and parse the PROXY header-otherwise connections may fail or real IPs won't be extracted.

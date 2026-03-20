@@ -30,6 +30,7 @@ For production environments, run multiple scanner replicas to handle concurrent 
 
 ```yaml
 # scanner-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -107,7 +108,7 @@ kubectl create job --from=cronjob/neuvector-updater-pod manual-update -n neuvect
 3. Click **Configuration** in the top menu
 4. Under **Scanning**, configure:
 
-```
+```text
 Auto-Scan New Images: Enabled
 Scan Secrets: Enabled
 Scan Layers: Enabled

@@ -30,6 +30,7 @@ Before you can roll back, you need to know exactly what was created. Implement a
 ```bash
 #!/bin/bash
 # tracked-create.sh
+
 # Creates a Calico resource and logs the operation for rollback
 
 set -euo pipefail

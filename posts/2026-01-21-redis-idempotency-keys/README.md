@@ -216,6 +216,7 @@ class IdempotencyFailedError(Exception):
 
 
 # Flask integration
+
 def idempotent(key_header='X-Idempotency-Key', ttl=86400):
     """Decorator for idempotent Flask endpoints."""
     def decorator(f):

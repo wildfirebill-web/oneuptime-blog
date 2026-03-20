@@ -46,6 +46,7 @@ This adds a 5-second delay to 50% of requests to the ratings service. Apply it a
 kubectl apply -f ratings-delay.yaml
 
 # Time a request to see the delay
+
 kubectl exec -n bookinfo deploy/sleep -c sleep -- \
   curl -s -o /dev/null -w "Total time: %{time_total}s\n" \
   http://ratings:9080/ratings/1

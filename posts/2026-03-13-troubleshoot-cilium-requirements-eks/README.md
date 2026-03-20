@@ -31,6 +31,7 @@ Check the kernel version across all nodes:
 
 ```bash
 # List kernel versions for all nodes in the cluster
+
 kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.nodeInfo.kernelVersion}{"\n"}{end}'
 ```
 

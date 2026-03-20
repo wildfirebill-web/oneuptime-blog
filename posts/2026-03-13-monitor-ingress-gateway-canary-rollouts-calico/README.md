@@ -32,6 +32,7 @@ Create an HTTPRoute that splits traffic between stable and canary backends:
 
 ```yaml
 # canary-httproute.yaml - traffic splitting for canary rollout
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:

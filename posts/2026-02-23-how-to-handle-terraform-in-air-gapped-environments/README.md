@@ -29,6 +29,7 @@ Start by getting the Terraform binary into your air-gapped environment:
 
 ```bash
 # On a connected machine, download the binary
+
 TERRAFORM_VERSION="1.7.3"
 wget "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip"
 wget "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_SHA256SUMS"

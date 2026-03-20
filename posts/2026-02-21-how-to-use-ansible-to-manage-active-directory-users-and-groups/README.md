@@ -18,6 +18,7 @@ Install the `microsoft.ad` collection on your Ansible control node:
 
 ```bash
 # Install the Microsoft AD collection
+
 ansible-galaxy collection install microsoft.ad
 
 # You also need the windows collection for some supporting tasks

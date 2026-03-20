@@ -32,6 +32,7 @@ FastAPI provides HTTPException for raising HTTP errors. Here's how it works out 
 
 ```python
 # basic_exception.py
+
 from fastapi import FastAPI, HTTPException
 
 app = FastAPI()

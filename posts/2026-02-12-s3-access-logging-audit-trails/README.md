@@ -46,6 +46,7 @@ Store your access logs in a separate bucket. Don't log to the same bucket you're
 
 ```bash
 # Create the logging bucket
+
 aws s3api create-bucket \
   --bucket my-s3-access-logs \
   --region us-east-1

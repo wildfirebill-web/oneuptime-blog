@@ -225,6 +225,7 @@ Configure retry instances in `application.yml`:
 
 ```yaml
 # application.yml
+
 resilience4j:
   retry:
     instances:

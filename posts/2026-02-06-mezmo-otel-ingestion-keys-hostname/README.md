@@ -14,6 +14,7 @@ Log into the Mezmo dashboard and navigate to Settings then Organization then API
 
 ```bash
 # You can also create keys via the Mezmo API
+
 curl -X POST "https://api.mezmo.com/v1/config/ingestion" \
   -H "Authorization: Basic $(echo -n 'your-service-key:' | base64)" \
   -H "Content-Type: application/json" \

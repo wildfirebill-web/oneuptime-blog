@@ -24,6 +24,7 @@ output "organization_id" {
 
 ```hcl
 # Top-level folders
+
 resource "google_folder" "workloads" {
   display_name = "workloads"
   parent       = "organizations/${data.google_organization.main.org_id}"

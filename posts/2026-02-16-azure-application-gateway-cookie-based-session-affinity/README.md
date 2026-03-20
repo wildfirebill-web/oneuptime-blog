@@ -45,6 +45,7 @@ Let us set up an Application Gateway v2 with a backend pool.
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-appgw-affinity \
   --location eastus

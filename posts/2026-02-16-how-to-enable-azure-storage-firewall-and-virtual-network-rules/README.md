@@ -27,6 +27,7 @@ The firewall evaluates rules in this order:
 
 ```bash
 # Set the default action to Deny
+
 # This blocks all access except from whitelisted sources
 az storage account update \
   --name mystorageaccount \

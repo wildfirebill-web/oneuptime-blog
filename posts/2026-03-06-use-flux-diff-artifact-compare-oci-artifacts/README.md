@@ -42,6 +42,7 @@ The basic syntax for comparing OCI artifacts is:
 
 ```bash
 # General syntax
+
 flux diff artifact oci://<registry>/<repository>:<tag> \
   --path=<local-path>
 ```

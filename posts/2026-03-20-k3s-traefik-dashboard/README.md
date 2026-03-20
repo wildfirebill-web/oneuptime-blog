@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Traefik, Monitoring, Dashboard, DevOps
+Tags: K3s, Kubernetes, Traefik, Monitoring, Dashboards, DevOps
 
 Description: Learn how to enable, secure, and access the Traefik dashboard in K3s for monitoring ingress routing and service health.
 
@@ -22,6 +22,7 @@ Use K3s's `HelmChartConfig` CRD to customize Traefik without overriding the enti
 
 ```yaml
 # /var/lib/rancher/k3s/server/manifests/traefik-dashboard-config.yaml
+
 apiVersion: helm.cattle.io/v1
 kind: HelmChartConfig
 metadata:
@@ -221,7 +222,7 @@ curl -u admin:S3cur3P@ssw0rd! \
 
 Once accessed, the Traefik dashboard shows:
 
-```
+```text
 Dashboard Sections:
 ├── Overview
 │   ├── Total routers, services, middlewares

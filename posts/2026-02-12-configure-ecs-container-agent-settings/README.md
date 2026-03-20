@@ -19,6 +19,7 @@ The ECS agent configuration file is located at `/etc/ecs/ecs.config` on the EC2 
 ```bash
 #!/bin/bash
 # User data script for ECS-optimized AMI
+
 # These settings are applied when the instance boots
 
 cat >> /etc/ecs/ecs.config << 'EOF'
@@ -154,7 +155,7 @@ ECS_ENABLE_SPOT_INSTANCE_DRAINING=true
 
 When enabled, the agent watches for Spot interruption notices. Upon receiving one, it sets the instance to DRAINING, which tells ECS to start moving tasks to other instances. For more on running Spot instances with ECS, see our guide on [ECS with Spot Instances and capacity providers](https://oneuptime.com/blog/post/2026-02-12-ecs-spot-instances-capacity-providers/view).
 
-## Resource Limits and Reservations
+Resource Limits and Reservations
 
 Control how much of the instance resources ECS can use for tasks.
 

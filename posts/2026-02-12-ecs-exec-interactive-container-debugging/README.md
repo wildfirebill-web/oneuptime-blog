@@ -25,6 +25,7 @@ Let's install the Session Manager plugin first.
 
 ```bash
 # macOS installation
+
 curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/sessionmanager-bundle.zip" \
   -o "sessionmanager-bundle.zip"
 unzip sessionmanager-bundle.zip

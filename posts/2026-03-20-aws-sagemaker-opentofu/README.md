@@ -8,7 +8,7 @@ Description: Learn how to provision AWS SageMaker domains, user profiles, notebo
 
 ---
 
-AWS SageMaker provides managed infrastructure for the full ML lifecycle — from data exploration in notebooks to model training and production serving. OpenTofu manages SageMaker domains, execution roles, endpoints, and the surrounding VPC and IAM configuration.
+AWS SageMaker provides managed infrastructure for the full ML lifecycle - from data exploration in notebooks to model training and production serving. OpenTofu manages SageMaker domains, execution roles, endpoints, and the surrounding VPC and IAM configuration.
 
 ## SageMaker Architecture
 
@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # iam.tf
+
 resource "aws_iam_role" "sagemaker" {
   name = "${var.prefix}-sagemaker-execution"
 
@@ -218,8 +219,8 @@ resource "aws_appautoscaling_policy" "endpoint" {
 
 ## Best Practices
 
-- Use SageMaker Studio lifecycle configs to auto-shutdown idle notebook kernels — without auto-shutdown, data scientists may leave expensive GPU instances running overnight.
-- Deploy endpoints in a VPC with private subnets — SageMaker endpoints don't need public internet access, and keeping them private reduces the attack surface.
-- Use endpoint configuration versioning (`create_before_destroy = true`) — updating an endpoint replaces the configuration without downtime.
-- Configure Application Auto Scaling for production endpoints — traffic patterns for ML inference are often unpredictable and bursty.
-- Use model registry to version models rather than naming endpoints by version — this separates the infrastructure (endpoint) from the artifact (model version) and enables rollbacks.
+- Use SageMaker Studio lifecycle configs to auto-shutdown idle notebook kernels - without auto-shutdown, data scientists may leave expensive GPU instances running overnight.
+- Deploy endpoints in a VPC with private subnets - SageMaker endpoints don't need public internet access, and keeping them private reduces the attack surface.
+- Use endpoint configuration versioning (`create_before_destroy = true`) - updating an endpoint replaces the configuration without downtime.
+- Configure Application Auto Scaling for production endpoints - traffic patterns for ML inference are often unpredictable and bursty.
+- Use model registry to version models rather than naming endpoints by version - this separates the infrastructure (endpoint) from the artifact (model version) and enables rollbacks.

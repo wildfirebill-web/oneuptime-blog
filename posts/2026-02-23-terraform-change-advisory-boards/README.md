@@ -25,6 +25,7 @@ The first step is extracting structured data from a Terraform plan and formattin
 ```python
 #!/usr/bin/env python3
 # generate_change_request.py
+
 # Create a CAB change request from a Terraform plan
 
 import json

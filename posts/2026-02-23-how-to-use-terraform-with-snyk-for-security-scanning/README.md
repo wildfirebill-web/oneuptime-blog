@@ -26,6 +26,7 @@ Set up the Snyk CLI and authenticate.
 
 ```bash
 # Install Snyk CLI
+
 npm install -g snyk
 
 # Authenticate with your Snyk account

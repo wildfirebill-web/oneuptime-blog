@@ -80,7 +80,7 @@ impl Greeter for MyGreeter {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // Bind to all IPv6 interfaces — [::]:50051
+    // Bind to all IPv6 interfaces - [::]:50051
     // SocketAddr parses "[::]:50051" correctly
     let addr: SocketAddr = "[::]:50051".parse()?;
 
@@ -110,7 +110,7 @@ use helloworld::HelloRequest;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // Connect to IPv6 gRPC server — use http://[addr]:port format
+    // Connect to IPv6 gRPC server - use http://[addr]:port format
     let endpoint = "http://[2001:db8::1]:50051";
 
     let channel = Channel::from_static(endpoint)
@@ -185,7 +185,7 @@ fn get_grpc_addr() -> SocketAddr {
 
     // Parse IPv6 address correctly
     let addr_str = if host.contains(':') {
-        // IPv6 address — wrap in brackets
+        // IPv6 address - wrap in brackets
         format!("[{}]:{}", host, port)
     } else {
         // IPv4 address
@@ -200,6 +200,7 @@ fn get_grpc_addr() -> SocketAddr {
 
 ```bash
 # Build and run server
+
 cargo run --bin server
 
 # Test with grpcurl (in another terminal)

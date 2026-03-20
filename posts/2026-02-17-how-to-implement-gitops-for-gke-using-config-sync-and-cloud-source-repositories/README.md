@@ -31,6 +31,7 @@ Set up the Git repository that will hold your cluster configurations:
 
 ```bash
 # Create the repository
+
 gcloud source repos create gke-config
 
 # Clone it locally

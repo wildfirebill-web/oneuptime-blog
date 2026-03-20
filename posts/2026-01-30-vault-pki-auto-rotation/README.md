@@ -41,6 +41,7 @@ flowchart TD
 
 ```bash
 # Enable the PKI secrets engine for the root CA
+
 # Mount at pki for the root certificate authority
 vault secrets enable -path=pki pki
 

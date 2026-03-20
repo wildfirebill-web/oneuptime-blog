@@ -43,6 +43,7 @@ If your server has multiple network interfaces and you only care about traffic o
 
 ```bash
 # Monitor a specific interface
+
 sudo nethogs eth0
 
 # Monitor multiple interfaces at once

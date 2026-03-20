@@ -18,6 +18,7 @@ Docker Compose alone works well for single-server deployments. But when you need
 
 ```yaml
 # roles/compose_deploy/tasks/main.yml
+
 # Deploy a Docker Compose application
 - name: Ensure Docker and Docker Compose are installed
   ansible.builtin.package:

@@ -1,4 +1,4 @@
-# How to Manage Twilio Resources with OpenTofu
+# How to Manage Twilio Resources with OpenTofu - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -47,6 +47,7 @@ resource "twilio_phone_numbers_toll_free" "sms_number" {
 }
 
 # Or search for a specific number
+
 data "twilio_phone_numbers_available_toll_free_numbers" "available" {
   country_code = "US"
   sms_enabled  = true

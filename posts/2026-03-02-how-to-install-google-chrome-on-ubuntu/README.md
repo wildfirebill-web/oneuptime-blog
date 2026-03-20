@@ -18,6 +18,7 @@ The cleanest way to install Chrome is through the command-line process that adds
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install required dependencies (usually already present)

@@ -204,6 +204,7 @@ If a listener doesn't exist for a port you expect:
 
 ```bash
 # Check Sidecar resource
+
 kubectl get sidecar -n default -o yaml
 ```
 

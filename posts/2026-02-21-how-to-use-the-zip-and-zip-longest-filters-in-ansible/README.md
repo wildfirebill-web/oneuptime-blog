@@ -16,6 +16,7 @@ The zip filter pairs elements from two lists by position:
 
 ```yaml
 # Pair up elements from two lists
+
 - name: Basic zip example
   ansible.builtin.debug:
     msg: "{{ names | zip(ips) | list }}"

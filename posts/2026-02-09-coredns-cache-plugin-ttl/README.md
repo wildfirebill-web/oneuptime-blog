@@ -104,6 +104,7 @@ Apply the configuration:
 
 ```bash
 # Save configuration
+
 kubectl apply -f coredns-config.yaml
 
 # Restart CoreDNS pods

@@ -18,6 +18,7 @@ Let us start with creating a RAID-1 mirror and a RAID-5 array. RAID-1 gives you 
 
 ```yaml
 # create-raid.yml - Create software RAID arrays using mdadm
+
 ---
 - name: Create software RAID arrays
   hosts: storage_servers

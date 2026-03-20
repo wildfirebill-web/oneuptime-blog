@@ -130,6 +130,7 @@ resource "aws_db_instance" "main" {
 }
 
 # This resource will NOT be created if the postcondition above fails
+
 resource "aws_ssm_parameter" "db_endpoint" {
   name  = "/production/db_endpoint"
   value = aws_db_instance.main.endpoint  # References the postconditioned resource
@@ -160,7 +161,7 @@ resource "aws_eks_cluster" "main" {
 
 ## Postcondition vs Check Block
 
-```
+```text
 Postcondition:
 - Runs after the specific resource is created/updated
 - BLOCKS apply if it fails

@@ -56,6 +56,7 @@ When a conflict is detected, Flux's default behavior is to fail the reconciliati
 
 ```yaml
 # Kustomization that forces ownership of conflicting fields
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

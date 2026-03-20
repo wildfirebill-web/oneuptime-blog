@@ -16,6 +16,7 @@ Calico IPAM mistakes can cause immediate outages (duplicate IP assignment from p
 
 ```bash
 # WRONG: Releasing an IP without verifying no pod uses it
+
 calicoctl ipam release --ip=192.168.1.42
 # If a running pod has this IP, the IPAM database now has
 # a "free" IP that a running pod is using → duplicate assignment on next allocation

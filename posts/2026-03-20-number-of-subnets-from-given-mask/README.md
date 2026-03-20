@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Subnetting, Networking, Subnet Count, CIDR
 
-Description: The number of subnets created by applying a longer prefix to a network block equals 2 raised to the number of borrowed bits, where borrowed bits are the difference between the new and original prefix lengths.
+Description: The number of subnets created by applying a longer prefix to a network block equals 2 raised to the number of borrowed bits, where borrowed bits are the difference between the new and original...
 
 ## The Formula
 
-```
+```text
 Borrowed bits = new_prefix - original_prefix
 Number of subnets = 2^borrowed_bits
 ```
@@ -18,7 +18,7 @@ Number of subnets = 2^borrowed_bits
 Original network: `192.168.1.0/24` (24-bit prefix)
 New subnet prefix: `/26` (26-bit prefix)
 
-```
+```text
 Borrowed bits = 26 - 24 = 2
 Subnets = 2^2 = 4
 ```
@@ -79,6 +79,7 @@ Starting from a /24:
 
 ```python
 # Divide 10.0.0.0/16 into /24 subnets (256 departments)
+
 parent = ipaddress.IPv4Network("10.0.0.0/16")
 borrowed = 24 - 16  # = 8 bits borrowed
 print(f"Subnets: {2**borrowed}")  # 256

@@ -20,6 +20,7 @@ Memcached is a high-performance, distributed memory caching system that speeds u
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install Memcached server and tools

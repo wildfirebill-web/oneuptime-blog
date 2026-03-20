@@ -27,6 +27,7 @@ Start by knowing when updates are available.
 ```bash
 #!/bin/bash
 # scripts/check-provider-updates.sh
+
 # Check for available provider updates
 
 echo "Checking for provider updates..."

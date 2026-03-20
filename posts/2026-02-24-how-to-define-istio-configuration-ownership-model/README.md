@@ -160,6 +160,7 @@ Best practice: the service owner creates the DestinationRule in the same namespa
 
 ```yaml
 # Created by the checkout team in the checkout namespace
+
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule
 metadata:

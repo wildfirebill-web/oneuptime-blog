@@ -23,6 +23,7 @@ import vertexai
 from vertexai.generative_models import GenerativeModel, GenerationConfig
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Configure a model specifically for code review

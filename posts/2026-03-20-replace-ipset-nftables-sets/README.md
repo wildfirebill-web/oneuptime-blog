@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: nftables, Linux, ipset, Firewall, Migration, Sets, Networking
+Tags: nftables, Linux, Ipset, Firewall, Migration, Sets, Networking
 
 Description: Migrate from ipset and iptables to nftables native sets, replacing IP blocklists and allowlists with built-in set functionality that requires no separate tools.
 
 ## Introduction
 
-`ipset` was the solution for managing large collections of IPs in iptables rules. With nftables, sets are built into the framework natively — no separate `ipset` package is needed. nftables sets support all ipset types including IP lists, port lists, IP-port combinations, and interval (CIDR) sets.
+`ipset` was the solution for managing large collections of IPs in iptables rules. With nftables, sets are built into the framework natively - no separate `ipset` package is needed. nftables sets support all ipset types including IP lists, port lists, IP-port combinations, and interval (CIDR) sets.
 
 ## ipset vs nftables Sets Comparison
 
@@ -28,6 +28,7 @@ Description: Migrate from ipset and iptables to nftables native sets, replacing 
 
 ```bash
 # Old way
+
 ipset create blocklist hash:ip
 ipset add blocklist 198.51.100.1
 iptables -I INPUT -m set --match-set blocklist src -j DROP
@@ -36,7 +37,7 @@ iptables -I INPUT -m set --match-set blocklist src -j DROP
 **New nftables approach:**
 
 ```bash
-# New way — no ipset needed
+# New way - no ipset needed
 nft add set inet filter blocklist { type ipv4_addr \; }
 nft add element inet filter blocklist { 198.51.100.1 }
 nft add rule inet filter input ip saddr @blocklist drop
@@ -139,4 +140,4 @@ nft list set inet filter blocklist
 
 ## Conclusion
 
-nftables sets are a direct, more integrated replacement for ipset. The syntax is different but capabilities are equivalent or superior. Named sets support runtime updates, CIDR ranges, and concatenated types — all without requiring a separate tool. Migrating to native nftables sets simplifies your stack and reduces dependencies.
+nftables sets are a direct, more integrated replacement for ipset. The syntax is different but capabilities are equivalent or superior. Named sets support runtime updates, CIDR ranges, and concatenated types - all without requiring a separate tool. Migrating to native nftables sets simplifies your stack and reduces dependencies.

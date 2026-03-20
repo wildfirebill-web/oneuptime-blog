@@ -16,6 +16,7 @@ The `compact` function takes a list of strings and returns a new list with all e
 
 ```hcl
 # compact(list_of_strings)
+
 # Removes all "" elements from the list
 compact(["a", "", "b", "", "c"])
 # Returns: ["a", "b", "c"]

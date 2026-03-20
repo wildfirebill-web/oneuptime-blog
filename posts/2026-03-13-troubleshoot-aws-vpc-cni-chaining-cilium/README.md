@@ -30,6 +30,7 @@ Confirm that Cilium is correctly configured for AWS VPC CNI chaining.
 
 ```bash
 # Check Cilium's ConfigMap for chaining mode settings
+
 kubectl get configmap cilium-config -n kube-system -o yaml | grep -E "chain|cni-conf"
 
 # Verify the CNI configuration on a node

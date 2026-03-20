@@ -22,6 +22,7 @@ Before starting any recovery operation, document the current state of etcd.
 
 ```bash
 # Check etcd cluster status
+
 talosctl etcd status --nodes <cp-node-1>
 
 # Expected output includes:

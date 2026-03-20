@@ -23,6 +23,7 @@ This guide covers setting up TLS secrets for various scenarios, from simple CA t
 
 ```bash
 # Verify Flux installation
+
 flux check
 
 # Ensure openssl is available for certificate operations

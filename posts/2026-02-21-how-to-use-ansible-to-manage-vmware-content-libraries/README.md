@@ -35,6 +35,7 @@ The `community.vmware.vmware_content_library_manager` module manages content lib
 
 ```yaml
 # create-content-library.yml
+
 ---
 - name: Create a VMware content library
   hosts: localhost

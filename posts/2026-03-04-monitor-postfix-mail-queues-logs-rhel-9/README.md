@@ -42,6 +42,7 @@ graph LR
 
 ```bash
 # Show all queued messages
+
 sudo postqueue -p
 ```
 

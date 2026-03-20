@@ -18,6 +18,7 @@ Running timedatectl without arguments shows current status:
 timedatectl
 
 # Output:
+
 #                Local time: Mon 2026-03-02 14:30:00 EST
 #            Universal time: Mon 2026-03-02 19:30:00 UTC
 #                  RTC time: Mon 2026-03-02 19:30:00

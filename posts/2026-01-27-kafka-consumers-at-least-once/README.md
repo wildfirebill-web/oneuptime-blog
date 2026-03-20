@@ -58,6 +58,7 @@ Disable auto-commit and take control of when offsets are committed.
 from confluent_kafka import Consumer, KafkaError
 
 # Configure consumer with manual offset management
+
 config = {
     'bootstrap.servers': 'localhost:9092',
     'group.id': 'order-processor',

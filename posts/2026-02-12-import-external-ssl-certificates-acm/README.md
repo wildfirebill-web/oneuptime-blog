@@ -51,6 +51,7 @@ Common conversions with OpenSSL:
 
 ```bash
 # Convert PKCS#12 (.pfx/.p12) to PEM
+
 openssl pkcs12 -in certificate.pfx -out certificate.pem -nodes
 
 # Extract the certificate

@@ -1,4 +1,4 @@
-# How to Check If an IPv6 Address Is in a Special-Purpose Range
+# How to Check If an IPv6 Address Is in a Special-Purpose Range (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -84,6 +84,7 @@ def classify_ipv6(addr_str: str) -> IPv6AddressInfo:
     )
 
 # Test the classifier
+
 test_addresses = [
     "::1",
     "::",

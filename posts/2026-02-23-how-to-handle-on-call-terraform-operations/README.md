@@ -24,6 +24,7 @@ On-call engineers need sufficient permissions to respond to incidents without ha
 
 ```hcl
 # IAM role for on-call Terraform operations
+
 resource "aws_iam_role" "oncall_terraform" {
   name = "oncall-terraform-operator"
 

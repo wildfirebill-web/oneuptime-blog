@@ -79,6 +79,7 @@ variable "price_class" {
 }
 
 # S3 origin configuration
+
 variable "s3_origin" {
   description = "S3 bucket origin configuration"
   type = object({

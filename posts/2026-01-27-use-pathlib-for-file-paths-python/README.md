@@ -18,6 +18,7 @@ If you are still using string concatenation and os.path for file operations, pat
 
 ```python
 # The old way with os.path
+
 import os
 
 base = "/home/user/project"

@@ -8,9 +8,9 @@ Description: Learn how to design IPv4 supernets (covering prefixes) for efficien
 
 ## What Is a Supernet?
 
-A supernet is a network prefix that covers a larger address range than a standard subnet — it combines multiple smaller prefixes into one larger covering prefix. Supernetting is the basis of route aggregation.
+A supernet is a network prefix that covers a larger address range than a standard subnet - it combines multiple smaller prefixes into one larger covering prefix. Supernetting is the basis of route aggregation.
 
-```
+```text
 Subnets:        Supernet:
 192.168.0.0/24  →  192.168.0.0/22  (covers .0, .1, .2, .3 /24s)
 192.168.1.0/24
@@ -25,7 +25,7 @@ For a set of networks to aggregate cleanly into a supernet:
 2. The block must start on a power-of-2 boundary
 3. The total number of networks must be a power of 2
 
-```
+```text
 VALID aggregation (all conditions met):
   10.1.0.0/24, 10.1.1.0/24, 10.1.2.0/24, 10.1.3.0/24
   → 10.1.0.0/22  ✓ (contiguous, starts at .0, count=4=2^2)
@@ -60,12 +60,13 @@ def design_allocation(supernet_cidr, site_prefix_len, vlan_prefix_len):
             print(f"  ... and {len(vlans)-4} more")
 
 # Design: Americas region (/16) with sites (/21) and VLANs (/24)
+
 design_allocation('10.1.0.0/16', 21, 24)
 ```
 
 ## Step 3: Configure BGP Aggregation
 
-```
+```text
 ! Method 1: Aggregate with summary-only (suppress more-specifics)
 router bgp 65001
   network 10.1.0.0 mask 255.255.0.0   ! Announce the supernet
@@ -84,7 +85,7 @@ ip prefix-list AGGREGATE seq 5 permit 10.1.0.0/16 le 16
 
 ## Step 4: Configure OSPF Summarization at ABR
 
-```
+```text
 ! At an OSPF Area Border Router (ABR)
 ! Summarize all area 1 routes (10.1.0.0/21 through 10.1.7.0/21) into one /18
 

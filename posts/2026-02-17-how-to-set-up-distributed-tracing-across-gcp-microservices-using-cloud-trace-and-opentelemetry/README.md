@@ -71,6 +71,7 @@ Set up OpenTelemetry with automatic instrumentation for Flask, requests, and SQL
 
 ```python
 # tracing.py - Initialize tracing for your Python service
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

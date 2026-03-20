@@ -36,6 +36,7 @@ graph LR
 Artifacts to inspect:
 ```bash
 # Egress policy chain (from Pod A)
+
 sudo iptables -L cali-fw-<veth-a> -n -v
 
 # Ingress policy chain (to Pod B)

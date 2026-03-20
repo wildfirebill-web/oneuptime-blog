@@ -31,6 +31,7 @@ This runbook guides on-call engineers through responding to incidents where pods
 
 ```bash
 # Test from multiple pods
+
 kubectl run triage-test --image=busybox --restart=Never -- sleep 60
 kubectl exec triage-test -- wget -qO- --timeout=5 http://1.1.1.1 && echo "PASS" || echo "FAIL"
 kubectl exec triage-test -- nslookup google.com && echo "DNS OK" || echo "DNS FAIL"

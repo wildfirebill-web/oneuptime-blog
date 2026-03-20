@@ -47,6 +47,7 @@ Create an availability set before creating the VMs that will use it:
 
 ```bash
 # Create an availability set with 3 fault domains and 5 update domains
+
 az vm availability-set create \
   --resource-group myResourceGroup \
   --name myAvailabilitySet \

@@ -30,6 +30,7 @@ Docker and Docker Compose are required. Ghost is lightweight, using around 200-5
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

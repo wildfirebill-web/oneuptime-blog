@@ -31,6 +31,7 @@ Block public access on a specific bucket:
 
 ```bash
 # Enable all four Block Public Access settings
+
 aws s3api put-public-access-block \
     --bucket my-bucket \
     --public-access-block-configuration \

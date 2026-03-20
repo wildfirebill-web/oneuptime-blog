@@ -54,6 +54,7 @@ flowchart TB
 
 ```bash
 # Check Kubernetes version (1.21+)
+
 kubectl version --client
 
 # Validate cluster

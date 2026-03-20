@@ -32,6 +32,7 @@ In the Epinio chart configuration screen:
 
 ```yaml
 # These are configured through the Rancher UI form:
+
 global:
   domain: "epinio.example.com"      # Your domain
   tlsIssuer: "letsencrypt-production"  # Or selfsigned-issuer

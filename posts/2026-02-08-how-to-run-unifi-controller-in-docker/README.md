@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Unifi, Networking, Docker Compose, Home Lab, Ubiquiti, Network Management
+Tags: Docker, UniFi, Networking, Docker Compose, Home Lab, Ubiquiti, Network Management
 
 Description: Deploy the Unifi Network Controller in Docker to manage your Ubiquiti access points, switches, and gateways from a containerized setup.
 
@@ -29,6 +29,7 @@ Before you start, make sure you have the following ready:
 
 ```bash
 # Verify Docker is installed and running
+
 docker --version
 docker compose version
 ```
@@ -228,7 +229,7 @@ Schedule the volume backup with cron for daily snapshots.
 0 3 * * * docker run --rm -v unifi-config:/source:ro -v /backups/unifi:/backup alpine tar czf /backup/unifi-$(date +\%Y\%m\%d).tar.gz -C /source .
 ```
 
-## Resource Usage and Monitoring
+Resource Usage and Monitoring
 
 The Unifi Controller with MongoDB uses around 1-1.5 GB of RAM for a typical home network with 10-20 devices. Monitor resource consumption to catch any memory leaks from the Java process.
 

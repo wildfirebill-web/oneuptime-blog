@@ -18,6 +18,7 @@ The easiest way is to download the precompiled binary:
 
 ```bash
 # Check latest release at https://github.com/go-acme/lego/releases
+
 LEGO_VERSION="4.18.0"
 ARCH=$(dpkg --print-architecture)
 

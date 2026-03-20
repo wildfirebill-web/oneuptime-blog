@@ -21,6 +21,7 @@ meter = metrics.get_meter("api-key-monitor")
 tracer = trace.get_tracer("api-key-monitor")
 
 # Track each API key usage
+
 key_usage_counter = meter.create_counter(
     "api.key.requests",
     description="Number of requests per API key",

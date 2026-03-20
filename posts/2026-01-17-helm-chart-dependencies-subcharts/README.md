@@ -35,6 +35,7 @@ Dependencies are defined in `Chart.yaml` under the `dependencies` section.
 
 ```yaml
 # Chart.yaml
+
 apiVersion: v2
 name: my-app
 version: 1.0.0

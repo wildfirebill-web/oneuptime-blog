@@ -14,6 +14,7 @@ Semaphore is an open-source web UI for Ansible. It provides a visual interface f
 
 ```yaml
 # roles/semaphore/tasks/main.yml
+
 ---
 - name: Install prerequisites
   ansible.builtin.apt:

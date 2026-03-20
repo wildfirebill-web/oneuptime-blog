@@ -66,6 +66,7 @@ The simplest approach is adding the repository through the CLI with username and
 
 ```bash
 # Add with username and password
+
 argocd repo add https://artifactory.example.com/artifactory/helm-virtual \
   --type helm \
   --name artifactory-helm \

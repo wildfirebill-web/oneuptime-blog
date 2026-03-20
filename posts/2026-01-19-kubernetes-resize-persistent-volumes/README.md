@@ -34,6 +34,7 @@ flowchart LR
 
 ```bash
 # Check if your storage class allows expansion
+
 kubectl get storageclass
 
 # Example output:

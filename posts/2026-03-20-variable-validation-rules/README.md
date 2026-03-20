@@ -1,4 +1,4 @@
-# How to Use Variable Validation Rules in OpenTofu
+# How to Use Variable Validation Rules in OpenTofu - Rules
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to write variable validation rules in OpenTofu using the 
 
 ## Introduction
 
-Variable validation in OpenTofu lets you define constraints on input variables that are checked before any resources are created. Unlike preconditions (which have access to all resource attributes), variable validation runs in isolation — only the variable being validated is accessible. Use it to enforce format requirements, value ranges, allowed lists, and other constraints on module inputs.
+Variable validation in OpenTofu lets you define constraints on input variables that are checked before any resources are created. Unlike preconditions (which have access to all resource attributes), variable validation runs in isolation - only the variable being validated is accessible. Use it to enforce format requirements, value ranges, allowed lists, and other constraints on module inputs.
 
 ## Basic Validation Syntax
 
@@ -130,6 +130,7 @@ Variable validation can only reference the variable being validated. For multi-v
 
 ```hcl
 # Single variable validation
+
 variable "min_capacity" {
   type = number
   validation {
@@ -187,4 +188,4 @@ tofu apply
 
 ## Conclusion
 
-Variable validation is the first line of defense against misconfigured modules. Use it to enforce non-negotiable constraints on inputs: allowed values, format requirements, length limits, and numeric ranges. Write clear error messages that include both the requirement and the actual value. For constraints that require access to resource attributes or other variables, use preconditions instead — they run with full access to all resource values.
+Variable validation is the first line of defense against misconfigured modules. Use it to enforce non-negotiable constraints on inputs: allowed values, format requirements, length limits, and numeric ranges. Write clear error messages that include both the requirement and the actual value. For constraints that require access to resource attributes or other variables, use preconditions instead - they run with full access to all resource values.

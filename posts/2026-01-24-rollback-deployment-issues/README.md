@@ -41,6 +41,7 @@ Before rolling back, examine the available revisions:
 
 ```bash
 # View deployment rollout history
+
 kubectl rollout history deployment/web-api -n production
 
 # See details of a specific revision

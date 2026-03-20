@@ -78,6 +78,7 @@ Start by creating a new Git repository for your Shared Library. The repository s
 
 ```bash
 # Create the shared library repository
+
 mkdir jenkins-shared-library
 cd jenkins-shared-library
 git init

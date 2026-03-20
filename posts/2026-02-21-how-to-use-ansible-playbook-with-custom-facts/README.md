@@ -24,6 +24,7 @@ The simplest custom fact is a plain INI file:
 
 ```ini
 # /etc/ansible/facts.d/application.fact
+
 # Static fact file describing the deployed application
 [general]
 app_name = mywebapp

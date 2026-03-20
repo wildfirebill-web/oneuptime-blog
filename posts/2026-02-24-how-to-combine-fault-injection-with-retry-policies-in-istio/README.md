@@ -65,6 +65,7 @@ Test it:
 
 ```bash
 # Run 200 requests and count final status codes
+
 for i in $(seq 1 200); do
   kubectl exec deploy/test-client -n production -- curl -s -o /dev/null -w "%{http_code}\n" http://order-service:8080/orders
 done | sort | uniq -c

@@ -16,6 +16,7 @@ SSL/TLS encryption protects data in transit between Kafka clients and brokers. T
 
 ```bash
 # Generate CA key and certificate
+
 openssl req -new -x509 -keyout ca-key -out ca-cert -days 365 \
   -subj "/CN=KafkaCA/O=YourOrg/C=US" \
   -passout pass:ca-password

@@ -26,6 +26,7 @@ The idea is simple:
 
 ```yaml
 # progressive-rollout.yml
+
 ---
 - name: Progressive application rollout
   hosts: webservers

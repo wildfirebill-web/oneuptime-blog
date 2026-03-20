@@ -126,6 +126,7 @@ Consistent naming makes grep and find operations much easier. Here are conventio
 
 ```text
 # Pattern: <service-name>-<resource-type-abbreviation>.yaml
+
 order-service-vs.yaml        # VirtualService
 order-service-dr.yaml        # DestinationRule
 order-service-authz.yaml     # AuthorizationPolicy

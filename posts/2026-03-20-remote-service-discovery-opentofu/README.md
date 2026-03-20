@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Service Discovery, Remote Backend, Protocol, Internals, Infrastructure as Code
 
-Description: Learn how OpenTofu discovers remote services — the .well-known/terraform.json protocol that enables registry API discovery, remote backend connectivity, and authentication service endpoints.
+Description: Learn how OpenTofu discovers remote services - the .well-known/terraform.json protocol that enables registry API discovery, remote backend connectivity, and authentication service endpoints.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ OpenTofu uses a service discovery protocol to find the API endpoints for registr
 
 ```bash
 # OpenTofu fetches .well-known/terraform.json from any hostname it interacts with
+
 curl -s https://registry.opentofu.org/.well-known/terraform.json | jq .
 ```
 
@@ -135,7 +136,7 @@ OpenTofu discovers the `tfe.v2.1` endpoint and uses it for:
 
 ```python
 #!/usr/bin/env python3
-# internal-registry/discovery.py — minimal service discovery server
+# internal-registry/discovery.py - minimal service discovery server
 
 from flask import Flask, jsonify
 
@@ -146,7 +147,7 @@ def discovery():
     return jsonify({
         "modules.v1": "/v1/modules/",
         "providers.v1": "/v1/providers/"
-        # No login.v1 — use static token auth instead
+        # No login.v1 - use static token auth instead
     })
 
 @app.route('/v1/modules/<namespace>/<name>/<provider>/versions')
@@ -179,4 +180,4 @@ curl -s "https://registry.mycompany.com/v1/modules/my-org/vpc/aws/versions" | \
 
 ## Conclusion
 
-OpenTofu's service discovery protocol uses `.well-known/terraform.json` to find API endpoints for any hostname it interacts with. This enables a single hostname to serve multiple services (modules, providers, authentication, remote state) with each service independently discoverable. When setting up a private registry, implement the service discovery endpoint first — it's the entry point that OpenTofu uses to locate all other APIs. For air-gapped environments, a minimal HTTP server serving the discovery JSON and proxying requests to local package stores is sufficient.
+OpenTofu's service discovery protocol uses `.well-known/terraform.json` to find API endpoints for any hostname it interacts with. This enables a single hostname to serve multiple services (modules, providers, authentication, remote state) with each service independently discoverable. When setting up a private registry, implement the service discovery endpoint first - it's the entry point that OpenTofu uses to locate all other APIs. For air-gapped environments, a minimal HTTP server serving the discovery JSON and proxying requests to local package stores is sufficient.

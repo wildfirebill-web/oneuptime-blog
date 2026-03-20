@@ -65,6 +65,7 @@ The device needs to register handlers for each supported method. Here is a compr
 
 ```python
 # Device-side direct method handlers
+
 # These functions execute when the cloud invokes a method on this device
 from azure.iot.device import IoTHubDeviceClient, MethodResponse
 import json

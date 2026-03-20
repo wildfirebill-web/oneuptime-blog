@@ -76,6 +76,7 @@ From inside any pod in the cluster, you can resolve the headless service name:
 
 ```bash
 # Run a temporary pod to test DNS
+
 kubectl run -it --rm dns-test --image=busybox:1.28 --restart=Never -- nslookup redis
 ```
 

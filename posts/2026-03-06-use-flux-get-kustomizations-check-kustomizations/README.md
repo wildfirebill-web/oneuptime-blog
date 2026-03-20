@@ -27,6 +27,7 @@ Check the status of all Kustomizations.
 
 ```bash
 # List kustomizations in the default namespace
+
 flux get kustomizations
 
 # List kustomizations across all namespaces

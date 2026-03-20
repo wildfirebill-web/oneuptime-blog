@@ -35,6 +35,7 @@ Create a Cloud Function that handles backup creation and SQL export operations.
 
 ```python
 # backup_function/main.py - Automated backup and export for Cloud SQL
+
 import functions_framework
 from googleapiclient.discovery import build
 from google.cloud import storage

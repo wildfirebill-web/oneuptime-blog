@@ -14,6 +14,7 @@ Monitoring NTP synchronization ensures your IPv6 infrastructure maintains accura
 
 ```bash
 # Check overall sync status
+
 timedatectl status
 
 # View chrony sources and their status
@@ -180,7 +181,7 @@ done
 
 ## Grafana Dashboard Query Examples
 
-```
+```text
 # Current offset panel
 chrony_tracking_last_offset_seconds{job="ntp_chrony"}
 

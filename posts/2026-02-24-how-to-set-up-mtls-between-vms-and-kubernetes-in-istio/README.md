@@ -39,6 +39,7 @@ After the initial certificate is issued, the pilot agent automatically handles r
 
 ```bash
 # Check the current certificate on the VM
+
 sudo /usr/local/bin/pilot-agent request GET /certs
 ```
 

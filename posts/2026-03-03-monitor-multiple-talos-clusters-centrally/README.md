@@ -29,6 +29,7 @@ First, deploy the kube-prometheus-stack on each Talos cluster. This gives you Pr
 
 ```bash
 # Install kube-prometheus-stack on each cluster
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

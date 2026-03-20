@@ -16,6 +16,7 @@ Install the required tools:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install hcloud CLI

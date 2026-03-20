@@ -25,6 +25,7 @@ Configure Terraform to connect to your Vault instance:
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     vault = {

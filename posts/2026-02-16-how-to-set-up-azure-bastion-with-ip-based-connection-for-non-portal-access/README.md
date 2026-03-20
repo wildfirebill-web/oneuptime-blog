@@ -41,6 +41,7 @@ If you do not already have Azure Bastion deployed, or if you have the Basic SKU,
 
 ```bash
 # Create the AzureBastionSubnet (required name, minimum /26)
+
 az network vnet subnet create \
   --name AzureBastionSubnet \
   --resource-group myResourceGroup \

@@ -19,6 +19,7 @@ Every Linux network namespace includes a loopback interface (`lo`) that is admin
 
 ```bash
 # Create a namespace and immediately check loopback state
+
 ip netns add testns
 ip netns exec testns ip link show lo
 

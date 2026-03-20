@@ -20,6 +20,7 @@ The most immediately obvious difference is how you interact with the system.
 
 ```bash
 # Traditional Linux workflow
+
 ssh admin@server
 sudo apt update && sudo apt install nginx
 sudo vim /etc/nginx/nginx.conf

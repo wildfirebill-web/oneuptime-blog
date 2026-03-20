@@ -1,4 +1,4 @@
-# How to Enable Longhorn Volume Encryption at Rest
+# How to Enable Longhorn Volume Encryption at Rest - Volume
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Longhorn uses the Linux kernel's `dm-crypt` module with LUKS to encrypt volume d
 
 ```yaml
 # longhorn-crypto-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:
@@ -131,4 +132,4 @@ kubectl patch secret longhorn-crypto \
 - Store encryption keys in an external secrets manager (HashiCorp Vault, AWS Secrets Manager) and use External Secrets Operator to sync them to Kubernetes.
 - Use different encryption keys per environment (dev, staging, production).
 - Test encrypted volume restore from backup before relying on it for production data.
-- Encryption has a small performance overhead (typically 5-10%) — benchmark your workload before production deployment.
+- Encryption has a small performance overhead (typically 5-10%) - benchmark your workload before production deployment.

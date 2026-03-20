@@ -64,6 +64,7 @@ mkdir -p /tmp/edge-manifests
 cd /tmp/edge-manifests
 
 # Add manifests
+
 cat > app.yaml <<EOF
 apiVersion: apps/v1
 kind: Deployment

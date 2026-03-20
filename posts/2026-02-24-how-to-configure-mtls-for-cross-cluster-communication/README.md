@@ -38,6 +38,7 @@ Generate intermediate CAs for each cluster:
 
 ```bash
 # Cluster 1 intermediate CA
+
 openssl req -sha256 -nodes -newkey rsa:4096 \
   -subj "/O=MyOrg/CN=Cluster1 Intermediate CA" \
   -keyout cluster1-ca-key.pem -out cluster1-ca-csr.pem

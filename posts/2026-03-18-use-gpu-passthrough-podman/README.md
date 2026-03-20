@@ -31,6 +31,7 @@ You need a Linux host with the GPU drivers properly installed. Verify your GPU i
 
 ```bash
 # Check for available GPU devices
+
 ls -la /dev/dri/
 # Example output:
 # drwxr-xr-x  3 root root       120 Mar 18 08:00 .

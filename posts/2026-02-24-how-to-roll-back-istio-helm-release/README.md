@@ -37,6 +37,7 @@ If the last upgrade just broke things and you need to get back to a working stat
 
 ```bash
 # Roll back to the previous revision
+
 helm rollback istiod -n istio-system
 ```
 

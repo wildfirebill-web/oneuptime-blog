@@ -20,6 +20,7 @@ Description: Learn how to add, update, and manage container registries in Portai
 
 ```bash
 # List all configured registries
+
 curl -s "${PORTAINER_URL}/api/registries" \
   -H "Authorization: Bearer ${API_TOKEN}" | \
   jq '[.[] | {id: .Id, name: .Name, url: .URL, type: .Type}]'

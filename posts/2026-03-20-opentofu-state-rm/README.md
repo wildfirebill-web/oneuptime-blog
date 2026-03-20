@@ -1,13 +1,12 @@
----
-title: "Using tofu state rm in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, state
-description: "Learn how to use tofu state rm to remove resources from OpenTofu state without destroying the actual infrastructure."
----
-
 # Using tofu state rm in OpenTofu
 
-The `tofu state rm` command removes one or more resources from the state file without destroying the actual infrastructure. The real resource continues to exist in your cloud provider — OpenTofu simply stops tracking it.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, State
+
+Description: Learn how to use tofu state rm to remove resources from OpenTofu state without destroying the actual infrastructure.
+
+The `tofu state rm` command removes one or more resources from the state file without destroying the actual infrastructure. The real resource continues to exist in your cloud provider - OpenTofu simply stops tracking it.
 
 ## When to Use state rm
 
@@ -21,6 +20,7 @@ The `tofu state rm` command removes one or more resources from the state file wi
 
 ```bash
 # Remove a single resource from state
+
 tofu state rm aws_instance.old_web
 
 # Output:

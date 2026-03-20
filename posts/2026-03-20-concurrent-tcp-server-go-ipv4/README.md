@@ -8,7 +8,7 @@ Description: Learn how to build a high-concurrency IPv4 TCP server in Go using g
 
 ## Go's Concurrency Model for TCP
 
-Go's goroutines are extremely lightweight (starting at ~8KB stack) making the "goroutine per connection" pattern practical even for thousands of concurrent clients—unlike threads in other languages.
+Go's goroutines are extremely lightweight (starting at ~8KB stack) making the "goroutine per connection" pattern practical even for thousands of concurrent clients-unlike threads in other languages.
 
 ## Production-Grade Concurrent TCP Server
 

@@ -35,6 +35,7 @@ DDoS diagnostic logs are configured per public IP address, not at the DDoS plan 
 
 ```bash
 # List all public IPs in the subscription to find DDoS-protected ones
+
 az network public-ip list \
   --query "[?ddosSettings.ddosProtectionPlan != null].{Name:name, ResourceGroup:resourceGroup, IP:ipAddress, DDoSPlan:ddosSettings.ddosProtectionPlan.id}" \
   --output table

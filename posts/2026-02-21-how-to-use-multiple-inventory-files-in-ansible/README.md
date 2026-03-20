@@ -16,6 +16,7 @@ The simplest approach is passing multiple `-i` arguments on the command line.
 
 ```bash
 # Use two separate inventory files
+
 ansible-playbook -i inventory/webservers.ini -i inventory/databases.ini site.yml
 
 # Mix formats - one INI, one YAML

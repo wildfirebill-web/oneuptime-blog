@@ -21,6 +21,7 @@ Red Hat Enterprise Linux AI (RHEL AI) is a purpose-built OS image that includes 
 
 ```bash
 # Download from the Red Hat Customer Portal
+
 # Navigate to: Downloads > Red Hat Enterprise Linux AI
 # Select the bootable ISO for your architecture
 

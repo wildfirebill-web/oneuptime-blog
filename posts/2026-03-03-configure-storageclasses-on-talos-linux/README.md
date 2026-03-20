@@ -39,6 +39,7 @@ Your cluster should have exactly one default StorageClass. When a PVC does not s
 
 ```bash
 # Check current default
+
 kubectl get storageclass
 
 # Set a StorageClass as default

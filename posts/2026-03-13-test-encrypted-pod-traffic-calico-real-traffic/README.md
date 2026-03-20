@@ -26,6 +26,7 @@ This guide covers test WireGuard Encryption in Calico, including enabling WireGu
 
 ```bash
 # Enable WireGuard encryption cluster-wide
+
 kubectl patch felixconfiguration default --type=merge -p '{
   "spec": {
     "wireguardEnabled": true,

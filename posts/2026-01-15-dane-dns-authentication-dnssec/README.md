@@ -84,6 +84,7 @@ Extract the SPKI hash from your certificate:
 
 ```bash
 # For a certificate file
+
 openssl x509 -in certificate.pem -pubkey -noout | \
   openssl pkey -pubin -outform DER | \
   openssl dgst -sha256 -binary | \

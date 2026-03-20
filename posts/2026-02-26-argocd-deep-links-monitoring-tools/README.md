@@ -265,6 +265,7 @@ If a link does not appear, check:
 
 ```bash
 # Verify the ConfigMap has the correct content
+
 kubectl get cm argocd-cm -n argocd -o jsonpath='{.data.resource\.links}' | head -20
 ```
 

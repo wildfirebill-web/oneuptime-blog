@@ -174,6 +174,7 @@ In a microservice architecture, a request often traverses multiple services: A -
 
 ```yaml
 # Service A calling Service B: generous timeout
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

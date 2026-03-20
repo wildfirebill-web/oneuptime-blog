@@ -53,6 +53,7 @@ Verify that cgroups v2 is enabled on your system before configuring resource lim
 
 ```bash
 # Check if cgroups v2 is enabled
+
 # Output should show "cgroup2" if v2 is active
 mount | grep cgroup2
 
@@ -307,7 +308,7 @@ podman run -d \
     api-server:latest
 ```
 
-### Resource Profile Script
+Resource Profile Script
 
 Automate resource allocation with a reusable script for different workload types:
 
@@ -393,7 +394,7 @@ podman stats production-api
 podman stats --format json production-api
 ```
 
-### Resource Inspection
+Resource Inspection
 
 Inspect configured resource limits on running containers:
 
@@ -609,7 +610,7 @@ done
 
 ---
 
-## Resource Limit Troubleshooting
+Resource Limit Troubleshooting
 
 ### Common Issues and Solutions
 

@@ -42,13 +42,14 @@ provider "azurerm" {
 }
 
 # Data source for current subscription
+
 data "azurerm_subscription" "current" {}
 
 # Data source for current client (user/service principal)
 data "azurerm_client_config" "current" {}
 ```
 
-## Resource Groups
+Resource Groups
 
 Everything in Azure lives in a resource group. Create them first.
 

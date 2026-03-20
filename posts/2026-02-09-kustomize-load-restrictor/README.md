@@ -24,6 +24,7 @@ The restrictor prevents path traversal attacks and accidental exposure of sensit
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

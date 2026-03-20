@@ -39,6 +39,7 @@ On the server you want to SSH into, enable GSSAPI authentication.
 
 ```bash
 # Edit the SSH server configuration
+
 sudo vi /etc/ssh/sshd_config
 ```
 

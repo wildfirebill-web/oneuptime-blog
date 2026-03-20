@@ -107,6 +107,7 @@ Just using `--import` without the ESM loader hook is not enough:
 
 ```bash
 # This loads tracing.mjs first, but ESM hooks are not registered
+
 node --import ./tracing.mjs app.mjs
 # Auto-instrumentation for ESM imports will NOT work
 ```

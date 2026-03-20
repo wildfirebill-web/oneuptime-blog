@@ -14,6 +14,7 @@ Vultr provides IPv6 on all instances. Each instance receives a /64 IPv6 subnet. 
 
 ```bash
 # Install vultr-cli
+
 curl -sSL https://github.com/vultr/vultr-cli/releases/latest/download/vultr-cli_linux_amd64.tar.gz | tar xz
 
 # Create instance with IPv6

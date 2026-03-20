@@ -20,6 +20,7 @@ When a values merge fails, your HelmRelease will show a status like this:
 
 ```bash
 # Check the HelmRelease status
+
 kubectl get helmrelease -n my-namespace my-release -o yaml
 ```
 

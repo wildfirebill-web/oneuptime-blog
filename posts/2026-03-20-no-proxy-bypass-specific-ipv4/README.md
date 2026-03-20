@@ -2,24 +2,25 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Proxy, no_proxy, IPv4, Bypass, Environment Variables
+Tags: Linux, Proxy, No_proxy, IPv4, Bypass, Environment Variables
 
 Description: Configure no_proxy and NO_PROXY environment variables to exclude specific IPv4 addresses, CIDR ranges, and domain suffixes from proxy routing on Linux.
 
 ## Introduction
 
-When using an HTTP proxy, you typically want internal services — databases, internal APIs, local services, cloud metadata endpoints — to connect directly without going through the proxy. The `no_proxy` environment variable lists addresses that bypass the proxy. Different tools parse `no_proxy` differently, so understanding the syntax and tool-specific behavior is important.
+When using an HTTP proxy, you typically want internal services - databases, internal APIs, local services, cloud metadata endpoints - to connect directly without going through the proxy. The `no_proxy` environment variable lists addresses that bypass the proxy. Different tools parse `no_proxy` differently, so understanding the syntax and tool-specific behavior is important.
 
 ## Basic no_proxy Syntax
 
 ```bash
 # Comma-separated list of hosts, IPs, CIDR ranges, and domain suffixes
+
 export no_proxy="localhost,127.0.0.1,::1"
 
 # Add specific IPv4 addresses
 export no_proxy="localhost,127.0.0.1,10.0.1.10,10.0.1.11"
 
-# Add subnets (CIDR notation — supported by most tools)
+# Add subnets (CIDR notation - supported by most tools)
 export no_proxy="localhost,127.0.0.1,10.0.0.0/8,192.168.0.0/16"
 
 # Add domain suffixes (leading dot = wildcard subdomain)
@@ -48,7 +49,7 @@ metadata.google.internal"
 export NO_PROXY="$no_proxy"
 ```
 
-Note: `169.254.169.254` is the cloud metadata endpoint (AWS, GCP, Azure) — always bypass the proxy for it.
+Note: `169.254.169.254` is the cloud metadata endpoint (AWS, GCP, Azure) - always bypass the proxy for it.
 
 ## Per-Tool no_proxy Behavior
 
@@ -66,7 +67,7 @@ curl http://8.8.8.8        # Goes through proxy
 
 ### wget
 
-wget does NOT support CIDR in no_proxy — use individual IPs or domain patterns:
+wget does NOT support CIDR in no_proxy - use individual IPs or domain patterns:
 
 ```bash
 # ~/.wgetrc

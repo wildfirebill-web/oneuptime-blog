@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, Lock File, Providers, Infrastructure as Code
+Tags: OpenTofu, Troubleshooting, Lock File, Provider, Infrastructure as Code
 
 Description: Learn how to diagnose and fix .terraform.lock.hcl issues including hash mismatches, platform conflicts, and version constraint errors.
 
@@ -12,7 +12,7 @@ The `.terraform.lock.hcl` file records the exact provider versions and cryptogra
 
 ## Error: Hash Mismatch
 
-```
+```text
 Error: Failed to install provider
 The hash for provider registry.opentofu.org/hashicorp/aws v5.50.0
 does not match the expected hash from the lock file.
@@ -22,6 +22,7 @@ This happens when a provider binary was downloaded from a mirror that serves dif
 
 ```bash
 # Add hashes for all platforms your team uses
+
 tofu providers lock \
   -platform=linux_amd64 \
   -platform=darwin_arm64 \
@@ -35,7 +36,7 @@ git commit -m "Add multi-platform provider hashes"
 
 ## Error: Lock File Version Conflict
 
-```
+```text
 Error: Failed to install provider
 The version constraint for provider hashicorp/aws requires >= 5.0, < 6.0
 but the lock file requires exactly 4.67.0.
@@ -62,7 +63,7 @@ tofu init
 
 ## Error: Lock File Out of Date After Version Change
 
-```
+```text
 Error: Inconsistent dependency lock file
 Provider registry.opentofu.org/hashicorp/aws is locked at version 5.45.0,
 but version 5.50.0 is required
@@ -124,13 +125,13 @@ tofu providers lock \
   -platform=darwin_arm64
 
 # The lock file will contain zh: hashes (zip hashes from mirror)
-# instead of h1: hashes — this is expected
+# instead of h1: hashes - this is expected
 ```
 
 ## Best Practices for Lock File Management
 
 ```bash
-# Always commit the lock file — it belongs in version control
+# Always commit the lock file - it belongs in version control
 git add .terraform.lock.hcl
 
 # Verify lock file consistency in CI before applying
@@ -144,4 +145,4 @@ tofu init
 
 ## Summary
 
-Lock file issues fall into four categories: hash mismatches (add multi-platform hashes with `tofu providers lock -platform=...`), version conflicts (run `tofu init -upgrade` to re-lock at the new version), missing platform hashes for CI/CD (add `linux_amd64` hashes explicitly), and private mirror hash differences (expected — mirrors produce `zh:` hashes instead of `h1:`). Always commit `.terraform.lock.hcl` to version control and generate it with all target platforms from the start to avoid CI/CD surprises.
+Lock file issues fall into four categories: hash mismatches (add multi-platform hashes with `tofu providers lock -platform=...`), version conflicts (run `tofu init -upgrade` to re-lock at the new version), missing platform hashes for CI/CD (add `linux_amd64` hashes explicitly), and private mirror hash differences (expected - mirrors produce `zh:` hashes instead of `h1:`). Always commit `.terraform.lock.hcl` to version control and generate it with all target platforms from the start to avoid CI/CD surprises.

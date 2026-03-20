@@ -12,7 +12,7 @@ Branch-based deployment is a GitOps pattern where different Kubernetes environme
 
 ## Branch Strategy
 
-```
+```text
 Git Repository:
 ├── main          → Production clusters
 ├── staging       → Staging cluster
@@ -32,6 +32,7 @@ Each branch contains:
 
 ```yaml
 # gitrepo-production.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -191,4 +192,4 @@ Protect the `main` branch with required status checks in GitHub/GitLab to ensure
 
 ## Conclusion
 
-Branch-based deployments with Rancher Fleet provide a clean, auditable path from development to production. Each environment tracks a specific branch, and promotions happen via Git merges rather than manual deployments. This pattern aligns with GitOps principles—the Git repository is the single source of truth, and all environment changes are tracked via pull requests and branch history.
+Branch-based deployments with Rancher Fleet provide a clean, auditable path from development to production. Each environment tracks a specific branch, and promotions happen via Git merges rather than manual deployments. This pattern aligns with GitOps principles-the Git repository is the single source of truth, and all environment changes are tracked via pull requests and branch history.

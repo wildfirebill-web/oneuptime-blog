@@ -36,6 +36,7 @@ Start with a workflow that triggers on version tags. This pattern is common for 
 
 ```yaml
 # .github/workflows/release.yml
+
 name: Release
 
 on:

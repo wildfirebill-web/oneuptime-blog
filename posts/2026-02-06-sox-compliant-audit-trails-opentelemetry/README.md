@@ -26,6 +26,7 @@ We start by setting up a logger provider with a resource that identifies the fin
 
 ```python
 # audit_logging_config.py
+
 from opentelemetry.sdk._logs import LoggerProvider, LogRecord
 from opentelemetry.sdk._logs.export import BatchLogRecordProcessor
 from opentelemetry.exporter.otlp.proto.grpc._log_exporter import OTLPLogExporter

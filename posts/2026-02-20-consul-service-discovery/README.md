@@ -46,6 +46,7 @@ Use the official Helm chart to deploy Consul to your Kubernetes cluster.
 
 ```bash
 # Add the HashiCorp Helm repository
+
 helm repo add hashicorp https://helm.releases.hashicorp.com
 
 # Update the local Helm chart cache

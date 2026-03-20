@@ -26,6 +26,7 @@ First, set up a GKE cluster with Config Connector enabled using Terraform:
 
 ```hcl
 # Configure the GCP provider
+
 provider "google" {
   project = var.project_id
   region  = var.region

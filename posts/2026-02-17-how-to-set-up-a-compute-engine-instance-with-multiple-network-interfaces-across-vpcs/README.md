@@ -29,6 +29,7 @@ Each network interface must connect to a different VPC. You cannot have two inte
 
 ```bash
 # Create the first VPC network for application traffic
+
 gcloud compute networks create app-network \
   --subnet-mode=custom
 

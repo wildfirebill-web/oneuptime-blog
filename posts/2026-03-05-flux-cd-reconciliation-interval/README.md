@@ -14,6 +14,7 @@ Every Flux CD resource has a `spec.interval` field that controls how frequently 
 
 ```yaml
 # The interval field is present on every Flux resource
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

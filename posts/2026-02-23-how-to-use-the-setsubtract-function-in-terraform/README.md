@@ -18,6 +18,7 @@ The `setsubtract` function takes two sets and returns a new set containing the e
 
 ```hcl
 # Returns elements in set_a that are NOT in set_b
+
 setsubtract(set_a, set_b)
 ```
 
@@ -95,7 +96,7 @@ output "tag_audit" {
 }
 ```
 
-## Resource Cleanup Detection
+Resource Cleanup Detection
 
 Identify resources that should be removed because they are no longer in the desired configuration.
 

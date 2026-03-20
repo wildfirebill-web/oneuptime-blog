@@ -50,6 +50,7 @@ First, deploy a Collector in your cluster configured to scrape Flux controller m
 
 ```yaml
 # otel-collector-config.yaml
+
 # Collector config for scraping Flux CD controller metrics
 
 receivers:

@@ -24,6 +24,7 @@ Start by installing Kubecost in your cluster with Prometheus integration enabled
 
 ```yaml
 # kubecost-values.yaml
+
 global:
   prometheus:
     enabled: true

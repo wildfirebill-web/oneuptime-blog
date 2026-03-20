@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DoQ, DNS over QUIC, IPv6, AdGuard, dnsdist, Privacy, RFC 9250
+Tags: DoQ, DNS over QUIC, IPv6, AdGuard, Dnsdist, Privacy, RFC 9250
 
 Description: Configure DNS over QUIC (DoQ) on port 853 with IPv6 support using AdGuard Home or dnsdist, enabling fast, encrypted DNS with 0-RTT connections for IPv6 clients.
 
@@ -37,6 +37,7 @@ tls:
 
 ```bash
 # Restart AdGuard Home
+
 systemctl restart AdGuardHome
 
 # Test DoQ (requires q CLI or quiche-based client)
@@ -86,7 +87,7 @@ certbot certonly --standalone -d dns.example.com
 go install github.com/nicowillis/q@latest
 q dns.example.com AAAA @quic://2001:db8::1:784
 
-# Using kdig (Knot DNS utils — supports DoQ)
+# Using kdig (Knot DNS utils - supports DoQ)
 kdig @2001:db8::1 AAAA google.com +quic
 
 # Using adguardhome CLI test
@@ -112,7 +113,7 @@ protocols = {
 ## Client Configuration
 
 ```bash
-# Android 9+ — Private DNS
+# Android 9+ - Private DNS
 # Settings → Network → Advanced → Private DNS
 # Set to: dns.example.com
 # (Android will try DoT; DoQ support coming in future versions)
@@ -120,7 +121,7 @@ protocols = {
 # Using systemd-resolved with DoQ (experimental)
 # Requires systemd 255+ with QUIC support compiled in
 
-# Browser (Firefox) — DoH only (not DoQ natively yet)
+# Browser (Firefox) - DoH only (not DoQ natively yet)
 # about:config → network.trr.uri = https://dns.example.com/dns-query
 ```
 

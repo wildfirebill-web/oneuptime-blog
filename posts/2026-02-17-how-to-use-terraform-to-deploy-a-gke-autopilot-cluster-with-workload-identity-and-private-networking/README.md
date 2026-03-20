@@ -130,6 +130,7 @@ Private networking is essential for production clusters. This setup uses a custo
 # network.tf - VPC and subnet configuration
 
 # Create a custom VPC network
+
 resource "google_compute_network" "gke_network" {
   name                    = var.network_name
   project                 = var.project_id

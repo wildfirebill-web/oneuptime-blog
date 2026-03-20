@@ -18,6 +18,7 @@ Podman's auto-update feature works with Quadlet to automatically update containe
 
 ```ini
 # ~/.config/containers/systemd/webapp.container
+
 [Unit]
 Description=Web application with auto-update
 

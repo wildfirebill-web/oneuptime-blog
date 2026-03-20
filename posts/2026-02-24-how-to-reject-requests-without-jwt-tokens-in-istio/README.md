@@ -26,6 +26,7 @@ You need two resources working together:
 
 ```yaml
 # Step 1: Validate tokens that are present
+
 apiVersion: security.istio.io/v1
 kind: RequestAuthentication
 metadata:

@@ -48,6 +48,7 @@ AWS automatically publishes SQS metrics to CloudWatch every five minutes (or one
 
 ```bash
 # Get the approximate number of visible messages in the queue
+
 # This is the primary "queue depth" metric most teams track
 
 aws cloudwatch get-metric-statistics \

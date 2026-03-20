@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Providers, Architecture, Concepts, Infrastructure as Code
+Tags: OpenTofu, Provider, Architecture, Concepts, Infrastructure as Code
 
 Description: Understand how OpenTofu providers work, how they communicate with cloud APIs, and how to configure them effectively.
 
 ## Introduction
 
-OpenTofu providers are plugins that translate HCL resource declarations into cloud API calls. Each provider handles a specific service — AWS, Azure, GCP, Kubernetes, GitHub, etc. Understanding provider architecture helps you configure them correctly and troubleshoot authentication and API issues.
+OpenTofu providers are plugins that translate HCL resource declarations into cloud API calls. Each provider handles a specific service - AWS, Azure, GCP, Kubernetes, GitHub, etc. Understanding provider architecture helps you configure them correctly and troubleshoot authentication and API issues.
 
 ## Provider Architecture Overview
 
-```
+```hcl
 OpenTofu Core                Provider Plugin              Cloud API
 -------------                ---------------              ---------
 tofu plan/apply  →  gRPC  →  aws provider binary  →  AWS API calls
@@ -42,6 +42,7 @@ terraform {
 }
 
 # Configure the AWS provider
+
 provider "aws" {
   region = "us-east-1"
 

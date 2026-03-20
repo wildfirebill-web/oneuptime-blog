@@ -1,4 +1,4 @@
-# How to Connect Portainer to an Existing Kubernetes Cluster
+# How to Connect Portainer to an Existing Kubernetes Cluster - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -39,6 +39,7 @@ Portainer can manage Kubernetes clusters that it's not running in. By installing
 
 ```bash
 # Install Portainer Agent using Helm
+
 helm repo add portainer https://portainer.github.io/k8s/
 helm repo update
 
@@ -65,7 +66,7 @@ kubectl get svc portainer-agent -n portainer -o jsonpath='{.status.loadBalancer.
 ### Step 4: Register the Environment in Portainer
 
 1. In Portainer, fill in the **Environment details**:
-   ```
+   ```text
    Name:        production-k8s
    Endpoint URL: https://agent-ip:9001
    ```
@@ -150,7 +151,7 @@ helm install portainer-edge-agent portainer/portainer-agent \
   --set env.URL="https://portainer.example.com:9443"
 ```
 
-The Edge Agent initiates an outbound connection to Portainer — no inbound firewall rules needed.
+The Edge Agent initiates an outbound connection to Portainer - no inbound firewall rules needed.
 
 ## Step 4: Verify the Connection
 

@@ -326,6 +326,7 @@ Use the **matrix** generator when you want every combination of two sets (cartes
 
 ```bash
 # Check which parameters are being merged
+
 kubectl get applicationset merged-services -n argocd -o yaml | \
   yq '.status.resources'
 

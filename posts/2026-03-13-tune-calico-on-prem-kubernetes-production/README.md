@@ -40,6 +40,7 @@ The eBPF dataplane bypasses iptables for packet processing, reducing latency and
 
 ```bash
 # Disable kube-proxy first (eBPF replaces it)
+
 kubectl patch ds -n kube-system kube-proxy \
   -p '{"spec":{"template":{"spec":{"nodeSelector":{"non-calico":"true"}}}}}'
 

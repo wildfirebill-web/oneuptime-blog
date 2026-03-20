@@ -20,6 +20,7 @@ Configure your external Fluentd aggregator to accept forwarded logs:
 
 ```xml
 # fluentd.conf on the aggregator
+
 <source>
   @type forward
   port 24224

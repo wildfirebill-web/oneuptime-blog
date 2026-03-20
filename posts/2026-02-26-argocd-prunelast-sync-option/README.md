@@ -16,6 +16,7 @@ Consider this scenario: you are refactoring a Deployment. The old Deployment is 
 
 ```yaml
 # Before (in Git):
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -281,7 +282,7 @@ If resources that should be pruned are not being deleted:
 
 PruneLast inherently makes syncs take longer because it is a two-phase process. The sync does not complete until both phases are done. This is expected behavior - the trade-off is safer deletions at the cost of slightly longer sync times.
 
-### Resources Pruned When They Should Not Be
+Resources Pruned When They Should Not Be
 
 If resources are being pruned that should stay:
 - Verify they are still in your Git manifests

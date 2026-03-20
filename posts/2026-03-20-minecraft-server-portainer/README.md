@@ -1,4 +1,4 @@
-# How to Deploy a Minecraft Server via Portainer
+# How to Deploy a Minecraft Server via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Create a new stack in Portainer:
 
 ```yaml
 # docker-compose.yml for Minecraft Server
+
 version: "3.8"
 
 services:

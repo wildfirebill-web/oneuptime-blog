@@ -103,6 +103,7 @@ The following gcloud command creates a service account specifically for publishi
 
 ```bash
 # Create service account for the order service publisher
+
 gcloud iam service-accounts create order-service-publisher \
     --display-name="Order Service Publisher" \
     --description="Service account for order service to publish events"

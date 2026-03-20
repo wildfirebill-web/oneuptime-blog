@@ -47,6 +47,7 @@ The backup feature requires explicit registration:
 
 ```bash
 # Register for the Azure NetApp Files backup feature
+
 az feature register \
   --namespace Microsoft.NetApp \
   --name ANFBackupPreview

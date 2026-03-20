@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: dpkt, TCP, IPv4, Packet Analysis, Python, Network Forensics, PCAP
+Tags: Dpkt, TCP, IPv4, Packet Analysis, Python, Network Forensics, PCAP
 
 Description: Use the Python dpkt library to parse PCAP files, reassemble TCP streams from IPv4 traffic, and extract application-layer data from raw packet captures.
 
 ## Introduction
 
-`dpkt` is a lightweight Python library for packet parsing and creation. Unlike Scapy (which is feature-rich but heavy), dpkt is fast and memory-efficient — ideal for processing large PCAP files. This guide shows how to extract and reassemble TCP streams from IPv4 captures.
+`dpkt` is a lightweight Python library for packet parsing and creation. Unlike Scapy (which is feature-rich but heavy), dpkt is fast and memory-efficient - ideal for processing large PCAP files. This guide shows how to extract and reassemble TCP streams from IPv4 captures.
 
 ## Prerequisites
 
@@ -28,6 +28,7 @@ def ip_to_str(addr):
     return socket.inet_ntoa(addr)
 
 # Open and iterate over packets in a PCAP file
+
 with open("capture.pcap", "rb") as f:
     pcap = dpkt.pcap.Reader(f)
     

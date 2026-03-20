@@ -22,6 +22,7 @@ Start with the simplest possibility - maybe the container is not writing to stdo
 
 ```bash
 # Check container logs directly through kubectl
+
 kubectl logs deployment/my-app --tail=20
 
 # If the pod has multiple containers, specify which one

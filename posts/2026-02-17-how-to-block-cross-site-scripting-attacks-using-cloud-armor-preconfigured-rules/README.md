@@ -31,6 +31,7 @@ If you do not already have a Cloud Armor security policy, create one:
 
 ```bash
 # Create a Cloud Armor security policy for WAF rules
+
 gcloud compute security-policies create xss-protection-policy \
   --description="WAF policy with XSS protection rules" \
   --project=your-project-id

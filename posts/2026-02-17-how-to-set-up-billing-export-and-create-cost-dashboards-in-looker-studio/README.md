@@ -41,6 +41,7 @@ Create the dataset first if it does not exist:
 
 ```bash
 # Create a dataset for billing data in a dedicated project
+
 bq mk --dataset \
   --location=US \
   --description="GCP billing export" \

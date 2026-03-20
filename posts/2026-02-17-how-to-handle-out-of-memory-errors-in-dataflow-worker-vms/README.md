@@ -36,6 +36,7 @@ Check the worker logs for these patterns.
 
 ```bash
 # Search for OOM-related errors in worker logs
+
 gcloud logging read 'resource.type="dataflow_step" AND
   resource.labels.job_id="JOB_ID" AND
   (jsonPayload.message:"OutOfMemoryError" OR

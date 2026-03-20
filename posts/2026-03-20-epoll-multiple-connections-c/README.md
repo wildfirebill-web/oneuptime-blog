@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, epoll, Linux, Non-Blocking, Networking
+Tags: C, IPv4, Epoll, Linux, Non-Blocking, Networking
 
 Description: Learn how to use the Linux epoll API to handle thousands of concurrent IPv4 TCP connections in a single-threaded C server with O(1) event notification.
 
@@ -146,4 +146,4 @@ event.events = EPOLLIN | EPOLLET;
 
 ## Conclusion
 
-`epoll` on Linux provides O(1) event notification regardless of the number of monitored file descriptors, making it suitable for servers with tens of thousands of connections. Use `SOCK_NONBLOCK` and `EPOLLET` (edge-triggered) for maximum performance. In edge-triggered mode, drain the socket completely in a `recv` loop until `EAGAIN` — otherwise the event won't fire again for the remaining data. Use `accept4()` with `SOCK_NONBLOCK` to create non-blocking accepted sockets atomically.
+`epoll` on Linux provides O(1) event notification regardless of the number of monitored file descriptors, making it suitable for servers with tens of thousands of connections. Use `SOCK_NONBLOCK` and `EPOLLET` (edge-triggered) for maximum performance. In edge-triggered mode, drain the socket completely in a `recv` loop until `EAGAIN` - otherwise the event won't fire again for the remaining data. Use `accept4()` with `SOCK_NONBLOCK` to create non-blocking accepted sockets atomically.

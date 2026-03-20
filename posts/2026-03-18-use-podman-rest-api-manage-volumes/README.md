@@ -32,6 +32,7 @@ Create a new volume by sending a POST request to the volumes endpoint.
 
 ```bash
 # Create a simple named volume
+
 curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   -X POST \
   -H "Content-Type: application/json" \

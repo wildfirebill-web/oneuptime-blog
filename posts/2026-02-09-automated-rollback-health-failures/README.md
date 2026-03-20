@@ -117,6 +117,7 @@ NAMESPACE="production"
 TIMEOUT=600
 
 # Wait for rollout to complete or fail
+
 kubectl rollout status deployment/$DEPLOYMENT -n $NAMESPACE --timeout=${TIMEOUT}s
 
 if [ $? -ne 0 ]; then

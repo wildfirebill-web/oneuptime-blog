@@ -63,6 +63,7 @@ The Alertmanager API lets you automate silence creation. This is essential for i
 ```bash
 #!/bin/bash
 # create-silence.sh
+
 # Creates a silence in Alertmanager for a specified duration
 
 # Configuration

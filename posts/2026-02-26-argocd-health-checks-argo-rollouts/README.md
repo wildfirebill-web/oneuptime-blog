@@ -290,6 +290,7 @@ When a rollout is paused (waiting for manual promotion or at a pause step), Argo
 
 ```yaml
 # Rollout with manual promotion gate
+
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:

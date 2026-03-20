@@ -28,6 +28,7 @@ This guide covers approaches to testing and validating the Cilium project roadma
 
 ```bash
 # Create a test cluster for upcoming features
+
 kind create cluster --name cilium-roadmap-test --config - << 'EOF'
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4

@@ -41,6 +41,7 @@ Let us start with a simple example. Suppose your application needs to connect to
 
 ```yaml
 # external-database-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

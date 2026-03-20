@@ -8,7 +8,7 @@ Description: Learn how to safely back up and restore your Portainer configuratio
 
 ---
 
-Migrating Portainer to a new server means preserving your environments, user accounts, teams, registries, and stack definitions. Portainer stores all of this in a single data volume, making migration straightforward — but there are important steps to follow to avoid data loss or broken environment connections.
+Migrating Portainer to a new server means preserving your environments, user accounts, teams, registries, and stack definitions. Portainer stores all of this in a single data volume, making migration straightforward - but there are important steps to follow to avoid data loss or broken environment connections.
 
 ---
 
@@ -16,10 +16,10 @@ Migrating Portainer to a new server means preserving your environments, user acc
 
 Portainer's persistent data is stored in the `portainer_data` Docker volume, which contains:
 
-- `portainer.db` — the main BoltDB database (users, environments, stacks, settings)
-- `certs/` — TLS certificates
-- `compose/` — stack files
-- `docker_config/` — registry credentials
+- `portainer.db` - the main BoltDB database (users, environments, stacks, settings)
+- `certs/` - TLS certificates
+- `compose/` - stack files
+- `docker_config/` - registry credentials
 
 ---
 
@@ -29,6 +29,7 @@ Always stop Portainer before copying its data to ensure a consistent backup.
 
 ```bash
 # Stop the Portainer container (do NOT use --rm)
+
 docker stop portainer
 
 # Verify it has stopped

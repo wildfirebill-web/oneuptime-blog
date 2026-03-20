@@ -14,6 +14,7 @@ Monitoring EC2 instances is essential for maintaining application performance an
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

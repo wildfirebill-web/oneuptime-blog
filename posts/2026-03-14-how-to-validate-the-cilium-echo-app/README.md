@@ -28,6 +28,7 @@ echo "=== Echo App Validation ==="
 ERRORS=0
 
 # Check echo server pods
+
 READY=$(kubectl get deployment echo-server -n cilium-test \
   -o jsonpath='{.status.readyReplicas}' 2>/dev/null)
 DESIRED=$(kubectl get deployment echo-server -n cilium-test \

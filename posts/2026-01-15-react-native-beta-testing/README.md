@@ -68,6 +68,7 @@ If you have not already created your app in App Store Connect, follow these step
 
 ```bash
 # Verify your bundle identifier in your React Native project
+
 cd ios
 grep -r "PRODUCT_BUNDLE_IDENTIFIER" *.xcodeproj/project.pbxproj
 ```

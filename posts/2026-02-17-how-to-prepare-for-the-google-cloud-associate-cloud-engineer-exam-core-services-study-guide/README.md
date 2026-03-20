@@ -38,6 +38,7 @@ Practice this command until it feels natural:
 
 ```bash
 # Create an instance with a specific machine type and boot disk
+
 gcloud compute instances create web-server \
   --zone=us-central1-a \
   --machine-type=e2-medium \

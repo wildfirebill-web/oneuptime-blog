@@ -24,6 +24,7 @@ For databases, virtualization hosts, and anything with heavy mixed read/write wo
 
 ```bash
 # Install mdadm
+
 sudo dnf install -y mdadm
 
 # Wipe all four disks

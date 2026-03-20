@@ -24,6 +24,7 @@ Start with a VPC that supports both IPv4 and IPv6:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

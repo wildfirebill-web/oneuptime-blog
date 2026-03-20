@@ -16,6 +16,7 @@ Before migrating, you need to understand what you have. ArgoCD stores Applicatio
 
 ```bash
 # List all current applications
+
 argocd app list
 
 # List all projects

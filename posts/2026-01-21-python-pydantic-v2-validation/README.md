@@ -36,6 +36,7 @@ Start with simple model definitions:
 
 ```python
 # basic_models.py
+
 # Basic Pydantic v2 model definitions
 
 from pydantic import BaseModel, Field

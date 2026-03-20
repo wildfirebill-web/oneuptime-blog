@@ -36,6 +36,7 @@ Create a simple script file:
 
 ```bash
 # Create a new script file
+
 nano hello.sh
 ```
 

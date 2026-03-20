@@ -46,6 +46,7 @@ Create an IAM policy that grants ECR pull permissions.
 
 ```bash
 # Create the IAM policy for ECR read access
+
 aws iam create-policy \
   --policy-name FluxECRReadOnly \
   --policy-document '{

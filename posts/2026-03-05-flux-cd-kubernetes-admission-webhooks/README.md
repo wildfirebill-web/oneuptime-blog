@@ -188,6 +188,7 @@ When a webhook rejects a resource, Flux reports it in the Kustomization or HelmR
 
 ```bash
 # Check for policy violations
+
 flux get kustomizations
 
 # Detailed error messages

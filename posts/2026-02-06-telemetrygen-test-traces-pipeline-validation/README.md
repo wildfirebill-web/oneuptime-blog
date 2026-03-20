@@ -18,6 +18,7 @@ telemetrygen is distributed as a standalone binary and as a container image. You
 
 ```bash
 # Install using go install (requires Go 1.21+)
+
 go install github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen@latest
 ```
 

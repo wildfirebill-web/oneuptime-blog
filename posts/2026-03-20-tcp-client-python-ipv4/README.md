@@ -16,6 +16,7 @@ A TCP client creates a socket, connects to a server's IPv4 address and port, exc
 import socket
 
 # Server to connect to
+
 SERVER_HOST = "127.0.0.1"   # Server IPv4 address
 SERVER_PORT = 9000          # Server port
 

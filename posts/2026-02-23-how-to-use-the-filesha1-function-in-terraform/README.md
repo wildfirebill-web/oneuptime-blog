@@ -16,6 +16,7 @@ The `filesha1` function reads a file and returns its SHA-1 hash:
 
 ```hcl
 # filesha1(path)
+
 # Returns the hex-encoded SHA-1 hash of a file
 filesha1("${path.module}/scripts/deploy.sh")
 # Returns something like: "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3"

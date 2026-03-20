@@ -228,6 +228,7 @@ For serverless workloads, Istio's ambient mode (if available in your version) ca
 
 ```bash
 # Label the namespace for ambient mode
+
 kubectl label namespace functions istio.io/dataplane-mode=ambient
 ```
 

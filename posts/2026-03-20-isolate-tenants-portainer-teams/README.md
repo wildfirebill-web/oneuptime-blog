@@ -12,7 +12,7 @@ Portainer Teams provide a grouping mechanism for users, and environment access c
 
 ## Step 1: Plan Your Tenant Structure
 
-```
+```bash
 Multi-tenant architecture:
 
 Portainer Server
@@ -40,6 +40,7 @@ PORTAINER_URL="https://portainer.example.com"
 ADMIN_TOKEN="admin_token"
 
 # Create Team: Alpha Corp
+
 ALPHA_TEAM=$(curl -s -X POST \
   -H "Authorization: Bearer $ADMIN_TOKEN" \
   -H "Content-Type: application/json" \
@@ -208,4 +209,4 @@ fi
 
 ## Conclusion
 
-Portainer's Teams and environment access control model maps naturally to multi-tenant scenarios. Each tenant gets a team, each environment gets access restricted to exactly one team, and team leaders can manage their environment without any visibility into other tenants. The combination of environment-level and container-level access controls provides defense-in-depth — even if a user somehow gains access to an environment, container-level labels and policies provide a second barrier. Validate your tenant isolation periodically by authenticating as a tenant user and confirming they cannot see resources belonging to other tenants.
+Portainer's Teams and environment access control model maps naturally to multi-tenant scenarios. Each tenant gets a team, each environment gets access restricted to exactly one team, and team leaders can manage their environment without any visibility into other tenants. The combination of environment-level and container-level access controls provides defense-in-depth - even if a user somehow gains access to an environment, container-level labels and policies provide a second barrier. Validate your tenant isolation periodically by authenticating as a tenant user and confirming they cannot see resources belonging to other tenants.

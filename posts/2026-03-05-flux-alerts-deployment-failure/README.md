@@ -26,6 +26,7 @@ The most direct way to capture failure notifications is to set `eventSeverity` t
 
 ```yaml
 # Alert that only captures deployment failures
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

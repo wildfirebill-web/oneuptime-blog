@@ -14,6 +14,7 @@ The umask is a permission filter. When a process creates a new file or directory
 
 ```bash
 # Check your current umask
+
 umask
 ```
 

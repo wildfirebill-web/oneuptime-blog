@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Firewall Policies, Network Security, Application Rules, IDPS, Infrastructure as Code
+Tags: OpenTofu, Azure, Firewall Policies, Network Security, Application Rules, IdP, Infrastructure as Code
 
 Description: Learn how to configure Azure Firewall Policies with OpenTofu to centrally manage network, application, and NAT rules across multiple firewalls with IDPS and TLS inspection.
 
@@ -218,6 +218,7 @@ tofu plan
 tofu apply
 
 # Check policy attachment
+
 az network firewall show \
   --resource-group <rg> \
   --name <firewall-name> \
@@ -231,4 +232,4 @@ az monitor log-analytics query \
 
 ## Conclusion
 
-Enable DNS proxy (`dns { proxy_enabled = true }`) on Firewall Policy when using FQDN-based network rules—without DNS proxy, the firewall cannot resolve FQDNs in network rules and will silently fail. Use IP Groups (`azurerm_ip_group`) to group CIDR ranges for reuse across multiple rules instead of duplicating address lists. For hierarchical organizations, create a base parent policy with organization-wide rules and child policies for team-specific overrides; child policies inherit all parent rules and can only add to them.
+Enable DNS proxy (`dns { proxy_enabled = true }`) on Firewall Policy when using FQDN-based network rules-without DNS proxy, the firewall cannot resolve FQDNs in network rules and will silently fail. Use IP Groups (`azurerm_ip_group`) to group CIDR ranges for reuse across multiple rules instead of duplicating address lists. For hierarchical organizations, create a base parent policy with organization-wide rules and child policies for team-specific overrides; child policies inherit all parent rules and can only add to them.

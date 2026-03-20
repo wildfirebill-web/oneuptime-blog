@@ -8,7 +8,7 @@ Description: Learn how to safely remove Docker networks in Portainer, including 
 
 ## Introduction
 
-Over time, Docker environments accumulate unused networks from removed stacks, completed projects, and development iterations. These networks consume minimal resources but add clutter and can cause subnet conflicts. Portainer and the Docker CLI both provide straightforward tools for removing networks — either individually or in bulk via prune operations.
+Over time, Docker environments accumulate unused networks from removed stacks, completed projects, and development iterations. These networks consume minimal resources but add clutter and can cause subnet conflicts. Portainer and the Docker CLI both provide straightforward tools for removing networks - either individually or in bulk via prune operations.
 
 ## Prerequisites
 
@@ -25,13 +25,14 @@ You must disconnect all containers before removal.
 ## Step 1: Identify Unused Networks via Portainer
 
 1. Navigate to **Networks** in Portainer.
-2. Look at the **Containers** column — networks with 0 containers are candidates for removal.
-3. Check the **Scope** — `local` networks are per-host, `swarm` networks are cluster-wide.
+2. Look at the **Containers** column - networks with 0 containers are candidates for removal.
+3. Check the **Scope** - `local` networks are per-host, `swarm` networks are cluster-wide.
 
 ## Step 2: Identify Unused Networks via CLI
 
 ```bash
 # List all networks:
+
 docker network ls
 
 # Show networks with no containers:
@@ -151,4 +152,4 @@ docker network rm stuck-network
 
 ## Conclusion
 
-Removing Docker networks is straightforward once all containers are disconnected. Use `docker network prune` for bulk cleanup of unused custom networks, and `docker network rm` for targeted removal of specific networks. Portainer's Networks page shows container counts at a glance, making it easy to identify unused networks for cleanup. Networks created by Docker Compose are automatically removed by `docker compose down` — manual removal is only needed when stacks were deleted without running the compose down command.
+Removing Docker networks is straightforward once all containers are disconnected. Use `docker network prune` for bulk cleanup of unused custom networks, and `docker network rm` for targeted removal of specific networks. Portainer's Networks page shows container counts at a glance, making it easy to identify unused networks for cleanup. Networks created by Docker Compose are automatically removed by `docker compose down` - manual removal is only needed when stacks were deleted without running the compose down command.

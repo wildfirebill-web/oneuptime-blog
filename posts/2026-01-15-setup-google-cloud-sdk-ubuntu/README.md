@@ -29,6 +29,7 @@ This method ensures you receive automatic updates and is the officially supporte
 
 ```bash
 # Update your package list to ensure you have the latest package information
+
 sudo apt-get update
 
 # Install required dependencies for adding the repository

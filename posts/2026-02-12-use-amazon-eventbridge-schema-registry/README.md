@@ -35,6 +35,7 @@ While the built-in registries are useful, you will want custom registries for yo
 
 ```bash
 # Create a custom registry for your order processing domain
+
 aws schemas create-registry \
   --registry-name "order-processing" \
   --description "Schemas for order processing events"

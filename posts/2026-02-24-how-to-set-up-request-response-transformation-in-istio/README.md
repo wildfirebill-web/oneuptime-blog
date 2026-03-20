@@ -350,6 +350,7 @@ To verify your transformations are working:
 
 ```bash
 # Check the filter chain
+
 istioctl proxy-config listeners <pod> -n <namespace> -o json
 
 # Test with verbose curl

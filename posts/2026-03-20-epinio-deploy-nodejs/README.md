@@ -21,6 +21,7 @@ How to Deploy a Node.js Application with Epinio demonstrates how Epinio simplifi
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

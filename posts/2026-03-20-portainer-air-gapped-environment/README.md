@@ -21,12 +21,13 @@ Air-gapped environments have no internet connectivity, which is common in defens
 
 ```bash
 #!/bin/bash
-# download-portainer-images.sh — Run on internet-connected machine
+# download-portainer-images.sh - Run on internet-connected machine
 
 OUTPUT_DIR="./portainer-air-gap"
 mkdir -p $OUTPUT_DIR
 
 # Define images to download
+
 IMAGES=(
   "portainer/portainer-ce:latest"
   "portainer/portainer-agent:latest"
@@ -111,7 +112,7 @@ docker images | grep -E "(portainer|nginx|postgres|redis)"
 # Create volumes
 docker volume create portainer_data
 
-# Start Portainer (now uses local image — no internet pull needed)
+# Start Portainer (now uses local image - no internet pull needed)
 docker run -d \
   --name portainer \
   --restart=unless-stopped \
@@ -165,7 +166,7 @@ Now all image deployments can reference `your-server-ip:5000/image:tag`.
 ## Step 8: Configure Docker Daemon to Trust Local Registry
 
 ```json
-// /etc/docker/daemon.json — Allow insecure local registry
+// /etc/docker/daemon.json - Allow insecure local registry
 {
   "insecure-registries": ["your-server-ip:5000", "local-registry:5000"],
   "registry-mirrors": [],
@@ -224,4 +225,4 @@ helm install portainer ./charts/portainer-1.0.51.tgz \
 
 ## Conclusion
 
-Setting up Portainer in an air-gapped environment requires careful pre-planning: download all required images before disconnecting from the internet, transfer them securely, and set up a local registry to serve images to your containers. The air-gapped setup is functionally identical to a standard deployment — Portainer doesn't require internet access to operate after initial setup. Establish a regular update process to periodically bring in new image versions through your approved transfer mechanism.
+Setting up Portainer in an air-gapped environment requires careful pre-planning: download all required images before disconnecting from the internet, transfer them securely, and set up a local registry to serve images to your containers. The air-gapped setup is functionally identical to a standard deployment - Portainer doesn't require internet access to operate after initial setup. Establish a regular update process to periodically bring in new image versions through your approved transfer mechanism.

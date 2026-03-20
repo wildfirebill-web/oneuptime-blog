@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, raspberry-pi-5, arm64, docker, home-lab
+Tags: Portainer, Raspberry-pi-5, ARM64, Docker, Home-lab
 
 Description: A guide to installing Portainer CE on the Raspberry Pi 5, taking advantage of its improved performance for running multiple containers.
 
@@ -33,6 +33,7 @@ sudo reboot
 
 ```bash
 # Docker installation script
+
 curl -fsSL https://get.docker.com | sudo sh
 
 # Add user to docker group

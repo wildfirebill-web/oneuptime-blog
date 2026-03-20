@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, gopacket, IPv6, Networking, Packet Analysis, pcap, Network Programming
+Tags: Go, Gopacket, IPv6, Networking, Packet Analysis, PCAP, Network Programming
 
 Description: Learn how to capture and analyze IPv6 packets in Go using the gopacket library, including layer decoding, ICMPv6, TCP/UDP extraction, and writing custom packet analyzers.
 
@@ -16,6 +16,7 @@ Description: Learn how to capture and analyze IPv6 packets in Go using the gopac
 
 ```bash
 # Install gopacket
+
 go get github.com/google/gopacket
 go get github.com/google/gopacket/pcap
 go get github.com/google/gopacket/layers
@@ -245,9 +246,9 @@ func captureToFile(iface, filename string) {
 ## Best Practices
 
 1. **Use BPF filters** to reduce captured traffic to only what you need
-2. **Handle errors** on layer assertion — not all packets have all layers
+2. **Handle errors** on layer assertion - not all packets have all layers
 3. **Use goroutines** for parallel packet processing at high capture rates
-4. **Prefer pcap files** for analysis — live capture needs root/CAP_NET_RAW
+4. **Prefer pcap files** for analysis - live capture needs root/CAP_NET_RAW
 5. **Use `layers.DecodingLayerParser`** for high-performance parsing at scale
 
 ---

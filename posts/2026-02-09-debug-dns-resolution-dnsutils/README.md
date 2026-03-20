@@ -26,6 +26,7 @@ Check basic DNS setup:
 
 ```bash
 # View CoreDNS service
+
 kubectl get svc -n kube-system kube-dns
 
 # Check CoreDNS pods

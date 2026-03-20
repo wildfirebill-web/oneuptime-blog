@@ -20,6 +20,7 @@ At its core, `Depends` is a callable that FastAPI evaluates before your endpoint
 
 ```python
 # basic_depends.py
+
 # Simple dependency that returns a value
 from fastapi import FastAPI, Depends
 

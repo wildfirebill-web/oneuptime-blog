@@ -36,6 +36,7 @@ TypeScript adds:
 npm install @reduxjs/toolkit react-redux
 
 # TypeScript types are included in both packages
+
 # No need for @types/react-redux with recent versions
 ```
 

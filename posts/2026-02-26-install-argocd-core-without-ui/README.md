@@ -44,6 +44,7 @@ ArgoCD provides a separate manifest for core-only installation.
 
 ```bash
 # Create the namespace
+
 kubectl create namespace argocd
 
 # Install ArgoCD in core mode
@@ -289,7 +290,7 @@ kubectl delete service argocd-server -n argocd
 kubectl delete service argocd-dex-server -n argocd
 ```
 
-## Resource Comparison
+Resource Comparison
 
 Here is roughly how much resources you save with core mode on a typical cluster:
 

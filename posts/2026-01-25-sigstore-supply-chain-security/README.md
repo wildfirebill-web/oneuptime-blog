@@ -70,6 +70,7 @@ The transparency log provides auditability without requiring trust in a single p
 
 ```bash
 # Install Cosign
+
 brew install cosign
 # Or
 go install github.com/sigstore/cosign/v2/cmd/cosign@latest

@@ -43,6 +43,7 @@ This is the most common SSH authentication error you will encounter.
 
 ```bash
 # Error message you might see
+
 fatal: [webserver1]: UNREACHABLE! => {
     "changed": false,
     "msg": "Failed to connect to the host via ssh: Permission denied (publickey).",

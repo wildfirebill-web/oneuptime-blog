@@ -20,6 +20,7 @@ Learn how to implement GitFlow branching strategy for OpenTofu infrastructure co
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

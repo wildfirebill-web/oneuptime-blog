@@ -31,6 +31,7 @@ Start with a straightforward multi-stage Dockerfile.
 
 ```dockerfile
 # Stage 1: Build the application
+
 # Use a full JDK image for compilation
 FROM eclipse-temurin:21-jdk AS builder
 

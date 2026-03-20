@@ -22,6 +22,7 @@ Start by organizing your changesets in a structured directory. Here's a sample c
 
 ```yaml
 # db-changelog-master.yaml
+
 databaseChangeLog:
   - include:
       file: db/changelog/001-initial-schema.yaml

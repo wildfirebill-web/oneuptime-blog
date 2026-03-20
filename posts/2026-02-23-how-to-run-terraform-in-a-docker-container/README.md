@@ -18,6 +18,7 @@ HashiCorp publishes official Terraform images on Docker Hub. Each version gets i
 
 ```bash
 # Pull a specific Terraform version
+
 docker pull hashicorp/terraform:1.7.5
 
 # Pull the latest version

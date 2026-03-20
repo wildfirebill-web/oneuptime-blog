@@ -14,6 +14,7 @@ CloudFront is AWS's global CDN that accelerates content delivery by caching resp
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -40,7 +41,7 @@ resource "aws_s3_bucket_public_access_block" "site" {
   restrict_public_buckets = true
 }
 
-# Origin Access Control (OAC) — modern replacement for OAI
+# Origin Access Control (OAC) - modern replacement for OAI
 resource "aws_cloudfront_origin_access_control" "main" {
   name                              = "${var.bucket_name}-oac"
   description                       = "OAC for ${var.bucket_name}"
@@ -106,7 +107,7 @@ resource "aws_cloudfront_distribution" "main" {
     }
   }
 
-  # API cache behavior — no caching for API requests
+  # API cache behavior - no caching for API requests
   ordered_cache_behavior {
     path_pattern           = "/api/*"
     target_origin_id       = "APIOrigin"
@@ -166,7 +167,7 @@ resource "aws_cloudfront_function" "spa_router" {
 ## Best Practices
 
 - Use Origin Access Control (OAC) instead of the deprecated Origin Access Identity (OAI) for new distributions.
-- Set `minimum_protocol_version = "TLSv1.2_2021"` to enforce modern TLS — older versions have known vulnerabilities.
-- Use managed cache policies rather than custom TTL settings — they're maintained by AWS and work correctly with origin cache headers.
+- Set `minimum_protocol_version = "TLSv1.2_2021"` to enforce modern TLS - older versions have known vulnerabilities.
+- Use managed cache policies rather than custom TTL settings - they're maintained by AWS and work correctly with origin cache headers.
 - Enable `compress = true` to reduce bandwidth costs and improve load times for compressible content.
 - Attach a WAF Web ACL to protect against common web attacks without changes to your origin.

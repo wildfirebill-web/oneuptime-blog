@@ -224,6 +224,7 @@ Enable debug logging to see the full SAML assertion:
 
 ```bash
 # Set debug log level
+
 kubectl patch configmap argocd-cmd-params-cm -n argocd \
   --type merge \
   -p '{"data": {"dexserver.log.level": "debug"}}'

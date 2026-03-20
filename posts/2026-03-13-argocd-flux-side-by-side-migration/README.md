@@ -27,6 +27,7 @@ Flux and ArgoCD can coexist in the same cluster without conflicts as long as the
 
 ```bash
 # Bootstrap Flux - it installs in flux-system namespace only
+
 flux bootstrap github \
   --owner=your-org \
   --repository=fleet-repo \

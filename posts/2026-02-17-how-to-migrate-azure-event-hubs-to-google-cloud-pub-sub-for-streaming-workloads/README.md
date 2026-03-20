@@ -36,6 +36,7 @@ For each Event Hub, create a corresponding Pub/Sub topic. For each consumer grou
 
 ```bash
 # Create a Pub/Sub topic (equivalent to an Event Hub)
+
 gcloud pubsub topics create events-stream
 
 # Create subscriptions (equivalent to consumer groups)

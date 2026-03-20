@@ -24,6 +24,7 @@ Let's set up weighted routing between two endpoints.
 
 ```bash
 # Create a weighted record pointing to endpoint A (gets 80% of traffic)
+
 aws route53 change-resource-record-sets \
   --hosted-zone-id Z0123456789ABCDEFGHIJ \
   --change-batch '{

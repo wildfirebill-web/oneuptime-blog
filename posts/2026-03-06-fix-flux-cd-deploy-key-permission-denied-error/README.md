@@ -25,6 +25,7 @@ Check the GitRepository resource for authentication errors.
 
 ```bash
 # Check GitRepository status
+
 kubectl get gitrepositories -A
 
 # Get detailed status with error messages

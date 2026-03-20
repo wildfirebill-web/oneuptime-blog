@@ -36,6 +36,7 @@ provider "aws" {
 
 ```hcl
 # Standard SNS topic
+
 resource "aws_sns_topic" "main" {
   name = "my-notifications-topic"
 

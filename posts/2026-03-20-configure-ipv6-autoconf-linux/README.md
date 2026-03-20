@@ -2,15 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, SLAAC, Autoconf, sysctl
+Tags: IPv6, Linux, SLAAC, Autoconf, Sysctl
 
-Description: Learn how to configure the IPv6 autoconf sysctl parameter on Linux to control Stateless Address Autoconfiguration (SLAAC) — whether the kernel generates IPv6 addresses from Router Advertisement prefixes.
+Description: Learn how to configure the IPv6 autoconf sysctl parameter on Linux to control Stateless Address Autoconfiguration (SLAAC) - whether the kernel generates IPv6 addresses from Router Advertisement...
 
 ## What is IPv6 Autoconf?
 
-The `autoconf` parameter controls whether Linux automatically generates IPv6 addresses from Router Advertisement (RA) prefixes — the SLAAC (Stateless Address Autoconfiguration) process. When a router announces a /64 prefix via RA and `autoconf=1`, the kernel generates a full /128 address by combining the prefix with an interface identifier.
+The `autoconf` parameter controls whether Linux automatically generates IPv6 addresses from Router Advertisement (RA) prefixes - the SLAAC (Stateless Address Autoconfiguration) process. When a router announces a /64 prefix via RA and `autoconf=1`, the kernel generates a full /128 address by combining the prefix with an interface identifier.
 
-```
+```text
 RA prefix: 2001:db8::/64
 + interface identifier (EUI-64 or random)
 = SLAAC address: 2001:db8::1234:5678:9abc:def0/64
@@ -20,6 +20,7 @@ RA prefix: 2001:db8::/64
 
 ```bash
 # Check current value
+
 cat /proc/sys/net/ipv6/conf/eth0/autoconf
 
 # 0 = Disable SLAAC (do not generate addresses from RA prefixes)

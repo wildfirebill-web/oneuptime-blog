@@ -14,6 +14,7 @@ Azure Database for PostgreSQL Flexible Server provides a fully managed PostgreSQ
 
 ```hcl
 # main.tf - Dedicated subnet for PostgreSQL Flexible Server
+
 resource "azurerm_subnet" "postgres_subnet" {
   name                 = "postgres-subnet"
   resource_group_name  = azurerm_resource_group.rg.name

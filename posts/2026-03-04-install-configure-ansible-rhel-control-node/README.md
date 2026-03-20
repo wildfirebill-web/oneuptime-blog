@@ -16,6 +16,7 @@ First, enable the Ansible repository and install:
 
 ```bash
 # Enable the Ansible automation platform repository
+
 sudo subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms
 
 # Install the ansible-core package

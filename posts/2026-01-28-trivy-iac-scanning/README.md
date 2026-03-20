@@ -38,6 +38,7 @@ Before scanning, install Trivy on your system. Choose the method that matches yo
 
 ```bash
 # Install via Homebrew
+
 brew install trivy
 ```
 

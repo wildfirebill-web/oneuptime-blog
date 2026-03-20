@@ -32,6 +32,7 @@ Wayland is the modern display protocol that has been replacing X11 in Ubuntu sin
 
 ```bash
 # Check if running Wayland or X11
+
 echo $XDG_SESSION_TYPE
 # Output: wayland or x11
 

@@ -40,6 +40,7 @@ Grafana can automatically load dashboards from files on startup. This is the sim
 
 ```yaml
 # /etc/grafana/provisioning/dashboards/dashboard-provider.yaml
+
 apiVersion: 1
 
 providers:

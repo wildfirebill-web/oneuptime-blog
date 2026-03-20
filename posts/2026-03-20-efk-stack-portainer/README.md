@@ -14,6 +14,7 @@ The EFK stack (Elasticsearch, Fluentd, Kibana) is the industry-standard solution
 
 ```yaml
 # docker-compose.yml - Complete EFK stack
+
 version: "3.8"
 
 services:

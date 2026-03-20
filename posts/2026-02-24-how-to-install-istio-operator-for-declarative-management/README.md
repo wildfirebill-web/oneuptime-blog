@@ -69,6 +69,7 @@ Now instead of running `istioctl install`, you create an IstioOperator custom re
 
 ```yaml
 # istio-control-plane.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

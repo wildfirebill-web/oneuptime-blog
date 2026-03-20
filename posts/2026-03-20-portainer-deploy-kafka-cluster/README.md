@@ -1,4 +1,4 @@
-# How to Deploy Kafka Cluster via Portainer
+# How to Deploy Kafka Cluster via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -120,6 +120,7 @@ volumes:
 
 ```bash
 # Check cluster metadata
+
 docker exec kafka-1 kafka-metadata-quorum.sh \
   --bootstrap-server kafka-1:9092 describe --status
 

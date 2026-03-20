@@ -30,7 +30,8 @@ BGP evaluates these attributes in order; the first decisive comparison wins:
 ### FRR (Linux / VyOS)
 
 ```bash
-# Show the BGP table for a specific prefix — asterisk (*) = valid, > = best path
+# Show the BGP table for a specific prefix - asterisk (*) = valid, > = best path
+
 vtysh -c "show ip bgp 192.0.2.0/24"
 
 # Example output:
@@ -65,7 +66,7 @@ vtysh -c "show bgp neighbor 10.0.0.1 received-routes"
 
 ### Cisco IOS Equivalent
 
-```
+```text
 ! Show BGP table for a prefix
 show ip bgp 192.0.2.0/24
 

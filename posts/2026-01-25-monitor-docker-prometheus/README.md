@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Docker, CAdvisor, Container Monitoring, Metrics, Resource Usage, Observability, DevOps
+Tags: Prometheus, Docker, cAdvisor, Container Monitoring, Metrics, Resource Usage, Observability, DevOps
 
 Description: Learn how to monitor Docker containers with Prometheus using cAdvisor and Docker Engine metrics. This guide covers setup, key metrics, alerting rules, and dashboard examples for container monitoring.
 
@@ -26,6 +26,7 @@ cAdvisor (Container Advisor) provides container users with an understanding of r
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

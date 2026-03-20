@@ -16,6 +16,7 @@ Every AWX installation exposes its API at `/api/v2/`. You can browse it in a web
 
 ```bash
 # Quick check that the API is reachable
+
 curl -s https://awx.example.com/api/v2/ | python3 -m json.tool
 ```
 

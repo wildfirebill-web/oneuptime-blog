@@ -16,6 +16,7 @@ After building with `snapcraft`, you get a `.snap` file. Install it with:
 
 ```bash
 # Install in devmode (no sandbox - for initial testing)
+
 sudo snap install --devmode my-app_1.0_amd64.snap
 
 # Install with dangerous flag (required for local snaps, any confinement)

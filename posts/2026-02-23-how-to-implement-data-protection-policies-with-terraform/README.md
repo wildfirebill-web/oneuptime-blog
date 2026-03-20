@@ -20,6 +20,7 @@ Every data store should be encrypted at rest. Here is how to enforce this across
 
 ```hcl
 # S3 bucket with mandatory encryption
+
 resource "aws_s3_bucket" "data" {
   bucket = "${var.project}-data-${var.environment}"
 

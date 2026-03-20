@@ -27,6 +27,7 @@ The first step is a complete CIDR inventory. All ranges must be non-overlapping.
 
 ```bash
 # CIDR planning worksheet - fill in your values before creating the cluster
+
 cat << 'EOF'
 === CIDR Planning Worksheet ===
 

@@ -49,6 +49,7 @@ graph TD
 
 ```bash
 # Create the Transit Gateway
+
 aws ec2 create-transit-gateway \
     --description "Central hub for all VPC connectivity" \
     --options '{

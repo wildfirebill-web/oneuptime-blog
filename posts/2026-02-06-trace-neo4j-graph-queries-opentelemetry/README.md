@@ -201,6 +201,7 @@ Python applications using the `neo4j` driver can be instrumented with a context 
 
 ```python
 # traced_neo4j.py - OpenTelemetry instrumentation for the Neo4j Python driver
+
 from opentelemetry import trace
 from opentelemetry.trace import SpanKind, StatusCode
 from neo4j import GraphDatabase

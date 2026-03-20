@@ -29,6 +29,7 @@ Plan non-overlapping CIDR ranges before deployment:
 
 ```bash
 # Complete CIDR planning checklist:
+
 # 1. Node network CIDR (where node IPs live): e.g., 192.168.0.0/24
 # 2. Service CIDR (K8s service VIPs): e.g., 10.96.0.0/12
 # 3. Pod CIDR (Cilium cluster pool): e.g., 10.244.0.0/16

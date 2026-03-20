@@ -25,6 +25,7 @@ You can also detect split-brain from the client side. Attempting to access a spl
 ```bash
 cat /mnt/repvol/some-file.txt
 # cat: /mnt/repvol/some-file.txt: Input/output error
+
 ```
 
 Check the client log for details:

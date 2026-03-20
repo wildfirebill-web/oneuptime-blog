@@ -28,6 +28,7 @@ sudo apt update
 sudo apt install monit
 
 # Check the version
+
 monit --version
 
 # The service starts automatically

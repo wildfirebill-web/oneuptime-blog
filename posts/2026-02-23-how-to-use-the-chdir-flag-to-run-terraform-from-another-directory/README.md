@@ -18,6 +18,7 @@ The `-chdir` flag must come before the subcommand:
 
 ```bash
 # Correct - -chdir goes before the subcommand
+
 terraform -chdir=environments/production plan
 
 # Wrong - this will not work

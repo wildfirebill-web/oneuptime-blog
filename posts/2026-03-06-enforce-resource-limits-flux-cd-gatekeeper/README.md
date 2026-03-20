@@ -25,6 +25,7 @@ This guide covers deploying Gatekeeper with Flux CD, creating constraint templat
 
 ```yaml
 # clusters/
+
 #   my-cluster/
 #     gatekeeper/
 #       namespace.yaml

@@ -37,6 +37,7 @@ The rejection message usually tells you exactly what is wrong:
 
 ```bash
 # Try to deploy and capture the error
+
 kubectl apply -f your-deployment.yaml 2>&1
 ```
 

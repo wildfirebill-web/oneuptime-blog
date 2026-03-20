@@ -22,6 +22,7 @@ Start by seeing what networks already exist:
 
 ```bash
 # List all Podman networks
+
 podman network ls
 
 # Get detailed information about a network

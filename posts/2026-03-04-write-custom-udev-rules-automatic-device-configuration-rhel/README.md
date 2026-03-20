@@ -20,6 +20,7 @@ Before writing a rule, identify the device attributes to match against.
 
 ```bash
 # List all device attributes for a specific device
+
 # Replace /dev/sdb with your device
 udevadm info --attribute-walk --name=/dev/sdb
 

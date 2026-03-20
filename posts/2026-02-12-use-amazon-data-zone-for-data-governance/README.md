@@ -40,6 +40,7 @@ The domain is your governance boundary. Everything lives inside it.
 
 ```bash
 # Create a DataZone domain
+
 aws datazone create-domain \
   --name "my-company-data" \
   --description "Central data governance domain for all company data" \

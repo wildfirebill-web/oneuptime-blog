@@ -18,6 +18,7 @@ Run a single Redpanda node:
 
 ```bash
 # Start Redpanda with all interfaces exposed
+
 docker run -d \
   --name redpanda \
   -p 9092:9092 \

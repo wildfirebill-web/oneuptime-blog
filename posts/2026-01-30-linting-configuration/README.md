@@ -52,6 +52,7 @@ First, initialize your project and install ESLint:
 
 ```bash
 # Initialize a new project (if needed)
+
 npm init -y
 
 # Install ESLint as a dev dependency

@@ -18,6 +18,7 @@ While Containerfiles are the standard way to build container images, they have l
 
 ```bash
 # Containerfiles are static and declarative. Buildah scripts are dynamic:
+
 # - Conditional package installation based on environment variables
 # - Looping over a list of services to build multiple images
 # - Dynamic configuration based on build arguments

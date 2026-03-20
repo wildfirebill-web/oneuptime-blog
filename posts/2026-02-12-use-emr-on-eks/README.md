@@ -108,6 +108,7 @@ Create the role and attach permissions.
 
 ```bash
 # Create the IAM role
+
 aws iam create-role \
   --role-name EMRContainersJobRole \
   --assume-role-policy-document file://trust-policy.json
@@ -303,7 +304,7 @@ kubectl logs spark-abc123-exec-1 -n spark-workloads
 kubectl top pods -n spark-workloads
 ```
 
-## Resource Quotas
+Resource Quotas
 
 To prevent Spark jobs from consuming all cluster resources, set Kubernetes resource quotas on the namespace.
 

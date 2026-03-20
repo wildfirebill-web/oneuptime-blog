@@ -37,6 +37,7 @@ The `pod-runtime-class` policy mutates pods to add security context defaults:
 
 ```yaml
 # mutation-security-context.yaml
+
 apiVersion: policies.kubewarden.io/v1
 kind: ClusterAdmissionPolicy
 metadata:

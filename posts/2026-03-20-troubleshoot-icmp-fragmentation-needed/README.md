@@ -1,4 +1,4 @@
-# How to Troubleshoot ICMP Fragmentation Needed Messages
+# How to Troubleshoot ICMP Fragmentation Needed Messages - Troubleshoot
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ ICMP type 3 code 4 "Fragmentation Needed" is the critical control message for PM
 
 ```bash
 # Capture ICMP Fragmentation Needed (type 3, code 4):
+
 tcpdump -i eth0 -n 'icmp[0] = 3 and icmp[1] = 4'
 # icmp[0] = type 3 = Destination Unreachable
 # icmp[1] = code 4 = Fragmentation Needed
@@ -30,7 +31,7 @@ ping -M do -s 1473 -c 1 10.20.0.5
 
 ## Understand the Message Structure
 
-```
+```text
 ICMP Fragmentation Needed message structure:
   IP Header (from router):
     Source:      Router IP
@@ -51,7 +52,7 @@ Critical fields:
 
 ## Wireshark Display Filters
 
-```
+```text
 # Show ICMP Fragmentation Needed:
 icmp.type == 3 and icmp.code == 4
 
@@ -136,4 +137,4 @@ nft add rule inet filter forward icmp type destination-unreachable accept
 
 ## Conclusion
 
-ICMP type 3 code 4 is the mechanism that makes PMTUD work. Capture with `tcpdump -n 'icmp[0] = 3 and icmp[1] = 4'` to verify it is flowing. If ICMP is blocked, TCP connections hang when sending large data (MTU black hole). Always allow ICMP type 3 through firewalls — per RFC 4890, blocking fragmentation needed messages breaks PMTUD and violates TCP/IP standards. The next-hop MTU field in the ICMP message tells the sender exactly what size to use, making PMTUD fast and efficient when ICMP is not filtered.
+ICMP type 3 code 4 is the mechanism that makes PMTUD work. Capture with `tcpdump -n 'icmp[0] = 3 and icmp[1] = 4'` to verify it is flowing. If ICMP is blocked, TCP connections hang when sending large data (MTU black hole). Always allow ICMP type 3 through firewalls - per RFC 4890, blocking fragmentation needed messages breaks PMTUD and violates TCP/IP standards. The next-hop MTU field in the ICMP message tells the sender exactly what size to use, making PMTUD fast and efficient when ICMP is not filtered.

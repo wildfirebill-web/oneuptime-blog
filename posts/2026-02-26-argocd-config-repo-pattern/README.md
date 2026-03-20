@@ -59,6 +59,7 @@ The CI pipeline in this repo builds and pushes the image:
 
 ```yaml
 # .github/workflows/build.yaml
+
 name: Build and Push
 on:
   push:

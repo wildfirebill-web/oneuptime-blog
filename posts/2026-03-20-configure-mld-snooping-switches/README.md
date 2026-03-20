@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, MLD, Multicast, Switch Configuration, Network
+Tags: IPv6, MLD, Multicast, Switch Configuration, Networks
 
 Description: A guide to enabling and configuring MLD snooping on network switches to efficiently forward IPv6 multicast traffic only to ports with active listeners.
 
 ## What Is MLD Snooping?
 
-MLD snooping allows a Layer 2 switch to inspect MLD messages and build a table of which switch ports have multicast listeners. Without MLD snooping, the switch floods all IPv6 multicast traffic to every port in the VLAN — wasting bandwidth and CPU on hosts that aren't listening.
+MLD snooping allows a Layer 2 switch to inspect MLD messages and build a table of which switch ports have multicast listeners. Without MLD snooping, the switch floods all IPv6 multicast traffic to every port in the VLAN - wasting bandwidth and CPU on hosts that aren't listening.
 
 With MLD snooping enabled, the switch only forwards multicast traffic to ports that have active listeners, plus the MLD querier (router) port.
 
@@ -40,6 +40,7 @@ show ipv6 mld snooping groups vlan 100
 
 ```juniper
 # Configure MLD snooping on a VLAN
+
 set protocols mld-snooping vlan v100 version 2
 set protocols mld-snooping vlan v100 interface ge-0/0/1.0 multicast-router-interface
 

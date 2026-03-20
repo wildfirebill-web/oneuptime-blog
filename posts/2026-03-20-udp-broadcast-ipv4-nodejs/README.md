@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, UDP, Broadcast, IPv4, dgram, Networking
+Tags: Node.js, UDP, Broadcast, IPv4, Dgram, Networking
 
 Description: Learn how to send and receive UDP broadcast messages over IPv4 in Node.js using the dgram module for local network service discovery.
 

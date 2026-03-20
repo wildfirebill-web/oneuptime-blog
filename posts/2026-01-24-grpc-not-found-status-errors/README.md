@@ -85,6 +85,7 @@ The grpcurl tool is invaluable for debugging gRPC services. Use it to list avail
 
 ```bash
 # List all services (requires reflection to be enabled)
+
 grpcurl -plaintext localhost:50051 list
 
 # List methods for a specific service

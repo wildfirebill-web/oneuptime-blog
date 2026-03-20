@@ -63,6 +63,7 @@ ipconfig /all
 From a Linux client:
 ```bash
 # Check for global IPv6 address
+
 ip -6 addr show scope global
 
 # Test connectivity

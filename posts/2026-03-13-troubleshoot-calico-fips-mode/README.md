@@ -24,6 +24,7 @@ The most common FIPS-related failures manifest as TLS handshake errors between C
 
 ```bash
 # Check calico-node logs
+
 kubectl logs -n calico-system ds/calico-node -c calico-node | tail -50
 
 # Common FIPS-related error patterns:

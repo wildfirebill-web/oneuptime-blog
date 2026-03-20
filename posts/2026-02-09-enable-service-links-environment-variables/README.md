@@ -194,6 +194,7 @@ Step 1: Verify applications use DNS or explicit configuration, not injected envi
 
 ```bash
 # Check if app uses service environment variables
+
 kubectl exec my-pod -- env | grep SERVICE_HOST
 ```
 

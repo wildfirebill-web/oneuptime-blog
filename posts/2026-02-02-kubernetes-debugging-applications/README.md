@@ -45,6 +45,7 @@ The following command shows detailed pod information including conditions, event
 
 ```bash
 # Get comprehensive pod details with events
+
 kubectl describe pod <pod-name> -n <namespace>
 
 # Quick status check across all pods in namespace
@@ -244,7 +245,7 @@ kubectl get pods -n <namespace> -l <policy-selector>
 kubectl exec <pod-name> -- curl -v --connect-timeout 5 http://target-service:8080
 ```
 
-## Resource Debugging
+Resource Debugging
 
 Resource constraints cause pods to be evicted, throttled, or fail to schedule. Monitor resource usage proactively.
 

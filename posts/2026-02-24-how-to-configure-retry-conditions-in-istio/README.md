@@ -199,6 +199,7 @@ Here are some practical tips for configuring retry conditions:
 
 ```bash
 # Check retry metrics for a specific service
+
 kubectl exec -it deploy/my-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep retry
 ```

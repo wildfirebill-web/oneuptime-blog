@@ -14,6 +14,7 @@ RHEL uses Wayland as the default display server for GNOME. While Wayland offers 
 
 ```bash
 # Check which display server is running
+
 echo $XDG_SESSION_TYPE
 # Output: wayland or x11
 

@@ -16,6 +16,7 @@ If you want to self-host GitLab alongside Portainer:
 
 ```yaml
 # docker-compose.yml - Self-hosted GitLab
+
 version: "3.8"
 
 networks:

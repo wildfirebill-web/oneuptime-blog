@@ -270,6 +270,7 @@ Test the connection:
 
 ```bash
 # Test with curl
+
 curl -v --resolve api.example.com:443:$INGRESS_IP https://api.example.com/health
 
 # Test with openssl to verify the backend's certificate is presented

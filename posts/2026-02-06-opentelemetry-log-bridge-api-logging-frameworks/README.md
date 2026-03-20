@@ -35,6 +35,7 @@ First, install the required packages:
 
 ```bash
 # Install the OpenTelemetry logging SDK and OTLP exporter
+
 pip install opentelemetry-sdk opentelemetry-exporter-otlp-proto-grpc
 ```
 

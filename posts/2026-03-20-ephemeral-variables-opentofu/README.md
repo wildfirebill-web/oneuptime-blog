@@ -14,6 +14,7 @@ Ephemeral variables in OpenTofu (introduced in 1.11) are a special type of varia
 
 ```hcl
 # variables.tf
+
 variable "vault_token" {
   type      = string
   ephemeral = true  # Value is never written to state

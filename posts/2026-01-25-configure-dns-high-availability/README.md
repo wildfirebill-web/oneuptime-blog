@@ -39,6 +39,7 @@ The foundation of DNS high availability is having multiple nameservers. At minim
 
 ```bash
 # /etc/named.conf on primary server (ns1.example.com)
+
 options {
     directory "/var/named";
     listen-on port 53 { any; };

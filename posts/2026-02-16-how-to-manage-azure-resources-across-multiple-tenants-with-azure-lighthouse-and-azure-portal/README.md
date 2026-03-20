@@ -47,6 +47,7 @@ For more advanced management, you can use Azure CLI or PowerShell from within th
 
 ```powershell
 # List all VMs across all delegated subscriptions
+
 $allSubs = Get-AzSubscription
 $allVMs = @()
 

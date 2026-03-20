@@ -18,6 +18,7 @@ Kubernetes tracks several conditions for each node. When any of these go bad, th
 
 ```bash
 # Check all node conditions
+
 kubectl get nodes
 kubectl describe node NODE_NAME | grep -A 20 "Conditions:"
 ```

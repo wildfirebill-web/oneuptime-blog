@@ -16,6 +16,7 @@ Calico log collection mistakes typically manifest during incidents, when you dis
 
 ```bash
 # WRONG: Enabling debug logging without a plan to revert
+
 kubectl patch felixconfiguration default \
   --type=merge -p '{"spec":{"logSeverityScreen":"Debug"}}'
 # Then forgetting about it for hours or days

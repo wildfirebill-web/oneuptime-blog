@@ -49,6 +49,7 @@ Before starting a migration, ensure both clusters meet these requirements:
 
 ```bash
 # On both clusters, verify Velero is installed and healthy
+
 velero version
 
 # Check that both clusters can access the same backup storage
@@ -457,7 +458,7 @@ velero restore create migration-restore \
         persistentvolumes
 ```
 
-### Resource Transformation Hooks
+Resource Transformation Hooks
 
 ```yaml
 # Use ConfigMap for resource transformations

@@ -33,6 +33,7 @@ The main Cilium GitHub project board organizes work by:
 
 ```bash
 # View issues labeled roadmap
+
 # Visit: https://github.com/cilium/cilium/issues?q=label:roadmap
 ```
 

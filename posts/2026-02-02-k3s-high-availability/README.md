@@ -203,6 +203,7 @@ This code block shows a sample IP allocation for a production K3s HA cluster. Ad
 
 ```bash
 # Network Planning Document
+
 # Cluster Name: production-k3s
 
 # Virtual IP for Load Balancer (floats between LB nodes)

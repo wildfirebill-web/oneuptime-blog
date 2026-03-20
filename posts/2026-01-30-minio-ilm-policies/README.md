@@ -48,6 +48,7 @@ The `mc ilm` command manages lifecycle rules. First, ensure you have an alias co
 
 ```bash
 # Configure your MinIO alias
+
 mc alias set myminio https://minio.example.com ACCESS_KEY SECRET_KEY
 ```
 

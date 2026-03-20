@@ -12,6 +12,7 @@ Once your APIM service is deployed, the next step is defining the APIs, operatio
 
 ```hcl
 # Import an API from an OpenAPI spec file
+
 resource "azurerm_api_management_api" "users" {
   name                = "users-api"
   api_management_name = azurerm_api_management.main.name
@@ -212,4 +213,4 @@ resource "azurerm_api_management_api" "orders_v1" {
 
 ## Conclusion
 
-Azure API Management API definitions in OpenTofu let you manage the full API lifecycle — import from OpenAPI specs, define operations manually, and apply policies for authentication, caching, and response transformation. Use API-level policies for cross-cutting concerns like JWT validation and backend routing, and operation-level policies for specific behavior like caching GET endpoints. Version sets enable non-breaking API evolution with header or URL segment versioning for clients that need to migrate gradually.
+Azure API Management API definitions in OpenTofu let you manage the full API lifecycle - import from OpenAPI specs, define operations manually, and apply policies for authentication, caching, and response transformation. Use API-level policies for cross-cutting concerns like JWT validation and backend routing, and operation-level policies for specific behavior like caching GET endpoints. Version sets enable non-breaking API evolution with header or URL segment versioning for clients that need to migrate gradually.

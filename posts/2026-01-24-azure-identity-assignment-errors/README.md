@@ -52,6 +52,7 @@ ERROR: The role assignment already exists.
 
 ```bash
 # List all role assignments for a managed identity
+
 PRINCIPAL_ID=$(az vm identity show \
     --resource-group myResourceGroup \
     --name myVM \

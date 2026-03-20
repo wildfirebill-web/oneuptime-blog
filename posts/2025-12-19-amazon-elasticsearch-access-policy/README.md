@@ -31,7 +31,7 @@ flowchart TB
     end
 ```
 
-## Resource-Based Access Policies
+Resource-Based Access Policies
 
 ### Allow Access from Specific IAM Role
 
@@ -226,6 +226,7 @@ flowchart TB
 
 ```bash
 # Create security group for OpenSearch
+
 aws ec2 create-security-group \
   --group-name opensearch-sg \
   --description "Security group for OpenSearch domain" \

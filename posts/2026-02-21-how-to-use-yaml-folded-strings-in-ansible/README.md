@@ -16,6 +16,7 @@ The `>` indicator replaces single newlines with spaces. Consecutive non-empty li
 
 ```yaml
 # This folded string
+
 example: >
   This is line one
   and line two

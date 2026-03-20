@@ -37,6 +37,7 @@ The most common cause is an empty environment variable in the image name:
 
 ```bash
 # BROKEN: IMAGE_TAG is empty or unset
+
 docker pull myapp:$IMAGE_TAG
 # Error: invalid reference format
 

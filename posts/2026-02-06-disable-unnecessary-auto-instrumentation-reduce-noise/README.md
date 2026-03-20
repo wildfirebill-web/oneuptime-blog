@@ -81,6 +81,7 @@ Disable specific instrumentation libraries using environment variables:
 
 ```bash
 # Disable Redis instrumentation
+
 export OTEL_PYTHON_DISABLED_INSTRUMENTATIONS=redis
 
 # Disable multiple libraries (comma-separated)

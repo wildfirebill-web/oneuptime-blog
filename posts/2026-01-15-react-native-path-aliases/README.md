@@ -164,6 +164,7 @@ First, install the plugin:
 ```bash
 npm install --save-dev babel-plugin-module-resolver
 # or
+
 yarn add --dev babel-plugin-module-resolver
 ```
 

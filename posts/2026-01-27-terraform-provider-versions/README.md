@@ -131,6 +131,7 @@ The lock file:
 
 ```bash
 # Add to version control
+
 git add .terraform.lock.hcl
 git commit -m "Add/update Terraform lock file"
 ```

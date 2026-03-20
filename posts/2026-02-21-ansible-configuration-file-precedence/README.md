@@ -41,6 +41,7 @@ This file sets defaults for every user on the system. It is created automaticall
 
 ```ini
 # /etc/ansible/ansible.cfg
+
 # System-wide defaults - applies to all users unless overridden
 [defaults]
 remote_user = ansible

@@ -42,6 +42,7 @@ Start with the workstation where you develop and upload cookbooks.
 
 ```bash
 # Download and install Chef Workstation
+
 wget https://packages.chef.io/files/stable/chef-workstation/24.2.1058/ubuntu/22.04/chef-workstation_24.2.1058-1_amd64.deb
 sudo dpkg -i chef-workstation_24.2.1058-1_amd64.deb
 

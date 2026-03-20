@@ -67,6 +67,7 @@ Flux CD uses CRDs to define notification providers and alert rules.
 
 ```yaml
 # Step 1: Define the notification provider
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

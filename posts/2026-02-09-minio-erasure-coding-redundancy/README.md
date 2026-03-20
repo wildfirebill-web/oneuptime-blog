@@ -33,6 +33,7 @@ MinIO groups drives into erasure sets. Each set operates independently with its 
 
 ```yaml
 # minio-ec-config.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

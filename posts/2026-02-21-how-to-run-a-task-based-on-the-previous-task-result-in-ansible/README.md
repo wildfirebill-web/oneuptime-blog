@@ -16,6 +16,7 @@ The pattern is straightforward: run a task, register its output, then use that o
 
 ```yaml
 # basic-chaining.yml - Simple task result chaining
+
 ---
 - name: Basic task result chaining
   hosts: all

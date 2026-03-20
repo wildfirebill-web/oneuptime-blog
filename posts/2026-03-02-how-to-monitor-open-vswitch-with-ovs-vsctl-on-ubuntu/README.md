@@ -22,6 +22,7 @@ Effective OVS monitoring requires knowing which tools to use for which tasks. Th
 
 ```bash
 # The most useful single command - shows everything
+
 sudo ovs-vsctl show
 
 # List all bridges

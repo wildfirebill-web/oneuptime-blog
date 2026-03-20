@@ -21,8 +21,9 @@ flowchart LR
 
 ## Method 1: Static Per-User Assignment
 
-```
+```text
 # /etc/freeradius/3.0/users
+
 # Fixed IPv6 address per user
 
 alice  Cleartext-Password := "secret"
@@ -67,7 +68,7 @@ ippool ipv6_pool {
 }
 ```
 
-```
+```text
 # Unlang policy: use pool for dynamic users
 # /etc/freeradius/3.0/sites-enabled/default
 
@@ -132,7 +133,7 @@ INSERT INTO radusergroup (username, groupname, priority) VALUES
 
 ## Framed-IPv6-Route for Routing
 
-```
+```text
 # Return Framed-IPv6-Route to install static route at NAS
 # Format: <prefix> <nexthop>
 
@@ -150,7 +151,7 @@ alice  Cleartext-Password := "secret"
 
 ```bash
 # Change user's IPv6 prefix dynamically via CoA
-# RFC 5176 — Disconnect Message and CoA
+# RFC 5176 - Disconnect Message and CoA
 
 cat > /tmp/coa-request.txt << 'EOF'
 User-Name = "alice"

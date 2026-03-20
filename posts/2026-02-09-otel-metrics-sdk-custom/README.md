@@ -22,6 +22,7 @@ Counters track cumulative values like total requests processed or items sold.
 
 ```python
 # counter_metrics.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

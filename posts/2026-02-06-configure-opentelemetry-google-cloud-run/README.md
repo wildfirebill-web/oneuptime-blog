@@ -42,6 +42,7 @@ Start by creating the project structure and installing dependencies.
 
 ```bash
 # Create the project directory
+
 mkdir otel-cloudrun-demo && cd otel-cloudrun-demo
 
 # Initialize the Node.js project

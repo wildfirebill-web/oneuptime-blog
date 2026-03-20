@@ -37,6 +37,7 @@ Enable the required APIs:
 
 ```bash
 # Enable Document AI, Vertex AI, and supporting services
+
 gcloud services enable \
     documentai.googleapis.com \
     aiplatform.googleapis.com \

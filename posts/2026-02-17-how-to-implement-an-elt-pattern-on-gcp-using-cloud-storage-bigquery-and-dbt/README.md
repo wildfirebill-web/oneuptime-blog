@@ -42,6 +42,7 @@ Here is a Cloud Function that extracts data from a REST API:
 
 ```python
 # extract_api_data.py - Cloud Function to extract data from an API to GCS
+
 import functions_framework
 from google.cloud import storage
 from datetime import datetime

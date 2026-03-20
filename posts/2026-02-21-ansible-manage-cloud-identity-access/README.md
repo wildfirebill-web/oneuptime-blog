@@ -31,6 +31,7 @@ First, install the required collection:
 
 ```bash
 # Install the AWS collection for IAM modules
+
 ansible-galaxy collection install amazon.aws community.aws
 ```
 

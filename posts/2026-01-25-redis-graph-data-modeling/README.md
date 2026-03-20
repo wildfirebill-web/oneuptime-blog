@@ -45,6 +45,7 @@ RedisGraph runs as a Redis module. You can load it into an existing Redis instan
 
 ```bash
 # Using Docker - the simplest way to get started
+
 docker run -p 6379:6379 redis/redis-stack:latest
 
 # Or load the module into existing Redis

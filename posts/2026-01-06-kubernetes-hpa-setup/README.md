@@ -40,6 +40,7 @@ The Metrics Server collects resource metrics from kubelets and exposes them via 
 
 ```bash
 # Check if metrics server is already installed
+
 kubectl get deployment metrics-server -n kube-system
 
 # Install if missing - this deploys the metrics server

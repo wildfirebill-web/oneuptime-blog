@@ -33,6 +33,7 @@ Check if UFW is installed on your system:
 
 ```bash
 # Check UFW version and installation status
+
 which ufw
 ufw --version
 ```

@@ -1,4 +1,4 @@
-# How to Deploy MariaDB via Portainer
+# How to Deploy MariaDB via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -64,6 +64,7 @@ Create `mariadb.cnf`:
 ```ini
 [mysqld]
 # Character set and collation
+
 character-set-server = utf8mb4
 collation-server = utf8mb4_unicode_ci
 

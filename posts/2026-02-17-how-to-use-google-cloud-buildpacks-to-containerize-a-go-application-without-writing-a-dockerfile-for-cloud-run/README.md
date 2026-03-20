@@ -131,6 +131,7 @@ The `pack` CLI is the standard tool for building with buildpacks locally:
 
 ```bash
 # Install pack CLI
+
 # On macOS
 brew install buildpacks/tap/pack
 

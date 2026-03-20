@@ -37,6 +37,7 @@ Generate a self-signed CA certificate:
 # generate-ca.sh
 
 # Generate CA private key
+
 openssl genrsa -out ca.key 4096
 
 # Generate CA certificate

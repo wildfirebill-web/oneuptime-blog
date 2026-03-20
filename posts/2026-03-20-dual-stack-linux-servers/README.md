@@ -14,6 +14,7 @@ Configuring dual-stack on Linux means assigning both IPv4 and IPv6 addresses to 
 
 ```bash
 # Show addresses for all interfaces
+
 ip addr show
 
 # Sample output for dual-stack interface:
@@ -71,7 +72,7 @@ networkctl status eth0
 ## NetworkManager Configuration
 
 ```bash
-# Using nmcli — set both IPv4 and IPv6 on a connection
+# Using nmcli - set both IPv4 and IPv6 on a connection
 nmcli connection modify "Wired connection 1" \
     ipv4.addresses "192.0.2.10/24" \
     ipv4.gateway "192.0.2.1" \
@@ -139,7 +140,7 @@ iface eth0 inet6 static
 ```bash
 # /etc/sysctl.d/60-ipv6.conf
 
-# Enable IPv6 forwarding (for routers — leave 0 on hosts)
+# Enable IPv6 forwarding (for routers - leave 0 on hosts)
 # net.ipv6.conf.all.forwarding = 1
 
 # Disable IPv6 on specific interface only (if needed)
@@ -148,7 +149,7 @@ iface eth0 inet6 static
 # Accept Router Advertisements (needed for SLAAC/default route via RA)
 net.ipv6.conf.eth0.accept_ra = 1
 
-# Privacy extensions (RFC 4941) — use temporary addresses for outbound
+# Privacy extensions (RFC 4941) - use temporary addresses for outbound
 net.ipv6.conf.all.use_tempaddr = 2
 
 # Prevent IPv6 from being disabled globally

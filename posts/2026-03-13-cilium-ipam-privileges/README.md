@@ -28,6 +28,7 @@ Required Linux capabilities for Cilium agents:
 
 ```yaml
 # Cilium requires these Linux capabilities for IPAM:
+
 # NET_ADMIN    - Configure network interfaces and routing
 # SYS_MODULE   - Load kernel modules (optional, for some features)
 # NET_RAW      - Create raw sockets for network operations

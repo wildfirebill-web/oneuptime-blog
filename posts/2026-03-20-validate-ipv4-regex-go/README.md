@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Regex, IPv4, Validation, regexp, Networking
+Tags: Go, Regex, IPv4, Validation, Regexp, Networking
 
 Description: Learn how to validate IPv4 address strings using regular expressions in Go, using a strict octet-range pattern compiled once with the regexp package.
 
@@ -16,12 +16,12 @@ import (
     "regexp"
 )
 
-// Naive: accepts 999.999.999.999 — does not check octet range
+// Naive: accepts 999.999.999.999 - does not check octet range
 var naiveIPv4 = regexp.MustCompile(`^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$`)
 
 func main() {
     fmt.Println(naiveIPv4.MatchString("192.168.1.1"))    // true
-    fmt.Println(naiveIPv4.MatchString("999.999.999.999")) // true — WRONG
+    fmt.Println(naiveIPv4.MatchString("999.999.999.999")) // true - WRONG
 }
 ```
 
@@ -35,7 +35,7 @@ import (
     "regexp"
 )
 
-// Compile once at package level — regexp.Regexp is safe for concurrent use
+// Compile once at package level - regexp.Regexp is safe for concurrent use
 var strictIPv4 = regexp.MustCompile(
     `^(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)` +
     `(?:\.(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)){3}$`,
@@ -157,4 +157,4 @@ func BenchmarkParseIP(b *testing.B) {
 
 ## Conclusion
 
-In Go, always compile the `regexp.Regexp` with `regexp.MustCompile` at package level — `*regexp.Regexp` is safe for concurrent use and compilation happens once. The strict alternation pattern correctly validates the 0-255 range and rejects leading zeros. For pure validation (not extraction), prefer `net.ParseIP(s).To4() != nil` which is simpler and typically faster. Use the regex approach only when you need to extract IPs from freeform text.
+In Go, always compile the `regexp.Regexp` with `regexp.MustCompile` at package level - `*regexp.Regexp` is safe for concurrent use and compilation happens once. The strict alternation pattern correctly validates the 0-255 range and rejects leading zeros. For pure validation (not extraction), prefer `net.ParseIP(s).To4() != nil` which is simpler and typically faster. Use the regex approach only when you need to extract IPs from freeform text.

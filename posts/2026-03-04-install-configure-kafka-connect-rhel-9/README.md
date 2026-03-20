@@ -43,6 +43,7 @@ graph LR
 
 ```bash
 # Install Java 17
+
 sudo dnf install -y java-17-openjdk
 
 # Create a Kafka user

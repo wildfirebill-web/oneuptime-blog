@@ -10,7 +10,7 @@ A site-to-site VPN connects two entire networks rather than individual clients. 
 
 ## Topology
 
-```
+```text
 Site A (Office):        Site B (Data Center):
 192.168.1.0/24          192.168.2.0/24
        |                        |
@@ -27,6 +27,7 @@ Site A (Office):        Site B (Data Center):
 [Interface]
 PrivateKey = <ROUTER_A_PRIVATE_KEY>
 # WireGuard tunnel IP for Router A
+
 Address = 10.10.0.1/30
 ListenPort = 51820
 

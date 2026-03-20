@@ -22,6 +22,7 @@ Pull and run Neo4j with a single command.
 
 ```bash
 # Start Neo4j with the browser UI exposed on port 7474
+
 # and the Bolt protocol on port 7687
 docker run -d \
   --name neo4j \

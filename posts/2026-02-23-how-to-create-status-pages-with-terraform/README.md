@@ -33,6 +33,7 @@ provider "aws" {
 }
 
 # S3 bucket for hosting the static status page
+
 resource "aws_s3_bucket" "status_page" {
   bucket = "status.${var.domain}"
 }

@@ -23,6 +23,7 @@ These two commands serve different purposes and are often confused.
 
 ```bash
 # podman load: restores a saved image (preserves layers)
+
 podman load -i saved-image.tar
 
 # podman import: creates a new image from a filesystem export

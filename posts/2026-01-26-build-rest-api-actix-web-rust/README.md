@@ -655,6 +655,7 @@ Test the endpoints:
 
 ```bash
 # Health check
+
 curl http://localhost:8080/api/v1/health
 
 # Create a task

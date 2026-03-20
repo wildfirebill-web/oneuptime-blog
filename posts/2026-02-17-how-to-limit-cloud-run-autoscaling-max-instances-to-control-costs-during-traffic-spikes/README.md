@@ -28,6 +28,7 @@ That is for a single service. If you have multiple services scaling simultaneous
 
 ```bash
 # Deploy with a max instances limit
+
 gcloud run deploy my-service \
   --image=us-central1-docker.pkg.dev/MY_PROJECT/my-repo/my-app:latest \
   --region=us-central1 \

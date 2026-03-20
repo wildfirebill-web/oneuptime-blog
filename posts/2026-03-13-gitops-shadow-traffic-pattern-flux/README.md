@@ -29,6 +29,7 @@ Deploy the new version as a separate Deployment alongside the stable version. Th
 
 ```yaml
 # apps/my-app/base/deployment-stable.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

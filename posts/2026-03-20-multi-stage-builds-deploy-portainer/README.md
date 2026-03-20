@@ -23,6 +23,7 @@ A typical Go application without multi-stage builds might produce a 1GB image wi
 
 ```dockerfile
 # Stage 1: Dependencies
+
 FROM node:20-alpine AS deps
 WORKDIR /app
 COPY package*.json ./

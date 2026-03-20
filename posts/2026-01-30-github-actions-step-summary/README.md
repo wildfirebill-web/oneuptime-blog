@@ -158,9 +158,9 @@ Include code snippets with proper syntax highlighting.
         run: |
           echo "## Configuration Changes" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`diff" >> $GITHUB_STEP_SUMMARY
+          echo "```diff" >> $GITHUB_STEP_SUMMARY
           git diff HEAD~1 -- config/ >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
 ```
 
 This displays configuration changes as a diff with color-coded additions and deletions.
@@ -196,9 +196,9 @@ Use HTML details elements for verbose output that most readers can skip.
           echo "<details>" >> $GITHUB_STEP_SUMMARY
           echo "<summary>Click to expand full build output</summary>" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
           cat build.log >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
           echo "</details>" >> $GITHUB_STEP_SUMMARY
 ```
 
@@ -281,6 +281,7 @@ For complex summaries, use a dedicated script rather than inline YAML.
 set -e
 
 # Input files
+
 TEST_RESULTS="${1:-test-results.json}"
 LINT_RESULTS="${2:-lint-results.json}"
 COVERAGE_REPORT="${3:-coverage/coverage-summary.json}"
@@ -387,9 +388,9 @@ GitHub imposes a 1MB limit per step summary. Keep summaries focused:
         run: |
           echo "## Error Log (last 50 lines)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
           tail -50 error.log >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Full log available in workflow artifacts." >> $GITHUB_STEP_SUMMARY
 ```

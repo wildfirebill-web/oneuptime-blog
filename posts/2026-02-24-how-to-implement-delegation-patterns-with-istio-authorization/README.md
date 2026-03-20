@@ -40,6 +40,7 @@ Now each service in the chain can authorize based on the original user's claims:
 
 ```yaml
 # Order service: allow users with "customer" role
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

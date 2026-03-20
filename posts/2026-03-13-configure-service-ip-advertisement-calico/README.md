@@ -26,6 +26,7 @@ Add the cluster's service CIDR to the BGP configuration for advertisement:
 
 ```bash
 # Get the service CIDR from kube-apiserver configuration
+
 kubectl cluster-info dump | grep service-cluster-ip-range
 # Typical output: --service-cluster-ip-range=10.96.0.0/12
 ```

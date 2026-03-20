@@ -42,6 +42,7 @@ Generate the base configuration:
 
 ```bash
 # Generate configs targeting the VIP endpoint
+
 talosctl gen config ha-cluster https://192.168.1.100:6443 \
   --output-dir _out
 ```

@@ -12,7 +12,7 @@ A well-planned IPv4 addressing scheme is the foundation of a maintainable, scala
 
 ## Guiding Principles
 
-1. **Use private address space**: RFC 1918 — 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
+1. **Use private address space**: RFC 1918 - 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
 2. **Summarize at boundaries**: Each site, building, or zone should be a summarizable block
 3. **Leave room to grow**: Allocate 2–4x more space than needed today
 4. **Consistent structure**: Same subnet sizes for same-purpose segments across all sites
@@ -32,56 +32,56 @@ For a multi-site enterprise, use `10.0.0.0/8` to give maximum flexibility.
 
 Divide the 10.0.0.0/8 space into three levels:
 
-```
-10.0.0.0/8 — Global enterprise
-  └── 10.SITE.0.0/16 — Per-site allocation (256 sites possible)
-        └── 10.SITE.VLAN.0/24 — Per-VLAN/function subnet
+```javascript
+10.0.0.0/8 - Global enterprise
+  └── 10.SITE.0.0/16 - Per-site allocation (256 sites possible)
+        └── 10.SITE.VLAN.0/24 - Per-VLAN/function subnet
 ```
 
 ### Site Allocation
 
-```
-10.1.0.0/16   — Site: New York HQ
-10.2.0.0/16   — Site: London Office
-10.3.0.0/16   — Site: Singapore Office
-10.10.0.0/16  — Data Center 1
-10.11.0.0/16  — Data Center 2
-10.20.0.0/16  — AWS VPC (us-east-1)
-10.21.0.0/16  — AWS VPC (eu-west-1)
-10.100.0.0/16 — Management/OOB
+```text
+10.1.0.0/16   - Site: New York HQ
+10.2.0.0/16   - Site: London Office
+10.3.0.0/16   - Site: Singapore Office
+10.10.0.0/16  - Data Center 1
+10.11.0.0/16  - Data Center 2
+10.20.0.0/16  - AWS VPC (us-east-1)
+10.21.0.0/16  - AWS VPC (eu-west-1)
+10.100.0.0/16 - Management/OOB
 ```
 
 ### Per-Site Subnet Allocation (consistent across all sites)
 
-```
-10.SITE.0.0/24     — Site infrastructure (routers, switches)
-10.SITE.1.0/24     — Server VLAN
-10.SITE.2.0/24     — Workstation VLAN
-10.SITE.3.0/24     — VoIP VLAN
-10.SITE.4.0/24     — Wireless VLAN
-10.SITE.5.0/24     — IoT / OT devices
-10.SITE.6.0/24     — DMZ
-10.SITE.10.0/23    — Guest WiFi (larger /23 for more devices)
-10.SITE.20.0/24    — Point-to-point links (/30 or /31 within this)
+```text
+10.SITE.0.0/24     - Site infrastructure (routers, switches)
+10.SITE.1.0/24     - Server VLAN
+10.SITE.2.0/24     - Workstation VLAN
+10.SITE.3.0/24     - VoIP VLAN
+10.SITE.4.0/24     - Wireless VLAN
+10.SITE.5.0/24     - IoT / OT devices
+10.SITE.6.0/24     - DMZ
+10.SITE.10.0/23    - Guest WiFi (larger /23 for more devices)
+10.SITE.20.0/24    - Point-to-point links (/30 or /31 within this)
 ```
 
 ## Example: New York HQ (Site 1)
 
-```
-10.1.0.0/24    — Network infrastructure
-10.1.1.0/24    — Servers (254 hosts)
-10.1.2.0/24    — Workstations
-10.1.3.0/24    — VoIP phones
-10.1.4.0/24    — Corporate WiFi
-10.1.10.0/23   — Guest WiFi (512 hosts, DHCP range)
-10.1.20.0/24   — WAN/P2P links (subdivide into /30s)
+```text
+10.1.0.0/24    - Network infrastructure
+10.1.1.0/24    - Servers (254 hosts)
+10.1.2.0/24    - Workstations
+10.1.3.0/24    - VoIP phones
+10.1.4.0/24    - Corporate WiFi
+10.1.10.0/23   - Guest WiFi (512 hosts, DHCP range)
+10.1.20.0/24   - WAN/P2P links (subdivide into /30s)
 ```
 
 ## Documenting the Scheme
 
 Maintain documentation in a structured format:
 
-```
+```text
 Site: New York HQ (Site 1)
 Aggregate: 10.1.0.0/16
 Date Allocated: 2026-01-15
@@ -96,8 +96,9 @@ VLAN 30 (VoIP)       : 10.1.3.0/24   GW: 10.1.3.1   DHCP: Y  (10.1.3.10-200)
 
 With this hierarchical scheme, you can summarize per-site:
 
-```
+```text
 # On the core router:
+
 # Route all New York traffic to the NY router
 ip route 10.1.0.0/16 via 10.0.0.2
 ```
@@ -106,4 +107,4 @@ This keeps routing tables small and manageable.
 
 ## Conclusion
 
-A hierarchical, site-based IPv4 addressing scheme enables clean summarization, consistent documentation, and painless expansion. Invest time in planning before deployment — renumbering a live network is expensive and error-prone.
+A hierarchical, site-based IPv4 addressing scheme enables clean summarization, consistent documentation, and painless expansion. Invest time in planning before deployment - renumbering a live network is expensive and error-prone.

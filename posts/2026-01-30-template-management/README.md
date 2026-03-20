@@ -89,6 +89,7 @@ The `template.yaml` file contains everything the platform needs to know about yo
 
 ```yaml
 # templates/service-nodejs/template.yaml
+
 apiVersion: platform.company.com/v1
 kind: ServiceTemplate
 metadata:
@@ -1125,7 +1126,7 @@ sequenceDiagram
 
 ### GitOps Integration
 
-```typescript
+````typescript
 // src/deploy/gitops.ts
 interface DeploymentRequest {
   serviceName: string;
@@ -1245,9 +1246,9 @@ spec:
 - **Environment**: ${request.environment}
 
 ### Values
-\`\`\`yaml
+```yaml
 ${JSON.stringify(request.values, null, 2)}
-\`\`\`
+```
 `;
 
     if (warnings.length > 0) {
@@ -1439,7 +1440,7 @@ components:
         dryRun:
           type: boolean
           default: false
-```
+````
 
 ## Best Practices
 

@@ -38,6 +38,7 @@ This command connects to the instance using your private key:
 
 ```bash
 # Replace with your key path and instance IP
+
 ssh -i ~/.ssh/oracle_key opc@<PUBLIC_IP>
 ```
 

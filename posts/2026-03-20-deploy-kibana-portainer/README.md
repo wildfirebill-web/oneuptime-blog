@@ -61,7 +61,7 @@ volumes:
 
 ## Environment Variables
 
-```
+```text
 ELASTIC_PASSWORD = elastic-password
 KIBANA_PASSWORD = kibana-system-password
 ```
@@ -70,6 +70,7 @@ KIBANA_PASSWORD = kibana-system-password
 
 ```bash
 # Run after Elasticsearch starts
+
 docker exec elasticsearch curl -u elastic:${ELASTIC_PASSWORD} \
   -X POST "http://localhost:9200/_security/user/kibana_system/_password" \
   -H "Content-Type: application/json" \
@@ -122,4 +123,4 @@ Add Nginx proxy host in NPM pointing to `http://kibana:5601`.
 
 ## Conclusion
 
-Kibana via Portainer provides a powerful data visualization and log analysis platform on top of Elasticsearch. The `depends_on` with `service_healthy` condition ensures Kibana doesn't start before Elasticsearch is ready — preventing the common "Kibana can't connect" issue during stack startup.
+Kibana via Portainer provides a powerful data visualization and log analysis platform on top of Elasticsearch. The `depends_on` with `service_healthy` condition ensures Kibana doesn't start before Elasticsearch is ready - preventing the common "Kibana can't connect" issue during stack startup.

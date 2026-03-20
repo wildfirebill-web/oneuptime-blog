@@ -8,7 +8,7 @@ Description: Learn how to connect multiple K3s clusters with Submariner to enabl
 
 ## Introduction
 
-As organizations grow, they often need multiple Kubernetes clusters — for geographic distribution, isolation, or separate team environments. Submariner is a CNCF project that connects multiple Kubernetes clusters, enabling pods to communicate across cluster boundaries and service discovery between clusters. This guide covers setting up Submariner between two or more K3s clusters.
+As organizations grow, they often need multiple Kubernetes clusters - for geographic distribution, isolation, or separate team environments. Submariner is a CNCF project that connects multiple Kubernetes clusters, enabling pods to communicate across cluster boundaries and service discovery between clusters. This guide covers setting up Submariner between two or more K3s clusters.
 
 ## Architecture Overview
 
@@ -33,8 +33,9 @@ graph LR
 
 Submariner requires non-overlapping pod and service CIDRs:
 
-```
+```text
 # Cluster 1 (US East)
+
 Pod CIDR:     10.42.0.0/16
 Service CIDR: 10.43.0.0/16
 
@@ -272,4 +273,4 @@ curl http://localhost:9898/metrics | grep submariner
 
 ## Conclusion
 
-Submariner enables powerful multi-cluster K3s architectures where services and pods can communicate transparently across cluster boundaries. This is valuable for geographically distributed deployments, active-active disaster recovery setups, and gradual cluster migrations. The `clusterset.local` DNS domain makes cross-cluster service discovery transparent to applications — they simply use a different DNS suffix to reach services in other clusters. For K3s edge deployments with a central HQ cluster, Submariner provides the network foundation for distributed workloads.
+Submariner enables powerful multi-cluster K3s architectures where services and pods can communicate transparently across cluster boundaries. This is valuable for geographically distributed deployments, active-active disaster recovery setups, and gradual cluster migrations. The `clusterset.local` DNS domain makes cross-cluster service discovery transparent to applications - they simply use a different DNS suffix to reach services in other clusters. For K3s edge deployments with a central HQ cluster, Submariner provides the network foundation for distributed workloads.

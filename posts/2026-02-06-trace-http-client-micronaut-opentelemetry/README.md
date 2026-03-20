@@ -48,6 +48,7 @@ Configure OpenTelemetry and the HTTP client:
 
 ```yaml
 # application.yml
+
 tracing:
   enabled: true
 

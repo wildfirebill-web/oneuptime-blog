@@ -112,6 +112,7 @@ access to queue 'admin_queue' in vhost '/' refused for user 'app_user'
 
 ```bash
 # List permissions for a user
+
 rabbitmqctl list_user_permissions app_user
 
 # Grant permissions

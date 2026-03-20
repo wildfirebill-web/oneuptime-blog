@@ -514,6 +514,7 @@ Build and use this checker:
 
 ```dockerfile
 # Dockerfile for dependency-checker
+
 FROM golang:1.21-alpine AS builder
 WORKDIR /build
 COPY go.mod go.sum ./

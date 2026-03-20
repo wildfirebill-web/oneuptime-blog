@@ -27,6 +27,7 @@ The simplest approach is to have Ansible prompt you for the password at runtime:
 
 ```bash
 # Prompt for the sudo password interactively
+
 ansible-playbook --ask-become-pass deploy.yml
 
 # Short form

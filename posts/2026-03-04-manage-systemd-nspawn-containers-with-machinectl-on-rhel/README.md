@@ -14,6 +14,7 @@ machinectl is the management interface for systemd-nspawn containers. It provide
 
 ```bash
 # Show running containers and VMs
+
 machinectl list
 
 # Show all registered machine images (running or stopped)

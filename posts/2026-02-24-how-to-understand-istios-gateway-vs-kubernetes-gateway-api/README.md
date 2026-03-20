@@ -159,6 +159,7 @@ spec:
 
 ```bash
 # After creating a K8s Gateway API Gateway:
+
 kubectl get deploy -n default
 # NAME           READY
 # my-gateway     1/1     # Automatically created

@@ -30,6 +30,7 @@ Apply the following Helm values to configure cilium networking architecture:
 
 ```yaml
 # cilium-architecture-values.yaml
+
 # Configuration reflecting Cilium architecture components
 
 # Cilium Agent settings

@@ -20,6 +20,7 @@ Strings work the way you would expect. You can use double quotes or heredoc synt
 
 ```python
 # Simple string
+
 name = "my-resource"
 
 # String concatenation

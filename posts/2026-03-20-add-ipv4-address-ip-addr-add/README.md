@@ -8,12 +8,13 @@ Description: Add an IPv4 address to a network interface using the ip addr add co
 
 ## Introduction
 
-`ip addr add` assigns an IPv4 address to a network interface. Changes take effect immediately but are not persistent across reboots — use Netplan, nmcli, or systemd-networkd for persistent configuration.
+`ip addr add` assigns an IPv4 address to a network interface. Changes take effect immediately but are not persistent across reboots - use Netplan, nmcli, or systemd-networkd for persistent configuration.
 
 ## Add an IPv4 Address
 
 ```bash
 # Add 192.168.1.100/24 to eth0
+
 ip addr add 192.168.1.100/24 dev eth0
 
 # Verify

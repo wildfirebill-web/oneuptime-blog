@@ -57,6 +57,7 @@ Start by understanding what roles are currently granted:
 
 ```bash
 # List all IAM bindings in a project
+
 gcloud projects get-iam-policy my-project \
     --format="table(bindings.role, bindings.members.flatten())"
 ```

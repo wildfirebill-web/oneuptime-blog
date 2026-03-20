@@ -6,11 +6,11 @@ Tags: Traceroute, Tracepath, Linux, Networking, MTU, Diagnostics
 
 Description: Compare traceroute and tracepath on Linux, understand when to use each, and leverage tracepath's unique ability to discover path MTU alongside hop information.
 
-Both tools map network paths but work differently. `tracepath` doesn't require root privileges and automatically discovers Path MTU — making it ideal for quick diagnostics from non-privileged user accounts.
+Both tools map network paths but work differently. `tracepath` doesn't require root privileges and automatically discovers Path MTU - making it ideal for quick diagnostics from non-privileged user accounts.
 
 ## Key Differences
 
-```
+```bash
 Feature              traceroute           tracepath
 -------------------  -------------------  -----------------------
 Requires root?       Yes (for ICMP/TCP)   No (uses UDP unprivileged)
@@ -26,6 +26,7 @@ Installation         sudo apt install     Usually pre-installed
 
 ```bash
 # Basic tracepath (no root needed)
+
 tracepath google.com
 
 # Skip DNS resolution (faster)
@@ -47,9 +48,9 @@ tracepath -n 8.8.8.8
 tracepath -n 192.168.1.1
 
 # Key fields:
-# "pmtu 1500" — Path MTU discovered at this point in the path
-# "asymm 4"   — Asymmetric route: forward hops ≠ return hops
-# "reached"   — Destination responded
+# "pmtu 1500" - Path MTU discovered at this point in the path
+# "asymm 4"   - Asymmetric route: forward hops ≠ return hops
+# "reached"   - Destination responded
 
 # If MTU changes:
 # 1:  192.168.1.1    pmtu 1500

@@ -14,6 +14,7 @@ IPv6 addresses must be enclosed in brackets in the inventory file:
 
 ```ini
 # inventory.ini - Hosts with IPv6 addresses
+
 [web_servers]
 # Direct IPv6 address (requires bracket notation)
 web-01 ansible_host=[2001:db8::10]
@@ -69,7 +70,7 @@ timeout = 60
 
 Add IPv6 host entries to `~/.ssh/config` for easier management:
 
-```
+```text
 # ~/.ssh/config - SSH client config for IPv6 managed hosts
 Host 2001:db8:*
     User ubuntu
@@ -138,4 +139,4 @@ ansible all -m ping -i inventory.yaml
 ansible all -m setup -a "filter=ansible_all_ipv6_addresses" -i inventory.yaml
 ```
 
-Connecting Ansible to IPv6 hosts is straightforward once the inventory syntax and SSH configuration are correct — using `-6` SSH extra args and bracket notation for addresses ensures reliable IPv6-only management.
+Connecting Ansible to IPv6 hosts is straightforward once the inventory syntax and SSH configuration are correct - using `-6` SSH extra args and bracket notation for addresses ensures reliable IPv6-only management.

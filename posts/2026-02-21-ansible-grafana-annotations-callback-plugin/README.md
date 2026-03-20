@@ -24,6 +24,7 @@ You need:
 
 ```bash
 # Install the Grafana collection
+
 ansible-galaxy collection install community.grafana
 
 # The collection includes the grafana_annotations callback

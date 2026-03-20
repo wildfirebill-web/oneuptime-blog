@@ -87,6 +87,7 @@ On **all nodes**, update `/etc/hosts`:
 
 ```bash
 # Edit the hosts file on all nodes
+
 sudo nano /etc/hosts
 ```
 
@@ -382,7 +383,7 @@ sudo pcs status nodes
 
 Resources are the services or applications managed by the cluster. Pacemaker supports various resource types.
 
-### Resource Types
+Resource Types
 
 1. **Primitive**: Single instance of a resource
 2. **Clone**: Resource running on multiple nodes
@@ -575,7 +576,7 @@ sudo pcs constraint order
 sudo pcs constraint --full
 ```
 
-### Resource Sets
+Resource Sets
 
 For complex constraints involving multiple resources:
 
@@ -751,7 +752,7 @@ sudo pcs node unstandby node2
 sudo pcs config
 ```
 
-### Resource Management
+Resource Management
 
 ```bash
 # List all resources

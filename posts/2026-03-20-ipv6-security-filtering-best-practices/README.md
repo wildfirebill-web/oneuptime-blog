@@ -19,15 +19,15 @@ RFC 4890 is the authoritative guide on which ICMPv6 messages to allow and which 
 | Type | Name | Why Critical |
 |------|------|-------------|
 | 1 | Destination Unreachable | Path failure notification |
-| 2 | Packet Too Big | Required for PMTUD — must never be blocked |
+| 2 | Packet Too Big | Required for PMTUD - must never be blocked |
 | 3 | Time Exceeded | Traceroute, loop detection |
 | 4 | Parameter Problem | Malformed packet notification |
 | 128 | Echo Request | Reachability testing (allow selectively) |
 | 129 | Echo Reply | Response to echo request |
-| 133 | Router Solicitation | SLAAC — link-local only |
-| 134 | Router Advertisement | SLAAC — link-local only, filter at perimeter |
-| 135 | Neighbor Solicitation | NDP — link-local only |
-| 136 | Neighbor Advertisement | NDP — link-local only |
+| 133 | Router Solicitation | SLAAC - link-local only |
+| 134 | Router Advertisement | SLAAC - link-local only, filter at perimeter |
+| 135 | Neighbor Solicitation | NDP - link-local only |
+| 136 | Neighbor Advertisement | NDP - link-local only |
 
 ### May Block at Perimeter
 
@@ -45,6 +45,7 @@ RFC 4890 is the authoritative guide on which ICMPv6 messages to allow and which 
 # IPv6 best practice filtering policy
 
 # Flush existing rules
+
 ip6tables -F
 ip6tables -X
 
@@ -60,8 +61,8 @@ ip6tables -A INPUT -i lo -j ACCEPT
 ip6tables -A INPUT  -m state --state ESTABLISHED,RELATED -j ACCEPT
 ip6tables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
 
-# === ICMPv6 — Critical (RFC 4890) ===
-# Packet Too Big — MUST allow (PMTUD)
+# === ICMPv6 - Critical (RFC 4890) ===
+# Packet Too Big - MUST allow (PMTUD)
 ip6tables -A INPUT   -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
 ip6tables -A FORWARD -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
 
@@ -77,13 +78,13 @@ ip6tables -A FORWARD -p icmpv6 --icmpv6-type time-exceeded -j ACCEPT
 ip6tables -A INPUT   -p icmpv6 --icmpv6-type parameter-problem -j ACCEPT
 ip6tables -A FORWARD -p icmpv6 --icmpv6-type parameter-problem -j ACCEPT
 
-# NDP — link-local only
+# NDP - link-local only
 ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type router-advertisement -j ACCEPT
 ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type router-solicitation -j ACCEPT
 ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type neighbour-solicitation -j ACCEPT
 ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type neighbour-advertisement -j ACCEPT
 
-# Echo (ping) — allow, optionally rate-limit
+# Echo (ping) - allow, optionally rate-limit
 ip6tables -A INPUT -p icmpv6 --icmpv6-type echo-request -m limit --limit 10/s -j ACCEPT
 ip6tables -A INPUT -p icmpv6 --icmpv6-type echo-reply -j ACCEPT
 
@@ -148,7 +149,7 @@ table ip6 filter {
 
 | Control | Perimeter Firewall | Host Firewall |
 |---------|-------------------|---------------|
-| Bogon filtering | Yes — at ingress | No (already filtered) |
+| Bogon filtering | Yes - at ingress | No (already filtered) |
 | ICMPv6 policy | Allow PTB + unreachable + NDP | Same + rate-limit echo |
 | Extension headers | Block RH0, audit others | Block RH0 |
 | NDP (RS/RA/NS/NA) | Block from internet | Allow from link-local only |
@@ -156,4 +157,4 @@ table ip6 filter {
 
 ## Summary
 
-IPv6 filtering best practices require: (1) never blocking Packet Too Big (type 2), which breaks PMTUD; (2) allowing NDP from link-local sources only — block from internet; (3) filtering bogon prefixes at ingress; (4) blocking Routing Header Type 0; (5) logging drops for SIEM analysis. Use the ip6tables or nftables templates as a starting point and adapt to your service requirements. Review against RFC 4890 for ICMPv6 policy guidance.
+IPv6 filtering best practices require: (1) never blocking Packet Too Big (type 2), which breaks PMTUD; (2) allowing NDP from link-local sources only - block from internet; (3) filtering bogon prefixes at ingress; (4) blocking Routing Header Type 0; (5) logging drops for SIEM analysis. Use the ip6tables or nftables templates as a starting point and adapt to your service requirements. Review against RFC 4890 for ICMPv6 policy guidance.

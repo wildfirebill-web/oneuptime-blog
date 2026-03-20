@@ -62,6 +62,7 @@ OpenCensus was more opinionated than OpenTracing. It included the full SDK, not 
 
 ```python
 # Python OpenCensus example
+
 from opencensus.trace import tracer as tracer_module
 from opencensus.trace.samplers import AlwaysOnSampler
 from opencensus.ext.stackdriver import trace_exporter

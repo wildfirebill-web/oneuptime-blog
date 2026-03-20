@@ -30,6 +30,7 @@ If your pipeline has stages that do not depend on each other, they run in parall
 
 ```yaml
 # Stages without dependencies run in parallel
+
 stages:
   - stage: Build
     jobs:

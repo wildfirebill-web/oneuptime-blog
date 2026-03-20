@@ -148,6 +148,7 @@ Rounded up:                 14 days (2 weeks)
 
 ```bash
 # BIND example
+
 sig-validity-interval 14 3;
 # Signatures valid for 14 days
 # Re-sign when 3 days remain (11 days after creation)

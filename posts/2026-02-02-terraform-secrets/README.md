@@ -55,6 +55,7 @@ Set up variables in your Terraform configuration that will receive secret values
 
 ```hcl
 # variables.tf
+
 variable "database_password" {
   description = "Password for the production database"
   type        = string

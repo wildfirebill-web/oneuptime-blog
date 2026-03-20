@@ -36,6 +36,7 @@ Not all ArgoCD components work well with sidecars. You may want to exclude some:
 
 ```yaml
 # Exclude the repo-server if it has issues with sidecars
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

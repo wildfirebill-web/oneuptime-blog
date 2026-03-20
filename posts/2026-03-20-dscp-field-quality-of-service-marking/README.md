@@ -26,12 +26,13 @@ Differentiated Services Code Point (DSCP) is a 6-bit field defined in RFC 2474. 
 
 ```bash
 # Create HTB qdisc as root
+
 tc qdisc add dev eth0 root handle 1: htb default 30
 
-# Class for EF (VoIP) — high priority, guaranteed bandwidth
+# Class for EF (VoIP) - high priority, guaranteed bandwidth
 tc class add dev eth0 parent 1: classid 1:10 htb rate 2mbit burst 10k prio 1
 
-# Class for AF41 (video) — medium priority
+# Class for AF41 (video) - medium priority
 tc class add dev eth0 parent 1: classid 1:20 htb rate 10mbit burst 50k prio 2
 
 # Class for default traffic

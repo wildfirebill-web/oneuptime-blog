@@ -14,6 +14,7 @@ When you get "Permission denied" on RHEL and standard file permissions look corr
 
 ```bash
 # Check if SELinux is enforcing
+
 getenforce
 
 # Temporarily switch to permissive to test

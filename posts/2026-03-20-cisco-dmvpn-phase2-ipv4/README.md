@@ -8,11 +8,11 @@ Description: Configure DMVPN Phase 2 on Cisco IOS to enable direct spoke-to-spok
 
 ## Introduction
 
-DMVPN Phase 2 extends Phase 1 by allowing spokes to build direct tunnels to each other. When Spoke A needs to reach Spoke B, it queries the NHRP hub for Spoke B's public IP, then establishes a direct IPsec/GRE tunnel — bypassing the hub for subsequent traffic.
+DMVPN Phase 2 extends Phase 1 by allowing spokes to build direct tunnels to each other. When Spoke A needs to reach Spoke B, it queries the NHRP hub for Spoke B's public IP, then establishes a direct IPsec/GRE tunnel - bypassing the hub for subsequent traffic.
 
 ## Key Differences from Phase 1
 
-```
+```text
 Phase 1: Spoke → Hub → Spoke (all traffic via hub)
 Phase 2: Spoke → Hub (first packet) → Spoke-to-Spoke tunnel (subsequent)
 
@@ -46,7 +46,7 @@ interface Tunnel0
 ## EIGRP for DMVPN Phase 2
 
 ```cisco
-! Hub — EIGRP configuration
+! Hub - EIGRP configuration
 router eigrp 100
  network 10.100.0.0 0.0.0.255   ! Tunnel network
  network 192.168.1.0 0.0.0.255  ! Hub LAN
@@ -56,7 +56,7 @@ interface Tunnel0
  no ip split-horizon eigrp 100
  no ip next-hop-self eigrp 100
 
-! Spoke — EIGRP configuration
+! Spoke - EIGRP configuration
 router eigrp 100
  network 10.100.0.0 0.0.0.255   ! Tunnel network
  network 192.168.2.0 0.0.0.255  ! Spoke LAN
@@ -64,7 +64,7 @@ router eigrp 100
 
 ## Traffic Flow in Phase 2
 
-```
+```text
 1. Spoke A sends packet to Spoke B's LAN (192.168.2.0)
 2. EIGRP route shows 192.168.2.0 via 10.100.0.3 (Spoke B tunnel IP)
 3. ARP/NHRP lookup: "what is the public IP of 10.100.0.3?"

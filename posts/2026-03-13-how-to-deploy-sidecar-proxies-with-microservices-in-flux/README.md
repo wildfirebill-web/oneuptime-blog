@@ -29,6 +29,7 @@ First, deploy the Envoy proxy infrastructure (using Istio as an example).
 
 ```yaml
 # clusters/production/infrastructure/istio-base-helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

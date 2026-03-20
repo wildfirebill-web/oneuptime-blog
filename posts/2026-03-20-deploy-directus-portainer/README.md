@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Directus
+
 version: "3.8"
 
 services:
@@ -97,7 +98,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 DIRECTUS_SECRET=your-random-64-char-secret
 DB_PASSWORD=your-db-password
 ADMIN_EMAIL=admin@yourdomain.com

@@ -41,6 +41,7 @@ Check what your token actually contains:
 
 ```bash
 # Decode a JWT to see the issuer
+
 echo "<your-jwt-token>" | cut -d. -f2 | base64 -d 2>/dev/null | python3 -m json.tool
 ```
 

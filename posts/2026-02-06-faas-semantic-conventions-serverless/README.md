@@ -18,7 +18,7 @@ This guide shows you how to apply FaaS semantic conventions in practice. You wil
 
 OpenTelemetry defines FaaS attributes in two categories: resource attributes that describe the function itself, and span attributes that describe individual invocations.
 
-### Resource Attributes
+Resource Attributes
 
 These attributes are set once and apply to all telemetry produced by the function.
 
@@ -76,6 +76,7 @@ This Python Lambda handler sets up OpenTelemetry with full FaaS resource and spa
 
 ```python
 # AWS Lambda handler with manual OpenTelemetry FaaS instrumentation.
+
 # AWS sets environment variables like AWS_LAMBDA_FUNCTION_NAME and
 # AWS_REGION automatically, so we read them to build the resource.
 import os

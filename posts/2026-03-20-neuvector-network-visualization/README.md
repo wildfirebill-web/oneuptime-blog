@@ -37,7 +37,7 @@ The network map displays:
 
 The network map has several controls:
 
-```
+```text
 Navigation:
 - Scroll/Pinch to zoom
 - Click and drag to pan
@@ -61,6 +61,7 @@ Focus on specific parts of your environment:
 
 ```bash
 # Get network connection data via API
+
 curl -sk \
   "https://neuvector-manager:8443/v1/conversation/group" \
   -H "X-Auth-Token: ${TOKEN}" | jq '{
@@ -123,7 +124,7 @@ echo "Network topology exported to network-topology.csv"
 # Generate a Mermaid diagram of the connections
 echo "## Network Topology Diagram" > network-diagram.md
 echo "" >> network-diagram.md
-echo "\`\`\`mermaid" >> network-diagram.md
+echo "```mermaid" >> network-diagram.md
 echo "graph LR" >> network-diagram.md
 
 curl -sk \
@@ -134,7 +135,7 @@ curl -sk \
     (.to | gsub("nv."; ""; "g") | gsub("\\."; "_"; "g")) as $to |
     "    \($from) -->|" + .ports + "| \($to)"' >> network-diagram.md
 
-echo "\`\`\`" >> network-diagram.md
+echo "```" >> network-diagram.md
 
 echo "Network diagram generated: network-diagram.md"
 ```

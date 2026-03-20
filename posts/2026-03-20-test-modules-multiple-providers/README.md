@@ -8,7 +8,7 @@ Description: Learn how to write OpenTofu tests for modules that use multiple pro
 
 ## Introduction
 
-Some modules use multiple providers — for example, deploying resources in multiple AWS regions, using both AWS and Cloudflare, or configuring a primary and replica provider with aliases. OpenTofu's testing framework supports mocking multiple providers and provider aliases in test files.
+Some modules use multiple providers - for example, deploying resources in multiple AWS regions, using both AWS and Cloudflare, or configuring a primary and replica provider with aliases. OpenTofu's testing framework supports mocking multiple providers and provider aliases in test files.
 
 ## Mocking Multiple Different Providers
 
@@ -16,6 +16,7 @@ Some modules use multiple providers — for example, deploying resources in mult
 # tests/multi_provider.tftest.hcl
 
 # Mock both AWS and Cloudflare providers
+
 mock_provider "aws" {
   mock_resource "aws_lb" {
     defaults = {
@@ -52,7 +53,7 @@ run "dns_record_points_to_alb" {
 ## Mocking Provider Aliases (Multi-Region)
 
 ```hcl
-# main.tf — module using provider aliases
+# main.tf - module using provider aliases
 provider "aws" {
   region = "us-east-1"
   alias  = "primary"
@@ -158,7 +159,7 @@ provider "aws" {
 provider "aws" {
   alias  = "shared_services"
   region = "us-east-1"
-  # Test environment — use test credentials, skip assume_role
+  # Test environment - use test credentials, skip assume_role
   skip_credentials_validation = true
   skip_requesting_account_id  = true
   access_key                  = "mock-access-key"

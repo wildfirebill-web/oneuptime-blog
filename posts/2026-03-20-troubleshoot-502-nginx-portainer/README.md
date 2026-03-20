@@ -31,6 +31,7 @@ Check the port Portainer is bound to:
 ```bash
 docker port portainer
 # or
+
 ss -tlnp | grep 9000
 ```
 
@@ -116,4 +117,4 @@ docker restart portainer nginx
 
 ## Conclusion
 
-502 errors between Nginx and Portainer usually stem from network connectivity issues, wrong ports, or missing WebSocket headers. Systematically checking each layer — from container health to network membership to Nginx configuration — quickly identifies the root cause.
+502 errors between Nginx and Portainer usually stem from network connectivity issues, wrong ports, or missing WebSocket headers. Systematically checking each layer - from container health to network membership to Nginx configuration - quickly identifies the root cause.

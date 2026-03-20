@@ -31,6 +31,7 @@ Each entry in the registry has these properties:
 
 ```python
 # Special purpose blocks with key properties
+
 SPECIAL_PURPOSE_BLOCKS = [
     {
         "prefix": "::1/128",

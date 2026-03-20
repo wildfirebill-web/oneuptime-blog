@@ -57,6 +57,7 @@ For testing or high-performance temporary storage:
 
 ```bash
 # Create the target
+
 /iscsi create iqn.2024.com.example:storage1
 
 # Map backstores to LUNs

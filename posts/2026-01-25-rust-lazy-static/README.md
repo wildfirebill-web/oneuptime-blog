@@ -37,6 +37,7 @@ The lazy_static crate initializes values on first access.
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 lazy_static = "1.4"
 regex = "1"

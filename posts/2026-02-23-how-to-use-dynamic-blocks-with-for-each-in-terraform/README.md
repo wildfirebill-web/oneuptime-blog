@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Dynamic Blocks, For_each, HCL, Infrastructure as Code
+Tags: Terraform, Dynamic Blocks, for_each, HCL, Infrastructure as Code
 
 Description: Master the combination of dynamic blocks and for_each in Terraform to create flexible, data-driven infrastructure configurations.
 
@@ -18,6 +18,7 @@ Let me clarify the distinction first, because this is a common source of confusi
 
 ```hcl
 # Creates one security group per entry in the map
+
 resource "aws_security_group" "services" {
   for_each = {
     web = { port = 80 }

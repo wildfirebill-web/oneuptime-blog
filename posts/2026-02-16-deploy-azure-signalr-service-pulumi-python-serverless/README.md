@@ -18,6 +18,7 @@ Create a new Pulumi project with Python.
 
 ```bash
 # Create the project directory and initialize Pulumi
+
 mkdir signalr-infrastructure && cd signalr-infrastructure
 pulumi new azure-python
 

@@ -24,7 +24,7 @@ cat /proc/net/bonding/bond0
 
 A successful LACP negotiation shows:
 
-```
+```text
 Ethernet Channel Bonding Driver: v3.7.1
 
 Bonding Mode: IEEE 802.3ad Dynamic link aggregation
@@ -63,6 +63,7 @@ Aggregator ID: 1
 
 ```bash
 # 1. Both slaves have the same Aggregator ID
+
 grep "Aggregator ID" /proc/net/bonding/bond0
 # Should show the same ID for all slaves
 
@@ -83,7 +84,7 @@ grep "Number of ports" /proc/net/bonding/bond0
 # Aggregator ID: 1  (eth0 - one group)
 # Aggregator ID: 2  (eth1 - different group = NOT AGGREGATED)
 
-# Check PDU counts — if tx is high but rx is 0, switch is not responding
+# Check PDU counts - if tx is high but rx is 0, switch is not responding
 grep "LACP PDUs" /proc/net/bonding/bond0
 ```
 

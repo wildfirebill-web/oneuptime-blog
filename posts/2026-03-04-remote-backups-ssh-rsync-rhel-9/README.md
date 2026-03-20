@@ -56,6 +56,7 @@ Always verify that backups are readable:
 
 ```bash
 # For tar
+
 tar tzf /backups/full-backup-*.tar.gz | head -20
 
 # For rsync

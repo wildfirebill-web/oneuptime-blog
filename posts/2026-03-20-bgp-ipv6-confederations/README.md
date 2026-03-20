@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, IPv6, Confederations, iBGP, Routing
+Tags: BGP, IPv6, Confederations, IBGP, Routing
 
 Description: Learn how to configure BGP IPv6 confederations as an alternative to route reflectors for scaling iBGP within large autonomous systems.
 
@@ -96,7 +96,7 @@ write memory
 
 ## Cisco Confederation Configuration
 
-```
+```text
 Router(config)# router bgp 65010
 Router(config-router)# bgp confederation identifier 65001
 Router(config-router)# bgp confederation peers 65020
@@ -111,8 +111,8 @@ Router(config-router-af)# neighbor 2001:db8::r3 activate
 ## AS_CONFED_SEQUENCE and AS_CONFED_SET
 
 Confederation routers use two special AS-path segment types:
-- **AS_CONFED_SEQUENCE** — internal confederation hops (shown in parentheses)
-- **AS_CONFED_SET** — like AS_SET but for confederation
+- **AS_CONFED_SEQUENCE** - internal confederation hops (shown in parentheses)
+- **AS_CONFED_SET** - like AS_SET but for confederation
 
 External peers see the confederation identifier without the internal sub-AS details.
 
@@ -120,6 +120,7 @@ External peers see the confederation identifier without the internal sub-AS deta
 
 ```bash
 # Show BGP confederation configuration
+
 vtysh -c "show bgp ipv6 unicast"
 # Routes from confederation peers have AS path with (65020) notation
 

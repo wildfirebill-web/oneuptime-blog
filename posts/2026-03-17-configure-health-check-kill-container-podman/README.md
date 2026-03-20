@@ -18,6 +18,7 @@ In some scenarios, you want an unhealthy container to be killed immediately rath
 
 ```bash
 # Kill the container immediately when health check fails
+
 podman run -d \
   --name kill-on-fail \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \

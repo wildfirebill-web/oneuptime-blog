@@ -14,6 +14,7 @@ TLS certificates are everywhere in modern infrastructure: web servers, API endpo
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install community.crypto
 
 # Install the Python cryptography library on target hosts

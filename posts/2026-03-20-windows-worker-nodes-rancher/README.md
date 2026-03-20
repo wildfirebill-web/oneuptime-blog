@@ -1,4 +1,4 @@
-# How to Add Windows Worker Nodes to Rancher
+# How to Add Windows Worker Nodes to Rancher - Worker Nodes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Kubernetes supports Windows worker nodes for running Windows containers (IIS, .N
 # On the Windows node - run as Administrator
 
 # Enable necessary Windows features
+
 Install-WindowsFeature -Name Containers
 
 # Configure required Windows settings
@@ -51,7 +52,7 @@ network:
     flannel_backend_type: vxlan   # Required for Windows; host-gw may not work
 ```
 
-For existing clusters, Windows support cannot be added retroactively—create a new cluster.
+For existing clusters, Windows support cannot be added retroactively-create a new cluster.
 
 ## Step 3: Register Windows Node in Rancher
 

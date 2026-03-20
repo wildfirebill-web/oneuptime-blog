@@ -31,6 +31,7 @@ Before deploying rules, validate them locally:
 
 ```bash
 # Validate rule file syntax
+
 falco --validate /path/to/rules.yaml
 
 # Validate with verbose output

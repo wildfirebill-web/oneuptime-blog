@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tc, Traffic Control, qdisc, IPv4, Linux, Networking, Cleanup
+Tags: tc, Traffic Control, Qdisc, IPv4, Linux, Networking, Cleanup
 
 Description: Cleanly remove all tc (traffic control) queuing discipline rules from a Linux network interface to restore default behavior for IPv4 traffic.
 
@@ -13,8 +13,8 @@ After applying `tc` queuing disciplines for bandwidth limiting, traffic shaping,
 ## Understanding tc qdisc Hierarchy
 
 Linux network interfaces have two attachment points for qdiscs:
-- **Root (egress)**: Controls outbound traffic — attached with `tc qdisc add dev ethX root ...`
-- **Ingress**: Controls inbound traffic — attached with `tc qdisc add dev ethX ingress`
+- **Root (egress)**: Controls outbound traffic - attached with `tc qdisc add dev ethX root ...`
+- **Ingress**: Controls inbound traffic - attached with `tc qdisc add dev ethX ingress`
 
 Each must be removed separately.
 
@@ -22,6 +22,7 @@ Each must be removed separately.
 
 ```bash
 # Remove the root qdisc from eth0 (removes all child classes and filters too)
+
 sudo tc qdisc del dev eth0 root
 
 # Verify it's gone
@@ -45,7 +46,7 @@ For a full cleanup across all interfaces:
 
 ```bash
 #!/bin/bash
-# cleanup-tc.sh — Remove all custom tc rules from all interfaces
+# cleanup-tc.sh - Remove all custom tc rules from all interfaces
 
 for iface in $(ip link show | awk -F': ' '/^[0-9]+: /{print $2}' | cut -d@ -f1); do
     # Skip loopback
@@ -82,7 +83,7 @@ sudo modprobe -r ifb
 ## Verifying Complete Cleanup
 
 ```bash
-# Check all qdiscs on eth0 — should show default system qdisc only
+# Check all qdiscs on eth0 - should show default system qdisc only
 sudo tc qdisc show dev eth0
 
 # Check all classes (should be empty if root qdisc was removed)
@@ -104,7 +105,7 @@ cat /proc/sys/net/core/default_qdisc
 
 ## Persisting Cleanup Across Reboots
 
-tc rules are transient — they disappear on reboot. However, if you have a startup script that applies tc rules, remove those entries or add the cleanup script to run on startup before the rules are applied.
+tc rules are transient - they disappear on reboot. However, if you have a startup script that applies tc rules, remove those entries or add the cleanup script to run on startup before the rules are applied.
 
 ```bash
 # Remove tc rules from the startup script
@@ -115,4 +116,4 @@ sudo systemctl disable tc-rules.service
 
 ## Conclusion
 
-Removing `tc` qdiscs is straightforward — `tc qdisc del dev ethX root` removes all egress rules in one command, and `tc qdisc del dev ethX ingress` clears ingress redirect rules. Always verify with `tc qdisc show` to confirm the interface is clean.
+Removing `tc` qdiscs is straightforward - `tc qdisc del dev ethX root` removes all egress rules in one command, and `tc qdisc del dev ethX ingress` clears ingress redirect rules. Always verify with `tc qdisc show` to confirm the interface is clean.

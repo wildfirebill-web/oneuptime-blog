@@ -24,6 +24,7 @@ Validating AWS IAM configuration for Cilium ensures authentication works, permis
 echo "=== AWS IAM Validation for Cilium ==="
 
 # Test authentication
+
 IDENTITY=$(kubectl exec -n kube-system -l k8s-app=cilium -- \
   aws sts get-caller-identity 2>&1)
 if echo "$IDENTITY" | jq -e '.Arn' &>/dev/null; then

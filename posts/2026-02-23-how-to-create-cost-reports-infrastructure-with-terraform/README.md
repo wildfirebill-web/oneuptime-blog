@@ -16,6 +16,7 @@ Set up the AWS Cost and Usage Report (CUR) with Terraform:
 
 ```hcl
 # S3 bucket for CUR data
+
 resource "aws_s3_bucket" "cur" {
   bucket = "company-cost-reports"
 }

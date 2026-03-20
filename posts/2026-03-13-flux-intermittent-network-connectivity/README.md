@@ -35,6 +35,7 @@ This means: existing workloads continue running normally during network outages.
 
 ```bash
 # Check what revision Flux is currently using
+
 flux get sources git -A
 # Output shows: NAME  READY  STATUS  REVISION  AGE
 # The REVISION is the last successfully fetched commit SHA

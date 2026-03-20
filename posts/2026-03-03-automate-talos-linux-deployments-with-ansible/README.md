@@ -57,6 +57,7 @@ Since Talos nodes do not accept SSH connections, you will run everything on the 
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   vars:
     cluster_name: "production-cluster"

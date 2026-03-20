@@ -46,8 +46,9 @@ The foundation of any Terraform pipeline is separating the plan and apply stages
 
 ### GitHub Actions Implementation
 
-```yaml
+````yaml
 # .github/workflows/terraform.yml
+
 # This workflow runs on pull requests and pushes to main
 # PR events trigger plan-only, main branch triggers plan + apply
 
@@ -154,9 +155,9 @@ jobs:
 
             <details><summary>Show Plan Output</summary>
 
-            \`\`\`terraform
+            ```terraform
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
 
             </details>
 
@@ -304,7 +305,7 @@ apply:
       when: manual
   # Protect against accidental triggers
   allow_failure: false
-```
+````
 
 ## PR-Based Workflows
 
@@ -416,7 +417,7 @@ workflows:
 
 ### Using PR Comments for Terraform Commands
 
-```yaml
+````yaml
 # .github/workflows/atlantis-style.yml
 # Respond to PR comments like "terraform plan" or "terraform apply"
 
@@ -515,9 +516,9 @@ jobs:
           script: |
             const output = `### Terraform Plan Result
 
-            \`\`\`
+            ```
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
 
             Comment \`terraform apply\` to apply these changes.`;
 
@@ -527,7 +528,7 @@ jobs:
               repo: context.repo.repo,
               body: output
             });
-```
+````
 
 ## Automated Testing
 

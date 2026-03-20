@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, ipv6, networking, kubernetes, dual-stack
+Tags: Rancher, IPv6, Networking, Kubernetes, Dual-Stack
 
 Description: Guide to configuring IPv6 and dual-stack networking in Rancher Kubernetes clusters.
 
@@ -25,6 +25,7 @@ Network configuration in Rancher-managed Kubernetes clusters leverages the CNI (
 
 ```bash
 # Check current CNI plugin
+
 kubectl get configmap -n kube-system kube-proxy -o yaml | grep mode
 
 # Check network policies

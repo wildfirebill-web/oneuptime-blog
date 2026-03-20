@@ -28,6 +28,7 @@ Start by examining the current state of the canary resource.
 
 ```bash
 # Get the canary status
+
 kubectl get canary -n <namespace>
 
 # Get detailed information about the canary

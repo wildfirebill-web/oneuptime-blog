@@ -8,11 +8,11 @@ Description: Implement zero-downtime blue-green deployments using Docker network
 
 ## Introduction
 
-Blue-green deployment maintains two identical environments: Blue (current production) and Green (new version). Traffic is routed to Blue while Green is deployed and tested. When ready, traffic switches instantly to Green — achieving zero-downtime deployments with an instant rollback capability. This guide implements blue-green with Docker and Portainer.
+Blue-green deployment maintains two identical environments: Blue (current production) and Green (new version). Traffic is routed to Blue while Green is deployed and tested. When ready, traffic switches instantly to Green - achieving zero-downtime deployments with an instant rollback capability. This guide implements blue-green with Docker and Portainer.
 
 ## Architecture
 
-```
+```text
            Traffic Router (Traefik)
                   │
          ┌────────┴────────┐
@@ -26,6 +26,7 @@ Blue-green deployment maintains two identical environments: Blue (current produc
 
 ```yaml
 # docker-compose.yml - Blue-Green deployment setup
+
 version: "3.8"
 
 networks:
@@ -228,7 +229,7 @@ echo "Rollback complete. Blue is now serving traffic."
 ## Step 6: Validate Deployment in Portainer
 
 After switching:
-1. Check Portainer **Containers** view — both containers should show as running
+1. Check Portainer **Containers** view - both containers should show as running
 2. Verify Traefik dashboard shows the correct active route
 3. Monitor container logs in Portainer for errors
 

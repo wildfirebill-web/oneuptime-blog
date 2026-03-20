@@ -26,6 +26,7 @@ Start by looking at the Envoy proxy logs with debug logging enabled:
 
 ```bash
 # Enable debug logging for the proxy
+
 istioctl proxy-config log <pod-name> --level tls:debug
 
 # Watch the logs

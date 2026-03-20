@@ -1,4 +1,4 @@
-# How to Configure Fleet Depends-On for Deployment Ordering
+# How to Configure Fleet Depends-On for Deployment Ordering - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ The `dependsOn` directive tells Fleet to wait for named bundles to be ready befo
 
 ```yaml
 # apps/my-api/fleet.yaml
+
 defaultNamespace: my-app
 
 # This bundle depends on the database bundle being deployed first
@@ -48,7 +49,7 @@ helm:
 
 Organize your repository paths to map to separate bundles:
 
-```
+```text
 infrastructure/
   cert-manager/
     fleet.yaml          # Bundle: infra-cert-manager
@@ -125,7 +126,7 @@ kubectl describe bundle app-api-service -n fleet-default | grep -A 10 "Condition
 
 ## Best Practices
 
-- Keep dependency chains shallow — deep dependency chains are harder to debug and can cause long deployment delays.
+- Keep dependency chains shallow - deep dependency chains are harder to debug and can cause long deployment delays.
 - Use `dependsOn` for hard dependencies (app cannot start without it), not soft dependencies.
 - Test your dependency ordering by deploying to a clean cluster and watching the bundle deployment sequence.
 - Document the dependency graph in your repository README so the ordering is visible to all team members.

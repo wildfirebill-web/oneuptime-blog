@@ -16,6 +16,7 @@ Install the SDK along with the identity library for authentication.
 
 ```bash
 # Install Cosmos DB SDK
+
 pip install azure-cosmos azure-identity
 ```
 

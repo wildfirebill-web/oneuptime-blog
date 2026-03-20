@@ -22,6 +22,7 @@ A Q topic is a curated collection of datasets that Q can query. Think of it as d
 
 ```bash
 # Create a Q topic
+
 aws quicksight create-topic \
   --aws-account-id 123456789012 \
   --topic-id sales-q-topic \

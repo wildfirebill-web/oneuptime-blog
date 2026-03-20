@@ -29,6 +29,7 @@ Key validation checks include verifying that every node has an assigned CIDR, th
 echo "=== IPAM CIDR Validation ==="
 
 # Check every node has a CIDR
+
 NODES=$(kubectl get nodes -o jsonpath='{.items[*].metadata.name}')
 for node in $NODES; do
   CIDRS=$(kubectl get ciliumnode "$node" -o jsonpath='{.spec.ipam.podCIDRs}' 2>/dev/null)

@@ -28,6 +28,7 @@ First, create a Parallelstore instance if you have not already. The instance nee
 
 ```bash
 # Create a Parallelstore instance with 12 TiB capacity
+
 # The instance must be in the same region and VPC as your GKE cluster
 gcloud parallelstore instances create my-parallelstore \
     --project=my-project \

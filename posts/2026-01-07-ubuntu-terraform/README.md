@@ -35,6 +35,7 @@ First, install the required dependencies for adding external repositories:
 
 ```bash
 # Install prerequisite packages for HTTPS repository access
+
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
 ```
 
@@ -139,7 +140,7 @@ Before writing your first configuration, it is essential to understand the funda
 
 Providers are plugins that Terraform uses to interact with cloud platforms, SaaS providers, and other APIs. Each provider offers a set of resource types and data sources that Terraform can manage. Popular providers include AWS, Azure, Google Cloud, Kubernetes, and Docker.
 
-### Resources
+Resources
 
 Resources are the most important element in Terraform configurations. Each resource block describes one or more infrastructure objects, such as virtual machines, networks, DNS records, or database instances.
 
@@ -951,7 +952,7 @@ terraform {
 }
 ```
 
-### Resource Naming
+Resource Naming
 
 Use consistent naming conventions:
 

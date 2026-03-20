@@ -1091,6 +1091,7 @@ In your `ios/Podfile`:
 
 ```ruby
 # Enable the New Architecture
+
 ENV['RCT_NEW_ARCH_ENABLED'] = '1'
 ```
 

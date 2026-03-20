@@ -22,6 +22,7 @@ Deploy Redpanda using the official operator:
 
 ```bash
 # Install the Redpanda operator
+
 kubectl apply -k https://github.com/redpanda-data/redpanda-operator/src/go/k8s/config/crd
 
 kubectl create namespace redpanda-system

@@ -59,6 +59,7 @@ common-lib/
 
 ```yaml
 # Chart.yaml
+
 apiVersion: v2
 name: common-lib
 description: A Helm library chart for common templates

@@ -70,6 +70,7 @@ fatal: [server1]: UNREACHABLE! => {
 
 ```bash
 # Check if host is reachable
+
 ping server1
 
 # Check DNS resolution

@@ -288,6 +288,7 @@ Reduce costs across all providers:
 **1. Use spot/preemptible instances for stateless workloads**:
 ```yaml
 # EKS managed node group with spot
+
 nodeGroups:
 - name: spot-workers
   instanceTypes:

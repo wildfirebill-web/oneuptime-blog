@@ -22,6 +22,7 @@ Ensure all pods have ownership labels:
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

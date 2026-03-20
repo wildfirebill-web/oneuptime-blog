@@ -49,6 +49,7 @@ The Spanner JDBC URL format includes the project, instance, and database:
 
 ```properties
 # Spanner JDBC connection URL
+
 spring.datasource.url=jdbc:cloudspanner:/projects/my-project/instances/my-instance/databases/my-database
 
 # The Spanner JDBC driver class

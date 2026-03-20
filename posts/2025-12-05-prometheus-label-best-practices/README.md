@@ -58,6 +58,7 @@ http_requests_total{method="POST", status="200"} - 1 time series
 
 ```yaml
 # Good
+
 http_requests_total{service_name="api", deployment_env="production"}
 
 # Bad

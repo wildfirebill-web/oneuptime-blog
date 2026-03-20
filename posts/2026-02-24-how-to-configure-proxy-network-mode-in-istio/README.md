@@ -45,6 +45,7 @@ What REDIRECT does under the hood:
 
 ```bash
 # Simplified iptables rules (set up by istio-init)
+
 iptables -t nat -A PREROUTING -p tcp -j ISTIO_INBOUND
 iptables -t nat -A ISTIO_INBOUND -p tcp --dport 8080 -j REDIRECT --to-port 15006
 iptables -t nat -A OUTPUT -p tcp -j ISTIO_OUTPUT

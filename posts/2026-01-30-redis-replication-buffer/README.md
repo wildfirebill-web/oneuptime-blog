@@ -59,6 +59,7 @@ client-output-buffer-limit replica <hard-limit> <soft-limit> <soft-seconds>
 
 ```bash
 # Default configuration (often too restrictive)
+
 client-output-buffer-limit replica 256mb 64mb 60
 
 # Optimized for high-throughput workloads

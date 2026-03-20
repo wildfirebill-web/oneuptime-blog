@@ -31,6 +31,7 @@ Start by creating a directory structure in your fleet repository that separates 
 
 ```bash
 # Create the directory structure for multi-tenant management
+
 mkdir -p clusters/my-cluster/tenants
 mkdir -p tenants/base
 mkdir -p tenants/production

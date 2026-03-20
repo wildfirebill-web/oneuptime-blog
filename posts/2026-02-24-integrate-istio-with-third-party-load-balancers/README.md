@@ -238,6 +238,7 @@ Keep an eye on the connection between your load balancer and Istio. Useful metri
 
 ```bash
 # Check gateway connections
+
 kubectl exec -n istio-system $(kubectl get pod -n istio-system -l istio=ingressgateway -o jsonpath='{.items[0].metadata.name}') -- curl -s localhost:15000/stats | grep downstream_cx
 
 # Check for connection errors

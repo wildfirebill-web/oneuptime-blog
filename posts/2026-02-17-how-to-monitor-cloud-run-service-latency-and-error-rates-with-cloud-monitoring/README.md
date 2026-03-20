@@ -30,6 +30,7 @@ Navigate to **Monitoring** > **Dashboards** > **Create Dashboard** and add a new
 
 ```text
 # P50 latency for Cloud Run service
+
 fetch cloud_run_revision
 | metric 'run.googleapis.com/request_latencies'
 | group_by [service_name],

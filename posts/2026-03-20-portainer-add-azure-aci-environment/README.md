@@ -1,4 +1,4 @@
-# How to Add an Azure ACI Environment to Portainer
+# How to Add an Azure ACI Environment to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Azure Container Instances (ACI) allows you to run containers in Azure without ma
 
 ```bash
 # Login to Azure CLI
+
 az login
 
 # Create a resource group for containers (if not exists)
@@ -67,7 +68,7 @@ echo "Tenant ID: $TENANT_ID"
 2. Select **Azure ACI**
 3. Fill in:
 
-```
+```text
 Name:            Azure East US
 Subscription ID: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 Tenant ID:       xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -115,7 +116,7 @@ Once connected, deploy containers to ACI from Portainer:
 2. Go to **Containers** → **Add container**
 3. Configure:
 
-```
+```text
 Name:    my-web-app
 Image:   nginx:latest
 Port:    80

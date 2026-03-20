@@ -20,6 +20,7 @@ Enable the Podman API before making requests.
 
 ```bash
 # Start the Podman socket (recommended for local access)
+
 systemctl --user start podman.socket
 
 # Verify the socket is active

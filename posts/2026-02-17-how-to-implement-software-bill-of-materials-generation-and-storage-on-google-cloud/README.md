@@ -29,6 +29,7 @@ Here is how to generate an SBOM for a container image locally:
 
 ```bash
 # Install Syft
+
 curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
 
 # Generate a CycloneDX SBOM for a container image

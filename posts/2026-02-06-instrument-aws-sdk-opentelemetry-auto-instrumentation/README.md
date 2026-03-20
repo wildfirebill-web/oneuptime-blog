@@ -41,6 +41,7 @@ Install the OpenTelemetry SDK, the OTLP exporter, and the botocore instrumentati
 
 ```bash
 # Install core OpenTelemetry packages
+
 pip install opentelemetry-api opentelemetry-sdk
 
 # Install the OTLP exporter for sending traces to your backend

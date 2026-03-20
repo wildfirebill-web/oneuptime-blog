@@ -225,7 +225,7 @@ env:
         fieldPath: spec.serviceAccountName
 ```
 
-### Resource Fields
+Resource Fields
 
 ```yaml
 env:

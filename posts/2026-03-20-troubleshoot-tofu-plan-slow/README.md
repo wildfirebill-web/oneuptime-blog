@@ -14,6 +14,7 @@ Description: Learn how to diagnose and fix slow or hanging tofu plan operations 
 
 ```bash
 # Show timing information during plan
+
 TF_LOG=INFO tofu plan 2>&1 | grep -E "Refreshing|Reading|Fetching|ms"
 
 # Full provider debug for a specific provider
@@ -55,7 +56,7 @@ variable "ubuntu_ami_id" {
 
 ## Root Cause 2: API Throttling
 
-```
+```text
 AWS: ThrottlingException: Rate exceeded
 ```
 

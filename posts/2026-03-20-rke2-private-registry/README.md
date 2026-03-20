@@ -27,6 +27,7 @@ RKE2 uses `/etc/rancher/rke2/registries.yaml` to configure how containerd intera
 
 ```yaml
 # /etc/rancher/rke2/registries.yaml - Basic private registry configuration
+
 configs:
   # Configure authentication for your private registry
   "registry.example.com":

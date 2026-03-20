@@ -36,6 +36,7 @@ Copy the cookie from node 1 to all other nodes:
 
 ```bash
 # On rabbit1
+
 sudo cat /var/lib/rabbitmq/.erlang.cookie
 ```
 

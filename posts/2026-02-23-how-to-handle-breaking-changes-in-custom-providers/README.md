@@ -53,6 +53,7 @@ Determine how many users will be affected:
 
 ```bash
 # Check Registry download statistics for affected resources
+
 # Review GitHub issues and discussions
 # Look at the resource usage in your acceptance tests
 ```

@@ -41,6 +41,7 @@ You need ArgoCD and Argo Rollouts installed in your cluster. Install Argo Rollou
 
 ```bash
 # Install Argo Rollouts controller
+
 kubectl create namespace argo-rollouts
 kubectl apply -n argo-rollouts \
   -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml

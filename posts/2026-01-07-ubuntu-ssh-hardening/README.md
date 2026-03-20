@@ -39,6 +39,7 @@ Generate a strong Ed25519 key with a passphrase for additional security:
 
 ```bash
 # Generate an Ed25519 SSH key pair (recommended for modern systems)
+
 # The -C flag adds a comment to identify the key
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```

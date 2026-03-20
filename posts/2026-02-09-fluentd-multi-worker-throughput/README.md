@@ -24,6 +24,7 @@ Multi-worker configuration happens in the system directive at the top of your Fl
 
 ```ruby
 # /etc/fluent/fluent.conf
+
 <system>
   workers 4
   root_dir /var/log/fluentd

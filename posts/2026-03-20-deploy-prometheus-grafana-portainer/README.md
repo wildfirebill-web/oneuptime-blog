@@ -109,9 +109,9 @@ scrape_configs:
 
 ## Import Community Dashboards
 
-- **1860** — Node Exporter Full
-- **14282** — Docker Container and Host Metrics
-- **3662** — Prometheus 2.0 Stats
+- **1860** - Node Exporter Full
+- **14282** - Docker Container and Host Metrics
+- **3662** - Prometheus 2.0 Stats
 
 ---
 

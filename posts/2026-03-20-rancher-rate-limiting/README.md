@@ -22,6 +22,7 @@ Local rate limiting applies per Envoy proxy instance. Simple to configure but do
 
 ```yaml
 # local-rate-limit.yaml - Per-instance rate limiting
+
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter
 metadata:

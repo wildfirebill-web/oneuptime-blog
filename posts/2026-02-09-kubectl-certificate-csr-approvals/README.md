@@ -80,6 +80,7 @@ Create a Kubernetes CSR object:
 
 ```yaml
 # user-1-csr.yaml
+
 apiVersion: certificates.k8s.io/v1
 kind: CertificateSigningRequest
 metadata:

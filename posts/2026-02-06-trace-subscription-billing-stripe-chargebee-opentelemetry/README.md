@@ -18,6 +18,7 @@ Stripe sends webhooks for events like `invoice.payment_succeeded` and `customer.
 
 ```python
 # billing_webhooks.py
+
 from opentelemetry import trace
 from opentelemetry.trace import StatusCode
 import stripe

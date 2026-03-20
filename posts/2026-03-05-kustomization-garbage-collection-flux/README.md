@@ -22,6 +22,7 @@ Garbage collection is controlled by the `spec.prune` field. It is not enabled by
 
 ```yaml
 # Kustomization with garbage collection enabled
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

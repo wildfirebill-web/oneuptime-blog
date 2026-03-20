@@ -42,6 +42,7 @@ sudo reboot
 
 ```bash
 # Ensure all Rocky Linux packages are replaced
+
 rpm -qa | grep rocky
 # Should return nothing
 

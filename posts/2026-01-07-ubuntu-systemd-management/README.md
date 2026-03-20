@@ -60,6 +60,7 @@ Unit files are stored in several directories with different priorities:
 
 ```bash
 # System unit files installed by packages (lowest priority)
+
 /lib/systemd/system/
 
 # Administrator-created unit files (higher priority)
@@ -793,7 +794,7 @@ journalctl -F CONTAINER_NAME
 
 ---
 
-## Resource Limits with cgroups
+Resource Limits with cgroups
 
 systemd uses cgroups (control groups) to manage and limit resources for services. This is crucial for preventing runaway processes from affecting system stability.
 

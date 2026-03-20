@@ -33,6 +33,7 @@ Before fixing anything, understand what you are dealing with. Run an alert audit
 
 ```python
 # alert_audit.py
+
 # Analyze your alert patterns to identify problems
 
 import pandas as pd

@@ -32,6 +32,7 @@ You can also run queries from the Azure CLI:
 
 ```bash
 # Run a simple Resource Graph query
+
 az graph query -q "resources | summarize count()" --output table
 ```
 
@@ -217,7 +218,7 @@ resources
 | sort by count_ desc
 ```
 
-### Resources with No Tags at All
+Resources with No Tags at All
 
 ```kusto
 // Resources with zero tags

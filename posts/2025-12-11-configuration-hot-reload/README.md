@@ -172,6 +172,7 @@ class ConfigHotReloader:
             logger.info("Stopped watching configuration")
 
 # Usage
+
 def on_config_reload(new_config):
     logger.info("Configuration reloaded!")
     # Update application state based on new config

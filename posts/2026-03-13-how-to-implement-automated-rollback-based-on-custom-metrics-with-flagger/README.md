@@ -29,6 +29,7 @@ Flagger uses MetricTemplate custom resources to define custom queries against yo
 
 ```yaml
 # metric-template-basic.yaml
+
 # Basic MetricTemplate structure
 apiVersion: flagger.app/v1beta1
 kind: MetricTemplate

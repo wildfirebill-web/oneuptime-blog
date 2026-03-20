@@ -42,6 +42,7 @@ Start by getting an overview of what Kubernetes thinks is happening:
 
 ```bash
 # Get pod status with wide output
+
 kubectl get pods -n production -o wide
 
 # Look at the pod's events for clues

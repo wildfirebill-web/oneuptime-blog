@@ -50,6 +50,7 @@ flowchart TB
 
 ```bash
 # Verify Kubernetes cluster
+
 kubectl cluster-info
 
 # Check version compatibility

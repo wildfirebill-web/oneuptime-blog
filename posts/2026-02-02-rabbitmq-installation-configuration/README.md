@@ -43,6 +43,7 @@ First, add the RabbitMQ signing key and repository. The following commands set u
 
 ```bash
 # Update package list
+
 sudo apt-get update
 
 # Install prerequisites

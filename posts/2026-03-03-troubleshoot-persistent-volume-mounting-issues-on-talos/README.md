@@ -28,6 +28,7 @@ Start by checking the status of your PVC and PV:
 
 ```bash
 # Check PVC status
+
 kubectl get pvc -n <namespace>
 
 # If PVC is Pending, describe it for details

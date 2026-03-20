@@ -52,6 +52,7 @@ For most organizations, the practical approach is to replatform first to get off
 
 ```python
 # Create a Micro Focus managed runtime environment
+
 import boto3
 
 m2 = boto3.client('m2')

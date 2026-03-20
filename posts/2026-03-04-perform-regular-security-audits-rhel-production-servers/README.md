@@ -16,6 +16,7 @@ RHEL ships with OpenSCAP, which can evaluate your system against CIS benchmarks,
 
 ```bash
 # Install OpenSCAP and the RHEL security content
+
 sudo dnf install openscap-scanner scap-security-guide
 
 # List available security profiles

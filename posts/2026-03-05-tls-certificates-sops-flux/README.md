@@ -33,6 +33,7 @@ Create a Kubernetes TLS secret manifest:
 
 ```yaml
 # infrastructure/tls/wildcard-cert.sops.yaml (before encryption)
+
 apiVersion: v1
 kind: Secret
 metadata:

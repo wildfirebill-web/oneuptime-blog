@@ -216,6 +216,7 @@ Now update your Grafana dashboards to use the recorded metrics instead of raw qu
 
 ```promql
 # Before (slow):
+
 sum(rate(istio_requests_total{reporter="destination", response_code=~"5.*"}[5m])) by (destination_service)
 /
 sum(rate(istio_requests_total{reporter="destination"}[5m])) by (destination_service)

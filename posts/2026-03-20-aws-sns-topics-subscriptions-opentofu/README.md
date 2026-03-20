@@ -14,6 +14,7 @@ Amazon Simple Notification Service (SNS) is a managed pub/sub messaging service.
 
 ```hcl
 # Standard SNS topic with server-side encryption
+
 resource "aws_sns_topic" "alerts" {
   name              = "application-alerts"
   kms_master_key_id = "alias/aws/sns"  # enable SSE

@@ -164,6 +164,7 @@ locals {
 }
 
 # Write each resource to its own file
+
 resource "local_file" "service" {
   filename = "${path.module}/generated/service.yaml"
   content  = yamlencode(local.k8s_service)

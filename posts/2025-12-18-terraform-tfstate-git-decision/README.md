@@ -230,6 +230,7 @@ Always configure `.gitignore` to exclude state files:
 
 ```gitignore
 # Terraform state files
+
 *.tfstate
 *.tfstate.*
 

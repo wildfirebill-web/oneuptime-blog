@@ -27,6 +27,7 @@ Confirm the Kubernetes API server and node components are using IPv6.
 
 ```bash
 # Check the Kubernetes API server address
+
 kubectl cluster-info
 
 # Verify node internal addresses are IPv6 (for IPv6-only clusters)

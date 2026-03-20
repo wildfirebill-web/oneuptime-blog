@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, containerd, Docker, Container Runtime
+Tags: Rancher Desktop, Containerd, Docker, Container Runtime
 
 Description: Configure Rancher Desktop to use either containerd or dockerd as the container runtime for different workflows.
 
@@ -30,6 +30,7 @@ Rancher Desktop simplifies local Kubernetes and container development by providi
 
 ```bash
 # Verify Rancher Desktop is installed and running
+
 rdctl version
 
 # Check Kubernetes cluster status

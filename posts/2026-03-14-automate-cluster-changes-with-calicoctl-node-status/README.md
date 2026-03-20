@@ -26,6 +26,7 @@ This guide covers practical approaches to automating `calicoctl node status` mon
 ```bash
 #!/bin/bash
 # calico-bgp-healthcheck.sh
+
 # Returns exit code 0 if all BGP peers are established, non-zero otherwise
 
 NODE_NAME="${1:-$(hostname)}"

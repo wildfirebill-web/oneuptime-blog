@@ -34,6 +34,7 @@ A workforce identity pool is the container that holds the federation configurati
 
 ```bash
 # Create the workforce identity pool
+
 gcloud iam workforce-pools create my-corporate-pool \
   --location=global \
   --organization=ORG_ID \

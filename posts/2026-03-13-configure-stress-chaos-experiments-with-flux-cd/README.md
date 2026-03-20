@@ -29,6 +29,7 @@ CPU stress spawns worker goroutines that consume CPU cycles, simulating a CPU-bo
 
 ```yaml
 # clusters/my-cluster/chaos-experiments/cpu-stress.yaml
+
 apiVersion: chaos-mesh.org/v1alpha1
 kind: StressChaos
 metadata:

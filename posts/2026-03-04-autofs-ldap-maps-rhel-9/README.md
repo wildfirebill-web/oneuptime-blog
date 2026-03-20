@@ -121,6 +121,7 @@ If you use FreeIPA, use the `ipa` command:
 
 ```bash
 # Create locations and maps
+
 ipa automountlocation-add default
 ipa automountmap-add default auto.home
 ipa automountkey-add default auto.master --key=/home --info=auto.home

@@ -18,6 +18,7 @@ A Sentinel function works like functions in most programming languages. You defi
 
 ```python
 # A function that checks if a string starts with a given prefix
+
 starts_with = func(str, prefix) {
     return strings.has_prefix(str, prefix)
 }

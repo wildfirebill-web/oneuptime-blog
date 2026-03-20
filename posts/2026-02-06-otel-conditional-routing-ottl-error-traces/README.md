@@ -26,6 +26,7 @@ The routing connector sits between pipelines. It reads each trace, evaluates the
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

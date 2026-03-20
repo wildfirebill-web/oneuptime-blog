@@ -137,7 +137,7 @@ import java.net.Inet6Address;
 
 public class LogIPv6Extractor {
 
-    // Simplified IPv6 pattern — handles common formats
+    // Simplified IPv6 pattern - handles common formats
     private static final Pattern IPV6_PATTERN = Pattern.compile(
         "(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}" +
         "|(?:[0-9a-fA-F]{1,4}:){1,7}:" +
@@ -219,4 +219,4 @@ public class PacketIPv6Parser {
 
 ## Conclusion
 
-Java's `InetAddress.getByName()` is the primary IPv6 parsing entry point — it accepts all standard IPv6 formats including compressed notation and IPv4-mapped addresses. For socket addresses, `URI` parsing handles the bracket notation. Regex extraction from logs needs post-parsing validation via `InetAddress` to confirm validity. Raw bytes parse via `InetAddress.getByAddress(byte[16])`. Always catch `UnknownHostException` and convert it into a meaningful application exception at the API boundary.
+Java's `InetAddress.getByName()` is the primary IPv6 parsing entry point - it accepts all standard IPv6 formats including compressed notation and IPv4-mapped addresses. For socket addresses, `URI` parsing handles the bracket notation. Regex extraction from logs needs post-parsing validation via `InetAddress` to confirm validity. Raw bytes parse via `InetAddress.getByAddress(byte[16])`. Always catch `UnknownHostException` and convert it into a meaningful application exception at the API boundary.

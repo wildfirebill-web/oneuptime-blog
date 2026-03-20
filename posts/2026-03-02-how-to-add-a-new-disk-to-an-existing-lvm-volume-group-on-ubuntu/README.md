@@ -16,6 +16,7 @@ Before adding hardware, confirm the VG is actually the bottleneck:
 
 ```bash
 # Check free space in all Volume Groups
+
 sudo vgs
 
 # Detailed view

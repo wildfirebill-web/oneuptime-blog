@@ -36,6 +36,7 @@ WAF policies are separate resources that you associate with your Front Door prof
 
 ```bash
 # Create a WAF policy for Front Door
+
 # The sku must match your Front Door tier
 az network front-door waf-policy create \
   --name myWafPolicy \

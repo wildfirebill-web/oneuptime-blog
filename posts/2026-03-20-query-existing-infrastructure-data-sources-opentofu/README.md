@@ -1,19 +1,20 @@
-# How to Query Existing Infrastructure with Data Sources in OpenTofu
+# How to Query Existing Infrastructure with Data Sources in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, Query, Existing Infrastructure, Infrastructure as Code, DevOps
+Tags: OpenTofu, Data Source, Query, Existing Infrastructure, Infrastructure as Code, DevOps
 
 Description: A guide to querying existing infrastructure using data sources in OpenTofu to reference resources managed outside your configuration.
 
 ## Introduction
 
-Data sources allow OpenTofu to fetch information about infrastructure that exists outside your current configuration — whether created manually, by another team, or managed by a different Terraform/OpenTofu workspace. This enables you to reference existing resources without importing them into your state.
+Data sources allow OpenTofu to fetch information about infrastructure that exists outside your current configuration - whether created manually, by another team, or managed by a different Terraform/OpenTofu workspace. This enables you to reference existing resources without importing them into your state.
 
 ## Querying an Existing VPC
 
 ```hcl
 # Look up a VPC by its ID
+
 data "aws_vpc" "existing" {
   id = var.vpc_id
 }
@@ -217,4 +218,4 @@ provider "kubernetes" {
 
 ## Conclusion
 
-Data sources are fundamental to OpenTofu's ability to work with mixed infrastructure — some managed by your configuration, some existing independently. Use data sources to look up shared networking resources, find the latest AMIs, retrieve secrets, and reference infrastructure owned by other teams. Unlike managed resources, data sources are read-only and never modify infrastructure. They are evaluated during the plan phase and their values are available for use in resource configurations throughout your module.
+Data sources are fundamental to OpenTofu's ability to work with mixed infrastructure - some managed by your configuration, some existing independently. Use data sources to look up shared networking resources, find the latest AMIs, retrieve secrets, and reference infrastructure owned by other teams. Unlike managed resources, data sources are read-only and never modify infrastructure. They are evaluated during the plan phase and their values are available for use in resource configurations throughout your module.

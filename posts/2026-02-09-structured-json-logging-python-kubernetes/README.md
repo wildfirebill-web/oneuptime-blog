@@ -18,6 +18,7 @@ The simplest approach uses python-json-logger to add JSON formatting to Python's
 
 ```python
 # requirements.txt
+
 python-json-logger==2.0.7
 
 # logger_config.py

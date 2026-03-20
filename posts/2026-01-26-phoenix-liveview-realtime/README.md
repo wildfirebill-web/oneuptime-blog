@@ -44,6 +44,7 @@ If you are starting a new Phoenix project, LiveView is included by default in Ph
 
 ```bash
 # Create a new Phoenix project with LiveView
+
 mix phx.new my_app
 
 # Or add to existing project - add to mix.exs

@@ -28,6 +28,7 @@ Every major provider release includes an upgrade guide:
 
 ```bash
 # AWS Provider upgrade guides:
+
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/version-5-upgrade
 
 # Azure Provider upgrade guides:

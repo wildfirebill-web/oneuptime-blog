@@ -40,6 +40,7 @@ These are your bread-and-butter capacity metrics. Track them per service, per no
 
 ```python
 # capacity_metrics.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

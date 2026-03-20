@@ -30,6 +30,7 @@ A schematic is a YAML document that describes your customizations. When you subm
 
 ```yaml
 # schematic.yaml - A basic schematic
+
 customization:
   systemExtensions:
     officialExtensions:

@@ -22,6 +22,7 @@ Start by pinning your collection and role versions in a `requirements.yml` file.
 
 ```yaml
 # requirements.yml
+
 # Pin collection and role versions for reproducible builds
 collections:
   - name: community.general

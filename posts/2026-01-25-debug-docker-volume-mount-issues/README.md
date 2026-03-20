@@ -16,6 +16,7 @@ When files from your host are not visible inside the container, start by verifyi
 
 ```bash
 # Check if the volume mount is present in the running container
+
 docker inspect mycontainer --format '{{json .Mounts}}' | jq
 
 # Sample output showing a bind mount

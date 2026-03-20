@@ -82,6 +82,7 @@ This approach is useful for quick testing but exposes secrets in shell history. 
 
 ```bash
 # Create a Secret with literal key-value pairs
+
 # WARNING: Values appear in shell history - use only for development
 kubectl create secret generic db-credentials \
   --from-literal=username=admin \

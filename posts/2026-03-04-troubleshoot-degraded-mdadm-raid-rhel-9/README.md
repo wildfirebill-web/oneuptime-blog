@@ -23,6 +23,7 @@ Once degraded, another failure could mean total data loss. Treat every degraded 
 
 ```bash
 # Quick overview of all arrays
+
 cat /proc/mdstat
 ```
 

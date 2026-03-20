@@ -33,6 +33,7 @@ Here is a Docker Compose file that sets up a Selenium Grid with Chrome and Firef
 
 ```yaml
 # docker-compose.yml - Selenium Grid with Chrome and Firefox
+
 version: "3.8"
 
 services:

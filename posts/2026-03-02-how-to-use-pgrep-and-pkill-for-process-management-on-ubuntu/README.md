@@ -18,6 +18,7 @@ While `ps | grep` and `kill` work, `pgrep` and `pkill` are more precise tools de
 
 ```bash
 # Find PIDs of all nginx processes
+
 pgrep nginx
 
 # Example output:

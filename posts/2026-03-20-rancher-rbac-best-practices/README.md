@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, rbac, access-control, security, kubernetes
+Tags: Rancher, RBAC, Access-control, Security, Kubernetes
 
 Description: Comprehensive RBAC best practices guide for Rancher to implement least-privilege access control.
 
@@ -24,6 +24,7 @@ Always define your Rancher configuration as code:
 
 ```yaml
 # cluster-definition.yaml - Define clusters declaratively
+
 apiVersion: provisioning.cattle.io/v1
 kind: Cluster
 metadata:

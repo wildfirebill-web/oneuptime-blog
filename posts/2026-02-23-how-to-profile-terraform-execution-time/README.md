@@ -18,6 +18,7 @@ Start with simple timing to establish a baseline:
 
 ```bash
 # Time the overall operation
+
 time terraform plan
 
 # Time with more detail (Linux)

@@ -38,6 +38,7 @@ Store your data contracts as YAML files in version control. This makes them revi
 
 ```yaml
 # contracts/customer_events.yaml
+
 # Data contract for the customer_events table
 contract:
   name: customer_events

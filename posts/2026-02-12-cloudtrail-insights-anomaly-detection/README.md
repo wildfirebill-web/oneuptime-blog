@@ -33,6 +33,7 @@ You can enable Insights on an existing trail or when creating a new one. Here's 
 
 ```bash
 # Enable both API call rate and API error rate insights
+
 aws cloudtrail put-insight-selectors \
   --trail-name my-trail \
   --insight-selectors '[

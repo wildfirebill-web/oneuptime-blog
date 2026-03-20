@@ -279,6 +279,7 @@ An application deploying 5 resources is very different from one deploying 500. T
 
 ```bash
 # Check total managed resources
+
 argocd app list -o json | jq '[.[].status.resources | length] | add'
 
 # Resources per application

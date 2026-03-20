@@ -14,6 +14,7 @@ mod_rewrite is one of Apache's most powerful and most misunderstood modules. It 
 
 ```bash
 # Enable the module
+
 sudo a2enmod rewrite
 
 # Reload Apache

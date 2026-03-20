@@ -107,6 +107,7 @@ Option 1: Remove the finalizer before deleting the Application:
 
 ```bash
 # Remove the finalizer so deletion does not cascade
+
 kubectl patch application my-operator -n argocd \
   --type json \
   -p '[{"op": "remove", "path": "/metadata/finalizers"}]'

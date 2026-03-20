@@ -24,6 +24,7 @@ First, install the required tools:
 
 ```bash
 # Install VS Code Bridge to Kubernetes extension
+
 # Open VS Code and search for "Bridge to Kubernetes" in extensions marketplace
 # Or install via CLI
 code --install-extension mindaro.mindaro

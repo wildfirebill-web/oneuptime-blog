@@ -29,6 +29,7 @@ mkdir -p certs
 cd certs
 
 # Generate root CA key
+
 openssl genrsa -out root-key.pem 4096
 
 # Generate root certificate

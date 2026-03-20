@@ -24,6 +24,7 @@ The standard way to generate WireGuard keys is with the `wg` command-line tool, 
 
 ```bash
 # Install wireguard-tools on your workstation
+
 # On Ubuntu/Debian
 sudo apt install wireguard-tools
 

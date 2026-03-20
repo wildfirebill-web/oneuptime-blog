@@ -100,6 +100,7 @@ Here is a complete example using AWS Route 53 with health checks:
 
 ```python
 # dns_failover.py
+
 # Configures DNS failover using AWS Route 53 with health checks
 
 import boto3

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Testing, Security, Containers, CICD
+Tags: Testing, Security, Containers, CI/CD
 
 Description: Integrate container scanning tools like Trivy and Grype into your CI/CD pipeline to catch vulnerabilities before they reach production.
 
@@ -46,6 +46,7 @@ Trivy is an open source scanner by Aqua Security. It scans container images, fil
 
 ```bash
 # Install Trivy on macOS
+
 brew install trivy
 
 # Install on Linux

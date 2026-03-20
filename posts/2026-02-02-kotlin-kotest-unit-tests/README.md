@@ -753,6 +753,7 @@ object ProjectConfig : AbstractProjectConfig() {
 
 ```bash
 # Run all tests
+
 ./gradlew test
 
 # Run specific test class

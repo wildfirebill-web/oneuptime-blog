@@ -18,7 +18,7 @@ Band steering encourages dual-band clients to connect on 5GHz for better through
 - Simplest experience for users
 
 **Alternative: Separate SSIDs**
-```
+```text
 SSID: MyNetwork        (2.4GHz)
 SSID: MyNetwork_5G     (5GHz)
 ```
@@ -27,7 +27,7 @@ SSID: MyNetwork_5G     (5GHz)
 
 ## Configuring Band Steering on Ubiquiti UniFi
 
-```
+```text
 Wireless Networks → MyNetwork → Advanced Options
   Band Steering: Prefer 5G
   Minimum RSSI: -70 dBm (drop 5GHz clients with weak signal to 2.4GHz)
@@ -56,6 +56,7 @@ With a single shared SSID, all clients (both bands) use one DHCP pool:
 
 ```bash
 # /etc/dnsmasq.conf
+
 dhcp-range=192.168.10.50,192.168.10.200,24h
 dhcp-option=3,192.168.10.1        # Default gateway
 dhcp-option=6,8.8.8.8,8.8.4.4    # DNS servers

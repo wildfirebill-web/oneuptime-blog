@@ -103,6 +103,7 @@ Run this via cron:
 
 ```bash
 # Add to crontab
+
 echo "*/5 * * * * /usr/local/bin/calicoctl-health-check.sh" | crontab -
 ```
 

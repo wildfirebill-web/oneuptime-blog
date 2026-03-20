@@ -23,6 +23,7 @@ graph TD
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -177,7 +178,7 @@ tenants = {
 ## Best Practices
 
 - Use `for_each` with a tenant map so adding a new tenant is a one-line change to your variables file.
-- Use resource tagging to separate tenant costs in AWS Cost Explorer — tag every resource with the tenant identifier.
+- Use resource tagging to separate tenant costs in AWS Cost Explorer - tag every resource with the tenant identifier.
 - Implement a tenant onboarding module that provisions the complete set of tenant resources and outputs credentials.
 - Use IAM role assumption with external ID to prevent confused deputy attacks when switching tenant contexts.
 - Store per-tenant secrets (DB passwords, API keys) in separate AWS Secrets Manager paths (`/tenant/{name}/db-password`) for isolation.

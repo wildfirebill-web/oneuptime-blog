@@ -26,6 +26,7 @@ The best defense against CIDR conflicts is a well-planned address space. Define 
 
 ```hcl
 # Define the master CIDR allocation plan as local values
+
 locals {
   # Master /8 allocation for the organization
   master_cidr = "10.0.0.0/8"

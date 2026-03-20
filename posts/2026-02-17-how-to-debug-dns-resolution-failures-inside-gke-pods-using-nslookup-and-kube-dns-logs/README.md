@@ -18,6 +18,7 @@ The first thing to do is verify whether DNS is actually broken and from where. S
 
 ```bash
 # Create a debug pod with networking tools
+
 kubectl run dns-debug --image=busybox:1.36 --restart=Never -- sleep 3600
 ```
 

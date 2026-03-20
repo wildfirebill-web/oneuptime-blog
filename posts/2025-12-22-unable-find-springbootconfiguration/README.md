@@ -405,6 +405,7 @@ class UserServiceTest {
 
 ```yaml
 # src/test/resources/application-test.yml
+
 logging:
   level:
     org.springframework.boot.test.context: DEBUG

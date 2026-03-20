@@ -27,6 +27,7 @@ Start by installing Playwright in your project:
 
 ```bash
 # Install Playwright and browsers
+
 npm init playwright@latest
 
 # Or add to an existing project

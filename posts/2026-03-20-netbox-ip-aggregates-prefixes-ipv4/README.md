@@ -10,7 +10,7 @@ NetBox organizes IPv4 address space in a hierarchy: RIR → Aggregate → Prefix
 
 ## The Hierarchy
 
-```
+```text
 RIR (e.g., ARIN, RFC 1918)
   └── Aggregate (e.g., 10.0.0.0/8)
         └── Prefix (e.g., 10.100.0.0/16 - Production)
@@ -24,6 +24,7 @@ Via the web UI: IPAM → RIRs → Add
 
 ```bash
 # Or via API
+
 curl -X POST \
   -H "Authorization: Token <TOKEN>" \
   -H "Content-Type: application/json" \

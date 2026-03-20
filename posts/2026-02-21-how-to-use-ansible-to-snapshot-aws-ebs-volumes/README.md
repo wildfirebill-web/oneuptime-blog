@@ -20,6 +20,7 @@ Make sure you have the following ready:
 
 ```bash
 # Install the required collection
+
 ansible-galaxy collection install amazon.aws
 ```
 

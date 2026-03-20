@@ -35,6 +35,7 @@ provider "aws" {
 }
 
 # SNS topic for alarm notifications
+
 resource "aws_sns_topic" "alerts" {
   name = "service-alerts"
 }

@@ -36,6 +36,7 @@ The simplest approach creates everything in one step:
 
 ```bash
 # Create a cache for lv_data using space on the SSD
+
 # LVM handles cache data and metadata LVs automatically
 lvcreate --type cache -L 50G -n cache0 \
     --cachemode writethrough \

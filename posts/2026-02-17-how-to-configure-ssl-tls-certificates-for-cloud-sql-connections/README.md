@@ -33,6 +33,7 @@ When you use the Cloud SQL Auth Proxy, it handles SSL automatically and you do n
 
 ```bash
 # Check the SSL configuration of your instance
+
 gcloud sql instances describe my-instance \
     --format="json(settings.ipConfiguration.requireSsl, serverCaCert)"
 ```

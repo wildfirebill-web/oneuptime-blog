@@ -126,6 +126,7 @@ Create a test log file with known PII:
 
 ```bash
 # Write test log entries
+
 echo '2024-01-15 ERROR Failed to send email to jane.doe@company.com' >> /var/log/app/test.log
 echo '2024-01-15 WARN User +1-555-987-6543 exceeded rate limit' >> /var/log/app/test.log
 echo '2024-01-15 INFO Contact support@example.com or call (800) 555-0199' >> /var/log/app/test.log

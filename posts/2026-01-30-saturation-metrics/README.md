@@ -52,7 +52,7 @@ flowchart LR
     Alert -->|No| Monitor[Continue Monitoring]
 ```
 
-## Resource Saturation
+Resource Saturation
 
 Resource saturation covers the fundamental compute resources: CPU, memory, disk, and network.
 
@@ -62,6 +62,7 @@ CPU utilization is straightforward but often misunderstood. High utilization isn
 
 ```yaml
 # Prometheus queries for CPU saturation
+
 # CPU utilization percentage
 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 

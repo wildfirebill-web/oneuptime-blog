@@ -41,6 +41,7 @@ The client does all the heavy lifting: chunking, deduplication, compression, and
 
 ```bash
 # Create the Borg server project directory
+
 mkdir -p ~/borg-server/{data,ssh}
 cd ~/borg-server
 ```

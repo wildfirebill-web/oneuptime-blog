@@ -64,6 +64,7 @@ Understanding record types is fundamental to managing DNS correctly.
 
 ```bash
 # A Record - Maps a hostname to an IPv4 address
+
 # This is the most common record type
 dig +short example.com A
 # Output: 93.184.216.34

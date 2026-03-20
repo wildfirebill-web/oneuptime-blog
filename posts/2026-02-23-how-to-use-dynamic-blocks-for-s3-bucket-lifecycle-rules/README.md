@@ -16,6 +16,7 @@ A typical S3 bucket might have rules for transitioning logs to cheaper storage, 
 
 ```hcl
 # This gets unwieldy fast
+
 resource "aws_s3_bucket_lifecycle_configuration" "example" {
   bucket = aws_s3_bucket.main.id
 

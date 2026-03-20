@@ -16,6 +16,7 @@ The `batch` filter takes a number as argument and splits the list into chunks of
 
 ```yaml
 # playbook-basic-batch.yml
+
 # Splits a list of servers into groups of 3 for staged processing
 - name: Basic batch example
   hosts: localhost

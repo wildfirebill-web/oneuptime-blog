@@ -22,10 +22,11 @@ Attackers targeting IPv6 use: all-nodes multicast ping, DNS zone transfer, searc
 
 ## Detection Method 1: Firewall Drop Rate
 
-```
+```text
 # High rate of drops to unique /128 destinations = scanning
 
 # Splunk: detect IPv6 port scanning
+
 index=firewall action=drop network_type=ipv6
 | bin _time span=5m
 | stats
@@ -78,7 +79,7 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET any (
 
 ## Detection Method 3: DNS Reconnaissance
 
-```
+```text
 # Attackers enumerate IPv6 by DNS zone transfer or AAAA queries
 
 # Splunk: detect DNS enumeration for IPv6 hosts
@@ -162,7 +163,7 @@ level: medium
 
 ```bash
 #!/bin/bash
-# auto-block-ipv6-scanner.sh — Block detected scanners via ip6tables
+# auto-block-ipv6-scanner.sh - Block detected scanners via ip6tables
 
 THRESHOLD=50     # unique destinations in 5 minutes
 CHECK_INTERVAL=60  # seconds
@@ -170,7 +171,7 @@ CHECK_INTERVAL=60  # seconds
 # Requires: iptstate, ss, or firewall log parsing
 while true; do
     # Get top IPv6 sources with drops in last 5m
-    # (Using log file — replace with live firewall query)
+    # (Using log file - replace with live firewall query)
     SCANNERS=$(grep -E "$(date '+%b %e')" /var/log/ip6tables.log | \
         grep " DROP " | \
         awk '{print $11}' | sed 's/SRC=//' | \
@@ -197,4 +198,4 @@ done
 
 ## Conclusion
 
-IPv6 scanning detection requires different thresholds than IPv4 due to the vast address space. Key detection signals: drops to > 30 unique /128 destinations from one source in 5 minutes (host scan), > 20 unique ports to one destination (port scan), ICMPv6 echo to ff02::1 (multicast reconnaissance), DNS AAAA bulk queries > 100/minute (DNS enumeration). Suricata rules using `threshold: type threshold, track by_src` provide efficient kernel-level detection. Correlate NDP INCOMPLETE entry growth rate with SIEM events to detect NDP-based host discovery. Use /64 prefix grouping for attribution — IPv6 scanner may rotate between /128 addresses within a /64.
+IPv6 scanning detection requires different thresholds than IPv4 due to the vast address space. Key detection signals: drops to > 30 unique /128 destinations from one source in 5 minutes (host scan), > 20 unique ports to one destination (port scan), ICMPv6 echo to ff02::1 (multicast reconnaissance), DNS AAAA bulk queries > 100/minute (DNS enumeration). Suricata rules using `threshold: type threshold, track by_src` provide efficient kernel-level detection. Correlate NDP INCOMPLETE entry growth rate with SIEM events to detect NDP-based host discovery. Use /64 prefix grouping for attribution - IPv6 scanner may rotate between /128 addresses within a /64.

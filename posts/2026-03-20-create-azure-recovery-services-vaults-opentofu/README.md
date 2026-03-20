@@ -59,6 +59,7 @@ resource "azurerm_recovery_services_vault" "encrypted" {
 }
 
 # Grant vault managed identity access to Key Vault for customer-managed keys
+
 resource "azurerm_role_assignment" "vault_key_access" {
   scope                = azurerm_key_vault.backup_key.id
   role_definition_name = "Key Vault Crypto Officer"

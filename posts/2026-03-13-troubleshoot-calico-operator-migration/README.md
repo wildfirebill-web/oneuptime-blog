@@ -24,6 +24,7 @@ Understanding the migration state machine and the operator's error handling is e
 
 ```bash
 # Check TigeraStatus
+
 kubectl get tigerastatus
 
 # If stuck in Progressing state for >10 minutes:

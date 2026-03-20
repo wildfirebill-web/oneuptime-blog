@@ -12,6 +12,7 @@ OpenVPN connection drops can stem from MTU mismatches, keepalive timeouts, TLS r
 
 ```conf
 # In server.conf or client.conf, increase verbosity to see detailed events
+
 # verb 3 is default; use 4 or 5 for more detail
 verb 5
 ```

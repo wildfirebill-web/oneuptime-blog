@@ -92,6 +92,7 @@ For Kafka brokers with sidecars, let Istio handle encryption and disable Kafka's
 
 ```properties
 # Kafka broker config
+
 listeners=PLAINTEXT://0.0.0.0:9092
 ```
 

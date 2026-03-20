@@ -51,6 +51,7 @@ If you don't have cert-manager yet, install it first:
 
 ```bash
 # Install cert-manager, which the OTel Operator needs for TLS certificates
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.4/cert-manager.yaml
 ```
 

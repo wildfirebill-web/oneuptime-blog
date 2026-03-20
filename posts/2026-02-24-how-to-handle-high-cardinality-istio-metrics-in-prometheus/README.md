@@ -46,6 +46,7 @@ First, figure out which metrics are causing the problem:
 
 ```promql
 # Top 10 metrics by cardinality
+
 topk(10, count by (__name__)({__name__=~".+"}))
 ```
 

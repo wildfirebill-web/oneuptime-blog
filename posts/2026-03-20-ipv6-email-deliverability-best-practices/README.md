@@ -35,6 +35,7 @@ The most critical requirement for IPv6 mail:
 
 ```bash
 # Your sending IPv6 must have a PTR record
+
 dig -x 2001:db8::10 +short
 # → mail.example.com.
 
@@ -73,7 +74,7 @@ _dmarc.example.com.  300  IN  TXT  "v=DMARC1; p=reject; rua=mailto:dmarc@example
 
 New IPv6 addresses have no sending reputation. Warm up gradually:
 
-```
+```text
 Week 1: 500-1,000 messages/day
 Week 2: 2,000-5,000 messages/day
 Week 3: 10,000-25,000 messages/day

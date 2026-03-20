@@ -127,6 +127,7 @@ def get_user_orders(user_id, status_filter=None):
     return [{'id': doc.id, **doc.to_dict()} for doc in query.stream()]
 
 # Create a user with orders
+
 create_user_with_orders('user-001', {
     'name': 'Alice Johnson',
     'email': 'alice@example.com'

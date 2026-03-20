@@ -18,6 +18,7 @@ Install controller-gen as part of your project's tools.
 
 ```bash
 # Create tools.go to track tool dependencies
+
 cat > tools.go <<EOF
 //go:build tools
 // +build tools

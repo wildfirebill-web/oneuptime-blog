@@ -22,6 +22,7 @@ flowchart LR
 
 ```bash
 # Create the namespace
+
 ip netns add ns1
 
 # Create a veth pair

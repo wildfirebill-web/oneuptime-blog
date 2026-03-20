@@ -31,6 +31,7 @@ Make sure you have:
 
 ```bash
 # Install the Google Cloud Ansible collection
+
 ansible-galaxy collection install google.cloud
 ```
 

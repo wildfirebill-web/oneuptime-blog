@@ -123,6 +123,7 @@ Check that the cluster is properly imported:
 
 ```bash
 # Agent health
+
 kubectl get deployments -n cattle-system
 
 # Node visibility

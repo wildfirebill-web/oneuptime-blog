@@ -8,13 +8,13 @@ Description: The broadcast address of a subnet is calculated by taking the netwo
 
 ## The Calculation
 
-```
+```text
 Broadcast = Network Address OR Wildcard Mask
 Wildcard Mask = NOT Subnet Mask (bitwise inversion)
 ```
 
 Example: `192.168.10.0/24`
-```
+```text
 Network:     192.168.10.0  = 11000000.10101000.00001010.00000000
 Wildcard:    0.0.0.255     = 00000000.00000000.00000000.11111111
 OR result:   192.168.10.255 = 11000000.10101000.00001010.11111111
@@ -38,6 +38,7 @@ def broadcast_address(ip: str, mask: str) -> str:
     return socket.inet_ntoa(struct.pack("!I", broadcast_int))
 
 # Test cases
+
 cases = [
     ("192.168.10.45", "255.255.255.0"),    # /24
     ("172.16.50.200", "255.255.240.0"),    # /20
@@ -50,7 +51,7 @@ for ip, mask in cases:
 ```
 
 Output:
-```
+```text
 192.168.10.45 / 255.255.255.0 -> Broadcast: 192.168.10.255
 172.16.50.200 / 255.255.240.0 -> Broadcast: 172.16.63.255
 10.5.3.100 / 255.255.255.128 -> Broadcast: 10.5.3.127
@@ -74,7 +75,7 @@ print(broadcast_from_cidr("10.5.3.100/25"))      # 10.5.3.127
 ## Manual Calculation for /20
 
 For `172.16.50.200 / 255.255.240.0`:
-```
+```text
 Network: 172.16.48.0
 Wildcard (NOT mask): 0.0.15.255
 

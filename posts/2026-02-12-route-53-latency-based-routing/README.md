@@ -24,6 +24,7 @@ Let's say you have your application deployed in three regions: us-east-1, eu-wes
 
 ```bash
 # US East endpoint
+
 aws route53 change-resource-record-sets \
   --hosted-zone-id Z0123456789ABCDEFGHIJ \
   --change-batch '{

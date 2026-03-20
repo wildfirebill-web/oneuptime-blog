@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMPv6, Rate Limiting, Linux, sysctl, Kernel Configuration
+Tags: ICMPv6, Rate Limiting, Linux, Sysctl, Kernel Configuration
 
 Description: Configure Linux kernel ICMPv6 rate limiting using sysctl, understand the ratelimit and ratemask parameters, and tune them for different environments.
 
@@ -14,6 +14,7 @@ Linux automatically rate-limits ICMPv6 error message generation to prevent a rou
 
 ```bash
 # View current rate limiting settings
+
 sysctl net.ipv6.icmp.ratelimit
 # Default: 1000 (1000ms = 1 error per second per source)
 
@@ -153,9 +154,9 @@ RATE_LIMIT_PROFILES = {
 }
 
 for profile, config in RATE_LIMIT_PROFILES.items():
-    print(f"{profile}: ratelimit={config['ratelimit']}ms — {config['description']}")
+    print(f"{profile}: ratelimit={config['ratelimit']}ms - {config['description']}")
 ```
 
 ## Conclusion
 
-Linux ICMPv6 rate limiting protects against error storms and DoS attacks using the `net.ipv6.icmp.ratelimit` sysctl. The `ratemask` controls which types are rate-limited — never include Type 2 (Packet Too Big) in the ratemask, as rate-limiting it breaks PMTUD. The default settings (1 error per second, types 1-4 rate-limited) are appropriate for most environments. For high-performance servers or routers, reduce the ratelimit interval (to 100ms or less). For DoS protection, combine kernel rate limiting with ip6tables `--limit` rules for per-type and per-source granularity.
+Linux ICMPv6 rate limiting protects against error storms and DoS attacks using the `net.ipv6.icmp.ratelimit` sysctl. The `ratemask` controls which types are rate-limited - never include Type 2 (Packet Too Big) in the ratemask, as rate-limiting it breaks PMTUD. The default settings (1 error per second, types 1-4 rate-limited) are appropriate for most environments. For high-performance servers or routers, reduce the ratelimit interval (to 100ms or less). For DoS protection, combine kernel rate limiting with ip6tables `--limit` rules for per-type and per-source granularity.

@@ -14,6 +14,7 @@ IPsec transport mode for IPv6 on Linux protects traffic between two specific IPv
 
 ```bash
 # Verify kernel IPsec support
+
 modinfo esp6
 modinfo ah6
 modinfo xfrm6_tunnel
@@ -26,6 +27,8 @@ modprobe ah6
 ## Method 1: Manual ip xfrm Configuration
 
 ### Host A: 2001:db8:1::1
+
+Configure IPsec on Host A:
 ### Host B: 2001:db8:1::2
 
 ```bash
@@ -119,7 +122,7 @@ ip xfrm state list
 # Verify policies are installed
 ip xfrm policy list
 
-# Test: send TCP traffic and capture — should show ESP packets
+# Test: send TCP traffic and capture - should show ESP packets
 # On Host A:
 tcpdump -i eth0 'ip6 proto 50' -n &
 ssh 2001:db8:1::2
@@ -131,7 +134,7 @@ ssh 2001:db8:1::2
 
 ### /etc/swanctl/conf.d/transport.conf on Host A
 
-```
+```text
 connections {
     host-a-to-b {
         version = 2

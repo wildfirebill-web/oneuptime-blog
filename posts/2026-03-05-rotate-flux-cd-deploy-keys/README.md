@@ -23,6 +23,7 @@ Find the deploy keys currently used by Flux:
 
 ```bash
 # List Git repository sources and their secret references
+
 flux get sources git -A
 
 # Check the secret used by the main GitRepository

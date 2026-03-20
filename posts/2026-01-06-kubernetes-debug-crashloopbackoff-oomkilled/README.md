@@ -38,6 +38,7 @@ The container exceeded its memory limit or the node ran out of memory. Kubernete
 
 ```bash
 # Get pod status
+
 kubectl get pods -n <namespace>
 
 # Describe pod for events and state

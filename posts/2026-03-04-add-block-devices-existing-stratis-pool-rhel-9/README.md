@@ -143,6 +143,7 @@ Set up monitoring to track pool usage:
 
 ```bash
 # Quick status check
+
 sudo stratis pool list
 
 # Detailed block device information

@@ -42,6 +42,7 @@ For production, use certificates from a trusted CA. For testing, create a self-s
 ```bash
 #!/bin/bash
 # generate_certificates.sh
+
 # Creates a CA and certificates for RabbitMQ TLS configuration
 # For production, replace with certificates from your organization's CA
 

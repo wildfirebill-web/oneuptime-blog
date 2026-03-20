@@ -26,6 +26,7 @@ Let us start with a VPC foundation that our endpoints will be attached to.
 
 ```hcl
 # Configure the AWS provider
+
 provider "aws" {
   region = "us-east-1"
 }

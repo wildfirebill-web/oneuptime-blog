@@ -12,9 +12,10 @@ nmap is the standard tool for network discovery and security auditing. It can te
 
 ```bash
 # Scan a single host (ping + port scan)
+
 nmap 192.168.1.100
 
-# Ping sweep — discover all live hosts in a subnet
+# Ping sweep - discover all live hosts in a subnet
 nmap -sn 192.168.1.0/24
 
 # Ping sweep on multiple networks
@@ -51,7 +52,7 @@ nmap -F 192.168.1.100
 ## TCP SYN Scan (Most Common)
 
 ```bash
-# SYN scan — fast, stealthy (doesn't complete handshake)
+# SYN scan - fast, stealthy (doesn't complete handshake)
 sudo nmap -sS 192.168.1.100
 
 # TCP Connect scan (no root needed, completes handshake)
@@ -117,11 +118,11 @@ nmap -sC 192.168.1.100
 # Run specific script
 nmap --script=http-title 192.168.1.100
 
-# Vulnerability scan (careful — can be noisy)
+# Vulnerability scan (careful - can be noisy)
 sudo nmap --script=vuln 192.168.1.100
 
 # SSL/TLS configuration check
 nmap --script=ssl-enum-ciphers -p 443 192.168.1.100
 ```
 
-Always obtain permission before scanning networks you don't own — unauthorized nmap scans may violate computer fraud laws and network policies.
+Always obtain permission before scanning networks you don't own - unauthorized nmap scans may violate computer fraud laws and network policies.

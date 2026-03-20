@@ -1,4 +1,4 @@
-# How to Connect Portainer to an Azure AKS Cluster
+# How to Connect Portainer to an Azure AKS Cluster - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Azure Kubernetes Service (AKS) is Microsoft's managed Kubernetes service. Connec
 
 ```bash
 # Get the kubeconfig for your AKS cluster
+
 az aks get-credentials \
   --resource-group my-resource-group \
   --name my-aks-cluster \
@@ -184,4 +185,4 @@ kubectl get nodes --show-labels --kubeconfig=aks-portainer.kubeconfig | grep age
 
 ## Conclusion
 
-AKS clusters integrate seamlessly with Portainer via kubeconfig import. The key is using a static service account token rather than Azure AD token-based authentication. For private AKS clusters or environments where Portainer runs in a different network, the Portainer Agent deployed inside AKS is the recommended approach — it communicates outbound from the cluster to Portainer, eliminating the need for inbound network access to the API server.
+AKS clusters integrate seamlessly with Portainer via kubeconfig import. The key is using a static service account token rather than Azure AD token-based authentication. For private AKS clusters or environments where Portainer runs in a different network, the Portainer Agent deployed inside AKS is the recommended approach - it communicates outbound from the cluster to Portainer, eliminating the need for inbound network access to the API server.

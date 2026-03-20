@@ -47,6 +47,7 @@ Ensure your system is up to date before installing i3:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Upgrade existing packages

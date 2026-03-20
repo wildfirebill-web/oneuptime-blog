@@ -14,7 +14,7 @@ When K3s generates its TLS certificate for the Kubernetes API server, it include
 
 When kubectl connects to the API server, it validates the server's certificate against the server address. If you connect to `k3s.example.com` but the certificate only includes `192.168.1.100`, the connection fails with:
 
-```
+```text
 x509: certificate is valid for 192.168.1.100, not k3s.example.com
 ```
 
@@ -42,6 +42,7 @@ sudo tee /etc/rancher/k3s/config.yaml > /dev/null <<EOF
 token: "ClusterToken"
 
 # TLS Subject Alternative Names
+
 tls-san:
   - 192.168.1.100         # Primary server IP
   - 192.168.1.99          # Load balancer VIP
@@ -206,4 +207,4 @@ sudo journalctl -u k3s | grep "tls" | tail -20
 
 ## Conclusion
 
-TLS SANs in K3s control which IP addresses and hostnames are valid for API server connections. Always include your load balancer VIP and any DNS names used to access the cluster in the `tls-san` configuration. For existing clusters, adding new SANs requires stopping K3s, deleting the existing server certificates, and restarting — K3s will automatically regenerate certificates including the new SANs. This is a non-destructive operation that takes only a minute to complete.
+TLS SANs in K3s control which IP addresses and hostnames are valid for API server connections. Always include your load balancer VIP and any DNS names used to access the cluster in the `tls-san` configuration. For existing clusters, adding new SANs requires stopping K3s, deleting the existing server certificates, and restarting - K3s will automatically regenerate certificates including the new SANs. This is a non-destructive operation that takes only a minute to complete.

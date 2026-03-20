@@ -29,6 +29,7 @@ Execute the complete test suite against your cluster.
 
 ```bash
 # Run all connectivity tests (creates a 'cilium-test' namespace)
+
 # This takes 5-15 minutes depending on cluster size
 cilium connectivity test
 

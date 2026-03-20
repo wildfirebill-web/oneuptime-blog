@@ -204,6 +204,7 @@ Before and after applying relabeling, compare the number of active time series:
 
 ```promql
 # Total time series from Istio
+
 count({__name__=~"istio_.*"})
 
 # Time series per metric

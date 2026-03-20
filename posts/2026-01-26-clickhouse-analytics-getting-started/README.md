@@ -68,6 +68,7 @@ The quickest way to try ClickHouse is with Docker:
 
 ```bash
 # Pull the official ClickHouse image
+
 docker pull clickhouse/clickhouse-server
 
 # Start ClickHouse server with persistent storage

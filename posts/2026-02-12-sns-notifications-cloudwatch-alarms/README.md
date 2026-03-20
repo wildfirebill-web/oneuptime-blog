@@ -41,6 +41,7 @@ First, create an SNS topic that your alarms will publish to:
 
 ```bash
 # Create an SNS topic for alarm notifications
+
 aws sns create-topic --name infrastructure-alerts
 
 # The output gives you the topic ARN - save this

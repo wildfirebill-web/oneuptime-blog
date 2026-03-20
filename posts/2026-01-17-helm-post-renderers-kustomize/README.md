@@ -47,6 +47,7 @@ flowchart TB
 # kustomize-post-renderer.sh
 
 # Read stdin (Helm output) into a temporary file
+
 cat > /tmp/helm-output.yaml
 
 # Create kustomization that uses Helm output as a resource

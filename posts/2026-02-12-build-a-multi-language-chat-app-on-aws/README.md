@@ -38,6 +38,7 @@ The following CloudFormation snippet defines both tables:
 
 ```yaml
 # DynamoDB tables for connections and messages
+
 Resources:
   ConnectionsTable:
     Type: AWS::DynamoDB::Table

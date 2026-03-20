@@ -58,6 +58,7 @@ Tail the speaker logs to confirm leadership is unstable:
 
 ```bash
 # Tail logs from all speaker pods and filter for leader changes
+
 kubectl logs -n metallb-system -l app=metallb,component=speaker \
   --all-containers --follow | grep -i "leader"
 ```

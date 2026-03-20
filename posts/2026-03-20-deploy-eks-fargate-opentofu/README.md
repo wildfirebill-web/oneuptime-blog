@@ -8,7 +8,7 @@ Description: Learn how to deploy an Amazon EKS cluster with Fargate profiles usi
 
 ---
 
-EKS Fargate eliminates the need to manage EC2 worker nodes — AWS provisions and scales the underlying compute automatically. You define which namespaces and pod labels run on Fargate using Fargate profiles.
+EKS Fargate eliminates the need to manage EC2 worker nodes - AWS provisions and scales the underlying compute automatically. You define which namespaces and pod labels run on Fargate using Fargate profiles.
 
 ## EKS Fargate Architecture
 
@@ -26,6 +26,7 @@ graph TB
 
 ```hcl
 # iam.tf
+
 resource "aws_iam_role" "fargate_pod_execution" {
   name = "${var.cluster_name}-fargate-pod-execution"
 
@@ -153,7 +154,7 @@ resource "null_resource" "patch_coredns" {
 ## IRSA for Fargate Pods
 
 ```hcl
-# irsa.tf — IAM Roles for Service Accounts works the same with Fargate
+# irsa.tf - IAM Roles for Service Accounts works the same with Fargate
 data "aws_iam_openid_connect_provider" "eks" {
   url = aws_eks_cluster.main.identity[0].oidc[0].issuer
 }
@@ -222,8 +223,8 @@ resource "aws_iam_role_policy" "fargate_cloudwatch_logs" {
 
 ## Best Practices
 
-- Create a Fargate profile for `kube-system` first — CoreDNS must run on Fargate in Fargate-only clusters and requires a patch to remove the EC2 annotation.
-- Use private subnets only — Fargate pods don't support public subnets.
-- Use IRSA instead of environment variables for AWS credentials — it's the secure, auditable approach.
-- Fargate doesn't support DaemonSets — deploy logging agents as sidecars using FireLens or aws-for-fluent-bit.
-- Right-size pod resource requests carefully — Fargate allocates vCPU and memory based on the highest request in the pod spec.
+- Create a Fargate profile for `kube-system` first - CoreDNS must run on Fargate in Fargate-only clusters and requires a patch to remove the EC2 annotation.
+- Use private subnets only - Fargate pods don't support public subnets.
+- Use IRSA instead of environment variables for AWS credentials - it's the secure, auditable approach.
+- Fargate doesn't support DaemonSets - deploy logging agents as sidecars using FireLens or aws-for-fluent-bit.
+- Right-size pod resource requests carefully - Fargate allocates vCPU and memory based on the highest request in the pod spec.

@@ -34,6 +34,7 @@ def resolve_service(hostname: str, retries: int = 5, delay: float = 2.0) -> list
     raise RuntimeError(f"Failed to resolve {hostname} after {retries} attempts")
 
 # In Kubernetes, services resolve via their ClusterDNS name
+
 ips = resolve_service("auth-service.default.svc.cluster.local")
 ```
 
@@ -67,7 +68,7 @@ kind: Service
 metadata:
   name: worker
 spec:
-  clusterIP: None          # Headless — DNS returns all pod IPs
+  clusterIP: None          # Headless - DNS returns all pod IPs
   selector:
     app: worker
   ports:
@@ -121,4 +122,4 @@ for _ in range(4):
 
 ## Conclusion
 
-DNS is the standard discovery mechanism in containerised environments — Kubernetes `Service` objects provide stable DNS names that resolve to ClusterIP or individual pod IPs (headless services). Use environment variables for simpler deployments where a central registry is overkill. Always retry DNS lookups at startup to handle services that haven't registered yet. For production clients, combine DNS resolution with health checks and circuit breakers to route around unhealthy instances.
+DNS is the standard discovery mechanism in containerised environments - Kubernetes `Service` objects provide stable DNS names that resolve to ClusterIP or individual pod IPs (headless services). Use environment variables for simpler deployments where a central registry is overkill. Always retry DNS lookups at startup to handle services that haven't registered yet. For production clients, combine DNS resolution with health checks and circuit breakers to route around unhealthy instances.

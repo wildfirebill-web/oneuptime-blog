@@ -82,6 +82,7 @@ First, you need an IP address pool configured in MetalLB. The following configur
 
 ```yaml
 # This IPAddressPool defines the range of IPs MetalLB can assign to services
+
 # The addresses field specifies a range from 192.168.1.100 to 192.168.1.110
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

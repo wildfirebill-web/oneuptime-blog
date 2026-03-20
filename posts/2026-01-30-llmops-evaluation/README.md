@@ -62,6 +62,7 @@ Golden sets contain human-verified examples with expected outputs. These are you
 
 ```python
 # golden_sets.py
+
 # Golden test sets with human-verified expected outputs
 
 from dataclasses import dataclass

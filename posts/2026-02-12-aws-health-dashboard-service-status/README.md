@@ -36,6 +36,7 @@ List recent events affecting your account:
 
 ```bash
 # List recent health events for your account
+
 aws health describe-events \
   --region us-east-1 \
   --filter '{

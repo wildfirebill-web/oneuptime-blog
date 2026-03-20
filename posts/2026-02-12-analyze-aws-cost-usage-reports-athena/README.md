@@ -18,6 +18,7 @@ If you configured CUR with the Athena integration artifact, AWS generates a Clou
 
 ```bash
 # Find the CloudFormation template
+
 aws s3 ls s3://my-company-cur-reports/cur/monthly-cur/ --recursive | grep cfn.yml
 
 # Deploy it

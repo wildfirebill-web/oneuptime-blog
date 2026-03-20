@@ -29,6 +29,7 @@ This guide covers end-to-end automation of the hive dot-graph workflow.
 ```bash
 #!/bin/bash
 # collect-and-render-hive.sh
+
 # Collect hive dot-graphs from all Cilium pods and render them
 
 set -euo pipefail

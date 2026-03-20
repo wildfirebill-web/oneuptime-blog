@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Project Structure, Best Practices, Infrastructure as Code, Organization, DevOps
+Tags: OpenTofu, Project Structure, Best Practices, Infrastructure as Code, Organizations, DevOps
 
 Description: Learn how to organize an OpenTofu project directory with a consistent layout that separates environments, modules, and shared resources for maximum maintainability.
 
@@ -12,7 +12,7 @@ A well-structured OpenTofu project makes it easy to navigate, test, and review i
 
 ## Recommended Directory Structure
 
-```
+```text
 infrastructure/
 ├── environments/
 │   ├── dev/
@@ -38,7 +38,7 @@ infrastructure/
 ├── shared/
 │   ├── data-sources.tf          # Shared data sources (AMI lookups etc.)
 │   └── locals.tf                # Shared local values
-├── .terraform.lock.hcl          # COMMITTED — provider version lock
+├── .terraform.lock.hcl          # COMMITTED - provider version lock
 ├── .gitignore
 └── README.md
 ```
@@ -47,6 +47,7 @@ infrastructure/
 
 ```hcl
 # environments/prod/backend.tf
+
 terraform {
   required_version = ">= 1.8"
   required_providers {

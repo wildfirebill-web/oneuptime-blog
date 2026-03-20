@@ -18,6 +18,7 @@ Before diving into specific issues, run these commands to get a picture of what 
 
 ```bash
 # Check the stream status
+
 gcloud datastream streams describe my-stream \
   --location=us-central1 \
   --project=my-project \

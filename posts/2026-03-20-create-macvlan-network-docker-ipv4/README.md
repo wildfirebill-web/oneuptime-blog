@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, macvlan, IPv4, Containers, LAN
+Tags: Docker, Networking, Macvlan, IPv4, Containers, LAN
 
 Description: Create a Docker macvlan network that allows containers to appear as physical devices on your LAN with their own MAC addresses and IPv4 addresses routable from the broader network.
 
@@ -20,6 +20,7 @@ Description: Create a Docker macvlan network that allows containers to appear as
 
 ```bash
 # eth0 is the host's physical interface connected to the LAN
+
 # The parent subnet is 192.168.1.0/24 with gateway 192.168.1.1
 # We give containers IPs from 192.168.1.200-220
 

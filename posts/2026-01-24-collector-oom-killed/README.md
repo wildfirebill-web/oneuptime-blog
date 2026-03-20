@@ -43,6 +43,7 @@ graph TD
 
 ```bash
 # Check if collector was OOM killed
+
 kubectl describe pod otel-collector-xxx | grep -A 5 "Last State"
 
 # Output showing OOM:

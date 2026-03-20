@@ -39,6 +39,7 @@ If using the public internet between sites, establish a VPN first:
 
 ```bash
 # Install WireGuard on both servers
+
 sudo apt-get install -y wireguard
 
 # Generate keys on primary (Site A)

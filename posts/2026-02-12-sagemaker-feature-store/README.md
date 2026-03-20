@@ -61,6 +61,7 @@ bucket = session.default_bucket()
 region = session.boto_region_name
 
 # Define the feature group name
+
 feature_group_name = 'customer-features'
 
 # Create a sample DataFrame that defines the schema

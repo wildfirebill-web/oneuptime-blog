@@ -138,6 +138,7 @@ You can also manage the partition filter requirement using the `bq` command-line
 
 ```bash
 # Enable partition filter requirement via bq CLI
+
 bq update \
   --require_partition_filter \
   my_project:my_dataset.events

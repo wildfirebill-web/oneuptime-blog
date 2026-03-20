@@ -202,6 +202,7 @@ Track how check-in/check-out performance varies throughout the day:
 
 ```python
 # Observable gauge for current front desk queue
+
 desk_queue_length = meter.create_observable_gauge(
     "pms.front_desk_queue_length",
     description="Number of guests waiting for check-in or check-out",

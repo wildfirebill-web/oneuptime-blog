@@ -8,7 +8,7 @@ Description: Learn how to build a structured data lake on AWS S3 using OpenTofu 
 
 ---
 
-A data lake stores raw, processed, and curated data in a structured format that analytics tools can query efficiently. Getting the architecture right from the start — zones, naming conventions, access control — prevents costly rework later. OpenTofu makes this architecture repeatable across environments.
+A data lake stores raw, processed, and curated data in a structured format that analytics tools can query efficiently. Getting the architecture right from the start - zones, naming conventions, access control - prevents costly rework later. OpenTofu makes this architecture repeatable across environments.
 
 ## Data Lake Zone Architecture
 
@@ -23,6 +23,7 @@ graph LR
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -144,7 +145,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "curated" {
 
 ```hcl
 # iam.tf
-# ETL role — read raw, write processed
+# ETL role - read raw, write processed
 resource "aws_iam_policy" "etl_role_policy" {
   name        = "DataLakeETLPolicy"
   description = "ETL access: read from raw, write to processed"
@@ -188,7 +189,7 @@ resource "aws_glue_catalog_database" "curated" {
 
 ## Best Practices
 
-- Use separate buckets (not prefixes) for each zone — different lifecycle policies and IAM permissions are easier to manage per bucket.
+- Use separate buckets (not prefixes) for each zone - different lifecycle policies and IAM permissions are easier to manage per bucket.
 - Name objects with partitioned paths (e.g., `year=2026/month=03/day=20/`) to enable partition-based filtering in Athena and Glue.
 - Use bucket key encryption (`bucket_key_enabled = true`) to reduce KMS API calls and costs at scale.
 - Enable S3 Server Access Logging or CloudTrail Data Events for compliance and access auditing.

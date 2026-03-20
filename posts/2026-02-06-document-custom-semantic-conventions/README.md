@@ -93,6 +93,7 @@ For each attribute group, provide usage examples in every language your organiza
 
 ```python
 # Python example: setting order attributes on a span
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer("order-service")

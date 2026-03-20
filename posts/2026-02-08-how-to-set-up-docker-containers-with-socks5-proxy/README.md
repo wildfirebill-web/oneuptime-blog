@@ -29,6 +29,7 @@ Create or edit the Docker daemon's proxy configuration:
 
 ```bash
 # Create the systemd override directory
+
 sudo mkdir -p /etc/systemd/system/docker.service.d
 ```
 

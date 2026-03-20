@@ -28,6 +28,7 @@ The simplest way to get started:
 ```text
 Workspace Name: production-networking
 Description: Production VPC, subnets, and routing configuration
+
 Project: Production Infrastructure
 ```
 
@@ -46,6 +47,7 @@ You can create workspaces from the terminal without visiting the UI. First, conf
 
 ```hcl
 # main.tf
+
 terraform {
   cloud {
     organization = "acme-infrastructure"

@@ -16,6 +16,7 @@ Pass a JSON file to a playbook using the `@` prefix with the `-e` flag.
 
 ```bash
 # Pass variables from a JSON file
+
 ansible-playbook deploy.yml -e @deploy-config.json
 ```
 

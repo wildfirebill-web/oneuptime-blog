@@ -45,6 +45,7 @@ flowchart LR
 
 ```yaml
 # clusters/my-cluster/external-secrets/cluster-store-sa.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

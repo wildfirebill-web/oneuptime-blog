@@ -22,6 +22,7 @@ You need to be logged in first. If you have not logged in yet, see [Login to Arg
 
 ```bash
 # Login with the current password
+
 argocd login localhost:8080 --username admin --password '<current-password>' --insecure
 ```
 

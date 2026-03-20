@@ -1,4 +1,4 @@
-# How to Use Workspaces with Remote Backends in OpenTofu
+# How to Use Workspaces with Remote Backends in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,7 +27,7 @@ terraform {
 
 State file structure:
 
-```
+```text
 S3 bucket: my-terraform-state
 ├── app/terraform.tfstate               ← default workspace
 └── envs/
@@ -52,7 +52,7 @@ terraform {
 
 State file structure in GCS:
 
-```
+```text
 Bucket: my-terraform-state-bucket
 ├── app/default.tfstate         ← default workspace
 ├── app/production.tfstate      ← production workspace
@@ -77,7 +77,7 @@ terraform {
 
 Azure Blob Storage state file structure:
 
-```
+```text
 Container: tfstate
 ├── app/terraform.tfstate           ← default workspace
 ├── env:/production/app/terraform.tfstate    ← production workspace
@@ -108,6 +108,7 @@ SELECT id, name FROM app_states;
 
 ```yaml
 # GitHub Actions: deploy to multiple environments
+
 name: Deploy
 
 on:

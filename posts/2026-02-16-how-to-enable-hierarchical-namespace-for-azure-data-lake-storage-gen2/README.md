@@ -26,6 +26,7 @@ You can only enable the hierarchical namespace when creating a storage account. 
 
 ```bash
 # Create a storage account with hierarchical namespace enabled
+
 # The --hns flag is the key parameter that enables Data Lake Storage Gen2
 az storage account create \
   --name mydatalakeaccount \

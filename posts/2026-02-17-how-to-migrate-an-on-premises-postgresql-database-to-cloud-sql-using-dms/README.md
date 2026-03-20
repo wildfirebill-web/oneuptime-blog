@@ -50,6 +50,7 @@ Configure the source for logical replication:
 
 ```ini
 # postgresql.conf - Required settings for DMS migration
+
 wal_level = logical
 max_replication_slots = 10
 max_wal_senders = 10

@@ -41,6 +41,7 @@ Here is a practical Kickstart file for a RHEL server with custom partitioning, n
 # RHEL Kickstart configuration file
 
 # Use graphical or text mode installer
+
 text
 
 # Installation source - adjust URL to your repo server

@@ -2211,6 +2211,7 @@ flowchart TB
 
 ```yaml
 # timeline-collector-config.yaml
+
 version: "1.0"
 
 incident:

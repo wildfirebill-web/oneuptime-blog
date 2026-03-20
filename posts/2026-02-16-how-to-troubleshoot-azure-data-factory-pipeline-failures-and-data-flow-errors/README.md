@@ -58,6 +58,7 @@ Copy activity is the workhorse of ADF, and it has the most diverse set of failur
 
 ```bash
 # Check Self-Hosted Integration Runtime status
+
 # A degraded or offline SHIR is a common cause of connection failures
 az datafactory integration-runtime show \
   --resource-group myResourceGroup \

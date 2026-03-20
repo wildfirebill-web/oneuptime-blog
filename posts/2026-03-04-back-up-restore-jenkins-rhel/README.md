@@ -30,6 +30,7 @@ DATE=$(date +%Y%m%d_%H%M%S)
 BACKUP_FILE="$BACKUP_DIR/jenkins-backup-$DATE.tar.gz"
 
 # Create backup directory if it does not exist
+
 mkdir -p "$BACKUP_DIR"
 
 # Stop Jenkins to ensure consistent backup

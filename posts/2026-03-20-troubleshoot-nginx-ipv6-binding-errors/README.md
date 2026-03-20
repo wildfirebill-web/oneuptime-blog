@@ -4,12 +4,13 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Nginx, Troubleshooting, Binding Errors, Configuration
 
-Description: Learn how to diagnose and fix common Nginx IPv6 binding errors, including "Address already in use", "bind() failed", and configuration conflicts.
+Description: Learn how to diagnose and fix common Nginx IPv6 binding errors, including 'Address already in use', 'bind() failed', and configuration conflicts.
 
 ## Common Nginx IPv6 Binding Errors
 
 ```bash
 # Error 1: Address already in use
+
 # nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)
 
 # Error 2: Cannot bind on socket
@@ -149,4 +150,4 @@ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 
 ## Summary
 
-Common Nginx IPv6 binding errors: "Address already in use" — fix with `ipv6only=on` on the `[::]:PORT` listener; "Cannot assign requested address" — the IPv6 address doesn't exist on the host, check with `ip -6 addr show`; "Permission denied" — use `setcap cap_net_bind_service`. Always use brackets around IPv6 addresses in nginx config: `listen [2001:db8::10]:80;`. Diagnose with `nginx -t` and `ss -6 -tlnp`.
+Common Nginx IPv6 binding errors: "Address already in use" - fix with `ipv6only=on` on the `[::]:PORT` listener; "Cannot assign requested address" - the IPv6 address doesn't exist on the host, check with `ip -6 addr show`; "Permission denied" - use `setcap cap_net_bind_service`. Always use brackets around IPv6 addresses in nginx config: `listen [2001:db8::10]:80;`. Diagnose with `nginx -t` and `ss -6 -tlnp`.

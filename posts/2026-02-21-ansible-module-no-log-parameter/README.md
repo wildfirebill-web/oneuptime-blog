@@ -39,6 +39,7 @@ Do not return sensitive data in exit_json:
 
 ```python
 # BAD: Exposes password in output
+
 module.exit_json(changed=True, connection_string=conn_str)
 
 # GOOD: Only return safe information

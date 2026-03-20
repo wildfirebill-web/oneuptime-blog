@@ -18,6 +18,7 @@ Network policies require a CNI plugin that supports them, such as Calico, Cilium
 
 ```bash
 # Check which CNI plugin is installed
+
 kubectl get pods -n kube-system | grep -E "calico|cilium|weave"
 
 # Verify network policy enforcement by checking for the NetworkPolicy API

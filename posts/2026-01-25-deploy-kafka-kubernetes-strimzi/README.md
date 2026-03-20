@@ -60,6 +60,7 @@ Deploy the Strimzi operator to manage Kafka resources:
 
 ```bash
 # Create namespace for Kafka
+
 kubectl create namespace kafka
 
 # Install Strimzi operator (latest stable version)

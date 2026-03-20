@@ -288,6 +288,7 @@ Track SpikeArrest violations in Apigee Analytics to understand if your rates are
 
 ```bash
 # Query for spike arrest violations
+
 curl "https://apigee.googleapis.com/v1/organizations/YOUR_ORG/environments/prod/stats/apiproxy?select=sum(is_error)&timeRange=01/01/2026+00:00~02/17/2026+23:59&filter=(fault.name+eq+'SpikeArrestViolation')" \
   -H "Authorization: Bearer $(gcloud auth print-access-token)"
 ```

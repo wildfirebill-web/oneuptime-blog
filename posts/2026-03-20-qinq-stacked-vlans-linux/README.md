@@ -19,7 +19,7 @@ QinQ (IEEE 802.1ad) stacks two VLAN tags: an outer Service VLAN (S-VLAN) and an 
 
 ## How QinQ Frames Look
 
-```
+```text
 | Outer 802.1ad Tag (S-VLAN) | Inner 802.1Q Tag (C-VLAN) | Payload |
 |      TPID: 0x88A8          |      TPID: 0x8100          |         |
 ```
@@ -28,6 +28,7 @@ QinQ (IEEE 802.1ad) stacks two VLAN tags: an outer Service VLAN (S-VLAN) and an 
 
 ```bash
 # Load 8021q module
+
 modprobe 8021q
 
 # Create outer VLAN using 802.1ad protocol (S-VLAN ID 1000)

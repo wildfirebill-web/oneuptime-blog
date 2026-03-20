@@ -29,6 +29,7 @@ Redis --> Redis Exporter --> Prometheus --> Grafana
 
 ```bash
 # Run redis_exporter
+
 docker run -d \
   --name redis-exporter \
   -p 9121:9121 \

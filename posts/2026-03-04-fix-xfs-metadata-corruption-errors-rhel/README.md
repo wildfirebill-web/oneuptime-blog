@@ -14,6 +14,7 @@ XFS is the default filesystem on RHEL. When metadata corruption occurs, the file
 
 ```bash
 # Check kernel messages for XFS errors
+
 sudo dmesg | grep -i "XFS"
 
 # Look for messages like:

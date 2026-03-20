@@ -60,6 +60,7 @@ The following manifest defines a PV backed by an NFS share. The capacity, access
 
 ```yaml
 # pv-nfs-data.yaml
+
 # Defines a 50Gi Persistent Volume backed by an NFS server.
 # This PV can be mounted by multiple Pods simultaneously (ReadWriteMany).
 # The 'Retain' reclaim policy keeps data safe when the PVC is deleted.

@@ -27,6 +27,7 @@ Redis memory usage consists of several components:
 
 ```bash
 # Basic memory info
+
 redis-cli INFO memory
 
 # Key memory metrics

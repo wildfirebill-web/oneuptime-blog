@@ -30,6 +30,7 @@ Start by assessing what percentage of your workloads have explicit Cilium networ
 
 ```bash
 # Count total endpoints vs endpoints with active policies
+
 TOTAL=$(cilium endpoint list -o json | jq 'length')
 WITH_POLICY=$(cilium endpoint list -o json | \
   jq '[.[] | select(.status.policy.realized."l4-ingress" != null or .status.policy.realized."l4-egress" != null)] | length')

@@ -14,6 +14,7 @@ GRE tunnel issues typically fall into four categories: the tunnel interface is n
 
 ```bash
 # Check if the tunnel interface is UP
+
 ip link show gre0
 # Look for: state UP LOWER_UP
 
@@ -73,7 +74,7 @@ modprobe ip_gre
 tcpdump -i eth0 proto gre -n
 
 # Check if packets are being sent (TX) and received (RX)
-# If TX but no RX from remote — firewall on remote or routing issue
+# If TX but no RX from remote - firewall on remote or routing issue
 ```
 
 ## Step 6: Verify Tunnel Configuration

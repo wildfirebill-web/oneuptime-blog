@@ -18,6 +18,7 @@ Kubernetes RBAC consists of four main resources. Roles define a set of permissio
 
 ```hcl
 # Configure the Kubernetes provider
+
 terraform {
   required_providers {
     kubernetes = {

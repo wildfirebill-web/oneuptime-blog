@@ -16,6 +16,7 @@ The recommended way to install Ansible on your control node is inside a virtual 
 
 ```bash
 # Create a virtual environment for Ansible
+
 python3 -m venv ~/ansible-venv
 
 # Activate it

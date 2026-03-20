@@ -115,6 +115,7 @@ In your GoReleaser configuration, set the version via ldflags:
 
 ```yaml
 # .goreleaser.yml
+
 builds:
   - ldflags:
       - '-s -w -X main.version={{.Version}}'

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, IPv6, Services, ipFamilyPolicy
+Tags: Helm, Kubernetes, IPv6, Services, IpFamilyPolicy
 
 Description: Template Kubernetes Service ipFamilyPolicy and ipFamilies fields in Helm charts for proper dual-stack service configuration.
 
@@ -24,6 +24,7 @@ When designing Helm charts for IPv6-ready deployments:
 # values.yaml
 
 # Network configuration
+
 networking:
   # Enable IPv6 support
   ipv6:

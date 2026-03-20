@@ -201,6 +201,7 @@ spec:
 
 ```bash
 # Without token - expect 403
+
 kubectl exec deploy/sleep -c sleep -- \
   curl -s -o /dev/null -w "%{http_code}" \
   http://api-server.backend:8080/api/data

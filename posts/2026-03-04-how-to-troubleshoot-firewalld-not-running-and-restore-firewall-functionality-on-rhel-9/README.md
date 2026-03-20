@@ -35,6 +35,7 @@ sudo journalctl -u firewalld -n 50
 
 ```bash
 # Validate the configuration
+
 sudo firewall-cmd --check-config
 
 # Reset to defaults if corrupted

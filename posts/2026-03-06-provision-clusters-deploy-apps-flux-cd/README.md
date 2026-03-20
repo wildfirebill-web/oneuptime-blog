@@ -62,6 +62,7 @@ Set up Flux on the management cluster to watch the repository.
 
 ```yaml
 # clusters/management/kustomization.yaml
+
 # Root kustomization for the management cluster
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

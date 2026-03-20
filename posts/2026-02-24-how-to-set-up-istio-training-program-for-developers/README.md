@@ -127,6 +127,7 @@ Give developers a script to spin up a local cluster with Istio:
 # setup-istio-lab.sh
 
 # Create Kind cluster
+
 kind create cluster --name istio-lab
 
 # Install Istio

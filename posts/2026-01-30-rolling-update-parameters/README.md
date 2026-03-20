@@ -70,6 +70,7 @@ Here is a Deployment manifest with rolling update parameters configured. The str
 
 ```yaml
 # Deployment with rolling update strategy
+
 # This configuration ensures zero-downtime updates
 apiVersion: apps/v1
 kind: Deployment
@@ -160,7 +161,7 @@ spec:
           failureThreshold: 3
 ```
 
-### Resource Constrained Configuration
+Resource Constrained Configuration
 
 When cluster resources are limited, minimize the surge to avoid resource pressure during updates.
 

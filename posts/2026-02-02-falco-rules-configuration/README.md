@@ -45,6 +45,7 @@ The following example shows a basic rule that detects shell execution inside con
 
 ```yaml
 # Basic rule structure
+
 # Every rule needs: name, description, condition, output, and priority
 - rule: Shell Spawned in Container
   desc: Detect shell execution inside a container environment

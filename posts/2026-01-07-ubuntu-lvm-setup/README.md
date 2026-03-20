@@ -91,6 +91,7 @@ First, install the LVM2 package if it is not already installed on your system.
 
 ```bash
 # Update package lists and install LVM2 utilities
+
 sudo apt update
 sudo apt install lvm2 -y
 

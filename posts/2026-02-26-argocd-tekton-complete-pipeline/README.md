@@ -34,6 +34,7 @@ First, deploy Tekton itself using ArgoCD:
 
 ```yaml
 # tekton-pipelines-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

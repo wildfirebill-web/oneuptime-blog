@@ -38,6 +38,7 @@ graph TD
 
 ```bash
 # Dump a single database in custom format (compressed, most flexible)
+
 pg_dump -h localhost -U postgres -d myapp \
     -Fc \
     -f /backups/myapp_$(date +%Y%m%d_%H%M%S).dump

@@ -14,6 +14,7 @@ Manual backups are unreliable because someone will eventually forget. Automating
 
 ```bash
 # Create the backup directory
+
 sudo mkdir -p /backup/postgresql
 sudo chown postgres:postgres /backup/postgresql
 ```

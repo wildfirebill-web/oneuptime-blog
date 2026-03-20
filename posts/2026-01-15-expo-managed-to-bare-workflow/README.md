@@ -69,6 +69,7 @@ The bare workflow provides:
 
 ```plaintext
 # Bare workflow project structure
+
 my-app/
 ├── android/                 # Native Android project
 │   ├── app/

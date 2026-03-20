@@ -14,6 +14,7 @@ The `limit` module limits packet rates globally:
 
 ```bash
 # Allow only 5 ping requests per second (prevents ICMP flood)
+
 sudo iptables -A INPUT -p icmp --icmp-type echo-request \
   -m limit --limit 5/second --limit-burst 10 -j ACCEPT
 sudo iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
@@ -98,7 +99,7 @@ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 
 ```bash
 #!/bin/bash
-# anti-ddos.sh — Multi-layer rate limiting
+# anti-ddos.sh - Multi-layer rate limiting
 
 # SYN flood protection
 iptables -A INPUT -p tcp --syn -m limit --limit 50/s --limit-burst 100 -j ACCEPT

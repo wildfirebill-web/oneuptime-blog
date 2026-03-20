@@ -60,6 +60,7 @@ flowchart TD
 
 ```bash
 # Check kernel version on node
+
 kubectl debug node/<node-name> -it --image=busybox -- uname -r
 
 # Check for required kernel modules

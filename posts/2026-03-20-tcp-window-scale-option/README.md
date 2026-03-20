@@ -12,7 +12,7 @@ The TCP Window Scale option (RFC 7323) extends the receive window field beyond i
 
 ## TCP Window Scale Option Format
 
-```
+```text
 TCP Option Type: 3 (Window Scale)
 Option Length: 3 bytes
 Shift Count: 0-14 (the scale factor)
@@ -32,6 +32,7 @@ Linux selects the window scale factor based on the `tcp_rmem` max value:
 # The formula: scale = ceil(log2(tcp_rmem_max / 65536))
 
 # With default tcp_rmem max = 6MB:
+
 # scale = ceil(log2(6291456 / 65536)) = ceil(log2(96)) = ceil(6.58) = 7
 # Effective max window = 65535 × 2^7 = 8,388,480 bytes ≈ 8MB
 

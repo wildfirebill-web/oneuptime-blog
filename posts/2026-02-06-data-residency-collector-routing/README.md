@@ -27,6 +27,7 @@ Set resource attributes via environment variables in your Kubernetes deployments
 
 ```yaml
 # k8s-deployment-eu.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

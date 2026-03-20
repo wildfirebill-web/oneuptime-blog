@@ -38,6 +38,7 @@ Each dimension gets a score from 0 to 100. The overall scorecard is a weighted a
 
 ```yaml
 # scorecard/scoring-model.yaml
+
 dimensions:
   instrumentation_coverage:
     weight: 0.30

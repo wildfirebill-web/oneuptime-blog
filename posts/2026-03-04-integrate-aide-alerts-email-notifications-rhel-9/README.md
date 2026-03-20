@@ -16,6 +16,7 @@ You need a working mail setup on your RHEL system. The simplest approach is usin
 
 ```bash
 # Install mailx if not already present
+
 sudo dnf install mailx -y
 
 # Verify it is installed

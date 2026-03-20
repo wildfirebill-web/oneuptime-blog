@@ -852,6 +852,7 @@ class RobustPublisher:
 
 
 # Usage example
+
 if __name__ == '__main__':
     publisher = RobustPublisher('amqp://guest:guest@localhost:5672/')
     publisher.connect()

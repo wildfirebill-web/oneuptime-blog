@@ -12,7 +12,7 @@ A complete immutable infrastructure CI/CD pipeline has two phases: Packer builds
 
 ## Pipeline Architecture
 
-```
+```hcl
 Code Push → Detect Changes → Packer Build → Store AMI ID → OpenTofu Apply → Rolling Deploy
 ```
 
@@ -20,6 +20,7 @@ Code Push → Detect Changes → Packer Build → Store AMI ID → OpenTofu Appl
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Build and Deploy
 
 on:

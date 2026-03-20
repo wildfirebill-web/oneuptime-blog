@@ -73,6 +73,7 @@ The following command checks if the egress gateway pod is running in the istio-s
 
 ```bash
 # Check if the egress gateway deployment exists and is running
+
 kubectl get pods -n istio-system -l istio=egressgateway
 
 # Expected output shows the egress gateway pod in Running state

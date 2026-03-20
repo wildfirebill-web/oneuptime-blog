@@ -29,6 +29,7 @@ terraform {
 }
 
 # Configure using kubeconfig file
+
 provider "kubernetes" {
   config_path    = "~/.kube/config"
   config_context = "my-cluster-context"
@@ -488,7 +489,7 @@ resource "kubernetes_stateful_set" "postgres" {
 
 StatefulSets maintain pod identity and ordered deployment, essential for databases and other stateful applications.
 
-## Resource Quotas and Limit Ranges
+Resource Quotas and Limit Ranges
 
 Enforce resource constraints at the namespace level.
 

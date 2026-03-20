@@ -16,6 +16,7 @@ Before extending, check how much free space the volume group has:
 
 ```bash
 # Check VG free space
+
 sudo vgs
 ```
 

@@ -99,6 +99,7 @@ The following command applies the Istio addons which include a pre-configured Pr
 
 ```bash
 # Apply the Prometheus addon from Istio samples
+
 # This includes pre-configured scrape jobs for Istio components
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samples/addons/prometheus.yaml
 ```

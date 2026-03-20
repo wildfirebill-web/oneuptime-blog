@@ -16,6 +16,7 @@ When an application tries to resolve a hostname, the system follows a resolution
 
 ```bash
 # Check the current name resolution order
+
 grep hosts /etc/nsswitch.conf
 ```
 

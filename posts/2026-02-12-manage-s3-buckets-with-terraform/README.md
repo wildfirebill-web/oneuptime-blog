@@ -18,6 +18,7 @@ Before we start, make sure you have Terraform installed and your AWS credentials
 
 ```hcl
 # Configure the AWS provider with the desired region
+
 terraform {
   required_providers {
     aws = {

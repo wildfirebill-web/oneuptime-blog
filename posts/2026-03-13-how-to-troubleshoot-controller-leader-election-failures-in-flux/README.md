@@ -66,6 +66,7 @@ If a pod was terminated without properly releasing the lease, the lease remains 
 
 ```bash
 # Check who holds the lease
+
 kubectl get lease -n flux-system source-controller -o jsonpath='{.spec.holderIdentity}'
 
 # Verify the pod exists
@@ -99,7 +100,7 @@ kubectl get nodes -o wide
 kubectl debug node/<node-name> -- date
 ```
 
-### Resource Quota Preventing Pod Creation
+Resource Quota Preventing Pod Creation
 
 If the replacement pod cannot start due to resource quotas, the old lease will expire but no new leader can take over:
 

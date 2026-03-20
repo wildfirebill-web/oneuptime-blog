@@ -33,6 +33,7 @@ Then authenticate your local CLI:
 
 ```bash
 # Authenticate the Terraform CLI with HCP Terraform
+
 terraform login
 
 # This opens a browser window for authentication

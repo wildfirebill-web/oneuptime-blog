@@ -66,6 +66,7 @@ Deploy Memcached as a StatefulSet or use a managed service. For production, run 
 
 ```yaml
 # loki-config.yaml
+
 # Chunk cache configuration using Memcached backend
 
 chunk_store_config:

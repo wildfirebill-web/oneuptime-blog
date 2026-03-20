@@ -20,6 +20,7 @@ For home lab servers, assign static addresses from your delegated prefix:
 
 ```bash
 # /etc/netplan/01-homelab.yaml (Ubuntu)
+
 network:
   ethernets:
     eth0:
@@ -44,7 +45,7 @@ sudo netplan apply
 
 Register each server in local DNS for easy access by name:
 
-```
+```text
 # /etc/hosts on each server (or dnsmasq config)
 2001:db8:home::10  homeserver.lab.home
 2001:db8:home::20  nas.lab.home
@@ -54,7 +55,7 @@ Register each server in local DNS for easy access by name:
 
 Or configure dnsmasq with AAAA records:
 
-```
+```text
 # /etc/dnsmasq.d/homelab.conf
 aaaa-record=homeserver.lab.home,2001:db8:home::10
 aaaa-record=nas.lab.home,2001:db8:home::20
@@ -78,7 +79,7 @@ ssh user@fe80::1234:5678:abcd:ef01%eth0
 
 SSH server configuration for IPv6:
 
-```
+```text
 # /etc/ssh/sshd_config
 ListenAddress ::    # Listen on all IPv6 interfaces
 ListenAddress 0.0.0.0  # And IPv4
@@ -178,7 +179,7 @@ With IPv6, access your home lab from anywhere on the internet directly:
 1. Add firewall rule to allow inbound SSH from your remote IP
 2. Connect directly: `ssh user@2001:db8:home::10`
 
-No port forwarding in the router required — the server's IPv6 address is globally routable.
+No port forwarding in the router required - the server's IPv6 address is globally routable.
 
 ## Conclusion
 

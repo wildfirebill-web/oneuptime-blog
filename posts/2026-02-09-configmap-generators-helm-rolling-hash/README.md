@@ -20,6 +20,7 @@ Standard Helm approach:
 
 ```yaml
 # templates/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -60,6 +60,7 @@ infrastructure/
 
 ```yaml
 # apps/base/edge-stack/mqtt-broker/helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

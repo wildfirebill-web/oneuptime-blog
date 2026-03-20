@@ -32,6 +32,7 @@ Define each tenant as a variable file:
 
 ```yaml
 # tenants/acme-corp.yml
+
 # Tenant configuration for ACME Corp
 ---
 tenant_id: acme-corp

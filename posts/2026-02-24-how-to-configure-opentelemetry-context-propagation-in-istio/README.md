@@ -67,6 +67,7 @@ Istio's default propagation includes both W3C Trace Context and B3 headers. You 
 
 ```bash
 # Deploy a debug service that echoes headers
+
 kubectl apply -f - <<EOF
 apiVersion: apps/v1
 kind: Deployment

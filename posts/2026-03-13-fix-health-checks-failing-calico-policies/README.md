@@ -30,6 +30,7 @@ This fix must be applied to every namespace where pods with health checks are su
 
 ```bash
 # Get the node CIDR used in your cluster
+
 kubectl get nodes -o jsonpath='{range .items[*]}{.status.addresses[?(@.type=="InternalIP")].address}{"\n"}{end}'
 # Determine the encompassing CIDR (e.g., 10.0.0.0/8 for 10.x.x.x addresses)
 ```

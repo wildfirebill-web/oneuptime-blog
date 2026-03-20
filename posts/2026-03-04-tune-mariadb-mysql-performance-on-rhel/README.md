@@ -16,6 +16,7 @@ The buffer pool is the most important setting. It caches data and index pages in
 
 ```bash
 # Edit /etc/my.cnf.d/server.cnf or create a new file
+
 sudo tee /etc/my.cnf.d/performance.cnf << 'EOF'
 [mysqld]
 # Set to 70-80% of available RAM on a dedicated database server

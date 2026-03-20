@@ -32,6 +32,7 @@ Hotfixes skip some of the longer validation steps but keep the critical safety c
 
 ```yaml
 # playbooks/hotfix-deploy.yml
+
 # Emergency hotfix deployment with streamlined safety checks
 ---
 - name: Hotfix pre-checks

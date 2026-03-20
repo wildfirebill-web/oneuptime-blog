@@ -22,6 +22,7 @@ Ensure pods run only on their compatible OS:
 
 ```yaml
 # linux-pod-node-selector.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -259,7 +260,7 @@ spec:
         image: myregistry.azurecr.io/frontend:v1
 ```
 
-## Resource-Based Anti-Affinity
+Resource-Based Anti-Affinity
 
 Prevent resource-intensive pods from co-locating:
 

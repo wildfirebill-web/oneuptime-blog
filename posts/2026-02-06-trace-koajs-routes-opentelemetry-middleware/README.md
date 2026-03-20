@@ -655,6 +655,7 @@ Configure OpenTelemetry behavior through environment variables.
 
 ```bash
 # .env.production
+
 # OpenTelemetry configuration for Koa production deployment
 
 # OTLP exporter endpoint

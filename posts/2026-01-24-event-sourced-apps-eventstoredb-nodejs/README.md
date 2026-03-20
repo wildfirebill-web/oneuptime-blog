@@ -30,6 +30,7 @@ Start EventStoreDB using Docker. The insecure flag disables SSL for local develo
 
 ```bash
 # Run EventStoreDB in Docker
+
 docker run -d --name eventstoredb \
   -p 2113:2113 \
   -p 1113:1113 \

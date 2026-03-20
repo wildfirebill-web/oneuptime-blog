@@ -38,6 +38,7 @@ resource "azurerm_resource_group" "main" {
 }
 
 # Storage account for Event Hub Capture
+
 resource "azurerm_storage_account" "capture" {
   name                     = "steventhubcapture001"
   resource_group_name      = azurerm_resource_group.main.name

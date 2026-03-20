@@ -30,6 +30,7 @@ Use the `--ulimit` flag to set limits when running a container.
 
 ```bash
 # Set the maximum number of open files to 65536
+
 podman run --rm \
   --ulimit nofile=65536:65536 \
   docker.io/library/alpine:latest \

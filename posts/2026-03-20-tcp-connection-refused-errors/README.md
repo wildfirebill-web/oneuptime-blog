@@ -8,12 +8,13 @@ Description: Diagnose TCP Connection Refused errors by identifying whether the s
 
 ## Introduction
 
-"Connection Refused" means the destination host is reachable but actively rejected your connection attempt. In TCP terms, the server sent a RST packet in response to your SYN. This is different from a timeout (where no response arrives) — a refuse is an explicit rejection. The distinction immediately narrows your investigation.
+"Connection Refused" means the destination host is reachable but actively rejected your connection attempt. In TCP terms, the server sent a RST packet in response to your SYN. This is different from a timeout (where no response arrives) - a refuse is an explicit rejection. The distinction immediately narrows your investigation.
 
 ## Symptoms and Quick Test
 
 ```bash
 # Connection refused example with curl:
+
 curl http://10.20.0.5:8080
 # curl: (7) Failed to connect to 10.20.0.5 port 8080: Connection refused
 
@@ -101,4 +102,4 @@ tcpdump -i eth0 -n 'tcp and host 10.20.0.5 and port 8080'
 
 ## Conclusion
 
-Connection Refused is an explicit rejection — either no service is listening, the service is bound to the wrong interface, or a firewall is sending RST. Start with `ss -tlnp` to verify what's listening where, then check firewall rules if the service is running correctly. Capturing with tcpdump confirms the RST is genuinely coming from the server (vs a timeout which produces no packets).
+Connection Refused is an explicit rejection - either no service is listening, the service is bound to the wrong interface, or a firewall is sending RST. Start with `ss -tlnp` to verify what's listening where, then check firewall rules if the service is running correctly. Capturing with tcpdump confirms the RST is genuinely coming from the server (vs a timeout which produces no packets).

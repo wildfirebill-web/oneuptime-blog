@@ -77,6 +77,7 @@ Ensure your Ubuntu system is up to date:
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

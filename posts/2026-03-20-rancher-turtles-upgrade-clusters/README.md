@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Turtles, CAPI, Kubernetes, Upgrades, Rancher
+Tags: Rancher Turtles, CAPI, Kubernetes, Upgrade, Rancher
 
 Description: Perform rolling Kubernetes version upgrades on CAPI-managed clusters using Rancher Turtles upgrade workflows.
 
@@ -25,6 +25,7 @@ Rancher Turtles integrates Cluster API (CAPI) with Rancher to provide a unified,
 
 ```bash
 # Verify Rancher Turtles is running
+
 kubectl get pods -n rancher-turtles-system
 
 # Check installed CAPI providers

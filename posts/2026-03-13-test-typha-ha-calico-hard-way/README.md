@@ -32,6 +32,7 @@ Before running any destructive test, confirm the expected HA state:
 
 ```bash
 # Verify 3 replicas are running across 3 different nodes
+
 kubectl get pods -n kube-system -l k8s-app=calico-typha -o wide
 
 # Confirm PDB is configured

@@ -236,6 +236,7 @@ Full reference for a stack template using a repository:
 
 ```bash
 # Validate JSON syntax
+
 python3 -m json.tool templates.json > /dev/null && echo "Valid JSON"
 
 # Check required fields are present
@@ -262,4 +263,4 @@ EOF
 
 ## Conclusion
 
-Building a Portainer template JSON file gives you complete control over your application catalog. By understanding the full field reference — container vs stack templates, environment variable definitions, port mappings, and volume configurations — you can create rich, user-friendly templates that deploy complex applications with just a few inputs. Start with simple templates and gradually add complexity as your catalog grows.
+Building a Portainer template JSON file gives you complete control over your application catalog. By understanding the full field reference - container vs stack templates, environment variable definitions, port mappings, and volume configurations - you can create rich, user-friendly templates that deploy complex applications with just a few inputs. Start with simple templates and gradually add complexity as your catalog grows.

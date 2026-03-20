@@ -31,6 +31,7 @@ HashiCorp Consul is a service networking platform providing service discovery, c
 
 ```bash
 # Install prerequisites
+
 sudo apt update
 sudo apt install -y curl gnupg
 

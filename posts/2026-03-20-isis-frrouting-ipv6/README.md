@@ -14,6 +14,7 @@ FRRouting's `isisd` daemon provides full IS-IS support for Linux, including IPv6
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install frr
 
 # Enable isisd
@@ -102,7 +103,7 @@ vtysh -c "show isis interface"
 
 ## Sample Output
 
-```
+```text
 Router# show isis neighbor
 
 Area CORE:

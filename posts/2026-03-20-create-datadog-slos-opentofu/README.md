@@ -64,6 +64,7 @@ Monitor SLOs measure how much time a monitor spends in the OK state.
 
 ```hcl
 # First define the monitor
+
 resource "datadog_monitor" "api_latency" {
   name    = "API P95 Latency"
   type    = "metric alert"
@@ -106,7 +107,7 @@ resource "datadog_monitor" "slo_burn_rate" {
   query = "burn_rate(\"${datadog_service_level_objective.api_availability.id}\").over(\"1h\") > 14.4"
 
   thresholds = {
-    critical = 14.4  # 1h window, 30d SLO — 2% budget burned in 1h
+    critical = 14.4  # 1h window, 30d SLO - 2% budget burned in 1h
     warning  = 7.2
   }
 }

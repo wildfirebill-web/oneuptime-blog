@@ -22,6 +22,7 @@ Install the collection and verify your setup:
 
 ```bash
 # Install the AWS collection
+
 ansible-galaxy collection install amazon.aws
 
 # Verify Ansible can reach AWS

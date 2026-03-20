@@ -38,6 +38,7 @@ Application → CUPS Scheduler → Filters → Backend → Printer
 
 ```bash
 # CUPS configuration files
+
 /etc/cups/                      # Main configuration directory
 /etc/cups/cupsd.conf           # Main CUPS daemon configuration
 /etc/cups/printers.conf        # Printer definitions (auto-generated)

@@ -31,6 +31,7 @@ Before resetting, drain the node to move workloads to other nodes in the cluster
 
 ```bash
 # Cordon the node to prevent new pods from being scheduled
+
 kubectl cordon node-name
 
 # Drain the node, evicting all pods

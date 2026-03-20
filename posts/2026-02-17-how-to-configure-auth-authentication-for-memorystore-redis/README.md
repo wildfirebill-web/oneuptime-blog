@@ -28,6 +28,7 @@ The simplest approach - enable AUTH when you create the instance:
 
 ```bash
 # Create a new Redis instance with AUTH enabled from the start
+
 gcloud redis instances create secure-cache \
   --size=2 \
   --region=us-central1 \

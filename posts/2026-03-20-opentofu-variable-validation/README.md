@@ -8,7 +8,7 @@ Description: Learn how to add validation rules to OpenTofu input variables to ca
 
 ## Introduction
 
-Variable validation blocks let you define conditions that input variable values must satisfy. If a value fails validation, OpenTofu reports an error immediately during plan — before reading any data sources or creating any resources. This provides the earliest possible feedback for incorrect inputs.
+Variable validation blocks let you define conditions that input variable values must satisfy. If a value fails validation, OpenTofu reports an error immediately during plan - before reading any data sources or creating any resources. This provides the earliest possible feedback for incorrect inputs.
 
 ## Basic Validation
 

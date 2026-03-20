@@ -998,6 +998,7 @@ Here is how you would use this system in a production chatbot:
 from openai import OpenAI
 
 # Initialize the OpenAI client
+
 client = OpenAI()
 
 def llm_call(prompt: str) -> str:

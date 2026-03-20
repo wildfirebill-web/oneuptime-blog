@@ -22,6 +22,7 @@ The Mimir ruler component evaluates recording and alerting rules. Enable it in y
 
 ```yaml
 # mimir.yaml
+
 ruler:
   enable_api: true
   enable_sharding: true

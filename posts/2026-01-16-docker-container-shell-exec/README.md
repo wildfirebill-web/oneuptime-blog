@@ -18,6 +18,7 @@ The `exec` command runs a new process inside a running container. It's the most 
 
 ```bash
 # Bash shell (most Linux containers)
+
 docker exec -it my-container bash
 
 # Sh shell (Alpine, minimal containers)

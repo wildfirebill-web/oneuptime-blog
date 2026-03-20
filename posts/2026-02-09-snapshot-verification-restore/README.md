@@ -42,6 +42,7 @@ fi
 echo "=== Verifying Snapshot: $SNAPSHOT_NAME ==="
 
 # Step 1: Check snapshot status
+
 echo "Step 1: Checking snapshot status..."
 READY=$(kubectl get volumesnapshot $SNAPSHOT_NAME -n $NAMESPACE \
   -o jsonpath='{.status.readyToUse}' 2>/dev/null || echo "false")

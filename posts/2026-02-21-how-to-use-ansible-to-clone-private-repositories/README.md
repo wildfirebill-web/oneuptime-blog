@@ -16,6 +16,7 @@ SSH is the most common method for private repository access:
 
 ```yaml
 # playbook-ssh-clone.yml
+
 # Clones a private repository using SSH key authentication
 - name: Clone private repo with SSH
   hosts: webservers

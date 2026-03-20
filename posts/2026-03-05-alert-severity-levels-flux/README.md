@@ -31,6 +31,7 @@ An info-level alert captures every event from the specified sources, including s
 
 ```yaml
 # Info-level alert that captures all events
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

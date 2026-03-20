@@ -906,6 +906,7 @@ Kong API Gateway declarative configuration:
 
 ```yaml
 # kong.yaml
+
 _format_version: "3.0"
 
 services:

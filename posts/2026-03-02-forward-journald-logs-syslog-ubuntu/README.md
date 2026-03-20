@@ -24,6 +24,7 @@ On Ubuntu, the second approach is the default. rsyslog uses the `imjournal` or `
 
 ```bash
 # Check if rsyslog is running
+
 systemctl status rsyslog
 
 # Check what syslog daemon is installed

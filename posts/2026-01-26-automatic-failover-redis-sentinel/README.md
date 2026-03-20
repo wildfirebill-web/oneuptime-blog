@@ -63,6 +63,7 @@ Start with the master Redis instance.
 
 ```bash
 # redis-master.conf
+
 # Primary Redis instance configuration
 
 port 6379

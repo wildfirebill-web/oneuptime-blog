@@ -8,7 +8,7 @@ Description: Configure Docker stacks with NFS-backed named volumes in Portainer 
 
 ---
 
-Docker named volumes backed by NFS allow multiple containers — even on different Swarm nodes — to share the same persistent storage. This is essential for stateful services that need shared file access across a cluster. Portainer's stack interface makes NFS volume configuration straightforward.
+Docker named volumes backed by NFS allow multiple containers - even on different Swarm nodes - to share the same persistent storage. This is essential for stateful services that need shared file access across a cluster. Portainer's stack interface makes NFS volume configuration straightforward.
 
 ## When to Use NFS Volumes
 
@@ -28,6 +28,7 @@ Test NFS connectivity from each node before deploying:
 
 ```bash
 # Test NFS mount manually
+
 mkdir -p /mnt/test-nfs
 mount -t nfs 192.168.1.100:/exports/appdata /mnt/test-nfs
 ls /mnt/test-nfs
@@ -107,9 +108,9 @@ docker volume inspect <stack-name>_shared-media
 ## Step 6: NFS Performance Considerations
 
 - Use `noatime,nodiratime` to reduce unnecessary NFS writes
-- For databases, avoid NFS — use local volumes with placement constraints instead
+- For databases, avoid NFS - use local volumes with placement constraints instead
 - For large media files, consider object storage (MinIO) rather than NFS
 
 ## Summary
 
-NFS-backed named volumes in Portainer stacks enable shared persistent storage across Swarm nodes without requiring applications to implement distributed storage logic. The volume definition in the stack YAML is self-documenting and reproducible — anyone deploying the stack gets the correct NFS configuration automatically.
+NFS-backed named volumes in Portainer stacks enable shared persistent storage across Swarm nodes without requiring applications to implement distributed storage logic. The volume definition in the stack YAML is self-documenting and reproducible - anyone deploying the stack gets the correct NFS configuration automatically.

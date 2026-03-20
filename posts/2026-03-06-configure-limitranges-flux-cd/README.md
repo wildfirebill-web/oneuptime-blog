@@ -59,6 +59,7 @@ Define default resource requests and limits for containers.
 
 ```yaml
 # infrastructure/limit-ranges/base/container-limits.yaml
+
 apiVersion: v1
 kind: LimitRange
 metadata:

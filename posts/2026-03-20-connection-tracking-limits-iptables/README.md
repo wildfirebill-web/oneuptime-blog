@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iptables, conntrack, Linux, Security, Connection Tracking, DDoS
+Tags: iptables, Conntrack, Linux, Security, Connection Tracking, DDoS
 
 Description: Configure iptables connection tracking table size and per-IP connection limits to prevent conntrack table exhaustion from connection floods.
 
@@ -12,6 +12,7 @@ The iptables connection tracking (conntrack) table records every active connecti
 
 ```bash
 # View current conntrack table usage
+
 sudo conntrack -L | wc -l
 # or
 cat /proc/sys/net/netfilter/nf_conntrack_count
@@ -91,7 +92,7 @@ sudo iptables -A INPUT -p tcp --dport 80 \
 
 ```bash
 #!/bin/bash
-# check-conntrack.sh — alert when conntrack is near full
+# check-conntrack.sh - alert when conntrack is near full
 
 MAX=$(cat /proc/sys/net/netfilter/nf_conntrack_max)
 CURRENT=$(cat /proc/sys/net/netfilter/nf_conntrack_count)
@@ -138,4 +139,4 @@ sudo iptables -A FORWARD -m state --state INVALID -j DROP
 # This also prevents some TCP state machine attacks
 ```
 
-Keeping conntrack healthy is essential — a full conntrack table silently drops all new connections without any error, making it look like the network is completely down.
+Keeping conntrack healthy is essential - a full conntrack table silently drops all new connections without any error, making it look like the network is completely down.

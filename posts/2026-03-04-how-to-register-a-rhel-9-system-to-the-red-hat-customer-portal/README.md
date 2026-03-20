@@ -75,6 +75,7 @@ sudo subscription-manager unregister
 
 ```bash
 # Check connectivity
+
 curl -v https://subscription.rhsm.redhat.com
 
 # Clean local data and re-register

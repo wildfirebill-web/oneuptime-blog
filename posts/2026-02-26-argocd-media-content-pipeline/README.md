@@ -36,6 +36,7 @@ Separate your media services into ArgoCD projects based on their deployment char
 
 ```yaml
 # projects/media-ingest.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

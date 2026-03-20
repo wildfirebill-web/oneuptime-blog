@@ -8,7 +8,7 @@ Description: Learn how to configure AKS with Application Gateway Ingress Control
 
 ## Introduction
 
-The Application Gateway Ingress Controller (AGIC) uses an Azure Application Gateway as the Kubernetes Ingress controller, translating Kubernetes Ingress resources into Application Gateway routing rules. This provides enterprise-grade L7 routing (path-based, hostname-based), SSL/TLS termination with auto-renewal, WAF protection, and integration with Azure AD authentication—all managed through standard Kubernetes Ingress manifests. The add-on mode creates and manages the Application Gateway lifecycle automatically.
+The Application Gateway Ingress Controller (AGIC) uses an Azure Application Gateway as the Kubernetes Ingress controller, translating Kubernetes Ingress resources into Application Gateway routing rules. This provides enterprise-grade L7 routing (path-based, hostname-based), SSL/TLS termination with auto-renewal, WAF protection, and integration with Azure AD authentication-all managed through standard Kubernetes Ingress manifests. The add-on mode creates and manages the Application Gateway lifecycle automatically.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ The Application Gateway Ingress Controller (AGIC) uses an Azure Application Gate
 
 ```hcl
 # Subnet for Application Gateway (cannot overlap with AKS subnet)
+
 resource "azurerm_subnet" "appgw" {
   name                 = "appgw-subnet"
   resource_group_name  = var.resource_group_name
@@ -219,4 +220,4 @@ az network application-gateway show-backend-health \
 
 ## Conclusion
 
-AGIC translates Kubernetes Ingress resources into Application Gateway configuration in real-time—changes propagate within 30-60 seconds. Use `appgw.ingress.kubernetes.io/ssl-redirect: "true"` to automatically redirect HTTP to HTTPS at the Application Gateway level. For TLS certificates, use cert-manager with Let's Encrypt to automate certificate renewal and store certs as Kubernetes secrets, or use the `appgw.ingress.kubernetes.io/appgw-ssl-certificate` annotation to reference certificates already uploaded to Application Gateway. Enable WAF in Prevention mode after validating no false positives in Detection mode.
+AGIC translates Kubernetes Ingress resources into Application Gateway configuration in real-time-changes propagate within 30-60 seconds. Use `appgw.ingress.kubernetes.io/ssl-redirect: "true"` to automatically redirect HTTP to HTTPS at the Application Gateway level. For TLS certificates, use cert-manager with Let's Encrypt to automate certificate renewal and store certs as Kubernetes secrets, or use the `appgw.ingress.kubernetes.io/appgw-ssl-certificate` annotation to reference certificates already uploaded to Application Gateway. Enable WAF in Prevention mode after validating no false positives in Detection mode.

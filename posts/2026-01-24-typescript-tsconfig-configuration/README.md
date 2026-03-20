@@ -517,6 +517,7 @@ Use this when another tool handles transpilation (e.g., Babel, esbuild, bundlers
 
 ```bash
 # Show the resolved tsconfig
+
 npx tsc --showConfig
 
 # Show what files would be compiled

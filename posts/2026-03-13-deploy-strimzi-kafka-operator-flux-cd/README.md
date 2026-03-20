@@ -25,6 +25,7 @@ Deploying Strimzi through Flux CD gives you GitOps control over your entire Kafk
 
 ```yaml
 # infrastructure/sources/strimzi-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

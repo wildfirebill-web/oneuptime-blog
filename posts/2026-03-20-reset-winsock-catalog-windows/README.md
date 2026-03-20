@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, Winsock, netsh, Troubleshooting, Network Reset
+Tags: Windows, Networking, Winsock, Netsh, Troubleshooting, Network Reset
 
 Description: Reset the Windows Winsock catalog to its default state using netsh winsock reset to fix application-level network failures caused by corrupted LSP (Layered Service Provider) entries.
 
 ## Introduction
 
-The Winsock catalog is a Windows registry database that lists Layered Service Providers (LSPs) — software that intercepts network API calls. Malware, antivirus software, and some VPN clients can corrupt or leave broken LSP entries after uninstallation, causing application-level network failures even when the TCP/IP stack appears healthy.
+The Winsock catalog is a Windows registry database that lists Layered Service Providers (LSPs) - software that intercepts network API calls. Malware, antivirus software, and some VPN clients can corrupt or leave broken LSP entries after uninstallation, causing application-level network failures even when the TCP/IP stack appears healthy.
 
 ## Symptoms of Winsock Corruption
 
@@ -27,7 +27,7 @@ netsh winsock reset
 
 Expected output:
 
-```
+```text
 Successfully reset the Winsock Catalog.
 You must restart the computer in order to complete the reset.
 ```
@@ -48,7 +48,7 @@ Before resetting, you can inspect the current LSPs:
 netsh winsock show catalog
 ```
 
-Look for entries that are not from Microsoft or known trusted vendors — these may be corrupt or leftover from uninstalled software.
+Look for entries that are not from Microsoft or known trusted vendors - these may be corrupt or leftover from uninstalled software.
 
 ## Full Network Reset Sequence
 

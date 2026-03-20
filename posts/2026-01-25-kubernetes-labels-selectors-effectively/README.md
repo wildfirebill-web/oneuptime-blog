@@ -19,6 +19,7 @@ Labels and annotations both attach metadata to objects, but they serve different
 
 ```yaml
 # Example showing both labels and annotations
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

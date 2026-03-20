@@ -16,6 +16,7 @@ When you create a LoadBalancer service and it stays in Pending:
 
 ```bash
 # Check service status - EXTERNAL-IP shows <pending>
+
 kubectl get svc my-service
 ```
 

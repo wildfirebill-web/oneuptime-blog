@@ -36,6 +36,7 @@ First, create the firewall subnets. These should be in each AZ where you have wo
 
 ```bash
 # Create firewall subnets in each AZ
+
 aws ec2 create-subnet \
   --vpc-id vpc-0abc123def456789 \
   --cidr-block 10.0.100.0/28 \

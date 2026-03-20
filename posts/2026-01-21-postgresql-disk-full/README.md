@@ -23,6 +23,7 @@ ERROR: could not extend file "base/...": No space left on device
 
 ```bash
 # Overall disk usage
+
 df -h
 
 # PostgreSQL data directory

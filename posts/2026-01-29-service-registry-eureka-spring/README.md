@@ -117,6 +117,7 @@ Configure the Eureka server in `application.yml`:
 
 ```yaml
 # application.yml for Eureka Server
+
 server:
   port: 8761  # Default Eureka port
 

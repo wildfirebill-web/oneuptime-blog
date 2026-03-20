@@ -31,6 +31,7 @@ Generate a personal access token from the DigitalOcean control panel:
 
 ```hcl
 # versions.tf - Pin the DigitalOcean provider
+
 terraform {
   required_version = ">= 1.0"
 

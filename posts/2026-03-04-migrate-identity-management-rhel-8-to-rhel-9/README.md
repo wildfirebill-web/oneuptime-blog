@@ -37,6 +37,7 @@ Always start with a backup. If the migration goes wrong, you want a recovery poi
 
 ```bash
 # Create a full IdM backup on the RHEL 8 server
+
 sudo ipa-backup
 
 # Verify the backup was created

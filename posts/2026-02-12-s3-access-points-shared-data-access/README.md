@@ -44,6 +44,7 @@ Create an S3 access point:
 
 ```bash
 # Create an access point for the data team
+
 aws s3control create-access-point \
     --account-id 123456789012 \
     --name data-team-ap \

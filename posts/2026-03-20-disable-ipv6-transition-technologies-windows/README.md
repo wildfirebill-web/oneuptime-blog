@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Windows, Teredo, ISATAP, 6to4, Security
 
-Description: Learn how to disable Teredo, ISATAP, and 6to4 IPv6 transition technologies on Windows to reduce attack surface, prevent unexpected tunnel traffic, and avoid connectivity issues on native dual-stack networks.
+Description: Learn how to disable Teredo, ISATAP, and 6to4 IPv6 transition technologies on Windows to reduce attack surface, prevent unexpected tunnel traffic, and avoid connectivity issues on native...
 
 ## Why Disable Transition Technologies?
 
@@ -27,6 +27,7 @@ netsh interface teredo show state
 
 ```powershell
 # Disable via registry (persistent across reboots)
+
 Set-ItemProperty `
     -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters" `
     -Name DisabledComponents `
@@ -95,7 +96,7 @@ netsh interface isatap show state | Select-String "State"
 
 ## Using Group Policy to Disable Across Enterprise
 
-```
+```text
 Group Policy path:
 Computer Configuration →
   Administrative Templates →

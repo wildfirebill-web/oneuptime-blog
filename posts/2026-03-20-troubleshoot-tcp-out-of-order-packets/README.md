@@ -8,12 +8,13 @@ Description: Diagnose TCP out-of-order packet delivery caused by ECMP routing, a
 
 ## Introduction
 
-TCP packets can arrive out of sequence when they take different paths through the network — common in ECMP (Equal-Cost Multi-Path) environments, load-balanced networks, and wireless links. While TCP handles reordering correctly, excessive reordering triggers false duplicate ACKs and unnecessary retransmissions, degrading performance.
+TCP packets can arrive out of sequence when they take different paths through the network - common in ECMP (Equal-Cost Multi-Path) environments, load-balanced networks, and wireless links. While TCP handles reordering correctly, excessive reordering triggers false duplicate ACKs and unnecessary retransmissions, degrading performance.
 
 ## Detecting Out-of-Order Packets
 
 ```bash
 # Kernel counter for out-of-order segments
+
 nstat | grep OutOfOrder
 # TcpExtTCPOFOQueue: packets queued in out-of-order queue
 # TcpExtTCPOFODrop: out-of-order packets dropped (OFO queue full)
@@ -22,7 +23,7 @@ nstat | grep OutOfOrder
 # Watch in real time
 watch -n 1 "nstat -z | grep OFO"
 
-# Also check tcpretransmit stats — spurious retransmits from reordering
+# Also check tcpretransmit stats - spurious retransmits from reordering
 nstat | grep Spurious
 ```
 

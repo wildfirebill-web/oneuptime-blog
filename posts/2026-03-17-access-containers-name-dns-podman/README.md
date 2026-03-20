@@ -18,6 +18,7 @@ Container name resolution is one of the most useful features of custom Podman ne
 
 ```bash
 # Create a custom network (DNS is enabled by default)
+
 podman network create myapp-net
 
 # Run named containers

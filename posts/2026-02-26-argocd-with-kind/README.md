@@ -38,6 +38,7 @@ Create a Kind cluster with extra port mappings for the ArgoCD UI.
 
 ```yaml
 # kind-config.yaml
+
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:

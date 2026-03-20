@@ -40,6 +40,7 @@ BACKUP_DIR=/srv/backups/volumes
 DATE=$(date +%Y%m%d_%H%M%S)
 
 # Find containers using this volume
+
 CONTAINERS=$(podman ps -a --filter volume="$VOLUME" --format '{{.Names}}')
 
 # Stop containers

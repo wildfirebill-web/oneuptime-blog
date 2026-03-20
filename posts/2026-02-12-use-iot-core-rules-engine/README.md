@@ -39,6 +39,7 @@ Let's start with a simple rule that stores temperature readings in DynamoDB.
 
 ```bash
 # Create a DynamoDB table for sensor data
+
 aws dynamodb create-table \
     --table-name SensorReadings \
     --attribute-definitions \

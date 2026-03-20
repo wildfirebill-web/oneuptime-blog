@@ -104,6 +104,7 @@ The demo profile uses lower resource limits to fit on smaller clusters:
 
 ```yaml
 # Demo profile sets lower resource requests
+
 resources:
   requests:
     cpu: 10m

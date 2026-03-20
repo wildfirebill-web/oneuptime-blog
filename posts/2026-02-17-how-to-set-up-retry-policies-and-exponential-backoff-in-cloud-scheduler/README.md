@@ -60,6 +60,7 @@ Here is how to set up a scheduler job with a well-tuned retry policy.
 
 ```bash
 # Create a job with explicit retry configuration
+
 gcloud scheduler jobs create http api-sync-job \
   --location=us-central1 \
   --schedule="0 * * * *" \

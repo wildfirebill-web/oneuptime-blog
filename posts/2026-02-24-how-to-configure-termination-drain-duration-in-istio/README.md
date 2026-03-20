@@ -97,6 +97,7 @@ The drain duration should be long enough for your longest typical request to com
 
 ```bash
 # Check the p99 latency for your service
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant http://localhost:9090 \
   'histogram_quantile(0.99, sum(rate(istio_request_duration_milliseconds_bucket{destination_service="payment-service.production.svc.cluster.local"}[5m])) by (le))'

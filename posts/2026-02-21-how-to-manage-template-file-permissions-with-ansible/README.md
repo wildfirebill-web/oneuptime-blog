@@ -16,6 +16,7 @@ The template module supports the same permission parameters as the file and copy
 
 ```yaml
 # Set owner, group, and mode when deploying a template
+
 - name: Deploy application config with strict permissions
   ansible.builtin.template:
     src: app.conf.j2

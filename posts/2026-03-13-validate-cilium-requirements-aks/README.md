@@ -28,6 +28,7 @@ Cilium requires a minimum Kubernetes version that supports the features it uses.
 
 ```bash
 # Check the Kubernetes server version
+
 kubectl version --short
 
 # Cilium 1.14+ requires Kubernetes 1.21+

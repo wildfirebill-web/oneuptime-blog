@@ -14,6 +14,7 @@ OpenTofu modules are self-contained, reusable infrastructure components. Passing
 
 ```hcl
 # root/main.tf - Parent module calling child module
+
 module "networking" {
   source = "./modules/networking"
 

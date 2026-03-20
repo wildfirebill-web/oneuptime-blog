@@ -18,6 +18,7 @@ Run Mosquitto with default settings:
 
 ```bash
 # Start Mosquitto with default configuration
+
 docker run -d \
   --name mosquitto \
   -p 1883:1883 \

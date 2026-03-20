@@ -30,6 +30,7 @@ Kafka stores data in log segments on disk. Without encryption, anyone with files
 # Setup LUKS encrypted volume for Kafka logs
 
 # Install cryptsetup
+
 apt-get install cryptsetup
 
 # Create encrypted partition

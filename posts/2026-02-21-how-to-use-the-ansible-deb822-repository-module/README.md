@@ -37,6 +37,7 @@ Here is how to add a simple repository:
 
 ```yaml
 # Add a repository using the DEB822 format
+
 - name: Add Docker repository
   ansible.builtin.deb822_repository:
     name: docker-ce

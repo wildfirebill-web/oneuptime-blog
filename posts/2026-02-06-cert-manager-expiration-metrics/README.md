@@ -104,6 +104,7 @@ The `certmanager_certificate_ready_status` metric is the most direct indicator o
 
 ```yaml
 # A value of 1 means the certificate is ready and valid
+
 # A value of 0 means the certificate is not ready (expired, pending, or failed)
 
 # Alert when any certificate is not ready:

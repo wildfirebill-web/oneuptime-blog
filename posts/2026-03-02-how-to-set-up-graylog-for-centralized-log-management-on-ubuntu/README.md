@@ -23,6 +23,7 @@ The stack consists of Graylog itself (the application), MongoDB (stores configur
 
 ```bash
 # Install Docker
+
 curl -fsSL https://get.docker.com | sudo sh
 sudo usermod -aG docker $USER
 newgrp docker

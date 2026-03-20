@@ -291,6 +291,7 @@ channel.basicConsume("queue", false, deliverCallback, consumerTag -> {});
 
 ```bash
 # Create topic
+
 kafka-topics.sh --create --topic my-topic --partitions 12 --replication-factor 3
 
 # Describe topic

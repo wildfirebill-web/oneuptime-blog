@@ -199,6 +199,7 @@ Using cProfile from the command line:
 
 ```bash
 # Profile a script and save results to a file
+
 python -m cProfile -o profile_output.prof my_script.py
 
 # View the results sorted by cumulative time

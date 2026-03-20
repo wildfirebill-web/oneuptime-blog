@@ -176,6 +176,7 @@ A shell script that scans an image and exits with an error if critical CVEs exis
 ```bash
 #!/bin/bash
 # scan-and-gate.sh
+
 # Fails CI if critical vulnerabilities are found
 
 IMAGE="$1"

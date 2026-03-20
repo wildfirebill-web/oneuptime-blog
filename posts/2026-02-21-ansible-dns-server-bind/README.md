@@ -20,6 +20,7 @@ You need Ansible 2.12+ and a target Ubuntu 22.04 server. If you are running a pu
 
 ```yaml
 # roles/bind/defaults/main.yml - BIND DNS server configuration
+
 bind_listen_address: any
 bind_listen_port: 53
 bind_allow_recursion:

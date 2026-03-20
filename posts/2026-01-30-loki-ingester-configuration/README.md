@@ -77,6 +77,7 @@ Here is a foundational ingester configuration with explanatory comments:
 
 ```yaml
 # loki-config.yaml
+
 ingester:
   # Lifecycle configuration for the ingester ring
   lifecycler:

@@ -24,6 +24,7 @@ New Relic needs a service account in your GCP project with permission to read me
 
 ```bash
 # Create a service account for New Relic
+
 gcloud iam service-accounts create newrelic-integration \
   --display-name="New Relic GCP Integration" \
   --project=my-project

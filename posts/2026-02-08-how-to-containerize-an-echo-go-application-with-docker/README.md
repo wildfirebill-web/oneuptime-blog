@@ -102,6 +102,7 @@ This Dockerfile produces a minimal production image:
 
 ```dockerfile
 # Stage 1: Build the application
+
 FROM golang:1.22-alpine AS build
 
 WORKDIR /app

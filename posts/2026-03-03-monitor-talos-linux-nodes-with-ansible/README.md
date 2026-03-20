@@ -22,6 +22,7 @@ Start with a simple playbook that checks the health of all nodes:
 
 ```yaml
 # playbooks/health-check.yml
+
 ---
 - name: Check Talos cluster health
   hosts: all
@@ -91,7 +92,7 @@ Start with a simple playbook that checks the health of all nodes:
         msg: "{{ health_report }}"
 ```
 
-## Resource Monitoring Playbook
+Resource Monitoring Playbook
 
 Collect resource utilization data from all nodes:
 

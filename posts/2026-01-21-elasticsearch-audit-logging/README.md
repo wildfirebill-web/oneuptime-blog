@@ -119,6 +119,7 @@ xpack.security.audit.logfile.events.include:
 xpack.security.audit.logfile.events.emit_request_body: true
 
 # Only audit specific users
+
 xpack.security.audit.logfile.events.ignore_filters:
   system_users:
     users: ["_system", "kibana_system", "beats_system"]

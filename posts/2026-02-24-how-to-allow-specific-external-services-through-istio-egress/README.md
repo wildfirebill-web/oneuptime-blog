@@ -381,6 +381,7 @@ After creating ServiceEntries, verify they work:
 
 ```bash
 # Check the service is in the registry
+
 istioctl proxy-config clusters deploy/my-app | grep stripe
 
 # Test connectivity

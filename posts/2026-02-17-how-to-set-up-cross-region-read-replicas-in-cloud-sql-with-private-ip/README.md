@@ -38,6 +38,7 @@ Check your existing allocation:
 
 ```bash
 # List existing private service access allocations
+
 gcloud compute addresses list --global --filter="purpose=VPC_PEERING"
 ```
 

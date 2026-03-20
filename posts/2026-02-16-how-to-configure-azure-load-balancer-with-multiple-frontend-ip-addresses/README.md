@@ -45,6 +45,7 @@ Start by creating a Standard Load Balancer with one public IP:
 
 ```bash
 # Create a public IP address for the first frontend
+
 az network public-ip create \
   --resource-group myResourceGroup \
   --name myPublicIP1 \

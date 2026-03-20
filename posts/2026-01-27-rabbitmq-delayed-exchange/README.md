@@ -59,6 +59,7 @@ The delayed message exchange is not built into RabbitMQ core. You need to instal
 
 ```bash
 # Enable the delayed message exchange plugin
+
 rabbitmq-plugins enable rabbitmq_delayed_message_exchange
 
 # Verify the plugin is enabled

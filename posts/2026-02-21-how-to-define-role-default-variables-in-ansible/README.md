@@ -31,6 +31,7 @@ Here is a straightforward example for a role that deploys a web application:
 
 ```yaml
 # roles/myapp/defaults/main.yml
+
 # Sensible defaults - consumers can override any of these
 ---
 myapp_version: "2.5.0"

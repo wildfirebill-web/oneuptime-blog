@@ -26,6 +26,7 @@ Start by structuring your repository to support this flow:
 
 ```hcl
 # Repository structure for PR workflows
+
 # environments/
 #   production/
 #     main.tf
@@ -95,7 +96,7 @@ This pipeline runs format checks and validation for each environment affected by
 
 The most valuable automated check is running `terraform plan` and posting the output directly to the pull request. This lets reviewers see exactly what infrastructure changes will occur.
 
-```yaml
+````yaml
 # Additional step for terraform plan
   plan:
     needs: validate
@@ -132,9 +133,9 @@ The most valuable automated check is running `terraform plan` and posting the ou
         with:
           script: |
             const output = `#### Terraform Plan - ${{ matrix.environment }}
-            \`\`\`
+            ```
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
             `;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -142,7 +143,7 @@ The most valuable automated check is running `terraform plan` and posting the ou
               repo: context.repo.repo,
               body: output
             });
-```
+````
 
 Reviewers can now see the full plan output without leaving the pull request interface.
 

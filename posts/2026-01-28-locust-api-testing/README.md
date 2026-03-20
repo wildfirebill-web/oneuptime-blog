@@ -20,6 +20,7 @@ Start with fundamental CRUD operations:
 
 ```python
 # locustfile.py - Basic REST API testing
+
 from locust import HttpUser, task, between
 import json
 

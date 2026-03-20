@@ -16,6 +16,7 @@ Datastore export and import mistakes can cause configuration loss (importing to 
 
 ```bash
 # Export Calico datastore (backup or migration)
+
 calicoctl datastore migrate export > calico-backup-$(date +%Y%m%d).yaml
 
 # Verify export content

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Shared VPC, Networking, OpenTofu, Organization, Infrastructure
+Tags: GCP, Shared VPC, Networking, OpenTofu, Organizations, Infrastructure
 
 Description: Learn how to configure GCP Shared VPC with OpenTofu to allow multiple service projects to share a central VPC network managed by a host project.
 
@@ -14,6 +14,7 @@ GCP Shared VPC allows organizations to connect multiple service projects to a ce
 
 ```hcl
 # main.tf - Enable Shared VPC on the host project
+
 resource "google_compute_shared_vpc_host_project" "host" {
   project = var.host_project_id
 }

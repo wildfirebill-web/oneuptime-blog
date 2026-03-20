@@ -20,6 +20,7 @@ The simplest filter is on `eventType`. This is always your first line of defense
 
 ```bash
 # Subscribe only to OrderPlaced events
+
 az eventgrid event-subscription create \
   --name sub-order-processor \
   --source-resource-id "/subscriptions/{sub-id}/resourceGroups/rg-events/providers/Microsoft.EventGrid/topics/topic-orders" \

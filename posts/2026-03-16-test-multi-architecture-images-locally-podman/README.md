@@ -20,6 +20,7 @@ Ensure QEMU user-static is installed for cross-architecture execution.
 
 ```bash
 # Install QEMU (Fedora/RHEL)
+
 sudo dnf install qemu-user-static
 
 # Install QEMU (Ubuntu/Debian)

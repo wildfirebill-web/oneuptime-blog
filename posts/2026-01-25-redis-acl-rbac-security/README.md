@@ -29,6 +29,7 @@ flowchart TD
 
 ```bash
 # Connect to Redis and check current ACL setup
+
 redis-cli
 
 # List all users (default only has 'default' user)

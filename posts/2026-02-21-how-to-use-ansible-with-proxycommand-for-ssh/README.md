@@ -35,6 +35,7 @@ The simplest use of ProxyCommand is connecting through a bastion host:
 
 ```ini
 # ansible.cfg
+
 [ssh_connection]
 ssh_args = -o ProxyCommand="ssh -W %h:%p bastion_user@bastion.example.com"
 ```

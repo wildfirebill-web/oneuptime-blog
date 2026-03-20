@@ -22,6 +22,7 @@ Validating Calico Profile resources requires confirming three things: the profil
 
 ```bash
 # List all profiles
+
 calicoctl get profiles
 
 # Check a specific profile's specification

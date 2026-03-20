@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Terraform, Documentation, Migration, Infrastructure as Code, DevOps
 
-Description: Learn what documentation to update when migrating from Terraform to OpenTofu — runbooks, READMEs, module docs, onboarding guides, and internal wikis.
+Description: Learn what documentation to update when migrating from Terraform to OpenTofu - runbooks, READMEs, module docs, onboarding guides, and internal wikis.
 
 ## Introduction
 
@@ -80,6 +80,7 @@ tofu apply
 Install OpenTofu:
 \```bash
 # macOS
+
 brew install opentofu
 
 # Linux
@@ -125,9 +126,9 @@ tofu -chdir=environments/production plan -refresh-only
 ### Deploy Change
 \```bash
 # 1. Create feature branch and make changes
-# 2. Open PR — CI will post plan as comment
+# 2. Open PR - CI will post plan as comment
 # 3. Review plan, get approval
-# 4. Merge — CI applies automatically
+# 4. Merge - CI applies automatically
 \```
 
 ### Emergency Apply
@@ -162,18 +163,18 @@ tofu state rm aws_instance.orphaned
 
 ## Tools You'll Need
 
-1. **OpenTofu** — Infrastructure as Code tool
+1. **OpenTofu** - Infrastructure as Code tool
    \```bash
    brew install opentofu   # macOS
    tofu --version          # Verify: OpenTofu v1.9.x
    \```
 
-2. **tflint** — OpenTofu linter
+2. **tflint** - OpenTofu linter
    \```bash
    brew install tflint
    \```
 
-3. **AWS CLI** — For AWS credentials
+3. **AWS CLI** - For AWS credentials
    \```bash
    brew install awscli
    aws configure sso   # Set up SSO login
@@ -210,9 +211,9 @@ The pipeline runs on every PR and push to main:
 | Nightly | Drift detection (`tofu plan -refresh-only`) |
 
 ## Pipeline Files
-- `.github/workflows/opentofu-plan.yml` — PR planning
-- `.github/workflows/opentofu-apply.yml` — Deployment
-- `.github/workflows/drift-detection.yml` — Nightly drift check
+- `.github/workflows/opentofu-plan.yml` - PR planning
+- `.github/workflows/opentofu-apply.yml` - Deployment
+- `.github/workflows/drift-detection.yml` - Nightly drift check
 
 ## Required Secrets
 | Secret | Description |
@@ -224,7 +225,7 @@ The pipeline runs on every PR and push to main:
 
 ```bash
 #!/bin/bash
-# scripts/check-docs.sh — find remaining "terraform" references in docs
+# scripts/check-docs.sh - find remaining "terraform" references in docs
 
 echo "Checking for outdated 'terraform' CLI references in documentation..."
 

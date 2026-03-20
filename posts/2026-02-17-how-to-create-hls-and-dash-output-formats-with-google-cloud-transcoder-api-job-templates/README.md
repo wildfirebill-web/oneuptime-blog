@@ -317,6 +317,7 @@ def transcode_with_template(project_id, location, template_id, input_uri, output
     return response
 
 # Transcode a video using the dual-format template
+
 job = transcode_with_template(
     project_id="your-project",
     location="us-central1",

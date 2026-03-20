@@ -30,6 +30,7 @@ Check your current network configuration:
 
 ```bash
 # List available networks
+
 podman network ls
 
 # Inspect default network

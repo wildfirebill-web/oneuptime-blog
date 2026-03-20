@@ -40,6 +40,7 @@ First, install the required OpenTelemetry packages. These packages provide the c
 
 ```bash
 # Install the core OpenTelemetry SDK and auto-instrumentation packages
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/auto-instrumentations-node \
   @opentelemetry/exporter-trace-otlp-http \

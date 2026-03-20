@@ -410,6 +410,7 @@ You can validate your naming conventions by deploying in what-if mode to see the
 
 ```bash
 # Preview the deployment to check generated names
+
 az deployment group what-if \
   --resource-group rg-test \
   --template-file deploy.bicep \

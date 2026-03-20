@@ -65,6 +65,7 @@ The WasmPlugin CRD defines how Istio loads and configures your Wasm module.
 
 ```yaml
 # wasmplugin-basic.yaml
+
 # A minimal WasmPlugin configuration that loads a module from an OCI registry
 apiVersion: extensions.istio.io/v1alpha1
 kind: WasmPlugin

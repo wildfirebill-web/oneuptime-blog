@@ -8,7 +8,7 @@ Description: Learn how to use for_each with maps to create multiple named resour
 
 ---
 
-`for_each` with maps creates one resource instance per map entry, using the map key as a stable identifier. Unlike `count` which uses integer indices, `for_each` uses meaningful keys — so adding or removing one item doesn't affect others. This guide covers map-based `for_each` patterns.
+`for_each` with maps creates one resource instance per map entry, using the map key as a stable identifier. Unlike `count` which uses integer indices, `for_each` uses meaningful keys - so adding or removing one item doesn't affect others. This guide covers map-based `for_each` patterns.
 
 ---
 
@@ -39,6 +39,7 @@ resource "aws_s3_bucket" "buckets" {
 }
 
 # Access individual buckets by key
+
 output "data_archive_bucket" {
   value = aws_s3_bucket.buckets["data-archive"].id
 }
@@ -96,8 +97,8 @@ resource "aws_launch_template" "app" {
 ## each.key and each.value
 
 Inside a `for_each` resource block:
-- `each.key` — the current map key (e.g., `"production"`)
-- `each.value` — the current map value (the object associated with that key)
+- `each.key` - the current map key (e.g., `"production"`)
+- `each.value` - the current map value (the object associated with that key)
 
 ```hcl
 resource "aws_security_group" "services" {
@@ -153,7 +154,7 @@ resource "aws_subnet" "private" {
 ```hcl
 # Adding an entry: only the new resource is created
 # Removing an entry: only that resource is destroyed
-# Other resources are unaffected — their keys are stable
+# Other resources are unaffected - their keys are stable
 
 # Before: 3 buckets
 # After: 4 buckets (adding "backups")
@@ -165,11 +166,11 @@ variable "s3_buckets" {
     "backups"      = { versioning = true }   # new entry
   }
 }
-# Result: only "backups" bucket is created — others untouched
+# Result: only "backups" bucket is created - others untouched
 ```
 
 ---
 
 ## Summary
 
-`for_each` with maps creates stable, named resource instances where each instance is identified by its map key rather than a numeric index. Use `each.key` and `each.value` to access the current iteration's key and value. Adding or removing map entries affects only that specific resource — making map-based `for_each` safer than `count` for collections where items may be added or removed independently.
+`for_each` with maps creates stable, named resource instances where each instance is identified by its map key rather than a numeric index. Use `each.key` and `each.value` to access the current iteration's key and value. Adding or removing map entries affects only that specific resource - making map-based `for_each` safer than `count` for collections where items may be added or removed independently.

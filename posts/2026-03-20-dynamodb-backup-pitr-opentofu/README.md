@@ -57,6 +57,7 @@ resource "aws_dynamodb_table" "main" {
 
 ```hcl
 # IAM role for AWS Backup
+
 resource "aws_iam_role" "backup" {
   name = "${var.project_name}-backup-role"
 
@@ -154,4 +155,4 @@ aws dynamodb describe-continuous-backups \
 
 ## Conclusion
 
-Enable PITR on all production DynamoDB tables—it has no performance impact and protects against accidental data deletion or corruption with second-level recovery granularity. Supplement PITR with AWS Backup for long-term retention beyond 35 days and for compliance requirements that mandate immutable backup storage. Tag all tables with `Backup = enabled` to automatically include them in backup plans without per-table configuration.
+Enable PITR on all production DynamoDB tables-it has no performance impact and protects against accidental data deletion or corruption with second-level recovery granularity. Supplement PITR with AWS Backup for long-term retention beyond 35 days and for compliance requirements that mandate immutable backup storage. Tag all tables with `Backup = enabled` to automatically include them in backup plans without per-table configuration.

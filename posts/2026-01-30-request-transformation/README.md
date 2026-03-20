@@ -89,6 +89,7 @@ Kong provides the `request-transformer` plugin for header manipulation. Here is 
 
 ```yaml
 # kong.yaml - Declarative configuration for header transformation
+
 _format_version: "3.0"
 
 services:

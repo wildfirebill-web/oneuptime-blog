@@ -43,6 +43,7 @@ Python provides two primary ways to obtain an event loop. Understanding the diff
 import asyncio
 
 # Get the running loop (preferred in async context)
+
 async def get_current():
     loop = asyncio.get_running_loop()
     print(f"Running loop: {loop}")

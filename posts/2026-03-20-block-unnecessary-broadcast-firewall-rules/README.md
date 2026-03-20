@@ -15,11 +15,12 @@ Not all broadcast traffic is useful. Legacy protocols like NetBIOS and noisy ser
 Before blocking anything, whitelist what you need:
 
 ```bash
-# Allow DHCP broadcasts (port 67 and 68) — critical for host boot
+# Allow DHCP broadcasts (port 67 and 68) - critical for host boot
+
 sudo iptables -A INPUT -p udp --dport 67 -j ACCEPT
 sudo iptables -A INPUT -p udp --dport 68 -j ACCEPT
 
-# Allow ARP — handled at Layer 2, not by iptables, but note here for completeness
+# Allow ARP - handled at Layer 2, not by iptables, but note here for completeness
 # ARP is not filtered by iptables (use arptables for L2 ARP filtering)
 ```
 

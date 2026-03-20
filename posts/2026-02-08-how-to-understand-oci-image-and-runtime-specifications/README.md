@@ -95,6 +95,7 @@ The config object contains the runtime settings for the container, including env
 
 ```bash
 # Export an image as an OCI-format tar archive to examine its structure
+
 docker save nginx:latest -o nginx.tar
 mkdir nginx-extracted && tar xf nginx.tar -C nginx-extracted
 

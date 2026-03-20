@@ -48,6 +48,7 @@ Every service should expose endpoints that verify actual functionality, not just
 
 ```python
 # health.py - Flask health check endpoints
+
 from flask import Flask, jsonify
 import redis
 import psycopg2

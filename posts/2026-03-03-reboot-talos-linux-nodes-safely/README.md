@@ -27,6 +27,7 @@ The simplest way to reboot a Talos node is:
 
 ```bash
 # Reboot a single node
+
 talosctl reboot --nodes <node-ip>
 ```
 

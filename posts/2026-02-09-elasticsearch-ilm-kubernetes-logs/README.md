@@ -292,6 +292,7 @@ Different Kubernetes namespaces often have different retention requirements. Pro
 
 ```bash
 # Development namespace policy - short retention
+
 curl -X PUT "https://elasticsearch-es-http:9200/_ilm/policy/k8s-logs-dev-policy" \
   -H "Content-Type: application/json" \
   -u "elastic:${ES_PASSWORD}" \

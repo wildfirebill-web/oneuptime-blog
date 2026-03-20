@@ -487,6 +487,7 @@ Example GitHub Actions workflow:
 
 ```yaml
 # .github/workflows/load-test.yml
+
 name: Load Test
 
 on:

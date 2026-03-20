@@ -35,6 +35,7 @@ Key fields in a GitRepo:
 
 ```yaml
 # gitrepo-basic.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:

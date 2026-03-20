@@ -34,6 +34,7 @@ VXLAN uses 50 bytes of overhead per packet (UDP + VXLAN headers) and operates on
 
 ```bash
 # Switch to VXLAN
+
 calicoctl patch ippool default-ipv4-ippool --type merge \
   --patch '{"spec":{"vxlanMode":"Always","ipipMode":"Never"}}'
 

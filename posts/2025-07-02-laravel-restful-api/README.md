@@ -73,6 +73,7 @@ Start by creating a new Laravel project:
 
 ```bash
 # Create a new Laravel project
+
 composer create-project laravel/laravel my-api
 
 # Navigate to the project directory
@@ -377,7 +378,7 @@ class Post extends Model
 
 ## Building the Controller
 
-### Resource Controller
+Resource Controller
 
 Create an API resource controller:
 

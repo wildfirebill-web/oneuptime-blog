@@ -39,6 +39,7 @@ Create namespace definitions with PSA labels managed through Flux:
 
 ```yaml
 # clusters/my-cluster/namespaces/production.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

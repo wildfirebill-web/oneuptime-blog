@@ -152,6 +152,7 @@ Create a guide for collecting audit evidence on demand:
 ```bash
 #!/bin/bash
 # scripts/collect-audit-evidence.sh
+
 # Collects all evidence needed for a compliance audit
 # Usage: ./collect-audit-evidence.sh "2026-01-01" "2026-03-31"
 

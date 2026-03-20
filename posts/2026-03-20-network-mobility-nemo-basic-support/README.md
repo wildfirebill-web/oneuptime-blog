@@ -36,13 +36,13 @@ graph LR
     HA <-->|"Bidirectional Tunnel"| MR
 ```
 
-All devices in the mobile network get addresses from the **Mobile Network Prefix (MNP)** — a stable prefix anchored at the Home Agent.
+All devices in the mobile network get addresses from the **Mobile Network Prefix (MNP)** - a stable prefix anchored at the Home Agent.
 
 ## Key NEMO Concepts
 
 ### Mobile Network Prefix (MNP)
 
-```
+```text
 Home Network Prefix:   2001:db8:home::/48
 Mobile Network Prefix: 2001:db8:home:1::/64  (delegated to MR)
 Mobile Router HoA:     2001:db8:home::MR
@@ -56,7 +56,7 @@ Devices behind MR get addresses like:
 
 NEMO uses the same BU format as MIPv6 but adds a **Mobile Network Prefix option** to register the MNP.
 
-```
+```text
 Binding Update (from MR to HA):
   H flag: 1 (home registration)
   R flag: 1 (NEMO-specific: mobile router flag)
@@ -70,7 +70,8 @@ Binding Update (from MR to HA):
 ## Setting Up a NEMO Mobile Router
 
 ```bash
-# /etc/mip6d.conf — Mobile Router configuration (UMIP)
+# /etc/mip6d.conf - Mobile Router configuration (UMIP)
+
 NodeConfig MR;  # Mobile Router role
 
 # Interface facing the home network
@@ -95,7 +96,7 @@ MNPPrefixDelegation enabled;
 ```
 
 ```bash
-# On the HA — configure to accept MR registrations
+# On the HA - configure to accept MR registrations
 # /etc/mip6d.conf (HA role)
 NodeConfig HA;
 
@@ -111,7 +112,7 @@ AcceptMobileRouters enabled;
 
 NEMO supports nested mobile networks (e.g., a laptop that is itself a router for another mobile network).
 
-```
+```text
 Train Network (MR1):
   MNP1: 2001:db8:train::/48
 

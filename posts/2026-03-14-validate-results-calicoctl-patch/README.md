@@ -30,6 +30,7 @@ Verify the patched resource has the expected field values:
 ```bash
 #!/bin/bash
 # validate-patch-state.sh
+
 # Validates that a patch produced the expected resource state
 
 set -euo pipefail

@@ -14,12 +14,13 @@ ZooKeeper is used by older Kafka deployments (pre-KRaft) for cluster coordinatio
 
 ```properties
 # /opt/zookeeper/conf/zoo.cfg
+
 # or /etc/zookeeper/conf/zoo.cfg
 
 # Data directory
 dataDir=/var/lib/zookeeper
 
-# Client port binding — specific IPv4 address
+# Client port binding - specific IPv4 address
 # clientPortAddress binds the client port to a specific IP
 clientPortAddress=10.0.0.10
 clientPort=2181
@@ -182,7 +183,7 @@ Starting with Kafka 3.3, KRaft (Kafka Raft) mode replaces ZooKeeper:
 ```properties
 # /opt/kafka/config/kraft/server.properties
 
-# KRaft mode — no ZooKeeper needed
+# KRaft mode - no ZooKeeper needed
 process.roles=broker,controller
 node.id=1
 

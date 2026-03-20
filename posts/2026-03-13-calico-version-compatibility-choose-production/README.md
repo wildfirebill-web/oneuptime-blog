@@ -74,6 +74,7 @@ Production version management requires explicit pinning:
 
 ```yaml
 # Helm values for Calico operator
+
 tigeraOperator:
   image: quay.io/tigera/operator
   version: v1.30.5  # Pin to specific patch version

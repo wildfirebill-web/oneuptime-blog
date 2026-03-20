@@ -35,6 +35,7 @@ Enable the required APIs.
 
 ```bash
 # Enable Cloud Scheduler and Pub/Sub APIs
+
 gcloud services enable cloudscheduler.googleapis.com pubsub.googleapis.com
 ```
 

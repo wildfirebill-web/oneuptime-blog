@@ -16,6 +16,7 @@ Git supports two SSH URL formats, and the port specification differs between the
 
 ```bash
 # Standard SCP-style syntax (port 22 only - CANNOT specify port)
+
 git@github.com:org/repo.git
 
 # SSH URI syntax (can specify any port)

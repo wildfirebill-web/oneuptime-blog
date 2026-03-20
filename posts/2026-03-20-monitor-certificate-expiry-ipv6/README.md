@@ -19,6 +19,7 @@ A simple script to check certificate expiry on IPv6 endpoints:
 # check_cert_expiry_ipv6.sh - Monitor TLS cert expiry on IPv6 endpoints
 
 # Configuration
+
 ENDPOINTS=(
   "2001:db8::1:443:example.com"
   "2001:db8::2:8443:api.example.com"

@@ -29,6 +29,7 @@ Deploy a global Prometheus with an extended retention period using kube-promethe
 
 ```yaml
 # clusters/global/monitoring/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

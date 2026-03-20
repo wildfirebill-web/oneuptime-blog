@@ -21,6 +21,7 @@ Loopback interfaces are virtual interfaces that are always up regardless of phys
 
 ```bash
 # Add a secondary loopback address (lo is already configured with 127.0.0.1)
+
 ip addr add 10.0.0.1/32 dev lo
 ip addr add 10.255.255.1/32 dev lo   # Management loopback
 
@@ -50,7 +51,7 @@ iface lo inet loopback
 
 ## Cisco IOS: Loopback Configuration
 
-```
+```text
 interface Loopback0
   description Management and Router ID
   ip address 10.0.0.1 255.255.255.255
@@ -95,7 +96,7 @@ ssh admin@10.0.0.1
 
 ## Key Takeaways
 
-- Use /32 prefix for loopback addresses — they represent a single host, not a network.
+- Use /32 prefix for loopback addresses - they represent a single host, not a network.
 - Advertise loopback IPs via OSPF or BGP to make them reachable from other routers.
 - Configure BGP with `update-source loopback` so sessions survive physical link failures (requires IGP redundancy).
 - Assign loopbacks consistently: e.g., `10.0.0.X/32` for router X across all devices.

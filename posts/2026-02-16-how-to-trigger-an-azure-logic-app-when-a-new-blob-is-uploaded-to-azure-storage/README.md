@@ -124,6 +124,7 @@ Alternatively, configure subject filtering directly on the Event Grid subscripti
 
 ```bash
 # Create an Event Grid subscription with subject filtering
+
 # This filters events at the Event Grid level, before they reach your Logic App
 az eventgrid event-subscription create \
   --name blob-upload-subscription \

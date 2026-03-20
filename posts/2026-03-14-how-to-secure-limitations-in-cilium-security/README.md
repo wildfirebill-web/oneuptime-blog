@@ -34,6 +34,7 @@ Cilium uses identity-based security, which means traffic from outside the cluste
 
 ```yaml
 # CiliumNetworkPolicy that restricts ingress to known entities
+
 # Note: 'world' entity catches all external traffic
 apiVersion: "cilium.io/v2"
 kind: CiliumNetworkPolicy

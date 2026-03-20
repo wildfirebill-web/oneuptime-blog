@@ -93,6 +93,7 @@ def build_query_cache_key(func_name: str, args: tuple, kwargs: dict, prefix: str
     return f"{prefix}:{func_name}:{key_hash}"
 
 # Usage with SQLAlchemy
+
 @cache_query(ttl=300, prefix="products")
 def get_products_by_category(db: Session, category_id: int, limit: int = 10) -> list:
     """Fetch products by category with caching"""

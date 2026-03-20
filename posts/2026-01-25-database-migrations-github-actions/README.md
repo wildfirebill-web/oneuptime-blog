@@ -33,6 +33,7 @@ Start with a simple migration job using your framework's migration tool:
 
 ```yaml
 # .github/workflows/migrate.yml
+
 name: Database Migration
 
 on:

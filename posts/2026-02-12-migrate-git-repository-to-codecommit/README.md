@@ -23,6 +23,7 @@ Set up the credential helper if you haven't already.
 
 ```bash
 # Configure Git to use AWS credential helper
+
 git config --global credential.helper '!aws codecommit credential-helper $@'
 git config --global credential.UseHttpPath true
 ```

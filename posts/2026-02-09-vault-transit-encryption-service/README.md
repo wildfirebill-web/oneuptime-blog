@@ -22,6 +22,7 @@ Configure the Transit secrets engine:
 
 ```bash
 # Enable Transit engine
+
 vault secrets enable transit
 
 # Verify enabled

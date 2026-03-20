@@ -25,6 +25,7 @@ The `encrypted_regex` flag matches top-level YAML keys by regular expression. On
 
 ```bash
 # Encrypt only data and stringData fields using encrypted_regex
+
 sops --encrypt \
   --age age1ql3z7hjy54pw3hyww5ayyfg7zqgvc7w3j2elw8zmrj2kg5sfn9aqmcac8p \
   --encrypted-regex '^(data|stringData)$' \

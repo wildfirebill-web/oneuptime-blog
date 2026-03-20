@@ -28,6 +28,7 @@ If you are running the Prometheus Operator:
 
 ```yaml
 # ServiceMonitor for ArgoCD Application Controller
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

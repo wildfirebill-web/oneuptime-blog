@@ -18,6 +18,7 @@ The simplest usage replaces a literal string everywhere it appears in a file:
 
 ```yaml
 # Replace all occurrences of an old server name with a new one
+
 - name: Update server name in config
   ansible.builtin.replace:
     path: /etc/myapp/app.conf

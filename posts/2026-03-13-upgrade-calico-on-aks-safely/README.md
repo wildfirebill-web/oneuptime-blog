@@ -30,6 +30,7 @@ Before upgrading, validate the current Calico state is healthy.
 
 ```bash
 # Check current Calico version
+
 kubectl get pods -n calico-system -l app.kubernetes.io/name=calico-node \
   -o jsonpath='{.items[0].spec.containers[0].image}'
 

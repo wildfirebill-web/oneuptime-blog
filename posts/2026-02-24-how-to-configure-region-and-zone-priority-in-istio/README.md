@@ -226,6 +226,7 @@ Simulate a zone failure and verify priorities work:
 
 ```bash
 # Scale down pods in zone a
+
 kubectl get pods -l app=order-processing -o wide \
   | grep us-east-1a \
   | awk '{print $1}' \

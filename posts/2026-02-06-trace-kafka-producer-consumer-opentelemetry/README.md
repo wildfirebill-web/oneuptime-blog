@@ -123,6 +123,7 @@ If you are working in Python, the `opentelemetry-instrumentation-confluent-kafka
 
 ```python
 # Install the required packages
+
 # pip install opentelemetry-api opentelemetry-sdk opentelemetry-instrumentation-confluent-kafka confluent-kafka
 
 from opentelemetry import trace

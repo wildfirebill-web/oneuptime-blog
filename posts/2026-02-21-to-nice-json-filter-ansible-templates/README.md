@@ -65,6 +65,7 @@ Here is a realistic example generating a Node.js application configuration file:
 
 ```yaml
 # deploy_config.yml - Generate pretty JSON config for a Node.js app
+
 - name: Deploy application configuration
   hosts: app_servers
   vars:

@@ -37,6 +37,7 @@ NFS is one of the most common storage backends for on-premises Kubernetes cluste
 
 ```yaml
 # playbook: create-nfs-pv.yml
+
 # Creates a PersistentVolume backed by an NFS share
 ---
 - name: Create NFS PersistentVolume

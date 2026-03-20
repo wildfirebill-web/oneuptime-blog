@@ -35,6 +35,7 @@ Install the Prometheus Adapter using Helm:
 
 ```bash
 # Add prometheus-community repo
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

@@ -18,6 +18,7 @@ The simplest form runs a command in a new container and exits.
 
 ```bash
 # Run a single command in a new container
+
 docker run ubuntu:22.04 echo "Hello from inside a container"
 ```
 
@@ -231,7 +232,7 @@ fi
 
 This makes one-off containers work seamlessly in shell scripts and CI pipelines.
 
-## Resource Limits
+Resource Limits
 
 Prevent one-off tasks from consuming too many host resources.
 

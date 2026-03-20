@@ -26,7 +26,7 @@ This prevents OSPF from wasting bandwidth and CPU on host-facing segments, and p
 
 Mark a specific interface as passive:
 
-```
+```text
 router ospf 1
  router-id 1.1.1.1
  network 10.0.0.0 0.0.0.255 area 0   ! Router-to-router link (active)
@@ -36,13 +36,13 @@ router ospf 1
  passive-interface GigabitEthernet1/0
 ```
 
-The 192.168.1.0/24 network is still advertised—OSPF just won't send Hellos out Gig1/0.
+The 192.168.1.0/24 network is still advertised-OSPF just won't send Hellos out Gig1/0.
 
 ## Step 2: Make All Interfaces Passive by Default
 
 For routers with many host-facing interfaces, make passive the default and explicitly activate only router-to-router links:
 
-```
+```text
 router ospf 1
  router-id 1.1.1.1
  network 0.0.0.0 255.255.255.255 area 0   ! Advertise all interfaces
@@ -55,13 +55,13 @@ router ospf 1
  no passive-interface GigabitEthernet0/1   ! Link to second router
 ```
 
-This approach is safer for distribution and access layer routers—any new interface added is automatically passive unless explicitly activated.
+This approach is safer for distribution and access layer routers-any new interface added is automatically passive unless explicitly activated.
 
 ## Step 3: Apply Passive to Loopback Interfaces
 
 Loopback interfaces cannot form neighbors, but setting them passive is good practice and prevents unnecessary processing:
 
-```
+```text
 router ospf 1
  passive-interface Loopback0
  passive-interface Loopback1
@@ -69,7 +69,7 @@ router ospf 1
 
 ## Step 4: Verify Passive Interface Status
 
-```
+```text
 ! Check which interfaces are passive
 Router# show ip ospf interface brief
 
@@ -88,11 +88,11 @@ GigabitEthernet1/0 is up, line protocol is up
 
 The `No Hellos (Passive interface)` message confirms the interface is passive.
 
-## Step 5: Security Benefit—Prevent Rogue Adjacencies
+## Step 5: Security Benefit-Prevent Rogue Adjacencies
 
 Without passive interfaces, a laptop with OSPF software plugged into a host port could form an OSPF adjacency and inject false routes. Passive interface prevents this:
 
-```
+```text
 ! On all access ports (host-facing)
 router ospf 1
  passive-interface default
@@ -105,7 +105,7 @@ Combined with OSPF authentication, this provides strong protection against rogue
 
 Even with passive interface, the subnet should still appear in other routers' OSPF tables:
 
-```
+```text
 ! On a remote router - verify the passive subnet is learned via OSPF
 RemoteRouter# show ip route 192.168.1.0/24
 

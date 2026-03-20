@@ -111,6 +111,7 @@ sudo mount /dev/sdb /mnt/iscsi
 
 ```bash
 # List active sessions
+
 sudo iscsiadm -m session
 
 # Show session details

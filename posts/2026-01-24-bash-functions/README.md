@@ -27,6 +27,7 @@ flowchart TD
 #!/bin/bash
 
 # Syntax 1: Using the function keyword
+
 function greet {
     echo "Hello, World!"
 }

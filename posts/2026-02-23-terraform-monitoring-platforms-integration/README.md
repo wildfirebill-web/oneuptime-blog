@@ -22,6 +22,7 @@ Datadog is one of the most widely used monitoring platforms, and its Terraform p
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     datadog = {

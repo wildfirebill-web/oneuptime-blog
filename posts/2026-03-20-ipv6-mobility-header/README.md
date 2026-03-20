@@ -21,7 +21,7 @@ graph TD
 
 ## Mobile IPv6 Addresses
 
-```
+```text
 Home Address (HoA):
   - Permanent address assigned from the home network
   - e.g., 2001:db8:home::phone
@@ -47,7 +47,7 @@ Binding:
 
 ## Mobility Header Format
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -79,7 +79,7 @@ Checksum:      ICMPv6-style checksum including pseudo-header
 
 ## MIPv6 Message Flow
 
-```
+```text
 Mobile Node changes network:
 1. MN acquires new Care-of Address via SLAAC at visited network
 2. MN sends Binding Update (MH Type 5) to Home Agent
@@ -100,6 +100,7 @@ Route Optimization (optional, RFC 6275 Section 11):
 
 ```bash
 # Capture IPv6 Mobility Header packets
+
 sudo tcpdump -i eth0 "ip6[6] == 135"
 
 # Verbose output to see MH type
@@ -134,4 +135,4 @@ sudo modprobe mip6
 
 ## Conclusion
 
-The IPv6 Mobility Header enables mobile nodes to maintain persistent connections while changing networks. While technically complete and standardized, MIPv6 deployment has been limited in practice — most mobile connectivity today is handled at the application layer or through multiple access technologies. Understanding the Mobility Header is valuable for network engineers working with mobile operator infrastructure, UMIP-based mobile networks, and environments where IP-layer mobility is required for non-TCP protocols.
+The IPv6 Mobility Header enables mobile nodes to maintain persistent connections while changing networks. While technically complete and standardized, MIPv6 deployment has been limited in practice - most mobile connectivity today is handled at the application layer or through multiple access technologies. Understanding the Mobility Header is valuable for network engineers working with mobile operator infrastructure, UMIP-based mobile networks, and environments where IP-layer mobility is required for non-TCP protocols.

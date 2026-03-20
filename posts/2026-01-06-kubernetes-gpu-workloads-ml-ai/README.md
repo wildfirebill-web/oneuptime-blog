@@ -48,6 +48,7 @@ The NVIDIA driver must be installed on every node that has GPUs. The driver vers
 
 ```bash
 # Ubuntu/Debian - install NVIDIA driver version 535
+
 sudo apt-get update
 sudo apt-get install -y nvidia-driver-535
 

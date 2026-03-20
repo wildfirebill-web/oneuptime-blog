@@ -18,6 +18,7 @@ Every GCP VPC has an implied egress allow rule with the lowest possible priority
 
 ```bash
 # List all egress rules - you won't see the implied allow-all rule
+
 gcloud compute firewall-rules list \
   --filter="network=production-vpc AND direction=EGRESS" \
   --format="table(name, direction, action, destinationRanges, priority)"

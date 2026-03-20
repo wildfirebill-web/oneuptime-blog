@@ -26,6 +26,7 @@ sudo apt update
 sudo apt install haproxy
 
 # Check version - stick table features vary by version
+
 haproxy -v
 
 sudo systemctl enable haproxy

@@ -430,7 +430,7 @@ object FiberExample extends ZIOAppDefault {
 }
 ```
 
-## Resource Management
+Resource Management
 
 ZIO provides safe resource management with automatic cleanup, even when errors occur or fibers are interrupted.
 

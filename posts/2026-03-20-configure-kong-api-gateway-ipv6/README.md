@@ -22,6 +22,7 @@ When running Kong via Docker or environment variables, set the proxy and admin l
 
 ```bash
 # Docker run example with dual-stack listeners
+
 docker run -d --name kong \
   -e KONG_DATABASE=off \
   -e KONG_DECLARATIVE_CONFIG=/kong/kong.yml \
@@ -67,7 +68,7 @@ kong reload
 Create a declarative config that points to an IPv6 upstream.
 
 ```yaml
-# kong.yml — DB-less declarative configuration
+# kong.yml - DB-less declarative configuration
 _format_version: "3.0"
 
 services:
@@ -95,7 +96,7 @@ upstreams:
 ## Step 4: Verify Kong is Listening on IPv6
 
 ```bash
-# Check open ports — look for ::: entries (IPv6)
+# Check open ports - look for ::: entries (IPv6)
 ss -tlnp | grep kong
 
 # Or with netstat

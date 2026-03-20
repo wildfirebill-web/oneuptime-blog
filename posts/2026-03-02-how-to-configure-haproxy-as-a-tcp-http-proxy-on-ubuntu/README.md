@@ -21,6 +21,7 @@ sudo apt update
 sudo apt install -y software-properties-common
 
 # Add the HAProxy PPA (adjust version as needed - 2.8 is a current LTS)
+
 sudo add-apt-repository ppa:vbernat/haproxy-2.8
 
 sudo apt update

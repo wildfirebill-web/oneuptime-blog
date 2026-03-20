@@ -1288,6 +1288,7 @@ In the OneUptime dashboard:
 
 ```yaml
 # High Error Rate Alert
+
 Alert Name: Mobile App High Error Rate
 Condition: Count of spans where error = true > 50 in 5 minutes
 Severity: Critical

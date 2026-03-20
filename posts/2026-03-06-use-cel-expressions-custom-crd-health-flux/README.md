@@ -28,6 +28,7 @@ Before writing a CEL expression for any CRD, follow these steps:
 
 ```bash
 # Get an existing resource and inspect its status
+
 kubectl get <resource> <name> -n <namespace> -o yaml
 
 # Check what status fields the CRD defines

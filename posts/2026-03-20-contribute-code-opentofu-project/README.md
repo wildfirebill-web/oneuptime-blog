@@ -8,7 +8,7 @@ Description: Learn how to set up a development environment, find issues, write c
 
 ## Introduction
 
-OpenTofu is an open source Terraform fork maintained by the Linux Foundation. Contributions are welcome from the community — bug fixes, new features, documentation improvements, and test coverage. This guide walks through the contribution process from setup to merged PR.
+OpenTofu is an open source Terraform fork maintained by the Linux Foundation. Contributions are welcome from the community - bug fixes, new features, documentation improvements, and test coverage. This guide walks through the contribution process from setup to merged PR.
 
 ## Setting Up the Development Environment
 
@@ -16,6 +16,7 @@ OpenTofu is an open source Terraform fork maintained by the Linux Foundation. Co
 # Prerequisites: Go 1.22+, Git, Make
 
 # 1. Fork the repository on GitHub
+
 # Go to https://github.com/opentofu/opentofu and click "Fork"
 
 # 2. Clone your fork

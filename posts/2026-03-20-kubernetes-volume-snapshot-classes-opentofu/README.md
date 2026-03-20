@@ -14,6 +14,7 @@ Kubernetes Volume Snapshot Classes define the provisioner and deletion policy fo
 
 ```hcl
 # main.tf - Install VolumeSnapshot CRDs via Helm
+
 resource "helm_release" "snapshot_controller" {
   name             = "snapshot-controller"
   repository       = "https://piraeus.io/helm-charts/"

@@ -332,6 +332,7 @@ CEL validation has cost limits to prevent expensive operations. Complex rules wi
 
 ```yaml
 # Good - simple and fast
+
 - rule: "self.items.size() <= 100"
   message: "maximum 100 items allowed"
 

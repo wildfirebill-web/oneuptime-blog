@@ -24,6 +24,7 @@ Scaffold a new Elysia application:
 
 ```bash
 # Create a new Elysia project
+
 bun create elysia my-elysia-app
 cd my-elysia-app
 bun install

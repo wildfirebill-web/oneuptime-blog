@@ -406,6 +406,7 @@ If you know the IP ranges of your Git provider, restrict the repo server egress 
 
 ```yaml
 # GitHub IP ranges (check https://api.github.com/meta for current ranges)
+
 egress:
   - to:
       - ipBlock:

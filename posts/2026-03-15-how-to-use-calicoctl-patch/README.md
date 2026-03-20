@@ -134,6 +134,7 @@ calicoctl patch node rr-node-1 -p '{"spec": {"bgp": {"routeReflectorClusterID": 
 ```bash
 #!/bin/bash
 # Set all nodes in a rack to a specific AS number
+
 NODES=$(calicoctl get nodes -o json | jq -r '.items[].metadata.name' | grep "rack01")
 
 for node in $NODES; do

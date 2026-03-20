@@ -16,6 +16,7 @@ When you set `become: true` on a task, Ansible wraps the command in a privilege 
 
 ```yaml
 # This task runs as root via sudo
+
 - name: Install nginx
   ansible.builtin.apt:
     name: nginx

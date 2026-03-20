@@ -14,6 +14,7 @@ MRTG generates traffic graphs from SNMP-polled interface data. Configuring MRTG 
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install mrtg -y
 
 # Verify installation
@@ -41,7 +42,7 @@ cat /etc/mrtg/mrtg.cfg
 
 ## Manual MRTG Configuration for IPv6
 
-```
+```text
 # /etc/mrtg/mrtg.cfg
 
 # Global options
@@ -98,7 +99,7 @@ sudo chown root:root /var/lock/mrtg /var/log/mrtg
 
 ## MRTG with SNMPv3 over IPv6
 
-```
+```text
 # /etc/mrtg/mrtg-snmpv3.cfg
 
 # SNMPv3 syntax for MRTG

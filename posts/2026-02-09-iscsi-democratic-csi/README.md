@@ -24,6 +24,7 @@ Democratic CSI deploys through Helm charts with extensive configuration options.
 
 ```bash
 # Add the Democratic CSI Helm repository
+
 helm repo add democratic-csi https://democratic-csi.github.io/charts/
 helm repo update
 

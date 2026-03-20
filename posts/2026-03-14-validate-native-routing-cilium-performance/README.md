@@ -31,6 +31,7 @@ This guide provides the specific steps and commands for native routing performan
 # Validate native routing achieves near-hardware throughput
 
 # Host-to-host baseline
+
 HOST_BPS=$(kubectl exec host-iperf -- iperf3 -c $HOST_IP -t 20 -P 1 -J | \
   jq '.end.sum_sent.bits_per_second')
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, API, Socket, Docker Compatibility
+Tags: Podman, Containers, API, Sockets, Docker Compatibility
 
 Description: A complete guide to fixing Podman socket connection issues, including setting up the Podman API socket, enabling the systemd service, and making Docker-compatible tools work with Podman.
 
@@ -37,6 +37,7 @@ For rootless Podman (most common setup):
 
 ```bash
 # Enable and start the socket service for your user
+
 systemctl --user enable podman.socket
 systemctl --user start podman.socket
 

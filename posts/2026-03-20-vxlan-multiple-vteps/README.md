@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VXLAN, VTEP, Linux, Overlay Networking, IPv4, Multi-host, FDB, Networking
+Tags: VXLAN, VTEP, Linux, Overlay Networking, IPv4, Multi-Host, FDB, Networking
 
 Description: Learn how to configure VXLAN with multiple VTEPs (VXLAN Tunnel Endpoints) on Linux to create an overlay network spanning multiple physical hosts.
 
@@ -12,7 +12,7 @@ VXLAN (Virtual Extensible LAN) creates Layer 2 overlay networks over Layer 3 IP.
 
 ## Architecture
 
-```
+```text
 Host1 (10.0.0.1)     Host2 (10.0.0.2)     Host3 (10.0.0.3)
   VTEP1                VTEP2                VTEP3
   vxlan10              vxlan10              vxlan10
@@ -26,6 +26,7 @@ VMs on any host can communicate as if on the same L2 network
 
 ```bash
 # On Host1 (10.0.0.1):
+
 ip link add vxlan10 type vxlan \
   id 10 \
   dstport 4789 \
@@ -93,5 +94,5 @@ tcpdump -i eth0 -nn udp port 4789
 
 - Each host runs a VTEP; all VTEPs sharing the same VNI form one L2 broadcast domain.
 - With `nolearning`, use static FDB entries or an EVPN control plane for MAC-to-VTEP mapping.
-- The all-zeros FDB entry (`00:00:00:00:00:00`) sends BUM traffic to the specified VTEP — add one per remote VTEP.
+- The all-zeros FDB entry (`00:00:00:00:00:00`) sends BUM traffic to the specified VTEP - add one per remote VTEP.
 - Multicast-based VTEP discovery is simpler for large deployments but requires multicast support in the underlay.

@@ -6,11 +6,11 @@ Tags: Wireshark, Statistics, Protocol Analysis, Networking, Traffic Analysis
 
 Description: Use Wireshark's Protocol Hierarchy Statistics to get a breakdown of network traffic by protocol, quickly identifying what protocols dominate and how bandwidth is distributed.
 
-Protocol Hierarchy Statistics provide an instant breakdown of what protocols are in your capture — by packet count and byte volume. This is the fastest way to understand what's happening on a network without reading individual packets.
+Protocol Hierarchy Statistics provide an instant breakdown of what protocols are in your capture - by packet count and byte volume. This is the fastest way to understand what's happening on a network without reading individual packets.
 
 ## Open Protocol Hierarchy Statistics
 
-```
+```text
 Statistics → Protocol Hierarchy
 
 Shows a tree of protocols:
@@ -29,7 +29,7 @@ Shows a tree of protocols:
 
 ## Reading the Protocol Hierarchy
 
-```
+```text
 Protocol         Packets  % Packets  Bytes    % Bytes
 --------------   -------  ---------  -------  -------
 Frame            10,000   100.0%     8,500,000 100.0%
@@ -46,7 +46,7 @@ ARP                 502     5.0%        30,120   0.4%
 
 ## Interpreting the Results
 
-```
+```text
 High % Bytes from TCP + TLSv1.3:
   → Encrypted web/application traffic dominates
   → Normal for web servers
@@ -70,7 +70,7 @@ Unexpected protocol at high %:
 
 Combine protocol hierarchy stats with display filters for targeted analysis:
 
-```
+```text
 1. Apply display filter: ip.addr == 10.0.0.50
 2. Open Statistics → Protocol Hierarchy
    → See only protocols used by that specific host
@@ -83,6 +83,7 @@ Combine protocol hierarchy stats with display filters for targeted analysis:
 
 ```bash
 # Get protocol hierarchy from command line
+
 tshark -r /tmp/capture.pcap -q -z io,phs
 
 # Output:
@@ -116,4 +117,4 @@ tshark -r capture.pcap -q -z io,phs | grep "Data"
 # "Data" means Wireshark couldn't decode the protocol
 ```
 
-Protocol Hierarchy Statistics should be your first stop when analyzing an unfamiliar capture — it gives you a complete picture in seconds and guides where to focus your detailed investigation.
+Protocol Hierarchy Statistics should be your first stop when analyzing an unfamiliar capture - it gives you a complete picture in seconds and guides where to focus your detailed investigation.

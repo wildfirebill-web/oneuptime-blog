@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Huginn, Automation, Agents, Web Scraping, Docker Compose, Self-Hosted
+Tags: Docker, Huginn, Automation, Agent, Web Scraping, Docker Compose, Self-Hosted
 
 Description: Deploy Huginn in Docker to create automated agents that monitor websites, process data, and trigger actions on your behalf.
 
@@ -32,6 +32,7 @@ Docker and Docker Compose are required. Huginn uses around 500 MB to 1 GB of RAM
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```
@@ -285,7 +286,7 @@ docker exec -i huginn-postgres psql -U huginn huginn < huginn-backup-20260208.sq
 
 You can also export your agents as a "scenario" from the Huginn web interface, which produces a JSON file you can import on another instance.
 
-## Resource Monitoring
+Resource Monitoring
 
 Huginn's Ruby process can be memory-hungry with many active agents.
 

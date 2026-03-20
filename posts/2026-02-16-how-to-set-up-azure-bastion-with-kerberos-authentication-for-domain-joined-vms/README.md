@@ -51,6 +51,7 @@ If you are using Azure AD Domain Services as your domain controller, set it up f
 
 ```bash
 # Create Azure AD DS managed domain
+
 az ad ds create \
   --name "mycompany.onmicrosoft.com" \
   --resource-group myResourceGroup \

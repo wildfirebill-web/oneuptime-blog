@@ -39,7 +39,7 @@ For example:
 
 Let me break down each component.
 
-## Resource Type Prefixes
+Resource Type Prefixes
 
 Every resource starts with a short prefix that identifies its type. Microsoft maintains a recommended list of abbreviations:
 
@@ -145,6 +145,7 @@ Here is a Terraform module that enforces the naming convention:
 
 ```hcl
 # modules/naming/main.tf
+
 # Central naming module that generates consistent names
 
 variable "workload" {

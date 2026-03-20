@@ -1,4 +1,4 @@
-# How to Configure RKE2 Networking with Canal
+# How to Configure RKE2 Networking with Canal - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,6 +27,7 @@ Canal is the default CNI, so minimal configuration is needed:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 # Canal is the default - this is optional but explicit
 cni: canal
 

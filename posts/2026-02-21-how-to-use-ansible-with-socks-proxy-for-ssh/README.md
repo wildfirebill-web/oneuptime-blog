@@ -30,6 +30,7 @@ The simplest way to create a SOCKS proxy is with SSH's built-in dynamic port for
 
 ```bash
 # Create a SOCKS5 proxy through the bastion host on local port 1080
+
 ssh -D 1080 -f -N -q bastion-user@bastion.example.com
 
 # Flags explained:

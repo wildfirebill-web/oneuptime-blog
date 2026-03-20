@@ -24,6 +24,7 @@ Calculate baseline by examining historical cluster usage:
 
 ```promql
 # Minimum node count over 90 days
+
 min_over_time(count(kube_node_info)[90d:1d])
 
 # Minimum total CPU requests over 90 days

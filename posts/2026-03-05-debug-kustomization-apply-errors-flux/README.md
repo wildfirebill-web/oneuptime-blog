@@ -26,6 +26,7 @@ Start by checking the Kustomization status to see if an error exists.
 
 ```bash
 # Get the status of all Kustomizations
+
 flux get ks
 ```
 

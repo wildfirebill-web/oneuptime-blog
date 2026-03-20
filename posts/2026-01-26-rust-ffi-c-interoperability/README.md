@@ -310,6 +310,7 @@ Build your Rust code as a C-compatible library by adding this to `Cargo.toml`:
 [lib]
 crate-type = ["cdylib"]  # For a dynamic library (.so/.dylib/.dll)
 # Or use "staticlib" for a static library (.a)
+
 ```
 
 ## Handling Opaque Types and Callbacks

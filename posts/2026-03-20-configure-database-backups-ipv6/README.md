@@ -16,6 +16,7 @@ Database backups over IPv6 require that backup utilities correctly specify IPv6 
 
 ```bash
 # Backup PostgreSQL database to remote server over IPv6
+
 PGPASSWORD="password" pg_dump \
   -h 2001:db8::db \
   -U dbadmin \
@@ -172,4 +173,4 @@ log "All database backups completed"
 0 1 * * * /usr/local/bin/backup_databases_ipv6.sh
 ```
 
-Database backups over IPv6 are supported natively by all major database backup utilities — the key is using the correct IPv6 address format (brackets in URIs/connection strings) and ensuring database servers are configured to accept connections from IPv6 backup client addresses.
+Database backups over IPv6 are supported natively by all major database backup utilities - the key is using the correct IPv6 address format (brackets in URIs/connection strings) and ensuring database servers are configured to accept connections from IPv6 backup client addresses.

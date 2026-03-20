@@ -69,6 +69,7 @@ ztunnel runs as a DaemonSet, so it is inherently highly available - one instance
 
 ```yaml
 # ztunnel Helm values
+
 tolerations:
   - operator: Exists
 updateStrategy:
@@ -102,7 +103,7 @@ spec:
       gateway.networking.k8s.io/gateway-name: bookinfo-waypoint
 ```
 
-## Resource Planning
+Resource Planning
 
 ### ztunnel Sizing
 

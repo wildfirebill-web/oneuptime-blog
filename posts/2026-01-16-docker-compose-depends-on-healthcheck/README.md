@@ -130,6 +130,7 @@ healthcheck:
 
 ```yaml
 # CMD format - run command directly
+
 healthcheck:
   test: ["CMD", "curl", "-f", "http://localhost/health"]
 

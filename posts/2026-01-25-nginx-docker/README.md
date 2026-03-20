@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Docker, Containers, DevOps, Deployment
+Tags: Nginx, Docker, Containers, DevOps, Deployment
 
 Description: Learn how to run Nginx in Docker containers, including configuration management, SSL certificates, logging, and production deployment patterns.
 
@@ -16,6 +16,7 @@ Run Nginx with a single command:
 
 ```bash
 # Run Nginx on port 80
+
 docker run -d -p 80:80 nginx
 
 # Run with a name

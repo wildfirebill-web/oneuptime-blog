@@ -38,6 +38,7 @@ First, let us configure the base OpenTelemetry setup that every service in the p
 
 ```python
 # otel_setup.py - Shared OpenTelemetry configuration for all services
+
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

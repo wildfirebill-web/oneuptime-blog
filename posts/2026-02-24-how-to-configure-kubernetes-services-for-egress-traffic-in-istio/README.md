@@ -257,6 +257,7 @@ For HTTP connections, the Host header contains the ExternalName service's name. 
 
 ```bash
 # HTTP - works, Host header is rewritten to external service
+
 kubectl exec deploy/sleep -- curl -s http://external-api.default.svc.cluster.local/get
 
 # HTTPS - works, SNI matches the real hostname

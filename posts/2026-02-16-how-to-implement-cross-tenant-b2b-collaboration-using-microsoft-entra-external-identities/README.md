@@ -69,6 +69,7 @@ You can allowlist or blocklist specific domains:
 
 ```powershell
 # Configure collaboration restrictions to only allow specific partner domains
+
 Connect-MgGraph -Scopes "Policy.ReadWrite.Authorization"
 
 $params = @{

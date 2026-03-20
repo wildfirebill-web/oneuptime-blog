@@ -8,12 +8,13 @@ Description: Learn how to write unified firewall rules for both IPv4 and IPv6 us
 
 ## Overview
 
-nftables `inet` family allows writing a single ruleset that applies to both IPv4 and IPv6. This eliminates the maintenance burden of keeping iptables and ip6tables rules synchronized. Using `inet` tables, you write one rule that covers both protocol versions — significantly reducing configuration complexity and the risk of asymmetric policies.
+nftables `inet` family allows writing a single ruleset that applies to both IPv4 and IPv6. This eliminates the maintenance burden of keeping iptables and ip6tables rules synchronized. Using `inet` tables, you write one rule that covers both protocol versions - significantly reducing configuration complexity and the risk of asymmetric policies.
 
 ## inet Family vs ip + ip6
 
 ```bash
 # Without inet: Two separate tables
+
 table ip filter { ... }    # IPv4 only
 table ip6 filter { ... }   # IPv6 only
 
@@ -25,7 +26,7 @@ table inet filter { ... }  # IPv4 AND IPv6
 
 ```bash
 #!/usr/sbin/nft -f
-# /etc/nftables.conf — Unified IPv4/IPv6 firewall
+# /etc/nftables.conf - Unified IPv4/IPv6 firewall
 
 # Flush existing ruleset
 flush ruleset
@@ -77,18 +78,18 @@ table inet filter {
         # ==== ICMPv4 (ping, error reporting) ====
         ip protocol icmp icmp type { echo-request, echo-reply, destination-unreachable, time-exceeded, parameter-problem } accept
 
-        # ==== ICMPv6 — critical (BOTH protocols) ====
-        # Packet Too Big — NEVER block (applies only to IPv6)
+        # ==== ICMPv6 - critical (BOTH protocols) ====
+        # Packet Too Big - NEVER block (applies only to IPv6)
         ip6 nexthdr icmpv6 icmpv6 type packet-too-big accept
 
-        # Error types — allow for both
+        # Error types - allow for both
         ip6 nexthdr icmpv6 icmpv6 type {
             destination-unreachable,
             time-exceeded,
             parameter-problem
         } accept
 
-        # NDP — link-local only
+        # NDP - link-local only
         ip6 saddr fe80::/10 ip6 nexthdr icmpv6 icmpv6 type {
             nd-router-solicit,
             nd-router-advert,
@@ -96,7 +97,7 @@ table inet filter {
             nd-neighbor-advert
         } accept
 
-        # Echo request — rate limited
+        # Echo request - rate limited
         ip6 nexthdr icmpv6 icmpv6 type echo-request limit rate 10/second accept
         ip6 nexthdr icmpv6 drop   # Drop remaining ICMPv6
 
@@ -109,7 +110,7 @@ table inet filter {
         tcp dport 22 ip6 saddr @MGMT_NETS accept
         tcp dport 22 ip saddr @MGMT_NETS4 accept
 
-        # Web services — both protocols
+        # Web services - both protocols
         tcp dport { 80, 443 } accept
 
         # DNS (if this is a DNS server)

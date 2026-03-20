@@ -16,6 +16,7 @@ HTTP/2 requires TLS in practice. While the HTTP/2 specification allows unencrypt
 
 ```bash
 # Generate a self-signed certificate for development
+
 openssl req -x509 -newkey rsa:2048 -keyout server.key -out server.crt -days 365 -nodes -subj "/CN=localhost"
 ```
 

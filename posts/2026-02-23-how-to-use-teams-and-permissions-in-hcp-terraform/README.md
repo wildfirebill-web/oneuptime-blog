@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Terraform Cloud, Team, Permissions, Access Control, IAM
+Tags: Terraform, HCP Terraform, Terraform Cloud, Teams, Permissions, Access Control, IAM
 
 Description: A practical guide to setting up teams and managing permissions in HCP Terraform to enforce proper access control across your organization.
 
@@ -35,6 +35,7 @@ There are a few built-in groups to be aware of:
 
 ```bash
 # Create a new team via the API
+
 curl \
   --header "Authorization: Bearer $TFC_TOKEN" \
   --header "Content-Type: application/vnd.api+json" \

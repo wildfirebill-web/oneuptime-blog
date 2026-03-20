@@ -22,6 +22,7 @@ This playbook sets the hostname to match the inventory hostname:
 
 ```yaml
 # set-hostname-simple.yml - Basic hostname configuration
+
 ---
 - name: Set System Hostname
   hosts: all

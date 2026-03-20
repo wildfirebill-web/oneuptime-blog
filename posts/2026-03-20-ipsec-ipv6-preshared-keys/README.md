@@ -14,6 +14,7 @@ Pre-shared keys (PSK) are the simplest form of IPsec authentication: both peers 
 
 ```bash
 # Generate a 256-bit (32-byte) random PSK
+
 openssl rand -base64 32
 # Example output: K7mX3pQnY9vL2wR8sT4uJ6hB1cE0fI5dG+N/oA==
 
@@ -24,7 +25,7 @@ openssl rand -hex 32
 
 PSK requirements:
 - Minimum 20 characters
-- Maximum entropy — use random generators, not phrases
+- Maximum entropy - use random generators, not phrases
 - Different PSK for each tunnel
 - Store securely (password manager, secrets vault)
 
@@ -32,7 +33,7 @@ PSK requirements:
 
 ### Method 1: Inline PSK in swanctl.conf
 
-```
+```text
 # /etc/swanctl/conf.d/vpn-psk.conf
 connections {
     gw1-to-gw2 {
@@ -95,7 +96,7 @@ secrets {
 
 ## Libreswan PSK Configuration
 
-```
+```text
 # /etc/ipsec.secrets
 @gw1.example.com @gw2.example.com : PSK "K7mX3pQnY9vL2wR8sT4uJ6hB1cE0fI5dGNopA=="
 
@@ -107,7 +108,7 @@ secrets {
 
 The PSK secret is selected by matching `id` values:
 
-```
+```text
 Scenario: GW1 connects to GW2
 
 GW1 sends:  IDi = gw1.example.com

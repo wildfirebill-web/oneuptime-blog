@@ -26,6 +26,7 @@ Make sure you have the following set up:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable cloudbuild.googleapis.com
 gcloud services enable cloudfunctions.googleapis.com
 gcloud services enable cloudfunctions.googleapis.com

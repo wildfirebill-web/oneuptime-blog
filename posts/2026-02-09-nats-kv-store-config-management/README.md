@@ -38,6 +38,7 @@ Create a KV bucket using NATS CLI:
 kubectl run nats-box --image=natsio/nats-box:latest --rm -it -- sh
 
 # Inside the container
+
 nats kv add CONFIG \
   --replicas 3 \
   --history 10 \

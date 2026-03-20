@@ -58,6 +58,7 @@ First, ensure you have Deno installed. You can install it using the following co
 
 ```bash
 # macOS/Linux
+
 curl -fsSL https://deno.land/install.sh | sh
 
 # Windows (PowerShell)

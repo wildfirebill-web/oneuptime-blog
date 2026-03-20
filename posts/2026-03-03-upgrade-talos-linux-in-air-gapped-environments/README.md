@@ -28,6 +28,7 @@ Start by figuring out exactly which images the new Talos version needs. The Talo
 
 ```bash
 # On a machine with internet access, pull the image list
+
 # for the target Talos version
 crane export ghcr.io/siderolabs/installer:v1.7.0 - | \
   tar -xf - images.txt

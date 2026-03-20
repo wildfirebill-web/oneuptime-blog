@@ -182,6 +182,7 @@ The proof is in the testing. Run a sustained load test through an entire deploym
 
 ```bash
 # Start the load test (10 concurrent connections, 100 QPS, 5 minutes)
+
 kubectl run loadtest --image=fortio/fortio --rm -it -- \
   load -c 10 -qps 100 -t 300s \
   http://payment-api.production.svc.cluster.local:8080/health

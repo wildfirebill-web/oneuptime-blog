@@ -92,6 +92,7 @@ Now send concurrent requests:
 
 ```bash
 # Send 10 concurrent requests
+
 for i in $(seq 1 10); do
   kubectl exec deploy/test-client -n production -- curl -s -o /dev/null -w "Request $i: %{http_code}\n" http://payment-service:8080/charge &
 done

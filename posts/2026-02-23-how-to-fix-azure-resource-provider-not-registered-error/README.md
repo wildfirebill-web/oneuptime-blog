@@ -48,6 +48,7 @@ The fastest fix is to register the provider using the Azure CLI:
 
 ```bash
 # Register a specific provider
+
 az provider register --namespace Microsoft.Network
 
 # Check registration status

@@ -31,6 +31,7 @@ Start by getting the detailed status of your transfer configuration and its rece
 
 ```bash
 # List recent runs for a specific transfer config
+
 bq ls --transfer_run \
     --run_attempt=LATEST \
     --max_results=10 \

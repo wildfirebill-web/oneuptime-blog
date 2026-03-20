@@ -10,7 +10,7 @@ End-to-end IPv6 content delivery means every hop in the request chain supports I
 
 ## Architecture Overview
 
-```
+```text
 Client (IPv6)
     ↓ DNS AAAA query
 Recursive Resolver (IPv6 capable)
@@ -24,6 +24,7 @@ Origin Server (IPv6 enabled)
 
 ```bash
 # Ensure origin has an IPv6 address
+
 ip -6 addr show eth0
 # Must show a global unicast address (2001: or similar)
 
@@ -80,7 +81,7 @@ resource "aws_cloudfront_distribution" "ipv6_e2e" {
   is_ipv6_enabled = true    # Accept IPv6 from clients
 
   origin {
-    # Hostname with AAAA record — CloudFront connects via IPv6
+    # Hostname with AAAA record - CloudFront connects via IPv6
     domain_name = "origin.example.com"
     origin_id   = "IPv6Origin"
 
@@ -103,7 +104,7 @@ resource "fastly_service_vcl" "ipv6_e2e" {
   domain { name = "cdn.example.com" }
 
   backend {
-    # Origin with IPv6 — Fastly connects via IPv6 automatically
+    # Origin with IPv6 - Fastly connects via IPv6 automatically
     address = "origin.example.com"
     name    = "ipv6_origin"
     port    = 443
@@ -175,7 +176,7 @@ curl -6 https://example.com/ -D -
 # Fastly: X-Served-By header
 
 # 4. Verify CDN connects to origin via IPv6
-# Check origin access logs — CDN should connect from IPv6 address
+# Check origin access logs - CDN should connect from IPv6 address
 tail -f /var/log/nginx/access.log | grep "::"
 
 # 5. Performance: measure IPv6 connection latency
@@ -194,4 +195,4 @@ curl -6 -w "DNS: %{time_namelookup}s, Connect: %{time_connect}s, TTFB: %{time_st
 | Client | Gets AAAA? | `dig AAAA example.com` |
 | E2E | Connection via IPv6? | `curl -6 -v https://example.com` |
 
-End-to-end IPv6 content delivery requires IPv6 at every layer — origin server, CDN edge, and DNS — but once properly configured, provides optimal latency for IPv6 clients by leveraging native IPv6 routing across the entire path.
+End-to-end IPv6 content delivery requires IPv6 at every layer - origin server, CDN edge, and DNS - but once properly configured, provides optimal latency for IPv6 clients by leveraging native IPv6 routing across the entire path.

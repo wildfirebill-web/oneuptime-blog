@@ -14,6 +14,7 @@ Flatpak is a cross-distribution application packaging format that bundles applic
 
 ```bash
 # Install Flatpak from Ubuntu's repositories
+
 sudo apt install flatpak
 
 # Verify the installation

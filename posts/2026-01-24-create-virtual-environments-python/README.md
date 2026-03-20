@@ -37,6 +37,7 @@ Python 3.3+ includes the `venv` module in the standard library. This is the reco
 
 ```bash
 # Navigate to your project directory
+
 cd my_project
 
 # Create a virtual environment named 'venv'

@@ -14,6 +14,7 @@ By default, Rust on RHEL links against glibc dynamically. Using the musl target 
 
 ```bash
 # Install musl tools
+
 sudo dnf install -y musl-gcc musl-libc-static musl-devel
 
 # If musl is not in the default repos, install from EPEL

@@ -43,6 +43,7 @@ The error budget is simply 100% minus the SLO target. For example:
 
 ```python
 # error_budget.py
+
 # Calculate error budget consumption for a service
 # based on its SLO and observed performance.
 

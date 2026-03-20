@@ -37,12 +37,13 @@ The router performs a longest-prefix-match lookup on the destination IP and forw
 
 ## TCP: Unicast by Definition
 
-All TCP connections are unicast — every segment goes from one IP:port to one IP:port:
+All TCP connections are unicast - every segment goes from one IP:port to one IP:port:
 
 ```python
 import socket
 
-# TCP client — sends to exactly one server (unicast)
+# TCP client - sends to exactly one server (unicast)
+
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(("93.184.216.34", 80))   # example.com
 client.sendall(b"GET / HTTP/1.0\r\nHost: example.com\r\n\r\n")

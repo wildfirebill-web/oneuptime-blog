@@ -40,6 +40,7 @@ Here is a complete routing configuration that demonstrates the essential compone
 
 ```yaml
 # alertmanager.yml
+
 # This configuration routes alerts based on severity and team ownership
 
 global:

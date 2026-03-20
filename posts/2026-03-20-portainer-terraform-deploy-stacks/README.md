@@ -1,4 +1,4 @@
-# How to Deploy Stacks with Terraform and Portainer
+# How to Deploy Stacks with Terraform and Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,7 +19,7 @@ Using Terraform to manage Portainer stacks enables declarative stack deployments
 ## Step 1: Deploy a Stack from Inline Content
 
 ```hcl
-# stacks.tf — Inline stack content
+# stacks.tf - Inline stack content
 
 resource "portainer_stack" "nginx" {
   name        = "nginx-proxy"
@@ -47,7 +47,7 @@ resource "portainer_stack" "nginx" {
 ## Step 2: Deploy a Stack from a File
 
 ```hcl
-# stacks.tf — Stack content from file
+# stacks.tf - Stack content from file
 
 resource "portainer_stack" "wordpress" {
   name        = "wordpress"
@@ -86,7 +86,7 @@ variable "mysql_root_password" {
 Use Terraform's `templatefile` function for dynamic Compose content:
 
 ```hcl
-# stacks.tf — Templated stack
+# stacks.tf - Templated stack
 
 locals {
   app_config = {
@@ -119,6 +119,7 @@ resource "portainer_stack" "application" {
 }
 
 # stacks/app/docker-compose.tftpl
+
 # version: "3.8"
 # services:
 #   app:
@@ -132,7 +133,7 @@ resource "portainer_stack" "application" {
 ## Step 4: Deploy a Git-Connected Stack
 
 ```hcl
-# git_stacks.tf — Stack from Git repository
+# git_stacks.tf - Stack from Git repository
 
 resource "portainer_stack_git" "infrastructure" {
   name        = "infra-stack"

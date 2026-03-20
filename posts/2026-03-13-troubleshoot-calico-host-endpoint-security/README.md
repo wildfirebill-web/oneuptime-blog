@@ -29,6 +29,7 @@ This is the most dangerous scenario. When a HostEndpoint is created without suff
 
 ```bash
 # Check if HostEndpoint was recently created
+
 calicoctl get hostendpoints -o wide
 
 # Review Felix logs for deny actions

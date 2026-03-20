@@ -14,6 +14,7 @@ SELinux AVC denials occur when a process tries to perform an action that its sec
 
 ```bash
 # Search the audit log for recent AVC denials
+
 sudo ausearch -m avc --start recent
 
 # Or use the audit log directly

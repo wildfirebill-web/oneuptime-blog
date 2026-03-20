@@ -22,6 +22,7 @@ Create a simple component for monitoring integration:
 
 ```yaml
 # components/monitoring/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1alpha1
 kind: Component
 

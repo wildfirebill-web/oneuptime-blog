@@ -18,6 +18,7 @@ First, set up the prerequisites: a Cloud Storage bucket for backups and a servic
 
 ```bash
 # Create a multi-region bucket for backup storage
+
 gcloud storage buckets create gs://my-project-velero-backups \
   --location=us \
   --uniform-bucket-level-access

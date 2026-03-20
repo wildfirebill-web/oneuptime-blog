@@ -42,6 +42,7 @@ roles/node_exporter/
 
 ```yaml
 # roles/node_exporter/defaults/main.yml
+
 # Node Exporter version and download settings
 node_exporter_version: "1.7.0"
 node_exporter_arch: "amd64"

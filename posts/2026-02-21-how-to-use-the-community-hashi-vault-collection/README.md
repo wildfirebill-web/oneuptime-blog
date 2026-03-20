@@ -25,6 +25,7 @@ First, install the collection and its Python dependency.
 
 ```bash
 # Install the Ansible collection
+
 ansible-galaxy collection install community.hashi_vault
 
 # Install the hvac Python library (required by the collection)

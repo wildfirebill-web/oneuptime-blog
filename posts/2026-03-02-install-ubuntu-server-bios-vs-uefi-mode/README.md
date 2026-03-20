@@ -43,6 +43,7 @@ Check your UEFI firmware settings. If you see options for "Secure Boot", "UEFI/L
 
 ```bash
 # Check for EFI directory - exists only in UEFI mode
+
 [ -d /sys/firmware/efi ] && echo "UEFI mode" || echo "BIOS/Legacy mode"
 
 # Check GRUB version and target

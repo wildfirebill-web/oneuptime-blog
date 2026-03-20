@@ -24,6 +24,7 @@ Just like other built-in Terraform provider functions, you need to declare the `
 
 ```hcl
 # main.tf - Required provider declaration
+
 terraform {
   required_version = ">= 1.8.0"
 

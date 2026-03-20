@@ -20,6 +20,7 @@ The namespace transformer changes the namespace field on all resources that supp
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

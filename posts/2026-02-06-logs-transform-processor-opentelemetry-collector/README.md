@@ -42,6 +42,7 @@ Here is a basic configuration that adds a constant attribute to all logs:
 
 ```yaml
 # RECEIVERS: Accept logs via OTLP
+
 receivers:
   otlp:
     protocols:

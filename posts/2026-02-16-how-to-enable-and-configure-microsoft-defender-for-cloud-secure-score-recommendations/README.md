@@ -54,6 +54,7 @@ To enable enhanced CSPM using Azure CLI:
 
 ```bash
 # Enable the Defender for Cloud free tier on a subscription
+
 # This provides basic Secure Score recommendations
 az security pricing create \
     --name CloudPosture \

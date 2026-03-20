@@ -91,6 +91,7 @@ If there is no output, the SDS (Secret Discovery Service) connection to the loca
 
 ```bash
 # Check pilot-agent health
+
 kubectl exec productpage-v1-6b746f74dc-9rlmh -c istio-proxy -n bookinfo -- \
   pilot-agent request GET /healthz/ready
 

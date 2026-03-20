@@ -327,6 +327,7 @@ Use Krew, the kubectl plugin manager, to distribute your plugin to the wider com
 
 ```yaml
 # deploy-stack.yaml
+
 apiVersion: krew.googlecontainertools.github.com/v1alpha2
 kind: Plugin
 metadata:

@@ -78,6 +78,7 @@ For file-based pipelines, write output to a deterministic path based on the part
 
 ```python
 # Idempotent file output: overwrite the partition path
+
 output_path = f"s3://data-lake/daily_revenue/date={execution_date}/"
 
 # Write mode "overwrite" replaces existing files at this path

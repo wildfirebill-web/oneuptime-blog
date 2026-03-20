@@ -164,6 +164,7 @@ ClusterIP services with Istio automatically get detailed metrics:
 
 ```promql
 # Request rate
+
 sum(rate(istio_requests_total{destination_service="my-service.my-namespace.svc.cluster.local"}[5m]))
 
 # Error rate

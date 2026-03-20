@@ -18,6 +18,7 @@ Start with a Flexible Server instance that will serve as your primary (write) se
 
 ```bash
 # Create the primary MySQL Flexible Server
+
 az mysql flexible-server create \
   --name wp-primary-mysql \
   --resource-group rg-wordpress \

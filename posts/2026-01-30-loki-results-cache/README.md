@@ -62,6 +62,7 @@ Loki supports multiple cache backends for results caching. Here is a complete co
 # loki-config.yaml
 
 # Query frontend configuration controls result caching
+
 query_range:
   # Enable result caching
   cache_results: true

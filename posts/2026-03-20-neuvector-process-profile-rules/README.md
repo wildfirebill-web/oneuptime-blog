@@ -32,6 +32,7 @@ After the learning period, NeuVector builds a process whitelist automatically:
 
 ```bash
 # Get the process profile for a group
+
 curl -sk \
   "https://neuvector-manager:8443/v1/process/profile/group/nv.nginx.default" \
   -H "X-Auth-Token: ${TOKEN}" | jq '.process_profile.process_list[] | {

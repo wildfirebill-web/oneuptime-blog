@@ -14,6 +14,7 @@ env0 Custom Flows let you extend the standard OpenTofu plan/apply workflow with 
 
 ```yaml
 # .env0/custom-flow.yml
+
 version: 2
 
 # Custom flow for production deployments

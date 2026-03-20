@@ -202,6 +202,7 @@ resource "aws_lb_target_group" "this" {
 # modules/alb/listeners.tf
 
 # HTTP listener - redirects everything to HTTPS
+
 resource "aws_lb_listener" "http" {
   load_balancer_arn = aws_lb.this.arn
   port              = 80

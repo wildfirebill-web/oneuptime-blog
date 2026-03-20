@@ -29,6 +29,7 @@ sudo apt update
 sudo apt install -y fail2ban
 
 # Check the service status
+
 sudo systemctl status fail2ban
 
 # It should start automatically

@@ -50,6 +50,7 @@ The simplest option is to run a collector with a file exporter that writes spans
 
 ```yaml
 # collector-test-config.yaml
+
 receivers:
   otlp:
     protocols:

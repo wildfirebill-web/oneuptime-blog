@@ -23,6 +23,7 @@ Attach the ISO to the server and boot from it:
 
 ```bash
 # For virtual machines, mount the ISO in the hypervisor
+
 # For physical servers, write the ISO to a USB drive
 sudo dd if=/var/lib/rear/output/rear-$(hostname).iso of=/dev/sdc bs=4M status=progress
 ```

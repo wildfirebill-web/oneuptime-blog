@@ -30,6 +30,7 @@ Kubewarden policies are stored in OCI registries as OCI artifacts (not container
 
 ```bash
 # Rust policy
+
 cargo build --target wasm32-wasi --release
 WASM_FILE="target/wasm32-wasi/release/my_policy.wasm"
 
@@ -99,7 +100,7 @@ annotations:
 
   # Minimum Kubewarden version required
   io.kubewarden.policy.rangeStart: "1.0.0"
-```
+```text
 
 ## Step 3: Annotate the Wasm Module
 

@@ -557,6 +557,7 @@ Track scaling behavior with these Prometheus queries:
 
 ```promql
 # Current vs desired replicas
+
 kube_horizontalpodautoscaler_status_current_replicas{hpa="production-api"}
 kube_horizontalpodautoscaler_status_desired_replicas{hpa="production-api"}
 

@@ -30,6 +30,7 @@ graph LR
 
 ```yaml
 # Traditional CI/CD: Jenkins pipeline example
+
 pipeline {
     agent any
     stages {

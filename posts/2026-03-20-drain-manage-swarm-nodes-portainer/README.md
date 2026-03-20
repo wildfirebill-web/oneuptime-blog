@@ -26,6 +26,7 @@ Via terminal equivalent:
 
 ```bash
 # Drain a specific node
+
 docker node update --availability drain node-worker-2
 
 # Verify tasks have migrated
@@ -57,10 +58,10 @@ In Portainer, change Availability back to **Active**. The scheduler will start p
 To permanently remove a worker node:
 
 ```bash
-# On the node being removed — leave the swarm
+# On the node being removed - leave the swarm
 docker swarm leave
 
-# On a manager — remove the departed node
+# On a manager - remove the departed node
 docker node rm node-worker-2
 ```
 

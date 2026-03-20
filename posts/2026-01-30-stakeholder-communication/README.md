@@ -56,6 +56,7 @@ Create a stakeholder matrix that maps each group to their information needs:
 
 ```yaml
 # stakeholder-matrix.yaml
+
 stakeholders:
   executive_leadership:
     priority: high

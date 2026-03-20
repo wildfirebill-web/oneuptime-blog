@@ -24,6 +24,7 @@ This guide provides a structured validation suite for service networking with Ca
 
 ```bash
 # Deploy a backend with multiple replicas for load balancing tests
+
 kubectl apply -f - <<EOF
 apiVersion: apps/v1
 kind: Deployment

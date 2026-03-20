@@ -72,6 +72,7 @@ calicoctl get felixconfiguration default -o yaml
 ```bash
 kubectl describe $NODE_POD -n kube-system | grep -A 10 "Readiness:"
 # Look for the probe path - typically /readiness
+
 kubectl exec $NODE_POD -n kube-system -- wget -qO- http://localhost:9099/readiness 2>/dev/null
 ```
 

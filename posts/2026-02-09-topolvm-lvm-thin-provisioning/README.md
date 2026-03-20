@@ -26,6 +26,7 @@ Before deploying TopoLVM, configure LVM on each worker node. This example assume
 
 ```bash
 # On each worker node, install LVM tools
+
 sudo apt-get update
 sudo apt-get install -y lvm2 thin-provisioning-tools
 

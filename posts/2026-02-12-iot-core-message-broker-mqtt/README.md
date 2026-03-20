@@ -32,6 +32,7 @@ Every device connects to the broker using its IoT Core endpoint with TLS mutual 
 
 ```bash
 # Get your account's IoT endpoint
+
 ENDPOINT=$(aws iot describe-endpoint \
   --endpoint-type iot:Data-ATS \
   --query 'endpointAddress' --output text)

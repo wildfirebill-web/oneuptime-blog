@@ -36,6 +36,7 @@ When SCA is enabled, the `subscription-manager` client receives a content access
 
 ```bash
 # View the content access certificate
+
 ls -la /etc/pki/entitlement/
 
 # With SCA, you will see a single certificate rather than multiple per-subscription certs

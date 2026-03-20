@@ -32,6 +32,7 @@ Start by determining whether the issue is inside or outside the mesh:
 
 ```bash
 # Test from inside the sidecar (through the mesh)
+
 kubectl exec <pod> -c <app-container> -- \
   curl -s -o /dev/null -w "HTTP Status: %{http_code}\nTime: %{time_total}s\n" \
   http://<service>:<port>/health

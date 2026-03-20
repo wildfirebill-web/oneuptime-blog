@@ -24,6 +24,7 @@ Sidero Labs maintains a collection of official extensions that cover common use 
 
 ```bash
 # List official extensions using crane
+
 crane ls ghcr.io/siderolabs
 
 # Some commonly used extensions:

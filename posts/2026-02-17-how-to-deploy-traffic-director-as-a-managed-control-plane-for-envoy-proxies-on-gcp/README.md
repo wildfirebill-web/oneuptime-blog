@@ -35,6 +35,7 @@ Before you start, enable the necessary APIs.
 
 ```bash
 # Enable Traffic Director and related APIs
+
 gcloud services enable trafficdirector.googleapis.com
 gcloud services enable compute.googleapis.com
 gcloud services enable networkservices.googleapis.com

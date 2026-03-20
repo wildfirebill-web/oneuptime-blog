@@ -44,6 +44,7 @@ Using the AWS CLI:
 
 ```bash
 # Create a private DNS namespace tied to your VPC
+
 aws servicediscovery create-private-dns-namespace \
   --name production.local \
   --vpc vpc-0abc123def456789 \

@@ -35,6 +35,7 @@ Start by installing the necessary packages:
 
 ```bash
 # Install OpenTelemetry core and the Pika instrumentation
+
 pip install opentelemetry-api \
     opentelemetry-sdk \
     opentelemetry-exporter-otlp \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: neuvector, prisma-cloud, container-security, kubernetes, comparison
+Tags: NeuVector, Prisma-cloud, Container-security, Kubernetes, Comparison
 
 Description: A comprehensive comparison of NeuVector and Palo Alto Prisma Cloud for container and cloud security, covering runtime protection, compliance, and total cost of ownership.
 
@@ -16,7 +16,7 @@ NeuVector is a full-lifecycle container security platform from SUSE Rancher, don
 
 ## What Is Prisma Cloud?
 
-Prisma Cloud is Palo Alto Networks' cloud-native application protection platform. It covers cloud security posture management (CSPM), cloud workload protection (CWPP), cloud network security, and application security — making it one of the most comprehensive commercial cloud security platforms available.
+Prisma Cloud is Palo Alto Networks' cloud-native application protection platform. It covers cloud security posture management (CSPM), cloud workload protection (CWPP), cloud network security, and application security - making it one of the most comprehensive commercial cloud security platforms available.
 
 ## Feature Comparison
 
@@ -45,6 +45,7 @@ NeuVector uses a unique Deep Packet Inspection (DPI) engine that analyzes actual
 
 ```yaml
 # NeuVector Group definition for automatic policy generation
+
 apiVersion: neuvector.com/v1
 kind: NvClusterSecurityRule
 metadata:

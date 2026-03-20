@@ -90,6 +90,7 @@ Define the namespace for the External Secrets Operator.
 
 ```yaml
 # clusters/my-cluster/external-secrets/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

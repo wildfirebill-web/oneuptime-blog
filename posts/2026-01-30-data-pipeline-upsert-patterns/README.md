@@ -130,6 +130,7 @@ Delta Lake provides powerful MERGE capabilities for data lakes:
 
 ```python
 # Delta Lake upsert implementation in PySpark
+
 # This pattern is commonly used in Databricks and Apache Spark environments
 
 from delta.tables import DeltaTable

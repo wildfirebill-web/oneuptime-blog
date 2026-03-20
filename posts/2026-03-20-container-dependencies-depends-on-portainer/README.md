@@ -130,7 +130,8 @@ volumes:
 `depends_on` helps but isn't sufficient for all cases. Add retry logic in your application:
 
 ```python
-# db_connect.py — retry logic in the application
+# db_connect.py - retry logic in the application
+
 import psycopg2
 import time
 import os

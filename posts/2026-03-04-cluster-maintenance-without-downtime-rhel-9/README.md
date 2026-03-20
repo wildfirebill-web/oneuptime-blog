@@ -110,6 +110,7 @@ For upgrading all nodes without downtime:
 
 ```bash
 # Move resources away
+
 sudo pcs node standby node1
 
 # Verify resources are running on other nodes

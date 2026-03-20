@@ -39,6 +39,7 @@ For clusters that only need basic GitOps with Kustomize, install the minimum set
 
 ```yaml
 # flux-instance-minimal.yaml
+
 # FluxInstance with minimal components for Kustomize-only GitOps
 apiVersion: fluxcd.controlplane.io/v1
 kind: FluxInstance

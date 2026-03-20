@@ -26,6 +26,7 @@ The default trusted origin is derived from the URL Portainer is accessed on dire
 
 ```bash
 # Single origin
+
 docker run -d portainer/portainer-ce:latest \
   --trusted-origins=https://portainer.example.com
 
@@ -139,7 +140,7 @@ docker logs portainer -f 2>&1 | grep -i "origin\|access denied\|trusted"
 
 ## Security Considerations
 
-- Never use `--trusted-origins='*'` in production — it disables CSRF protection
+- Never use `--trusted-origins='*'` in production - it disables CSRF protection
 - List only origins your users actually access Portainer from
 - Review and update the trusted origins list when changing DNS or proxy configurations
 - Treat this list as part of your security configuration

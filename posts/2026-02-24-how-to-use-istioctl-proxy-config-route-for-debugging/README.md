@@ -111,6 +111,7 @@ If your VirtualService does not appear in the route configuration, check these t
 
 ```bash
 # Is the VirtualService applied?
+
 kubectl get virtualservice -n bookinfo
 
 # Does the host match a service the proxy knows about?

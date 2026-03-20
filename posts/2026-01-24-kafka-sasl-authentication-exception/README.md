@@ -88,6 +88,7 @@ sequenceDiagram
 # server.properties
 
 # Listeners with SASL_SSL (recommended) or SASL_PLAINTEXT
+
 listeners=SASL_SSL://0.0.0.0:9093
 advertised.listeners=SASL_SSL://kafka-1.example.com:9093
 

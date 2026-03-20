@@ -24,6 +24,7 @@ For GKE:
 
 ```bash
 # Create hot node pool with SSD
+
 gcloud container node-pools create es-hot \
   --cluster=logging-cluster \
   --machine-type=n2-standard-8 \

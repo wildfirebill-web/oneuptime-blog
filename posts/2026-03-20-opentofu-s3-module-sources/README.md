@@ -1,4 +1,4 @@
-# How to Use S3 Bucket Module Sources in OpenTofu
+# How to Use S3 Bucket Module Sources in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -41,6 +41,7 @@ module "vpc" {
 
 ```hcl
 # Use a versioned path structure for module management
+
 module "security_groups" {
   source = "s3::https://s3.amazonaws.com/mycompany-modules/v1.5.0/security-groups.zip"
 

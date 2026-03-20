@@ -18,6 +18,7 @@ The `distinct` function takes a list and returns a new list with all duplicate e
 
 ```hcl
 # Returns a list with duplicates removed
+
 distinct(list)
 ```
 

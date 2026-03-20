@@ -32,6 +32,7 @@ Here is the complete, production-optimized Dockerfile:
 
 ```dockerfile
 # Stage 1: Install dependencies
+
 FROM node:20-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app

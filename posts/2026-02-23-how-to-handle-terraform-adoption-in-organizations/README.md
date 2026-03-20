@@ -164,6 +164,7 @@ Before scaling to multiple teams, build the foundation:
 # Platform foundation for organization-wide adoption
 
 # Central state management
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "company-terraform-state"
 

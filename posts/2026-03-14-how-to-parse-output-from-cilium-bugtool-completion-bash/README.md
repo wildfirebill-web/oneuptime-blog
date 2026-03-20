@@ -31,37 +31,37 @@ This guide covers parsing techniques for extracting structured data from bash co
 
 
 
-\`\`\`bash
+```bash
 ## Generate and save the completion script
 cilium-bugtool completion bash > /tmp/bugtool-bash-completion.sh
 
 ## Check file size
 wc -l /tmp/bugtool-bash-completion.sh
-\`\`\`
+```
 
 ### Extracting Commands
 
-\`\`\`bash
+```bash
 ## Extract registered command names
 grep -oP 'commands=\(\s*"\K[^"]+' /tmp/bugtool-bash-completion.sh | sort -u
 
 ## Extract from case statements
 grep -oP "^\s+'[a-z][-a-z]*'\)" /tmp/bugtool-bash-completion.sh |   tr -d " ')" | sort -u
-\`\`\`
+```
 
 ### Extracting Flags
 
-\`\`\`bash
+```bash
 ## Extract all long flags
 grep -oP '\-\-[a-z][-a-z0-9]*' /tmp/bugtool-bash-completion.sh | sort -u
 
 ## Extract flags with their associated commands
 awk '/^__.*_flag_/ {cmd=$0} /--[a-z]/ {print cmd, $0}'   /tmp/bugtool-bash-completion.sh | head -20
-\`\`\`
+```
 
 ### Python-Based Parser
 
-\`\`\`python
+```python
 #!/usr/bin/env python3
 """Parse cilium-bugtool bash completion for command and flag extraction."""
 
@@ -94,23 +94,24 @@ if __name__ == '__main__':
     path = sys.argv[1] if len(sys.argv) > 1 else '/tmp/bugtool-bash-completion.sh'
     result = parse_bash_completion(path)
     print(json.dumps(result, indent=2))
-\`\`\`
+```
 
 ### Generating Documentation
 
-\`\`\`bash
+```bash
 ## Convert parsed output to markdown
 python3 parse_bash_completion.py /tmp/bugtool-bash-completion.sh |   jq -r '.flags[]' | while read -r flag; do
     echo "- \\\`\$flag\\\`"
   done > /tmp/bugtool-flags.md
 
 echo "Generated flag documentation at /tmp/bugtool-flags.md"
-\`\`\`
+```
 
 ## Verification
 
 ```bash
 # Verify parsing output
+
 python3 parse_bash_completion.py /tmp/bugtool-bash-completion.sh | jq '.flags | length'
 python3 parse_bash_completion.py /tmp/bugtool-bash-completion.sh | jq '.commands | length'
 ```

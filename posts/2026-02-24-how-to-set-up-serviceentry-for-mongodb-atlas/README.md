@@ -83,6 +83,7 @@ To find your shard hostnames, use the `dig` or `nslookup` command:
 
 ```bash
 # Find SRV records
+
 dig SRV _mongodb._tcp.cluster0.abc123.mongodb.net
 
 # Or use nslookup

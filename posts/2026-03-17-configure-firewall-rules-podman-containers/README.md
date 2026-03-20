@@ -20,6 +20,7 @@ On systems using `firewalld`, Podman container traffic passes through firewall z
 
 ```bash
 # Check if firewalld is running
+
 sudo systemctl status firewalld
 
 # List active zones

@@ -14,6 +14,7 @@ Netplan defines static routes under the `routes` key for each interface. Routes 
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   ethernets:

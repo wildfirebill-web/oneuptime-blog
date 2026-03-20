@@ -1,8 +1,8 @@
-# How to Set Up Cloudflare Tunnel for Portainer Edge Agents
+# How to Set Up Cloudflare Tunnel for Portainer Edge Agents - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Cloudflare, Edge Agents, Zero Trust, Remote Management
+Tags: Portainer, Cloudflare, Edge Agent, Zero Trust, Remote Management
 
 Description: Learn how to use Cloudflare Tunnel to connect Portainer Edge Agents running in remote or private networks to your Portainer server, enabling secure management without VPN or direct port exposure.
 
@@ -19,7 +19,7 @@ Portainer Edge Agents allow Portainer to manage Docker environments in remote ne
 
 ## Step 1: Architecture Overview
 
-```
+```text
 Remote Host (Edge)                    Your Network
 ┌──────────────┐                    ┌──────────────────┐
 │ Edge Agent   │──cloudflared──▶CF◀──cloudflared──│ Portainer Server │
@@ -38,6 +38,7 @@ On your Portainer server, set up a tunnel exposing the Edge port:
 
 ```yaml
 # /opt/cloudflared/config.yml on Portainer server
+
 tunnel: YOUR_TUNNEL_UUID
 credentials-file: /etc/cloudflared/YOUR_TUNNEL_UUID.json
 
@@ -119,7 +120,7 @@ volumes:
 
 The Edge Agent connects out to `edge.portainer.example.com` (your Portainer server via Cloudflare Tunnel).
 
-## Step 6: Optional — Cloudflare Tunnel on Remote Host
+## Step 6: Optional - Cloudflare Tunnel on Remote Host
 
 If the remote host also needs to be reached for other purposes (or for a more complex setup):
 

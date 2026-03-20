@@ -39,6 +39,7 @@ Install ora2pg (on Linux):
 
 ```bash
 # Install ora2pg from source
+
 sudo apt-get install libdbi-perl libdbd-pg-perl
 # Also need Oracle Instant Client and DBD::Oracle Perl module
 

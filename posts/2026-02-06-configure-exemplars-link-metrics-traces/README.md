@@ -35,6 +35,7 @@ By default, exemplar collection is disabled or uses a minimal configuration. You
 
 ```python
 # Enabling exemplar collection in the Python SDK
+
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import (
     PeriodicExportingMetricReader,

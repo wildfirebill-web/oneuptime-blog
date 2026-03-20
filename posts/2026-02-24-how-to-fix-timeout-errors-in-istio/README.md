@@ -31,6 +31,7 @@ Check what timeout the proxy is actually using:
 
 ```bash
 # Check route-level timeout
+
 istioctl proxy-config routes <pod-name> -n production -o json | \
   jq '.[].virtualHosts[].routes[] | {name: .name, timeout: .route.timeout}'
 ```

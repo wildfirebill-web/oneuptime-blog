@@ -39,6 +39,7 @@ You need a "transfer workstation" - a machine with internet access that you use 
 # On the internet-connected workstation:
 
 # Log in to the HashiCorp registry
+
 echo "${HASHICORP_TOKEN}" | docker login images.releases.hashicorp.com -u terraform --password-stdin
 
 # Pull the TFE image

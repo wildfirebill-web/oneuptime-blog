@@ -197,6 +197,7 @@ Track readiness probe status through Kubernetes events:
 
 ```bash
 # Check current readiness conditions
+
 kubectl get pod <pod-name> -o jsonpath='{.status.conditions}' | python3 -m json.tool
 
 # Watch for readiness changes

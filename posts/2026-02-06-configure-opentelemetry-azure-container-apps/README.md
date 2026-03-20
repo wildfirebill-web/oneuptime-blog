@@ -55,6 +55,7 @@ Configure the Container Apps environment with OpenTelemetry settings. This enabl
 
 ```bash
 # Create a Container Apps environment with OpenTelemetry enabled
+
 # The managed OTLP agent will be automatically provisioned
 az containerapp env create \
   --name my-container-env \

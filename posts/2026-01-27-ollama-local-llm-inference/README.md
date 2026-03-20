@@ -27,6 +27,7 @@ Ollama is an open-source tool that lets you run large language models locally on
 
 ```bash
 # Download and install via the official installer
+
 curl -fsSL https://ollama.com/install.sh | sh
 
 # Or use Homebrew

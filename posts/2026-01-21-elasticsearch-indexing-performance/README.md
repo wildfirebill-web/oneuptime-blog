@@ -30,6 +30,7 @@ Never index documents one at a time:
 
 ```bash
 # Bad: Single document requests
+
 curl -X POST "https://localhost:9200/products/_doc" \
   -H "Content-Type: application/json" \
   -u elastic:password \

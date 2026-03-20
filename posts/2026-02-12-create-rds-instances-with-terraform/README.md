@@ -20,6 +20,7 @@ This creates a subnet group spanning multiple availability zones for high availa
 
 ```hcl
 # DB subnet group - defines which subnets RDS can use
+
 resource "aws_db_subnet_group" "main" {
   name       = "main-db-subnet-group"
   subnet_ids = var.private_subnet_ids

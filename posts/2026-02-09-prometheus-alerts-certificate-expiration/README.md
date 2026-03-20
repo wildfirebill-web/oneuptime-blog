@@ -177,6 +177,7 @@ For production environments, implement more sophisticated monitoring:
 
 ```yaml
 # Alert on certificates that expire within different timeframes by type
+
 - alert: APIServerCertificateExpiringSoon
   expr: |
     (x509_cert_not_after{filename=~".*apiserver.*"} - time()) / 86400 < 60

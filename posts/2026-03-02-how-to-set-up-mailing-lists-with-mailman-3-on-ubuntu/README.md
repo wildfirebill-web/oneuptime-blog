@@ -24,6 +24,7 @@ All three are typically served through a Django project called `mailman-bundler`
 
 ```bash
 # Update the system
+
 sudo apt update && sudo apt upgrade -y
 
 # Install Mailman 3 with web interface

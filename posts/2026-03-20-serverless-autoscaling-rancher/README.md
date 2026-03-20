@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, serverless, autoscaling, kubernetes, keda, knative
+Tags: Rancher, Serverless, Autoscaling, Kubernetes, KEDA, Knative
 
 Description: Guide to configuring autoscaling for serverless workloads in Rancher using KEDA, Knative, and HPA for demand-driven scaling.
 
@@ -21,6 +21,7 @@ Serverless autoscaling automatically adjusts the number of running function inst
 
 ```yaml
 # knative-autoscaling.yaml
+
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:

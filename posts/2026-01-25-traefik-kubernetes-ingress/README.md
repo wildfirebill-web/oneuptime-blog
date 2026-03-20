@@ -32,6 +32,7 @@ Keeping Traefik in its own namespace helps with organization and RBAC policies.
 
 ```yaml
 # traefik-namespace.yaml
+
 # Create a dedicated namespace for Traefik components
 apiVersion: v1
 kind: Namespace

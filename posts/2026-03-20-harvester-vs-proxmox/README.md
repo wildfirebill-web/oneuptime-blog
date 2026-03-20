@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: harvester, proxmox, hci, hyperconverged, comparison, virtualization
+Tags: Harvester, Proxmox, HCI, Hyperconverged, Comparison, Virtualization
 
 Description: A comprehensive comparison of SUSE Harvester and Proxmox VE for hyperconverged infrastructure, covering virtualization, Kubernetes integration, and operational management.
 
@@ -44,7 +44,7 @@ Proxmox Virtual Environment (VE) is an open-source server virtualization platfor
 
 Harvester is built entirely on Kubernetes:
 
-```
+```text
 ┌─────────────────────────────────────┐
 │         Harvester Node               │
 │  ┌─────────────────────────────┐    │
@@ -63,7 +63,7 @@ All VMs are Kubernetes resources (VirtualMachine CRDs), which means they can be 
 
 Proxmox uses a traditional KVM + QEMU stack with Corosync for cluster communication:
 
-```
+```text
 Proxmox Node 1 ──── Corosync ──── Proxmox Node 2
      |                                   |
     KVM/QEMU                         KVM/QEMU
@@ -77,6 +77,7 @@ Proxmox Node 1 ──── Corosync ──── Proxmox Node 2
 
 ```yaml
 # Create a VM using Kubernetes API
+
 apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:
@@ -140,4 +141,4 @@ Proxmox does not integrate with Rancher. You can manually deploy Rancher on top 
 
 ## Conclusion
 
-Harvester and Proxmox serve different infrastructure philosophies. Harvester is the right choice for cloud-native organizations that want to unify VM and container management on a Kubernetes-native platform, especially when used with Rancher. Proxmox is the right choice for organizations that need a proven, stable VM management platform with broad storage options and a simpler operational model. For organizations migrating from VMware ESXi, both are viable alternatives — Harvester for cloud-native transformation and Proxmox for a like-for-like VM replacement.
+Harvester and Proxmox serve different infrastructure philosophies. Harvester is the right choice for cloud-native organizations that want to unify VM and container management on a Kubernetes-native platform, especially when used with Rancher. Proxmox is the right choice for organizations that need a proven, stable VM management platform with broad storage options and a simpler operational model. For organizations migrating from VMware ESXi, both are viable alternatives - Harvester for cloud-native transformation and Proxmox for a like-for-like VM replacement.

@@ -37,6 +37,7 @@ The SNS topic is the central broadcast point.
 
 ```bash
 # Create the SNS topic
+
 aws sns create-topic --name order-events
 
 # Note the TopicArn from the output

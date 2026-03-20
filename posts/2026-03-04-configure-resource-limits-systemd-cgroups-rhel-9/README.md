@@ -20,6 +20,7 @@ Verify that your system is using cgroups v2:
 
 ```bash
 # Check cgroup version - should show cgroup2fs
+
 stat -f /sys/fs/cgroup/ | grep Type
 ```
 

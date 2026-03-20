@@ -268,6 +268,7 @@ For cross-account deployments, bootstrap target accounts with trust to the pipel
 
 ```bash
 # Bootstrap the pipeline account
+
 cdk bootstrap aws://444444444444/us-east-1
 
 # Bootstrap target accounts with trust

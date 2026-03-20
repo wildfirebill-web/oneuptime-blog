@@ -26,6 +26,7 @@ If you need to install Traefik manually:
 
 ```bash
 # Install Traefik with Helm
+
 helm repo add traefik https://traefik.github.io/charts
 helm repo update
 helm install traefik traefik/traefik \

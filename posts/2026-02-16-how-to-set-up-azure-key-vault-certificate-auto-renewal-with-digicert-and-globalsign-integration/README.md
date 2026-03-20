@@ -54,6 +54,7 @@ You need your DigiCert API key and Organization ID from the CertCentral portal.
 
 ```bash
 # Register DigiCert as a certificate issuer in Key Vault
+
 az keyvault certificate issuer create \
   --vault-name myKeyVault \
   --issuer-name DigiCertIssuer \

@@ -37,6 +37,7 @@ The simplest parameter type stores a plain text string.
 
 ```hcl
 # Simple string parameter
+
 resource "aws_ssm_parameter" "app_environment" {
   name  = "/myapp/production/environment"
   type  = "String"

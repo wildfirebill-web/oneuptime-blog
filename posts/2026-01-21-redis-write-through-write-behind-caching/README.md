@@ -129,6 +129,7 @@ class WriteThrough:
         return True
 
 # Usage
+
 user_cache = WriteThrough(cache_prefix="user", ttl=3600)
 
 # Write-through: updates both cache and database

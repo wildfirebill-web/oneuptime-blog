@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # acm.tf
+
 resource "aws_acm_certificate" "main" {
   domain_name               = var.domain_name
   subject_alternative_names = [
@@ -171,8 +172,8 @@ resource "aws_cloudwatch_metric_alarm" "cert_expiry" {
 
 ## Best Practices
 
-- Always use `create_before_destroy = true` on ACM certificates so replacements are provisioned before the old one is removed — this prevents downtime during certificate rotation.
+- Always use `create_before_destroy = true` on ACM certificates so replacements are provisioned before the old one is removed - this prevents downtime during certificate rotation.
 - Use wildcard certificates (`*.example.com`) alongside the apex domain to cover all subdomains with a single certificate and avoid managing multiple certificates.
-- Use `allow_overwrite = true` on Route 53 validation records — if the record already exists from a previous deployment, Terraform won't fail.
-- CloudFront distributions require the ACM certificate to be in `us-east-1` — always deploy a separate certificate in that region for CloudFront even if your infrastructure is elsewhere.
-- Monitor certificate expiry with CloudWatch even though ACM auto-renews — DNS validation can fail if DNS records are misconfigured, preventing renewal.
+- Use `allow_overwrite = true` on Route 53 validation records - if the record already exists from a previous deployment, Terraform won't fail.
+- CloudFront distributions require the ACM certificate to be in `us-east-1` - always deploy a separate certificate in that region for CloudFront even if your infrastructure is elsewhere.
+- Monitor certificate expiry with CloudWatch even though ACM auto-renews - DNS validation can fail if DNS records are misconfigured, preventing renewal.

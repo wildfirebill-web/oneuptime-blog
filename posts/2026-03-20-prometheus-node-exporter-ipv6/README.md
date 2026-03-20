@@ -12,6 +12,7 @@ Prometheus Node Exporter collects Linux system metrics including network interfa
 
 ```bash
 # Start Node Exporter listening on IPv6
+
 node_exporter \
   --web.listen-address="[::]:9100" \
   --collector.netstat \

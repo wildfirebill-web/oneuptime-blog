@@ -20,6 +20,7 @@ How to Configure PXE Boot Server for Network Installations can be installed and 
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

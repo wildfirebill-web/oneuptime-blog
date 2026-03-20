@@ -14,6 +14,7 @@ The first step is instrumenting your alerting pipeline to emit metrics through O
 
 ```python
 # Instrument alert firing events as OTel metrics
+
 from opentelemetry import metrics
 from datetime import datetime
 

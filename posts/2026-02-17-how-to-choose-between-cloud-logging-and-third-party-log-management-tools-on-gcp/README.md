@@ -27,6 +27,7 @@ Here is an example of setting up a log sink to route specific logs to BigQuery f
 
 ```bash
 # Create a BigQuery dataset for log storage
+
 bq mk --dataset --location=US my_project:application_logs
 
 # Create a log sink that routes application error logs to BigQuery

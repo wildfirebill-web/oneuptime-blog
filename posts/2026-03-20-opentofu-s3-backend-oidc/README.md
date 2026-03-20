@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, AWS, Security
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, AWS, Security
 
 Description: Learn how to configure the OpenTofu S3 backend with OIDC (OpenID Connect) authentication for keyless CI/CD deployments using GitHub Actions or other OIDC providers.
 
@@ -12,7 +12,7 @@ OIDC authentication allows CI/CD systems like GitHub Actions to access AWS resou
 
 ## How OIDC Works
 
-```
+```text
 GitHub Actions
     → Requests OIDC token from GitHub
     → Exchanges token with AWS STS for temp credentials
@@ -23,6 +23,7 @@ GitHub Actions
 
 ```hcl
 # Create the OIDC identity provider for GitHub Actions
+
 resource "aws_iam_openid_connect_provider" "github_actions" {
   url             = "https://token.actions.githubusercontent.com"
   client_id_list  = ["sts.amazonaws.com"]
@@ -82,7 +83,7 @@ resource "aws_iam_role_policy" "state_access" {
 
 ## OpenTofu Backend Configuration
 
-The backend configuration itself does not reference OIDC — credentials are provided by the environment:
+The backend configuration itself does not reference OIDC - credentials are provided by the environment:
 
 ```hcl
 terraform {
@@ -116,7 +117,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Configure AWS credentials via OIDC — no access keys needed
+      # Configure AWS credentials via OIDC - no access keys needed
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -162,4 +163,4 @@ deploy:
 
 ## Conclusion
 
-OIDC authentication for the S3 backend eliminates long-lived AWS credentials from CI/CD pipelines. GitHub Actions and GitLab CI both support OIDC natively — configure the AWS OIDC identity provider, create a role with the appropriate conditions and permissions, and let the CI/CD platform exchange tokens for temporary credentials automatically. This is the most secure authentication pattern for CI/CD deployments.
+OIDC authentication for the S3 backend eliminates long-lived AWS credentials from CI/CD pipelines. GitHub Actions and GitLab CI both support OIDC natively - configure the AWS OIDC identity provider, create a role with the appropriate conditions and permissions, and let the CI/CD platform exchange tokens for temporary credentials automatically. This is the most secure authentication pattern for CI/CD deployments.

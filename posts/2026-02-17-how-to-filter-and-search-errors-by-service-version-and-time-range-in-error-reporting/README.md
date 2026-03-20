@@ -27,6 +27,7 @@ For custom error reports, you set these when initializing the client:
 
 ```python
 # Set the service name and version for proper filtering in Error Reporting
+
 from google.cloud import error_reporting
 
 client = error_reporting.Client(

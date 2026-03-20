@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Netbox, IPAM, Network Management, Self-Hosted
+Tags: OpenTofu, NetBox, IPAM, Network Management, Self-Hosted
 
 Description: Learn how to deploy NetBox IP Address Management on AWS using OpenTofu with RDS PostgreSQL, ElastiCache Redis, ECS Fargate, and ALB for network documentation and IPAM.
 
 ## Introduction
 
-NetBox is the source of truth for network infrastructure — it manages IP address space, racks, devices, connections, and circuits. This guide deploys NetBox on AWS ECS Fargate with RDS PostgreSQL and ElastiCache Redis for caching and task queuing.
+NetBox is the source of truth for network infrastructure - it manages IP address space, racks, devices, connections, and circuits. This guide deploys NetBox on AWS ECS Fargate with RDS PostgreSQL and ElastiCache Redis for caching and task queuing.
 
 ## RDS PostgreSQL for NetBox
 
@@ -164,4 +164,4 @@ resource "netbox_prefix" "prod_vpc" {
 
 ## Conclusion
 
-Deploying NetBox with OpenTofu provides a network documentation and IPAM platform that integrates with your infrastructure. The NetBox provider lets you register IP prefixes, devices, and racks as you create them with OpenTofu — creating infrastructure and documenting it in NetBox in the same apply. The worker container handles background tasks like webhook dispatching and scheduled jobs.
+Deploying NetBox with OpenTofu provides a network documentation and IPAM platform that integrates with your infrastructure. The NetBox provider lets you register IP prefixes, devices, and racks as you create them with OpenTofu - creating infrastructure and documenting it in NetBox in the same apply. The worker container handles background tasks like webhook dispatching and scheduled jobs.

@@ -37,6 +37,7 @@ Larger IPAM blocks mean fewer allocation operations per node. When a block is ex
 
 ```bash
 # Check current block size
+
 calicoctl get ippool default-ipv4-ippool -o yaml | grep blockSize
 
 # For high pod churn nodes, use /23 (512 IPs) to reduce block allocations

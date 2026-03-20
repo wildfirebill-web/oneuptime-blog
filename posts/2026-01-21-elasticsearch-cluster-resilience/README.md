@@ -25,6 +25,7 @@ Start with a properly configured `elasticsearch.yml`:
 
 ```yaml
 # Cluster name - must be unique
+
 cluster.name: production-cluster
 
 # Node name - unique identifier

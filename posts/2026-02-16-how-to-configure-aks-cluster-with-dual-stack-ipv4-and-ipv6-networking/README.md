@@ -31,6 +31,7 @@ The VNet needs address spaces for both IPv4 and IPv6, and each subnet needs both
 
 ```bash
 # Create a resource group
+
 az group create --name dualstack-rg --location eastus
 
 # Create a VNet with both IPv4 and IPv6 address spaces

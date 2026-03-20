@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Namespaces, Environment
+Tags: ArgoCD, GitOps, Kubernetes, Namespaces, Environments
 
 Description: Learn how to implement the namespace-per-environment pattern in ArgoCD where dev, staging, and production run in separate namespaces on a shared cluster.
 
@@ -77,6 +77,7 @@ First, create the namespaces with proper labels and annotations:
 
 ```yaml
 # cluster-config/namespaces.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -102,7 +103,7 @@ metadata:
     managed-by: argocd
 ```
 
-## Resource Quotas Per Environment
+Resource Quotas Per Environment
 
 Protect production by limiting how much dev and staging can consume:
 

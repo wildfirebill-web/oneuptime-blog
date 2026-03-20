@@ -55,6 +55,7 @@ The Chronicle service account needs permission to read SCC findings.
 
 ```bash
 # Grant the Chronicle service account viewer access to SCC findings
+
 gcloud organizations add-iam-policy-binding YOUR_ORG_ID \
     --member="serviceAccount:CHRONICLE_SERVICE_ACCOUNT@chronicle-prod.iam.gserviceaccount.com" \
     --role="roles/securitycenter.findingsViewer"

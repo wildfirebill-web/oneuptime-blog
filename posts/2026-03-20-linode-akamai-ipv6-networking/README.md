@@ -14,6 +14,7 @@ Linode Akamai IPv6 Networking covers the provider-specific steps needed to enabl
 
 ```bash
 # Example commands for Linode Akamai IPv6 Networking
+
 # Enable IPv6 networking at creation time or after
 # (Refer to provider-specific CLI or web console)
 echo "Enabling IPv6 for Linode Akamai IPv6 Networking"

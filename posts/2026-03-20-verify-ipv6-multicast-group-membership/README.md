@@ -10,6 +10,7 @@ Description: A guide to verifying IPv6 multicast group membership on Linux hosts
 
 ```bash
 # List all IPv6 multicast groups on all interfaces
+
 ip -6 maddr show
 
 # List groups on a specific interface
@@ -26,14 +27,14 @@ ip -6 maddr show dev eth0
 ## Understanding the ip -6 maddr Output
 
 The output format is:
-```
+```text
 <index>: <interface>
     inet6 <multicast-group> users <count> flags <flags>
 ```
 
 **flags**:
-- `permanent`: System-joined (all nodes, solicited-node) — cannot be removed
-- `dynamic`: Application-joined (via socket) — removed when socket closes
+- `permanent`: System-joined (all nodes, solicited-node) - cannot be removed
+- `dynamic`: Application-joined (via socket) - removed when socket closes
 - `static`: Manually added with `ip -6 maddr add`
 
 **users**: Number of sockets/processes that have joined this group
@@ -171,4 +172,4 @@ show ipv6 mld snooping groups vlan 100 detail
 
 ## Summary
 
-Verify IPv6 multicast group membership with `ip -6 maddr show` on Linux hosts, `show ipv6 mld groups` on Cisco/FRR routers, and `bridge mdb show` on Linux bridges. When a process joins a group, the kernel automatically sends an MLD report — capture this with `tcpdump -n 'icmp6 and ip6[40] == 143'`. For end-to-end verification, use a sender/receiver test to confirm actual data delivery.
+Verify IPv6 multicast group membership with `ip -6 maddr show` on Linux hosts, `show ipv6 mld groups` on Cisco/FRR routers, and `bridge mdb show` on Linux bridges. When a process joins a group, the kernel automatically sends an MLD report - capture this with `tcpdump -n 'icmp6 and ip6[40] == 143'`. For end-to-end verification, use a sender/receiver test to confirm actual data delivery.

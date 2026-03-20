@@ -109,6 +109,7 @@ role = get_execution_role()
 bucket = session.default_bucket()
 
 # Create a ScriptProcessor with a scikit-learn image
+
 from sagemaker.sklearn.processing import SKLearnProcessor
 
 sklearn_processor = SKLearnProcessor(

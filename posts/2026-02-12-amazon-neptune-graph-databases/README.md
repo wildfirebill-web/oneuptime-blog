@@ -36,6 +36,7 @@ Here's how to create a basic Neptune cluster. Start by setting up the DB subnet 
 
 ```bash
 # Create a subnet group that tells Neptune which subnets to use
+
 aws neptune create-db-subnet-group \
   --db-subnet-group-name my-neptune-subnets \
   --db-subnet-group-description "Subnets for Neptune cluster" \

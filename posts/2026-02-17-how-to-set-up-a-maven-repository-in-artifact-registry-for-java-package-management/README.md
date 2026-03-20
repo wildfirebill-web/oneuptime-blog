@@ -18,6 +18,7 @@ First, enable the Artifact Registry API and create the repository:
 
 ```bash
 # Enable the API if not already done
+
 gcloud services enable artifactregistry.googleapis.com --project=my-project
 
 # Create a Maven repository

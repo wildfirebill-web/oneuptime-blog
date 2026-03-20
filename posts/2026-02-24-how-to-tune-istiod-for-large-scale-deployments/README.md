@@ -10,7 +10,7 @@ Description: A deep guide on tuning istiod configuration and resources for deplo
 
 Running Istio at small scale is easy. Running it with 5,000+ pods and hundreds of services is where things get interesting. At that scale, istiod needs to track a massive number of Kubernetes resources, compute configuration for every proxy, and push updates quickly enough that new deployments become routable in reasonable time. The default settings are tuned for small to medium meshes. For large-scale deployments, you need to adjust several knobs.
 
-## Resource Allocation
+Resource Allocation
 
 At large scale, istiod is CPU and memory hungry. A single instance handling 5,000 proxies might need 4 CPU cores and 8GB of memory:
 
@@ -133,6 +133,7 @@ For every namespace in the mesh, create a default Sidecar resource:
 
 ```bash
 # Script to create Sidecar resources for all meshed namespaces
+
 for ns in $(kubectl get ns -l istio-mesh=true -o jsonpath='{.items[*].metadata.name}'); do
   kubectl apply -f - <<EOF
 apiVersion: networking.istio.io/v1beta1

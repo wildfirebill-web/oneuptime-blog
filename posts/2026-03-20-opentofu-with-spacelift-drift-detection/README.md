@@ -8,7 +8,7 @@ Description: Learn how to configure Spacelift's drift detection feature with Ope
 
 ## Introduction
 
-Drift occurs when real infrastructure diverges from the OpenTofu state and HCL configuration — due to manual changes, other automation tools, or AWS auto-healing. Spacelift's drift detection runs periodic reconciliation to catch and optionally fix drift.
+Drift occurs when real infrastructure diverges from the OpenTofu state and HCL configuration - due to manual changes, other automation tools, or AWS auto-healing. Spacelift's drift detection runs periodic reconciliation to catch and optionally fix drift.
 
 ## Enabling Drift Detection on a Stack
 
@@ -22,6 +22,7 @@ resource "spacelift_stack" "app" {
 }
 
 # Enable scheduled drift detection
+
 resource "spacelift_drift_detection" "app" {
   stack_id = spacelift_stack.app.id
 

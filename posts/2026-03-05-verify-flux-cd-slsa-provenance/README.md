@@ -26,6 +26,7 @@ Install the required tools:
 
 ```bash
 # Install Cosign for signature and attestation verification
+
 brew install cosign
 
 # Install slsa-verifier for SLSA provenance verification

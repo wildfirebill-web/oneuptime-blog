@@ -16,6 +16,7 @@ Before you can use `win_chocolatey`, the Chocolatey client needs to be installed
 
 ```yaml
 # install-chocolatey.yml - Ensure Chocolatey is installed
+
 ---
 - name: Install Chocolatey
   hosts: windows_servers

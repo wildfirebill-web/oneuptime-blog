@@ -20,6 +20,7 @@ Here is the minimal configuration to enable persistent queues on an OTLP exporte
 
 ```yaml
 # otel-collector-persistent-basic.yaml
+
 # Basic persistent queue setup for crash recovery
 
 extensions:

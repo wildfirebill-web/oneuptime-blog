@@ -54,6 +54,7 @@ Prometheus interprets:      15 -> 15 (reset?) -> 15 (reset?)
 
 ```bash
 # Check what temporality your exporter is configured for
+
 kubectl exec -it otel-collector-pod -- env | grep -i temporal
 
 # Check the Collector configuration

@@ -21,6 +21,7 @@ Suppose you have a local script that checks disk health:
 ```python
 #!/usr/bin/env python3
 # scripts/check_disk_health.py - checks disk usage on remote hosts
+
 import shutil
 import socket
 import json

@@ -31,6 +31,7 @@ Here is a simple migration hook for a Python/Django application:
 
 ```yaml
 # db-migration-hook.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

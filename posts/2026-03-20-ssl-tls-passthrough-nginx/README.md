@@ -21,6 +21,7 @@ TLS passthrough requires Nginx's `stream` module (for TCP proxying), not the `ht
 
 ```bash
 # Verify stream module is available
+
 nginx -V 2>&1 | grep stream
 
 # If not included, install nginx-full or nginx-extras

@@ -41,6 +41,7 @@ The simplest debugging technique. Add `print()` calls to see intermediate values
 
 ```rego
 # debug_policy.rego
+
 package authz
 
 import rego.v1

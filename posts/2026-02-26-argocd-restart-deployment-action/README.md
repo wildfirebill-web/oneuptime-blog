@@ -186,6 +186,7 @@ When the deployment is updating, the "restart" action will appear grayed out in 
 
 ```bash
 # List available actions
+
 argocd app actions list my-app --kind Deployment
 
 # Execute the restart action

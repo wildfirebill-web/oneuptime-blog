@@ -186,6 +186,7 @@ Add `flux build` to your pre-commit hooks so overlays are validated before every
 
 ```yaml
 # .pre-commit-config.yaml
+
 repos:
   - repo: local
     hooks:

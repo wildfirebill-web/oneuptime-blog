@@ -20,6 +20,7 @@ Here is a typical handler setup:
 
 ```yaml
 # roles/nginx/tasks/main.yml
+
 # Install nginx and notify the restart handler when config changes
 - name: Install nginx
   ansible.builtin.apt:

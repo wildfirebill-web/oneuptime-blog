@@ -39,6 +39,7 @@ This is the most common cause. The Lambda execution role must have a trust polic
 
 ```hcl
 # WRONG - missing or incorrect trust policy
+
 resource "aws_iam_role" "lambda_role" {
   name = "lambda-execution-role"
 

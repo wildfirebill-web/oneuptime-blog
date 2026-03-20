@@ -96,6 +96,7 @@ sudo nano /etc/haproxy/haproxy.cfg
 ### Basic HAProxy configuration with global and defaults sections
 ```haproxy
 # Global settings apply to the HAProxy process itself
+
 global
     # Run HAProxy as a daemon in the background
     daemon

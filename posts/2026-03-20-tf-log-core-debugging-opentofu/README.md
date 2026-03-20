@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Debugging, TF_LOG_CORE, Core Engine, Troubleshooting, Infrastructure as Code
 
-Description: Learn how to use TF_LOG_CORE to isolate debug logging to OpenTofu's core engine — graph construction, state management, and plan generation — while keeping provider output quiet.
+Description: Learn how to use TF_LOG_CORE to isolate debug logging to OpenTofu's core engine - graph construction, state management, and plan generation - while keeping provider output quiet.
 
 ## Introduction
 
@@ -22,6 +22,7 @@ When you suspect a problem in OpenTofu's core engine (dependency graph, state op
 
 ```bash
 # Enable DEBUG only for the core engine
+
 export TF_LOG_CORE=DEBUG
 tofu plan
 
@@ -47,7 +48,7 @@ Core-level logging includes:
 
 Example core DEBUG output:
 
-```
+```text
 2026-03-20T10:00:01.000Z [DEBUG] tofu.NewContext: building graph
 2026-03-20T10:00:01.010Z [DEBUG] Graph: adding vertex "aws_vpc.main"
 2026-03-20T10:00:01.011Z [DEBUG] Graph: adding vertex "aws_subnet.public"
@@ -84,7 +85,7 @@ grep -i "lock\|unlock" lock-debug.log
 ## Combining Core and Provider Logging at Different Levels
 
 ```bash
-# Core at TRACE, providers at WARN — maximum core detail, minimal provider noise
+# Core at TRACE, providers at WARN - maximum core detail, minimal provider noise
 export TF_LOG_CORE=TRACE
 export TF_LOG_PROVIDER=WARN
 export TF_LOG_PATH=selective-debug.log

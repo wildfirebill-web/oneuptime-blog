@@ -133,6 +133,7 @@ If you are transitioning from Docker, Podman is designed to be a drop-in replace
 
 ```bash
 # Docker command           # Podman equivalent
+
 # docker run               podman run
 # docker build             podman build
 # docker-compose           podman-compose
@@ -316,7 +317,7 @@ sudo ufw allow 5432/tcp
 sudo ufw status
 ```
 
-## Resource Limits
+Resource Limits
 
 Constrain container resources:
 

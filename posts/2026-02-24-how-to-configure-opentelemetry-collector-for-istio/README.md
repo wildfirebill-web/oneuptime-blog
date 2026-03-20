@@ -352,6 +352,7 @@ Key collector metrics to watch:
 
 ```promql
 # Data received
+
 rate(otelcol_receiver_accepted_spans[5m])
 rate(otelcol_receiver_accepted_metric_points[5m])
 

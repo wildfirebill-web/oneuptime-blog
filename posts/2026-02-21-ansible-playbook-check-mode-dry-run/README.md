@@ -22,6 +22,7 @@ The simplest way to use check mode is with the `--check` flag.
 
 ```bash
 # Preview what the playbook would do without making changes
+
 ansible-playbook -i inventory.ini site.yml --check
 ```
 

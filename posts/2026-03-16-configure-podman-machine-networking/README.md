@@ -20,6 +20,7 @@ Podman machines come with networking configured out of the box. Containers can r
 
 ```bash
 # Start a machine and test basic connectivity
+
 podman machine start my-machine
 
 # Run a container and verify internet access

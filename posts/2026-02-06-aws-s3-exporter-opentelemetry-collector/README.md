@@ -68,6 +68,7 @@ Here's a minimal configuration for the AWS S3 exporter:
 
 ```yaml
 # OpenTelemetry Collector configuration for AWS S3 exporter
+
 receivers:
   otlp:
     protocols:

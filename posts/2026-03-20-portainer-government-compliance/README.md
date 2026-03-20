@@ -26,6 +26,7 @@ Government environments often have no internet access:
 
 ```bash
 # Download required images on an internet-connected system
+
 docker pull portainer/portainer-ee:latest
 docker pull portainer/agent:latest
 

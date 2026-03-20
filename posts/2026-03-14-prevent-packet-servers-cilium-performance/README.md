@@ -107,6 +107,7 @@ spec:
 
 ```bash
 # Run the validation checks above
+
 # All items should show PASS
 cilium status --verbose
 ```

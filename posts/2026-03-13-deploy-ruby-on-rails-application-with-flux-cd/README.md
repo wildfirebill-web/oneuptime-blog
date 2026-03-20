@@ -28,6 +28,7 @@ This guide covers the Rails multi-stage Dockerfile with asset precompilation, th
 
 ```dockerfile
 # Dockerfile
+
 FROM ruby:3.3-slim AS base
 ENV RAILS_ENV=production \
     BUNDLE_WITHOUT=development:test \

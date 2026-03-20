@@ -20,6 +20,7 @@ Attribute limits control how many attributes can be attached to any telemetry it
 
 ```yaml
 # otel-config.yaml
+
 file_format: "0.3"
 
 # General attribute limits (apply to all signals)

@@ -65,6 +65,7 @@ Each key is a hostname, and the value is the PEM-encoded CA certificate (or cert
 
 ```bash
 # Add a CA certificate for a specific hostname
+
 argocd cert add-tls git.company.internal --from /path/to/ca.crt
 
 # List all trusted certificates

@@ -50,6 +50,7 @@ connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 
 # Step 1: Declare the Dead Letter Exchange (DLX)
+
 # This exchange receives all dead-lettered messages
 channel.exchange_declare(
     exchange='dlx.exchange',

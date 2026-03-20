@@ -18,6 +18,7 @@ Running your own model server lets you serve AI models through a standard API en
 
 ```bash
 # Verify Podman is installed and running
+
 podman --version
 
 # Download a model file in GGUF format for serving

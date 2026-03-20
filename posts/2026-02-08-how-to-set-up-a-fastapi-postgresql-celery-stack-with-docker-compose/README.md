@@ -52,6 +52,7 @@ Build a single image that serves both the FastAPI app and the Celery worker. The
 
 ```dockerfile
 # Python 3.11 slim image for smaller footprint
+
 FROM python:3.11-slim
 
 WORKDIR /app

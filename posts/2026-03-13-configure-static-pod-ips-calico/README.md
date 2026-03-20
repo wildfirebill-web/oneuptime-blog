@@ -29,6 +29,7 @@ Before assigning static IPs to pods, ensure the IPs are in an active pool and av
 
 ```bash
 # List available IP pools
+
 calicoctl get ippools -o wide
 
 # Verify target IPs are not already allocated

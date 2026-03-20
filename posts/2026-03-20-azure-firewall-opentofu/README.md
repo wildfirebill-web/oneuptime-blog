@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Azure Firewall, Azure, Networking, Security, Infrastructure as Code
 
-Description: Learn how to deploy and configure Azure Firewall using OpenTofu — including firewall policies, network rules, application rules, and hub-spoke routing integration.
+Description: Learn how to deploy and configure Azure Firewall using OpenTofu - including firewall policies, network rules, application rules, and hub-spoke routing integration.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ Azure Firewall is a cloud-native stateful firewall for Azure Virtual Networks. O
 
 ```hcl
 # Azure Firewall requires a subnet named exactly "AzureFirewallSubnet"
+
 resource "azurerm_subnet" "firewall" {
   name                 = "AzureFirewallSubnet"   # Must be exactly this
   resource_group_name  = azurerm_resource_group.hub.name
@@ -60,7 +61,7 @@ resource "azurerm_firewall_policy_rule_collection_group" "main" {
   firewall_policy_id = azurerm_firewall_policy.main.id
   priority           = 100
 
-  # Network rules — IP/port based
+  # Network rules - IP/port based
   network_rule_collection {
     name     = "allow-internal"
     priority = 100
@@ -83,7 +84,7 @@ resource "azurerm_firewall_policy_rule_collection_group" "main" {
     }
   }
 
-  # Application rules — FQDN based (requires DNS proxy)
+  # Application rules - FQDN based (requires DNS proxy)
   application_rule_collection {
     name     = "allow-web"
     priority = 200
@@ -117,7 +118,7 @@ resource "azurerm_firewall_policy_rule_collection_group" "main" {
     }
   }
 
-  # NAT rules — for inbound traffic
+  # NAT rules - for inbound traffic
   nat_rule_collection {
     name     = "inbound-nat"
     priority = 300

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Validation, ipaddress, Input Validation, Programming
+Tags: Python, IPv6, Validation, Ipaddress, Input Validation, Programming
 
 Description: Validate IPv6 addresses in Python using the ipaddress module, custom validators, and form validation libraries for web applications.
 
@@ -22,6 +22,7 @@ def is_valid_ipv6(address: str) -> bool:
         return False
 
 # Tests
+
 test_cases = [
     ("2001:db8::1", True),
     ("::1", True),
@@ -198,4 +199,4 @@ class DeviceForm(Form):
 
 ## Conclusion
 
-Python's `ipaddress.IPv6Address` constructor provides the most reliable IPv6 validation — it handles all valid formats including compressed notation, loopback, and link-local addresses. For web applications, wrap the validation in Pydantic validators or wtforms validators for clean integration with your request handling code.
+Python's `ipaddress.IPv6Address` constructor provides the most reliable IPv6 validation - it handles all valid formats including compressed notation, loopback, and link-local addresses. For web applications, wrap the validation in Pydantic validators or wtforms validators for clean integration with your request handling code.

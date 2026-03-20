@@ -28,6 +28,7 @@ Cloudflare is a popular choice for DNS-based global load balancing. Set up a poo
 
 ```bash
 # Create origin pools (using Cloudflare API)
+
 # Pool for US cluster
 curl -X POST "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/load_balancers/pools" \
   -H "Authorization: Bearer $CF_TOKEN" \

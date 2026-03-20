@@ -16,6 +16,7 @@ The fastest way to see memory usage across all your servers:
 
 ```bash
 # Check memory on all hosts
+
 ansible all -a "free -m"
 ```
 

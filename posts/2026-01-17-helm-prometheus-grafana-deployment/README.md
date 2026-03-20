@@ -49,6 +49,7 @@ The kube-prometheus-stack includes Prometheus, Grafana, AlertManager, and useful
 
 ```bash
 # Add the prometheus-community repo
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 
 # Update repositories
@@ -600,7 +601,7 @@ kubectl port-forward svc/prometheus-kube-prometheus-alertmanager 9093:9093 -n mo
 kubectl get secret prometheus-grafana -n monitoring -o jsonpath="{.data.admin-password}" | base64 --decode
 ```
 
-## Resource Sizing Guide
+Resource Sizing Guide
 
 | Cluster Size | Prometheus CPU | Prometheus Memory | Storage |
 |--------------|----------------|-------------------|---------|

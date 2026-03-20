@@ -52,6 +52,7 @@ The fix is to either reorder the priorities (make the allow rule lower priority 
 
 ```bash
 # Check the priority of all rule collections
+
 # Network rule collections
 az network firewall network-rule collection list \
   --resource-group rg-networking \

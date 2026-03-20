@@ -41,6 +41,7 @@ First, set up the required IAM roles and infrastructure:
 
 ```bash
 # Set your cluster name and region
+
 export CLUSTER_NAME=my-talos-cluster
 export AWS_REGION=us-east-1
 export AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)

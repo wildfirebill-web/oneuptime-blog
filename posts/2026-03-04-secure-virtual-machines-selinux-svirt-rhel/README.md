@@ -14,6 +14,7 @@ sVirt integrates SELinux with libvirt to provide Mandatory Access Control (MAC) 
 
 ```bash
 # Check SELinux status
+
 getenforce
 
 # View the SELinux label of a running VM process

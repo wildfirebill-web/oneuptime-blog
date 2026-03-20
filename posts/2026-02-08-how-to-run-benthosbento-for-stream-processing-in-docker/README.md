@@ -32,6 +32,7 @@ Run Bento with a simple pipeline that reads from stdin and writes to stdout:
 
 ```bash
 # Run Bento with a basic echo pipeline
+
 docker run --rm -it ghcr.io/redpandadata/connect \
   -c 'input: { stdin: {} } pipeline: { processors: [] } output: { stdout: {} }'
 ```

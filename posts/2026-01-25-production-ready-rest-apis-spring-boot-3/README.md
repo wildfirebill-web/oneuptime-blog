@@ -243,6 +243,7 @@ Spring Boot Actuator provides production-ready endpoints. Configure them properl
 
 ```yaml
 # application.yml
+
 management:
   endpoints:
     web:

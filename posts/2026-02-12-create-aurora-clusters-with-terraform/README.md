@@ -39,6 +39,7 @@ Like standard RDS, Aurora needs networking components first:
 
 ```hcl
 # DB subnet group for Aurora
+
 resource "aws_db_subnet_group" "aurora" {
   name       = "aurora-subnet-group"
   subnet_ids = var.private_subnet_ids

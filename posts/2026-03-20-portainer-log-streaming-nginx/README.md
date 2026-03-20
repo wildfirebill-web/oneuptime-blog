@@ -1,4 +1,4 @@
-# How to Fix Log Streaming Issues Behind Nginx Reverse Proxy
+# How to Fix Log Streaming Issues Behind Nginx Reverse Proxy - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Portainer's log streaming feature shows live container logs in the browser. Behi
 
 ```bash
 # Test log streaming directly (without proxy)
+
 # Go directly to http://your-host:9000
 # Open container logs
 # If logs stream in real-time: proxy is the issue
@@ -23,7 +24,7 @@ Portainer's log streaming feature shows live container logs in the browser. Behi
 # Portainer uses WebSocket for real-time log streaming
 ```
 
-## Step 2: Nginx — Fix Buffering (Most Common Issue)
+## Step 2: Nginx - Fix Buffering (Most Common Issue)
 
 ```nginx
 server {

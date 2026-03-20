@@ -36,6 +36,7 @@ Here's how to configure Istio's mesh to send traces to your OpenTelemetry Collec
 
 ```yaml
 # istio-mesh-config.yaml
+
 # Configure Istio to send Envoy traces via OpenTelemetry protocol
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator

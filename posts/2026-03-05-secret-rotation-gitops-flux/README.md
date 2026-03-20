@@ -138,6 +138,7 @@ Create a pipeline job that runs on a schedule:
 
 ```yaml
 # .github/workflows/rotate-secrets.yaml
+
 name: Rotate Secrets
 on:
   schedule:

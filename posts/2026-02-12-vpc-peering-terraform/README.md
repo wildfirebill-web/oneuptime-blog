@@ -33,6 +33,7 @@ Here's a complete Terraform configuration that creates two VPCs and peers them:
 
 ```hcl
 # variables.tf
+
 variable "region" {
   default = "us-east-1"
 }

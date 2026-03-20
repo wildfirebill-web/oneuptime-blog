@@ -98,6 +98,7 @@ ingester:
 
 ```bash
 # Monitor recovery
+
 kubectl get pods -n loki -w
 curl http://loki:3100/ring
 ```

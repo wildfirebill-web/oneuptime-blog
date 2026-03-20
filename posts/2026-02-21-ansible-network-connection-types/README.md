@@ -38,6 +38,7 @@ graph LR
 
 ```yaml
 # inventory/hosts.yml - Configure network_cli for Cisco IOS devices
+
 ---
 all:
   children:

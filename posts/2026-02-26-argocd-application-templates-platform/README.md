@@ -39,6 +39,7 @@ Define what developers need to provide versus what the platform provides:
 
 ```yaml
 # Developer provides (minimal):
+
 app:
   name: checkout-service
   team: commerce

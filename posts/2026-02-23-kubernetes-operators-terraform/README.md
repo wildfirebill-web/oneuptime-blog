@@ -24,6 +24,7 @@ The Prometheus Operator is one of the most widely used operators. It is typicall
 
 ```hcl
 # Create the monitoring namespace
+
 resource "kubernetes_namespace" "monitoring" {
   metadata {
     name = "monitoring"

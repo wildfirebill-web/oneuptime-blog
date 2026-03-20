@@ -26,7 +26,7 @@ cloud.region: us-east-1
 
 These attributes appear on every span, metric, and log from that service, making it easy to filter and correlate data.
 
-## Resource Detection in the Collector
+Resource Detection in the Collector
 
 The OpenTelemetry Collector can detect resources automatically using the `resourcedetection` processor.
 
@@ -268,7 +268,7 @@ This reads from `OTEL_RESOURCE_ATTRIBUTES`:
 export OTEL_RESOURCE_ATTRIBUTES="service.name=checkout-service,deployment.environment=production,service.version=1.2.3"
 ```
 
-## Resource Detection in SDKs
+Resource Detection in SDKs
 
 Application SDKs can also perform resource detection, running before telemetry reaches the collector.
 
@@ -324,6 +324,7 @@ from opentelemetry.sdk.resources import (
 from opentelemetry.resourcedetector.aws import AwsEc2ResourceDetector
 
 # Manual resource attributes
+
 manual_resource = Resource.create({
     "service.name": "checkout-service",
     "service.version": "1.2.3",

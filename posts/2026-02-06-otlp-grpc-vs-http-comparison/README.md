@@ -141,7 +141,7 @@ Measured throughput: 5,000-20,000 spans/sec per exporter instance.
 
 Real-world example: A microservice generating 1,000 spans/sec can use either transport comfortably. A high-traffic API gateway generating 10,000 spans/sec benefits from gRPC.
 
-### Resource usage
+Resource usage
 
 **gRPC cost**: Maintaining persistent connections consumes memory. The gRPC client library is larger and uses more CPU for connection management.
 
@@ -181,6 +181,7 @@ Your choice often comes down to what your network allows and what your infrastru
 
 ```bash
 # HTTP works through standard proxies
+
 export HTTPS_PROXY=http://corporate-proxy.example.com:8080
 ```
 

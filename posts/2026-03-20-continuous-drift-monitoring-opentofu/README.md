@@ -25,6 +25,7 @@ graph LR
 
 ```yaml
 # .github/workflows/drift-monitor.yml
+
 name: Continuous Drift Monitoring
 
 on:
@@ -84,8 +85,8 @@ jobs:
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `[DRIFT] Infrastructure drift in ${{ matrix.environment }} — ${new Date().toISOString().split('T')[0]}`,
-              body: `Drift detected in \`${{ matrix.environment }}\` environment at ${new Date().toISOString()}\n\n\`\`\`\n${truncated}\n\`\`\`\n\nTo investigate:\n1. Run \`tofu plan -refresh-only\` in \`environments/${{ matrix.environment }}/\`\n2. Determine if the change is intentional\n3. Either accept with \`tofu apply -refresh-only\` or revert with \`tofu apply\``,
+              title: `[DRIFT] Infrastructure drift in ${{ matrix.environment }} - ${new Date().toISOString().split('T')[0]}`,
+              body: `Drift detected in \`${{ matrix.environment }}\` environment at ${new Date().toISOString()}\n\n```\n${truncated}\n```\n\nTo investigate:\n1. Run \`tofu plan -refresh-only\` in \`environments/${{ matrix.environment }}/\`\n2. Determine if the change is intentional\n3. Either accept with \`tofu apply -refresh-only\` or revert with \`tofu apply\``,
               labels: ['infrastructure-drift', '${{ matrix.environment }}']
             });
 
@@ -102,7 +103,7 @@ jobs:
 
 ```bash
 #!/bin/bash
-# drift-report.sh — summary report across all environments
+# drift-report.sh - summary report across all environments
 echo "=== Infrastructure Drift Report $(date) ==="
 
 for env in dev staging prod; do
@@ -110,10 +111,10 @@ for env in dev staging prod; do
   tofu init -lockfile=readonly > /dev/null 2>&1
 
   if tofu plan -refresh-only -detailed-exitcode -no-color > /tmp/drift.txt 2>&1; then
-    echo "[$env] CLEAN — no drift"
+    echo "[$env] CLEAN - no drift"
   else
     CHANGES=$(grep "changes" /tmp/drift.txt | tail -1)
-    echo "[$env] DRIFT DETECTED — $CHANGES"
+    echo "[$env] DRIFT DETECTED - $CHANGES"
   fi
   cd -
 done

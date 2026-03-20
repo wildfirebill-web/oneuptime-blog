@@ -67,6 +67,7 @@ Apply the policy.
 
 ```bash
 # Create the forecasted alert policy
+
 gcloud alpha monitoring policies create --policy-from-file=forecast-alert.json
 ```
 

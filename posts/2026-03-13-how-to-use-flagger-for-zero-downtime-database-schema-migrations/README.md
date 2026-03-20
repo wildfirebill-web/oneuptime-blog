@@ -41,6 +41,7 @@ Each migration must be backward compatible so that both the primary (old) and ca
 
 ```yaml
 # init-container-migration.yaml
+
 # Deployment with init container for running migrations
 apiVersion: apps/v1
 kind: Deployment

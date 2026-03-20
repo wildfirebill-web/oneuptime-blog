@@ -53,6 +53,7 @@ Here are some common configurations.
 
 ```hcl
 # Conservative - no downtime, slow rollout
+
 resource "aws_ecs_service" "conservative" {
   name            = "api-service"
   cluster         = aws_ecs_cluster.main.id

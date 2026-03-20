@@ -26,6 +26,7 @@ graph TD
 
 ```bash
 # Minimum hardware requirements for Satellite Server:
+
 # - 4 CPU cores (8+ recommended for production)
 # - 20 GB RAM (32+ recommended)
 # - 500 GB disk for /var (content storage grows significantly)

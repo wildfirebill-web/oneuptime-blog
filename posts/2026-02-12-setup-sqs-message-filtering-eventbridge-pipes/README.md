@@ -346,6 +346,7 @@ EventBridge Pipes publishes metrics to CloudWatch. The key ones to watch are:
 
 ```bash
 # Check pipe execution metrics
+
 aws cloudwatch get-metric-statistics \
   --namespace "AWS/EventBridge/Pipes" \
   --metric-name "ExecutionFailed" \

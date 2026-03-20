@@ -45,6 +45,7 @@ This is the most common error. Cloud Scheduler uses a service account to call yo
 
 ```bash
 # Check the service account used by Cloud Scheduler
+
 gcloud scheduler jobs describe my-job --location=us-central1
 
 # The output shows the service account in the httpTarget or pubsubTarget section

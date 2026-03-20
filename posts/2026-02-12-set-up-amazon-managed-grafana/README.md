@@ -30,6 +30,7 @@ You can create a workspace through the console or CLI.
 
 ```bash
 # Create a Managed Grafana workspace
+
 aws grafana create-workspace \
   --account-access-type CURRENT_ACCOUNT \
   --authentication-providers AWS_SSO \

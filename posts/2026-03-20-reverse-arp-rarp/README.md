@@ -48,10 +48,10 @@ The EtherType for RARP is **0x8035**.
 
 RARP had severe limitations that led to its replacement:
 
-1. **No subnet mask or router information** — IP only, nothing else
-2. **Requires a RARP server on every subnet** — doesn't cross routers
-3. **Broadcast-based** — routers do not forward broadcasts
-4. **No configuration flexibility** — can only return an IP address
+1. **No subnet mask or router information** - IP only, nothing else
+2. **Requires a RARP server on every subnet** - doesn't cross routers
+3. **Broadcast-based** - routers do not forward broadcasts
+4. **No configuration flexibility** - can only return an IP address
 
 ## RARP vs ARP vs BOOTP vs DHCP
 
@@ -82,6 +82,7 @@ You can capture RARP packets (EtherType 0x8035):
 
 ```bash
 # Capture RARP packets (if any exist on your network)
+
 sudo tcpdump -n -e -i eth0 rarp
 
 # Or filter by EtherType
@@ -99,4 +100,3 @@ sudo tcpdump -n -e -i eth0 'ether proto 0x8035'
 
 - [How to Understand How ARP Maps IP Addresses to MAC Addresses](https://oneuptime.com/blog/post/2026-03-20-how-arp-maps-ip-to-mac-addresses/view)
 - [How to Understand BOOTP vs DHCP Differences](https://oneuptime.com/blog/post/2026-03-20-bootp-vs-dhcp-differences/view)
-- [How to Understand the DHCP DORA Process](https://oneuptime.com/blog/post/2026-03-20-dhcp-dora-process/view)

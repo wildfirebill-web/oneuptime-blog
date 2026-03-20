@@ -16,6 +16,7 @@ The `chomp` function removes newline characters (`\n`) and carriage return plus 
 
 ```hcl
 # Basic syntax
+
 chomp(string)
 ```
 

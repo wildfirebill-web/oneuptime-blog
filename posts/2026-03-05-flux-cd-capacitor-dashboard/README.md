@@ -28,6 +28,7 @@ Create the manifests for Capacitor and manage them through Flux itself:
 
 ```yaml
 # infrastructure/capacitor/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

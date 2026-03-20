@@ -55,6 +55,7 @@ Set up a Cosmos DB account with the necessary containers.
 
 ```bash
 # Create a Cosmos DB account
+
 az cosmosdb create \
   --name my-cosmos-account \
   --resource-group cosmos-demo-rg \

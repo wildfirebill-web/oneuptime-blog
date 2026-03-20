@@ -16,6 +16,7 @@ Every Docker network has an embedded DNS resolver at `127.0.0.11`. When a contai
 
 ```bash
 # From inside a container, these all work if services are on the same network:
+
 curl http://database:5432     # Resolves to postgres container IP
 curl http://redis:6379        # Resolves to redis container IP
 curl http://api:8080          # Resolves to api container IP
@@ -76,13 +77,13 @@ services:
 For services in different Portainer stacks to discover each other:
 
 ```yaml
-# Stack A — creates the shared network
+# Stack A - creates the shared network
 networks:
   shared-services:
     name: shared-services-network
     driver: bridge
 
-# Stack B — joins the shared network
+# Stack B - joins the shared network
 networks:
   shared-services:
     external: true

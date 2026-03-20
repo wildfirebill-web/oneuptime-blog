@@ -55,6 +55,7 @@ Unlike physical replication, logical replication:
 
 ```bash
 # Set wal_level to logical on the publisher
+
 az postgres flexible-server parameter set \
   --resource-group myResourceGroup \
   --server-name my-pg-publisher \

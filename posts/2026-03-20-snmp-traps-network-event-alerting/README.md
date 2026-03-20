@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SNMP, Traps, Alerting, Cisco IOS, Network Monitoring, snmptrapd
+Tags: SNMP, Traps, Alerting, Cisco IOS, Network Monitoring, Snmptrapd
 
 Description: Learn how to configure SNMP traps on network devices and set up a Linux trap receiver to alert on network events like interface failures, BGP drops, and authentication errors.
 
@@ -23,7 +23,7 @@ SNMP traps are unsolicited notifications sent by a network device to a managemen
 
 ## Step 1: Configure Traps on the Cisco Device
 
-```
+```text
 ! Define where to send traps
 Router(config)# snmp-server host 192.168.1.100 version 2c public
 
@@ -46,6 +46,7 @@ Router(config)# snmp-server trap-timeout 30    ! Retry every 30 seconds
 
 ```bash
 # Install net-snmp tools
+
 sudo apt-get install -y snmp snmptrapd
 
 # Configure snmptrapd to accept traps
@@ -117,7 +118,7 @@ tail -f /var/log/snmp_traps.log
 
 Simulate a linkDown trap by shutting down an interface on the router:
 
-```
+```text
 Router(config)# interface GigabitEthernet0/1
 Router(config-if)# shutdown
 ```

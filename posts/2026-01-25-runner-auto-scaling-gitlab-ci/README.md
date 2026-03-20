@@ -26,6 +26,7 @@ First, install GitLab Runner on a small instance that will serve as the manager.
 
 ```bash
 # Install GitLab Runner on Ubuntu
+
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
 sudo apt install gitlab-runner
 ```

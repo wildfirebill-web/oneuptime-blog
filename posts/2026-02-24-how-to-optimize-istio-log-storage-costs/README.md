@@ -20,6 +20,7 @@ Before optimizing, understand what you are dealing with:
 
 ```bash
 # Estimate log volume from a single pod
+
 kubectl logs deploy/your-service -c istio-proxy --since=1h | wc -c
 ```
 

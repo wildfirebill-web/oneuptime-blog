@@ -46,6 +46,7 @@ from vertexai.generative_models import GenerativeModel, SafetySetting, HarmCateg
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Define safety settings for each harm category
+
 # These control how aggressively content is filtered
 safety_settings = [
     SafetySetting(

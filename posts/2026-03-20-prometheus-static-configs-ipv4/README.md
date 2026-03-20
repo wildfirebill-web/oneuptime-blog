@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, IPv4, static_configs, Configuration, Monitoring, Targets
+Tags: Prometheus, IPv4, Static_configs, Configuration, Monitoring, Target
 
 Description: Use Prometheus static_configs to define fixed sets of IPv4 scrape targets, organize targets with labels, and combine multiple static configurations in a single job.
 
 ## Introduction
 
-`static_configs` is the simplest Prometheus service discovery method—you define a fixed list of targets that Prometheus will scrape. This is appropriate for stable infrastructure where the list of monitored hosts doesn't change frequently.
+`static_configs` is the simplest Prometheus service discovery method-you define a fixed list of targets that Prometheus will scrape. This is appropriate for stable infrastructure where the list of monitored hosts doesn't change frequently.
 
 ## Static Configuration Structure
 
@@ -91,6 +91,7 @@ scrape_configs:
 
 ```yaml
 # Assign individual labels to specific targets:
+
 scrape_configs:
   - job_name: 'servers'
     static_configs:

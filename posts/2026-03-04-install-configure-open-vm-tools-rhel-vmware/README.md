@@ -14,6 +14,7 @@ Open VM Tools is the open source implementation of VMware Tools for Linux guests
 
 ```bash
 # Install the base package for server VMs
+
 sudo dnf install -y open-vm-tools
 
 # For VMs with a graphical desktop, also install the desktop package

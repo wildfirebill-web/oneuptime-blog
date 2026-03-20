@@ -24,6 +24,7 @@ The key benefit is that this works with any application language or framework. I
 
 ```bash
 # Enable Service Directory API
+
 gcloud services enable servicedirectory.googleapis.com \
   --project=my-project
 ```

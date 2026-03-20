@@ -179,6 +179,7 @@ Envoy exposes metrics that tell you when circuit breakers are tripping. These ar
 
 ```bash
 # Check if requests are being rejected due to connection pool overflow
+
 kubectl exec -it <pod-name> -c istio-proxy -- curl -s localhost:15000/stats | grep overflow
 
 # Check outlier detection ejections

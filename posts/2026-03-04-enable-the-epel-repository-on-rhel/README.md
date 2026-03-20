@@ -16,6 +16,7 @@ Your system must be registered with Red Hat and have the CodeReady Builder repos
 
 ```bash
 # Enable CodeReady Builder (RHEL 9)
+
 sudo subscription-manager repos --enable codeready-builder-for-rhel-9-x86_64-rpms
 
 # For RHEL 8

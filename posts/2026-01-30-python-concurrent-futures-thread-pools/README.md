@@ -44,6 +44,7 @@ def fetch_data(url):
     return f"Data from {url}"
 
 # Create a thread pool with 3 worker threads
+
 # The context manager handles thread cleanup automatically
 with ThreadPoolExecutor(max_workers=3) as executor:
     # Submit a single task

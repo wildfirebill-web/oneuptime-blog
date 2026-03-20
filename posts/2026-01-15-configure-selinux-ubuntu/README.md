@@ -64,6 +64,7 @@ Running both MAC systems simultaneously can cause conflicts:
 
 ```bash
 # Stop and disable AppArmor
+
 sudo systemctl stop apparmor
 sudo systemctl disable apparmor
 

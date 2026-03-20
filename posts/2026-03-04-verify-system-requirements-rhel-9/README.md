@@ -27,6 +27,7 @@ To check your CPU architecture and capabilities on a running Linux system (even 
 
 ```bash
 # Show CPU architecture
+
 uname -m
 
 # Show detailed CPU info including flags

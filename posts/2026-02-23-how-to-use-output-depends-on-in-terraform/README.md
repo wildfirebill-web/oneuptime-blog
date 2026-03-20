@@ -341,6 +341,7 @@ Do not add `depends_on` when Terraform can figure out the dependency automatical
 
 ```hcl
 # Unnecessary - Terraform already knows this depends on the VPC resource
+
 output "vpc_id" {
   value      = aws_vpc.main.id
   depends_on = [aws_vpc.main]  # Not needed

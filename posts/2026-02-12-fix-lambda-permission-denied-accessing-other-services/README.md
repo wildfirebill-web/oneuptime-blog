@@ -26,6 +26,7 @@ First, find out what role your function is using:
 
 ```bash
 # Get the function's execution role
+
 aws lambda get-function-configuration \
   --function-name my-function \
   --query 'Role' \

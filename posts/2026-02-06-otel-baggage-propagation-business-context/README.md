@@ -22,6 +22,7 @@ Set baggage at the edge of your system, typically in an API gateway or the first
 
 ```python
 # gateway.py
+
 from opentelemetry import baggage, context, trace
 from opentelemetry.baggage.propagation import BaggagePropagator
 

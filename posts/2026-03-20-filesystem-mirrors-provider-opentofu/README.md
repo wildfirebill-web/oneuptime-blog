@@ -1,4 +1,4 @@
-# How to Use Filesystem Mirrors for Provider Installation in OpenTofu
+# How to Use Filesystem Mirrors for Provider Installation in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to configure filesystem mirrors in OpenTofu to install pr
 
 ## Introduction
 
-OpenTofu's `filesystem_mirror` configuration in the CLI configuration file redirects provider downloads from the public registry to a local directory. This is the most direct way to achieve offline provider installation — no server required, just a directory with the right structure.
+OpenTofu's `filesystem_mirror` configuration in the CLI configuration file redirects provider downloads from the public registry to a local directory. This is the most direct way to achieve offline provider installation - no server required, just a directory with the right structure.
 
 ## CLI Configuration File Location
 
 ```bash
 # Default locations for the CLI configuration file:
+
 # Unix/Linux/macOS: ~/.terraform.rc or ~/.terraformrc
 # Windows: %APPDATA%/terraform.rc
 

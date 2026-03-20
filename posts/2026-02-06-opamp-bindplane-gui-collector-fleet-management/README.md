@@ -24,6 +24,7 @@ BindPlane OP can be installed as a standalone binary or run in a container. Here
 
 ```bash
 # Pull the BindPlane OP image
+
 docker pull ghcr.io/observiq/bindplane-op:latest
 
 # Run with default settings

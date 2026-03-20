@@ -31,6 +31,7 @@ The simplest approach is downloading multiple versions and renaming them.
 
 ```bash
 # Create a directory for Terraform binaries
+
 sudo mkdir -p /usr/local/terraform
 
 # Download and install Terraform 1.5.7

@@ -21,6 +21,7 @@ AWS VPC IPAM is a managed service that allows you to plan, track, and monitor IP
 
 ```bash
 # Create an IPAM with operating regions
+
 aws ec2 create-ipam \
   --operating-regions RegionName=us-east-1 RegionName=us-west-2 RegionName=eu-west-1 \
   --description "Enterprise IPv4 IPAM"
@@ -86,7 +87,7 @@ aws ec2 create-vpc \
 ## Terraform Configuration
 
 ```hcl
-# main.tf — AWS IPAM with Terraform
+# main.tf - AWS IPAM with Terraform
 
 resource "aws_vpc_ipam" "main" {
   description = "Enterprise IPAM"

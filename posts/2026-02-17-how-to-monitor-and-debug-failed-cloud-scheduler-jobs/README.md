@@ -16,6 +16,7 @@ The quickest way to see if a job is failing is to check its status.
 
 ```bash
 # View the current state of a scheduler job
+
 gcloud scheduler jobs describe my-scheduled-job \
   --location=us-central1 \
   --format="yaml(name, state, lastAttemptTime, status, scheduleTime)"

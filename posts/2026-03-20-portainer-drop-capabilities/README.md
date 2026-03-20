@@ -1,4 +1,4 @@
-# How to Drop Unnecessary Linux Capabilities in Portainer
+# How to Drop Unnecessary Linux Capabilities in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -92,6 +92,7 @@ Check the effective capabilities of a running container:
 
 ```bash
 # View capabilities from inside the container
+
 docker exec -it $(docker ps -qf name=api) cat /proc/1/status | grep Cap
 
 # Decode the hex value

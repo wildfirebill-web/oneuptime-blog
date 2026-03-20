@@ -46,6 +46,7 @@ Whether to fix these depends on your configuration:
 
 ```bash
 # If using IPVS kube-proxy mode, ip_vs is required
+
 # If using iptables kube-proxy mode, ip_vs can be ignored
 
 # If using VXLAN encapsulation, vxlan module is required

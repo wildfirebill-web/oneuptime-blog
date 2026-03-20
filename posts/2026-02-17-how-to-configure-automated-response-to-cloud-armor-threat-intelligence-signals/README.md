@@ -29,6 +29,7 @@ Start by creating a Cloud Armor security policy attached to your backend service
 
 ```bash
 # Create a security policy with adaptive protection enabled
+
 gcloud compute security-policies create web-app-policy \
     --description="Security policy with threat intelligence" \
     --type=CLOUD_ARMOR

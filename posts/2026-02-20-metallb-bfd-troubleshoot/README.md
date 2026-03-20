@@ -40,6 +40,7 @@ Before diving into specific failure scenarios, here are the commands you will us
 
 ```bash
 # List all MetalLB speaker pods
+
 kubectl get pods -n metallb-system -l component=speaker
 
 # Check BFD session status from inside the FRR container

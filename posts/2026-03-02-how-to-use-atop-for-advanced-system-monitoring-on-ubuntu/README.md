@@ -99,6 +99,7 @@ The `f` key is particularly useful - it hides lines with zero activity, making b
 
 ```bash
 # Update every 5 seconds
+
 atop 5
 
 # Update every 1 second (high resolution)

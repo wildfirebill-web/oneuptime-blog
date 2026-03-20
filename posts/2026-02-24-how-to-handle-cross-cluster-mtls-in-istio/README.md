@@ -49,6 +49,7 @@ Istio provides Makefiles to generate these certificates. Start with the root:
 mkdir -p certs && cd certs
 
 # Generate root CA (keep root-key.pem safe!)
+
 make -f ../tools/certs/Makefile.selfsigned.mk root-ca
 ```
 

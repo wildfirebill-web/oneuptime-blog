@@ -20,6 +20,7 @@ If you omit the path, find searches the current directory. If you omit expressio
 
 ```bash
 # List all files in current directory recursively
+
 find .
 
 # List all files under /etc

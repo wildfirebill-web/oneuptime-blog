@@ -60,6 +60,7 @@ Document the service IP pools and their purpose:
 ```bash
 #!/bin/bash
 # ops-service-ip.sh
+
 # Operational procedures for service IP management
 
 echo "=== Service IP Operations ==="

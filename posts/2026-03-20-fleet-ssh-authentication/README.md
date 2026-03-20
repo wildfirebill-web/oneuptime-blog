@@ -8,7 +8,7 @@ Description: A detailed guide to configuring SSH key authentication for Fleet to
 
 ## Introduction
 
-SSH key authentication is the most secure and commonly used method for Fleet to access private Git repositories. Unlike HTTP credentials that could be exposed through proxy logs or network captures, SSH keys use asymmetric cryptography — the private key never leaves your Kubernetes cluster, and only the public key is registered with your Git provider.
+SSH key authentication is the most secure and commonly used method for Fleet to access private Git repositories. Unlike HTTP credentials that could be exposed through proxy logs or network captures, SSH keys use asymmetric cryptography - the private key never leaves your Kubernetes cluster, and only the public key is registered with your Git provider.
 
 This guide provides a comprehensive walkthrough of SSH authentication setup for Fleet, including key generation, secret management, known hosts configuration, and troubleshooting.
 
@@ -35,6 +35,7 @@ Generate a separate key specifically for Fleet (do not reuse personal keys):
 
 ```bash
 # Generate an ED25519 key (modern, secure, compact)
+
 ssh-keygen \
   -t ed25519 \
   -C "fleet-gitops@$(date +%Y-%m-%d)" \

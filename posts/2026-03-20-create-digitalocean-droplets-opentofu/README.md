@@ -17,6 +17,7 @@ DigitalOcean Droplets are Linux virtual machines that can be provisioned quickly
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     digitalocean = {
@@ -156,4 +157,4 @@ resource "digitalocean_droplet" "production" {
 
 ## Conclusion
 
-Creating DigitalOcean Droplets with OpenTofu is straightforward with the DigitalOcean provider. Use `for_each` for multiple Droplets, place them in VPCs for network isolation, and enable backups and monitoring for production workloads. Store your API token as a sensitive variable or environment variable — never hardcode it.
+Creating DigitalOcean Droplets with OpenTofu is straightforward with the DigitalOcean provider. Use `for_each` for multiple Droplets, place them in VPCs for network isolation, and enable backups and monitoring for production workloads. Store your API token as a sensitive variable or environment variable - never hardcode it.

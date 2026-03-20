@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # storage.tf
+
 resource "google_storage_bucket" "site" {
   name          = var.domain_name
   location      = "US"
@@ -35,7 +36,7 @@ resource "google_storage_bucket" "site" {
     not_found_page   = "404.html"
   }
 
-  # Uniform bucket-level access — use IAM not ACLs
+  # Uniform bucket-level access - use IAM not ACLs
   uniform_bucket_level_access = true
 
   cors {
@@ -187,8 +188,8 @@ output "bucket_name" {
 
 ## Best Practices
 
-- Use a global load balancer in front of the bucket rather than direct bucket website hosting — this provides HTTPS, Cloud CDN, and custom domain support.
-- Enable `uniform_bucket_level_access` on the storage bucket — it disables ACLs and forces use of IAM, which is easier to audit and manage.
-- Use `cache_mode = "CACHE_ALL_STATIC"` for static site assets — Cloud CDN will automatically cache assets by content type and significantly reduce origin load.
-- Google-managed SSL certificates take 10-60 minutes to provision after DNS propagates — the load balancer will return 502 errors until the certificate is ready.
-- Upload site content using the `gsutil rsync` command or Cloud Build rather than OpenTofu `google_storage_bucket_object` resources — managing hundreds of files via state is inefficient.
+- Use a global load balancer in front of the bucket rather than direct bucket website hosting - this provides HTTPS, Cloud CDN, and custom domain support.
+- Enable `uniform_bucket_level_access` on the storage bucket - it disables ACLs and forces use of IAM, which is easier to audit and manage.
+- Use `cache_mode = "CACHE_ALL_STATIC"` for static site assets - Cloud CDN will automatically cache assets by content type and significantly reduce origin load.
+- Google-managed SSL certificates take 10-60 minutes to provision after DNS propagates - the load balancer will return 502 errors until the certificate is ready.
+- Upload site content using the `gsutil rsync` command or Cloud Build rather than OpenTofu `google_storage_bucket_object` resources - managing hundreds of files via state is inefficient.

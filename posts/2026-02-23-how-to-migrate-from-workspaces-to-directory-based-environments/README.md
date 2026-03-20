@@ -26,6 +26,7 @@ You are going from this:
 
 ```text
 # Workspace-based (before)
+
 project/
   main.tf
   variables.tf

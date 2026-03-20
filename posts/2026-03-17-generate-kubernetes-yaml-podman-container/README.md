@@ -18,6 +18,7 @@ One of Podman's standout features is its ability to generate Kubernetes YAML fro
 
 ```bash
 # Run a container with some configuration
+
 podman run -d --name my-web \
   -p 8080:80 \
   -e APP_ENV=production \

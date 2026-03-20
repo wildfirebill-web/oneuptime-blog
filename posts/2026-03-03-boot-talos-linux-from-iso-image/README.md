@@ -37,6 +37,7 @@ You have two main sources for Talos Linux ISOs: the GitHub releases page and the
 
 ```bash
 # Download the latest standard ISO for amd64 architecture
+
 curl -LO https://github.com/siderolabs/talos/releases/latest/download/talos-amd64.iso
 
 # For arm64 systems

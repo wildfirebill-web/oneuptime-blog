@@ -25,6 +25,7 @@ To view the current value of a parameter:
 
 ```bash
 # Check the current value of innodb_buffer_pool_size
+
 az mysql flexible-server parameter show \
   --resource-group myResourceGroup \
   --server-name my-mysql-server \

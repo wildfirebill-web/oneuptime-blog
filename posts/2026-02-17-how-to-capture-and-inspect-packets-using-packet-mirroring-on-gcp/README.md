@@ -37,6 +37,7 @@ Before you start, you need:
 
 ```bash
 # Enable the required API
+
 gcloud services enable compute.googleapis.com
 ```
 

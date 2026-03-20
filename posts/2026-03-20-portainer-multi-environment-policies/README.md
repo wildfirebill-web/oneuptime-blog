@@ -1,4 +1,4 @@
-# How to Set Up Multi-Environment Policies in Portainer
+# How to Set Up Multi-Environment Policies in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create environment groups
+
 curl -X POST -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   https://portainer.example.com/api/endpoint_groups \

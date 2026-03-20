@@ -58,6 +58,7 @@ kubectl describe $NODE_POD -n kube-system | grep -A 40 "Init Containers:"
 
 ```bash
 # Run on the affected node
+
 lsmod | grep -E "ipip|xt_set|ip_tables|nf_conntrack"
 ```
 

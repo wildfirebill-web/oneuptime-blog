@@ -24,6 +24,7 @@ For each VirtualService, verify it has a matching DestinationRule. This is one o
 
 ```bash
 # Get all VirtualService hosts
+
 VS_HOSTS=$(kubectl get virtualservice -A -o jsonpath='{range .items[*]}{.spec.hosts[*]}{"\n"}{end}' | sort -u)
 
 # Get all DestinationRule hosts

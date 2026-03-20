@@ -52,6 +52,7 @@ Most IoT devices cannot run an OpenTelemetry SDK. Instead, you embed lightweight
 
 ```python
 # iot_device.py
+
 # Lightweight telemetry for a Python-based IoT sensor device
 # Designed for devices like Raspberry Pi or similar single-board computers
 

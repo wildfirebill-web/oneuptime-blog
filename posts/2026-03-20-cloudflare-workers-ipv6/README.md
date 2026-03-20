@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cloudflare, Workers, IPv6, Edge, Serverless, Dual-Stack, fetch
+Tags: Cloudflare, Worker, IPv6, Edge, Serverless, Dual-Stack, Fetch
 
 Description: Build Cloudflare Workers that handle IPv6 client requests and make outbound IPv6 connections to origin servers.
 
@@ -14,6 +14,7 @@ Cloudflare Workers IPv6 enables serverless workloads to operate in IPv6 and dual
 
 ```bash
 # Platform-specific IPv6 enablement
+
 # Most serverless platforms use the underlying cloud provider's network
 
 # Check if the platform's public endpoint has IPv6
@@ -95,7 +96,7 @@ dig AAAA your-function-url.example.com
 
 ```bash
 # Set environment variables for IPv6 endpoints
-# (Platform-specific — shown as generic examples)
+# (Platform-specific - shown as generic examples)
 
 BACKEND_URL="http://[2001:db8::backend]/api"
 DATABASE_HOST="2001:db8::db"

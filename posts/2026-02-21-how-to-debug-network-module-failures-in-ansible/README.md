@@ -28,6 +28,7 @@ The first thing to try is always increasing Ansible's verbosity. Each level reve
 
 ```bash
 # Standard verbosity - shows task results
+
 ansible-playbook network_config.yml -v
 
 # More detail - shows connection info and module arguments

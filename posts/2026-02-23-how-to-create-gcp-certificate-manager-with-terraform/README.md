@@ -27,6 +27,7 @@ You need the Google provider and the Certificate Manager API enabled.
 
 ```hcl
 # main.tf - Terraform and provider configuration
+
 terraform {
   required_version = ">= 1.0"
 

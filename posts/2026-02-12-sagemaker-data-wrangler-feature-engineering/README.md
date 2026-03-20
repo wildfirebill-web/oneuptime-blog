@@ -46,6 +46,7 @@ import numpy as np
 import boto3
 
 # Create a realistic e-commerce dataset
+
 np.random.seed(42)
 n_records = 10000
 

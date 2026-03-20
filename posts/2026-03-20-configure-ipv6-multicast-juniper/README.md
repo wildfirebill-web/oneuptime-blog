@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Multicast, Juniper, PIM-SM, JunOS
+Tags: IPv6, Multicast, Juniper, PIM-SM, Junos
 
 Description: A guide to configuring IPv6 multicast routing on Juniper routers running JunOS, including PIM, RP configuration, and MLD settings.
 
@@ -10,6 +10,7 @@ Description: A guide to configuring IPv6 multicast routing on Juniper routers ru
 
 ```juniper
 # Enable PIM protocol for IPv6
+
 set protocols pim family inet6 rp static address 2001:db8::rp
 
 # Configure PIM on interfaces

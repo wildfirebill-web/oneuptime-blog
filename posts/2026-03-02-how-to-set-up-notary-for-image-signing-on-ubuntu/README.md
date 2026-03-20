@@ -25,6 +25,7 @@ When Docker Content Trust is enabled, Docker automatically verifies signatures w
 
 ```bash
 # Download the Notary binary from GitHub releases
+
 NOTARY_VERSION="0.7.0"
 wget https://github.com/theupdateframework/notary/releases/download/v${NOTARY_VERSION}/notary-Linux-amd64
 

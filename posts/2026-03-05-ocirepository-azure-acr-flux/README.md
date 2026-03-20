@@ -46,6 +46,7 @@ Ensure your AKS cluster has Workload Identity enabled.
 
 ```bash
 # Enable OIDC issuer and Workload Identity on an existing AKS cluster
+
 az aks update \
   --resource-group my-resource-group \
   --name my-aks-cluster \

@@ -18,6 +18,7 @@ Database backups require a different approach than filesystem backups. You canno
 
 ```bash
 # Basic single database dump
+
 mysqldump -u root -p database_name > /backup/database_name.sql
 
 # Dump all databases

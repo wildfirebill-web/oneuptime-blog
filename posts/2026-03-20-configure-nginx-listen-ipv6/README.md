@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Nginx, Web Server, Network Configuration, listen directive
+Tags: IPv6, Nginx, Web Server, Network Configuration, Listen Directive
 
 Description: Learn how to configure Nginx to accept connections on IPv6 addresses, including listening on specific IPv6 addresses, all interfaces, and handling the ipv6only parameter.
 
@@ -103,6 +103,7 @@ server {
 
 ```nginx
 # Mark server block as default for this address/port
+
 server {
     listen [::]:80 default_server ipv6only=on;
     listen 80 default_server;

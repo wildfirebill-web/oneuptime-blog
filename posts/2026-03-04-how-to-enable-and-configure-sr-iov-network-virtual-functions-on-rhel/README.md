@@ -16,6 +16,7 @@ SR-IOV requires hardware support (NIC and CPU) and must be enabled in the BIOS/U
 
 ```bash
 # Verify IOMMU is enabled
+
 dmesg | grep -i iommu
 
 # Check if the NIC supports SR-IOV

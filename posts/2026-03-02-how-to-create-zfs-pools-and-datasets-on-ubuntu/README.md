@@ -32,6 +32,7 @@ Always use persistent disk identifiers rather than `/dev/sdX` names:
 
 ```bash
 # List available disk identifiers
+
 ls -la /dev/disk/by-id/ | grep -v part
 
 # Common formats:

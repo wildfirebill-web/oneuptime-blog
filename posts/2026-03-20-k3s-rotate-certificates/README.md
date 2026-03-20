@@ -27,6 +27,7 @@ Before rotating, check when your certificates expire:
 
 ```bash
 # Check all K3s certificate expiration dates
+
 for cert in /var/lib/rancher/k3s/server/tls/*.crt; do
   echo "=== $cert ==="
   openssl x509 -in "$cert" -noout -dates 2>/dev/null || true
@@ -104,7 +105,7 @@ systemctl start k3s
 
 ## Rotating CA Certificates
 
-CA rotation is more involved since all leaf certificates must be re-issued. K3s does not automatically rotate CA certificates — they have a 10-year validity period. If you need to rotate CAs:
+CA rotation is more involved since all leaf certificates must be re-issued. K3s does not automatically rotate CA certificates - they have a 10-year validity period. If you need to rotate CAs:
 
 ```bash
 # Step 1: Stop K3s on ALL nodes (servers and agents)
@@ -117,7 +118,7 @@ cp -r /var/lib/rancher/k3s/server/tls /var/lib/rancher/k3s/server/tls.backup
 # Step 3: Remove certificate directory to force regeneration
 rm -rf /var/lib/rancher/k3s/server/tls
 
-# Step 4: Start K3s server — it will regenerate all CAs and certs
+# Step 4: Start K3s server - it will regenerate all CAs and certs
 systemctl start k3s
 
 # Step 5: Retrieve the new node token (changed after CA rotation)
@@ -180,4 +181,4 @@ fi
 
 ## Conclusion
 
-Regular certificate rotation is a critical security hygiene practice. K3s makes it straightforward with built-in `certificate rotate` commands. For most clusters, the automatic rotation on restart is sufficient — but for production environments, implement proactive rotation checks and alerting before certificates approach expiration to avoid unexpected outages.
+Regular certificate rotation is a critical security hygiene practice. K3s makes it straightforward with built-in `certificate rotate` commands. For most clusters, the automatic rotation on restart is sufficient - but for production environments, implement proactive rotation checks and alerting before certificates approach expiration to avoid unexpected outages.

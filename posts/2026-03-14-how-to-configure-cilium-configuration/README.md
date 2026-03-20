@@ -41,6 +41,7 @@ helm install cilium cilium/cilium \
 
 ```yaml
 # cilium-production.yaml
+
 tunnel: disabled
 autoDirectNodeRoutes: true
 ipv4NativeRoutingCIDR: "10.0.0.0/8"

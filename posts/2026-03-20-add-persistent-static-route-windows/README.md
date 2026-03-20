@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Static Routes, route add, PowerShell, Networking, Routing
+Tags: Windows, Static Routes, Route add, PowerShell, Networking, Routing
 
 Description: Add persistent static routes on Windows using the route add command with the -p flag or New-NetRoute PowerShell cmdlet to survive reboots.
 
@@ -62,6 +62,7 @@ route delete 192.168.2.0 mask 255.255.255.0 10.0.0.1
 
 ```powershell
 # Get the interface index
+
 Get-NetAdapter | Select-Object Name, ifIndex
 
 # Add a persistent static route

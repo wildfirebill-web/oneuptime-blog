@@ -51,6 +51,7 @@ If you set the build context to the service directory, Docker cannot see the sha
 
 ```dockerfile
 # This will NOT work - shared packages are outside the build context
+
 FROM node:20-alpine
 WORKDIR /app
 COPY package.json .

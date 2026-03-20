@@ -159,6 +159,7 @@ class InvertedIndex:
         return counts
 
 # Usage
+
 index = InvertedIndex('products', r)
 
 # Add products with tags

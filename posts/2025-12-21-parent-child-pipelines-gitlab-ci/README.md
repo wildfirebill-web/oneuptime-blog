@@ -42,6 +42,7 @@ flowchart TB
 
 ```yaml
 # .gitlab-ci.yml (parent)
+
 stages:
   - triggers
 

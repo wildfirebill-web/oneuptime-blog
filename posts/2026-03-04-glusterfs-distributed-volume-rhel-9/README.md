@@ -37,6 +37,7 @@ On each node, create and mount a dedicated partition:
 
 ```bash
 # On node1
+
 sudo mkfs.xfs -i size=512 /dev/sdb
 sudo mkdir -p /data/glusterfs/dist/brick1
 sudo mount /dev/sdb /data/glusterfs/dist/brick1

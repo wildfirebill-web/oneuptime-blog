@@ -31,6 +31,7 @@ The `--cpus` flag is the simplest way to limit CPU usage:
 
 ```bash
 # Limit to 1 CPU core equivalent
+
 podman run -d --name web --cpus 1 nginx:latest
 
 # Limit to half a CPU core

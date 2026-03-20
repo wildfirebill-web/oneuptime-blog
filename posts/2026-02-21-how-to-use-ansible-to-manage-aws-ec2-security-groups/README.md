@@ -23,6 +23,7 @@ Key characteristics:
 
 ```yaml
 # create-security-group.yml
+
 ---
 - name: Create a web server security group
   hosts: localhost

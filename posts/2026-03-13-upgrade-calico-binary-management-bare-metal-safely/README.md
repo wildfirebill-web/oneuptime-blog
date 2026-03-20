@@ -37,6 +37,7 @@ Update the `calico_version` variable in your inventory or group vars.
 
 ```ini
 # group_vars/all.yml
+
 calico_version: v3.27.0
 ```
 

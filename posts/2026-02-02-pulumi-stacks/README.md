@@ -43,6 +43,7 @@ The following commands install Pulumi on different operating systems:
 
 ```bash
 # Install Pulumi on macOS using Homebrew
+
 brew install pulumi
 
 # Install Pulumi on Linux using the install script
@@ -833,7 +834,7 @@ for stack in $(pulumi stack ls --json | jq -r '.[].name'); do
 done
 ```
 
-### Resource Already Exists
+Resource Already Exists
 
 When Pulumi tries to create a resource that already exists:
 

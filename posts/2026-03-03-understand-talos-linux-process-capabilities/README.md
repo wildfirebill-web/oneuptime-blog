@@ -43,6 +43,7 @@ For example, networkd needs CAP_NET_ADMIN to configure network interfaces but do
 
 ```bash
 # Check running processes and their states
+
 talosctl -n 10.0.0.11 processes
 
 # View detailed process information

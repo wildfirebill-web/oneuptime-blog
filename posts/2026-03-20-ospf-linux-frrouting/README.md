@@ -19,6 +19,7 @@ OSPF (Open Shortest Path First) is a link-state interior gateway routing protoco
 
 ```bash
 # Ubuntu/Debian
+
 curl -s https://deb.frrouting.org/frr/keys.asc | sudo apt-key add -
 echo "deb https://deb.frrouting.org/frr $(lsb_release -s -c) frr-stable" | \
     sudo tee /etc/apt/sources.list.d/frr.list
@@ -47,7 +48,7 @@ systemctl status frr
 vtysh
 ```
 
-```
+```text
 ! Basic OSPF configuration
 configure terminal
 
@@ -69,7 +70,7 @@ exit
 
 ## OSPF Interface Configuration
 
-```
+```text
 ! Set OSPF cost on an interface
 interface eth1
  ip ospf cost 10
@@ -80,7 +81,7 @@ exit
 
 ## Multi-Area OSPF
 
-```
+```text
 router ospf
  ospf router-id 2.2.2.2
  network 10.1.0.0/24 area 0       ! Backbone area
@@ -91,7 +92,7 @@ exit
 
 ## Redistributing Routes
 
-```
+```text
 router ospf
  ! Redistribute connected routes into OSPF
  redistribute connected metric 10 metric-type 2
@@ -115,7 +116,7 @@ vtysh -c "show ip ospf interface"
 
 Sample `show ip ospf neighbor`:
 
-```
+```text
 Neighbor ID     Pri State           Dead Time Address         Interface
 2.2.2.2           1 Full/DR         00:00:37  10.0.0.2        eth1:10.0.0.1
 3.3.3.3           1 Full/BDR        00:00:38  10.0.0.3        eth1:10.0.0.1

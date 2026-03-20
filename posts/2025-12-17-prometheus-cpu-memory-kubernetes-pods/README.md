@@ -33,6 +33,7 @@ The `container_cpu_usage_seconds_total` metric tracks cumulative CPU time consum
 
 ```promql
 # CPU usage rate in cores for all containers
+
 rate(container_cpu_usage_seconds_total{
   container!="",
   container!="POD"

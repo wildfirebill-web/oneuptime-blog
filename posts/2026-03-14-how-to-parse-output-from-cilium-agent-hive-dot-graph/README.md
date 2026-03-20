@@ -28,6 +28,7 @@ Extract basic information using standard Unix tools:
 ```bash
 #!/bin/bash
 # parse-dot-basic.sh
+
 # Extract nodes and edges from a DOT file
 
 DOT_FILE="${1:-/tmp/cilium-hive.dot}"

@@ -20,6 +20,7 @@ First, observe what a standard create event looks like.
 
 ```bash
 # Generate a create event
+
 podman run --rm --name verbose-test alpine echo "hello"
 
 # View the recent create event

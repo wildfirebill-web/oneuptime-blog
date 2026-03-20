@@ -115,6 +115,7 @@ resource "aws_autoscaling_policy" "cpu_target_tracking" {
 
 ```hcl
 # Scale down overnight to save costs
+
 resource "aws_autoscaling_schedule" "scale_down_night" {
   scheduled_action_name  = "scale-down-night"
   autoscaling_group_name = aws_autoscaling_group.app.name

@@ -26,6 +26,7 @@ The standard approach installs a Salt Minion on each Terraform-provisioned insta
 
 ```hcl
 # variables.tf
+
 variable "salt_master_ip" {
   description = "IP address of the Salt Master"
   type        = string

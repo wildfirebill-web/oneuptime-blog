@@ -106,6 +106,7 @@ When parallelism is limited, requests that cannot be served immediately are queu
 
 ```bash
 # Check pending request count
+
 kubectl port-forward svc/argocd-repo-server -n argocd 8084:8084 &
 curl -s http://localhost:8084/metrics | grep argocd_repo_pending_request_total
 ```

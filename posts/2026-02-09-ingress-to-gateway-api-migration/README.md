@@ -16,6 +16,7 @@ Gateway API uses multiple resources with role separation.
 
 ```yaml
 # Gateway API architecture
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

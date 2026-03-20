@@ -226,6 +226,7 @@ After tuning, validate that throughput actually improved:
 
 ```bash
 # Before tuning
+
 kubectl exec deploy/fortio-client -n my-namespace -- fortio load \
   -c 32 -qps 0 -t 120s -json /tmp/before.json \
   http://high-throughput-app:8080/api

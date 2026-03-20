@@ -73,6 +73,7 @@ Using the Kafka CLI tools:
 
 ```bash
 # List all broker IDs in the cluster
+
 # This connects to ZooKeeper to retrieve broker information
 kafka-broker-api-versions.sh --bootstrap-server localhost:9092 | grep 'id'
 

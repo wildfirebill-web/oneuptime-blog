@@ -41,6 +41,7 @@ edition = "2021"
 
 [dependencies]
 # Web framework
+
 axum = "0.7"
 tokio = { version = "1", features = ["full"] }
 

@@ -28,6 +28,7 @@ Google provides the Database Migration Assessment Tool to help with this:
 
 ```bash
 # Install the migration assessment tool
+
 gcloud components install database-migration
 
 # Run an assessment against your Oracle database

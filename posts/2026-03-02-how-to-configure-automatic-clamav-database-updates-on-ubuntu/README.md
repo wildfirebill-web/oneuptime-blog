@@ -18,6 +18,7 @@ If you haven't installed ClamAV yet, start here:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install ClamAV and the freshclam daemon

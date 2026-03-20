@@ -22,6 +22,7 @@ In a stateless configuration:
 
 ```bash
 # Enable IPv6 packet forwarding between interfaces
+
 sudo sysctl -w net.ipv6.conf.all.forwarding=1
 
 # Persist across reboots

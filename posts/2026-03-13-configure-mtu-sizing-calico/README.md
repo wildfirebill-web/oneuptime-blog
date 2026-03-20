@@ -34,6 +34,7 @@ Calico automatically detects the host MTU and sets pod MTU accordingly, accounti
 
 ```bash
 # Check what Calico has auto-detected
+
 kubectl get felixconfiguration default -o yaml | grep -i mtu
 
 # Check current pod interface MTU

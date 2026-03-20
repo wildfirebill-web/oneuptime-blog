@@ -13,7 +13,7 @@ Writing a regex to match IPv6 addresses is notoriously complex due to the many v
 ## Why IPv6 Regex is Hard
 
 A single IPv6 address has many valid representations:
-```
+```text
 2001:0db8:0000:0000:0000:0000:0000:0001  # Full
 2001:db8::1                              # Double colon compressed
 ::1                                      # Loopback
@@ -28,6 +28,7 @@ For validation, always prefer parsing libraries over regex:
 
 ```python
 # Python: ipaddress module (no regex needed)
+
 import ipaddress
 
 def is_ipv6(s):

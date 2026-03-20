@@ -35,12 +35,13 @@ Then open Expert Info to see only IPv6-related events.
 
 Expert Info automatically highlights:
 - ICMPv6 Destination Unreachable (Type 1)
-- ICMPv6 Packet Too Big (Type 2) — indicates PMTUD events
-- ICMPv6 Time Exceeded (Type 3) — traceroute or routing loops
-- ICMPv6 Parameter Problem (Type 4) — malformed header
+- ICMPv6 Packet Too Big (Type 2) - indicates PMTUD events
+- ICMPv6 Time Exceeded (Type 3) - traceroute or routing loops
+- ICMPv6 Parameter Problem (Type 4) - malformed header
 
 ```wireshark
 # Filter to see only ICMPv6 errors flagged by Expert Info
+
 icmpv6.type <= 4
 
 # Check Expert Info for PMTUD events
@@ -111,7 +112,7 @@ _ws.expert.group == "Reassembly"
 
 | Expert Info Event | Likely Meaning | Action |
 |---|---|---|
-| ICMPv6 Packet Too Big | PMTUD event — MTU mismatch | Check MTU on all path segments |
+| ICMPv6 Packet Too Big | PMTUD event - MTU mismatch | Check MTU on all path segments |
 | ICMPv6 Time Exceeded | TTL/hop limit exhausted | Check routing loops or too many hops |
 | ICMPv6 Destination Unreachable | Route or host unreachable | Check routing table and firewall |
 | IPv6 fragment overlap | Possible fragmentation attack | Investigate source IP |
@@ -139,4 +140,4 @@ tshark -r "$PCAP" -Y "_ws.expert.severity == error && ipv6" \
   -E header=y -E separator="|"
 ```
 
-Wireshark's Expert Info provides a quick, automated first-pass analysis of IPv6 captures — surfacing the most important protocol issues without requiring you to manually examine thousands of packets.
+Wireshark's Expert Info provides a quick, automated first-pass analysis of IPv6 captures - surfacing the most important protocol issues without requiring you to manually examine thousands of packets.

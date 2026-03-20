@@ -12,6 +12,7 @@ After configuring tc traffic shaping, you need to verify that traffic is landing
 
 ```bash
 # Show all qdiscs on an interface with statistics
+
 sudo tc -s qdisc show dev eth0
 
 # Example output for TBF:
@@ -71,7 +72,7 @@ sudo tc -s filter show dev eth0
 
 ```bash
 #!/bin/bash
-# monitor-tc.sh — print qdisc stats every 5 seconds
+# monitor-tc.sh - print qdisc stats every 5 seconds
 
 INTERFACE=${1:-eth0}
 

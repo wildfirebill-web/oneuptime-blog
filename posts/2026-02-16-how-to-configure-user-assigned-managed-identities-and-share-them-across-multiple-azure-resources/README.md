@@ -49,6 +49,7 @@ Create the identity as a standalone resource in your resource group.
 
 ```bash
 # Create a user-assigned managed identity
+
 az identity create \
   --resource-group myResourceGroup \
   --name app-workload-identity \

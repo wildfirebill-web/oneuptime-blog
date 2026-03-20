@@ -14,6 +14,7 @@ SSL certificate expiration is one of the most common causes of unplanned outages
 
 ```yaml
 # roles/ssl_renewal/defaults/main.yml - Certificate management configuration
+
 ssl_provider: letsencrypt
 ssl_email: admin@example.com
 ssl_cert_dir: /etc/letsencrypt/live

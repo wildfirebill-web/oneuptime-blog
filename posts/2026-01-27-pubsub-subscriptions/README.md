@@ -94,6 +94,7 @@ sequenceDiagram
 
 ```bash
 # Create a pull subscription with recommended settings
+
 gcloud pubsub subscriptions create order-processing-sub \
     --topic=orders \
     --ack-deadline=60 \

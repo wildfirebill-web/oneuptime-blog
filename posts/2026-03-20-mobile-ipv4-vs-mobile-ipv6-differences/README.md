@@ -1,4 +1,4 @@
-# How to Understand the Differences Between Mobile IPv4 and Mobile IPv6
+# How to Understand the Differences Between Mobile IPv4 and Mobile IPv6 (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Compare Mobile IPv4 and Mobile IPv6 protocols to understand archite
 
 ## Introduction
 
-Mobile IPv4 (MIPv4, RFC 5944) and Mobile IPv6 (MIPv6, RFC 6275) solve the same problem — maintaining connectivity during IP address changes — but with different architectures reflecting lessons learned between their designs.
+Mobile IPv4 (MIPv4, RFC 5944) and Mobile IPv6 (MIPv6, RFC 6275) solve the same problem - maintaining connectivity during IP address changes - but with different architectures reflecting lessons learned between their designs.
 
 ## Side-by-Side Comparison
 
@@ -63,6 +63,7 @@ MIPv6 Mobile Nodes acquire their CoA directly via SLAAC or DHCPv6, eliminating t
 # MIPv6 security layers
 
 # Layer 1: HA-MN authentication (mandatory)
+
 # IPsec ESP or AH protects all BUs to HA
 # Configured via IKEv2 or manual SA
 
@@ -87,7 +88,7 @@ ip xfrm policy add \
 
 ### Dual-Stack Deployment
 
-```
+```text
 During IPv4→IPv6 transition:
 - Deploy both MIPv4 and MIPv6 daemons
 - MIPv4 for IPv4 connectivity
@@ -97,7 +98,7 @@ During IPv4→IPv6 transition:
 
 ### Tunnel Overhead Comparison
 
-```
+```text
 MIPv4 Bidirectional Tunneling:
   Outer IPv4: 20 bytes
   Inner IPv4: 20 bytes
@@ -115,7 +116,7 @@ support far more nodes without NAT.
 ## Key Advantages of MIPv6 over MIPv4
 
 1. **No Foreign Agent**: Simpler deployment; any access router works
-2. **Route Optimization**: Standard, not optional — better performance
+2. **Route Optimization**: Standard, not optional - better performance
 3. **Mandatory IPsec**: Stronger security baseline
 4. **No NAT**: Native addresses eliminate NAT traversal complexity
 5. **Larger address space**: Home Agent can serve vastly more mobile nodes

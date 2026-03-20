@@ -90,6 +90,7 @@ When base images don't include everything you need, create a custom Dockerfile.
 
 ```dockerfile
 # .devcontainer/Dockerfile
+
 FROM mcr.microsoft.com/devcontainers/python:3.11
 
 # Install system dependencies for data science libraries

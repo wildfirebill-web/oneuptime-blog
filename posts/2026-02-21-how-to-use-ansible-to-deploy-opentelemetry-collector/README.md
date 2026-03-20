@@ -52,6 +52,7 @@ otel-collector/
 
 ```yaml
 # roles/otel_collector/defaults/main.yml
+
 # Use the "contrib" distribution for more receivers/exporters
 otel_collector_distribution: "otelcol-contrib"
 otel_collector_version: "0.91.0"

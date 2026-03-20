@@ -178,6 +178,7 @@ Create a Grafana panel showing quota usage across namespaces:
 
 ```promql
 # CPU quota usage per namespace
+
 sum by (namespace) (
   kube_resourcequota{resource="requests.cpu", type="used"}
 )

@@ -24,6 +24,7 @@ The OpenTelemetry Collector Builder uses a YAML manifest to define which compone
 
 ```yaml
 # builder-config.yaml
+
 # Collector Builder manifest for edge devices
 # Only includes the bare minimum components needed
 
@@ -244,7 +245,7 @@ service:
 
 Setting the log level to `warn` instead of the default `info` reduces disk I/O and log volume. The `basic` metrics level exposes only essential counters like accepted and dropped spans, which is enough to detect problems without adding overhead.
 
-## Resource Limits with systemd
+Resource Limits with systemd
 
 If your edge device runs Linux, use systemd to enforce hard resource limits on the collector process:
 

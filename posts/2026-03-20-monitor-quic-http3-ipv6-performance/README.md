@@ -28,6 +28,7 @@ URL="https://example.com"
 OUTPUT_FILE="/var/log/quic-metrics.log"
 
 # Collect HTTP/3 timing over IPv6
+
 collect_quic_metrics() {
     local result
     result=$(curl -6 --http3 "$URL" \

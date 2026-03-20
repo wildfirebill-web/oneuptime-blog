@@ -124,4 +124,4 @@ variable "location" {
 
 ## Conclusion
 
-Always specify the `features {}` block even when empty — it is required by the provider. Use `prevent_deletion_if_contains_resources = true` for production resource groups to guard against accidental deletions, and authenticate via environment variables or managed identity rather than hardcoded credentials.
+Always specify the `features {}` block even when empty - it is required by the provider. Use `prevent_deletion_if_contains_resources = true` for production resource groups to guard against accidental deletions, and authenticate via environment variables or managed identity rather than hardcoded credentials.

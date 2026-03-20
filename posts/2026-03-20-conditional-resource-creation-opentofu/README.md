@@ -32,6 +32,7 @@ resource "aws_instance" "bastion" {
 }
 
 # Reference conditionally created resources safely
+
 output "bastion_ip" {
   value = var.create_bastion ? aws_instance.bastion[0].public_ip : null
 }

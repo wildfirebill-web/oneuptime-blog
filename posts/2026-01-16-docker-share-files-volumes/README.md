@@ -16,6 +16,7 @@ Docker volumes are the preferred way to persist and share data. They're managed 
 
 ```bash
 # Create a named volume
+
 docker volume create shared-data
 
 # List volumes

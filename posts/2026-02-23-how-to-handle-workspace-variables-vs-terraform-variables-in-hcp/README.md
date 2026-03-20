@@ -24,6 +24,7 @@ Terraform variables are the values your HCL code consumes. When you declare a va
 
 ```hcl
 # variables.tf
+
 variable "instance_type" {
   type        = string
   description = "EC2 instance type for the application server"

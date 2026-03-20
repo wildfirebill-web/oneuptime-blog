@@ -48,6 +48,7 @@ Istio holds regular community meetings that are open to everyone. These happen o
 
 ```bash
 # The community calendar is available at:
+
 # https://istio.io/latest/about/community/
 # Click on the "Community Calendar" link to add it to your Google Calendar
 ```

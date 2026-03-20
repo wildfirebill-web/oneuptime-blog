@@ -36,6 +36,7 @@ The pre-commit framework is the standard tool for managing Git hooks. Install it
 
 ```bash
 # Install pre-commit
+
 pip install pre-commit
 
 # Or on macOS

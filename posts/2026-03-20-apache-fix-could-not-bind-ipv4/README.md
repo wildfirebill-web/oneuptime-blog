@@ -1,10 +1,10 @@
-# How to Fix Apache "Could Not Bind to Address" Errors on IPv4
+# How to Fix Apache 'Could Not Bind to Address' Errors on IPv4
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, IPv4, Troubleshooting, Bind Error, Port Conflict, Configuration
+Tags: Apache, IPv4, Troubleshooting, Bind error, Port Conflict, Configuration
 
-Description: Diagnose and fix Apache "could not bind to address" errors on IPv4 ports by identifying port conflicts, fixing permissions, and resolving configuration issues.
+Description: Diagnose and fix Apache 'could not bind to address' errors on IPv4 ports by identifying port conflicts, fixing permissions, and resolving configuration issues.
 
 ## Introduction
 
@@ -16,6 +16,7 @@ Start by reading the full error message:
 
 ```bash
 # Check Apache error log
+
 sudo journalctl -xeu apache2 --no-pager | tail -30
 sudo journalctl -xeu httpd --no-pager | tail -30
 
@@ -97,7 +98,7 @@ Non-root users cannot bind to ports 80 or 443:
 grep '^User\|^Group' /etc/apache2/apache2.conf
 
 # Option A: Ensure Apache starts as root (master process) and drops privileges
-# This is the default — verify apache2.service runs as root initially
+# This is the default - verify apache2.service runs as root initially
 sudo systemctl cat apache2 | grep User
 
 # Option B: Grant Apache the capability to bind to low ports

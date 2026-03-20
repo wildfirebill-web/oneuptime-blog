@@ -58,6 +58,7 @@ Edge devices often have limited CPU, memory, and storage. K3s provides several f
 
 ```bash
 # Install K3s with minimal components
+
 # --disable: Removes components you do not need
 # --kubelet-arg: Tunes kubelet for constrained environments
 # --kube-apiserver-arg: Reduces API server memory footprint
@@ -74,7 +75,7 @@ curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server \
   --kube-apiserver-arg=max-mutating-requests-inflight=50" sh -
 ```
 
-### Resource-Optimized Configuration File
+Resource-Optimized Configuration File
 
 Create a configuration file at `/etc/rancher/k3s/config.yaml` for cleaner management:
 
@@ -267,11 +268,11 @@ configs:
       password: edge-password
 ```
 
-## Resource Constraints Management
+Resource Constraints Management
 
 Edge devices require careful resource management to ensure stability. K3s provides several mechanisms to enforce limits.
 
-### Resource Quota for Edge Namespaces
+Resource Quota for Edge Namespaces
 
 ```yaml
 # resource-quota.yaml

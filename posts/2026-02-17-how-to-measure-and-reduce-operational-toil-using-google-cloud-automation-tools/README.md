@@ -40,6 +40,7 @@ Before you can reduce toil, you need to know where it is. Create a toil tracking
 
 ```python
 # toil_tracker.py - Track and measure operational toil
+
 from google.cloud import bigquery, firestore
 from datetime import datetime
 import json

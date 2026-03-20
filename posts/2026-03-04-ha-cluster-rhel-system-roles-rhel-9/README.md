@@ -31,6 +31,7 @@ The HA cluster role is installed at `/usr/share/ansible/roles/rhel-system-roles.
 
 ```ini
 # inventory/hosts
+
 [ha_cluster]
 node1 ansible_host=192.168.1.11
 node2 ansible_host=192.168.1.12

@@ -36,6 +36,7 @@ First, here is the sidecar container that watches log files and forwards them.
 
 ```python
 # log-sidecar/main.py
+
 import os
 import json
 import time

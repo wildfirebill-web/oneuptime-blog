@@ -33,6 +33,7 @@ This guide provides systematic approaches to diagnosing and resolving cilium-bug
 
 ```bash
 # Search fpath for the completion file
+
 for dir in \$fpath; do
   [ -f "\$dir/_cilium-bugtool" ] && echo "Found: \$dir/_cilium-bugtool"
 done

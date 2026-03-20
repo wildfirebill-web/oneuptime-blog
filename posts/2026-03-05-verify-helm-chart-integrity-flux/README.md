@@ -36,6 +36,7 @@ First, sign your chart after pushing it to an OCI registry.
 
 ```bash
 # Generate a Cosign key pair (if you do not have one)
+
 cosign generate-key-pair
 
 # Push a Helm chart to an OCI registry

@@ -12,7 +12,7 @@ Composable module architectures follow the Unix philosophy: each module does one
 
 ## The Three-Layer Architecture
 
-```
+```text
 Layer 1: Foundation Modules    (vpc, security-groups, certificates)
 Layer 2: Service Modules       (database, cache, messaging)
 Layer 3: Application Modules   (web-app, api-service, worker)
@@ -24,6 +24,7 @@ Each layer consumes outputs from the layer below and produces outputs for the la
 
 ```hcl
 # Foundation layer - called once per environment
+
 module "vpc" {
   source = "./modules/vpc"
   name   = "${var.project}-${var.environment}"

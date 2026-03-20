@@ -221,6 +221,7 @@ Here's a practical example of a complete communication policy for an e-commerce 
 
 ```yaml
 # Order service can call payment and inventory
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

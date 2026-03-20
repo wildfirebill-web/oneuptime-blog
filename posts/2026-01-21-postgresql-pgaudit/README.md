@@ -14,6 +14,7 @@ pgaudit provides detailed session and object audit logging for PostgreSQL. This 
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install postgresql-16-pgaudit
 
 # RHEL/CentOS

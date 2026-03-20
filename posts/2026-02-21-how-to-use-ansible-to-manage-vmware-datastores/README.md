@@ -32,6 +32,7 @@ NFS datastores are common for shared storage, backups, and ISO libraries.
 
 ```yaml
 # mount-nfs-datastore.yml
+
 ---
 - name: Mount NFS datastore on ESXi hosts
   hosts: localhost

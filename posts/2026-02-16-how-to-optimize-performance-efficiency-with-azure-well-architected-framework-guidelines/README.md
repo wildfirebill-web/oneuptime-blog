@@ -26,6 +26,7 @@ Use Azure Monitor and Application Insights to collect this data over a represent
 
 ```bash
 # Query Application Insights for p50, p95, and p99 response times over the past 14 days
+
 # This KQL query runs against your Log Analytics workspace
 az monitor log-analytics query \
   --workspace "{workspace-id}" \

@@ -79,6 +79,7 @@ Use Git labels and directory structure to categorize changes by risk level.
 
 ```yaml
 # Repository structure with risk-based organization
+
 # fleet-infra/
 #   changes/
 #     standard/     (auto-approved, low risk)

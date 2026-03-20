@@ -61,6 +61,7 @@ Azure FHIR service supports the FHIR Bulk Data Export specification. This export
 
 ```bash
 # Export all patient-related data from the FHIR server
+
 # The $export operation runs asynchronously and returns a job URL
 curl -X GET \
     "https://my-fhir-server.azurehealthcareapis.com/$export" \

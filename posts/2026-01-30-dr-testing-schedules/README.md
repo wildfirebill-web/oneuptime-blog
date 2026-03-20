@@ -74,6 +74,7 @@ Tabletop exercises are discussion-based sessions where team members walk through
 
 ```yaml
 # dr-tabletop-exercise.yaml
+
 exercise:
   name: "Database Corruption Recovery"
   date: "2026-02-15"

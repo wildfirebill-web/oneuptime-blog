@@ -1,4 +1,4 @@
-# How to Set Up RKE2 with a Custom CNI Plugin
+# How to Set Up RKE2 with a Custom CNI Plugin - Plugin
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,6 +19,7 @@ While RKE2 ships with Canal, Calico, and Cilium as built-in CNI options, some or
 
 ```yaml
 # /etc/rancher/rke2/config.yaml - Disable built-in CNI
+
 cni: none
 
 # Cluster networking CIDRs (must match what your CNI plugin uses)

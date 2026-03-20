@@ -22,6 +22,7 @@ Connect to a running container:
 
 ```bash
 # Attach to a pod's main process
+
 kubectl attach pod-name
 
 # Attach with interactive terminal

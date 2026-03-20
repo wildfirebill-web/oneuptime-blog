@@ -282,6 +282,7 @@ Test that SSE works correctly:
 
 ```bash
 # Basic SSE test
+
 curl -N -H "Accept: text/event-stream" http://sse-service/events
 
 # With timeout verification (should not disconnect)

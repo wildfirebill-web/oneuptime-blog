@@ -138,6 +138,7 @@ After deploying, verify that clusters are properly distributed across shards:
 
 ```bash
 # Check which shard each cluster is assigned to
+
 for i in 0 1 2; do
   echo "=== Shard $i ==="
   kubectl logs argocd-application-controller-$i -n argocd | \

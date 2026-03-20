@@ -1,14 +1,14 @@
-# How to Use the title Function in OpenTofu
+# How to Use the title Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, title, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Title, String Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the title function in OpenTofu to convert strings to title case, capitalizing the first letter of each word.
 
 ---
 
-The `title()` function converts a string to title case — the first letter of each word is capitalized, and the remaining letters are lowercased.
+The `title()` function converts a string to title case - the first letter of each word is capitalized, and the remaining letters are lowercased.
 
 ---
 

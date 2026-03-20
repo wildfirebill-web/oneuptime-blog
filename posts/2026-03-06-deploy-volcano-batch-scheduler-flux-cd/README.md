@@ -43,6 +43,7 @@ clusters/
 
 ```yaml
 # clusters/production/volcano/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

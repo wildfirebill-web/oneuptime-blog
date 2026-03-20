@@ -321,6 +321,7 @@ Python application example:
 
 ```python
 # app.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

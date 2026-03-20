@@ -24,6 +24,7 @@ This is particularly important in environments where the underlying network infr
 
 ```bash
 # Standard pod encryption (default)
+
 --set encryption.enabled=true \
 --set encryption.type=wireguard
 

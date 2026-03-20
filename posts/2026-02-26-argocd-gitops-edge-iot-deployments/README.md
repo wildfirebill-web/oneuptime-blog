@@ -76,6 +76,7 @@ Each edge cluster needs to be registered with the hub ArgoCD:
 
 ```bash
 # Option 1: Using argocd CLI (requires direct network access)
+
 argocd cluster add edge-site-001 --kubeconfig /path/to/edge-site-001-kubeconfig
 
 # Option 2: Declaratively via Secret (better for automation)

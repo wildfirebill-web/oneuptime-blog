@@ -69,6 +69,7 @@ def fetch_data(url: str):
     return response.json()
 
 # Usage - retries happen automatically
+
 try:
     data = fetch_data("https://api.example.com/data")
 except Exception as e:

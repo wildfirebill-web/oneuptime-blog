@@ -158,6 +158,7 @@ Alternatively, add retry logic in your Spring Boot application:
 
 ```yaml
 # application.yml
+
 spring:
   datasource:
     hikari:

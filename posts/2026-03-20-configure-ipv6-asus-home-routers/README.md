@@ -37,7 +37,7 @@ For most ISPs in the US and Europe, select **Native** or **DHCPv6**.
 
 For **Native** connection type:
 
-```
+```text
 Connection type: Native
 
 Auto Configuration Setting:
@@ -53,7 +53,7 @@ Prefix length: 64 (or as provided by ISP)
 
 Configure how LAN devices receive IPv6:
 
-```
+```text
 LAN IPv6 Address:
   Auto (derived from WAN prefix)
 
@@ -68,9 +68,9 @@ Enable Router Advertisement: Yes
 
 For networks where some devices require specific addresses, enable DHCPv6:
 
-```
+```text
 Enable DHCPv6 server: Yes
-Stateless DHCPv6: Yes (provides DNS but not addresses — SLAAC handles addresses)
+Stateless DHCPv6: Yes (provides DNS but not addresses - SLAAC handles addresses)
 ```
 
 ## Step 4: Configure IPv6 Firewall
@@ -81,7 +81,7 @@ Asus routers have an IPv6 firewall. By default, it blocks all inbound connection
 2. Review the default policy: "Drop all inbound from WAN to LAN"
 3. To allow specific inbound access, add a rule:
 
-```
+```text
 IPv6 Firewall Rule:
   Source IP: ::/0 (any)
   Destination IP: 2001:db8:home::/64 (your LAN prefix)
@@ -93,7 +93,7 @@ IPv6 Firewall Rule:
 
 In the admin panel, check **Network Map → WAN** or **System Log → IPv6**:
 
-```
+```text
 Expected WAN status:
   IPv6 Address: 2001:xxx:xxx:xxx::1 (from ISP)
   IPv6 Gateway: fe80::xxxx (ISP router link-local)
@@ -104,6 +104,7 @@ From a LAN device, test connectivity:
 
 ```bash
 # Windows: verify global IPv6 address
+
 ipconfig | findstr /i "ipv6"
 
 # Test connectivity

@@ -14,7 +14,7 @@ When you have existing resources that should be managed within an OpenTofu modul
 
 Resources within modules have addresses like `module.<name>.<resource_type>.<resource_name>`:
 
-```
+```text
 module.networking.aws_vpc.main
 module.compute.aws_instance.web[0]
 module.database.aws_db_instance.primary
@@ -24,6 +24,7 @@ module.database.aws_db_instance.primary
 
 ```hcl
 # imports.tf
+
 import {
   to = module.networking.aws_vpc.main
   id = "vpc-0a1b2c3d4e5f6789"

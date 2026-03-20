@@ -18,6 +18,7 @@ The most common mistake is hardcoding credentials in pipeline configuration. Eve
 
 ```yaml
 # .github/workflows/terraform.yml
+
 # Good: Use environment secrets with OIDC authentication
 name: Terraform Apply
 on:

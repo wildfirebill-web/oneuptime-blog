@@ -52,6 +52,7 @@ Backstage is the developer portal that acts as the single pane of glass for your
 
 ```bash
 # Create a new Backstage app
+
 npx @backstage/create-app@latest --path my-developer-portal
 cd my-developer-portal
 

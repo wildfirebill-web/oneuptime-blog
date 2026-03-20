@@ -241,6 +241,7 @@ Configure Quartz for clustered execution:
 
 ```yaml
 # application.yml
+
 spring:
   quartz:
     job-store-type: jdbc

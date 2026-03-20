@@ -16,6 +16,7 @@ Set it as your stdout callback in `ansible.cfg`:
 
 ```ini
 # ansible.cfg - Switch to minimal output
+
 [defaults]
 stdout_callback = minimal
 ```

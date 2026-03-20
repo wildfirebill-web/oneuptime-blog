@@ -31,6 +31,7 @@ graph TD
 
 ```yaml
 # group_vars/all/users.yml
+
 # Central user definitions
 ---
 user_groups:

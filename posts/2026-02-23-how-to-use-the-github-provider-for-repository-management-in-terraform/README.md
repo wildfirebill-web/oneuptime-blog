@@ -45,6 +45,7 @@ variable "github_token" {
 
 ```hcl
 # repositories.tf - Create and configure repositories
+
 resource "github_repository" "microservice" {
   name        = "user-service"
   description = "User management microservice"

@@ -8,7 +8,7 @@ Description: Understand how OpenTofu resolves dependencies between resources usi
 
 ## Introduction
 
-OpenTofu builds a dependency graph before applying any changes. This graph determines the order in which resources are created, updated, and destroyed. Understanding how OpenTofu discovers dependencies — and how to declare them explicitly when needed — is fundamental to writing correct configurations.
+OpenTofu builds a dependency graph before applying any changes. This graph determines the order in which resources are created, updated, and destroyed. Understanding how OpenTofu discovers dependencies - and how to declare them explicitly when needed - is fundamental to writing correct configurations.
 
 ## Implicit Dependencies via References
 
@@ -59,6 +59,7 @@ Use `tofu graph` to visualize dependencies.
 
 ```bash
 # Generate dependency graph in DOT format
+
 tofu graph > graph.dot
 
 # Convert to PNG (requires graphviz)
@@ -71,7 +72,7 @@ dot -Tpng graph.dot -o graph.png
 
 Resources without dependencies are created in parallel.
 
-```
+```text
 Dependency graph:
 aws_vpc.main
 ├── aws_subnet.public
@@ -104,7 +105,7 @@ tofu apply -parallelism=20
 
 OpenTofu destroys resources in the reverse order of creation.
 
-```
+```text
 Create order:  VPC → Subnet → Security Group → Instance
 Destroy order: Instance → Security Group → Subnet → VPC
 
@@ -116,7 +117,7 @@ This ensures dependent resources are removed before their dependencies.
 Circular dependencies prevent OpenTofu from determining execution order.
 
 ```hcl
-# This creates a circular dependency — OpenTofu will error
+# This creates a circular dependency - OpenTofu will error
 resource "aws_security_group" "a" {
   ingress {
     from_port       = 443

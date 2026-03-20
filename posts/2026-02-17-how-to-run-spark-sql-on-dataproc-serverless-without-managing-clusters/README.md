@@ -18,6 +18,7 @@ The most direct way to run Spark SQL on Dataproc Serverless is through a PySpark
 
 ```python
 # spark_sql_job.py - Run SQL transformations on Dataproc Serverless
+
 from pyspark.sql import SparkSession
 import argparse
 

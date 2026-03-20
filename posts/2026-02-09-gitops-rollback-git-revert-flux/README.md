@@ -27,6 +27,7 @@ When a deployment causes issues, revert the problematic commit:
 
 ```bash
 # View recent commits
+
 git log --oneline -10
 
 # Identify the bad commit

@@ -23,7 +23,7 @@ As Kubernetes clusters grow, the number of ConfigMaps can become large and unwie
 4. Select the **ConfigMaps** tab
 
 The list displays:
-```
+```text
 Name                 Namespace      Keys    Created
 app-config           production     8       2 days ago
 db-config            production     5       2 days ago
@@ -62,6 +62,7 @@ Command-line filtering provides more powerful options:
 
 ```bash
 # List all ConfigMaps in a namespace
+
 kubectl get configmaps -n production
 
 # List with label selector

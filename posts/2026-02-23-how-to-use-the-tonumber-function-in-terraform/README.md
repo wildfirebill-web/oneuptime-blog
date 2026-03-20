@@ -16,6 +16,7 @@ The `tonumber` function converts a string representation of a number into an act
 
 ```hcl
 # Convert string to number
+
 > tonumber("42")
 42
 

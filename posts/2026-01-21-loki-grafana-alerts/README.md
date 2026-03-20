@@ -37,6 +37,7 @@ Ensure unified alerting is enabled in your Grafana configuration:
 
 ```ini
 # grafana.ini
+
 [unified_alerting]
 enabled = true
 
@@ -142,6 +143,7 @@ For: 5m
 Alert Name: HighErrorCount
 Summary: High error count detected
 Description: More than 10 errors in the last 5 minutes
+
 Runbook URL: https://wiki.example.com/runbooks/high-errors
 ```
 

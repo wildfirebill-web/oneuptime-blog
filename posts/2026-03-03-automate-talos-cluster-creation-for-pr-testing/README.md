@@ -99,8 +99,9 @@ run_tests() {
 
 ### GitHub Actions Implementation
 
-```yaml
+````yaml
 # .github/workflows/pr-test.yml
+
 name: PR Kubernetes Tests
 
 on:
@@ -195,9 +196,9 @@ jobs:
             <details>
             <summary>Test Output</summary>
 
-            \`\`\`
+            ```
             ${testOutput.slice(-3000)}
-            \`\`\`
+            ```
             </details>`;
 
             // Update or create comment
@@ -246,7 +247,7 @@ jobs:
         if: always()
         run: |
           talosctl cluster destroy --name "pr-${{ github.event.pull_request.number }}" || true
-```
+````
 
 ### Selective Testing
 

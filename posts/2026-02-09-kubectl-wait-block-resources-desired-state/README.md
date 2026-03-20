@@ -16,6 +16,7 @@ Traditional approaches use sleep commands or polling loops:
 
 ```bash
 # Bad: arbitrary sleep
+
 kubectl apply -f deployment.yaml
 sleep 30  # Hope it's ready by now
 kubectl exec deployment/webapp -- /health-check

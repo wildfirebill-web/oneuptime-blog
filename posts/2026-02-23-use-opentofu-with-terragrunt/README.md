@@ -26,6 +26,7 @@ The key configuration is the `terraform_binary` setting. By default, Terragrunt 
 
 ```hcl
 # terragrunt.hcl (root configuration)
+
 terraform_binary = "tofu"
 ```
 

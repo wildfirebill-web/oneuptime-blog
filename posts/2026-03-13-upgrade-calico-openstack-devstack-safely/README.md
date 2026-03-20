@@ -25,6 +25,7 @@ Update the branch or version in `local.conf`:
 
 ```bash
 # Update local.conf
+
 sed -i 's/stable\/yoga/stable\/zed/' /opt/stack/devstack/local.conf
 # Update networking-calico version
 sed -i 's/stable\/yoga/stable\/zed/' /opt/stack/devstack/local.conf

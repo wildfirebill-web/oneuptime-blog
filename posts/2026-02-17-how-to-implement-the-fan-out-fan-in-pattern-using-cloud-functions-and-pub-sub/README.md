@@ -44,6 +44,7 @@ Let us build a concrete example. Imagine you have a CSV file with 100,000 rows t
 
 ```bash
 # Topic for distributing work items
+
 gcloud pubsub topics create validation-work-queue --project=my-project
 
 # Topic for collecting results

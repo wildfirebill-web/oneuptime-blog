@@ -48,6 +48,7 @@ Create the hook scripts that manage span lifecycle using a shared context file:
 
 ```python
 # /opt/otel-hooks/start_span.py
+
 import argparse
 import json
 import os

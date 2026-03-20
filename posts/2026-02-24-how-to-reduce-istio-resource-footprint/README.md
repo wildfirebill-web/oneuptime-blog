@@ -16,6 +16,7 @@ Start by understanding how much Istio is actually consuming:
 
 ```bash
 # Total sidecar resource usage across the cluster
+
 kubectl top pods --all-namespaces --containers | grep istio-proxy | awk '{cpu+=$3; mem+=$4} END {print "Total CPU:", cpu, "m, Total Memory:", mem, "Mi"}'
 
 # Control plane resource usage

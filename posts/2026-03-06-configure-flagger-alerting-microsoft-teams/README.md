@@ -50,6 +50,7 @@ Store the Teams webhook URL as a Kubernetes secret.
 
 ```yaml
 # teams-webhook-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

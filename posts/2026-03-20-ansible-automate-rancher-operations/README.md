@@ -20,6 +20,7 @@ Ansible is an agentless automation tool that works well for orchestrating Ranche
 
 ```bash
 # Install the Kubernetes and community.general collections
+
 ansible-galaxy collection install kubernetes.core
 ansible-galaxy collection install community.general
 ```

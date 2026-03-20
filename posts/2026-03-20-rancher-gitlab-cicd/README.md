@@ -1,4 +1,4 @@
-# How to Integrate GitLab CI/CD with Rancher
+# How to Integrate GitLab CI/CD with Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ GitLab CI/CD and Rancher complement each other naturally: GitLab manages source 
 
 ```bash
 # Add the GitLab Helm repository
+
 helm repo add gitlab https://charts.gitlab.io
 helm repo update
 

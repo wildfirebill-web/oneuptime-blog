@@ -30,6 +30,7 @@ sudo apt update
 sudo apt install etckeeper git
 
 # Initialize the Git repository in /etc
+
 sudo etckeeper init
 
 # Review what will be committed

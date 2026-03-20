@@ -1,4 +1,4 @@
-# How to Deploy Minio (S3-Compatible Storage) via Portainer
+# How to Deploy Minio (S3-Compatible Storage) via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -64,6 +64,7 @@ Via MinIO CLI (mc):
 
 ```bash
 # Install mc and configure
+
 docker exec minio mc alias set local http://localhost:9000 minioadmin minio_secure_password
 
 # Create buckets

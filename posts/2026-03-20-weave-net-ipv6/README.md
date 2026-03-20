@@ -14,6 +14,7 @@ Weave Net is a CNI plugin that creates a mesh overlay network across Kubernetes 
 
 ```bash
 # Generate Weave Net manifest with IPv6 enabled
+
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 
 # Alternatively, download and modify the manifest
@@ -134,4 +135,4 @@ kubectl delete clusterrolebinding weave-net
 
 ## Conclusion
 
-Configure Weave Net for IPv6 by setting the `IPV6=1` and `IPALLOC_RANGE_V6` environment variables in the Weave Net DaemonSet. Weave creates a mesh overlay that routes both IPv4 and IPv6 pod traffic. Verify IPv6 pod addresses and test connectivity with `ping6` between pods. Note that Weave Net is in maintenance mode — for new or migrating clusters, Calico or Cilium provide more active development and richer IPv6 features including network policy enforcement and eBPF acceleration.
+Configure Weave Net for IPv6 by setting the `IPV6=1` and `IPALLOC_RANGE_V6` environment variables in the Weave Net DaemonSet. Weave creates a mesh overlay that routes both IPv4 and IPv6 pod traffic. Verify IPv6 pod addresses and test connectivity with `ping6` between pods. Note that Weave Net is in maintenance mode - for new or migrating clusters, Calico or Cilium provide more active development and richer IPv6 features including network policy enforcement and eBPF acceleration.

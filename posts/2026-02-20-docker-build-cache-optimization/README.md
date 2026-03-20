@@ -36,6 +36,7 @@ Put instructions that change rarely at the top and those that change often at th
 
 ```dockerfile
 # GOOD: Optimal layer ordering
+
 FROM node:20-alpine
 WORKDIR /app
 

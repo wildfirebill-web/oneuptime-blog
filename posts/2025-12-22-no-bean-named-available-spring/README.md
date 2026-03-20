@@ -261,6 +261,7 @@ public class BeanChecker {
 
 ```yaml
 # application.yml
+
 logging:
   level:
     org.springframework.beans: DEBUG

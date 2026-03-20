@@ -29,6 +29,7 @@ Confirm the service CIDR configured in the cluster.
 
 ```bash
 # Get the service CIDR from kube-apiserver configuration
+
 kubectl cluster-info dump | grep -m1 "service-cluster-ip-range"
 
 # Alternative: check via kube-controller-manager

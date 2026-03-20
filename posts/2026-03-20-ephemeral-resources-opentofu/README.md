@@ -14,6 +14,7 @@ Ephemeral resources are a special type of resource introduced in OpenTofu that e
 
 ```hcl
 # 1. Regular resource: creates and manages infrastructure, stored in state
+
 resource "aws_s3_bucket" "app" {
   bucket = "myapp-data"
   # Full resource data stored in state

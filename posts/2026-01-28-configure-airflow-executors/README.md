@@ -45,6 +45,7 @@ Runs tasks in parallel as subprocesses on the same machine as the scheduler. Goo
 
 ```ini
 # airflow.cfg
+
 [core]
 executor = LocalExecutor
 parallelism = 32  # Max tasks running across all DAGs

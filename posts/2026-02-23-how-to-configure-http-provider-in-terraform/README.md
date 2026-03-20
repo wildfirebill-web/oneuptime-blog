@@ -21,6 +21,7 @@ It is a read-only data source - it fetches data but does not create or modify an
 
 ```hcl
 # versions.tf - Declare the HTTP provider
+
 terraform {
   required_version = ">= 1.0"
 

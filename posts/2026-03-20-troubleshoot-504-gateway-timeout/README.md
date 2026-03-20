@@ -8,7 +8,7 @@ Description: Learn how to systematically diagnose and fix HTTP 504 Gateway Timeo
 
 ## What Is a 504 Gateway Timeout?
 
-A `504 Gateway Timeout` means the proxy (Nginx, HAProxy, AWS ALB, etc.) sent a request to the upstream server but did not receive a response within the configured timeout window. Unlike a 502, the upstream is reachable—it's just too slow.
+A `504 Gateway Timeout` means the proxy (Nginx, HAProxy, AWS ALB, etc.) sent a request to the upstream server but did not receive a response within the configured timeout window. Unlike a 502, the upstream is reachable-it's just too slow.
 
 ## Common Causes
 
@@ -23,6 +23,7 @@ A `504 Gateway Timeout` means the proxy (Nginx, HAProxy, AWS ALB, etc.) sent a r
 
 ```bash
 # Look for upstream timeout entries
+
 grep "upstream timed out" /var/log/nginx/error.log | tail -20
 ```
 

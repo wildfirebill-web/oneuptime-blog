@@ -32,6 +32,7 @@ Only consider tags that start with a specific prefix.
 
 ```yaml
 # imagepolicy-prefix-filter.yaml
+
 # Only consider tags starting with 'v'
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy

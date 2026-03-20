@@ -24,6 +24,7 @@ Start by inspecting the current status of the ImageRepository resource.
 
 ```bash
 # Get the status of all ImageRepository resources
+
 flux get image repository --all-namespaces
 
 # Get detailed status for a specific ImageRepository

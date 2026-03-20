@@ -16,6 +16,7 @@ Back up everything before migrating. LXD migration is a one-way process - the mi
 
 ```bash
 # List all LXD instances
+
 lxc list
 
 # List all LXD storage pools

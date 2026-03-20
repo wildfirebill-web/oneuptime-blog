@@ -62,6 +62,7 @@ Create `nginx/conf.d/portainer.conf`:
 
 ```nginx
 # Redirect HTTP to HTTPS
+
 server {
     listen 80;
     server_name portainer.example.com;
@@ -153,4 +154,4 @@ docker logs portainer --tail 50
 
 ## Conclusion
 
-With Nginx acting as a reverse proxy, Portainer is now accessible over HTTPS on a clean domain. This pattern is easy to extend — you can add rate limiting, IP allowlists, or Basic Auth at the Nginx level without touching Portainer's configuration. For automatic certificate management, consider pairing this setup with Certbot or switching to Traefik.
+With Nginx acting as a reverse proxy, Portainer is now accessible over HTTPS on a clean domain. This pattern is easy to extend - you can add rate limiting, IP allowlists, or Basic Auth at the Nginx level without touching Portainer's configuration. For automatic certificate management, consider pairing this setup with Certbot or switching to Traefik.

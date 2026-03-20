@@ -27,6 +27,7 @@ This guide covers deploying Nuclio on Kubernetes using Flux CD HelmRelease and d
 
 ```yaml
 # clusters/my-cluster/nuclio/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

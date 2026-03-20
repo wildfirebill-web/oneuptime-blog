@@ -87,6 +87,7 @@ The encrypted state looks like binary data. The original JSON structure is compl
 
 ```bash
 # Encrypted state on S3 (not readable)
+
 aws s3 cp s3://myorg-opentofu-state/production/terraform.tfstate - | file -
 # Output: data (not JSON, not text)
 

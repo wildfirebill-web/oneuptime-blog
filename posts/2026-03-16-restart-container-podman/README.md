@@ -18,6 +18,7 @@ The `podman restart` command stops and then starts a container in a single opera
 
 ```bash
 # Start a container
+
 podman run -d --name my-nginx -p 8080:80 docker.io/library/nginx:latest
 
 # Restart the container

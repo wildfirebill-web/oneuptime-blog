@@ -30,6 +30,7 @@ Install cosign:
 
 ```bash
 # macOS
+
 brew install cosign
 
 # Linux

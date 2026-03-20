@@ -34,6 +34,7 @@ Start by selecting a home region. Migration Hub data is stored in a single regio
 
 ```bash
 # Set the Migration Hub home region
+
 aws migrationhub-config create-home-region-control \
     --home-region "us-east-1" \
     --target '{"Type": "ACCOUNT"}'

@@ -8,7 +8,7 @@ Description: Learn how to create EC2 Capacity Reservations using OpenTofu to gua
 
 ## Introduction
 
-EC2 Capacity Reservations reserve EC2 capacity in a specific AZ without long-term commitment. Unlike Reserved Instances, Capacity Reservations ensure you can launch instances when needed—critical for disaster recovery, planned events, or workloads with strict SLAs.
+EC2 Capacity Reservations reserve EC2 capacity in a specific AZ without long-term commitment. Unlike Reserved Instances, Capacity Reservations ensure you can launch instances when needed-critical for disaster recovery, planned events, or workloads with strict SLAs.
 
 ## Prerequisites
 
@@ -19,6 +19,7 @@ EC2 Capacity Reservations reserve EC2 capacity in a specific AZ without long-ter
 
 ```hcl
 # Reserve capacity for 10 t3.large instances in us-east-1a
+
 resource "aws_ec2_capacity_reservation" "web_tier" {
   instance_type     = "t3.large"
   instance_platform = "Linux/UNIX"

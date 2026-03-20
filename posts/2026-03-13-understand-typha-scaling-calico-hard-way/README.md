@@ -82,6 +82,7 @@ Verify these assumptions against your actual resource usage:
 
 ```bash
 # Check Typha memory and CPU usage across all pods
+
 kubectl top pods -n kube-system -l k8s-app=calico-typha
 
 # Compare to the number of Felix clients connected per pod

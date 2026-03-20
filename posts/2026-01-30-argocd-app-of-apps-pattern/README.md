@@ -84,6 +84,7 @@ The root application is your entry point. It watches a directory containing othe
 
 ```yaml
 # apps/root/application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

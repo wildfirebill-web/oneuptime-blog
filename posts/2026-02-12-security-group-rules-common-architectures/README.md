@@ -30,6 +30,7 @@ Create the security group and add rules:
 
 ```bash
 # Create the security group
+
 WEB_SG=$(aws ec2 create-security-group \
   --group-name "web-server-sg" \
   --description "Security group for public web servers" \

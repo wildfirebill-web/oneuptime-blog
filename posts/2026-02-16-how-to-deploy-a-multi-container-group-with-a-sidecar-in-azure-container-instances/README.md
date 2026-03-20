@@ -37,6 +37,7 @@ A common scenario is running your application alongside a Fluentd or Fluent Bit 
 
 ```yaml
 # log-sidecar.yaml - Application with Fluent Bit log forwarder
+
 apiVersion: '2021-09-01'
 location: eastus
 name: app-with-logging
@@ -294,7 +295,7 @@ az container exec \
     --exec-command /bin/sh
 ```
 
-## Resource Allocation Tips
+Resource Allocation Tips
 
 Keep sidecars lightweight. They should use minimal resources since they are auxiliary to the main application:
 

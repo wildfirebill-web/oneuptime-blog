@@ -45,6 +45,7 @@ Useful when piping data from another process:
 
 ```bash
 # Pipe data directly into PostgreSQL
+
 cat customers.csv | psql -d mydb -c "COPY customers FROM STDIN WITH (FORMAT csv, HEADER true)"
 
 # Decompress and load in one step

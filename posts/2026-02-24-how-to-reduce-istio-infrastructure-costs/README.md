@@ -18,6 +18,7 @@ Start by measuring what Istio actually costs you today. Collect these numbers:
 
 ```promql
 # Total CPU reserved by sidecars (in cores)
+
 sum(kube_pod_container_resource_requests{container="istio-proxy", resource="cpu"})
 
 # Total memory reserved by sidecars (in GB)

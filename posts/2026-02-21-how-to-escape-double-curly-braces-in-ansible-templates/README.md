@@ -18,6 +18,7 @@ Consider generating a Prometheus alerting rule file. Prometheus uses Go template
 
 ```yaml
 # This will FAIL - Ansible tries to interpret the Go template variables
+
 - name: This breaks
   ansible.builtin.template:
     src: alert_rules.yml.j2

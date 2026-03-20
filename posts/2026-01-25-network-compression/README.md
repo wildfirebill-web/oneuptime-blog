@@ -159,6 +159,7 @@ backend http_back
 
 ```python
 # compression_middleware.py - Compression in Python web frameworks
+
 import gzip
 import zlib
 from io import BytesIO

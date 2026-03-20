@@ -22,6 +22,7 @@ The most direct way to check etcd database size on Talos Linux is through talosc
 
 ```bash
 # Check etcd status on a single control plane node
+
 talosctl -n 192.168.1.10 etcd status
 
 # Example output:

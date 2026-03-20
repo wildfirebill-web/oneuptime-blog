@@ -35,6 +35,7 @@ Trivy is the most popular open-source container scanner. It is fast, comprehensi
 
 ```bash
 # macOS
+
 brew install trivy
 
 # Linux (Debian/Ubuntu)

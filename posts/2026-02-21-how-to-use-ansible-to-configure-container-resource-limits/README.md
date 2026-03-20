@@ -35,6 +35,7 @@ graph TD
 
 ```yaml
 # roles/resource_limits/tasks/cpu.yml
+
 # Configure CPU limits on containers
 - name: Deploy container with CPU limits
   community.docker.docker_container:

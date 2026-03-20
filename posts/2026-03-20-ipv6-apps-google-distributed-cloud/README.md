@@ -20,6 +20,7 @@ When creating or updating a GDC Bare Metal cluster, set dual-stack in the cluste
 
 ```yaml
 # cluster-config.yaml - GDC Bare Metal dual-stack cluster configuration
+
 apiVersion: baremetal.cluster.gke.io/v1
 kind: Cluster
 metadata:

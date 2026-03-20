@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Environments, Kubeconfig, DevOps
+Tags: Portainer, Kubernetes, Environments, kubeconfig, DevOps
 
 Description: Connect a Kubernetes cluster to Portainer using the agent or kubeconfig for container orchestration management.
 
@@ -35,6 +35,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Add environment via API
+
 curl -X POST \
   https://localhost:9443/api/endpoints \
   -H "Authorization: Bearer $TOKEN" \

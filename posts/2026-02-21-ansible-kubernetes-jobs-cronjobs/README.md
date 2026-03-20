@@ -29,6 +29,7 @@ A Job creates one or more pods that run to completion. Here is a basic example t
 
 ```yaml
 # playbook: run-db-migration.yml
+
 # Runs a one-time database migration Job
 ---
 - name: Run Database Migration

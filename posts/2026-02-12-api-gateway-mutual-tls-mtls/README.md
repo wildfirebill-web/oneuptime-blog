@@ -45,6 +45,7 @@ Create a self-signed CA for testing:
 
 ```bash
 # Generate the CA private key
+
 openssl genrsa -out ca.key 4096
 
 # Create the CA certificate (valid for 10 years)

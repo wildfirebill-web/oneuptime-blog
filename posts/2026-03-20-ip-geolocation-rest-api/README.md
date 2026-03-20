@@ -31,10 +31,11 @@ async def geolocate(ip: str) -> dict:
     return {"error": "lookup failed"}
 ```
 
-## MaxMind GeoLite2 (Local Database — No API Calls)
+## MaxMind GeoLite2 (Local Database - No API Calls)
 
 ```bash
 # Install geoip2 library
+
 pip install geoip2
 
 # Download GeoLite2-City.mmdb from https://dev.maxmind.com/geoip/geolite2-free-geolocation-data
@@ -131,4 +132,4 @@ def cached_geolocate(ip: str) -> tuple:
 
 ## Conclusion
 
-For high-volume APIs, use a local MaxMind GeoLite2 MMDB database — lookups take microseconds and require no network call. External services (ipapi.co, ip-api.com) are convenient for low traffic but add latency and rate limits. Cache results aggressively with `lru_cache` or Redis since IP-to-geo mappings change rarely. Always extract the real client IP using proxy-aware logic before calling the geolocation function, and skip private/loopback addresses which won't have geolocation data.
+For high-volume APIs, use a local MaxMind GeoLite2 MMDB database - lookups take microseconds and require no network call. External services (ipapi.co, ip-api.com) are convenient for low traffic but add latency and rate limits. Cache results aggressively with `lru_cache` or Redis since IP-to-geo mappings change rarely. Always extract the real client IP using proxy-aware logic before calling the geolocation function, and skip private/loopback addresses which won't have geolocation data.

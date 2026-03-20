@@ -27,6 +27,7 @@ Create a Docker-format repository in Artifact Registry to store Helm OCI charts.
 
 ```bash
 # Enable the Artifact Registry API
+
 gcloud services enable artifactregistry.googleapis.com
 
 # Create a Docker-format repository for Helm OCI charts

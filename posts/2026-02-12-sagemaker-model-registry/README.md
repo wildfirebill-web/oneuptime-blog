@@ -37,6 +37,7 @@ role = sagemaker.get_execution_role()
 client = boto3.client('sagemaker')
 
 # Create a model package group
+
 client.create_model_package_group(
     ModelPackageGroupName='fraud-detection-models',
     ModelPackageGroupDescription='Models for real-time fraud detection in payment transactions',

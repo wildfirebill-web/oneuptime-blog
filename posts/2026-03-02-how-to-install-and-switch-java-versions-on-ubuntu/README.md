@@ -14,6 +14,7 @@ Java version management on Ubuntu is a common challenge. Different projects may 
 
 ```bash
 # Check if Java is installed and which version
+
 java -version
 
 # Check the compiler version

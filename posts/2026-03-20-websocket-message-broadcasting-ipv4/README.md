@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, Broadcasting, IPv4, Node.js, Real-Time, ws Library, Pub-Sub
+Tags: WebSocket, Broadcasting, IPv4, Node.js, Real-Time, Ws Library, Pub-Sub
 
 Description: Build a WebSocket server in Node.js that broadcasts messages to all connected IPv4 clients with room-based filtering, binary support, and selective broadcasting.
 
 ## Introduction
 
-Broadcasting is the core feature of real-time WebSocket applications — sending a message from one client to all (or a subset) of connected clients. This guide covers full broadcast, selective broadcast (rooms/channels), and filtered broadcasting patterns.
+Broadcasting is the core feature of real-time WebSocket applications - sending a message from one client to all (or a subset) of connected clients. This guide covers full broadcast, selective broadcast (rooms/channels), and filtered broadcasting patterns.
 
 ## Full Broadcast Server
 
@@ -226,4 +226,4 @@ function sendTyped(ws, type, payload) {
 
 ## Conclusion
 
-WebSocket broadcasting with Node.js's `ws` library is straightforward — iterate over `wss.clients` and send to each connected client. For production applications with many rooms, use a `Map<roomName, Set<WebSocket>>` data structure for O(room size) broadcasts instead of O(all clients). For multi-server deployments, use Redis pub-sub to broadcast across server instances.
+WebSocket broadcasting with Node.js's `ws` library is straightforward - iterate over `wss.clients` and send to each connected client. For production applications with many rooms, use a `Map<roomName, Set<WebSocket>>` data structure for O(room size) broadcasts instead of O(all clients). For multi-server deployments, use Redis pub-sub to broadcast across server instances.

@@ -135,6 +135,7 @@ Verify your image markers follow the correct format:
 
 ```yaml
 # In your deployment manifest
+
 spec:
   containers:
   - name: app

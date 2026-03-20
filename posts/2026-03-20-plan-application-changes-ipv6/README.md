@@ -12,15 +12,16 @@ Applications need changes at several layers to fully support IPv6 clients: serve
 
 ## Change 1: Server Socket Binding
 
-Most common issue — servers bound to `0.0.0.0` miss IPv6 clients:
+Most common issue - servers bound to `0.0.0.0` miss IPv6 clients:
 
 ```python
-# BEFORE — IPv4 only
+# BEFORE - IPv4 only
+
 import socket
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(('0.0.0.0', 8080))
 
-# AFTER — Dual-stack (accepts IPv4 and IPv6 on Linux/macOS)
+# AFTER - Dual-stack (accepts IPv4 and IPv6 on Linux/macOS)
 server = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 server.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)  # 0 = dual-stack
 server.bind(('::', 8080))

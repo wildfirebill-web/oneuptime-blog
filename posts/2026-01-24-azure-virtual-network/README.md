@@ -51,6 +51,7 @@ flowchart TB
 
 ```bash
 # Set variables
+
 RESOURCE_GROUP="network-rg"
 LOCATION="eastus"
 VNET_NAME="production-vnet"

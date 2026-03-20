@@ -34,6 +34,7 @@ Attach a debug container to a running pod. The debug container shares the pod ne
 
 ```bash
 # Attach a busybox debug container to a running pod
+
 kubectl debug -it my-pod --image=busybox --target=my-container
 
 # Use a more full-featured debug image

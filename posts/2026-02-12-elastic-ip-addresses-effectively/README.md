@@ -18,6 +18,7 @@ Allocating an EIP reserves a public IP address in your account. It doesn't cost 
 
 ```bash
 # Allocate an Elastic IP address
+
 aws ec2 allocate-address --domain vpc
 
 # Output includes the allocation ID and the IP address

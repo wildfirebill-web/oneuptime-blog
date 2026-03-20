@@ -27,6 +27,7 @@ The most common use case is creating directory structures on Windows hosts.
 
 ```yaml
 # create-directories.yml - Create directory structures
+
 ---
 - name: Create directories on Windows
   hosts: windows_servers

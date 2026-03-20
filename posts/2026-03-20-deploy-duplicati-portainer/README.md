@@ -1,4 +1,4 @@
-# How to Deploy Duplicati for Backup Management via Portainer
+# How to Deploy Duplicati for Backup Management via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Duplicati
+
 version: "3.8"
 
 services:
@@ -52,7 +53,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 DUPLICATI_PASSWORD=your-web-ui-password
 ```
 
@@ -76,13 +77,13 @@ Open `http://<host>:8200` in your browser. Enter the password you set in `DUPLIC
 
 For S3 or S3-compatible destinations (MinIO, Backblaze B2):
 
-```
+```text
 Destination URL format:
 s3://s3.amazonaws.com/my-bucket/backups/?auth-username=AKIAXXXXXX&auth-password=YOUR_SECRET
 ```
 
 For Backblaze B2:
-```
+```text
 b2://account_id:application_key@bucket-name/path
 ```
 
@@ -111,4 +112,4 @@ docker exec duplicati duplicati-cli list \
 
 ## Conclusion
 
-Duplicati uses block-level deduplication and AES-256 encryption before uploading to the destination — your backup provider never sees unencrypted data. The `PUID`/`PGID` environment variables ensure the container runs as a non-root user with appropriate file permissions. Mount source directories as read-only (`ro`) to prevent accidental modification during backup.
+Duplicati uses block-level deduplication and AES-256 encryption before uploading to the destination - your backup provider never sees unencrypted data. The `PUID`/`PGID` environment variables ensure the container runs as a non-root user with appropriate file permissions. Mount source directories as read-only (`ro`) to prevent accidental modification during backup.

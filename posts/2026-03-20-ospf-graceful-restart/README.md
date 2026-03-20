@@ -19,7 +19,7 @@ OSPF Graceful Restart (RFC 3623) allows a router restarting its OSPF process to 
 
 On Cisco IOS, configure graceful restart under the OSPF process:
 
-```
+```text
 ! Enable GR with default restart interval (120 seconds)
 router ospf 1
  graceful-restart
@@ -29,13 +29,13 @@ router ospf 1
  graceful-restart grace-period 60
 ```
 
-The grace-period should be long enough for the OSPF process to restart and re-synchronize—typically 30–120 seconds depending on the platform.
+The grace-period should be long enough for the OSPF process to restart and re-synchronize-typically 30–120 seconds depending on the platform.
 
 ## Step 2: Configure Graceful Restart on Helper Routers
 
 Neighbors need to act as helpers. By default, Cisco IOS acts as a helper for neighbors that announce GR. You can disable helper mode if needed:
 
-```
+```text
 ! Disable helper mode (this router will NOT help neighbors restart gracefully)
 router ospf 1
  no graceful-restart helper
@@ -45,12 +45,13 @@ router ospf 1
  graceful-restart helper strict-lsa-checking
 ```
 
-`strict-lsa-checking` aborts the GR if any LSA change is received during the restart window—this is more conservative but prevents stale routing.
+`strict-lsa-checking` aborts the GR if any LSA change is received during the restart window-this is more conservative but prevents stale routing.
 
 ## Step 3: Configure GR on FRRouting
 
 ```bash
 # In vtysh or frr.conf
+
 router ospf
  graceful-restart grace-period 60
  graceful-restart helper enable
@@ -60,7 +61,7 @@ router ospf
 
 ## Step 4: Verify Graceful Restart Configuration
 
-```
+```text
 Router# show ip ospf | include graceful
 
 ! Output:
@@ -74,7 +75,7 @@ Router# show ip ospf | include graceful
 
 When a GR event occurs, the restarting router floods a Grace LSA (Type-9 Opaque LSA) informing neighbors:
 
-```
+```text
 ! On a helper router - watch for GR notifications
 Helper# show ip ospf neighbor detail
 
@@ -96,7 +97,7 @@ The helper continues forwarding traffic to the restarting router during this win
 
 ## Step 7: Test Graceful Restart (Lab Only)
 
-```
+```text
 ! Restart OSPF process (simulates an OSPF crash/restart)
 ! WARNING: This drops and re-establishes all OSPF adjacencies
 Router# clear ip ospf process

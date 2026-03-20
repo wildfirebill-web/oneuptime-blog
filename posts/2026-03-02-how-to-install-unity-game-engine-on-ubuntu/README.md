@@ -22,6 +22,7 @@ Before installing, check your system meets Unity's requirements:
 
 ```bash
 # Check your CPU capabilities
+
 grep -m 1 flags /proc/cpuinfo | grep -o 'sse2'
 
 # Check GPU information

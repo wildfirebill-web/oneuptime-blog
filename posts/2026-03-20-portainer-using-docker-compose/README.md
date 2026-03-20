@@ -64,7 +64,7 @@ volumes:
 
 In the Portainer stack editor, scroll down to **Environment variables** and add:
 
-```
+```text
 DATABASE_URL=postgresql://myapp:secret@db:5432/myapp
 SECRET_KEY=supersecretkey
 DB_PASSWORD=secret
@@ -105,6 +105,7 @@ If deploying via Git, Portainer can load an `.env` file from the repository:
 
 ```bash
 # .env
+
 DATABASE_URL=postgresql://myapp:secret@db:5432/myapp
 SECRET_KEY=supersecretkey
 ```
@@ -113,12 +114,12 @@ Enable **Load variables from .env file** in the Portainer Git settings.
 
 ## Stack Templates
 
-Portainer supports App Templates — pre-configured stacks you can deploy with one click. Navigate to **App Templates** to browse the built-in catalog or add your own template repository.
+Portainer supports App Templates - pre-configured stacks you can deploy with one click. Navigate to **App Templates** to browse the built-in catalog or add your own template repository.
 
 ## Troubleshooting
 
 **Service not starting:**
-```
+```text
 Stacks → [stack name] → [service name] → Logs
 ```
 
@@ -128,7 +129,7 @@ Stacks → [stack name] → [service name] → Logs
 
 ## Best Practices
 
-1. **Always pin image versions** in compose files — avoid `:latest` in production
+1. **Always pin image versions** in compose files - avoid `:latest` in production
 2. **Store secrets in environment variables**, not in the compose file
 3. **Use named volumes** for persistent data
 4. **Use Git-based stacks** for version-controlled, auditable deployments

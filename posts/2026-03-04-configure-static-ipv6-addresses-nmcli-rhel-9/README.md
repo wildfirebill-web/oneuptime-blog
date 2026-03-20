@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, IPv6, Nmcli, Networking, Linux
+Tags: RHEL, IPv6, nmcli, Networking, Linux
 
 Description: A hands-on guide to assigning static IPv6 addresses to network interfaces on RHEL using nmcli, covering address configuration, gateway setup, DNS settings, and verification.
 
@@ -29,6 +29,7 @@ First, take a look at what you're working with. List your connections and check 
 
 ```bash
 # List all NetworkManager connections
+
 nmcli connection show
 
 # Show IPv6 details for a specific connection

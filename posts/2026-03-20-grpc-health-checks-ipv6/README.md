@@ -49,6 +49,7 @@ func main() {
 
 ```python
 # server_with_health.py
+
 import grpc
 from concurrent import futures
 from grpc_health.v1 import health
@@ -72,7 +73,7 @@ server.start()
 ## Step 3: Kubernetes Probe Configuration
 
 ```yaml
-# deployment.yaml — use gRPC health check over IPv6
+# deployment.yaml - use gRPC health check over IPv6
 apiVersion: apps/v1
 kind: Deployment
 metadata:

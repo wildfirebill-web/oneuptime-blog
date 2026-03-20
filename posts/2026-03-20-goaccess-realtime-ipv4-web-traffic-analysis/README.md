@@ -14,6 +14,7 @@ GoAccess is a fast, terminal-based and browser-based log analyzer. It parses acc
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install goaccess
 
 # CentOS/RHEL
@@ -102,14 +103,14 @@ goaccess /var/log/nginx/access.log \
 
 ## Useful GoAccess Panels
 
-```
-Visitors     — Unique IPv4 addresses per day
-Requests     — Most requested URLs
-Static Files — .css, .js, .png requests
-404s         — Not found URLs
-Hosts        — Full IPv4 address breakdown with OS/browser
-Status Codes — 2xx/3xx/4xx/5xx distribution
-Bandwidth    — Data transferred per IP
+```text
+Visitors     - Unique IPv4 addresses per day
+Requests     - Most requested URLs
+Static Files - .css, .js, .png requests
+404s         - Not found URLs
+Hosts        - Full IPv4 address breakdown with OS/browser
+Status Codes - 2xx/3xx/4xx/5xx distribution
+Bandwidth    - Data transferred per IP
 ```
 
 ## Cron Job for Daily HTML Reports
@@ -124,4 +125,4 @@ Bandwidth    — Data transferred per IP
 
 ## Conclusion
 
-GoAccess provides instant IPv4 web traffic analytics with zero infrastructure — just a binary and your log files. Use `--real-time-html` with WebSocket for a live browser dashboard, static HTML generation for periodic reports, and `cat access.log*` to include rotated logs. The **Hosts** panel gives a complete breakdown of every IPv4 address accessing your server.
+GoAccess provides instant IPv4 web traffic analytics with zero infrastructure - just a binary and your log files. Use `--real-time-html` with WebSocket for a live browser dashboard, static HTML generation for periodic reports, and `cat access.log*` to include rotated logs. The **Hosts** panel gives a complete breakdown of every IPv4 address accessing your server.

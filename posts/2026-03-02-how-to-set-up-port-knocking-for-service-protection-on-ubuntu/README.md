@@ -22,6 +22,7 @@ The knock sequence is never acknowledged by the server. From the client's perspe
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install the knockd daemon

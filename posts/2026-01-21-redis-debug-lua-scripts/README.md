@@ -16,6 +16,7 @@ Redis Lua scripts enable atomic, complex operations that would otherwise require
 
 ```bash
 # EVAL - execute script directly
+
 redis-cli EVAL "return 'Hello, World!'" 0
 
 # With keys and arguments

@@ -29,6 +29,7 @@ This guide focuses on using diagnostic bundle analysis to guide rollback decisio
 ```bash
 #!/bin/bash
 # analyze-for-rollback.sh
+
 # Compares diagnostic bundles to identify what changed
 
 BEFORE_BUNDLE="$1"

@@ -281,6 +281,7 @@ Structure your quotas into tiers that map to your pricing plans:
 
 ```bash
 # Free tier
+
 kubectl apply -f quotas/free-tier.yaml -n tenant-free
 
 # Standard tier

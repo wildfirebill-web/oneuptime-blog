@@ -76,7 +76,7 @@ int main(void) {
 
     printf("Echo server on 0.0.0.0:%d\n", PORT);
 
-    /* 5. Accept and handle clients (iterative — one at a time) */
+    /* 5. Accept and handle clients (iterative - one at a time) */
     while (1) {
         struct sockaddr_in client_addr;
         socklen_t          client_len = sizeof(client_addr);
@@ -104,6 +104,7 @@ gcc -Wall -Wextra -o echo_server echo_server.c
 ./echo_server
 
 # Test with netcat
+
 echo "Hello, server!" | nc 127.0.0.1 9000
 
 # Or with telnet
@@ -164,4 +165,4 @@ int main(void) {
 
 ## Conclusion
 
-A C TCP echo server follows five steps: `socket()` → `setsockopt(SO_REUSEADDR)` → `bind()` → `listen()` → `accept()` loop. Always loop on `send()` to handle partial sends — the kernel may send fewer bytes than requested. Check `recv()` return value: `>0` means data received, `0` means connection closed by peer, `<0` means error. Use `inet_ntop()` for IP address formatting and `ntohs()`/`htons()` for port byte-order conversion. This iterative server handles one client at a time — see the multi-threaded post for concurrent handling.
+A C TCP echo server follows five steps: `socket()` → `setsockopt(SO_REUSEADDR)` → `bind()` → `listen()` → `accept()` loop. Always loop on `send()` to handle partial sends - the kernel may send fewer bytes than requested. Check `recv()` return value: `>0` means data received, `0` means connection closed by peer, `<0` means error. Use `inet_ntop()` for IP address formatting and `ntohs()`/`htons()` for port byte-order conversion. This iterative server handles one client at a time - see the multi-threaded post for concurrent handling.

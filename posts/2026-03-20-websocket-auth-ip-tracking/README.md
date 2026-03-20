@@ -14,7 +14,8 @@ import websockets
 from websockets.server import WebSocketServerProtocol
 from websockets.exceptions import ConnectionClosed
 
-# Simple token store — use a database or JWT in production
+# Simple token store - use a database or JWT in production
+
 VALID_TOKENS = {"secret-token-abc": "user1", "secret-token-xyz": "user2"}
 
 connected: dict[WebSocketServerProtocol, dict] = {}
@@ -127,4 +128,4 @@ async def handler(websocket):
 
 ## Conclusion
 
-Authenticate WebSocket connections during the HTTP upgrade handshake — the `request_headers` (Python `websockets`) and `req.url`/`req.headers` (Node.js `ws`) are available before the WebSocket protocol takes over. Store authenticated session info (user, IP) in a client registry for access control and audit logging. Implement per-IP rate limiting on incoming messages to protect against abusive clients. Close with application error codes in the 4000-4999 range to distinguish auth failures from protocol errors.
+Authenticate WebSocket connections during the HTTP upgrade handshake - the `request_headers` (Python `websockets`) and `req.url`/`req.headers` (Node.js `ws`) are available before the WebSocket protocol takes over. Store authenticated session info (user, IP) in a client registry for access control and audit logging. Implement per-IP rate limiting on incoming messages to protect against abusive clients. Close with application error codes in the 4000-4999 range to distinguish auth failures from protocol errors.

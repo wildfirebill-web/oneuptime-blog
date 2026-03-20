@@ -47,6 +47,7 @@ Application Impact:
 
 ```python
 # Connection errors
+
 redis.exceptions.ConnectionError: Error while reading from socket
 
 # Timeout errors

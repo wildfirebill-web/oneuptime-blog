@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Telecommunications, Telco, 5G, CNF, DPDK, SR-IOV, Kubernetes
 
-Description: Configure Rancher for telecommunications workloads including Cloud Native Functions (CNFs), 5G core network deployments, SR-IOV for packet processing, DPDK, and ultra-low latency networking required for telco-grade Kubernetes.
+Description: Configure Rancher for telecommunications workloads including Cloud Native Functions (CNFs), 5G core network deployments, SR-IOV for packet processing, DPDK, and ultra-low latency networking...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Telecommunications is one of the most demanding use cases for Kubernetes. 5G net
 
 ## Telco Architecture with Rancher
 
-```
+```text
                     ┌────────────────────────┐
                     │  Rancher Management     │
                     └────────────┬───────────┘
@@ -31,6 +31,7 @@ Telecommunications is one of the most demanding use cases for Kubernetes. 5G net
 
 ```bash
 # Install real-time kernel on telco worker nodes
+
 # RHEL-based systems
 yum install -y kernel-rt kernel-rt-devel tuned-profiles-realtime
 

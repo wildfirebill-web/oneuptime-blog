@@ -14,6 +14,7 @@ Azure App Service Plans define the compute resources for running App Service app
 
 ```hcl
 # main.tf - Standard App Service Plan for production web apps
+
 resource "azurerm_service_plan" "standard_plan" {
   name                = "my-app-service-plan"
   location            = azurerm_resource_group.rg.location

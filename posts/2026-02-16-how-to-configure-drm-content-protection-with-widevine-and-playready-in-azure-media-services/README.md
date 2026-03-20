@@ -53,6 +53,7 @@ The following Azure CLI command creates a content key policy with both PlayReady
 
 ```bash
 # Create a content key policy with PlayReady and Widevine license templates
+
 az ams content-key-policy create \
   --resource-group myResourceGroup \
   --account-name myMediaServicesAccount \

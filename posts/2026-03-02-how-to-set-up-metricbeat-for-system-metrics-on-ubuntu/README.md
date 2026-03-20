@@ -25,6 +25,7 @@ Elastic provides a dedicated APT repository. Add it and install Metricbeat:
 
 ```bash
 # Import the Elastic GPG key
+
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
 
 # Add the APT repository

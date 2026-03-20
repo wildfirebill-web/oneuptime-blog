@@ -20,6 +20,7 @@ A list variable is declared with `type = list(element_type)`:
 # variables.tf
 
 # List of strings
+
 variable "availability_zones" {
   description = "List of AZs to deploy resources in"
   type        = list(string)

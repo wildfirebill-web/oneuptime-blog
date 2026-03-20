@@ -24,6 +24,7 @@ This installs the core Powertools library along with the batch processing extras
 
 ```bash
 # Install Lambda Powertools with all extras
+
 pip install aws-lambda-powertools[all]
 
 # Or just the batch processing module

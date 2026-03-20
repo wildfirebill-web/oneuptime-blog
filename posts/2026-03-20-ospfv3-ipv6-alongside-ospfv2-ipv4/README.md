@@ -58,6 +58,7 @@ EOF
 
 ```bash
 # Show OSPFv3 neighbors (uses link-local addresses)
+
 vtysh -c "show ipv6 ospf6 neighbor"
 
 # Show OSPFv3 routes
@@ -72,13 +73,13 @@ vtysh -c "show ip route ospf"
 
 ## Cisco IOS Dual-Stack OSPF
 
-```
+```text
 ! OSPFv2 for IPv4
 router ospf 1
   router-id 10.0.0.1
   network 10.0.0.0 0.0.0.3 area 0
 
-! OSPFv3 for IPv6 — enable on interfaces
+! OSPFv3 for IPv6 - enable on interfaces
 interface GigabitEthernet0/0
   ipv6 address 2001:db8:1::1/64
   ipv6 ospf 1 area 0          ! Interface-level activation for OSPFv3
@@ -88,7 +89,7 @@ ipv6 router ospf 1
   router-id 10.0.0.1
 ```
 
-## OSPFv3 Address Families (AF — IPv4 over OSPFv3)
+## OSPFv3 Address Families (AF - IPv4 over OSPFv3)
 
 OSPFv3 can also carry IPv4 routes via the Address Family feature (RFC 5838), eliminating the need for a separate OSPFv2 process:
 

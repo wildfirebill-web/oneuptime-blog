@@ -54,6 +54,7 @@ And the Dockerfile is just a standard Docker file.
 
 ```dockerfile
 # docker/web-app/Dockerfile
+
 FROM node:20-alpine
 
 WORKDIR /app

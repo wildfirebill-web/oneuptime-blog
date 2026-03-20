@@ -23,6 +23,7 @@ Every pod that doesn't specify a service account runs as `default`. If your SA p
 
 ```yaml
 # MISSING: explicit deny for default SA
+
 # Always add a catch-all deny after your allow rules:
 spec:
   ingress:

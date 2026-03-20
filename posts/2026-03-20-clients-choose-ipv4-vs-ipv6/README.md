@@ -24,6 +24,7 @@ The default policy table on Linux:
 
 ```bash
 # View the current address selection policy table
+
 ip addrlabel list
 
 # Or check /etc/gai.conf (getaddrinfo configuration)
@@ -34,10 +35,10 @@ cat /etc/gai.conf
 
 The `getaddrinfo()` system call uses `/etc/gai.conf` to sort addresses. The default policy table (from RFC 6724) ranks:
 
-```
+```text
 # /etc/gai.conf (Linux)
-# label <prefix> <label>   — assign labels to address ranges
-# precedence <prefix> <value> — higher precedence = preferred
+# label <prefix> <label>   - assign labels to address ranges
+# precedence <prefix> <value> - higher precedence = preferred
 
 # Prefer IPv6 loopback
 label  ::1/128       0
@@ -63,17 +64,17 @@ precedence  ::ffff:0:0/96 10
 
 RFC 6724 defines 10 rules applied in order. Key rules are:
 
-**Rule 1: Avoid unusable addresses** — Prefer reachable destinations over unreachable ones.
+**Rule 1: Avoid unusable addresses** - Prefer reachable destinations over unreachable ones.
 
-**Rule 4: Prefer home address** — If Mobile IPv6 is used, prefer the home address.
+**Rule 4: Prefer home address** - If Mobile IPv6 is used, prefer the home address.
 
-**Rule 6: Prefer matching label** — Prefer destination addresses where the src/dst labels match.
+**Rule 6: Prefer matching label** - Prefer destination addresses where the src/dst labels match.
 
-**Rule 8: Prefer shorter prefix** — Prefer the most specific/longest matching address.
+**Rule 8: Prefer shorter prefix** - Prefer the most specific/longest matching address.
 
-**Rule 9: Use longest matching prefix** — Prefer source addresses that share the most prefix bits with the destination.
+**Rule 9: Use longest matching prefix** - Prefer source addresses that share the most prefix bits with the destination.
 
-**Rule 10: Otherwise prefer by policy** — Use the precedence table (`/etc/gai.conf`).
+**Rule 10: Otherwise prefer by policy** - Use the precedence table (`/etc/gai.conf`).
 
 ## Why IPv6 Is Preferred by Default
 

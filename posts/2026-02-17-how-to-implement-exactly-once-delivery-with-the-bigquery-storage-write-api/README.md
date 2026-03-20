@@ -56,6 +56,7 @@ Here is how to create a committed write stream in Python.
 
 ```python
 # exactly_once_writer.py - Exactly-once delivery using committed streams
+
 from google.cloud import bigquery_storage_v1
 from google.cloud.bigquery_storage_v1 import types
 from google.protobuf import descriptor_pb2

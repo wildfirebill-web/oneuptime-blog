@@ -30,6 +30,7 @@ The most common imperative operation is restarting pods. The traditional approac
 
 ```bash
 # Restart a deployment through ArgoCD
+
 argocd app actions run my-app restart --kind Deployment --resource-name my-deployment
 ```
 

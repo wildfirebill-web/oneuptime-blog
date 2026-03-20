@@ -245,6 +245,7 @@ Before and after optimizing, measure your actual bundle size. Webpack Bundle Ana
 
 ```bash
 # For webpack: install and run the bundle analyzer
+
 npm install --save-dev webpack-bundle-analyzer
 
 # Add to your webpack config:

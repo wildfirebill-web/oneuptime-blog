@@ -14,6 +14,7 @@ Yacht is a lightweight Docker container management UI popular in homelab setups.
 
 ```bash
 # Backup Yacht data before migration
+
 docker inspect yacht --format '{{json .Mounts}}' | python3 -m json.tool
 
 # Backup the config
@@ -112,4 +113,4 @@ docker rmi selfhostedpro/yacht:latest
 
 ## Conclusion
 
-Migrating from Yacht to Portainer is a simple, non-disruptive process. All existing containers continue running during migration. Portainer provides team collaboration, advanced stack management, and a path to Kubernetes and edge deployments—making it a future-proof replacement for homelab users who need to scale.
+Migrating from Yacht to Portainer is a simple, non-disruptive process. All existing containers continue running during migration. Portainer provides team collaboration, advanced stack management, and a path to Kubernetes and edge deployments-making it a future-proof replacement for homelab users who need to scale.

@@ -30,6 +30,7 @@ First, ensure your edge device runs a Docker version with Wasm support. Docker D
 
 ```bash
 # Check Docker version and containerd status on the edge device
+
 docker version
 docker info | grep -i containerd
 ```
@@ -264,7 +265,7 @@ docker swarm init --advertise-addr 192.168.1.100
 docker swarm join --token <worker-token> 192.168.1.100:2377
 ```
 
-## Resource Constraints on Edge Devices
+Resource Constraints on Edge Devices
 
 Edge devices have limited resources. Set strict limits on your containers:
 

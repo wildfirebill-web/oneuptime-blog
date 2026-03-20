@@ -8,7 +8,7 @@ Description: Learn how to discover, evaluate, and deploy pre-built policies from
 
 ## Introduction
 
-The Kubewarden Policy Hub (https://hub.kubewarden.io) is a community registry of pre-built, ready-to-use admission policies. Instead of writing policies from scratch, you can search the hub for policies that address your specific needs — from pod security to resource quotas, network policies, and more — and deploy them directly to your cluster.
+The Kubewarden Policy Hub (https://hub.kubewarden.io) is a community registry of pre-built, ready-to-use admission policies. Instead of writing policies from scratch, you can search the hub for policies that address your specific needs - from pod security to resource quotas, network policies, and more - and deploy them directly to your cluster.
 
 This guide covers how to discover policies on the hub, evaluate them with `kwctl`, and deploy them to your Kubernetes cluster.
 
@@ -31,6 +31,7 @@ Visit https://hub.kubewarden.io to browse policies:
 
 ```bash
 # Search for policies in the hub
+
 kwctl search pod-security
 
 # Search for privileged-related policies

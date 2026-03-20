@@ -108,6 +108,7 @@ Know the different ways to get data into BigQuery:
 
 ```bash
 # Load a CSV file from Cloud Storage into BigQuery
+
 bq load \
   --source_format=CSV \
   --autodetect \

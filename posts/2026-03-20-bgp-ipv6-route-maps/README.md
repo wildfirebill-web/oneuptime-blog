@@ -12,7 +12,7 @@ Route maps are policy tools that can match BGP routes based on multiple criteria
 
 ## Route Map Structure
 
-```
+```text
 route-map <name> [permit|deny] <sequence-number>
  match [criteria]
  set [action]
@@ -57,7 +57,7 @@ configure terminal
 ! Set MED on outbound routes to influence peer's return path
 route-map SET_MED_OUT permit 10
  match ipv6 address prefix-list MY_NETS
- set metric 100    ! MED value — lower = preferred
+ set metric 100    ! MED value - lower = preferred
 
 router bgp 65001
  address-family ipv6 unicast
@@ -113,8 +113,8 @@ router bgp 65001
 
 ## Cisco IOS Route Maps for IPv6 BGP
 
-```
-! Cisco — Route map with LOCAL_PREF
+```text
+! Cisco - Route map with LOCAL_PREF
 Router(config)# ipv6 prefix-list PREF_PEER seq 10 permit 2001:db8:peer::/48 le 64
 
 Router(config)# route-map SET_PREF permit 10
@@ -132,6 +132,7 @@ Router(config-router-af)#  neighbor 2001:db8:peer::2 route-map SET_PREF in
 
 ```bash
 # FRRouting: show route map hit counts
+
 vtysh -c "show route-map SET_LOCAL_PREF"
 
 # Check if routes from peer have correct LOCAL_PREF

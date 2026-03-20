@@ -1,4 +1,4 @@
-# How to Set Up Debug Containers in Rancher
+# How to Set Up Debug Containers in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Debug containers allow you to troubleshoot running pods by injecting a container
 
 ```bash
 # Ephemeral containers are enabled by default in Kubernetes 1.25+
+
 # For earlier versions, check the feature gate
 kubectl get --raw /version | jq .gitVersion
 

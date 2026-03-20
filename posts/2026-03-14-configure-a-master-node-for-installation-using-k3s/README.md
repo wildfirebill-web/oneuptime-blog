@@ -29,6 +29,7 @@ Set kernel parameters required for Cilium's eBPF datapath:
 
 ```bash
 # Configure kernel parameters for Cilium
+
 # These settings are required for eBPF operation and IP forwarding
 cat > /etc/sysctl.d/99-cilium.conf << 'EOF'
 # Enable IP forwarding for pod networking

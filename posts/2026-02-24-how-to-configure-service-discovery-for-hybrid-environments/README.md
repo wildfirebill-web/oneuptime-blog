@@ -37,6 +37,7 @@ All services in the mesh need to trust each other's mTLS certificates. Generate 
 
 ```bash
 # Create root CA
+
 openssl req -new -newkey rsa:4096 -x509 -sha256 \
   -days 3650 -nodes -out root-cert.pem -keyout root-key.pem \
   -subj "/O=MyOrg/CN=Root CA"

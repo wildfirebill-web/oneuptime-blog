@@ -75,6 +75,7 @@ First, create a resource group if you don't have one:
 
 ```bash
 # Create a resource group based on tags
+
 aws resource-groups create-group \
   --name "my-web-app" \
   --resource-query '{

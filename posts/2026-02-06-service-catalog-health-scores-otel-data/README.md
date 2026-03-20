@@ -28,6 +28,7 @@ Each component maps to a query against your OpenTelemetry data. The scorer norma
 
 ```python
 # health_scorer/model.py
+
 from dataclasses import dataclass
 from typing import List
 

@@ -30,6 +30,7 @@ graph TD
 
 ```bash
 # Install required Ansible collection and Python packages
+
 ansible-galaxy collection install kubernetes.core
 pip install kubernetes
 ```

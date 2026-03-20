@@ -40,7 +40,7 @@ volumes:
 
 ## Environment Variables
 
-```
+```text
 RABBITMQ_USER = admin
 RABBITMQ_PASSWORD = secure-rabbitmq-password
 ```
@@ -49,6 +49,7 @@ RABBITMQ_PASSWORD = secure-rabbitmq-password
 
 ```ini
 # rabbitmq.conf
+
 # Networking
 listeners.tcp.default = 5672
 
@@ -72,7 +73,7 @@ log.console.level = info
 ## Pre-Load Definitions (Queues and Exchanges)
 
 ```json
-// definitions.json — pre-configure queues/exchanges
+// definitions.json - pre-configure queues/exchanges
 {
   "rabbit_version": "3.13",
   "vhosts": [{"name": "/"}],

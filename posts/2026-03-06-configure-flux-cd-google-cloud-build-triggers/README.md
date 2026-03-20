@@ -44,6 +44,7 @@ Create repositories for both container images and OCI artifacts.
 
 ```bash
 # Create a Docker repository for container images
+
 gcloud artifacts repositories create app-images \
   --repository-format=docker \
   --location=us-central1 \

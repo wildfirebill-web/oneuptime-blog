@@ -1,4 +1,4 @@
-# How to Install Portainer on WSL2 with Ubuntu
+# How to Install Portainer on WSL2 with Ubuntu - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ WSL2 (Windows Subsystem for Linux 2) lets you run a full Linux environment insid
 
 ```powershell
 # In PowerShell (Admin), install WSL2 with Ubuntu
+
 wsl --install -d Ubuntu-22.04
 
 # Set WSL2 as default version
@@ -148,11 +149,11 @@ docker run -d \
 
 With WSL2's localhost forwarding, access directly from Windows browser:
 
-```
+```text
 http://localhost:9000
 ```
 
-No additional configuration needed — WSL2 automatically forwards ports to Windows.
+No additional configuration needed - WSL2 automatically forwards ports to Windows.
 
 ## Step 9: Windows Terminal Integration
 

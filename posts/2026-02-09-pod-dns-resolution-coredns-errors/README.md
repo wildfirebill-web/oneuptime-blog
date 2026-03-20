@@ -24,6 +24,7 @@ Test DNS resolution from a pod to confirm failures.
 
 ```bash
 # Create a debug pod
+
 kubectl run dns-test --image=busybox:latest -it --rm --restart=Never -- sh
 
 # Inside the pod, test DNS

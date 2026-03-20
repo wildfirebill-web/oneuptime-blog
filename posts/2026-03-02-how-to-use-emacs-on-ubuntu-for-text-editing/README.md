@@ -14,6 +14,7 @@ Emacs is one of the oldest and most extensible text editors still in active deve
 
 ```bash
 # Install the latest Emacs from Ubuntu repositories
+
 sudo apt update
 sudo apt install emacs
 

@@ -52,6 +52,7 @@ Before creating a private cloud, you need:
 
 ```bash
 # Enable the VMware Engine API
+
 gcloud services enable vmwareengine.googleapis.com \
     --project=my-project
 ```

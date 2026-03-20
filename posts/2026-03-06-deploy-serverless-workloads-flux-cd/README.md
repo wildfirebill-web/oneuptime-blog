@@ -27,6 +27,7 @@ Deploy OpenFaaS as a serverless platform:
 
 ```yaml
 # infrastructure/serverless/openfaas-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

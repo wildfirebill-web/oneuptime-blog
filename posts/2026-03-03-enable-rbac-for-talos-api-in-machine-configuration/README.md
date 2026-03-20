@@ -28,6 +28,7 @@ RBAC is enabled through the `machine.features` section of the Talos machine conf
 
 ```yaml
 # Enable RBAC for the Talos API
+
 machine:
   features:
     rbac: true

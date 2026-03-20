@@ -28,6 +28,7 @@ Before configuring remote write, deploy Mimir. Here's a basic Kubernetes deploym
 
 ```yaml
 # mimir-deployment.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -381,7 +382,7 @@ prometheus:
         remoteTimeout: 30s
 ```
 
-### Resource Limits
+Resource Limits
 
 Ensure Prometheus has sufficient resources for remote write:
 

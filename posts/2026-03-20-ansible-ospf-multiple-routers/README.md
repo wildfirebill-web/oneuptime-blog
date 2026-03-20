@@ -10,6 +10,7 @@ Description: Learn how to automate OSPF configuration across multiple Cisco IOS 
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   children:
     ospf_routers:

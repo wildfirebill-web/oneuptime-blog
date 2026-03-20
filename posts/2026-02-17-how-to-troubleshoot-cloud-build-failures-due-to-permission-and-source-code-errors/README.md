@@ -16,6 +16,7 @@ The first step with any Cloud Build failure is reading the logs:
 
 ```bash
 # List recent builds and their status
+
 gcloud builds list --limit=10 --format="table(id, status, startTime, source.repoSource.repoName)"
 
 # Get detailed logs for a specific build

@@ -34,6 +34,7 @@ CloudNativePG offers several advantages:
 
 ```bash
 # Add the CloudNativePG Helm repository
+
 helm repo add cloudnative-pg https://cloudnative-pg.github.io/charts
 helm repo update
 

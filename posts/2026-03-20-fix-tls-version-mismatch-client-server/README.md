@@ -1,4 +1,4 @@
-# How to Fix TLS Version Mismatch Between Client and Server
+# How to Fix TLS Version Mismatch Between Client and Server - Client Server
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,7 +14,7 @@ TLS version mismatches occur when a client supports a maximum TLS version that's
 
 ## Common TLS Version Mismatch Errors
 
-```
+```text
 SSL_ERROR_UNSUPPORTED_VERSION
 TLS handshake failed: tlsv1 alert protocol version
 ssl handshake failure
@@ -42,6 +42,7 @@ TLSV1_ALERT_PROTOCOL_VERSION
 
 ```bash
 # Test TLS 1.2
+
 openssl s_client -connect example.com:443 -tls1_2 2>&1 | grep "Protocol"
 
 # Test TLS 1.3
@@ -74,19 +75,19 @@ sudo nmap --script ssl-enum-ciphers -p 443 example.com
 
 **Problem**: Legacy client supports only TLS 1.0/1.1, server requires TLS 1.2+
 
-### Fix — Upgrade the Client
+### Fix - Upgrade the Client
 
 ```bash
-# Python — upgrade to TLS 1.2+
+# Python - upgrade to TLS 1.2+
 pip install --upgrade requests urllib3
 
-# Java — set TLS version
+# Java - set TLS version
 java -Dhttps.protocols=TLSv1.2,TLSv1.3 MyApp
 
 # Node.js
 node --tls-min-v1.2 app.js
 
-# curl — specify TLS version
+# curl - specify TLS version
 curl --tlsv1.2 https://example.com
 ```
 
@@ -96,10 +97,10 @@ curl --tlsv1.2 https://example.com
 
 **Problem**: Modern client has disabled TLS 1.0/1.1, legacy server only supports them
 
-### Fix — Upgrade the Server
+### Fix - Upgrade the Server
 
 ```nginx
-# Nginx — enable TLS 1.2 minimum
+# Nginx - enable TLS 1.2 minimum
 ssl_protocols TLSv1.2 TLSv1.3;
 ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:...;
 ```
@@ -112,10 +113,10 @@ SSLProtocol -all +TLSv1.2 +TLSv1.3
 ### Temporary Workaround (NOT recommended for production)
 
 ```bash
-# curl — allow TLS 1.0 (insecure)
+# curl - allow TLS 1.0 (insecure)
 curl --tlsv1.0 --tls-max 1.0 https://legacy.example.com
 
-# OpenSSL — connect with TLS 1.0
+# OpenSSL - connect with TLS 1.0
 openssl s_client -connect legacy.example.com:443 -tls1
 ```
 
@@ -205,7 +206,7 @@ curl -v https://example.com 2>&1 | grep -E "TLS|SSL|< HTTP"
 
 ## Best Practices
 
-1. **Require TLS 1.2 minimum** on all new services — TLS 1.0/1.1 are deprecated
+1. **Require TLS 1.2 minimum** on all new services - TLS 1.0/1.1 are deprecated
 2. **Enable TLS 1.3** on servers for modern clients to use the faster handshake
 3. **Upgrade legacy clients** rather than downgrading server TLS requirements
 4. **Use SSL Labs** (ssllabs.com) to test public-facing services

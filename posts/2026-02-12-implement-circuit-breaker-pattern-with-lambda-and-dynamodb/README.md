@@ -35,6 +35,7 @@ In a serverless architecture, Lambda functions are stateless. Each invocation mi
 
 ```bash
 # Create the circuit breaker state table
+
 aws dynamodb create-table \
   --table-name circuit-breakers \
   --attribute-definitions AttributeName=serviceName,AttributeType=S \

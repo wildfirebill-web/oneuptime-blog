@@ -8,7 +8,7 @@ Description: Learn how to create and configure custom Longhorn StorageClasses to
 
 ## Introduction
 
-Kubernetes StorageClasses allow administrators to define different storage tiers with varying performance characteristics, replication policies, and access modes. Longhorn supports rich StorageClass customization, enabling you to create multiple classes for different use cases — from high-availability production volumes to lightweight development storage.
+Kubernetes StorageClasses allow administrators to define different storage tiers with varying performance characteristics, replication policies, and access modes. Longhorn supports rich StorageClass customization, enabling you to create multiple classes for different use cases - from high-availability production volumes to lightweight development storage.
 
 ## Understanding Longhorn StorageClass Parameters
 
@@ -32,6 +32,7 @@ After installation, Longhorn creates a default StorageClass:
 
 ```yaml
 # View the default Longhorn StorageClass
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
@@ -225,4 +226,4 @@ kubectl get pvc app-data
 
 ## Conclusion
 
-Longhorn's flexible StorageClass system allows you to define storage policies that match the requirements of different workloads. By creating multiple classes — from high-availability production tiers to lightweight development storage — you can optimize resource usage and ensure that each application gets the right storage characteristics. Always test new StorageClasses in a non-production environment before rolling them out to critical workloads.
+Longhorn's flexible StorageClass system allows you to define storage policies that match the requirements of different workloads. By creating multiple classes - from high-availability production tiers to lightweight development storage - you can optimize resource usage and ensure that each application gets the right storage characteristics. Always test new StorageClasses in a non-production environment before rolling them out to critical workloads.

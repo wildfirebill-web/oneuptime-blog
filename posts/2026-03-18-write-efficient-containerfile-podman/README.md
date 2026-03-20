@@ -22,6 +22,7 @@ Every instruction in a Containerfile creates a new layer in the resulting image.
 
 ```dockerfile
 # Each of these instructions creates a separate layer
+
 FROM node:20-alpine
 WORKDIR /app
 COPY package.json .

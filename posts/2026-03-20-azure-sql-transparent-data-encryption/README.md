@@ -14,6 +14,7 @@ Transparent Data Encryption (TDE) protects Azure SQL databases, managed instance
 
 ```hcl
 # main.tf - Key Vault for TDE customer-managed key
+
 data "azurerm_client_config" "current" {}
 
 resource "azurerm_key_vault" "tde_kv" {

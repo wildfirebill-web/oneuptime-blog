@@ -32,6 +32,7 @@ For a programmatic approach, you can query the ingestion metrics directly.
 
 ```bash
 # Get log ingestion volume by resource type for the last 7 days
+
 gcloud monitoring time-series list \
   --filter='metric.type = "logging.googleapis.com/billing/bytes_ingested"' \
   --interval-start-time=$(date -u -v-7d +%Y-%m-%dT%H:%M:%SZ) \

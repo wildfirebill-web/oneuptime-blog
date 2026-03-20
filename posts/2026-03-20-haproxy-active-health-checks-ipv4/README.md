@@ -107,6 +107,7 @@ defaults
 
 ```bash
 # Monitor health check events
+
 sudo journalctl -u haproxy -f | grep "health check"
 
 # Or from syslog

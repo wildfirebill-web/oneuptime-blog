@@ -1,4 +1,4 @@
-# How to Configure Longhorn Network File System Server
+# How to Configure Longhorn Network File System Server - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ Each RWX PVC gets its own NFS share manager pod. The pod serves as an NFS 4.1 se
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install -y nfs-common
 
 # RHEL/CentOS/Rocky
@@ -139,7 +140,7 @@ The `nfsOptions` in the StorageClass control how pods mount the NFS share:
 
 ## Best Practices
 
-- Use `vers=4.1` not `vers=3` — NFS4 provides better locking semantics.
+- Use `vers=4.1` not `vers=3` - NFS4 provides better locking semantics.
 - Run the share manager on nodes with SSD storage to minimize NFS server latency.
-- Set `hard` mount option for production — `soft` will silently lose writes on network issues.
+- Set `hard` mount option for production - `soft` will silently lose writes on network issues.
 - Place the share manager pod on a node with reserved resources using Longhorn's node affinity settings.

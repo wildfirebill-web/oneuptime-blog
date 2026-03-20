@@ -94,6 +94,7 @@ Check that routes are being advertised with the configured communities:
 
 ```bash
 # View advertised routes with communities
+
 cilium bgp routes advertised ipv4 unicast
 
 # Check BGP peer state

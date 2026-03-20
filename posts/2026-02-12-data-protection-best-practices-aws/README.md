@@ -75,6 +75,7 @@ resource "aws_macie2_classification_job" "pii_scan" {
 }
 
 # Custom data identifier for account numbers
+
 resource "aws_macie2_custom_data_identifier" "account_number" {
   name        = "account-number"
   regex       = "ACC-[0-9]{10}"

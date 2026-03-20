@@ -24,6 +24,7 @@ F5 BIG-IP is a common choice in enterprise environments for load balancing Ranch
 # TMSH commands for F5 configuration
 
 # Create HTTPS health monitor for Rancher
+
 tmsh create ltm monitor https rancher_https_monitor {
     defaults-from https
     interval 10

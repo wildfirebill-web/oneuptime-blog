@@ -29,6 +29,7 @@ First, create a dataset to hold the billing data. I recommend putting it in a de
 
 ```bash
 # Create a dataset for billing data
+
 bq mk --dataset \
   --location=US \
   --description="GCP billing export data" \

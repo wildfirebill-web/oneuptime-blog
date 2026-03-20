@@ -36,6 +36,7 @@ variable "aws_region" {
 }
 
 # Use the official Ubuntu 22.04 AMI as starting point
+
 data "amazon-ami" "ubuntu" {
   filters = {
     name                = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"

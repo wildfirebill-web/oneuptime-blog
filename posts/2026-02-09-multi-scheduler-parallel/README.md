@@ -28,6 +28,7 @@ Before adding schedulers, understand what you're working with. The default sched
 
 ```bash
 # View the default scheduler
+
 kubectl get pods -n kube-system -l component=kube-scheduler
 
 # Check its configuration

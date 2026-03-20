@@ -51,6 +51,7 @@ Reviewers should always check the Terraform plan output before approving:
 # Look for these warning signs in the plan:
 
 # Force replacement - could cause downtime
+
 -/+ resource "aws_db_instance" "main" {
     # This will destroy and recreate the database!
   }

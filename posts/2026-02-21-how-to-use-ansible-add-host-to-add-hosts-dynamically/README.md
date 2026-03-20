@@ -16,6 +16,7 @@ The `add_host` module takes a hostname and optionally a group name. Once you cal
 
 ```yaml
 # simple-add-host.yml - Add a single host at runtime
+
 ---
 - name: Add a new host dynamically
   hosts: localhost

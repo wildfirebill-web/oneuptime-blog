@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Routing, Linux, Networking, ip-command, IPv4, Troubleshooting
+Tags: Routing, Linux, Networking, Ip-command, IPv4, Troubleshooting
 
 Description: Remove unwanted or incorrect IPv4 routes from the Linux kernel routing table using the ip route del command.
 
@@ -16,6 +16,7 @@ Always verify the exact route before deleting:
 
 ```bash
 # Display the full routing table
+
 ip route show
 
 # Find a specific route
@@ -25,7 +26,7 @@ ip route show | grep 10.50.0.0
 ## Deleting a Default Route
 
 ```bash
-# Remove the default route (use with care — disconnects all non-local traffic)
+# Remove the default route (use with care - disconnects all non-local traffic)
 sudo ip route del default
 
 # Delete default route via a specific gateway

@@ -162,6 +162,7 @@ def benchmark_chunk_sizes(
 
 
 # Example: Finding optimal chunk size for data transformation
+
 def transform_records(records: List[dict]) -> List[dict]:
     """CPU-intensive transformation applied to each record."""
     return [

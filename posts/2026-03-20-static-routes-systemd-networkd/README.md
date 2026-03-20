@@ -1,4 +1,4 @@
-# How to Configure Static Routes with systemd-networkd
+# How to Configure Static Routes with systemd-networkd - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -93,6 +93,7 @@ sudo systemctl restart systemd-networkd
 ```bash
 ip route show
 # or
+
 routel
 ```
 

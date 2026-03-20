@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Config Generation, former, Terraformer, Migration, Infrastructure as Code
+Tags: OpenTofu, Config Generation, Former, Terraformer, Migration, Infrastructure as Code
 
 Description: Learn how to use third-party tools like Terraformer, former2, and cloud-native export tools to generate OpenTofu configurations from existing cloud infrastructure.
 
@@ -21,10 +21,11 @@ graph TD
     A --> F[gcloud export<br/>GCP built-in]
 ```
 
-## Terraformer — Multi-Cloud Bulk Export
+## Terraformer - Multi-Cloud Bulk Export
 
 ```bash
 # Install Terraformer
+
 brew install terraformer
 
 # Or download binary
@@ -53,7 +54,7 @@ terraformer import azure \
   --path-output=./generated/azure
 ```
 
-## former2 — AWS Browser-Based Export
+## former2 - AWS Browser-Based Export
 
 ```bash
 # former2 is a web app at https://former2.com
@@ -138,7 +139,7 @@ tofu plan
 ## Best Practices
 
 - Use Terraformer for bulk multi-resource exports across an entire environment; use `tofu import` blocks for targeted imports of specific resources.
-- Always run `tofu plan` after importing generated configs — non-empty plans indicate the generated configuration doesn't accurately reflect the actual resource state.
-- Clean up Terraformer output before committing — it includes auto-generated names like `tfer--`, hardcoded ARNs, and redundant computed attributes.
-- Do generated configuration migrations environment by environment, starting with dev — apply and validate before moving to production.
-- Treat generated configuration as a starting point, not a finished product — it always requires cleanup and refactoring to follow your team's conventions.
+- Always run `tofu plan` after importing generated configs - non-empty plans indicate the generated configuration doesn't accurately reflect the actual resource state.
+- Clean up Terraformer output before committing - it includes auto-generated names like `tfer--`, hardcoded ARNs, and redundant computed attributes.
+- Do generated configuration migrations environment by environment, starting with dev - apply and validate before moving to production.
+- Treat generated configuration as a starting point, not a finished product - it always requires cleanup and refactoring to follow your team's conventions.

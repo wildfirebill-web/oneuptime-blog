@@ -39,6 +39,7 @@ The following command shows basic log output from a container:
 
 ```bash
 # View all logs from a container
+
 docker logs my-container
 
 # View logs with timestamps

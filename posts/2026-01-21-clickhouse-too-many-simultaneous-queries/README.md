@@ -195,6 +195,7 @@ SETTINGS
 
 ```python
 # Python with connection pooling
+
 from clickhouse_pool import ChPool
 
 pool = ChPool(

@@ -281,6 +281,7 @@ Many nginx-ingress features map to Istio VirtualService features:
 
 ```yaml
 # nginx-ingress annotation
+
 annotations:
   nginx.ingress.kubernetes.io/limit-rps: "10"
 

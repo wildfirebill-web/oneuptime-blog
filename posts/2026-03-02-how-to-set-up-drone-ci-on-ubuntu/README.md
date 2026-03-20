@@ -24,6 +24,7 @@ For small to medium setups, both components run on the same server.
 
 ```bash
 # Install Docker and Docker Compose if not already present
+
 sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
 

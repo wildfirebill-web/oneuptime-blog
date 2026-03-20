@@ -18,7 +18,7 @@ OpenTofu 1.6+ includes a native testing framework that allows you to write autom
 
 ## Basic Module Structure
 
-```
+```text
 my-module/
 ├── main.tf
 ├── variables.tf
@@ -34,6 +34,7 @@ my-module/
 # tests/unit.tftest.hcl
 
 # Variables to use across test runs
+
 variables {
   instance_type = "t3.micro"
   environment   = "test"
@@ -162,7 +163,7 @@ run "creates_instance_successfully" {
 
 ## Test Directory Organization
 
-```
+```text
 my-module/
 ├── main.tf
 ├── variables.tf

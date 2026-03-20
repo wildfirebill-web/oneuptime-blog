@@ -24,6 +24,7 @@ Before you can right-size, you need data. Install the metrics server if you have
 
 ```bash
 # Install metrics server for resource monitoring
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 

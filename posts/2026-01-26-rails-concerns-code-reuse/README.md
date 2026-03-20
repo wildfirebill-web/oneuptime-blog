@@ -136,6 +136,7 @@ Using the search functionality:
 
 ```ruby
 # Search articles by title, body, or summary
+
 Article.search('rails concerns')
 
 # Search products by name, description, or SKU

@@ -8,14 +8,14 @@ Description: Learn how to safely redistribute routes between different routing p
 
 ## Introduction
 
-Route redistribution is the process of taking routes learned by one routing protocol (or source) and injecting them into another. This is necessary in networks that run multiple protocols — for example, redistributing static routes into OSPF so that remote routers learn about manually configured subnets, or importing OSPF routes into BGP for external advertisement.
+Route redistribution is the process of taking routes learned by one routing protocol (or source) and injecting them into another. This is necessary in networks that run multiple protocols - for example, redistributing static routes into OSPF so that remote routers learn about manually configured subnets, or importing OSPF routes into BGP for external advertisement.
 
 ## Why Redistribution is Risky
 
 Without proper filtering, redistribution can cause:
-- **Routing loops** — routes go into Protocol A, redistribute into Protocol B, then back into A
-- **Suboptimal routing** — routes re-entered with wrong metrics
-- **Route flapping** — instability caused by metric mismatches
+- **Routing loops** - routes go into Protocol A, redistribute into Protocol B, then back into A
+- **Suboptimal routing** - routes re-entered with wrong metrics
+- **Route flapping** - instability caused by metric mismatches
 
 Always apply route maps or prefix-list filters when redistributing.
 
@@ -25,6 +25,7 @@ Configure FRR to inject all static routes into OSPF:
 
 ```bash
 # /etc/frr/frr.conf
+
 router ospf
   redistribute static metric 10 metric-type 2
   # metric-type 2 = external type 2 (metric does not accumulate)
@@ -67,7 +68,7 @@ ip prefix-list INTERNAL-SUBNETS seq 10 permit 10.0.0.0/8 le 24
 
 ## Redistributing BGP into OSPF (with caution)
 
-This is the most dangerous direction. Internet BGP tables have hundreds of thousands of routes — redistributing all of them into OSPF will crash your network.
+This is the most dangerous direction. Internet BGP tables have hundreds of thousands of routes - redistributing all of them into OSPF will crash your network.
 
 ```bash
 # ALWAYS use a prefix list to allow only specific prefixes

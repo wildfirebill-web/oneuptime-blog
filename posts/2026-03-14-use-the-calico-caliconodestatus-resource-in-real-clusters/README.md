@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward CalicoNodeStatus config
 
 ```bash
 # Verify current CalicoNodeStatus resources
+
 calicoctl get caliconodestatus -o yaml
 
 # Check the effective configuration on a specific node

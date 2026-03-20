@@ -22,6 +22,7 @@ If your services are dedicated to a single tenant (single-tenant deployment mode
 
 ```python
 # For single-tenant deployments, set tenant.id as a resource attribute.
+
 # This applies to all telemetry from this service instance.
 from opentelemetry.sdk.resources import Resource
 from opentelemetry.sdk.trace import TracerProvider

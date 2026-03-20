@@ -34,6 +34,7 @@ Git stores everything as objects in `.git/objects/`. Each object is identified b
 
 ```bash
 # Full repository check
+
 git fsck --full
 
 # Example output:

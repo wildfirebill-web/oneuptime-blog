@@ -40,6 +40,7 @@ Here is how to set up network segmentation in Azure using a VNet with dedicated 
 
 ```bash
 # Create a resource group dedicated to the PCI environment
+
 az group create --name pci-rg --location eastus
 
 # Create a virtual network with a dedicated address space

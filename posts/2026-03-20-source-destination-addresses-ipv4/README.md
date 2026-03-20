@@ -34,6 +34,7 @@ def parse_ipv4_addresses(raw_packet: bytes):
     return src_ip, dst_ip
 
 # Craft a test raw header
+
 header = struct.pack("!BBHHHBBH4s4s",
     0x45, 0, 60, 0, 0, 64, 6, 0,
     socket.inet_aton("192.168.1.100"),   # Source

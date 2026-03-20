@@ -168,6 +168,7 @@ Consider a call chain: Frontend -> Order Service -> Payment Service -> Bank API.
 
 ```yaml
 # Frontend to Order Service: 15s timeout
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

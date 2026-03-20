@@ -82,6 +82,7 @@ When `flux stats` reveals failures, drill down to find the specific resources:
 
 ```bash
 # Step 1: Check overall stats
+
 flux stats --all-namespaces
 
 # Step 2: If Kustomizations show failures, list them to find which ones

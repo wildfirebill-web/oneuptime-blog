@@ -66,6 +66,7 @@ Here is a basic configuration that groups metrics by service name and deployment
 
 ```yaml
 # RECEIVERS: Accept metrics via OTLP
+
 receivers:
   otlp:
     protocols:

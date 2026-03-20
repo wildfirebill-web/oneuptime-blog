@@ -14,6 +14,7 @@ Updating Docker Engine is routine maintenance, but it can sometimes cause Portai
 
 ```bash
 # Check if Portainer is running or has crashed
+
 docker ps -a | grep portainer
 
 # View the last 50 lines of Portainer logs

@@ -24,6 +24,7 @@ When `calicoctl ipam split` produces errors, it typically indicates problems wit
 
 ```bash
 # Verify datastore configuration
+
 export DATASTORE_TYPE=kubernetes
 calicoctl get nodes
 

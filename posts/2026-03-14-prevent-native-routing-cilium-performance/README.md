@@ -28,6 +28,7 @@ This guide provides the specific steps and commands for native routing performan
 
 ```bash
 # Always deploy with native routing from the start
+
 helm install cilium cilium/cilium --namespace kube-system \
   --set tunnel=disabled \
   --set routingMode=native \

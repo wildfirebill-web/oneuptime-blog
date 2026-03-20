@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu fmt, Code Quality, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu fmt, Code Quality, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to using tofu fmt to automatically format OpenTofu configurations to the standard style.
 
@@ -14,6 +14,7 @@ Description: A guide to using tofu fmt to automatically format OpenTofu configur
 
 ```bash
 # Format all .tf files in the current directory
+
 tofu fmt
 
 # Format and show what was changed

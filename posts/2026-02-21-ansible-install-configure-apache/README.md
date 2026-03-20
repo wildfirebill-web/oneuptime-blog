@@ -22,6 +22,7 @@ This guide covers installing and configuring Apache using Ansible on Ubuntu/Debi
 
 ```ini
 # inventory/apache-servers.ini
+
 [apache_servers]
 web-1 ansible_host=10.0.12.20
 web-2 ansible_host=10.0.12.21

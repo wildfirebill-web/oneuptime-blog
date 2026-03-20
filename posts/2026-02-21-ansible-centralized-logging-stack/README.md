@@ -27,6 +27,7 @@ graph LR
 
 ```yaml
 # roles/elk/defaults/main.yml - ELK stack configuration
+
 elk_version: "8.11"
 elasticsearch_heap_size: "1g"
 elasticsearch_cluster_name: logging

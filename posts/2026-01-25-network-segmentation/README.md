@@ -41,6 +41,7 @@ flowchart TB
 # setup-vlans.sh - Configure VLANs on Linux
 
 # Load 8021q module
+
 modprobe 8021q
 echo "8021q" >> /etc/modules
 

@@ -24,6 +24,7 @@ Install the HTTP Add-on after KEDA is running.
 
 ```bash
 # First install KEDA if not already installed
+
 helm install keda kedacore/keda --namespace keda --create-namespace
 
 # Install HTTP Add-on

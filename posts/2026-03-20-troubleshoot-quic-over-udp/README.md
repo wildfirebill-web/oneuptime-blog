@@ -14,6 +14,7 @@ QUIC is a transport protocol built on UDP, designed as the foundation for HTTP/3
 
 ```bash
 # Test if a server supports HTTP/3 (QUIC):
+
 curl -I --http3 https://cloudflare.com 2>/dev/null | head -5
 # Look for: HTTP/3 in response line
 

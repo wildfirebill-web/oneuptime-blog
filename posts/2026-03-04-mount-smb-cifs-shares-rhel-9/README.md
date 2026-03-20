@@ -22,6 +22,7 @@ Linux can mount SMB/CIFS shares from Windows servers, Samba servers, or NAS devi
 
 ```bash
 # Install CIFS utilities and Samba client
+
 sudo dnf install -y cifs-utils samba-client
 ```
 

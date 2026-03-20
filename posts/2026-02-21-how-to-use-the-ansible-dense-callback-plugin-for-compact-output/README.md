@@ -20,6 +20,7 @@ The dense callback plugin replaces the default multi-line output with a single-l
 
 ```ini
 # ansible.cfg
+
 [defaults]
 stdout_callback = dense
 ```

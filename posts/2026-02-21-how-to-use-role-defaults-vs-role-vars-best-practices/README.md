@@ -51,6 +51,7 @@ These are settings the role consumer should configure:
 
 ```yaml
 # roles/postgresql/defaults/main.yml
+
 # PUBLIC API - consumers of this role can override these
 ---
 # Application-level settings

@@ -32,6 +32,7 @@ Prettier is the most popular code formatter for JavaScript, TypeScript, CSS, JSO
 
 ```bash
 # Install Prettier
+
 npm install --save-dev prettier
 
 # Create configuration file

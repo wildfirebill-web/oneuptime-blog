@@ -22,6 +22,7 @@ Standard exporters work when your backend speaks OTLP, Zipkin, Jaeger, or Promet
 
 ```python
 # custom_exporter.py
+
 import gzip
 import json
 import time

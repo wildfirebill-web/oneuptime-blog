@@ -12,7 +12,7 @@ A RabbitMQ cluster distributes queues, exchanges, and bindings across nodes. All
 
 ## Architecture
 
-```
+```text
 Node 1: 10.0.0.1 (rabbit@node1)
 Node 2: 10.0.0.2 (rabbit@node2)  ─── All connected via Erlang distribution
 Node 3: 10.0.0.3 (rabbit@node3)
@@ -24,6 +24,7 @@ Node 3: 10.0.0.3 (rabbit@node3)
 
 ```bash
 # The Erlang cookie must be identical on all nodes
+
 # Generate on node 1:
 sudo cat /var/lib/rabbitmq/.erlang.cookie
 # Example: ABCDEFGHIJKLMNOP
@@ -92,10 +93,10 @@ sudo rabbitmqctl cluster_status
 
 ```bash
 # Ports needed between cluster nodes:
-# 4369  — epmd (Erlang Port Mapper Daemon)
-# 5672  — AMQP
-# 15672 — Management (optional, per node)
-# 25672 — Erlang distribution / cluster bus
+# 4369  - epmd (Erlang Port Mapper Daemon)
+# 5672  - AMQP
+# 15672 - Management (optional, per node)
+# 25672 - Erlang distribution / cluster bus
 
 CLUSTER_NODES="10.0.0.1 10.0.0.2 10.0.0.3"
 
@@ -125,4 +126,4 @@ sudo rabbitmqctl list_policies
 
 ## Conclusion
 
-RabbitMQ clustering requires the same Erlang cookie on all nodes, matching hostnames in `/etc/hosts`, and open ports 4369 and 25672 between cluster members. Use `join_cluster` or peer discovery in `rabbitmq.conf` to form the cluster. Apply queue mirroring policies for high availability — a queue without a policy only exists on its host node and is lost if that node fails.
+RabbitMQ clustering requires the same Erlang cookie on all nodes, matching hostnames in `/etc/hosts`, and open ports 4369 and 25672 between cluster members. Use `join_cluster` or peer discovery in `rabbitmq.conf` to form the cluster. Apply queue mirroring policies for high availability - a queue without a policy only exists on its host node and is lost if that node fails.

@@ -79,6 +79,7 @@ Start with a playbook that provisions the base infrastructure. Here is an exampl
 
 ```yaml
 # playbooks/provision.yml - Provision base cloud infrastructure
+
 ---
 - name: Provision cloud infrastructure
   hosts: localhost

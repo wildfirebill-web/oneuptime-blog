@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenVPN, IPv6, Dual-Stack, VPN, Client Configuration, Network
+Tags: OpenVPN, IPv6, Dual-Stack, VPN, Client Configuration, Networks
 
 Description: A guide to configuring OpenVPN for dual-stack clients that can connect using either IPv4 or IPv6 and receive both IPv4 and IPv6 tunnel addresses.
 
@@ -14,6 +14,7 @@ A dual-stack OpenVPN setup allows clients to connect over IPv4 or IPv6, and rece
 # /etc/openvpn/server.conf
 
 # Listen on both IPv4 and IPv6 simultaneously
+
 # 'udp6' binds to :: which accepts both IPv4 and IPv6 connections
 proto udp6
 port 1194

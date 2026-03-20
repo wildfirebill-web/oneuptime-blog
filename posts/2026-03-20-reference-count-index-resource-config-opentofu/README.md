@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, count, count.index, HCL, Resource Configuration
+Tags: OpenTofu, Terraform, Count, Count.index, HCL, Resource Configuration
 
 Description: Learn how to use count.index in OpenTofu to customize each instance of a count-based resource with unique names, subnet assignments, and configuration values.
 
@@ -84,6 +84,7 @@ resource "aws_instance" "web" {
 }
 
 # Create a Route53 record for each instance
+
 resource "aws_route53_record" "web" {
   count = length(var.hostnames)
 

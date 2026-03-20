@@ -28,6 +28,7 @@ Set the ingress control using gcloud:
 
 ```bash
 # Restrict to internal and load balancer traffic only
+
 gcloud app services update default \
   --ingress=internal-and-cloud-load-balancing \
   --project=your-project-id

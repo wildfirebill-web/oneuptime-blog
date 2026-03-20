@@ -22,6 +22,7 @@ Installation failures for Calico eBPF are typically one of three types: prerequi
 ```bash
 #!/bin/bash
 # ebpf-install-diagnostics.sh
+
 echo "=== Calico eBPF Installation Diagnostics ==="
 
 echo ""

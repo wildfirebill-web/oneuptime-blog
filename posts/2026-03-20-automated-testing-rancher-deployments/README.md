@@ -16,6 +16,7 @@ Helm tests run in-cluster after deployment to validate the chart:
 
 ```yaml
 # templates/tests/connectivity-test.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -214,4 +215,4 @@ echo "Validation PASSED: $APP_NAME is healthy"
 
 ## Conclusion
 
-Automated testing for Rancher deployments creates confidence that every deployment is validated before it impacts users. Helm tests run immediately after deployment in the same cluster, smoke tests validate critical user-facing functionality, integration tests catch cross-service regressions, and chaos tests validate resilience. Integrate all testing layers into CI/CD pipelines with deployment gates—production deploys only after staging tests pass. Track test history to identify flaky tests and regressions early.
+Automated testing for Rancher deployments creates confidence that every deployment is validated before it impacts users. Helm tests run immediately after deployment in the same cluster, smoke tests validate critical user-facing functionality, integration tests catch cross-service regressions, and chaos tests validate resilience. Integrate all testing layers into CI/CD pipelines with deployment gates-production deploys only after staging tests pass. Track test history to identify flaky tests and regressions early.

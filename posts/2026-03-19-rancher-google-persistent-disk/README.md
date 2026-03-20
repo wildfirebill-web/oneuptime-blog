@@ -300,6 +300,7 @@ spec:
 
 ```bash
 # Check PVCs
+
 kubectl get pvc --all-namespaces
 
 # View PV details

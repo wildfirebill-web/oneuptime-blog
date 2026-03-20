@@ -119,6 +119,7 @@ Add the kubelet certificate authority to the API server configuration:
 
 ```yaml
 # RKE2 config.yaml
+
 kube-apiserver-arg:
   - "kubelet-certificate-authority=/var/lib/rancher/rke2/server/tls/server-ca.crt"
 ```

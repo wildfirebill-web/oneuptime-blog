@@ -114,6 +114,7 @@ Run the server with `cargo run` and test it using netcat:
 
 ```bash
 # In one terminal
+
 cargo run
 
 # In another terminal

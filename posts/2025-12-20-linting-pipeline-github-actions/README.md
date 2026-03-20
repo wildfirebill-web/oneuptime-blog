@@ -25,6 +25,7 @@ Here is a minimal linting workflow for a JavaScript/TypeScript project:
 
 ```yaml
 # .github/workflows/lint.yml
+
 name: Lint
 
 on:

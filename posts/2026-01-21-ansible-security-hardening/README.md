@@ -33,6 +33,7 @@ SSH is often the first target for attackers. Lock it down.
 
 ```yaml
 # roles/ssh_hardening/tasks/main.yml
+
 ---
 - name: Configure SSH daemon
   template:

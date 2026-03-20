@@ -27,6 +27,7 @@ Use `argocd admin` when:
 
 ```bash
 # Validate RBAC policies before applying
+
 argocd admin settings rbac validate --namespace argocd
 
 # Test if a specific user can perform an action
@@ -282,7 +283,7 @@ kubectl exec -n "$NAMESPACE" deployment/argocd-server -- \
   grep -E "argocd_app_info|grpc" | head -20
 ```
 
-### Resource Usage Check
+Resource Usage Check
 
 ```bash
 #!/bin/bash

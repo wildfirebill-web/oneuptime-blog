@@ -36,6 +36,7 @@ Installing GDB on Ubuntu is straightforward using the APT package manager.
 
 ```bash
 # Update package lists to ensure you get the latest version
+
 sudo apt update
 
 # Install GDB
