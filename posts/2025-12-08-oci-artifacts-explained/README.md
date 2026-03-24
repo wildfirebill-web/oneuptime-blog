@@ -17,7 +17,7 @@ We needed a way to move more than images through the exact same registry plumbin
 - **Image spec**: Defines how layers, configs, and manifests are structured.
 - **Runtime spec**: Defines how runtimes (containerd, runc, Kata) unpack and run those bundles.
 - **Distribution spec**: Defines the registry API for pushing/pulling blobs by digest.
-- **Artifact extension**: Adds light metadata so registries know "this manifest is a Helm chart" or "this digest is a signature for that SBOM".
+- **Artifact support** (OCI Image Spec v1.1+): Adds the `artifactType` field and the Referrers API so registries know "this manifest is a Helm chart" or "this digest is a signature for that SBOM". Artifacts reuse the standard image manifest format with an empty config descriptor.
 
 The last piece is what most teams mean today when they say "OCI artifact".
 
@@ -25,16 +25,24 @@ The last piece is what most teams mean today when they say "OCI artifact".
 
 ## Anatomy of an Artifact Manifest
 
-This JSON structure shows the core components of an OCI artifact manifest. Understanding this format is essential because it's the standardized way that registries identify and organize non-image artifacts like Helm charts, SBOMs, and policy bundles.
+This JSON structure shows the core components of an OCI artifact manifest. OCI artifacts reuse the standard image manifest format (`application/vnd.oci.image.manifest.v1+json`) rather than a separate artifact-specific manifest type. The `artifactType` field and an empty `config` descriptor signal that this manifest represents a non-image artifact.
 
 ```json
 {
-  // The manifest's own media type identifies this as an OCI artifact
-  "mediaType": "application/vnd.oci.artifact.manifest.v1+json",
-  // artifactType tells consumers how to interpret the blobs (e.g., Helm chart)
+  // Standard OCI image manifest media type (reused for all artifacts)
+  "mediaType": "application/vnd.oci.image.manifest.v1+json",
+  // Schema version must be 2
+  "schemaVersion": 2,
+  // artifactType tells consumers how to interpret the layers (e.g., Helm chart)
   "artifactType": "application/vnd.cncf.helm.chart.v1+json",
-  // The actual content of the artifact as content-addressed blobs
-  "blobs": [
+  // Empty config descriptor signals this is an artifact, not a runnable image
+  "config": {
+    "mediaType": "application/vnd.oci.empty.v1+json",
+    "size": 2,
+    "digest": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  // The actual content of the artifact as layers (content-addressed blobs)
+  "layers": [
     { "mediaType": "application/tar+gzip", "size": 23142, "digest": "sha256:..." }
   ],
   // Optional: links this artifact to another digest (e.g., signature -> image)
@@ -49,10 +57,11 @@ This JSON structure shows the core components of an OCI artifact manifest. Under
 
 Key bits:
 
-- `artifactType` advertises what the blob *is* (Helm chart, SBOM, provenance doc, WASM bytecode, etc.).
+- `artifactType` advertises what the artifact *is* (Helm chart, SBOM, provenance doc, WASM bytecode, etc.).
+- `config` uses the empty descriptor (`application/vnd.oci.empty.v1+json` with content `{}`) to indicate this manifest is not a runnable container image.
+- `layers` list tarballs or files the artifact consists of; each layer is content-addressed by digest, exactly like image layers.
 - `subject` (optional) links to another digest (handy for signatures, policies, or test reports referring to an image).
 - `annotations` carry human-friendly metadata without exploding cardinality.
-- `blobs` list tarballs or files the artifact consists of; each blob is content-addressed by digest like image layers.
 
 ---
 
