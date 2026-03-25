@@ -12,7 +12,6 @@ arp-scan discovers hosts at Layer 2 using ARP, making it more reliable than ping
 
 ```bash
 # Debian/Ubuntu
-
 sudo apt install arp-scan -y
 
 # RHEL/CentOS
