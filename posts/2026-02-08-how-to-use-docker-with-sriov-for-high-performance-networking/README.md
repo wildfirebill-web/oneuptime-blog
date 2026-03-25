@@ -101,12 +101,12 @@ WantedBy=multi-user.target
 
 ## Two Paths: Kernel Driver vs DPDK
 
-Before installing plugins, decide which approach fits your workload. These are **two separate paths** — do not mix them:
+Before installing plugins, decide which approach fits your workload. These are **two separate paths** - do not mix them:
 
 - **Kernel driver path (recommended for most users):** VFs stay bound to the kernel network driver (e.g., `iavf` for Intel). You use Docker's SR-IOV network plugin to create networks and attach containers. This gives you standard Docker networking with near-bare-metal performance.
-- **DPDK path (maximum performance):** VFs are bound to `vfio-pci`, which removes them from the kernel network stack entirely. You cannot use Docker networking at all — instead, you pass the VFIO device directly into the container. Your application must use a DPDK library to handle packets in userspace.
+- **DPDK path (maximum performance):** VFs are bound to `vfio-pci`, which removes them from the kernel network stack entirely. You cannot use Docker networking at all - instead, you pass the VFIO device directly into the container. Your application must use a DPDK library to handle packets in userspace.
 
-> **Important:** Once you bind a VF to `vfio-pci`, it is no longer a kernel network interface. Commands like `docker network create --driver=sriov` will not see it. If you get `plugin "vfio-pci" not found`, you are likely trying to use `vfio-pci` as a Docker network driver — it is not one. Use `--driver=sriov` instead, and make sure your VFs are on the kernel driver.
+> **Important:** Once you bind a VF to `vfio-pci`, it is no longer a kernel network interface. Commands like `docker network create --driver=sriov` will not see it. If you get `plugin "vfio-pci" not found`, you are likely trying to use `vfio-pci` as a Docker network driver - it is not one. Use `--driver=sriov` instead, and make sure your VFs are on the kernel driver.
 
 ## Installing the Docker SR-IOV Plugin (Kernel Driver Path)
 
@@ -138,7 +138,7 @@ make build
 docker pull ghcr.io/k8snetworkplumbingwg/sriov-network-device-plugin:latest
 ```
 
-The device plugin requires a `config.json` that maps your SR-IOV devices. Create one based on your hardware — note that the device ID varies between NICs and setups:
+The device plugin requires a `config.json` that maps your SR-IOV devices. Create one based on your hardware - note that the device ID varies between NICs and setups:
 
 ```json
 {
@@ -309,7 +309,7 @@ networks:
 
 ## DPDK Integration with SR-IOV (Alternate Path)
 
-For the absolute lowest latency, combine SR-IOV with DPDK (Data Plane Development Kit). This is a **separate path** from the kernel driver approach above — VFs bound to `vfio-pci` are removed from the kernel network stack and **cannot be used with Docker's SR-IOV network plugin or `docker network create`**. Your application must use DPDK libraries to send and receive packets directly.
+For the absolute lowest latency, combine SR-IOV with DPDK (Data Plane Development Kit). This is a **separate path** from the kernel driver approach above - VFs bound to `vfio-pci` are removed from the kernel network stack and **cannot be used with Docker's SR-IOV network plugin or `docker network create`**. Your application must use DPDK libraries to send and receive packets directly.
 
 Bind a VF to the DPDK driver:
 
@@ -333,7 +333,7 @@ Run a DPDK application in Docker with the VF. Since the VF is not a network inte
 
 ```bash
 # Run a DPDK container with access to the VF via vfio
-# Note: Do NOT use --network=sriov-network here — DPDK bypasses Docker networking
+# Note: Do NOT use --network=sriov-network here - DPDK bypasses Docker networking
 docker run -d \
   --name dpdk-app \
   --privileged \
