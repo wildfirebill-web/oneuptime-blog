@@ -399,9 +399,8 @@ metadata:
   name: nginx
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: nginx=<account-id>.dkr.ecr.us-west-2.amazonaws.com/docker-hub/library/nginx
+    argocd-image-updater.argoproj.io/image-list: nginx=<account-id>.dkr.ecr.us-west-2.amazonaws.com/docker-hub/library/nginx:1.25.x
     argocd-image-updater.argoproj.io/nginx.update-strategy: semver
-    argocd-image-updater.argoproj.io/nginx.semver-constraint: "1.25.x"
     argocd-image-updater.argoproj.io/nginx.pull-secret: ext:/scripts/ecr-login.sh
 spec:
   project: default
@@ -419,7 +418,7 @@ Create the ECR login script for the Image Updater:
 ```bash
 #!/bin/sh
 # /scripts/ecr-login.sh
-aws ecr get-login-password --region us-west-2
+echo "AWS:$(aws ecr get-login-password --region us-west-2)"
 ```
 
 ## Step 8: Set Up ECR Lifecycle Policies
