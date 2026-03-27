@@ -49,7 +49,7 @@ BigBlueButton is resource-intensive. Plan for the following:
 
 The community-maintained [bigbluebutton/docker](https://github.com/bigbluebutton/docker) repository provides the official Docker deployment method for BigBlueButton 3.0. It builds all necessary images locally and generates a complete Docker Compose configuration through an automated setup script.
 
-> **Note:** BigBlueButton does not publish pre-built images to Docker Hub. The Docker setup builds images from source using the official repository. Do not attempt to pull images like `bigbluebutton/bbb-web` directly — they do not exist.
+> **Note:** BigBlueButton does not publish pre-built images to Docker Hub. The Docker setup builds images from source using the official repository. Do not attempt to pull images like `bigbluebutton/bbb-web` directly - they do not exist.
 
 ### Step 1: Install Docker
 
@@ -76,17 +76,17 @@ cd bbb-docker
 The setup script walks you through configuration interactively. It asks for your domain name, whether to enable recordings, HTTPS settings, and generates a `.env` file and `docker-compose.yml` from templates.
 
 ```bash
-# Run the interactive setup — this generates your .env and docker-compose.yml
+# Run the interactive setup - this generates your .env and docker-compose.yml
 ./scripts/setup
 ```
 
 During setup, you will configure:
 
-- **Domain name** — your public domain (e.g., `bbb.example.com`)
-- **HTTPS** — automatic certificate management via Let's Encrypt, or bring your own
-- **TURN server** — built-in coturn for NAT traversal, or an external TURN server
-- **Greenlight** — optional web front-end for managing rooms and users
-- **Recordings** — enable or disable session recording
+- **Domain name** - your public domain (e.g., `bbb.example.com`)
+- **HTTPS** - automatic certificate management via Let's Encrypt, or bring your own
+- **TURN server** - built-in coturn for NAT traversal, or an external TURN server
+- **Greenlight** - optional web front-end for managing rooms and users
+- **Recordings** - enable or disable session recording
 
 ### Step 4: Review the Generated Configuration
 
@@ -96,7 +96,7 @@ After setup completes, review the generated `.env` file to verify your settings.
 # Review the generated environment configuration
 cat .env
 
-# The shared secret is auto-generated — note it for API integration
+# The shared secret is auto-generated - note it for API integration
 grep SHARED_SECRET .env
 ```
 
@@ -139,7 +139,7 @@ The generated `docker-compose.yml` includes these core services:
 All configuration is managed through the `.env` file. Here are the most important settings:
 
 ```bash
-# .env — Key configuration options
+# .env - Key configuration options
 
 # Your public domain name
 DOMAIN=bbb.example.com
