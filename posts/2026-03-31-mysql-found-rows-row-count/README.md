@@ -1,6 +1,6 @@
 # How to Use FOUND_ROWS() and ROW_COUNT() in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Function, Row Count, Query, Performance
 

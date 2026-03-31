@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, E-commerce, Sorted Set, Alert
+Tags: Redis, E-Commerce, Sorted Set, Alert
 
 Description: Build a price drop alert system with Redis - track user price thresholds per product, detect drops when prices update, and queue notifications for triggered alerts.
 

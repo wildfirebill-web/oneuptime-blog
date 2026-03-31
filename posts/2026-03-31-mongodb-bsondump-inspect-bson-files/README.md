@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Bsondump, Backup, BSON, Developer Tools
+Tags: MongoDB, Bsondump, Backup, BSON, Developer Tool
 
 Description: Learn how to use bsondump to convert MongoDB BSON backup files to readable JSON for inspection, debugging, and data verification.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Apache Kafka, Kafka Connect, Monitoring, REST API, JMX, Observability, Operations
+Tags: Apache Kafka, Kafka Connect, Monitoring, REST API, JMX, Observability, Operation
 
 Description: Learn how to monitor and manage Kafka Connect clusters using the REST API, JMX metrics, and operational best practices for maintaining healthy connector deployments.
 

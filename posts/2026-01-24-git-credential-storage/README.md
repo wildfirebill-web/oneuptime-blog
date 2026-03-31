@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Git, Security, Authentication, DevOps, Git Configuration, Credentials
+Tags: Git, Security, Authentication, DevOps, Git Configuration, Credential
 
 Description: Configure Git credential helpers to securely store passwords and tokens. Covers credential cache, OS keychain integration, and per-repo credential management.
 

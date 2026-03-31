@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: LLMOps, Benchmarks, Testing, Evaluation
+Tags: LLMOps, Benchmark, Testing, Evaluation
 
 Description: Learn to build benchmark testing for comparing LLM performance across standardized test sets.
 

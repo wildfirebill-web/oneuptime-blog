@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Webhooks, CI/CD, Automation
+Tags: Portainer, API, Webhook, CI/CD, Automation
 
 Description: Learn how to create and trigger Portainer webhooks to automate container and service redeployments when new container images are pushed to a registry.
 

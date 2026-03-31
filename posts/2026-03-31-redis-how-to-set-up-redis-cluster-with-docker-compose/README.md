@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Docker Compose, Redis Cluster, Containers, Development
+Tags: Redis, Docker Compose, Redis Cluster, Container, Development
 
 Description: Learn how to set up a Redis Cluster with Docker Compose for local development and testing, including initialization, configuration, and client connection setup.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Migration, Networking, CNI, Netavark
+Tags: Podman, Container, DevOps, Docker, Migration, Networking, CNI, Netavark
 
 Description: Learn how to migrate your Docker network configurations to Podman, including bridge networks, custom subnets, and container-to-container communication.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab CI, Variables, CI/CD, Configuration, DevOps
+Tags: GitLab CI, Variable, CI/CD, Configuration, DevOps
 
 Description: Master GitLab CI pipeline variables to manage configuration, secrets, and dynamic values across your CI/CD workflows with proper scoping and security practices.
 

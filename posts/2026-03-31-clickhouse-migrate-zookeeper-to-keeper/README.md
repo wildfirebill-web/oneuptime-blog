@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ClickHouse Keeper, ZooKeeper, Migration, Operations
+Tags: ClickHouse, ClickHouse Keeper, ZooKeeper, Migration, Operation
 
 Description: Learn how to migrate a production ClickHouse cluster from Apache ZooKeeper to ClickHouse Keeper with zero downtime using the built-in converter tool.
 

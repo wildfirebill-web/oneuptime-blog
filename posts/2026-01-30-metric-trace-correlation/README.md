@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Tracing, OpenTelemetry
+Tags: Observability, Metric, Tracing, OpenTelemetry
 
 Description: Learn how to correlate metrics with traces using exemplars for root cause analysis.
 

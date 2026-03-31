@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Lambda, SNS, Event-Driven, Serverless, Notifications
+Tags: Terraform, AWS, Lambda, SNS, Event-Driven, Serverless, Notification
 
 Description: How to configure AWS Lambda functions as SNS topic subscribers in Terraform, with filtering policies, fan-out patterns, and cross-account subscription examples.
 

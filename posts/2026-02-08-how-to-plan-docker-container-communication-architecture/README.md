@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Container Communication, Networking, Service Discovery, Microservices, Architecture
+Tags: Docker, Container Communication, Networking, Service Discovery, Microservice, Architecture
 
 Description: Plan container communication architectures in Docker covering DNS resolution, network segmentation, and inter-service communication patterns.
 

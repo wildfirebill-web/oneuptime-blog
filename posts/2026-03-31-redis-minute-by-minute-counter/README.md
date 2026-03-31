@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Counter, Time Series, Analytics, Metrics
+Tags: Redis, Counter, Time Series, Analytics, Metric
 
 Description: Build precise minute-by-minute counters in Redis using time-bucketed keys to track requests, events, or errors over time.
 

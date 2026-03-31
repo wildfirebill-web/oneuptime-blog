@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, TCP, TCP_NODELAY, Nagle, Latency, Sockets, Networking
+Tags: IPv4, TCP, TCP_NODELAY, Nagle, Latency, Socket, Networking
 
 Description: Learn how to disable Nagle's algorithm by setting TCP_NODELAY on IPv4 sockets in C, Python, Go, and Node.js to reduce latency for interactive and real-time network applications.
 

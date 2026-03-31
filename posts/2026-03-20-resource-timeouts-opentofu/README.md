@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Timeout, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, Timeout, Infrastructure as Code, DevOps
 
 Description: A guide to configuring resource timeouts in OpenTofu to control how long operations wait before failing.
 

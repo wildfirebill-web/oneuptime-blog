@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Configuration, Infrastructure as Code, Automation
+Tags: Terraform, Variable, Configuration, Infrastructure as Code, Automation
 
 Description: Learn how .auto.tfvars files work in Terraform, how they differ from terraform.tfvars, and how to use them for layered configuration management across environments.
 

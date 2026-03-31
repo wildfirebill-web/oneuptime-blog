@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how to use JSONExtractString and related functions with JSONPath-style array index and path syntax in ClickHouse to access nested and array-indexed JSON values.
 

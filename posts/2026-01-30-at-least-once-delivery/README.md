@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Event-Driven, Messaging, Reliability, Distributed Systems
+Tags: Event-Driven, Messaging, Reliability, Distributed System
 
 Description: Learn to build at-least-once delivery guarantees with acknowledgments and retry mechanisms for reliable messaging.
 

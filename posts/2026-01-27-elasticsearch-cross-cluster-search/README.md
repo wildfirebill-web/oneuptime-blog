@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Cross-Cluster Search, Distributed Systems, Search, Observability, DevOps
+Tags: Elasticsearch, Cross-Cluster Search, Distributed System, Search, Observability, DevOps
 
 Description: A comprehensive guide to implementing Elasticsearch Cross-Cluster Search (CCS) for querying data across multiple clusters.
 

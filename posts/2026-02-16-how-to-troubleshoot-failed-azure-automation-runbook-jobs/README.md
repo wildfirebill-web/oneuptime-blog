@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Azure Automation, Troubleshooting, Runbook, PowerShell, Debugging, Operations
+Tags: Azure, Azure Automation, Troubleshooting, Runbook, PowerShell, Debugging, Operation
 
 Description: A practical troubleshooting guide for diagnosing and fixing failed Azure Automation runbook jobs with real-world examples and solutions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Python, Development Environments, Docker, Virtual Environments, Dev Containers
+Tags: Portainer, Python, Development Environment, Docker, Virtual Environments, Dev Container
 
 Description: Learn how to set up a Python development environment with hot-reload and debugging support in a container managed by Portainer.
 

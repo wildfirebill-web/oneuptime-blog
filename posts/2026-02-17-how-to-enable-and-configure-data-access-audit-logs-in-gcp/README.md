@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Audit Logs, Cloud Logging, Security, Compliance
+Tags: GCP, Audit Log, Cloud Logging, Security, Compliance
 
 Description: A complete guide to enabling and configuring Data Access audit logs in GCP for security monitoring, compliance, and tracking who accessed what data.
 

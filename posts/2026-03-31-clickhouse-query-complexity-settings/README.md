@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Query, Complexity, Settings, Resource Management
+Tags: ClickHouse, Query, Complexity, Setting, Resource Management
 
 Description: Learn how to use ClickHouse query complexity settings to limit memory, execution time, and row counts to protect cluster resources from runaway queries.
 

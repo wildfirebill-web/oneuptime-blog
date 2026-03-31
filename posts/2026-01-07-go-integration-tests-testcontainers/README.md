@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Testing, Testcontainers, Integration Tests, Docker, PostgreSQL, Redis
+Tags: Go, Testing, Testcontainers, Integration Test, Docker, PostgreSQL, Redis
 
 Description: Write reliable integration tests for Go APIs using Testcontainers with real PostgreSQL and Redis in isolated Docker containers.
 

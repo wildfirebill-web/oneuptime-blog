@@ -1,6 +1,6 @@
 # How to Configure Dapr Binding with Local Storage
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Binding, Storage, File, Local
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DevOps, DORA Metrics, Deployment Frequency, CI/CD
+Tags: DevOps, DORA Metric, Deployment Frequency, CI/CD
 
 Description: Learn to implement deployment frequency tracking with automated collection, trend analysis, and benchmarking for continuous delivery assessment.
 

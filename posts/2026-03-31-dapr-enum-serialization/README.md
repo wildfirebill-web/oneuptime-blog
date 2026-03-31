@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Enum, Serialization, JSON, Interoperability
+Tags: Dapr, ENUM, Serialization, JSON, Interoperability
 
 Description: Handle enum serialization in Dapr across polyglot services using string-based enums, integer values, and custom converters to ensure cross-language compatibility.
 

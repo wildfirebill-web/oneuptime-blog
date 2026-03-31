@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, GitHub, GitHub App, Git
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, GitHub, GitHub App, Git
 
 Description: Learn how to authenticate Flux CD with GitHub repositories using a GitHub App installation for fine-grained, organization-level access control.
 

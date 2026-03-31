@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Monitoring, Success Rate, Prometheus, SRE
+Tags: Istio, Metric, Monitoring, Success Rate, Prometheus, SRE
 
 Description: How to calculate and monitor request success rates across your Istio service mesh using Prometheus queries and alerting rules.
 

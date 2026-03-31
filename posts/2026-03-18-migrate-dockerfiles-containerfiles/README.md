@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Migration, Dockerfile, Containerfile, Buildah
+Tags: Podman, Container, DevOps, Docker, Migration, Dockerfile, Containerfile, Buildah
 
 Description: Learn how to migrate your Dockerfiles to Containerfiles for use with Podman and Buildah while maintaining full compatibility.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, ECS, Cloud Map, Service Discovery, Microservices
+Tags: AWS, ECS, Cloud Map, Service Discovery, Microservice
 
 Description: Learn how to set up ECS service discovery with AWS Cloud Map so your containers can find each other using DNS names instead of hardcoded endpoints.
 

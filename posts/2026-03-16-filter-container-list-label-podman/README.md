@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Management, Filtering, Labels
+Tags: Podman, Container, DevOps, Container Management, Filtering, Labels
 
 Description: Learn how to use labels to organize containers and filter Podman listings by label key-value pairs for efficient management.
 

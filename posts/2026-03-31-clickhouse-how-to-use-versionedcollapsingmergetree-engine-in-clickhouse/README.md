@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, VersionedCollapsingMergeTree, Table Engines, Updates, Sql
+Tags: ClickHouse, VersionedCollapsingMergeTree, Table Engine, Update, SQL
 
 Description: Learn how to use VersionedCollapsingMergeTree in ClickHouse to implement mutable row semantics with out-of-order inserts using sign and version columns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Networks
+Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Network
 
 Description: Validate ICMP and Ping Rules in Calico using real traffic scenarios.
 

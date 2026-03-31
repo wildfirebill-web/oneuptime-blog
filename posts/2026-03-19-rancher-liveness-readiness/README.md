@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Workloads
+Tags: Rancher, Kubernetes, Workload
 
 Description: Learn how to configure liveness, readiness, and startup probes in Rancher to ensure your containers are healthy and ready to serve traffic.
 

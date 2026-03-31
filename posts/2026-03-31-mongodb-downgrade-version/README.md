@@ -1,8 +1,8 @@
 # How to Downgrade MongoDB to Previous Version
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Downgrade, Version, Operations, Administration
+Tags: MongoDB, Downgrade, Version, Operation, Administration
 
 Description: Learn how to safely downgrade MongoDB to a previous version by setting the Feature Compatibility Version and performing a rolling downgrade on a replica set.
 

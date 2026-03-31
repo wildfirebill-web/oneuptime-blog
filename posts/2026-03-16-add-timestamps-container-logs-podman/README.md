@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging
+Tags: Podman, Container, DevOps, Logging
 
 Description: Learn how to add timestamps to Podman container logs using the --timestamps flag, making it easier to correlate events and measure timing between log entries.
 

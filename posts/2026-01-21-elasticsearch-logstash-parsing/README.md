@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Logstash, Log Parsing, Grok, ELK Stack, Data Pipelines, Log Processing
+Tags: Logstash, Log Parsing, Grok, ELK Stack, Data Pipeline, Log Processing
 
 Description: A comprehensive guide to parsing logs with Logstash, covering Grok patterns, filter plugins, multiline handling, and advanced transformation techniques.
 

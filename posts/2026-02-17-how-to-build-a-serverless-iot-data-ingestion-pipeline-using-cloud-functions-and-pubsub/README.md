@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Pub/Sub, IoT, Serverless
+Tags: GCP, Cloud Function, Pub/Sub, IoT, Serverless
 
 Description: Build a fully serverless IoT data ingestion pipeline using Cloud Functions and Pub/Sub that scales automatically with zero infrastructure management.
 

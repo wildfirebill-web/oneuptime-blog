@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Bicep, GitHub Actions, CI/CD, What-If, IaC, DevOps
+Tags: Azure, Bicep, GitHub Action, CI/CD, What-If, IaC, DevOps
 
 Description: Build GitHub Actions workflows for Azure Bicep deployments with automated validation, what-if previews on pull requests, and gated production deployments.
 

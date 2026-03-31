@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: TypeScript, NestJS, Guards, Authorization, Security
+Tags: TypeScript, NestJS, Guard, Authorization, Security
 
 Description: Learn how to implement authorization in NestJS using guards, including JWT guards, role-based access control, and custom guard logic.
 

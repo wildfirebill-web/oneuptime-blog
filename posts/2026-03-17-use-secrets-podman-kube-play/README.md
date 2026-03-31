@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Kubernetes, Kube Play
+Tags: Podman, Container, DevOps, Secret, Kubernetes, Kube Play
 
 Description: Learn how to use Podman secrets with podman kube play to deploy Kubernetes-style YAML manifests with secure credential management.
 

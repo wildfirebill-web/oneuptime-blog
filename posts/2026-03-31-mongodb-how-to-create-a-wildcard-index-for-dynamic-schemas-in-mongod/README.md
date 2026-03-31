@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Wildcard Index, Dynamic Schema, Flexible Data
+Tags: MongoDB, Index, Wildcard Index, Dynamic Schema, Flexible Data
 
 Description: Learn how to create wildcard indexes in MongoDB to support queries on collections with dynamic or unpredictable field names and nested structures.
 

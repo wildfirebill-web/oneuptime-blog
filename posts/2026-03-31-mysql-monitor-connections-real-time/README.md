@@ -35,7 +35,7 @@ SHOW FULL PROCESSLIST;
 
 This shows all active connections with their state, query, and duration:
 
-```
+```text
 +------+------+-----------+------+---------+------+-------+------------------+
 | Id   | User | Host      | db   | Command | Time | State | Info             |
 +------+------+-----------+------+---------+------+-------+------------------+

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module
 
 Description: Learn best practices for documenting OpenTofu modules including README structure, variable and output descriptions, and auto-generated documentation with terraform-docs.
 

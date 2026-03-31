@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Connection Pool, Database, Metrics, Monitoring, Performance
+Tags: OpenTelemetry, Connection Pool, Database, Metric, Monitoring, Performance
 
 Description: How to instrument and monitor database connection pool metrics like idle, active, and waiting connections using OpenTelemetry custom metrics.
 

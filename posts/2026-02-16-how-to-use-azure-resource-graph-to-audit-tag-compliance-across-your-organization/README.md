@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Azure Resource Graph, Tags, Compliance, Governance, FinOps, Cost Management
+Tags: Azure, Azure Resource Graph, Tag, Compliance, Governance, FinOps, Cost Management
 
 Description: Learn how to use Azure Resource Graph to audit tag compliance across your Azure organization and identify resources with missing or incorrect tags.
 

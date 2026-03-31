@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, BGP, Peers, Parsing, Scripting
+Tags: Cilium, BGP, Peer, Parsing, Scripting
 
 Description: Parse cilium-dbg bgp peers output to extract session states, peer addresses, and AS numbers for automated BGP monitoring.
 

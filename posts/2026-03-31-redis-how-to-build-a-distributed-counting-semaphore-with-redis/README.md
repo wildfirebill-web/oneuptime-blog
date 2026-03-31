@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Semaphore, Distributed Locking, Concurrency, Lua Scripts
+Tags: Redis, Semaphore, Distributed Locking, Concurrency, Lua Script
 
 Description: Build a distributed counting semaphore with Redis to limit concurrent access to a shared resource across multiple application servers.
 

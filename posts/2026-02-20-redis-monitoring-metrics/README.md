@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Monitoring, Metrics, Performance, Observability
+Tags: Redis, Monitoring, Metric, Performance, Observability
 
 Description: Learn how to monitor Redis performance using INFO command, Prometheus exporter, and key health metrics to track.
 

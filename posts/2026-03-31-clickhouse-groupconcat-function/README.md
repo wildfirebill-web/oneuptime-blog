@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Aggregation, groupConcat, String Aggregation, GROUP_CONCAT
+Tags: ClickHouse, Aggregate Function, groupConcat, String Aggregation, SQL
 
 Description: Learn how to use groupConcat() in ClickHouse to aggregate multiple string values within a group into a single delimited string, with separator and limit control.
 

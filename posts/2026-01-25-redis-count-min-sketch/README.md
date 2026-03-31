@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Count-Min Sketch, Probabilistic Data Structures, Streaming Analytics, RedisBloom
+Tags: Redis, Count-Min Sketch, Probabilistic Data Structure, Streaming Analytics, RedisBloom
 
 Description: Learn how to use Count-Min Sketch in Redis for memory-efficient frequency counting.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, Init Containers, YAML
+Tags: Podman, Container, DevOps, Kubernetes, Init Container, YAML
 
 Description: Learn how to define and run init containers in Kubernetes YAML using podman kube play for pre-start initialization tasks.
 

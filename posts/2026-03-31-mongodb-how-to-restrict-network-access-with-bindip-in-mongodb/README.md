@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Security, Network, bindIp, Configuration
+Tags: MongoDB, Security, Network, BindIp, Configuration
 
 Description: Use MongoDB bindIp configuration to control which network interfaces mongod listens on and prevent connections from untrusted network addresses.
 

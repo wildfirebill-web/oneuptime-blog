@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, System Design, Notifications, Pub/Sub, Queues, Scalability
+Tags: Redis, System Design, Notification, Pub/Sub, Queue, Scalability
 
 Description: Learn how to design a scalable notification system using Redis Pub/Sub, lists, and sorted sets for real-time and batch delivery.
 

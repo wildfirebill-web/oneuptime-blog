@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Jinja2 Filters, Data Transformation
+Tags: Ansible, Loop, Jinja2 Filters, Data Transformation
 
 Description: Learn how to use the flatten filter with Ansible loops to iterate over nested lists and simplify complex data structures in your playbooks.
 

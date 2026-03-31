@@ -159,7 +159,7 @@ URL: https://docs.docker.com/compose/reference/
 Title: Docker Compose CLI Reference
 Description: Complete reference for docker compose commands
 
-Tags: docker, reference, docs, devops
+Tags: Ubuntu, Linkding, Self-Hosted, Bookmark Manager, Docker
 ```
 
 ### Batch Import from Browser

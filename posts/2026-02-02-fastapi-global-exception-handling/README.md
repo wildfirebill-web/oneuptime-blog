@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, FastAPI, Error Handling, Exceptions, API
+Tags: Python, FastAPI, Error Handling, Exception, API
 
 Description: Learn how to implement global exception handling in FastAPI using exception handlers, custom exception classes, and middleware to build robust APIs with consistent error responses.
 

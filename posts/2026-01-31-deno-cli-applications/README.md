@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Deno, CLI, TypeScript, Developer Tools
+Tags: Deno, CLI, TypeScript, Developer Tool
 
 Description: A comprehensive guide to building powerful command-line applications with Deno, covering argument parsing, subcommands, colors, user input, progress bars, and distribution.
 

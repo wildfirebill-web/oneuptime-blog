@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, bulkWrite, Bulk, CRUD, Performance, Batch
+Tags: MongoDB, BulkWrite, Bulk, CRUD, Performance, Batch
 
 Description: Learn how to use MongoDB's bulkWrite() to execute mixed insert, update, and delete operations in a single efficient batch, with ordered and unordered execution modes.
 

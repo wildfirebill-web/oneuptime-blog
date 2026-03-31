@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Zero Downtime, Rolling Updates, Canary, Blue-Green
+Tags: Flux CD, GitOps, Kubernetes, Zero Downtime, Rolling Update, Canary, Blue-Green
 
 Description: A practical guide to implementing zero-downtime deployments with Flux CD using rolling updates, canary releases, and blue-green strategies.
 

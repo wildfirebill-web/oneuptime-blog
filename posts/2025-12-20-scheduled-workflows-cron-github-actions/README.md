@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Cron, Scheduled Workflows, Automation, DevOps
+Tags: GitHub Action, CI/CD, Cron, Scheduled Workflows, Automation, DevOps
 
 Description: Learn how to use scheduled workflows with cron expressions in GitHub Actions to automate recurring tasks like dependency updates, security scans, and report generation.
 

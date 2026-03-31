@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Timezone, Configuration
+Tags: Podman, Container, DevOps, Timezone, Configuration
 
 Description: Learn how to configure the timezone inside Podman containers so that logs, scheduled tasks, and time-dependent operations use the correct local time.
 

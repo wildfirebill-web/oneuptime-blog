@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCPv6, IPv6, UDP, Networking, Ports
+Tags: DHCPv6, IPv6, UDP, Networking, Port
 
 Description: Understand the roles of UDP ports 546 and 547 in DHCPv6 communication between clients, relay agents, and servers.
 

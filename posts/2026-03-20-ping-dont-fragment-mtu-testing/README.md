@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ping, MTU, PMTUD, IPv4, Networking, Diagnostics
+Tags: Ping, MTU, PMTUD, IPv4, Networking, Diagnostic
 
 Description: Use ping with the Don't Fragment (DF) bit to manually discover the maximum MTU along a network path and diagnose MTU black hole problems.
 

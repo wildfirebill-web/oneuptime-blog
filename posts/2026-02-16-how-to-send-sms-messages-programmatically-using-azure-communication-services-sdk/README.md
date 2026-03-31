@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Communication Services, SMS, Messaging, SDK, Notifications, Two-Factor Authentication, Cloud Communication
+Tags: Azure Communication Services, SMS, Messaging, SDK, Notification, Two-Factor Authentication, Cloud Communication
 
 Description: Learn how to send SMS messages programmatically using the Azure Communication Services SDK with examples for notifications, alerts, and two-factor authentication.
 

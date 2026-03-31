@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Cosmos DB, Monitoring, Performance Diagnostics, Azure Monitor, Metrics, Logging
+Tags: Azure, Cosmos DB, Monitoring, Performance Diagnostics, Azure Monitor, Metric, Logging
 
 Description: Set up comprehensive monitoring for Azure Cosmos DB using built-in metrics, diagnostic logs, alerts, and the Azure Monitor ecosystem to catch performance issues early.
 

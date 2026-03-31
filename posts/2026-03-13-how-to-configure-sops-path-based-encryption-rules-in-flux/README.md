@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Path Rules, Configuration
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Path Rules, Configuration
 
 Description: Learn how to use SOPS path-based encryption rules to apply different encryption keys and settings based on file location in your Flux repository.
 

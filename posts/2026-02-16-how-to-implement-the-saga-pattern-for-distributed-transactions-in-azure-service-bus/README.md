@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Saga Pattern, Service Bus, Distributed Transactions, Microservices, Orchestration, Cloud Patterns
+Tags: Azure, Saga Pattern, Service Bus, Distributed Transaction, Microservice, Orchestration, Cloud Patterns
 
 Description: Learn how to implement the saga pattern for managing distributed transactions across microservices using Azure Service Bus for reliable messaging.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Integration Testing, Docker, Testing, DevOps
+Tags: GitHub Action, CI/CD, Integration Testing, Docker, Testing, DevOps
 
 Description: Learn how to set up comprehensive integration testing in GitHub Actions using service containers, Docker Compose, and real database connections.
 

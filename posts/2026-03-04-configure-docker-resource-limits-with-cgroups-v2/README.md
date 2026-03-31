@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Cgroups, Linux
+Tags: RHEL, Docker, Container, Cgroups, Linux
 
 Description: Learn how to configure Docker Resource Limits with cgroups v2 on RHEL with step-by-step instructions, configuration examples, and best practices.
 

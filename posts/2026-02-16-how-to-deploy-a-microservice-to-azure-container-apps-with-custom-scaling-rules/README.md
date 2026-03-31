@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Container Apps, Microservices, Scaling, Cloud, DevOps, Serverless
+Tags: Azure, Container Apps, Microservice, Scaling, Cloud, DevOps, Serverless
 
 Description: Learn how to deploy a microservice to Azure Container Apps and configure custom scaling rules based on HTTP traffic, CPU, and external metrics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Feature Flags, Kubernetes, CI/CD, Progressive Delivery, DevOps
+Tags: Feature Flag, Kubernetes, CI/CD, Progressive Delivery, DevOps
 
 Description: Implement progressive rollout strategies using feature flags in Kubernetes deployments.
 

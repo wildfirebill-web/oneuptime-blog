@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RKE2, Kubernetes, Private Registry, Harbor, Container Images, Rancher
+Tags: RKE2, Kubernetes, Private Registry, Harbor, Container Image, Rancher
 
 Description: Learn how to configure RKE2 to pull container images from a private registry, including authentication, TLS, and registry mirror configuration.
 

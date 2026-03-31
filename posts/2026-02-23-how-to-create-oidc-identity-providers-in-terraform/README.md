@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, IAM, OIDC, Federation, GitHub Actions, EKS
+Tags: Terraform, AWS, IAM, OIDC, Federation, GitHub Action, EKS
 
 Description: Learn how to create OIDC identity providers in AWS using Terraform for GitHub Actions, EKS, GitLab CI, and other OIDC-compatible platforms.
 

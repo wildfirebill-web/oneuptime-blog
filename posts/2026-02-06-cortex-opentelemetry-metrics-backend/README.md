@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Cortex, Metrics, Prometheus, Multi-Tenant, Scalable Backend
+Tags: OpenTelemetry, Cortex, Metric, Prometheus, Multi-Tenant, Scalable Backend
 
 Description: Learn how to deploy and configure Cortex as a horizontally scalable multi-tenant metrics backend for OpenTelemetry with remote write integration.
 

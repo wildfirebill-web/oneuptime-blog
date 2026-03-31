@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Length, Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Length, Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the length function in OpenTofu to count the number of elements in a list, map, or set, or the number of characters in a string.
 

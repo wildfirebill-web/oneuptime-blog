@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Queue Storage, Azure Functions, TypeScript, Serverless, Message Processing, Node.js, Cloud
+Tags: Azure Queue Storage, Azure Function, TypeScript, Serverless, Message Processing, Node.js, Cloud
 
 Description: Process Azure Queue Storage messages with Azure Functions in TypeScript for reliable background job processing and task queuing.
 

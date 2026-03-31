@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, S3, RGW, Batch Operations, Automation, Storage
+Tags: Rook, Ceph, S3, RGW, Batch Operation, Automation, Storage
 
 Description: Perform bulk S3 operations on millions of objects in Ceph RGW using S3 Batch Operations patterns with boto3 and AWS CLI for efficient large-scale data management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, AI, Machine Learning, LLM, Model Management
+Tags: Podman, Container, DevOps, AI, Machine Learning, LLM, Model Management
 
 Description: Learn how to browse, download, and manage AI models using the Podman AI Lab extension for local inference.
 

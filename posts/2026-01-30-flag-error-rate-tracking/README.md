@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Error Tracking, Monitoring, Observability
+Tags: Feature Flag, Error Tracking, Monitoring, Observability
 
 Description: Learn how to track error rates correlated with feature flag states.
 

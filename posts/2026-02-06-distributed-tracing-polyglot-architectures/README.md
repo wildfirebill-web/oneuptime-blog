@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Distributed Tracing, Polyglot, Microservices, Go, Python, Java, Node.js, Context Propagation
+Tags: OpenTelemetry, Distributed Tracing, Polyglot, Microservice, Go, Python, Java, Node.js, Context Propagation
 
 Description: Learn how to implement end-to-end distributed tracing across services written in Go, Python, Java, and Node.js using OpenTelemetry's language-agnostic context propagation.
 

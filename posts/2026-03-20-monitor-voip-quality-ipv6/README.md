@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VoIP, IPv6, Monitoring, MOS, Jitter, Latency, RTCP, Quality Metrics
+Tags: VoIP, IPv6, Monitoring, MOS, Jitter, Latency, RTCP, Quality Metric
 
 Description: Monitor and measure VoIP call quality metrics including MOS score, jitter, latency, and packet loss for calls traversing IPv6 networks using RTCP and active probing tools.
 

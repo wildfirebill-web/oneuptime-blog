@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Projects, Security, Network Isolation, Multi-Tenancy
+Tags: Rancher, Kubernetes, Project, Security, Network Isolation, Multi-Tenancy
 
 Description: Learn how to isolate workloads between Rancher projects using RBAC, network policies, resource quotas, and node affinity.
 

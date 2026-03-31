@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Migration, Storage
+Tags: Podman, Container, DevOps, Volumes, Migration, Storage
 
 Description: Learn how to migrate Podman volumes from one host to another using export, transfer, and import workflows.
 

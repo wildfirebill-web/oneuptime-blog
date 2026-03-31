@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Monitoring, Metrics, Prometheus, Multi-Tenancy, Observability
+Tags: Istio, Monitoring, Metric, Prometheus, Multi-Tenancy, Observability
 
 Description: How to collect, query, and visualize per-tenant metrics in Istio using Prometheus and Grafana with namespace-based tenant identification.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, ArgoCD, GitOps, Kubernetes, CI/CD
+Tags: Podman, Container, DevOps, ArgoCD, GitOps, Kubernetes, CI/CD
 
 Description: Learn how to integrate Podman into a GitOps workflow with ArgoCD for automated Kubernetes deployments triggered by container image builds.
 

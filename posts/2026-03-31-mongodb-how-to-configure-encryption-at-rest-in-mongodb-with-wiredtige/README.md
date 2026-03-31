@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Security, Encryption At Rest, WiredTiger, MongoDB Enterprise
+Tags: MongoDB, Security, Encryption at Rest, WiredTiger, MongoDB Enterprise
 
 Description: Learn how to configure encryption at rest in MongoDB Enterprise using WiredTiger's native encryption to protect data stored on disk.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Components, Repository Structure, DevOps, Configuration Management, Best Practices
+Tags: Dapr, Component, Repository Structure, DevOps, Configuration Management, Best Practice
 
 Description: Learn best practices for organizing Dapr component YAML files in a repository, covering directory structures, environment separation, and CI/CD integration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, Entity Framework Core, Audit Logs, Database
+Tags: .NET, C#, Entity Framework Core, Audit Log, Database
 
 Description: Learn how to implement automatic audit logging in your .NET applications using Entity Framework Core interceptors to track data changes, user actions, and maintain compliance.
 

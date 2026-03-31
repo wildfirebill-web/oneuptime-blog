@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Detached, Background
+Tags: Podman, Container, DevOps, podman-compose, Detached, Background
 
 Description: Learn how to run podman-compose services in detached mode for background operation and manage them without blocking your terminal.
 

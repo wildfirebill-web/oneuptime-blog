@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, HPA, Adapters
+Tags: Kubernetes, HPA, Adapter
 
 Description: Implement workload-specific metrics adapters for HPA to enable autoscaling based on specialized metrics from databases, message queues, cloud services, and custom application systems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Logs, Structured Logging, Observability, Correlation
+Tags: OpenTelemetry, Log, Structured Logging, Observability, Correlation
 
 Description: Learn how to send structured logs with OpenTelemetry including trace-log correlation and log pipeline configuration.
 

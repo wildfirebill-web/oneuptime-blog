@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Loki, Alerting, LogQL, Observability, Monitoring, Notifications
+Tags: Grafana, Loki, Alerting, LogQL, Observability, Monitoring, Notification
 
 Description: A comprehensive guide to creating log-based alerts in Grafana using Loki data sources, covering alert rules, contact points, notification policies, and best practices for effective log monitoring.
 

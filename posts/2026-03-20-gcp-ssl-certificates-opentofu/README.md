@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, SSL, TLS, Certificates, Google-managed, Cloud DNS, Infrastructure as Code
+Tags: OpenTofu, GCP, SSL, TLS, Certificate, Google-managed, Cloud DNS, Infrastructure as Code
 
 Description: Learn how to provision Google-managed SSL certificates and self-managed certificates for GCP Load Balancers using OpenTofu, with automatic domain validation and certificate lifecycle management.
 

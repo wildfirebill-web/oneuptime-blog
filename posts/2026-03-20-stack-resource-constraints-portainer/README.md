@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Resource Limits, Performance, Stacks
+Tags: Portainer, Docker Compose, Resource Limit, Performance, Stack
 
 Description: Apply CPU and memory resource constraints at the stack level in Portainer to ensure fair resource allocation.
 

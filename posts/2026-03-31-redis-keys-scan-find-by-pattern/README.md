@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, KEYS, SCAN, Pattern Matching, Key Management
+Tags: Redis, Key, SCAN, Pattern Matching, Key Management
 
 Description: Learn how to find Redis keys by pattern using KEYS and SCAN, understand the performance difference between them, and use SCAN safely in production environments.
 

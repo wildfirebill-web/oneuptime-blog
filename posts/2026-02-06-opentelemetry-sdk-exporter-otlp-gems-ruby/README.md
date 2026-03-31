@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Ruby, SDK, OTLP, Gems, Exporter
+Tags: OpenTelemetry, Ruby, SDK, OTLP, Gem, Exporter
 
 Description: Comprehensive guide to configuring and using the core OpenTelemetry SDK and OTLP exporter gems for custom instrumentation in Ruby applications.
 

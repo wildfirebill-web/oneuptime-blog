@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Null_resource, Provisioners, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Null_resource, Provisioner, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use null_resource in OpenTofu to run arbitrary local or remote commands as part of your infrastructure provisioning without creating actual cloud resources.
 

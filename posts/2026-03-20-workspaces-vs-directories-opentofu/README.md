@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Workspaces, Directory Structure, Environments, Infrastructure as Code, Best Practice
+Tags: OpenTofu, Workspaces, Directory Structure, Environment, Infrastructure as Code, Best Practice
 
 Description: Learn when to use OpenTofu workspaces versus separate directories for managing multiple environments, and why separate directories are recommended for production environments.
 

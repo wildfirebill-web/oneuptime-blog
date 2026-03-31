@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, CSI, Provisioner, Resources, Pod
+Tags: Rook, Ceph, Kubernetes, CSI, Provisioner, Resource, Pod
 
 Description: Configure resource requests and limits for Rook CSI provisioner pods to ensure PVC creation, deletion, and snapshot operations complete reliably without resource contention.
 

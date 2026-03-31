@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Build, Performance, Caching
+Tags: Podman, Container, DevOps, Build, Performance, Caching
 
 Description: Learn how to leverage Podman's layer caching mechanisms to dramatically speed up container image builds by reusing previously built layers.
 

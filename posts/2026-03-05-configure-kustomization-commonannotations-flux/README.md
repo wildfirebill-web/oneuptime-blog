@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Kustomize, Kustomization, Annotations
+Tags: Flux CD, GitOps, Kubernetes, Kustomize, Kustomization, Annotation
 
 Description: Learn how to use the commonAnnotations field in kustomization.yaml to apply consistent annotations across all Kubernetes resources managed by Flux CD.
 

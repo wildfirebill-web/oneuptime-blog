@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Secondary Index, Sorted Sets, Database, Indexing, Query Optimization
+Tags: Redis, Secondary Index, Sorted Set, Database, Indexing, Query Optimization
 
 Description: A comprehensive guide to building secondary indexes in Redis using Sorted Sets, enabling efficient queries on non-primary attributes for better query performance and flexibility.
 

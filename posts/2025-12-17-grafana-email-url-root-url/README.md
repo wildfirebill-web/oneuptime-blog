@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Configuration, Email Alerts, Notifications, DevOps
+Tags: Grafana, Configuration, Email Alerts, Notification, DevOps
 
 Description: Learn how to properly configure Grafana's root_url setting to ensure email notifications contain correct dashboard links.
 

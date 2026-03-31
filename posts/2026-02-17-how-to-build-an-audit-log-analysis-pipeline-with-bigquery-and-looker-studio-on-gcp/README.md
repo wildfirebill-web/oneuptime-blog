@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Audit Logs, BigQuery, Looker Studio, Security Analytics
+Tags: GCP, Audit Log, BigQuery, Looker Studio, Security Analytics
 
 Description: Learn how to build a complete audit log analysis pipeline on Google Cloud, routing logs to BigQuery and creating Looker Studio dashboards for security monitoring and compliance.
 

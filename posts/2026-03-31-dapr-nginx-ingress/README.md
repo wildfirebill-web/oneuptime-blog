@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, NGINX, Ingress, Kubernetes, Routing
+Tags: Dapr, Nginx, Ingress, Kubernetes, Routing
 
 Description: Configure NGINX Ingress Controller to route external HTTP traffic to Dapr microservices, with TLS termination, path-based routing, and header forwarding.
 

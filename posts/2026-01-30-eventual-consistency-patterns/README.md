@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Distributed Systems, Consistency, Architecture, Database
+Tags: Distributed System, Consistency, Architecture, Database
 
 Description: Learn how to implement eventual consistency patterns for scalable distributed systems.
 

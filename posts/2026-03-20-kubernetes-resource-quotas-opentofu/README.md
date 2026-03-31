@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Resource Quotas, OpenTofu, Multi-Tenancy, Governance, Infrastructure
+Tags: Kubernetes, Resource Quota, OpenTofu, Multi-Tenancy, Governance, Infrastructure
 
 Description: Learn how to create Kubernetes Resource Quotas with OpenTofu to limit resource consumption per namespace for fair multi-tenant cluster sharing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Default Values
+Tags: ClickHouse, SQL, Data Type, Default Values
 
 Description: Learn how ClickHouse handles default values for columns using DEFAULT, MATERIALIZED, and ALIAS expressions with practical examples.
 

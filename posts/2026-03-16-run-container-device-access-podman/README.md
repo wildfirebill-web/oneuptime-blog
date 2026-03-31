@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Devices, Hardware
+Tags: Podman, Container, DevOps, Device, Hardware
 
 Description: Learn how to grant Podman containers access to specific host devices like GPUs, USB devices, and serial ports without running in privileged mode.
 

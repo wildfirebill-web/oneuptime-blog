@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Networks
+Tags: OpenTofu, Terraform, IaC, Function, Network
 
 Description: Learn how to use cidrhost, cidrnetmask, cidrsubnet, cidrsubnets, and cidrcontains functions in OpenTofu for IP address management.
 

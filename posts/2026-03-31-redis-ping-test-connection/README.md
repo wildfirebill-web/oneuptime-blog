@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, PING, Connection, Health Check, Monitoring
+Tags: Redis, Ping, Connection, Health Check, Monitoring
 
 Description: Learn how to use PING to verify a Redis connection is alive, measure round-trip latency, and use it as a lightweight health check endpoint.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Dictionary, Hierarchical, Tree Structure, Data Modeling
+Tags: ClickHouse, Dictionary, Hierarchical, Tree structure, Data Modeling
 
 Description: Learn how to create hierarchical dictionaries in ClickHouse to model parent-child relationships and traverse trees efficiently inside queries.
 

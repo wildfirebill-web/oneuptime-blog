@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Row Number, Query, User Variable, Legacy
+Tags: MySQL, Row Number, Query, User Variable, LEGACY
 
 Description: Generate sequential row numbers in MySQL 5.6 and 5.7 without ROW_NUMBER() using user variables and self-join techniques for legacy compatibility.
 

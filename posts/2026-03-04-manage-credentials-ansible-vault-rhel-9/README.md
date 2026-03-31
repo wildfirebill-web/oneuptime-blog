@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible Vault, Security, Credentials, Linux, Automation
+Tags: RHEL, Ansible Vault, Security, Credential, Linux, Automation
 
 Description: A practical guide to using Ansible Vault on RHEL to encrypt, manage, and use sensitive credentials like passwords, API keys, and certificates in your Ansible playbooks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Functional Index, Indexes, Query Optimization
+Tags: MySQL, Functional Index, Index, Query Optimization
 
 Description: Functional indexes in MySQL 8.0.13+ allow indexing the result of an expression or function call, enabling fast queries on computed values like YEAR(date_column).
 

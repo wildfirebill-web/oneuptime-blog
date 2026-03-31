@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Distributed Tracing, GKE, Cloud Run, Cloud Functions, Cloud Trace, Google Cloud
+Tags: GCP, Distributed Tracing, GKE, Cloud Run, Cloud Function, Cloud Trace, Google Cloud
 
 Description: Learn how to implement end-to-end distributed tracing across GKE, Cloud Run, and Cloud Functions on Google Cloud for full request visibility.
 

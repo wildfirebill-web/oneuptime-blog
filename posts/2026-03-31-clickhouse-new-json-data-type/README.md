@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, JSON, Data Types
+Tags: ClickHouse, SQL, JSON, Data Type
 
 Description: Learn how to use ClickHouse's new JSON data type for dot-notation path access, dynamic subcolumns, and efficient semi-structured data storage.
 

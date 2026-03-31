@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Drone CI, CI/CD, GitOps, Kubernetes, Container Images, Docker, Pipeline
+Tags: Flux CD, Drone CI, CI/CD, GitOps, Kubernetes, Container Image, Docker, Pipeline
 
 Description: A practical guide to integrating Drone CI with Flux CD for automated container image builds and GitOps-based Kubernetes deployments.
 

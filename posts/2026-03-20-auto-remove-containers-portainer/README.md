@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Auto-Remove, Cleanup, Containers
+Tags: Portainer, Docker, Auto-Remove, Cleanup, Container
 
 Description: Configure containers in Portainer to automatically remove themselves after they stop for cleaner container lifecycle management.
 

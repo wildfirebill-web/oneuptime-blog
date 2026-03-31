@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Admission Webhooks, Kyverno, Resource Standards, Governance
+Tags: Flux CD, GitOps, Kubernetes, Admission Webhook, Kyverno, Resource Standards, Governance
 
 Description: Combine Kubernetes admission webhooks with Flux CD to enforce resource standards - labeling requirements, security contexts, and naming conventions - for all resources entering your cluster.
 

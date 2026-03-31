@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Concurrency, Goroutines, Channels, Parallel Programming, Performance
+Tags: Go, Golang, Concurrency, Goroutines, Channel, Parallel Programming, Performance
 
 Description: A practical guide to writing concurrent Go programs using goroutines, channels, and synchronization primitives.
 

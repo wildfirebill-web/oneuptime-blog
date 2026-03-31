@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Merge, Map, HCL, Functions, Infrastructure as Code
+Tags: OpenTofu, Merge, Map, HCL, Function, Infrastructure as Code
 
 Description: Learn how to use the merge() function in OpenTofu to combine multiple maps - merging tag sets, configuration objects, and default-with-override patterns.
 

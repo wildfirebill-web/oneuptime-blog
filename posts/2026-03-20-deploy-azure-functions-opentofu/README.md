@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Azure Functions, Serverless, Terraform
+Tags: OpenTofu, Azure, Azure Function, Serverless, Terraform
 
 Description: Deploy Azure Functions serverless compute using OpenTofu, including consumption plan, storage accounts, app settings, and CI/CD integration.
 

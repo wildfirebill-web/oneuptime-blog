@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Event Sourcing, Message Queues, Consumer Groups, XADD, XREAD, Event-Driven
+Tags: Redis, Stream, Event Sourcing, Message Queue, Consumer Group, XADD, XREAD, Event-Driven
 
 Description: A comprehensive guide to using Redis Streams for event sourcing and message processing, covering XADD, XREAD, consumer groups, exactly-once processing, and practical examples in Python, Node.
 

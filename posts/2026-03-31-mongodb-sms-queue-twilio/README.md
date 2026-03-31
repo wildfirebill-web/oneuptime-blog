@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sms, Queue, Twilio, Notification
+Tags: MongoDB, SMS, Queue, Twilio, Notification
 
 Description: Build a durable SMS queue backed by MongoDB with Twilio delivery, retry logic, and per-recipient rate limiting to avoid carrier throttling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, MCP, Model Context Protocol, AI, LLM, Tools
+Tags: Go, MCP, Model Context Protocol, AI, LLM, Tool
 
 Description: Build an MCP (Model Context Protocol) server in Go to create custom tools that AI assistants can use for automation and integrations.
 

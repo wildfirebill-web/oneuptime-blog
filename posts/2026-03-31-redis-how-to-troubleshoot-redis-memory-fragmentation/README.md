@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Fragmentation, jemalloc, Performance, Troubleshooting
+Tags: Redis, Memory, Fragmentation, Jemalloc, Performance, Troubleshooting
 
 Description: Diagnose high Redis memory fragmentation ratios, understand the jemalloc allocator behaviour, and reclaim fragmented memory with active defragmentation.
 

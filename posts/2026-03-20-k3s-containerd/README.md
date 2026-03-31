@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Containerd, Container Runtime
+Tags: k3s, Kubernetes, Rancher, Containerd, Container Runtime
 
 Description: Learn how to configure and customize the containerd runtime bundled with K3s, including snapshotter settings and containerd configuration overrides.
 

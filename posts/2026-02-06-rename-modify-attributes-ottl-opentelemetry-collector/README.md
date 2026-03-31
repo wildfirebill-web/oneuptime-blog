@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, OTTL, Attributes, Transform Processor, Metadata
+Tags: OpenTelemetry, Collector, OTTL, Attribute, Transform Processor, Metadata
 
 Description: Learn how to rename and modify attributes in the OpenTelemetry Collector using OTTL with practical examples for organizing and enriching your telemetry data.
 

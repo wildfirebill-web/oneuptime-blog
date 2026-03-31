@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Event-Driven, Ordering, Distributed Systems, Reliability
+Tags: Event-Driven, Ordering, Distributed System, Reliability
 
 Description: Learn to implement event ordering guarantees to ensure correct sequence of event processing across distributed systems.
 

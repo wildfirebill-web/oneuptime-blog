@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Images, DevOps
+Tags: Portainer, Docker, Container, Image, DevOps
 
 Description: Learn how to pull a Docker image from a registry and run it as a container using the Portainer web interface.
 

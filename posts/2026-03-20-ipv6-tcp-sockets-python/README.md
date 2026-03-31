@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, TCP, Sockets, Networking, Programming
+Tags: Python, IPv6, TCP, Socket, Networking, Programming
 
 Description: Create IPv6 TCP client and server sockets in Python using the socket module, handle dual-stack connections, and manage IPv6 address formatting.
 

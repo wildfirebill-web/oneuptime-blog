@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, Election, High Availability, Operations
+Tags: MongoDB, Replica Set, Election, High Availability, Operation
 
 Description: Learn how to respond to MongoDB replica set election events, understand why elections happen, and minimize application impact during primary failovers.
 

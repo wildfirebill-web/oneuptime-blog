@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Self-Hosted Runners, CI/CD, DevOps, Infrastructure, Security
+Tags: GitHub Action, Self-Hosted Runners, CI/CD, DevOps, Infrastructure, Security
 
 Description: Learn how to set up and manage self-hosted runners for GitHub Actions.
 

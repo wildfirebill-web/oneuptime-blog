@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Stacks, Automation, CI/CD
+Tags: Portainer, API, Stack, Automation, CI/CD
 
 Description: Learn how to create, update, and manage Docker Compose stacks programmatically using the Portainer REST API.
 

@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Storage, Administration, CLI
+Tags: Rook, Ceph, Administration, CLI, Storage
 
-Description: Learn how to use the ceph tell command to send commands directly to specific Ceph daemons including OSDs, monitors, and MDS processes.
+Description: Use the ceph tell command to send runtime configuration changes and queries directly to specific Ceph daemons without restarting them.
 
 ---
 

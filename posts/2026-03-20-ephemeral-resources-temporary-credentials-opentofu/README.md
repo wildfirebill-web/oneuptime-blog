@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Ephemeral Resources, Temporary Credentials, Secrets, Infrastructure as Code, DevOps
+Tags: OpenTofu, Ephemeral Resources, Temporary Credentials, Secret, Infrastructure as Code, DevOps
 
 Description: A guide to using ephemeral resources in OpenTofu to obtain and use temporary credentials without persisting sensitive values in state.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Saga Pattern, Distributed Systems, Microservices, Transactions, Event-Driven Architecture
+Tags: Python, Saga Pattern, Distributed System, Microservice, Transaction, Event-Driven Architecture
 
 Description: Learn how to implement the Saga pattern in Python to manage distributed transactions across microservices.
 

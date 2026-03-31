@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RediSearch, Index, Schema, Full-text search
+Tags: Redis, RediSearch, Index, Schema, Full-Text Search
 
 Description: Learn how to use FT.ALTER in Redis to add new fields to an existing RediSearch index schema without dropping and recreating the index.
 

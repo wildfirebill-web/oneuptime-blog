@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Helm, HelmRelease, Validation, Values, Kubernetes, GitOps
+Tags: Flux CD, Helm, HelmRelease, Validation, Value, Kubernetes, GitOps
 
 Description: A practical guide to validating HelmRelease values in Flux CD to prevent deployment failures caused by misconfigured Helm chart parameters.
 

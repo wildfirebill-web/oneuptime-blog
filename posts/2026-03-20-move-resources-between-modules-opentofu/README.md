@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Moved Blocks, Modules, Refactoring, Infrastructure as Code
+Tags: OpenTofu, Moved Blocks, Module, Refactoring, Infrastructure as Code
 
 Description: Learn how to use OpenTofu moved blocks to relocate resources between modules without destroying and recreating your infrastructure.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, FastAPI, Hooks, Request, Response, Python, Custom Attributes
+Tags: OpenTelemetry, FastAPI, Hook, Request, Response, Python, Custom Attributes
 
 Description: Master OpenTelemetry request and response hooks in FastAPI to enrich traces with custom attributes and implement advanced observability patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, RDS, Read Replicas, Disaster Recovery
+Tags: AWS, RDS, Read Replica, Disaster Recovery
 
 Description: Learn how to create cross-region RDS read replicas for disaster recovery, lower latency reads, and regional data distribution.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Registry, Private Registry
+Tags: Podman, Container, DevOps, Container Image, Registry, Private Registry
 
 Description: Learn how to push container images to private registries using Podman, including self-hosted registries, TLS configuration, and authentication setup.
 

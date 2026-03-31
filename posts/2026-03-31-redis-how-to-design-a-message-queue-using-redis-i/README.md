@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, System Design, Message Queue, Interview, Streams, Pub/Sub, Architecture
+Tags: Redis, System Design, Message Queue, Interview, Stream, Pub/Sub, Architecture
 
 Description: A complete system design walkthrough for building a message queue with Redis Streams, covering producer-consumer patterns, consumer groups, and failure handling.
 

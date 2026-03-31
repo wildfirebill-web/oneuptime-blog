@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bash, Shell Scripting, Arrays, Linux, DevOps, Automation, Data Structures
+Tags: Bash, Shell Scripting, Array, Linux, DevOps, Automation, Data Structure
 
 Description: A complete guide to working with indexed and associative arrays in Bash scripts, covering declaration, manipulation, iteration, and practical use cases.
 

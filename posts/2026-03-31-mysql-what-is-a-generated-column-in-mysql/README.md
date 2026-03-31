@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Generated Columns, Virtual Columns, Schema Design, InnoDB
+Tags: MySQL, Generated Column, Virtual Column, Schema Design, InnoDB
 
 Description: A generated column in MySQL is a column whose value is automatically computed from an expression based on other columns, either stored on disk or computed on the fly.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Performance, Configuration, HCL
+Tags: Terraform, Variable, Performance, Configuration, HCL
 
 Description: Reduce Terraform plan and apply times by optimizing how variables, locals, and expressions are processed in large configurations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, Conditional Function, Data Cleaning, Fallback
+Tags: ClickHouse, NULL Handling, Conditional Function, Data Cleaning, Fallback
 
 Description: Learn how to use coalesce() in ClickHouse to return the first non-NULL value from a list, enabling multi-source fallbacks and default value chains.
 

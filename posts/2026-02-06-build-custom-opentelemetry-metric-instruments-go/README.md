@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Go, Metrics, Custom Instruments, Counter, Histogram
+Tags: OpenTelemetry, Go, Metric, Custom Instruments, Counter, Histogram
 
 Description: Build custom OpenTelemetry metric instruments in Go including counters, gauges, and histograms to capture application-specific performance data.
 

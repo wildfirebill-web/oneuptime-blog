@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, SSH, Security, Authentication, Keys, Tutorial
+Tags: Ubuntu, SSH, Security, Authentication, Key, Tutorial
 
 Description: Complete guide to generating SSH key pairs, managing keys, and configuring key-based authentication for secure remote access on Ubuntu.
 

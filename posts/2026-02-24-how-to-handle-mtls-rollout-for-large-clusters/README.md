@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, mTLS, Large Clusters, Migration, Kubernetes
+Tags: Istio, mTLS, Large Cluster, Migration, Kubernetes
 
 Description: A phased approach to rolling out strict mTLS across a large Kubernetes cluster with hundreds of services and multiple teams without causing outages.
 

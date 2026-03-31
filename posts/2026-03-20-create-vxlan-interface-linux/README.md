@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, VXLAN, Overlay Network, iproute2, Networking, SDN, Containers
+Tags: Linux, VXLAN, Overlay Network, iproute2, Networking, SDN, Container
 
 Description: Create a VXLAN (Virtual Extensible LAN) interface on Linux using ip link to build overlay networks that extend Layer 2 segments across Layer 3 boundaries.
 

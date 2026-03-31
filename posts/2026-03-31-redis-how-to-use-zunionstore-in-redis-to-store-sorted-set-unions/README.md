@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, ZUNIONSTORE, Union, Commands
+Tags: Redis, Sorted Set, ZUNIONSTORE, UNION, Command
 
 Description: Learn how to use ZUNIONSTORE in Redis to merge multiple sorted sets into a destination key with flexible score aggregation and weighting options.
 

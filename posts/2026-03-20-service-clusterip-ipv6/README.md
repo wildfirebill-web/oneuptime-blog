@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Services, ClusterIP, Dual-Stack, Networking
+Tags: Kubernetes, IPv6, Service, ClusterIP, Dual-Stack, Networking
 
 Description: Configure Kubernetes Services with IPv6 ClusterIPs in dual-stack clusters, understand how ipFamilyPolicy controls address assignment, and create services with both IPv4 and IPv6 cluster addresses.
 

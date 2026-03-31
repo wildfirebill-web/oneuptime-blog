@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, IBM Cloud, Virtual Servers, Cloud, Linux
+Tags: RHEL, IBM Cloud, Virtual Server, Cloud, Linux
 
 Description: Deploy and configure RHEL on IBM Cloud Virtual Servers for VPC with networking, storage, and monitoring integration.
 

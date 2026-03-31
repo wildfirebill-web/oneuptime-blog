@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Grafana Tempo, Distributed Tracing, Observability, Traces
+Tags: OpenTelemetry, Grafana Tempo, Distributed Tracing, Observability, Trace
 
 Description: Learn how to configure Grafana Tempo as a trace backend for OpenTelemetry, including Collector setup, storage options, and querying traces.
 

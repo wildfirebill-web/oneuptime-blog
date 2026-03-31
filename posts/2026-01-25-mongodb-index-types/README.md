@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Performance, Database, Query Optimization
+Tags: MongoDB, Index, Performance, Database, Query Optimization
 
 Description: A guide to MongoDB index types including single field, compound, multikey, text, geospatial, and hashed indexes, with practical examples for choosing the right index for your use case.
 

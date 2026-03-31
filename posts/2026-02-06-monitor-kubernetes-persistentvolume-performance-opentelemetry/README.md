@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kubernetes, PersistentVolume, Storage, Monitoring, Metrics
+Tags: OpenTelemetry, Kubernetes, PersistentVolume, Storage, Monitoring, Metric
 
 Description: How to monitor Kubernetes PersistentVolume performance metrics like IOPS, throughput, and latency using the OpenTelemetry Collector.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Last9, OTLP, Metrics
+Tags: OpenTelemetry, Last9, OTLP, Metric
 
 Description: Configure OpenTelemetry to send traces and metrics to Last9 using OTLP, and leverage Last9's native LogMetrics and TraceMetrics features.
 

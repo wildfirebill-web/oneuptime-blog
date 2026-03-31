@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Platform Engineering, Golden Path, Developer Experience, IDP
+Tags: Dapr, Platform Engineering, Golden Path, Developer Experience, IdP
 
 Description: Learn how to integrate Dapr into platform engineering workflows by building golden paths, paved roads, and self-service tooling that make Dapr the default choice for application teams.
 

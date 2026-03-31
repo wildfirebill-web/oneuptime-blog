@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, Join, Group By, Database, Query
+Tags: MySQL, SQL, Join, GROUP BY, Database, Query
 
 Description: Learn how to combine JOIN and GROUP BY in MySQL to produce grouped summaries across multiple related tables, with examples covering COUNT, SUM, HAVING, and common pitfalls.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Query
+Tags: MySQL, JSON, Query
 
 Description: Learn how to extract and filter data from deeply nested JSON objects in MySQL using path expressions, arrow operators, and JSON functions.
 

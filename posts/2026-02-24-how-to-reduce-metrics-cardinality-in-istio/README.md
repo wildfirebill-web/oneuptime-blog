@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Cardinality, Prometheus, Performance
+Tags: Istio, Metric, Cardinality, Prometheus, Performance
 
 Description: Reduce Istio metrics cardinality to lower Prometheus storage costs and improve query performance by removing labels, disabling metrics, and using recording rules.
 

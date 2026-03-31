@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SUSE Observability, Alerting, Monitoring, Notifications, Kubernetes
+Tags: SUSE Observability, Alerting, Monitoring, Notification, Kubernetes
 
 Description: Configure monitors and alert notifications in SUSE Observability to get notified of infrastructure and application issues.
 

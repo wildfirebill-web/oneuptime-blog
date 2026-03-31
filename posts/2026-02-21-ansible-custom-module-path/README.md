@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Modules, Configuration, DevOps
+Tags: Ansible, Module, Configuration, DevOps
 
 Description: Configure Ansible to load custom modules from your own directories, enabling you to extend Ansible with project-specific or shared modules.
 

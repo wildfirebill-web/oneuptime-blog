@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, DDL, Dictionary, Lookup, JOIN
+Tags: ClickHouse, SQL, DDL, Dictionary, Lookup, Join
 
 Description: Learn how to create ClickHouse dictionaries with CREATE DICTIONARY, covering SOURCE options, LAYOUT types, LIFETIME, and fast key-value lookups.
 

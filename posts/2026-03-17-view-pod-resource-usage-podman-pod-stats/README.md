@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Monitoring, Resources
+Tags: Podman, Container, DevOps, Pod, Monitoring, Resource
 
 Description: Learn how to monitor CPU, memory, and network usage for all containers in a Podman pod.
 

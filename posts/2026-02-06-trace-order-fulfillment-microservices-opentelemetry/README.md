@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Distributed Tracing, Microservices, Order Fulfillment, E-Commerce, Observability
+Tags: OpenTelemetry, Distributed Tracing, Microservice, Order Fulfillment, E-Commerce, Observability
 
 Description: Learn how to implement distributed tracing across an order fulfillment pipeline using OpenTelemetry to track orders from checkout to delivery.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Bugtool, Troubleshooting, Kubernetes, Diagnostics
+Tags: Cilium, Bugtool, Troubleshooting, Kubernetes, Diagnostic
 
 Description: Diagnose and resolve issues when cilium-bugtool fails to run, produces incomplete archives, or encounters disk space and permission problems during diagnostic data collection.
 

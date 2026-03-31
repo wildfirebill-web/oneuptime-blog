@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Lambda, CloudWatch, Metrics, Observability
+Tags: AWS, Lambda, CloudWatch, Metric, Observability
 
 Description: Publish custom CloudWatch metrics from AWS Lambda functions to track business KPIs, application-specific performance data, and operational metrics beyond the defaults.
 

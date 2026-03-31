@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Regular Expressions, Regex, BSON, Queries
+Tags: MongoDB, Regular Expression, Regex, BSON, Queries
 
 Description: Learn how to store regex patterns as BSON values in MongoDB documents and use them to dynamically match strings in application queries.
 

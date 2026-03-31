@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SELECT, Settings, Configuration, Performance
+Tags: ClickHouse, SQL, SELECT, Setting, Configuration, Performance
 
 Description: Override ClickHouse server settings at the query level using the SETTINGS clause to tune memory, threads, join algorithms, and more.
 

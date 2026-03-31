@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Stored Procedures, Parameters, Sql
+Tags: MySQL, Stored Procedure, Parameter, SQL
 
 Description: Learn how to use OUT and INOUT parameters in MySQL stored procedures to return values to the caller without using a SELECT result set.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics
+Tags: Calico, Kubernetes, Networking, Diagnostic
 
 Description: Avoid common mistakes in Calico node diagnostics including diagnosing from the wrong node, restarting all calico-node pods instead of the affected one, and missing iptables programming failures.
 

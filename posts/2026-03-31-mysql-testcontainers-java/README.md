@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Testcontainer, Java, Integration Test
+Tags: MySQL, Testcontainers, Java, Integration Test
 
 Description: Learn how to use the Testcontainers Java library to spin up a real MySQL container for integration tests, including schema setup, lifecycle management, and JUnit 5 integration.
 

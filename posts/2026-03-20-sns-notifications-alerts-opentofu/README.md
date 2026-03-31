@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, SNS, Alerting, Notifications, Infrastructure as Code
+Tags: OpenTofu, AWS, SNS, Alerting, Notification, Infrastructure as Code
 
 Description: Learn how to provision AWS SNS topics, subscriptions, and CloudWatch alarm integrations using OpenTofu for automated notifications and alerting.
 

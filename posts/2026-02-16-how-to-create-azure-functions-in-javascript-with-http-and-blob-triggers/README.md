@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, JavaScript, Serverless, HTTP Trigger, Blob Trigger, Node.js, Cloud Functions
+Tags: Azure Function, JavaScript, Serverless, HTTP Trigger, Blob Trigger, Node.js, Cloud Function
 
 Description: Learn how to create Azure Functions in JavaScript with HTTP and Blob triggers for building serverless APIs and automated file processing workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Atlas Search, Elasticsearch, Migration, Full-Text Search
+Tags: MongoDB, Atlas Search, Elasticsearch, Migration, Full-Text Search
 
 Description: Migrate your full-text search workloads from Elasticsearch to MongoDB Atlas Search to reduce infrastructure complexity by consolidating your database and search.
 

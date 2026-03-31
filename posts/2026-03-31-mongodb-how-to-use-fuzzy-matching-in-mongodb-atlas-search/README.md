@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Atlas Search, Fuzzy Search, Typo Tolerance
+Tags: MongoDB, Atlas Search, Fuzzy Search, Typo Tolerance
 
 Description: Learn how to implement fuzzy matching in MongoDB Atlas Search to tolerate typos and spelling variations using Levenshtein distance with maxEdits and prefixLength options.
 

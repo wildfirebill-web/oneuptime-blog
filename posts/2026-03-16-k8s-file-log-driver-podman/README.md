@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Kubernetes
+Tags: Podman, Container, DevOps, Logging, Kubernetes
 
 Description: Learn how to use Podman's default k8s-file log driver, which stores logs in Kubernetes-compatible format, including configuration options and log file management.
 

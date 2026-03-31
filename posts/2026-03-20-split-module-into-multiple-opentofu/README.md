@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Refactoring, Moved Blocks, Infrastructure as Code
+Tags: OpenTofu, Module, Refactoring, Moved Blocks, Infrastructure as Code
 
 Description: Learn how to safely split a large OpenTofu module into smaller, focused modules without destroying any infrastructure.
 

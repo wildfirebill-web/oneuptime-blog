@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CloudWatch, Evidently, Feature Flags, A/B Testing
+Tags: AWS, CloudWatch, Evidently, Feature Flag, A/B Testing
 
 Description: Learn how to use Amazon CloudWatch Evidently to implement feature flags and run A/B tests on your applications with built-in metrics collection and analysis.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Materialized Views, Troubleshooting, Schema
+Tags: ClickHouse, Materialized View, Troubleshooting, Schema
 
 Description: Learn how to diagnose and fix 'Block structure mismatch' errors that occur when Materialized View output does not match the target table schema.
 

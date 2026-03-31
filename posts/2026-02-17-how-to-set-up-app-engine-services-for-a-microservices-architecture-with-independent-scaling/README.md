@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, App Engine, Microservices, Scaling, Architecture
+Tags: GCP, App Engine, Microservice, Scaling, Architecture
 
 Description: Learn how to structure your App Engine application as independent services with separate scaling configurations for a true microservices architecture.
 

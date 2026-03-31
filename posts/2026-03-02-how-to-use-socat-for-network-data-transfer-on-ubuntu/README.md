@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Security, Tools, System Administration
+Tags: Ubuntu, Networking, Security, Tool, System Administration
 
 Description: A practical guide to using socat on Ubuntu for bidirectional data relay between sockets, files, and network connections with real-world examples.
 

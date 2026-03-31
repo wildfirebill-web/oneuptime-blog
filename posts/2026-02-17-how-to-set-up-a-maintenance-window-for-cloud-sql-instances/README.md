@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud SQL, Maintenance Window, Database Management, Operations
+Tags: GCP, Cloud SQL, Maintenance Window, Database Management, Operation
 
 Description: Learn how to configure maintenance windows for Cloud SQL instances to control when Google applies updates, minimizing disruption to your applications.
 

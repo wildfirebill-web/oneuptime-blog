@@ -1,6 +1,6 @@
 # How to Trace Service Invocation Calls Across Dapr Applications
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Tracing, Observability, OpenTelemetry, Service Invocation
 

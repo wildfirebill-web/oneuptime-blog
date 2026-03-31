@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Cost Management, Reserved Instances, Cost Optimization, FinOps, Azure Cloud, Reservations, Cloud Billing
+Tags: Azure Cost Management, Reserved Instances, Cost Optimization, FinOps, Azure Cloud, Reservation, Cloud Billing
 
 Description: Learn how to analyze Azure Reserved Instance utilization to maximize savings, identify underused reservations, and make data-driven purchasing decisions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Observability, Development Practices, Tracing, Metrics, Software Engineering
+Tags: OpenTelemetry, Observability, Development Practices, Tracing, Metric, Software Engineering
 
 Description: Learn how to adopt observability-driven development using OpenTelemetry to build systems that are observable by design from the very first line of code.
 

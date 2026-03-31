@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, YAML, Replicas, Scaling
+Tags: Podman, Container, DevOps, Kubernetes, YAML, Replica, Scaling
 
 Description: Learn how to set the replica count when generating Kubernetes Deployment YAML with Podman.
 

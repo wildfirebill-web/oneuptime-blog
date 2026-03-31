@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Monitoring, DevOps
+Tags: Portainer, Docker, Container, Monitoring, DevOps
 
 Description: Learn how to view real-time CPU, memory, network, and disk I/O statistics for Docker containers using Portainer's built-in stats view.
 

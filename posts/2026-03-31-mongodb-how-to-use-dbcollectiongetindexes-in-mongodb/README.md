@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Performance, Schema Management, Administration
+Tags: MongoDB, Index, Performance, Schema Management, Administration
 
 Description: Learn how to use db.collection.getIndexes() to inspect all indexes on a MongoDB collection and interpret the output for performance tuning.
 

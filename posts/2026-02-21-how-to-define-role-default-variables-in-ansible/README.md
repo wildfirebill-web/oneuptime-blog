@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Role, Variables, Configuration Management
+Tags: Ansible, Role, Variable, Configuration Management
 
 Description: Learn how to define and use role default variables in Ansible to create flexible, reusable roles with sensible fallback values.
 

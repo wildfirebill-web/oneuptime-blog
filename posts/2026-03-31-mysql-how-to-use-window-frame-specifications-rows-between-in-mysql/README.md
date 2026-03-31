@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Window Functions, Sql, Query Optimization
+Tags: MySQL, Window Function, SQL, Query Optimization
 
 Description: Learn how to use ROWS BETWEEN window frame specifications in MySQL to define precise physical row boundaries for window function calculations.
 

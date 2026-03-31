@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Batch Processing, Automation, Data Processing
+Tags: Podman, Container, Batch Processing, Automation, Data Processing
 
 Description: Learn how to use Podman to run batch processing workloads in isolated containers with parallel execution, resource management, and reliable error handling.
 

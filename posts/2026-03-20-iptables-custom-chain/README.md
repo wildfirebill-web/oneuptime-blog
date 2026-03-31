@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iptables, Linux, Firewall, Custom Chains, Security, Organizations
+Tags: iptables, Linux, Firewall, Custom Chains, Security, Organization
 
 Description: Create and use custom iptables chains to organize firewall rules into logical groups, reduce repetition, and build modular rule sets for complex filtering scenarios.
 

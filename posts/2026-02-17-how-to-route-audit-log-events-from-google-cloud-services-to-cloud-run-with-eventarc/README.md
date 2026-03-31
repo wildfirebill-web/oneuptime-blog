@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Eventarc, Audit Logs, Cloud Run, Security
+Tags: GCP, Eventarc, Audit Log, Cloud Run, Security
 
 Description: Learn how to use Eventarc to route Cloud Audit Log events from any Google Cloud service to Cloud Run for automated security monitoring and compliance responses.
 

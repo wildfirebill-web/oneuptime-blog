@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, DNS, Networking
+Tags: Podman, Container, DevOps, Quadlet, DNS, Networking
 
 Description: Learn how to configure custom DNS servers and search domains in Podman Quadlet container files.
 

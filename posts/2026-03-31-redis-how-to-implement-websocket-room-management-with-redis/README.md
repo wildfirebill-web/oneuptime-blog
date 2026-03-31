@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Websockets, Room Management, Real-Time, Node.js
+Tags: Redis, WebSocket, Room Management, Real-Time, Node.js
 
 Description: Manage WebSocket rooms across multiple server instances using Redis Sets and Hashes to track room membership, presence, and metadata persistently.
 

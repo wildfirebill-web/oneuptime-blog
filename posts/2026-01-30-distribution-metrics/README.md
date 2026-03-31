@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Metrics, Distribution, OpenTelemetry, Statistics
+Tags: Metric, Distribution, OpenTelemetry, Statistics
 
 Description: Learn to implement distribution metrics for statistical analysis of values.
 

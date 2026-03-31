@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Security Groups, Networking, Firewall
+Tags: AWS, EC2, Security Group, Networking, Firewall
 
 Description: Learn how to configure AWS security groups as virtual firewalls for your EC2 instances, with practical rules for common scenarios and security best practices.
 

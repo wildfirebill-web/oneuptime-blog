@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Datadog, Metrics, Monitoring, Kubernetes
+Tags: Dapr, Datadog, Metric, Monitoring, Kubernetes
 
 Description: Learn how to collect and forward Dapr Prometheus metrics to Datadog using the Datadog Agent with OpenMetrics integration for unified observability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, MariaDB, MySQL, Podman, Containers, Database
+Tags: RHEL, MariaDB, MySQL, Podman, Container, Database
 
 Description: Run both MariaDB and MySQL on the same RHEL host using Podman containers with separate ports and data volumes, avoiding package conflicts.
 

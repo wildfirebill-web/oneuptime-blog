@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Functions, ROW_NUMBER, Ranking, SQL
+Tags: ClickHouse, Window Function, ROW_NUMBER, Ranking, SQL
 
 Description: Learn how to use ROW_NUMBER() window function in ClickHouse to assign sequential row numbers within partitions for deduplication, ranking, and pagination.
 

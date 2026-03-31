@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Kernel, Modules, Security, System Administration
+Tags: Ubuntu, Kernel, Module, Security, System Administration
 
 Description: Configure kernel module blacklists on Ubuntu to prevent specific drivers from loading, covering blacklist files, install overrides, and initramfs integration.
 

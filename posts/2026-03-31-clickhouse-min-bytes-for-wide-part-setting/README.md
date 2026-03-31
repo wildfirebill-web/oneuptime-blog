@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, MergeTree, min_bytes_for_wide_part, Part Format, Settings, Performance
+Tags: ClickHouse, MergeTree, min_bytes_for_wide_part, Part Format, Setting, Performance
 
 Description: Learn how to configure the min_bytes_for_wide_part setting in ClickHouse to control when MergeTree parts switch from compact to wide columnar format for optimal I/O.
 

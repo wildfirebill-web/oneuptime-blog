@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Azure, Kubernetes, AKS, Observability, Tracing, Metrics
+Tags: OpenTelemetry, Azure, Kubernetes, AKS, Observability, Tracing, Metric
 
 Description: A complete guide to deploying the OpenTelemetry Collector on AKS and instrumenting workloads for traces, metrics, and logs.
 

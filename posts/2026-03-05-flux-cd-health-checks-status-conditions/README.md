@@ -1,6 +1,6 @@
 # How to Understand Flux CD Health Checks and Status Conditions
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, GitOps, Kubernetes, Health Check, Status Conditions, Monitoring
 

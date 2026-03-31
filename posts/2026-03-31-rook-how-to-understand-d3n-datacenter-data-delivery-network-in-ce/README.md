@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Storage, D3N, Caching, RGW, Object Storage
+Tags: Rook, Ceph, D3N, Caching, Performance
 
-Description: Learn what D3N is in Ceph RGW, how it improves object storage performance through local caching, and when to use it in Rook-Ceph deployments.
+Description: Learn what the Datacenter Data Delivery Network D3N cache layer is in Ceph and how it accelerates read performance for compute-intensive workloads.
 
 ---
 

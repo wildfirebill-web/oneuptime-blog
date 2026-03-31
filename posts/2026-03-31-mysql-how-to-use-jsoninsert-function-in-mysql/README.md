@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Insert, Json, Json Functions, Sql
+Tags: MySQL, Json Insert, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_INSERT() function to add new keys to a JSON document without overwriting existing values.
 

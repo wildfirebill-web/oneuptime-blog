@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Best-practices
+Tags: OpenTofu, Terraform, IaC, Module, Best-practices
 
 Description: Learn best practices for designing reusable, composable OpenTofu modules that work across multiple environments and use cases.
 

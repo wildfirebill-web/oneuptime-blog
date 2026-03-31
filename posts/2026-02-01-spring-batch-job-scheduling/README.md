@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Spring Batch, Scheduling, Jobs, ETL
+Tags: Java, Spring Boot, Spring Batch, Scheduling, Job, ETL
 
 Description: A practical guide to configuring and scheduling Spring Batch jobs for reliable data processing and ETL workflows.
 

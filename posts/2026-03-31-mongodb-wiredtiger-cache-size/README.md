@@ -16,7 +16,7 @@ MongoDB uses the WiredTiger storage engine by default. WiredTiger maintains an i
 
 By default, MongoDB sets the WiredTiger cache to:
 
-```
+```text
 max(50% of (RAM - 1GB), 256 MB)
 ```
 

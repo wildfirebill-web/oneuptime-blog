@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Performance, Query
+Tags: ClickHouse, JSON, Performance, Query
 
 Description: Learn how simpleJSONExtractString() offers a fast, heuristic-based alternative to JSONExtractString() for extracting string fields from simple, well-formed JSON in ClickHouse.
 

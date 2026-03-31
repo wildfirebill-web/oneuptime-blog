@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Longhorn, Kubernetes, Storage, Persistent Volumes
+Tags: Portainer, Longhorn, Kubernetes, Storage, Persistent Volume
 
 Description: Deploy Longhorn distributed block storage on Kubernetes and manage volumes, backups, and replicas through both Longhorn UI and Portainer.
 

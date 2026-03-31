@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, SQL Database, High Availability, Read Replicas, Geo-Replication, Disaster Recovery, Database
+Tags: Azure, SQL Database, High Availability, Read Replica, Geo-Replication, Disaster Recovery, Database
 
 Description: Step-by-step guide to implementing cross-region read replicas for Azure SQL Database using active geo-replication and auto-failover groups.
 

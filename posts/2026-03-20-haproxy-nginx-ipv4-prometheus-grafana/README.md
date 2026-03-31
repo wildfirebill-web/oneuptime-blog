@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, Nginx, Prometheus, Grafana, Monitoring, IPv4, Metrics, Docker
+Tags: HAProxy, Nginx, Prometheus, Grafana, Monitoring, IPv4, Metric, Docker
 
 Description: Learn how to set up Prometheus metrics collection from HAProxy and Nginx on IPv4, and visualize traffic, latency, and error rates in Grafana dashboards.
 

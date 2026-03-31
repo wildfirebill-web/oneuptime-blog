@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Nullable, Performance, Data Types, Optimization
+Tags: ClickHouse, Nullable, Performance, Data Type, Optimization
 
 Description: Learn how to minimize the performance impact of Nullable columns in ClickHouse by understanding their overhead and applying design strategies to avoid them where possible.
 

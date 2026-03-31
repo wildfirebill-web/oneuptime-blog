@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, InfluxDB, Time Series, Database, Metrics, Tutorial
+Tags: Ubuntu, InfluxDB, Time Series, Database, Metric, Tutorial
 
 Description: Complete guide to installing InfluxDB time-series database on Ubuntu for storing metrics, events, and IoT data.
 

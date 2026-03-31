@@ -1,6 +1,6 @@
 # How to Monitor Pub/Sub Message Processing in Dapr
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Pub/Sub, Monitoring, Prometheus, Observability
 

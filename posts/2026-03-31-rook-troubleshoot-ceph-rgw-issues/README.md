@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Troubleshooting, Debugging, Object Storage, Operations
+Tags: Rook, Ceph, Troubleshooting, Debugging, Object Storage, Operation
 
 Description: Diagnose and fix common Ceph RGW issues including slow requests, authentication failures, bucket errors, and connectivity problems.
 

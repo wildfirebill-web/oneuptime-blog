@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Storage, Troubleshooting, OSD
+Tags: Rook, Ceph, OSD, Flag, Troubleshooting
 
 Description: Learn how to diagnose and resolve the 'noout flag is set' warning in Ceph that prevents OSDs from being marked out during failures.
 

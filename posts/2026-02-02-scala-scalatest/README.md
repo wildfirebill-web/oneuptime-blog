@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Scala, ScalaTest, Testing, Unit Tests
+Tags: Scala, ScalaTest, Testing, Unit Test
 
 Description: A comprehensive guide to writing tests with ScalaTest, covering test styles, matchers, mocking, async testing, and best practices for building reliable Scala applications.
 

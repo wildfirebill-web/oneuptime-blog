@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Kubernetes, Events, Receiver, K8s
+Tags: OpenTelemetry, Collector, Kubernetes, Event, Receiver, K8s
 
 Description: Configure the Kubernetes Events Receiver to capture cluster events like pod scheduling, failures, and resource warnings in your OpenTelemetry pipeline.
 

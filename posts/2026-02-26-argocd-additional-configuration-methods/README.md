@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Configuration, Operations
+Tags: ArgoCD, GitOps, Kubernetes, Configuration, Operation
 
 Description: Learn about all the configuration methods available for ArgoCD beyond command-line flags, including ConfigMaps, Secrets, environment variables, and Helm values.
 

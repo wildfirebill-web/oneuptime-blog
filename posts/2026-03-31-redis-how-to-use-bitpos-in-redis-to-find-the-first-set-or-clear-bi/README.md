@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bitmaps, BITPOS, Bit Operations, Commands
+Tags: Redis, Bitmap, BITPOS, Bit Operation, Command
 
 Description: Learn how to use BITPOS in Redis to find the position of the first set (1) or clear (0) bit in a string, enabling efficient ID allocation and status scanning.
 

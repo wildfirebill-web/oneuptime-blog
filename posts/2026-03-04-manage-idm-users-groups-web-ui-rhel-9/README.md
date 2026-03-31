@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RHEL, IdM, Identity Management, Web UI, Users, Groups, Linux
+Tags: RHEL, IdM, Identity Management, Web UI, Users, Group, Linux
 
 Description: Learn how to use the Red Hat Identity Management web interface on RHEL 9 to manage users, groups, and policies through a graphical browser-based console.
 

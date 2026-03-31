@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Site Reliability Engineering, SRE, Reliability, Operations, Observability, OpenTelemetry
+Tags: Site Reliability Engineering, SRE, Reliability, Operation, Observability, OpenTelemetry
 
 Description: A plain-language explainer for Site Reliability Engineering-why it exists, the core principles, and how to start applying SRE practices without a 500-person team.
 

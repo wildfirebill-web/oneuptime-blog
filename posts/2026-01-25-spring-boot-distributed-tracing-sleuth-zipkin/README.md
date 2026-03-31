@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Spring Boot, Java, Distributed Tracing, Sleuth, Zipkin, Microservices, Observability, OpenTelemetry
+Tags: Spring Boot, Java, Distributed Tracing, Sleuth, Zipkin, Microservice, Observability, OpenTelemetry
 
 Description: Learn how to implement distributed tracing in Spring Boot microservices using Spring Cloud Sleuth and Zipkin, including trace propagation, custom spans, and production configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Blob Storage, Leases, Concurrency Control, Distributed Systems, Locking, Azure SDK
+Tags: Azure, Blob Storage, Lease, Concurrency Control, Distributed System, Locking, Azure SDK
 
 Description: How to use Azure Blob Storage leases to implement distributed locking and prevent concurrent modifications to blobs in multi-instance applications.
 

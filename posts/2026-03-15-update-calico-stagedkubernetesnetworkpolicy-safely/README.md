@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, StagedKubernetesNetworkPolicy, Kubernetes, Network Policy, Safe Updates, DevOps
+Tags: Calico, StagedKubernetesNetworkPolicy, Kubernetes, Network Policy, Safe Update, DevOps
 
 Description: Safely update Calico StagedKubernetesNetworkPolicy resources using backup, diff review, and incremental change strategies.
 

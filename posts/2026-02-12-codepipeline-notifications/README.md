@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CodePipeline, Notifications, DevOps, SNS
+Tags: AWS, CodePipeline, Notification, DevOps, SNS
 
 Description: Configure AWS CodePipeline notifications for pipeline events using notification rules, SNS topics, EventBridge, and Slack integration for real-time alerts.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Swift, Object Storage, Rgw, Kubernetes
+Tags: Rook, Ceph, Swift, Object Storage, RGW, Kubernetes
 
 Description: Configure OpenStack Swift API settings in Rook CephObjectStore to enable Swift-compatible access alongside the S3 API for object storage workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Date Series, generateDateRange, numbers, Gap Fill
+Tags: ClickHouse, Date Series, generateDateRange, Number, Gap Fill
 
 Description: Learn how to generate continuous date series in ClickHouse using generateDateRange, numbers(), and WITH FILL to create gap-free time axes for reports.
 

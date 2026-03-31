@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Monitoring, Observability, DevOps
+Tags: k3s, Kubernetes, Monitoring, Observability, DevOps
 
 Description: Learn how to monitor CPU, memory, and storage resource usage in your K3s cluster using built-in tools and popular monitoring stacks.
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Notification, Preference, User Setting, Backend
 
-Description: Learn how to store and retrieve per-user notification preferences efficiently using Redis hashes and sets, with support for channel-level and topic-level opt-ins.
+Description: Learn how to store and retrieve per-user notification preferences efficiently using Redis hashes and sets, with channel-level and topic-level opt-ins.
 
 ---
 

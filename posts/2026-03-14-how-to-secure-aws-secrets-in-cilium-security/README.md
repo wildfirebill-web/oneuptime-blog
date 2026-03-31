@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, AWS, Security, Secrets
+Tags: Cilium, Kubernetes, AWS, Security, Secret
 
 Description: How to secure AWS secrets used by Cilium for cloud-integrated networking, including credential rotation, least-privilege IAM, and Kubernetes secret management.
 

@@ -1,6 +1,6 @@
 # How to Use $lookup with Pipeline for Complex Joins in MongoDB
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Aggregation, Pipeline, Join, Query
 

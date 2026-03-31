@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, SRE, Monitoring
+Tags: Observability, Metric, SRE, Monitoring
 
 Description: Learn how to design and implement error metrics for effective monitoring and alerting.
 

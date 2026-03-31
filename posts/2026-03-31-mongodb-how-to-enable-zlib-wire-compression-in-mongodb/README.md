@@ -83,7 +83,7 @@ MongoClientSettings settings = MongoClientSettings.builder()
 
 ### Connection String Format
 
-```
+```text
 mongodb://localhost:27017/?compressors=zlib&zlibCompressionLevel=6
 ```
 

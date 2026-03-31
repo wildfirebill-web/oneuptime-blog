@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, HPA, Metrics
+Tags: Kubernetes, HPA, Metric
 
 Description: Learn how to implement a custom metrics API server for Horizontal Pod Autoscaler to scale workloads based on application-specific metrics.
 

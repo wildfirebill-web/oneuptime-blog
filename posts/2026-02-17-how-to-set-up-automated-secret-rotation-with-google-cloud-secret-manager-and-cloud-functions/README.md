@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Secret Manager, Secret Rotation, Cloud Functions, Google Cloud Security
+Tags: GCP, Secret Manager, Secret Rotation, Cloud Function, Google Cloud Security
 
 Description: Learn how to set up automated secret rotation on Google Cloud using Secret Manager and Cloud Functions to keep credentials fresh without manual intervention.
 

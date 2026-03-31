@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Microservices, Architecture, OpenTofu, AKS, API Management, Service Bus
+Tags: Azure, Microservice, Architecture, OpenTofu, AKS, API Management, Service Bus
 
 Description: Learn how to build a production-ready microservices architecture on Azure using OpenTofu with AKS, Azure API Management, Service Bus, and Workload Identity.
 

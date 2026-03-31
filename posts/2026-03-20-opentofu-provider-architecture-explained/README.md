@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provider, Architecture, Concepts, Infrastructure as Code
+Tags: OpenTofu, Provider, Architecture, Concept, Infrastructure as Code
 
 Description: Understand how OpenTofu providers work, how they communicate with cloud APIs, and how to configure them effectively.
 

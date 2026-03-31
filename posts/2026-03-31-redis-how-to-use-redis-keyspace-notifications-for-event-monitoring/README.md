@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Keyspace Notifications, Pub/Sub, Event Monitoring, Real-Time
+Tags: Redis, Keyspace Notification, Pub/Sub, Event Monitoring, Real-Time
 
 Description: Learn how Redis keyspace notifications publish events to Pub/Sub channels when keys are created, modified, or expired, enabling real-time event-driven architectures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, PIM-SM, Multicast Routing, Pimd, Networks
+Tags: IPv6, PIM-SM, Multicast Routing, Pimd, Network
 
 Description: A guide to configuring PIM-SM (Protocol Independent Multicast - Sparse Mode) for IPv6 multicast routing on Linux using the pimd daemon.
 

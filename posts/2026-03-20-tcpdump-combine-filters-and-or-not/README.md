@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tcpdump, BPF, Linux, Filtering, Networking, Diagnostics
+Tags: tcpdump, BPF, Linux, Filtering, Networking, Diagnostic
 
 Description: Combine tcpdump filter primitives using AND, OR, and NOT logical operators with proper parentheses to create precise, compound packet capture filters.
 

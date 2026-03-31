@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Administration, Operations
+Tags: MongoDB, Administration, Operation
 
 Description: Learn how to safely shut down a MongoDB instance using systemctl, mongosh, and the shutdown command to avoid data corruption and journal recovery.
 

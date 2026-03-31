@@ -10,7 +10,7 @@ Description: Learn how to fix MySQL ERROR 1366 Incorrect string value caused by 
 
 ## What Is ERROR 1366?
 
-```
+```text
 ERROR 1366 (HY000): Incorrect string value: '\xF0\x9F\x98\x80' for column 'name' at row 1
 ```
 

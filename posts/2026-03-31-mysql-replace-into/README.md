@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, REPLACE, INSERT, Upsert
+Tags: MySQL, SQL, DML, Replace, Insert, Upsert
 
 Description: Use MySQL REPLACE INTO to delete an existing row and insert a new one when a primary or unique key conflict occurs, and understand when to prefer it over ON DUPLICATE KEY UPDATE.
 

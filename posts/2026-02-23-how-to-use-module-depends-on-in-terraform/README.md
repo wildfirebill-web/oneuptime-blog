@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Dependencies, Infrastructure as Code, DevOps
+Tags: Terraform, Module, Dependencies, Infrastructure as Code, DevOps
 
 Description: Learn how to use the depends_on meta-argument with Terraform modules to manage explicit dependencies when implicit references are not enough for correct ordering.
 

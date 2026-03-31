@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Pods
+Tags: Calico, Kubernetes, Pod
 
 Description: Learn systematic approaches to validate that FailedCreatePodSandBox errors have been fully resolved after troubleshooting Calico CNI issues in your Kubernetes cluster.
 

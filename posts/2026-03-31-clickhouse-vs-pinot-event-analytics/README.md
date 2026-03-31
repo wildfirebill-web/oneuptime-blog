@@ -1,8 +1,8 @@
 # ClickHouse vs Pinot for Event Analytics
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Pinot, Analytics, Event, Database, Real-time
+Tags: ClickHouse, Pinot, Analytics, Event, Database, Real-Time
 
 Description: Compare ClickHouse and Apache Pinot for event analytics workloads, covering query latency, indexing strategies, streaming ingestion, and operational tradeoffs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, Sidecar Proxy, Service Mesh, Kubernetes, Microservices, Traffic Management, Observability
+Tags: Envoy, Sidecar Proxy, Service Mesh, Kubernetes, Microservice, Traffic Management, Observability
 
 Description: Learn how to configure Envoy as a sidecar proxy for your microservices, enabling transparent traffic management, observability, and security without changing application code.
 

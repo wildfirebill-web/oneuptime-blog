@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, CSI, Storage, Kubernetes, Drivers
+Tags: Istio, CSI, Storage, Kubernetes, Driver
 
 Description: Manage Container Storage Interface driver traffic in Istio-enabled clusters, covering controller pods, node plugins, and external storage API communication.
 

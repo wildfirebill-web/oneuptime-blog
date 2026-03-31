@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Threading, TCP, Sockets, IPv4, Concurrency, Networking
+Tags: Python, Threading, TCP, Socket, IPv4, Concurrency, Networking
 
 Description: Learn how to handle multiple simultaneous TCP client connections in Python by spawning a new thread for each accepted connection.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Git, GitOps, DevOps
+Tags: Portainer, Docker, Stack, Git, GitOps, DevOps
 
 Description: Learn how to connect Portainer stacks to a Git repository and trigger redeployments automatically or manually.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Alerting, Metrics, SRE, Observability
+Tags: Alerting, Metric, SRE, Observability
 
 Description: Learn how to measure and improve alert quality through actionable metrics.
 

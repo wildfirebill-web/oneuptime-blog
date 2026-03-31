@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Helm, HelmRelease
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Helm, HelmRelease
 
 Description: Learn how to encrypt sensitive values in Helm values files using SOPS and deploy them securely through Flux HelmReleases.
 

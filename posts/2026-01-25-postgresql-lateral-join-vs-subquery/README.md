@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, SQL, LATERAL JOIN, Subqueries, Query Optimization, Performance
+Tags: PostgreSQL, SQL, Lateral Join, Subqueries, Query Optimization, Performance
 
 Description: Understand when to use LATERAL JOIN versus traditional subqueries in PostgreSQL. Learn the syntax, performance implications, and practical use cases for each approach.
 

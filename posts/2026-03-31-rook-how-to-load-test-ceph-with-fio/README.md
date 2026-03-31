@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Performance, Benchmarking, FIO
+Tags: Rook, Ceph, Performance, Benchmarking, Fio
 
 Description: Use fio to benchmark Ceph RBD and CephFS performance with realistic workload patterns including random read/write IOPS and sequential throughput.
 

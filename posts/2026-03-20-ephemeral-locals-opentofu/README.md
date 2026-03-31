@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Locals, Ephemeral, Security, Infrastructure as Code, DevOps
+Tags: OpenTofu, Local, Ephemeral, Security, Infrastructure as Code, DevOps
 
 Description: A guide to using ephemeral local values in OpenTofu to compute and pass temporary values without storing them in state.
 

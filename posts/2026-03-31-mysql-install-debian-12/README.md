@@ -1,6 +1,6 @@
 # How to Install MySQL on Debian 12
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Installation, Debian, Linux, Database
 

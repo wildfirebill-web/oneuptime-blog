@@ -1,8 +1,8 @@
-# How to Use BIT_AND(), BIT_OR(), BIT_XOR() in MySQL
+# How to Use BIT_AND(), BIT_OR(), BIT_XOR() Aggregate Functions in MySQL
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Bit And, Bit Or, Bit Xor, Aggregate Functions, Bitwise
+Tags: MySQL, Bit And, Bit Or, Bit Xor, Aggregate Function, Bitwise
 
 Description: Learn how to use MySQL's BIT_AND(), BIT_OR(), and BIT_XOR() aggregate functions to perform bitwise operations across groups of rows.
 

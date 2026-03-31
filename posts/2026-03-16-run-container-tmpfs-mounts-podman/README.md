@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, tmpfs, Filesystem, Performance
+Tags: Podman, Container, DevOps, tmpfs, Filesystem, Performance
 
 Description: Learn how to use tmpfs mounts in Podman containers for fast in-memory storage of temporary files, caches, and ephemeral data.
 

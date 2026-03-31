@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Containers, Rootless, subuid, subgid, Linux, Security
+Tags: RHEL, Podman, Container, Rootless, subuid, subgid, Linux, Security
 
 Description: Learn how to manage subordinate UID and GID mappings for rootless Podman containers on RHEL to control user namespace isolation.
 

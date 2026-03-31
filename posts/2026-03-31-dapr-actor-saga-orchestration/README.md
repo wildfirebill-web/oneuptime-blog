@@ -1,8 +1,8 @@
 # How to Use Dapr Actor for Saga Orchestration Pattern
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Actor, Saga, Orchestration, Distributed transaction
+Tags: Dapr, Actor, Saga, Orchestration, Distributed Transaction
 
 Description: Implement the saga orchestration pattern using Dapr virtual actors to coordinate multi-step distributed transactions with compensating actions on failure.
 

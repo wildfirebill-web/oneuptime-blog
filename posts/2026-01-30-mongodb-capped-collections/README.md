@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MongoDB, Capped Collections, Logging, Circular Buffer
+Tags: MongoDB, Capped Collection, Logging, Circular Buffer
 
 Description: Learn to implement capped collections for fixed-size storage with automatic rotation, tailable cursors, and logging patterns.
 

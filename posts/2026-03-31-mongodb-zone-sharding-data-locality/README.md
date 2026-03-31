@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sharding, Zones, Data Locality, Compliance
+Tags: MongoDB, Sharding, Zone, Data Locality, Compliance
 
 Description: Learn how to use MongoDB zone sharding to pin specific data ranges to designated shards, enabling data residency, geographic locality, and tiered storage strategies.
 

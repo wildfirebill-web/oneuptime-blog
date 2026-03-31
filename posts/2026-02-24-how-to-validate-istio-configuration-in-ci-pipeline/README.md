@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, CI/CD, Configuration Validation, GitHub Actions, DevOps
+Tags: Istio, CI/CD, Configuration Validation, GitHub Action, DevOps
 
 Description: A practical guide to integrating Istio configuration validation into your CI pipeline using istioctl, kubeconform, and policy engines for safer deployments.
 

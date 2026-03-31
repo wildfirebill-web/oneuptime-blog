@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Kubernetes, Statefulset, Persistence, Infrastructure
+Tags: Redis, Kubernetes, StatefulSet, Persistence, Infrastructure
 
 Description: Learn how to deploy Redis on Kubernetes using a StatefulSet with persistent volumes, a headless service, and ConfigMap-based configuration.
 

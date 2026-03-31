@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WireGuard, Docker, IPv4, Networking, Containers, VPN
+Tags: WireGuard, Docker, IPv4, Networking, Container, VPN
 
 Description: Route Docker container IPv4 traffic through a WireGuard VPN tunnel using network namespaces or a sidecar container approach.
 

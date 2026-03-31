@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kafka, Distributed Systems, Messaging, Event Streaming, Java, Backend
+Tags: Kafka, Distributed System, Messaging, Event Streaming, Java, Backend
 
 Description: Learn how to handle Kafka partition rebalancing effectively with strategies for minimizing consumer downtime, implementing cooperative rebalancing, and managing offset commits during rebalance events.
 

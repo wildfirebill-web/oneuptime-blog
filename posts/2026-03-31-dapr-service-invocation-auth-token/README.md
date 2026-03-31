@@ -1,6 +1,6 @@
 # How to Use Dapr Service Invocation with Authentication Tokens
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Service Invocation, Authentication, Security, Microservice
 

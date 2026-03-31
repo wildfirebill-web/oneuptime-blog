@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Load Balancer, Health Probes, Backend Pool, High Availability, Azure Networking
+Tags: Azure, Load Balancer, Health Probe, Backend Pool, High Availability, Azure Networking
 
 Description: Learn how to configure and optimize Azure Load Balancer health probes to accurately monitor backend pool health and ensure reliable traffic distribution.
 

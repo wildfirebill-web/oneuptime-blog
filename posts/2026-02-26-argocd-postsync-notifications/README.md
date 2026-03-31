@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, PostSync Hooks, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, PostSync Hooks, Notification
 
 Description: Learn how to configure ArgoCD PostSync hooks to send deployment notifications to Slack, Teams, email, and other channels after successful syncs.
 

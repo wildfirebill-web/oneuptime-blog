@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Database, Connection Strings, Secrets Manager, Infrastructure as Code
+Tags: Terraform, AWS, Database, Connection String, Secrets Manager, Infrastructure as Code
 
 Description: Learn how to construct, manage, and securely distribute database connection strings using Terraform with Secrets Manager, SSM Parameter Store, and outputs.
 

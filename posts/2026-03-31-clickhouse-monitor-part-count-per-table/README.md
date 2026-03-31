@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Parts, Monitoring, MergeTree, Performance
+Tags: ClickHouse, Part, Monitoring, MergeTree, Performance
 
 Description: Learn how to monitor data part counts per table in ClickHouse to detect merge issues, prevent too-many-parts errors, and optimize MergeTree settings.
 

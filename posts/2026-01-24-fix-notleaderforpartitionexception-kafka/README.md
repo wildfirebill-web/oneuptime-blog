@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Apache Kafka, Troubleshooting, Distributed Systems, Message Queues, Java, Producer, Consumer
+Tags: Kafka, Apache Kafka, Troubleshooting, Distributed System, Message Queue, Java, Producer, Consumer
 
 Description: A comprehensive guide to diagnosing and fixing NotLeaderForPartitionException in Apache Kafka, including causes, solutions, and best practices for robust producer and consumer configurations.
 

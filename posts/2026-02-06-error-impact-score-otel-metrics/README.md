@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Error Impact, Metrics, Prioritization
+Tags: OpenTelemetry, Error Impact, Metric, Prioritization
 
 Description: Build an error impact scoring system using OpenTelemetry metrics to prioritize errors by affected users, revenue, and frequency.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, distinct, Query, Unique, Collection
+Tags: MongoDB, Distinct, Query, Unique, Collection
 
 Description: Learn how to use the MongoDB distinct() method to retrieve all unique values for a specific field across a collection, with optional query filters.
 

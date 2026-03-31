@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Proxy, Networking, Enterprise
+Tags: Podman, Container, DevOps, Podman Desktop, Proxy, Networking, Enterprise
 
 Description: Learn how to configure HTTP and HTTPS proxy settings in Podman Desktop for pulling images and running containers behind corporate firewalls.
 

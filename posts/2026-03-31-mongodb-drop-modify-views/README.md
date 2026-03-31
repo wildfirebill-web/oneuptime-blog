@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, View, Database Administration, Schema Management, Collection Management
 
-Description: Learn how to drop a MongoDB view with drop() and how to modify an existing view's pipeline using the collMod command or by dropping and recreating it.
+Description: Learn how to drop a MongoDB view with drop() and how to modify an existing view pipeline using the collMod command or by dropping and recreating it.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Images, CLI, DevOps, Docker Commands, Container Management
+Tags: Docker, Image, CLI, DevOps, Docker Commands, Container Management
 
 Description: A complete guide to listing, filtering, sorting, and inspecting Docker images on your local system using the Docker CLI.
 

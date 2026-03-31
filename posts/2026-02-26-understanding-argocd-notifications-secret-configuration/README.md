@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Security
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Security
 
 Description: A detailed guide to the ArgoCD argocd-notifications-secret, covering what credentials to store, how they are referenced, and best practices for managing notification service secrets.
 

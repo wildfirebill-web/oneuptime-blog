@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Python, Cosmos DB, Change Feed, Serverless, Event-Driven, Trigger
+Tags: Azure Function, Python, Cosmos DB, Change Feed, Serverless, Event-Driven, Trigger
 
 Description: Deploy Python Azure Functions that use the Cosmos DB trigger to process change feed events for event-driven data processing pipelines.
 

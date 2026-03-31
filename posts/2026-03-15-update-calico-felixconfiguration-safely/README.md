@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, FelixConfiguration, Kubernetes, Networking, Security, Operations
+Tags: Calico, FelixConfiguration, Kubernetes, Networking, Security, Operation
 
 Description: Safely update FelixConfiguration resources to modify Felix data plane behavior without disrupting cluster networking.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Epinio, Container Images, Kubernetes, Docker, PaaS
+Tags: Epinio, Container Image, Kubernetes, Docker, PaaS
 
 Description: Deploy pre-built container images directly to Kubernetes using Epinio without the buildpack pipeline.
 

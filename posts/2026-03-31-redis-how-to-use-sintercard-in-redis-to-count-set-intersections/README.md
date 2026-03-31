@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sets, SINTERCARD, Intersection, Commands
+Tags: Redis, Set, SINTERCARD, Intersection, Command
 
 Description: Learn how to use SINTERCARD in Redis to count the number of elements in the intersection of multiple sets without returning the full intersection result.
 

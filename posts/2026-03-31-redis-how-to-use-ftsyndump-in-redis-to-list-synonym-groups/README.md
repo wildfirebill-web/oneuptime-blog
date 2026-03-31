@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RediSearch, Synonyms, Full-Text Search, Query Expansion
+Tags: Redis, RediSearch, Synonym, Full-Text Search, Query Expansion
 
 Description: Learn how to use FT.SYNDUMP in Redis to inspect all synonym groups defined for a RediSearch index, auditing query expansion settings.
 

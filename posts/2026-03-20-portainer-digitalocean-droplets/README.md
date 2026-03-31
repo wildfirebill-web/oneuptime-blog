@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, DigitalOcean, Droplets, Docker, Cloud, Self-Hosted, DevOps
+Tags: Portainer, DigitalOcean, Droplet, Docker, Cloud, Self-Hosted, DevOps
 
 Description: Deploy Portainer on a DigitalOcean Droplet with firewall rules, optional block storage, and DigitalOcean Container Registry integration.
 

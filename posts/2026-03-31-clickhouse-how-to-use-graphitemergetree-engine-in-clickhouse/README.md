@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, GraphiteMergeTree, Time Series, Metrics, Table Engines
+Tags: ClickHouse, GraphiteMergeTree, Time Series, Metric, Table Engine
 
 Description: Learn how to use GraphiteMergeTree in ClickHouse to store and automatically downsample Graphite-compatible metrics with configurable rollup rules.
 

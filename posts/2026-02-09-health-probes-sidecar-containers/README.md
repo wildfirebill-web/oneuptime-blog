@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Health Probes, Sidecar Containers, Multi-Container Pods, Service Mesh
+Tags: Kubernetes, Health Probe, Sidecar Containers, Multi-Container Pods, Service Mesh
 
 Description: Learn how to properly configure health probes for sidecar containers in multi-container pods, ensuring coordinated startup and graceful shutdown across all containers in your Kubernetes workloads.
 

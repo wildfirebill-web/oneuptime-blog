@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, RBAC, Access Control, Environments, Business Edition
+Tags: Portainer, RBAC, Access Control, Environment, Business Edition
 
 Description: Learn how to configure different access levels for individual environments in Portainer so users see only what they need.
 

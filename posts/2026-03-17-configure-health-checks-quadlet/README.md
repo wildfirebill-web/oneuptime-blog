@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Health Check, Monitoring
+Tags: Podman, Container, DevOps, Quadlet, Health Check, Monitoring
 
 Description: Learn how to configure container health checks in Podman Quadlet files to monitor application readiness and liveness.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Java, Serverless, HTTP Trigger, Timer Trigger, Azure SDK, Cloud Functions
+Tags: Azure Function, Java, Serverless, HTTP Trigger, Timer Trigger, Azure SDK, Cloud Function
 
 Description: Learn how to create serverless Azure Functions in Java with HTTP and Timer triggers for building lightweight APIs and scheduled tasks.
 

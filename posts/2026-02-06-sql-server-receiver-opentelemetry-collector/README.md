@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, SQL Server, Microsoft, Database Monitoring, Metrics, Performance
+Tags: OpenTelemetry, Collector, SQL Server, Microsoft, Database Monitoring, Metric, Performance
 
 Description: Configure the SQL Server receiver in OpenTelemetry Collector to monitor Microsoft SQL Server performance, collect database metrics, track query performance.
 

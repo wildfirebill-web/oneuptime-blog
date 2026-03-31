@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, DevOps, Release Management, CI/CD
+Tags: Feature Flag, DevOps, Release Management, CI/CD
 
 Description: Learn how to design and implement different flag types for feature management, including boolean, percentage, user-targeted, and time-based flags with practical code examples.
 

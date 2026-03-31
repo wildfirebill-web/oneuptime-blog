@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AKS, Horizontal Pod Autoscaler, Prometheus, Custom Metrics, Kubernetes, Auto Scaling, Monitoring
+Tags: AKS, Horizontal Pod Autoscaler, Prometheus, Custom Metric, Kubernetes, Auto Scaling, Monitoring
 
 Description: Guide to configuring HPA on AKS with custom Prometheus metrics for scaling based on application-specific indicators like queue depth or request latency.
 

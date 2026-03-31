@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics, Security
+Tags: Calico, Kubernetes, Networking, Diagnostic, Security
 
 Description: Secure access to Calico node diagnostic tools by applying least-privilege RBAC for node debug operations, controlling kubectl debug node access, and auditing exec commands into calico-node pods.
 

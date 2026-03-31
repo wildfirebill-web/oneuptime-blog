@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, Index, ALTER TABLE, Performance, Schema
+Tags: MySQL, SQL, DDL, Index, ALTER TABLE, Performance
 
 Description: Add regular, unique, full-text, and composite indexes to MySQL tables with ALTER TABLE and DROP unused indexes to optimise query performance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Audit Logs, Immutable Storage, Security
+Tags: OpenTelemetry, Audit Log, Immutable Storage, Security
 
 Description: Build a tamper-proof audit log pipeline with OpenTelemetry that writes to append-only storage for regulatory compliance.
 

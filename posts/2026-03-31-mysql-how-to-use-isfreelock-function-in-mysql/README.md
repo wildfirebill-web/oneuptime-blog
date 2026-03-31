@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, IS_FREE_LOCK, Advisory Locks, Concurrency, SQL Functions
+Tags: MySQL, IS_FREE_LOCK, Advisory Lock, Concurrency, SQL Functions
 
 Description: Learn how to use the IS_FREE_LOCK() function in MySQL to check if a named advisory lock is available without attempting to acquire it.
 

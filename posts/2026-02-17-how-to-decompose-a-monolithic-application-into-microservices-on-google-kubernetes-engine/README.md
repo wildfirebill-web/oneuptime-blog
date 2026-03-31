@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, GKE, Microservices, Kubernetes, Architecture
+Tags: GCP, GKE, Microservice, Kubernetes, Architecture
 
 Description: A practical guide to breaking down a monolithic application into microservices and deploying them on Google Kubernetes Engine.
 

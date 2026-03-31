@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Import, Filesystem
+Tags: Podman, Container, DevOps, Container Image, Import, Filesystem
 
 Description: Learn how to import a filesystem tarball as a container image using Podman, enabling custom base images and container migration workflows.
 

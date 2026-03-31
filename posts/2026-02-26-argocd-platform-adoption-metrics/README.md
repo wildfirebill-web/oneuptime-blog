@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Platform Engineering, Metrics
+Tags: ArgoCD, GitOps, Kubernetes, Platform Engineering, Metric
 
 Description: Learn how to measure platform adoption and developer productivity using ArgoCD metrics, custom dashboards, and DORA metrics for data-driven platform engineering.
 

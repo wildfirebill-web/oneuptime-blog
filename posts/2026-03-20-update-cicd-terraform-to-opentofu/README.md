@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, CI/CD, GitHub Actions, GitLab CI, Migration
+Tags: OpenTofu, Terraform, CI/CD, GitHub Action, GitLab CI, Migration
 
 Description: Learn how to update your CI/CD pipeline configurations to use OpenTofu instead of Terraform, covering GitHub Actions, GitLab CI, and generic pipeline patterns.
 

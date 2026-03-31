@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, History, Purge, Operations
+Tags: Dapr, Workflow, History, Purge, Operation
 
 Description: Learn how to purge Dapr workflow history to free state store space, including single instance purges, bulk cleanup, and automated retention policies.
 

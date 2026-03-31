@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Tracing, Span Events, Error Handling, Exceptions, Observability, Python, Node.js
+Tags: OpenTelemetry, Tracing, Span Events, Error Handling, Exception, Observability, Python, Node.js
 
 Description: Learn how to use OpenTelemetry span events to record structured exception data, error context, and diagnostic information for faster debugging.
 

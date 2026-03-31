@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Installation, Windows, WSL, Development
+Tags: Redis, Installation, Window, WSL, Development
 
 Description: Install and run Redis on Windows using Windows Subsystem for Linux (WSL2), with setup steps, service configuration, and connecting from Windows applications.
 

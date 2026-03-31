@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, annoy, Vector Search, Approximate Nearest Neighbor, Embedding
+Tags: ClickHouse, Annoy, Vector Search, Approximate Nearest Neighbor, Embedding
 
 Description: Learn how to create and use the annoy approximate nearest neighbor skip index in ClickHouse for similarity search on vector embeddings.
 

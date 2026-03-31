@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, API Gateway, Caching, Response Aggregation, Microservices, Performance
+Tags: Redis, API Gateway, Caching, Response Aggregation, Microservice, Performance
 
 Description: A comprehensive guide to implementing API gateway caching with Redis, including response caching, request aggregation, and cache invalidation strategies.
 

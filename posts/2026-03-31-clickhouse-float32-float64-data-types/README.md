@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Float, Float32, Float64
+Tags: ClickHouse, SQL, Data Type, Float, Float32, Float64
 
 Description: Learn how to use Float32 and Float64 in ClickHouse, including precision trade-offs, NaN and Infinity handling, and when to choose Decimal instead.
 

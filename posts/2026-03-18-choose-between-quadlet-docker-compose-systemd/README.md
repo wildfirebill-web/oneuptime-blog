@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Quadlet, Docker Compose, Systemd, Containers
+Tags: Podman, Quadlet, Docker Compose, Systemd, Container
 
 Description: Compare Quadlet and Docker Compose for running containers as systemd services, covering their configuration models, dependency management, and production deployment characteristics.
 

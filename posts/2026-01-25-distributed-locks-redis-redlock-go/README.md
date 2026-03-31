@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Redis, Distributed Locks, Redlock, Concurrency
+Tags: Go, Redis, Distributed Lock, Redlock, Concurrency
 
 Description: Learn how to implement distributed locks using the Redlock algorithm in Go to coordinate access to shared resources across multiple processes and servers.
 

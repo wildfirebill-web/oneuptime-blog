@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Resharding, Testing, High Availability, Operations
+Tags: Redis, Cluster, Resharding, Testing, High Availability
 
 Description: Learn how to test Redis cluster resharding operations to verify data integrity, client transparency, and application behavior during slot migration.
 

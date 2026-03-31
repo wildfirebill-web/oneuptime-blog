@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Sonarr, Podman, Containers, Media Management, TV Shows, Linux, Self-Hosted, Automation
+Tags: Sonarr, Podman, Container, Media Management, TV Shows, Linux, Self-Hosted, Automation
 
 Description: Deploy Sonarr in a Podman container to automatically monitor, search for, and organize your TV show library with minimal setup.
 

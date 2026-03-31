@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Performance Tuning, Connections, Configuration, Database
+Tags: MySQL, Performance Tuning, Connection, Configuration, Database
 
 Description: Learn how to correctly size max_connections in MySQL to prevent 'Too many connections' errors while avoiding excessive memory consumption.
 

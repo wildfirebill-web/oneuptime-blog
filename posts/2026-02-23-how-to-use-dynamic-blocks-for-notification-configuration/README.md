@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Dynamic Blocks, AWS, SNS, Notifications, Infrastructure as Code
+Tags: Terraform, Dynamic Blocks, AWS, SNS, Notification, Infrastructure as Code
 
 Description: Learn how to configure notification channels and alerting rules dynamically in Terraform using dynamic blocks for SNS, SES, EventBridge, and S3 notifications.
 

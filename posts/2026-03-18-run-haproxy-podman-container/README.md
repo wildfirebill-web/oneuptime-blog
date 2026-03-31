@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, HAProxy, Load Balancer, Reverse Proxy
+Tags: Podman, Container, DevOps, HAProxy, Load Balancer, Reverse Proxy
 
 Description: Learn how to run HAProxy in a Podman container with load balancing, health checks, and a statistics dashboard.
 

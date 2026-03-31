@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Sidecar Pattern, Microservices, Kubernetes, Architecture, DevOps, Observability, Security
+Tags: Sidecar Pattern, Microservice, Kubernetes, Architecture, DevOps, Observability, Security
 
 Description: Learn how to implement the sidecar pattern to handle cross-cutting concerns like logging, monitoring, security, and configuration management in microservices architectures.
 

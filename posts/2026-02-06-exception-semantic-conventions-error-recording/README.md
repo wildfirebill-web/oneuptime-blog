@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Exceptions, Error Handling, Semantic Conventions, Observability, Tracing, Debugging
+Tags: OpenTelemetry, Exception, Error Handling, Semantic Conventions, Observability, Tracing, Debugging
 
 Description: Learn how to apply OpenTelemetry exception semantic conventions to record errors consistently across services for faster debugging and root cause analysis.
 

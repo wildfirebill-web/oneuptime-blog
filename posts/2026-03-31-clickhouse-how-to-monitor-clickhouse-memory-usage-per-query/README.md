@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Memory, Monitoring, Query Performance, System Tables
+Tags: ClickHouse, Memory, Monitoring, Query Performance, System Table
 
 Description: Learn how to monitor and limit memory usage per query in ClickHouse using system tables, query settings, and memory profiling tools.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Secret Manager, Serverless, Security
+Tags: GCP, Cloud Function, Secret Manager, Serverless, Security
 
 Description: Learn how to securely access Secret Manager secrets from Google Cloud Functions using both the client library approach and the built-in secret reference integration.
 

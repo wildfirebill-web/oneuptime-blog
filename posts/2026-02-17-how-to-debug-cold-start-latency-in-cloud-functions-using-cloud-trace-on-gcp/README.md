@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cloud Trace, Cold Start, Performance
+Tags: GCP, Cloud Function, Cloud Trace, Cold Start, Performance
 
 Description: Learn how to use Cloud Trace to identify, measure, and reduce cold start latency in Google Cloud Functions with practical instrumentation and optimization techniques.
 

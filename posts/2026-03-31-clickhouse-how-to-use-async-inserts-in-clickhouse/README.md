@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Async Inserts, Performance, Batching, Ingestion
+Tags: ClickHouse, Async Insert, Performance, Batching, Ingestion
 
 Description: Learn how to enable and use async inserts in ClickHouse to buffer small frequent writes into efficient batches without application-side batching logic.
 

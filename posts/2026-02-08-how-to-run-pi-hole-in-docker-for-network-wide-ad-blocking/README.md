@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Pi-hole, DNS, Ad Blocking, Networks, Docker Compose, Self-Hosted
+Tags: Docker, Pi-hole, DNS, Ad Blocking, Network, Docker Compose, Self-Hosted
 
 Description: Deploy Pi-hole in Docker for network-wide ad blocking and DNS management with complete setup instructions
 

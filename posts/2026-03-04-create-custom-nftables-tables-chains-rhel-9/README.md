@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, nftables, Table, Chains, Linux
+Tags: RHEL, nftables, Table, Chain, Linux
 
 Description: A guide to creating and organizing custom nftables tables and chains on RHEL for clean, maintainable firewall configurations.
 

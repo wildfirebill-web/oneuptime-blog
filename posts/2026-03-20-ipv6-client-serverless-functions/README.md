@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Serverless, Client Address, Lambda, Functions, Rate Limiting
+Tags: IPv6, Serverless, Client Address, Lambda, Function, Rate Limiting
 
 Description: Handle IPv6 client addresses consistently across serverless platforms (AWS Lambda, Azure Functions, GCP Cloud Functions) with common patterns for extraction, validation, and rate limiting.
 

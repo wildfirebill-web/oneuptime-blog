@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, Aggregate Function, Analytics, Query Pattern
+Tags: ClickHouse, NULL Handling, Aggregate Function, Analytics, Query Pattern
 
 Description: Learn how ClickHouse aggregate functions handle NULL values, which functions skip NULLs by default, and how to use ifNull and countIf to produce correct analytics on sparse data.
 

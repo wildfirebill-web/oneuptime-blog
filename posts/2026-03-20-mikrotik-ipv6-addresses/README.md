@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MikroTik, IPv6, Addresses, RouterOS, Interface
+Tags: MikroTik, IPv6, Address, RouterOS, Interface
 
 Description: Assign static and SLAAC IPv6 addresses to MikroTik RouterOS interfaces using Winbox, WebFig, or CLI commands.
 

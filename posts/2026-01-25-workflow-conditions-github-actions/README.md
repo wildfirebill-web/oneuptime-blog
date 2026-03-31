@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Conditional Logic, Workflow Optimization, DevOps
+Tags: GitHub Action, CI/CD, Conditional Logic, Workflow Optimization, DevOps
 
 Description: Master conditional logic in GitHub Actions to control when jobs and steps run, skip unnecessary work, and build smarter workflows that respond to your specific needs.
 

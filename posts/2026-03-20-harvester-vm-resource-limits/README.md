@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, Virtualization, HCI, Resources, CPU, Memory
+Tags: Harvester, Kubernetes, Virtualization, HCI, Resource, CPU, Memory
 
 Description: Learn how to configure CPU, memory, and storage resource limits for virtual machines in Harvester to ensure fair resource allocation and prevent resource contention.
 

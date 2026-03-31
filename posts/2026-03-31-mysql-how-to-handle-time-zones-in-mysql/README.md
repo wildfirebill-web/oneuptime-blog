@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Time Zones, Datetime, Utc, Database Configuration
+Tags: MySQL, Time Zone, DateTime, UTC, Database Configuration
 
 Description: Learn how to configure and work with time zones in MySQL, including setting session time zones, using CONVERT_TZ(), and storing timestamps correctly.
 

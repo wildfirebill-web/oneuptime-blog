@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, DevOps
+Tags: ArgoCD, GitOps, Kubernetes, Notification, DevOps
 
 Description: Learn how to configure ArgoCD to send different notification messages, channels, and formats for successful deployments versus failed syncs to reduce alert fatigue.
 

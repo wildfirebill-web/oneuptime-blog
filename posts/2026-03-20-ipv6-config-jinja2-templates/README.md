@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Jinja2, Templates, Automation, Network Configuration, Python
+Tags: IPv6, Jinja2, Template, Automation, Network Configuration, Python
 
 Description: Use Jinja2 templates to generate consistent IPv6 router configurations, interface configs, and firewall rules from structured YAML data.
 

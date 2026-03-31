@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kafka, Consumer Lag, Collector, Monitoring, Metrics, Observability
+Tags: OpenTelemetry, Kafka, Consumer Lag, Collector, Monitoring, Metric, Observability
 
 Description: Learn how to monitor Apache Kafka consumer lag using the OpenTelemetry Collector's Kafka metrics receiver, with alerting strategies and troubleshooting guidance.
 

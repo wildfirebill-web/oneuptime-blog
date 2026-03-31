@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Notification Hub, Push Notifications, Infrastructure as Code, Mobile
+Tags: OpenTofu, Azure, Notification Hub, Push Notification, Infrastructure as Code, Mobile
 
 Description: Learn how to create Azure Notification Hub namespaces and hubs with OpenTofu to send push notifications to iOS, Android, and Windows devices at scale.
 

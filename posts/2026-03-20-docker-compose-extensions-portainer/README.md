@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Extensions, X-fields, YAML, DevOps
+Tags: Portainer, Docker Compose, Extension, X-fields, YAML, DevOps
 
 Description: Use Docker Compose extension fields (x- prefix) in Portainer stacks to define reusable YAML anchors and reduce duplication across service definitions.
 

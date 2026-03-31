@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Reliability, Retry Options
+Tags: Podman, Container, DevOps, Reliability, Retry Options
 
 Description: Learn how to configure retry options in Podman to handle transient image pull failures and improve container startup reliability.
 

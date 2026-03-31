@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Datadog, Python, APM, Migration, Tracing, Metrics, Flask, Django, FastAPI
+Tags: OpenTelemetry, Datadog, Python, APM, Migration, Tracing, Metric, Flask, Django, FastAPI
 
 Description: A step-by-step guide to replacing Datadog's ddtrace Python library with OpenTelemetry SDKs, covering auto-instrumentation, manual tracing, custom metrics, and framework-specific examples.
 

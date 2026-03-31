@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Business Metrics, Grafana, Custom Metrics
+Tags: OpenTelemetry, Business Metrics, Grafana, Custom Metric
 
 Description: Use OpenTelemetry custom metrics to track business KPIs like revenue, signups, and conversions in a Grafana dashboard.
 

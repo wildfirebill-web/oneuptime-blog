@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Rancher, Kubernetes, Helm, StatefulSets, Search, Database, SUSE Rancher, Observability
+Tags: Elasticsearch, Rancher, Kubernetes, Helm, StatefulSet, Search, Database, SUSE Rancher, Observability
 
 Description: Learn how to deploy a production-ready Elasticsearch cluster on a Rancher-managed Kubernetes cluster using the Elastic Helm chart with persistent storage, security, and Kibana.
 

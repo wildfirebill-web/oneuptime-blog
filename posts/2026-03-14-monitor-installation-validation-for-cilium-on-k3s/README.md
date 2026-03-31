@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, K3s, Monitoring
+Tags: Cilium, Kubernetes, k3s, Monitoring
 
 Description: Set up monitoring and alerting for Cilium installation health on K3s, including Prometheus metrics collection, Grafana dashboards, and automated health alerts.
 

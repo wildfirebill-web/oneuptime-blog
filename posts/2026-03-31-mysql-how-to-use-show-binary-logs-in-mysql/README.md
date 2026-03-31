@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Binary Logs, Replication, Point-in-Time Recovery
+Tags: MySQL, Binary Log, Replication, Point-in-Time Recovery
 
 Description: Learn how to use SHOW BINARY LOGS in MySQL to list binary log files, check their sizes, and manage them for replication and point-in-time recovery.
 

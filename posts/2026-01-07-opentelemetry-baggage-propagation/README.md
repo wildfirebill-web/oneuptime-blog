@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Observability, Baggage, Context Propagation, Distributed Systems, Microservices
+Tags: OpenTelemetry, Observability, Baggage, Context Propagation, Distributed System, Microservice
 
 Description: Learn how to use OpenTelemetry baggage to propagate business context across service boundaries.
 

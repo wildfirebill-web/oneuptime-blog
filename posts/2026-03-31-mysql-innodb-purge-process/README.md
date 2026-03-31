@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, InnoDB, Purge, MVCC, Internals
+Tags: MySQL, InnoDB, Purge, MVCC, Internal
 
 Description: Understand how the InnoDB purge process reclaims space from deleted and updated rows, and how to tune it for high-write workloads.
 

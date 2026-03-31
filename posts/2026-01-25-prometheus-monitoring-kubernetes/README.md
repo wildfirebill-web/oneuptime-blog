@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Prometheus, Monitoring, Observability, Metrics
+Tags: Kubernetes, Prometheus, Monitoring, Observability, Metric
 
 Description: Learn how to deploy and configure Prometheus for monitoring Kubernetes clusters, including service discovery, scrape configurations, and essential alerting rules for production environments.
 

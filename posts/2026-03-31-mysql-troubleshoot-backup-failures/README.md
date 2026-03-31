@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Backup, mysqldump, Xtrabackup, Troubleshooting
+Tags: MySQL, Backup, mysqldump, XtraBackup, Troubleshooting
 
 Description: Learn how to diagnose and fix MySQL backup failures including mysqldump errors, permission issues, disk space problems, and lock timeout issues.
 

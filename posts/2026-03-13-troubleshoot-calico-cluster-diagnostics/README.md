@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics, Troubleshooting
+Tags: Calico, Kubernetes, Networking, Diagnostic, Troubleshooting
 
 Description: Diagnose cluster-wide Calico issues including TigeraStatus degradation, kube-controllers failures, IPAM exhaustion, and Typha connectivity problems that affect all nodes simultaneously.
 

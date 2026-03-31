@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, DigitalOcean, Spaces, Object Storage, Infrastructure as Code
+Tags: OpenTofu, DigitalOcean, Space, Object Storage, Infrastructure as Code
 
 Description: Learn how to create and configure DigitalOcean Spaces object storage buckets with OpenTofu, including CDN and access control settings.
 

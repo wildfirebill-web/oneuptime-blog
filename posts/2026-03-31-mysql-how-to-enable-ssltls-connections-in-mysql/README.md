@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, Ssl, Tls, Encryption
+Tags: MySQL, Security, SSL, TLS, Encryption
 
 Description: Learn how to enable SSL/TLS encrypted connections in MySQL, generate certificates, configure the server, and require SSL for specific users.
 

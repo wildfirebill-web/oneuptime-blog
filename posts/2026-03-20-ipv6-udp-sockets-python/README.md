@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, UDP, Sockets, Multicast, Programming
+Tags: Python, IPv6, UDP, Socket, Multicast, Programming
 
 Description: Create IPv6 UDP sockets in Python for unicast and multicast communication, including NDP multicast group membership.
 

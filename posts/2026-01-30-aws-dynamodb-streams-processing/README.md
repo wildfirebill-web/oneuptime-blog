@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, DynamoDB, Streams, CDC
+Tags: AWS, DynamoDB, Stream, CDC
 
 Description: Learn how to implement change data capture (CDC) using AWS DynamoDB Streams with Lambda triggers for real-time data processing.
 

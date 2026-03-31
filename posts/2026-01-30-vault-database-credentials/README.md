@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Vault, Database, Security, Credentials
+Tags: Vault, Database, Security, Credential
 
 Description: Generate dynamic database credentials with HashiCorp Vault for PostgreSQL, MySQL, and other databases with automatic rotation and TTL management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, CHAR, VARCHAR, Data Types, Performance, Storage
+Tags: MySQL, CHAR, VARCHAR, Data Type, Performance, Storage
 
 Description: Understand the storage and performance differences between MySQL CHAR and VARCHAR types to choose the right one for your use case.
 

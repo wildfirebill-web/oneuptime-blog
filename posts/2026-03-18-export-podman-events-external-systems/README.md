@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Export, Integration, Logging
+Tags: Podman, Container, DevOps, Monitoring, Event, Export, Integration, Logging
 
 Description: Learn how to export Podman events to external systems like databases, message queues, and cloud services for centralized storage and analysis.
 

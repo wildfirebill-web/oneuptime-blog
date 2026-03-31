@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Delete, LIMIT, Batch, DML
+Tags: MySQL, Delete, Limit, Batch, DML
 
 Description: Learn how to use DELETE with LIMIT in MySQL to safely remove data in controlled batches, reducing lock contention and replication lag on large tables.
 

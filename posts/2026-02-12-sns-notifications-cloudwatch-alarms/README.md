@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CloudWatch, SNS, Alarms, Notifications
+Tags: AWS, CloudWatch, SNS, Alarms, Notification
 
 Description: Learn how to configure Amazon SNS notifications from CloudWatch Alarms to alert your team via email, SMS, Lambda, and other channels when things go wrong.
 

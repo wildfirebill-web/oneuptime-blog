@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Approximate Function, uniq, quantile, HyperLogLog, Accuracy
+Tags: ClickHouse, Approximate Function, uniq, Quantile, HyperLogLog, Accuracy
 
 Description: A comparison of ClickHouse approximate aggregate functions - uniq, uniqHLL12, uniqCombined, quantile, quantileTDigest - covering accuracy, memory usage, and use cases.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Indexes, CONCURRENTLY, Zero Downtime, Performance
+Tags: PostgreSQL, Index, CONCURRENTLY, Zero Downtime, Performance
 
 Description: A guide to creating PostgreSQL indexes without blocking queries using CONCURRENTLY, including best practices and troubleshooting.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CloudWatch, Monitoring, Metrics, EC2
+Tags: AWS, CloudWatch, Monitoring, Metric, EC2
 
 Description: Learn how to configure the CloudWatch Agent to collect custom application metrics, StatsD metrics, and collectd metrics from your EC2 instances.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPv4, Headers, Networking, Protocol Comparison
+Tags: IPv6, IPv4, Header, Networking, Protocol Comparison
 
 Description: Compare the IPv6 and IPv4 header formats side by side, understanding which fields were removed, renamed, or redesigned and the reasons behind each change.
 

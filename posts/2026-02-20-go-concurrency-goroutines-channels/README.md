@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Goroutines, Channels, Concurrency, Parallelism
+Tags: Go, Goroutines, Channel, Concurrency, Parallelism
 
 Description: A practical guide to Go concurrency with goroutines, channels, select statements, and common concurrency patterns.
 

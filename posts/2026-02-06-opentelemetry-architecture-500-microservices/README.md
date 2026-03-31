@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Architecture, Microservices, Scalability, Collector, Observability
+Tags: OpenTelemetry, Architecture, Microservice, Scalability, Collector, Observability
 
 Description: Learn how to design a scalable OpenTelemetry architecture that handles telemetry from 500 or more microservices without bottlenecks or data loss.
 

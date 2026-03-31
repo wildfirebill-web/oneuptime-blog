@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Multi-Stage Builds, Images, DevOps
+Tags: Portainer, Docker, Multi-Stage Build, Image, DevOps
 
 Description: Create optimized Docker images using multi-stage builds and deploy them via Portainer for smaller, more secure containers.
 

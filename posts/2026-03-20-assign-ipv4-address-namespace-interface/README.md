@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Namespaces, IPv4, iproute2, Networking, Containers
+Tags: Linux, Network Namespaces, IPv4, iproute2, Networking, Container
 
 Description: Assign static IPv4 addresses to network interfaces inside Linux network namespaces using ip addr add with ip netns exec.
 

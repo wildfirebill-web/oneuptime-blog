@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Azure DevOps, CI/CD, GitOps, Kubernetes, Container Images, Azure, ACR
+Tags: Flux CD, Azure DevOps, CI/CD, GitOps, Kubernetes, Container Image, Azure, ACR
 
 Description: A practical guide to integrating Azure DevOps Pipelines with Flux CD for building container images and deploying to Kubernetes via GitOps.
 

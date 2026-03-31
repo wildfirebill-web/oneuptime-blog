@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, VirtualService, Traffic Splitting, Canary Deployments
+Tags: Istio, Kubernetes, VirtualService, Traffic Splitting, Canary Deployment
 
 Description: A practical guide to setting up weighted traffic splitting in Istio using VirtualService for canary deployments, blue-green deployments, and gradual rollouts.
 

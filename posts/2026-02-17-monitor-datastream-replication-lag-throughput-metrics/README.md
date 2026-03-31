@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Datastream, Monitoring, Cloud Monitoring, Replication Lag, Metrics, Observability
+Tags: GCP, Datastream, Monitoring, Cloud Monitoring, Replication Lag, Metric, Observability
 
 Description: Learn how to monitor Google Cloud Datastream replication lag and throughput using Cloud Monitoring dashboards, alerts, and custom queries.
 

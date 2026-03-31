@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Enum, Schema Validation, Query, Data Modeling
+Tags: MongoDB, ENUM, Schema Validation, Query, Data Modeling
 
 Description: Learn how to store and query enum values in MongoDB using schema validation, string enums, and efficient patterns for status fields and categorical data.
 

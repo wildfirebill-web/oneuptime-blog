@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Scheduling, Automation, Release Management
+Tags: Feature Flag, Scheduling, Automation, Release Management
 
 Description: Learn how to schedule feature flag activations for time-based releases, maintenance windows, and coordinated rollouts.
 

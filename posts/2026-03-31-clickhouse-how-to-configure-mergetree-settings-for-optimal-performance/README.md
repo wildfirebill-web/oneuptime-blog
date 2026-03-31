@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, MergeTree, Performance Tuning, Settings, Table Engines
+Tags: ClickHouse, MergeTree, Performance Tuning, Setting, Table Engine
 
-Description: Learn how to configure key MergeTree table settings in ClickHouse - including merge behavior, part limits, and storage settings - for optimal query and write performance.
+Description: Learn how to configure key MergeTree table settings in ClickHouse for optimal query and write performance including merge behavior and part limits.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Pub/Sub, Event-Driven Architecture, Fan-Out, Messaging, Microservices, AWS SNS, Google Cloud Pub/Sub, Redis, Distributed Systems
+Tags: Pub/Sub, Event-Driven Architecture, Fan-Out, Messaging, Microservice, AWS SNS, Google Cloud Pub/Sub, Redis, Distributed System
 
 Description: Learn how to design and implement Pub/Sub event fan-out architectures for distributing messages to multiple subscribers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Tracing, Architecture, Microservices
+Tags: Observability, Tracing, Architecture, Microservice
 
 Description: Learn how to analyze service dependencies from trace data for architecture understanding.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HSTS, HTTP, HTTPS, Security, Nginx, Apache, Headers
+Tags: HSTS, HTTP, HTTPS, Security, Nginx, Apache, Header
 
 Description: Learn how to implement HTTP Strict Transport Security headers to enforce HTTPS connections at the browser level, protecting against SSL stripping attacks.
 

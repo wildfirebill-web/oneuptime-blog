@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, CORS, HTTP, Frontend
+Tags: GCP, Cloud Function, CORS, HTTP, Frontend
 
 Description: How to properly configure CORS headers in Google Cloud Functions so your frontend applications can make cross-origin API calls without browser errors.
 

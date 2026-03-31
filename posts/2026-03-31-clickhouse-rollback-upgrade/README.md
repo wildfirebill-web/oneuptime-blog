@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Rollback, Upgrade, Operations, Administration, Disaster Recovery
+Tags: ClickHouse, Rollback, Upgrade, Operation, Administration, Disaster Recovery
 
 Description: Learn how to roll back a ClickHouse upgrade to a previous version, handle schema incompatibilities between versions, and design your upgrade process to make rollbacks safe and fast.
 

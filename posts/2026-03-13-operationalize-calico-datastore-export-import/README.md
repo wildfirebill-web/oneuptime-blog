@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Operations
+Tags: Calico, Kubernetes, Networking, Operation
 
 Description: Build operational processes for Calico datastore backup and restore including scheduled backup procedures, restore testing requirements, and disaster recovery runbooks.
 

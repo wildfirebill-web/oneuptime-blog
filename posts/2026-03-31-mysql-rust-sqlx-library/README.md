@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Rust, sqlx, Async, Query
+Tags: MySQL, Rust, SQLx, Async, Query
 
 Description: Learn how to use the sqlx library for type-safe, compile-time verified MySQL queries in async Rust applications.
 

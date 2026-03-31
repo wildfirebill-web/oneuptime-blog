@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Service Discovery, Microservices, Health Check, Pub/Sub
+Tags: Redis, Service Discovery, Microservice, Health Check, Pub/Sub
 
 Description: Implement lightweight service discovery using Redis to register, deregister, and query microservice instances with automatic health-based expiration.
 

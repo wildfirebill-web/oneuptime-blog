@@ -1,6 +1,6 @@
 # How to Set Up MySQL Multi-Source Replication
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Replication, Multi-Source, High Availability, Database
 

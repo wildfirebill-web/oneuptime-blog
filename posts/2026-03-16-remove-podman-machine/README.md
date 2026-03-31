@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps
 
 Description: Learn how to safely remove Podman machines, clean up associated resources, and handle edge cases when deleting machines from your system.
 

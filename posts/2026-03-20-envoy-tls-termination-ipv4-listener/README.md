@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, TLS, SSL, IPv4, HTTPS, Certificates, Security
+Tags: Envoy, TLS, SSL, IPv4, HTTPS, Certificate, Security
 
 Description: Configure Envoy to terminate TLS/HTTPS connections on a specific IPv4 listener, handling certificate management and forwarding decrypted traffic to backend clusters.
 

@@ -1,6 +1,6 @@
 # How to Install MySQL on Arch Linux
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Installation, Arch Linux, Linux, Database
 

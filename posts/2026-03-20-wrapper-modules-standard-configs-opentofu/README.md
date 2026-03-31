@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, Wrapper Modules, Opinionated, DRY
+Tags: OpenTofu, Terraform, Module, Wrapper Modules, Opinionated, DRY
 
 Description: Learn how to create wrapper modules in OpenTofu that wrap upstream modules with organization-specific defaults and constraints, reducing boilerplate in calling configurations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, AWS Lambda, Serverless, Observability, Tracing, Metrics
+Tags: OpenTelemetry, AWS Lambda, Serverless, Observability, Tracing, Metric
 
 Description: A complete guide to instrumenting AWS Lambda functions with OpenTelemetry for traces, metrics, and logs using layers and manual configuration.
 

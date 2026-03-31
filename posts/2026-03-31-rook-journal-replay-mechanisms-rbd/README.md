@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, RBD, Journal, Mirroring, Internals
+Tags: Rook, Ceph, RBD, Journal, Mirroring, Internal
 
 Description: Learn how RBD journal replay works in Ceph, including how writes are recorded, replayed on secondary clusters, and how to troubleshoot replay issues.
 

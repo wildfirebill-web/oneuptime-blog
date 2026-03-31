@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Flask, Python, Rest Api, Backend Development
+Tags: MongoDB, Flask, Python, REST API, Backend Development
 
 Description: Learn how to build a REST API using Flask and PyMongo with CRUD operations, request validation, error handling, and pagination for MongoDB collections.
 

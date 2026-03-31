@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Ambient Mode, Kubernetes, Service Mesh, Workloads
+Tags: Istio, Ambient Mode, Kubernetes, Service Mesh, Workload
 
 Description: How to enroll namespaces and individual workloads into an Istio ambient mesh with verification steps and common patterns.
 

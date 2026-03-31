@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Storage, Persistent Volumes
+Tags: Rancher, Kubernetes, Storage, Persistent Volume
 
 Description: Learn how to configure storage quotas in Rancher to control and limit storage consumption across namespaces and teams.
 

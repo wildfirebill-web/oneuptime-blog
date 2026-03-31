@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, JSON, Object
+Tags: ClickHouse, SQL, Data Type, JSON, Object
 
 Description: Learn how ClickHouse's Object('json') type works for semi-structured data, path access, its limitations, and migration to the new JSON type.
 

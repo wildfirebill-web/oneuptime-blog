@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Workflows, Microservices, Orchestration, Serverless, Workflow Automation
+Tags: GCP, Cloud Workflows, Microservice, Orchestration, Serverless, Workflow Automation
 
 Description: Build a centralized microservice orchestration layer using Google Cloud Workflows to coordinate complex multi-service operations with built-in error handling and retries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Job Queue, Background Jobs, findOneAndUpdate, Worker Pattern
+Tags: MongoDB, Job Queue, Background Job, findOneAndUpdate, Worker Pattern
 
 Description: Learn how to build a reliable job queue in MongoDB using findOneAndUpdate for atomic job claiming and status tracking for deferred processing.
 

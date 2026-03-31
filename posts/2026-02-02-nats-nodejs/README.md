@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, NATS, Messaging, Microservices, Pub/Sub, Event-Driven
+Tags: NodeJS, NATS, Messaging, Microservice, Pub/Sub, Event-Driven
 
 Description: Learn how to use NATS messaging system with Node.js for building scalable microservices. Covers publish-subscribe patterns, request-reply, JetStream for persistence, and production best practices.
 

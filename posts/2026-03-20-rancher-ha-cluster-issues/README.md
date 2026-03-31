@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Troubleshooting, has, High Availability
+Tags: Rancher, Kubernetes, Troubleshooting, High Availability
 
 Description: Diagnose and resolve Rancher high-availability cluster issues, including split-brain scenarios, leader election failures, and etcd quorum problems.
 

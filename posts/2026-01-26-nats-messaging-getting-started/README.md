@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Messaging, Distributed Systems, Microservices, Pub/Sub, Event-Driven Architecture
+Tags: NATS, Messaging, Distributed System, Microservice, Pub/Sub, Event-Driven Architecture
 
 Description: A beginner-friendly guide to NATS messaging. Learn what NATS is, why it matters for modern applications, and how to implement common messaging patterns with practical code examples.
 

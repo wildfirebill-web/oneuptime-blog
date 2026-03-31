@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Monitoring, Resource Groups, Organizations, Infrastructure
+Tags: GCP, Cloud Monitoring, Resource Group, Organization, Infrastructure
 
 Description: Create monitoring groups in Google Cloud Monitoring to organize your cloud resources into logical collections for targeted monitoring, alerting, and dashboard creation.
 

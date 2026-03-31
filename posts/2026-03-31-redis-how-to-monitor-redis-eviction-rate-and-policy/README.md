@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Eviction, Monitoring, Operations
+Tags: Redis, Memory, Eviction, Monitoring, Operation
 
 Description: Learn how to monitor Redis key eviction rates, understand the eight eviction policies, and configure the right policy for your cache workload.
 

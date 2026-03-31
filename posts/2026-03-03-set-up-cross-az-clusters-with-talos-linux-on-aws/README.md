@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, AWS, High Availability, Availability Zones, Kubernetes
+Tags: Talos Linux, AWS, High Availability, Availability Zone, Kubernetes
 
 Description: Learn how to deploy a highly available Talos Linux Kubernetes cluster spread across multiple AWS Availability Zones.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Ruby, Integration, Database
+Tags: ClickHouse, Ruby, Integration, Database
 
 Description: Connect Ruby applications to ClickHouse using the clickhouse-activerecord gem and the HTTP interface to run queries and insert data.
 

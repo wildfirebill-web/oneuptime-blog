@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, Variables, Infrastructure as Code, HCL
+Tags: OpenTofu, Testing, Variable, Infrastructure as Code, HCL
 
 Description: Explore the multiple ways to pass input variables to OpenTofu tests, including inline variables blocks, var files, and environment variables.
 

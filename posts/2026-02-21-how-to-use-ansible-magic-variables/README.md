@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Inventory, DevOps, Automation
+Tags: Ansible, Variable, Inventory, DevOps, Automation
 
 Description: Learn how to use Ansible magic variables like hostvars, groups, inventory_hostname, and others to access inventory data and host information dynamically.
 

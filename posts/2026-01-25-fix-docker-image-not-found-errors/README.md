@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Troubleshooting, Container Registry, DevOps, Images
+Tags: Docker, Troubleshooting, Container Registry, DevOps, Image
 
 Description: Diagnose and resolve Docker image not found errors including repository naming issues, authentication problems, platform mismatches, and registry connectivity failures.
 

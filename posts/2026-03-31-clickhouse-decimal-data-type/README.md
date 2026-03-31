@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Decimal, Precision, Finance
+Tags: ClickHouse, SQL, Data Type, Decimal, Precision, Finance
 
 Description: Learn how to use ClickHouse Decimal(P, S) for exact arithmetic in financial and accounting workloads, with precision, scale, and practical examples.
 

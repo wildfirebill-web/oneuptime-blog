@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, Documentation, Infrastructure as Code, DevOps
+Tags: OpenTofu, Output, Documentation, Infrastructure as Code, DevOps
 
 Description: A guide to writing effective output descriptions in OpenTofu to document your infrastructure's exposed values.
 

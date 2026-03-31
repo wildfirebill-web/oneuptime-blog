@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SELECT, JOIN, GLOBAL JOIN, Distributed
+Tags: ClickHouse, SQL, SELECT, Join, GLOBAL JOIN, Distributed
 
 Description: Learn how GLOBAL JOIN in ClickHouse broadcasts the right-side table to all shards, preventing incorrect results and reducing network overhead in distributed queries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, Persistence, Durability, Data Reliability
+Tags: RabbitMQ, Message Queue, Persistence, Durability, Data Reliability
 
 Description: A comprehensive guide to configuring message persistence in RabbitMQ to prevent data loss during failures.
 

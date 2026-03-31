@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Performance, React.memo, Optimization, Hooks, Frontend
+Tags: React, Performance, React.memo, Optimization, Hook, Frontend
 
 Description: Learn how to use React.memo to optimize React applications by preventing unnecessary re-renders, including custom comparison functions, integration with hooks, and common pitfalls to avoid.
 

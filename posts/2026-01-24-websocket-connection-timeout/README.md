@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, Connection Timeout, Troubleshooting, JavaScript, Node.js, Networks, DevOps
+Tags: WebSocket, Connection Timeout, Troubleshooting, JavaScript, Node.js, Network, DevOps
 
 Description: A practical guide to diagnosing and fixing WebSocket connection timeout errors caused by network issues, server configuration, proxies, and load balancers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, GitOps, Webhooks, GitHub, Auto-Update
+Tags: Portainer, GitOps, Webhook, GitHub, Auto-Update
 
 Description: Learn how to configure Portainer and your Git repository to automatically redeploy stacks via webhooks on every push.
 

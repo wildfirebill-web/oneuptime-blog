@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Data Types, Int128, Int256, Large Numbers, Blockchain
+Tags: ClickHouse, Data Type, Int128, Int256, Large Numbers, Blockchain
 
 Description: Learn how to use ClickHouse's extended integer types Int128, Int256, UInt128, and UInt256 for storing and computing with very large numbers in analytics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, DNS, IPv4, Troubleshooting, Containers
+Tags: Docker, Networking, DNS, IPv4, Troubleshooting, Container
 
 Description: Diagnose and fix DNS resolution failures inside Docker containers, including embedded DNS issues, external DNS failures, and container name resolution problems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Consumer Groups, Messaging, Cleanup
+Tags: Redis, Stream, Consumer Group, Messaging, Cleanup
 
 Description: Learn how to use XGROUP DELCONSUMER to remove a consumer from a Redis Stream consumer group and handle its pending messages.
 

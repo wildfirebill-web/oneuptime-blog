@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Kubernetes, Namespace Management, Lifecycle, Operations
+Tags: Talos Linux, Kubernetes, Namespace Management, Lifecycle, Operation
 
 Description: A comprehensive guide to managing the full lifecycle of Kubernetes namespaces on Talos Linux, from creation through maintenance to decommissioning.
 

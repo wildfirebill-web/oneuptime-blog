@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, Prometheus, Metrics, Monitoring, Observability, Grafana, Kubernetes
+Tags: .NET, C#, Prometheus, Metric, Monitoring, Observability, Grafana, Kubernetes
 
 Description: Learn how to instrument .NET applications with Prometheus metrics. This guide covers counters, gauges, histograms, and summaries with practical examples for ASP.NET Core applications.
 

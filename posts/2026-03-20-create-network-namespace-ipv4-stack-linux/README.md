@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, Network Namespaces, IPv4, Containers, iproute2
+Tags: Linux, Networking, Network Namespaces, IPv4, Container, iproute2
 
 Description: Create an isolated Linux network namespace with its own IPv4 stack, loopback interface, and routing table, and run processes inside it using ip netns and nsenter.
 

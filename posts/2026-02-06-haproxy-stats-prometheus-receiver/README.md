@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, HAProxy, Prometheus, Metrics
+Tags: OpenTelemetry, HAProxy, Prometheus, Metric
 
 Description: Collect HAProxy stats socket metrics using the OpenTelemetry Collector Prometheus receiver to monitor frontends, backends, and server health.
 

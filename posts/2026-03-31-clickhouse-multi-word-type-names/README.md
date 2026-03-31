@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Type Names
+Tags: ClickHouse, SQL, Data Type, Type Names
 
 Description: Learn how ClickHouse handles multi-word and parameterized type names like Nullable(Int32) and Array(String) with syntax and alias examples.
 

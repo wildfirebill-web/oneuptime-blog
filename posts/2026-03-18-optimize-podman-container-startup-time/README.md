@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Performance, DevOps, Optimization, Startup Time, Linux
+Tags: Podman, Container, Performance, DevOps, Optimization, Startup Time, Linux
 
 Description: Learn practical techniques to reduce Podman container startup time, from image optimization and caching strategies to runtime configuration and process management.
 

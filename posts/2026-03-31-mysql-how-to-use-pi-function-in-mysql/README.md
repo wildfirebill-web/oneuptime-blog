@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, PI, Math Functions, Geometry, SQL
+Tags: MySQL, PI, Math Function, Geometry, SQL
 
 Description: Learn how to use the PI() function in MySQL to access the mathematical constant pi for trigonometric and geometric calculations in your queries.
 

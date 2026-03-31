@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Migration, Kubernetes, Workloads, Cluster Management
+Tags: Talos Linux, Migration, Kubernetes, Workload, Cluster Management
 
 Description: A practical guide to migrating workloads between Talos Linux clusters with minimal downtime and data loss.
 

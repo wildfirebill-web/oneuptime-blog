@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Database Migrations, Flyway, Liquibase, Schema Management
+Tags: Flux CD, Kubernetes, GitOps, Database Migration, Flyway, Liquibase, Schema Management
 
 Description: Manage database schema migrations as part of Flux CD GitOps deployments using init containers, Jobs, and migration tools like Flyway and Liquibase.
 

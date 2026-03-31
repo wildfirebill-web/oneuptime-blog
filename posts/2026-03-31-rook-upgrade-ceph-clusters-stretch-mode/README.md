@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Stretch Mode, Upgrade, Operations
+Tags: Rook, Ceph, Stretch Mode, Upgrade, Operation
 
 Description: Step-by-step guide to safely upgrading Ceph clusters running in stretch mode with minimal downtime and zero data loss.
 

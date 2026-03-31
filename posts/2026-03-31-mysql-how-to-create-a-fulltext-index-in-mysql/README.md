@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Full Text Search, Indexes, InnoDB, Query Optimization
+Tags: MySQL, Full Text Search, Index, InnoDB, Query Optimization
 
 Description: Learn how to create FULLTEXT indexes in MySQL to enable fast natural language and boolean text searches on VARCHAR and TEXT columns.
 

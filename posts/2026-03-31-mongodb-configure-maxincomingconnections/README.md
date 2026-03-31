@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Configuration, Connection, Tuning, Operations
+Tags: MongoDB, Configuration, Connection, Tuning, Operation
 
 Description: Learn how to configure maxIncomingConnections in MongoDB to control the connection limit, prevent resource exhaustion, and tune for your workload.
 
@@ -98,7 +98,7 @@ Always test with your actual connection pool size and leave headroom for monitor
 
 Each application instance holds a pool of connections. Calculate your expected total.
 
-```
+```text
 maxIncomingConnections >= (app_instances x pool_size_per_instance) + monitoring_connections + admin_buffer
 ```
 

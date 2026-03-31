@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, NDP, Timers, Performance, Sysctl, Linux, Networking
+Tags: IPv6, NDP, Timer, Performance, Sysctl, Linux, Networking
 
 Description: Tune NDP timers and neighbor cache parameters on Linux for optimal IPv6 performance including reachability, cache size, and garbage collection.
 

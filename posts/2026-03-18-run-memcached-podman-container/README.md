@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Memcached, Cache, In-Memory
+Tags: Podman, Container, DevOps, Memcached, Cache, In-Memory
 
 Description: Learn how to run Memcached in a Podman container with custom memory settings, connection tuning, and monitoring.
 

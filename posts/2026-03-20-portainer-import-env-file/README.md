@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Configuration, DevOps
+Tags: Portainer, Docker, Container, Configuration, DevOps
 
 Description: Learn how to import environment variables into a Portainer container or stack from a .env file to simplify configuration management.
 

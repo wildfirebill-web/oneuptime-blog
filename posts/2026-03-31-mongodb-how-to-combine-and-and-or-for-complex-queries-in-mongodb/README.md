@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $and, $or, Complex Queries, Logical Operators, Query, Node.js
+Tags: MongoDB, $and, $or, Complex Queries, Logical Operator, Query, Node.js
 
 Description: Learn how to combine MongoDB's $and and $or operators to build complex multi-condition queries, with real-world examples and query optimization patterns.
 

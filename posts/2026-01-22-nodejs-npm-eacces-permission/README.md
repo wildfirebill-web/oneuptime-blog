@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Npm, Permissions, Linux, Troubleshooting
+Tags: NodeJS, Npm, Permission, Linux, Troubleshooting
 
 Description: Learn how to fix the npm EACCES permission denied error when installing global packages, with solutions for Linux, macOS, and Windows.
 

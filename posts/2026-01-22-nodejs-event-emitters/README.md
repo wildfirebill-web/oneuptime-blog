@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Events, EventEmitter, JavaScript, Patterns
+Tags: NodeJS, Event, EventEmitter, JavaScript, Pattern
 
 Description: Learn how to use the EventEmitter class in Node.js to create custom events, handle asynchronous communication, and build loosely coupled applications.
 

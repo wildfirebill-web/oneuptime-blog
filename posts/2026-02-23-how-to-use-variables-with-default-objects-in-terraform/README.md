@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Object, Defaults, Configuration
+Tags: Terraform, Variable, Object, Default, Configuration
 
 Description: Learn how to set default values for object variables in Terraform, including strategies for partial overrides, merging defaults, and building user-friendly module interfaces.
 

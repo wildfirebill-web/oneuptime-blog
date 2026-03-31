@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Request Deduplication, Idempotency, Microservices, Distributed Systems
+Tags: Redis, Request Deduplication, Idempotency, Microservice, Distributed System
 
 Description: Implement request deduplication using Redis to prevent duplicate processing of API calls, webhooks, and messages in distributed microservice architectures.
 

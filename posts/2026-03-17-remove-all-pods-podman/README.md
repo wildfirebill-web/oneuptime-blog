@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Cleanup, Maintenance
+Tags: Podman, Container, DevOps, Pod, Cleanup, Maintenance
 
 Description: Learn how to remove all Podman pods at once for a clean slate or environment reset.
 

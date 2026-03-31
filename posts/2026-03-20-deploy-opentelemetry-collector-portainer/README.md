@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Observability, Portainer, Docker, Tracing, Metrics, Logging
+Tags: OpenTelemetry, Observability, Portainer, Docker, Tracing, Metric, Logging
 
 Description: Learn how to deploy and configure the OpenTelemetry Collector as a centralized telemetry pipeline using Portainer's stack management interface.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CLIENT, LRU, Memory Management, Cache
+Tags: Redis, Client, LRU, Memory Management, Cache
 
 Description: Learn how to use CLIENT NO-TOUCH in Redis to prevent a connection's commands from updating the LRU or LFU access time of keys, useful for monitoring and background scan operations.
 

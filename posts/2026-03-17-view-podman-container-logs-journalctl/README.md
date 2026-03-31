@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Systemd, journalctl, Logging
+Tags: Podman, Container, DevOps, Systemd, journalctl, Logging
 
 Description: Learn how to view and filter Podman container logs using journalctl when containers run as systemd services.
 

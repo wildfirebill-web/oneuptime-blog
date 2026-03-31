@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: TypeScript, Jest, Testing, Configuration, Unit Tests
+Tags: TypeScript, Jest, Testing, Configuration, Unit Test
 
 Description: Learn how to configure Jest for TypeScript projects with proper transpilation, type checking, and optimal test performance settings.
 

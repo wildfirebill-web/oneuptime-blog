@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Retail Analytics, E-commerce, Sales Analysis, Analytics
+Tags: ClickHouse, Retail Analytics, E-Commerce, Sales Analysis, Analytics
 
 Description: Build a retail analytics platform with ClickHouse to analyze sales trends, inventory turnover, customer behavior, and product performance at scale.
 

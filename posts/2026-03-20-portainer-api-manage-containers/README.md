@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Docker, Containers, Automation
+Tags: Portainer, API, Docker, Container, Automation
 
 Description: Learn how to list, create, start, stop, inspect, and remove Docker containers via the Portainer REST API, using Portainer as a Docker API proxy.
 

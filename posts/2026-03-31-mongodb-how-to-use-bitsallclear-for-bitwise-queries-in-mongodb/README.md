@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Bitwise Operators, Query Operators, Database, NoSQL
+Tags: MongoDB, Bitwise Operators, Query Operator, Database, NoSQL
 
 Description: Learn how to use MongoDB's $bitsAllClear operator to query documents where all specified bit positions in a numeric field are clear (set to 0).
 

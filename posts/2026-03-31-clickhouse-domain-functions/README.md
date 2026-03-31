@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Url, Analytics, Query
+Tags: ClickHouse, URL, Analytics, Query
 
 Description: Learn how domain() and domainWithoutWWW() extract the hostname from URL strings in ClickHouse, enabling domain-level traffic analysis and referrer grouping.
 

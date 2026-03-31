@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Start, Stop
+Tags: Portainer, Docker, Container, Start, Stop
 
 Description: Start and stop Docker containers in Portainer using the web UI container list and detail views.
 

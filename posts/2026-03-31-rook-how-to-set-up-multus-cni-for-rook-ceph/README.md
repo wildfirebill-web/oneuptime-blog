@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Multus, Cni, Networking, Kubernetes
+Tags: Rook, Ceph, Multus, CNI, Networking, Kubernetes
 
 Description: Learn how to configure Multus CNI for Rook-Ceph to separate Ceph cluster traffic from public traffic using dedicated network interfaces.
 

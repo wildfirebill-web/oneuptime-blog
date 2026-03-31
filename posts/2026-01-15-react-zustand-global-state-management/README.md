@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Zustand, State Management, Hooks, TypeScript, Frontend
+Tags: React, Zustand, State Management, Hook, TypeScript, Frontend
 
 Description: Learn how to implement efficient and scalable global state management in React applications using Zustand, a lightweight and performant state management library.
 

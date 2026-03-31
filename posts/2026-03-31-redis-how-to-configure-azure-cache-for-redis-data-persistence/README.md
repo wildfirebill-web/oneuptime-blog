@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Azure Cache For Redis, Persistence, RDB, AOF, Azure
+Tags: Redis, Azure Cache for Redis, Persistence, RDB, AOF, Azure
 
 Description: Learn how to configure RDB and AOF data persistence for Azure Cache for Redis Premium tier to protect against data loss on node restarts.
 

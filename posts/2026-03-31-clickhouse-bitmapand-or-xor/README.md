@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Bitmap, Function, Set Operations, bitmapAnd, bitmapOr, bitmapXor
+Tags: ClickHouse, SQL, Bitmap, Function, Set Operation, bitmapAnd, bitmapOr, bitmapXor
 
 Description: Learn how to perform intersection, union, and symmetric difference operations on ClickHouse bitmaps using bitmapAnd(), bitmapOr(), and bitmapXor().
 

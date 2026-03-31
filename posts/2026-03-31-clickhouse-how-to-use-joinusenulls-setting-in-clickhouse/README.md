@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, JOIN, Nulls, Query Settings, SQL
+Tags: ClickHouse, Join, NULL, Query Settings, SQL
 
 Description: Learn how the join_use_nulls setting in ClickHouse controls whether unmatched rows in JOINs return NULL or default values, and when to use each behavior.
 

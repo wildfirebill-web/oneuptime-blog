@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Bulkhead Pattern, Resilience, Microservices, Fault Isolation, Cloud Patterns, Polly
+Tags: Azure, Bulkhead Pattern, Resilience, Microservice, Fault Isolation, Cloud Patterns, Polly
 
 Description: Implement the bulkhead pattern in Azure microservices to isolate failures and prevent one slow dependency from taking down your entire application.
 

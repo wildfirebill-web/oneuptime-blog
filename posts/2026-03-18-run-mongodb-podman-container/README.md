@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, MongoDB, NoSQL, Database
+Tags: Podman, Container, DevOps, MongoDB, NoSQL, Database
 
 Description: Learn how to run MongoDB in a Podman container with persistent storage, authentication, and custom configuration.
 

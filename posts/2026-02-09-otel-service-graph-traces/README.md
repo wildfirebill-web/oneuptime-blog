@@ -4,7 +4,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Service Graph, Distributed Tracing, Observability, Microservices
+Tags: OpenTelemetry, Service Graph, Distributed Tracing, Observability, Microservice
 
 Description: Learn how to generate service dependency graphs from OpenTelemetry traces using the service graph connector in the collector to visualize microservice architectures and call patterns.
 

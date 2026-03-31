@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Trigger, Validation, BEFORE INSERT, SIGNAL
+Tags: MySQL, Trigger, Validation, BEFORE INSERT, Signal
 
 Description: Learn how to enforce data validation rules in MySQL using BEFORE INSERT and BEFORE UPDATE triggers with SIGNAL to reject invalid data.
 

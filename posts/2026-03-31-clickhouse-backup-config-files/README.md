@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Backup, Configuration, Operations, Disaster Recovery
+Tags: ClickHouse, Backup, Configuration, Operation, Disaster Recovery
 
 Description: Learn how to identify, back up, and restore all ClickHouse configuration files to ensure complete server recovery after failures or migrations.
 

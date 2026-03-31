@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Cloud-init, Automation, Infrastructure as Code, DevOps
+Tags: k3s, Kubernetes, Cloud-init, Automation, Infrastructure as Code, DevOps
 
 Description: Learn how to automate K3s installation and configuration on cloud and bare-metal instances using cloud-init for repeatable, unattended deployments.
 

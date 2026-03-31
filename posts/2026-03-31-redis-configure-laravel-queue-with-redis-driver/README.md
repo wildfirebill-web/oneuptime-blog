@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Laravel, Queue, Jobs, PHP
+Tags: Redis, Laravel, Queue, Job, PHP
 
 Description: Configure Laravel's queue system to use Redis as the driver, enabling reliable background job processing with configurable queues and retry logic.
 

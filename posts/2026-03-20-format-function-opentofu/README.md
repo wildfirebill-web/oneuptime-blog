@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, FORMAT, String Function, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Format, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the format function in OpenTofu to build strings using printf-style format specifiers for precise string construction.
 

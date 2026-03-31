@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Alter Table, Schema Design
+Tags: MySQL, DDL, ALTER TABLE, Schema Design
 
 Description: Learn how to add columns to existing MySQL tables using ALTER TABLE with options for position, defaults, and online DDL for minimal downtime.
 

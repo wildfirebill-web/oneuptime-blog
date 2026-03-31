@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Web Hosting, Containers, Nginx, Apache
+Tags: Podman, Web Hosting, Container, Nginx, Apache
 
 Description: Learn how to use Podman to host websites and web applications using containerized web servers like Nginx and Apache, with rootless security and systemd integration.
 

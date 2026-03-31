@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, For Expressions, Lists, Map, Data Transformation
+Tags: OpenTofu, Terraform, HCL, For Expressions, List, Map, Data Transformation
 
 Description: Learn how to use OpenTofu for expressions to transform, reshape, and convert lists and maps into new collections for use in resource configurations and variables.
 

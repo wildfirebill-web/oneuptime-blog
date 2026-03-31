@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Storage, Persistent Volumes
+Tags: Rancher, Kubernetes, Storage, Persistent Volume
 
 Description: A step-by-step guide to configuring and managing volume snapshots for persistent volumes in Rancher-managed Kubernetes clusters.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, VPC, Security Groups, IPv4, Networking
+Tags: OpenTofu, AWS, VPC, Security Group, IPv4, Networking
 
 Description: Learn how to create AWS VPC security groups with IPv4 ingress and egress rules using OpenTofu for fine-grained network access control.
 

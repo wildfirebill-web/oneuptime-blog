@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Database, Replication, Read Replicas, High Availability, Scaling
+Tags: PostgreSQL, Database, Replication, Read Replica, High Availability, Scaling
 
 Description: A practical guide to setting up PostgreSQL read replicas using streaming replication. Learn how to configure primary and replica servers, monitor replication lag, and handle failover scenarios.
 

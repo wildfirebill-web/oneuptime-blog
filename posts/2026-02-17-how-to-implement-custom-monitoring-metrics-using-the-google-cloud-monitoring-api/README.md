@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Custom Metrics, Google Cloud Monitoring, Monitoring API, Observability, Time Series
+Tags: GCP, Custom Metric, Google Cloud Monitoring, Monitoring API, Observability, Time Series
 
 Description: A practical guide to creating and writing custom monitoring metrics using the Google Cloud Monitoring API with examples in Python, Go, and gcloud CLI.
 

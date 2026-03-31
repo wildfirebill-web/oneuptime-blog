@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Schema design, Aggregation, Performance, Index
+Tags: MongoDB, Schema Design, Aggregation, Performance, Index
 
 Description: Learn schema patterns that speed up MongoDB aggregation pipelines, including pre-aggregation, computed fields, and index-backed pipeline stages.
 

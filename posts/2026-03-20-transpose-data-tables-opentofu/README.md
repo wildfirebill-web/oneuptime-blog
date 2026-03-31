@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, Functions, Data Transformation, Transpose
+Tags: OpenTofu, Terraform, HCL, Function, Data Transformation, Transpose
 
 Description: Learn how to use OpenTofu's transpose function to flip rows and columns in map-of-lists structures, enabling flexible data restructuring for infrastructure configurations.
 

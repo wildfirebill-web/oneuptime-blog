@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Kustomization, HelmRelease, Deployment Order, Microservices
+Tags: Flux CD, Kubernetes, GitOps, Kustomization, HelmRelease, Deployment Order, Microservice
 
 Description: Learn how to implement ordered deployment of microservices in Flux CD using Kustomization and HelmRelease dependency chains.
 

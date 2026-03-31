@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Try, Can, Error Handling, HCL, Functions, Infrastructure as Code
+Tags: OpenTofu, Try, Can, Error Handling, HCL, Function, Infrastructure as Code
 
 Description: Learn how to use try() and can() in OpenTofu to safely access optional attributes, handle missing keys, and provide fallback values without causing configuration errors.
 

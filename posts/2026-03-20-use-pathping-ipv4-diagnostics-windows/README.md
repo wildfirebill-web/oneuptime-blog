@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Window, Networking, Pathping, IPv4, Diagnostics, Network Troubleshooting
+Tags: Window, Networking, Pathping, IPv4, Diagnostic, Network Troubleshooting
 
 Description: Use pathping on Windows to combine the hop-by-hop path discovery of tracert with the packet loss statistics of ping, identifying which specific hops have loss or delay.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, IAM, Security, Permissions, Recommender
+Tags: GCP, IAM, Security, Permission, Recommender
 
 Description: A practical guide to using GCP IAM Recommender to identify and remove overly broad permissions, helping you enforce least-privilege access across your cloud projects.
 

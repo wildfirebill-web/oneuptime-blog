@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, Date Function, INTERVAL, Database
+Tags: MySQL, SQL, Date Function, Interval, Database
 
 Description: Learn how to use MySQL INTERVAL expressions with DATE_ADD, DATE_SUB, and direct arithmetic operators to shift and compute date and time values.
 

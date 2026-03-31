@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Containers, DevOps, Container Management
+Tags: Podman, REST API, Container, DevOps, Container Management
 
 Description: Learn how to use the Podman REST API to list, filter, and inspect containers with practical curl examples and code snippets.
 

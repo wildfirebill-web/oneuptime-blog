@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Nested Objects, Data Modeling, Queries, Performance
+Tags: Elasticsearch, Nested Object, Data Modeling, Queries, Performance
 
 Description: A comprehensive guide to handling nested objects in Elasticsearch, covering the difference between object and nested types, query techniques, and performance considerations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Compute Engine, Ops Agent, Cloud Monitoring, Custom Metrics
+Tags: GCP, Compute Engine, Ops Agent, Cloud Monitoring, Custom Metric
 
 Description: Learn how to install and configure the Google Cloud Ops Agent on Compute Engine VMs to collect custom application metrics and send them to Cloud Monitoring for dashboards and alerting.
 

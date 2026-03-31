@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, Modules, Override, Infrastructure as Code
+Tags: OpenTofu, Testing, Module, Override, Infrastructure as Code
 
 Description: Learn how to use override_module in OpenTofu tests to replace module outputs with controlled values, enabling testing of module composition without executing sub-modules.
 

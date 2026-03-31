@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Monitoring, Prometheus, Grafana, Metrics
+Tags: Kafka, Monitoring, Prometheus, Grafana, Metric
 
 Description: Learn how to monitor Apache Kafka performance with Prometheus JMX exporter and Grafana dashboards.
 

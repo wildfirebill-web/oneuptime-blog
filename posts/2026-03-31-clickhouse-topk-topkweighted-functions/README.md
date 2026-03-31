@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Aggregate Function, topK, Top-N, Frequency
+Tags: ClickHouse, SQL, Aggregate Function, TopK, Top-N, Frequency
 
 Description: Learn how to use topK() and topKWeighted() in ClickHouse to find the most frequent or highest-weight values using the Space-Saving heavy hitters algorithm.
 

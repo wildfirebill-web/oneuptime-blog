@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Event Replay, Streams, Event Sourcing, CQRS, Python
+Tags: Redis, Event Replay, Stream, Event Sourcing, CQRS, Python
 
 Description: Implement durable event replay using Redis Streams, allowing consumers to reprocess historical events and rebuild state after failures or new service deployments.
 

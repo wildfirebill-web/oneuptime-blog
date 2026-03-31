@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OCB, Collector Builder, Custom Components, Go
+Tags: OpenTelemetry, OCB, Collector Builder, Custom Component, Go
 
 Description: Use the OpenTelemetry Collector Builder (OCB) to create a custom collector distribution that includes your custom receivers, processors, and exporters.
 

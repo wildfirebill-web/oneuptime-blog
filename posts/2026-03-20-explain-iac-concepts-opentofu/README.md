@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Concepts, Beginner, Education
+Tags: OpenTofu, Infrastructure as Code, Concept, Beginner, Education
 
 Description: Learn core Infrastructure as Code concepts through practical OpenTofu examples, covering idempotency, desired state, and declarative configuration.
 

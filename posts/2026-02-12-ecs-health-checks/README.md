@@ -1,8 +1,8 @@
 # How to Configure ECS Health Checks
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, ECS, Health Check, Monitoring, Containers
+Tags: AWS, ECS, Health Check, Monitoring, Container
 
 Description: A thorough guide to configuring health checks in ECS, covering container health checks, ALB health checks, how they interact, and strategies to avoid common problems.
 

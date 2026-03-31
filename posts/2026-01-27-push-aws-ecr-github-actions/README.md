@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, AWS ECR, Docker, Container Registry, CI/CD, DevOps
+Tags: GitHub Action, AWS ECR, Docker, Container Registry, CI/CD, DevOps
 
 Description: Learn how to build Docker images and push them to Amazon Elastic Container Registry (ECR) using GitHub Actions with proper authentication, caching, and multi-architecture support.
 

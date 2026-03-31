@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, React Native, Mobile, App Services
+Tags: MongoDB, Atlas, React Native, Mobile, App Service
 
 Description: Learn how to integrate MongoDB Atlas App Services into a React Native app using the Realm SDK for authentication, data access, and offline-first sync.
 

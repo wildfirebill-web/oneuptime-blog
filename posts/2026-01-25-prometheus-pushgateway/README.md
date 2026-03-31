@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Pushgateway, Batch Jobs, Short-lived Jobs, Metrics, Cron Jobs, ETL, Observability
+Tags: Prometheus, Pushgateway, Batch Job, Short-lived Jobs, Metric, Cron Jobs, ETL, Observability
 
 Description: Learn how to use Prometheus Pushgateway for batch jobs and short-lived processes. This guide covers installation, pushing metrics, job grouping, and best practices for reliable batch job monitoring.
 

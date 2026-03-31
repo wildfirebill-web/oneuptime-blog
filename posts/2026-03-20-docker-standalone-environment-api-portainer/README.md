@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Environments, API, Remote
+Tags: Portainer, Docker, Environment, API, Remote
 
 Description: Connect a remote Docker standalone host to Portainer using the Docker TCP API with optional TLS.
 

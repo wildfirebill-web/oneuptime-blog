@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Upgrade, DevOps, Linux
+Tags: k3s, Kubernetes, Upgrade, DevOps, Linux
 
 Description: A step-by-step guide to manually upgrading K3s server and agent nodes to a new version with minimal disruption.
 

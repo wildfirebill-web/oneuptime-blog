@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, RabbitMQ, Message Queues, AMQP, Messaging
+Tags: IPv6, RabbitMQ, Message Queue, AMQP, Messaging
 
 Description: Learn how to configure RabbitMQ to listen on IPv6 addresses for AMQP, management UI, and clustering, enabling IPv6 and dual-stack messaging deployments.
 

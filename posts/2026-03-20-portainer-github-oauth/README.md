@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, GitHub, OAuth, SSO, Authentication, Developer Tools
+Tags: Portainer, GitHub, OAuth, SSO, Authentication, Developer Tool
 
 Description: Configure GitHub OAuth authentication in Portainer to allow developers to sign in with their GitHub accounts.
 

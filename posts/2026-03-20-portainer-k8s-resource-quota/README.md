@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ResourceQuota, Troubleshooting, Namespaces
+Tags: Portainer, Kubernetes, ResourceQuota, Troubleshooting, Namespace
 
 Description: Diagnose and resolve Kubernetes ResourceQuota exceeded errors when deploying workloads through Portainer.
 

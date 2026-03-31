@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, External Events, Human-in-the-Loop, Async, Microservices
+Tags: Dapr, Workflow, External Event, Human-in-the-Loop, Async, Microservice
 
 Description: Learn how to pause Dapr Workflows and resume them based on external events like user approvals, payment confirmations, or third-party webhooks.
 

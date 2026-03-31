@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Capped collection, Queue, Data modeling, Performance
+Tags: MongoDB, Capped Collection, Queue, Data Modeling, Performance
 
 Description: Learn how to use MongoDB capped collections as fixed-size FIFO queues for message buffers, circular event logs, and tailable cursor consumers.
 

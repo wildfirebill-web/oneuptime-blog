@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Multi-Stage Builds, Containerfile, Production, DevOps
+Tags: Podman, Multi-Stage Build, Containerfile, Production, DevOps
 
 Description: Learn how to create multi-stage Containerfiles with Podman to build lean, secure production images by separating build tooling from runtime artifacts.
 

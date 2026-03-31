@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Container Management, Multi-Environment, Operations, API
+Tags: Portainer, Docker, Container Management, Multi-Environment, Operation, API
 
 Description: View and manage all running containers across multiple Docker and Kubernetes environments from Portainer's unified dashboard and API for efficient fleet-wide container visibility.
 

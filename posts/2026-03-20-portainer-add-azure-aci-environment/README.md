@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Azure, ACI, Cloud, Environments
+Tags: Portainer, Azure, ACI, Cloud, Environment
 
 Description: Connect Portainer to Azure Container Instances (ACI) to deploy and manage serverless containers in Azure from the Portainer interface.
 

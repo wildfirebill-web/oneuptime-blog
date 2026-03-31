@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Thanos, Prometheus, Metrics, Long-Term Storage, Object Storage
+Tags: OpenTelemetry, Thanos, Prometheus, Metric, Long-Term Storage, Object Storage
 
 Description: Step-by-step guide to setting up Thanos for durable long-term storage of OpenTelemetry metrics with object storage backends and global querying.
 

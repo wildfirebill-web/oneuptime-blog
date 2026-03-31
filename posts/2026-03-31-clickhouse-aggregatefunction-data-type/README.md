@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, AggregateFunction, Aggregation
+Tags: ClickHouse, SQL, Data Type, AggregateFunction, Aggregation
 
 Description: Learn how AggregateFunction stores binary aggregate states, how to use -State and -Merge combinators, and how AggregatingMergeTree works.
 

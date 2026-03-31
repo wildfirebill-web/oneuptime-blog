@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Metrics Server, Prometheus, Monitoring
+Tags: k3s, Kubernetes, Rancher, Metrics Server, Prometheus, Monitoring
 
 Description: Learn how to disable K3s's built-in metrics-server and replace it with a custom Prometheus-based metrics stack.
 

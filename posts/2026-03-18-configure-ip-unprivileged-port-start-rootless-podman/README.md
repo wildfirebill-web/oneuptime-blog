@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Kernel, Sysctl, Networking
+Tags: Podman, Container, DevOps, Rootless, Kernel, Sysctl, Networking
 
 Description: A focused guide on configuring the Linux kernel parameter net.ipv4.ip_unprivileged_port_start to allow rootless Podman containers to bind low-numbered ports.
 

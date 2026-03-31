@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Prometheus, Grafana, Monitoring, Metrics
+Tags: MongoDB, Prometheus, Grafana, Monitoring, Metric
 
 Description: Set up comprehensive MongoDB monitoring with Prometheus and Grafana using the mongodb_exporter to track performance, replication lag, and resource usage.
 

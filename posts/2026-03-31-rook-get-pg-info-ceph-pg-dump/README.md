@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Placement Group, Diagnostics, Administration
+Tags: Rook, Ceph, Placement Group, Diagnostic, Administration
 
 Description: Learn how to use ceph pg dump to retrieve detailed Placement Group information for diagnostics and capacity planning in Rook clusters.
 

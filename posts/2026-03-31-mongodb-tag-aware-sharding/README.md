@@ -1,6 +1,6 @@
 # How to Tag-Aware Sharding in MongoDB
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Sharding, Tag, Zone, Data Locality
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $lookup, Left Join, Aggregation, Join Collections
+Tags: MongoDB, $lookup, LEFT JOIN, Aggregation, Join Collections
 
 Description: Learn how to use MongoDB's $lookup aggregation stage to perform a left outer join between two collections, combining related documents from separate collections.
 

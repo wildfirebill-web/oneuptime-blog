@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, SQS, SNS, Fan-Out, Messaging, Terraform, Microservices, Event-Driven Architecture
+Tags: AWS, SQS, SNS, Fan-Out, Messaging, Terraform, Microservice, Event-Driven Architecture
 
 Description: A practical guide to implementing the fan-out pattern using Amazon SNS and SQS for scalable, decoupled event distribution across multiple consumers.
 

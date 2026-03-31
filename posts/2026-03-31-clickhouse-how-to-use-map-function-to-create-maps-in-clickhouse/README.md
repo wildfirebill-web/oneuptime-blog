@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Map, Key-Value, Sql, Data Types
+Tags: ClickHouse, Map, Key-Value, SQL, Data Type
 
 Description: Learn how to use the map() function in ClickHouse to create Map(key, value) typed structures for storing and querying key-value data inline.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Operations, Cluster, Maintenance
+Tags: Rook, Ceph, Operation, Cluster, Maintenance
 
 Description: Learn how to safely start, stop, and restart a Ceph cluster managed by Rook for maintenance, upgrades, and emergency procedures.
 

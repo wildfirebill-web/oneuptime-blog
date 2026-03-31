@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Server-Sent Events, SSE, Streaming, Kubernetes
+Tags: Istio, Server-Sent Event, SSE, Streaming, Kubernetes
 
 Description: How to configure Istio to properly handle Server-Sent Events including timeout settings, buffering, load balancing, and connection management for SSE streams.
 

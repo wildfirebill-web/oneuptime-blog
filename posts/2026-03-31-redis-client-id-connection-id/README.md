@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CLIENT, Connection, Debugging, Monitoring
+Tags: Redis, Client, Connection, Debugging, Monitoring
 
 Description: Learn how to use CLIENT ID in Redis to retrieve the unique numeric ID of the current connection, enabling precise connection tracking, targeted CLIENT KILL operations, and debugging.
 

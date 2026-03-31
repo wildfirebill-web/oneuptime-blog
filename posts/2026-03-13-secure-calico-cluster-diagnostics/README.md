@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics, Security
+Tags: Calico, Kubernetes, Networking, Diagnostic, Security
 
 Description: Secure Calico cluster diagnostic access by implementing RBAC for cluster-wide resource reads, controlling calicoctl cluster diags execution, and ensuring diagnostic bundles are stored securely.
 

@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Row Number, Window Functions, Sql, Analytics
+Tags: MySQL, Row Number, Window Function, SQL, Analytics
 
-Description: Learn how to use MySQL's ROW_NUMBER() window function to assign sequential integers to rows within a result set partition for pagination, deduplication, and ranking.
+Description: Learn how to use MySQL's ROW_NUMBER() window function to assign sequential integers to rows within a result set partition for pagination and deduplication.
 
 ---
 

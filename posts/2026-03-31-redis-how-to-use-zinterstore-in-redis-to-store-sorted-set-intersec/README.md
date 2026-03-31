@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, ZINTERSTORE, Intersection, Commands
+Tags: Redis, Sorted Set, ZINTERSTORE, Intersection, Command
 
 Description: Learn how to use ZINTERSTORE in Redis to compute the intersection of multiple sorted sets and store results with aggregate score options.
 

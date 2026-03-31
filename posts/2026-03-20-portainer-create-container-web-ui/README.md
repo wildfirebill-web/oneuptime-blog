@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, DevOps, Web UI
+Tags: Portainer, Docker, Container, DevOps, Web UI
 
 Description: Learn how to create and configure a Docker container using the Portainer web interface without writing any command-line instructions.
 

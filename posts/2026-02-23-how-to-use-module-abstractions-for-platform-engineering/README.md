@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Platform Engineering, Abstraction, Self-Service, Infrastructure as Code
+Tags: Terraform, Module, Platform Engineering, Abstraction, Self-Service, Infrastructure as Code
 
 Description: Design Terraform module abstractions that enable platform engineering with self-service infrastructure, golden paths, and guardrails for development teams.
 

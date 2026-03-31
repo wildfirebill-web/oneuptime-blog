@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Go, gRPC, Interceptors, Tracing, Microservices
+Tags: OpenTelemetry, Go, gRPC, Interceptors, Tracing, Microservice
 
 Description: Learn how to instrument Go gRPC services using OpenTelemetry interceptors for comprehensive distributed tracing across your microservices architecture.
 

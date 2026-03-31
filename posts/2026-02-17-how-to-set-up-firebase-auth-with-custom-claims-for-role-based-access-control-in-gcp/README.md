@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Firebase, GCP, Authentication, RBAC, Cloud Functions
+Tags: Firebase, GCP, Authentication, RBAC, Cloud Function
 
 Description: Learn how to implement role-based access control in your GCP application using Firebase Auth custom claims and Cloud Functions for secure user management.
 

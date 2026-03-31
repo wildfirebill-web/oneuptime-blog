@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GKE, Kubernetes, HPA, Autoscaling, Custom Metrics, Cloud Monitoring, GCP
+Tags: GKE, Kubernetes, HPA, Autoscaling, Custom Metric, Cloud Monitoring, GCP
 
 Description: Troubleshoot and fix GKE HorizontalPodAutoscaler that fails to scale based on custom metrics, covering metrics adapter setup, metric availability, and HPA configuration.
 

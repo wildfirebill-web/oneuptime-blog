@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Trivy, CI/CD, Security, Scanning, DevSecOps, Vulnerability Management, Container Security, GitHub Actions, GitLab CI, Jenkins
+Tags: Trivy, CI/CD, Security, Scanning, DevSecOps, Vulnerability Management, Container Security, GitHub Action, GitLab CI, Jenkins
 
 Description: A comprehensive guide to configuring Trivy vulnerability scanner in CI/CD pipelines, covering GitHub Actions, GitLab CI, Jenkins, and best practices for automated security scanning.
 

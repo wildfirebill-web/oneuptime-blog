@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Audio, PipeWire, PulseAudio, SYSTEM
+Tags: Ubuntu, Audio, PipeWire, PulseAudio, System
 
 Description: Migrate from PulseAudio to PipeWire on Ubuntu for improved audio quality, lower latency, and better Bluetooth support, with step-by-step installation and verification instructions.
 

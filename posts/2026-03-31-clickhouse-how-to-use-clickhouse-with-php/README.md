@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Php, Integration, Database
+Tags: ClickHouse, PHP, Integration, Database
 
 Description: Connect PHP applications to ClickHouse using the HTTP interface and available PHP clients to run queries and insert data efficiently.
 

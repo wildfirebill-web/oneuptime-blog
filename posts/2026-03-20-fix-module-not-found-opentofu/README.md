@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, Modules, Error, Infrastructure as Code, Debugging
+Tags: OpenTofu, Troubleshooting, Module, Error, Infrastructure as Code, Debugging
 
 Description: Learn how to diagnose and fix module not found errors in OpenTofu caused by incorrect source paths, missing tofu init, and registry connectivity issues.
 

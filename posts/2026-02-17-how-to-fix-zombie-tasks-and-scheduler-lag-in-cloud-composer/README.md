@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Composer, Airflow, Troubleshooting, Schedulers
+Tags: GCP, Cloud Composer, Airflow, Troubleshooting, Scheduler
 
 Description: Diagnose and resolve zombie tasks and scheduler lag in Cloud Composer that cause pipeline delays, missed SLAs, and unreliable DAG execution.
 

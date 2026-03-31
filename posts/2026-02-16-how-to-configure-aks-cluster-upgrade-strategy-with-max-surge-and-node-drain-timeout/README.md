@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AKS, Kubernetes, Cluster Upgrade, Max Surge, Node Drain, Azure, Operations
+Tags: AKS, Kubernetes, Cluster Upgrade, Max Surge, Node Drain, Azure, Operation
 
 Description: Learn how to configure AKS cluster upgrade strategies using max surge and node drain timeout to minimize downtime during Kubernetes version upgrades.
 

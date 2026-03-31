@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, SSL, TLS, Security, Containers, HTTPS
+Tags: Podman, SSL, TLS, Security, Container, HTTPS
 
 Description: Learn how to configure SSL/TLS termination for Podman containers using Nginx and self-signed or CA-signed certificates to secure traffic between clients and your services.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, System Roles, Metrics, PCP
+Tags: RHEL, System Roles, Metric, PCP
 
 Description: Use the metrics RHEL System Role to deploy PCP for automated metrics collection.
 

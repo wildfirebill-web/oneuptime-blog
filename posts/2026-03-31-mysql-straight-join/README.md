@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, JOIN, Performance, Query Optimization
+Tags: MySQL, SQL, Join, Performance, Query Optimization
 
 Description: Learn how STRAIGHT_JOIN forces MySQL to read tables in the specified order, when to use it to override the query optimizer, and how to verify its effect with EXPLAIN.
 

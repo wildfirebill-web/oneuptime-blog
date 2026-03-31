@@ -1,6 +1,6 @@
 # How to Build a Security Operations Center with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Security, Analytics, Tutorial, Database, SOC
 

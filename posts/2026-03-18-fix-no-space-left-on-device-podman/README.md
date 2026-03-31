@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, Linux, Storage, Troubleshooting
+Tags: Podman, Container, Linux, Storage, Troubleshooting
 
 Description: A detailed guide to diagnosing and fixing 'no space left on device' errors in Podman, including storage driver configuration, pruning strategies, and overlay filesystem tuning.
 

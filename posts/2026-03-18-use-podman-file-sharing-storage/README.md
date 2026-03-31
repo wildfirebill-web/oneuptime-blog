@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, File Sharing, Storage, MinIO, Nextcloud, Containers
+Tags: Podman, File Sharing, Storage, MinIO, Nextcloud, Container
 
 Description: Learn how to deploy file sharing and storage solutions like Nextcloud, MinIO, and Samba using Podman containers for self-hosted cloud storage and collaborative file management.
 

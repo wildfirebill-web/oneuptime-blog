@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Arrays, $size, Aggregation, Query
+Tags: MongoDB, Array, $size, Aggregation, Query
 
 Description: Learn how to get the size of an array field in MongoDB using $size in queries and aggregation, with examples for filtering by array length and computed sizes.
 

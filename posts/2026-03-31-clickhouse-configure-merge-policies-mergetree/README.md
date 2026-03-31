@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, MergeTree, Merge Policy, Configuration, Performance, Parts, SQL
+Tags: ClickHouse, MergeTree, Merge Policy, Configuration, Performance, Part, SQL
 
 Description: Learn how to configure ClickHouse MergeTree merge policies to control when and how data parts are merged, balancing write throughput against read performance.
 

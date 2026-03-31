@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Tags, Cost Allocation, FinOps, Cloud Cost Management
+Tags: Terraform, Tag, Cost Allocation, FinOps, Cloud Cost Management
 
 Description: Learn how to implement a consistent tagging strategy with Terraform for accurate cost allocation across teams, projects, and environments in your cloud infrastructure.
 

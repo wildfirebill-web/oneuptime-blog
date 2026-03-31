@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Observability
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Observability
 
 Description: Learn how to build a comprehensive deployment notification pipeline with ArgoCD, including multi-channel alerts, custom templates, escalation policies, and integration with incident management tools.
 

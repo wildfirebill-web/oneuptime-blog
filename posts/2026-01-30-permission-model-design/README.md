@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Security, Permissions, Authorization, Architecture
+Tags: Security, Permission, Authorization, Architecture
 
 Description: Learn to build permission model design for granular access control with roles and capabilities.
 

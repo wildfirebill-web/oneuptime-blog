@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Multi-Cluster, SOPS, Secrets, Encryption, Security, Mozilla SOPS
+Tags: Flux, Kubernetes, GitOps, Multi-Cluster, SOPS, Secret, Encryption, Security, Mozilla SOPS
 
 Description: Learn how to manage cluster-specific secrets in a multi-cluster Flux setup using Mozilla SOPS encryption with per-cluster decryption keys.
 

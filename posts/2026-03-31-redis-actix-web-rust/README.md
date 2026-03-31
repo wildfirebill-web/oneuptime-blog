@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Actix-Web, Rust
+Tags: Redis, Actix-web, Rust
 
 Description: Learn how to integrate Redis with Actix-Web in Rust for async caching, session storage, and pub/sub using the redis-rs crate with deadpool-redis connection pooling.
 

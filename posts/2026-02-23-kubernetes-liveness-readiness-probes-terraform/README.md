@@ -1,6 +1,6 @@
 # How to Configure Kubernetes Liveness and Readiness Probes in Terraform
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Terraform, Kubernetes, Health Check, Probe, Reliability, DevOps
 

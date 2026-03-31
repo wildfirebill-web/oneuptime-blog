@@ -1,6 +1,6 @@
 # How to Uninstall MySQL Completely on macOS
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Uninstall, macOS, Administration, Homebrew
 

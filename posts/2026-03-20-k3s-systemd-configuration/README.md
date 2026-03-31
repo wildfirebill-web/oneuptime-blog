@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Systemd, Linux, Service Management, DevOps
+Tags: k3s, Kubernetes, Systemd, Linux, Service Management, DevOps
 
 Description: Learn how to configure and manage K3s systemd service units, including resource limits, environment variables, and service dependencies.
 

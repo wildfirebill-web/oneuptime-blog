@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Cleanup
+Tags: Podman, Container, DevOps, podman-compose, Cleanup
 
 Description: Learn how to stop and remove services, networks, and volumes created by podman-compose using the down command.
 

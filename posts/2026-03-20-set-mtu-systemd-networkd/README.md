@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MTU, systemd-networkd, Linux, .network, .link, Jumbo Frames, Networking
+Tags: MTU, systemd-networkd, Linux, .network, .link, Jumbo Frame, Networking
 
 Description: Learn how to set the MTU on network interfaces using systemd-networkd, including setting it in .link files for early application and .network files for interface-specific configuration.
 

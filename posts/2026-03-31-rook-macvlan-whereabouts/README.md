@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Macvlan, Whereabouts, Networking
 
-Description: Learn how to configure Macvlan NetworkAttachmentDefinitions with Whereabouts IPAM for Rook-Ceph to provide stable IP addresses on a dedicated storage network.
+Description: Configure Macvlan NetworkAttachmentDefinitions with Whereabouts IPAM for Rook-Ceph to provide stable IP addresses on a dedicated storage network.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Traefik, Ingress, Nginx
+Tags: k3s, Kubernetes, Rancher, Traefik, Ingress, Nginx
 
 Description: Learn how to disable the default Traefik ingress controller in K3s and replace it with an alternative like NGINX Ingress Controller.
 

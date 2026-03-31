@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Filesystem
+Tags: OpenTofu, Terraform, IaC, Function, Filesystem
 
 Description: Learn how to use abspath, basename, dirname, file, filebase64, fileexists, fileset, and pathexpand in OpenTofu.
 

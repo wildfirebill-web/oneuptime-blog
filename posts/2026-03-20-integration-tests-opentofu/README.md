@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, Integration Tests, Cloud Testing, Infrastructure Testing
+Tags: OpenTofu, Testing, Integration Test, Cloud Testing, Infrastructure Testing
 
 Description: Learn how to write integration tests for OpenTofu configurations using the native test framework's apply mode to validate real infrastructure creation, connectivity, and behavior.
 

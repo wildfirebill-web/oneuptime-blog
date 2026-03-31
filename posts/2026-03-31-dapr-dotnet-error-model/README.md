@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Error Handling, Sdk, Microservice, Resilience
+Tags: Dapr, DotNet, Error Handling, SDK, Microservice, Resilience
 
 Description: Learn how to use the Dapr .NET SDK error model to handle gRPC status codes, categorize failures, and build resilient error-handling logic in your services.
 

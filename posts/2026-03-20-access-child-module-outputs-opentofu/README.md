@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Outputs, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Module, Output, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to access output values from child modules in OpenTofu and chain them between modules and resources.
 

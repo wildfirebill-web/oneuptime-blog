@@ -2,7 +2,7 @@
 
 Author: [devneelpatel](https://www.github.com/devneelpatel)
 
-Tags: OpenTelemetry, Observability, Metrics, Logs, Traces, Collector, Cost Optimization, Reliability, Sampling
+Tags: OpenTelemetry, Observability, Metric, Log, Trace, Collector, Cost Optimization, Reliability, Sampling
 
 Description: A practical, no-fluff guide to understanding the OpenTelemetry Collector - what it does, how it works, real architecture patterns (with and without it).
 

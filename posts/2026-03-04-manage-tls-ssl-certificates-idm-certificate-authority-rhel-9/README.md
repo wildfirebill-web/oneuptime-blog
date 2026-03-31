@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RHEL, IdM, Certificates, TLS, SSL, PKI, Identity Management, Linux
+Tags: RHEL, IdM, Certificate, TLS, SSL, PKI, Identity Management, Linux
 
 Description: Learn how to use the IdM integrated Certificate Authority on RHEL 9 to issue, manage, and renew TLS/SSL certificates for hosts and services.
 

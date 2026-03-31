@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Database, Indexes, Schema Design, Query Optimization
+Tags: MongoDB, Database, Index, Schema Design, Query Optimization
 
 Description: Learn how to use MongoDB wildcard indexes to efficiently query documents with dynamic or unpredictable field names, perfect for user-defined attributes, metadata, and flexible schemas.
 

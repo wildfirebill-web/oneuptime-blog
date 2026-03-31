@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Uptrace, Tracing, Metrics, Observability, Backend
+Tags: OpenTelemetry, Uptrace, Tracing, Metric, Observability, Backend
 
 Description: Learn how to set up Uptrace as a native OpenTelemetry backend for collecting, storing, and analyzing distributed traces and metrics from your applications.
 

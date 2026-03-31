@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, Prometheus, Grafana, Monitoring, Metrics, Observability, SLI, SLO, Alerting
+Tags: gRPC, Prometheus, Grafana, Monitoring, Metric, Observability, SLI, SLO, Alerting
 
 Description: Learn how to set up comprehensive monitoring for gRPC services using Prometheus metrics and Grafana dashboards with practical alerting rules.
 

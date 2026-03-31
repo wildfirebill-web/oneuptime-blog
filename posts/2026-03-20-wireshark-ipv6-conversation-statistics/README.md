@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, IPv6, Statistics, Conversations, Traffic Analysis, Network Forensics
+Tags: Wireshark, IPv6, Statistics, Conversation, Traffic Analysis, Network Forensics
 
 Description: A guide to generating and interpreting IPv6 conversation statistics in Wireshark to identify the busiest talkers, top endpoints, and unusual traffic patterns.
 

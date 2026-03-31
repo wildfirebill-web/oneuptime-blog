@@ -1,6 +1,6 @@
 # How to Verify Talos Linux Installation Was Successful
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Talos Linux, Verification, Installation, Troubleshooting, Health Check
 

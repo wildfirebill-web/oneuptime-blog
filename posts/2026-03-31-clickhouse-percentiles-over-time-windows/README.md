@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Percentile, quantile, Window Function, Time-Series
+Tags: ClickHouse, Percentile, Quantile, Window Function, Time-Series
 
 Description: Learn how to compute P50, P95, and P99 percentiles over sliding time windows in ClickHouse using quantile functions and window aggregations.
 

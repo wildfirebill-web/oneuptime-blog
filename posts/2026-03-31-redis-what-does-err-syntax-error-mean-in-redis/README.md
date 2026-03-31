@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Error, Syntax Error, Commands, Debugging, Troubleshooting
+Tags: Redis, Error, Syntax Error, Command, Debugging, Troubleshooting
 
 Description: Learn when Redis returns 'ERR syntax error', which command patterns trigger it, and how to identify and fix malformed Redis commands in your code.
 

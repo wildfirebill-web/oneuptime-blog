@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Shopping Cart, Sessions, E-Commerce, Backend
+Tags: Redis, Shopping Cart, Session, E-Commerce, Backend
 
 Description: Learn how to store, retrieve, and manage shopping cart data in Redis sessions for fast, scalable e-commerce applications.
 

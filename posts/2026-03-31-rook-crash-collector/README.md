@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Storage, Crash, Diagnostics
+Tags: Rook, Ceph, Kubernetes, Storage, Crash, Diagnostic
 
 Description: Configure the Rook-Ceph crash collector to capture and archive Ceph daemon crash reports, set retention policies, and integrate with monitoring for crash alerting.
 

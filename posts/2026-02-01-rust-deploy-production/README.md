@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Deployment, Production, Docker, CI/CD, Releases
+Tags: Rust, Deployment, Production, Docker, CI/CD, Release
 
 Description: A practical guide to deploying Rust applications to production with optimized builds, Docker, and CI/CD pipelines.
 

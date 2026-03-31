@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Performance, CI/CD, Optimization
+Tags: Terraform, Module, Performance, CI/CD, Optimization
 
 Description: Speed up Terraform initialization by optimizing how modules are downloaded, cached, and referenced across your projects.
 

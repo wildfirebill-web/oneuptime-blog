@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Serialization, Version Mismatch, Java, Protocol Buffers, Data Migration, Backward Compatibility, Microservices
+Tags: Serialization, Version Mismatch, Java, Protocol Buffer, Data Migration, Backward Compatibility, Microservice
 
 Description: A practical guide to diagnosing and fixing serialization version mismatch errors in distributed systems, covering common causes, debugging techniques.
 

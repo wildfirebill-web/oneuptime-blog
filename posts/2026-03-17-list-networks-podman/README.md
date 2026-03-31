@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, CLI
+Tags: Podman, Container, DevOps, Networking, CLI
 
 Description: Learn how to list and filter Podman networks to view available network configurations.
 

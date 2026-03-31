@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Custom Metrics, Prometheus, Monitoring, Observability
+Tags: Rancher, Kubernetes, Custom Metric, Prometheus, Monitoring, Observability
 
 Description: Configure custom application metrics collection in Rancher using Prometheus ServiceMonitors, PodMonitors, and custom exporters for business-specific observability.
 

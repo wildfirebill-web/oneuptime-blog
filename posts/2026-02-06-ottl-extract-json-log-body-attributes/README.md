@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OTTL, Logs, JSON Parsing
+Tags: OpenTelemetry, OTTL, Log, JSON Parsing
 
 Description: Use OTTL expressions in the OpenTelemetry Collector to extract nested JSON fields from log bodies into top-level log attributes.
 

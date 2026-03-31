@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, DATETIME, TIMESTAMP
+Tags: MySQL, DateTime, Timestamp
 
 Description: Understand the key differences between MySQL DATETIME and TIMESTAMP data types including storage, timezone handling, range limits, and when to use each.
 

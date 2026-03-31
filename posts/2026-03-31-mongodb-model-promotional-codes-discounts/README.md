@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data Modeling, Schema, Promotion, E-commerce
+Tags: MongoDB, Data Modeling, Schema, Promotion, E-Commerce
 
 Description: Learn how to model promotional codes and discount rules in MongoDB, enforce usage limits, and apply discounts safely during checkout using transactions.
 

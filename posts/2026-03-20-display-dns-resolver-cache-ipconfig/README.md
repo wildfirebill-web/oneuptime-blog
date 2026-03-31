@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Window, Networking, Ipconfig, DNS, Cache, Diagnostics
+Tags: Window, Networking, Ipconfig, DNS, Cache, Diagnostic
 
 Description: Display the contents of the Windows DNS resolver cache using ipconfig /displaydns to inspect cached hostname-to-IP mappings and identify stale or incorrect DNS entries.
 

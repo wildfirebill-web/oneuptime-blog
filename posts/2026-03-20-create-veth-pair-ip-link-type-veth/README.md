@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, ip command, iproute2, veth, Network Namespaces, Containers, Networking
+Tags: Linux, ip command, iproute2, veth, Network Namespaces, Container, Networking
 
 Description: Create virtual Ethernet (veth) pairs using ip link add type veth to connect network namespaces, containers, bridges, or virtual machines.
 

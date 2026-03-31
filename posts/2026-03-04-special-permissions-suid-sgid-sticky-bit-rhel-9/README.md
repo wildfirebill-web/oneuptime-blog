@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Permissions, SUID, SGID, Sticky Bit, Security, Linux
+Tags: RHEL, Permission, SUID, SGID, Sticky Bit, Security, Linux
 
 Description: A practical guide to understanding and using SUID, SGID, and the sticky bit on RHEL, covering both their legitimate uses and the security risks they introduce.
 

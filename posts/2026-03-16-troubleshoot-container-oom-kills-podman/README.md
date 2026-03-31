@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Troubleshooting, Memory, Performance
+Tags: Podman, Container, DevOps, Troubleshooting, Memory, Performance
 
 Description: Learn how to detect, diagnose, and prevent Out-Of-Memory (OOM) kills in Podman containers by setting memory limits, monitoring usage, and tuning application memory behavior.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, System Administration, Versioning
+Tags: Podman, Container, DevOps, System Administration, Versioning
 
 Description: Learn how to check your Podman version and its component versions to ensure compatibility and troubleshoot issues effectively.
 

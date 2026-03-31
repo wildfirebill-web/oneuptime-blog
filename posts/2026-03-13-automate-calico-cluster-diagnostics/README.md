@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics, Automation
+Tags: Calico, Kubernetes, Networking, Diagnostic, Automation
 
 Description: Automate Calico cluster-wide diagnostic collection including TigeraStatus snapshots, IPAM consistency checks, and comprehensive calicoctl cluster diags bundles for incident response and periodic...
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker Compose, Debugging, Troubleshooting, Logs, DevOps, Docker
+Tags: Docker Compose, Debugging, Troubleshooting, Log, DevOps, Docker
 
 Description: A systematic troubleshooting guide for diagnosing and fixing Docker Compose services that fail to start or keep restarting.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, CephFS, Windows, File System, Kubernetes
+Tags: Rook, Ceph, CephFS, Window, File System, Kubernetes
 
 Description: Learn how to mount CephFS filesystems on Windows clients using the Dokan FUSE driver, enabling Windows workloads to access shared Ceph file storage.
 

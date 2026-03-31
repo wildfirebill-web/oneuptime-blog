@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Processes, Nice, Renice, Priority, Performance, Linux
+Tags: RHEL, Process, Nice, Renice, Priority, Performance, Linux
 
 Description: Learn how to use nice and renice on RHEL to manage process scheduling priorities and balance system resources.
 

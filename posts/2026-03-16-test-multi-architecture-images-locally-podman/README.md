@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, Testing
+Tags: Podman, Container, DevOps, Multi-Architecture, Testing
 
 Description: Learn how to test multi-architecture container images locally with Podman using QEMU emulation, verifying that each platform variant works correctly before pushing to a registry.
 

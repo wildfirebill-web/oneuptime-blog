@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Buildah, Mount, Filesystem, Image Inspection
+Tags: Podman, Container, DevOps, Buildah, Mount, Filesystem, Image Inspection
 
 Description: Learn how to use buildah mount to directly access container filesystems for inspection, modification, and advanced build workflows.
 

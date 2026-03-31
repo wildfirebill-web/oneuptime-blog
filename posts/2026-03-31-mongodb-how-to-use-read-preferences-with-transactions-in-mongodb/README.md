@@ -12,7 +12,7 @@ Description: Learn why MongoDB transactions require primary read preference and 
 
 MongoDB transactions on replica sets only support `primary` read preference. All read operations inside a transaction must go to the primary node. Attempting to use `secondary`, `secondaryPreferred`, or `nearest` inside a transaction will result in an error.
 
-```
+```text
 MongoServerError: Read preference in a transaction must be primary
 ```
 

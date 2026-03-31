@@ -1,4 +1,4 @@
-# Configure OSD Portable vs Non-Portable Storage in Rook-Ceph
+# How to Configure OSD Portable vs Non-Portable Storage in Rook-Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

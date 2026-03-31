@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, templatefile, Templates, Dynamic Configuration, User Data
+Tags: OpenTofu, templatefile, Template, Dynamic Configuration, User Data
 
 Description: Learn how to use templatefile() in OpenTofu to generate dynamic configuration files, user data scripts, and policy documents from templates with variable substitution.
 

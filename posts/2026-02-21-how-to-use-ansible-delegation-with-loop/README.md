@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Delegation, Loops, Automation
+Tags: Ansible, Delegation, Loop, Automation
 
 Description: Learn how to combine Ansible delegate_to with loop constructs to run tasks across multiple hosts efficiently with practical examples.
 

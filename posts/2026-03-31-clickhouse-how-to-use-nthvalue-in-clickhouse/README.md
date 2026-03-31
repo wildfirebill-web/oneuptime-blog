@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Functions, NTH_VALUE, Analytics, SQL
+Tags: ClickHouse, Window Function, NTH_VALUE, Analytics, SQL
 
 Description: Learn how to use the NTH_VALUE() window function in ClickHouse to retrieve the value from a specific position within a window frame.
 

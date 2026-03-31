@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring, Events, Event-Driven, Enterprise
+Tags: Java, Spring, Event, Event-Driven, Enterprise
 
 Description: Implement Spring application events with custom events, async listeners, transactional event listeners, and event publishing patterns.
 

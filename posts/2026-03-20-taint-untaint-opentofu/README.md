@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Taints, Untaint, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, Taints, Untaint, Infrastructure as Code, DevOps
 
 Description: A guide to using taint and untaint commands in OpenTofu to mark resources for forced recreation or remove that marking.
 

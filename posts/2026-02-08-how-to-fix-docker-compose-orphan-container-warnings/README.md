@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker-compose, Orphan containers, Warnings, Cleanup, Troubleshooting
+Tags: Docker, Docker-compose, Orphan containers, Warning, Cleanup, Troubleshooting
 
 Description: Understand and fix Docker Compose orphan container warnings that appear when services are removed or renamed in your Compose configuration.
 

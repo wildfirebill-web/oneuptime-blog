@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, System Design, Notifications, Interview, Pub/Sub, Streams, Architecture
+Tags: Redis, System Design, Notification, Interview, Pub/Sub, Stream, Architecture
 
 Description: A system design walkthrough for building a scalable notification system using Redis, covering delivery channels, unread counts, and fan-out strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCPv6, IPv6, Troubleshooting, Networking, Diagnostics
+Tags: DHCPv6, IPv6, Troubleshooting, Networking, Diagnostic
 
 Description: A systematic guide to diagnosing and resolving DHCPv6 address assignment failures using logs, packet captures, and configuration checks.
 

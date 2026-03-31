@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Policy as Code, Naming Conventions, OPA, TFLint, Governance
+Tags: OpenTofu, Policy as Code, Naming Convention, OPA, TFLint, Governance
 
 Description: Learn how to enforce resource naming conventions in OpenTofu using tflint naming rules, OPA Rego policies, and custom validation functions - ensuring consistent, predictable resource names across...
 

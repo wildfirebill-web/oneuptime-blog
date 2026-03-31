@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, JOIN, UNION, Database, Query
+Tags: MySQL, SQL, Join, UNION, Database, Query
 
 Description: MySQL does not support FULL OUTER JOIN natively. Learn how to emulate it using a combination of LEFT JOIN, RIGHT JOIN, and UNION.
 

@@ -1,8 +1,8 @@
 # How to Use $densify to Fill Gaps in Time-Series Data in MongoDB
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Time-series, Densify, Pipeline
+Tags: MongoDB, Aggregation, Time-Series, Densify, Pipeline
 
 Description: Learn how to use MongoDB's $densify stage to generate missing documents in time-series and numeric sequences, filling gaps so every interval is represented in results.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Python, Bloom Filter, Probabilistic Data Structures, RedisBloom
+Tags: Redis, Python, Bloom Filter, Probabilistic Data Structure, RedisBloom
 
 Description: Learn how to use Redis Bloom Filters in Python to efficiently check membership with minimal memory, including creation, adding items, and querying.
 

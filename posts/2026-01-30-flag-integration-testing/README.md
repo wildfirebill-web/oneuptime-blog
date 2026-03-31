@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Integration Testing, QA, Testing
+Tags: Feature Flag, Integration Testing, QA, Testing
 
 Description: Learn how to integration test feature flag behaviors across services.
 

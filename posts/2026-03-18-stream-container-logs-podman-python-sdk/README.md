@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Python, SDK, Logs, Monitoring
+Tags: Podman, Python, SDK, Log, Monitoring
 
 Description: A comprehensive guide to reading, streaming, filtering, and processing container logs using the Podman Python SDK, including real-time log tailing and log aggregation patterns.
 

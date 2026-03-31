@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Environments, kubeconfig, DevOps
+Tags: Portainer, Kubernetes, Environment, kubeconfig, DevOps
 
 Description: Connect a Kubernetes cluster to Portainer using the agent or kubeconfig for container orchestration management.
 

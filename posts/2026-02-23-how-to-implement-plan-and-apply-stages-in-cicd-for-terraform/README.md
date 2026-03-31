@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, GitHub Actions, GitLab CI, DevOps, Infrastructure as Code
+Tags: Terraform, CI/CD, GitHub Action, GitLab CI, DevOps, Infrastructure as Code
 
 Description: Learn how to properly separate Terraform plan and apply stages in CI/CD pipelines, pass plan artifacts between stages, and implement safe deployment workflows.
 

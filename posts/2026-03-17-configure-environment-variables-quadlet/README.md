@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Environment Variables, Configuration
+Tags: Podman, Container, DevOps, Quadlet, Environment Variable, Configuration
 
 Description: Learn how to set environment variables in Podman Quadlet container files to configure your containerized applications.
 

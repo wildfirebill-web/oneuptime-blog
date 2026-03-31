@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, DNS, Configuration
+Tags: Podman, Container, DevOps, Networking, DNS, Configuration
 
 Description: Learn how to disable the built-in DNS server in Podman networks and when this is useful.
 

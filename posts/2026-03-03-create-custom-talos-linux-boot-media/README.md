@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Boot Media, Custom Images, Kubernetes, System Extensions
+Tags: Talos Linux, Boot Media, Custom Image, Kubernetes, System Extensions
 
 Description: Learn how to create customized Talos Linux boot media with extra drivers, extensions, and configurations for your specific hardware.
 

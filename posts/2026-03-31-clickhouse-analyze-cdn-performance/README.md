@@ -1,6 +1,6 @@
 # How to Analyze CDN Performance with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, CDN, Performance, Analytics, Tutorial, Database
 

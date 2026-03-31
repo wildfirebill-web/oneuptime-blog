@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Duplicates, Aggregation, Data Cleaning, $group
+Tags: MongoDB, Duplicate, Aggregation, Data Cleaning, $group
 
-Description: Learn how to find and remove duplicate documents from a MongoDB collection using aggregation pipelines, keeping the first or newest occurrence and preventing future duplicates.
+Description: Learn how to find and remove duplicate documents from a MongoDB collection using aggregation pipelines, keeping the first or newest occurrence.
 
 ---
 

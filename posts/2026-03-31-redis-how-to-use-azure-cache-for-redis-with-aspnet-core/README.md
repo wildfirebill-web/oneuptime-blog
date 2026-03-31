@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Azure Cache For Redis, Asp.Net Core, Csharp, Distributed Cache
+Tags: Redis, Azure Cache for Redis, ASP.NET Core, CSharp, Distributed Cache
 
 Description: Learn how to integrate Azure Cache for Redis with ASP.NET Core for distributed caching, session storage, and output caching using StackExchange.Redis.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Storage Engine, MEMORY, Performance, Cache
+Tags: MySQL, Storage Engine, Memory, Performance, Cache
 
 Description: The MySQL MEMORY storage engine stores all table data in RAM, providing very fast access for temporary data, caches, and lookup tables that fit in memory.
 

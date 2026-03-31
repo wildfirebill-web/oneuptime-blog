@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, HTTP, Observability, Tracing, Metrics, Node.js, Python, Go, Instrumentation
+Tags: OpenTelemetry, HTTP, Observability, Tracing, Metric, Node.js, Python, Go, Instrumentation
 
 Description: A comprehensive guide to configuring OpenTelemetry for HTTP services, covering automatic instrumentation, manual spans, and best practices for production deployments.
 

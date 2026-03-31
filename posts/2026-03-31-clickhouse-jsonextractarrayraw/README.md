@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Array, Analytics, Query
+Tags: ClickHouse, JSON, Array, Analytics, Query
 
 Description: Learn how JSONExtractArrayRaw() splits a JSON array into an Array(String) of raw JSON elements in ClickHouse, enabling per-element processing with arrayJoin and other array functions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Monitoring, External Services, Networking, Prometheus
+Tags: Calico, Kubernetes, Monitoring, External Service, Networking, Prometheus
 
 Description: Set up monitoring to detect when Calico pods lose external service connectivity using synthetic probes, DNS monitoring, and NAT rule health checks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Mongoose, TypeScript, Schema, Generic
+Tags: MongoDB, Mongoose, TypeScript, Schema, Generics
 
 Description: Learn the modern approach to using Mongoose with TypeScript, defining schemas with generics to get type-safe documents and model methods.
 

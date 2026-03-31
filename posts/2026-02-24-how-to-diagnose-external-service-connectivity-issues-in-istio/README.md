@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, ServiceEntry, External Services, Egress, Troubleshooting
+Tags: Istio, ServiceEntry, External Service, Egress, Troubleshooting
 
 Description: How to troubleshoot and fix connectivity issues when Istio mesh services try to reach external APIs, databases, and third-party endpoints.
 

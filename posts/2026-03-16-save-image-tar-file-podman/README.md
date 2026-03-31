@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Image Export, Tar
+Tags: Podman, Container, DevOps, Container Image, Image Export, Tar
 
 Description: Learn how to export Podman container images to tar archive files for offline transfer, backup, and distribution across environments.
 

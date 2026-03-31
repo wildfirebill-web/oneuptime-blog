@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Build Arguments, ARG
+Tags: Podman, Container, DevOps, Container Image, Build, Build Arguments, ARG
 
 Description: Learn how to pass build-time variables to Podman builds using ARG instructions and the --build-arg flag for flexible, parameterized image builds.
 

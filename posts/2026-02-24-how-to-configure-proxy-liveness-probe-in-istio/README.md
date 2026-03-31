@@ -1,6 +1,6 @@
 # How to Configure Proxy Liveness Probe in Istio
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Liveness Probe, Health Check, Kubernetes, Envoy Proxy
 

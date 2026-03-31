@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Time
+Tags: OpenTofu, Terraform, IaC, Function, Time
 
 Description: Learn how to use formatdate, timestamp, timeadd, timecmp, and plantimestamp functions in OpenTofu for time-based operations.
 

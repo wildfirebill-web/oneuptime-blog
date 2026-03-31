@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Compression, Zstd, WiredTiger, Performance
+Tags: MongoDB, Compression, ZSTD, WiredTiger, Performance
 
 Description: Learn how to configure Zstd compression in MongoDB 4.2+ for best-in-class compression ratios with fast decompression speeds.
 

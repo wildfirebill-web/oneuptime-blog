@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: APM, Application Performance Monitoring, Observability, Tracing, Metrics, Alerting, OpenTelemetry
+Tags: APM, Application Performance Monitoring, Observability, Tracing, Metric, Alerting, OpenTelemetry
 
 Description: A practical guide to implementing Application Performance Monitoring (APM), covering instrumentation strategies, key metrics, distributed tracing, and alerting best practices.
 

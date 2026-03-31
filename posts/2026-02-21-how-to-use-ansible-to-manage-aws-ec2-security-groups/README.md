@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, AWS, Security Groups, Networking, EC2
+Tags: Ansible, AWS, Security Group, Networking, EC2
 
 Description: Create and manage AWS EC2 security groups with Ansible to control inbound and outbound traffic rules as code for repeatable network security.
 

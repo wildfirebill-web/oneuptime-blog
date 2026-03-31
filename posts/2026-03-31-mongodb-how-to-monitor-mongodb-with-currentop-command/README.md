@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Monitoring, Performance, Operations
+Tags: MongoDB, Monitoring, Performance, Operation
 
 Description: Learn how to use MongoDB's currentOp command to inspect active operations, identify long-running queries, and kill problematic operations in real time.
 

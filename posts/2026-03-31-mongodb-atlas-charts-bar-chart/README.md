@@ -43,7 +43,7 @@ Drag fields from the **Fields** panel to the encoding channels:
 - **Y Axis** - drag `items.price` and set the aggregation to **Sum**
 - **Series** (optional) - drag `storeLocation` to color bars by location
 
-```
+```text
 X Axis:   items.name      (Category - no aggregation)
 Y Axis:   items.price     (Aggregation: Sum)
 Series:   storeLocation   (optional - creates grouped/stacked bars)

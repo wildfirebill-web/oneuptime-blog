@@ -1,4 +1,4 @@
-# How to Build Redis Monitoring with the TIG Stack
+# How to Build Redis Monitoring with the TIG Stack (Telegraf + InfluxDB + Grafana)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

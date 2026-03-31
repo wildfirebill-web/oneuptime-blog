@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Pub/Sub, Schema Validation, Avro, Protocol Buffers
+Tags: GCP, Pub/Sub, Schema Validation, Avro, Protocol Buffer
 
 Description: Learn how to enforce message schemas on Google Cloud Pub/Sub topics using Avro or Protocol Buffers to prevent malformed data from entering your messaging pipeline.
 

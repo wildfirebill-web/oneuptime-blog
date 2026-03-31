@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Merge Patch, Json, Json Functions, Sql
+Tags: MySQL, JSON Merge Patch, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_MERGE_PATCH() function to merge JSON objects using RFC 7396 patch semantics, where later values override earlier ones.
 

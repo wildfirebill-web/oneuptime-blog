@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bitmap, BITFIELD_RO, Bit, Read-Only
+Tags: Redis, Bitmap, BITFIELD_RO, BIT, Read-Only
 
 Description: Learn how to use BITFIELD_RO to safely read bit field values from a Redis string without any write operations, suitable for read replicas and safe concurrency.
 

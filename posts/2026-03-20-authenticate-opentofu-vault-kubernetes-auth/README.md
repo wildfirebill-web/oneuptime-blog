@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Vault, Kubernetes Auth, Service Accounts, Authentication
+Tags: OpenTofu, Vault, Kubernetes Auth, Service Account, Authentication
 
 Description: Learn how to configure OpenTofu to authenticate with HashiCorp Vault using the Kubernetes auth method, enabling pods and CI/CD jobs to authenticate using service account tokens.
 

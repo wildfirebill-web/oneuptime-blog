@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Queue Storage, Poison Messages, Error Handling, Azure Storage, Distributed Systems, Reliability
+Tags: Azure, Queue Storage, Poison Messages, Error Handling, Azure Storage, Distributed System, Reliability
 
 Description: Learn how to detect, handle, and manage poison messages in Azure Queue Storage to prevent failed messages from blocking your processing pipeline.
 

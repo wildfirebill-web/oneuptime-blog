@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, MariaDB, Database, SQL
+Tags: Podman, Container, DevOps, MariaDB, Database, SQL
 
 Description: Learn how to run MariaDB in a Podman container with persistent storage, custom tuning, and automated initialization.
 

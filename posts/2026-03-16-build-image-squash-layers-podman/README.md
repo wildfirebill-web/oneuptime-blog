@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Build, Image Optimization
+Tags: Podman, Container, DevOps, Build, Image Optimization
 
 Description: Learn how to use Podman's squash options to flatten image layers, reducing image size and simplifying the layer history of your container images.
 

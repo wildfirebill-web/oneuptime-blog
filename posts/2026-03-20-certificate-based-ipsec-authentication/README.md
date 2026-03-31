@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPsec, PKI, Certificates, strongSwan, IKEv2, Linux
+Tags: IPsec, PKI, Certificate, strongSwan, IKEv2, Linux
 
 Description: Configure IPsec VPN authentication using X.509 certificates with strongSwan, providing more scalable and secure authentication than pre-shared keys.
 

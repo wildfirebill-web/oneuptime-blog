@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Debugging, Gdb
+Tags: Redis, Debugging, GDB
 
 Description: Learn how to analyze Redis core dump files using gdb to diagnose crashes, identify root causes, and resolve production incidents fast.
 

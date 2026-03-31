@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Build, Containerfile
+Tags: Podman, Container, DevOps, Build, Containerfile
 
 Description: Learn how to use extra build contexts in Podman to reference external sources, other images, or local directories during your container image builds.
 

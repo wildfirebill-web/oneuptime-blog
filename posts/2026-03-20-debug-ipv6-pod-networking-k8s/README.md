@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Debugging, Networking, Pods, CNI
+Tags: Kubernetes, IPv6, Debugging, Networking, Pod, CNI
 
 Description: A systematic troubleshooting guide for diagnosing and resolving IPv6 pod networking failures in Kubernetes clusters.
 

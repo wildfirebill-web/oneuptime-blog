@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Game Server, Troubleshooting, Networking, Connectivity, Diagnostics
+Tags: IPv6, Game Server, Troubleshooting, Networking, Connectivity, Diagnostic
 
 Description: Diagnose and fix common IPv6 connectivity issues for game servers, including address assignment problems, firewall misconfigurations, and dual-stack connection failures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Subquery, Nested Query, Sql, Database
+Tags: MySQL, Subquery, Nested Query, SQL, Database
 
 Description: Learn how to write basic subqueries in MySQL, including scalar, row, table, and correlated subqueries with practical examples.
 

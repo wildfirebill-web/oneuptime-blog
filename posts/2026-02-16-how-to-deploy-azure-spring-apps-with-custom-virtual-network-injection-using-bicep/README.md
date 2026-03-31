@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Spring Apps, Bicep, Virtual Network, Java, Infrastructure as Code, Microservices
+Tags: Azure, Spring Apps, Bicep, Virtual Network, Java, Infrastructure as Code, Microservice
 
 Description: Deploy Azure Spring Apps with custom VNet injection using Bicep to host Java microservices in a network-isolated environment with full connectivity control.
 

@@ -1,6 +1,6 @@
 # How to Recover MongoDB from a Primary Failure
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Recovery, Replica Set, Failover, High Availability
 

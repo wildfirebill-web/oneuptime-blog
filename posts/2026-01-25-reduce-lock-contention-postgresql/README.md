@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Performance, Concurrency, Database, Locks
+Tags: PostgreSQL, Performance, Concurrency, Database, Lock
 
 Description: Learn practical techniques to identify and reduce lock contention in PostgreSQL, including query optimization, transaction management, and lock monitoring strategies for high-concurrency workloads.
 

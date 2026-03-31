@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Troubleshooting, Variables, NoneType, Jinja2
+Tags: Ansible, Troubleshooting, Variable, NoneType, Jinja2
 
 Description: Resolve Ansible NoneType not iterable errors caused by undefined variables, failed lookups, and missing return values in task results.
 

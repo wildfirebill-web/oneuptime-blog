@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Operations, DevOps
+Tags: Portainer, Docker, Container, Operation, DevOps
 
 Description: Learn how to duplicate an existing Docker container in Portainer to create a copy with the same configuration for scaling or testing purposes.
 

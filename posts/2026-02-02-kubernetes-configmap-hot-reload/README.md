@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, ConfigMaps, Hot-Reload, DevOps, Cloud Native, Configuration Management
+Tags: Kubernetes, ConfigMap, Hot-Reload, DevOps, Cloud Native, Configuration Management
 
 Description: A practical guide to implementing ConfigMap hot-reload in Kubernetes applications.
 

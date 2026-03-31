@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ClickHouse Keeper, Debugging, Operations, CLI
+Tags: ClickHouse, ClickHouse Keeper, Debugging, Operation, CLI
 
 Description: Learn how to use clickhouse-keeper-client to inspect, navigate, and debug the Keeper data tree directly, and how to diagnose common replication coordination issues.
 

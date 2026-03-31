@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, ANY, ALL, Subqueries, SQL Operators
+Tags: MySQL, Any, ALL, Subqueries, SQL Operators
 
 Description: Learn how to use the ANY and ALL operators in MySQL with subqueries to compare a value against a set of results using comparison operators.
 

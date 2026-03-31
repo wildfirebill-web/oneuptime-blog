@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, CE, Business Edition, Comparison, Enterprise, Features
+Tags: Portainer, CE, Business Edition, Comparison, Enterprise, Feature
 
 Description: A detailed comparison of Portainer Community Edition and Business Edition features to help you decide which tier is right for your organization's container management needs.
 

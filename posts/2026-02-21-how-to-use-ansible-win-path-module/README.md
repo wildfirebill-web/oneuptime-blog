@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Window, PATH, Environments, Automation
+Tags: Ansible, Window, PATH, Environment, Automation
 
 Description: Manage the Windows system PATH environment variable with the Ansible win_path module to add and remove directory entries cleanly.
 

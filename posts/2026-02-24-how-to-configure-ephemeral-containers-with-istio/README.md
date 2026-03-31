@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Ephemeral Containers, Debugging, Kubernetes, Sidecar
+Tags: Istio, Ephemeral Container, Debugging, Kubernetes, Sidecar
 
 Description: How to use Kubernetes ephemeral containers for debugging Istio-enabled pods including network troubleshooting and proxy diagnostics.
 

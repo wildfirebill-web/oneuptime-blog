@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Performance, Memory, CPU
+Tags: GCP, Cloud Function, Performance, Memory, CPU
 
 Description: Learn how to properly configure memory and CPU allocation for Google Cloud Functions to handle compute-intensive workloads like image processing, data transformation, and ML inference.
 

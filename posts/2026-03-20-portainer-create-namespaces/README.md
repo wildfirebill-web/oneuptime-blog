@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, Organizations, DevOps
+Tags: Portainer, Kubernetes, Namespace, Organization, DevOps
 
 Description: Learn how to create and configure Kubernetes namespaces in Portainer for organizing workloads and implementing multi-tenancy.
 

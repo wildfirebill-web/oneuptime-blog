@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, InnoDB, Buffer Pool, Performance, Internals
+Tags: MySQL, InnoDB, Buffer Pool, Performance, Internal
 
 Description: Understand how the InnoDB buffer pool caches data and index pages, manages the LRU list, and controls dirty page flushing for optimal performance.
 

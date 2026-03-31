@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Resilience, Microservices
+Tags: Java, Spring Boot, Resilience, Microservice
 
 Description: Implement fault tolerance in Spring Boot with Resilience4j circuit breakers, rate limiters, retry mechanisms, and bulkheads for resilient microservices.
 

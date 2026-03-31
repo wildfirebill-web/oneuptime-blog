@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Functions, HCL, Quick Reference, Infrastructure as Code
+Tags: OpenTofu, Function, HCL, Quick Reference, Infrastructure as Code
 
 Description: A quick reference for the most commonly used OpenTofu built-in functions for strings, collections, encoding, and more.
 

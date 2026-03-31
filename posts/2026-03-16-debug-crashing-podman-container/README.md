@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Debugging, Troubleshooting
+Tags: Podman, Container, DevOps, Debugging, Troubleshooting
 
 Description: Learn systematic techniques to debug crashing Podman containers, from log analysis and inspection to overriding entrypoints and using filesystem recovery.
 

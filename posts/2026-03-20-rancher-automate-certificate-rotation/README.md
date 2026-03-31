@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Certificates, TLS, Automation, Cert-Manager, Security
+Tags: Rancher, Certificate, TLS, Automation, Cert-Manager, Security
 
 Description: A guide to automating TLS certificate rotation in Rancher environments using cert-manager, RKE2 certificate rotation, and automated renewal workflows.
 

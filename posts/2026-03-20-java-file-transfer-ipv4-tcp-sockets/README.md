@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, TCP, IPv4, File Transfer, Sockets, Networking, I/O Streams
+Tags: Java, TCP, IPv4, File Transfer, Socket, Networking, I/O Streams
 
 Description: Implement a file transfer server and client in Java using TCP sockets over IPv4 with buffered I/O streams and progress reporting.
 

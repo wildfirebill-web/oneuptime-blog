@@ -1,6 +1,6 @@
 # How to Configure ClickHouse Multiple Disk Volumes
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, Storage, Disk, Tiering
 

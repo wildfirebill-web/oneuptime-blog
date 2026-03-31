@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, GitHub Actions, CI/CD, Testing
+Tags: OpenTelemetry, GitHub Action, CI/CD, Testing
 
 Description: Set up GitHub Actions CI pipelines that validate your OpenTelemetry instrumentation is working correctly before code reaches production.
 

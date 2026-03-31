@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Management, Monitoring
+Tags: Podman, Container, DevOps, Container Management, Monitoring
 
 Description: Learn how to list and view running containers in Podman with various output formats and filtering options.
 

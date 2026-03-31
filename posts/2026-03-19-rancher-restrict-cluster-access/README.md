@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Security, Role
+Tags: Rancher, Kubernetes, RBAC, Permission, Security, Role
 
 Description: Learn how to limit users to only the clusters they need in Rancher by configuring cluster-level role bindings and removing broad access.
 

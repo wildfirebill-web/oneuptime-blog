@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Dictionaries, Sorting, Data Structures, Best Practice
+Tags: Python, Dictionaries, Sorting, Data Structure, Best Practice
 
 Description: Learn multiple ways to sort dictionaries by their values in Python, including ascending, descending, and custom sorting with practical examples.
 

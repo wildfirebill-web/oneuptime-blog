@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, StatefulSets, High Availability, OpenTofu, Persistent Storage
+Tags: Kubernetes, StatefulSet, High Availability, OpenTofu, Persistent Storage
 
 Description: Learn how to deploy stateful applications with high availability using OpenTofu with Kubernetes StatefulSets, persistent volumes, pod disruption budgets, and leader election.
 

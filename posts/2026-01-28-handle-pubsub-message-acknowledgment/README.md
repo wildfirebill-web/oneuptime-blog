@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Google Pub/Sub, Google Cloud Pub/Sub, Acknowledgments, Messaging, Reliability
+Tags: Google Pub/Sub, Google Cloud Pub/Sub, Acknowledgment, Messaging, Reliability
 
 Description: Learn how Pub/Sub acknowledgments work, how to tune ack deadlines, handle retries, and design reliable consumers that avoid duplicate processing.
 

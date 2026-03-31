@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Functions, For Expressions, Collections, Infrastructure
+Tags: OpenTofu, Terraform, Function, For Expressions, Collection, Infrastructure
 
 Description: Learn how to transform lists of objects into maps using for expressions in OpenTofu, enabling for_each-based resource creation and efficient data lookups.
 

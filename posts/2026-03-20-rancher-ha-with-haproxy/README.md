@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, HAProxy, High Availability, Load Balancer, TCP, Networks
+Tags: Rancher, HAProxy, High Availability, Load Balancer, TCP, Network
 
 Description: Configure HAProxy as the front-end load balancer for Rancher HA with health checks, SSL passthrough, and statistics monitoring.
 

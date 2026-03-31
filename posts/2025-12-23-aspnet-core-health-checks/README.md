@@ -1,6 +1,6 @@
 # How to Configure Health Checks in ASP.NET Core
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: .NET, C#, ASP.NET Core, Health Check, Kubernetes, Monitoring, DevOps
 

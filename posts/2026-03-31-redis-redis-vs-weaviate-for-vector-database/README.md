@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Weaviate, Vector Database, Semantic Search, Embeddings
+Tags: Redis, Weaviate, Vector Database, Semantic Search, Embedding
 
 Description: Compare Redis and Weaviate as vector databases, covering schema design, query capabilities, multi-tenancy, and auto-vectorization features.
 

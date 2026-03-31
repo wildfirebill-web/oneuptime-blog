@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Instrumentation Scope, Tracing, Metrics, Logging, SDK, Versioning, Observability
+Tags: OpenTelemetry, Instrumentation Scope, Tracing, Metric, Logging, SDK, Versioning, Observability
 
 Description: Learn how to use OpenTelemetry's Instrumentation Scope to organize and filter telemetry data by instrumentation library name and version.
 

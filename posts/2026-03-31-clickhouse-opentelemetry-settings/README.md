@@ -1,6 +1,6 @@
 # How to Configure ClickHouse OpenTelemetry Settings
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, OpenTelemetry, Tracing, Observability
 

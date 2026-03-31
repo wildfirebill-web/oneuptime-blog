@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Changelog, Release Management, Automation, DevOps
+Tags: GitHub Action, CI/CD, Changelog, Release Management, Automation, DevOps
 
 Description: Learn how to automatically generate changelogs in GitHub Actions using conventional commits, release-please, and custom scripts.
 

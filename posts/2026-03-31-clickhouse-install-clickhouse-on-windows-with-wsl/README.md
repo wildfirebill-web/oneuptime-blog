@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Windows, WSL, Installation, Development
+Tags: ClickHouse, Window, WSL, Installation, Development
 
 Description: How to install and run ClickHouse on Windows using WSL2 with Ubuntu, including port forwarding and persistent storage setup.
 

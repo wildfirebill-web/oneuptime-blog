@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provider, Ephemeral Values, Secrets, Infrastructure as Code, DevOps
+Tags: OpenTofu, Provider, Ephemeral Values, Secret, Infrastructure as Code, DevOps
 
 Description: A guide to configuring OpenTofu providers using ephemeral values to avoid storing provider credentials in state.
 

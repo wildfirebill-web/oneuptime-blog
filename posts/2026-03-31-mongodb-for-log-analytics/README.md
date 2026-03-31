@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Logging, Analytics, Time-series, Aggregation
+Tags: MongoDB, Logging, Analytics, Time-Series, Aggregation
 
 Description: Learn how to store, query, and analyze application and infrastructure logs in MongoDB with time-series collections, capped collections, and aggregation pipelines.
 

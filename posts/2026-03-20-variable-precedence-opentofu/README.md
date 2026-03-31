@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Precedence, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Precedence, Infrastructure as Code, DevOps
 
 Description: A comprehensive guide to understanding how OpenTofu resolves variable values when multiple sources provide the same variable.
 

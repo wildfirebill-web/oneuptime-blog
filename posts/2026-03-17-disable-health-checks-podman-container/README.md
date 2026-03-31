@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Check, Configuration
+Tags: Podman, Container, DevOps, Health Check, Configuration
 
 Description: Learn how to disable health checks for Podman containers, whether defined in the image or at runtime.
 

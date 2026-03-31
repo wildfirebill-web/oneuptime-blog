@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Array, Aggregation, Zip, Pipeline
+Tags: MongoDB, Array, Aggregation, ZIP, Pipeline
 
 Description: Learn how to zip two arrays together in MongoDB aggregation using $zip to create paired sub-arrays from parallel array fields.
 

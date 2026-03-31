@@ -1,6 +1,6 @@
 # How to Monitor Health Check Status in Istio Mesh
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Health Check, Monitoring, Prometheus, Kubernetes
 

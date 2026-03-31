@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Metrics, Performance
+Tags: Kubernetes, Metric, Performance
 
 Description: Learn how to query and analyze Kubernetes API server metrics to diagnose performance bottlenecks, identify slow endpoints, and optimize your cluster for better scalability and reliability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Rotation, Security
+Tags: Podman, Container, DevOps, Secret, Rotation, Security
 
 Description: Learn how to rotate secrets in Podman to maintain security by regularly updating credentials and sensitive data.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Cloud, Microservices, Resilience, Circuit Breaker
+Tags: Java, Spring Cloud, Microservice, Resilience, Circuit Breaker
 
 Description: A hands-on guide to building fault-tolerant microservices with Spring Cloud, covering circuit breakers, retries, rate limiters, and bulkheads with working code examples.
 

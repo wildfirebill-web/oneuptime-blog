@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, iSCSI, Windows, Block Storage
+Tags: Rook, Ceph, iSCSI, Window, Block Storage
 
 Description: Learn how to connect Windows Server clients to Ceph storage via iSCSI, including initiator setup, disk discovery, and CHAP authentication.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics
+Tags: Calico, Kubernetes, Networking, Diagnostic
 
 Description: Avoid common mistakes in Calico cluster diagnostics including skipping calicoctl cluster diags before remediation, misreading TigeraStatus, ignoring IPAM utilization trends, and treating all...
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Dependencies, Architecture, Development
+Tags: Feature Flag, Dependencies, Architecture, Development
 
 Description: Learn how to manage dependencies between feature flags effectively.
 

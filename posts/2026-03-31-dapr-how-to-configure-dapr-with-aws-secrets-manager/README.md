@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, AWS, Secrets Manager, Security, Microservices
+Tags: Dapr, AWS, Secrets Manager, Security, Microservice
 
 Description: Learn how to configure Dapr to use AWS Secrets Manager as a secret store so your microservices can securely retrieve secrets without hardcoding credentials.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, CLI, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, CLI, Infrastructure as Code, DevOps
 
 Description: A guide to passing OpenTofu variable values directly on the command line using the -var flag.
 

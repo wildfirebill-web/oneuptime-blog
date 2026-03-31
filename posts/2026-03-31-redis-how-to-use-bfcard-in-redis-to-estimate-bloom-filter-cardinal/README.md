@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bloom Filter, RedisBloom, Commands, NoSql
+Tags: Redis, Bloom Filter, RedisBloom, Command, NoSQL
 
 Description: Learn how to use BF.CARD in Redis to estimate the number of unique items inserted into a Bloom filter without scanning all members.
 

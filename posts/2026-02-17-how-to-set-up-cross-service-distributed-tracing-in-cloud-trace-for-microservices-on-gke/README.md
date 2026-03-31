@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Trace, GKE, Microservices, Distributed Tracing
+Tags: GCP, Cloud Trace, GKE, Microservice, Distributed Tracing
 
 Description: A complete guide to implementing distributed tracing across multiple microservices running on GKE, with trace context propagation and Cloud Trace integration.
 

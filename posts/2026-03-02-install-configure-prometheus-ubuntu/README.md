@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Monitoring, Prometheus, Metrics, DevOps
+Tags: Ubuntu, Monitoring, Prometheus, Metric, DevOps
 
 Description: Complete guide to installing and configuring Prometheus on Ubuntu for collecting and storing time-series metrics from servers and applications.
 

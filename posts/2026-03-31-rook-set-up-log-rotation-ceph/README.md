@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Log Rotation, Disk Management, Operations, Logging
+Tags: Rook, Ceph, Log Rotation, Disk Management, Operation, Logging
 
 Description: Configure log rotation for Ceph daemons running in Rook to prevent log files from consuming excessive disk space on Kubernetes nodes.
 

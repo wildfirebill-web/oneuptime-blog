@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, GraphiteMergeTree, Engine, Metrics, Time Series, Rollup
+Tags: ClickHouse, SQL, GraphiteMergeTree, Engine, Metric, Time Series, ROLLUP
 
 Description: Learn how to use GraphiteMergeTree in ClickHouse to store and automatically roll up Graphite-compatible time-series metrics with configurable retention and aggregation rules.
 

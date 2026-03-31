@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, New Relic, Monitoring, Alerts, Infrastructure as Code
+Tags: Terraform, New Relic, Monitoring, Alert, Infrastructure as Code
 
 Description: Learn how to create New Relic alert policies and conditions using Terraform for consistent, version-controlled observability alerting.
 

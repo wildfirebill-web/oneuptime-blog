@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, Multi-Tenancy, RBAC, Access Control
+Tags: Portainer, Kubernetes, Namespace, Multi-Tenancy, RBAC, Access Control
 
 Description: Learn how to implement namespace-based multi-tenancy in Portainer for Kubernetes environments, giving each team isolated access to their own namespace.
 

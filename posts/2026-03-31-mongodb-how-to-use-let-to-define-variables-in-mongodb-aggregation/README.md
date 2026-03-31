@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $let, Variables, Pipeline Optimization
+Tags: MongoDB, Aggregation, $let, Variable, Pipeline Optimization
 
 Description: Learn how to use $let to define reusable variables in MongoDB aggregation expressions to simplify complex calculations and avoid repetition.
 

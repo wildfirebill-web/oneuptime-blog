@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Team Collaboration, DevOps, Infrastructure as Code
+Tags: Terraform, Variable, Team Collaboration, DevOps, Infrastructure as Code
 
 Description: Implement scalable Terraform variable management strategies that enable multiple teams to collaborate effectively without stepping on each other's configurations.
 

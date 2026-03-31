@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, Dapr, Microservices, Distributed Systems, Kubernetes, Service Mesh
+Tags: .NET, C#, Dapr, Microservice, Distributed System, Kubernetes, Service Mesh
 
 Description: Learn how to build resilient microservices using Dapr with .NET. This guide covers service invocation, pub/sub messaging, state management, and observability patterns.
 

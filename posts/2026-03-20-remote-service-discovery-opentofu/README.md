@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Service Discovery, Remote Backend, Protocol, Internals, Infrastructure as Code
+Tags: OpenTofu, Service Discovery, Remote Backend, Protocol, Internal, Infrastructure as Code
 
 Description: Learn how OpenTofu discovers remote services - the .well-known/terraform.json protocol that enables registry API discovery, remote backend connectivity, and authentication service endpoints.
 

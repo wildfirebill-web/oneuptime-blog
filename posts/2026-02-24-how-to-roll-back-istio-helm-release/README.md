@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Helm, Rollback, Kubernetes, Operations
+Tags: Istio, Helm, Rollback, Kubernetes, Operation
 
 Description: Practical guide to rolling back Istio Helm releases when upgrades or configuration changes go wrong, with step-by-step procedures and recovery verification.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Actors, Shopping Cart, State Management, Microservices
+Tags: Dapr, Actor, Shopping Cart, State Management, Microservice
 
 Description: Learn how to implement a shopping cart using Dapr virtual actors, providing per-user isolated state management with automatic concurrency control.
 

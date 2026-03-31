@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Dynamodb, Dax, Caching, Aws
+Tags: Redis, DynamoDB, DAX, Caching, AWS
 
 Description: Compare Redis and Amazon DynamoDB Accelerator (DAX) for caching DynamoDB data, covering compatibility, latency, cost, and use case fit.
 

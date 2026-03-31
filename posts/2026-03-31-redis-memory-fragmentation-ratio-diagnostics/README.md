@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Fragmentation, Diagnostics
+Tags: Redis, Memory, Fragmentation, Diagnostic
 
 Description: Interpret Redis mem_fragmentation_ratio values to diagnose memory fragmentation, distinguish it from real memory growth, and decide when to defragment.
 

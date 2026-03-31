@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Automation, DevOps, Configuration Management, Troubleshooting, Variables
+Tags: Ansible, Automation, DevOps, Configuration Management, Troubleshooting, Variable
 
 Description: Learn how to diagnose and fix undefined variable errors in Ansible playbooks with practical examples and debugging techniques.
 

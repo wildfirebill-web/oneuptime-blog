@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Services, Networking, DevOps
+Tags: Portainer, Kubernetes, Service, Networking, DevOps
 
 Description: Learn how to create, edit, and delete Kubernetes Services in Portainer to expose your applications within the cluster or to external traffic.
 

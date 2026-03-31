@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, IPv6, Services, Nginx, Apache, Deployment, Automation
+Tags: Ansible, IPv6, Service, Nginx, Apache, Deployment, Automation
 
 Description: A guide to deploying IPv6-enabled services (nginx, Apache, SSH) on Linux servers using Ansible, ensuring services bind to IPv6 addresses.
 

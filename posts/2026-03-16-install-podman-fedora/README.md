@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, Fedora
+Tags: Podman, Installation, Linux, Container, DevOps, Fedora
 
 Description: A step-by-step guide to installing Podman on Fedora, including configuration and running your first container.
 

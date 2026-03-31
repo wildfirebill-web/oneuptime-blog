@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Vercel, Serverless, Edge Functions, Next.js
+Tags: IPv6, Vercel, Serverless, Edge Function, Next.js
 
 Description: Understand IPv6 support for Vercel serverless and edge functions, handle IPv6 client addresses, and configure IPv6-aware routing in Next.js applications.
 

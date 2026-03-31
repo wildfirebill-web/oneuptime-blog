@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Matrix Builds, Testing, DevOps, Automation
+Tags: GitHub Action, CI/CD, Matrix Builds, Testing, DevOps, Automation
 
 Description: Learn how to configure matrix builds in GitHub Actions to test your code across multiple versions, operating systems, and configurations simultaneously.
 

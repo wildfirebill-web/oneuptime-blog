@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OSPF, Debug, Troubleshooting, FRR, Cisco, Routing, IPv4, Diagnostics
+Tags: OSPF, Debug, Troubleshooting, FRR, Cisco, Routing, IPv4, Diagnostic
 
 Description: Learn how to use OSPF debug commands to diagnose adjacency failures, LSA flooding issues, and SPF recalculation problems on FRR and Cisco routers.
 

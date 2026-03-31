@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted set, ZREMRANGEBYRANK, Command
+Tags: Redis, Sorted Set, ZREMRANGEBYRANK, Command
 
 Description: Learn how to use ZREMRANGEBYRANK in Redis to remove members within a rank range, useful for capping leaderboard sizes and trimming sorted sets.
 

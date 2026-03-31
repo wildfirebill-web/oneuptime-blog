@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Exec, Working Directory
+Tags: Podman, Container, DevOps, Container Exec, Working Directory
 
 Description: Learn how to set the working directory when executing commands inside Podman containers using the -w flag for precise command execution context.
 

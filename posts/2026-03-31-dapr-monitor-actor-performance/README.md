@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Actor, Monitoring, Prometheus, Metrics
+Tags: Dapr, Actor, Monitoring, Prometheus, Metric
 
 Description: Monitor Dapr actor performance using Prometheus metrics and Grafana dashboards to track active actor counts, method latency, and state store operation rates.
 

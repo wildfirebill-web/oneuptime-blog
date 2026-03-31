@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Python, CI/CD, Testing, DevOps, Automation
+Tags: GitHub Action, Python, CI/CD, Testing, DevOps, Automation
 
 Description: Learn how to build a comprehensive Python CI pipeline with GitHub Actions. This guide covers testing, linting, type checking, code coverage, and dependency caching for faster builds.
 

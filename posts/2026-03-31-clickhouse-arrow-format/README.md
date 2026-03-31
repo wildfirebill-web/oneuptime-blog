@@ -1,6 +1,6 @@
 # How to Use Arrow Format in ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Arrow, Data Engineering, Analytics
 

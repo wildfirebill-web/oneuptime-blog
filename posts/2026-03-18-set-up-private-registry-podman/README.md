@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Private Registry, Self-Hosted
+Tags: Podman, Container, DevOps, Registry, Private Registry, Self-Hosted
 
 Description: Step-by-step instructions for setting up and running your own private container registry using Podman.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Kotlin, JDBC, Coroutines, Analytics
+Tags: ClickHouse, Kotlin, JDBC, Coroutine, Analytics
 
 Description: Connect to ClickHouse from Kotlin using the JDBC driver with coroutines for async query execution in JVM analytics applications.
 

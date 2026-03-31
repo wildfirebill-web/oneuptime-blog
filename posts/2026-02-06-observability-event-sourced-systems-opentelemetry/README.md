@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Event Sourcing, Observability, Distributed Tracing, Metrics, CQRS, Microservices
+Tags: OpenTelemetry, Event Sourcing, Observability, Distributed Tracing, Metric, CQRS, Microservice
 
 Description: A practical guide to instrumenting event-sourced systems with OpenTelemetry for tracing event flows, projections, and replays across your architecture.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, PromQL, Metrics, Monitoring, Grafana
+Tags: Prometheus, PromQL, Metric, Monitoring, Grafana
 
 Description: Learn how to filter Prometheus queries based on values from another metric using vector matching, subqueries, and label joins. This guide covers common patterns for conditional metric filtering.
 

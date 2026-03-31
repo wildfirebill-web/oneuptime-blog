@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Docker Compose, Migration
+Tags: Podman, Container, DevOps, Pod, Docker Compose, Migration
 
 Description: Learn how to migrate a Docker Compose application to Podman pods for a daemonless container experience.
 

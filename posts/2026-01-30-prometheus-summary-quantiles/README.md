@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Prometheus, Summary, Quantile, Metrics
+Tags: Prometheus, Summary, Quantile, Metric
 
 Description: Learn to implement Prometheus summary metrics with quantile calculation, configurable objectives, and comparison with histograms.
 

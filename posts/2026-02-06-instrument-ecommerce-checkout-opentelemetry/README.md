@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, E-Commerce, Distributed Tracing, Checkout, Observability, Node.js, Microservices
+Tags: OpenTelemetry, E-Commerce, Distributed Tracing, Checkout, Observability, Node.js, Microservice
 
 Description: Learn how to instrument an e-commerce checkout flow end-to-end with OpenTelemetry, covering cart validation, payment, inventory, and order confirmation across microservices.
 

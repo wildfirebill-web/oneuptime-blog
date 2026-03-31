@@ -1,6 +1,6 @@
 # How to Use Topology-Based Provisioning with External Clusters in Rook
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Architecture, ARM, Multi-Platform
+Tags: Podman, Container, Architecture, ARM, Multi-Platform
 
 Description: Learn how to fix the 'exec format error' in Podman caused by running containers built for a different CPU architecture, and how to build and run multi-architecture images.
 

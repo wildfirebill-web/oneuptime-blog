@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Nodemon, Development, Productivity, Tools
+Tags: NodeJS, Nodemon, Development, Productivity, Tool
 
 Description: Learn how to use Nodemon for automatic server restart during development in Node.js with configuration options and best practices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Actix, WebSocket, Real-Time, Actors, Performance
+Tags: Rust, Actix, WebSocket, Real-Time, Actor, Performance
 
 Description: Learn how to build high-performance WebSocket servers in Rust using Actix-web and the actor model for real-time applications like chat, notifications, and live updates.
 

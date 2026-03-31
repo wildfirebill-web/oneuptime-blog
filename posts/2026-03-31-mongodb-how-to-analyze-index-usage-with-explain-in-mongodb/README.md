@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, explain, Query Analysis, Performance
+Tags: MongoDB, Index, EXPLAIN, Query Analysis, Performance
 
 Description: Learn how to use explain() in MongoDB to analyze whether queries use indexes, understand execution plans, and identify performance bottlenecks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, CLI, Modules
+Tags: OpenTofu, Terraform, Infrastructure as Code, CLI, Module
 
 Description: Learn how to use tofu get to download and update modules referenced in your OpenTofu configuration.
 

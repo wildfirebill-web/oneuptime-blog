@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Composition, Infrastructure as Code, Reusability, Architecture, Best Practice
+Tags: OpenTofu, Module, Composition, Infrastructure as Code, Reusability, Architecture, Best Practice
 
 Description: Learn how to compose complex infrastructure from reusable OpenTofu modules using composition patterns that promote DRY principles and team-scale infrastructure management.
 

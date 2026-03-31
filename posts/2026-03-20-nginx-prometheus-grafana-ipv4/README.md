@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, Prometheus, Grafana, IPv4, Monitoring, Metrics
+Tags: Nginx, Prometheus, Grafana, IPv4, Monitoring, Metric
 
 Description: Export Nginx connection and request metrics to Prometheus using nginx-prometheus-exporter, scrape with Prometheus, and build Grafana dashboards for connection monitoring.
 

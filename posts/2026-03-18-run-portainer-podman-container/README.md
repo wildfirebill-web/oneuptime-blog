@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Podman, Containers, Container Management, Linux, DevOps, Web UI
+Tags: Portainer, Podman, Container, Container Management, Linux, DevOps, Web UI
 
 Description: Deploy Portainer inside a Podman container to get a web-based GUI for managing your containers, images, volumes, and networks without memorizing CLI commands.
 

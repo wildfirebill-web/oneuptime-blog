@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, CDC, Timestamp, Incremental
+Tags: Data Pipeline, CDC, Timestamp, Incremental
 
 Description: Learn to build timestamp-based CDC for detecting changes using modified timestamp columns.
 

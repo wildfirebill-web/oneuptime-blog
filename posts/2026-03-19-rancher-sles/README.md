@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, SLES, Docker, Kubernetes, Installation
+Tags: Rancher, SLE, Docker, Kubernetes, Installation
 
 Description: A complete guide to installing Rancher on SUSE Linux Enterprise Server 15 using Docker, including subscription management and enterprise configuration.
 

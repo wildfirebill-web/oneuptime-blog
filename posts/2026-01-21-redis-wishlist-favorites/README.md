@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, E-Commerce, Wishlist, Favorites, User Preferences, Data Structures
+Tags: Redis, E-Commerce, Wishlist, Favorites, User Preferences, Data Structure
 
 Description: A comprehensive guide to implementing wishlist and favorites functionality with Redis for e-commerce applications including saved items, collections, and sharing features.
 

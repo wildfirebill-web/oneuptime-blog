@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ruby on Rails, Active Record, Association, Database, ORM
+Tags: Ruby On Rail, Active Record, Association, Database, ORM
 
 Description: Learn how to use Active Record associations effectively with belongs_to, has_many, has_many through, polymorphic associations, and eager loading.
 

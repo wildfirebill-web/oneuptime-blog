@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Lifecycle, Signals
+Tags: Podman, Container, DevOps, Container Lifecycle, Signal
 
 Description: Learn how to send specific signals to container processes in Podman using the kill command for graceful shutdowns, config reloads, and process management.
 

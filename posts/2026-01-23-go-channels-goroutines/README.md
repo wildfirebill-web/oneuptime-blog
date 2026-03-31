@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Channels, Goroutines, Concurrency, Communication
+Tags: Go, Golang, Channel, Goroutines, Concurrency, Communication
 
 Description: Learn how to use channels effectively in Go for safe communication between goroutines, including buffered channels, select, and common patterns.
 

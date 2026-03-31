@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, None-network, IPv4, Containers, Security
+Tags: Docker, Networking, None-network, IPv4, Container, Security
 
 Description: Use Docker's none network mode to create fully isolated containers, then manually configure IPv4 networking for precise control over container network namespaces.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Linux, Resource Limits, Performance Tuning
+Tags: Ansible, Linux, Resource Limit, Performance Tuning
 
 Description: Learn how to configure user resource limits (ulimit) with Ansible using limits.conf, systemd overrides, and PAM for production workloads.
 

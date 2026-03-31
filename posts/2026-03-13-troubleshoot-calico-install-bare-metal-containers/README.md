@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Containers, Troubleshooting
+Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Container, Troubleshooting
 
 Description: A diagnostic guide for resolving Calico installation failures on bare metal Kubernetes clusters running containerized workloads.
 

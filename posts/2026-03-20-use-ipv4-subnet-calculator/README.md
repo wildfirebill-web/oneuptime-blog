@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Subnetting, Networking, Tools, CIDR
+Tags: IPv4, Subnetting, Networking, Tool, CIDR
 
 Description: IPv4 subnet calculators automate the computation of network address, broadcast address, host range, and subnet mask from CIDR notation, available as web tools, CLI utilities, and Python libraries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Logs, Search, Filtering
+Tags: Portainer, Docker, Log, Search, Filtering
 
 Description: Filter Docker container logs in Portainer by time range, line count, or search terms to find relevant log entries quickly.
 

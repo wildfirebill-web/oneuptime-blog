@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Matchmaking, Gaming, Sorted Sets, Queue
+Tags: Redis, Matchmaking, Gaming, Sorted Set, Queue
 
 Description: Build a skill-based player matchmaking queue with Redis Sorted Sets to match players of similar skill levels with configurable wait time tolerance.
 

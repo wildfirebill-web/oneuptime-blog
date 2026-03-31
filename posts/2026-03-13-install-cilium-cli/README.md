@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, CLI, Kubernetes, Tools
+Tags: Cilium, CLI, Kubernetes, Tool
 
 Description: How to install the Cilium CLI tool on various operating systems and use it to install, manage, and troubleshoot Cilium on Kubernetes clusters.
 

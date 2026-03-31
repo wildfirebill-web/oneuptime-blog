@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Desktop, Dev Environment, Development, Containers, DevOps
+Tags: Docker, Docker Desktop, Dev Environment, Development, Container, DevOps
 
 Description: Learn how to use Docker Desktop Dev Environments to create reproducible, shareable development setups for your team.
 

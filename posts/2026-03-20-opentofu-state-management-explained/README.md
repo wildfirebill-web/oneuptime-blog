@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, State Management, Concepts, Education, Infrastructure as Code
+Tags: OpenTofu, State Management, Concept, Education, Infrastructure as Code
 
 Description: Understand how OpenTofu state works, why it exists, and how to manage it safely in team environments.
 

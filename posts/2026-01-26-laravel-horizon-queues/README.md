@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Laravel, Horizon, Queue Management, Redis, PHP, Background Jobs, Monitoring
+Tags: Laravel, Horizon, Queue Management, Redis, PHP, Background Job, Monitoring
 
 Description: A complete guide to installing, configuring, and using Laravel Horizon for managing and monitoring your Redis queues in production.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman Desktop, Containers, Images, Development
+Tags: RHEL, Podman Desktop, Container, Image, Development
 
 Description: Use Podman Desktop on RHEL to pull, build, inspect, and manage container images through its graphical interface and integrated tools.
 

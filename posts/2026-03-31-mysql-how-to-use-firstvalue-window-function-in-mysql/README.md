@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, First Value, Window Functions, Sql, Analytics
+Tags: MySQL, First Value, Window Function, SQL, Analytics
 
 Description: Learn how to use MySQL's FIRST_VALUE() window function to retrieve the first value in an ordered window frame for comparison and gap analysis.
 

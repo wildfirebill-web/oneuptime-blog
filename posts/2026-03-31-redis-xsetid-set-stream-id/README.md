@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, XSETID, Stream, Data structure
+Tags: Redis, XSETID, Stream, Data Structure
 
 Description: Learn how to use XSETID in Redis to manually set the last entry ID of a stream, controlling auto-increment behavior and enabling stream state restoration.
 

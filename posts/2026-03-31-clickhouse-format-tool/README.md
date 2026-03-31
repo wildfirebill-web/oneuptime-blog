@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Formatting, CLI, Developer Tools, Code Quality
+Tags: ClickHouse, SQL, Formatting, CLI, Developer Tool, Code Quality
 
 Description: Use clickhouse-format to automatically format and pretty-print ClickHouse SQL queries for consistent code style in migrations, documentation, and code review.
 

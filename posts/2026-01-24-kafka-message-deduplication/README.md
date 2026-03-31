@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Deduplication, Idempotency, Exactly-Once, Message Queues, Java, Backend, Reliability
+Tags: Kafka, Deduplication, Idempotency, Exactly-Once, Message Queue, Java, Backend, Reliability
 
 Description: Learn strategies for handling message deduplication in Apache Kafka, including idempotent producers, exactly-once semantics, and consumer-side deduplication patterns.
 

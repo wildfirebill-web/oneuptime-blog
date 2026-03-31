@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Ops Agent, Cloud Monitoring, Cloud Logging, Custom Metrics, Google Cloud
+Tags: GCP, Ops Agent, Cloud Monitoring, Cloud Logging, Custom Metric, Google Cloud
 
 Description: Learn how to configure the Google Cloud Ops Agent to collect custom application logs and metrics from Compute Engine instances.
 

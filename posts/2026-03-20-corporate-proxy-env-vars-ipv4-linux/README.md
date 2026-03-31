@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Proxy, IPv4, Environment Variables, Corporate, HTTP
+Tags: Linux, Proxy, IPv4, Environment Variable, Corporate, HTTP
 
 Description: Configure http_proxy, https_proxy, and no_proxy environment variables on Linux for IPv4 corporate proxy access, covering shell sessions, system-wide configuration, and tool-specific settings.
 

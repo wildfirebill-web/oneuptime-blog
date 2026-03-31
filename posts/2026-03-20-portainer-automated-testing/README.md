@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Automated Testing, CI/CD, Docker, Integration Tests, Smoke Tests
+Tags: Portainer, Automated Testing, CI/CD, Docker, Integration Test, Smoke Tests
 
 Description: Learn how to integrate automated tests into your Portainer deployment workflow using ephemeral test containers and health check verification.
 

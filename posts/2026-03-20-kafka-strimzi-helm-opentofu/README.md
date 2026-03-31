@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kafka, Strimzi, OpenTofu, Helm, Streaming, Message Queues
+Tags: Kubernetes, Kafka, Strimzi, OpenTofu, Helm, Streaming, Message Queue
 
 Description: Learn how to deploy Apache Kafka on Kubernetes using Strimzi Operator and OpenTofu for production-grade event streaming with KRaft mode, TLS, and automatic topic management.
 

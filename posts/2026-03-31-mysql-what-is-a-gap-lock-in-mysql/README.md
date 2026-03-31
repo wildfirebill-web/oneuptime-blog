@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Gap Lock, InnoDB, Locking, Transactions, Phantom Reads
+Tags: MySQL, Gap Lock, InnoDB, Locking, Transaction, Phantom Reads
 
 Description: Learn what a MySQL InnoDB gap lock is, when it is acquired, how it prevents phantom reads, and how it can cause unexpected deadlocks.
 

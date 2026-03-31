@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Grafana, Dashboard, Metrics, Visualization
+Tags: Dapr, Grafana, Dashboard, Metric, Visualization
 
 Description: Learn how to create custom Grafana dashboards for Dapr microservices with panels for request rates, latency distributions, error rates, and resiliency metrics.
 

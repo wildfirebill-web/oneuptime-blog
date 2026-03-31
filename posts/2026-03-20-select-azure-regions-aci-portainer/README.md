@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Azure, ACI, Regions, Cloud Infrastructure
+Tags: Portainer, Azure, ACI, Region, Cloud Infrastructure
 
 Description: Learn how to choose the appropriate Azure region for Azure Container Instances deployments in Portainer for performance and compliance.
 

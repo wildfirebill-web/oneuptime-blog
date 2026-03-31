@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TLS, SSL, Sslscan, Security, Certificates, Cipher Suites, Vulnerability Assessment
+Tags: TLS, SSL, Sslscan, Security, Certificate, Cipher Suites, Vulnerability Assessment
 
 Description: Learn how to use sslscan to audit TLS/SSL configuration on a server, identify weak cipher suites, deprecated protocol versions, and certificate issues.
 

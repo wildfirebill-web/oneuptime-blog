@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, Transaction, ACID, BEGIN, COMMIT, ROLLBACK, Database
+Tags: MySQL, SQL, Transaction, ACID, BEGIN, Commit, Rollback, Database
 
 Description: Learn how to use MySQL transactions with BEGIN, COMMIT, and ROLLBACK to ensure data integrity across multiple SQL statements.
 

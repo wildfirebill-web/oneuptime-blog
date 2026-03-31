@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Gaming, In-Game Economy, Transactions, Observability
+Tags: OpenTelemetry, Gaming, In-Game Economy, Transaction, Observability
 
 Description: Instrument your in-game economy system with OpenTelemetry to trace currency flows, marketplace trades, and loot drop calculations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, CLI, Pool, OSD, Operations, Storage
+Tags: Rook, Ceph, CLI, Pool, OSD, Operation, Storage
 
 Description: Create and configure Ceph storage pools using the ceph osd pool create command with correct PG counts, replication, and erasure coding settings.
 

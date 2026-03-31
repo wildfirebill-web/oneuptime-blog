@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Certificates, Cert-Manager, TLS, Automation, Kubernetes, Security
+Tags: Rancher, Certificate, Cert-Manager, TLS, Automation, Kubernetes, Security
 
 Description: Automate TLS certificate rotation in Rancher using cert-manager for application certificates, and built-in RKE2 mechanisms for Kubernetes component certificates, ensuring no certificate expiry...
 

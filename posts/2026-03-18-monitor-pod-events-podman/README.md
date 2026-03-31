@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Pods, Kubernetes
+Tags: Podman, Container, DevOps, Monitoring, Event, Pod, Kubernetes
 
 Description: Learn how to monitor pod events with Podman to track pod lifecycle changes and manage multi-container deployments effectively.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bloom Filter, Deduplication, Probabilistic Data Structures, Caching, Performance
+Tags: Redis, Bloom Filter, Deduplication, Probabilistic Data Structure, Caching, Performance
 
 Description: Learn how to use Redis Bloom Filters to efficiently detect duplicate data at scale.
 

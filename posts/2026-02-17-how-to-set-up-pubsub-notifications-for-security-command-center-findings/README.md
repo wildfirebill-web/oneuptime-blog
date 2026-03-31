@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Security Command Center, Pub/Sub, Cloud Security, Notifications
+Tags: GCP, Security Command Center, Pub/Sub, Cloud Security, Notification
 
 Description: Learn how to configure Pub/Sub notifications for Security Command Center findings in Google Cloud so your team gets alerted the moment new security issues are detected.
 

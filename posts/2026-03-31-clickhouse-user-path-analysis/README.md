@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Path Analysis, Funnel, User Journey, sequenceMatch
+Tags: ClickHouse, Path Analysis, Funnel, User Journey, SequenceMatch
 
 Description: Learn how to implement user path analysis in ClickHouse using sequenceMatch, groupArray, and funnel functions to understand user navigation patterns.
 

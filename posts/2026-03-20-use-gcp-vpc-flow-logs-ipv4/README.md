@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, VPC Flow Logs, IPv4, Monitoring, Networks, Cloud Logging
+Tags: GCP, VPC Flow Logs, IPv4, Monitoring, Network, Cloud Logging
 
 Description: Enable and analyze GCP VPC Flow Logs to monitor IPv4 traffic flows between VM instances, external endpoints, and Google services for security and performance analysis.
 

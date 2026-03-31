@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, SignalR, .NET, ASP.NET, Real-time
+Tags: Redis, SignalR, .NET, ASP.NET, Real-Time
 
 Description: Learn how to configure Redis as a SignalR backplane in ASP.NET Core to synchronize real-time messages across multiple server instances.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, API Gateway, Kubernetes, Service Mesh, Microservices
+Tags: Istio, API Gateway, Kubernetes, Service Mesh, Microservice
 
 Description: Learn how to implement the API gateway pattern using Istio's ingress gateway, virtual services, and destination rules for production microservices.
 

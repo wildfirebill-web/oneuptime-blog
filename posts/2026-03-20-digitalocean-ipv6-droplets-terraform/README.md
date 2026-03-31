@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DigitalOcean, Terraform, IPv6, Droplets, Networking, Cloud
+Tags: DigitalOcean, Terraform, IPv6, Droplet, Networking, Cloud
 
 Description: A guide to creating DigitalOcean Droplets with IPv6 networking enabled using Terraform, including DNS record management.
 

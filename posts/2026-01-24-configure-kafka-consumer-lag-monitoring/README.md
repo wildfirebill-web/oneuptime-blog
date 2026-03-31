@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Consumer Lag, Monitoring, Observability, Metrics, Prometheus, Grafana
+Tags: Kafka, Consumer Lag, Monitoring, Observability, Metric, Prometheus, Grafana
 
 Description: A practical guide to setting up comprehensive consumer lag monitoring for Apache Kafka using built-in tools, JMX metrics, and modern observability stacks.
 

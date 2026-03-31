@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, CI/CD, GitHub Actions, ECS, ECR, Infrastructure as Code
+Tags: OpenTofu, CI/CD, GitHub Action, ECS, ECR, Infrastructure as Code
 
 Description: Learn how to build the infrastructure for a CI/CD pipeline on AWS with OpenTofu, including ECR repositories, ECS deployment targets, IAM roles for GitHub Actions, and pipeline notifications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Graph Data, Data Modeling, Adjacency List, Social Networks
+Tags: Redis, Graph Data, Data Modeling, Adjacency List, Social Network
 
 Description: Learn how to model graph data structures in Redis using hashes, sets, and sorted sets to represent nodes, edges, and relationships efficiently.
 

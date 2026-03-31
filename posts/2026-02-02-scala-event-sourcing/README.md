@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Scala, Event Sourcing, Akka, CQRS, Distributed Systems, Domain-Driven Design, Persistence, Functional Programming
+Tags: Scala, Event Sourcing, Akka, CQRS, Distributed System, Domain-Driven Design, Persistence, Functional Programming
 
 Description: Learn how to implement event sourcing in Scala using Akka Persistence.
 

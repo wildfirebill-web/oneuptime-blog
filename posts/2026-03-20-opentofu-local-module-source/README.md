@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules
+Tags: OpenTofu, Terraform, IaC, Module
 
 Description: Learn how to reference and use local directory modules in OpenTofu for code organization and reuse within a project.
 

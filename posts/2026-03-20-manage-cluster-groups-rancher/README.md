@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Cluster Groups, Fleet, Kubernetes, Multi-Cluster, Organizations, Management
+Tags: Rancher, Cluster Groups, Fleet, Kubernetes, Multi-Cluster, Organization, Management
 
 Description: Learn how to organize Rancher-managed clusters into logical groups using Fleet cluster groups and labels to simplify policy application, monitoring, and workload targeting.
 

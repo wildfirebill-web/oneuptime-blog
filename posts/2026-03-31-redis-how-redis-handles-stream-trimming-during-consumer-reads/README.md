@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Consumer
+Tags: Redis, Stream, Consumer
 
 Description: Understand how Redis handles XADD MAXLEN trimming while consumers are actively reading, what happens to pending messages, and how to trim safely.
 

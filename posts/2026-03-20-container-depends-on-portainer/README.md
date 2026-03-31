@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Dependencies, Stacks, DevOps
+Tags: Portainer, Docker Compose, Dependencies, Stack, DevOps
 
 Description: Configure service startup dependencies and ordering in Portainer stacks using Docker Compose depends_on directives.
 

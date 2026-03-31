@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Scripting, Reporting, Cluster, Operations
+Tags: MongoDB, Scripting, Reporting, Cluster, Operation
 
 Description: Learn how to write a Python script that generates a comprehensive MongoDB cluster report covering storage, replication, connections, index usage, and top collections.
 

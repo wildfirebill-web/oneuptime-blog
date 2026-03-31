@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Slow Queries, Performance, Indexes, Explain
+Tags: MongoDB, Slow Queries, Performance, Index, EXPLAIN
 
 Description: Learn a step-by-step process to identify, analyze, and fix slow MongoDB queries using the profiler, explain plans, and index optimization.
 

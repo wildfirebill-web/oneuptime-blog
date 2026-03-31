@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Migration, Volumes, Storage
+Tags: Podman, Container, DevOps, Docker, Migration, Volumes, Storage
 
 Description: Learn how to migrate Docker volumes and their data to Podman volumes, ensuring no data is lost during the transition.
 

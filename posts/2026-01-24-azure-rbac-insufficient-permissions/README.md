@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, RBAC, Security, Permissions, IAM, Troubleshooting, Access Control
+Tags: Azure, RBAC, Security, Permission, IAM, Troubleshooting, Access Control
 
 Description: Learn how to diagnose and fix 'Insufficient Permissions' RBAC errors in Azure, including understanding role assignments, custom roles, and permission inheritance.
 

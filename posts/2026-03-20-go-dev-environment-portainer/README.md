@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Go, Golang, Development Environments, Docker, Air, Hot Reload
+Tags: Portainer, Go, Golang, Development Environment, Docker, Air, Hot Reload
 
 Description: Learn how to set up a Go development environment with live reload using Air in a Docker container managed by Portainer.
 

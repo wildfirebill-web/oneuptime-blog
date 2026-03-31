@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AKS, Istio, Service Mesh, Kubernetes, Traffic Management, Azure, Microservices
+Tags: AKS, Istio, Service Mesh, Kubernetes, Traffic Management, Azure, Microservice
 
 Description: Complete guide to installing and configuring Istio service mesh on AKS for traffic routing, canary deployments, circuit breaking, and observability.
 

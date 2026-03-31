@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Data Formats, Import Errors, Troubleshooting, ETL
+Tags: ClickHouse, Data Format, Import Errors, Troubleshooting, ETL
 
 Description: Fix ClickHouse 'Cannot read all data' format errors by identifying malformed input, adjusting format settings, and validating data before import.
 

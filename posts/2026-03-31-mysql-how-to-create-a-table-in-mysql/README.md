@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Schema Design, Sql
+Tags: MySQL, DDL, Schema Design, SQL
 
 Description: Learn how to create tables in MySQL using CREATE TABLE with data types, constraints, primary keys, and storage engine options.
 

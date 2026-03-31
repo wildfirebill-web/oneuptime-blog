@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Load Balancing, Nginx, HAProxy, Containers, Scaling
+Tags: Podman, Load Balancing, Nginx, HAProxy, Container, Scaling
 
 Description: Learn how to distribute traffic across multiple Podman containers using Nginx and HAProxy as load balancers, with health checks and different balancing algorithms.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Dictionaries, Lookup Tables, Performance, DDL
+Tags: ClickHouse, Dictionaries, Lookup Table, Performance, DDL
 
 Description: Learn how to create, configure, and use ClickHouse dictionaries for fast key-value lookups that join reference data without expensive JOIN operations.
 

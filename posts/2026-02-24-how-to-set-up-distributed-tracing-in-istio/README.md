@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Distributed Tracing, Observability, Envoy, Microservices
+Tags: Istio, Distributed Tracing, Observability, Envoy, Microservice
 
 Description: A complete guide to setting up distributed tracing in Istio from scratch, covering configuration, backends, and header propagation.
 

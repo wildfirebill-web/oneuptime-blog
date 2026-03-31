@@ -1,8 +1,8 @@
 # How to Monitor Shard Balancing in MongoDB
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sharding, Balancer, Monitoring, Operations
+Tags: MongoDB, Sharding, Balancer, Monitoring, Operation
 
 Description: Learn how to monitor MongoDB shard balancer activity, check chunk migration history, configure balancer windows, and diagnose balancing issues.
 

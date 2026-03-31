@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Websockets, Reconnection, Session State, Real-Time
+Tags: Redis, WebSocket, Reconnection, Session State, Real-Time
 
 Description: Handle WebSocket reconnections gracefully by persisting client session state and missed messages in Redis so clients can resume without data loss.
 

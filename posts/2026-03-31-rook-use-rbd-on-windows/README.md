@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, RBD, Windows, Block Storage
+Tags: Rook, Ceph, RBD, Window, Block Storage
 
 Description: Learn how to access Ceph RBD block storage from Windows clients using the Windows RBD driver and iSCSI gateway in Rook-Ceph environments.
 

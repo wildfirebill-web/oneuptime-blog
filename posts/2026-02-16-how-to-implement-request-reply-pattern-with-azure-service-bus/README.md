@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Service Bus, Request-Reply, Messaging Patterns, Async Communication, Cloud Architecture, Microservices
+Tags: Azure, Service Bus, Request-Reply, Messaging Patterns, Async Communication, Cloud Architecture, Microservice
 
 Description: Step-by-step guide to implementing the request-reply messaging pattern using Azure Service Bus queues with correlation and reply-to support.
 

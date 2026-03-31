@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Validation, Custom Conditions, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Validation, Custom Conditions, Infrastructure as Code, DevOps
 
 Description: A deep dive into writing effective custom validation conditions and error messages in OpenTofu variables.
 

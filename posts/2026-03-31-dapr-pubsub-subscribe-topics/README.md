@@ -1,8 +1,8 @@
 # How to Subscribe to Topics Using Dapr Pub/Sub
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Subscription, Event-driven, Microservice
+Tags: Dapr, Pub/Sub, Subscription, Event-Driven, Microservice
 
 Description: Subscribe to Dapr pub/sub topics using declarative YAML subscriptions and programmatic endpoints, process CloudEvents, and return the correct status codes.
 

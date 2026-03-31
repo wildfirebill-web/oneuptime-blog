@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, PIM-SSM, Multicast, Source-Specific Multicast, Networks
+Tags: IPv6, PIM-SSM, Multicast, Source-Specific Multicast, Network
 
 Description: A guide to configuring PIM-SSM (Source-Specific Multicast) for IPv6, enabling more efficient and secure multicast routing without a Rendezvous Point.
 

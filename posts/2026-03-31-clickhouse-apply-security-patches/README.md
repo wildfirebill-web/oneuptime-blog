@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Security, Patch, Administration, Upgrade, Operations
+Tags: ClickHouse, Security, PATCH, Administration, Upgrade, Operation
 
 Description: Learn how to identify, evaluate, and apply ClickHouse security patches safely with pre-patch checklists, rolling update procedures for replicated clusters, and post-patch verification steps.
 

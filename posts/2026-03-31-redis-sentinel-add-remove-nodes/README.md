@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sentinel, Operations, Configuration, High Availability
+Tags: Redis, Sentinel, Operation, Configuration, High Availability
 
 Description: Learn how to add new Sentinel processes and safely remove existing ones from a running Redis Sentinel setup without disrupting monitoring.
 

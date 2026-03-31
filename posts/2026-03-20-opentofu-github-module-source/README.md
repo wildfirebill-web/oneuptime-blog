@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, GitHub
+Tags: OpenTofu, Terraform, IaC, Module, GitHub
 
 Description: Learn how to use GitHub repositories as OpenTofu module sources with the github.com shorthand syntax.
 

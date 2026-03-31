@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Agent, TLS, Security, Certificates, Encryption
+Tags: Portainer, Agent, TLS, Security, Certificate, Encryption
 
 Description: Secure the communication channel between the Portainer server and Portainer Agent using mutual TLS (mTLS) with custom certificates.
 

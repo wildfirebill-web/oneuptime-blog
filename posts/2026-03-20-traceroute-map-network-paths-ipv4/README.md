@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Traceroute, IPv4, Networking, Diagnostics, Linux, Routing
+Tags: Traceroute, IPv4, Networking, Diagnostic, Linux, Routing
 
 Description: Use traceroute to map the path IPv4 packets take through the network, identify the number of hops, and pinpoint where connectivity breaks down.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Multi-Line Strings, Heredoc, Variables, HCL, Infrastructure as Code
+Tags: Terraform, Multi-Line Strings, Heredoc, Variable, HCL, Infrastructure as Code
 
 Description: Learn how to work with multi-line strings in Terraform using heredoc syntax, indented heredocs, and best practices for policies, scripts, and configuration blocks.
 

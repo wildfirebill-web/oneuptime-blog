@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, OSD, CPU, Resources, Pod
+Tags: Rook, Ceph, Kubernetes, OSD, CPU, Resource, Pod
 
 Description: Configure CPU requests and limits for Rook-Ceph OSD pods in Kubernetes to balance cluster performance, prevent CPU starvation during recovery, and control resource contention.
 

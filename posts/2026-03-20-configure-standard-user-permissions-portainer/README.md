@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, RBAC, Standard User, Permissions, Access Control
+Tags: Portainer, RBAC, Standard User, Permission, Access Control
 
 Description: Configure Standard User permissions in Portainer to allow users to manage their own containers and stacks within assigned environments.
 

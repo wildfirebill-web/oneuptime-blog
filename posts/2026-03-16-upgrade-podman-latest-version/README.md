@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps
+Tags: Podman, Installation, Linux, Container, DevOps
 
 Description: A complete guide to upgrading Podman to the latest version on any Linux distribution, macOS, and Windows, including pre-upgrade checks and post-upgrade verification.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Calicoctl, etcd, Monitoring, Prometheus, Alerts
+Tags: Calico, Calicoctl, etcd, Monitoring, Prometheus, Alert
 
 Description: Monitor your calicoctl etcd datastore configuration to detect connectivity issues, certificate expiration, and etcd cluster health problems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bash, Shell Scripting, Linux, Signals, Process Management, DevOps
+Tags: Bash, Shell Scripting, Linux, Signal, Process Management, DevOps
 
 Description: Learn how to use signal trapping in Bash scripts to handle interrupts, perform cleanup operations, and create robust shell applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Monorepo, Docker Compose, Multi-Service, Build Context, Microservices, DevOps
+Tags: Docker, Monorepo, Docker Compose, Multi-Service, Build Context, Microservice, DevOps
 
 Description: Learn how to organize Docker builds in a monorepo with shared libraries, efficient caching, and service-specific Dockerfiles.
 

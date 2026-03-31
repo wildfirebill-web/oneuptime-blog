@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Schema Design, IoT, Time Series, Data Modeling
+Tags: MongoDB, IoT, Schema Design, Time Series, Data Modeling
 
 Description: Learn how to design a MongoDB schema for an IoT dashboard including devices, telemetry time series, alerts, and aggregated metrics using the time series collection type.
 

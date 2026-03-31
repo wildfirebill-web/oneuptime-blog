@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, File Management, Container Recovery
+Tags: Podman, Container, DevOps, File Management, Container Recovery
 
 Description: Learn how to extract files from stopped or exited Podman containers using podman cp, podman mount, and podman export techniques.
 

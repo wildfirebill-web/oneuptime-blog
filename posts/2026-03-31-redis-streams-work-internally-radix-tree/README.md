@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Stream, Radix Tree, Internals, Performance
+Tags: Redis, Stream, Radix Tree, Internal, Performance
 
 Description: Explore how Redis streams use a radix tree of listpack nodes to store time-ordered entries efficiently, enabling scalable event log storage with compact memory.
 

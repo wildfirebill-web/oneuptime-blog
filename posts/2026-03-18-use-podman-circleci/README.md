@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CircleCI, CI/CD, Automation
+Tags: Podman, Container, DevOps, CircleCI, CI/CD, Automation
 
 Description: Learn how to set up and use Podman in CircleCI pipelines for building, testing, and pushing container images.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Microservices, Kubernetes, Service Mesh, Networking
+Tags: Istio, Microservice, Kubernetes, Service Mesh, Networking
 
 Description: A practical guide to setting up reliable microservices communication patterns using Istio's traffic management, load balancing, and service discovery features.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Descending Index, Indexes, Query Optimization
+Tags: MySQL, Descending Index, Index, Query Optimization
 
 Description: Descending indexes in MySQL 8.0 store index entries in descending order, eliminating costly filesort operations for queries that sort results in descending order.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Best Practice, Operations, Linux
+Tags: RHEL, Best Practice, Operation, Linux
 
 Description: Step-by-step guide on build a post-incident review checklist  outages using Red Hat Enterprise Linux 9.
 

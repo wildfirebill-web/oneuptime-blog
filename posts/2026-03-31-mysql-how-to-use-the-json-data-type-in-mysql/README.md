@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, JSON, Data Types, Database Design, NoSQL
+Tags: MySQL, JSON, Data Type, Database Design, NoSQL
 
 Description: Learn how to store, query, and manipulate JSON data in MySQL using the native JSON data type and its built-in functions.
 

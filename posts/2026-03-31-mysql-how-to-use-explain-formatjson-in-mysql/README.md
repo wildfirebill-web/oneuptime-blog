@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Query Optimization, Performance, Sql
+Tags: MySQL, Query Optimization, Performance, SQL
 
 Description: Learn how to use EXPLAIN FORMAT=JSON in MySQL to get detailed, structured execution plan data including cost estimates and optimizer decisions.
 

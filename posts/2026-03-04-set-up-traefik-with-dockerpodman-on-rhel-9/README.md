@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Proxy, Containers, Linux
+Tags: RHEL, Podman, Proxy, Container, Linux
 
 Description: Step-by-step guide on set up traefik with docker/podman using Red Hat Enterprise Linux 9.
 

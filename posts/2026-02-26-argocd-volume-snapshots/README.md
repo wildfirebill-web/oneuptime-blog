@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Storage, Volume Snapshots
+Tags: ArgoCD, GitOps, Kubernetes, Storage, Volume Snapshot
 
 Description: Learn how to manage Kubernetes volume snapshots declaratively using ArgoCD, including VolumeSnapshot resources, snapshot scheduling, and restore workflows in a GitOps pipeline.
 

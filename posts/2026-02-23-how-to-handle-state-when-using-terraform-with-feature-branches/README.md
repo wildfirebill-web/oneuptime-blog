@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, State Management, Git, Feature Branches, CI/CD, DevOps, Infrastructure as Code
+Tags: Terraform, State Management, Git, Feature Branch, CI/CD, DevOps, Infrastructure as Code
 
 Description: Learn how to manage Terraform state across feature branches without conflicts, including workspace strategies, ephemeral environments, and branch-based state isolation patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, HyperLogLog, Probabilistic, Cardinality, Internals
+Tags: Redis, HyperLogLog, Probabilistic, Cardinality, Internal
 
 Description: Learn how Redis HyperLogLog uses probabilistic counting to estimate set cardinality using only 12KB of memory, with at most 0.81% standard error.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, XRANGE, XREVRANGE, Stream Queries
+Tags: Redis, Stream, XRANGE, XREVRANGE, Stream Queries
 
 Description: Learn how to use XRANGE and XREVRANGE in Redis Streams to query messages by ID range in forward and reverse order with optional count limits.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, TLS, Certificates, Self-Signed, PKI, Internals, Infrastructure as Code
+Tags: OpenTofu, TLS, Certificate, Self-Signed, PKI, Internal, Infrastructure as Code
 
 Description: Learn how to generate self-signed TLS certificates and private keys using OpenTofu's TLS provider for internal services, development environments, and bootstrapping private PKI infrastructure.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Private Registry, Container Images, Security
+Tags: k3s, Kubernetes, Rancher, Private Registry, Container Image, Security
 
 Description: Learn how to configure K3s to pull container images from private registries, including authentication and TLS configuration.
 

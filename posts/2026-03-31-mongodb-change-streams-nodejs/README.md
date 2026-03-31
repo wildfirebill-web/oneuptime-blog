@@ -1,8 +1,8 @@
 # How to Use Change Streams with MongoDB Node.js Driver
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change stream, Node.js, Real-time, Event-driven
+Tags: MongoDB, Change Stream, Node.js, Real-Time, Event-Driven
 
 Description: Learn how to open, consume, and manage MongoDB change streams in Node.js, including error handling, resume tokens, and patterns for building reliable real-time applications.
 

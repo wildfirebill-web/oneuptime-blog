@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Streaming, Apache Kafka, Apache Flink, Exactly-Once, Data Processing, Event Streaming, Distributed Systems
+Tags: Streaming, Apache Kafka, Apache Flink, Exactly-Once, Data Processing, Event Streaming, Distributed System
 
 Description: Learn how to implement and fix exactly-once semantics in streaming systems using Kafka, Flink, and transactional patterns for reliable data processing.
 

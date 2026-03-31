@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Performance Monitoring, Metrics, Observability, Database Monitoring, Operations, DevOps
+Tags: MongoDB, Performance Monitoring, Metric, Observability, Database Monitoring, Operation, DevOps
 
 Description: A comprehensive guide to monitoring MongoDB performance, covering key metrics, built-in tools, external monitoring solutions, alerting strategies, and performance troubleshooting.
 

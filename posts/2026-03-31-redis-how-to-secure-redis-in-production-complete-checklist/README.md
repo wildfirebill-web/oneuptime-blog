@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Security, Production, Checklist, Best Practices
+Tags: Redis, Security, Production, Checklist, Best Practice
 
 Description: A complete security checklist for Redis in production, covering network isolation, authentication, TLS, ACLs, command restrictions, and monitoring.
 

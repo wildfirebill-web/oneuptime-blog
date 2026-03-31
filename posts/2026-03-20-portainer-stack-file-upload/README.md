@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Docker Compose, DevOps
+Tags: Portainer, Docker, Stack, Docker Compose, DevOps
 
 Description: Learn how to deploy Docker Compose stacks by uploading a file to Portainer, useful for air-gapped environments or quick one-off deployments.
 

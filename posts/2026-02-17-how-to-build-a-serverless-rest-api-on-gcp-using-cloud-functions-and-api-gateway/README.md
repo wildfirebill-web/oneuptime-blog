@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Serverless, REST API, Cloud Functions, API Gateway, Microservices
+Tags: GCP, Serverless, REST API, Cloud Function, API Gateway, Microservice
 
 Description: A practical guide to building a serverless REST API on Google Cloud using Cloud Functions for business logic and API Gateway for routing, authentication, and rate limiting.
 

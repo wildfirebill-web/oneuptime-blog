@@ -1,6 +1,6 @@
 # How to Configure Health Checks for External Secrets in ArgoCD
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ArgoCD, GitOps, Kubernetes, External Secrets, Health Check
 

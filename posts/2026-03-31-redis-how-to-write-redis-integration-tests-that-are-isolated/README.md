@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Integration Testing, Test Isolation, Pytest, Best Practices
+Tags: Redis, Integration Testing, Test Isolation, Pytest, Best Practice
 
 Description: Learn how to write isolated Redis integration tests using database selection, key prefixing, and per-test flush strategies to prevent state leakage.
 

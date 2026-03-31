@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Containers, Configuration
+Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Container, Configuration
 
 Description: A guide to configuring Calico's networking settings for a new Kubernetes cluster running containerized workloads on bare metal servers.
 

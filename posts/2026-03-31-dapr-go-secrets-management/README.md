@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Secret, Security, Microservice, Sdk
+Tags: Dapr, Go, Secret, Security, Microservice, SDK
 
 Description: Retrieve secrets from Vault, Kubernetes, AWS Secrets Manager, and other backends in Go using the Dapr secrets building block without hardcoding credentials.
 

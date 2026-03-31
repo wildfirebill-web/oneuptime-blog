@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, App Service, Logging, Diagnostics, Monitoring, Cloud Computing, Troubleshooting
+Tags: Azure, App Service, Logging, Diagnostic, Monitoring, Cloud Computing, Troubleshooting
 
 Description: Step-by-step instructions for enabling and configuring application logging and diagnostic tools on Azure App Service to debug issues faster.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, YAML, Migration
+Tags: Podman, Container, DevOps, Kubernetes, YAML, Migration
 
 Description: Learn how to generate Kubernetes-compatible YAML manifests from running Podman containers.
 

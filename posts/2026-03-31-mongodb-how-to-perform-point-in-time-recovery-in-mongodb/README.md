@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Backup, Recovery, Database Administration
+Tags: MongoDB, Backup, Recovery, Database Administration
 
 Description: Learn how to perform point-in-time recovery in MongoDB using oplog replay to restore a database to any specific moment after a full backup was taken.
 

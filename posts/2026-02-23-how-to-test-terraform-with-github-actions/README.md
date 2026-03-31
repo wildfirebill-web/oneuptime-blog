@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, GitHub Actions, CI/CD, Testing, DevOps, Automation
+Tags: Terraform, GitHub Action, CI/CD, Testing, DevOps, Automation
 
 Description: Learn how to set up comprehensive Terraform testing in GitHub Actions with formatting checks, validation, plan review, security scanning, and integration testing.
 

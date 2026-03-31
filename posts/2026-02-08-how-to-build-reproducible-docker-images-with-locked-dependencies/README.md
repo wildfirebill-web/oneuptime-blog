@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Images, Reproducible Builds, Dependencies, Lock File, DevOps, CI/CD
+Tags: Docker, Image, Reproducible Builds, Dependencies, Lock File, DevOps, CI/CD
 
 Description: Learn how to build Docker images that produce identical results every time by locking dependencies, pinning versions, and controlling build inputs.
 

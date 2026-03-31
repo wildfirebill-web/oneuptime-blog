@@ -1,10 +1,10 @@
-# How to Configure RBD Image Features in Rook
+# How to Configure RBD Image Features (Layering, Fast-Diff, Object-Map) in Rook
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Rbd, Image Features, Kubernetes, Block Storage
+Tags: Rook, Ceph, RBD, Image Features, Kubernetes, Block Storage
 
-Description: Configure RBD image features like layering, fast-diff, and object-map in Rook to control performance, snapshot efficiency, and kernel compatibility.
+Description: Learn which RBD image features to enable in Rook StorageClasses and how Layering, Fast-Diff, and Object-Map affect performance and compatibility.
 
 ---
 

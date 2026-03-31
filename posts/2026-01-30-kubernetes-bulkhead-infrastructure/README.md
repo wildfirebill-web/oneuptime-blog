@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kubernetes, Bulkhead Pattern, Microservices, Resilience, Infrastructure, Service Mesh, Istio
+Tags: Kubernetes, Bulkhead Pattern, Microservice, Resilience, Infrastructure, Service Mesh, Istio
 
 Description: Learn how to implement infrastructure-level bulkheads in Kubernetes using resource limits, network policies, and service mesh configurations to isolate failures and prevent cascading outages.
 

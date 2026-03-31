@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps, Rootful
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps, Rootful
 
 Description: Learn how to configure a Podman machine to run in rootful mode, enabling privileged container operations and binding to low-numbered ports.
 

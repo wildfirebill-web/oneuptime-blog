@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Debugging, Metrics, Prometheus, Kubernetes
+Tags: Flagger, Debugging, Metric, Prometheus, Kubernetes
 
 Description: Learn how to diagnose and resolve missing metrics issues that prevent Flagger canary analysis from proceeding.
 

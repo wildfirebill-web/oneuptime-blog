@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Sigstore, Cosign, Image Signing
+Tags: Podman, Container, DevOps, Security, Sigstore, Cosign, Image Signing
 
 Description: Learn how to sign and verify container images with Podman using Sigstore and cosign for keyless and key-based signing workflows.
 

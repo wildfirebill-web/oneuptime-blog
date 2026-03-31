@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Bicep, Modules, User-Defined Types, Validation, Infrastructure as Code, ARM Templates
+Tags: Azure, Bicep, Module, User-Defined Types, Validation, Infrastructure as Code, ARM Templates
 
 Description: Learn how to create robust Azure Bicep modules with user-defined types and parameter validation for type-safe and reusable infrastructure templates.
 

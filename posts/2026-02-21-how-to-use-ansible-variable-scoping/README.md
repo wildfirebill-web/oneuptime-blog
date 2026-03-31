@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Scoping, Best Practice
+Tags: Ansible, Variable, Scoping, Best Practice
 
 Description: Understand Ansible variable scoping rules across play, block, task, and role levels to avoid unexpected behavior and write predictable playbooks.
 

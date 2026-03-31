@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, Outbox Pattern, Entity Framework Core, Distributed Systems, Messaging, MassTransit, Event-Driven Architecture
+Tags: .NET, Outbox Pattern, Entity Framework Core, Distributed System, Messaging, MassTransit, Event-Driven Architecture
 
 Description: Learn how to implement the transactional outbox pattern in .NET using Entity Framework Core to ensure reliable message delivery in distributed systems.
 

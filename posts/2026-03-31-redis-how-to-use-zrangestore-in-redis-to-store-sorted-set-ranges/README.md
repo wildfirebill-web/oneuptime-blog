@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, ZRANGESTORE, Range Queries, Caching
+Tags: Redis, Sorted Set, ZRANGESTORE, Range Queries, Caching
 
 Description: Learn how to use ZRANGESTORE in Redis to extract a range from a sorted set and store the result in a new key for caching and further operations.
 

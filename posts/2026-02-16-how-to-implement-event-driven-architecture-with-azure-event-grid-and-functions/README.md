@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Event Grid, Azure Functions, Event-Driven Architecture, Serverless, Cloud Patterns, Messaging
+Tags: Azure, Event Grid, Azure Function, Event-Driven Architecture, Serverless, Cloud Patterns, Messaging
 
 Description: Build a scalable event-driven architecture using Azure Event Grid and Azure Functions with practical examples and real-world patterns.
 

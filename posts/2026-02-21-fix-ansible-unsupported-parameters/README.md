@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Troubleshooting, Modules, Parameters, DevOps
+Tags: Ansible, Troubleshooting, Module, Parameter, DevOps
 
 Description: Fix Ansible unsupported parameters errors caused by typos, version mismatches, and incorrect module usage in playbooks.
 

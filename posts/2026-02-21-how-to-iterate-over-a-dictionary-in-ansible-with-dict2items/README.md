@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Dictionaries, Jinja2 Filters
+Tags: Ansible, Loop, Dictionaries, Jinja2 Filters
 
 Description: Learn how to use the dict2items filter to iterate over dictionaries in Ansible loops with practical configuration management examples.
 

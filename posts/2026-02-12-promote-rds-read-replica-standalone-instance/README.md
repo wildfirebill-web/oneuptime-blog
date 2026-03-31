@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, RDS, Read Replicas, Database
+Tags: AWS, RDS, Read Replica, Database
 
 Description: Learn how to promote an RDS read replica to a standalone database instance, including when to use this feature and what happens during promotion.
 

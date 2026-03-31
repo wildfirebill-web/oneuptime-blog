@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Internals, Isolation, Security
+Tags: Podman, Container, DevOps, Networking, Internal, Isolation, Security
 
 Description: Learn how to create internal networks in Podman that allow container-to-container communication but block external access.
 

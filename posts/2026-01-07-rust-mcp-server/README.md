@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, MCP, Model Context Protocol, AI, LLM, Tools, Claude, JSON-RPC, Async
+Tags: Rust, MCP, Model Context Protocol, AI, LLM, Tool, Claude, JSON-RPC, Async
 
 Description: Learn how to build an MCP (Model Context Protocol) server in Rust.
 

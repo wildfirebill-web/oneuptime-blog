@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Deadlock, Database, Transactions, Locking
+Tags: MySQL, Deadlock, Database, Transaction, Locking
 
 Description: Learn how to identify, debug, and prevent MySQL deadlocks including analysis techniques, lock monitoring, and application-level solutions.
 

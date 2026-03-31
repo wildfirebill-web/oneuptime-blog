@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Environments, Automation
+Tags: GitHub Action, CI/CD, Environment, Automation
 
 Description: A comprehensive guide to building and managing environment files in GitHub Actions. Learn how to use GITHUB_ENV, GITHUB_OUTPUT, and GITHUB_STEP_SUMMARY for dynamic workflows.
 

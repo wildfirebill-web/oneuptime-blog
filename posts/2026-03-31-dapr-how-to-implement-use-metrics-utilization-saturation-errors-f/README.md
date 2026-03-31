@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Observability, Prometheus, USE Method, Metrics, SRE, Monitoring
+Tags: Dapr, Observability, Prometheus, USE Method, Metric, SRE, Monitoring
 
 Description: Learn how to apply the USE method to Dapr microservices by identifying and alerting on Utilization, Saturation, and Error metrics for Dapr sidecars and components.
 

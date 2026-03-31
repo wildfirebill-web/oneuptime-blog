@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Unit Testing, TDD, Development
+Tags: Feature Flag, Unit Testing, TDD, Development
 
 Description: Learn how to write effective unit tests for feature flag implementations.
 

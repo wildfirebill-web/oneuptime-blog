@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Manifest, Multi-Architecture
+Tags: Podman, Container, DevOps, Manifest, Multi-Architecture
 
 Description: Learn how to use podman manifest annotate to add metadata, platform details, and custom annotations to individual entries in a manifest list.
 

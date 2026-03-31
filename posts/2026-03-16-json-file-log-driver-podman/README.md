@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, JSON
+Tags: Podman, Container, DevOps, Logging, JSON
 
 Description: Learn how to configure and use the json-file log driver in Podman for Docker-compatible JSON log output, including log rotation and programmatic parsing.
 

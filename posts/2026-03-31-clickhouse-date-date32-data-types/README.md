@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Date, Date32
+Tags: ClickHouse, SQL, Data Type, Date, Date32
 
 Description: Learn the difference between Date and Date32 in ClickHouse, including storage, supported ranges, toDate() conversion, and practical table examples.
 

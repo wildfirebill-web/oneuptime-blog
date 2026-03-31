@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Sparse Data, Map, Nullable
+Tags: ClickHouse, SQL, Data Type, Sparse Data, Map, Nullable
 
 Description: Learn how to store sparse data in ClickHouse using Map types, Nullable columns, default values, and compression strategies for efficiency.
 

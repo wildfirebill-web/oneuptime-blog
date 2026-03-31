@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Sampling, Distributed Tracing, Microservices, Consistency, Observability
+Tags: OpenTelemetry, Sampling, Distributed Tracing, Microservice, Consistency, Observability
 
 Description: Set up consistent probability sampling so every service in your distributed system makes the same sampling decision for each trace.
 

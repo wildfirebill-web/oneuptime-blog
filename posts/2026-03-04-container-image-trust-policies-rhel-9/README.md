@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Containers, Trust Policies, Security, Linux
+Tags: RHEL, Container, Trust Policies, Security, Linux
 
 Description: Learn how to configure container image trust policies on RHEL to control which registries and images are trusted, rejected, or require signature verification.
 

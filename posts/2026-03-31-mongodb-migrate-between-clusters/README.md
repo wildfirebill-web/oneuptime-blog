@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Migration, Cluster, mongodump, Atlas
+Tags: MongoDB, Migration, Cluster, Mongodump, Atlas
 
 Description: Learn how to migrate MongoDB data between clusters using mongodump/mongorestore, live migration, change streams, and Atlas Live Migration service.
 

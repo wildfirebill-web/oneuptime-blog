@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Streams, Memory Bandwidth, Benchmarking, Performance
+Tags: RHEL, Stream, Memory Bandwidth, Benchmarking, Performance
 
 Description: Learn how to compile and run the STREAM memory bandwidth benchmark on RHEL to measure memory subsystem performance.
 

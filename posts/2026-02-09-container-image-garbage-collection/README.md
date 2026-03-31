@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Images, Garbage Collection, Storage, Cleanup
+Tags: Kubernetes, Image, Garbage Collection, Storage, Cleanup
 
 Description: Master container image garbage collection in Kubernetes to manage disk space and remove unused images automatically.
 

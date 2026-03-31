@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, SSL, TLS, PEM, Certificates, OpenSSL, Conversion
+Tags: Portainer, SSL, TLS, PEM, Certificate, OpenSSL, Conversion
 
 Description: A guide to converting SSL/TLS certificates from various formats (DER, PFX/PKCS#12, PKCS#7, Java Keystore) to PEM format for use with Portainer.
 

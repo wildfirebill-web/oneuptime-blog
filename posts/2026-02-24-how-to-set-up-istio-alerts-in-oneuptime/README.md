@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, OneUptime, Alerts, Monitoring, Incident Response
+Tags: Istio, OneUptime, Alert, Monitoring, Incident Response
 
 Description: Configure meaningful alerts for Istio service mesh metrics in OneUptime to catch problems before they impact users.
 

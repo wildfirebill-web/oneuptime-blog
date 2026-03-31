@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Cloudflare, Cloudflared, Stacks, Docker Compose
+Tags: Portainer, Cloudflare, Cloudflared, Stack, Docker Compose
 
 Description: Learn how to deploy cloudflared (Cloudflare Tunnel connector) as a Portainer-managed stack, enabling tunneled access to your services without command-line management.
 

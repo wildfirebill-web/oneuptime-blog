@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OCI Artifacts, Cleanup
+Tags: Podman, Container, DevOps, OCI Artifacts, Cleanup
 
 Description: Learn how to remove OCI artifacts from your local Podman artifact store to free up disk space and keep your environment clean.
 

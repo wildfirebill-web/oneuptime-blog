@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Jobs, DevOps
+Tags: ArgoCD, GitOps, Kubernetes, Job, DevOps
 
 Description: Learn how to manage one-off Kubernetes Jobs in GitOps workflows with ArgoCD, including data migrations, cleanup tasks, and ad-hoc operations using sync hooks and job patterns.
 

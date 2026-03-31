@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Serverless, ETL, Cloud Functions, Dataflow, BigQuery, Data Pipelines
+Tags: GCP, Serverless, ETL, Cloud Function, Dataflow, BigQuery, Data Pipeline
 
 Description: A complete guide to building a serverless ETL pipeline on Google Cloud using Cloud Functions for triggering, Dataflow for transformation, and BigQuery for storage.
 

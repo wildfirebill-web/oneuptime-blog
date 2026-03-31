@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Kafka, Message Queues, Streaming, Rdkafka
+Tags: Rust, Kafka, Message Queue, Streaming, Rdkafka
 
 Description: A practical guide to using Apache Kafka with Rust using the rdkafka crate for producing and consuming messages.
 

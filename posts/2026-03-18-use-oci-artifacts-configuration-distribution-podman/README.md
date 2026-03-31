@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OCI Artifacts, Configuration Management, Distribution
+Tags: Podman, Container, DevOps, OCI Artifacts, Configuration Management, Distribution
 
 Description: Learn how to use OCI artifacts with Podman to distribute application configuration files across environments and teams.
 

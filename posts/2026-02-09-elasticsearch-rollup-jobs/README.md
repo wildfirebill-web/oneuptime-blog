@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Rollup, Data Aggregation, Storage Optimization, Analytics
+Tags: Elasticsearch, ROLLUP, Data Aggregation, Storage Optimization, Analytics
 
 Description: Configure Elasticsearch rollup jobs to create downsampled summaries of historical log data.
 

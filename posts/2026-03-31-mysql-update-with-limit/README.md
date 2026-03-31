@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Update, LIMIT, Batch, DML
+Tags: MySQL, Update, Limit, Batch, DML
 
 Description: Learn how MySQL's UPDATE with LIMIT lets you modify a controlled number of rows, enabling safe batch updates and staged rollouts without locking the whole table.
 

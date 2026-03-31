@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Service Discovery, External Services, Kubernetes, ServiceEntry
+Tags: Istio, Service Discovery, External Service, Kubernetes, ServiceEntry
 
 Description: How to configure Istio's service discovery mechanisms for external services that live outside your Kubernetes cluster and service mesh.
 

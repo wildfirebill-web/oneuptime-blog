@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Stored Procedures, Control Flow, Sql
+Tags: MySQL, Stored Procedure, Control Flow, SQL
 
 Description: Learn how to use IF, ELSEIF, and ELSE statements in MySQL stored procedures to implement conditional logic and branching.
 

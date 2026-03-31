@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Network Namespaces, IPv6, Linux, Containers, Networking
+Tags: Network Namespaces, IPv6, Linux, Container, Networking
 
 Description: Create and configure Linux network namespaces with IPv6 addresses for network isolation, testing, and container networking.
 

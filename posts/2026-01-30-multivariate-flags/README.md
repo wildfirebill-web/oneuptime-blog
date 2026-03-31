@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Multivariate, A/B Testing, Experimentation
+Tags: Feature Flag, Multivariate, A/B Testing, Experimentation
 
 Description: Learn how to implement multivariate feature flags that return multiple variations for A/B/n testing and controlled experimentation.
 

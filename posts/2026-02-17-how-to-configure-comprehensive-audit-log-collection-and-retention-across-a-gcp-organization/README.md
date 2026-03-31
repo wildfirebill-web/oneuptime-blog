@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Audit Logs, Cloud Logging, Compliance, Security
+Tags: GCP, Audit Log, Cloud Logging, Compliance, Security
 
 Description: Configure organization-wide audit log collection and long-term retention in Google Cloud for compliance, forensics, and security monitoring.
 

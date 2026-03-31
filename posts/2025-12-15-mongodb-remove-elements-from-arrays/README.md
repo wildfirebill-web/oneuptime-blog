@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Database, Arrays, CRUD Operations, Node.js
+Tags: MongoDB, Database, Array, CRUD Operations, Node.js
 
 Description: Master MongoDB array removal operations with $pull, $pop, $pullAll, and positional operators. Learn how to remove by value, condition, position, and from nested arrays.
 

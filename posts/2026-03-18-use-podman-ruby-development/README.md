@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Ruby, Rails, Containers, Development
+Tags: Podman, Ruby, Rails, Container, Development
 
 Description: A practical guide to using Podman for Ruby development, covering gem management, Rails application workflows, Puma configuration, testing with RSpec, debugging, and multi-container stacks.
 

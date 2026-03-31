@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $mergeObjects, Objects, Document Merging
+Tags: MongoDB, Aggregation, $mergeObjects, Object, Document Merging
 
 Description: Learn how to use $mergeObjects in MongoDB aggregation to combine multiple documents or objects into a single merged document with examples.
 

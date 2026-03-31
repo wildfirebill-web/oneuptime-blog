@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CQRS, Architecture, Event Sourcing, Microservices, Python, Domain-Driven Design, System Design
+Tags: CQRS, Architecture, Event Sourcing, Microservice, Python, Domain-Driven Design, System Design
 
 Description: A comprehensive guide to implementing Command Query Responsibility Segregation (CQRS) with separate read and write models for scalable, maintainable applications.
 

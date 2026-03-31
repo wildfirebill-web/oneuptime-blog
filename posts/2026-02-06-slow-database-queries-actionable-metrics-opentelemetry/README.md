@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Database, Metrics, Observability, SQL, Performance, Tracing, Slow Queries
+Tags: OpenTelemetry, Database, Metric, Observability, SQL, Performance, Tracing, Slow Queries
 
 Description: Learn how to capture slow database queries and transform them into actionable metrics using OpenTelemetry spans, histograms, and custom attributes for effective performance monitoring.
 

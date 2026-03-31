@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, DORA Metrics, Monitoring
+Tags: ArgoCD, GitOps, Kubernetes, DORA Metric, Monitoring
 
 Description: Learn how to measure and monitor deployment lead time in ArgoCD to understand how quickly code changes reach production through your GitOps pipeline.
 

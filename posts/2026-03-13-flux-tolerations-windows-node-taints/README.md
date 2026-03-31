@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, Windows Containers, Tolerations, Node Taints, GitOps
+Tags: Flux CD, Kubernetes, Windows Containers, Toleration, Node Taints, GitOps
 
 Description: Configure tolerations for Windows node taints in Flux CD deployments, preventing Linux workloads from scheduling on Windows nodes and ensuring correct placement.
 

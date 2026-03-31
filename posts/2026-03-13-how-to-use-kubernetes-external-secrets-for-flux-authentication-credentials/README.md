@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, External Secrets, External Secrets Operator, Vault, AWS Secrets Manager, Secret Management
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, External Secrets, External Secrets Operator, Vault, AWS Secrets Manager, Secret Management
 
 Description: How to use the External Secrets Operator with Flux CD to automatically sync and rotate authentication credentials from external secret stores.
 

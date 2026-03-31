@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, AlmaLinux
+Tags: Podman, Installation, Linux, Container, DevOps, AlmaLinux
 
 Description: A complete guide to installing Podman on AlmaLinux 8 and 9, with rootless configuration, SELinux setup, and production deployment examples.
 

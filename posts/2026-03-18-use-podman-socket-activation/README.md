@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Socket Activation, Systemd, Linux, Containers
+Tags: Podman, Socket Activation, Systemd, Linux, Container
 
 Description: Learn how to use systemd socket activation with Podman to start containers on demand, reducing resource usage and enabling zero-downtime container management.
 

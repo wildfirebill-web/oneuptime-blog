@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Webhooks, Docker, Automation, CI/CD
+Tags: Portainer, Webhook, Docker, Automation, CI/CD
 
 Description: Configure container webhooks in Portainer to enable automated container redeployment triggered by external events.
 

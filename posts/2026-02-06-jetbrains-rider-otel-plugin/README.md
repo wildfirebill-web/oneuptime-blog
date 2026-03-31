@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, JetBrains Rider, .NET, Traces, Metrics
+Tags: OpenTelemetry, JetBrains Rider, .NET, Trace, Metric
 
 Description: Install and configure the JetBrains Rider OpenTelemetry plugin to visualize traces and metrics directly inside your IDE.
 

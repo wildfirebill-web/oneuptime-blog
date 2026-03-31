@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Queue Storage, Retry Pattern, Cloud Architecture, Resilience, Distributed Systems, Error Handling
+Tags: Azure, Queue Storage, Retry Pattern, Cloud Architecture, Resilience, Distributed System, Error Handling
 
 Description: Learn how to implement robust retry patterns with Azure Queue Storage to handle transient failures and build resilient cloud applications.
 

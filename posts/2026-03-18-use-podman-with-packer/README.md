@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Packer, Container Images, Image Building, DevOps
+Tags: Podman, Packer, Container Image, Image Building, DevOps
 
 Description: Learn how to use Podman with Packer to build container images using Packer's provisioning ecosystem, enabling complex image builds with Ansible, shell scripts, and other provisioners.
 

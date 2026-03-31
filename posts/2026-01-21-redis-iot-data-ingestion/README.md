@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, IoT, Data Ingestion, Sensors, Streams, Time Series, Edge Computing, MQTT
+Tags: Redis, IoT, Data Ingestion, Sensor, Stream, Time Series, Edge Computing, MQTT
 
 Description: A comprehensive guide to using Redis for IoT data ingestion, covering high-frequency sensor data buffering, stream processing, data validation, and efficient storage patterns for millions of devices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Migration, CLI, Compatibility
+Tags: Podman, Container, DevOps, Docker, Migration, CLI, Compatibility
 
 Description: Learn how to alias Docker commands to Podman so that existing scripts, tools, and muscle memory continue to work seamlessly with Podman.
 

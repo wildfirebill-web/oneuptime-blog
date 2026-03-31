@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Security Groups, VPC, Networking, Security
+Tags: AWS, Security Group, VPC, Networking, Security
 
 Description: Learn how to use security group referencing to build layered, dynamic security architectures in AWS that automatically adapt as instances scale.
 

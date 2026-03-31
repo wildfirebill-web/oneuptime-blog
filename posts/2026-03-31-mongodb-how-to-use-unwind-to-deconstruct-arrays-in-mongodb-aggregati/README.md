@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $unwind, Array Processing, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $unwind, Array Processing, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $unwind stage to deconstruct array fields into separate documents, enabling per-element aggregation and analysis.
 

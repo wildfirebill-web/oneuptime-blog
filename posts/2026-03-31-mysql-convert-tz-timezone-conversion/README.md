@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, Timezone, CONVERT_TZ, DATETIME, Database
+Tags: MySQL, SQL, Timezone, CONVERT_TZ, DateTime, Database
 
 Description: Learn how to use MySQL CONVERT_TZ() to convert datetime values between timezones directly in SQL queries for accurate multi-region reporting.
 

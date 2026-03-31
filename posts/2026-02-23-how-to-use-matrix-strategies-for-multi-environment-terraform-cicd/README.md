@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, Matrix Strategy, GitHub Actions, Multi-Environment, DevOps
+Tags: Terraform, CI/CD, Matrix Strategy, GitHub Action, Multi-Environment, DevOps
 
 Description: Learn how to use CI/CD matrix strategies to efficiently manage Terraform deployments across multiple environments, regions, and cloud accounts with parallel and sequential execution.
 

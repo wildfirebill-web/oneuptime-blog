@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Node Management, Maintenance, Operations
+Tags: Portainer, Docker Swarm, Node Management, Maintenance, Operation
 
 Description: Drain Docker Swarm nodes for maintenance, manage node availability, and safely remove nodes using Portainer.
 

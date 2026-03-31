@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Provider Development, Schema Design, Attributes, Infrastructure as Code
+Tags: Terraform, Provider Development, Schema Design, Attribute, Infrastructure as Code
 
 Description: Learn how to design and implement optional and required attributes in custom Terraform providers, including defaults, conditional requirements, and handling null values properly.
 

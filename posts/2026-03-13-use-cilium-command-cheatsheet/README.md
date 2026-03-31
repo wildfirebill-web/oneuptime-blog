@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, CLI, Commands, Reference, Operations
+Tags: Cilium, Kubernetes, CLI, Command, Reference, Operation
 
 Description: A practical reference guide for the most commonly used Cilium CLI commands for status checks, policy inspection, endpoint management, and troubleshooting.
 

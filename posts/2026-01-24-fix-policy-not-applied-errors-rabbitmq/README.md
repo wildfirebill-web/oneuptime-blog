@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, Policies, Configuration, DevOps, Troubleshooting, Queue Management
+Tags: RabbitMQ, Message Queue, Policies, Configuration, DevOps, Troubleshooting, Queue Management
 
 Description: Learn how to diagnose and fix policy not applied errors in RabbitMQ by understanding policy priorities, patterns, and common configuration mistakes.
 

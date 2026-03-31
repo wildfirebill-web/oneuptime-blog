@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Security, Enterprise, Restricted Environments
+Tags: Podman, Container, DevOps, Podman Desktop, Security, Enterprise, Restricted Environments
 
 Description: Learn how to configure and use Podman Desktop in restricted corporate or air-gapped environments where network access and permissions are limited.
 

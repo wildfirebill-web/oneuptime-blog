@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Prometheus, Health Probes, Monitoring, Observability
+Tags: Kubernetes, Prometheus, Health Probe, Monitoring, Observability
 
 Description: Learn how to effectively monitor Kubernetes probe failures using Prometheus metrics and event tracking, enabling proactive detection and response to application health issues before they impact users.
 

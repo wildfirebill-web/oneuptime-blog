@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Velero, Kubernetes, CSI, Storage, Volume Snapshots
+Tags: Velero, Kubernetes, CSI, Storage, Volume Snapshot
 
 Description: Learn how to configure Velero with Container Storage Interface (CSI) drivers for native volume snapshotting in Kubernetes. Complete guide covering CSI integration and snapshot management.
 

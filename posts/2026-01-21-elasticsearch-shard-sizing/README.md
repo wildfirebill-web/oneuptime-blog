@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Shards, Performance, Capacity Planning, DevOps
+Tags: Elasticsearch, Shard, Performance, Capacity Planning, DevOps
 
 Description: A comprehensive guide to optimizing Elasticsearch shard sizing, covering shard count calculations, sizing best practices, and strategies for avoiding common pitfalls.
 

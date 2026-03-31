@@ -22,7 +22,7 @@ Scatter plots reveal relationships between two numeric variables. They are ideal
 
 Drag numeric fields to the two axes:
 
-```
+```text
 X Axis:  tomatoes.viewer.numReviews   (Aggregation: Sum or none)
 Y Axis:  tomatoes.viewer.rating       (Aggregation: Average)
 ```
@@ -33,7 +33,7 @@ Each document becomes a point. With an aggregation (like Sum or Average), multip
 
 Drag a categorical field to the **Color** channel to color points by group:
 
-```
+```text
 Color:  genres    (one color per genre)
 ```
 
@@ -43,7 +43,7 @@ This turns the scatter plot into a multi-group comparison, making it easy to see
 
 Use the **Size** channel to add a third dimension. Drag a numeric field here and each point's radius will scale proportionally to that value:
 
-```
+```text
 Size:  runtime    (Aggregation: Average)
 ```
 
@@ -94,7 +94,7 @@ For an infrastructure monitoring use case, if you log server metrics to MongoDB:
 ```
 
 Configure the scatter plot:
-```
+```text
 X Axis:  requestsPerSecond   (Sum)
 Y Axis:  p99LatencyMs        (Average)
 Color:   region

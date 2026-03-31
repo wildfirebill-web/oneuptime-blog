@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Logs, Trace Context, Enrichment
+Tags: OpenTelemetry, Collector, Log, Trace Context, Enrichment
 
 Description: Configure the OpenTelemetry Collector to automatically enrich log records with trace context from matching spans in the same request.
 

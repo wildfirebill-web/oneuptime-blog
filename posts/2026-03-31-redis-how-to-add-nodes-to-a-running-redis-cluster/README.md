@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Scaling, Operations, Node Management
+Tags: Redis, Cluster, Scaling, Operation, Node Management
 
 Description: Learn how to add new primary and replica nodes to a running Redis Cluster, including slot rebalancing and resharding steps.
 

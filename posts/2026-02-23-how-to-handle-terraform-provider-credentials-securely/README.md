@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Security, Credentials, AWS, Secrets Management
+Tags: Terraform, Security, Credential, AWS, Secrets Management
 
 Description: Practical strategies for managing Terraform provider credentials without exposing secrets in your codebase or state files.
 

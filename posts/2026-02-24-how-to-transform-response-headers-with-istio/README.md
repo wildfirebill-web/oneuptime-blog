@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Headers, Response Transformation, VirtualService, Security Headers
+Tags: Istio, Header, Response Transformation, VirtualService, Security Headers
 
 Description: How to modify, add, and remove HTTP response headers using Istio VirtualService and EnvoyFilter for security and operational needs.
 

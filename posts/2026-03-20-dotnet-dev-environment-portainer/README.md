@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, .NET, C#, Development Environments, Docker, Hot Reload, Debugging
+Tags: Portainer, .NET, C#, Development Environment, Docker, Hot Reload, Debugging
 
 Description: Learn how to set up a .NET development environment with hot-reload and VS Code debugging in a Docker container managed by Portainer.
 

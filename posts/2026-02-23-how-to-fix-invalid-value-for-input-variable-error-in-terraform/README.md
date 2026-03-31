@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, Variables, Validation, HCL
+Tags: Terraform, Troubleshooting, Variable, Validation, HCL
 
 Description: How to fix Invalid Value for Input Variable errors in Terraform caused by type mismatches, validation failures, and incorrect variable assignments.
 

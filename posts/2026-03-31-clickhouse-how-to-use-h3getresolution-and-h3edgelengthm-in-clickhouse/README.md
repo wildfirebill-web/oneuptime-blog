@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, H3, Geospatial, H3GetResolution, H3EdgeLengthM, Sql
+Tags: ClickHouse, H3, Geospatial, H3GetResolution, H3EdgeLengthM, SQL
 
 Description: Learn how to use h3GetResolution() and h3EdgeLengthM() in ClickHouse to inspect H3 cell resolutions and edge lengths for geospatial analysis.
 

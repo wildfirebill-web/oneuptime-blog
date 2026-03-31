@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Development, Locals, Age
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Development, Local, Age
 
 Description: Learn how to set up local SOPS decryption for developers working with Flux-managed encrypted secrets during development and debugging.
 

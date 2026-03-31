@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, ALTER TABLE, Column, Schema, Migration
+Tags: MySQL, SQL, DDL, ALTER TABLE, Column, Schema
 
 Description: Rename a MySQL column using ALTER TABLE RENAME COLUMN (MySQL 8.0) or CHANGE COLUMN (all versions) without losing data or indexes.
 

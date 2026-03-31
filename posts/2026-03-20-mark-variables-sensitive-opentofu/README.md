@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Security, Sensitive Variables, HCL, Secrets, Infrastructure as Code
+Tags: OpenTofu, Security, Sensitive Variables, HCL, Secret, Infrastructure as Code
 
 Description: Learn how to mark OpenTofu variables as sensitive to prevent their values from appearing in plan output, apply output, and state file diffs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Auto-Update, Maintenance
+Tags: Podman, Container, DevOps, Auto-Update, Maintenance
 
 Description: Learn how to manually run podman auto-update to check for and apply container image updates on demand.
 

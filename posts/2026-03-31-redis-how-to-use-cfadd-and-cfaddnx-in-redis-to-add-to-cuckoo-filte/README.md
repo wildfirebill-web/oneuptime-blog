@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cuckoo Filter, RedisBloom, Commands, NoSql
+Tags: Redis, Cuckoo Filter, RedisBloom, Command, NoSQL
 
 Description: Learn how to use CF.ADD and CF.ADDNX in Redis to insert items into a Cuckoo filter, with CF.ADDNX preventing duplicate insertions.
 

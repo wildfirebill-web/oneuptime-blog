@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Wire Compression, Zstd, Network, Performance
+Tags: MongoDB, Wire Compression, ZSTD, Network, Performance
 
 Description: Learn how to enable Zstd wire compression in MongoDB 4.2+ for the best combination of bandwidth savings and decompression speed.
 
@@ -86,7 +86,7 @@ client, err := mongo.Connect(ctx, opts)
 
 ### Connection String URI
 
-```
+```text
 mongodb://localhost:27017/?compressors=zstd
 ```
 

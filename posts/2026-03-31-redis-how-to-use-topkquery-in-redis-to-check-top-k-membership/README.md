@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Top-K, Heavy Hitters, Membership Query
+Tags: Redis, Top-K, Heavy Hitter, Membership Query
 
 Description: Learn how to use TOPK.QUERY in Redis to check whether specific items are currently in the Top-K most frequent items list.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Percentile Rank, percent_rank, Window Function, Analytics
+Tags: ClickHouse, Percentile Rank, PERCENT_RANK, Window Function, Analytics
 
 Description: Learn how to calculate percentile rank in ClickHouse using percent_rank, ntile, and quantile functions to position values within a distribution.
 

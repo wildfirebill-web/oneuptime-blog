@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Dependencies, Startup Order
+Tags: Podman, Container, DevOps, podman-compose, Dependencies, Startup Order
 
 Description: Learn how to control service startup order in podman-compose using depends_on with health check conditions.
 

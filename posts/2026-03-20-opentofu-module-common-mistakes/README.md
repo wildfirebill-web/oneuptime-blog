@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Best-practices
+Tags: OpenTofu, Terraform, IaC, Module, Best-practices
 
 Description: Avoid these common pitfalls when writing OpenTofu modules to keep your infrastructure code maintainable and reliable.
 

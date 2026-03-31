@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Topics, Messaging, Best Practice, Streaming, Apache Kafka
+Tags: Kafka, Topic, Messaging, Best Practice, Streaming, Apache Kafka
 
 Description: A comprehensive guide to creating and configuring Apache Kafka topics with production-ready best practices, covering partition strategies, replication, retention policies, and naming conventions.
 

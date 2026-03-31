@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, HPA, Custom Metrics, Prometheus, Autoscaling
+Tags: Kubernetes, HPA, Custom Metric, Prometheus, Autoscaling
 
 Description: Learn how to scale Kubernetes workloads based on custom Prometheus metrics using the custom metrics API and HPA.
 

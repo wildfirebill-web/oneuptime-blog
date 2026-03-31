@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Container Escape, Hardening
+Tags: Podman, Container, DevOps, Security, Container Escape, Hardening
 
 Description: Learn how to configure Podman to prevent container escape attacks and keep your host system secure.
 

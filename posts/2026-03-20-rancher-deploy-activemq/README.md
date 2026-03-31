@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, ActiveMQ, Message Queues, JMS
+Tags: Rancher, Kubernetes, ActiveMQ, Message Queue, JMS
 
 Description: Deploy Apache ActiveMQ Artemis on Rancher for JMS-compliant messaging with support for AMQP, STOMP, and MQTT protocols.
 

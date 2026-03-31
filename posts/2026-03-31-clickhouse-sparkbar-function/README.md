@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Aggregate Function, sparkBar, Visualization
+Tags: ClickHouse, SQL, Aggregate Function, SparkBar, Visualization
 
 Description: Render inline ASCII bar charts inside ClickHouse query results using the sparkBar() aggregate function with configurable width and value range.
 

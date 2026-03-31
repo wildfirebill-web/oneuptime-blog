@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, UID, GID, Permissions
+Tags: Podman, Container, DevOps, Secret, UID, GID, Permission
 
 Description: Learn how to configure the UID and GID of secret files in Podman to control ownership for non-root container processes.
 

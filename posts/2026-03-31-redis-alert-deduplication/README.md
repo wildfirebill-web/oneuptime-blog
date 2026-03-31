@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Alert Deduplication, Monitoring, On-Call, Backend
 
-Description: Suppress duplicate monitoring alerts with Redis SET NX to group repeated firings into a single incident, preventing on-call engineers from being paged repeatedly for the same issue.
+Description: Suppress duplicate monitoring alerts with Redis SET NX to group repeated firings into a single incident, preventing on-call engineers from being paged repeatedly.
 
 ---
 

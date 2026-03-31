@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Memory, Troubleshooting, Performance, Error Handling, Query Optimization, Database, Operations
+Tags: ClickHouse, Memory, Troubleshooting, Performance, Error Handling, Query Optimization, Database, Operation
 
 Description: A troubleshooting guide for resolving Memory Limit Exceeded errors in ClickHouse, covering memory settings, query optimization, external aggregation, and strategies for memory-efficient queries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Feature Flags, A/B Testing, DevOps, Release Management, Frontend
+Tags: React, Feature Flag, A/B Testing, DevOps, Release Management, Frontend
 
 Description: A comprehensive guide to implementing feature flags in React applications, covering patterns from simple boolean toggles to advanced context-based systems with remote configuration.
 

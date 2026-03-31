@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, IPv4, Docker network connect, Containers
+Tags: Docker, Networking, IPv4, Docker network connect, Container
 
 Description: Add a running Docker container to an additional network using docker network connect, assign a static IP, and disconnect it when no longer needed without restarting the container.
 

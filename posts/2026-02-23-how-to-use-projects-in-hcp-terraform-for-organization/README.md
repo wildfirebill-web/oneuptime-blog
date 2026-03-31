@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Terraform Cloud, Projects, Organizations, Workspace Management, DevOps
+Tags: Terraform, HCP Terraform, Terraform Cloud, Project, Organization, Workspace Management, DevOps
 
 Description: Learn how to use projects in HCP Terraform to group workspaces, manage permissions, and organize infrastructure at scale.
 

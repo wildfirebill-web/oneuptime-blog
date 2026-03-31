@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, OpenTelemetry, Distributed Tracing, Microservices, Cloud Trace
+Tags: GCP, OpenTelemetry, Distributed Tracing, Microservice, Cloud Trace
 
 Description: Learn how to implement distributed context propagation across microservices with OpenTelemetry on GCP so traces connect correctly across service boundaries.
 

@@ -1,8 +1,8 @@
 # How to Use $vectorSearch in MongoDB Atlas for AI Applications
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas Search, Vector search, AI, Embedding
+Tags: MongoDB, Atlas Search, Vector Search, AI, Embedding
 
 Description: Learn how to use MongoDB Atlas $vectorSearch to perform semantic similarity search over vector embeddings for AI-powered recommendation and RAG applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Runbook, Incident Response, Annotations
+Tags: OpenTelemetry, Runbook, Incident Response, Annotation
 
 Description: Attach runbook URLs to OpenTelemetry resource attributes and alert annotations to speed up incident response workflows.
 

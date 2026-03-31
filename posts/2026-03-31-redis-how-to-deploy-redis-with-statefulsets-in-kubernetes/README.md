@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Kubernetes, StatefulSets, Deployment, Persistent Storage
+Tags: Redis, Kubernetes, StatefulSet, Deployment, Persistent Storage
 
 Description: Learn how to deploy Redis with Kubernetes StatefulSets for stable network identities, persistent storage, and ordered pod management.
 

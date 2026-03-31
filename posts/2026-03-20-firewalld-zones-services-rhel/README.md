@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: firewalld, RHEL, Linux, Firewall, Zones, Security
+Tags: firewalld, RHEL, Linux, Firewall, Zone, Security
 
 Description: Configure firewalld zones and services on Red Hat Enterprise Linux to manage network access control with a dynamic, zone-based firewall model.
 

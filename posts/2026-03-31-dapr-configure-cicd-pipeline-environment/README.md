@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, CI/CD, Testing, GitHub Actions, Configuration
+Tags: Dapr, CI/CD, Testing, GitHub Action, Configuration
 
 Description: Configure Dapr in CI/CD pipelines for integration testing, component mocking, ephemeral test environments, and automated deployment to staging and production.
 

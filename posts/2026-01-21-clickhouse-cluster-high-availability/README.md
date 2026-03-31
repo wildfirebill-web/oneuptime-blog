@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, High Availability, Clustering, Database, ZooKeeper, ClickHouse Keeper, Distributed Systems
+Tags: ClickHouse, High Availability, Clustering, Database, ZooKeeper, ClickHouse Keeper, Distributed System
 
 Description: A comprehensive guide to configuring ClickHouse clusters with replication, ZooKeeper or ClickHouse Keeper coordination, and distributed tables for production-ready high availability.
 

@@ -1,6 +1,6 @@
 # How to Set Up Cross-Datacenter Replication in MongoDB
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Replication, Replica Set, Datacenter, High Availability
 

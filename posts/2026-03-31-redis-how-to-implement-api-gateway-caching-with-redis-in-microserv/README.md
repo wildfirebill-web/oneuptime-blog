@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Api Gateway, Microservices, Caching, Node.js
+Tags: Redis, API Gateway, Microservice, Caching, Node.js
 
 Description: Build Redis-backed caching at the API gateway layer to reduce downstream microservice load and improve response times across your entire service mesh.
 

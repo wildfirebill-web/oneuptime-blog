@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, JSON, Automation
+Tags: Podman, Container, DevOps, Monitoring, Event, JSON, Automation
 
 Description: Learn how to format Podman events as JSON for parsing, automation, and integration with monitoring tools and pipelines.
 

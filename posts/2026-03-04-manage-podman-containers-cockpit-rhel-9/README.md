@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Cockpit, Podman, Containers, Linux
+Tags: RHEL, Cockpit, Podman, Container, Linux
 
 Description: Learn how to manage Podman containers through the Cockpit web console on RHEL, including pulling images, running containers, and managing container lifecycles.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Array, Analytics, Query
+Tags: ClickHouse, JSON, Array, Analytics, Query
 
 Description: Learn how to work with JSON arrays in ClickHouse using JSONExtractArrayRaw, arrayJoin, and typed extraction functions to process and aggregate array-valued fields efficiently.
 

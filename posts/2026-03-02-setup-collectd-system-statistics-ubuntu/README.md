@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Monitoring, Collectd, Metrics, System Administration
+Tags: Ubuntu, Monitoring, Collectd, Metric, System Administration
 
 Description: Learn how to install and configure Collectd on Ubuntu to collect and store system statistics, configure plugins, and forward data to Graphite or InfluxDB.
 

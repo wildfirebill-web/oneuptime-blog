@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, RabbitMQ, Message Queues, AMQP, Self-Hosted
+Tags: Portainer, Docker, RabbitMQ, Message Queue, AMQP, Self-Hosted
 
 Description: Deploy RabbitMQ via Portainer with the management plugin enabled for a feature-rich message broker with web-based administration.
 

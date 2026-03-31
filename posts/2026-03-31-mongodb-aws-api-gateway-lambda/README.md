@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, AWS Lambda, Api Gateway, Serverless, Database
+Tags: MongoDB, AWS Lambda, API Gateway, Serverless, Database
 
 Description: Connect MongoDB Atlas to AWS API Gateway and Lambda to build serverless APIs that read and write documents without managing servers.
 

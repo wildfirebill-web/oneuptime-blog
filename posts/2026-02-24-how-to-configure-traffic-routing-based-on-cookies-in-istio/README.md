@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Traffic Routing, Cookies, A/B Testing, Service Mesh
+Tags: Istio, Traffic Routing, Cookie, A/B Testing, Service Mesh
 
 Description: How to route traffic based on browser cookies in Istio for A/B testing, feature flags, and user-specific version targeting using VirtualService match rules.
 

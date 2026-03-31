@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, KRaft, Distributed Systems, DevOps, Cluster Management
+Tags: Kafka, KRaft, Distributed System, DevOps, Cluster Management
 
 Description: A practical guide to deploying Apache Kafka in production using KRaft mode, eliminating ZooKeeper dependency while maintaining high availability and fault tolerance.
 

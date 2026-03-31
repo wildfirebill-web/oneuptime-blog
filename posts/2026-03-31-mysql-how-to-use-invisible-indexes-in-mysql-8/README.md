@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Invisible Index, Indexes, Query Optimization
+Tags: MySQL, Invisible Index, Index, Query Optimization
 
 Description: Invisible indexes in MySQL 8.0 allow you to hide an index from the query optimizer without dropping it, making it safe to test the impact of removing an index.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, TCP, File Transfer, Sockets, IPv4, Networking
+Tags: Python, TCP, File Transfer, Socket, IPv4, Networking
 
 Description: Learn how to transfer files reliably over IPv4 using Python TCP sockets, including sending file size metadata and chunked reading.
 

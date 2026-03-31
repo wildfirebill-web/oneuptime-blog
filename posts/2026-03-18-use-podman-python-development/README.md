@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Python, Containers, Development, DevOps
+Tags: Podman, Python, Container, Development, DevOps
 
 Description: A practical guide to using Podman for Python development, covering virtual environments, dependency management, Flask and Django workflows, and debugging inside containers.
 

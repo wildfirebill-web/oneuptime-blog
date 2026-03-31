@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DevOps, Dark Launch, Feature Flags, Testing
+Tags: DevOps, Dark Launch, Feature Flag, Testing
 
 Description: Learn to implement dark launch patterns for testing features in production invisibly.
 

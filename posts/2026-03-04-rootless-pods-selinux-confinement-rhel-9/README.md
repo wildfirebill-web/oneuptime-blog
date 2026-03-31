@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, SELinux, Rootless, Containers, Security, Linux
+Tags: RHEL, Podman, SELinux, Rootless, Container, Security, Linux
 
 Description: Learn how to run rootless Podman pods with SELinux confinement on RHEL for enhanced container security.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, CQRS, Cosmos DB, Azure Functions, Architecture Patterns, Event Sourcing, Microservices
+Tags: Azure, CQRS, Cosmos DB, Azure Function, Architecture Patterns, Event Sourcing, Microservice
 
 Description: Implement the CQRS pattern using Azure Cosmos DB for the write model and a read-optimized store with Azure Functions for synchronization.
 

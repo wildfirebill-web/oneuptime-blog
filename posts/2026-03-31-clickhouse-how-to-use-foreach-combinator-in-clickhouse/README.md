@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Combinators, Arrays, Aggregation, Sql
+Tags: ClickHouse, Combinator, Array, Aggregation, SQL
 
 Description: Learn how to use the -ForEach combinator in ClickHouse to apply aggregate functions element-wise across arrays of equal length from multiple rows.
 

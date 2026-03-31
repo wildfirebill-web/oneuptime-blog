@@ -12,7 +12,7 @@ Redis Pub/Sub is an efficient server-side messaging primitive, but browsers cann
 
 ## Architecture
 
-```
+```text
 Publishers                Redis                 WS Bridge             Browsers
 (services)  ──PUBLISH──► Pub/Sub  ──message──► Node.js  ──ws──►  Dashboard
                           Server                server              Clients

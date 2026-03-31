@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, KEDA, Prometheus, Autoscaling, Metrics, Observability
+Tags: Flux CD, Kubernetes, GitOps, KEDA, Prometheus, Autoscaling, Metric, Observability
 
 Description: Deploy KEDA with Prometheus metrics-based autoscaling trigger using Flux CD to scale workloads based on any custom application or infrastructure metric.
 

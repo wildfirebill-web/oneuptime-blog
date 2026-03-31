@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Istio, Service Mesh, Kubernetes, mTLS, Observability, Microservices
+Tags: Dapr, Istio, Service Mesh, Kubernetes, mTLS, Observability, Microservice
 
 Description: Learn how to run Dapr and Istio together in Kubernetes, avoiding port conflicts and configuring mTLS, traffic policies, and observability to work harmoniously.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Bash, Shell Scripting, Linux, Error Handling, Quoting, Syntax Errors, Debugging
+Tags: Bash, Shell Scripting, Linux, Error Handling, Quoting, Syntax Error, Debugging
 
 Description: Learn how to identify and fix unterminated quoted string errors in Bash scripts caused by mismatched quotes, special characters, and multiline strings.
 

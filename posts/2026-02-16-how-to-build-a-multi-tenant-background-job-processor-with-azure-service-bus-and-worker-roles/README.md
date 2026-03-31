@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Service Bus, Worker Roles, Multi-Tenant, SaaS, Background Jobs, Message Queues, Cloud Architecture
+Tags: Azure Service Bus, Worker Roles, Multi-Tenant, SaaS, Background Job, Message Queue, Cloud Architecture
 
 Description: Build a multi-tenant background job processor using Azure Service Bus queues with tenant isolation, priority handling, and fair scheduling.
 

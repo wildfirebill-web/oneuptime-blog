@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Spot Instances, Cost Optimization
+Tags: AWS, EC2, Spot Instance, Cost Optimization
 
 Description: A hands-on guide to using EC2 Spot Instances for up to 90% cost savings, covering interruption handling, fleet strategies, and production-ready patterns.
 

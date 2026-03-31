@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Host Endpoint, Selectors, Performance, Optimization
+Tags: Calico, Kubernetes, Networking, Host Endpoint, Selector, Performance, Optimization
 
 Description: Techniques for optimizing Calico host endpoint selector expressions to minimize policy recalculation overhead and improve network performance on Kubernetes nodes.
 

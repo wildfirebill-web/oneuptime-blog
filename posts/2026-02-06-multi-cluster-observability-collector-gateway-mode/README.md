@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Multi-Cluster, Kubernetes, Gateway, Collector, Observability, Distributed Systems
+Tags: OpenTelemetry, Multi-Cluster, Kubernetes, Gateway, Collector, Observability, Distributed System
 
 Description: Learn how to build a multi-cluster observability architecture using the OpenTelemetry Collector in gateway mode to aggregate telemetry from multiple Kubernetes clusters into a single backend.
 

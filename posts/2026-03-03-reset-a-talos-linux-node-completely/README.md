@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Node Reset, Cluster Management, Kubernetes, Operations
+Tags: Talos Linux, Node Reset, Cluster Management, Kubernetes, Operation
 
 Description: A step-by-step guide to completely resetting a Talos Linux node, covering graceful resets, data cleanup, and rejoining the cluster from scratch.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Logging, DevOps
+Tags: Portainer, Docker, Stack, Logging, DevOps
 
 Description: Learn how to view and interpret stack deployment logs in Portainer to monitor and troubleshoot deployments.
 

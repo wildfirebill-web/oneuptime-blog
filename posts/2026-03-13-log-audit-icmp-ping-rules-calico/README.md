@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Networks
+Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Network
 
 Description: Configure logging and auditing for ICMP and Ping Rules in Calico for security visibility.
 

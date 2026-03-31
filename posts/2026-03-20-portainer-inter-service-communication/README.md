@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Microservices, Docker Network, Service Communication, DNS, Container Networking
+Tags: Portainer, Microservice, Docker Network, Service Communication, DNS, Container Networking
 
 Description: Learn how to configure inter-service communication between containers in Portainer using Docker networks and DNS-based service discovery.
 

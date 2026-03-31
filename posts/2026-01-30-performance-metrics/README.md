@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Performance, SRE
+Tags: Observability, Metric, Performance, SRE
 
 Description: Learn how to design performance metrics for measuring latency, throughput, and response times.
 

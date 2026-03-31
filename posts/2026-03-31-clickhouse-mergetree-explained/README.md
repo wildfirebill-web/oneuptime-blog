@@ -1,8 +1,8 @@
 # What Is ClickHouse MergeTree and How It Works
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, MergeTree, Storage Engine, Internals, Database
+Tags: ClickHouse, MergeTree, Storage Engine, Internal, Database
 
 Description: Learn how ClickHouse MergeTree works internally, including data parts, primary keys, sorting keys, sparse indexes, and background merges that make it fast.
 

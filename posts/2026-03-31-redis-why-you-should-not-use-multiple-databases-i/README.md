@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Best Practices, Databases, Architecture, Anti-Patterns
+Tags: Redis, Best Practice, Database, Architecture, Anti-Pattern
 
 Description: Understand why using multiple Redis databases (SELECT 0-15) is an anti-pattern and learn better alternatives for data isolation in production systems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, RBAC, User Management, Teams, Security, Access Control, Best Practice
+Tags: Portainer, RBAC, User Management, Team, Security, Access Control, Best Practice
 
 Description: Establish secure and scalable user and team management in Portainer with RBAC, SSO integration, least-privilege access policies, and user lifecycle management.
 

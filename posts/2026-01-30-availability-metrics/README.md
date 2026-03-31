@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: SRE, Metrics, Observability, Monitoring
+Tags: SRE, Metric, Observability, Monitoring
 
 Description: Learn how to design and implement availability metrics for measuring system uptime and SLO compliance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Window Functions, Analytics, Sql
+Tags: MySQL, Window Function, Analytics, SQL
 
 Description: Learn how to use the CUME_DIST() window function in MySQL to calculate the cumulative distribution of a value within a result set partition.
 

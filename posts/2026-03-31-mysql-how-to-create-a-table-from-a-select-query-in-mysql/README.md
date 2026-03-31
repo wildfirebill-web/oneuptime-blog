@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Sql, Data Migration
+Tags: MySQL, DDL, SQL, Data Migration
 
 Description: Learn how to create a new MySQL table from a SELECT query using CREATE TABLE AS SELECT (CTAS) to copy data and structure efficiently.
 

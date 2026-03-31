@@ -1,8 +1,8 @@
 # How to Filter Change Stream Events by Operation Type in MongoDB
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change stream, Filter, Aggregation, Real-time
+Tags: MongoDB, Change Stream, Filter, Aggregation, Real-Time
 
 Description: Learn how to filter MongoDB change stream events by operation type, namespace, field values, and complex conditions using aggregation pipeline stages.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Secrets, Environment Variables, Security, Docker
+Tags: Portainer, Secret, Environment Variable, Security, Docker
 
 Description: Best practices for managing sensitive configuration through Portainer's environment variable system, including stack-level and environment-level secrets.
 

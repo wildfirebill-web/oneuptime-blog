@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Multi-Tenancy, Teams, Access Control, RBAC, Docker
+Tags: Portainer, Multi-Tenancy, Team, Access Control, RBAC, Docker
 
 Description: Learn how to configure Portainer for multi-tenant container management using teams, environments, and role-based access control to isolate different users and groups.
 

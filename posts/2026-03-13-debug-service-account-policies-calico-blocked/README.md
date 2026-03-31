@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Service Accounts, Debugging
+Tags: Calico, Kubernetes, Network Policy, Service Account, Debugging
 
 Description: Diagnose and fix service account-based Calico network policy failures when traffic is blocked due to identity mismatches.
 

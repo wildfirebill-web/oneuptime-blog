@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Prometheus, ServiceMonitor, Monitoring, Observability, Metrics
+Tags: Kubernetes, Prometheus, ServiceMonitor, Monitoring, Observability, Metric
 
 Description: Learn how to configure Prometheus ServiceMonitor and PodMonitor resources to automatically discover and scrape metrics from your Kubernetes applications.
 

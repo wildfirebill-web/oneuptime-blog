@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, StatefulSets, Database, Storage
+Tags: Portainer, Kubernetes, StatefulSet, Database, Storage
 
 Description: Deploy and manage Kubernetes StatefulSets for databases and stateful applications via Portainer's Kubernetes interface.
 

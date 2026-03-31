@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lua, Scripting, Atomic Operations, Performance, Database, Backend
+Tags: Redis, Lua, Scripting, Atomic Operation, Performance, Database, Backend
 
 Description: A comprehensive guide to writing Redis Lua scripts for atomic operations, covering EVAL, EVALSHA, script caching, and practical patterns for implementing thread-safe operations.
 

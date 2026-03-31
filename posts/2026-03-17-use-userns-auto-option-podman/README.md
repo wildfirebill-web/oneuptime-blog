@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, User Namespaces, Auto Mapping
+Tags: Podman, Container, DevOps, Rootless, User Namespaces, Auto Mapping
 
 Description: Learn how to use the --userns=auto option in Podman to automatically allocate unique UID ranges for maximum container isolation.
 

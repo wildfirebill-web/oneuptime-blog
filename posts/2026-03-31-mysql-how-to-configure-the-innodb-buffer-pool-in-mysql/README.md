@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Buffer Pool, Configuration, Performance
+Tags: MySQL, InnoDB, Buffer Pool, Configuration, Performance
 
 Description: Learn how to configure the InnoDB buffer pool size, instances, and related settings for optimal MySQL performance on your server.
 

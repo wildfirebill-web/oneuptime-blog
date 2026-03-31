@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elixir, Phoenix, WebSocket, Real-Time, Backend, Distributed Systems
+Tags: Elixir, Phoenix, WebSocket, Real-Time, Backend, Distributed System
 
 Description: A complete guide to building real-time features using Phoenix Channels - from basic setup to presence tracking and building a production-ready chat application.
 

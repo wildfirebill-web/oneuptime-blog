@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Email, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Email, Notification
 
 Description: Learn how to configure ArgoCD to send deployment notification emails using SMTP, with HTML templates, multiple recipients, and trigger-based routing.
 

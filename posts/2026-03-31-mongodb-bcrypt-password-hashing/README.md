@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, bcrypt, Password, Security, Authentication
+Tags: MongoDB, Bcrypt, Password, Security, Authentication
 
 Description: Learn how to securely hash and verify passwords using bcrypt before storing them in MongoDB, including salting, cost factors, and Mongoose integration.
 

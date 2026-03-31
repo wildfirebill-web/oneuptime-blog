@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, TCP, Connection Limits, DestinationRule, Kubernetes
+Tags: Istio, TCP, Connection Limit, DestinationRule, Kubernetes
 
 Description: Learn how to set TCP connection limits in Istio DestinationRule to prevent resource exhaustion and protect your upstream services.
 

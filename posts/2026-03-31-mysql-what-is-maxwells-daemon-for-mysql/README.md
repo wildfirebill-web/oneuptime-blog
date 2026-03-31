@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Maxwells Daemon, Change Data Capture, Cdc
+Tags: MySQL, Maxwells Daemon, Change Data Capture, CDC
 
 Description: Maxwell's Daemon is a lightweight MySQL CDC tool that reads the binary log and publishes row-level change events as JSON to Kafka, Kinesis, RabbitMQ, or stdout.
 

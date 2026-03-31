@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Canary Deployments, Docker Swarm, Zero Downtime, Traefik, CI/CD
+Tags: Portainer, Canary Deployment, Docker Swarm, Zero Downtime, Traefik, CI/CD
 
 Description: Learn how to implement canary deployments with Portainer on Docker Swarm to gradually roll out new versions to a small percentage of traffic before full release.
 

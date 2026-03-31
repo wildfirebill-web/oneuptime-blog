@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Functions, HCL
+Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Function, HCL
 
 Description: A comprehensive guide to the most important Terragrunt built-in functions including find_in_parent_folders, get_env, read_terragrunt_config, and more.
 

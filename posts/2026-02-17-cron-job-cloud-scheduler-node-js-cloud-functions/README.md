@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Scheduler, Cloud Functions, Node.js, Cron Jobs, Google Cloud
+Tags: GCP, Cloud Scheduler, Cloud Function, Node.js, Cron Jobs, Google Cloud
 
 Description: Build reliable cron job services using Google Cloud Scheduler to trigger Node.js Cloud Functions on a schedule for automated tasks and maintenance.
 

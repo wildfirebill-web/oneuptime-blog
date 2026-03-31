@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, RabbitMQ, Kafka, NATS, Message Queues, Troubleshooting
+Tags: IPv6, RabbitMQ, Kafka, NATS, Message Queue, Troubleshooting
 
 Description: A systematic guide to diagnosing and resolving IPv6 connectivity problems with message queue systems including RabbitMQ, Kafka, NATS, and other messaging infrastructure.
 

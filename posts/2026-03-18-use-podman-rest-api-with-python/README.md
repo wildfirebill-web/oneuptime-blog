@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Python, Containers, Automation
+Tags: Podman, REST API, Python, Container, Automation
 
 Description: Learn how to interact with the Podman REST API using Python, including managing containers, images, and volumes with the requests library and building reusable client classes.
 

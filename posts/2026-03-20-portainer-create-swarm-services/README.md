@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Services, DevOps
+Tags: Portainer, Docker Swarm, Service, DevOps
 
 Description: Learn how to create and configure Docker Swarm services using the Portainer UI for reliable multi-node deployments.
 

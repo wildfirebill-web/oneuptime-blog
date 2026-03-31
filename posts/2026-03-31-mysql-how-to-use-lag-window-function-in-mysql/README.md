@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Window Functions, Lag, Analytics, Sql
+Tags: MySQL, Window Function, Lag, Analytics, SQL
 
 Description: Learn how to use MySQL's LAG() window function to access a previous row's value within a partition for period-over-period comparisons and change detection.
 

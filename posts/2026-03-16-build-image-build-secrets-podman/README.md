@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Secrets, Security
+Tags: Podman, Container, DevOps, Container Image, Build, Secret, Security
 
 Description: Learn how to securely pass secrets during Podman image builds without embedding them in image layers using the --secret flag and mount options.
 

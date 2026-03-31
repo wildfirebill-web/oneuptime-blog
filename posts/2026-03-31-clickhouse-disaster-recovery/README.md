@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Disaster Recovery, Replication, Backup, High Availability, Operations
+Tags: ClickHouse, Disaster Recovery, Replication, Backup, High Availability, Operation
 
 Description: Design and implement ClickHouse disaster recovery using replication, clickhouse-backup, S3 snapshots, and cross-region failover strategies for production systems.
 

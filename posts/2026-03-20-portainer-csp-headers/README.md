@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Security, CSP, Headers, Nginx
+Tags: Portainer, Security, CSP, Header, Nginx
 
 Description: Learn how to configure Content-Security-Policy and other security headers for Portainer deployments to protect against XSS and clickjacking attacks.
 

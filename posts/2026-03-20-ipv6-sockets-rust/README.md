@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, IPv6, Sockets, Networking, TcpListener, UdpSocket, Socket Programming
+Tags: Rust, IPv6, Socket, Networking, TcpListener, UdpSocket, Socket Programming
 
 Description: Create IPv6 TCP and UDP sockets in Rust using std::net and the socket2 crate for fine-grained socket control, including dual-stack configuration and link-local connections.
 

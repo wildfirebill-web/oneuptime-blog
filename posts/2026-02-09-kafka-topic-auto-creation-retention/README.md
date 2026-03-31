@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kafka, Message Queues, Data Management
+Tags: Kubernetes, Kafka, Message Queue, Data Management
 
 Description: Learn how to configure Kafka topic auto-creation, implement retention policies, and manage topic lifecycle on Kubernetes for efficient data management and storage optimization.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Skopeo, Authentication, Registry, Security
+Tags: Podman, Container, DevOps, Skopeo, Authentication, Registry, Security
 
 Description: Learn how Skopeo and Podman share authentication credentials and how to manage registry logins across both tools seamlessly.
 

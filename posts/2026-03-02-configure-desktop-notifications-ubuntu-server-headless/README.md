@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Notifications, Headless, Server, Automation
+Tags: Ubuntu, Notification, Headless, Server, Automation
 
 Description: Learn how to configure desktop-style notifications on headless Ubuntu servers, including send-only notifications, notification forwarding over SSH, and alternative alerting approaches.
 

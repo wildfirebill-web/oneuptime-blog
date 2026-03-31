@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Tracing, Microservices, DevOps
+Tags: Observability, Tracing, Microservice, DevOps
 
 Description: A practical guide to building service maps that visualize your distributed system architecture, dependencies, and health in real time using OpenTelemetry and modern observability practices.
 

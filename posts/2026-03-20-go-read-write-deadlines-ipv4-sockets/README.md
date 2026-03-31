@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Sockets, IPv4, TCP, Networking, Deadlines, Timeout
+Tags: Go, Socket, IPv4, TCP, Networking, Deadlines, Timeout
 
 Description: Configure read and write deadlines on Go TCP connections over IPv4 to prevent goroutine leaks and unresponsive connections from hanging indefinitely.
 

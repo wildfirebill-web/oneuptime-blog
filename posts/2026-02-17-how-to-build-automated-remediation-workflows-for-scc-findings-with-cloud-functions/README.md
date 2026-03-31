@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Security Command Center, Cloud Functions, Automation, Security
+Tags: GCP, Security Command Center, Cloud Function, Automation, Security
 
 Description: Build automated remediation workflows that respond to Security Command Center findings using Cloud Functions and Pub/Sub on Google Cloud.
 

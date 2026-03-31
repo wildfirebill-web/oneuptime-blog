@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, File Management, DevOps, Containers, Operations
+Tags: Portainer, Docker, File Management, DevOps, Container, Operation
 
 Description: Use Portainer's file browser and Docker CLI to copy files into running containers and extract files from containers for debugging, configuration updates, and data export.
 

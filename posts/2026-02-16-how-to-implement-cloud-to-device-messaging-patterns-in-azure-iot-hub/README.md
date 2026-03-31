@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure IoT Hub, Cloud-to-Device, Messaging Patterns, IoT Communication, Direct Methods, Device Twins, Azure Cloud
+Tags: Azure IoT Hub, Cloud-to-Device, Messaging Patterns, IoT Communication, Direct Methods, Device Twin, Azure Cloud
 
 Description: A practical guide to implementing cloud-to-device messaging patterns in Azure IoT Hub including direct methods, desired properties, and C2D messages.
 

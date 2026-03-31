@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, RBAC, Security, Authorization, Operations
+Tags: MongoDB, RBAC, Security, Authorization, Operation
 
 Description: A comprehensive guide to MongoDB's Role-Based Access Control system, covering privilege design, role hierarchies, resource scoping, and access control best practices for production.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Pods, DevOps, Container Orchestration
+Tags: Podman, REST API, Pod, DevOps, Container Orchestration
 
 Description: Learn how to create, manage, and orchestrate Podman pods using the REST API to group containers that share network namespaces and resources.
 

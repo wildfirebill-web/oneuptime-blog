@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Top-K, Structure Metadata, Diagnostics
+Tags: Redis, Top-K, Structure Metadata, Diagnostic
 
 Description: Learn how to use TOPK.INFO in Redis to inspect Top-K structure parameters including k, width, depth, and decay settings.
 

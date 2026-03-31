@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Ephemeral Values, Provisioners, Security, Infrastructure as Code, DevOps
+Tags: OpenTofu, Ephemeral Values, Provisioner, Security, Infrastructure as Code, DevOps
 
 Description: A guide to using ephemeral values in OpenTofu provisioners to pass secrets and credentials to provisioner scripts without persisting them in state.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Locust, Scalability, Load Testing, Performance Testing, Kubernetes, Distributed Systems
+Tags: Locust, Scalability, Load Testing, Performance Testing, Kubernetes, Distributed System
 
 Description: Learn strategies for scaling Locust to generate massive load, from optimizing single machines to orchestrating thousands of workers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Functions, JSON, YAML, Base64, Format Conversion
+Tags: OpenTofu, Function, JSON, YAML, Base64, Format Conversion
 
 Description: Learn how to convert between JSON, YAML, Base64, and other data formats using OpenTofu built-in functions for configuration transformation and interoperability.
 

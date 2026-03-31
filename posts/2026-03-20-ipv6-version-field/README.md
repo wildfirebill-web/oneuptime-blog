@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Headers, Networking, Protocol, Packet Structure
+Tags: IPv6, Header, Networking, Protocol, Packet Structure
 
 Description: Understand the 4-bit Version field in the IPv6 header, its value, why it matters, and how it is used to distinguish IPv6 from IPv4 packets at the packet level.
 

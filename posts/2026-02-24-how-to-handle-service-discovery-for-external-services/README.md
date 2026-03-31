@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Service Discovery, External Services, ServiceEntry, Kubernetes
+Tags: Istio, Service Discovery, External Service, ServiceEntry, Kubernetes
 
 Description: Register and manage external services in Istio's service registry using ServiceEntry for proper traffic management and observability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, AMD, GPU, ROCm, Containers, Linux
+Tags: Podman, AMD, GPU, ROCm, Container, Linux
 
 Description: A step-by-step guide to running AMD GPU-accelerated containers with Podman, covering AMDGPU driver setup, ROCm configuration, and practical compute examples.
 

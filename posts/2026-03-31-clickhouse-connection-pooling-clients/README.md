@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Connection Pooling, Performance, Clients, HTTP, Python, Node.js
+Tags: ClickHouse, Connection Pooling, Performance, Client, HTTP, Python, Node.js
 
 Description: Configure connection pooling for ClickHouse clients in Python, Node.js, and Go to reduce connection overhead and improve query throughput.
 

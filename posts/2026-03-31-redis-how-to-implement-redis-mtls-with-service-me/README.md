@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, mTLS, Security, TLS, Certificates, Service Mesh, Kubernetes
+Tags: Redis, mTLS, Security, TLS, Certificate, Service Mesh, Kubernetes
 
 Description: Step-by-step guide to securing Redis connections with mutual TLS (mTLS) using certificates, Redis TLS configuration, and service mesh integration.
 

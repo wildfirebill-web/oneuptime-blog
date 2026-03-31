@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Dynamic
+Tags: ClickHouse, SQL, Data Type, Dynamic
 
 Description: Learn how ClickHouse's Dynamic type stores any value at runtime with type inference, how to access typed variants, and when to use it.
 

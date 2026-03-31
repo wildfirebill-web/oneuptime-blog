@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Workstations, JetBrains, IntelliJ IDEA, Java, Development Environments
+Tags: GCP, Cloud Workstations, JetBrains, IntelliJ IDEA, Java, Development Environment
 
 Description: Step-by-step guide to configuring JetBrains IntelliJ IDEA as your remote IDE in Google Cloud Workstations for cloud-based Java development workflows.
 

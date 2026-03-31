@@ -1,6 +1,6 @@
 # How to Install MySQL Shell (mysqlsh) on Linux
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Shell, Installation, Linux, Database
 

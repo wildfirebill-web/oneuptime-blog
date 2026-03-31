@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Runbook, Upgrade, Operations
+Tags: Istio, Kubernetes, Runbook, Upgrade, Operation
 
 Description: A detailed runbook for upgrading Istio in production clusters using canary upgrades with pre-checks, validation steps, and rollback procedures.
 

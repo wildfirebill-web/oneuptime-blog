@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Helm, Upgrade, Sequencing, Kubernetes
 
-Description: Learn the correct upgrade sequence for Rook Helm charts - upgrading rook-ceph operator before rook-ceph-cluster to avoid version mismatches and failures.
+Description: Learn the correct upgrade sequence for Rook Helm charts - upgrading rook-ceph operator before rook-ceph-cluster to avoid version mismatches.
 
 ---
 

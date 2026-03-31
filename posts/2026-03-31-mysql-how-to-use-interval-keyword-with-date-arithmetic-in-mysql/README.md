@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Interval, Date Arithmetic, Date Functions, Sql
+Tags: MySQL, Interval, Date Arithmetic, Date Function, SQL
 
 Description: Learn how to use MySQL's INTERVAL keyword with DATE_ADD() and DATE_SUB() to add or subtract time units from date and datetime values.
 

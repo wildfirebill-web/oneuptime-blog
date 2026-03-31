@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Zabbix, Templates, Monitoring, Customization, Linux
+Tags: RHEL, Zabbix, Template, Monitoring, Customization, Linux
 
 Description: Build custom Zabbix templates to monitor specific RHEL services, including custom items, triggers, graphs, and discovery rules.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Cephfs, Storage Pools, Kubernetes
+Tags: Rook, Ceph, CephFS, Storage Pool, Kubernetes
 
 Description: Learn how to configure multiple data pools for a CephFS filesystem in Rook to store different types of data with varying replication or erasure coding settings.
 

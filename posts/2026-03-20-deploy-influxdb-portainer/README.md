@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, InfluxDB, Time Series, Metrics, Telegraf, Grafana
+Tags: Portainer, InfluxDB, Time Series, Metric, Telegraf, Grafana
 
 Description: Learn how to deploy InfluxDB 2.x via Portainer for time-series data storage, along with Telegraf for metrics collection and Grafana for visualization.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Update, Resource Limits, Cgroups, Memory, CPU, Live configuration
+Tags: Docker, Docker Update, Resource Limit, Cgroups, Memory, CPU, Live configuration
 
 Description: Learn how to modify CPU, memory, and restart policies on running Docker containers without downtime using docker update.
 

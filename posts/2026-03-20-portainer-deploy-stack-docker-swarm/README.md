@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Stacks, Deployment, DevOps
+Tags: Portainer, Docker Swarm, Stack, Deployment, DevOps
 
 Description: Learn how to deploy multi-service Docker Compose stacks on a Docker Swarm cluster using Portainer.
 

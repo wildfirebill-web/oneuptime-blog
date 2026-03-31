@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Timoni, Values, Configuration
+Tags: Flux, Kubernetes, GitOps, Timoni, Value, Configuration
 
 Description: A practical guide to configuring Timoni module values for Flux sync operations, covering value types, defaults, overrides, and validation.
 

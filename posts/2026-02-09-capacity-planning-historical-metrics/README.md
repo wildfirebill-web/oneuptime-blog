@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Capacity Planning, Operations
+Tags: Kubernetes, Capacity Planning, Operation
 
 Description: Learn how to perform effective capacity planning for Kubernetes clusters by analyzing historical resource metrics with practical examples and forecasting techniques.
 

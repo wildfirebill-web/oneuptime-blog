@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Resource Quotas, Multi-Tenant, Teams, Resource Management
+Tags: Portainer, Docker, Resource Quota, Multi-Tenant, Team, Resource Management
 
 Description: Set CPU, memory, and container count limits per team in Portainer to prevent resource starvation between tenants sharing the same Docker infrastructure.
 

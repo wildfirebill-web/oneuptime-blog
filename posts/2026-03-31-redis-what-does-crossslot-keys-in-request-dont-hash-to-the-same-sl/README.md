@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, CROSSSLOT, Hash Slots, Multi-Key Operations, Troubleshooting
+Tags: Redis, Cluster, CROSSSLOT, Hash Slot, Multi-Key Operations, Troubleshooting
 
 Description: Understand why Redis Cluster returns CROSSSLOT for multi-key operations and learn how to use hash tags to co-locate related keys on the same hash slot.
 

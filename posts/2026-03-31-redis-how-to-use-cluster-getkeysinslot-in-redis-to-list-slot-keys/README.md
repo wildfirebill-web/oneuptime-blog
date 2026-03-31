@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Hash Slots, Keys, Operations
+Tags: Redis, Cluster, Hash Slot, Key, Operation
 
 Description: Learn how to use CLUSTER GETKEYSINSLOT in Redis to retrieve keys stored in a specific hash slot, useful for slot migration and debugging.
 

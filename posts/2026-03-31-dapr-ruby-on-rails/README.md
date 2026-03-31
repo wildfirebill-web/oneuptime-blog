@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Ruby on Rails, Microservice, Ruby, Service Invocation
+Tags: Dapr, Ruby On Rail, Microservice, Ruby, Service Invocation
 
 Description: Add Dapr capabilities to Ruby on Rails applications for service invocation, state management, and pub/sub in a Rails microservices architecture.
 

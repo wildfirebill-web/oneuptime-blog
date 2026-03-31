@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Scaling, Cluster Expansion, Sharding, Operations
+Tags: ClickHouse, Scaling, Cluster Expansion, Sharding, Operation
 
 Description: Expand a ClickHouse cluster by adding new shards or replicas without downtime, including config updates, data redistribution, and validation steps.
 

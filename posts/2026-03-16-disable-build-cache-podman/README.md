@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Cache, No-Cache
+Tags: Podman, Container, DevOps, Container Image, Build, Cache, No-Cache
 
 Description: Learn how to disable the build cache in Podman for clean builds, troubleshooting stale layers, and ensuring reproducible image builds.
 

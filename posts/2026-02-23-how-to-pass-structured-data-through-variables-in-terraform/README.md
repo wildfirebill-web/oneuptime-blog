@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Variables, Data Structures, Modules, Infrastructure as Code
+Tags: Terraform, HCL, Variable, Data Structure, Module, Infrastructure as Code
 
 Description: Learn how to define and pass complex data structures like objects, lists of objects, and nested maps through Terraform variables for flexible and type-safe module interfaces.
 

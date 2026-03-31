@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Connection Pooling, Performance, Application Development
+Tags: MongoDB, Connection Pooling, Performance, Application Development
 
 Description: Learn how to configure MongoDB connection pool settings in drivers and server configuration to optimize database performance and prevent connection exhaustion.
 

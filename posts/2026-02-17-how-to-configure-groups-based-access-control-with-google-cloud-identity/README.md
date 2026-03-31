@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Identity, Groups, IAM, Access Control, RBAC
+Tags: GCP, Cloud Identity, Group, IAM, Access Control, RBAC
 
 Description: Learn how to implement groups-based access control in Google Cloud using Cloud Identity groups to simplify IAM management and enforce consistent permissions across projects.
 

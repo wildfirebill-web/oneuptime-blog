@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Resource Detection, Attributes, Kubernetes
+Tags: OpenTelemetry, Resource Detection, Attribute, Kubernetes
 
 Description: Troubleshoot missing resource attributes when the resource detection processor fails to read container or cloud metadata.
 

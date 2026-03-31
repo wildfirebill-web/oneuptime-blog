@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Faceted Navigation, Search, Sets, Sorted Sets, E-commerce
+Tags: Redis, Faceted Navigation, Search, Set, Sorted Set, E-Commerce
 
 Description: Build fast faceted navigation (filtering by category, price, brand, etc.) using Redis sets and sorted sets to power real-time search facets at scale.
 

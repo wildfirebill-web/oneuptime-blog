@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, JOIN, Query Optimization, Performance, Best Practice
+Tags: ClickHouse, Join, Query Optimization, Performance, Best Practice
 
 Description: Explains why large JOIN operations are expensive in ClickHouse and what alternatives - such as dictionaries and denormalization - work better at scale.
 

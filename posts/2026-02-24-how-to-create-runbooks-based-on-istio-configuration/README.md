@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Runbook, Operations, Troubleshooting, Incident Response
+Tags: Istio, Runbook, Operation, Troubleshooting, Incident Response
 
 Description: Build operational runbooks that leverage Istio configuration and telemetry for faster incident response and systematic troubleshooting.
 

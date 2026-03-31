@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, VXLAN, GRE, Overlay Network, Comparison, Networking, SDN, Containers
+Tags: Linux, VXLAN, GRE, Overlay Network, Comparison, Networking, SDN, Container
 
 Description: Compare VXLAN and GRE tunneling protocols for overlay network use cases, covering scalability, overhead, multicast support, and typical deployment scenarios.
 

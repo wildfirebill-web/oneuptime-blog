@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Composite Actions, Reusability, CI/CD, DevOps, Automation
+Tags: GitHub Action, Composite Actions, Reusability, CI/CD, DevOps, Automation
 
 Description: Learn how to build composite actions in GitHub Actions to encapsulate reusable steps. This guide covers action.yml structure, inputs, outputs, and patterns for creating maintainable action libraries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Cloning
+Tags: Podman, Container, DevOps, Pod, Cloning
 
 Description: Learn how to clone a Podman pod to create a duplicate with the same configuration.
 

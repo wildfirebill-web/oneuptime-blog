@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Weekday, Date Functions, Day Of Week, Sql
+Tags: MySQL, Weekday, Date Function, Day Of Week, SQL
 
 Description: Learn how to use MySQL's WEEKDAY() function to get the day-of-week index (Monday=0 to Sunday=6) and apply it to business day filtering.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Spring Boot, Java, Configuration, Environments, Profiles, DevOps
+Tags: Spring Boot, Java, Configuration, Environment, Profiles, DevOps
 
 Description: Learn how to use Spring Profiles to manage environment-specific configuration for development, staging, and production environments with practical examples.
 

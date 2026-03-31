@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, Apollo Federation, IPv6, Microservices, Gateway
+Tags: GraphQL, Apollo Federation, IPv6, Microservice, Gateway
 
 Description: Configure Apollo Federation gateway and subgraph services to communicate over IPv6 in microservices architectures.
 

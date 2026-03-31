@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, SELinux, Containers, Linux, Security
+Tags: Podman, SELinux, Container, Linux, Security
 
 Description: A comprehensive guide to understanding and resolving SELinux denials when running Podman containers, covering volume labels, context types, booleans, and custom policies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Replication, Queue, Database, Operations
+Tags: ClickHouse, Replication, Queue, Database, Operation
 
 Description: Learn how to read, diagnose, and manage the ClickHouse replication queue, including how to clear stuck tasks and prioritize queue entries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, Debug Logs, Support, Diagnostics, Logging
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, Debug Logs, Support, Diagnostic, Logging
 
 Description: Learn how to collect comprehensive debug logs and diagnostic information from Flux controllers to include in support tickets and bug reports for faster resolution.
 

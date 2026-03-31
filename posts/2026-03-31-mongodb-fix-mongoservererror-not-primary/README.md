@@ -33,7 +33,7 @@ Look for the member with `"stateStr": "PRIMARY"`. If no member is primary, the c
 
 Always use the full replica set connection string so the driver can discover and track the primary automatically:
 
-```
+```text
 mongodb://host1:27017,host2:27017,host3:27017/?replicaSet=myReplicaSet
 ```
 

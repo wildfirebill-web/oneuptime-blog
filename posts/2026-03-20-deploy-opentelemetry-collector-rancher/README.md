@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, OpenTelemetry, Observability, Traces, Metrics, Logs
+Tags: Rancher, OpenTelemetry, Observability, Trace, Metric, Log
 
 Description: Deploy the OpenTelemetry Collector on Rancher as a DaemonSet and Gateway, configure pipelines to route telemetry to multiple backends.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Synchronous Instruments, Asynchronous Instruments, Observability, Python, Performance
+Tags: OpenTelemetry, Metric, Synchronous Instruments, Asynchronous Instruments, Observability, Python, Performance
 
 Description: Understand the differences between synchronous and asynchronous metric instruments in OpenTelemetry and learn when to use each type with practical examples.
 

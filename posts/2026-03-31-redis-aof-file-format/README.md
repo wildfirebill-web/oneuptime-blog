@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Persistence, AOF, Internals, Durability
+Tags: Redis, Persistence, AOF, Internal, Durability
 
 Description: Learn the text-based structure of Redis AOF files, how commands are appended, how rewrites compact the log, and how to inspect and repair AOF files.
 

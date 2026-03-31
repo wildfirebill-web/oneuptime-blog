@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Message Queues, Persistence, Storage, Durability
+Tags: Rancher, Kubernetes, Message Queue, Persistence, Storage, Durability
 
 Description: Configure persistent message storage for RabbitMQ, Kafka, and NATS on Rancher to ensure messages survive pod restarts and node failures.
 

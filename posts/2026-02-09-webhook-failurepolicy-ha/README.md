@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Admission Webhooks, High Availability, Reliability, Operations
+Tags: Kubernetes, Admission Webhook, High Availability, Reliability, Operation
 
 Description: Learn how to configure webhook failure policies, implement high availability for admission webhooks, handle webhook failures gracefully.
 

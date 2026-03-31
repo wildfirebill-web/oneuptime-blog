@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, LoadBalancer, Services, Dual-Stack, Cloud Load Balancer
+Tags: Kubernetes, IPv6, LoadBalancer, Service, Dual-Stack, Cloud Load Balancer
 
 Description: Configure Kubernetes LoadBalancer Services to receive IPv6 external IPs, set up dual-stack load balancers on AWS, GCP, and Azure, and verify external IPv6 connectivity to Kubernetes services.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Content-Based Routing, Messaging, Microservices
+Tags: Dapr, Pub/Sub, Content-Based Routing, Messaging, Microservice
 
 Description: Implement content-based routing in Dapr pub/sub to route messages to different handlers based on CloudEvent attributes or payload content.
 

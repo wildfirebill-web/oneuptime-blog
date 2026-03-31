@@ -1,6 +1,6 @@
 # How to Start and Stop MySQL on macOS
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Service, macOS, Administration, Homebrew
 

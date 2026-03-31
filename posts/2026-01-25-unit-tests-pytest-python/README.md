@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Testing, Pytest, Unit Tests, TDD, Quality Assurance
+Tags: Python, Testing, Pytest, Unit Test, TDD, Quality Assurance
 
 Description: Learn how to write unit tests in Python using pytest. This guide covers test basics, fixtures, parametrization, mocking, and best practices for maintaining quality code.
 

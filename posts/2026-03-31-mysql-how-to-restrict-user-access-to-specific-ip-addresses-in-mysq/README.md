@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, Access Control, Ip Restrictions, Administration
+Tags: MySQL, Security, Access Control, IP Restriction, Administration
 
 Description: Learn how to create MySQL user accounts that are restricted to specific IP addresses or subnets, preventing unauthorized access from unknown hosts.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bitmap, BITOP, Bit, Analytics
+Tags: Redis, Bitmap, BITOP, BIT, Analytics
 
 Description: Learn how to use BITOP to perform AND, OR, XOR, and NOT bitwise operations across multiple Redis string bitmaps and store the result.
 

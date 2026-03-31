@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, CRIU, Containers, Live Checkpoint, DevOps
+Tags: Podman, CRIU, Container, Live Checkpoint, DevOps
 
 Description: Learn how to create a checkpoint of a running Podman container without stopping it, enabling live snapshots for backup, debugging, and state preservation while the container keeps serving traffic.
 

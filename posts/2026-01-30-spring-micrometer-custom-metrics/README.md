@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Metrics, Monitoring
+Tags: Java, Spring Boot, Metric, Monitoring
 
 Description: Add custom application metrics in Spring Boot using Micrometer with counters, gauges, timers, and distribution summaries for comprehensive observability.
 

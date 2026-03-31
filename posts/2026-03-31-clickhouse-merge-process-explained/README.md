@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, MergeTree, Merge, Internals, Storage
+Tags: ClickHouse, MergeTree, Merge, Internal, Storage
 
 Description: Understand how ClickHouse's background merge process works - how parts are selected, sorted, written, and replaced - and how to monitor and tune it.
 

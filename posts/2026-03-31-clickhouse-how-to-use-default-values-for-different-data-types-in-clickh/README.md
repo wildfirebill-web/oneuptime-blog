@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Data Types, Default Values, Schema Design, DDL
+Tags: ClickHouse, Data Type, Default Values, Schema Design, DDL
 
 Description: Learn how default values work in ClickHouse for different data types, and how to set DEFAULT, MATERIALIZED, and ALIAS expressions on columns.
 

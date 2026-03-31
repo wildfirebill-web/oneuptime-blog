@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Persistent Volumes, Storage, DevOps
+Tags: Portainer, Kubernetes, Persistent Volume, Storage, DevOps
 
 Description: Learn how to create Kubernetes Persistent Volumes using YAML manifests in Portainer for static storage provisioning.
 

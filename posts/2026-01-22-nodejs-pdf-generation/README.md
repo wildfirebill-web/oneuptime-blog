@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, PDF, Puppeteer, PDFKit, Documents
+Tags: NodeJS, PDF, Puppeteer, PDFKit, Document
 
 Description: Learn how to generate PDF documents in Node.js using Puppeteer, PDFKit, and other libraries for invoices, reports, and certificates.
 

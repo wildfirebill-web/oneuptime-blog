@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Nginx, SSL, HTTPS, Docker, Certificates
+Tags: Portainer, Nginx, SSL, HTTPS, Docker, Certificate
 
 Description: Learn how to configure SSL/TLS certificates for Portainer using Nginx Proxy Manager, enabling secure HTTPS access to your Portainer dashboard.
 

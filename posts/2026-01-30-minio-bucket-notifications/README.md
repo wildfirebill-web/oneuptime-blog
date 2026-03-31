@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MinIO, ObjectStorage, EventDriven, Notifications
+Tags: MinIO, ObjectStorage, EventDriven, Notification
 
 Description: Learn how to configure MinIO bucket notifications to trigger event-driven workflows when objects are created, accessed, or deleted.
 

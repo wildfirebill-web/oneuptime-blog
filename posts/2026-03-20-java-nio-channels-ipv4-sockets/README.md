@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, NIO, Channels, IPv4, Sockets, Non-Blocking, Networking
+Tags: Java, NIO, Channel, IPv4, Socket, Non-Blocking, Networking
 
 Description: Learn how to use Java NIO's ServerSocketChannel and SocketChannel for high-performance IPv4 socket programming with non-blocking I/O.
 

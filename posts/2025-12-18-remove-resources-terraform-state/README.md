@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, State Management, Operations
+Tags: Terraform, Infrastructure as Code, DevOps, State Management, Operation
 
 Description: Learn how to safely remove resources from Terraform state without destroying them. This guide covers terraform state rm, moved blocks, import workflows, and best practices for state manipulation.
 

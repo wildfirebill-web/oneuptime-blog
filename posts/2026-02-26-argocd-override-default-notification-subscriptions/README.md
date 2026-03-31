@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Notification
 
 Description: Learn strategies to override and customize ArgoCD default notification subscriptions for specific applications, including conditional routing, trigger filtering, and template customization.
 

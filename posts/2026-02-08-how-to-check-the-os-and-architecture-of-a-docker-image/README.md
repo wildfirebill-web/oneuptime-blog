@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Images, Architecture, Multi-Platform, DevOps, ARM, AMD64
+Tags: Docker, Image, Architecture, Multi-Platform, DevOps, ARM, AMD64
 
 Description: Discover how to check the operating system and CPU architecture of any Docker image using inspect, manifest, and registry commands.
 

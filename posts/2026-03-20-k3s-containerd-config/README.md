@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Containerd, Container Runtime, Kubernetes, Configuration, SUSE Rancher
+Tags: k3s, Containerd, Container Runtime, Kubernetes, Configuration, SUSE Rancher
 
 Description: Learn how to configure K3s with containerd including private registry authentication, mirror configuration, runtime settings, and debugging containerd issues.
 

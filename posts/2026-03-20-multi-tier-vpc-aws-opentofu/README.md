@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, VPC, Multi-Tier, Subnets, NAT Gateway, Security Groups, Infrastructure as Code
+Tags: OpenTofu, AWS, VPC, Multi-Tier, Subnets, NAT Gateway, Security Group, Infrastructure as Code
 
 Description: Learn how to build a production-grade multi-tier AWS VPC with public, private, and database subnets using OpenTofu, including NAT gateways, route tables, and network ACLs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Collections, Migration, Capped Collections, Time Series
+Tags: MongoDB, Collection, Migration, Capped Collection, Time Series
 
 Description: Learn how to convert regular MongoDB collections to capped or time series collections, and how to migrate data between collection types safely.
 

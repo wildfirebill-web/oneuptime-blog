@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Schema design, Performance, Write, Indexing
+Tags: MongoDB, Schema Design, Performance, Write, Indexing
 
 Description: Learn how to model MongoDB documents, choose index strategies, and configure write concern to maximize throughput in write-heavy applications.
 

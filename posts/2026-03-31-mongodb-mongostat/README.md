@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Operations, Performance, Tools
+Tags: MongoDB, Monitoring, Operation, Performance, Tool
 
 Description: Learn how to use mongostat to view real-time MongoDB operation rates, connection counts, memory usage, and replication status from the command line.
 

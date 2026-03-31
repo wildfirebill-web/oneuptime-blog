@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, GitHub Actions, CI/CD, Service Container, Testing
+Tags: Redis, GitHub Action, CI/CD, Service Container, Testing
 
 Description: Learn how to run Redis as a service container in GitHub Actions workflows for integration testing, caching, and session storage during CI pipelines.
 

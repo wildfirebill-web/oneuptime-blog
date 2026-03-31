@@ -1,8 +1,8 @@
-# How to Use RADOS Namespaces for Data Isolation in Rook
+# How to Use RADOS Namespaces for Data Isolation in Rook Object Store
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Object Storage, Rados, Namespaces, Isolation, Kubernetes
+Tags: Rook, Ceph, Object Storage, RADOS, Namespace, Isolation, Kubernetes
 
 Description: Learn how to use RADOS namespaces in Rook to isolate tenant data within a shared Ceph pool while maintaining logical separation without separate pools.
 

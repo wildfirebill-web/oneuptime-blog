@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Capacity Planning, Operations
+Tags: Redis, Memory, Capacity Planning, Operation
 
 Description: Estimate Redis memory requirements before deployment using per-key overhead formulas, encoding awareness, and replication multipliers for accurate capacity planning.
 

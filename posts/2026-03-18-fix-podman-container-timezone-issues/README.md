@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Timezone, Linux, DevOps
+Tags: Podman, Container, Timezone, Linux, DevOps
 
 Description: Learn how to fix timezone mismatches in Podman containers by configuring the TZ environment variable, mounting host timezone data, and setting timezones in Dockerfiles.
 

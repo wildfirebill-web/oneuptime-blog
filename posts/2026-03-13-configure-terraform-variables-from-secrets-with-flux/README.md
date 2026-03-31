@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Tofu Controller, Terraform, Secrets, Variables, GitOps, Kubernetes, Security
+Tags: Flux CD, Tofu Controller, Terraform, Secret, Variable, GitOps, Kubernetes, Security
 
 Description: Pass sensitive Terraform variables from Kubernetes Secrets using the Tofu Controller to securely inject credentials and sensitive configuration into Terraform modules.
 

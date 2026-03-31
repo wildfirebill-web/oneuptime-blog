@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, IPv4, Troubleshooting, Connectivity, Containers
+Tags: Docker, Networking, IPv4, Troubleshooting, Connectivity, Container
 
 Description: Systematically diagnose Docker container IPv4 connectivity failures by checking network attachment, IP assignment, DNS, iptables rules, and routing from within the container.
 

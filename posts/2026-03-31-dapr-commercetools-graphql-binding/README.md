@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Commercetools, GraphQL, Binding, E-commerce
+Tags: Dapr, Commercetools, GraphQL, Binding, E-Commerce
 
 Description: Learn how to configure and use the Dapr commercetools output binding to query and mutate your commercetools store data via GraphQL from microservices.
 

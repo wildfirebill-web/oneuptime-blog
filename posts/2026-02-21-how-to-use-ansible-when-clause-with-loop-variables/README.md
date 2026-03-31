@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Conditional, Loops, Automation
+Tags: Ansible, Conditional, Loop, Automation
 
 Description: Learn how to combine Ansible when conditionals with loop variables to selectively process items during iteration in your playbooks.
 

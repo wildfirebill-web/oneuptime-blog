@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NestJS, Event Driven, CQRS, TypeScript, Microservices
+Tags: NestJS, Event Driven, CQRS, TypeScript, Microservice
 
 Description: Build event-driven architectures in NestJS for scalable, loosely coupled, and maintainable backend systems.
 

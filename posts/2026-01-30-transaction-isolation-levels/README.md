@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Database, Transactions, ACID, Concurrency
+Tags: Database, Transaction, ACID, Concurrency
 
 Description: Learn to implement transaction isolation levels for data consistency and concurrent access control.
 

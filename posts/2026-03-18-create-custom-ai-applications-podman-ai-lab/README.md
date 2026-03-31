@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, AI, Machine Learning, Application Development, Python, FastAPI
+Tags: Podman, Container, DevOps, AI, Machine Learning, Application Development, Python, FastAPI
 
 Description: Learn how to build and deploy custom AI-powered applications using Podman AI Lab as the local inference backend.
 

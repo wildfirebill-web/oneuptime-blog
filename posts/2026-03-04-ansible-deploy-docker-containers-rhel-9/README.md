@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible, Docker, Containers, Automation, Linux
+Tags: RHEL, Ansible, Docker, Container, Automation, Linux
 
 Description: Automate Docker installation and container deployment on RHEL using Ansible playbooks for reproducible container infrastructure.
 

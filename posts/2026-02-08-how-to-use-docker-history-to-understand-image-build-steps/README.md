@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker history, Images, Layer, Debugging, Optimization, Dockerfile
+Tags: Docker, Docker history, Image, Layer, Debugging, Optimization, Dockerfile
 
 Description: Learn how to use docker history to inspect image layers, debug builds, and optimize Docker image size.
 

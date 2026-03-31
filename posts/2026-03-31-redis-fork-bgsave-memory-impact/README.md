@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, BGSAVE, Performance, Internals
+Tags: Redis, BGSAVE, Performance, Internal
 
 Description: Understand how Redis uses fork and copy-on-write during BGSAVE, why memory can spike during snapshots, and how to minimize the performance impact.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Docker Compose, Development, Local Environment, Microservices
+Tags: Docker, Docker Compose, Development, Local Environment, Microservice
 
 Description: Learn how to use Docker Compose to create reproducible local development environments with databases, caches, and services.
 

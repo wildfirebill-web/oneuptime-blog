@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, ZRANK, ZREVRANK, Leaderboard
+Tags: Redis, Sorted Set, ZRANK, ZREVRANK, Leaderboard
 
 Description: Learn how to use ZRANK and ZREVRANK in Redis to retrieve a member's rank within a sorted set, from both the lowest and highest score perspectives.
 

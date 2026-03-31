@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Metrics, Self-Hosted, Prometheus, Grafana
+Tags: ClickHouse, Metric, Self-Hosted, Prometheus, Grafana
 
 Description: Build a self-hosted metrics platform with ClickHouse, Prometheus, and Grafana for long-term metrics storage with SQL-based analysis and lower costs.
 

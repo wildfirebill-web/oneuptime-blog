@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bitfield, Bit Operations, Memory Optimization, Commands
+Tags: Redis, Bitfield, Bit Operation, Memory Optimization, Command
 
 Description: Learn how to use BITFIELD in Redis to store and manipulate multiple integer fields packed into a single string, enabling memory-efficient compact data storage.
 

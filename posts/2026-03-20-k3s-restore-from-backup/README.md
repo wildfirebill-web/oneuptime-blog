@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Backup, Disaster Recovery, DevOps
+Tags: k3s, Kubernetes, Backup, Disaster Recovery, DevOps
 
 Description: Step-by-step instructions for restoring a K3s cluster from an etcd snapshot or SQLite backup after data loss or corruption.
 

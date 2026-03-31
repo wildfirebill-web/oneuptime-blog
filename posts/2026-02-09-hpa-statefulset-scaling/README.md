@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, HPA, StatefulSets
+Tags: Kubernetes, HPA, StatefulSet
 
 Description: Learn how to configure Horizontal Pod Autoscaler to scale StatefulSet workloads while maintaining state consistency and ordered pod management.
 

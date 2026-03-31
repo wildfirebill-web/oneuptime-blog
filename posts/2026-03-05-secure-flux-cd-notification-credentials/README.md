@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Security, Notifications, Secrets Management
+Tags: Flux CD, GitOps, Kubernetes, Security, Notification, Secrets Management
 
 Description: Learn how to securely manage credentials for Flux CD notification providers such as Slack, Microsoft Teams, PagerDuty, and webhook endpoints.
 

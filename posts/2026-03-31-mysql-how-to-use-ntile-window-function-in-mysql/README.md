@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ntile, Window Functions, Sql, Analytics
+Tags: MySQL, NTILE, Window Function, SQL, Analytics
 
 Description: Learn how to use MySQL's NTILE() window function to distribute rows into a specified number of buckets for percentile analysis and data segmentation.
 

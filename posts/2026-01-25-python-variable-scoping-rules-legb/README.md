@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Scope, Variables, Functions, Closures
+Tags: Python, Scope, Variable, Function, Closures
 
 Description: Master Python's LEGB scoping rules to understand how variable names are resolved. Learn about local, enclosing, global, and built-in scopes with practical examples.
 

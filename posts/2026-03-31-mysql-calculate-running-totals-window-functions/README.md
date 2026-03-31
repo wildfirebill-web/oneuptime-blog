@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Window Function, Running Total, SUM, Analytics
+Tags: MySQL, Window Function, Running Total, Sum, Analytics
 
 Description: Learn how to calculate running totals in MySQL using SUM() OVER() window functions with ORDER BY, PARTITION BY, and frame clauses for accurate cumulative sums.
 

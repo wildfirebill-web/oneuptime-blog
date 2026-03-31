@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Business Edition, Audit Logs, Security, Compliance
+Tags: Portainer, Business Edition, Audit Log, Security, Compliance
 
 Description: Learn how to access and interpret user activity audit logs in Portainer Business Edition for compliance and security monitoring.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, MicroShift, Containers, Edge
+Tags: RHEL, MicroShift, Container, Edge
 
 Description: Deploy containerized workloads at the edge using MicroShift on RHEL 9.
 

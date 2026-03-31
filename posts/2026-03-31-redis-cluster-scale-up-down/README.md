@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Scaling, Sharding, Operations
+Tags: Redis, Cluster, Scaling, Sharding, Operation
 
 Description: Learn how to add and remove shards from a running Redis Cluster, including slot migration and safe node removal procedures.
 

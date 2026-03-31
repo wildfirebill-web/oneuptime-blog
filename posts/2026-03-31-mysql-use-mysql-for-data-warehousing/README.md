@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Data Warehouse, Analytic, Query
+Tags: MySQL, Data Warehouse, Analytics, Query
 
 Description: Learn how to design and implement a data warehouse using MySQL, including schema design, aggregation strategies, and query optimization for analytics.
 

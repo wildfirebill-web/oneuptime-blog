@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Jaeger, Distributed Tracing, Observability, Microservices
+Tags: Ansible, Jaeger, Distributed Tracing, Observability, Microservice
 
 Description: Deploy Jaeger distributed tracing with Ansible including collector, agent, query service and Elasticsearch storage backend.
 

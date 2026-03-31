@@ -1,8 +1,8 @@
 # How to Build Network Capacity Planning with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Network, Capacity planning, Analytics, Tutorial, Infrastructure
+Tags: ClickHouse, Network, Capacity Planning, Analytics, Tutorial, Infrastructure
 
 Description: Learn how to store network flow data in ClickHouse, analyze bandwidth trends, forecast capacity needs, and identify traffic bottlenecks for informed infrastructure planning.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Checkpoints, CRIU, Container State, DevOps
+Tags: Podman, Checkpoint, CRIU, Container State, DevOps
 
 Description: Learn how to use Podman container checkpointing to capture the complete runtime state of a container, including memory, processes, and network connections.
 

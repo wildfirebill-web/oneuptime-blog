@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, SMTP, Email, Bindings, Microservices
+Tags: Dapr, SMTP, Email, Binding, Microservice
 
 Description: Learn how to use the Dapr SMTP output binding to send emails from your microservices without managing SMTP client libraries or connection logic.
 

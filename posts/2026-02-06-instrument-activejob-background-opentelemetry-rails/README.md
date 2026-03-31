@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Ruby, Rails, ActiveJob, Background Jobs, Tracing
+Tags: OpenTelemetry, Ruby, Rails, ActiveJob, Background Job, Tracing
 
 Description: Learn how to add comprehensive OpenTelemetry tracing to ActiveJob background processes in Rails applications for better observability and debugging.
 

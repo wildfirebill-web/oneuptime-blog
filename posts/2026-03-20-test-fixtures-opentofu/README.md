@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, Fixtures, Test Infrastructure, Test Setup
+Tags: OpenTofu, Testing, Fixture, Test Infrastructure, Test Setup
 
 Description: Learn how to create and manage OpenTofu test fixtures - reusable infrastructure configurations that set up prerequisites for module testing and integration tests.
 

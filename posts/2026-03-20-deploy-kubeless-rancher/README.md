@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubeless, Serverless, Kubernetes, Functions
+Tags: Rancher, Kubeless, Serverless, Kubernetes, Function
 
 Description: Guide to deploying Kubeless serverless framework on Rancher for Kubernetes-native function execution.
 

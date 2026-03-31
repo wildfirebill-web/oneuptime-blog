@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, JOINs, Query Optimization, Analytics
+Tags: ClickHouse, SQL, Joins, Query Optimization, Analytics
 
 Description: Learn how to use INNER, LEFT, RIGHT, and FULL JOINs in ClickHouse, understand the performance implications, and apply best practices for efficient joins.
 

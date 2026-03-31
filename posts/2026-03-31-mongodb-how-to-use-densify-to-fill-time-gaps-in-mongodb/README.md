@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $densify, Time Series, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $densify, Time Series, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $densify aggregation stage to fill gaps in time series data by generating synthetic documents for missing time intervals.
 

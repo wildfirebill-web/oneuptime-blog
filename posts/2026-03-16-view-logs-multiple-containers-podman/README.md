@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Monitoring
+Tags: Podman, Container, DevOps, Logging, Monitoring
 
 Description: Learn techniques for viewing and merging logs from multiple Podman containers simultaneously, including labeled output, chronological merging, and pod-level log viewing.
 

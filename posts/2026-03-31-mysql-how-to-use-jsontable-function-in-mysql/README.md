@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Table, Json, Json Functions, Sql
+Tags: MySQL, Json Table, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_TABLE() function to transform JSON arrays and objects into relational rows and columns for use in standard SQL queries.
 

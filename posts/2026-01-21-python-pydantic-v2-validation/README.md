@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Pydantic, Data Validation, Type Safety, FastAPI, API, Models, Serialization, Settings Management
+Tags: Python, Pydantic, Data Validation, Type Safety, FastAPI, API, Model, Serialization, Settings Management
 
 Description: Learn how to validate and serialize data in Python using Pydantic v2. This guide covers model definition, custom validators, computed fields, settings management, and integration with FastAPI.
 

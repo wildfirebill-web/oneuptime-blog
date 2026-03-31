@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: CockroachDB, Go, Golang, Database, Distributed Systems, SQL, PostgreSQL
+Tags: CockroachDB, Go, Golang, Database, Distributed System, SQL, PostgreSQL
 
 Description: Learn how to integrate CockroachDB with Go applications.
 

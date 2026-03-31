@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Docker CE, DevOps
+Tags: RHEL, Docker, Container, Docker CE, DevOps
 
 Description: Learn how to install Docker Community Edition on RHEL, configure it for non-root usage, and set up storage drivers.
 

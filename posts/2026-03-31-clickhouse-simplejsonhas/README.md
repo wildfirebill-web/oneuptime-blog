@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Performance, Query
+Tags: ClickHouse, JSON, Performance, Query
 
 Description: Learn how simpleJSONHas() quickly checks for field existence in flat JSON strings using a heuristic parser in ClickHouse, returning 1 when the key is present and 0 otherwise.
 

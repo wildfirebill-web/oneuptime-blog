@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Pub/Sub, Messaging, Event-Driven, Comparison
+Tags: Redis, Stream, Pub/Sub, Messaging, Event-Driven, Comparison
 
 Description: A comprehensive comparison of Redis Streams and Pub/Sub for messaging workloads, including use cases, performance characteristics, and practical examples to help you choose the right approach.
 

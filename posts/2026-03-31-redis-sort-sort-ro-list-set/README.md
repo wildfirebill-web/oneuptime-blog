@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, SORT, SORT_RO, List, Set, Sorted Set
+Tags: Redis, Sort, SORT_RO, List, Set, Sorted Set
 
 Description: Learn how to use SORT and SORT_RO in Redis to sort lists, sets, and sorted sets by value or external keys, with options for filtering, pagination, and storing results.
 

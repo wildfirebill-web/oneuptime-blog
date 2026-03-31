@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Apache Druid, Metrics, Analytics, Time-Series, Observability
+Tags: OpenTelemetry, Apache Druid, Metric, Analytics, Time-Series, Observability
 
 Description: Learn how to use Apache Druid as a high-performance analytics engine for OpenTelemetry metrics with real-time ingestion and sub-second query performance.
 

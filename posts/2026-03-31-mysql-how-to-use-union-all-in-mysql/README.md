@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, UNION ALL, Set Operations, SQL, Performance
+Tags: MySQL, UNION ALL, Set Operation, SQL, Performance
 
 Description: Learn how to use UNION ALL in MySQL to combine results from multiple SELECT statements while keeping all rows, including duplicates, for better performance.
 

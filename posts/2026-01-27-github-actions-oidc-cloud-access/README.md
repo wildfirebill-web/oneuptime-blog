@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, OIDC, AWS, GCP, Azure, Security, CI/CD, DevOps
+Tags: GitHub Action, OIDC, AWS, GCP, Azure, Security, CI/CD, DevOps
 
 Description: Learn how to use GitHub Actions OIDC to securely access AWS, GCP, and Azure without storing long-lived credentials as secrets.
 

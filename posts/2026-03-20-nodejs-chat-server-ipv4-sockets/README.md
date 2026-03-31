@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, TCP, IPv4, Chat, Networking, Net Module, Sockets
+Tags: Node.js, TCP, IPv4, Chat, Networking, Net Module, Socket
 
 Description: Build a multi-user text chat server in Node.js using raw IPv4 TCP sockets with username registration, public messaging, and direct messages.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Data Structures, Loops, Automation
+Tags: Ansible, Data Structure, Loop, Automation
 
 Description: Learn how to iterate over nested dictionaries, lists of lists, and complex YAML structures in Ansible using loop, dict2items, subelements, and filters.
 

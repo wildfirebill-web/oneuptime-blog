@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CDKTF, CI/CD, GitHub Actions, DevOps
+Tags: Terraform, CDKTF, CI/CD, GitHub Action, DevOps
 
 Description: Learn how to integrate CDKTF with CI/CD pipelines using GitHub Actions, GitLab CI, and other platforms for automated infrastructure deployments.
 

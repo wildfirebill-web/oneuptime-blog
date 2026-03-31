@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Load Testing, Performance, k6, Locust, Microservices, Benchmarking
+Tags: Dapr, Load Testing, Performance, k6, Locust, Microservice, Benchmarking
 
 Description: Learn how to load test Dapr microservices using k6 and Locust, covering service invocation, pub/sub throughput, and state store performance benchmarking.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Communication, DNS
+Tags: Podman, Container, DevOps, Networking, Communication, DNS
 
 Description: Learn how to enable and verify direct communication between Podman containers on shared networks.
 

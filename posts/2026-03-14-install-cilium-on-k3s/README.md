@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, K3s
+Tags: Cilium, Kubernetes, k3s
 
 Description: Complete guide to installing Cilium as the CNI plugin on a K3s Kubernetes cluster, including disabling the default Flannel CNI and configuring Cilium via Helm.
 

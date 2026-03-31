@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Skopeo, Registry, Image Cleanup
+Tags: Podman, Container, DevOps, Skopeo, Registry, Image Cleanup
 
 Description: Learn how to use Skopeo to delete container images and tags from remote registries to manage storage and maintain clean repositories.
 

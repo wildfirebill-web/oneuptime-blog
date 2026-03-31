@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Amazon CloudWatch, Container Insights, Monitoring, Metrics, Kubernetes, AWS, Observability
+Tags: Flux CD, Amazon CloudWatch, Container Insights, Monitoring, Metric, Kubernetes, AWS, Observability
 
 Description: Set up Amazon CloudWatch monitoring for Flux CD controllers including Container Insights, custom metrics, and alerting dashboards.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Channels, Concurrency, Patterns, Goroutines
+Tags: Go, Golang, Channel, Concurrency, Pattern, Goroutines
 
 Description: Master Go channel patterns including fan-out/fan-in, pipelines, cancellation, timeouts, and common concurrent programming idioms.
 

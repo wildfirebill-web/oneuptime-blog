@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Cheat Sheet, Reference, Operations
+Tags: Ceph, Rook, Cheat Sheet, Reference, Operation
 
 Description: Build a Ceph quick-start cheat sheet covering the most frequently used commands for health checks, OSD management, pool operations, and troubleshooting.
 

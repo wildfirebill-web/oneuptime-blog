@@ -1,6 +1,6 @@
 # How to Use LAST_INSERT_ID() in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Function, Auto Increment, Insert, Primary Key
 

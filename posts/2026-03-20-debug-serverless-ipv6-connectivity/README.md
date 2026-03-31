@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Serverless, Debugging, AWS Lambda, Azure Functions, Connectivity
+Tags: IPv6, Serverless, Debugging, AWS Lambda, Azure Function, Connectivity
 
 Description: Debug IPv6 connectivity issues in serverless functions including VPC networking, DNS resolution, and outbound IPv6 connection failures.
 

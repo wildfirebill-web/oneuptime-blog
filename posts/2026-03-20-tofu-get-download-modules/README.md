@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Modules
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Module
 
 Description: Learn how to use tofu get to download and install OpenTofu modules from the registry, GitHub, and other sources without running a full init.
 

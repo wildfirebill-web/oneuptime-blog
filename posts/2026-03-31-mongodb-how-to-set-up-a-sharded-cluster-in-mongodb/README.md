@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sharding, Cluster, Operations, Scalability
+Tags: MongoDB, Sharding, Cluster, Operation, Scalability
 
 Description: Set up a MongoDB sharded cluster from scratch with config servers, shard replica sets, and mongos routers for horizontal scaling.
 

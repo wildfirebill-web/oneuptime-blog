@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Compact, Performance, Storage, Administration, Operations
+Tags: MongoDB, Compact, Performance, Storage, Administration, Operation
 
 Description: Learn how to use MongoDB's compact() command to defragment collections and indexes, reclaim disk space, and improve query performance after heavy delete or update workloads.
 

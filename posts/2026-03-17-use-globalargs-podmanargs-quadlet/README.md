@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Configuration, CLI Arguments
+Tags: Podman, Container, DevOps, Quadlet, Configuration, CLI Arguments
 
 Description: Learn how to pass custom CLI arguments to Podman through Quadlet using the GlobalArgs and PodmanArgs directives.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kafka, Observability, Reliability, Data Pipelines
+Tags: OpenTelemetry, Kafka, Observability, Reliability, Data Pipeline
 
 Description: Learn how to place Apache Kafka between OpenTelemetry Collector tiers to build durable, loss-resistant telemetry pipelines that survive outages and traffic spikes.
 

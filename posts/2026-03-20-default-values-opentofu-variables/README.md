@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Defaults, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Default, Infrastructure as Code, DevOps
 
 Description: A guide to setting and using default values for OpenTofu input variables to simplify configuration management.
 

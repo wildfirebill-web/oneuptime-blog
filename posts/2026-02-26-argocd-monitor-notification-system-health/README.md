@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Monitoring, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Monitoring, Notification
 
 Description: Learn how to monitor the health of your ArgoCD notification system by tracking controller metrics, setting up alerts for delivery failures, and building dashboards for notification visibility.
 

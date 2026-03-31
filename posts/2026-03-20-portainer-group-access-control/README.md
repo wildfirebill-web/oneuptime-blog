@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Groups, Access Control, RBAC, Environment Groups
+Tags: Portainer, Group, Access Control, RBAC, Environment Groups
 
 Description: Use Portainer environment groups to assign access policies to multiple environments simultaneously, simplifying access management at scale.
 

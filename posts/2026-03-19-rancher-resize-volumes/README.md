@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Storage, Persistent Volumes
+Tags: Rancher, Kubernetes, Storage, Persistent Volume
 
 Description: A practical guide to expanding persistent volume sizes in Rancher-managed Kubernetes clusters without data loss.
 

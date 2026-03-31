@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, TLS, External Services, ServiceEntry, Security
+Tags: Istio, TLS, External Service, ServiceEntry, Security
 
 Description: Step-by-step instructions for configuring Istio to originate TLS connections to external services so your application code can use plain HTTP internally.
 

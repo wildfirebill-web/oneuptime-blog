@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Federation, Observability, Tracing, Metrics, Kubernetes
+Tags: Istio, Federation, Observability, Tracing, Metric, Kubernetes
 
 Description: How to build a unified observability stack for federated Istio meshes covering distributed tracing, metrics aggregation, and log correlation.
 

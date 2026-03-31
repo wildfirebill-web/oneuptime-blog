@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Image Automation
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Image Automation
 
 Description: Learn how to set up Flux alerts for ImagePolicy events to track container image updates and policy evaluation results.
 

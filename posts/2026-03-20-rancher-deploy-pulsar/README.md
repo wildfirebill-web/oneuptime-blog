@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Pulsar, Message Queues, Streaming
+Tags: Rancher, Kubernetes, Pulsar, Message Queue, Streaming
 
 Description: Deploy Apache Pulsar on Rancher for multi-tenant, geo-replicated messaging with built-in multi-tenancy, schema registry, and tiered storage.
 

@@ -1,6 +1,6 @@
 # How to Build Connection Health Checks
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Database, Health Check, Monitoring, Reliability
 

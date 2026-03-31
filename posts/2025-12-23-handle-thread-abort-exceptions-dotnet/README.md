@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: .NET, C#, Threading, Exceptions, ASP.NET Core, Debugging
+Tags: .NET, C#, Threading, Exception, ASP.NET Core, Debugging
 
 Description: Learn how to handle ThreadAbortException in .NET applications, understand why it occurs, and implement proper patterns for safe thread termination and cancellation.
 

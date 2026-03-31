@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Security, DevOps, Linux, Permissions
+Tags: Docker, Security, DevOps, Linux, Permission
 
 Description: Configure container user permissions properly to avoid running as root, handle volume ownership, and implement the principle of least privilege in Docker containers.
 

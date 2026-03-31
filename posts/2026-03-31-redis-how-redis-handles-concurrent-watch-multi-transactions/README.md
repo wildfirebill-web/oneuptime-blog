@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Transactions, Concurrency
+Tags: Redis, Transaction, Concurrency
 
 Description: Understand how Redis WATCH with MULTI/EXEC implements optimistic locking, handles concurrent modifications, and when transactions are aborted.
 

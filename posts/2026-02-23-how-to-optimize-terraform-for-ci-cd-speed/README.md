@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, Performance, GitHub Actions, DevOps
+Tags: Terraform, CI/CD, Performance, GitHub Action, DevOps
 
 Description: Reduce Terraform execution time in CI/CD pipelines with caching, parallelism tuning, selective planning, and pipeline architecture improvements.
 

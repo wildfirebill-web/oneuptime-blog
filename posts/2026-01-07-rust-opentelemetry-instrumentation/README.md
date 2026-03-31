@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, OpenTelemetry, Observability, Tracing, Metrics, Logging, Distributed Tracing
+Tags: Rust, OpenTelemetry, Observability, Tracing, Metric, Logging, Distributed Tracing
 
 Description: Learn how to instrument Rust applications with OpenTelemetry for traces, metrics, and structured logs.
 

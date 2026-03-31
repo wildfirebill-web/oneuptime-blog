@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Performance, Query Optimization, Indexes, Database
+Tags: MongoDB, Performance, Query Optimization, Index, Database
 
 Description: Learn how to use MongoDB's explain() method to diagnose and fix slow queries, understand query execution plans, and optimize database performance.
 

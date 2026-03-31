@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Debugging, DevOps
+Tags: Portainer, Docker, Container, Debugging, DevOps
 
 Description: Learn how to view the running processes inside a Docker container using Portainer's built-in top view, equivalent to running docker top.
 

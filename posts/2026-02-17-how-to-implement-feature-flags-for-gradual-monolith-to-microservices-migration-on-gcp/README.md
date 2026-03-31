@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Feature Flags, Microservices, Migration, Cloud Run, Firebase Remote Config
+Tags: GCP, Feature Flag, Microservice, Migration, Cloud Run, Firebase Remote Config
 
 Description: Use feature flags to gradually migrate traffic from a monolithic application to new microservices on GCP, reducing risk and enabling safe rollbacks during the transition.
 

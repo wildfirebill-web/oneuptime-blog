@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Azure Active Directory, Authentication, OAuth, Security, Azure, Identity
+Tags: Azure Function, Azure Active Directory, Authentication, OAuth, Security, Azure, Identity
 
 Description: Secure your Azure Functions HTTP endpoints with Azure Active Directory authentication using built-in App Service authentication and custom token validation.
 

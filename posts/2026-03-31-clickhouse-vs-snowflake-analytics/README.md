@@ -1,8 +1,8 @@
 # ClickHouse vs Snowflake for Analytics
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Snowflake, Analytics, Cloud, Database, Data warehouse
+Tags: ClickHouse, Snowflake, Analytics, Cloud, Database, Data Warehouse
 
 Description: A thorough comparison of ClickHouse and Snowflake for analytics, covering architecture, query performance, cost structure, data sharing, and real-time capabilities.
 

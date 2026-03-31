@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, .NET, Jobs, Scheduler, C#
+Tags: Dapr, .NET, Job, Scheduler, C#
 
 Description: Schedule and manage Dapr Jobs from .NET applications using the Jobs API for one-time and recurring tasks with persistence and callback handling.
 

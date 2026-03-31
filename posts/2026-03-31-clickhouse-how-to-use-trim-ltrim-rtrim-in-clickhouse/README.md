@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, String Functions, trim, ltrim, rtrim, Data Cleaning
+Tags: ClickHouse, String Function, Trim, LTRIM, rtrim, Data Cleaning
 
 Description: Learn how to use trim(), ltrim(), and rtrim() in ClickHouse to remove whitespace and custom characters from string values for data cleaning.
 

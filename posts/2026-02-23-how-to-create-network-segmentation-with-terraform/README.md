@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Network Segmentation, VPC, Security Groups, NACLs, Infrastructure as Code
+Tags: Terraform, AWS, Network Segmentation, VPC, Security Group, NACLs, Infrastructure as Code
 
 Description: Learn how to create network segmentation with Terraform using subnets, security groups, NACLs, and Transit Gateway for defense-in-depth network security on AWS.
 

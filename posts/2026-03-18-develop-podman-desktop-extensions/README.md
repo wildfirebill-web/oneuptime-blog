@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Extensions, Plugin Development, TypeScript
+Tags: Podman, Container, DevOps, Podman Desktop, Extension, Plugin Development, TypeScript
 
 Description: Learn how to develop custom extensions for Podman Desktop to add new features, integrations, and workflows to the container management interface.
 

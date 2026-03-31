@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Performance Benchmarks, Traces, Latency, Baseline
+Tags: OpenTelemetry, Performance Benchmarks, Trace, Latency, Baseline
 
 Description: A step-by-step guide to establishing performance benchmark baselines using OpenTelemetry trace latency data for reliable comparisons.
 

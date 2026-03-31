@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Port Mapping
+Tags: Podman, Container, DevOps, Networking, Port Mapping
 
 Description: Learn how to view and manage container port mappings in Podman using podman port, podman inspect, and podman ps for network troubleshooting.
 

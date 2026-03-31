@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Security, Authentication, Configuration, requirepass
+Tags: Redis, Security, Authentication, Configuration, Requirepass
 
 Description: Learn how to enable password authentication in Redis using the requirepass directive, securing your server against unauthorized access with a simple shared password.
 

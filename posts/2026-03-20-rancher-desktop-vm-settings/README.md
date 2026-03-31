@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, VM, Virtual Machine, Configuration, Settings
+Tags: Rancher Desktop, VM, Virtual Machine, Configuration, Setting
 
 Description: Customize the underlying virtual machine settings in Rancher Desktop including network, storage, and hardware configuration.
 

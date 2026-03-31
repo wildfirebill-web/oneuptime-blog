@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SNS, SES, Lambda, Notifications
+Tags: AWS, SNS, SES, Lambda, Notification
 
 Description: Learn how to build a multi-channel notification system on AWS that delivers email, SMS, and push notifications using SNS, SES, and Lambda.
 

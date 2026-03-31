@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Notifications, UI, Administration, Events, Docker
+Tags: Portainer, Notification, UI, Administration, Event, Docker
 
 Description: Learn how to view, manage, and clear notifications in Portainer, including understanding notification types and configuring alert preferences.
 

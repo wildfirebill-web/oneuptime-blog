@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, ServiceEntry, YAML, Cheat Sheet, External Services, Kubernetes
+Tags: Istio, ServiceEntry, YAML, Cheat Sheet, External Service, Kubernetes
 
 Description: Complete cheat sheet for writing Istio ServiceEntry YAML to register external services, databases, and APIs with your mesh.
 

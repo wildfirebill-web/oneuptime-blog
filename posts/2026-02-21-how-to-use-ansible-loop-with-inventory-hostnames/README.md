@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Inventory, Host Management
+Tags: Ansible, Loop, Inventory, Host Management
 
 Description: Learn how to iterate over inventory hostnames in Ansible loops to dynamically configure resources based on your infrastructure topology.
 

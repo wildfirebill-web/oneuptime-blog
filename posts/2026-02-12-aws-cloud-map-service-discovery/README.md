@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Cloud Map, Networking, Microservices
+Tags: AWS, Cloud Map, Networking, Microservice
 
 Description: A practical guide to using AWS Cloud Map for service discovery, including namespace creation, service registration, DNS and API-based discovery, and integration with ECS and Kubernetes.
 

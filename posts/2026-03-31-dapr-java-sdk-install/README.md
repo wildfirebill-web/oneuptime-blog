@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Java, Sdk, Installation, Configuration, Microservice
+Tags: Dapr, Java, SDK, Installation, Configuration, Microservice
 
 Description: Install the Dapr Java SDK using Maven or Gradle, configure the client connection, and write your first Java microservice that communicates with a Dapr sidecar.
 

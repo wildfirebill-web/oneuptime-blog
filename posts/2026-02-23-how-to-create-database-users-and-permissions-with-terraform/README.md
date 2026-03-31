@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Database, Security, IAM, Permissions, Infrastructure as Code
+Tags: Terraform, AWS, Database, Security, IAM, Permission, Infrastructure as Code
 
 Description: Learn how to manage database users and permissions using Terraform including RDS IAM authentication, Secrets Manager integration, and provider-based user management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Debugging, Troubleshooting
+Tags: Kubernetes, Job, Debugging, Troubleshooting
 
 Description: Master debugging techniques for failed Kubernetes Jobs including pod log analysis, event inspection, exit code interpretation, and resource issue diagnosis.
 

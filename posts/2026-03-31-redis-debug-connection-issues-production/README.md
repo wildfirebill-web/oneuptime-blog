@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Debugging, Operations
+Tags: Redis, Debugging, Operation
 
 Description: Learn how to systematically debug Redis connection issues in production using Redis CLI, monitoring commands, network tools, and application-level diagnostics.
 

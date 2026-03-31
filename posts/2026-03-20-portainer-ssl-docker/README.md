@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, SSL, TLS, Docker, Security, Certificates
+Tags: Portainer, SSL, TLS, Docker, Security, Certificate
 
 Description: A comprehensive guide to configuring SSL/TLS certificates for Portainer running on Docker standalone.
 

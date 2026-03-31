@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Recovery, Binary Log, Point-In-Time Recovery, Administration
+Tags: MySQL, Recovery, Binary Log, Point-in-Time Recovery, Administration
 
 Description: Learn how to perform point-in-time recovery in MySQL using a full backup and binary logs to restore a database to a specific moment in time.
 

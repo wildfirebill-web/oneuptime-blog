@@ -1,6 +1,6 @@
 # What Is the Difference Between ReplicatedMergeTree and MergeTree
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, ReplicatedMergeTree, MergeTree, Replication, High Availability
 

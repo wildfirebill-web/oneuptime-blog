@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kotlin, Room, Android, Database, SQLite, Persistence, Coroutines, Flow
+Tags: Kotlin, Room, Android, Database, SQLite, Persistence, Coroutine, Flow
 
 Description: A comprehensive guide to using Room Database in Android applications with Kotlin, covering entities, DAOs, database setup, migrations, and best practices for efficient local data persistence.
 

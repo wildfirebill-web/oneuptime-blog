@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, IAM, Troubleshooting, Permissions, Debugging
+Tags: GCP, IAM, Troubleshooting, Permission, Debugging
 
 Description: A systematic approach to diagnosing and fixing permission denied errors in GCP, covering common causes, debugging tools, and step-by-step resolution strategies.
 

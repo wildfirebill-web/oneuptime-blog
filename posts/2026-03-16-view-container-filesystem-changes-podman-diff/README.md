@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Filesystem, Container Inspection
+Tags: Podman, Container, DevOps, Filesystem, Container Inspection
 
 Description: Learn how to use podman diff to see which files were added, changed, or deleted inside a container compared to its original image.
 

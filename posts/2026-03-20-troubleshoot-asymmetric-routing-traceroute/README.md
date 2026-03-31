@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Traceroute, Asymmetric Routing, Networking, IPv4, BGP, Diagnostics
+Tags: Traceroute, Asymmetric Routing, Networking, IPv4, BGP, Diagnostic
 
 Description: Detect and diagnose asymmetric routing where forward and return network paths differ, using traceroute and analyzing RTT patterns and hop asymmetry indicators.
 

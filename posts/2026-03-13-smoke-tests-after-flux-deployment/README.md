@@ -1,6 +1,6 @@
 # How to Set Up Smoke Tests After Flux Deployment
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, Smoke Tests, GitOps, CI/CD, Kubernetes, Testing, Health Check
 

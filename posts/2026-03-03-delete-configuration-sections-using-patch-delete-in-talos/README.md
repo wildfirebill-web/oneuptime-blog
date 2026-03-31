@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Configuration, JSON Patch, Delete, Operations
+Tags: Talos Linux, Configuration, JSON Patch, Delete, Operation
 
 Description: Learn how to remove configuration sections from Talos Linux machine configs using JSON Patch delete operations and strategic merge techniques.
 

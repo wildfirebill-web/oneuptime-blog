@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Images, Pruning, Cleanup, Disk Space, DevOps, Automation
+Tags: Docker, Image, Pruning, Cleanup, Disk Space, DevOps, Automation
 
 Description: Master Docker image pruning with targeted strategies using filters, automation, and best practices to keep your systems lean.
 

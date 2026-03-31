@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Projects, Security
+Tags: Rancher, Kubernetes, RBAC, Permission, Project, Security
 
 Description: A practical guide to restricting user access to specific projects in Rancher so teams only see and manage their own namespaces and workloads.
 

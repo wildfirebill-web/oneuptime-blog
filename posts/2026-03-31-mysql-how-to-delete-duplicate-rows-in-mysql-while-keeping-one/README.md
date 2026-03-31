@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Duplicates, Data Cleanup, SQL, Database
+Tags: MySQL, Duplicate, Data Cleanup, SQL, Database
 
 Description: Learn multiple techniques to find and delete duplicate rows in MySQL while keeping one copy, using ROW_NUMBER(), self-joins, and temporary tables.
 

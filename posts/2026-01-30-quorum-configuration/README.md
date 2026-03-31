@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: High Availability, Quorum, Distributed Systems, Clustering
+Tags: High Availability, Quorum, Distributed System, Clustering
 
 Description: Learn how to configure quorum in distributed systems to maintain consistency and prevent split-brain scenarios.
 

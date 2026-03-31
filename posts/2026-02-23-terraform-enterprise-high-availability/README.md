@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terraform Enterprise, High Availability, has, Resilience, Architecture
+Tags: Terraform, Terraform Enterprise, High Availability, Resilience, Architecture
 
 Description: A guide to deploying Terraform Enterprise in a high availability configuration, covering architecture patterns, failover strategies, and production-ready HA deployment steps.
 

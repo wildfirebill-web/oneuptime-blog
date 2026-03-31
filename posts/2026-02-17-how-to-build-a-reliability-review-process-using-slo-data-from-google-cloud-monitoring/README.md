@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, SRE, SLO, Reliability, Cloud Monitoring, Operations, Google Cloud
+Tags: GCP, SRE, SLO, Reliability, Cloud Monitoring, Operation, Google Cloud
 
 Description: Build a structured reliability review process that uses SLO data from Google Cloud Monitoring to drive data-informed reliability decisions.
 

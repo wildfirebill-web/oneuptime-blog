@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Caching, Tags, Invalidation, Redis
+Tags: Caching, Tag, Invalidation, Redis
 
 Description: Learn to implement tag-based cache invalidation for bulk cache clearing by category.
 

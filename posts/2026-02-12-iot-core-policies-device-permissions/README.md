@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, IoT Core, Policies, Security, MQTT, Permissions
+Tags: AWS, IoT Core, Policies, Security, MQTT, Permission
 
 Description: Create fine-grained AWS IoT Core policies to control device permissions for connecting, publishing, subscribing, and receiving MQTT messages
 

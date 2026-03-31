@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Ruby, Rails, Sidekiq, Background Jobs, Custom Spans
+Tags: OpenTelemetry, Ruby, Rails, Sidekiq, Background Job, Custom Spans
 
 Description: Comprehensive guide to instrumenting Sidekiq background jobs with OpenTelemetry custom spans for detailed performance monitoring and distributed tracing across async operations.
 

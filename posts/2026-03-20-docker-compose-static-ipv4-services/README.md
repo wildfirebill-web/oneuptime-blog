@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Docker Compose, IPv4, Static IP, Containers, Networking
+Tags: Docker, Docker Compose, IPv4, Static IP, Container, Networking
 
 Description: Assign static IPv4 addresses to specific Docker Compose services using the ipv4_address option within the service networks configuration.
 

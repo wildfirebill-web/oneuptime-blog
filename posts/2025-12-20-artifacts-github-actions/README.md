@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Artifacts, CI/CD, DevOps, Build Automation, Storage
+Tags: GitHub Action, Artifact, CI/CD, DevOps, Build Automation, Storage
 
 Description: Learn how to use GitHub Actions artifacts to share build outputs between jobs, persist test results, and store deployment packages.
 

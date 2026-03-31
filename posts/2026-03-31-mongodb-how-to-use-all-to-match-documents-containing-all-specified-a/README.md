@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Array Queries, Query Operators, Database, NoSQL
+Tags: MongoDB, Array Queries, Query Operator, Database, NoSQL
 
 Description: Learn how to use the MongoDB $all operator to find documents where an array field contains all specified values, regardless of order or extra elements.
 

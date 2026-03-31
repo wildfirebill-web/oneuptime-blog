@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PHP, Laravel, Database, Transactions, Eloquent
+Tags: PHP, Laravel, Database, Transaction, Eloquent
 
 Description: Learn how to use database transactions in Laravel to ensure data integrity, handle failures gracefully, and build reliable applications.
 

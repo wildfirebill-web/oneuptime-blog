@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, CRIU, Containers, TCP, Networking
+Tags: Podman, CRIU, Container, TCP, Networking
 
 Description: A guide to checkpointing Podman containers that have active TCP connections, using the --tcp-established flag to preserve socket state across checkpoint and restore operations.
 

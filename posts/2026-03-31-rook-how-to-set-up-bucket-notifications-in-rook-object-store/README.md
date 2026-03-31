@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Bucket Notifications, Rgw, Kafka, Kubernetes
+Tags: Rook, Ceph, Bucket Notifications, RGW, Kafka, Kubernetes
 
 Description: Configure S3 bucket notifications in Rook Object Store to trigger events to Kafka, RabbitMQ, or HTTP endpoints when objects are created, deleted, or modified.
 

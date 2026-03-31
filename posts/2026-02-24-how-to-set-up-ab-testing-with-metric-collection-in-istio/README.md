@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, A/B Testing, Metrics, Traffic Splitting
+Tags: Istio, Kubernetes, A/B Testing, Metric, Traffic Splitting
 
 Description: Implement A/B testing with comprehensive metric collection using Istio to compare the performance and user behavior between different service versions.
 

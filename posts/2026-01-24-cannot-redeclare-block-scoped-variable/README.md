@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TypeScript, JavaScript, Debugging, Scope, Variables, Error Handling
+Tags: TypeScript, JavaScript, Debugging, Scope, Variable, Error Handling
 
 Description: Learn how to diagnose and fix the 'Cannot redeclare block-scoped variable' error in TypeScript, including common causes and best practices for variable scoping.
 

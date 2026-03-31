@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, Priority Queue, Task Scheduling, Data Structures, Job Queue
+Tags: Redis, Sorted Set, Priority Queue, Task Scheduling, Data Structure, Job Queue
 
 Description: A comprehensive guide to implementing priority queues using Redis sorted sets for task scheduling, job processing, and work prioritization with practical examples and production patterns.
 

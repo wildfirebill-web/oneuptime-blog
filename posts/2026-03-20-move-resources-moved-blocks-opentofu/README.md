@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Moved, Refactoring, Resources, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Moved, Refactoring, Resource, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use moved blocks in OpenTofu to rename or reorganize resources in your configuration without destroying and recreating them.
 

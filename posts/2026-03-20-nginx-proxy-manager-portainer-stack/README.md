@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Nginx Proxy Manager, Stacks, Docker Compose, Reverse Proxy
+Tags: Portainer, Nginx Proxy Manager, Stack, Docker Compose, Reverse Proxy
 
 Description: Learn how to deploy Nginx Proxy Manager as a managed Portainer stack, giving you version-controlled configuration and easy stack updates through the Portainer UI.
 

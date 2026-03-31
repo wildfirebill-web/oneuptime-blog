@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, EKS, Kubernetes, AWS, Modules
+Tags: OpenTofu, Terraform, EKS, Kubernetes, AWS, Module
 
 Description: Learn how to design a production-ready EKS Kubernetes cluster module for OpenTofu with managed node groups, IRSA support, and add-on management.
 

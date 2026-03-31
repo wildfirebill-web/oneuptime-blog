@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, Metrics, Observability
+Tags: OpenTelemetry, Prometheus, Metric, Observability
 
 Description: Learn how to export OpenTelemetry metrics to Prometheus using the Prometheus exporter, including configuration, setup, and best practices.
 

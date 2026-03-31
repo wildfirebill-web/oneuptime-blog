@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Troubleshooting, Distributed Systems, Message Queues, DevOps, Streaming
+Tags: Kafka, Troubleshooting, Distributed System, Message Queue, DevOps, Streaming
 
 Description: A practical guide to diagnosing and resolving the 'Leader Not Available' error in Apache Kafka, including common causes, debugging steps, and preventive measures.
 

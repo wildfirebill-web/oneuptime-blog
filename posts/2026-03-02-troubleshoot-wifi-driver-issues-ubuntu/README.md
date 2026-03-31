@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, WiFi, Drivers, Troubleshooting, Networking
+Tags: Ubuntu, WiFi, Driver, Troubleshooting, Networking
 
 Description: Learn how to diagnose and fix WiFi driver issues on Ubuntu, including identifying hardware, installing firmware, and resolving common wireless connectivity problems.
 

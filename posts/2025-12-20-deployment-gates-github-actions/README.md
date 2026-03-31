@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Deployment, Gates, Approval, Environments, DevOps
+Tags: GitHub Action, CI/CD, Deployment, Gates, Approval, Environment, DevOps
 
 Description: Learn how to implement deployment gates in GitHub Actions using environments, required reviewers, wait timers, and custom protection rules to ensure safe, controlled deployments to production.
 

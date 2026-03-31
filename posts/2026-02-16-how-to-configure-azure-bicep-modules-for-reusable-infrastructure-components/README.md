@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Bicep, Infrastructure as Code, Azure, Modules, DevOps, Cloud Infrastructure, ARM Templates
+Tags: Azure Bicep, Infrastructure as Code, Azure, Module, DevOps, Cloud Infrastructure, ARM Templates
 
 Description: Learn how to structure Azure Bicep modules to create reusable, maintainable infrastructure components for your Azure deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Oracle, Database Monitoring, Metrics, Performance Tuning
+Tags: OpenTelemetry, Collector, Oracle, Database Monitoring, Metric, Performance Tuning
 
 Description: Master Oracle Database monitoring with OpenTelemetry Collector by configuring the Oracle DB receiver to collect performance metrics, track tablespace usage, monitor sessions.
 

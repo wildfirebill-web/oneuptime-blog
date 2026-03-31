@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Event-Driven, Application Events, Microservices, Async
+Tags: Java, Spring Boot, Event-Driven, Application Events, Microservice, Async
 
 Description: Learn how to build event-driven applications using Spring's ApplicationEvent system. This guide covers synchronous and asynchronous events, event listeners, and transactional events.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, DORA Metrics, DevOps, Deployment Frequency, Lead Time, Observability
+Tags: OpenTelemetry, DORA Metric, DevOps, Deployment Frequency, Lead Time, Observability
 
 Description: Learn how to implement DORA metrics for deployment frequency and lead time using OpenTelemetry, giving your team data-driven insight into software delivery performance.
 

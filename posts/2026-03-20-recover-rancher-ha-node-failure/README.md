@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Recovery, High Availability, etcd, Node Failures, Disaster Recovery
+Tags: Rancher, Recovery, High Availability, etcd, Node Failure, Disaster Recovery
 
 Description: Step-by-step recovery procedures for Rancher HA when a server node fails, including etcd member removal, node replacement, and cluster re-join procedures.
 

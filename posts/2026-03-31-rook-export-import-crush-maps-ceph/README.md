@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Storage, Kubernetes, Operations
+Tags: Ceph, Rook, Storage, Kubernetes, Operation
 
 Description: Learn how to export, edit, and import CRUSH maps in Ceph to customize data placement, add device classes, or fix topology misconfigurations.
 

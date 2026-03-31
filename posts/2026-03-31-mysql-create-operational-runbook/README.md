@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Runbook, Operations, Documentation, Incident Response
+Tags: MySQL, Runbook, Operation, Documentation, Incident Response
 
 Description: Learn how to create a comprehensive MySQL operational runbook that helps teams respond consistently to database incidents and routine tasks.
 

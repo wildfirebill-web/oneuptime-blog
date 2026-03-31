@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Cosmos DB, C#, Serverless, Binding, .NET, Cloud
+Tags: Azure Function, Cosmos DB, C#, Serverless, Binding, .NET, Cloud
 
 Description: Use Azure Functions input and output bindings for Cosmos DB in C# to build serverless APIs without writing any database client code.
 

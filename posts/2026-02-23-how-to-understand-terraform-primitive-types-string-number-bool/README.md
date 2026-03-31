@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Infrastructure as Code, Types, Variables
+Tags: Terraform, HCL, Infrastructure as Code, Type, Variable
 
 Description: Learn about Terraform's three primitive types - string, number, and bool - including how they work, when to use each, and how Terraform handles automatic type conversions.
 

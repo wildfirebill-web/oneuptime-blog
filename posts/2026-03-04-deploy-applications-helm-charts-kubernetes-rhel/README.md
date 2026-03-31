@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kubernetes, Helm, Containers, DevOps
+Tags: RHEL, Kubernetes, Helm, Container, DevOps
 
 Description: Install Helm on RHEL and use it to deploy, upgrade, and manage applications on a Kubernetes cluster.
 

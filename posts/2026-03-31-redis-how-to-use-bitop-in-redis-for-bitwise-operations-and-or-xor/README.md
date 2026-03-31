@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bitmaps, Commands, Data Structures
+Tags: Redis, Bitmap, Command, Data Structure
 
 Description: Learn how to use Redis BITOP to perform AND, OR, XOR, and NOT operations on multiple bitmap keys for analytics and feature flag management.
 

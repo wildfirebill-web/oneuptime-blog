@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, ConfigMaps, Secrets, Workloads
+Tags: Rancher, Kubernetes, ConfigMap, Secret, Workload
 
 Description: Learn how to mount ConfigMaps and Secrets as volumes in Rancher workloads to provide configuration files and sensitive data to your containers.
 

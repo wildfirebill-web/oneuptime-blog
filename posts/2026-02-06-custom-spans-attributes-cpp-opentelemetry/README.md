@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, C++, Custom Spans, Attributes, API, SDK
+Tags: OpenTelemetry, C++, Custom Spans, Attribute, API, SDK
 
 Description: Learn how to create custom spans, add attributes, events, and status codes in C++ using OpenTelemetry API, including best practices for naming, context management, and performance optimization.
 

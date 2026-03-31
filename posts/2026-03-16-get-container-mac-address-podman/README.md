@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Container Inspection
+Tags: Podman, Container, DevOps, Networking, Container Inspection
 
 Description: Learn how to retrieve a Podman container's MAC address using podman inspect for network debugging, audit trails, and infrastructure documentation.
 

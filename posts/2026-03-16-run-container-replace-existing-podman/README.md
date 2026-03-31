@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Deployment, Replace
+Tags: Podman, Container, DevOps, Deployment, Replace
 
 Description: Learn how to use Podman's --replace flag to seamlessly swap out a running container with a new one using the same name.
 

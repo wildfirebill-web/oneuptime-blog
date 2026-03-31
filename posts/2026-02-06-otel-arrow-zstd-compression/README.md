@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OTel Arrow, Zstd, Compression
+Tags: OpenTelemetry, OTel Arrow, ZSTD, Compression
 
 Description: Combine OTel Arrow with Zstd compression to achieve maximum telemetry data reduction on the wire.
 

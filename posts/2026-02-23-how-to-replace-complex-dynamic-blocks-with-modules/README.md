@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Dynamic Blocks, Modules, Refactoring, HCL, Infrastructure as Code
+Tags: Terraform, Dynamic Blocks, Module, Refactoring, HCL, Infrastructure as Code
 
 Description: Learn when and how to refactor complex dynamic blocks into Terraform modules for better maintainability, reusability, and testability.
 

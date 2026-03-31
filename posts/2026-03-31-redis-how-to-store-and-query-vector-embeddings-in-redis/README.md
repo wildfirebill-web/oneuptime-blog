@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Search, Embeddings, AI, Semantic Search
+Tags: Redis, Vector Search, Embedding, AI, Semantic Search
 
 Description: Learn how to store vector embeddings in Redis and perform semantic similarity searches using cosine or L2 distance with the RediSearch vector index.
 

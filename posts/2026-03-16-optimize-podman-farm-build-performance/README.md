@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Farm, Performance, Multi-Architecture
+Tags: Podman, Container, DevOps, Podman Farm, Performance, Multi-Architecture
 
 Description: Learn techniques to speed up Podman farm builds, including reducing build context size, leveraging caching, optimizing Containerfiles, and tuning SSH connections.
 

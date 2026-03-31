@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Pub/Sub, Cloud Functions, Microservices, Choreography, Event-Driven Architecture
+Tags: GCP, Cloud Pub/Sub, Cloud Function, Microservice, Choreography, Event-Driven Architecture
 
 Description: Build a choreography-based microservice architecture on Google Cloud where services communicate through events using Pub/Sub and Cloud Functions without a central orchestrator.
 

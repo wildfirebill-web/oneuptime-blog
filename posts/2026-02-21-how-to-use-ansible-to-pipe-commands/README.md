@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Shell Module, Pipes, Command Chaining
+Tags: Ansible, Shell Module, Pipe, Command Chaining
 
 Description: Learn how to use pipes in Ansible to chain commands together for filtering, processing, and transforming data on remote hosts using the shell module.
 

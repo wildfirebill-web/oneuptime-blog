@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, AWS KMS, Encryption, CSFLE, Security
 
-Description: Learn how to use AWS KMS as the Customer Master Key provider for MongoDB Client-Side Field Level Encryption to securely manage Data Encryption Keys without storing secrets locally.
+Description: Learn how to use AWS KMS as the Customer Master Key provider for MongoDB CSFLE to securely manage Data Encryption Keys without storing secrets locally.
 
 ---
 

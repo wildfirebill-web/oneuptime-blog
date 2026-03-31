@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Debugging, Cloud Logging, Error Reporting
+Tags: GCP, Cloud Function, Debugging, Cloud Logging, Error Reporting
 
 Description: Learn how to effectively debug Google Cloud Functions using Cloud Logging filters, structured logging, Error Reporting, and log-based alerting techniques.
 

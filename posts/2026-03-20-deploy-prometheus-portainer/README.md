@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Prometheus, Monitoring, Metrics, Docker
+Tags: Portainer, Prometheus, Monitoring, Metric, Docker
 
 Description: Learn how to deploy Prometheus via Portainer with scrape configuration, persistent storage, alerting rules, and integration with Alertmanager.
 

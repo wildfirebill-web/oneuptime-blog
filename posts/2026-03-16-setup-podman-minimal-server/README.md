@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps
+Tags: Podman, Installation, Linux, Container, DevOps
 
 Description: Learn how to install and configure Podman on a minimal Linux server installation with no desktop environment, optimized for headless container workloads.
 

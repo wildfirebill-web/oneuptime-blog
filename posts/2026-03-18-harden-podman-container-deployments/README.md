@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Hardening, Production
+Tags: Podman, Container, DevOps, Security, Hardening, Production
 
 Description: Learn how to apply comprehensive hardening measures to Podman container deployments for production-grade security.
 

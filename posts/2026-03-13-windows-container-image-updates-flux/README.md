@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, Windows Containers, Image Automation, GitOps, Rolling Updates
+Tags: Flux CD, Kubernetes, Windows Containers, Image Automation, GitOps, Rolling Update
 
 Description: Automate Windows container image updates using Flux image automation, handling the specific challenges of large Windows images and slower rollout times.
 

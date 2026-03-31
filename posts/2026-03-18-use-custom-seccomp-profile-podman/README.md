@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Linux, Security, Seccomp, Syscalls
+Tags: Podman, Container, DevOps, Linux, Security, Seccomp, Syscalls
 
 Description: Learn how to create and apply custom seccomp profiles in Podman to restrict which system calls a container can make.
 

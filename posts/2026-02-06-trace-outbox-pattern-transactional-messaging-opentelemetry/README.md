@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Outbox Pattern, Transactional Messaging, Distributed Tracing, Microservices, Database
+Tags: OpenTelemetry, Outbox Pattern, Transactional Messaging, Distributed Tracing, Microservice, Database
 
 Description: Learn how to trace the outbox pattern and transactional messaging with OpenTelemetry to maintain end-to-end visibility across database commits and message publishing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Resource Limits, Kubernetes, LimitRange, ResourceQuota, Cost Optimization
+Tags: Rancher, Resource Limit, Kubernetes, LimitRange, ResourceQuota, Cost Optimization
 
 Description: Configure resource limits and quotas in Rancher at cluster, project, and namespace levels to ensure fair resource distribution and prevent resource contention.
 

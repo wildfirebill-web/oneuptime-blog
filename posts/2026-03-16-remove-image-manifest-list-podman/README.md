@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Manifest, Multi-Architecture
+Tags: Podman, Container, DevOps, Manifest, Multi-Architecture
 
 Description: Learn how to remove specific architecture entries from a Podman manifest list using digest references, and how to manage manifest list updates.
 

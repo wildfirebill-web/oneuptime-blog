@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Upgrade, K3s, CNI
+Tags: Calico, Kubernetes, Networking, Upgrade, k3s, CNI
 
 Description: A safe process for upgrading Calico on K3s clusters while maintaining edge workload availability.
 

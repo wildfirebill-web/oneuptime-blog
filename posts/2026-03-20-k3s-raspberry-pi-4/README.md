@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Raspberry Pi, ARM64, Edge Computing
+Tags: k3s, Kubernetes, Raspberry Pi, ARM64, Edge Computing
 
 Description: A complete guide to installing K3s on the Raspberry Pi 4, leveraging its quad-core ARM64 CPU and up to 8GB of RAM for a capable edge Kubernetes node.
 

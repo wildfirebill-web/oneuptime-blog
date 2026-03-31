@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, E-Commerce, Checkout Funnel, Metrics
+Tags: OpenTelemetry, E-Commerce, Checkout Funnel, Metric
 
 Description: Track where customers abandon the checkout process using OpenTelemetry funnel metrics across each step.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SIGNAL, Error Handling, Stored Procedures, Triggers
+Tags: MySQL, Signal, Error Handling, Stored Procedure, Trigger
 
 Description: Learn how to use SIGNAL and RESIGNAL in MySQL stored procedures and triggers to raise custom error conditions with meaningful messages and SQLSTATE codes.
 

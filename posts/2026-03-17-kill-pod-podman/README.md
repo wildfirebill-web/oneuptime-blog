@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Signals, Lifecycle
+Tags: Podman, Container, DevOps, Pod, Signal, Lifecycle
 
 Description: Learn how to send signals to all containers in a Podman pod using the kill command.
 

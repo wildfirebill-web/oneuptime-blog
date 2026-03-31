@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Oracle Linux, Containers, Enterprise, OCI
+Tags: Podman, Oracle Linux, Container, Enterprise, OCI
 
 Description: Learn how to install and use Podman on Oracle Linux for running containers on Oracle Cloud Infrastructure and on-premises Oracle environments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Management, Debugging
+Tags: Podman, Container, DevOps, Container Management, Debugging
 
 Description: Learn how to retrieve and interpret container exit codes in Podman for debugging failures and automating error handling in scripts.
 

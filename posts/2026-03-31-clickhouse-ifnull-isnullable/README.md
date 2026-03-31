@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, Nullable, String Function, Query Pattern
+Tags: ClickHouse, NULL Handling, Nullable, String Function, Query Pattern
 
 Description: Learn how ifNull() substitutes a fallback value for NULLs and isNullable() checks whether a column type is Nullable in ClickHouse, enabling safe null-handling in queries.
 

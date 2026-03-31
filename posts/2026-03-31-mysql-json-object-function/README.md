@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Function
+Tags: MySQL, JSON, Function
 
 Description: Learn how to use MySQL's JSON_OBJECT() function to construct JSON objects from key-value pairs, with examples for dynamic document creation.
 

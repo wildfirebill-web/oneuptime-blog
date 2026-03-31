@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Observability, Operations, Performance
+Tags: MongoDB, Monitoring, Observability, Operation, Performance
 
 Description: Learn how to use db.serverStatus() to monitor MongoDB health, connections, memory, WiredTiger cache, replication lag, and operation metrics in real time.
 

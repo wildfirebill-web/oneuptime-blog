@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Ruby On Rails, Resque, Background Jobs, Ruby
+Tags: Redis, Ruby On Rail, Resque, Background Job, Ruby
 
 Description: Set up Resque with Redis in a Rails application to process background jobs in separate worker processes with a built-in web dashboard.
 

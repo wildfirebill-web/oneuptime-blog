@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, ZRANGE, Range Queries, Commands
+Tags: Redis, Sorted Set, ZRANGE, Range Queries, Command
 
 Description: Learn how to use the unified ZRANGE command in Redis 6.2+ to retrieve sorted set members by index, score, or lexicographic range in any direction.
 

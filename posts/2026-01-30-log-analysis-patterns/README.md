@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Logging, Analysis, Patterns, Debugging
+Tags: Logging, Analysis, Pattern, Debugging
 
 Description: Learn to create log analysis patterns for effective troubleshooting and insights.
 

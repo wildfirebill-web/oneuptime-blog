@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cost Optimization, Metrics, FinOps, Performance
+Tags: Cost Optimization, Metric, FinOps, Performance
 
 Description: Learn how to measure and track infrastructure efficiency for cost optimization.
 

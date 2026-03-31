@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kotlin, Spring Boot, JVM, Web Development, REST API, Backend Development, Microservices
+Tags: Kotlin, Spring Boot, JVM, Web Development, REST API, Backend Development, Microservice
 
 Description: Learn how to build modern web applications with Kotlin and Spring Boot, covering project setup, REST APIs, data persistence, and Kotlin-specific features.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, ResourceQuota, Priority Classes
+Tags: Kubernetes, ResourceQuota, Priority Class
 
 Description: Configure ResourceQuota with scopeSelector to create separate resource budgets for different priority classes, QoS tiers, and workload types within the same namespace.
 

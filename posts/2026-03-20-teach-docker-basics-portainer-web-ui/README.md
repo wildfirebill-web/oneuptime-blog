@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Education, Training, Containers, DevOps
+Tags: Portainer, Docker, Education, Training, Container, DevOps
 
 Description: Use Portainer's visual web interface as a teaching tool to explain core Docker concepts - containers, images, networks, and volumes - to students and developers new to containerization.
 

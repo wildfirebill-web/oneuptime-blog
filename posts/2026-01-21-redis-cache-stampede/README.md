@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Caching, Cache Stampede, Thundering Herd, Performance, Distributed Systems, Python, Node.js
+Tags: Redis, Caching, Cache Stampede, Thundering Herd, Performance, Distributed System, Python, Node.js
 
 Description: A comprehensive guide to preventing and handling cache stampede (thundering herd) problems in Redis. Learn locking strategies, probabilistic early expiration, and request coalescing techniques.
 

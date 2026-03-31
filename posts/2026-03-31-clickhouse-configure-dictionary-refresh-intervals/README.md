@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Dictionary, Refresh Interval, LIFETIME, Configuration
+Tags: ClickHouse, Dictionary, Refresh Interval, Lifetime, Configuration
 
 Description: Learn how to configure ClickHouse dictionary refresh intervals using LIFETIME settings to balance data freshness with source system load.
 

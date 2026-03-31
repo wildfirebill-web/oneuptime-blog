@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Deployment Reports, Events, Monitoring, Compliance
+Tags: Flux CD, GitOps, Kubernetes, Deployment Reports, Event, Monitoring, Compliance
 
 Description: Generate comprehensive deployment reports by collecting, storing, and querying Flux CD reconciliation events to provide visibility into deployment frequency, success rates, and timelines.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Database, Indexes, TTL, Data Management, Performance
+Tags: MongoDB, Database, Index, TTL, Data Management, Performance
 
 Description: Learn how to use MongoDB TTL (Time-To-Live) indexes to automatically expire and delete documents, perfect for session data, logs, caches, and temporary records with practical examples.
 

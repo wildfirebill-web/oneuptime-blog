@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, StatsD, Metrics, Monitoring, Observability
+Tags: OpenTelemetry, StatsD, Metric, Monitoring, Observability
 
 Description: A practical comparison of OpenTelemetry and StatsD for application metrics collection, covering protocols, aggregation, and migration strategies.
 

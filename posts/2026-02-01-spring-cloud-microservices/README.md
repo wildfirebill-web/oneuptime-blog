@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Spring Cloud, Microservices, Service Discovery, Config Server
+Tags: Java, Spring Boot, Spring Cloud, Microservice, Service Discovery, Config Server
 
 Description: A practical guide to building microservices with Spring Cloud including service discovery, configuration, and load balancing.
 

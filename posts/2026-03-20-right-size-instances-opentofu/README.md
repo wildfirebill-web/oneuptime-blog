@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Cost Optimization, Right-Sizing, EC2, Instance Types, Variables, Infrastructure as Code
+Tags: OpenTofu, Cost Optimization, Right-Sizing, EC2, Instance Types, Variable, Infrastructure as Code
 
 Description: Learn how to use OpenTofu variables and locals to implement right-sized instance configurations per environment, making it easy to scale down dev and scale up production.
 

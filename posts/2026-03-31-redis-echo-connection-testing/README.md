@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, ECHO, Connection Testing, Debugging, CLI
+Tags: Redis, Echo, Connection Testing, Debugging, CLI
 
 Description: Learn how to use the ECHO command in Redis to echo a message back from the server, useful for verifying connection encoding and debugging.
 

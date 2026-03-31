@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Priority Scheduling
+Tags: Kubernetes, Job, Priority Scheduling
 
 Description: Implement priority-based job scheduling in Kubernetes using PriorityClasses to ensure critical batch workloads get scheduled before less important jobs during resource contention.
 

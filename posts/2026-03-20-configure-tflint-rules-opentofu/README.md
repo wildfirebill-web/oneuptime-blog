@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, TFLint, Rules, Configuration, Linting
+Tags: OpenTofu, TFLint, Rule, Configuration, Linting
 
 Description: Learn how to configure tflint rules for OpenTofu projects, enabling and disabling specific rules, setting severity levels, and customizing naming conventions for your organization.
 

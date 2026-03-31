@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Spot Instances, Cost Optimization, Infrastructure as Code
+Tags: OpenTofu, AWS, Spot Instance, Cost Optimization, Infrastructure as Code
 
 Description: Learn how to use AWS Spot Instances with OpenTofu for up to 90% cost savings on interruptible workloads like batch processing, CI/CD, and stateless services.
 

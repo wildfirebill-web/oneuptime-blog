@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Monorepo, Multi-Language, Instrumentation, DevOps, Microservices
+Tags: OpenTelemetry, Monorepo, Multi-Language, Instrumentation, DevOps, Microservice
 
 Description: Learn how to organize and implement OpenTelemetry instrumentation across a monorepo containing services written in multiple programming languages.
 

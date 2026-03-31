@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Docker Compose, Edit, DevOps
+Tags: Portainer, Stack, Docker Compose, Edit, DevOps
 
 Description: Update the configuration of an existing stack in Portainer using the web editor or by modifying environment variables.
 

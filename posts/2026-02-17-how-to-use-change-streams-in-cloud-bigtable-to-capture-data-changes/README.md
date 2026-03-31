@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Bigtable, Change Streams, CDC, Event-Driven Architecture
+Tags: GCP, Cloud Bigtable, Change Stream, CDC, Event-Driven Architecture
 
 Description: Learn how to enable and consume Cloud Bigtable change streams to capture real-time data changes for event-driven architectures and data synchronization.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Vector, Database, Search, Machine learning
+Tags: Redis, Vector, Database, Search, Machine Learning
 
 Description: Learn how to use the VREM command in Redis vector sets to remove one or more vector members, and understand how deletion affects the HNSW index and search results.
 

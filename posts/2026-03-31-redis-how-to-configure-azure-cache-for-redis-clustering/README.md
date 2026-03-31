@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Azure Cache For Redis, Redis Cluster, Azure, Sharding
+Tags: Redis, Azure Cache for Redis, Redis Cluster, Azure, Sharding
 
 Description: Learn how to enable and configure Redis clustering on Azure Cache for Redis Premium tier to scale horizontally across multiple shards.
 

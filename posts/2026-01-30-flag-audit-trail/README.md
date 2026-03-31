@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Audit, Compliance, Governance
+Tags: Feature Flag, Audit, Compliance, Governance
 
 Description: Learn how to implement comprehensive audit trails for feature flag changes.
 

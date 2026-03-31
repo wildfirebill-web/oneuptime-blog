@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Lightweight Update, UPDATE, Mutation, MergeTree, Data Management
+Tags: ClickHouse, Lightweight Update, Update, Mutation, MergeTree, Data Management
 
 Description: Learn how to use the lightweight UPDATE syntax in ClickHouse to modify rows without triggering full background mutations on large MergeTree tables.
 

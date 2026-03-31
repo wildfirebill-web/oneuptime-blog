@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Debugging, Security, SELinux
+Tags: Podman, Container, DevOps, Debugging, Security, SELinux
 
 Description: Learn how to diagnose and fix permission denied errors in Podman containers, covering SELinux, rootless mode, file ownership, and volume mount issues.
 

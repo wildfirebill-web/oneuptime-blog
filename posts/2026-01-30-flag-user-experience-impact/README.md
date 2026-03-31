@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, UX, Analytics, User Research
+Tags: Feature Flag, UX, Analytics, User Research
 
 Description: Learn how to measure user experience impact of feature flags.
 

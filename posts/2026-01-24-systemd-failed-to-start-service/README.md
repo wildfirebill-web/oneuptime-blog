@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Systemd, Linux, Service Management, Troubleshooting, System Administration, Debugging, Logs
+Tags: Systemd, Linux, Service Management, Troubleshooting, System Administration, Debugging, Log
 
 Description: Learn how to diagnose and fix common systemd 'Failed to start service' errors with practical troubleshooting techniques and real-world solutions.
 

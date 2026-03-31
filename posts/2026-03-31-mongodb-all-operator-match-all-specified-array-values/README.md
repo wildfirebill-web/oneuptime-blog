@@ -1,4 +1,4 @@
-# How to Use $all to Match Documents Containing All Specified Array Values in MongoDB
+# How to Use $all to Match Documents with All Array Values in MongoDB
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

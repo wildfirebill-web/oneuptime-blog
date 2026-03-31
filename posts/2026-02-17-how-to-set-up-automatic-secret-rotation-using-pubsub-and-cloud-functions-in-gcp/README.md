@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Secret Manager, Secret Rotation, Cloud Functions, Pub/Sub
+Tags: GCP, Secret Manager, Secret Rotation, Cloud Function, Pub/Sub
 
 Description: Build an automated secret rotation pipeline using GCP Secret Manager notifications, Pub/Sub, and Cloud Functions to keep credentials fresh without manual intervention.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Cloud Map, Service Discovery, Microservices, Infrastructure as Code
+Tags: Terraform, AWS, Cloud Map, Service Discovery, Microservice, Infrastructure as Code
 
 Description: Learn how to create AWS Cloud Map namespaces, services, and instances for DNS-based and API-based service discovery using Terraform.
 

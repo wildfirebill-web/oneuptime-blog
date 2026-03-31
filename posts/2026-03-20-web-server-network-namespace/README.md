@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Namespaces, Web Server, Nginx, Networking, Containers, iproute2
+Tags: Linux, Network Namespaces, Web Server, Nginx, Networking, Container, iproute2
 
 Description: Start a web server inside a Linux network namespace and access it from the host using veth pairs and port forwarding for isolated service testing.
 

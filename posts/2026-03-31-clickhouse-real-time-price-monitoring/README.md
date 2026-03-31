@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Price Monitoring, Real-Time Analytics, E-commerce, Analytics
+Tags: ClickHouse, Price Monitoring, Real-Time Analytics, E-Commerce, Analytics
 
 Description: Use ClickHouse to ingest product price changes in real time, detect unusual price movements, and alert on threshold breaches within seconds.
 

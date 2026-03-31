@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Jenkins, CI/CD, Automation
+Tags: Podman, Container, DevOps, Jenkins, CI/CD, Automation
 
 Description: Learn how to run Jenkins in a Podman container with persistent workspace data, plugin management, and pipeline configuration.
 

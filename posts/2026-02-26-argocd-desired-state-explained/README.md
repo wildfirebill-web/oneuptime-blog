@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Concepts
+Tags: ArgoCD, GitOps, Kubernetes, Concept
 
 Description: A clear explanation of the desired state concept in ArgoCD covering how Git repositories define what should be running and how ArgoCD enforces it.
 

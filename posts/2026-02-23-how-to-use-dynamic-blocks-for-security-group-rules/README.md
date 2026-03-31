@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Dynamic Blocks, Security Groups, AWS, Infrastructure as Code, Networking
+Tags: Terraform, Dynamic Blocks, Security Group, AWS, Infrastructure as Code, Networking
 
 Description: Learn how to use Terraform dynamic blocks to manage AWS security group rules from variable-driven configurations for cleaner, more maintainable code.
 

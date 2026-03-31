@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Exemplars, Metrics, Trace Linking
+Tags: OpenTelemetry, Exemplars, Metric, Trace Linking
 
 Description: Use OpenTelemetry exemplars to link error rate metric spikes directly to specific distributed traces for faster debugging.
 

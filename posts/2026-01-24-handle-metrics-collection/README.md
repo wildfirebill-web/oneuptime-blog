@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Metrics, Prometheus, Monitoring, Observability, DevOps, OpenTelemetry, Grafana
+Tags: Metric, Prometheus, Monitoring, Observability, DevOps, OpenTelemetry, Grafana
 
 Description: Learn how to implement effective metrics collection including instrumentation, Prometheus configuration, cardinality management, and alerting best practices.
 

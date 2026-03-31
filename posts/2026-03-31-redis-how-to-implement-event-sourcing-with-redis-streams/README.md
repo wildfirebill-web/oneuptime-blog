@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Event Sourcing, Redis Streams, Microservices, Event-Driven Architecture
+Tags: Redis, Event Sourcing, Redis Streams, Microservice, Event-Driven Architecture
 
 Description: Learn how to implement event sourcing patterns using Redis Streams as a durable, ordered event log for microservices and distributed systems.
 

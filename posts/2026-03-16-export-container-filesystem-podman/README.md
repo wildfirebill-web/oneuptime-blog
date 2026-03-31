@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Filesystem, Container Export
+Tags: Podman, Container, DevOps, Filesystem, Container Export
 
 Description: Learn how to export a Podman container's entire filesystem as a tar archive for backup, migration, analysis, and sharing.
 

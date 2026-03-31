@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, HashiCorp Vault, Secret Store, Security, Kubernetes
+Tags: Dapr, HashiCorp Vault, Secret, Security, Microservice
 
-Description: Learn how to configure Dapr to use HashiCorp Vault as a secret store so your microservices can securely retrieve secrets without embedding credentials in code.
+Description: Learn how to configure Dapr to use HashiCorp Vault as a secret store, enabling secure secret retrieval for microservices in any cloud or on-premises environment.
 
 ---
 

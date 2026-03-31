@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Webex, Cisco, Monitoring
+Tags: Flux CD, GitOps, Kubernetes, Notification, Webex, Cisco, Monitoring
 
 Description: Learn how to configure Flux CD's notification controller to send deployment and reconciliation alerts to Webex spaces using the Provider resource.
 

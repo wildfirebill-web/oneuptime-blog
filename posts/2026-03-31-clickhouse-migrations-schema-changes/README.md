@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Migration, Schema, DDL, Administration, Operations
+Tags: ClickHouse, Migration, Schema, DDL, Administration, Operation
 
 Description: Learn how to manage ClickHouse schema changes safely using a migration table pattern, apply DDL changes with ALTER TABLE, and handle migrations in CI/CD pipelines.
 

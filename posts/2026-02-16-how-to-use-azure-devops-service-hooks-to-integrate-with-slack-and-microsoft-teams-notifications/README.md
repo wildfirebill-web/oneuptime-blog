@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure DevOps, Service Hooks, Slack, Microsoft Teams, Notifications, Integration, DevOps
+Tags: Azure DevOps, Service Hooks, Slack, Microsoft Teams, Notification, Integration, DevOps
 
 Description: Step-by-step guide to configuring Azure DevOps service hooks for sending build, release, and work item notifications to Slack and Microsoft Teams.
 

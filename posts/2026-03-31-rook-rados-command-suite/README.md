@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Rados, Object Storage, Kubernetes, Storage
+Tags: Rook, Ceph, RADOS, Object Storage, Kubernetes, Storage
 
 Description: A practical guide to the rados command suite for interacting with Ceph object storage pools, including reading, writing, listing, and benchmarking objects.
 

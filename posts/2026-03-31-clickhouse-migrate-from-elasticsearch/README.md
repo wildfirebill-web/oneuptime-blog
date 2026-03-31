@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Elasticsearch, Migration, Database, Search, Analytics, Logs
+Tags: ClickHouse, Elasticsearch, Migration, Database, Search, Analytics, Log
 
 Description: Migrate log and analytics data from Elasticsearch to ClickHouse by exporting via scroll API, mapping field types, and recreating aggregation and filtering queries in SQL.
 

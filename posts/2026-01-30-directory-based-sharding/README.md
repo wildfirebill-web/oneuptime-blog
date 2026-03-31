@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Database, Sharding, Distributed Systems, Scalability
+Tags: Database, Sharding, Distributed System, Scalability
 
 Description: Learn to create directory-based sharding using lookup tables for flexible data distribution.
 

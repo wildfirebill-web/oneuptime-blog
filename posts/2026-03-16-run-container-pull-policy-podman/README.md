@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Pull Policy
+Tags: Podman, Container, DevOps, Container Image, Pull Policy
 
 Description: Learn how to control when Podman pulls container images using pull policies like always, missing, never, and newer.
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Time Series, Migration, Schema Design, Performance
 
-Description: Migrate an existing MongoDB regular collection to a time series collection to reduce storage, improve query performance, and enable time-series-specific aggregation operators.
+Description: Migrate an existing MongoDB regular collection to a time series collection to reduce storage, improve query performance, and enable time-series-specific operators.
 
 ---
 

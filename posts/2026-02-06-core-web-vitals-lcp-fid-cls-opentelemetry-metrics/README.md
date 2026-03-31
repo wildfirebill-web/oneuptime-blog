@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Core Web Vitals, LCP, FID, CLS, Web Performance, Metrics
+Tags: OpenTelemetry, Core Web Vitals, LCP, FID, CLS, Web Performance, Metric
 
 Description: Learn how to capture Core Web Vitals like LCP, FID, and CLS as OpenTelemetry metrics for real user performance monitoring and alerting.
 

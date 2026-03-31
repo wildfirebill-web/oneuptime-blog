@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Prometheus, Metrics, Relabeling, Monitoring
+Tags: Prometheus, Metric, Relabeling, Monitoring
 
 Description: A practical guide to Prometheus metric relabeling that helps you transform, filter, and optimize your metrics pipeline for better observability.
 

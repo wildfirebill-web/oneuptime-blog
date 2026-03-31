@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RESET, Connection Management, Transaction, Pub/Sub
+Tags: Redis, Reset, Connection Management, Transaction, Pub/Sub
 
 Description: Learn how to use the RESET command in Redis to fully reset a connection's state, clearing transactions, subscriptions, and watches in one command.
 

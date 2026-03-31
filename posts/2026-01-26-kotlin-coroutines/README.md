@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kotlin, Coroutines, Async, Concurrency, Android, JVM, Structured Concurrency
+Tags: Kotlin, Coroutine, Async, Concurrency, Android, JVM, Structured Concurrency
 
 Description: Learn how to implement coroutines in Kotlin for asynchronous programming.
 

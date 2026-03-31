@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change Streams, Resume Tokens, Fault Tolerance, Reliability
+Tags: MongoDB, Change Stream, Resume Token, Fault Tolerance, Reliability
 
 Description: Implement fault-tolerant MongoDB change streams using resume tokens to ensure no events are missed when a stream disconnects or your application restarts.
 

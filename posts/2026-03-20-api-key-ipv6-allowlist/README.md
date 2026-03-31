@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API Keys, IPv6, Security, Authentication, CIDR
+Tags: API Key, IPv6, Security, Authentication, CIDR
 
 Description: Manage API key allowlists that include IPv6 addresses, CIDR blocks, and handle IPv4-mapped IPv6 addresses correctly.
 

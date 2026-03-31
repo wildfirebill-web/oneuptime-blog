@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Azure Monitor, Alerts, Monitoring, Infrastructure as Code, Observability
+Tags: OpenTofu, Azure, Azure Monitor, Alert, Monitoring, Infrastructure as Code, Observability
 
 Description: Learn how to create Azure Monitor metric and log alerts using OpenTofu to proactively detect and respond to performance issues and failures in your Azure infrastructure.
 

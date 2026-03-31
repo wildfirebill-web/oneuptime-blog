@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Image Factory, System Extensions, Kubernetes, Drivers
+Tags: Talos Linux, Image Factory, System Extensions, Kubernetes, Driver
 
 Description: A detailed walkthrough of including system extensions in Talos Linux images using Image Factory for hardware support, storage tools, and networking capabilities.
 

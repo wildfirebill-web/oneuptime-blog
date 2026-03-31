@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Feature Flags, Traffic Routing, A/B Testing
+Tags: Istio, Kubernetes, Feature Flag, Traffic Routing, A/B Testing
 
 Description: Implement infrastructure-level feature flag routing using Istio VirtualService rules to control feature exposure without modifying application code.
 

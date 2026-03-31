@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, K3s
+Tags: Cilium, Kubernetes, k3s
 
 Description: Diagnose and resolve common issues when running Cilium as the CNI on K3s, including agent failures, connectivity problems, and K3s-specific conflicts.
 

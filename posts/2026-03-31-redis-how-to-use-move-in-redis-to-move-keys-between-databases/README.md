@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, MOVE, Databases, Keys, Data Management
+Tags: Redis, MOVE, Database, Key, Data Management
 
 Description: Learn how to use MOVE in Redis to atomically transfer a key from one database to another within the same Redis server instance.
 

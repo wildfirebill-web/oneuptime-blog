@@ -1,6 +1,6 @@
 # How to Use $floor, $ceil, $round in MongoDB Aggregation
 
-Author: [nawazdhandala](https://www.github.name/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Aggregation, $floor, $ceil, $round, Pipeline, Math
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Cleanup, Automation
+Tags: Podman, Container, DevOps, Cleanup, Automation
 
 Description: Learn how to use the auto-remove flag in Podman to automatically clean up containers after they exit, keeping your system tidy.
 

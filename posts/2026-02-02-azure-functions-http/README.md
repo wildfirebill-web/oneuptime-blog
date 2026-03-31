@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Azure, Azure Functions, Serverless, HTTP, Cloud
+Tags: Azure, Azure Function, Serverless, HTTP, Cloud
 
 Description: Learn how to build HTTP-triggered Azure Functions from scratch, covering setup, routing, authentication, and deployment best practices.
 

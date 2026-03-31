@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Skopeo, Registry, Image Management
+Tags: Podman, Container, DevOps, Skopeo, Registry, Image Management
 
 Description: Learn how to use Skopeo alongside Podman to copy container images between different registries without pulling them locally first.
 

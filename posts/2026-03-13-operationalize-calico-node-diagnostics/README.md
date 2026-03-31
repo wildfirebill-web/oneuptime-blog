@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics, Operations
+Tags: Calico, Kubernetes, Networking, Diagnostic, Operation
 
 Description: Build operational processes for Calico node diagnostics including node-specific runbooks, automated health checks, and escalation procedures for single-node Calico failures.
 

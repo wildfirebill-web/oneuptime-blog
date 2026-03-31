@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Microservices, BFF, Architecture, API
+Tags: Microservice, BFF, Architecture, API
 
 Description: A practical guide to implementing the Backend for Frontend pattern with examples for mobile, web, data aggregation, and authentication handling.
 

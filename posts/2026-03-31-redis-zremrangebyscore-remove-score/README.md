@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted set, ZREMRANGEBYSCORE, Command
+Tags: Redis, Sorted Set, ZREMRANGEBYSCORE, Command
 
 Description: Learn how to use ZREMRANGEBYSCORE in Redis to remove members whose scores fall within a specified numeric range, useful for expiry and cleanup.
 

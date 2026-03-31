@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, ECS, Services, Fargate, Deployment, Infrastructure as Code
+Tags: OpenTofu, AWS, ECS, Service, Fargate, Deployment, Infrastructure as Code
 
 Description: Learn how to create ECS services with OpenTofu for long-running containers with rolling deployments, health checks, and network configuration in a VPC.
 

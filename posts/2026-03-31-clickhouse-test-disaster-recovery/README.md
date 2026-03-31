@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Disaster Recovery, Testing, Operations, Reliability
+Tags: ClickHouse, Disaster Recovery, Testing, Operation, Reliability
 
 Description: Learn how to design and execute ClickHouse disaster recovery tests to validate backup and restore procedures before a real incident occurs.
 

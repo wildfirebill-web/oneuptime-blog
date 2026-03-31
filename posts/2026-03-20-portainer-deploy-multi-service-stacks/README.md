@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Docker Compose, Stacks, DevOps
+Tags: Portainer, Docker, Docker Compose, Stack, DevOps
 
 Description: Learn how to deploy multi-service applications as stacks in Portainer using Docker Compose definitions.
 

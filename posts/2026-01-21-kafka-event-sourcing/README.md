@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Event Sourcing, CQRS, Event Store, Domain Events, Microservices, Java
+Tags: Apache Kafka, Event Sourcing, CQRS, Event Store, Domain Event, Microservice, Java
 
 Description: A comprehensive guide to implementing event sourcing with Apache Kafka, covering event store design, aggregate reconstruction, snapshots, projections.
 

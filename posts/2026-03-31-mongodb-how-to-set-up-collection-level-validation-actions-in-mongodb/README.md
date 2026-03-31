@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Schema Validation, JSON Schema, Data Quality, Collections
+Tags: MongoDB, Schema Validation, JSON Schema, Data Quality, Collection
 
 Description: Learn how to configure MongoDB collection-level document validation with error and warn actions to enforce data quality at the database level.
 

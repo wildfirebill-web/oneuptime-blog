@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Epinio, CLI, Kubernetes, PaaS, Developer Tools
+Tags: Epinio, CLI, Kubernetes, PaaS, Developer Tool
 
 Description: Master the Epinio CLI tool for managing applications, namespaces, services, and configurations from the terminal.
 

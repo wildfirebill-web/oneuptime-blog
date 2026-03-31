@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, User Namespaces, userns
+Tags: Podman, Container, DevOps, Rootless, User Namespaces, userns
 
 Description: Learn how to use the --userns flag in Podman to control user namespace behavior for fine-grained UID/GID mapping.
 

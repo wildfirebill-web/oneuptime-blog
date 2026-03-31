@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, Caching, Redis, Performance, Distributed Systems
+Tags: .NET, C#, Caching, Redis, Performance, Distributed System
 
 Description: Learn how to implement multi-level caching in .NET applications using in-memory and distributed caches together.
 

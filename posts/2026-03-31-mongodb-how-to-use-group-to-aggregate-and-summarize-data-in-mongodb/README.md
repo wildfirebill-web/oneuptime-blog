@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $group, Data Summarization, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $group, Data Summarization, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $group aggregation stage to group documents by a key and compute summary statistics like sum, average, count, and more.
 

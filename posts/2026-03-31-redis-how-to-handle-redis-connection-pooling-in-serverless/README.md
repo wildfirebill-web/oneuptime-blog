@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Serverless, Connection Pooling, Aws Lambda, Performance
+Tags: Redis, Serverless, Connection Pooling, AWS Lambda, Performance
 
 Description: Learn how to manage Redis connections efficiently in serverless environments where cold starts, concurrency, and ephemeral instances create unique connection challenges.
 

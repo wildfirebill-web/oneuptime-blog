@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, HPERSIST, Hash, TTL, Expiration, Persist, Command
+Tags: Redis, HPERSIST, Hash, TTL, Expiration, PERSIST, Command
 
 Description: Learn how to use the Redis HPERSIST command (Redis 7.4+) to remove the expiration from specific hash fields, making them permanent while other fields retain their TTLs.
 

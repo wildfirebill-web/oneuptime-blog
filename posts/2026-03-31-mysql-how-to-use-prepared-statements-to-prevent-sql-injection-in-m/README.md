@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, Sql Injection, Prepared Statements, Best Practices
+Tags: MySQL, Security, SQL Injection, Prepared Statement, Best Practice
 
 Description: Learn how to use MySQL prepared statements and parameterized queries to prevent SQL injection attacks in your applications.
 

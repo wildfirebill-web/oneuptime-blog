@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Dark Launch, Feature Flags, Progressive Delivery
+Tags: Flux CD, GitOps, Kubernetes, Dark Launch, Feature Flag, Progressive Delivery
 
 Description: Deploy new features in dark launch mode using Flux CD, serving the new code path to all requests without exposing results to users for safe pre-production validation.
 

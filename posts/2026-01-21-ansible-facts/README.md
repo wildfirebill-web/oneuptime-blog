@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Facts, Variables, System Information, DevOps, Automation
+Tags: Ansible, Facts, Variable, System Information, DevOps, Automation
 
 Description: Master Ansible facts to gather system information, make dynamic decisions in playbooks, and create custom facts for organization-specific data.
 

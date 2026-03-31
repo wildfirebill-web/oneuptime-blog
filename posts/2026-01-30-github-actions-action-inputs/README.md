@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Input, Automation
+Tags: GitHub Action, CI/CD, Input, Automation
 
 Description: Learn how to define, validate, and use inputs in custom GitHub Actions to create flexible and reusable automation workflows.
 

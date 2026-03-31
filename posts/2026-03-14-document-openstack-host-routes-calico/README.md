@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenStack, Calico, Host Routes, Documentation, Operations
+Tags: OpenStack, Calico, Host Routes, Documentation, Operation
 
 Description: A guide to documenting host route management in OpenStack with Calico for operations teams, covering route architecture, troubleshooting procedures, and maintenance runbooks.
 

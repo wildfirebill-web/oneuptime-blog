@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, Python, Azure, Container Apps, Microservices, Docker, API
+Tags: gRPC, Python, Azure, Container Apps, Microservice, Docker, API
 
 Description: Build a gRPC service in Python and deploy it to Azure Container Apps for high-performance inter-service communication.
 

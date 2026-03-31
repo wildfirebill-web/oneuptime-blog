@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, AWS, Cloud, Documentation, Operations
+Tags: Calico, Kubernetes, Networking, AWS, Cloud, Documentation, Operation
 
 Description: How to create operational documentation for Calico networking on AWS, covering architecture diagrams, IP addressing plans, runbooks, and change management procedures.
 

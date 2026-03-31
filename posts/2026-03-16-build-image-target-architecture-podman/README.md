@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Build, Multi-Architecture
+Tags: Podman, Container, DevOps, Build, Multi-Architecture
 
 Description: Learn how to specify a target architecture when building container images with Podman using the --platform flag to produce images for different CPU architectures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, OCI Registry, Module Source, Containers, Infrastructure
+Tags: OpenTofu, OCI Registry, Module Source, Container, Infrastructure
 
 Description: Learn how to configure OpenTofu to pull modules directly from OCI-compatible registries using the oci:: source prefix for version-controlled module distribution.
 

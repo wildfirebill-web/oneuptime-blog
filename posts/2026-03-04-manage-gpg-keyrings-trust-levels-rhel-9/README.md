@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, GPG, Keyrings, Trust, Key Management, Security, Linux
+Tags: RHEL, GPG, Keyring, Trust, Key Management, Security, Linux
 
 Description: Manage GPG keyrings and configure trust levels on RHEL to maintain a reliable web of trust for encryption and signature verification.
 

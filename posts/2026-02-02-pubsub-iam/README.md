@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Google Cloud, Pub/Sub, IAM, Security, Permissions, GCP, Messaging, DevOps
+Tags: Google Cloud, Pub/Sub, IAM, Security, Permission, GCP, Messaging, DevOps
 
 Description: A practical guide to configuring IAM permissions for Google Cloud Pub/Sub, covering roles, service accounts, topic and subscription-level permissions, and security best practices.
 

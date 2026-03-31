@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Image Factory, Installation, System Extensions, Custom Images
+Tags: Talos Linux, Image Factory, Installation, System Extensions, Custom Image
 
 Description: Use the Talos Linux Image Factory to download standard and custom images with system extensions for your specific hardware.
 

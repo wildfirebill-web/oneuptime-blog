@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, MySQL, Permissions, Database Security
+Tags: Ansible, MySQL, Permission, Database Security
 
 Description: Manage MySQL privileges and permissions with Ansible to enforce least-privilege access control across your database servers.
 

@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Backup, Incremental Backup, Storage, Disaster Recovery
+Tags: ClickHouse, Backup, Incremental Backup, Data Protection, Storage
 
-Description: Learn how to configure incremental backups in ClickHouse using the base_backup option to reduce storage usage and backup time.
+Description: Learn how to configure and run incremental backups in ClickHouse to reduce storage costs and backup time compared to full backups.
 
 ---
 

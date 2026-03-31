@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Data Structures, Jinja2, DevOps
+Tags: Ansible, Variable, Data Structure, Jinja2, DevOps
 
 Description: Learn how to access deeply nested variables in Ansible using dot notation, bracket notation, and filters for safe traversal of complex data structures.
 

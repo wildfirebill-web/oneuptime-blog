@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Observability
+Tags: Podman, Container, DevOps, Monitoring, Event, Observability
 
 Description: Learn how to monitor container events with Podman to track lifecycle changes, troubleshoot issues, and maintain visibility into your container environment.
 

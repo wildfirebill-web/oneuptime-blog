@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Provider Development, Error Handling, Diagnostics, Infrastructure as Code
+Tags: Terraform, Provider Development, Error Handling, Diagnostic, Infrastructure as Code
 
 Description: Learn how to implement clear, actionable error messages in custom Terraform providers using diagnostics, error classification, and user-friendly formatting for better debugging.
 

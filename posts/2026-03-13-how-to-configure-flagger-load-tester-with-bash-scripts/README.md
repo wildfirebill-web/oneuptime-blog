@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Canary, Load Testing, Bash, Scripts, Kubernetes, Progressive Delivery, Testing
+Tags: Flagger, Canary, Load Testing, Bash, Script, Kubernetes, Progressive Delivery, Testing
 
 Description: Learn how to use bash scripts with the Flagger load tester to run complex validation logic during canary analysis.
 

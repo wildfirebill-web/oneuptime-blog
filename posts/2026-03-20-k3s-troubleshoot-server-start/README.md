@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Troubleshooting, DevOps, Linux
+Tags: k3s, Kubernetes, Troubleshooting, DevOps, Linux
 
 Description: A systematic guide to diagnosing and resolving K3s server startup failures, covering common error causes and their solutions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ODBC, Integration, Windows, Driver
+Tags: ClickHouse, ODBC, Integration, Window, Driver
 
 Description: Learn how to install and configure the ClickHouse ODBC driver on Linux and Windows, create DSN entries, and connect from Excel, Tableau, Python, and C applications.
 

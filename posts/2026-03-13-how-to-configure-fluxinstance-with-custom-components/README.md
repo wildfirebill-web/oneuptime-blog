@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, FluxInstance, Custom Components, Kubernetes, GitOps
+Tags: Flux, FluxInstance, Custom Component, Kubernetes, GitOps
 
 Description: Learn how to configure a FluxInstance with custom component selections and resource customizations for tailored Flux deployments.
 

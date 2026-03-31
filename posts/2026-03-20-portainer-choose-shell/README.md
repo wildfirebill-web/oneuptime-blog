@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Debugging, Linux
+Tags: Portainer, Docker, Container, Debugging, Linux
 
 Description: Learn how to select the correct shell when opening a container console in Portainer based on the container's base image and available shells.
 

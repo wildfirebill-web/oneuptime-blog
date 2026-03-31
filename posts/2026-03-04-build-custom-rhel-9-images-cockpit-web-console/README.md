@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Image Builder, Cockpit, Custom Images
+Tags: RHEL, Image Builder, Cockpit, Custom Image
 
 Description: Use the Cockpit web console for building custom RHEL 9 images.
 

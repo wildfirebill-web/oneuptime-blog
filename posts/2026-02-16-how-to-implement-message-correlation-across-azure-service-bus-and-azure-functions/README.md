@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Service Bus, Azure Functions, Message Correlation, Distributed Systems, Tracing, Messaging
+Tags: Azure, Service Bus, Azure Function, Message Correlation, Distributed System, Tracing, Messaging
 
 Description: Implement message correlation across Azure Service Bus and Azure Functions to track related messages through distributed processing pipelines.
 

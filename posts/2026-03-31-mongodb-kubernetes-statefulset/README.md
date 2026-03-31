@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Kubernetes, StatefulSet, Operations, Infrastructure
+Tags: MongoDB, Kubernetes, StatefulSet, Operation, Infrastructure
 
 Description: Learn how to deploy MongoDB on Kubernetes using a StatefulSet, including persistent volumes, headless services, replica set initialization, and secret management.
 

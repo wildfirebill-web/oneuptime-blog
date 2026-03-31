@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Farm, Multi-Architecture, Build Farm
+Tags: Podman, Container, DevOps, Podman Farm, Multi-Architecture, Build Farm
 
 Description: Learn how to use podman farm update to add or remove system connections from an existing Podman build farm configuration.
 

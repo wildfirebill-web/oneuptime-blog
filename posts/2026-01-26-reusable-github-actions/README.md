@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Automation, Reusable Workflows, DevOps
+Tags: GitHub Action, CI/CD, Automation, Reusable Workflows, DevOps
 
 Description: Learn how to build reusable GitHub Actions with composite actions, reusable workflows, and custom JavaScript actions for DRY CI/CD pipelines.
 

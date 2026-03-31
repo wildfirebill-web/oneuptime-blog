@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Tagging
+Tags: Podman, Container, DevOps, Container Image, Build, Tagging
 
 Description: Learn how to tag images during Podman builds using the -t flag, including versioning strategies, multiple tags, and automated tagging workflows.
 

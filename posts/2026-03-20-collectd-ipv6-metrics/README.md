@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Collectd, IPv6, Metrics, Monitoring, Linux, System Metrics
+Tags: Collectd, IPv6, Metric, Monitoring, Linux, System Metrics
 
 Description: A guide to configuring Collectd to collect IPv6 network statistics and send them to Graphite or other backends for visualization.
 

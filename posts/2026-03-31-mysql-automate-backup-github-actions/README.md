@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Backup, GitHub Actions, Automation, CI/CD
+Tags: MySQL, Backup, GitHub Action, Automation, CI/CD
 
 Description: Automate MySQL backups using GitHub Actions with scheduled workflows that dump, compress, and upload backups to cloud storage with retention policies.
 

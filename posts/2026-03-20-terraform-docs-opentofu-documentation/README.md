@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, terraform-docs, Documentation, Modules, Best Practice
+Tags: OpenTofu, Terraform, terraform-docs, Documentation, Module, Best Practice
 
 Description: Learn how to use terraform-docs to automatically generate documentation for OpenTofu modules from variable and output definitions, keeping your module docs always up to date.
 

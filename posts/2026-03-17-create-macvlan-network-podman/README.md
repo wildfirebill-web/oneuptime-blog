@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Macvlan, LAN
+Tags: Podman, Container, DevOps, Networking, Macvlan, LAN
 
 Description: Learn how to create macvlan networks in Podman to give containers direct access to the physical network with their own MAC addresses.
 

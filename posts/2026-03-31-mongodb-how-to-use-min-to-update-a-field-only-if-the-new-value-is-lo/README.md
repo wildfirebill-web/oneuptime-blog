@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Update Operators, $min, Conditional Updates, NoSQL
+Tags: MongoDB, Update Operator, $min, Conditional Updates, NoSQL
 
 Description: Learn how to use MongoDB's $min operator to update a field only when the new value is lower than the current value, ideal for tracking minimums and low-water marks.
 

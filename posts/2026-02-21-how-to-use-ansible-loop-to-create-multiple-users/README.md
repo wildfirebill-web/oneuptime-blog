@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, User Management, Loops, Linux Administration
+Tags: Ansible, User Management, Loop, Linux Administration
 
 Description: Learn how to use Ansible loops to create and manage multiple user accounts with SSH keys, groups, and permissions in a single playbook.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Debugging, Verbose
+Tags: Podman, Container, DevOps, Monitoring, Event, Debugging, Verbose
 
 Description: Learn how to enable verbose container create events in Podman to capture detailed information about container configuration at creation time.
 

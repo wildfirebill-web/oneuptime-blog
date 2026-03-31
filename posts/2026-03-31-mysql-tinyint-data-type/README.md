@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, SQL, Data Type, Integer, Database
 
-Description: Learn how to use the TINYINT data type in MySQL, its storage size, signed and unsigned ranges, and practical use cases like boolean flags and small counters.
+Description: Learn how to use the TINYINT data type in MySQL, its 1-byte storage, signed and unsigned ranges, and practical use cases like boolean flags and status codes.
 
 ---
 

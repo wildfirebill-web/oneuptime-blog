@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Pods, Docker Compose, Containers, Architecture
+Tags: Podman, Pod, Docker Compose, Container, Architecture
 
 Description: Compare Podman pods and Docker Compose services to understand their networking models, lifecycle management, and use cases for multi-container application architectures.
 

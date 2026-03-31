@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Remote Management, Cleanup
+Tags: Podman, Container, DevOps, Remote Management, Cleanup
 
 Description: Learn how to safely remove Podman remote system connections when hosts are decommissioned or connections are no longer needed.
 

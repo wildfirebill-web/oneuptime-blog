@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Lifecycle, Container Management
+Tags: Podman, Container, DevOps, Container Lifecycle, Container Management
 
 Description: Learn how to use podman init to initialize a created container, setting up its runtime environment before starting it.
 

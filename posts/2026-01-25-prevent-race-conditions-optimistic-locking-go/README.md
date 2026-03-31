@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Race Conditions, Optimistic Locking, Concurrency, Database
+Tags: Go, Race Condition, Optimistic Locking, Concurrency, Database
 
 Description: Learn how to implement optimistic locking in Go to prevent race conditions in concurrent database operations without sacrificing performance.
 

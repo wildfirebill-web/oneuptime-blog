@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Prometheus, Metrics, Observability, Monitoring, Performance, Grafana
+Tags: Rust, Prometheus, Metric, Observability, Monitoring, Performance, Grafana
 
 Description: Learn how to add custom metrics to Rust applications using the prometheus crate. This guide covers counters, gauges, histograms, and best practices for exposing metrics in production.
 

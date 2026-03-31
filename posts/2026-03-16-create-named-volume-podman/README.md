@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Storage
+Tags: Podman, Container, DevOps, Volumes, Storage
 
 Description: Learn how to create and use named volumes in Podman for persistent container data storage that survives container restarts and removals.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, System Variables, Configuration, Administration
+Tags: MySQL, System Variable, Configuration, Administration
 
 Description: Learn how to read and modify MySQL system variables (@@var) at both global and session levels to tune server behavior.
 

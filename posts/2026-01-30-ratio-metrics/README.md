@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Monitoring, SRE
+Tags: Observability, Metric, Monitoring, SRE
 
 Description: Learn how to design ratio metrics for measuring proportions, success rates, and comparative measurements in monitoring systems.
 

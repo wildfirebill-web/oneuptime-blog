@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Systemd, Proxy, IPv4, Linux, Environment Variables, Services
+Tags: Systemd, Proxy, IPv4, Linux, Environment Variable, Service
 
 Description: Configure proxy environment variables for systemd services on Linux to route IPv4 HTTP and HTTPS traffic through a corporate or internal proxy server.
 

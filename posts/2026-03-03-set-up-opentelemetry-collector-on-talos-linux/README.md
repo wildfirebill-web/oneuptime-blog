@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, OpenTelemetry, Observability, Kubernetes, Metrics
+Tags: Talos Linux, OpenTelemetry, Observability, Kubernetes, Metric
 
 Description: A hands-on guide to deploying and configuring the OpenTelemetry Collector on a Talos Linux Kubernetes cluster.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, ExternalName, Kubernetes, External Services, DNS
+Tags: Istio, ExternalName, Kubernetes, External Service, DNS
 
 Description: Configure Istio to work with Kubernetes ExternalName services including DNS resolution, TLS origination, and traffic policy for external dependencies.
 

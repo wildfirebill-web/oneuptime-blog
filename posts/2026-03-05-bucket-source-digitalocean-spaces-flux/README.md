@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, DigitalOcean, Spaces, Bucket, S3
+Tags: Flux CD, GitOps, Kubernetes, DigitalOcean, Space, Bucket, S3
 
 Description: Learn how to configure Flux CD to pull Kubernetes manifests from DigitalOcean Spaces using the generic S3-compatible Bucket source provider.
 

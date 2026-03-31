@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Slack, DevOps, Notifications, Infrastructure as Code, Automation
+Tags: Terraform, Slack, DevOps, Notification, Infrastructure as Code, Automation
 
 Description: Learn how to integrate Terraform with Slack to send real-time notifications about infrastructure changes, plan outputs, and deployment status to your team channels.
 

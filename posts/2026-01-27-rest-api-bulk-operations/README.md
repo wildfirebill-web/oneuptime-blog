@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: REST API, Bulk Operations, API Design, Performance, Batch Processing
+Tags: REST API, Bulk Operation, API Design, Performance, Batch Processing
 
 Description: Learn how to design and implement bulk operations in REST APIs for creating, updating, and deleting multiple resources efficiently.
 

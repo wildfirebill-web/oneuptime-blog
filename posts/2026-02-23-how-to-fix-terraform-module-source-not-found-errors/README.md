@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, Infrastructure as Code, Modules
+Tags: Terraform, Troubleshooting, Infrastructure as Code, Module
 
 Description: Learn how to diagnose and fix Terraform module source not found errors, including registry issues, local path problems, and Git source misconfigurations.
 

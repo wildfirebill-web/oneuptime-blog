@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Manager, Memory, Resources, Pod
+Tags: Rook, Ceph, Kubernetes, Manager, Memory, Resource, Pod
 
 Description: Configure memory requests and limits for Rook-Ceph MGR (manager) pods in Kubernetes to support dashboard, Prometheus, and orchestration modules without OOM kills.
 

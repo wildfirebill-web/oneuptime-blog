@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MetalLB, Kubernetes, Troubleshooting, IP Management, Networking, Load Balancing, Conflicts
+Tags: MetalLB, Kubernetes, Troubleshooting, IP Management, Networking, Load Balancing, Conflict
 
 Description: Learn how to recover from MetalLB IP address conflicts including handling duplicate assignments and external conflicts.
 

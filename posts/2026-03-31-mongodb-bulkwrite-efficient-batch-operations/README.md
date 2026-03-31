@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, bulkWrite, Batch Operation, Performance, Write Operation
+Tags: MongoDB, BulkWrite, Batch Operation, Performance, Write Operation
 
 Description: Learn how to use MongoDB's bulkWrite() to execute multiple insert, update, and delete operations in a single round trip for maximum efficiency.
 

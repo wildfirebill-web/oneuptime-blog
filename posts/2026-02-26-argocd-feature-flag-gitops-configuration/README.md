@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Feature Flags, Configuration Management
+Tags: ArgoCD, GitOps, Kubernetes, Feature Flag, Configuration Management
 
 Description: Learn how to manage feature flag configuration through GitOps workflows using ArgoCD including flag definitions, targeting rules, and environment promotion.
 

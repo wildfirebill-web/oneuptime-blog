@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Performance, Throughput, Kafka, Redis, Microservices
+Tags: Dapr, Pub/Sub, Performance, Throughput, Kafka, Redis, Microservice
 
 Description: Learn how to optimize Dapr Pub/Sub throughput using concurrency settings, batching, partitioning, and broker-specific configuration tuning.
 

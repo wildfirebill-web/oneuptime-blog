@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Moleculer, Microservices, JavaScript, Distributed Systems
+Tags: Node.js, Moleculer, Microservice, JavaScript, Distributed System
 
 Description: Learn how to build scalable microservices with Node.js using the Moleculer framework, including service creation, communication, and deployment.
 

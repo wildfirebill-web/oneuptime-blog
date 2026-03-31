@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Prerequisites, Dependencies, Development
+Tags: Feature Flag, Prerequisites, Dependencies, Development
 
 Description: Learn how to implement flag prerequisites for dependent feature rollouts.
 

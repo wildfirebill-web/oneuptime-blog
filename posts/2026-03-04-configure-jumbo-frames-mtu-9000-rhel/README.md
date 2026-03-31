@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Networking, Jumbo Frames, MTU, Performance
+Tags: RHEL, Networking, Jumbo Frame, MTU, Performance
 
 Description: Configure jumbo frames (MTU 9000) on RHEL network interfaces to improve throughput for storage networks, backup traffic, and high-bandwidth applications.
 

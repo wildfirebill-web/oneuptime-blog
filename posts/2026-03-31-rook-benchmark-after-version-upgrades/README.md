@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Benchmarking, Upgrades, Performance, Testing
+Tags: Rook, Ceph, Benchmarking, Upgrade, Performance, Testing
 
 Description: Establish and run a repeatable benchmark suite after Ceph version upgrades to verify performance regressions, validate improvements, and confirm cluster health and throughput.
 

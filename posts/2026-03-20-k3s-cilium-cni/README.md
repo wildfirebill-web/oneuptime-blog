@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Cilium, eBPF, Networking, Security, CNI
+Tags: k3s, Kubernetes, Cilium, eBPF, Networking, Security, CNI
 
 Description: Learn how to replace K3s's default Flannel with Cilium CNI for advanced networking, observability, and security using eBPF.
 

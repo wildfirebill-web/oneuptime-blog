@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Lists, Collections, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, List, Collection, Infrastructure as Code, DevOps
 
 Description: A guide to declaring and using list type variables in OpenTofu to work with ordered collections of values.
 

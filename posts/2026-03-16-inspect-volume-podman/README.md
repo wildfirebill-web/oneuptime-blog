@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Storage
+Tags: Podman, Container, DevOps, Volumes, Storage
 
 Description: Learn how to use podman volume inspect to view detailed information about Podman volumes, including mount points, labels, options, and creation timestamps.
 

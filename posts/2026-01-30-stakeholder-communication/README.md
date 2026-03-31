@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Incident Management, Communication, SRE, Operations
+Tags: Incident Management, Communication, SRE, Operation
 
 Description: Learn how to communicate effectively with stakeholders during incidents.
 

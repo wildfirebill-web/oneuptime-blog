@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, OCI Registry, Provider Distribution, Containers, Infrastructure
+Tags: OpenTofu, OCI Registry, Provider Distribution, Container, Infrastructure
 
 Description: Learn how to push OpenTofu provider plugins to OCI-compatible registries for distribution and version management, leveraging container registry infrastructure you already have.
 

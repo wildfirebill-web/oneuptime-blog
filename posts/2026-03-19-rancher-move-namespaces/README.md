@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Projects, Namespaces
+Tags: Rancher, Kubernetes, Project, Namespace
 
 Description: Learn how to move Kubernetes namespaces between Rancher projects to reorganize workloads and align with team changes.
 

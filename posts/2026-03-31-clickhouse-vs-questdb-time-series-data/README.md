@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, QuestDB, Time-Series, Metrics, TSDB, Analytics, Ingestion
+Tags: ClickHouse, QuestDB, Time-Series, Metric, TSDB, Analytics, Ingestion
 
 Description: Compare ClickHouse and QuestDB for time-series data storage - examining ingestion throughput, query speed, SQL support, and production readiness.
 

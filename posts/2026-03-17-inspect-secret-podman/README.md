@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Inspection
+Tags: Podman, Container, DevOps, Secret, Inspection
 
 Description: Learn how to inspect Podman secrets to view metadata, driver information, and creation details without exposing the secret value.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Notification
 
 Description: Learn how to configure default notification subscriptions in ArgoCD that automatically apply to all applications, reducing annotation overhead and ensuring consistent alerting across your cluster.
 

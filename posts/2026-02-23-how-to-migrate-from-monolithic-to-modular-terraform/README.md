@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Refactoring, Migration, Infrastructure as Code
+Tags: Terraform, Module, Refactoring, Migration, Infrastructure as Code
 
 Description: Learn how to break apart a monolithic Terraform configuration into well-organized modules for better reusability, maintainability, and team collaboration.
 

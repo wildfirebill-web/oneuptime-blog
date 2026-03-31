@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Atlas Search, Faceted Search, Navigation
+Tags: MongoDB, Atlas Search, Faceted Search, Navigation
 
 Description: Learn how to build faceted navigation in MongoDB Atlas Search using the $searchMeta aggregation stage to return facet counts for categories, price ranges, and filters.
 

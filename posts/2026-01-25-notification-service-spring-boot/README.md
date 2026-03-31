@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Notifications, Email, Push Notifications
+Tags: Java, Spring Boot, Notification, Email, Push Notification
 
 Description: Learn how to build a flexible notification service in Spring Boot that handles email, SMS, and push notifications with retry logic, templating, and async processing.
 

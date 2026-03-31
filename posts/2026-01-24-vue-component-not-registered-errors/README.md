@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vue, Components, Troubleshooting, JavaScript, Frontend, Debugging
+Tags: Vue, Component, Troubleshooting, JavaScript, Frontend, Debugging
 
 Description: Learn how to diagnose and resolve Vue component registration errors, including common causes, debugging techniques, and best practices for component organization.
 

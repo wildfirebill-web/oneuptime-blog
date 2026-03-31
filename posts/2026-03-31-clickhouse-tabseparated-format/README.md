@@ -1,6 +1,6 @@
 # How to Use TabSeparated Format in ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, TSV, Data Engineering, Import
 

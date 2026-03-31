@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, Grafana, Observability, Metrics
+Tags: Cilium, Kubernetes, Grafana, Observability, Metric
 
 Description: Deploy and customize Grafana dashboards for Cilium and Hubble metrics to visualize cluster network health, policy verdicts, and data plane performance.
 

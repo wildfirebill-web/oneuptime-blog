@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Cardinality, Aggregation
+Tags: OpenTelemetry, Metric, Cardinality, Aggregation
 
 Description: Reduce metrics cardinality costs by aggregating OpenTelemetry metrics at the SDK and Collector level before export.
 

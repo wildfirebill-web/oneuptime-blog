@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Image Signing, GPG
+Tags: Podman, Container, DevOps, Security, Image Signing, GPG
 
 Description: Learn how to sign container images with Podman using GPG keys to establish trust and verify image authenticity.
 

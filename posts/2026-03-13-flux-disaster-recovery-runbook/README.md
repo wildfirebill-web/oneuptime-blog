@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Disaster Recovery, Runbook, Operations, Incident Response
+Tags: Flux CD, Kubernetes, GitOps, Disaster Recovery, Runbook, Operation, Incident Response
 
 Description: Write a comprehensive disaster recovery runbook for Flux CD deployments, covering all major failure scenarios with step-by-step recovery procedures.
 

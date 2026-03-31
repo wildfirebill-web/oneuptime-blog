@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Naming Conventions, Kubernetes, GitOps, Governance, Best Practice
+Tags: Flux CD, Naming Convention, Kubernetes, GitOps, Governance, Best Practice
 
 Description: A practical guide to implementing and enforcing consistent naming conventions across Kubernetes resources using Flux CD and policy engines.
 

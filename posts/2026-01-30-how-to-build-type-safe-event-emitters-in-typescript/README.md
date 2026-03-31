@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: TypeScript, Events, Type Safety, Patterns
+Tags: TypeScript, Event, Type Safety, Pattern
 
 Description: Learn how to create type-safe event emitters in TypeScript with strongly typed event names and payloads.
 

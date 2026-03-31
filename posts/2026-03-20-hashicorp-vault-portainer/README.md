@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, HashiCorp Vault, Secrets, Security, Docker, DevOps
+Tags: Portainer, HashiCorp Vault, Secret, Security, Docker, DevOps
 
 Description: Learn how to deploy HashiCorp Vault via Portainer and integrate it with your containerized applications for dynamic secret management.
 

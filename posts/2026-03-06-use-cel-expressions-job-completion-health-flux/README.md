@@ -1,8 +1,8 @@
 # How to Use CEL Expressions for Job Completion Health in Flux
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Flux CD, CEL, Jobs, Health Check, Kubernetes, GitOps, Batch Processing
+Tags: Flux CD, CEL, Job, Health Check, Kubernetes, GitOps, Batch Processing
 
 Description: A practical guide to writing CEL health check expressions for Kubernetes Jobs and CronJobs in Flux CD to validate batch workload completion.
 

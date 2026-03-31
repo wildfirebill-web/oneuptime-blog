@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, File Systems, Security, Permissions, Compliance
+Tags: Ansible, File System, Security, Permission, Compliance
 
 Description: Enforce file system security policies with Ansible including permissions, ownership, sticky bits, and mount options.
 

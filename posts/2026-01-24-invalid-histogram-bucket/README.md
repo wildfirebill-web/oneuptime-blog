@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Histogram, Debugging, Observability, Prometheus
+Tags: OpenTelemetry, Metric, Histogram, Debugging, Observability, Prometheus
 
 Description: Learn how to diagnose and fix invalid histogram bucket errors in OpenTelemetry metrics collection.
 

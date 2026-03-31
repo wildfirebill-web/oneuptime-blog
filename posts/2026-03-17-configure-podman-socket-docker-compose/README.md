@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Sockets, Docker Compose, API
+Tags: Podman, Container, DevOps, Socket, Docker Compose, API
 
 Description: Learn how to configure and manage the Podman socket for use with Docker Compose and other Docker-compatible tools.
 

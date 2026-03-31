@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Service Mesh, Kubernetes, Microservices, Networking
+Tags: Istio, Service Mesh, Kubernetes, Microservice, Networking
 
 Description: A clear explanation of what Istio service mesh does, how it works under the hood, and why teams adopt it for their Kubernetes microservice architectures.
 

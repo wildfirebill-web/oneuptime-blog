@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bash, Shell Scripting, Functions, DevOps, Automation
+Tags: Bash, Shell Scripting, Function, DevOps, Automation
 
 Description: Master the art of writing reusable, maintainable functions in Bash scripts with practical examples and best practices.
 

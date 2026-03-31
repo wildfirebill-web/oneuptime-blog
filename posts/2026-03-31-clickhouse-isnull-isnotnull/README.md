@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, Conditional Function, Data Quality, Filtering
+Tags: ClickHouse, NULL Handling, Conditional Function, Data Quality, Filtering
 
 Description: Learn how to use isNull() and isNotNull() in ClickHouse for null checks, filtering, data quality validation, and conditional expressions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Recommendations AI, Model Evaluation, Metrics, Machine Learning
+Tags: GCP, Recommendations AI, Model Evaluation, Metric, Machine Learning
 
 Description: Learn how to evaluate the quality of your Recommendations AI models using key metrics like precision, recall, CTR, and revenue impact to ensure optimal performance.
 

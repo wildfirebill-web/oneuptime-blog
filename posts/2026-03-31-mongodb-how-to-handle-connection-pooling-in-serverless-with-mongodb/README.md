@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Serverless, Connection Pooling, Lambda, Performance
+Tags: MongoDB, Serverless, Connection Pooling, Lambda, Performance
 
 Description: Solve MongoDB connection exhaustion in serverless environments like AWS Lambda and Vercel by reusing connections and using MongoDB Atlas connection pooling.
 

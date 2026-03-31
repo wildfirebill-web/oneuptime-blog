@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Testing, Terratest, Go, Helpers, Infrastructure as Code
+Tags: Terraform, Testing, Terratest, Go, Helper, Infrastructure as Code
 
 Description: Learn how to build reusable test helper functions for Terraform that simplify common testing patterns like resource validation, retry logic, and output assertions.
 

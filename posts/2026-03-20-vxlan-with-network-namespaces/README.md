@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, VXLAN, Network Namespaces, Containers, Overlay Network, Networking, SDN
+Tags: Linux, VXLAN, Network Namespaces, Container, Overlay Network, Networking, SDN
 
 Description: Combine VXLAN and network namespaces to provide isolated VXLAN overlay segments for containers or processes, simulating per-tenant network isolation.
 

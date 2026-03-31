@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Support, Diagnostics, Troubleshooting, Bug-report
+Tags: Portainer, Support, Diagnostic, Troubleshooting, Bug-report
 
 Description: A guide to generating a Portainer support bundle for submitting to the Portainer team or for self-service diagnostics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Safe Update, Error, SQL Mode, UPDATE
+Tags: MySQL, Safe Update, Error, SQL Mode, Update
 
 Description: Fix MySQL ERROR 1175 by disabling safe update mode for the session or by rewriting queries to include a WHERE clause on a key column.
 

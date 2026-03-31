@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Service Discovery, Microservices, Docker, Consul, Traefik, DNS
+Tags: Portainer, Service Discovery, Microservice, Docker, Consul, Traefik, DNS
 
 Description: Learn how to configure service discovery for microservices in Portainer using Docker's built-in DNS, Consul, or Traefik for dynamic service registration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, K3s, etcd, High Availability
+Tags: Flux CD, Kubernetes, GitOps, k3s, etcd, High Availability
 
 Description: Bootstrap Flux CD on k3s with embedded etcd for high availability, enabling GitOps-driven workload management on lightweight Kubernetes clusters.
 

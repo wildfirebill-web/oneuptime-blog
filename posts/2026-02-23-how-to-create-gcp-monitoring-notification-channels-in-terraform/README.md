@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, GCP, Monitoring, Notifications, Infrastructure as Code
+Tags: Terraform, GCP, Monitoring, Notification, Infrastructure as Code
 
 Description: Learn how to create Google Cloud Monitoring notification channels using Terraform for email, Slack, PagerDuty, and webhook alert delivery.
 

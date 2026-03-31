@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Date Functions, Week Numbers, Yearweek, Time Series
+Tags: MySQL, Date Function, Week Numbers, Yearweek, Time Series
 
 Description: Learn how to use MySQL's WEEK() and YEARWEEK() functions to extract week numbers from dates for grouping, reporting, and time-series analysis.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Cleanup, Kubernetes, Uninstall, Operations
+Tags: Rook, Ceph, Cleanup, Kubernetes, Uninstall, Operation
 
 Description: Safely and completely remove a Rook-Ceph cluster from Kubernetes by deleting CRDs, cleaning OSD devices, removing finalizers, and purging host directories.
 

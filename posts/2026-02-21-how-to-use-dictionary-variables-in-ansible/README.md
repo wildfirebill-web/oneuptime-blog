@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Dictionaries, Data Structures, DevOps
+Tags: Ansible, Variable, Dictionaries, Data Structure, DevOps
 
 Description: Learn how to define, access, iterate over, filter, and transform dictionary variables in Ansible playbooks with practical real-world examples.
 

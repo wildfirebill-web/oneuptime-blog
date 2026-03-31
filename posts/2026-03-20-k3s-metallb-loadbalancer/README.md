@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, MetalLB, Load Balancing, Networking, Bare Metal
+Tags: k3s, Kubernetes, MetalLB, Load Balancing, Networking, Bare Metal
 
 Description: Learn how to deploy MetalLB in K3s to provide LoadBalancer service support on bare-metal and on-premise clusters without a cloud provider.
 

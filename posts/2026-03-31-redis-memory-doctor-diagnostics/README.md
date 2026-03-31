@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Memory doctor, Diagnostics, Monitoring
+Tags: Redis, Memory, MEMORY DOCTOR, Diagnostic, Monitoring
 
 Description: Learn how to use MEMORY DOCTOR to get a plain-English diagnosis of Redis memory health issues, including fragmentation, RSS overhead, and peak memory consumption.
 

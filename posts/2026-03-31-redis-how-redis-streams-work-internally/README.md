@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Internals, Radix Tree, Data Structures
+Tags: Redis, Stream, Internal, Radix Tree, Data Structure
 
 Description: Understand how Redis Streams store data in a radix tree with listpack leaf nodes, how entry IDs work, and how consumer groups track state.
 

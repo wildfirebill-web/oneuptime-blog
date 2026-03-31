@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, ECS, App Mesh, Service Mesh, Envoy, Microservices, Infrastructure as Code
+Tags: Terraform, AWS, ECS, App Mesh, Service Mesh, Envoy, Microservice, Infrastructure as Code
 
 Description: Learn how to integrate AWS App Mesh with ECS using Terraform to add traffic management, observability, and security to your microservices communication.
 

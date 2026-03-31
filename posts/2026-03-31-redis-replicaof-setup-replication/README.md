@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Replication, Replicaof, High availability, Administration
+Tags: Redis, Replication, Replicaof, High Availability, Administration
 
 Description: Learn how to configure Redis primary-replica replication using REPLICAOF, including initial sync, ongoing replication, and common configuration options.
 

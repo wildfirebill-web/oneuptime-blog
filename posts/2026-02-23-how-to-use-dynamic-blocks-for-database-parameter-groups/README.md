@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Dynamic Blocks, AWS, RDS, Database, Parameter Groups, Infrastructure as Code
+Tags: Terraform, Dynamic Blocks, AWS, RDS, Database, Parameter Group, Infrastructure as Code
 
 Description: Learn how to manage RDS and Aurora database parameter groups dynamically in Terraform using dynamic blocks for environment-specific tuning.
 

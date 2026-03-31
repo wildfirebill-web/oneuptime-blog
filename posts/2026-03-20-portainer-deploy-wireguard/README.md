@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, WireGuard, VPN, Privacy, Self-Hosted, Networks
+Tags: Portainer, Docker, WireGuard, VPN, Privacy, Self-Hosted, Network
 
 Description: Deploy WireGuard VPN via Portainer using the linuxserver.io image for easy peer management and secure remote access to your home network or private services.
 

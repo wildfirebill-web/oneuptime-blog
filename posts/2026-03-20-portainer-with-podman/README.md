@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Podman, Docker, Containers, Linux
+Tags: Portainer, Podman, Docker, Container, Linux
 
 Description: Learn how to set up Portainer to manage containers running on Podman as a daemonless, rootless Docker alternative.
 

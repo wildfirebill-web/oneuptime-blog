@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, GPU, Linux
+Tags: RHEL, Docker, Container, GPU, Linux
 
 Description: Learn how to run Docker Containers with GPU Access on RHEL with step-by-step instructions, configuration examples, and best practices.
 

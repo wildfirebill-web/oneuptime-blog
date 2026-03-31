@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Gaming, Inventory, Item Storage, Trading, Hashes, Transactions, Game Development
+Tags: Redis, Gaming, Inventory, Item Storage, Trading, Hash, Transaction, Game Development
 
 Description: A comprehensive guide to building player inventory systems with Redis, covering item storage, stack management, equipment slots, trading between players, and preventing item duplication.
 

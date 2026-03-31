@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Multi-tenant, SaaS, Analytics, Security, Isolation
+Tags: ClickHouse, Multi-Tenant, SaaS, Analytics, Security, Isolation
 
 Description: Learn how to build a multi-tenant analytics SaaS with ClickHouse using shared tables with tenant isolation, row policies, quotas, and per-tenant TTL for cost-efficient data separation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Python, Flask, Testing, Pytest, Unit Tests
+Tags: Python, Flask, Testing, Pytest, Unit Test
 
 Description: A practical guide to testing Flask applications with pytest, covering unit tests, integration tests, fixtures, and testing best practices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Circuit Breaker, Microservices, Resilience, Error Handling, Hystrix, Resilience4j, DevOps
+Tags: Circuit Breaker, Microservice, Resilience, Error Handling, Hystrix, Resilience4j, DevOps
 
 Description: Learn how to diagnose and fix circuit breaker open errors in microservices, including tuning thresholds, implementing fallbacks, and monitoring circuit state.
 

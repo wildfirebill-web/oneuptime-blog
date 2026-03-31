@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Prometheus, PromQL, Metrics, Data Visualization
+Tags: Grafana, Prometheus, PromQL, Metric, Data Visualization
 
 Description: Learn how to create cumulative sum visualizations in Grafana that reset at the start of each day.
 

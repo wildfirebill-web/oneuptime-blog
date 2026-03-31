@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Complex Types, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Complex Types, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to working with complex nested variable types in OpenTofu including objects, lists of objects, and maps of objects.
 

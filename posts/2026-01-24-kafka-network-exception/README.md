@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Apache Kafka, Networking, Troubleshooting, Distributed Systems, DevOps, Connection Issues
+Tags: Kafka, Apache Kafka, Networking, Troubleshooting, Distributed System, DevOps, Connection Issues
 
 Description: Learn how to diagnose and resolve NetworkException errors in Apache Kafka by understanding network configurations, timeouts, and connectivity issues.
 

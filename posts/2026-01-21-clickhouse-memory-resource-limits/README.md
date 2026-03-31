@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Memory, Performance, Resource Management, Database, Configuration, Tuning, Operations
+Tags: ClickHouse, Memory, Performance, Resource Management, Database, Configuration, Tuning, Operation
 
 Description: A practical guide to configuring memory limits, query complexity settings, and resource isolation in ClickHouse to prevent runaway queries from crashing your server and ensure fair resource.
 

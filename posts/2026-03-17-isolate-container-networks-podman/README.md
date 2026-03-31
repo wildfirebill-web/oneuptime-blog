@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Isolation, Security
+Tags: Podman, Container, DevOps, Networking, Isolation, Security
 
 Description: Learn how to isolate container networks in Podman to prevent unauthorized cross-network communication.
 

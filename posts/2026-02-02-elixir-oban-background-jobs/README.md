@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elixir, Oban, Background Jobs, Queue, Async
+Tags: Elixir, Oban, Background Job, Queue, Async
 
 Description: Learn how to implement reliable background job processing in Elixir applications using Oban, covering job creation, queues, retries, and production best practices.
 

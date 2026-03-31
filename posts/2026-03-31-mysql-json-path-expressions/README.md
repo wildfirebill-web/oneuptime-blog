@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Path Expression
+Tags: MySQL, JSON, Path Expression
 
 Description: Learn how MySQL JSON path expressions work, covering dot notation, array indexing, wildcards, and filters for precise document navigation.
 

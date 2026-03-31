@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Request-Reply, Messaging, Microservices, RPC
+Tags: NATS, Request-Reply, Messaging, Microservice, RPC
 
 Description: Learn how to implement the request-reply pattern in NATS for synchronous communication between services, including timeouts and error handling.
 

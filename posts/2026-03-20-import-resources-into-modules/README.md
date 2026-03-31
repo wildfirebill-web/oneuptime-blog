@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Modules
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Module
 
 Description: Learn how to import existing cloud resources into OpenTofu module resources using both import blocks and the CLI import command.
 

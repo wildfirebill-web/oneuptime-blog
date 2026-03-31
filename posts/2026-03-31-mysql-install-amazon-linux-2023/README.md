@@ -1,6 +1,6 @@
 # How to Install MySQL on Amazon Linux 2023
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Installation, Amazon Linux, AWS, Database
 

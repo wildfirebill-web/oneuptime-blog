@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Database, Indexes, Performance, Query Optimization
+Tags: MongoDB, Database, Index, Performance, Query Optimization
 
 Description: Master MongoDB compound indexes to dramatically improve query performance. Learn index key ordering, the ESR rule, covered queries, and practical patterns for real-world applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Cacti, Monitoring, SNMP, RRDtool, Networks, Linux
+Tags: RHEL, Cacti, Monitoring, SNMP, RRDtool, Network, Linux
 
 Description: Install Cacti on RHEL with Apache, MySQL, and PHP to create a network graphing solution that collects SNMP data and generates historical performance graphs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Group Replication, Paxos, High Availability, Distributed Systems
+Tags: MySQL, Group Replication, Paxos, High Availability, Distributed System
 
 Description: Understand how MySQL Group Replication uses the Paxos protocol to achieve distributed consensus, ensuring all members agree on transaction order.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Zipkin, Distributed Tracing, Observability, Microservices
+Tags: Portainer, Docker, Zipkin, Distributed Tracing, Observability, Microservice
 
 Description: Deploy Zipkin trace collection and visualization via Portainer to track request flows across microservices with a simple, resource-efficient distributed tracing solution.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, BGP, Peers, Kubernetes, Networking
+Tags: Cilium, BGP, Peer, Kubernetes, Networking
 
 Description: Inspect BGP peer status and session details using cilium-dbg bgp peers to diagnose peering issues and validate BGP configuration.
 

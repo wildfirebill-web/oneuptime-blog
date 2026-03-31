@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Memory, Swap, Containers, Performance, Cgroups, Linux, DevOps, Resource Management
+Tags: Podman, Memory, Swap, Container, Performance, Cgroups, Linux, DevOps, Resource Management
 
 Description: Learn how to configure memory and swap limits for Podman containers to prevent OOM kills, control resource usage, and optimize application performance with cgroups v2.
 

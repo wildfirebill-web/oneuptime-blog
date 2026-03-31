@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Site Reliability Engineering, SRE, Observability, MTTR, MTTD, MTBF, Reliability, Metrics, Incident Response
+Tags: Site Reliability Engineering, SRE, Observability, MTTR, MTTD, MTBF, Reliability, Metric, Incident Response
 
 Description: A comprehensive guide to essential SRE metrics including MTTR, MTTD, MTBF, and more.
 

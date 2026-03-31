@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Alpine Linux, Container Optimization, DevOps, Images
+Tags: Portainer, Docker, Alpine Linux, Container Optimization, DevOps, Image
 
 Description: Learn how to use Alpine Linux-based Docker images to dramatically reduce container size and deploy them efficiently through Portainer.
 

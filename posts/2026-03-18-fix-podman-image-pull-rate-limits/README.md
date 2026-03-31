@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Docker Hub, Rate Limiting, DevOps
+Tags: Podman, Container, Docker Hub, Rate Limiting, DevOps
 
 Description: Learn how to work around Docker Hub and registry image pull rate limits in Podman using authentication, mirrors, caching strategies, and private registries.
 

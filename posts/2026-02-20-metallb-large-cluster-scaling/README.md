@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, Scaling, Performance, Large Clusters
+Tags: Kubernetes, MetalLB, Scaling, Performance, Large Cluster
 
 Description: Best practices for scaling MetalLB in large Kubernetes clusters with hundreds of LoadBalancer services and IP pools.
 

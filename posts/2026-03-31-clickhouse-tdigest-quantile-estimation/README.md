@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, t-digest, Quantile, Approximate Query, Analytics
+Tags: ClickHouse, T-Digest, Quantile, Approximate Query, Analytics
 
 Description: Learn how to use t-digest for accurate and memory-efficient quantile estimation in ClickHouse for percentile analytics at scale.
 

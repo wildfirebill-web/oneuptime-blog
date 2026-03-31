@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Namespaces, Resource Organization, Multi-Tenancy
+Tags: Flux CD, GitOps, Kubernetes, Namespace, Resource Organization, Multi-Tenancy
 
 Description: Learn how to organize and manage Kubernetes namespace creation in your Flux CD repository with proper labeling, resource quotas, and dependency ordering.
 

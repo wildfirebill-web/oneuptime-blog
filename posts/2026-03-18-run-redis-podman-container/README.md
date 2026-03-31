@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Redis, Cache, In-Memory Database
+Tags: Podman, Container, DevOps, Redis, Cache, In-Memory Database
 
 Description: Learn how to run Redis in a Podman container with persistence, custom configuration, and password authentication.
 

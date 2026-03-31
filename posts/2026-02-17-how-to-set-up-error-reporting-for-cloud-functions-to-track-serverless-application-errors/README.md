@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cloud Error Reporting, Serverless, Monitoring
+Tags: GCP, Cloud Function, Cloud Error Reporting, Serverless, Monitoring
 
 Description: Learn how to configure Google Cloud Error Reporting for Cloud Functions to catch, track, and manage errors in your serverless applications effectively.
 

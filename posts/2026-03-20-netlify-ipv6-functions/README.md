@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Netlify, IPv6, Functions, Serverless, Dual-Stack, JAMstack
+Tags: Netlify, IPv6, Function, Serverless, Dual-Stack, JAMstack
 
 Description: Configure Netlify Functions to handle IPv6 client requests and integrate with IPv6 backend services.
 

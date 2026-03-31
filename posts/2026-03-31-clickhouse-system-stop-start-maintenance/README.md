@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Maintenance, SYSTEM STOP, SYSTEM START, Operations
+Tags: ClickHouse, Maintenance, SYSTEM STOP, SYSTEM START, Operation
 
 Description: Learn how to use ClickHouse SYSTEM STOP and START commands to pause background operations during maintenance windows without stopping the server.
 

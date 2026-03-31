@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, S3, Object Storage, RGW, RadosGW
+Tags: Rook, Ceph, Kubernetes, S3, Object Storage, RGW, RADOSGW
 
 Description: Configure Ceph RadosGW (RGW) in Rook-Ceph to expose an S3-compatible object storage API, including StorageClass bucket provisioning and user management.
 

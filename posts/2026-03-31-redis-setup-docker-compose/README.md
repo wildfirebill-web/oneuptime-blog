@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Docker, Docker compose, Container, Infrastructure
+Tags: Redis, Docker, Docker Compose, Container, Infrastructure
 
 Description: Learn how to set up Redis using Docker Compose, including persistence, authentication, custom configuration, and connecting from application services.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, REST API, Automation, Docker Compatibility
+Tags: Podman, Container, DevOps, REST API, Automation, Docker Compatibility
 
 Description: Learn how to use the Podman REST API to manage containers, images, and system resources programmatically with curl and scripting.
 

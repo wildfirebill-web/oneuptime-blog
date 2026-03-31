@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Security Groups, Networking, Infrastructure as Code
+Tags: OpenTofu, AWS, Security Group, Networking, Infrastructure as Code
 
 Description: Learn how to create and manage AWS security groups with OpenTofu, including inbound/outbound rules, security group references, and lifecycle management.
 

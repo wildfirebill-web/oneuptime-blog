@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Micronaut, Java, Tracing, Microservices
+Tags: OpenTelemetry, Micronaut, Java, Tracing, Microservice
 
 Description: Complete guide to implementing OpenTelemetry distributed tracing in Micronaut applications for comprehensive observability across microservices.
 

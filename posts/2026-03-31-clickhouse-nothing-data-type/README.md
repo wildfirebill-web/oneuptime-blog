@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Nothing
+Tags: ClickHouse, SQL, Data Type, Nothing
 
 Description: Understand ClickHouse's Nothing type, which always holds NULL, its role in Nullable(Nothing), and its use in higher-order functions.
 

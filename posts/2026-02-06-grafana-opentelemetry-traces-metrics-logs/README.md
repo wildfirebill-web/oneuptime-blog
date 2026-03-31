@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Grafana, Observability, Traces, Metrics, Logs
+Tags: OpenTelemetry, Grafana, Observability, Trace, Metric, Log
 
 Description: A practical guide to setting up Grafana with OpenTelemetry for unified observability across traces, metrics, and logs using the LGTM stack.
 

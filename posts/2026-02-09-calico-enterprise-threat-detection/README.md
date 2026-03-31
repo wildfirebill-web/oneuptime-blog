@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Security, Threat Detection, Networks
+Tags: Calico, Kubernetes, Security, Threat Detection, Network
 
 Description: Configure Calico Enterprise threat detection to identify and block malicious network activity in Kubernetes clusters with real-time alerts, anomaly detection, and automated response capabilities.
 

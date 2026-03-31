@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Defragmentation, Memory, Performance, Internals
+Tags: Redis, Defragmentation, Memory, Performance, Internal
 
 Description: Understand Redis active defragmentation, how memory fragmentation occurs, how the incremental defrag process works, and how to monitor and tune it.
 

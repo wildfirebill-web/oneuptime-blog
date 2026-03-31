@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Interval Processor, Downsampling, Metrics
+Tags: OpenTelemetry, Interval Processor, Downsampling, Metric
 
 Description: Use the OpenTelemetry Collector interval processor to reduce metric export frequency and lower backend costs.
 

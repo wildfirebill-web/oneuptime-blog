@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Retry, Decorators, API, Resilience, Error Handling
+Tags: Python, Retry, Decorator, API, Resilience, Error Handling
 
 Description: Learn how to implement robust retry decorators for handling flaky API calls in Python.
 

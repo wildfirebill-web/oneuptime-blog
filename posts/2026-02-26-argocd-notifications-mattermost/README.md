@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Mattermost, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Mattermost, Notification
 
 Description: Learn how to configure ArgoCD to send deployment notifications to Mattermost channels using incoming webhooks with attachment formatting and custom triggers.
 

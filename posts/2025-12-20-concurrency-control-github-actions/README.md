@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Concurrency, CI/CD, DevOps, Workflow Optimization, Automation
+Tags: GitHub Action, Concurrency, CI/CD, DevOps, Workflow Optimization, Automation
 
 Description: Learn how to control workflow concurrency in GitHub Actions to prevent race conditions, manage resource usage, and ensure safe deployments.
 

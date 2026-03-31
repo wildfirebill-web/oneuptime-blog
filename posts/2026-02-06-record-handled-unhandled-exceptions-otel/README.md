@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Exception Handling, Stack Traces, Instrumentation
+Tags: OpenTelemetry, Exception Handling, Stack Trace, Instrumentation
 
 Description: Configure OpenTelemetry to capture both handled and unhandled exceptions with full stack traces for complete error visibility.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bloom Filter, Probabilistic, Redisbloom, Performance
+Tags: Redis, Bloom Filter, Probabilistic, RedisBloom, Performance
 
 Description: Learn when Redis Bloom filters, Cuckoo filters, and Count-Min sketches outperform exact lookups for membership testing and frequency estimation.
 

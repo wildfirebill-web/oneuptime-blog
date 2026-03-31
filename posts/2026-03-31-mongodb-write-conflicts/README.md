@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Transactions, Concurrency, Write Conflict, Data Integrity
+Tags: MongoDB, Transaction, Concurrency, Write Conflict, Data Integrity
 
 Description: Learn what causes write conflicts in MongoDB transactions, how to detect and handle WriteConflict errors, and strategies to minimize conflict frequency in high-concurrency applications.
 

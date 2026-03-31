@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terragrunt, Feature Branches, DevOps, Infrastructure as Code, CI/CD
+Tags: Terraform, Terragrunt, Feature Branch, DevOps, Infrastructure as Code, CI/CD
 
 Description: Learn how to use Terragrunt to create and destroy ephemeral infrastructure environments for feature branches, enabling isolated testing before merging to main.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Loop_control, Playbook Design
+Tags: Ansible, Loop, Loop_control, Playbook Design
 
 Description: Master Ansible loop_control to customize loop variable names, output labels, indexing, and pauses for cleaner and more maintainable playbooks.
 

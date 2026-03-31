@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, VersionedCollapsingMergeTree, Table Engines, Updates, Concurrency
+Tags: ClickHouse, VersionedCollapsingMergeTree, Table Engine, Update, Concurrency
 
 Description: Learn how to use VersionedCollapsingMergeTree in ClickHouse to handle concurrent state updates with version ordering, avoiding race conditions in distributed systems.
 

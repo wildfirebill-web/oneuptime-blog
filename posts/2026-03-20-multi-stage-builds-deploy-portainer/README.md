@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Multi-Stage Builds, CI/CD, Container Deployment
+Tags: Portainer, Docker, Multi-Stage Build, CI/CD, Container Deployment
 
 Description: Learn how to use Docker multi-stage builds to create lean production images and deploy them efficiently using Portainer stacks and webhooks.
 

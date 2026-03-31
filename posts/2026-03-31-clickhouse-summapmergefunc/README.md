@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Aggregation, sumMapMerge, AggregatingMergeTree, Map, Incremental Aggregation
+Tags: ClickHouse, Aggregate Function, sumMapMerge, AggregatingMergeTree, Map, Incremental Aggregation
 
 Description: Learn how sumMapMerge() finalizes partial sumMap states stored in AggregatingMergeTree columns, enabling efficient per-key sum aggregation across shards and partitions.
 

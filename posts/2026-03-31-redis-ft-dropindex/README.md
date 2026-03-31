@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RediSearch, Index, Search, Operations
+Tags: Redis, RediSearch, Index, Search, Operation
 
 Description: Learn how to use FT.DROPINDEX in Redis to delete a RediSearch index, with options to preserve or delete the underlying documents.
 

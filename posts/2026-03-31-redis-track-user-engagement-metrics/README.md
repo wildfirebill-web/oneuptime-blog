@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Engagement, Metrics, Real-Time, Analytics
+Tags: Redis, Engagement, Metric, Real-Time, Analytics
 
 Description: Track likes, shares, comments, and session time in real-time using Redis Hash and Sorted Set structures for low-latency engagement analytics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Prometheus, Metrics, Monitoring, Kubernetes
+Tags: Istio, Prometheus, Metric, Monitoring, Kubernetes
 
 Description: Step-by-step guide to configuring Prometheus to scrape and store Istio service mesh metrics from Envoy sidecars and the Istio control plane.
 

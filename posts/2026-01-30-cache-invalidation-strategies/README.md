@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Caching, Cache Invalidation, Performance, Architecture, Distributed Systems
+Tags: Caching, Cache Invalidation, Performance, Architecture, Distributed System
 
 Description: Master cache invalidation strategies including TTL-based, event-driven, version-based, and tag-based invalidation for data consistency.
 

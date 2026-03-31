@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, InfluxDB, Time Series, Metrics, Monitoring, IoT
+Tags: Portainer, Docker, InfluxDB, Time Series, Metric, Monitoring, IoT
 
 Description: Deploy InfluxDB 2.x as a time-series database with Grafana and Telegraf for metrics collection using Portainer.
 

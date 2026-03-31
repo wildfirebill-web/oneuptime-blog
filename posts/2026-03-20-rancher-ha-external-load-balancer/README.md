@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, High Availability, Load Balancer, Kubernetes, TLS Termination, Networks
+Tags: Rancher, High Availability, Load Balancer, Kubernetes, TLS Termination, Network
 
 Description: Configure an external load balancer for Rancher HA to distribute traffic across multiple server nodes with health checks and TLS passthrough.
 

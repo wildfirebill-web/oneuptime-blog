@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Provisioners
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Provisioner
 
 Description: Learn how to configure connection blocks in OpenTofu for remote-exec and file provisioners to connect to EC2 instances via SSH and WinRM.
 

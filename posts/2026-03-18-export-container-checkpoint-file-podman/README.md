@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, CRIU, Containers, Checkpoint Export, DevOps
+Tags: Podman, CRIU, Container, Checkpoint Export, DevOps
 
 Description: Learn how to export a Podman container checkpoint to a portable tar archive for migration, backup, or repeated restore operations.
 

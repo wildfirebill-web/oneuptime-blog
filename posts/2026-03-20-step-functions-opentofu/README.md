@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Step Functions, State Machines, Serverless, Orchestration, Infrastructure as Code
+Tags: OpenTofu, AWS, Step Functions, State Machine, Serverless, Orchestration, Infrastructure as Code
 
 Description: Learn how to deploy AWS Step Functions state machines with OpenTofu, including Express and Standard workflows, Lambda integrations, error handling, and IAM execution roles.
 

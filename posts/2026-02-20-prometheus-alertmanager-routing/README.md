@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Alertmanager, Routing, Alerts, Notifications
+Tags: Prometheus, Alertmanager, Routing, Alert, Notification
 
 Description: Learn how to configure Alertmanager routing trees, receivers, and notification integrations for Prometheus alerts.
 

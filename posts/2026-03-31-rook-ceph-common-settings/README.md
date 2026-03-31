@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Configuration, Settings, Storage, Tuning
+Tags: Rook, Ceph, Configuration, Setting, Storage, Tuning
 
 Description: Learn how to configure commonly needed Ceph settings for pool defaults, OSD behavior, recovery throttling, and client performance through ceph.conf and runtime commands.
 

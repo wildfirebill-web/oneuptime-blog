@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, RAID, Monitoring, Alerts, Linux
+Tags: RHEL, RAID, Monitoring, Alert, Linux
 
 Description: Set up proactive RAID monitoring with mdadm on RHEL, including email alerts for disk failures, degraded arrays, and scheduled scrubs.
 

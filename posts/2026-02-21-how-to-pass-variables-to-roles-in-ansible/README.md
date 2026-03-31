@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Role, Variables, Playbook Configuration
+Tags: Ansible, Role, Variable, Playbook Configuration
 
 Description: Learn every method for passing variables to Ansible roles including role params, vars, defaults, inventory, and extra vars.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Version Constraints, Provider, Modules, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Version Constraints, Provider, Module, Infrastructure as Code, DevOps
 
 Description: A guide to using version constraints in OpenTofu to control which versions of providers and modules are used in your configurations.
 

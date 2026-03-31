@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Cert-Manager, TLS, Let's Encrypt, Kubernetes, Certificates
+Tags: Rancher, Cert-Manager, TLS, Let's Encrypt, Kubernetes, Certificate
 
 Description: Install cert-manager in Rancher to automate TLS certificate provisioning from Let's Encrypt and internal CAs for Kubernetes Ingress resources.
 

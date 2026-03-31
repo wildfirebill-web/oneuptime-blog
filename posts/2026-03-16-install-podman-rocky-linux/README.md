@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, Rocky Linux
+Tags: Podman, Installation, Linux, Container, DevOps, Rocky Linux
 
 Description: A step-by-step guide to installing and configuring Podman on Rocky Linux 8 and 9, including rootless setup and SELinux integration.
 

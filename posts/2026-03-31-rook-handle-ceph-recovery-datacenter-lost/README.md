@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Disaster Recovery, Datacenter, Multi-site, Storage
+Tags: Rook, Ceph, Disaster Recovery, Datacenter, Multi-Site, Storage
 
 Description: Learn how to handle Ceph cluster recovery when an entire datacenter is lost, covering single-site failures, multi-site replication, and failover strategies.
 

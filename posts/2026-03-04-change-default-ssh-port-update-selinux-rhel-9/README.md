@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, SSH, SELinux, Ports, Linux
+Tags: RHEL, SSH, SELinux, Port, Linux
 
 Description: Change the SSH listening port on RHEL from the default 22 to a custom port, updating SELinux policies and firewall rules to match.
 

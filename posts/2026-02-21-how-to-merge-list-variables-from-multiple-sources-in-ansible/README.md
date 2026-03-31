@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Lists, Jinja2, Configuration Management
+Tags: Ansible, Variable, List, Jinja2, Configuration Management
 
 Description: Learn techniques for merging list variables from multiple sources in Ansible including group_vars, role defaults, and extra vars.
 

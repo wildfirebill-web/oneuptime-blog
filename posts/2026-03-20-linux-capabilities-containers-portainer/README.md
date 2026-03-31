@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Linux Capabilities, Security, Containers
+Tags: Portainer, Docker, Linux Capabilities, Security, Container
 
 Description: Add or drop specific Linux capabilities for containers in Portainer to grant targeted privileges without full root access.
 

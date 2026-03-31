@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Troubleshooting, Service Failures, Kubernetes, Debugging, Operations
+Tags: Talos Linux, Troubleshooting, Service Failures, Kubernetes, Debugging, Operation
 
 Description: A systematic guide to diagnosing and fixing service failures on Talos Linux nodes, covering common failure scenarios and their resolutions.
 

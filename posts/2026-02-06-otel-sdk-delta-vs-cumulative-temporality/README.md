@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Temporality, SDK Configuration
+Tags: OpenTelemetry, Metric, Temporality, SDK Configuration
 
 Description: Configure the OpenTelemetry SDK to use delta or cumulative aggregation temporality per metric instrument type for different backends.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Search Order, Configuration
+Tags: Podman, Container, DevOps, Registry, Search Order, Configuration
 
 Description: Learn how to control the order in which Podman searches container registries when pulling images with unqualified names.
 

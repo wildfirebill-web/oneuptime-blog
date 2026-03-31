@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps
 
 Description: Learn how to list all Podman machines on your system, understand the output fields, and filter results for effective machine management.
 

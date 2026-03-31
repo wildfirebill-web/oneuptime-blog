@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, AMQP, DevOps, Microservices
+Tags: RabbitMQ, Message Queue, AMQP, DevOps, Microservice
 
 Description: A practical guide to installing and configuring RabbitMQ for production use, covering setup on different platforms, essential configuration, and best practices for reliable message queuing.
 

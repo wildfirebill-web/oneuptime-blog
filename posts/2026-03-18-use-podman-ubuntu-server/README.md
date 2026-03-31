@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Ubuntu, Containers, DevOps, Server
+Tags: Podman, Ubuntu, Container, DevOps, Server
 
 Description: Learn how to install, configure, and use Podman on Ubuntu Server as a Docker alternative for running containers without a daemon.
 

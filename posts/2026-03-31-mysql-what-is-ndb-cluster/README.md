@@ -22,7 +22,7 @@ NDB Cluster has three node types:
 
 **SQL Nodes (mysqld)**: Standard MySQL server instances using the NDB storage engine. Applications connect to SQL nodes using normal MySQL protocols.
 
-```
+```text
 Application -> SQL Node 1 -> [Data Nodes: group 1]
 Application -> SQL Node 2 -> [Data Nodes: group 2]
 ```

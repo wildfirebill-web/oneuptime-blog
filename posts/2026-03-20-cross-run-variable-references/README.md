@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, Variables, HCL, Test Run Blocks, Infrastructure as Code
+Tags: OpenTofu, Testing, Variable, HCL, Test Run Blocks, Infrastructure as Code
 
 Description: Learn how to pass values between run blocks in OpenTofu test files using output references for stateful test scenarios.
 

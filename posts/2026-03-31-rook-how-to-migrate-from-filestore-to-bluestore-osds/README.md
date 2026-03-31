@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Storage, BlueStore, FileStore, Migration, OSD
+Tags: Rook, Ceph, BlueStore, Filestore, Migration
 
-Description: Learn how to migrate Ceph OSDs from the legacy FileStore backend to BlueStore for improved performance and space efficiency in Rook-Ceph clusters.
+Description: Migrate Ceph OSDs from the legacy FileStore backend to BlueStore for improved performance, checksumming, and compression support.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Logic Apps, Workflow Monitoring, Diagnostics, Azure Monitor, Troubleshooting, Integration, Automation
+Tags: Azure Logic Apps, Workflow Monitoring, Diagnostic, Azure Monitor, Troubleshooting, Integration, Automation
 
 Description: Practical guide to monitoring Azure Logic Apps workflow runs, diagnosing failures, and setting up alerting for reliable workflow automation.
 

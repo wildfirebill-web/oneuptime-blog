@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, FreeBSD, Containers, OCI, Unix
+Tags: Podman, FreeBSD, Container, OCI, Unix
 
 Description: Learn how to install and use Podman on FreeBSD for running OCI-compatible Linux containers using FreeBSD's jail and Linux emulation capabilities.
 

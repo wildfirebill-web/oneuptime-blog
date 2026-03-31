@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Skopeo, Registry, Tags
+Tags: Podman, Container, DevOps, Skopeo, Registry, Tag
 
 Description: Learn how to use Skopeo to list all available tags for container images in remote registries without pulling any images.
 

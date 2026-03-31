@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Terraform Registry, Infrastructure as Code, DevOps
+Tags: Terraform, Module, Terraform Registry, Infrastructure as Code, DevOps
 
 Description: Learn how to find, reference, and use Terraform modules from the public Terraform Registry and private registries with proper version pinning and configuration.
 

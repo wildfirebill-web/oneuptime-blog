@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Workspaces, Feature Branches, CI/CD, Infrastructure as Code, Ephemeral Environments, DevOps
+Tags: OpenTofu, Workspaces, Feature Branch, CI/CD, Infrastructure as Code, Ephemeral Environments, DevOps
 
 Description: Learn how to use OpenTofu workspaces to create isolated infrastructure environments for each feature branch, enabling independent testing without shared environment conflicts.
 

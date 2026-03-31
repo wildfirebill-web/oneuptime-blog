@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, GridFS, Streaming, Large Files, Node.js
+Tags: MongoDB, GridFS, Streaming, Large File, Node.js
 
 Description: Stream large files directly from MongoDB GridFS to HTTP responses or other destinations without loading entire files into memory.
 

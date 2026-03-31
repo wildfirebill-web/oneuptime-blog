@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Kubernetes, Pods, Shared Namespaces, Sidecar Pattern
+Tags: Portainer, Docker, Kubernetes, Pod, Shared Namespaces, Sidecar Pattern
 
 Description: Configure multi-container workloads in Portainer using shared network and IPC namespaces to implement sidecar and ambassador patterns for logging, monitoring, and proxy injection.
 

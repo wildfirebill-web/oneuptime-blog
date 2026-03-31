@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Puppet, IPv6, Modules, Forge, Configuration Management, Networks
+Tags: Puppet, IPv6, Module, Forge, Configuration Management, Network
 
 Description: A guide to using Puppet Forge modules for IPv6 network configuration, including the network, firewall, and sysctl modules for deploying IPv6 at scale.
 

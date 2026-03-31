@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Socket.io, Real-Time, Change Streams, Node.js
+Tags: MongoDB, Socket.IO, Real-Time, Change Stream, Node.js
 
 Description: Learn how to combine MongoDB change streams with Socket.io to push real-time database updates to browser clients as they happen.
 

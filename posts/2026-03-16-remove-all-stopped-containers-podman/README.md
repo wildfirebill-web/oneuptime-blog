@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Lifecycle, Cleanup
+Tags: Podman, Container, DevOps, Container Lifecycle, Cleanup
 
 Description: Learn how to remove all stopped containers in Podman using prune and filtering to keep your system clean and free up disk space.
 

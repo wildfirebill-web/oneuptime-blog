@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, SUSE, SLE, Enterprise Linux, Installation, Storage, SLES
+Tags: Ceph, SUSE, SLE, Enterprise Linux, Installation, Storage
 
 Description: Install Ceph on SUSE Linux Enterprise Server using SUSE's supported Ceph packages and SES orchestration tools.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Table Storage, Batch Operations, Entity Group Transactions, Performance, NoSQL
+Tags: Azure, Table Storage, Batch Operation, Entity Group Transactions, Performance, NoSQL
 
 Description: Learn how to use batch operations in Azure Table Storage to insert, update, and delete multiple entities efficiently in a single atomic transaction.
 

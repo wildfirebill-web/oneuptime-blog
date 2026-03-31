@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Multi-Stage Builds, Optimization, Container Images, Best Practice
+Tags: Docker, Multi-Stage Build, Optimization, Container Image, Best Practice
 
 Description: Learn how to use Docker multi-stage builds to create smaller, more secure container images for production.
 

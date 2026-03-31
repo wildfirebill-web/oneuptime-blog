@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Namespaces, Testing
+Tags: Calico, Kubernetes, Network Policy, Namespace, Testing
 
 Description: Validate Calico namespace-based network policies using real cross-namespace traffic tests to confirm isolation boundaries work correctly.
 

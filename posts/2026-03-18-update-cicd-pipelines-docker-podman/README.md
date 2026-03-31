@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, CI/CD, GitHub Actions, GitLab CI, Jenkins, Migration
+Tags: Podman, Container, DevOps, Docker, CI/CD, GitHub Action, GitLab CI, Jenkins, Migration
 
 Description: Learn how to update your CI/CD pipelines to use Podman instead of Docker for building, testing, and deploying container images.
 

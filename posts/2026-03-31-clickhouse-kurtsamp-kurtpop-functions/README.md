@@ -1,6 +1,6 @@
 # How to Use kurtSamp() and kurtPop() in ClickHouse
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, SQL, Aggregate Function, Statistics, Distribution Analysis
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Container Apps, Health Probes, Monitoring, Liveness, Readiness, Reliability
+Tags: Azure, Container Apps, Health Probe, Monitoring, Liveness, Readiness, Reliability
 
 Description: A complete guide to configuring liveness, readiness, and startup probes in Azure Container Apps to improve application reliability and uptime.
 

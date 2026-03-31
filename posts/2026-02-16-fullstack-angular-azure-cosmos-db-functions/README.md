@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Angular, Azure, Cosmos DB, Azure Functions, Full-Stack, TypeScript, Serverless
+Tags: Angular, Azure, Cosmos DB, Azure Function, Full-Stack, TypeScript, Serverless
 
 Description: Build a full-stack Angular application backed by Azure Cosmos DB and Azure Functions for a scalable serverless architecture.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Testing, Validation, Variables, Infrastructure as Code
+Tags: Terraform, Testing, Validation, Variable, Infrastructure as Code
 
 Description: Learn how to write and test Terraform variable validation rules to catch invalid inputs early, with practical examples using the native test framework.
 

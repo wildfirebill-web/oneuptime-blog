@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Containers, Linux
+Tags: RHEL, Podman, Container, Linux
 
 Description: Step-by-step guide on use init containers with podman pods using Red Hat Enterprise Linux 9.
 

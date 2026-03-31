@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, Connection Limits, IPv4, Security, Stick Tables, DDoS Protection
+Tags: HAProxy, Connection Limit, IPv4, Security, Stick Tables, DDoS Protection
 
 Description: Configure HAProxy to limit concurrent connections from individual IPv4 addresses using stick tables, protecting backend servers from connection exhaustion attacks.
 

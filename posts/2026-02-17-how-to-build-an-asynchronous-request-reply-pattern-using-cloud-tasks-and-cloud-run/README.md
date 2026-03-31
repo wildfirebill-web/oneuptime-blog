@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Tasks, Cloud Run, Async Patterns, Microservices, Serverless
+Tags: GCP, Cloud Tasks, Cloud Run, Async Patterns, Microservice, Serverless
 
 Description: Implement the asynchronous request-reply pattern on Google Cloud using Cloud Tasks for reliable task processing and Cloud Run for scalable service endpoints.
 

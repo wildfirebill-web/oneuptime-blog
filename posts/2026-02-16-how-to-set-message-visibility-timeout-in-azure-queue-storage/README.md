@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Queue Storage, Visibility Timeout, Message Processing, Cloud Architecture, Distributed Systems
+Tags: Azure, Queue Storage, Visibility Timeout, Message Processing, Cloud Architecture, Distributed System
 
 Description: Learn how to configure and manage message visibility timeouts in Azure Queue Storage to prevent duplicate processing and control retry behavior.
 

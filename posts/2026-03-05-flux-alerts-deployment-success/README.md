@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Deployment
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Deployment
 
 Description: Learn how to configure Flux alerts that notify you when deployments succeed, providing visibility into successful GitOps reconciliations.
 

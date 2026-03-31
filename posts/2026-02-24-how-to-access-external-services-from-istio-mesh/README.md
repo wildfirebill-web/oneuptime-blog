@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, ServiceEntry, External Services, Egress, Service Mesh
+Tags: Istio, ServiceEntry, External Service, Egress, Service Mesh
 
 Description: How to configure Istio to allow mesh workloads to access external APIs, databases, and services using ServiceEntry and traffic management features.
 

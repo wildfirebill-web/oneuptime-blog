@@ -1,6 +1,6 @@
 # How to Use categoricalInformationValue() in ClickHouse
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, SQL, Aggregate Function, Statistics, Feature Selection
 

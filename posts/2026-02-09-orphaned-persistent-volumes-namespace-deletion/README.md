@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Storage, Operations
+Tags: Kubernetes, Storage, Operation
 
 Description: Learn how to identify, recover, and prevent orphaned persistent volumes after Kubernetes namespace deletion to avoid storage leaks and unnecessary costs.
 

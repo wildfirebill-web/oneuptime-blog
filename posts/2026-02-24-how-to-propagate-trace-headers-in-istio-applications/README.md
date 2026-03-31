@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Trace Headers, Header Propagation, Distributed Tracing, Microservices
+Tags: Istio, Trace Headers, Header Propagation, Distributed Tracing, Microservice
 
 Description: A developer-focused guide on propagating trace headers correctly in Istio applications to ensure complete distributed traces across services.
 

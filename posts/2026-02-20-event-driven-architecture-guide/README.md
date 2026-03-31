@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Event-Driven, Architecture, Microservices, CQRS, Event Sourcing
+Tags: Event-Driven, Architecture, Microservice, CQRS, Event Sourcing
 
 Description: A guide to designing event-driven architecture for microservices including CQRS, event sourcing, and eventual consistency.
 

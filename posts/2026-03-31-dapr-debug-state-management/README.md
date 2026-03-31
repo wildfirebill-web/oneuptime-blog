@@ -1,6 +1,6 @@
 # How to Debug State Management Issues in Dapr
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Debugging, Observability, Microservice
 

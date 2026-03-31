@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Multi-Granularity, Schema Design, Rollup, Materialized View, Time Series
+Tags: ClickHouse, Multi-Granularity, Schema Design, ROLLUP, Materialized View, Time Series
 
 Description: Learn how to design ClickHouse schemas that efficiently serve queries at multiple time granularities - seconds, minutes, hours, and days - from a single pipeline.
 

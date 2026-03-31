@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, User Namespaces, Rootless
+Tags: Podman, Container, DevOps, Volumes, User Namespaces, Rootless
 
 Description: Learn how to use the :U volume option in Podman to automatically adjust volume ownership for user namespace mapping.
 

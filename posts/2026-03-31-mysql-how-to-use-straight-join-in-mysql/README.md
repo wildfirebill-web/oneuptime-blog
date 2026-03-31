@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, STRAIGHT_JOIN, Query Optimization, JOIN, Optimizer Hints
+Tags: MySQL, STRAIGHT_JOIN, Query Optimization, Join, Optimizer Hint
 
 Description: Learn how STRAIGHT_JOIN forces MySQL to use a specific join order, when to use it to override poor optimizer decisions, and when to avoid it.
 

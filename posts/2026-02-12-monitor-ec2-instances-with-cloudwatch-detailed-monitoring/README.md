@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, CloudWatch, Monitoring, Metrics, Observability
+Tags: AWS, EC2, CloudWatch, Monitoring, Metric, Observability
 
 Description: Enable and use CloudWatch detailed monitoring on EC2 instances to get 1-minute metric granularity for better visibility into instance performance.
 

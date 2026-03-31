@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Skopeo, CI/CD, Automation, GitHub Actions, GitLab CI
+Tags: Podman, Container, DevOps, Skopeo, CI/CD, Automation, GitHub Action, GitLab CI
 
 Description: Learn how to integrate Skopeo with Podman in CI/CD pipelines for building, testing, copying, and promoting container images automatically.
 

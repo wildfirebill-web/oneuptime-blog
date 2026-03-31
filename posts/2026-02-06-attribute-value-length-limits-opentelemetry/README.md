@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Configuration, Attributes, SDK, Performance, Data Quality, Observability
+Tags: OpenTelemetry, Configuration, Attribute, SDK, Performance, Data Quality, Observability
 
 Description: Learn how to configure attribute value length limits in OpenTelemetry SDKs to prevent oversized payloads and control telemetry data quality.
 

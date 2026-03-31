@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Time series, Analytics, Aggregation, Performance
+Tags: MongoDB, Time Series, Analytics, Aggregation, Performance
 
 Description: Learn how to build time-series analytics in MongoDB 5.0+ using time series collections, $setWindowFields, and aggregation pipelines for trends and rollups.
 

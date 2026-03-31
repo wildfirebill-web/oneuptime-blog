@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OOM, Kubernetes, Resource Limits
+Tags: OpenTelemetry, OOM, Kubernetes, Resource Limit
 
 Description: Diagnose and resolve OOM kills on OpenTelemetry Collector pods caused by resource limits that are too low for traffic volume.
 

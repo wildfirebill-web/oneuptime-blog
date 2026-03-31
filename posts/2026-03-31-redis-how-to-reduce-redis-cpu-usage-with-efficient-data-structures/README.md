@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Performance, Data Structures, CPU, Optimization
+Tags: Redis, Performance, Data Structure, CPU, Optimization
 
 Description: Learn how choosing the right Redis data structure and encoding reduces CPU usage, with practical examples using hashes, sorted sets, and ziplist encodings.
 

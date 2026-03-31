@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, Polly, Circuit Breaker, Resilience, C#, Microservices
+Tags: .NET, Polly, Circuit Breaker, Resilience, C#, Microservice
 
 Description: Learn how to implement the circuit breaker pattern using Polly in .NET to build resilient applications that gracefully handle failures in external services and prevent cascade failures.
 

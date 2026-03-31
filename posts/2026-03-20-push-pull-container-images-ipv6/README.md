@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, Container Images, Registry, Podman, Containerd, DevOps
+Tags: Docker, IPv6, Container Image, Registry, Podman, Containerd, DevOps
 
 Description: Push and pull container images over IPv6 using Docker, Podman, and containerd, covering registry authentication, IPv6 address syntax, and common runtime configurations.
 

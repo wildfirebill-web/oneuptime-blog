@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, GitHub Actions, CI/CD, Kubernetes, DevOps
+Tags: Istio, GitHub Action, CI/CD, Kubernetes, DevOps
 
 Description: A practical guide to integrating Istio service mesh deployments into GitHub Actions workflows with canary releases and automated testing.
 

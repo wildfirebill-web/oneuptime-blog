@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Eventarc, Go, Event-Driven, Microservices
+Tags: GCP, Cloud Function, Eventarc, Go, Event-Driven, Microservice
 
 Description: Build a Go event-driven microservice using Cloud Functions with Eventarc triggers to react to events from Cloud Storage, Pub/Sub, and other GCP services.
 

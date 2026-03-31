@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Tags, Automation, DevOps, Playbook, Best Practice
+Tags: Ansible, Tag, Automation, DevOps, Playbook, Best Practice
 
 Description: Master Ansible tags to selectively run specific tasks, roles, and plays for faster development cycles and targeted deployments.
 

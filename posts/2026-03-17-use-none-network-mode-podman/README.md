@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Isolation, Security
+Tags: Podman, Container, DevOps, Networking, Isolation, Security
 
 Description: Learn how to use the none network mode in Podman to run containers with no network access for maximum isolation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Agent, Configuration, Worker Nodes
+Tags: k3s, Kubernetes, Rancher, Agent, Configuration, Worker Nodes
 
 Description: A complete reference for K3s agent configuration options, covering server connection, resource tuning, and node customization.
 

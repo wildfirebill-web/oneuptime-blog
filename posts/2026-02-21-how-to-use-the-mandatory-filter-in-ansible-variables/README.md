@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Validation, Jinja2, DevOps
+Tags: Ansible, Variable, Validation, Jinja2, DevOps
 
 Description: Learn how to use the Ansible mandatory filter to enforce that critical variables are defined before playbook execution proceeds.
 

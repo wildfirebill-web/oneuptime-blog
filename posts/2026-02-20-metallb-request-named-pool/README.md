@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, IP Pools, Annotations, Configuration
+Tags: Kubernetes, MetalLB, IP Pools, Annotation, Configuration
 
 Description: Learn how to use MetalLB annotations to request IP addresses from a specific named address pool for your LoadBalancer services.
 

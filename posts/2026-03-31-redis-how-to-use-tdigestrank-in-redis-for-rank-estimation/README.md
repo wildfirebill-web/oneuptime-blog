@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, T-Digest, Rank Estimation, Probabilistic Data Structures
+Tags: Redis, T-Digest, Rank Estimation, Probabilistic Data Structure
 
 Description: Learn how to use TDIGEST.RANK in Redis to estimate the rank (position) of a value within the observed distribution of a T-Digest.
 

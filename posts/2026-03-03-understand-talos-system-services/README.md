@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, System Service, Kubernetes, Architecture, Operations
+Tags: Talos Linux, System Service, Kubernetes, Architecture, Operation
 
 Description: A deep dive into Talos Linux system services, their roles, dependencies, and how they work together to run your Kubernetes cluster reliably.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Buildah, Image Commit, OCI, Container Registry
+Tags: Podman, Container, DevOps, Buildah, Image Commit, OCI, Container Registry
 
 Description: Learn how to commit Buildah working containers as finalized Podman images with proper formatting, compression, and registry pushing.
 

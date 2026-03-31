@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lists, BLMOVE, Queues, Reliability
+Tags: Redis, List, BLMOVE, Queue, Reliability
 
 Description: Learn how to use BLMOVE in Redis to atomically and reliably move elements between lists with blocking support for building safe message queues.
 

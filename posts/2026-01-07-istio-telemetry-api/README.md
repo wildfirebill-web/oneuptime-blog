@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Telemetry, Metrics, Observability, Service Mesh
+Tags: Istio, Telemetry, Metric, Observability, Service Mesh
 
 Description: Learn how to use Istio Telemetry API to customize metrics, logs, and tracing collection.
 

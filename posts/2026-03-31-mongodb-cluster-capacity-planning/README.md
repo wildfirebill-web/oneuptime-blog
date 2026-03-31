@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Capacity Planning, Performance, Operations, Monitoring
+Tags: MongoDB, Capacity Planning, Performance, Operation, Monitoring
 
 Description: Learn how to plan MongoDB cluster capacity by analyzing working set size, throughput requirements, storage growth, and connection demands to right-size your deployment.
 

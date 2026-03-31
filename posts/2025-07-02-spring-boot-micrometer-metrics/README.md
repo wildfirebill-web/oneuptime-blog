@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Micrometer, Metrics, Prometheus, Monitoring, Observability
+Tags: Java, Spring Boot, Micrometer, Metric, Prometheus, Monitoring, Observability
 
 Description: A comprehensive guide to implementing custom metrics in Spring Boot using Micrometer. Learn counters, gauges, timers, and distribution summaries with practical examples.
 

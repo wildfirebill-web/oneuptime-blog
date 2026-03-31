@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, Join, Query Pattern, Analytics
+Tags: ClickHouse, NULL Handling, Join, Query Pattern, Analytics
 
 Description: Learn how NULL values behave in ClickHouse JOIN operations, including INNER, LEFT, and FULL OUTER joins, and how to correctly filter, preserve, or substitute NULLs in join results.
 

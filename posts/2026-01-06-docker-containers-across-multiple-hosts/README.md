@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, DevOps, Distributed Systems, Security
+Tags: Docker, Networking, DevOps, Distributed System, Security
 
 Description: Implement overlay networks, WireGuard tunnels, and Tailscale sidecars for secure multi-host container communication without Kubernetes.
 

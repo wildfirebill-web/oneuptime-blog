@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MetalLB, Kubernetes, Debugging, Troubleshooting, Logging, Load Balancing, Operations
+Tags: MetalLB, Kubernetes, Debugging, Troubleshooting, Logging, Load Balancing, Operation
 
 Description: Learn how to debug MetalLB using speaker logs and events to troubleshoot IP assignment and advertisement issues.
 

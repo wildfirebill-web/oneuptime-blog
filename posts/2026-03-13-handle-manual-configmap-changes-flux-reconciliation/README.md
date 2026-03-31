@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Day 2 Operations, ConfigMaps, Configuration Management
+Tags: Flux CD, Kubernetes, GitOps, Day 2 Operations, ConfigMap, Configuration Management
 
 Description: Manage manual ConfigMap updates alongside Flux reconciliation using the correct patterns to avoid Flux reverting emergency configuration changes.
 

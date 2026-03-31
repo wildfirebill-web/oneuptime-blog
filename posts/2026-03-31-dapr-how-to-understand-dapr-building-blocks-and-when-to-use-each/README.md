@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Microservices, Building Blocks, Kubernetes, Architecture
+Tags: Dapr, Microservice, Building Block, Kubernetes, Architecture
 
 Description: Learn what Dapr building blocks are, what problem each one solves, and when to choose each one for your microservices architecture.
 

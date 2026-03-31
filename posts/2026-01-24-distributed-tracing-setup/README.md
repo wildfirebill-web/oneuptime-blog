@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Distributed Tracing, OpenTelemetry, Observability, Microservices, Jaeger, Zipkin, APM, Monitoring
+Tags: Distributed Tracing, OpenTelemetry, Observability, Microservice, Jaeger, Zipkin, APM, Monitoring
 
 Description: A complete guide to setting up distributed tracing in microservices architectures using OpenTelemetry, with practical examples for various languages and frameworks.
 

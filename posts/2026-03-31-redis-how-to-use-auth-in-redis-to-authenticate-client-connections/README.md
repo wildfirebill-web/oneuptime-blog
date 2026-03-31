@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Security, Authentication, ACL, Commands
+Tags: Redis, Security, Authentication, ACL, Command
 
 Description: Learn how to use the AUTH command in Redis to authenticate client connections using passwords or ACL usernames, securing your Redis server from unauthorized access.
 

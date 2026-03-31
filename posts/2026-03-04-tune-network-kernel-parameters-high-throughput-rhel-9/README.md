@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kernel, Networks, Throughput, Linux
+Tags: RHEL, Kernel, Network, Throughput, Linux
 
 Description: A practical guide to tuning Linux network kernel parameters on RHEL for high-throughput workloads, covering buffer sizes, connection limits, TCP optimizations, and real benchmarking tips.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Recovery, Troubleshooting, DevOps
+Tags: Portainer, Docker, Stack, Recovery, Troubleshooting, DevOps
 
 Description: Learn how to recover orphaned Docker stacks in Portainer - containers running outside Portainer's knowledge that need to be brought back under management.
 

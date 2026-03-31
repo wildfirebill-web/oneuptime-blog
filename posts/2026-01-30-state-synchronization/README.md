@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Distributed Systems, State Management, Replication, Backend
+Tags: Distributed System, State Management, Replication, Backend
 
 Description: Learn how to synchronize state across distributed system nodes for consistency.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Multi-homing, Routing, Policy Routing, Source Address Selection, Networks
+Tags: IPv6, Multi-homing, Routing, Policy Routing, Source Address Selection, Network
 
 Description: Configure IPv6 routing correctly on hosts with multiple network interfaces, ensuring proper source address selection and policy-based routing for each uplink.
 

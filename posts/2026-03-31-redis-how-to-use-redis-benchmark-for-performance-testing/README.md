@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Performance, Benchmarking, Testing, Operations
+Tags: Redis, Performance, Benchmarking, Testing, Operation
 
 Description: Learn how to use redis-benchmark to measure Redis throughput and latency, interpret results, and design custom workload tests for your use case.
 

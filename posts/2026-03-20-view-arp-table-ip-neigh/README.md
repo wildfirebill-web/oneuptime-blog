@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, ip command, iproute2, ARP, Networking, Diagnostics
+Tags: Linux, ip command, iproute2, ARP, Networking, Diagnostic
 
 Description: View and manage the ARP table on Linux using ip neigh, including filtering by interface, state, and understanding neighbor entry states.
 

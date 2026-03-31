@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Ambient Mode, Kubernetes, Service Mesh, Operations
+Tags: Istio, Ambient Mode, Kubernetes, Service Mesh, Operation
 
 Description: How to safely remove namespaces and individual workloads from an Istio ambient mesh without disrupting running applications.
 

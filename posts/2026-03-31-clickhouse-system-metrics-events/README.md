@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Metrics, Monitoring, Observability, System Table
+Tags: ClickHouse, Metric, Monitoring, Observability, System Table
 
 Description: Learn how to use system.metrics for live gauge values and system.events for cumulative counters to monitor ClickHouse server health and workload in real time.
 

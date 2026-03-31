@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Edge Computing, Containers, Linux, DevOps, IoT, NVIDIA Jetson, Edge Deployment
+Tags: Podman, Edge Computing, Container, Linux, DevOps, IoT, NVIDIA Jetson, Edge Deployment
 
 Description: Learn to deploy and manage Podman containers on edge devices like NVIDIA Jetson and Intel NUC, covering offline deployment, remote management, and auto-updates.
 

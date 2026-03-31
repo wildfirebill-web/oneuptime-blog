@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, DevOps, Automation, Variables, Configuration Management, Best Practice
+Tags: Ansible, DevOps, Automation, Variable, Configuration Management, Best Practice
 
 Description: Master Ansible variable precedence to avoid unexpected behavior and write maintainable playbooks by understanding where and how to define variables.
 

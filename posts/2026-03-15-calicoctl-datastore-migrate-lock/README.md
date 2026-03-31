@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Calicoctl, Datastore, Migration, Kubernetes, etcd, Locks, DevOps
+Tags: Calico, Calicoctl, Datastore, Migration, Kubernetes, etcd, Lock, DevOps
 
 Description: Learn how to use calicoctl datastore migrate lock to prevent changes during a Calico datastore migration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Storage, Local Path Provisioner, Longhorn
+Tags: k3s, Kubernetes, Rancher, Storage, Local Path Provisioner, Longhorn
 
 Description: Learn how to disable K3s's built-in local path provisioner and replace it with a production storage solution like Longhorn or NFS.
 

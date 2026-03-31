@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Atlas Search, Full-Text Search, Lucene
+Tags: MongoDB, Atlas Search, Full-Text Search, Lucene
 
 Description: Learn how to use the text operator in MongoDB Atlas Search to perform full-text search with analyzers, fuzzy matching, synonyms, and relevance scoring.
 

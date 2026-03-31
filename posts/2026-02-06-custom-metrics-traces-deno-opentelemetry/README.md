@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Deno, Custom Metrics, Traces, JavaScript, TypeScript
+Tags: OpenTelemetry, Deno, Custom Metric, Trace, JavaScript, TypeScript
 
 Description: Learn how to implement custom metrics and traces in Deno applications using the OpenTelemetry SDK for deeper observability insights.
 

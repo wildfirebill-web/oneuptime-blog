@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana Loki, Promtail, Pipeline Stages, Log Processing, Data Transformation, Log Enrichment
+Tags: Grafana Loki, Promtail, Pipeline Stage, Log Processing, Data Transformation, Log Enrichment
 
 Description: A comprehensive guide to configuring Promtail pipelines for parsing, transforming, and enriching logs before sending to Loki, covering all pipeline stages and advanced processing techniques.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Stacks, Self-Hosted, Container Management
+Tags: Portainer, Docker Compose, Stack, Self-Hosted, Container Management
 
 Description: Learn how to deploy and manage multi-container applications in Portainer using Docker Compose stacks, environment variables, and the Portainer web UI.
 

@@ -1,4 +1,4 @@
-# Configure CephFilesystem Metadata Pool and Data Pools in Rook
+# How to Configure CephFilesystem Metadata Pool and Data Pools in Rook
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

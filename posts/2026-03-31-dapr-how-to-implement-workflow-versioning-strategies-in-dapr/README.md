@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Versioning, Distributed Systems, Microservices, Durable Execution
+Tags: Dapr, Workflow, Versioning, Distributed System, Microservice, Durable Execution
 
 Description: Learn strategies for versioning Dapr Workflows to safely evolve long-running workflow definitions without breaking in-flight instances already in progress.
 

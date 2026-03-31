@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Distributed Systems, Consensus, Architecture, SRE
+Tags: Distributed System, Consensus, Architecture, SRE
 
 Description: Learn how consensus protocols like Raft and Paxos work for distributed agreement.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Source, Locals, templatefile, Local_file, HCL, Infrastructure as Code
+Tags: OpenTofu, Data Source, Local, templatefile, Local_file, HCL, Infrastructure as Code
 
 Description: Learn how to use local-only data sources in OpenTofu that compute values locally without making API calls, such as file reading, template rendering, and directory listing.
 

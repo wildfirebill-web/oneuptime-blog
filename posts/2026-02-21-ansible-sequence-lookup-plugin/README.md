@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Lookup Plugins, Loops, Automation
+Tags: Ansible, Lookup Plugins, Loop, Automation
 
 Description: Learn how to use the Ansible sequence lookup plugin to generate numeric sequences and formatted strings for use in playbook loops.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, Modules, Error, Debugging, Infrastructure as Code
+Tags: OpenTofu, Troubleshooting, Module, Error, Debugging, Infrastructure as Code
 
 Description: Learn how to diagnose and fix module reference errors in OpenTofu, including undefined outputs, missing variables, and incorrect module call syntax.
 

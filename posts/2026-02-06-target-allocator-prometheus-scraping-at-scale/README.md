@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, Target Allocator, Kubernetes, Metrics, Scaling
+Tags: OpenTelemetry, Prometheus, Target Allocator, Kubernetes, Metric, Scaling
 
 Description: A practical guide to using the OpenTelemetry Target Allocator to distribute Prometheus scrape targets evenly across multiple collector replicas for large-scale metrics collection.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Buildkit, Docker, CI/CD, Cache, Storage
+Tags: Rook, Ceph, BuildKit, Docker, CI/CD, Cache, Storage
 
 Description: Configure Buildkit to use Ceph RGW as an S3-compatible cache backend for Docker image layer caching, enabling persistent build caches across ephemeral CI runners.
 

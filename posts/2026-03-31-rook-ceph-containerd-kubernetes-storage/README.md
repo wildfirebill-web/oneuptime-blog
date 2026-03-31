@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, containerd, Kubernetes, CSI, Storage
+Tags: Rook, Ceph, Containerd, Kubernetes, CSI, Storage
 
 Description: Configure Ceph storage for Kubernetes clusters using containerd as the container runtime, including CSI driver setup and StorageClass configuration with Rook.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Integer, Float, Decimal, Performance
+Tags: ClickHouse, SQL, Data Type, Integer, Float, Decimal, Performance
 
 Description: A decision matrix for choosing between Int, UInt, Float32, Float64, and Decimal types in ClickHouse with storage sizes and examples.
 

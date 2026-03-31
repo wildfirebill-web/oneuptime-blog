@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Terraform, Environments, Infrastructure as Code, DevOps
+Tags: Portainer, Terraform, Environment, Infrastructure as Code, DevOps
 
 Description: Learn how to create, configure, and manage Portainer environments (endpoints) using the Terraform provider.
 

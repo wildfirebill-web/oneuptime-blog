@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Circuit Breaker, Resilience, Fault Tolerance, Patterns
+Tags: Microservice, Circuit Breaker, Resilience, Fault Tolerance, Pattern
 
 Description: Learn how to implement the circuit breaker pattern in microservices for graceful degradation and fault tolerance.
 

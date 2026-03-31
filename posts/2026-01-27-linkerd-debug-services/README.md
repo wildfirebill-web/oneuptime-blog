@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Linkerd, Service Mesh, Kubernetes, Debugging, Observability, Microservices, DevOps, SRE
+Tags: Linkerd, Service Mesh, Kubernetes, Debugging, Observability, Microservice, DevOps, SRE
 
 Description: A comprehensive guide to debugging services in Kubernetes using Linkerd's powerful diagnostic tools.
 

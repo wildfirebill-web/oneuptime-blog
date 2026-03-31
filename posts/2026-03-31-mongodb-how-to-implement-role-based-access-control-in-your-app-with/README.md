@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Rbac, Security, Access Control, Authentication
+Tags: MongoDB, RBAC, Security, Access Control, Authentication
 
 Description: Implement role-based access control (RBAC) in your application using MongoDB to manage user permissions at the database and application level.
 

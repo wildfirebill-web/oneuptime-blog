@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Infrastructure as Code, Types, Variables
+Tags: Terraform, HCL, Infrastructure as Code, Type, Variable
 
 Description: Learn when and how to use the any type constraint in Terraform variables, how it interacts with type inference, and when you should avoid it in favor of explicit types.
 

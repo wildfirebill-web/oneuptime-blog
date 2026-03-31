@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Toolbox, Operations, Kubernetes, Administration
+Tags: Rook, Ceph, Toolbox, Operation, Kubernetes, Administration
 
 Description: Learn how to run essential Ceph commands from the Rook toolbox pod to monitor cluster health, manage pools, OSDs, and perform administrative tasks.
 

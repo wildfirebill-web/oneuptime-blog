@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Flask, Python, GitHub Actions, CI/CD, App Service, REST API
+Tags: Azure, Flask, Python, GitHub Action, CI/CD, App Service, REST API
 
 Description: Build a Flask REST API and deploy it to Azure App Service with automated CI/CD using GitHub Actions for continuous deployment.
 

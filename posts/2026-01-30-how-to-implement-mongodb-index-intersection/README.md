@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Performance, Database
+Tags: MongoDB, Index, Performance, Database
 
 Description: Learn how MongoDB index intersection works and when to use multiple single-field indexes versus compound indexes.
 

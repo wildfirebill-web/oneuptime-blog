@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Observability, Metrics, Logs, Traces, Monitoring, APM
+Tags: ClickHouse, Observability, Metric, Log, Trace, Monitoring, APM
 
 Description: A comprehensive guide to building an observability platform with ClickHouse for storing and analyzing metrics, logs, and traces at scale, including schema design, data pipelines, and query patterns.
 

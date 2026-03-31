@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Upgrade, Runbook, Kubernetes, Operations
+Tags: Rook, Ceph, Upgrade, Runbook, Kubernetes, Operation
 
 Description: A comprehensive Ceph upgrade runbook covering pre-upgrade checks, operator upgrade, Ceph version bumps, and post-upgrade validation steps.
 

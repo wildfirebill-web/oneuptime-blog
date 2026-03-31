@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Service Graph, Traces, Metrics, Distributed Tracing, Microservices
+Tags: OpenTelemetry, Collector, Service Graph, Trace, Metric, Distributed Tracing, Microservice
 
 Description: Learn how to use the Service Graph connector in OpenTelemetry Collector to automatically generate service dependency metrics and visualize microservice relationships from distributed traces.
 

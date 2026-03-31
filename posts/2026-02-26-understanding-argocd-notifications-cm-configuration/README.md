@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Configuration
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Configuration
 
 Description: A comprehensive guide to every configuration option in the ArgoCD argocd-notifications-cm ConfigMap, covering services, templates, triggers, and integration patterns.
 

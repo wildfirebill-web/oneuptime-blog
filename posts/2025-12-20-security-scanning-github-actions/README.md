@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Security, SAST, DAST, Vulnerability Scanning, DevSecOps
+Tags: GitHub Action, Security, SAST, DAST, Vulnerability Scanning, DevSecOps
 
 Description: Learn how to implement comprehensive security scanning in GitHub Actions. This guide covers SAST, dependency scanning, secret detection, container scanning, and DAST integration.
 

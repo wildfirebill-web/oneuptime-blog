@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Kafka Connect, Integration, Data Pipelines, Java
+Tags: Kafka, Kafka Connect, Integration, Data Pipeline, Java
 
 Description: Build custom Kafka Connect source and sink connectors to integrate Kafka with systems that lack existing connectors.
 

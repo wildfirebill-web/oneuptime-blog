@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Activity Stream, Streams, Social Features, Backend
+Tags: Redis, Activity Stream, Stream, Social Features, Backend
 
 Description: Learn how to build a user activity stream in Redis using Sorted Sets and Redis Streams to track and display recent user actions in real time.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Monitoring, Prometheus, Grafana, Metrics, Time Series
+Tags: IPv6, Monitoring, Prometheus, Grafana, Metric, Time Series
 
 Description: Build a time-series monitoring pipeline for IPv6 network performance metrics using Prometheus node exporters, custom collectors, and Grafana dashboards.
 

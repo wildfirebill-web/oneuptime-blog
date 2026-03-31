@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Infrastructure as Code, Expression, Collections, Nested Data
+Tags: Terraform, HCL, Infrastructure as Code, Expression, Collection, Nested Data
 
 Description: Learn how to use Terraform for expressions with nested data structures, including flatten patterns, nested iteration, and practical examples for complex infrastructure configurations.
 

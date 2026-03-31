@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Notification
 
 Description: Learn how to unsubscribe ArgoCD applications from notifications, remove annotation-based subscriptions, disable default subscriptions, and manage notification noise across your cluster.
 

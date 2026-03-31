@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Security, Audit Logs
+Tags: Kubernetes, Security, Audit Log
 
 Description: Learn how to configure Kubernetes audit logging to track Secret access events, detect unauthorized access attempts, and maintain compliance with security policies.
 

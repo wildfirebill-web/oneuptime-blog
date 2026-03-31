@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Service Invocation, Go, Dotnet, Microservices
+Tags: Dapr, Service Invocation, Go, DotNet, Microservice
 
 Description: Implement Dapr service invocation between Go and .NET services using the Dapr Go SDK and .NET client for reliable cross-language communication.
 

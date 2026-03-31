@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, For Expressions, Collections, Grouping, Infrastructure
+Tags: OpenTofu, Terraform, For Expressions, Collection, Grouping, Infrastructure
 
 Description: Learn how to group resources and data by attribute values using for expressions in OpenTofu, enabling environment-based organization, multi-key aggregation, and data partitioning.
 

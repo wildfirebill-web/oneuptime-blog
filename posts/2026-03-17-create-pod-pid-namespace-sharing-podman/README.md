@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, PID, Namespaces
+Tags: Podman, Container, DevOps, Pod, PID, Namespace
 
 Description: Learn how to enable PID namespace sharing in Podman pods so containers can see each other's processes.
 

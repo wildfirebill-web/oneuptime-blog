@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, TLS, SSL, Infrastructure as Code, IaC, Certificates
+Tags: OpenTofu, TLS, SSL, Infrastructure as Code, IaC, Certificate
 
 Description: Learn how to configure the TLS provider in OpenTofu to generate self-signed certificates, CSRs, and private keys.
 

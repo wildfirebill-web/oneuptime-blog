@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Webhooks, Automation, CI/CD, Container Deployment
+Tags: Portainer, Webhook, Automation, CI/CD, Container Deployment
 
 Description: Learn how to use Portainer service and container webhooks to automate image updates and container redeployments.
 

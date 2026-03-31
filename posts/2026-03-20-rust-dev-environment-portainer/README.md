@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Rust, Development Environments, Docker, Cargo-watch, Debugging
+Tags: Portainer, Rust, Development Environment, Docker, Cargo-watch, Debugging
 
 Description: Learn how to set up a Rust development environment with automatic recompilation using cargo-watch in a Docker container managed by Portainer.
 

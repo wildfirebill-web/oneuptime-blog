@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Build, Cleanup
+Tags: Podman, Container, DevOps, Build, Cleanup
 
 Description: Learn how to automatically remove intermediate containers during Podman image builds to keep your system clean and save disk space.
 

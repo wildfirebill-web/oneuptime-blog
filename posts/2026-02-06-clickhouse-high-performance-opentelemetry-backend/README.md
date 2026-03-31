@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, ClickHouse, Observability, Backend, Traces, Logs, Metrics, Performance
+Tags: OpenTelemetry, ClickHouse, Observability, Backend, Trace, Log, Metric, Performance
 
 Description: Learn how to configure ClickHouse as a high-performance backend for OpenTelemetry traces, logs, and metrics with practical setup instructions and schema design.
 

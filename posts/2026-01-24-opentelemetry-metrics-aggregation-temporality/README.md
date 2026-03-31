@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Aggregation, Temporality, Cumulative, Delta, Prometheus, OTLP
+Tags: OpenTelemetry, Metric, Aggregation, Temporality, Cumulative, Delta, Prometheus, OTLP
 
 Description: Learn how to properly configure and handle metrics aggregation temporality in OpenTelemetry for different backend systems.
 

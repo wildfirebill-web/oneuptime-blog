@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Alter Table, Schema Design
+Tags: MySQL, DDL, ALTER TABLE, Schema Design
 
 Description: Learn how to rename a column in MySQL using RENAME COLUMN (MySQL 8.0) and the CHANGE clause for older versions, with tips on handling dependencies.
 

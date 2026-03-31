@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Distributed, DDL, Cluster, Configuration, Operations
+Tags: ClickHouse, Distributed, DDL, Cluster, Configuration, Operation
 
 Description: Learn how to configure distributed_ddl_task_timeout in ClickHouse to control how long ON CLUSTER DDL operations wait for all nodes to complete before returning.
 

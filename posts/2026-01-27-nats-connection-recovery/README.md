@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NATS, Messaging, Connection Recovery, Reliability, Distributed Systems, NodeJS, Go, DevOps
+Tags: NATS, Messaging, Connection Recovery, Reliability, Distributed System, NodeJS, Go, DevOps
 
 Description: A comprehensive guide to handling NATS connection recovery, including reconnection strategies, connection status callbacks, buffered messages during disconnect.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NodeJS, JavaScript, Async, Promises, Error Handling
+Tags: NodeJS, JavaScript, Async, Promise, Error Handling
 
 Description: Understand and fix UnhandledPromiseRejectionWarning errors by properly catching promise rejections, using global handlers, and implementing best practices for async code.
 

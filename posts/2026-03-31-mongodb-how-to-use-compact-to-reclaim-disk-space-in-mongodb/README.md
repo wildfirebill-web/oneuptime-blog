@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Compact, Disk Space, Storage, Maintenance
 
-Description: Learn how to use MongoDB's compact command to defragment collections, reclaim disk space, and rebuild indexes after large delete operations.
+Description: Learn how to use MongoDB compact command to defragment collections, reclaim disk space, and rebuild indexes after large delete operations.
 
 ---
 

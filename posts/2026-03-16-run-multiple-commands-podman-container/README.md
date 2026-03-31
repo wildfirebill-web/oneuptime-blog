@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Exec, Shell Scripting
+Tags: Podman, Container, DevOps, Container Exec, Shell Scripting
 
 Description: Learn how to run multiple commands inside a Podman container using shell chaining, scripts, and here documents for complex container operations.
 

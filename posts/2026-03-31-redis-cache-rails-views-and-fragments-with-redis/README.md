@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Ruby On Rails, Fragment Caching, View Caching, Ruby
+Tags: Redis, Ruby On Rail, Fragment Caching, View Caching, Ruby
 
 Description: Use Redis-backed fragment caching in Rails views to cache expensive partials and page sections with automatic expiration and Russian doll caching.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Spot Instances, Preemptible, Cost Management, Node Affinity, Tolerations
+Tags: Flux CD, Kubernetes, GitOps, Spot Instance, Preemptible, Cost Management, Node Affinity, Toleration
 
 Description: Configure Flux-managed Kubernetes workloads to run on spot and preemptible instances using node selectors, tolerations, and pod disruption budgets to reduce compute costs by up to 90%.
 

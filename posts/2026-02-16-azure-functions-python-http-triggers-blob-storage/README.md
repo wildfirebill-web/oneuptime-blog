@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Python, Serverless, HTTP Trigger, Blob Storage, Binding, Cloud
+Tags: Azure Function, Python, Serverless, HTTP Trigger, Blob Storage, Binding, Cloud
 
 Description: Build serverless Azure Functions in Python with HTTP triggers and Blob Storage input/output bindings for event-driven file processing.
 

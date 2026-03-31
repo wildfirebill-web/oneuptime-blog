@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Age, Key Rotation, Security
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Age, Key Rotation, Security
 
 Description: Learn strategies to rotate SOPS age encryption keys in Flux without needing to re-encrypt every secret file in your repository.
 

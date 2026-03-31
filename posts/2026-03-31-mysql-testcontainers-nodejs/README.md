@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Testcontainer, Node.js, Integration Test
+Tags: MySQL, Testcontainers, Node.js, Integration Test
 
 Description: Learn how to use the Testcontainers Node.js library to spin up a real MySQL Docker container for integration tests with automatic lifecycle management and schema setup.
 

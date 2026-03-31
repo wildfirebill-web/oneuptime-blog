@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, GridFS, File Storage, Large Files, Operations
+Tags: MongoDB, GridFS, File Storage, Large File, Operation
 
 Description: Learn how to store, retrieve, and manage large files in MongoDB using GridFS, including streaming uploads, downloads, metadata, and when to use GridFS vs object storage.
 

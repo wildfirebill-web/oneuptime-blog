@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, HTTPS, Token Rotation, PAT, Security, Key Rotation
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, HTTPS, Token Rotation, PAT, Security, Key Rotation
 
 Description: A step-by-step guide to rotating HTTPS personal access tokens and credentials in Flux CD without breaking your GitOps pipeline.
 

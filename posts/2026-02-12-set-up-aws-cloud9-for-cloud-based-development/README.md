@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Cloud9, IDE, Cloud Development, Developer Tools, EC2
+Tags: AWS, Cloud9, IDE, Cloud Development, Developer Tool, EC2
 
 Description: Set up AWS Cloud9 as a browser-based cloud IDE with pre-configured development tools, terminal access, and seamless AWS service integration.
 

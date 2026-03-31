@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, ARM64, Cross-Platform
+Tags: Podman, Container, DevOps, Multi-Architecture, ARM64, Cross-Platform
 
 Description: Learn how to build ARM64 container images on AMD64 machines using Podman with QEMU emulation, including setup, optimization, and troubleshooting.
 

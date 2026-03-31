@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Downgrade, Operations, Database Administration
+Tags: MongoDB, Downgrade, Operation, Database Administration
 
 Description: Learn how to safely downgrade MongoDB to a previous minor or major version using Feature Compatibility Version settings and proper backup procedures.
 

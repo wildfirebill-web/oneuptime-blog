@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, SSL, TLS, Self-Signed, Certificates, Browser-warning
+Tags: Portainer, SSL, TLS, Self-Signed, Certificate, Browser-warning
 
 Description: A guide to eliminating browser self-signed certificate warnings when accessing Portainer, with options ranging from proper CA-signed certs to trusting an internal CA.
 

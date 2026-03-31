@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Standard User, RBAC, Permissions, Access Control
+Tags: Portainer, Standard User, RBAC, Permission, Access Control
 
 Description: Configure what Standard Users can see and do in Portainer environments including resource visibility and deployment capabilities.
 

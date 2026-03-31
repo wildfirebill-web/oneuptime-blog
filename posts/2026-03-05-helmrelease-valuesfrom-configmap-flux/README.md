@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, ConfigMaps, ValuesFrom
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, ConfigMap, ValuesFrom
 
 Description: Learn how to use spec.valuesFrom to load Helm chart values from Kubernetes ConfigMaps in Flux CD HelmReleases.
 

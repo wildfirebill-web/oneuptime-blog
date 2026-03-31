@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NATS, Messaging, JetStream, Distributed Systems, Node.js, Go, Reliability
+Tags: NATS, Messaging, JetStream, Distributed System, Node.js, Go, Reliability
 
 Description: Learn how to implement message acknowledgment in NATS using JetStream for reliable, at-least-once message delivery. Covers ack, nak, in-progress, and term acknowledgment types with practical examples.
 

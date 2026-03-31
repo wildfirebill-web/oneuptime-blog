@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Docker Compose, Linux
+Tags: RHEL, Docker, Container, Docker Compose, Linux
 
 Description: Learn how to set Up Docker Compose on RHEL 9 with step-by-step instructions, configuration examples, and best practices.
 

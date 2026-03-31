@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Cost Management, Resource Limits, Admission Control, FinOps
+Tags: Kubernetes, Cost Management, Resource Limit, Admission Control, FinOps
 
 Description: Learn how to use admission control policies to enforce cost governance, limit resource consumption, prevent expensive workloads, implement chargeback mechanisms.
 

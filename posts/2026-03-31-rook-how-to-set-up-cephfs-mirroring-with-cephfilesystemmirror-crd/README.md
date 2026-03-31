@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Cephfs, Mirroring, Disaster Recovery, Kubernetes
+Tags: Rook, Ceph, CephFS, Mirroring, Disaster Recovery, Kubernetes
 
 Description: Configure CephFS asynchronous mirroring using the CephFilesystemMirror CRD in Rook to replicate filesystem data between two Ceph clusters for disaster recovery.
 

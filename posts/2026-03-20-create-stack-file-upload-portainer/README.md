@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Docker Compose, Upload, Deployment
+Tags: Portainer, Stack, Docker Compose, Upload, Deployment
 
 Description: Upload a docker-compose.yml file to Portainer to create and deploy a stack on a connected environment.
 

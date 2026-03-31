@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure SignalR, Angular, Real-Time, Notifications, WebSocket, .NET, TypeScript
+Tags: Azure SignalR, Angular, Real-Time, Notification, WebSocket, .NET, TypeScript
 
 Description: Implement a real-time notification system using Azure SignalR Service with an Angular frontend and a .NET backend for push-based updates.
 

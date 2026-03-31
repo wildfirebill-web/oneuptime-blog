@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Percentiles, Quantiles, Analytics, Performance
+Tags: ClickHouse, Percentile, Quantile, Analytics, Performance
 
 Description: Learn how to use the quantiles() function in ClickHouse to compute multiple percentiles in a single query pass for efficient latency and metric analysis.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, DynamoDB, Indexes, Data Modeling
+Tags: AWS, DynamoDB, Index, Data Modeling
 
 Description: Learn how to leverage DynamoDB sparse indexes to efficiently query subsets of data, reduce index costs, and implement patterns like flagged items and active records.
 

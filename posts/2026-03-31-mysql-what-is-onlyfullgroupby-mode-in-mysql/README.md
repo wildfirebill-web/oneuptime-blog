@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Sql Mode, Group By, Query Optimization
+Tags: MySQL, SQL Mode, GROUP BY, Query Optimization
 
 Description: ONLY_FULL_GROUP_BY is a MySQL SQL mode that requires all non-aggregated SELECT columns to appear in the GROUP BY clause, enforcing SQL standard compliance.
 

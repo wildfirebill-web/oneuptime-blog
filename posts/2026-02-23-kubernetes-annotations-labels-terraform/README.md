@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Kubernetes, Labels, Annotations, Infrastructure as Code
+Tags: Terraform, Kubernetes, Labels, Annotation, Infrastructure as Code
 
 Description: Learn how to manage Kubernetes annotations and labels with Terraform, including best practices for organizing resources, using selectors, and applying consistent metadata across your cluster.
 

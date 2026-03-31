@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, PUBSUB, Monitoring, Channel
+Tags: Redis, Pub/Sub, PubSub, Monitoring, Channel
 
 Description: Learn how to use PUBSUB NUMSUB to count channel subscribers and PUBSUB NUMPAT to count active pattern subscriptions in Redis.
 

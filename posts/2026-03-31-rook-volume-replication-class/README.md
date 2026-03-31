@@ -1,10 +1,10 @@
 # How to Configure VolumeReplicationClass Scheduling Intervals in Rook
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage
 
-Description: Define VolumeReplicationClass resources with custom scheduling intervals to control how frequently RBD snapshots are replicated to a peer Ceph cluster in Rook.
+Description: Define VolumeReplicationClass resources with custom scheduling intervals to control how frequently RBD snapshots are replicated to a peer Ceph cluster.
 
 ---
 

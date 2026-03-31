@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harbor, Webhooks, Notifications, Events, Integration
+Tags: Harbor, Webhook, Notification, Event, Integration
 
 Description: Master Harbor webhook notifications to trigger actions on image push and scanning events.
 

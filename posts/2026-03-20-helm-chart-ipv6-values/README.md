@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, IPv6, Kubernetes, Helm Charts, DevOps
+Tags: Helm, IPv6, Kubernetes, Helm Chart, DevOps
 
 Description: Define and document IPv6 configuration options in Helm chart values.yaml files for flexible dual-stack deployments.
 

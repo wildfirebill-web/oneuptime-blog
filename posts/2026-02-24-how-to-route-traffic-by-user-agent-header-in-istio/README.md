@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Traffic Routing, User-Agent, Headers, Kubernetes
+Tags: Istio, Traffic Routing, User-Agent, Header, Kubernetes
 
 Description: Route traffic to different service versions based on the User-Agent header in Istio for mobile-specific backends, browser targeting, and bot handling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Taints, Tolerations, Scheduling, Node Management, DevOps
+Tags: Kubernetes, Taints, Toleration, Scheduling, Node Management, DevOps
 
 Description: Master Kubernetes taints and tolerations to control pod scheduling, dedicate nodes for specific workloads, and manage node lifecycle events.
 

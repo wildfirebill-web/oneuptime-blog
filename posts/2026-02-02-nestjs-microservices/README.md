@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NestJS, Node.js, Microservices, Architecture, TypeScript, Backend, Distributed Systems
+Tags: NestJS, Node.js, Microservice, Architecture, TypeScript, Backend, Distributed System
 
 Description: A comprehensive guide to building scalable microservices with NestJS, covering transport layers, message patterns, service communication, and production best practices.
 

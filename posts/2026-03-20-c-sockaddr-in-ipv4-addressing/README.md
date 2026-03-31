@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, Sockets, IPv4, Sockaddr_in, Networking, Systems Programming
+Tags: C, Socket, IPv4, Sockaddr_in, Networking, Systems Programming
 
 Description: Learn how to correctly populate and use struct sockaddr_in for IPv4 addressing in C, covering all fields, byte order conversion, and common patterns for bind, connect, and accept.
 

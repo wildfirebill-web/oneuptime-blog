@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, DMS, Database Migrations, Data Replication, Infrastructure as Code
+Tags: OpenTofu, AWS, DMS, Database Migration, Data Replication, Infrastructure as Code
 
 Description: Learn how to create AWS Database Migration Service replication instances, endpoints, and tasks for full-load and CDC migrations using OpenTofu.
 

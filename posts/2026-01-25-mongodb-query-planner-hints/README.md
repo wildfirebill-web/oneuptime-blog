@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Query Optimization, Hints, Performance, Indexes
+Tags: MongoDB, Query Optimization, Hint, Performance, Index
 
 Description: Learn how to use MongoDB query hints to override the query planner, force specific index usage, and optimize query performance with practical examples.
 

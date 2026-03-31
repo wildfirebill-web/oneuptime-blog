@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Bind Mounts, Storage
+Tags: Podman, Container, DevOps, Volumes, Bind Mounts, Storage
 
 Description: Understand the differences between named volumes and bind mounts in Podman, when to use each, and how to choose the right storage approach for your use case.
 

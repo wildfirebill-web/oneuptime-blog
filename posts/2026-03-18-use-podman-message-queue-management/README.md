@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Message Queues, RabbitMQ, Kafka, Redis, Containers
+Tags: Podman, Message Queue, RabbitMQ, Kafka, Redis, Container
 
 Description: Learn how to deploy and manage message queue systems like RabbitMQ, Apache Kafka, and Redis with Podman containers for reliable asynchronous communication between services.
 

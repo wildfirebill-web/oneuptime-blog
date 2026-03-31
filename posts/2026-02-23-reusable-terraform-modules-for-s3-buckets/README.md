@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, AWS, S3, Storage
+Tags: Terraform, Module, AWS, S3, Storage
 
 Description: Build a production-ready Terraform module for S3 buckets with encryption, versioning, lifecycle rules, access logging, and bucket policies baked in.
 

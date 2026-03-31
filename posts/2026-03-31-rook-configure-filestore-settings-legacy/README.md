@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, FileStore, Legacy, Storage
+Tags: Rook, Ceph, Filestore, LEGACY, Storage
 
 Description: Learn how to configure FileStore OSD settings in legacy Ceph clusters and understand how to migrate to the modern BlueStore backend.
 

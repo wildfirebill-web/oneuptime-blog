@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Kubernetes, Messaging, DevOps, Cloud Native, Microservices
+Tags: NATS, Kubernetes, Messaging, DevOps, Cloud Native, Microservice
 
 Description: Learn how to deploy NATS messaging system on Kubernetes using Helm charts, StatefulSets, and JetStream for persistent messaging with production-ready configurations.
 

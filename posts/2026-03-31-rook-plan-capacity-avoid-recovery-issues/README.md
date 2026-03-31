@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Capacity, Planning, Operations, Storage
+Tags: Rook, Ceph, Capacity, Planning, Operation, Storage
 
 Description: Plan Ceph cluster capacity to avoid backfillfull stalls and recovery failures by calculating safe usage thresholds, sizing headroom, and automating capacity alerts.
 

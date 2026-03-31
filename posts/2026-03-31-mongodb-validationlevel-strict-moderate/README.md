@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Schema Validation, Database, Configuration
 
-Description: Learn the difference between MongoDB's strict and moderate validationLevel settings and when to use each for rolling out schema validation on existing collections.
+Description: Learn the difference between MongoDB strict and moderate validationLevel settings and when to use each for rolling out schema validation on existing collections.
 
 ---
 

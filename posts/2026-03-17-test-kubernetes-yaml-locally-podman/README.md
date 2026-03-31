@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, Testing, Local Development
+Tags: Podman, Container, DevOps, Kubernetes, Testing, Local Development
 
 Description: Learn how to validate and test Kubernetes YAML manifests locally using Podman before deploying to a cluster.
 

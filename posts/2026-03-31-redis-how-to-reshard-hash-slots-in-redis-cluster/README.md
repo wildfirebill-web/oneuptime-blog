@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Resharding, Hash Slots, Operations
+Tags: Redis, Cluster, Resharding, Hash Slot, Operation
 
 Description: A practical guide to resharding Redis Cluster hash slots manually and automatically, covering slot migration, monitoring, and common pitfalls.
 

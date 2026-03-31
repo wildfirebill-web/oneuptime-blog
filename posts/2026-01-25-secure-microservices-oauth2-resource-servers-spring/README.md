@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Security, OAuth2, Microservices, Security
+Tags: Java, Spring Security, OAuth2, Microservice, Security
 
 Description: Learn how to configure Spring Boot microservices as OAuth2 resource servers to validate JWT tokens, enforce scopes, and implement fine-grained access control across your distributed architecture.
 

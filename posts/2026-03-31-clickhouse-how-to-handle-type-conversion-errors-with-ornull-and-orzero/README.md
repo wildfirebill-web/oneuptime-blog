@@ -1,8 +1,8 @@
-# How to Handle Type Conversion Errors with OrNull and OrZero in ClickHouse
+# How to Handle Type Conversion Errors with OrNull and OrZero
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Type Conversion, OrNull, OrZero, Error Handling, Sql
+Tags: ClickHouse, Type Conversion, OrNull, OrZero, Error Handling, SQL
 
 Description: Learn how to use OrNull and OrZero variants of ClickHouse type conversion functions to gracefully handle invalid input without query failures.
 

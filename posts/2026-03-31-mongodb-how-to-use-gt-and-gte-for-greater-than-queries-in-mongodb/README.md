@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $gt, $gte, Comparison Operators, Range Queries, Query
+Tags: MongoDB, $gt, $gte, Comparison Operator, Range Queries, Query
 
 Description: Learn how to use MongoDB's $gt (greater than) and $gte (greater than or equal) operators for range queries on numbers, dates, and strings with index optimization.
 

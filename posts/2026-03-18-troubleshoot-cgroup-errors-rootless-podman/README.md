@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Cgroups, Troubleshooting, Linux
+Tags: Podman, Container, DevOps, Rootless, Cgroups, Troubleshooting, Linux
 
 Description: A troubleshooting guide for diagnosing and fixing cgroup-related errors in rootless Podman, covering delegation issues, version mismatches, and permission problems.
 

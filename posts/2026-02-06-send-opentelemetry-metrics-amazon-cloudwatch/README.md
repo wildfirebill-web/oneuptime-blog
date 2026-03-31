@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Amazon CloudWatch, Metrics, AWS, Observability, EMF
+Tags: OpenTelemetry, Amazon CloudWatch, Metric, AWS, Observability, EMF
 
 Description: A hands-on guide to exporting OpenTelemetry metrics to Amazon CloudWatch using the EMF exporter in the OpenTelemetry Collector and direct SDK instrumentation.
 

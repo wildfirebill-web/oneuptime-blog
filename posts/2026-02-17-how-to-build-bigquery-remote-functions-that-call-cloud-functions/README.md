@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Remote Functions, Cloud Functions, Serverless
+Tags: GCP, BigQuery, Remote Functions, Cloud Function, Serverless
 
 Description: Step-by-step guide to building BigQuery remote functions that call Cloud Functions for custom processing like ML inference, API calls, and complex transformations.
 

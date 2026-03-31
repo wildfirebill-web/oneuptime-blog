@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, IPv4, Alerting Rules, PromQL, Monitoring, Alerts
+Tags: Prometheus, IPv4, Alerting Rules, PromQL, Monitoring, Alert
 
 Description: Write Prometheus alerting rules targeting IPv4 infrastructure metrics, configure alert severity levels, and route alerts through Alertmanager for notifications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NodeJS, TypeScript, Microservices, Distributed Systems, Transactions, Backend
+Tags: NodeJS, TypeScript, Microservice, Distributed System, Transaction, Backend
 
 Description: Learn how to implement the Saga pattern in Node.js for managing distributed transactions across microservices with compensation logic and rollback capabilities.
 

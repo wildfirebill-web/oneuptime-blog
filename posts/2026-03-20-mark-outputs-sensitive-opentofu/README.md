@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, Sensitive, Security, HCL, Infrastructure as Code
+Tags: OpenTofu, Output, Sensitive, Security, HCL, Infrastructure as Code
 
 Description: Learn how to mark OpenTofu output values as sensitive to prevent secrets and credentials from appearing in terminal output and CI/CD logs.
 

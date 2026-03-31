@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Cte, Sql, Hierarchical Data
+Tags: MySQL, CTE, SQL, Hierarchical Data
 
 Description: Learn how to write recursive CTEs in MySQL to traverse hierarchical data, generate number sequences, and process tree structures with WITH RECURSIVE.
 

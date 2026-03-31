@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Docker, Persistent Volumes, Containers, DevOps
+Tags: MongoDB, Docker, Persistent Volume, Container, DevOps
 
 Description: Learn how to run MongoDB in Docker with named volumes and bind mounts to ensure your data persists across container restarts and upgrades.
 

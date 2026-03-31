@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Database, Monitoring, Commands, Administration
+Tags: Redis, Database, Monitoring, Command, Administration
 
 Description: Learn how to use DBSIZE in Redis to quickly count the total number of keys in the current database, and how to use it for monitoring and capacity planning.
 

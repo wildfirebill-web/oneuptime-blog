@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Networking, Troubleshooting, Linux, Firewall, Ports
+Tags: TCP, Networking, Troubleshooting, Linux, Firewall, Port
 
 Description: Diagnose TCP Connection Refused errors by identifying whether the service is not running, the port is blocked, or the connection is being actively rejected.
 

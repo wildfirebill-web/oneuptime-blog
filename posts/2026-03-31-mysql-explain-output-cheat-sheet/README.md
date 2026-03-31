@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Explain, Query Optimizer, Cheat Sheet
+Tags: MySQL, EXPLAIN, Query Optimizer, Cheat Sheet
 
 Description: Quick reference for reading MySQL EXPLAIN output, including type, key, rows, Extra fields, and how to interpret them for query optimization.
 

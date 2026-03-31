@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Kubernetes, Statefulsets, Replica Set, Persistent Storage
+Tags: MongoDB, Kubernetes, StatefulSet, Replica Set, Persistent Storage
 
 Description: Deploy a MongoDB replica set on Kubernetes using StatefulSets with persistent volumes, headless services, and automatic replica set initialization.
 

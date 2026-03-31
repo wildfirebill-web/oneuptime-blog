@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Select, Query, Cheat Sheet
+Tags: MySQL, SELECT, Query, Cheat Sheet
 
 Description: A practical cheat sheet covering MySQL SELECT syntax, filtering, sorting, limiting, aliasing, and common clauses for everyday query writing.
 

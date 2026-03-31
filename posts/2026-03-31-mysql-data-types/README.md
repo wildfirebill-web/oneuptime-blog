@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, Data Type, Schema, Database
+Tags: MySQL, SQL, DDL, Data Type, Schema
 
 Description: Understand MySQL's numeric, string, date/time, and binary data types and learn how to choose the right type for each column.
 

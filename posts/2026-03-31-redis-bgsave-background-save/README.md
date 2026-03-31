@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bgsave, RDB, Persistence, Snapshot
+Tags: Redis, BGSAVE, RDB, Persistence, Snapshot
 
 Description: Learn how to use BGSAVE to trigger a non-blocking Redis RDB snapshot in a background process, and how to monitor its progress and completion.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Message Queue, Lists, Background Jobs, Async Processing
+Tags: Redis, Message Queue, List, Background Job, Async Processing
 
 Description: Learn how to build a simple, reliable message queue using Redis Lists with producer/consumer patterns and blocking pops for background job processing.
 

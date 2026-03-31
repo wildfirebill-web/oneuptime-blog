@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, Modules, Git, Infrastructure as Code
+Tags: OpenTofu, Troubleshooting, Module, Git, Infrastructure as Code
 
 Description: Learn how to diagnose and fix module download failures in OpenTofu including Git authentication errors, version constraint conflicts, and registry connectivity issues.
 

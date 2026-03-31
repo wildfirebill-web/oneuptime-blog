@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Connection Limits, Gateway, Rate Limiting, Kubernetes
+Tags: Istio, Connection Limit, Gateway, Rate Limiting, Kubernetes
 
 Description: How to configure TCP connection limits and HTTP request limits at the Istio ingress gateway to protect backend services from overload and denial of service.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Fission, Serverless, Kubernetes, Functions
+Tags: Rancher, Fission, Serverless, Kubernetes, Function
 
 Description: Guide to deploying Fission serverless framework on Rancher for fast function execution with warm pods.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Versioning, Breaking Changes, IaC
+Tags: Terraform, Module, Versioning, Breaking Change, IaC
 
 Description: Learn strategies for introducing and managing breaking changes in Terraform modules, including deprecation patterns, migration guides, and backwards-compatible transitions.
 

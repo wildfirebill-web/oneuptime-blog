@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging
+Tags: Podman, Container, DevOps, Logging
 
 Description: A complete guide to viewing container logs in Podman, covering basic log viewing, output filtering, and log inspection for both running and stopped containers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Templating, Go Templates, Values, Configuration
+Tags: Helm, Templating, Go Templates, Value, Configuration
 
 Description: Learn advanced Helm templating techniques including conditionals, loops, helper functions, and values file management.
 

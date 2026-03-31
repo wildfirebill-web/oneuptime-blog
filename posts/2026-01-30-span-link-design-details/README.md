@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Tracing, OpenTelemetry, Distributed Systems
+Tags: Observability, Tracing, OpenTelemetry, Distributed System
 
 Description: Learn how to implement span links to connect causally related spans across different traces.
 

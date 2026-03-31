@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Validation, Variables, Modules, Infrastructure as Code
+Tags: Terraform, HCL, Validation, Variable, Module, Infrastructure as Code
 
 Description: Learn how to write advanced Terraform variable validation rules that handle cross-field checks, conditional requirements, nested objects, and collection constraints for production-ready modules.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, HashiCorp Vault, Secrets, Security, DevOps
+Tags: Portainer, HashiCorp Vault, Secret, Security, DevOps
 
 Description: Integrate HashiCorp Vault with Portainer to provide dynamic secrets and centralized secrets management for containerized workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Auto-Update, Troubleshooting
+Tags: Podman, Container, DevOps, Auto-Update, Troubleshooting
 
 Description: Learn how to diagnose and fix common Podman auto-update failures including registry errors, health check issues, and rollback problems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, StatsD, Metrics, Migration, Observability, Monitoring
+Tags: OpenTelemetry, StatsD, Metric, Migration, Observability, Monitoring
 
 Description: A hands-on guide to migrating your application metrics pipeline from StatsD to OpenTelemetry, covering instrumentation changes, collector setup, and backend integration.
 

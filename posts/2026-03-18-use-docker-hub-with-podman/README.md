@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Docker Hub, Docker
+Tags: Podman, Container, DevOps, Registry, Docker Hub, Docker
 
 Description: A complete guide to using Docker Hub with Podman for pulling, pushing, and managing container images.
 

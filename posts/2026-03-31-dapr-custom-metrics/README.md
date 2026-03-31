@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Metrics, OpenTelemetry, Prometheus, Observability
+Tags: Dapr, Metric, OpenTelemetry, Prometheus, Observability
 
 Description: Expose custom business metrics from Dapr services using OpenTelemetry SDK and scrape them with Prometheus alongside Dapr's built-in sidecar metrics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DevSpace, Kubernetes, Development, Teams, Collaboration
+Tags: DevSpace, Kubernetes, Development, Team, Collaboration
 
 Description: Configure DevSpace for team-based Kubernetes development enabling multiple developers to work independently while sharing common dependencies, services, and infrastructure resources.
 

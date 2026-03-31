@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Logging, DevOps
+Tags: Portainer, Docker, Container, Logging, DevOps
 
 Description: Learn how to view, filter, and navigate Docker container logs in Portainer's built-in log viewer.
 

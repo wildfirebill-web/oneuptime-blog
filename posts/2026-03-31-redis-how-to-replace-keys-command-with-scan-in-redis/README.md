@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Performance, SCAN, KEYS, Best Practices
+Tags: Redis, Performance, SCAN, Key, Best Practice
 
 Description: Learn why the Redis KEYS command blocks the server and how to safely replace it with the non-blocking SCAN command for production use.
 

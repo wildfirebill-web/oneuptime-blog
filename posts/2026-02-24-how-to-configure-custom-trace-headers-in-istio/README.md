@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Tracing, Custom Headers, B3, W3C Trace Context
+Tags: Istio, Tracing, Custom Header, B3, W3C Trace Context
 
 Description: How to configure custom trace header formats in Istio, switch between B3 and W3C formats, and handle custom header requirements.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Denormalization, Schema Design, Performance, JOIN, Nested
+Tags: ClickHouse, Denormalization, Schema Design, Performance, Join, Nested
 
 Description: Learn when and how to denormalize data in ClickHouse to eliminate expensive JOINs and maximize analytical query performance for OLAP workloads.
 

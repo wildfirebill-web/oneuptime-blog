@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, SET, String, Key-Value, Expiration, TTL, Command
+Tags: Redis, Set, String, Key-Value, Expiration, TTL, Command
 
 Description: Learn how to use the Redis SET command with all available options including EX, PX, NX, XX, KEEPTTL, GET, EXAT, and PXAT for full control over key storage.
 

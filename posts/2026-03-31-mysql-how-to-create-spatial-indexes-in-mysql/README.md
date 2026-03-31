@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Spatial Indexes, GIS, Performance
+Tags: MySQL, Spatial Index, GIS, Performance
 
 Description: Learn how to create and use spatial indexes in MySQL to speed up geographic queries on geometry columns with practical examples.
 

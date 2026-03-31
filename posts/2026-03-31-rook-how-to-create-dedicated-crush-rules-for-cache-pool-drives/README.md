@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, CRUSH, Cache Tiering, SSD, Storage
+Tags: Ceph, Rook, CRUSH, Cache Tiering, SSD
 
 Description: Create dedicated CRUSH rules that pin Ceph cache pools to SSD or NVMe drives, ensuring cache data never lands on HDD storage devices.
 

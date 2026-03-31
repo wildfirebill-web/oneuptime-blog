@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, CI/CD, Plan Approval, GitHub Actions, DevOps, Infrastructure as Code
+Tags: OpenTofu, CI/CD, Plan Approval, GitHub Action, DevOps, Infrastructure as Code
 
 Description: Learn how to build a plan approval workflow for OpenTofu that requires human review before applying infrastructure changes in production.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Regular Expressions, Query, String Search, Aggregation
+Tags: MongoDB, Regular Expression, Query, String Search, Aggregation
 
 Description: Learn how to use regular expressions in MongoDB to perform flexible string pattern matching using $regex, options, and aggregation operators.
 

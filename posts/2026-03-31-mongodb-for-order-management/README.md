@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Order, E-commerce, Schema, Transaction
+Tags: MongoDB, Order, E-Commerce, Schema, Transaction
 
 Description: Learn how to design a MongoDB schema for an order management system with order lifecycle, status tracking, line items, payments, and shipping management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CUDA, Podman, NVIDIA, GPU Computing, Deep Learning, Containers
+Tags: CUDA, Podman, NVIDIA, GPU Computing, Deep Learning, Container
 
 Description: Learn how to set up and use NVIDIA CUDA inside Podman containers for GPU-accelerated computing, including building custom CUDA images and running real-world workloads.
 

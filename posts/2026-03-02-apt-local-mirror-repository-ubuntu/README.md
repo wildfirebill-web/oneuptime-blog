@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, APT, Package Management, Networks, System Administration
+Tags: Ubuntu, APT, Package Management, Network, System Administration
 
 Description: Learn how to configure Ubuntu's APT to use a local mirror repository for faster package installations, reduced bandwidth usage, and offline package management in network-restricted environments.
 

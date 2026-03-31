@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, BigQuery, Data Transformation, Scheduled Jobs
+Tags: GCP, Cloud Function, BigQuery, Data Transformation, Scheduled Job
 
 Description: Learn how to use Google Cloud Functions with Cloud Scheduler to run BigQuery data transformation queries on a schedule for building data pipelines and summary tables.
 

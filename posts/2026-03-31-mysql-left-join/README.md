@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, JOIN, Database, Query
+Tags: MySQL, SQL, Join, Database, Query
 
 Description: Learn how LEFT JOIN in MySQL returns all rows from the left table and matching rows from the right table, with NULLs for unmatched rows.
 

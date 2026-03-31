@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Pause, Containers, Operations
+Tags: Portainer, Docker, Pause, Container, Operation
 
 Description: Temporarily pause container execution in Portainer to freeze a running application without stopping it.
 

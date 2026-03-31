@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Index, Alert, Operations, Index Build
+Tags: MongoDB, Index, Alert, Operation, Index Build
 
 Description: Learn how to diagnose and recover from MongoDB index build failures, check build status, resume interrupted builds, and avoid common pitfalls in production.
 

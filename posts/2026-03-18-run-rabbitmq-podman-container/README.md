@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, RabbitMQ, Message Queues, AMQP
+Tags: Podman, Container, DevOps, RabbitMQ, Message Queue, AMQP
 
 Description: Learn how to run RabbitMQ in a Podman container with the management UI, persistent queues, and custom configuration.
 

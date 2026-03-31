@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Grafana Mimir, Metrics, Prometheus, Observability
+Tags: OpenTelemetry, Grafana Mimir, Metric, Prometheus, Observability
 
 Description: Step-by-step guide to sending OpenTelemetry metrics to Grafana Mimir using the Collector's Prometheus remote write exporter.
 

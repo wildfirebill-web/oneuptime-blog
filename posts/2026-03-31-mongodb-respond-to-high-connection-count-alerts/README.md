@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Alert, Connection, Operations, Performance
+Tags: MongoDB, Alert, Connection, Operation, Performance
 
 Description: Learn how to diagnose and resolve MongoDB high connection count alerts by identifying connection leaks, tuning pool sizes, and using connection limiting features.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, String Function, HCL, DevOps, Templates
+Tags: Terraform, Infrastructure as Code, String Function, HCL, DevOps, Template
 
 Description: Learn how to use conditional directives inside Terraform templatefile templates with if/else logic, with practical examples for dynamic configuration generation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Performance, Benchmarking, Redis-Benchmark, Python, Node.js
+Tags: Redis, Performance, Benchmarking, Redis-Benchmark, Python
 
 Description: Learn how to write meaningful Redis performance benchmarks using redis-benchmark, custom Python scripts, and proper methodology to measure throughput and latency.
 

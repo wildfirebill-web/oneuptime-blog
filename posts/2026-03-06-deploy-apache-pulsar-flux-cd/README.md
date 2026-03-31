@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Apache Pulsar, Message Queues, Kubernetes, GitOps, Streaming
+Tags: Flux CD, Apache Pulsar, Message Queue, Kubernetes, GitOps, Streaming
 
 Description: A practical guide to deploying Apache Pulsar on Kubernetes using Flux CD for GitOps-based message streaming infrastructure.
 

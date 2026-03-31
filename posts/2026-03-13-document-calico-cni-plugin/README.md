@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Plugins, Documentation, Operations
+Tags: Calico, Kubernetes, Networking, CNI, Plugin, Documentation, Operation
 
 Description: How to document the Calico CNI plugin configuration, IPAM design, and operational procedures to support engineers managing pod networking in Kubernetes clusters.
 

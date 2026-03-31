@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, CA Trust Store, Certificates, Security, Linux
+Tags: RHEL, CA Trust Store, Certificate, Security, Linux
 
 Description: Learn how the system-wide CA trust store works on RHEL and how to manage trusted and distrusted certificate authorities.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, CloudEvents, Trace Context, W3C Trace Context
+Tags: OpenTelemetry, CloudEvent, Trace Context, W3C Trace Context
 
 Description: Step-by-step guide to propagating W3C trace context through CloudEvents so you can trace events end-to-end across services.
 

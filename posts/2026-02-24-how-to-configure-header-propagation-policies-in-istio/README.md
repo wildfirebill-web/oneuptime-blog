@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Headers, Distributed Tracing, Service Mesh, Observability
+Tags: Istio, Header, Distributed Tracing, Service Mesh, Observability
 
 Description: A hands-on guide to configuring header propagation in Istio for distributed tracing, context passing, and custom header management across microservices.
 

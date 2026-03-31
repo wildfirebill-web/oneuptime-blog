@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Regex, IPv4, Validation, Patterns, Networking
+Tags: Java, Regex, IPv4, Validation, Pattern, Networking
 
 Description: Learn how to validate IPv4 address strings using regular expressions in Java, with a strict pattern that correctly enforces the 0-255 octet range and rejects leading zeros.
 

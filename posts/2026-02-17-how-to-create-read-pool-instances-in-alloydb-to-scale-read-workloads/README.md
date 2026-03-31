@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, AlloyDB, PostgreSQL, Read Replicas, Scaling
+Tags: GCP, AlloyDB, PostgreSQL, Read Replica, Scaling
 
 Description: Learn how to create and configure read pool instances in AlloyDB for PostgreSQL to horizontally scale read-heavy workloads and improve application performance.
 

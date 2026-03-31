@@ -1,8 +1,8 @@
 # How to Use Multi-Table UPDATE in MySQL
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, UPDATE, Multi-Table, Database
+Tags: MySQL, SQL, DML, Update, Multi-Table, Database
 
 Description: Learn how to update multiple tables simultaneously in a single MySQL statement using multi-table UPDATE syntax, with practical examples and transaction guidance.
 

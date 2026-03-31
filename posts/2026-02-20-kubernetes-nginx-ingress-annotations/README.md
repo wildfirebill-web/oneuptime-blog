@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Nginx, Ingresses, Annotations, Configuration
+Tags: Kubernetes, Nginx, Ingresses, Annotation, Configuration
 
 Description: A practical reference guide to the most useful Nginx Ingress Controller annotations for rate limiting, rewrites, SSL, and more.
 

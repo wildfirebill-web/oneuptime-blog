@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, Constraint, NOT NULL, DEFAULT, Schema
+Tags: MySQL, SQL, DDL, Constraint, Schema
 
 Description: Apply NOT NULL and DEFAULT constraints in MySQL table definitions to enforce data integrity and provide sensible fallback values for missing columns.
 

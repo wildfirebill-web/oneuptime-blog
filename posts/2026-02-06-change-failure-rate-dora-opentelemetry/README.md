@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, DORA Metrics, Change Failure Rate, DevOps
+Tags: OpenTelemetry, DORA Metric, Change Failure Rate, DevOps
 
 Description: Build automated Change Failure Rate measurement using OpenTelemetry to track one of the four key DORA metrics for engineering performance.
 

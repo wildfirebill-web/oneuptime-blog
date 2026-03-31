@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Eviction Policy, Memory Management, Configuration, Best Practices
+Tags: Redis, Eviction Policy, Memory Management, Configuration, Best Practice
 
 Description: A practical guide to selecting the right Redis eviction policy for your use case, covering all eight policies with real-world decision criteria.
 

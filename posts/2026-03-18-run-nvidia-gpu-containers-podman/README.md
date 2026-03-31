@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, NVIDIA, GPU, Containers, CUDA, Deep Learning
+Tags: Podman, NVIDIA, GPU, Container, CUDA, Deep Learning
 
 Description: A complete guide to running NVIDIA GPU-accelerated containers with Podman, covering driver setup, the NVIDIA Container Toolkit, and practical deep learning examples.
 

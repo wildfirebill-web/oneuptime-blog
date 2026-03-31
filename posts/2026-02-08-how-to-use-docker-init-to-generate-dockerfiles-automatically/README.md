@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Init, Dockerfile, Docker Compose, DevOps, Containerization, Developer Tools
+Tags: Docker, Docker Init, Dockerfile, Docker Compose, DevOps, Containerization, Developer Tool
 
 Description: Learn how to use the docker init command to automatically generate Dockerfiles, compose files, and .dockerignore for your projects.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Percent Rank, Window Functions, Sql, Analytics
+Tags: MySQL, Percent Rank, Window Function, SQL, Analytics
 
 Description: Learn how to use MySQL's PERCENT_RANK() window function to compute a row's relative percentile rank as a value between 0 and 1 within a partition.
 

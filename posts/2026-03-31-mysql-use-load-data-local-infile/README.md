@@ -39,7 +39,7 @@ mysql --local-infile=1 -u root -p mydb
 
 Suppose you have a CSV file at `/home/user/customers.csv`:
 
-```
+```text
 1,Alice,alice@example.com,New York
 2,Bob,bob@example.com,Chicago
 3,Carol,carol@example.com,Los Angeles

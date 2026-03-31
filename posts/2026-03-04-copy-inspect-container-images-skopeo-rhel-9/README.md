@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Skopeo, Container Images, Linux
+Tags: RHEL, Skopeo, Container Image, Linux
 
 Description: Learn how to use Skopeo on RHEL to inspect, copy, and manage container images across registries without requiring a local container runtime.
 

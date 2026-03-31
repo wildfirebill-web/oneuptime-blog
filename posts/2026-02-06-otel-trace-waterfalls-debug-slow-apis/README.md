@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Traces, Debugging, Performance
+Tags: OpenTelemetry, Trace, Debugging, Performance
 
 Description: Use OpenTelemetry trace waterfalls to systematically identify and fix the root cause of slow API responses in production environments.
 

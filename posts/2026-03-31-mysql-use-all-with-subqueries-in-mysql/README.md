@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, All Operator, Subquery, Sql, Database
+Tags: MySQL, All Operator, Subquery, SQL, Database
 
 Description: Learn how to use the ALL operator with subqueries in MySQL to compare a value against every row returned by a subquery, with practical examples.
 

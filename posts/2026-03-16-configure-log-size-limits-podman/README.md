@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Configuration, Disk Management
+Tags: Podman, Container, DevOps, Logging, Configuration, Disk Management
 
 Description: Learn how to set log size limits in Podman to prevent container logs from consuming all available disk space, using per-container and system-wide configuration.
 

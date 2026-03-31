@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Monitoring, Observability, Logs, Logging, DevOps
+Tags: Monitoring, Observability, Log, Logging, DevOps
 
 Description: Learn how to create, tune, and act on OneUptime log monitors as an end user- no code or internal tooling knowledge required.
 

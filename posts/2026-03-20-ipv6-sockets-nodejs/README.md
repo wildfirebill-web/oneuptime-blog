@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, IPv6, Sockets, Networking, Dgram, Net Module, Socket Programming
+Tags: Node.js, IPv6, Socket, Networking, Dgram, Net Module, Socket Programming
 
 Description: Create IPv6 TCP and UDP sockets in Node.js using the net and dgram modules, implementing both servers and clients with proper IPv6 address handling.
 

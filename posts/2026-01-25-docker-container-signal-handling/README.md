@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, DevOps, Linux, Signals, Graceful Shutdown
+Tags: Docker, DevOps, Linux, Signal, Graceful Shutdown
 
 Description: Configure proper signal handling in Docker containers to enable graceful shutdowns, handle SIGTERM correctly, and avoid zombie processes with init systems.
 

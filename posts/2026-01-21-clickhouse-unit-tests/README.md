@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Testing, Unit Tests, SQL Testing, Quality Assurance, CI/CD
+Tags: ClickHouse, Testing, Unit Test, SQL Testing, Quality Assurance, CI/CD
 
 Description: A comprehensive guide to writing unit tests for ClickHouse queries, covering testing frameworks, materialized view validation, and CI/CD integration for reliable data pipelines.
 

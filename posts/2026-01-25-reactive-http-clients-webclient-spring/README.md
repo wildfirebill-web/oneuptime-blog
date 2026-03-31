@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring, WebClient, Reactive Programming, HTTP Client, WebFlux, Non-Blocking, Microservices
+Tags: Java, Spring, WebClient, Reactive Programming, HTTP Client, WebFlux, Non-Blocking, Microservice
 
 Description: Learn how to build reactive HTTP clients using Spring WebClient for non-blocking communication between microservices.
 

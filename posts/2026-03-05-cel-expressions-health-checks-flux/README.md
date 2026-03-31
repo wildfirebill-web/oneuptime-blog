@@ -1,6 +1,6 @@
 # How to Use CEL Expressions for Custom Health Checks in Flux Kustomization
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, GitOps, Kubernetes, Kustomize, CEL, Health Check, Monitoring
 

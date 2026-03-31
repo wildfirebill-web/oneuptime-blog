@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Developer Experience, Custom Instrumentation, Metrics
+Tags: OpenTelemetry, Developer Experience, Custom Instrumentation, Metric
 
 Description: Learn how to build custom OpenTelemetry instrumentation that captures developer experience metrics like build times, deploy frequency, and CI feedback loops.
 

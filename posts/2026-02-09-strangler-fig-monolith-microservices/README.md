@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Microservices, Migration
+Tags: Kubernetes, Microservice, Migration
 
 Description: Learn how to incrementally migrate monolithic applications to microservices on Kubernetes using the Strangler Fig pattern for risk-managed decomposition.
 

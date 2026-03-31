@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Service Discovery, Kubernetes, Consul, DNS, Load Balancing, DevOps
+Tags: Microservice, Service Discovery, Kubernetes, Consul, DNS, Load Balancing, DevOps
 
 Description: A practical guide to implementing service discovery in microservices architectures using DNS, Kubernetes services, Consul, and client-side discovery patterns.
 

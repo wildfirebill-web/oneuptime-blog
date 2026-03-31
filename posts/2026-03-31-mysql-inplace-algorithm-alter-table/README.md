@@ -133,7 +133,7 @@ For most index operations, `LOCK=NONE` is safe and preferred.
 
 If you specify `ALGORITHM=INPLACE` for an operation that does not support it, MySQL raises an error:
 
-```
+```text
 ERROR 1846 (0A000): ALGORITHM=INPLACE is not supported.
 Reason: Cannot change column type INPLACE. Try ALGORITHM=COPY.
 ```

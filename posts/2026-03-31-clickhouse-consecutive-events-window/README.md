@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Function, SQL, Analytics, LAG, Streak Detection
+Tags: ClickHouse, Window Function, SQL, Analytics, Lag, Streak Detection
 
 Description: Detect consecutive event sequences like login streaks or error runs using LAG() for gap detection and ROW_NUMBER() minus a group counter to isolate streaks.
 

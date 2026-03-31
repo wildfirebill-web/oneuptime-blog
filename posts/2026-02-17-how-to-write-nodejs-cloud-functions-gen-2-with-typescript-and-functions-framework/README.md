@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, TypeScript, Node.js, Serverless
+Tags: GCP, Cloud Function, TypeScript, Node.js, Serverless
 
 Description: Learn how to write Cloud Functions Gen 2 in TypeScript using the Functions Framework with proper type safety, testing, and deployment configuration.
 

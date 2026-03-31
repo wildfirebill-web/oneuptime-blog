@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Alertmanager, Prometheus, IPv4, Configuration, Monitoring, Alerts
+Tags: Alertmanager, Prometheus, IPv4, Configuration, Monitoring, Alert
 
 Description: Configure Prometheus Alertmanager to listen on a specific IPv4 address, set up routing for alert notifications, and connect Prometheus to the Alertmanager instance.
 

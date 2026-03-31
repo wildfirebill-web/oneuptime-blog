@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, NATS, Message Queues, Pub/Sub, Messaging, Cloud Native
+Tags: IPv6, NATS, Message Queue, Pub/Sub, Messaging, Cloud Native
 
 Description: Learn how to configure NATS Server to listen on IPv6 addresses for client connections, cluster routes, and monitoring, enabling IPv6-native messaging deployments.
 

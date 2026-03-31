@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Flannel, Canal, Kubernetes, Networking, Documentation, Teams
+Tags: Calico, Flannel, Canal, Kubernetes, Networking, Documentation, Team
 
 Description: A guide to creating effective internal documentation for a Canal (Flannel + Calico network policy) deployment that helps operations and development teams understand, operate, and troubleshoot the...
 

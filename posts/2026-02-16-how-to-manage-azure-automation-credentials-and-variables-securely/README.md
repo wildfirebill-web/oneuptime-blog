@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Azure Automation, Security, Credentials, Key Vault, Secrets Management, DevOps
+Tags: Azure, Azure Automation, Security, Credential, Key Vault, Secrets Management, DevOps
 
 Description: Best practices for managing credentials, variables, and secrets in Azure Automation runbooks without exposing sensitive data.
 

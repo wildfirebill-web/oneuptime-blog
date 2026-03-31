@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, CentOS Stream, Containers, RHEL, Enterprise Linux
+Tags: Podman, CentOS Stream, Container, RHEL, Enterprise Linux
 
 Description: Learn how to install and use Podman on CentOS Stream 9 for running containers in enterprise development and production environments.
 

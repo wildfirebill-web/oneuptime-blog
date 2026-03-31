@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Rust, Rate Limiting, Lua Scripts, Tokio
+Tags: Redis, Rust, Rate Limiting, Lua Script, Tokio
 
 Description: Build a Redis-backed rate limiter in Rust using the sliding window and fixed window algorithms with atomic Lua scripts for correctness.
 

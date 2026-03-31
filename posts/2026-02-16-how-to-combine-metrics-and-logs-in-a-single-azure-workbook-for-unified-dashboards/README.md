@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Azure Workbooks, Metrics, Logs, Unified Dashboards, Azure Monitor, KQL
+Tags: Azure, Azure Workbooks, Metric, Log, Unified Dashboards, Azure Monitor, KQL
 
 Description: Learn how to combine Azure Monitor metrics and Log Analytics logs in a single Azure Workbook for unified dashboards that correlate different data types.
 

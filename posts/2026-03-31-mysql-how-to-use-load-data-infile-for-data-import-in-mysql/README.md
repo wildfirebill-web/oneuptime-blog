@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Data Import, Load Data Infile, Sql, Administration
+Tags: MySQL, Data Import, LOAD DATA INFILE, SQL, Administration
 
 Description: Learn how to use MySQL's LOAD DATA INFILE statement to bulk-import data from CSV and text files directly into tables with high performance.
 

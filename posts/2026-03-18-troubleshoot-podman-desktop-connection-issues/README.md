@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Troubleshooting, Debugging, Connectivity
+Tags: Podman, Container, DevOps, Podman Desktop, Troubleshooting, Debugging, Connectivity
 
 Description: Learn how to diagnose and fix common Podman Desktop connection issues including socket errors, machine failures, and provider detection problems.
 

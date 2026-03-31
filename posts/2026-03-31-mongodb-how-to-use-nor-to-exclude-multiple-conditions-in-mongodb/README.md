@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $nor, Logical Operators, Exclusion, Query, Node.js
+Tags: MongoDB, $nor, Logical Operator, Exclusion, Query, Node.js
 
 Description: Learn how to use MongoDB's $nor operator to match documents that fail all of a set of conditions, effectively excluding multiple criteria simultaneously.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Microservices, Standardization, Instrumentation
+Tags: OpenTelemetry, Microservice, Standardization, Instrumentation
 
 Description: A practical strategy for rolling out consistent OpenTelemetry instrumentation across a large fleet of microservices in multiple languages.
 

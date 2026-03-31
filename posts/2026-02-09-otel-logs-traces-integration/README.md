@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Logs, Traces, Observability, Correlation
+Tags: OpenTelemetry, Log, Trace, Observability, Correlation
 
 Description: Learn how to integrate OpenTelemetry logs with traces by injecting trace context into log statements for unified observability and easier troubleshooting across logs and traces.
 

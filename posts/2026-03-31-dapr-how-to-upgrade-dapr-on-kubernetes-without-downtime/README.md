@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Kubernetes, Upgrade, Zero Downtime, Operations
+Tags: Dapr, Kubernetes, Upgrade, Zero Downtime, Operation
 
 Description: Learn how to safely upgrade Dapr on Kubernetes with zero application downtime using Helm and rolling restarts to update sidecar versions.
 

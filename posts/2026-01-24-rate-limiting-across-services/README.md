@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rate Limiting, Microservices, API Gateway, Redis, Distributed Systems, Traffic Management, Throttling
+Tags: Rate Limiting, Microservice, API Gateway, Redis, Distributed System, Traffic Management, Throttling
 
 Description: Learn how to implement and handle rate limiting across distributed microservices, including token bucket algorithms, sliding window counters, and coordinated rate limiting with Redis.
 

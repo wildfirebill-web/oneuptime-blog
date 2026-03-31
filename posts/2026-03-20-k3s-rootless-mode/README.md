@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Security, Rootless, Linux, Containers, DevOps
+Tags: k3s, Kubernetes, Security, Rootless, Linux, Container, DevOps
 
 Description: Learn how to run K3s in rootless mode to improve security by running the entire cluster without root privileges.
 

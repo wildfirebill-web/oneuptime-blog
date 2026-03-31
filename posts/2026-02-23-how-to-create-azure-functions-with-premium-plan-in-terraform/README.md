@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Functions, Serverless, Premium Plan, VNet
+Tags: Terraform, Azure, Function, Serverless, Premium Plan, VNet
 
 Description: Learn how to deploy Azure Functions with Premium Plan using Terraform for enhanced performance, VNet integration, and pre-warmed instances to eliminate cold starts.
 

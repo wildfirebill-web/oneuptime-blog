@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Docker, CI/CD, Container Registry, Build
+Tags: GitHub Action, Docker, CI/CD, Container Registry, Build
 
 Description: Learn how to set up GitHub Actions workflows for building Docker images and pushing them to container registries.
 

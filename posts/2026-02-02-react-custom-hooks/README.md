@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: React, Hooks, Custom Hooks, JavaScript
+Tags: React, Hook, Custom Hooks, JavaScript
 
 Description: A comprehensive guide to building custom hooks in React.
 

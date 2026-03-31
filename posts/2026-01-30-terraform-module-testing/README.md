@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Testing, Modules, IaC
+Tags: Terraform, Testing, Module, IaC
 
 Description: A practical guide to testing Terraform modules using the native test framework and Terratest, covering unit tests, integration tests, and test fixtures.
 

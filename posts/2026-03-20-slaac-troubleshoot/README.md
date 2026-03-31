@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SLAAC, Troubleshooting, IPv6, Router Advertisement, Diagnostics
+Tags: SLAAC, Troubleshooting, IPv6, Router Advertisement, Diagnostic
 
 Description: Troubleshoot common SLAAC failures including no address received, DAD failures, missing default routes, and incorrect prefix configuration using step-by-step diagnostic procedures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps
+Tags: Podman, Installation, Linux, Container, DevOps
 
 Description: A comprehensive checklist for verifying your Podman installation, covering version checks, rootless support, networking, storage, and end-to-end container tests.
 

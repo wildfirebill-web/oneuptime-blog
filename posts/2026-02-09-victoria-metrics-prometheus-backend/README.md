@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VictoriaMetrics, Prometheus, Kubernetes, Metrics, Observability
+Tags: VictoriaMetrics, Prometheus, Kubernetes, Metric, Observability
 
 Description: Learn how to deploy VictoriaMetrics as a drop-in replacement for Prometheus with better resource efficiency, long-term storage, and PromQL compatibility.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Failover, Sentinel, High Availability, Testing, Chaos Engineering
+Tags: Redis, Failover, Sentinel, High Availability, Testing
 
 Description: Learn how to test Redis failover scenarios using Docker Compose, Redis Sentinel, and chaos testing to verify your application handles primary failures gracefully.
 

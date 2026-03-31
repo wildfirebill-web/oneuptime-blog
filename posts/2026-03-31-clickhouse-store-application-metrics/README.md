@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Metrics, Observability, Time Series, Monitoring
+Tags: ClickHouse, Metric, Observability, Time Series, Monitoring
 
 Description: Learn how to store and query application metrics in ClickHouse with a schema that supports counters, gauges, and histograms at scale.
 

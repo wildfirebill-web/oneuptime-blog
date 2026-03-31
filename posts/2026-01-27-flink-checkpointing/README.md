@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Flink, Checkpointing, Stream Processing, Fault Tolerance, State Management, RocksDB, Savepoints, Recovery, Big Data
+Tags: Apache Flink, Checkpointing, Stream Processing, Fault Tolerance, State Management, RocksDB, Savepoint, Recovery, Big Data
 
 Description: A comprehensive guide to configuring Apache Flink checkpointing for fault-tolerant stream processing with state backends, incremental checkpoints, and recovery strategies.
 

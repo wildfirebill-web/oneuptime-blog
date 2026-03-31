@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SQS, Message Queues, Retry Logic, Dead Letter Queue, Error Handling, Node.js, Python
+Tags: AWS, SQS, Message Queue, Retry Logic, Dead Letter Queue, Error Handling, Node.js, Python
 
 Description: Learn how to implement robust retry logic with Amazon SQS.
 

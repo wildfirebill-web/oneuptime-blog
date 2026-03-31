@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud SQL, MySQL, Read Replicas, Database Scaling
+Tags: GCP, Cloud SQL, MySQL, Read Replica, Database Scaling
 
 Description: Learn how to create, configure, and manage read replicas in Cloud SQL for MySQL to scale read-heavy workloads and improve application performance.
 

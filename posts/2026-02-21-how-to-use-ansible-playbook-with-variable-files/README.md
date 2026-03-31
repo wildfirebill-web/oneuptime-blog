@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Configuration Management, DevOps
+Tags: Ansible, Variable, Configuration Management, DevOps
 
 Description: Learn how to use external variable files in Ansible playbooks with vars_files, include_vars, and extra-vars for flexible configuration management.
 

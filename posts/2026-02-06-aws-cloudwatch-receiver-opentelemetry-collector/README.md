@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, AWS, CloudWatch, Metrics, Cloud Monitoring, Observability
+Tags: OpenTelemetry, Collector, AWS, CloudWatch, Metric, Cloud Monitoring, Observability
 
 Description: Configure the AWS CloudWatch receiver in OpenTelemetry Collector to pull metrics from AWS CloudWatch, monitor AWS services, consolidate cloud telemetry.
 

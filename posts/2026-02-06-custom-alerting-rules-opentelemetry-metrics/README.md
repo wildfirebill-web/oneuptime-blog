@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Alerting, Metrics, Custom Rules, Observability, Monitoring, Incident Response
+Tags: OpenTelemetry, Alerting, Metric, Custom Rules, Observability, Monitoring, Incident Response
 
 Description: Learn how to build effective custom alerting rules from OpenTelemetry metrics, covering alert design principles, multi-condition rules, and strategies to reduce alert fatigue.
 

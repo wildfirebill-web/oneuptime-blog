@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Performance, Linux
+Tags: Portainer, Docker, Container, Performance, Linux
 
 Description: Learn how to configure the shared memory (shm_size) for Docker containers in Portainer, which is required by browsers, databases, and AI/ML workloads.
 

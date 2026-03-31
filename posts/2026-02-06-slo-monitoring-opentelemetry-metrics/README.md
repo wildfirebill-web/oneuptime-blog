@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, SLO, SLI, Metrics, Site Reliability Engineering, Monitoring, Error Budget
+Tags: OpenTelemetry, SLO, SLI, Metric, Site Reliability Engineering, Monitoring, Error Budget
 
 Description: Learn how to define service level objectives, compute error budgets, and build SLO monitoring dashboards using OpenTelemetry metrics and the Collector.
 

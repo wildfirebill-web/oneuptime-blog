@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, PostgreSQL, Bindings, Database, Microservices
+Tags: Dapr, PostgreSQL, Binding, Database, Microservice
 
 Description: Learn how to use the Dapr PostgreSQL output binding to execute SQL queries and commands against a PostgreSQL database from your microservices.
 

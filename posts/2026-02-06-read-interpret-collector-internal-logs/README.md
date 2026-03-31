@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Logs, Troubleshooting, Debugging, Monitoring
+Tags: OpenTelemetry, Collector, Log, Troubleshooting, Debugging, Monitoring
 
 Description: Master the art of reading and interpreting OpenTelemetry Collector internal logs to diagnose issues, monitor performance, and understand collector behavior.
 

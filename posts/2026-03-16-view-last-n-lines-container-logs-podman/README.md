@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging
+Tags: Podman, Container, DevOps, Logging
 
 Description: Learn how to use the --tail flag in Podman to view only the last N lines of container logs, making it easier to focus on recent output without scrolling through the entire log history.
 

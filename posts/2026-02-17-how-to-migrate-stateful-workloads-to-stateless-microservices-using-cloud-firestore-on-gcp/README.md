@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Firestore, Microservices, Stateless Architecture, Migration, Cloud Run
+Tags: GCP, Cloud Firestore, Microservice, Stateless Architecture, Migration, Cloud Run
 
 Description: Externalize application state from in-memory storage to Cloud Firestore to transform stateful services into stateless microservices that scale horizontally on Google Cloud Platform.
 

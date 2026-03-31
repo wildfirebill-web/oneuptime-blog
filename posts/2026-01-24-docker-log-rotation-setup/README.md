@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Logging, DevOps, Disk Management, Operations
+Tags: Docker, Logging, DevOps, Disk Management, Operation
 
 Description: Prevent disk exhaustion from Docker container logs by configuring proper log rotation at the daemon level, per-container settings, and integrating with external logging systems.
 

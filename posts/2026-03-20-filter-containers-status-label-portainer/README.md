@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Filtering, Labels, Operations, DevOps
+Tags: Portainer, Docker, Filtering, Labels, Operation, DevOps
 
 Description: Learn how to filter containers by running status, labels, and names in Portainer to quickly find specific containers in environments with many running workloads.
 

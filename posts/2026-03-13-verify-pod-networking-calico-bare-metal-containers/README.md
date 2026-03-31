@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Containers, Verification
+Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Container, Verification
 
 Description: A systematic verification guide for confirming Calico pod networking is fully operational on a bare metal Kubernetes cluster running containers.
 

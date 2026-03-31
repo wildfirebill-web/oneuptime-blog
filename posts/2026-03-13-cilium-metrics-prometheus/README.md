@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, Prometheus, Metrics, Observability
+Tags: Cilium, Kubernetes, Prometheus, Metric, Observability
 
 Description: Configure Prometheus to scrape Cilium and Hubble metrics, understand the key metrics for cluster health monitoring, and set up alerting rules for critical Cilium conditions.
 

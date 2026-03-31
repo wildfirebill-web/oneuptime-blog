@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, ZDIFFSTORE, Set Difference, Commands
+Tags: Redis, Sorted Set, ZDIFFSTORE, Set Difference, Command
 
 Description: Learn how to use ZDIFFSTORE in Redis to compute the difference between multiple sorted sets and store the result in a destination key.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Decorators, Functions, Advanced Python, Clean Code
+Tags: Python, Decorator, Function, Advanced Python, Clean Code
 
 Description: Learn how to create and use decorators in Python to modify function behavior, implement logging, authentication, caching, and write cleaner, more maintainable code.
 

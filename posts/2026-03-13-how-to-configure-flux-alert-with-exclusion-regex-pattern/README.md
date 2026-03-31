@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Alerts, Regex, Event Filtering
+Tags: Flux, Kubernetes, GitOps, Alert, Regex, Event Filtering
 
 Description: Learn how to use exclusion regex patterns in Flux alerts to suppress noisy events and keep notification channels focused on actionable information.
 

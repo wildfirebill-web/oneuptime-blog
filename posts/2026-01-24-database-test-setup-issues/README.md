@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Database Testing, Test Setup, PostgreSQL, MySQL, MongoDB, Jest, Integration Testing, Docker, Test Fixtures
+Tags: Database Testing, Test Setup, PostgreSQL, MySQL, MongoDB, Jest, Integration Testing, Docker, Test Fixture
 
 Description: Learn how to troubleshoot and resolve common database test setup issues including connection problems, data isolation, migration failures, and performance bottlenecks.
 

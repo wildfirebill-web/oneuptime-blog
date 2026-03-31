@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Storage, Persistent Volumes
+Tags: Rancher, Kubernetes, Storage, Persistent Volume
 
 Description: Learn how to configure Local Path Provisioner in Rancher for dynamic local storage provisioning on Kubernetes nodes.
 

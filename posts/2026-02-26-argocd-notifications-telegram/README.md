@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Telegram, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Telegram, Notification
 
 Description: Learn how to configure ArgoCD to send deployment notifications to Telegram groups and channels using the Telegram Bot API with formatted messages.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Feature Flags, DevOps
+Tags: Kubernetes, Feature Flag, DevOps
 
 Description: Learn how to decouple code deployment from feature release using feature flags in Kubernetes, enabling safer rollouts, instant rollback, and gradual feature exposure without infrastructure changes.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bash, Shell Scripting, Troubleshooting, Debugging, Linux, Syntax Errors
+Tags: Bash, Shell Scripting, Troubleshooting, Debugging, Linux, Syntax Error
 
 Description: Learn how to diagnose and fix the 'unexpected end of file' error in Bash scripts, including unclosed quotes, missing statement terminators, and here-document issues.
 

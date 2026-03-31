@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Python, Workflows, Microservices, Orchestration
+Tags: Dapr, Python, Workflow, Microservice, Orchestration
 
 Description: Learn how to build durable, fault-tolerant workflows using the Dapr Python SDK with practical examples for orchestration and activity patterns.
 

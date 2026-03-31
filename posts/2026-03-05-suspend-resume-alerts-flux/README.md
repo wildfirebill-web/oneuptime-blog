@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Maintenance
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Maintenance
 
 Description: Learn how to temporarily suspend and resume Flux alerts during maintenance windows or debugging sessions.
 

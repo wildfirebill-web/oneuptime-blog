@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Debugging, Best Practice, Functions, Common Pitfalls
+Tags: Python, Debugging, Best Practice, Function, Common Pitfalls
 
 Description: Learn why mutable default arguments in Python cause unexpected behavior and how to fix this common bug with the None pattern.
 

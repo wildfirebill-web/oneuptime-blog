@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Backup, Testing, Database Administration
+Tags: MongoDB, Backup, Testing, Database Administration
 
 Description: Learn how to implement a regular backup integrity testing process for MongoDB, including automated restore tests, data validation, and runbook documentation.
 

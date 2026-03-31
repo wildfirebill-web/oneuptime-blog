@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Inventory, Back-in-Stock, Notifications
+Tags: OpenTelemetry, Inventory, Back-in-Stock, Notification
 
 Description: Instrument product availability checking and back-in-stock notification workflows with OpenTelemetry for reliable inventory visibility.
 

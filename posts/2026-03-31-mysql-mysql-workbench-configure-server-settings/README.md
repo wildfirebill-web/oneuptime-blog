@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Workbench, Configuration, Server, Settings
+Tags: MySQL, Workbench, Configuration, Server, Setting
 
 Description: Learn how to use MySQL Workbench to view and modify MySQL server configuration variables, edit the options file, and apply runtime changes graphically.
 

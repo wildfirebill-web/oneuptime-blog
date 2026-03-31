@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Scripting, Archival, Data Management, Operations
+Tags: MongoDB, Scripting, Archival, Data Management, Operation
 
 Description: Learn how to write a Python script to archive old MongoDB documents to a separate collection or S3 bucket before deleting them to manage collection size and retention.
 

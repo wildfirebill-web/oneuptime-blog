@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kubernetes, Audit Logs, Security, Observability, Logging
+Tags: OpenTelemetry, Kubernetes, Audit Log, Security, Observability, Logging
 
 Description: A practical guide to collecting and processing Kubernetes audit logs using the OpenTelemetry Collector for security monitoring and compliance.
 

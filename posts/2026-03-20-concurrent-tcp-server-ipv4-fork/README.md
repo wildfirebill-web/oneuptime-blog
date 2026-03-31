@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, IPv4, Networking, C, Linux, Sockets, Concurrency
+Tags: TCP, IPv4, Networking, C, Linux, Socket, Concurrency
 
 Description: Learn how to build a concurrent TCP server for IPv4 using the fork() system call to handle multiple client connections simultaneously.
 

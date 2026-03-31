@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, K0s, Controller, Worker, Architecture
+Tags: Flux CD, Kubernetes, GitOps, k0s, Controller, Worker, Architecture
 
 Description: Deploy Flux CD on k0s Kubernetes with a separated controller and worker node architecture for clean control-plane and data-plane separation.
 

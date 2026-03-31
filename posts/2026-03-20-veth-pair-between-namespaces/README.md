@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Namespaces, veth, iproute2, Networking, Containers, Virtual Networking
+Tags: Linux, Network Namespaces, veth, iproute2, Networking, Container, Virtual Networking
 
 Description: Create virtual ethernet (veth) pairs and move each end into separate network namespaces to establish direct connectivity between isolated network environments.
 

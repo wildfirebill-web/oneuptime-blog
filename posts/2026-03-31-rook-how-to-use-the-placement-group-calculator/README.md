@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Placement Groups, Performance, Storage Tuning, Kubernetes
+Tags: Rook, Ceph, Placement Group, Performance, Storage Tuning, Kubernetes
 
 Description: Learn how to use the Ceph placement group calculator to determine optimal PG counts for your Ceph pools based on OSD count, pool count, and replication factor.
 

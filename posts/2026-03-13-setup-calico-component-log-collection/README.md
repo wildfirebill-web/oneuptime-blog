@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Logging, Operations
+Tags: Calico, Kubernetes, Networking, Logging, Operation
 
 Description: Set up centralized log collection for Calico components including calico-node, calico-typha, and calico-kube-controllers, with log level configuration and structured output for log aggregation...
 

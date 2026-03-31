@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Clustered Collections, Performance, Indexes, Storage
+Tags: MongoDB, Clustered Collection, Performance, Index, Storage
 
 Description: Learn how to create and use MongoDB clustered collections to co-locate documents by _id, reducing storage overhead and improving range query performance.
 

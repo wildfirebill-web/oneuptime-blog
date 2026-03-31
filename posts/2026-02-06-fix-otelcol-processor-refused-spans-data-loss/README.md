@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Metrics, Data Loss, Backpressure, Memory, Troubleshooting, Span
+Tags: OpenTelemetry, Collector, Metric, Data Loss, Backpressure, Memory, Troubleshooting, Span
 
 Description: Diagnose and resolve the otelcol_processor_refused_spans metric in OpenTelemetry Collector to prevent trace data loss and pipeline backpressure issues.
 

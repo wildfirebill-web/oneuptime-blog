@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Multisite, Object Storage, Rgw, Kubernetes
+Tags: Rook, Ceph, Multisite, Object Storage, RGW, Kubernetes
 
 Description: Configure Ceph RGW multisite replication across multiple Rook clusters using realms, zone groups, and zones for geo-distributed object storage.
 

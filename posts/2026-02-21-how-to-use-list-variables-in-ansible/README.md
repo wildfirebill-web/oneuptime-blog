@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Lists, Data Structures, DevOps
+Tags: Ansible, Variable, List, Data Structure, DevOps
 
 Description: Learn how to define, iterate over, filter, transform, and combine list variables in Ansible playbooks for managing packages, users, and configurations.
 

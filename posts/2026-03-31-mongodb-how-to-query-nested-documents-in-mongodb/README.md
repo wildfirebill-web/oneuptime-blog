@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Nested Documents, Dot Notation, Embedded Documents, Query
+Tags: MongoDB, Nested Document, Dot Notation, Embedded Document, Query
 
 Description: Learn how to query nested and embedded documents in MongoDB using dot notation, $elemMatch, and nested field filters for precise subdocument matching.
 

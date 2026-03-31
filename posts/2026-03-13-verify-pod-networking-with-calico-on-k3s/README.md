@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Verification, K3s, CNI
+Tags: Calico, Kubernetes, Networking, Verification, k3s, CNI
 
 Description: Learn how to verify that Calico pod networking is working correctly on a K3s cluster through systematic health and connectivity checks.
 

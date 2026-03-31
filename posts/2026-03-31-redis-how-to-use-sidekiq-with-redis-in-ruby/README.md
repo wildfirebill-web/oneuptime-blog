@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Ruby, Sidekiq, Background Jobs, Rails, Job Queue
+Tags: Redis, Ruby, Sidekiq, Background Job, Rails, Job Queue
 
 Description: Learn how to use Sidekiq with Redis in Ruby for background job processing, including worker setup, job enqueueing, retries, scheduling, and monitoring.
 

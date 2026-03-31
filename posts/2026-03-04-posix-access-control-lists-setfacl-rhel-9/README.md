@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, ACL, Setfacl, Permissions, Linux
+Tags: RHEL, ACL, Setfacl, Permission, Linux
 
 Description: Learn how to use setfacl and getfacl on RHEL to configure POSIX Access Control Lists for fine-grained file permission management beyond traditional Unix permissions.
 

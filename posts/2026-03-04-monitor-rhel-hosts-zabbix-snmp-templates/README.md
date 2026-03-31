@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Zabbix, SNMP, Monitoring, Templates, Linux
+Tags: RHEL, Zabbix, SNMP, Monitoring, Template, Linux
 
 Description: Use Zabbix SNMP templates to monitor RHEL hosts when installing a Zabbix agent is not possible, collecting CPU, memory, disk, and network metrics via SNMP.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Grafana, Prometheus, Monitoring, Observability, AMP, Metrics
+Tags: AWS, Grafana, Prometheus, Monitoring, Observability, AMP, Metric
 
 Description: Learn how to connect Amazon Managed Grafana to Amazon Managed Prometheus for querying and visualizing Prometheus metrics in dashboards
 

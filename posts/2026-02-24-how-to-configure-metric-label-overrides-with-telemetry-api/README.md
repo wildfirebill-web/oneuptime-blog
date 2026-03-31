@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Telemetry API, Metrics, Prometheus, Cardinality
+Tags: Istio, Telemetry API, Metric, Prometheus, Cardinality
 
 Description: How to add, remove, and modify metric labels in Istio using the Telemetry API's tagOverrides feature to control cardinality and enrich metrics.
 

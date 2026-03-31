@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, Cleanup, DevOps
+Tags: Portainer, Kubernetes, Namespace, Cleanup, DevOps
 
 Description: Learn how to safely remove Kubernetes namespaces and all their resources through the Portainer UI.
 

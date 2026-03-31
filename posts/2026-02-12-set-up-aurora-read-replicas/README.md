@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Aurora, Read Replicas, Database, Scaling
+Tags: AWS, Aurora, Read Replica, Database, Scaling
 
 Description: Learn how to add and manage Aurora read replicas for horizontal read scaling, including auto scaling, endpoint configuration, and application routing.
 

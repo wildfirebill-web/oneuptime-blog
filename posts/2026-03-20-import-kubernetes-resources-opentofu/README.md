@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Kubernetes, Import, Namespaces, ConfigMaps
+Tags: OpenTofu, Terraform, Kubernetes, Import, Namespace, ConfigMap
 
 Description: Learn how to import existing Kubernetes resources including namespaces, ConfigMaps, Secrets, and Deployments into OpenTofu state using the Kubernetes provider.
 

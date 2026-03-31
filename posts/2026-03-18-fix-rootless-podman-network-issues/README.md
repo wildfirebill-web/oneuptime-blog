@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Rootless, Troubleshooting
+Tags: Podman, Container, DevOps, Networking, Rootless, Troubleshooting
 
 Description: A practical guide to diagnosing and fixing common networking problems in rootless Podman containers, including DNS failures, port conflicts, and inter-container communication.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Terraform, GitHub Actions, CI/CD, Cost Estimation, Infrastructure as Code
+Tags: GCP, Terraform, GitHub Action, CI/CD, Cost Estimation, Infrastructure as Code
 
 Description: Set up automated Terraform plan reviews in GitHub Actions for GCP deployments, including plan output as PR comments, cost estimation with Infracost, and automated approval workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Naming, Random, Resource Names, Conventions
+Tags: OpenTofu, Naming, Random, Resource Names, Convention
 
 Description: Learn how to create consistent, unique resource names in OpenTofu using random suffixes, naming conventions, and the format function for provider-specific constraints.
 

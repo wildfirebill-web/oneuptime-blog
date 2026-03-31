@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, CRIU, Containers, Checkpointing, DevOps
+Tags: Podman, CRIU, Container, Checkpointing, DevOps
 
 Description: Learn how to use Podman to checkpoint a running container, freezing its entire runtime state to disk so it can be restored later for fast restarts, debugging, or migration.
 

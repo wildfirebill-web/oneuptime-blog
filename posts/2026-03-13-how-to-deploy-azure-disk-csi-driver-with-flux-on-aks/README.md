@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Azure, AKS, CSI, Azure Disk, Storage, Persistent Volumes
+Tags: Flux, Kubernetes, GitOps, Azure, AKS, CSI, Azure Disk, Storage, Persistent Volume
 
 Description: Learn how to deploy and configure the Azure Disk CSI Driver on AKS using Flux CD for GitOps-managed persistent storage.
 

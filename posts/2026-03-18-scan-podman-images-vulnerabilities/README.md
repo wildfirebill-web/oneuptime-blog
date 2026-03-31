@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Vulnerability Scanning, Trivy
+Tags: Podman, Container, DevOps, Security, Vulnerability Scanning, Trivy
 
 Description: Learn how to scan Podman container images for known vulnerabilities using open-source tools like Trivy and Grype.
 

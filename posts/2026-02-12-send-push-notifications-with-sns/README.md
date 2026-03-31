@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SNS, Push Notifications, Mobile
+Tags: AWS, SNS, Push Notification, Mobile
 
 Description: Learn how to send push notifications to iOS, Android, and web applications using Amazon SNS, including platform setup, device registration, and targeted messaging.
 

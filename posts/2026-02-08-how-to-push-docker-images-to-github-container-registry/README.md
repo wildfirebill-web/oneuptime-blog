@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, GitHub, GHCR, GitHub Container Registry, CI/CD, DevOps, GitHub Actions
+Tags: Docker, GitHub, GHCR, GitHub Container Registry, CI/CD, DevOps, GitHub Action
 
 Description: Learn how to push Docker images to GitHub Container Registry with personal access tokens, GitHub Actions, and repository-level access control.
 

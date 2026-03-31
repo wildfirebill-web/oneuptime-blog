@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Provisioners
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Provisioner
 
 Description: Learn how to pass resource attributes, variables, and computed values to provisioner scripts in OpenTofu using environment variables, interpolation, and the file provisioner.
 

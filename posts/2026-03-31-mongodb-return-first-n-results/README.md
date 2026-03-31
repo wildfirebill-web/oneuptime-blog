@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, limit, Query, Cursor, Performance
+Tags: MongoDB, Limit, Query, Cursor, Performance
 
 Description: Learn how to return only the first N documents from a MongoDB query using limit(), and how to combine it with sort() for predictable top-N results.
 

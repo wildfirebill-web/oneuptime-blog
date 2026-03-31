@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Disk Full, Troubleshooting, Storage, Operations
+Tags: ClickHouse, Disk Full, Troubleshooting, Storage, Operation
 
 Description: Learn how to diagnose and resolve ClickHouse disk full errors quickly, recover write availability, and prevent recurrence.
 

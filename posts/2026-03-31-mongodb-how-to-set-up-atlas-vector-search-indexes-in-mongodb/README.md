@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Atlas Search, Vector Search, Ai
+Tags: MongoDB, Atlas Search, Vector Search, AI
 
 Description: Learn how to create and query Atlas Vector Search indexes in MongoDB for semantic search, recommendation systems, and AI-powered similarity search using embeddings.
 

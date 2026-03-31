@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Network Scanning, Ipaddress, Hosts, Enumeration
+Tags: Python, IPv6, Network Scanning, Ipaddress, Host, Enumeration
 
 Description: Enumerate hosts in IPv6 networks using Python, handling the unique challenges of large address spaces with generators and sampling techniques.
 

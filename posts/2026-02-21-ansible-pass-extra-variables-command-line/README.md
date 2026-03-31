@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Command Line, Playbook
+Tags: Ansible, Variable, Command Line, Playbook
 
 Description: Learn multiple ways to pass extra variables to Ansible playbooks using the command line, including key-value pairs, JSON, and files.
 

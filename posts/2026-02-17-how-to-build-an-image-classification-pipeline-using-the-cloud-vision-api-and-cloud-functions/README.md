@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Vision API, Cloud Functions, Serverless, Image Classification
+Tags: GCP, Cloud Vision API, Cloud Function, Serverless, Image Classification
 
 Description: Build a serverless image classification pipeline using Google Cloud Vision API and Cloud Functions that automatically categorizes images on upload to Cloud Storage.
 

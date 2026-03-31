@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, s390x, IBM Z
+Tags: Podman, Container, DevOps, Multi-Architecture, s390x, IBM Z
 
 Description: Learn how to build container images for IBM Z (s390x) architecture using Podman with QEMU emulation, including setup, optimization, and testing.
 

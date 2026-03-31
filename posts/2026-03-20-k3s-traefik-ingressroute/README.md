@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Traefik, Ingress, Networking, DevOps
+Tags: k3s, Kubernetes, Traefik, Ingress, Networking, DevOps
 
 Description: Learn how to use Traefik's IngressRoute CRD in K3s for advanced routing configurations beyond what standard Kubernetes Ingress supports.
 

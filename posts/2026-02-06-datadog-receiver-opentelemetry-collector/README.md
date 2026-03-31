@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Datadog, Migration, Metrics, Traces, APM
+Tags: OpenTelemetry, Collector, Datadog, Migration, Metric, Trace, APM
 
 Description: Complete guide to configuring the Datadog receiver in OpenTelemetry Collector for seamless migration from Datadog agents while maintaining compatibility with existing instrumentation.
 

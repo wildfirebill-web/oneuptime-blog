@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Messaging, Patterns, Integration, EIP
+Tags: Messaging, Pattern, Integration, EIP
 
 Description: A practical guide to implementing the Message Splitter pattern for breaking composite messages into individual parts for parallel processing.
 

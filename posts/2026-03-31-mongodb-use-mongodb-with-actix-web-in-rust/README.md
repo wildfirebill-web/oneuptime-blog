@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Rust, Actix-Web, REST, API
+Tags: MongoDB, Rust, Actix-web, REST, API
 
 Description: Learn how to wire a MongoDB client into an Actix-Web application as shared application data and build a REST API with typed document handlers.
 

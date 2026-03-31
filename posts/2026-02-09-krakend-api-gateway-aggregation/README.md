@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API Gateway, KrakenD, Microservices
+Tags: API Gateway, KrakenD, Microservice
 
 Description: Learn how to deploy KrakenD API gateway for high-performance API aggregation with configuration examples for endpoint composition, rate limiting, and response manipulation.
 

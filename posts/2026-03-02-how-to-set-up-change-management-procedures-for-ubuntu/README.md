@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Change Management, DevOps, Operations, Compliance
+Tags: Ubuntu, Change Management, DevOps, Operation, Compliance
 
 Description: Establish change management procedures for Ubuntu server environments, covering change tracking, pre-change backups, rollback procedures, and audit trails for controlled deployments.
 

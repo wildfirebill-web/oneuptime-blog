@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Storage, Security, Permissions, Troubleshooting
+Tags: Kubernetes, Storage, Security, Permission, Troubleshooting
 
 Description: Learn how to fix permission denied errors when mounting volumes in Kubernetes pods. This guide covers fsGroup, securityContext, init containers, and common permission issues.
 

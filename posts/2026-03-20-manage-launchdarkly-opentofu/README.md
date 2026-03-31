@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, LaunchDarkly, Feature Flags, Feature Management, Releases
+Tags: OpenTofu, LaunchDarkly, Feature Flag, Feature Management, Release
 
 Description: Learn how to manage LaunchDarkly projects, environments, feature flags, and targeting rules using OpenTofu for code-driven feature flag management.
 

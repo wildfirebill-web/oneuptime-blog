@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana Loki, Promtail, JSON Parsing, Structured Logs, Log Processing, Pipeline Stages
+Tags: Grafana Loki, Promtail, JSON Parsing, Structured Log, Log Processing, Pipeline Stage
 
 Description: A comprehensive guide to parsing JSON logs with Promtail for Grafana Loki, covering JSON extraction, nested fields, timestamp handling, and best practices for structured log processing.
 

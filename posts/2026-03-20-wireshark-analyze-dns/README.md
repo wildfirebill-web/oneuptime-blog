@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, DNS, IPv4, Networking, Diagnostics, Packet Analysis
+Tags: Wireshark, DNS, IPv4, Networking, Diagnostic, Packet Analysis
 
 Description: Use Wireshark to capture and analyze DNS query and response packets, view resolved addresses, identify failures, and measure DNS lookup latency.
 

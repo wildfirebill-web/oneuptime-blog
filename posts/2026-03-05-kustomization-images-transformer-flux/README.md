@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Kustomize, Kustomization, Images, Container Registry
+Tags: Flux CD, GitOps, Kubernetes, Kustomize, Kustomization, Image, Container Registry
 
 Description: Learn how to use the images field in kustomization.yaml to override container image names, tags, and digests across all resources managed by Flux CD.
 

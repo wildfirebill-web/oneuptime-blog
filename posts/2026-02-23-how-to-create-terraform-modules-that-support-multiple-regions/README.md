@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Multi-Region, AWS, Disaster Recovery, Infrastructure as Code
+Tags: Terraform, Module, Multi-Region, AWS, Disaster Recovery, Infrastructure as Code
 
 Description: Design Terraform modules that deploy infrastructure across multiple regions for high availability, disaster recovery, and global user proximity with practical patterns.
 

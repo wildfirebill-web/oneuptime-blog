@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OPNsense, IPv6, Troubleshooting, Diagnostics, Networking
+Tags: OPNsense, IPv6, Troubleshooting, Diagnostic, Networking
 
 Description: Diagnose and fix IPv6 connectivity problems on OPNsense using built-in diagnostics, packet capture, and log analysis.
 

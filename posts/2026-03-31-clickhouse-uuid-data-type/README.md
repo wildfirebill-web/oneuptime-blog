@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, UUID, Identifier
+Tags: ClickHouse, SQL, Data Type, UUID, Identifier
 
 Description: Learn how to use the UUID data type in ClickHouse - including 16-byte storage, generateUUIDv4(), string conversion, and efficient querying by UUID.
 

@@ -60,7 +60,7 @@ If the connection is refused or times out, the issue is network-level - check fi
 
 A typical connection string looks like:
 
-```
+```text
 mongodb://username:password@host:27017/dbname?authSource=admin
 ```
 
@@ -71,7 +71,7 @@ Common mistakes:
 
 For replica sets, ensure all members are listed:
 
-```
+```text
 mongodb://host1:27017,host2:27017,host3:27017/?replicaSet=myRS
 ```
 

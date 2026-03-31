@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Teams, RBAC, Access Control
+Tags: Portainer, API, Team, RBAC, Access Control
 
 Description: Learn how to create teams, manage memberships, and assign environment access using the Portainer REST API.
 

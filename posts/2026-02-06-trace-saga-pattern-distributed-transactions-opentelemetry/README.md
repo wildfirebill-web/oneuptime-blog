@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Saga Pattern, Distributed Transactions, Microservices, Tracing, Observability, Event-Driven
+Tags: OpenTelemetry, Saga Pattern, Distributed Transaction, Microservice, Tracing, Observability, Event-Driven
 
 Description: Learn how to instrument saga pattern distributed transactions with OpenTelemetry to trace multi-step workflows, compensating actions, and failure scenarios across microservices.
 

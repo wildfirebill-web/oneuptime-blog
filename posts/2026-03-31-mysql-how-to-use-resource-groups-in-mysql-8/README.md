@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Resource Groups, Performance, Database Administration
+Tags: MySQL, Resource Group, Performance, Database Administration
 
 Description: Learn how to create and manage Resource Groups in MySQL 8 to control CPU thread priorities and improve workload isolation.
 

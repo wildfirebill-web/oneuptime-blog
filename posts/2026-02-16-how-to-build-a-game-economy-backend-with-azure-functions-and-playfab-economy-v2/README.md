@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, PlayFab, Game Economy, Virtual Currency, In-App Purchases, Game Development, Economy V2
+Tags: Azure Function, PlayFab, Game Economy, Virtual Currency, In-App Purchases, Game Development, Economy V2
 
 Description: Build a game economy backend using Azure Functions for custom logic and PlayFab Economy V2 for inventory, currency, and marketplace management.
 

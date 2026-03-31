@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, UNION, Set Operations, SQL, Querying
+Tags: MySQL, UNION, Set Operation, SQL, Querying
 
 Description: Learn how to use UNION in MySQL to combine the results of multiple SELECT statements into a single result set while removing duplicate rows.
 

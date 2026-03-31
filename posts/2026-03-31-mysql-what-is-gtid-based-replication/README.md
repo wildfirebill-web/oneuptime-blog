@@ -16,7 +16,7 @@ GTID (Global Transaction Identifier) replication is a MySQL replication mode whe
 
 A GTID has the format `source_uuid:transaction_number`:
 
-```
+```text
 3E11FA47-71CA-11E1-9E33-C80AA9429562:1
 3E11FA47-71CA-11E1-9E33-C80AA9429562:2-100
 ```

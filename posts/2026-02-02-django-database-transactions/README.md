@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Python, Django, Database, Transactions, PostgreSQL, Atomic
+Tags: Python, Django, Database, Transaction, PostgreSQL, Atomic
 
 Description: A comprehensive guide to handling database transactions in Django, covering atomic operations, savepoints, transaction hooks, error handling, and best practices for data integrity.
 

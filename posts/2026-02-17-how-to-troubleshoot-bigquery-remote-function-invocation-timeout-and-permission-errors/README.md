@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Remote Functions, Cloud Functions, Timeout, Permissions
+Tags: GCP, BigQuery, Remote Functions, Cloud Function, Timeout, Permission
 
 Description: Troubleshoot BigQuery remote function invocation failures including timeout errors, permission denied issues, and Cloud Function configuration problems.
 

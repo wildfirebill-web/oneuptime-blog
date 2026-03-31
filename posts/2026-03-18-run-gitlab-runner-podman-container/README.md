@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, GitLab, CI/CD, Runner
+Tags: Podman, Container, DevOps, GitLab, CI/CD, Runner
 
 Description: Learn how to run GitLab Runner in a Podman container to execute CI/CD pipelines with persistent configuration and custom executors.
 

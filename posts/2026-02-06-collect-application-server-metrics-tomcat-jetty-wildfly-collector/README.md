@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Tomcat, Jetty, WildFly, JMX, Java, Application Server, Metrics, Observability
+Tags: OpenTelemetry, Collector, Tomcat, Jetty, WildFly, JMX, Java, Application Server, Metric, Observability
 
 Description: Learn how to collect performance metrics from Java application servers like Tomcat, Jetty, and WildFly using the OpenTelemetry Collector JMX receiver.
 

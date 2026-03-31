@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Performance, Hashes, HGETALL, Anti-Patterns, Best Practices
+Tags: Redis, Performance, Hash, HGETALL, Anti-Pattern, Best Practice
 
 Description: Understand why HGETALL blocks Redis when used on large hashes and learn safer alternatives for accessing hash data at scale.
 

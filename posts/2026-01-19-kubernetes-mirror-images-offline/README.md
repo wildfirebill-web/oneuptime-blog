@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Air-Gapped, Container Registry, Docker, Images, Offline, DevOps
+Tags: Kubernetes, Air-Gapped, Container Registry, Docker, Image, Offline, DevOps
 
 Description: Learn how to mirror container images for air-gapped Kubernetes clusters including registry setup, image synchronization, helm chart images, and maintaining image catalogs.
 

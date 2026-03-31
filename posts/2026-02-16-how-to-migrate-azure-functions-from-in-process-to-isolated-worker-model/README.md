@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Migration, Isolated Worker, .NET, Azure, Serverless, Upgrade
+Tags: Azure Function, Migration, Isolated Worker, .NET, Azure, Serverless, Upgrade
 
 Description: A practical migration guide for moving Azure Functions from the in-process model to the isolated worker model with real code examples and gotchas.
 

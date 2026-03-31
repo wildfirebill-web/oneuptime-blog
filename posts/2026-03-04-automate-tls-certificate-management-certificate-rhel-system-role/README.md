@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, System Roles, TLS, Certificates
+Tags: RHEL, System Roles, TLS, Certificate
 
 Description: Use the certificate RHEL System Role to automate TLS certificate management.
 

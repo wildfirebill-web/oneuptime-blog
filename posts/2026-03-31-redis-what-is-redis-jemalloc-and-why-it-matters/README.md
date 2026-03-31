@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Jemalloc, Memory, Performance, Allocator, Internals
+Tags: Redis, Jemalloc, Memory, Performance, Allocator, Internal
 
 Description: Understand why Redis uses jemalloc as its default memory allocator, how it reduces fragmentation, and what it means for your Redis deployment's memory efficiency.
 

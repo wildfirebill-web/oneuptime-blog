@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kubernetes, Distributed Systems, High Availability, Go
+Tags: Kubernetes, Distributed System, High Availability, Go
 
 Description: Implement leader election in Kubernetes using lease objects for single-leader workloads, controllers, and scheduled tasks in high-availability deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Collaboration, Real-Time, Distributed Systems, Conflict Resolution
+Tags: Collaboration, Real-Time, Distributed System, Conflict Resolution
 
 Description: Learn how to implement operational transformation for real-time collaborative editing.
 

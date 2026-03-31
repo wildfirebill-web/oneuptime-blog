@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pulumi, Kubernetes, Infrastructure As Code, Deployment
+Tags: Dapr, Pulumi, Kubernetes, Infrastructure as Code, Deployment
 
 Description: Deploy Dapr on Kubernetes using Pulumi and TypeScript for a type-safe, programmable infrastructure-as-code approach with full IDE support.
 

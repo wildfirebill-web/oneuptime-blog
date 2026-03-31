@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ArgoCD, Git, Credentials, SSH, HTTPS, Security, Authentication
+Tags: ArgoCD, Git, Credential, SSH, HTTPS, Security, Authentication
 
 Description: Learn how to configure ArgoCD to access Git repositories using SSH keys, HTTPS credentials, GitHub Apps, and credential templates for secure and scalable repository management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RedisTimeSeries, Metrics, Time-Series, Monitoring, Observability
+Tags: Redis, RedisTimeSeries, Metric, Time-Series, Monitoring, Observability
 
 Description: A comprehensive guide to using RedisTimeSeries for metrics storage, covering data ingestion, downsampling, aggregations, alerting patterns, and production best practices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Registry, Multi-Tenancy, Teams, Docker Hub, Private Registry
+Tags: Portainer, Registry, Multi-Tenancy, Team, Docker Hub, Private Registry
 
 Description: Learn how to configure tenant-specific Docker registries in Portainer so each team can only access their own images and registry credentials.
 

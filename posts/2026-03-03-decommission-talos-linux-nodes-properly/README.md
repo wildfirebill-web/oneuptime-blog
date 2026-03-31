@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Decommissioning, Node Management, Kubernetes, Operations
+Tags: Talos Linux, Decommissioning, Node Management, Kubernetes, Operation
 
 Description: A complete guide to properly decommissioning Talos Linux nodes, including workload migration, data handling, cluster cleanup, and hardware recycling.
 

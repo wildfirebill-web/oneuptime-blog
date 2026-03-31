@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Quay.io, Registry
+Tags: Podman, Container, DevOps, Container Image, Quay.io, Registry
 
 Description: Learn how to push container images to Quay.io using Podman, including authentication with robot accounts, tagging, and repository management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RediSearch, Search, Index, Full-text search
+Tags: Redis, RediSearch, Search, Index, Full-Text Search
 
 Description: Learn how to use FT.CREATE in Redis to define a full-text search index over hash or JSON documents, specifying fields, types, and options for efficient querying.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Networks, Cleanup, Management
+Tags: Portainer, Docker, Network, Cleanup, Management
 
 Description: Delete unused Docker networks in Portainer to clean up network configuration and reduce clutter.
 

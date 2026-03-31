@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Configuration, Schema, Experimental
+Tags: ClickHouse, JSON, Configuration, Schema, Experimental
 
-Description: Learn how to enable allow_experimental_object_type in ClickHouse to use the Object('json') type for semi-structured JSON data with dynamic schema support.
+Description: Learn how to enable allow_experimental_object_type in ClickHouse to use the Object(json) type for semi-structured JSON data with dynamic schema support.
 
 ---
 

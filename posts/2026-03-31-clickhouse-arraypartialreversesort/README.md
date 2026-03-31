@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Array, arrayPartialReverseSort, Sorting, Top-N, Performance
+Tags: ClickHouse, Array Function, arrayPartialReverseSort, Sorting, Top-N, Performance
 
 Description: Learn how arrayPartialReverseSort() efficiently extracts the largest N elements from a ClickHouse array without sorting the entire array.
 

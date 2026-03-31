@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Incident Management, SRE, On-Call, Operations
+Tags: Incident Management, SRE, On-Call, Operation
 
 Description: Learn how to assign incidents to the appropriate responders effectively.
 

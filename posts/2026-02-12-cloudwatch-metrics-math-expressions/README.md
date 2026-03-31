@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CloudWatch, Metrics, Math Expressions, Monitoring
+Tags: AWS, CloudWatch, Metric, Math Expressions, Monitoring
 
 Description: Learn how to use CloudWatch Metrics Math to combine, transform, and analyze metrics with mathematical expressions for deeper monitoring insights.
 

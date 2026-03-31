@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Cephfs, Subvolumegroup, Kubernetes, Storage
+Tags: Rook, Ceph, CephFS, SubVolumeGroup, Kubernetes, Storage
 
 Description: Create CephFilesystemSubVolumeGroup CRDs in Rook to organize CephFS subvolumes into groups for better management, isolation, and quota enforcement.
 

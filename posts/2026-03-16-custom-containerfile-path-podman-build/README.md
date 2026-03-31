@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Containerfile, Custom Path
+Tags: Podman, Container, DevOps, Container Image, Build, Containerfile, Custom Path
 
 Description: Learn how to use the -f flag with podman build to specify custom Containerfile paths for flexible project structures and multi-environment builds.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, State Management, Bulk Operations, Performance, Throughput
+Tags: Dapr, State Management, Bulk Operation, Performance, Throughput
 
 Description: Use Dapr state bulk operations to save, get, and delete multiple state items in a single request, reducing network round-trips and improving throughput.
 

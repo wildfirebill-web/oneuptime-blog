@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, OIDC, AWS, GitHub Actions, IAM, Keyless Authentication, Security
+Tags: OpenTofu, OIDC, AWS, GitHub Action, IAM, Keyless Authentication, Security
 
 Description: Learn how to configure OIDC identity providers in AWS using OpenTofu to enable keyless authentication for GitHub Actions, GitLab CI, and other CI/CD systems.
 

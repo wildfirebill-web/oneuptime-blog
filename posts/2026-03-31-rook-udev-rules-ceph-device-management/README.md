@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, udev, Device Management, OSD, Linux, Kubernetes
+Tags: Rook, Ceph, Udev, Device Management, OSD, Linux, Kubernetes
 
 Description: Leverage udev rules to automate device labeling, discovery, and management for Ceph OSDs in Rook-managed Kubernetes environments.
 

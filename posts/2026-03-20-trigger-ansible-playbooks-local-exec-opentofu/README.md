@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Ansible, local-exec, Provisioners, Configuration Management
+Tags: OpenTofu, Terraform, Ansible, local-exec, Provisioner, Configuration Management
 
 Description: Learn how to use OpenTofu's local-exec provisioner to trigger Ansible playbooks after infrastructure resources are created, bridging infrastructure provisioning and configuration management.
 

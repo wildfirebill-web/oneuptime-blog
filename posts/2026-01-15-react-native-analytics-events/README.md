@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, Analytics, Events, Mobile Development, Tracking, User Behavior
+Tags: React Native, Analytics, Event, Mobile Development, Tracking, User Behavior
 
 Description: Learn how to implement custom analytics events in React Native to track user behavior and app usage patterns.
 

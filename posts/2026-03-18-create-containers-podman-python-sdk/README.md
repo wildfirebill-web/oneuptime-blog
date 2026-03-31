@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Python, SDK, Containers, Create
+Tags: Podman, Python, SDK, Container, Create
 
 Description: A comprehensive guide to creating, configuring, and running containers programmatically using the Podman Python SDK, including port mapping, volume mounts, environment variables, and resource limits.
 

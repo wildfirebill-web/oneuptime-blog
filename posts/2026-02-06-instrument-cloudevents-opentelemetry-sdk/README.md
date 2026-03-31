@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, CloudEvents, Distributed Tracing, Event-Driven Architecture
+Tags: OpenTelemetry, CloudEvent, Distributed Tracing, Event-Driven Architecture
 
 Description: Learn how to instrument CloudEvents with OpenTelemetry using the distributed tracing extension in the CloudEvents SDK for full event observability.
 

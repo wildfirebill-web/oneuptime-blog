@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Notifications, Monitoring, Linux
+Tags: RHEL, Notification, Monitoring, Linux
 
 Description: Step-by-step guide on configure microsoft teams notifications  monitoring alerts using Red Hat Enterprise Linux 9.
 

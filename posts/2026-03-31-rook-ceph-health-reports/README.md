@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Health, Monitoring, Diagnostics
+Tags: Rook, Ceph, Health, Monitoring, Diagnostic
 
 Description: Learn how to read and interpret Ceph health status reports including HEALTH_WARN and HEALTH_ERR messages to quickly diagnose and resolve cluster issues.
 

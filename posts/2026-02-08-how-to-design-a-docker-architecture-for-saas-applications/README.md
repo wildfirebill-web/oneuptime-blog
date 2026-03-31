@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, SaaS, Architecture, Microservices, Scalability, Production, DevOps
+Tags: Docker, SaaS, Architecture, Microservice, Scalability, Production, DevOps
 
 Description: Design a production-ready Docker architecture for SaaS applications covering service decomposition, scaling, data management, and deployment.
 

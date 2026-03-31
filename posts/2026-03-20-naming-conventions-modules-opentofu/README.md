@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Naming Conventions, Best Practice, Infrastructure as Code, Registry
+Tags: OpenTofu, Module, Naming Convention, Best Practice, Infrastructure as Code, Registry
 
 Description: Learn the naming conventions for OpenTofu module directories, registry modules, and module call blocks to keep large module libraries organized and discoverable.
 

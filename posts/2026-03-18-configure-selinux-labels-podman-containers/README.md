@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Linux, Security, SELinux, Labels
+Tags: Podman, Container, DevOps, Linux, Security, SELinux, Labels
 
 Description: Learn how to configure SELinux labels for Podman containers to enforce mandatory access control policies on containerized workloads.
 

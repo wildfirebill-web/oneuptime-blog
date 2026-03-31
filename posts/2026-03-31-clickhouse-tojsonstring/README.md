@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how toJSONString() serializes ClickHouse row values, arrays, and tuples into JSON strings, enabling JSON output formatting and downstream API integration.
 

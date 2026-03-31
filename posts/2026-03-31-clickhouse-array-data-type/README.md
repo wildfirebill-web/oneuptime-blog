@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Array
+Tags: ClickHouse, SQL, Data Type, Array
 
 Description: Learn how to store and query arrays in ClickHouse using Array(T), built-in array functions, and ARRAY JOIN for row-level expansion.
 

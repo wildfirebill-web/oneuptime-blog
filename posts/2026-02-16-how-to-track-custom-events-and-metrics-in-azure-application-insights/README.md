@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Application Insights, Custom Events, Custom Metrics, Telemetry, Application Monitoring, Observability
+Tags: Azure Application Insights, Custom Events, Custom Metric, Telemetry, Application Monitoring, Observability
 
 Description: A developer-focused guide to tracking custom events and metrics in Azure Application Insights for business and operational telemetry beyond the defaults.
 

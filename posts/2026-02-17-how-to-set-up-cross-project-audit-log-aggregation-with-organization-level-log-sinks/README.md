@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Audit Logs, Log Sinks, Organization Management, Security Monitoring
+Tags: GCP, Audit Log, Log Sinks, Organization Management, Security Monitoring
 
 Description: A step-by-step guide to setting up organization-level log sinks on Google Cloud for aggregating audit logs across all projects into a central location for security analysis.
 

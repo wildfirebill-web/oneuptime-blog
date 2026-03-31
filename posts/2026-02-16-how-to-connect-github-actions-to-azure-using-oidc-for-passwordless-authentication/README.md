@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Azure, OIDC, Passwordless Authentication, CI/CD, Security, Federated Credentials
+Tags: GitHub Action, Azure, OIDC, Passwordless Authentication, CI/CD, Security, Federated Credentials
 
 Description: Set up OpenID Connect between GitHub Actions and Azure to eliminate stored secrets and enable passwordless deployments.
 

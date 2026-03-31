@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, Collector, Metrics
+Tags: OpenTelemetry, Prometheus, Collector, Metric
 
 Description: Fix Prometheus failing to scrape metrics from the OpenTelemetry Collector when the exporter endpoint is misconfigured or unreachable.
 

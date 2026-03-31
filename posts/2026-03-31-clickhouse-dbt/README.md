@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, dbt, Analytics, Data Engineering, SQL, Transform
+Tags: ClickHouse, Dbt, Analytics, Data Engineering, SQL, Transform
 
 Description: Set up dbt with ClickHouse using dbt-clickhouse, write models with MergeTree engines, configure materializations, run incremental models, and test data quality.
 

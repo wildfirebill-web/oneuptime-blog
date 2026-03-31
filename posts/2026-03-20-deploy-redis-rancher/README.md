@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Rancher, Kubernetes, Helm, StatefulSets, Caching, Database, SUSE Rancher
+Tags: Redis, Rancher, Kubernetes, Helm, StatefulSet, Caching, Database, SUSE Rancher
 
 Description: Learn how to deploy a production-ready Redis cluster on a Rancher-managed Kubernetes cluster using the Bitnami Helm chart with persistent storage, authentication, and Sentinel for high availability.
 

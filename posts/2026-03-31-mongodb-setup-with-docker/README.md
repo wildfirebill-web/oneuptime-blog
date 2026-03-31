@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Docker, Container, Operations, Development
+Tags: MongoDB, Docker, Container, Operation, Development
 
 Description: A complete guide to running MongoDB in Docker with authentication, persistent volumes, custom configuration, and Docker Compose for multi-container setups.
 

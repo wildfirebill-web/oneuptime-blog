@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Update Operators, $max, Conditional Updates, NoSQL
+Tags: MongoDB, Update Operator, $max, Conditional Updates, NoSQL
 
 Description: Learn how to use MongoDB's $max operator to update a field only when the new value is greater than the current value, perfect for tracking high-water marks and maximums.
 

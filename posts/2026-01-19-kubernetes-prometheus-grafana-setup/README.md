@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Prometheus, Grafana, Monitoring, Observability, Metrics, Helm
+Tags: Kubernetes, Prometheus, Grafana, Monitoring, Observability, Metric, Helm
 
 Description: Learn how to set up a complete monitoring stack with Prometheus and Grafana on Kubernetes, including service discovery, alerting, and custom dashboards.
 

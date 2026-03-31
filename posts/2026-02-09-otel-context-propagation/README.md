@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Context Propagation, Distributed Tracing, Microservices, W3C
+Tags: OpenTelemetry, Context Propagation, Distributed Tracing, Microservice, W3C
 
 Description: Learn how to implement OpenTelemetry context propagation across microservices using W3C Trace Context headers to maintain trace continuity in distributed systems.
 

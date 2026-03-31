@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Online DDL, ALTER TABLE, InnoDB, Schema Changes
+Tags: MySQL, Online DDL, ALTER TABLE, InnoDB, Schema Change
 
 Description: Learn how MySQL InnoDB Online DDL handles ALTER TABLE operations with minimal locking, and how to choose the right algorithm for schema changes.
 

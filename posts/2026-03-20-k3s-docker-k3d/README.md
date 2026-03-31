@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, K3d, Docker, Local Development, Kubernetes, Testing, SUSE Rancher
+Tags: k3s, K3d, Docker, Local Development, Kubernetes, Testing, SUSE Rancher
 
 Description: Learn how to use K3d to run K3s clusters inside Docker containers for local development and testing, including multi-node clusters, port mapping, and registry configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Networking, Architecture, Performance, Operations
+Tags: Rook, Ceph, Networking, Architecture, Performance, Operation
 
 Description: Configure separate public and cluster networks in Ceph to isolate client traffic from OSD replication traffic, improving performance, security, and recovery speed.
 

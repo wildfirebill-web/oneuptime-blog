@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Debugging, Configuration API, Troubleshooting, Operations
+Tags: Dapr, Debugging, Configuration API, Troubleshooting, Operation
 
 Description: A practical guide to diagnosing and fixing common Dapr Configuration API issues including missing keys, subscription failures, and component initialization errors.
 

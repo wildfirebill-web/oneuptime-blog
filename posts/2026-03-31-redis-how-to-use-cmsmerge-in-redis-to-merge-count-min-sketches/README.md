@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Count-Min Sketch, Probabilistic Data Structures, Data Merging
+Tags: Redis, Count-Min Sketch, Probabilistic Data Structure, Data Merging
 
 Description: Learn how CMS.MERGE combines multiple Count-Min Sketches in Redis into one, enabling distributed frequency tracking and aggregation.
 

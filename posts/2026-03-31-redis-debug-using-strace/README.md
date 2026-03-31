@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Debugging, strace, Linux, System Call
+Tags: Redis, Debugging, Strace, Linux, System Call
 
 Description: Use strace to trace Redis system calls and diagnose disk I/O bottlenecks, socket issues, file descriptor exhaustion, and unexpected blocking operations.
 

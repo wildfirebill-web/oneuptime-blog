@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Logs, Events, Troubleshooting
+Tags: Portainer, Kubernetes, Log, Event, Troubleshooting
 
 Description: Access and analyze Kubernetes pod events and container logs using Portainer's web interface for effective troubleshooting.
 

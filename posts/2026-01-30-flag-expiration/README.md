@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Lifecycle, Expiration, Cleanup
+Tags: Feature Flag, Lifecycle, Expiration, Cleanup
 
 Description: Learn how to implement flag expiration for technical debt prevention.
 

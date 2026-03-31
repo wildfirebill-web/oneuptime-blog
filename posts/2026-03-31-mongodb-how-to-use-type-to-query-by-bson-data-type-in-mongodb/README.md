@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $type, BSON, Data Types, Query Operators, Schema Validation
+Tags: MongoDB, $type, BSON, Data Type, Query Operator, Schema Validation
 
 Description: Learn how to use MongoDB's $type operator to query documents by the BSON data type of a field, useful for data quality checks and mixed-type field handling.
 

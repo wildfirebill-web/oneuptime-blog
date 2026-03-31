@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, VM Scale Sets, Load Balancer, Health Probes, High Availability, Traffic Distribution
+Tags: Azure, VM Scale Sets, Load Balancer, Health Probe, High Availability, Traffic Distribution
 
 Description: A complete guide to integrating Azure VM Scale Sets with Azure Load Balancer including health probe configuration and traffic management.
 

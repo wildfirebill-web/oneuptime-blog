@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Trace, OpenTelemetry, Distributed Tracing, Microservices, Observability
+Tags: GCP, Cloud Trace, OpenTelemetry, Distributed Tracing, Microservice, Observability
 
 Description: Set up end-to-end distributed tracing across Google Cloud microservices using OpenTelemetry for instrumentation and Cloud Trace for visualization and analysis.
 

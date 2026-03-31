@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Troubleshooting, Debugging, Sdk, Microservice
+Tags: Dapr, DotNet, Troubleshooting, Debugging, SDK, Microservice
 
 Description: Diagnose and fix common Dapr .NET SDK issues including sidecar connection failures, component misconfiguration, and pub/sub delivery problems with practical steps.
 

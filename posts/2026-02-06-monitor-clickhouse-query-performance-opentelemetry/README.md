@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, ClickHouse, Query Performance, Observability, Analytics Database, Metrics, Tracing
+Tags: OpenTelemetry, ClickHouse, Query Performance, Observability, Analytics Database, Metric, Tracing
 
 Description: A hands-on guide to monitoring ClickHouse query performance using OpenTelemetry for metrics collection, query tracing, and identifying performance bottlenecks.
 

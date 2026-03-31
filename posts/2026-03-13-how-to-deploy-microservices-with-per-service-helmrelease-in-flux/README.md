@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, HelmRelease, Microservices, Helm, Independent Deployment
+Tags: Flux CD, Kubernetes, GitOps, HelmRelease, Microservice, Helm, Independent Deployment
 
 Description: Learn how to create individual HelmRelease resources for each microservice in Flux CD with independent configurations and deployment lifecycles.
 

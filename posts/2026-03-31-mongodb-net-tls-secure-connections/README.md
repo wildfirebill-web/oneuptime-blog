@@ -1,6 +1,6 @@
 # How to Configure MongoDB net.tls Settings for Secure Connections
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, TLS, Security, Configuration, Encryption
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, CLUSTER FLUSHSLOTS, Node Management, Operations
+Tags: Redis, Cluster, CLUSTER FLUSHSLOTS, Node Management, Operation
 
 Description: Learn how to use CLUSTER FLUSHSLOTS in Redis to remove all slot assignments from a node, clearing its slot ownership so it can be used as a clean member without assigned slots.
 

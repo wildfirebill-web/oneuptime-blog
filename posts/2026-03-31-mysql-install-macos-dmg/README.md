@@ -1,6 +1,6 @@
 # How to Install MySQL on macOS Using the DMG Package
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Installation, macOS, Database, Configuration
 

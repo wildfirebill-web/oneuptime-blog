@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Security, Auditing, Secret Stores, Observability, OpenTelemetry
+Tags: Dapr, Security, Auditing, Secret Store, Observability, OpenTelemetry
 
 Description: Learn how to audit and monitor secret access patterns in Dapr applications using middleware, tracing, and log analysis for security compliance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Orchestration
+Tags: Podman, Container, DevOps, Pod, Orchestration
 
 Description: Learn how to add new containers to an already running Podman pod.
 

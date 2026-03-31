@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, ARM, Edge Computing, IoT
+Tags: k3s, Kubernetes, Rancher, ARM, Edge Computing, IoT
 
 Description: Learn how to install and configure K3s on ARM-based devices including Raspberry Pi, NVIDIA Jetson, and other SBCs.
 

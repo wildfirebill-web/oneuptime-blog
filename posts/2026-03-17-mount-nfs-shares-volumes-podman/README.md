@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, NFS, Volumes, Networking, Storage
+Tags: Podman, Container, DevOps, NFS, Volumes, Networking, Storage
 
 Description: Learn how to mount NFS shares as Podman volumes for shared storage across containers and hosts.
 

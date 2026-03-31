@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Kafka, Streaming, Message Queues, DevOps
+Tags: Docker, Kafka, Streaming, Message Queue, DevOps
 
 Description: Learn how to set up Apache Kafka in Docker Compose with Zookeeper or KRaft mode, configure topics, and integrate with monitoring tools.
 

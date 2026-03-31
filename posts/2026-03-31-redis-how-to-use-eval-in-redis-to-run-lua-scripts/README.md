@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lua, Scripting, Atomicity, Commands
+Tags: Redis, Lua, Scripting, Atomicity, Command
 
 Description: Learn how to use the EVAL command in Redis to execute Lua scripts atomically, enabling complex multi-step operations without race conditions.
 

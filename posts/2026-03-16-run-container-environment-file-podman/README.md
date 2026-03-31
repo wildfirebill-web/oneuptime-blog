@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Environment Variables, Configuration
+Tags: Podman, Container, DevOps, Environment Variable, Configuration
 
 Description: Learn how to use environment files (.env) with Podman containers to manage configuration cleanly and keep secrets out of command lines.
 

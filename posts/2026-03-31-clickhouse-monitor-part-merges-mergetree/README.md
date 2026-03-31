@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, MergeTree, Monitoring, Parts, Merge, system.parts, Performance
+Tags: ClickHouse, MergeTree, Monitoring, Part, Merge, system.parts, Performance
 
 Description: Learn how to monitor ClickHouse MergeTree part merges using system tables to detect merge lag, high part counts, and background merge health.
 

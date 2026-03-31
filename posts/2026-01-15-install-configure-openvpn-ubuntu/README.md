@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, OpenVPN, VPN, Security, Networks, Tutorial
+Tags: Ubuntu, OpenVPN, VPN, Security, Network, Tutorial
 
 Description: Complete guide to setting up an OpenVPN server on Ubuntu with certificate authentication and secure client configuration.
 

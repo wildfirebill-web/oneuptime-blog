@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Message Queues, High Availability, RabbitMQ, Kafka
+Tags: Rancher, Kubernetes, Message Queue, High Availability, RabbitMQ, Kafka
 
 Description: Configure high availability for message queue deployments in Rancher using quorum queues, replication, and pod anti-affinity rules to ensure zero message loss.
 

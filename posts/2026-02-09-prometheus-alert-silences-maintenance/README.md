@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Alertmanager, Silences, Maintenance, Operations
+Tags: Prometheus, Alertmanager, Silences, Maintenance, Operation
 
 Description: Learn how to create and manage Alertmanager silences to suppress alerts during planned maintenance windows without losing visibility.
 

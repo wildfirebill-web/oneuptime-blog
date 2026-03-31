@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Oauth, Authentication, Access Tokens, Security
+Tags: Redis, OAuth, Authentication, Access Tokens, Security
 
 Description: Store and manage OAuth 2.0 access tokens in Redis with proper TTL alignment, token rotation, and revocation support for secure API authentication.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $in, Query Operators, Array Match, Filter, Node.js
+Tags: MongoDB, $in, Query Operator, Array Match, Filter, Node.js
 
 Description: Learn how to use MongoDB's $in operator to match documents where a field equals any value in a specified list, with practical examples and performance tips.
 

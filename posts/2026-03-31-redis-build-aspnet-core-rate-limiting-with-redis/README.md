@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Asp.Net Core, Rate Limiting, Middleware, C#
+Tags: Redis, ASP.NET Core, Rate Limiting, Middleware, C#
 
 Description: Implement distributed Redis-backed rate limiting in ASP.NET Core using fixed window and sliding window algorithms to protect API endpoints across multiple instances.
 

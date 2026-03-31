@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Group By, Sql Mode
+Tags: MySQL, GROUP BY, SQL Mode
 
 Description: Learn what MySQL's ONLY_FULL_GROUP_BY mode enforces, why queries fail, and the correct approaches to fix non-aggregated column errors.
 

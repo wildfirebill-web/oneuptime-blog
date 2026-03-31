@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Loop_control, Output Formatting
+Tags: Ansible, Loop, Loop_control, Output Formatting
 
 Description: Learn how to use the label option in Ansible loop_control to produce cleaner, more readable task output when looping over complex data.
 

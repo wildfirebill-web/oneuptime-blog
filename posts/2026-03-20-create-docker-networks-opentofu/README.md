@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Docker, Containers, Infrastructure as Code, DevOps
+Tags: OpenTofu, Docker, Container, Infrastructure as Code, DevOps
 
 Description: Learn how to create docker networks with OpenTofu using the Docker provider for local and remote container management.
 

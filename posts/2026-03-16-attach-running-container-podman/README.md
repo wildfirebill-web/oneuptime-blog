@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Attach, Debugging
+Tags: Podman, Container, DevOps, Container Attach, Debugging
 
 Description: Learn how to attach your terminal to a running Podman container's main process to view its output and interact with it in real time.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CLIENT, Debugging, Connection, Monitoring
+Tags: Redis, Client, Debugging, Connection, Monitoring
 
 Description: Learn how to use CLIENT SETNAME to assign a descriptive name to a Redis connection and CLIENT GETNAME to retrieve it, making it easier to identify connections in CLIENT LIST output.
 

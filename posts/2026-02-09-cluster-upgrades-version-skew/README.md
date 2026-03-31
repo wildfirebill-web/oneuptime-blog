@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Upgrade, Operations
+Tags: Kubernetes, Upgrade, Operation
 
 Description: Plan safe Kubernetes cluster upgrades by understanding version skew policies between control plane components, kubelet versions, and kubectl clients to avoid compatibility issues.
 

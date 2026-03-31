@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Messaging, Clustering, High Availability, Microservices, DevOps
+Tags: NATS, Messaging, Clustering, High Availability, Microservice, DevOps
 
 Description: A comprehensive guide to setting up a NATS cluster for high availability messaging, including cluster configuration, security, monitoring, and production best practices.
 

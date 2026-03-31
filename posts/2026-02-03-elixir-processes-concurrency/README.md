@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elixir, Processes, Concurrency, OTP, BEAM
+Tags: Elixir, Process, Concurrency, OTP, BEAM
 
 Description: Learn how to leverage Elixir processes for concurrent programming. This guide covers spawning processes, message passing, and building concurrent systems.
 

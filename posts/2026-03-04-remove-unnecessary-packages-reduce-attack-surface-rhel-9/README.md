@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Security, Packages, Attack Surface, Linux
+Tags: RHEL, Security, Package, Attack Surface, Linux
 
 Description: Learn how to identify and remove unnecessary packages on RHEL to minimize the attack surface, following the principle of least functionality.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Elasticsearch, Data Sync, Search, Keyspace Notifications, Python
+Tags: Redis, Elasticsearch, Data Sync, Search, Keyspace Notification, Python
 
 Description: Learn patterns to keep Redis and Elasticsearch in sync, enabling fast caching with rich full-text search capabilities in your application.
 

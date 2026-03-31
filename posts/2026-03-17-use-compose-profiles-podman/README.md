@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Profiles, Configuration
+Tags: Podman, Container, DevOps, podman-compose, Profiles, Configuration
 
 Description: Learn how to use Compose profiles with Podman to selectively start groups of services for different environments and workflows.
 

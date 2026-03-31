@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, User Management, Groups, Linux, System Administration
+Tags: RHEL, User Management, Group, Linux, System Administration
 
 Description: A complete guide to creating, modifying, and managing user accounts and groups on RHEL, covering the essential commands and the configuration files that drive it all.
 

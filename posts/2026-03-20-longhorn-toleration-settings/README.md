@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Tolerations, Taints, Kubernetes, Storage, Node Selection, SUSE Rancher
+Tags: Longhorn, Toleration, Taints, Kubernetes, Storage, Node Selection, SUSE Rancher
 
 Description: Learn how to configure Longhorn global toleration settings so Longhorn system pods can be scheduled on tainted nodes, enabling dedicated storage nodes in your Kubernetes cluster.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Troubleshooting, Concurrency, Connection Limits, Query Queuing, Performance, Database, Operations
+Tags: ClickHouse, Troubleshooting, Concurrency, Connection Limit, Query Queuing, Performance, Database, Operation
 
 Description: A troubleshooting guide for resolving Too Many Simultaneous Queries errors in ClickHouse, covering connection limits, query queuing, user quotas, and strategies for high-concurrency workloads.
 

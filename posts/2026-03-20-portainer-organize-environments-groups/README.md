@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environments, Groups, Organizations, Management
+Tags: Portainer, Environment, Group, Organization, Management
 
 Description: Create and use environment groups in Portainer to logically organize multiple environments for better navigation and bulk access control management.
 

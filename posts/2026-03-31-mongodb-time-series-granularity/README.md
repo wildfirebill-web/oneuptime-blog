@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Time series, Granularity, Collection, Performance
+Tags: MongoDB, Time Series, Granularity, Collection, Performance
 
 Description: Learn how to choose and configure the granularity setting for MongoDB time series collections to optimise bucket size, compression, and query performance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Scheduling, Taints, Tolerations, Control Plane
+Tags: Kubernetes, Scheduling, Taints, Toleration, Control Plane
 
 Description: Learn how to schedule pods on Kubernetes master/control plane nodes by removing taints or adding tolerations. Includes use cases and warnings about production implications.
 

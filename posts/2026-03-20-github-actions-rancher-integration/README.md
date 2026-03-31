@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Rancher, Kubernetes, CI/CD, DevOps, Automation, Deployment
+Tags: GitHub Action, Rancher, Kubernetes, CI/CD, DevOps, Automation, Deployment
 
 Description: Learn how to connect GitHub Actions workflows to a Rancher-managed Kubernetes cluster for automated container builds and deployments using kubeconfig secrets.
 

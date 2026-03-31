@@ -1,6 +1,6 @@
 # How to Use ANY and ALL Operators in MySQL Subqueries
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, SQL, Subquery, Operator, Database, Query
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenStack, Calico, Multi-Region, Documentation, Operations
+Tags: OpenStack, Calico, Multi-Region, Documentation, Operation
 
 Description: A guide to creating operational documentation for multi-region OpenStack networking with Calico, covering region topology maps, cross-region troubleshooting, and incident response procedures.
 

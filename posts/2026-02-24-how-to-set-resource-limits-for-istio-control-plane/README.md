@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Resource Limits, Kubernetes, Control Plane, Performance
+Tags: Istio, Resource Limit, Kubernetes, Control Plane, Performance
 
 Description: How to properly set CPU and memory resource requests and limits for Istio control plane components including istiod, gateways, and more.
 

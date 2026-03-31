@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: C#, Entity Framework Core, .NET, Database, ORM, Conventions, Clean Architecture
+Tags: C#, Entity Framework Core, .NET, Database, ORM, Convention, Clean Architecture
 
 Description: Learn how to build custom conventions in Entity Framework Core to enforce naming standards, automate configuration, and reduce repetitive code across your entire data model.
 

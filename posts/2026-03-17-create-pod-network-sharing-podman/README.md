@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Networking, Namespaces
+Tags: Podman, Container, DevOps, Pod, Networking, Namespace
 
 Description: Learn how network namespace sharing works in Podman pods and how to configure it.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, External Secrets Operator, Database, Credentials
+Tags: Flux CD, Kubernetes, GitOps, External Secrets Operator, Database, Credential
 
 Description: Sync database credentials from external secret stores using ESO and Flux CD, enabling zero-downtime credential rotation for PostgreSQL, MySQL, and Redis workloads.
 

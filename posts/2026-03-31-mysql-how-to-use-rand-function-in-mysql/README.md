@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Rand, Random Numbers, Database, Sql Functions
+Tags: MySQL, Rand, Random Numbers, Database, SQL Functions
 
 Description: Learn how to use MySQL's RAND() function to generate random numbers, shuffle query results, and select random rows from tables.
 

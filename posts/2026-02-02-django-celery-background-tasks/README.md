@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Python, Django, Celery, Background Tasks, Redis
+Tags: Python, Django, Celery, Background Task, Redis
 
 Description: A practical guide to integrating Celery with Django for background task processing, including task definition, scheduling, monitoring, and error handling.
 

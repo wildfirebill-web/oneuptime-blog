@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Error Tracking, Traces, Exceptions
+Tags: OpenTelemetry, Error Tracking, Trace, Exception
 
 Description: Build an error tracking dashboard that links OpenTelemetry trace data with exception details for faster debugging.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Grafana, Permissions, RBAC, Infrastructure as Code
+Tags: Terraform, Grafana, Permission, RBAC, Infrastructure as Code
 
 Description: Learn how to create Grafana folders and manage dashboard permissions using Terraform for organized and secure monitoring access control.
 

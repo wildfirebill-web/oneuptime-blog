@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, E-commerce, Hash, Stream
+Tags: Redis, E-Commerce, Hash, Stream
 
 Description: Track e-commerce order status changes with Redis Hashes for current state and Streams for full audit history - enable instant status lookups and real-time updates.
 

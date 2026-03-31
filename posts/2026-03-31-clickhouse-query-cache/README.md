@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Query Cache, Performance, Caching, Settings, Optimization
+Tags: ClickHouse, Query Cache, Performance, Caching, Setting, Optimization
 
 Description: Learn how to enable and configure the query_cache in ClickHouse to cache full query results in memory, reducing latency for repeated dashboard and reporting queries.
 

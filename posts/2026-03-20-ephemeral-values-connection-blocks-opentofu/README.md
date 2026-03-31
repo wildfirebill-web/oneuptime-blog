@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Ephemeral Values, Connection Blocks, Provisioners, SSH, Infrastructure as Code, DevOps
+Tags: OpenTofu, Ephemeral Values, Connection Blocks, Provisioner, SSH, Infrastructure as Code, DevOps
 
 Description: A guide to using ephemeral values in connection blocks in OpenTofu to securely manage SSH keys and passwords without persisting them in state.
 

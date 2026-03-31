@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Raspberry Pi, ARM, Edge Computing, IoT
+Tags: k3s, Kubernetes, Raspberry Pi, ARM, Edge Computing, IoT
 
 Description: A detailed guide to installing K3s on the Raspberry Pi Zero, optimizing for its 512MB RAM and ARMv6 CPU.
 

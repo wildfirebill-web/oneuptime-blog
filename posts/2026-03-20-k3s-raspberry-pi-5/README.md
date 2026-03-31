@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Raspberry Pi, ARM64, Edge Computing
+Tags: k3s, Kubernetes, Raspberry Pi, ARM64, Edge Computing
 
 Description: Complete guide to setting up K3s on the Raspberry Pi 5, taking advantage of its faster Cortex-A76 CPU and PCIe support for enterprise-grade edge Kubernetes.
 

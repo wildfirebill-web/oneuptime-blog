@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ceph, Storage, Scaling, OSDs, High Availability, Cloud Native
+Tags: Ceph, Storage, Scaling, OSD, High Availability, Cloud Native
 
 Description: Learn how to safely add new OSDs to expand your Ceph cluster storage capacity without downtime.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Troubleshooting, Consumer Groups, Debugging, Rebalancing, Performance
+Tags: Apache Kafka, Troubleshooting, Consumer Group, Debugging, Rebalancing, Performance
 
 Description: A comprehensive guide to debugging Kafka consumer group issues, covering rebalancing problems, lag analysis, stuck consumers, offset management, and practical troubleshooting techniques.
 

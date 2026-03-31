@@ -32,12 +32,12 @@ Your collection must contain location data in one of these formats:
 ### Configuring the Coordinates
 
 If your data uses a GeoJSON field:
-```
+```text
 Coordinates:  location    (GeoJSON Point field)
 ```
 
 If your data uses separate lat/lon fields, Atlas Charts can handle them:
-```
+```text
 Latitude:   lat
 Longitude:  lng
 ```
@@ -46,7 +46,7 @@ Longitude:  lng
 
 Use the **Color** channel to differentiate markers by category (e.g., cuisine type) and the **Size** channel to scale markers by a numeric value (e.g., review count):
 
-```
+```text
 Coordinates:  location
 Color:        cuisine      (Category)
 Size:         stars        (Aggregation: Average)
@@ -74,7 +74,7 @@ Size:         stars        (Aggregation: Average)
 2. Choose your collection
 3. Configure the **Location** field to map to a geographic region
 
-```
+```text
 Location:  country       (maps to country borders)
 Color:     revenue       (Aggregation: Sum)
 ```
@@ -85,7 +85,7 @@ Atlas Charts recognizes ISO 3166-1 alpha-2 country codes (US, GB, DE), US state 
 
 In the **Customize** tab, set the default map view by specifying center coordinates and zoom level. This ensures the map opens on the region most relevant to your data:
 
-```
+```text
 Default Center Latitude:   40.7128
 Default Center Longitude:  -74.0060
 Default Zoom:              10

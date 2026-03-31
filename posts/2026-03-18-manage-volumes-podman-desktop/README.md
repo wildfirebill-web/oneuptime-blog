@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Volumes, Storage
+Tags: Podman, Container, DevOps, Podman Desktop, Volumes, Storage
 
 Description: Learn how to create, inspect, and manage persistent volumes in Podman Desktop to ensure your container data survives restarts and removals.
 

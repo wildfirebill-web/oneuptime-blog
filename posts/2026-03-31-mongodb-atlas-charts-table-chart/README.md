@@ -27,7 +27,7 @@ For this guide, use the `sample_supplies.sales` collection.
 
 Drag fields from the **Fields** panel to the **Columns** channel. Each field becomes one column in the table.
 
-```
+```text
 Columns:
   - storeLocation     (Group by - Category)
   - purchaseMethod    (Group by - Category)

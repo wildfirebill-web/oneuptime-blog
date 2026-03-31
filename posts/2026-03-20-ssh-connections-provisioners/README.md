@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Provisioners, SSH, Infrastructure as Code, Remote Execution
+Tags: OpenTofu, Terraform, Provisioner, SSH, Infrastructure as Code, Remote Execution
 
 Description: Learn how to configure SSH connection blocks within OpenTofu provisioners to securely connect to remote resources and execute commands during infrastructure provisioning.
 

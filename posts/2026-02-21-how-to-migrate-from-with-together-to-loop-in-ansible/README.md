@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Migration, Loops, Automation
+Tags: Ansible, Migration, Loop, Automation
 
 Description: Learn how to migrate from the legacy with_together syntax to the modern loop keyword with the zip filter in Ansible playbooks.
 

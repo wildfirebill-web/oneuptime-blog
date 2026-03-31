@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Idempotency, Microservices, Distributed Systems, API Design, Reliability, Retry Logic, Database, Event-Driven
+Tags: Idempotency, Microservice, Distributed System, API Design, Reliability, Retry Logic, Database, Event-Driven
 
 Description: Learn how to implement idempotency in microservices to ensure operations can be safely retried without causing duplicate effects, including idempotency keys, database patterns, and event handling.
 

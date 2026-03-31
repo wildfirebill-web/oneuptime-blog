@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Replication, Recovery, Database, Operations
+Tags: ClickHouse, Replication, Recovery, Database, Operation
 
 Description: Step-by-step guide to recovering a failed ClickHouse replica, whether it fell behind due to downtime, disk failure, or data corruption.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, Window, WSL2
+Tags: Podman, Installation, Linux, Container, DevOps, Window, WSL2
 
 Description: Learn how to install and run Podman on Windows using WSL2, including both the native Windows installer and the WSL2 Linux approach.
 

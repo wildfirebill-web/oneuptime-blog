@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, ALB, AWS, Modules, Load Balancing, Networking
+Tags: OpenTofu, Terraform, ALB, AWS, Module, Load Balancing, Networking
 
 Description: Learn how to design a reusable Application Load Balancer module for OpenTofu that supports HTTPS termination, multiple target groups, and routing rules.
 

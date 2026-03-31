@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, High Availability, Operations
+Tags: Redis, High Availability, Operation
 
 Description: Learn how to perform Redis rolling restarts across Sentinel and Cluster setups to apply configuration changes with zero downtime.
 

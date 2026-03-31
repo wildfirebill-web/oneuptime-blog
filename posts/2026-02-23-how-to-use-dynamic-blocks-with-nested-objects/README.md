@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Dynamic Blocks, Nested Objects, HCL, Data Structures, Infrastructure as Code
+Tags: Terraform, Dynamic Blocks, Nested Object, HCL, Data Structure, Infrastructure as Code
 
 Description: Learn how to work with nested object variables and dynamic blocks in Terraform for resources that need hierarchical configuration structures.
 

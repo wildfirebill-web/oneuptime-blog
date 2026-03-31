@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, AI/ML, Edge Computing, Kubernetes, NVIDIA, TensorFlow, Model Serving
+Tags: k3s, AI/ML, Edge Computing, Kubernetes, NVIDIA, TensorFlow, Model Serving
 
 Description: Learn how to deploy AI and machine learning model inference workloads at the edge using K3s, including GPU configuration, model serving with Triton or TorchServe, and edge-optimized deployment...
 

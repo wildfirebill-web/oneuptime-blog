@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Annotations, Ingress, Configuration
+Tags: Portainer, Kubernetes, Annotation, Ingress, Configuration
 
 Description: Learn how to add and manage Kubernetes annotations on applications deployed through Portainer.
 

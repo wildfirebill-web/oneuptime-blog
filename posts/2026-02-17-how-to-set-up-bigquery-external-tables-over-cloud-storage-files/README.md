@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, External Tables, Cloud Storage, Data Lake, ETL
+Tags: GCP, BigQuery, External Table, Cloud Storage, Data Lake, ETL
 
 Description: Learn how to create BigQuery external tables that query data directly from Cloud Storage files in CSV, JSON, Parquet, and other formats without loading data into BigQuery.
 

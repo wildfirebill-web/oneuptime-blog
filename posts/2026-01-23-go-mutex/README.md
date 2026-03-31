@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Mutex, Concurrency, Synchronization, Race Conditions
+Tags: Go, Golang, Mutex, Concurrency, Synchronization, Race Condition
 
 Description: Master Go mutexes with this comprehensive guide covering sync.Mutex, sync.RWMutex, common patterns, and best practices for safe concurrent programming.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Debugging, Rollback, Kubernetes, Canary Deployments
+Tags: Flagger, Debugging, Rollback, Kubernetes, Canary Deployment
 
 Description: Learn how to diagnose and fix a Flagger canary deployment that repeatedly rolls back instead of being promoted.
 

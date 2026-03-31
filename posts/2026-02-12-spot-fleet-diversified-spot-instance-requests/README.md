@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Spot Fleet, Spot Instances, Cost Optimization
+Tags: AWS, EC2, Spot Fleet, Spot Instance, Cost Optimization
 
 Description: Learn how to use AWS Spot Fleet to request capacity across multiple instance types, AZs, and pools for maximum availability and savings.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Logging, Debugging
+Tags: Podman, Container, DevOps, podman-compose, Logging, Debugging
 
 Description: Learn how to view and follow service logs with podman-compose logs for debugging and monitoring multi-container applications.
 

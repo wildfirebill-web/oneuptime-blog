@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cloudflare, Durable Objects, Edge Computing, Serverless, Worker, WebSocket, TypeScript, Distributed Systems
+Tags: Cloudflare, Durable Objects, Edge Computing, Serverless, Worker, WebSocket, TypeScript, Distributed System
 
 Description: Learn how to implement Cloudflare Durable Objects for stateful serverless applications at the edge, including storage APIs, alarms, WebSocket support, and coordination patterns.
 

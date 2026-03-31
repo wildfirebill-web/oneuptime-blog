@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, AWS, EKS, Spot Instances, Cost Optimization, Autoscaling
+Tags: Flux, Kubernetes, GitOps, AWS, EKS, Spot Instance, Cost Optimization, Autoscaling
 
 Description: Learn how to set up Flux on Amazon EKS with EC2 Spot Instances for significant cost savings while maintaining workload reliability.
 

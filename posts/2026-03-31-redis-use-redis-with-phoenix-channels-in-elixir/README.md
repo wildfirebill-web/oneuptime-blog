@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Elixir, Phoenix, Channels, Pub/Sub
+Tags: Redis, Elixir, Phoenix, Channel, Pub/Sub
 
 Description: Learn how to integrate Redis with Phoenix Channels to enable real-time communication that scales across multiple Phoenix nodes using Redis Pub/Sub.
 

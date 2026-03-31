@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, CloudEvents, Event-Driven Architecture
+Tags: Kubernetes, CloudEvent, Event-Driven Architecture
 
 Description: Implement standardized event routing pipelines on Kubernetes using CloudEvents specification for interoperable event-driven architectures across multiple platforms and services.
 

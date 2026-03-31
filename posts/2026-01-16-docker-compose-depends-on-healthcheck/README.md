@@ -1,6 +1,6 @@
 # How to Use Docker Compose depends_on with Health Checks
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Docker, Docker Compose, Health Check, DevOps, Reliability
 

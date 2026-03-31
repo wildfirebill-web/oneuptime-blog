@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Constraints, Schema Design
+Tags: MySQL, DDL, Constraint, Schema Design
 
 Description: Learn how to add a primary key to an existing MySQL table using ALTER TABLE, including handling tables with duplicate values and adding composite keys.
 

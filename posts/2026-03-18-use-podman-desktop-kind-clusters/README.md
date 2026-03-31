@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Kind, Kubernetes, Local Development
+Tags: Podman, Container, DevOps, Podman Desktop, Kind, Kubernetes, Local Development
 
 Description: Learn how to create and manage Kind (Kubernetes in Docker) clusters using Podman Desktop for local Kubernetes development and testing.
 

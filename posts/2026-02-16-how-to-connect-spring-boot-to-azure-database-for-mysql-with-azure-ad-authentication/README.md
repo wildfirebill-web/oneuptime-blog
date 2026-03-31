@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Spring Boot, Azure Database for MySQL, Azure AD, Authentication, Java, Cloud Database, Security
+Tags: Spring Boot, Azure Database For MySQL, Azure AD, Authentication, Java, Cloud Database, Security
 
 Description: Learn how to connect a Spring Boot application to Azure Database for MySQL using Azure AD authentication for passwordless and secure database access.
 

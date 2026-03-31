@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Verification, Configuration
+Tags: Podman, Container, DevOps, Rootless, Verification, Configuration
 
 Description: Learn how to verify that your rootless Podman installation is correctly configured and ready for production use.
 

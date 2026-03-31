@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, SRE, Toil, Custom Metrics
+Tags: OpenTelemetry, SRE, Toil, Custom Metric
 
 Description: Learn how to define, instrument, and track operational toil using OpenTelemetry custom metrics to quantify manual work and drive automation priorities.
 

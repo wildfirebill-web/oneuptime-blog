@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Latency, Quantiles, Performance, Monitoring
+Tags: ClickHouse, Latency, Quantile, Performance, Monitoring
 
 Description: Learn how to use quantileTiming() in ClickHouse, a specialized quantile function optimized for latency and response time data with millisecond precision.
 

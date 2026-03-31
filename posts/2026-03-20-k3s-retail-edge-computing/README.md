@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Edge Computing, Retail, IoT, Kubernetes, Offline Operations, SUSE Rancher
+Tags: k3s, Edge Computing, Retail, IoT, Kubernetes, Offline Operations, SUSE Rancher
 
 Description: Learn how to configure K3s for retail store edge computing deployments, including point-of-sale systems, inventory management, and offline-capable application patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Packet Loss, IPv4, Linux, Networking, Diagnostics, mtr
+Tags: Packet Loss, IPv4, Linux, Networking, Diagnostic, mtr
 
 Description: Systematically diagnose IPv4 packet loss using ping, MTR, tcpdump, and interface statistics to identify whether loss occurs at the physical layer, a specific link, or the destination.
 

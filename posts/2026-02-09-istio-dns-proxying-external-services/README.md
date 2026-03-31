@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Istio, DNS, Service Mesh, External Services, Networking
+Tags: Istio, DNS, Service Mesh, External Service, Networking
 
 Description: Learn how to enable and configure Istio's DNS proxy feature to intercept DNS queries from applications and intelligently route traffic to both internal mesh services and external endpoints with.
 

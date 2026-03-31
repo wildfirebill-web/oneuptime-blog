@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Docker Compose, Migration, Pods, Containers
+Tags: Podman, Docker Compose, Migration, Pod, Container
 
 Description: A step-by-step guide to migrating multi-container applications from Docker Compose to Podman pods, including networking changes, volume migration, and service configuration.
 

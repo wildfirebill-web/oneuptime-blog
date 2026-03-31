@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Inspection, Debugging
+Tags: Podman, Container, DevOps, Networking, Inspection, Debugging
 
 Description: Learn how to inspect Podman networks to view configuration details including subnets, gateways, and connected containers.
 

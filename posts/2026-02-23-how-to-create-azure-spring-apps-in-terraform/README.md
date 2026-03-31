@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Spring Apps, Java, Infrastructure as Code, Microservices, Spring Boot
+Tags: Terraform, Azure, Spring Apps, Java, Infrastructure as Code, Microservice, Spring Boot
 
 Description: Learn how to create and configure Azure Spring Apps with Terraform for deploying Java Spring Boot microservices with built-in service discovery and config management.
 

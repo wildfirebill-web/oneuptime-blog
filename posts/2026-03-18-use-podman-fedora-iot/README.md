@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Fedora IoT, Containers, Edge Computing, IoT
+Tags: Podman, Fedora IoT, Container, Edge Computing, IoT
 
 Description: Learn how to use Podman on Fedora IoT to deploy and manage containerized applications on edge devices and IoT gateways.
 

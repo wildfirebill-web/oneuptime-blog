@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Bicep, Container Registry, Modules, Infrastructure as Code, DevOps, Module Registry
+Tags: Azure, Bicep, Container Registry, Module, Infrastructure as Code, DevOps, Module Registry
 
 Description: Configure a private Bicep module registry using Azure Container Registry to share and version reusable infrastructure templates across teams.
 

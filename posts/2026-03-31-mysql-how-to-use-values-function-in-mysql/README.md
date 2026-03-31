@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, VALUES Function, ON DUPLICATE KEY, UPSERT, SQL Functions
+Tags: MySQL, VALUES Function, ON DUPLICATE KEY, Upsert, SQL Functions
 
 Description: Learn how to use the VALUES() function in MySQL within ON DUPLICATE KEY UPDATE clauses to reference the values being inserted.
 

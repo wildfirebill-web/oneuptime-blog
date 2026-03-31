@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, DigitalOcean, Cloud, Droplets, Linux
+Tags: RHEL, DigitalOcean, Cloud, Droplet, Linux
 
 Description: Deploy RHEL on DigitalOcean Droplets using custom images with proper configuration for the DigitalOcean environment.
 

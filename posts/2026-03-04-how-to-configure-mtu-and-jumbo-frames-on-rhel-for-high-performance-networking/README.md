@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, MTU, Jumbo Frames, Networking, Performance
+Tags: RHEL, MTU, Jumbo Frame, Networking, Performance
 
 Description: Learn how to configure MTU and enable jumbo frames on RHEL to reduce packet overhead and improve network throughput.
 

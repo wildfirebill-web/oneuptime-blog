@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vue, Vue3, Provide, Inject, Composition API, Components, Debugging
+Tags: Vue, Vue3, Provide, Inject, Composition API, Component, Debugging
 
 Description: Diagnose and resolve Vue provide/inject issues including injection not found, reactivity problems, and TypeScript type safety.
 

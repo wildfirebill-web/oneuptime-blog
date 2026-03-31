@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Event Store, Redis Streams, Event Sourcing, CQRS, Distributed Systems
+Tags: Redis, Event Store, Redis Streams, Event Sourcing, CQRS, Distributed System
 
 Description: A comprehensive guide to building an event store with Redis Streams for event sourcing and CQRS patterns, including event persistence, replay, and aggregate reconstruction.
 

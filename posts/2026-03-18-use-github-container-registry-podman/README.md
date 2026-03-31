@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, GitHub, GHCR, CI/CD
+Tags: Podman, Container, DevOps, Registry, GitHub, GHCR, CI/CD
 
 Description: A practical guide to using GitHub Container Registry with Podman for pulling, pushing, and managing container images in GitHub workflows.
 

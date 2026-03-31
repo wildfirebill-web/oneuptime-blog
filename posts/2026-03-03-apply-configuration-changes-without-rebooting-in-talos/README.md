@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Configuration, No Reboot, Operations, Kubernetes
+Tags: Talos Linux, Configuration, No Reboot, Operation, Kubernetes
 
 Description: Learn which Talos Linux configuration changes can be applied without rebooting and how to use the no-reboot mode for minimal disruption operations.
 

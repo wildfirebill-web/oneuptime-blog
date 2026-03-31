@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, DevOps
+Tags: ArgoCD, GitOps, Kubernetes, Notification, DevOps
 
 Description: Learn how to subscribe individual ArgoCD applications to specific notification channels using annotations, enabling per-application alerting to Slack, email, PagerDuty, and other services.
 

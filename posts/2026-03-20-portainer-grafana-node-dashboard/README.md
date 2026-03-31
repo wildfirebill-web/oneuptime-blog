@@ -200,7 +200,7 @@ Name: Alerts
 Data source: Prometheus
 Expr: changes(ALERTS{alertstate="firing"}[5m]) > 0
 Step: 60s
-Tags: alert, ${__field.labels.alertname}
+Tags: Portainer, Grafana, Node Exporter, Dashboard, Host Metrics
 ```
 
 ## Step 8: Import the Node Exporter Full Dashboard

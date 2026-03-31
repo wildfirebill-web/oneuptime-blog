@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Testcontainers, Integration Testing, Docker, Java, Python
+Tags: Redis, Testcontainers, Integration Testing, Docker, Java
 
 Description: Learn how to use Testcontainers to spin up a real Redis instance for integration tests in Java, Python, and Node.js with automatic lifecycle management.
 

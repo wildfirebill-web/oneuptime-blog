@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Domain, IPv4, IPv6
+Tags: ClickHouse, SQL, Data Type, Domain, IPv4, IPv6
 
 Description: Learn how ClickHouse domain types like IPv4 and IPv6 provide semantic validation and display formatting over their underlying storage types.
 

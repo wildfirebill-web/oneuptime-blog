@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, File Descriptors, Troubleshooting, Linux, System Configuration, Operations
+Tags: Elasticsearch, File Descriptor, Troubleshooting, Linux, System Configuration, Operation
 
 Description: A comprehensive guide to fixing Elasticsearch 'too many open files' errors, covering file descriptor limits, system configuration, and monitoring best practices.
 

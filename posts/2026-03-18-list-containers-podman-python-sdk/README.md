@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Python, SDK, Containers, Listing
+Tags: Podman, Python, SDK, Container, Listing
 
 Description: Learn how to list, filter, and inspect containers using the Podman Python SDK, including running containers, stopped containers, and advanced filtering techniques.
 

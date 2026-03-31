@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environments, Administration, Cleanup
+Tags: Portainer, Environment, Administration, Cleanup
 
 Description: Safely remove an environment from Portainer including cleanup of associated resources and data.
 

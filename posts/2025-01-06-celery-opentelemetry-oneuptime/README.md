@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Celery, OpenTelemetry, Monitoring, OneUptime, Distributed Tracing, Background Jobs, Redis
+Tags: Python, Celery, OpenTelemetry, Monitoring, OneUptime, Distributed Tracing, Background Job, Redis
 
 Description: Learn how to monitor Celery workers with OpenTelemetry and OneUptime. This guide covers distributed tracing, task metrics, and alerting for reliable background job processing.
 

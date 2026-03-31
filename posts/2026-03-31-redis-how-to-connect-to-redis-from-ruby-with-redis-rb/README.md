@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Ruby, redis-rb, Data Types, Operations
+Tags: Redis, Ruby, redis-rb, Data Type, Operation
 
 Description: Learn how to use redis-rb in Ruby to perform operations on all Redis data types including strings, hashes, lists, sets, sorted sets, and how to use pipelining.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Terraform, Infrastructure as Code, CI/CD, DevOps, Cloud
+Tags: GitHub Action, Terraform, Infrastructure as Code, CI/CD, DevOps, Cloud
 
 Description: Learn how to build a secure Terraform CI/CD pipeline with GitHub Actions. This guide covers plan/apply workflows, state management, drift detection, and multi-environment deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Event Grid, CloudEvents, Event Schema, Interoperability, CNCF, Event-Driven Architecture
+Tags: Azure, Event Grid, CloudEvent, Event Schema, Interoperability, CNCF, Event-Driven Architecture
 
 Description: Learn how to use the CloudEvents specification with Azure Event Grid for standards-based event publishing and consumption.
 

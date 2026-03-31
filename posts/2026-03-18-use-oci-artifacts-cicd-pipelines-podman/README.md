@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OCI Artifacts, CI/CD, Automation
+Tags: Podman, Container, DevOps, OCI Artifacts, CI/CD, Automation
 
 Description: Learn how to integrate OCI artifacts into CI/CD pipelines using Podman for distributing configuration, binaries, and deployment assets.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Port Forwarding, Networking
+Tags: Podman, Container, DevOps, Podman Desktop, Port Forwarding, Networking
 
 Description: Learn how to configure port forwarding in Podman Desktop to expose container services on your local machine for development and testing.
 

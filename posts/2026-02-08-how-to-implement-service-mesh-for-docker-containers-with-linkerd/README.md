@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Linkerd, Service Mesh, Networking, Observability, DevOps, Microservices
+Tags: Docker, Linkerd, Service Mesh, Networking, Observability, DevOps, Microservice
 
 Description: Set up Linkerd as a service mesh for Docker containers to get automatic mTLS, traffic observability, and reliability features.
 

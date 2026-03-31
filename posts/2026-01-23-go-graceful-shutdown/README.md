@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Graceful Shutdown, Signals, HTTP Server, Kubernetes, Production
+Tags: Go, Golang, Graceful Shutdown, Signal, HTTP Server, Kubernetes, Production
 
 Description: Learn how to implement graceful shutdown in Go applications to properly handle termination signals, finish in-flight requests, and clean up resources.
 

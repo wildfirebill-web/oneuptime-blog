@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microsoft Graph API, Azure Functions, User Profiles, Azure AD, Serverless, Microsoft 365, REST API
+Tags: Microsoft Graph API, Azure Function, User Profile, Azure AD, Serverless, Microsoft 365, REST API
 
 Description: Build Azure Functions that query Microsoft Graph API to read and manage user profiles, group memberships, and directory data programmatically.
 

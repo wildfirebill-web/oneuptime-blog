@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Prometheus, Metrics, Monitoring, Kubernetes, Observability
+Tags: Istio, Prometheus, Metric, Monitoring, Kubernetes, Observability
 
 Description: A complete guide to setting up Prometheus with Istio for collecting service mesh metrics including request rates, latencies, and error rates.
 

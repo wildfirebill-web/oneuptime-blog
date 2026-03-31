@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Service Discovery, Microservices, Consul, Eureka, Kubernetes, etcd, Troubleshooting, Distributed Systems
+Tags: Service Discovery, Microservice, Consul, Eureka, Kubernetes, etcd, Troubleshooting, Distributed System
 
 Description: Learn how to diagnose and fix service registration failures in service discovery systems like Consul, Eureka, and Kubernetes, including network issues, health check misconfigurations.
 

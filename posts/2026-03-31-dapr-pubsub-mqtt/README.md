@@ -1,6 +1,6 @@
 # How to Set Up Dapr Pub/Sub with MQTT
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Pub/Sub, MQTT, IoT, Messaging
 

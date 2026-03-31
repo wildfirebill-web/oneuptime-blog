@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Consumer Groups, Testing, Integration Tests
+Tags: Redis, Stream, Consumer Group, Testing, Integration Test
 
 Description: Learn how to write reliable integration tests for Redis Stream consumer groups, covering message delivery, acknowledgment, and pending entry re-delivery.
 

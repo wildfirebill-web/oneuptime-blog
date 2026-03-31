@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Bitmap, bitmapToArray, Arrays, Sql
+Tags: ClickHouse, Bitmap, bitmapToArray, Array, SQL
 
 Description: Learn how to use bitmapToArray() in ClickHouse to convert a bitmap back into a sorted array of unsigned integers for inspection and downstream processing.
 

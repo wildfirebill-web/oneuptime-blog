@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Hooks, Custom Hooks, Side Effect, JavaScript, TypeScript, Best Practice
+Tags: React, Hook, Custom Hooks, Side Effect, JavaScript, TypeScript, Best Practice
 
 Description: A comprehensive guide to managing side effects in React using custom hooks, including data fetching, subscriptions, timers, and event listeners.
 

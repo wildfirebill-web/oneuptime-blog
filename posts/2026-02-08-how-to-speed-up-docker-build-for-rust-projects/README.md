@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Rust, Build Optimization, Cargo, Layer Caching, Multi-Stage Builds
+Tags: Docker, Rust, Build Optimization, Cargo, Layer Caching, Multi-Stage Build
 
 Description: Techniques to dramatically reduce Rust Docker build times using cargo caching and smart layering
 

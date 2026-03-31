@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, GitHub Actions, CI/CD, Webhooks, Automation
+Tags: Portainer, GitHub Action, CI/CD, Webhook, Automation
 
 Description: Automate container redeployment to Portainer after successful GitHub Actions builds using webhook triggers.
 

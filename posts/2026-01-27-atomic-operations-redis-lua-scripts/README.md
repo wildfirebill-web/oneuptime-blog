@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lua, Atomic Operations, Scripting, Transactions, Performance
+Tags: Redis, Lua, Atomic Operation, Scripting, Transaction, Performance
 
 Description: Learn how to write Redis Lua scripts for complex atomic operations that cannot be achieved with basic commands. This guide covers script writing, debugging, and production patterns.
 

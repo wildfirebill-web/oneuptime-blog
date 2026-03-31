@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Performance, Distributed Systems, Latency, Caching, Circuit Breaker, Observability
+Tags: Microservice, Performance, Distributed System, Latency, Caching, Circuit Breaker, Observability
 
 Description: A comprehensive guide to optimizing microservices performance, covering inter-service communication, caching strategies, circuit breakers, and observability patterns for production systems.
 

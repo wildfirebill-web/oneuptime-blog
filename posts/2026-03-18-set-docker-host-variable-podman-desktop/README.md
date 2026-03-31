@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Docker, DOCKER_HOST, Environment Variables
+Tags: Podman, Container, DevOps, Podman Desktop, Docker, DOCKER_HOST, Environment Variable
 
 Description: Learn how to set the DOCKER_HOST environment variable to point Docker-compatible tools at Podman Desktop's container engine socket.
 

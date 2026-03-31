@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, Terraform Functions, Collections, Map
+Tags: Terraform, Infrastructure as Code, DevOps, Terraform Functions, Collection, Map
 
 Description: Learn advanced patterns for using zipmap in Terraform to create dynamic maps from resource outputs, data sources, and computed values for flexible configurations.
 

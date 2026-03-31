@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, Exemplars, Metrics
+Tags: OpenTelemetry, Prometheus, Exemplars, Metric
 
 Description: Fix missing exemplars in Prometheus when the OpenTelemetry Collector receives them but they do not appear in query results.
 

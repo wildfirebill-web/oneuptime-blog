@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, IAM, Security, Authentication
+Tags: GCP, Cloud Function, IAM, Security, Authentication
 
 Description: Learn how to secure HTTP-triggered Google Cloud Functions using IAM authentication with identity tokens instead of rolling your own API key validation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, ZRANGEBYSCORE, Sorted Set, Pagination, LIMIT
+Tags: Redis, ZRANGEBYSCORE, Sorted Set, Pagination, Limit
 
 Description: Learn how to use ZRANGEBYSCORE with the LIMIT option in Redis to paginate through sorted set members by score range, with practical examples and cursor-based patterns.
 

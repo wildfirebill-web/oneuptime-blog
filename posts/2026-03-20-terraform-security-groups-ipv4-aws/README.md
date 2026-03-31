@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Security Groups, IPv4, Infrastructure as Code, Networking
+Tags: Terraform, AWS, Security Group, IPv4, Infrastructure as Code, Networking
 
 Description: Configure AWS security groups for IPv4 using Terraform, covering ingress/egress rules, CIDR-based and security-group-based references, and best practices for least privilege.
 

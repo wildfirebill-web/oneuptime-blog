@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Service Invocation, Access Control, Security, Microservices
+Tags: Dapr, Service Invocation, Access Control, Security, Microservice
 
 Description: Learn how to configure Dapr service invocation access control lists (ACLs) to restrict which services can call each other's methods in your microservice architecture.
 

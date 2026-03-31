@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Window Functions, Lead, Analytics, Sql
+Tags: MySQL, Window Function, LEAD, Analytics, SQL
 
 Description: Learn how to use MySQL's LEAD() window function to access the next row's value within a partition, enabling period-over-period comparisons and trend analysis.
 

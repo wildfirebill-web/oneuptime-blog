@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Macvlan, DNS, Networking, IPv4, Containers
+Tags: Docker, Macvlan, DNS, Networking, IPv4, Container
 
 Description: Configure working DNS resolution for containers in Docker macvlan networks, which bypass Docker's built-in DNS server and require explicit DNS configuration.
 

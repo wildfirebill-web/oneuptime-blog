@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Migration, Microservices, Observability, Planning, Zero Downtime, Strategy
+Tags: OpenTelemetry, Migration, Microservice, Observability, Planning, Zero Downtime, Strategy
 
 Description: A comprehensive planning guide for migrating a large microservice fleet to OpenTelemetry without disrupting production, covering phased rollout, compatibility layers, and organizational coordination.
 

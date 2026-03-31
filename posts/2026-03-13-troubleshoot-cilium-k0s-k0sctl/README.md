@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, K0s, eBPF
+Tags: Cilium, Kubernetes, k0s, eBPF
 
 Description: A guide to diagnosing and resolving issues when deploying Cilium on k0s clusters provisioned with k0sctl, including multi-node cluster networking configuration.
 

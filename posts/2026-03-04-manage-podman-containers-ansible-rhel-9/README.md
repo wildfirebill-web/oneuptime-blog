@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible, Podman, Containers, Automation, Linux
+Tags: RHEL, Ansible, Podman, Container, Automation, Linux
 
 Description: Use Ansible to manage Podman containers on RHEL, including rootless containers, pod management, and systemd integration.
 

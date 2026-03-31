@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Metrics, Timing, Latency, Performance
+Tags: Metric, Timing, Latency, Performance
 
 Description: Learn to create timing metrics for measuring operation durations and latencies.
 

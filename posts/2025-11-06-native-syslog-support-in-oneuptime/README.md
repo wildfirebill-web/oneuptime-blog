@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Monitoring, Observability, Logs, Logging, Syslog, DevOps
+Tags: Monitoring, Observability, Log, Logging, Syslog, DevOps
 
 Description: Forward RFC3164 and RFC5424 syslog directly into OneUptime over HTTPS, explore real-world use cases, and learn how to alert on the data immediately.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Bicep, Application Insights, Serverless, Infrastructure as Code, Monitoring, Azure
+Tags: Azure Function, Bicep, Application Insights, Serverless, Infrastructure as Code, Monitoring, Azure
 
 Description: Deploy Azure Functions with Bicep templates including full Application Insights integration for monitoring, logging, and performance tracking out of the box.
 

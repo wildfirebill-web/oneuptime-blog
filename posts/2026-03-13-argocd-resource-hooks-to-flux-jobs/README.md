@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, ArgoCD, Resource Hooks, Migration, GitOps, Kubernetes, Jobs
+Tags: Flux CD, ArgoCD, Resource Hooks, Migration, GitOps, Kubernetes, Job
 
 Description: Learn how to replace ArgoCD resource hook annotations with Flux CD pre-sync and post-sync Job patterns for database migrations and deployment automation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, JSON, RedisJSON, Multi-key, Bulk write
+Tags: Redis, JSON, RedisJSON, Multi-Key, Bulk Write
 
 Description: Learn how to use JSON.MSET in Redis to atomically write JSON values to multiple keys and paths in a single command, reducing write round trips.
 

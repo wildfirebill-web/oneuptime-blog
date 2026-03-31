@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Incident Detection, Patterns, Machine Learning, Observability
+Tags: Incident Detection, Pattern, Machine Learning, Observability
 
 Description: Build automated pattern detection systems that identify recurring issues in logs, metrics, and traces before they become incidents.
 

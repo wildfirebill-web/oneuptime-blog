@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Workflow Dispatch, Manual Triggers, CI/CD, Automation, DevOps
+Tags: GitHub Action, Workflow Dispatch, Manual Triggers, CI/CD, Automation, DevOps
 
 Description: Learn how to trigger GitHub Actions workflows manually with custom inputs. This guide covers workflow_dispatch configuration, input types, validation, and practical use cases for on-demand automation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, MySQL, WordPress, Read Replicas, Database, Performance, Scaling
+Tags: Azure, MySQL, WordPress, Read Replica, Database, Performance, Scaling
 
 Description: Configure Azure Database for MySQL Flexible Server as a WordPress backend and use read replicas to scale database performance under heavy traffic.
 

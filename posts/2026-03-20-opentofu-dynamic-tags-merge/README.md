@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Merge, Tags, Resource Tagging, Best Practice
+Tags: OpenTofu, Merge, Tag, Resource Tagging, Best Practice
 
 Description: Learn how to use OpenTofu's merge function to build dynamic tag maps that combine common organizational tags with resource-specific tags for consistent cloud resource tagging.
 

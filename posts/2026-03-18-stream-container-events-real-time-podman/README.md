@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Real-Time, Streaming, Events
+Tags: Podman, Container, DevOps, Monitoring, Real-Time, Streaming, Event
 
 Description: Learn how to stream container events in real-time with Podman to get instant visibility into container lifecycle changes as they happen.
 

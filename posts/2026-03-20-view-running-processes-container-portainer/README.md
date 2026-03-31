@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Processes, Top, Debugging
+Tags: Portainer, Docker, Process, Top, Debugging
 
 Description: Use Portainer to inspect the running processes inside a Docker container without accessing the container shell.
 

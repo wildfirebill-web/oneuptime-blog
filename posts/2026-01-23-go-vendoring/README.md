@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Vendoring, Dependencies, Modules, Vendor
+Tags: Go, Golang, Vendoring, Dependencies, Module, Vendor
 
 Description: Learn how to use vendoring in Go to manage dependencies locally, ensure reproducible builds, and work offline with the vendor directory.
 

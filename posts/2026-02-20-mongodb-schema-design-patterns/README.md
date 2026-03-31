@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Schema Design, Data Modeling, Patterns, NoSQL
+Tags: MongoDB, Schema Design, Data Modeling, Pattern, NoSQL
 
 Description: Learn MongoDB schema design patterns including embedding, referencing, and denormalization for real-world applications.
 

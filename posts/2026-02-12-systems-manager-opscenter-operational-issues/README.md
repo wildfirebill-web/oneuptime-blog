@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Systems Manager, OpsCenter, Operations, Incident Management
+Tags: AWS, Systems Manager, OpsCenter, Operation, Incident Management
 
 Description: Learn how to use AWS Systems Manager OpsCenter to centralize, triage, and resolve operational issues across your AWS infrastructure.
 

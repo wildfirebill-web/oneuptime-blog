@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Kustomization, Microservices, dependsOn, Service Dependencies
+Tags: Flux CD, Kubernetes, GitOps, Kustomization, Microservice, dependsOn, Service Dependencies
 
 Description: Learn how to use the Kustomization dependsOn field in Flux CD to ensure correct deployment order between microservices with inter-service dependencies.
 

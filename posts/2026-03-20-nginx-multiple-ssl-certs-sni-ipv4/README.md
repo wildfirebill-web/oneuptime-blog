@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, SSL, SNI, IPv4, TLS, Virtual Hosting, Certificates
+Tags: Nginx, SSL, SNI, IPv4, TLS, Virtual Hosting, Certificate
 
 Description: Host multiple HTTPS sites on a single IPv4 address using Server Name Indication (SNI) in Nginx, with each domain using its own SSL certificate.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Drop-In Files, Modular Configuration
+Tags: Podman, Container, DevOps, Configuration, Drop-In Files, Modular Configuration
 
 Description: Learn how to use containers.conf.d drop-in directories to organize Podman configuration into modular, purpose-specific files.
 

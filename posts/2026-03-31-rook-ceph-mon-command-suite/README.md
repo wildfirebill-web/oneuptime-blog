@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, CLI, Monitor, Operations, High Availability, Quorum
+Tags: Rook, Ceph, CLI, Monitor, Operation, High Availability, Quorum
 
 Description: Use the ceph mon commands to manage Ceph monitors, check quorum status, add or remove monitors, and diagnose monitor-related issues.
 

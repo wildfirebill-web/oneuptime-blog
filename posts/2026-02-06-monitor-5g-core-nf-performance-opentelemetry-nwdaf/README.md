@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, 5G, NWDAF, Telecommunications, Network Functions
+Tags: OpenTelemetry, 5G, NWDAF, Telecommunications, Network Function
 
 Description: Learn how to monitor 5G core network functions like AMF, SMF, and UPF using OpenTelemetry with NWDAF integration for real-time analytics.
 

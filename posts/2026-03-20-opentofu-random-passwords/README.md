@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Random, Passwords, Security, Random_password
+Tags: OpenTofu, Random, Password, Security, Random_password
 
 Description: Learn how to generate secure random passwords using the OpenTofu random provider for database credentials, API keys, and secrets stored in cloud secret managers.
 

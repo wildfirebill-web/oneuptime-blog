@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cassandra, NoSQL, Data Modeling, Database Design, Distributed Systems
+Tags: Cassandra, NoSQL, Data Modeling, Database Design, Distributed System
 
 Description: Learn how to design effective Cassandra data models with partition keys, clustering columns, and query-driven design principles.
 

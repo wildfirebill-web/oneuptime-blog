@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Git, Auto-Update, CI/CD
+Tags: Portainer, Stack, Git, Auto-Update, CI/CD
 
 Description: Configure Portainer to automatically update stacks when changes are pushed to a Git repository using polling.
 

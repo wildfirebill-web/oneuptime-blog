@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, mongoimport, Data Import, JSON, Performance
+Tags: MongoDB, Mongoimport, Data Import, JSON, Performance
 
 Description: Learn how to efficiently import large JSON files into MongoDB using mongoimport, batch size tuning, and streaming techniques to handle millions of records.
 

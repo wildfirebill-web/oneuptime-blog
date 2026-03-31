@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Security, Network Policies, Microservices, Zero Trust
+Tags: Flux, Kubernetes, GitOps, Security, Network Policies, Microservice, Zero Trust
 
 Description: Secure internal communication between Flux controllers using Kubernetes NetworkPolicies that enforce least-privilege access between components.
 

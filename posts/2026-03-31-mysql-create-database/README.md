@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, Database, Administration
+Tags: MySQL, SQL, DDL, Database
 
 Description: Create MySQL databases with CREATE DATABASE, set character sets and collations, and manage database-level permissions for application users.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Log Correlation, Distributed Tracing, OpenTelemetry, Observability, Traces, Span, Context Propagation
+Tags: Log Correlation, Distributed Tracing, OpenTelemetry, Observability, Trace, Span, Context Propagation
 
 Description: Learn how to correlate logs with distributed traces for complete request visibility.
 

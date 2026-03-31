@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AKS, Prometheus, Azure Monitor, Monitoring, Kubernetes, Metrics, Grafana
+Tags: AKS, Prometheus, Azure Monitor, Monitoring, Kubernetes, Metric, Grafana
 
 Description: Step-by-step guide to setting up Azure Monitor managed Prometheus on AKS for scalable metric collection without managing your own Prometheus infrastructure.
 

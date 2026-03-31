@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps, Volume Mounts
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps, Volume Mounts
 
 Description: Learn how to mount host directories into a Podman machine so containers can access and modify files on your local filesystem.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Vagrant, Development Environments, Containers, DevOps
+Tags: Podman, Vagrant, Development Environment, Container, DevOps
 
 Description: Learn how to use Podman as a provider for Vagrant to create lightweight, container-based development environments that are faster and more resource-efficient than virtual machines.
 

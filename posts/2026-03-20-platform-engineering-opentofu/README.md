@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Platform Engineering, Internal Developer Platform, Modules, Infrastructure as Code, DevOps
+Tags: OpenTofu, Platform Engineering, Internal Developer Platform, Module, Infrastructure as Code, DevOps
 
 Description: Learn how to build an Internal Developer Platform (IDP) foundation using OpenTofu modules that enable product teams to self-service infrastructure without deep cloud expertise.
 

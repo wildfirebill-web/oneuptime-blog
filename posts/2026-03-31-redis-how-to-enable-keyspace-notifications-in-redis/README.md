@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Keyspace Notifications, Events, Pub/Sub, Configuration
+Tags: Redis, Keyspace Notification, Event, Pub/Sub, Configuration
 
 Description: Enable Redis keyspace notifications to receive Pub/Sub events when keys are modified, expired, or deleted, and configure which event types to monitor.
 

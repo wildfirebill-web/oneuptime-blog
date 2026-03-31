@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Cephfs, Kubernetes, Storage, Storageclass
+Tags: Rook, Ceph, CephFS, Kubernetes, Storage, StorageClass
 
 Description: Learn how to create a Kubernetes StorageClass for Rook CephFS to enable dynamic provisioning of ReadWriteMany persistent volumes.
 

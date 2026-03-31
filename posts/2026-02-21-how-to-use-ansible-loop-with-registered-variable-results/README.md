@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Registered Variables, Automation
+Tags: Ansible, Loop, Registered Variables, Automation
 
 Description: Learn how to register variables inside Ansible loops and iterate over the results in subsequent tasks for powerful multi-step automation workflows.
 

@@ -1,6 +1,6 @@
 # How to Configure MongoDB LDAP Authentication
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, LDAP, Authentication, Security, Enterprise
 

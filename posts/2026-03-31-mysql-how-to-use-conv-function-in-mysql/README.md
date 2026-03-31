@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Conv, Base Conversion, Number Systems, Sql Functions
+Tags: MySQL, Conv, Base Conversion, Number Systems, SQL Functions
 
 Description: Learn how to use MySQL's CONV() function to convert numbers between different bases such as binary, octal, decimal, and hexadecimal.
 

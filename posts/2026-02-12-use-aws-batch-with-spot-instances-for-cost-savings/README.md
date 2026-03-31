@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Batch, Spot Instances, Cost Optimization, EC2, Cloud Computing
+Tags: AWS, Batch, Spot Instance, Cost Optimization, EC2, Cloud Computing
 
 Description: A practical guide to using AWS Batch with EC2 Spot Instances to reduce compute costs by up to 90% for fault-tolerant batch processing workloads.
 

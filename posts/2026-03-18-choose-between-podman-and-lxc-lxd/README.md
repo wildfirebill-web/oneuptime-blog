@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, LXC, LXD, Containers, System Containers
+Tags: Podman, LXC, LXD, Container, System Containers
 
 Description: Compare Podman and LXC/LXD to understand the differences between application containers and system containers, and choose the right tool for your workload.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Spot Instances, Fault Tolerance, High Availability
+Tags: AWS, EC2, Spot Instance, Fault Tolerance, High Availability
 
 Description: Practical strategies and code examples for handling EC2 Spot Instance interruptions gracefully so your applications stay reliable.
 

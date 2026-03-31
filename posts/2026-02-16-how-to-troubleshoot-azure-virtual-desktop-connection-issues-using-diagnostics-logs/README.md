@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Virtual Desktop, Diagnostics, Troubleshooting, Log Analytics, AVD, Monitoring, Connection Issues
+Tags: Azure Virtual Desktop, Diagnostic, Troubleshooting, Log Analytics, AVD, Monitoring, Connection Issues
 
 Description: A practical guide to troubleshooting Azure Virtual Desktop connection failures and performance issues using diagnostics logs and Log Analytics queries.
 

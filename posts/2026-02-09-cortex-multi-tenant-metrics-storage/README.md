@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cortex, Kubernetes, Multi-Tenancy, Metrics, Prometheus
+Tags: Cortex, Kubernetes, Multi-Tenancy, Metric, Prometheus
 
 Description: Learn how to deploy and configure Cortex for multi-tenant Prometheus metrics storage in Kubernetes with tenant isolation and per-tenant limits.
 

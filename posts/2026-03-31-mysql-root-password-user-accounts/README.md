@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Security, User, Authentication, Database, Administration
+Tags: MySQL, Security, User, Authentication, Database
 
 Description: Set the MySQL root password, create application user accounts with least-privilege grants, and manage authentication plugins in MySQL 8.0.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Terraform, Variables, Outputs, IaC, Linux
+Tags: RHEL, Terraform, Variable, Output, IaC, Linux
 
 Description: Master Terraform variables and outputs on RHEL, including input variables, local values, output values, and variable validation.
 

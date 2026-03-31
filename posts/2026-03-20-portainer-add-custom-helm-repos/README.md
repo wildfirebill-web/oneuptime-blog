@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Helm, DevOps, Packages
+Tags: Portainer, Kubernetes, Helm, DevOps, Package
 
 Description: Learn how to add custom Helm repositories in Portainer to enable deploying applications from your own or third-party chart repositories.
 

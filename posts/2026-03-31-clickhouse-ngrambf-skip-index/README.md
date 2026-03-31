@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Skip Index, ngrambf_v1, Text Search, Index
+Tags: ClickHouse, Skip Index, Ngrambf_v1, Text Search, Index
 
 Description: Learn how to use the ngrambf_v1 skip index in ClickHouse to accelerate substring and LIKE searches on string columns using n-gram bloom filters.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Kubernetes, Monitoring, CPU, Memory, Metrics, PromQL
+Tags: Prometheus, Kubernetes, Monitoring, CPU, Memory, Metric, PromQL
 
 Description: Learn how to query CPU and memory usage for Kubernetes pods using Prometheus.
 

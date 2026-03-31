@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Chainsaw, Testing, Integration Tests
+Tags: Flux, Kubernetes, GitOps, Chainsaw, Testing, Integration Test
 
 Description: Learn how to use Chainsaw to write and run integration tests that validate your Flux deployments work correctly end to end.
 

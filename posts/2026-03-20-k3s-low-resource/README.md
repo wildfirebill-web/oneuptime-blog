@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Edge Computing, Low Resource, IoT, Embedded Systems, Kubernetes, SUSE Rancher
+Tags: k3s, Edge Computing, Low Resource, IoT, Embedded Systems, Kubernetes, SUSE Rancher
 
 Description: Learn how to configure K3s for low-resource environments like Raspberry Pi, IoT gateways, and embedded systems by disabling unused components and tuning resource usage.
 

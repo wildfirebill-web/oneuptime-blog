@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Registry, DevOps
+Tags: Portainer, Docker, Image, Registry, DevOps
 
 Description: Learn how to pull Docker images from Docker Hub and private registries in Portainer, including configuring registry credentials.
 

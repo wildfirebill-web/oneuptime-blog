@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Monitoring, Processes
+Tags: Podman, Container, DevOps, Pod, Monitoring, Process
 
 Description: Learn how to use podman pod top to view running processes across all containers in a pod.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Diagnostics, Monitoring
+Tags: MongoDB, Diagnostic, Monitoring
 
 Description: Learn how to use the MongoDB Diagnostic Data Collector (FTDC) to capture operational metrics for performance analysis and support troubleshooting.
 

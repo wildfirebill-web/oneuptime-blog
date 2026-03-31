@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Etcd, Distributed Systems, Configuration Management, Consensus
+Tags: Redis, etcd, Distributed System, Configuration Management, Consensus
 
 Description: Compare Redis and etcd for distributed configuration storage, covering consistency guarantees, watch semantics, TTL, and leader election patterns.
 

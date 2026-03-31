@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Windows Containers, Mixed Workloads, Hybrid, Scheduling
+Tags: Kubernetes, Windows Containers, Mixed Workload, Hybrid, Scheduling
 
 Description: Learn how to run Windows containers alongside Linux containers on Kubernetes with node selectors and taints.
 

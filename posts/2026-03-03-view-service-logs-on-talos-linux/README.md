@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Logs, Troubleshooting, Kubernetes, Monitoring, Observability
+Tags: Talos Linux, Log, Troubleshooting, Kubernetes, Monitoring, Observability
 
 Description: A comprehensive guide to viewing, filtering, and analyzing service logs on Talos Linux using talosctl for effective troubleshooting and monitoring.
 

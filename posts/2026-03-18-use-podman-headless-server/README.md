@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Headless Server, Containers, Linux, DevOps, Systemd, Production, SSH
+Tags: Podman, Headless Server, Container, Linux, DevOps, Systemd, Production, SSH
 
 Description: Learn to install and manage Podman on headless Linux servers, covering SSH remote management, systemd integration, auto-start containers, and monitoring.
 

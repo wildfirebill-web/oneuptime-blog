@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Traefik, Proxy, Kubernetes, Containers, Ingresses, Linux
+Tags: RHEL, Traefik, Proxy, Kubernetes, Container, Ingresses, Linux
 
 Description: Learn how to set Up Traefik as a Kubernetes Ingress Controller on RHEL 9 with step-by-step instructions, configuration examples, and best practices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, VNet Peering, Networks, Connectivity, Hub-Spoke, Infrastructure as Code
+Tags: OpenTofu, Azure, VNet Peering, Network, Connectivity, Hub-Spoke, Infrastructure as Code
 
 Description: Learn how to configure Azure Virtual Network peering with OpenTofu to connect VNets within the same region or across regions for private traffic routing without gateways.
 

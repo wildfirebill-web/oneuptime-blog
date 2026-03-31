@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sharding, Scalability, Operations, Cluster
+Tags: MongoDB, Sharding, Scalability, Operation, Cluster
 
 Description: Enable sharding on a MongoDB database and collection to distribute data across multiple shards for horizontal scalability.
 

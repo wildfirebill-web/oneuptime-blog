@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Set, SET ROLE, Settings, Security
+Tags: ClickHouse, SQL, Set, SET ROLE, Setting, Security
 
 Description: Learn how to configure session-scoped settings with SET and activate roles with SET ROLE in ClickHouse, including how to reset settings and manage role context.
 

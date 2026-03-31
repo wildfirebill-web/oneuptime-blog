@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Service Mesh, Breaking Changes, Migration
+Tags: Istio, Kubernetes, Service Mesh, Breaking Change, Migration
 
 Description: How to identify, prepare for, and handle breaking changes when upgrading Istio versions, with real examples of common breaking changes and fixes.
 

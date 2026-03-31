@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Bitbucket
+Tags: OpenTofu, Terraform, IaC, Module, Bitbucket
 
 Description: Learn how to use Bitbucket repositories as OpenTofu module sources for teams using Atlassian's platform.
 

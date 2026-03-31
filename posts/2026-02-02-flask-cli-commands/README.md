@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Flask, Python, CLI, Commands, Automation
+Tags: Flask, Python, CLI, Command, Automation
 
 Description: Create custom Flask CLI commands to automate tasks, manage data, and streamline your development workflow.
 

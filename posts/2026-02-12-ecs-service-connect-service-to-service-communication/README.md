@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, ECS, Networking, Microservices, Service Mesh
+Tags: AWS, ECS, Networking, Microservice, Service Mesh
 
 Description: Learn how to set up and configure ECS Service Connect for reliable service-to-service communication with built-in load balancing, retries, and observability.
 

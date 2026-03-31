@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ZooKeeper, Kafka, IPv4, Configuration, Distributed Systems, Networking
+Tags: ZooKeeper, Kafka, IPv4, Configuration, Distributed System, Networking
 
 Description: Configure Apache ZooKeeper to bind to specific IPv4 addresses for Kafka coordination, set quorum peer addresses, configure firewall rules, and secure the ZooKeeper ensemble.
 

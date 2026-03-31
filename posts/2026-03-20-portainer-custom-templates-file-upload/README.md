@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, DevOps
+Tags: Portainer, Docker, Template, DevOps
 
 Description: Learn how to create Portainer custom templates by uploading Docker Compose files directly from your local machine.
 

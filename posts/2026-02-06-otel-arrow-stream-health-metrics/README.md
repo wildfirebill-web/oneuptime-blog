@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OTel Arrow, Monitoring, Metrics
+Tags: OpenTelemetry, OTel Arrow, Monitoring, Metric
 
 Description: Monitor OTel Arrow stream health and compression ratios using the OpenTelemetry Collector's internal metrics.
 

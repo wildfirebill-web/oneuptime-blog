@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Headers, HTTP, Traffic Management, Service Mesh
+Tags: Istio, Header, HTTP, Traffic Management, Service Mesh
 
 Description: Learn how to add, remove, and modify HTTP headers using Istio VirtualService.
 

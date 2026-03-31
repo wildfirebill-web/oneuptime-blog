@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Quarkus, Metrics, Java, Micrometer, Configuration
+Tags: OpenTelemetry, Quarkus, Metric, Java, Micrometer, Configuration
 
 Description: Comprehensive guide to implementing and configuring OpenTelemetry metrics in Quarkus applications, including Micrometer integration, custom metrics, native image support.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Traceroute, Tracepath, Linux, Networking, MTU, Diagnostics
+Tags: Traceroute, Tracepath, Linux, Networking, MTU, Diagnostic
 
 Description: Compare traceroute and tracepath on Linux, understand when to use each, and leverage tracepath's unique ability to discover path MTU alongside hop information.
 

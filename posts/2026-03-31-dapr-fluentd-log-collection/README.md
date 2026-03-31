@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, FluentD, Logging, Kubernetes, Observability
+Tags: Dapr, Fluentd, Logging, Kubernetes, Observability
 
 Description: Configure FluentD as a DaemonSet to collect Dapr sidecar logs from all Kubernetes nodes and forward them to your log storage backend.
 

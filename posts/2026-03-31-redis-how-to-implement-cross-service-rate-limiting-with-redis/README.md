@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Rate Limiting, Microservices, Distributed Systems, Node.js
+Tags: Redis, Rate Limiting, Microservice, Distributed System, Node.js
 
 Description: Implement shared Redis-backed rate limiting across multiple microservices so that rate limit counters are enforced globally regardless of which service handles the request.
 

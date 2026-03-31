@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Syslog
+Tags: Podman, Container, DevOps, Logging, Syslog
 
 Description: Learn how to forward Podman container logs to a syslog server for centralized log management, using journald integration and direct syslog forwarding approaches.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Bicep, Parameters, IaC, DevOps, Configuration Management, Cloud
+Tags: Azure, Bicep, Parameter, IaC, DevOps, Configuration Management, Cloud
 
 Description: Learn how to structure Bicep parameter files for dev, staging, and production environments with type-safe configurations and best practices.
 

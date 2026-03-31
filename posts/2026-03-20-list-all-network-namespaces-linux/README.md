@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Namespaces, iproute2, Networking, Containers, System Administration
+Tags: Linux, Network Namespaces, iproute2, Networking, Container, System Administration
 
 Description: List and inspect all network namespaces on a Linux system using ip netns list, /var/run/netns, and lsns to understand the current namespace layout.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Edge Computing, IoT, DevOps, Distributed Systems
+Tags: k3s, Kubernetes, Edge Computing, IoT, DevOps, Distributed System
 
 Description: Learn how to deploy and configure K3s for edge computing scenarios including remote sites, retail stores, and distributed infrastructure.
 

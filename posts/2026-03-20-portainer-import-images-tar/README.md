@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Air-Gap, DevOps
+Tags: Portainer, Docker, Image, Air-Gap, DevOps
 
 Description: Learn how to import Docker images from tar files in Portainer for air-gapped environments, offline deployments, or image transfer between systems.
 

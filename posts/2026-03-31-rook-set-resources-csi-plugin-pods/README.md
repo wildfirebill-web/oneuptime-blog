@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, CSI, Plugin, Resources, Pod
+Tags: Rook, Ceph, Kubernetes, CSI, Plugin, Resource, Pod
 
 Description: Configure resource requests and limits for Rook CSI plugin pods (csi-rbdplugin and csi-cephfsplugin) to ensure reliable volume mount/unmount operations on all cluster nodes.
 

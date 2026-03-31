@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Availability Zones, Zone Redundancy, High Availability, SLA, Resilience, Cloud Architecture
+Tags: Azure, Availability Zone, Zone Redundancy, High Availability, SLA, Resilience, Cloud Architecture
 
 Description: Configure zone-redundant deployments across Azure services to achieve 99.99% availability SLAs and protect against datacenter failures.
 

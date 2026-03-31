@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Traefik, Middleware, Security, Headers
+Tags: Portainer, Traefik, Middleware, Security, Header
 
 Description: Learn how to configure Traefik middlewares for containers deployed via Portainer, including rate limiting, authentication, headers, and request transformation.
 

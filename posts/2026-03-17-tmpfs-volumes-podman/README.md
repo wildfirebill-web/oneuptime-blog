@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, tmpfs, Volumes, Memory, Performance
+Tags: Podman, Container, DevOps, tmpfs, Volumes, Memory, Performance
 
 Description: Learn how to use tmpfs volumes in Podman for fast, ephemeral in-memory storage in containers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, subuid, subgid, User Namespaces
+Tags: Podman, Container, DevOps, Rootless, subuid, subgid, User Namespaces
 
 Description: Learn how to configure subuid and subgid mappings required for rootless Podman to map container UIDs to host UIDs securely.
 

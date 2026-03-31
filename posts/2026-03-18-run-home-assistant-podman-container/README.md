@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Home Assistant, Podman, Containers, Smart Home, IoT, Linux, Automation
+Tags: Home Assistant, Podman, Container, Smart Home, IoT, Linux, Automation
 
 Description: Deploy Home Assistant Core inside a Podman container to manage your smart home devices, with persistent configuration, host network access, and automatic restarts.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Micronaut, Serverless, Java
+Tags: GCP, Cloud Function, Micronaut, Serverless, Java
 
 Description: Step-by-step guide to building a serverless application with the Micronaut framework and deploying it as a Google Cloud Function with fast cold start times.
 

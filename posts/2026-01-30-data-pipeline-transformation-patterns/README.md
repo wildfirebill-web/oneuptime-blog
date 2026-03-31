@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, ETL, Data Transformation, Dbt
+Tags: Data Pipeline, ETL, Data Transformation, Dbt
 
 Description: Learn to implement data transformation patterns for converting raw data into analytics-ready formats.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Span Events, Tracing, Observability, Debugging, Exceptions, Logging
+Tags: OpenTelemetry, Span Events, Tracing, Observability, Debugging, Exception, Logging
 
 Description: Learn how to use span events in OpenTelemetry to capture discrete occurrences within spans, including exceptions, checkpoints, and business events.
 

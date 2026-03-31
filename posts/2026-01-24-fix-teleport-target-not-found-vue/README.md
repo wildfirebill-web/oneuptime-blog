@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vue, Vue3, Teleport, Components, Frontend, JavaScript, Debugging
+Tags: Vue, Vue3, Teleport, Component, Frontend, JavaScript, Debugging
 
 Description: Resolve Vue 3 Teleport target not found errors by understanding mounting order, dynamic targets, and SSR considerations.
 

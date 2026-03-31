@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Incident Management, SRE, Routing, Operations
+Tags: Incident Management, SRE, Routing, Operation
 
 Description: Learn how to route incidents to the right teams automatically.
 

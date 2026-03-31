@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Git, Versioning, Infrastructure as Code
+Tags: Terraform, Module, Git, Versioning, Infrastructure as Code
 
 Description: Learn how to version your Terraform modules using Git tags for reliable, reproducible infrastructure deployments across teams and environments.
 

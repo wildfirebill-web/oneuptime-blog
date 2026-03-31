@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Window Functions, Analytics, Sql
+Tags: MySQL, Window Function, Analytics, SQL
 
 Description: Learn how to calculate moving averages in MySQL using AVG() with OVER and window frame specifications to smooth time-series data.
 

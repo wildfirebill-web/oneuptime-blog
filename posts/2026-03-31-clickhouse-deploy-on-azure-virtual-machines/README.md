@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Azure, Virtual Machines, Deployment, Cloud, Infrastructure, Linux
+Tags: ClickHouse, Azure, Virtual Machine, Deployment, Cloud, Infrastructure, Linux
 
 Description: Deploy a production-ready ClickHouse instance on Azure Virtual Machines with recommended VM sizes, disk configuration, and network security rules.
 

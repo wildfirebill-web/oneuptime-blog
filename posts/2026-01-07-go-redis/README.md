@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Redis, Caching, Performance, Distributed Systems
+Tags: Go, Redis, Caching, Performance, Distributed System
 
 Description: Master Redis in Go using go-redis library for caching, pub/sub messaging, distributed locks, and efficient connection pooling.
 

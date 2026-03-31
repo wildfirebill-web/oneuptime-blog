@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Debugging, Troubleshooting, Operations
+Tags: Portainer, Kubernetes, Debugging, Troubleshooting, Operation
 
 Description: Use Portainer's Kubernetes interface to debug failing pods by viewing events, logs, and resource states.
 

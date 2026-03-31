@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Dayofweek, Dayofyear, Date Functions, Sql
+Tags: MySQL, Dayofweek, Dayofyear, Date Function, SQL
 
 Description: Learn how to use MySQL's DAYOFWEEK() and DAYOFYEAR() functions to extract the day-of-week index and day-of-year number from date values.
 

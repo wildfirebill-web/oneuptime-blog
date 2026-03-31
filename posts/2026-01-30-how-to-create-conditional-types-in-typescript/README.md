@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: TypeScript, Types, Conditional, Advanced
+Tags: TypeScript, Type, Conditional, Advanced
 
 Description: Learn how to use conditional types in TypeScript for powerful type-level programming and type inference.
 

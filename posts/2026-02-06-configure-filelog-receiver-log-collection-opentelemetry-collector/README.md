@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Filelog, Receiver, Logs, File Parsing
+Tags: OpenTelemetry, Collector, Filelog, Receiver, Log, File Parsing
 
 Description: Master the Filelog Receiver in OpenTelemetry Collector to collect, parse, and transform logs from files with advanced operators for JSON, regex, and multiline processing.
 

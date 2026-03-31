@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Tempo, Observability, Metrics, Tracing
+Tags: Tempo, Observability, Metric, Tracing
 
 Description: Learn how to generate Prometheus metrics directly from distributed traces using Grafana Tempo's metrics generator.
 

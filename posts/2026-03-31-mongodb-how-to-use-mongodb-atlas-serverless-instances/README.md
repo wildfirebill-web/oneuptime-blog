@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Atlas Serverless, Cloud, Auto-Scaling, Serverless
+Tags: MongoDB, Atlas Serverless, Cloud, Auto-Scaling, Serverless
 
 Description: Learn how to create and use MongoDB Atlas Serverless instances that automatically scale to zero and charge only for operations you perform.
 

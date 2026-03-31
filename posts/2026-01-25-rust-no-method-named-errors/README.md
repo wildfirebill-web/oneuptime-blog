@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Methods, Traits, Error Handling, Type System
+Tags: Rust, Method, Traits, Error Handling, Type System
 
 Description: Learn how to diagnose and fix the 'no method named X found' error in Rust. This guide covers missing trait imports, method visibility, trait implementations, and common solutions.
 

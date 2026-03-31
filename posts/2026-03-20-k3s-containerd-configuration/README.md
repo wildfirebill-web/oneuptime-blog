@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Containerd, Container Runtime, Kubernetes, SUSE Rancher, CRI, Registry
+Tags: k3s, Containerd, Container Runtime, Kubernetes, SUSE Rancher, CRI, Registry
 
 Description: Learn how to configure K3s's embedded containerd runtime, including registry mirrors, snapshot settings, custom configuration overlays, and runtime class configuration.
 

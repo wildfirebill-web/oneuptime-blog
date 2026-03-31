@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Firestore, Transactions, Atomic Operations, Firebase
+Tags: GCP, Firestore, Transaction, Atomic Operation, Firebase
 
 Description: Learn how to use Firestore transactions to perform atomic read-write operations that keep your data consistent even under concurrent access.
 

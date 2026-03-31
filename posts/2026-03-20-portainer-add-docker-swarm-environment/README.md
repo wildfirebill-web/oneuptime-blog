@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Environments, Cluster Management
+Tags: Portainer, Docker Swarm, Environment, Cluster Management
 
 Description: Add a Docker Swarm cluster to Portainer for centralized management of services, stacks, and nodes across the entire Swarm.
 

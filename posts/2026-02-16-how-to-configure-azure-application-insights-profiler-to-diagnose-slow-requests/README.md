@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Application Insights, Profiler, Performance Diagnostics, .NET, Slow Requests, APM, Azure Monitor
+Tags: Azure Application Insights, Profiler, Performance Diagnostics, .NET, Slow Request, APM, Azure Monitor
 
 Description: A practical guide to enabling and using Azure Application Insights Profiler to identify the root cause of slow requests in production applications.
 

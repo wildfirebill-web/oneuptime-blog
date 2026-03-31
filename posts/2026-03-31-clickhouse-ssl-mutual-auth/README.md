@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SSL, TLS, Security, Authentication, Certificates, mTLS
+Tags: ClickHouse, SSL, TLS, Security, Authentication, Certificate, mTLS
 
 Description: Configure mutual TLS (mTLS) in ClickHouse so both the server and clients authenticate with X.509 certificates, eliminating password-based authentication for service accounts.
 

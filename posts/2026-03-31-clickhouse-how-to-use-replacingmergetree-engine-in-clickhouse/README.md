@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ReplacingMergeTree, Table Engines, Deduplication, Sql
+Tags: ClickHouse, ReplacingMergeTree, Table Engine, Deduplication, SQL
 
 Description: Learn how to use ReplacingMergeTree in ClickHouse to deduplicate rows with the same primary key, keeping only the latest version of each record.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Hashes, Data Structures, Objects, Beginner, Hset
+Tags: Redis, Hash, Data Structure, Object, Beginner, HSET
 
 Description: Learn how to store and retrieve structured objects in Redis using hashes, including field operations, partial updates, and memory efficiency.
 

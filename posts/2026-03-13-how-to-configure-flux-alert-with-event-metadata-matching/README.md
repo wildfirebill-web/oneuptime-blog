@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Alerts, Metadata, Event Filtering
+Tags: Flux, Kubernetes, GitOps, Alert, Metadata, Event Filtering
 
 Description: Learn how to configure Flux alerts that match on event metadata fields for fine-grained notification control beyond message-based filtering.
 

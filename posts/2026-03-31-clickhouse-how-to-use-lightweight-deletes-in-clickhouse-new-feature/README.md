@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Delete, Mutations, Performance
+Tags: ClickHouse, Delete, Mutation, Performance
 
 Description: Learn how to use ClickHouse Lightweight Deletes for fast row-level deletion without the overhead of traditional heavy mutations.
 

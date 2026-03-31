@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Azure, VHD, Image Builder, Custom Images, Cloud, Linux
+Tags: RHEL, Azure, VHD, Image Builder, Custom Image, Cloud, Linux
 
 Description: Build custom RHEL VHD images for Azure using Image Builder with the Azure Linux Agent, cloud-init, and your organization's standard configurations.
 

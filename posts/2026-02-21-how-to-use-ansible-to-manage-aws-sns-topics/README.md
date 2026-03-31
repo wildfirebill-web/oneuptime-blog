@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, AWS, SNS, Messaging, Notifications
+Tags: Ansible, AWS, SNS, Messaging, Notification
 
 Description: Learn how to create and manage AWS SNS topics and subscriptions with Ansible for event-driven architectures and notification systems.
 

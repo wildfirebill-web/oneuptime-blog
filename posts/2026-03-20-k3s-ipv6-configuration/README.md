@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, IPv6, Networking, DevOps
+Tags: k3s, Kubernetes, IPv6, Networking, DevOps
 
 Description: Learn how to configure K3s for IPv6-only or IPv6 single-stack networking to support modern network infrastructure.
 

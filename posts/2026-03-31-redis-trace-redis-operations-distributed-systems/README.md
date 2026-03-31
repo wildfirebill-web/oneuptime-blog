@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, OpenTelemetry, Tracing, Distributed Systems, Observability
+Tags: Redis, OpenTelemetry, Tracing, Distributed System, Observability
 
 Description: Learn how to instrument Redis calls with distributed traces using OpenTelemetry so you can follow requests across services and identify cache bottlenecks.
 

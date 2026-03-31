@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Edge Computing, Autonomous Vehicles, AI/ML, NVIDIA, Real-Time, Kubernetes
+Tags: k3s, Edge Computing, Autonomous Vehicle, AI/ML, NVIDIA, Real-Time, Kubernetes
 
 Description: Learn how to configure K3s for autonomous vehicle edge computing, including real-time workload scheduling, GPU access for perception pipelines, and safety-critical deployment patterns.
 

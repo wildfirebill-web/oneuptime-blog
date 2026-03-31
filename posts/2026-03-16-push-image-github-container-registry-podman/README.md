@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, GitHub, GHCR, Registry
+Tags: Podman, Container, DevOps, Container Image, GitHub, GHCR, Registry
 
 Description: Learn how to push container images to GitHub Container Registry (ghcr.io) using Podman, including personal access token authentication and GitHub Actions integration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Troubleshooting, Database Corruption, BoltDB, Stacks, Recovery
+Tags: Portainer, Troubleshooting, Database Corruption, BoltDB, Stack, Recovery
 
 Description: Learn how to recover missing stacks after Portainer's BoltDB database becomes corrupted, including inspection, partial recovery, and prevention strategies.
 

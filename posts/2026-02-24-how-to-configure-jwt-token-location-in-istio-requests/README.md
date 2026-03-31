@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, JWT, Token Location, RequestAuthentication, Headers
+Tags: Istio, JWT, Token Location, RequestAuthentication, Header
 
 Description: How to configure where Istio looks for JWT tokens in incoming requests including headers, query parameters, and custom locations.
 

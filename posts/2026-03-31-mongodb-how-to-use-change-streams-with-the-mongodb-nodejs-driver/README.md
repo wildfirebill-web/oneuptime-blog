@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change Streams, Node.js, Real-Time, Event-Driven
+Tags: MongoDB, Change Stream, Node.js, Real-Time, Event-Driven
 
 Description: Learn how to use MongoDB change streams in Node.js to watch for real-time insert, update, and delete events on collections, databases, or entire deployments.
 

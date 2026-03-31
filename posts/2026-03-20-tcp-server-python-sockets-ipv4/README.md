@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, TCP, Sockets, IPv4, Networking, Server
+Tags: Python, TCP, Socket, IPv4, Networking, Server
 
 Description: Learn how to build a basic TCP server in Python using the socket module with IPv4 addressing to accept and handle client connections.
 

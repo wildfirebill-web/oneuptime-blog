@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Key Vault, Secrets, Keys, OpenTofu, Security
+Tags: Azure, Key Vault, Secret, Key, OpenTofu, Security
 
 Description: Learn how to create and manage Azure Key Vault keys, secrets, and certificates with OpenTofu for secure secret management and cryptographic key storage.
 

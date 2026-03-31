@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Troubleshooting, Operations
+Tags: Rancher, Kubernetes, Troubleshooting, Operation
 
 Description: A systematic guide to diagnosing and resolving issues when Rancher server fails to start, covering logs, certificates, database, and resource constraints.
 

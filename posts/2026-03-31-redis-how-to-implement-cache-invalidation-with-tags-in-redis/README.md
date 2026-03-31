@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Caching, Cache Invalidation, Tags, Backend
+Tags: Redis, Caching, Cache Invalidation, Tag, Backend
 
 Description: Learn how to implement tag-based cache invalidation in Redis to efficiently expire groups of related cache entries without manual tracking.
 

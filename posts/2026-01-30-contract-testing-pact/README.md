@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Contract Testing, Pact, Microservices, Testing, API
+Tags: Contract Testing, Pact, Microservice, Testing, API
 
 Description: Implement consumer-driven contract testing with Pact for reliable API integrations between microservices with broker workflows.
 

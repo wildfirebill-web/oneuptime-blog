@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Fault Tolerance, Graceful Degradation, Resilience, Microservices
+Tags: Go, Fault Tolerance, Graceful Degradation, Resilience, Microservice
 
 Description: A practical guide to building Go services that stay functional when things break, with real code patterns for circuit breakers, fallbacks, and partial responses.
 

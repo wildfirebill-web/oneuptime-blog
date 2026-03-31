@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Spring Boot, MySQL, Java, Docker Compose, Microservices
+Tags: Portainer, Spring Boot, MySQL, Java, Docker Compose, Microservice
 
 Description: Learn how to deploy a Spring Boot application with MySQL via Portainer, including database health checks, environment variable configuration, and JAR deployment.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Tempo, Observability, Metrics, Performance
+Tags: Tempo, Observability, Metric, Performance
 
 Description: Learn how to derive latency histograms, error rates, and RED metrics from distributed traces using Grafana Tempo's span metrics generator.
 

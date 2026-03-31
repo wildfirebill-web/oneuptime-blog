@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud DLP, Dataflow, Apache Beam, Data Pipelines
+Tags: GCP, Cloud DLP, Dataflow, Apache Beam, Data Pipeline
 
 Description: Learn how to build a Dataflow pipeline that integrates with Cloud DLP to de-identify sensitive data at scale across millions of records in BigQuery and Cloud Storage.
 

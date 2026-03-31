@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Deno, Streams, Web Streams API, Performance
+Tags: Deno, Stream, Web Streams API, Performance
 
 Description: A comprehensive guide to working with streams in Deno, covering ReadableStream, WritableStream, TransformStream, piping, async iteration, and real-world examples for efficient data processing.
 

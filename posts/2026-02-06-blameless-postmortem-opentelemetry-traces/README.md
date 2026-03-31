@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Postmortem, Incident Response, Traces
+Tags: OpenTelemetry, Postmortem, Incident Response, Trace
 
 Description: Use OpenTelemetry trace data to build evidence-based blameless postmortem workflows that focus on systems rather than people.
 

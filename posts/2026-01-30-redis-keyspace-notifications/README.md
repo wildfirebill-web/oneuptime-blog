@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Events, Notifications, Real-Time
+Tags: Redis, Event, Notification, Real-Time
 
 Description: Use Redis keyspace notifications to react to key events like expiration, deletion, and modifications for event-driven architectures.
 

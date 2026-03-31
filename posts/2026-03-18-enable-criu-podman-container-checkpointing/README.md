@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, CRIU, Containers, Checkpointing, Linux
+Tags: Podman, CRIU, Container, Checkpointing, Linux
 
 Description: A step-by-step guide to installing and enabling CRIU on Linux so you can use Podman's container checkpoint and restore features for live migration, fast startup, and disaster recovery.
 

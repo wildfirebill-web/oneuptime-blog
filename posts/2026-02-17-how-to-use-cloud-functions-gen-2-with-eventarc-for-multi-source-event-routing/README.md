@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Eventarc, Serverless, Event-Driven Architecture
+Tags: GCP, Cloud Function, Eventarc, Serverless, Event-Driven Architecture
 
 Description: A practical guide to using Cloud Functions Gen 2 with Eventarc to route events from multiple Google Cloud sources into a single event-driven architecture.
 

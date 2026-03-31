@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, ip command, iproute2, Network Namespaces, Containers, Networking
+Tags: Linux, ip command, iproute2, Network Namespaces, Container, Networking
 
 Description: Create, list, delete, and manage Linux network namespaces using ip netns, including executing commands inside namespaces and moving interfaces between them.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Mongoimport, Csv, Data Import
+Tags: MongoDB, Mongoimport, CSV, Data Import
 
 Description: Learn how to use mongoimport to import CSV and TSV files into MongoDB, with field mapping, type coercion, header handling, and best practices for data migration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Exceptions, Error Handling, Custom Exceptions, Best Practice
+Tags: Python, Exception, Error Handling, Custom Exceptions, Best Practice
 
 Description: Learn to create custom exceptions in Python for clearer error handling and better code organization. Includes patterns for exception hierarchies and practical examples.
 

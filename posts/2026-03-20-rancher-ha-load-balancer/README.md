@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, has, Load Balancer, High Availability, Networking
+Tags: Rancher, High Availability, Load Balancer, Networking
 
 Description: Configure an external load balancer for Rancher HA to distribute traffic across multiple Rancher server nodes and provide health check-based failover.
 

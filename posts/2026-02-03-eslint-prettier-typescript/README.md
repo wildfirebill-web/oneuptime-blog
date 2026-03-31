@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TypeScript, ESLint, Prettier, Code Quality, Developer Tools, VS Code, DevOps
+Tags: TypeScript, ESLint, Prettier, Code Quality, Developer Tool, VS Code, DevOps
 
 Description: A complete guide to setting up ESLint and Prettier for TypeScript projects with VS Code integration, pre-commit hooks, and production-ready configurations.
 

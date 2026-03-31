@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Spanner, Transactions, Database, Consistency
+Tags: GCP, Cloud Spanner, Transaction, Database, Consistency
 
 Description: A developer's guide to using read-write transactions in Cloud Spanner for strongly consistent reads and writes with practical code examples.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted set, ZDIFF, Command
+Tags: Redis, Sorted Set, ZDIFF, Command
 
 Description: Learn how to use ZDIFF in Redis to find members in a sorted set that do not exist in subsequent sets, with optional score output.
 

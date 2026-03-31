@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Prometheus, Metrics, Monitoring, Observability
+Tags: Go, Prometheus, Metric, Monitoring, Observability
 
 Description: Build a Prometheus client in Go with counters, gauges, histograms, and summaries for exposing application metrics with custom labels.
 

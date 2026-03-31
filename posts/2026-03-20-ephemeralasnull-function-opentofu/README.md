@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Ephemeral, Ephemeralasnull, Functions, Infrastructure as Code, DevOps
+Tags: OpenTofu, Ephemeral, Ephemeralasnull, Function, Infrastructure as Code, DevOps
 
 Description: A guide to using the ephemeralasnull function in OpenTofu to convert ephemeral values to null for use in contexts that don't support ephemeral values.
 

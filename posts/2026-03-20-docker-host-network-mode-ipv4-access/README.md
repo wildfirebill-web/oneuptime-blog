@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, Host Network, IPv4, Performance, Containers
+Tags: Docker, Networking, Host Network, IPv4, Performance, Container
 
 Description: Configure Docker containers to use the host network mode, sharing the host's IPv4 stack directly for maximum performance and simplified port management, with security trade-offs explained.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Logs, Collector, Log Parsing, Attribute Mapping, Observability, OTLP
+Tags: OpenTelemetry, Log, Collector, Log Parsing, Attribute Mapping, Observability, OTLP
 
 Description: Learn how to configure OpenTelemetry log body parsing and attribute mapping to transform raw log data into structured, queryable telemetry.
 

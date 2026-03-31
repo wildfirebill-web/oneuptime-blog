@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Subquery, Performance, Query Optimization, JOIN, IN Clause
+Tags: ClickHouse, Subquery, Performance, Query Optimization, Join, IN Clause
 
 Description: Learn how to optimize subquery performance in ClickHouse by rewriting subqueries as JOINs, using IN with set operations, and leveraging query planner hints.
 

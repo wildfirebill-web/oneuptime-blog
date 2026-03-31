@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Disaster Recovery, Failback, High Availability, Operations
+Tags: Disaster Recovery, Failback, High Availability, Operation
 
 Description: Learn how to plan and execute failback procedures after disaster recovery.
 

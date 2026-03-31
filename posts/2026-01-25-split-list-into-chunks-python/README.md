@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Lists, Data Processing, Batch Processing, Iterations
+Tags: Python, List, Data Processing, Batch Processing, Iteration
 
 Description: Learn multiple ways to split Python lists into smaller chunks of a specified size for batch processing, pagination, and parallel operations.
 

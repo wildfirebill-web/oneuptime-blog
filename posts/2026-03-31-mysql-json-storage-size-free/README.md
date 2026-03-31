@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Storage
+Tags: MySQL, JSON, Storage
 
 Description: Learn how MySQL's JSON_STORAGE_SIZE() and JSON_STORAGE_FREE() functions help you measure JSON document size and track wasted space after partial updates.
 

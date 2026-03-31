@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRepository, ChartMuseum, Helm Charts
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRepository, ChartMuseum, Helm Chart
 
 Description: Learn how to configure a Flux HelmRepository to pull Helm charts from a ChartMuseum server, including authentication, TLS, and multi-tenancy setups.
 

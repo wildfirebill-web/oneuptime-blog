@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Microservices, Network Latency, Distributed Tracing
+Tags: OpenTelemetry, Microservice, Network Latency, Distributed Tracing
 
 Description: Learn how to use OpenTelemetry span timing data to measure and trace network latency between microservices in distributed systems.
 

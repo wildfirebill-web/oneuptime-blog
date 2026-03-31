@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Blob Trigger, Azure Storage, File Processing, Serverless, Azure, Event-Driven
+Tags: Azure Function, Blob Trigger, Azure Storage, File Processing, Serverless, Azure, Event-Driven
 
 Description: Learn how to automatically process files uploaded to Azure Blob Storage using Azure Functions blob triggers with practical examples and best practices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Image Pull, Registry
+Tags: Podman, Container, DevOps, Podman Desktop, Image Pull, Registry
 
 Description: Learn how to pull container images from registries using Podman Desktop's graphical interface and the CLI.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, ServiceEntry, Service Mesh, Kubernetes, External Services
+Tags: Istio, ServiceEntry, Service Mesh, Kubernetes, External Service
 
 Description: Learn how to create Istio ServiceEntry resources to register external services in your mesh and gain traffic management capabilities for outbound calls.
 

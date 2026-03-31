@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Monitoring, IoT, Pub/Sub, Custom Metrics
+Tags: GCP, Cloud Monitoring, IoT, Pub/Sub, Custom Metric
 
 Description: Monitor your IoT device fleet health using Google Cloud Monitoring custom metrics derived from Pub/Sub message attributes and telemetry data.
 

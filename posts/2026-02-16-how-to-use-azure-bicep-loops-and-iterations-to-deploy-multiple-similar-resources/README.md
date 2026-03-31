@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Bicep, Infrastructure as Code, Azure, Loops, ARM Templates, DevOps, Cloud Deployment
+Tags: Azure Bicep, Infrastructure as Code, Azure, Loop, ARM Templates, DevOps, Cloud Deployment
 
 Description: Learn how to use Bicep for-loops and iteration expressions to deploy multiple similar Azure resources without duplicating template code.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Prometheus, Monitoring, Metrics, Self-Hosted
+Tags: Portainer, Docker, Prometheus, Monitoring, Metric, Self-Hosted
 
 Description: Deploy Prometheus via Portainer with persistent storage, scrape configuration for common targets, and alert rules for infrastructure monitoring.
 

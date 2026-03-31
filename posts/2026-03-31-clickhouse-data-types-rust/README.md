@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Rust, Data Type, serde, Type Mapping
+Tags: ClickHouse, Rust, Data Type, Serde, Type Mapping
 
 Description: Map ClickHouse column types to Rust types when using the clickhouse crate, including handling of Nullable, Array, UUID, and DateTime columns.
 

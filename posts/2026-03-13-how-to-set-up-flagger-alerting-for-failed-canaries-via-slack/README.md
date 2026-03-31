@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Slack, Alerting, Kubernetes, Canary Deployments
+Tags: Flagger, Slack, Alerting, Kubernetes, Canary Deployment
 
 Description: Learn how to configure Flagger to send Slack notifications when canary deployments fail, succeed, or require attention.
 

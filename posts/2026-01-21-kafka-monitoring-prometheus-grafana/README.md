@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Prometheus, Grafana, Monitoring, Observability, JMX, Metrics
+Tags: Apache Kafka, Prometheus, Grafana, Monitoring, Observability, JMX, Metric
 
 Description: A comprehensive guide to monitoring Apache Kafka with Prometheus and Grafana, covering JMX exporter configuration, key metrics, alerting rules, and dashboard creation for production Kafka clusters.
 

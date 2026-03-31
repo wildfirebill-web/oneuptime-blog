@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMaps, Environment Variables, Configuration
+Tags: Portainer, Kubernetes, ConfigMap, Environment Variable, Configuration
 
 Description: Learn how to inject Kubernetes ConfigMap data into application containers as environment variables in Portainer.
 

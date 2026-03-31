@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Demo App, Integration Testing, Microservices, Tracing, Testing
+Tags: OpenTelemetry, Demo App, Integration Testing, Microservice, Tracing, Testing
 
 Description: Learn how to use the OpenTelemetry Demo application as a realistic testing environment for validating instrumentation and observability pipelines.
 

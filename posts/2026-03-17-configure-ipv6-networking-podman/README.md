@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, IPv6, Configuration
+Tags: Podman, Container, DevOps, Networking, IPv6, Configuration
 
 Description: Learn how to enable and configure IPv6 networking for Podman containers and networks.
 

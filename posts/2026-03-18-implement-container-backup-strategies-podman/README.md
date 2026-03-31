@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Backup, Disaster Recovery, Containers, Data Protection
+Tags: Podman, Backup, Disaster Recovery, Container, Data Protection
 
 Description: Learn how to implement comprehensive backup strategies for Podman containers, including volume backups, image exports, checkpoint/restore, and automated backup pipelines.
 

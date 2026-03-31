@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ClickHouse Keeper, Backup, Snapshot, Operations
+Tags: ClickHouse, ClickHouse Keeper, Backup, Snapshot, Operation
 
 Description: Learn how to back up ClickHouse Keeper snapshots and Raft logs to protect your coordination metadata and ensure you can recover from a complete Keeper cluster failure.
 

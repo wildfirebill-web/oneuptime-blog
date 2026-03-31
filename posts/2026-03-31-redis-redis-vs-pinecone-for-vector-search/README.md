@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pinecone, Vector Search, Machine Learning, Embeddings
+Tags: Redis, Pinecone, Vector Search, Machine Learning, Embedding
 
 Description: Compare Redis Vector Search and Pinecone for storing and querying vector embeddings, covering indexing algorithms, query performance, and cost trade-offs.
 

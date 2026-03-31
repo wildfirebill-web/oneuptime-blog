@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Streaming, Late Data, Data Pipelines, Dataflow
+Tags: GCP, BigQuery, Streaming, Late Data, Data Pipeline, Dataflow
 
 Description: Learn practical strategies for handling late-arriving facts in BigQuery streaming pipelines, including deduplication, upsert patterns, and reconciliation approaches.
 

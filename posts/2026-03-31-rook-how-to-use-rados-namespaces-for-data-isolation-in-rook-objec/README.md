@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Rados, Namespaces, Multi-Tenancy, Kubernetes
+Tags: Rook, Ceph, RADOS, Namespace, Multi-Tenancy, Kubernetes
 
 Description: Use RADOS namespaces in Rook to achieve data isolation between tenants sharing the same Ceph pool without the overhead of separate pools.
 

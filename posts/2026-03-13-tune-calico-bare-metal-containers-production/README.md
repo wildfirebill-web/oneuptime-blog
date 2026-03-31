@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Containers, Performance, Production
+Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Container, Performance, Production
 
 Description: A guide to tuning Calico for maximum performance and stability on bare metal Kubernetes clusters running containerized production workloads.
 

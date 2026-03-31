@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, T-Digest, Rank, Percentile, Probabilistic Data Structures
+Tags: Redis, T-Digest, Rank, Percentile, Probabilistic Data Structure
 
 Description: Learn how to use TDIGEST.BYRANK in Redis to retrieve the estimated value at a specific rank position within a T-Digest distribution.
 

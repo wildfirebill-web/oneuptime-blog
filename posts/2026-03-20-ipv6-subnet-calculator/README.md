@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Subnetting, Tools, Networking, Address Planning
+Tags: IPv6, Subnetting, Tool, Networking, Address Planning
 
 Description: Learn how to use IPv6 subnet calculators - both online tools and Python scripts - to compute subnet ranges, host counts, and prefix relationships.
 

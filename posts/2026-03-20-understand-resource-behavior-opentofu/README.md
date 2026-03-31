@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Lifecycle, Infrastructure as Code, DevOps, HCL
+Tags: OpenTofu, Resource, Lifecycle, Infrastructure as Code, DevOps, HCL
 
 Description: Learn how OpenTofu manages resource lifecycle - creation, update, replacement, and deletion - and what drives each type of change.
 

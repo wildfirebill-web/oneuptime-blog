@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Terraform, Modules, Infrastructure
+Tags: AWS, Terraform, Module, Infrastructure
 
 Description: Step-by-step guide to building, testing, versioning, and publishing your own reusable Terraform modules for AWS infrastructure.
 

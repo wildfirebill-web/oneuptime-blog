@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Grafana Loki, Logs, OpenTelemetry Collector, Observability
+Tags: OpenTelemetry, Grafana Loki, Log, OpenTelemetry Collector, Observability
 
 Description: How to configure the OpenTelemetry Collector to send structured logs to Grafana Loki with label mapping, resource attributes, and LogQL queries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Health Check, Script, Monitoring, Operations
+Tags: ClickHouse, Health Check, Script, Monitoring, Operation
 
 Description: Write a comprehensive ClickHouse health check script that validates server responsiveness, replication status, part counts, and disk usage in one go.
 

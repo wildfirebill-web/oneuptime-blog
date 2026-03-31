@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Management, Filtering
+Tags: Podman, Container, DevOps, Container Management, Filtering
 
 Description: Learn how to filter Podman container listings by status to quickly find running, stopped, paused, or created containers.
 

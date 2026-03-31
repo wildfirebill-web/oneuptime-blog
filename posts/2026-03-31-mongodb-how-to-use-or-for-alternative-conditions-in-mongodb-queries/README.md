@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $or, Logical Operators, Query, Alternatives, Node.js
+Tags: MongoDB, $or, Logical Operator, Query, Alternatives, Node.js
 
 Description: Learn how to use MongoDB's $or operator to match documents satisfying at least one of multiple conditions, with performance tips and aggregation examples.
 

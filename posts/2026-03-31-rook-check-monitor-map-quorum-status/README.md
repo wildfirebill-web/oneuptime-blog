@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Monitor, Quorum, Diagnostics
+Tags: Rook, Ceph, Monitor, Quorum, Diagnostic
 
 Description: Learn how to inspect the Ceph monitor map and quorum status using Rook toolbox commands to verify cluster health and monitor membership.
 

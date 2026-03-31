@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Molecule, GitHub Actions, CI/CD, DevOps
+Tags: Ansible, Molecule, GitHub Action, CI/CD, DevOps
 
 Description: Set up automated Molecule testing for Ansible roles in GitHub Actions with matrix builds, caching, and multi-platform validation pipelines.
 

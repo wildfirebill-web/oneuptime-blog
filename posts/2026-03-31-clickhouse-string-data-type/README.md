@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, String, Text
+Tags: ClickHouse, SQL, Data Type, String, Text
 
 Description: Learn how to use the String data type in ClickHouse for arbitrary-length text, including UTF-8 handling, storage behavior, and key string functions.
 

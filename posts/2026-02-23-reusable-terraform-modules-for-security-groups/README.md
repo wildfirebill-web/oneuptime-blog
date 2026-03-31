@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, AWS, Security Groups, Networking
+Tags: Terraform, Module, AWS, Security Group, Networking
 
 Description: Learn how to build a reusable Terraform module for AWS security groups with dynamic ingress and egress rules, CIDR management, and cross-module references.
 

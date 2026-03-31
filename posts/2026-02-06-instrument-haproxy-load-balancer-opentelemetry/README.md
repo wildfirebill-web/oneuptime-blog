@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, HAProxy, Load Balancer, Monitoring, Observability, Metrics
+Tags: OpenTelemetry, HAProxy, Load Balancer, Monitoring, Observability, Metric
 
 Description: Step-by-step guide to instrumenting HAProxy load balancer with OpenTelemetry for metrics collection, tracing, and performance monitoring.
 

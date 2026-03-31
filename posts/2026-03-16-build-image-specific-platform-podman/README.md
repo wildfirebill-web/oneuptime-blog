@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Platform, Cross-Platform, Multi-Architecture
+Tags: Podman, Container, DevOps, Container Image, Build, Platform, Cross-Platform, Multi-Architecture
 
 Description: Learn how to build container images for specific CPU architectures and platforms with Podman, including cross-platform and multi-arch manifest builds.
 

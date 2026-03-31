@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: React, Azure Functions, Full-Stack, Serverless, TypeScript, API, Node.js
+Tags: React, Azure Function, Full-Stack, Serverless, TypeScript, API, Node.js
 
 Description: Build a complete full-stack application with a React frontend and Azure Functions serverless backend for cost-effective scalable apps.
 

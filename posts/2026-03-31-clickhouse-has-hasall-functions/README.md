@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Array Function, has, hasAll, Array Containment, SQL
+Tags: ClickHouse, Array Function, High Availability, hasAll, Array Containment, SQL
 
 Description: Learn how has() checks if an array contains a specific element and hasAll() verifies all required elements are present, with practical filtering examples.
 

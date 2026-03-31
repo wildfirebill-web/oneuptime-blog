@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cold Start, Performance, Serverless
+Tags: GCP, Cloud Function, Cold Start, Performance, Serverless
 
 Description: Practical techniques to reduce Google Cloud Functions cold start times by optimizing how dependencies are loaded, structured, and initialized.
 

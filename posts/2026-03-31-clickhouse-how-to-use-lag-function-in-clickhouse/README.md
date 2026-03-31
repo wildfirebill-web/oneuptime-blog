@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Functions, LAG, Time Series, Analytics
+Tags: ClickHouse, Window Function, Lag, Time Series, Analytics
 
 Description: Learn how to use the LAG() window function in ClickHouse to access values from previous rows for period-over-period comparisons and change detection.
 

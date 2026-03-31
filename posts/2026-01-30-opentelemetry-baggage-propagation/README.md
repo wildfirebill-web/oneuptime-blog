@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Context, Propagation, Distributed Systems
+Tags: OpenTelemetry, Context, Propagation, Distributed System
 
 Description: Learn how to implement OpenTelemetry baggage propagation to carry business context across service boundaries.
 

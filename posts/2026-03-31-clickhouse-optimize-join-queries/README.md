@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, JOIN, Query Optimization, Dictionary, Performance, Hash Join
+Tags: ClickHouse, Join, Query Optimization, Dictionary, Performance, Hash Join
 
 Description: Learn how to optimize JOIN queries in ClickHouse using the right join algorithm, dictionaries, and query structure for best performance.
 

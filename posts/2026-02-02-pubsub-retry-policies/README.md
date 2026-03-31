@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Google Cloud, Pub/Sub, Messaging, Retry Policies, Distributed Systems, DevOps
+Tags: Google Cloud, Pub/Sub, Messaging, Retry Policies, Distributed System, DevOps
 
 Description: Learn how to configure Google Cloud Pub/Sub retry policies with exponential backoff, dead letter topics, and best practices for building reliable message-driven applications.
 

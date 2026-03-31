@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Observability, Prometheus, Monitoring
+Tags: Istio, Metric, Observability, Prometheus, Monitoring
 
 Description: A practical guide to collecting and understanding the metrics Istio generates from your service mesh including proxy, service, and control plane metrics.
 

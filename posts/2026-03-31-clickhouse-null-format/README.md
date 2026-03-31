@@ -1,8 +1,8 @@
 # How to Use Null Format in ClickHouse for Discard Output
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Format, Null, Benchmarking, Performance
+Tags: ClickHouse, Format, NULL, Benchmarking, Performance
 
 Description: Learn how ClickHouse's Null format discards all output, making it ideal for benchmarking query execution speed without I/O overhead.
 

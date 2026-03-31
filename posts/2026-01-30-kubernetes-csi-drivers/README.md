@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kubernetes, CSI, Storage, Drivers
+Tags: Kubernetes, CSI, Storage, Driver
 
 Description: Learn to implement CSI drivers for custom storage backends with identity, controller, and node services for persistent volume management.
 

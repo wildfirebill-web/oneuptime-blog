@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Microservices, Polyglot, Go, Python, Node.js, Kubernetes
+Tags: Dapr, Microservice, Polyglot, Go, Python, Node.js, Kubernetes
 
 Description: Build a polyglot microservices system with Dapr where Go, Python, and Node.js services communicate seamlessly using shared Dapr components.
 

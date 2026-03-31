@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replication, Alert, Replica Set, Operations
+Tags: MongoDB, Replication, Alert, Replica Set, Operation
 
 Description: Learn how to diagnose and resolve MongoDB replication lag alerts by identifying bottlenecks on secondaries, adjusting write concerns, and monitoring the oplog.
 

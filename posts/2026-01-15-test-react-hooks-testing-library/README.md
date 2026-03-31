@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Hooks, Testing, Testing Library, Unit Testing, Frontend
+Tags: React, Hook, Testing, Testing Library, Unit Testing, Frontend
 
 Description: Learn to test custom React hooks in isolation using @testing-library/react-hooks with renderHook, act, and comprehensive testing patterns for state management, async operations, and context providers.
 

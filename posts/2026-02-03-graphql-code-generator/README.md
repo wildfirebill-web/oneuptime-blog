@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, TypeScript, Code Generation, React, Apollo, Frontend, Developer Tools
+Tags: GraphQL, TypeScript, Code Generation, React, Apollo, Frontend, Developer Tool
 
 Description: A practical guide to setting up GraphQL Code Generator for type-safe queries, mutations, and React hooks in your TypeScript projects.
 

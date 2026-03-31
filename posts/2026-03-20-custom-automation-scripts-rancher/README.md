@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Automation, Scripts, API, Bash, Python, Kubernetes
+Tags: Rancher, Automation, Script, API, Bash, Python, Kubernetes
 
 Description: Create custom automation scripts for Rancher using the Rancher API, kubectl, and Python to automate repetitive tasks like namespace provisioning, resource cleanup, compliance checks, and reporting.
 

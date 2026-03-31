@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Monitoring, Custom Metrics, API, Observability
+Tags: GCP, Cloud Monitoring, Custom Metric, API, Observability
 
 Description: Learn how to create and write custom metrics in Google Cloud Monitoring using the API to track application-specific data points beyond built-in infrastructure metrics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Tracing, Context Propagation, Duplicate Traces, Debugging, Distributed Systems
+Tags: OpenTelemetry, Tracing, Context Propagation, Duplicate Traces, Debugging, Distributed System
 
 Description: Learn how to identify and fix duplicate traces in OpenTelemetry caused by misconfigured context propagation, double instrumentation, and incorrect propagator settings.
 

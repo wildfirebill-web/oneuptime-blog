@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Argparse, CLI, Command Line, Tools
+Tags: Python, Argparse, CLI, Command Line, Tool
 
 Description: Learn how to build robust command-line applications in Python using argparse. This guide covers arguments, options, subcommands, and creating user-friendly CLIs.
 
@@ -744,7 +744,7 @@ Files to process:
 
 Output: stdout
 
-Tags: ['urgent', 'review', '2024']
+Tags: Python, Argparse, CLI, Command Line, Tool
 
 # Using -o without a value uses the const
 $ python process.py data.txt -o

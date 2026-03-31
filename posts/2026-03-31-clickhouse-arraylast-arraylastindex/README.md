@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Array, arrayLast, arrayLastIndex, Lambda, Data Transformation
+Tags: ClickHouse, Array Function, arrayLast, arrayLastIndex, Lambda, Higher-Order Function
 
 Description: Learn how arrayLast() retrieves the last element satisfying a lambda and arrayLastIndex() returns its 1-based position, with practical SQL examples.
 

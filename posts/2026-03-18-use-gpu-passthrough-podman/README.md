@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, GPU, Containers, DevOps, Linux
+Tags: Podman, GPU, Container, DevOps, Linux
 
 Description: Learn how to pass through GPUs to Podman containers for hardware-accelerated workloads including machine learning, video processing, and scientific computing.
 

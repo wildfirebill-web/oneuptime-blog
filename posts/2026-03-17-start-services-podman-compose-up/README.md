@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Services
+Tags: Podman, Container, DevOps, podman-compose, Service
 
 Description: Learn how to start container services using podman-compose up with various options for detached mode, specific services, and rebuilds.
 

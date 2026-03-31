@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Pre-Commit, Git Hooks, CI/CD
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Pre-Commit, Git Hooks, CI/CD
 
 Description: Learn how to set up Git pre-commit hooks that prevent accidentally committing unencrypted secrets to your Flux GitOps repository.
 

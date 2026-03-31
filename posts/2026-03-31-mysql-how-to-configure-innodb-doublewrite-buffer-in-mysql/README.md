@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Doublewrite Buffer, Durability, Configuration
+Tags: MySQL, InnoDB, Doublewrite Buffer, Durability, Configuration
 
 Description: Learn how the InnoDB doublewrite buffer protects against partial page writes in MySQL and how to configure or disable it for your workload.
 

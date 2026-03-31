@@ -1,8 +1,8 @@
 # How to Model a Blog with Posts and Comments in MongoDB
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data modeling, Schema design, Embedding, Reference
+Tags: MongoDB, Data Modeling, Schema Design, Embedding, Reference
 
 Description: Learn how to design a MongoDB schema for a blog application with posts, comments, authors, and tags, choosing between embedding and referencing for each relationship.
 

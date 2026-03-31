@@ -1,6 +1,6 @@
 # How to Install MySQL on Ubuntu 24.04
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Installation, Ubuntu, Database, Linux
 

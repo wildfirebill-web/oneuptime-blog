@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Booking, Reservations, Lua, Concurrency, Data Modeling
+Tags: Redis, Booking, Reservation, Lua, Concurrency, Data Modeling
 
 Description: Model booking and reservation systems in Redis using sorted sets, hashes, and Lua scripts to handle slot availability, conflict detection, and atomic booking.
 

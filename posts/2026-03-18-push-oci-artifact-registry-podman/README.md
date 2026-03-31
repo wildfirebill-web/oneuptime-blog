@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OCI Artifacts, Registry, Push
+Tags: Podman, Container, DevOps, OCI Artifacts, Registry, Push
 
 Description: Learn how to push OCI artifacts from your local Podman artifact store to remote OCI-compliant registries.
 

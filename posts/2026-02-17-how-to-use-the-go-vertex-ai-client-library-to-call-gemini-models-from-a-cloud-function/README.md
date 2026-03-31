@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Vertex AI, Go, Gemini, Cloud Functions, AI/ML
+Tags: GCP, Vertex AI, Go, Gemini, Cloud Function, AI/ML
 
 Description: Learn how to call Gemini models using the Go Vertex AI client library from a Google Cloud Function with practical examples and cost optimization tips.
 

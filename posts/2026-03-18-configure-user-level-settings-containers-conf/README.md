@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Rootless
+Tags: Podman, Container, DevOps, Configuration, Rootless
 
 Description: Learn how to configure user-level containers.conf settings to personalize Podman behavior without requiring root privileges.
 

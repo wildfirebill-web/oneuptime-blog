@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Database, Partitioning, Microservices, Architecture
+Tags: Database, Partitioning, Microservice, Architecture
 
 Description: Learn to build functional partitioning for separating data by business domain and function.
 

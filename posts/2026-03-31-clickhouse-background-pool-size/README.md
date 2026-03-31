@@ -1,6 +1,6 @@
 # How to Configure ClickHouse Background Pool Size
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, Performance, MergeTree, BackgroundProcessing
 

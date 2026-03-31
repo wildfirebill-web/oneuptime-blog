@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Spring Boot, Java, Spring Cloud Sleuth, Distributed Tracing, Sampling, Observability, Microservices, Performance
+Tags: Spring Boot, Java, Spring Cloud Sleuth, Distributed Tracing, Sampling, Observability, Microservice, Performance
 
 Description: Learn how to build custom samplers in Spring Cloud Sleuth for intelligent trace sampling, including priority-based, rule-based, and adaptive sampling strategies with production-ready implementations.
 

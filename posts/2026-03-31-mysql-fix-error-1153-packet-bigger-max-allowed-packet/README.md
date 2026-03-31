@@ -10,7 +10,7 @@ Description: Learn how to fix MySQL ERROR 1153 Got a packet bigger than max_allo
 
 ## What Is ERROR 1153?
 
-```
+```text
 ERROR 1153 (08S01): Got a packet bigger than 'max_allowed_packet' bytes
 ```
 

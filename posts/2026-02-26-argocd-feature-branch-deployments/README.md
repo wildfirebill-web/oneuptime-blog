@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Feature Branches, CI/CD
+Tags: ArgoCD, GitOps, Kubernetes, Feature Branch, CI/CD
 
 Description: Learn how to create isolated Kubernetes environments for each feature branch using ArgoCD ApplicationSets with the pull request generator for dynamic preview deployments.
 

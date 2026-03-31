@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bitmap, BITFIELD, Bit, Counter
+Tags: Redis, Bitmap, Bitfield, BIT, Counter
 
 Description: Learn how to use BITFIELD to read, write, and increment arbitrary-width integer fields packed within a Redis string, enabling compact data storage.
 

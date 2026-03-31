@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Revenue, Analytics, Business Metrics
+Tags: Feature Flag, Revenue, Analytics, Business Metrics
 
 Description: Learn how to measure and analyze revenue impact of feature flags.
 

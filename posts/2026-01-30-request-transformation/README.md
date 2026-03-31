@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: API Gateway, Microservices, Transformation, Backend
+Tags: API Gateway, Microservice, Transformation, Backend
 
 Description: Learn how to transform API requests with header manipulation, body transformation, and URL rewriting.
 

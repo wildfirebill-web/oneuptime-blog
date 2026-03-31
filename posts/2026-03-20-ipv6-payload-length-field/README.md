@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Headers, Payload Length, Networking, Jumbograms
+Tags: IPv6, Header, Payload Length, Networking, Jumbograms
 
 Description: Understand the 16-bit IPv6 Payload Length field, how it differs from IPv4 Total Length, what happens when it is zero, and its role in processing IPv6 packets.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Window, Networking, Routes, Static Routes, IPv4, Routing
+Tags: Window, Networking, Route, Static Routes, IPv4, Routing
 
 Description: Add temporary and persistent static IPv4 routes on Windows using the route add command, specify the metric, and verify the route was added to the routing table.
 

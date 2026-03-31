@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, Self-Hosted Runners, GitHub Actions, DevOps, Infrastructure as Code
+Tags: Terraform, CI/CD, Self-Hosted Runners, GitHub Action, DevOps, Infrastructure as Code
 
 Description: Configure self-hosted CI/CD runners for Terraform pipelines to access private networks, reduce costs, improve performance, and meet compliance requirements.
 

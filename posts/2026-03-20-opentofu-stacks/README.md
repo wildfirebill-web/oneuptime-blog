@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Stacks, Infrastructure as Code, IaC, Modular Infrastructure
+Tags: OpenTofu, Stack, Infrastructure as Code, IaC, Modular Infrastructure
 
 Description: Learn how to use OpenTofu's native Stacks feature for component-based infrastructure deployments with deferred evaluation.
 

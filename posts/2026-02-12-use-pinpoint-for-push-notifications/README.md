@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Pinpoint, Push Notifications, Mobile, Cloud
+Tags: AWS, Pinpoint, Push Notification, Mobile, Cloud
 
 Description: Learn how to configure Amazon Pinpoint to send push notifications to iOS and Android devices, including channel setup, device registration, and targeted messaging.
 

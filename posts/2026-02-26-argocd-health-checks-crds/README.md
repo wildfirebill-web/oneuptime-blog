@@ -1,6 +1,6 @@
 # How to Configure Custom Health Checks for CRDs in ArgoCD
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ArgoCD, GitOps, Kubernetes, CRD, Health Check
 

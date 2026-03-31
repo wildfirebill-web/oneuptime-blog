@@ -1,10 +1,10 @@
 # How to Configure MDS Resource Requirements in Rook (Minimum 4GB Memory)
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage
 
-Description: Set CPU and memory resource requests and limits for Ceph MDS daemons in Rook, ensuring the minimum 4GB memory requirement is met for production CephFS deployments.
+Description: Set CPU and memory resource requests and limits for Ceph MDS daemons in Rook, ensuring the minimum 4GB memory requirement is met for CephFS.
 
 ---
 

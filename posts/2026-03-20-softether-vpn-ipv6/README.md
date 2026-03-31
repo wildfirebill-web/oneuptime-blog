@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SoftEther, IPv6, VPN, Multi-Protocol, Networks, Japan
+Tags: SoftEther, IPv6, VPN, Multi-Protocol, Network, Japan
 
 Description: A guide to configuring SoftEther VPN for IPv6 connectivity, including IPv6 listener setup, tunnel configuration, and dual-stack client connectivity.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Cert-Manager, TLS, OpenTofu, Helm, Certificates, Let's Encrypt
+Tags: Kubernetes, Cert-Manager, TLS, OpenTofu, Helm, Certificate, Let's Encrypt
 
 Description: Learn how to deploy cert-manager on Kubernetes using OpenTofu and Helm to automate TLS certificate provisioning and renewal from Let's Encrypt and other issuers.
 

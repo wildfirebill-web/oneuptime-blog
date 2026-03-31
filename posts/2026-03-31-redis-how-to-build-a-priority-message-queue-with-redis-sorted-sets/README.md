@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Priority Queue, Sorted Sets, Message Queue, Background Jobs
+Tags: Redis, Priority Queue, Sorted Set, Message Queue, Background Job
 
 Description: Learn how to build a priority message queue with Redis Sorted Sets where jobs are processed by priority score and timestamp ordering.
 

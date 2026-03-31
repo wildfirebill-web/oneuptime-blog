@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IndentationError, Debugging, Syntax Errors, Code Style
+Tags: Python, IndentationError, Debugging, Syntax Error, Code Style
 
 Description: Understand and fix Python IndentationError messages. Learn about consistent indentation, common causes, and tools to prevent these errors.
 

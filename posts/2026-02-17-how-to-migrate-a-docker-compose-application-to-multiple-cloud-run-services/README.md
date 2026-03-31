@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Run, Docker Compose, Migration, Microservices, Google Cloud
+Tags: GCP, Cloud Run, Docker Compose, Migration, Microservice, Google Cloud
 
 Description: Learn how to migrate a multi-container Docker Compose application to separate Cloud Run services with managed alternatives for databases and caches.
 

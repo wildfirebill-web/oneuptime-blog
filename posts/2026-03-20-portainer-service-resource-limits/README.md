@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Resources, Services, DevOps
+Tags: Portainer, Docker Swarm, Resource, Service, DevOps
 
 Description: Learn how to set CPU and memory limits and reservations for Docker Swarm services in Portainer to ensure stable cluster performance.
 

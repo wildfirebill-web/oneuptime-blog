@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Functions, ROWS, RANGE, Frame Specification
+Tags: ClickHouse, Window Function, ROWS, Range, Frame Specification
 
 Description: Learn how ROWS and RANGE frame specifications work in ClickHouse window functions, and when to use each for sliding windows and running aggregations.
 

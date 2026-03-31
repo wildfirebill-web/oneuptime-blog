@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Relabeling, IPv4, Metrics, Configuration, Labels, Monitoring
+Tags: Prometheus, Relabeling, IPv4, Metric, Configuration, Labels, Monitoring
 
 Description: Learn how to use Prometheus relabeling rules to extract IPv4 addresses from target labels and create useful per-IP metrics for your monitoring setup.
 

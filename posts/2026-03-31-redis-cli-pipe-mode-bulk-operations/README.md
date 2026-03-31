@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CLI, Pipe Mode, Bulk Operation, Performance
+Tags: Redis, CLI, PIPE Mode, Bulk Operation, Performance
 
 Description: Learn how to use redis-cli pipe mode to import large datasets, run bulk commands, and achieve maximum throughput using the Redis mass insertion protocol.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Software Development, Engineering Culture, Learning Resource, DevOps, Distributed Systems
+Tags: Networking, Software Development, Engineering Culture, Learning Resource, DevOps, Distributed System
 
 Description: A candid look at why networking knowledge is surprisingly rare among software engineers, how this knowledge gap manifests in production systems.
 

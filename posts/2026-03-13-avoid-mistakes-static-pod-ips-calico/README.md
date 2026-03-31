@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Static-ip, Pod-ip, IPAM, Kubernetes, Networking, StatefulSets
+Tags: Calico, Static-ip, Pod-ip, IPAM, Kubernetes, Networking, StatefulSet
 
 Description: Learn how to correctly manage static IP addresses for pods using Calico, including the limitations of static IP assignment for StatefulSets and the operational risks of IP pinning.
 

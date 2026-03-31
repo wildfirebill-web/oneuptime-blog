@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, YAML, Tags, Vault, Configuration
+Tags: Ansible, YAML, Tag, Vault, Configuration
 
 Description: Understand YAML tags in Ansible including the vault tag, custom constructors, and how tags affect value interpretation.
 

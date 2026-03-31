@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Kubernetes, Cluster, Receiver, Metrics
+Tags: OpenTelemetry, Collector, Kubernetes, Cluster, Receiver, Metric
 
 Description: Configure the Kubernetes Cluster Receiver to collect cluster-level metrics including node status, pod phases, deployments, and resource allocations.
 

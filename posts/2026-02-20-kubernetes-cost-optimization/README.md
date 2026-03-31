@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Cost Optimization, Right-Sizing, Spot Instances, FinOps
+Tags: Kubernetes, Cost Optimization, Right-Sizing, Spot Instance, FinOps
 
 Description: Practical strategies for reducing Kubernetes costs including right-sizing, spot instances, bin packing, and resource quotas.
 

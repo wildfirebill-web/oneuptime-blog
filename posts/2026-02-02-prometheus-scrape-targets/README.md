@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Monitoring, Observability, DevOps, Kubernetes, Metrics, Service Discovery
+Tags: Prometheus, Monitoring, Observability, DevOps, Kubernetes, Metric, Service Discovery
 
 Description: A practical guide to configuring Prometheus scrape targets for collecting metrics from your applications and infrastructure.
 

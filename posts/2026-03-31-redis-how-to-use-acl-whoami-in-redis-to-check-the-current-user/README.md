@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, ACL, Security, Commands, Access Control
+Tags: Redis, ACL, Security, Command, Access Control
 
 Description: Learn how to use ACL WHOAMI in Redis to identify which ACL user the current connection is authenticated as, useful for debugging and connection verification.
 

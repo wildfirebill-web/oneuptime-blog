@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Istio, Service Mesh, Microservices, Networking
+Tags: Podman, Istio, Service Mesh, Microservice, Networking
 
 Description: Learn how to use Podman with Istio service mesh concepts to implement traffic management, security, and observability for containerized microservices.
 

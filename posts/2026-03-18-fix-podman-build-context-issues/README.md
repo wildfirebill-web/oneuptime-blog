@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Dockerfile, Build, DevOps
+Tags: Podman, Container, Dockerfile, Build, DevOps
 
 Description: Learn how to fix Podman build context problems including files not found during build, oversized contexts, .dockerignore issues, and multi-stage build path errors.
 

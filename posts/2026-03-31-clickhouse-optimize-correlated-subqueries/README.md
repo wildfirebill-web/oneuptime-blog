@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Subquery, Performance, Query Optimization, Correlated Query, JOIN
+Tags: ClickHouse, Subquery, Performance, Query Optimization, Correlated Query, Join
 
 Description: Learn how to identify and rewrite correlated subqueries in ClickHouse to eliminate row-by-row execution and dramatically improve query performance.
 

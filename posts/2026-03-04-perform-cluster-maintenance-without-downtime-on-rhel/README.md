@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Pacemaker, Cluster, Maintenance, High Availability, Rolling Updates
+Tags: RHEL, Pacemaker, Cluster, Maintenance, High Availability, Rolling Update
 
 Description: Learn how to perform rolling maintenance on a Pacemaker cluster on RHEL without causing service downtime, including patching, rebooting, and upgrading cluster nodes.
 

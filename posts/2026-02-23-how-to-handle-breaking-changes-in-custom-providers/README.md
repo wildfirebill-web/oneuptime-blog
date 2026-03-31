@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Provider Development, Breaking Changes, Migration, Infrastructure as Code
+Tags: Terraform, Provider Development, Breaking Change, Migration, Infrastructure as Code
 
 Description: Learn how to plan, implement, and communicate breaking changes in custom Terraform providers while minimizing disruption through state migration and upgrade guides.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Storage, Kubernetes, Operations
+Tags: Ceph, Rook, Storage, Kubernetes, Operation
 
 Description: Learn how to create Ceph pools with custom parameters including PG counts, replication size, CRUSH rules, compression, and application tags.
 

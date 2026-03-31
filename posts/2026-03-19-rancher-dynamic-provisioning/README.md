@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Storage, StorageClass, Persistent Volumes
+Tags: Rancher, Kubernetes, Storage, StorageClass, Persistent Volume
 
 Description: Learn how to configure dynamic volume provisioning in Rancher to automatically create persistent volumes when applications request storage.
 

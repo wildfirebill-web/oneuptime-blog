@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Rust, Actix-Web, Rest Api, Backend Development
+Tags: MongoDB, Rust, Actix-web, REST API, Backend Development
 
 Description: Learn how to build a high-performance async REST API with Rust, Actix-Web, and the official MongoDB Rust driver including CRUD operations and error handling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Traces, Metrics, Logs, Observability, Signals
+Tags: OpenTelemetry, Trace, Metric, Log, Observability, Signal
 
 Description: A practical guide to understanding when to use traces, metrics, or logs in OpenTelemetry, with real examples and decision frameworks for each signal type.
 

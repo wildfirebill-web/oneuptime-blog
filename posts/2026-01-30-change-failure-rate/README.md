@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DevOps, DORA Metrics, Change Failure Rate, Quality
+Tags: DevOps, DORA Metric, Change Failure Rate, Quality
 
 Description: Learn to implement change failure rate tracking with deployment correlation, incident linking, and root cause analysis for release quality improvement.
 

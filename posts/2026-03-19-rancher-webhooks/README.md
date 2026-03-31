@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Webhooks, Automation
+Tags: Rancher, Kubernetes, Webhook, Automation
 
 Description: Learn how to set up and configure webhooks in Rancher to automate responses to cluster events, scaling triggers, and policy enforcement.
 

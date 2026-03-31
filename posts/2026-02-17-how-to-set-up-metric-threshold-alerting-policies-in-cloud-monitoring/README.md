@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Monitoring, Alerting, Metrics, DevOps
+Tags: GCP, Cloud Monitoring, Alerting, Metric, DevOps
 
 Description: Configure metric-threshold alerting policies in Google Cloud Monitoring to get notified when your infrastructure or application metrics cross defined boundaries.
 

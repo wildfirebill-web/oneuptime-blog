@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Resilience, Retry, Exponential Backoff, Fault Tolerance, Microservices, Reliability
+Tags: Networking, Resilience, Retry, Exponential Backoff, Fault Tolerance, Microservice, Reliability
 
 Description: Learn how to implement effective network retry strategies that improve reliability without causing cascading failures.
 

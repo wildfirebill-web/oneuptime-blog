@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Reconcile, Operations
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Reconcile, Operation
 
 Description: Learn how to force an immediate reconciliation of a HelmRelease in Flux CD without waiting for the regular interval.
 

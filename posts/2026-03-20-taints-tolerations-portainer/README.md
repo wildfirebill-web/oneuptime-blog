@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Taints, Tolerations, Scheduling, Container Management
+Tags: Portainer, Kubernetes, Taints, Toleration, Scheduling, Container Management
 
 Description: Learn how to configure Kubernetes taints and tolerations through Portainer to control workload placement and dedicate nodes for specific workloads.
 

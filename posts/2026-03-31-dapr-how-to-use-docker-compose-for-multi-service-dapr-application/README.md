@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Docker Compose, Local Development, Microservices, DevEx, Containers
+Tags: Dapr, Docker Compose, Local Development, Microservice, DevEx, Container
 
 Description: Learn how to set up a complete multi-service Dapr application with Docker Compose, including sidecars, state stores, and pub/sub for local development and testing.
 

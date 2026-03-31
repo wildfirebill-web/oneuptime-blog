@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Documentation, API Docs, TypeDoc, Sphinx, JSDoc, DevOps
+Tags: GitHub Action, Documentation, API Docs, TypeDoc, Sphinx, JSDoc, DevOps
 
 Description: Automate documentation generation in GitHub Actions using tools like TypeDoc, Sphinx, JSDoc, and OpenAPI generators, with automatic deployment to GitHub Pages or other hosting platforms.
 

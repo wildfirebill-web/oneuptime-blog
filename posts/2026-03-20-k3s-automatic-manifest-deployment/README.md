@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, GitOps, Automation, DevOps
+Tags: k3s, Kubernetes, GitOps, Automation, DevOps
 
 Description: Learn how to use K3s's built-in auto-deploying manifests directory to automatically apply Kubernetes resources on cluster startup.
 

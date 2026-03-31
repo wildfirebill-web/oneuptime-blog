@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Sys Schema, Table Statistics, Performance Monitoring, I/O Analysis
+Tags: MySQL, sys Schema, Table Statistics, Performance Monitoring, I/O Analysis
 
 Description: Learn how to use the schema_table_statistics view in the MySQL sys schema to analyze table-level I/O, row operations, and query latency per table.
 

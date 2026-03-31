@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terraform Enterprise, Migration, Data Migration, DevOps, Operations
+Tags: Terraform, Terraform Enterprise, Migration, Data Migration, DevOps, Operation
 
 Description: A step-by-step guide to migrating between Terraform Enterprise deployments, covering state migration, workspace recreation, and data transfer with minimal downtime.
 

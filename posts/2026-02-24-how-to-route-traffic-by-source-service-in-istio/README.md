@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Traffic Routing, Source Labels, Kubernetes, Microservices
+Tags: Istio, Traffic Routing, Source Labels, Kubernetes, Microservice
 
 Description: Route traffic to different service versions based on the calling service identity using Istio VirtualService sourceLabels for fine-grained service-to-service routing.
 

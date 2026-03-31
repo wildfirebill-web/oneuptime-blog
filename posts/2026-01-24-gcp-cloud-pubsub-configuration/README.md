@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud, Pub/Sub, Messaging, Event-Driven, Microservices, DevOps
+Tags: GCP, Google Cloud, Pub/Sub, Messaging, Event-Driven, Microservice, DevOps
 
 Description: A comprehensive guide to configuring Google Cloud Pub/Sub for reliable message delivery, including topics, subscriptions, dead letter queues, and monitoring best practices.
 

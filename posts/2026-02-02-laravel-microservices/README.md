@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Laravel, PHP, Microservices, Architecture
+Tags: Laravel, PHP, Microservice, Architecture
 
 Description: Learn how to build scalable microservices with Laravel, covering service decomposition, inter-service communication, API gateways, event-driven patterns, and deployment strategies.
 

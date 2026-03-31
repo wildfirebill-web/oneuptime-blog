@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Microservices, Scaling, Docker Swarm, Auto-Scaling
+Tags: Portainer, Docker, Microservice, Scaling, Docker Swarm, Auto-Scaling
 
 Description: Scale individual microservices horizontally in Portainer using Docker Swarm replica management, resource limits, and auto-scaling triggers.
 

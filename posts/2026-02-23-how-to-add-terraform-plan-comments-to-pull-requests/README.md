@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, GitHub Actions, Pull Requests, CI/CD, Code Review, DevOps, Infrastructure as Code
+Tags: Terraform, GitHub Action, Pull Requests, CI/CD, Code Review, DevOps, Infrastructure as Code
 
 Description: Automatically post Terraform plan output as pull request comments in GitHub Actions so reviewers can see infrastructure changes without running plans locally.
 

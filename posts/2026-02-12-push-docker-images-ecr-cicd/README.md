@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, ECR, CI/CD, Docker, GitHub Actions
+Tags: AWS, ECR, CI/CD, Docker, GitHub Action
 
 Description: Step-by-step guide to pushing Docker images to Amazon ECR from popular CI/CD platforms including GitHub Actions, GitLab CI, Jenkins, and AWS CodeBuild.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, RDS, Maintenance, Operations, Database
+Tags: AWS, RDS, Maintenance, Operation, Database
 
 Description: Learn how to configure RDS maintenance windows to control when AWS applies patches and updates, minimizing impact on your application availability.
 

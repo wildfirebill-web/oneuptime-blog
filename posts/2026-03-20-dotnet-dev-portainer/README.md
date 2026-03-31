@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, .NET, C#, ASP.NET, Development, Microservices
+Tags: Portainer, Docker, .NET, C#, ASP.NET, Development, Microservice
 
 Description: Build a complete .NET 8 development environment with hot-reload, remote debugging, SQL Server, and Redis using Docker and Portainer.
 

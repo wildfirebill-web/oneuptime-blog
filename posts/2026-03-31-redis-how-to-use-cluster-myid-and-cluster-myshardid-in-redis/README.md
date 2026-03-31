@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Node Identity, Operations, Administration
+Tags: Redis, Cluster, Node Identity, Operation, Administration
 
 Description: Learn how to use CLUSTER MYID and CLUSTER MYSHARDID in Redis to retrieve the current node's unique identifiers for scripting and automation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Digger, PR Automation, GitHub Actions, GitOps
+Tags: OpenTofu, Digger, PR Automation, GitHub Action, GitOps
 
 Description: Learn how to configure Digger to automate OpenTofu plan and apply operations in GitHub Actions pull requests, enabling GitOps workflows without a dedicated Terraform server.
 

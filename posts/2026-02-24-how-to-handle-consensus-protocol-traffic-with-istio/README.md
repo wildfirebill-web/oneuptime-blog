@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Consensus Protocols, Raft, Distributed Systems
+Tags: Istio, Kubernetes, Consensus Protocols, Raft, Distributed System
 
 Description: Configure Istio to support consensus protocol traffic like Raft and Paxos without interfering with timing-sensitive inter-node communication in distributed systems.
 

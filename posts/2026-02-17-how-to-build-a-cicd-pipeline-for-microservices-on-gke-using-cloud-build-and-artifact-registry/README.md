@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Build, Artifact Registry, GKE, CI/CD, Microservices, DevOps
+Tags: GCP, Cloud Build, Artifact Registry, GKE, CI/CD, Microservice, DevOps
 
 Description: Set up a complete CI/CD pipeline for building, testing, and deploying microservices to GKE using Google Cloud Build and Artifact Registry with automated rollbacks.
 

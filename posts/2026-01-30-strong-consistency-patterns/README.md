@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Consistency, Distributed Systems, Database, Patterns
+Tags: Consistency, Distributed System, Database, Pattern
 
 Description: A practical guide to implementing strong consistency in distributed systems using synchronous replication, two-phase commit, and linearizability.
 

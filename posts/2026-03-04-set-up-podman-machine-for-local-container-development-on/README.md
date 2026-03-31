@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Containers, Linux
+Tags: RHEL, Podman, Container, Linux
 
 Description: Step-by-step guide on set up podman machine for local container development using Red Hat Enterprise Linux 9.
 

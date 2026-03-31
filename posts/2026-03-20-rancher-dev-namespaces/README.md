@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Namespaces, Development, Multi-Tenancy
+Tags: Rancher, Kubernetes, Namespace, Development, Multi-Tenancy
 
 Description: Configure dedicated development namespaces in Rancher with resource quotas, network policies, RBAC, and developer self-service capabilities.
 

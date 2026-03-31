@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, AMD64, Cross-Platform
+Tags: Podman, Container, DevOps, Multi-Architecture, AMD64, Cross-Platform
 
 Description: Learn how to build AMD64 container images on ARM64 machines like Apple Silicon Macs and AWS Graviton instances using Podman with QEMU emulation.
 

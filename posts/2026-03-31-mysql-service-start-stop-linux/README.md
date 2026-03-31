@@ -1,6 +1,6 @@
 # How to Start and Stop the MySQL Service on Linux
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Service, Linux, Systemd, Administration
 

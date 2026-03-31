@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, containers.conf
+Tags: Podman, Container, DevOps, Configuration, containers.conf
 
 Description: Learn how to configure the containers.conf file to customize Podman behavior for container runtime, engine, and network settings.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Food Delivery, Dispatch, Logistics, Tracing, Metrics, Real-time Systems, Geolocation
+Tags: OpenTelemetry, Food Delivery, Dispatch, Logistics, Tracing, Metric, Real-time Systems, Geolocation
 
 Description: Learn how to instrument food delivery dispatch systems with OpenTelemetry to trace order assignment, driver tracking, ETA calculation, and delivery lifecycle with practical code examples.
 

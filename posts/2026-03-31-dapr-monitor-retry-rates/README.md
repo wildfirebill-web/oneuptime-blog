@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Retry, Monitoring, Metrics, Resiliency
+Tags: Dapr, Retry, Monitoring, Metric, Resiliency
 
 Description: Learn how to monitor retry rates in Dapr using built-in metrics, Prometheus scraping, and Grafana dashboards to detect resiliency issues early.
 

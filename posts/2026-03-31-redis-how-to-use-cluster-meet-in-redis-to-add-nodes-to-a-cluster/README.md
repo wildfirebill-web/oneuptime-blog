@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Nodes, Scaling, Operations
+Tags: Redis, Cluster, Node, Scaling, Operation
 
 Description: Learn how to use CLUSTER MEET in Redis to introduce a new node to an existing cluster, enabling horizontal scaling and slot redistribution.
 

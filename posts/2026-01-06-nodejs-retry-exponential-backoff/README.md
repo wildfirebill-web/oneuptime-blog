@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Reliability, API, Distributed Systems, DevOps
+Tags: NodeJS, Reliability, API, Distributed System, DevOps
 
 Description: Learn to implement retry logic with exponential backoff, circuit breakers, jitter, and idempotency in Node.js for resilient distributed systems.
 

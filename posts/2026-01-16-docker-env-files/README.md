@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Environment Variables, Configuration, DevOps, Best Practice
+Tags: Docker, Environment Variable, Configuration, DevOps, Best Practice
 
 Description: Learn how to use .env files with Docker and Docker Compose, manage different environments, handle secrets safely, and implement best practices for configuration management.
 

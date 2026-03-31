@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Helm, Kubernetes, Operations, Infrastructure
+Tags: MongoDB, Helm, Kubernetes, Operation, Infrastructure
 
 Description: Learn how to deploy MongoDB on Kubernetes using the Bitnami Helm chart, configure values, enable authentication, set up persistence, and manage upgrades.
 

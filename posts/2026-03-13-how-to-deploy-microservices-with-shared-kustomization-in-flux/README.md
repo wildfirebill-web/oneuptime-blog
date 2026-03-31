@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Kustomization, Microservices, Monorepo
+Tags: Flux CD, Kubernetes, GitOps, Kustomization, Microservice, Monorepo
 
 Description: Learn how to use a single Kustomization resource to deploy all microservices from a monorepo using Flux CD.
 

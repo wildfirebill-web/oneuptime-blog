@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Isolation, Namespaces
+Tags: Podman, Container, DevOps, Security, Isolation, Namespace
 
 Description: Learn how to configure different isolation levels for Podman containers using namespaces, cgroups, and security options.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Docker, Multi-Platform, ARM, BuildKit, CI/CD
+Tags: GitHub Action, Docker, Multi-Platform, ARM, BuildKit, CI/CD
 
 Description: Learn how to build multi-platform Docker images with GitHub Actions. This guide covers buildx, QEMU emulation, native builders, and optimization strategies for ARM64 and AMD64 images.
 

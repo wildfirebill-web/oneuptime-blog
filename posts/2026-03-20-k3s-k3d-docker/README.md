@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Docker, K3d, Development, Testing, DevOps
+Tags: k3s, Kubernetes, Docker, K3d, Development, Testing, DevOps
 
 Description: Learn how to use k3d to run K3s clusters inside Docker containers for fast local development and CI/CD testing environments.
 

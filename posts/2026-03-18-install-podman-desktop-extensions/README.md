@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Extensions, Plugins
+Tags: Podman, Container, DevOps, Podman Desktop, Extension, Plugin
 
 Description: Learn how to discover, install, and manage Podman Desktop extensions to add new features and integrations to your container workflow.
 

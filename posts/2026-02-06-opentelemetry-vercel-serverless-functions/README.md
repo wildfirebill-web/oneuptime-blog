@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Vercel, Serverless, Next.js, Tracing, Edge Functions
+Tags: OpenTelemetry, Vercel, Serverless, Next.js, Tracing, Edge Function
 
 Description: Learn how to add OpenTelemetry instrumentation to Vercel serverless functions for distributed tracing, metrics collection, and full observability.
 

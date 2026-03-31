@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, State Management, Sdk, Microservice, Storage
+Tags: Dapr, Go, State Management, SDK, Microservice, Storage
 
 Description: Use the Dapr Go SDK to save, retrieve, update, and delete state with support for ETags, bulk operations, and state store transactions.
 

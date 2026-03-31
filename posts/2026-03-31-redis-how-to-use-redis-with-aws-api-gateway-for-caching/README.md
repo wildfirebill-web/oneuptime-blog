@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, AWS, Api Gateway, Lambda, Caching, Serverless
+Tags: Redis, AWS, API Gateway, Lambda, Caching
 
 Description: Learn how to use Redis as a caching layer for AWS API Gateway and Lambda functions to reduce latency and database load for API responses.
 

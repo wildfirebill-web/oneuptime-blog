@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bloom Filter, RedisBloom, Commands, NoSql
+Tags: Redis, Bloom Filter, RedisBloom, Command, NoSQL
 
 Description: Learn how to use BF.EXISTS and BF.MEXISTS in Redis to check whether one or multiple items are present in a Bloom filter with probabilistic accuracy.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, Window Function, LEAD, LAG, MySQL 8.0, Database
+Tags: MySQL, SQL, Window Function, LEAD, Lag, MySQL 8.0, Database
 
 Description: Learn how to use LEAD and LAG window functions in MySQL 8.0 to access values from the next or previous row without a self-join.
 

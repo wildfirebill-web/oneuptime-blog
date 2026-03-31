@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Apache Kafka, Under-Replicated Partitions, Troubleshooting, Replication, High Availability, Operations
+Tags: Apache Kafka, Under-Replicated Partitions, Troubleshooting, Replication, High Availability, Operation
 
 Description: Learn how to diagnose and fix under-replicated partitions in Kafka, including common causes, monitoring strategies, and remediation steps for maintaining data durability.
 

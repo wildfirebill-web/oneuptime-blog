@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Troubleshooting, Debugging
+Tags: Podman, Container, DevOps, Secret, Troubleshooting, Debugging
 
 Description: Learn how to diagnose and fix common secret access issues in Podman containers, including permission errors, missing secrets, and configuration problems.
 

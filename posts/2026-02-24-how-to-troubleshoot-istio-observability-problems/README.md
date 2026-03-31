@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Observability, Metrics, Tracing, Troubleshooting, Prometheus
+Tags: Istio, Observability, Metric, Tracing, Troubleshooting, Prometheus
 
 Description: Fix common Istio observability issues including missing metrics, broken distributed traces, incomplete telemetry data, and Prometheus scraping failures.
 

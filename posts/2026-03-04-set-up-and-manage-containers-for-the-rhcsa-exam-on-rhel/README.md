@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, RHCSA, Podman, Containers, Certification
+Tags: RHEL, RHCSA, Podman, Container, Certification
 
 Description: Practice the container management tasks tested on the RHCSA exam using Podman, including running containers, creating systemd services, and using rootless containers.
 

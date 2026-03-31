@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Metrics, Histogram, Prometheus, Latency
+Tags: Metric, Histogram, Prometheus, Latency
 
 Description: Learn to create histogram metrics design for measuring distributions and percentiles.
 

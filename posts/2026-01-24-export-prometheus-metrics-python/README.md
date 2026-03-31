@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Prometheus, Metrics, Monitoring, FastAPI, Flask, Observability
+Tags: Python, Prometheus, Metric, Monitoring, FastAPI, Flask, Observability
 
 Description: Learn how to export custom Prometheus metrics from Python applications. This guide covers counters, gauges, histograms, and summaries with practical examples for web frameworks and background workers.
 

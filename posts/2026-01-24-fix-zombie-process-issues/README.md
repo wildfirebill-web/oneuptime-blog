@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Processes, Troubleshooting, System Administration, Zombie Processes, Process Management
+Tags: Linux, Process, Troubleshooting, System Administration, Zombie Processes, Process Management
 
 Description: Learn how to identify, diagnose, and fix zombie processes in Linux, including understanding their causes, proper cleanup methods, and prevention strategies.
 

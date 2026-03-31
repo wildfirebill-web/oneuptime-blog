@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, Error Messages, Kustomization, RBAC, Secrets
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, Error Messages, Kustomization, RBAC, Secret
 
 Description: Learn how to diagnose and fix the 'failed to get secret' error in Flux Kustomization resources caused by missing secrets or RBAC issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Kubernetes, Storage Classes, Persistent Volumes, Infrastructure as Code, Cloud Native
+Tags: OpenTofu, Kubernetes, Storage Class, Persistent Volume, Infrastructure as Code, Cloud Native
 
 Description: Learn how to create and manage Kubernetes StorageClasses using OpenTofu for dynamic persistent volume provisioning on AWS EBS, Azure Disk, and GCP Persistent Disk.
 

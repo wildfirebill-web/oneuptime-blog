@@ -1,8 +1,8 @@
 # ClickHouse vs Druid for Real-Time Analytics
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Druid, Analytics, Real-time, Database, Performance
+Tags: ClickHouse, Druid, Analytics, Real-Time, Database, Performance
 
 Description: A detailed comparison of ClickHouse and Apache Druid for real-time analytics, examining ingestion latency, query patterns, architecture, and operational tradeoffs.
 

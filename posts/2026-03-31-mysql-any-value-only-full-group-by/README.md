@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Aggregate Function, Group By
+Tags: MySQL, Aggregate Function, GROUP BY
 
 Description: Learn how MySQL's ANY_VALUE() function suppresses ONLY_FULL_GROUP_BY errors by explicitly marking a column as non-deterministic in GROUP BY queries.
 

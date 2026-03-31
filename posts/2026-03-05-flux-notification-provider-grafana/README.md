@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Grafana, Observability, Annotations
+Tags: Flux CD, GitOps, Kubernetes, Notification, Grafana, Observability, Annotation
 
 Description: Learn how to configure Flux CD's notification controller to send deployment annotations to Grafana dashboards using the Provider resource.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Debugging, Error Handling, Common Errors, Lists
+Tags: Python, Debugging, Error Handling, Common Errors, List
 
 Description: Learn how to fix IndexError list index out of range in Python. Understand why this error occurs when accessing list elements and implement defensive coding patterns.
 

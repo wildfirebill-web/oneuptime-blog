@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, HCL, Infrastructure as Code, Configuration
+Tags: Terraform, Variable, HCL, Infrastructure as Code, Configuration
 
 Description: Learn how to use the nullable argument on Terraform variables to control whether a variable can accept null values and how this affects default value behavior.
 

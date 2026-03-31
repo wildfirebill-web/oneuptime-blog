@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lua, Atomic Operations, Compare-and-Swap, Inventory, Transactions, Backend
+Tags: Redis, Lua, Atomic Operation, Compare-and-Swap, Inventory, Transaction, Backend
 
 Description: A comprehensive guide to implementing atomic read-modify-write operations with Redis Lua scripts, covering compare-and-swap patterns, inventory management, counters with limits.
 

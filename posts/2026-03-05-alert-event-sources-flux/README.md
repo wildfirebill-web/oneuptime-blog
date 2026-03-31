@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Event Sources
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Event Sources
 
 Description: Learn how to configure the eventSources field in Flux alerts to specify exactly which resources to monitor for events.
 

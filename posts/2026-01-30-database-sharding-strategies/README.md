@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Database, Sharding, Scaling, Architecture, Distributed Systems
+Tags: Database, Sharding, Scaling, Architecture, Distributed System
 
 Description: Design database sharding strategies with hash-based, range-based, and directory-based approaches for horizontal scaling of large datasets.
 

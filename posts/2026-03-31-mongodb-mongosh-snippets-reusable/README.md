@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Mongosh, Snippet, Automation, Developer Tools
+Tags: MongoDB, Mongosh, Snippet, Automation, Developer Tool
 
 Description: Learn how to create, install, and use mongosh snippets to package reusable database operations and share them across your team.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud Storage, Batch Operations, Data Management, Automation
+Tags: GCP, Google Cloud Storage, Batch Operation, Data Management, Automation
 
 Description: Learn how to efficiently manage large numbers of objects in Google Cloud Storage using batch operations, parallel processing, and scripting techniques.
 

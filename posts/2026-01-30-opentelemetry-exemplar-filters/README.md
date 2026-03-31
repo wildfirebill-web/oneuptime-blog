@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Exemplars, Tracing
+Tags: OpenTelemetry, Metric, Exemplars, Tracing
 
 Description: Learn how to implement exemplar filters in OpenTelemetry to connect metrics with traces for faster root cause analysis.
 

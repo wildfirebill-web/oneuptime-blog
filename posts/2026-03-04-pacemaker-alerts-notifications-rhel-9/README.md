@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Pacemaker, Alerts, Notifications, High Availability, Cluster, Monitoring, Linux
+Tags: RHEL, Pacemaker, Alert, Notification, High Availability, Cluster, Monitoring, Linux
 
 Description: Learn how to configure Pacemaker alerts and notifications on RHEL 9 to receive email and custom notifications for cluster events.
 

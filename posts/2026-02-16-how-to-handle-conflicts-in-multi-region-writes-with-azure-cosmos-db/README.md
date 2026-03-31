@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Cosmos DB, Multi-Region Writes, Conflict Resolution, Distributed Systems, Data Consistency
+Tags: Azure, Cosmos DB, Multi-Region Writes, Conflict Resolution, Distributed System, Data Consistency
 
 Description: Learn how to detect, resolve, and prevent write conflicts in Azure Cosmos DB when using multi-region writes with practical conflict resolution strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Pull Requests, Automation, Code Review, DevOps
+Tags: GitHub Action, CI/CD, Pull Requests, Automation, Code Review, DevOps
 
 Description: Learn how to configure GitHub Actions workflows to trigger on pull request events, including filtering by branches, paths, labels.
 

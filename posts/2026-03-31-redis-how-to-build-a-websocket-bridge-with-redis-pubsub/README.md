@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, WebSocket, Real-time, Node.js, Scalability
+Tags: Redis, Pub/Sub, WebSocket, Real-Time, Node.js, Scalability
 
 Description: Build a scalable WebSocket server that bridges Redis Pub/Sub to browser clients, enabling real-time updates across multiple server instances.
 

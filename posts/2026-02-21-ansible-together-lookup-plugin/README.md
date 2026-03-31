@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Lookup Plugins, Loops, Data Pairing
+Tags: Ansible, Lookup Plugins, Loop, Data Pairing
 
 Description: Learn how to use the Ansible together lookup plugin to zip multiple lists together and iterate over paired elements in your playbooks.
 

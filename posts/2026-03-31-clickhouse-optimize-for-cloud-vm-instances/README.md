@@ -1,6 +1,6 @@
 # How to Optimize ClickHouse for Cloud VM Instances
 
-Author: [nawazdhandala](https="https://www.github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Cloud, VM, Performance, AWS, GCP, Azure, Optimization
 

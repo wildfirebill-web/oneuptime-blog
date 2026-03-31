@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRepository, Authentication, Credentials, Security
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRepository, Authentication, Credential, Security
 
 Description: Learn how to configure the passCredentials option in Flux CD HelmRepository resources to forward authentication credentials to downstream chart requests.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Sentry, Certificate, cert-manager, Security
+Tags: Dapr, Sentry, Certificate, Cert-Manager, Security
 
 Description: Integrate Dapr with an external certificate manager like cert-manager to use enterprise PKI, automate CA rotation, and manage Dapr trust bundles declaratively.
 

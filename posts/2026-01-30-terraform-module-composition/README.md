@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, IaC, Architecture
+Tags: Terraform, Module, IaC, Architecture
 
 Description: A comprehensive guide to creating composable Terraform modules that scale with your infrastructure.
 

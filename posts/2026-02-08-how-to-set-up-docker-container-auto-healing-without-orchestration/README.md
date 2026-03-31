@@ -1,6 +1,6 @@
 # How to Set Up Docker Container Auto-Healing Without Orchestration
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Docker, Auto-Healing, Health Check, Production, Reliability, DevOps
 

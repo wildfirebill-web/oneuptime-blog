@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Foreign Key, Error, Constraint, DELETE
+Tags: MySQL, Foreign Key, Error, Constraint, Delete
 
 Description: Fix MySQL ERROR 1217 Cannot delete or update a parent row by deleting child rows first, using CASCADE, or disabling foreign key checks before deletion.
 

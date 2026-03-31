@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Slices, Append, Memory, Arrays, Common Bugs
+Tags: Go, Golang, Slices, APPEND, Memory, Array, Common Bugs
 
 Description: Understand why slice append can overwrite data in Go and learn safe patterns for working with slices to avoid unexpected mutations.
 

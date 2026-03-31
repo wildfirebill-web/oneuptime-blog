@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, Web Editor, DevOps
+Tags: Portainer, Docker, Template, Web Editor, DevOps
 
 Description: Learn how to create and save custom Portainer templates directly from the browser-based web editor.
 

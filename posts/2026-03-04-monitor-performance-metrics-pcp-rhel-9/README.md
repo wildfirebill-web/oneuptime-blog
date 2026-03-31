@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, PCP, Performance, Monitoring, Metrics, Linux
+Tags: RHEL, PCP, Performance, Monitoring, Metric, Linux
 
 Description: Learn how to install and use PCP (Performance Co-Pilot) on RHEL to collect, monitor, and analyze system performance metrics.
 

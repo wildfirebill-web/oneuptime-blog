@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Terraform, Stacks, Docker, Infrastructure
+Tags: Portainer, Terraform, Stack, Docker, Infrastructure
 
 Description: Learn how to deploy and manage Docker Compose stacks in Portainer using Terraform, enabling version-controlled, repeatable stack deployments as part of your infrastructure pipeline.
 

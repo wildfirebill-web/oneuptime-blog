@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Administration API, Automation, REST API
+Tags: MongoDB, Atlas, Administration Api, Automation, REST API
 
 Description: Automate MongoDB Atlas operations using the Administration API to manage clusters, users, backups, and alerts programmatically in scripts and pipelines.
 

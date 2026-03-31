@@ -1,8 +1,8 @@
 # How to Perform MongoDB Point-in-Time Recovery with Oplogs
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Recovery, Oplog, Backup, Operations
+Tags: MongoDB, Recovery, Oplog, Backup, Operation
 
 Description: Learn how to use MongoDB oplogs with mongorestore to perform point-in-time recovery, restoring your database to any specific moment before a data loss event.
 

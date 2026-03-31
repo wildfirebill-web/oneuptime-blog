@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Kong, Api Gateway, Microservice, Proxy
+Tags: MongoDB, Kong, API Gateway, Microservice, Proxy
 
 Description: Route, authenticate, and rate-limit requests to MongoDB-backed services using Kong API Gateway with declarative configuration.
 

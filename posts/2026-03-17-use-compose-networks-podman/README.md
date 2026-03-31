@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Networking
+Tags: Podman, Container, DevOps, podman-compose, Networking
 
 Description: Learn how to define and use custom networks in podman-compose files for service isolation and inter-container communication.
 

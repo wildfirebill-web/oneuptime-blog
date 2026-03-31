@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MetalLB, Kubernetes, Maintenance, Node Draining, High Availability, Operations, Load Balancing
+Tags: MetalLB, Kubernetes, Maintenance, Node Draining, High Availability, Operation, Load Balancing
 
 Description: Learn how to handle MetalLB during Kubernetes node maintenance with graceful draining and IP address migration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, VPC Service Controls, Cloud Functions, Serverless, Security Perimeter
+Tags: GCP, VPC Service Controls, Cloud Function, Serverless, Security Perimeter
 
 Description: Learn how to configure VPC Service Controls to allow Cloud Functions to access protected resources like BigQuery, Cloud Storage, and Pub/Sub inside a service perimeter.
 

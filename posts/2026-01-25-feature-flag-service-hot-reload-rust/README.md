@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Feature Flags, Hot Reload, Configuration, DevOps
+Tags: Rust, Feature Flag, Hot Reload, Configuration, DevOps
 
 Description: Learn how to build a production-ready feature flag service in Rust that supports hot reloading configuration without restarts.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Best Practice, Templates, DevOps, Automation
+Tags: Portainer, Best Practice, Template, DevOps, Automation
 
 Description: Create and manage application templates in Portainer to standardize and accelerate deployments across your organization.
 

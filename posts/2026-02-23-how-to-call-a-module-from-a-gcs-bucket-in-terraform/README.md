@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, GCP, Google Cloud Storage, Infrastructure as Code, DevOps
+Tags: Terraform, Module, GCP, Google Cloud Storage, Infrastructure as Code, DevOps
 
 Description: Learn how to store and reference Terraform modules in Google Cloud Storage buckets, including packaging, uploading, authentication, and best practices for GCS-hosted modules.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Redis, Job Queue, Background Jobs, Async
+Tags: Go, Redis, Job Queue, Background Job, Async
 
 Description: Build robust job queues in Go using Asynq and Redis with support for delayed jobs, automatic retries, priorities, and dead letter queue handling.
 

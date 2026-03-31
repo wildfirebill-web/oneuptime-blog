@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Backstage, Developer Portal, Platform Engineering, Developer Experience, Internal Tools
+Tags: Backstage, Developer Portal, Platform Engineering, Developer Experience, Internal Tool
 
 Description: Learn how to set up Spotify's Backstage as an internal developer portal to centralize service catalogs, documentation, and developer tooling in one searchable interface.
 

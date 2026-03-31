@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Messaging, Patterns, Filtering, EIP
+Tags: Messaging, Pattern, Filtering, EIP
 
 Description: Build message consumers that process only relevant messages using selectors, header filters, and SQL-like expressions.
 

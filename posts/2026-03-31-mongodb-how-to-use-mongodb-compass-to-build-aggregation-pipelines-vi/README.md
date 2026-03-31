@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Compass, Aggregation, Query Building
+Tags: MongoDB, Compass, Aggregation, Query Building
 
 Description: Learn how to use MongoDB Compass's Aggregation Pipeline Builder to construct, test, and export aggregation pipelines visually without writing raw MongoDB syntax.
 

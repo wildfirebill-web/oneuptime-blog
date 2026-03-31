@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Go, Cobra, CLI, Commands, Tracing
+Tags: OpenTelemetry, Go, Cobra, CLI, Command, Tracing
 
 Description: Complete guide to adding OpenTelemetry tracing to Cobra CLI applications for observing command execution, measuring performance, and debugging issues.
 

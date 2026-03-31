@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, System Administration, Monitoring
+Tags: Podman, Container, DevOps, System Administration, Monitoring
 
 Description: Learn how to use the podman info command to display detailed system information about your Podman installation, including host details, storage configuration, and registry settings.
 

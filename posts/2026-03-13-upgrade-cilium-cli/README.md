@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, CLI, Kubernetes, Tools
+Tags: Cilium, CLI, Kubernetes, Tool
 
 Description: Learn how to upgrade the Cilium CLI tool to stay current with new features and ensure compatibility with your Cilium cluster version, including verification and troubleshooting steps.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Firewall, Security, firewalld
+Tags: Podman, Container, DevOps, Networking, Firewall, Security, firewalld
 
 Description: Learn how to configure firewall rules to control inbound and outbound traffic for Podman containers.
 

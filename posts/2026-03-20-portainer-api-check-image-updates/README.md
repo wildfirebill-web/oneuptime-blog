@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Docker, Images, Monitoring
+Tags: Portainer, API, Docker, Image, Monitoring
 
 Description: Learn how to use the Portainer API to check for container image updates, identify outdated containers, and automate image freshness monitoring across your environments.
 

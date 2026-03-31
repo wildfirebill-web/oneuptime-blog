@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Authentication, Logout, Security
+Tags: Podman, Container, DevOps, Registry, Authentication, Logout, Security
 
 Description: Learn how to securely log out from container registries in Podman, removing stored credentials and managing authentication state.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Multi-Node, Cluster Setup, High Availability
+Tags: k3s, Kubernetes, Rancher, Multi-Node, Cluster Setup, High Availability
 
 Description: Learn how to set up a K3s cluster with multiple server and agent nodes for production workloads.
 

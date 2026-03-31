@@ -1,6 +1,6 @@
 # How to Prefix State Keys by Application ID in Dapr
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Key Prefix, Isolation, Microservice
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Edge Computing, IoT, Architecture, DevOps, Kubernetes, Distributed Systems
+Tags: Edge Computing, IoT, Architecture, DevOps, Kubernetes, Distributed System
 
 Description: A practical guide to designing and deploying edge architecture that brings compute closer to users and devices, reducing latency and improving reliability.
 

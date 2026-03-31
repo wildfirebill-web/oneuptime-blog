@@ -1,6 +1,6 @@
 # How to Configure mTLS Exception for Health Checks
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, mTLS, Health Check, Kubernetes, Security
 

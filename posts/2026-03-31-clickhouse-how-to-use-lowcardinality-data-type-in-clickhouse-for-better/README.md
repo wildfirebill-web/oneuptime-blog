@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Data Types, Compression, Performance, Optimization
+Tags: ClickHouse, Data Type, Compression, Performance, Optimization
 
 Description: Learn how to use the LowCardinality data type in ClickHouse to dramatically reduce storage and improve query performance for low-cardinality string columns.
 

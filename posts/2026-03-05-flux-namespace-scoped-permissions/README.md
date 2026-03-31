@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Security, RBAC, Namespaces, Multi-Tenancy
+Tags: Flux CD, GitOps, Kubernetes, Security, RBAC, Namespace, Multi-Tenancy
 
 Description: Learn how to configure Flux CD controllers with namespace-scoped permissions instead of cluster-wide access for stronger isolation in multi-tenant environments.
 

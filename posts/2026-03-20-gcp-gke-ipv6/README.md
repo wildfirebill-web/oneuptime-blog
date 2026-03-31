@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, IPv6, GKE, Kubernetes, Dual-Stack, Google Cloud, Containers
+Tags: GCP, IPv6, GKE, Kubernetes, Dual-Stack, Google Cloud, Container
 
 Description: Create Google Kubernetes Engine clusters with IPv6 support, configure dual-stack pod and service CIDR ranges, and deploy IPv6-aware workloads on GKE.
 

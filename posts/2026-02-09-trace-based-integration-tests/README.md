@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, OpenTelemetry, Distributed Tracing, Testing, Microservices
+Tags: Kubernetes, OpenTelemetry, Distributed Tracing, Testing, Microservice
 
 Description: Learn how to build trace-based integration tests for Kubernetes microservice chains using OpenTelemetry instrumentation and trace validation to verify end-to-end request flows.
 

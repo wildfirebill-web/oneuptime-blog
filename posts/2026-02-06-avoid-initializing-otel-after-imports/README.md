@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Node.js, Python, Anti-Patterns
+Tags: OpenTelemetry, Node.js, Python, Anti-Pattern
 
 Description: Understand why initializing the OpenTelemetry SDK after importing instrumented libraries causes silent failures and how to fix it.
 

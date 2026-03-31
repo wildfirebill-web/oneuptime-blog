@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Index
+Tags: MySQL, JSON, Index
 
 Description: Learn how to create multi-valued indexes on JSON array columns in MySQL 8.0 to enable fast lookups on individual array elements.
 

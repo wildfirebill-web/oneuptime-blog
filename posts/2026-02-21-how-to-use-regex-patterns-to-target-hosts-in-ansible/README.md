@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Inventory, Regex, Patterns, DevOps
+Tags: Ansible, Inventory, Regex, Pattern, DevOps
 
 Description: Learn how to use regular expression patterns in Ansible to target hosts with complex naming patterns, character classes, and alternation for precise infrastructure selection.
 

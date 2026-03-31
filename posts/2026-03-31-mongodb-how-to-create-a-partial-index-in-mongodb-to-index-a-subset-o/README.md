@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Partial Index, Filter Expression, Index Optimization
+Tags: MongoDB, Index, Partial Index, Filter Expression, Index Optimization
 
 Description: Learn how to create partial indexes in MongoDB using filter expressions to index only a subset of documents, reducing index size and improving write performance.
 

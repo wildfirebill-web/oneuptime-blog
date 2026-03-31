@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, Landing Zone, Architecture, OpenTofu, Organizations, Control Tower, Security
+Tags: AWS, Landing Zone, Architecture, OpenTofu, Organization, Control Tower, Security
 
 Description: Learn how to build an AWS Landing Zone using OpenTofu with AWS Organizations, Service Control Policies, centralized logging, and security baselines for enterprise-grade multi-account governance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Troubleshooting, Logging, Operations
+Tags: Rancher, Kubernetes, Troubleshooting, Logging, Operation
 
 Description: A guide to understanding and parsing Rancher server logs, including log levels, key log patterns, and how to increase verbosity for debugging.
 

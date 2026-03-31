@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Hot Reload, Containers, Development, Live Reloading
+Tags: Podman, Hot Reload, Container, Development, Live Reloading
 
 Description: Guide to setting up hot-reload workflows inside Podman containers, covering volume mounts, file watching, polling strategies, and troubleshooting.
 

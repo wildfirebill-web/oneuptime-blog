@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Collections
+Tags: OpenTofu, Terraform, IaC, Function, Collection
 
 Description: Learn how to use setintersection, setproduct, setsubtract, and setunion functions in OpenTofu for set operations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bitmap, String, Internals, Memory
+Tags: Redis, Bitmap, String, Internal, Memory
 
 Description: Understand how Redis bitmaps are stored as SDS strings, how memory is allocated by bit offset, and when bitmaps are the most space-efficient data structure.
 

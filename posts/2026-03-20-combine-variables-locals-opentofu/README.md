@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Locals, Best Practice, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Local, Best Practice, Infrastructure as Code, DevOps
 
 Description: A guide to combining OpenTofu variables and locals effectively to create clean, readable, and maintainable configurations.
 

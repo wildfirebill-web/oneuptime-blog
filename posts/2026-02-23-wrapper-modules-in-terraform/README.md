@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Wrapper Modules, IaC, Architecture
+Tags: Terraform, Module, Wrapper Modules, IaC, Architecture
 
 Description: Learn how to build wrapper modules in Terraform that provide opinionated defaults on top of community or base modules for organizational standards and consistency.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Portainer, Kubernetes, Storage, Persistent Volumes, DevOps
+Tags: Longhorn, Portainer, Kubernetes, Storage, Persistent Volume, DevOps
 
 Description: Learn how to deploy Longhorn distributed block storage on Kubernetes and manage persistent volumes through Portainer's Kubernetes interface.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sets, Unique Collections, Beginner, Sadd, Set Operations
+Tags: Redis, Set, Unique Collections, Beginner, SADD, Set Operation
 
 Description: Learn how to use Redis sets to store unique values and perform fast membership checks, unions, intersections, and differences.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Webhooks, Redeployment, Automation, CI/CD
+Tags: Portainer, Webhook, Redeployment, Automation, CI/CD
 
 Description: Use Portainer's container webhook URL to trigger automatic container redeployment from CI/CD pipelines.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Local Storage, File Operations, Bindings, Microservices
+Tags: Dapr, Local Storage, File Operations, Binding, Microservice
 
 Description: Learn how to use the Dapr Local Storage binding to read, write, and delete files on the local filesystem from your microservices through the Dapr sidecar API.
 

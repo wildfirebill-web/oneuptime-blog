@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Top-K, Heavy Hitters, Trending, Leaderboard
+Tags: Redis, Top-K, Heavy Hitter, Trending, Leaderboard
 
 Description: Learn how to use TOPK.LIST in Redis to retrieve all items currently in the Top-K list, optionally with their estimated frequency counts.
 

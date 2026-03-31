@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bloom Filter, RedisBloom, Commands, NoSql
+Tags: Redis, Bloom Filter, RedisBloom, Command, NoSQL
 
 Description: Learn how to use BF.ADD and BF.MADD in Redis to insert one or multiple items into a Bloom filter for fast probabilistic membership testing.
 

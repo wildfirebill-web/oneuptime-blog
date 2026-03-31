@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Pull Requests, GitOps, GitHub Actions, Code Review, Infrastructure as Code
+Tags: OpenTofu, Pull Requests, GitOps, GitHub Action, Code Review, Infrastructure as Code
 
 Description: Learn how to implement pull request-based infrastructure workflows with OpenTofu where every change goes through a PR with automated plan comments, cost estimates, and required approvals.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Debugging, Events, Troubleshooting
+Tags: Podman, Container, DevOps, Debugging, Event, Troubleshooting
 
 Description: Learn how to use podman events as a debugging tool to diagnose container failures, startup issues, and unexpected behavior.
 

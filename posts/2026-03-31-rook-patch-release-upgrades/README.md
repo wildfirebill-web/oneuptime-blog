@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Upgrade, Patch, Maintenance
+Tags: Rook, Ceph, Upgrade, PATCH, Maintenance
 
 Description: Step-by-step guide to safely performing patch release upgrades in Rook-Ceph, covering pre-checks, upgrade execution, and post-upgrade verification.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Window Functions, ROW_NUMBER, Analytics, SQL
+Tags: MySQL, Window Function, ROW_NUMBER, Analytics, SQL
 
 Description: Learn how to get the top N records per group in MySQL using ROW_NUMBER(), RANK(), and DENSE_RANK() window functions with practical examples.
 

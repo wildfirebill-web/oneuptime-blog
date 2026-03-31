@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Batch Processing, DevOps, Automation
+Tags: Kubernetes, Job, Batch Processing, DevOps, Automation
 
 Description: A practical guide to using Kubernetes Jobs for batch processing tasks, including parallel execution, completion tracking, error handling, and cleanup strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, IPv4, Alerts, Availability, Monitoring, Prometheus
+Tags: Grafana, IPv4, Alert, Availability, Monitoring, Prometheus
 
 Description: Create Grafana Unified Alerting rules to monitor IPv4 endpoint availability using Blackbox Exporter probe metrics, configure notification channels, and route alerts.
 

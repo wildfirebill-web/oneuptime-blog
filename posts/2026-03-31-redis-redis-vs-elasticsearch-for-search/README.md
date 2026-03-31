@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Elasticsearch, Search, Full-Text Search, Redisearch
+Tags: Redis, Elasticsearch, Search, Full-Text Search, RediSearch
 
 Description: Compare Redis RediSearch and Elasticsearch for full-text search, covering indexing, query language, relevance scoring, and operational complexity.
 

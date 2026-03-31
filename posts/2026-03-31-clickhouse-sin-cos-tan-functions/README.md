@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Trigonometry, sin, cos, tan, Math Function, Analytical Query
+Tags: ClickHouse, Trigonometry, Sin, COS, Tan, Math Function, Analytical Query
 
 Description: Learn how to use sin(), cos(), and tan() trigonometric functions in ClickHouse for angle calculations, signal processing, and geospatial math.
 

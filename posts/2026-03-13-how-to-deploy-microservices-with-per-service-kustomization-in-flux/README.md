@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Kustomization, Microservices, Independent Deployment
+Tags: Flux CD, Kubernetes, GitOps, Kustomization, Microservice, Independent Deployment
 
 Description: Learn how to create individual Kustomization resources per microservice in Flux CD for independent deployments and fine-grained rollout control.
 

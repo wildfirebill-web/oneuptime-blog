@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Metrics, DevOps
+Tags: ArgoCD, GitOps, Kubernetes, Metric, DevOps
 
 Description: Learn how to measure the success of your GitOps adoption using DORA metrics, deployment frequency, drift detection rates, and team productivity indicators.
 

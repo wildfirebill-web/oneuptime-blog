@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Logging, Debugging
+Tags: Podman, Container, DevOps, Podman Desktop, Logging, Debugging
 
 Description: Learn how to view, filter, and follow container logs in Podman Desktop for debugging and monitoring your applications.
 

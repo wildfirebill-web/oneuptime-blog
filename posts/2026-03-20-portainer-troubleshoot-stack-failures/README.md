@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Troubleshooting, DevOps
+Tags: Portainer, Docker, Stack, Troubleshooting, DevOps
 
 Description: A systematic guide to diagnosing and fixing common stack deployment failures in Portainer.
 

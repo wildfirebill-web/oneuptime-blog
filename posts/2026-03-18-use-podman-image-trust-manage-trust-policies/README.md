@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Trust Policies, CLI
+Tags: Podman, Container, DevOps, Security, Trust Policies, CLI
 
 Description: Learn how to use the podman image trust command to view, set, and manage container image trust policies directly from the command line.
 

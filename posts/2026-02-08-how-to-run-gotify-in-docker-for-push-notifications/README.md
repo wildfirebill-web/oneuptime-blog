@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Gotify, Push Notifications, Self-Hosted, Alerts, Docker Compose, Monitoring
+Tags: Docker, Gotify, Push Notification, Self-Hosted, Alert, Docker Compose, Monitoring
 
 Description: Deploy Gotify in Docker to send and receive push notifications from your servers, scripts, and monitoring tools.
 

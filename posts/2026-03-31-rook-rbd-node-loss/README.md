@@ -1,6 +1,6 @@
 # How to Handle Node Loss for RBD Volumes in Rook
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage
 

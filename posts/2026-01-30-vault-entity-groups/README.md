@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Vault, Identity, Groups, Security
+Tags: Vault, Identity, Group, Security
 
 Description: A practical guide to managing identities at scale using Vault entity groups, covering internal groups, external groups, aliases, and policy attachment.
 

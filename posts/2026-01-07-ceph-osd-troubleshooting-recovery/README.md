@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ceph, Storage, Troubleshooting, OSDs, High Availability, Cloud Native
+Tags: Ceph, Storage, Troubleshooting, OSD, High Availability, Cloud Native
 
 Description: A practical guide to diagnosing and recovering from Ceph OSD failures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, GCP, Cloud Logging, Metrics, Monitoring, Infrastructure as Code
+Tags: Terraform, GCP, Cloud Logging, Metric, Monitoring, Infrastructure as Code
 
 Description: Learn how to create Google Cloud log-based metrics using Terraform to transform log entries into quantifiable metrics for alerting and dashboards.
 

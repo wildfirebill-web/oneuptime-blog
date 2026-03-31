@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Configs, Compliance, Remediation, Security
+Tags: AWS, CONFIG, Compliance, Remediation, Security
 
 Description: Learn how to set up automatic and manual remediation actions for non-compliant resources detected by AWS Config rules using SSM documents and custom Lambda functions.
 

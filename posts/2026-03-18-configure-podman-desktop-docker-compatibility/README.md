@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Docker, Compatibility, Migration
+Tags: Podman, Container, DevOps, Podman Desktop, Docker, Compatibility, Migration
 
 Description: Learn how to configure Podman Desktop for full Docker compatibility so existing Docker workflows, tools, and scripts work without modification.
 

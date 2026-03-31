@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, String Functions, countSubstrings, Text Analysis, Analytics
+Tags: ClickHouse, String Function, countSubstrings, Text Analysis, Analytics
 
 Description: Learn how to use countSubstrings() and countSubstringsCaseInsensitive() in ClickHouse to count how many times a substring appears within string values.
 

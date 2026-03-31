@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Configuration, K3s
+Tags: Calico, Kubernetes, Networking, CNI, Configuration, k3s
 
 Description: Learn how to configure Calico networking on a new K3s cluster for edge and IoT environments with optimal settings.
 

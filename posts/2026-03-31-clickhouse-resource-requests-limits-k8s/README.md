@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Kubernetes, Resource Management, CPU, Memory, Limits, Production
+Tags: ClickHouse, Kubernetes, Resource Management, CPU, Memory, Limit, Production
 
 Description: Configure CPU and memory requests and limits for ClickHouse pods on Kubernetes to ensure stable scheduling, prevent OOM kills, and enable proper capacity planning.
 

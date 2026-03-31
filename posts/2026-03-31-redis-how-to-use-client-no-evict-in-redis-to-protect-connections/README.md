@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Client, Memory Management, Commands, Administration
+Tags: Redis, Client, Memory Management, Command, Administration
 
 Description: Learn how to use CLIENT NO-EVICT in Redis to protect specific client connections from being evicted when the server reaches maxmemory limits.
 

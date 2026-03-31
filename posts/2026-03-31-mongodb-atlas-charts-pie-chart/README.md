@@ -27,7 +27,7 @@ Drag fields onto the two primary encoding channels:
 - **Label** - the categorical field that defines each slice (e.g., `storeLocation`)
 - **Arc** - the numeric field that determines slice size (e.g., `items.price` with `Sum` aggregation)
 
-```
+```text
 Label:  storeLocation    (Category)
 Arc:    items.price      (Aggregation: Sum)
 ```

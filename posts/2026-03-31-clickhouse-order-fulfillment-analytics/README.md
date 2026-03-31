@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Order Fulfillment, E-commerce, Analytics, SLA, Logistics
+Tags: ClickHouse, Order Fulfillment, E-Commerce, Analytics, SLA, Logistics
 
 Description: Build order fulfillment analytics in ClickHouse to track fulfillment SLAs, pick-pack times, warehouse efficiency, and order accuracy rates.
 

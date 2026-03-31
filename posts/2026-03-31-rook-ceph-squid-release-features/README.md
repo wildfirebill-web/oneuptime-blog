@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Squid, Release, Features, SMB
+Tags: Rook, Ceph, Squid, Release, Feature, SMB
 
 Description: Explore the key features in Ceph Squid (v19), including improved SMB support, RGW enhancements, NVMe-oF graduation, and performance improvements.
 

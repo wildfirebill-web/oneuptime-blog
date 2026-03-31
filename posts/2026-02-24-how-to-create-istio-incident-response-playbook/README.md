@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Incident Response, On-Call, Kubernetes, Operations, SRE
+Tags: Istio, Incident Response, On-Call, Kubernetes, Operation, SRE
 
 Description: Build a comprehensive Istio incident response playbook with triage workflows, diagnostic decision trees, communication templates, and post-incident processes.
 

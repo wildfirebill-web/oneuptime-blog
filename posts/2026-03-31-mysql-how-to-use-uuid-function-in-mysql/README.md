@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, UUID, Primary Keys, SQL Functions
+Tags: MySQL, UUID, Primary Key, SQL Functions
 
 Description: Learn how to use the UUID() function in MySQL to generate universally unique identifiers for primary keys and distributed data scenarios.
 

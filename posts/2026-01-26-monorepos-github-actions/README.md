@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Monorepo, CI/CD, Path Filters, Nx, Turborepo, DevOps
+Tags: GitHub Action, Monorepo, CI/CD, Path Filters, Nx, Turborepo, DevOps
 
 Description: Learn how to configure GitHub Actions for monorepos with path-based triggers, parallel package builds, shared workflows, and efficient caching strategies that scale.
 

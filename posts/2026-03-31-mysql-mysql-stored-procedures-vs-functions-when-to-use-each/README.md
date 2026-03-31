@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Stored Procedures, Functions, Database Programming, SQL
+Tags: MySQL, Stored Procedure, Function, Database Programming, SQL
 
 Description: Compare MySQL stored procedures and functions - their syntax, return values, and when to use each for database logic encapsulation.
 

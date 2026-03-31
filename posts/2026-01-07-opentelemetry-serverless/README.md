@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Observability, Serverless, AWS Lambda, Azure Functions, Tracing
+Tags: OpenTelemetry, Observability, Serverless, AWS Lambda, Azure Function, Tracing
 
 Description: A complete guide to adding OpenTelemetry instrumentation to serverless functions for observability.
 

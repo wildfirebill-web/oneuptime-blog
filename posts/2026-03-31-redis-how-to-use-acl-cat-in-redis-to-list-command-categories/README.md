@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, ACL, Security, Commands, Access Control
+Tags: Redis, ACL, Security, Command, Access Control
 
 Description: Learn how to use ACL CAT in Redis to list available command categories and the commands within each category, essential for building precise ACL rules.
 

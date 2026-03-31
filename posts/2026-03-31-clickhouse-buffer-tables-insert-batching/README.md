@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Buffer Table, INSERT, Performance, Batching
+Tags: ClickHouse, SQL, Buffer Table, Insert, Performance, Batching
 
 Description: Learn how ClickHouse Buffer tables absorb high-frequency inserts in memory and flush them in batches to a destination MergeTree table.
 

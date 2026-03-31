@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Performance, Query Optimization, Database
+Tags: MongoDB, Index, Performance, Query Optimization, Database
 
 Description: Learn how to create and optimize MongoDB indexes for better query performance including compound, partial, and TTL indexes.
 

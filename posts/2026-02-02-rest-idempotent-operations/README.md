@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: REST API, Idempotency, API Design, HTTP Methods, Distributed Systems, Reliability
+Tags: REST API, Idempotency, API Design, HTTP Methods, Distributed System, Reliability
 
 Description: Learn how to design idempotent REST API operations that are safe for retries.
 

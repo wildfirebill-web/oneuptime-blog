@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Docker, ECS, Kubernetes, Containers, Infrastructure as Code
+Tags: OpenTofu, Docker, ECS, Kubernetes, Container, Infrastructure as Code
 
 Description: Learn how to provision containerized workloads on AWS ECS and Kubernetes using OpenTofu for repeatable container deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Operations, DevOps
+Tags: Portainer, Docker, Container, Operation, DevOps
 
 Description: Learn how to start, stop, and manage the lifecycle of Docker containers using the Portainer web interface.
 

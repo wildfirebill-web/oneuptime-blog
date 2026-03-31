@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, K3s
+Tags: Cilium, Kubernetes, k3s
 
 Description: Configure the K3s master (server) node correctly for Cilium CNI deployment, including kernel parameters, K3s server flags, and Cilium-specific node settings.
 

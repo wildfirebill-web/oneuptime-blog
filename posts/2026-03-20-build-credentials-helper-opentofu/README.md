@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Credentials, Authentication, Registry, Infrastructure as Code, Security
+Tags: OpenTofu, Credential, Authentication, Registry, Infrastructure as Code, Security
 
 Description: Learn how to configure a credentials helper in OpenTofu to authenticate with private module registries and OCI artifact stores.
 

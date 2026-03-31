@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics, Automation
+Tags: Calico, Kubernetes, Networking, Diagnostic, Automation
 
 Description: Automate Calico per-node diagnostic collection across all cluster nodes, including Felix health status, BGP peer state, and node-level diag bundles, for rapid multi-node incident analysis.
 

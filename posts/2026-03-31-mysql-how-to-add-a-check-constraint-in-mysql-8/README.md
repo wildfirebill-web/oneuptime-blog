@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Constraints, Data Validation
+Tags: MySQL, DDL, Constraint, Data Validation
 
 Description: Learn how to add CHECK constraints in MySQL 8.0.16+ to enforce custom data validation rules at the database level using ALTER TABLE.
 

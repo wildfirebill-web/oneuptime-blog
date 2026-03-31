@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, OpenTelemetry, Observability, Tracing, Metrics, Logging, ASP.NET Core
+Tags: .NET, C#, OpenTelemetry, Observability, Tracing, Metric, Logging, ASP.NET Core
 
 Description: A practical guide to instrumenting .NET applications with OpenTelemetry for distributed tracing, metrics collection, and structured logging. Covers both automatic and manual instrumentation patterns.
 

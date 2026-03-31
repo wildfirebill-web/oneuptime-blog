@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images
+Tags: Podman, Container, DevOps, Container Image
 
 Description: Learn how to filter and search local container images by name using Podman's reference filters, glob patterns, and formatting options.
 

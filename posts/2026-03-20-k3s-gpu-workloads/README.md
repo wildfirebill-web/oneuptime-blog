@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, GPU, NVIDIA, AI, Machine Learning, CUDA, DevOps
+Tags: k3s, Kubernetes, GPU, NVIDIA, AI, Machine Learning, CUDA, DevOps
 
 Description: Learn how to configure K3s to support NVIDIA GPU workloads for AI/ML training and inference using the NVIDIA device plugin.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Systemd, Readiness, sdnotify
+Tags: Podman, Container, DevOps, Quadlet, Systemd, Readiness, sdnotify
 
 Description: Learn how to configure systemd readiness notifications in Quadlet so dependent services start only after a container is truly ready.
 

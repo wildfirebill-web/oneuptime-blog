@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Netdata, Monitoring, Real-Time, Observability, DevOps, Metrics
+Tags: Docker, Netdata, Monitoring, Real-Time, Observability, DevOps, Metric
 
 Description: Deploy Netdata in Docker to get real-time, per-second monitoring of your systems, containers, and applications with zero configuration.
 

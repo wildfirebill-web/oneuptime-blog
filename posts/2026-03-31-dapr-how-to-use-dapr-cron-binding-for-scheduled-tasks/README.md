@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Cron, Bindings, Scheduled Tasks, Microservices
+Tags: Dapr, Cron, Binding, Scheduled Task, Microservice
 
 Description: Learn how to use the Dapr Cron input binding to schedule recurring tasks in your microservices without managing cron infrastructure yourself.
 

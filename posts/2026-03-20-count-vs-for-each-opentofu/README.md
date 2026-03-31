@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Count, for_each, Resources, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Count, for_each, Resource, HCL, Infrastructure as Code, DevOps
 
 Description: Learn when to use count versus for_each in OpenTofu, understand their tradeoffs, and choose the right meta-argument for creating multiple resource instances.
 

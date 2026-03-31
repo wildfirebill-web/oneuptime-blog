@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps
+Tags: Podman, Installation, Linux, Container, DevOps
 
 Description: A detailed guide to building and installing Podman from source code, including all dependencies, build configuration, and post-installation setup.
 

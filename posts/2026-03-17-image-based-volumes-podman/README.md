@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Images, Storage
+Tags: Podman, Container, DevOps, Volumes, Image, Storage
 
 Description: Learn how to use container images as volume sources in Podman to provide pre-populated data to containers.
 

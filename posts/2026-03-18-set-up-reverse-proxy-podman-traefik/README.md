@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Traefik, Reverse Proxy, Containers, Networking
+Tags: Podman, Traefik, Reverse Proxy, Container, Networking
 
 Description: Learn how to deploy Traefik as a reverse proxy with Podman, using labels and file-based configuration to route traffic to containerized services automatically.
 

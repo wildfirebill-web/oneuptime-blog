@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache APISIX, API Gateway, Ubuntu, DevOps, Microservices, Load Balancing, Security, Observability
+Tags: Apache APISIX, API Gateway, Ubuntu, DevOps, Microservice, Load Balancing, Security, Observability
 
 Description: A complete guide to installing, configuring, and operating Apache APISIX API gateway on Ubuntu with etcd, plugins, authentication, and monitoring.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Database, PostgreSQL, MySQL, MongoDB, Containers
+Tags: Podman, Database, PostgreSQL, MySQL, MongoDB, Container
 
 Description: Learn how to deploy, manage, and administer databases using Podman containers with persistent storage, automated backups, replication, and monitoring.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, FixedString, String
+Tags: ClickHouse, SQL, Data Type, FixedString, String
 
 Description: Learn how to use FixedString(N) in ClickHouse for fixed-length byte strings, including null-padding behavior, storage efficiency, and when to prefer it over String.
 

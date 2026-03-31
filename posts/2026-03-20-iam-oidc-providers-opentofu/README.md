@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, IAM, OIDC, GitHub Actions, CI/CD, Infrastructure as Code, Workload Identity
+Tags: OpenTofu, AWS, IAM, OIDC, GitHub Action, CI/CD, Infrastructure as Code, Workload Identity
 
 Description: Learn how to create IAM OIDC providers using OpenTofu to enable keyless authentication from GitHub Actions, GitLab CI, and other CI/CD systems to AWS without storing long-lived credentials.
 

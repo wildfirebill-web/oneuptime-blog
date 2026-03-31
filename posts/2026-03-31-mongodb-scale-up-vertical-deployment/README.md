@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Scaling, Performance, Operations, Replica Set
+Tags: MongoDB, Scaling, Performance, Operation, Replica Set
 
 Description: Learn how to vertically scale a MongoDB deployment by increasing CPU, memory, or storage on existing nodes using a rolling approach to avoid downtime.
 

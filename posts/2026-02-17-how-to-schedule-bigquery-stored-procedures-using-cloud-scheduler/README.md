@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Cloud Scheduler, Stored Procedures, Automation
+Tags: GCP, BigQuery, Cloud Scheduler, Stored Procedure, Automation
 
 Description: Learn how to use Google Cloud Scheduler to trigger BigQuery stored procedures on a schedule, including setup with Cloud Functions and direct BigQuery API calls.
 

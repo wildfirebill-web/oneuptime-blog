@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, RabbitMQ, Queue
+Tags: Kubernetes, Job, RabbitMQ, Queue
 
 Description: Learn how to build reliable work queue patterns using Kubernetes Jobs and RabbitMQ for distributed task processing with advanced messaging features.
 

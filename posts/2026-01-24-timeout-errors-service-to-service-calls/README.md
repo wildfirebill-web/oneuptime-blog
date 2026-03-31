@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Timeout, Distributed Systems, Networking, Troubleshooting, Resilience, DevOps
+Tags: Microservice, Timeout, Distributed System, Networking, Troubleshooting, Resilience, DevOps
 
 Description: Learn how to diagnose and fix timeout errors in service-to-service communication, including configuration tuning, circuit breakers, and observability strategies.
 

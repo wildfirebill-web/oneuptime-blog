@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, GnuTLS, TLS, Certificates, Linux
+Tags: RHEL, GnuTLS, TLS, Certificate, Linux
 
 Description: A hands-on guide to using GnuTLS tools on RHEL for generating keys, creating certificates, and inspecting TLS connections.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, DevOps, Self-Hosted
+Tags: Portainer, Docker, Container, DevOps, Self-Hosted
 
 Description: A step-by-step guide to installing Portainer Community Edition on Docker using the docker run command.
 

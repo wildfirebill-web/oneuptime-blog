@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Networking, ExternalIPs, Services
+Tags: Kubernetes, IPv6, Networking, ExternalIPs, Service
 
 Description: A practical guide to configuring IPv6 ExternalIPs on Kubernetes Services to expose workloads directly via IPv6 addresses.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Redis Cli, Scan, Key Enumeration, Production
+Tags: Redis, Redis Cli, SCAN, Key Enumeration, Production
 
 Description: Use redis-cli --scan to safely enumerate Redis keys in production without blocking the server, unlike the dangerous KEYS command which blocks all operations.
 

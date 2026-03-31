@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Monitors, NTP, Troubleshooting
+Tags: Rook, Ceph, Monitor, NTP, Troubleshooting
 
 Description: Fix clock skew warnings in Ceph monitors by synchronizing time with NTP and configuring the mon_clock_drift_allowed tolerance threshold.
 

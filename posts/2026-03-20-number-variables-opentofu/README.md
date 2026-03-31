@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Number, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Number, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to declaring and using number type variables in OpenTofu for counts, sizes, and numeric configuration values.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Bun, CLI, JavaScript, Developer Tools
+Tags: Bun, CLI, JavaScript, Developer Tool
 
 Description: A comprehensive guide to building fast, cross-platform command-line applications using Bun with argument parsing, subcommands, colors, and single-executable compilation.
 

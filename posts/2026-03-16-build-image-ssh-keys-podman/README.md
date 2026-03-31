@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, SSH, Security
+Tags: Podman, Container, DevOps, Container Image, Build, SSH, Security
 
 Description: Learn how to securely use SSH keys during Podman image builds for cloning private repositories and accessing remote resources without leaking keys into image layers.
 

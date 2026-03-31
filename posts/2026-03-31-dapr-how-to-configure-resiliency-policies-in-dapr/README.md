@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Resiliency, Retry, Circuit Breaker, Microservices
+Tags: Dapr, Resiliency, Retry, Circuit Breaker, Microservice
 
 Description: Learn how to configure Dapr resiliency policies including retries, circuit breakers, and timeouts for service invocation, pub/sub, and bindings.
 

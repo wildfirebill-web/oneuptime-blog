@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Monitoring, Message Queues, Linux
+Tags: RHEL, Monitoring, Message Queue, Linux
 
 Description: Step-by-step guide on monitor rabbitmq with prometheus and grafana using Red Hat Enterprise Linux 9.
 

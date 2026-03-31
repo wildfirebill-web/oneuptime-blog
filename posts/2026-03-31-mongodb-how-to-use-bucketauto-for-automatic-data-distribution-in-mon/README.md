@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $bucketAuto, Data Distribution, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $bucketAuto, Data Distribution, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $bucketAuto stage to automatically distribute documents into evenly sized buckets without manually specifying boundary values.
 

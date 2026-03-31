@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Aggregate Function, Avg
+Tags: ClickHouse, SQL, Aggregate Function, AVG
 
 Description: Learn how to use avg(), avgIf(), and avgWeighted() in ClickHouse, including NULL handling, precision considerations, and practical query examples.
 

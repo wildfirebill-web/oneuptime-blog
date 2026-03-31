@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Plugins, Monitoring, Observability
+Tags: Calico, Kubernetes, Networking, CNI, Plugin, Monitoring, Observability
 
 Description: Set up monitoring for the Calico CNI plugin to track pod IP allocation rates, CNI invocation errors, IPAM pool utilization, and WorkloadEndpoint creation health.
 

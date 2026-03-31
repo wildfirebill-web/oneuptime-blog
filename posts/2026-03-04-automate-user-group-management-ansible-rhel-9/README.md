@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible, User Management, Groups, Automation, Linux
+Tags: RHEL, Ansible, User Management, Group, Automation, Linux
 
 Description: Manage user accounts, groups, SSH keys, and access policies across RHEL servers using Ansible for consistent identity management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Release Notes, Upgrade, Community, Changelog
+Tags: Dapr, Release Note, Upgrade, Community, Changelog
 
 Description: Learn how to track Dapr releases, read release notes effectively, subscribe to announcements, and plan upgrades using the official release process.
 

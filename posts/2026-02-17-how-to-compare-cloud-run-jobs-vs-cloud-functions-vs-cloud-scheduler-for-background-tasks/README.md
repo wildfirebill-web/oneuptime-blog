@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Run Jobs, Cloud Functions, Cloud Scheduler, Serverless, Background Tasks
+Tags: GCP, Cloud Run Jobs, Cloud Function, Cloud Scheduler, Serverless, Background Task
 
 Description: A practical comparison of Cloud Run Jobs, Cloud Functions, and Cloud Scheduler for running background and scheduled tasks on Google Cloud.
 

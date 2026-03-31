@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Troubleshooting, Message Queues, RabbitMQ, Kafka, Debugging
+Tags: Rancher, Troubleshooting, Message Queue, RabbitMQ, Kafka, Debugging
 
 Description: A systematic guide to diagnosing and resolving common message queue issues in Rancher including consumer lag, broker failures, and networking problems.
 

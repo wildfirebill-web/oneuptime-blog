@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Sys Schema, Performance Monitoring, Database Diagnostics, DBA
+Tags: MySQL, sys Schema, Performance Monitoring, Database Diagnostics, DBA
 
 Description: Learn how to use the MySQL sys schema to simplify performance monitoring, identify slow queries, and analyze server activity with human-readable views.
 

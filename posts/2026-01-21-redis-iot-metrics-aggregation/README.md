@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, IoT, Metrics, Aggregation, Time Series, Edge Computing, Data Summarization, Analytics
+Tags: Redis, IoT, Metric, Aggregation, Time Series, Edge Computing, Data Summarization, Analytics
 
 Description: A comprehensive guide to aggregating IoT metrics with Redis, covering edge computing patterns, real-time data summarization, time-windowed aggregations.
 

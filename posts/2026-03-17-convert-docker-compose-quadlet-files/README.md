@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Docker Compose, Migration
+Tags: Podman, Container, DevOps, Quadlet, Docker Compose, Migration
 
 Description: Learn how to migrate Docker Compose services to Podman Quadlet container files for native systemd integration.
 

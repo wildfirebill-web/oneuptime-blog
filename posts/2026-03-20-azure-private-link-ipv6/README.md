@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Private Link, IPv6, Private Endpoint, Dual-Stack, Services
+Tags: Azure, Private Link, IPv6, Private Endpoint, Dual-Stack, Service
 
 Description: Configure Azure Private Link endpoints with IPv6 addresses for private connectivity to Azure PaaS services.
 

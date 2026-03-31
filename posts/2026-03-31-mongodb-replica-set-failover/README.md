@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, Failover, High Availability, Elections
+Tags: MongoDB, Replica Set, Failover, High Availability, Election
 
 Description: Learn how MongoDB replica set failover works, how to trigger a manual stepdown, handle application reconnection, and tune election parameters for faster failover.
 

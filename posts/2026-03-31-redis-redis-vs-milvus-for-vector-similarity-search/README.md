@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Milvus, Vector Search, Similarity Search, Ai
+Tags: Redis, Milvus, Vector Search, Similarity Search, AI
 
 Description: Compare Redis and Milvus for vector similarity search, covering index types, scalability, GPU support, and production deployment considerations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Unique Index, Error Handling, E11000
+Tags: MongoDB, Index, Unique Index, Error Handling, E11000
 
 Description: Learn how to detect, handle, and prevent duplicate key errors (E11000) on unique indexes in MongoDB with practical application patterns.
 

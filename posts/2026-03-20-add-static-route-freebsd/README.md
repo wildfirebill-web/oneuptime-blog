@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: FreeBSD, Static Routes, Routes, Networking, Routing, Rc.conf
+Tags: FreeBSD, Static Routes, Route, Networking, Routing, Rc.conf
 
 Description: Add temporary and persistent static routes on FreeBSD using the route command and /etc/rc.conf for boot-time route configuration.
 

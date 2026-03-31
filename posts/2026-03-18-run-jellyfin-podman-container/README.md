@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Jellyfin, Podman, Containers, Media Server, Streaming, Linux, Self-Hosted, Open Source
+Tags: Jellyfin, Podman, Container, Media Server, Streaming, Linux, Self-Hosted, Open Source
 
 Description: Deploy Jellyfin, the free and open-source media server, inside a Podman container with hardware transcoding, persistent storage, and automatic startup.
 

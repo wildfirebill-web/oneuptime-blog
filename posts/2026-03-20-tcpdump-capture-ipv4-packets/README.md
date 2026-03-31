@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tcpdump, IPv4, Linux, Packet Capture, Networking, Diagnostics
+Tags: tcpdump, IPv4, Linux, Packet Capture, Networking, Diagnostic
 
 Description: Use tcpdump to capture and analyze IPv4 network packets on Linux, with basic filters, output formatting, and saving captures for offline analysis.
 

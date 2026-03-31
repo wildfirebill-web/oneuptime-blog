@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Elasticsearch, Search Engine, ELK Stack
+Tags: Podman, Container, DevOps, Elasticsearch, Search Engine, ELK Stack
 
 Description: Learn how to run Elasticsearch in a Podman container with proper memory settings, persistent indices, and cluster configuration.
 

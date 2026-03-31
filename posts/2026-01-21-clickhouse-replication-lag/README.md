@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Replication, Troubleshooting, High Availability, ZooKeeper, Performance, Operations, Monitoring
+Tags: ClickHouse, Replication, Troubleshooting, High Availability, ZooKeeper, Performance, Operation, Monitoring
 
 Description: A comprehensive guide to diagnosing and fixing replication lag in ClickHouse clusters, covering ZooKeeper issues, network problems, merge bottlenecks, and recovery procedures.
 

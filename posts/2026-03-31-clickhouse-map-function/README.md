@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Map Function, Data Types, Query Optimization
+Tags: ClickHouse, Map Function, Data Type, Query Optimization
 
 Description: Learn how to use map() to create Map columns and inline key-value structures in ClickHouse queries, with practical examples for storing and querying structured data.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Security, Containers, Best Practice
+Tags: Portainer, Docker, Security, Container, Best Practice
 
 Description: Configure containers to run with read-only root filesystems in Portainer to improve security posture.
 

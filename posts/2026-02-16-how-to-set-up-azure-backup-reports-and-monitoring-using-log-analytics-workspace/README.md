@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Backup, Log Analytics, Monitoring, Backup Reports, Azure Monitor, Alerts, Data Protection
+Tags: Azure Backup, Log Analytics, Monitoring, Backup Reports, Azure Monitor, Alert, Data Protection
 
 Description: Learn how to configure Azure Backup reports and monitoring using Log Analytics workspace to track backup health, job status, and storage consumption across all your vaults.
 

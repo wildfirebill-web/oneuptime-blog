@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Variables, Configuration
+Tags: Podman, Container, DevOps, podman-compose, Variable, Configuration
 
 Description: Learn how to use variable substitution syntax in podman-compose files for dynamic configuration with defaults and error handling.
 

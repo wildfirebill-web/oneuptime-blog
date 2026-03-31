@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Cache, TTL, Adaptive, Access Pattern
 
-Description: Learn how to implement adaptive TTL in Redis that extends a key's expiry on each access, keeping hot data alive longer while letting cold data expire naturally.
+Description: Learn how to implement adaptive TTL in Redis that extends a key expiry on each access, keeping hot data alive longer while letting cold data expire naturally.
 
 ---
 

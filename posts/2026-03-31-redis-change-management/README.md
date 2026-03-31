@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Change Management, Operations
+Tags: Redis, Change Management, Operation
 
 Description: Learn how to implement a Redis change management process with pre-approval checklists, audit logging, rollback plans, and automated configuration drift detection.
 

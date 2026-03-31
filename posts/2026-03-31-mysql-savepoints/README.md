@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, Transaction, Savepoint, ROLLBACK, Database
+Tags: MySQL, SQL, Transaction, Savepoint, Rollback, Database
 
 Description: Learn how to use MySQL savepoints to create intermediate checkpoints within a transaction, enabling partial rollbacks without discarding all changes.
 

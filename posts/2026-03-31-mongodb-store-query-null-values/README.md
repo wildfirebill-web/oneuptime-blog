@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Null, Query, Schema, BSON
+Tags: MongoDB, NULL, Query, Schema, BSON
 
 Description: Learn how MongoDB distinguishes between null values and missing fields, how to query each case, and how to use sparse indexes for null-heavy collections.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Connection Pool, Metrics, Performance, Database
+Tags: OpenTelemetry, Connection Pool, Metric, Performance, Database
 
 Description: Diagnose connection pool exhaustion by correlating OpenTelemetry pool usage metrics with slow database span durations.
 

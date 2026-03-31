@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Spatial Data, MULTIPOINT, GIS, Data Types
+Tags: MySQL, Spatial Data, MULTIPOINT, GIS, Data Type
 
 Description: Learn how to store and query collections of geographic points using the MULTIPOINT data type in MySQL with practical GIS examples.
 

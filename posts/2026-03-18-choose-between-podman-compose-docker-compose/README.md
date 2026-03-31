@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Docker Compose, podman-compose, Containers, Orchestration
+Tags: Podman, Docker Compose, podman-compose, Container, Orchestration
 
 Description: Compare podman-compose and Docker Compose to understand their differences in compatibility, features, and use cases so you can choose the right multi-container orchestration tool.
 

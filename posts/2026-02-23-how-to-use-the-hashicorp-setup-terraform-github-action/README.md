@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, GitHub Actions, CI/CD, HashiCorp, DevOps, Infrastructure as Code
+Tags: Terraform, GitHub Action, CI/CD, HashiCorp, DevOps, Infrastructure as Code
 
 Description: Learn how to configure and use the official hashicorp/setup-terraform GitHub Action for version management, CLI wrapper features, and Terraform Cloud integration.
 

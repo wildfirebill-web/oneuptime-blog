@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iptables, Linux, Firewall, Security, Diagnostics
+Tags: iptables, Linux, Firewall, Security, Diagnostic
 
 Description: List all iptables rules across all chains and tables using various formats, including line numbers, packet counters, and verbose output for auditing and troubleshooting.
 

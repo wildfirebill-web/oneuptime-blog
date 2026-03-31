@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Discard, Blackhole, 100::/64, RFC 6666, Networking
+Tags: IPv6, DISCARD, Blackhole, 100::/64, RFC 6666, Networking
 
 Description: Understand the Discard-Only Address Block 100::/64 (RFC 6666), its role as a remote-triggered blackhole target, and how to use it for traffic discarding.
 

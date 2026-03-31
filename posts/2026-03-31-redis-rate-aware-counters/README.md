@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Counter, Rate, Metrics, Analytics
+Tags: Redis, Counter, Rate, Metric, Analytics
 
 Description: Build rate-aware counters in Redis that calculate events per second, per minute, and velocity trends from raw increment data.
 

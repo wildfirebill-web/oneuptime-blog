@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Drift Detection
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Drift Detection
 
 Description: Learn how to configure Flux alerts that notify you when configuration drift is detected and corrected in your Kubernetes cluster.
 

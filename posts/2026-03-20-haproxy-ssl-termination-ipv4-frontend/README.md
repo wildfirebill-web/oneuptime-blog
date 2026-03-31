@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, SSL, TLS, IPv4, HTTPS, Certificates, Security
+Tags: HAProxy, SSL, TLS, IPv4, HTTPS, Certificate, Security
 
 Description: Configure HAProxy to terminate SSL/TLS connections on a specific IPv4 frontend, decrypting HTTPS traffic and forwarding plain HTTP to backend servers.
 

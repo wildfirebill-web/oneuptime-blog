@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Restart, Containers, Operations
+Tags: Portainer, Docker, Restart, Container, Operation
 
 Description: Restart one or multiple Docker containers in Portainer through the web interface or API.
 

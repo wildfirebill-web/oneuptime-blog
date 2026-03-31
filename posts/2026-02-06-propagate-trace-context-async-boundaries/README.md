@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Distributed Tracing, Context Propagation, Async, Thread, Promises, Concurrency
+Tags: OpenTelemetry, Distributed Tracing, Context Propagation, Async, Thread, Promise, Concurrency
 
 Description: Learn how to maintain OpenTelemetry trace context across async boundaries like threads, promises, and coroutines to avoid broken traces.
 

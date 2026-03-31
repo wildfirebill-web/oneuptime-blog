@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Admission Webhooks, Testing, Webhook Development, Local Development
+Tags: Kubernetes, Admission Webhook, Testing, Webhook Development, Local Development
 
 Description: Learn how to test Kubernetes admission webhooks locally using tools like webhook-tester and kind clusters, enabling rapid development without deploying to production clusters.
 

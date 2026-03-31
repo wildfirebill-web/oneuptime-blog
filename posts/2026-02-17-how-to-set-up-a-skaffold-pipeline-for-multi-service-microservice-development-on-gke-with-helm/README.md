@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Skaffold, GKE, Helm, Kubernetes, Microservices, DevOps
+Tags: GCP, Skaffold, GKE, Helm, Kubernetes, Microservice, DevOps
 
 Description: Learn how to set up a Skaffold pipeline for developing and deploying multiple microservices on GKE using Helm charts for templating and deployment.
 

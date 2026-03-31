@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Go, HTTP Client, Race Conditions
+Tags: OpenTelemetry, Go, HTTP Client, Race Condition
 
 Description: Resolve race conditions in Go HTTP client instrumentation where otelhttptrace causes context canceled errors on timeouts.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, HCL, Infrastructure as Code, DevOps
 
 Description: A comprehensive guide to defining and using input variables in OpenTofu to make configurations reusable and flexible.
 

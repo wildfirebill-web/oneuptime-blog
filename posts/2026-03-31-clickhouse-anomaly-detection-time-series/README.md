@@ -1,6 +1,6 @@
 # How to Detect Anomalies in Time-Series Data with ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Anomaly Detection, Time-Series, Observability, Analytics
 

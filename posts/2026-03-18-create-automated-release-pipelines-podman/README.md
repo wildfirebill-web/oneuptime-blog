@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CI/CD, Release Pipeline, Automation
+Tags: Podman, Container, DevOps, CI/CD, Release Pipeline, Automation
 
 Description: Learn how to build automated release pipelines with Podman that handle versioning, building, testing, signing, and publishing container images.
 

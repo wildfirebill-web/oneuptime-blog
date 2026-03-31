@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, CTE, Common Table Expressions, SQL, DML
+Tags: MySQL, CTE, Common Table Expression, SQL, DML
 
 Description: Learn how to use WITH (Common Table Expressions) in INSERT, UPDATE, DELETE, and SELECT statements in MySQL 8.0 for cleaner and more maintainable SQL.
 

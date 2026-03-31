@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Operations, DevOps
+Tags: Portainer, Docker, Container, Operation, DevOps
 
 Description: Learn how to forcefully terminate a running Docker container in Portainer using the kill command, and when to use it versus a graceful stop.
 

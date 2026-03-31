@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Administration, Passwords, Recovery
+Tags: Portainer, Docker, Administration, Password, Recovery
 
 Description: Recover access to a locked Portainer instance by resetting the admin password using the helper container or CLI flags.
 

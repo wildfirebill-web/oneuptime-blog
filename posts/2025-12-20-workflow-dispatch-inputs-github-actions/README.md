@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Workflow Dispatch, Manual Triggers, CI/CD, Automation, DevOps
+Tags: GitHub Action, Workflow Dispatch, Manual Triggers, CI/CD, Automation, DevOps
 
 Description: Learn how to create interactive GitHub Actions workflows with workflow_dispatch inputs. This guide covers input types, validation, conditional logic, and real-world use cases.
 

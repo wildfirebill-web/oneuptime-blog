@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SUSE Observability, Kubernetes, Monitoring, Topology, Health, Metrics, SUSE Rancher
+Tags: SUSE Observability, Kubernetes, Monitoring, Topology, Health, Metric, SUSE Rancher
 
 Description: Learn how to use SUSE Observability to monitor Kubernetes cluster health, navigate topology maps, investigate incidents, and set up health monitors for workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Locks, InnoDB, Deadlocks, Performance, Troubleshooting
+Tags: MySQL, Lock, InnoDB, Deadlock, Performance, Troubleshooting
 
 Description: Learn how to identify and resolve MySQL lock contention, deadlocks, and long-running transactions using Performance Schema and InnoDB diagnostics.
 

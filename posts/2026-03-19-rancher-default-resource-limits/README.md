@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Namespaces, Resource Quotas
+Tags: Rancher, Kubernetes, Namespace, Resource Quota
 
 Description: Learn how to set default container resource limits per namespace in Rancher so every pod gets sensible defaults automatically.
 

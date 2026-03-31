@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Set, Inverted Index, Search, Data Structures, Tagging, Filtering
+Tags: Redis, Set, Inverted Index, Search, Data Structure, Tagging, Filtering
 
 Description: A comprehensive guide to building inverted indexes using Redis sets for efficient tag-based search, filtering, and faceted navigation without specialized search engines.
 

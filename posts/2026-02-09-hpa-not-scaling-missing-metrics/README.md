@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Autoscaling, Metrics
+Tags: Kubernetes, Autoscaling, Metric
 
 Description: Learn how to debug Kubernetes HorizontalPodAutoscaler that fails to scale due to missing metrics, including metrics server issues, custom metrics problems, and API configuration errors.
 

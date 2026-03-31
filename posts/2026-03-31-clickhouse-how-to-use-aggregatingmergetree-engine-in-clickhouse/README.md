@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, AggregatingMergeTree, Table Engines, Incremental Aggregation, Sql
+Tags: ClickHouse, AggregatingMergeTree, Table Engine, Incremental Aggregation, SQL
 
 Description: Learn how to use AggregatingMergeTree in ClickHouse to store intermediate aggregation states for efficient incremental aggregation with any aggregate function.
 

@@ -1,6 +1,6 @@
 # How to Configure ClickHouse Server listen_host and Ports
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, Networking, Security, Server
 

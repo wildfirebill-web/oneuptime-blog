@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, IpFamilyPolicy, Dual-Stack, Services, SingleStack
+Tags: Kubernetes, IPv6, IpFamilyPolicy, Dual-Stack, Service, SingleStack
 
 Description: Understand and use Kubernetes ipFamilyPolicy to control whether services get IPv4 only, IPv6 only, or both address families, and configure ipFamilies to specify address family preference order.
 

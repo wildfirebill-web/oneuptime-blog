@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Backup, Compression, Storage, gzip
+Tags: MySQL, Backup, Compression, Storage, Gzip
 
 Description: Learn how to compress MySQL backup files using gzip, bzip2, and zstd to reduce storage costs and backup file sizes by up to 90%.
 

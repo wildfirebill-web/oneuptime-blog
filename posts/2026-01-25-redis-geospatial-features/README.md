@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Geospatial, Location, GIS, Backend, Data Structures
+Tags: Redis, Geospatial, Location, GIS, Backend, Data Structure
 
 Description: Implement location-based features with Redis geospatial commands. Learn to store coordinates, find nearby locations, calculate distances, and build location-aware applications.
 

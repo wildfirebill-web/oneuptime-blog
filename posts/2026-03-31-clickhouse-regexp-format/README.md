@@ -1,6 +1,6 @@
 # How to Use Regexp Format in ClickHouse for Pattern-Based Parsing
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Format, Regexp, Parsing, DataIngestion
 

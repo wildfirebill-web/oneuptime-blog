@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, Constraint, CHECK, Schema, Validation, MySQL 8
+Tags: MySQL, SQL, DDL, Constraint, CHECK, Schema
 
 Description: Enforce data validation rules directly in the MySQL schema using CHECK constraints introduced in MySQL 8.0.16, with named constraints and complex expressions.
 

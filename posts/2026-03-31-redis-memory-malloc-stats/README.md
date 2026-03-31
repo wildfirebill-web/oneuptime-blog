@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Malloc, Jemalloc, Diagnostics
+Tags: Redis, Memory, Malloc, Jemalloc, Diagnostic
 
 Description: Learn how to use MEMORY MALLOC-STATS to retrieve raw jemalloc allocator statistics from Redis for deep memory fragmentation analysis and debugging.
 

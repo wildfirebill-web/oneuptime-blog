@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, E-commerce, Schema Design, Product, Modeling
+Tags: MongoDB, E-Commerce, Schema Design, Product, Modeling
 
 Description: Design MongoDB schemas for products with variants like size and color, balancing query performance, inventory accuracy, and catalog flexibility.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, RFC 9098, Extension Headers, Operations, Networking
+Tags: IPv6, RFC 9098, Extension Headers, Operation, Networking
 
 Description: Understand the operational implications of IPv6 extension headers documented in RFC 9098, including deployment challenges, measurement data, and operator recommendations.
 

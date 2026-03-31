@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, S3, Object Storage, Storage
+Tags: Rook, Ceph, S3, Object Storage, Kubernetes
 
-Description: Learn how to create ObjectBucketClaims in Rook-Ceph to provision S3-compatible buckets for applications running in Kubernetes.
+Description: Learn how to provision S3-compatible object storage buckets in Rook-Ceph using ObjectBucketClaims and access them from Kubernetes applications.
 
 ---
 

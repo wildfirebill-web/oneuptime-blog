@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Systemd, Timers, Scheduling, Cron Alternative, Tutorial
+Tags: Ubuntu, Systemd, Timer, Scheduling, Cron Alternative, Tutorial
 
 Description: Complete guide to using systemd timers for task scheduling on Ubuntu.
 

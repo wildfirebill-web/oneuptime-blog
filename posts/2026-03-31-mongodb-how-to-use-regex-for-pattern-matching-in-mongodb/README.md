@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $regex, Pattern Matching, Regular Expressions, Text Search, Query
+Tags: MongoDB, $regex, Pattern Matching, Regular Expression, Text Search, Query
 
 Description: Learn how to use MongoDB's $regex operator for pattern matching queries, including case-insensitive search, anchors, and performance considerations versus text indexes.
 

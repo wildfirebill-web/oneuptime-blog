@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Security, Penetration Testing, Assessment, Tools
+Tags: IPv6, Security, Penetration Testing, Assessment, Tool
 
 Description: Learn how to conduct a technical IPv6 security assessment using scanning, protocol analysis, and attack simulation to identify vulnerabilities in your IPv6 deployment.
 

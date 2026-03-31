@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Modules, C, Custom Commands, Extensions, Advanced
+Tags: Redis, Module, C, Custom Commands, Extension, Advanced
 
 Description: Learn how to build a custom Redis module in C that adds new data types and commands to Redis, extending its capabilities beyond built-in functionality.
 

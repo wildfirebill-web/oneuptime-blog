@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, K3s, Kubernetes, Edge Computing, GitOps, Raspberry Pi
+Tags: Flux CD, k3s, Kubernetes, Edge Computing, GitOps, Raspberry Pi
 
 Description: Deploy Flux CD on K3s lightweight Kubernetes for edge computing environments, with configuration optimized for K3s-specific architecture and constraints.
 

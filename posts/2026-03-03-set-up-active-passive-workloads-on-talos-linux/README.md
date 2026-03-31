@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Active-Passive, High Availability, Kubernetes, Failover, Workloads
+Tags: Talos Linux, Active-Passive, High Availability, Kubernetes, Failover, Workload
 
 Description: Configure active-passive workload patterns on Talos Linux for applications that require exactly one running instance with automatic failover to a standby.
 

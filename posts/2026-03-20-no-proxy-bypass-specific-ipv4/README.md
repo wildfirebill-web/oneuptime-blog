@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Proxy, No_proxy, IPv4, Bypass, Environment Variables
+Tags: Linux, Proxy, No_proxy, IPv4, Bypass, Environment Variable
 
 Description: Configure no_proxy and NO_PROXY environment variables to exclude specific IPv4 addresses, CIDR ranges, and domain suffixes from proxy routing on Linux.
 

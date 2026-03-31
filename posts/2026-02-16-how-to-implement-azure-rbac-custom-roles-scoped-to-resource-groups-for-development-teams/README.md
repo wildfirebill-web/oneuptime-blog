@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, RBAC, Custom Roles, Resource Groups, Access Control, Security, Governance
+Tags: Azure, RBAC, Custom Roles, Resource Group, Access Control, Security, Governance
 
 Description: A hands-on guide to creating Azure RBAC custom roles with least-privilege permissions scoped to resource groups for isolating development team access in shared subscriptions.
 

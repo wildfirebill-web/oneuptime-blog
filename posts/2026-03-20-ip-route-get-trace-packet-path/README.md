@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, ip command, iproute2, Routing, Networking, Diagnostics
+Tags: Linux, ip command, iproute2, Routing, Networking, Diagnostic
 
 Description: Use ip route get to trace which route and interface the kernel would use to send a packet to a specific destination, useful for routing troubleshooting.
 

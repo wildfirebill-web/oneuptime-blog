@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Game Events, Replay, Event Sourcing
+Tags: Redis, Stream, Game Events, Replay, Event Sourcing
 
 Description: Build a game event replay system using Redis Streams to record player actions and game state changes for replay, debugging, and anti-cheat analysis.
 

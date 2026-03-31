@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Role, Variables, YAML
+Tags: Ansible, Role, Variable, YAML
 
 Description: Understand how to define role variables in Ansible using the vars directory, including precedence rules and practical use cases.
 

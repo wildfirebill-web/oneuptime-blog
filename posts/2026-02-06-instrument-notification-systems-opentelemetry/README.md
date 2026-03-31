@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Notifications, Email, SMS, Push Notifications, Tracing, Monitoring
+Tags: OpenTelemetry, Notification, Email, SMS, Push Notification, Tracing, Monitoring
 
 Description: Learn how to instrument email, SMS, and push notification systems with OpenTelemetry for delivery tracking, latency monitoring, and failure diagnosis.
 

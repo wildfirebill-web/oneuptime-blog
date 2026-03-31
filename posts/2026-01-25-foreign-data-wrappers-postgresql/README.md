@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Foreign Data Wrappers, Data Integration, Database, Federation
+Tags: PostgreSQL, Foreign Data Wrapper, Data Integration, Database, Federation
 
 Description: Learn how to use PostgreSQL Foreign Data Wrappers (FDW) to query external data sources including other PostgreSQL databases, MySQL, CSV files, and REST APIs as if they were local tables.
 

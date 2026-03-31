@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics, Monitoring
+Tags: Calico, Kubernetes, Networking, Diagnostic, Monitoring
 
 Description: Monitor per-node Calico health using Felix Prometheus metrics, DaemonSet rollout status, and node-level alerts to detect individual node failures before they cause application connectivity issues.
 

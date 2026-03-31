@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Roslyn, Analyzer, Code Quality, Sdk
+Tags: Dapr, DotNet, Roslyn, Analyzer, Code Quality, SDK
 
 Description: Use Dapr's built-in Roslyn analyzers to catch common misconfigurations and API misuse in your .NET projects at compile time before they reach production.
 

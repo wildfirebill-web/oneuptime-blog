@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OTTL, Data Scrubbing, PII, Logs
+Tags: OpenTelemetry, OTTL, Data Scrubbing, PII, Log
 
 Description: Use the OTTL replace_pattern function in the OpenTelemetry Collector to scrub email addresses and phone numbers from log bodies.
 

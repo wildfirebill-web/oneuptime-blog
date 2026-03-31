@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Testing, Modules, Infrastructure as Code, DevOps
+Tags: Terraform, Testing, Module, Infrastructure as Code, DevOps
 
 Description: Learn techniques for testing Terraform modules independently from the rest of your infrastructure, including test fixtures, mock dependencies, and module test patterns.
 

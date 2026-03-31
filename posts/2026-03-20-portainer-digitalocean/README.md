@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, DigitalOcean, Droplets, Docker, Cloud
+Tags: Portainer, DigitalOcean, Droplet, Docker, Cloud
 
 Description: Learn how to quickly deploy Portainer on a DigitalOcean Droplet using cloud-init user data for automated setup, with firewall configuration and optional managed DNS.
 

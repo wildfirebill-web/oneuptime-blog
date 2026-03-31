@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Projects, Multi-Tenancy, Namespaces, RBAC, Security
+Tags: Rancher, Kubernetes, Project, Multi-Tenancy, Namespace, RBAC, Security
 
 Description: A practical guide to implementing multi-tenancy in Rancher using projects for access isolation, resource control, and workload separation.
 

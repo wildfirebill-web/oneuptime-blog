@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, FCALL_RO, Functions, Read-Only, Replicas, Redis 7
+Tags: Redis, FCALL_RO, Function, Read-Only, Replica, Redis 7
 
 Description: Use FCALL_RO to execute read-only Redis Functions on replicas and read-only nodes, improving scalability without risking accidental writes.
 

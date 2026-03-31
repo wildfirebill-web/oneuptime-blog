@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ad Hoc Commands, Modules, Configuration
+Tags: Ansible, Ad Hoc Commands, Module, Configuration
 
 Description: Master the syntax and patterns for passing arguments to Ansible modules in ad hoc commands, including key-value pairs, JSON, and complex arguments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Transaction, Error handling, Retry, ACID
+Tags: MongoDB, Transaction, Error Handling, Retry, ACID
 
 Description: Learn how to detect, categorise, and retry transient transaction errors in MongoDB including write conflicts, transient transaction errors, and unknown commit results.
 

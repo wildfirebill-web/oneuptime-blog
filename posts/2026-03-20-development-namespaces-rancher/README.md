@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Namespaces, Developer Experience, Kubernetes, RBAC, Resource Quotas
+Tags: Rancher, Namespace, Developer Experience, Kubernetes, RBAC, Resource Quota
 
 Description: Set up isolated development namespaces in Rancher for individual developers or teams with resource quotas, RBAC, and network policies.
 

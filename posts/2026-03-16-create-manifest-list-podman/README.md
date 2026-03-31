@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Manifest, Multi-Architecture
+Tags: Podman, Container, DevOps, Manifest, Multi-Architecture
 
 Description: Learn how to create manifest lists with Podman to group multiple architecture-specific images under a single tag for seamless multi-platform deployments.
 

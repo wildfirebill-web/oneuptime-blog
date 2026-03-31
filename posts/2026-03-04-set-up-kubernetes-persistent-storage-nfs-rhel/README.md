@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kubernetes, NFS, Storage, Persistent Volumes
+Tags: RHEL, Kubernetes, NFS, Storage, Persistent Volume
 
 Description: Configure NFS-based persistent storage for Kubernetes on RHEL using PersistentVolumes and an NFS provisioner.
 

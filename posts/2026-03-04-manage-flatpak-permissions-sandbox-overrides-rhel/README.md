@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Flatpak, Permissions, Sandbox, Security, Linux
+Tags: RHEL, Flatpak, Permission, Sandbox, Security, Linux
 
 Description: Manage Flatpak application permissions and sandbox overrides on RHEL to control what files, devices, and system resources each sandboxed application can access.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Compliance, Security Hub, Configs, Automation
+Tags: AWS, Compliance, Security Hub, CONFIG, Automation
 
 Description: A hands-on guide to automating compliance checks on AWS using AWS Config, Security Hub, and custom rules for continuous compliance monitoring and remediation.
 

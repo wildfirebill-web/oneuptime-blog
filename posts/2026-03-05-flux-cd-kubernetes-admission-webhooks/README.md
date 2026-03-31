@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Admission Webhooks, Policy, Kyverno, OPA Gatekeeper
+Tags: Flux CD, GitOps, Kubernetes, Admission Webhook, Policy, Kyverno, OPA Gatekeeper
 
 Description: Learn how to integrate Flux CD with Kubernetes admission webhooks to enforce policies on resources deployed through GitOps reconciliation.
 

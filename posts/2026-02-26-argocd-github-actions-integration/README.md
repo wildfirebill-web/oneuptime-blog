@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, GitHub Actions, CI/CD
+Tags: ArgoCD, GitOps, Kubernetes, GitHub Action, CI/CD
 
 Description: Learn how to integrate ArgoCD with GitHub Actions for a complete GitOps CI/CD pipeline including automated image updates, sync triggering, deployment verification, and status reporting.
 

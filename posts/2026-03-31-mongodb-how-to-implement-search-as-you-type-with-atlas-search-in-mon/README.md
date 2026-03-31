@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Atlas Search, Search-As-You-Type, Autocomplete
+Tags: MongoDB, Atlas Search, Search-As-You-Type, Autocomplete
 
 Description: Learn how to build a complete search-as-you-type feature in MongoDB Atlas using autocomplete indexes, debouncing, relevance scoring, and frontend integration.
 

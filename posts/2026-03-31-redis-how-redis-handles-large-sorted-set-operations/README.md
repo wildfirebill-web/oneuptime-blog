@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Sorted Set, Performance
 
-Description: Understand the internal mechanisms Redis uses for large sorted sets, the time complexity of common operations, and strategies for handling high-cardinality sorted sets.
+Description: Understand the internal mechanisms Redis uses for large sorted sets, the time complexity of common operations, and strategies for high-cardinality sorted sets.
 
 ---
 

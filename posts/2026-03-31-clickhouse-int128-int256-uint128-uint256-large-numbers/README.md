@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Int128, Int256, UInt128, UInt256
+Tags: ClickHouse, SQL, Data Type, Int128, Int256, UInt128, UInt256
 
 Description: Guide to ClickHouse's large integer types Int128, Int256, UInt128, and UInt256 - value ranges, use cases, and performance considerations.
 

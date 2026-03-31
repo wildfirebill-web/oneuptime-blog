@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Age, GPG, Migration
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Age, GPG, Migration
 
 Description: A step-by-step guide to migrating SOPS-encrypted secrets from GPG to age encryption in a Flux GitOps repository.
 

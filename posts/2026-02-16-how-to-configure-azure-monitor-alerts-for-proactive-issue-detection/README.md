@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Monitor, Alerts, Monitoring, Observability, Metrics, Log Analytics
+Tags: Azure Monitor, Alert, Monitoring, Observability, Metric, Log Analytics
 
 Description: Set up Azure Monitor alerts for proactive issue detection with practical examples covering metric alerts, log alerts, and action groups for notification.
 

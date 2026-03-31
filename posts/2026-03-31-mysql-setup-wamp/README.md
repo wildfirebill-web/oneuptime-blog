@@ -1,8 +1,8 @@
 # How to Set Up MySQL with WAMP for Local Development
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, WAMP, Windows, Installation, Development
+Tags: MySQL, WAMP, Window, Installation, Development
 
 Description: Install WampServer on Windows, start the bundled MySQL server, configure phpMyAdmin, and connect from PHP or Python applications for local development.
 

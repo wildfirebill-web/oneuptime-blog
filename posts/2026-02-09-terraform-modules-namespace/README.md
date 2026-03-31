@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Namespaces, Kubernetes, Infrastructure as Code
+Tags: Terraform, Module, Namespace, Kubernetes, Infrastructure as Code
 
 Description: Learn how to build reusable Terraform modules that provision Kubernetes namespaces with resource quotas, network policies, RBAC, and default settings.
 

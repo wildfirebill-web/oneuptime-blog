@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Container Apps, Redis, Microservices, Shopping Cart, E-Commerce, API
+Tags: Azure, Container Apps, Redis, Microservice, Shopping Cart, E-Commerce, API
 
 Description: Build a scalable shopping cart microservice using Azure Container Apps with Azure Cache for Redis for fast, reliable cart state management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Queue Storage, Messaging, Azure Storage, Distributed Systems, Cloud Architecture, Microservices
+Tags: Azure, Queue Storage, Messaging, Azure Storage, Distributed System, Cloud Architecture, Microservice
 
 Description: A practical guide to creating, reading, and managing messages in Azure Queue Storage using Python, C#, and the Azure CLI for building decoupled distributed applications.
 

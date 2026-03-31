@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Versioning, Custom Component, Semver, Compatibility
+Tags: Dapr, Versioning, Custom Component, SemVer, Compatibility
 
 Description: Learn how to version custom Dapr components with semantic versioning, maintain backward compatibility, and manage component upgrades safely.
 

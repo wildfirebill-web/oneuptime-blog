@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Naming Conventions, Infrastructure as Code, IaC, Governance, Standard
+Tags: OpenTofu, Naming Convention, Infrastructure as Code, IaC, Governance, Standard
 
 Description: Learn how to enforce cloud resource naming conventions using OpenTofu variable validation and locals.
 

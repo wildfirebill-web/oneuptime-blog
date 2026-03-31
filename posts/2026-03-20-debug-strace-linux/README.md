@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Strace, Sockets, Debugging, IPv4, Networking, POSIX
+Tags: Linux, Strace, Socket, Debugging, IPv4, Networking, POSIX
 
 Description: Learn how to use strace on Linux to trace socket system calls, diagnose connection failures, inspect bind/accept/recv sequences, and understand what a network program is actually doing at the...
 

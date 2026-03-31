@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, HashiCorp Vault, Dynamic Secrets, Config Source, Collector
+Tags: OpenTelemetry, HashiCorp Vault, Dynamic Secret, Config Source, Collector
 
 Description: Configure the Vault config source provider to dynamically inject secrets from HashiCorp Vault into the OpenTelemetry Collector config.
 

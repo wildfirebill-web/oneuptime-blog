@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, IaC, DevOps, Modules
+Tags: Terraform, IaC, DevOps, Module
 
 Description: Manage Terraform module versions with semantic versioning, version constraints, and registry publishing for reliable infrastructure code.
 

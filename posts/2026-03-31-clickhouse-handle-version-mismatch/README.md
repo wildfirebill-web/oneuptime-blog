@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Version, Upgrade, Cluster, Operations
+Tags: ClickHouse, Version, Upgrade, Cluster, Operation
 
 Description: Detect and resolve ClickHouse version mismatches in clusters that cause replication failures, feature incompatibilities, and inconsistent query behavior.
 

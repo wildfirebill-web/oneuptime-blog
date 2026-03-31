@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Compose, Spring Boot, MySQL, Redis, Java, Microservices, Backend
+Tags: Docker, Docker Compose, Spring Boot, MySQL, Redis, Java, Microservice, Backend
 
 Description: A complete guide to containerizing a Spring Boot application with MySQL and Redis using Docker Compose for local development and production.
 

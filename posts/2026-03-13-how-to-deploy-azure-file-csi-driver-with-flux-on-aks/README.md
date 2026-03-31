@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Azure, AKS, CSI, Azure Files, Storage, Persistent Volumes, SMB, NFS
+Tags: Flux, Kubernetes, GitOps, Azure, AKS, CSI, Azure Files, Storage, Persistent Volume, SMB, NFS
 
 Description: Learn how to deploy and manage the Azure File CSI Driver on AKS using Flux CD, including NFS and SMB share configurations for shared persistent storage.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Scala, Microservices, Akka HTTP, Docker, Service Discovery, Circuit Breaker, Distributed Systems
+Tags: Scala, Microservice, Akka HTTP, Docker, Service Discovery, Circuit Breaker, Distributed System
 
 Description: A hands-on guide to building production-ready microservices in Scala using Akka HTTP, with patterns for resilience, service discovery, and containerization.
 

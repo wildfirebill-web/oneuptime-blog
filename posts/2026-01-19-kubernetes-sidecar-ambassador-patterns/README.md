@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Sidecar, Ambassador, Design Pattern, Microservices, DevOps
+Tags: Kubernetes, Sidecar, Ambassador, Design Pattern, Microservice, DevOps
 
 Description: Master the sidecar and ambassador container patterns in Kubernetes for logging, proxying, configuration, and extending application functionality.
 

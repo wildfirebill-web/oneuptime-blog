@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Azure, Terraform, Infrastructure As Code, Azure Cache For Redis
+Tags: Redis, Azure, Terraform, Infrastructure as Code, Azure Cache for Redis
 
 Description: Learn how to provision Azure Cache for Redis using Terraform, including tier selection, firewall rules, private endpoints, and VNet integration.
 

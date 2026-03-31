@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Graceful Shutdown, Signals, Kubernetes, DevOps
+Tags: Rust, Graceful Shutdown, Signal, Kubernetes, DevOps
 
 Description: Learn how to implement graceful shutdown in Rust services by handling Unix signals, draining connections, and coordinating with Kubernetes for zero-downtime deployments.
 

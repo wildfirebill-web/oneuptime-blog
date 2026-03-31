@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Linux, Security, Filesystem, Isolation
+Tags: Podman, Container, DevOps, Linux, Security, Filesystem, Isolation
 
 Description: Learn how to configure masked paths in Podman containers to hide sensitive host system information from containerized processes.
 

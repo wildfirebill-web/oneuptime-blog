@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Registry
+Tags: Podman, Container, DevOps, Container Image, Registry
 
 Description: Learn how to pull all available tags of a container image using Podman, including listing available tags and scripting bulk pulls.
 

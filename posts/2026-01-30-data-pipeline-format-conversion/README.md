@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, Data Formats, JSON, Parquet
+Tags: Data Pipeline, Data Format, JSON, Parquet
 
 Description: Learn to build data format conversion for transforming between CSV, JSON, Parquet, Avro, and other formats.
 

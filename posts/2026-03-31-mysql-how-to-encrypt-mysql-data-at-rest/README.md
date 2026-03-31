@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Encryption, Security, InnoDB, Data At Rest
+Tags: MySQL, Encryption, Security, InnoDB, Data at Rest
 
 Description: Learn how to enable MySQL data-at-rest encryption using InnoDB tablespace encryption, keyring plugins, and encrypted undo/redo logs.
 

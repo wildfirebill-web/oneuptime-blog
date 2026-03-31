@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Deployment, Workloads
+Tags: Rancher, Kubernetes, Deployment, Workload
 
 Description: Learn how to roll back a failed or problematic workload deployment in Rancher using the UI, kubectl, and revision history.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Boolean, YAML, Best Practice
+Tags: Ansible, Variable, Boolean, YAML, Best Practice
 
 Description: Learn how Ansible handles boolean variables, common pitfalls with YAML truthy values, and best practices for reliable boolean logic.
 

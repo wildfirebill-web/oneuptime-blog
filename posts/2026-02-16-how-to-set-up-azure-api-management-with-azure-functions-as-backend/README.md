@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, API Management, Azure Functions, Serverless, API Gateway, Backend, REST
+Tags: Azure, API Management, Azure Function, Serverless, API Gateway, Backend, REST
 
 Description: Configure Azure API Management to use Azure Functions as a backend service with authentication, policies, rate limiting, and API versioning.
 

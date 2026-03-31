@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, Zero Downtime, Deployment, IPv4, Drain, Rolling Updates
+Tags: HAProxy, Zero Downtime, Deployment, IPv4, Drain, Rolling Update
 
 Description: Use HAProxy server drain mode, graceful reloads, and rolling update techniques to deploy new application versions on IPv4 backends without dropping connections.
 

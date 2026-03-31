@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Organizations, Service Control Policies, Governance, Infrastructure as Code, Multi-Account
+Tags: OpenTofu, AWS, Organization, Service Control Policies, Governance, Infrastructure as Code, Multi-Account
 
 Description: Learn how to create and attach AWS Organizations Service Control Policies (SCPs) using OpenTofu to enforce guardrails across all accounts in your organization.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Traefik, Reverse Proxy, Load Balancer, Ingress
+Tags: Podman, Container, DevOps, Traefik, Reverse Proxy, Load Balancer, Ingress
 
 Description: Learn how to run Traefik reverse proxy in a Podman container with automatic service discovery, TLS, and dashboard access.
 

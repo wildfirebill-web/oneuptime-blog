@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, IPvlan, LAN
+Tags: Podman, Container, DevOps, Networking, IPvlan, LAN
 
 Description: Learn how to create IPvlan networks in Podman where containers share the host's MAC address but have unique IP addresses.
 

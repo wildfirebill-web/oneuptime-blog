@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Memorystore, Redis, Rate Limiting, Lua Scripts
+Tags: GCP, Memorystore, Redis, Rate Limiting, Lua Script
 
 Description: Learn how to build robust API rate limiters using Memorystore Redis and Lua scripts for atomic, high-performance request throttling on Google Cloud.
 

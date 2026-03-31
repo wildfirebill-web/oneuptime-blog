@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, CloudWatch, CloudWatch Agent, Monitoring, Logs, Metrics
+Tags: AWS, EC2, CloudWatch, CloudWatch Agent, Monitoring, Log, Metric
 
 Description: Install and configure the CloudWatch agent on EC2 instances to collect memory, disk, and custom metrics along with log files for comprehensive monitoring.
 

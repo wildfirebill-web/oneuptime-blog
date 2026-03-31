@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Multi-Valued Index, Json, Query Optimization
+Tags: MySQL, Multi-Valued Index, JSON, Query Optimization
 
 Description: Multi-valued indexes in MySQL 8.0.17+ allow indexing of JSON array elements, enabling fast lookups across arrays stored in JSON columns.
 

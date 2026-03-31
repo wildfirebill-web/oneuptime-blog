@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Saga Pattern, Microservices, Distributed Transactions, Architecture, Event-Driven
+Tags: Saga Pattern, Microservice, Distributed Transaction, Architecture, Event-Driven
 
 Description: Implement the saga pattern for distributed transactions with choreography and orchestration approaches, compensating transactions, and failure handling.
 

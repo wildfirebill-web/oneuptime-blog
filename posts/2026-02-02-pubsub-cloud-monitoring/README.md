@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Google Cloud, Pub/Sub, Cloud Monitoring, Observability, Metrics, Alerting, GCP
+Tags: Google Cloud, Pub/Sub, Cloud Monitoring, Observability, Metric, Alerting, GCP
 
 Description: Learn how to monitor Google Cloud Pub/Sub using Cloud Monitoring. Covers key metrics, custom dashboards, alerting policies, and best practices for maintaining reliable message delivery.
 

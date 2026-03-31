@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, Sockets, Performance, SO_SNDBUF, SO_RCVBUF, Networking
+Tags: C, IPv4, Socket, Performance, SO_SNDBUF, SO_RCVBUF, Networking
 
 Description: Learn how to tune IPv4 socket send and receive buffer sizes in C using SO_SNDBUF and SO_RCVBUF to maximize throughput for high-performance network applications.
 

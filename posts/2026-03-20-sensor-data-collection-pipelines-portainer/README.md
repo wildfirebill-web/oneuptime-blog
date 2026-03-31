@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IoT, Sensors, Portainer, Docker, Data Pipelines, MQTT, Time Series
+Tags: IoT, Sensor, Portainer, Docker, Data Pipeline, MQTT, Time Series
 
 Description: Build a complete sensor data collection pipeline using Portainer stacks, connecting field sensors through MQTT and Telegraf to InfluxDB for real-time storage and analysis.
 

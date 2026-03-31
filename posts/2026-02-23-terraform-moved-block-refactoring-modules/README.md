@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Refactoring, State Management, IaC
+Tags: Terraform, Module, Refactoring, State Management, IaC
 
 Description: A deep dive into the Terraform moved block for safely refactoring modules without destroying resources, covering syntax, common patterns, and edge cases.
 

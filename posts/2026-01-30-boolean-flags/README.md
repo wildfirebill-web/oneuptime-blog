@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Feature Toggle, Development, DevOps
+Tags: Feature Flag, Feature Toggle, Development, DevOps
 
 Description: Learn how to implement simple on/off boolean feature flags effectively.
 

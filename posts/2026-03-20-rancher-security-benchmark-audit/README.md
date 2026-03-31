@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Security, Audit, Compliance, Benchmarks
+Tags: Rancher, Kubernetes, Security, Audit, Compliance, Benchmark
 
 Description: A comprehensive guide to auditing Rancher-managed Kubernetes cluster configurations against multiple security benchmarks including CIS, NIST, and custom organizational standards.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Skopeo, Security, Image Signing, GPG
+Tags: Podman, Container, DevOps, Skopeo, Security, Image Signing, GPG
 
 Description: Learn how to use Skopeo to sign container images and verify their signatures to ensure image integrity and provenance.
 

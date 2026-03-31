@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, Networking, Rootless, Troubleshooting
+Tags: Podman, Container, Networking, Rootless, Troubleshooting
 
 Description: A comprehensive guide to diagnosing and fixing networking issues specific to rootless Podman, covering slirp4netns, pasta, port mapping, container-to-container communication, and host access.
 

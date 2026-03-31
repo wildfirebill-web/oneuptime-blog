@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Configuration, Disk Management
+Tags: Podman, Container, DevOps, Logging, Configuration, Disk Management
 
 Description: Learn how to configure automatic log file rotation in Podman using max-size and max-file options to manage disk space while retaining enough log history for debugging.
 

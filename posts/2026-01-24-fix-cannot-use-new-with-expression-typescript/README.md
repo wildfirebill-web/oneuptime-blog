@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TypeScript, Classes, Constructors, Types, Object-Oriented Programming
+Tags: TypeScript, Classes, Constructors, Type, Object-Oriented Programming
 
 Description: Resolve TypeScript errors when using new with dynamic expressions, factory patterns, and generic constructors.
 

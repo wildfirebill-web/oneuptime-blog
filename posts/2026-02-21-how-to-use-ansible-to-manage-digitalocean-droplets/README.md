@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, DigitalOcean, Cloud, Droplets, Automation
+Tags: Ansible, DigitalOcean, Cloud, Droplet, Automation
 
 Description: Manage DigitalOcean Droplets with Ansible for automated provisioning, configuration, snapshots, and lifecycle management.
 

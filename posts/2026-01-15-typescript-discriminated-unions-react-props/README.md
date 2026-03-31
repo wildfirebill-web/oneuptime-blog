@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, TypeScript, Discriminated Unions, Props, Type Safety, Patterns
+Tags: React, TypeScript, Discriminated Unions, Props, Type Safety, Pattern
 
 Description: Learn how to leverage TypeScript discriminated unions to create type-safe, self-documenting React components with mutually exclusive prop combinations and exhaustive pattern matching.
 

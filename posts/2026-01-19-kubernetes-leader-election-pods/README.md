@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Leader Election, High Availability, Distributed Systems, Coordination, DevOps
+Tags: Kubernetes, Leader Election, High Availability, Distributed System, Coordination, DevOps
 
 Description: Learn how to implement leader election in Kubernetes to ensure only one pod handles critical tasks at a time while maintaining high availability with automatic failover.
 

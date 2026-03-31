@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, Alpine Linux
+Tags: Podman, Installation, Linux, Container, DevOps, Alpine Linux
 
 Description: A practical guide to installing Podman on Alpine Linux, covering package installation, rootless configuration, and container management on a minimal system.
 

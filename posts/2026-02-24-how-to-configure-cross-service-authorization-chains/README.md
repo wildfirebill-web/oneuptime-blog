@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Authorization Chains, Microservices, Security, Kubernetes
+Tags: Istio, Authorization Chains, Microservice, Security, Kubernetes
 
 Description: How to build cross-service authorization chains in Istio that enforce access control across multi-hop microservice request flows.
 

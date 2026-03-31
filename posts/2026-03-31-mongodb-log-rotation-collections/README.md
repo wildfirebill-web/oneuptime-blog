@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Logging, Log Rotation, TTL, Operations
+Tags: MongoDB, Logging, Log Rotation, TTL, Operation
 
 Description: Learn how to implement log rotation for MongoDB log collections using TTL indexes, date-partitioned collections, and archival scripts to manage storage growth.
 

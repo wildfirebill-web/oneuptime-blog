@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Enum, Enum8, Enum16
+Tags: ClickHouse, SQL, Data Type, ENUM, Enum8, Enum16
 
 Description: Learn how to use Enum8 and Enum16 in ClickHouse for storage-efficient categorical data, including defining values, querying, and altering enum definitions.
 

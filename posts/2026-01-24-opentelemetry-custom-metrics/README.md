@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Observability, Monitoring, Custom Metrics
+Tags: OpenTelemetry, Metric, Observability, Monitoring, Custom Metric
 
 Description: Learn how to create, configure, and export custom metrics in OpenTelemetry for comprehensive application monitoring.
 

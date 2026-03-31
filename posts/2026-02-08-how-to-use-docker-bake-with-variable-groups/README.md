@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Bake, Buildx, Variables, HCL, CI/CD, DevOps
+Tags: Docker, Docker Bake, Buildx, Variable, HCL, CI/CD, DevOps
 
 Description: Organize and manage Docker Bake build variables using variable groups for cleaner multi-target build configurations.
 

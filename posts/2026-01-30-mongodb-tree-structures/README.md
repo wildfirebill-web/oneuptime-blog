@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MongoDB, Schema Design, Tree Structures, Data Modeling
+Tags: MongoDB, Schema Design, Tree structure, Data Modeling
 
 Description: Learn how to model hierarchical data in MongoDB with various tree patterns.
 

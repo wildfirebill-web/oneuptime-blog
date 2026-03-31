@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Troubleshooting
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Troubleshooting
 
 Description: Learn how to systematically debug ArgoCD notification delivery failures by checking controller logs, verifying service configuration, testing triggers, and diagnosing common connectivity issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Modules
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Module
 
 Description: Learn how to use depends_on with modules in OpenTofu to express explicit ordering dependencies when implicit dependency detection is insufficient.
 

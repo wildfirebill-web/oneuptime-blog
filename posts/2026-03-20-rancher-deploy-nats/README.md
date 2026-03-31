@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, NATS, Message Queues, Cloud Native Messaging
+Tags: Rancher, Kubernetes, NATS, Message Queue, Cloud Native Messaging
 
 Description: Deploy NATS messaging system on Rancher-managed clusters for lightweight, high-performance pub/sub messaging and streaming with JetStream.
 

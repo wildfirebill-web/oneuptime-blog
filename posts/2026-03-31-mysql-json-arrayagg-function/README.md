@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Aggregate Function
+Tags: MySQL, JSON, Aggregate Function
 
 Description: Learn how to use MySQL's JSON_ARRAYAGG() aggregate function to collect multiple rows into a single JSON array with ordering and grouping.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Multi-Tenancy, Notifications, Alerting
+Tags: Flux CD, GitOps, Kubernetes, Multi-Tenancy, Notification, Alerting
 
 Description: Learn how to set up tenant-specific notification channels in Flux CD so each team receives alerts about their own deployments and reconciliation status.
 

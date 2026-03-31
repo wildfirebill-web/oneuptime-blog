@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, RDS, Aurora, Cross-Region, Read Replicas, High Availability
+Tags: AWS, RDS, Aurora, Cross-Region, Read Replica, High Availability
 
 Description: Step-by-step guide to setting up cross-region read replicas on AWS for lower latency and disaster recovery
 

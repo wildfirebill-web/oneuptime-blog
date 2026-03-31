@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, EC2, User Data, Templates, Infrastructure as Code
+Tags: OpenTofu, Terraform, EC2, User Data, Template, Infrastructure as Code
 
 Description: Learn how to use OpenTofu's templatefile function and the template provider to generate dynamic user data scripts for cloud instances, making bootstrapping configurations maintainable.
 

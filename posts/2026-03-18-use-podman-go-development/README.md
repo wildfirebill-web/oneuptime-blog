@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Go, Golang, Containers, Development
+Tags: Podman, Go, Golang, Container, Development
 
 Description: A practical guide to using Podman for Go development, covering module management, building binaries, web server development, testing, debugging, and producing minimal production images.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Upgrade, Operations, Administration, Maintenance
+Tags: MongoDB, Upgrade, Operation, Administration, Maintenance
 
 Description: A step-by-step guide to safely upgrading MongoDB version on standalone instances and replica sets, covering pre-upgrade checks, the rolling upgrade process, and feature compatibility verification.
 

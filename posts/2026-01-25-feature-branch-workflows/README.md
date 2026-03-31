@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Git, Feature Branches, Developer Experience, CI/CD, Version Control
+Tags: Git, Feature Branch, Developer Experience, CI/CD, Version Control
 
 Description: Learn how to implement effective feature branch workflows that enable parallel development, clean history, and safe deployments through proper branching strategies.
 

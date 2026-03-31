@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Velero, Kubernetes, Backup, Labels, Selectors
+Tags: Velero, Kubernetes, Backup, Labels, Selector
 
 Description: Master Velero label selectors for targeted resource backups in Kubernetes. Learn filtering strategies, label design patterns, and optimization techniques for precise backup control.
 

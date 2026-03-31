@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Backup, Scheduled Backups, RDB, AOF, Operations
+Tags: Redis, Backup, Scheduled Backups, RDB, Operation
 
 Description: Learn how to set up automated Redis backups using RDB snapshots, AOF files, cron jobs, and cloud storage uploads to protect your data.
 

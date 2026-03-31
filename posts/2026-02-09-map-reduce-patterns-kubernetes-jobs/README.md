@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Map-Reduce, Batch Processing
+Tags: Kubernetes, Job, Map-Reduce, Batch Processing
 
 Description: Learn how to implement map-reduce patterns in Kubernetes using Jobs for distributed data processing, including map phase parallelization and reduce phase aggregation.
 

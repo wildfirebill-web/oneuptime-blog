@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Sidecar, Metrics, Prometheus, Monitoring
+Tags: Kubernetes, Sidecar, Metric, Prometheus, Monitoring
 
 Description: Learn how to implement sidecar containers as metrics exporters, enabling Prometheus scraping and custom metrics collection without embedding instrumentation in your application.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Rate Limiting
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Rate Limiting
 
 Description: Learn how to reduce notification noise in Flux by using exclusion rules, suspension, and alert design patterns that effectively limit alert volume.
 

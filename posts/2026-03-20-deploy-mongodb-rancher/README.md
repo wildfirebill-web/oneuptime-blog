@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Rancher, Kubernetes, Helm, StatefulSets, Persistent Storage, Database, SUSE Rancher
+Tags: MongoDB, Rancher, Kubernetes, Helm, StatefulSet, Persistent Storage, Database, SUSE Rancher
 
 Description: Learn how to deploy a production-ready MongoDB replica set on a Rancher-managed Kubernetes cluster using the Bitnami Helm chart with persistent storage and authentication.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Update Operators, $inc, Counters, NoSQL
+Tags: MongoDB, Update Operator, $inc, Counter, NoSQL
 
 Description: Learn how to use MongoDB's $inc operator to atomically increment or decrement numeric field values, perfect for counters, scores, and inventory management.
 

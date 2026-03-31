@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TypeScript, Feature Flags, DevOps, Backend, Node.js
+Tags: TypeScript, Feature Flag, DevOps, Backend, Node.js
 
 Description: Learn how to build a production-ready feature flag service in TypeScript with percentage rollouts, user targeting, and real-time updates.
 

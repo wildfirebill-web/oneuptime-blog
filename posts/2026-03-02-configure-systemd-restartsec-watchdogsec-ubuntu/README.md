@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Systemd, Services, Reliability, System Administration
+Tags: Ubuntu, Systemd, Service, Reliability, System Administration
 
 Description: Configure systemd RestartSec for service restart timing and WatchdogSec for liveness monitoring on Ubuntu to build more reliable and self-recovering services.
 

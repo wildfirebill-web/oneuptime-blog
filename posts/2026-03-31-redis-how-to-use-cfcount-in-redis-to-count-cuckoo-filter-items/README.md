@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cuckoo Filter, RedisBloom, Commands, NoSql
+Tags: Redis, Cuckoo Filter, RedisBloom, Command, NoSQL
 
 Description: Learn how to use CF.COUNT in Redis to estimate how many times a specific item has been inserted into a Cuckoo filter.
 

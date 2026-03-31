@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Oplog, Replica Set, Alert, Operations
+Tags: MongoDB, Oplog, Replica Set, Alert, Operation
 
 Description: Learn how to diagnose and respond to MongoDB oplog window shrinking alerts, resize the oplog, and prevent replication failures from outpacing the oplog.
 

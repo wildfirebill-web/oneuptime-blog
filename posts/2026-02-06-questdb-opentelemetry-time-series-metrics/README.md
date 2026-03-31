@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, QuestDB, Time-Series, Metrics, SQL, Observability
+Tags: OpenTelemetry, QuestDB, Time-Series, Metric, SQL, Observability
 
 Description: Learn how to use QuestDB as a high-performance time-series database for storing and querying OpenTelemetry metrics with standard SQL and fast analytical queries.
 

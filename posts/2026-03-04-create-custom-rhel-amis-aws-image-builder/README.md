@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, AWS, AMI, Image Builder, Custom Images, Cloud, Linux
+Tags: RHEL, AWS, AMI, Image Builder, Custom Image, Cloud, Linux
 
 Description: Create custom RHEL AMIs for AWS using Image Builder with pre-installed packages, security hardening, and organization-specific configurations baked in.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SQS, SNS, Saga Pattern, Microservices
+Tags: AWS, SQS, SNS, Saga Pattern, Microservice
 
 Description: Learn how to implement the saga pattern for distributed transactions using AWS SQS and SNS to coordinate multi-step workflows across microservices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Prometheus, Monitoring, Metrics, Alerting
+Tags: Podman, Container, DevOps, Prometheus, Monitoring, Metric, Alerting
 
 Description: Learn how to run Prometheus in a Podman container with custom scrape targets, persistent metrics storage, and alerting rules.
 

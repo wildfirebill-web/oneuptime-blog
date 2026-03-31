@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API Gateway, Kong, Nginx, Microservices, Docker Compose, Rate Limiting
+Tags: Portainer, API Gateway, Kong, Nginx, Microservice, Docker Compose, Rate Limiting
 
 Description: Learn how to deploy Kong as an API gateway via Portainer for rate limiting, authentication, and request routing to backend microservices.
 

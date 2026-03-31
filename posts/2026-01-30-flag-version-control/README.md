@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Version Control, Git, DevOps
+Tags: Feature Flag, Version Control, Git, DevOps
 
 Description: Learn how to version control feature flag configurations effectively.
 

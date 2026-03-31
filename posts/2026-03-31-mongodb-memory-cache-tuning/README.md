@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Performance, Memory, WiredTiger, Tuning, Operations
+Tags: MongoDB, Performance, Memory, WiredTiger, Tuning, Operation
 
 Description: A practical guide to tuning MongoDB memory usage including WiredTiger cache sizing, OS memory settings, swap configuration, and monitoring memory pressure for optimal performance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, VS Code, Dev Containers, Docker Alternative, Development Environments
+Tags: Podman, VS Code, Dev Container, Docker Alternative, Development Environment
 
 Description: Learn how to configure Visual Studio Code Dev Containers to work with Podman instead of Docker, enabling rootless container-based development environments.
 

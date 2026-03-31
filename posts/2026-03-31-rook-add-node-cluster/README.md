@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Node, Scaling, Operations
+Tags: Rook, Ceph, Kubernetes, Node, Scaling, Operation
 
 Description: Learn how to add a new Kubernetes node to your Rook-Ceph cluster, including node preparation, labeling, and CephCluster CR updates to include the new node.
 

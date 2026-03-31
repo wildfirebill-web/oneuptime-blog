@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, GKE, Kubernetes, Bulkhead Pattern, Fault Isolation, Microservices, Resilience
+Tags: GCP, GKE, Kubernetes, Bulkhead Pattern, Fault Isolation, Microservice, Resilience
 
 Description: Implement the bulkhead pattern in Google Kubernetes Engine to isolate failures and prevent cascading outages across your microservice architecture.
 

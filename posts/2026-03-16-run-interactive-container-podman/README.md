@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Interactive
+Tags: Podman, Container, DevOps, Interactive
 
 Description: Learn how to run interactive containers with Podman for debugging, testing, and development using shell access and TTY allocation.
 

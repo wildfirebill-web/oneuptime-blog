@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Request Transformation, Headers, EnvoyFilter, Lua, Kubernetes
+Tags: Istio, Request Transformation, Header, EnvoyFilter, Lua, Kubernetes
 
 Description: How to transform HTTP requests and responses in Istio using VirtualService headers, EnvoyFilter with Lua scripts, and Wasm plugins for advanced use cases.
 

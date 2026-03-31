@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NATS, Messaging, Distributed Systems, Node.js, Go, Resilience
+Tags: NATS, Messaging, Distributed System, Node.js, Go, Resilience
 
 Description: Learn how to implement robust connection reconnection strategies in NATS messaging system.
 

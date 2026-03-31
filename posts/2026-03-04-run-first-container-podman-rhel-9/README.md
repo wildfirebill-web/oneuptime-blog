@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Containers, Linux
+Tags: RHEL, Podman, Container, Linux
 
 Description: Step-by-step tutorial on running, managing, and troubleshooting your first container with Podman on RHEL, covering essential commands every sysadmin should know.
 

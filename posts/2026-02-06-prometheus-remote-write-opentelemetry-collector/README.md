@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, Remote Write, Metrics, Collector, Observability
+Tags: OpenTelemetry, Prometheus, Remote Write, Metric, Collector, Observability
 
 Description: Complete guide to configuring Prometheus remote write with the OpenTelemetry Collector for receiving and exporting metrics in remote write format.
 

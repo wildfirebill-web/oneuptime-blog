@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, String Functions, concat, String Concatenation, SQL
+Tags: ClickHouse, String Function, concat, String Concatenation, SQL
 
 Description: Learn how to concatenate strings in ClickHouse using the concat() function and the || pipe operator, with practical examples for string building.
 

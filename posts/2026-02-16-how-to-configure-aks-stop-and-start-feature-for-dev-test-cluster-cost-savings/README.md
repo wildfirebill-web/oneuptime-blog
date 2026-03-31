@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AKS, Cost Savings, Stop Start, DevTest, Kubernetes, Azure, FinOps
+Tags: AKS, Cost Saving, Stop Start, DevTest, Kubernetes, Azure, FinOps
 
 Description: Learn how to use the AKS stop and start feature to shut down development and test clusters during off-hours and save significant compute costs.
 

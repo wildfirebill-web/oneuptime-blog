@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, App Engine, Dispatch Rules, Routing, Microservices
+Tags: GCP, App Engine, Dispatch Rules, Routing, Microservice
 
 Description: Learn how to configure App Engine dispatch rules in dispatch.yaml to route incoming requests to different services based on URL patterns.
 

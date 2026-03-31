@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, SCD, Slowly Changing Dimensions, Data Warehousing, SQL, Data Modeling
+Tags: GCP, BigQuery, SCD, Slowly Changing Dimension, Data Warehousing, SQL, Data Modeling
 
 Description: A practical guide to implementing Type 1, Type 2, and Type 3 slowly changing dimensions in BigQuery using MERGE statements with partitioning for performance.
 

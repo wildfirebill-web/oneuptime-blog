@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kafka, Streams, Processing, Java
+Tags: Kafka, Stream, Processing, Java
 
 Description: A practical guide to building custom stream processors using the Kafka Streams Processor API with state stores, punctuators, and topology patterns.
 

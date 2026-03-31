@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, CSV, Export, mongoexport, Data pipeline
+Tags: MongoDB, CSV, Export, Mongoexport, Data Pipeline
 
 Description: Learn how to export MongoDB collection data to CSV using mongoexport, the Node.js driver, and Python PyMongo for reports and data pipelines.
 

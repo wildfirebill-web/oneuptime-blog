@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Systemd, Linux, Configuration, Service Management, Kubernetes, SUSE Rancher
+Tags: k3s, Systemd, Linux, Configuration, Service Management, Kubernetes, SUSE Rancher
 
 Description: Learn how to configure K3s as a systemd service including startup options, environment variables, resource limits, and managing K3s server and agent service units.
 

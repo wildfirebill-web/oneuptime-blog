@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Serverless, AWS Lambda, Performance, Cold Start, Cloud Functions, Optimization
+Tags: Serverless, AWS Lambda, Performance, Cold Start, Cloud Function, Optimization
 
 Description: A practical guide to reducing serverless cold start latency with provisioned concurrency, code optimization, and architectural patterns.
 

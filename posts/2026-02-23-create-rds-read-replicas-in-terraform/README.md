@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, RDS, Read Replicas, Database, Scaling
+Tags: Terraform, AWS, RDS, Read Replica, Database, Scaling
 
 Description: Learn how to create and manage Amazon RDS read replicas using Terraform to scale read-heavy workloads, including cross-region replicas and promotion strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, Audit, Enterprise, Compliance
+Tags: MySQL, Security, Audit, Enterprise, Compliance
 
 Description: Learn how to install and configure the MySQL Enterprise Audit plugin to log database activity for compliance, security monitoring, and forensic investigation.
 

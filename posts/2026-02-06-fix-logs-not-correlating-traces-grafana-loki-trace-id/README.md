@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Grafana Loki, Log Correlation, Traces
+Tags: OpenTelemetry, Grafana Loki, Log Correlation, Trace
 
 Description: Fix missing trace_id in log records sent to Grafana Loki to enable log-to-trace correlation in Grafana dashboards.
 

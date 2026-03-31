@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, INSERT, Data Ingestion
+Tags: ClickHouse, SQL, Insert, Data Ingestion
 
 Description: Learn how to insert data into ClickHouse tables using VALUES, batch inserts, the HTTP interface, and clickhouse-client with best practices.
 

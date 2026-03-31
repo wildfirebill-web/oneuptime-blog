@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Logging, Linux, Operations
+Tags: MongoDB, Logging, Linux, Operation
 
 Description: Learn how to configure the Linux logrotate utility to automatically rotate MongoDB log files, including compression, retention policies, and post-rotation actions.
 

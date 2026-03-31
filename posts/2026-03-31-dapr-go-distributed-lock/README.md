@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Distributed Lock, Concurrency, Microservice, Sdk
+Tags: Dapr, Go, Distributed Lock, Concurrency, Microservice, SDK
 
 Description: Coordinate access to shared resources across Go microservices using the Dapr Distributed Lock building block backed by Redis or other lock providers.
 

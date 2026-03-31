@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data Modeling, Many-To-Many, Schema Design, Relationships
+Tags: MongoDB, Data Modeling, Many-to-Many, Schema Design, Relationship
 
 Description: Learn how to model many-to-many relationships in MongoDB using array references, junction collections, and embedded denormalization with practical examples.
 

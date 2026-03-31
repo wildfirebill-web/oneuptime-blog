@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Helm
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Helm
 
 Description: Learn how to configure Flux alerts that notify you when HelmRelease events occur, such as upgrades, rollbacks, and failures.
 

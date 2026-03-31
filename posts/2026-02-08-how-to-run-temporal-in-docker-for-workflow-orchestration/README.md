@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Temporal, Workflow Orchestration, Microservices, Docker Compose, Distributed Systems
+Tags: Docker, Temporal, Workflow Orchestration, Microservice, Docker Compose, Distributed System
 
 Description: Deploy Temporal workflow engine in Docker to orchestrate reliable, fault-tolerant distributed workflows for your microservices.
 

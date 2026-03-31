@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Namespaces, Migration
+Tags: Calico, Kubernetes, Network Policy, Namespace, Migration
 
 Description: Migrate from IP-based or pod-selector network policies to Calico namespace-based policies for cleaner, more maintainable namespace isolation.
 

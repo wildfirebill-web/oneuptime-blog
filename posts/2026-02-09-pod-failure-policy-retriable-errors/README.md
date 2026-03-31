@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Error Handling
+Tags: Kubernetes, Job, Error Handling
 
 Description: Master Pod Failure Policies in Kubernetes Jobs to intelligently handle different types of errors, distinguishing between transient failures and permanent issues.
 

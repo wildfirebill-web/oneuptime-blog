@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Key Vault, Event Grid, Notifications, Secrets Management, Automation, Monitoring
+Tags: Azure, Key Vault, Event Grid, Notification, Secrets Management, Automation, Monitoring
 
 Description: Learn how to configure Azure Event Grid subscriptions on Key Vault to receive notifications when secrets, keys, or certificates are about to expire.
 

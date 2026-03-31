@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Annotations, External Tools
+Tags: ArgoCD, GitOps, Kubernetes, Annotation, External Tools
 
 Description: Learn how to link ArgoCD-managed Kubernetes resources to external tools like Terraform, Datadog, Grafana, and Jira for seamless cross-tool navigation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Envoy, Hot Restart, Kubernetes, Operations
+Tags: Istio, Envoy, Hot Restart, Kubernetes, Operation
 
 Description: Understand how Envoy proxy hot restart works in Istio, when it happens, how to configure drain duration, and how to troubleshoot common issues during sidecar restarts.
 

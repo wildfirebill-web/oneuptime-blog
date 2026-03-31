@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Functions, Collections
+Tags: OpenTofu, Terraform, Infrastructure as Code, Function, Collection
 
 Description: Learn how to use the setintersection function in OpenTofu to find common elements between two or more sets for tag filtering and permission overlap detection.
 

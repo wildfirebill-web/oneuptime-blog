@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Firestore, Indexes, Composite Indexes, Performance
+Tags: GCP, Firestore, Index, Composite Indexes, Performance
 
 Description: Learn how to create, manage, and optimize composite indexes in Firestore to support complex queries efficiently at any scale.
 

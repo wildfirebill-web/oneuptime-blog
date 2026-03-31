@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Spring Boot, Java, Spring Cloud, Configuration Management, Microservices, DevOps, Git
+Tags: Spring Boot, Java, Spring Cloud, Configuration Management, Microservice, DevOps, Git
 
 Description: Learn how to centralize application configuration with Spring Cloud Config Server, including Git-backed configuration, encryption, dynamic refresh, and production deployment strategies.
 

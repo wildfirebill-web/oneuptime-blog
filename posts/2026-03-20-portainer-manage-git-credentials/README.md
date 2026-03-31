@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Git, Business Edition, GitOps, Credentials, Security
+Tags: Portainer, Git, Business Edition, GitOps, Credential, Security
 
 Description: Store and manage Git credentials in Portainer Business Edition for secure GitOps deployments from private repositories.
 

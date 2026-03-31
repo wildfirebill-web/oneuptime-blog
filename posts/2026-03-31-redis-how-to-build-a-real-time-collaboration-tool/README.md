@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Real-Time, Collaboration, Pub/Sub, WebSockets, Node.js
+Tags: Redis, Real-Time, Collaboration, Pub/Sub, WebSocket, Node.js
 
 Description: Learn how to build a real-time collaboration tool using Redis Pub/Sub and WebSockets, enabling multiple users to work together simultaneously.
 

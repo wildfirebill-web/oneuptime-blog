@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Placement Groups, Distributed Systems, HDFS, Cassandra
+Tags: AWS, EC2, Placement Group, Distributed System, HDFS, Cassandra
 
 Description: Learn how to use EC2 partition placement groups for large-scale distributed systems like HDFS, Cassandra, and Kafka to minimize correlated failures.
 

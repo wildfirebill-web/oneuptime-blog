@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Docker, Images, Automation
+Tags: Portainer, API, Docker, Image, Automation
 
 Description: Automate Docker image updates across your Portainer-managed environments using the Portainer REST API and webhooks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, perf, Flamegraph, Profiling, Linux, CPU Performance
+Tags: ClickHouse, Perf, Flamegraph, Profiling, Linux, CPU Performance
 
 Description: Use Linux perf tools to profile ClickHouse at the OS level, capture CPU cycles, cache misses, and branch mispredictions to identify native code bottlenecks.
 

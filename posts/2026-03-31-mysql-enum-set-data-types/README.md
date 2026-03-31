@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, ENUM, SET, Data Type, Schema
+Tags: MySQL, SQL, DDL, ENUM, Set, Data Type
 
 Description: Use MySQL ENUM for single-choice columns and SET for multi-choice columns, understand storage, sorting, and the trade-offs of each type.
 

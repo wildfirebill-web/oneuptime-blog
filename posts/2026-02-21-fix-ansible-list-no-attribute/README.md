@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Troubleshooting, Variables, Lists, Jinja2
+Tags: Ansible, Troubleshooting, Variable, List, Jinja2
 
 Description: Resolve Ansible list object has no attribute errors by understanding variable types, proper list iteration, and attribute access patterns.
 

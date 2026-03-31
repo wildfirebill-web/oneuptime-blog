@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Cloud Gateway, API Gateway, Microservices, Routing, Load Balancing, Security, Rate Limiting
+Tags: Java, Spring Cloud Gateway, API Gateway, Microservice, Routing, Load Balancing, Security, Rate Limiting
 
 Description: Learn how to build production-ready API gateways using Spring Cloud Gateway. This guide covers routing, filters, rate limiting, authentication, and circuit breakers for microservices architectures.
 

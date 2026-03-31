@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, BGP, Networking, Workloads
+Tags: Calico, Kubernetes, BGP, Networking, Workload
 
 Description: Configure Calico BGP to enable direct external connectivity to Kubernetes workloads without load balancers by advertising pod IPs to upstream routers.
 

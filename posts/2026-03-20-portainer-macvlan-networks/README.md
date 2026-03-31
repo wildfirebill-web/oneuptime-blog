@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Macvlan, Docker Networking, LAN Access, Networks, IP Address
+Tags: Portainer, Macvlan, Docker Networking, LAN Access, Network, IP Address
 
 Description: Learn how to configure Docker macvlan networks in Portainer so containers get their own IP addresses on your physical LAN, appearing as separate devices.
 

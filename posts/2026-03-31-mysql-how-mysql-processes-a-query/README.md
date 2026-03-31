@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Query, Parser, Optimizer, Internals
+Tags: MySQL, Query, Parser, Optimizer, Internal
 
 Description: Learn how MySQL processes a SQL query from parsing to execution, covering the parser, optimizer, execution engine, and storage engine interaction.
 

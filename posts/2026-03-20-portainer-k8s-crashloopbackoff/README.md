@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, CrashLoopBackOff, Troubleshooting, Operations
+Tags: Portainer, Kubernetes, CrashLoopBackOff, Troubleshooting, Operation
 
 Description: Diagnose and resolve Kubernetes CrashLoopBackOff errors for containers managed through Portainer's web interface.
 

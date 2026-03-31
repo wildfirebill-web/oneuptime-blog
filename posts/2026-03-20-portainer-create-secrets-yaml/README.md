@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Secrets, YAML, Security, DevOps
+Tags: Portainer, Kubernetes, Secret, YAML, Security, DevOps
 
 Description: Learn how to create Kubernetes Secrets using YAML manifests in Portainer for GitOps workflows, complex secret configurations, and infrastructure-as-code practices.
 

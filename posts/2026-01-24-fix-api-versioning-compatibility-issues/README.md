@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API, Versioning, REST, Microservices, Backward Compatibility, API Design, Breaking Changes, Deprecation
+Tags: API, Versioning, REST, Microservice, Backward Compatibility, API Design, Breaking Change, Deprecation
 
 Description: A practical guide to implementing API versioning strategies, handling breaking changes gracefully, and maintaining backward compatibility in microservices architectures.
 

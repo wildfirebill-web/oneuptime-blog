@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Provisioners, File, Infrastructure as Code, EC2, Configuration
+Tags: OpenTofu, Terraform, Provisioner, File, Infrastructure as Code, EC2, Configuration
 
 Description: Learn how to use the OpenTofu file provisioner to copy files and directories to remote instances during resource creation as part of your infrastructure automation.
 

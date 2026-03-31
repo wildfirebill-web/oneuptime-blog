@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Routing, IPv4, OSPF, Metrics
+Tags: Networking, Routing, IPv4, OSPF, Metric
 
 Description: Learn what routing metrics are, how different protocols calculate cost, and how metrics influence path selection within a routing protocol.
 

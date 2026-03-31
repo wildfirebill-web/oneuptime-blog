@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, Network Timeouts, DNS, Proxy, Connectivity
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, Network Timeout, DNS, Proxy, Connectivity
 
 Description: Learn how to diagnose and fix network timeout errors in Flux controllers caused by DNS failures, proxy misconfigurations, firewall rules, and registry connectivity issues.
 

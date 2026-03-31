@@ -1,6 +1,6 @@
 # How to Use Health Checks for Service Discovery in Istio
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Health Check, Service Discovery, Kubernetes, Envoy
 

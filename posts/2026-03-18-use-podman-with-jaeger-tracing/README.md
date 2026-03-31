@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Jaeger, Distributed Tracing, Observability, Microservices
+Tags: Podman, Jaeger, Distributed Tracing, Observability, Microservice
 
 Description: Learn how to use Podman with Jaeger to implement distributed tracing for containerized microservices, enabling you to track requests across service boundaries.
 

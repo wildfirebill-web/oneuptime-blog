@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Fedora, Kubernetes, Linux, Installation, Lightweight Kubernetes, SUSE Rancher
+Tags: k3s, Fedora, Kubernetes, Linux, Installation, Lightweight Kubernetes, SUSE Rancher
 
 Description: Learn how to install K3s on Fedora Linux, handle Fedora-specific requirements like firewall and SELinux configuration, and get a single-node or multi-node cluster running.
 

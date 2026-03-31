@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Storage, Placement Groups, Distributed Storage
+Tags: Ceph, Rook, Storage, Placement Group, Distributed Storage
 
 Description: Understand core Ceph placement group concepts including how PGs map objects to OSDs, how PG count affects performance, and how to size PGs correctly.
 

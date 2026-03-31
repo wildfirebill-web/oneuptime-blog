@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Sidecar Proxy, Resource Limits, Kubernetes, Envoy
+Tags: Istio, Sidecar Proxy, Resource Limit, Kubernetes, Envoy
 
 Description: How to configure CPU and memory resource requests and limits for Istio Envoy sidecar proxies at global and per-workload levels.
 

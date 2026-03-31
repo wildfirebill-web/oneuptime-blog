@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Consul, Service Discovery, HashiCorp, Microservices, DevOps
+Tags: Consul, Service Discovery, HashiCorp, Microservice, DevOps
 
 Description: A comprehensive guide to setting up HashiCorp Consul for service discovery, including installation, configuration, service registration, and querying services in distributed systems.
 

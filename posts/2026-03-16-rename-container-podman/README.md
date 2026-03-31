@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Lifecycle, Container Management
+Tags: Podman, Container, DevOps, Container Lifecycle, Container Management
 
 Description: Learn how to rename containers in Podman to improve organization, fix naming mistakes, and manage container identification.
 

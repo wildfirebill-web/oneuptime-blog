@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Extensions, UI
+Tags: Rancher, Kubernetes, Extension, UI
 
 Description: A step-by-step guide to packaging and publishing custom Rancher UI extensions to an OCI registry or Helm chart repository.
 

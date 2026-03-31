@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Restart Policy, Reliability
+Tags: Podman, Container, DevOps, Restart Policy, Reliability
 
 Description: Learn how to configure restart policies for Podman containers so they automatically recover from crashes and survive system reboots.
 

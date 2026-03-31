@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, KMS, AWS, GCP, Azure, Multi-Cloud
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, KMS, AWS, GCP, Azure, Multi-Cloud
 
 Description: Learn how to configure SOPS with multiple cloud KMS providers for cross-cloud secret management in Flux deployments.
 

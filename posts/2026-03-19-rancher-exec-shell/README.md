@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Workloads
+Tags: Rancher, Kubernetes, Workload
 
 Description: Learn how to open an interactive shell session in a running container in Rancher for debugging, inspecting files, and running commands.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, E-commerce, List, User Session
+Tags: Redis, E-Commerce, List, User Session
 
 Description: Track recently viewed products per user with Redis Lists - maintain ordered history, cap list size automatically, and render personalized product carousels in milliseconds.
 

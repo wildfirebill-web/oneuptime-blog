@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, systemd, Linux, Service, Production
+Tags: Redis, Systemd, Linux, Service, Production
 
 Description: Configure Redis as a systemd service for automatic startup, restart on failure, and proper resource management on Linux production servers.
 

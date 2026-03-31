@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Debugging, Functions, HCL, DevOps, Terraform console
+Tags: Terraform, Debugging, Function, HCL, DevOps, Terraform console
 
 Description: Learn how to use terraform console to interactively test and debug Terraform function outputs, expressions, and data transformations before applying them.
 

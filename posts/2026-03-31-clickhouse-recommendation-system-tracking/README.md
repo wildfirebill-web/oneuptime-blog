@@ -1,6 +1,6 @@
 # How to Build a Recommendation System Tracking Platform with ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Recommendation System, Analytics, Machine Learning, Personalization
 

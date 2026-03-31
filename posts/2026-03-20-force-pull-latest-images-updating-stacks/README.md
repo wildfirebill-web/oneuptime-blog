@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Images, Force Pull, CI/CD
+Tags: Portainer, Stack, Image, Force Pull, CI/CD
 
 Description: Configure Portainer stacks to always pull the latest image version when redeploying, ensuring containers use the most current images.
 

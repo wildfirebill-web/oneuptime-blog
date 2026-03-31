@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, clickhouse-local, Pipe, stdin, Shell
+Tags: ClickHouse, clickhouse-local, Pipe, Stdin, Shell
 
 Description: Learn how to pipe data into clickhouse-local from stdin to run SQL queries on command output, log streams, and shell pipeline results.
 

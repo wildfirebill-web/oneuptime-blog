@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Lambda, SQS, Event-Driven, Serverless, Message Queues
+Tags: Terraform, AWS, Lambda, SQS, Event-Driven, Serverless, Message Queue
 
 Description: A practical guide to configuring AWS Lambda with SQS triggers in Terraform, covering event source mappings, batch processing, dead letter queues, and error handling.
 

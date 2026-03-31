@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Monitoring, Operations, CLUSTER INFO
+Tags: Redis, Cluster, Monitoring, Operation, CLUSTER INFO
 
 Description: Learn how to use CLUSTER INFO in Redis to get a comprehensive overview of cluster state, slot assignments, node counts, and epoch values for health monitoring and troubleshooting.
 

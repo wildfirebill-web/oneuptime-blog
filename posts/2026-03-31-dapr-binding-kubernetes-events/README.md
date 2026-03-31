@@ -1,8 +1,8 @@
 # How to Configure Dapr Binding with Kubernetes Events
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Binding, Kubernetes, Events, Monitoring
+Tags: Dapr, Binding, Kubernetes, Event, Monitoring
 
 Description: Configure the Dapr Kubernetes Events output binding to create Kubernetes events from microservices for auditing, debugging, and cluster-native operational logging.
 

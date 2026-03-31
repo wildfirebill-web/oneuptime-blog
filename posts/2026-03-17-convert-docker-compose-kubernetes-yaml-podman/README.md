@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, Docker Compose, Migration
+Tags: Podman, Container, DevOps, Kubernetes, Docker Compose, Migration
 
 Description: Learn how to convert a Docker Compose project into Kubernetes YAML by running it with Podman and exporting the pod definitions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud KMS, CMEK, Troubleshooting, IAM, Permissions
+Tags: GCP, Cloud KMS, CMEK, Troubleshooting, IAM, Permission
 
 Description: A practical troubleshooting guide for fixing permission denied errors when using Customer-Managed Encryption Keys with various GCP services like Cloud Storage, BigQuery, and GKE.
 

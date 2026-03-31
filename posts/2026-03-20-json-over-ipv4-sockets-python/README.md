@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, JSON, TCP, Sockets, IPv4, Networking, Protocol
+Tags: Python, JSON, TCP, Socket, IPv4, Networking, Protocol
 
 Description: Learn how to send and receive structured JSON data over IPv4 TCP sockets in Python using length-prefixed framing to handle message boundaries.
 

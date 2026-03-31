@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, X-Forwarded-For, IPv4, Reverse Proxy, Headers, Security
+Tags: Nginx, X-Forwarded-For, IPv4, Reverse Proxy, Header, Security
 
 Description: Learn how to correctly configure X-Forwarded-For headers in Nginx so that your applications receive the real client IPv4 address instead of the proxy's IP.
 

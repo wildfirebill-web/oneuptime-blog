@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Testing, Testcontainer, Integration Test, Java
+Tags: Dapr, Testing, Testcontainers, Integration Test, Java
 
 Description: Use Testcontainers to programmatically start Dapr sidecars and dependency containers from your integration tests without manual Docker Compose setup.
 

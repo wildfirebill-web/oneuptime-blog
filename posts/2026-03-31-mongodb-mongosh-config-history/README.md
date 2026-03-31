@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Mongosh, Shell, Configuration, Developer Tools
+Tags: MongoDB, Mongosh, Shell, Configuration, Developer Tool
 
 Description: Learn how to configure mongosh settings, customize the prompt, manage command history, and persist shell preferences across sessions.
 

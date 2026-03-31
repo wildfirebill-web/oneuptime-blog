@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Organizations, Folders, Infrastructure as Code
+Tags: OpenTofu, GCP, Organization, Folders, Infrastructure as Code
 
 Description: Learn how to set up and manage GCP Organization structure with OpenTofu, including folders, projects, and IAM bindings for governance at scale.
 

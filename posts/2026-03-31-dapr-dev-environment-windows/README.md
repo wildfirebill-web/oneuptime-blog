@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Windows, Development, Setup, WSL
+Tags: Dapr, Window, Development, Setup, WSL
 
 Description: Set up a complete Dapr development environment on Windows using Docker Desktop and the Dapr CLI, with tips for WSL2 and PowerShell workflows.
 

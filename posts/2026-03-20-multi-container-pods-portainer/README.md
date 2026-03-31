@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Pods, Containers, DevOps
+Tags: Portainer, Kubernetes, Pod, Container, DevOps
 
 Description: Configure multi-container pods with shared process and network namespaces in Portainer for sidecar patterns.
 

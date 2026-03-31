@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Profiling, Metrics, Correlation
+Tags: OpenTelemetry, Profiling, Metric, Correlation
 
 Description: Correlate OpenTelemetry profiling data with metrics to identify which code paths consume the most resources.
 

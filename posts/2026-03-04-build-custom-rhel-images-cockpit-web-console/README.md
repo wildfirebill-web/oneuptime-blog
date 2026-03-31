@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Cockpit, Image Builder, Web Console, Custom Images, Linux
+Tags: RHEL, Cockpit, Image Builder, Web Console, Custom Image, Linux
 
 Description: Use the Cockpit web console to build custom RHEL images through a graphical interface, making it accessible for teams without command-line expertise.
 

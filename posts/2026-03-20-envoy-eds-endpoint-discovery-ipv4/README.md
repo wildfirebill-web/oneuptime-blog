@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, EDS, XDS, IPv4, Service Discovery, Dynamic Configuration, Microservices
+Tags: Envoy, EDS, XDS, IPv4, Service Discovery, Dynamic Configuration, Microservice
 
 Description: Learn how to configure Envoy's Endpoint Discovery Service (EDS) to dynamically receive IPv4 endpoint addresses from a control plane.
 

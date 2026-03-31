@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, .NET, Actors, C#, Microservices, Distributed Systems
+Tags: Dapr, .NET, Actor, C#, Microservice, Distributed System
 
 Description: Learn how to build virtual actors using the Dapr .NET SDK, covering actor interfaces, implementations, state management, and timers.
 

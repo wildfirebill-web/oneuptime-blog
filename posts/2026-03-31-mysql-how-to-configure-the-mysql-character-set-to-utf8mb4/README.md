@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Utf8mb4, Character Set, Collation, Internationalization
+Tags: MySQL, utf8mb4, Character Set, Collation, Internationalization
 
 Description: Configure MySQL to use utf8mb4 as the default character set to properly store all Unicode characters including emojis and multilingual text.
 

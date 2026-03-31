@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Monitoring, Diagnostics, Performance
+Tags: MySQL, InnoDB, Monitoring, Diagnostic, Performance
 
 Description: Learn how to interpret all sections of SHOW ENGINE INNODB STATUS output in MySQL to diagnose performance issues, lock conflicts, and transaction problems.
 

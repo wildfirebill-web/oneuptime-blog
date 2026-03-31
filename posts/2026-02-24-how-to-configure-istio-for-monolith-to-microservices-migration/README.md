@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Microservices, Migration, Service Mesh, Kubernetes, Architecture
+Tags: Istio, Microservice, Migration, Service Mesh, Kubernetes, Architecture
 
 Description: A practical guide to using Istio for incremental monolith-to-microservices migration with traffic routing, feature extraction, and safe cutover strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Ruby, Rails, Distributed Tracing, Microservices
+Tags: OpenTelemetry, Ruby, Rails, Distributed Tracing, Microservice
 
 Description: Learn how to implement distributed tracing across multiple Rails microservices using OpenTelemetry to track requests as they flow through your system.
 

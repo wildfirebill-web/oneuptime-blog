@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Dev Container, Vscode, Docker, Development
+Tags: MongoDB, Dev Container, VSCode, Docker, Development
 
 Description: Configure a VS Code Dev Container with MongoDB and the MongoDB VS Code extension for a fully reproducible, one-click development environment.
 

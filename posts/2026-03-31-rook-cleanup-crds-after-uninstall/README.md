@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Kubernetes, CRD, Cleanup, Uninstall
 
-Description: Learn how to properly clean up Rook-Ceph Custom Resource Definitions after uninstalling Rook to prevent orphaned CRDs from interfering with future installations.
+Description: Learn how to properly clean up Rook-Ceph Custom Resource Definitions after uninstalling Rook to prevent orphaned CRDs from interfering with reinstallation.
 
 ---
 

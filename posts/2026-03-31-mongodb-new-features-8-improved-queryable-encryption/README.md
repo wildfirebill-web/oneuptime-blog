@@ -1,4 +1,4 @@
-# How to Use New Features in MongoDB 8.0 (Improved Queryable Encryption, Query
+# New Features in MongoDB 8.0: Improved Queryable Encryption
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

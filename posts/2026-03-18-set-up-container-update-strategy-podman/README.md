@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Update, Auto-Update, Containers, Deployment
+Tags: Podman, Update, Auto-Update, Container, Deployment
 
 Description: Learn how to set up a reliable container update strategy with Podman using auto-update, Quadlet, rollback procedures, and staged deployment approaches.
 

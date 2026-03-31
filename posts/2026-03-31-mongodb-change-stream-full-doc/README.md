@@ -1,8 +1,8 @@
 # How to Configure Full Document Updates in MongoDB Change Streams
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change stream, Full document, updateLookup, Real-time
+Tags: MongoDB, Change Stream, Full document, updateLookup, Real-Time
 
 Description: Learn how to configure MongoDB change streams to return the full document on update events using fullDocument options, and understand the tradeoffs of each mode.
 

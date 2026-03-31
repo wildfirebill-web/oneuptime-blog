@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, S3, Batch Operations, Automation, Data Management
+Tags: AWS, S3, Batch Operation, Automation, Data Management
 
 Description: A practical guide to using S3 Batch Operations for processing millions of objects at scale, including tagging, copying, restoring, and invoking Lambda functions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, RDS, Read Replicas, Database, High Availability
+Tags: OpenTofu, AWS, RDS, Read Replica, Database, High Availability
 
 Description: Learn how to provision AWS RDS read replicas using OpenTofu to scale read traffic and reduce primary database load.
 

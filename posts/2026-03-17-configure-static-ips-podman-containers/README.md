@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Static IP, Configuration
+Tags: Podman, Container, DevOps, Networking, Static IP, Configuration
 
 Description: Learn how to assign static IP addresses to Podman containers for predictable addressing and service configuration.
 

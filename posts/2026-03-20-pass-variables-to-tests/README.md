@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, Variables, Infrastructure as Code, CI/CD
+Tags: OpenTofu, Testing, Variable, Infrastructure as Code, CI/CD
 
 Description: Learn how to pass input variables to OpenTofu test files to make tests configurable, reusable, and environment-aware.
 

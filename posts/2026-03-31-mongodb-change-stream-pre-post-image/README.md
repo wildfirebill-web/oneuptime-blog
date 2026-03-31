@@ -1,8 +1,8 @@
 # How to Use Pre-Image and Post-Image in MongoDB Change Streams
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change stream, Pre-image, Post-image, Real-time
+Tags: MongoDB, Change Stream, Pre-Image, Post-Image, Real-Time
 
 Description: Learn how to configure MongoDB change streams to receive the full document state before and after a change using pre-image and post-image change stream options.
 

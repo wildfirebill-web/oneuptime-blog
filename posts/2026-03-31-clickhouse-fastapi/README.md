@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, FastAPI, Python, Database, Analytics, Api
+Tags: ClickHouse, FastAPI, Python, Database, Analytics, API
 
 Description: Learn how to integrate ClickHouse with FastAPI using clickhouse-connect, build analytics endpoints, handle async queries, and serve high-throughput read workloads.
 

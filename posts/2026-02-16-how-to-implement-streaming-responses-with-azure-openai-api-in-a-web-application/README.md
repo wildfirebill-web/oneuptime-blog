@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure OpenAI, Streaming, Server-Sent Events, Web Development, Python, JavaScript, Real-Time
+Tags: Azure OpenAI, Streaming, Server-Sent Event, Web Development, Python, JavaScript, Real-Time
 
 Description: Implement streaming responses from Azure OpenAI API in a web application using Server-Sent Events for a responsive chat experience.
 

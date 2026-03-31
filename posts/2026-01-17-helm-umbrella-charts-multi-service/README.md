@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, Umbrella Charts, Microservices, Dependencies
+Tags: Helm, Kubernetes, DevOps, Umbrella Charts, Microservice, Dependencies
 
 Description: Learn how to create Helm umbrella charts to deploy and manage complex multi-service applications as a single unit with coordinated configuration.
 

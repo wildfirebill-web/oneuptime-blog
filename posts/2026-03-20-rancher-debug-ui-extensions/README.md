@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Extensions, Debugging, UI
+Tags: Rancher, Kubernetes, Extension, Debugging, UI
 
 Description: A practical guide to debugging Rancher UI extensions using local development mode, browser DevTools, and common troubleshooting techniques.
 

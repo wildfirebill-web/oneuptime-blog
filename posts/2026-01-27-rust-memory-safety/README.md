@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Rust, Memory Safety, Ownership, Borrowing, Lifetimes, Smart Pointers, Concurrency, Systems Programming
+Tags: Rust, Memory Safety, Ownership, Borrowing, Lifetime, Smart Pointers, Concurrency, Systems Programming
 
 Description: A comprehensive guide to Rust's memory safety guarantees, covering ownership, borrowing, lifetimes, smart pointers, and safe concurrency patterns to write bug-free systems code.
 

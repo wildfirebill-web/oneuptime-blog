@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Limits.conf, PAM, Resource Limits, System Administration
+Tags: Ubuntu, Limits.conf, PAM, Resource Limit, System Administration
 
 Description: Configure resource limits in /etc/security/limits.conf on Ubuntu to control open file descriptors, processes, memory, and other per-user and per-process limits.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Infrastructure as Code, DevOps, Best Practice
+Tags: Terraform, Module, Infrastructure as Code, DevOps, Best Practice
 
 Description: A detailed guide to Terraform module file structure conventions, including how to organize resources, variables, outputs, and supporting files for maintainable modules.
 

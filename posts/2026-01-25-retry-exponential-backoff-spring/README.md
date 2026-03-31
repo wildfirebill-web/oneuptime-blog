@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Retry, Resilience4j, Fault Tolerance, Microservices
+Tags: Java, Spring Boot, Retry, Resilience4j, Fault Tolerance, Microservice
 
 Description: Learn how to implement retry logic with exponential backoff in Spring Boot applications using Spring Retry and Resilience4j.
 

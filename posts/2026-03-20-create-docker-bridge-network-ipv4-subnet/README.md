@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, IPv4, Bridge Network, Containers
+Tags: Docker, Networking, IPv4, Bridge Network, Container
 
 Description: Create a custom Docker bridge network with a specific IPv4 subnet and gateway using docker network create, and run containers attached to this isolated network.
 

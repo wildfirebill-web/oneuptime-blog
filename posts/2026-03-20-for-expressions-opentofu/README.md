@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, For Expressions, HCL, Collections, Infrastructure as Code
+Tags: OpenTofu, For Expressions, HCL, Collection, Infrastructure as Code
 
 Description: Learn how to use for expressions in OpenTofu to transform lists and maps - filtering, mapping, grouping, and reshaping data structures within your configurations.
 

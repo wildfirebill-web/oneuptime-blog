@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Containers, Best Practice
+Tags: Kubernetes, Container, Best Practice
 
 Description: Learn how to configure Kubernetes terminationGracePeriodSeconds to ensure clean pod shutdowns, graceful connection draining, and proper cleanup during deployments and scaling operations.
 

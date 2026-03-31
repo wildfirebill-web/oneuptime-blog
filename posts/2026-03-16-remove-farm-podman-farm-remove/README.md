@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Farm, Multi-Architecture, Build Farm
+Tags: Podman, Container, DevOps, Podman Farm, Multi-Architecture, Build Farm
 
 Description: Learn how to use podman farm remove to delete build farm configurations, including cleanup patterns and scripting examples.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Ingresses, Namespaces, Routing, Multi-Tenancy
+Tags: Kubernetes, Ingresses, Namespace, Routing, Multi-Tenancy
 
 Description: Configure Kubernetes Ingress to route traffic across multiple namespaces, enabling centralized ingress management, multi-tenant architectures, and flexible service exposure strategies.
 

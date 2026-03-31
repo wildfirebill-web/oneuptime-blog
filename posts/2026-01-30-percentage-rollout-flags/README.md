@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, DevOps, Deployment, SRE
+Tags: Feature Flag, DevOps, Deployment, SRE
 
 Description: Learn how to implement percentage-based feature rollouts for gradual feature releases.
 

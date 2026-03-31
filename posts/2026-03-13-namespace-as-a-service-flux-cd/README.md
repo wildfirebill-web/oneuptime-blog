@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Platform Engineering, Namespaces, Multi-Tenancy
+Tags: Flux CD, Kubernetes, GitOps, Platform Engineering, Namespace, Multi-Tenancy
 
 Description: Implement namespace-as-a-service for development teams using Flux CD so teams can request isolated Kubernetes namespaces through Git pull requests.
 

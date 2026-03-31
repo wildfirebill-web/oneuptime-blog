@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Prometheus, Monitoring, Metrics, Observability, Configuration
+Tags: ClickHouse, Prometheus, Monitoring, Metric, Observability, Configuration
 
 Description: Configure ClickHouse to expose Prometheus metrics over HTTP so Prometheus can scrape query performance, replication lag, cache hit rates, and resource usage metrics.
 

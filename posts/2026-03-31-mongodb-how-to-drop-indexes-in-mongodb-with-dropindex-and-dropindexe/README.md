@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, dropIndex, dropIndexes, Index Management
+Tags: MongoDB, Index, dropIndex, dropIndexes, Index Management
 
 Description: Learn how to drop individual and multiple indexes in MongoDB using dropIndex() and dropIndexes() with examples for safe index removal.
 

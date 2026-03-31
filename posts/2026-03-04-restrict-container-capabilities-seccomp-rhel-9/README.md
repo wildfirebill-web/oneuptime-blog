@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Containers, Security, Capabilities, Seccomp, Linux
+Tags: RHEL, Podman, Container, Security, Capabilities, Seccomp, Linux
 
 Description: Learn how to restrict Linux capabilities and apply seccomp profiles to containers on RHEL for tighter security.
 

@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Replication, Failover, Promotion, High availability
+Tags: Redis, Replication, Failover, Promotion, High Availability
 
-Description: Learn how to use REPLICAOF NO ONE to detach a Redis replica from its primary and promote it to a standalone primary, a key step in manual failover procedures.
+Description: Learn how to use REPLICAOF NO ONE to detach a Redis replica from its primary and promote it to a standalone primary for manual failover procedures.
 
 ---
 

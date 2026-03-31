@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change Streams, Real-Time, Event-Driven, Database
+Tags: MongoDB, Change Stream, Real-Time, Event-Driven, Database
 
 Description: Learn how to use MongoDB Change Streams for real-time data synchronization, event-driven architectures, and building reactive applications.
 

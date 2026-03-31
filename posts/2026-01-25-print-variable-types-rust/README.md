@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Debugging, Types, Development, Diagnostics
+Tags: Rust, Debugging, Type, Development, Diagnostic
 
 Description: Learn different techniques to print and inspect variable types in Rust during development and debugging. Discover compile-time and runtime approaches for type inspection.
 

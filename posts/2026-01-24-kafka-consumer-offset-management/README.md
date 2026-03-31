@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Apache Kafka, Consumer Groups, Offset Management, Message Processing, Distributed Systems, Reliability
+Tags: Kafka, Apache Kafka, Consumer Group, Offset Management, Message Processing, Distributed System, Reliability
 
 Description: Learn how to properly manage Kafka consumer offsets to ensure reliable message processing, prevent data loss, and handle reprocessing scenarios.
 

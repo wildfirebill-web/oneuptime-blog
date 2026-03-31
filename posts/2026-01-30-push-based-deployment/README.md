@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: CI/CD, Push-Based, Jenkins, GitHub Actions
+Tags: CI/CD, Push-Based, Jenkins, GitHub Action
 
 Description: Learn to implement push-based deployment using CI/CD pipelines.
 

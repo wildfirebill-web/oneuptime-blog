@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubeless, Serverless, Functions, Kubernetes, Event-Driven
+Tags: Rancher, Kubeless, Serverless, Function, Kubernetes, Event-Driven
 
 Description: Deploy Kubeless serverless framework on Rancher to run functions as Kubernetes native resources with event triggers and HTTP endpoints.
 

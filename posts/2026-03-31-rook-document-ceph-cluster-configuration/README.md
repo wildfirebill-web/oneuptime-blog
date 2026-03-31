@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Documentation, Configuration, GitOps, Runbook, Operations
+Tags: Rook, Ceph, Documentation, Configuration, GitOps, Runbook, Operation
 
 Description: Build comprehensive documentation for your Ceph cluster configuration including architecture diagrams, pool inventory, tuning parameters, and GitOps-managed configuration records.
 

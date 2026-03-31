@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCPv6, IPv6, Static IP, Reservations, DUID
+Tags: DHCPv6, IPv6, Static IP, Reservation, DUID
 
 Description: Learn how to configure DHCPv6 host reservations to assign fixed IPv6 addresses to specific clients based on their DUID or hardware address.
 

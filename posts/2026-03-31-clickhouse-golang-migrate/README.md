@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, golang-migrate, Schema Migration, Go, DevOps
+Tags: ClickHouse, Golang-migrate, Schema Migration, Go, DevOps
 
 Description: Learn how to use golang-migrate to manage ClickHouse schema migrations with versioned SQL files, supporting both up and down migrations.
 

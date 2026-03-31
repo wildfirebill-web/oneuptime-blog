@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Monolith, Microservices, Migration, Instrumentation
+Tags: OpenTelemetry, Monolith, Microservice, Migration, Instrumentation
 
 Description: A practical guide to instrumenting a monolithic application with OpenTelemetry to prepare for eventual microservices migration, with patterns that work in both architectures.
 

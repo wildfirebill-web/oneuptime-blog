@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Update
+Tags: MySQL, JSON, Update
 
 Description: Learn how to update nested JSON values in MySQL using JSON_SET(), JSON_REPLACE(), and JSON_INSERT() with path expressions for precise document modifications.
 

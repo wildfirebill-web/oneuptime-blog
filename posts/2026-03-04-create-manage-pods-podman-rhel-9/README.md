@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Pods, Linux
+Tags: RHEL, Podman, Pod, Linux
 
 Description: A practical guide to creating and managing Podman pods on RHEL, grouping containers that share network namespaces, storage, and lifecycle management.
 

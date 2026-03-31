@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change Streams, Aggregation Pipeline, Filtering, Events
+Tags: MongoDB, Change Stream, Aggregation Pipeline, Filtering, Event
 
 Description: Use aggregation pipeline stages to filter and transform MongoDB change stream events server-side, reducing network traffic and client-side processing.
 

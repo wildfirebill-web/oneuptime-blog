@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Queue, Job Processing, Background Tasks, Node.js
+Tags: MongoDB, Queue, Job Processing, Background Task, Node.js
 
 Description: Learn how to implement a reliable job queue with MongoDB using findOneAndUpdate for atomic dequeue, status tracking, and dead letter handling.
 

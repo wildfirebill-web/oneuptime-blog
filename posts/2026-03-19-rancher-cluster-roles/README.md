@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Role, Security
+Tags: Rancher, Kubernetes, RBAC, Permission, Role, Security
 
 Description: A step-by-step guide to assigning cluster roles in Rancher for controlling user access at the cluster level.
 

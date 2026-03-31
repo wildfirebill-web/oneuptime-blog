@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Validation, Variables, Error Handling, Infrastructure as Code
+Tags: Terraform, HCL, Validation, Variable, Error Handling, Infrastructure as Code
 
 Description: Learn how to write clear, actionable custom error messages for Terraform variable validation blocks that help users fix configuration problems quickly.
 

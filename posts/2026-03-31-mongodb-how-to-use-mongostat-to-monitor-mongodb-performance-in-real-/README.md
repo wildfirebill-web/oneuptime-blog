@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Mongostat, Monitoring, Performance
+Tags: MongoDB, Mongostat, Monitoring, Performance
 
 Description: Learn how to use mongostat for real-time MongoDB performance monitoring, interpreting key metrics, setting thresholds, and integrating with alerting systems.
 

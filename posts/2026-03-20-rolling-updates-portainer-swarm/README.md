@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Rolling Updates, Zero Downtime, DevOps, Deployment
+Tags: Portainer, Docker Swarm, Rolling Update, Zero Downtime, DevOps, Deployment
 
 Description: Configure Docker Swarm rolling updates with Portainer for zero-downtime deployments with automatic rollback on failure.
 

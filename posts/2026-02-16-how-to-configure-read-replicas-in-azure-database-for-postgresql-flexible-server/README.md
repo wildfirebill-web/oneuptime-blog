@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, PostgreSQL, Read Replicas, Flexible Server, Replication, Scalability, Performance
+Tags: Azure, PostgreSQL, Read Replica, Flexible Server, Replication, Scalability, Performance
 
 Description: A practical guide to setting up and managing read replicas in Azure Database for PostgreSQL Flexible Server for scaling read-heavy workloads.
 

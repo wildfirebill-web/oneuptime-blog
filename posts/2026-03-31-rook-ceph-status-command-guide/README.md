@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, CLI, Status, Monitoring, Operations
+Tags: Rook, Ceph, CLI, Status, Monitoring, Operation
 
 Description: Master the ceph status command to quickly assess cluster health, identify issues, and understand output sections for effective Ceph operations.
 

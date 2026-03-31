@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Nfs, Kubernetes, Storage, Cephnfs
+Tags: Rook, Ceph, NFS, Kubernetes, Storage, CephNFS
 
 Description: Learn how to create a CephNFS cluster using the Rook CephNFS CRD to deploy NFS-Ganesha servers backed by CephFS for NFS-compatible shared storage.
 

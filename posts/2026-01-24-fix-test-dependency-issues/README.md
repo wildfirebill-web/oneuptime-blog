@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Testing, Dependencies, Test Isolation, Fixtures, Mocking, Flaky Tests, Python, JavaScript
+Tags: Testing, Dependencies, Test Isolation, Fixture, Mocking, Flaky Tests, Python, JavaScript
 
 Description: Learn how to identify and fix test dependency issues that cause flaky tests, including test order dependencies, shared state problems, and external service dependencies.
 

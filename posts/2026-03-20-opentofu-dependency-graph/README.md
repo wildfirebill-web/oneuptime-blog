@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Dependency Graph, Internals, Infrastructure as Code, DevOps
+Tags: OpenTofu, Dependency Graph, Internal, Infrastructure as Code, DevOps
 
 Description: Learn how OpenTofu builds and traverses the resource dependency graph - understanding implicit and explicit dependencies, cycle detection, and how the graph determines apply order.
 

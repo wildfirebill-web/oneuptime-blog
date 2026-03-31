@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Zeebe, Camunda, Workflow Orchestration, Bindings
+Tags: Dapr, Zeebe, Camunda, Workflow Orchestration, Binding
 
 Description: Learn how to use the Dapr Zeebe Command output binding to interact with Camunda Zeebe workflow engine from your microservices for process orchestration.
 

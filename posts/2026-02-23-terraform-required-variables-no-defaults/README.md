@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Variables, Configuration, Infrastructure as Code
+Tags: Terraform, HCL, Variable, Configuration, Infrastructure as Code
 
 Description: Learn how to create required Terraform variables by omitting default values, forcing callers to provide explicit values and preventing accidental misconfigurations.
 

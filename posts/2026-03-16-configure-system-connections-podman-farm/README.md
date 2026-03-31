@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Farm, Multi-Architecture, SSH
+Tags: Podman, Container, DevOps, Podman Farm, Multi-Architecture, SSH
 
 Description: Learn how to configure Podman system connections for remote machines, which form the foundation of Podman farm builds for multi-architecture image creation.
 

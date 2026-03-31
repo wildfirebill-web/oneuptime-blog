@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Lifecycle, Configuration
+Tags: Podman, Container, DevOps, Pod, Lifecycle, Configuration
 
 Description: Learn how to configure the exit policy for Podman pods to control what happens when containers stop.
 

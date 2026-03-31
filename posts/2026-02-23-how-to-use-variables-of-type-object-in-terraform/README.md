@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Object, HCL, Infrastructure as Code
+Tags: Terraform, Variable, Object, HCL, Infrastructure as Code
 
 Description: Learn how to use object-type variables in Terraform to group related configuration into structured types with defined attributes, types, and defaults.
 

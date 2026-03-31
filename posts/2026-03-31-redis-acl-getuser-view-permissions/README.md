@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, ACL GETUSER, ACL, Security, User management
+Tags: Redis, ACL GETUSER, ACL, Security, User Management
 
 Description: Learn how to use ACL GETUSER in Redis to inspect a specific user's configuration including passwords, enabled state, key patterns, and command permissions.
 

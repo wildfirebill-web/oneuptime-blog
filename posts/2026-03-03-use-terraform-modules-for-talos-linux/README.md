@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Terraform, Modules, Infrastructure as Code, Reusable Code
+Tags: Talos Linux, Terraform, Module, Infrastructure as Code, Reusable Code
 
 Description: Learn how to build and use Terraform modules for Talos Linux to create reusable, composable infrastructure components for cluster deployment.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Insert, Select, Concurrency, Pattern
+Tags: MySQL, Insert, SELECT, Concurrency, Pattern
 
 Description: Learn how to implement the get-or-create pattern in MySQL to atomically retrieve an existing row or insert a new one without race conditions.
 

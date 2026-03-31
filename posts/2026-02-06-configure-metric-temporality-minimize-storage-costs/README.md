@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Storage Optimization, Cost Optimization, Temporality
+Tags: OpenTelemetry, Metric, Storage Optimization, Cost Optimization, Temporality
 
 Description: Reduce metric storage costs by up to 50% by understanding and configuring OpenTelemetry metric temporality. Learn the differences between cumulative and delta temporality and when to use each.
 

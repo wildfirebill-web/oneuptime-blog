@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Privileged, Security, Containers
+Tags: Portainer, Docker, Privileged, Security, Container
 
 Description: Configure and run privileged containers in Portainer when full host capabilities are required for specific workloads.
 

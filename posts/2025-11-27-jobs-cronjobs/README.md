@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Workloads, Automation, DevOps
+Tags: Kubernetes, Workload, Automation, DevOps
 
 Description: Launch reliable Jobs for migrations, wrap them with CronJobs for schedules, and add safety nets like concurrency policies and TTL controllers.
 

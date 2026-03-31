@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Default Values, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Default Values, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to set default values for OpenTofu input variables to make configurations reusable without requiring every variable to be explicitly provided.
 

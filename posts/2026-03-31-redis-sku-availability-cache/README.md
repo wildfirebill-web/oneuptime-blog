@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, E-commerce, Hash, Cache
+Tags: Redis, E-Commerce, Hash, Cache
 
 Description: Cache SKU stock levels and availability status with Redis Hashes - serve availability checks in under 1ms, handle multi-variant products, and sync with inventory on updates.
 

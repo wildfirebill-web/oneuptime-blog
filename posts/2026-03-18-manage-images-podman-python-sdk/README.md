@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Python, SDK, Images, Container Registry
+Tags: Podman, Python, SDK, Image, Container Registry
 
 Description: Learn how to pull, push, build, tag, inspect, and remove container images using the Podman Python SDK, including working with registries and Dockerfiles.
 

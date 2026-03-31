@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Resource Quotas, Namespaces, Governance
+Tags: Portainer, Kubernetes, Resource Quota, Namespace, Governance
 
 Description: Learn how to configure CPU, memory, and object count quotas on Kubernetes namespaces in Portainer.
 

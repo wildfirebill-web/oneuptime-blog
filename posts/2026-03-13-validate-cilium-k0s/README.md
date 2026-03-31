@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, K0s, eBPF
+Tags: Cilium, Kubernetes, k0s, eBPF
 
 Description: Learn how to validate Cilium CNI on k0s Kubernetes clusters, covering installation verification, networking checks, and connectivity testing specific to the k0s distribution.
 

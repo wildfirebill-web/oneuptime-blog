@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, Streams, Migration, Messaging
+Tags: Redis, Pub/Sub, Stream, Migration, Messaging
 
 Description: Learn how to migrate from Redis Pub/Sub to Redis Streams for durable, replayable messaging with consumer groups and persistent message history.
 

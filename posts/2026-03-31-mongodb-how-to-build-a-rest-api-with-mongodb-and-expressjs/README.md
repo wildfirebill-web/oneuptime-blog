@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Express.js, Node.js, Rest Api, Backend Development
+Tags: MongoDB, Express.js, Node.js, REST API, Backend Development
 
 Description: Learn how to build a production-ready REST API using Node.js, Express.js, and MongoDB with proper routing, validation, error handling, and pagination.
 

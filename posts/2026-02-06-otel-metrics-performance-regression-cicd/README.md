@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Performance Testing, CI/CD, Metrics, Regression Detection
+Tags: OpenTelemetry, Performance Testing, CI/CD, Metric, Regression Detection
 
 Description: Learn how to integrate OpenTelemetry metrics into your CI/CD pipeline to automatically detect performance regressions before they reach production.
 

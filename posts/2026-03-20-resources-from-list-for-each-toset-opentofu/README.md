@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, for_each, Toset, Lists, HCL
+Tags: OpenTofu, Terraform, for_each, Toset, List, HCL
 
 Description: Learn how to use toset with for_each in OpenTofu to create resources from a list of unique string values with stable, name-based identities.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Provider, Locks
+Tags: OpenTofu, Terraform, IaC, Provider, Lock
 
 Description: Learn how to use the tofu providers lock command to manage provider checksums for multiple platforms in your lock file.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NeuVector, Webhooks, Notifications, Slack, PagerDuty, Kubernetes
+Tags: NeuVector, Webhook, Notification, Slack, PagerDuty, Kubernetes
 
 Description: Set up NeuVector webhook notifications to send real-time security alerts to Slack, PagerDuty, Microsoft Teams, and custom HTTP endpoints.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Kotlin, JVM, Ktor, Containerization, DevOps, Microservices
+Tags: Docker, Kotlin, JVM, Ktor, Containerization, DevOps, Microservice
 
 Description: Build production-ready Docker images for Kotlin applications using multi-stage builds with Ktor and Spring Boot frameworks.
 

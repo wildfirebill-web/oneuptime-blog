@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Scout, CI/CD, GitHub Actions, GitLab CI, Security, DevOps
+Tags: Docker, Docker Scout, CI/CD, GitHub Action, GitLab CI, Security, DevOps
 
 Description: Integrate Docker Scout vulnerability scanning into GitHub Actions, GitLab CI, and Jenkins pipelines to catch security issues before deployment.
 

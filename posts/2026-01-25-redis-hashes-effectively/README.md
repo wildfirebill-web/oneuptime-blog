@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Hashes, Data Structures, Performance, Data Modeling
+Tags: Redis, Hash, Data Structure, Performance, Data Modeling
 
 Description: Master Redis hashes for efficient object storage. Learn memory optimization, partial updates, and practical patterns for user profiles, sessions, and configuration management.
 

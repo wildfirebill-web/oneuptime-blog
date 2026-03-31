@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Key Vault, Secret Rotation, Azure Functions, Event Grid, Security, Automation
+Tags: Azure, Key Vault, Secret Rotation, Azure Function, Event Grid, Security, Automation
 
 Description: A complete guide to automating secret rotation in Azure Key Vault using Azure Functions triggered by Event Grid near-expiry events.
 

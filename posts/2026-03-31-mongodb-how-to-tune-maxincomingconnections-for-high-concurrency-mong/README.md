@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Connections, Configuration, Performance, Scalability
+Tags: MongoDB, Connection, Configuration, Performance, Scalability
 
 Description: Configure maxIncomingConnections and connection pool settings to optimize MongoDB for high-concurrency workloads and prevent connection exhaustion.
 

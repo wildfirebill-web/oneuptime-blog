@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RKE2, Kubernetes, Registry Mirror, Container Images, Performance, Rancher
+Tags: RKE2, Kubernetes, Registry Mirror, Container Image, Performance, Rancher
 
 Description: Learn how to configure registry mirrors in RKE2 to redirect container image pulls to local mirrors, improving performance and reducing external bandwidth.
 

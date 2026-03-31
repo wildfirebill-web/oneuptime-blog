@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Grafana, PromQL, Alerting, Metrics
+Tags: Prometheus, Grafana, PromQL, Alerting, Metric
 
 Description: Learn how to detect and analyze metric fluctuations in Prometheus using PromQL functions like stddev, deriv, and changes, with Grafana visualization and alerting techniques.
 

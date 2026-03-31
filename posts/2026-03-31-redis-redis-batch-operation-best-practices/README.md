@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pipeline, Batch Operations, Performance, Throughput, Best Practices
+Tags: Redis, Pipeline, Batch Operation, Performance, Throughput, Best Practice
 
 Description: Learn how to use Redis pipelines, MGET/MSET, and transactions to batch operations efficiently, reducing round trips and maximizing throughput.
 

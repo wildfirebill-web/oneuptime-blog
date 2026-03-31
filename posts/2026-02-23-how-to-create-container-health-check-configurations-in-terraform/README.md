@@ -1,8 +1,8 @@
 # How to Create Container Health Check Configurations in Terraform
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Containers, Health Check, ECS, Kubernetes, Monitoring
+Tags: Terraform, Container, Health Check, ECS, Kubernetes, Monitoring
 
 Description: Learn how to configure container health checks in Terraform for Kubernetes, ECS, and other platforms to ensure application reliability and automatic recovery.
 

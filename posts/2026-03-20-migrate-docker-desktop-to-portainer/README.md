@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Desktop, Migration, Linux, Containers
+Tags: Portainer, Docker Desktop, Migration, Linux, Container
 
 Description: Step-by-step guide to replacing Docker Desktop with Portainer for container management on development and production systems.
 

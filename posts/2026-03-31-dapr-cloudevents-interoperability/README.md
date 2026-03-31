@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, CloudEvents, Pub/Sub, Interoperability, Standard, CNCF
+Tags: Dapr, CloudEvent, Pub/Sub, Interoperability, Standard, CNCF
 
 Description: Use the CloudEvents specification with Dapr pub/sub for standardized event format interoperability across services, languages, and platforms.
 

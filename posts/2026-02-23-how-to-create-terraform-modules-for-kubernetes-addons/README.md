@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Kubernetes, EKS, Addons, Helm, Infrastructure as Code
+Tags: Terraform, Module, Kubernetes, EKS, Addons, Helm, Infrastructure as Code
 
 Description: Build reusable Terraform modules for Kubernetes addons including ingress controllers, cert-manager, monitoring stacks, and service mesh using Helm and Kubernetes providers.
 

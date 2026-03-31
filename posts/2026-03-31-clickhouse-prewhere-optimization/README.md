@@ -1,6 +1,6 @@
 # How to Use PREWHERE for Performance Optimization in ClickHouse
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Performance, SQL, Analytics, Database
 

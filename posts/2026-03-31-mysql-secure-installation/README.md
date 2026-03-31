@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, mysql_secure_installation, Database Administration, Linux
+Tags: MySQL, Security, mysql_secure_installation, Database Administration, Linux
 
 Description: Run mysql_secure_installation after installing MySQL to set the root password, remove anonymous users, and disable remote root login for a hardened setup.
 

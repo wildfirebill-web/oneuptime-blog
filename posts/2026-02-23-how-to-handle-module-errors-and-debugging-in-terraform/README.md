@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Debugging, Troubleshooting, Infrastructure as Code
+Tags: Terraform, Module, Debugging, Troubleshooting, Infrastructure as Code
 
 Description: Practical techniques for debugging Terraform module errors including state inspection, logging, validation, and common troubleshooting patterns.
 

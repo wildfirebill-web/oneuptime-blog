@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Volumes, Containers, Storage
+Tags: Portainer, Docker, Volumes, Container, Storage
 
 Description: Inspect container mount points and volume bindings in Portainer to understand data storage configuration.
 

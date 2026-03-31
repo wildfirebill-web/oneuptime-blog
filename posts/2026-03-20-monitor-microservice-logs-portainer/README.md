@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Logging, Microservices, Loki, ELK, Monitoring
+Tags: Portainer, Docker, Logging, Microservice, Loki, ELK, Monitoring
 
 Description: Set up centralized logging for microservices using Portainer's built-in log viewer and the PLG stack to aggregate logs across containers.
 

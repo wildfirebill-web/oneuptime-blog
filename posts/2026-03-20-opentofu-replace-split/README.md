@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, String
+Tags: OpenTofu, Terraform, IaC, Function, String
 
 Description: Learn how to use the replace() and split() functions in OpenTofu to manipulate strings and create lists.
 

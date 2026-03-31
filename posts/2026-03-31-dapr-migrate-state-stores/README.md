@@ -1,8 +1,8 @@
 # How to Migrate State Data Between Dapr State Stores
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, State Management, Migration, Microservice, Operations
+Tags: Dapr, State Management, Migration, Microservice, Operation
 
 Description: Learn how to migrate state data from one Dapr state store to another with zero downtime using dual-write patterns and incremental migration strategies.
 

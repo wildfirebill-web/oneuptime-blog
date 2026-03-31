@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Environment Variables, TF_VAR_, CI/CD, DevOps
+Tags: OpenTofu, Variable, Environment Variable, TF_VAR_, CI/CD, DevOps
 
 Description: Learn how to use the TF_VAR_ prefix to set OpenTofu variable values via environment variables for CI/CD pipelines and secret injection.
 

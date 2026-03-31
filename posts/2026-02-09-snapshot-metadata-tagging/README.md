@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Storage, Organizations, Metadata
+Tags: Kubernetes, Storage, Organization, Metadata
 
 Description: Learn how to use labels, annotations, and naming conventions to organize and tag volume snapshots in Kubernetes for better management, cost tracking, and compliance reporting.
 

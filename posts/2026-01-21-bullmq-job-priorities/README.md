@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BullMQ, Node.js, Redis, Job Priorities, Queue Management, Background Jobs
+Tags: BullMQ, Node.js, Redis, Job Priorities, Queue Management, Background Job
 
 Description: A comprehensive guide to implementing job priorities in BullMQ, including priority queues, fair scheduling strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Annotations, Metadata
+Tags: Podman, Container, DevOps, Annotation, Metadata
 
 Description: Learn how to use annotations in Podman containers to attach structured metadata that follows OCI standards for tooling integration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, TCP, Timeout, Sockets, POSIX, Networking
+Tags: C, IPv4, TCP, Timeout, Socket, POSIX, Networking
 
 Description: Learn how to set connection, send, and receive timeouts on IPv4 TCP sockets in C using SO_RCVTIMEO, SO_SNDTIMEO, and non-blocking connect with select().
 

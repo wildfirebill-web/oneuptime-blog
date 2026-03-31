@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Lifecycle, Cgroups
+Tags: Podman, Container, DevOps, Pod, Lifecycle, Cgroups
 
 Description: Learn how to pause and unpause all containers in a Podman pod using cgroup freezing.
 

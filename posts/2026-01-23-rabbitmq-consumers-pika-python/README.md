@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, RabbitMQ, Pika, Message Queues, Async, Microservices, Event-Driven Architecture, Consumer
+Tags: Python, RabbitMQ, Pika, Message Queue, Async, Microservice, Event-Driven Architecture, Consumer
 
 Description: Learn how to build robust RabbitMQ consumers in Python using Pika.
 

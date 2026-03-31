@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Encoding
+Tags: OpenTofu, Terraform, IaC, Function, Encoding
 
 Description: Learn how to use the base64gzip() function in OpenTofu to compress and Base64-encode data.
 

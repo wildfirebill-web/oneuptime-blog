@@ -1,8 +1,8 @@
 # How to Use UPDATE with JOIN in MySQL
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, UPDATE, JOIN, Database
+Tags: MySQL, SQL, DML, Update, Join, Database
 
 Description: Learn how to use UPDATE with JOIN in MySQL to modify rows in one table based on matching data from another table, with practical examples and performance tips.
 

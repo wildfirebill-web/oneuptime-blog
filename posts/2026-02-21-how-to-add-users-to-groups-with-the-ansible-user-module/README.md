@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, User Management, Linux, Groups
+Tags: Ansible, User Management, Linux, Group
 
 Description: Learn how to add users to primary and supplementary groups using the Ansible user module, including the critical append parameter.
 

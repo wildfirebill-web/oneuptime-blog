@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, VM Scale Sets, Health Probes, Application Monitoring, Auto Repair, Reliability
+Tags: Azure, VM Scale Sets, Health Probe, Application Monitoring, Auto Repair, Reliability
 
 Description: Learn how to configure application health probes on Azure VM Scale Sets for automatic instance repair and rolling upgrade safety.
 

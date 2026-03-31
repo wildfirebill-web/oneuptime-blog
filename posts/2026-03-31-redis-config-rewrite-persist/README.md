@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CONFIG, REWRITE, Configuration, Operations
+Tags: Redis, CONFIG, REWRITE, Configuration, Operation
 
 Description: Learn how to use CONFIG REWRITE to write the current in-memory Redis configuration back to the redis.conf file, persisting runtime changes across restarts.
 

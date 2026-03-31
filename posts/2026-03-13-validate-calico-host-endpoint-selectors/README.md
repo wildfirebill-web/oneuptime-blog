@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Host Endpoint, Selectors, Validation
+Tags: Calico, Kubernetes, Networking, Host Endpoint, Selector, Validation
 
 Description: How to validate that Calico host endpoint selectors are correctly matching the intended nodes and that policies are being applied to the right HostEndpoint resources.
 

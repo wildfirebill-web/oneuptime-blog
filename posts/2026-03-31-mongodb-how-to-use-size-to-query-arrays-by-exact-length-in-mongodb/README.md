@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Array Queries, $size, Query Operators, NoSQL
+Tags: MongoDB, Array Queries, $size, Query Operator, NoSQL
 
 Description: Learn how to use MongoDB's $size operator to filter documents based on the exact number of elements in an array field.
 

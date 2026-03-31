@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Systemd, Services, Linux
+Tags: Podman, Container, DevOps, Systemd, Service, Linux
 
 Description: Learn how to run Podman containers as systemd services using both Quadlet and generated unit files for reliable container management.
 

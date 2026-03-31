@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Namespaces, Security
+Tags: Calico, Kubernetes, Network Policy, Namespace, Security
 
 Description: A step-by-step guide to configuring Calico namespace-based network policies to isolate workloads by Kubernetes namespace.
 

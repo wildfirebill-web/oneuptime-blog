@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Kustomize, Patches
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Kustomize, Patches
 
 Description: Learn how to encrypt Kustomize patches containing sensitive data using SOPS for secure GitOps deployments with Flux.
 

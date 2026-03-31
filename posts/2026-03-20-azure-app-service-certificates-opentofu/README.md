@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, App Service, Certificates, TLS, Custom Domain, Infrastructure as Code
+Tags: OpenTofu, Azure, App Service, Certificate, TLS, Custom Domain, Infrastructure as Code
 
 Description: Learn how to create and bind TLS certificates to Azure App Service custom domains using OpenTofu, including managed certificates, Key Vault certificates, and custom domain binding configuration.
 

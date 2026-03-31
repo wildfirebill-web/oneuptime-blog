@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Conditional Logic, Workflow Automation, DevOps
+Tags: GitHub Action, CI/CD, Conditional Logic, Workflow Automation, DevOps
 
 Description: Learn how to use conditional steps in GitHub Actions to control workflow execution based on branch, event type, file changes, previous step results, and custom expressions.
 

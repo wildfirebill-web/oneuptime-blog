@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Kubernetes, Multi-Tenancy, Namespaces, Security
+Tags: Talos Linux, Kubernetes, Multi-Tenancy, Namespace, Security
 
 Description: A practical guide to implementing multi-tenant namespace isolation on Talos Linux clusters for safely sharing infrastructure across teams and organizations.
 

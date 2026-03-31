@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Kafka, Event Streaming, Bindings, Microservices
+Tags: Dapr, Kafka, Event Streaming, Binding, Microservice
 
 Description: Learn how to use the Dapr Kafka binding to produce and consume messages from Apache Kafka topics without managing Kafka client libraries directly.
 

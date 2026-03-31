@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Permissions, Troubleshooting
+Tags: Podman, Container, DevOps, Volumes, Permission, Troubleshooting
 
 Description: Learn how to diagnose and fix volume permission denied errors in Podman containers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, GCS, GCP
+Tags: OpenTofu, Terraform, IaC, Module, GCS, GCP
 
 Description: Learn how to use Google Cloud Storage as a module source in OpenTofu for distributing modules within GCP environments.
 

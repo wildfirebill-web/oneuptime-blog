@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Table Functions, Data Ingestion, Performance
+Tags: ClickHouse, Table Function, Data Ingestion, Performance
 
 Description: Use ClickHouse's input() table function to transform and filter data during INSERT without creating intermediate staging tables.
 

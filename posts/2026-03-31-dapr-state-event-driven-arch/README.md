@@ -1,6 +1,6 @@
 # How to Use Dapr State Management in Event-Driven Architectures
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Event-Driven Architecture, Pub/Sub, Microservice
 

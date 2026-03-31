@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Clustering, Network Partition, High Availability, DevOps, Distributed Systems, Split Brain
+Tags: RabbitMQ, Clustering, Network Partition, High Availability, DevOps, Distributed System, Split Brain
 
 Description: Learn how to detect, recover from, and prevent network partition issues in RabbitMQ clusters to maintain message queue reliability.
 

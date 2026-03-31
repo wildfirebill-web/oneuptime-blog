@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SELECT, FORMAT, Output Format
+Tags: ClickHouse, SQL, SELECT, Format, Output Format
 
 Description: Learn how to use the FORMAT clause in ClickHouse to control query output as JSON, CSV, TabSeparated, Pretty, and other formats for pipelines and APIs.
 

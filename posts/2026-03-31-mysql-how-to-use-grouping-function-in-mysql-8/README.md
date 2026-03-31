@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, GROUPING, ROLLUP, CUBE, Aggregation, Analytics
+Tags: MySQL, Grouping, ROLLUP, CUBE, Aggregation, Analytics
 
 Description: Learn how to use the GROUPING() function in MySQL 8 to distinguish super-aggregate rows from NULL values in ROLLUP and CUBE queries.
 

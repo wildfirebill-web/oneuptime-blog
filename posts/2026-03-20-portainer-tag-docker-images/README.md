@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Tagging, DevOps
+Tags: Portainer, Docker, Image, Tagging, DevOps
 
 Description: Learn how to add and manage tags for Docker images in Portainer to organize versions and prepare images for registry deployment.
 

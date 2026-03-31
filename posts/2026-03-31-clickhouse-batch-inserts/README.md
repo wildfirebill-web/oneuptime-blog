@@ -1,6 +1,6 @@
 # How to Batch Inserts Efficiently in ClickHouse
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Performance, Database, Analytics, Infrastructure
 

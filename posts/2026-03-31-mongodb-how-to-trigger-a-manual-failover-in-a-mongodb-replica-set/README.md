@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, Failover, Operations, High Availability
+Tags: MongoDB, Replica Set, Failover, Operation, High Availability
 
 Description: Trigger a controlled MongoDB replica set primary stepdown to perform maintenance or test failover behavior without data loss.
 

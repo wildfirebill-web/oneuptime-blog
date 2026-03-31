@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Azure, Serverless, Functions, DevOps
+Tags: Azure, Serverless, Function, DevOps
 
 Description: Learn how to build stateful, long-running workflows in Azure using Durable Functions with practical orchestration patterns and real-world examples.
 

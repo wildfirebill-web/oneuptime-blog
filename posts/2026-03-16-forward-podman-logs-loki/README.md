@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Loki, Grafana
+Tags: Podman, Container, DevOps, Logging, Loki, Grafana
 
 Description: Learn how to forward Podman container logs to Grafana Loki for cost-effective centralized logging, using Promtail, Fluent Bit, and direct API approaches.
 

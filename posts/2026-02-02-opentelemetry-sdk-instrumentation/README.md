@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Observability, Instrumentation, Tracing, Metrics
+Tags: OpenTelemetry, Observability, Instrumentation, Tracing, Metric
 
 Description: Implement custom OpenTelemetry instrumentation using the SDK for comprehensive application observability.
 

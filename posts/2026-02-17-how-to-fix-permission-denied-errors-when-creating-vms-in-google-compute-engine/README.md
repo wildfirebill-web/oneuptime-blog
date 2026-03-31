@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Compute Engine, IAM, Permissions, Troubleshooting
+Tags: GCP, Compute Engine, IAM, Permission, Troubleshooting
 
 Description: Learn how to diagnose and fix permission denied errors when creating virtual machines in Google Compute Engine, including IAM roles, service accounts, and org policies.
 

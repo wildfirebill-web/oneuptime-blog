@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Contains, Json, Json Functions, Sql
+Tags: MySQL, Json Contains, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_CONTAINS() function to check if a JSON document contains a specific value or sub-document at an optional path.
 

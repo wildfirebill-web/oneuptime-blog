@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Spanner, Change Streams, CDC, Real-Time Data
+Tags: GCP, Cloud Spanner, Change Stream, CDC, Real-Time Data
 
 Description: Step-by-step guide to setting up Cloud Spanner change streams to capture and process real-time data changes for event-driven architectures.
 

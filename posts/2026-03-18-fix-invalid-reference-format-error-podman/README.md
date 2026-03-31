@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Docker, Troubleshooting, DevOps
+Tags: Podman, Container, Docker, Troubleshooting, DevOps
 
 Description: Learn how to diagnose and fix 'invalid reference format' errors in Podman caused by malformed image names, variable expansion issues, whitespace, and registry path problems.
 

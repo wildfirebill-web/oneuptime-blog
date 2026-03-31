@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Messaging, Point-To-Point, Queue, Microservice
+Tags: Dapr, Messaging, Point-to-Point, Queue, Microservice
 
 Description: Learn how to implement point-to-point messaging with Dapr so each published message is consumed by exactly one subscriber instance using competing consumers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: nftables, Linux, Firewall, Security, Diagnostics
+Tags: nftables, Linux, Firewall, Security, Diagnostic
 
 Description: List nftables rules at different scopes - entire ruleset, specific tables, specific chains, and individual rules with handles for identification and management.
 

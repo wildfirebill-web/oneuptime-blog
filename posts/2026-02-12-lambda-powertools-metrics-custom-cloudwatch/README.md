@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Lambda, CloudWatch, Metrics, Powertools
+Tags: AWS, Lambda, CloudWatch, Metric, Powertools
 
 Description: Learn how to create custom CloudWatch metrics from Lambda functions using Powertools Metrics with EMF, dimensions, high-resolution metrics, and cost-effective practices.
 

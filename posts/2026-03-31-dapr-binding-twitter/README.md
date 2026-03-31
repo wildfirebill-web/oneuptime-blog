@@ -1,8 +1,8 @@
 # How to Configure Dapr Binding with Twitter
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Binding, Twitter, Social media, Input
+Tags: Dapr, Binding, Twitter, Social Media, Input
 
 Description: Configure the Dapr Twitter input binding to stream real-time tweets matching search queries into your microservices for sentiment analysis, monitoring, and event-driven workflows.
 

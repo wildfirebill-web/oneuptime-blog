@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Istio, GKE, Circuit Breaker, Microservices, Service Mesh, Resilience
+Tags: GCP, Istio, GKE, Circuit Breaker, Microservice, Service Mesh, Resilience
 
 Description: Learn how to implement the circuit breaker pattern in your GCP microservices using Istio service mesh on GKE to prevent cascading failures.
 

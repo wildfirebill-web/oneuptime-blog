@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Backup, Restore
+Tags: Podman, Container, DevOps, Volumes, Backup, Restore
 
 Description: Learn how to restore Podman volumes from tar backups using podman volume import and temporary containers.
 

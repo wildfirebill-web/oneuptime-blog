@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, IoT, CloudWatch, Monitoring, Alerts, Device Management
+Tags: AWS, IoT, CloudWatch, Monitoring, Alert, Device Management
 
 Description: Learn how to monitor your IoT device fleet using Amazon CloudWatch with custom metrics, dashboards, alarms, and log insights for full observability.
 

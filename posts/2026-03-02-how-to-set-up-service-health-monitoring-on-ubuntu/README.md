@@ -1,6 +1,6 @@
 # How to Set Up Service Health Monitoring on Ubuntu
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Ubuntu, Monitoring, Systemd, Health Check, DevOps
 

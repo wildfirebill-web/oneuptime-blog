@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Calendar, Events, Schema Design
+Tags: MySQL, Calendar, Event, Schema Design
 
 Description: Learn how to model a calendar application schema in MySQL with events, recurring patterns, attendees, and time zone handling.
 

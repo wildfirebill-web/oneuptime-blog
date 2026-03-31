@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Coalesce, HCL, Fallback Values, Infrastructure as Code
+Tags: OpenTofu, COALESCE, HCL, Fallback Values, Infrastructure as Code
 
 Description: Learn how to use OpenTofu's coalesce and coalescelist functions to implement clean fallback value chains in your configurations.
 

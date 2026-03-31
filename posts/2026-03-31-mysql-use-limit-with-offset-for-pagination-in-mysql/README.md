@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Pagination, Limit, Offset, Sql
+Tags: MySQL, Pagination, Limit, Offset, SQL
 
 Description: Learn how to implement page-based pagination in MySQL using LIMIT and OFFSET to efficiently retrieve subsets of rows from large datasets.
 

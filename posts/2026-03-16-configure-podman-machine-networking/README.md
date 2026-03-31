@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps, Networking
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps, Networking
 
 Description: Learn how to configure networking for Podman machines including port forwarding, custom networks, DNS settings, and host-to-container communication.
 

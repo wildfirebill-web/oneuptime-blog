@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, GPU, NVIDIA, Machine Learning
+Tags: Podman, Container, DevOps, podman-compose, GPU, NVIDIA, Machine Learning
 
 Description: Learn how to configure GPU passthrough in podman-compose for machine learning, AI workloads, and GPU-accelerated applications.
 

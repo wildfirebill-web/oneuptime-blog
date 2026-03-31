@@ -1,8 +1,8 @@
 # How to Publish a Message Using the Dapr Pub/Sub API
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Messaging, Event-driven, Microservice
+Tags: Dapr, Pub/Sub, Messaging, Event-Driven, Microservice
 
 Description: Publish messages to a Dapr pub/sub topic using the HTTP API, gRPC, and language SDKs with real CloudEvent payloads and component configuration examples.
 

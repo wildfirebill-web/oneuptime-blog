@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Analytics, Metrics, Experimentation
+Tags: Feature Flag, Analytics, Metric, Experimentation
 
 Description: A practical guide to building analytics for feature flags including exposure tracking, conversion metrics, and statistical significance calculations.
 

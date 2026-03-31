@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Storage, Persistent Volumes
+Tags: Rancher, Kubernetes, Storage, Persistent Volume
 
 Description: A practical guide to creating and managing Persistent Volumes and Persistent Volume Claims in Rancher-managed Kubernetes clusters.
 

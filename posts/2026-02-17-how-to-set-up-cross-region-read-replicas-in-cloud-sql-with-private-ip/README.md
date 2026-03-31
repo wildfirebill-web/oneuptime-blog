@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud SQL, Cross-Region, Read Replicas, Private IP, Disaster Recovery
+Tags: GCP, Cloud SQL, Cross-Region, Read Replica, Private IP, Disaster Recovery
 
 Description: Learn how to create cross-region read replicas in Cloud SQL with private IP connectivity for disaster recovery and geographically distributed read performance.
 

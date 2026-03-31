@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, OOMKilled, Memory, Debugging, Resource Limits
+Tags: Kubernetes, OOMKilled, Memory, Debugging, Resource Limit
 
 Description: Learn how to diagnose and fix OOMKilled errors in Kubernetes including memory profiling and proper limit configuration.
 

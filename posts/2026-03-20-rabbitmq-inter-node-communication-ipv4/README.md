@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, IPv4, Inter-Node, Erlang Distribution, Clustering, Networks
+Tags: RabbitMQ, IPv4, Inter-Node, Erlang Distribution, Clustering, Network
 
 Description: Configure RabbitMQ inter-node communication ports on IPv4, including Erlang distribution (25672) and EPMD (4369), for reliable cluster operation.
 

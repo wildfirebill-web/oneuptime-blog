@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, GitHub Actions, CI/CD, DevOps
+Tags: Ansible, GitHub Action, CI/CD, DevOps
 
 Description: Learn how to run Ansible playbooks in GitHub Actions workflows for automated infrastructure deployments and configuration management.
 

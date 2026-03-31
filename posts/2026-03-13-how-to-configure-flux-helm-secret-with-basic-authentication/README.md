@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, Helm, HelmRepository, Basic Auth
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, Helm, HelmRepository, Basic Auth
 
 Description: Step-by-step guide to configuring Flux CD to authenticate with private Helm chart repositories using basic authentication.
 

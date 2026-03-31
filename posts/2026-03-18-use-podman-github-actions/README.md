@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, GitHub Actions, CI/CD, Automation
+Tags: Podman, Container, DevOps, GitHub Action, CI/CD, Automation
 
 Description: Learn how to configure and use Podman as your container runtime in GitHub Actions workflows for building, testing, and deploying container images.
 

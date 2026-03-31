@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Farm, Troubleshooting, Multi-Architecture
+Tags: Podman, Container, DevOps, Podman Farm, Troubleshooting, Multi-Architecture
 
 Description: Learn how to diagnose and fix common Podman farm build failures, from SSH connection issues to architecture-specific build errors.
 

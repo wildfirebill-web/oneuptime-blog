@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Bitbucket Pipelines, CI/CD, GitOps, Kubernetes, Container Images, Atlassian
+Tags: Flux CD, Bitbucket Pipelines, CI/CD, GitOps, Kubernetes, Container Image, Atlassian
 
 Description: A comprehensive guide to integrating Bitbucket Pipelines with Flux CD for automated container builds and GitOps deployments to Kubernetes.
 

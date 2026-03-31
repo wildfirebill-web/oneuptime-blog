@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Secrets, Configuration, AWS, Infrastructure as Code
+Tags: OpenTofu, Secret, Configuration, AWS, Infrastructure as Code
 
 Description: Learn how to reference secrets from AWS Secrets Manager and SSM Parameter Store in OpenTofu configurations without storing sensitive values in state.
 

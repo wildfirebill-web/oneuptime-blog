@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CI/CD, Testing, Automation
+Tags: Podman, Container, DevOps, CI/CD, Testing, Automation
 
 Description: Learn how to run unit tests, integration tests, and test suites inside Podman containers as part of your CI/CD pipeline.
 

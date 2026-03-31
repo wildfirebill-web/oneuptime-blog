@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, TLS, Security, Encryption, Operations
+Tags: MongoDB, TLS, Security, Encryption, Operation
 
 Description: Enable TLS encryption for all MongoDB client and intra-cluster connections to protect data in transit from interception.
 
@@ -89,7 +89,7 @@ const client = new MongoClient("mongodb://mongo.example.com:27017", {
 
 ## Connection String with TLS Parameters
 
-```
+```text
 mongodb://user:password@mongo.example.com:27017/mydb?tls=true&tlsCAFile=/path/to/ca.crt
 ```
 

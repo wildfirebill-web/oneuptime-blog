@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Configuration
+Tags: Podman, Container, DevOps, Logging, Configuration
 
 Description: Learn how to configure and switch between different log drivers in Podman, including k8s-file, journald, json-file, and passthrough, to control how container logs are stored and accessed.
 

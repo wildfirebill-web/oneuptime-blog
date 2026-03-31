@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Watchtower, Notifications, Slack, Email
+Tags: Portainer, Watchtower, Notification, Slack, Email
 
 Description: Learn how to configure Watchtower to send notifications when containers are updated, including Slack, email, Microsoft Teams, and generic webhook integrations for Portainer-managed environments.
 

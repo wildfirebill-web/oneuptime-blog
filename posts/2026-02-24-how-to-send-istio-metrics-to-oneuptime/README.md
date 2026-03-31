@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, OneUptime, Metrics, Monitoring, Prometheus, OpenTelemetry
+Tags: Istio, OneUptime, Metric, Monitoring, Prometheus, OpenTelemetry
 
 Description: Step-by-step guide to exporting Istio service mesh metrics to OneUptime for centralized monitoring and alerting.
 

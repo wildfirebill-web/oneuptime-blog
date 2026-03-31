@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Django, Caching, Django-Redis, Python
+Tags: Redis, Django, Caching, django-redis, Python
 
 Description: Configure django-redis as the cache backend for your Django project to replace the default in-memory cache with a fast, persistent Redis store.
 

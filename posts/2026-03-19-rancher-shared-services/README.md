@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Projects, Namespaces, Multi-Tenancy, Network Isolation
+Tags: Rancher, Kubernetes, Project, Namespace, Multi-Tenancy, Network Isolation
 
 Description: Learn how to create and configure a shared services project in Rancher for hosting cross-cutting infrastructure like monitoring, logging, and ingress.
 

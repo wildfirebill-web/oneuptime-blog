@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Tier, Policy, Operations
+Tags: Calico, Kubernetes, Networking, Tier, Policy, Operation
 
 Description: Practical usage patterns for Calico Tier resources, including multi-team policy governance models, security baseline enforcement, compliance policy tiers, and combining tiers with RBAC for policy...
 

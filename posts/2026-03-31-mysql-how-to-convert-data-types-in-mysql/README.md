@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Data Types, Type Conversion, CAST, CONVERT
+Tags: MySQL, Data Type, Type Conversion, CAST, CONVERT
 
 Description: Learn how to convert between data types in MySQL using CAST, CONVERT, and implicit coercion, with examples for numbers, strings, dates, and JSON.
 

@@ -1,4 +1,4 @@
-# How to Configure Automatic vs Explicit Encryption in MongoDB Queryable Encryption
+# How to Configure Automatic vs Explicit MongoDB Queryable Encryption
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

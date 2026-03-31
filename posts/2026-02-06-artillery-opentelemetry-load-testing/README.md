@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Artillery, Load Testing, Distributed Systems, Trace Correlation
+Tags: OpenTelemetry, Artillery, Load Testing, Distributed System, Trace Correlation
 
 Description: Set up Artillery load tests that propagate OpenTelemetry trace context, letting you correlate load test traffic with backend traces.
 

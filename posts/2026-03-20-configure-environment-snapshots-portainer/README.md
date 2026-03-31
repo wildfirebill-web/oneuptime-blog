@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Snapshot, Configuration, Performance, Environments
+Tags: Portainer, Snapshot, Configuration, Performance, Environment
 
 Description: Configure the snapshot frequency and behavior for individual Portainer environments to balance UI freshness with system performance.
 

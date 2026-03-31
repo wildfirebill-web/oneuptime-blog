@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Alerting, Monitoring, Observability, Alerts, Notification Policies
+Tags: Grafana, Alerting, Monitoring, Observability, Alert, Notification Policies
 
 Description: Learn how to create and manage Grafana alerting rules, including queries, conditions, notification policies, and contact points for effective incident response.
 

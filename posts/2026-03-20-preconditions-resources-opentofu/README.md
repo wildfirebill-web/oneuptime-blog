@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Preconditions, Custom Conditions, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, Preconditions, Custom Conditions, Infrastructure as Code, DevOps
 
 Description: A guide to adding preconditions to resources in OpenTofu to validate assumptions before resource creation or modification.
 

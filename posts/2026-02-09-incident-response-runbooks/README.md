@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Incident Response, Operations, Documentation
+Tags: Kubernetes, Incident Response, Operation, Documentation
 
 Description: Build comprehensive incident response runbooks for common Kubernetes production failures, enabling faster resolution and reducing the stress of emergency situations through clear.
 

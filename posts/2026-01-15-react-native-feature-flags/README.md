@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, Feature Flags, A/B Testing, Mobile Development, Release Management
+Tags: React Native, Feature Flag, A/B Testing, Mobile Development, Release Management
 
 Description: Learn how to implement feature flags in React Native for controlled rollouts, A/B testing, and safe deployments.
 

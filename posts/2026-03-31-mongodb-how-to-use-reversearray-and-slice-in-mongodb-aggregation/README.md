@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Arrays, $reverseArray, $slice
+Tags: MongoDB, Aggregation, Array, $reverseArray, $slice
 
 Description: Learn how to reverse arrays with $reverseArray and extract subarrays with $slice in MongoDB aggregation pipelines with practical examples.
 

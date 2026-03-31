@@ -1,8 +1,8 @@
 # How to Use Dapr State Management for Shopping Cart Implementations
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, State Management, Shopping Cart, E-commerce, Microservice
+Tags: Dapr, State Management, Shopping Cart, E-Commerce, Microservice
 
 Description: Learn how to build a shopping cart service using Dapr State Management with optimistic concurrency, TTL for abandoned carts, and transactional checkout operations.
 

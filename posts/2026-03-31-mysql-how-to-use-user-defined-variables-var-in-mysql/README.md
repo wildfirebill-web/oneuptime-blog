@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Variables, User-Defined Variables, SQL
+Tags: MySQL, Variable, User-Defined Variables, SQL
 
 Description: Learn how to use user-defined variables (@var) in MySQL to store and reuse values within a session with practical examples.
 

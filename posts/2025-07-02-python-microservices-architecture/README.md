@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Microservices, FastAPI, Architecture, Docker, Kubernetes
+Tags: Python, Microservice, FastAPI, Architecture, Docker, Kubernetes
 
 Description: A comprehensive guide to building production-ready microservices architecture in Python.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Observability, Monitoring
+Tags: OpenTelemetry, Metric, Observability, Monitoring
 
 Description: A practical guide to implementing custom metric readers in OpenTelemetry, covering PeriodicExportingMetricReader, custom readers, and configuration options for production systems.
 

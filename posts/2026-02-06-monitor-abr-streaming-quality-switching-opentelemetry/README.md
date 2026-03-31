@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, ABR Streaming, Video Quality, Metrics
+Tags: OpenTelemetry, ABR Streaming, Video Quality, Metric
 
 Description: Monitor adaptive bitrate streaming quality switches and viewer experience degradation with OpenTelemetry metrics.
 

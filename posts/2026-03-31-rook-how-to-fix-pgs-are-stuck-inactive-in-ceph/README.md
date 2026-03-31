@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Troubleshooting, Placement Groups, Storage
+Tags: Rook, Ceph, Troubleshooting, Placement Group, Storage
 
 Description: Diagnose and resolve stuck inactive placement groups in Ceph by identifying root causes like missing OSDs, peering failures, and CRUSH map issues.
 

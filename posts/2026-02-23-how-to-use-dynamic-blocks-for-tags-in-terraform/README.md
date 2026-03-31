@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Dynamic Blocks, Tags, AWS, Infrastructure as Code, Cost Management
+Tags: Terraform, Dynamic Blocks, Tag, AWS, Infrastructure as Code, Cost Management
 
 Description: Learn how to use Terraform dynamic blocks to manage resource tags programmatically across AWS Auto Scaling Groups, ECS, and other services.
 

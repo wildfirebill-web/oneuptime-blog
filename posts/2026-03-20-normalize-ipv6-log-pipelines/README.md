@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Log Processing, Normalization, Python, Data Pipelines
+Tags: IPv6, Log Processing, Normalization, Python, Data Pipeline
 
 Description: Normalize IPv6 address representations in log processing pipelines to ensure consistent storage and querying, covering compressed form, IPv4-mapped addresses, and zone IDs.
 

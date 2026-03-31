@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TimescaleDB, Time-Series, PostgreSQL, Database, Monitoring, Metrics, Tutorial
+Tags: TimescaleDB, Time-Series, PostgreSQL, Database, Monitoring, Metric, Tutorial
 
 Description: A practical guide to getting started with TimescaleDB for time-series data.
 

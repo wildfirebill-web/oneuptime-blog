@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $sort, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $sort, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $sort aggregation stage to order documents in a pipeline by one or more fields, in ascending or descending order.
 

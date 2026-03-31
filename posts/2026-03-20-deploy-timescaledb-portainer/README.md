@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, TimescaleDB, PostgreSQL, Time Series, Database, Metrics
+Tags: Portainer, TimescaleDB, PostgreSQL, Time Series, Database, Metric
 
 Description: Learn how to deploy TimescaleDB via Portainer for time-series workloads using PostgreSQL-compatible hypertables and automatic data compression.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Data Anonymization, Privacy, CLI, GDPR, Developer Tools
+Tags: ClickHouse, Data Anonymization, Privacy, CLI, GDPR, Developer Tool
 
 Description: Use clickhouse-obfuscator to anonymize ClickHouse table dumps by replacing sensitive values with statistically similar but fake data, safe for sharing with support or testing.
 

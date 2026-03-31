@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Images, Lifecycle, Policy, Registry, DevOps, Governance, Automation
+Tags: Docker, Image, Lifecycle, Policy, Registry, DevOps, Governance, Automation
 
 Description: Implement lifecycle policies for Docker images to automate retention, cleanup, and promotion across environments effectively.
 

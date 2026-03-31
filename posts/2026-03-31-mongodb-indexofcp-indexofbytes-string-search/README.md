@@ -1,4 +1,4 @@
-# How to Use $indexOfCP and $indexOfBytes for String Searching in MongoDB Aggregation
+# How to Use $indexOfCP and $indexOfBytes in MongoDB Aggregation
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

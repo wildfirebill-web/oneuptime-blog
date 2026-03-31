@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, VPC, AWS, Modules, Networking
+Tags: OpenTofu, Terraform, VPC, AWS, Module, Networking
 
 Description: Learn how to design a reusable, production-ready VPC module for OpenTofu that supports multi-AZ deployments, public and private subnets, NAT gateways, and flexible configuration.
 

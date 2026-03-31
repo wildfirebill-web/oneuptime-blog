@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OCI Artifacts, Inspection
+Tags: Podman, Container, DevOps, OCI Artifacts, Inspection
 
 Description: Learn how to inspect OCI artifacts in Podman to view metadata, media types, digests, and layer details.
 

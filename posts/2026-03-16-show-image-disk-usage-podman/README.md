@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Storage
+Tags: Podman, Container, DevOps, Container Image, Storage
 
 Description: Learn how to check container image disk usage with Podman, including system-wide storage reports, per-image sizes, and identifying space-consuming images.
 

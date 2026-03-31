@@ -1,6 +1,6 @@
 # How to Uninstall MySQL Completely on Ubuntu
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Uninstall, Ubuntu, Linux, Administration
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Sysctl, Kernel, Networking
+Tags: Podman, Container, DevOps, Sysctl, Kernel, Networking
 
 Description: Learn how to tune kernel parameters inside Podman containers using sysctl options for network performance, security, and application-specific requirements.
 

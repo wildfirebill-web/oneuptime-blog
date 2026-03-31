@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Security, Credentials, Secrets Management, Best Practice
+Tags: Terraform, Security, Credential, Secrets Management, Best Practice
 
 Description: Practical techniques to keep credentials out of your Terraform code, including secrets managers, dynamic credentials, and data sources.
 

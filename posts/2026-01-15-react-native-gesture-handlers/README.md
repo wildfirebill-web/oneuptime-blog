@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, Gesture Handler, Touch, Animations, Mobile Development, UI/UX
+Tags: React Native, Gesture Handler, TOUCH, Animations, Mobile Development, UI/UX
 
 Description: Learn how to build custom gesture handlers in React Native using react-native-gesture-handler for interactive user experiences.
 

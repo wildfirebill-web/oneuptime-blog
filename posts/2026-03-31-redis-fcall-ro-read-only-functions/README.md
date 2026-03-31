@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, FCALL_RO, Function, Lua, Read-only
+Tags: Redis, FCALL_RO, Function, Lua, Read-Only
 
 Description: Learn how to use FCALL_RO in Redis to call registered library functions in read-only mode, enabling safe execution on replicas and read-only connections.
 

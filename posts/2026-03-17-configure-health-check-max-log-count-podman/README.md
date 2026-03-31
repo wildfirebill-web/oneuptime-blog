@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Check, Logging, Configuration
+Tags: Podman, Container, DevOps, Health Check, Logging, Configuration
 
 Description: Learn how to configure the maximum number of health check log entries stored by Podman to manage disk usage.
 

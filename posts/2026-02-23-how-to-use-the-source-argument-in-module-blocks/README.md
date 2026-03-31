@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Configuration, Infrastructure as Code, DevOps
+Tags: Terraform, Module, Configuration, Infrastructure as Code, DevOps
 
 Description: A comprehensive guide to the Terraform module source argument covering all supported source types including local paths, Git, registries, S3, GCS, and HTTP URLs.
 

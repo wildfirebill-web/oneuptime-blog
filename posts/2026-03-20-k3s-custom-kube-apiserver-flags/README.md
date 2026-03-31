@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kube-apiserver, Configuration, Kubernetes, Security, SUSE Rancher
+Tags: k3s, Kube-apiserver, Configuration, Kubernetes, Security, SUSE Rancher
 
 Description: Learn how to pass custom kube-apiserver flags to K3s for advanced configuration including feature gates, admission plugins, audit logging, and API server tuning.
 

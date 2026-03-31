@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: API Gateway, Routing, Microservices, Traffic Management
+Tags: API Gateway, Routing, Microservice, Traffic Management
 
 Description: Learn detailed request routing strategies for API gateways.
 

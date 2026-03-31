@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Taints, Tolerations
+Tags: Kubernetes, Taints, Toleration
 
 Description: Master taints and tolerations in Kubernetes to create dedicated node pools for specific workloads, ensuring resource isolation and preventing incompatible pods from being scheduled together.
 

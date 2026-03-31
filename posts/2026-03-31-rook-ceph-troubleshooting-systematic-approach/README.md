@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Troubleshooting, Debugging, Operations
+Tags: Ceph, Rook, Troubleshooting, Debugging, Operation
 
 Description: Apply a structured, step-by-step troubleshooting methodology to Ceph clusters to isolate root causes faster and avoid chasing symptoms.
 

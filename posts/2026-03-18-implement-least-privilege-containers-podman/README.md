@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Security, Least Privilege, Rootless, Containers
+Tags: Podman, Security, Least Privilege, Rootless, Container
 
 Description: Learn how to implement the principle of least privilege in Podman containers by restricting capabilities, using rootless mode, read-only filesystems, and security profiles.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SNS, SMS, Notifications
+Tags: AWS, SNS, SMS, Notification
 
 Description: Learn how to send SMS messages with Amazon SNS, including direct publishing, topic-based broadcasting, spend limits, sender IDs, and opt-out management.
 

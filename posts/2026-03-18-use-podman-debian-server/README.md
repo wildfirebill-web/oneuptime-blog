@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Debian, Containers, Server, DevOps
+Tags: Podman, Debian, Container, Server, DevOps
 
 Description: Learn how to install and configure Podman on Debian Server for running daemonless, rootless containers in stable server environments.
 

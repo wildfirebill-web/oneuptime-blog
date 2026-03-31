@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, DNS, resolv.conf, CoreDNS
+Tags: k3s, Kubernetes, Rancher, DNS, resolv.conf, CoreDNS
 
 Description: Learn how to configure K3s to use a custom resolv.conf for pod DNS resolution, including upstream DNS servers and search domains.
 

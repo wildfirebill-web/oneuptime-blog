@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, TCP, Message Framing, Sockets, IPv4, Protocol Design
+Tags: Python, TCP, Message Framing, Socket, IPv4, Protocol Design
 
 Description: Learn how to implement message framing techniques for Python TCP sockets to reliably delimit messages over IPv4 byte-stream connections.
 

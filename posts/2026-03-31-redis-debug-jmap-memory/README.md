@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, DEBUG, Memory, Analysis, Internals
+Tags: Redis, Debug, Memory, Analysis, Internal
 
 Description: Learn how to use DEBUG JMAP in Redis to dump heap memory usage information for analysis, and understand its role alongside other memory inspection tools like MEMORY USAGE and OBJECT ENCODING.
 

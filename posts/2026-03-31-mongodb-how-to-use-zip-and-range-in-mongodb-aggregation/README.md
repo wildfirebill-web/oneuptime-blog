@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Arrays, $zip, $range
+Tags: MongoDB, Aggregation, Array, $zip, $range
 
 Description: Learn how to use $zip to combine arrays element-by-element and $range to generate numeric sequences in MongoDB aggregation pipelines.
 

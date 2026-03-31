@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, CONVERT, Type Conversion, Character Sets, SQL Functions
+Tags: MySQL, CONVERT, Type Conversion, Character Set, SQL Functions
 
 Description: Learn how to use the CONVERT() function in MySQL for type conversion and character set conversion with practical examples.
 

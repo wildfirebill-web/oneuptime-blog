@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Azure, Availability Zones, High Availability, Kubernetes
+Tags: Talos Linux, Azure, Availability Zone, High Availability, Kubernetes
 
 Description: Guide to deploying a zone-redundant Talos Linux Kubernetes cluster across Azure Availability Zones for high availability.
 

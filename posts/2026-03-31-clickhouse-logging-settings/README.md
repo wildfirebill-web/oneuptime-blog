@@ -1,6 +1,6 @@
 # How to Configure ClickHouse Logging Settings
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, Logging, Observability, Server
 

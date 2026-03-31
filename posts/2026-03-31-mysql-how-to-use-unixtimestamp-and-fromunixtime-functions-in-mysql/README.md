@@ -1,8 +1,8 @@
-# How to Use UNIX_TIMESTAMP() and FROM_UNIXTIME() in MySQL
+# How to Use UNIX_TIMESTAMP() and FROM_UNIXTIME() Functions in MySQL
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Unix Timestamp, From Unixtime, Epoch Time, Date Functions
+Tags: MySQL, Unix Timestamp, From Unixtime, Epoch Time, Date Function
 
 Description: Learn how to convert between MySQL datetime values and Unix epoch timestamps using UNIX_TIMESTAMP() and FROM_UNIXTIME() with practical examples.
 

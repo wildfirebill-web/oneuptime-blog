@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Admission Webhooks, Kubernetes, Security, API Server
+Tags: Talos Linux, Admission Webhook, Kubernetes, Security, API Server
 
 Description: Learn how to build and deploy custom validating and mutating admission webhooks on a Talos Linux Kubernetes cluster.
 

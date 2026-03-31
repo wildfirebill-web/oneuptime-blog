@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Prometheus, Metrics, Data Visualization, PromQL
+Tags: Grafana, Prometheus, Metric, Data Visualization, PromQL
 
 Description: Learn how to divide two time series in Grafana using PromQL arithmetic operators and transformations. This guide covers ratio calculations, percentage metrics, and handling edge cases.
 

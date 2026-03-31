@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Pipeline, Execution Model, Processor, Internals
+Tags: ClickHouse, Pipeline, Execution Model, Processor, Internal
 
 Description: Learn how ClickHouse's push-based pipeline model connects processors with queues, enables parallel execution, and flows data as columnar blocks through a query plan.
 

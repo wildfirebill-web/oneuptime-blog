@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Container Isolation, Security, Docker, Network Isolation, Namespaces
+Tags: Portainer, Container Isolation, Security, Docker, Network Isolation, Namespace
 
 Description: Learn how to configure container isolation in Portainer using network segmentation, user namespaces, PID isolation, and IPC isolation to prevent containers from affecting each other.
 

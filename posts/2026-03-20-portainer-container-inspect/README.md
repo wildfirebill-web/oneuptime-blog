@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Debugging, DevOps
+Tags: Portainer, Docker, Container, Debugging, DevOps
 
 Description: Learn how to view detailed container information and raw inspect JSON in Portainer for debugging, auditing, and understanding container configuration.
 

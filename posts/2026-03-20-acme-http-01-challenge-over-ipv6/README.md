@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ACME, HTTP-01, IPv6, Let's Encrypt, TLS, Certificates, Nginx
+Tags: ACME, HTTP-01, IPv6, Let's Encrypt, TLS, Certificate, Nginx
 
 Description: Learn how to set up and validate ACME HTTP-01 domain ownership challenges over IPv6, including web server configuration, firewall rules, and troubleshooting validation failures.
 

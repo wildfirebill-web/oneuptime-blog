@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Secrets, Security
+Tags: Podman, Container, DevOps, podman-compose, Secret, Security
 
 Description: Learn how to use the Compose secrets directive with Podman to securely inject sensitive data into containers.
 

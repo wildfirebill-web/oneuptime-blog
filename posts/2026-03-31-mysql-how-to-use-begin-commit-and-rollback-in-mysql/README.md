@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Transactions, Innodb, Data Integrity
+Tags: MySQL, Transaction, InnoDB, Data Integrity
 
 Description: Learn how to use BEGIN, COMMIT, and ROLLBACK in MySQL to manage transactions, ensure data consistency, and handle errors atomically.
 

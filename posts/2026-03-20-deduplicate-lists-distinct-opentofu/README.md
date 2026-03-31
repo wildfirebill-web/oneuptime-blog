@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, Functions, Lists, Data Transformation
+Tags: OpenTofu, Terraform, HCL, Function, List, Data Transformation
 
 Description: Learn how to use the distinct function in OpenTofu to remove duplicate values from lists, enabling clean data processing in your infrastructure configurations.
 

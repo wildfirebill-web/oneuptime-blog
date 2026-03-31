@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, IoT, Alerting, Cloud Functions, Cloud Monitoring
+Tags: GCP, IoT, Alerting, Cloud Function, Cloud Monitoring
 
 Description: Build a real-time IoT alerting system using Pub/Sub for message ingestion, Cloud Functions for processing, and Cloud Monitoring for alerting.
 

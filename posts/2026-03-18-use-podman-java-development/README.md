@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Java, Containers, Spring Boot, Maven, Development
+Tags: Podman, Java, Container, Spring Boot, Maven, Development
 
 Description: A practical guide to using Podman for Java development, covering JDK setup, Maven and Gradle builds, Spring Boot workflows, and debugging.
 

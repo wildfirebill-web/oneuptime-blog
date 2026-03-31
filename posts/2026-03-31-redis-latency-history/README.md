@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Latency, Monitoring, Performance, Time series
+Tags: Redis, Latency, Monitoring, Performance, Time Series
 
 Description: Learn how to use LATENCY HISTORY in Redis to retrieve the full time-series latency log for a specific event, enabling trend analysis and regression detection.
 

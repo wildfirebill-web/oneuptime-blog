@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, X11, GUI, Containers, Linux Desktop
+Tags: Podman, X11, GUI, Container, Linux Desktop
 
 Description: A detailed guide to running X11 graphical applications inside Podman containers, covering socket sharing, authentication, security considerations, and practical application examples.
 

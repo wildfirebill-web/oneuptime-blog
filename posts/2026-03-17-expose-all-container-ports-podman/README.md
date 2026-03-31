@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Ports, Publishing
+Tags: Podman, Container, DevOps, Networking, Port, Publishing
 
 Description: Learn how to expose all container ports with Podman using the -P flag and EXPOSE directives.
 

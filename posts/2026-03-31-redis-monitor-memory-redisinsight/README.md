@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Monitoring, Performance, Operations, Memory
+Tags: Redis, Monitoring, Performance, Operation, Memory
 
 Description: Learn how to use RedisInsight to monitor Redis memory usage, analyze key distribution, find memory hogs, and optimize memory consumption with built-in profiling tools.
 

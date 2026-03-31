@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Watchtower, Notifications, Slack, Email
+Tags: Portainer, Watchtower, Notification, Slack, Email
 
 Description: Learn how to configure Watchtower to send notifications when containers are updated, failed, or skipped, using Slack, email, and other notification services with your Portainer deployment.
 

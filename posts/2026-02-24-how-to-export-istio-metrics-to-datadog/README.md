@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Datadog, Metrics, Monitoring, Observability, Prometheus
+Tags: Istio, Datadog, Metric, Monitoring, Observability, Prometheus
 
 Description: A practical guide to exporting Istio service mesh metrics to Datadog for centralized monitoring, alerting, and dashboarding.
 

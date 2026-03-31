@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Scripting, Replica Set, Monitoring, Operations
+Tags: MongoDB, Scripting, Replica Set, Monitoring, Operation
 
 Description: Learn how to write a script to monitor MongoDB replica set status by checking member health, replication lag, and oplog window to detect failures and alert your team.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Caddy, Web Server, Reverse Proxy, HTTPS
+Tags: Podman, Container, DevOps, Caddy, Web Server, Reverse Proxy, HTTPS
 
 Description: Learn how to run Caddy web server in a Podman container with automatic HTTPS, reverse proxying, and a simple Caddyfile configuration.
 

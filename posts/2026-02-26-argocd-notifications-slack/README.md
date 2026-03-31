@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Slack, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Slack, Notification
 
 Description: Learn how to configure ArgoCD to send deployment notifications to Slack channels with rich formatting, interactive buttons, and customizable triggers.
 

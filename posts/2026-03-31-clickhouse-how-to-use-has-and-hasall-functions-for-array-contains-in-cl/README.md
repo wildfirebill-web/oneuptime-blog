@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Arrays, has, hasAll, Array Contains, Sql
+Tags: ClickHouse, Array, High Availability, hasAll, Array Contains, SQL
 
 Description: Learn how to use has() and hasAll() in ClickHouse to check if arrays contain specific elements or sets of elements for array filtering.
 

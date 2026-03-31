@@ -1,6 +1,6 @@
 # How to Read ClickHouse Query Execution Plans
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Performance, SQL, Analytics, Database
 

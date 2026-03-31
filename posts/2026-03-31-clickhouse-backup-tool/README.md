@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Backup, clickhouse-backup, Administration, Disaster Recovery, Operations
+Tags: ClickHouse, Backup, clickhouse-backup, Administration, Disaster Recovery, Operation
 
 Description: Learn how to install and configure the clickhouse-backup tool by Altinity to create, upload, and restore ClickHouse backups with support for S3, GCS, and Azure storage.
 

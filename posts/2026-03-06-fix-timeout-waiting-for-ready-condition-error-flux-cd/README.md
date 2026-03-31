@@ -1,6 +1,6 @@
 # How to Fix 'timeout waiting for ready condition' Error in Flux CD
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, Timeout, Health Check, Troubleshooting, Kubernetes, GitOps, Deployment
 

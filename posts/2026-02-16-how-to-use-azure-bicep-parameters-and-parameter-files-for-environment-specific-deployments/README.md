@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Bicep, Parameters, Infrastructure as Code, Azure Deployments, DevOps, CI/CD, ARM
+Tags: Azure Bicep, Parameter, Infrastructure as Code, Azure Deployments, DevOps, CI/CD, ARM
 
 Description: Master Bicep parameters and parameter files to deploy the same infrastructure template across dev, staging, and production with environment-specific configurations.
 

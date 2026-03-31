@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Indexes, Covering Index, Query Optimization, Performance
+Tags: MySQL, Index, Covering Index, Query Optimization, Performance
 
 Description: Learn how to create covering indexes in MySQL so queries can be satisfied entirely from the index without reading the actual table rows.
 

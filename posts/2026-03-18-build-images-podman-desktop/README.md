@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Image Building, Containerfile
+Tags: Podman, Container, DevOps, Podman Desktop, Image Building, Containerfile
 
 Description: Learn how to build container images using Podman Desktop's graphical interface and the equivalent CLI commands.
 

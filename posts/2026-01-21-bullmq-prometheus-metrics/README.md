@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BullMQ, Node.js, Redis, Prometheus, Monitoring, Metrics, Grafana, Observability
+Tags: BullMQ, Node.js, Redis, Prometheus, Monitoring, Metric, Grafana, Observability
 
 Description: A comprehensive guide to exporting BullMQ metrics to Prometheus, including setting up metric collectors, creating custom metrics, building Grafana dashboards.
 

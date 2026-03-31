@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, DML, CREATE TABLE, SELECT, Schema
+Tags: MySQL, SQL, DDL, DML, CREATE TABLE, SELECT
 
 Description: Create a new MySQL table and populate it with data in one statement using CREATE TABLE AS SELECT, with column aliasing and type inference notes.
 

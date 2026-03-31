@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Operations, Performance, Tools
+Tags: MongoDB, Monitoring, Operation, Performance, Tool
 
 Description: Learn how to use mongotop to track read and write time spent per collection in real time, identify hot collections, and diagnose MongoDB performance issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Parallel Processing
+Tags: Kubernetes, Job, Parallel Processing
 
 Description: Learn how to use Kubernetes Indexed Jobs to assign unique work items to parallel pods for efficient batch processing and data parallelization.
 

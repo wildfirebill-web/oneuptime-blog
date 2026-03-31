@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, OCI Registry, OpenTofu 1.10, Modules, Infrastructure as Code
+Tags: OpenTofu, OCI Registry, OpenTofu 1.10, Module, Infrastructure as Code
 
 Description: Learn how to use OCI registry support introduced in OpenTofu 1.10 to store and distribute OpenTofu modules and providers via container registries.
 

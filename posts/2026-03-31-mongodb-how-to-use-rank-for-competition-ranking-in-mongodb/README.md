@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Window Functions, Ranking, Aggregation, Analytics
+Tags: MongoDB, Window Function, Ranking, Aggregation, Analytics
 
 Description: Learn how to use the $rank window operator in MongoDB to assign competition rankings with gaps for tied values in leaderboards and analytics queries.
 

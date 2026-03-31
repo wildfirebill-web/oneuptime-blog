@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Labels, Metadata
+Tags: Podman, Container, DevOps, Quadlet, Labels, Metadata
 
 Description: Learn how to add metadata labels to Podman containers using the Label directive in Quadlet container files.
 

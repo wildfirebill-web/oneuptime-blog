@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, LIMIT, OFFSET, Pagination, Query, Performance
+Tags: MySQL, SQL, DML, Limit, Offset, Pagination
 
 Description: Paginate MySQL query results with LIMIT and OFFSET, implement keyset-based cursor pagination for large datasets, and avoid common performance pitfalls.
 

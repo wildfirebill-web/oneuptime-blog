@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Parallel Testing, Test Sharding, Performance, DevOps
+Tags: GitHub Action, CI/CD, Parallel Testing, Test Sharding, Performance, DevOps
 
 Description: Learn how to parallelize test execution in GitHub Actions using matrix strategies, test sharding, and job splitting to dramatically reduce CI pipeline duration and get faster feedback.
 

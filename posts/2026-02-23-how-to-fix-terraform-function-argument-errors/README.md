@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, Infrastructure as Code, Functions
+Tags: Terraform, Troubleshooting, Infrastructure as Code, Function
 
 Description: Resolve Terraform function argument errors including wrong argument counts, type mismatches, and common mistakes with built-in functions.
 

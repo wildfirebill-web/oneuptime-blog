@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Update Operators, $set, Document Updates, NoSQL
+Tags: MongoDB, Update Operator, $set, Document Updates, NoSQL
 
 Description: Learn how to use MongoDB's $set update operator to add new fields or modify existing fields in documents without affecting other fields.
 

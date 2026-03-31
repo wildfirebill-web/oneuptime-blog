@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking
+Tags: Podman, Container, DevOps, Networking
 
 Description: Learn how to create custom networks in Podman and run containers on specific networks for isolated and controlled communication.
 

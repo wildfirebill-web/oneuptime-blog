@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HashiCorp Vault, AppRole, CI/CD, GitHub Actions, GitLab CI, Secret Management
+Tags: HashiCorp Vault, AppRole, CI/CD, GitHub Action, GitLab CI, Secret Management
 
 Description: Learn how to implement Vault AppRole authentication for secure secret access in CI/CD pipelines, enabling automated deployments without long-lived credentials.
 

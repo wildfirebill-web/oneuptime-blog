@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, UUID_SHORT, Primary Keys, SQL Functions
+Tags: MySQL, UUID_SHORT, Primary Key, SQL Functions
 
 Description: Learn how to use the UUID_SHORT() function in MySQL to generate unique 64-bit integer identifiers suitable for use as compact primary keys.
 

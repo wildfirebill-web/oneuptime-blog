@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Terraform, IAM, Infrastructure as Code
+Tags: GCP, Cloud Function, Terraform, IAM, Infrastructure as Code
 
 Description: A comprehensive guide to deploying Google Cloud Functions Gen 2 with Terraform, including proper IAM bindings, event triggers, and service account configuration.
 

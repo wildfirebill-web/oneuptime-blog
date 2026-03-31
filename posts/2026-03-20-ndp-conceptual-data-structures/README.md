@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NDP, Data Structures, Neighbor Cache, Prefix Lists, Default Router List
+Tags: NDP, Data Structure, Neighbor Cache, Prefix Lists, Default Router List
 
 Description: Understand the four conceptual data structures defined in RFC 4861 - Neighbor Cache, Destination Cache, Prefix List, and Default Router List - and how they work together in IPv6.
 

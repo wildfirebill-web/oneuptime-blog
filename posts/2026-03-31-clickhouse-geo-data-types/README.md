@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Geospatial, Point, Ring, Polygon
+Tags: ClickHouse, SQL, Data Type, Geospatial, Point, Ring, Polygon
 
 Description: Learn how ClickHouse represents geospatial data using Point, Ring, Polygon, and MultiPolygon types and how to query them with geo functions.
 

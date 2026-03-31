@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Datadog, Monitoring, Metrics
+Tags: Portainer, API, Datadog, Monitoring, Metric
 
 Description: Send container metrics and events from Portainer to Datadog for unified infrastructure monitoring and alerting.
 

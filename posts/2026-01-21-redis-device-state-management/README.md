@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, IoT, Device State, Online Offline, Presence Detection, Last Known State, Hashes, TTL
+Tags: Redis, IoT, Device State, Online Offline, Presence Detection, Last Known State, Hash, TTL
 
 Description: A comprehensive guide to implementing device state management with Redis, covering online/offline tracking, last-known state storage, device shadow patterns, and presence detection for IoT systems.
 

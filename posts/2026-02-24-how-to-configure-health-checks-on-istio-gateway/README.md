@@ -1,6 +1,6 @@
 # How to Configure Health Checks on Istio Gateway
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Health Check, Gateway, Kubernetes, Monitoring
 

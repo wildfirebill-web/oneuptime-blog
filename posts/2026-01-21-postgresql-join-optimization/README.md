@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, JOIN, Query Optimization, Performance, SQL, Indexes
+Tags: PostgreSQL, Join, Query Optimization, Performance, SQL, Index
 
 Description: A comprehensive guide to optimizing PostgreSQL JOINs, covering join types, join strategies, index usage, and techniques for improving join performance in complex queries.
 

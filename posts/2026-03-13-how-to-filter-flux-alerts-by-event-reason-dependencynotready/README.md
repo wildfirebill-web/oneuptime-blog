@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Alerts, Event Filtering, Dependencies
+Tags: Flux, Kubernetes, GitOps, Alert, Event Filtering, Dependencies
 
 Description: Learn how to filter Flux alerts by the DependencyNotReady event reason to manage dependency-related reconciliation notifications effectively.
 

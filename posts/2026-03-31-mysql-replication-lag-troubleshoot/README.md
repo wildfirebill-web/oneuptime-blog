@@ -1,6 +1,6 @@
 # How to Troubleshoot MySQL Replication Lag
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Replication, Performance, Lag, Troubleshooting
 

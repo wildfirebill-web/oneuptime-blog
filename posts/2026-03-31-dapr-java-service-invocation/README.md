@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Java, Service Invocation, Microservice, Spring Boot, Sdk
+Tags: Dapr, Java, Service Invocation, Microservice, Spring Boot, SDK
 
 Description: Call other Dapr-enabled microservices from Java using direct client invocation and the Dapr Spring Boot starter with automatic service discovery and mTLS.
 

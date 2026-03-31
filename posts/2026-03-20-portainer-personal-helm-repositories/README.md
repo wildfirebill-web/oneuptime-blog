@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Helm, Kubernetes, Repositories, Configuration, User Settings
+Tags: Portainer, Helm, Kubernetes, Repositories, Configuration, User Setting
 
 Description: Learn how to add and manage personal Helm chart repositories in Portainer user settings for deploying applications to Kubernetes environments.
 

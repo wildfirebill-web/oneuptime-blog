@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, AWS, CloudFront, CDN
+Tags: Terraform, Module, AWS, CloudFront, CDN
 
 Description: Build a reusable Terraform module for AWS CloudFront distributions with S3 origins, custom origins, cache behaviors, SSL certificates, and WAF integration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Blob Storage, Performance, Large Files, Upload Optimization, Cloud Storage, Azure SDK
+Tags: Azure, Blob Storage, Performance, Large File, Upload Optimization, Cloud Storage, Azure SDK
 
 Description: Practical techniques to speed up large file uploads to Azure Blob Storage including parallel uploads, block sizing, and network tuning.
 

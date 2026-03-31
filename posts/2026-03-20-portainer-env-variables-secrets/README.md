@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environment Variables, Secrets, Docker, Security, DevOps
+Tags: Portainer, Environment Variable, Secret, Docker, Security, DevOps
 
 Description: Learn how to manage environment variables and secrets in Portainer stacks, including best practices for keeping sensitive values out of your Compose files.
 

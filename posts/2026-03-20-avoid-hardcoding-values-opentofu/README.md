@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Best Practice, Variables, Configuration, Infrastructure as Code
+Tags: OpenTofu, Best Practice, Variable, Configuration, Infrastructure as Code
 
 Description: Learn how to identify and eliminate hardcoded values in OpenTofu configurations by replacing them with variables, locals, and data sources.
 

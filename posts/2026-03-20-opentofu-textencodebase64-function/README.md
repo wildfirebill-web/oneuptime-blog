@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Encoding
+Tags: OpenTofu, Terraform, IaC, Function, Encoding
 
 Description: Learn how to use the textencodebase64() function in OpenTofu to encode text in a specific character encoding and then Base64-encode it.
 

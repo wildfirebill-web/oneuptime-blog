@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Google Cloud, GCP, Cloud Monitoring, Metrics, Observability
+Tags: OpenTelemetry, Collector, Google Cloud, GCP, Cloud Monitoring, Metric, Observability
 
 Description: Configure the Google Cloud Monitoring Receiver in OpenTelemetry Collector to pull metrics from Google Cloud Monitoring with authentication, query patterns, and production deployment examples.
 

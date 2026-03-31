@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, MongoDB Compass, Aggregation, Developer Tools, Query Optimization
+Tags: MongoDB, MongoDB Compass, Aggregation, Developer Tool, Query Optimization
 
 Description: Learn how to use MongoDB Compass's visual aggregation pipeline builder to construct, test, and export aggregation pipelines with stage-by-stage output preview.
 

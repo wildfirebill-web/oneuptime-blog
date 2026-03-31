@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, GitHub, GitHub Actions, Dispatch, CI/CD
+Tags: Flux CD, GitOps, Kubernetes, Notification, GitHub, GitHub Action, Dispatch, CI/CD
 
 Description: Learn how to configure Flux CD's notification controller to trigger GitHub Actions workflows via repository dispatch events using the Provider resource.
 

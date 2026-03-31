@@ -1,6 +1,6 @@
 # How to Handle Schema Evolution When Loading Parquet in ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Parquet, Schema Evolution, Data Engineering
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Serialization, Java, Debugging, Message Queues, Avro, JSON, Backend
+Tags: Kafka, Serialization, Java, Debugging, Message Queue, Avro, JSON, Backend
 
 Description: Learn how to diagnose and fix SerializationException errors in Apache Kafka, including schema mismatches, incompatible types, and serializer configuration issues.
 

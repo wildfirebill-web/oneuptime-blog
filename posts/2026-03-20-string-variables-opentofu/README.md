@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, String, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, String, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to declaring and using string type variables in OpenTofu configurations.
 

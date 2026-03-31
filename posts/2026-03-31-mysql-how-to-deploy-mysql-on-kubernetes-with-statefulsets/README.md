@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Kubernetes, StatefulSets, Database, DevOps
+Tags: MySQL, Kubernetes, StatefulSet, Database, DevOps
 
 Description: Learn how to deploy MySQL on Kubernetes using StatefulSets to ensure stable network identities, persistent storage, and ordered pod management.
 

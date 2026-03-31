@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Binary Log, Replication, Recovery, Internals
+Tags: MySQL, Binary Log, Replication, Recovery, Internal
 
 Description: Understand how MySQL binary logging records data changes, supports replication and point-in-time recovery, and how to manage binary log files.
 

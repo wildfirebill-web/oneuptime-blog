@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Bugtool, Kubernetes, Diagnostics, Debugging, Networking
+Tags: Cilium, Bugtool, Kubernetes, Diagnostic, Debugging, Networking
 
 Description: Learn how to use cilium-bugtool to collect comprehensive diagnostic data from Cilium agents, including logs, BPF maps, network state, and system configuration for effective troubleshooting.
 

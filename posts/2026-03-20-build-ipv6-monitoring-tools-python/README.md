@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Monitoring, Prometheus, Alerting, Networks
+Tags: Python, IPv6, Monitoring, Prometheus, Alerting, Network
 
 Description: Build IPv6 network monitoring tools in Python that check reachability, measure latency, and expose metrics via Prometheus.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Tasks, Cloud Functions, Deferred Processing, Serverless
+Tags: GCP, Cloud Tasks, Cloud Function, Deferred Processing, Serverless
 
 Description: Learn how to implement deferred task processing by combining Cloud Tasks with Cloud Functions to schedule work for later execution in a fully serverless architecture.
 

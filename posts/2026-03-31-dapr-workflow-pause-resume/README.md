@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Pause, Resume, Operations
+Tags: Dapr, Workflow, Pause, Resume, Operation
 
 Description: Learn how to pause and resume Dapr workflow instances using the SDK, HTTP API, and CLI for maintenance windows, manual intervention, and controlled processing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Cosmos DB, Bulk Operations, .NET SDK, Performance, Data Import
+Tags: Azure, Cosmos DB, Bulk Operation, .NET SDK, Performance, Data Import
 
 Description: Learn how to use the Azure Cosmos DB .NET SDK bulk execution feature to efficiently create, update, and delete large numbers of documents at high throughput.
 

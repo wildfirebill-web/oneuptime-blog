@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, RediSearch, Vector Search
 
-Description: Learn how to combine vector similarity search with text filters in Redis using hybrid search to find semantically similar results that also match specific criteria.
+Description: Learn how to combine vector similarity search with text filters in Redis using hybrid search to find semantically similar results matching specific criteria.
 
 ---
 

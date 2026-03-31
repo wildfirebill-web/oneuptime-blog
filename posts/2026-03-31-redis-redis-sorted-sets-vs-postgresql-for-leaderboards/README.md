@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Postgresql, Sorted Sets, Leaderboards, Gaming
+Tags: Redis, PostgreSQL, Sorted Set, Leaderboard, Gaming
 
 Description: Compare Redis sorted sets and PostgreSQL for implementing leaderboards, covering real-time ranking, range queries, pagination, and performance trade-offs.
 

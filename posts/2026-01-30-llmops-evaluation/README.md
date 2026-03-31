@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: LLMOps, Evaluation, Benchmarks, Quality Assurance
+Tags: LLMOps, Evaluation, Benchmark, Quality Assurance
 
 Description: Learn to build LLM evaluation for systematically assessing model performance and output quality.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Monitoring
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Monitoring
 
 Description: Learn how to set up ArgoCD notification triggers that fire based on application health status changes including Healthy, Degraded, Progressing, and Missing states.
 

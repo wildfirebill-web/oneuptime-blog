@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Pub/Sub, Dead Letter Queue, Retry Policies, Microservices, Reliability
+Tags: GCP, Cloud Pub/Sub, Dead Letter Queue, Retry Policies, Microservice, Reliability
 
 Description: Configure retry policies and dead letter queues on Google Cloud Pub/Sub to build reliable message-driven communication between microservices with proper failure handling.
 

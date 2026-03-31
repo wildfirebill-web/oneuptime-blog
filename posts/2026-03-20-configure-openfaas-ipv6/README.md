@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, OpenFaaS, Serverless, Kubernetes, Functions
+Tags: IPv6, OpenFaaS, Serverless, Kubernetes, Function
 
 Description: Configure OpenFaaS on an IPv6-enabled Kubernetes cluster, deploy functions with IPv6 access, and handle IPv6 client addresses in function handlers.
 

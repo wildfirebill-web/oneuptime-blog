@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Jaeger, Remote Sampling, Collector, Tracing, Distributed Systems
+Tags: OpenTelemetry, Jaeger, Remote Sampling, Collector, Tracing, Distributed System
 
 Description: Learn how to configure Jaeger remote sampling with the OpenTelemetry Collector to centrally manage trace sampling rates across all your services.
 

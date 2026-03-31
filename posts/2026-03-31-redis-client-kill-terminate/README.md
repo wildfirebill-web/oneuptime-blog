@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CLIENT, Connection, Administration, Security
+Tags: Redis, Client, Connection, Administration, Security
 
 Description: Learn how to use CLIENT KILL in Redis to forcefully terminate one or more client connections by ID, address, username, or other filters, useful for security response and connection management.
 

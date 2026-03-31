@@ -1,6 +1,6 @@
 # How to Configure Max Delivery Count in Dapr Pub/Sub
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Pub/Sub, Reliability, Resiliency, Messaging
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Pulsar, Message Queues, Distributed Systems, Streaming, Backend Development
+Tags: Apache Pulsar, Message Queue, Distributed System, Streaming, Backend Development
 
 Description: A beginner's guide to Apache Pulsar covering installation, producers, consumers, topics, and subscriptions for building event-driven applications.
 

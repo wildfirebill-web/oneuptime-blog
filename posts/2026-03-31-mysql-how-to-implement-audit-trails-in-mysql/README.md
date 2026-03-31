@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Audit Trail, Triggers, Security, Compliance
+Tags: MySQL, Audit Trail, Trigger, Security, Compliance
 
 Description: Learn how to implement audit trails in MySQL using triggers and audit tables to track INSERT, UPDATE, and DELETE operations on sensitive data.
 

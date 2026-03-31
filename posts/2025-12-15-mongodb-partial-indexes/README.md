@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Database, Indexes, Performance, Query Optimization
+Tags: MongoDB, Database, Index, Performance, Query Optimization
 
 Description: Learn how to use MongoDB partial indexes to create smaller, more efficient indexes by only indexing documents that match a filter expression, reducing storage and improving write performance.
 

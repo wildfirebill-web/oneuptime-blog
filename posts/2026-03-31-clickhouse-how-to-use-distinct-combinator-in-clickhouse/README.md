@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Aggregate Functions, Distinct, Combinators, Analytics
+Tags: ClickHouse, Aggregate Function, Distinct, Combinator, Analytics
 
 Description: Learn how to use the -Distinct combinator in ClickHouse to apply aggregate functions only to distinct (unique) values, similar to SQL's COUNT DISTINCT.
 

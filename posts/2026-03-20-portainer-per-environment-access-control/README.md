@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Access Control, Environments, RBAC, Teams
+Tags: Portainer, Access Control, Environment, RBAC, Team
 
 Description: Set up granular access control for individual Portainer environments, controlling which users and teams can access each environment and with what role.
 

@@ -76,7 +76,7 @@ mongosh \
 
 Or with a connection string:
 
-```
+```text
 mongodb://mongo.example.com:27017/?authMechanism=MONGODB-X509&authSource=%24external&tls=true&tlsCertificateKeyFile=/etc/ssl/client.pem&tlsCAFile=/etc/ssl/ca.pem
 ```
 

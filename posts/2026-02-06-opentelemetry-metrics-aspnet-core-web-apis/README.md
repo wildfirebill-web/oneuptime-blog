@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, ASP.NET Core, .NET, Metrics, Web API, C#
+Tags: OpenTelemetry, ASP.NET Core, .NET, Metric, Web API, C#
 
 Description: Complete guide to implementing metrics collection in ASP.NET Core Web APIs using OpenTelemetry and System.Diagnostics.Metrics for production observability.
 

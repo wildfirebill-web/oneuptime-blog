@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Aggregate Function, first_value, last_value, Window Function, Time Series
+Tags: ClickHouse, Aggregate Function, FIRST_VALUE, LAST_VALUE, Window Function, Time Series
 
 Description: Learn how first_value() and last_value() retrieve the first and last values from an ordered set, useful for opening prices, first events, and session boundaries.
 

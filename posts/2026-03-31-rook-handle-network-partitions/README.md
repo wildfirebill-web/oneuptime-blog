@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Networking, Troubleshooting, High Availability, Operations
+Tags: Rook, Ceph, Networking, Troubleshooting, High Availability, Operation
 
 Description: Respond to and recover from network partition events in Ceph clusters, including MON quorum loss, split-brain OSD scenarios, and safe recovery procedures after reconnection.
 

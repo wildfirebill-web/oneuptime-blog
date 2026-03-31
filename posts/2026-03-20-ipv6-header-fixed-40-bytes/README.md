@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Headers, Performance, Networking, Protocol Design
+Tags: IPv6, Header, Performance, Networking, Protocol Design
 
 Description: Understand the design decision behind IPv6's fixed 40-byte header, the performance benefits it provides for routers, and how extension headers maintain flexibility.
 

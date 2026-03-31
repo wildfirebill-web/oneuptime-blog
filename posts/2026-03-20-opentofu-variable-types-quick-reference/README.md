@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Types, Quick Reference, Infrastructure as Code
+Tags: OpenTofu, Variable, Type, Quick Reference, Infrastructure as Code
 
 Description: A quick reference for all OpenTofu variable types, type constraints, validation rules, and how to use variables effectively.
 

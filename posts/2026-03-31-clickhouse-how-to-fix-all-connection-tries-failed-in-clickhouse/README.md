@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Connection, Networking, Troubleshooting, Distributed Systems
+Tags: ClickHouse, Connection, Networking, Troubleshooting, Distributed System
 
 Description: Resolve ClickHouse 'All connection tries failed' errors in distributed setups by checking shard availability, network configuration, and connection pool settings.
 

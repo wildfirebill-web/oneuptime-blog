@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Sockets, Security
+Tags: Podman, Container, DevOps, Rootless, Socket, Security
 
 Description: Learn how to enable and configure the Podman socket for rootless users to provide API access without requiring root privileges.
 

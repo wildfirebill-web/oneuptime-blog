@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, PostgreSQL, External Database, High Availability
+Tags: k3s, Kubernetes, Rancher, PostgreSQL, External Database, High Availability
 
 Description: Learn how to configure K3s to use PostgreSQL as an external datastore for multi-server high availability clusters.
 

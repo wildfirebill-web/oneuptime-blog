@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, IPv6, Expert Info, Diagnostics, Packet Analysis, Troubleshooting
+Tags: Wireshark, IPv6, Expert Info, Diagnostic, Packet Analysis, Troubleshooting
 
 Description: A guide to using Wireshark's Expert Info feature to automatically identify IPv6 protocol issues, retransmissions, and anomalies without manually inspecting each packet.
 

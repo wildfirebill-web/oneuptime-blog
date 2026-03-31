@@ -1,6 +1,6 @@
 # How to Verify Flux CD Installation with flux check Command
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, GitOps, Kubernetes, Troubleshooting, Health Check, DevOps
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CONFIG, Configuration, Operations, Admin
+Tags: Redis, CONFIG, Configuration, Operation, Admin
 
 Description: Learn how to use CONFIG GET to read Redis configuration parameters and CONFIG SET to update them at runtime without restarting the server.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Webhooks, CI/CD, DevOps
+Tags: Portainer, Docker, Stack, Webhook, CI/CD, DevOps
 
 Description: Learn how to configure Portainer stack webhooks for triggering remote redeployments from CI/CD pipelines, scripts, or external automation.
 

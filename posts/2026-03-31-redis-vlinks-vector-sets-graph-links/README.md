@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Vector, Database, Search, Machine learning
+Tags: Redis, Vector, Database, Search, Machine Learning
 
 Description: Learn how to use the VLINKS command in Redis vector sets to inspect the internal HNSW graph links for a member, useful for debugging index quality and connectivity.
 

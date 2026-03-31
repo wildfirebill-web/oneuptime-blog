@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Performance, Debugging, Operations
+Tags: Redis, Performance, Debugging, Operation
 
 Description: A practical guide to configuring, collecting, and analyzing Redis slow logs to identify performance bottlenecks and optimize your cache layer.
 

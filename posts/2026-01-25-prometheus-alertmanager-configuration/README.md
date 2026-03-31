@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Alertmanager, Alerting, Notifications, PagerDuty, Slack, Email, Routing, Inhibition, Silences
+Tags: Prometheus, Alertmanager, Alerting, Notification, PagerDuty, Slack, Email, Routing, Inhibition, Silences
 
 Description: A comprehensive guide to configuring Alertmanager with Prometheus.
 

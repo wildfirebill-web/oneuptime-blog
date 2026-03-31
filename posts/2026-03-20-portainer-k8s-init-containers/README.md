@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Init Containers, Configuration, DevOps
+Tags: Portainer, Kubernetes, Init Container, Configuration, DevOps
 
 Description: Use Kubernetes init containers to perform setup tasks before main application containers start in Portainer-managed clusters.
 

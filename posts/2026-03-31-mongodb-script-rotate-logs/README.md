@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Scripting, Log Rotation, Operations, Shell
+Tags: MongoDB, Scripting, Log Rotation, Operation, Shell
 
 Description: Learn how to write a script to rotate MongoDB server logs using the logRotate admin command, compress old logs, and clean up log files older than a retention period.
 

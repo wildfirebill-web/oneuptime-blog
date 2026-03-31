@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Devices, GPU, Hardware
+Tags: Portainer, Docker, Device, GPU, Hardware
 
 Description: Learn how to map host devices such as USB, GPU, or serial ports to Docker containers using Portainer's device mapping configuration.
 

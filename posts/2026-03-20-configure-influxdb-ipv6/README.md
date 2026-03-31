@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, InfluxDB, Time Series Database, Monitoring, Metrics
+Tags: IPv6, InfluxDB, Time Series Database, Monitoring, Metric
 
 Description: Learn how to configure InfluxDB to listen on IPv6 addresses for HTTP API and cluster communication, enabling IPv6-only and dual-stack deployments.
 

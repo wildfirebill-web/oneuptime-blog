@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Scrubbing, Maintenance, Operations, Kubernetes
+Tags: Rook, Ceph, Scrubbing, Maintenance, Operation, Kubernetes
 
 Description: Learn how to temporarily disable Ceph scrubbing during maintenance windows, high-load events, or cluster operations, and how to safely re-enable it afterward.
 

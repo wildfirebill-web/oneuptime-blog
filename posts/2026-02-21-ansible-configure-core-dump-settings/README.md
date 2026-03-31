@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Core Dumps, Debugging, Linux Administration
+Tags: Ansible, Core Dump, Debugging, Linux Administration
 
 Description: Configure and manage core dump settings across your Linux servers with Ansible for better crash debugging and security compliance.
 

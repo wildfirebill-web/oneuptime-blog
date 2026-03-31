@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Container Images, DevOps, Container Registry
+Tags: Podman, REST API, Container Image, DevOps, Container Registry
 
 Description: Learn how to pull container images from registries using the Podman REST API, including authentication, tag management, and registry configuration.
 

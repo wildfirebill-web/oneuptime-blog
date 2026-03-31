@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, SNS, Notifications, CloudWatch, Infrastructure Alerts, Infrastructure as Code
+Tags: OpenTofu, AWS, SNS, Notification, CloudWatch, Infrastructure Alerts, Infrastructure as Code
 
 Description: Learn how to set up SNS topics and CloudWatch alarm notifications for infrastructure alerts using OpenTofu, including email, Slack webhook, and PagerDuty integrations.
 

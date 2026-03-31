@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Skopeo, Registry, Image Sync, Mirroring
+Tags: Podman, Container, DevOps, Skopeo, Registry, Image Sync, Mirroring
 
 Description: Learn how to use Skopeo sync to keep container images synchronized between registries for disaster recovery and multi-environment workflows.
 

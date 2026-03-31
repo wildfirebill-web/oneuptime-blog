@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, Binary Data, Node.js, Python, JavaScript, ArrayBuffer, Protocol Buffers, MessagePack
+Tags: WebSocket, Binary Data, Node.js, Python, JavaScript, ArrayBuffer, Protocol Buffer, MessagePack
 
 Description: A comprehensive guide to sending, receiving, and processing binary data over WebSocket connections, including serialization formats and performance optimization.
 

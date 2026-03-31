@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Exec, Background Processes
+Tags: Podman, Container, DevOps, Container Exec, Background Processes
 
 Description: Learn how to run detached background commands inside Podman containers using the -d flag, ideal for long-running tasks and background processes.
 

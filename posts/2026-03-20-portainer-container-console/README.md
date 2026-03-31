@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Debugging, DevOps
+Tags: Portainer, Docker, Container, Debugging, DevOps
 
 Description: Learn how to open an interactive shell inside a running Docker container using Portainer's built-in console (exec) feature.
 

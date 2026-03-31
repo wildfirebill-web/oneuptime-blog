@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Register, Variables, Automation
+Tags: Ansible, Register, Variable, Automation
 
 Description: Master the register keyword in Ansible to capture command output, use it in conditionals, parse structured data, and build dynamic workflows.
 

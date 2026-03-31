@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Configuration, DevOps
+Tags: Portainer, Docker, Container, Configuration, DevOps
 
 Description: Export running container configurations as docker run commands from Portainer for documentation or migration.
 

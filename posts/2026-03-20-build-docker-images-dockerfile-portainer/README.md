@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Build, Dockerfile, Images
+Tags: Portainer, Docker, Build, Dockerfile, Image
 
 Description: Build Docker images directly in Portainer using the web editor or an uploaded Dockerfile without using the CLI.
 

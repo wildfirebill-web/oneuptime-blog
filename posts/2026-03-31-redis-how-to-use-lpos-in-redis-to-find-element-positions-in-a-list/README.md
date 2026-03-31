@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lists, LPOS, Search, Commands
+Tags: Redis, List, LPOS, Search, Command
 
 Description: Learn how to use the LPOS command in Redis to find the position of one or more occurrences of an element within a list, with rank and count options.
 

@@ -1,6 +1,6 @@
 # How to Install MySQL from Source Code
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Installation, Source, Linux, Compilation
 

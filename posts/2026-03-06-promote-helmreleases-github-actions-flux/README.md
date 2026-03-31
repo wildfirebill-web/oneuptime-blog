@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitHub Actions, Helm, HelmRelease, Promotion, Staging, Production, GitOps
+Tags: Flux CD, GitHub Action, Helm, HelmRelease, Promotion, Staging, Production, GitOps
 
 Description: Learn how to implement a staging-to-production promotion workflow for HelmReleases using GitHub Actions and Flux CD with PR-based approvals.
 

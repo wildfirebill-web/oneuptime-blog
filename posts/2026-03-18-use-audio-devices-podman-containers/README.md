@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Audio, PulseAudio, PipeWire, ALSA, Containers
+Tags: Podman, Audio, PulseAudio, PipeWire, ALSA, Container
 
 Description: A practical guide to enabling audio input and output in Podman containers using ALSA, PulseAudio, and PipeWire, with examples for recording, playback, and real-time audio processing.
 

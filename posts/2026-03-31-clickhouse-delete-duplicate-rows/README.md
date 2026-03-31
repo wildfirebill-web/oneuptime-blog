@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Deduplication, DELETE, ReplacingMergeTree, Data Cleanup
+Tags: ClickHouse, Deduplication, Delete, ReplacingMergeTree, Data Cleanup
 
 Description: Learn how to delete duplicate rows in ClickHouse using ReplacingMergeTree, FINAL keyword, ALTER TABLE DELETE, and deduplication at query time.
 

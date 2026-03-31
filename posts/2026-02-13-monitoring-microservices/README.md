@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Microservices, Monitoring, Observability, Distributed Systems, DevOps
+Tags: Microservice, Monitoring, Observability, Distributed System, DevOps
 
 Description: A guide to monitoring microservices architectures covering the three pillars of observability, service-level objectives, distributed tracing, and alerting strategies.
 

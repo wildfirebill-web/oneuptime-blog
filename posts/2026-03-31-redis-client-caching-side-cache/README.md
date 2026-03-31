@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CLIENT, Caching, Performance, RESP3
+Tags: Redis, Client, Caching, Performance, RESP3
 
 Description: Learn how to use CLIENT CACHING in Redis to control client-side caching invalidation tracking, enabling applications to cache data locally and receive notifications when it changes.
 

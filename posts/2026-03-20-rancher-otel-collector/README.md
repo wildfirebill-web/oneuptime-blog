@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, OpenTelemetry, Observability, Tracing, Metrics
+Tags: Rancher, Kubernetes, OpenTelemetry, Observability, Tracing, Metric
 
 Description: Deploy and configure the OpenTelemetry Collector on Rancher as a central telemetry pipeline for collecting, processing, and exporting metrics, traces, and logs.
 

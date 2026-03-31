@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, TLS, Certificates, Security
+Tags: Podman, Container, DevOps, Secret, TLS, Certificate, Security
 
 Description: Learn how to securely store and deliver TLS certificates and private keys to Podman containers using secrets.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Replication, High Availability, Operations
+Tags: Redis, Cluster, Replication, High Availability, Operation
 
 Description: Learn how to use CLUSTER REPLICATE in Redis to configure a cluster node as a replica of a master, enabling high availability and failover.
 

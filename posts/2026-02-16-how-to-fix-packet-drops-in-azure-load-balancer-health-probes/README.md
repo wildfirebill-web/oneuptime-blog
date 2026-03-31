@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Load Balancer, Health Probes, Networking, Troubleshooting, Packet Loss, High Availability
+Tags: Azure, Load Balancer, Health Probe, Networking, Troubleshooting, Packet Loss, High Availability
 
 Description: Diagnose and resolve packet drops in Azure Load Balancer health probes that cause backend instances to be incorrectly marked unhealthy.
 

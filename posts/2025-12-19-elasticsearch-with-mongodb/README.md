@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, MongoDB, Data Sync, Search, Integration, Change Streams
+Tags: Elasticsearch, MongoDB, Data Sync, Search, Integration, Change Stream
 
 Description: Learn how to integrate Elasticsearch with MongoDB for powerful full-text search capabilities using change streams, Logstash, and custom sync solutions.
 

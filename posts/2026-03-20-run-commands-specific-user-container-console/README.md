@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Console, USER, Security
+Tags: Portainer, Docker, Console, User, Security
 
 Description: Execute commands as a non-root user in the container console from Portainer for security-compliant container access.
 

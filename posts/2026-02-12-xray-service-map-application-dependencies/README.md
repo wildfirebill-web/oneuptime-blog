@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, X-Ray, Service Map, Microservices, Observability
+Tags: AWS, X-Ray, Service Map, Microservice, Observability
 
 Description: Learn how to use the AWS X-Ray service map to visualize application dependencies, identify performance bottlenecks, and understand request flows across microservices.
 

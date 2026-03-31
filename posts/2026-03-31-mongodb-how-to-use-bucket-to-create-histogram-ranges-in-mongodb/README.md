@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $bucket, Histograms, Data Analysis, NoSQL
+Tags: MongoDB, Aggregation, $bucket, Histogram, Data Analysis, NoSQL
 
 Description: Learn how to use MongoDB's $bucket aggregation stage to categorize documents into manually defined numeric ranges, enabling histogram and distribution analysis.
 

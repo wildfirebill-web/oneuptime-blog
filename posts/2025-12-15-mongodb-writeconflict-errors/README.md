@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Database, Troubleshooting, Transactions, Concurrency, WiredTiger
+Tags: MongoDB, Database, Troubleshooting, Transaction, Concurrency, WiredTiger
 
 Description: Learn how to diagnose and resolve MongoDB WriteConflict errors caused by concurrent document modifications, with strategies for transaction design, retry logic, and conflict prevention.
 

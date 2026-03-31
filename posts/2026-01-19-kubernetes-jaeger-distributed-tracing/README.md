@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jaeger, Distributed Tracing, OpenTelemetry, Observability, Microservices
+Tags: Kubernetes, Jaeger, Distributed Tracing, OpenTelemetry, Observability, Microservice
 
 Description: Learn how to deploy Jaeger for distributed tracing in Kubernetes and instrument your applications to trace requests across microservices.
 

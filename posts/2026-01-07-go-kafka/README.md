@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Kafka, Messaging, Distributed Systems, Event-Driven
+Tags: Go, Kafka, Messaging, Distributed System, Event-Driven
 
 Description: Build event-driven systems in Go using Kafka with segmentio/kafka-go, covering producers, consumers, consumer groups, and message delivery guarantees.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Git
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Git
 
 Description: Learn how to configure Flux alerts for GitRepository events to track source changes, fetch failures, and artifact updates.
 

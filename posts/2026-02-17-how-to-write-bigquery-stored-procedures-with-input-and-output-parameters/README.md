@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Stored Procedures, SQL, Data Engineering
+Tags: GCP, BigQuery, Stored Procedure, SQL, Data Engineering
 
 Description: A practical guide to writing BigQuery stored procedures with input and output parameters for reusable data processing logic and complex business workflows.
 

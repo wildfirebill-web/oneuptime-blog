@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HashiCorp Vault, Kubernetes, Database Security, Dynamic Secrets, Credential Rotation
+Tags: HashiCorp Vault, Kubernetes, Database Security, Dynamic Secret, Credential Rotation
 
 Description: Learn how to implement Vault dynamic database credentials that automatically rotate, providing Kubernetes applications with short-lived database access without static passwords.
 

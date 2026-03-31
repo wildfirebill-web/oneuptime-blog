@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Memory Optimization, Kubernetes, Large Clusters, Performance
+Tags: Istio, Memory Optimization, Kubernetes, Large Cluster, Performance
 
 Description: Practical techniques to reduce Istio memory consumption in large Kubernetes clusters with hundreds of services and thousands of sidecar proxies.
 

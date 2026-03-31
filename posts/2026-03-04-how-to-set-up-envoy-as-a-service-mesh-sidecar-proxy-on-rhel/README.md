@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Envoy, Service Mesh, Sidecar Proxy, Microservices
+Tags: RHEL, Envoy, Service Mesh, Sidecar Proxy, Microservice
 
 Description: Learn how to install and configure Envoy as a sidecar proxy on RHEL for service-to-service communication in microservices architectures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nagios, IPv6, Monitoring, ICMP, Service Checks, Networks
+Tags: Nagios, IPv6, Monitoring, ICMP, Service Checks, Network
 
 Description: A guide to configuring Nagios Core and Nagios XI to monitor IPv6 hosts and services, including ICMP checks, TCP port checks, and HTTP monitoring.
 

@@ -1,6 +1,6 @@
 # How to Fix Flux CD Reconciliation Stuck in Progress
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, Reconciliation, Kubernetes, Troubleshooting, GitOps, Health Check, Stuck, Debugging
 

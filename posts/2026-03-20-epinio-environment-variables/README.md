@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Epinio, Environment Variables, Kubernetes, PaaS, Configuration
+Tags: Epinio, Environment Variable, Kubernetes, PaaS, Configuration
 
 Description: Set, update, and manage environment variables for Epinio applications to configure runtime behavior.
 

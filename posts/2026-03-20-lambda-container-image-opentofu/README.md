@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Lambda, Container Images, ECR, Serverless, Infrastructure as Code
+Tags: OpenTofu, AWS, Lambda, Container Image, ECR, Serverless, Infrastructure as Code
 
 Description: Learn how to deploy AWS Lambda functions using container images stored in Amazon ECR with OpenTofu, enabling up to 10 GB deployment packages and custom runtimes.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change Streams, Real-Time, Node.js, Events
+Tags: MongoDB, Change Stream, Real-Time, Node.js, Event
 
 Description: Learn how to open and consume MongoDB change streams on collections to react to inserts, updates, and deletes in real time.
 

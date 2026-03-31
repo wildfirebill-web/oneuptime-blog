@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, UNWATCH, WATCH, Transaction, Optimistic locking
+Tags: Redis, UNWATCH, Watch, Transaction, Optimistic Locking
 
 Description: Learn how to use UNWATCH in Redis to cancel all watched keys, resetting optimistic locking state before starting a new transaction or abandoning the current one.
 

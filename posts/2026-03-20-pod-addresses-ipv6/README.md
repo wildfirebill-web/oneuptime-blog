@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Pods, Addresses, Dual-Stack, Verification
+Tags: Kubernetes, IPv6, Pod, Address, Dual-Stack, Verification
 
 Description: Verify that Kubernetes pods have received IPv6 addresses in dual-stack clusters, check pod network configuration from inside containers, and troubleshoot IPv6 address assignment failures.
 

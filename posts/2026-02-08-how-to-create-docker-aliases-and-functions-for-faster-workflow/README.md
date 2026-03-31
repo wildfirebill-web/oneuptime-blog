@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Aliases, Bash, Shell, Productivity, Workflow, CLI, Docker Compose
+Tags: Docker, Alias, Bash, Shell, Productivity, Workflow, CLI, Docker Compose
 
 Description: Speed up your Docker workflow with shell aliases and functions that replace long, repetitive commands.
 

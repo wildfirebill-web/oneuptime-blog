@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DevOps, Canary, Metrics, Analysis
+Tags: DevOps, Canary, Metric, Analysis
 
 Description: Learn to build canary metrics analysis for automated deployment decisions.
 

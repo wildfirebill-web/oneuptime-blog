@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Spring Boot, Java, Rest Api, Spring Data
+Tags: MongoDB, Spring Boot, Java, REST API, Spring Data
 
 Description: Learn how to build a REST API with Spring Boot and Spring Data MongoDB, including repository patterns, CRUD endpoints, validation, and error handling.
 

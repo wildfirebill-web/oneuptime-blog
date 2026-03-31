@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Migration, Workloads, Kubernetes
+Tags: Rancher, Migration, Workload, Kubernetes
 
 Description: Guide to safely migrating running workloads from one Rancher-managed cluster to another.
 

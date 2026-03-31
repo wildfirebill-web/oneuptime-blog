@@ -1,8 +1,8 @@
 # How to Build a Real-Time Metrics Dashboard with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Monitoring, Metrics, Dashboard, Tutorial, Observability
+Tags: ClickHouse, Monitoring, Metric, Dashboard, Tutorial, Observability
 
 Description: Build a real-time metrics dashboard with ClickHouse - covering schema design for time-series metrics, downsampling with materialized views, and live dashboard queries.
 

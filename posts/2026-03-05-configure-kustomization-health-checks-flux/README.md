@@ -1,6 +1,6 @@
 # How to Configure Kustomization Health Checks in Flux
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, GitOps, Kubernetes, Kustomize, Health Check, Monitoring
 

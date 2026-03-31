@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Window Function, LAG, Gap Detection, Date
+Tags: MySQL, Window Function, Lag, Gap Detection, Date
 
 Description: Learn how to find gaps in date sequences in MySQL using LAG() window functions, recursive CTEs, and calendar table joins to identify missing dates.
 

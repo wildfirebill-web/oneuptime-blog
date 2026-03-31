@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Schema Design, Sql
+Tags: MySQL, DDL, Schema Design, SQL
 
 Description: Learn how to set and update default values for MySQL columns using ALTER TABLE MODIFY and ALTER TABLE ALTER COLUMN SET DEFAULT.
 

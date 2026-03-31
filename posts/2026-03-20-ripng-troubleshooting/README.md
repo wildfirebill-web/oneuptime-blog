@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RIPng, IPv6, Troubleshooting, Routing, Diagnostics
+Tags: RIPng, IPv6, Troubleshooting, Routing, Diagnostic
 
 Description: A practical guide to diagnosing and resolving common RIPng routing problems including missing routes, convergence delays, and count-to-infinity issues.
 

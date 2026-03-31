@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Pacemaker, Alerts, Notifications, High Availability, Monitoring
+Tags: RHEL, Pacemaker, Alert, Notification, High Availability, Monitoring
 
 Description: Configure Pacemaker alert agents on RHEL to receive email and custom notifications when cluster events such as resource failures or node changes occur.
 

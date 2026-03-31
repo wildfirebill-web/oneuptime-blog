@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, SSH, Known Hosts, Git, Security
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, SSH, Known Hosts, Git, Security
 
 Description: Learn how to configure Flux CD with SSH authentication including known_hosts verification for secure Git repository access.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted set, ZINTER, Command
+Tags: Redis, Sorted Set, ZINTER, Command
 
 Description: Learn how to use ZINTER in Redis to find members common to multiple sorted sets with score aggregation options including SUM, MIN, and MAX.
 

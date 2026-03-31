@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Prometheus, Monitoring, Metrics, Observability
+Tags: Podman, Prometheus, Monitoring, Metric, Observability
 
 Description: Learn how to use Podman to run Prometheus and monitor containerized applications, collecting metrics from containers, host systems, and application endpoints.
 

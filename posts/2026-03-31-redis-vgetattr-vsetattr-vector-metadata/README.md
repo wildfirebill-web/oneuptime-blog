@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Vector, Database, Search, Machine learning
+Tags: Redis, Vector, Database, Search, Machine Learning
 
 Description: Learn how to use VGETATTR and VSETATTR commands in Redis vector sets to store and retrieve JSON metadata attributes alongside your vectors.
 

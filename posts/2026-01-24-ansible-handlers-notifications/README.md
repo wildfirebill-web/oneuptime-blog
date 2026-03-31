@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Automation, Configuration Management, DevOps, Infrastructure as Code, Handlers
+Tags: Ansible, Automation, Configuration Management, DevOps, Infrastructure as Code, Handler
 
 Description: Learn how to use Ansible handlers and notifications to trigger actions only when changes occur, optimizing your playbook execution and service restarts.
 

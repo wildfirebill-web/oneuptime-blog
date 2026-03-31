@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Monitoring, Observability, Tracing, Traces, DevOps, OpenTelemetry
+Tags: Monitoring, Observability, Tracing, Trace, DevOps, OpenTelemetry
 
 Description: Discover how to set up and manage OneUptime trace monitors as an end user so you can react to latency or error spikes without touching code.
 

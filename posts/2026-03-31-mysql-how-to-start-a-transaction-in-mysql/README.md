@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Transactions, Innodb, Data Integrity
+Tags: MySQL, Transaction, InnoDB, Data Integrity
 
 Description: Learn how to start a transaction in MySQL using START TRANSACTION or BEGIN, and understand autocommit behavior and transaction boundaries.
 

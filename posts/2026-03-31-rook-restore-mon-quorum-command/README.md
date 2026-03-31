@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Monitor, Quorum, Recovery
 
-Description: Step-by-step guide to using Rook's restore-quorum command to recover a Ceph cluster when monitor quorum cannot be re-established automatically.
+Description: Step-by-step guide to using Rook's restore-quorum operation to recover a Ceph cluster when monitor quorum cannot be re-established automatically.
 
 ---
 

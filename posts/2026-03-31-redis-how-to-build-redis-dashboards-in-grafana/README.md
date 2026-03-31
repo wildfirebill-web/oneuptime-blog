@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Grafana, Monitoring, Dashboards, Observability
+Tags: Redis, Grafana, Monitoring, Dashboard, Observability
 
 Description: Learn how to build comprehensive Redis monitoring dashboards in Grafana using Prometheus metrics from redis_exporter, with key panels and alert rules.
 

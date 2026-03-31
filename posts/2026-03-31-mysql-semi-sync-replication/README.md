@@ -1,6 +1,6 @@
 # How to Set Up MySQL Semi-Synchronous Replication
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Replication, Semi-Synchronous, High Availability, Durability
 

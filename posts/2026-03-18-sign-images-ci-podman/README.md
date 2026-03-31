@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CI/CD, Security, Image Signing, Sigstore
+Tags: Podman, Container, DevOps, CI/CD, Security, Image Signing, Sigstore
 
 Description: Learn how to sign container images in CI/CD pipelines using Podman with Sigstore cosign and GPG for supply chain security.
 

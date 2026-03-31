@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Labels, Metadata
+Tags: Podman, Container, DevOps, Labels, Metadata
 
 Description: Learn how to attach metadata labels to Podman containers for organization, filtering, automation, and monitoring integration.
 

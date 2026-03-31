@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Elasticsearch, Cluster Monitoring, Observability, Collector, Metrics
+Tags: OpenTelemetry, Elasticsearch, Cluster Monitoring, Observability, Collector, Metric
 
 Description: Step-by-step guide to monitoring Elasticsearch cluster health, node performance, and index stats using the OpenTelemetry Collector.
 

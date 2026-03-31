@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Gaming, Game Server, Containers, Multiplayer
+Tags: Podman, Gaming, Game Server, Container, Multiplayer
 
 Description: Learn how to deploy and manage dedicated gaming servers using Podman containers for games like Minecraft, Valheim, and Terraria with persistent world data and automated backups.
 

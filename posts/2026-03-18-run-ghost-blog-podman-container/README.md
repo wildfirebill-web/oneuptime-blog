@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Ghost, Blog, CMS, Node.js
+Tags: Podman, Container, DevOps, Ghost, Blog, CMS, Node.js
 
 Description: Learn how to run Ghost blog platform in a Podman container with persistent content, custom themes, and a MySQL backend.
 

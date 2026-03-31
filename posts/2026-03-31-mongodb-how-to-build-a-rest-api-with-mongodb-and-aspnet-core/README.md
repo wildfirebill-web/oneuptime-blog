@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Asp.Net Core, C#, Rest Api, .Net
+Tags: MongoDB, ASP.NET Core, C#, REST API, .NET
 
 Description: Learn how to build a REST API with ASP.NET Core and the official MongoDB C# driver including models, repository pattern, CRUD controllers, and validation.
 

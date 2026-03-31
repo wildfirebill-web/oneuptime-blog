@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Distributed Tracing, OpenTelemetry, Observability, Headers
+Tags: Kafka, Distributed Tracing, OpenTelemetry, Observability, Header
 
 Description: Propagate trace context through Kafka messages using headers for end-to-end distributed tracing across microservices.
 

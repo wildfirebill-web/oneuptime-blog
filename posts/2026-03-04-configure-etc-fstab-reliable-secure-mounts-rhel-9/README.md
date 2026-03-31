@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RHEL, Fstab, Storage, File Systems, Security, Linux
+Tags: RHEL, Fstab, Storage, File System, Security, Linux
 
 Description: Learn how to configure /etc/fstab on RHEL for reliable boot-time mounts, secure mount options, and proper file system management.
 

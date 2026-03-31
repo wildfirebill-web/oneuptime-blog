@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Networking, Microservices, Network Design, Service Mesh, Container Security, DevOps
+Tags: Docker, Networking, Microservice, Network Design, Service Mesh, Container Security, DevOps
 
 Description: Design Docker network topologies for microservice architectures with proper segmentation, isolation, and service-to-service communication.
 

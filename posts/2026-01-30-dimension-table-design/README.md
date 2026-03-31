@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Warehouse, Dimensional Modeling, Dimensions, Data Engineering
+Tags: Data Warehouse, Dimensional Modeling, Dimension, Data Engineering
 
 Description: Learn how to design dimension tables for descriptive context in analytics.
 

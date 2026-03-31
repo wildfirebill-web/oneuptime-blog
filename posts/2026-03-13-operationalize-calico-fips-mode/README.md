@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, FIPS, Operations, Compliance
+Tags: Calico, Kubernetes, Networking, FIPS, Operation, Compliance
 
 Description: Build sustainable operational processes for maintaining Calico FIPS compliance including change control procedures, regular validation cadences, and incident response runbooks.
 

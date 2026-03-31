@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Operations, DevOps
+Tags: Portainer, Docker, Container, Operation, DevOps
 
 Description: Learn how to recreate a Docker container in Portainer to apply configuration changes or update to a new image version without losing your setup.
 

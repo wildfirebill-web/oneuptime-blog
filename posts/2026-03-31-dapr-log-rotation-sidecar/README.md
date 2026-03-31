@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Logging, Log Rotation, Kubernetes, Operations
+Tags: Dapr, Logging, Log Rotation, Kubernetes, Operation
 
 Description: Manage Dapr sidecar log file growth on Kubernetes nodes using container runtime log rotation settings and node-level configuration.
 

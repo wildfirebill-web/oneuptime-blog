@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Environment Variables, Authentication, CI/CD
+Tags: OpenTofu, AWS, Environment Variable, Authentication, CI/CD
 
 Description: Learn how to configure AWS authentication in OpenTofu using environment variables, the most portable method for CI/CD pipelines and local development.
 

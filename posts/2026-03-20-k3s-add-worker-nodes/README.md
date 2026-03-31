@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Cluster Management, Scaling, DevOps
+Tags: k3s, Kubernetes, Cluster Management, Scaling, DevOps
 
 Description: Learn how to expand your K3s cluster by adding worker nodes to increase compute capacity for your workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTofu, GitHub Actions, CI/CD, Infrastructure as Code, DevOps
+Tags: OpenTofu, GitHub Action, CI/CD, Infrastructure as Code, DevOps
 
 Description: Step-by-step guide to setting up OpenTofu with GitHub Actions for automated infrastructure deployment, including OIDC authentication, plan reviews on PRs, and production apply workflows.
 

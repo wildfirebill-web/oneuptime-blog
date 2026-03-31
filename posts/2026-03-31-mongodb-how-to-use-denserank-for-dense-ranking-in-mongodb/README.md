@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Window Functions, Ranking, Aggregation, Analytics
+Tags: MongoDB, Window Function, Ranking, Aggregation, Analytics
 
 Description: Learn how to use $denseRank in MongoDB's $setWindowFields to assign consecutive rankings without gaps for tied values in tier-based analytics.
 

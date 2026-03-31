@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Lambda, CloudWatch Events, EventBridge, Scheduled Tasks, Infrastructure as Code
+Tags: OpenTofu, AWS, Lambda, CloudWatch Events, EventBridge, Scheduled Task, Infrastructure as Code
 
 Description: Learn how to create Lambda functions triggered by CloudWatch/EventBridge scheduled rules using OpenTofu for cron jobs, periodic data processing, and maintenance tasks.
 

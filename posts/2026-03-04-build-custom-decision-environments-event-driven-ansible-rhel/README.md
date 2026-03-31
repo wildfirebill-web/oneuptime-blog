@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible, Event-Driven Ansible, Decision Environments, Containers
+Tags: RHEL, Ansible, Event-Driven Ansible, Decision Environments, Container
 
 Description: Learn how to build custom decision environments for Event-Driven Ansible on RHEL, packaging your rulebooks with the required dependencies and collections.
 

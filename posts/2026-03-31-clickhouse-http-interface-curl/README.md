@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, HTTP Interface, cURL, REST API, Query Execution
+Tags: ClickHouse, HTTP Interface, curl, REST API, Query Execution
 
 Description: Learn how to query ClickHouse over HTTP using cURL, including authentication, output formats, and inserting data via POST requests.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: nftables, Linux, Firewall, Table, Chains, Security
+Tags: nftables, Linux, Firewall, Table, Chain, Security
 
 Description: Create nftables tables and chains from scratch, understanding the address family options, hook types, chain priorities, and default policies.
 

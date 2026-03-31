@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Cobra, CLI, DevOps, Tools, Development
+Tags: Go, Cobra, CLI, DevOps, Tool, Development
 
 Description: A practical guide to building production-ready command-line applications in Go using Cobra, covering commands, flags, arguments, and Viper configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Selective Sync, Operations
+Tags: ArgoCD, GitOps, Kubernetes, Selective Sync, Operation
 
 Description: Learn how to safely sync a single resource within a large ArgoCD application that contains many resources, including strategies for hotfixes, rollbacks, and targeted updates.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Services, Networking, DevOps
+Tags: Portainer, Kubernetes, Service, Networking, DevOps
 
 Description: Learn how to create and configure ClusterIP, NodePort, and LoadBalancer services in Portainer to expose Kubernetes applications.
 

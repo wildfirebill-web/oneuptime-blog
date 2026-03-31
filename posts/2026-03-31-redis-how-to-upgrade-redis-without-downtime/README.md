@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Upgrade, Zero Downtime, Operations, High Availability, Sentinel
+Tags: Redis, Upgrade, Zero Downtime, Operation, High Availability
 
 Description: Learn how to upgrade Redis to a new major version without downtime using rolling replica upgrades, Sentinel failover, and blue-green deployment strategies.
 

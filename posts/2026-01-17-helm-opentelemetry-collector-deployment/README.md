@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, OpenTelemetry, Observability, Tracing, Metrics
+Tags: Helm, Kubernetes, DevOps, OpenTelemetry, Observability, Tracing, Metric
 
 Description: Complete guide to deploying the OpenTelemetry Collector using Helm for unified telemetry collection including traces, metrics, and logs.
 

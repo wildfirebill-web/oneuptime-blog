@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, OCI, Artifacts, CLI
+Tags: Flux CD, GitOps, Kubernetes, OCI, Artifact, CLI
 
 Description: Learn how to use the Flux CLI to diff OCI artifacts and compare changes between artifact versions before deploying to your Kubernetes cluster.
 

@@ -1,6 +1,6 @@
 # How to Use TSKV Format in ClickHouse
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Format, TSKV, DataIngestion, Parsing
 

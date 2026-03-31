@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenShift, Networking, Kubernetes, Routes, Load Balancing
+Tags: OpenShift, Networking, Kubernetes, Route, Load Balancing
 
 Description: Learn how OpenShift networking works, how to expose services with Routes, and how to configure common network policies for production clusters.
 

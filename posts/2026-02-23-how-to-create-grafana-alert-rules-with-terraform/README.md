@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Grafana, Alerts, Monitoring, Infrastructure as Code
+Tags: Terraform, Grafana, Alert, Monitoring, Infrastructure as Code
 
 Description: Learn how to create Grafana alerting rules using Terraform to set up metric-based and log-based alerts with notification routing.
 

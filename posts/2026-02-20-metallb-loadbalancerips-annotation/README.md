@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, Dual Stack, Annotations, IPv6
+Tags: Kubernetes, MetalLB, Dual Stack, Annotation, IPv6
 
 Description: Learn how to use the metallb.io/loadBalancerIPs annotation to request specific IPv4 and IPv6 addresses for dual-stack LoadBalancer services.
 

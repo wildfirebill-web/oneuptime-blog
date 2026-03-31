@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Syslog, Logs, System Monitoring, Observability
+Tags: OpenTelemetry, Collector, Syslog, Log, System Monitoring, Observability
 
 Description: Learn how to configure the Syslog receiver in OpenTelemetry Collector for collecting system and application logs. Includes RFC 3164 and RFC 5424 protocol support with practical examples.
 

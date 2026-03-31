@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SSL, TLS, Client Certificates, Security, mTLS
+Tags: ClickHouse, SSL, TLS, Client Certificate, Security, mTLS
 
 Description: Learn how to configure mutual TLS (mTLS) in ClickHouse using SSL client certificates to authenticate clients without passwords.
 

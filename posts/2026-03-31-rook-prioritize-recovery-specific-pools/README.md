@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Recovery, Pool, Operations, Storage
+Tags: Rook, Ceph, Recovery, Pool, Operation, Storage
 
 Description: Learn how to prioritize Ceph recovery for specific pools by adjusting recovery priority weights, using pool-level flags, and directing recovery resources to critical data first.
 

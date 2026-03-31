@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Scaling, Message Queues, Kafka, RabbitMQ, Kubernetes HPA
+Tags: Rancher, Scaling, Message Queue, Kafka, RabbitMQ, Kubernetes HPA
 
 Description: Learn how to horizontally scale message queue clusters in Rancher by adding brokers, rebalancing partitions, and using KEDA for consumer autoscaling.
 

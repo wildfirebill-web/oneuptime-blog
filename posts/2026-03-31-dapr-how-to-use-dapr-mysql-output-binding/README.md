@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, MySQL, Bindings, Database, Microservices
+Tags: Dapr, MySQL, Binding, Database, Microservice
 
 Description: Learn how to use the Dapr MySQL output binding to execute SQL queries and statements against a MySQL database from your microservices.
 

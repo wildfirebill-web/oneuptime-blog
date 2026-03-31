@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, System Administration
+Tags: Podman, Container, DevOps, Configuration, System Administration
 
 Description: Learn how to configure system-wide Podman settings in containers.conf that apply to all users on the host machine.
 

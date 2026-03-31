@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Provider, Modules
+Tags: OpenTofu, Terraform, Infrastructure as Code, Provider, Module
 
 Description: Learn how to pass provider configurations between modules in OpenTofu using the providers argument and proxy provider declarations.
 

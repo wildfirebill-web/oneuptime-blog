@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Idempotency, Distributed Systems, API Design, Backend Development, Reliability, Microservices
+Tags: Idempotency, Distributed System, API Design, Backend Development, Reliability, Microservice
 
 Description: A practical guide to building robust idempotency implementations for your APIs, covering database-backed storage, request fingerprinting, state machines, and production-ready patterns.
 

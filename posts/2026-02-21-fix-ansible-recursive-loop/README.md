@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Troubleshooting, Variables, Recursion, DevOps
+Tags: Ansible, Troubleshooting, Variable, Recursion, DevOps
 
 Description: Resolve Ansible recursive loop errors caused by circular variable references, self-referencing defaults, and include loops.
 

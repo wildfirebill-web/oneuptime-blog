@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, MLflow, ML Pipeline, Observability, Machine Learning, Python, Tracing, Metrics
+Tags: OpenTelemetry, MLflow, ML Pipeline, Observability, Machine Learning, Python, Tracing, Metric
 
 Description: A practical guide to setting up ML pipeline observability by integrating OpenTelemetry tracing with MLflow experiment tracking for end-to-end visibility into training, evaluation, and deployment.
 

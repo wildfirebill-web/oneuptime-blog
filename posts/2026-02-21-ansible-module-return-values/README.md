@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Return Values, Module Development, Python
+Tags: Ansible, Return Value, Module Development, Python
 
 Description: Define and document return values from custom Ansible modules for consistent output that playbooks can register and use.
 

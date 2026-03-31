@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Linux, Prometheus, Monitoring, Metrics, Observability
+Tags: Ubuntu, Linux, Prometheus, Monitoring, Metric, Observability
 
 Description: Learn how to install and configure node_exporter for comprehensive Ubuntu server monitoring with Prometheus.
 

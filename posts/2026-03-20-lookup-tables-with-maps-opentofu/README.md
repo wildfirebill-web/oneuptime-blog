@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Map, Lookup Tables, HCL, Infrastructure as Code
+Tags: OpenTofu, Map, Lookup Table, HCL, Infrastructure as Code
 
 Description: Learn how to use maps as lookup tables in OpenTofu to simplify environment-specific configurations and eliminate repetitive conditional logic.
 

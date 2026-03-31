@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Data Fusion, ETL, Data Pipelines, Visual Designer, BigQuery, Data Integration
+Tags: GCP, Cloud Data Fusion, ETL, Data Pipeline, Visual Designer, BigQuery, Data Integration
 
 Description: A beginner-friendly guide to building your first ETL pipeline in Google Cloud Data Fusion using the visual drag-and-drop pipeline designer.
 

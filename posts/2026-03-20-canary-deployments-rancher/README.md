@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Canary Deployments, Rancher, Kubernetes, Progressive Delivery, DevOps, Traffic Splitting, Deployment
+Tags: Canary Deployment, Rancher, Kubernetes, Progressive Delivery, DevOps, Traffic Splitting, Deployment
 
 Description: Learn how to implement canary deployments in Rancher-managed Kubernetes to gradually shift traffic to a new version and catch issues before a full rollout.
 

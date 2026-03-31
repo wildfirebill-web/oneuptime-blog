@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Spanner, Spring Boot, Spring Data, Transactions, Java
+Tags: GCP, Cloud Spanner, Spring Boot, Spring Data, Transaction, Java
 
 Description: A practical guide to implementing read-write transactions on Google Cloud Spanner from a Spring Boot application using Spring Data Spanner for consistent, scalable data operations.
 

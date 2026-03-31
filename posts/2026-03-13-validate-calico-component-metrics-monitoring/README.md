@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Prometheus, Validation
+Tags: Calico, Kubernetes, Networking, Metric, Prometheus, Validation
 
 Description: Validate that Calico component metrics are correctly flowing into Prometheus, alert rules are working, and all expected metric families are present.
 

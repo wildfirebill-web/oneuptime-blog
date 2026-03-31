@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Ephemeral Resources, Provider Configuration, Secrets, HCL, Infrastructure as Code
+Tags: OpenTofu, Ephemeral Resources, Provider Configuration, Secret, HCL, Infrastructure as Code
 
 Description: Learn how to use ephemeral values to configure providers in OpenTofu so that credentials and tokens are never stored in state files.
 

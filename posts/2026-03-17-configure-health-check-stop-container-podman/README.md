@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Check, Container Lifecycle
+Tags: Podman, Container, DevOps, Health Check, Container Lifecycle
 
 Description: Learn how to configure Podman health checks to gracefully stop a container when it becomes unhealthy.
 

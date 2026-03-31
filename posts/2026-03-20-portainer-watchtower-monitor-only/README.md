@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Watchtower, Monitors, Notifications, Update
+Tags: Portainer, Watchtower, Monitor, Notification, Update
 
 Description: Learn how to run Watchtower in monitor-only mode alongside Portainer to receive update notifications without automatic container restarts, giving you visibility into available updates while...
 

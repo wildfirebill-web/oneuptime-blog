@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Pushgateway, IPv4, Metrics, Configuration, Short-lived Jobs, Monitoring
+Tags: Prometheus, Pushgateway, IPv4, Metric, Configuration, Short-lived Jobs, Monitoring
 
 Description: Learn how to configure the Prometheus Pushgateway to listen on a specific IPv4 address and accept metrics from batch jobs and short-lived processes.
 

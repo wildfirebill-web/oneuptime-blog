@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EventBridge, Schedulers, Serverless
+Tags: AWS, EventBridge, Scheduler, Serverless
 
 Description: Learn how to use Amazon EventBridge Scheduler to create recurring cron schedules and one-time scheduled events for serverless automation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Application Insights, Azure Functions, Serverless, Performance Monitoring, Azure Monitor, APM, Observability
+Tags: Azure Application Insights, Azure Function, Serverless, Performance Monitoring, Azure Monitor, APM, Observability
 
 Description: Practical guide to monitoring Azure Functions with Application Insights, covering performance tracking, dependency monitoring, and custom telemetry for serverless workloads.
 

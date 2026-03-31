@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Functions, Lua, Redis 7.0, Scripting, Backend, Database
+Tags: Redis, Function, Lua, Redis 7.0, Scripting, Backend, Database
 
 Description: A comprehensive guide to using Redis Functions introduced in Redis 7.0, covering function libraries, persistent server-side functions, and how they compare to traditional Lua scripts.
 

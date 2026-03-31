@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory Defragmentation, Activedefrag, Performance, Operations
+Tags: Redis, Memory Defragmentation, Activedefrag, Performance, Operation
 
 Description: Learn how to enable and tune Redis active defragmentation to reclaim fragmented memory without restarting the server or causing downtime.
 

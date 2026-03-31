@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Timescaledb, Time-Series, Database, Performance
+Tags: Redis, TimescaleDB, Time-Series, Database, Performance
 
 Description: Compare Redis and TimescaleDB for time-series workloads, covering ingestion speed, query power, retention, and when to choose each tool.
 

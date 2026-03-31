@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Versioning, Version Constraints, Infrastructure as Code
+Tags: Terraform, Module, Versioning, Version Constraints, Infrastructure as Code
 
 Description: A detailed guide to Terraform module version constraint syntax including operators, semantic versioning, constraint strategies, and best practices for production safety.
 

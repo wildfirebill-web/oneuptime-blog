@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Pub/Sub, Message Ordering, Distributed Systems, Google Cloud, Event-Driven Architecture, Ordering Keys, Parallelism, Messaging
+Tags: Pub/Sub, Message Ordering, Distributed System, Google Cloud, Event-Driven Architecture, Ordering Keys, Parallelism, Messaging
 
 Description: A practical guide to handling message ordering in Pub/Sub systems.
 

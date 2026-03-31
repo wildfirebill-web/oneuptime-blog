@@ -1,6 +1,6 @@
 # How to Set Up Uptime Monitoring for Services on Talos Linux
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Talos Linux, Uptime Monitoring, Kubernetes, Health Check, Blackbox Exporter, Prometheus
 

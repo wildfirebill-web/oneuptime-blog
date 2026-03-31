@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Distributed Systems, Leader Election, High Availability, Consensus
+Tags: Distributed System, Leader Election, High Availability, Consensus
 
 Description: Learn patterns for implementing leader election in distributed systems.
 

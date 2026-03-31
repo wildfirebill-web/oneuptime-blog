@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Functions, Query Optimization, Analytics, SQL
+Tags: ClickHouse, Window Function, Query Optimization, Analytics, SQL
 
 Description: Learn how to efficiently combine multiple window functions in a single ClickHouse query using the WINDOW clause, named windows, and performance best practices.
 

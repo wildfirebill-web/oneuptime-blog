@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module
 
 Description: Learn how to use local filesystem paths as module sources in OpenTofu for referencing modules stored alongside your configuration.
 

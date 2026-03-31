@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Performance, Explain, Index
+Tags: MongoDB, Aggregation, Performance, EXPLAIN, Index
 
 Description: Learn how to use explain() on MongoDB aggregation pipelines to analyze query plans, confirm index usage, and identify performance bottlenecks in each stage.
 

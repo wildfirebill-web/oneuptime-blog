@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Monitors, Quorum, Troubleshooting
+Tags: Rook, Ceph, Monitor, Quorum, Troubleshooting
 
 Description: Restore Ceph monitor quorum after a mon failure by diagnosing pod issues, network connectivity, and using monmap manipulation to force quorum.
 

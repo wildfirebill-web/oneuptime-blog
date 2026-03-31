@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Memory Management, Query, Configuration, Internals
+Tags: ClickHouse, Memory Management, Query, Configuration, Internal
 
 Description: Understand how ClickHouse tracks and limits memory usage per query and server-wide, how to diagnose memory errors, and how to tune memory settings.
 

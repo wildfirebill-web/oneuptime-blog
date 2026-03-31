@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, WordPress, CMS, PHP, Web Development
+Tags: Podman, Container, DevOps, WordPress, CMS, PHP, Web Development
 
 Description: Learn how to run WordPress in a Podman container with MariaDB, persistent content, and custom theme development support.
 

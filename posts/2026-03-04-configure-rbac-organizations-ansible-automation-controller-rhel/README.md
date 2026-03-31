@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible, Automation Controller, RBAC, Organizations
+Tags: RHEL, Ansible, Automation Controller, RBAC, Organization
 
 Description: Configure role-based access control (RBAC) and organizations in Ansible Automation Controller to manage team permissions and resource isolation on RHEL.
 

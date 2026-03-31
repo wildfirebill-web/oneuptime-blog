@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Grafana, Alerting, Contact Points, Notifications
+Tags: Grafana, Alerting, Contact Points, Notification
 
 Description: A comprehensive guide to configuring Grafana alert contact points for effective incident notification across multiple channels including email, Slack, PagerDuty, and webhooks.
 

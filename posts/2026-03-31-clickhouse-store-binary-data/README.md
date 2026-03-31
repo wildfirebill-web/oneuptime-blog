@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Binary, String
+Tags: ClickHouse, SQL, Data Type, Binary, String
 
 Description: Learn how to store binary data in ClickHouse using the String type, with hex, unhex, and base64 encoding and decoding functions.
 

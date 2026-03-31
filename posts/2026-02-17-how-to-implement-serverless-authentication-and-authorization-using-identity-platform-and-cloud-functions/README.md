@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Identity Platform, Cloud Functions, Authentication, Authorization, Serverless Security
+Tags: GCP, Identity Platform, Cloud Function, Authentication, Authorization, Serverless Security
 
 Description: Implement a complete serverless authentication and authorization system on Google Cloud using Identity Platform for user management and Cloud Functions for access control.
 

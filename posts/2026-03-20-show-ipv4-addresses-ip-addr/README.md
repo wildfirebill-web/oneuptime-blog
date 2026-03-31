@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, ip command, iproute2, IPv4, Networking, Diagnostics
+Tags: Linux, ip command, iproute2, IPv4, Networking, Diagnostic
 
 Description: Show all IPv4 addresses on Linux interfaces using the ip command with -4 filter, including address details, interface state, and specific interface queries.
 

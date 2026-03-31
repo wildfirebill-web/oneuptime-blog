@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, Git, DevOps, Feature Branches, Infrastructure as Code
+Tags: Terraform, CI/CD, Git, DevOps, Feature Branch, Infrastructure as Code
 
 Description: Learn how to set up Terraform CI/CD pipelines that work with feature branch workflows including isolated planning, workspace management, and safe merge strategies.
 

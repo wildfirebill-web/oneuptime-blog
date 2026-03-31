@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Monitor, Quorum, Troubleshooting
 
-Description: Learn how to diagnose and fix Rook-Ceph monitor quorum issues that cause cluster unavailability, using kubectl and ceph CLI tools.
+Description: Diagnose and fix Rook-Ceph monitor quorum issues using kubectl and ceph CLI tools to restore cluster availability.
 
 ---
 

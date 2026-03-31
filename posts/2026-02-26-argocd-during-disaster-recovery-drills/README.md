@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Disaster Recovery, Operations
+Tags: ArgoCD, GitOps, Kubernetes, Disaster Recovery, Operation
 
 Description: Learn how to plan and execute disaster recovery drills that include ArgoCD, covering backup verification, failover testing, and full cluster recovery scenarios.
 

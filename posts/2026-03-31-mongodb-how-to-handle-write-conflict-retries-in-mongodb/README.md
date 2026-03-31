@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Write Conflicts, Transactions, Error Handling, Retry Logic
+Tags: MongoDB, Write Conflict, Transaction, Error Handling, Retry Logic
 
 Description: Learn how to detect and retry MongoDB write conflicts and transient transaction errors using proper retry loops in Node.js and Python applications.
 

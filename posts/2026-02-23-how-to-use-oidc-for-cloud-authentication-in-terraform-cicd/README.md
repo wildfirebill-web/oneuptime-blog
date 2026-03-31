@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, OIDC, CI/CD, Security, AWS, Azure, GCP, GitHub Actions
+Tags: Terraform, OIDC, CI/CD, Security, AWS, Azure, GCP, GitHub Action
 
 Description: Learn how to use OpenID Connect for keyless cloud authentication in Terraform CI/CD pipelines, eliminating static credentials with GitHub Actions, GitLab CI, and more.
 

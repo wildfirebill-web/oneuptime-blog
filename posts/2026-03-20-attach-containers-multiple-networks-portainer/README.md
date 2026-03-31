@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Networks, Multi-Network, Configuration
+Tags: Portainer, Docker, Network, Multi-Network, Configuration
 
 Description: Connect Docker containers to multiple networks in Portainer for advanced multi-tier application networking.
 

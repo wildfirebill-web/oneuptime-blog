@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Hub-Spoke, Networking, Virtual Network, Infrastructure as Code, Modules
+Tags: Terraform, Azure, Hub-Spoke, Networking, Virtual Network, Infrastructure as Code, Module
 
 Description: A practical guide to building a hub-spoke network topology in Azure using reusable Terraform modules for centralized connectivity and security.
 

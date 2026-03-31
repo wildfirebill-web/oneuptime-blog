@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Network Policies, Security, DevOps, Zero Trust, Microservices
+Tags: Kubernetes, Network Policies, Security, DevOps, Zero Trust, Microservice
 
 Description: Learn how to configure Kubernetes Network Policies to secure pod-to-pod communication and implement zero-trust networking.
 

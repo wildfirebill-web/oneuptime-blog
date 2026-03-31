@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Engineering, ETL, Data Pipelines, Best Practice, Data Quality
+Tags: Data Engineering, ETL, Data Pipeline, Best Practice, Data Quality
 
 Description: Best practices for designing and building ETL pipelines including idempotency, error handling, data validation, monitoring, and choosing between ETL and ELT approaches.
 

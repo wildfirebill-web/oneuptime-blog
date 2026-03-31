@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Pod Anti-Affinity, High Availability, Failure Domains
+Tags: Kubernetes, Pod Anti-Affinity, High Availability, Failure Domain
 
 Description: Configure pod anti-affinity rules that distribute application replicas across nodes, zones, and other failure domains to ensure high availability and resilience to infrastructure failures.
 

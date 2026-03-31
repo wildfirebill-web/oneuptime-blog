@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Functions, HCL, Infrastructure as Code, Data Transformation
+Tags: Terraform, Function, HCL, Infrastructure as Code, Data Transformation
 
 Description: Learn how to chain and combine multiple Terraform functions together to perform complex data transformations for real-world infrastructure configurations.
 

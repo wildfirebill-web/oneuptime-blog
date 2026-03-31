@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Batch, Pub/Sub, Cloud Functions, Notifications
+Tags: GCP, Cloud Batch, Pub/Sub, Cloud Function, Notification
 
 Description: Set up automated notifications for Google Cloud Batch job events using Pub/Sub and Cloud Functions to track job completion and failures.
 

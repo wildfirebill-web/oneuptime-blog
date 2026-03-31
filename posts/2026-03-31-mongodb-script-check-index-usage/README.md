@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Scripting, Index, Performance, Operations
+Tags: MongoDB, Scripting, Index, Performance, Operation
 
 Description: Learn how to write a script that checks MongoDB index usage statistics using $indexStats to identify unused, underused, and missing indexes across all collections.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Logging, Operations
+Tags: Calico, Kubernetes, Networking, Logging, Operation
 
 Description: Build operational processes for Calico log collection including log level change procedures, incident log bundle standards, retention policy management, and runbooks for log collection failures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Geospatial, 2dsphere, Location Queries
+Tags: MongoDB, Index, Geospatial, 2dsphere, Location Queries
 
 Description: Learn how to create a 2dsphere geospatial index in MongoDB for querying spherical earth coordinates using GeoJSON and location operators.
 

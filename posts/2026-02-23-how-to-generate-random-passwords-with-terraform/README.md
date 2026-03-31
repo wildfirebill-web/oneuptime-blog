@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Random Provider, Passwords, Security, Infrastructure as Code
+Tags: Terraform, Random Provider, Password, Security, Infrastructure as Code
 
 Description: Learn how to generate secure random passwords with Terraform using the random_password resource, store them safely in AWS Secrets Manager, and manage password rotation.
 

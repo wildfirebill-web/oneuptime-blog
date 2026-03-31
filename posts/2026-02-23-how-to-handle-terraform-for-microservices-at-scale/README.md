@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Microservices, Scale, Infrastructure as Code, DevOps
+Tags: Terraform, Microservice, Scale, Infrastructure as Code, DevOps
 
 Description: Learn how to manage Terraform infrastructure for microservices architectures at scale, covering per-service modules, shared infrastructure, service discovery, and organizational patterns.
 

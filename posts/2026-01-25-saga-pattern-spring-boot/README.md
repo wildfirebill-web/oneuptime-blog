@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Saga Pattern, Distributed Transactions, Microservices
+Tags: Java, Spring Boot, Saga Pattern, Distributed Transaction, Microservice
 
 Description: A practical guide to implementing the Saga pattern in Spring Boot for managing distributed transactions across microservices.
 

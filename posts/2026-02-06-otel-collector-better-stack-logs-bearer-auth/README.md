@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Better Stack, Logs, Collector Configuration
+Tags: OpenTelemetry, Better Stack, Log, Collector Configuration
 
 Description: Learn how to configure the OpenTelemetry Collector to export logs to Better Stack using bearer token authentication and the OTLP exporter.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Health Check, Monitoring
+Tags: Podman, Container, DevOps, podman-compose, Health Check, Monitoring
 
 Description: Learn how to define and use health checks in podman-compose to monitor container readiness and trigger dependency startup.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Client, Sdk, Microservice, Api
+Tags: Dapr, Go, Client, SDK, Microservice, API
 
 Description: Explore the Dapr Go client API for state management, service invocation, pub/sub, secrets, and configuration with practical code examples.
 

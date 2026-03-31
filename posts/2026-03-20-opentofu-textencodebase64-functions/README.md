@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Functions, Encoding
+Tags: OpenTofu, Terraform, Infrastructure as Code, Function, Encoding
 
 Description: Learn how to use textencodebase64 and textdecodebase64 in OpenTofu to encode and decode strings with specific character encodings like UTF-16.
 

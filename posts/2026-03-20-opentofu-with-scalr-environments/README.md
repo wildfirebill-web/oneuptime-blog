@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Scalr, Environments, Multi-Tenant, RBAC, Governance
+Tags: OpenTofu, Scalr, Environment, Multi-Tenant, RBAC, Governance
 
 Description: Learn how to use Scalr environments to organize OpenTofu workspaces by team or application, apply environment-level policies, and manage access controls.
 

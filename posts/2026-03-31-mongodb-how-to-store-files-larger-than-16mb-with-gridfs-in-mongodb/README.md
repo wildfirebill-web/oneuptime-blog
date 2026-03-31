@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, GridFS, File Storage, Binary Data, Large Files
+Tags: MongoDB, GridFS, File Storage, Binary Data, Large File
 
 Description: Use MongoDB GridFS to store and retrieve files larger than 16MB by splitting them into chunks stored across two collections in MongoDB.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, ECS, ALB, Load Balancer, Terraform, Containers, Infrastructure as Code
+Tags: OpenTofu, AWS, ECS, ALB, Load Balancer, Terraform, Container, Infrastructure as Code
 
 Description: Learn how to deploy an Amazon ECS Fargate service behind an Application Load Balancer using OpenTofu, including target groups, health checks, and HTTPS listeners.
 

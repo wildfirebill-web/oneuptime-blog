@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, MySQL, CDC, Debezium, Cache Sync
 
-Description: Learn how to sync your Redis cache with MySQL changes using Change Data Capture (CDC) via Debezium so your cache stays consistent without application-level cache invalidation.
+Description: Learn how to sync your Redis cache with MySQL changes using Change Data Capture via Debezium so your cache stays consistent without application-level invalidation.
 
 ---
 

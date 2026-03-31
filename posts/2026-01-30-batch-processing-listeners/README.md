@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Batch Processing, Listeners, Events, Spring Batch
+Tags: Batch Processing, Listeners, Event, Spring Batch
 
 Description: Learn to create batch listeners for hooking into job, step, and chunk lifecycle events.
 

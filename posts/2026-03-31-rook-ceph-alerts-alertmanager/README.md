@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Alerting, Prometheus, AlertManager
+Tags: Rook, Ceph, Kubernetes, Alerting, Prometheus, Alertmanager
 
 Description: Configure PrometheusRule resources and AlertManager routing for Rook-Ceph to receive alerts for cluster health issues, OSD failures, and capacity thresholds.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Migration, Strangler Fig Pattern, Legacy Systems, Refactoring, Architecture, DevOps, Incremental Migration
+Tags: Microservice, Migration, Strangler Fig Pattern, Legacy Systems, Refactoring, Architecture, DevOps, Incremental Migration
 
 Description: A comprehensive guide to migrating monolithic applications to microservices using the Strangler Fig pattern with practical implementation examples and monitoring strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terralist, Private Registry, Infrastructure as Code, IaC, Modules
+Tags: OpenTofu, Terralist, Private Registry, Infrastructure as Code, IaC, Module
 
 Description: Learn how to set up Terralist as a private module and provider registry for OpenTofu in your organization.
 

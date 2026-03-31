@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Serverless, Functions, Kubernetes, OpenFaaS, Knative
+Tags: Rancher, Serverless, Function, Kubernetes, OpenFaaS, Knative
 
 Description: Deploy serverless functions on Rancher with a practical comparison of frameworks, function lifecycle management, and production deployment patterns.
 

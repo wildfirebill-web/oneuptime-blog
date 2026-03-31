@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Redis Enterprise, Comparison, Architecture, Licensing, Features
+Tags: Redis, Redis Enterprise, Comparison, Architecture, Licensing, Feature
 
 Description: A detailed comparison of Redis Community Edition and Redis Enterprise covering features, scalability, licensing, and when to choose each option.
 

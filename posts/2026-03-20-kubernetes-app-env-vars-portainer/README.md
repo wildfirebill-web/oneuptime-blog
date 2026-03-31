@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Environment Variables, ConfigMaps, Secrets
+Tags: Portainer, Kubernetes, Environment Variable, ConfigMap, Secret
 
 Description: Learn how to add and manage environment variables for Kubernetes applications deployed through Portainer.
 

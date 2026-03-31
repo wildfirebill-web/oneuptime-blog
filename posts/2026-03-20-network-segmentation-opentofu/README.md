@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Network Segmentation, Security, OpenTofu, VPC, Subnets, Security Groups
+Tags: Network Segmentation, Security, OpenTofu, VPC, Subnets, Security Group
 
 Description: Learn how to configure network segmentation using OpenTofu to isolate workloads into distinct network zones with controlled traffic flow between them.
 

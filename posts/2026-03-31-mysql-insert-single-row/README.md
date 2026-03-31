@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, INSERT, DML, Data Manipulation, Query
+Tags: MySQL, Insert, DML, Data Manipulation, Query
 
 Description: Learn the syntax and best practices for inserting a single row into a MySQL table using the INSERT INTO statement.
 

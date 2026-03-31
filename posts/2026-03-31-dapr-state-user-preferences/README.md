@@ -1,6 +1,6 @@
 # How to Use Dapr State Management for User Preferences
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, User Preferences, Microservice, Personalization
 

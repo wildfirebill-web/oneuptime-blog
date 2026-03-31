@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Docker, Migration, Import
+Tags: Podman, Container, DevOps, Podman Desktop, Docker, Migration, Import
 
 Description: Learn how to import existing Docker containers, images, and volumes into Podman Desktop to migrate your development environment seamlessly.
 

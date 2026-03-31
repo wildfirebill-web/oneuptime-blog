@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, CRIU, Containers, Checkpoint Import, DevOps
+Tags: Podman, CRIU, Container, Checkpoint Import, DevOps
 
 Description: A guide to importing and restoring a Podman container from an exported checkpoint file, covering import options, name overrides, and handling imported containers on new hosts.
 

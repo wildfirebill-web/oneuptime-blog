@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images
+Tags: Podman, Container, DevOps, Container Image
 
 Description: Learn how to list and view container images stored locally using Podman, including various output formats and filtering options.
 

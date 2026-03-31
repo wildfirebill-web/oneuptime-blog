@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Debugging, Secret Management, Troubleshooting, Operations
+Tags: Dapr, Debugging, Secret Management, Troubleshooting, Operation
 
 Description: A practical guide to diagnosing and resolving Dapr secret store connection failures, from component misconfiguration to network and permission issues.
 

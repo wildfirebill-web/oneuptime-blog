@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Kustomization
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Kustomization
 
 Description: Learn how to set up Flux alerts that notify you when Kustomization events occur, including successful reconciliations and failures.
 

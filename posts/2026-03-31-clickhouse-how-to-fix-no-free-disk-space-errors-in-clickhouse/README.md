@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Disk Space, Storage, Troubleshooting, Operations
+Tags: ClickHouse, Disk Space, Storage, Troubleshooting, Operation
 
 Description: Learn how to resolve ClickHouse 'No free disk space' errors by identifying space consumers, cleaning up data, and configuring storage policies.
 

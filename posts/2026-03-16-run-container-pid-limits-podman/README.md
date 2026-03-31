@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, PID Limits, Security, Resource Limits
+Tags: Podman, Container, DevOps, PID Limits, Security, Resource Limit
 
 Description: Learn how to set PID limits on Podman containers to prevent fork bombs and runaway process creation from exhausting system resources.
 

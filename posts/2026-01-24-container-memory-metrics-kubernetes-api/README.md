@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Metrics, Monitoring, API, Memory
+Tags: Kubernetes, Metric, Monitoring, API, Memory
 
 Description: Learn how to retrieve container memory metrics using the Kubernetes API and metrics server. This guide covers kubectl top, metrics API queries, and programmatic access.
 

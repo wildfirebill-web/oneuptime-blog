@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, CentOS
+Tags: Podman, Installation, Linux, Container, DevOps, CentOS
 
 Description: A complete guide to installing Podman on CentOS Stream 8 and 9, with rootless configuration and practical container examples.
 

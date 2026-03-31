@@ -1,6 +1,6 @@
 # How to Configure State Store Metadata in Dapr
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Configuration, Component, Microservice
 

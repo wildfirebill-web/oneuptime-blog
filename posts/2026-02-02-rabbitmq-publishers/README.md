@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, NodeJS, Python, Distributed Systems, Microservices, Backend
+Tags: RabbitMQ, Message Queue, NodeJS, Python, Distributed System, Microservice, Backend
 
 Description: Learn how to build robust RabbitMQ publishers in Node.js and Python.
 

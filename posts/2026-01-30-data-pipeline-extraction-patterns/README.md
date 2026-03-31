@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, ETL, Data Extraction, Integration
+Tags: Data Pipeline, ETL, Data Extraction, Integration
 
 Description: Learn to build data extraction patterns for reliably pulling data from various source systems.
 

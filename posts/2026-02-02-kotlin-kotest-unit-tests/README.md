@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kotlin, Kotest, Testing, Unit Tests, TDD
+Tags: Kotlin, Kotest, Testing, Unit Test, TDD
 
 Description: Learn how to write expressive and maintainable unit tests in Kotlin using Kotest, covering test styles, matchers, data-driven testing, and mocking patterns.
 

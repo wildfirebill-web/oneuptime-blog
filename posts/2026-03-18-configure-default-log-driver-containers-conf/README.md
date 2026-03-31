@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Logging
+Tags: Podman, Container, DevOps, Configuration, Logging
 
 Description: Learn how to configure the default container log driver in containers.conf to control how Podman captures and stores container output.
 

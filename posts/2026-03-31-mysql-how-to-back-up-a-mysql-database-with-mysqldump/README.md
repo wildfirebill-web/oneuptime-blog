@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Backup, Mysqldump, Administration, Disaster Recovery
+Tags: MySQL, Backup, mysqldump, Administration, Disaster Recovery
 
 Description: Learn how to use mysqldump to create logical backups of MySQL databases, including full database, single table, and compressed backup options.
 

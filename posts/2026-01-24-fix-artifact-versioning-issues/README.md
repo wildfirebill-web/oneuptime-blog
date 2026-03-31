@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DevOps, CI/CD, Versioning, Semantic Versioning, Docker, Artifacts, Release Management
+Tags: DevOps, CI/CD, Versioning, Semantic Versioning, Docker, Artifact, Release Management
 
 Description: Learn how to implement consistent artifact versioning strategies that prevent deployment confusion and enable reliable rollbacks.
 

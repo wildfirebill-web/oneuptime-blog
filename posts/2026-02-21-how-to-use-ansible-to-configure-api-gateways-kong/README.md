@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Kong, API Gateway, Microservices, DevOps
+Tags: Ansible, Kong, API Gateway, Microservice, DevOps
 
 Description: How to deploy and configure Kong API Gateway using Ansible, including service routing, plugin setup, and rate limiting configuration.
 

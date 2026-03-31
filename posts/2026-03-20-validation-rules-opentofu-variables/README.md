@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Validation, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Validation, Infrastructure as Code, DevOps
 
 Description: A guide to adding validation rules to OpenTofu variables to catch configuration errors before infrastructure is modified.
 

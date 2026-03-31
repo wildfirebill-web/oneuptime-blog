@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Telemetry, YAML, Cheat Sheet, Observability, Metrics
+Tags: Istio, Telemetry, YAML, Cheat Sheet, Observability, Metric
 
 Description: Complete cheat sheet for writing Istio Telemetry API YAML to configure metrics, access logging, and distributed tracing.
 

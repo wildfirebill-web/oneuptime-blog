@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Elasticsearch, Logs, Traces, Observability, Backend, Search
+Tags: OpenTelemetry, Elasticsearch, Log, Trace, Observability, Backend, Search
 
 Description: Step-by-step guide to configuring Elasticsearch as a backend for OpenTelemetry logs and traces with the Collector, index management, and querying tips.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Multi-Network
+Tags: Podman, Container, DevOps, Networking, Multi-Network
 
 Description: Learn how to connect running containers to additional Podman networks for multi-network architectures.
 

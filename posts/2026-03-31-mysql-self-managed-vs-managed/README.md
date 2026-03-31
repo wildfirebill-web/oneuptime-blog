@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Architecture, Cloud, Database, Operations
+Tags: MySQL, Architecture, Cloud, Database, Operation
 
 Description: Compare self-managed and managed MySQL options across cost, control, operational overhead, and compliance requirements to choose the right approach for your team.
 

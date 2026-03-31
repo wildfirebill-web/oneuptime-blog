@@ -1,8 +1,8 @@
 # What Is Granule in ClickHouse and Why It Matters for Performance
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Granule, Performance, Index, Internals
+Tags: ClickHouse, Granule, Performance, Index, Internal
 
 Description: Understand what a granule is in ClickHouse, how the sparse primary index uses granules for query pruning, and how to tune granule size for better performance.
 

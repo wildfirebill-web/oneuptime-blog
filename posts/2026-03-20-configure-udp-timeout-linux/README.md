@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Timeout, Linux, Sockets, Networking, Configuration
+Tags: UDP, Timeout, Linux, Socket, Networking, Configuration
 
 Description: Configure UDP socket timeout values for receive operations, connection tracking, and application-level timeouts to prevent hanging UDP operations.
 

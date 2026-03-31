@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Locking, Configuration, Performance
+Tags: MySQL, InnoDB, Locking, Configuration, Performance
 
 Description: Learn how to configure innodb_lock_wait_timeout in MySQL to control how long transactions wait for row-level locks before timing out.
 

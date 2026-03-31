@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Endpoint, EndpointSlice, Services, Dual-Stack
+Tags: Kubernetes, IPv6, Endpoint, EndpointSlice, Service, Dual-Stack
 
 Description: Verify that Kubernetes Services have IPv6 endpoints, inspect EndpointSlices for IPv6 addresses, and troubleshoot cases where IPv6 pod addresses are not included in service endpoints.
 

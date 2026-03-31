@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Service Mesh, IPv6, Observability, Tracing, Metrics, Kiali, Jaeger
+Tags: Service Mesh, IPv6, Observability, Tracing, Metric, Kiali, Jaeger
 
 Description: A guide to implementing comprehensive observability for IPv6 traffic in service meshes, covering metrics collection, distributed tracing, service topology visualization, and IPv6-specific...
 

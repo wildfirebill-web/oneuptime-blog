@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, DNS, Networking, Troubleshooting
+Tags: Podman, Container, DNS, Networking, Troubleshooting
 
 Description: A complete guide to diagnosing and fixing DNS resolution failures in Podman containers, covering systemd-resolved, custom networks, aardvark-dns, and resolv.conf configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, ConfigMaps, YAML
+Tags: Podman, Container, DevOps, Kubernetes, ConfigMap, YAML
 
 Description: Learn how to define and use Kubernetes ConfigMaps with podman kube play to inject configuration data into containers.
 

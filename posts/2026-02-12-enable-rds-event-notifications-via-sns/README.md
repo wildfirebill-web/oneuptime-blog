@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, RDS, SNS, Monitoring, Notifications
+Tags: AWS, RDS, SNS, Monitoring, Notification
 
 Description: Set up Amazon RDS event notifications through SNS to get real-time alerts for database failovers, maintenance events, configuration changes, and more.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Redis Stack, Redisearch, Redisbloom, Redistimeseries
+Tags: Redis, Redis Stack, RediSearch, RedisBloom, RedisTimeSeries
 
 Description: Compare Redis OSS and Redis Stack, covering the additional modules included in Redis Stack and when to use each distribution.
 

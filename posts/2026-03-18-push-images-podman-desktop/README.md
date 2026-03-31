@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Image Push, Registry
+Tags: Podman, Container, DevOps, Podman Desktop, Image Push, Registry
 
 Description: Learn how to push container images to registries using Podman Desktop and the CLI for sharing and deployment.
 

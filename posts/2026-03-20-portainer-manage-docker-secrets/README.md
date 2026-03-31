@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Secrets, Security, DevOps
+Tags: Portainer, Docker Swarm, Secret, Security, DevOps
 
 Description: Learn how to securely create, manage, and attach Docker Swarm secrets to services using Portainer for secrets management.
 

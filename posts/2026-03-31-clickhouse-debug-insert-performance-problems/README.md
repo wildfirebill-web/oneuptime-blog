@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, INSERT, Performance, Debug, Optimization
+Tags: ClickHouse, Insert, Performance, Debug, Optimization
 
 Description: Debug ClickHouse INSERT performance problems by profiling part creation, identifying small inserts, and tuning async insert and batch settings.
 

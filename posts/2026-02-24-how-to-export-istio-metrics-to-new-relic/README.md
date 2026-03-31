@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, New Relic, Metrics, Monitoring, Observability, OpenTelemetry
+Tags: Istio, New Relic, Metric, Monitoring, Observability, OpenTelemetry
 
 Description: Step-by-step guide to shipping Istio service mesh metrics to New Relic using Prometheus, OpenTelemetry, and native integrations.
 

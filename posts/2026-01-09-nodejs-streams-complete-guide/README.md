@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Streams, Performance, Backend, TypeScript, Tutorial
+Tags: NodeJS, Stream, Performance, Backend, TypeScript, Tutorial
 
 Description: A comprehensive course on Node.js Streams - from basic concepts and simple examples to advanced real-world patterns like file processing, HTTP streaming, and data pipelines.
 

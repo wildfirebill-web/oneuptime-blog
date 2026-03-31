@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Registry, Multi-Tenant, Container Images, Access Control
+Tags: Portainer, Docker, Registry, Multi-Tenant, Container Image, Access Control
 
 Description: Configure separate Docker registries per tenant in Portainer so each team can only access and deploy their own images, providing image-level multi-tenancy isolation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Environment Files, Configuration
+Tags: Podman, Container, DevOps, Quadlet, Environment Files, Configuration
 
 Description: Learn how to use environment files with Podman Quadlet to load multiple environment variables from external files.
 

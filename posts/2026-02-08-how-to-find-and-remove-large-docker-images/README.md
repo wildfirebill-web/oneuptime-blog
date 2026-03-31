@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Images, Disk Space, Cleanup, DevOps, Storage Management
+Tags: Docker, Image, Disk Space, Cleanup, DevOps, Storage Management
 
 Description: Learn how to identify oversized Docker images consuming disk space and safely remove them to reclaim storage on your system.
 

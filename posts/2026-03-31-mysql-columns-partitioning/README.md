@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Partition, COLUMNS, Range, Performance
+Tags: MySQL, Partition, Column, Range, Performance
 
 Description: Learn how to use RANGE COLUMNS and LIST COLUMNS partitioning in MySQL to partition on non-integer types like dates, strings, and multiple columns.
 

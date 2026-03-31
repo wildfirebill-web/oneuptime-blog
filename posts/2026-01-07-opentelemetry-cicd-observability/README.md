@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, CI/CD, DevOps, Observability, GitHub Actions, Jenkins
+Tags: OpenTelemetry, CI/CD, DevOps, Observability, GitHub Action, Jenkins
 
 Description: A guide to instrumenting CI/CD pipelines with OpenTelemetry for build and deployment visibility.
 

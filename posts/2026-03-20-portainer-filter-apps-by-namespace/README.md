@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, Application, DevOps
+Tags: Portainer, Kubernetes, Namespace, Application, DevOps
 
 Description: Learn how to filter and view applications by namespace in Portainer to quickly find and manage workloads across a multi-namespace Kubernetes cluster.
 

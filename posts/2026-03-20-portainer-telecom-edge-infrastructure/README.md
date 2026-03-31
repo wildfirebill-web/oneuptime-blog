@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Telecommunications, Edge Computing, Portainer, Docker, 5G, NFV, Network Functions
+Tags: Telecommunications, Edge Computing, Portainer, Docker, 5G, NFV, Network Function
 
 Description: Deploy and manage containerized network functions and edge applications at telecom sites using Portainer to simplify NFV workload lifecycle management.
 

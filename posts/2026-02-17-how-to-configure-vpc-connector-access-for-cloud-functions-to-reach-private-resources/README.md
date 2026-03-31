@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, VPC, Networking, Serverless
+Tags: GCP, Cloud Function, VPC, Networking, Serverless
 
 Description: Step-by-step guide to configuring Serverless VPC Access connectors for Google Cloud Functions to securely reach private resources like Cloud SQL, Memorystore, and internal APIs.
 

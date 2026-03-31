@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Update, DevOps
+Tags: Portainer, Docker, Image, Update, DevOps
 
 Description: Learn how to use Portainer's image update indicators to detect when newer versions of your container images are available in the registry.
 

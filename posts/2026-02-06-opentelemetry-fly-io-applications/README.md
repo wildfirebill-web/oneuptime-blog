@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Fly.io, Observability, Docker, Tracing, Metrics, Distributed Systems
+Tags: OpenTelemetry, Fly.io, Observability, Docker, Tracing, Metric, Distributed System
 
 Description: Step-by-step guide to setting up OpenTelemetry on Fly.io applications for distributed tracing, metrics collection, and full-stack observability.
 

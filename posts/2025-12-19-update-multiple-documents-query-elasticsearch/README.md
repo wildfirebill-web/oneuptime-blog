@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Update By Query, Bulk Operations, Painless Script, Data Management
+Tags: Elasticsearch, Update By Query, Bulk Operation, Painless Script, Data Management
 
 Description: Learn how to update multiple documents in Elasticsearch using the Update By Query API.
 

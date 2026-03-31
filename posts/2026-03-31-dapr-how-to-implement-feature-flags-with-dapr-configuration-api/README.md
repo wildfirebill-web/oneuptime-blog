@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Configuration API, Feature Flags, Dynamic Configuration, Microservices
+Tags: Dapr, Configuration API, Feature Flag, Dynamic Configuration, Microservice
 
 Description: Learn how to implement feature flags using the Dapr Configuration API backed by Redis, enabling dynamic feature toggles across microservices without restarts.
 

@@ -1,6 +1,6 @@
 # How to Configure MongoDB WiredTiger Journal Settings
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, WiredTiger, Journal, Storage, Durability
 

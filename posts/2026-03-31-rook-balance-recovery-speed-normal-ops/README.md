@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Recovery, Performance, Operations, Tuning
+Tags: Rook, Ceph, Recovery, Performance, Operation, Tuning
 
 Description: Learn strategies for balancing Ceph data recovery speed against normal client I/O performance using priority flags, throttling parameters, and operational scheduling.
 

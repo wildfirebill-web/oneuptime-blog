@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Registry
+Tags: OpenTofu, Terraform, IaC, Module, Registry
 
 Description: Learn how to publish your OpenTofu modules to the public registry so the community can discover and use them.
 

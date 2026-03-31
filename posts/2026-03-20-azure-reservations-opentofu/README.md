@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Reservations, Cost Optimization, Infrastructure as Code
+Tags: OpenTofu, Azure, Reservation, Cost Optimization, Infrastructure as Code
 
 Description: Learn how to purchase and manage Azure Reservations with OpenTofu to reduce costs on VMs, SQL databases, and other Azure services with 1 or 3-year commitments.
 

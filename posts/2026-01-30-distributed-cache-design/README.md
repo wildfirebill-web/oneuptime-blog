@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Caching, Distributed Systems, Redis, Architecture
+Tags: Caching, Distributed System, Redis, Architecture
 
 Description: Learn to build distributed cache design for scalable caching across multiple nodes.
 

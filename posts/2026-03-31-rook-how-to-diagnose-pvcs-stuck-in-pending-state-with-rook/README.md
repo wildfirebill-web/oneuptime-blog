@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Troubleshooting, Pvc, Kubernetes, Storage
+Tags: Rook, Ceph, Troubleshooting, PVC, Kubernetes, Storage
 
 Description: Diagnose and fix PersistentVolumeClaims stuck in Pending state in Rook-Ceph by checking provisioner logs, CSI pods, and pool health.
 

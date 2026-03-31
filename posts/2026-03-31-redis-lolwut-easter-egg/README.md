@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, LOLWUT, Easter Egg, Version Check, CLI
+Tags: Redis, Debugging, Server
 
-Description: Learn about the LOLWUT command in Redis, a fun easter egg that generates ASCII art and also displays the Redis version, making it a creative version check tool.
+Description: Explore the Redis LOLWUT command - an Easter egg that displays artistic output along with the Redis version for quick version checks.
 
 ---
 

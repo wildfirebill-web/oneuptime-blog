@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, JSON, JSONB, Arrays, Data Processing, NoSQL
+Tags: PostgreSQL, JSON, JSONB, Array, Data Processing, NoSQL
 
 Description: Learn how to extract, query, and manipulate JSON array elements in PostgreSQL. This guide covers array indexing, iteration, filtering, and aggregation techniques for JSON data.
 

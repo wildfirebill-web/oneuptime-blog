@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, IPv6, Sockets, Networking, ServerSocket, NIO, Socket Programming
+Tags: Java, IPv6, Socket, Networking, ServerSocket, NIO, Socket Programming
 
 Description: Create IPv6 TCP and UDP sockets in Java using ServerSocket, Socket, DatagramSocket, and NIO channels for both synchronous and asynchronous IPv6 networking.
 

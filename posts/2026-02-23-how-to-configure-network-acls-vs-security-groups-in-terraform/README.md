@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Network ACLs, Security Groups, AWS, VPC, Networking, Security
+Tags: Terraform, Network ACLs, Security Group, AWS, VPC, Networking, Security
 
 Description: Learn the differences between Network ACLs and Security Groups in AWS and how to configure both effectively with Terraform for layered network security.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Cleanup
+Tags: Podman, Container, DevOps, Pod, Cleanup
 
 Description: Learn how to remove Podman pods and their containers to free up system resources.
 

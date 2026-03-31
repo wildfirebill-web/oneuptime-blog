@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud Platform, Cloud Functions, Serverless, FaaS, Event-Driven Architecture
+Tags: GCP, Google Cloud Platform, Cloud Function, Serverless, FaaS, Event-Driven Architecture
 
 Description: Learn how to configure and deploy Google Cloud Functions with proper triggers, environment variables, networking, and security settings.
 

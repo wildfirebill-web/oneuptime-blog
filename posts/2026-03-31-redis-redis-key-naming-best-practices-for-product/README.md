@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Key Naming, Best Practices, Production, Naming Conventions
+Tags: Redis, Key Naming, Best Practice, Production, Naming Convention
 
 Description: Learn proven Redis key naming conventions that improve readability, prevent collisions, enable efficient scanning, and simplify debugging in production.
 

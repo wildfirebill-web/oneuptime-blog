@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, LAG, Window Function, TIMESTAMPDIFF, Analytics
+Tags: MySQL, Lag, Window Function, TIMESTAMPDIFF, Analytics
 
 Description: Learn how to calculate elapsed time between consecutive events in MySQL using LAG(), TIMESTAMPDIFF(), and LEAD() window functions for funnel and session analysis.
 

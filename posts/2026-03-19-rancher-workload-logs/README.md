@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Workloads
+Tags: Rancher, Kubernetes, Workload
 
 Description: Learn how to view and manage workload logs in Rancher using the UI, kubectl, and log aggregation tools for effective debugging.
 

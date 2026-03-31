@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, For Expressions, Filtering, Collections, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, For Expressions, Filtering, Collection, Infrastructure as Code, DevOps
 
 Description: A guide to using for expressions with if clauses in OpenTofu to filter collections and select specific elements.
 

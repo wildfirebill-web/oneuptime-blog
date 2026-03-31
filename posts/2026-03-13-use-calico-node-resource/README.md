@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Node, BGP, Operations
+Tags: Calico, Kubernetes, Networking, Node, BGP, Operation
 
 Description: Practical usage patterns for Calico Node resources, including per-node BGP AS number assignments, multi-homed node configuration, inspecting node state, and using Node resources in operational...
 

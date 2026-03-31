@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $nin, Not In, Query Operators, Exclusion Queries, Node.js
+Tags: MongoDB, $nin, NOT IN, Query Operator, Exclusion Queries, Node.js
 
 Description: Learn how to use the MongoDB $nin operator to exclude documents matching any value in a specified list, with examples, array behavior, and performance considerations.
 

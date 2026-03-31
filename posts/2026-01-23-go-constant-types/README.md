@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Constants, Types, Untyped Constants, Iota, Best Practice
+Tags: Go, Golang, Constants, Type, Untyped Constants, Iota, Best Practice
 
 Description: Master Go's unique constant system including untyped constants, default types, precision, and the iota keyword for elegant enum-like patterns.
 

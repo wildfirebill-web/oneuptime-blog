@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, EC2 Fleet, Spot Instances, Cost Optimization, Auto Scaling
+Tags: AWS, EC2, EC2 Fleet, Spot Instance, Cost Optimization, Auto Scaling
 
 Description: Use EC2 Fleet to provision a mix of On-Demand and Spot instances across multiple instance types and availability zones for cost-effective, resilient deployments.
 

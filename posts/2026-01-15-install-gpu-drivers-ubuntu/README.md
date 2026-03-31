@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, GPU, NVIDIA, AMD, Drivers, Tutorial
+Tags: Ubuntu, GPU, NVIDIA, AMD, Driver, Tutorial
 
 Description: Complete guide to installing NVIDIA and AMD GPU drivers on Ubuntu for graphics and compute workloads.
 

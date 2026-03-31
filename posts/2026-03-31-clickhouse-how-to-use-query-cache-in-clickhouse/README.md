@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Performance, Caching, Query Optimization
+Tags: ClickHouse, Performance, Caching, Query Optimization
 
 Description: Configure and use ClickHouse's built-in query cache to speed up repeated queries by storing and reusing query results.
 

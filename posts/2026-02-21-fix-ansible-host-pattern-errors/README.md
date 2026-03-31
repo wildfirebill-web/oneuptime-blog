@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Troubleshooting, Inventory, Patterns, DevOps
+Tags: Ansible, Troubleshooting, Inventory, Pattern, DevOps
 
 Description: Fix Ansible host pattern matching errors by understanding pattern syntax, inventory structure, and group membership resolution.
 

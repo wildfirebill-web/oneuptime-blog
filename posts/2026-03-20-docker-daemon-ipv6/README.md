@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, Daemons, Configuration, Networking
+Tags: Docker, IPv6, Daemon, Configuration, Networking
 
 Description: Enable IPv6 support in the Docker daemon by editing daemon.json, configure IPv6 address pools, and restart Docker to provide IPv6 connectivity to containers.
 

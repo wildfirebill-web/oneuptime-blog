@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Services, ExternalIPs, IPv4, Networking, Load Balancing
+Tags: Kubernetes, Service, ExternalIPs, IPv4, Networking, Load Balancing
 
 Description: Use Kubernetes Service externalIPs to bind a Service to one or more specific external IPv4 addresses, enabling traffic routing to cluster pods from outside the cluster.
 

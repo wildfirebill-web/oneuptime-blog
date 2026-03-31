@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud SQL, PostgreSQL, Cross-Database Queries, Foreign Data Wrappers
+Tags: GCP, Cloud SQL, PostgreSQL, Cross-Database Queries, Foreign Data Wrapper
 
 Description: Learn how to implement cross-database queries in Cloud SQL PostgreSQL using foreign data wrappers, dblink, and other techniques for querying data across multiple databases.
 

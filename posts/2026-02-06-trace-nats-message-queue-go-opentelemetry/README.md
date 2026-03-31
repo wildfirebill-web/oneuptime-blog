@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Go, NATS, Message Queues, Distributed Tracing
+Tags: OpenTelemetry, Go, NATS, Message Queue, Distributed Tracing
 
 Description: Master distributed tracing for NATS message queue operations in Go using OpenTelemetry to gain visibility into asynchronous message flows.
 

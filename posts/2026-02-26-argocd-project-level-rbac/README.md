@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, RBAC, Projects
+Tags: ArgoCD, GitOps, Kubernetes, RBAC, Project
 
 Description: A practical guide to configuring project-level RBAC in ArgoCD using AppProject roles, JWT tokens, and group bindings for fine-grained team access control.
 

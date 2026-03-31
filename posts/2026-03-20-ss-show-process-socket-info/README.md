@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ss, Linux, Processes, Sockets, Networking, Diagnostics
+Tags: ss, Linux, Process, Socket, Networking, Diagnostic
 
 Description: Use ss -p to display the process name, PID, and file descriptor associated with each network socket for tracking connections to their owning applications.
 

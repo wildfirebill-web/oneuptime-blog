@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Cardinality, SDK Limits
+Tags: OpenTelemetry, Metric, Cardinality, SDK Limits
 
 Description: Troubleshoot silent data loss caused by the OpenTelemetry SDK capping metric cardinality at the default 2000 limit.
 

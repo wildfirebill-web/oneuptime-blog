@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Infrastructure as Code, Types, Functions
+Tags: Terraform, HCL, Infrastructure as Code, Type, Function
 
 Description: Learn how to convert between types in Terraform using built-in conversion functions, understand automatic type coercion, and handle common type mismatch scenarios.
 

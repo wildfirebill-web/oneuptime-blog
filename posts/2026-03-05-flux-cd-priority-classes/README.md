@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Priority Classes, Scheduling, Reliability, Resource Management
+Tags: Flux CD, GitOps, Kubernetes, Priority Class, Scheduling, Reliability, Resource Management
 
 Description: Learn how to assign Kubernetes Priority Classes to Flux CD controllers to ensure they are scheduled and retained during node pressure events.
 

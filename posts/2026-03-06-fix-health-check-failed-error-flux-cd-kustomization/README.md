@@ -1,6 +1,6 @@
 # How to Fix 'health check failed' Error in Flux CD Kustomization
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, Health Check, Kustomization, Troubleshooting, Kubernetes, GitOps, Readiness
 

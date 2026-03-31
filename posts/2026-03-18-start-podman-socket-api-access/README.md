@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, API, Sockets, Docker Compatibility
+Tags: Podman, Container, DevOps, API, Socket, Docker Compatibility
 
 Description: Learn how to start and configure the Podman socket to enable REST API access for automation tools, CI/CD pipelines, and Docker-compatible clients.
 

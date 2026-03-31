@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, UDP, Broadcast, IPv4, Sockets, Networking
+Tags: C, UDP, Broadcast, IPv4, Socket, Networking
 
 Description: Create a UDP broadcast sender and receiver in C using the SO_BROADCAST socket option to send datagrams to all hosts on the local subnet.
 

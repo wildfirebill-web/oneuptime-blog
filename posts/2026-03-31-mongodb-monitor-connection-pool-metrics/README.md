@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Connection Pool, Monitoring, Metrics, Observability
+Tags: MongoDB, Connection Pool, Monitoring, Metric, Observability
 
 Description: Monitor MongoDB driver connection pool metrics using pool events, server status commands, and observability tools to detect exhaustion and optimize pool configuration.
 

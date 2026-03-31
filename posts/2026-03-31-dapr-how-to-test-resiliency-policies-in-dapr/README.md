@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Resiliency, Testing, Chaos Engineering, Microservices
+Tags: Dapr, Resiliency, Testing, Chaos Engineering, Microservice
 
 Description: Learn how to test Dapr resiliency policies by simulating failures, observing retry behavior, and verifying circuit breakers work correctly in your microservices.
 

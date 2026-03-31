@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory Optimization, Commands, Internals, Debugging
+Tags: Redis, Memory Optimization, Command, Internal, Debugging
 
 Description: Learn how to use OBJECT REFCOUNT in Redis to check how many internal references point to a key's value object, revealing Redis's integer sharing and memory optimization behavior.
 

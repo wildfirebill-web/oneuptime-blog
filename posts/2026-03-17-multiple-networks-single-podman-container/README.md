@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Multi-Network
+Tags: Podman, Container, DevOps, Networking, Multi-Network
 
 Description: Learn how to attach a single Podman container to multiple networks for segmented communication.
 

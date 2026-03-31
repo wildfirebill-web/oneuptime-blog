@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Lifecycle, Container Management
+Tags: Podman, Container, DevOps, Container Lifecycle, Container Management
 
 Description: Learn how to gracefully stop running containers in Podman with configurable timeouts and signal handling.
 

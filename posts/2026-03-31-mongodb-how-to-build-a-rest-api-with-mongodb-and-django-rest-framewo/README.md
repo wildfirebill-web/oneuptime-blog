@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Django, Django Rest Framework, Python, Rest Api
+Tags: MongoDB, Django, Django REST Framework, Python, REST API
 
 Description: Learn how to build a REST API using Django REST Framework and djongo or pymongo to connect Django to MongoDB with serializers, views, and pagination.
 

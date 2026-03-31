@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Cold Start, Serverless, Performance, Azure, Cloud Computing, Optimization
+Tags: Azure Function, Cold Start, Serverless, Performance, Azure, Cloud Computing, Optimization
 
 Description: Learn practical techniques to diagnose and fix cold start latency issues in Azure Functions running on the Consumption plan.
 

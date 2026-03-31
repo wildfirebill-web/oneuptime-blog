@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Secret Management, Migration, Operations, Architecture
+Tags: Dapr, Secret Management, Migration, Operation, Architecture
 
 Description: Learn how to migrate Dapr secret store backends from one provider to another with zero downtime using dual-read patterns and staged cutover strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Erasure Coding, Storage, Kubernetes
+Tags: Rook, Ceph, Erasure Coding, Storage Pool, Kubernetes, Efficiency
 
 Description: Learn how to create and configure erasure coded pools in Ceph to reduce storage overhead while maintaining data durability across your cluster.
 

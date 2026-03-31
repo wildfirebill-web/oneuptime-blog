@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Upgrade, Zero Downtime, Service Mesh, DevOps, Operations
+Tags: Istio, Kubernetes, Upgrade, Zero Downtime, Service Mesh, DevOps, Operation
 
 Description: Learn how to upgrade Istio safely without causing downtime using canary upgrades, revision-based deployments, and proper rollback strategies.
 

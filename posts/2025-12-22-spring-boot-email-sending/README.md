@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Email, SMTP, JavaMail, Notifications
+Tags: Java, Spring Boot, Email, SMTP, JavaMail, Notification
 
 Description: Learn how to configure and send emails in Spring Boot applications.
 

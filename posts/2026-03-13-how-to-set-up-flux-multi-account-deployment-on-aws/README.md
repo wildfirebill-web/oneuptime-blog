@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, AWS, EKS, Multi-Account, Cross-Account, IAM, Organizations
+Tags: Flux, Kubernetes, GitOps, AWS, EKS, Multi-Account, Cross-Account, IAM, Organization
 
 Description: Learn how to set up Flux for multi-account deployments on AWS, managing multiple EKS clusters across different AWS accounts from a single Git repository.
 

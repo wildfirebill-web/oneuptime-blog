@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SCIM, Azure AD, Azure Functions, SaaS, User Provisioning, Identity Management, Automation
+Tags: SCIM, Azure AD, Azure Function, SaaS, User Provisioning, Identity Management, Automation
 
 Description: Implement SCIM provisioning for SaaS applications using Azure AD as the identity source and Azure Functions as the SCIM endpoint.
 

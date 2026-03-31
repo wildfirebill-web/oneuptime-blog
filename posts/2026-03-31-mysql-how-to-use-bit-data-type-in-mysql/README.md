@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Data Types, BIT, Database Design
+Tags: MySQL, Data Type, BIT, Database Design
 
 Description: Learn how to use the BIT data type in MySQL to store binary values, boolean flags, and packed bit fields efficiently.
 

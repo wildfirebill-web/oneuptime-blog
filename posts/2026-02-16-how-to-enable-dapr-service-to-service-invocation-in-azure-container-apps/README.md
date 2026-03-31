@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Container Apps, Dapr, Microservices, Service Invocation, Cloud Native, Distributed Systems
+Tags: Azure, Container Apps, Dapr, Microservice, Service Invocation, Cloud Native, Distributed System
 
 Description: Step-by-step guide to enabling Dapr sidecar and configuring service-to-service invocation between microservices on Azure Container Apps.
 

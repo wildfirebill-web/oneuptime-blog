@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, IPv4, Docker network inspect, Diagnostics
+Tags: Docker, Networking, IPv4, Docker network inspect, Diagnostic
 
 Description: Use docker network inspect to view complete IPv4 configuration for Docker networks including subnet, gateway, connected containers, and IPAM details.
 

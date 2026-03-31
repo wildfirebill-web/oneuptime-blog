@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Push Notifications, Queue, Mobile, Node.js, Lists
+Tags: Redis, Push Notification, Queue, Mobile, Node.js, List
 
 Description: Build a reliable mobile push notification queue with Redis Lists and Streams, supporting batching, retries, and priority routing for iOS and Android.
 

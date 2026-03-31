@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ClickHouse Keeper, Cluster, High Availability, Operations
+Tags: ClickHouse, ClickHouse Keeper, Cluster, High Availability, Operation
 
 Description: Complete step-by-step guide to deploying a production-ready 3-node ClickHouse Keeper cluster, from installation through health verification and monitoring.
 

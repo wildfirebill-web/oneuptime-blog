@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Runbook, Operations, Incident, Kubernetes
+Tags: Dapr, Runbook, Operation, Incident, Kubernetes
 
 Description: Create practical Dapr operations runbooks covering common failure scenarios, diagnostic commands, and step-by-step remediation procedures for on-call engineers.
 

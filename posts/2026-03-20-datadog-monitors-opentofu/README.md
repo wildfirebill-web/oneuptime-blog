@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Datadog, Infrastructure as Code, IaC, Monitors, Alerting
+Tags: OpenTofu, Datadog, Infrastructure as Code, IaC, Monitor, Alerting
 
 Description: Learn how to create Datadog metric, log, and APM monitors with notification channels using OpenTofu.
 

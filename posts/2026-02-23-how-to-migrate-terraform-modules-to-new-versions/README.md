@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Version Management, Migration, Infrastructure as Code
+Tags: Terraform, Module, Version Management, Migration, Infrastructure as Code
 
 Description: Learn how to safely upgrade Terraform modules to new versions including handling breaking changes, variable updates, and state transitions.
 

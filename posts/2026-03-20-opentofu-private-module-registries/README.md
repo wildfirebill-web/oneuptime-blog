@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules, Registry
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module, Registry
 
 Description: Learn how to configure and use private module registries with OpenTofu for distributing internal modules securely within your organization.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Next.js, React, Caching, ISR, API Routes, Edge Functions
+Tags: Redis, Next.js, React, Caching, ISR, API Route, Edge Function
 
 Description: A comprehensive guide to integrating Redis with Next.js applications, covering API route caching, ISR revalidation, session management, and edge function patterns.
 

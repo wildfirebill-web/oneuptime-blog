@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, AWX, Credentials, Security, Custom Types
+Tags: Ansible, AWX, Credential, Security, Custom Type
 
 Description: Create custom credential types in AWX to securely manage API keys, tokens, and service credentials with reusable injection patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, ECS, Fargate, Spot Instances, Cost Optimization
+Tags: AWS, ECS, Fargate, Spot Instance, Cost Optimization
 
 Description: Learn how to use Fargate Spot capacity providers with Amazon ECS to reduce container costs by up to 70% while maintaining application reliability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, End-to-End Tracing, Microservices, Distributed Tracing, Observability
+Tags: Istio, End-to-End Tracing, Microservice, Distributed Tracing, Observability
 
 Description: A complete walkthrough for setting up end-to-end distributed tracing across multiple microservices in an Istio service mesh.
 

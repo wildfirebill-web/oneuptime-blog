@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, VPC, Security Groups, Troubleshooting
+Tags: Terraform, AWS, VPC, Security Group, Troubleshooting
 
 Description: Fix the InvalidGroup.Duplicate error when creating security groups with Terraform, caused by naming conflicts and state drift in AWS VPC configurations.
 

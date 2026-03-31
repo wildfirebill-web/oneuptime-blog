@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Observability, Microservices, OpenTelemetry, Metrics, Logging, Tracing, Monitoring, SRE, DevOps
+Tags: Observability, Microservice, OpenTelemetry, Metric, Logging, Tracing, Monitoring, SRE, DevOps
 
 Description: A comprehensive guide to implementing the three pillars of observability - metrics, logs, and traces - in microservices architectures with practical examples and best practices.
 

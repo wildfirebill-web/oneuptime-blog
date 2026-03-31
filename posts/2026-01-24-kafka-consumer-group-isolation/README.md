@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Apache Kafka, Consumer Groups, Isolation, Distributed Systems, DevOps, Streaming
+Tags: Apache Kafka, Consumer Group, Isolation, Distributed System, DevOps, Streaming
 
 Description: Learn how to configure Kafka consumer group isolation to prevent resource contention and ensure reliable message processing across multiple applications.
 

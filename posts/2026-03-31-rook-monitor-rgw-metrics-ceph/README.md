@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Monitoring, Metrics, Prometheus, Grafana, Object Storage
+Tags: Rook, Ceph, Monitoring, Metric, Prometheus, Grafana, Object Storage
 
 Description: Monitor Ceph RGW performance and health metrics using Prometheus and Grafana to track request rates, latency, error rates, and storage utilization.
 

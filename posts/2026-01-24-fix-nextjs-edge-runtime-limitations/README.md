@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Next.js, Edge Runtime, Serverless, Performance, Middleware, Vercel, Node.js, API Routes
+Tags: Next.js, Edge Runtime, Serverless, Performance, Middleware, Vercel, Node.js, API Route
 
 Description: Learn how to identify and work around Edge Runtime limitations in Next.js, including unsupported Node.js APIs, module compatibility issues, and alternative patterns.
 

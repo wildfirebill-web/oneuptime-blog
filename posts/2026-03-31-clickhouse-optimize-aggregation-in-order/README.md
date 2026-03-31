@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, optimize_aggregation_in_order, Query Optimization, MergeTree, Performance
+Tags: ClickHouse, Database, Performance, Query, Aggregation, Configuration, optimize_aggregation_in_order
 
-Description: Learn how the optimize_aggregation_in_order setting enables memory-efficient aggregation by leveraging table sort order in ClickHouse MergeTree tables.
+Description: Learn how to enable optimize_aggregation_in_order in ClickHouse to exploit table sort order for faster GROUP BY operations with lower memory usage.
 
 ---
 

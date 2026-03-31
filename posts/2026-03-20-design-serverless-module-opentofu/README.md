@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Lambda, Serverless, AWS, Modules, API Gateway
+Tags: OpenTofu, Terraform, Lambda, Serverless, AWS, Module, API Gateway
 
 Description: Learn how to design a reusable Lambda serverless module for OpenTofu that handles function deployment, IAM roles, environment variables, and optional API Gateway integration.
 

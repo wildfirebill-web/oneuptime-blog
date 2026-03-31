@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Troubleshooting, K3s, CNI
+Tags: Calico, Kubernetes, Networking, Troubleshooting, k3s, CNI
 
 Description: Diagnose and fix common Calico installation issues on K3s clusters including CNI conflicts and CIDR mismatches.
 

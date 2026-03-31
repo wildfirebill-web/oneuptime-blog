@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Consumer Groups, Coordinator, Troubleshooting, Error Handling, Distributed Systems
+Tags: Kafka, Consumer Group, Coordinator, Troubleshooting, Error Handling, Distributed System
 
 Description: A comprehensive guide to diagnosing and resolving the COORDINATOR_NOT_AVAILABLE error in Apache Kafka consumer groups and transactions.
 

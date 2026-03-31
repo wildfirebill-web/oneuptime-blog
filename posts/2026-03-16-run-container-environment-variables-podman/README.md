@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Environment Variables, Configuration
+Tags: Podman, Container, DevOps, Environment Variable, Configuration
 
 Description: Learn how to pass environment variables to Podman containers for application configuration, secrets management, and runtime settings.
 

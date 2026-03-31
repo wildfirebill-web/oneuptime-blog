@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Security, Wireshark, Tools
+Tags: Ubuntu, Networking, Security, Wireshark, Tool
 
 Description: Learn how to use tshark, the command-line version of Wireshark, to capture and analyze network packets on Ubuntu with practical filtering and output examples.
 

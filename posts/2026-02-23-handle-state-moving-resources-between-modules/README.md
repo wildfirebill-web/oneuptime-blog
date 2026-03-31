@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, State Management, Modules, Refactoring, Infrastructure as Code
+Tags: Terraform, State Management, Module, Refactoring, Infrastructure as Code
 
 Description: A practical guide to moving Terraform resources between modules without destroying and recreating infrastructure, using state mv and moved blocks.
 

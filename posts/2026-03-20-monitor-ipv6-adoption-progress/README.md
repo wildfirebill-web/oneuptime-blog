@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Adoption, Monitoring, Metrics, Prometheus, Analytics
+Tags: IPv6, Adoption, Monitoring, Metric, Prometheus, Analytics
 
 Description: A guide to tracking and visualizing IPv6 adoption progress across your network infrastructure using metrics, dashboards, and weekly reports.
 

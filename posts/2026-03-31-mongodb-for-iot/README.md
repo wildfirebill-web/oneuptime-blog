@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, IoT, Time-series, Sensor, Schema
+Tags: MongoDB, IoT, Time-Series, Sensor, Schema
 
 Description: Learn how to store and query IoT sensor data in MongoDB using time-series collections, the bucket pattern, and aggregation pipelines for sensor analytics.
 

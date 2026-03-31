@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Ruby on Rails, PostgreSQL, Redis, Sidekiq, Docker Compose, Web Development
+Tags: Docker, Ruby On Rail, PostgreSQL, Redis, Sidekiq, Docker Compose, Web Development
 
 Description: Build a complete Ruby on Rails stack with PostgreSQL, Redis, and Sidekiq background jobs using Docker Compose for consistent development.
 

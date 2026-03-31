@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Bool, Boolean
+Tags: ClickHouse, SQL, Data Type, Bool, Boolean
 
 Description: Learn how ClickHouse's Bool type works, its relationship to UInt8, true/false literals, storage, and practical usage in queries.
 

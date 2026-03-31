@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Annotations, Configuration, DevOps
+Tags: Portainer, Kubernetes, Annotation, Configuration, DevOps
 
 Description: Learn how to add and manage Kubernetes annotations on applications in Portainer for metadata, tools integration, and advanced configuration.
 

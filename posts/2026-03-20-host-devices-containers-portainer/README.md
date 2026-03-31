@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Devices, IoT, Hardware
+Tags: Portainer, Docker, Device, IoT, Hardware
 
 Description: Map physical host devices including USB and serial ports to Docker containers in Portainer for hardware access.
 

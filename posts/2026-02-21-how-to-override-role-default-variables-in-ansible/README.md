@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Role, Variables, Configuration Management
+Tags: Ansible, Role, Variable, Configuration Management
 
 Description: Learn the different ways to override Ansible role default variables including play vars, inventory vars, extra vars, and role parameters.
 

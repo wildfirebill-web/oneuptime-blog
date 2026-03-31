@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Resource Groups, Infrastructure as Code, Organisation
+Tags: OpenTofu, Azure, Resource Group, Infrastructure as Code, Organisation
 
 Description: Learn how to create and manage Azure Resource Groups with OpenTofu as the foundational container for organising and managing Azure resources.
 

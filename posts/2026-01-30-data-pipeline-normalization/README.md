@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, Normalization, Data Modeling, ETL
+Tags: Data Pipeline, Normalization, Data Modeling, ETL
 
 Description: Learn to build data normalization for standardizing data formats and values in data pipelines.
 

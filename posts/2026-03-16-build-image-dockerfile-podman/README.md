@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Dockerfile
+Tags: Podman, Container, DevOps, Container Image, Build, Dockerfile
 
 Description: Learn how to build container images from Dockerfiles using Podman, with full compatibility for existing Docker-based workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, OCI
+Tags: OpenTofu, Terraform, IaC, Module, OCI
 
 Description: Learn how to use OCI (Open Container Initiative) registries as module sources in OpenTofu.
 

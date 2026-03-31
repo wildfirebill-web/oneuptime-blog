@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Random Numbers, Rand Function, Math Functions, Sql
+Tags: MySQL, Random Numbers, Rand Function, Math Function, SQL
 
 Description: Learn how to generate random integers and floats within a specific range in MySQL using RAND(), FLOOR(), and CEIL() with practical examples.
 

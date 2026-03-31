@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Connection, Monitoring, Configuration, Diagnostics
+Tags: MongoDB, Connection, Monitoring, Configuration, Diagnostic
 
 Description: Learn how to use the appName option in MongoDB connection strings to tag connections with application identifiers for easier monitoring and diagnostics.
 

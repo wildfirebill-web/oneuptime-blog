@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Comparison Operators, Expression, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Comparison Operator, Expression, Infrastructure as Code, DevOps
 
 Description: A guide to using comparison operators in OpenTofu HCL expressions to compare values and make conditional decisions.
 

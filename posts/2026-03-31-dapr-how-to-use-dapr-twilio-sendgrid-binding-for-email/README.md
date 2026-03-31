@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, SendGrid, Email, Bindings, Twilio
+Tags: Dapr, SendGrid, Email, Binding, Twilio
 
 Description: Learn how to use the Dapr Twilio SendGrid output binding to send transactional emails from your microservices using SendGrid's email API.
 

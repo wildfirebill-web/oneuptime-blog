@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Replication, Failover, High Availability, Operations
+Tags: Redis, Replication, Failover, High Availability, Operation
 
 Description: A step-by-step guide to manually promoting a Redis replica to primary during planned maintenance or emergency failover scenarios.
 

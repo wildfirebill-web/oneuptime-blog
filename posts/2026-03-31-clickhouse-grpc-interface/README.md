@@ -1,6 +1,6 @@
 # How to Configure ClickHouse gRPC Interface
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, gRPC, Networking, Protocol
 

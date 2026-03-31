@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, RBAC, Permissions, Security, Service Accounts
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, RBAC, Permission, Security, Service Account
 
 Description: Learn how to diagnose and fix RBAC permission errors in Flux controllers that prevent resource creation, updates, and cross-namespace operations.
 

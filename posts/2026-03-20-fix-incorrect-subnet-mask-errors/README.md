@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Subnet Mask, CIDR, Misconfiguration, Troubleshooting, Networks
+Tags: Subnet Mask, CIDR, Misconfiguration, Troubleshooting, Network
 
 Description: Learn how to detect and fix incorrect subnet mask configurations that cause devices to believe they're in different subnets, preventing communication even when hosts are on the same physical network.
 

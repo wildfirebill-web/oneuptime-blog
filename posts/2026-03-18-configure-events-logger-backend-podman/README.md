@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Logging, Configuration
+Tags: Podman, Container, DevOps, Monitoring, Event, Logging, Configuration
 
 Description: Learn how to configure the events logger backend in Podman to control where and how container events are stored and accessed.
 

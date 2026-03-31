@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Chatbot, Slack, Microsoft Teams, Notifications
+Tags: AWS, Chatbot, Slack, Microsoft Teams, Notification
 
 Description: Configure AWS Chatbot to send CloudWatch alarms, deployment notifications, and other AWS alerts directly to Slack and Microsoft Teams channels.
 

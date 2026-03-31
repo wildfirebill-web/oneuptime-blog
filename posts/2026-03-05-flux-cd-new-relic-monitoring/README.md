@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Monitoring, New Relic, Metrics, Observability
+Tags: Flux CD, GitOps, Kubernetes, Monitoring, New Relic, Metric, Observability
 
 Description: Learn how to integrate Flux CD metrics with New Relic to monitor reconciliation health, track GitOps performance, and set up alerts for pipeline failures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Squid, Monitoring, Cache Hit Rate, IPv4, Squidclient, Metrics, Performance
+Tags: Squid, Monitoring, Cache Hit Rate, IPv4, Squidclient, Metric, Performance
 
 Description: Learn how to monitor Squid proxy cache hit rates and performance metrics for IPv4 traffic using the cache manager interface and access log analysis.
 

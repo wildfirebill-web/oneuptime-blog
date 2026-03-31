@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Index, Performance, Metrics
+Tags: MongoDB, Monitoring, Index, Performance, Metric
 
 Description: Learn how to monitor MongoDB index hit ratio by comparing keysExamined and docsExamined metrics to assess query efficiency and detect missing or underused indexes.
 

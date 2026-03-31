@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Detached Mode
+Tags: Podman, Container, DevOps, Detached Mode
 
 Description: Learn how to run Podman containers in detached (background) mode, manage them, and monitor their output effectively.
 

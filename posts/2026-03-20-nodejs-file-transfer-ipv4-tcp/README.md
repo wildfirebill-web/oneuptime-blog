@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, TCP, IPv4, File Transfer, Networking, Streams, Net Module
+Tags: Node.js, TCP, IPv4, File Transfer, Networking, Stream, Net Module
 
 Description: Implement a simple file transfer protocol using Node.js TCP sockets over IPv4, with streaming support for large files and progress reporting.
 

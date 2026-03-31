@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Redis, Cluster, High Availability, Caching, Docker Compose, Distributed Systems, Sharding
+Tags: Docker, Redis, Cluster, High Availability, Caching, Docker Compose, Distributed System, Sharding
 
 Description: Set up a Redis cluster with multiple nodes in Docker for data sharding, high availability, and fault tolerance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Docker Compose, DevOps
+Tags: Portainer, Docker, Stack, Docker Compose, DevOps
 
 Description: Learn how to modify and update existing Docker Compose stacks in Portainer, including adding services, changing images, and updating environment variables.
 

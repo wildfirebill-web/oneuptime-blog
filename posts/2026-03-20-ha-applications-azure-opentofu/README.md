@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, High Availability, OpenTofu, Availability Zones, VMSS, App Service
+Tags: Azure, High Availability, OpenTofu, Availability Zone, VMSS, App Service
 
 Description: Learn how to deploy highly available applications on Azure using OpenTofu with Availability Zones, Virtual Machine Scale Sets, and zone-redundant load balancers.
 

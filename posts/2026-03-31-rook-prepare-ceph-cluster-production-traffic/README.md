@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Production, Hardening, Operations
+Tags: Ceph, Rook, Production, Hardening, Operation
 
 Description: Prepare a Ceph cluster for production traffic by hardening security, tuning performance settings, configuring alerting, and establishing operational procedures.
 

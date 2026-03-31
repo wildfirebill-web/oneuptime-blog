@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, PyMongo, Transactions, ACID, Python
+Tags: MongoDB, PyMongo, Transaction, ACID, Python
 
 Description: Learn how to use multi-document ACID transactions in MongoDB with PyMongo, including session management, commit, abort, and retry logic for transient errors.
 

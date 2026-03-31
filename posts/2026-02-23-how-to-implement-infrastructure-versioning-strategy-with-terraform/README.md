@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Versioning, Modules, Semantic Versioning, DevOps
+Tags: Terraform, Versioning, Module, Semantic Versioning, DevOps
 
 Description: Learn how to implement a comprehensive infrastructure versioning strategy with Terraform, covering module versioning, provider pinning, state versioning.
 

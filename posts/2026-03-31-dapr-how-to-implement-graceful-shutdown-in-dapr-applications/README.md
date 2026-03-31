@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Graceful Shutdown, Microservices, Kubernetes, Reliability, Signal Handling
+Tags: Dapr, Graceful Shutdown, Microservice, Kubernetes, Reliability, Signal Handling
 
 Description: Learn how to implement graceful shutdown in Dapr applications to drain in-flight requests and finish active subscriptions before terminating.
 

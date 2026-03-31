@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Stored Procedures, SQL, Database Programming
+Tags: MySQL, Stored Procedure, SQL, Database Programming
 
 Description: Learn how to create and call stored procedures in MySQL using CREATE PROCEDURE, with examples for input/output parameters, loops, and error handling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Docker, Container Registry, Image Pull
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Docker, Container Registry, Image Pull
 
 Description: Learn how to encrypt Docker registry credentials with SOPS and manage image pull secrets through Flux for private container registries.
 

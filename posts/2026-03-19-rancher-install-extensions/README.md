@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, UI Extensions, Plugins, Dashboard
+Tags: Rancher, Kubernetes, UI Extensions, Plugin, Dashboard
 
 Description: Learn how to install, manage, and troubleshoot Rancher UI extensions to add new features and integrations to your Rancher dashboard.
 

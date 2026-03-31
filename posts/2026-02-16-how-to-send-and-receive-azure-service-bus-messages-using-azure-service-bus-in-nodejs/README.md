@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Service Bus, Node.js, Message Queues, @azure/service-bus, Microservices, Event-Driven, JavaScript
+Tags: Azure Service Bus, Node.js, Message Queue, @azure/service-bus, Microservice, Event-Driven, JavaScript
 
 Description: Learn how to send and receive messages with Azure Service Bus using the @azure/service-bus SDK in Node.js for building reliable asynchronous messaging systems.
 

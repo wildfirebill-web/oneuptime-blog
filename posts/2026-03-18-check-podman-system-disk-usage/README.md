@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Disk Usage, Storage Management
+Tags: Podman, Container, DevOps, Disk Usage, Storage Management
 
 Description: Learn how to monitor and analyze disk usage across Podman images, containers, and volumes to keep your system storage under control.
 

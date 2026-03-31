@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, JSON, RedisJSON, Multi-key, Query
+Tags: Redis, JSON, RedisJSON, Multi-Key, Query
 
 Description: Learn how to use JSON.MGET in Redis to retrieve the same JSONPath from multiple keys in a single atomic command, reducing round trips.
 

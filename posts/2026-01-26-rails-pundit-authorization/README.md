@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ruby on Rails, Pundit, Authorization, Security, Policy Objects, RBAC, Backend Development
+Tags: Ruby On Rail, Pundit, Authorization, Security, Policy Objects, RBAC, Backend Development
 
 Description: Learn how to implement clean, maintainable authorization in Ruby on Rails applications using Pundit policies with practical examples and best practices.
 

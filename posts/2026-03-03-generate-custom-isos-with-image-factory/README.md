@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Image Factory, ISO, Custom Images, Bare Metal
+Tags: Talos Linux, Image Factory, ISO, Custom Image, Bare Metal
 
 Description: A practical guide to generating custom Talos Linux ISO images using Image Factory for bare metal deployments and testing environments.
 

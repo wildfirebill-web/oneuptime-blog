@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Storage, Logging, Diagnostics
+Tags: Rook, Ceph, Kubernetes, Storage, Logging, Diagnostic
 
 Description: Configure log collection in Rook-Ceph using the logCollector spec, set log rotation periodicity and size limits, and integrate with external log aggregation systems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Database, Connection Pooling, Microservices, Performance, Best Practice
+Tags: Database, Connection Pooling, Microservice, Performance, Best Practice
 
 Description: Best practices for managing database connections in microservices including pooling, timeouts, and connection lifecycle.
 

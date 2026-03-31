@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Multi-Architecture
+Tags: Podman, Container, DevOps, Container Image, Multi-Architecture
 
 Description: Learn how to pull container images for specific CPU architectures and operating systems using Podman's platform selection options.
 

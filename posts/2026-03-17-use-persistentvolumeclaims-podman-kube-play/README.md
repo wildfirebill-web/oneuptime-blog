@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, PersistentVolumeClaims, Storage
+Tags: Podman, Container, DevOps, Kubernetes, PersistentVolumeClaim, Storage
 
 Description: Learn how to use Kubernetes PersistentVolumeClaims in podman kube play to provide persistent storage to containers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, Leaderboards, Rankings, Beginner, Zadd
+Tags: Redis, Sorted Set, Leaderboard, Ranking, Beginner, ZADD
 
 Description: Learn how to use Redis sorted sets to build leaderboards and ranking systems with fast score updates and rank lookups.
 

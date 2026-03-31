@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Micrometer, Java, Metrics, Spring Boot, Observability
+Tags: OpenTelemetry, Micrometer, Java, Metric, Spring Boot, Observability
 
 Description: A practical comparison of OpenTelemetry and Micrometer for Java application metrics, covering APIs, Spring Boot integration, and migration considerations.
 

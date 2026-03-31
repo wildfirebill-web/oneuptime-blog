@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Nexus, Repository Manager, Artifacts, DevOps
+Tags: RHEL, Nexus, Repository Manager, Artifact, DevOps
 
 Description: Learn how to install and configure Sonatype Nexus Repository Manager on RHEL for managing build artifacts and proxying remote repositories.
 

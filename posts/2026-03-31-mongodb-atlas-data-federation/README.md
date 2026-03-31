@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Data federation, S3, Query
+Tags: MongoDB, Atlas, Data Federation, S3, Query
 
 Description: Learn how to use MongoDB Atlas Data Federation to query data stored in S3, Atlas clusters, and Atlas Online Archive with a single MQL or SQL interface.
 

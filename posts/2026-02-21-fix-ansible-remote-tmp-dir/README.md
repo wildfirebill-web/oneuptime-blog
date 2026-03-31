@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Troubleshooting, Temporary Files, SSH, Linux
+Tags: Ansible, Troubleshooting, Temporary File, SSH, Linux
 
 Description: Resolve Ansible remote tmp directory errors by configuring temp paths, fixing permissions, and handling restricted shell environments.
 

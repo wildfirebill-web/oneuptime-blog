@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, SimpleAggregateFunction, Aggregation
+Tags: ClickHouse, SQL, Data Type, SimpleAggregateFunction, Aggregation
 
 Description: Learn how SimpleAggregateFunction stores plain values that merge with simple operations like sum, min, max, and any in ClickHouse.
 

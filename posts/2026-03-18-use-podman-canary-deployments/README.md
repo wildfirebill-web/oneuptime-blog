@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Canary Deployments, CI/CD, Deployment Strategies
+Tags: Podman, Container, DevOps, Canary Deployment, CI/CD, Deployment Strategies
 
 Description: Learn how to implement canary deployments using Podman to gradually roll out new container versions with traffic splitting and automated health checks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Top-N, topK, Performance, Aggregation
+Tags: ClickHouse, Top-N, TopK, Performance, Aggregation
 
 Description: Learn how to implement efficient Top-N queries in ClickHouse using topK, ORDER BY LIMIT, and materialized views to find the most frequent or highest-value items.
 

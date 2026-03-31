@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Online Ddl, Alter Table, Schema Changes
+Tags: MySQL, Online DDL, ALTER TABLE, Schema Change
 
 Description: Online DDL in MySQL allows schema changes like adding indexes or columns to run concurrently with normal read and write operations, minimizing downtime.
 

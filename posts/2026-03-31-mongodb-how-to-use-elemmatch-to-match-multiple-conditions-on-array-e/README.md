@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Array Queries, $elemMatch, Query Operators, NoSQL
+Tags: MongoDB, Array Queries, $elemMatch, Query Operator, NoSQL
 
 Description: Learn how MongoDB's $elemMatch operator lets you apply multiple conditions to a single array element, preventing cross-element false positives in queries.
 

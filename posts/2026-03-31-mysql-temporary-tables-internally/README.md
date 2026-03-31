@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Temporary Table, InnoDB, TempTable, Internals
+Tags: MySQL, Temporary Table, InnoDB, TempTable, Internal
 
 Description: Learn how MySQL creates and manages temporary tables internally for sorting, GROUP BY, and subqueries, including the TempTable engine and disk spill behavior.
 

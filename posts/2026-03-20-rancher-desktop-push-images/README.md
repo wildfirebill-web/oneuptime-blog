@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, Container Registry, Images, Docker Hub, Push
+Tags: Rancher Desktop, Container Registry, Image, Docker Hub, Push
 
 Description: Configure authentication and push locally built container images to Docker Hub, GCR, or private registries.
 

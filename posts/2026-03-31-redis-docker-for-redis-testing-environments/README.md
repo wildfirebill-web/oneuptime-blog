@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Docker, Testing, Integration Tests, Docker Compose, DevOps
+Tags: Redis, Docker, Testing, Integration Test, Docker Compose, DevOps
 
 Description: Set up isolated Redis testing environments using Docker and Docker Compose to run integration tests with ephemeral Redis instances that start and stop with your test suite.
 

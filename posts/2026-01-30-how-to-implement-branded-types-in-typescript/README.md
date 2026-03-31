@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: TypeScript, Types, Branding, Type Safety
+Tags: TypeScript, Type, Branding, Type Safety
 
 Description: Learn how to use branded types in TypeScript to create distinct types that prevent accidental type mixing at compile time.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Aggregation, Observability
+Tags: OpenTelemetry, Metric, Aggregation, Observability
 
 Description: Learn how to build custom metric aggregations in OpenTelemetry to capture business-specific measurements that default aggregators cannot provide.
 

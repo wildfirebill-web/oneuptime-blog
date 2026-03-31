@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Aspire, Microservice, Orchestration, Cloud
+Tags: Dapr, DotNet, Aspire, Microservice, Orchestration, Cloud
 
 Description: Learn how to combine Dapr's distributed systems building blocks with .NET Aspire's local development orchestration for a powerful microservices setup.
 

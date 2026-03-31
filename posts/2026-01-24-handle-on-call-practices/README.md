@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: On-Call, DevOps, SRE, Incident Management, Team Management, Operations, Alerting
+Tags: On-Call, DevOps, SRE, Incident Management, Team Management, Operation, Alerting
 
 Description: A comprehensive guide to establishing healthy on-call practices, including rotation schedules, compensation, handoffs, and preventing burnout.
 

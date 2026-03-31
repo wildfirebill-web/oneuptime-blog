@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Bitwise Aggregation, Sql, Analytics
+Tags: ClickHouse, Bitwise Aggregation, SQL, Analytics
 
 Description: Learn how to use groupBitAnd, groupBitOr, and groupBitXor aggregate functions in ClickHouse to perform bitwise operations across rows.
 

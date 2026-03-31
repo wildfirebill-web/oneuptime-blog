@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Crash Collector, Resources, Pod, Monitoring
+Tags: Rook, Ceph, Kubernetes, Crash Collector, Resource, Pod, Monitoring
 
 Description: Configure resource requests and limits for the Rook-Ceph crash collector daemon pods to ensure crash reports are collected reliably without impacting cluster performance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Configuration, Drift, Operations, Infrastructure as Code
+Tags: ClickHouse, Configuration, Drift, Operation, Infrastructure as Code
 
 Description: Detect and remediate ClickHouse configuration drift across cluster nodes using config validation, version control, and automated consistency checks.
 

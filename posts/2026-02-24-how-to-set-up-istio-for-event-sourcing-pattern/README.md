@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Event Sourcing, Architecture, Service Mesh, Distributed Systems
+Tags: Istio, Event Sourcing, Architecture, Service Mesh, Distributed System
 
 Description: Configure Istio to support event sourcing architectures with proper routing for event stores, projections, and command handlers in a microservices environment.
 

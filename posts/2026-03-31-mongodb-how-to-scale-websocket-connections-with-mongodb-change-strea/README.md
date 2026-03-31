@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, WebSocket, Change Streams, Scaling, Node.js
+Tags: MongoDB, WebSocket, Change Stream, Scaling, Node.js
 
 Description: Learn how to scale real-time WebSocket applications backed by MongoDB change streams across multiple server instances using Redis pub/sub.
 

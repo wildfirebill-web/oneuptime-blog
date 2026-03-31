@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, NATS, Accounts, Security, Multi-Tenancy
+Tags: Flux CD, Kubernetes, GitOps, NATS, Account, Security, Multi-Tenancy
 
 Description: Manage NATS accounts and security configurations using Flux CD for GitOps-managed NATS multi-tenancy and access control.
 

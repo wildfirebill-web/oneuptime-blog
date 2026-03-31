@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Microservices, Architecture, DevOps, Docker Swarm
+Tags: Portainer, Docker, Microservice, Architecture, DevOps, Docker Swarm
 
 Description: Deploy a complete microservice architecture with API gateway, service discovery, and inter-service communication using Portainer and Docker Swarm.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $lookup, Joins, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $lookup, Joins, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $lookup stage to perform left outer joins between collections, including simple equality joins and complex pipeline-based joins.
 

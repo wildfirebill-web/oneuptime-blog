@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Backup, Production, mongodump, Disaster Recovery
+Tags: MongoDB, Backup, Production, Mongodump, Disaster Recovery
 
 Description: Learn how to set up reliable MongoDB backups for production using mongodump, filesystem snapshots, and Atlas automated backups with retention policies.
 

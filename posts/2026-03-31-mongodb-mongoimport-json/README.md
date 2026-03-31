@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, mongoimport, JSON, Data loading, Import
+Tags: MongoDB, Mongoimport, JSON, Data Loading, Import
 
 Description: Learn how to use mongoimport to load JSON files into MongoDB, including JSON arrays, BSON extended JSON, upsert modes, and error handling options.
 

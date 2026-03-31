@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, VXLAN, Bridge, Overlay Network, Layer 2, Networking, Containers
+Tags: Linux, VXLAN, Bridge, Overlay Network, Layer 2, Networking, Container
 
 Description: Attach a VXLAN interface to a Linux bridge to create a Layer 2 overlay network that connects containers or VMs on different hosts as if they share the same LAN.
 

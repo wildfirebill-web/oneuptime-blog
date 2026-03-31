@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Kernel, DKMS, Drivers, System Administration
+Tags: Ubuntu, Kernel, DKMS, Driver, System Administration
 
 Description: Learn to use DKMS on Ubuntu to automatically rebuild kernel modules when the kernel updates, keeping custom and out-of-tree drivers working across upgrades.
 

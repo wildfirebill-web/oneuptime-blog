@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Locust, Custom Metrics, Load Testing, Performance Testing, Python, Monitoring, Prometheus
+Tags: Locust, Custom Metric, Load Testing, Performance Testing, Python, Monitoring, Prometheus
 
 Description: Learn how to extend Locust with custom metrics to capture business-specific performance data beyond standard response times.
 

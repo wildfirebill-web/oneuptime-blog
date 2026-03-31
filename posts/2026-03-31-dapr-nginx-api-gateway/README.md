@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, NGINX, Gateway, Kubernetes, Proxy
+Tags: Dapr, Nginx, Gateway, Kubernetes, Proxy
 
 Description: Learn how to configure NGINX as an API gateway in front of Dapr-enabled microservices for routing, load balancing, and header management in Kubernetes.
 

@@ -1,6 +1,6 @@
 # How to Use Custom Key Schemes in Dapr State Management
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Key Design, Microservice, Best Practice
 

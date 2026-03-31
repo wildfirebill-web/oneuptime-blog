@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Request Deduplication, Idempotency, Microservices, Exactly-Once, Distributed Systems
+Tags: Redis, Request Deduplication, Idempotency, Microservice, Exactly-Once, Distributed System
 
 Description: A comprehensive guide to implementing request deduplication with Redis for exactly-once processing semantics in distributed microservices architectures.
 

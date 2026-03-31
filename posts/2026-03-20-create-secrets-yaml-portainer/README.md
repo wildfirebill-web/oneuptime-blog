@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Secrets, YAML, Security
+Tags: Portainer, Kubernetes, Secret, YAML, Security
 
 Description: Learn how to create Kubernetes Secrets by applying YAML manifests in Portainer, with proper base64 encoding.
 

@@ -1,6 +1,6 @@
 # How to Use ST_X() and ST_Y() in MySQL to Extract Coordinates
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, SQL, Spatial, GIS, Geometry, Database
 

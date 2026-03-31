@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas Search, Facet, Full-text search, Search
+Tags: MongoDB, Atlas Search, Facet, Full-Text Search, Search
 
 Description: Learn how to build faceted search navigation in MongoDB Atlas Search using the $searchMeta stage to return category counts alongside search results.
 

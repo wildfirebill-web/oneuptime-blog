@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Streams, Transform, Performance
+Tags: NodeJS, Stream, Transform, Performance
 
 Description: Learn how to implement custom Transform streams in Node.js for efficient data processing pipelines.
 

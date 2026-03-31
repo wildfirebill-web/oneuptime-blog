@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Cgroups, Devices, Security, Linux, Containers
+Tags: Podman, Cgroups, Device, Security, Linux, Container
 
 Description: A detailed guide to configuring device cgroup rules in Podman for fine-grained control over which devices containers can access, including practical examples for various device types.
 

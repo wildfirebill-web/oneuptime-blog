@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Epinio, Namespaces, Kubernetes, PaaS, Multi-Tenancy
+Tags: Epinio, Namespace, Kubernetes, PaaS, Multi-Tenancy
 
 Description: Create and manage Epinio namespaces for organizing applications and controlling multi-tenant access.
 

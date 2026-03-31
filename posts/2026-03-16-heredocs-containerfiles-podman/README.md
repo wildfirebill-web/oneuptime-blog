@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Build, Containerfile
+Tags: Podman, Container, DevOps, Build, Containerfile
 
 Description: Learn how to use heredoc syntax in Containerfiles with Podman to write inline scripts, configuration files, and multi-line commands more cleanly.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Log Aggregation, Architecture, Distributed Systems, Kafka, Microservices, Data Pipelines, Log Management
+Tags: Log Aggregation, Architecture, Distributed System, Kafka, Microservice, Data Pipeline, Log Management
 
 Description: Learn how to implement log aggregation patterns for distributed systems.
 

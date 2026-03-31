@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Transactions, MULTI, Exec, Watch, Atomicity, Concurrency
+Tags: Redis, Transaction, MULTI, EXEC, Watch, Atomicity, Concurrency
 
 Description: Learn how to use Redis transactions with MULTI/EXEC to execute multiple commands atomically.
 

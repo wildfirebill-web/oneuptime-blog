@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: netstat, Linux, TCP, UDP, Networking, Diagnostics
+Tags: netstat, Linux, TCP, UDP, Networking, Diagnostic
 
 Description: Filter netstat output to show only TCP or UDP connections, combine flags to create targeted views of network socket activity on Linux.
 

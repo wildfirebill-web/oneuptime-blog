@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Containers, Git, Linux
+Tags: RHEL, Container, Git, Linux
 
 Description: Step-by-step guide on deploy gitea with ci/cd and container registry using Red Hat Enterprise Linux 9.
 

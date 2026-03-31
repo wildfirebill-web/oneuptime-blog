@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, CLI, Developer Tools
+Tags: ArgoCD, GitOps, Kubernetes, CLI, Developer Tool
 
 Description: Build custom command-line tools that extend ArgoCD's CLI using its REST API and Go client library for team-specific deployment workflows and automation.
 

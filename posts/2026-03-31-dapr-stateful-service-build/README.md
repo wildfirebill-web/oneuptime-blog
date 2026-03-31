@@ -1,6 +1,6 @@
 # How to Build a Stateful Service with Dapr State Management
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Microservice, Redis, Stateful Service
 

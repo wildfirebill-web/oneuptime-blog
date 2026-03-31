@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Timestampdiff, Date Difference, Date Functions, Sql
+Tags: MySQL, TIMESTAMPDIFF, Date Difference, Date Function, SQL
 
 Description: Learn how to use MySQL's TIMESTAMPDIFF() function to calculate the difference between two datetime values in any unit from seconds to years.
 

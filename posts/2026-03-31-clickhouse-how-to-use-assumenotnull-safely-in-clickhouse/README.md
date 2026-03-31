@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, assumeNotNull, Nullable, Sql
+Tags: ClickHouse, NULL Handling, assumeNotNull, Nullable, SQL
 
 Description: Learn how to use assumeNotNull() in ClickHouse to strip the Nullable wrapper from a column type safely, and when it is appropriate to use.
 

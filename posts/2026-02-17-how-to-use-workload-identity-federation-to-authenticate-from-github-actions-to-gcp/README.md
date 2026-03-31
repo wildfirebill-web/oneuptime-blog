@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Workload Identity Federation, GitHub Actions, CI/CD, Google Cloud Security
+Tags: GCP, Workload Identity Federation, GitHub Action, CI/CD, Google Cloud Security
 
 Description: Learn how to use GCP Workload Identity Federation to authenticate GitHub Actions workflows to Google Cloud without storing service account keys as secrets.
 

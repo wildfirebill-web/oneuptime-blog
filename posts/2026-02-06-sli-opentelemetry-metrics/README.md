@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, SLI, Metrics, Observability
+Tags: OpenTelemetry, SLI, Metric, Observability
 
 Description: Learn how to define, instrument, and measure Service Level Indicators using OpenTelemetry metrics APIs and SDKs.
 

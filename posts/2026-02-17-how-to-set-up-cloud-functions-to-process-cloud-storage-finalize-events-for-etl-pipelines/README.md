@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cloud Storage, ETL, Data Pipelines
+Tags: GCP, Cloud Function, Cloud Storage, ETL, Data Pipeline
 
 Description: Build an ETL pipeline using Cloud Functions triggered by Cloud Storage finalize events to automatically process, transform, and load data files as they arrive.
 

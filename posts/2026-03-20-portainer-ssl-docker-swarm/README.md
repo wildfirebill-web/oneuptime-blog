@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, SSL, TLS, Docker-swarm, Security, Certificates
+Tags: Portainer, SSL, TLS, Docker-swarm, Security, Certificate
 
 Description: A guide to configuring SSL/TLS certificates for Portainer deployed on Docker Swarm using Docker Secrets for certificate management.
 

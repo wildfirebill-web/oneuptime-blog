@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Notification
 
 Description: Learn how to subscribe to specific ArgoCD application notifications to receive targeted alerts for deployment events, sync failures, and health changes on individual applications.
 

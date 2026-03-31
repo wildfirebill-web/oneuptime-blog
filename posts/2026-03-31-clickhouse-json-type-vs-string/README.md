@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Schema Design, Performance, Analytics
+Tags: ClickHouse, JSON, Schema Design, Performance, Analytics
 
 Description: Learn the differences between ClickHouse's native JSON data type and storing JSON in String columns with JSONExtract, and when to choose each approach for your workloads.
 

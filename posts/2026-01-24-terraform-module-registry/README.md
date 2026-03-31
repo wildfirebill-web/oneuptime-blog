@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, Module Registry, DevOps, Modules
+Tags: Terraform, Infrastructure as Code, Module Registry, DevOps, Module
 
 Description: A complete guide to publishing reusable Terraform modules to the public registry or private registries, covering module structure, versioning, documentation, and best practices for maintainability.
 

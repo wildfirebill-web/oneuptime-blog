@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Microservices, ServiceDiscovery, Architecture, Patterns
+Tags: Microservice, ServiceDiscovery, Architecture, Pattern
 
 Description: A practical guide to implementing service discovery patterns in microservices architectures for reliable and scalable communication.
 

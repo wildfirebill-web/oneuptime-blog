@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, EXPLAIN ANALYZE, Query Optimization, Performance, Execution Plans
+Tags: MySQL, EXPLAIN ANALYZE, Query Optimization, Performance, Execution Plan
 
 Description: Learn how to use EXPLAIN ANALYZE in MySQL 8 to profile query execution in real time, compare estimated vs actual row counts, and find bottlenecks.
 

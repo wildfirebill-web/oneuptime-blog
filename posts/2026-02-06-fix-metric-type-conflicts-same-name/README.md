@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Instrument Types, SDK
+Tags: OpenTelemetry, Metric, Instrument Types, SDK
 
 Description: Resolve metric type conflicts that occur when two instruments register the same metric name with incompatible types.
 

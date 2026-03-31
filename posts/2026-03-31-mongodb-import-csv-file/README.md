@@ -25,7 +25,7 @@ mongoimport \
 
 The `--headerline` flag tells `mongoimport` to use the first row as field names. A sample CSV might look like:
 
-```
+```text
 id,name,email,age,active
 1,Alice Smith,alice@example.com,30,true
 2,Bob Jones,bob@example.com,25,false

@@ -1,8 +1,8 @@
 # How to Monitor MySQL Replication with SHOW REPLICA STATUS
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Replication, Monitoring, SHOW REPLICA STATUS, Administration
+Tags: MySQL, Replication, Monitoring, Administration
 
 Description: Learn how to interpret SHOW REPLICA STATUS output to monitor replication health, measure lag, detect errors, and confirm GTID synchronization in MySQL.
 

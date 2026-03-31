@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Event-Driven, Kafka, NATS, Kubernetes, Microservices
+Tags: Rancher, Event-Driven, Kafka, NATS, Kubernetes, Microservice
 
 Description: Guide to building event-driven architectures on Rancher using Kafka, NATS, and Knative Eventing for decoupled microservices.
 

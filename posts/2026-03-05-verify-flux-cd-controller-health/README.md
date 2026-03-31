@@ -1,6 +1,6 @@
 # How to Verify Flux CD Controller Health and Readiness
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, GitOps, Kubernetes, Health Check, Monitoring, Observability
 

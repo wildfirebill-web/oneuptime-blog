@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Day 2 Operations, TLS, Cert-Manager, Certificates
+Tags: Flux CD, Kubernetes, GitOps, Day 2 Operations, TLS, Cert-Manager, Certificate
 
 Description: Automate and manage certificate renewals in Flux CD managed clusters using cert-manager deployed via GitOps so TLS certificates never expire unexpectedly.
 

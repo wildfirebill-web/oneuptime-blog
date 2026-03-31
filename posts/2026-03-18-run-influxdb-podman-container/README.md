@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, InfluxDB, Time Series, Monitoring, Metrics
+Tags: Podman, Container, DevOps, InfluxDB, Time Series, Monitoring, Metric
 
 Description: Learn how to run InfluxDB in a Podman container with persistent storage, automated setup, and data ingestion using the Flux query language.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Composite Actions, CI/CD, DevOps, Automation
+Tags: GitHub Action, Composite Actions, CI/CD, DevOps, Automation
 
 Description: Learn how to create reusable GitHub Actions composite actions to share workflow logic across repositories and reduce duplication.
 

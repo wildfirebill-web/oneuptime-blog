@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Circuit Breaker, Resilience, Fault Tolerance, Microservices
+Tags: Rust, Circuit Breaker, Resilience, Fault Tolerance, Microservice
 
 Description: A hands-on guide to implementing the circuit breaker pattern in Rust services, protecting your systems from cascading failures and improving overall reliability.
 

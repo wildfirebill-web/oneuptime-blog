@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Overlay, Volumes, Filesystem
+Tags: Podman, Container, DevOps, Overlay, Volumes, Filesystem
 
 Description: Learn how to use overlay mounts in Podman to layer directories and provide copy-on-write semantics for container volumes.
 

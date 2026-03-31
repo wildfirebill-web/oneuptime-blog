@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Next.js, API Routes, Backend, JavaScript, TypeScript, REST API, Web Development
+Tags: Next.js, API Route, Backend, JavaScript, TypeScript, REST API, Web Development
 
 Description: A complete guide to setting up and configuring API routes in Next.js for building full-stack applications.
 

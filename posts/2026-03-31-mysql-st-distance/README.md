@@ -1,6 +1,6 @@
 # How to Use ST_Distance() in MySQL for Distance Calculations
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, SQL, Spatial, GIS, ST_Distance, Database
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, CI/CD, Testing, Continuous Integration, GitHub Actions
+Tags: OpenTofu, CI/CD, Testing, Continuous Integration, GitHub Action
 
 Description: Learn how to build a comprehensive continuous testing pipeline for OpenTofu that runs linting, security scanning, unit tests, and integration tests at the right stages of the development workflow.
 

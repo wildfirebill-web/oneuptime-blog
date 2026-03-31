@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Configuration
+Tags: Podman, Container, DevOps, Registry, Configuration
 
 Description: A comprehensive guide to configuring container registries in Podman, covering system-wide and user-level settings for pulling and pushing images.
 

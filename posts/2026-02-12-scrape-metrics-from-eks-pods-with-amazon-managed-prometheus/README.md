@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Prometheus, EKS, Kubernetes, Metrics, Monitoring, AMP
+Tags: AWS, Prometheus, EKS, Kubernetes, Metric, Monitoring, AMP
 
 Description: Configure Prometheus metric scraping from EKS pods and send metrics to Amazon Managed Prometheus using service discovery and relabeling
 

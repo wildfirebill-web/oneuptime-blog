@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Linux, Security, AppArmor, Profiles
+Tags: Podman, Container, DevOps, Linux, Security, AppArmor, Profiles
 
 Description: Learn how to create and apply custom AppArmor profiles to Podman containers for mandatory access control on Debian and Ubuntu systems.
 

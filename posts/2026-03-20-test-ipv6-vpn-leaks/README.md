@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, VPN, VPN Leaks, Privacy Testing, Security Testing, Networks
+Tags: IPv6, VPN, VPN Leaks, Privacy Testing, Security Testing, Network
 
 Description: A guide to testing whether your VPN is leaking IPv6 traffic using command-line tools and online services, and interpreting the results.
 

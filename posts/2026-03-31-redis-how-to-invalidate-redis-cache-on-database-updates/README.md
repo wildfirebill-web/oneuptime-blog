@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cache Invalidation, Cache Consistency, Database, Best Practices
+Tags: Redis, Cache Invalidation, Cache Consistency, Database, Best Practice
 
 Description: Learn strategies for invalidating Redis cache entries reliably when the underlying database data changes, covering deletion, versioning, and tag-based approaches.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Security, Role
+Tags: Rancher, Kubernetes, RBAC, Permission, Security, Role
 
 Description: A step-by-step guide to auditing RBAC permissions in Rancher to identify excessive access, orphaned bindings, and security risks.
 

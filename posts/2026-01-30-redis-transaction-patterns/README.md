@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Transactions, MULTI EXEC, Atomic Operations
+Tags: Redis, Transaction, MULTI EXEC, Atomic Operation
 
 Description: Learn to implement Redis transactions with MULTI/EXEC, WATCH for optimistic locking, and Lua scripts for complex atomic operations.
 

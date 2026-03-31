@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Kustomize, GitOps, Configuration Management, DevOps
+Tags: k3s, Kubernetes, Kustomize, GitOps, Configuration Management, DevOps
 
 Description: Learn how to use Kustomize with K3s to manage environment-specific configurations without duplicating YAML manifests.
 

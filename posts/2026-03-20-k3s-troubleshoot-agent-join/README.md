@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Troubleshooting, Networking, DevOps
+Tags: k3s, Kubernetes, Troubleshooting, Networking, DevOps
 
 Description: A comprehensive troubleshooting guide for diagnosing and fixing issues when K3s agent nodes fail to join the cluster.
 

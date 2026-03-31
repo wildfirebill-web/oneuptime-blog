@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, Priority Classes, Configuration
+Tags: Longhorn, Kubernetes, Storage, Priority Class, Configuration
 
 Description: Configure Kubernetes Priority Classes for Longhorn components to ensure storage infrastructure pods are protected from eviction and scheduled appropriately.
 

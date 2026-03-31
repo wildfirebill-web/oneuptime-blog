@@ -1,8 +1,8 @@
 # How to Install MySQL on Windows 11
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Installation, Windows, Database, Configuration
+Tags: MySQL, Installation, Window, Database, Configuration
 
 Description: Install MySQL 8.0 on Windows 11 using the MySQL Installer, configure the server type, set the root password, and start the Windows service.
 

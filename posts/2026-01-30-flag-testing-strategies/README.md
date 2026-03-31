@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Testing, QA, Development
+Tags: Feature Flag, Testing, QA, Development
 
 Description: Learn how to test feature flags across all possible states and configurations.
 

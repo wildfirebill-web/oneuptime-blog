@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, CLI, OSD, CRUSH, Operations, Topology
+Tags: Rook, Ceph, CLI, OSD, CRUSH, Operation, Topology
 
 Description: Learn to read and use the ceph osd tree command to understand your cluster topology, OSD health, and CRUSH hierarchy.
 

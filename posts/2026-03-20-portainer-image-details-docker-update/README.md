@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Troubleshooting, Images, Docker Update
+Tags: Portainer, Docker, Troubleshooting, Image, Docker Update
 
 Description: Resolve 'Unable to Retrieve Image Details' errors in Portainer that appear after Docker Engine updates, caused by API changes, image format differences, and metadata compatibility issues.
 

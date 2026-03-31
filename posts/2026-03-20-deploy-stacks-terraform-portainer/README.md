@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Terraform, Stacks, Docker Compose, Deployment
+Tags: Portainer, Terraform, Stack, Docker Compose, Deployment
 
 Description: Learn how to deploy and manage Docker Compose stacks in Portainer using the Terraform provider for version-controlled deployments.
 

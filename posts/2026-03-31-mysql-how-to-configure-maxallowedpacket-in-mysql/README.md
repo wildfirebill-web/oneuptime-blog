@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Configuration, max_allowed_packet, Performance Tuning
+Tags: MySQL, Configuration, Max_allowed_packet, Performance Tuning
 
 Description: Learn how to configure max_allowed_packet in MySQL to handle large queries, BLOB data, and replication events without packet size errors.
 

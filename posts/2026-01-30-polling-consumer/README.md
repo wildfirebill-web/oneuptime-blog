@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Messaging, Patterns, Consumer, EIP
+Tags: Messaging, Pattern, Consumer, EIP
 
 Description: A practical guide to implementing the Polling Consumer pattern for reliable message retrieval from queues and channels.
 

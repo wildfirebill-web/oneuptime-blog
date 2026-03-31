@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, ZPOPMAX, ZPOPMIN, Priority Queue
+Tags: Redis, Sorted Set, ZPOPMAX, ZPOPMIN, Priority Queue
 
 Description: Learn how to use ZPOPMAX and ZPOPMIN in Redis to atomically pop the highest or lowest scored members from a sorted set for priority queue implementations.
 

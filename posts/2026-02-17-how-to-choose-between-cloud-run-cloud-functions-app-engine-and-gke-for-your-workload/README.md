@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Run, Cloud Functions, App Engine, GKE, Serverless, Kubernetes
+Tags: GCP, Cloud Run, Cloud Function, App Engine, GKE, Serverless, Kubernetes
 
 Description: A practical comparison of GCP compute options to help you pick the right platform for your workload based on real-world requirements.
 

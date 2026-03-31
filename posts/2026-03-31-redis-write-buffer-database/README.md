@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Write Buffer, Database, Performance, Write-Behind
 
-Description: Learn how to use Redis as a write buffer (write-behind cache) to absorb high-frequency writes and batch-flush them to the database, reducing write latency and DB load.
+Description: Learn how to use Redis as a write buffer to absorb high-frequency writes and batch-flush them to the database, reducing write latency and database load.
 
 ---
 

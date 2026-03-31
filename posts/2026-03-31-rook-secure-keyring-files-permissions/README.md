@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Security, Keyring, Permissions, Kubernetes
+Tags: Rook, Ceph, Security, Keyring, Permission, Kubernetes
 
 Description: Learn how to secure Ceph keyring files using proper Linux permissions, Kubernetes RBAC, and Secret management to prevent unauthorized access to cluster credentials.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, JSON, DDL, Schema, NoSQL
+Tags: MySQL, SQL, JSON, DDL, Schema
 
 Description: Store, query, and index JSON data in MySQL 5.7+ using the native JSON column type, JSON functions, and generated columns for indexing.
 

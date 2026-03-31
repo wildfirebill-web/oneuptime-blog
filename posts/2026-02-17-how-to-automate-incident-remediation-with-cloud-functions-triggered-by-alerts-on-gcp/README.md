@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Incident Remediation, Alerting, Automation, Pub/Sub
+Tags: GCP, Cloud Function, Incident Remediation, Alerting, Automation, Pub/Sub
 
 Description: Learn how to build automated incident remediation workflows using Cloud Functions triggered by Google Cloud Monitoring alerts via Pub/Sub on GCP.
 

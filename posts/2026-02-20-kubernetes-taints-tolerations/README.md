@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Taints, Tolerations, Scheduling, Isolation
+Tags: Kubernetes, Taints, Toleration, Scheduling, Isolation
 
 Description: Learn how to use taints and tolerations to isolate workloads, dedicate nodes, and control pod scheduling in Kubernetes.
 

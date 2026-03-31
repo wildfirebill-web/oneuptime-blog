@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Projects, Multi-Project
+Tags: Podman, Container, DevOps, podman-compose, Project, Multi-Project
 
 Description: Learn how to run multiple independent podman-compose projects simultaneously without naming conflicts or port collisions.
 

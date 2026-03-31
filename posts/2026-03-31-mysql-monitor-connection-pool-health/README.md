@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Connection Pool, Monitoring, Metrics, Observability
+Tags: MySQL, Connection Pool, Monitoring, Metric, Observability
 
 Description: Learn how to monitor MySQL connection pool health across HikariCP, SQLAlchemy, and mysql2 using metrics, logging, and server-side status variables.
 

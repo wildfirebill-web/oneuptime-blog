@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, Remote State, Data Source, Infrastructure as Code, DevOps
+Tags: OpenTofu, Output, Remote State, Data Source, Infrastructure as Code, DevOps
 
 Description: A guide to using terraform_remote_state data source to access output values from other OpenTofu configurations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Canary Promotion, Metrics, Deployment Strategy
+Tags: Istio, Kubernetes, Canary Promotion, Metric, Deployment Strategy
 
 Description: Implement metric-based canary promotion using Istio telemetry data to automatically advance or halt canary deployments based on real production performance.
 

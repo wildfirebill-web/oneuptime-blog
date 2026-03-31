@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Update Operators, $unset, Document Updates, NoSQL
+Tags: MongoDB, Update Operator, $unset, Document Updates, NoSQL
 
 Description: Learn how to use MongoDB's $unset update operator to permanently remove fields from documents, including nested fields and array elements.
 

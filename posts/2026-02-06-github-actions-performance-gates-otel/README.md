@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, GitHub Actions, Performance Gates, CI/CD, Automation
+Tags: OpenTelemetry, GitHub Action, Performance Gates, CI/CD, Automation
 
 Description: Implement automated performance gate checks in GitHub Actions that query OpenTelemetry metrics and fail builds when thresholds are exceeded.
 

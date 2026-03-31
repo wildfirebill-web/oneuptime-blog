@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environments, Policies, Governance, Compliance
+Tags: Portainer, Environment, Policies, Governance, Compliance
 
 Description: Implement consistent policies across multiple Portainer environments using groups, tags, and standardized access control configurations.
 

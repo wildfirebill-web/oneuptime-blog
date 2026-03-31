@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, Tofu output, CLI, Infrastructure as Code, DevOps, Scripting
+Tags: OpenTofu, Output, Tofu output, CLI, Infrastructure as Code, DevOps, Scripting
 
 Description: Learn how to use the tofu output command to read and extract output values from your infrastructure state for use in scripts and downstream automation.
 

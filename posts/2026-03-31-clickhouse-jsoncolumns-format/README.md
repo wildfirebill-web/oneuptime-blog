@@ -1,6 +1,6 @@
 # How to Use JSONColumns Format in ClickHouse
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Format, JSON, JSONColumns, DataExport
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Metrics, Prometheus, Monitoring, Observability
+Tags: Dapr, Metric, Prometheus, Monitoring, Observability
 
 Description: Learn how to enable and scrape Dapr sidecar metrics with Prometheus, and build Grafana dashboards to monitor service invocation rates, latencies, and component health.
 

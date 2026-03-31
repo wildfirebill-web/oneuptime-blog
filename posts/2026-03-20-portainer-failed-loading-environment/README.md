@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Troubleshooting, Environments, Self-Hosted
+Tags: Portainer, Docker, Troubleshooting, Environment, Self-Hosted
 
 Description: Resolve 'Failed Loading Environment' errors in Portainer caused by unreachable agents, stale environment data, credential issues, or Docker socket problems.
 

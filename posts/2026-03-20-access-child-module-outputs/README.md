@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Outputs, Infrastructure as Code, DevOps
+Tags: OpenTofu, Module, Output, Infrastructure as Code, DevOps
 
 Description: A guide to accessing and using output values from child modules in OpenTofu parent configurations.
 

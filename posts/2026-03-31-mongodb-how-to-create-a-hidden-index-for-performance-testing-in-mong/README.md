@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Hidden Index, Performance Testing, Index Management
+Tags: MongoDB, Index, Hidden Index, Performance Testing, Index Management
 
 Description: Learn how to create and use hidden indexes in MongoDB to evaluate the impact of removing an index without actually dropping it from the collection.
 

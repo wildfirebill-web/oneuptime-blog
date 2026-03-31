@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, MySQL, Database, SQL
+Tags: Podman, Container, DevOps, MySQL, Database, SQL
 
 Description: Learn how to run MySQL in a Podman container with persistent storage, custom configuration, and secure access.
 

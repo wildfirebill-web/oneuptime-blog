@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, NetworkManager, nmcli, Troubleshooting, Networking, Diagnostics
+Tags: Linux, NetworkManager, nmcli, Troubleshooting, Networking, Diagnostic
 
 Description: Troubleshoot NetworkManager connection problems using nmcli, journalctl logs, and network diagnostic tools to diagnose and resolve common issues.
 

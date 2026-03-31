@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Latency, Monitoring, Performance, Operations
+Tags: Redis, Latency, Monitoring, Performance, Operation
 
 Description: Learn how to use LATENCY RESET in Redis to clear recorded latency samples for specific events or all events, enabling clean baseline measurements.
 

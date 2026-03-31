@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Geospatial, Geohash, Sorted Set, Internals
+Tags: Redis, Geospatial, Geohash, Sorted Set, Internal
 
 Description: Learn how Redis geospatial commands use a sorted set with geohash scores to enable efficient radius and bounding-box proximity queries.
 

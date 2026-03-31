@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Environment Variables, TF_VAR_, Variables, CI/CD, Secrets, Infrastructure as Code
+Tags: OpenTofu, Environment Variable, TF_VAR_, Variable, CI/CD, Secret, Infrastructure as Code
 
 Description: Learn how to use the TF_VAR_ environment variable prefix to pass input variables to OpenTofu configurations without flags or var files, ideal for CI/CD pipelines and managing sensitive values.
 

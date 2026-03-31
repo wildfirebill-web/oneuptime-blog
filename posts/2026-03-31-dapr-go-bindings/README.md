@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Binding, Integration, Microservice, Sdk
+Tags: Dapr, Go, Binding, Integration, Microservice, SDK
 
 Description: Connect Go microservices to external systems like cron, Kafka, S3, and SMTP using Dapr input and output bindings without direct SDK dependencies.
 

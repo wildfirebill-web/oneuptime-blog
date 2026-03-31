@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Git, Webhooks, CI/CD
+Tags: Portainer, Stack, Git, Webhook, CI/CD
 
 Description: Configure Git webhook-based automatic stack updates in Portainer for immediate deployment on git push.
 

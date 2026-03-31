@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, High Availability, Clustering, Quorum Queues, Mirrored Queues, DevOps, Infrastructure, Reliability
+Tags: RabbitMQ, High Availability, Clustering, Quorum Queue, Mirrored Queues, DevOps, Infrastructure, Reliability
 
 Description: Learn how to configure RabbitMQ for high availability using quorum queues, cluster setup, and proper failover strategies.
 

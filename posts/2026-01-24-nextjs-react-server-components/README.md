@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Next.js, React, Server Components, App Router, Performance, SSR
+Tags: Next.js, React, Server Component, App Router, Performance, SSR
 
 Description: A practical guide to understanding and implementing React Server Components in Next.js, covering best practices, common pitfalls, and optimization techniques.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Lookup Plugins, Playbook Development, Data Types
+Tags: Ansible, Lookup Plugins, Playbook Development, Data Type
 
 Description: Master the wantlist parameter in Ansible lookup plugins to control return types and avoid common pitfalls with string vs list results.
 

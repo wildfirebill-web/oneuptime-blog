@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, COPY, ADD, Container Images
+Tags: Podman, Containerfile, COPY, ADD, Container Image
 
 Description: Understand the differences between COPY and ADD instructions in Podman Containerfiles, when to use each one, and why COPY is the preferred choice for most use cases.
 

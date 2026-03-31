@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Troubleshooting
+Tags: Podman, Container, DevOps, Logging, Troubleshooting
 
 Description: Learn how to diagnose and fix issues where Podman container logs are empty or missing, covering log driver problems, application output configuration, and storage issues.
 

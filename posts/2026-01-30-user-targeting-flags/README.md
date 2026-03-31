@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, DevOps, Personalization, SRE
+Tags: Feature Flag, DevOps, Personalization, SRE
 
 Description: Learn how to implement user-targeted feature flags for personalized experiences and beta testing.
 

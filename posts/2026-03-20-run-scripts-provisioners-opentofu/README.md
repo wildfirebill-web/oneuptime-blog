@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Provisioners
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Provisioner
 
 Description: Learn how to run shell scripts and commands with local-exec and remote-exec provisioners in OpenTofu, including script files, inline commands, and environment variables.
 

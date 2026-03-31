@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Table Maintenance, Mysqlcheck, Repair, Optimize
+Tags: MySQL, Table Maintenance, Mysqlcheck, Repair, OPTIMIZE
 
 Description: Learn how to use the mysqlcheck command-line tool to check, repair, analyze, and optimize MySQL tables without needing to run SQL commands manually.
 

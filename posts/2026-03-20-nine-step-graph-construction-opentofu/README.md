@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Dependency Graph, Internals, Infrastructure as Code, Architecture
+Tags: OpenTofu, Dependency Graph, Internal, Infrastructure as Code, Architecture
 
 Description: Learn how OpenTofu constructs its resource dependency graph through nine steps to determine the correct order of resource creation, modification, and deletion.
 

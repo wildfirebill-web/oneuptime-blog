@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Consul, Service Discovery, Microservices, HashiCorp
+Tags: Rust, Consul, Service Discovery, Microservice, HashiCorp
 
 Description: A practical guide to building a Consul service registry client in Rust, covering service registration, health checks, and discovery patterns for microservice architectures.
 

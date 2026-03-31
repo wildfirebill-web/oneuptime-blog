@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Key Vault, Secrets, Infrastructure as Code
+Tags: OpenTofu, Azure, Key Vault, Secret, Infrastructure as Code
 
 Description: Learn how to create Azure Key Vault and manage secrets with OpenTofu for centralized secret storage with RBAC access control and soft-delete protection.
 

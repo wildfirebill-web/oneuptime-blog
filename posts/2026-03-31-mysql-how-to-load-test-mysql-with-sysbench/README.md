@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, sysbench, Load Testing, Performance Benchmarking, Database Administration
+Tags: MySQL, Sysbench, Load Testing, Performance Benchmarking, Database Administration
 
 Description: Learn how to install sysbench and run OLTP read/write benchmarks on MySQL to measure throughput, latency, and identify performance bottlenecks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Traefik, TraefikService, Kubernetes, Canary Deployments
+Tags: Flagger, Traefik, TraefikService, Kubernetes, Canary Deployment
 
 Description: Learn how to configure Flagger with Traefik TraefikService for automated canary deployments using weighted routing on Kubernetes.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Time Series, IoT, Metrics, Database, Analytics
+Tags: MongoDB, Time Series, IoT, Metric, Database, Analytics
 
 Description: Learn how to use MongoDB time series collections for efficient storage and querying of time-stamped data, including IoT metrics, application logs, and financial data.
 

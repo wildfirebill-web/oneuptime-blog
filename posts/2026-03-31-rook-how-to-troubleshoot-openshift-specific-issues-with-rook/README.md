@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Openshift, Troubleshooting, Kubernetes, Storage
+Tags: Rook, Ceph, OpenShift, Troubleshooting, Kubernetes, Storage
 
 Description: Troubleshoot common OpenShift-specific issues with Rook-Ceph, including SCC permissions, SCCs for CSI pods, and OCP-specific networking constraints.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, SNMP, IPv6, Monitoring, Networks, MIB
+Tags: Grafana, SNMP, IPv6, Monitoring, Network, MIB
 
 Description: A guide to monitoring IPv6 statistics from network devices using SNMP, the SNMP Exporter for Prometheus, and Grafana dashboards.
 

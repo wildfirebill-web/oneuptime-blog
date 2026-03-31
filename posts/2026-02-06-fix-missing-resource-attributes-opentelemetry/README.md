@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Resource Attributes, Debugging, Telemetry, Tracing, Metrics, Logs, Configuration
+Tags: OpenTelemetry, Resource Attributes, Debugging, Telemetry, Tracing, Metric, Log, Configuration
 
 Description: Learn how to diagnose and fix missing resource attributes in OpenTelemetry telemetry data, covering service name, environment, version, and custom attributes across SDKs.
 

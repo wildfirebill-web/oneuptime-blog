@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Role, Variables, Defaults
+Tags: Ansible, Role, Variable, Default
 
 Description: Learn how to use the defaults_from parameter in Ansible roles to load different default variable files based on deployment context.
 

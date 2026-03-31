@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, TCP, Chat, Sockets, IPv4, Threading, Networking
+Tags: Python, TCP, Chat, Socket, IPv4, Threading, Networking
 
 Description: Learn how to build a multi-client chat application in Python using IPv4 TCP sockets with threading for real-time message broadcasting.
 

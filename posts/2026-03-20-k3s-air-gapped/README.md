@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Air-Gapped, Offline, Security
+Tags: k3s, Kubernetes, Rancher, Air-Gapped, Offline, Security
 
 Description: A complete guide to deploying K3s in environments without internet access, including image pre-loading and private registry configuration.
 

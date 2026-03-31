@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, NATS, Messaging, Pub/Sub, Microservices, Tutorial
+Tags: Ubuntu, NATS, Messaging, Pub/Sub, Microservice, Tutorial
 
 Description: Complete guide to installing and configuring NATS messaging system on Ubuntu.
 

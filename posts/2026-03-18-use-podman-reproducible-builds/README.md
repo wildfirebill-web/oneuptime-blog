@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Reproducible Builds, DevOps, Supply Chain Security
+Tags: Podman, Container, Reproducible Builds, DevOps, Supply Chain Security
 
 Description: Learn how to use Podman to achieve fully reproducible builds where the same source code always produces identical artifacts, improving security and auditability.
 

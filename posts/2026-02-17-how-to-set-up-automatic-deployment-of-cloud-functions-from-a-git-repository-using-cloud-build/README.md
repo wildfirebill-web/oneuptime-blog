@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cloud Build, CI/CD, DevOps
+Tags: GCP, Cloud Function, Cloud Build, CI/CD, DevOps
 
 Description: A complete walkthrough on setting up automatic deployments for Google Cloud Functions from a Git repository using Cloud Build triggers and custom build configurations.
 

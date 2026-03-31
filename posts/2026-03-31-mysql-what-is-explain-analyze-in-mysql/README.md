@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Explain Analyze, Query Optimization, Performance Tuning
+Tags: MySQL, EXPLAIN ANALYZE, Query Optimization, Performance Tuning
 
 Description: EXPLAIN ANALYZE actually executes a query and shows the real runtime statistics alongside estimated costs, making it far more accurate than plain EXPLAIN.
 

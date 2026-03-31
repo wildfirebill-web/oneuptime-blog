@@ -1,6 +1,6 @@
 # How to Use the HTTP Provider for API Checks in Terraform
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Terraform, HTTP Provider, API, Health Check, Infrastructure as Code
 

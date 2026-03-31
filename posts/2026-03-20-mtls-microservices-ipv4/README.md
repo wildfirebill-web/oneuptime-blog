@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: mTLS, Microservices, IPv4, TLS, Security, Python
+Tags: mTLS, Microservice, IPv4, TLS, Security, Python
 
 Description: Learn how to configure mutual TLS (mTLS) authentication between microservices communicating over IPv4, including certificate generation, server and client configuration in Python, and Nginx...
 

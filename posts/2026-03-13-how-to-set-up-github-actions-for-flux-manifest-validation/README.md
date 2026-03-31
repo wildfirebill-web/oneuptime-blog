@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, GitHub Actions, CI/CD, Validation
+Tags: Flux, Kubernetes, GitOps, GitHub Action, CI/CD, Validation
 
 Description: Learn how to configure GitHub Actions to automatically validate Flux manifests on every pull request before they reach your cluster.
 

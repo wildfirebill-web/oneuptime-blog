@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Networking, Unspecified Address, Sockets, Programming
+Tags: IPv6, Networking, Unspecified Address, Socket, Programming
 
 Description: Understand when and how to use the IPv6 unspecified address (::) in socket programming, interface configuration, and routing, and avoid common misuse patterns.
 

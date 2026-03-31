@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Calicoctl, Kubernetes, Diagnostics, Troubleshooting, Networking, DevOps
+Tags: Calico, Calicoctl, Kubernetes, Diagnostic, Troubleshooting, Networking, DevOps
 
 Description: Learn how to use calicoctl cluster diags to collect diagnostic information from a Calico cluster for troubleshooting.
 

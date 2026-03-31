@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Debugging, Troubleshooting
+Tags: Portainer, Docker, Container, Debugging, Troubleshooting
 
 Description: Learn how to diagnose and fix 'Cannot use console' errors when trying to access the interactive terminal for Docker containers in Portainer.
 

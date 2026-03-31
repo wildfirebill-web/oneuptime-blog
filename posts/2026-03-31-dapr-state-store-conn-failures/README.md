@@ -1,6 +1,6 @@
 # How to Handle State Store Connection Failures in Dapr
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Resiliency, Error Handling, Microservice
 

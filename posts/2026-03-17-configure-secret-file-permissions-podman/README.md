@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Permissions, Security
+Tags: Podman, Container, DevOps, Secret, Permission, Security
 
 Description: Learn how to configure file permissions on Podman secret mounts to control which processes can read sensitive data.
 

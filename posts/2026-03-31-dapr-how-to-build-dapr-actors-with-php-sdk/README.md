@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, PHP, Actors, Microservices, Distributed Systems
+Tags: Dapr, PHP, Actor, Microservice, Distributed System
 
 Description: Learn how to implement Dapr virtual actors in PHP using the Dapr PHP SDK, covering actor registration, state management, and HTTP API integration.
 

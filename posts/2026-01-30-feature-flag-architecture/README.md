@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Feature Flags, Architecture, DevOps, Release Management, A/B Testing
+Tags: Feature Flag, Architecture, DevOps, Release Management, A/B Testing
 
 Description: Design a robust feature flag system with targeting rules, percentage rollouts, user segments, and integration with deployment pipelines.
 

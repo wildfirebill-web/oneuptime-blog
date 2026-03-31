@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: .NET, C#, Background Queue, Async Processing, Channels, BackgroundService
+Tags: .NET, C#, Background Queue, Async Processing, Channel, BackgroundService
 
 Description: Build a production-ready background queue in .NET with priority support, retry policies, dead letter handling, and monitoring. Learn to process tasks asynchronously without external dependencies.
 

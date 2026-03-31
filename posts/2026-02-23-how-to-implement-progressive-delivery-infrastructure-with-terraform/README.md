@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Progressive Delivery, Canary, Feature Flags, DevOps
+Tags: Terraform, Progressive Delivery, Canary, Feature Flag, DevOps
 
 Description: Learn how to build progressive delivery infrastructure with Terraform, including canary deployments, feature flag systems, traffic splitting, and rollback automation for safe releases.
 

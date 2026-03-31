@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Blob, Large Payload, Ingestion, String, Compression, Storage
+Tags: ClickHouse, BLOB, Large Payload, Ingestion, String, Compression, Storage
 
 Description: Learn how to handle large blob fields during ClickHouse ingestion, including compression, truncation, and external storage strategies.
 

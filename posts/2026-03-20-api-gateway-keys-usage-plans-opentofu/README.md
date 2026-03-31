@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, API Gateway, Usage Plans, API Keys, Infrastructure as Code
+Tags: OpenTofu, AWS, API Gateway, Usage Plans, API Key, Infrastructure as Code
 
 Description: Learn how to create API keys and usage plans for AWS API Gateway using OpenTofu to control access and apply rate limiting.
 

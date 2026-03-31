@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Retry Pattern, Exponential Backoff, Resilience, Cloud Patterns, Error Handling, Microservices
+Tags: Azure, Retry Pattern, Exponential Backoff, Resilience, Cloud Patterns, Error Handling, Microservice
 
 Description: Learn how to implement robust retry logic with exponential backoff in Azure applications to handle transient failures gracefully.
 

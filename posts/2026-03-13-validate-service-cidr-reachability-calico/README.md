@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Services, CIDR, Networking
+Tags: Calico, Kubernetes, Service, CIDR, Networking
 
 Description: Learn how to validate that Kubernetes service ClusterIP addresses are reachable from pods and nodes in a Calico-managed cluster, and troubleshoot common service CIDR routing failures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, Expert Information, Networking, Diagnostics, TCP, Performance
+Tags: Wireshark, Expert Information, Networking, Diagnostic, TCP, Performance
 
 Description: Use Wireshark's Expert Information panel to automatically identify network problems including TCP retransmissions, connection resets, malformed packets, and application errors.
 

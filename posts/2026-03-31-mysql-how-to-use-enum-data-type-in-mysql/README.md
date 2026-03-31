@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Data Types, ENUM, Database Design
+Tags: MySQL, Data Type, ENUM, Database Design
 
 Description: Learn how to use the ENUM data type in MySQL to restrict column values to a predefined list and improve data integrity and storage efficiency.
 

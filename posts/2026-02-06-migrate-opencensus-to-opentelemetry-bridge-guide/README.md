@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OpenCensus, Migration, Bridge, Tracing, Metrics, Observability
+Tags: OpenTelemetry, OpenCensus, Migration, Bridge, Tracing, Metric, Observability
 
 Description: A step-by-step guide to migrating from OpenCensus to OpenTelemetry using the official bridge libraries, with code examples in Go and Python.
 

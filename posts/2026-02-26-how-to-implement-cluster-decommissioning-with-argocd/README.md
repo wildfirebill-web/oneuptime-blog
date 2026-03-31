@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Multi-Cluster, Operations
+Tags: ArgoCD, GitOps, Kubernetes, Multi-Cluster, Operation
 
 Description: Learn how to safely decommission Kubernetes clusters managed by ArgoCD, including workload migration, traffic draining, data backup, and clean cluster removal.
 

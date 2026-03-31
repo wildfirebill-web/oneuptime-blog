@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, depends_on, Dependencies, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, depends_on, Dependencies, Infrastructure as Code, DevOps
 
 Description: A guide to using depends_on to create explicit dependency relationships between OpenTofu resources and modules.
 

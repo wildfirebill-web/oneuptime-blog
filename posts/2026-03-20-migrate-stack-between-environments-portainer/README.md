@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Migration, Environments, DevOps
+Tags: Portainer, Stack, Migration, Environment, DevOps
 
 Description: Move or copy a Docker Compose stack from one Portainer environment to another for environment promotion.
 

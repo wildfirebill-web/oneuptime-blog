@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Exec, Containers, DevOps
+Tags: Podman, REST API, EXEC, Container, DevOps
 
 Description: Learn how to execute commands inside running containers using the Podman REST API, including creating exec instances, attaching to output, and handling interactive sessions.
 

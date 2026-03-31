@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Root Cause Analysis, Incident Response, Tracing, Metrics, Logs, Observability, Debugging
+Tags: OpenTelemetry, Root Cause Analysis, Incident Response, Tracing, Metric, Log, Observability, Debugging
 
 Description: Learn how to use OpenTelemetry traces, metrics, and logs together for systematic root cause analysis in complex distributed systems, reducing time to resolution.
 

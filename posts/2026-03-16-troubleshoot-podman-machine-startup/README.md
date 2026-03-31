@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps, Troubleshooting
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps, Troubleshooting
 
 Description: Learn how to diagnose and fix common Podman machine startup failures including connection errors, resource issues, and corrupted configurations.
 

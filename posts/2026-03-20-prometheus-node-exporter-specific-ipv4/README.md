@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Node Exporter, IPv4, Monitoring, Metrics, Linux
+Tags: Prometheus, Node Exporter, IPv4, Monitoring, Metric, Linux
 
 Description: Configure Prometheus Node Exporter to bind to a specific IPv4 address, restrict which collectors are enabled, and set up firewall rules to secure metrics access.
 

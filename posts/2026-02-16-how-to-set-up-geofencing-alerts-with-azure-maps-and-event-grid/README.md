@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Maps, Geofencing, Event Grid, Location Alerts, Spatial Analytics, IoT Tracking, Azure Functions
+Tags: Azure Maps, Geofencing, Event Grid, Location Alerts, Spatial Analytics, IoT Tracking, Azure Function
 
 Description: Learn how to create geofences with Azure Maps and trigger automated alerts through Event Grid when devices enter or exit defined geographic areas.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Key Design, Data Modeling, Query Patterns, Performance, Best Practices
+Tags: Redis, Key Design, Data Modeling, Query Pattern, Performance, Best Practice
 
 Description: Design Redis key schemas that align with your query patterns using consistent naming conventions, secondary indexes, and data structure selection to optimize performance.
 

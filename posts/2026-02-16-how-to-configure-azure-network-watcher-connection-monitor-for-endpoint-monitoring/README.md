@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Network Watcher, Connection Monitor, Endpoint Monitoring, Networking, Diagnostics, Monitoring
+Tags: Azure, Network Watcher, Connection Monitor, Endpoint Monitoring, Networking, Diagnostic, Monitoring
 
 Description: Learn how to set up Azure Network Watcher Connection Monitor to continuously monitor connectivity between endpoints and detect network issues proactively.
 

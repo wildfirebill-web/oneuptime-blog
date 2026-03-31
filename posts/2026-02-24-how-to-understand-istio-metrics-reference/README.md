@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Prometheus, Observability, Monitoring, Kubernetes
+Tags: Istio, Metric, Prometheus, Observability, Monitoring, Kubernetes
 
 Description: A practical reference for all standard Istio metrics including request counts, durations, TCP metrics, labels, and how to query them with Prometheus.
 

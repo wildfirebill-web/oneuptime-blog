@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, File System, Storage, Troubleshooting, Operations
+Tags: ClickHouse, File System, Storage, Troubleshooting, Operation
 
 Description: Diagnose and fix ClickHouse 'Cannot open file' errors caused by permission issues, missing data files, and filesystem problems.
 

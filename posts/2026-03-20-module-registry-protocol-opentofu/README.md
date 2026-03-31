@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Module Registry, Protocol, Internals, Infrastructure as Code
+Tags: OpenTofu, Module Registry, Protocol, Internal, Infrastructure as Code
 
 Description: Learn how the OpenTofu module registry protocol works - how modules are discovered, downloaded, and versioned, and how to run your own private module registry.
 

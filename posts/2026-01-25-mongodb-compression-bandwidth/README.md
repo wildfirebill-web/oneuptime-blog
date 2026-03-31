@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Compression, Performance, Networks, Optimization
+Tags: MongoDB, Compression, Performance, Network, Optimization
 
 Description: Learn how to enable wire protocol compression and storage compression in MongoDB to reduce bandwidth usage and storage costs without sacrificing performance.
 

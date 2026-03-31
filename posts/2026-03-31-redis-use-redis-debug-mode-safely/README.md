@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Debugging, Operations
+Tags: Redis, Debugging, Operation
 
 Description: A practical guide to using Redis DEBUG commands safely in development and production - what each subcommand does and when to use it.
 

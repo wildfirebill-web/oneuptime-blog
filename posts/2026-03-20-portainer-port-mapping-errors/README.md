@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Troubleshooting, Networking, Containers
+Tags: Portainer, Docker, Troubleshooting, Networking, Container
 
 Description: Resolve port mapping errors that occur when creating or editing container port bindings in Portainer, including format validation, conflict detection, and protocol specification.
 

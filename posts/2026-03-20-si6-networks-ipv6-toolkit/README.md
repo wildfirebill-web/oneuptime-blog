@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, SI6 Networks, Security, Network Analysis, Toolkit, Diagnostics
+Tags: IPv6, SI6 Networks, Security, Network Analysis, Toolkit, Diagnostic
 
 Description: Use the SI6 Networks IPv6 Toolkit for advanced IPv6 security auditing, protocol analysis, and network reconnaissance including address scanning and NDP testing.
 

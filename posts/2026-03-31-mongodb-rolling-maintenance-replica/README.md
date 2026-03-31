@@ -1,8 +1,8 @@
 # How to Perform Rolling Maintenance on MongoDB Replica Set
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, Maintenance, Operations, High Availability
+Tags: MongoDB, Replica Set, Maintenance, Operation, High Availability
 
 Description: Learn how to perform zero-downtime rolling maintenance on a MongoDB replica set by cycling through secondaries before stepping down the primary.
 

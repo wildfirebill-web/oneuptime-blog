@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Notifications, Email, SMS, Push Notifications, Async, FastAPI, Celery
+Tags: Python, Notification, Email, SMS, Push Notification, Async, FastAPI, Celery
 
 Description: Learn how to build a scalable notification service in Python that handles email, SMS, and push notifications. This guide covers architecture patterns, delivery guarantees, and template management.
 

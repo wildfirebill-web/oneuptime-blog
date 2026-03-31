@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Secrets, Environment Variables, Security
+Tags: Portainer, Kubernetes, Secret, Environment Variable, Security
 
 Description: Learn how to inject Kubernetes Secrets into container pods as environment variables using Portainer.
 

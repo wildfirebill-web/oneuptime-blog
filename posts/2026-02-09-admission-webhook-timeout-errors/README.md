@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Admission Webhooks, Troubleshooting
+Tags: Kubernetes, Admission Webhook, Troubleshooting
 
 Description: Learn how to diagnose and resolve Kubernetes admission webhook timeout errors that prevent resource creation with practical solutions and configuration examples.
 

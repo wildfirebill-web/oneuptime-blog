@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Cert-Manager, TLS, Certificates
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Cert-Manager, TLS, Certificate
 
 Description: Learn how to deploy cert-manager on Kubernetes using a Flux HelmRelease for automated TLS certificate management with Let's Encrypt.
 

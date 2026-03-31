@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Alerting, Webhooks, Monitoring
+Tags: Rancher, Kubernetes, Alerting, Webhook, Monitoring
 
 Description: Learn how to configure generic webhook notifications for Rancher alerts to integrate with any external system.
 

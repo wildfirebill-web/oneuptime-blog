@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Fluentd, Fluent Bit, Logs, Migration, Observability, Collector
+Tags: OpenTelemetry, Fluentd, Fluent Bit, Log, Migration, Observability, Collector
 
 Description: Learn how to migrate your log collection pipeline from Fluentd or Fluent Bit to the OpenTelemetry Collector with practical configuration examples and a phased rollout plan.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, IAM, Security, Troubleshooting, Permissions
+Tags: AWS, IAM, Security, Troubleshooting, Permission
 
 Description: Diagnose and resolve AWS IAM authorization errors by understanding policy evaluation, identifying missing permissions, and fixing common IAM misconfigurations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, DevOps Guru, Monitoring, Operations, Machine Learning
+Tags: AWS, DevOps Guru, Monitoring, Operation, Machine Learning
 
 Description: Learn how to set up Amazon DevOps Guru to detect operational anomalies, get proactive insights, and reduce downtime across your AWS infrastructure.
 

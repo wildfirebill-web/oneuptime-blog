@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Upgrade, Checklist, Version Management, Operations
+Tags: ClickHouse, Upgrade, Checklist, Version Management, Operation
 
 Description: A ClickHouse upgrade planning checklist covering pre-upgrade validation, rolling upgrade procedure, compatibility checks, and rollback planning.
 

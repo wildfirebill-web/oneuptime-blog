@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Replication, Internals, High Availability, Protocol
+Tags: Redis, Replication, Internal, High Availability, Protocol
 
 Description: Understand the full handshake and sync sequence Redis primaries and replicas use, from initial PSYNC to ongoing command propagation.
 

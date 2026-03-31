@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Security, Password, ACL, Operations
+Tags: Redis, Security, Password, ACL, Operation
 
 Description: Learn how to rotate Redis passwords without dropping connections or causing downtime by temporarily assigning two passwords to a user during the transition.
 

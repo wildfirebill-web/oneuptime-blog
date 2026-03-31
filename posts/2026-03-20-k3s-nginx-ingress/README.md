@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Nginx, Ingress, Networking, DevOps
+Tags: k3s, Kubernetes, Nginx, Ingress, Networking, DevOps
 
 Description: Learn how to replace K3s's default Traefik ingress controller with the NGINX Ingress Controller for more familiar ingress management.
 

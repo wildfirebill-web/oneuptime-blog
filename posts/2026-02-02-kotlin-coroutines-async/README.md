@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kotlin, Coroutines, Async, Concurrency, Android
+Tags: Kotlin, Coroutine, Async, Concurrency, Android
 
 Description: A practical guide to Kotlin coroutines, covering suspend functions, coroutine scopes, dispatchers, structured concurrency, and error handling patterns.
 

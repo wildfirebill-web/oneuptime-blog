@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Observability, Correlation, Tracing, Logging, Metrics
+Tags: Istio, Observability, Correlation, Tracing, Logging, Metric
 
 Description: How to correlate metrics, distributed traces, and logs across your Istio service mesh using trace IDs, span IDs, and shared labels for faster incident investigation.
 

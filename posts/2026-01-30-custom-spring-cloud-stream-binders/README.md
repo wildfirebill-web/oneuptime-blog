@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Spring Cloud Stream, Java, Microservices, Event-Driven Architecture, Messaging, Spring Boot
+Tags: Spring Cloud Stream, Java, Microservice, Event-Driven Architecture, Messaging, Spring Boot
 
 Description: A complete guide to building custom Spring Cloud Stream binders for proprietary messaging systems, legacy queues, or specialized protocols, with production-ready code examples.
 

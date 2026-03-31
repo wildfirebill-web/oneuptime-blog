@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, AWS, S3, Infrastructure as Code, DevOps
+Tags: Terraform, Module, AWS, S3, Infrastructure as Code, DevOps
 
 Description: Learn how to host and reference Terraform modules stored in AWS S3 buckets, including packaging, uploading, versioning, and authentication configuration.
 

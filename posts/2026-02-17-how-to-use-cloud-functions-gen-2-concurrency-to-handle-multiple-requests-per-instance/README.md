@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Concurrency, Performance, Serverless
+Tags: GCP, Cloud Function, Concurrency, Performance, Serverless
 
 Description: Learn how to configure and optimize Cloud Functions Gen 2 concurrency to handle multiple simultaneous requests per instance, reducing costs and cold starts.
 

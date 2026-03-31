@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Debugging, Error Handling, Common Errors, Data Structures
+Tags: Python, Debugging, Error Handling, Common Errors, Data Structure
 
 Description: Learn how to fix the TypeError unhashable type error in Python. Understand what hashability means, why lists and dicts cannot be dictionary keys or set members, and how to solve this common problem.
 

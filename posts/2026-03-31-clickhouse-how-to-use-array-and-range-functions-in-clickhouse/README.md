@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Arrays, Range Functions, Sql, Data Engineering
+Tags: ClickHouse, Array, Range Functions, SQL, Data Engineering
 
 Description: Learn how to use array() to create arrays and range() functions to generate numeric sequences in ClickHouse queries.
 

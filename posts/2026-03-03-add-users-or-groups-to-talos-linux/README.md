@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Users, Groups, Security, Access Control, Kubernetes, System Administration
+Tags: Talos Linux, Users, Group, Security, Access Control, Kubernetes, System Administration
 
 Description: Understanding user and group management on Talos Linux and how to work within its immutable, API-driven security model.
 

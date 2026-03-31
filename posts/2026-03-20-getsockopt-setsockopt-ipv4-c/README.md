@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, Sockets, Getsockopt, Setsockopt, POSIX, Networking
+Tags: C, IPv4, Socket, Getsockopt, Setsockopt, POSIX, Networking
 
 Description: Learn how to configure and inspect IPv4 socket options in C using setsockopt() and getsockopt(), with a comprehensive reference for SOL_SOCKET and IPPROTO_TCP options.
 

@@ -1,6 +1,6 @@
 # How to Set the Default Storage Engine in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Configuration, Storage Engine, InnoDB, Administration
 

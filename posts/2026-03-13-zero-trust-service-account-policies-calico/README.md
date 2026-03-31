@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Service Accounts, Zero Trust
+Tags: Calico, Kubernetes, Network Policy, Service Account, Zero Trust
 
 Description: Implement zero trust workload identity using Calico service account-based network policies for cryptographically-verified traffic controls.
 

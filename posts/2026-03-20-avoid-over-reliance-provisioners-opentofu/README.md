@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, Best Practice, Configuration Management, Infrastructure as Code
+Tags: OpenTofu, Provisioner, Best Practice, Configuration Management, Infrastructure as Code
 
 Description: Learn why provisioners are a last resort in OpenTofu and what alternatives to use for bootstrapping and configuring infrastructure.
 

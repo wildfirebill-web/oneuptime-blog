@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Suspend, Resume, Operations
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Suspend, Resume, Operation
 
 Description: Learn how to suspend and resume HelmRelease reconciliation in Flux CD to temporarily pause GitOps automation for maintenance or debugging.
 

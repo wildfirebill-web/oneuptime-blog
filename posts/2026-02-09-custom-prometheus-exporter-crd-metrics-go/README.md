@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Kubernetes, Go, Observability, Custom Metrics
+Tags: Prometheus, Kubernetes, Go, Observability, Custom Metric
 
 Description: Learn how to build a custom Prometheus exporter in Go that scrapes metrics from Kubernetes Custom Resource Definitions (CRDs) and exposes them for monitoring.
 

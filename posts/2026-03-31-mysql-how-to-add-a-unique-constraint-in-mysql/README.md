@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Constraints, Schema Design
+Tags: MySQL, DDL, Constraint, Schema Design
 
 Description: Learn how to add unique constraints in MySQL to enforce column uniqueness using ALTER TABLE, including multi-column unique indexes and NULL handling.
 

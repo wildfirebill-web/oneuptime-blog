@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Prometheus, Grafana, Monitoring, Observability, Metrics
+Tags: PostgreSQL, Prometheus, Grafana, Monitoring, Observability, Metric
 
 Description: A comprehensive guide to monitoring PostgreSQL with Prometheus and Grafana, covering postgres_exporter setup, key metrics, dashboard creation, and alerting rules.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, BGP, Peers, Automation, Monitoring
+Tags: Cilium, BGP, Peer, Automation, Monitoring
 
 Description: Automate BGP peer status collection and alerting using cilium-dbg bgp peers across all Cilium nodes.
 

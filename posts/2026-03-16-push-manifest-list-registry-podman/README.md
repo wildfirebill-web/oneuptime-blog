@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Manifest, Registry, Multi-Architecture
+Tags: Podman, Container, DevOps, Manifest, Registry, Multi-Architecture
 
 Description: Learn how to push manifest lists to container registries with Podman, including authentication, pushing to multiple registries, and handling common issues.
 

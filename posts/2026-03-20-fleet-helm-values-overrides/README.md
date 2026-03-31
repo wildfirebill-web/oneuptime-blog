@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Fleet, Helm, Values, Kubernetes
+Tags: Rancher, Fleet, Helm, Value, Kubernetes
 
 Description: Guide to managing Helm values overrides per cluster and environment using Rancher Fleet.
 

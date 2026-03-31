@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Namespaces, Linux
+Tags: Podman, Container, DevOps, Pod, Namespace, Linux
 
 Description: Learn how to configure namespace sharing between containers in a Podman pod.
 

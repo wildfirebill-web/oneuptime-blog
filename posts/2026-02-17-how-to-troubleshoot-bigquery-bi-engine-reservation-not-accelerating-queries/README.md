@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, BI Engine, Query Acceleration, Performance, Reservations
+Tags: GCP, BigQuery, BI Engine, Query Acceleration, Performance, Reservation
 
 Description: Troubleshoot BigQuery BI Engine reservations that are not accelerating queries, covering reservation setup, table compatibility, and query pattern requirements.
 

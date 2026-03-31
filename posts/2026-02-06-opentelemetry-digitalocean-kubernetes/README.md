@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, DigitalOcean, Kubernetes, Observability, Tracing, Metrics, Helm, DOKS
+Tags: OpenTelemetry, DigitalOcean, Kubernetes, Observability, Tracing, Metric, Helm, DOKS
 
 Description: A complete guide to deploying the OpenTelemetry Collector on DigitalOcean Kubernetes (DOKS) and instrumenting your workloads for full observability.
 

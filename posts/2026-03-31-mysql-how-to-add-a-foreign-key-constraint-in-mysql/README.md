@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Constraints, Referential Integrity
+Tags: MySQL, DDL, Constraint, Referential Integrity
 
 Description: Learn how to add foreign key constraints in MySQL to enforce referential integrity between tables, with ON DELETE and ON UPDATE actions.
 

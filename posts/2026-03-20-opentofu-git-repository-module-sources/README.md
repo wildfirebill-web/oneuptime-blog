@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules, Git
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module, Git
 
 Description: Learn how to use Git repository URLs as module sources in OpenTofu to share modules across teams and pin them to specific commits or tags.
 

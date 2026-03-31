@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, NAS, Docker, Stacks, Docker Compose, Home Server, Self-Hosted
+Tags: Portainer, NAS, Docker, Stack, Docker Compose, Home Server, Self-Hosted
 
 Description: Use Portainer's stack feature to deploy and manage complex multi-container home server applications on your NAS with Docker Compose files.
 

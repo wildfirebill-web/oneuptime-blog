@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Wire Protocol, OP_MSG, Driver, Internals
+Tags: MongoDB, Wire Protocol, OP_MSG, Driver, Internal
 
 Description: Learn how OP_MSG works as MongoDB's primary message format, including flag bits, section types, and how to construct valid OP_MSG frames for commands and bulk operations.
 

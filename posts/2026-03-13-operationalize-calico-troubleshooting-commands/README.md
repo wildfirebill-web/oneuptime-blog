@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Troubleshooting, Operations
+Tags: Calico, Kubernetes, Networking, Troubleshooting, Operation
 
 Description: Build operational processes around Calico troubleshooting commands including command reference cards, on-call training requirements, runbook integration, and quarterly toolkit validation procedures.
 

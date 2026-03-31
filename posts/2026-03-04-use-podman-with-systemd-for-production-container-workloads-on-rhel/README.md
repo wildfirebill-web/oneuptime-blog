@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Systemd, Containers, Production
+Tags: RHEL, Podman, Systemd, Container, Production
 
 Description: Run production containers on RHEL using Podman and systemd for automatic restarts, logging, and boot-time startup without requiring a daemon.
 

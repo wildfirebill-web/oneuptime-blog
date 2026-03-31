@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Spot Instances, Cost Optimization, Auto Scaling
+Tags: Terraform, AWS, Spot Instance, Cost Optimization, Auto Scaling
 
 Description: Learn how to use AWS Spot Instances with Terraform to save up to 90% on compute costs while managing interruptions through diversification and fallback strategies.
 

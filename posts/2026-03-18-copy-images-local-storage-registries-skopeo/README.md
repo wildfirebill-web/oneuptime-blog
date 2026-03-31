@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Skopeo, Registry, Local Storage, Image Transfer
+Tags: Podman, Container, DevOps, Skopeo, Registry, Local Storage, Image Transfer
 
 Description: Learn how to use Skopeo to move container images between Podman local storage, local directories, and remote registries using different transport types.
 

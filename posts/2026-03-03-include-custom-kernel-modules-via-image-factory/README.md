@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Image Factory, Kernel Modules, Drivers, System Extensions
+Tags: Talos Linux, Image Factory, Kernel Modules, Driver, System Extensions
 
 Description: Learn how to include custom kernel modules in Talos Linux images using Image Factory for hardware drivers, filesystem support, and networking features.
 

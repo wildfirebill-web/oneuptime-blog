@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Lambda, GitHub Actions, CI/CD, DevOps
+Tags: AWS, Lambda, GitHub Action, CI/CD, DevOps
 
 Description: Build a complete CI/CD pipeline for AWS Lambda functions using GitHub Actions with automated testing, packaging, deployment, and rollback capabilities.
 

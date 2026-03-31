@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, K3s, PostgreSQL, MySQL, External Database
+Tags: Flux CD, Kubernetes, GitOps, k3s, PostgreSQL, MySQL, External Database
 
 Description: Configure Flux CD on k3s using an external database (PostgreSQL or MySQL) for the k3s datastore, enabling high availability without embedded etcd.
 

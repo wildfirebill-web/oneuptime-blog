@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, SNMP, IPv4, Network Monitoring, Metrics, Exporter
+Tags: Prometheus, SNMP, IPv4, Network Monitoring, Metric, Exporter
 
 Description: Configure the Prometheus SNMP exporter to collect metrics from IPv4 network devices using SNMPv2c and SNMPv3, generate snmp.yml with generator, and build Grafana dashboards.
 

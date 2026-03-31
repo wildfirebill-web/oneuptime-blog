@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Distributed Caching, Redis, Memcached, Cache Invalidation, Microservices, Performance, Scalability
+Tags: Distributed Caching, Redis, Memcached, Cache Invalidation, Microservice, Performance, Scalability
 
 Description: A comprehensive guide to implementing and managing distributed caching in microservices architectures, covering cache strategies, invalidation patterns, and consistency challenges.
 

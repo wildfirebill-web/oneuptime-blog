@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Topics, Partition, Messaging, Event Streaming
+Tags: Kafka, Topic, Partition, Messaging, Event Streaming
 
 Description: Learn how to design Kafka topics and partitions for scalability, including partition strategies, replication factors, and ordering guarantees.
 

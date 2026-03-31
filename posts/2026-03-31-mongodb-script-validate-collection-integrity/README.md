@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Scripting, Validation, Data Quality, Operations
+Tags: MongoDB, Scripting, Validation, Data Quality, Operation
 
 Description: Learn how to write a script to validate MongoDB collection integrity by checking document counts, schema consistency, required fields, and referential relationships.
 

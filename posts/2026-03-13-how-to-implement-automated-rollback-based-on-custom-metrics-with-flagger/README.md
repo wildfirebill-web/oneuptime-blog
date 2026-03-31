@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Custom Metrics, Rollback, Kubernetes, Canary Deployments, Prometheus
+Tags: Flagger, Custom Metric, Rollback, Kubernetes, Canary Deployment, Prometheus
 
 Description: Learn how to implement automated rollback based on custom Prometheus metrics with Flagger for safer canary deployments.
 

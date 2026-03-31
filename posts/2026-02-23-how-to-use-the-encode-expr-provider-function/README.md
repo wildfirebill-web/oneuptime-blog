@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Functions, HCL, Infrastructure as Code, DevOps
+Tags: Terraform, Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the encode_expr provider function in Terraform to serialize Terraform values into HCL expression strings for dynamic code generation and templating.
 

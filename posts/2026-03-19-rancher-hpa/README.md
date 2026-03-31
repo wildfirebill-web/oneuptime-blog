@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, HPA, Workloads
+Tags: Rancher, Kubernetes, HPA, Workload
 
 Description: Learn how to configure Horizontal Pod Autoscaling (HPA) in Rancher to automatically scale workloads based on CPU, memory, or custom metrics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Materialized Views, Performance, Aggregation, Real-Time
+Tags: ClickHouse, Materialized View, Performance, Aggregation, Real-Time
 
 Description: Step-by-step guide to creating materialized views in ClickHouse to pre-aggregate data and dramatically speed up analytical queries on large datasets.
 

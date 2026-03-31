@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Traefik, Prometheus, Metrics, Monitoring, Observability
+Tags: Traefik, Prometheus, Metric, Monitoring, Observability
 
 Description: Enable and configure Prometheus metrics in Traefik for comprehensive monitoring, including custom labels, histograms, and Grafana dashboard setup.
 

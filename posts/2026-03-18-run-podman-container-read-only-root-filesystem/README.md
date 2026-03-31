@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Filesystem, Hardening
+Tags: Podman, Container, DevOps, Security, Filesystem, Hardening
 
 Description: Learn how to run Podman containers with a read-only root filesystem to prevent unauthorized modifications and improve container security.
 

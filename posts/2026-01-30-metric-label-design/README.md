@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Metrics, Labels, Prometheus, Cardinality
+Tags: Metric, Labels, Prometheus, Cardinality
 
 Description: Learn to implement metric label design for effective metric dimensionality.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Google Cloud, Dataflow, Apache Beam, Data Pipelines, Big Data, GCP, Troubleshooting
+Tags: Google Cloud, Dataflow, Apache Beam, Data Pipeline, Big Data, GCP, Troubleshooting
 
 Description: A practical guide to diagnosing and fixing common Google Cloud Dataflow pipeline errors, from worker issues to data processing failures.
 

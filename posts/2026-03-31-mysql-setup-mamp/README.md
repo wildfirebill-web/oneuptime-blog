@@ -1,6 +1,6 @@
 # How to Set Up MySQL with MAMP for Local Development
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, MAMP, macOS, Installation, Development
 

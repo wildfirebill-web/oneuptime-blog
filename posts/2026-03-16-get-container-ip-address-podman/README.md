@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Container Inspection
+Tags: Podman, Container, DevOps, Networking, Container Inspection
 
 Description: Learn how to retrieve a Podman container's IP address using podman inspect, including addresses for specific networks and troubleshooting common issues.
 

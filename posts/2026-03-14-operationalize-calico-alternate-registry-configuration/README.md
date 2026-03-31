@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Container Registry, Operations, Kubernetes, DevOps
+Tags: Calico, Container Registry, Operation, Kubernetes, DevOps
 
 Description: Learn how to operationalize Calico alternate registry configuration with automated image synchronization, upgrade workflows, disaster recovery, and team processes for production environments.
 

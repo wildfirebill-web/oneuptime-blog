@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, GitHub Actions, CI/CD, Webhooks
+Tags: Portainer, Docker, GitHub Action, CI/CD, Webhook
 
 Description: Learn how to create a complete CI/CD pipeline using GitHub Actions that builds Docker images and deploys them via Portainer webhooks.
 

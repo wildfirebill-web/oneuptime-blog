@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Values, Configuration
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Value, Configuration
 
 Description: Learn how to configure inline values in a Flux CD HelmRelease to customize Helm chart deployments.
 

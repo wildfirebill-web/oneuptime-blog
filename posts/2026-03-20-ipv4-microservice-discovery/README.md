@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, IPv4, DNS, Service Discovery, Python, Networking
+Tags: Microservice, IPv4, DNS, Service Discovery, Python, Networking
 
 Description: Learn how to resolve IPv4 addresses for microservice discovery using DNS-based lookups, environment variables, and service registries, with retry and health-check patterns.
 

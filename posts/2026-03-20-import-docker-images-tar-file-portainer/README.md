@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Import, Offline
+Tags: Portainer, Docker, Image, Import, Offline
 
 Description: Import Docker images from a local .tar archive into Portainer for air-gapped or offline environments.
 

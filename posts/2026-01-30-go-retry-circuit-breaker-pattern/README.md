@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Reliability, Patterns, Microservices
+Tags: Go, Reliability, Pattern, Microservice
 
 Description: Learn to implement retry logic with circuit breaker pattern in Go to handle transient failures, prevent cascade failures, and build resilient microservices.
 

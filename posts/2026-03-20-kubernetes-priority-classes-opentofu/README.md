@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Priority Classes, Scheduling, OpenTofu, Infrastructure, Resource Management
+Tags: Kubernetes, Priority Class, Scheduling, OpenTofu, Infrastructure, Resource Management
 
 Description: Learn how to create Kubernetes Priority Classes with OpenTofu to control pod scheduling priority and preemption behavior for critical workloads.
 

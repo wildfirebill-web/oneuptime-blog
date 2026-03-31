@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NATS, Microservices, Messaging, Distributed Systems, Go, Node.js
+Tags: NATS, Microservice, Messaging, Distributed System, Go, Node.js
 
 Description: Learn how to use NATS messaging system for microservices communication, covering publish-subscribe, request-reply patterns, JetStream for persistence, and production best practices.
 

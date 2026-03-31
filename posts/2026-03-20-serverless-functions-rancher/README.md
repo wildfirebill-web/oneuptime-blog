@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Serverless, Functions, Kubernetes, FaaS, Deployment
+Tags: Rancher, Serverless, Function, Kubernetes, FaaS, Deployment
 
 Description: Practical guide to deploying serverless functions on Rancher covering multiple frameworks and deployment patterns.
 

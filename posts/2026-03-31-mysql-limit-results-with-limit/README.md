@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, LIMIT, Query, Performance, Pagination
+Tags: MySQL, Limit, Query, Performance, Pagination
 
 Description: Learn how to use the LIMIT clause in MySQL to restrict query results, improve performance, and implement basic pagination.
 

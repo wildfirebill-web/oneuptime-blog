@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, IaC, Types, Validation
+Tags: Terraform, IaC, Type, Validation
 
 Description: Learn how to use Terraform type constraints to validate variable inputs, catch errors early, and build more reliable infrastructure code.
 

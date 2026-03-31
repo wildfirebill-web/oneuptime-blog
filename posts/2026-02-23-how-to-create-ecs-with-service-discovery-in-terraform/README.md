@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, ECS, Service Discovery, Cloud Map, Microservices, Infrastructure as Code
+Tags: Terraform, AWS, ECS, Service Discovery, Cloud Map, Microservice, Infrastructure as Code
 
 Description: Learn how to set up ECS service discovery with AWS Cloud Map using Terraform so your microservices can find and communicate with each other automatically.
 

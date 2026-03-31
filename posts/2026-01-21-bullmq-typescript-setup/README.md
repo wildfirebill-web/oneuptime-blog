@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BullMQ, TypeScript, Node.js, Redis, Job Queue, Background Jobs
+Tags: BullMQ, TypeScript, Node.js, Redis, Job Queue, Background Job
 
 Description: A comprehensive guide to setting up BullMQ with TypeScript for type-safe job queues, including project configuration, job definitions, workers, and best practices for production applications.
 

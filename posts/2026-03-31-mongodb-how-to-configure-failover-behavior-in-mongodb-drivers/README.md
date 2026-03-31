@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Sets, Drivers, High Availability, Failover
+Tags: MongoDB, Replica Set, Driver, High Availability, Failover
 
 Description: Learn how to configure MongoDB driver settings for automatic failover, including serverSelectionTimeout, retryWrites, and read preference options.
 

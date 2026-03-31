@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Volumes, Storage
+Tags: Podman, Container, DevOps, Configuration, Volumes, Storage
 
 Description: Learn how to configure default volume mounts in containers.conf so specific directories are automatically mounted in every Podman container.
 

@@ -1,10 +1,10 @@
 # How to Configure MySQL Replication Filters
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Replication, Filter, Administration, Configuration
 
-Description: Learn how to configure MySQL replication filters to selectively replicate specific databases or tables, using both my.cnf options and runtime CHANGE REPLICATION FILTER commands.
+Description: Learn how to configure MySQL replication filters to selectively replicate specific databases or tables using my.cnf options and runtime CHANGE REPLICATION FILTER.
 
 ---
 

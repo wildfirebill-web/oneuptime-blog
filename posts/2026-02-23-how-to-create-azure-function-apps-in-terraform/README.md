@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Functions, Serverless, Infrastructure as Code
+Tags: Terraform, Azure, Function, Serverless, Infrastructure as Code
 
 Description: A practical guide to creating Azure Function Apps with Terraform, covering consumption and premium plans, application settings, bindings, and deployment configurations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenStack, Calico, Service IPs, Documentation, Operations
+Tags: OpenStack, Calico, Service IPs, Documentation, Operation
 
 Description: A guide to documenting service IP management in OpenStack with Calico for operations teams, covering allocation procedures, monitoring guidelines, and troubleshooting reference materials.
 

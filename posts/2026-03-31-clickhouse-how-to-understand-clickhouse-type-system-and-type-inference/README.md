@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Type System, Type Inference, Data Types, Schema Design
+Tags: ClickHouse, Type System, Type Inference, Data Type, Schema Design
 
 Description: Understand ClickHouse's type system, how automatic type inference works during data ingestion, and how to control type resolution for accurate schemas.
 

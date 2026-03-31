@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Sharding, Resharding, Shard Key, Database
 
-Description: Learn how to use reshardCollection in MongoDB 5.0+ to change a collection's shard key online without downtime, and what to expect during the resharding process.
+Description: Learn how to use reshardCollection in MongoDB 5.0+ to change a collection shard key online without downtime, and what to expect during the resharding process.
 
 ---
 

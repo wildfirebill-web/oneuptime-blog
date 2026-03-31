@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, IAM, Custom Roles, Security, Access Control, Permissions
+Tags: GCP, IAM, Custom Roles, Security, Access Control, Permission
 
 Description: Learn how to create custom IAM roles in Google Cloud Platform with precisely scoped permissions for fine-grained access control beyond predefined roles.
 

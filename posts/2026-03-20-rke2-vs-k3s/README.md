@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RKE2, K3s, Kubernetes, Distribution, Comparison, Suse-rancher
+Tags: RKE2, k3s, Kubernetes, Distribution, Comparison, Suse-rancher
 
 Description: A comprehensive comparison of RKE2 and K3s to help you choose the right Kubernetes distribution for your production or edge workloads.
 

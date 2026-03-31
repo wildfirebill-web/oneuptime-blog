@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Concurrency, Optimistic Locking, Versioning, Transactions
+Tags: MongoDB, Concurrency, Optimistic Locking, Versioning, Transaction
 
 Description: Implement optimistic concurrency control in MongoDB using document versioning to prevent lost updates when multiple clients modify the same document.
 

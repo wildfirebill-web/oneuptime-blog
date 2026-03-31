@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, Values, Configuration
+Tags: Helm, Kubernetes, Value, Configuration
 
 Description: Learn how to define and use global values in Helm charts to share configuration across parent charts and subcharts.
 

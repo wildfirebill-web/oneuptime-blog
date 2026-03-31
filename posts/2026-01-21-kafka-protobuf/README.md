@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Protocol Buffers, Protobuf, Schema Registry, Serialization
+Tags: Apache Kafka, Protocol Buffer, Protobuf, Schema Registry, Serialization
 
 Description: A comprehensive guide to using Protocol Buffers with Apache Kafka for efficient, strongly-typed message serialization with schema evolution support.
 

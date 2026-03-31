@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Layer, Inspection
+Tags: Portainer, Docker, Image, Layer, Inspection
 
 Description: Inspect Docker image details, layers, and metadata in Portainer for debugging and optimization.
 

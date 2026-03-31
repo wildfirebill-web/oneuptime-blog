@@ -110,7 +110,7 @@ maxctrl list services
 
 You should see output like:
 
-```
+```text
 ┌──────────┬──────────────────┬──────┬─────────────┬─────────────────────┐
 │ Server   │ Address          │ Port │ Connections │ State               │
 ├──────────┼──────────────────┼──────┼─────────────┼─────────────────────┤

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Inventory, Variables, Hostname, Configuration Management
+Tags: Ansible, Inventory, Variable, Hostname, Configuration Management
 
 Description: Understand the critical difference between inventory_hostname and ansible_hostname in Ansible and when to use each one.
 

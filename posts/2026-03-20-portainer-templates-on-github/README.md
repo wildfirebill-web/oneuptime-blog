@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, GitHub, DevOps
+Tags: Portainer, Docker, Template, GitHub, DevOps
 
 Description: Learn how to create and host a custom Portainer template catalog on GitHub for easy sharing and version control.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Batch Processing, Checkpointing
+Tags: Kubernetes, Job, Batch Processing, Checkpointing
 
 Description: Learn how to implement checkpointing in Kubernetes Jobs to save progress of long-running batch processes, enabling recovery from failures without losing work.
 

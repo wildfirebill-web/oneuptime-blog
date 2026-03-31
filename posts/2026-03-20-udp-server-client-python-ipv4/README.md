@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, UDP, Sockets, IPv4, Networking, Datagram
+Tags: Python, UDP, Socket, IPv4, Networking, Datagram
 
 Description: Learn how to create a UDP server and client in Python using IPv4 with the socket module, including handling datagrams and sender addresses.
 

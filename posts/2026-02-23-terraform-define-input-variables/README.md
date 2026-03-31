@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Variables, Infrastructure as Code, Configuration
+Tags: Terraform, HCL, Variable, Infrastructure as Code, Configuration
 
 Description: Learn how to define input variables in Terraform using the variable block, including type constraints, defaults, descriptions, and all available configuration options.
 

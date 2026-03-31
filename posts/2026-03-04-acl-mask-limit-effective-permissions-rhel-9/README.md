@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, ACL Mask, Permissions, Linux
+Tags: RHEL, ACL Mask, Permission, Linux
 
 Description: Understand and use the POSIX ACL mask on RHEL to control the maximum effective permissions for named users and groups without modifying individual ACL entries.
 

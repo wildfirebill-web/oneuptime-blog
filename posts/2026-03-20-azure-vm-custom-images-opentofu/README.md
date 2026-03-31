@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Custom Images, Shared Image Gallery, VMs, Golden Image, Infrastructure as Code
+Tags: OpenTofu, Azure, Custom Image, Shared Image Gallery, VMs, Golden Image, Infrastructure as Code
 
 Description: Learn how to create and use custom VM images with OpenTofu on Azure, including Azure Compute Gallery for image versioning and multi-region distribution.
 

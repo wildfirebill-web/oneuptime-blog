@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Security, Environment Variables
+Tags: Podman, Container, DevOps, Secret, Security, Environment Variable
 
 Description: Learn how to create Podman secrets from environment variables for seamless integration with CI/CD pipelines and automation scripts.
 

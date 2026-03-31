@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Wishlist, E-Commerce, Sets, Sorted Sets
+Tags: Redis, Wishlist, E-Commerce, Set, Sorted Set
 
 Description: Learn how to build a product wishlist feature in Redis with add, remove, share, and popularity tracking using Sets and Sorted Sets.
 

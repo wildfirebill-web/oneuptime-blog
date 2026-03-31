@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Filesystem, Debugging
+Tags: Portainer, Docker, Container, Filesystem, Debugging
 
 Description: Inspect and analyze filesystem changes made by running containers using Portainer and Docker inspection tools.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Recursive CTE, Hierarchical Data, SQL, Trees
+Tags: MySQL, Recursive CTE, Hierarchical Data, SQL, Tree
 
 Description: Learn how to write recursive CTEs in MySQL 8 to traverse hierarchical data like organizational charts, category trees, and bill of materials.
 

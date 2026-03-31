@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Prometheus, Federation, Monitoring, Metrics
+Tags: Istio, Prometheus, Federation, Monitoring, Metric
 
 Description: A hands-on guide to setting up Prometheus federation to aggregate Istio metrics from multiple clusters or multiple Prometheus instances into a central view.
 

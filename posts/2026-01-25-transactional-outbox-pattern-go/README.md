@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Outbox Pattern, Distributed Systems, Database, Messaging
+Tags: Go, Outbox Pattern, Distributed System, Database, Messaging
 
 Description: Learn how to implement the transactional outbox pattern in Go to guarantee reliable message delivery between your database and message broker without distributed transactions.
 

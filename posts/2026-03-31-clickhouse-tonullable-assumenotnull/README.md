@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Nullable, Type Conversion, Null Handling, Query Pattern
+Tags: ClickHouse, Nullable, Type Conversion, NULL Handling, Query Pattern
 
 Description: Learn how toNullable() lifts a non-nullable value into a Nullable type and assumeNotNull() strips the Nullable wrapper in ClickHouse for type-safe NULL handling workflows.
 

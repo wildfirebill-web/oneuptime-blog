@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Python, Gunicorn, Metrics
+Tags: OpenTelemetry, Python, Gunicorn, Metric
 
 Description: Fix the issue where OpenTelemetry metrics stop exporting when Gunicorn forks multiple worker processes from the main process.
 

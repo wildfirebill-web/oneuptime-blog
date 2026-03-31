@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Messaging, Patterns, Monitoring, EIP
+Tags: Messaging, Pattern, Monitoring, EIP
 
 Description: Learn how to implement the Wire Tap pattern for non-intrusive message inspection, audit logging, and debugging in distributed systems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, MTU, IPv4, ip command, Jumbo Frames
+Tags: Linux, Networking, MTU, IPv4, ip command, Jumbo Frame
 
 Description: Set the Maximum Transmission Unit (MTU) on a Linux network interface using ip link set, enable jumbo frames for storage networks, and diagnose MTU mismatch connectivity issues.
 

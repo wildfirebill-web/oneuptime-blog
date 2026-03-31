@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Caching, Events, Invalidation, Real-Time
+Tags: Caching, Event, Invalidation, Real-Time
 
 Description: Learn to create event-based cache invalidation for real-time data consistency.
 

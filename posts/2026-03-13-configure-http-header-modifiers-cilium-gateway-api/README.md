@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, HTTP, Gateway API, Headers, Routing
+Tags: Cilium, Kubernetes, HTTP, Gateway API, Header, Routing
 
 Description: Configure HTTP request and response header modification in Cilium's Gateway API to add, remove, or override headers at the ingress gateway.
 

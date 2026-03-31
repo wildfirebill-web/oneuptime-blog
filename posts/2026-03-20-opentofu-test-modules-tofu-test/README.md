@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules, Testing
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module, Testing
 
 Description: Learn how to use the tofu test command in OpenTofu to write automated tests for your infrastructure modules with assertions and mock providers.
 

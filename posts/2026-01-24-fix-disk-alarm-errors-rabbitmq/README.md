@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, DevOps, Troubleshooting, Disk Management, Infrastructure
+Tags: RabbitMQ, Message Queue, DevOps, Troubleshooting, Disk Management, Infrastructure
 
 Description: Learn how to diagnose, resolve, and prevent RabbitMQ disk alarm errors that block publishers and cause message delivery failures.
 

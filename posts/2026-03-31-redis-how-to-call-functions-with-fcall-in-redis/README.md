@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, FCALL, Functions, Redis 7, Scripting, Lua
+Tags: Redis, FCALL, Function, Redis 7, Scripting, Lua
 
 Description: Learn how to call Redis Function libraries using FCALL, pass keys and arguments correctly, handle errors, and use FCALL in different client libraries.
 

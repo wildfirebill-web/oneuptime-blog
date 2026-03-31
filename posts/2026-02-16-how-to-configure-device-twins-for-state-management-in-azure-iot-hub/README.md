@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure IoT Hub, Device Twins, IoT, State Management, Desired Properties, Reported Properties, JSON
+Tags: Azure IoT Hub, Device Twin, IoT, State Management, Desired Properties, Reported Properties, JSON
 
 Description: Learn how to use Azure IoT Hub device twins to manage device configuration, synchronize state, and query device properties across your IoT fleet.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NVIDIA, GPU, Drivers, Server
+Tags: Ubuntu, NVIDIA, GPU, Driver, Server
 
 Description: Complete guide to installing NVIDIA GPU drivers on Ubuntu Server for compute workloads, CUDA, and GPU-accelerated applications, including troubleshooting common issues.
 

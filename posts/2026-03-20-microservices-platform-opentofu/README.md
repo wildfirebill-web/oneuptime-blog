@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Microservices, EKS, Service Mesh, AWS, Infrastructure as Code
+Tags: OpenTofu, Microservice, EKS, Service Mesh, AWS, Infrastructure as Code
 
 Description: Learn how to build a microservices platform on AWS with OpenTofu using EKS, service mesh, API gateway, and shared infrastructure components.
 

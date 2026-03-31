@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $ne, Not Equal, Query Operators, Filtering, Node.js
+Tags: MongoDB, $ne, Not Equal, Query Operator, Filtering, Node.js
 
 Description: Learn how to use the MongoDB $ne (not equal) operator to exclude documents where a field equals a specific value, with practical examples and index usage guidance.
 

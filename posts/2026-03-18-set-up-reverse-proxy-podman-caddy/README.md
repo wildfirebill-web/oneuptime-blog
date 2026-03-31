@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Caddy, Reverse Proxy, Containers, HTTPS
+Tags: Podman, Caddy, Reverse Proxy, Container, HTTPS
 
 Description: Learn how to use Caddy as a reverse proxy with Podman containers, featuring automatic HTTPS, simple configuration syntax, and straightforward multi-service routing.
 

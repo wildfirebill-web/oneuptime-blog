@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, join_algorithm, Joins, Performance, Sql
+Tags: ClickHouse, join_algorithm, Joins, Performance, SQL
 
 Description: Learn how to configure the join_algorithm setting in ClickHouse to choose between hash join, merge join, partial merge, and other strategies for optimal query performance.
 

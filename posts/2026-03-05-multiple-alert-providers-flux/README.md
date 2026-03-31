@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Multiple Providers
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Multiple Providers
 
 Description: Learn how to configure multiple notification providers in Flux to send alerts to different destinations such as Slack, Teams, and PagerDuty simultaneously.
 

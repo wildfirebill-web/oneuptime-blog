@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Terraform, Terraform Cloud, CI/CD, Infrastructure as Code
+Tags: GitHub Action, Terraform, Terraform Cloud, CI/CD, Infrastructure as Code
 
 Description: Learn how to integrate GitHub Actions with Terraform Cloud for secure, automated infrastructure changes and remote state management.
 

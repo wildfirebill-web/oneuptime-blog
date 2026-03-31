@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Service Bus, Poison Messages, Error Handling, Message Queues, Azure, Reliability, Dead Letter
+Tags: Azure Service Bus, Poison Messages, Error Handling, Message Queue, Azure, Reliability, Dead Letter
 
 Description: Learn strategies for detecting, handling, and recovering from poison messages in Azure Service Bus queues to prevent processing loops and data loss.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Prometheus, Grafana, Monitoring, Metrics, Observability
+Tags: Elasticsearch, Prometheus, Grafana, Monitoring, Metric, Observability
 
 Description: A comprehensive guide to monitoring Elasticsearch with Prometheus and Grafana, covering metric exporters, dashboard creation, alerting rules, and best practices for observability.
 

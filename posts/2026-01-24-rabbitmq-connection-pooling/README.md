@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Connection Pooling, Performance, Message Queues, Backend, Python, Node.js, Scalability
+Tags: RabbitMQ, Connection Pooling, Performance, Message Queue, Backend, Python, Node.js, Scalability
 
 Description: Learn how to implement efficient connection pooling for RabbitMQ to improve performance and resource management in high-throughput applications.
 

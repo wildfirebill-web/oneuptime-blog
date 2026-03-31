@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Environment Variables
+Tags: Podman, Container, DevOps, Configuration, Environment Variable
 
 Description: Learn how to set default environment variables in containers.conf so every Podman container inherits a consistent environment.
 

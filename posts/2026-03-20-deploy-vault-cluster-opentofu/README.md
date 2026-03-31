@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Vault, Cluster, has, HashiCorp, Secret Management
+Tags: OpenTofu, Vault, Cluster, High Availability, HashiCorp, Secret Management
 
 Description: Learn how to deploy a production-ready HashiCorp Vault cluster on AWS using OpenTofu with integrated storage, Auto Unseal via KMS, and load balancer configuration.
 

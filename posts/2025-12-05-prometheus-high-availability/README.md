@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, High Availability, has, Reliability, Thanos, Cortex, Monitoring
+Tags: Prometheus, High Availability, Reliability, Thanos, Cortex, Monitoring
 
 Description: Learn how to configure Prometheus for high availability using multiple replicas, Thanos, or Cortex for production-grade monitoring infrastructure.
 

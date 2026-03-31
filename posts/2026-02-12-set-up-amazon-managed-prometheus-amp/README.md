@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Prometheus, Monitoring, AMP, Metrics, Observability, EKS
+Tags: AWS, Prometheus, Monitoring, AMP, Metric, Observability, EKS
 
 Description: Complete guide to setting up Amazon Managed Prometheus for collecting and querying Prometheus metrics at scale without managing servers
 

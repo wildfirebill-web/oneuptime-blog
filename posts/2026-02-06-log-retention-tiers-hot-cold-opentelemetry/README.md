@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Log Retention, Storage Tiers, Cost Optimization
+Tags: OpenTelemetry, Log Retention, Storage Tier, Cost Optimization
 
 Description: Set up tiered log retention with hot and cold storage using the OpenTelemetry Collector to balance cost and accessibility.
 

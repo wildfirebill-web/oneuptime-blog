@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Azure AD, Entra ID, Groups, Identity, Infrastructure as Code
+Tags: Terraform, Azure, Azure AD, Entra ID, Group, Identity, Infrastructure as Code
 
 Description: Learn how to create and manage Azure AD groups in Terraform including security groups, Microsoft 365 groups, dynamic membership, and nested groups.
 

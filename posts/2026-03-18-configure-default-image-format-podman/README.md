@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, OCI, Docker, Image Format
+Tags: Podman, Container, DevOps, Configuration, OCI, Docker, Image Format
 
 Description: Learn how to configure the default image format in Podman to choose between OCI and Docker image formats for builds and pushes.
 

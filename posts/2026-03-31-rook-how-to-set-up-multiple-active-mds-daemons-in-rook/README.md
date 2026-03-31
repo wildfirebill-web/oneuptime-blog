@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Cephfs, Mds, Kubernetes, Scalability
+Tags: Rook, Ceph, CephFS, MDS, Kubernetes, Scalability
 
 Description: Configure multiple active MDS daemons in Rook to scale CephFS metadata throughput and reduce latency for large-scale filesystem workloads.
 

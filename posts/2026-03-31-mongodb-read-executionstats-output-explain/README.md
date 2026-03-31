@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Performance, Query Optimization, Index, Explain
+Tags: MongoDB, Performance, Query Optimization, Index, EXPLAIN
 
 Description: Understand the key fields in MongoDB executionStats output from explain() so you can diagnose slow queries and decide when an index is needed.
 

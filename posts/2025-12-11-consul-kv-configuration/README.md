@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Consul, Key-Value Store, Configuration Management, Distributed Systems, DevOps
+Tags: Consul, Key-Value Store, Configuration Management, Distributed System, DevOps
 
 Description: Learn how to use Consul's Key-Value store for centralized configuration management, including storing, retrieving, watching for changes, and implementing configuration hierarchies.
 

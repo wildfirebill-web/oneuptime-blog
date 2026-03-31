@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Module Registry, Modules, DevOps
+Tags: Terraform, HCP Terraform, Module Registry, Module, DevOps
 
 Description: Set up and use the private module registry in HCP Terraform to publish, version, and share reusable Terraform modules across your organization's workspaces.
 

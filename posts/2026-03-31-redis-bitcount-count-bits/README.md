@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bitmap, BITCOUNT, Bit, Analytics
+Tags: Redis, Bitmap, BITCOUNT, BIT, Analytics
 
 Description: Learn how to use BITCOUNT to count the number of set bits (1s) in a Redis string, enabling efficient population count for bitmap-based analytics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, GOPATH, GOROOT, Environments, Setup, Configuration
+Tags: Go, Golang, GOPATH, GOROOT, Environment, Setup, Configuration
 
 Description: Understand the difference between GOPATH and GOROOT, when you need to set them, and how to properly configure your Go development environment.
 

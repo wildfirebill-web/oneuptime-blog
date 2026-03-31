@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Teams, User Management, RBAC, Administration
+Tags: Portainer, Team, User Management, RBAC, Administration
 
 Description: Create and manage teams in Portainer to group users and control their access to environments and resources.
 

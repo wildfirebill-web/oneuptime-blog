@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, CI/CD, Auto Scaling, GitHub Actions, GitLab, Runner, Kubernetes, Infrastructure as Code
+Tags: OpenTofu, CI/CD, Auto Scaling, GitHub Action, GitLab, Runner, Kubernetes, Infrastructure as Code
 
 Description: Learn how to implement elastic scaling for CI/CD runners using OpenTofu with queue-depth-based auto scaling, scheduled scaling for peak hours, and cost optimization through spot instances and...
 

@@ -1,6 +1,6 @@
 # How to Configure Dapr Binding with MySQL
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Binding, MySQL, Database, SQL
 

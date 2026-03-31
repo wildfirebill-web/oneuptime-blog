@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Prometheus, Metrics, Observability, Monitoring
+Tags: Go, Prometheus, Metric, Observability, Monitoring
 
 Description: A practical guide to instrumenting Go applications with custom Prometheus metrics, covering counters, gauges, histograms, and best practices for production deployments.
 

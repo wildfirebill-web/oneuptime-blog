@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, Reconciliation, Kustomize, Resources
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, Reconciliation, Kustomize, Resource
 
 Description: Troubleshoot and fix cases where Flux reconciliation completes successfully but silently skips certain resources, leaving them unapplied in the cluster.
 

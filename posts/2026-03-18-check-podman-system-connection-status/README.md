@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Remote Management, Networking
+Tags: Podman, Container, DevOps, Remote Management, Networking
 
 Description: Learn how to check the status of Podman system connections to verify connectivity with local and remote Podman instances.
 

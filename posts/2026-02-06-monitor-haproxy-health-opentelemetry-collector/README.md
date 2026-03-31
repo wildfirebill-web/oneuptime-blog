@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, HAProxy, Load Balancer, Metrics, Infrastructure, Observability
+Tags: OpenTelemetry, Collector, HAProxy, Load Balancer, Metric, Infrastructure, Observability
 
 Description: Learn how to monitor HAProxy load balancer health metrics using the OpenTelemetry Collector to track backend availability, request rates, and error ratios.
 

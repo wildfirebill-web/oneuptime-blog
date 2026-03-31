@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Chaos Engineering, Chaos Monkey, Resilience, Netflix, Reliability, Testing, Microservices
+Tags: Docker, Chaos Engineering, Chaos Monkey, Resilience, Netflix, Reliability, Testing, Microservice
 
 Description: Learn how to practice chaos engineering with Docker by simulating failures using Chaos Monkey-style approaches.
 

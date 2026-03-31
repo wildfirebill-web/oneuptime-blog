@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Concurrency, Goroutines, Channels, Performance, Parallel Processing
+Tags: Go, Concurrency, Goroutines, Channel, Performance, Parallel Processing
 
 Description: Master Go concurrency with goroutines and channels, learning patterns for parallel work without race conditions including worker pools, fan-out/fan-in, and pipeline patterns.
 

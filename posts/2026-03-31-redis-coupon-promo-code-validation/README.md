@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, E-commerce, Hash, Validation
+Tags: Redis, E-Commerce, Hash, Validation
 
 Description: Implement fast, atomic coupon and promo code validation in Redis - store code metadata, enforce usage limits, prevent double redemption, and handle per-user restrictions.
 

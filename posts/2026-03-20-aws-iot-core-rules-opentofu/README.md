@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, IoT Core, IoT Rules, Data Pipelines, Infrastructure as Code
+Tags: OpenTofu, AWS, IoT Core, IoT Rules, Data Pipeline, Infrastructure as Code
 
 Description: Learn how to create AWS IoT Core rules to route device messages to DynamoDB, Lambda, S3, and SNS using OpenTofu.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, System Resources, Namespaces, DevOps
+Tags: Portainer, Kubernetes, System Resources, Namespace, DevOps
 
 Description: Learn how to show or hide Kubernetes system resources in Portainer to keep your view clean while still being able to access system-level workloads when needed.
 

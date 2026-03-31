@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Proxmox, High Availability, HA, Cluster, Failover
+Tags: Ceph, Rook, Proxmox, High Availability, Cluster, Failover
 
 Description: Configure Proxmox VE High Availability groups with Ceph RBD storage to enable automatic VM failover when a cluster node fails.
 

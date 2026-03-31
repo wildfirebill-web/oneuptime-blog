@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Capabilities, Linux
+Tags: Podman, Container, DevOps, Security, Capabilities, Linux
 
 Description: Learn how to drop and add Linux capabilities in Podman containers to enforce the principle of least privilege.
 

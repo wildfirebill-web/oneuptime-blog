@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Performance, Optimization, Statistic, Index
+Tags: MySQL, Performance, Optimization, Statistics, Index
 
 Description: Learn how MySQL 8.0 histogram statistics improve query optimizer decisions for columns with non-uniform data distributions.
 

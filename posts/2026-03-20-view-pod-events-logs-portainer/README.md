@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Pods, Logging, Observability, Troubleshooting
+Tags: Portainer, Kubernetes, Pod, Logging, Observability, Troubleshooting
 
 Description: Use Portainer's Kubernetes pod interface to view container logs, pod events, and previous container output for effective troubleshooting of running and failed workloads.
 

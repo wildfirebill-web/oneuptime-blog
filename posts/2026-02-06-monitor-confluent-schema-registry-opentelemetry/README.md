@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Confluent, Schema Registry, Kafka, Monitoring, Metrics
+Tags: OpenTelemetry, Confluent, Schema Registry, Kafka, Monitoring, Metric
 
 Description: Learn how to monitor Confluent Schema Registry with OpenTelemetry to track schema evolution, API performance, and compatibility checks across your Kafka ecosystem.
 

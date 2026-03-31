@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Storage, Cluster, Scaling, Operations
+Tags: MongoDB, Storage, Cluster, Scaling, Operation
 
 Description: Learn how to expand storage capacity in a MongoDB cluster without service interruption by adding volumes or migrating data while keeping the cluster online.
 

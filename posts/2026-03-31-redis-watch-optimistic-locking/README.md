@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, WATCH, Optimistic Locking, Transaction, MULTI, EXEC
+Tags: Redis, Watch, Optimistic Locking, Transaction, MULTI, EXEC
 
 Description: Learn how to use WATCH in Redis to implement optimistic locking, ensuring transactions only execute if watched keys have not been modified by another client.
 

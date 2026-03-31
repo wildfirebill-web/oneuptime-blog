@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vault, Dynamic Secrets, Database, HashiCorp, Security
+Tags: Vault, Dynamic Secret, Database, HashiCorp, Security
 
 Description: Learn how to use Vault dynamic secrets to generate short-lived database credentials for improved security.
 

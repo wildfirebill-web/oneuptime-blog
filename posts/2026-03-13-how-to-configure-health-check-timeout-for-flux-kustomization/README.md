@@ -1,6 +1,6 @@
 # How to Configure Health Check Timeout for Flux Kustomization
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux, GitOps, Kubernetes, Health Check, Timeout, Kustomization
 

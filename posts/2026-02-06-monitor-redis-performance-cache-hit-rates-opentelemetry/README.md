@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Redis, Caching, Performance Monitoring, Observability, Metrics
+Tags: OpenTelemetry, Redis, Caching, Performance Monitoring, Observability, Metric
 
 Description: A practical guide to monitoring Redis performance, tracking cache hit rates, and setting up alerts using OpenTelemetry instrumentation and the collector.
 

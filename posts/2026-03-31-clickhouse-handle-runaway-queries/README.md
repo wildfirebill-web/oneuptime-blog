@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Query Management, Performance, Operations, Incident Response
+Tags: ClickHouse, Query Management, Performance, Operation, Incident Response
 
 Description: Identify, kill, and prevent runaway ClickHouse queries that consume excessive CPU, memory, or run indefinitely, impacting cluster stability.
 

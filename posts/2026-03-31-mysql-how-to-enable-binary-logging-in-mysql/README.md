@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Binary Log, Replication, Recovery, Configuration
+Tags: MySQL, Binary Log, Replication, Recovery, Configuration
 
 Description: Learn how to enable and configure MySQL binary logging for replication, point-in-time recovery, and change data capture with practical configuration examples.
 

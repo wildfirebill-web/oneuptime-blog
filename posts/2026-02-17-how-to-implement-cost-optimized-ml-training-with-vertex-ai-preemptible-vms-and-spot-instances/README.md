@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vertex AI, Cost Optimization, Spot Instances, ML Training, Google Cloud
+Tags: Vertex AI, Cost Optimization, Spot Instance, ML Training, Google Cloud
 
 Description: Learn how to reduce ML training costs by up to 80% using Vertex AI with preemptible VMs and spot instances while maintaining training reliability.
 

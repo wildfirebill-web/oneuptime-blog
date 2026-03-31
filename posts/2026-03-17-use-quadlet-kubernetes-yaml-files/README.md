@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Kubernetes, YAML
+Tags: Podman, Container, DevOps, Quadlet, Kubernetes, YAML
 
 Description: Learn how to use Kubernetes YAML files with Podman Quadlet to run Kubernetes-style workloads managed by systemd.
 

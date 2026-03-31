@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Resource Limits, Performance
+Tags: Podman, Container, DevOps, Resource Limit, Performance
 
 Description: Learn how to set CPU, memory, and I/O resource limits on Podman containers to prevent resource starvation and ensure stable multi-container environments.
 

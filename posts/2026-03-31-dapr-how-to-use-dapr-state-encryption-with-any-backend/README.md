@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, State Management, Encryption, Security, Cryptography, Microservices
+Tags: Dapr, State Management, Encryption, Security, Cryptography, Microservice
 
 Description: Learn how to enable Dapr's built-in state store encryption so all state data is encrypted before writing to any backend, protecting sensitive data at rest.
 

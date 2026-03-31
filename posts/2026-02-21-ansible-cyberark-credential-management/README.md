@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, CyberArk, Credentials, Security
+Tags: Ansible, CyberArk, Credential, Security
 
 Description: Integrate Ansible with CyberArk Privilege Access Management to retrieve privileged credentials securely during playbook execution.
 

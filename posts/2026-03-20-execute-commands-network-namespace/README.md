@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Namespaces, iproute2, Networking, Containers, System Administration
+Tags: Linux, Network Namespaces, iproute2, Networking, Container, System Administration
 
 Description: Run commands, scripts, and interactive shells inside a Linux network namespace using ip netns exec to test and manage isolated network environments.
 

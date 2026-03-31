@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Workbench, Explain, Performance, Query
+Tags: MySQL, Workbench, EXPLAIN, Performance, Query
 
 Description: Learn how to use MySQL Workbench's Visual EXPLAIN feature to analyze query execution plans graphically and identify performance bottlenecks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, Private, Internals, Linux, Dnsmasq, Networking, Infrastructure
+Tags: DNS, Private, Internal, Linux, Dnsmasq, Networking, Infrastructure
 
 Description: Set up a private DNS server for internal network services using dnsmasq or Unbound to resolve internal hostnames and route external queries to public resolvers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cold Start, Performance, Serverless
+Tags: GCP, Cloud Function, Cold Start, Performance, Serverless
 
 Description: Learn how to configure minimum instances in Google Cloud Functions to keep warm instances ready and eliminate cold start latency for latency-sensitive workloads.
 

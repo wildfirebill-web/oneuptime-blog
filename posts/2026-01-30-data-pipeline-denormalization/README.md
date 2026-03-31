@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, Denormalization, Data Warehouse, Performance
+Tags: Data Pipeline, Denormalization, Data Warehouse, Performance
 
 Description: Learn to implement data denormalization for optimizing query performance in analytical workloads.
 

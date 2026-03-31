@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, DataGrip, Developer Tool, Query, Operations
+Tags: MongoDB, DataGrip, Developer Tool, Query, Operation
 
 Description: Learn how to use JetBrains DataGrip to connect to MongoDB, browse schemas, run aggregation pipelines, export data, and manage indexes with a professional IDE experience.
 

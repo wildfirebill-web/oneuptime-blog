@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Security, CIS, Benchmarks, Compliance
+Tags: Docker, Security, CIS, Benchmark, Compliance
 
 Description: Learn how to audit Docker installations using CIS (Center for Internet Security) benchmarks, automate compliance checks with Docker Bench, and remediate common security findings.
 

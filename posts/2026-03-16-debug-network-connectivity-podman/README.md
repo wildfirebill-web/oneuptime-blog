@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Debugging, Networking
+Tags: Podman, Container, DevOps, Debugging, Networking
 
 Description: A practical guide to diagnosing and fixing network connectivity problems in Podman containers, covering port mapping, bridge networks, firewall rules, and rootless networking.
 

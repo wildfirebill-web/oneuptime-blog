@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Caching, Distributed Systems, Redis, Memcached, Performance
+Tags: Caching, Distributed System, Redis, Memcached, Performance
 
 Description: Learn distributed caching patterns including cache invalidation, consistency, and strategies for multi-node deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Templates, Docker Compose, DevOps
+Tags: Portainer, Stack, Template, Docker Compose, DevOps
 
 Description: Use custom application templates in Portainer to quickly deploy pre-configured stacks.
 

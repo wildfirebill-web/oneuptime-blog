@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Placement Group, CRUSH, Diagnostics
+Tags: Rook, Ceph, Placement Group, CRUSH, Diagnostic
 
 Description: Learn how to use ceph pg map to find which OSDs host a specific Placement Group, enabling targeted diagnostics in Rook-managed Ceph clusters.
 

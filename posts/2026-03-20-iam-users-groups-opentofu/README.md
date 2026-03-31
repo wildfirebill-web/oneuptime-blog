@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, IAM, AWS, Security, Users, Groups, Infrastructure as Code
+Tags: OpenTofu, IAM, AWS, Security, Users, Group, Infrastructure as Code
 
 Description: Learn how to manage AWS IAM users, groups, and memberships with OpenTofu - creating users, organizing them into groups with policies, setting up programmatic access, and enforcing MFA requirements.
 

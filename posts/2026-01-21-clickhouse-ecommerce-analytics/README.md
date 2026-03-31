@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, E-Commerce, Analytics, Product Analytics, Conversion Tracking, Recommendations
+Tags: ClickHouse, E-Commerce, Analytics, Product Analytics, Conversion Tracking, Recommendation
 
 Description: A comprehensive guide to using ClickHouse for e-commerce analytics, covering product performance tracking, conversion analysis, customer segmentation, inventory analytics.
 

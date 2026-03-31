@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Hash Join, Query Optimization, Performance, Internals
+Tags: MySQL, Hash Join, Query Optimization, Performance, Internal
 
 Description: Learn how MySQL 8's hash join algorithm works, when the optimizer chooses it over nested loop joins, and how to tune it for large datasets.
 

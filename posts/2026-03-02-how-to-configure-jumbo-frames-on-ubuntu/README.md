@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Jumbo Frames, MTU, Performance
+Tags: Ubuntu, Networking, Jumbo Frame, MTU, Performance
 
 Description: Configure jumbo frames on Ubuntu by setting MTU values above 1500 bytes for improved network performance in storage and high-throughput environments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Health Check, Containers, Monitoring
+Tags: Portainer, Docker, Health Check, Container, Monitoring
 
 Description: Monitor container health status, view health check logs, and troubleshoot unhealthy containers in Portainer.
 

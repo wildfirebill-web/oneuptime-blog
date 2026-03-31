@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Performance, Metrics, Cardinality, Cost Optimization
+Tags: OpenTelemetry, Performance, Metric, Cardinality, Cost Optimization
 
 Description: Learn practical strategies to manage high-cardinality metrics in OpenTelemetry, including filtering, aggregation, and dimension reduction techniques that reduce costs by up to 70%.
 

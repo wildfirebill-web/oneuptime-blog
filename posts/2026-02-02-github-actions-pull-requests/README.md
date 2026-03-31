@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Pull Requests, Automation, DevOps, Code Review, Testing, Continuous Integration
+Tags: GitHub Action, CI/CD, Pull Requests, Automation, DevOps, Code Review, Testing, Continuous Integration
 
 Description: A hands-on guide to configuring GitHub Actions workflows for pull requests. Learn how to automate testing, code quality checks, security scanning, and build verification on every PR.
 

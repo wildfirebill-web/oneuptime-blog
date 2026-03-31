@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Prometheus, Monitoring, Messaging, Observability, Metrics, JetStream
+Tags: NATS, Prometheus, Monitoring, Messaging, Observability, Metric, JetStream
 
 Description: Learn how to monitor NATS messaging systems with Prometheus.
 

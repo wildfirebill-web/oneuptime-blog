@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, ETL, Full Load, Data Integration
+Tags: Data Pipeline, ETL, Full Load, Data Integration
 
 Description: Learn to implement full extraction patterns for complete data refresh scenarios in data pipelines.
 

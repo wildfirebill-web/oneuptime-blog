@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Storage, Volumes, Containers, DevOps
+Tags: Podman, Storage, Volumes, Container, DevOps
 
 Description: Learn how to organize and manage Podman container storage efficiently using named volumes, bind mounts, storage drivers, and cleanup strategies to prevent disk space issues.
 

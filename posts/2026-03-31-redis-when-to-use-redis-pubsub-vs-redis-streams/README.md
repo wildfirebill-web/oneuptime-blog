@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, Streams, Architecture, Messaging, Decision Guide
+Tags: Redis, Pub/Sub, Stream, Architecture, Messaging, Decision guide
 
 Description: Compare Redis Pub/Sub and Redis Streams to choose the right messaging pattern based on durability, replay, consumer groups, and throughput requirements.
 

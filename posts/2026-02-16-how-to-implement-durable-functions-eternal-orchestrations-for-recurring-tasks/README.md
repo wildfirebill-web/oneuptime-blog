@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Durable Functions, Eternal Orchestrations, Recurring Tasks, Serverless, Orchestration, Timers
+Tags: Azure, Durable Functions, Eternal Orchestrations, Recurring Tasks, Serverless, Orchestration, Timer
 
 Description: Implement eternal orchestrations in Azure Durable Functions to create long-running recurring tasks that execute indefinitely without timer triggers.
 

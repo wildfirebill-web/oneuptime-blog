@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Set, Collections, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Set, Collection, Infrastructure as Code, DevOps
 
 Description: A guide to using set type variables in OpenTofu for unique, unordered collections of values.
 

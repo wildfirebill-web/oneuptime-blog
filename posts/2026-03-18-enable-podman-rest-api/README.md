@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Containers, DevOps, Linux
+Tags: Podman, REST API, Container, DevOps, Linux
 
 Description: Learn how to enable and configure the Podman REST API to manage containers programmatically using HTTP requests.
 

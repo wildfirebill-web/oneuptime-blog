@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Infrastructure as Code, Types, Configuration
+Tags: Terraform, HCL, Infrastructure as Code, Type, Configuration
 
 Description: Learn how null values work in Terraform, how to use them for optional arguments, conditional resource configuration, and variable defaults with practical examples.
 

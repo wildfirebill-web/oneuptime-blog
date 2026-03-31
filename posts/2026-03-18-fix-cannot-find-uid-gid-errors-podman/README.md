@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, Linux, User Namespaces, Troubleshooting
+Tags: Podman, Container, Linux, User Namespaces, Troubleshooting
 
 Description: A thorough guide to resolving 'cannot find UID/GID' errors in Podman, covering subuid/subgid configuration, user namespace mapping, NSS modules, and container user management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Security, Caching, Real-time, Architecture
+Tags: Redis, Security, Caching, Real-Time, Architecture
 
 Description: Learn how to build a real-time fraud detection system using Redis rate limiting, Bloom filters, sorted sets, and hashes to block suspicious transactions instantly.
 

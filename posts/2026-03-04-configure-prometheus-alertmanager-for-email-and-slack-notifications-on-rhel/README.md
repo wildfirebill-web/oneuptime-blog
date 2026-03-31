@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Prometheus, Alertmanager, Email, Slack, Notifications, Monitoring
+Tags: RHEL, Prometheus, Alertmanager, Email, Slack, Notification, Monitoring
 
 Description: Set up Prometheus Alertmanager on RHEL to send alert notifications via email and Slack when your monitoring rules detect issues like high CPU or low disk space.
 

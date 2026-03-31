@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, openSUSE
+Tags: Podman, Installation, Linux, Container, DevOps, openSUSE
 
 Description: A complete guide to installing and configuring Podman on openSUSE Leap and Tumbleweed, including rootless setup and YaST integration.
 

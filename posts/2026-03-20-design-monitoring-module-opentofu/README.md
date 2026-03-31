@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, CloudWatch, Monitoring, AWS, Modules, Observability
+Tags: OpenTofu, Terraform, CloudWatch, Monitoring, AWS, Module, Observability
 
 Description: Learn how to design a reusable CloudWatch monitoring module for OpenTofu that creates dashboards, alarms, and SNS notification topics from service configuration data.
 

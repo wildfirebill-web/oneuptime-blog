@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, OSD, Removal, Operations
+Tags: Rook, Ceph, Kubernetes, OSD, Removal, Operation
 
 Description: Step-by-step procedure for safely removing an OSD from a Rook-Ceph cluster, including data drain, OSD decommission, and disk cleanup.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Combinators, Aggregation, Sql, Analytics
+Tags: ClickHouse, Combinator, Aggregation, SQL, Analytics
 
 Description: Learn how to use ClickHouse aggregate function combinators -If, -Array, and -Map to extend aggregate functions with conditional, array, and map-based logic.
 

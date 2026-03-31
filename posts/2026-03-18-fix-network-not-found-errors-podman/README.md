@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, Networking, CNI, Troubleshooting
+Tags: Podman, Container, Networking, CNI, Troubleshooting
 
 Description: A complete guide to fixing 'network not found' errors in Podman, covering network backends, CNI vs Netavark migration, rootless networking, and network configuration files.
 

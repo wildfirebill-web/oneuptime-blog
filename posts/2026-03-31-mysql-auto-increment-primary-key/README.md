@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, Primary Key, Auto Increment, Schema
+Tags: MySQL, SQL, DDL, Primary Key, Auto Increment
 
 Description: Add an AUTO_INCREMENT primary key to new and existing MySQL tables, understand how the counter works, and reset or modify it safely.
 

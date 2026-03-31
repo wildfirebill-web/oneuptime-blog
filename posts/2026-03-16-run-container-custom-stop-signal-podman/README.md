@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Signals, Process Management
+Tags: Podman, Container, DevOps, Signal, Process Management
 
 Description: Learn how to configure custom stop signals for Podman containers to enable graceful shutdowns tailored to your application's signal handling.
 

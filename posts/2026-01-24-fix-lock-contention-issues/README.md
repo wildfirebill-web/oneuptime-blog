@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Performance, Database, Concurrency, Locks, PostgreSQL, MySQL, Troubleshooting
+Tags: Performance, Database, Concurrency, Lock, PostgreSQL, MySQL, Troubleshooting
 
 Description: A practical guide to identifying, diagnosing, and fixing lock contention issues in databases and applications, with code examples and monitoring strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ruby, Gems, DevOps, Configuration Management
+Tags: Ansible, Ruby, Gem, DevOps, Configuration Management
 
 Description: A practical guide to installing, managing, and automating Ruby gem packages across your infrastructure using the Ansible gem module.
 

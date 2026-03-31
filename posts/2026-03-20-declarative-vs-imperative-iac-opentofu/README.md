@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Declarative, Imperative, Infrastructure as Code, Concepts
+Tags: OpenTofu, Declarative, Imperative, Infrastructure as Code, Concept
 
 Description: Learn the fundamental difference between declarative and imperative Infrastructure as Code approaches, illustrated with OpenTofu and shell script examples.
 

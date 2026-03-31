@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SQS, DLQ, Dead Letter Queue, Message Queues, DevOps, Cloud
+Tags: AWS, SQS, DLQ, Dead Letter Queue, Message Queue, DevOps, Cloud
 
 Description: Learn how to configure Amazon SQS Dead Letter Queue redrive policies to handle failed messages, implement automatic and manual redrive strategies, and build robust message processing systems.
 

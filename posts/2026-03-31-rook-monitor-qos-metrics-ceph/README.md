@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, QoS, Monitoring, Metrics
+Tags: Rook, Ceph, QoS, Monitoring, Metric
 
 Description: Learn how to monitor QoS effectiveness in Ceph by tracking throttled operations, queue depths, latency histograms, and per-client I/O rates.
 

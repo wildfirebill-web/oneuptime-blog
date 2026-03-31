@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, String, FixedString, Performance
+Tags: ClickHouse, SQL, Data Type, String, FixedString, Performance
 
 Description: A practical guide comparing ClickHouse's String and FixedString types - storage differences, when FixedString wins, and a decision guide.
 

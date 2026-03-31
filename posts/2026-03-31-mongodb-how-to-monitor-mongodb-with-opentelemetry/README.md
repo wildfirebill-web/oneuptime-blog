@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Opentelemetry, Monitoring, Traces, Metrics
+Tags: MongoDB, OpenTelemetry, Monitoring, Trace, Metric
 
 Description: Instrument MongoDB applications with OpenTelemetry to capture distributed traces, metrics, and logs for end-to-end observability across your stack.
 

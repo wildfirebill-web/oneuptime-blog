@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $project, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $project, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $project aggregation stage to include, exclude, rename, and compute fields, reshaping documents as they flow through a pipeline.
 

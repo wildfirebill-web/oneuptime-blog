@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Multus, Static IP, Networking
 
-Description: Learn how to configure static IP addresses for Rook-Ceph pods using Multus NetworkAttachmentDefinitions with static IPAM for predictable, stable network addressing.
+Description: Learn how to configure static IP addresses for Rook-Ceph pods using Multus NetworkAttachmentDefinitions with static IPAM for stable network addressing.
 
 ---
 

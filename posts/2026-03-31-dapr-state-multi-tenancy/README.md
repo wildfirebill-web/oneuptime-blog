@@ -1,6 +1,6 @@
 # How to Use Dapr State Management with Multi-Tenancy
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Multi-Tenancy, Isolation, Microservice
 

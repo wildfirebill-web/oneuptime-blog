@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPv4, Networking, Headers, Protocol, Performance
+Tags: IPv6, IPv4, Networking, Header, Protocol, Performance
 
 Description: Compare the IPv6 and IPv4 header structures to understand the design tradeoffs, efficiency improvements, and practical performance implications for modern networks.
 

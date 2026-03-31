@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Observability, Performance, Cardinality
+Tags: OpenTelemetry, Metric, Observability, Performance, Cardinality
 
 Description: Learn how to diagnose and fix high metric cardinality issues in OpenTelemetry that cause memory bloat, slow queries, and increased costs.
 

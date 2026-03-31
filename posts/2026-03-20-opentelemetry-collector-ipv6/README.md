@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, OpenTelemetry, Observability, Tracing, Metrics, Logs
+Tags: IPv6, OpenTelemetry, Observability, Tracing, Metric, Log
 
 Description: Configure the OpenTelemetry Collector to listen on IPv6 interfaces, receive telemetry from IPv6 sources, and export to IPv6-addressed backends like Jaeger, Prometheus, and Loki.
 

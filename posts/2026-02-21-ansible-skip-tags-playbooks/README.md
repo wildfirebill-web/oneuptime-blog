@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Tags, Playbook, Task Management
+Tags: Ansible, Tag, Playbook, Task Management
 
 Description: Learn how to use Ansible skip-tags to exclude specific tasks from playbook runs, with practical examples for selective execution.
 

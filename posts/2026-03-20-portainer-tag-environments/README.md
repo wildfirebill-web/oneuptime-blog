@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environments, Tags, Organizations, Edge Computing
+Tags: Portainer, Environment, Tag, Organization, Edge Computing
 
 Description: Use tags in Portainer to label environments with metadata for filtering, organization, and dynamic edge group creation.
 

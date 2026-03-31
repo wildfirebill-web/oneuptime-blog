@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Kubernetes, Health Probes, Liveness, Readiness
+Tags: Java, Spring Boot, Kubernetes, Health Probe, Liveness, Readiness
 
 Description: Learn how to implement production-ready health probes in Spring Boot for Kubernetes deployments. This guide covers liveness, readiness, and startup probes with practical examples and best practices.
 

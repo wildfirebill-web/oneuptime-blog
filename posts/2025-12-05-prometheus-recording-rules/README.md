@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Recording Rules, PromQL, Performance, Metrics, Optimization
+Tags: Prometheus, Recording Rules, PromQL, Performance, Metric, Optimization
 
 Description: Learn how to use Prometheus recording rules to pre-compute expensive queries, reduce dashboard load times, and prepare metrics for federation.
 

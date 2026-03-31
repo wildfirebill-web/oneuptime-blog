@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Hostname
+Tags: Podman, Container, DevOps, Networking, Hostname
 
 Description: Learn how to set custom hostnames and domain names for Podman containers to match your application requirements and network conventions.
 

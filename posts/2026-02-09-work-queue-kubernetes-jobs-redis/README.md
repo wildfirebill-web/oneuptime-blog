@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Redis, Queue
+Tags: Kubernetes, Job, Redis, Queue
 
 Description: Learn how to build scalable work queue patterns using Kubernetes Jobs and Redis for distributed task processing and dynamic workload management.
 

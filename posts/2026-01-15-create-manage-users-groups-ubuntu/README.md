@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Users, Groups, Security, System Administration, Tutorial
+Tags: Ubuntu, Users, Group, Security, System Administration, Tutorial
 
 Description: Complete guide to user and group management on Ubuntu including creating users, managing permissions, and implementing security best practices.
 

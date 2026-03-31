@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, String
+Tags: OpenTofu, Terraform, IaC, Function, String
 
 Description: Learn how to use the join() function in OpenTofu to combine list elements into a single string.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Kubernetes, Community Operator, Replica Set, Helm
+Tags: MongoDB, Kubernetes, Community Operator, Replica Set, Helm
 
 Description: Deploy and manage MongoDB replica sets on Kubernetes using the MongoDB Community Operator for automated lifecycle management and upgrades.
 

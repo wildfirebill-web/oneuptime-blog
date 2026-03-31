@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Distributed Lock, Redis, Concurrency, Microservices
+Tags: Dapr, Distributed Lock, Redis, Concurrency, Microservice
 
 Description: Learn how to use the Dapr distributed lock API with Redis to coordinate exclusive access to shared resources across multiple microservice instances.
 

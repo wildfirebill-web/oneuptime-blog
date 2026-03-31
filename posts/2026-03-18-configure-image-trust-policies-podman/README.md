@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Trust Policies, Image Signing
+Tags: Podman, Container, DevOps, Security, Trust Policies, Image Signing
 
 Description: Learn how to configure and manage image trust policies in Podman to control which container images are allowed to run.
 

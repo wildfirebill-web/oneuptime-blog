@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vue, Slots, Components, Debugging, Frontend, JavaScript, TypeScript
+Tags: Vue, Slot, Component, Debugging, Frontend, JavaScript, TypeScript
 
 Description: A practical guide to diagnosing and fixing slot content errors in Vue.js applications, covering named slots, scoped slots, and common anti-patterns.
 

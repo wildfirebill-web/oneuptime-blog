@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Performance, Query
+Tags: ClickHouse, JSON, Performance, Query
 
 Description: Learn how simpleJSONExtractRaw() returns raw field values from flat JSON strings in ClickHouse using a fast heuristic parser, preserving the original JSON literal.
 

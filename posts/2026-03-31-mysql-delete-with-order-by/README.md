@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Delete, ORDER BY, LIMIT, DML
+Tags: MySQL, Delete, ORDER BY, Limit, DML
 
 Description: Learn how to use DELETE with ORDER BY in MySQL to control which rows are removed first, enabling predictable data purges and FIFO cleanup operations.
 

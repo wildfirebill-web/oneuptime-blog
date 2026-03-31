@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Task Scheduler, Cron, Background Jobs, Automation
+Tags: Rust, Task Scheduler, Cron, Background Job, Automation
 
 Description: A practical guide to building a task scheduler in Rust that parses and evaluates cron expressions for running background jobs on a schedule.
 

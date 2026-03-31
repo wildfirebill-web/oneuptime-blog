@@ -1,6 +1,6 @@
 # How to Use Npy Format for NumPy Integration with ClickHouse
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Format, Npy, NumPy, Python, MachineLearning
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, Password Policy, User Management, Administration
+Tags: MySQL, Security, Password Policy, User Management, Administration
 
 Description: Learn how to configure password expiration policies in MySQL to enforce periodic password rotation for user accounts globally or per-user.
 

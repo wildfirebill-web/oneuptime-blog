@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Transcoder API, Serverless, Video Processing
+Tags: GCP, Cloud Function, Transcoder API, Serverless, Video Processing
 
 Description: Build a fully serverless video transcoding pipeline on Google Cloud using Cloud Functions and the Transcoder API to convert videos at scale.
 

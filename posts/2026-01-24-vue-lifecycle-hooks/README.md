@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vue, Lifecycle Hooks, Components, Composition API, Options API, JavaScript
+Tags: Vue, Lifecycle Hooks, Component, Composition API, Options API, JavaScript
 
 Description: A comprehensive guide to Vue lifecycle hooks, covering when to use each hook, common patterns, and differences between Options API and Composition API.
 

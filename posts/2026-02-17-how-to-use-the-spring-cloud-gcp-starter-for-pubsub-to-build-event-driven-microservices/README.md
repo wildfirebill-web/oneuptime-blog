@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Pub/Sub, Spring Cloud, Microservices, Event-Driven, Java
+Tags: GCP, Pub/Sub, Spring Cloud, Microservice, Event-Driven, Java
 
 Description: Build event-driven microservices using the Spring Cloud GCP Pub/Sub starter with publishers, subscribers, and Spring Integration channel adapters for reliable messaging.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Service Mesh, Caching, Microservices, Istio, Envoy, Sidecar
+Tags: Redis, Service Mesh, Caching, Microservice, Istio, Envoy, Sidecar
 
 Description: Learn how to integrate Redis caching into service mesh architectures.
 

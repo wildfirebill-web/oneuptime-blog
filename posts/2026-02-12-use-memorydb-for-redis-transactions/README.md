@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, MemoryDB, Redis, Transactions, Database, Durability
+Tags: AWS, MemoryDB, Redis, Transaction, Database, Durability
 
 Description: Learn how to use Amazon MemoryDB for Redis as a durable primary database with transaction support for use cases that need both speed and data safety.
 

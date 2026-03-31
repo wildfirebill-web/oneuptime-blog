@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, RGW, Multisite, Zone, Object Storage
+Tags: Ceph, Rook, RGW, Multisite, Object Storage
 
 Description: Configure Ceph RGW multisite sync settings including rgw_zone, rgw_zonegroup, and rgw_realm to enable active-active or active-passive object storage replication.
 

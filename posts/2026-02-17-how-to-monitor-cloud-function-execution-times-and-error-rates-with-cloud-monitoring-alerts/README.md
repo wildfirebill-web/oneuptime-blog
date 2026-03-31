@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Monitoring, Alerts, Cloud Monitoring
+Tags: GCP, Cloud Function, Monitoring, Alert, Cloud Monitoring
 
 Description: Set up comprehensive monitoring and alerting for Google Cloud Functions execution times, error rates, and resource usage using Cloud Monitoring and custom metrics.
 

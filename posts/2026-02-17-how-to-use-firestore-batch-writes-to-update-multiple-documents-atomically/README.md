@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Firestore, Batch Writes, Atomic Operations, Firebase
+Tags: GCP, Firestore, Batch Writes, Atomic Operation, Firebase
 
 Description: A practical guide to using Firestore batch writes to create, update, and delete multiple documents in a single atomic operation.
 

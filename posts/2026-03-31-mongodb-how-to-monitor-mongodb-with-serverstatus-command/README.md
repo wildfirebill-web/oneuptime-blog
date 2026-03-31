@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Monitoring, Performance, Database Administration
+Tags: MongoDB, Monitoring, Performance, Database Administration
 
 Description: Learn how to use MongoDB's serverStatus command to retrieve real-time server metrics including memory usage, connections, operations, and replication status.
 

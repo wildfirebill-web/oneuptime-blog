@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Storage, Cleanup
+Tags: Podman, Container, DevOps, Volumes, Storage, Cleanup
 
 Description: Learn how to use podman volume prune to remove all unused volumes at once, freeing disk space from orphaned container storage.
 

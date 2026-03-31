@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cloud Build, CI/CD, Integration Testing
+Tags: GCP, Cloud Function, Cloud Build, CI/CD, Integration Testing
 
 Description: Learn how to build a robust CI/CD pipeline for Google Cloud Functions using Cloud Build with automated unit and integration testing for reliable serverless deployments.
 

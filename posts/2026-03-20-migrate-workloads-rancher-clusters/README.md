@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Migration, Kubernetes, Workloads, GitOps, Velero
+Tags: Rancher, Migration, Kubernetes, Workload, GitOps, Velero
 
 Description: Migrate Kubernetes workloads between Rancher-managed clusters using Velero for stateful applications, GitOps for stateless workloads, and Rancher's built-in multi-cluster management features.
 

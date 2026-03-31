@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, INSERT, Database
+Tags: MySQL, SQL, DML, Insert, Database
 
 Description: Insert single rows, multiple rows, and use various INSERT forms in MySQL including column lists, default values, and SET syntax.
 

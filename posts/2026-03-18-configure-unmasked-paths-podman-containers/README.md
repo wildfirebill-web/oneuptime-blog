@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Linux, Security, Filesystem, Configuration
+Tags: Podman, Container, DevOps, Linux, Security, Filesystem, Configuration
 
 Description: Learn how to unmask default-hidden filesystem paths in Podman containers when your workload legitimately needs access to system information.
 

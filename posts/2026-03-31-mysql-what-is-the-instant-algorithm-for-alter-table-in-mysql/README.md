@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Instant Algorithm, Online Ddl, Schema Changes
+Tags: MySQL, Instant Algorithm, Online DDL, Schema Change
 
 Description: The INSTANT algorithm for ALTER TABLE in MySQL performs schema changes by modifying only metadata, completing in milliseconds regardless of table size.
 

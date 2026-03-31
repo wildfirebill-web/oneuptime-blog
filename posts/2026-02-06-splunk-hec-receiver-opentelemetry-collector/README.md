@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Splunk, HEC, Logs, Events, Migration
+Tags: OpenTelemetry, Collector, Splunk, HEC, Log, Event, Migration
 
 Description: Comprehensive guide to configuring the Splunk HEC receiver in OpenTelemetry Collector for ingesting logs and events from Splunk forwarders and HTTP clients.
 

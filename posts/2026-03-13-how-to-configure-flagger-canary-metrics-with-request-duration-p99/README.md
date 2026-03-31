@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Canary, Metrics, Request Duration, P99, Latency, Prometheus, Kubernetes, Progressive Delivery
+Tags: Flagger, Canary, Metric, Request Duration, P99, Latency, Prometheus, Kubernetes, Progressive Delivery
 
 Description: Learn how to configure a Flagger Canary resource to use request duration P99 as a metric for canary analysis, ensuring latency regressions trigger automatic rollbacks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Resource Management
+Tags: Kubernetes, Job, Resource Management
 
 Description: Learn how to automatically clean up completed and failed Kubernetes Jobs using the TTL After Finished controller to prevent cluster clutter and resource waste.
 

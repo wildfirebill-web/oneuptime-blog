@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Migration, Cloud, Operations
+Tags: MongoDB, Atlas, Migration, Cloud, Operation
 
 Description: Learn how to migrate a self-hosted MongoDB deployment to MongoDB Atlas using mongodump/mongorestore, mongomirror, or Atlas Live Migration with minimal downtime.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, Image Caching, Offline, Performance, Mobile Development, Assets
+Tags: React Native, Image Caching, Offline, Performance, Mobile Development, Asset
 
 Description: Learn how to implement efficient image and asset caching in React Native for offline access and improved performance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Actors, Concurrency, Virtual Actors, Microservices, Distributed Systems
+Tags: Dapr, Actor, Concurrency, Virtual Actor, Microservice, Distributed System
 
 Description: Learn how Dapr actors enforce turn-based concurrency, how to configure it, and how to design actor methods to avoid deadlocks and maximize throughput.
 

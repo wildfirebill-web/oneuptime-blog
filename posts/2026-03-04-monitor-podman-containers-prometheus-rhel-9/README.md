@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Prometheus, Containers
+Tags: RHEL, Podman, Prometheus, Container
 
 Description: Monitor Podman containers on RHEL 9 using Prometheus for container-level metrics.
 

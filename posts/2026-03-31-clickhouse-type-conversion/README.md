@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Type Conversion, CAST
+Tags: ClickHouse, SQL, Data Type, Type Conversion, CAST
 
 Description: Learn how to convert between data types in ClickHouse using CAST, toInt32, toString, and accurateCast with practical examples.
 

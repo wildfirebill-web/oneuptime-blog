@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, tfvars, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, tfvars, Infrastructure as Code, DevOps
 
 Description: A guide to using .tfvars files for managing OpenTofu variable values across different environments.
 

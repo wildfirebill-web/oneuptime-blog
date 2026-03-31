@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RDB, Persistence, Internals
+Tags: Redis, RDB, Persistence, Internal
 
 Description: Understand the exact sequence of operations Redis performs during an RDB snapshot, including forking, copy-on-write, and atomic file replacement.
 

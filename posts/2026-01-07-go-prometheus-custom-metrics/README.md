@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Prometheus, Metrics, Monitoring, Observability, DevOps
+Tags: Go, Prometheus, Metric, Monitoring, Observability, DevOps
 
 Description: A comprehensive guide to creating custom metrics in Go using prometheus/client_golang, covering counters, gauges, histograms, and summaries with practical examples.
 

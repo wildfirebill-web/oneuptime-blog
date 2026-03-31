@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Distributed Systems, Conflict Resolution, Version Control, Database
+Tags: Distributed System, Conflict Resolution, Version Control, Database
 
 Description: Learn how to implement merge strategies for handling concurrent updates.
 

@@ -1,8 +1,8 @@
 # How to Create Docker Container Monitoring Scripts
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Monitoring, Scripts, Health Check, Resource Usage, Alerts, DevOps
+Tags: Docker, Monitoring, Script, Health Check, Resource Usage, Alert, DevOps
 
 Description: Build Docker container monitoring scripts that track resource usage, health status, and performance metrics with automated alerting.
 

@@ -1,6 +1,6 @@
 # How to Build Audience Segmentation with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Segmentation, Analytics, Marketing, Tutorial, Database
 

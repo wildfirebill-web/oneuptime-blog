@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules, Git
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module, Git
 
 Description: Learn how to version OpenTofu modules using Git tags to enable consumers to pin to specific releases and safely upgrade over time.
 

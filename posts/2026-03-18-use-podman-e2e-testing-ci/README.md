@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CI/CD, E2E Testing, Playwright, Cypress
+Tags: Podman, Container, DevOps, CI/CD, E2E Testing, Playwright, Cypress
 
 Description: Learn how to run end-to-end tests in CI using Podman containers with browsers, test frameworks, and full application stacks.
 

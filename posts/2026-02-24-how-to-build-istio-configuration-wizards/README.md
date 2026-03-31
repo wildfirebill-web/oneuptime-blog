@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Configuration, Developer Tools, Platform Engineering, Automation
+Tags: Istio, Configuration, Developer Tool, Platform Engineering, Automation
 
 Description: How to build interactive configuration wizards that guide developers through creating correct Istio configurations without needing deep mesh expertise.
 

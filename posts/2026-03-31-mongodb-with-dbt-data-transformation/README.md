@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, dbt, Data Transformation, Analytics, ETL
+Tags: MongoDB, Dbt, Data Transformation, Analytics, ETL
 
 Description: Learn how to use dbt with MongoDB via the dbt-mongodb adapter to define, test, and document data transformations directly on your MongoDB collections.
 

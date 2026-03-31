@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Network Watcher, NSG, Diagnostics, Security, Troubleshooting, Network Security
+Tags: Azure, Network Watcher, NSG, Diagnostic, Security, Troubleshooting, Network Security
 
 Description: Use Azure Network Watcher NSG diagnostics to verify which security rules allow or deny specific traffic flows without sending actual network packets.
 

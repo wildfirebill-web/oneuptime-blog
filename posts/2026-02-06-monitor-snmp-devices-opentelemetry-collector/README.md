@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, SNMP, Network Monitoring, Metrics, Infrastructure, Observability
+Tags: OpenTelemetry, Collector, SNMP, Network Monitoring, Metric, Infrastructure, Observability
 
 Description: Learn how to monitor SNMP devices using the OpenTelemetry Collector SNMP receiver to collect network metrics from routers, switches, and other infrastructure.
 

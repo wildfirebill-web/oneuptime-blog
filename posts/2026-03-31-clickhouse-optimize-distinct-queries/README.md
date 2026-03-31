@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, DISTINCT, Query Optimization, uniq, Approximation, Performance
+Tags: ClickHouse, Distinct, Query Optimization, uniq, Approximation, Performance
 
 Description: Learn how to optimize DISTINCT queries in ClickHouse by replacing them with approximate functions, pre-aggregation, and efficient query patterns.
 

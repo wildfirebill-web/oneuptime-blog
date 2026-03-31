@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RedisBloom, Bloom Filter, Probabilistic, Data Structures
+Tags: Redis, RedisBloom, Bloom Filter, Probabilistic, Data Structure
 
 Description: Learn how to use BF.RESERVE in Redis to create a Bloom filter with custom error rate and capacity settings for efficient membership testing.
 

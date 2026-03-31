@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Dictionaries, Data Structures, Best Practice, Python 3
+Tags: Python, Dictionaries, Data Structure, Best Practice, Python 3
 
 Description: Learn multiple ways to merge dictionaries in Python, from the modern merge operator to traditional update methods, with guidance on handling duplicate keys.
 

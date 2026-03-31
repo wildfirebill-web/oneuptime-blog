@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Caching, Refresh-Ahead, Cache Patterns, Ttl
+Tags: Redis, Caching, Refresh-Ahead, Cache Patterns, TTL
 
 Description: Learn how to implement the refresh-ahead cache pattern with Redis to proactively refresh cache entries before they expire, eliminating cache miss latency.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, TypeScript, Props, Hooks, Type Safety, Mobile Development
+Tags: React Native, TypeScript, Props, Hook, Type Safety, Mobile Development
 
 Description: Learn how to properly type props, state, and hooks in React Native with TypeScript for type-safe components.
 

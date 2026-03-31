@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Resource Quotas, Kubernetes, Governance, DevOps
+Tags: Portainer, Resource Quota, Kubernetes, Governance, DevOps
 
 Description: Learn how to apply CPU, memory, and object count quotas to Portainer environments and namespaces to prevent resource exhaustion.
 

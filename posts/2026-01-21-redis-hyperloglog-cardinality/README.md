@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, HyperLogLog, Cardinality, Analytics, Unique Visitors, Probabilistic, Memory Efficient
+Tags: Redis, HyperLogLog, Cardinality, Analytics, Unique Visitor, Probabilistic, Memory Efficient
 
 Description: A comprehensive guide to using Redis HyperLogLog for estimating unique counts with minimal memory, covering PFADD, PFCOUNT, PFMERGE commands, and practical examples in Python, Node.
 

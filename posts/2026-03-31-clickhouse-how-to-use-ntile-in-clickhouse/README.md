@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Functions, NTILE, Percentile Ranking, Analytics
+Tags: ClickHouse, Window Function, NTILE, Percentile Ranking, Analytics
 
 Description: Learn how to use the NTILE() window function in ClickHouse to divide rows into equal-sized buckets for percentile ranking and cohort analysis.
 

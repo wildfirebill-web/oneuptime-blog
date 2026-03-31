@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Alerting, Cross-Signal, Metrics, Error Traces
+Tags: OpenTelemetry, Alerting, Cross-Signal, Metric, Error Traces
 
 Description: Set up cross-signal alerting that triggers when metric anomalies correlate with error traces for smarter incident detection.
 

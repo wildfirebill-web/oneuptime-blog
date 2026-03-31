@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, ArgoCD, Notifications, Migration, GitOps, Slack, PagerDuty, Kubernetes
+Tags: Flux CD, ArgoCD, Notification, Migration, GitOps, Slack, PagerDuty, Kubernetes
 
 Description: Learn how to migrate ArgoCD notification configurations to Flux Notification Controller for deployment alerting during and after migration.
 

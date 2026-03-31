@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, Sockets, HTTP, IPv4, Networking, Systems Programming
+Tags: C, Socket, HTTP, IPv4, Networking, Systems Programming
 
 Description: Build a minimal HTTP/1.0 server in C using raw POSIX sockets that accepts TCP connections on IPv4, parses request lines, and returns HTTP responses.
 

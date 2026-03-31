@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Status Checks, Branch Protection, Pull Requests, CI/CD, Code Quality
+Tags: GitHub Action, Status Checks, Branch Protection, Pull Requests, CI/CD, Code Quality
 
 Description: Learn how to configure required status checks in GitHub Actions to enforce code quality, testing requirements, and deployment gates before merging pull requests.
 

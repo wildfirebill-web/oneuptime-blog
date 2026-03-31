@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ruby, Rails, Sidekiq, Background Jobs, Redis, Async
+Tags: Ruby, Rails, Sidekiq, Background Job, Redis, Async
 
 Description: Learn how to configure and optimize Sidekiq for background job processing in Ruby on Rails applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Logging, Diagnostics, Support, Troubleshooting
+Tags: Dapr, Logging, Diagnostic, Support, Troubleshooting
 
 Description: Learn how to collect comprehensive Dapr diagnostic logs, configurations, and runtime state to effectively troubleshoot issues or open support tickets.
 

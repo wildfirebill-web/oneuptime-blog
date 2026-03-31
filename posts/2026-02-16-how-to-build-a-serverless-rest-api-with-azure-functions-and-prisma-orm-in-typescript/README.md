@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Prisma, TypeScript, Serverless, REST API, ORM, Node.js
+Tags: Azure Function, Prisma, TypeScript, Serverless, REST API, ORM, Node.js
 
 Description: Build a serverless REST API with Azure Functions and Prisma ORM in TypeScript for type-safe database access with automatic migrations.
 

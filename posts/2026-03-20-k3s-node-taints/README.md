@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Node Management, Scheduling, DevOps
+Tags: k3s, Kubernetes, Node Management, Scheduling, DevOps
 
 Description: Learn how to configure node taints in K3s to repel workloads from specific nodes and control pod scheduling with tolerations.
 

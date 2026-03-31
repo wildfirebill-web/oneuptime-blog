@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: A/B Testing, Feature Flags, Experimentation, Analytics, DevOps
+Tags: A/B Testing, Feature Flag, Experimentation, Analytics, DevOps
 
 Description: Build a complete A/B testing infrastructure with feature flags, experiment assignment, statistical analysis, and observability to make data-driven product decisions.
 

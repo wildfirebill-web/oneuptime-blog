@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Schema Changes, Zero Downtime, DDL, Migration
+Tags: PostgreSQL, Schema Change, Zero Downtime, DDL, Migration
 
 Description: A guide to adding columns to PostgreSQL tables without blocking queries, covering safe operations and multi-step migration strategies.
 

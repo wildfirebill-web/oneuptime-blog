@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Priority Queue, Microservices, Messaging
+Tags: Dapr, Pub/Sub, Priority Queue, Microservice, Messaging
 
 Description: Learn how to implement a priority-based message queue using Dapr Pub/Sub with multiple topics, routing rules, and consumer priority logic.
 

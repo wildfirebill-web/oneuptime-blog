@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Asyncio, IPv6, Sockets, Async, Networking
+Tags: Python, Asyncio, IPv6, Socket, Async, Networking
 
 Description: Use Python's asyncio library to create async IPv6 TCP and UDP servers and clients with proper address handling.
 

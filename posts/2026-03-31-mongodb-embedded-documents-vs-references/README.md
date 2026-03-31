@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Schema, Document, Reference, Performance
 
-Description: Embedding nests related data inside a document for fast reads while referencing stores related data separately - choosing between them defines your schema's performance characteristics.
+Description: Embedding nests related data inside a document for fast reads while referencing stores related data separately - choosing between them defines your schema performance characteristics.
 
 ---
 

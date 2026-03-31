@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Kubernetes, Windows, Linux, Hybrid Cluster
+Tags: Dapr, Kubernetes, Window, Linux, Hybrid Cluster
 
 Description: Configure Dapr to run correctly on hybrid Kubernetes clusters with both Linux and Windows nodes using node selectors and tolerations.
 

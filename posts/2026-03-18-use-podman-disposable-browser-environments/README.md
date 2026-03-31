@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Browser, Security, Privacy
+Tags: Podman, Container, Browser, Security, Privacy
 
 Description: Learn how to use Podman to run disposable browser instances in containers for secure browsing, testing, and web scraping without leaving any trace on your host system.
 

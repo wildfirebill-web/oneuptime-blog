@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Auto Scaling, Spot Instances, On-Demand, Cost Optimization
+Tags: AWS, EC2, Auto Scaling, Spot Instance, On-Demand, Cost Optimization
 
 Description: Learn how to configure AWS Auto Scaling groups with a mix of On-Demand and Spot Instances to balance cost savings with reliability.
 

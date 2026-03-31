@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, OCI, CI/CD, Artifacts
+Tags: Flux CD, GitOps, Kubernetes, OCI, CI/CD, Artifact
 
 Description: Learn how to build and push OCI artifacts in CI/CD pipelines so Flux CD can automatically reconcile Kubernetes deployments from container registries.
 

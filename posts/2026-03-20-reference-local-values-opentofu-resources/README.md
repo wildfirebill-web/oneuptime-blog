@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Locals, Resources, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Local, Resource, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to define local values and reference them in resource blocks, output values, and other expressions throughout your OpenTofu configuration.
 

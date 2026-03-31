@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Shutdown, Administration, InnoDB, Operations
+Tags: MySQL, Shutdown, Administration, InnoDB, Operation
 
 Description: Learn how to perform a graceful MySQL shutdown that flushes buffers, completes active transactions, and ensures clean recovery on the next startup.
 

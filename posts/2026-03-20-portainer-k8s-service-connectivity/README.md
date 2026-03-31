@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Networking, Services, Troubleshooting
+Tags: Portainer, Kubernetes, Networking, Service, Troubleshooting
 
 Description: Diagnose and resolve Kubernetes service connectivity problems using Portainer's web interface and debugging techniques.
 

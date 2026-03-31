@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, IPv6, Security Groups, VPC, Firewall, Cloud Security
+Tags: AWS, IPv6, Security Group, VPC, Firewall, Cloud Security
 
 Description: Add IPv6 rules to AWS security groups, understand that IPv4 and IPv6 rules are independent, and create security groups that properly allow IPv6 traffic alongside IPv4.
 

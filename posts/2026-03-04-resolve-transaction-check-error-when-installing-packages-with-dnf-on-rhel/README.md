@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, DNF, Packages, Troubleshooting, RPM
+Tags: RHEL, DNF, Package, Troubleshooting, RPM
 
 Description: Fix DNF transaction check errors on RHEL caused by dependency conflicts, file conflicts, or corrupted RPM databases.
 

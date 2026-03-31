@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Modern Data Stack, dbt, Airbyte, Data Architecture
+Tags: ClickHouse, Modern Data Stack, Dbt, Airbyte, Data Architecture
 
 Description: Integrate ClickHouse into the modern data stack alongside Airbyte and dbt to build an open-source ELT pipeline with SQL-based transformations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microsoft Graph API, Azure Data Factory, Data Pipelines, ETL, Microsoft 365, Azure, Data Integration
+Tags: Microsoft Graph API, Azure Data Factory, Data Pipeline, ETL, Microsoft 365, Azure, Data Integration
 
 Description: Build Azure Data Factory pipelines that extract data from Microsoft Graph API to load Microsoft 365 organizational data into your data warehouse.
 

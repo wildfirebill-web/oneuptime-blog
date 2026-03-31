@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Azure, Resource Groups, Import, ARM
+Tags: OpenTofu, Terraform, Azure, Resource Group, Import, ARM
 
 Description: Learn how to import existing Azure Resource Groups and their resources into OpenTofu state using Azure resource IDs and declarative import blocks.
 

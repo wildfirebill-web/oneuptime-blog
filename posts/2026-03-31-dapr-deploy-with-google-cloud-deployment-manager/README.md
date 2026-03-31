@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Google Cloud, GKE, Deployment Manager, Infrastructure As Code
+Tags: Dapr, Google Cloud, GKE, Deployment Manager, Infrastructure as Code
 
 Description: Deploy Dapr on Google Kubernetes Engine using Google Cloud Deployment Manager with Python templates for automated, repeatable GCP-native deployments.
 

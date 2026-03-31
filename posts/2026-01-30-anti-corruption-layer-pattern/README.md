@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Architecture, Microservices, Domain-Driven Design, Integration, Patterns
+Tags: Architecture, Microservice, Domain-Driven Design, Integration, Pattern
 
 Description: A practical guide to implementing the Anti-Corruption Layer pattern for protecting your domain model when integrating with legacy systems, third-party APIs, and external services.
 

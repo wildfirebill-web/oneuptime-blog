@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, devpts, Volumes, PTY, Terminal
+Tags: Podman, Container, DevOps, devpts, Volumes, PTY, Terminal
 
 Description: Learn how to configure devpts mounts in Podman for pseudo-terminal device management in containers.
 

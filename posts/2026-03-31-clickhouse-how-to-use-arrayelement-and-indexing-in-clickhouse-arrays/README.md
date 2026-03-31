@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Arrays, arrayElement, Indexing, Sql
+Tags: ClickHouse, Array, arrayElement, Indexing, SQL
 
 Description: Learn how to use arrayElement() and bracket notation to access array elements by index in ClickHouse, including negative indexing and safe access patterns.
 

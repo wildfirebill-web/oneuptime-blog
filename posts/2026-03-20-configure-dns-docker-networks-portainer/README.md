@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, DNS, Networks, Networking
+Tags: Portainer, Docker, DNS, Network, Networking
 
 Description: Set custom DNS servers and options for Docker networks in Portainer to control container name resolution.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Automation, Scripts, Bash, Python, API
+Tags: Rancher, Automation, Script, Bash, Python, API
 
 Description: A practical guide to writing custom automation scripts for Rancher using Bash and Python, covering common administrative tasks and workflow automation.
 

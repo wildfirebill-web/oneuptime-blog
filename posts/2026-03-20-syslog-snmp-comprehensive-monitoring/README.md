@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Syslog, SNMP, Monitoring, IPv4, Rsyslog, SNMP Traps, Networks, Operations
+Tags: Syslog, SNMP, Monitoring, IPv4, Rsyslog, SNMP Traps, Network, Operation
 
 Description: Learn how to combine syslog and SNMP to build comprehensive network device monitoring by collecting event logs and polling performance metrics over IPv4.
 

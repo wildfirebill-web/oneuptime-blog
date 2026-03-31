@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Vercel, Edge Functions, Next.js, Monitoring, Tracing, Serverless
+Tags: OpenTelemetry, Vercel, Edge Function, Next.js, Monitoring, Tracing, Serverless
 
 Description: Learn how to set up OpenTelemetry monitoring for Vercel Edge Functions to trace requests, measure performance, and debug issues in production.
 

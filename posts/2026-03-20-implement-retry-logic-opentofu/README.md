@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Retry Logic, Resilience, Provisioners, Infrastructure as Code
+Tags: OpenTofu, Retry Logic, Resilience, Provisioner, Infrastructure as Code
 
 Description: Learn how to implement retry logic in OpenTofu for transient failures using provider settings, null_resource retries, and external_provider patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, PHP, Predis, Connection, Data Types
+Tags: Redis, PHP, Predis, Connection, Data Type
 
 Description: Learn how to connect to Redis from PHP using Predis and perform operations on strings, hashes, lists, sets, and sorted sets with practical examples.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Lateral Join, Derived Tables, Advanced Sql
+Tags: MySQL, Lateral Join, Derived Table, Advanced Sql
 
 Description: A lateral derived table in MySQL is a subquery in the FROM clause that can reference columns from preceding tables in the same FROM clause.
 

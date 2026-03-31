@@ -1,6 +1,6 @@
 # How to Use MongoDB Keyfile Authentication for Replica Sets
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Keyfile, Authentication, Replica Set, Security
 

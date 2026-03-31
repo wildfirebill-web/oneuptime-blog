@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Performance, Pt-Query-Digest, Slow Query Log, Query Optimization
+Tags: MySQL, Performance, pt-query-digest, Slow Query Log, Query Optimization
 
 Description: Learn how to use pt-query-digest from Percona Toolkit to analyze MySQL slow query logs and identify the most expensive queries in your database.
 

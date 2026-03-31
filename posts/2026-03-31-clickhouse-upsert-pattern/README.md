@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, UPSERT, ReplacingMergeTree, Insert, Deduplication, Data Pattern
+Tags: ClickHouse, Upsert, ReplacingMergeTree, Insert, Deduplication, Data Pattern
 
 Description: Learn how to implement UPSERT semantics in ClickHouse using ReplacingMergeTree and insert-based patterns since ClickHouse lacks native INSERT OR UPDATE.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, Infrastructure as Code, Code Reuse
+Tags: OpenTofu, Terraform, Module, Infrastructure as Code, Code Reuse
 
 Description: Learn how to use your existing Terraform modules with OpenTofu, including registry modules, private modules, Git-sourced modules, and handling compatibility issues.
 

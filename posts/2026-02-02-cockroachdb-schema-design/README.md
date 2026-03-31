@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CockroachDB, Database, Schema Design, Distributed Systems, SQL, PostgreSQL
+Tags: CockroachDB, Database, Schema Design, Distributed System, SQL, PostgreSQL
 
 Description: Learn how to design effective schemas for CockroachDB.
 

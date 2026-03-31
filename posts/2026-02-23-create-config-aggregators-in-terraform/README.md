@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Configs, Compliance, Aggregator, Infrastructure as Code
+Tags: Terraform, AWS, CONFIG, Compliance, Aggregator, Infrastructure as Code
 
 Description: Learn how to create AWS Config aggregators for multi-account and multi-region compliance views using Terraform, including authorization and conformance packs.
 

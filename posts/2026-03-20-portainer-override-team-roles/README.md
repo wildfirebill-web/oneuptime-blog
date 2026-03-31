@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, RBAC, Teams, User Roles, Access Control, Override
+Tags: Portainer, RBAC, Team, User Roles, Access Control, Override
 
 Description: Override a team's default role for individual users to grant exceptions, such as giving one team member elevated access or restricting a specific user.
 

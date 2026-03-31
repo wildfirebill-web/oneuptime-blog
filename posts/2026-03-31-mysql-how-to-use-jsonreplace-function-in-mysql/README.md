@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Replace, Json, Json Functions, Sql
+Tags: MySQL, Json Replace, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_REPLACE() function to update existing values in a JSON document without adding new keys.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, Modules, IaC Best Practices, Cloud Infrastructure
+Tags: Terraform, Infrastructure as Code, DevOps, Module, IaC Best Practices, Cloud Infrastructure
 
 Description: A practical guide to using Terraform modules effectively, covering module consumption patterns, input/output design, versioning strategies, debugging techniques, and common pitfalls to avoid.
 

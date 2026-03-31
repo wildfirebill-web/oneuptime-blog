@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Chi Router, Http, Microservice, Sdk
+Tags: Dapr, Go, Chi Router, HTTP, Microservice, SDK
 
 Description: Integrate the Dapr Go SDK with the Chi router to build Dapr-enabled HTTP services that support pub/sub subscriptions alongside custom routing middleware.
 

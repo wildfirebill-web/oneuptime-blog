@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Data Structures, Caching, Performance, Backend Development
+Tags: Redis, Data Structure, Caching, Performance, Backend Development
 
 Description: A practical guide to Redis data structures including Strings, Lists, Sets, Hashes, Sorted Sets, and Streams - with real-world examples and performance tips for building efficient applications.
 

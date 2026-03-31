@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Express, WebSocket, Socket.io, Node.js
+Tags: Redis, Express, WebSocket, Socket.IO, Node.js
 
 Description: Scale Socket.io across multiple Express.js instances using the Redis adapter so messages broadcast to all connected clients regardless of which server they are on.
 

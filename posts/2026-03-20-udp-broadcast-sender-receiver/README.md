@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, UDP, Broadcast, SO_BROADCAST, Sockets, POSIX, Networking
+Tags: IPv4, UDP, Broadcast, SO_BROADCAST, Socket, POSIX, Networking
 
 Description: Learn how to send and receive IPv4 UDP broadcast datagrams in C and Python using SO_BROADCAST, the limited broadcast address 255.255.255.255, and subnet-directed broadcasts.
 

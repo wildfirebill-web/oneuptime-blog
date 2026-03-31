@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, PagerDuty, Incident Management, Monitoring
+Tags: Flux CD, GitOps, Kubernetes, Notification, PagerDuty, Incident Management, Monitoring
 
 Description: Learn how to configure Flux CD's notification controller to send deployment and reconciliation alerts to PagerDuty using the Provider resource.
 

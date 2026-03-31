@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, PostgreSQL, Database, SQL
+Tags: Podman, Container, DevOps, PostgreSQL, Database, SQL
 
 Description: Learn how to run PostgreSQL in a Podman container with persistent data, custom configuration, and initialization scripts.
 

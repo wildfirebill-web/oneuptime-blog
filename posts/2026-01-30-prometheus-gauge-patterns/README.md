@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Prometheus, Gauge, Metrics, State
+Tags: Prometheus, Gauge, Metric, State
 
 Description: Learn to implement Prometheus gauge metrics for current state values with timestamp handling, callback patterns, and aggregation strategies.
 

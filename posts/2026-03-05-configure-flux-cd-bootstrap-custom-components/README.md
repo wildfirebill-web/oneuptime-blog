@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Bootstrap, Custom Components, Image Automation, DevOps
+Tags: Flux CD, GitOps, Kubernetes, Bootstrap, Custom Component, Image Automation, DevOps
 
 Description: Learn how to customize your Flux CD bootstrap by selecting specific components, adding extra controllers, and configuring component-level options.
 

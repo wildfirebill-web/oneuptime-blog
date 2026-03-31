@@ -1,6 +1,6 @@
 # How to Use One Format for Single-Value Output in ClickHouse
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Format, One, Output, Scripting
 

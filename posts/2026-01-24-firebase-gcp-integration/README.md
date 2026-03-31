@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Firebase, GCP, Google Cloud, Cloud Functions, Firestore, Authentication, Integration, DevOps
+Tags: Firebase, GCP, Google Cloud, Cloud Function, Firestore, Authentication, Integration, DevOps
 
 Description: A comprehensive guide to integrating Firebase services with Google Cloud Platform, covering authentication, data sync, and best practices for hybrid architectures.
 

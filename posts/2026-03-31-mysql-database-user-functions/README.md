@@ -1,6 +1,6 @@
 # How to Use DATABASE() and USER() Functions in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Function, Database, User, Administration
 

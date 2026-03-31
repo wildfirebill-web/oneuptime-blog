@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Microservices, Kubernetes, Service Mesh, Architecture
+Tags: Istio, Microservice, Kubernetes, Service Mesh, Architecture
 
 Description: Build a production-ready microservices application from scratch with Istio providing traffic management, security, and observability.
 

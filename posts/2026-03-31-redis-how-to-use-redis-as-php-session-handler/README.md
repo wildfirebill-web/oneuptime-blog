@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, PHP, Sessions, Session Handler, phpredis, Predis
+Tags: Redis, PHP, Session, Session Handler, phpredis, Predis
 
 Description: Learn how to configure Redis as a PHP session handler using native phpredis extension and custom Predis-based session handlers for scalable session management.
 

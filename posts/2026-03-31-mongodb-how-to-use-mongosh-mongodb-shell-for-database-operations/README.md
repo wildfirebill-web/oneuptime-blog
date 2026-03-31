@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Mongosh, Shell, Database Operations, Cli
+Tags: MongoDB, Mongosh, Shell, Database Operations, CLI
 
 Description: Learn how to use mongosh, the modern MongoDB Shell, to connect, query, and manage MongoDB databases from the command line.
 

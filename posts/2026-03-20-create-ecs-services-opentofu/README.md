@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, AWS, ECS, Terraform, IaC, DevOps, Containers
+Tags: OpenTofu, Infrastructure as Code, AWS, ECS, Terraform, IaC, DevOps, Container
 
 Description: Learn how to create AWS ECS clusters, task definitions, and services with OpenTofu for running containerized applications on Fargate.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Consumer Groups, XCLAIM, Reliability, Fault Tolerance
+Tags: Redis, Stream, Consumer Group, XCLAIM, Reliability, Fault Tolerance
 
 Description: Learn how to use XCLAIM in Redis Streams to transfer ownership of pending messages from a failed consumer to an active one, ensuring at-least-once delivery.
 

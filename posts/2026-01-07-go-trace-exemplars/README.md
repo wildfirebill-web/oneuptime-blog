@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Metrics, Tracing, Exemplars, OpenTelemetry, Observability
+Tags: Go, Metric, Tracing, Exemplars, OpenTelemetry, Observability
 
 Description: Connect metric spikes to specific traces in Go using exemplars to enable drill-down from high-level metrics to detailed trace data.
 

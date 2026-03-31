@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Teams, User Management, RBAC, Administration
+Tags: Portainer, Team, User Management, RBAC, Administration
 
 Description: Add users to Portainer teams via the UI and API, and configure team leadership roles for delegated team management.
 

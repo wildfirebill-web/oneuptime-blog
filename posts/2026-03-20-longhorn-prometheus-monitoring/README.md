@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Prometheus, Monitoring, Kubernetes, Metrics, Grafana, Observability
+Tags: Longhorn, Prometheus, Monitoring, Kubernetes, Metric, Grafana, Observability
 
 Description: Learn how to configure Prometheus to scrape Longhorn metrics, set up essential alerting rules for volume health, and visualize storage metrics in Grafana dashboards.
 

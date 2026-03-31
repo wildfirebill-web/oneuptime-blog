@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NVIDIA, Kernel, Drivers, Troubleshooting
+Tags: Ubuntu, NVIDIA, Kernel, Driver, Troubleshooting
 
 Description: Practical troubleshooting guide for fixing NVIDIA driver failures after Ubuntu kernel updates, covering DKMS rebuilds, module signing, and preventing future breakage.
 

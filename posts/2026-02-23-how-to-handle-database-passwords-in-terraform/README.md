@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Database, Passwords, Security, IaC, DevOps
+Tags: Terraform, Database, Password, Security, IaC, DevOps
 
 Description: A practical guide to securely managing database passwords in Terraform, covering password generation, secret store integration, rotation strategies, and patterns for RDS, Azure SQL, and Cloud SQL.
 

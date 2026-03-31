@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, InnoDB, Crash Recovery, Redo Log, ACID, Internals
+Tags: MySQL, InnoDB, Crash Recovery, Redo Log, ACID, Internal
 
 Description: Understand how InnoDB uses the redo log and undo log to recover from crashes automatically, ensuring committed transactions are never lost.
 

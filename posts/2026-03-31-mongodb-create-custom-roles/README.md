@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Security, Roles, Authorization, Database
+Tags: MongoDB, Security, Role, Authorization, Database
 
 Description: Learn how to create custom roles in MongoDB to grant fine-grained, least-privilege access by specifying exact actions on specific collections and databases.
 

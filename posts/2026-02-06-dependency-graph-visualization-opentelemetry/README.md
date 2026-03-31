@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Dependency Graph, Service Map, Tracing, Visualization, Microservices, Observability
+Tags: OpenTelemetry, Dependency Graph, Service Map, Tracing, Visualization, Microservice, Observability
 
 Description: Learn how to build dynamic service dependency graphs from OpenTelemetry trace data, providing real-time visibility into how your microservices communicate and depend on each other.
 

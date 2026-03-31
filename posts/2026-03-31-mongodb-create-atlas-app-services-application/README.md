@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, App Services, Backend, Cloud
+Tags: MongoDB, Atlas, App Service, Backend, Cloud
 
 Description: Learn how to create a MongoDB Atlas App Services application with authentication, data access rules, and serverless functions for mobile and web apps.
 

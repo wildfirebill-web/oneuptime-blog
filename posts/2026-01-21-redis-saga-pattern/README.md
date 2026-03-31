@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Saga Pattern, Distributed Transactions, Microservices, Compensation, Orchestration
+Tags: Redis, Saga Pattern, Distributed Transaction, Microservice, Compensation, Orchestration
 
 Description: A comprehensive guide to implementing the Saga pattern for distributed transaction management using Redis for coordination, state management, and compensation handling.
 

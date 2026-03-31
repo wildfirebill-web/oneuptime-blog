@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Hierarchical Data, Tree Structures, Schema Design, Aggregation
+Tags: MongoDB, Hierarchical Data, Tree structure, Schema Design, Aggregation
 
-Description: Learn the main patterns for storing and querying hierarchical tree data in MongoDB - parent reference, materialized path, and nested sets - with practical query examples.
+Description: Learn the main patterns for storing and querying hierarchical tree data in MongoDB including parent reference, materialized path, and path string approaches.
 
 ---
 

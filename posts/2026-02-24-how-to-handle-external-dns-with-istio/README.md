@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, DNS, External Services, Kubernetes, ServiceEntry
+Tags: Istio, DNS, External Service, Kubernetes, ServiceEntry
 
 Description: How to properly configure Istio to handle DNS resolution for external services including cloud APIs, third-party services, and legacy systems.
 

@@ -1,8 +1,8 @@
 # How to Use $fill to Populate Missing Values in MongoDB
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Fill, Time-series, Pipeline
+Tags: MongoDB, Aggregation, Fill, Time-Series, Pipeline
 
 Description: Learn how to use MongoDB's $fill aggregation stage to populate null and missing field values using forward-fill, backward-fill, linear interpolation, or fixed values.
 

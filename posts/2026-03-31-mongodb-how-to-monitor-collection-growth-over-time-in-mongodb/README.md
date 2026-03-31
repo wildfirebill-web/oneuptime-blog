@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Storage, Collection Stats, Operations
+Tags: MongoDB, Monitoring, Storage, Collection Stats, Operation
 
 Description: Learn how to track MongoDB collection growth using stats commands, change streams, and scheduled snapshots to forecast storage needs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Text Similarity, MinHash, SimHash, Near-Duplicate Detection, Sql
+Tags: ClickHouse, Text Similarity, MinHash, SimHash, Near-Duplicate Detection, SQL
 
 Description: Learn how to use wordShingleMinHash() and wordShingleSimHash() in ClickHouse to detect near-duplicate text documents using locality-sensitive hashing.
 

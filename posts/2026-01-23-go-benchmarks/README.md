@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Benchmarks, Performance, Testing, Optimization
+Tags: Go, Golang, Benchmark, Performance, Testing, Optimization
 
 Description: Learn how to write and run benchmarks in Go to measure code performance, compare implementations, and identify optimization opportunities.
 

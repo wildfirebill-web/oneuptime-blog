@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, Networking, YAML
+Tags: Podman, Container, DevOps, Kubernetes, Networking, YAML
 
 Description: Learn how to configure networking options when deploying pods with podman kube play including port mapping and custom networks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Ruby On Rails, Mongoid, Rest Api, Ruby
+Tags: MongoDB, Ruby On Rail, Mongoid, REST API, Ruby
 
 Description: Learn how to build a REST API with Ruby on Rails and Mongoid ODM including model definitions, CRUD controllers, validations, and JSON responses.
 

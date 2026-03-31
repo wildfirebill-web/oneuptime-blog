@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iptables, IPv4, Linux, Firewall, Ports, Security
+Tags: iptables, IPv4, Linux, Firewall, Port, Security
 
 Description: Write iptables rules to allow specific TCP and UDP ports and protocols for common services while maintaining a secure firewall baseline.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Elasticsearch, Keyspace Notifications, Streaming, Node.js
+Tags: Redis, Elasticsearch, Keyspace Notification, Streaming, Node.js
 
 Description: Stream Redis key changes to Elasticsearch in real time using keyspace notifications and Redis Streams for searchable, persistent indexing of Redis data.
 

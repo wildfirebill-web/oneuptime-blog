@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Vector, Database, Search, Machine learning
+Tags: Redis, Vector, Database, Search, Machine Learning
 
 Description: Learn how to use the VRANDMEMBER command in Redis vector sets to retrieve one or more random members, useful for sampling, testing, and exploration of vector data.
 

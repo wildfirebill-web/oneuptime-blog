@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Linux, Security, Hardening, Privileges
+Tags: Podman, Container, DevOps, Linux, Security, Hardening, Privilege
 
 Description: Learn how to use the no-new-privileges flag in Podman to prevent container processes from gaining additional privileges through setuid binaries or other escalation mechanisms.
 

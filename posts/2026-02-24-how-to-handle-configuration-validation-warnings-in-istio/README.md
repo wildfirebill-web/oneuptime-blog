@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Configuration, Validation, Warnings, Best Practice
+Tags: Istio, Configuration, Validation, Warning, Best Practice
 
 Description: Learn how to interpret and resolve Istio configuration validation warnings to maintain a clean and reliable service mesh setup.
 

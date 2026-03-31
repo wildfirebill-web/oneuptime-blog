@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Path References, Modules, Infrastructure as Code
+Tags: Terraform, HCL, Path References, Module, Infrastructure as Code
 
 Description: Learn how to use path.module, path.root, and path.cwd in Terraform to reference files relative to modules, the root configuration, and the working directory.
 

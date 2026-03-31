@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Cloud Stream, Event-Driven, Microservices, Kafka
+Tags: Java, Spring Cloud Stream, Event-Driven, Microservice, Kafka
 
 Description: A practical guide to building event-driven microservices in Java using Spring Cloud Stream with Apache Kafka, covering producers, consumers, error handling, and testing strategies.
 

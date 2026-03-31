@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, CI/CD, GitHub Actions, DevOps, Automation, Mobile Development
+Tags: React Native, CI/CD, GitHub Action, DevOps, Automation, Mobile Development
 
 Description: Learn how to set up automated CI/CD pipelines for React Native apps using GitHub Actions for iOS and Android builds.
 

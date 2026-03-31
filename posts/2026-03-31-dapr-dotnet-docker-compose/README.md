@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Docker Compose, Deployment, Microservice, Container
+Tags: Dapr, DotNet, Docker Compose, Deployment, Microservice, Container
 
 Description: Deploy multi-service Dapr .NET applications locally using Docker Compose with sidecars, Redis state store, and Zipkin tracing in a single compose file.
 

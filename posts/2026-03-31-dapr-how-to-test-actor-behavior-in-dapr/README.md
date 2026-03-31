@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Actors, Testing, Unit Tests, Integration Tests, Microservices
+Tags: Dapr, Actor, Testing, Unit Test, Integration Test, Microservice
 
 Description: Learn how to write unit and integration tests for Dapr virtual actors, covering state management, method behavior, reminders, and timers using mocking and the test actor runtime.
 

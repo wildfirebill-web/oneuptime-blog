@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Sharding, Distributed Tables, Scaling, Database, Architecture, Performance, Clustering
+Tags: ClickHouse, Sharding, Distributed Table, Scaling, Database, Architecture, Performance, Clustering
 
 Description: A comprehensive guide to sharding data across ClickHouse nodes using distributed tables, covering sharding key selection, data distribution strategies, resharding.
 

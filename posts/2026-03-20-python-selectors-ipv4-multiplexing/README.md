@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Selectors, IPv4, Sockets, Multiplexing, Networking, Non-Blocking
+Tags: Python, Selector, IPv4, Socket, Multiplexing, Networking, Non-Blocking
 
 Description: Learn how to use Python's selectors module to efficiently multiplex multiple IPv4 socket connections in a single thread without blocking.
 

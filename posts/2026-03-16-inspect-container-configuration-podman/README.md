@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Inspection, Configuration
+Tags: Podman, Container, DevOps, Container Inspection, Configuration
 
 Description: Learn how to use podman inspect to view detailed configuration information about containers, including networking, volumes, environment variables, and runtime settings.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, Gaming, Leaderboards, Performance, Real-Time
+Tags: Redis, Sorted Set, Gaming, Leaderboard, Performance, Real-Time
 
 Description: Learn how to build fast, scalable gaming leaderboards using Redis Sorted Sets. This guide covers score updates, rankings, pagination, and handling millions of players.
 

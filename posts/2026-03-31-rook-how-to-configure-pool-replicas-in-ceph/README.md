@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Replication, Storage Pools, Kubernetes, High Availability
+Tags: Rook, Ceph, Replication, Storage Pool, Kubernetes, High Availability
 
 Description: Learn how to configure replication settings for Ceph storage pools in Rook, including size, min_size, and failure domain settings for durability and availability.
 

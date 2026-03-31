@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Testing, Provider
+Tags: Flux CD, GitOps, Kubernetes, Notification, Testing, Provider
 
 Description: Learn how to test and validate your Flux notification provider configuration to ensure alerts are delivered correctly.
 

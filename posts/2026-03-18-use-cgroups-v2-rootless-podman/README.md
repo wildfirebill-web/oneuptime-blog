@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Cgroups, Resource Management, Linux
+Tags: Podman, Container, DevOps, Rootless, Cgroups, Resource Management, Linux
 
 Description: A practical guide to using cgroups v2 with rootless Podman for container resource management, including CPU and memory limits, monitoring, and migration from cgroups v1.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Events, Monitoring, Observability, DevOps
+Tags: Docker, Event, Monitoring, Observability, DevOps
 
 Description: Learn how to monitor Docker events in real time for container lifecycle tracking, debugging, and automated responses.
 

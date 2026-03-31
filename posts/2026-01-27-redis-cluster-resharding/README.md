@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Redis Cluster, Resharding, Scaling, Hash Slots, DevOps
+Tags: Redis, Redis Cluster, Resharding, Scaling, Hash Slot, DevOps
 
 Description: Learn how to reshard Redis Cluster to redistribute hash slots, add or remove nodes, and rebalance data without downtime.
 

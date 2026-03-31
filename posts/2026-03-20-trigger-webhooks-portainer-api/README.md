@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Webhooks, CI/CD, Automation
+Tags: Portainer, API, Webhook, CI/CD, Automation
 
 Description: Learn how to create, list, and trigger Portainer webhooks programmatically via the REST API for automated deployments.
 

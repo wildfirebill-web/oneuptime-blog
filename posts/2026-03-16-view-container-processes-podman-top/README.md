@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Process Management, Monitoring
+Tags: Podman, Container, DevOps, Process Management, Monitoring
 
 Description: Learn how to view and analyze running processes inside Podman containers using podman top with various output formats and custom descriptors.
 

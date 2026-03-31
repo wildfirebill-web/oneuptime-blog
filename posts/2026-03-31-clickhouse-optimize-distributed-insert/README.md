@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Distributed, INSERT, Ingestion, Performance, Sharding
+Tags: ClickHouse, Distributed, Insert, Ingestion, Performance, Sharding
 
 Description: Maximize INSERT throughput on Distributed tables by tuning buffer size, async inserts, and direct shard writes in ClickHouse.
 

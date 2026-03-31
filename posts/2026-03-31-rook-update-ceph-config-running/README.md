@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Configuration, Operations, Kubernetes, Management
+Tags: Rook, Ceph, Configuration, Operation, Kubernetes, Management
 
 Description: Learn how to update Ceph configuration on a live Rook cluster using CephConfigMap, ceph config set commands, and the Rook ConfigOverride mechanism.
 

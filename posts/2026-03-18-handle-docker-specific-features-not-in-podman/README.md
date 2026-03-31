@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Migration, Compatibility, Workarounds
+Tags: Podman, Container, DevOps, Docker, Migration, Compatibility, Workarounds
 
 Description: Learn how to handle Docker-specific features that are not directly available in Podman, including workarounds and alternative approaches.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Type System, Type Inference
+Tags: ClickHouse, SQL, Data Type, Type System, Type Inference
 
 Description: Learn how ClickHouse infers types from literals, promotes types in expressions, and how to inspect types using toTypeName with examples.
 

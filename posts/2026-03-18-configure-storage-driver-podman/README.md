@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Storage, Filesystem, Configuration
+Tags: Podman, Container, DevOps, Storage, Filesystem, Configuration
 
 Description: Learn how to configure and switch between storage drivers in Podman including overlay, vfs, btrfs, and zfs for optimal container performance.
 

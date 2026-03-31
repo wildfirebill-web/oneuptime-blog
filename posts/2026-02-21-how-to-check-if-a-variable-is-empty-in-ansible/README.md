@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Conditional, Validation, Jinja2
+Tags: Ansible, Variable, Conditional, Validation, Jinja2
 
 Description: Learn reliable methods to check if a variable is empty in Ansible, covering strings, lists, dictionaries, and null values.
 

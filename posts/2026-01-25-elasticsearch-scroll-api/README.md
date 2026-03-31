@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Scroll API, Pagination, Data Export, Bulk Operations
+Tags: Elasticsearch, Scroll API, Pagination, Data Export, Bulk Operation
 
 Description: Learn how to use the Elasticsearch Scroll API for efficiently processing large result sets, with practical examples covering scroll context management, point-in-time searches.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, IdM, TLS, SSL, Certificates, PKI, FreeIPA, Linux
+Tags: RHEL, IdM, TLS, SSL, Certificate, PKI, FreeIPA, Linux
 
 Description: Learn how to request, manage, and renew TLS/SSL certificates using the IdM integrated Certificate Authority on RHEL for securing services.
 

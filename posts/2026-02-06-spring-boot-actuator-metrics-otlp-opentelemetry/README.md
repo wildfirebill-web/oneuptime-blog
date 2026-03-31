@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Spring Boot, Actuator, Metrics, OTLP, Micrometer
+Tags: OpenTelemetry, Spring Boot, Actuator, Metric, OTLP, Micrometer
 
 Description: Learn how to export Spring Boot Actuator metrics using OpenTelemetry Protocol (OTLP) for unified observability with traces and logs.
 

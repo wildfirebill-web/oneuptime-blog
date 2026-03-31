@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Nested Loops, Jinja2 Filters
+Tags: Ansible, Loop, Nested Loops, Jinja2 Filters
 
 Description: Learn how to use the product filter in Ansible to create nested loops that generate all combinations of items from multiple lists.
 

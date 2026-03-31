@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, TimeSeries, Metrics, Monitoring, IoT
+Tags: Redis, TimeSeries, Metric, Monitoring, IoT
 
 Description: Learn how to store, query, and aggregate time series data using Redis TimeSeries module for metrics collection, IoT sensor data, and real-time analytics.
 

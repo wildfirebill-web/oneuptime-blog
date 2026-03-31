@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, XGROUP, Consumer Groups, Messaging
+Tags: Redis, Stream, XGROUP, Consumer Group, Messaging
 
 Description: Learn how to use XGROUP CREATE in Redis to create consumer groups on streams, configuring the starting position and auto-creating streams.
 

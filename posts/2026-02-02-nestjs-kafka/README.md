@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NestJS, Kafka, Microservices, Event Streaming, TypeScript
+Tags: NestJS, Kafka, Microservice, Event Streaming, TypeScript
 
 Description: Integrate Apache Kafka with NestJS applications for reliable, high-throughput event streaming and messaging.
 

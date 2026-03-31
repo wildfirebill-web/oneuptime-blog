@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: pfSense, Firewall, IPv4, Rules, Security, Pf, FreeBSD
+Tags: pfSense, Firewall, IPv4, Rule, Security, Pf, FreeBSD
 
 Description: Configure pfSense firewall rules for IPv4 traffic using the GUI, covering LAN-to-WAN, WAN inbound filtering, inter-VLAN policies, and floating rules with logging.
 

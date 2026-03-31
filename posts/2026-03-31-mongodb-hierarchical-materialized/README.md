@@ -1,8 +1,8 @@
 # How to Model Hierarchical Data in MongoDB with Materialized Paths
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data modeling, Hierarchical data, Materialized path, Tree structure
+Tags: MongoDB, Data Modeling, Hierarchical Data, Materialized Path, Tree structure
 
 Description: Learn how to model tree structures in MongoDB using the materialized path pattern, enabling efficient ancestor, descendant, and subtree queries with simple string operations.
 

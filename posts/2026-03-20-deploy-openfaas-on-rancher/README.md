@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, OpenFaaS, Serverless, Functions, Kubernetes, Auto-Scaling
+Tags: Rancher, OpenFaaS, Serverless, Function, Kubernetes, Auto-Scaling
 
 Description: Deploy OpenFaaS on Rancher to create a serverless function platform with auto-scaling, the OpenFaaS Store catalog, and function deployment via CLI.
 

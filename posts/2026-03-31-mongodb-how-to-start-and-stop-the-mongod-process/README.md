@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Operations, Administration, mongod, Systemd
+Tags: MongoDB, Operation, Administration, mongod, Systemd
 
 Description: Learn the correct ways to start, stop, and restart the mongod process on Linux using systemd, the mongo shell, and manual commands.
 

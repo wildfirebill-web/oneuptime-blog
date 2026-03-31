@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Predictive Maintenance, Vibration Analysis, Manufacturing, Metrics
+Tags: OpenTelemetry, Predictive Maintenance, Vibration Analysis, Manufacturing, Metric
 
 Description: Build a predictive maintenance observability system that correlates machine vibration sensor data with OpenTelemetry metrics for early fault detection.
 

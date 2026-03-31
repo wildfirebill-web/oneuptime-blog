@@ -35,7 +35,7 @@ mysqlsh root@localhost:3306
 
 Switch between modes using `\sql`, `\js`, and `\py`:
 
-```
+```text
 MySQL JS> \sql
 Switching to SQL mode
 MySQL SQL> SELECT VERSION();

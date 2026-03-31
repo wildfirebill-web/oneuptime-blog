@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Jaeger, Distributed Tracing, Observability, Microservices
+Tags: Portainer, Docker, Jaeger, Distributed Tracing, Observability, Microservice
 
 Description: Deploy Jaeger for distributed tracing via Portainer to visualize request flows across microservices, identify latency bottlenecks, and debug production issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Array Function, range, Sequence Generation
+Tags: ClickHouse, Array Function, Range, Sequence Generation
 
 Description: Learn how range() generates numeric sequences as arrays in ClickHouse, and how to combine it with arrayJoin to produce rows for date ranges, test data, and sliding windows.
 

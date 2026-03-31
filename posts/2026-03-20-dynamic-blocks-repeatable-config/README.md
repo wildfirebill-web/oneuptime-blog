@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Dynamic Blocks, Infrastructure as Code, HCL, Loops
+Tags: OpenTofu, Terraform, Dynamic Blocks, Infrastructure as Code, HCL, Loop
 
 Description: Learn how to use OpenTofu dynamic blocks to generate repeatable nested configuration blocks from variables and lists, avoiding duplication in your infrastructure code.
 

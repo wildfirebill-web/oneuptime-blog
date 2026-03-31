@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ruby, Rails, Concerns, Code Organization, DRY, Modules
+Tags: Ruby, Rails, Concerns, Code Organization, DRY, Module
 
 Description: Learn how to use Rails Concerns to organize your code effectively.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Arrays, Nested Data, JSON, Schema Design, Database, Analytics, Data Modeling
+Tags: ClickHouse, Array, Nested Data, JSON, Schema Design, Database, Analytics, Data Modeling
 
 Description: A practical guide to working with complex data types in ClickHouse, including arrays, nested structures, tuples, maps, and JSON columns for flexible schema designs.
 

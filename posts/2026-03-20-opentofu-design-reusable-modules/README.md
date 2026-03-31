@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module
 
 Description: Learn the principles and patterns for designing reusable, composable OpenTofu modules that work across teams, environments, and cloud accounts.
 

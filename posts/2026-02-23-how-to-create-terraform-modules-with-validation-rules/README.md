@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Validation, Input Validation, Infrastructure as Code
+Tags: Terraform, Module, Validation, Input Validation, Infrastructure as Code
 
 Description: Learn how to add validation rules to Terraform modules using variable validation, preconditions, postconditions, and custom check blocks for safer infrastructure deployments.
 

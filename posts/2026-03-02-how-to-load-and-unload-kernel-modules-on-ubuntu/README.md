@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Linux Kernel, System Administration, Drivers, Hardware
+Tags: Ubuntu, Linux Kernel, System Administration, Driver, Hardware
 
 Description: Learn how to load, unload, and manage Linux kernel modules on Ubuntu, including how to pass parameters, configure persistent loading, and troubleshoot module issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Networking, CIDR, Pod Network
+Tags: k3s, Kubernetes, Rancher, Networking, CIDR, Pod Network
 
 Description: Learn how to configure the K3s cluster CIDR (pod network range) to match your network topology and avoid IP address conflicts.
 

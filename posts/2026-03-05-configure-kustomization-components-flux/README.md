@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Kustomize, Kustomization, Components
+Tags: Flux CD, GitOps, Kubernetes, Kustomize, Kustomization, Component
 
 Description: Learn how to use Kustomize components within Flux Kustomization resources to create reusable, composable configuration fragments for your Kubernetes deployments.
 

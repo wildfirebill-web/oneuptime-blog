@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Traceroute, TCP, Linux, Networking, Firewall, Diagnostics
+Tags: Traceroute, TCP, Linux, Networking, Firewall, Diagnostic
 
 Description: Use tcptraceroute to trace network paths using TCP SYN packets instead of UDP or ICMP, bypassing firewalls that block traditional traceroute probes.
 

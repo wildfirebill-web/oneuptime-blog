@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Radarr, Podman, Containers, Media Management, Movies, Linux, Self-Hosted, Automation
+Tags: Radarr, Podman, Container, Media Management, Movies, Linux, Self-Hosted, Automation
 
 Description: Deploy Radarr in a Podman container to automatically search for, download, and organize your movie collection with proper naming and quality management.
 

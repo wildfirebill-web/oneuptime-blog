@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, JSON, Configuration, Automation
+Tags: Terraform, Variable, JSON, Configuration, Automation
 
 Description: Learn how to use JSON-formatted variable files in Terraform with .tfvars.json files, the jsondecode function, and programmatic configuration generation.
 

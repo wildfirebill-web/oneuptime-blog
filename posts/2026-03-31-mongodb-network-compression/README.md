@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Performance, Network, Configuration, Operations
+Tags: MongoDB, Performance, Network, Configuration, Operation
 
 Description: Learn how to enable and configure wire protocol compression in MongoDB to reduce network bandwidth, improve throughput, and lower latency for large result sets.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Rancher, Kubernetes, Management, Containers
+Tags: RHEL, Rancher, Kubernetes, Management, Container
 
 Description: Install Rancher on RHEL to provide a centralized management UI for multiple Kubernetes clusters.
 

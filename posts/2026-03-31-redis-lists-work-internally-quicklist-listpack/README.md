@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, List, Quicklist, Listpack, Internals
+Tags: Redis, List, Quicklist, Listpack, Internal
 
 Description: Understand how Redis lists use listpack for small lists and quicklist for larger ones, and how these encodings affect memory usage and performance.
 

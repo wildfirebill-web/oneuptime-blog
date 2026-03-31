@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Amazon Q, Console Assistance, AI, Developer Tools, Cloud Management
+Tags: AWS, Amazon Q, Console Assistance, AI, Developer Tool, Cloud Management
 
 Description: Use Amazon Q Developer in the AWS Console to get instant answers about your AWS resources, troubleshoot issues, and generate CLI commands with natural language.
 

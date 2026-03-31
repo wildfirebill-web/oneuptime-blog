@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Monitoring, Notifications, Slack, PagerDuty
+Tags: GCP, Cloud Monitoring, Notification, Slack, PagerDuty
 
 Description: Set up notification channels in Google Cloud Monitoring for email, Slack, and PagerDuty to ensure the right people get alerted when monitoring policies trigger.
 

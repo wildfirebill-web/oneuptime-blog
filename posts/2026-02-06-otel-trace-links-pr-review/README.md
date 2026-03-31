@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Pull Requests, Code Review, CI/CD, GitHub Actions
+Tags: OpenTelemetry, Pull Requests, Code Review, CI/CD, GitHub Action
 
 Description: Automatically attach OpenTelemetry trace links to pull requests so reviewers can inspect real trace data alongside code changes.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Webhooks, CI/CD, Automation
+Tags: Portainer, Stack, Webhook, CI/CD, Automation
 
 Description: Enable Portainer stack webhooks to trigger stack redeployments from CI/CD pipelines and external systems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, User-Defined Functions, SQL, Database Programming
+Tags: MySQL, User-Defined Function, SQL, Database Programming
 
 Description: Learn how to create user-defined functions (UDFs) in MySQL using CREATE FUNCTION to encapsulate reusable calculations and transformations.
 

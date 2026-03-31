@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Microservices, Docker Compose, Architecture, API Gateway, Service Mesh
+Tags: Portainer, Microservice, Docker Compose, Architecture, API Gateway, Service Mesh
 
 Description: Learn how to deploy a microservice architecture via Portainer using Docker Compose stacks with separate services, shared networks, and an API gateway.
 

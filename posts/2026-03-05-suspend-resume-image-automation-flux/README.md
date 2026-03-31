@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Image Automation, Operations, Maintenance
+Tags: Flux CD, GitOps, Kubernetes, Image Automation, Operation, Maintenance
 
 Description: Learn how to suspend and resume Flux image automation resources for maintenance windows, incident response, and controlled deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman Desktop, Containers, GUI, Development
+Tags: RHEL, Podman Desktop, Container, GUI, Development
 
 Description: Install Podman Desktop on RHEL to manage containers, images, and pods through a graphical interface alongside the Podman CLI.
 

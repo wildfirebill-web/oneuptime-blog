@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Tilt, Kubernetes, Local Development, Microservices
+Tags: OpenTelemetry, Tilt, Kubernetes, Local Development, Microservice
 
 Description: Integrate OpenTelemetry with Tilt to get live trace feedback as you develop Kubernetes microservices on your local machine.
 

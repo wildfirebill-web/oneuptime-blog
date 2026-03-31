@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Update, Monitoring
+Tags: Portainer, Docker, Image, Update, Monitoring
 
 Description: Detect when newer versions of Docker images are available in Portainer to keep containers up to date.
 

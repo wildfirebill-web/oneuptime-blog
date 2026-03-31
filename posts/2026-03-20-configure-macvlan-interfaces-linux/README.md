@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Macvlan, Networking, Containers, Docker, Virtual Networking, iproute2
+Tags: Linux, Macvlan, Networking, Container, Docker, Virtual Networking, iproute2
 
 Description: Create macvlan interfaces on Linux to assign multiple MAC addresses and IP addresses to a single physical interface without bridging.
 

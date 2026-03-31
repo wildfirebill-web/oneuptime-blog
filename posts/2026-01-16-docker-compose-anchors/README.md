@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Compose, YAML, Anchors, Aliases, DRY
+Tags: Docker, Compose, YAML, Anchors, Alias, DRY
 
 Description: Learn how to use YAML anchors and aliases in Docker Compose for DRY configurations, reducing duplication and improving maintainability.
 

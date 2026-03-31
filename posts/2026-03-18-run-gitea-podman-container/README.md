@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Gitea, Git, Self-Hosted, Version Control
+Tags: Podman, Container, DevOps, Gitea, Git, Self-Hosted, Version Control
 
 Description: Learn how to run Gitea in a Podman container for a lightweight, self-hosted Git service with persistent repositories and SSH access.
 

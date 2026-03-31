@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Linux, Installation
+Tags: Podman, Container, DevOps, Podman Desktop, Linux, Installation
 
 Description: Learn how to install Podman Desktop on various Linux distributions for a graphical container management experience.
 

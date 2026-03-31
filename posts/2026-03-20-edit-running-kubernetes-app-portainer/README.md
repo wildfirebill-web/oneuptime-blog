@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Application Management, Rolling Updates, DevOps
+Tags: Portainer, Kubernetes, Application Management, Rolling Update, DevOps
 
 Description: Learn how to update a running Kubernetes application's configuration, image, and settings through the Portainer UI.
 

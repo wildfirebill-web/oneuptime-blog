@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Variables, Configuration, DevOps
+Tags: Terraform, HCP Terraform, Variable, Configuration, DevOps
 
 Description: Learn how to configure Terraform variables and environment variables in HCP Terraform workspaces, including variable precedence, HCL values, and management via UI, CLI, and API.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Sdk, Experimental, Api, Feature Flag
+Tags: Dapr, DotNet, SDK, Experimental, API, Feature Flag
 
 Description: Understand how Dapr .NET SDK experimental attributes work, how to opt in to preview APIs, and how to manage the associated upgrade risks in your projects.
 

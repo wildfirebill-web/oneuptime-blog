@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, UI Customization, Operations
+Tags: ArgoCD, GitOps, Kubernetes, UI Customization, Operation
 
 Description: Learn how to add custom banners to the ArgoCD UI for displaying maintenance notices, environment warnings, announcements, and important operational messages to your team.
 

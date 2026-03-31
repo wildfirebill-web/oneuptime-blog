@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Internals, Object Encoding, Memory Optimization, Data Structures
+Tags: Redis, Internal, Object Encoding, Memory Optimization, Data Structure
 
 Description: Understand how Redis automatically selects compact or full encodings for each data type based on size thresholds to minimize memory usage.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Redis Cli, Command Line, Developer Tools, Productivity
+Tags: Redis, Redis Cli, Command Line, Developer Tool, Productivity
 
 Description: Master Redis CLI interactive mode with keyboard shortcuts, command history, tab completion, pipelining, and useful flags for efficient day-to-day Redis administration.
 

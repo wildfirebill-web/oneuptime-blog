@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Feature Flags, Performance, A/B Testing, Monitoring, Observability, LaunchDarkly
+Tags: OpenTelemetry, Feature Flag, Performance, A/B Testing, Monitoring, Observability, LaunchDarkly
 
 Description: Learn how to correlate feature flag states with OpenTelemetry telemetry to measure the performance impact of feature toggles and catch regressions early.
 

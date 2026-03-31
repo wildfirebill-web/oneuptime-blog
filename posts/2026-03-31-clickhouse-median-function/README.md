@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Aggregate Function, median, Percentile
+Tags: ClickHouse, SQL, Aggregate Function, Median, Percentile
 
 Description: Learn how median() works in ClickHouse as an alias for quantile(0.5), and when to use medianExact() or medianTDigest() for accuracy or tail-optimized results.
 

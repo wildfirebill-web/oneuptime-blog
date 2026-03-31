@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, AWS, Route53, DNS
+Tags: Terraform, Module, AWS, Route53, DNS
 
 Description: Build a Terraform module for managing Route53 DNS records that handles A records, CNAME records, aliases, weighted routing, and health checks in a single interface.
 

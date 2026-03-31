@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Workbooks, Monitoring Reports, Azure Monitor, KQL, Dashboard, Observability, Templates
+Tags: Azure Workbooks, Monitoring Reports, Azure Monitor, KQL, Dashboard, Observability, Template
 
 Description: Learn how to create Azure Workbooks templates with parameters, dynamic queries, and reusable components for consistent monitoring reports across your organization.
 

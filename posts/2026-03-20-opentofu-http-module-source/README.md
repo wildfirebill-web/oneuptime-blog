@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, HTTP
+Tags: OpenTofu, Terraform, IaC, Module, HTTP
 
 Description: Learn how to use HTTP and HTTPS URLs as module sources in OpenTofu to download modules from web servers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Gin, Http, Microservice, Sdk
+Tags: Dapr, Go, Gin, HTTP, Microservice, SDK
 
 Description: Build Dapr-enabled Go microservices using the Gin framework for routing, middleware, and request validation while connecting to Dapr building blocks via the Go SDK.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SNMP, Traps, IPv6, Network Monitoring, Alerts, Net-SNMP, Notifications
+Tags: SNMP, Traps, IPv6, Network Monitoring, Alert, Net-SNMP, Notification
 
 Description: Configure SNMP trap sending and receiving over IPv6, enabling devices to send event notifications to monitoring systems using IPv6 transport.
 

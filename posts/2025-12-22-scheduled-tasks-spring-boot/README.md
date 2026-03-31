@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Scheduling, Cron, Background Tasks, Automation
+Tags: Java, Spring Boot, Scheduling, Cron, Background Task, Automation
 
 Description: Learn how to implement scheduled tasks in Spring Boot using @Scheduled annotation. This guide covers cron expressions, fixed-rate scheduling, dynamic scheduling, and distributed task management.
 

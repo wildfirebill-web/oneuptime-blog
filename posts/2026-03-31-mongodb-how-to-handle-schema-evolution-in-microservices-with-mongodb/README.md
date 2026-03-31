@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Schema Evolution, Microservices, Migration, Versioning
+Tags: MongoDB, Schema Evolution, Microservice, Migration, Versioning
 
 Description: Learn strategies for evolving MongoDB schemas safely in microservices without downtime, using versioning, migrations, and the expand-contract pattern.
 

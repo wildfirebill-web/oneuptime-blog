@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Git, Productivity, Aliases, Configuration, DevOps, Development, Workflow
+Tags: Git, Productivity, Alias, Configuration, DevOps, Development, Workflow
 
 Description: Learn how to create and configure Git aliases to speed up your workflow, reduce typing, and make complex commands simple to execute.
 

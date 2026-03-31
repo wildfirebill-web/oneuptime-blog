@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMaps, Volume Mounts, Configuration
+Tags: Portainer, Kubernetes, ConfigMap, Volume Mounts, Configuration
 
 Description: Learn how to mount Kubernetes ConfigMaps as files inside container pods using Portainer.
 

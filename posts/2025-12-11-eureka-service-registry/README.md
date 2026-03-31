@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Eureka, Service Registry, Netflix OSS, Spring Cloud, Microservices
+Tags: Eureka, Service Registry, Netflix OSS, Spring Cloud, Microservice
 
 Description: Learn how to set up Netflix Eureka for service registration and discovery in Java/Spring microservices, including server configuration, client registration, and high availability setup.
 

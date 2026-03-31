@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Chaos Engineering, Flagger, Canary Deployments
+Tags: Flux CD, Kubernetes, GitOps, Chaos Engineering, Flagger, Canary Deployment
 
 Description: Run chaos experiments as part of Flagger canary analysis gates managed by Flux CD to validate resilience before promoting a new release.
 

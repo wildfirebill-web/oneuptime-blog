@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Django, Celery, Python, Background Tasks, Redis, Web Development, Async
+Tags: Django, Celery, Python, Background Task, Redis, Web Development, Async
 
 Description: Learn how to build reliable background tasks in Django using Celery.
 

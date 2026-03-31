@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Host Endpoint, Selectors, Troubleshooting
+Tags: Calico, Kubernetes, Networking, Host Endpoint, Selector, Troubleshooting
 
 Description: Diagnose and fix common problems with Calico host endpoint selector expressions that cause policies to match the wrong nodes or fail to apply at all.
 

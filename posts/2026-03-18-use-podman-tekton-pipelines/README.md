@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Tekton, Kubernetes, CI/CD, Cloud Native
+Tags: Podman, Container, DevOps, Tekton, Kubernetes, CI/CD, Cloud Native
 
 Description: Learn how to use Podman in Tekton Pipelines for building, testing, and deploying container images in a Kubernetes-native CI/CD workflow.
 

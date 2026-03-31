@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, Cgroups, Linux, Troubleshooting
+Tags: Podman, Container, Cgroups, Linux, Troubleshooting
 
 Description: A detailed guide to diagnosing and fixing cgroup v1 vs v2 compatibility issues in Podman, including migration strategies, hybrid configurations, and container runtime adjustments.
 

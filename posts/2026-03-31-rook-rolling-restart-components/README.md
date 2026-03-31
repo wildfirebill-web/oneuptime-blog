@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Operations, Rolling Restart, Kubernetes, Maintenance
+Tags: Rook, Ceph, Operation, Rolling Restart, Kubernetes, Maintenance
 
 Description: Learn how to safely perform rolling restarts of Rook-Ceph components including monitors, OSDs, MGR, and MDS without causing cluster downtime.
 

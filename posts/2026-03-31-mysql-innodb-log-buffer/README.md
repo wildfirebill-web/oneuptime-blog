@@ -1,6 +1,6 @@
 # How to Configure InnoDB Log Buffer in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, InnoDB, Log Buffer, Performance, Configuration
 

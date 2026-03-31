@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Molecule, Provisioners, Configuration, Testing
+Tags: Ansible, Molecule, Provisioner, Configuration, Testing
 
 Description: Deep dive into Molecule provisioner configuration options including ansible.cfg overrides, environment variables, and inventory management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, SDK Configuration, Memory Limits, Span Limits
+Tags: OpenTelemetry, SDK Configuration, Memory Limit, Span Limits
 
 Description: Configure OpenTelemetry SDK attribute value length limits and max events per span to prevent memory issues in production applications.
 

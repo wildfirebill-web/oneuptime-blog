@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted set, ZINTERCARD, Command
+Tags: Redis, Sorted Set, ZINTERCARD, Command
 
 Description: Learn how to use ZINTERCARD in Redis to count members common to multiple sorted sets with an optional LIMIT for early exit optimization.
 

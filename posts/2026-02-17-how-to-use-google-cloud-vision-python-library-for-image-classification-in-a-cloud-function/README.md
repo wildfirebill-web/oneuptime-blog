@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Vision, Python, Cloud Functions, Image Recognition
+Tags: GCP, Cloud Vision, Python, Cloud Function, Image Recognition
 
 Description: Learn how to use the google-cloud-vision Python library to classify images in a Cloud Function triggered by Cloud Storage uploads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Window Functions, Analytics, Sql
+Tags: MySQL, Window Function, Analytics, SQL
 
 Description: Learn how to compute running totals in MySQL using SUM() with an OVER clause and window frame specifications for cumulative calculations.
 

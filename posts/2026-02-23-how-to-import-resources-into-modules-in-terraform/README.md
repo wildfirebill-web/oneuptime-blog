@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Import, Infrastructure as Code, State Management
+Tags: Terraform, Module, Import, Infrastructure as Code, State Management
 
 Description: Learn how to import existing cloud resources into Terraform modules, including strategies for handling module addresses and state management.
 

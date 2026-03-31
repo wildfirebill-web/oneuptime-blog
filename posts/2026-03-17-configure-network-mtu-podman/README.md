@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, MTU, Performance
+Tags: Podman, Container, DevOps, Networking, MTU, Performance
 
 Description: Learn how to configure the Maximum Transmission Unit (MTU) for Podman networks to optimize performance and avoid fragmentation.
 

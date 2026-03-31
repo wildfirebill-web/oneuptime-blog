@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Constraints, Schema Design
+Tags: MySQL, DDL, Constraint, Schema Design
 
 Description: Learn how to add a NOT NULL constraint to an existing MySQL column using ALTER TABLE MODIFY, including handling existing NULL values safely.
 

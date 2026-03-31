@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, IPC, Namespaces
+Tags: Podman, Container, DevOps, Pod, IPC, Namespace
 
 Description: Learn how to use IPC namespace sharing in Podman pods for shared memory communication between containers.
 

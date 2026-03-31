@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Acl, Authentication, Redis Cli, Security
+Tags: Redis, ACL, Authentication, Redis Cli, Security
 
 Description: Connect to Redis using ACL users with redis-cli, authenticate with usernames and passwords, and test ACL permissions from the command line.
 

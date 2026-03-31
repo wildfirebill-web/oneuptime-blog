@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Plugins, Security
+Tags: Calico, Kubernetes, Networking, CNI, Plugin, Security
 
 Description: Security hardening for the Calico CNI plugin, covering CNI configuration file protection, IPAM access control, WorkloadEndpoint isolation, and preventing CNI bypass attacks.
 

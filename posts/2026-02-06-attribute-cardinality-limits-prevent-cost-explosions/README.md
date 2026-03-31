@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Cardinality, Metrics, Attribute Limits
+Tags: OpenTelemetry, Cardinality, Metric, Attribute Limits
 
 Description: Prevent runaway metric costs by setting cardinality limits on attributes at both the SDK and Collector level.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Logging, Services, DevOps
+Tags: Portainer, Docker Swarm, Logging, Service, DevOps
 
 Description: Learn how to view, filter, and aggregate logs from Docker Swarm services using Portainer's log viewer.
 

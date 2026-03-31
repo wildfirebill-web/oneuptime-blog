@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, Export, Import, Migration
+Tags: Podman, Container, Export, Import, Migration
 
 Description: A detailed guide to exporting Podman container filesystems and importing them as images, including practical use cases for migration, debugging, and environment replication.
 

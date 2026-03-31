@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Cursor, Performance, Metrics
+Tags: MongoDB, Monitoring, Cursor, Performance, Metric
 
 Description: Learn how to monitor MongoDB cursor metrics from serverStatus to detect cursor leaks, high open cursor counts, and timed-out cursors that waste server resources.
 

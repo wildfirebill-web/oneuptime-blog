@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Database, Passwords, Security
+Tags: Podman, Container, DevOps, Secret, Database, Password, Security
 
 Description: Learn how to securely store and use database passwords with Podman secrets for PostgreSQL, MySQL, MongoDB, and other databases.
 

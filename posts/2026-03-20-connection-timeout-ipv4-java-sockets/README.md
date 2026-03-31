@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, TCP, Timeout, IPv4, Sockets, Networking, Error Handling
+Tags: Java, TCP, Timeout, IPv4, Socket, Networking, Error Handling
 
 Description: Learn how to implement connection, read, and write timeouts for IPv4 sockets in Java to prevent applications from blocking indefinitely.
 

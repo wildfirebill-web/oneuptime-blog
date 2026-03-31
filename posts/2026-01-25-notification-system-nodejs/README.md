@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NodeJS, Notifications, Email, SMS, Push Notifications, Backend
+Tags: NodeJS, Notification, Email, SMS, Push Notification, Backend
 
 Description: Build a comprehensive notification system in Node.js supporting email, SMS, push notifications, and in-app notifications with queuing and delivery tracking.
 

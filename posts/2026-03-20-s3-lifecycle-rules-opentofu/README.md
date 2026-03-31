@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, S3, Lifecycle Rules, Cost Optimization, Storage Classes, Infrastructure as Code
+Tags: OpenTofu, AWS, S3, Lifecycle Rules, Cost Optimization, Storage Class, Infrastructure as Code
 
 Description: Learn how to configure S3 lifecycle rules using OpenTofu to automatically transition objects between storage classes and expire old data to optimize storage costs.
 

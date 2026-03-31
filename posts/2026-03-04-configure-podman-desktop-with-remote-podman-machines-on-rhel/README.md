@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman Desktop, Remote, Containers, SSH
+Tags: RHEL, Podman Desktop, Remote, Container, SSH
 
 Description: Connect Podman Desktop to remote Podman instances on RHEL servers over SSH, allowing you to manage containers on remote machines from your local workstation.
 

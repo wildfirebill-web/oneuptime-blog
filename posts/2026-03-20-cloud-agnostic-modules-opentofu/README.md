@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Multi-Cloud, Cloud-Agnostic, Infrastructure as Code, Reusability
+Tags: OpenTofu, Module, Multi-Cloud, Cloud-Agnostic, Infrastructure as Code, Reusability
 
 Description: Learn how to design OpenTofu modules that work across AWS, Azure, and GCP - using abstraction patterns that hide provider-specific details behind a consistent interface.
 

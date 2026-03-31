@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Monitoring, Custom Metrics, Prometheus, DevOps
+Tags: Ansible, Monitoring, Custom Metric, Prometheus, DevOps
 
 Description: Automate the deployment of custom metrics collection using Ansible, including application metrics exporters, textfile collectors, and pushgateway integration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, IPv6, Monitoring, Metrics, Scraping, Observability
+Tags: Prometheus, IPv6, Monitoring, Metric, Scraping, Observability
 
 Description: A guide to configuring Prometheus to scrape metrics from IPv6 targets, including static configs, service discovery, and relabeling rules.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, Messaging, Real-Time, Subscribe, Publish
+Tags: Redis, Pub/Sub, Messaging, Real-Time, SUBSCRIBE, PUBLISH
 
 Description: Learn how to use Redis Pub/Sub to broadcast messages between application components with publishers, subscribers, and channel patterns.
 

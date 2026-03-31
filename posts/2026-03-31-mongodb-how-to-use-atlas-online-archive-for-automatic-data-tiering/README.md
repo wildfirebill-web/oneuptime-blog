@@ -32,7 +32,7 @@ Atlas Online Archive automatically moves infrequently accessed documents from yo
 4. Select the database and collection
 5. Set the archiving criteria:
 
-```
+```text
 Database: mydb
 Collection: events
 Date Field: createdAt

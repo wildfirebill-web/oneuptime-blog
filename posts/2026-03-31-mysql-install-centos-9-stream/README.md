@@ -1,6 +1,6 @@
 # How to Install MySQL on CentOS 9 Stream
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Installation, CentOS, Linux, Database
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Functions, Moving Average, Time Series, Smoothing
+Tags: ClickHouse, Window Function, Moving Average, Time Series, Smoothing
 
 Description: Learn how to calculate simple moving averages (SMA), weighted moving averages, and exponential smoothing in ClickHouse using window functions.
 

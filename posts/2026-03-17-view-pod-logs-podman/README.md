@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Logging, Debugging
+Tags: Podman, Container, DevOps, Pod, Logging, Debugging
 
 Description: Learn how to view and follow logs from containers within a Podman pod.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Node Maintenance, Operations
+Tags: ArgoCD, GitOps, Kubernetes, Node Maintenance, Operation
 
 Description: Learn how to manage ArgoCD during Kubernetes node maintenance operations like patching, hardware replacement, and scaling, without disrupting your GitOps pipeline.
 

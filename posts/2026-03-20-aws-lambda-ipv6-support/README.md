@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, Lambda, IPv6, Serverless, VPC, Dual-Stack, Functions
+Tags: AWS, Lambda, IPv6, Serverless, VPC, Dual-Stack, Function
 
 Description: Configure AWS Lambda functions to access IPv6 resources within VPCs and invoke Lambda functions over IPv6 endpoints.
 

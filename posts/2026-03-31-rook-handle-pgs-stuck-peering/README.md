@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Troubleshooting, Placement Group, Peering, Operations
+Tags: Rook, Ceph, Troubleshooting, Placement Group, Peering, Operation
 
 Description: Diagnose and resolve Ceph placement groups stuck in the peering state by identifying blocked OSDs, resolving quorum issues, and forcing PG recovery when necessary.
 

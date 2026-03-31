@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kubernetes, Events, Logs, Collector, K8s Events Receiver
+Tags: OpenTelemetry, Kubernetes, Event, Log, Collector, K8s Events Receiver
 
 Description: Learn how to collect Kubernetes cluster events and ship them as structured OpenTelemetry logs for alerting, debugging, and audit trails.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Geospatial, 2d Index, Flat Plane
+Tags: MongoDB, Index, Geospatial, 2d Index, Flat Plane
 
 Description: Learn how to create a 2d geospatial index in MongoDB for querying coordinates on a flat plane, suitable for game maps and non-spherical spatial data.
 

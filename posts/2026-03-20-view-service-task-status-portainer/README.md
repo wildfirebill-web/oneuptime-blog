@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Task, Services, Monitoring
+Tags: Portainer, Docker Swarm, Task, Service, Monitoring
 
 Description: Monitor the status of Docker Swarm service tasks in Portainer to track running, failed, and pending replicas.
 

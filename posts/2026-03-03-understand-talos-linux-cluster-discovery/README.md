@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Cluster Discovery, Kubernetes, Networking, Distributed Systems
+Tags: Talos Linux, Cluster Discovery, Kubernetes, Networking, Distributed System
 
 Description: Learn how Talos Linux nodes discover each other and form clusters using built-in discovery mechanisms.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Developer Experience, Metrics, Visualization, Observability
+Tags: Developer Experience, Metric, Visualization, Observability
 
 Description: Learn to implement metrics visualization for understanding application behavior during development.
 

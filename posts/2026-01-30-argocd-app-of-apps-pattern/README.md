@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Patterns
+Tags: ArgoCD, GitOps, Kubernetes, Pattern
 
 Description: Learn how to use the App of Apps pattern in ArgoCD to manage multiple applications, environments, and clusters from a single parent application.
 

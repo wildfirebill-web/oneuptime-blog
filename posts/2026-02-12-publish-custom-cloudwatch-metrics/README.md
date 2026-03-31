@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CloudWatch, Monitoring, Metrics, Observability
+Tags: AWS, CloudWatch, Monitoring, Metric, Observability
 
 Description: Learn how to publish custom CloudWatch metrics from your applications using the AWS SDK, CLI, and embedded metric format to track business and operational KPIs.
 

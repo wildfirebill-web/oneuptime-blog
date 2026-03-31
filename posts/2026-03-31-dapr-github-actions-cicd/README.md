@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, GitHub Actions, CI/CD, Deployment, Automation
+Tags: Dapr, GitHub Action, CI/CD, Deployment, Automation
 
 Description: Build automated CI/CD pipelines with GitHub Actions to test, build, and deploy Dapr microservices to Kubernetes with component validation and integration testing.
 

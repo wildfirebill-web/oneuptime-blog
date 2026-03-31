@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Durable Functions, Saga Pattern, Distributed Transactions, Microservices, Orchestration, Compensation
+Tags: Azure, Durable Functions, Saga Pattern, Distributed Transaction, Microservice, Orchestration, Compensation
 
 Description: Implement the Saga pattern using Azure Durable Functions to manage distributed transactions with compensation logic across microservices.
 

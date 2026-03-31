@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Node Reset, Data Preservation, Kubernetes, Operations
+Tags: Talos Linux, Node Reset, Data Preservation, Kubernetes, Operation
 
 Description: Learn how to reset a Talos Linux node while keeping its ephemeral data intact, useful for reconfiguration without re-downloading container images.
 

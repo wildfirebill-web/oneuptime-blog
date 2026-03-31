@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, JSON, Automation
+Tags: Ansible, Variable, JSON, Automation
 
 Description: Learn how to pass variables to Ansible playbooks from JSON files using the extra-vars flag for dynamic and automated deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Data Export, Select Into Outfile, Sql, Administration
+Tags: MySQL, Data Export, SELECT INTO OUTFILE, SQL, Administration
 
 Description: Learn how to use MySQL's SELECT INTO OUTFILE statement to export query results directly to a file on the server with custom delimiters and formatting.
 

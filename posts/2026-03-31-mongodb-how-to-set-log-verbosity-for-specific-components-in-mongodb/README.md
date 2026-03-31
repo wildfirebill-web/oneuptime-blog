@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Logging, Verbosity, Diagnostics, Configuration
+Tags: MongoDB, Logging, Verbosity, Diagnostic, Configuration
 
 Description: Learn how to set and adjust log verbosity levels for specific MongoDB components at runtime and in configuration to enable targeted diagnostic logging.
 

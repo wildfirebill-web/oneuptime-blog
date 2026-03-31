@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, JSON, JSONExtract, Sql, Data Parsing
+Tags: ClickHouse, JSON, JSONExtract, SQL, Data Parsing
 
 Description: Learn how to use JSONExtract() and JSONExtractString() in ClickHouse to parse JSON stored in String columns and extract typed values efficiently.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, CREATE TABLE, Schema, Migration
+Tags: MySQL, SQL, DDL, CREATE TABLE, Schema
 
 Description: Copy a MySQL table's structure including indexes and constraints using CREATE TABLE LIKE, without copying any row data.
 

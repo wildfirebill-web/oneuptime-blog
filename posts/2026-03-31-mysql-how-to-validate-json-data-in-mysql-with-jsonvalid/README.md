@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Valid, Json, Data Validation, Sql
+Tags: MySQL, Json Valid, JSON, Data Validation, SQL
 
 Description: Learn how to use MySQL's JSON_VALID() function to check whether a string contains valid JSON, and how to apply it when importing or inserting data.
 

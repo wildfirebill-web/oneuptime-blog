@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Traefik, Middleware, Rate Limiting, Headers, Authentication
+Tags: Traefik, Middleware, Rate Limiting, Header, Authentication
 
 Description: Learn how to use Traefik middleware for request processing including rate limiting, authentication, headers, and compression.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Service Mesh, Metrics, Observability, Kubernetes
+Tags: Istio, Service Mesh, Metric, Observability, Kubernetes
 
 Description: How to define and measure success metrics for your Istio migration to know whether the service mesh is delivering the value you expected.
 

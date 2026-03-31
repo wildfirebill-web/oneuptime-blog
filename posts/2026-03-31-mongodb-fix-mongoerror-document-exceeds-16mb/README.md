@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Document Size, Gridfs, Schema Design, Error
+Tags: MongoDB, Document Size, GridFS, Schema Design, Error
 
 Description: Learn why MongoDB documents are limited to 16MB, how to detect oversized documents, and how to fix the error using GridFS or schema redesign.
 

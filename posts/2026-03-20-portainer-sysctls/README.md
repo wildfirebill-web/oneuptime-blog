@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Linux, Networking
+Tags: Portainer, Docker, Container, Linux, Networking
 
 Description: Learn how to configure Linux kernel parameters (sysctls) for Docker containers in Portainer to tune network, memory, and IPC settings.
 

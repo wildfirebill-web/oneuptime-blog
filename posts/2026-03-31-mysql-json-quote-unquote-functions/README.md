@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Function
+Tags: MySQL, JSON, Function
 
 Description: Learn how MySQL's JSON_QUOTE() and JSON_UNQUOTE() functions convert between SQL strings and JSON string literals for safe JSON construction.
 

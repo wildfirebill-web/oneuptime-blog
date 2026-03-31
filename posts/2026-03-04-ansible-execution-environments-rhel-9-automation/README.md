@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible, Execution Environments, Containers
+Tags: RHEL, Ansible, Execution Environments, Container
 
 Description: Build and use Ansible execution environments on RHEL for consistent automation.
 

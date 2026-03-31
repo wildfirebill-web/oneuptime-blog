@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Python, RedisTimeSeries, Time Series, Metrics
+Tags: Redis, Python, RedisTimeSeries, Time Series, Metric
 
 Description: Learn how to use RedisTimeSeries in Python to store, query, and aggregate time-series data for metrics, monitoring, and IoT applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IoT, Monitoring, Remote Management, Metrics, Alerting, Edge Computing, Observability
+Tags: IoT, Monitoring, Remote Management, Metric, Alerting, Edge Computing, Observability
 
 Description: Learn how to configure comprehensive remote monitoring for IoT and edge devices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, System Tables, Logging, Debugging, Monitoring
+Tags: ClickHouse, System Table, Logging, Debugging, Monitoring
 
 Description: Learn how to query and use the system.text_log table in ClickHouse to inspect server-side log messages, filter by severity, and troubleshoot issues.
 

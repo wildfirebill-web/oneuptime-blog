@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OTTL, Metrics, Transform Processor, Renaming
+Tags: OpenTelemetry, OTTL, Metric, Transform Processor, Renaming
 
 Description: Use OTTL in the OpenTelemetry Collector transform processor to add prefixes or suffixes to metric names and rename attributes.
 

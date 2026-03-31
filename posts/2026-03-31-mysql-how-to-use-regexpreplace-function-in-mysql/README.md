@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, REGEXP_REPLACE, Regular Expressions, String Functions, Data Cleaning
+Tags: MySQL, REGEXP_REPLACE, Regular Expression, String Function, Data Cleaning
 
 Description: Learn how to use the REGEXP_REPLACE() function in MySQL 8.0+ to replace substrings matching a regular expression pattern with a replacement string.
 

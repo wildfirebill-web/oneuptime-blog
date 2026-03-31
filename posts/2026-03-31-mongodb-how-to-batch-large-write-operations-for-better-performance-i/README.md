@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Bulk Write, Batch Operations, Performance, insertMany
+Tags: MongoDB, Bulk Write, Batch Operation, Performance, insertMany
 
 Description: Learn how to use MongoDB's bulk write and insertMany operations to batch large write workloads for significantly better throughput and reduced network overhead.
 

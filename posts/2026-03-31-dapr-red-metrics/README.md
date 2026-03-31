@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Metrics, RED, Prometheus, Observability
+Tags: Dapr, Metric, RED, Prometheus, Observability
 
 Description: Build RED (Rate, Errors, Duration) dashboards for Dapr microservices by combining Dapr sidecar metrics with custom application metrics in Prometheus.
 

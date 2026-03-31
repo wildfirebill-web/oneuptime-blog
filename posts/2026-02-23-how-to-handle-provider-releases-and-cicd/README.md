@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Provider Development, CI/CD, GitHub Actions, Release Management
+Tags: Terraform, Provider Development, CI/CD, GitHub Action, Release Management
 
 Description: Learn how to set up a complete CI/CD pipeline for custom Terraform providers including automated testing, building, signing, and releasing using GitHub Actions and GoReleaser.
 

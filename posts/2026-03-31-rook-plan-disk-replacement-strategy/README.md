@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Operations, Disk, Maintenance, Storage
+Tags: Rook, Ceph, Operation, Disk, Maintenance, Storage
 
 Description: Develop a systematic disk replacement strategy for Ceph clusters covering failure detection, graceful OSD removal, hardware replacement, and safe OSD re-addition procedures.
 

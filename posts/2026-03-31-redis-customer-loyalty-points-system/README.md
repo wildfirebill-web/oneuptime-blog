@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, E-commerce, Sorted Set, Loyalty
+Tags: Redis, E-Commerce, Sorted Set, Loyalty
 
 Description: Build a customer loyalty points system with Redis - track balances atomically, record transaction history, manage expiring points, and tier customers by accumulated points.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Python, Type Hints, Data Validation
+Tags: GCP, BigQuery, Python, Type Hint, Data Validation
 
 Description: Learn how to use Python type hints and dataclasses with the google-cloud-bigquery library to validate data schemas before loading into BigQuery.
 

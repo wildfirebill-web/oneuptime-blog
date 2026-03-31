@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Monitoring, Performance, Diagnostics
+Tags: Redis, Memory, Monitoring, Performance, Diagnostic
 
 Description: Learn how to use MEMORY STATS in Redis to get a detailed breakdown of memory usage across allocators, dataset, overhead, and replication buffers.
 

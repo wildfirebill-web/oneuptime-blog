@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Namespace Routing
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Namespace Routing
 
 Description: Learn how to route Flux alerts to different notification channels based on the namespace of the event source resources.
 

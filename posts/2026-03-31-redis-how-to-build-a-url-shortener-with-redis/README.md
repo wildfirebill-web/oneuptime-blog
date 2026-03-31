@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, URL Shortener, Hashes, Click Tracking, Caching
+Tags: Redis, URL Shortener, Hash, Click Tracking, Caching
 
 Description: Build a production-ready URL shortener with Redis featuring click tracking, custom aliases, expiry, and analytics using Hashes and Sorted Sets.
 

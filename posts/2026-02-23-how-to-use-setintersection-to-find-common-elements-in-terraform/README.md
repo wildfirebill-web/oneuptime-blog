@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, Terraform Functions, Collections, Set
+Tags: Terraform, Infrastructure as Code, DevOps, Terraform Functions, Collection, Set
 
 Description: Learn how to use the setintersection function in Terraform to find common elements between sets for permission management, tag validation, and resource filtering.
 

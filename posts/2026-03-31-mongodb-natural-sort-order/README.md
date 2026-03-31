@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, $natural, Sort, Cursor, Capped Collection
 
-Description: Learn how to use the $natural hint in MongoDB to sort query results in natural (insertion) order or reverse natural order, and when to apply it.
+Description: Learn how to use the $natural hint in MongoDB to sort query results in natural insertion order or reverse natural order, and when to apply it.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, History, Retention, Operations
+Tags: Dapr, Workflow, History, Retention, Operation
 
 Description: Configure Dapr workflow history retention policies to automatically clean up completed workflow instances and manage state store growth in production environments.
 

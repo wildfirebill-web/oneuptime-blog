@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Security, Services, Hardening, Linux
+Tags: RHEL, Security, Service, Hardening, Linux
 
 Description: A practical guide to identifying and disabling unnecessary services and daemons on RHEL to reduce the attack surface and improve system security.
 

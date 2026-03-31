@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, VPP, Kubernetes, Networking, Troubleshooting, Operations
+Tags: Calico, VPP, Kubernetes, Networking, Troubleshooting, Operation
 
 Description: Build operational processes for Calico VPP troubleshooting including runbooks, on-call procedures, diagnostic bundle standards, and escalation paths to Tigera support for VPP-specific issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Security, Operations
+Tags: Kubernetes, Security, Operation
 
 Description: Learn multiple methods to load and manage seccomp profiles in Kubernetes using localhost files and ConfigMaps for flexible security policy deployment.
 

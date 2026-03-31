@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab CI, Artifacts, CI/CD, Build Outputs, DevOps
+Tags: GitLab CI, Artifact, CI/CD, Build Outputs, DevOps
 
 Description: Learn how to manage artifacts in GitLab CI for sharing build outputs between jobs, persisting test reports, and maintaining deployment packages across your pipeline.
 

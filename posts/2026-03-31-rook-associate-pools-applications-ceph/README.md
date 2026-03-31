@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Storage, Kubernetes, Operations
+Tags: Ceph, Rook, Storage, Kubernetes, Operation
 
 Description: Learn how to associate Ceph pools with applications using pool application tags to improve cluster management, health reporting, and access control.
 

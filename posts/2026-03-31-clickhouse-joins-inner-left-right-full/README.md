@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SELECT, JOIN, INNER JOIN, LEFT JOIN
+Tags: ClickHouse, SQL, SELECT, Join, INNER JOIN, LEFT JOIN
 
 Description: Learn INNER, LEFT, RIGHT, and FULL OUTER JOIN syntax in ClickHouse, including join algorithms, distributed join behavior, and performance tips.
 

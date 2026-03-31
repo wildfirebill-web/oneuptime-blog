@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RabbitMQ, Node.js, Message Queues, Microservices, Backend, Event-Driven
+Tags: RabbitMQ, Node.js, Message Queue, Microservice, Backend, Event-Driven
 
 Description: Learn how to integrate RabbitMQ with Node.js applications for reliable message queuing, including work queues, publish/subscribe patterns, routing, and production best practices.
 

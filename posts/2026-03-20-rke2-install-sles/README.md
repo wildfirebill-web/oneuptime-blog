@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RKE2, Kubernetes, SLES, SUSE, Installation, Rancher
+Tags: RKE2, Kubernetes, SLE, SUSE, Installation, Rancher
 
 Description: A comprehensive guide to installing RKE2 on SUSE Linux Enterprise Server (SLES) for enterprise Kubernetes deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Incident Response, Operations
+Tags: Redis, Incident Response, Operation
 
 Description: Learn how to set up Redis incident response procedures with runbooks for common failure scenarios, escalation paths, and post-incident review processes.
 

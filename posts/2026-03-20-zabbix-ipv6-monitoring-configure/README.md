@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Zabbix, IPv6, Monitoring, Networks, Agent, Configuration
+Tags: Zabbix, IPv6, Monitoring, Network, Agent, Configuration
 
 Description: A guide to configuring Zabbix server, proxy, and agents to monitor IPv6 hosts and services, including interface configuration and ICMP checks.
 

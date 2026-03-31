@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Spring Boot, Java, Event Sourcing, Axon, CQRS, Microservices, Domain-Driven Design
+Tags: Spring Boot, Java, Event Sourcing, Axon, CQRS, Microservice, Domain-Driven Design
 
 Description: Learn how to build event-sourced applications using Axon Framework with Spring Boot, including command handling, event storage, projections, and saga orchestration for complex business workflows.
 

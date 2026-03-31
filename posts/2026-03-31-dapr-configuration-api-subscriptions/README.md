@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Configuration, Subscription, Real-time, Dynamic Config
+Tags: Dapr, Configuration, Subscription, Real-Time, Dynamic Config
 
 Description: Learn how to subscribe to Dapr Configuration API updates using HTTP SSE and gRPC streaming to receive real-time config changes in your application.
 

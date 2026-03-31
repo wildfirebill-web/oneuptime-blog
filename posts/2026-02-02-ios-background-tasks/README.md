@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IOS, Swift, Background Tasks, Mobile Development, Apple
+Tags: IOS, Swift, Background Task, Mobile Development, Apple
 
 Description: Implement iOS background tasks to perform work when your app is suspended, improving user experience and data freshness.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, InfluxDB, Grafana, Metrics, Time Series
+Tags: Dapr, InfluxDB, Grafana, Metric, Time Series
 
 Description: Learn how to collect Dapr Prometheus metrics and forward them to InfluxDB using Telegraf, then visualize them in Grafana dashboards.
 

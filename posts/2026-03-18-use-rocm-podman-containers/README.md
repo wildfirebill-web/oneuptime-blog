@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ROCm, AMD, Podman, GPU Computing, HIP, Containers
+Tags: ROCm, AMD, Podman, GPU Computing, HIP, Container
 
 Description: A comprehensive guide to using AMD ROCm inside Podman containers for GPU-accelerated computing, covering HIP programming, library usage, and machine learning workloads.
 

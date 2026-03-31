@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Security, Policy
+Tags: Podman, Container, DevOps, Registry, Security, Policy
 
 Description: Learn how to block specific container registries in Podman to prevent image pulls from untrusted or unauthorized sources.
 

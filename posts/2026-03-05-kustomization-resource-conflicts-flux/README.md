@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Kustomize, Conflicts, Resource Management, Troubleshooting
+Tags: Flux CD, GitOps, Kubernetes, Kustomize, Conflict, Resource Management, Troubleshooting
 
 Description: Learn how to identify, prevent, and resolve resource conflicts between multiple Kustomizations in Flux CD.
 

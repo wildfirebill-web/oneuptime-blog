@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Celery, Redis, Job Queue, Background Tasks, Async, Reliability
+Tags: Python, Celery, Redis, Job Queue, Background Task, Async, Reliability
 
 Description: Learn how to build a robust job queue in Python using Celery and Redis. This guide covers delayed jobs, retries, dead letter queues, and production best practices for reliable background processing.
 

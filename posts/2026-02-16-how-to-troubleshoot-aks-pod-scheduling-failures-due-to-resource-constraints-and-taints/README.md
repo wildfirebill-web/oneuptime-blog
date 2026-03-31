@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AKS, Scheduling, Troubleshooting, Kubernetes, Taints, Tolerations, Resource Management
+Tags: AKS, Scheduling, Troubleshooting, Kubernetes, Taints, Toleration, Resource Management
 
 Description: Practical guide to diagnosing and fixing AKS pod scheduling failures caused by resource constraints, taints, tolerations, and affinity rules.
 

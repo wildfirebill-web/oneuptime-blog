@@ -1,6 +1,6 @@
 # ClickHouse vs BigQuery Cost and Performance
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, BigQuery, Cloud, Cost, Performance, Analytics
 

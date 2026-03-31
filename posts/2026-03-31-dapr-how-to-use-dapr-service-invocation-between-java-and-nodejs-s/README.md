@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Service Invocation, Java, Node.js, Microservices
+Tags: Dapr, Service Invocation, Java, Node.js, Microservice
 
 Description: Configure Dapr service invocation between Java Spring Boot and Node.js Express services with SDK examples and error handling.
 

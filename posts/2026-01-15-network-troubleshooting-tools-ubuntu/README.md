@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Troubleshooting, Diagnostics, Tools, Tutorial
+Tags: Ubuntu, Networking, Troubleshooting, Diagnostic, Tool, Tutorial
 
 Description: Comprehensive guide to network troubleshooting tools on Ubuntu for diagnosing connectivity, performance, and configuration issues.
 

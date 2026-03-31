@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, local-exec, Infrastructure as Code, Automation
+Tags: OpenTofu, Provisioner, local-exec, Infrastructure as Code, Automation
 
 Description: Learn how to use the `local-exec` provisioner in OpenTofu to run commands on the machine executing OpenTofu after a resource is created or destroyed.
 

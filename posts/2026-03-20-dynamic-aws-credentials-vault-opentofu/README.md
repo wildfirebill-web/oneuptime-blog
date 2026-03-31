@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HashiCorp Vault, AWS, Security, IAM, Dynamic Credentials, Terraform
+Tags: OpenTofu, HashiCorp Vault, AWS, Security, IAM, Dynamic Credential, Terraform
 
 Description: Learn how to configure HashiCorp Vault's AWS secrets engine to generate dynamic, short-lived IAM credentials for use with OpenTofu, eliminating long-lived access keys.
 

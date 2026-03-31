@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Lifetimes, Memory Safety, Borrowing, Systems Programming
+Tags: Rust, Lifetime, Memory Safety, Borrowing, Systems Programming
 
 Description: Master Rust lifetimes to write safe, efficient code. This guide explains lifetime annotations, common patterns, and how to resolve lifetime errors in real-world scenarios.
 

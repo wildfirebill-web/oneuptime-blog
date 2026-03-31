@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Services, Security
+Tags: Calico, Kubernetes, Network Policy, Service, Security
 
 Description: A step-by-step guide to configuring Calico network policies that target Kubernetes Services for fine-grained traffic control.
 

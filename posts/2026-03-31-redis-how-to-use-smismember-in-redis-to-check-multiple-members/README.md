@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sets, SMISMEMBER, Membership, Commands
+Tags: Redis, Set, SMISMEMBER, Membership, Command
 
 Description: Learn how to use SMISMEMBER in Redis to check membership of multiple elements in a set with a single command, reducing round trips.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kubernetes, Containers, Monitoring, Linux
+Tags: RHEL, Kubernetes, Container, Monitoring, Linux
 
 Description: Learn how to set Up Kubernetes Dashboard on RHEL with step-by-step instructions, configuration examples, and best practices.
 

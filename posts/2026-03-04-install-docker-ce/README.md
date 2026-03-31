@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Linux
+Tags: RHEL, Docker, Container, Linux
 
 Description: Learn how to install Docker CE on RHEL 9 with step-by-step instructions, configuration examples, and best practices.
 

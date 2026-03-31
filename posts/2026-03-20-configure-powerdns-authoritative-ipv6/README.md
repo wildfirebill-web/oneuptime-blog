@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PowerDNS, DNS, IPv6, Authoritative, AAAA, Pdns, Zones
+Tags: PowerDNS, DNS, IPv6, Authoritative, AAAA, Pdns, Zone
 
 Description: Configure PowerDNS Authoritative Server to serve zones with AAAA records over IPv6 transport, using the generic SQL backend.
 

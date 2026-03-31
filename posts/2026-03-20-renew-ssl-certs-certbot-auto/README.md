@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Let's Encrypt, Certbot, SSL, Auto-Renewal, HTTPS, Certificates
+Tags: Let's Encrypt, Certbot, SSL, Auto-Renewal, HTTPS, Certificate
 
 Description: Learn how to configure automatic SSL certificate renewal with Certbot, including renewal hooks to reload web servers and monitoring for renewal failures.
 

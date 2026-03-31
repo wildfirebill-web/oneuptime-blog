@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Container Management
+Tags: Podman, Container, DevOps, Podman Desktop, Container Management
 
 Description: Learn how to create, start, stop, inspect, and delete containers using the Podman Desktop graphical interface.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Constraints, Data Integrity, DDL, MySQL 8
+Tags: MySQL, Constraint, Data Integrity, DDL, MySQL 8
 
 Description: A CHECK constraint in MySQL 8 enforces a boolean condition on column values, rejecting any row that does not satisfy the specified expression at insert or update time.
 

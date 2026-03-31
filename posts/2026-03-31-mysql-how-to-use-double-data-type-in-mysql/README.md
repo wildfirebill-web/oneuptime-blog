@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Double, Floating Point, Data Types, Numeric
+Tags: MySQL, Double, Floating Point, Data Type, Numeric
 
 Description: MySQL DOUBLE stores double-precision floating-point numbers with 15-16 significant digits, suitable for scientific calculations requiring more precision than FLOAT.
 

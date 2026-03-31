@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Troubleshooting, Debugging
+Tags: Podman, Container, DevOps, Volumes, Troubleshooting, Debugging
 
 Description: Learn how to diagnose and resolve volume mount failures in Podman including path errors, driver issues, and filesystem problems.
 

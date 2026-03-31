@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Datadog, Observability, Monitoring
+Tags: Flux CD, GitOps, Kubernetes, Notification, Datadog, Observability, Monitoring
 
 Description: Learn how to configure Flux CD's notification controller to send deployment and reconciliation events to Datadog using the Provider resource.
 

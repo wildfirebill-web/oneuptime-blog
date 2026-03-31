@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Replication, Partition, Database, Operations
+Tags: ClickHouse, Replication, Partition, Database, Operation
 
 Description: Learn how DETACH and ATTACH partition operations work in a replicated ClickHouse cluster, including safe workflows for moving, replacing, and restoring data.
 

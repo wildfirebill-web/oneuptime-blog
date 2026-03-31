@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, GitHub Actions, CI/CD, Kubernetes, Self-Hosted Runners
+Tags: Talos Linux, GitHub Action, CI/CD, Kubernetes, Self-Hosted Runners
 
 Description: Learn how to deploy self-hosted GitHub Actions runners on Talos Linux using the Actions Runner Controller for scalable, secure CI/CD execution.
 

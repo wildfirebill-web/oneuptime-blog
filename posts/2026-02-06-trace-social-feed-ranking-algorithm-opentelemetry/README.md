@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Social Media, Feed Ranking, Recommendation Systems
+Tags: OpenTelemetry, Social Media, Feed Ranking, Recommendation System
 
 Description: Trace social media feed ranking algorithms including relevance scoring and content mixing stages with OpenTelemetry for performance tuning.
 

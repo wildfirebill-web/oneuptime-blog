@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, Proxy, HTTP Proxy, HTTPS Proxy, Environment Variables
+Tags: Docker, IPv6, Proxy, HTTP Proxy, HTTPS Proxy, Environment Variable
 
 Description: Configure Docker containers and the Docker daemon to use an HTTP/HTTPS proxy for IPv6 outbound connections, set proxy environment variables for builds and runtime, and handle proxy bypass for...
 

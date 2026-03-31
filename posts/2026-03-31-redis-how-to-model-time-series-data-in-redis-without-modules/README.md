@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Time Series, Data Modeling, Sorted Sets, Streams
+Tags: Redis, Time Series, Data Modeling, Sorted Set, Stream
 
 Description: Learn how to model time-series data in Redis using native sorted sets and streams, without requiring the RedisTimeSeries module.
 

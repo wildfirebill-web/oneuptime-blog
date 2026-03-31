@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TypeScript, Type Errors, Debugging, Type Safety, Interface, Object Types
+Tags: TypeScript, Type Errors, Debugging, Type Safety, Interface, Object Type
 
 Description: Learn how to diagnose and fix common 'Property is missing in type' errors in TypeScript with practical solutions and best practices.
 

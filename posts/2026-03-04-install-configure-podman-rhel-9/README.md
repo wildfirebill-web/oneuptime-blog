@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Containers, Linux
+Tags: RHEL, Podman, Container, Linux
 
 Description: A hands-on guide to installing Podman on RHEL, configuring registries, storage, and verifying your setup is ready for production container workloads.
 

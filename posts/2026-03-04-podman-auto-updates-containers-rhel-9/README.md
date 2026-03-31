@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Auto-Update, Containers, Linux
+Tags: RHEL, Podman, Auto-Update, Container, Linux
 
 Description: Learn how to configure Podman auto-updates on RHEL to automatically check for new container images and restart services with the latest versions.
 

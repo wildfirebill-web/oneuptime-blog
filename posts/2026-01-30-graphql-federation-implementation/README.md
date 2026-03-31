@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, Federation, API Gateway, Microservices, Apollo
+Tags: GraphQL, Federation, API Gateway, Microservice, Apollo
 
 Description: Implement GraphQL Federation with subgraphs, entity resolution, and gateway composition for unified APIs across microservices.
 

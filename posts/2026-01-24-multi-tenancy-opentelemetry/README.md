@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Multi-Tenancy, Observability, Distributed Systems, SaaS, Tracing
+Tags: OpenTelemetry, Multi-Tenancy, Observability, Distributed System, SaaS, Tracing
 
 Description: A comprehensive guide to implementing multi-tenancy in OpenTelemetry for SaaS applications with proper tenant isolation and routing.
 

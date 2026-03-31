@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, HPA, Prometheus, Custom Metrics, Autoscaling
+Tags: Kubernetes, HPA, Prometheus, Custom Metric, Autoscaling
 
 Description: Troubleshoot and fix Horizontal Pod Autoscaler issues when custom metrics from Prometheus are not being fetched, including Prometheus Adapter configuration and API registration.
 

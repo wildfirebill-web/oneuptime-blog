@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Straight Join, Query Optimization, Sql, Performance
+Tags: MySQL, Straight Join, Query Optimization, SQL, Performance
 
 Description: Learn how to use STRAIGHT_JOIN in MySQL to override the optimizer's join order and force a specific table to be read first when the optimizer chooses a suboptimal plan.
 

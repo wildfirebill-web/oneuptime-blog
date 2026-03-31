@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Vector, Database, Search, Machine learning
+Tags: Redis, Vector, Database, Search, Machine Learning
 
 Description: Learn how to use the VCARD command in Redis vector sets to count the number of vectors stored in a set, useful for monitoring and capacity planning.
 

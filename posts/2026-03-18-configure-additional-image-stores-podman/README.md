@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Storage, Image Management, Multi-User
+Tags: Podman, Container, DevOps, Storage, Image Management, Multi-User
 
 Description: Learn how to configure additional image stores in Podman to share read-only base images across multiple users and reduce disk usage.
 

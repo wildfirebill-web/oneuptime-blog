@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, CloudWatch Logs, S3, AWS, Modules, Logging
+Tags: OpenTofu, Terraform, CloudWatch Logs, S3, AWS, Module, Logging
 
 Description: Learn how to design a reusable logging module for OpenTofu that creates CloudWatch log groups, S3 log buckets, and log export configurations with retention policies.
 

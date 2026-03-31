@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, CRIU, Containers, Troubleshooting, DevOps
+Tags: Podman, CRIU, Container, Troubleshooting, DevOps
 
 Description: A comprehensive troubleshooting guide for diagnosing and fixing common checkpoint and restore failures in Podman, covering CRIU errors, kernel issues, permission problems, and network conflicts.
 

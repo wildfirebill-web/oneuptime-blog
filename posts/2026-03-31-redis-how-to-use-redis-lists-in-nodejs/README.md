@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Node.js, Lists, ioredis, Queue, Stack
+Tags: Redis, Node.js, List, ioredis, Queue, Stack
 
 Description: Learn how to use Redis Lists in Node.js with ioredis for queues, stacks, activity feeds, and blocking pops with practical real-world examples.
 

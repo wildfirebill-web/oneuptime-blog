@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Security, Authentication, Hardening, Configuration
 
-Description: Learn how to restrict MongoDB to only the authentication mechanisms your deployment uses, reducing attack surface by disabling MONGODB-CR, PLAIN, and other unused mechanisms.
+Description: Learn how to restrict MongoDB to only the authentication mechanisms your deployment uses, reducing attack surface by disabling MONGODB-CR and other unused mechanisms.
 
 ---
 

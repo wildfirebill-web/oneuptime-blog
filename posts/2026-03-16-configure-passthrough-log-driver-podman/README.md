@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Configuration
+Tags: Podman, Container, DevOps, Logging, Configuration
 
 Description: Learn how to use Podman's passthrough log driver to bypass log storage entirely, sending container output directly to the terminal or parent process for minimal overhead.
 

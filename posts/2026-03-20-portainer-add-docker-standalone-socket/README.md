@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Environments, Docker Socket, Configuration
+Tags: Portainer, Docker, Environment, Docker Socket, Configuration
 
 Description: Add a Docker standalone environment to Portainer by mounting the Docker socket, enabling management of the local Docker host.
 

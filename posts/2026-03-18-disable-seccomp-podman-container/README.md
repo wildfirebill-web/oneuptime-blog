@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Linux, Security, Seccomp, Debugging
+Tags: Podman, Container, DevOps, Linux, Security, Seccomp, Debugging
 
 Description: Learn how to disable seccomp filtering in Podman containers for debugging and development scenarios where syscall restrictions interfere with your workload.
 

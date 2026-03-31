@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Service Mesh, Istio, Linkerd, Kubernetes, Networking, Microservices
+Tags: Service Mesh, Istio, Linkerd, Kubernetes, Networking, Microservice
 
 Description: A hands-on guide to implementing service mesh networking in Kubernetes, covering Istio and Linkerd installation, traffic management, observability, and security features.
 

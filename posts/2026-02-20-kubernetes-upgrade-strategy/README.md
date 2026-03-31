@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Upgrade, Cluster Management, Best Practice, Operations
+Tags: Kubernetes, Upgrade, Cluster Management, Best Practice, Operation
 
 Description: A practical guide to safely upgrading Kubernetes clusters including pre-upgrade checks, rolling upgrades, and rollback plans.
 

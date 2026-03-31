@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Networks
+Tags: Calico, Kubernetes, Network Policy, ICMP, Security, Network
 
 Description: Diagnose and fix ICMP and Ping Rules failures in Calico when traffic is unexpectedly blocked.
 

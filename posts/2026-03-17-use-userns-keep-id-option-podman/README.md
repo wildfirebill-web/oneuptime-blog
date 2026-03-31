@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, User Namespaces, keep-id
+Tags: Podman, Container, DevOps, Rootless, User Namespaces, keep-id
 
 Description: Learn how to use the --userns=keep-id option in Podman to preserve your host UID inside the container for seamless file permission handling.
 

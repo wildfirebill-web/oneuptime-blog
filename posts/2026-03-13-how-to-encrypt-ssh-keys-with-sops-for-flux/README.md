@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, SSH, Keys
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, SSH, Key
 
 Description: Learn how to encrypt SSH private keys using SOPS and deploy them securely through Flux for applications that need SSH access.
 

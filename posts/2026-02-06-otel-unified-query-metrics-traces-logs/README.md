@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Unified Query, Metrics, Traces, Logs, Correlation
+Tags: OpenTelemetry, Unified Query, Metric, Trace, Log, Correlation
 
 Description: Build a unified investigation workflow that lets you navigate from a metric spike to related traces and then to correlated logs.
 

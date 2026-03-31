@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, K3s, Cluster Management
+Tags: Rancher, Kubernetes, k3s, Cluster Management
 
 Description: Learn how to create a lightweight K3s Kubernetes cluster through Rancher for edge, IoT, and resource-constrained environments.
 

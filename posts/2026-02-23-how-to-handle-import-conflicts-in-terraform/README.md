@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Import, Conflicts, State Management, Troubleshooting
+Tags: Terraform, Import, Conflict, State Management, Troubleshooting
 
 Description: Learn how to identify, resolve, and prevent import conflicts in Terraform including duplicate resources, state mismatches, and configuration drift.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Terraform, Infrastructure as Code, Containers, DevOps
+Tags: Podman, Terraform, Infrastructure as Code, Container, DevOps
 
 Description: Learn how to use Podman with Terraform to manage container infrastructure as code, provision containerized services, and integrate container deployments into your IaC workflow.
 

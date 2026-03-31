@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Docker Compose, Networking, Microservices, DevOps
+Tags: Docker, Docker Compose, Networking, Microservice, DevOps
 
 Description: Learn how to connect services across separate Docker Compose projects using external networks, enabling microservices communication while maintaining project isolation.
 

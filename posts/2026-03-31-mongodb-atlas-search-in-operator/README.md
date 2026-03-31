@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas Search, In Operator, Filter, Atlas
+Tags: MongoDB, Atlas Search, IN Operator, Filter, Atlas
 
 Description: Learn how to use the Atlas Search in operator to match documents where a field value equals any value in a specified list, enabling multi-value exact filters.
 

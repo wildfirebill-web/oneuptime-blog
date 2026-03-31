@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Nesting, Performance, Best Practice
+Tags: Terraform, Module, Nesting, Performance, Best Practice
 
 Description: Identify and resolve performance issues caused by deeply nested Terraform modules, including slow planning, excessive dependencies, and bloated state.
 

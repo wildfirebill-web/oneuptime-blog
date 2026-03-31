@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Key Vault, Certificates, Infrastructure as Code
+Tags: OpenTofu, Azure, Key Vault, Certificate, Infrastructure as Code
 
 Description: Learn how to create and manage TLS certificates in Azure Key Vault with OpenTofu, including self-signed certificates and certificates from integrated CAs.
 

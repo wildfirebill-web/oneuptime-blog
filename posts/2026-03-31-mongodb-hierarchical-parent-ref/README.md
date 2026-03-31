@@ -1,8 +1,8 @@
 # How to Model Hierarchical Data in MongoDB with Parent Reference
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data modeling, Hierarchical data, Tree structure, Schema design
+Tags: MongoDB, Data Modeling, Hierarchical Data, Tree structure, Schema Design
 
 Description: Learn how to model tree structures in MongoDB using the parent reference pattern, with queries for finding ancestors, descendants, and siblings efficiently.
 

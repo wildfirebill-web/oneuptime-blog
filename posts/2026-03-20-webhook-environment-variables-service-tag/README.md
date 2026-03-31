@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Webhooks, Environment Variables, SERVICE_TAG, Docker
+Tags: Portainer, Webhook, Environment Variable, SERVICE_TAG, Docker
 
 Description: Pass dynamic image tags to Portainer container webhooks using the SERVICE_TAG environment variable for flexible deployments.
 

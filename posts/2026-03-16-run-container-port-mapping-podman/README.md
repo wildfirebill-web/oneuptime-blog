@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Port Mapping, Networking
+Tags: Podman, Container, DevOps, Port Mapping, Networking
 
 Description: Learn how to map container ports to host ports in Podman, making containerized services accessible from your host machine and network.
 

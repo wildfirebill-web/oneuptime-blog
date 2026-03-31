@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Azure Bicep, AKS, Azure, Infrastructure As Code
+Tags: Dapr, Azure Bicep, AKS, Azure, Infrastructure as Code
 
 Description: Deploy Dapr on Azure Kubernetes Service using Azure Bicep for declarative, Azure-native infrastructure-as-code with ARM template generation.
 

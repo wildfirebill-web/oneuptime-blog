@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, RBAC, Teams, User Override, Access Control
+Tags: Portainer, RBAC, Team, User Override, Access Control
 
 Description: Learn how to grant individual users different permissions than their team assignment in Portainer for exceptions to group-based access policies.
 

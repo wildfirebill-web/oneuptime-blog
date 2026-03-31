@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Gateway API, Routing, Headers, Kubernetes, Traffic Management
+Tags: Istio, Gateway API, Routing, Header, Kubernetes, Traffic Management
 
 Description: Learn how to configure header-based routing with the Kubernetes Gateway API and Istio for canary releases, A/B testing, multi-tenant routing, and feature flag deployments.
 

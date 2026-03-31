@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Write Performance, Troubleshooting, WiredTiger, Indexes
+Tags: MongoDB, Write Performance, Troubleshooting, WiredTiger, Index
 
 Description: Learn how to diagnose and fix MongoDB write performance degradation caused by index overhead, write concern settings, and WiredTiger cache pressure.
 

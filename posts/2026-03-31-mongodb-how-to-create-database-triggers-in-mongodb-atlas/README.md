@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Triggers, Serverless, App Services
+Tags: MongoDB, Atlas, Trigger, Serverless, App Service
 
 Description: Learn how to create database triggers in MongoDB Atlas to automatically run JavaScript functions in response to document changes.
 

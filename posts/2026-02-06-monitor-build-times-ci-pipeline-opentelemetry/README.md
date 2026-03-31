@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, CI/CD, Build Performance, GitHub Actions, Observability, DevOps
+Tags: OpenTelemetry, CI/CD, Build Performance, GitHub Action, Observability, DevOps
 
 Description: Learn how to instrument your CI/CD pipelines with OpenTelemetry to monitor build times, track step-level performance, and detect regressions before they slow down your team.
 

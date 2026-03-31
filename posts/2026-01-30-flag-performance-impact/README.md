@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Performance, Optimization, Monitoring
+Tags: Feature Flag, Performance, Optimization, Monitoring
 
 Description: Learn how to measure and optimize the performance impact of feature flags.
 

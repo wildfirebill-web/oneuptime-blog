@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Traceroute, Networking, IPv4, Diagnostics, Latency, Linux
+Tags: Traceroute, Networking, IPv4, Diagnostic, Latency, Linux
 
 Description: Understand every element of traceroute output including hop numbers, IP addresses, latency values, and what asterisks mean for network troubleshooting.
 

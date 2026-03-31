@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Serverless, OpenWhisk, Docker, Functions
+Tags: Ubuntu, Serverless, OpenWhisk, Docker, Function
 
 Description: Learn how to install and configure Apache OpenWhisk on Ubuntu using Docker Compose for a self-hosted serverless computing platform.
 

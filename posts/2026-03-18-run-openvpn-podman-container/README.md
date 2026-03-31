@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenVPN, Podman, VPN, Containers, Networking, Linux, Security
+Tags: OpenVPN, Podman, VPN, Container, Networking, Linux, Security
 
 Description: A complete guide to deploying an OpenVPN server inside a Podman container, including certificate generation, client configuration, and systemd integration.
 

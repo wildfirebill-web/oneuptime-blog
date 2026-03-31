@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Prometheus, Grafana, Monitoring, Metrics
+Tags: Portainer, Prometheus, Grafana, Monitoring, Metric
 
 Description: Learn how to deploy a complete Prometheus and Grafana monitoring stack via Portainer to collect and visualize metrics from your Docker host and containers.
 

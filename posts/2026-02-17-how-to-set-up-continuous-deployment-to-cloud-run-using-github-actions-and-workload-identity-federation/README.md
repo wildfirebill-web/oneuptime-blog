@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Run, GitHub Actions, Workload Identity Federation, CI/CD, Google Cloud
+Tags: GCP, Cloud Run, GitHub Action, Workload Identity Federation, CI/CD, Google Cloud
 
 Description: Learn how to set up continuous deployment from GitHub Actions to Cloud Run using Workload Identity Federation instead of service account keys.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Infrastructure as Code, Expression, Collections
+Tags: Terraform, HCL, Infrastructure as Code, Expression, Collection
 
 Description: Learn how to use Terraform for expressions with conditional filtering to select, exclude, and transform specific elements from lists and maps in your infrastructure code.
 

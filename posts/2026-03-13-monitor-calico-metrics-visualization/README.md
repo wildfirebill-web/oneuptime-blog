@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Grafana, Monitoring
+Tags: Calico, Kubernetes, Networking, Metric, Grafana, Monitoring
 
 Description: Monitor the health of your Calico Grafana dashboards to detect broken panels, stale data, and dashboard availability issues before they affect operations.
 

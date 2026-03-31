@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Canary Deployments, Progressive Delivery, AWS, Kubernetes, Infrastructure as Code, Reliability
+Tags: OpenTofu, Canary Deployment, Progressive Delivery, AWS, Kubernetes, Infrastructure as Code, Reliability
 
 Description: Learn how to implement canary deployments using OpenTofu to progressively release new versions to a small subset of users before full rollout.
 

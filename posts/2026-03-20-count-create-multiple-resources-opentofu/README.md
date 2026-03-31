@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Count, Resources, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Count, Resource, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the count meta-argument to create multiple instances of a resource from a single block in OpenTofu.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Health Check, Microservices, Docker, Docker Compose, Reliability
+Tags: Portainer, Health Check, Microservice, Docker, Docker Compose, Reliability
 
 Description: Learn how to configure Docker health checks for microservices in Portainer to enable automatic restart on failure and dependency-aware startup ordering.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Internals, Performance, Linux, Networking
+Tags: Redis, Internal, Performance, Linux, Networking
 
 Description: Understand how Redis uses epoll on Linux and kqueue on macOS to handle thousands of concurrent connections with a single thread efficiently.
 

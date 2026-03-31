@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, VS Code, Dev Containers, Development Environments, Docker, Remote Development
+Tags: Portainer, VS Code, Dev Container, Development Environment, Docker, Remote Development
 
 Description: Learn how to use VS Code Dev Containers alongside Portainer for a seamless development experience where VS Code runs inside Docker containers managed by Portainer.
 

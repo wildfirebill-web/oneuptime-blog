@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, CI/CD, Plan JSON, GitHub Actions, Infrastructure as Code
+Tags: OpenTofu, CI/CD, Plan JSON, GitHub Action, Infrastructure as Code
 
 Description: Learn how to integrate OpenTofu plan JSON analysis into CI/CD pipelines to enforce policies, post change summaries, and gate deployments automatically.
 

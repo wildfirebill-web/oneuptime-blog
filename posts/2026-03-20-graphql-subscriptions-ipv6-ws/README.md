@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, WebSocket, Subscriptions, IPv6, Real-Time
+Tags: GraphQL, WebSocket, Subscription, IPv6, Real-Time
 
 Description: Set up GraphQL subscriptions using WebSocket transport over IPv6 for real-time data delivery.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, VS Code, Dev Containers, Development, Productivity
+Tags: Portainer, Docker, VS Code, Dev Container, Development, Productivity
 
 Description: Integrate VS Code Dev Containers with Portainer-managed Docker environments for a seamless containerized development workflow.
 

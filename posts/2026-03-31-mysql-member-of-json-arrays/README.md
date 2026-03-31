@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Operator
+Tags: MySQL, JSON, Operator
 
 Description: Learn how MySQL's MEMBER OF() operator checks if a value is contained in a JSON array, with examples for queries and multi-valued index usage.
 

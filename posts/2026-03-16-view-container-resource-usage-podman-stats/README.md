@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Resource Usage
+Tags: Podman, Container, DevOps, Monitoring, Resource Usage
 
 Description: Learn how to monitor CPU, memory, network, and disk I/O usage of Podman containers using the podman stats command.
 

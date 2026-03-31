@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, AWS, S3, Logs, Observability, Cloud Storage
+Tags: OpenTelemetry, Collector, AWS, S3, Log, Observability, Cloud Storage
 
 Description: Configure the AWS S3 Receiver in OpenTelemetry Collector to ingest logs and telemetry data from S3 buckets with real YAML examples, IAM policies, and production-ready patterns.
 

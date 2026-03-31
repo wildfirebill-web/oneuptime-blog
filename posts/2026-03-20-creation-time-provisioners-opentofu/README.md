@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, Creation-Time, Infrastructure as Code, Lifecycle
+Tags: OpenTofu, Provisioner, Creation-Time, Infrastructure as Code, Lifecycle
 
 Description: Learn how creation-time provisioners work in OpenTofu, when they run, and how to use them effectively for post-creation configuration tasks.
 

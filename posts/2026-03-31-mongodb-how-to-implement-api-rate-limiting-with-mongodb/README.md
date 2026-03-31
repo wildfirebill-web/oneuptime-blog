@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Rate Limiting, Api Security, Performance, Backend Development
+Tags: MongoDB, Rate Limiting, API Security, Performance, Backend Development
 
 Description: Learn how to implement sliding window and fixed window API rate limiting using MongoDB with TTL indexes and atomic findOneAndUpdate operations.
 

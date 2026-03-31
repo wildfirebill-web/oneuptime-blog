@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Inventory, DevOps, Configuration Management
+Tags: Ansible, Variable, Inventory, DevOps, Configuration Management
 
 Description: Learn how to use host_vars and group_vars directories to organize Ansible variables by host and group for cleaner, more maintainable playbooks.
 

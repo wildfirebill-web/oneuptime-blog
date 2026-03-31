@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Bluestore, Performance, Storage, Kubernetes
+Tags: Rook, Ceph, BlueStore, Performance, Storage, Kubernetes
 
 Description: Learn how to configure BlueStore settings in Ceph including block device tuning, compression, cache sizes, and WAL/DB placement for optimal OSD performance.
 

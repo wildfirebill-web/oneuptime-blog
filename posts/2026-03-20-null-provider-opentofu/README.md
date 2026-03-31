@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Null Provider, Infrastructure as Code, IaC, Provisioners
+Tags: OpenTofu, Null Provider, Infrastructure as Code, IaC, Provisioner
 
 Description: Learn how to configure the Null provider in OpenTofu for provisioners, local scripts, and resource dependencies.
 

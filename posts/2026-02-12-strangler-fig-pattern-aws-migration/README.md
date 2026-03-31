@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Migration, Strangler Fig, Microservices, Architecture
+Tags: AWS, Migration, Strangler Fig, Microservice, Architecture
 
 Description: Learn how to use the strangler fig pattern to incrementally migrate a monolithic application to AWS without risky big-bang deployments.
 

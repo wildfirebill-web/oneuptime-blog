@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Operator, Sidecar, Annotations
+Tags: OpenTelemetry, Operator, Sidecar, Annotation
 
 Description: Troubleshoot and fix OpenTelemetry Operator sidecar injection failures caused by incorrect annotation language values.
 

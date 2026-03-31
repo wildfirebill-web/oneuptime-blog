@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Nginx, Proxy, Headers, Troubleshooting, FastCGI
+Tags: Nginx, Proxy, Header, Troubleshooting, FastCGI
 
 Description: Learn how to diagnose and fix Nginx upstream sent too big header errors by adjusting buffer sizes for proxy, FastCGI, and uWSGI backends.
 

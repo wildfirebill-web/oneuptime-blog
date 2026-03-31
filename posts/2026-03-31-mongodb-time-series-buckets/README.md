@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Time series, Bucket, Query, Internals
+Tags: MongoDB, Time Series, Bucket, Query, Internal
 
 Description: Learn how MongoDB time series collections store data in internal buckets and how to query efficiently by understanding bucket boundaries and metadata.
 

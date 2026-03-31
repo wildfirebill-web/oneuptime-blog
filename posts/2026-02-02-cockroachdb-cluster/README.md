@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CockroachDB, Database, Distributed Systems, Kubernetes, High Availability, PostgreSQL
+Tags: CockroachDB, Database, Distributed System, Kubernetes, High Availability, PostgreSQL
 
 Description: A comprehensive guide to deploying a production-ready CockroachDB cluster.
 

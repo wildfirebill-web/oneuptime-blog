@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, SSH, Certificates, Authentication, Linux
+Tags: RHEL, SSH, Certificate, Authentication, Linux
 
 Description: Configure SSH certificate-based authentication on RHEL using a certificate authority to sign user and host keys, eliminating the need to distribute authorized_keys files.
 

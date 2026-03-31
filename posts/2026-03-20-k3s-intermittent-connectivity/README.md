@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Edge Computing, Offline, Resilience, DevOps
+Tags: k3s, Kubernetes, Edge Computing, Offline, Resilience, DevOps
 
 Description: Learn how to configure K3s to operate reliably in environments with intermittent internet connectivity, including offline-first workload design and sync strategies.
 

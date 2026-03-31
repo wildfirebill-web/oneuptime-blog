@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Jenkins, CI/CD, Security, DevOps, Credentials, Secrets Management, Automation
+Tags: Jenkins, CI/CD, Security, DevOps, Credential, Secrets Management, Automation
 
 Description: A comprehensive guide to managing credentials in Jenkins securely.
 

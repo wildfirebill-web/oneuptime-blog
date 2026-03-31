@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Monitoring, Alerts, DevOps, Observability, Automation, Azure Monitor
+Tags: Azure, Monitoring, Alert, DevOps, Observability, Automation, Azure Monitor
 
 Description: A comprehensive guide to configuring, managing, and automating Azure Monitor alerts for effective incident response and system reliability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, OpenTelemetry, Tracing, Distributed Systems, Observability, DevOps
+Tags: NodeJS, OpenTelemetry, Tracing, Distributed System, Observability, DevOps
 
 Description: Learn to implement distributed tracing across Node.js microservices with context propagation for HTTP, gRPC, and message queues using OpenTelemetry.
 

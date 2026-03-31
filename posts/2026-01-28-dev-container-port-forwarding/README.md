@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dev Containers, Docker, VS Code, Networking, Port Forwarding, Development Environments
+Tags: Dev Container, Docker, VS Code, Networking, Port Forwarding, Development Environment
 
 Description: Learn how to configure port forwarding in Dev Containers to access web servers, databases, and services running inside your containerized development environment.
 

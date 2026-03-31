@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, AWX, Notifications, Slack, Email
+Tags: Ansible, AWX, Notification, Slack, Email
 
 Description: Configure AWX notification templates for Slack, email, webhooks, and PagerDuty to alert on job success, failure, and approval requests.
 

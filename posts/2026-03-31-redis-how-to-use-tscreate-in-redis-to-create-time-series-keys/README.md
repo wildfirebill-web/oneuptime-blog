@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RedisTimeSeries, Time Series, Metrics, Monitoring
+Tags: Redis, RedisTimeSeries, Time Series, Metric, Monitoring
 
 Description: Learn how to use TS.CREATE in Redis to create time series keys with retention policies, labels, and compaction rules for storing metrics data.
 

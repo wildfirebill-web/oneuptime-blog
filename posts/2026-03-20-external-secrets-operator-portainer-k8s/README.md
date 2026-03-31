@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, External Secrets Operator, Secrets, AWS, DevOps
+Tags: Portainer, Kubernetes, External Secrets Operator, Secret, AWS, DevOps
 
 Description: Learn how to deploy and configure the External Secrets Operator on Kubernetes via Portainer to sync secrets from external providers like AWS Secrets Manager or Vault.
 

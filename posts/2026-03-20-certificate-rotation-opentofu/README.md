@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, TLS, Certificates, Rotation, ACM, Key Vault, Security, Infrastructure as Code
+Tags: OpenTofu, TLS, Certificate, Rotation, ACM, Key Vault, Security, Infrastructure as Code
 
 Description: Learn how to implement zero-downtime TLS certificate rotation using OpenTofu with create_before_destroy lifecycle, automated rotation workflows, and expiry monitoring for ACM, Key Vault, and...
 

@@ -1,4 +1,4 @@
-# How to Use Array Expressions ($size, $isArray, $arrayElemAt) in MongoDB Aggregation
+# How to Use Array Expressions in MongoDB Aggregation
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

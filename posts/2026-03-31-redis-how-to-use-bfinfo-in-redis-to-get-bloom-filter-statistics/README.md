@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bloom Filter, RedisBloom, Commands, NoSql
+Tags: Redis, Bloom Filter, RedisBloom, Command, NoSQL
 
 Description: Learn how to use BF.INFO in Redis to retrieve metadata and statistics about a Bloom filter including capacity, size, and number of inserted items.
 

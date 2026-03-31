@@ -1,6 +1,6 @@
 # How to Configure Health Checks for Cert-Manager Certificates in ArgoCD
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ArgoCD, GitOps, Kubernetes, Cert-Manager, Health Check
 

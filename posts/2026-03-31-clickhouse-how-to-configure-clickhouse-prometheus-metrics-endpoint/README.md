@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Prometheus, Monitoring, Metrics, Observability
+Tags: ClickHouse, Prometheus, Monitoring, Metric, Observability
 
 Description: Learn how to configure ClickHouse's built-in Prometheus metrics endpoint to expose server metrics for scraping by Prometheus and visualization in Grafana.
 

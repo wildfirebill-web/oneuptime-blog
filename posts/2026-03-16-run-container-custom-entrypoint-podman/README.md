@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Entrypoint, Container Configuration
+Tags: Podman, Container, DevOps, Entrypoint, Container Configuration
 
 Description: Learn how to override and customize container entrypoints in Podman to change default behavior, run alternative commands, and debug container startup.
 

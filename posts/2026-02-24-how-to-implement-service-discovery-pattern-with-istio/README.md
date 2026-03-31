@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Service Discovery, Kubernetes, Envoy, Microservices
+Tags: Istio, Service Discovery, Kubernetes, Envoy, Microservice
 
 Description: How Istio handles service discovery and how to configure it for services inside and outside the mesh including ServiceEntry and WorkloadEntry.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, External Secrets Operator, TLS, Certificates
+Tags: Flux CD, Kubernetes, GitOps, External Secrets Operator, TLS, Certificate
 
 Description: Sync TLS certificates from external secret stores using ESO and Flux CD, enabling centralized certificate management and automatic rotation for Kubernetes Ingress and services.
 

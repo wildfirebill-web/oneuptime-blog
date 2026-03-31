@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Capped Collections, Log Storage, Circular Buffer, Performance
+Tags: MongoDB, Capped Collection, Log Storage, Circular Buffer, Performance
 
 Description: Learn how to create, query, and manage capped collections in MongoDB for fixed-size circular buffers ideal for logs and event streams.
 

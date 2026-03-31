@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Logging, Log Storage, Backend, Operations
+Tags: MongoDB, Logging, Log Storage, Backend, Operation
 
 Description: Learn how to use MongoDB as a scalable log storage backend with structured log documents, indexing strategies, and TTL-based automatic expiry.
 

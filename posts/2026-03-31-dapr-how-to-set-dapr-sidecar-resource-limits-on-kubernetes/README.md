@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Kubernetes, Resource Limits, Sidecar, Performance
+Tags: Dapr, Kubernetes, Resource Limit, Sidecar, Performance
 
 Description: Learn how to set CPU and memory resource requests and limits for the Dapr sidecar container on Kubernetes to prevent resource contention and ensure predictable performance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CloudEvents, Schema-Registry, Kubernetes, Event-Driven, Validation
+Tags: CloudEvent, Schema-Registry, Kubernetes, Event-Driven, Validation
 
 Description: Implement centralized schema management and validation for CloudEvents using schema registries to ensure event compatibility and prevent breaking changes in event-driven systems.
 

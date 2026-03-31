@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Exactly-Once, Transactions, Idempotent Producer, Data Integrity
+Tags: Kafka, Exactly-Once, Transaction, Idempotent Producer, Data Integrity
 
 Description: A deep dive into Kafka's exactly-once semantics (EOS), covering idempotent producers, transactional messaging, and the consume-transform-produce pattern for building reliable data pipelines.
 

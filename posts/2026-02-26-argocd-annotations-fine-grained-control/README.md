@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Annotations, Configuration
+Tags: ArgoCD, GitOps, Kubernetes, Annotation, Configuration
 
 Description: Learn how to use ArgoCD annotations to control sync behavior, hook execution, resource tracking, diff customization, and notification subscriptions at the resource level.
 

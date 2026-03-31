@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Apache Doris, Analytics, Tracing, Metrics, Observability
+Tags: OpenTelemetry, Apache Doris, Analytics, Tracing, Metric, Observability
 
 Description: Learn how to use Apache Doris as a real-time analytics backend for OpenTelemetry traces, metrics, and logs with fast aggregation queries.
 

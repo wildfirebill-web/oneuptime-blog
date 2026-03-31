@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Write-Only Attributes, Security, Credentials, Infrastructure as Code, State
+Tags: OpenTofu, Write-Only Attributes, Security, Credential, Infrastructure as Code, State
 
 Description: Learn how OpenTofu's write-only attribute feature prevents sensitive values from ever being stored in state files, providing the strongest protection for credentials.
 

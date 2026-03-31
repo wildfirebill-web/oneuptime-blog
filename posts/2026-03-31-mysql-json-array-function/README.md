@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Function
+Tags: MySQL, JSON, Function
 
 Description: Learn how to use MySQL's JSON_ARRAY() function to create JSON arrays from SQL values, with practical examples for building dynamic JSON documents.
 

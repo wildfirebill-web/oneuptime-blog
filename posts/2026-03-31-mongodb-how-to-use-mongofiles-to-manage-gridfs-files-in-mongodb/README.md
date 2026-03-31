@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Gridfs, Mongofiles, File Storage
+Tags: MongoDB, GridFS, Mongofiles, File Storage
 
 Description: Learn how to use the mongofiles command-line tool to store, retrieve, list, and delete files in MongoDB GridFS, including practical use cases and options.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Distributed Systems, Coordination, Barriers, Latches, Synchronization
+Tags: Redis, Distributed System, Coordination, Barrier, Latches, Synchronization
 
 Description: A comprehensive guide to using Redis for distributed coordination patterns including barriers, countdown latches, and synchronization primitives for coordinating work across multiple processes.
 

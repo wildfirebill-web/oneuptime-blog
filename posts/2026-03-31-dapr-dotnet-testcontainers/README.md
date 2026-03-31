@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Testing, Testcontainer, Integration Test, Microservice
+Tags: Dapr, DotNet, Testing, Testcontainers, Integration Test, Microservice
 
 Description: Use Testcontainers for .NET to spin up real Dapr sidecars and dependencies in integration tests, ensuring your Dapr-powered services behave correctly end-to-end.
 

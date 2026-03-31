@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Batch Jobs, Kubernetes, Service Mesh, Jobs
+Tags: Istio, Batch Job, Kubernetes, Service Mesh, Job
 
 Description: Practical guide to running Kubernetes batch jobs with Istio sidecar injection, handling job completion and sidecar lifecycle correctly.
 

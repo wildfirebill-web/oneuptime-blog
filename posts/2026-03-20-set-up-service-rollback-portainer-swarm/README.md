@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Rollback, Services, Deployment
+Tags: Portainer, Docker Swarm, Rollback, Service, Deployment
 
 Description: Configure automatic rollback policies for Docker Swarm services in Portainer to recover from failed updates.
 

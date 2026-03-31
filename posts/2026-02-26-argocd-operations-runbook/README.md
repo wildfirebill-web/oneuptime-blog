@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Operations, Runbook
+Tags: ArgoCD, GitOps, Kubernetes, Operation, Runbook
 
 Description: Learn how to create a comprehensive ArgoCD operations runbook covering incident response procedures, common failure modes, diagnostic commands, and escalation paths for on-call engineers.
 

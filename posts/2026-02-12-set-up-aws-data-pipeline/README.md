@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Data Pipelines, ETL, Data Engineering
+Tags: AWS, Data Pipeline, ETL, Data Engineering
 
 Description: A practical guide to setting up AWS Data Pipeline for orchestrating data movement and transformation across AWS services including S3, RDS, DynamoDB, and EMR.
 

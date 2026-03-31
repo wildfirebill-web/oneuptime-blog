@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Rootless, Storage
+Tags: Podman, Container, DevOps, Volumes, Rootless, Storage
 
 Description: A hands-on guide to creating, mounting, and managing persistent volumes in rootless Podman, including fixing common permission errors.
 

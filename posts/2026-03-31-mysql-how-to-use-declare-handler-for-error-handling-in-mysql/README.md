@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Stored Procedures, Error Handling, Sql
+Tags: MySQL, Stored Procedure, Error Handling, SQL
 
 Description: Learn how to use DECLARE HANDLER in MySQL stored procedures to catch SQL errors, warnings, and not-found conditions and handle them gracefully.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, MicroShift, Edge Computing, Containers, Kubernetes, Linux
+Tags: RHEL, MicroShift, Edge Computing, Container, Kubernetes, Linux
 
 Description: Deploy and manage containerized workloads on edge devices running MicroShift on RHEL, including persistent storage and offline operation.
 

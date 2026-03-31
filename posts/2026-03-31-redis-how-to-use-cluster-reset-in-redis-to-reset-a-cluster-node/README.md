@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Reset, Operations, Maintenance
+Tags: Redis, Cluster, Reset, Operation, Maintenance
 
 Description: Learn how to use CLUSTER RESET in Redis to reset a node's cluster state, remove it from the cluster, and prepare it for reuse or redeployment.
 

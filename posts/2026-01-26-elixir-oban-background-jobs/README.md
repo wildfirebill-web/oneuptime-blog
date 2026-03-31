@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elixir, Oban, Background Jobs, Job Queue, Phoenix, PostgreSQL, Async Processing
+Tags: Elixir, Oban, Background Job, Job Queue, Phoenix, PostgreSQL, Async Processing
 
 Description: A practical guide to implementing background jobs with Oban in Elixir applications. Learn how to set up workers, handle retries, schedule jobs, manage queues, and monitor job processing in production.
 

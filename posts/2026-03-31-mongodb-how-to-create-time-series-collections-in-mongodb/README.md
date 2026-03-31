@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Time Series, Collections, IoT, Analytics
+Tags: MongoDB, Time Series, Collection, IoT, Analytics
 
 Description: Create and use MongoDB time series collections for efficient storage and querying of time-stamped measurements, sensor data, and metrics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terragrunt, Hooks, Before_hook, After_hook, Automation
+Tags: OpenTofu, Terragrunt, Hook, Before_hook, After_hook, Automation
 
 Description: Learn how to use Terragrunt before_hook and after_hook blocks to run shell commands before and after OpenTofu operations for validation, notification, and post-processing tasks.
 

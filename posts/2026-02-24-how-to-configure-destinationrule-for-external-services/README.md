@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, DestinationRule, External Services, ServiceEntry, Kubernetes
+Tags: Istio, DestinationRule, External Service, ServiceEntry, Kubernetes
 
 Description: Configure Istio DestinationRule for external services to manage TLS, connection pools, and traffic policies for outbound traffic.
 

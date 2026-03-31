@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Timeout Pattern, Resilience, VirtualService, Microservices
+Tags: Istio, Timeout Pattern, Resilience, VirtualService, Microservice
 
 Description: How to configure request timeouts in Istio using VirtualService and DestinationRule settings to prevent slow services from cascading failures.
 

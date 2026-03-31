@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, DaemonSet, Node agents, DevOps
+Tags: Portainer, Kubernetes, DaemonSet, Node Agent, DevOps
 
 Description: Learn how to deploy and manage Kubernetes DaemonSets through Portainer for running workloads on every cluster node.
 

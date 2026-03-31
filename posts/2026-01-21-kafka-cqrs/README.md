@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Apache Kafka, CQRS, Event-Driven Architecture, Command Query Separation, Microservices, Java
+Tags: Apache Kafka, CQRS, Event-Driven Architecture, Command Query Separation, Microservice, Java
 
 Description: Learn how to implement Command Query Responsibility Segregation (CQRS) with Apache Kafka, including command handling, event publishing, and read model projections.
 

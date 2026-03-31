@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, VictoriaMetrics, Metrics, Time-Series, Prometheus, Backend
+Tags: OpenTelemetry, VictoriaMetrics, Metric, Time-Series, Prometheus, Backend
 
 Description: Learn how to configure VictoriaMetrics as a high-performance OpenTelemetry metrics backend with native OTLP ingestion and long-term storage capabilities.
 

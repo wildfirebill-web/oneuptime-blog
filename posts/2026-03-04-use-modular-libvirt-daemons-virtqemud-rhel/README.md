@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, KVM, Libvirt, Virtqemud, Virtualization, Daemons, Linux
+Tags: RHEL, KVM, Libvirt, Virtqemud, Virtualization, Daemon, Linux
 
 Description: Learn how to use the modular libvirt daemon architecture on RHEL, where virtqemud and other specialized daemons replace the monolithic libvirtd.
 

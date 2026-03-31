@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics
+Tags: Calico, Kubernetes, Networking, Diagnostic
 
 Description: Set up a Calico node diagnostics toolkit using calicoctl node diags, Felix health checks, and per-node BGP and routing state inspection to isolate networking issues to specific cluster nodes.
 

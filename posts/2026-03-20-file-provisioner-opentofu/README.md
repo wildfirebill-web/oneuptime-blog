@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, File Upload, SSH, Infrastructure as Code
+Tags: OpenTofu, Provisioner, File Upload, SSH, Infrastructure as Code
 
 Description: Learn how to use the `file` provisioner in OpenTofu to upload files or directory contents to a remote resource over SSH or WinRM during provisioning.
 

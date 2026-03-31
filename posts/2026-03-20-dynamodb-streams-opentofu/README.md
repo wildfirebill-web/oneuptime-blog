@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, DynamoDB, Streams, Change Data Capture, Lambda, Infrastructure as Code
+Tags: OpenTofu, AWS, DynamoDB, Stream, Change Data Capture, Lambda, Infrastructure as Code
 
 Description: Learn how to enable DynamoDB Streams with OpenTofu to capture item-level changes and trigger Lambda functions for real-time change data capture and event-driven processing.
 

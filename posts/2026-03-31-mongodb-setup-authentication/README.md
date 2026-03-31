@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Authentication, Security, Operations, Administration
+Tags: MongoDB, Authentication, Security, Operation, Administration
 
 Description: Step-by-step guide to enabling MongoDB authentication, creating the first admin user, and connecting with credentials using mongosh and application drivers.
 

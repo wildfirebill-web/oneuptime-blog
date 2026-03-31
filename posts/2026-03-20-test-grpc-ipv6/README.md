@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, IPv6, Testing, Grpcurl, Integration Tests
+Tags: gRPC, IPv6, Testing, Grpcurl, Integration Test
 
 Description: Test gRPC services over IPv6 using grpcurl, language-specific test frameworks, and automated integration testing approaches.
 

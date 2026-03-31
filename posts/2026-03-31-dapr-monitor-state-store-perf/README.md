@@ -1,6 +1,6 @@
 # How to Monitor State Store Performance in Dapr
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Monitoring, Prometheus, Observability
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Custom Metrics, Instrumentation, Go, Python, Node.js, Observability
+Tags: Prometheus, Custom Metric, Instrumentation, Go, Python, Node.js, Observability
 
 Description: Learn how to instrument your applications with custom Prometheus metrics including counters, gauges, histograms, and best practices for naming and labeling.
 

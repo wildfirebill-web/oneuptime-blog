@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud Storage, Lifecycle Management, Cost Optimization, Storage Classes
+Tags: GCP, Google Cloud Storage, Lifecycle Management, Cost Optimization, Storage Class
 
 Description: A practical guide to setting up object lifecycle management rules in Google Cloud Storage to automate storage class transitions and object deletion for cost optimization.
 

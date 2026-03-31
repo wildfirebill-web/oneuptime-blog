@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, DISTINCT, Deduplication
+Tags: MySQL, Distinct, Deduplication
 
 Description: Learn how to use MySQL DISTINCT to remove duplicate rows from query results, including multi-column deduplication, use with aggregate functions, and performance tips.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, GRUB2, Boot, Troubleshooting, File Systems
+Tags: RHEL, GRUB2, Boot, Troubleshooting, File System
 
 Description: Fix the GRUB2 'error: unknown filesystem' boot failure on RHEL by reinstalling GRUB, repairing the boot partition, or fixing partition table issues.
 

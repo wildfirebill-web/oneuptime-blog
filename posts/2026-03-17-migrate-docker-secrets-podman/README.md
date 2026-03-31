@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Docker, Migration
+Tags: Podman, Container, DevOps, Secret, Docker, Migration
 
 Description: Learn how to migrate your Docker secrets to Podman, including differences in implementation and command equivalents.
 

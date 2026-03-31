@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Edge Computing, Data Pipelines, Cloud, ETL, Streaming, IoT, Kafka
+Tags: Edge Computing, Data Pipeline, Cloud, ETL, Streaming, IoT, Kafka
 
 Description: Learn how to build reliable data pipelines from edge devices to cloud platforms.
 

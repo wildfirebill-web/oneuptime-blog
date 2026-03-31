@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, AWS, ECS, Containers, Dynamic Blocks, Fargate
+Tags: OpenTofu, Terraform, AWS, ECS, Container, Dynamic Blocks, Fargate
 
 Description: Learn how to use dynamic blocks in OpenTofu to build ECS task definition container definitions from structured variable data, supporting sidecars and multi-container tasks.
 

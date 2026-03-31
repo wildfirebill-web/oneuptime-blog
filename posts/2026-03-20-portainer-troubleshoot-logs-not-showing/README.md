@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Logging, Troubleshooting
+Tags: Portainer, Docker, Container, Logging, Troubleshooting
 
 Description: Learn how to diagnose and fix issues where Docker container logs are not appearing or showing empty in Portainer's log viewer.
 

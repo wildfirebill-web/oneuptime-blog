@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Grafana, Dashboard, cAdvisor, Metrics
+Tags: Portainer, Grafana, Dashboard, cAdvisor, Metric
 
 Description: Learn how to create comprehensive container metrics dashboards in Grafana using cAdvisor data from your Portainer-managed Docker environment, with practical panel examples and PromQL queries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker Compose v2, Compatibility
+Tags: Podman, Container, DevOps, Docker Compose v2, Compatibility
 
 Description: Learn how to use the official Docker Compose v2 plugin with Podman through the Docker-compatible socket API.
 

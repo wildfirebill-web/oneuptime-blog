@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, API Gateway, Cloud Run, Cloud Functions, Infrastructure as Code
+Tags: OpenTofu, GCP, API Gateway, Cloud Run, Cloud Function, Infrastructure as Code
 
 Description: Learn how to create GCP API Gateway with OpenTofu to expose Cloud Run services and Cloud Functions as managed APIs with authentication, quota limits, and monitoring.
 

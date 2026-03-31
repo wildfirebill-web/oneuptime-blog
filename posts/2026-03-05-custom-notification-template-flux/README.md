@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Templates
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Template
 
 Description: Learn how to customize Flux notification messages using the summary field, provider configurations, and event metadata for more informative alerts.
 

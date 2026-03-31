@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Diagnostics, System Information, Troubleshooting, Docker Engine, DevOps
+Tags: Docker, Diagnostic, System Information, Troubleshooting, Docker Engine, DevOps
 
 Description: Use docker system info to inspect your Docker installation and diagnose configuration, driver, and resource issues quickly.
 

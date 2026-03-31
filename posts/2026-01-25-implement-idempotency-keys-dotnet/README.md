@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, API Design, Distributed Systems, Reliability
+Tags: .NET, C#, API Design, Distributed System, Reliability
 
 Description: Learn how to implement idempotency keys in .NET applications to prevent duplicate operations, ensure safe retries, and build reliable APIs that handle network failures gracefully.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Troubleshooting, Debugging
+Tags: Podman, Container, DevOps, Networking, Troubleshooting, Debugging
 
 Description: Learn systematic approaches to diagnose and fix container network connectivity issues in Podman.
 

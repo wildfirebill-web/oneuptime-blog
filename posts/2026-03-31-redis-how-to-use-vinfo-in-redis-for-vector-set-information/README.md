@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Sets, Metadata, Diagnostics, Index Management
+Tags: Redis, Vector Set, Metadata, Diagnostic, Index Management
 
 Description: Learn how to use VINFO in Redis to inspect Vector Set metadata including size, dimensions, quantization type, and HNSW graph parameters.
 

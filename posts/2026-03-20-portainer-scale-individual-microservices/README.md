@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Scaling, Microservices, Docker Swarm, Load Balancing, Docker Compose
+Tags: Portainer, Scaling, Microservice, Docker Swarm, Load Balancing, Docker Compose
 
 Description: Learn how to scale individual microservice containers in Portainer using Docker Compose replica settings and Docker Swarm service scaling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Local Path Provisioner, Storage, Development, K3s, PersistentVolume
+Tags: Rancher, Local Path Provisioner, Storage, Development, k3s, PersistentVolume
 
 Description: Configure the Local Path Provisioner in Rancher for development clusters to provide automatic dynamic PVC provisioning using local node storage.
 

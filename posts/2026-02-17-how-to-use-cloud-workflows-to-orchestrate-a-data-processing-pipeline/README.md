@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Workflows, Data Pipelines, BigQuery, Cloud Storage
+Tags: GCP, Cloud Workflows, Data Pipeline, BigQuery, Cloud Storage
 
 Description: Build a complete data processing pipeline using Google Cloud Workflows to orchestrate data ingestion, transformation, and loading across multiple GCP services.
 

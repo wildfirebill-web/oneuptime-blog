@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Drivers, Storage, Configuration
+Tags: Podman, Container, DevOps, Volumes, Driver, Storage, Configuration
 
 Description: Learn how to configure volume driver options in Podman to customize storage behavior for named volumes.
 

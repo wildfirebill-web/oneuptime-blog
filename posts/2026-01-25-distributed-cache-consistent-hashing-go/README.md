@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Distributed Systems, Caching, Consistent Hashing, Scalability
+Tags: Go, Distributed System, Caching, Consistent Hashing, Scalability
 
 Description: Learn how to implement a distributed cache in Go using consistent hashing to evenly distribute data across nodes and minimize cache misses when scaling your cluster.
 

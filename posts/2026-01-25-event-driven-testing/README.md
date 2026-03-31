@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Event-Driven Architecture, Testing, Kafka, Message Queues, DevOps
+Tags: Event-Driven Architecture, Testing, Kafka, Message Queue, DevOps
 
 Description: Learn to test event-driven systems effectively, including event schema validation, consumer testing, saga pattern verification, and end-to-end event flow testing.
 

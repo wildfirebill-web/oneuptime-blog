@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RedisTimeSeries, Time Series, Counters, Metrics
+Tags: Redis, RedisTimeSeries, Time Series, Counter, Metric
 
 Description: Learn how to use TS.INCRBY and TS.DECRBY in Redis to increment or decrement time series values, enabling counter-style time series tracking.
 

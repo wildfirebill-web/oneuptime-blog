@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $out, Pipeline Stages, Collection Output, NoSQL
+Tags: MongoDB, Aggregation, $out, Pipeline Stage, Collection Output, NoSQL
 
 Description: Learn how to use MongoDB's $out stage to atomically write aggregation pipeline results to a target collection, replacing it entirely or creating it if it doesn't exist.
 

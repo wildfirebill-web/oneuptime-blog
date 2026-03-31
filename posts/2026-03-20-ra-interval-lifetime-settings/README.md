@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Router Advertisement, Radvd, Timing, Lifetimes, Networking
+Tags: IPv6, Router Advertisement, Radvd, Timing, Lifetime, Networking
 
 Description: Understand how Router Advertisement interval and lifetime settings affect client behavior, network convergence time, and battery life on wireless devices.
 

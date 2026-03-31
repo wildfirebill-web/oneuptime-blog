@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, NAT, Networks, Kubernetes, Egress, SNAT
+Tags: Rancher, NAT, Network, Kubernetes, Egress, SNAT
 
 Description: Configure source and destination NAT in Rancher for pod internet egress, external service access, and managing IP address translation in Kubernetes clusters.
 

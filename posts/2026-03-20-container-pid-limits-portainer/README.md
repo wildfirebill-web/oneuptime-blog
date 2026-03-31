@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Security, PID Limits, Containers
+Tags: Portainer, Docker, Security, PID Limits, Container
 
 Description: Set process ID limits for containers in Portainer to prevent fork bombs and resource exhaustion attacks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, GitHub Actions, OIDC, Security, AWS, Azure, GCP, CI/CD, Authentication
+Tags: Terraform, GitHub Action, OIDC, Security, AWS, Azure, GCP, CI/CD, Authentication
 
 Description: Set up OIDC authentication between GitHub Actions and cloud providers to run Terraform without storing long-lived credentials, covering AWS, Azure, and GCP configurations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, CacheTiering, Storage, Operations
+Tags: Rook, Ceph, Kubernetes, CacheTiering, Storage, Operation
 
 Description: Learn the steps to safely remove a read-only cache tier from a Ceph cluster, including removing the overlay, breaking the tier relationship, and deleting the cache pool.
 

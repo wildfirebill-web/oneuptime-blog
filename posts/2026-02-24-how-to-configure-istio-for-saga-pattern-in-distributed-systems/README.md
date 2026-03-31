@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Saga Pattern, Distributed Transactions, Service Mesh, Microservices
+Tags: Istio, Saga Pattern, Distributed Transaction, Service Mesh, Microservice
 
 Description: Configure Istio to support the saga pattern for distributed transactions with proper timeout, retry, and routing policies for orchestrated and choreographed sagas.
 

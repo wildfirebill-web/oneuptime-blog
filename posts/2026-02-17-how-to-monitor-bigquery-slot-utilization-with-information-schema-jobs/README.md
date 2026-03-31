@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Slots, Monitoring, INFORMATION_SCHEMA, Performance
+Tags: GCP, BigQuery, Slot, Monitoring, INFORMATION_SCHEMA, Performance
 
 Description: Learn how to use BigQuery INFORMATION_SCHEMA views to monitor slot utilization, identify resource-heavy queries, and optimize capacity.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Traefik, API Gateway, Microservices, Reverse Proxy
+Tags: Portainer, Docker, Traefik, API Gateway, Microservice, Reverse Proxy
 
 Description: Configure Traefik as a microservices API gateway with routing, rate limiting, authentication middleware, and load balancing managed via Portainer.
 

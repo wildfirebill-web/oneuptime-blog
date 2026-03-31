@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, OpenFaaS, Serverless, Functions, Kubernetes
+Tags: Rancher, OpenFaaS, Serverless, Function, Kubernetes
 
 Description: Guide to deploying OpenFaaS serverless functions platform on Rancher for easy function-as-a-service workloads.
 

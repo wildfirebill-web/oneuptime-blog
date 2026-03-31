@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Networking, Troubleshooting, NetworkManager, Routes
+Tags: RHEL, Networking, Troubleshooting, NetworkManager, Route
 
 Description: Diagnose and fix the 'Network is unreachable' error on RHEL by checking interface status, IP configuration, routes, and DNS.
 

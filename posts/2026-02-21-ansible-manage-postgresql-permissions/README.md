@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, PostgreSQL, Permissions, Database Security
+Tags: Ansible, PostgreSQL, Permission, Database Security
 
 Description: Manage PostgreSQL permissions and privileges with Ansible to enforce least-privilege access control across all your database servers.
 

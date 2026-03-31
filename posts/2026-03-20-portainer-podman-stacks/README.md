@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Podman, Docker Compose, Stacks, Self-Hosted
+Tags: Portainer, Podman, Docker Compose, Stack, Self-Hosted
 
 Description: Deploy Docker Compose stacks to Podman environments using Portainer, leveraging Podman's Docker-compatible API for stack management.
 

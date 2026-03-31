@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Index, hint, Query Optimization, Performance
+Tags: MongoDB, Index, Hint, Query Optimization, Performance
 
 Description: Learn how to use MongoDB's hint() method to force the query planner to use a specific index, override suboptimal plan choices, and test index effectiveness.
 

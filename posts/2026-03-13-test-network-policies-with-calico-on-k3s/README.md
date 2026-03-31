@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Network Policy, K3s, Security
+Tags: Calico, Kubernetes, Networking, Network Policy, k3s, Security
 
 Description: Learn how to create and test Kubernetes network policies enforced by Calico on a K3s cluster for edge and IoT environments.
 

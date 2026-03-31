@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Storage
+Tags: Podman, Container, DevOps, Volumes, Storage
 
 Description: Learn how to list and filter Podman volumes using podman volume list with formatting options, filters, and scripting patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Compression, Snappy, LZ4, Zstd, Performance
+Tags: Rook, Ceph, Compression, Snappy, LZ4, ZSTD, Performance
 
 Description: Learn how to choose the right compression algorithm for your Ceph workload by comparing snappy, zlib, lz4, and zstd on speed, compression ratio, and CPU usage.
 

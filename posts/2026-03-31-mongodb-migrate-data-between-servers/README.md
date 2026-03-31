@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Migration, mongodump, mongorestore, Data Transfer
+Tags: MongoDB, Migration, Mongodump, mongorestore, Data Transfer
 
 Description: Migrate MongoDB data between servers using mongodump, mongorestore, or live sync methods with minimal downtime for your application.
 

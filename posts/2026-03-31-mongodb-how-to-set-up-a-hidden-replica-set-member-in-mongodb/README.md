@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, Hidden Member, Backup, Operations
+Tags: MongoDB, Replica Set, Hidden Member, Backup, Operation
 
 Description: Configure a hidden MongoDB replica set member for dedicated backup or analytics workloads without exposing it to application clients.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Infrastructure as Code, IaC, Azure Functions, Serverless
+Tags: OpenTofu, Azure, Infrastructure as Code, IaC, Azure Function, Serverless
 
 Description: Learn how to deploy Azure Functions with consumption and premium plans, storage accounts, and application insights using OpenTofu.
 

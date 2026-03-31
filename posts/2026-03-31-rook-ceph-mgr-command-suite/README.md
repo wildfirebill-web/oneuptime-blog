@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, CLI, Manager, MGR, Module, Operations
+Tags: Rook, Ceph, CLI, Manager, MGR, Module, Operation
 
 Description: Use the ceph mgr commands to manage Ceph Manager modules, check daemon health, and enable monitoring and dashboard features.
 

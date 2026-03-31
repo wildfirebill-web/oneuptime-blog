@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Privileged Mode
+Tags: Podman, Container, DevOps, Security, Privileged Mode
 
 Description: Understand when and how to run containers in privileged mode with Podman, including the security implications and safer alternatives.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Monitoring, AWS, CloudWatch, Metrics
+Tags: Flux CD, GitOps, Kubernetes, Monitoring, AWS, CloudWatch, Metric
 
 Description: Learn how to export Flux CD reconciliation metrics to AWS CloudWatch for monitoring GitOps pipelines in AWS environments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, OpenTelemetry, Observability, Tracing, Metrics, Kubernetes
+Tags: Istio, OpenTelemetry, Observability, Tracing, Metric, Kubernetes
 
 Description: A complete guide to integrating OpenTelemetry with Istio for unified metrics, traces, and telemetry collection across your service mesh.
 

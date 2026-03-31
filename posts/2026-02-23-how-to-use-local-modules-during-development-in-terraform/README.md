@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Development, Local Modules, Workflow
+Tags: Terraform, Module, Development, Local Modules, Workflow
 
 Description: Learn how to use local module sources during Terraform development for faster iteration, testing, and debugging before publishing to a registry or Git repository.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, PHP, Symfony, Console, Commands, CLI, Tracing
+Tags: OpenTelemetry, PHP, Symfony, Console, Command, CLI, Tracing
 
 Description: Learn how to instrument Symfony console commands with OpenTelemetry to gain visibility into CLI operations, batch jobs, and scheduled tasks with distributed tracing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Configuration, Feature Flag, Microservice, Sdk
+Tags: Dapr, Go, Configuration, Feature Flag, Microservice, SDK
 
 Description: Read and subscribe to dynamic configuration values in Go applications using the Dapr Configuration building block backed by Redis or Kubernetes ConfigMaps.
 

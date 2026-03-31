@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Prometheus, Monitoring
+Tags: Calico, Kubernetes, Networking, Metric, Prometheus, Monitoring
 
 Description: A step-by-step guide to enabling Prometheus metrics for all Calico components including Felix, Typha, and kube-controllers for comprehensive networking observability.
 

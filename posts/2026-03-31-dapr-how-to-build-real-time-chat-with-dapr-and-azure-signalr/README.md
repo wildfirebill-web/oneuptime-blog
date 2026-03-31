@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Azure SignalR, Real-Time, WebSockets, Pub/Sub, Microservices
+Tags: Dapr, Azure SignalR, Real-Time, WebSocket, Pub/Sub, Microservice
 
 Description: Learn how to build a scalable real-time chat application using Dapr pub/sub for message routing and Azure SignalR Service for WebSocket delivery to browser clients.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Elixir, Distributed Tracing, Microservices, BEAM
+Tags: OpenTelemetry, Elixir, Distributed Tracing, Microservice, BEAM
 
 Description: Set up end-to-end distributed tracing across your Elixir microservices architecture using OpenTelemetry for complete visibility.
 

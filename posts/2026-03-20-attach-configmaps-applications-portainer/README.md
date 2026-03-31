@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMaps, Configuration Management, DevOps
+Tags: Portainer, Kubernetes, ConfigMap, Configuration Management, DevOps
 
 Description: Learn how to create ConfigMaps and attach them to Kubernetes applications as environment variables or mounted files in Portainer.
 

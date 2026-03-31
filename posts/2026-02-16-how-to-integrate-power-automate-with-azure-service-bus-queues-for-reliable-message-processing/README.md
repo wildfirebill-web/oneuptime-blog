@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Power Automate, Azure Service Bus, Message Queues, Reliable Messaging, Power Platform, Integration, Azure
+Tags: Power Automate, Azure Service Bus, Message Queue, Reliable Messaging, Power Platform, Integration, Azure
 
 Description: Integrate Power Automate with Azure Service Bus queues to build reliable, decoupled message processing workflows with dead-letter handling.
 

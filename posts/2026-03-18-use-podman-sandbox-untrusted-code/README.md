@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Security, Sandboxing, Isolation
+Tags: Podman, Container, Security, Sandboxing, Isolation
 
 Description: Learn how to use Podman to safely execute untrusted code in isolated containers with restricted resources, limited network access, and no ability to affect your host system.
 

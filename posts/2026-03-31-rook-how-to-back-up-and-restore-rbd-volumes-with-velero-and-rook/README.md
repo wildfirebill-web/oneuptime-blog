@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Velero, Backup, Restore, Kubernetes
 
-Description: Use Velero with the Ceph CSI VolumeSnapshotClass to back up and restore Rook RBD persistent volumes in Kubernetes.
+Description: Learn how to use Velero with Rook-Ceph to back up and restore Kubernetes persistent volumes backed by RBD block storage.
 
 ---
 

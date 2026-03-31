@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how JSONHas() checks for field existence and JSONLength() counts elements in JSON objects and arrays in ClickHouse, with practical examples for validation and filtering.
 

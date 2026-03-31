@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Kafka, Apache Kafka, Message Queues, Streaming, Event Streaming
+Tags: IPv6, Kafka, Apache Kafka, Message Queue, Streaming, Event Streaming
 
 Description: Learn how to configure Apache Kafka brokers to listen on IPv6 addresses, advertise IPv6 endpoints to clients, and form clusters with IPv6 inter-broker communication.
 

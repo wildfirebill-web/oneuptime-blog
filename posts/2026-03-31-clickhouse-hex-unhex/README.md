@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Encoding, String Function, Hex, Data Transformation
+Tags: ClickHouse, Encoding, String Function, HEX, Data Transformation
 
 Description: Learn how hex() converts integers and strings to hexadecimal representation and unhex() decodes hex strings back to binary in ClickHouse for encoding, hashing, and UUID workflows.
 

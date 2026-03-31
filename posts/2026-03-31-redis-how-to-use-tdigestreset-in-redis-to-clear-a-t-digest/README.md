@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, T-Digest, Reset, Data Management, Time Windows
+Tags: Redis, T-Digest, Reset, Data Management, Time Window
 
 Description: Learn how to use TDIGEST.RESET in Redis to clear all samples from a T-Digest while preserving the structure, ideal for rolling time windows.
 

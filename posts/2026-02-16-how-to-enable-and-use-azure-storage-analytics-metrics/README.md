@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Storage Analytics, Metrics, Monitoring, Performance, Azure Monitor, Capacity Planning
+Tags: Azure, Storage Analytics, Metric, Monitoring, Performance, Azure Monitor, Capacity Planning
 
 Description: How to enable Azure Storage Analytics metrics and use them to monitor performance, track usage, and identify issues in your storage accounts.
 

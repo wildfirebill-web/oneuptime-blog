@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Troubleshooting, Memory, Hardware, System Administration, Debugging, Signals
+Tags: Linux, Troubleshooting, Memory, Hardware, System Administration, Debugging, Signal
 
 Description: Learn how to diagnose and fix bus error (SIGBUS) errors in Linux, including memory alignment issues, memory-mapped file problems, and hardware failures.
 

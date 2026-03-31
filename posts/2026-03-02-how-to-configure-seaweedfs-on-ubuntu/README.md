@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, SeaweedFS, Distributed Storage, Object Storage, File Systems
+Tags: Ubuntu, SeaweedFS, Distributed Storage, Object Storage, File System
 
 Description: A practical guide to deploying and configuring SeaweedFS on Ubuntu, covering the master server, volume servers, filer, S3 API, and replication configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Mount, CLI
+Tags: Podman, Container, DevOps, Volumes, Mount, CLI
 
 Description: Learn the differences between the --mount and --volume flags in Podman and when to use each one.
 

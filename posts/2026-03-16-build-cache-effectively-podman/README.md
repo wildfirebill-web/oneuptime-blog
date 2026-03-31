@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Cache, Performance
+Tags: Podman, Container, DevOps, Container Image, Build, Cache, Performance
 
 Description: Learn how to optimize Podman build times by structuring Containerfiles for effective layer caching, reducing rebuilds and speeding up CI/CD pipelines.
 

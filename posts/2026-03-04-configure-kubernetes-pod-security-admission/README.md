@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kubernetes, Containers, Security, Linux
+Tags: RHEL, Kubernetes, Container, Security, Linux
 
 Description: Learn how to configure Kubernetes Pod Security Admission on RHEL with step-by-step instructions, configuration examples, and best practices.
 

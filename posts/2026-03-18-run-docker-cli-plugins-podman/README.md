@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, CLI Plugins, Compose, Buildx, Compatibility
+Tags: Podman, Container, DevOps, Docker, CLI Plugins, Compose, Buildx, Compatibility
 
 Description: Learn how to use Docker CLI plugins like Compose and Buildx with Podman through compatibility layers and alternative tools.
 

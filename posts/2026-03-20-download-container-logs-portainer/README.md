@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Logs, Download, Export
+Tags: Portainer, Docker, Log, Download, Export
 
 Description: Download and save Docker container logs from Portainer to a file for offline analysis or incident documentation.
 

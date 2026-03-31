@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, TCP, Sockets, IPv4, ServerSocket, Networking
+Tags: Java, TCP, Socket, IPv4, ServerSocket, Networking
 
 Description: Learn how to create a TCP server in Java using ServerSocket with IPv4 addressing to accept client connections and exchange data.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Configs, Compliance, Security, Governance
+Tags: AWS, CONFIG, Compliance, Security, Governance
 
 Description: Learn how to enable and configure AWS Config to continuously monitor and record your AWS resource configurations for compliance and security auditing.
 

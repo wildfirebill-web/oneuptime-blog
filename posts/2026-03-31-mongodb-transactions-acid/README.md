@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Transactions, ACID, Database, Data Integrity
+Tags: MongoDB, Transaction, ACID, Database, Data Integrity
 
 Description: Learn how MongoDB implements ACID transactions, when to use them, and how to execute single and multi-document transactions with proper error handling across collections.
 

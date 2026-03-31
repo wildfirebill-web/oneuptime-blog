@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, LaunchDarkly, Feature Flags
+Tags: ArgoCD, GitOps, Kubernetes, LaunchDarkly, Feature Flag
 
 Description: Learn how to integrate LaunchDarkly feature flag configuration with ArgoCD workflows including SDK key management, relay proxy deployment, and flag-aware deployments.
 

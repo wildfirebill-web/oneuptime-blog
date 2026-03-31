@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, RDS, Parameter Groups, Database, Infrastructure as Code
+Tags: OpenTofu, AWS, RDS, Parameter Group, Database, Infrastructure as Code
 
 Description: Learn how to create and apply custom RDS parameter groups using OpenTofu to tune database engine settings.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Transaction, Write concern, Durability, Replica set
+Tags: MongoDB, Transaction, Write Concern, Durability, Replica Set
 
 Description: Learn how to configure write concern in MongoDB transactions to control durability guarantees, from fast unacknowledged writes to majority-replicated durable commits.
 

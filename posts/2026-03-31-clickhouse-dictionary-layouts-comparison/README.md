@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Dictionary, HASHED, RANGE_HASHED, CACHE, Memory, Lookup
+Tags: ClickHouse, Dictionary, HASHED, RANGE_HASHED, Cache, Memory, Lookup
 
 Description: A comparison of ClickHouse dictionary layout types - flat, hashed, range_hashed, cache, ssd_cache, and ip_trie - with memory and performance characteristics.
 

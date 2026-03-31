@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Join, Null, Configuration, Query
+Tags: ClickHouse, Join, NULL, Configuration, Query
 
 Description: Learn how join_use_nulls changes NULL behavior in ClickHouse JOINs, how it affects LEFT and RIGHT joins, and when to enable it for SQL compatibility.
 

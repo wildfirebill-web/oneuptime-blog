@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Performance, Backend, Async, Message Queues, Optimization
+Tags: Performance, Backend, Async, Message Queue, Optimization
 
 Description: Learn async processing patterns to handle time-consuming tasks without blocking user requests.
 

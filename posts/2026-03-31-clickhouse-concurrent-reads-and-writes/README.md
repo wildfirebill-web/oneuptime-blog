@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Concurrency, MergeTree, INSERT, SELECT, Performance
+Tags: ClickHouse, Concurrency, MergeTree, Insert, SELECT, Performance
 
 Description: Learn how ClickHouse handles concurrent reads and writes using its append-only MergeTree model and how to configure it for high-throughput workloads.
 

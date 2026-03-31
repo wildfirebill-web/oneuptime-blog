@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Git
+Tags: OpenTofu, Terraform, IaC, Module, Git
 
 Description: Learn how to reference specific subdirectories within a module package source in OpenTofu using the double-slash notation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, TCP, Binary, Sockets, POSIX, Networking
+Tags: C, IPv4, TCP, Binary, Socket, POSIX, Networking
 
 Description: Learn how to reliably send and receive structured binary data over IPv4 TCP sockets in C using length-prefix framing, network byte order, and loop-based recv/send to handle partial reads.
 

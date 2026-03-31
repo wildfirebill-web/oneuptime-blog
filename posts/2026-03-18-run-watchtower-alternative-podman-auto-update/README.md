@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Auto-Update, Watchtower, Containers, Linux, DevOps, Automation, Systemd
+Tags: Podman, Auto-Update, Watchtower, Container, Linux, DevOps, Automation, Systemd
 
 Description: Learn how to use Podman's built-in auto-update feature as a native alternative to Watchtower for automatically keeping your containers up to date.
 

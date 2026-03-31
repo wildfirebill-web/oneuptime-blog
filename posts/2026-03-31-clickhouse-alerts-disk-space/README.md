@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Alert, Disk Space, Monitoring, Operations
+Tags: ClickHouse, Alert, Disk Space, Monitoring, Operation
 
 Description: Set up disk space alerts in ClickHouse using system tables and external monitoring tools to prevent disk-full conditions that cause data loss or write failures.
 

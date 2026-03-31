@@ -1,6 +1,6 @@
 # How to Use ST_Buffer() in MySQL
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, SQL, Spatial, GIS, ST_Buffer, Database
 

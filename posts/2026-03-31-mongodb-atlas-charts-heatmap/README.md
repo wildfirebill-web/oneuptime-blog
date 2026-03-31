@@ -28,7 +28,7 @@ For this guide, use the `sample_mflix.movies` collection or a custom events coll
 
 A heatmap requires two categorical (or date binned) dimensions and one numeric measure:
 
-```
+```text
 X Axis:  released     (Date field, Granularity: Month)
 Y Axis:  genres       (Category)
 Intensity: _id        (Aggregation: Count)
@@ -72,7 +72,7 @@ Use a custom aggregation pipeline to extract hour and day:
 ```
 
 Then map:
-```
+```text
 X Axis:     _id.hour         (Numeric - 0 to 23)
 Y Axis:     _id.dayOfWeek    (Numeric - 1 to 7)
 Intensity:  requestCount     (Sum)

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, GitOps, Automation
+Tags: Portainer, Docker, Stack, GitOps, Automation
 
 Description: Learn how to deploy Docker Compose stacks directly from a Git repository in Portainer, including configuration options for branch selection, compose file paths, and authentication.
 

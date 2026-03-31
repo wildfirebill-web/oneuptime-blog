@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Lifecycle, Zero Downtime, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, Lifecycle, Zero Downtime, Infrastructure as Code, DevOps
 
 Description: A guide to using the create_before_destroy lifecycle argument in OpenTofu to achieve zero-downtime resource replacement.
 

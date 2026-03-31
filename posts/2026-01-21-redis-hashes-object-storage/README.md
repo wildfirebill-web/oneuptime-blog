@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Hashes, Data Structures, Object Storage, HSET, HGET, Memory Optimization
+Tags: Redis, Hash, Data Structure, Object Storage, HSET, HGET, Memory Optimization
 
 Description: A comprehensive guide to using Redis Hashes for efficient object storage, covering HSET, HGET, HMSET commands, memory optimization techniques, and practical examples in Python, Node.
 

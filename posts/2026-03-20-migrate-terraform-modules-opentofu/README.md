@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, Migration, Infrastructure as Code
+Tags: OpenTofu, Terraform, Module, Migration, Infrastructure as Code
 
 Description: Learn how to migrate existing Terraform modules to OpenTofu - updating module sources, handling registry differences, and validating compatibility with OpenTofu-specific features.
 

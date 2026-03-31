@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, String
+Tags: OpenTofu, Terraform, IaC, Function, String
 
 Description: Learn how to use chomp, lower, upper, and title string functions in OpenTofu to manipulate text in your infrastructure configurations.
 

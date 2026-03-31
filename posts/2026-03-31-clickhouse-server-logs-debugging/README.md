@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Logging, Debugging, Troubleshooting, Operations
+Tags: ClickHouse, Logging, Debugging, Troubleshooting, Operation
 
 Description: Learn how to use ClickHouse server logs to diagnose errors, slow queries, replication issues, and startup failures with practical examples.
 

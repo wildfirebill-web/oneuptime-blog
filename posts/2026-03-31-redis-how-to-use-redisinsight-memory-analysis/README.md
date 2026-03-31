@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Redisinsight, Memory Analysis, Performance, Optimization
+Tags: Redis, RedisInsight, Memory Analysis, Performance, Optimization
 
 Description: Use RedisInsight's Memory Analysis tools to identify large keys, analyze memory distribution by key pattern, and reduce Redis memory usage.
 

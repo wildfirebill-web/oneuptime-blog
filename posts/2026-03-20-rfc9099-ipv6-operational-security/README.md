@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Security, RFC 9099, Operations, Best Practice
+Tags: IPv6, Security, RFC 9099, Operation, Best Practice
 
 Description: Understand the operational security considerations for IPv6 networks as defined by RFC 9099, covering infrastructure protection, filtering, and deployment guidance.
 

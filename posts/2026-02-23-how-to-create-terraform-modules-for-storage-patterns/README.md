@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Storage, S3, RDS, EBS, Infrastructure as Code
+Tags: Terraform, Module, Storage, S3, RDS, EBS, Infrastructure as Code
 
 Description: Build reusable Terraform modules for common storage patterns including S3 buckets, RDS databases, EFS file systems, and DynamoDB tables with security best practices.
 

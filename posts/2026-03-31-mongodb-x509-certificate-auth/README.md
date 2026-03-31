@@ -1,6 +1,6 @@
 # How to Configure MongoDB x.509 Certificate Authentication
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, x509, Authentication, Security, TLS
 

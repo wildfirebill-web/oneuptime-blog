@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Packet Structure, Networking, Protocol, Headers
+Tags: IPv6, Packet Structure, Networking, Protocol, Header
 
 Description: Understand the fixed 40-byte IPv6 header format, including all fields, their sizes, and how they differ from the variable-length IPv4 header.
 

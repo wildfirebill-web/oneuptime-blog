@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Azure, ACI, Cloud, Regions
+Tags: Portainer, Azure, ACI, Cloud, Region
 
 Description: Learn how to choose the right Azure regions for deploying containers via Portainer's ACI integration, considering latency, data residency, and cost implications.
 

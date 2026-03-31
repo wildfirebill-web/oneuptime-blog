@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, Hooks, Lifecycle
+Tags: Helm, Kubernetes, Hook, Lifecycle
 
 Description: A comprehensive guide to mastering Helm hooks for advanced deployment scenarios, including database migrations, backup strategies, canary deployments, and troubleshooting techniques.
 

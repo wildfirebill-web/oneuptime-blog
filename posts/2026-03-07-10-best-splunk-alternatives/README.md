@@ -2,7 +2,7 @@
 
 Author: [mallersjamie](https://www.github.com/mallersjamie)
 
-Tags: Observability, Monitoring, Comparison, Open Source, Logs
+Tags: Observability, Monitoring, Comparison, Open Source, Log
 
 Description: Splunk is powerful but expensive. Here are 10 alternatives worth evaluating in 2026 - from open source to managed platforms.
 

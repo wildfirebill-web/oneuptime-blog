@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Security, Mtls, Certificate Authority, Kubernetes
+Tags: Dapr, Security, mTLS, Certificate Authority, Kubernetes
 
 Description: Configure Dapr to use a custom certificate authority for mTLS instead of the default self-signed CA for enterprise PKI integration.
 

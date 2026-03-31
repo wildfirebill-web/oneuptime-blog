@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Recommender, Cloud Scheduler, Cost Optimization, Automation, Cloud Functions, FinOps
+Tags: GCP, Recommender, Cloud Scheduler, Cost Optimization, Automation, Cloud Function, FinOps
 
 Description: Learn how to automatically detect and clean up idle GCP resources using the Recommender API with Cloud Scheduler and Cloud Functions to reduce wasted cloud spending.
 

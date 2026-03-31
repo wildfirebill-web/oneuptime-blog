@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Fedora CoreOS, Containers, DevOps, Linux
+Tags: Podman, Fedora CoreOS, Container, DevOps, Linux
 
 Description: Learn how to use Podman on Fedora CoreOS, an automatically updating, minimal operating system designed for running containerized workloads at scale.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Debugging, Networking, DNS
+Tags: Podman, Container, DevOps, Debugging, Networking, DNS
 
 Description: Learn how to diagnose and resolve DNS resolution failures inside Podman containers, including custom DNS configuration, network isolation issues, and inter-container name resolution.
 

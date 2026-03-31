@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, TLS, SSL, Security, Encryption, Operations
+Tags: MongoDB, TLS, SSL, Security, Encryption, Operation
 
 Description: Step-by-step guide to enabling TLS/SSL encryption for MongoDB connections, generating certificates, configuring mongod.conf, and connecting clients securely.
 

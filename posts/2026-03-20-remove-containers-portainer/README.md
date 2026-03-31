@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Remove, Cleanup, Containers
+Tags: Portainer, Docker, Remove, Cleanup, Container
 
 Description: Remove stopped and running Docker containers in Portainer individually or in bulk.
 

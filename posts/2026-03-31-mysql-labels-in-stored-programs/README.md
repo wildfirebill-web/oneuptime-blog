@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Label, Stored Procedure, Loop
+Tags: MySQL, LABEL, Stored Procedure, Loop
 
 Description: Learn how to use labels in MySQL stored procedures and functions to name BEGIN...END blocks and loops, enabling targeted LEAVE and ITERATE flow control.
 

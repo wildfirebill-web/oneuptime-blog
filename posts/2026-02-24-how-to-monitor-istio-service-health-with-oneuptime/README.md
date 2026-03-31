@@ -1,6 +1,6 @@
 # How to Monitor Istio Service Health with OneUptime
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, OneUptime, Monitoring, Health Check, Service Mesh
 

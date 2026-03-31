@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Deployment, Workloads
+Tags: Rancher, Kubernetes, Deployment, Workload
 
 Description: Learn how to deploy a Deployment workload in Rancher using both the UI and kubectl, including replica configuration and rolling update strategies.
 

@@ -1,8 +1,8 @@
 # How to Build a Smart Home Data Platform with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, IoT, Smart home, Analytics, Tutorial, Time-series
+Tags: ClickHouse, IoT, Smart Home, Analytics, Tutorial, Time-Series
 
 Description: Build a smart home data platform with ClickHouse - covering device telemetry ingestion, energy consumption analysis, automation rule analytics, anomaly detection, and multi-home reporting.
 

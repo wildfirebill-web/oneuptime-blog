@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, Infrastructure as Code, Modules
+Tags: Terraform, Troubleshooting, Infrastructure as Code, Module
 
 Description: Troubleshoot and fix Terraform module output mismatch errors including missing outputs, type mismatches, and incorrect references between modules.
 

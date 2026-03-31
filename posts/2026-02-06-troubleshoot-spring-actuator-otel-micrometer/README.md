@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Spring Boot, Micrometer, Metrics
+Tags: OpenTelemetry, Spring Boot, Micrometer, Metric
 
 Description: Fix missing Spring Boot Actuator metrics when switching from Micrometer to OpenTelemetry and ensure both systems work together.
 

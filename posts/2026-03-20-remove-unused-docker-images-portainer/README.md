@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Cleanup, Storage
+Tags: Portainer, Docker, Image, Cleanup, Storage
 
 Description: Clean up unused and dangling Docker images in Portainer to reclaim disk space.
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage, Monitor, PVC
 
-Description: Configure VolumeClaimTemplates for Ceph Monitor storage in Rook-Ceph to persist Mon data on cloud block volumes instead of the node's hostPath filesystem.
+Description: Configure VolumeClaimTemplates for Ceph Monitor storage in Rook-Ceph to persist Mon data on cloud block volumes instead of the node host filesystem.
 
 ---
 

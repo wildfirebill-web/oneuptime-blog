@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SQS, Message Queues, Batch Processing, Node.js, Python, Performance, Cloud
+Tags: AWS, SQS, Message Queue, Batch Processing, Node.js, Python, Performance, Cloud
 
 Description: Learn how to batch operations in Amazon SQS to improve throughput, reduce costs, and optimize performance. Covers batch sending, receiving, deleting, and best practices for production workloads.
 

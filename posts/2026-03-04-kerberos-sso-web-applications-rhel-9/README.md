@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kerberos, SSO, Web Applications, Linux
+Tags: RHEL, Kerberos, SSO, Web Application, Linux
 
 Description: A practical guide to enabling Kerberos-based single sign-on for web applications on RHEL using mod_auth_gssapi with Apache, including browser configuration and troubleshooting.
 

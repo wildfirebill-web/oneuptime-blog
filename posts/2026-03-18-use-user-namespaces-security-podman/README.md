@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, User Namespaces, Rootless
+Tags: Podman, Container, DevOps, Security, User Namespaces, Rootless
 
 Description: Learn how to leverage user namespaces in Podman to map container root to unprivileged host users and prevent privilege escalation.
 

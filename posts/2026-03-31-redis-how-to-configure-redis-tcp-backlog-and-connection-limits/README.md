@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Configuration, TCP, Connection Limits, Performance
+Tags: Redis, Configuration, TCP, Connection Limit, Performance
 
 Description: Learn how to configure Redis TCP backlog and connection limits to handle high-concurrency workloads and prevent connection queue overflow.
 

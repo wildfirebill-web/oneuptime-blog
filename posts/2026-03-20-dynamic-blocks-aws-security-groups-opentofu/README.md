@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, AWS, Security Groups, Dynamic Blocks, HCL
+Tags: OpenTofu, Terraform, AWS, Security Group, Dynamic Blocks, HCL
 
 Description: Learn how to use dynamic blocks in OpenTofu to generate AWS security group ingress and egress rules from variable lists, eliminating repetitive rule definitions.
 

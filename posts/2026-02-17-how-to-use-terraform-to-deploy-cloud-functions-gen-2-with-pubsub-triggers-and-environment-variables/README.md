@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Terraform, Cloud Functions, Pub/Sub, Serverless, Google Cloud Platform
+Tags: GCP, Terraform, Cloud Function, Pub/Sub, Serverless, Google Cloud Platform
 
 Description: Deploy Google Cloud Functions 2nd generation with Pub/Sub event triggers and environment variables using Terraform, including source code packaging and IAM configuration.
 

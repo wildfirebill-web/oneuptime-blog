@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Image Management
+Tags: Podman, Container, DevOps, Configuration, Image Management
 
 Description: Learn how to configure the default image pull policy in containers.conf to control when Podman downloads container images.
 

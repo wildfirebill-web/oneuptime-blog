@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how JSONExtractKeysAndValues() returns all key-value pairs from a JSON object as an Array of tuples in ClickHouse, enabling dynamic key iteration and pivot queries.
 

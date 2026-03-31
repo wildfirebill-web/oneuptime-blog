@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Prometheus, Metrics, Monitoring
+Tags: Observability, Prometheus, Metric, Monitoring
 
 Description: Learn how to design histogram buckets for effective latency and distribution measurements in Prometheus monitoring.
 

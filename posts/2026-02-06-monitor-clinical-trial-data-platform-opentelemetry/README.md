@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Clinical Trials, EDC, Data Collection
+Tags: OpenTelemetry, Clinical Trial, EDC, Data Collection
 
 Description: Monitor clinical trial data collection platforms with OpenTelemetry to ensure data integrity, track form submission latency, and maintain audit trails.
 

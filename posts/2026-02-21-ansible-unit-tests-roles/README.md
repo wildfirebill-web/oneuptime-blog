@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Testing, Role, Unit Tests, Molecule
+Tags: Ansible, Testing, Role, Unit Test, Molecule
 
 Description: Write unit tests for Ansible roles using Molecule, pytest, and YAML-based assertions to validate role behavior in isolation.
 

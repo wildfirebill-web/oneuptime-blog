@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Templates, Docker, Best Practice, Self-Service, DevOps, App Templates
+Tags: Portainer, Template, Docker, Best Practice, Self-Service, DevOps, App Templates
 
 Description: Build and manage application templates in Portainer to enable developer self-service, standardize deployments, and reduce configuration errors across your organization.
 

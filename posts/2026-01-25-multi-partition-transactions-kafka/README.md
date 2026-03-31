@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Transactions, Atomicity, Data Consistency, Distributed Systems
+Tags: Kafka, Transaction, Atomicity, Data Consistency, Distributed System
 
 Description: Learn how to use Kafka transactions to atomically write messages across multiple partitions and topics, ensuring all-or-nothing delivery for complex event publishing scenarios.
 

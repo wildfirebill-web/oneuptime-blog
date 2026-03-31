@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Redis, State Management, Cluster, High Availability, Microservices
+Tags: Dapr, Redis, State Management, Cluster, High Availability, Microservice
 
 Description: Learn how to configure Redis Cluster Mode as a Dapr state store for horizontal scalability, high availability, and fault tolerance in production environments.
 

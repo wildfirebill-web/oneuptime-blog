@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: mTLS, Security, OpenTofu, Mutual TLS, Service Mesh, Certificates, PKI
+Tags: mTLS, Security, OpenTofu, Mutual TLS, Service Mesh, Certificate, PKI
 
 Description: Learn how to implement mutual TLS (mTLS) between services using OpenTofu with a private PKI, certificate management, and service mesh integration.
 

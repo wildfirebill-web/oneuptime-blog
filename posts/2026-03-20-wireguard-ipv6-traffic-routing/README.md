@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WireGuard, IPv6, Routing, VPN, AllowedIPs, Networks
+Tags: WireGuard, IPv6, Routing, VPN, AllowedIPs, Network
 
 Description: A guide to configuring WireGuard's AllowedIPs to route IPv6 traffic through WireGuard tunnels, including full tunnel, split tunnel, and specific prefix routing.
 

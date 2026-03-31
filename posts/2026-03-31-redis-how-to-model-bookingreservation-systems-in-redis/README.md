@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Booking Systems, Reservations, Lua Scripts, Distributed Locks
+Tags: Redis, Booking Systems, Reservation, Lua Script, Distributed Lock
 
 Description: Learn how to model a booking and reservation system in Redis with atomic slot management, conflict prevention, and TTL-based holds.
 

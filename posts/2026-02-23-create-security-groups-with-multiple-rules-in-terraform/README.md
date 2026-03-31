@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Security Groups, VPC, Networking
+Tags: Terraform, AWS, Security Group, VPC, Networking
 
 Description: A practical guide to creating AWS security groups with multiple ingress and egress rules in Terraform, covering inline rules, separate rule resources, and dynamic rule generation.
 

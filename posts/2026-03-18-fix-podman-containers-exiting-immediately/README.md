@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Debugging, DevOps, Linux
+Tags: Podman, Container, Debugging, DevOps, Linux
 
 Description: Learn why Podman containers exit immediately after starting and how to fix common causes including missing foreground processes, entrypoint issues, and signal handling problems.
 

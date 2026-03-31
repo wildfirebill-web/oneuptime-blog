@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, CSV, Import, mongoimport, Data loading
+Tags: MongoDB, CSV, Import, Mongoimport, Data Loading
 
 Description: Learn how to import CSV files into MongoDB using mongoimport, the Node.js driver, and Python PyMongo, including type coercion and upsert strategies.
 

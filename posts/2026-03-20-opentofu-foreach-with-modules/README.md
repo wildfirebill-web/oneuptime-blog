@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, for_each
+Tags: OpenTofu, Terraform, IaC, Module, for_each
 
 Description: Learn how to use for_each with modules in OpenTofu to create multiple instances of a module from a map or set of strings.
 

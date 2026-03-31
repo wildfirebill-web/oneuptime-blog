@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Security, PII Masking, Traces, Data Privacy, PCI DSS, Collector
+Tags: OpenTelemetry, Security, PII Masking, Trace, Data Privacy, PCI DSS, Collector
 
 Description: Step-by-step guide to masking credit card numbers and email addresses in OpenTelemetry spans using SDK-level processors and Collector configuration.
 

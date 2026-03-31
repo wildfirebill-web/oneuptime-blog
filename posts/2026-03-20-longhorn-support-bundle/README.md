@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Support Bundle, Troubleshooting, Kubernetes, Diagnostics, SUSE Rancher
+Tags: Longhorn, Support Bundle, Troubleshooting, Kubernetes, Diagnostic, SUSE Rancher
 
 Description: Learn how to use Longhorn's support bundle feature to collect comprehensive diagnostic information including logs, configurations, and volume status for troubleshooting and support escalations.
 

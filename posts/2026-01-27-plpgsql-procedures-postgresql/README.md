@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, PL/pgSQL, Stored Procedures, Functions, Database Programming, SQL
+Tags: PostgreSQL, PL/pgSQL, Stored Procedure, Function, Database Programming, SQL
 
 Description: Learn how to write business logic with PL/pgSQL procedures and functions in PostgreSQL.
 

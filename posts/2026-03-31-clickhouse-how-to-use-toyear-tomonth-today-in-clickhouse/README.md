@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Date Functions, toYear, toMonth, toDay, Time Series
+Tags: ClickHouse, Date Function, toYear, toMonth, toDay, Time Series
 
 Description: Learn how to use toYear(), toMonth(), and toDay() functions in ClickHouse to extract date components for grouping, filtering, and time-based analytics.
 

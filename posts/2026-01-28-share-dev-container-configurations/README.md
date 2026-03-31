@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dev Containers, Docker, VS Code, Team Collaboration, DevOps, Configuration Management
+Tags: Dev Container, Docker, VS Code, Team Collaboration, DevOps, Configuration Management
 
 Description: Learn strategies for sharing Dev Container configurations across projects and teams, from repository-based sharing to centralized template registries.
 

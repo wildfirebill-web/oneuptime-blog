@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Replication, Binary Log, InnoDB, Internals
+Tags: MySQL, Replication, Binary Log, InnoDB, Internal
 
 Description: Learn how MySQL replication works internally including the binary log, IO thread, SQL thread, GTID tracking, and how replicas stay synchronized with the primary.
 

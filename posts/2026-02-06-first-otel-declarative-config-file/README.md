@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Declarative Configuration, Traces, Metrics, Logs
+Tags: OpenTelemetry, Declarative Configuration, Trace, Metric, Log
 
 Description: A step-by-step guide to writing your first OpenTelemetry declarative YAML configuration with trace, metric, and log pipelines.
 

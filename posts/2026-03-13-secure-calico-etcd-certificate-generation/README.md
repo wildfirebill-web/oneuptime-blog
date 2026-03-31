@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, etcd, TLS, Certificates, Security, PKI
+Tags: Calico, Kubernetes, Networking, etcd, TLS, Certificate, Security, PKI
 
 Description: Best practices for securing the Calico etcd certificate generation process, including PKI design, key protection, and certificate lifecycle security controls.
 

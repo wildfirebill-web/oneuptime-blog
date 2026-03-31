@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure Patterns, API Gateway, AWS, Microservices, REST API
+Tags: Terraform, Infrastructure Patterns, API Gateway, AWS, Microservice, REST API
 
 Description: A hands-on guide to building a production-ready API Gateway infrastructure with Terraform including custom domains, rate limiting, authentication, and monitoring.
 

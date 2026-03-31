@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, DORA Metrics, Grafana
+Tags: ArgoCD, GitOps, Kubernetes, DORA Metric, Grafana
 
 Description: Build a comprehensive DORA metrics dashboard for ArgoCD that tracks deployment frequency, lead time, change failure rate, and mean time to recovery in Grafana.
 

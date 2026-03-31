@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Lifecycle, Ignore_changes, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, Lifecycle, Ignore_changes, Infrastructure as Code, DevOps
 
 Description: A guide to using ignore_changes lifecycle in OpenTofu to prevent specific resource attributes from being managed by OpenTofu after initial creation.
 

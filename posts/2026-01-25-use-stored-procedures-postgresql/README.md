@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Stored Procedures, SQL, Database, PL/pgSQL, Performance
+Tags: PostgreSQL, Stored Procedure, SQL, Database, PL/pgSQL, Performance
 
 Description: Learn how to create and use stored procedures in PostgreSQL. This guide covers procedure creation, parameter handling, transaction control, and best practices for production use.
 

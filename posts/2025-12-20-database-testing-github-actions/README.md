@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Database Testing, CI/CD, PostgreSQL, MySQL, MongoDB, Testing
+Tags: GitHub Action, Database Testing, CI/CD, PostgreSQL, MySQL, MongoDB, Testing
 
 Description: Learn how to run database integration tests in GitHub Actions using service containers. This guide covers PostgreSQL, MySQL, MongoDB setup, migrations, and test isolation strategies.
 

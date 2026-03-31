@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure Patterns, Feature Flags, Progressive Delivery, AWS AppConfig, DevOps
+Tags: Terraform, Infrastructure Patterns, Feature Flag, Progressive Delivery, AWS AppConfig, DevOps
 
 Description: Learn how to build feature flag infrastructure with Terraform using AWS AppConfig, DynamoDB for flag storage, real-time evaluation, and gradual rollout capabilities.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Enabled, Meta-Arguments, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, Enabled, Meta-Arguments, Infrastructure as Code, DevOps
 
 Description: A guide to using the enabled meta-argument in OpenTofu to conditionally enable or disable resources and data sources.
 

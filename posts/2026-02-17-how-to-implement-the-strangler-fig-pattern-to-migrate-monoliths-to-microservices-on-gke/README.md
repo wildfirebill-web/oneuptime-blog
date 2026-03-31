@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, GKE, Kubernetes, Strangler Fig Pattern, Microservices, Migration
+Tags: GCP, GKE, Kubernetes, Strangler Fig Pattern, Microservice, Migration
 
 Description: A practical guide to incrementally migrating a monolithic application to microservices on Google Kubernetes Engine using the Strangler Fig pattern with traffic routing.
 

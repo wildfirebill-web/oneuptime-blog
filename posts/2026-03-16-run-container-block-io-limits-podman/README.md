@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Block IO, Resource Limits, Performance
+Tags: Podman, Container, DevOps, Block IO, Resource Limit, Performance
 
 Description: Learn how to set block I/O throughput and IOPS limits on Podman containers to prevent disk saturation and ensure fair I/O distribution.
 

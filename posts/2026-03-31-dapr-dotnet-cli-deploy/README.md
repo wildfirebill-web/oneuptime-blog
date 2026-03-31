@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Cli, Deployment, Local Development, Microservice
+Tags: Dapr, DotNet, CLI, Deployment, Local Development, Microservice
 
 Description: Use the Dapr CLI to run, debug, and manage Dapr .NET applications locally with sidecar injection, component loading, and multi-app orchestration.
 

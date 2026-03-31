@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Spring Apps, Spring Boot, Java, Cloud Deployment, Microservices, DevOps
+Tags: Azure, Spring Apps, Spring Boot, Java, Cloud Deployment, Microservice, DevOps
 
 Description: A practical guide to deploying a Spring Boot application to Azure Spring Apps with build configuration, environment setup, and production-ready settings.
 

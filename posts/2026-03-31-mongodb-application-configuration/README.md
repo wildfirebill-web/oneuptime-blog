@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Configuration, Settings, Change Stream, Cache
+Tags: MongoDB, Configuration, Setting, Change Stream, Cache
 
 Description: Learn how to store dynamic application configuration in MongoDB with real-time updates via change streams, type coercion, and environment-specific overrides.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Topology, Nodes, Operations
+Tags: Redis, Cluster, Topology, Node, Operation
 
 Description: Learn how to use CLUSTER NODES in Redis to inspect the full cluster topology, node roles, slot assignments, and replication relationships.
 

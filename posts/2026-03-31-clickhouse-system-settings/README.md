@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Settings, Configuration, System Table, Administration
+Tags: ClickHouse, Setting, Configuration, System Table, Administration
 
 Description: Learn how to query system.settings to view current setting values, find changed defaults, understand setting types, and audit session and profile configuration.
 

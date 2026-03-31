@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Incident Management, SRE, Escalation, Operations
+Tags: Incident Management, SRE, Escalation, Operation
 
 Description: Learn how to implement escalation paths for incidents that need additional attention.
 

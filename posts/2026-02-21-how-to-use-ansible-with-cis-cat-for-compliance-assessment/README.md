@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, CIS-CAT, Compliance, Benchmarks, Security
+Tags: Ansible, CIS-CAT, Compliance, Benchmark, Security
 
 Description: Automate CIS-CAT compliance assessments with Ansible for CIS benchmark scoring and remediation.
 

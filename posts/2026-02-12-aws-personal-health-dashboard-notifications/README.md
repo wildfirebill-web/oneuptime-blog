@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Health Dashboard, Notifications, EventBridge, Monitoring
+Tags: AWS, Health Dashboard, Notification, EventBridge, Monitoring
 
 Description: Configure automated notifications from AWS Personal Health Dashboard so your team gets alerted about service events, scheduled maintenance, and issues affecting your resources.
 

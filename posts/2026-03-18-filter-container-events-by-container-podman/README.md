@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Filtering, Debugging
+Tags: Podman, Container, DevOps, Monitoring, Event, Filtering, Debugging
 
 Description: Learn how to filter Podman events by specific container name or ID to isolate and monitor individual container activity.
 

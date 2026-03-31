@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Sentry, Error Tracking, Monitoring
+Tags: Flux CD, GitOps, Kubernetes, Notification, Sentry, Error Tracking, Monitoring
 
 Description: Learn how to configure Flux CD's notification controller to send deployment and reconciliation events to Sentry using the Provider resource.
 

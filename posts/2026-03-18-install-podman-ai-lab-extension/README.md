@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, AI, Machine Learning, Podman Desktop, AI Lab
+Tags: Podman, Container, DevOps, AI, Machine Learning, Podman Desktop, AI Lab
 
 Description: Learn how to install and set up the Podman AI Lab extension in Podman Desktop for running local AI models and experiments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Java, Client, Sdk, Microservice, Api
+Tags: Dapr, Java, Client, SDK, Microservice, API
 
 Description: Explore the Dapr Java client API for state management, service invocation, pub/sub, secrets, and configuration with both blocking and reactive usage patterns.
 

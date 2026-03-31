@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Telegram, Messaging, Monitoring
+Tags: Flux CD, GitOps, Kubernetes, Notification, Telegram, Messaging, Monitoring
 
 Description: Learn how to configure Flux CD's notification controller to send deployment and reconciliation alerts to Telegram chats using the Provider resource.
 

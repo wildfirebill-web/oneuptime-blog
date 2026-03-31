@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps, Apple Silicon, Rosetta
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps, Apple Silicon, Rosetta
 
 Description: Learn how to enable Apple Rosetta translation in Podman machines to run x86_64 containers natively on Apple Silicon Macs with near-native performance.
 

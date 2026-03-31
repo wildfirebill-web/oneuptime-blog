@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Node.js, Sessions, Express, Authentication
+Tags: Redis, Node.js, Session, Express, Authentication
 
 Description: Learn how to build a scalable session store in Node.js using Redis and connect-redis, replacing in-memory sessions for multi-instance deployments.
 

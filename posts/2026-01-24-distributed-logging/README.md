@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Distributed Logging, Microservices, ELK Stack, Observability, Log Aggregation, Correlation ID, Structured Logging, Fluentd
+Tags: Distributed Logging, Microservice, ELK Stack, Observability, Log Aggregation, Correlation ID, Structured Logging, Fluentd
 
 Description: A practical guide to implementing distributed logging in microservices, covering log aggregation, correlation IDs, structured logging, and centralized log management with ELK and Fluentd.
 

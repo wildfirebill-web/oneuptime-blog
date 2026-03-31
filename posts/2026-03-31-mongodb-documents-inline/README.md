@@ -1,6 +1,6 @@
 # How to Use $documents to Create Inline Documents in MongoDB 6+
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Aggregation, Pipeline, Documents stage, Query
 

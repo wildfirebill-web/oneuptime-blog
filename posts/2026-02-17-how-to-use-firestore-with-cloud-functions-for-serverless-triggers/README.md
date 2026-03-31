@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Firestore, Cloud Functions, Serverless, Firebase
+Tags: GCP, Firestore, Cloud Function, Serverless, Firebase
 
 Description: Learn how to set up Cloud Functions that trigger automatically on Firestore document creates, updates, and deletes for building serverless backend logic.
 

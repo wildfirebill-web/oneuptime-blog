@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Top-K, Probabilistic, Heavy Hitters, Analytics
+Tags: Redis, Top-K, Probabilistic, Heavy Hitter, Analytics
 
 Description: Learn how to use the Redis Top-K probabilistic data structure to track the most frequently occurring items in a stream with minimal memory.
 

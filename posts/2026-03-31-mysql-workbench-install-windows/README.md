@@ -1,8 +1,8 @@
 # How to Install MySQL Workbench on Windows
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Workbench, Windows, Installation, GUI
+Tags: MySQL, Workbench, Window, Installation, GUI
 
 Description: Install MySQL Workbench on Windows 10 or 11 using the MySQL Installer or the standalone MSI, create connection profiles, and use the SQL editor.
 

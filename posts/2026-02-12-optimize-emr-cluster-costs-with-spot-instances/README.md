@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EMR, Spot Instances, Cost Optimization, Big Data
+Tags: AWS, EMR, Spot Instance, Cost Optimization, Big Data
 
 Description: Practical strategies to reduce Amazon EMR costs by up to 70% using Spot Instances, including configuration tips and handling interruptions gracefully.
 

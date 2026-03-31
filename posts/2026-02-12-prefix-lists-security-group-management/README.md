@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, VPC, Security Groups, Prefix Lists, Network Security
+Tags: AWS, VPC, Security Group, Prefix Lists, Network Security
 
 Description: Learn how to use AWS managed and customer-managed prefix lists to simplify security group management and reduce operational overhead across your VPCs.
 

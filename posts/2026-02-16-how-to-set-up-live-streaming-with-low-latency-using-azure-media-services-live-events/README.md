@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Media Services, Live Streaming, Low Latency, RTMP, HLS, Live Events, Video Streaming
+Tags: Azure Media Services, Live Streaming, Low Latency, RTMP, HLS, Live Event, Video Streaming
 
 Description: A step-by-step guide to setting up live streaming with low latency using Azure Media Services live events, including encoder configuration and playback setup.
 

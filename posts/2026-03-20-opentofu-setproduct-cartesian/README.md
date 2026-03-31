@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Setproduct, Collections, Functions, for_each
+Tags: OpenTofu, Terraform, Setproduct, Collection, Function, for_each
 
 Description: Learn how to use the setproduct function in OpenTofu to generate Cartesian products of multiple sets, enabling exhaustive multi-dimensional resource creation across environments, regions, and tiers.
 

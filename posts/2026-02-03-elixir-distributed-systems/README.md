@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elixir, Erlang, Distributed Systems, OTP, Clustering, DevOps
+Tags: Elixir, Erlang, Distributed System, OTP, Clustering, DevOps
 
 Description: A practical guide to building fault-tolerant distributed systems in Elixir using Erlang distribution, process groups, libcluster, and strategies for handling network partitions.
 

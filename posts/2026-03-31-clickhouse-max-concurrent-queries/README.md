@@ -1,6 +1,6 @@
 # How to Configure ClickHouse Max Concurrent Queries
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, Concurrency, Performance, QueryLimit
 

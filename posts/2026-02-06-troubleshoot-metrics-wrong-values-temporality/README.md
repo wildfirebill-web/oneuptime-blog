@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Temporality, OTLP
+Tags: OpenTelemetry, Metric, Temporality, OTLP
 
 Description: Fix incorrect metric values that appear after switching between delta and cumulative aggregation temporality in OpenTelemetry.
 

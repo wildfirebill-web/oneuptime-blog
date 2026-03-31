@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Product Catalog, E-commerce, Data Modeling, Caching
+Tags: Redis, Product Catalog, E-Commerce, Data Modeling, Caching
 
 Description: Model e-commerce product catalogs in Redis using hashes, sorted sets, and sets for fast product lookup, filtering, faceted search, and price sorting.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, OBJECT ENCODING, Memory Optimization, Internals, Performance
+Tags: Redis, Object Encoding, Memory Optimization, Internal, Performance
 
 Description: Learn how to use OBJECT ENCODING in Redis to inspect the internal memory representation of a key's value and understand how encodings affect memory and performance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Throughput, Prometheus, Monitoring
+Tags: Istio, Metric, Throughput, Prometheus, Monitoring
 
 Description: Track request and response payload sizes in Istio using the istio_request_bytes and istio_response_bytes histogram metrics for capacity planning and debugging.
 

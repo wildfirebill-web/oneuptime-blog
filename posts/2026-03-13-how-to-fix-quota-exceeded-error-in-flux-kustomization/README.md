@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, Error Messages, Kustomization, Resource Quotas, Capacity Planning
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, Error Messages, Kustomization, Resource Quota, Capacity Planning
 
 Description: Learn how to diagnose and fix the 'quota exceeded' error in Flux Kustomization when resource creation is blocked by Kubernetes ResourceQuota limits.
 

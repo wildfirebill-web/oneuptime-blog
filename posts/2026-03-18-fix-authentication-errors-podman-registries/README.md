@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Authentication, Registry, Docker Hub
+Tags: Podman, Container, Authentication, Registry, Docker Hub
 
 Description: A detailed guide to resolving authentication errors when pulling or pushing images with Podman, covering credential storage, registry configuration, and common login issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Causal Consistency, Sessions, Distributed Systems, Replica Sets
+Tags: MongoDB, Causal Consistency, Session, Distributed System, Replica Set
 
 Description: Learn how to use causally consistent sessions in MongoDB to guarantee that reads always reflect your own writes in distributed deployments.
 

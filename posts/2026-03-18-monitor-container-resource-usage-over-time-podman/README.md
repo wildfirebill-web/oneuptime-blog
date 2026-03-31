@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Resources, CPU, Memory, Performance
+Tags: Podman, Container, DevOps, Monitoring, Resource, CPU, Memory, Performance
 
 Description: Learn how to monitor container resource usage over time with Podman to track CPU, memory, network, and disk I/O metrics for performance analysis.
 

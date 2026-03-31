@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, INSERT, Internals, MergeTree, Write Path
+Tags: ClickHouse, Insert, Internal, MergeTree, Write Path
 
 Description: Explore the internal steps ClickHouse takes when processing an INSERT - from data parsing to part creation and background async insert buffering.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Redisinsight, Slow Log, Performance, Monitoring
+Tags: Redis, RedisInsight, Slow Log, Performance, Monitoring
 
 Description: Use RedisInsight's Slow Log viewer to identify and analyze slow Redis commands, understand performance bottlenecks, and optimize query patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Connectivity, Health Check, Commands, Monitoring
+Tags: Redis, Connectivity, Health Check, Command, Monitoring
 
 Description: Learn how to use the PING command in Redis to test server connectivity, measure round-trip latency, and build health checks for your Redis-dependent applications.
 

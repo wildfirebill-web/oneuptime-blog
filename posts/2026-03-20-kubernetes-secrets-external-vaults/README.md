@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Secrets, HashiCorp Vault, External Secrets, Security
+Tags: Rancher, Kubernetes, Secret, HashiCorp Vault, External Secrets, Security
 
 Description: Configure Kubernetes secrets management using external vaults in Rancher, integrating HashiCorp Vault and the External Secrets Operator for centralized, auditable secret storage.
 

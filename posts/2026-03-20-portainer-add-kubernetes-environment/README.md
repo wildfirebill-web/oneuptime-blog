@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Environments, Kubernetes Management
+Tags: Portainer, Kubernetes, Environment, Kubernetes Management
 
 Description: Connect a Kubernetes cluster to Portainer for visual management of deployments, services, namespaces, and resources.
 

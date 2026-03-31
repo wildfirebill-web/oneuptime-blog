@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Actors, Configuration, Memory Management, Virtual Actors, Kubernetes
+Tags: Dapr, Actor, Configuration, Memory Management, Virtual Actor, Kubernetes
 
 Description: Learn how to tune Dapr actor idle timeout and scan interval settings to balance memory consumption, activation latency, and throughput in production deployments.
 

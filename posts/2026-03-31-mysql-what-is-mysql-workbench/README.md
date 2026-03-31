@@ -28,7 +28,7 @@ MySQL Workbench runs on Windows, macOS, and Linux and connects to both local and
 
 Launch Workbench and add a new connection:
 
-```
+```text
 Host: 127.0.0.1
 Port: 3306
 Username: root

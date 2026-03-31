@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Pod Disruption Budget, Operations, Troubleshooting, Cluster Maintenance
+Tags: Kubernetes, Pod Disruption Budget, Operation, Troubleshooting, Cluster Maintenance
 
 Description: A hands-on guide to handling Pod Disruption Budgets in Kubernetes, covering inspection, validation, troubleshooting stuck drains, operational workflows, and day-to-day PDB management.
 

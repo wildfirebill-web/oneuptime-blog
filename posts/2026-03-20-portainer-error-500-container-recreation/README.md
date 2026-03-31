@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Troubleshooting, Containers, Error 500
+Tags: Portainer, Docker, Troubleshooting, Container, Error 500
 
 Description: Diagnose and resolve HTTP 500 errors that occur when recreating containers in Portainer, including name conflicts, volume issues, and image pull failures.
 

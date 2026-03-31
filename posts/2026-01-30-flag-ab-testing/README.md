@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, A/B Testing, Experimentation, Analytics
+Tags: Feature Flag, A/B Testing, Experimentation, Analytics
 
 Description: Learn how to use feature flags for A/B testing and experimentation.
 

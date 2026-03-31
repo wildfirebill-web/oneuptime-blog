@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Scheduling, Cron, Background Jobs
+Tags: Go, Scheduling, Cron, Background Job
 
 Description: Learn how to build a scheduled task runner in Go using time.Ticker, cron expressions, and proper goroutine management.
 

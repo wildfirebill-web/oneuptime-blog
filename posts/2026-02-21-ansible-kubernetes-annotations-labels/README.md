@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Kubernetes, Labels, Annotations, Resource Management
+Tags: Ansible, Kubernetes, Labels, Annotation, Resource Management
 
 Description: Manage Kubernetes resource annotations and labels with Ansible for organizing, selecting, and attaching metadata to cluster resources.
 

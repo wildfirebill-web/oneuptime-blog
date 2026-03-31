@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Spring Cloud, Migration, Java, Microservices
+Tags: Istio, Spring Cloud, Migration, Java, Microservice
 
 Description: Step-by-step guide to replacing Spring Cloud infrastructure components like Eureka, Ribbon, Hystrix, and Zuul with Istio service mesh equivalents.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, RBAC, Groups, Teams, Access Control
+Tags: Portainer, RBAC, Group, Team, Access Control
 
 Description: Set up team-based access control in Portainer so entire groups get consistent permissions across one or more environments.
 

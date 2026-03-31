@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitHub Actions, CI/CD, Kubernetes, Arc, Runner Scale Sets, Infrastructure as Code
+Tags: OpenTofu, GitHub Action, CI/CD, Kubernetes, Arc, Runner Scale Sets, Infrastructure as Code
 
 Description: Learn how to deploy GitHub Actions Runner Controller (ARC) on Kubernetes with OpenTofu using runner scale sets for automatic scaling from zero, enabling cost-effective and isolated CI/CD workloads.
 

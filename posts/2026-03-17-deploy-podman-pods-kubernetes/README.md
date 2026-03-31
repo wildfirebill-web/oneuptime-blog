@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, Deployment, YAML
+Tags: Podman, Container, DevOps, Kubernetes, Deployment, YAML
 
 Description: Learn how to export Podman pods as Kubernetes YAML and deploy them to a Kubernetes cluster.
 

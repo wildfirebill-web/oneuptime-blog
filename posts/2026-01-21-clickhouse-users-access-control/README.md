@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Security, RBAC, Access Control, Database, Authentication, Users, Permissions
+Tags: ClickHouse, Security, RBAC, Access Control, Database, Authentication, Users, Permission
 
 Description: A comprehensive guide to managing users, roles, and access control in ClickHouse, covering SQL-based RBAC, row-level security, quotas, and settings profiles for multi-tenant environments.
 

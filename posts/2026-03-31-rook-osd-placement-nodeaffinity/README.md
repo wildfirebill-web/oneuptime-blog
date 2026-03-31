@@ -1,4 +1,4 @@
-# Configure OSD Placement with nodeAffinity in Rook-Ceph
+# How to Configure OSD Placement with nodeAffinity in Rook-Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

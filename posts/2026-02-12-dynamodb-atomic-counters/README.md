@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, DynamoDB, Atomic Operations, Concurrency
+Tags: AWS, DynamoDB, Atomic Operation, Concurrency
 
 Description: Implement thread-safe counters in DynamoDB using atomic increment and decrement operations, with patterns for view counts, inventory, and rate limiting.
 

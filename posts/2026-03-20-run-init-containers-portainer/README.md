@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Init Containers, Kubernetes, DevOps, Service Ordering
+Tags: Portainer, Docker, Init Container, Kubernetes, DevOps, Service Ordering
 
 Description: Implement init containers in Docker Compose stacks and Kubernetes via Portainer to perform setup tasks like database migrations and config generation before main application containers start.
 

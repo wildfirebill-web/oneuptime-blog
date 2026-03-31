@@ -36,7 +36,7 @@ Common collations for `utf8mb4`:
 
 MySQL collation names follow a consistent pattern:
 
-```
+```text
 {charset}_{language/standard}_{sensitivity_flags}
 
 ci  = case-insensitive

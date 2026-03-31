@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Rust, Custom Handlers, Serverless, Azure, Systems Programming, WebAssembly
+Tags: Azure Function, Rust, Custom Handlers, Serverless, Azure, Systems Programming, WebAssembly
 
 Description: Build high-performance Azure Functions using Rust custom handlers for scenarios where you need low-level control and maximum efficiency.
 

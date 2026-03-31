@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, BFF Pattern, API Gateway, Service Mesh, Microservices, Kubernetes
+Tags: Istio, BFF Pattern, API Gateway, Service Mesh, Microservice, Kubernetes
 
 Description: Implement the Backend for Frontend pattern with Istio by routing traffic from different client types to dedicated BFF services with tailored traffic policies.
 

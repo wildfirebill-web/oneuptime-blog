@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Replication, Gtid, High Availability, Administration
+Tags: MySQL, Replication, GTID, High Availability, Administration
 
 Description: Learn how to configure GTID-based replication in MySQL, which simplifies failover and replica promotion by using global transaction identifiers instead of binary log positions.
 

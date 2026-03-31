@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Resource Quotas, Namespaces, DevOps
+Tags: Portainer, Kubernetes, Resource Quota, Namespace, DevOps
 
 Description: Learn how to configure resource quotas in Portainer's Kubernetes environments to prevent individual teams or applications from consuming excessive cluster resources.
 

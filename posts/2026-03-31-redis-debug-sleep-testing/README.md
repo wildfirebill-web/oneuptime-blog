@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, DEBUG, Testing, Performance, Timeout
+Tags: Redis, Debug, Testing, Performance, Timeout
 
 Description: Learn how to use DEBUG SLEEP in Redis to force the server to sleep for a specified duration, enabling testing of client timeout handling, connection retry logic, and monitoring alert pipelines.
 

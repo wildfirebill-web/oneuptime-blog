@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Custom Metrics, CloudWatch, Monitoring, Observability, Infrastructure as Code
+Tags: Terraform, Custom Metric, CloudWatch, Monitoring, Observability, Infrastructure as Code
 
 Description: Learn how to set up custom metrics collection infrastructure with Terraform using CloudWatch custom metrics, metric filters, and automated metric publishing.
 

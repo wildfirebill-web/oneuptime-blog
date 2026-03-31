@@ -1,6 +1,6 @@
 # How to Set max_bytes_to_read in ClickHouse
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, QueryLimit, Safety, Performance
 

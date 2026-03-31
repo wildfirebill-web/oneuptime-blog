@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, QEMU, Multi-Architecture, Cross-Platform
+Tags: Podman, Container, DevOps, QEMU, Multi-Architecture, Cross-Platform
 
 Description: Learn how QEMU user-space emulation works with Podman for cross-platform container builds, including setup, configuration, and performance optimization.
 

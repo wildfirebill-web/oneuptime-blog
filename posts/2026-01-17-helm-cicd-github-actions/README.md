@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, GitHub Actions, CI/CD, Automation
+Tags: Helm, Kubernetes, DevOps, GitHub Action, CI/CD, Automation
 
 Description: Learn how to automate Helm chart linting, testing, and publishing with GitHub Actions for reliable, consistent deployments.
 

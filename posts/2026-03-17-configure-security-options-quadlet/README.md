@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Security, SELinux, Seccomp
+Tags: Podman, Container, DevOps, Quadlet, Security, SELinux, Seccomp
 
 Description: Learn how to configure security options in Podman Quadlet container files including SELinux, seccomp profiles, and Linux capabilities.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, BGP, Routes, Automation, Monitoring
+Tags: Cilium, BGP, Route, Automation, Monitoring
 
 Description: Automate BGP route table collection and comparison across Cilium nodes for route consistency validation.
 

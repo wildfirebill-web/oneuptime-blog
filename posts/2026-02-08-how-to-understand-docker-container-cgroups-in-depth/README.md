@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Cgroups, Resource Limits, Linux Kernel, Containers, CPU, Memory, Performance
+Tags: Docker, Cgroups, Resource Limit, Linux Kernel, Container, CPU, Memory, Performance
 
 Description: Understand how Docker uses Linux cgroups to control container resources, including CPU, memory, I/O limits, and cgroups v2 features.
 

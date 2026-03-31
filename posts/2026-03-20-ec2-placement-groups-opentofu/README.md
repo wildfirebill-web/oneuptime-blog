@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, EC2, Placement Groups, High Performance Computing, Infrastructure as Code, Networking
+Tags: OpenTofu, AWS, EC2, Placement Group, High Performance Computing, Infrastructure as Code, Networking
 
 Description: Learn how to create EC2 placement groups for cluster, spread, and partition strategies using OpenTofu to optimize instance placement for performance and availability.
 

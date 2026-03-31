@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Testcontainer, Python, Integration Test
+Tags: MySQL, Testcontainers, Python, Integration Test
 
 Description: Learn how to use the testcontainers-python library to launch a real MySQL Docker container in pytest, manage schema setup, and isolate tests with transaction rollbacks.
 

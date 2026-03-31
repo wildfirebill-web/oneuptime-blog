@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Kafka, Event-Driven, Microservices, Strimzi
+Tags: Flux CD, Kubernetes, GitOps, Kafka, Event-Driven, Microservice, Strimzi
 
 Description: Build and deploy event-driven microservices with Kafka using Flux CD for GitOps-managed, decoupled service architectures.
 

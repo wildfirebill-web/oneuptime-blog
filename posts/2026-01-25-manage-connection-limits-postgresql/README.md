@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Performance, Connection, Database, Operations
+Tags: PostgreSQL, Performance, Connection, Database, Operation
 
 Description: Learn how to configure and manage PostgreSQL connection limits effectively, including monitoring active connections, setting per-user limits, and implementing connection pooling strategies.
 

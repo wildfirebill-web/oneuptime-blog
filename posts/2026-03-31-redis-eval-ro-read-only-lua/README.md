@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, EVAL_RO, Lua, Script, Read-only
+Tags: Redis, EVAL_RO, Lua, Script, Read-Only
 
 Description: Learn how to use EVAL_RO in Redis to execute Lua scripts in read-only mode, enabling safe script execution on replicas and read-only connections.
 

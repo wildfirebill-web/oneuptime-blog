@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Load Balancing, Kubernetes, Containers, MetalLB, Bare Metal, Linux
+Tags: RHEL, Load Balancing, Kubernetes, Container, MetalLB, Bare Metal, Linux
 
 Description: Learn how to deploy MetalLB Load Balancer for Bare-Metal Kubernetes on RHEL with step-by-step instructions, configuration examples, and best practices.
 

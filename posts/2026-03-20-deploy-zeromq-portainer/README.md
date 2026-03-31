@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, ZeroMQ, Messaging, Docker, Microservices
+Tags: Portainer, ZeroMQ, Messaging, Docker, Microservice
 
 Description: Deploy applications using ZeroMQ for high-performance asynchronous messaging via Portainer, covering PUB/SUB, PUSH/PULL, and REQ/REP patterns.
 

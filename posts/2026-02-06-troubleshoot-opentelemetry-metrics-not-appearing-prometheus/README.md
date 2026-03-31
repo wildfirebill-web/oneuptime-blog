@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, Metrics, Troubleshooting, Collector, Exporter, Observability
+Tags: OpenTelemetry, Prometheus, Metric, Troubleshooting, Collector, Exporter, Observability
 
 Description: Step-by-step guide to diagnosing why OpenTelemetry metrics fail to appear in Prometheus, covering collector config, naming, and scraping issues.
 

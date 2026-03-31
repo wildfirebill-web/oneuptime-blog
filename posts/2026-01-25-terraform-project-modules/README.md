@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, Modules, Best Practice
+Tags: Terraform, Infrastructure as Code, DevOps, Module, Best Practice
 
 Description: Learn how to structure Terraform projects using modules for reusability, maintainability, and team collaboration. This guide covers module design patterns, file organization, and practical examples.
 

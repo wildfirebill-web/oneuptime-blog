@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Resilience, Bulkhead Pattern, Fault Isolation, System Design, Python, Java
+Tags: Microservice, Resilience, Bulkhead Pattern, Fault Isolation, System Design, Python, Java
 
 Description: A practical guide to implementing the Bulkhead pattern to isolate failures in distributed systems and prevent cascading outages across services.
 

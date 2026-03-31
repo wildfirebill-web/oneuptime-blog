@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how JSONExtractBool() extracts boolean values from JSON strings in ClickHouse, returning a UInt8 value of 1 or 0 for use in filters and aggregations.
 

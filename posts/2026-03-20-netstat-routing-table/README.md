@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: netstat, Routing, Linux, IPv4, Networking, Diagnostics
+Tags: netstat, Routing, Linux, IPv4, Networking, Diagnostic
 
 Description: Use netstat -r to display the kernel IPv4 routing table, understand routing entries, and diagnose routing problems on Linux.
 

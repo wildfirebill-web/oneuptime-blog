@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Jobs, CronJobs, Docker, Automation
+Tags: Portainer, Kubernetes, Job, CronJob, Docker, Automation
 
 Description: Learn how to create and manage Kubernetes Jobs and CronJobs through the Portainer interface for batch workloads and scheduled tasks.
 

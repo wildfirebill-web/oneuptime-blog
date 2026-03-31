@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Repository Structure, Environments, GitOps, Kubernetes, Multi-Environment, Best Practice
+Tags: Flux CD, Repository Structure, Environment, GitOps, Kubernetes, Multi-Environment, Best Practice
 
 Description: A practical guide to organizing separate Git repositories per environment for Flux CD, with strategies for promotion, consistency, and access control.
 

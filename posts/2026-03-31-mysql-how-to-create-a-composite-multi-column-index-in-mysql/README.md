@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Indexes, Composite Index, Query Optimization, Performance
+Tags: MySQL, Index, Composite Index, Query Optimization, Performance
 
 Description: Learn how to create composite multi-column indexes in MySQL, understand column order importance, and use them to optimize multi-condition queries.
 

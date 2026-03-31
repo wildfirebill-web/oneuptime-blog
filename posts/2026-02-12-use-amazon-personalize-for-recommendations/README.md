@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Amazon Personalize, Machine Learning, Recommendations
+Tags: AWS, Amazon Personalize, Machine Learning, Recommendation
 
 Description: Learn how to build a real-time recommendation engine with Amazon Personalize, including data preparation, training models, and getting live recommendations via the API.
 

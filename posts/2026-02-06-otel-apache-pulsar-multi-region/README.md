@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Apache Pulsar, Multi-Region, Distributed Systems
+Tags: OpenTelemetry, Apache Pulsar, Multi-Region, Distributed System
 
 Description: Build a multi-region telemetry distribution pipeline using OpenTelemetry and Apache Pulsar's geo-replication capabilities.
 

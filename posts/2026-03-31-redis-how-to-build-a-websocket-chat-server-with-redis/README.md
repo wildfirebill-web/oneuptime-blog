@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Websockets, Chat, Node.js, Real-Time, Pub/Sub
+Tags: Redis, WebSocket, Chat, Node.js, Real-Time, Pub/Sub
 
 Description: Build a scalable WebSocket chat server using Redis Pub/Sub for message broadcasting and Redis Lists for chat history persistence across multiple server instances.
 

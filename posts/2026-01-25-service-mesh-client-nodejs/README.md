@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NodeJS, TypeScript, Microservices, Service Mesh, Distributed Systems
+Tags: NodeJS, TypeScript, Microservice, Service Mesh, Distributed System
 
 Description: Learn how to build a service mesh client in Node.js that handles service discovery, load balancing, circuit breaking, and observability without requiring a sidecar proxy.
 

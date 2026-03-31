@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Security, mTLS, Access Control, Zero Trust
 
-Description: Learn Dapr's security design principles including mTLS, certificate rotation, API authorization, secret management, and zero-trust networking between services.
+Description: Learn Dapr security design principles including mTLS, certificate rotation, API authorization, secret management, and zero-trust networking between services.
 
 ---
 

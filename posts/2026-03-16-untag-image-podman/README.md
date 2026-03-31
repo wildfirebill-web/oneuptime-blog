@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Tagging
+Tags: Podman, Container, DevOps, Container Image, Tagging
 
 Description: Learn how to remove tags from container images using Podman without deleting the underlying image data.
 

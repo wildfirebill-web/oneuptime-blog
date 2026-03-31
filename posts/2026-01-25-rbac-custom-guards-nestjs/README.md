@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NodeJS, TypeScript, NestJS, RBAC, Security, Authorization, Guards
+Tags: NodeJS, TypeScript, NestJS, RBAC, Security, Authorization, Guard
 
 Description: Learn how to implement Role-Based Access Control (RBAC) in NestJS using custom guards, decorators, and a flexible permission system that scales with your application.
 

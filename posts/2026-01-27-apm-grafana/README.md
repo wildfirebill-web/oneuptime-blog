@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, APM, Application Performance Monitoring, Traces, Metrics, OpenTelemetry, Tempo
+Tags: Grafana, APM, Application Performance Monitoring, Trace, Metric, OpenTelemetry, Tempo
 
 Description: Set up Application Performance Monitoring in Grafana using traces, metrics, and logs to understand application behavior, identify bottlenecks, and resolve performance issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Infrastructure, SRE
+Tags: Observability, Metric, Infrastructure, SRE
 
 Description: Learn how to implement comprehensive infrastructure metrics for servers, containers, and cloud resources.
 

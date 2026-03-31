@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Transactions, Concurrency, WiredTiger, Performance
+Tags: MongoDB, Transaction, Concurrency, WiredTiger, Performance
 
 Description: Learn how MongoDB manages concurrent read and write transactions through WiredTiger's ticket system and how to tune concurrency limits for your workload.
 

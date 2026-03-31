@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Performance, Notifications, Webhooks, Configuration
+Tags: Portainer, Docker, Performance, Notification, Webhook, Configuration
 
 Description: Configure and tune Portainer's notification and webhook queue system to prevent backpressure, handle failures gracefully, and maintain responsiveness in busy environments.
 

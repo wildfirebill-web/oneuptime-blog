@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Alerts, Event Filtering
+Tags: Flux, Kubernetes, GitOps, Alert, Event Filtering
 
 Description: Learn how to filter Flux alerts by the ProgressingWithRetry event reason to reduce noise and focus on actionable reconciliation issues.
 

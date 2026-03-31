@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Microservice Extractor, .NET, Modernization, Microservices, Refactoring
+Tags: AWS, Microservice Extractor, .NET, Modernization, Microservice, Refactoring
 
 Description: Learn how to use AWS Microservice Extractor for .NET to decompose monolithic .NET applications into microservices with automated analysis and refactoring.
 

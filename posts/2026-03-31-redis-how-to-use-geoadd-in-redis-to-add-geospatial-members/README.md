@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Geospatial, GEOADD, Location, Sorted Sets
+Tags: Redis, Geospatial, GEOADD, Location, Sorted Set
 
 Description: Learn how to use GEOADD to store geospatial coordinates in Redis, enabling fast location-based queries for applications like ride-sharing and store finders.
 

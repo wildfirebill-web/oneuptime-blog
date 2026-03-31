@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, RabbitMQ, Message Queues, Data Migration
+Tags: Kubernetes, RabbitMQ, Message Queue, Data Migration
 
 Description: Learn how to use the RabbitMQ Shovel plugin to transfer messages between clusters, implement one-way message routing, and perform data migration in Kubernetes environments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Security, DevOps
+Tags: Portainer, Docker, Container, Security, DevOps
 
 Description: Learn how to configure the working directory and running user for Docker containers in Portainer to improve security and application compatibility.
 

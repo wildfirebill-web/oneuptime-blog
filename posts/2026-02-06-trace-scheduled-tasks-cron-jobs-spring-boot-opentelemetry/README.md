@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Spring Boot, Scheduled Tasks, Cron Jobs, Java, Background
+Tags: OpenTelemetry, Spring Boot, Scheduled Task, Cron Jobs, Java, Background
 
 Description: Implement OpenTelemetry tracing for Spring Boot scheduled tasks and cron jobs, capturing execution timing, failure tracking, and distributed context for background processes.
 

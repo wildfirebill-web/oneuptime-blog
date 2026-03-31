@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Encoding
+Tags: OpenTofu, Terraform, IaC, Function, Encoding
 
 Description: Learn how to use the base64encode() function in OpenTofu to encode strings as Base64.
 

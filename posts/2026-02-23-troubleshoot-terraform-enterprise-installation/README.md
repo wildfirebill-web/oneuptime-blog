@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terraform Enterprise, Troubleshooting, Installation, DevOps, Operations
+Tags: Terraform, Terraform Enterprise, Troubleshooting, Installation, DevOps, Operation
 
 Description: A troubleshooting guide for common Terraform Enterprise installation problems, including container startup failures, database connectivity, certificate errors, and health check failures.
 

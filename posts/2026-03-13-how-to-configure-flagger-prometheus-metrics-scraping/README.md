@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Prometheus, Metrics, Kubernetes, Monitoring
+Tags: Flagger, Prometheus, Metric, Kubernetes, Monitoring
 
 Description: Learn how to configure Prometheus metrics scraping for Flagger canary analysis with proper service discovery and scrape configurations.
 

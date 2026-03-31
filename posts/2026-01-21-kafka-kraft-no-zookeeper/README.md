@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, KRaft, ZooKeeper, Distributed Systems, Message Queues, Streaming
+Tags: Apache Kafka, KRaft, ZooKeeper, Distributed System, Message Queue, Streaming
 
 Description: A comprehensive guide to deploying Apache Kafka in KRaft mode without ZooKeeper, covering architecture concepts, installation, configuration, migration strategies, and production best practices.
 

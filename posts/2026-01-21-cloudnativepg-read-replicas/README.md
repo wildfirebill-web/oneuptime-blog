@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CloudNativePG, Kubernetes, PostgreSQL, Read Replicas, Scaling, Performance
+Tags: CloudNativePG, Kubernetes, PostgreSQL, Read Replica, Scaling, Performance
 
 Description: A comprehensive guide to scaling PostgreSQL read capacity with CloudNativePG, covering replica configuration, read-only services, connection routing, and load balancing strategies.
 

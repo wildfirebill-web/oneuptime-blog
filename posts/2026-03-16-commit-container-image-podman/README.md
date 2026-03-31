@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Commit, Snapshot
+Tags: Podman, Container, DevOps, Container Image, Commit, Snapshot
 
 Description: Learn how to commit a running or stopped Podman container as a new image, capturing changes for reuse, debugging, and iterative development.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Security, Audit Logging, Compliance, DevOps
+Tags: k3s, Kubernetes, Security, Audit Logging, Compliance, DevOps
 
 Description: Learn how to enable and configure Kubernetes audit logging in K3s to track API server activity for security compliance and incident investigation.
 

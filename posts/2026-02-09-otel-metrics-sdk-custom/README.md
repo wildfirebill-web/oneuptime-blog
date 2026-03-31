@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, SDK, Observability, Monitoring
+Tags: OpenTelemetry, Metric, SDK, Observability, Monitoring
 
 Description: Learn how to use the OpenTelemetry metrics SDK to create custom counters, gauges, and histograms for tracking application-specific metrics beyond auto-instrumentation.
 

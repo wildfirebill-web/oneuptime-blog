@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, find, Query, CRUD, Cursor
+Tags: MongoDB, Find, Query, CRUD, Cursor
 
 Description: Learn how to query documents in MongoDB using find(), including filter expressions, projections, sorting, limiting, and cursor iteration techniques.
 

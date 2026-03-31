@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, Testing, Unit Tests, Integration Tests, Networking
+Tags: Go, IPv6, Testing, Unit Test, Integration Test, Networking
 
 Description: Test IPv6 networking code in Go using in-process servers, network mocks, and integration tests with IPv6 loopback.
 

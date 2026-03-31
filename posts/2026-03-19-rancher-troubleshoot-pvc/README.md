@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Storage, Persistent Volumes
+Tags: Rancher, Kubernetes, Storage, Persistent Volume
 
 Description: A comprehensive troubleshooting guide for diagnosing and resolving common Persistent Volume Claim issues in Rancher-managed Kubernetes clusters.
 

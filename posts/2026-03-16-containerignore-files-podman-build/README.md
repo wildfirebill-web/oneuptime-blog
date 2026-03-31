@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Containerignore, Build Context
+Tags: Podman, Container, DevOps, Container Image, Build, Containerignore, Build Context
 
 Description: Learn how to use .containerignore files to exclude unnecessary files from Podman build contexts, reducing build times and image sizes.
 

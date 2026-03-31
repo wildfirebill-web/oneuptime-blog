@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, InnoDB, Flushing, Buffer Pool, Performance, Internals
+Tags: MySQL, InnoDB, Flushing, Buffer Pool, Performance, Internal
 
 Description: Learn how InnoDB flushes dirty pages from the buffer pool to disk, what controls flushing behavior, and how to tune it for your storage hardware.
 

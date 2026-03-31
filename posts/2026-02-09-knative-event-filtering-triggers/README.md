@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Knative, Kubernetes, Event-Driven, CloudEvents, Filtering
+Tags: Knative, Kubernetes, Event-Driven, CloudEvent, Filtering
 
 Description: Master Knative Eventing triggers to filter and route CloudEvents based on attributes, enabling sophisticated event-driven architectures with selective event processing.
 

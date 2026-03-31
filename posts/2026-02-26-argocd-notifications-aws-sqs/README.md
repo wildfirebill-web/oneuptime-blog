@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, AWS SQS, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, AWS SQS, Notification
 
 Description: Learn how to configure ArgoCD to send deployment event notifications to AWS SQS queues for asynchronous processing, audit trails, and event-driven architectures.
 

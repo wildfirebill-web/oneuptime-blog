@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Security, User Management, Permissions, Access Control, DevOps
+Tags: RabbitMQ, Security, User Management, Permission, Access Control, DevOps
 
 Description: A comprehensive guide to configuring user permissions in RabbitMQ, including virtual hosts, permission patterns, and best practices for multi-tenant environments.
 

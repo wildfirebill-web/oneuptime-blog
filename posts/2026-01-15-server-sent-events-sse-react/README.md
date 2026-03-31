@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, SSE, Server-Sent Events, Real-Time, Streaming, Frontend
+Tags: React, SSE, Server-Sent Event, Real-Time, Streaming, Frontend
 
 Description: A comprehensive guide to implementing Server-Sent Events in React applications for real-time data streaming, including EventSource usage, reconnection handling, error recovery.
 

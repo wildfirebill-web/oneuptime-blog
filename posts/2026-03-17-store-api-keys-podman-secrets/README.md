@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, API Keys, Security
+Tags: Podman, Container, DevOps, Secret, API Key, Security
 
 Description: Learn how to securely store and deliver API keys to Podman containers using secrets instead of environment variables.
 

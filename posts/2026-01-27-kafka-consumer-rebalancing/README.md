@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Consumer Groups, Rebalancing, Distributed Systems, Event Streaming, Microservices, Java, Node.js
+Tags: Kafka, Consumer Group, Rebalancing, Distributed System, Event Streaming, Microservice, Java, Node.js
 
 Description: A comprehensive guide to implementing Kafka consumer group rebalancing strategies, covering cooperative vs eager rebalancing, static membership, partition assignment algorithms.
 

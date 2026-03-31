@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, App Service, Blob Storage, Logging, Diagnostics, Monitoring, Web Apps
+Tags: Azure, App Service, Blob Storage, Logging, Diagnostic, Monitoring, Web Apps
 
 Description: Learn how to configure Azure App Service to stream application and web server logs directly to Azure Blob Storage for long-term retention and analysis.
 

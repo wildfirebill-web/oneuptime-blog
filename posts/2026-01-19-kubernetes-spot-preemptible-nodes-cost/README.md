@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Cost Optimization, Spot Instances, Preemptible Nodes, AWS, GCP, Azure, FinOps
+Tags: Kubernetes, Cost Optimization, Spot Instance, Preemptible Nodes, AWS, GCP, Azure, FinOps
 
 Description: Learn how to significantly reduce Kubernetes infrastructure costs by using spot instances, preemptible VMs, and interruptible nodes while maintaining application reliability.
 

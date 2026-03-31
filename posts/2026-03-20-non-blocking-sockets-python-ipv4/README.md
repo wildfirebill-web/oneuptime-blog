@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Non-Blocking, Sockets, IPv4, Networking, SELECT
+Tags: Python, Non-Blocking, Socket, IPv4, Networking, SELECT
 
 Description: Learn how to implement non-blocking IPv4 sockets in Python to handle multiple connections in a single thread without blocking on I/O operations.
 

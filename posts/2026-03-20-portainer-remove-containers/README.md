@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Cleanup, DevOps
+Tags: Portainer, Docker, Container, Cleanup, DevOps
 
 Description: Learn how to remove stopped and running Docker containers in Portainer, including bulk removal and cleaning up orphaned containers.
 

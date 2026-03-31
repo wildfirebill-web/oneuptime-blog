@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kafka, Messaging, Java, Python, Node.js, Go, Distributed Systems
+Tags: Kafka, Messaging, Java, Python, Node.js, Go, Distributed System
 
 Description: Learn how to build Kafka producers in Java, Python, Node.js, and Go with practical code examples, configuration best practices, and production-ready patterns for reliable message delivery.
 

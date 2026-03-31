@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, DevOps, Platform Engineering, Infrastructure as Code
+Tags: Terraform, Module, DevOps, Platform Engineering, Infrastructure as Code
 
 Description: Learn how to build and manage an internal Terraform module marketplace that helps your organization share, discover, and reuse infrastructure modules across teams.
 

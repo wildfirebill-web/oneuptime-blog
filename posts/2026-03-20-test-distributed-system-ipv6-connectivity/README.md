@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Distributed Systems, Testing, Connectivity, Network Testing, DevOps
+Tags: IPv6, Distributed System, Testing, Connectivity, Network Testing, DevOps
 
 Description: Systematically test IPv6 connectivity between distributed system components using network tools, custom health check scripts, and automated test suites.
 

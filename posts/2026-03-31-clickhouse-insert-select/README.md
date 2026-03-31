@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, INSERT, SELECT, Data Migration
+Tags: ClickHouse, SQL, Insert, SELECT, Data Migration
 
 Description: Learn how to use INSERT INTO ... SELECT in ClickHouse to copy, migrate, and transform data between tables efficiently.
 

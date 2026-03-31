@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Event Ordering, Streams, Sorted Set, Architecture
+Tags: Redis, Event Ordering, Stream, Sorted Set, Architecture
 
 Description: Guarantee event ordering in Redis using stream IDs, sorted sets, and sequence numbers to maintain causal consistency in distributed systems.
 

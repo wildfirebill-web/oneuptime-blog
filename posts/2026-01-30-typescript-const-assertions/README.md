@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: TypeScript, Type Safety, Constants, Patterns
+Tags: TypeScript, Type Safety, Constants, Pattern
 
 Description: Use const assertions in TypeScript to create literal types, readonly structures, and type-safe enums without runtime overhead.
 

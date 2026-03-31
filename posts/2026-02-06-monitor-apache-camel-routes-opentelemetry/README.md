@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Apache Camel, Integration, Routes, Java, EIP
+Tags: OpenTelemetry, Apache Camel, Integration, Route, Java, EIP
 
 Description: Implement comprehensive OpenTelemetry monitoring for Apache Camel routes, tracking message flows through Enterprise Integration Patterns, processors, and endpoints with distributed tracing.
 

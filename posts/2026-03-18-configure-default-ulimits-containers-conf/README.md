@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Resource Limits, Ulimit
+Tags: Podman, Container, DevOps, Configuration, Resource Limit, Ulimit
 
 Description: Learn how to configure default ulimits in containers.conf to set resource limits like file descriptors and process counts for all Podman containers.
 

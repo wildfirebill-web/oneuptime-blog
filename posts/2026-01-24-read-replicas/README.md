@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Database, PostgreSQL, MySQL, Read Replicas, Scalability, Performance
+Tags: Database, PostgreSQL, MySQL, Read Replica, Scalability, Performance
 
 Description: Learn how to configure read replicas to scale your database reads and improve application performance.
 

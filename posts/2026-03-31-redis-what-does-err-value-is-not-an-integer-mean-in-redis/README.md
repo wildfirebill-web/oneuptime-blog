@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Error, Integer, INCR, INCRBY, Data Types, Troubleshooting
+Tags: Redis, Error, Integer, INCR, INCRBY, Data Type, Troubleshooting
 
 Description: Learn why Redis returns 'ERR value is not an integer or out of range' on INCR and INCRBY commands, and how to validate integer values and handle type errors.
 

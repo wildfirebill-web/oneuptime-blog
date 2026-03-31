@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NextJS, File Upload, Forms, API Routes, Storage
+Tags: NextJS, File Upload, Forms, API Route, Storage
 
 Description: A comprehensive guide to implementing file uploads in Next.js with Server Actions, Route Handlers, progress tracking, and cloud storage integration.
 

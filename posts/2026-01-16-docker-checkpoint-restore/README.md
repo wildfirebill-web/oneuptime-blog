@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, CRIU, Checkpoints, Restore, Migration
+Tags: Docker, CRIU, Checkpoint, Restore, Migration
 
 Description: Learn how to use Docker checkpoint and restore with CRIU for live container migration, state preservation, and fast container recovery.
 

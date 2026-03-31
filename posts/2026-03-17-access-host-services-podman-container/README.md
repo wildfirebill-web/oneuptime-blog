@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Host Access, Development
+Tags: Podman, Container, DevOps, Networking, Host Access, Development
 
 Description: Learn how to access services running on the host machine from inside a Podman container.
 

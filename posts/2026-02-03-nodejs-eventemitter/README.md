@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, EventEmitter, Events, Architecture, Decoupling
+Tags: Node.js, EventEmitter, Event, Architecture, Decoupling
 
 Description: Learn how to build event-driven systems in Node.js with EventEmitter. This guide covers event patterns, custom emitters, error handling, and real-world applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MySQL, Indexes, Performance, Database
+Tags: MySQL, Index, Performance, Database
 
 Description: Learn MySQL index design patterns including composite indexes, covering indexes, and strategies for optimal query performance.
 

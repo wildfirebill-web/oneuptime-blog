@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Kernel, Drivers, DKMS
+Tags: Ubuntu, Networking, Kernel, Driver, DKMS
 
 Description: Step-by-step guide to installing out-of-tree network drivers on Ubuntu, covering source compilation, DKMS integration, and troubleshooting common driver issues.
 

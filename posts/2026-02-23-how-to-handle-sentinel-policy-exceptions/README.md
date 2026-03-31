@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Sentinel, Policy as Code, Exceptions, Governance, Override, Workflow
+Tags: Terraform, Sentinel, Policy as Code, Exception, Governance, Override, Workflow
 
 Description: Learn strategies for handling Sentinel policy exceptions including soft-mandatory overrides, exception lists, conditional logic, and governance workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, User Management, Loops, Automation
+Tags: Ansible, User Management, Loop, Automation
 
 Description: Learn how to create multiple users efficiently in Ansible using loops, including simple lists, dictionaries, and nested loops with real examples.
 

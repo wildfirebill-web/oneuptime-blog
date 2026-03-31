@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Dependencies, IaC, Architecture
+Tags: Terraform, Module, Dependencies, IaC, Architecture
 
 Description: Learn how to manage dependencies between Terraform modules using output references, depends_on, data sources, and dependency injection patterns.
 

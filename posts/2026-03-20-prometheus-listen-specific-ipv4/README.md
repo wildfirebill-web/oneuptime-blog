@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, IPv4, Listen, Configuration, Monitoring, Metrics
+Tags: Prometheus, IPv4, Listen, Configuration, Monitoring, Metric
 
 Description: Configure Prometheus to listen on a specific IPv4 address using the --web.listen-address flag, restrict API access, and verify the binding.
 

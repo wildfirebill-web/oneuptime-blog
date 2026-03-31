@@ -43,7 +43,7 @@ SELECT user_id, permissions, BIN(permissions) AS binary_flags
 FROM user_permissions;
 ```
 
-```
+```text
 +---------+-------------+--------------+
 | user_id | permissions | binary_flags |
 +---------+-------------+--------------+
@@ -135,7 +135,7 @@ SELECT
 FROM connections;
 ```
 
-```
+```text
 +----+----------+--------------+----------+--------------+
 | id | src_port | src_port_hex | dst_port | dst_port_hex |
 +----+----------+--------------+----------+--------------+

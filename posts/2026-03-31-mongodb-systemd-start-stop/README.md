@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, systemd, Linux, Operations, Administration
+Tags: MongoDB, Systemd, Linux, Operation, Administration
 
 Description: Learn how to start, stop, restart, and enable MongoDB using systemd on Linux, including service management, status checks, and common troubleshooting steps.
 

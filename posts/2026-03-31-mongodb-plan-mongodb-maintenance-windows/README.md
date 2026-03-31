@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Maintenance, Operations
+Tags: MongoDB, Maintenance, Operation
 
 Description: Plan and execute MongoDB maintenance windows safely using rolling restarts, pre-checks, communication templates, and rollback procedures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, ConfigMaps, Configuration, Environment Variables, Volumes
+Tags: Kubernetes, ConfigMap, Configuration, Environment Variable, Volumes
 
 Description: Learn how to use Kubernetes ConfigMaps to externalize application configuration including environment variables, files, and live reloading.
 

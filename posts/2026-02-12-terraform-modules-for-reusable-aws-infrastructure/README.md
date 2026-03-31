@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Terraform, Modules, Infrastructure
+Tags: AWS, Terraform, Module, Infrastructure
 
 Description: Master Terraform modules to create reusable, composable AWS infrastructure components with proper input variables, outputs, versioning, and module composition.
 

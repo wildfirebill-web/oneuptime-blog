@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps, Apple Silicon
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps, Apple Silicon
 
 Description: Learn how to set up and optimize Podman machines on Apple Silicon Macs, including Rosetta support, performance tuning, and multi-architecture workflows.
 

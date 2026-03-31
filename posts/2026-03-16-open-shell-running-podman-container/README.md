@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Shell, Debugging
+Tags: Podman, Container, DevOps, Container Shell, Debugging
 
 Description: Learn how to open interactive shell sessions inside running Podman containers using bash, sh, and other shells for debugging and administration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, RabbitMQ, Kubernetes, Message Queues, Helm, AMQP
+Tags: Rancher, RabbitMQ, Kubernetes, Message Queue, Helm, AMQP
 
 Description: Deploy a production-ready RabbitMQ cluster on Rancher using Helm with persistent storage, management UI access, and proper resource configuration.
 

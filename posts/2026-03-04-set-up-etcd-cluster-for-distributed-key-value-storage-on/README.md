@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Distributed Systems, Linux
+Tags: RHEL, Distributed System, Linux
 
 Description: Step-by-step guide on set up etcd cluster for distributed key-value storage using Red Hat Enterprise Linux 9.
 

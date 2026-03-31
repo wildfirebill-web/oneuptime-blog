@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana Loki, Microservices, Distributed Systems, Log Management, Scalability, High Availability
+Tags: Grafana Loki, Microservice, Distributed System, Log Management, Scalability, High Availability
 
 Description: A comprehensive guide to deploying Grafana Loki in microservices mode for scalable distributed log aggregation, covering component architecture, configuration, and production deployment patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, DevOps
+Tags: ArgoCD, GitOps, Kubernetes, Notification, DevOps
 
 Description: A complete step-by-step guide to setting up ArgoCD notifications from scratch, covering installation, configuration, triggers, templates, and connecting your first notification service.
 

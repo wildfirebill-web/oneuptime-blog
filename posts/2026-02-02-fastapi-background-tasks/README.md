@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Python, FastAPI, Background Tasks, Async, Performance
+Tags: Python, FastAPI, Background Task, Async, Performance
 
 Description: Learn how to implement background tasks in FastAPI using BackgroundTasks, Celery integration, and async patterns for non-blocking operations.
 

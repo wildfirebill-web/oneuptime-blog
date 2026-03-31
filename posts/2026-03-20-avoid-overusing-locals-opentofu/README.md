@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Locals, Best Practice, Code Quality, Infrastructure as Code, DevOps
+Tags: OpenTofu, Local, Best Practice, Code Quality, Infrastructure as Code, DevOps
 
 Description: A guide to using OpenTofu locals appropriately, knowing when to use them and when they add unnecessary complexity.
 

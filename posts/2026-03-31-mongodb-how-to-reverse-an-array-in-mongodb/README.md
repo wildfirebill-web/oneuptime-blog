@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Arrays, Aggregation, $reverseArray
+Tags: MongoDB, Array, Aggregation, $reverseArray
 
 Description: Learn how to reverse array fields in MongoDB using the $reverseArray aggregation operator with practical examples and use cases.
 

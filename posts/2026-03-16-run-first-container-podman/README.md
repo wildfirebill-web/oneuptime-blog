@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Getting Started
+Tags: Podman, Container, DevOps, Getting Started
 
 Description: Learn how to run your first container with Podman, from pulling images to running and managing containers with practical examples.
 

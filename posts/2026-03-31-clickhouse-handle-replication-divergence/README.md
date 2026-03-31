@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Replication, Data Consistency, Incident Response, Operations
+Tags: ClickHouse, Replication, Data Consistency, Incident Response, Operation
 
 Description: Detect and resolve ClickHouse replication divergence where replicas have different data, using checksum comparison and controlled part re-fetch procedures.
 

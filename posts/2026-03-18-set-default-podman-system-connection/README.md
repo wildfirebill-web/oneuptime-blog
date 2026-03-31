@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Remote Management, Configuration
+Tags: Podman, Container, DevOps, Remote Management, Configuration
 
 Description: Learn how to set and manage the default Podman system connection to streamline your workflow when working with multiple remote hosts.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Email, Mailman, Mailing Lists, System Administration
+Tags: Ubuntu, Email, Mailman, Mailing List, System Administration
 
 Description: A step-by-step guide to installing and configuring Mailman 3 on Ubuntu for managing email mailing lists, including Postfix integration and web interface setup.
 

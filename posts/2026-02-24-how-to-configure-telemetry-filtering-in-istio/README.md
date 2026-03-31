@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Telemetry, Filtering, Metrics, Observability, Prometheus
+Tags: Istio, Telemetry, Filtering, Metric, Observability, Prometheus
 
 Description: How to filter and customize telemetry data in Istio by selectively including or excluding metrics, labels, trace spans, and access log entries.
 

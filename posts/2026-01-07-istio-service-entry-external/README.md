@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, ServiceEntry, External Services, Service Mesh, Kubernetes
+Tags: Istio, ServiceEntry, External Service, Service Mesh, Kubernetes
 
 Description: Learn how to configure Istio ServiceEntry for controlled access to external services.
 

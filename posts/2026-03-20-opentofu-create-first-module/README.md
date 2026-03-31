@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules, Best Practice
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module, Best Practice
 
 Description: Learn how to create your first reusable OpenTofu module to encapsulate infrastructure patterns and share them across projects.
 

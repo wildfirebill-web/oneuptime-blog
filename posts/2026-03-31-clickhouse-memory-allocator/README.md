@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Memory Allocator, jemalloc, Memory Limit, Performance
+Tags: ClickHouse, Memory Allocator, Jemalloc, Memory Limit, Performance
 
 Description: Explains how ClickHouse uses jemalloc for memory allocation, how query memory limits are enforced, and how to diagnose and reduce memory usage in production.
 

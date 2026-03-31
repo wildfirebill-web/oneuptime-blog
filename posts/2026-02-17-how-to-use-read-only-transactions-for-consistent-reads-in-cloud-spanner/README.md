@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Spanner, Transactions, Read-Only, Consistency
+Tags: GCP, Cloud Spanner, Transaction, Read-Only, Consistency
 
 Description: Learn when and how to use read-only transactions in Cloud Spanner for consistent snapshot reads without locking overhead.
 

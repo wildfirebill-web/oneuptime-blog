@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Helm, Kubernetes, Helm Charts, DevOps, Packaging
+Tags: Talos Linux, Helm, Kubernetes, Helm Chart, DevOps, Packaging
 
 Description: Learn how to create, structure, and publish custom Helm charts optimized for deploying applications on Talos Linux clusters.
 

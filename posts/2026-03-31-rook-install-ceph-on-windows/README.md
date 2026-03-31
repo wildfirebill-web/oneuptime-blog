@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Windows, WNBD, Storage, Installation
+Tags: Rook, Ceph, Window, WNBD, Storage, Installation
 
 Description: Learn how to install and configure Ceph client components on Windows, enabling RBD block devices and RADOS access from Windows servers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, INSERT, FORMAT, Data Ingestion
+Tags: ClickHouse, SQL, Insert, Format, Data Ingestion
 
 Description: Learn how to use INSERT with FORMAT in ClickHouse to ingest JSON, CSV, TSV, and Parquet data via clickhouse-client and the HTTP API.
 

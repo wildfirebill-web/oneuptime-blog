@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Sets, Embeddings, Similarity Search, Machine Learning
+Tags: Redis, Vector Set, Embedding, Similarity Search, Machine Learning
 
 Description: Learn how to use VADD in Redis to store vector embeddings in a vector set for efficient similarity search and nearest neighbor lookups.
 

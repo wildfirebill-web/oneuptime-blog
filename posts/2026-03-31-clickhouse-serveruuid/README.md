@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, UUID, Server, Diagnostics, Replication
+Tags: ClickHouse, UUID, Server, Diagnostic, Replication
 
 Description: Learn how serverUUID() returns the persistent unique identifier of a ClickHouse server instance, useful for multi-node diagnostics, sharding logic, and audit logging.
 

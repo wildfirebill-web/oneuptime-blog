@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Queue Storage, Scaling, High Throughput, Azure Storage, Performance, Distributed Systems
+Tags: Azure, Queue Storage, Scaling, High Throughput, Azure Storage, Performance, Distributed System
 
 Description: Learn how to scale Azure Queue Storage consumers horizontally for high-throughput message processing with auto-scaling strategies, batching, and performance optimization.
 

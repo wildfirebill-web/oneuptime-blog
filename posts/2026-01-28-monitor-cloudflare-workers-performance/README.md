@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cloudflare, Cloudflare Workers, Performance, Monitoring, Observability, Metrics, Serverless
+Tags: Cloudflare, Cloudflare Workers, Performance, Monitoring, Observability, Metric, Serverless
 
 Description: Learn how to monitor Cloudflare Workers performance with built-in analytics, custom metrics, and external observability tools.
 

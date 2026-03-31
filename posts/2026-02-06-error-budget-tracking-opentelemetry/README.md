@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Error Budget, SRE, SLO, Reliability, Metrics, Observability, Site Reliability Engineering
+Tags: OpenTelemetry, Error Budget, SRE, SLO, Reliability, Metric, Observability, Site Reliability Engineering
 
 Description: Learn how to implement error budget tracking with OpenTelemetry metrics, enabling your team to balance reliability investments against feature velocity using real production data.
 

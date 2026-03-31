@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Migration, Data Integrity, Validation, Operations
+Tags: MongoDB, Migration, Data Integrity, Validation, Operation
 
 Description: Learn how to validate data integrity after a MongoDB migration by comparing document counts, checksums, and field-level samples between source and target databases.
 

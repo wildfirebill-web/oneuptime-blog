@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Python, Sockets, Echo Server, Networking, Programming
+Tags: UDP, Python, Socket, Echo Server, Networking, Programming
 
 Description: Build a UDP echo server in Python using the socket module, with examples for both blocking and non-blocking modes and multi-client handling.
 

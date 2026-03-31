@@ -1,10 +1,10 @@
 # How to Configure InnoDB Flush Method in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, InnoDB, Configuration, Performance, Disk I/O
 
-Description: Learn how to configure the InnoDB flush method (fsync, O_DIRECT, O_DSYNC) to optimize disk I/O, avoid double buffering, and maximize write throughput on Linux.
+Description: Learn how to configure the InnoDB flush method to optimize disk I/O, avoid double buffering, and maximize write throughput on Linux using O_DIRECT.
 
 ---
 

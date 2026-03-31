@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Cluster Expansion, Kafka Operations, Distributed Systems, Scalability
+Tags: Apache Kafka, Cluster Expansion, Kafka Operations, Distributed System, Scalability
 
 Description: A comprehensive guide to expanding Apache Kafka clusters by adding new brokers and rebalancing partitions for improved performance and capacity.
 

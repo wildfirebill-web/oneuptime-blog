@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, Monitoring, Commands
+Tags: Redis, Pub/Sub, Monitoring, Command
 
 Description: Learn how to use PUBSUB NUMSUB in Redis to get the number of subscribers for specific channels, useful for monitoring and routing decisions.
 

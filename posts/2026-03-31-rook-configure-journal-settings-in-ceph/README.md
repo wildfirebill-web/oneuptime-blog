@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Journal, FileStore, Performance
+Tags: Rook, Ceph, Journal, Filestore, Performance
 
 Description: Learn how to configure Ceph journal settings for FileStore OSDs, including journal size, placement, and write-ahead log tuning.
 

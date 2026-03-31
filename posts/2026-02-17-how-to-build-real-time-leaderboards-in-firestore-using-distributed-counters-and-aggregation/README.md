@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Firestore, Leaderboards, Distributed Counters, Real-Time Data
+Tags: GCP, Firestore, Leaderboard, Distributed Counter, Real-Time Data
 
 Description: Learn how to build scalable real-time leaderboards in Firestore using distributed counters, aggregation queries, and real-time listeners for gaming and competitive applications.
 

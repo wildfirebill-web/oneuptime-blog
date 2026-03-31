@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RHEL, Prometheus, Grafana, Storage, Monitoring, Metrics, Linux
+Tags: RHEL, Prometheus, Grafana, Storage, Monitoring, Metric, Linux
 
 Description: Learn how to export RHEL storage metrics to Prometheus and visualize them in Grafana dashboards for comprehensive storage monitoring.
 

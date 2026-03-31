@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Prometheus, Observability, Latency
+Tags: Istio, Metric, Prometheus, Observability, Latency
 
 Description: Configure and query request duration histograms in Istio to track latency percentiles and identify slow services using Prometheus and Grafana.
 

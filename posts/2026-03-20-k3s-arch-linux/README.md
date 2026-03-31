@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Arch Linux, Linux, Installation
+Tags: k3s, Kubernetes, Arch Linux, Linux, Installation
 
 Description: A guide to installing K3s on Arch Linux, covering the AUR package and manual installation approaches with systemd service configuration.
 

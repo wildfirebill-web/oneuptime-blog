@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Security, TLS, JWT, NKey, Authentication, Authorization, Messaging, Microservices
+Tags: NATS, Security, TLS, JWT, NKey, Authentication, Authorization, Messaging, Microservice
 
 Description: A comprehensive guide to securing NATS messaging connections using TLS encryption, JWT/NKey authentication, and the Operator/Account/User hierarchy for fine-grained authorization.
 

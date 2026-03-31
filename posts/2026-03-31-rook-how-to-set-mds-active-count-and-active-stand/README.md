@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Cephfs, Kubernetes, Storage
+Tags: Rook, Ceph, CephFS, Kubernetes, Storage
 
 Description: Learn how to configure MDS active count and active standby settings in Rook CephFS for high availability and improved filesystem performance.
 

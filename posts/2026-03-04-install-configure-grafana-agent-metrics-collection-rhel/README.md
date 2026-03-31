@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Grafana, Metrics, Monitoring, Prometheus
+Tags: RHEL, Grafana, Metric, Monitoring, Prometheus
 
 Description: Set up the Grafana Agent on RHEL to collect system metrics and forward them to Grafana Cloud or a Prometheus-compatible backend.
 

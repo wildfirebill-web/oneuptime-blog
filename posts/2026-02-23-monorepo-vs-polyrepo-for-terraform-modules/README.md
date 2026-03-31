@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Monorepo, Repository Strategy, DevOps
+Tags: Terraform, Module, Monorepo, Repository Strategy, DevOps
 
 Description: Compare monorepo and polyrepo strategies for organizing Terraform modules, including versioning, CI/CD, code sharing, and practical guidance on when to use each approach.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Consumer Groups, Rebalancing, High Availability, Performance
+Tags: Kafka, Consumer Group, Rebalancing, High Availability, Performance
 
 Description: Minimize consumer group rebalancing disruption with cooperative protocols, static membership, and proper session timeout tuning.
 

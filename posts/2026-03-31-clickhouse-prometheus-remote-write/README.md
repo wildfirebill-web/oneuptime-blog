@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Prometheus, Remote Write, Metrics, Observability
+Tags: ClickHouse, Prometheus, Remote Write, Metric, Observability
 
 Description: Use ClickHouse as a Prometheus remote write backend for long-term metrics storage with SQL querying and significantly lower storage costs than Thanos or Cortex.
 

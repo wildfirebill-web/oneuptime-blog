@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Auto.tfvars, Configuration Files, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Auto.tfvars, Configuration Files, Infrastructure as Code, DevOps
 
 Description: Learn how to use .auto.tfvars files for automatic variable loading in OpenTofu without needing to specify -var-file flags.
 

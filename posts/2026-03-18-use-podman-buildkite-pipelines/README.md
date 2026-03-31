@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Buildkite, CI/CD, Pipeline
+Tags: Podman, Container, DevOps, Buildkite, CI/CD, Pipeline
 
 Description: Learn how to configure and use Podman in Buildkite pipelines for building, testing, and deploying container images with self-hosted agents.
 

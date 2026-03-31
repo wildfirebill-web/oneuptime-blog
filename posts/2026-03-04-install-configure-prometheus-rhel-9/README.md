@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Prometheus, Monitoring, Metrics, Linux
+Tags: RHEL, Prometheus, Monitoring, Metric, Linux
 
 Description: Learn how to install, configure, and run Prometheus as a systemd service on RHEL for collecting and querying time-series metrics from your infrastructure.
 

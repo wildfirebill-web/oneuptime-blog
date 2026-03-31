@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Microservices, Orchestration, Saga Pattern, Distributed Systems, Node.js, TypeScript, Event-Driven Architecture
+Tags: Microservice, Orchestration, Saga Pattern, Distributed System, Node.js, TypeScript, Event-Driven Architecture
 
 Description: Learn how to implement the orchestration pattern in microservices to coordinate complex business transactions. This guide covers practical implementations with Node.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Configuration, Devops, Database Administration
+Tags: MongoDB, Configuration, DevOps, Database Administration
 
 Description: Learn how to configure the MongoDB mongod process using a YAML configuration file to control storage, networking, logging, and security settings.
 

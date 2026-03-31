@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Terraform, Provisioners, DevOps, Automation
+Tags: Ansible, Terraform, Provisioner, DevOps, Automation
 
 Description: Use Terraform's local-exec provisioner to run Ansible playbooks automatically after infrastructure is created for seamless provisioning.
 

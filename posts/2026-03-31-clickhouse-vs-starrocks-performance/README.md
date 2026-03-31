@@ -1,6 +1,6 @@
 # ClickHouse vs StarRocks Performance Comparison
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, StarRocks, Performance, Database, Analytics, Benchmark
 

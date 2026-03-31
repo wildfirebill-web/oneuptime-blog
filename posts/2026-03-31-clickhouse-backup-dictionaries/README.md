@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Backup, Dictionary, Disaster Recovery, Operations
+Tags: ClickHouse, Backup, Dictionary, Disaster Recovery, Operation
 
 Description: Learn how to back up ClickHouse dictionaries, including their definitions and underlying data, to ensure full recovery after failures.
 

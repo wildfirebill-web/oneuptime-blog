@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Lookup Plugins, Loops, Indexing
+Tags: Ansible, Lookup Plugins, Loop, Indexing
 
 Description: Learn how to use the Ansible indexed_items lookup plugin to iterate over lists with automatic index numbers in your Ansible playbooks.
 

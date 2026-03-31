@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CI/CD, Rootless, Security
+Tags: Podman, Container, DevOps, CI/CD, Rootless, Security
 
 Description: Learn how to configure rootless Podman in CI environments for secure container builds without requiring root privileges or elevated permissions.
 

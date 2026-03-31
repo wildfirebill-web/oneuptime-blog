@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Docker Hub, Registry
+Tags: Podman, Container, DevOps, Container Image, Docker Hub, Registry
 
 Description: Learn how to push container images to Docker Hub using Podman, including account setup, authentication, tagging, and managing repositories.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Cosmos DB, Request Units, Cost Optimization, Performance Tuning, NoSQL
+Tags: Azure, Cosmos DB, Request Unit, Cost Optimization, Performance Tuning, NoSQL
 
 Description: Practical strategies to reduce Request Unit consumption in Azure Cosmos DB and lower your database costs without sacrificing performance.
 

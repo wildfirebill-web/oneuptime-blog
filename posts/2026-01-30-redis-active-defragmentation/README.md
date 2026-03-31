@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Memory, Performance, Operations
+Tags: Redis, Memory, Performance, Operation
 
 Description: A practical guide to enabling, tuning, and monitoring Redis active defragmentation to reclaim wasted memory without restarts.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Outbox Pattern, Microservices, Event-Driven, Database, Reliability
+Tags: Outbox Pattern, Microservice, Event-Driven, Database, Reliability
 
 Description: Implement the transactional outbox pattern for reliable event publishing with database transactions, polling, and CDC approaches.
 

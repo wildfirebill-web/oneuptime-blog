@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Telemetry API, Observability, Prometheus
+Tags: Istio, Metric, Telemetry API, Observability, Prometheus
 
 Description: Control exactly which metrics Istio collects and exports using the Telemetry API to add, remove, or disable specific metrics and labels.
 

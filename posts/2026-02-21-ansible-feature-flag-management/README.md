@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Feature Flags, DevOps, Configuration Management
+Tags: Ansible, Feature Flag, DevOps, Configuration Management
 
 Description: Manage feature flags across your infrastructure with Ansible to control feature rollouts, environment-specific toggles, and gradual releases.
 

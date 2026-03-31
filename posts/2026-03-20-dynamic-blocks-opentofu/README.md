@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Dynamic Blocks, Collections, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Dynamic Blocks, Collection, Infrastructure as Code, DevOps
 
 Description: A guide to using dynamic blocks in OpenTofu to generate repeated configuration blocks from a collection of values.
 

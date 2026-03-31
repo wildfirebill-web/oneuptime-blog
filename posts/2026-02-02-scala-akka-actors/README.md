@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Scala, Akka, Actors, Concurrency, JVM
+Tags: Scala, Akka, Actor, Concurrency, JVM
 
 Description: A practical guide to building concurrent applications in Scala using Akka's actor model, covering actor creation, message passing, supervision strategies, and production patterns.
 

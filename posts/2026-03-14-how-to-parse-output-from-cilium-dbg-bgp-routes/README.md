@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, BGP, Routes, Parsing, Scripting
+Tags: Cilium, BGP, Route, Parsing, Scripting
 
 Description: Parse cilium-dbg bgp routes output to extract route prefixes, next hops, and path attributes for automated analysis.
 

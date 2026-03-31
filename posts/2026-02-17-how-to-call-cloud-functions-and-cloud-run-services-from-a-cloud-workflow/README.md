@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Workflows, Cloud Functions, Cloud Run, Serverless
+Tags: GCP, Cloud Workflows, Cloud Function, Cloud Run, Serverless
 
 Description: Learn how to invoke Cloud Functions and Cloud Run services from Google Cloud Workflows to build orchestrated serverless pipelines with authenticated service calls.
 

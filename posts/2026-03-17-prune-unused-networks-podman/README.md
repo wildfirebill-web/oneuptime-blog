@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Cleanup, Maintenance
+Tags: Podman, Container, DevOps, Networking, Cleanup, Maintenance
 
 Description: Learn how to identify and remove unused Podman networks to keep your environment clean.
 

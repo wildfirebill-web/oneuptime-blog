@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Configs, Terraform, Compliance
+Tags: AWS, CONFIG, Terraform, Compliance
 
 Description: Learn how to enable and configure AWS Config with Terraform, including managed rules, custom rules, conformance packs, and remediation actions for compliance monitoring.
 

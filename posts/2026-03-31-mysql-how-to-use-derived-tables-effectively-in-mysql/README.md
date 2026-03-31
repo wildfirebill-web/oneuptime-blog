@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Derived Tables, SQL, Subqueries, Performance
+Tags: MySQL, Derived Table, SQL, Subqueries, Performance
 
 Description: Learn how to use derived tables in MySQL for complex aggregations, multi-step filtering, and pre-aggregated joins, and when to prefer CTEs instead.
 

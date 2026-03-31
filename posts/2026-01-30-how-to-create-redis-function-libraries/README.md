@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Functions, Lua, Performance
+Tags: Redis, Function, Lua, Performance
 
 Description: Learn how to create Redis Function libraries for server-side scripting with improved performance and atomic operations.
 

@@ -1,6 +1,6 @@
 # How to Implement Health Check Design
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: High Availability, Health Check, Kubernetes, Load Balancing
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Sharding, Database, ShardingSphere, Horizontal Scaling, Performance, Distributed Systems
+Tags: Java, Spring Boot, Sharding, Database, ShardingSphere, Horizontal Scaling, Performance, Distributed System
 
 Description: Learn how to implement database sharding in Spring Boot applications using Apache ShardingSphere (Sharding-JDBC).
 

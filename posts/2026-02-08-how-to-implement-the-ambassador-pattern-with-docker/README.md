@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Ambassador Pattern, Design Pattern, Proxy, Microservices, Container Architecture
+Tags: Docker, Ambassador Pattern, Design Pattern, Proxy, Microservice, Container Architecture
 
 Description: Learn how to implement the Ambassador container pattern in Docker to proxy, route, and manage external service connections transparently.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, PromQL, Alerting, Monitoring, Metrics, Observability
+Tags: Prometheus, PromQL, Alerting, Monitoring, Metric, Observability
 
 Description: Master PromQL query patterns for creating effective alerts that catch real issues without generating noise, including practical examples for common scenarios.
 

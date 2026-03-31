@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pi-hole, DNS, Ad Blocking, Network Security
+Tags: Podman, Container, DevOps, Pi-hole, DNS, Ad Blocking, Network Security
 
 Description: Learn how to run Pi-hole in a Podman container for network-wide DNS-based ad blocking with a web dashboard and custom blocklists.
 

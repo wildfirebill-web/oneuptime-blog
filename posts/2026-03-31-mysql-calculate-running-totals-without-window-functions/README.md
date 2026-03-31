@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Running Total, Query, Aggregation, Legacy
+Tags: MySQL, Running Total, Query, Aggregation, LEGACY
 
 Description: Calculate running totals in MySQL 5.6 and 5.7 without window functions using correlated subqueries, user variables, and self-joins.
 

@@ -1,6 +1,6 @@
 # How to Connect to a Remote MySQL Server
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Connection, Remote, Administration, Security
 

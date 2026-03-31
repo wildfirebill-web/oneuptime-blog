@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Sets, Embeddings, Dimensions, Index Management
+Tags: Redis, Vector Set, Embedding, Dimension, Index Management
 
 Description: Learn how to use VDIM in Redis to retrieve the dimensionality of vectors stored in a Vector Set, which is essential for compatibility validation.
 

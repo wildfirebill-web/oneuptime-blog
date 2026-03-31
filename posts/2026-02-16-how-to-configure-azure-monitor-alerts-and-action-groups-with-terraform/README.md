@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Monitoring, Alerts, Action Groups, IaC, Observability
+Tags: Terraform, Azure, Monitoring, Alert, Action Groups, IaC, Observability
 
 Description: Set up Azure Monitor metric alerts, log alerts, and action groups using Terraform for proactive infrastructure monitoring and incident response.
 

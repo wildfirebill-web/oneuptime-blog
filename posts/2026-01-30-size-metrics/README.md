@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Monitoring, SRE
+Tags: Observability, Metric, Monitoring, SRE
 
 Description: Learn how to design and implement size metrics for tracking resource consumption, data volumes, and capacity indicators across your infrastructure.
 

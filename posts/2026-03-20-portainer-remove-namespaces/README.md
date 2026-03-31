@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, DevOps
+Tags: Portainer, Kubernetes, Namespace, DevOps
 
 Description: Learn how to safely remove Kubernetes namespaces in Portainer, including handling stuck deletions and backing up important resources.
 

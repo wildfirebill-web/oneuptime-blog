@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Commands, Automation
+Tags: GitHub Action, CI/CD, Command, Automation
 
 Description: Learn how to build and use GitHub Actions workflow commands to control your CI/CD pipelines.
 

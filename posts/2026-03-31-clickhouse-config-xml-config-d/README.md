@@ -1,6 +1,6 @@
 # How to Use config.xml vs config.d Directory in ClickHouse
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, Server, BestPractice, Administration
 

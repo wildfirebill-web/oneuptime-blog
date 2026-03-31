@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Authentication, Security, Operations, User Management
+Tags: MongoDB, Authentication, Security, Operation, User Management
 
 Description: Enable MongoDB authentication to require username and password for all connections, securing your database from unauthorized access.
 

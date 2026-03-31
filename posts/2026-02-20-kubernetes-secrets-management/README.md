@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Secrets, Security, Encryption, Best Practice
+Tags: Kubernetes, Secret, Security, Encryption, Best Practice
 
 Description: Best practices for managing Kubernetes secrets including encryption at rest, external secret stores, and avoiding common mistakes.
 

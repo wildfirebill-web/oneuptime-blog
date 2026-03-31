@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Pub/Sub, Messaging, Redis, NATS, Event Streaming, Microservices, DevOps
+Tags: Docker, Pub/Sub, Messaging, Redis, NATS, Event Streaming, Microservice, DevOps
 
 Description: Set up publish-subscribe messaging between Docker containers using Redis Pub/Sub, NATS, and other message brokers for real-time communication.
 

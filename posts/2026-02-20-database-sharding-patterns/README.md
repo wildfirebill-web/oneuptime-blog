@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Database, Sharding, Scaling, Distributed, Patterns
+Tags: Database, Sharding, Scaling, Distributed, Pattern
 
 Description: A guide to database sharding patterns including hash-based, range-based, and geo-based sharding strategies.
 

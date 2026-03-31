@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Markdown, Productivity, Note-Taking, Developer Tools, Knowledge Management, Git, Plain Text
+Tags: Markdown, Productivity, Note-Taking, Developer Tool, Knowledge Management, Git, Plain Text
 
 Description: Discover why Markdown has become the ultimate format for note-taking.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Placement Groups, Networking, Performance
+Tags: AWS, EC2, Placement Group, Networking, Performance
 
 Description: Learn how to use EC2 placement groups to achieve low-latency networking between instances for performance-critical applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Netlify, Serverless, Edge Functions, JavaScript
+Tags: IPv6, Netlify, Serverless, Edge Function, JavaScript
 
 Description: Handle IPv6 client addresses in Netlify Functions and Edge Functions, including accessing client IPs, rate limiting, and logging IPv6 traffic.
 

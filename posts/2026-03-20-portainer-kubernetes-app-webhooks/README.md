@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Webhooks, CI/CD, DevOps
+Tags: Portainer, Kubernetes, Webhook, CI/CD, DevOps
 
 Description: Learn how to configure Portainer application webhooks for Kubernetes to enable automated deployments triggered by CI/CD pipelines.
 

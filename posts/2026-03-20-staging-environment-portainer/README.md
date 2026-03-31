@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Staging, CI/CD, DevOps, Environments
+Tags: Portainer, Docker, Staging, CI/CD, DevOps, Environment
 
 Description: Configure a dedicated staging environment in Portainer that mirrors production, enabling safe pre-release testing.
 

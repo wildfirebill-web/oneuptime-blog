@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Port Scanner, Sockets, IPv4, Security, Networking
+Tags: Python, Port Scanner, Socket, IPv4, Security, Networking
 
 Description: Learn how to build a multi-threaded TCP port scanner in Python using IPv4 sockets to discover open ports on a target host.
 

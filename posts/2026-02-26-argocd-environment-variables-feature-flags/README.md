@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Feature Flags, Configuration
+Tags: ArgoCD, GitOps, Kubernetes, Feature Flag, Configuration
 
 Description: Learn how to use ArgoCD environment variables as feature flags to enable or disable ArgoCD features, control experimental functionality, and customize component behavior.
 

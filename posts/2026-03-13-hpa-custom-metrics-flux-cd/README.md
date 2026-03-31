@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, HPA, Custom Metrics, Kubernetes, Autoscaling, Prometheus
+Tags: Flux CD, HPA, Custom Metric, Kubernetes, Autoscaling, Prometheus
 
 Description: Learn how to configure Kubernetes HPA with the custom metrics API using Flux CD, enabling scaling based on application-specific metrics like request queue depth.
 

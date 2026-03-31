@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Host Networking, Performance, Networks, Linux
+Tags: Portainer, Docker, Host Networking, Performance, Network, Linux
 
 Description: Configure containers to use host networking mode in Portainer for maximum network performance and direct access to host network interfaces, understanding the security tradeoffs.
 

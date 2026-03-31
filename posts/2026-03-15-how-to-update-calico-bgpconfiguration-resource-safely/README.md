@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, BGP, Kubernetes, Networking, BGPConfiguration, Operations, DevOps
+Tags: Calico, BGP, Kubernetes, Networking, BGPConfiguration, Operation, DevOps
 
 Description: Safely update the Calico BGPConfiguration resource without disrupting existing BGP sessions or causing route advertisement failures.
 

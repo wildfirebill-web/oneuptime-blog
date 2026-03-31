@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Lifecycle, Container Management
+Tags: Podman, Container, DevOps, Container Lifecycle, Container Management
 
 Description: Learn how to restart containers in Podman with configurable timeouts, and set up automatic restart policies for resilient services.
 

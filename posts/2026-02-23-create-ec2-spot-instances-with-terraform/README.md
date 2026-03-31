@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, EC2, Spot Instances, Cost Optimization
+Tags: Terraform, AWS, EC2, Spot Instance, Cost Optimization
 
 Description: A practical guide to provisioning AWS EC2 Spot Instances using Terraform, covering spot requests, spot fleets, launch templates, and interruption handling strategies.
 

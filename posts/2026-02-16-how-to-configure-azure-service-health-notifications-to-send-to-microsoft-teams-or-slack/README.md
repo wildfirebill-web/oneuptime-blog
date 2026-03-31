@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Service Health, Microsoft Teams, Slack, Notifications, Azure Monitor, ChatOps
+Tags: Azure, Service Health, Microsoft Teams, Slack, Notification, Azure Monitor, ChatOps
 
 Description: Step-by-step instructions for routing Azure Service Health alerts directly to Microsoft Teams or Slack channels so your team stays informed.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Merge Preserve, Json, Json Functions, Sql
+Tags: MySQL, Json Merge Preserve, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_MERGE_PRESERVE() function to merge JSON documents while preserving duplicate keys by combining their values into arrays.
 

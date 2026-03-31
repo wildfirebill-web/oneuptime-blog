@@ -1,4 +1,4 @@
-# How to Use $convert and $toInt and $toString for Type Casting in MongoDB Aggregation
+# How to Use $convert and Type Casting in MongoDB Aggregation
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

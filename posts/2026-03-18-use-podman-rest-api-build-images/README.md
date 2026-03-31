@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Container Images, DevOps, Image Building
+Tags: Podman, REST API, Container Image, DevOps, Image Building
 
 Description: Learn how to build container images from Containerfiles using the Podman REST API, including build arguments, multi-stage builds, and build cache management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Git, Git LFS, Large Files, Version Control, DevOps, Binary Files
+Tags: Git, Git LFS, Large File, Version Control, DevOps, Binary Files
 
 Description: A complete guide to setting up and using Git Large File Storage (LFS) to efficiently manage large binary files in your Git repositories.
 

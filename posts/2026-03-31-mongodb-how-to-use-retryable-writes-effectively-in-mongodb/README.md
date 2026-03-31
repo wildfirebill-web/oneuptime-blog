@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Retryable Writes, Reliability, Failover, Driver
+Tags: MongoDB, Retryable Write, Reliability, Failover, Driver
 
 Description: Learn how MongoDB retryable writes work, when they protect against failures, and how to configure and verify them in your application.
 

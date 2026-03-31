@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud Functions, Azure Functions, Serverless, Cloud Migration
+Tags: GCP, Google Cloud Functions, Azure Function, Serverless, Cloud Migration
 
 Description: A practical walkthrough for migrating Azure Functions to Google Cloud Functions, covering trigger conversion, binding translation, and achieving runtime parity across platforms.
 

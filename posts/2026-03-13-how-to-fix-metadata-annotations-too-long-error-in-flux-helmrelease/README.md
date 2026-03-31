@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, Error Messages, HelmRelease, Annotations, Helm
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, Error Messages, HelmRelease, Annotation, Helm
 
 Description: Learn how to diagnose and fix the 'metadata.annotations too long' error in Flux HelmRelease caused by the last-applied-configuration annotation exceeding Kubernetes limits.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Grafana, Visualization
+Tags: Calico, Kubernetes, Networking, Metric, Grafana, Visualization
 
 Description: Build comprehensive Grafana dashboards for Calico networking metrics including Felix performance, IPAM utilization, policy enforcement, and network topology visualization.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, IoT, Manufacturing, Industry 4.0, OPC-UA, MQTT, Edge Computing
+Tags: k3s, Kubernetes, IoT, Manufacturing, Industry 4.0, OPC-UA, MQTT, Edge Computing
 
 Description: Learn how to deploy K3s in manufacturing environments for industrial IoT workloads including OPC-UA integration, machine monitoring, and predictive maintenance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Canary, Kubernetes, StatefulSets, Progressive Delivery
+Tags: Flagger, Canary, Kubernetes, StatefulSet, Progressive Delivery
 
 Description: Learn how to configure a Flagger Canary resource for Kubernetes StatefulSets to safely roll out updates to stateful applications like databases and caches.
 

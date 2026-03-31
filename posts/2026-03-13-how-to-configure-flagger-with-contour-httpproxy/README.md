@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Contour, HTTPProxy, Kubernetes, Canary Deployments
+Tags: Flagger, Contour, HTTPProxy, Kubernetes, Canary Deployment
 
 Description: Learn how to configure Flagger with Contour HTTPProxy for progressive delivery and canary deployments on Kubernetes.
 

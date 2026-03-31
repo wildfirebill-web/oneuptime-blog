@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Functions, Hashing, Encoding
+Tags: OpenTofu, Terraform, Infrastructure as Code, Function, Hashing, Encoding
 
 Description: Learn how to use base64sha256 and base64sha512 in OpenTofu to produce Base64-encoded SHA hashes required by AWS Lambda and other services.
 

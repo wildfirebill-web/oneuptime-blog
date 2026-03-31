@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Envoy, Metrics, Proxy, Observability, Kubernetes
+Tags: Istio, Envoy, Metric, Proxy, Observability, Kubernetes
 
 Description: Step-by-step guide to configuring proxy-level metric generation in Istio for granular observability into your service mesh traffic.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Snapshot, Environments, Monitoring, Edge
+Tags: Portainer, Snapshot, Environment, Monitoring, Edge
 
 Description: Configure Portainer environment snapshots to periodically capture the state of your environments for offline viewing and change tracking.
 

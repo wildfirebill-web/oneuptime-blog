@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Ports, Platform Engineering, IdP, Developer Portal
+Tags: Flux CD, Kubernetes, GitOps, Port, Platform Engineering, IdP, Developer Portal
 
 Description: Integrate Flux CD with Port IDP for developer self-service so teams can view GitOps deployment state and trigger Flux operations directly from the Port developer portal.
 

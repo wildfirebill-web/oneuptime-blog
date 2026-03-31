@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, DateTime, DateTime64, Timezone
+Tags: ClickHouse, SQL, Data Type, DateTime, DateTime64, Timezone
 
 Description: Learn how to use DateTime and DateTime64 in ClickHouse, covering second vs sub-second precision, the precision parameter, timezone handling, and examples.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Log Normalization, SIEM, ECS, CEF, LEEF, Data Pipelines
+Tags: IPv6, Log Normalization, SIEM, ECS, CEF, LEEF, Data Pipeline
 
 Description: Normalize IPv6 addresses across different log formats and representations to enable consistent SIEM analysis, correlation, and threat detection.
 

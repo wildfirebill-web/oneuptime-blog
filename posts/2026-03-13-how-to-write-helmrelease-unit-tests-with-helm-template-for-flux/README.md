@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Testing, Helm, Unit Tests, CI/CD
+Tags: Flux, Kubernetes, GitOps, Testing, Helm, Unit Test, CI/CD
 
 Description: Learn how to write unit tests for Flux HelmRelease configurations using helm template to validate chart rendering before deployment.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Instance Management, Operations, CLI
+Tags: Dapr, Workflow, Instance Management, Operation, CLI
 
 Description: Learn how to manage Dapr workflow instances - start, query, pause, resume, terminate, and purge workflows using the CLI, HTTP API, and SDK.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Mutations, DDL, Troubleshooting, Operations
+Tags: ClickHouse, Mutation, DDL, Troubleshooting, Operation
 
 Description: Learn why ClickHouse mutations get killed and how to prevent, diagnose, and resume failed ALTER TABLE UPDATE and DELETE operations.
 

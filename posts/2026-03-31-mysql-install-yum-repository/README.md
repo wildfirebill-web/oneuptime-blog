@@ -1,6 +1,6 @@
 # How to Install MySQL Using the YUM Repository
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Installation, YUM, RHEL, CentOS
 

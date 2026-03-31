@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, HCL, Type Constraints, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, HCL, Type Constraints, Infrastructure as Code, DevOps
 
 Description: Learn how to handle complex variable types in OpenTofu, including objects, lists of objects, maps of objects, optional attributes, and nested type constraints.
 

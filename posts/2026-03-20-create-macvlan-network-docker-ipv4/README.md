@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, Macvlan, IPv4, Containers, LAN
+Tags: Docker, Networking, Macvlan, IPv4, Container, LAN
 
 Description: Create a Docker macvlan network that allows containers to appear as physical devices on your LAN with their own MAC addresses and IPv4 addresses routable from the broader network.
 

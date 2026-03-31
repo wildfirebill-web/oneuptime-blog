@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Window Functions, Analytics, SQL
+Tags: MySQL, Window Function, Analytics, SQL
 
 Description: Learn how to use window functions in MySQL 8 to perform rankings, running totals, and moving averages without collapsing result rows.
 

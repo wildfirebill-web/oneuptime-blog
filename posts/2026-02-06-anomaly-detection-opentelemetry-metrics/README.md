@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Anomaly Detection, Metrics, Machine Learning, Alerting, Observability, Automation
+Tags: OpenTelemetry, Anomaly Detection, Metric, Machine Learning, Alerting, Observability, Automation
 
 Description: Learn how to build automated anomaly detection systems using OpenTelemetry metrics, from simple statistical methods to more advanced approaches for catching unusual behavior in production.
 

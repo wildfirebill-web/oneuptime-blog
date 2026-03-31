@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, YAML, Jobs, Batch
+Tags: Podman, Container, DevOps, Kubernetes, YAML, Job, Batch
 
 Description: Learn how to generate a Kubernetes Job manifest from a Podman container for batch processing workloads.
 

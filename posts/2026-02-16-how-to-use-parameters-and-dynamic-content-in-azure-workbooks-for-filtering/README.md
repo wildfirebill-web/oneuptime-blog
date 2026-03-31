@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Azure Workbooks, Parameters, Dynamic Content, Filtering, Log Analytics, Azure Monitor
+Tags: Azure, Azure Workbooks, Parameter, Dynamic Content, Filtering, Log Analytics, Azure Monitor
 
 Description: Learn how to use parameters and dynamic content in Azure Workbooks to create interactive filtering experiences for monitoring dashboards and reports.
 

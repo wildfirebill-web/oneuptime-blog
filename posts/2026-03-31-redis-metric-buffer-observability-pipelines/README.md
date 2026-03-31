@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Observability, Metrics, Pipeline, Monitoring
+Tags: Redis, Observability, Metric, Pipeline, Monitoring
 
 Description: Use Redis lists and streams as a high-throughput metric buffer between your instrumented services and long-term storage backends.
 

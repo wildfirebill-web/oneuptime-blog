@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WireMock, API Mocking, Testing, Microservices, Service Virtualization, Java
+Tags: WireMock, API Mocking, Testing, Microservice, Service Virtualization, Java
 
 Description: Learn how to implement API mocking with WireMock for isolated testing, including stub configuration, request matching, and integration testing patterns.
 

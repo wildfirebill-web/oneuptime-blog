@@ -1,4 +1,4 @@
-# How to Tune OSD Memory in Rook-Ceph
+# How to Configure Tune OSD Memory in Rook-Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

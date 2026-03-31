@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Build, Image Optimization
+Tags: Podman, Container, DevOps, Build, Image Optimization
 
 Description: Learn practical techniques to reduce container image sizes with Podman, from choosing minimal base images to multi-stage builds and layer optimization.
 

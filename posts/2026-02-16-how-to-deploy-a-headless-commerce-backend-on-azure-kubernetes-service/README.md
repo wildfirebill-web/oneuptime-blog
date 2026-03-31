@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Kubernetes Service, Headless Commerce, E-Commerce, Microservices, AKS, Retail, Container Orchestration
+Tags: Azure Kubernetes Service, Headless Commerce, E-Commerce, Microservice, AKS, Retail, Container Orchestration
 
 Description: Deploy a headless commerce backend on Azure Kubernetes Service with microservices for catalog, cart, checkout, and order management.
 

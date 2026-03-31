@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Images, Backup, Container Registry, DevOps
+Tags: Podman, Image, Backup, Container Registry, DevOps
 
 Description: Learn how to back up Podman images using save, push, and registry mirroring so you can recover your container environment even when upstream registries are unavailable.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Internals, Fork, Persistence, Memory
+Tags: Redis, Internal, Fork, Persistence, Memory
 
 Description: Understand how Redis uses OS copy-on-write semantics during BGSAVE and BGREWRITEAOF to create point-in-time snapshots without duplicating memory.
 

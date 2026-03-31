@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Jumbograms, Linux, Jumbo Frames, HPC Networking
+Tags: IPv6, Jumbograms, Linux, Jumbo Frame, HPC Networking
 
 Description: Configure Linux to send and receive IPv6 jumbograms, set jumbo frame MTU on high-performance interfaces, and verify jumbogram support in the kernel.
 

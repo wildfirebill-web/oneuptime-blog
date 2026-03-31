@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NodeJS, Configuration, Environment Variables, Security, Best Practice
+Tags: NodeJS, Configuration, Environment Variable, Security, Best Practice
 
 Description: Manage environment variables in Node.js applications using dotenv for configuration, with proper validation, type coercion, and secure practices for different environments.
 

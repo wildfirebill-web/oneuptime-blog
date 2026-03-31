@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Custom Metrics, Instrumentation, Monitoring, Observability
+Tags: Prometheus, Custom Metric, Instrumentation, Monitoring, Observability
 
 Description: Learn how to create and expose custom Prometheus metrics from your applications for business and operational monitoring.
 

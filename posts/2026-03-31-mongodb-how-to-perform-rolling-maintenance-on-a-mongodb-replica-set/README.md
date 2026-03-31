@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, Rolling Maintenance, Upgrades, High Availability
+Tags: MongoDB, Replica Set, Rolling Maintenance, Upgrade, High Availability
 
-Description: Learn how to perform rolling maintenance on a MongoDB replica set - including upgrades, config changes, and restarts - without downtime using stepdown and rolling procedures.
+Description: Learn how to perform rolling maintenance on a MongoDB replica set without downtime using stepdown and sequential secondary restart procedures.
 
 ---
 

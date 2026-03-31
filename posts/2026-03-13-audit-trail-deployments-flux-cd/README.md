@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Audit Trail, Compliance, Logging, Events
+Tags: Flux CD, GitOps, Kubernetes, Audit Trail, Compliance, Logging, Event
 
 Description: Use Git history and Flux CD events together to create a complete, tamper-evident deployment audit trail that satisfies compliance requirements for change traceability.
 

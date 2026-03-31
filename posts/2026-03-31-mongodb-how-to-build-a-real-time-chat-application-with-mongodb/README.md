@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Real-Time, Chat, Change Streams, Socket.io
+Tags: MongoDB, Real-Time, Chat, Change Stream, Socket.IO
 
 Description: Build a scalable real-time chat application using MongoDB Change Streams and Socket.io to deliver messages instantly across connected clients.
 

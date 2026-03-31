@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Nfs, Cephfs, Kubernetes, Storage
+Tags: Rook, Ceph, NFS, CephFS, Kubernetes, Storage
 
 Description: Configure NFS exports in Rook backed by CephFS to provide standard NFS access to CephFS filesystems for clients that cannot use the native CSI driver.
 

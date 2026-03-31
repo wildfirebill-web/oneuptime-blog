@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, mongosh, Shell, Tools, Development, Administration
+Tags: MongoDB, Mongosh, Shell, Tool, Development, Administration
 
 Description: A comprehensive guide to mongosh - connection options, CRUD operations, aggregation, scripting, configuration, and productivity tips for daily MongoDB administration.
 

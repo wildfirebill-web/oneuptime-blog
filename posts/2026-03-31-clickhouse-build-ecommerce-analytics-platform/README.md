@@ -1,8 +1,8 @@
 # How to Build an E-Commerce Analytics Platform with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, E-commerce, Analytics, Tutorial, Database, Retail
+Tags: ClickHouse, E-Commerce, Analytics, Tutorial, Database, Retail
 
 Description: Build a complete e-commerce analytics platform with ClickHouse, covering sales reporting, customer lifetime value, cart abandonment, inventory analytics, and product performance.
 

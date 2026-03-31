@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Replication, Monitoring, Info, Observability
+Tags: Redis, Replication, Monitoring, INFO, Observability
 
 Description: Learn how to use INFO replication to monitor Redis primary-replica replication health, lag, and offset, with practical examples and alerting guidance.
 

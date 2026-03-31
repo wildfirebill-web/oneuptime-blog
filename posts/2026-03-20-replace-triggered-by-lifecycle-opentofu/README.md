@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Lifecycle, Replace_triggered_by, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, Lifecycle, Replace_triggered_by, Infrastructure as Code, DevOps
 
 Description: A guide to using replace_triggered_by lifecycle in OpenTofu to trigger resource replacement when other resources change.
 

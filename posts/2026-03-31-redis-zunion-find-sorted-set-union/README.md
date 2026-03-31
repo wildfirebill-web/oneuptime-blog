@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted set, ZUNION, Command
+Tags: Redis, Sorted Set, ZUNION, Command
 
 Description: Learn how to use ZUNION in Redis to merge multiple sorted sets with score aggregation options, returning all unique members with combined scores.
 

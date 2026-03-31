@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, RebalanceInProgressException, Consumer Groups, Rebalancing, Partition Assignment, Error Handling
+Tags: Apache Kafka, RebalanceInProgressException, Consumer Group, Rebalancing, Partition Assignment, Error Handling
 
 Description: Learn how to diagnose and fix Kafka RebalanceInProgressException errors, understand rebalancing causes, and implement strategies for stable consumer groups.
 

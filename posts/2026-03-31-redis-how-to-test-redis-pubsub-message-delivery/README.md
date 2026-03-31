@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, Testing, Messaging, Integration Tests
+Tags: Redis, Pub/Sub, Testing, Messaging, Integration Test
 
 Description: Learn how to write reliable tests for Redis Pub/Sub message delivery, covering subscription timing, message ordering, and channel pattern matching.
 

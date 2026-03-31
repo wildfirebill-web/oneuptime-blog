@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Monitoring
+Tags: Podman, Container, DevOps, Logging, Monitoring
 
 Description: Learn how to stream and follow container logs in real-time using Podman, including filtering live output and monitoring multiple containers simultaneously.
 

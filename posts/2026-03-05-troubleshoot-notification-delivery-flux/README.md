@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Troubleshooting, Debugging
+Tags: Flux CD, GitOps, Kubernetes, Notification, Troubleshooting, Debugging
 
 Description: Learn how to diagnose and fix notification delivery failures in Flux CD, covering common issues with providers, alerts, and the notification controller.
 

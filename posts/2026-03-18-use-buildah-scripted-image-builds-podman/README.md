@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Buildah, Scripted Builds, Automation, CI/CD, Bash
+Tags: Podman, Container, DevOps, Buildah, Scripted Builds, Automation, CI/CD, Bash
 
 Description: Learn how to use Buildah in shell scripts for fully automated, repeatable container image builds without Containerfiles.
 

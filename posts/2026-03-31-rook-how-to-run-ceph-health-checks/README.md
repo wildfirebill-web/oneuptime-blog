@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Health Checks, Monitoring, Kubernetes, Administration
+Tags: Rook, Ceph, Health Check, Monitoring, Kubernetes, Administration
 
 Description: Learn how to run comprehensive Ceph health checks from the Rook toolbox to assess cluster status, identify warnings, and diagnose performance issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Pulsar, Messaging, Event Streaming, Distributed Systems, DevOps, Architecture
+Tags: Apache Pulsar, Messaging, Event Streaming, Distributed System, DevOps, Architecture
 
 Description: A comprehensive guide to designing Apache Pulsar topics and namespaces for scalable, maintainable event-driven architectures.
 

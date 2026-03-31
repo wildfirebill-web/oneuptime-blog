@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NATS, Messaging, Performance, Microservices, Go, Backend, Distributed Systems
+Tags: NATS, Messaging, Performance, Microservice, Go, Backend, Distributed System
 
 Description: Learn how to optimize NATS performance for high-throughput messaging systems.
 

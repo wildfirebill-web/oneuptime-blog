@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Monitoring, SRE
+Tags: Observability, Metric, Monitoring, SRE
 
 Description: Learn how to implement percentage-based metrics for CPU utilization, memory usage, and other capacity measurements.
 

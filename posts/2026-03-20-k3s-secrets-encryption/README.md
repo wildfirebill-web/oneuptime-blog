@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Security, Encryption, Secrets, Compliance, DevOps
+Tags: k3s, Kubernetes, Security, Encryption, Secret, Compliance, DevOps
 
 Description: Learn how to enable and manage secrets encryption at rest in K3s to protect sensitive data stored in the cluster datastore.
 

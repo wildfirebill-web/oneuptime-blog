@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, OpenTelemetry, Observability, Monitoring, Metrics, Logs, Traces
+Tags: Kubernetes, OpenTelemetry, Observability, Monitoring, Metric, Log, Trace
 
 Description: A practical, multi-signal playbook for wiring Kubernetes metrics, logs, and traces through OpenTelemetry into OneUptime dashboards, alerts, and workflows.
 

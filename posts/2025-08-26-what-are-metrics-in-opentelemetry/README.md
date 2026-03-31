@@ -2,7 +2,7 @@
 
 Author: [devneelpatel](https://www.github.com/devneelpatel)
 
-Tags: OpenTelemetry, Metrics, Observability, TypeScript, NodeJS, Monitoring
+Tags: OpenTelemetry, Metric, Observability, TypeScript, NodeJS, Monitoring
 
 Description: A comprehensive guide to understanding metrics in OpenTelemetry. What they are, how they work, and how to implement them effectively with practical code examples.
 

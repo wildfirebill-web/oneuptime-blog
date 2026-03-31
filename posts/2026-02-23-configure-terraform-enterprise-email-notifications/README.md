@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terraform Enterprise, Email, Notifications, SMTP, DevOps
+Tags: Terraform, Terraform Enterprise, Email, Notification, SMTP, DevOps
 
 Description: Learn how to configure email notifications in Terraform Enterprise, including SMTP setup, notification triggers, workspace-level notifications, and troubleshooting delivery issues.
 

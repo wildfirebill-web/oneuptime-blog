@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, MariaDB, MySQL, Collector, Database Monitoring, Metrics, Observability
+Tags: OpenTelemetry, MariaDB, MySQL, Collector, Database Monitoring, Metric, Observability
 
 Description: Configure the OpenTelemetry Collector to monitor MariaDB server metrics including query performance, connection pools, replication status, and InnoDB internals.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Networking, Stacks, DevOps
+Tags: Portainer, Docker Compose, Networking, Stack, DevOps
 
 Description: Configure custom Docker networks in Portainer stacks for service isolation, external access, and multi-host connectivity.
 

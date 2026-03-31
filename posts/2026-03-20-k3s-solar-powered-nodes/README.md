@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Edge Computing, IoT, Solar Power, Sustainability, Green Computing
+Tags: k3s, Kubernetes, Edge Computing, IoT, Solar Power, Sustainability, Green Computing
 
 Description: Learn how to deploy K3s on solar-powered edge nodes with power management strategies for reliable operation on renewable energy.
 

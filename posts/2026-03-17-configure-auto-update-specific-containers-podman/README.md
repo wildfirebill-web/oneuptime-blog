@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Auto-Update, Selective Updates
+Tags: Podman, Container, DevOps, Auto-Update, Selective Updates
 
 Description: Learn how to enable auto-update for only specific Podman containers while keeping others on fixed versions.
 

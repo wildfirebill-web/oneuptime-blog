@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud, Cloud Workstations, VS Code, IDE, Development Environments
+Tags: GCP, Google Cloud, Cloud Workstations, VS Code, IDE, Development Environment
 
 Description: Learn how to configure VS Code as the default IDE in Google Cloud Workstations including extensions, settings, and connecting from your local VS Code client.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Monitoring, Networking, Operations, Observability
+Tags: Rook, Ceph, Monitoring, Networking, Operation, Observability
 
 Description: Monitor network health between Ceph nodes using latency checks, bandwidth tests, packet loss detection, and Prometheus metrics to proactively identify connectivity issues.
 

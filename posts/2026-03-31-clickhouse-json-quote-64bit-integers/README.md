@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Configuration, Format, Output
+Tags: ClickHouse, JSON, Configuration, Format, Output
 
 Description: Learn how output_format_json_quote_64bit_integers controls whether 64-bit integers are quoted as strings in ClickHouse JSON output, and when to change it.
 

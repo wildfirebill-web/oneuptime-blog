@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Modules
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Module
 
 Description: Learn how to pass provider configurations to child modules in OpenTofu for multi-region, multi-account, and multi-cloud deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Huey, Background Tasks, Task Queue, Redis, Scheduling, Periodic Tasks, Async
+Tags: Python, Huey, Background Task, Task Queue, Redis, Scheduling, Periodic Task, Async
 
 Description: Learn how to implement background tasks in Python with Huey - a lightweight task queue that handles scheduling, retries, and periodic tasks with minimal configuration.
 

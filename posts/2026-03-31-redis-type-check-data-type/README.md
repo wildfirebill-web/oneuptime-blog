@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, TYPE, Key Management, Data Structure, Inspection
+Tags: Redis, Type, Key Management, Data Structure, Inspection
 
 Description: Learn how to use the TYPE command in Redis to determine the data type of a key, understand the possible return values, and use it in keyspace inspection workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Traefik, Circuit Breaker, Resilience, Microservices, Fault Tolerance
+Tags: Traefik, Circuit Breaker, Resilience, Microservice, Fault Tolerance
 
 Description: Configure circuit breaker middleware in Traefik to protect your services from cascading failures, with practical examples and monitoring strategies.
 

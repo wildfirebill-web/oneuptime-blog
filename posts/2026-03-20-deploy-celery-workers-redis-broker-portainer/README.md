@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Celery, Redis, Python, Portainer, Docker, Task Queue, Background Jobs
+Tags: Celery, Redis, Python, Portainer, Docker, Task Queue, Background Job
 
 Description: Deploy a Celery distributed task queue with Redis as the message broker using Portainer stacks, including worker scaling, monitoring with Flower, and beat scheduler configuration.
 

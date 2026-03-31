@@ -1,6 +1,6 @@
 # How to Skip Replication Errors in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Replication, Error Handling, Administration, Troubleshooting
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RabbitMQ, Message Queues, AMQP
+Tags: Rancher, Kubernetes, RabbitMQ, Message Queue, AMQP
 
 Description: Deploy a production-ready RabbitMQ cluster on Rancher using the RabbitMQ Cluster Operator with high availability, persistent storage, and monitoring.
 

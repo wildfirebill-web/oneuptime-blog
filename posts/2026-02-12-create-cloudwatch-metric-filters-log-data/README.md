@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CloudWatch, Logging, Metrics, Monitoring
+Tags: AWS, CloudWatch, Logging, Metric, Monitoring
 
 Description: Learn how to create CloudWatch metric filters that automatically extract custom metrics from your log data, enabling alarms and dashboards based on log patterns.
 

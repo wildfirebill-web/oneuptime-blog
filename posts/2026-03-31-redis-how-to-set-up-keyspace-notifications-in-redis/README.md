@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Keyspace Notifications, Configuration, Pub/Sub, Setup
+Tags: Redis, Keyspace Notification, Configuration, Pub/Sub, Setup
 
 Description: A step-by-step guide to enabling and configuring Redis keyspace notifications, choosing the right event flags, and verifying the setup works correctly.
 

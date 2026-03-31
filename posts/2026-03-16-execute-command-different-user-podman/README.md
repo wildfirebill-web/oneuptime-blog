@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Exec, User Management
+Tags: Podman, Container, DevOps, Container Exec, User Management
 
 Description: Learn how to run commands as different users inside Podman containers using the --user flag, including root, named users, and UID/GID combinations.
 

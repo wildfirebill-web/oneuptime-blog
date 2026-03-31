@@ -1,6 +1,6 @@
 # How to Configure Authentication for External Ceph Clusters in Rook
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage
 

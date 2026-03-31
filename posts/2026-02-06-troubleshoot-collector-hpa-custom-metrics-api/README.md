@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, HPA, Autoscaling, Custom Metrics
+Tags: OpenTelemetry, HPA, Autoscaling, Custom Metric
 
 Description: Fix Horizontal Pod Autoscaler failures for the Collector caused by a missing or misconfigured custom metrics API server.
 

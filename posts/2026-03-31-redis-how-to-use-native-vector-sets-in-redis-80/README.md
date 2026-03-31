@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Sets, Similarity Search, Redis 8.0, Machine Learning
+Tags: Redis, Vector Set, Similarity Search, Redis 8.0, Machine Learning
 
 Description: Use Redis 8.0 native Vector Sets with VADD, VDIM, and VSIM commands to store and search high-dimensional vectors for similarity and recommendation systems.
 

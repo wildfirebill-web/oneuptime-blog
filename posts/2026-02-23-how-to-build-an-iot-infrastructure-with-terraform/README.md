@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure Patterns, IoT, AWS IoT Core, Sensors, Edge Computing
+Tags: Terraform, Infrastructure Patterns, IoT, AWS IoT Core, Sensor, Edge Computing
 
 Description: Learn how to build a scalable IoT infrastructure with Terraform including device provisioning, message routing, data processing pipelines, and device monitoring.
 

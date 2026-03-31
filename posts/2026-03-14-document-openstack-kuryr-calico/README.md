@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenStack, Calico, Kuryr, Documentation, Operations
+Tags: OpenStack, Calico, Kuryr, Documentation, Operation
 
 Description: A guide to creating operational documentation for Kuryr-Kubernetes integration with Calico in OpenStack, covering the integration architecture, troubleshooting procedures, and maintenance runbooks.
 

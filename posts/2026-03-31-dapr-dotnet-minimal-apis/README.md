@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Minimal Api, Microservice, Api, Integration
+Tags: Dapr, DotNet, Minimal API, Microservice, API, Integration
 
 Description: Build lightweight Dapr-powered microservices using .NET Minimal APIs for pub/sub, state management, and service invocation with minimal boilerplate.
 

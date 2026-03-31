@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Concurrency, Performance
 
-Description: Learn how MongoDB's intent lock hierarchy works, when locks are held, and how to avoid lock contention in high-concurrency applications.
+Description: Learn how MongoDB intent lock hierarchy works, when locks are held, and how to avoid lock contention in high-concurrency applications.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Pods, Multi-Container
+Tags: Podman, Container, DevOps, Podman Desktop, Pod, Multi-Container
 
 Description: Learn how to create and manage pods in Podman Desktop to group related containers together for streamlined multi-container workflows.
 

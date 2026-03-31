@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Linux, Security, Capabilities
+Tags: Podman, Container, DevOps, Linux, Security, Capabilities
 
 Description: Learn how to grant specific Linux capabilities to Podman containers for fine-grained privilege control without running as root.
 

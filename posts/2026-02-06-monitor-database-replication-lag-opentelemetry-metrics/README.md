@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Replication, Database, Metrics, PostgreSQL, MySQL, MongoDB, Observability, High Availability
+Tags: OpenTelemetry, Replication, Database, Metric, PostgreSQL, MySQL, MongoDB, Observability, High Availability
 
 Description: Monitor database replication lag across PostgreSQL, MySQL, and MongoDB using OpenTelemetry metrics to detect replica drift, prevent stale reads, and maintain data consistency.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, HPA, Metrics
+Tags: Kubernetes, HPA, Metric
 
 Description: Configure Horizontal Pod Autoscaler with pods metrics type to scale based on custom per-pod metrics like request rate, connection count, or application-specific performance indicators.
 

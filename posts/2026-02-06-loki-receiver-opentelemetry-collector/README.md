@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Loki, Grafana, Logs, Promtail, Migration
+Tags: OpenTelemetry, Collector, Loki, Grafana, Log, Promtail, Migration
 
 Description: Learn how to configure the Loki receiver in OpenTelemetry Collector to ingest logs from Promtail and other Loki-compatible clients for centralized log management.
 

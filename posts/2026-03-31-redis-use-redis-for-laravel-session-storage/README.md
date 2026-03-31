@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Laravel, Sessions, PHP, Authentication
+Tags: Redis, Laravel, Session, PHP, Authentication
 
 Description: Configure Laravel to store sessions in Redis for scalable, cross-server session sharing in multi-instance deployments with configurable TTL.
 

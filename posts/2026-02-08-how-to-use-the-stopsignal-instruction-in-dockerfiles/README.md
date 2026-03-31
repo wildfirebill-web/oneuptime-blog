@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Dockerfile, STOPSIGNAL, Signals, Graceful Shutdown, DevOps
+Tags: Docker, Dockerfile, STOPSIGNAL, Signal, Graceful Shutdown, DevOps
 
 Description: Learn how to use the STOPSIGNAL instruction in Dockerfiles to control how containers receive shutdown signals for graceful termination.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, OpenVPN, Easy-RSA, Certificates, Linux
+Tags: RHEL, OpenVPN, Easy-RSA, Certificate, Linux
 
 Description: A detailed walkthrough of using Easy-RSA 3 on RHEL to build a complete PKI for OpenVPN, including CA creation, server and client certificates, CRL management, and certificate renewal.
 

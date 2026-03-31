@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Storage, Configuration, Disk Management
+Tags: Podman, Container, DevOps, Storage, Configuration, Disk Management
 
 Description: Learn how to change the default container storage location in Podman to use a different disk, partition, or directory for images and containers.
 

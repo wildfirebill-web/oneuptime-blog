@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitHub Actions, CI/CD, Infrastructure as Code, IaC, Pull Requests
+Tags: OpenTofu, GitHub Action, CI/CD, Infrastructure as Code, IaC, Pull Requests
 
 Description: Learn how to automatically post OpenTofu plan output as pull request comments for infrastructure change reviews.
 

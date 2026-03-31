@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Kubernetes, CI/CD, Auto-Scaling, DevOps
+Tags: GitHub Action, Kubernetes, CI/CD, Auto-Scaling, DevOps
 
 Description: Set up self-hosted GitHub Actions runners on Kubernetes with automatic scaling based on workload demand using actions-runner-controller for cost-effective CI/CD.
 

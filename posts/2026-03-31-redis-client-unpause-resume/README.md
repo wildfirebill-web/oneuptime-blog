@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CLIENT, Connection, Operations, Maintenance
+Tags: Redis, Client, Connection, Operation, Maintenance
 
 Description: Learn how to use CLIENT UNPAUSE in Redis to immediately resume command processing for all paused clients before the CLIENT PAUSE timeout expires.
 

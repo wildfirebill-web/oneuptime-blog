@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terragrunt, Hooks, Automation, Infrastructure as Code, DevOps
+Tags: Terraform, Terragrunt, Hook, Automation, Infrastructure as Code, DevOps
 
 Description: Learn how to use Terragrunt before_hook and after_hook to run custom commands before and after Terraform operations, with practical examples for validation, notifications, and cleanup.
 

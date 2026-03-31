@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Certificates, TLS, Security
+Tags: Podman, Container, DevOps, Podman Desktop, Certificate, TLS, Security
 
 Description: Learn how to manage TLS certificates in Podman Desktop for secure communication with private registries, custom CAs, and self-signed certificates.
 

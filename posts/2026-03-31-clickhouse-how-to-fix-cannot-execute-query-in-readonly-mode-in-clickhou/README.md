@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Permissions, Configuration, Troubleshooting
+Tags: ClickHouse, Permission, Configuration, Troubleshooting
 
 Description: Fix ClickHouse 'Cannot execute query in readonly mode' by identifying the readonly setting source and adjusting user profiles or connection settings.
 

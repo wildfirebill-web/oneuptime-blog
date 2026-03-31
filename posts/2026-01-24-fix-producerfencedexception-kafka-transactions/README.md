@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Transactions, ProducerFencedException, Java, Distributed Systems, Exactly-Once, Troubleshooting
+Tags: Kafka, Transaction, ProducerFencedException, Java, Distributed System, Exactly-Once, Troubleshooting
 
 Description: Learn how to diagnose and fix ProducerFencedException in Kafka transactional producers, understand transaction fencing mechanisms, and implement robust exactly-once processing patterns.
 

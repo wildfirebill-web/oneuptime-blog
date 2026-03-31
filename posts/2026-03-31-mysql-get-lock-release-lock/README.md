@@ -1,6 +1,6 @@
 # How to Use GET_LOCK() and RELEASE_LOCK() in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Lock, Concurrency, Function, Advisory Lock
 

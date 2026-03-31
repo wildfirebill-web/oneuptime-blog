@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, AWX, Credentials, Security, Secrets Management
+Tags: Ansible, AWX, Credential, Security, Secrets Management
 
 Description: Create and manage AWX credentials for SSH, cloud providers, vault passwords, and custom credential types with secure practices.
 

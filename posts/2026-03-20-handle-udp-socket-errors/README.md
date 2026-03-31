@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Sockets, Error Handling, Python, Linux, Programming
+Tags: UDP, Socket, Error Handling, Python, Linux, Programming
 
 Description: Handle UDP socket errors including ICMP port unreachable delivery, ENOBUFS, ECONNREFUSED, and timeout errors correctly in application code.
 

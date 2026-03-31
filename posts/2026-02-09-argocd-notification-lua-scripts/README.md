@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ArgoCD, Notifications, Lua, Automation, GitOps
+Tags: ArgoCD, Notification, Lua, Automation, GitOps
 
 Description: Learn how to create powerful custom ArgoCD notification templates using Lua scripts to transform notification data, implement conditional logic, and build sophisticated alerting workflows.
 

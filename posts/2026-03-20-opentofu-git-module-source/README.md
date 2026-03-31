@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Git
+Tags: OpenTofu, Terraform, IaC, Module, Git
 
 Description: Learn how to use Git repositories as module sources in OpenTofu with version pinning via refs and tags.
 

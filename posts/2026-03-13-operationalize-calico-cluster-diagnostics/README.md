@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics, Operations
+Tags: Calico, Kubernetes, Networking, Diagnostic, Operation
 
 Description: Build operational processes for Calico cluster diagnostics including weekly health check procedures, incident escalation criteria, diagnostic bundle retention policies, and quarterly cluster...
 

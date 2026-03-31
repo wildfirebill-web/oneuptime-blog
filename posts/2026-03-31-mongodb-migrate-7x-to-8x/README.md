@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Upgrade, Migration, Version, Operations
+Tags: MongoDB, Upgrade, Migration, Version, Operation
 
 Description: Step-by-step guide for upgrading a MongoDB replica set from 7.x to 8.x, including compatibility checks, rolling upgrade procedure, and post-upgrade validation.
 

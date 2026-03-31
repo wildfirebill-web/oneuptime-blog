@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Monitoring, Prometheus, Grafana, Containers, Observability
+Tags: Podman, Monitoring, Prometheus, Grafana, Container, Observability
 
 Description: Learn how to implement container monitoring best practices with Podman using Prometheus, Grafana, health checks, and custom metrics for complete operational visibility.
 

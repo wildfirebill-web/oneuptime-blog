@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, NodePort, Services, Dual-Stack, External Access
+Tags: Kubernetes, IPv6, NodePort, Service, Dual-Stack, External Access
 
 Description: Configure Kubernetes NodePort Services for IPv6, understand how kube-proxy opens NodePorts on IPv6 node addresses, and test external IPv6 access to Kubernetes services via NodePorts.
 

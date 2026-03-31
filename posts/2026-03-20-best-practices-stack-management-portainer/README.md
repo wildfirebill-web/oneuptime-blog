@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Docker Compose, Best Practice, DevOps, GitOps
+Tags: Portainer, Stack, Docker Compose, Best Practice, DevOps, GitOps
 
 Description: Establish best practices for creating, versioning, and maintaining Docker Compose stacks in Portainer to ensure reliable, repeatable deployments across your environments.
 

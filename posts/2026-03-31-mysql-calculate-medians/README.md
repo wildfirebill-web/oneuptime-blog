@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Query, Statistic
+Tags: MySQL, Query, Statistics
 
 Description: Learn multiple techniques to calculate medians in MySQL, including the classic row-counting method and the modern window function approach available in MySQL 8.0+.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Samba, Authentication, Permissions, Linux
+Tags: RHEL, Samba, Authentication, Permission, Linux
 
 Description: Configure Samba user authentication and file permissions on RHEL, covering local user management, password policies, and access control for shares.
 

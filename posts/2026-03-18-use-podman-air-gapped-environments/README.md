@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Air-Gapped, Containers, Security, Linux, DevOps, Offline, Registry, Compliance
+Tags: Podman, Air-Gapped, Container, Security, Linux, DevOps, Offline, Registry, Compliance
 
 Description: Deploy and manage Podman containers in air-gapped environments with no internet access, covering offline image bundles, private registries, and image verification.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Cgroups, Resource Limits, Performance
+Tags: Portainer, Docker, Cgroups, Resource Limit, Performance
 
 Description: Configure Linux cgroup resource limits for containers in Portainer to control CPU, memory, and I/O allocation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Admin Socket, Diagnostics, Daemon
+Tags: Rook, Ceph, Admin Socket, Diagnostic, Daemon
 
 Description: Use the Ceph admin socket interface to query live daemon state, list available commands, and retrieve runtime metrics directly from OSD, MON, and MDS processes.
 

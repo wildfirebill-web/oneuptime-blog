@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Role, Security
+Tags: Rancher, Kubernetes, RBAC, Permission, Role, Security
 
 Description: Learn how to delegate cluster management responsibilities to different teams in Rancher while maintaining security and governance.
 

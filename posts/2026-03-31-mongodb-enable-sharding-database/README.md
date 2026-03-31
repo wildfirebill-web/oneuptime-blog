@@ -1,6 +1,6 @@
 # How to Enable Sharding on a Database and Collection in MongoDB
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Sharding, Collection, Database, Scalability
 

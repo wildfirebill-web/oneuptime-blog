@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Database, Generated Columns, Virtual Column, Stored Columns, Schema Design
+Tags: MySQL, Database, Generated Column, Virtual Column, Stored Columns, Schema Design
 
 Description: Learn how to create and use generated columns in MySQL for computed values, with examples of virtual and stored columns.
 

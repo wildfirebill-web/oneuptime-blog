@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Runbook, Operations, DevOps, Infrastructure as Code
+Tags: Terraform, Runbook, Operation, DevOps, Infrastructure as Code
 
 Description: Build comprehensive Terraform runbooks that enable operations teams to execute infrastructure changes safely and consistently during both routine and emergency scenarios.
 

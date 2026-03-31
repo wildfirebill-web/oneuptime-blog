@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Service Health, Monitoring, Alerts, Incident Management, Azure Monitor, Reliability
+Tags: Azure, Service Health, Monitoring, Alert, Incident Management, Azure Monitor, Reliability
 
 Description: Step-by-step guide to configuring Azure Service Health alerts so your team gets notified instantly when Azure outages affect your specific resources.
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Sort, Performance, Memory, Query Optimization
 
-Description: Learn why MongoDB throws 'Sort exceeded memory limit' errors and how to fix them using indexes, allowDiskUse, or restructuring your aggregation pipeline.
+Description: Learn why MongoDB throws sort exceeded memory limit errors and how to fix them using indexes, allowDiskUse, or restructuring your aggregation pipeline.
 
 ---
 

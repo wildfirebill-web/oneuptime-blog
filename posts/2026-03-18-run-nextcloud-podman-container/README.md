@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Nextcloud, Cloud Storage, Self-Hosted, File Sync
+Tags: Podman, Container, DevOps, Nextcloud, Cloud Storage, Self-Hosted, File Sync
 
 Description: Learn how to run Nextcloud in a Podman container for self-hosted file storage, sharing, and collaboration with persistent data.
 

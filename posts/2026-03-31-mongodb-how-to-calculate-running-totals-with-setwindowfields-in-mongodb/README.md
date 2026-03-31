@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $setWindowFields, Running Totals, Aggregation, Window Functions
+Tags: MongoDB, $setWindowFields, Running Total, Aggregation, Window Function
 
 Description: Learn how to calculate running totals in MongoDB using $setWindowFields with $sum window function, partitioning, and custom window boundaries.
 

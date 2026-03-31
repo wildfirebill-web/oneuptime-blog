@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CLI
+Tags: Podman, Container, DevOps, CLI
 
 Description: Learn how to override the default entrypoint and run custom commands inside Podman containers for flexible workload execution.
 

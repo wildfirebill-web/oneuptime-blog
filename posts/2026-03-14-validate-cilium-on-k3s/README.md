@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, K3s
+Tags: Cilium, Kubernetes, k3s
 
 Description: Learn how to thoroughly validate your Cilium installation on K3s, including connectivity tests, policy enforcement checks, and Hubble observability verification.
 

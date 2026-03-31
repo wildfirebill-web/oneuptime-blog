@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, OpenTelemetry, Observability, Traces, Metrics, Logs, Database, Monitoring
+Tags: ClickHouse, OpenTelemetry, Observability, Trace, Metric, Log, Database, Monitoring
 
 Description: A comprehensive guide to using ClickHouse as an observability backend for OpenTelemetry data, covering schema design for traces, metrics, and logs, plus configuration of the OpenTelemetry Collector.
 

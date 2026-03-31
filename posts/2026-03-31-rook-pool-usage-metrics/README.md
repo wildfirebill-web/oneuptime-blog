@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Pool, Monitoring, Metrics
+Tags: Rook, Ceph, Pool, Monitoring, Metric
 
 Description: View per-pool storage usage metrics in Ceph including object counts, stored data, raw consumption, and quota utilization using ceph df and rados df.
 

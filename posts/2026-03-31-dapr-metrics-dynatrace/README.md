@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dynatrace, Metrics, Observability, Kubernetes
+Tags: Dapr, Dynatrace, Metric, Observability, Kubernetes
 
 Description: Learn how to ingest Dapr Prometheus metrics into Dynatrace using the Dynatrace Operator with Prometheus scraping on Kubernetes for AI-powered analysis.
 

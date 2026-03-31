@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kubernetes, Audit Logs, Security, Filelog Receiver
+Tags: OpenTelemetry, Kubernetes, Audit Log, Security, Filelog Receiver
 
 Description: Parse Kubernetes API server audit logs in JSON format using the OpenTelemetry filelog receiver and extract request metadata.
 

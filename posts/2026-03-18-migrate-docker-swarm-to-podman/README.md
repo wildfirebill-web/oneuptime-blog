@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Docker Swarm, Migration, Containers, Orchestration
+Tags: Podman, Docker Swarm, Migration, Container, Orchestration
 
 Description: A comprehensive guide to migrating from Docker Swarm to Podman for single-server and small-cluster deployments, covering service conversion, networking, secrets management, and deployment strategies.
 

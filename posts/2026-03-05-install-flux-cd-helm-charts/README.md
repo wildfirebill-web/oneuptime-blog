@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, Helm Charts, CI/CD, Installation
+Tags: Flux CD, GitOps, Kubernetes, Helm, Helm Chart, CI/CD, Installation
 
 Description: A complete guide to installing Flux CD using Helm charts instead of the CLI bootstrap process, giving you full control over the deployment configuration.
 

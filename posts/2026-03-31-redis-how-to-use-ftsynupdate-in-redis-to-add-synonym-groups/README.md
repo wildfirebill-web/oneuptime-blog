@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RediSearch, Synonyms, Full-Text Search, Query Expansion
+Tags: Redis, RediSearch, Synonym, Full-Text Search, Query Expansion
 
 Description: Learn how to use FT.SYNUPDATE in Redis to define synonym groups that expand search queries, improving recall for semantically equivalent terms.
 

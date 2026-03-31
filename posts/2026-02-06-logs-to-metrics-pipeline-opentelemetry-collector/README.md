@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Logs, Metrics, Alerting
+Tags: OpenTelemetry, Log, Metric, Alerting
 
 Description: Build a pipeline in the OpenTelemetry Collector that converts log patterns into metrics you can alert on directly.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vercel, Edge Functions, Next.js, Upstash, Serverless
+Tags: Redis, Vercel, Edge Function, Next.js, Upstash, Serverless
 
 Description: Use Redis with Vercel Edge Functions via the Upstash REST API to build fast edge caches, rate limiters, and A/B testing systems in Next.js.
 

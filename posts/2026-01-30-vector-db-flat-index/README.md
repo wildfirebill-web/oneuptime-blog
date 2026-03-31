@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Vector Database, Flat Index, Brute Force, Exact Search
+Tags: Vector Database, FLAT Index, Brute Force, Exact Search
 
 Description: Learn to implement flat index for exact nearest neighbor search with brute force comparison.
 

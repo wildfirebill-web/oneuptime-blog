@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Cron, Environment Variables, Linux, Automation
+Tags: RHEL, Cron, Environment Variable, Linux, Automation
 
 Description: A practical guide to managing environment variables in cron jobs on RHEL, covering PATH, SHELL, HOME, profile sourcing, and wrapper script patterns.
 

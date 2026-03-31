@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Variables, Defaults, Infrastructure as Code
+Tags: Terraform, HCL, Variable, Default, Infrastructure as Code
 
 Description: Learn how to set default values for Terraform variables, including strategies for different types, when to use defaults, and how defaults interact with other variable features.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Rocket.Chat, Monitoring
+Tags: Flux CD, GitOps, Kubernetes, Notification, Rocket.Chat, Monitoring
 
 Description: Learn how to configure Flux CD's notification controller to send deployment and reconciliation alerts to Rocket.Chat channels using the Provider resource.
 

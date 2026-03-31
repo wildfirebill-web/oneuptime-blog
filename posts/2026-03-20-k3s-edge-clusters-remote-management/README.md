@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Edge Computing, Remote Management, Rancher, Fleet, GitOps, SUSE Rancher
+Tags: k3s, Edge Computing, Remote Management, Rancher, Fleet, GitOps, SUSE Rancher
 
 Description: Learn how to remotely manage K3s edge clusters using Rancher, Fleet GitOps, and secure tunneling to deploy workloads, apply configurations, and monitor cluster health from a central location.
 

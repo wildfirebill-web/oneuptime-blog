@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: React, Hooks, JavaScript, TypeScript, Debugging, Error Handling, Components
+Tags: React, Hook, JavaScript, TypeScript, Debugging, Error Handling, Component
 
 Description: A detailed troubleshooting guide for fixing the 'Hooks can only be called inside of the body of a function component' error, with common causes and solutions.
 

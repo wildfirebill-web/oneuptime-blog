@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, MQTT, IoT, Input Binding, Edge Computing, Microservices
+Tags: Dapr, MQTT, IoT, Input Binding, Edge Computing, Microservice
 
 Description: Learn how to ingest IoT telemetry data from MQTT brokers into your microservices architecture using Dapr's MQTT input binding for scalable, cloud-native IoT data pipelines.
 

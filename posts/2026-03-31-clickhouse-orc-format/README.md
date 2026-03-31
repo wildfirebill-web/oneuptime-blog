@@ -1,6 +1,6 @@
 # How to Use ORC Format in ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, ORC, Data Engineering, Analytics
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Code Coverage, Testing, CI/CD, Quality Metrics, Codecov, Jest
+Tags: GitHub Action, Code Coverage, Testing, CI/CD, Quality Metric, Codecov, Jest
 
 Description: Learn how to generate, visualize, and enforce code coverage requirements in GitHub Actions workflows with tools like Codecov, Jest, and native coverage reporters.
 

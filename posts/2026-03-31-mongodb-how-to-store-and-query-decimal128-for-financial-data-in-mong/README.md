@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Decimal128, Financial Data, Precision Arithmetic, Data Types
+Tags: MongoDB, Decimal128, Financial Data, Precision Arithmetic, Data Type
 
 Description: Learn how to use MongoDB's Decimal128 type to store and query financial data with precise decimal arithmetic, avoiding floating-point rounding errors.
 

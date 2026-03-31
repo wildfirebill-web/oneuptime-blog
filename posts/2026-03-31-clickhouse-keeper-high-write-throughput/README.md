@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ClickHouse Keeper, Performance, Tuning, Operations
+Tags: ClickHouse, ClickHouse Keeper, Performance, Tuning, Operation
 
 Description: Learn how to tune ClickHouse Keeper configuration, hardware, and batching settings to handle high write throughput without becoming a bottleneck for replication.
 

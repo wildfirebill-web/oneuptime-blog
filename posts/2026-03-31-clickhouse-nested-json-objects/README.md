@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how to parse nested JSON objects in ClickHouse using variadic path arguments with JSONExtract functions, with practical examples for multi-level object traversal.
 

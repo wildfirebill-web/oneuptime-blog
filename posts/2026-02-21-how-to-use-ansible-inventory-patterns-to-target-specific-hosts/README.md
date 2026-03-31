@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Inventory, Patterns, Host Targeting, DevOps
+Tags: Ansible, Inventory, Pattern, Host Targeting, DevOps
 
 Description: Master Ansible inventory patterns to precisely target hosts using group names, wildcards, intersections, exclusions, and regex for safe and efficient automation.
 

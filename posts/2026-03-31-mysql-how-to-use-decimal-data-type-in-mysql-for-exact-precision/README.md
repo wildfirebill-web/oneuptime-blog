@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Decimal, Data Types, Precision, Financial Data
+Tags: MySQL, Decimal, Data Type, Precision, Financial Data
 
 Description: The MySQL DECIMAL type stores exact numeric values with user-defined precision and scale, making it essential for financial and monetary data.
 

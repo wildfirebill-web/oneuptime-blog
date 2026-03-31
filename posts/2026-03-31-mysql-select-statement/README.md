@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, SELECT, Query, Database
+Tags: MySQL, SQL, DML, SELECT, Query
 
 Description: Write MySQL SELECT queries to retrieve data, use column aliases, expressions, DISTINCT, and understand the full SELECT clause structure.
 

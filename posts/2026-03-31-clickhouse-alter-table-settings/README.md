@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, DDL, ALTER TABLE, Settings
+Tags: ClickHouse, SQL, DDL, ALTER TABLE, Setting
 
 Description: Learn how to change and reset MergeTree table settings in ClickHouse using ALTER TABLE MODIFY SETTING and RESET SETTING without recreating the table.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Node.js, Hashes, ioredis, Data Structures
+Tags: Redis, Node.js, Hash, ioredis, Data Structure
 
 Description: Learn how to use Redis Hashes in Node.js with ioredis for storing objects, partial updates, field scanning, and practical user profile management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Events, Scheduling, Database Automation
+Tags: MySQL, Event, Scheduling, Database Automation
 
 Description: Learn how to use the CREATE EVENT statement in MySQL to schedule SQL tasks that run automatically at one-time or recurring intervals.
 

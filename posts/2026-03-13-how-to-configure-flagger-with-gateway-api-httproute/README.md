@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Gateway API, HTTPRoute, Kubernetes, Canary Deployments
+Tags: Flagger, Gateway API, HTTPRoute, Kubernetes, Canary Deployment
 
 Description: Learn how to configure Flagger with Kubernetes Gateway API HTTPRoute for progressive delivery and automated canary deployments.
 

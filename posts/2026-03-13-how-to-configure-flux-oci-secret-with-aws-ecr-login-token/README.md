@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, OCI, AWS, ECR, Container Registry, OCIRepository
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, OCI, AWS, ECR, Container Registry, OCIRepository
 
 Description: How to configure Flux CD to authenticate with AWS Elastic Container Registry (ECR) for pulling OCI artifacts.
 

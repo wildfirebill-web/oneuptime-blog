@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Naming Conventions, Containers, Best Practice, DevOps
+Tags: Podman, Naming Convention, Container, Best Practice, DevOps
 
 Description: Learn how to implement consistent container naming conventions with Podman for containers, pods, volumes, networks, and images to improve manageability and team coordination.
 

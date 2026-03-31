@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Firestore, Distributed Counters, Scalability, Firebase
+Tags: GCP, Firestore, Distributed Counter, Scalability, Firebase
 
 Description: Learn how to build distributed counters in Firestore to handle high write throughput beyond the single-document limit of one write per second.
 

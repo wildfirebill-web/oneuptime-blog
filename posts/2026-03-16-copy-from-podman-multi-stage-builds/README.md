@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Build, Multi-Stage
+Tags: Podman, Container, DevOps, Build, Multi-Stage
 
 Description: Learn how to use COPY --from in Podman multi-stage builds to selectively copy artifacts between build stages, producing minimal production images.
 

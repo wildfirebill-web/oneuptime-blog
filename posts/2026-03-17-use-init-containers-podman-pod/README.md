@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Init Containers, Startup
+Tags: Podman, Container, DevOps, Pod, Init Container, Startup
 
 Description: Learn how to use init containers in Podman pods to run setup tasks before the main application starts.
 

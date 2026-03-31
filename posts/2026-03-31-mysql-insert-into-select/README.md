@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, INSERT, SELECT, Data Migration
+Tags: MySQL, SQL, DML, Insert, SELECT, Data Migration
 
 Description: Copy rows between MySQL tables using INSERT INTO SELECT, filter and transform data during the copy, and handle large datasets efficiently.
 

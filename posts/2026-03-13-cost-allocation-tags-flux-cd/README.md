@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Cost Management, FinOps, Labels, Annotations, Kustomize
+Tags: Flux CD, Kubernetes, GitOps, Cost Management, FinOps, Labels, Annotation, Kustomize
 
 Description: Add cost allocation labels and tags to all Flux-managed Kubernetes resources to enable accurate chargeback reporting and team-level cost attribution.
 

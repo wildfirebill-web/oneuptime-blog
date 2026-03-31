@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Database, Modules, C Programming, Performance, Data Structures
+Tags: Redis, Database, Module, C Programming, Performance, Data Structure
 
 Description: A comprehensive guide to building custom Redis modules in C, covering module architecture, command implementation, data types, and production deployment patterns.
 

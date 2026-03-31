@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Nullable, NULL
+Tags: ClickHouse, SQL, Data Type, Nullable, NULL
 
 Description: Learn how Nullable(T) works in ClickHouse, its performance overhead, how to test for NULL, and when to prefer alternatives.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, IPv6, Container Instances, ACI, Containers, VNet Integration
+Tags: Azure, IPv6, Container Instances, ACI, Container, VNet Integration
 
 Description: Configure Azure Container Instances with IPv6 connectivity through VNet integration, enabling containers to communicate over IPv6 and receive IPv6 addresses.
 

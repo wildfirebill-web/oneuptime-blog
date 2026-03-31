@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, Window Function, Running Total, SUM, MySQL 8.0, Database
+Tags: MySQL, SQL, Window Function, Running Total, Sum, MySQL 8.0, Database
 
 Description: Learn how to compute running totals in MySQL 8.0 using the SUM() window function with the OVER clause and cumulative frame specifications.
 

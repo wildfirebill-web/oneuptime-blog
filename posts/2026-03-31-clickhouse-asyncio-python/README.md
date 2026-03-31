@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, AsyncIO, Python, Async, Performance
+Tags: ClickHouse, Asyncio, Python, Async, Performance
 
 Description: Learn how to use Python's asyncio with ClickHouse for concurrent queries, async inserts, and building high-throughput non-blocking data pipelines.
 

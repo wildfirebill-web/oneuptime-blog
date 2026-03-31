@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Types
+Tags: OpenTofu, Terraform, IaC, Function, Type
 
 Description: Learn how to use tobool, tonumber, tostring, tolist, tomap, toset, and type functions in OpenTofu for type conversion.
 

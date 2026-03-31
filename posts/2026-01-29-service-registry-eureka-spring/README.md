@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Eureka, Service Discovery, Microservices, Netflix OSS, Spring Cloud, Load Balancing
+Tags: Java, Spring Boot, Eureka, Service Discovery, Microservice, Netflix OSS, Spring Cloud, Load Balancing
 
 Description: Learn how to build a service registry with Netflix Eureka in Spring Boot.
 

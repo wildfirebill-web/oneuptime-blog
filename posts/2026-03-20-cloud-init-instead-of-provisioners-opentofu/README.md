@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Cloud-init, Provisioners, EC2, Infrastructure as Code
+Tags: OpenTofu, Cloud-init, Provisioner, EC2, Infrastructure as Code
 
 Description: Learn how to replace OpenTofu provisioners with cloud-init user data scripts for more reliable, declarative instance bootstrapping on AWS and other cloud providers.
 

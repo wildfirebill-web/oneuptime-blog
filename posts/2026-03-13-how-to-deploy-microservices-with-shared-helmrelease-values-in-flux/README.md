@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, HelmRelease, Microservices, Helm, ConfigMaps
+Tags: Flux CD, Kubernetes, GitOps, HelmRelease, Microservice, Helm, ConfigMap
 
 Description: Learn how to share common HelmRelease values across multiple microservices using ConfigMaps in Flux CD to reduce duplication and enforce consistency.
 

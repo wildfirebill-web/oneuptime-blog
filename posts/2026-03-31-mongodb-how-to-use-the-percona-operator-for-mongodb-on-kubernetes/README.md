@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Kubernetes, Percona Operator, Replica Set, Sharded Cluster
+Tags: MongoDB, Kubernetes, Percona Operator, Replica Set, Sharded Cluster
 
 Description: Deploy and manage MongoDB with the Percona Operator for MongoDB on Kubernetes, enabling automated backups, sharding, and production-grade configuration.
 

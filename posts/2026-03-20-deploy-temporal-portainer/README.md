@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Temporal, Workflow, Docker, Microservices
+Tags: Portainer, Temporal, Workflow, Docker, Microservice
 
 Description: Deploy Temporal workflow orchestration platform using Portainer for durable, fault-tolerant application code execution.
 

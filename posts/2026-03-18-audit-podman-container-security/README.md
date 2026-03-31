@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Auditing, Compliance
+Tags: Podman, Container, DevOps, Security, Auditing, Compliance
 
 Description: Learn how to audit the security configuration of Podman containers to identify misconfigurations and enforce best practices.
 

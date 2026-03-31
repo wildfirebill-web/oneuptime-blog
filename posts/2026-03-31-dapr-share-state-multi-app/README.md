@@ -1,6 +1,6 @@
 # How to Share State Between Multiple Dapr Applications
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Microservice, Multi-App, Shared State
 

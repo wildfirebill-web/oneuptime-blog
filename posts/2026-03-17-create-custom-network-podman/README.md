@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Bridge, DNS
+Tags: Podman, Container, DevOps, Networking, Bridge, DNS
 
 Description: Learn how to create and configure custom networks in Podman for container communication and isolation.
 

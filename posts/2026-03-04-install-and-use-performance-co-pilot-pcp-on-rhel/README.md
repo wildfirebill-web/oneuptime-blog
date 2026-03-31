@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, PCP, Performance Monitoring, Metrics, System Administration
+Tags: RHEL, PCP, Performance Monitoring, Metric, System Administration
 
 Description: Install and configure Performance Co-Pilot (PCP) on RHEL to collect, archive, and analyze detailed system performance metrics for CPU, memory, disk, and network.
 

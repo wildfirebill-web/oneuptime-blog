@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, CLUSTER SLOTS, Monitoring, Operations
+Tags: Redis, Cluster, CLUSTER SLOTS, Monitoring, Operation
 
 Description: Learn how to use CLUSTER SLOTS in Redis to retrieve the current slot-to-node mapping, including primary and replica addresses for each slot range, useful for client routing.
 

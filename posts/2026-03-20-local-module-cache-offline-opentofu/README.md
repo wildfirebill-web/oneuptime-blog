@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Module Cache, Offline, Air-Gapped, Modules
+Tags: OpenTofu, Module Cache, Offline, Air-Gapped, Module
 
 Description: Learn how to create and use a local module cache for offline OpenTofu deployments, enabling module installation without internet access in restricted environments.
 

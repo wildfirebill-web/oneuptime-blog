@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environments, Cleanup, Configuration, DevOps
+Tags: Portainer, Environment, Cleanup, Configuration, DevOps
 
 Description: Safely remove an environment from Portainer without affecting the underlying Docker or Kubernetes infrastructure.
 

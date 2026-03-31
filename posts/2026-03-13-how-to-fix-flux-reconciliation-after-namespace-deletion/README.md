@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, Reconciliation, Namespaces, Recovery
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, Reconciliation, Namespace, Recovery
 
 Description: Recover Flux reconciliation after a namespace containing managed resources is accidentally or intentionally deleted, including handling stuck finalizers and inventory cleanup.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, JMX, Java, JVM, Observability, Metrics, Monitoring
+Tags: OpenTelemetry, Collector, JMX, Java, JVM, Observability, Metric, Monitoring
 
 Description: Learn how to configure the JMX receiver in OpenTelemetry Collector to monitor Java applications and JVM performance with practical YAML examples and MBean configuration.
 

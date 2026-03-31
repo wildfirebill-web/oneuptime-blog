@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change Streams, Real-Time, Event Driven, Aggregation, NoSQL
+Tags: MongoDB, Change Stream, Real-Time, Event Driven, Aggregation, NoSQL
 
 Description: Learn how to use MongoDB change streams with aggregation pipeline filters to watch for specific document changes in real time across collections and databases.
 

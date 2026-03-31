@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Hangfire, .NET, Background Jobs, Scheduling, Tracing
+Tags: OpenTelemetry, Hangfire, .NET, Background Job, Scheduling, Tracing
 
 Description: Complete guide to instrumenting Hangfire background jobs with OpenTelemetry for full visibility into job execution, retries, and failures in .NET.
 

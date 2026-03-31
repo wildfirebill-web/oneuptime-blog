@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Elasticsearch, Elastic, Metrics, Observability
+Tags: Dapr, Elasticsearch, Elastic, Metric, Observability
 
 Description: Learn how to send Dapr Prometheus metrics to Elastic Observability using Elastic Agent or Metricbeat for unified metrics, logs, and traces in Kibana.
 

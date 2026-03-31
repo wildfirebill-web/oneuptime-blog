@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ruby, Rails, RSpec, Testing, TDD, Unit Tests
+Tags: Ruby, Rails, RSpec, Testing, TDD, Unit Test
 
 Description: A comprehensive guide to writing tests with RSpec in Ruby on Rails applications.
 

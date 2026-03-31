@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Pub/Sub, Cloud Storage, Event-Driven, Notifications
+Tags: GCP, Pub/Sub, Cloud Storage, Event-Driven, Notification
 
 Description: Learn how to configure Google Cloud Storage to send Pub/Sub notifications when objects are created, updated, or deleted, enabling event-driven processing of file uploads.
 

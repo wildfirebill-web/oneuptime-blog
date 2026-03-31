@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Lists, Collections, HCL, range, Functions, Infrastructure as Code
+Tags: OpenTofu, List, Collection, HCL, Range, Function, Infrastructure as Code
 
 Description: Learn how to generate lists and collections in OpenTofu using range(), for expressions, flatten(), and other functions - creating dynamic resource configurations from compact inputs.
 

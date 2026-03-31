@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, OCI, Docker, Container Registry, OCIRepository
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, OCI, Docker, Container Registry, OCIRepository
 
 Description: How to configure Flux CD to pull OCI artifacts from private container registries using Docker config JSON credentials.
 

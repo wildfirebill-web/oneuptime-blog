@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MetalLB, OneUptime, Monitoring, Observability, Kubernetes, Metrics, Load Balancing
+Tags: MetalLB, OneUptime, Monitoring, Observability, Kubernetes, Metric, Load Balancing
 
 Description: Learn how to integrate MetalLB metrics with OneUptime for centralized observability and load balancer health monitoring.
 

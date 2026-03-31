@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Distributed, Debugging, Performance
+Tags: ClickHouse, Distributed, Debugging, Performance
 
 Description: A systematic approach to debugging distributed query failures in ClickHouse using system tables, logs, and query tracing tools.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, OCI, GCR, Google Cloud, Container Registry
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, OCI, GCR, Google Cloud, Container Registry
 
 Description: A step-by-step guide to configuring Flux CD to authenticate with Google Container Registry using a GCP service account key for OCI artifact pulls.
 

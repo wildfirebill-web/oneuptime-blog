@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Prometheus, Retention, Monitoring, Kubernetes
+Tags: Istio, Metric, Prometheus, Retention, Monitoring, Kubernetes
 
 Description: How to configure and tune metrics retention policies for Istio metrics in Prometheus, Thanos, and other storage backends.
 

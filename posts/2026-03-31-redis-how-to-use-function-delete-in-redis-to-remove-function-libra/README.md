@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Functions, Lua, Redis 7, Administration
+Tags: Redis, Function, Lua, Redis 7, Administration
 
 Description: Learn how to use FUNCTION DELETE in Redis 7.0+ to remove named function libraries from the server, and best practices for safe library lifecycle management.
 

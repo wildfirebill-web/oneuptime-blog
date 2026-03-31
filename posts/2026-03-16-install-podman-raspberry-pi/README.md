@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, Raspberry Pi
+Tags: Podman, Installation, Linux, Container, DevOps, Raspberry Pi
 
 Description: Learn how to install Podman on a Raspberry Pi running Raspberry Pi OS, including ARM-specific configuration and lightweight container examples.
 

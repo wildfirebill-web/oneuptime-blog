@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Json, Data Export, Node.js, Backup
+Tags: Redis, JSON, Data Export, Node.js, Backup
 
 Description: Export Redis keys and their values to JSON files with type-aware serialization for Strings, Hashes, Lists, Sets, and Sorted Sets.
 

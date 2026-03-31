@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, Arbiter, Election, Operations
+Tags: MongoDB, Replica Set, Arbiter, Election, Operation
 
 Description: Add a MongoDB arbiter to a two-member replica set to enable elections without storing a full data copy on the third node.
 

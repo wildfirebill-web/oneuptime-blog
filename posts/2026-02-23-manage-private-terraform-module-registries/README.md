@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Registry, Private Registry, DevOps
+Tags: Terraform, Module, Registry, Private Registry, DevOps
 
 Description: Learn how to set up and manage private Terraform module registries using Terraform Cloud, GitHub, GitLab, Artifactory, and self-hosted solutions for internal module distribution.
 

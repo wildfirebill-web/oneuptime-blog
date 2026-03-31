@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, IPv6, Ingress, Kubernetes, Annotations
+Tags: Helm, IPv6, Ingress, Kubernetes, Annotation
 
 Description: Add IPv6-specific Ingress annotations to Helm charts for Nginx Ingress Controller, Traefik, and AWS ALB.
 

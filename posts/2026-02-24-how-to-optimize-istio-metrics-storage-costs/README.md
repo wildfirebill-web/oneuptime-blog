@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Prometheus, Cost Optimization, Observability
+Tags: Istio, Metric, Prometheus, Cost Optimization, Observability
 
 Description: Practical techniques to reduce the storage and compute costs of Istio-generated metrics without losing the observability you need.
 

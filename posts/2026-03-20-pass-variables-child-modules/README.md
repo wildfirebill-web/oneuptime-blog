@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Variables, Infrastructure as Code, DevOps
+Tags: OpenTofu, Module, Variable, Infrastructure as Code, DevOps
 
 Description: A guide to passing variables from parent modules to child modules in OpenTofu for modular infrastructure design.
 

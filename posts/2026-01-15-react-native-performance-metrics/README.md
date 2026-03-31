@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, Performance, Metrics, Monitoring, Mobile Development, Analytics
+Tags: React Native, Performance, Metric, Monitoring, Mobile Development, Analytics
 
 Description: Learn how to track and monitor key performance metrics in React Native applications for optimal user experience.
 

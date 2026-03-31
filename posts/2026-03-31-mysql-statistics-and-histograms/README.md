@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Statistic, Histogram, Query Optimizer
+Tags: MySQL, Statistics, Histogram, Query Optimizer
 
 Description: Understand how MySQL collects table statistics and histogram data to drive query optimization, and how to update or inspect them for better query plans.
 

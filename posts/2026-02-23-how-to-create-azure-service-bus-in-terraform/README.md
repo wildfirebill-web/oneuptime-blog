@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Service Bus, Messaging, Infrastructure as Code, Microservices
+Tags: Terraform, Azure, Service Bus, Messaging, Infrastructure as Code, Microservice
 
 Description: Learn how to provision Azure Service Bus namespaces, queues, topics, and subscriptions using Terraform for reliable enterprise messaging.
 

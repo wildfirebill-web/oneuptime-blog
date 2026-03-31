@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, ECS, Task Placement, Constraints, Container Orchestration, EC2
+Tags: AWS, ECS, Task Placement, Constraint, Container Orchestration, EC2
 
 Description: Learn how to use Amazon ECS task placement constraints to control which EC2 instances your containers run on based on instance attributes and custom metadata.
 

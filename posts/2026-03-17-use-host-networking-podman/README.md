@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Host Network, Performance
+Tags: Podman, Container, DevOps, Networking, Host Network, Performance
 
 Description: Learn how to use host networking mode in Podman to share the host's network namespace with containers.
 

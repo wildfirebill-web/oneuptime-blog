@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OOM Kill, Memory, Resource Limits
+Tags: Podman, Container, DevOps, OOM Kill, Memory, Resource Limit
 
 Description: Learn how to disable the OOM killer for Podman containers to prevent critical processes from being terminated, and understand when this is appropriate.
 

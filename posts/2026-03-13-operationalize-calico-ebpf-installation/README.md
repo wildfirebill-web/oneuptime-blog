@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, eBPF, Installation, Operations
+Tags: Calico, Kubernetes, Networking, eBPF, Installation, Operation
 
 Description: Build a repeatable, documented Calico eBPF installation process including cluster templates, installation runbooks, and handoff procedures for production clusters.
 

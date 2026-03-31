@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: High Availability, Failover, Operations, SRE
+Tags: High Availability, Failover, Operation, SRE
 
 Description: Learn how to implement safe manual failover procedures.
 

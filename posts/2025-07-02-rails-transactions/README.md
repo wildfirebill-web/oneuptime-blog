@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ruby, Rails, Transactions, Database, ActiveRecord, ACID
+Tags: Ruby, Rails, Transaction, Database, ActiveRecord, ACID
 
 Description: A comprehensive guide to handling database transactions in Ruby on Rails. Learn ACID properties, nested transactions, savepoints, locking strategies, and production best practices for data integrity.
 

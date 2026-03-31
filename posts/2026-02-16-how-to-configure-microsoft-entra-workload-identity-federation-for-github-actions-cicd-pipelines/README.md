@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Microsoft Entra ID, Workload Identity, GitHub Actions, CI/CD, Federation, OIDC
+Tags: Azure, Microsoft Entra ID, Workload Identity, GitHub Action, CI/CD, Federation, OIDC
 
 Description: Learn how to set up workload identity federation between Microsoft Entra ID and GitHub Actions to deploy to Azure without storing secrets in your repository.
 

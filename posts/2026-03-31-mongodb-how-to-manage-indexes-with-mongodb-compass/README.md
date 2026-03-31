@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Compass, Indexes, Performance, Database Management
+Tags: MongoDB, Compass, Index, Performance, Database Management
 
 Description: Learn how to create, review, analyze usage statistics, and drop indexes in MongoDB Compass to optimize collection performance.
 

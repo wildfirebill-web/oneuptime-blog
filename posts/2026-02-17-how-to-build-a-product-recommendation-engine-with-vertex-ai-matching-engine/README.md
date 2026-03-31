@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Vertex AI, Matching Engine, Recommendations, Machine Learning
+Tags: GCP, Vertex AI, Matching Engine, Recommendation, Machine Learning
 
 Description: Build a scalable product recommendation engine using Vertex AI Matching Engine for real-time approximate nearest neighbor search on product and user embeddings.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Registry, Container Registry
+Tags: Podman, Container, DevOps, Podman Desktop, Registry, Container Registry
 
 Description: Learn how to configure and manage container registries in Podman Desktop for pulling and pushing images to public and private repositories.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Workspaces, Variables, tfvars, Infrastructure as Code
+Tags: OpenTofu, Workspaces, Variable, tfvars, Infrastructure as Code
 
 Description: Learn multiple patterns for passing different variable values to each OpenTofu workspace without duplicating configuration logic.
 

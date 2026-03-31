@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, Type Conversion, UNION ALL, Schema
+Tags: ClickHouse, NULL Handling, Type Conversion, UNION ALL, Schema
 
 Description: Learn how to use toNullable() in ClickHouse to convert non-nullable types to Nullable(T) for UNION ALL compatibility and nullable-aware functions.
 

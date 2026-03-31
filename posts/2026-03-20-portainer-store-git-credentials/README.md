@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Git, Credentials, User Settings, GitOps, Security, Stacks
+Tags: Portainer, Git, Credential, User Setting, GitOps, Security, Stack
 
 Description: Learn how to save and manage Git credentials in Portainer user settings for automatically authenticating to private Git repositories when deploying stacks.
 

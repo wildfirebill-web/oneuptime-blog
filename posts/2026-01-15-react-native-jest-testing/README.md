@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, Jest, Testing, Unit Tests, Mobile Development, TypeScript
+Tags: React Native, Jest, Testing, Unit Test, Mobile Development, TypeScript
 
 Description: Learn how to write effective unit tests for React Native components using Jest and React Native Testing Library.
 

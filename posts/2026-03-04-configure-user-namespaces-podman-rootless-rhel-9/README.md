@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Containers, User Namespaces, Rootless, Linux, Security
+Tags: RHEL, Podman, Container, User Namespaces, Rootless, Linux, Security
 
 Description: Learn how to configure user namespaces for Podman rootless containers on RHEL to run containers securely without root privileges.
 

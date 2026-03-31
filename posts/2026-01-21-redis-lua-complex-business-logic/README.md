@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lua, Business Logic, Transactions, Backend, Database, Scripting
+Tags: Redis, Lua, Business Logic, Transaction, Backend, Database, Scripting
 
 Description: A comprehensive guide to implementing complex business logic with Redis Lua scripts, covering multi-key transactions, conditional updates, inventory management.
 

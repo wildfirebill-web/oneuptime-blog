@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Analytics, Impact Analysis, Metrics
+Tags: Feature Flag, Analytics, Impact Analysis, Metric
 
 Description: Learn how to analyze the business and technical impact of feature flags.
 

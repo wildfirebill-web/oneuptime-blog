@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Import, Modules
+Tags: OpenTofu, Terraform, Infrastructure as Code, Import, Module
 
 Description: Learn how to import existing infrastructure resources into OpenTofu modules using import blocks and the tofu import command.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Upgrade, DevOps, Containers
+Tags: Portainer, Docker Swarm, Upgrade, DevOps, Container
 
 Description: Learn how to upgrade Portainer Community Edition deployed as a Docker Swarm service to the latest version with minimal downtime.
 

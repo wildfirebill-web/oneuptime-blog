@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bitmap, BITPOS, Bit, Analytics
+Tags: Redis, Bitmap, BITPOS, BIT, Analytics
 
 Description: Learn how to use BITPOS to find the position of the first set (1) or clear (0) bit in a Redis string bitmap, with optional range limiting.
 

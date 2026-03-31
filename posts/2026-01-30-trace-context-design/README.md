@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Tracing, OpenTelemetry, Distributed Systems
+Tags: Observability, Tracing, OpenTelemetry, Distributed System
 
 Description: Learn how to design trace context propagation for distributed systems with W3C Trace Context and baggage.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Environments, Management, Automation
+Tags: Portainer, API, Environment, Management, Automation
 
 Description: Learn how to list, create, update, and delete Portainer environments (endpoints) via the REST API for automated infrastructure management.
 

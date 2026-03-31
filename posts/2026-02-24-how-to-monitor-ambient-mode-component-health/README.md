@@ -1,6 +1,6 @@
 # How to Monitor Ambient Mode Component Health
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Ambient Mode, Monitoring, Health Check, Observability
 

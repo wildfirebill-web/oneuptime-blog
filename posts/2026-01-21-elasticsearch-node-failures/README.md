@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Node Failures, Recovery, High Availability, Troubleshooting, Cluster Management
+Tags: Elasticsearch, Node Failure, Recovery, High Availability, Troubleshooting, Cluster Management
 
 Description: A comprehensive guide to handling Elasticsearch node failures including detection, recovery procedures, shard rebalancing, and best practices for maintaining cluster availability.
 

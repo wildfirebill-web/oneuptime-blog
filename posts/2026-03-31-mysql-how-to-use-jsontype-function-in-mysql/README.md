@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Type, Json, Json Functions, Sql
+Tags: MySQL, Json Type, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_TYPE() function to determine the data type of a JSON value, including objects, arrays, strings, numbers, booleans, and null.
 

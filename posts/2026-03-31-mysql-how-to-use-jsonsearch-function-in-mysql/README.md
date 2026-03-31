@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Search, Json, Json Functions, Sql
+Tags: MySQL, Json Search, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_SEARCH() function to find the path of a string value within a JSON document, supporting both exact and wildcard matching.
 

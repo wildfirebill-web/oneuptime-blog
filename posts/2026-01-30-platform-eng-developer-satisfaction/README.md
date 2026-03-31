@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Platform Engineering, Developer Experience, Metrics, DX
+Tags: Platform Engineering, Developer Experience, Metric, DX
 
 Description: Learn to create developer satisfaction metrics for measuring and improving developer experience.
 

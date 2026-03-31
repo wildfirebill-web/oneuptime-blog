@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, JOIN, Database, Query
+Tags: MySQL, SQL, Join, Database, Query
 
 Description: Learn how RIGHT JOIN in MySQL returns all rows from the right table and matching rows from the left table, filling NULLs where no match exists.
 

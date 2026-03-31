@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Vectorized Execution, SIMD, Performance, Internals
+Tags: ClickHouse, Vectorized Execution, SIMD, Performance, Internal
 
 Description: Understand how ClickHouse processes queries column by column using vectorized execution and SIMD instructions, achieving orders of magnitude better performance than row-at-a-time processing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Testing, Integration, Patterns, Microservices
+Tags: Testing, Integration, Pattern, Microservice
 
 Description: Learn proven integration testing patterns to validate service interactions and build reliable distributed systems.
 

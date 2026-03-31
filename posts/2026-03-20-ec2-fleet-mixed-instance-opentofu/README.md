@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, EC2 Fleet, Spot Instances, Mixed Instances, Infrastructure as Code, Cost Optimization
+Tags: OpenTofu, AWS, EC2 Fleet, Spot Instance, Mixed Instances, Infrastructure as Code, Cost Optimization
 
 Description: Learn how to create EC2 Fleet with a mix of On-Demand and Spot instances across multiple instance types using OpenTofu for cost-optimized, highly available compute capacity.
 

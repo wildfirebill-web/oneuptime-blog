@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Multi-Cluster, Federation, Management, Operations
+Tags: Kubernetes, Multi-Cluster, Federation, Management, Operation
 
 Description: Learn strategies for managing multiple Kubernetes clusters including federation, service mesh, and centralized management tools.
 

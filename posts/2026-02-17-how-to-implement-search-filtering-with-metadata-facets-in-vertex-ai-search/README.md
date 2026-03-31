@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Vertex AI Search, Metadata, Facets, Search Filtering
+Tags: GCP, Vertex AI Search, Metadata, Facet, Search Filtering
 
 Description: Implement metadata-based search filtering and faceted navigation in Vertex AI Search to let users narrow results by category, date, type, and custom attributes.
 

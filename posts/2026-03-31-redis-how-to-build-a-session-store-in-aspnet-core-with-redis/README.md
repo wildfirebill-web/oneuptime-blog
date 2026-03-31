@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, ASP.NET Core, C#, Sessions, Authentication
+Tags: Redis, ASP.NET Core, C#, Session, Authentication
 
 Description: Learn how to configure Redis as a session store in ASP.NET Core using IDistributedCache, with secure cookie configuration and custom session management patterns.
 

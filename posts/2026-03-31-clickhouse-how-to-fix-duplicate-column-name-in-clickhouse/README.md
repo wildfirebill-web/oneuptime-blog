@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Sql, Schema, Troubleshooting
+Tags: ClickHouse, SQL, Schema, Troubleshooting
 
 Description: Fix 'Duplicate column name' errors in ClickHouse by aliasing columns, rewriting SELECT statements, and understanding how joins produce duplicates.
 

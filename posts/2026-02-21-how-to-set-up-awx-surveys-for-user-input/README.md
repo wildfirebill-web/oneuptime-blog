@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, AWX, Surveys, Automation, Self-Service
+Tags: Ansible, AWX, Survey, Automation, Self-Service
 
 Description: Set up AWX surveys to collect user input before job execution, enabling self-service automation with controlled parameters.
 

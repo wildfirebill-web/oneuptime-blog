@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Testing, CI/CD, Unit Tests, Integration Tests, E2E Testing, DevOps
+Tags: GitHub Action, Testing, CI/CD, Unit Test, Integration Test, E2E Testing, DevOps
 
 Description: Build comprehensive testing workflows in GitHub Actions that run unit tests, integration tests, and end-to-end tests efficiently with parallel execution, caching, and smart test splitting.
 

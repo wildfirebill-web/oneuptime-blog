@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Index Management, getIndexes, listIndexes
+Tags: MongoDB, Index, Index Management, getIndexes, listIndexes
 
 Description: Learn how to list all indexes on a MongoDB collection using getIndexes(), listIndexes(), and $indexStats to audit and manage your indexes.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Distributed Tracing, Microservices, Context Propagation, Observability
+Tags: OpenTelemetry, Distributed Tracing, Microservice, Context Propagation, Observability
 
 Description: Learn how to implement distributed tracing across multiple services using OpenTelemetry context propagation and best practices.
 

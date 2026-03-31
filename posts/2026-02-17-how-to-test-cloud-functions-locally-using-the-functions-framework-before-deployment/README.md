@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Testing, Functions Framework, Development
+Tags: GCP, Cloud Function, Testing, Functions Framework, Development
 
 Description: A complete guide to using the Google Cloud Functions Framework to test HTTP and event-driven Cloud Functions locally before deploying to production.
 

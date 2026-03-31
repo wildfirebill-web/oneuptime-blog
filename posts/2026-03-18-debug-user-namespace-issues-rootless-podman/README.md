@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, User Namespaces, Debugging, Security
+Tags: Podman, Container, DevOps, Rootless, User Namespaces, Debugging, Security
 
 Description: A comprehensive troubleshooting guide for diagnosing and fixing user namespace problems in rootless Podman, including subuid/subgid configuration, mapping errors, and namespace exhaustion.
 

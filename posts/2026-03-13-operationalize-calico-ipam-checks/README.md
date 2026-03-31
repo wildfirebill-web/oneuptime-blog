@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, IPAM, Operations
+Tags: Calico, Kubernetes, Networking, IPAM, Operation
 
 Description: Build operational processes for Calico IPAM management including regular health check schedules, IPPool expansion procedures, IP release approval workflows, and capacity planning guidelines.
 

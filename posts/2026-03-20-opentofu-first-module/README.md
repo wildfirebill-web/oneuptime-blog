@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Modules
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Module
 
 Description: Learn how to create your first reusable OpenTofu module by extracting infrastructure code into a composable, configurable unit.
 

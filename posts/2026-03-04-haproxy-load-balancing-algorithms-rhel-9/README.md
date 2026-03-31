@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, HAProxy, Load Balancing, Algorithms, Linux
+Tags: RHEL, HAProxy, Load Balancing, Algorithm, Linux
 
 Description: A detailed guide to HAProxy load balancing algorithms on RHEL, including when to use each one.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Sets, HNSW, Graph Structure, Nearest Neighbor
+Tags: Redis, Vector Set, HNSW, Graph Structure, Nearest Neighbor
 
 Description: Learn how to use VLINKS in Redis to inspect the HNSW graph connections for a vector element, revealing its neighbors at each layer.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Azure Functions, Serverless, Event Processing, Azure
+Tags: Dapr, Azure Function, Serverless, Event Processing, Azure
 
 Description: Integrate Dapr with Azure Functions to build event-driven processing workflows combining Azure Functions triggers with Dapr bindings and pub/sub.
 

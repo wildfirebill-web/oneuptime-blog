@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps, Rootless
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps, Rootless
 
 Description: Learn how to configure and optimize Podman machines for rootless mode, providing enhanced security without sacrificing functionality.
 

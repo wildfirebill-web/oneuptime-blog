@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, YAML, Deployment
+Tags: Podman, Container, DevOps, Kubernetes, YAML, Deployment
 
 Description: Learn how to use podman play kube to run Kubernetes Deployment manifests locally.
 

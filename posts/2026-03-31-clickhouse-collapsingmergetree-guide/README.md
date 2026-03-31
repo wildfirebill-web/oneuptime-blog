@@ -1,8 +1,8 @@
 # What Is CollapsingMergeTree and When to Use It
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, CollapsingMergeTree, Storage Engine, Updates, Analytics
+Tags: ClickHouse, CollapsingMergeTree, Storage Engine, Update, Analytics
 
 Description: Learn how CollapsingMergeTree works in ClickHouse, how to insert cancellation rows to simulate updates, and when to prefer it over ReplacingMergeTree.
 

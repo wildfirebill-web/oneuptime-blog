@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, System Roles, Certificates, TLS, Ansible, Linux
+Tags: RHEL, System Roles, Certificate, TLS, Ansible, Linux
 
 Description: Learn how to automate TLS/SSL certificate management across RHEL systems using the certificate RHEL System Role with Ansible.
 

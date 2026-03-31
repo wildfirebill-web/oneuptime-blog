@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, etcd, IPv6, Distributed Systems, has, Cluster Configuration
+Tags: Kubernetes, etcd, IPv6, Distributed System, High Availability, Cluster Configuration
 
 Description: Configure a highly available etcd cluster with IPv6 endpoints for Kubernetes, covering peer communication, client access, TLS, and cluster bootstrapping over IPv6.
 

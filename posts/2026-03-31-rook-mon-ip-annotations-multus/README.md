@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Monitor, Multus, Annotation
 
-Description: Learn how to use Rook's mon IP annotations to specify which Multus network interface addresses Ceph monitors should advertise and use for cluster communication.
+Description: Learn how to use Rook's mon IP annotations to specify which Multus network interface addresses Ceph monitors should advertise for cluster communication.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Instana, Migration, Observability, APM, Tracing, Metrics, Java, Node.js, Python
+Tags: OpenTelemetry, Instana, Migration, Observability, APM, Tracing, Metric, Java, Node.js, Python
 
 Description: A comprehensive guide to migrating from IBM Instana to OpenTelemetry, with step-by-step instructions for removing Instana agents and replacing them with OpenTelemetry SDKs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Drop, Resource Management, RAII, Memory Safety
+Tags: Rust, DROP, Resource Management, RAII, Memory Safety
 
 Description: A practical guide to implementing the Drop trait in Rust for automatic resource cleanup and RAII patterns.
 

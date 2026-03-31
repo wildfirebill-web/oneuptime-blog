@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CloudWatch, Logs, Troubleshooting, Debugging
+Tags: AWS, CloudWatch, Log, Troubleshooting, Debugging
 
 Description: A systematic guide to diagnosing and fixing missing CloudWatch Logs from EC2, Lambda, ECS, and other AWS services when log data isn't appearing as expected.
 

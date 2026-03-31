@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Raft, IPv6, Distributed Systems, Consensus, etcd, Vault, CockroachDB
+Tags: Raft, IPv6, Distributed System, Consensus, etcd, Vault, CockroachDB
 
 Description: Configure Raft consensus protocol communication over IPv6 in distributed systems like etcd, Vault, and CockroachDB, including peer address formats and network configuration.
 

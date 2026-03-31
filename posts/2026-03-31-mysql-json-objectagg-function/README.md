@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Aggregate Function
+Tags: MySQL, JSON, Aggregate Function
 
 Description: Learn how to use MySQL's JSON_OBJECTAGG() aggregate function to build JSON objects from grouped key-value row pairs in a single query.
 

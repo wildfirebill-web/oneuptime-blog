@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Java, Spring Cloud Function, Spring Boot, Serverless, Google Cloud
+Tags: GCP, Cloud Function, Java, Spring Cloud Function, Spring Boot, Serverless, Google Cloud
 
 Description: Write Java Cloud Functions using the Spring Cloud Function adapter for GCP to leverage Spring Boot dependency injection and configuration in serverless functions.
 

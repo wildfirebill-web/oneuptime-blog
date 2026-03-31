@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Java, State Management, Spring Boot, Microservice, Sdk
+Tags: Dapr, Java, State Management, Spring Boot, Microservice, SDK
 
 Description: Use the Dapr Java SDK to perform CRUD operations, bulk state, transactional state, and ETag-based concurrency control against any supported state store.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Helm, GitOps, DevOps
+Tags: k3s, Kubernetes, Helm, GitOps, DevOps
 
 Description: Learn how to use K3s's built-in HelmChart CRD to automatically deploy and manage Helm charts through the auto-deploy manifests directory.
 

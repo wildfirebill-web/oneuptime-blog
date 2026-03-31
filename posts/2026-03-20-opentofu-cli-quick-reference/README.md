@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, CLI, Quick Reference, Commands, Infrastructure as Code
+Tags: OpenTofu, CLI, Quick Reference, Command, Infrastructure as Code
 
 Description: A comprehensive quick reference for all commonly used OpenTofu CLI commands with flags and usage examples.
 

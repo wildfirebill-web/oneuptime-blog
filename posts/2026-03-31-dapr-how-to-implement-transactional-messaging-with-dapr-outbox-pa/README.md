@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Outbox Pattern, Transactional Messaging, Pub/Sub, State Store, Microservices
+Tags: Dapr, Outbox Pattern, Transactional Messaging, Pub/Sub, State Store, Microservice
 
 Description: Learn how to implement the transactional outbox pattern with Dapr to ensure atomic state changes and message publishing without a two-phase commit.
 

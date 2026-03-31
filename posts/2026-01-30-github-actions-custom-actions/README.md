@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, DevOps, Automation, JavaScript
+Tags: GitHub Action, CI/CD, DevOps, Automation, JavaScript
 
 Description: Create reusable GitHub Actions using JavaScript, Docker, and composite actions for automating workflows across repositories.
 

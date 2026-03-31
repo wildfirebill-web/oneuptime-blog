@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Security Groups, VPC Peering, Networking
+Tags: Terraform, AWS, Security Group, VPC Peering, Networking
 
 Description: Learn how to reference and use security groups across VPC boundaries in Terraform using VPC peering, Transit Gateway, and cross-account configurations.
 

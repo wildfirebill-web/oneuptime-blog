@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Admission Webhooks, Security, Validation, Mutation, Policy Enforcement, DevOps
+Tags: Kubernetes, Admission Webhook, Security, Validation, Mutation, Policy Enforcement, DevOps
 
 Description: Learn how to build Kubernetes admission webhooks to validate and mutate resources before they're persisted, enabling custom policy enforcement and automatic configuration injection.
 

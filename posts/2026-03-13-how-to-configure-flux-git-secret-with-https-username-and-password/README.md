@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, HTTPS, Git, Credentials
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, HTTPS, Git, Credential
 
 Description: How to set up Flux CD to authenticate with Git repositories over HTTPS using a username and password or personal access token.
 

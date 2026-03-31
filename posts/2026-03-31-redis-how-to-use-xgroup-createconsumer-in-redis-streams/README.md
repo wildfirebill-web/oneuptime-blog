@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Consumer Groups, Messaging, Distributed Systems
+Tags: Redis, Stream, Consumer Group, Messaging, Distributed System
 
 Description: Learn how to use XGROUP CREATECONSUMER to explicitly register consumers in a Redis Stream consumer group before any messages are read.
 

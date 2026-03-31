@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Pub/Sub, Event-Driven, Serverless
+Tags: GCP, Cloud Function, Pub/Sub, Event-Driven, Serverless
 
 Description: A hands-on guide to deploying Google Cloud Functions with Pub/Sub triggers for building reliable event-driven processing pipelines on GCP.
 

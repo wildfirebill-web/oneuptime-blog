@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Prometheus, PromQL, Monitoring, Metrics, Observability, AMP
+Tags: AWS, Prometheus, PromQL, Monitoring, Metric, Observability, AMP
 
 Description: A practical guide to writing PromQL queries in Amazon Managed Prometheus for analyzing application and infrastructure metrics effectively
 

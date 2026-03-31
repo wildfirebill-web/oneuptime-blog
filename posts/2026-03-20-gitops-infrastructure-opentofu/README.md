@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitOps, GitHub Actions, Drift Detection, Infrastructure as Code, CI/CD
+Tags: OpenTofu, GitOps, GitHub Action, Drift Detection, Infrastructure as Code, CI/CD
 
 Description: Learn how to implement GitOps for infrastructure management with OpenTofu, where Git is the single source of truth and all changes flow through pull requests with automated plan, apply, and drift...
 

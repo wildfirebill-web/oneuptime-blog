@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Event Sourcing, Architecture, Node.js, Design Patterns
+Tags: MongoDB, Event Sourcing, Architecture, Node.js, Design Pattern
 
 Description: Learn how to implement the event sourcing pattern with MongoDB as the event store, using immutable event documents and aggregate state reconstruction.
 

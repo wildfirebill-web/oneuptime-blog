@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Cockpit, Add-ons, Customization, Linux
+Tags: RHEL, Cockpit, Add-on, Customization, Linux
 
 Description: Learn how to extend the Cockpit web console on RHEL with official add-on packages and how to create your own custom dashboard pages.
 

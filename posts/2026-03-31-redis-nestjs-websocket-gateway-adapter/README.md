@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, NestJS, WebSocket, Gateway, Socket.io
+Tags: Redis, NestJS, WebSocket, Gateway, Socket.IO
 
 Description: Scale NestJS WebSocket gateways across multiple instances using the Socket.io Redis adapter so events reach all connected clients regardless of server.
 

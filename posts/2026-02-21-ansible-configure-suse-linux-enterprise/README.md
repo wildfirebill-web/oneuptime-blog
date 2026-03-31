@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, SUSE, SLES, Linux, Server Configuration
+Tags: Ansible, SUSE, SLE, Linux, Server Configuration
 
 Description: Automate SUSE Linux Enterprise Server configuration with Ansible covering zypper, SUSEConnect registration, and SLES-specific system tuning.
 

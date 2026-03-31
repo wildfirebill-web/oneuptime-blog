@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Linting, Code Quality, ESLint, Prettier, DevOps
+Tags: GitHub Action, CI/CD, Linting, Code Quality, ESLint, Prettier, DevOps
 
 Description: Learn how to set up a comprehensive linting pipeline in GitHub Actions to enforce code quality standards automatically. This guide covers ESLint, Prettier, and multi-language linting configurations.
 

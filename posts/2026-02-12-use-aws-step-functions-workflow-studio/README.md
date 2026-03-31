@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Step Functions, Workflow Studio, Serverless, Orchestration, State Machines
+Tags: AWS, Step Functions, Workflow Studio, Serverless, Orchestration, State Machine
 
 Description: Build and visualize AWS Step Functions state machines using Workflow Studio's drag-and-drop interface to orchestrate complex workflows without writing JSON.
 

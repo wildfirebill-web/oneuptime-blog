@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Variant
+Tags: ClickHouse, SQL, Data Type, Variant
 
 Description: Learn how ClickHouse's Variant(T1, T2, ...) type works as a typed union, how to insert different types, use discriminators, and call variantType().
 

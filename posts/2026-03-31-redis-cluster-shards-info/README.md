@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, CLUSTER SHARDS, Monitoring, Operations
+Tags: Redis, Cluster, CLUSTER SHARDS, Monitoring, Operation
 
 Description: Learn how to use CLUSTER SHARDS in Redis 7.0+ to get structured shard information including slot ranges, node details, health status, and replication offsets for each shard.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Generated Columns, Json Index, Json, Performance
+Tags: MySQL, Generated Column, Json Index, JSON, Performance
 
 Description: Learn how to index JSON fields in MySQL using generated columns to enable fast lookups on JSON data stored in JSON or VARCHAR columns.
 

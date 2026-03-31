@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Redis Cluster, READONLY, READWRITE, Replica, Read Scaling
+Tags: Redis, Redis Cluster, Replica
 
 Description: Learn how to use READONLY and READWRITE commands to enable and disable read operations on Redis Cluster replica nodes for horizontal read scaling.
 

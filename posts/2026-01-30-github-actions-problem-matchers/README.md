@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Debugging, Automation
+Tags: GitHub Action, CI/CD, Debugging, Automation
 
 Description: Learn how to create custom problem matchers in GitHub Actions to automatically detect, parse, and display errors, warnings, and notices directly in your workflow logs and pull request annotations.
 

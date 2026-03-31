@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Product Analytics, Custom Metrics, Product-Led Growth
+Tags: OpenTelemetry, Product Analytics, Custom Metric, Product-Led Growth
 
 Description: Instrument feature usage analytics using OpenTelemetry custom metrics to drive product-led growth decisions with real telemetry data.
 

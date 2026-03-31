@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Calico, Flannel, CNI, Network Policy
+Tags: k3s, Kubernetes, Rancher, Calico, Flannel, CNI, Network Policy
 
 Description: A step-by-step guide to replacing K3s's default Flannel CNI with Calico for advanced networking features including BGP routing and robust network policies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Redis, Pub/Sub, Streams, Messaging
+Tags: Dapr, Redis, Pub/Sub, Stream, Messaging
 
 Description: Configure Redis Streams as the Dapr pub/sub backend with consumer groups, message retention, and delivery guarantee settings.
 

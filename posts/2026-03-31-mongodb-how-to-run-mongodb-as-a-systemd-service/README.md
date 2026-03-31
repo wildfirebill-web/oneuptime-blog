@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Systemd, Linux, Devops
+Tags: MongoDB, Systemd, Linux, DevOps
 
 Description: Learn how to configure MongoDB to run as a systemd service on Linux, including service file setup, automatic startup, and managing the service with systemctl.
 

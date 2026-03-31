@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Business Metrics, Observability, Prometheus, Custom Metrics
+Tags: Istio, Business Metrics, Observability, Prometheus, Custom Metric
 
 Description: How to derive business metrics from Istio's traffic data by extracting dimensions from headers, paths, and response codes to track orders, API usage, revenue-impacting errors, and more.
 

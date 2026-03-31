@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, TCP, Sockets, IPv4, Networking, Net Module
+Tags: Node.js, TCP, Socket, IPv4, Networking, Net Module
 
 Description: Learn how to create a TCP server in Node.js using the built-in net module that listens on an IPv4 address and handles client connections.
 

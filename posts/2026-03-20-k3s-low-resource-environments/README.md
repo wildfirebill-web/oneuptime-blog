@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Edge Computing, IoT, Raspberry Pi, Optimization, DevOps
+Tags: k3s, Kubernetes, Edge Computing, IoT, Raspberry Pi, Optimization, DevOps
 
 Description: Learn how to tune and optimize K3s to run efficiently on resource-constrained hardware like Raspberry Pi, single-board computers, and low-memory servers.
 

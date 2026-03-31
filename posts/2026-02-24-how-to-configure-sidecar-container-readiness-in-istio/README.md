@@ -1,6 +1,6 @@
 # How to Configure Sidecar Container Readiness in Istio
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Sidecar, Readiness, Health Check, Kubernetes
 

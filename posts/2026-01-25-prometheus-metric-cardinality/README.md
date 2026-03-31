@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Cardinality, Metrics, Performance, Optimization, Labels, Memory, Observability
+Tags: Prometheus, Cardinality, Metric, Performance, Optimization, Labels, Memory, Observability
 
 Description: Learn how to identify and control metric cardinality in Prometheus.
 

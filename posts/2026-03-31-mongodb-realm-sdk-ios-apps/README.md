@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Realm, iOS, Swift, Mobile
+Tags: MongoDB, Realm, IOS, Swift, Mobile
 
 Description: Learn how to integrate the Realm Swift SDK with MongoDB Atlas to build offline-capable iOS apps with automatic data sync and local persistence.
 

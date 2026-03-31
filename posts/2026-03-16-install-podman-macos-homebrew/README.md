@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, macOS, Homebrew
+Tags: Podman, Installation, Linux, Container, DevOps, macOS, Homebrew
 
 Description: A step-by-step guide to installing Podman on macOS using Homebrew, including machine initialization and running containers on Apple Silicon and Intel Macs.
 

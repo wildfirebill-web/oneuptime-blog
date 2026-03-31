@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: SQS, AWS, Message Queues, Node.js, Python, Distributed Systems
+Tags: SQS, AWS, Message Queue, Node.js, Python, Distributed System
 
 Description: Learn how to receive and delete messages from Amazon SQS, covering long polling, visibility timeout, batch operations, error handling, and best practices for reliable message processing.
 

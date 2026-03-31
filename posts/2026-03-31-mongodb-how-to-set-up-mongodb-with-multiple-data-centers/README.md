@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Sets, Multi-Region, High Availability, Disaster Recovery
+Tags: MongoDB, Replica Set, Multi-Region, High Availability, Disaster Recovery
 
 Description: Learn how to configure MongoDB replica sets across multiple data centers for geographic redundancy, disaster recovery, and low-latency reads near users.
 

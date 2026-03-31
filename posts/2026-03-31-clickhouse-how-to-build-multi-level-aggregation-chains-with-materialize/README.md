@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Materialized Views, Aggregation, Performance
+Tags: ClickHouse, Materialized View, Aggregation, Performance
 
 Description: Build multi-level aggregation chains in ClickHouse using chained Materialized Views to pre-aggregate data from raw events to hourly, daily, and monthly rollups.
 

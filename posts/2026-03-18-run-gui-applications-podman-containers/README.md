@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, GUI, Containers, Desktop, Linux
+Tags: Podman, GUI, Container, Desktop, Linux
 
 Description: A complete guide to running graphical desktop applications inside Podman containers, covering X11, Wayland, GPU acceleration, and audio support.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, AWS CDK, Kubernetes, EKS, Infrastructure As Code
+Tags: Dapr, AWS CDK, Kubernetes, EKS, Infrastructure as Code
 
 Description: Deploy Dapr on Amazon EKS using AWS CDK with TypeScript, combining cluster provisioning and Dapr installation in a single, type-safe IaC stack.
 

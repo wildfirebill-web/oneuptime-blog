@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Business Edition, Authentication, Audit Logs, Security, Compliance
+Tags: Portainer, Business Edition, Authentication, Audit Log, Security, Compliance
 
 Description: Learn how to view and analyze authentication logs in Portainer Business Edition to track login attempts, identify unauthorized access, and meet audit compliance requirements.
 

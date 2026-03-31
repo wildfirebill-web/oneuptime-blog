@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Debugging, Traces, SDK
+Tags: OpenTelemetry, Debugging, Trace, SDK
 
 Description: A step-by-step guide to diagnosing and fixing the missing traces problem caused by incorrect OpenTelemetry SDK initialization order.
 

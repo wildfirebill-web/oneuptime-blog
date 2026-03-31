@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, IPv6, Routing Security, Filtering, Networks
+Tags: BGP, IPv6, Routing Security, Filtering, Network
 
 Description: Configure BGP prefix filters for IPv6 to prevent accepting invalid or bogon prefixes and protect your routing infrastructure.
 

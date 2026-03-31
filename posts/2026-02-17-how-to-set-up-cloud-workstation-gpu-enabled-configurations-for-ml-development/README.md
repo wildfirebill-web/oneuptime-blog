@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Workstations, GPU, Machine Learning, CUDA, Development Environments
+Tags: GCP, Cloud Workstations, GPU, Machine Learning, CUDA, Development Environment
 
 Description: A step-by-step guide to configuring Google Cloud Workstations with GPU support for machine learning development, including CUDA setup and Jupyter integration.
 

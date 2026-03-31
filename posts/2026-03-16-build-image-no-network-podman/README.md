@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Networks, Security, Offline
+Tags: Podman, Container, DevOps, Container Image, Build, Network, Security, Offline
 
 Description: Learn how to build container images without network access using Podman for reproducible builds, security hardening, and air-gapped environments.
 

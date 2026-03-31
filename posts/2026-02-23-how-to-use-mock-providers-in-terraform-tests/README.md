@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Testing, Mock Providers, Unit Tests, Infrastructure as Code
+Tags: Terraform, Testing, Mock Providers, Unit Test, Infrastructure as Code
 
 Description: Learn how to use mock providers in Terraform tests to run fast unit tests without cloud credentials, API calls, or real infrastructure costs.
 

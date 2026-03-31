@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Fission, Serverless, Functions, FaaS
+Tags: Flux CD, Kubernetes, GitOps, Fission, Serverless, Function, FaaS
 
 Description: Deploy Fission serverless framework to Kubernetes using Flux CD to run functions with millisecond cold starts and GitOps-managed configuration.
 

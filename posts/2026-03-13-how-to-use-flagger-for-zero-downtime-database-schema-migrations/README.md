@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Database Migrations, Zero Downtime, Kubernetes, Canary Deployments
+Tags: Flagger, Database Migration, Zero Downtime, Kubernetes, Canary Deployment
 
 Description: Learn how to use Flagger canary deployments to safely perform zero-downtime database schema migrations on Kubernetes.
 

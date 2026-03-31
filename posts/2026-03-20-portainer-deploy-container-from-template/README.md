@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, Containers, DevOps
+Tags: Portainer, Docker, Template, Container, DevOps
 
 Description: Step-by-step guide to deploying a single container using Portainer's built-in and custom application templates.
 

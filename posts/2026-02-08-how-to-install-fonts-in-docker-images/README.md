@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Dockerfile, Fonts, Images, DevOps, PDF Generation, Headless Chrome
+Tags: Docker, Dockerfile, Fonts, Image, DevOps, PDF Generation, Headless Chrome
 
 Description: A practical guide to installing system fonts and custom fonts in Docker images for PDF generation, image rendering, and headless browsers.
 

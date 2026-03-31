@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Performance, Configuration, I/O, Tuning, Settings
+Tags: ClickHouse, Performance, Configuration, I/O, Tuning, Setting
 
 Description: Learn how to configure prefetch_buffer_size and related prefetch settings in ClickHouse to improve sequential read performance for large table scans on disk and object storage.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: API Gateway, Microservices, Architecture, Backend
+Tags: API Gateway, Microservice, Architecture, Backend
 
 Description: Learn how to design API gateway architecture for routing, authentication, and rate limiting.
 

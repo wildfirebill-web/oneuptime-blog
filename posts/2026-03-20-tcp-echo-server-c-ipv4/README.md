@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, TCP, Echo Server, Sockets, Networking
+Tags: C, IPv4, TCP, Echo Server, Socket, Networking
 
 Description: Learn how to write a TCP echo server in C using POSIX sockets with IPv4, covering socket creation, binding, listening, accepting connections, and echoing data back to clients.
 

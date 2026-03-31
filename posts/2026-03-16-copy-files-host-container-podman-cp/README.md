@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, File Management, Container Operations
+Tags: Podman, Container, DevOps, File Management, Container Operations
 
 Description: Learn how to copy files and directories between your host machine and Podman containers using the podman cp command in both directions.
 

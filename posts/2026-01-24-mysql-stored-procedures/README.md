@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Database, Stored Procedures, SQL, Performance, DevOps
+Tags: MySQL, Database, Stored Procedure, SQL, Performance, DevOps
 
 Description: Learn how to create, manage, and optimize MySQL stored procedures with practical examples and best practices.
 

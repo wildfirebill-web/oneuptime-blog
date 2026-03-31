@@ -1,8 +1,8 @@
 # How to Handle Health Check Ports with Istio
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Istio, Health Check, Ports, Kubernetes, Networking
+Tags: Istio, Health Check, Port, Kubernetes, Networking
 
 Description: Manage health check port configurations in Istio, including dedicated health ports, port exclusions, and handling port conflicts with the sidecar proxy.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, Build, Images
+Tags: Podman, Container, DevOps, Kubernetes, Build, Image
 
 Description: Learn how to automatically build container images from a Containerfile when deploying with podman kube play using the --build flag.
 

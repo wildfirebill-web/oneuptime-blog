@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Agent, Networks, Port 9001, Troubleshooting, Firewall
+Tags: Portainer, Agent, Network, Port 9001, Troubleshooting, Firewall
 
 Description: Verify that port 9001 is open and accessible between your Portainer server and Portainer Agent using various network diagnostic tools.
 

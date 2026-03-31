@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, nullIf, Sql, Data Cleaning
+Tags: ClickHouse, NULL Handling, NULLIF, SQL, Data Cleaning
 
 Description: Learn how to use nullIf() in ClickHouse to convert specific sentinel values to NULL, enabling cleaner aggregations and conditional NULL handling.
 

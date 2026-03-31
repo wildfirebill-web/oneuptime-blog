@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, DNSSEC, BIND, IPv6, Security, Networks
+Tags: DNS, DNSSEC, BIND, IPv6, Security, Network
 
 Description: A step-by-step guide to enabling DNSSEC on a BIND nameserver with full IPv6 support for signing and serving AAAA records securely.
 

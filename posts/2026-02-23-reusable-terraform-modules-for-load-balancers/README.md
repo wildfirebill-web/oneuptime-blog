@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, AWS, ALB, Load Balancer, Networking
+Tags: Terraform, Module, AWS, ALB, Load Balancer, Networking
 
 Description: Build a reusable Terraform module for AWS Application Load Balancers with target groups, listeners, SSL certificates, and health check configuration.
 

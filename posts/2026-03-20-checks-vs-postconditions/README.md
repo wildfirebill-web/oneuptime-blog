@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Checks, Postconditions, Validation, Infrastructure as Code
+Tags: OpenTofu, Terraform, CHECK, Postconditions, Validation, Infrastructure as Code
 
 Description: Learn the difference between OpenTofu check blocks and postconditions, and when to use each for infrastructure validation.
 

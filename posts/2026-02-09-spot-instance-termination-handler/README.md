@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Spot Instances, Cost Optimization, AWS, Node Termination Handler
+Tags: Kubernetes, Spot Instance, Cost Optimization, AWS, Node Termination Handler
 
 Description: Implement AWS Node Termination Handler to gracefully manage spot instance interruptions on Kubernetes.
 

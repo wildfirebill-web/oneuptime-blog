@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, DNS, Service Discovery
+Tags: Podman, Container, DevOps, Networking, DNS, Service Discovery
 
 Description: Learn how to configure DNS settings in Podman networks for container name resolution and custom DNS servers.
 

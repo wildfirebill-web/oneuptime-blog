@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Migration, Availability Zones, EBS, AMI
+Tags: AWS, EC2, Migration, Availability Zone, EBS, AMI
 
 Description: Step-by-step methods for migrating EC2 instances between availability zones, including AMI-based migration, EBS snapshot approaches, and automation scripts.
 

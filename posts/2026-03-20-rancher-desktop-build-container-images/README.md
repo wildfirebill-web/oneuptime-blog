@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, Container Images, Build, nerdctl, Docker
+Tags: Rancher Desktop, Container Image, Build, nerdctl, Docker
 
 Description: Build container images locally using Rancher Desktop's integrated container runtime without needing Docker Desktop.
 

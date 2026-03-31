@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Pub/Sub, Cloud Run, Event-Driven, Microservices
+Tags: GCP, Pub/Sub, Cloud Run, Event-Driven, Microservice
 
 Description: Learn how to connect Google Cloud Pub/Sub with Cloud Run to build event-driven microservices that scale automatically and process messages via push subscriptions.
 

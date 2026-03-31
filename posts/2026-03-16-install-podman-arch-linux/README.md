@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, Arch Linux
+Tags: Podman, Installation, Linux, Container, DevOps, Arch Linux
 
 Description: Learn how to install and configure Podman on Arch Linux, including rootless setup, storage configuration, and running containers.
 

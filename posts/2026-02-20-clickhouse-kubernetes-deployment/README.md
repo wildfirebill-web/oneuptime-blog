@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Kubernetes, Deployment, StatefulSets, Analytics
+Tags: ClickHouse, Kubernetes, Deployment, StatefulSet, Analytics
 
 Description: Learn how to deploy ClickHouse on Kubernetes using the ClickHouse Operator for scalable analytical workloads.
 

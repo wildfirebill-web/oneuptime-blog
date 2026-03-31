@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Vector, Database, Search, Machine learning
+Tags: Redis, Vector, Database, Search, Machine Learning
 
 Description: Learn how to use the VEMB command in Redis vector sets to retrieve the stored embedding vector for a specific member, useful for debugging and recomputation.
 

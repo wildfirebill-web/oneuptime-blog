@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Blue-Green Deployment, CI/CD, Zero Downtime
+Tags: Podman, Container, DevOps, Blue-Green Deployment, CI/CD, Zero Downtime
 
 Description: Learn how to implement blue-green deployments using Podman for zero-downtime container releases with instant rollback capability.
 

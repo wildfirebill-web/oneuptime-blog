@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Consumer Groups, UnknownMemberIdException, Troubleshooting, Rebalancing, Configuration
+Tags: Apache Kafka, Consumer Group, UnknownMemberIdException, Troubleshooting, Rebalancing, Configuration
 
 Description: Learn how to diagnose and fix the UnknownMemberIdException error in Kafka consumers, which occurs when a consumer is removed from its group.
 

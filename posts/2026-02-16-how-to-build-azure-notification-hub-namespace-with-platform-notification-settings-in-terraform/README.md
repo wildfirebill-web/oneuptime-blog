@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Notification Hub, Terraform, Push Notifications, Infrastructure as Code, Mobile, Cloud
+Tags: Azure, Notification Hub, Terraform, Push Notification, Infrastructure as Code, Mobile, Cloud
 
 Description: Deploy Azure Notification Hub namespaces with Apple, Google, and Windows platform notification settings fully configured using Terraform.
 

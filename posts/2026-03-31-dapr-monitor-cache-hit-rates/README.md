@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Metrics, Cache, Monitoring, Prometheus
+Tags: Dapr, Metric, Cache, Monitoring, Prometheus
 
 Description: Learn how to monitor cache hit and miss rates in Dapr applications using Prometheus metrics, custom counters, and Grafana dashboards.
 

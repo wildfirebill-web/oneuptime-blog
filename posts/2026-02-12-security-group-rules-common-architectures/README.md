@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Security Groups, VPC, Networking, Security
+Tags: AWS, Security Group, VPC, Networking, Security
 
 Description: Practical security group configurations for common AWS architectures including web servers, three-tier apps, microservices, and database clusters.
 

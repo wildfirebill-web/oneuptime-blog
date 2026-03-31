@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Saga Pattern, Distributed Transactions, Microservices, Event-Driven Architecture, Compensation
+Tags: Apache Kafka, Saga Pattern, Distributed Transaction, Microservice, Event-Driven Architecture, Compensation
 
 Description: A comprehensive guide to implementing the Saga pattern with Apache Kafka for managing distributed transactions across microservices.
 

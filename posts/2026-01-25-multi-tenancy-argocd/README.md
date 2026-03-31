@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ArgoCD, Multi-Tenancy, Kubernetes, RBAC, Security, Projects
+Tags: ArgoCD, Multi-Tenancy, Kubernetes, RBAC, Security, Project
 
 Description: Learn how to configure ArgoCD for multi-tenant environments where multiple teams share a single ArgoCD instance with proper isolation, access control, and resource boundaries.
 

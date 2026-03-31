@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, TRUNCATE, Math Functions, Numeric Functions, SQL
+Tags: MySQL, TRUNCATE, Math Function, Numeric Function, SQL
 
 Description: Learn how to use the TRUNCATE() function in MySQL to truncate decimal numbers to a specified number of decimal places without rounding.
 

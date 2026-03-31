@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, SQS, Cost Optimization, Message Queues, Cloud, FinOps, DevOps, Infrastructure
+Tags: AWS, SQS, Cost Optimization, Message Queue, Cloud, FinOps, DevOps, Infrastructure
 
 Description: A practical guide to reducing AWS SQS costs through batching, long polling, queue type selection, and architectural best practices that can cut your messaging bill by 50-90%.
 

@@ -1,8 +1,8 @@
 # How to Build a Shopping Cart Service with Dapr Actors
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Actor, Shopping cart, Stateful, E-commerce
+Tags: Dapr, Actor, Shopping Cart, Stateful, E-Commerce
 
 Description: Build a stateful shopping cart microservice using Dapr virtual actors, where each cart is an isolated actor instance with state persistence, item management, and checkout logic.
 

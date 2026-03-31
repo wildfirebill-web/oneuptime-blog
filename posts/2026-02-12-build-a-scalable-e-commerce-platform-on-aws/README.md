@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, E-Commerce, Scalability, Microservices, DynamoDB, Lambda, API Gateway
+Tags: AWS, E-Commerce, Scalability, Microservice, DynamoDB, Lambda, API Gateway
 
 Description: Design and build a scalable e-commerce platform on AWS using serverless and managed services that handles traffic spikes during sales events
 

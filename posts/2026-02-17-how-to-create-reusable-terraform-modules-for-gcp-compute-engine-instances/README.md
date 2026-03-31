@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Terraform, Modules, Compute Engine, Infrastructure as Code
+Tags: GCP, Terraform, Module, Compute Engine, Infrastructure as Code
 
 Description: Learn how to build reusable Terraform modules for GCP Compute Engine instances that your team can use across projects and environments with consistent configurations.
 

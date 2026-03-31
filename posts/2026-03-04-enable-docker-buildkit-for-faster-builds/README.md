@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, BuildKit, Linux
+Tags: RHEL, Docker, Container, BuildKit, Linux
 
 Description: Learn how to enable Docker BuildKit for Faster Builds on RHEL with step-by-step instructions, configuration examples, and best practices.
 

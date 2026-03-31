@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Tracing, Context, Distributed Systems
+Tags: OpenTelemetry, Tracing, Context, Distributed System
 
 Description: Build custom OpenTelemetry context propagators for non-standard header formats and legacy system integration.
 

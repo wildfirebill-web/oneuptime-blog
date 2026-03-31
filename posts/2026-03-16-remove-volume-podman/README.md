@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Storage
+Tags: Podman, Container, DevOps, Volumes, Storage
 
 Description: Learn how to safely remove Podman volumes using podman volume rm, including handling volumes in use and force removal options.
 

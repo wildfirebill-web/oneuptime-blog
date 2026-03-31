@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Configuration, Viper, Environment Variables, YAML, JSON, TOML, Best Practice
+Tags: Go, Golang, Configuration, Viper, Environment Variable, YAML, JSON, TOML, Best Practice
 
 Description: A comprehensive guide to handling configuration in Go applications, covering environment variables, Viper library, multiple configuration file formats, validation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, WordPress, Templates, DevOps
+Tags: Portainer, Docker, WordPress, Template, DevOps
 
 Description: Step-by-step guide to deploying a production-ready WordPress site using Portainer's stack template feature.
 

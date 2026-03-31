@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, IPAM, Address Management, Automation, Networks
+Tags: Python, IPv6, IPAM, Address Management, Automation, Network
 
 Description: Build IPv6 address management (IPAM) scripts in Python to allocate prefixes, track assignments, and generate reports.
 

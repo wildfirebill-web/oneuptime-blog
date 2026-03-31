@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kong, API Gateway, Distributed Tracing, Observability, Microservices
+Tags: OpenTelemetry, Kong, API Gateway, Distributed Tracing, Observability, Microservice
 
 Description: A practical guide to instrumenting Kong API Gateway with OpenTelemetry for end-to-end request tracing, metrics collection, and improved API observability.
 

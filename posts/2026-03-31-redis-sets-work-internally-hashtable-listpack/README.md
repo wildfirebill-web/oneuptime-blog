@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Set, Hashtable, Listpack, Internals
+Tags: Redis, Set, Hashtable, Listpack, Internal
 
 Description: Discover how Redis sets use listpack encoding for small sets and a hashtable for larger ones, and how to tune these thresholds for memory efficiency.
 

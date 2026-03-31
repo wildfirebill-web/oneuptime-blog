@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, IoT, Edge Computing, Raspberry Pi, Gateway, DevOps
+Tags: k3s, Kubernetes, IoT, Edge Computing, Raspberry Pi, Gateway, DevOps
 
 Description: Learn how to deploy K3s on IoT gateway devices to orchestrate containerized edge workloads close to IoT sensors and devices.
 

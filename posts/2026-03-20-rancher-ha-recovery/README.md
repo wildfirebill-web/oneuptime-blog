@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, has, Recovery, Disaster Recovery, etcd
+Tags: Rancher, High Availability, Recovery, Disaster Recovery, etcd
 
 Description: Step-by-step guide to recovering Rancher HA from node failures, etcd member loss, and worst-case scenarios including complete cluster restoration from backup.
 

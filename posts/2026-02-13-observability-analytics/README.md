@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Analytics, Metrics, Data Analysis, SRE
+Tags: Observability, Analytics, Metric, Data Analysis, SRE
 
 Description: How to extract actionable insights from observability data beyond incident response, including capacity planning, performance trending, and business impact analysis.
 

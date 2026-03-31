@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, MySQL, Read Replicas, Flexible Server, Database Scaling, Replication, Performance
+Tags: Azure, MySQL, Read Replica, Flexible Server, Database Scaling, Replication, Performance
 
 Description: A practical guide to setting up and managing read replicas in Azure Database for MySQL Flexible Server for scaling read-heavy workloads.
 

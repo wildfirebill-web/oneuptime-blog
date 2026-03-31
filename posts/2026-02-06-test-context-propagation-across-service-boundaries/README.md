@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Context Propagation, Distributed Tracing, Testing, Microservices, W3C Trace Context
+Tags: OpenTelemetry, Context Propagation, Distributed Tracing, Testing, Microservice, W3C Trace Context
 
 Description: Learn how to test and verify that OpenTelemetry context propagation works correctly across service boundaries in distributed systems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, GitLab, CI/CD, Webhooks
+Tags: Portainer, Docker, GitLab, CI/CD, Webhook
 
 Description: Learn how to create a GitLab CI/CD pipeline that builds Docker images and deploys them to Portainer using webhooks.
 

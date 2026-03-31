@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Metrics, Security, Prometheus
+Tags: Calico, Kubernetes, Metric, Security, Prometheus
 
 Description: Validate security for Calico metrics endpoints to restrict access to authorized monitoring systems only.
 

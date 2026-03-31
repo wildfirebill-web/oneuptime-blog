@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Cloud Functions, Serverless, Pub/Sub, Cloud Storage, Infrastructure as Code
+Tags: OpenTofu, GCP, Cloud Function, Serverless, Pub/Sub, Cloud Storage, Infrastructure as Code
 
 Description: Learn how to deploy Google Cloud Functions (Gen 2) using OpenTofu, including HTTP-triggered functions, Pub/Sub event triggers, IAM configuration, and VPC connectivity for private resources.
 

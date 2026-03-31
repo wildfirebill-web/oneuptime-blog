@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Typha, Kubernetes, Networking, Documentation, Hard Way, Operations
+Tags: Calico, Typha, Kubernetes, Networking, Documentation, Hard Way, Operation
 
 Description: A guide to creating effective internal documentation for Typha in a manually installed Calico cluster, covering architecture, operations runbooks, and troubleshooting guides.
 

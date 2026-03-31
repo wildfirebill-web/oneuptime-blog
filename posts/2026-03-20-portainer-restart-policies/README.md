@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Reliability, DevOps
+Tags: Portainer, Docker, Container, Reliability, DevOps
 
 Description: Learn how to configure Docker container restart policies in Portainer to ensure your applications automatically recover from failures and reboots.
 

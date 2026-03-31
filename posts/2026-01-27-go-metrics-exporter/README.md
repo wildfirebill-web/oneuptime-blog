@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Prometheus, Metrics, Observability, Monitoring, OpenTelemetry, SRE
+Tags: Go, Prometheus, Metric, Observability, Monitoring, OpenTelemetry, SRE
 
 Description: A comprehensive guide to building a Prometheus metrics exporter in Go using the prometheus/client_golang library, covering custom metrics types, HTTP exposure, and production best practices.
 

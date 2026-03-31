@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Network Namespaces, IPv6, Bridge, Linux, Containers
+Tags: Network Namespaces, IPv6, Bridge, Linux, Container
 
 Description: Connect multiple network namespaces through a Linux bridge with IPv6 addressing for multi-container networking scenarios.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Query Settings, Group By, Performance, Memory Management
+Tags: ClickHouse, Query Settings, GROUP BY, Performance, Memory Management
 
 Description: Learn how to configure group_by_overflow_mode in ClickHouse to control behavior when GROUP BY exceeds memory limits, choosing between throw, break, and any modes.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DigitalOcean, IPv6, Droplets, Dual-Stack, Cloud, Networking
+Tags: DigitalOcean, IPv6, Droplet, Dual-Stack, Cloud, Networking
 
 Description: Configure IPv6 on DigitalOcean Droplets and Kubernetes clusters, including static IPv6 assignment and firewall rules.
 

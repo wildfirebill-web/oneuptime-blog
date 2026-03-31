@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, WebSocket, Real-Time, Notifications
+Tags: Go, WebSocket, Real-Time, Notification
 
 Description: Learn how to build a real-time notification system in Go using WebSockets and server-sent events for instant updates.
 

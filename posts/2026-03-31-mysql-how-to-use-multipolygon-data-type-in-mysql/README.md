@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Spatial Data, MULTIPOLYGON, GIS, Data Types
+Tags: MySQL, Spatial Data, MULTIPOLYGON, GIS, Data Type
 
 Description: Learn how to store and query collections of polygon geometries using the MULTIPOLYGON data type in MySQL for territory and region-based GIS applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud VPC, Firewall Rules, AWS VPC, Security Groups, Networking, Cloud Migration
+Tags: GCP, Google Cloud VPC, Firewall Rules, AWS VPC, Security Group, Networking, Cloud Migration
 
 Description: Learn how to translate your AWS VPC networking setup including subnets, security groups, and NACLs into Google Cloud VPC networks and firewall rules.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Circular Buffer, Data Structures, Lists, Lua, Backend
+Tags: Redis, Circular Buffer, Data Structure, List, Lua, Backend
 
 Description: Learn how to implement a fixed-size circular buffer in Redis using Lists and Lua scripts for efficient bounded data storage with automatic overwrite.
 

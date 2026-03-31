@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Tagging, Cloud resources, Cost Management, Best Practice, Infrastructure as Code
+Tags: OpenTofu, Tagging, Cloud Resource, Cost Management, Best Practice, Infrastructure as Code
 
 Description: Learn how to implement a consistent, enforceable tagging strategy for cloud resources managed by OpenTofu using default_tags, locals, and validation rules.
 

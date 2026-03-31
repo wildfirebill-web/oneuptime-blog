@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Lifetimes, Borrow Checker, NLL, Memory Safety
+Tags: Rust, Lifetime, Borrow Checker, NLL, Memory Safety
 
 Description: Learn how Non-Lexical Lifetimes (NLL) in Rust make the borrow checker smarter by tracking when references are actually used rather than when they go out of scope.
 

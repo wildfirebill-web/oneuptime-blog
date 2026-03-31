@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, SELinux, Volumes, Security
+Tags: Podman, Container, DevOps, SELinux, Volumes, Security
 
 Description: Learn the difference between :Z and :z SELinux volume options in Podman and when to use each one.
 

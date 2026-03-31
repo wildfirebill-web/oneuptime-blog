@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Length, Json, Json Functions, Sql
+Tags: MySQL, Json Length, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_LENGTH() function to count the elements in a JSON array or the keys in a JSON object, with examples for filtering and reporting.
 

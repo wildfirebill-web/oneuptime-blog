@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Disk Replacement, OSD, Storage, Operations
+Tags: Rook, Ceph, Disk Replacement, OSD, Storage, Operation
 
 Description: Learn how to replace failed physical disks in a Rook-Ceph cluster - from detecting disk failure and evacuating data to provisioning a new OSD on the replacement disk.
 

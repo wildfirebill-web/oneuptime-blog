@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Write Conflicts, Transactions, Concurrency, Error Handling
+Tags: MongoDB, Write Conflict, Transaction, Concurrency, Error Handling
 
 Description: Learn how to detect and handle write conflicts in MongoDB multi-document transactions with retry logic and best practices for concurrent writes.
 

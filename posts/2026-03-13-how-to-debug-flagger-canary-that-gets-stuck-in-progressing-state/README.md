@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Debugging, Kubernetes, Canary Deployments, Troubleshooting
+Tags: Flagger, Debugging, Kubernetes, Canary Deployment, Troubleshooting
 
 Description: Learn how to diagnose and fix a Flagger canary deployment that gets stuck in the Progressing state and never completes.
 

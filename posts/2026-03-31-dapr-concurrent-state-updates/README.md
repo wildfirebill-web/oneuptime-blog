@@ -1,6 +1,6 @@
 # How to Handle Concurrent State Updates in Dapr
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Concurrency, ETag, Microservice
 

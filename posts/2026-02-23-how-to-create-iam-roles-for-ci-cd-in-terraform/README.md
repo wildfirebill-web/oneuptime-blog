@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, IAM, CI/CD, GitHub Actions, DevOps, OIDC
+Tags: Terraform, AWS, IAM, CI/CD, GitHub Action, DevOps, OIDC
 
 Description: Learn how to create secure IAM roles for CI/CD pipelines in Terraform using OIDC federation with GitHub Actions, GitLab CI, and other providers.
 

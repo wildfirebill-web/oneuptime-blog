@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Network Namespaces, IPv6, veth, Linux, Containers
+Tags: Network Namespaces, IPv6, veth, Linux, Container
 
 Description: Create virtual ethernet pairs between Linux network namespaces and configure IPv6 addressing for inter-namespace communication.
 

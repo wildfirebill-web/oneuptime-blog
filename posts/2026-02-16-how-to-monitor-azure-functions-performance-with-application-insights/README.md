@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Application Insights, Monitoring, Performance, Observability, Azure, Telemetry
+Tags: Azure Function, Application Insights, Monitoring, Performance, Observability, Azure, Telemetry
 
 Description: Set up comprehensive monitoring for Azure Functions using Application Insights with custom metrics, dependency tracking, and performance dashboards.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Idempotency, Service Mesh, Envoy, Distributed Systems
+Tags: Istio, Idempotency, Service Mesh, Envoy, Distributed System
 
 Description: Practical approaches to handling duplicate requests in Istio service meshes using idempotency keys, caching layers, and EnvoyFilter configurations.
 

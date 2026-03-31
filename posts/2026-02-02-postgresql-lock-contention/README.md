@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Locks, Performance, Database, Concurrency, Transactions
+Tags: PostgreSQL, Lock, Performance, Database, Concurrency, Transaction
 
 Description: A comprehensive guide to handling lock contention in PostgreSQL.
 

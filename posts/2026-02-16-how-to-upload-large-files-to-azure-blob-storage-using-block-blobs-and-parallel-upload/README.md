@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Blob Storage, Block Blobs, Parallel Upload, Large Files, SDK, Data Transfer
+Tags: Azure, Blob Storage, Block Blobs, Parallel Upload, Large File, SDK, Data Transfer
 
 Description: A detailed guide to uploading large files to Azure Blob Storage using block blob APIs with parallel uploads for maximum throughput.
 

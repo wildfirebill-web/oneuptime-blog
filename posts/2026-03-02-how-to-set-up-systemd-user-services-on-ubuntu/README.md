@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Systemd, Service Management, User Sessions
+Tags: Ubuntu, Systemd, Service Management, User Session
 
 Description: Learn how to create and manage systemd user services on Ubuntu that run without root privileges and can start automatically when a user logs in.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Prometheus, Monitoring
+Tags: Observability, Metric, Prometheus, Monitoring
 
 Description: Learn how to design and implement metric aggregation strategies for scalable monitoring systems.
 

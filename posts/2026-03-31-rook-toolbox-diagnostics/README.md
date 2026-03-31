@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Toolbox, Diagnostics, Debugging
+Tags: Rook, Ceph, Kubernetes, Toolbox, Diagnostic, Debugging
 
 Description: Learn how to deploy and use the Rook-Ceph toolbox pod to run Ceph CLI commands for cluster health checks, pool inspection, and performance diagnostics.
 

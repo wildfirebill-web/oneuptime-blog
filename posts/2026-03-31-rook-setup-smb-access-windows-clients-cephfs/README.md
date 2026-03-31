@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, SMB, Windows, CephFS
+Tags: Rook, Ceph, SMB, Window, CephFS
 
 Description: Learn how to configure Windows clients to access CephFS via SMB, including drive mapping, authentication, and offline files settings.
 

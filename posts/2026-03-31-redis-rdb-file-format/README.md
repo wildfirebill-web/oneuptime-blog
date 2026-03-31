@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Persistence, RDB, Internals, Backup
+Tags: Redis, Persistence, RDB, Internal, Backup
 
 Description: Explore the binary structure of Redis RDB snapshot files, how data types are encoded, and how to inspect or validate RDB files manually.
 

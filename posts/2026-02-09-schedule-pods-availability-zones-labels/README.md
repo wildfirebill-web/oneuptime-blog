@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Availability Zones, High Availability
+Tags: Kubernetes, Availability Zone, High Availability
 
 Description: Learn how to use node labels and scheduling constraints to distribute pods across availability zones for high availability and fault tolerance in Kubernetes clusters.
 

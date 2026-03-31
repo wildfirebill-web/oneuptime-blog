@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ss, netstat, Linux, Networking, Sockets, Diagnostics
+Tags: ss, netstat, Linux, Networking, Socket, Diagnostic
 
 Description: Use the ss command as a faster, more powerful replacement for netstat to investigate socket connections, listening ports, and TCP internals on modern Linux systems.
 

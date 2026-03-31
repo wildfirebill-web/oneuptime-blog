@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure DevOps, Security, Permissions, Security Groups, Access Control, DevOps, Governance
+Tags: Azure DevOps, Security, Permission, Security Group, Access Control, DevOps, Governance
 
 Description: Set up project-level permissions and custom security groups in Azure DevOps to control who can access repos, pipelines, boards, and artifacts.
 

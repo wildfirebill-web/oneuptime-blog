@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Performance, Configuration, Tuning, Query, Settings
+Tags: ClickHouse, Performance, Configuration, Tuning, Query, Setting
 
 Description: Learn how to tune max_threads and max_block_size in ClickHouse to optimize query parallelism and memory usage for your specific workload and hardware.
 

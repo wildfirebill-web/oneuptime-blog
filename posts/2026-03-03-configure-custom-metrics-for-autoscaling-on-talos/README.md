@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Kubernetes, Custom Metrics, Autoscaling, Prometheus, Monitoring
+Tags: Talos Linux, Kubernetes, Custom Metric, Autoscaling, Prometheus, Monitoring
 
 Description: Learn how to configure custom metrics for Kubernetes autoscaling on Talos Linux using Prometheus and the Prometheus Adapter.
 

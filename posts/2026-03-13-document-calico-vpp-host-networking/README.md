@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, VPP, Documentation, Operations
+Tags: Calico, Kubernetes, Networking, VPP, Documentation, Operation
 
 Description: How to create operational documentation for Calico VPP host networking, covering hardware requirements, deployment procedures, performance baselines, and incident response runbooks.
 

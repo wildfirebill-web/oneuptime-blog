@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Teams, Environment Isolation, Multi-Tenancy, Access Control, RBAC
+Tags: Portainer, Team, Environment Isolation, Multi-Tenancy, Access Control, RBAC
 
 Description: Learn how to use Portainer Teams and Environment access control to provide true isolation between different tenant groups, preventing cross-tenant visibility.
 

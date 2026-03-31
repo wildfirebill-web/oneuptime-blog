@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Security, Ports, Firewall, Hardening
+Tags: Portainer, Security, Port, Firewall, Hardening
 
 Description: Learn how to restrict access to Portainer's management ports using firewall rules and network configuration to reduce attack surface.
 

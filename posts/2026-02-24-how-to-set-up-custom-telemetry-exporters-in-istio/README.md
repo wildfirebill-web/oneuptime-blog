@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Telemetry, Exporter, OpenTelemetry, Observability, Custom Metrics
+Tags: Istio, Telemetry, Exporter, OpenTelemetry, Observability, Custom Metric
 
 Description: How to set up custom telemetry exporters in Istio to send metrics, traces, and logs to third-party backends using OpenTelemetry Collector and EnvoyFilter.
 

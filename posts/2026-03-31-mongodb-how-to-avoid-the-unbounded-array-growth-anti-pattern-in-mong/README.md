@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Anti-Patterns, Schema Design, Performance, Best Practices
+Tags: MongoDB, Anti-Pattern, Schema Design, Performance, Best Practice
 
 Description: Learn how to identify and fix the unbounded array growth anti-pattern in MongoDB that causes document bloat, slow queries, and write amplification.
 

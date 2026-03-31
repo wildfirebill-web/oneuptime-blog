@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ClickHouse Keeper, Failover, High Availability, Operations
+Tags: ClickHouse, ClickHouse Keeper, Failover, High Availability, Operation
 
 Description: Learn how ClickHouse Keeper handles leader failover automatically, how to verify your cluster recovers correctly, and what to do when automatic failover does not work.
 

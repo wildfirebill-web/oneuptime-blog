@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Memory, Resource Limits
+Tags: Podman, Container, DevOps, Memory, Resource Limit
 
 Description: A detailed guide on configuring memory limits, swap limits, and memory reservations for Podman containers to prevent out-of-memory issues.
 

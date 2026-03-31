@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, LLM, Metrics, AI Quality, Custom Metrics, Observability, GenAI
+Tags: OpenTelemetry, LLM, Metric, AI Quality, Custom Metric, Observability, GenAI
 
 Description: Learn how to build custom OpenTelemetry metrics to measure and monitor the quality of LLM outputs including relevance, toxicity, hallucination scores, and latency in production.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, CQRS, Distributed Tracing, Observability, Microservices, Architecture Patterns
+Tags: OpenTelemetry, CQRS, Distributed Tracing, Observability, Microservice, Architecture Patterns
 
 Description: Learn how to instrument CQRS architectures with OpenTelemetry to separately trace command (write) and query (read) paths for better debugging and performance analysis.
 

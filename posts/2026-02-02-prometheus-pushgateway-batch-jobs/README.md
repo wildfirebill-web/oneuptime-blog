@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Prometheus, Pushgateway, Batch Jobs, Monitoring, Metrics, DevOps, Cron Jobs, Observability
+Tags: Prometheus, Pushgateway, Batch Job, Monitoring, Metric, DevOps, Cron Jobs, Observability
 
 Description: A practical guide to configuring Prometheus Pushgateway for monitoring batch jobs, cron tasks, and short-lived processes that complete before Prometheus can scrape them.
 

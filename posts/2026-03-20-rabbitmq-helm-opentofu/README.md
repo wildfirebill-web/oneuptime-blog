@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, RabbitMQ, Message Queues, OpenTofu, Helm, High Availability
+Tags: Kubernetes, RabbitMQ, Message Queue, OpenTofu, Helm, High Availability
 
 Description: Learn how to deploy RabbitMQ on Kubernetes using OpenTofu and the Bitnami Helm chart with clustering, persistent storage, management UI, and monitoring.
 

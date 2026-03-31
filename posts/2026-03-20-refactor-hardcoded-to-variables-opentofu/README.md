@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Refactoring, HCL, Infrastructure as Code
+Tags: OpenTofu, Variable, Refactoring, HCL, Infrastructure as Code
 
 Description: Learn how to systematically replace hardcoded values in OpenTofu configurations with variables to create reusable, environment-agnostic modules.
 

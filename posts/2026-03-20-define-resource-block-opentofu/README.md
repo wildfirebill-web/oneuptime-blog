@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to defining and configuring resource blocks in OpenTofu to provision and manage infrastructure objects.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Management
+Tags: Podman, Container, DevOps, Container Management
 
 Description: Learn how to assign custom names to Podman containers for easier management, referencing, and organization of your container environment.
 

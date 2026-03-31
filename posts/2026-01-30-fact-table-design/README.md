@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Warehouse, Dimensional Modeling, Fact Tables, Data Engineering
+Tags: Data Warehouse, Dimensional Modeling, Fact Table, Data Engineering
 
 Description: Learn how to design fact tables for storing measurable business events.
 

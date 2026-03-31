@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Authorization, RBAC, Permissions, Access Control, Security
+Tags: Redis, Authorization, RBAC, Permission, Access Control, Security
 
 Description: A comprehensive guide to storing and managing user permissions in Redis for role-based access control (RBAC), permission caching, and fast authorization lookups.
 

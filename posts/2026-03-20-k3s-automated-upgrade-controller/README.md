@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Upgrade, Automation, DevOps
+Tags: k3s, Kubernetes, Upgrade, Automation, DevOps
 
 Description: Learn how to use the System Upgrade Controller to automate K3s upgrades across your cluster with minimal downtime.
 

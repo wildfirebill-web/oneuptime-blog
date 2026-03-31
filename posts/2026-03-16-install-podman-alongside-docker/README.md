@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, Docker
+Tags: Podman, Installation, Linux, Container, DevOps, Docker
 
 Description: Learn how to run Podman and Docker side by side on the same system, manage conflicts, and gradually migrate your workflow from Docker to Podman.
 

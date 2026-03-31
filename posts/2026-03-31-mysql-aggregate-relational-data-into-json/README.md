@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Aggregate Function
+Tags: MySQL, JSON, Aggregate Function
 
 Description: Learn how to use JSON_ARRAYAGG() and JSON_OBJECTAGG() to fold relational rows into JSON documents, simplifying API responses and reducing round trips.
 

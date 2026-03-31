@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Postfix, Email, SMTP, Notifications, Tutorial
+Tags: Ubuntu, Postfix, Email, SMTP, Notification, Tutorial
 
 Description: Configure Postfix on Ubuntu to send email notifications for system alerts, monitoring, and application events.
 

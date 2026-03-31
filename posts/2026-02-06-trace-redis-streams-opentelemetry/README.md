@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Redis, Streams, Tracing, Distributed Systems, Messaging
+Tags: OpenTelemetry, Redis, Stream, Tracing, Distributed System, Messaging
 
 Description: Learn how to trace Redis Streams producers and consumers with OpenTelemetry for full visibility into your event-driven pipelines.
 

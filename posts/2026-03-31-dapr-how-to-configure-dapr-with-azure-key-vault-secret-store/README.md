@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Azure Key Vault, Secrets, Security, Microservices
+Tags: Dapr, Azure Key Vault, Secret, Security, Microservice
 
 Description: Learn how to configure Dapr to use Azure Key Vault as a secret store, enabling your microservices to securely access secrets without hardcoding credentials.
 

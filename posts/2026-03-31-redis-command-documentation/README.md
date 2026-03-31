@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, COMMAND, Documentation, Introspection, CLI
+Tags: Redis, Command, Documentation, Introspection, CLI
 
 Description: Learn how to use the COMMAND command in Redis to get metadata about all available commands including arity, flags, and key positions.
 

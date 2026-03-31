@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Datadog, Java, APM, Migration, Tracing, Metrics, Spring Boot
+Tags: OpenTelemetry, Datadog, Java, APM, Migration, Tracing, Metric, Spring Boot
 
 Description: A detailed guide to replacing the Datadog Java APM agent with OpenTelemetry Java instrumentation, covering auto-instrumentation, manual spans, custom metrics, and Spring Boot integration.
 

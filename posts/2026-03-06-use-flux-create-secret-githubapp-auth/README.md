@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Fluxcd, GitHub, Github-app, Secrets, Authentication, GitOps, Kubernetes
+Tags: Flux, Fluxcd, GitHub, Github-app, Secret, Authentication, GitOps, Kubernetes
 
 Description: A practical guide to configuring GitHub App authentication for Flux using the flux create secret githubapp command.
 

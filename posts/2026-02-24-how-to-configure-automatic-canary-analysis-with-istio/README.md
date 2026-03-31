@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Canary Analysis, Metrics, Progressive Delivery
+Tags: Istio, Kubernetes, Canary Analysis, Metric, Progressive Delivery
 
 Description: Set up automatic canary analysis using Istio metrics to make data-driven promotion or rollback decisions during progressive deployments.
 

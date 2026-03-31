@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Containers, Linux
+Tags: RHEL, Container, Linux
 
 Description: Step-by-step guide on deploy portainer for container management using Red Hat Enterprise Linux 9.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cassandra, Database, Distributed Systems, NoSQL, High Availability, DevOps, Cluster Configuration
+Tags: Cassandra, Database, Distributed System, NoSQL, High Availability, DevOps, Cluster Configuration
 
 Description: A comprehensive guide to configuring Apache Cassandra clusters, covering cluster topology design, cassandra.
 

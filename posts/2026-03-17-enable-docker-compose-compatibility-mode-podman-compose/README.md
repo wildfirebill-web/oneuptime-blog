@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Compatibility, Docker
+Tags: Podman, Container, DevOps, podman-compose, Compatibility, Docker
 
 Description: Learn how to enable Docker Compose compatibility mode in podman-compose to maximize compatibility with existing Docker Compose files and workflows.
 

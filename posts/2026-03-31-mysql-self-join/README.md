@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, JOIN, Database, Query
+Tags: MySQL, SQL, Join, Database, Query
 
 Description: Learn how to use SELF JOIN in MySQL to join a table to itself, enabling hierarchical queries and row comparisons within the same table.
 

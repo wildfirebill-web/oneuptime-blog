@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images
+Tags: Podman, Container, DevOps, Container Image
 
 Description: Learn how to pull container images using Podman, including basic pull commands, specifying tags, and verifying downloaded images on your local system.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Saga Pattern, Distributed Transactions, Event-Driven, Architecture, Database, Choreography, Orchestration
+Tags: Microservice, Saga Pattern, Distributed Transaction, Event-Driven, Architecture, Database, Choreography, Orchestration
 
 Description: Learn how to implement the Saga pattern for managing distributed transactions in microservices, including choreography and orchestration approaches.
 

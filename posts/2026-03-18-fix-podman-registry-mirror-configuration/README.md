@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Registry, Mirror, DevOps
+Tags: Podman, Container, Registry, Mirror, DevOps
 
 Description: Learn how to configure Podman registry mirrors to speed up image pulls, work around rate limits, and use private registries with the registries.conf configuration file.
 

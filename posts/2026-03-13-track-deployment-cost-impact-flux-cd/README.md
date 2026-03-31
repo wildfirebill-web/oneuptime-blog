@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Cost Management, FinOps, Deployment Tracking, Notifications, Alerts
+Tags: Flux CD, Kubernetes, GitOps, Cost Management, FinOps, Deployment Tracking, Notification, Alert
 
 Description: Track the cost impact of deployments managed by Flux CD by correlating Flux reconciliation events with cost monitoring data to detect cost regressions in real time.
 

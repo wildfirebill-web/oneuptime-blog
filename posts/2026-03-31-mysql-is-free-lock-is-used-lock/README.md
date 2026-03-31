@@ -1,6 +1,6 @@
 # How to Use IS_FREE_LOCK() and IS_USED_LOCK() in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Lock, Concurrency, Function, Advisory Lock
 

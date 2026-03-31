@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, CI/CD, Continuous Deployment, Docker, Automation, Webhooks
+Tags: Portainer, CI/CD, Continuous Deployment, Docker, Automation, Webhook
 
 Description: Learn how to set up a CI/CD pipeline that automatically deploys updated Docker images to Portainer stacks using webhooks and the Portainer API.
 

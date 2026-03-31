@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Traefik, Circuit Breaker, Microservices, Resilience, Kubernetes, DevOps, Load Balancing, Middleware
+Tags: Traefik, Circuit Breaker, Microservice, Resilience, Kubernetes, DevOps, Load Balancing, Middleware
 
 Description: A comprehensive guide to implementing circuit breaker patterns in Traefik, including middleware configuration, fallback strategies, and monitoring circuit state for building resilient microservices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Pub/Sub, Dead Letter, Reliability
+Tags: GCP, Cloud Function, Pub/Sub, Dead Letter, Reliability
 
 Description: Learn how to configure retry policies and dead letter topics for Google Cloud Functions to build reliable event processing systems that handle failures gracefully.
 

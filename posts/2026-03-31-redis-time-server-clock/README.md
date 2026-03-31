@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, TIME, Server Clock, Unix Timestamp, Scripting
+Tags: Redis, Time, Server Clock, Unix Timestamp, Scripting
 
 Description: Learn how to use the TIME command in Redis to get the server's current Unix timestamp with microsecond precision for scripts and debugging.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Consumer Groups, Scalability, Java, Distributed Systems
+Tags: Kafka, Consumer Group, Scalability, Java, Distributed System
 
 Description: Learn how to build horizontally scalable Kafka consumers using consumer groups, including partition assignment strategies, rebalancing, and best practices for high-throughput message processing.
 

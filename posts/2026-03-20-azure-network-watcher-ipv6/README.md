@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, IPv6, Network Watcher, Diagnostics, Flow Logs, Troubleshooting
+Tags: Azure, IPv6, Network Watcher, Diagnostic, Flow Logs, Troubleshooting
 
 Description: Use Azure Network Watcher tools to diagnose IPv6 connectivity issues, analyze IPv6 flow logs, verify NSG rules for IPv6 traffic, and trace IPv6 packet paths.
 

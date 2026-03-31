@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Mongoexport, Csv, Data Export
+Tags: MongoDB, Mongoexport, CSV, Data Export
 
 Description: Learn how to export MongoDB collection data to CSV format using mongoexport, including field selection, filtering, handling nested documents, and Excel compatibility.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Matrix Builds, Dynamic Configuration, DevOps, Automation
+Tags: GitHub Action, CI/CD, Matrix Builds, Dynamic Configuration, DevOps, Automation
 
 Description: Learn how to use dynamic matrix strategies in GitHub Actions to generate build configurations at runtime based on file changes, API responses, or custom logic.
 

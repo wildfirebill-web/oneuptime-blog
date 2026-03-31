@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, Troubleshooting, Replicas, Replication
+Tags: Longhorn, Kubernetes, Storage, Troubleshooting, Replica, Replication
 
 Description: Diagnose and resolve issues with Longhorn replica rebuilding, including stuck rebuilds, slow rebuilds, and volumes stuck in degraded state.
 

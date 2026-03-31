@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Slack, Channels, Collaboration, ChatOps
+Tags: OpenTofu, Slack, Channel, Collaboration, ChatOps
 
 Description: Learn how to manage Slack channels, channel memberships, and workspace configuration using OpenTofu for reproducible collaboration infrastructure.
 

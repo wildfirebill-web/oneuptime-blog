@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Services, Networking, ClusterIP, NodePort
+Tags: Portainer, Kubernetes, Service, Networking, ClusterIP, NodePort
 
 Description: Learn how to expose Kubernetes applications using ClusterIP, NodePort, and LoadBalancer service types in Portainer.
 

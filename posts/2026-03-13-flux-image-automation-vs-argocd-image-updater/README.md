@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, ArgoCD, Image Automation, Image Updater, GitOps, Kubernetes, Container Images
+Tags: Flux CD, ArgoCD, Image Automation, Image Updater, GitOps, Kubernetes, Container Image
 
 Description: Compare Flux CD image automation and ArgoCD Image Updater capabilities for automated container image tag updates in GitOps workflows.
 

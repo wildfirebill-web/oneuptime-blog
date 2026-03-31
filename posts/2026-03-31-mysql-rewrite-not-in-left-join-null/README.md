@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Query Optimization, NOT IN, LEFT JOIN, Anti-join
+Tags: MySQL, Query Optimization, NOT IN, LEFT JOIN, Anti-Join
 
 Description: Learn why NOT IN performs poorly in MySQL, how NULL values cause correctness issues, and how to rewrite NOT IN to LEFT JOIN IS NULL for better performance.
 

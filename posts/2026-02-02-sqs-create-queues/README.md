@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SQS, Message Queues, Cloud, Serverless, Distributed Systems
+Tags: AWS, SQS, Message Queue, Cloud, Serverless, Distributed System
 
 Description: Learn how to create and configure Amazon SQS queues using the AWS Console, CLI, and SDKs.
 

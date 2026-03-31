@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, IPv6, Networking, Containers, Linux
+Tags: Podman, IPv6, Networking, Container, Linux
 
 Description: Learn how to configure Podman containers to run on IPv6-only networks, including network creation, DNS configuration, NAT64, and dual-stack setups.
 

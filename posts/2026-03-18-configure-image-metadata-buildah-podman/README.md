@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Buildah, Image Metadata, OCI, Labels
+Tags: Podman, Container, DevOps, Buildah, Image Metadata, OCI, Labels
 
 Description: Learn how to set and manage container image metadata like labels, environment variables, ports, and entrypoints using Buildah and Podman.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Docker Hub, DevOps
+Tags: Portainer, Docker, Image, Docker Hub, DevOps
 
 Description: Learn how to search Docker Hub for container images directly from Portainer to find official images and community images.
 

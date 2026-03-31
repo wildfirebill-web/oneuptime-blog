@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Window Functions, Analytics, Query
+Tags: MongoDB, Aggregation, Window Function, Analytics, Query
 
 Description: Learn how to use $first and $last as window function operators in MongoDB aggregation pipelines to retrieve boundary values within ordered partitions.
 

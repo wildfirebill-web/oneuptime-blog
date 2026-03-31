@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, INSERT, Duplicate, Error Handling
+Tags: MySQL, SQL, DML, Insert, Duplicate, Error Handling
 
 Description: Use INSERT IGNORE to silently skip rows that would violate unique or primary key constraints, and understand when to use it versus ON DUPLICATE KEY UPDATE.
 

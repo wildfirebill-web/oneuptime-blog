@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Node.js, RedisTimeSeries, Time Series, Metrics, ioredis
+Tags: Redis, Node.js, RedisTimeSeries, Time Series, Metric, ioredis
 
 Description: Learn how to use RedisTimeSeries in Node.js with ioredis to ingest, query, and aggregate time-stamped metrics data for monitoring and analytics.
 

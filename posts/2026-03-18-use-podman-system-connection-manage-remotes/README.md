@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Remote Management, System Connections, Multi-Host
+Tags: Podman, Container, DevOps, Remote Management, System Connections, Multi-Host
 
 Description: Learn how to use podman system connection subcommands to add, list, remove, and switch between remote Podman hosts for centralized container management.
 

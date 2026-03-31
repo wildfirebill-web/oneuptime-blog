@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Pagination, Scroll API, Search After, Bulk Operations, Performance
+Tags: Elasticsearch, Pagination, Scroll API, Search After, Bulk Operation, Performance
 
 Description: Learn the different methods to retrieve all records from Elasticsearch - from simple approaches for small datasets to scroll API and search_after for large-scale data extraction.
 

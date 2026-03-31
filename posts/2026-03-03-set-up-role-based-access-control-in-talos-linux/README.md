@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, RBAC, Access Control, Security, Operations
+Tags: Talos Linux, RBAC, Access Control, Security, Operation
 
 Description: Learn how to configure role-based access control for the Talos Linux API to limit what different users and services can do on your cluster nodes.
 

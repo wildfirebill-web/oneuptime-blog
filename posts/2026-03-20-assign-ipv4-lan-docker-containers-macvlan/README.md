@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, Macvlan, IPv4, LAN, Containers
+Tags: Docker, Networking, Macvlan, IPv4, LAN, Container
 
 Description: Configure Docker macvlan networking so containers receive IPv4 addresses from the physical LAN subnet, making them reachable from any device on the network without port mapping.
 

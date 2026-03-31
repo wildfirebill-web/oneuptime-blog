@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, MONITOR, Debugging, Real-Time, Observability
+Tags: Redis, Monitor, Debugging, Real-Time, Observability
 
 Description: Learn how to use Redis MONITOR to stream every command processed by the server in real time, useful for debugging and understanding application behavior.
 

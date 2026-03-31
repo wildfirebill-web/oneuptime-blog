@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Networking, Service CIDR, Services
+Tags: k3s, Kubernetes, Rancher, Networking, Service CIDR, Service
 
 Description: Learn how to configure the K3s service CIDR to define the IP range for Kubernetes Services, including ClusterIP and DNS addresses.
 

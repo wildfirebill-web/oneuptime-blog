@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NestJS, Pipes, Validation, Transformation, TypeScript
+Tags: NestJS, Pipe, Validation, Transformation, TypeScript
 
 Description: Use NestJS pipes for data validation and transformation to ensure clean, type-safe request handling.
 

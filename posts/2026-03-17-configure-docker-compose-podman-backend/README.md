@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker Compose, Backend, Configuration
+Tags: Podman, Container, DevOps, Docker Compose, Backend, Configuration
 
 Description: Learn how to configure docker-compose to use Podman as its backend runtime instead of Docker, including context setup and environment configuration.
 

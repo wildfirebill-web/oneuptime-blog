@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Client Tracking, Client-Side Caching, Performance, Internals
+Tags: Redis, Client Tracking, Client-Side Caching, Performance, Internal
 
 Description: A deep dive into how Redis CLIENT TRACKING enables server-assisted client-side caching, covering default mode, BCAST mode, OPTIN/OPTOUT, and invalidation mechanics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Service Accounts, Security, Zero Trust
+Tags: Calico, Kubernetes, Network Policy, Service Account, Security, Zero Trust
 
 Description: A step-by-step guide to configuring Calico network policies based on Kubernetes service accounts for stronger workload identity-based access control.
 

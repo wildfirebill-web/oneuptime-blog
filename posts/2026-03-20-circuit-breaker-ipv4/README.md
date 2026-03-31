@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Circuit Breaker, Resilience, Networking, Patterns
+Tags: Python, IPv4, Circuit Breaker, Resilience, Networking, Pattern
 
 Description: Learn how to implement a circuit breaker pattern for IPv4 network connections in Python to prevent cascading failures and allow automatic recovery when downstream services fail.
 

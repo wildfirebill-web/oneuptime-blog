@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Mongoose, Discriminators, Schema Design, Node.js
+Tags: MongoDB, Mongoose, Discriminator, Schema Design, Node.js
 
-Description: Learn how to use Mongoose discriminators to implement single collection inheritance, storing multiple document types in one MongoDB collection with shared and type-specific fields.
+Description: Learn how to use Mongoose discriminators to implement single collection inheritance, storing multiple document types in one MongoDB collection.
 
 ---
 

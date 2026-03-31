@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Idempotency, API, Distributed Systems, Deduplication, Reliability
+Tags: Redis, Idempotency, API, Distributed System, Deduplication, Reliability
 
 Description: A comprehensive guide to implementing idempotency keys with Redis for preventing duplicate API requests, ensuring exactly-once processing, and building reliable distributed systems.
 

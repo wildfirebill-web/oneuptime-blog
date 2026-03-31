@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Storage Account, Azure Monitor, Performance Monitoring, Metrics, Alerts, Diagnostics
+Tags: Azure, Storage Account, Azure Monitor, Performance Monitoring, Metric, Alert, Diagnostic
 
 Description: A complete guide to monitoring Azure Storage Account performance using Azure Monitor metrics, diagnostic settings, alerts, and workbooks.
 

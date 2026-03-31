@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Batch Processing, Metrics, Monitoring, Observability
+Tags: Batch Processing, Metric, Monitoring, Observability
 
 Description: Learn to implement batch metrics for measuring job performance, throughput, and resource utilization.
 

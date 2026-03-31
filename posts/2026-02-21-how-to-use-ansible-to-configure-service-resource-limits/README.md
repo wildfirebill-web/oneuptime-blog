@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Systemd, Resource Limits, Linux, Performance
+Tags: Ansible, Systemd, Resource Limit, Linux, Performance
 
 Description: Learn how to set CPU, memory, file descriptor, and process limits for systemd services using Ansible to prevent resource exhaustion and improve stability.
 

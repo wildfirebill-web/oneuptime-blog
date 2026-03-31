@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, CI/CD, DevOps, CodePipeline, Infrastructure as Code
+Tags: Terraform, Module, CI/CD, DevOps, CodePipeline, Infrastructure as Code
 
 Description: Build reusable Terraform modules for CI/CD infrastructure including CodePipeline, CodeBuild, ECR repositories, and deployment pipelines with practical examples.
 

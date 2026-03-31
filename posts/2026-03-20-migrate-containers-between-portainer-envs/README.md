@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Migration, Container Management, DevOps, Environments
+Tags: Portainer, Docker, Migration, Container Management, DevOps, Environment
 
 Description: Learn how to move containers and stacks from one Portainer environment to another, including volume data and configuration transfer.
 

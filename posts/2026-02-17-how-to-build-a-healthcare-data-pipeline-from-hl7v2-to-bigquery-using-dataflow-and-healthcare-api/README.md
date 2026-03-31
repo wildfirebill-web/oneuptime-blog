@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Healthcare API, HL7v2, BigQuery, Dataflow, Data Pipelines, Google Cloud
+Tags: GCP, Healthcare API, HL7v2, BigQuery, Dataflow, Data Pipeline, Google Cloud
 
 Description: Build an end-to-end healthcare data pipeline that ingests HL7v2 messages through Google Cloud Healthcare API and streams parsed data into BigQuery for analytics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, Sockets, Networking, Net package, Socket Programming
+Tags: Go, IPv6, Socket, Networking, Net package, Socket Programming
 
 Description: Create IPv6 TCP and UDP servers and clients in Go using the net package, with proper handling of dual-stack, IPv6-only, and link-local connections.
 

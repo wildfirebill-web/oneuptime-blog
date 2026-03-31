@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Git, Tags, Version Control
+Tags: Ansible, Git, Tag, Version Control
 
 Description: Learn how to use the Ansible git module with Git tags for versioned deployments, tag-based rollbacks, and release management in your automation workflows.
 

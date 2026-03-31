@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Networking, Ports, Security
+Tags: Podman, Container, DevOps, Rootless, Networking, Port, Security
 
 Description: A step-by-step guide to binding ports below 1024 in rootless Podman containers, covering kernel tunables, socket activation, and reverse proxy approaches.
 

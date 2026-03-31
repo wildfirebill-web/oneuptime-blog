@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Security, Token, DevOps
+Tags: k3s, Kubernetes, Security, Token, DevOps
 
 Description: Learn how to rotate the K3s cluster token to maintain security and prevent unauthorized nodes from joining your cluster.
 

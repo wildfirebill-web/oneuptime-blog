@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, Monitoring, Operations, Health Check
+Tags: MongoDB, Replica Set, Monitoring, Operation, Health Check
 
 Description: Use rs.status() and related commands to monitor MongoDB replica set health, replication lag, and member states in real time.
 

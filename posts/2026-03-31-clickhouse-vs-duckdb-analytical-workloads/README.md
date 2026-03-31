@@ -1,6 +1,6 @@
 # ClickHouse vs DuckDB for Analytical Workloads
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, DuckDB, Analytics, Database, Performance, OLAP
 

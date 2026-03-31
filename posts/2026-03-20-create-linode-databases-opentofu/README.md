@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Linode, Managed Databases, PostgreSQL, Infrastructure as Code
+Tags: OpenTofu, Linode, Managed Database, PostgreSQL, Infrastructure as Code
 
 Description: Learn how to create Linode managed database clusters with OpenTofu, including MySQL, PostgreSQL, and MongoDB configurations.
 

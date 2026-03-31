@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, Split-Horizon, Internals, External, BIND, Linux, Networking
+Tags: DNS, Split-Horizon, Internal, External, BIND, Linux, Networking
 
 Description: Configure split-horizon DNS to return different IP addresses for internal and external clients querying the same hostname, using BIND views or separate DNS servers.
 

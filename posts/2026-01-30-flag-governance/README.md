@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Governance, Compliance, Best Practice
+Tags: Feature Flag, Governance, Compliance, Best Practice
 
 Description: Learn how to establish governance practices for feature flag management.
 

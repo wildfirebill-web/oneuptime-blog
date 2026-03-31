@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, E-Commerce, Inventory Management, Microservices
+Tags: OpenTelemetry, E-Commerce, Inventory Management, Microservice
 
 Description: Trace inventory reservations and stock updates across distributed warehouse services with OpenTelemetry spans.
 

@@ -1,6 +1,6 @@
 # How to Implement Custom Health Checks via ArgoCD API
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ArgoCD, GitOps, Kubernetes, API, Health Check
 

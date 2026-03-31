@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Disaster Recovery, Testing, Resilience
 
-Description: Learn how to safely test Rook-Ceph disaster recovery procedures in staging and production environments to validate your DR runbooks before real incidents.
+Description: Learn how to safely test Rook-Ceph disaster recovery procedures in staging and production to validate DR runbooks before real incidents.
 
 ---
 

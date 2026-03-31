@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Plan, Apply, Lifecycle, Concepts, Infrastructure as Code
+Tags: OpenTofu, Plan, Apply, Lifecycle, Concept, Infrastructure as Code
 
 Description: Understand the complete OpenTofu plan and apply lifecycle, from reading configuration to making cloud API calls.
 

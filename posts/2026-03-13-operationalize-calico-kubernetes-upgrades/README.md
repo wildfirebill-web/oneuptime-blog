@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Upgrade, Operations
+Tags: Calico, Kubernetes, Networking, Upgrade, Operation
 
 Description: Build a sustainable operational process for regular Calico upgrades including upgrade scheduling, team readiness, runbooks, and continuous improvement workflows.
 

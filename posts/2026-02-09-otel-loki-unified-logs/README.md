@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Loki, Grafana, Logs, Traces
+Tags: OpenTelemetry, Loki, Grafana, Log, Trace
 
 Description: Learn how to configure OpenTelemetry to send logs to Grafana Loki and correlate them with traces for unified observability and seamless navigation between logs and traces.
 

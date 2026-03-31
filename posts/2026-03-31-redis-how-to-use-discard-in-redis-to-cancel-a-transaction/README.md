@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Transactions, Data Integrity, Commands
+Tags: Redis, Transaction, Data Integrity, Command
 
 Description: Learn how to use the DISCARD command in Redis to cancel a queued transaction and exit MULTI mode without executing any queued commands.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Explain, Query Optimization, Performance Tuning
+Tags: MySQL, EXPLAIN, Query Optimization, Performance Tuning
 
 Description: EXPLAIN is a MySQL statement that shows the query execution plan, revealing how the optimizer will access tables and indexes to answer a query.
 

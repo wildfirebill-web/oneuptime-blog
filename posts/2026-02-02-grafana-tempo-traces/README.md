@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Grafana Tempo, Distributed Tracing, Observability, OpenTelemetry, Traces, APM
+Tags: Grafana Tempo, Distributed Tracing, Observability, OpenTelemetry, Trace, APM
 
 Description: A comprehensive guide to using Grafana Tempo for trace storage, querying, and analysis. Learn TraceQL queries, trace correlation, sampling strategies, and production deployment patterns.
 

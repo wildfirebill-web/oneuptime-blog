@@ -1,6 +1,6 @@
 # How to Use SELECT INTO OUTFILE to Export Data in MySQL
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, SQL, Export, CSV, SELECT, Database
 

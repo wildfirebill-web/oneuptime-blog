@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, nerdctl, Containerd, Containers, CLI
+Tags: Podman, nerdctl, Containerd, Container, CLI
 
 Description: Compare Podman and nerdctl as Docker-compatible container CLI tools, examining their architecture, features, and how they integrate with different container runtimes.
 

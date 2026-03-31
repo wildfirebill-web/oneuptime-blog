@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Security, SAST, Dependency Scanning, Container Security, DevSecOps
+Tags: GitHub Action, Security, SAST, Dependency Scanning, Container Security, DevSecOps
 
 Description: Integrate comprehensive security scanning into your GitHub Actions workflows, covering dependency vulnerabilities, static code analysis, container scanning.
 

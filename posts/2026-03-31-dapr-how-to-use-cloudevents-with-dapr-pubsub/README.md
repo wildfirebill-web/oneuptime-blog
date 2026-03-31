@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, CloudEvents, Pub/Sub, Messaging, Microservices
+Tags: Dapr, CloudEvent, Pub/Sub, Messaging, Microservice
 
 Description: Learn how Dapr wraps pub/sub messages in CloudEvents format, access CloudEvent attributes, and publish custom CloudEvent-formatted messages.
 

@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Bulk Subscribe, Microservices, Messaging, Performance
+Tags: Dapr, Pub/Sub, Bulk Subscribe, Performance, Microservice
 
-Description: Learn how to use Dapr's bulk subscribe API to receive and process multiple messages in a single delivery for improved throughput and efficiency.
+Description: Improve throughput and efficiency in Dapr pub/sub by using the bulk subscribe API to receive and process batches of messages in a single request.
 
 ---
 

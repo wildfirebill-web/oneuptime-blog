@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Storage, Data Parts, Cleanup, MergeTree
+Tags: ClickHouse, Storage, Data Part, Cleanup, MergeTree
 
 Description: Learn how to identify and clean up old, detached, and orphaned ClickHouse data parts to reclaim disk space and improve server health.
 

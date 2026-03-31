@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker Swarm, Portainer, Resource Limits, Container Management, Performance
+Tags: Docker Swarm, Portainer, Resource Limit, Container Management, Performance
 
 Description: Learn how to set CPU and memory resource reservations and limits for Docker Swarm services in Portainer.
 

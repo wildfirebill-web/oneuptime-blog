@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Sync Hooks, Jobs
+Tags: ArgoCD, GitOps, Kubernetes, Sync Hooks, Job
 
 Description: Learn how to use Kubernetes Jobs as ArgoCD sync hooks for running one-time tasks like migrations, tests, and notifications during deployment workflows.
 

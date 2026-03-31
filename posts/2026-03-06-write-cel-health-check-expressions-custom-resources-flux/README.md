@@ -1,6 +1,6 @@
 # How to Write CEL Health Check Expressions for Custom Resources in Flux
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, CEL, Health Check, Custom Resources, Kubernetes, GitOps, Expression
 

@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Sub-Orchestration, Microservices, Orchestration
+Tags: Dapr, Workflow, Sub-Orchestration, Orchestration, Microservice
 
-Description: Learn how to use Dapr Workflow sub-orchestrations to break complex workflows into reusable child workflows that can run in parallel or sequentially.
+Description: Learn how to use Dapr Workflow sub-orchestrations to decompose complex workflows into reusable, independently versioned child workflows.
 
 ---
 

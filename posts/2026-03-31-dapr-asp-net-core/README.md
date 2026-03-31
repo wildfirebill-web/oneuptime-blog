@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Aspnet, Dotnet, Microservice, Api, Integration
+Tags: Dapr, Aspnet, DotNet, Microservice, API, Integration
 
 Description: A practical guide to integrating Dapr building blocks into ASP.NET Core applications using the official .NET SDK and middleware extensions.
 

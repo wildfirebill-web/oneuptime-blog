@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, IP Allowlisting, Security, AWS, WAF, Security Groups, Networking
+Tags: Terraform, IP Allowlisting, Security, AWS, WAF, Security Group, Networking
 
 Description: Learn how to build a complete IP allowlisting infrastructure with Terraform using security groups, NACLs, WAF, and prefix lists for secure access control.
 

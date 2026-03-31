@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, Data Quality, Validation, Great Expectations
+Tags: Data Pipeline, Data Quality, Validation, Great Expectations
 
 Description: Learn to build data validation for ensuring data quality and integrity in data pipelines.
 

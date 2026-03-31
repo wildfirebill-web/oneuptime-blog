@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Lookup Plugins, Loops, Cross Product
+Tags: Ansible, Lookup Plugins, Loop, Cross Product
 
 Description: Learn how to use the Ansible nested lookup plugin to generate cross-product iterations from multiple lists in your playbooks.
 

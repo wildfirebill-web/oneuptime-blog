@@ -2128,6 +2128,7 @@ function checkTagNormalization(blogsJson: BlogEntry[]): void {
     'label|labels', 'join|joins', 'array|arrays',
     'datasource|datasources',
     'user|users', 'volume|volumes',
+    'id|ids', 'ci|cis',
   ]);
 
   for (const key of normalizedKeys) {

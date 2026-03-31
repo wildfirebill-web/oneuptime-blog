@@ -1,6 +1,6 @@
 # How to Troubleshoot Kustomization Not Ready Status in Flux
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, GitOps, Kubernetes, Kustomize, Troubleshooting, Not Ready, Health Check
 

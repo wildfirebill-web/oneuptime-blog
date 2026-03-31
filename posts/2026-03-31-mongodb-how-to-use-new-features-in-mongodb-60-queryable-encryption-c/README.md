@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, MongoDB 6.0, Queryable Encryption, Change Streams, New Features
+Tags: MongoDB, MongoDB 6.0, Queryable Encryption, Change Stream, New Features
 
 Description: Explore MongoDB 6.0's major features including Queryable Encryption and change stream pre-images with practical implementation examples.
 

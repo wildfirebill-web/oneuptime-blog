@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, LOAD DATA, Bulk Import, CSV, Performance
+Tags: MySQL, SQL, DML, LOAD DATA, Bulk Import, CSV
 
 Description: Import large CSV or delimited files into MySQL tables with LOAD DATA INFILE, configure delimiters, handle headers, and set up required server permissions.
 

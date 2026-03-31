@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Functions, Security, Hashing
+Tags: OpenTofu, Terraform, Infrastructure as Code, Function, Security, Hashing
 
 Description: Learn how to use sha256 and sha512 in OpenTofu to compute cryptographically strong hashes for security validation and change detection.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Authentication, Auth Files, Security
+Tags: Podman, Container, DevOps, Registry, Authentication, Auth Files, Security
 
 Description: A detailed guide to understanding and managing authentication files in Podman for secure registry access.
 

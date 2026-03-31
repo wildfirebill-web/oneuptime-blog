@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $exists, Schema Validation, Field Presence, Query Operators, Node.js
+Tags: MongoDB, $exists, Schema Validation, Field Presence, Query Operator, Node.js
 
 Description: Learn how to use MongoDB's $exists operator to query documents based on whether a field is present or absent, including null handling and index behavior.
 

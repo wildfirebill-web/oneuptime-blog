@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, GitHub Actions, CI/CD, Artifact, S3, Storage
+Tags: Rook, Ceph, GitHub Action, CI/CD, Artifact, S3, Storage
 
 Description: Store GitHub Actions build artifacts and caches in Ceph RGW using S3-compatible actions, enabling self-hosted runners to use on-premises object storage.
 

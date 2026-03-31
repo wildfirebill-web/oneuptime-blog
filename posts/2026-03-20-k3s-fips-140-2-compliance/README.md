@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Security, FIPS, Compliance, Government
+Tags: k3s, Kubernetes, Security, FIPS, Compliance, Government
 
 Description: Learn how to configure K3s to use FIPS 140-2 validated cryptographic modules for government and regulated industry deployments.
 

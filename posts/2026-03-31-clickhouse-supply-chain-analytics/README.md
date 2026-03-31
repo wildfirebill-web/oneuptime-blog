@@ -1,6 +1,6 @@
 # How to Build a Supply Chain Analytics System with ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Analytics, Supply Chain, Logistics, Inventory
 

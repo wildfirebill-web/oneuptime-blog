@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Microservices, Resilience, Patterns, Timeout
+Tags: Microservice, Resilience, Pattern, Timeout
 
 Description: Learn to implement timeout patterns that prevent cascading failures and improve system resilience in distributed architectures.
 

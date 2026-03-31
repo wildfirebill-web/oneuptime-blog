@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Event Grid, Storage Events, Event-Driven Architecture, Blob Storage, Notifications, Serverless
+Tags: Azure, Event Grid, Storage Events, Event-Driven Architecture, Blob Storage, Notification, Serverless
 
 Description: How to configure Azure Event Grid to send real-time notifications when events occur in your Azure Storage account, with practical filtering and routing examples.
 

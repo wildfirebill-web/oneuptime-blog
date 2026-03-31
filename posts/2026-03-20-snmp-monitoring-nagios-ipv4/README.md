@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nagios, SNMP, Network Monitoring, IPv4, Plugins, Alerting
+Tags: Nagios, SNMP, Network Monitoring, IPv4, Plugin, Alerting
 
 Description: Learn how to configure Nagios to monitor IPv4 network devices via SNMP, including installing SNMP plugins, creating host definitions, and setting up service checks.
 

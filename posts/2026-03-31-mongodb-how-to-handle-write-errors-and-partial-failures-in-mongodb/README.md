@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Error Handling, Bulk Write, Partial Failures, Write Errors
+Tags: MongoDB, Error Handling, Bulk Write, Partial Failure, Write Error
 
 Description: Learn how to detect, handle, and recover from write errors and partial failures in MongoDB bulk operations and single writes.
 

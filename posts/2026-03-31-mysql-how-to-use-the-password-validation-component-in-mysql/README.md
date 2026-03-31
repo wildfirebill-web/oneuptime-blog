@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, Password Validation, Administration, Mysql 8
+Tags: MySQL, Security, Password Validation, Administration, MySQL 8
 
 Description: Learn how to install and configure the MySQL password validation component to enforce password strength requirements like length, complexity, and dictionary checks.
 

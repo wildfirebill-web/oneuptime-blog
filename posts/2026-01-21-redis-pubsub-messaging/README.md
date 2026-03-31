@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, Messaging, Real-Time, Events, Microservices
+Tags: Redis, Pub/Sub, Messaging, Real-Time, Event, Microservice
 
 Description: A comprehensive guide to implementing publish/subscribe messaging patterns with Redis, including PUBLISH, SUBSCRIBE, pattern subscriptions, and real-time notification systems.
 

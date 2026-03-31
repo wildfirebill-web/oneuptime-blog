@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Single Field Index, Performance, Query Optimization
+Tags: MongoDB, Index, Single Field Index, Performance, Query Optimization
 
 Description: Learn how to create single field indexes in MongoDB to speed up queries, understand index direction, and verify index usage with explain().
 

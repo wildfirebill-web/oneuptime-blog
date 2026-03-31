@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Projects, Resource Quotas, Namespaces
+Tags: Rancher, Kubernetes, Project, Resource Quota, Namespace
 
 Description: A practical guide to configuring resource quotas for Rancher projects to control CPU, memory, and object consumption across namespaces.
 

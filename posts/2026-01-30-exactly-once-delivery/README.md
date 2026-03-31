@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Event-Driven, Messaging, Transactions, Kafka
+Tags: Event-Driven, Messaging, Transaction, Kafka
 
 Description: Learn to implement exactly-once delivery semantics using idempotency and transactional processing patterns.
 

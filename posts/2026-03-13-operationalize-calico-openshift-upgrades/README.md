@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, OpenShift, Kubernetes, Networking, Upgrade, Operations
+Tags: Calico, OpenShift, Kubernetes, Networking, Upgrade, Operation
 
 Description: Build operational processes for regular Calico upgrades on OpenShift, coordinating with OCP upgrade cycles and Red Hat support requirements.
 

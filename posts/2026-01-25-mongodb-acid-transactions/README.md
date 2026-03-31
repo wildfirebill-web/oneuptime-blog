@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Transactions, ACID, Data Integrity, Database
+Tags: MongoDB, Transaction, ACID, Data Integrity, Database
 
 Description: A practical guide to using multi-document ACID transactions in MongoDB, including session management, error handling, and best practices for maintaining data consistency.
 

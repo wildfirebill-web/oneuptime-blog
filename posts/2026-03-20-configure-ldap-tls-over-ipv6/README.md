@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: LDAP, TLS, IPv6, StartTLS, OpenLDAP, Security, Certificates
+Tags: LDAP, TLS, IPv6, StartTLS, OpenLDAP, Security, Certificate
 
 Description: Configure TLS encryption for LDAP connections over IPv6 using LDAPS (port 636) and StartTLS, including certificate setup, client configuration, and verification.
 

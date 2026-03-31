@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, Window Function, ROW_NUMBER, RANK, DENSE_RANK, MySQL 8.0, Database
+Tags: MySQL, SQL, Window Function, ROW_NUMBER, Rank, DENSE_RANK, MySQL 8.0, Database
 
 Description: Learn how to use ROW_NUMBER, RANK, and DENSE_RANK window functions in MySQL 8.0 to assign row numbers and rankings within result partitions.
 

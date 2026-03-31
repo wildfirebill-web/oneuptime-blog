@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Report, GROUP BY, DATE, Aggregation
+Tags: MySQL, Report, GROUP BY, Date, Aggregation
 
 Description: Learn how to generate daily reports in MySQL by grouping data by date, filling gaps with a calendar table, and scheduling automated exports with MySQL Events.
 

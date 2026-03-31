@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Lambda, DocumentDB, Change Streams, Event-Driven, Serverless
+Tags: AWS, Lambda, DocumentDB, Change Stream, Event-Driven, Serverless
 
 Description: Learn how to trigger AWS Lambda functions from Amazon DocumentDB change streams to build reactive event-driven applications
 

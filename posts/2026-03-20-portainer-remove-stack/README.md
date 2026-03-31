@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Cleanup, DevOps
+Tags: Portainer, Docker, Stack, Cleanup, DevOps
 
 Description: Learn how to safely remove Docker Compose stacks in Portainer, understanding what gets deleted and how to preserve important data.
 

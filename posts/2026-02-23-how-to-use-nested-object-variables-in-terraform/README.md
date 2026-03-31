@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Object, Nested Type, Infrastructure as Code
+Tags: Terraform, Variable, Object, Nested Type, Infrastructure as Code
 
 Description: Learn how to design and use nested object variables in Terraform to model complex infrastructure configurations with multiple levels of structured data.
 

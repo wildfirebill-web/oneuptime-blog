@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, StatsD, Metrics, Monitoring, Observability
+Tags: OpenTelemetry, Collector, StatsD, Metric, Monitoring, Observability
 
 Description: Complete guide to configuring the StatsD receiver in OpenTelemetry Collector. Learn protocol support, aggregation settings, and how to migrate from traditional StatsD servers.
 

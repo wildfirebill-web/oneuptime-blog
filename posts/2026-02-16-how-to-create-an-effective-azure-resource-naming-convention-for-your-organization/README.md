@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Naming Conventions, Governance, Best Practice, Cloud Management, Organizations, Resource Management
+Tags: Azure, Naming Convention, Governance, Best Practice, Cloud Management, Organization, Resource Management
 
 Description: Create a practical Azure resource naming convention that makes resources easy to identify, search, and manage across your entire organization.
 

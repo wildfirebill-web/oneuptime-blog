@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Microservices
+Tags: ArgoCD, GitOps, Kubernetes, Microservice
 
 Description: Learn how to deploy and manage multiple microservices with ArgoCD using app-of-apps pattern, ApplicationSets, and monorepo strategies for scalable GitOps workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, MOD, Modulo, Math Functions, SQL
+Tags: MySQL, MOD, Modulo, Math Function, SQL
 
 Description: Learn how to use the MOD() function in MySQL to compute the remainder of division, with practical examples for odd/even checks, cycling, and pagination.
 

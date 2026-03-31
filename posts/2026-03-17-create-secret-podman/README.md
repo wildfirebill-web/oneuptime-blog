@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Security
+Tags: Podman, Container, DevOps, Secret, Security
 
 Description: Learn how to create and manage secrets in Podman to securely store sensitive data like passwords, API keys, and certificates.
 

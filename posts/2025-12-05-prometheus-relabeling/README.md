@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Relabeling, Configuration, Service Discovery, Metrics, Labels
+Tags: Prometheus, Relabeling, Configuration, Service Discovery, Metric, Labels
 
 Description: Master Prometheus relabeling to transform labels, filter targets, and control metric ingestion with practical examples for common use cases.
 

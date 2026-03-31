@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Flask, Python, Database, Analytics, Api
+Tags: ClickHouse, Flask, Python, Database, Analytics, API
 
 Description: Build a Flask analytics API backed by ClickHouse using clickhouse-connect, application factory pattern, blueprints, and parameterized queries for safe data access.
 

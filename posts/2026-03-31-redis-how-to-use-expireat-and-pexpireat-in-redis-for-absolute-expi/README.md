@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Expiration, TTL, Commands, Key Management
+Tags: Redis, Expiration, TTL, Command, Key Management
 
 Description: Learn how to use EXPIREAT and PEXPIREAT in Redis to set key expiration at specific Unix timestamps instead of relative durations, enabling calendar-based expiry.
 

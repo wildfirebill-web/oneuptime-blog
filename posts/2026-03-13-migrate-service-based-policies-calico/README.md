@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Services, Migration
+Tags: Calico, Kubernetes, Network Policy, Service, Migration
 
 Description: Migrate to Calico service-based network policies Calico service-based policies from pod-selector rules.
 

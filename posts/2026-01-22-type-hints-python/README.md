@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Type Hints, Type Annotations, Static Typing, Code Quality
+Tags: Python, Type Hint, Type Annotations, Static Typing, Code Quality
 
 Description: Learn Python type hints for better code documentation, IDE support, and error catching. Covers basic types, generics, and integration with mypy.
 

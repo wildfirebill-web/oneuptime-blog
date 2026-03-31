@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $documents, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $documents, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $documents stage to generate inline documents from a literal array within an aggregation pipeline, enabling lookups against in-memory data.
 

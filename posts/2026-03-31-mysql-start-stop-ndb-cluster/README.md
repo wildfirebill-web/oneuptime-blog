@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, NDB Cluster, Operations, Management, Startup
+Tags: MySQL, NDB Cluster, Operation, Management, Startup
 
 Description: Learn the correct order and commands for starting and stopping a MySQL NDB Cluster safely, including graceful shutdown and individual node control.
 

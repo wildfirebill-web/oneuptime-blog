@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Performance, Monitoring, Prometheus, Metrics
+Tags: Dapr, Performance, Monitoring, Prometheus, Metric
 
 Description: Learn how to monitor Dapr service invocation performance using Prometheus metrics, Grafana dashboards, and distributed tracing to identify latency bottlenecks.
 

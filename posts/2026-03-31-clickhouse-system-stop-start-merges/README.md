@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SYSTEM, MergeTree, Merge, Maintenance
+Tags: ClickHouse, SQL, System, MergeTree, Merge, Maintenance
 
 Description: Learn how to use SYSTEM STOP MERGES and SYSTEM START MERGES in ClickHouse to pause and resume background merges during maintenance windows.
 

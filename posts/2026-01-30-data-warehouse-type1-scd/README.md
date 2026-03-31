@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Warehouse, SCD, Slowly Changing Dimensions, ETL
+Tags: Data Warehouse, SCD, Slowly Changing Dimension, ETL
 
 Description: Learn to implement Type 1 SCD (Slowly Changing Dimensions) for overwriting old values with current values.
 

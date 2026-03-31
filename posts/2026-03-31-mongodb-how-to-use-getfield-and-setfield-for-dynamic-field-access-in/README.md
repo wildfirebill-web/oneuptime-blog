@@ -1,4 +1,4 @@
-# How to Use $getField and $setField for Dynamic Field Access in MongoDB Aggregation
+# How to Use $getField and $setField in MongoDB Aggregation
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

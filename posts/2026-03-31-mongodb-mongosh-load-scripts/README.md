@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, mongosh, Scripting, Tool, Administration
+Tags: MongoDB, Mongosh, Scripting, Tool, Administration
 
 Description: Learn how to use the mongosh load() function to execute external JavaScript files, build reusable script libraries, and compose complex operations from the interactive shell.
 

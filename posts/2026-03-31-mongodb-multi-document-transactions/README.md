@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Transactions, ACID, Database, Data Integrity
+Tags: MongoDB, Transaction, ACID, Database, Data Integrity
 
 Description: A deep-dive into MongoDB multi-document transactions covering cross-collection operations, session management, retry logic, and production patterns for complex data workflows.
 

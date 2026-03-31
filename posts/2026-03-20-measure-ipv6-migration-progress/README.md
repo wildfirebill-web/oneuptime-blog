@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Migration, Metrics, KPIs, Progress Tracking
+Tags: IPv6, Migration, Metric, KPIs, Progress Tracking
 
 Description: Define and measure key performance indicators for IPv6 migration progress including AAAA record coverage, IPv6 traffic percentage, and service readiness scores.
 

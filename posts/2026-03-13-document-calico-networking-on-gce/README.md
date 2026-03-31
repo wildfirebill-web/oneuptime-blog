@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, GCE, Google Cloud, Documentation, Operations
+Tags: Calico, Kubernetes, Networking, GCE, Google Cloud, Documentation, Operation
 
 Description: How to create operational documentation for Calico networking on GCE, covering VPC route management, firewall dependency maps, and runbooks for GCE-specific Kubernetes cluster operations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, CRIU, Containers, Checkpoints, Live Backup
+Tags: Podman, CRIU, Container, Checkpoint, Live Backup
 
 Description: Learn to use Podman's --leave-running and --pre-checkpoint options to create container checkpoints without stopping workloads or causing downtime.
 

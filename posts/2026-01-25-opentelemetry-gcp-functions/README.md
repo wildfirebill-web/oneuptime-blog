@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, GCP, Cloud Functions, Serverless, Observability, Tracing, Node.js, Python, Go
+Tags: OpenTelemetry, GCP, Cloud Function, Serverless, Observability, Tracing, Node.js, Python, Go
 
 Description: A practical guide to instrumenting Google Cloud Functions with OpenTelemetry for distributed tracing, with examples in Node.js, Python, and Go.
 

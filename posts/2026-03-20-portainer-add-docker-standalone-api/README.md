@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Environments, Docker API, TLS, Remote Management
+Tags: Portainer, Docker, Environment, Docker API, TLS, Remote Management
 
 Description: Connect Portainer to a remote Docker host using the Docker API over TCP with optional TLS authentication for secure remote management.
 

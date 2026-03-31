@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Spot Instances, Cost Optimization
+Tags: ArgoCD, GitOps, Kubernetes, Spot Instance, Cost Optimization
 
 Description: Learn how to configure ArgoCD deployments to work reliably on Kubernetes spot instance nodes while saving up to 90% on compute costs.
 

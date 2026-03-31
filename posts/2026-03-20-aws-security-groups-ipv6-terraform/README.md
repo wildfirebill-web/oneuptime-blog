@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, Terraform, IPv6, Security Groups, Networking, Firewall
+Tags: AWS, Terraform, IPv6, Security Group, Networking, Firewall
 
 Description: A guide to writing AWS Security Group rules that cover IPv6 traffic in Terraform, including common dual-stack patterns.
 

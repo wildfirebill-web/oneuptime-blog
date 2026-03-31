@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Event Grid, Azure Functions, Serverless, Event Handler, Event-Driven, Cloud Computing
+Tags: Azure, Event Grid, Azure Function, Serverless, Event Handler, Event-Driven, Cloud Computing
 
 Description: A complete guide to connecting Azure Event Grid events to Azure Functions using triggers, bindings, and proper error handling patterns.
 

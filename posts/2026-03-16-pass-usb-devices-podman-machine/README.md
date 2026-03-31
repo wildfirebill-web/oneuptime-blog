@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps, USB Devices
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps, USB Devices
 
 Description: Learn how to pass USB devices from your host system through a Podman machine to containers for hardware access and device testing.
 

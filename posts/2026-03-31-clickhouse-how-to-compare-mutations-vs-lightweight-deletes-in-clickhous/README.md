@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Mutations, Lightweight Deletes, DELETE, Performance, MergeTree
+Tags: ClickHouse, Mutation, Lightweight Delete, Delete, Performance, MergeTree
 
 Description: Compare mutations and lightweight deletes in ClickHouse to understand when to use each approach for removing or updating rows, with performance trade-offs explained.
 

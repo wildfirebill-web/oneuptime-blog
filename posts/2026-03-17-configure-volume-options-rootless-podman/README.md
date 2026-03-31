@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Volumes, Security, Configuration
+Tags: Podman, Container, DevOps, Rootless, Volumes, Security, Configuration
 
 Description: Learn how to configure volume options specifically for rootless Podman to handle UID mapping and permission challenges.
 

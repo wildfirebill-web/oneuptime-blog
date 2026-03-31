@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, State Management, Environments, S3 Backend, Best Practice
+Tags: OpenTofu, Terraform, State Management, Environment, S3 Backend, Best Practice
 
 Description: Learn how to split OpenTofu state files by environment to limit blast radius, enable independent deployments, and prevent cross-environment state pollution.
 

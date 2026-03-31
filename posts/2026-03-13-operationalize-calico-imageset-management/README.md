@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, ImageSet, Operations, GitOps
+Tags: Calico, Kubernetes, Networking, ImageSet, Operation, GitOps
 
 Description: Build production-grade operational processes for Calico ImageSet management including runbooks, change management workflows, and team ownership models.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Threat Intelligence, Security, Correlation, IOC
+Tags: ClickHouse, Threat Intelligence, Security, Correlation, IoC
 
 Description: Correlate internal security events with external threat intelligence feeds in ClickHouse to detect known malicious actors and indicators of compromise.
 

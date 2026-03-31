@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: SRE, RCA, Incidents, Reliability
+Tags: SRE, RCA, Incident, Reliability
 
 Description: A practical guide to conducting root cause analysis that uncovers the real reasons behind incidents and prevents them from happening again.
 

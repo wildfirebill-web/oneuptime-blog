@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, VNet Peering, Troubleshooting, Networking, Connectivity, Virtual Network, Diagnostics
+Tags: Azure, VNet Peering, Troubleshooting, Networking, Connectivity, Virtual Network, Diagnostic
 
 Description: A systematic guide to diagnosing and fixing Azure VNet peering connectivity issues including common misconfigurations and resolution steps.
 

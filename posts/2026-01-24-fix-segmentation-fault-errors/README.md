@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Linux, Debugging, System Administration, Troubleshooting, Memory, Core Dumps
+Tags: Linux, Debugging, System Administration, Troubleshooting, Memory, Core Dump
 
 Description: Learn how to diagnose and fix segmentation fault errors in Linux using core dumps, debugging tools, and systematic troubleshooting approaches.
 

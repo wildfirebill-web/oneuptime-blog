@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Operations, Maintenance
+Tags: ArgoCD, GitOps, Kubernetes, Operation, Maintenance
 
 Description: Learn how to temporarily pause or skip ArgoCD application reconciliation during maintenance windows, incident response, or when you need to prevent automatic syncs.
 

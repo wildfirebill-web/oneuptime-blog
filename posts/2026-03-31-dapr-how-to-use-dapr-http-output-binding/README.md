@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, HTTP, Bindings, Microservices, Output Binding
+Tags: Dapr, HTTP, Binding, Microservice, Output Binding
 
 Description: Learn how to use the Dapr HTTP output binding to call external HTTP services from your microservices without hardcoding URLs or managing HTTP clients.
 

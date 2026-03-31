@@ -1,6 +1,6 @@
 # How to Import Data from S3 in Various Formats in ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, S3, Data Engineering, Analytics
 

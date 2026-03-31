@@ -1,6 +1,6 @@
 # How to Use Data Masking in ClickHouse
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Security, Privacy, Database, SQL
 

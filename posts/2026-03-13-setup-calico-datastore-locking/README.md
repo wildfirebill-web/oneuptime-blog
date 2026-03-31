@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Operations
+Tags: Calico, Kubernetes, Networking, Operation
 
 Description: Set up and use Calico datastore locking during etcd-to-Kubernetes API datastore migrations to prevent Felix from making policy updates while the migration is in progress.
 

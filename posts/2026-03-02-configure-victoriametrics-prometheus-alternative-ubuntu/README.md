@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Monitoring, VictoriaMetrics, Prometheus, Metrics
+Tags: Ubuntu, Monitoring, VictoriaMetrics, Prometheus, Metric
 
 Description: Deploy and configure VictoriaMetrics on Ubuntu as a drop-in Prometheus replacement with better performance, lower resource usage, and long-term metrics storage capabilities.
 

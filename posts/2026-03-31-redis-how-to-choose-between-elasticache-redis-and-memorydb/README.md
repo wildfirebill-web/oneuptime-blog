@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, ElastiCache, MemoryDB, AWS, Cloud Databases
+Tags: Redis, ElastiCache, MemoryDB, AWS, Cloud Database
 
 Description: Compare AWS ElastiCache for Redis and Amazon MemoryDB for Redis to choose the right managed Redis service for your durability and performance needs.
 

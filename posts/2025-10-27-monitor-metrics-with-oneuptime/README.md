@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Monitoring, Observability, Metrics, DevOps, OpenTelemetry
+Tags: Monitoring, Observability, Metric, DevOps, OpenTelemetry
 
 Description: Learn how to set up metric monitors in OneUptime using the built-in dashboards so you can watch key KPIs and act quickly when numbers drift.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Traffic Routing, Localization, Headers, Kubernetes
+Tags: Istio, Traffic Routing, Localization, Header, Kubernetes
 
 Description: Route traffic to language-specific service backends using the Accept-Language HTTP header in Istio VirtualService configurations.
 

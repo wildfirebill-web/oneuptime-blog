@@ -1,6 +1,6 @@
 # How to Install MySQL Workbench on macOS
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Workbench, macOS, Installation, GUI
 

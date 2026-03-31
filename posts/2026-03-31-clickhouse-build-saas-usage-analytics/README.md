@@ -1,8 +1,8 @@
 # How to Build a SaaS Usage Analytics System with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SaaS, Analytics, Product analytics, Tutorial, Database
+Tags: ClickHouse, SaaS, Analytics, Product Analytics, Tutorial, Database
 
 Description: Build a comprehensive SaaS usage analytics system with ClickHouse, covering feature adoption tracking, DAU/MAU metrics, churn signals, account health scoring, and product dashboards.
 

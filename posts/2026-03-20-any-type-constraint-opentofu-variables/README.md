@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Type Constraints, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Type Constraints, HCL, Infrastructure as Code, DevOps
 
 Description: Learn when and how to use the any type constraint for OpenTofu variables to accept values of any type while understanding the trade-offs.
 

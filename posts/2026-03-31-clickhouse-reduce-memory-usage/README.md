@@ -1,6 +1,6 @@
 # How to Reduce ClickHouse Memory Usage for Large Queries
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Performance, Infrastructure, Database, Analytics
 

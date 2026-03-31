@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, CIS, Security, Compliance, Benchmarks
+Tags: Rancher, Kubernetes, CIS, Security, Compliance, Benchmark
 
 Description: Learn how to run CIS (Center for Internet Security) benchmark scans on your Kubernetes clusters using Rancher's built-in CIS scanning tool.
 

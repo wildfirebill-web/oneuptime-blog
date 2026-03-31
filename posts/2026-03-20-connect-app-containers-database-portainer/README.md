@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Networking, Database Connection, Service Discovery, Environment Variables
+Tags: Portainer, Docker Networking, Database Connection, Service Discovery, Environment Variable
 
 Description: Learn how to connect application containers to database containers in Portainer using shared networks, service names, and environment variables.
 

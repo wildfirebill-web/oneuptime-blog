@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Network Watcher, IPv4, Troubleshooting, Connectivity, Diagnostics
+Tags: Azure, Network Watcher, IPv4, Troubleshooting, Connectivity, Diagnostic
 
 Description: Use Azure Network Watcher tools including IP flow verify, next hop, connection troubleshoot, and packet capture to diagnose IPv4 connectivity issues in Azure VNets.
 

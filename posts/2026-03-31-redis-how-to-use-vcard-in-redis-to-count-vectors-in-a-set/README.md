@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Sets, Embeddings, Index Management
+Tags: Redis, Vector Set, Embedding, Index Management
 
 Description: Learn how to use VCARD in Redis to get the total count of vector elements stored in a Vector Set for index monitoring and capacity planning.
 

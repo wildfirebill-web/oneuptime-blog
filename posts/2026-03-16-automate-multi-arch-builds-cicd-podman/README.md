@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, CI/CD, Automation
+Tags: Podman, Container, DevOps, Multi-Architecture, CI/CD, Automation
 
 Description: Learn how to set up automated multi-architecture container image builds in CI/CD pipelines using Podman, with examples for GitHub Actions, GitLab CI, and Jenkins.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Adaptive Hash Index, Configuration, Performance
+Tags: MySQL, InnoDB, Adaptive Hash Index, Configuration, Performance
 
 Description: Learn how the InnoDB Adaptive Hash Index works in MySQL and how to configure, monitor, or disable it based on your workload characteristics.
 

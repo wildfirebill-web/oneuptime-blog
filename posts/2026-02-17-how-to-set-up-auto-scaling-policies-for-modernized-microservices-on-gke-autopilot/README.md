@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, GKE, Autopilot, Kubernetes, Auto-Scaling, Microservices, HPA
+Tags: GCP, GKE, Autopilot, Kubernetes, Auto-Scaling, Microservice, HPA
 
 Description: Configure horizontal pod autoscaling, vertical pod autoscaling, and custom metrics scaling for microservices running on GKE Autopilot to handle variable workloads efficiently.
 

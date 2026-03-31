@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Query Processing, Internals, Execution Pipeline, Performance
+Tags: ClickHouse, Query Processing, Internal, Execution Pipeline, Performance
 
 Description: Walk through the internal stages ClickHouse goes through when executing a SELECT query, from parsing to result streaming.
 

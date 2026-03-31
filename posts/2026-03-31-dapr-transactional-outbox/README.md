@@ -1,6 +1,6 @@
 # How to Enable the Transactional Outbox Pattern in Dapr
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Outbox Pattern, State Management, Pub/Sub, Microservice
 

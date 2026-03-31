@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Machine Learning, GPU, Data Science
+Tags: Podman, Container, Machine Learning, GPU, Data Science
 
 Description: Learn how to use Podman to run machine learning workloads in containers with GPU access, reproducible environments, and efficient resource management for training and inference.
 

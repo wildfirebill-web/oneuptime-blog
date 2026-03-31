@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Audit Logs, Cloud Logging, Security, Admin Activity
+Tags: GCP, Audit Log, Cloud Logging, Security, Admin Activity
 
 Description: Learn how to view, filter, and analyze Admin Activity audit logs in Cloud Logging to track infrastructure changes and investigate security events.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Clap, CLI, Command Line, Tools
+Tags: Rust, Clap, CLI, Command Line, Tool
 
 Description: Learn how to build powerful command-line applications in Rust using Clap. This guide covers argument parsing, subcommands, validation, and creating user-friendly CLIs.
 

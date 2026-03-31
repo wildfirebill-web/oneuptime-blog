@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Observability, Metrics, Traces, Configuration
+Tags: OpenTelemetry, Observability, Metric, Trace, Configuration
 
 Description: Configure OpenTelemetry Collector receivers for collecting metrics and traces from various sources including OTLP, Prometheus, Jaeger, Zipkin, and host metrics with practical configuration examples.
 

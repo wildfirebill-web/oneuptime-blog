@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Role, Projects
+Tags: Rancher, Kubernetes, RBAC, Permission, Role, Project
 
 Description: Learn how to assign project-level roles in Rancher to give users scoped access to specific namespaces and workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Multi-Cluster, Submariner, Networking, Federation, DevOps
+Tags: k3s, Kubernetes, Multi-Cluster, Submariner, Networking, Federation, DevOps
 
 Description: Learn how to connect multiple K3s clusters with Submariner to enable cross-cluster pod communication and service discovery.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Generated Columns, Virtual Columns, Database Design, Performance
+Tags: MySQL, Generated Column, Virtual Column, Database Design, Performance
 
 Description: Learn how to use generated columns in MySQL to automatically compute column values from expressions, reducing application logic and enabling indexing on computed values.
 

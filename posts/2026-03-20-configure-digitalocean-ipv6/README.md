@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, DigitalOcean, Droplets, Cloud, Networking
+Tags: IPv6, DigitalOcean, Droplet, Cloud, Networking
 
 Description: Configure IPv6 on DigitalOcean Droplets, including enabling IPv6 at creation, configuring the OS, and setting up firewall rules for IPv6 traffic.
 

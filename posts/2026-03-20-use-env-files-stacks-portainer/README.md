@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, .env, Environment Variables, Docker Compose
+Tags: Portainer, Stack, .env, Environment Variable, Docker Compose
 
 Description: Upload and manage .env files for Docker Compose stacks in Portainer for environment-specific configuration.
 

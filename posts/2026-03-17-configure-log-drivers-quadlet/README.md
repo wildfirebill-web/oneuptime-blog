@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Logging, Log Drivers
+Tags: Podman, Container, DevOps, Quadlet, Logging, Log Drivers
 
 Description: Learn how to configure log drivers in Podman Quadlet container files to control how container logs are collected and stored.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Annotations, OCI
+Tags: Podman, Container, DevOps, Container Image, Build, Annotation, OCI
 
 Description: Learn how to add OCI annotations to container images with Podman for enhanced metadata, registry integration, and image management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Span Metrics, SLI, Traces
+Tags: OpenTelemetry, Span Metrics, SLI, Trace
 
 Description: Derive availability and latency SLIs from OpenTelemetry span data using the span metrics connector in the collector.
 

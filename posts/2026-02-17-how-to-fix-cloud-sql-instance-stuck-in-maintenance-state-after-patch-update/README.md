@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud SQL, Maintenance, Patching, Database, Operations
+Tags: GCP, Cloud SQL, Maintenance, Patching, Database, Operation
 
 Description: How to handle Cloud SQL instances that get stuck in maintenance state after a patch update, including diagnosis steps, recovery options, and prevention strategies.
 

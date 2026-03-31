@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Exemplars, Tracing, OpenTelemetry, Metrics, Observability, Grafana, Correlation
+Tags: Prometheus, Exemplars, Tracing, OpenTelemetry, Metric, Observability, Grafana, Correlation
 
 Description: Learn how to implement exemplars in Prometheus to connect metrics with traces.
 

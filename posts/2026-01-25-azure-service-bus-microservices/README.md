@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, Azure Service Bus, Microservices, Event-Driven Architecture, C#, Messaging, Async Communication
+Tags: .NET, Azure Service Bus, Microservice, Event-Driven Architecture, C#, Messaging, Async Communication
 
 Description: Learn how to build event-driven microservices using Azure Service Bus in .NET. This guide covers queues, topics, subscriptions, message handling patterns, and reliability features.
 

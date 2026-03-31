@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, HPA, Metrics
+Tags: Kubernetes, HPA, Metric
 
 Description: Implement Horizontal Pod Autoscaler with rate-based metrics like requests per second, transactions per minute, or events per hour to scale based on actual workload throughput.
 

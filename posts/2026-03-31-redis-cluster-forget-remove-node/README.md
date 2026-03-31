@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, CLUSTER FORGET, Node Management, Operations
+Tags: Redis, Cluster, CLUSTER FORGET, Node Management, Operation
 
 Description: Learn how to use CLUSTER FORGET in Redis to permanently remove a node from the cluster's node table, and why it must be issued on all remaining nodes within a time window.
 

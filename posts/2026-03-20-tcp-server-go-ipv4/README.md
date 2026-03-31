@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, TCP, Sockets, IPv4, Networking, Server
+Tags: Go, TCP, Socket, IPv4, Networking, Server
 
 Description: Learn how to build a TCP server in Go that listens on an IPv4 address using the net package to accept and handle client connections.
 

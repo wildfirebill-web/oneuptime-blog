@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Array Projections, $slice, Query Operators, NoSQL
+Tags: MongoDB, Array Projections, $slice, Query Operator, NoSQL
 
 Description: Learn how to use MongoDB's $slice projection operator to return a subset of array elements, including first N, last N, or a paginated slice.
 

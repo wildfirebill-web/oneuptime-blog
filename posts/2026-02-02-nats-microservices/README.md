@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Microservices, Service Discovery, Go, Node.js, Messaging, Distributed Systems
+Tags: NATS, Microservice, Service Discovery, Go, Node.js, Messaging, Distributed System
 
 Description: Learn how to build scalable microservices using NATS messaging with built-in service discovery.
 

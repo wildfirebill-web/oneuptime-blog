@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Aggregation, Observability, Collector, Prometheus, Performance Monitoring
+Tags: OpenTelemetry, Metric, Aggregation, Observability, Collector, Prometheus, Performance Monitoring
 
 Description: Learn how to implement metric aggregation in OpenTelemetry to reduce cardinality, optimize storage costs, and create meaningful derived metrics from raw telemetry data.
 

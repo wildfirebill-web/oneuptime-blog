@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Audit Logs, Compliance, Security, Usage Tracking
+Tags: GCP, BigQuery, Audit Log, Compliance, Security, Usage Tracking
 
 Description: Learn how to configure and analyze BigQuery audit logs for regulatory compliance, security monitoring, and understanding data access patterns.
 

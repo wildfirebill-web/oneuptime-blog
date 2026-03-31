@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Sidecar Pattern, Go, Proxy, Kubernetes, Microservices, DevOps
+Tags: Sidecar Pattern, Go, Proxy, Kubernetes, Microservice, DevOps
 
 Description: Learn how to build a production-ready sidecar proxy from scratch using Go, with complete code for request interception, metrics collection, retry logic, and graceful shutdown.
 

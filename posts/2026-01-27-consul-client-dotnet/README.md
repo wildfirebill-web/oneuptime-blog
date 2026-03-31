@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, Consul, Service Discovery, Microservices
+Tags: .NET, C#, Consul, Service Discovery, Microservice
 
 Description: Learn how to build a Consul client in .NET for service registration, discovery, health checks, and distributed configuration in microservices architectures.
 

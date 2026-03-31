@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Redis, Cache Monitoring, Metrics, Performance, In-Memory Database
+Tags: OpenTelemetry, Collector, Redis, Cache Monitoring, Metric, Performance, In-Memory Database
 
 Description: Complete guide to configuring the Redis receiver in OpenTelemetry Collector for cache and in-memory database monitoring with practical examples and performance tuning strategies.
 

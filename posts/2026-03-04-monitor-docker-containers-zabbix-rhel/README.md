@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Zabbix, Docker, Containers, Monitoring, Linux
+Tags: RHEL, Zabbix, Docker, Container, Monitoring, Linux
 
 Description: Monitor Docker containers on RHEL using Zabbix Agent 2's built-in Docker plugin to track container status, resource usage, and performance metrics.
 

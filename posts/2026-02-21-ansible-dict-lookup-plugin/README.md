@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Lookup Plugins, Dictionaries, Data Structures
+Tags: Ansible, Lookup Plugins, Dictionaries, Data Structure
 
 Description: Learn how to use the Ansible dict lookup plugin to iterate over dictionary key-value pairs in your playbooks and roles.
 

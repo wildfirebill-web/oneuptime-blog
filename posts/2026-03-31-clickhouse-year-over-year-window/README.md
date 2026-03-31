@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Function, SQL, Analytics, LAG
+Tags: ClickHouse, Window Function, SQL, Analytics, Lag
 
 Description: Use LAG() with a 12-month or 365-day offset to compute year-over-year revenue growth percentages directly in SQL without self-joins.
 

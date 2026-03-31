@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Upgrade, Zero Downtime, Operations, Cluster, Replication
+Tags: ClickHouse, Upgrade, Zero Downtime, Operation, Cluster, Replication
 
 Description: Learn how to upgrade ClickHouse to a new version with zero downtime using a rolling upgrade strategy on replicated clusters, with pre-upgrade checks and compatibility validation.
 

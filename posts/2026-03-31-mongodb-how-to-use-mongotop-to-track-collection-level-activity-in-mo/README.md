@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Mongotop, Monitoring, Performance
+Tags: MongoDB, Mongotop, Monitoring, Performance
 
 Description: Learn how to use mongotop to monitor per-collection read and write time in MongoDB, identify hot collections, and integrate results into performance analysis workflows.
 

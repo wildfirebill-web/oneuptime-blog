@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, GitHub Actions, CI/CD, DevOps, Automation
+Tags: Portainer, Docker, GitHub Action, CI/CD, DevOps, Automation
 
 Description: Configure GitHub Actions workflows to build Docker images and deploy to Portainer using webhooks and the Portainer REST API.
 

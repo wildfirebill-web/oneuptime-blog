@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, SUSE, SLES, Containers, Enterprise Linux
+Tags: Podman, SUSE, SLE, Container, Enterprise Linux
 
 Description: Learn how to install and use Podman on SUSE Linux Enterprise Server for running containers in enterprise environments with full vendor support.
 

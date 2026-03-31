@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Build Performance, CI/CD, DevOps, Caching, Optimization
+Tags: Podman, Container, Build Performance, CI/CD, DevOps, Caching, Optimization
 
 Description: Practical techniques to speed up Podman container builds, including layer caching strategies, build context optimization, parallel builds, and CI/CD pipeline integration.
 

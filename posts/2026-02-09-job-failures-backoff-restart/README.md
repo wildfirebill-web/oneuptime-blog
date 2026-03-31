@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Troubleshooting
+Tags: Kubernetes, Job, Troubleshooting
 
 Description: Learn how to diagnose and fix Kubernetes Job failures caused by incorrect backoff limits and restart policies with practical examples and solutions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Update, ORDER BY, DML, LIMIT
+Tags: MySQL, Update, ORDER BY, DML, Limit
 
 Description: Learn how MySQL's UPDATE with ORDER BY controls which rows are modified first, enabling priority-based updates and deterministic batch operations.
 

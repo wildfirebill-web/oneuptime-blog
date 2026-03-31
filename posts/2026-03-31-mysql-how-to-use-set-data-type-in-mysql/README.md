@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Data Types, SET, Database Design
+Tags: MySQL, Data Type, Set, Database Design
 
 Description: Learn how to use the SET data type in MySQL to store multiple values from a predefined list in a single column using bit-flag storage.
 

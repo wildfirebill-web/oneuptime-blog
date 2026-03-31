@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Hub, CLI, Images, Registry, DevOps, Docker Commands
+Tags: Docker, Docker Hub, CLI, Image, Registry, DevOps, Docker Commands
 
 Description: Learn how to search for Docker images on Docker Hub and other registries directly from the command line using docker search and the Hub API.
 

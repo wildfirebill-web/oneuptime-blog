@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Functions, LEAD, Time Series, Analytics
+Tags: ClickHouse, Window Function, LEAD, Time Series, Analytics
 
 Description: Learn how to use the LEAD() window function in ClickHouse to access values from subsequent rows for forecasting, lookahead, and session duration calculations.
 

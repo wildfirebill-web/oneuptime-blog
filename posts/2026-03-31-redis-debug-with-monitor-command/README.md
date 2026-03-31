@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Debugging, MONITOR, Observability, Troubleshooting
+Tags: Redis, Debugging, Monitor, Observability, Troubleshooting
 
 Description: Use the Redis MONITOR command to stream all commands in real time for debugging unexpected behavior, tracing client activity, and identifying problematic queries.
 

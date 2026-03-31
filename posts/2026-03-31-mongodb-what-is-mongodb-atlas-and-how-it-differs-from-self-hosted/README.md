@@ -45,7 +45,7 @@ Self-hosted is the right choice when:
 
 ## Atlas Tiers and Pricing
 
-```
+```text
 Shared tiers (dev/test):
 - M0: Free (512MB storage)
 - M2: $9/month (2GB storage)

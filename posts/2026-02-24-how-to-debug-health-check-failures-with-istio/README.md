@@ -1,6 +1,6 @@
 # How to Debug Health Check Failures with Istio
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Health Check, Debugging, Kubernetes, Troubleshooting
 

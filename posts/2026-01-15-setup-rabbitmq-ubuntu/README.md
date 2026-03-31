@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, RabbitMQ, Message Queues, Messaging, Microservices, Tutorial
+Tags: Ubuntu, RabbitMQ, Message Queue, Messaging, Microservice, Tutorial
 
 Description: Complete guide to installing, configuring, and managing RabbitMQ message broker on Ubuntu for reliable message queuing.
 

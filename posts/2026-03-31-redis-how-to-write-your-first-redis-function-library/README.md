@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Functions, Lua, Redis 7, Scripting
+Tags: Redis, Function, Lua, Redis 7, Scripting
 
 Description: Create and deploy a Redis Function library using Redis 7.0 FUNCTION LOAD, register callable functions, and understand the advantages over Lua EVAL scripts.
 

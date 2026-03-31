@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, T-Digest, Percentiles, Latency, Monitoring
+Tags: Redis, T-Digest, Percentile, Latency, Monitoring
 
 Description: Learn how to use the Redis T-Digest probabilistic data structure to calculate accurate latency percentiles like p50, p95, and p99 with minimal memory.
 

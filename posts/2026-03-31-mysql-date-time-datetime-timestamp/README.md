@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, Date, Datetime, Database
+Tags: MySQL, SQL, Date, DateTime, Database
 
 Description: Learn how to use MySQL date and time data types DATE, TIME, DATETIME, and TIMESTAMP, their storage, ranges, timezone behavior, and practical examples.
 

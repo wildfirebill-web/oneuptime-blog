@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics, Validation
+Tags: Calico, Kubernetes, Networking, Diagnostic, Validation
 
 Description: Validate Calico networking health on individual cluster nodes by confirming Felix liveness, iptables rule completeness, BGP route propagation, and pod IP reachability from each node.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Replication, High Availability, Database, Distributed Systems
+Tags: Data Replication, High Availability, Database, Distributed System
 
 Description: Learn detailed data replication strategies for high availability systems.
 

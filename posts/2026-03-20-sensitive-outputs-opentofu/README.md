@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, Sensitive, Security, Infrastructure as Code, DevOps
+Tags: OpenTofu, Output, Sensitive, Security, Infrastructure as Code, DevOps
 
 Description: A guide to marking OpenTofu output values as sensitive to protect secrets from being displayed in logs and terminal output.
 

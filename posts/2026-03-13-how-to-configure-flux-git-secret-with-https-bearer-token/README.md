@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, HTTPS, Bearer Token, Git
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, HTTPS, Bearer Token, Git
 
 Description: A guide to configuring Flux CD Source Controller to authenticate with Git repositories using an HTTPS bearer token.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Record Lock, InnoDB, Row-Level Locking, Transactions, Concurrency
+Tags: MySQL, Record Lock, InnoDB, Row-Level Locking, Transaction, Concurrency
 
 Description: Learn what a MySQL InnoDB record lock is, how it differs from table locks, and how to identify and resolve record lock contention.
 

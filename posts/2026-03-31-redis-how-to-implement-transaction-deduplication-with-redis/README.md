@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Transaction Deduplication, Idempotency, Financial, Atomic Operations
+Tags: Redis, Transaction Deduplication, Idempotency, Financial, Atomic Operation
 
 Description: Implement transaction deduplication with Redis to prevent double charges and duplicate financial transactions using idempotency keys and atomic operations.
 

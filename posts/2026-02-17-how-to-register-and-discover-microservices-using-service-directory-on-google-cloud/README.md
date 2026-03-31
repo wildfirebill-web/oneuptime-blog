@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Service Directory, Microservices, Service Discovery, Networking
+Tags: GCP, Service Directory, Microservice, Service Discovery, Networking
 
 Description: Learn how to use Google Cloud Service Directory to register, discover, and resolve microservices across your infrastructure with DNS and API-based lookups.
 

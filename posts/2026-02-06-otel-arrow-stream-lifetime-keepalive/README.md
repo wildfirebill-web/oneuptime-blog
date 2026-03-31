@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OTel Arrow, Streams, Load Balancing
+Tags: OpenTelemetry, OTel Arrow, Stream, Load Balancing
 
 Description: Tune OTel Arrow stream lifetime and keepalive settings to balance compression efficiency with load distribution.
 

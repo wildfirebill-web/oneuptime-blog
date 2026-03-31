@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NodeJS, TypeScript, Data Processing, API, Microservices
+Tags: NodeJS, TypeScript, Data Processing, API, Microservice
 
 Description: Learn how to build a data aggregation service in Node.js that collects data from multiple sources, transforms it, and presents unified results with caching, error handling, and parallel processing.
 

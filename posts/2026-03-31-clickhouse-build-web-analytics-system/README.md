@@ -1,8 +1,8 @@
 # How to Build a Web Analytics System with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Web analytics, Analytics, Database, Tutorial, SQL
+Tags: ClickHouse, Web Analytics, Analytics, Database, Tutorial, SQL
 
 Description: Step-by-step guide to building a web analytics system with ClickHouse - covering schema design, event ingestion, session analysis, funnel tracking, and dashboard queries.
 

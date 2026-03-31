@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Time Filtering, Incident Analysis
+Tags: Podman, Container, DevOps, Monitoring, Event, Time Filtering, Incident Analysis
 
 Description: Learn how to view Podman container events until a specific time to create bounded time windows for event analysis and incident review.
 

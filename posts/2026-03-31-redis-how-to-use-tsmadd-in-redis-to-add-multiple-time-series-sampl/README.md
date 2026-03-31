@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RedisTimeSeries, Time Series, Batch Ingestion, Metrics
+Tags: Redis, RedisTimeSeries, Time Series, Batch Ingestion, Metric
 
 Description: Learn how to use TS.MADD in Redis to atomically add multiple timestamped samples to different time series keys in a single command.
 

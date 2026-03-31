@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Kafka, Prometheus, Monitoring, Metrics, Data Source, Exporter
+Tags: Grafana, Kafka, Prometheus, Monitoring, Metric, Data Source, Exporter
 
 Description: Learn how to set up Kafka Exporter to collect Kafka metrics and add them as a data source in Grafana.
 

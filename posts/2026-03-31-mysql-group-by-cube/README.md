@@ -1,6 +1,6 @@
 # How to Use GROUP BY with CUBE in MySQL 8.0+
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, SQL, GROUP BY, CUBE, Aggregation, Analytics
 

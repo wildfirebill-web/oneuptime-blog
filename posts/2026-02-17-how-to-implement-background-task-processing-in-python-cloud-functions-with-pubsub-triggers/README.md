@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Pub/Sub, Python, Serverless
+Tags: GCP, Cloud Function, Pub/Sub, Python, Serverless
 
 Description: Learn how to build background task processing systems using Python Cloud Functions triggered by Pub/Sub messages for asynchronous workloads on GCP.
 

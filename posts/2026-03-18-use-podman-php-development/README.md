@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, PHP, Laravel, Containers, Development, Web Development
+Tags: Podman, PHP, Laravel, Container, Development, Web Development
 
 Description: A practical guide to using Podman for PHP development, covering Apache and Nginx setups, Composer dependency management, Laravel workflows, Xdebug debugging, and multi-container stacks with MySQL.
 

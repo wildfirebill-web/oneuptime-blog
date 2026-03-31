@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Prometheus, Alerting, Monitoring, Rules
+Tags: Prometheus, Alerting, Monitoring, Rule
 
 Description: A practical guide to designing effective Prometheus alert rules that reduce noise, catch real incidents, and integrate with modern observability workflows.
 

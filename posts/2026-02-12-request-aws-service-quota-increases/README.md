@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Service Quotas, Operations, Infrastructure
+Tags: AWS, Service Quotas, Operation, Infrastructure
 
 Description: Step-by-step guide to requesting AWS service quota increases through the console, CLI, and API, with tips for getting approvals faster.
 

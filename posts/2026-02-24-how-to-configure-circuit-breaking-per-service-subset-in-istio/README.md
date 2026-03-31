@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Service Mesh, Circuit Breaking, Subsets, Kubernetes
+Tags: Istio, Service Mesh, Circuit Breaking, Subset, Kubernetes
 
 Description: How to apply different circuit breaking configurations to different versions or subsets of a service using Istio DestinationRule subsets.
 

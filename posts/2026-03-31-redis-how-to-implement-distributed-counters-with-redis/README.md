@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Distributed Counters, INCR, Atomic Operations, Scalability
+Tags: Redis, Distributed Counter, INCR, Atomic Operation, Scalability
 
 Description: Implement distributed counters with Redis using INCR, INCRBY, and INCRBYFLOAT for atomic, high-throughput counting across multiple application instances.
 

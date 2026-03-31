@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kaniko, Docker, CI/CD, Images
+Tags: Kubernetes, Kaniko, Docker, CI/CD, Image
 
 Description: Master Kaniko for building container images inside Kubernetes without requiring Docker daemon or privileged access.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, API Management, Circuit Breaker, Resilience, Cloud Patterns, Microservices, Fault Tolerance
+Tags: Azure, API Management, Circuit Breaker, Resilience, Cloud Patterns, Microservice, Fault Tolerance
 
 Description: Implement the circuit breaker pattern in Azure API Management using policies to protect your backend services from cascading failures.
 

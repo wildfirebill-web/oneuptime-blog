@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images
+Tags: Podman, Container, DevOps, Container Image
 
 Description: Learn how to customize and format the output of Podman image listings using Go templates, JSON output, and table formatting.
 

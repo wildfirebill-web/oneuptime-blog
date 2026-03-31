@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, LDAP, Groups, Authentication, Teams, RBAC
+Tags: Portainer, LDAP, Group, Authentication, Team, RBAC
 
 Description: Configure LDAP group search in Portainer to automatically map directory groups to Portainer teams for role-based access control.
 

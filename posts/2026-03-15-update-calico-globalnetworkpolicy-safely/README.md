@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, GlobalNetworkPolicy, Kubernetes, Security, Network Policy, Operations
+Tags: Calico, GlobalNetworkPolicy, Kubernetes, Security, Network Policy, Operation
 
 Description: Safely update Calico GlobalNetworkPolicy resources to modify cluster-wide security rules without causing connectivity outages.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB Atlas, Triggers, Event-Driven, Serverless, Automation
+Tags: MongoDB Atlas, Trigger, Event-Driven, Serverless, Automation
 
 Description: Learn how to use MongoDB Atlas Triggers to automate workflows on database changes, scheduled tasks, and authentication events using serverless functions.
 

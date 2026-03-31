@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, GitLab CI, CI/CD, Automation
+Tags: Podman, Container, DevOps, GitLab CI, CI/CD, Automation
 
 Description: Learn how to integrate Podman into GitLab CI pipelines for building, testing, and deploying container images without a Docker daemon.
 

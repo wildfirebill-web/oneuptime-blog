@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Warehouse, Degenerate Dimensions, Dimensional Modeling, Fact Tables
+Tags: Data Warehouse, Degenerate Dimensions, Dimensional Modeling, Fact Table
 
 Description: Learn to implement degenerate dimensions for storing dimension keys directly in fact tables without dimension tables.
 

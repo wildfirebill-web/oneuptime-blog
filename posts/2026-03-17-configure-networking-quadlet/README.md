@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Networking
+Tags: Podman, Container, DevOps, Quadlet, Networking
 
 Description: Learn how to configure container networking in Podman Quadlet files including custom networks, DNS, and network modes.
 

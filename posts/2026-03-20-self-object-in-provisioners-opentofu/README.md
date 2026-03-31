@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, Self Object, Infrastructure as Code, Resource Attributes
+Tags: OpenTofu, Provisioner, Self Object, Infrastructure as Code, Resource Attributes
 
 Description: Learn how to use the `self` object in OpenTofu provisioners to reference the resource's own attributes within provisioner blocks.
 

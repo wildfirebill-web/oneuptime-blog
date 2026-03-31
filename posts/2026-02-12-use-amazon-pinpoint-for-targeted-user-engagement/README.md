@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Amazon Pinpoint, User Engagement, Push Notifications, Email, SMS, Marketing
+Tags: AWS, Amazon Pinpoint, User Engagement, Push Notification, Email, SMS, Marketing
 
 Description: Use Amazon Pinpoint to send targeted push notifications, emails, and SMS messages to your users based on segments, behavior, and real-time events.
 

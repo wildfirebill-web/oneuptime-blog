@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Security, Authentication, Logs, Auditing, SSH, PAM
+Tags: RHEL, Security, Authentication, Log, Auditing, SSH, PAM
 
 Description: Learn where to find and how to analyze authentication and security logs on RHEL to detect unauthorized access attempts, failed logins, and suspicious activity.
 

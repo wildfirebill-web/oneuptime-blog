@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Metrics, Prometheus, Node Exporter, Monitoring
+Tags: Talos Linux, Metric, Prometheus, Node Exporter, Monitoring
 
 Description: A practical guide to exporting system and Kubernetes metrics from Talos Linux nodes for monitoring and alerting.
 

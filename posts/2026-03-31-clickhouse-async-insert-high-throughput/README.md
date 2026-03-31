@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Async INSERT, High Throughput, Write Performance, Buffering
+Tags: ClickHouse, Async Insert, High Throughput, Write Performance, Buffering
 
 Description: Learn how to use ClickHouse's async INSERT mode to batch high-frequency writes automatically, reducing merge pressure and improving insert throughput.
 

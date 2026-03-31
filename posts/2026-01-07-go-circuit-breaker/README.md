@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Circuit Breaker, Resilience, Fault Tolerance, Microservices
+Tags: Go, Circuit Breaker, Resilience, Fault Tolerance, Microservice
 
 Description: Implement circuit breakers in Go using sony/gobreaker for fault-tolerant communication with external dependencies and graceful degradation.
 

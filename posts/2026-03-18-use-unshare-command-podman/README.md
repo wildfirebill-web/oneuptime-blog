@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, User Namespaces, unshare, Security
+Tags: Podman, Container, DevOps, Rootless, User Namespaces, unshare, Security
 
 Description: A hands-on guide to using podman unshare to enter the user namespace of rootless containers for debugging, fixing permissions, and managing volume ownership.
 

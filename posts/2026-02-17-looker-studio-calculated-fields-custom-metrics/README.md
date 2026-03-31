@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Looker Studio, Calculated Fields, Custom Metrics, Data Visualization, BigQuery
+Tags: GCP, Looker Studio, Calculated Fields, Custom Metric, Data Visualization, BigQuery
 
 Description: A practical guide to creating calculated fields and custom metrics in Looker Studio to derive business insights beyond raw data columns.
 

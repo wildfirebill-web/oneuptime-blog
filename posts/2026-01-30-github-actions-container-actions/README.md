@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Docker, DevOps, Automation
+Tags: GitHub Action, CI/CD, Docker, DevOps, Automation
 
 Description: Learn how to build custom GitHub Actions using Docker containers, enabling you to package complex logic, dependencies, and tools into reusable workflow steps.
 

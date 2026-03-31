@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Static Web Apps, Azure Functions, Serverless, API, Backend, JavaScript
+Tags: Azure, Static Web Apps, Azure Function, Serverless, API, Backend, JavaScript
 
 Description: Learn how to add a serverless API backend to your Azure Static Web App using Azure Functions for dynamic features without managing servers.
 

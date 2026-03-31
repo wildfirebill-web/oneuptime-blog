@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Database, Arrays, CRUD Operations, Node.js
+Tags: MongoDB, Database, Array, CRUD Operations, Node.js
 
 Description: Master MongoDB array operations with $push, $addToSet, and related operators. Learn how to add single items, multiple items, maintain array order, and prevent duplicates.
 

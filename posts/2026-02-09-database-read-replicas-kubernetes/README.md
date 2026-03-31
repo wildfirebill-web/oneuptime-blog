@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Database, Read Replicas, Scalability, PostgreSQL
+Tags: Kubernetes, Database, Read Replica, Scalability, PostgreSQL
 
 Description: Scale database read capacity on Kubernetes using read replicas, including PostgreSQL streaming replication setup, connection pooling, read-write splitting, and monitoring replication lag.
 

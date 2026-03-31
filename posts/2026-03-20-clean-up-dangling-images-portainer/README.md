@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Cleanup, Dangling
+Tags: Portainer, Docker, Image, Cleanup, Dangling
 
 Description: Remove dangling Docker images (untagged, unreferenced layers) in Portainer to free up disk space.
 

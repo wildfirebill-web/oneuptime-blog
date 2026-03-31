@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, ETL, Data Engineering, DevOps
+Tags: Data Pipeline, ETL, Data Engineering, DevOps
 
 Description: A practical guide to designing, building, and operating production-grade data pipelines that scale reliably while remaining maintainable and observable.
 

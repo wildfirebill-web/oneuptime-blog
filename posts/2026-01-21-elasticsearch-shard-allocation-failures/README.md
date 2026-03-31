@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Shard Allocation, Troubleshooting, Recovery, Cluster Health, Operations
+Tags: Elasticsearch, Shard Allocation, Troubleshooting, Recovery, Cluster Health, Operation
 
 Description: A comprehensive guide to recovering from Elasticsearch shard allocation failures using the allocation explain API, covering common causes, resolution strategies, and prevention techniques.
 

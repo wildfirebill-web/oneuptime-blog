@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Exec, Environment Variables
+Tags: Podman, Container, DevOps, Container Exec, Environment Variable
 
 Description: Learn how to pass environment variables when executing commands inside Podman containers using the -e flag, env files, and other techniques.
 

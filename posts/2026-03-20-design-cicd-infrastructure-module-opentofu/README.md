@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, CI/CD, CodePipeline, AWS, Modules, DevOps
+Tags: OpenTofu, Terraform, CI/CD, CodePipeline, AWS, Module, DevOps
 
 Description: Learn how to design a reusable CI/CD infrastructure module for OpenTofu that creates CodePipeline pipelines, CodeBuild projects, and ECR repositories for container workloads.
 

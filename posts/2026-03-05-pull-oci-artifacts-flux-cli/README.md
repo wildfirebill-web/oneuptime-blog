@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, OCI, Flux CLI, Container Registry, Artifacts
+Tags: Flux CD, GitOps, Kubernetes, OCI, Flux CLI, Container Registry, Artifact
 
 Description: Learn how to use the Flux CLI to pull OCI artifacts from container registries to inspect, verify, and use Kubernetes manifests locally.
 

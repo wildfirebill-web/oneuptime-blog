@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Logging, DevOps
+Tags: Portainer, Docker, Container, Logging, DevOps
 
 Description: Learn how to download and export Docker container logs from Portainer for offline analysis, sharing with teams, or archival purposes.
 

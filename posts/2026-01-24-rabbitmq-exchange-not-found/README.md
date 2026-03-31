@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, Troubleshooting, Debugging, Backend, DevOps, Messaging
+Tags: RabbitMQ, Message Queue, Troubleshooting, Debugging, Backend, DevOps, Messaging
 
 Description: Learn how to diagnose and fix the common 'NOT_FOUND - no exchange' error in RabbitMQ with practical examples and prevention strategies.
 

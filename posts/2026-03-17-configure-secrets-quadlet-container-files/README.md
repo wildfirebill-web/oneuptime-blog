@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Secrets, Security
+Tags: Podman, Container, DevOps, Quadlet, Secret, Security
 
 Description: Learn how to securely pass secrets to Podman containers using the Secret directive in Quadlet container files.
 

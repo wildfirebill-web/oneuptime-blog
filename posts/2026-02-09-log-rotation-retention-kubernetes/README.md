@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Logging, Operations
+Tags: Kubernetes, Logging, Operation
 
 Description: Learn how to configure automatic log rotation and retention policies for Kubernetes container logs to prevent disk space exhaustion while maintaining log availability for troubleshooting.
 

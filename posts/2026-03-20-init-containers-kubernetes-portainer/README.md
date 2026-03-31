@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Init Containers, Docker, Pods, Infrastructure
+Tags: Portainer, Kubernetes, Init Container, Docker, Pod, Infrastructure
 
 Description: Configure Kubernetes init containers through Portainer to perform setup tasks like database migrations, configuration downloads, or dependency checks before main application containers start.
 

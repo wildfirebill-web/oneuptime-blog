@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kotlin, Spring Boot, Backend, Java, Microservices, WebFlux, Coroutines
+Tags: Kotlin, Spring Boot, Backend, Java, Microservice, WebFlux, Coroutine
 
 Description: A practical guide to building Spring Boot applications with Kotlin, covering data classes, null safety, extension functions, coroutines, and testing with MockK.
 

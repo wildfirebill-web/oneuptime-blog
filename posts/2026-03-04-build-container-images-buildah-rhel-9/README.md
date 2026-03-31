@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Buildah, Container Images, Linux
+Tags: RHEL, Buildah, Container Image, Linux
 
 Description: A practical guide to building OCI-compliant container images using Buildah on RHEL, covering scripted builds, layer management, and image optimization.
 

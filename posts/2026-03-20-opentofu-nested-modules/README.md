@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Nested
+Tags: OpenTofu, Terraform, IaC, Module, Nested
 
 Description: Learn how nested modules work in OpenTofu, when to use them, and how to structure multi-level module hierarchies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, RBAC, Role, Permissions, Business Edition
+Tags: Portainer, RBAC, Role, Permission, Business Edition
 
 Description: A comprehensive guide to Portainer's role-based access control system including all available roles, their permissions, and how to apply them.
 

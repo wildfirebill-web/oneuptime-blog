@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Configs, Configuration, Management
+Tags: Portainer, Docker Swarm, CONFIG, Configuration, Management
 
 Description: Create and manage Docker Swarm configs in Portainer for non-sensitive configuration data distribution.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, InnoDB, Tablespace, Storage, Internals
+Tags: MySQL, InnoDB, Tablespace, Storage, Internal
 
 Description: Learn how MySQL InnoDB stores data on disk using tablespace files, pages, segments, and extents, and what this means for performance tuning.
 

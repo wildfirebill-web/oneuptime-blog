@@ -1,8 +1,8 @@
 # How to Use $searchMeta in MongoDB Atlas Search
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas Search, Aggregation, Full-text search, Facet
+Tags: MongoDB, Atlas Search, Aggregation, Full-Text Search, Facet
 
 Description: Learn how to use $searchMeta in MongoDB Atlas Search to retrieve only metadata like facet counts and result totals without returning the matching documents themselves.
 

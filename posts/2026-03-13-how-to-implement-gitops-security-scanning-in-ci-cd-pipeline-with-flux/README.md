@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Security, Supply Chain, CI/CD, Security Scanning, GitHub Actions, Pipeline Security
+Tags: Flux, Kubernetes, GitOps, Security, Supply Chain, CI/CD, Security Scanning, GitHub Action, Pipeline Security
 
 Description: Learn how to integrate security scanning into your CI/CD pipeline to validate Flux manifests, container images, and Helm charts before deployment.
 

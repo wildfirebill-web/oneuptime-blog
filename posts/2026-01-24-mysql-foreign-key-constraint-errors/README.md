@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Database, Foreign Key, Constraints, SQL, Troubleshooting
+Tags: MySQL, Database, Foreign Key, Constraint, SQL, Troubleshooting
 
 Description: Learn how to diagnose and fix MySQL foreign key constraint errors including data type mismatches, missing indexes, and engine incompatibilities.
 

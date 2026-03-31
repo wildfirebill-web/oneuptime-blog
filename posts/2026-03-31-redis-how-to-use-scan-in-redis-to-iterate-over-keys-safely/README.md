@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Key Management, Performance, Commands, Best Practices
+Tags: Redis, Key Management, Performance, Command, Best Practice
 
 Description: Learn how to use SCAN in Redis to safely iterate over keys using a cursor-based approach that avoids blocking the server, unlike the dangerous KEYS command.
 

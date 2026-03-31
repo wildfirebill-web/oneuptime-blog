@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Layer
+Tags: Podman, Container, DevOps, Container Image, Layer
 
 Description: Learn how to view the build history and layer structure of container images using Podman to understand how images were constructed.
 

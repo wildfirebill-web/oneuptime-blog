@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, depends_on, Dependencies, Infrastructure as Code, DevOps
+Tags: OpenTofu, Output, depends_on, Dependencies, Infrastructure as Code, DevOps
 
 Description: A guide to using depends_on in OpenTofu output blocks to ensure proper dependency ordering with side effects.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, Hooks, Automation
+Tags: Helm, Kubernetes, DevOps, Hook, Automation
 
 Description: Learn to use Helm hooks for database migrations, backup jobs, health checks, and other lifecycle operations with practical examples.
 

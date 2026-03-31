@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Host Endpoint, Selectors, Monitoring
+Tags: Calico, Kubernetes, Networking, Host Endpoint, Selector, Monitoring
 
 Description: Set up monitoring for Calico host endpoint selector drift to detect when label changes cause policies to be incorrectly applied or stop being enforced on cluster nodes.
 

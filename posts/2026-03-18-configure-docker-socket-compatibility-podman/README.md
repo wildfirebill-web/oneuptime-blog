@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Sockets, API Compatibility, Systemd
+Tags: Podman, Container, DevOps, Docker, Socket, API Compatibility, Systemd
 
 Description: Learn how to configure Podman's Docker-compatible socket so that tools expecting the Docker daemon can work seamlessly with Podman.
 

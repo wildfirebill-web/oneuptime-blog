@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Azure, ACR, Cloud
+Tags: Podman, Container, DevOps, Registry, Azure, ACR, Cloud
 
 Description: A comprehensive guide to using Azure Container Registry with Podman for container image management in Azure environments.
 

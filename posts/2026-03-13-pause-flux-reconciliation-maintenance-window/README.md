@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Day 2 Operations, Maintenance Window, Operations
+Tags: Flux CD, Kubernetes, GitOps, Day 2 Operations, Maintenance Window, Operation
 
 Description: Suspend all Flux reconciliation across the cluster during maintenance windows to prevent automated changes from interfering with planned infrastructure work.
 

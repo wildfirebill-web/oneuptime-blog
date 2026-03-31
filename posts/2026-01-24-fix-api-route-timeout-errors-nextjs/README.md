@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Next.js, API Routes, Timeout, Performance, Backend, Serverless, Edge Functions
+Tags: Next.js, API Route, Timeout, Performance, Backend, Serverless, Edge Function
 
 Description: A practical guide to diagnosing and resolving API route timeout errors in Next.js applications with optimization strategies.
 

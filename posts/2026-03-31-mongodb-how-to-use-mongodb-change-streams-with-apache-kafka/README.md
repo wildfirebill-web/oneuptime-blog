@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Apache Kafka, Change Streams, Event Streaming, Real-Time
+Tags: MongoDB, Apache Kafka, Change Stream, Event Streaming, Real-Time
 
 Description: Learn how to stream MongoDB change events to Apache Kafka for real-time data pipelines using the MongoDB Kafka Connector.
 

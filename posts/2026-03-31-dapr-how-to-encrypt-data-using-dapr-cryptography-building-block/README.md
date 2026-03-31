@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Cryptography, Encryption, Security, Microservices
+Tags: Dapr, Cryptography, Encryption, Security, Microservice
 
 Description: Learn how to use the Dapr Cryptography building block to encrypt and decrypt data in your microservices without managing cryptographic keys or libraries directly.
 

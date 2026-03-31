@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Persistence, RDB, Backup, Commands
+Tags: Redis, Persistence, RDB, Backup, Command
 
 Description: Learn how to use BGSAVE in Redis to trigger asynchronous RDB snapshot saves without blocking the server, and how to verify save completion.
 

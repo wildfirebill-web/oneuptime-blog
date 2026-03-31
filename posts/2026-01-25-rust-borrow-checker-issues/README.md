@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Borrow Checker, Ownership, Memory Safety, Lifetimes
+Tags: Rust, Borrow Checker, Ownership, Memory Safety, Lifetime
 
 Description: Learn how to resolve common borrow checker errors in Rust. This guide covers ownership rules, mutable borrowing, lifetime issues, and practical patterns for working with the borrow checker.
 

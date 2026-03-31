@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Spanner, Database, DML, Batch Operations
+Tags: GCP, Cloud Spanner, Database, DML, Batch Operation
 
 Description: Learn how to use batch DML operations in Cloud Spanner to efficiently perform bulk data updates, inserts, and deletes while minimizing round trips and transaction overhead.
 

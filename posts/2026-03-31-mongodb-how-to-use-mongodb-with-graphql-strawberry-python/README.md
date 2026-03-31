@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Graphql, Strawberry, Python, Database
+Tags: MongoDB, GraphQL, Strawberry, Python, Database
 
 Description: Build a type-safe GraphQL API backed by MongoDB in Python using Strawberry and Motor (async MongoDB driver), with queries and mutations.
 

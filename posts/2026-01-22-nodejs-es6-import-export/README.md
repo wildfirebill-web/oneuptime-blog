@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, JavaScript, ES6, Modules, Import, Export
+Tags: NodeJS, JavaScript, ES6, Module, Import, Export
 
 Description: Learn how to use ES6 import and export statements in Node.js including named exports, default exports, configuration options, and interoperability with CommonJS.
 

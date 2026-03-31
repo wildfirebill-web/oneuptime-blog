@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Samba, SMB, IPv4, Permissions, Access Control, Linux, File Sharing
+Tags: Samba, SMB, IPv4, Permission, Access Control, Linux, File Sharing
 
 Description: Learn how to configure Samba share permissions combining Unix filesystem permissions and Samba's access controls for IPv4 clients.
 

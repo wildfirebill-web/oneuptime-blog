@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Monitoring, Pool, Prometheus, Metrics, Kubernetes
+Tags: Rook, Ceph, Monitoring, Pool, Prometheus, Metric, Kubernetes
 
 Description: Learn how to collect and analyze per-pool performance metrics in Ceph using built-in commands, Prometheus exporters, and Grafana dashboards.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Service Graph, Dependency Mapping, Collector, Microservices
+Tags: OpenTelemetry, Service Graph, Dependency Mapping, Collector, Microservice
 
 Description: Build automatic service dependency graphs from your OpenTelemetry trace data using the Service Graph Connector in the Collector.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Taints, Tolerations, Node Management
+Tags: Portainer, Kubernetes, Taints, Toleration, Node Management
 
 Description: Configure Kubernetes node taints and pod tolerations to dedicate nodes for specific workloads or exclude pods from certain nodes.
 

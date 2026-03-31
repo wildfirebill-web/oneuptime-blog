@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Capped Collection, Logging, Operations, Storage
+Tags: MongoDB, Capped Collection, Logging, Operation, Storage
 
 Description: Learn how to use MongoDB capped collections as a fixed-size circular buffer for storing application logs with automatic oldest-first eviction.
 

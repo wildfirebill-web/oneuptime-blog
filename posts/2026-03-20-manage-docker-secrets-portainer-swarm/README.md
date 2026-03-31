@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Secrets, Security, Management
+Tags: Portainer, Docker Swarm, Secret, Security, Management
 
 Description: Create and manage Docker Swarm secrets in Portainer for secure distribution of sensitive data to services.
 

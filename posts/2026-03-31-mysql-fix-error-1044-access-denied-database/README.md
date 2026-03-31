@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Error, Privileges, Security, Troubleshooting
+Tags: MySQL, Error, Privilege, Security, Troubleshooting
 
 Description: Learn how to fix MySQL ERROR 1044 Access denied for user to database by granting the correct database-level privileges.
 
@@ -10,7 +10,7 @@ Description: Learn how to fix MySQL ERROR 1044 Access denied for user to databas
 
 ## What Is ERROR 1044?
 
-```
+```text
 ERROR 1044 (42000): Access denied for user 'appuser'@'localhost' to database 'mydb'
 ```
 
@@ -37,7 +37,7 @@ SHOW GRANTS FOR 'appuser'@'localhost';
 
 If the only line is:
 
-```
+```text
 GRANT USAGE ON *.* TO 'appuser'@'localhost'
 ```
 

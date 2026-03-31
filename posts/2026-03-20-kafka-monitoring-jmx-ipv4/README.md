@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, JMX, Monitoring, IPv4, Metrics, Java, Prometheus
+Tags: Kafka, JMX, Monitoring, IPv4, Metric, Java, Prometheus
 
 Description: Learn how to enable JMX on Kafka brokers over IPv4 and scrape metrics using JMX Exporter for Prometheus monitoring.
 

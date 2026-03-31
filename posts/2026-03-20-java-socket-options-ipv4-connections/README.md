@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Socket Options, IPv4, TCP, Performance, Networking, Sockets
+Tags: Java, Socket Options, IPv4, TCP, Performance, Networking, Socket
 
 Description: Configure Java Socket and ServerSocket options like SO_TIMEOUT, SO_KEEPALIVE, TCP_NODELAY, SO_REUSEADDR, and buffer sizes for optimized IPv4 TCP connections.
 

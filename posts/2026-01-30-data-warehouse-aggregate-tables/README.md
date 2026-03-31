@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Warehouse, Aggregates, Performance, Query Optimization
+Tags: Data Warehouse, Aggregate, Performance, Query Optimization
 
 Description: Learn to create aggregate tables for pre-computed summaries that accelerate analytical queries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Text Index, Full-Text Search, Search
+Tags: MongoDB, Index, Text Index, Full-Text Search, Search
 
 Description: Learn how to create text indexes in MongoDB for full-text search, including single and multi-field indexes, weights, and $text query operators.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Prepared Statements, SQL, Security
+Tags: MySQL, Prepared Statement, SQL, Security
 
 Description: Learn how to use the PREPARE statement in MySQL to create parameterized queries that improve performance and prevent SQL injection attacks.
 

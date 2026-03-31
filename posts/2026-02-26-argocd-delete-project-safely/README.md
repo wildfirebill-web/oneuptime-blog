@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Operations, Multi-Tenancy
+Tags: ArgoCD, GitOps, Kubernetes, Operation, Multi-Tenancy
 
 Description: Learn how to safely delete an ArgoCD project without disrupting running applications, including pre-deletion checks, application migration strategies, and handling the project finalizer.
 

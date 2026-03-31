@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Grafana Mimir, Metrics, Prometheus, Monitoring, Observability, DevOps
+Tags: Docker, Grafana Mimir, Metric, Prometheus, Monitoring, Observability, DevOps
 
 Description: Deploy Grafana Mimir in Docker as a scalable, long-term Prometheus metrics storage backend with multi-tenancy support.
 

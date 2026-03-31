@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Connection, Performance, Metrics
+Tags: MongoDB, Monitoring, Connection, Performance, Metric
 
 Description: Learn how to monitor MongoDB connection metrics including current connections, available connections, and connection pool utilization to detect connection exhaustion.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Log Management, Linux
+Tags: RHEL, Docker, Container, Log Management, Linux
 
 Description: Learn how to configure Docker Log Rotation on RHEL with step-by-step instructions, configuration examples, and best practices.
 

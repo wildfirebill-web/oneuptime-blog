@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, TLS, Security, Development
+Tags: Podman, Container, DevOps, Registry, TLS, Security, Development
 
 Description: Learn how to skip TLS verification in Podman for development registries, including per-command and persistent configuration methods.
 

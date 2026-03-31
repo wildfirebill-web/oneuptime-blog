@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, String, Internals, Memory, Performance
+Tags: Redis, String, Internal, Memory, Performance
 
 Description: Explore how Redis strings are encoded internally using embstr, raw SDS, and int encodings, and learn when each encoding is used for optimal performance.
 

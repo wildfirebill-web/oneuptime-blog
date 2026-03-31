@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, USB, Containers, Devices, Linux, IoT
+Tags: Podman, USB, Container, Device, Linux, IoT
 
 Description: Learn how to pass USB devices into Podman containers for IoT development, serial communication, hardware testing, and embedded device programming.
 

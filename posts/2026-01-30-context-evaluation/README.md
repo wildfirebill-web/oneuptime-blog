@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Context, Targeting, Evaluation
+Tags: Feature Flag, Context, Targeting, Evaluation
 
 Description: Learn how to evaluate feature flags based on user and request context.
 

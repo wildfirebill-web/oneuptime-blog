@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, SQL, PL/pgSQL, Variables, Stored Procedures, Functions
+Tags: PostgreSQL, SQL, PL/pgSQL, Variable, Stored Procedure, Function
 
 Description: Learn how to declare and use variables in PostgreSQL using PL/pgSQL, DO blocks, and CTEs. This guide covers variable types, scope, assignment, and practical patterns for dynamic queries.
 

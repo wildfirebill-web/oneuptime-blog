@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $unset, Pipeline Stages, Document Transformation, NoSQL
+Tags: MongoDB, Aggregation, $unset, Pipeline Stage, Document Transformation, NoSQL
 
 Description: Learn how to use the MongoDB $unset aggregation stage to cleanly remove fields from documents flowing through a pipeline without affecting other fields.
 

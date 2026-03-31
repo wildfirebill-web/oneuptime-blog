@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Azure Event Hub, Azure, Event Streaming
+Tags: Flux CD, GitOps, Kubernetes, Notification, Azure Event Hub, Azure, Event Streaming
 
 Description: Learn how to configure Flux CD's notification controller to send deployment and reconciliation events to Azure Event Hub using the Provider resource.
 

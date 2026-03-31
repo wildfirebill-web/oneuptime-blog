@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Multi-Stage, Optimization
+Tags: Podman, Container, DevOps, Container Image, Build, Multi-Stage, Optimization
 
 Description: Learn how to use multi-stage builds in Podman to create smaller, more secure container images by separating build and runtime environments.
 

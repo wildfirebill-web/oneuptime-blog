@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Troubleshooting, DevOps, Error Handling, Images
+Tags: Docker, Troubleshooting, DevOps, Error Handling, Image
 
 Description: Diagnose and resolve Docker invalid reference format errors caused by malformed image names, tag issues, special characters, and environment variable problems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, On-Call, Operations, Incident Response, DevOps
+Tags: Terraform, On-Call, Operation, Incident Response, DevOps
 
 Description: Prepare your on-call engineers to handle Terraform operations confidently during incidents with proper tooling, runbooks, and escalation procedures.
 

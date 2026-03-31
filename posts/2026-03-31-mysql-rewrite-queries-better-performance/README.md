@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Query Optimization, Performance, SQL, Rewrite
+Tags: MySQL, Query Optimization, Performance, SQL, REWRITE
 
 Description: Learn practical techniques for rewriting MySQL queries to improve performance, covering index usage, subquery elimination, and join optimization.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, DUMP, RESTORE, Serialization, Migration
+Tags: Redis, Dump, Restore, Serialization, Migration
 
 Description: Learn how to use DUMP and RESTORE in Redis to serialize and deserialize key values, enabling key-level backup, cross-server migration, and data transfer.
 

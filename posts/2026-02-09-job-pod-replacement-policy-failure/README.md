@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Pod Management
+Tags: Kubernetes, Job, Pod Management
 
 Description: Configure Kubernetes Job pod replacement policy to control when failed pods are recreated, improving failure recovery time and reducing resource waste in batch processing workloads.
 

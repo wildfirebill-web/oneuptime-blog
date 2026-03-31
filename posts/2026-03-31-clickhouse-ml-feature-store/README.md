@@ -1,6 +1,6 @@
 # How to Build a Machine Learning Feature Store with ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Machine Learning, Feature Store, MLOps, Analytics
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, SQL, PIVOT, Data Transformation
+Tags: GCP, BigQuery, SQL, Pivot, Data Transformation
 
 Description: Learn how to use PIVOT and UNPIVOT operators in BigQuery to reshape data between row-based and column-based formats for reporting and analysis.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Cognitive Search, E-Commerce, Serverless, Product Search, Azure Functions, API
+Tags: Azure, Cognitive Search, E-Commerce, Serverless, Product Search, Azure Function, API
 
 Description: Build a serverless product search API for e-commerce using Azure Cognitive Search with faceted navigation, autocomplete, and fuzzy matching.
 

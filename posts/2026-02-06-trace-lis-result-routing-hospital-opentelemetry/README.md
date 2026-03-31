@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, LIS, Lab Results, Hospital Integration
+Tags: OpenTelemetry, LIS, Lab Result, Hospital Integration
 
 Description: Trace lab result routing from the Lab Information System through hospital interfaces to clinical systems using OpenTelemetry distributed tracing.
 

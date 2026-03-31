@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Sockets, IPv4, Graceful Shutdown, Signal Handling, Networking
+Tags: Python, Socket, IPv4, Graceful Shutdown, Signal Handling, Networking
 
 Description: Learn how to implement graceful shutdown for Python IPv4 socket servers by handling OS signals and cleanly closing all active connections.
 

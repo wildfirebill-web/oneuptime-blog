@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, ErasureCoding, Omap, Storage
+Tags: Rook, Ceph, Kubernetes, ErasureCoding, OMAP, Storage
 
 Description: Learn why erasure coded pools in Ceph do not support omap data, how this limitation affects RGW and CephFS, and how to design around it with companion replicated pools.
 

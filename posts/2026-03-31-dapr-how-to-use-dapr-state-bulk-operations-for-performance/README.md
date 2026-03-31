@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, State Management, Bulk Operations, Performance, Redis, Microservices
+Tags: Dapr, State Management, Bulk Operation, Performance, Redis, Microservice
 
 Description: Learn how to use Dapr's bulk state get and save APIs to dramatically reduce round-trips and improve throughput for state-intensive microservice workloads.
 

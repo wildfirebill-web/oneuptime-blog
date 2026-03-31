@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Networking, Ports
+Tags: Podman, Container, DevOps, Pod, Networking, Port
 
 Description: Learn how to publish ports when creating a Podman pod so that containers inside are accessible from the host.
 

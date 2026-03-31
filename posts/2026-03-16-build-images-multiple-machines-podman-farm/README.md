@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Farm, Multi-Architecture, Build Farm
+Tags: Podman, Container, DevOps, Podman Farm, Multi-Architecture, Build Farm
 
 Description: Learn how to use podman farm build to distribute container image builds across multiple machines, producing native multi-architecture images with a single command.
 

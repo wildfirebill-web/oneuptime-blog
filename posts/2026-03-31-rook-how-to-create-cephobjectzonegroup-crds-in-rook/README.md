@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Multisite, Zonegroup, Object Storage, Kubernetes
+Tags: Rook, Ceph, Multisite, ZoneGroup, Object Storage, Kubernetes
 
 Description: Create CephObjectZoneGroup CRDs in Rook to define geographic zone groups within a multisite Ceph RGW realm for object storage replication.
 

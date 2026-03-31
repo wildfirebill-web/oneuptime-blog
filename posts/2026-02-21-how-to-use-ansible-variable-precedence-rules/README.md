@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Precedence, DevOps, Configuration Management
+Tags: Ansible, Variable, Precedence, DevOps, Configuration Management
 
 Description: Learn the complete Ansible variable precedence order, from lowest to highest priority, to avoid unexpected overrides and debug variable resolution issues.
 

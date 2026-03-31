@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Duplicate, Clone, Containers
+Tags: Portainer, Docker, Duplicate, Clone, Container
 
 Description: Create a copy of an existing container in Portainer with the same configuration for testing or scaling.
 

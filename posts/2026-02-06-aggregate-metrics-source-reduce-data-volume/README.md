@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Aggregation, Performance, Data Volume, Optimization
+Tags: OpenTelemetry, Metric, Aggregation, Performance, Data Volume, Optimization
 
 Description: Reduce metric data volume and costs by implementing source-level aggregation strategies in OpenTelemetry SDKs and collectors with practical configuration examples.
 

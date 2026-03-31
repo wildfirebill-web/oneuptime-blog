@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RHEL, Vault, Dynamic Secrets, Database, Security, HashiCorp, Linux
+Tags: RHEL, Vault, Dynamic Secret, Database, Security, HashiCorp, Linux
 
 Description: Learn how to configure HashiCorp Vault's database secrets engine on RHEL to generate short-lived, unique database credentials on demand, eliminating long-lived static passwords.
 

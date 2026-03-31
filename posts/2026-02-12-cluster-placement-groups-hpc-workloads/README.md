@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, HPC, Placement Groups, High Performance Computing
+Tags: AWS, EC2, HPC, Placement Group, High Performance Computing
 
 Description: A deep dive into configuring EC2 cluster placement groups with EFA for high-performance computing workloads including MPI and parallel processing.
 

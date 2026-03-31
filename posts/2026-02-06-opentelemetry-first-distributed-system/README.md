@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Distributed Systems, Tracing, Microservices, Getting Started
+Tags: OpenTelemetry, Distributed System, Tracing, Microservice, Getting Started
 
 Description: A hands-on guide to instrumenting your first distributed system with OpenTelemetry, covering service-to-service tracing and context propagation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Timezone, Date Functions, Sql, Data Engineering
+Tags: ClickHouse, Timezone, Date Function, SQL, Data Engineering
 
 Description: Learn how to use toTimezone() and toUTC() in ClickHouse to convert DateTime values between timezones accurately and efficiently.
 

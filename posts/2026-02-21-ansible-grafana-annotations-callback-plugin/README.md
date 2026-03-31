@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Callback Plugins, Grafana, Monitoring, Annotations
+Tags: Ansible, Callback Plugins, Grafana, Monitoring, Annotation
 
 Description: Configure the Ansible grafana_annotations callback plugin to automatically add deployment markers to Grafana dashboards for change correlation.
 

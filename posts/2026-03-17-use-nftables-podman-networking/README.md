@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, nftables, Security
+Tags: Podman, Container, DevOps, Networking, nftables, Security
 
 Description: Learn how to use nftables to manage firewall rules for Podman container networking on modern Linux systems.
 

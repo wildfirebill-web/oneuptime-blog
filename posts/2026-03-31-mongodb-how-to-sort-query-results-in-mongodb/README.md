@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sort, Query, Aggregation, Indexes, Node.js
+Tags: MongoDB, Sort, Query, Aggregation, Index, Node.js
 
 Description: Learn how to sort MongoDB query results using the sort() method, aggregate $sort stage, and index optimization for efficient ordering of documents.
 

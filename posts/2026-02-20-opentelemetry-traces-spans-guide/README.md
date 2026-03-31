@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Traces, Span, Distributed Tracing, Observability
+Tags: OpenTelemetry, Trace, Span, Distributed Tracing, Observability
 
 Description: A comprehensive guide to OpenTelemetry traces and spans including trace context, span attributes, events, and parent-child relationships.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, RabbitMQ, Messaging, Distributed Systems, Event-Driven
+Tags: Go, RabbitMQ, Messaging, Distributed System, Event-Driven
 
 Description: Build reliable message-driven systems in Go using RabbitMQ with amqp091-go, covering queues, exchanges, and guaranteed message delivery.
 

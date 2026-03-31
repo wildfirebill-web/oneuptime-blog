@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Volume Drivers, Storage, Plugins
+Tags: Portainer, Docker, Volume Drivers, Storage, Plugin
 
 Description: Configure third-party Docker volume drivers in Portainer for advanced storage backends like Ceph, GlusterFS, or cloud storage.
 

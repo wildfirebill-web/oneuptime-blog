@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Tkinter, GUI, Images, Debugging
+Tags: Python, Tkinter, GUI, Image, Debugging
 
 Description: Solve the most common Tkinter image display problems including invisible images, garbage collection issues, and format errors with practical examples.
 

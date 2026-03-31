@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, FAILOVER, Replication, High Availability, Primary
+Tags: Redis, Failover, Replication, High Availability, Primary
 
 Description: Learn how to use the FAILOVER command in Redis to perform a safe, coordinated promotion of a replica to primary without data loss.
 

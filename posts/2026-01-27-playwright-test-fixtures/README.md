@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Playwright, Testing, TypeScript, End-to-End Testing, Automation, Test Fixtures, Web Testing
+Tags: Playwright, Testing, TypeScript, End-to-End Testing, Automation, Test Fixture, Web Testing
 
 Description: Learn how to use Playwright test fixtures to share setup, teardown, and state across your end-to-end tests for cleaner and more maintainable test code.
 

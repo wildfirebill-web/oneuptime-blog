@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Kubernetes, Resource Limits, Pod Configuration, Cluster Management
+Tags: Talos Linux, Kubernetes, Resource Limit, Pod Configuration, Cluster Management
 
 Description: A practical guide to setting CPU and memory resource limits for pods running on Talos Linux Kubernetes clusters.
 

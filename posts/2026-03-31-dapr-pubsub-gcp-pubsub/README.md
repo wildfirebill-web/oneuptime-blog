@@ -1,8 +1,8 @@
 # How to Set Up Dapr Pub/Sub with Google Cloud Pub/Sub
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, GCP, Google Cloud, Event-driven
+Tags: Dapr, Pub/Sub, GCP, Google Cloud, Event-Driven
 
 Description: Configure the Dapr GCP Pub/Sub component to publish and subscribe to Google Cloud Pub/Sub topics in self-hosted and Kubernetes environments with Workload Identity support.
 

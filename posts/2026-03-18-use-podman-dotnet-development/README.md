@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, .NET, C#, Containers, ASP.NET, Development
+Tags: Podman, .NET, C#, Container, ASP.NET, Development
 
 Description: A practical guide to using Podman for .NET development, covering SDK setup, ASP.NET Core workflows, Entity Framework migrations, debugging, testing, and multi-stage production builds.
 

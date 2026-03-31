@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Debugging, Permissions
+Tags: ArgoCD, GitOps, Kubernetes, Debugging, Permission
 
 Description: A troubleshooting guide for diagnosing and fixing namespace permission issues when using ArgoCD applications in any namespace, covering common errors and solutions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Database, Locking, Concurrency, Transactions
+Tags: Database, Locking, Concurrency, Transaction
 
 Description: A practical guide to implementing pessimistic locking in your database layer using SELECT FOR UPDATE, covering lock modes, escalation patterns, and timeout handling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, .NET, Diagnostics, ActivitySource, Meter, C#
+Tags: OpenTelemetry, .NET, Diagnostic, ActivitySource, Meter, C#
 
 Description: Master the System.Diagnostics.Activity and System.Diagnostics.Metrics APIs in .NET to build comprehensive observability with OpenTelemetry integration.
 

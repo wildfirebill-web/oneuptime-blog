@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Dashboard, Ingress, Kubernetes, NGINX, TLS
+Tags: Rook, Ceph, Dashboard, Ingress, Kubernetes, Nginx, TLS
 
 Description: Expose the Ceph Manager Dashboard through a Kubernetes Ingress controller with TLS termination for secure external access in Rook-Ceph clusters.
 

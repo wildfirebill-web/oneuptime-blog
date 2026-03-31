@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Kubernetes, Monitoring, Metrics, Observability, Cloud Native
+Tags: Prometheus, Kubernetes, Monitoring, Metric, Observability, Cloud Native
 
 Description: A complete guide to deploying Prometheus in Kubernetes for comprehensive cluster and application monitoring with practical configurations and best practices.
 

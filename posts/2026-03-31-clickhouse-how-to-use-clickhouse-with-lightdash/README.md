@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Lightdash, dbt, Business Intelligence, Analytics, Metric
+Tags: ClickHouse, Lightdash, Dbt, Business Intelligence, Analytics, Metric
 
 Description: Connect Lightdash to ClickHouse through a dbt project to build open-source BI dashboards with metrics defined in version-controlled YAML.
 

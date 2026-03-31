@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Fluentd
+Tags: Podman, Container, DevOps, Logging, Fluentd
 
 Description: Learn how to forward Podman container logs to Fluentd for centralized log aggregation, using file tailing, journald integration, and Fluent Bit as a lightweight collector.
 

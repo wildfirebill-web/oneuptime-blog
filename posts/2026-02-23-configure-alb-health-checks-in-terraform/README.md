@@ -1,6 +1,6 @@
 # How to Configure ALB Health Checks in Terraform
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Terraform, AWS, ALB, Health Check, Load Balancing
 

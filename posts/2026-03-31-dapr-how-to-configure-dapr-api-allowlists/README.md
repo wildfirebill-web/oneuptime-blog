@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, API Allowlist, Security, Configuration, Microservices
+Tags: Dapr, API Allowlist, Security, Configuration, Microservice
 
 Description: Learn how to configure Dapr API allowlists to restrict which Dapr APIs your application can access, reducing the attack surface of your microservices.
 

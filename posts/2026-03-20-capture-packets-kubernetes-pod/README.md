@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, tcpdump, Pod Network, Containers, Packet Capture
+Tags: Kubernetes, tcpdump, Pod Network, Container, Packet Capture
 
 Description: Learn how to capture network packets on Kubernetes pod networks using tcpdump inside pods, ephemeral debug containers, or directly on the node's pod network interface for troubleshooting container...
 

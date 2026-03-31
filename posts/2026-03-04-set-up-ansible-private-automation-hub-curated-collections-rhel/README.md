@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible, Private Automation Hub, Collections, Automation
+Tags: RHEL, Ansible, Private Automation Hub, Collection, Automation
 
 Description: Set up an Ansible Private Automation Hub on RHEL to host curated, approved Ansible collections for your organization.
 

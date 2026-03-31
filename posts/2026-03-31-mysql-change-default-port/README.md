@@ -1,6 +1,6 @@
 # How to Change the MySQL Default Port from 3306
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Configuration, Port, Security, Administration
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, S3, Storage, AWS, Modules, Encryption
+Tags: OpenTofu, Terraform, S3, Storage, AWS, Module, Encryption
 
 Description: Learn how to design a reusable S3 storage module for OpenTofu with encryption, versioning, lifecycle policies, and access control configurations.
 

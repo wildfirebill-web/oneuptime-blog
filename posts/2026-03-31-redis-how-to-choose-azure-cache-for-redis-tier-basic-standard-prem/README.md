@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Azure Cache For Redis, Azure, Cloud Databases, Cache Tiers
+Tags: Redis, Azure Cache for Redis, Azure, Cloud Database, Cache Tiers
 
 Description: Compare Azure Cache for Redis Basic, Standard, Premium, and Enterprise tiers to choose the right tier for your performance, availability, and cost needs.
 

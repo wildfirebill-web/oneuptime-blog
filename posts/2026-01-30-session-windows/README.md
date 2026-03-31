@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Stream Processing, Windowing, User Sessions, Apache Flink
+Tags: Stream Processing, Windowing, User Session, Apache Flink
 
 Description: Learn how to implement session windows for activity-based stream aggregations.
 

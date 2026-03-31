@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Environment Variables, DevOps
+Tags: Portainer, Docker, Stack, Environment Variable, DevOps
 
 Description: Learn how to manage environment variables for Docker Compose stacks in Portainer, including secure secret handling and per-environment configurations.
 

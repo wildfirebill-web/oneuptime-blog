@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Cephfs, Kubernetes, Storage
+Tags: Rook, Ceph, CephFS, Kubernetes, Storage
 
 Description: Learn how to configure preserveFilesystemOnDelete in Rook to prevent accidental data loss when a CephFilesystem CRD is deleted from Kubernetes.
 

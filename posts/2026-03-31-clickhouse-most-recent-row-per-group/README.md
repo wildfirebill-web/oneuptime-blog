@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, argMax, Latest Row, Group By, Window Function
+Tags: ClickHouse, argMax, Latest Row, GROUP BY, Window Function
 
 Description: Learn how to find the most recent row per group in ClickHouse using argMax, window functions, and ReplacingMergeTree for efficient last-value lookups.
 

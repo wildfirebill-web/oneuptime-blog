@@ -1,8 +1,8 @@
 # How to Use CEL Expressions for Cert-Manager Certificate Health in Flux
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Flux, GitOps, Kubernetes, CEL, Cert-Manager, Health Check, Certificates
+Tags: Flux, GitOps, Kubernetes, CEL, Cert-Manager, Health Check, Certificate
 
 Description: Learn how to use CEL expressions in Flux to evaluate cert-manager Certificate health status with fine-grained conditions beyond the default Ready check.
 

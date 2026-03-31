@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Extensions, API, UI
+Tags: Rancher, Kubernetes, Extension, API, UI
 
 Description: Learn how to use Rancher Extension APIs to build custom UI components, register routes, and integrate with Rancher's core services.
 

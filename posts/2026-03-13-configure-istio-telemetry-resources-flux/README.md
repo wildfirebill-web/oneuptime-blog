@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Istio, Telemetry, Observability, Metrics, Tracing
+Tags: Flux CD, Kubernetes, GitOps, Istio, Telemetry, Observability, Metric, Tracing
 
 Description: Manage Istio Telemetry API resources for observability using Flux CD to configure metrics, tracing, and access logging declaratively.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, WireGuard, Flannel, Networking, Security, VPN
+Tags: k3s, Kubernetes, WireGuard, Flannel, Networking, Security, VPN
 
 Description: Learn how to configure K3s Flannel to use WireGuard as its backend for encrypted pod-to-pod communication across nodes.
 

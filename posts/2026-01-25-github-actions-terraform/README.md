@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Terraform, Infrastructure as Code, CI/CD, DevOps, Cloud
+Tags: GitHub Action, Terraform, Infrastructure as Code, CI/CD, DevOps, Cloud
 
 Description: Learn how to automate Terraform deployments with GitHub Actions.
 

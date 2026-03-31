@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps
+Tags: Podman, Installation, Linux, Container, DevOps
 
 Description: A thorough guide to completely removing Podman from your system, including containers, images, volumes, configuration files, and all associated data.
 

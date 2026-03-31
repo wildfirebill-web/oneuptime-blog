@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Pub/Sub, Messaging, Microservices, Go
+Tags: NATS, Pub/Sub, Messaging, Microservice, Go
 
 Description: Learn how to implement the publish-subscribe messaging pattern with NATS for building scalable, loosely coupled microservices.
 

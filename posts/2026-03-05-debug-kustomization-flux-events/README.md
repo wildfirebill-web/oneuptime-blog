@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Kustomize, Debugging, Events, Troubleshooting, CLI
+Tags: Flux CD, GitOps, Kubernetes, Kustomize, Debugging, Event, Troubleshooting, CLI
 
 Description: Learn how to use the flux events command to debug Kustomization reconciliation issues, track changes, and diagnose failures in your Flux CD deployments.
 

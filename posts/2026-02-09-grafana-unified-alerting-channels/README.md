@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Alerting, Notifications, Monitoring, Unified Alerting
+Tags: Grafana, Alerting, Notification, Monitoring, Unified Alerting
 
 Description: Learn how to set up Grafana Unified Alerting with multiple notification channels including Slack, email, PagerDuty, and webhooks for comprehensive alert delivery.
 

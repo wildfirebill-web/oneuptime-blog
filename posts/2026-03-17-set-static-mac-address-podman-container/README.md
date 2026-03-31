@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, MAC Address, Configuration
+Tags: Podman, Container, DevOps, Networking, MAC Address, Configuration
 
 Description: Learn how to set a static MAC address for Podman containers for licensing, DHCP reservations, and network management.
 

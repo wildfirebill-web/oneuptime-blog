@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, DNS, Service Discovery, Networking, Microservices
+Tags: Portainer, Docker, DNS, Service Discovery, Networking, Microservice
 
 Description: Use Docker's built-in DNS resolver and custom DNS configurations in Portainer stacks for reliable service-to-service communication using container and service names.
 

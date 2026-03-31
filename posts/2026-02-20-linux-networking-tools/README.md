@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, Tools, DevOps, Troubleshooting
+Tags: Linux, Networking, Tool, DevOps, Troubleshooting
 
 Description: A guide to essential Linux networking tools including ss, ip, dig, traceroute, tcpdump, and curl for DevOps troubleshooting.
 

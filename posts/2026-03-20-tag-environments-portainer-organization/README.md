@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Tags, Environments, Organizations, Management
+Tags: Portainer, Tag, Environment, Organization, Management
 
 Description: Apply tags to Portainer environments to filter, search, and organize large numbers of environments by type, location, or team.
 

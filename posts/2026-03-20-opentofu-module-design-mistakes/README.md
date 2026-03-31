@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module
 
 Description: Learn the most common OpenTofu module design mistakes and how to avoid them to build maintainable, reusable infrastructure modules.
 

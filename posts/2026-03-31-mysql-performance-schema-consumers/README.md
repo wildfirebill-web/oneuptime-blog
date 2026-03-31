@@ -14,7 +14,7 @@ Consumers in MySQL's Performance Schema determine where collected event data is 
 
 Consumers follow a dependency chain. A consumer only collects data if all consumers above it in the hierarchy are also enabled:
 
-```
+```text
 global_instrumentation
   |-- thread_instrumentation
   |     |-- events_waits_current
@@ -42,7 +42,7 @@ ORDER BY NAME;
 
 Typical output:
 
-```
+```text
 +----------------------------------+---------+
 | NAME                             | ENABLED |
 +----------------------------------+---------+

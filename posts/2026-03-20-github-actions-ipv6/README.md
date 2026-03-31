@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, GitHub Actions, CI/CD, Docker, DevOps, Testing
+Tags: IPv6, GitHub Action, CI/CD, Docker, DevOps, Testing
 
 Description: Configure GitHub Actions workflows to test and deploy IPv6-enabled applications, including self-hosted runners with IPv6, Docker IPv6 networks, and IPv6 connectivity tests.
 

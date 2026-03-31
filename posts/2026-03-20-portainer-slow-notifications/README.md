@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Performance, Troubleshooting, Notifications
+Tags: Portainer, Docker, Performance, Troubleshooting, Notification
 
 Description: Resolve Portainer performance issues where slow notification loading blocks or delays bulk container operations, stack deployments, and UI interactions.
 

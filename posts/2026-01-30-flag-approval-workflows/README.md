@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Workflow, Approval, Governance
+Tags: Feature Flag, Workflow, Approval, Governance
 
 Description: Learn how to implement approval workflows for feature flag changes.
 

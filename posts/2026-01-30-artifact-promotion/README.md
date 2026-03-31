@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DevOps, Artifacts, Registry, CI/CD
+Tags: DevOps, Artifact, Registry, CI/CD
 
 Description: Learn to create artifact promotion for container images across registries.
 

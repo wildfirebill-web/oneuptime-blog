@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $lt, $lte, Comparison Operators, Range Queries, Query
+Tags: MongoDB, $lt, $lte, Comparison Operator, Range Queries, Query
 
 Description: Learn how to use MongoDB's $lt (less than) and $lte (less than or equal) operators to filter documents by value ranges on numbers, dates, and strings.
 

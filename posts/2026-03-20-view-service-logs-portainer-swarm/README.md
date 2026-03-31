@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Logs, Services, Debugging
+Tags: Portainer, Docker Swarm, Log, Service, Debugging
 
 Description: Access aggregated service logs from all task replicas in Portainer for centralized Swarm service debugging.
 

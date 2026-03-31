@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Backup, Percona Xtrabackup, Incremental Backup, Administration
+Tags: MySQL, Backup, Percona XtraBackup, Incremental Backup, Administration
 
 Description: Learn how to use Percona XtraBackup to perform incremental physical backups of MySQL databases, reducing backup time and storage compared to full backups.
 

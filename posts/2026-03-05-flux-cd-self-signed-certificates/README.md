@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, TLS, Certificates, Security
+Tags: Flux CD, GitOps, Kubernetes, TLS, Certificate, Security
 
 Description: Learn how to configure Flux CD to work with Git repositories, Helm registries, and OCI registries that use self-signed or custom CA certificates.
 

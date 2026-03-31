@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Monitoring, Performance, Database Tools
+Tags: MongoDB, Monitoring, Performance, Database Tools
 
 Description: Learn how to use the mongostat command-line tool to view real-time MongoDB performance statistics including operations per second, connections, and memory usage.
 

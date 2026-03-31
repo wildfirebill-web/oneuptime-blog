@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kyverno, Kubernetes, Policy, Exceptions
+Tags: Kyverno, Kubernetes, Policy, Exception
 
 Description: Learn how to use Kyverno PolicyException resources for targeted exemptions without weakening cluster-wide security policies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, PromQL, Kubernetes, Metrics, Monitoring
+Tags: Prometheus, PromQL, Kubernetes, Metric, Monitoring
 
 Description: A practical guide to writing PromQL queries for Kubernetes monitoring including selectors, aggregations, rate functions, and common patterns.
 

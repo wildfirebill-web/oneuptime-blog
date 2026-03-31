@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Optimization, Performance, Data Structures, Compression, Eviction, Production
+Tags: Redis, Memory, Optimization, Performance, Data Structure, Compression, Eviction, Production
 
 Description: A comprehensive guide to optimizing Redis memory usage. Learn memory policies, data structure optimization, encoding configurations, and compression techniques to maximize efficiency.
 

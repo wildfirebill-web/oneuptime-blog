@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Explore, Ad-Hoc Queries, Debugging, Logs, Metrics, Traces, Observability
+Tags: Grafana, Explore, Ad-Hoc Queries, Debugging, Log, Metric, Trace, Observability
 
 Description: Master Grafana's Explore interface for ad-hoc queries across metrics, logs, and traces during debugging and incident investigation.
 

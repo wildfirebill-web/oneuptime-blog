@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, AI, Machine Learning, Offline, Air-Gapped, Privacy
+Tags: Podman, Container, DevOps, AI, Machine Learning, Offline, Air-Gapped, Privacy
 
 Description: Learn how to set up and use Podman AI Lab in fully offline and air-gapped environments for maximum privacy and security.
 

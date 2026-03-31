@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Best Practice, Linux
+Tags: RHEL, Docker, Container, Best Practice, Linux
 
 Description: Learn how to build Multi-Stage Docker Images on RHEL with step-by-step instructions, configuration examples, and best practices.
 

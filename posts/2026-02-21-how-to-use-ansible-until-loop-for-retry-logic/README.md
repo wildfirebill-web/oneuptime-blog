@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Retry Logic, Loops, Error Handling
+Tags: Ansible, Retry Logic, Loop, Error Handling
 
 Description: Learn how to use Ansible until loops to implement retry logic for tasks that may fail temporarily due to network issues or service startup delays.
 

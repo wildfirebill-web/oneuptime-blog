@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, isNull, isNotNull, Sql
+Tags: ClickHouse, NULL Handling, isNull, isNotNull, SQL
 
 Description: Learn how to use isNull() and isNotNull() in ClickHouse to safely test for NULL values in Nullable columns and build robust data pipelines.
 

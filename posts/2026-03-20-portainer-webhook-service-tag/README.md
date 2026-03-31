@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Webhooks, CI/CD, Automation
+Tags: Portainer, Docker, Webhook, CI/CD, Automation
 
 Description: Learn how to use the SERVICE_TAG environment variable with Portainer webhooks to deploy specific image versions through the same webhook URL.
 

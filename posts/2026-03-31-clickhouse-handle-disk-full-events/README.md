@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Disk Full, Incident Response, Storage, Operations
+Tags: ClickHouse, Disk Full, Incident Response, Storage, Operation
 
 Description: Respond to a ClickHouse disk full event by identifying large tables and partitions, freeing space safely, and preventing recurrence with TTL and monitoring.
 

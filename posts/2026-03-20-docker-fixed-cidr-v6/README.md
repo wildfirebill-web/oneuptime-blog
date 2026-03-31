@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, Fixed-cidr-v6, CIDR, Daemons, Networking
+Tags: Docker, IPv6, Fixed-cidr-v6, CIDR, Daemon, Networking
 
 Description: Configure the fixed-cidr-v6 option in Docker's daemon.json to assign a specific IPv6 subnet to the default bridge network, understand CIDR sizing requirements, and verify address allocation.
 

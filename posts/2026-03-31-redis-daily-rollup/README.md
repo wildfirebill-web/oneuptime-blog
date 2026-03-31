@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Analytics, Time Series, Rollup, Counter
+Tags: Redis, Analytics, Time Series, ROLLUP, Counter
 
 Description: Build daily rollup counters in Redis by aggregating hourly data into day-level summaries with automatic expiry and pipeline-optimized reads.
 

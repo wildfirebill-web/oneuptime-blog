@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Debugging, External Services, Egress, ServiceEntry
+Tags: Istio, Debugging, External Service, Egress, ServiceEntry
 
 Description: Practical troubleshooting guide for diagnosing connectivity issues between Istio mesh services and external APIs, databases, and third-party services.
 

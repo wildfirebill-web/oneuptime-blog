@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Broadcast, Networking, Linux, Sockets, LAN
+Tags: UDP, Broadcast, Networking, Linux, Socket, LAN
 
 Description: Send and receive UDP broadcast messages on a local network using the SO_BROADCAST socket option, with practical examples for service discovery and local network communication.
 

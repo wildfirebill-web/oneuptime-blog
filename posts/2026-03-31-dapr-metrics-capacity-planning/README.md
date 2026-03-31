@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Capacity Planning, Metrics, Prometheus, Scalability
+Tags: Dapr, Capacity Planning, Metric, Prometheus, Scalability
 
 Description: Use Dapr's Prometheus metrics to project resource needs, identify bottlenecks, and plan infrastructure scaling before hitting limits.
 

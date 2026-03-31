@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Git, Merge Conflicts
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Git, Merge Conflicts
 
 Description: Learn strategies for resolving Git merge conflicts in SOPS-encrypted files within your Flux GitOps repository.
 

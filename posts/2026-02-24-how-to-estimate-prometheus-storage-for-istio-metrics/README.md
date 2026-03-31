@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Prometheus, Monitoring, Storage, Metrics
+Tags: Istio, Prometheus, Monitoring, Storage, Metric
 
 Description: A detailed guide to estimating Prometheus storage requirements for Istio metrics based on cardinality, scrape intervals, and retention policies.
 

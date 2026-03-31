@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging
+Tags: Podman, Container, DevOps, Logging
 
 Description: Learn how to export Podman container logs to files for archiving, sharing, and offline analysis, including timestamped exports, compressed archives, and structured formats.
 

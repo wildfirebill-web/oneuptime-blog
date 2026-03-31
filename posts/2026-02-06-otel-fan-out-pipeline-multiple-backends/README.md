@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Fan-Out, Traces, Backend Comparison
+Tags: OpenTelemetry, Collector, Fan-Out, Trace, Backend Comparison
 
 Description: Learn how to configure an OpenTelemetry Collector fan-out pipeline that sends traces to multiple backends at the same time for evaluation and comparison.
 

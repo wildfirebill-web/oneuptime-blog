@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, Delayed Member, Disaster Recovery, Operations
+Tags: MongoDB, Replica Set, Delayed Member, Disaster Recovery, Operation
 
 Description: Configure a delayed MongoDB replica set member that lags behind the primary by a fixed time window to protect against accidental data loss.
 

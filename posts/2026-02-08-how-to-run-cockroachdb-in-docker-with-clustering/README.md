@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, CockroachDB, Database, Clustering, DevOps, Distributed Systems, Docker Compose
+Tags: Docker, CockroachDB, Database, Clustering, DevOps, Distributed System, Docker Compose
 
 Description: Step-by-step guide to running a CockroachDB cluster in Docker with multi-node setup, replication, monitoring, and production best practices.
 

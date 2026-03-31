@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Variables, Documentation, Infrastructure as Code
+Tags: Terraform, HCL, Variable, Documentation, Infrastructure as Code
 
 Description: Learn how to write effective variable descriptions in Terraform that serve as documentation, improve module usability, and help team members understand your configuration.
 

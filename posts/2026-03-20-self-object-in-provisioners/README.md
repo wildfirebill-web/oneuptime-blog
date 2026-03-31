@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Provisioners, Infrastructure as Code, HCL
+Tags: OpenTofu, Terraform, Provisioner, Infrastructure as Code, HCL
 
 Description: Learn how to use the `self` object within OpenTofu provisioners to reference the attributes of the resource being created or destroyed.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Validation, Variables, Infrastructure as Code
+Tags: Terraform, HCL, Validation, Variable, Infrastructure as Code
 
 Description: Learn how to use Terraform variable validation with the contains function to restrict input values to a predefined list of allowed options and catch misconfigurations early.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Istio, ServiceEntry, External Services, Service Mesh, Egress
+Tags: Flux CD, Kubernetes, GitOps, Istio, ServiceEntry, External Service, Service Mesh, Egress
 
 Description: Manage Istio ServiceEntry resources for external services using Flux CD to control and observe egress traffic to external APIs and databases.
 

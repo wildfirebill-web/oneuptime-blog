@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Nested
+Tags: ClickHouse, SQL, Data Type, Nested
 
 Description: Learn how ClickHouse stores Nested columns as parallel arrays, how to insert and query nested data, and how to use ARRAY JOIN to expand rows.
 

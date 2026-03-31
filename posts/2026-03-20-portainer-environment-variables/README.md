@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Configuration, DevOps
+Tags: Portainer, Docker, Container, Configuration, DevOps
 
 Description: Learn how to configure environment variables on Docker containers in Portainer using the web UI, including secrets management best practices.
 

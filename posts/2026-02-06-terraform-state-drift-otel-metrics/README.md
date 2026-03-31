@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Terraform, State Drift, Metrics, Infrastructure Monitoring
+Tags: OpenTelemetry, Terraform, State Drift, Metric, Infrastructure Monitoring
 
 Description: Monitor Terraform state drift detection and plan execution duration by instrumenting your CI/CD pipeline with OpenTelemetry metrics.
 

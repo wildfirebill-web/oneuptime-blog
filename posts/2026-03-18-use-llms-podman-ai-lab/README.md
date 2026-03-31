@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, AI, LLM, Machine Learning, Natural Language Processing
+Tags: Podman, Container, DevOps, AI, LLM, Machine Learning, Natural Language Processing
 
 Description: Learn how to work with large language models in Podman AI Lab for text generation, code assistance, and conversational AI.
 

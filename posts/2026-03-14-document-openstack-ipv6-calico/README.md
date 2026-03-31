@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenStack, Calico, IPv6, Documentation, Operations
+Tags: OpenStack, Calico, IPv6, Documentation, Operation
 
 Description: A guide to creating operational documentation for IPv6 networking in OpenStack with Calico, covering dual-stack architecture, IPv6-specific troubleshooting, and operational procedures.
 

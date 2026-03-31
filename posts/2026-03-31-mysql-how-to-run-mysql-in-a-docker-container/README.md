@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Docker, Containers, DevOps, Development
+Tags: MySQL, Docker, Container, DevOps, Development
 
 Description: Run MySQL in a Docker container with persistent storage, custom configuration, and environment variable setup for development and production use.
 

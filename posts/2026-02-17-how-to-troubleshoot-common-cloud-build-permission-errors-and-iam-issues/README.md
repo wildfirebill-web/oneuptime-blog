@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Build, IAM, Permissions, Troubleshooting, Security
+Tags: GCP, Cloud Build, IAM, Permission, Troubleshooting, Security
 
 Description: A practical troubleshooting guide for the most common Cloud Build permission errors and IAM configuration issues on Google Cloud Platform.
 

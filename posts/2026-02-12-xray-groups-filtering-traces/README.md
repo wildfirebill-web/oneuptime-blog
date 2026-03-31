@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, X-Ray, Trace Filtering, Groups, Observability
+Tags: AWS, X-Ray, Trace Filtering, Group, Observability
 
 Description: Learn how to create and use X-Ray groups to filter traces by service, annotation, error type, or latency for focused observability in complex applications.
 

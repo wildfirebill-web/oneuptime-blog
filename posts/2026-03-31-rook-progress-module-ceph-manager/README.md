@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Progress, Monitoring, Operations
+Tags: Ceph, Rook, Progress, Monitoring, Operation
 
 Description: Learn how to use the Ceph Manager Progress module to track and display the status of long-running cluster operations such as backfills and recoveries.
 

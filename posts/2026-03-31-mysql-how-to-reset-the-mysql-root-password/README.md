@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, Administration, Root Password
+Tags: MySQL, Security, Administration, Root Password
 
 Description: Learn step-by-step how to reset a forgotten MySQL root password on Linux and Windows using safe mode or the init-file method.
 

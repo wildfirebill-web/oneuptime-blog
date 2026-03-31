@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, AWS, Lambda, Serverless
+Tags: Terraform, Module, AWS, Lambda, Serverless
 
 Description: Build a comprehensive Terraform module for AWS Lambda functions covering IAM roles, CloudWatch logs, VPC configuration, event source mappings, and environment variables.
 

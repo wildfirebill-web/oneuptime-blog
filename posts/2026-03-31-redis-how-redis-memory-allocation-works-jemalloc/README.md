@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory Management, Jemalloc, Performance, Internals
+Tags: Redis, Memory Management, Jemalloc, Performance, Internal
 
 Description: Understand how Redis uses jemalloc for memory allocation, why it was chosen over malloc, and how it affects memory usage and performance.
 

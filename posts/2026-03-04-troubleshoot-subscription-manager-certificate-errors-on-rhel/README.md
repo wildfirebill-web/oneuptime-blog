@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Subscription Manager, Certificates, Troubleshooting, Linux
+Tags: RHEL, Subscription Manager, Certificate, Troubleshooting, Linux
 
 Description: Diagnose and fix common subscription-manager certificate errors on RHEL, including expired certificates, missing entitlements, and SSL issues.
 

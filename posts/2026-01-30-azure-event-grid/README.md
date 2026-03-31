@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Azure, Event Grid, Events, Serverless
+Tags: Azure, Event Grid, Event, Serverless
 
 Description: A hands-on guide to building event-driven architectures with Azure Event Grid, covering custom topics, subscriptions, filtering, and dead-letter handling.
 

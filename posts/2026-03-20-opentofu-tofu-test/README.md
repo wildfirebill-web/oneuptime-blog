@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Testing
+Tags: OpenTofu, Terraform, IaC, Module, Testing
 
 Description: Learn how to write and run unit and integration tests for your OpenTofu modules using the built-in tofu test command.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Query, Null, Missing Field, Schema
+Tags: MongoDB, Query, NULL, Missing Field, Schema
 
 Description: Learn how to query for null values and missing fields in MongoDB using $exists, $type, and equality operators with practical examples and index strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RKE2, Kubernetes, Certificates, TLS, Security, Maintenance
+Tags: RKE2, Kubernetes, Certificate, TLS, Security, Maintenance
 
 Description: Learn how to rotate TLS certificates in RKE2 to maintain security and prevent certificate expiration from causing cluster outages.
 

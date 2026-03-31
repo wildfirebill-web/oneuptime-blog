@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, IP Forwarding, Networking, Containers, Linux, Routing
+Tags: Podman, IP Forwarding, Networking, Container, Linux, Routing
 
 Description: Learn how to configure IP forwarding for Podman containers to enable inter-container routing, external network access, and custom routing topologies.
 

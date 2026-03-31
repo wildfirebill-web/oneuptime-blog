@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SummingMergeTree, Table Engines, Aggregation, Sql
+Tags: ClickHouse, SummingMergeTree, Table Engine, Aggregation, SQL
 
 Description: Learn how to use SummingMergeTree in ClickHouse to automatically sum numeric columns during background merges for efficient pre-aggregated storage.
 

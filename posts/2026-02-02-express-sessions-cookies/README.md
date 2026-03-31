@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Express.js, Session, Cookies, Node.js, Authentication, Security
+Tags: Express.js, Session, Cookie, Node.js, Authentication, Security
 
 Description: A comprehensive guide to handling sessions and cookies in Express.js applications.
 

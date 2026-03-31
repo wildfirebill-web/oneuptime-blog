@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CockroachDB, Distributed Transactions, Database, SQL, Consistency, ACID
+Tags: CockroachDB, Distributed Transaction, Database, SQL, Consistency, ACID
 
 Description: Learn how to handle distributed transactions in CockroachDB effectively.
 

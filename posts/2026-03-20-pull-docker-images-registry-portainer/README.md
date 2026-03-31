@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Registry, Pull
+Tags: Portainer, Docker, Image, Registry, Pull
 
 Description: Pull Docker images from Docker Hub or private registries directly from the Portainer web interface.
 

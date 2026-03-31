@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Collector, Performance, Downsampling
+Tags: OpenTelemetry, Metric, Collector, Performance, Downsampling
 
 Description: Learn how to use the OpenTelemetry Collector's interval processor to downsample high-frequency metrics and reduce storage costs without losing critical data.
 

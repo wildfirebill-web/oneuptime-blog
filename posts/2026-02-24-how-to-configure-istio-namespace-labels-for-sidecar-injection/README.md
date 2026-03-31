@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Namespaces, Sidecar Injection, Kubernetes, Service Mesh
+Tags: Istio, Namespace, Sidecar Injection, Kubernetes, Service Mesh
 
 Description: Everything you need to know about Istio namespace labels for controlling sidecar injection including revision labels, exclusions, and migration strategies.
 

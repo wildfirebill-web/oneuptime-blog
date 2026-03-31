@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Docker, Logs, Metadata Enrichment
+Tags: OpenTelemetry, Docker, Log, Metadata Enrichment
 
 Description: Learn how to collect Docker container logs and enrich each log record with container name, image, and labels using the OpenTelemetry Collector.
 

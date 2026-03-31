@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions
+Tags: OpenTofu, Terraform, IaC, Function
 
 Description: Learn how to use can() and try() functions in OpenTofu for error handling and safe value evaluation.
 

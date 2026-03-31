@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics, Troubleshooting
+Tags: Calico, Kubernetes, Networking, Diagnostic, Troubleshooting
 
 Description: Diagnose node-level Calico issues including Felix startup failures, BGP peer losses on individual nodes, and iptables rule inconsistencies that affect pods on a specific cluster node.
 

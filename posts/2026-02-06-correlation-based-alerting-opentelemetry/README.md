@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Alerting, Correlation, Distributed Systems
+Tags: OpenTelemetry, Alerting, Correlation, Distributed System
 
 Description: Learn how to build correlation-based alerting that groups and links related alerts across multiple OpenTelemetry-instrumented services to reduce noise and speed up incident response.
 

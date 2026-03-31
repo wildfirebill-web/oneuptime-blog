@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, Sharded Pub/Sub, Redis 7, Cluster, Scalability
+Tags: Redis, Pub/Sub, Sharding, Cluster, Redis 7.0
 
-Description: Use Redis 7.0 Sharded Pub/Sub with SSUBSCRIBE and SPUBLISH to scale Pub/Sub across Redis Cluster nodes without broadcasting to all shards.
+Description: Use Redis 7.0 sharded Pub/Sub with SSUBSCRIBE and SPUBLISH to route messages through specific cluster shards and avoid cross-slot fan-out overhead.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Vertex AI, Cloud Functions, Content Moderation, AI, Safety, Google Cloud
+Tags: GCP, Vertex AI, Cloud Function, Content Moderation, AI, Safety, Google Cloud
 
 Description: Step-by-step guide to building a scalable content moderation system using Vertex AI for classification and Cloud Functions for serverless processing on GCP.
 

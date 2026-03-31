@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Elastic Beanstalk, SQS, Worker, Background Jobs
+Tags: AWS, Elastic Beanstalk, SQS, Worker, Background Job
 
 Description: Learn how to set up Elastic Beanstalk worker environments for processing background tasks with SQS, including dead-letter queues, periodic tasks, and scaling configuration.
 

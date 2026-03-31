@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Key Groups, Quorum, Security
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Key Groups, Quorum, Security
 
 Description: Learn how to configure SOPS key groups in Flux to require multiple keys for decryption, implementing quorum-based secret access for enhanced security.
 

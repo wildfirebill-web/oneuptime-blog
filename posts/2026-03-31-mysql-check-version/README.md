@@ -1,6 +1,6 @@
 # How to Check Your MySQL Version
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Administration, Version, CLI, Database
 

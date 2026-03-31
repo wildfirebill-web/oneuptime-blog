@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, FreeBSD, BSD, Installation, Ports
+Tags: ClickHouse, FreeBSD, BSD, Installation, Port
 
 Description: Install ClickHouse on FreeBSD using the ports collection or binary packages, with rc.d service configuration and BSD-specific performance tuning.
 

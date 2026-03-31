@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Migration, Upgrade, Version, Operations
+Tags: MongoDB, Migration, Upgrade, Version, Operation
 
 Description: Step-by-step guide to upgrading a MongoDB replica set from version 4.4 to 6.0, including intermediate version stops at 5.0 and compatibility checks.
 

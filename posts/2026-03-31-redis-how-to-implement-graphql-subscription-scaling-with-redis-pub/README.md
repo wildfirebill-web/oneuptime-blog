@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, GraphQL, Subscriptions, Pub/Sub, Websockets, Scaling
+Tags: Redis, GraphQL, Subscription, Pub/Sub, WebSocket, Scaling
 
 Description: Scale GraphQL subscriptions across multiple server instances using Redis Pub/Sub as a shared message broker for real-time event delivery.
 

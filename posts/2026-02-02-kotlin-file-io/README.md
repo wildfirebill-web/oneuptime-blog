@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kotlin, File IO, Streams, File Handling, JVM
+Tags: Kotlin, File IO, Stream, File Handling, JVM
 
 Description: Master Kotlin file I/O operations for reading, writing, and processing files efficiently in your applications.
 

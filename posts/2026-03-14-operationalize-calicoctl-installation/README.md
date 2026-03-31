@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Calicoctl, Operations, Installation, Best Practice
+Tags: Calico, Calicoctl, Operation, Installation, Best Practice
 
 Description: A guide to making calicoctl a well-managed operational tool in your infrastructure, covering upgrade procedures, access management, usage policies, and integration with operational workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Hour Minute Second, Date Functions, Time Functions, Sql
+Tags: MySQL, Hour Minute Second, Date Function, Time Function, SQL
 
 Description: Learn how to use HOUR(), MINUTE(), and SECOND() functions in MySQL to extract time components from TIME, DATETIME, and TIMESTAMP values.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Configuration Management, Automation
+Tags: Ansible, Variable, Configuration Management, Automation
 
 Description: A complete guide to using the include_vars module in Ansible to dynamically load variables from YAML and JSON files during playbook execution.
 

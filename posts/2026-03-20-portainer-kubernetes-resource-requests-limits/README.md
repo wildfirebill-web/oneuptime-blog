@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Resources, Performance, DevOps
+Tags: Portainer, Kubernetes, Resource, Performance, DevOps
 
 Description: Learn how to configure CPU and memory resource requests and limits for Kubernetes applications in Portainer for efficient cluster utilization.
 

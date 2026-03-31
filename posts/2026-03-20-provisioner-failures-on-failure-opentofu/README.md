@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, On_failure, Error Handling, Infrastructure as Code
+Tags: OpenTofu, Provisioner, On_failure, Error Handling, Infrastructure as Code
 
 Description: Learn how to use the `on_failure` argument in OpenTofu provisioners to control what happens when a provisioner command fails-either halting the apply or continuing gracefully.
 

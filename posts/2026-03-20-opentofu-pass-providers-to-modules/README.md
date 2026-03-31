@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules, Provider
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module, Provider
 
 Description: Learn how to pass provider configurations to child modules in OpenTofu using the providers argument and required_providers declarations.
 

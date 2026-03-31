@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Private Endpoints, AWS PrivateLink, Security
+Tags: MongoDB, Atlas, Private Endpoint, AWS PrivateLink, Security
 
 Description: Configure private endpoints (AWS PrivateLink, Azure Private Link, GCP Private Service Connect) for MongoDB Atlas to secure database connections without public internet exposure.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, TimescaleDB, PostgreSQL, Time Series, Metrics, IoT
+Tags: Portainer, Docker, TimescaleDB, PostgreSQL, Time Series, Metric, IoT
 
 Description: Deploy TimescaleDB as a PostgreSQL-compatible time-series database with automatic data retention and continuous aggregations via Portainer.
 

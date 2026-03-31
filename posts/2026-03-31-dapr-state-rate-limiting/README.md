@@ -1,6 +1,6 @@
 # How to Use Dapr State Management for Rate Limiting
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Rate Limiting, API, Microservice
 

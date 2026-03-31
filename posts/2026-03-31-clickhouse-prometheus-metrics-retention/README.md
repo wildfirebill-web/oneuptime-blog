@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Prometheus, Metrics, Retention, Long-Term Storage
+Tags: ClickHouse, Prometheus, Metric, Retention, Long-Term Storage
 
 Description: Learn strategies for storing Prometheus metrics in ClickHouse for multi-year retention using remote write adapters, schema design, and TTL management.
 

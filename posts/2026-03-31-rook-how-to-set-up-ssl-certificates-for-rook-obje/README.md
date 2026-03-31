@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Object Storage, Ssl, Tls, Security, Kubernetes
+Tags: Rook, Ceph, Object Storage, SSL, TLS, Security, Kubernetes
 
 Description: Learn how to configure SSL/TLS certificates for the Rook Ceph Object Store to secure S3-compatible API traffic with HTTPS.
 

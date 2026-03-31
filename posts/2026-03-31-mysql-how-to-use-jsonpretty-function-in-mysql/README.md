@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Pretty, Json, Json Functions, Sql
+Tags: MySQL, Json Pretty, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_PRETTY() function to format JSON documents with human-readable indentation for debugging and display purposes.
 

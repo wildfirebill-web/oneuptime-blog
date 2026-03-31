@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Vault, Security, Variables, Encryption
+Tags: Ansible, Vault, Security, Variable, Encryption
 
 Description: Learn how to encrypt individual variables in Ansible using encrypt_string for granular secrets management in your playbooks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Rootless, Loopback, Development
+Tags: Podman, Container, DevOps, Networking, Rootless, Loopback, Development
 
 Description: Learn how to access host localhost services from rootless Podman containers using different networking backends.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Alerts, Regex, Event Filtering
+Tags: Flux, Kubernetes, GitOps, Alert, Regex, Event Filtering
 
 Description: Learn how to use inclusion regex patterns in Flux alerts to selectively forward only the events that match specific criteria.
 

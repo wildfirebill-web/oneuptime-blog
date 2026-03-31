@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Cluster, High Availability, Operations, Database
+Tags: ClickHouse, Cluster, High Availability, Operation, Database
 
 Description: Learn how ClickHouse behaves when a cluster node fails, how to keep queries running, and how to safely bring failed nodes back into the cluster.
 

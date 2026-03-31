@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, mysqlcheck, Table Maintenance, Administration, Repair
+Tags: MySQL, Mysqlcheck, Table Maintenance, Administration, Repair
 
 Description: Learn how to use the mysqlcheck command-line tool to check, analyze, optimize, and repair MySQL tables from the command line.
 

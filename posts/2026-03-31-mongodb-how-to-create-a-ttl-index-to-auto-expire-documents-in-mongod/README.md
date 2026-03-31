@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, TTL Index, Auto-Expire, Data Lifecycle
+Tags: MongoDB, Index, TTL Index, Auto-Expire, Data Lifecycle
 
 Description: Learn how to create TTL indexes in MongoDB to automatically delete documents after a specified time period without application-level cleanup logic.
 

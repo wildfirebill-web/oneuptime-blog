@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Service Mesh, Istio, AWS App Mesh, Kubernetes, Microservices
+Tags: Terraform, Service Mesh, Istio, AWS App Mesh, Kubernetes, Microservice
 
 Description: Learn how to build a service mesh architecture using Terraform with AWS App Mesh and Istio for traffic management, observability, and security between microservices.
 

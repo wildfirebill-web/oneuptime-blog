@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Health Check, Operations, Monitoring
+Tags: Ceph, Rook, Health Check, Operation, Monitoring
 
 Description: Perform a complete Ceph cluster health check in 5 minutes using a focused set of commands that cover cluster state, OSD status, PG health, and disk usage.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Histogram, View
+Tags: OpenTelemetry, Metric, Histogram, View
 
 Description: Configure OpenTelemetry SDK metric views to override default histogram bucket boundaries for better resolution in your latency distributions.
 

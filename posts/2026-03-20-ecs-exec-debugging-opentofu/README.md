@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, ECS, ECS Exec, Debugging, Fargate, Terraform, Containers
+Tags: OpenTofu, AWS, ECS, ECS Exec, Debugging, Fargate, Terraform, Container
 
 Description: Learn how to enable and use ECS Exec with OpenTofu to run interactive commands in running ECS Fargate containers for debugging without exposing SSH ports.
 

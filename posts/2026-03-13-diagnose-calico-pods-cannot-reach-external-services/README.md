@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Troubleshooting, External Services
+Tags: Calico, Kubernetes, Networking, Troubleshooting, External Service
 
 Description: Diagnose why pods in a Calico cluster cannot reach external services by checking NAT configuration, network policies, and routing tables.
 

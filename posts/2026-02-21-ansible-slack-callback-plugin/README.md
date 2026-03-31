@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Callback Plugins, Slack, Notifications
+Tags: Ansible, Callback Plugins, Slack, Notification
 
 Description: Configure the Ansible slack callback plugin to send real-time playbook notifications and results to Slack channels for team visibility.
 

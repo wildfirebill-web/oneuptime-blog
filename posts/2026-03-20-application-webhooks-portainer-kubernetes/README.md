@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Webhooks, CI/CD, Automation
+Tags: Portainer, Kubernetes, Webhook, CI/CD, Automation
 
 Description: Learn how to configure application webhooks in Portainer to trigger automated redeployments when a new container image is pushed.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitHub Actions, CI/CD, GitOps, Kubernetes, DevOps
+Tags: Flux CD, GitHub Action, CI/CD, GitOps, Kubernetes, DevOps
 
 Description: Learn how to build a complete CI/CD pipeline using GitHub Actions for continuous integration and Flux CD for GitOps-based continuous deployment to Kubernetes.
 

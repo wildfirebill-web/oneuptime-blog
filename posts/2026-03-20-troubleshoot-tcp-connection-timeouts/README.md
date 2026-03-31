@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Networking, Troubleshooting, Timeout, Linux, Microservices
+Tags: TCP, Networking, Troubleshooting, Timeout, Linux, Microservice
 
 Description: Systematically diagnose TCP connection timeouts between services by checking routing, firewall rules, socket backlogs, and application-level configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, Community, DevOps
+Tags: Portainer, Docker, Template, Community, DevOps
 
 Description: Learn how to use the popular Lissy93 community template collection to expand your Portainer application catalog with hundreds of self-hosted apps.
 

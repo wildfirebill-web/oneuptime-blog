@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Serverless, Monitoring, Observability, Prometheus, Metrics
+Tags: Dapr, Serverless, Monitoring, Observability, Prometheus, Metric
 
 Description: A practical guide to monitoring Dapr serverless application performance using built-in metrics, Prometheus scraping, and distributed tracing integration.
 

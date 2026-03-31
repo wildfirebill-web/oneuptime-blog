@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Severity Routing
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Severity Routing
 
 Description: Learn how to route Flux alerts to different notification channels based on event severity, sending errors to critical channels and info events to general channels.
 

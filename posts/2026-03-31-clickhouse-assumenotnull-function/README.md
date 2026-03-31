@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, Performance, Type Conversion, Optimization
+Tags: ClickHouse, NULL Handling, Performance, Type Conversion, Optimization
 
 Description: Learn how to use assumeNotNull() in ClickHouse to strip the Nullable wrapper and improve query performance when you know a column has no NULLs.
 

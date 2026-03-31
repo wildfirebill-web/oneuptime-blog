@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Testing, Contract Tests, Modules, Infrastructure as Code
+Tags: Terraform, Testing, Contract Tests, Module, Infrastructure as Code
 
 Description: Learn how to write contract tests for Terraform modules to verify that inputs and outputs meet expected interfaces, preventing breaking changes across teams.
 

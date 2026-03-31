@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Configuration, Environment Variables, Best Practice
+Tags: OpenTelemetry, Configuration, Environment Variable, Best Practice
 
 Description: Stop hardcoding exporter endpoints in your application code and start using the standard OTEL environment variables for configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Storage, Performance, DevOps, Overlay, Filesystem, Linux, Containers
+Tags: Podman, Storage, Performance, DevOps, Overlay, Filesystem, Linux, Container
 
 Description: A complete guide to configuring Podman storage for optimal performance, covering storage drivers, filesystem choices, graph root configuration, and I/O tuning techniques.
 

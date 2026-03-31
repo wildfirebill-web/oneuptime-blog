@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Check, Troubleshooting, Debugging
+Tags: Podman, Container, DevOps, Health Check, Troubleshooting, Debugging
 
 Description: Learn how to diagnose and fix health check failures in Podman containers with systematic debugging techniques.
 

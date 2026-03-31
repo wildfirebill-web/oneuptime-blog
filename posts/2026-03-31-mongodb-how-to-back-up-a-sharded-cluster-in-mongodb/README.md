@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Sharding, Backup, Database Administration
+Tags: MongoDB, Sharding, Backup, Database Administration
 
 Description: Learn how to back up a MongoDB sharded cluster by stopping the balancer, snapshotting each shard and config server, ensuring data consistency across shards.
 

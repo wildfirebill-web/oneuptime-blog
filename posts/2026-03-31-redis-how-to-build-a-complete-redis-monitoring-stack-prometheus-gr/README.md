@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Prometheus, Grafana, AlertManager, Monitoring, Observability
+Tags: Redis, Prometheus, Grafana, Alertmanager, Monitoring, Observability
 
 Description: Build a complete Redis monitoring stack with Prometheus, Grafana, and AlertManager to collect metrics, visualize dashboards, and send alerts.
 

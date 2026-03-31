@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Consul, Service Discovery, Configuration Management, Microservices, Distributed Systems
+Tags: Python, Consul, Service Discovery, Configuration Management, Microservice, Distributed System
 
 Description: Learn how to build a Consul client in Python for service discovery, configuration management, and health checks. This guide covers practical implementations with async support and production patterns.
 

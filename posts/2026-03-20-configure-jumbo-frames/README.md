@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MTU, Jumbo Frames, Networking, Linux, Performance, Ethernet
+Tags: MTU, Jumbo Frame, Networking, Linux, Performance, Ethernet
 
 Description: Enable and verify jumbo frame support (9000 MTU) on Linux servers and network interfaces for improved throughput in high-performance LAN environments.
 

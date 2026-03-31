@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Index, FullText, Search, Database, Performance
+Tags: ClickHouse, Index, FULLTEXT, Search, Database, Performance
 
 Description: Learn how to use ClickHouse full-text search indexes including tokenbf_v1 and ngrambf_v1 to accelerate LIKE and hasToken queries on string columns.
 

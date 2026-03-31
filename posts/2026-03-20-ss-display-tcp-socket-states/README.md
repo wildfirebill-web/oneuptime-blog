@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ss, TCP, Linux, Socket States, Networking, Diagnostics
+Tags: ss, TCP, Linux, Socket States, Networking, Diagnostic
 
 Description: Use ss to filter and display TCP socket states including ESTABLISHED, TIME_WAIT, CLOSE_WAIT, and LISTEN to diagnose connection problems and resource leaks.
 

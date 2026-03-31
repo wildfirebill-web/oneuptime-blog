@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Airport FIDS, Data Pipelines, Aviation
+Tags: OpenTelemetry, Airport FIDS, Data Pipeline, Aviation
 
 Description: Monitor airport flight information display system data pipelines using OpenTelemetry to ensure accurate real-time flight data.
 

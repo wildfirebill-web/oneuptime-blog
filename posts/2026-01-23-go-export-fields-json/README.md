@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, JSON, Export, Fields, Marshaling, Best Practice
+Tags: Go, Golang, JSON, Export, Field, Marshaling, Best Practice
 
 Description: Learn the rules for exporting Go struct fields for JSON serialization, including naming conventions, tag usage, and patterns for controlling JSON output.
 

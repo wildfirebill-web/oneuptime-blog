@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, GitLab CI, CI/CD, Webhooks, Automation
+Tags: Portainer, GitLab CI, CI/CD, Webhook, Automation
 
 Description: Configure GitLab CI/CD pipelines to automatically redeploy containers in Portainer after successful image builds.
 

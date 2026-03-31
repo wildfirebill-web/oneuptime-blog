@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, NVIDIA, Jetson, GPU, Edge AI, ARM64
+Tags: k3s, Kubernetes, NVIDIA, Jetson, GPU, Edge AI, ARM64
 
 Description: Learn how to install K3s on NVIDIA Jetson devices and configure GPU access for AI/ML workloads at the edge.
 

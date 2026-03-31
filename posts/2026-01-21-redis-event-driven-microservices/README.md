@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Event-Driven Architecture, Microservices, Event Bus, Message Routing, Pub/Sub, Streams
+Tags: Redis, Event-Driven Architecture, Microservice, Event Bus, Message Routing, Pub/Sub, Stream
 
 Description: A comprehensive guide to building event-driven microservices with Redis as the event bus, including event routing, message patterns, and reliable delivery.
 

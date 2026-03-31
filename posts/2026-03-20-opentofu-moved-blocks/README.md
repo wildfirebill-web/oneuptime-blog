@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Refactoring, Moved
+Tags: OpenTofu, Terraform, IaC, Module, Refactoring, Moved
 
 Description: Learn how to use moved blocks in OpenTofu to safely rename and reorganize resources without destroying and recreating them.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sharding, Scalability, Database, Distributed Systems
+Tags: MongoDB, Sharding, Scalability, Database, Distributed System
 
 Description: Learn how to horizontally scale MongoDB using sharding, including when to use hash versus range sharding, shard key selection, and cluster setup.
 

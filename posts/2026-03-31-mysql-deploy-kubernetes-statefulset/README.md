@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Kubernetes, StatefulSet, Database, DevOps, Persistent Volume
+Tags: MySQL, Kubernetes, StatefulSet, Database, DevOps
 
 Description: Deploy MySQL on Kubernetes using a StatefulSet with persistent storage, a headless Service, ConfigMap, and Secret for production-ready configuration.
 

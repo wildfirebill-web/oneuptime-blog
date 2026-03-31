@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Multus, Validation, Networking
 
-Description: Learn how to use Rook's built-in Multus validation tool to verify that Multus networking is correctly configured before deploying or troubleshooting a Rook-Ceph cluster.
+Description: Learn how to use Rook's built-in Multus validation tool to verify Multus networking is correctly configured before deploying or troubleshooting a Rook-Ceph cluster.
 
 ---
 

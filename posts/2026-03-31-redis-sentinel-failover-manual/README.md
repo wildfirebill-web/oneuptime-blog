@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sentinel, Failover, High Availability, Operations
+Tags: Redis, Sentinel, Failover, High Availability, Operation
 
 Description: Learn how to use SENTINEL FAILOVER to trigger a manual failover in Redis Sentinel, promoting a replica to primary for planned maintenance, upgrades, or testing failover procedures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Fivetran, dbt, ELT, Data Warehouse
+Tags: ClickHouse, Fivetran, Dbt, ELT, Data Warehouse
 
 Description: Connect Fivetran for automated data ingestion and dbt for SQL transformations to build a production ELT pipeline on ClickHouse.
 

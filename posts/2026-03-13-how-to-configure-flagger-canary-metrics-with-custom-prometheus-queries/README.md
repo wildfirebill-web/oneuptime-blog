@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Canary, Prometheus, Metrics, Custom Queries, Kubernetes
+Tags: Flagger, Canary, Prometheus, Metric, Custom Queries, Kubernetes
 
 Description: Learn how to define custom Prometheus queries as Flagger MetricTemplates to evaluate canary health with application-specific metrics.
 

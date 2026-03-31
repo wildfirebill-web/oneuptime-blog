@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Dependencies, Stacks, DevOps
+Tags: Portainer, Docker Compose, Dependencies, Stack, DevOps
 
 Description: Configure proper service dependencies and health check conditions in Portainer stacks to ensure reliable startup ordering.
 

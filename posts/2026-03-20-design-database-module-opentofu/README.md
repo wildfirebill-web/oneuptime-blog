@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, RDS, AWS, Modules, Database, PostgreSQL
+Tags: OpenTofu, Terraform, RDS, AWS, Module, Database, PostgreSQL
 
 Description: Learn how to design a reusable RDS database module for OpenTofu that supports multiple engines, multi-AZ configurations, read replicas, and automated backups.
 

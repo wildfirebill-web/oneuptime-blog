@@ -1,6 +1,6 @@
 # How to Use talosctl health for Cluster Health Checks
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Talos Linux, Kubernetes, Health Check, Talosctl, Cluster Validation
 

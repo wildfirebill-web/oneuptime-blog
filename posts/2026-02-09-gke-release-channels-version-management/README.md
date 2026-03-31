@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Google Cloud, Kubernetes, GKE, Operations
+Tags: Google Cloud, Kubernetes, GKE, Operation
 
 Description: Use GKE release channels to automate cluster version upgrades with Rapid, Regular, or Stable channels for controlled Kubernetes version management.
 

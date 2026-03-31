@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Chaos Engineering, Resilience, SRE, Testing, Reliability, Fault Injection, Distributed Systems
+Tags: Chaos Engineering, Resilience, SRE, Testing, Reliability, Fault Injection, Distributed System
 
 Description: Learn how to design chaos engineering experiments to test system resilience, including hypothesis formation, blast radius control, and analysis.
 

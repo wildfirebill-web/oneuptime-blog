@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Hashes, Ttl, Redis 7.4, Expiration
+Tags: Redis, Hash, TTL, Redis 7.4, Expiration
 
 Description: Use Redis 7.4 per-field expiration commands to set individual TTLs on Hash fields, enabling fine-grained expiration without key-level workarounds.
 

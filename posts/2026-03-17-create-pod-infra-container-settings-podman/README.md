@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Infra Container, Configuration
+Tags: Podman, Container, DevOps, Pod, Infra Container, Configuration
 
 Description: Learn how to customize the infra container in a Podman pod for specific networking and namespace requirements.
 

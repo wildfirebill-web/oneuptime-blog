@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Best Practice, Sdk, Microservice, Architecture
+Tags: Dapr, DotNet, Best Practice, SDK, Microservice, Architecture
 
 Description: A collection of proven best practices for building production-grade Dapr .NET applications, covering client configuration, error handling, and observability.
 

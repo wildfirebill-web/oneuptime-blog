@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Profiler, Performance, Metrics
+Tags: MongoDB, Monitoring, Profiler, Performance, Metric
 
 Description: Learn how to use MongoDB's database profiler and metrics to identify slow queries, monitor performance, and troubleshoot database issues with practical examples.
 

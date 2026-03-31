@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Kubernetes, Modules
+Tags: Terraform, Kubernetes, Module
 
 Description: Create a private Terraform module registry to share reusable Kubernetes deployment patterns across your organization, improving consistency and reducing duplication.
 

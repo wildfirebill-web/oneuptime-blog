@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, for_each, Set, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, for_each, Set, Infrastructure as Code, DevOps
 
 Description: A guide to using for_each with set values in OpenTofu to create uniquely-keyed resources from a collection of unique values.
 

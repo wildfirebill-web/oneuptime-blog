@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Data Modeling, Sets, Relationships, NoSQL
+Tags: Redis, Data Modeling, Set, Relationship, NoSQL
 
 Description: Learn how to model many-to-many relationships in Redis using sets, with practical examples for users-roles, posts-tags, and follower graphs.
 

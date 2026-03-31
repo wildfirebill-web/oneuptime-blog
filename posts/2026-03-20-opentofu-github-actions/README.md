@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitHub Actions, CI/CD, Infrastructure as Code, IaC, DevOps
+Tags: OpenTofu, GitHub Action, CI/CD, Infrastructure as Code, IaC, DevOps
 
 Description: Learn how to create GitHub Actions workflows for OpenTofu plan, apply, and destroy with environment protection rules.
 

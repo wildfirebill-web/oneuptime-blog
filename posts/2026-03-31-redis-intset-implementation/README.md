@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Internals, Data Structure, Set, Memory
+Tags: Redis, Internal, Data Structure, Set, Memory
 
 Description: Discover how Redis uses the intset encoding to store sets of integers in a compact sorted array, saving memory compared to a full hash table.
 

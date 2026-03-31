@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Placement, Services, DevOps
+Tags: Portainer, Docker Swarm, Placement, Service, DevOps
 
 Description: Learn how to use placement constraints and preferences in Portainer to control where Swarm service replicas are scheduled.
 

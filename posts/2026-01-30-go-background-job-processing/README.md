@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Background Jobs, Worker Pool, Concurrency, Job Queue
+Tags: Go, Background Job, Worker Pool, Concurrency, Job Queue
 
 Description: Build background job processing systems in Go with worker pools, job queues, retry logic, and graceful shutdown handling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Expression, Computed Column
+Tags: ClickHouse, SQL, Data Type, Expression, Computed Column
 
 Description: Learn how to define computed columns in ClickHouse using MATERIALIZED and ALIAS expressions to automate derivations at insert or query time.
 

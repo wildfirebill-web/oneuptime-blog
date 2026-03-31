@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NATS, Object Store, Messaging, JetStream, Distributed Systems, Go, Node.js
+Tags: NATS, Object Store, Messaging, JetStream, Distributed System, Go, Node.js
 
 Description: Learn how to implement object storage using NATS JetStream Object Store for storing and retrieving large binary objects with versioning, compression, and chunking capabilities.
 

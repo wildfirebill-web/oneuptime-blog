@@ -1,6 +1,6 @@
 # How to Use Dapr State Management for Session Storage
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Session Storage, Microservice, Redis
 

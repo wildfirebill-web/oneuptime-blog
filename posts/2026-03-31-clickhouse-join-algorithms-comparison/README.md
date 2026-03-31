@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, JOIN, Hash Join, Merge Join, Performance, Query Optimization
+Tags: ClickHouse, Join, Hash Join, Merge Join, Performance, Query Optimization
 
 Description: A comparison of ClickHouse join algorithm options - hash, parallel_hash, partial_merge, grace_hash, and auto - with memory tradeoffs and usage guidance.
 

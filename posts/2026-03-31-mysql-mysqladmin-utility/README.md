@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, mysqladmin, Administration, Command Line, Utility
+Tags: MySQL, Mysqladmin, Administration, Command Line, Utility
 
 Description: Learn how to use the mysqladmin command-line utility to perform common MySQL administration tasks including status checks, password changes, and log flushing.
 

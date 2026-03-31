@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Education, Training, DevOps, Containers
+Tags: Portainer, Docker, Education, Training, DevOps, Container
 
 Description: Configure a Docker learning environment using Portainer to give students and developers a safe, browser-based interface for experimenting with containers, networks, and volumes.
 

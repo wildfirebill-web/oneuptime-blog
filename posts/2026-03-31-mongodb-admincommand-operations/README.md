@@ -1,8 +1,8 @@
 # How to Use db.adminCommand for Administrative Operations in MongoDB
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Administration, Command, Operations, Diagnostic
+Tags: MongoDB, Administration, Command, Operation, Diagnostic
 
 Description: Learn how to use db.adminCommand() to run administrative commands in MongoDB including server status, log rotation, parameter changes, and connection management.
 

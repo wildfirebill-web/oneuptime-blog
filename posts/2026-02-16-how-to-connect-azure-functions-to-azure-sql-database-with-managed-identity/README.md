@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Azure SQL, Managed Identity, Security, Passwordless, Azure, Authentication
+Tags: Azure Function, Azure SQL, Managed Identity, Security, Passwordless, Azure, Authentication
 
 Description: Eliminate connection string passwords by connecting Azure Functions to Azure SQL Database using managed identity for passwordless authentication.
 

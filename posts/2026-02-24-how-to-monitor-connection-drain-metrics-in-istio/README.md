@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Monitoring, Connection Drain, Prometheus, Metrics
+Tags: Istio, Monitoring, Connection Drain, Prometheus, Metric
 
 Description: Track and analyze connection drain metrics in Istio to verify graceful shutdown behavior and catch deployment-related connection issues early.
 

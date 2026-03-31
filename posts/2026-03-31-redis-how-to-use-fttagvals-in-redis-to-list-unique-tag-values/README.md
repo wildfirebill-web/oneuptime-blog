@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RediSearch, Tags, Full-Text Search, Faceted Search
+Tags: Redis, RediSearch, Tag, Full-Text Search, Faceted Search
 
 Description: Learn how to use FT.TAGVALS in Redis to retrieve all unique values indexed for a TAG field, enabling faceted navigation and filter dropdowns.
 

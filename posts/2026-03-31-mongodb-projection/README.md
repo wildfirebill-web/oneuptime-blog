@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Projection, Query, Performance, find
+Tags: MongoDB, Projection, Query, Performance, Find
 
 Description: Learn how to use MongoDB projections to include or exclude specific fields from query results, reducing data transfer and improving application performance.
 

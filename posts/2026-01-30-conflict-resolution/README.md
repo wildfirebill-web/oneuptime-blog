@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Distributed Systems, Conflict Resolution, Database, Backend
+Tags: Distributed System, Conflict Resolution, Database, Backend
 
 Description: Learn how to implement conflict resolution strategies for distributed data systems.
 

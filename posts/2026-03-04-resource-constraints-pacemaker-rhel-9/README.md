@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Pacemaker, Constraints, High Availability, Cluster, Linux
+Tags: RHEL, Pacemaker, Constraint, High Availability, Cluster, Linux
 
 Description: Learn how to configure location, order, and colocation constraints in Pacemaker on RHEL to control resource placement and startup behavior.
 

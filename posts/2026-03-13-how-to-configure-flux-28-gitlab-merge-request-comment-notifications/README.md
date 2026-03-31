@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Notifications, GitLab, Merge-Requests
+Tags: Flux, Kubernetes, GitOps, Notification, GitLab, Merge-Requests
 
 Description: Learn how to configure Flux 2.8 to post reconciliation status comments on GitLab merge requests for deployment visibility.
 

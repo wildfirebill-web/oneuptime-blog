@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Testing, Mocking, External Services, Isolation
+Tags: Ansible, Testing, Mocking, External Service, Isolation
 
 Description: Mock APIs, databases, and external services during Ansible testing to create reliable, repeatable test environments.
 

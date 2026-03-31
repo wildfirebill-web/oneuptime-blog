@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Service Accounts, Migration
+Tags: Calico, Kubernetes, Network Policy, Service Account, Migration
 
 Description: Migrate from label-based or namespace-scoped Calico policies to service account-based policies for stronger workload identity controls.
 

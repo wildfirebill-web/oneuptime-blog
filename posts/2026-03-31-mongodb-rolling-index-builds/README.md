@@ -1,8 +1,8 @@
 # How to Perform Rolling Index Builds in MongoDB Replica Set
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Index, Replica Set, Performance, Operations
+Tags: MongoDB, Index, Replica Set, Performance, Operation
 
 Description: Learn how to build indexes one replica set member at a time to avoid write performance degradation on your MongoDB primary during large index creation.
 

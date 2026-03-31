@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, RDS, Security Groups, Networking, Security
+Tags: AWS, RDS, Security Group, Networking, Security
 
 Description: Learn how to properly configure AWS security groups for RDS database access with least-privilege rules for different access patterns.
 

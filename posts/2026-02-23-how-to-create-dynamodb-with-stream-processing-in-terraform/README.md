@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, DynamoDB, Streams, Lambda, Event-Driven, Infrastructure as Code
+Tags: Terraform, AWS, DynamoDB, Stream, Lambda, Event-Driven, Infrastructure as Code
 
 Description: Learn how to enable and configure DynamoDB Streams with Terraform to build event-driven architectures that react to data changes in real time.
 

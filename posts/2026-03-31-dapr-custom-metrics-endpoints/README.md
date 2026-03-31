@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Metrics, Prometheus, Configuration, Custom
+Tags: Dapr, Metric, Prometheus, Configuration, Custom
 
 Description: Learn how to configure and customize Dapr metrics endpoints including port selection, metric filtering, and exposing custom application metrics alongside Dapr sidecar metrics.
 

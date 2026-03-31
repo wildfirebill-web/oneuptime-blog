@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, INSERT, Performance, Async Insert, Batch Insert
+Tags: ClickHouse, Insert, Performance, Async Insert, Batch Insert
 
 Description: Avoid the most common ClickHouse INSERT mistakes that cause too many parts, slow ingestion, and data loss in production pipelines.
 

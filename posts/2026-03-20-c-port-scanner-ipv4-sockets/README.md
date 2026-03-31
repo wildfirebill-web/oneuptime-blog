@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, Sockets, IPv4, Port Scanner, Networking, Security
+Tags: C, Socket, IPv4, Port Scanner, Networking, Security
 
 Description: Build a concurrent TCP port scanner in C using POSIX sockets and threads to probe open ports on an IPv4 target within a specified range.
 

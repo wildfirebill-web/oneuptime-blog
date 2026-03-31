@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Troubleshooting, Disk Space, Cluster Management, Error Resolution, Operations
+Tags: Elasticsearch, Troubleshooting, Disk Space, Cluster Management, Error Resolution, Operation
 
 Description: Learn how to diagnose and fix the dreaded cluster_block_exception FORBIDDEN/12 error in Elasticsearch, which occurs when disk space runs low and the cluster enters read-only mode.
 

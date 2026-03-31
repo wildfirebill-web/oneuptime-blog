@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, VictoriaMetrics, Cluster, High Availability, Metrics, HelmRelease
+Tags: Flux CD, Kubernetes, GitOps, VictoriaMetrics, Cluster, High Availability, Metric, HelmRelease
 
 Description: Deploy VictoriaMetrics cluster setup using Flux CD HelmRelease for horizontally scalable, highly available metrics storage with separate write, storage, and query components.
 

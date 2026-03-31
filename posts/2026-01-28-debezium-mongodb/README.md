@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Debezium, MongoDB, Change Data Capture, Kafka, Change Streams, NoSQL, Event-Driven
+Tags: Debezium, MongoDB, Change Data Capture, Kafka, Change Stream, NoSQL, Event-Driven
 
 Description: Learn how to set up Debezium for MongoDB change data capture using change streams, including configuration, deployment, and handling document changes.
 

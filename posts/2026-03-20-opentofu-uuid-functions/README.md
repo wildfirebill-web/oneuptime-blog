@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions
+Tags: OpenTofu, Terraform, IaC, Function
 
 Description: Learn how to use the uuid() and uuidv5() functions in OpenTofu to generate unique identifiers for your resources.
 

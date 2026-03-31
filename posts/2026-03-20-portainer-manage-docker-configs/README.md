@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Configs, Configuration Management, DevOps
+Tags: Portainer, Docker Swarm, CONFIG, Configuration Management, DevOps
 
 Description: Learn how to create, manage, and attach Docker Swarm configs to services using Portainer for centralized configuration management.
 

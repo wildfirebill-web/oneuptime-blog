@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Modules, Custom Commands, Redis API, Extensions, C
+Tags: Redis, Module, Custom Commands, Redis API, Extension, C
 
 Description: Learn how to add custom Redis commands through the module system, covering command registration, argument handling, and reply types.
 

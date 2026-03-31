@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Multi-Stage, Target
+Tags: Podman, Container, DevOps, Container Image, Build, Multi-Stage, Target
 
 Description: Learn how to target specific build stages in Podman multi-stage builds using the --target flag for development, testing, and production workflows.
 

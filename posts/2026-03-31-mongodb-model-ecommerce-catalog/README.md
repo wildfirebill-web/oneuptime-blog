@@ -1,8 +1,8 @@
 # How to Model an E-Commerce Product Catalog in MongoDB
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data modeling, E-commerce, Schema design, Catalog
+Tags: MongoDB, Data Modeling, E-Commerce, Schema Design, Catalog
 
 Description: Learn how to design a MongoDB schema for an e-commerce product catalog supporting variants, categories, attributes, pricing, and inventory with practical examples.
 

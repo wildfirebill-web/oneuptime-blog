@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, GKE, Kubernetes, Service Discovery, Cloud DNS, Microservices, Networking
+Tags: GCP, GKE, Kubernetes, Service Discovery, Cloud DNS, Microservice, Networking
 
 Description: Learn how to implement service discovery for microservices on GKE using Kubernetes DNS, headless services, and Cloud DNS for external service resolution.
 

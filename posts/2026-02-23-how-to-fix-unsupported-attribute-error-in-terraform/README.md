@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, HCL, Attributes, DevOps
+Tags: Terraform, Troubleshooting, HCL, Attribute, DevOps
 
 Description: How to fix Unsupported Attribute errors in Terraform caused by referencing non-existent attributes, wrong resource types, or provider version issues.
 

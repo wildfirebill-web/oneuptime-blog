@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, Variables, Error, Backend Configuration, Infrastructure as Code
+Tags: OpenTofu, Troubleshooting, Variable, Error, Backend Configuration, Infrastructure as Code
 
 Description: Learn why OpenTofu prohibits input variables in certain contexts like backend blocks and provider meta-arguments, and how to work around these restrictions.
 

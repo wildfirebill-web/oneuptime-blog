@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Lets encrypt, SSL, Certificates, Docker
+Tags: Portainer, Lets encrypt, SSL, Certificate, Docker
 
 Description: Automate free SSL certificate provisioning with Let's Encrypt for services deployed via Portainer.
 

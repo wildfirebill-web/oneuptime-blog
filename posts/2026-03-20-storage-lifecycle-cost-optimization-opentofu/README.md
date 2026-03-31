@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, S3 Lifecycle, Cost Optimization, Storage Classes, Intelligent Tiering, Infrastructure as Code
+Tags: OpenTofu, AWS, S3 Lifecycle, Cost Optimization, Storage Class, Intelligent Tiering, Infrastructure as Code
 
 Description: Learn how to configure S3 lifecycle policies, Intelligent Tiering, and EBS snapshot lifecycle rules using OpenTofu to automatically reduce storage costs as data ages.
 

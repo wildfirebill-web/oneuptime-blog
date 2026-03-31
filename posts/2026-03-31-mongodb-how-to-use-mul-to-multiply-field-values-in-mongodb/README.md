@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Update Operators, $mul, Arithmetic Updates, NoSQL
+Tags: MongoDB, Update Operator, $mul, Arithmetic Updates, NoSQL
 
 Description: Learn how to use MongoDB's $mul operator to atomically multiply a numeric field by a given factor, useful for price adjustments and scaling calculations.
 

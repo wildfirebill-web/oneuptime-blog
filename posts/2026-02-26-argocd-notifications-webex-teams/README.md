@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Webex, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Webex, Notification
 
 Description: Learn how to configure ArgoCD to send deployment notifications to Cisco Webex Teams spaces using the Webex API with adaptive card formatting.
 

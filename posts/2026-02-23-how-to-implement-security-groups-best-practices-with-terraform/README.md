@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Security Groups, Networking, Security
+Tags: Terraform, AWS, Security Group, Networking, Security
 
 Description: Learn how to manage AWS security groups with Terraform following best practices for least privilege, rule organization, and avoiding common pitfalls.
 

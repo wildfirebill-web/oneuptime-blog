@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Cosmos DB, Change Feed, Event-Driven, Serverless, Azure, Real-Time
+Tags: Azure Function, Cosmos DB, Change Feed, Event-Driven, Serverless, Azure, Real-Time
 
 Description: Build real-time data processing pipelines using Azure Functions with the Cosmos DB change feed trigger to react to document changes as they happen.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Storage, VFS, Compatibility
+Tags: Podman, Container, DevOps, Storage, VFS, Compatibility
 
 Description: Learn how to configure and use the VFS storage driver with Podman for maximum compatibility on systems where overlay is not available.
 

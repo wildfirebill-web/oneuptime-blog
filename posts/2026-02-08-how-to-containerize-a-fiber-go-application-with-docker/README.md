@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Fiber, Go, Golang, Containerization, Backend, DevOps, Microservices
+Tags: Docker, Fiber, Go, Golang, Containerization, Backend, DevOps, Microservice
 
 Description: Learn how to containerize a Go Fiber web application with Docker using multi-stage builds and minimal scratch images
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Jobs, Quickstart, Scheduler, Cron
+Tags: Dapr, Job, Quickstart, Scheduler, Cron
 
 Description: Run the Dapr jobs quickstart to schedule one-time and recurring tasks using the Dapr Jobs API with durable persistence that survives service restarts.
 

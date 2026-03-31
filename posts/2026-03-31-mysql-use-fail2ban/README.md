@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Security, fail2ban, Firewall, Brute Force
+Tags: MySQL, Security, Fail2Ban, Firewall, Brute Force
 
 Description: Configure fail2ban to automatically block IP addresses that make repeated failed MySQL login attempts by parsing the MySQL error log.
 

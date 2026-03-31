@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, Manifest List
+Tags: Podman, Container, DevOps, Multi-Architecture, Manifest List
 
 Description: Learn how to use the podman manifest exists command to check whether a manifest list exists locally before performing operations on it, with practical scripting examples.
 

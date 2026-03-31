@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Keys, Json, Json Functions, Sql
+Tags: MySQL, Json Keys, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_KEYS() function to retrieve the keys of a JSON object as a JSON array, including accessing nested object keys.
 

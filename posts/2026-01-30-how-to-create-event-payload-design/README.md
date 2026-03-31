@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Event-Driven Architecture, Software Design, API Design, TypeScript, System Design, Microservices
+Tags: Event-Driven Architecture, Software Design, API Design, TypeScript, System Design, Microservice
 
 Description: Learn how to design robust event payloads for distributed systems.
 

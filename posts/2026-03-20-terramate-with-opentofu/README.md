@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terramate, Infrastructure as Code, IaC, Stacks, GitOps
+Tags: OpenTofu, Terramate, Infrastructure as Code, IaC, Stack, GitOps
 
 Description: Learn how to use Terramate to orchestrate OpenTofu stacks with change detection and dependency management.
 

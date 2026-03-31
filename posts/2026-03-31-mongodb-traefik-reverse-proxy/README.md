@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Traefik, Reverse Proxy, Docker, Tls
+Tags: MongoDB, Traefik, Reverse Proxy, Docker, TLS
 
 Description: Use Traefik as a reverse proxy in front of MongoDB-backed services with automatic TLS, label-based routing, and middleware configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Mongoimport, Json, Data Import
+Tags: MongoDB, Mongoimport, JSON, Data Import
 
 Description: Learn how to use mongoimport to load JSON data into MongoDB collections, including different import modes, error handling, and batch processing large files.
 

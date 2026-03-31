@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Networking, Operations
+Tags: ArgoCD, GitOps, Kubernetes, Networking, Operation
 
 Description: Learn how to manage ArgoCD during Kubernetes network changes including CNI migrations, DNS updates, service mesh rollouts, and network policy changes.
 

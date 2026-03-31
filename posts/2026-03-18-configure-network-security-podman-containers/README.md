@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Networking, Firewall
+Tags: Podman, Container, DevOps, Security, Networking, Firewall
 
 Description: Learn how to configure network security for Podman containers including network isolation, firewall rules, and traffic control.
 

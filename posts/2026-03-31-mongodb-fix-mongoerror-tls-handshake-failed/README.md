@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Tls, Ssl, Certificate, Security
+Tags: MongoDB, TLS, SSL, Certificate, Security
 
 Description: Learn why MongoDB TLS handshake failures occur and how to fix them by configuring certificates, CA bundles, hostname verification, and TLS version settings.
 

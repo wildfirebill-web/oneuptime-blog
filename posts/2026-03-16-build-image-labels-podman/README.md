@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Labels, Metadata
+Tags: Podman, Container, DevOps, Container Image, Build, Labels, Metadata
 
 Description: Learn how to add metadata labels to container images during Podman builds using LABEL instructions and the --label flag for image organization and tracking.
 

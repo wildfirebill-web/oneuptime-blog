@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Prometheus, Grafana, Monitoring, Observability, Metrics, Alerting
+Tags: Redis, Prometheus, Grafana, Monitoring, Observability, Metric, Alerting
 
 Description: A comprehensive guide to monitoring Redis with Prometheus and Grafana, covering redis_exporter setup, key metrics to track, dashboard creation, and alerting configuration for production environments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Webhooks, Docker, CI/CD, Automation
+Tags: Portainer, Webhook, Docker, CI/CD, Automation
 
 Description: Learn how to use Portainer container and service webhooks to trigger automated redeployments from any system that can make an HTTP POST request, including registry push events and custom scripts.
 

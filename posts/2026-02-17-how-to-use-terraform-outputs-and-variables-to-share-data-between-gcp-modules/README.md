@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Terraform, Modules, Infrastructure as Code, Google Cloud
+Tags: GCP, Terraform, Module, Infrastructure as Code, Google Cloud
 
 Description: A practical guide to using Terraform outputs and variables to pass data between modules when building GCP infrastructure.
 

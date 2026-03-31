@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Distributed Tracing, Microservices, Java, Python, Go, Node.js, Polyglot
+Tags: OpenTelemetry, Distributed Tracing, Microservice, Java, Python, Go, Node.js, Polyglot
 
 Description: Learn how to implement end-to-end distributed tracing across a polyglot microservices architecture using OpenTelemetry with Java, Python, Go, and Node.js services.
 

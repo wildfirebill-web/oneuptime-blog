@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images
+Tags: Podman, Container, DevOps, Container Image
 
 Description: Learn how to inspect container images with Podman to view detailed metadata, configuration, layers, environment variables, and more.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Kustomize, Components, Repository Structure, DRY Patterns
+Tags: Flux, Kubernetes, GitOps, Kustomize, Component, Repository Structure, DRY Patterns
 
 Description: Learn how to use Kustomize components in your Flux repository to create reusable, composable configuration fragments that can be selectively applied across environments.
 

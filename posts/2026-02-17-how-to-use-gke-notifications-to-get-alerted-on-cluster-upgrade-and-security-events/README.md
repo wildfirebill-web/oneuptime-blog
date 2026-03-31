@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, GKE, Notifications, Alerting, Cluster Management, Security, Pub/Sub
+Tags: GCP, GKE, Notification, Alerting, Cluster Management, Security, Pub/Sub
 
 Description: Learn how to configure GKE cluster notifications to receive alerts on upgrades, security bulletins, and other important cluster events via Pub/Sub.
 

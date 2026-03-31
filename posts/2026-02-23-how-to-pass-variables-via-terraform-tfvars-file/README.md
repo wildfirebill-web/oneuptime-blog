@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Configuration, Infrastructure as Code, DevOps
+Tags: Terraform, Variable, Configuration, Infrastructure as Code, DevOps
 
 Description: Learn how to use terraform.tfvars files to set variable values in Terraform, including file format, auto-loading behavior, and best practices for managing configurations.
 

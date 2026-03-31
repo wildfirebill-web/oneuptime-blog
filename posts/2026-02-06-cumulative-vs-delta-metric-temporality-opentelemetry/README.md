@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Temporality, Cumulative, Delta, Prometheus, OTLP, Observability
+Tags: OpenTelemetry, Metric, Temporality, Cumulative, Delta, Prometheus, OTLP, Observability
 
 Description: Learn the difference between cumulative and delta metric temporality in OpenTelemetry, when to use each, and how to configure exporters for your backend.
 

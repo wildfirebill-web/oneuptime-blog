@@ -1,8 +1,8 @@
 # How to Configure Kustomization Wait for Ready in Flux
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Kustomize, Health Check, Wait, Readiness
+Tags: Flux CD, GitOps, Kubernetes, Kustomize, Health Check, WAIT, Readiness
 
 Description: Learn how to configure Flux CD Kustomizations to wait for deployed resources to become ready before marking reconciliation as successful.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud, IAM, Policy Analyzer, Security Audit, Permissions, Stale Access
+Tags: GCP, Google Cloud, IAM, Policy Analyzer, Security Audit, Permission, Stale Access
 
 Description: Learn how to use Google Cloud Policy Analyzer to audit and remediate stale IAM permissions that create unnecessary security risks in your environment.
 

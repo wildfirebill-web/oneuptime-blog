@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Notifications, Linux
+Tags: RHEL, Notification, Linux
 
 Description: Step-by-step guide on send RHEL system alerts to slack using incoming webhooks using Red Hat Enterprise Linux 9.
 

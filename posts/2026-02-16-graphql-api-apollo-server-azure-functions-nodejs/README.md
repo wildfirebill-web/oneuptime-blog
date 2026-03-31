@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, Apollo Server, Azure Functions, Node.js, Serverless, API, TypeScript
+Tags: GraphQL, Apollo Server, Azure Function, Node.js, Serverless, API, TypeScript
 
 Description: Build and deploy a GraphQL API using Apollo Server running on Azure Functions for a scalable serverless backend.
 

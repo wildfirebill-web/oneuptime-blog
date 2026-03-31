@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Prometheus, Troubleshooting
+Tags: Calico, Kubernetes, Networking, Metric, Prometheus, Troubleshooting
 
 Description: Diagnose and resolve common issues with Calico Prometheus metrics collection, including missing targets, authentication failures, and metric gaps.
 

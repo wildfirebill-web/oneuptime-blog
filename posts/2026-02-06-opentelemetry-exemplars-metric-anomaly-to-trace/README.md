@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Exemplars, Metrics, Traces, Debugging
+Tags: OpenTelemetry, Exemplars, Metric, Trace, Debugging
 
 Description: Learn how to configure OpenTelemetry exemplars to link metric anomalies directly to the traces that caused them for faster debugging.
 

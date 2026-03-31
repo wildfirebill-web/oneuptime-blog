@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, OpenTelemetry, Observability, Tracing, Metrics
+Tags: Podman, OpenTelemetry, Observability, Tracing, Metric
 
 Description: Learn how to use Podman with OpenTelemetry to implement unified observability for containerized applications, collecting traces, metrics, and logs through a single framework.
 

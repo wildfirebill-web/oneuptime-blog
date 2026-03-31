@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Keeper, Snapshots, Logs, Replication, Configuration
+Tags: ClickHouse, Keeper, Snapshot, Log, Replication, Configuration
 
 Description: Learn how to configure ClickHouse Keeper snapshot intervals, log retention, and storage paths to ensure reliable metadata persistence and efficient recovery.
 

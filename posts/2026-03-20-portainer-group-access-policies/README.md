@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environment Groups, Access Control, RBAC, Teams, Business Edition
+Tags: Portainer, Environment Groups, Access Control, RBAC, Team, Business Edition
 
 Description: Assign team access policies to Portainer environment groups to efficiently manage permissions across multiple environments with a single configuration.
 

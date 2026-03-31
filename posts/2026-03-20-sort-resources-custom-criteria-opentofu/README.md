@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, Functions, Sorting, Data Transformation
+Tags: OpenTofu, Terraform, HCL, Function, Sorting, Data Transformation
 
 Description: Learn how to sort lists and maps of resources by custom criteria in OpenTofu using sort, reverse, and for expressions to control resource ordering.
 

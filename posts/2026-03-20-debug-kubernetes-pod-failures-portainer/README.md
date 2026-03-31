@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Debugging, Pods, Troubleshooting, DevOps
+Tags: Portainer, Kubernetes, Debugging, Pod, Troubleshooting, DevOps
 
 Description: Use Portainer's Kubernetes interface to diagnose and resolve pod failures - from Pending states and scheduling issues to container crashes and startup errors.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Filestore, Storage Tiers, NFS, Architecture
+Tags: GCP, Filestore, Storage Tier, NFS, Architecture
 
 Description: A practical comparison of Google Cloud Filestore tiers including Basic HDD, Basic SSD, Zonal, Regional, and Enterprise to help you pick the right one for your workload.
 

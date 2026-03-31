@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sentinel, Monitoring, High Availability, Operations
+Tags: Redis, Sentinel, Monitoring, High Availability, Operation
 
 Description: Learn how to use SENTINEL INFO and related Sentinel commands to monitor the health, status, and topology of a Redis Sentinel deployment in real time.
 

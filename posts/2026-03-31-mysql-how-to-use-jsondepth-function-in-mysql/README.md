@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Depth, Json, Json Functions, Sql
+Tags: MySQL, Json Depth, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_DEPTH() function to determine the maximum nesting depth of a JSON document for schema validation and complexity analysis.
 

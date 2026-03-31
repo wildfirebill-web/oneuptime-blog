@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Microservices, Idempotency, Distributed Systems, Backend
+Tags: Redis, Microservice, Idempotency, Distributed System, Backend
 
 Description: Learn how to use Redis to implement request idempotency across microservices, preventing duplicate operations and ensuring safe retries.
 

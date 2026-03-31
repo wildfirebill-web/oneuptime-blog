@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, IoT, Sensor Data, Docker, Data Pipelines
+Tags: Portainer, IoT, Sensor Data, Docker, Data Pipeline
 
 Description: Build and deploy end-to-end sensor data collection pipelines using Portainer, combining MQTT, Telegraf, InfluxDB, and Grafana.
 

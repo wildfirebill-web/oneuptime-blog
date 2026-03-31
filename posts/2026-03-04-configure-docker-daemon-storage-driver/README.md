@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Storage, Linux
+Tags: RHEL, Docker, Container, Storage, Linux
 
 Description: Learn how to configure Docker Daemon Storage Driver on RHEL with step-by-step instructions, configuration examples, and best practices.
 

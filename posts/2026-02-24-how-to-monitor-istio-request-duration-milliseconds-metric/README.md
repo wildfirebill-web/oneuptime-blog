@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Latency, Metrics, Prometheus, Performance
+Tags: Istio, Latency, Metric, Prometheus, Performance
 
 Description: Monitor request latency in Istio using the istio_request_duration_milliseconds histogram metric with percentile calculations and alerting strategies.
 

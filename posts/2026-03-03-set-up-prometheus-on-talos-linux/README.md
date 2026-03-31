@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Prometheus, Monitoring, Kubernetes, Metrics, Observability
+Tags: Talos Linux, Prometheus, Monitoring, Kubernetes, Metric, Observability
 
 Description: A complete guide to deploying and configuring Prometheus on Talos Linux for monitoring your Kubernetes cluster and applications.
 

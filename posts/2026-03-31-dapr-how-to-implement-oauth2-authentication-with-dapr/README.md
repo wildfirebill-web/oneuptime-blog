@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, OAuth2, Authentication, Security, Middleware, JWT, Microservices
+Tags: Dapr, OAuth2, Authentication, Security, Middleware, JWT, Microservice
 
 Description: Learn how to implement OAuth2 token validation in Dapr using middleware components to protect microservice endpoints without adding auth libraries to every service.
 

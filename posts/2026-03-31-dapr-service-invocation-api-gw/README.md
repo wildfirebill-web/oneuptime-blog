@@ -1,6 +1,6 @@
 # How to Use Dapr Service Invocation with API Gateways
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Service Invocation, API Gateway, Microservice, Kubernetes
 

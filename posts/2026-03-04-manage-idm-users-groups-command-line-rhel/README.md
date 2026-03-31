@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, IdM, FreeIPA, User Management, Groups, Linux
+Tags: RHEL, IdM, FreeIPA, User Management, Group, Linux
 
 Description: Learn how to create, modify, and manage users and groups in Red Hat Identity Management (IdM) using the ipa command-line tool on RHEL.
 

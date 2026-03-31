@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Pod Security, Security, Permissions, RBAC
+Tags: Rancher, Kubernetes, Pod Security, Security, Permission, RBAC
 
 Description: A practical guide to configuring Pod Security Admission (PSA) in Rancher to enforce security standards for pod workloads.
 

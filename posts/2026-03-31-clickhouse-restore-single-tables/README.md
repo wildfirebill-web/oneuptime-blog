@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Backup, RESTORE, Table Recovery, Disaster Recovery
+Tags: ClickHouse, Backup, Restore, Table Recovery, Disaster Recovery
 
 Description: Learn how to restore individual tables from ClickHouse backups without restoring the entire database, minimizing downtime and resource usage.
 

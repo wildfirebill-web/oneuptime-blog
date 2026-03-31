@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: TypeScript, NestJS, Testing, Jest, Unit Tests
+Tags: TypeScript, NestJS, Testing, Jest, Unit Test
 
 Description: A practical guide to testing NestJS applications with Jest, covering unit tests, integration tests, mocking, and e2e testing patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Shared Memory, Performance
+Tags: Podman, Container, DevOps, Shared Memory, Performance
 
 Description: Learn how to configure the shared memory size for Podman containers to support applications that rely on /dev/shm for inter-process communication.
 

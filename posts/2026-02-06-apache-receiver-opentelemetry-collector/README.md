@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Apache, Web Server, Observability, Metrics, HTTP Server
+Tags: OpenTelemetry, Collector, Apache, Web Server, Observability, Metric, HTTP Server
 
 Description: Learn how to configure the Apache HTTP Server receiver in OpenTelemetry Collector with practical YAML examples, mod_status setup, and production deployment patterns.
 

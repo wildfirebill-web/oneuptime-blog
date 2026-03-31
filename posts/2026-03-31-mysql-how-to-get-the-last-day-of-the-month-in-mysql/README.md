@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Last Day, Date Functions, Month End, Sql
+Tags: MySQL, Last Day, Date Function, Month End, SQL
 
 Description: Learn how to use MySQL's LAST_DAY() function to find the last day of a given month, handle month-end billing, and compute month boundaries.
 

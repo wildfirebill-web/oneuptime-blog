@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, TLS, Hubble, Troubleshooting, Certificates
+Tags: Cilium, TLS, Hubble, Troubleshooting, Certificate
 
 Description: Diagnose and resolve TLS certificate issues in Cilium Hubble, including certificate generation failures, mTLS handshake errors, certificate rotation problems, and relay connection issues.
 

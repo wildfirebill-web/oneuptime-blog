@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Aws Lambda, Serverless, Caching, Node.js
+Tags: Redis, AWS Lambda, Serverless, Caching, Node.js
 
 Description: Learn how to connect Redis to AWS Lambda functions for caching and session management while handling cold starts and connection reuse effectively.
 

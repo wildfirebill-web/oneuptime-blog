@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Azure Functions, Serverless, Configuration, DevOps, Cloud, FaaS
+Tags: Azure, Azure Function, Serverless, Configuration, DevOps, Cloud, FaaS
 
 Description: A comprehensive guide to configuring Azure Functions, covering host settings, bindings, scaling, security, and monitoring for production workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Benchmark, Performance, fio, Storage
+Tags: Rook, Ceph, Kubernetes, Benchmark, Performance, Fio, Storage
 
 Description: Benchmark Rook-Ceph storage performance using fio jobs on Kubernetes to measure IOPS, throughput, and latency for block and filesystem volumes.
 

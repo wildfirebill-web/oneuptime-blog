@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Event Sourcing, CQRS, Architecture, Microservices, Event Store
+Tags: Event Sourcing, CQRS, Architecture, Microservice, Event Store
 
 Description: Implement event sourcing from scratch with event stores, snapshots, projections, and replay capabilities for audit-ready systems.
 

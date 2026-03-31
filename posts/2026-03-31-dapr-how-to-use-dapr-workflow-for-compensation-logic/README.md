@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Saga Pattern, Compensation, Distributed Transactions
+Tags: Dapr, Workflow, Saga Pattern, Compensation, Distributed Transaction
 
 Description: Learn how to implement the Saga compensation pattern using Dapr Workflow to handle failures in distributed transactions by rolling back completed steps.
 

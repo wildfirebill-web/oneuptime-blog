@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, HTTP, Sockets, IPv4, Web Server, Networking
+Tags: Python, HTTP, Socket, IPv4, Web Server, Networking
 
 Description: Learn how to build a minimal HTTP/1.1 server from scratch using Python raw sockets to understand the HTTP protocol at the byte level.
 

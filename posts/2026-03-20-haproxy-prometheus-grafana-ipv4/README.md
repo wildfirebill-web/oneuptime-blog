@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, Prometheus, Grafana, IPv4, Monitoring, Metrics
+Tags: HAProxy, Prometheus, Grafana, IPv4, Monitoring, Metric
 
 Description: Export HAProxy statistics to Prometheus using the built-in Prometheus exporter endpoint, scrape metrics, and build Grafana dashboards for connection and traffic monitoring.
 

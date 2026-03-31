@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, RBAC, Security, Audit, Tools
+Tags: Kubernetes, RBAC, Security, Audit, Tool
 
 Description: Learn how to identify and remediate overly permissive RBAC bindings in Kubernetes using rbac-lookup and other auditing tools to strengthen cluster security.
 

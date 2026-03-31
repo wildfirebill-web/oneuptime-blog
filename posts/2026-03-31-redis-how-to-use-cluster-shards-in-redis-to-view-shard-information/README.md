@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Shards, Topology, Operations
+Tags: Redis, Cluster, Shard, Topology, Operation
 
 Description: Learn how to use CLUSTER SHARDS in Redis to retrieve structured shard information including slot ranges, primary nodes, and replica details.
 

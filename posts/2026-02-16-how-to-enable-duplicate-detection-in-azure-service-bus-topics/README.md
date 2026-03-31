@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Service Bus, Duplicate Detection, Idempotency, Topics, Azure, Messaging, Reliability
+Tags: Azure Service Bus, Duplicate Detection, Idempotency, Topic, Azure, Messaging, Reliability
 
 Description: Configure and use duplicate detection in Azure Service Bus topics to prevent processing the same message multiple times in distributed systems.
 

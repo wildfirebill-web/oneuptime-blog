@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Dockerfile, ADD Instruction, Remote URL, Images, DevOps
+Tags: Docker, Dockerfile, ADD Instruction, Remote URL, Image, DevOps
 
 Description: Learn how and when to use Docker's ADD instruction with remote URLs, including its limitations and better alternatives.
 

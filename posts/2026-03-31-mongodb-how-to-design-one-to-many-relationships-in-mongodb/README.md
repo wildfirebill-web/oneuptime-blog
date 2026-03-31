@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data Modeling, One-To-Many, Schema Design, Relationships
+Tags: MongoDB, Data Modeling, One-To-Many, Schema Design, Relationship
 
 Description: Learn how to model one-to-many relationships in MongoDB using embedding arrays, referencing, and hybrid approaches with practical guidance on choosing the right strategy.
 

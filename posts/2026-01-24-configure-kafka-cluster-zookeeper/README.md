@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, ZooKeeper, Cluster, Configuration, Distributed Systems, High Availability, DevOps, Backend
+Tags: Kafka, ZooKeeper, Cluster, Configuration, Distributed System, High Availability, DevOps, Backend
 
 Description: Learn how to configure a production-ready Apache Kafka cluster with ZooKeeper for coordination, including multi-broker setup, replication, and high availability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Testing, Coverage, Metrics, Infrastructure as Code, Quality
+Tags: Terraform, Testing, Coverage, Metric, Infrastructure as Code, Quality
 
 Description: Learn how to measure and improve test coverage for Terraform modules by tracking resource coverage, variable coverage, output coverage, and policy coverage.
 

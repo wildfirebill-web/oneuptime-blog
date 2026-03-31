@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Soft delete, Schema design, Data modeling, Query
+Tags: MongoDB, Soft Delete, Schema Design, Data Modeling, Query
 
 Description: Learn how to implement soft deletes in MongoDB using a deletedAt flag, keep queries clean with partial indexes, and safely purge old records.
 

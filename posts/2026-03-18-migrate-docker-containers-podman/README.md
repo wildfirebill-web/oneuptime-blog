@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Migration, Container Management
+Tags: Podman, Container, DevOps, Docker, Migration, Container Management
 
 Description: Learn how to migrate your running Docker containers, images, and configurations to Podman with minimal downtime and disruption.
 

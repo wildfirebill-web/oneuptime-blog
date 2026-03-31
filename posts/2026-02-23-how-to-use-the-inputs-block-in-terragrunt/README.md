@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Variables, Configuration
+Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Variable, Configuration
 
 Description: A complete guide to the inputs block in Terragrunt covering how to pass variables to Terraform modules, merge inputs from multiple sources, and use dynamic values.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Testing, Handlers, DevOps, Automation
+Tags: Ansible, Testing, Handler, DevOps, Automation
 
 Description: Learn how to properly test Ansible handlers to ensure they trigger correctly during playbook runs and respond to notification events as expected.
 

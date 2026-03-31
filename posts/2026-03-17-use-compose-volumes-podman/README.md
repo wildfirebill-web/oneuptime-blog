@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Volumes, Storage
+Tags: Podman, Container, DevOps, podman-compose, Volumes, Storage
 
 Description: Learn how to use named volumes, bind mounts, and tmpfs mounts in podman-compose for persistent and temporary storage.
 

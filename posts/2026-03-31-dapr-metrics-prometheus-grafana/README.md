@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Prometheus, Grafana, Metrics, Monitoring
+Tags: Dapr, Prometheus, Grafana, Metric, Monitoring
 
 Description: Learn how to configure Dapr metrics collection with Prometheus and visualize service health, latency, and resiliency data in Grafana dashboards.
 

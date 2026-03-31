@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Tuple
+Tags: ClickHouse, SQL, Data Type, Tuple
 
 Description: Learn how to define and query Tuple(T1, T2, ...) columns in ClickHouse, including named tuples and element access by index or name.
 

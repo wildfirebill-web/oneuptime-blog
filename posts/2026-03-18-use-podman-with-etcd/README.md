@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, etcd, Distributed Systems, Key-Value Store, Service Discovery
+Tags: Podman, etcd, Distributed System, Key-Value Store, Service Discovery
 
 Description: Learn how to deploy and manage etcd clusters using Podman containers for distributed configuration management, service discovery, and leader election.
 

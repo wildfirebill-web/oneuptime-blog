@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, AWS Marketplace, Subscriptions, Cloud
+Tags: RHEL, AWS Marketplace, Subscription, Cloud
 
 Description: Set up RHEL 9 pay-as-you-go subscriptions on AWS Marketplace.
 

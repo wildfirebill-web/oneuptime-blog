@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Analytics, LAG, Window Function, Year-over-Year
+Tags: MySQL, Analytics, Lag, Window Function, Year-over-Year
 
 Description: Learn how to calculate year-over-year comparisons in MySQL using LAG() window functions and self-joins to measure growth between the same periods across years.
 

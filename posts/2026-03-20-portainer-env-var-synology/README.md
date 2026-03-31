@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Synology, NAS, Troubleshooting, Environment Variables
+Tags: Portainer, Docker, Synology, NAS, Troubleshooting, Environment Variable
 
 Description: Resolve environment variable handling problems when running Portainer on Synology NAS, including DSM Docker differences, env file parsing issues, and variable escaping.
 

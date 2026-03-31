@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, OpenTelemetry, Tracing, Metrics, Observability
+Tags: Node.js, OpenTelemetry, Tracing, Metric, Observability
 
 Description: Step-by-step guide to setting up OpenTelemetry for Node.js applications with automatic instrumentation and custom spans.
 

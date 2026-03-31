@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, E-Commerce, Kubernetes, Service Mesh, Microservices
+Tags: Istio, E-Commerce, Kubernetes, Service Mesh, Microservice
 
 Description: A practical guide to deploying Istio for e-commerce platforms covering traffic management, security, resilience patterns, and observability for online stores.
 

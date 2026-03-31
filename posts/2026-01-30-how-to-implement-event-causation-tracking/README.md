@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Event-Driven, Distributed Systems, Observability, Debugging, OpenTelemetry
+Tags: Event-Driven, Distributed System, Observability, Debugging, OpenTelemetry
 
 Description: Learn how to implement event causation tracking to understand the causal relationships between events in distributed systems, enabling faster debugging and better system visibility.
 

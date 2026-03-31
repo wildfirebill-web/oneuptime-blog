@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Any Operator, Subquery, Sql, Database
+Tags: MySQL, Any Operator, Subquery, SQL, Database
 
 Description: Learn how to use the ANY operator with subqueries in MySQL to compare a value against at least one row returned by a subquery, with practical examples.
 

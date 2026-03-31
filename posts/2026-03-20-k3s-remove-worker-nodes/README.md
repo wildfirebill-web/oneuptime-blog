@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Cluster Management, DevOps, Linux
+Tags: k3s, Kubernetes, Cluster Management, DevOps, Linux
 
 Description: Learn how to safely remove worker nodes from a K3s cluster by draining workloads, deleting the node, and cleaning up the agent.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Port Mapping, Networking
+Tags: Podman, Container, DevOps, Port Mapping, Networking
 
 Description: Learn how to map multiple ports in a single Podman container for services that expose HTTP, HTTPS, admin interfaces, and other endpoints simultaneously.
 

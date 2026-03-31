@@ -1,6 +1,6 @@
 # How to Configure ClickHouse TCP Interface Settings
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, Networking, TCP, NativeProtocol
 

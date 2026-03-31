@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, Request-Reply, RPC, Node.js, TypeScript, Microservices, Distributed Systems
+Tags: RabbitMQ, Message Queue, Request-Reply, RPC, Node.js, TypeScript, Microservice, Distributed System
 
 Description: Learn how to implement the request-reply (RPC) pattern in RabbitMQ with correlation IDs, reply-to queues, and timeout handling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Message Queues, Scaling, RabbitMQ, Kafka
+Tags: Rancher, Kubernetes, Message Queue, Scaling, RabbitMQ, Kafka
 
 Description: Scale RabbitMQ, Kafka, and NATS message queue clusters in Rancher to handle increased throughput and storage demands without service interruption.
 

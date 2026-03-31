@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Django, WebSocket, Channels, Real-Time
+Tags: Redis, Django, WebSocket, Channel, Real-Time
 
 Description: Learn how to configure Django Channels with the Redis channel layer to enable WebSocket communication and real-time messaging across multiple server instances.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Prometheus, Grafana, Monitoring, Metrics, Service Mesh
+Tags: Istio, Prometheus, Grafana, Monitoring, Metric, Service Mesh
 
 Description: A complete guide to monitoring Istio service mesh metrics with Prometheus and Grafana dashboards.
 

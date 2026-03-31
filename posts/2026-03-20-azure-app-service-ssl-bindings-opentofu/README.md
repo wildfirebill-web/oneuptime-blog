@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, App Service, SSL, TLS, OpenTofu, HTTPS, Certificates
+Tags: Azure, App Service, SSL, TLS, OpenTofu, HTTPS, Certificate
 
 Description: Learn how to configure SSL/TLS certificates and HTTPS bindings for Azure App Service with OpenTofu, including managed certificates and Key Vault certificates.
 

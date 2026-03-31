@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Crypto
+Tags: OpenTofu, Terraform, IaC, Function, Crypto
 
 Description: Learn how to use the sha512() function in OpenTofu to compute SHA-512 hashes.
 

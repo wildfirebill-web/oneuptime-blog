@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorting, Lists, Sets, Commands
+Tags: Redis, Sorting, List, Set, Command
 
 Description: Learn how to use the SORT command in Redis to sort elements from lists, sets, and sorted sets with options for ordering, limiting, and fetching related data.
 

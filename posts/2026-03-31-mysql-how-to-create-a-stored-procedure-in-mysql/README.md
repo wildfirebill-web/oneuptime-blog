@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Stored Procedures, Sql, Database Programming
+Tags: MySQL, Stored Procedure, SQL, Database Programming
 
 Description: Learn how to create, call, and manage stored procedures in MySQL with practical examples covering parameters, variables, and control flow.
 

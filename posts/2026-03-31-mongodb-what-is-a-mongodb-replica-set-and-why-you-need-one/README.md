@@ -24,7 +24,7 @@ A replica set is a group of MongoDB instances that maintain the same data. One m
 
 A replica set needs at least 3 members to hold a majority vote:
 
-```
+```text
 Primary (votes, can be elected)
 Secondary 1 (votes, can be elected)
 Secondary 2 (votes, can be elected)
@@ -106,7 +106,7 @@ rs.reconfig(cfg)
 
 ## Connection String for Replica Set
 
-```
+```text
 mongodb://mongo1:27017,mongo2:27017,mongo3:27017/?replicaSet=myReplicaSet
 ```
 

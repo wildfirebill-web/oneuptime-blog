@@ -1,6 +1,6 @@
 # How to Install MySQL on Fedora
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Installation, Fedora, Linux, Database
 

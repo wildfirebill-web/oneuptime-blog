@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Firewall Policies, Networking, OpenTofu, Security, Organizations
+Tags: GCP, Firewall Policies, Networking, OpenTofu, Security, Organization
 
 Description: Learn how to create GCP hierarchical and network firewall policies with OpenTofu for centralized, consistent network security rule management across projects.
 

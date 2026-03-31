@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, AWS, Spot Instances, Kubernetes, Cost Optimization
+Tags: Talos Linux, AWS, Spot Instance, Kubernetes, Cost Optimization
 
 Description: Guide to running Talos Linux Kubernetes worker nodes on AWS Spot Instances to reduce compute costs by up to 90 percent.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Documentation, Wiki, Operations
+Tags: Rook, Ceph, Documentation, Wiki, Operation
 
 Description: Learn how to structure and maintain Ceph documentation wikis covering cluster topology, runbooks, change logs, and troubleshooting guides for effective team knowledge sharing.
 

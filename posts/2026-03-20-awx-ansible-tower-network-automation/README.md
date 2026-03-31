@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWX, Ansible Tower, Network Automation, Workflow, Inventory, Credentials, CI/CD
+Tags: AWX, Ansible Tower, Network Automation, Workflow, Inventory, Credential, CI/CD
 
 Description: Learn how to set up AWX (the open-source Ansible Tower) for network automation workflows, including inventory management, credential storage, and scheduled playbook execution.
 

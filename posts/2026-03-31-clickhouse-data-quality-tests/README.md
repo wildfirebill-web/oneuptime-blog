@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Data Quality, Testing, SQL, dbt
+Tags: ClickHouse, Data Quality, Testing, SQL, Dbt
 
 Description: Learn how to write SQL-based data quality tests for ClickHouse tables to catch null violations, duplicates, referential integrity failures, and range anomalies.
 

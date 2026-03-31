@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Authentication, Login
+Tags: Podman, Container, DevOps, Registry, Authentication, Login
 
 Description: A practical guide to logging in to container registries with Podman, covering interactive and non-interactive authentication methods.
 

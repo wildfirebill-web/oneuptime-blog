@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Cost Optimization, Operations
+Tags: Kubernetes, Cost Optimization, Operation
 
 Description: Learn how to optimize Kubernetes node pool configurations by analyzing workload resource profiles and matching them with appropriate instance types for cost efficiency.
 

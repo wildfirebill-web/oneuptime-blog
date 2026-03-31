@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, JSON, CI/CD, Infrastructure as Code, DevOps
+Tags: OpenTofu, Output, JSON, CI/CD, Infrastructure as Code, DevOps
 
 Description: A guide to exporting OpenTofu output values as JSON for use in scripts, CI/CD pipelines, and integration with other tools.
 

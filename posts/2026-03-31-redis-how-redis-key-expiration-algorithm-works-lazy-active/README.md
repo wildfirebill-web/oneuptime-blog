@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Key Expiration, Ttl, Internals, Memory Management
+Tags: Redis, Key Expiration, TTL, Internal, Memory Management
 
-Description: Understand how Redis combines lazy expiration (on access) and active expiration (background sampling) to efficiently remove expired keys without blocking the server.
+Description: Understand how Redis combines lazy expiration on access and active background sampling to efficiently remove expired keys without blocking the server.
 
 ---
 

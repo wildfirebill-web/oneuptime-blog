@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Distributed Systems, Node Discovery, Service Discovery, DNS-SD, MDNS
+Tags: IPv6, Distributed System, Node Discovery, Service Discovery, DNS-SD, mDNS
 
 Description: Handle IPv6 addressing challenges in distributed system node discovery, covering DNS-based discovery, multicast, gossip bootstrap, and static seed configuration patterns.
 

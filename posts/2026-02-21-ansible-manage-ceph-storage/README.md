@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ceph, Storage, Distributed Systems
+Tags: Ansible, Ceph, Storage, Distributed System
 
 Description: Deploy and manage Ceph distributed storage clusters using Ansible playbooks for scalable and reliable object and block storage.
 

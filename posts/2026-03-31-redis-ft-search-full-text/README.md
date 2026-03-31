@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RediSearch, Full-text search, Search, Query
+Tags: Redis, RediSearch, Full-Text Search, Search, Query
 
 Description: Learn how to use FT.SEARCH in Redis to run full-text, numeric range, tag, and combined queries against a RediSearch index, with sorting, pagination, and projection.
 

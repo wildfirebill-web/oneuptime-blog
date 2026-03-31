@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, IPv4, Headers, Networking, Packet Analysis, Protocol
+Tags: Wireshark, IPv4, Header, Networking, Packet Analysis, Protocol
 
 Description: Read and understand every field in the IPv4 header as displayed in Wireshark's packet detail pane, including version, TTL, protocol, flags, and checksum fields.
 

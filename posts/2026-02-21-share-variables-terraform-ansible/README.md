@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Terraform, Variables, Integration, DevOps
+Tags: Ansible, Terraform, Variable, Integration, DevOps
 
 Description: Share variables between Terraform and Ansible using output files, environment variables, and shared variable stores for consistent configuration.
 

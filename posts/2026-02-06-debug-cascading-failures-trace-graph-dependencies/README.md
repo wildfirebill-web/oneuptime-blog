@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Cascading Failures, Microservices, Dependency Graph, Incident Response
+Tags: OpenTelemetry, Cascading Failure, Microservice, Dependency Graph, Incident Response
 
 Description: Use OpenTelemetry trace data to build service dependency graphs and trace the propagation path of cascading failures.
 

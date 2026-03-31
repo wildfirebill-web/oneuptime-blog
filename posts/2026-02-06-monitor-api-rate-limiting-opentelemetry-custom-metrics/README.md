@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, API, Rate Limiting, Custom Metrics, Observability, Monitoring
+Tags: OpenTelemetry, API, Rate Limiting, Custom Metric, Observability, Monitoring
 
 Description: A hands-on guide to monitoring API rate limiting effectiveness using OpenTelemetry custom metrics, counters, and histograms.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Window, PowerShell, Networking, IPv4, Test-NetConnection, Diagnostics
+Tags: Window, PowerShell, Networking, IPv4, Test-NetConnection, Diagnostic
 
 Description: Test IPv4 connectivity, port reachability, and route tracing using PowerShell's Test-NetConnection cmdlet for comprehensive network diagnostics beyond basic ping.
 

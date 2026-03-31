@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, Module Registry, GitOps, Internal Sharing
+Tags: OpenTofu, Terraform, Module, Module Registry, GitOps, Internal Sharing
 
 Description: Learn how to publish and share internal OpenTofu modules using Git repositories, private module registries, and semantic versioning for team-wide consumption.
 

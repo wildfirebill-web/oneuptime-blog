@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Rebalancing, Performance, Operations, Storage
+Tags: Rook, Ceph, Rebalancing, Performance, Operation, Storage
 
 Description: Accelerate Ceph data rebalancing after adding or removing OSDs by tuning backfill concurrency, recovery bandwidth, and CRUSH weight adjustments for controlled migration.
 

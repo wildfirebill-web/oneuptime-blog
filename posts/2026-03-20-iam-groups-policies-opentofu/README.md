@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, IAM, Groups, Policies, Access Management, Infrastructure as Code
+Tags: OpenTofu, AWS, IAM, Group, Policies, Access Management, Infrastructure as Code
 
 Description: Learn how to create IAM user groups with attached policies using OpenTofu to manage permissions for teams of users sharing common access requirements.
 

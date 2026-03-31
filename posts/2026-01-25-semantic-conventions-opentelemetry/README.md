@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Semantic Conventions, Attributes, Naming Standards, Observability, Best Practice
+Tags: OpenTelemetry, Semantic Conventions, Attribute, Naming Standards, Observability, Best Practice
 
 Description: Learn how to implement OpenTelemetry semantic conventions for consistent attribute naming across your telemetry data.
 

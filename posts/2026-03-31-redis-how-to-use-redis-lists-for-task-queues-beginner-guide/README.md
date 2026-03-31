@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lists, Task Queues, Background Jobs, Beginner, Workers
+Tags: Redis, List, Task Queue, Background Job, Beginner, Worker
 
 Description: Learn how Redis lists work as task queues, with push and pop operations, blocking consumers, and reliable processing patterns.
 

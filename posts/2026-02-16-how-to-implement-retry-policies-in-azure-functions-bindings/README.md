@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Retry Policies, Error Handling, Resilience, Azure, Fault Tolerance, Serverless
+Tags: Azure Function, Retry Policies, Error Handling, Resilience, Azure, Fault Tolerance, Serverless
 
 Description: Configure and implement retry policies for Azure Functions triggers and bindings to handle transient failures and build resilient serverless applications.
 

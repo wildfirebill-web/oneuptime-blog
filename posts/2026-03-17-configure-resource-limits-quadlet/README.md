@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Resource Limits, Cgroups
+Tags: Podman, Container, DevOps, Quadlet, Resource Limit, Cgroups
 
 Description: Learn how to set CPU, memory, and other resource limits in Podman Quadlet container files to control container resource usage.
 

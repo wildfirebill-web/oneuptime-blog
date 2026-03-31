@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Networking, VPC, Infrastructure as Code, AWS
+Tags: Terraform, Module, Networking, VPC, Infrastructure as Code, AWS
 
 Description: Build reusable Terraform networking modules covering VPC design, subnet strategies, security groups, peering, and transit gateway patterns with practical examples.
 

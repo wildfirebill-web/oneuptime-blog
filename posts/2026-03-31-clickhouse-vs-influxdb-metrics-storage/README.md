@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, InfluxDB, Metrics, Time-Series, Monitoring, TSDB, Prometheus
+Tags: ClickHouse, InfluxDB, Metric, Time-Series, Monitoring, TSDB, Prometheus
 
 Description: Compare ClickHouse and InfluxDB for metrics storage - covering data model, query language, retention policies, and performance at scale.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, ServiceEntry, External Services, Networking, Troubleshooting
+Tags: Istio, ServiceEntry, External Service, Networking, Troubleshooting
 
 Description: How to configure and troubleshoot connections to external services outside the mesh when using Istio service mesh.
 

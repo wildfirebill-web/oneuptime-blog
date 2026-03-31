@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Beginner, SET, GET, String
+Tags: Redis, Beginner, Set, GET, String
 
 Description: A beginner guide to setting and getting values in Redis - covering SET, GET, MSET, MGET, expiration options, and conditional writes.
 

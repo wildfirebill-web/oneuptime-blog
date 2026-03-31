@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Geo, GEOHASH, Geospatial, Encoding
+Tags: Redis, Geo, Geohash, Geospatial, Encoding
 
 Description: Learn how to use GEOHASH to retrieve the Base32-encoded Geohash string for stored members in a Redis geospatial index.
 

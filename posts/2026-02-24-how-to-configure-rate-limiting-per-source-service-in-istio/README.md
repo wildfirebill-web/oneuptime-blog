@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Rate Limiting, Service Mesh, Envoy, Microservices
+Tags: Istio, Rate Limiting, Service Mesh, Envoy, Microservice
 
 Description: How to configure rate limiting based on the calling service identity in Istio to protect downstream services from noisy neighbors.
 

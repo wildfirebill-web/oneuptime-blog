@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Host Endpoint, Selectors, Documentation, Operations
+Tags: Calico, Kubernetes, Networking, Host Endpoint, Selector, Documentation, Operation
 
 Description: A guide to documenting Calico host endpoint selector configurations so operators can understand, maintain, and safely modify the label-based policy targeting model.
 

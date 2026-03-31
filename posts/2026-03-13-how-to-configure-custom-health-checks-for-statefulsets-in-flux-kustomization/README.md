@@ -1,8 +1,8 @@
 # How to Configure Custom Health Checks for StatefulSets in Flux Kustomization
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Flux, GitOps, Kubernetes, Health Check, StatefulSets, Kustomization
+Tags: Flux, GitOps, Kubernetes, Health Check, StatefulSet, Kustomization
 
 Description: Learn how to configure custom health checks for StatefulSet resources in Flux Kustomization to ensure ordered, reliable stateful workload deployments.
 

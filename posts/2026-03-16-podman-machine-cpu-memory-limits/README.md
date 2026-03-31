@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps
 
 Description: Learn how to configure and adjust CPU and memory limits for a Podman machine to optimize performance for your container workloads.
 

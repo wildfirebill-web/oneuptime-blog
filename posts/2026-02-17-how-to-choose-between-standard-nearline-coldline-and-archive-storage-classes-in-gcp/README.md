@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud Storage, Storage Classes, Cost Optimization, Cloud Architecture
+Tags: GCP, Google Cloud Storage, Storage Class, Cost Optimization, Cloud Architecture
 
 Description: A practical comparison of Google Cloud Storage classes - Standard, Nearline, Coldline, and Archive - to help you choose the right one for your data.
 

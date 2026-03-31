@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, State, Commands, Quick Reference, Infrastructure as Code
+Tags: OpenTofu, State, Command, Quick Reference, Infrastructure as Code
 
 Description: A quick reference for all OpenTofu state management commands including list, show, mv, rm, pull, push, and taint operations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Production, Resource Limits
+Tags: OpenTelemetry, Collector, Production, Resource Limit
 
 Description: Learn why running the OpenTelemetry Collector without CPU and memory limits in production leads to node-level outages.
 

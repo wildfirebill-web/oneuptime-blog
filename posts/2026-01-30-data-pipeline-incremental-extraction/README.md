@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, ETL, Incremental Load, Data Integration
+Tags: Data Pipeline, ETL, Incremental Load, Data Integration
 
 Description: Learn to create incremental extraction for efficient data pipeline processing of changed records only.
 

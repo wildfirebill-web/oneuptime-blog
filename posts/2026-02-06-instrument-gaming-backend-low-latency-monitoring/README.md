@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Gaming, Low Latency, Performance Monitoring, Distributed Tracing, Metrics, Real-Time
+Tags: OpenTelemetry, Gaming, Low Latency, Performance Monitoring, Distributed Tracing, Metric, Real-Time
 
 Description: A practical guide to instrumenting a gaming backend with OpenTelemetry for low-latency monitoring, covering game loop tracing, matchmaking metrics, and player session observability.
 

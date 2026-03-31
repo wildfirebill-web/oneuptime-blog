@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Node.js, Image Optimization, Multi-Stage Builds, Alpine, Production
+Tags: Docker, Node.js, Image Optimization, Multi-Stage Build, Alpine, Production
 
 Description: Step-by-step guide to shrinking Node.js Docker images from 1GB+ down to under 100MB
 

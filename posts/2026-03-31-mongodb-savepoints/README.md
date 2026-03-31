@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Transaction, Savepoint, ACID, Error handling
+Tags: MongoDB, Transaction, Savepoint, ACID, Error Handling
 
 Description: Learn about savepoint behaviour in MongoDB transactions, why MongoDB does not support partial rollbacks, and patterns to achieve similar results.
 

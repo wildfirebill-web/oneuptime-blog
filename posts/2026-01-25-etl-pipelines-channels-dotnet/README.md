@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, Channels, ETL, Data Pipelines, Async Programming, C#, Parallel Processing
+Tags: .NET, Channel, ETL, Data Pipeline, Async Programming, C#, Parallel Processing
 
 Description: Learn how to build efficient ETL pipelines in .NET using System.Threading.Channels for producer-consumer patterns, backpressure handling, and parallel data processing.
 

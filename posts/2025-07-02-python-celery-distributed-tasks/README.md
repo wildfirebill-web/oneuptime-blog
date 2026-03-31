@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Celery, Task Queue, Redis, Distributed Systems, Background Jobs
+Tags: Python, Celery, Task Queue, Redis, Distributed System, Background Job
 
 Description: A practical guide to building distributed task queues with Celery. Learn task routing, result backends, rate limiting, and monitoring for production deployments.
 

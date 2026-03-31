@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud SQL, PostgreSQL, Read Replicas, Database Scaling
+Tags: GCP, Cloud SQL, PostgreSQL, Read Replica, Database Scaling
 
 Description: A detailed guide to creating and managing read replicas in Cloud SQL for PostgreSQL to distribute read traffic and improve database performance.
 

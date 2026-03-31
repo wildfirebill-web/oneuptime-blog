@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Debugging, Infrastructure as Code, Modules, Troubleshooting
+Tags: Terraform, Debugging, Infrastructure as Code, Module, Troubleshooting
 
 Description: Learn how to diagnose and fix the 'not a valid output for module' error in Terraform. This guide covers common causes, debugging techniques, and best practices for module output management.
 

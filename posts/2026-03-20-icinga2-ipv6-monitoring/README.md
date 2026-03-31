@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Icinga2, IPv6, Monitoring, Networks, ICMP, Service Checks
+Tags: Icinga2, IPv6, Monitoring, Network, ICMP, Service Checks
 
 Description: A guide to configuring Icinga2 to monitor IPv6 hosts and services, including host object definitions, check commands, and apply rules.
 

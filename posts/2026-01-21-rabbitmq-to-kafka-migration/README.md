@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, RabbitMQ, Migration, Message Queues, Event Streaming, Architecture
+Tags: Apache Kafka, RabbitMQ, Migration, Message Queue, Event Streaming, Architecture
 
 Description: A comprehensive guide to migrating from RabbitMQ to Apache Kafka, covering architectural differences, migration strategies, and implementation patterns for a smooth transition.
 

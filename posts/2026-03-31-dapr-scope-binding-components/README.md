@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Binding, Scoping, Security, Multi-tenant
+Tags: Dapr, Binding, Scoping, Security, Multi-Tenant
 
 Description: Learn how to use Dapr component scoping to restrict binding access to specific application IDs, improving security and isolation in multi-service deployments.
 

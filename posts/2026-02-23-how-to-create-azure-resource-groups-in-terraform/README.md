@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Resource Groups, Infrastructure as Code, Cloud
+Tags: Terraform, Azure, Resource Group, Infrastructure as Code, Cloud
 
 Description: A practical guide to creating and managing Azure Resource Groups with Terraform, including naming conventions, tagging, locks, and organizational patterns.
 

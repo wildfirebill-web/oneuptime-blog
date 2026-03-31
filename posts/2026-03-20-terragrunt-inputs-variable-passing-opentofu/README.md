@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terragrunt, Input, Variables, DRY Configuration
+Tags: OpenTofu, Terragrunt, Input, Variable, DRY Configuration
 
 Description: Learn how to use Terragrunt inputs blocks to pass environment-specific variable values to OpenTofu modules without creating tfvars files in every module directory.
 

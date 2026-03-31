@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Datetime, Error, SQL Mode, Date
+Tags: MySQL, DateTime, Error, SQL Mode, Date
 
 Description: Fix MySQL ERROR 1292 Incorrect datetime value by correcting date formats, adjusting sql_mode, and handling zero dates and timezone gaps properly.
 

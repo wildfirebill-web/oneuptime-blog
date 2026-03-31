@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, PHP, PECL, Extensions, Development, Linux
+Tags: RHEL, PHP, PECL, Extension, Development, Linux
 
 Description: Use PECL to compile and install PHP extensions on RHEL when the extension is not available as an RPM package or when you need a specific version.
 

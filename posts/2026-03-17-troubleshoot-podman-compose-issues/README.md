@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Troubleshooting, Debugging
+Tags: Podman, Container, DevOps, podman-compose, Troubleshooting, Debugging
 
 Description: Learn how to diagnose and fix common podman-compose issues including networking problems, image errors, and compatibility differences.
 

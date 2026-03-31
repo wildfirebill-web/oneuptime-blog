@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, InfluxDB, Time-Series, Comparison, Monitoring, Metrics
+Tags: Redis, InfluxDB, Time-Series, Comparison, Monitoring, Metric
 
 Description: Compare Redis and InfluxDB for time-series storage - covering query languages, retention policies, downsampling, and which tool fits metrics vs event data.
 

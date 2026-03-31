@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Monitoring, Rebalancing, Operations, Storage
+Tags: Rook, Ceph, Monitoring, Rebalancing, Operation, Storage
 
 Description: Monitor Ceph data rebalancing progress using ceph status, pg stat, progress module, and Prometheus metrics to track completion estimates and identify stuck operations.
 

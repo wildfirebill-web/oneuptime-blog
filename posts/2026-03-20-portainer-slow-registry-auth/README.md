@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Performance, Registry, Troubleshooting, Stacks
+Tags: Portainer, Docker, Performance, Registry, Troubleshooting, Stack
 
 Description: Speed up slow Portainer stack deployments caused by registry authentication timeouts, DNS resolution delays, and inefficient image pull strategies.
 

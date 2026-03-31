@@ -1,8 +1,8 @@
 # How to Uninstall MySQL Completely on Windows
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Uninstall, Windows, Administration, Cleanup
+Tags: MySQL, Uninstall, Window, Administration, Cleanup
 
 Description: Completely remove MySQL from Windows 10 or 11 by stopping the service, uninstalling via MySQL Installer or Programs and Features, and deleting residual data and registry entries.
 

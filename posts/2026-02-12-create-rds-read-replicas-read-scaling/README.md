@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, RDS, Read Replicas, Database, Scaling
+Tags: AWS, RDS, Read Replica, Database, Scaling
 
 Description: Learn how to create and configure RDS read replicas to scale read-heavy database workloads and reduce load on your primary instance.
 

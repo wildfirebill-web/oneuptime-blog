@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Batch, CloudWatch, Monitoring, Observability, Logging, Alerts
+Tags: AWS, Batch, CloudWatch, Monitoring, Observability, Logging, Alert
 
 Description: Comprehensive guide to monitoring AWS Batch jobs using CloudWatch metrics, logs, alarms, and dashboards for full visibility into your batch processing pipelines.
 

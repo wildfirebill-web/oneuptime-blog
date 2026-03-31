@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, MongoDB, Operator, Database, StatefulSets
+Tags: Helm, Kubernetes, DevOps, MongoDB, Operator, Database, StatefulSet
 
 Description: Complete guide to deploying MongoDB Community and Enterprise operators on Kubernetes using Helm charts for production-grade database management.
 

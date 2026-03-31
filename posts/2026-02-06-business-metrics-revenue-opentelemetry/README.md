@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Business Metrics, Revenue, Conversion, Observability, Custom Metrics, E-Commerce
+Tags: OpenTelemetry, Business Metrics, Revenue, Conversion, Observability, Custom Metric, E-Commerce
 
 Description: Learn how to track business metrics like revenue, conversion rates, and user engagement using OpenTelemetry, bridging the gap between technical observability and business outcomes.
 

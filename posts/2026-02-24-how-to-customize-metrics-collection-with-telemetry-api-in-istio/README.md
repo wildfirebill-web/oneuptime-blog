@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Telemetry API, Metrics, Prometheus, Observability
+Tags: Istio, Telemetry API, Metric, Prometheus, Observability
 
 Description: Learn how to use the Istio Telemetry API to customize metric collection, add custom labels, remove high-cardinality tags, and control what gets sent to Prometheus.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Trigonometry, Sin, Cos, Tan, Math Functions, Sql
+Tags: MySQL, Trigonometry, Sin, COS, Tan, Math Function, SQL
 
 Description: Learn how to use MySQL's SIN(), COS(), and TAN() functions for trigonometric calculations, including practical geospatial distance examples.
 

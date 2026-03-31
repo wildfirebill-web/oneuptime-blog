@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, Testing, Hooks
+Tags: Helm, Kubernetes, Testing, Hook
 
 Description: A practical guide to building Helm test hooks for validating your Kubernetes deployments, from simple connectivity tests to comprehensive integration test suites.
 

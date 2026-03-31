@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, ZFS, Storage, Linux, Pools
+Tags: Ubuntu, ZFS, Storage, Linux, Pool
 
 Description: Learn to create ZFS storage pools with different vdev topologies and organize data using datasets with custom properties on Ubuntu systems.
 

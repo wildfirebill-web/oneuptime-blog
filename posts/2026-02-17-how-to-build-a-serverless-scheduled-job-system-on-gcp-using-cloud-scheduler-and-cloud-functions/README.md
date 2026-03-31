@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Scheduler, Cloud Functions, Serverless, Cron Jobs, Task Scheduling
+Tags: GCP, Cloud Scheduler, Cloud Function, Serverless, Cron Jobs, Task Scheduling
 
 Description: Learn how to build a serverless scheduled job system on Google Cloud using Cloud Scheduler for timing and Cloud Functions for execution, with retry and monitoring.
 

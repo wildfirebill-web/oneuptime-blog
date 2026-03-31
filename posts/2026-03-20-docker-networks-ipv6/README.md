@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, Networks, Subnets, Bridge, Custom Networks
+Tags: Docker, IPv6, Network, Subnets, Bridge, Custom Networks
 
 Description: Create Docker bridge networks with custom IPv6 CIDR ranges, assign specific IPv6 subnets to networks, and connect containers to IPv6-enabled Docker networks.
 

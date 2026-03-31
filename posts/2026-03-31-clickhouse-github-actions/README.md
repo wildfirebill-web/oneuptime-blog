@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, GitHub Actions, CI/CD, Testing, Automation
+Tags: ClickHouse, GitHub Action, CI/CD, Testing, Automation
 
 Description: Learn how to run ClickHouse as a service container in GitHub Actions workflows for integration testing and schema migration validation.
 

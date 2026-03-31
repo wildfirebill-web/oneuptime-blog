@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Serverless, Cold Start, Lambda, Azure Functions, Performance
+Tags: Terraform, Serverless, Cold Start, Lambda, Azure Function, Performance
 
 Description: Learn how to handle serverless cold start issues across AWS Lambda, Azure Functions, and Google Cloud Functions using Terraform configurations and optimization strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provider Registry, Protocol, Internals, Infrastructure as Code
+Tags: OpenTofu, Provider Registry, Protocol, Internal, Infrastructure as Code
 
 Description: Learn how the OpenTofu provider registry protocol works - how providers are discovered, downloaded, and verified, and how to set up network mirrors for air-gapped environments.
 

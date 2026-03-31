@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Validation, Annotations, Bean Validation
+Tags: Java, Spring Boot, Validation, Annotation, Bean Validation
 
 Description: Learn how to build custom validation annotations in Spring Boot using the Bean Validation API, from simple field validators to cross-field constraints with practical examples.
 

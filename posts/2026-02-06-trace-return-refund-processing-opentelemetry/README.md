@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Returns, Refunds, Payment Processing
+Tags: OpenTelemetry, Return, Refund, Payment Processing
 
 Description: Trace return and refund processing workflows across payment gateways and inventory services with OpenTelemetry distributed tracing.
 

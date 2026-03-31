@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, RBD, Block Storage, Kubernetes, Storage, DevOps, Distributed Systems
+Tags: Ceph, RBD, Block Storage, Kubernetes, Storage, DevOps, Distributed System
 
 Description: A hands-on guide to Ceph RADOS Block Device (RBD) covering pool creation, image management, snapshots, cloning, and Kubernetes CSI integration for persistent volumes.
 

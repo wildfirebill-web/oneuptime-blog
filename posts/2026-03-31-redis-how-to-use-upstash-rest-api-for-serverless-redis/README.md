@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Upstash, Serverless, Rest Api, Edge Computing
+Tags: Redis, Upstash, Serverless, REST API, Edge Computing
 
 Description: Use the Upstash REST API to access Redis over HTTP from serverless and edge runtimes that cannot use TCP connections, with zero connection management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Bun, Microservices, Docker, Distributed Systems
+Tags: Bun, Microservice, Docker, Distributed System
 
 Description: A comprehensive guide to building production-ready microservices using Bun runtime with service communication, API gateway, health checks, and observability.
 

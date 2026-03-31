@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, Worker Service, Background Services, Hosted Services, ASP.NET Core, Microservices
+Tags: .NET, C#, Worker Service, Background Services, Hosted Services, ASP.NET Core, Microservice
 
 Description: Learn how to build robust background services using .NET Worker Service. This guide covers hosted services, timed background tasks, queue processing, and best practices for long-running operations.
 

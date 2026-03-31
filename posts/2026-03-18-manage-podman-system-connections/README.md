@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Remote Management, System Connections
+Tags: Podman, Container, DevOps, Remote Management, System Connections
 
 Description: Learn how to create, list, modify, and remove Podman system connections to manage containers across multiple local and remote hosts.
 

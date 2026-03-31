@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, Monitoring, PUBSUB, Channels, Observability, Operations
+Tags: Redis, Pub/Sub, Monitoring, PubSub, Channel, Observability, Operation
 
 Description: Use Redis PUBSUB commands and keyspace notifications to monitor active channels, subscriber counts, and message throughput in your Redis Pub/Sub deployment.
 

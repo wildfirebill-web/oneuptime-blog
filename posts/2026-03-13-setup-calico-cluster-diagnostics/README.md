@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Diagnostics
+Tags: Calico, Kubernetes, Networking, Diagnostic
 
 Description: Set up a comprehensive Calico cluster diagnostics toolkit using calicoctl cluster diags, TigeraStatus, and cross-node connectivity tests to assess overall cluster networking health.
 

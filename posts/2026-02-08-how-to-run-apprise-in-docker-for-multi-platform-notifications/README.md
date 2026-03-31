@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Apprise, Notifications, Multi-Platform, Slack, Email, Docker Compose, Alerting
+Tags: Docker, Apprise, Notification, Multi-Platform, Slack, Email, Docker Compose, Alerting
 
 Description: Deploy Apprise in Docker to send notifications to Slack, Discord, Telegram, email, and 80+ other services from a single API.
 

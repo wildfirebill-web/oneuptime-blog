@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, OCI Registry, Provider Installation, Containers, Infrastructure
+Tags: OpenTofu, OCI Registry, Provider Installation, Container, Infrastructure
 
 Description: Learn how to configure OpenTofu to pull provider plugins directly from OCI-compatible registries, enabling offline workflows and centralized provider distribution.
 

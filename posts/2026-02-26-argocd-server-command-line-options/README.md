@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Server Configuration, Operations
+Tags: ArgoCD, GitOps, Kubernetes, Server Configuration, Operation
 
 Description: Learn how to configure argocd-server command-line options to customize API server behavior, authentication, TLS, rate limiting, and performance tuning.
 

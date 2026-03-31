@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vercel, IPv6, Serverless, Edge Functions, Dual-Stack, Deployment
+Tags: Vercel, IPv6, Serverless, Edge Function, Dual-Stack, Deployment
 
 Description: Deploy Vercel applications that serve IPv6 clients and use IPv6 in serverless and edge function environments.
 

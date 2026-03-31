@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, DevOps
+Tags: Portainer, Docker, Template, DevOps
 
 Description: Learn how to use Portainer's built-in and custom application templates to quickly deploy containers and stacks.
 

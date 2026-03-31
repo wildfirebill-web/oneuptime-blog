@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, Infrastructure as Code, EC2, remote-exec, local-exec
+Tags: OpenTofu, Provisioner, Infrastructure as Code, EC2, remote-exec, local-exec
 
 Description: Learn how creation-time provisioners work in OpenTofu and when they are appropriate alternatives to cloud-init for instance bootstrapping.
 

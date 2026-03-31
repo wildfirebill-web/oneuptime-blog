@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Delete, Truncate, InnoDB, Performance
+Tags: MySQL, Delete, TRUNCATE, InnoDB, Performance
 
 Description: Understand the key differences between DELETE and TRUNCATE in MySQL so you can choose the right command for clearing table data safely and efficiently.
 

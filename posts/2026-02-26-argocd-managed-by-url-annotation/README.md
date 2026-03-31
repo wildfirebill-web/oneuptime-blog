@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Annotations, UI
+Tags: ArgoCD, GitOps, Kubernetes, Annotation, UI
 
 Description: Learn how to use the ArgoCD managed-by URL annotation to link Kubernetes resources to external management tools and documentation for better traceability.
 

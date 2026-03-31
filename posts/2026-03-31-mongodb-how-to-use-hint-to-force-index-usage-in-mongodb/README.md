@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, hint, Query Optimization, Query Planner
+Tags: MongoDB, Index, Hint, Query Optimization, Query Planner
 
 Description: Learn how to use hint() in MongoDB to override the query planner and force a specific index for a query, with when and why to use it.
 

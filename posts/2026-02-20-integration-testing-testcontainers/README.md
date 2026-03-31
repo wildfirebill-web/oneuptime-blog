@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Testing, Testcontainers, Integration Tests, Docker, CI/CD
+Tags: Testing, Testcontainers, Integration Test, Docker, CI/CD
 
 Description: Learn how to write integration tests with Testcontainers for testing against real databases, message queues, and services.
 

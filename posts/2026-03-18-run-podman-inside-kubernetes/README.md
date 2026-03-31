@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Kubernetes, Containers, CI/CD, Cloud Native
+Tags: Podman, Kubernetes, Container, CI/CD, Cloud Native
 
 Description: Learn how to run Podman inside Kubernetes pods for building container images, CI/CD pipelines, and container-in-container workflows without requiring Docker-in-Docker.
 

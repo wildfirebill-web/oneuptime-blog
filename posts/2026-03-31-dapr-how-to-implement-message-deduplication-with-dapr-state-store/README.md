@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, State Store, Message Deduplication, Idempotency, Pub/Sub, Microservices
+Tags: Dapr, State Store, Message Deduplication, Idempotency, Pub/Sub, Microservice
 
 Description: Learn how to implement idempotent message processing with Dapr State Store to prevent duplicate message handling in distributed microservices.
 

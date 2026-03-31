@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Checkpoints, CRIU, Container Restore, DevOps
+Tags: Podman, Checkpoint, CRIU, Container Restore, DevOps
 
 Description: A guide to restoring Podman container checkpoints, covering local restore, cross-host restore, conflict resolution, and validation of restored containers.
 

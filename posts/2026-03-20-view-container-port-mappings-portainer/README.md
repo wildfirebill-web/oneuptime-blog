@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Networking, Ports, Operations, Troubleshooting
+Tags: Portainer, Docker, Networking, Port, Operation, Troubleshooting
 
 Description: Inspect container port bindings in Portainer to understand which host ports are mapped to container ports and identify port conflicts between services.
 

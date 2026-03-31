@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Sql Mode, Database Configuration, Data Validation
+Tags: MySQL, SQL Mode, Database Configuration, Data Validation
 
 Description: SQL Mode in MySQL controls how the server handles SQL syntax and data validation, letting you enforce strict standards or allow lenient behavior.
 

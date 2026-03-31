@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lists, BLPOP, BRPOP, Queues
+Tags: Redis, List, BLPOP, BRPOP, Queue
 
 Description: Learn how to use BLPOP and BRPOP in Redis to block and wait for list elements, enabling efficient event-driven queue consumers without polling.
 

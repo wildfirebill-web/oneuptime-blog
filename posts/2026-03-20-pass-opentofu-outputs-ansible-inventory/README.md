@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Ansible, Inventory, Outputs, Integration
+Tags: OpenTofu, Ansible, Inventory, Output, Integration
 
 Description: Learn how to use OpenTofu outputs to automatically generate Ansible inventory files, ensuring Ansible always targets the correct hosts that OpenTofu provisioned.
 

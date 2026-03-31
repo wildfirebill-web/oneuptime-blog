@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Go, Websocket, Pub/Sub, Scaling
+Tags: Redis, Go, WebSocket, Pub/Sub, Scaling
 
 Description: Learn how to scale Go WebSocket servers horizontally using Redis Pub/Sub as a message broker to broadcast messages across multiple server instances.
 

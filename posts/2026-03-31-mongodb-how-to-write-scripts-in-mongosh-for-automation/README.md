@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Mongosh, Scripting, Automation, Javascript
+Tags: MongoDB, Mongosh, Scripting, Automation, JavaScript
 
 Description: Learn how to write and execute JavaScript scripts in mongosh to automate MongoDB tasks like bulk inserts, data migrations, and reporting.
 

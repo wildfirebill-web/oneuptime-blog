@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OCI Artifacts, Artifact Management
+Tags: Podman, Container, DevOps, OCI Artifacts, Artifact Management
 
 Description: Learn how to list and filter OCI artifacts stored in your local Podman artifact store.
 

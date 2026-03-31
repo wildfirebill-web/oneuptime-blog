@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Cleanup, DevOps
+Tags: Portainer, Docker, Image, Cleanup, DevOps
 
 Description: Learn how to identify and remove unused Docker images in Portainer to free up disk space and keep your environment clean.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Containers, Labels, Filtering, Visibility, Management
+Tags: Portainer, Container, Labels, Filtering, Visibility, Management
 
 Description: A guide to hiding containers from the Portainer UI using Docker labels, useful for system containers, infrastructure services, or decluttering the interface.
 

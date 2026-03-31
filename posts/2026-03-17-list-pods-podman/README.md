@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Management
+Tags: Podman, Container, DevOps, Pod, Management
 
 Description: Learn how to list and filter Podman pods to get an overview of your running workloads.
 

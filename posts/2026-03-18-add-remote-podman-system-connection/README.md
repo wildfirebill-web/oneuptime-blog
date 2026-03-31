@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Remote Management, SSH
+Tags: Podman, Container, DevOps, Remote Management, SSH
 
 Description: Learn how to add remote Podman system connections to manage containers on remote hosts directly from your local workstation.
 

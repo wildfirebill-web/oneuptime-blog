@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Namespaces, Zero Trust
+Tags: Calico, Kubernetes, Network Policy, Namespace, Zero Trust
 
 Description: Implement zero trust namespace isolation using Calico network policies to ensure no cross-namespace traffic is permitted without explicit authorization.
 

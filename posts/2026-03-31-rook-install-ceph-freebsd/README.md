@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, FreeBSD, Unix, Installation, Storage, Ports, BSD
+Tags: Ceph, FreeBSD, Unix, Installation, Storage, Port, BSD
 
 Description: Install Ceph on FreeBSD using the Ports collection or pkg binary packages for a BSD-based storage cluster.
 

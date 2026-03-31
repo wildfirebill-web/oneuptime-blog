@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible, Automation Mesh, Scaling, Distributed Systems
+Tags: RHEL, Ansible, Automation Mesh, Scaling, Distributed System
 
 Description: Configure Ansible Automation Mesh to scale automation across distributed RHEL environments, including remote sites and multi-region deployments.
 

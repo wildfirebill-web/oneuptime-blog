@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, RENAME TABLE, Schema, Migration
+Tags: MySQL, SQL, DDL, RENAME TABLE, Schema
 
 Description: Rename one or more MySQL tables atomically with RENAME TABLE, move tables between databases, and understand how foreign keys and views are affected.
 

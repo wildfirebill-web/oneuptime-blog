@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: API Gateway, Routing, Headers, Traffic Management
+Tags: API Gateway, Routing, Header, Traffic Management
 
 Description: Learn how to implement header-based routing for traffic control.
 

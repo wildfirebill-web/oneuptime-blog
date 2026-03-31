@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Security, Headers, VirtualService, EnvoyFilter
+Tags: Istio, Security, Header, VirtualService, EnvoyFilter
 
 Description: How to strip sensitive HTTP headers from requests and responses using Istio to prevent information leakage and improve security posture.
 

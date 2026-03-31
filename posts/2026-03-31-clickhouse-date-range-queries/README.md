@@ -1,6 +1,6 @@
 # How to Optimize Date Range Queries in ClickHouse
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Performance, SQL, Analytics, Database
 

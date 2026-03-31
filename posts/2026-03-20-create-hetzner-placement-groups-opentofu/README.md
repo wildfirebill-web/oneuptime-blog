@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Hetzner Cloud, Placement Groups, High Availability, Infrastructure as Code
+Tags: OpenTofu, Hetzner Cloud, Placement Group, High Availability, Infrastructure as Code
 
 Description: Learn how to create Hetzner Cloud placement groups with OpenTofu to ensure servers are distributed across physical hosts for high availability.
 

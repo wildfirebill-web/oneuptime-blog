@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Hash Table, Dict, Internals, Data Structures, Rehashing
+Tags: Redis, Hash Table, Dict, Internal, Data Structure, Rehashing
 
-Description: Understand how Redis implements its internal hash table (dict), including incremental rehashing, collision resolution, and how it underlies key-value storage and Hash data types.
+Description: Understand how Redis implements its internal hash table (dict), including incremental rehashing, collision resolution, and how it underlies key-value storage.
 
 ---
 

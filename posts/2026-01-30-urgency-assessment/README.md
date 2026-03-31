@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Incident Management, SRE, Triage, Operations
+Tags: Incident Management, SRE, Triage, Operation
 
 Description: Learn how to assess incident urgency for proper prioritization and response.
 

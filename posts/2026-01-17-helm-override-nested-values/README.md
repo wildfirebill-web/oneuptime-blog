@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, Configuration, Values, Subcharts
+Tags: Helm, Kubernetes, DevOps, Configuration, Value, Subcharts
 
 Description: Deep dive into Helm's nested value override behavior, accessing subchart values, merge strategies, and common pitfalls when working with complex configurations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Job Outputs, CI/CD, Workflow Automation, DevOps
+Tags: GitHub Action, Job Outputs, CI/CD, Workflow Automation, DevOps
 
 Description: Learn how to pass data between jobs in GitHub Actions using job outputs. This guide covers output syntax, dynamic values, matrix outputs, and complex data structures.
 

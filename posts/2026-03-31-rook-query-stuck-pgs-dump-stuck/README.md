@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Placement Group, Diagnostics, Troubleshooting
+Tags: Rook, Ceph, Placement Group, Diagnostic, Troubleshooting
 
 Description: Learn how to use ceph pg dump_stuck to identify Placement Groups that are not making progress in Ceph, enabling targeted troubleshooting in Rook clusters.
 

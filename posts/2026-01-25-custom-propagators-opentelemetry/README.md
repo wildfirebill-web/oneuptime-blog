@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Propagators, Context Propagation, Distributed Tracing, W3C Trace Context, Custom Headers
+Tags: OpenTelemetry, Propagators, Context Propagation, Distributed Tracing, W3C Trace Context, Custom Header
 
 Description: Learn how to implement custom context propagators in OpenTelemetry to support legacy systems, custom protocols, and multi-vendor tracing environments.
 

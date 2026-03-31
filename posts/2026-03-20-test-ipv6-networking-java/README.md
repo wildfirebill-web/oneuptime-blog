@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, IPv6, Testing, JUnit, Mocking, Integration Tests
+Tags: Java, IPv6, Testing, JUnit, Mocking, Integration Test
 
 Description: Test IPv6 networking code in Java using JUnit, in-process servers, mocking, and parameterized tests for both IPv4 and IPv6 scenarios.
 

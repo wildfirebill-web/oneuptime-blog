@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Read-Only, Security
+Tags: Podman, Container, DevOps, Volumes, Read-Only, Security
 
 Description: Learn how to mount volumes as read-only in Podman to protect host data from container modifications.
 

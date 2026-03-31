@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB Atlas, JWT, Authentication, App Services, Security
+Tags: MongoDB Atlas, JWT, Authentication, App Service, Security
 
 Description: Learn how to implement custom JWT authentication in MongoDB Atlas App Services to integrate your own identity provider and control user access.
 

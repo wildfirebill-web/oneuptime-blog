@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Date Functions, toDate, toDateTime, Type Conversion
+Tags: ClickHouse, Date Function, toDate, toDateTime, Type Conversion
 
 Description: Learn how to use toDate() and toDateTime() functions in ClickHouse to convert strings, timestamps, and other types to date and datetime values.
 

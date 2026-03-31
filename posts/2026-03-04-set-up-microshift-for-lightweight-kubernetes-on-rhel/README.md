@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, MicroShift, Kubernetes, Edge, Containers
+Tags: RHEL, MicroShift, Kubernetes, Edge, Container
 
 Description: Install and configure MicroShift on RHEL to run a lightweight, single-node Kubernetes cluster suitable for edge computing and resource-constrained environments.
 

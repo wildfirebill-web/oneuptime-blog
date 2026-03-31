@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Role, Handlers, Service Management
+Tags: Ansible, Role, Handler, Service Management
 
 Description: Learn how to define and use handlers within Ansible roles for efficient event-driven service management and configuration reloads.
 

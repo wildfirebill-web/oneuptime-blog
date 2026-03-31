@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, NAT, IPv4, Cisco, Concepts
+Tags: Networking, NAT, IPv4, Cisco, Concept
 
 Description: Learn the four NAT address types - Inside Local, Inside Global, Outside Local, and Outside Global - and how they map traffic through a NAT device.
 

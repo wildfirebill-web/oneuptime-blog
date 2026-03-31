@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, RGW, QoS, Performance, dmclock
+Tags: Rook, Ceph, RGW, QoS, Performance, DmClock
 
 Description: Configure Quality of Service (QoS) and dmclock scheduling parameters in Ceph RGW to ensure fair resource allocation across multiple tenants.
 

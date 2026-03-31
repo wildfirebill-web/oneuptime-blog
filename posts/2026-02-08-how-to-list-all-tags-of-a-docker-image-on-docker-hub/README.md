@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Hub, Images, Tags, Registry, DevOps
+Tags: Docker, Docker Hub, Image, Tag, Registry, DevOps
 
 Description: Learn how to list all available tags for any Docker image on Docker Hub using the API, CLI tools, and scripts.
 

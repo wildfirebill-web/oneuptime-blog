@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bitfield, BITFIELD_RO, Read-Only, Replicas
+Tags: Redis, Bitfield, BITFIELD_RO, Read-Only, Replica
 
 Description: Learn how to use BITFIELD_RO in Redis to safely read bitfield values in read-only contexts such as replicas and read-only scripts.
 

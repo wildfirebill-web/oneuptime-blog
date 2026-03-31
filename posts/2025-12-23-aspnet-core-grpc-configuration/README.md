@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: .NET, C#, ASP.NET Core, gRPC, Microservices, API, Protocol Buffers
+Tags: .NET, C#, ASP.NET Core, gRPC, Microservice, API, Protocol Buffer
 
 Description: Learn how to configure gRPC services in ASP.NET Core for high-performance communication between services. Covers service definition, server setup, client configuration, and streaming.
 

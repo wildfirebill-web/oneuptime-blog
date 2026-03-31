@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, CLUSTER GETKEYSINSLOT, Operations, Data Management
+Tags: Redis, Cluster, CLUSTER GETKEYSINSLOT, Operation, Data Management
 
 Description: Learn how to use CLUSTER GETKEYSINSLOT in Redis to list keys assigned to a specific hash slot, useful for debugging slot assignments, validating key distribution, and manual slot migration.
 

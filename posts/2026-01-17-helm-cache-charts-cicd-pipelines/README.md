@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, CI/CD, GitHub Actions, GitLab CI, Performance
+Tags: Helm, Kubernetes, DevOps, CI/CD, GitHub Action, GitLab CI, Performance
 
 Description: Comprehensive strategies for caching Helm charts and dependencies in CI/CD pipelines including GitHub Actions, GitLab CI, and Jenkins for faster builds.
 

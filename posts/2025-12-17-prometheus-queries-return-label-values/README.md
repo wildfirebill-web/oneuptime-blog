@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, PromQL, Labels, Queries, Monitoring, Metrics
+Tags: Prometheus, PromQL, Labels, Queries, Monitoring, Metric
 
 Description: Learn how to write Prometheus queries that extract and return label values.
 

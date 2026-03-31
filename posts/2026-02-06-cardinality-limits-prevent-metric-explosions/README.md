@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Cardinality, Performance, Observability, Cost Optimization
+Tags: OpenTelemetry, Metric, Cardinality, Performance, Observability, Cost Optimization
 
 Description: Prevent metric cardinality explosions with practical strategies and configurations for implementing cardinality limits in OpenTelemetry deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, Resources, Performance, VM, Configuration
+Tags: Rancher Desktop, Resource, Performance, VM, Configuration
 
 Description: Tune CPU, memory, and disk allocation for the Rancher Desktop virtual machine to optimize local development performance.
 

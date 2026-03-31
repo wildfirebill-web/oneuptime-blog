@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, TCP, Networking, HTTP, Packet Analysis, Diagnostics
+Tags: Wireshark, TCP, Networking, HTTP, Packet Analysis, Diagnostic
 
 Description: Use Wireshark's Follow TCP Stream feature to reassemble and view the complete conversation of a TCP connection, including HTTP request/response pairs.
 

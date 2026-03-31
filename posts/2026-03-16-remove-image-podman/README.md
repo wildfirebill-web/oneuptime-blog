@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Cleanup
+Tags: Podman, Container, DevOps, Container Image, Cleanup
 
 Description: Learn how to safely remove container images with Podman, including removing by name, ID, and handling images referenced by containers.
 

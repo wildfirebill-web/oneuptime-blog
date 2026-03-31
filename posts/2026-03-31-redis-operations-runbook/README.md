@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Runbook, Operations
+Tags: Redis, Runbook, Operation
 
 Description: Learn how to create a comprehensive Redis operations runbook with procedures for common tasks, incident response, and maintenance that any engineer can follow.
 

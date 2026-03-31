@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, State Management, Redis, Transactions, ACID, Microservices
+Tags: Dapr, State Management, Redis, Transaction, ACID, Microservice
 
 Description: Learn how to use Dapr's transactional state API with Redis to perform atomic multi-key operations, ensuring consistency across related state updates in microservices.
 

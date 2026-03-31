@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Auditing, Security, Compliance, Operations
+Tags: MongoDB, Auditing, Security, Compliance, Operation
 
 Description: Track and log MongoDB database operations including reads, writes, and schema changes to meet compliance requirements and investigate security incidents.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Image Factory, Custom Images, Kubernetes, Infrastructure
+Tags: Talos Linux, Image Factory, Custom Image, Kubernetes, Infrastructure
 
 Description: Learn how to use Talos Image Factory to build custom images tailored to your infrastructure needs, including system extensions and platform-specific configurations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Type Casting, reinterpret, Binary, Sql
+Tags: ClickHouse, Type Casting, reinterpret, Binary, SQL
 
 Description: Learn how to use reinterpretAsString() and reinterpretAsUInt64() in ClickHouse for low-level binary reinterpretation without value conversion.
 

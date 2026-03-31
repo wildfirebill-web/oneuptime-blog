@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CLIENT, Connection, Operations, Maintenance
+Tags: Redis, Client, Connection, Operation, Maintenance
 
 Description: Learn how to use CLIENT PAUSE in Redis to temporarily halt client command processing, enabling safe failovers, configuration changes, and maintenance windows without dropping connections.
 

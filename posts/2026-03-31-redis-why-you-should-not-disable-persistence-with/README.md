@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Persistence, RDB, AOF, Data Loss, Best Practices
+Tags: Redis, Persistence, RDB, AOF, Data Loss, Best Practice
 
 Description: Understand the real risks of disabling Redis persistence and learn how to make an informed decision based on your workload and data loss tolerance.
 

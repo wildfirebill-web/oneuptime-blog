@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Image Management, Container Commit, DevOps, Containers
+Tags: Portainer, Docker, Image Management, Container Commit, DevOps, Container
 
 Description: Use docker commit via Portainer's console to snapshot a running container's state into a new Docker image for debugging, migration, or creating a reproducible base image.
 

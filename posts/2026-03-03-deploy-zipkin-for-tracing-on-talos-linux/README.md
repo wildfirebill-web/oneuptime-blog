@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Zipkin, Distributed Tracing, Kubernetes, Observability, Microservices
+Tags: Talos Linux, Zipkin, Distributed Tracing, Kubernetes, Observability, Microservice
 
 Description: Step-by-step instructions for deploying Zipkin on a Talos Linux Kubernetes cluster to trace requests across microservices.
 

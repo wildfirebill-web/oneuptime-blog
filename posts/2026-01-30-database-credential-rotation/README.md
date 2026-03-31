@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Security, Database, Credentials, Vault
+Tags: Security, Database, Credential, Vault
 
 Description: Learn to build database credential rotation using Vault for dynamic secrets.
 

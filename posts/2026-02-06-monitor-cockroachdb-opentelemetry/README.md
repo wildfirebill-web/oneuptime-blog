@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, CockroachDB, Database Monitoring, Observability, Distributed Database, Metrics, Tracing
+Tags: OpenTelemetry, CockroachDB, Database Monitoring, Observability, Distributed Database, Metric, Tracing
 
 Description: A practical guide to monitoring CockroachDB clusters using OpenTelemetry for metrics collection, query tracing, and performance analysis across distributed nodes.
 

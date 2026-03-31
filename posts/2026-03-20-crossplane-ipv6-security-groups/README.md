@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Crossplane, IPv6, Security Groups, AWS, Firewall
+Tags: Crossplane, IPv6, Security Group, AWS, Firewall
 
 Description: Define and provision cloud security groups with IPv6 ingress and egress rules using Crossplane composite resources.
 

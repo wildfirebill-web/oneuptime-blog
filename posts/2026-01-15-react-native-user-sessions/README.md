@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, User Sessions, Analytics, Mobile Development, User Journey, Tracking
+Tags: React Native, User Session, Analytics, Mobile Development, User Journey, Tracking
 
 Description: Learn how to track user sessions and journeys in React Native apps to understand user behavior and improve engagement.
 

@@ -1,8 +1,8 @@
 # How to Use State Management with Different Backend Stores
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, State Management, Redis, PostgreSQL, Cosmos DB, Microservice
+Tags: Dapr, State Management, Redis, PostgreSQL, Microservice
 
 Description: Learn how to configure and use Dapr State Management with different backend stores including Redis, PostgreSQL, Azure Cosmos DB, DynamoDB, and MongoDB.
 

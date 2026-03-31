@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bash, Shell Scripting, Troubleshooting, Read-Only Variables, Linux, DevOps
+Tags: Bash, Shell Scripting, Troubleshooting, Read-Only Variable, Linux, DevOps
 
 Description: Learn how to diagnose and fix the 'cannot assign to read-only variable' error in Bash scripts, including best practices for variable declaration and scope management.
 

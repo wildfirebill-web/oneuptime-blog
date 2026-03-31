@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, TTL, AMQP, Backend, Distributed Systems, Configuration
+Tags: RabbitMQ, Message Queue, TTL, AMQP, Backend, Distributed System, Configuration
 
 Description: Learn how to configure message and queue TTL in RabbitMQ to automatically expire messages and manage queue storage.
 

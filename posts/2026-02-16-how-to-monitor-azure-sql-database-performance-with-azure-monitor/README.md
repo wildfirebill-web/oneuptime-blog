@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure SQL, Azure Monitor, Performance Monitoring, Metrics, Alerts, Database, Observability
+Tags: Azure SQL, Azure Monitor, Performance Monitoring, Metric, Alert, Database, Observability
 
 Description: Learn how to use Azure Monitor to track Azure SQL Database performance metrics, set up alerts, create dashboards, and diagnose performance issues.
 

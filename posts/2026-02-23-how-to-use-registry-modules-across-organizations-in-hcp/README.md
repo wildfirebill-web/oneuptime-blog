@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Registry, Modules, Organization Management
+Tags: Terraform, HCP Terraform, Registry, Module, Organization Management
 
 Description: Learn how to share and consume Terraform registry modules across multiple HCP Terraform organizations for reusable infrastructure.
 

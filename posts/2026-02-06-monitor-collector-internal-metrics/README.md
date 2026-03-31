@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Monitoring, Metrics, Observability, Prometheus
+Tags: OpenTelemetry, Collector, Monitoring, Metric, Observability, Prometheus
 
 Description: Comprehensive guide to monitoring OpenTelemetry Collector health and performance using internal metrics, including configuration, key metrics, and alerting strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NATS, Messaging, Queue Groups, Distributed Systems, Microservices, Node.js, Go
+Tags: NATS, Messaging, Queue Groups, Distributed System, Microservice, Node.js, Go
 
 Description: Learn how to implement queue groups in NATS for load balancing message processing across multiple subscribers. Covers setup, implementation patterns, error handling, and production best practices.
 

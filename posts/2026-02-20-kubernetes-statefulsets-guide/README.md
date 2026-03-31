@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, StatefulSets, Stateful, Database, Workloads
+Tags: Kubernetes, StatefulSet, Stateful, Database, Workload
 
 Description: A comprehensive guide to Kubernetes StatefulSets including ordered deployment, stable network identities, and persistent storage.
 

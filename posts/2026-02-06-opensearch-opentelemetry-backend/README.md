@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OpenSearch, Observability, Backend, Logs, Traces, Open Source
+Tags: OpenTelemetry, OpenSearch, Observability, Backend, Log, Trace, Open Source
 
 Description: A hands-on guide to deploying OpenSearch as a fully open-source backend for OpenTelemetry traces and logs with Collector configuration and dashboards.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Step Functions, Saga Pattern, Microservices, Distributed Transactions, Serverless
+Tags: AWS, Step Functions, Saga Pattern, Microservice, Distributed Transaction, Serverless
 
 Description: Learn how to implement the saga orchestration pattern using AWS Step Functions for reliable distributed transactions
 

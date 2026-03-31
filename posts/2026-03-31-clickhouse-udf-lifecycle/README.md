@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, UDF, Lifecycle, Create, Drop, Replace
+Tags: ClickHouse, UDF, Lifecycle, Create, DROP, Replace
 
 Description: Learn how to manage the full lifecycle of UDFs in ClickHouse, including creating, replacing, dropping, and versioning SQL and executable UDFs.
 

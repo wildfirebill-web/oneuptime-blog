@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Go, Sessions, Authentication, Gorilla
+Tags: Redis, Go, Session, Authentication, Gorilla
 
 Description: Implement server-side session storage in Go using Redis with the gorilla/sessions library and a Redis-backed store for scalable session management.
 

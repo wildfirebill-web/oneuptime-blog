@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $lookup, Multiple Joins, Aggregation, Collections
+Tags: MongoDB, $lookup, Multiple Joins, Aggregation, Collection
 
 Description: Learn how to chain multiple $lookup stages in a MongoDB aggregation pipeline to join three or more collections in a single query.
 

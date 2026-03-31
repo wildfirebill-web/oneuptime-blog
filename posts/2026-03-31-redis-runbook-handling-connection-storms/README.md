@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Connections, Runbook
+Tags: Redis, Connection, Runbook
 
 Description: Runbook for diagnosing and mitigating Redis connection storms - covering detection, client limits, connection pooling, and graceful recovery steps.
 

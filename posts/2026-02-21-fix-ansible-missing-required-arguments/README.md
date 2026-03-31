@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Troubleshooting, Modules, Configuration, DevOps
+Tags: Ansible, Troubleshooting, Module, Configuration, DevOps
 
 Description: Resolve Ansible missing required arguments errors by checking module documentation, adding mandatory parameters, and fixing task syntax.
 

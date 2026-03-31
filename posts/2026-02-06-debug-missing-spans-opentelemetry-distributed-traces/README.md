@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Tracing, Distributed Traces, Missing Spans, Debugging, Observability
+Tags: OpenTelemetry, Tracing, Distributed Trace, Missing Spans, Debugging, Observability
 
 Description: Learn how to find and fix missing spans in OpenTelemetry distributed traces with practical debugging techniques for context propagation, sampling, and instrumentation gaps.
 

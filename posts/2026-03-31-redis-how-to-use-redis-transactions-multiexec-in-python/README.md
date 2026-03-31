@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Python, Transactions, MULTI, EXEC, WATCH, Atomicity
+Tags: Redis, Python, Transaction, MULTI, EXEC, Watch, Atomicity
 
 Description: Learn how to use Redis MULTI/EXEC transactions in Python with redis-py, including WATCH for optimistic locking and error handling patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Resource Manager, Tags, Cost Management, Cloud Governance, Azure Policy, FinOps
+Tags: Azure, Resource Manager, Tag, Cost Management, Cloud Governance, Azure Policy, FinOps
 
 Description: Learn how to use Azure Resource Manager tags to organize resources, track costs, and enforce governance policies across your Azure environment.
 

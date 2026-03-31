@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Span Naming, Conventions, Standardization, Distributed Tracing, Best Practice
+Tags: OpenTelemetry, Span Naming, Convention, Standardization, Distributed Tracing, Best Practice
 
 Description: Learn how to define and enforce consistent span naming conventions across all teams and services in your organization for better trace analysis.
 

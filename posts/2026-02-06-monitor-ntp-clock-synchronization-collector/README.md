@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, NTP, Time Synchronization, Clock Drift, Metrics, Infrastructure, Observability
+Tags: OpenTelemetry, Collector, NTP, Time Synchronization, Clock Drift, Metric, Infrastructure, Observability
 
 Description: Learn how to monitor NTP clock synchronization using the OpenTelemetry Collector to detect clock drift and time sync failures across your infrastructure.
 

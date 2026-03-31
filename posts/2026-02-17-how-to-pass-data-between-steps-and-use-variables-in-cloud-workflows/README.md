@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Workflows, Variables, Serverless, Orchestration
+Tags: GCP, Cloud Workflows, Variable, Serverless, Orchestration
 
 Description: A practical guide to passing data between steps, assigning variables, and managing state in Google Cloud Workflows for building reliable orchestration pipelines.
 

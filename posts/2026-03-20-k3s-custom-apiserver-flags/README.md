@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Kube-apiserver, Configuration, Security, DevOps
+Tags: k3s, Kubernetes, Kube-apiserver, Configuration, Security, DevOps
 
 Description: Learn how to pass custom kube-apiserver flags in K3s to enable advanced features, security hardening, and compliance configurations.
 

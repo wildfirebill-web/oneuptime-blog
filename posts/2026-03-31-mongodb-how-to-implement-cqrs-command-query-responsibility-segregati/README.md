@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, CQRS, Architecture, Node.js, Design Patterns
+Tags: MongoDB, CQRS, Architecture, Node.js, Design Pattern
 
 Description: Learn how to implement Command Query Responsibility Segregation (CQRS) with MongoDB using separate write and read models for optimized performance.
 

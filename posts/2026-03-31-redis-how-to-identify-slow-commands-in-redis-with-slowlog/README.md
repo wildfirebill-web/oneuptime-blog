@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Performance, Slowlog, Debugging, Monitoring
+Tags: Redis, Performance, SLOWLOG, Debugging, Monitoring
 
 Description: Learn how to configure and use the Redis SLOWLOG to identify slow commands, analyze execution times, and fix performance bottlenecks in production.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Tracing, Traces, Observability, TypeScript, NodeJS
+Tags: OpenTelemetry, Tracing, Trace, Observability, TypeScript, NodeJS
 
 Description: Understand OpenTelemetry traces and spans with real code examples. Instrument Node.js/TypeScript apps for distributed tracing and faster debugging.
 

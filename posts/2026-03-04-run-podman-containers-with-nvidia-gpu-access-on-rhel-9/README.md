@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Containers, GPU, Linux
+Tags: RHEL, Podman, Container, GPU, Linux
 
 Description: Step-by-step guide on run podman containers with nvidia gpu access using Red Hat Enterprise Linux 9.
 

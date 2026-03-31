@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, DynamoDB, AWS, Monitoring, Metrics, Database
+Tags: OpenTelemetry, DynamoDB, AWS, Monitoring, Metric, Database
 
 Description: A practical guide to monitoring DynamoDB read and write capacity units using OpenTelemetry custom metrics and AWS SDK instrumentation.
 

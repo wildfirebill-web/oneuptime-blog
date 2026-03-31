@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, TF_LOG, Debug Logging, Troubleshooting, Environment Variables, Infrastructure as Code
+Tags: OpenTofu, TF_LOG, Debug Logging, Troubleshooting, Environment Variable, Infrastructure as Code
 
 Description: Learn how to use the TF_LOG environment variable to enable debug logging in OpenTofu for troubleshooting provider issues, API calls, and configuration errors.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Isolation
+Tags: Podman, Container, DevOps, Networking, Isolation
 
 Description: Learn how to disconnect containers from Podman networks to change network topology or isolate services.
 

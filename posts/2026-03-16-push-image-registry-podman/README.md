@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Registry
+Tags: Podman, Container, DevOps, Container Image, Registry
 
 Description: Learn how to push container images to registries using Podman, including authentication, tagging for registries, and verifying pushed images.
 

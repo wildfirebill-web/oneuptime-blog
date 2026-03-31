@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Metrics, Gauge, Prometheus, Current Values
+Tags: Metric, Gauge, Prometheus, Current Values
 
 Description: Learn to implement gauge metrics design for tracking point-in-time values.
 

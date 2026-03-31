@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, CTE, Common Table Expressions, SQL, Query Optimization
+Tags: MySQL, CTE, Common Table Expression, SQL, Query Optimization
 
 Description: Learn how to use Common Table Expressions (CTEs) in MySQL 8 to write cleaner, more readable, and reusable SQL queries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Orchestration
+Tags: Podman, Container, DevOps, Pod, Orchestration
 
 Description: Learn how to create pods in Podman to group related containers that share networking and resources.
 

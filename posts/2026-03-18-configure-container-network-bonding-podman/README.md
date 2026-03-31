@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Networking, Network Bonding, Containers, High Availability
+Tags: Podman, Networking, Network Bonding, Container, High Availability
 
 Description: Learn how to configure network bonding for Podman containers to achieve redundancy, increased throughput, and fault tolerance across multiple network interfaces.
 

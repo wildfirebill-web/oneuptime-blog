@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microsoft Teams, Azure Communication Services, Cognitive Services, Transcription, Speech-to-Text, Azure Functions, AI
+Tags: Microsoft Teams, Azure Communication Services, Cognitive Services, Transcription, Speech-to-Text, Azure Function, AI
 
 Description: Build an automated meeting transcription pipeline that captures Teams meeting audio and converts it to searchable text using Azure Cognitive Services.
 

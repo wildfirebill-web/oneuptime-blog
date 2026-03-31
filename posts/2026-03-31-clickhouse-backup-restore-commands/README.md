@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Backup, RESTORE, Disaster Recovery, SQL
+Tags: ClickHouse, Backup, Restore, BACKUP Command, Data Protection
 
-Description: Learn how to use ClickHouse's native BACKUP and RESTORE SQL commands to create and restore backups of databases, tables, and partitions.
+Description: A practical guide to using ClickHouse's native BACKUP and RESTORE SQL commands to protect your data across disk and S3 destinations.
 
 ---
 

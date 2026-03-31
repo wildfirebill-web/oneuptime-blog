@@ -2,7 +2,7 @@
 
 Author: [devneelpatel](https://www.github.com/devneelpatel)
 
-Tags: Observability, OpenTelemetry, Logs, Metrics, Traces, Open Source
+Tags: Observability, OpenTelemetry, Log, Metric, Trace, Open Source
 
 Description: A journey from firefighting in the dark to calm, data-driven operations by unifying metrics, logs, and traces with OpenTelemetry.
 

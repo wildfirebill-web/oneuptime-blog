@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Registry
+Tags: Podman, Container, DevOps, Container Image, Registry
 
 Description: Learn how to search for container images in registries using Podman, including searching Docker Hub, Quay.io, and other OCI registries.
 

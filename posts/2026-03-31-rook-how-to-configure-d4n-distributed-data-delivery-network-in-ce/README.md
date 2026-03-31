@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, RGW, D4N, Caching, Object Storage
+Tags: Ceph, Rook, RGW, D4N, Caching
 
-Description: Configure D4N (Distributed Data Delivery Network) in Ceph RGW to enable distributed caching of object data using Redis for improved read performance and reduced backend load.
+Description: Configure D4N (Distributed Data Delivery Network) in Ceph RGW to enable distributed caching of object data using Redis for improved read performance.
 
 ---
 

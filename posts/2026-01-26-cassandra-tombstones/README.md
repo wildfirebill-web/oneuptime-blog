@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cassandra, Database, NoSQL, Performance, Data Management, Distributed Systems, DevOps
+Tags: Cassandra, Database, NoSQL, Performance, Data Management, Distributed System, DevOps
 
 Description: Learn how to identify, manage, and prevent tombstone accumulation in Apache Cassandra to maintain optimal query performance and cluster health.
 

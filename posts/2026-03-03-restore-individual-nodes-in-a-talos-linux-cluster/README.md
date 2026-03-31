@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Node Recovery, Kubernetes, Cluster Management, Operations
+Tags: Talos Linux, Node Recovery, Kubernetes, Cluster Management, Operation
 
 Description: A complete guide to restoring individual worker and control plane nodes in a Talos Linux cluster after failures, with step-by-step recovery procedures.
 

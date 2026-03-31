@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Service Accounts, Monitoring
+Tags: Calico, Kubernetes, Network Policy, Service Account, Monitoring
 
 Description: Monitor Calico service account-based network policies to track SA coverage, identity-based traffic decisions, and unauthorized access attempts.
 

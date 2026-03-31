@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Event Sourcing, EventStoreDB, CQRS, Domain-Driven Design, Event-Driven Architecture, Microservices
+Tags: Python, Event Sourcing, EventStoreDB, CQRS, Domain-Driven Design, Event-Driven Architecture, Microservice
 
 Description: Learn how to build event-sourced applications in Python using EventStoreDB.
 

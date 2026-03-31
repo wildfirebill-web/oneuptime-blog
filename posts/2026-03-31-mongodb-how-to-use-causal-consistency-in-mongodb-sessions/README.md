@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Causal Consistency, Sessions, Replica Sets, Read Your Writes
+Tags: MongoDB, Causal Consistency, Session, Replica Set, Read Your Writes
 
 Description: Learn how to use MongoDB causally consistent sessions to guarantee that reads always reflect your own prior writes in a replica set.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, DynamoDB, Global Tables, Multi-Region, Replication, Infrastructure as Code
+Tags: OpenTofu, AWS, DynamoDB, Global Table, Multi-Region, Replication, Infrastructure as Code
 
 Description: Learn how to configure DynamoDB Global Tables with OpenTofu to enable multi-region active-active replication for low-latency access and disaster recovery.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, GitHub Actions, Act, CI/CD, DevOps, Local Testing, Automation
+Tags: Docker, GitHub Action, Act, CI/CD, DevOps, Local Testing, Automation
 
 Description: Use act to run and debug GitHub Actions workflows locally in Docker containers, saving time on commit-push-wait cycles.
 

@@ -1,6 +1,6 @@
 # How to Configure Custom Health Checks for DaemonSets in Flux Kustomization
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux, GitOps, Kubernetes, Health Check, DaemonSet, Kustomization
 

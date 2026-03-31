@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, CI/CD, DevOps, GitHub Actions, GitLab CI, Jenkins, Automation
+Tags: Ansible, CI/CD, DevOps, GitHub Action, GitLab CI, Jenkins, Automation
 
 Description: Integrate Ansible into your CI/CD pipelines for automated testing, deployment, and infrastructure provisioning with GitHub Actions, GitLab CI, and Jenkins.
 

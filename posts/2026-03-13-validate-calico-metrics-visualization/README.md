@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Grafana, Validation
+Tags: Calico, Kubernetes, Networking, Metric, Grafana, Validation
 
 Description: Validate that Calico Grafana dashboards are correctly displaying data, all panels are populated, and visualization accurately reflects cluster network state.
 

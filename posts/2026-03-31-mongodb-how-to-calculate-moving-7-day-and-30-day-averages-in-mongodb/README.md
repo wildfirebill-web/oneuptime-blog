@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Moving Average, Window Functions, Analytics
+Tags: MongoDB, Aggregation, Moving Average, Window Function, Analytics
 
 Description: Learn how to compute rolling 7-day and 30-day moving averages in MongoDB using $setWindowFields and document-based window calculations.
 

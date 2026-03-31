@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Documentation, Operations, Handover
+Tags: Ceph, Rook, Documentation, Operation, Handover
 
 Description: Create a comprehensive Ceph operational handover document covering cluster topology, access credentials, routine procedures, runbooks, and escalation contacts.
 

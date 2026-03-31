@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Logging, Log Rotation, Kubernetes, Operations
+Tags: Istio, Logging, Log Rotation, Kubernetes, Operation
 
 Description: Practical guide to setting up log rotation for Istio control plane and data plane components to prevent disk exhaustion and manage log storage effectively.
 

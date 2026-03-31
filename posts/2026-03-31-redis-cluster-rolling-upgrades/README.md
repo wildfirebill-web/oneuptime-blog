@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Upgrade, Rolling, Operations
+Tags: Redis, Cluster, Upgrade, Rolling, Operation
 
 Description: Learn how to upgrade Redis Cluster nodes one at a time using a rolling upgrade strategy to minimize downtime and maintain availability throughout.
 

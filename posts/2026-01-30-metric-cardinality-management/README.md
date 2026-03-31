@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Metrics, Cardinality, Prometheus, Cost
+Tags: Metric, Cardinality, Prometheus, Cost
 
 Description: Learn to create metric cardinality management for controlling metric explosion.
 

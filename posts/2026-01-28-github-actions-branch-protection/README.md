@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Branch Protection, CI/CD, Security, DevOps
+Tags: GitHub Action, Branch Protection, CI/CD, Security, DevOps
 
 Description: Learn how to enforce branch protection with GitHub Actions, required checks, and merge policies to keep your main branch safe.
 

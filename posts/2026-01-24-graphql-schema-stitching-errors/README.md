@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: GraphQL, Schema Stitching, Federation, Microservices, API Gateway, Node.js, Apollo
+Tags: GraphQL, Schema Stitching, Federation, Microservice, API Gateway, Node.js, Apollo
 
 Description: Learn how to diagnose and fix common schema stitching errors when combining multiple GraphQL schemas into a unified API.
 

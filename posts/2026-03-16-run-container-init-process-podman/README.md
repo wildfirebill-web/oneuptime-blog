@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Init Process, Process Management
+Tags: Podman, Container, DevOps, Init Process, Process Management
 
 Description: Learn how to use an init process in Podman containers to properly handle signals, reap zombie processes, and ensure clean shutdowns.
 

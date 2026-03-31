@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Window, Templates, Jinja2, Configuration Management
+Tags: Ansible, Window, Template, Jinja2, Configuration Management
 
 Description: Generate dynamic configuration files on Windows hosts using the Ansible win_template module with Jinja2 templates and variables.
 

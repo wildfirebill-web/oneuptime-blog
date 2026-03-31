@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Permissions, Storage
+Tags: Podman, Container, DevOps, Volumes, Permission, Storage
 
 Description: Learn how to set and manage volume permissions in Podman to ensure containers can properly read and write data.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Architecture, Single-Threaded, Performance, Internals
+Tags: Redis, Architecture, Single-Threaded, Performance, Internal
 
 Description: Understand how Redis achieves high throughput with a single-threaded event loop, what operations are truly single-threaded, and where Redis uses multiple threads.
 

@@ -1,6 +1,6 @@
 # How to Use Markdown Format in ClickHouse
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Format, Markdown, Output, Reporting
 

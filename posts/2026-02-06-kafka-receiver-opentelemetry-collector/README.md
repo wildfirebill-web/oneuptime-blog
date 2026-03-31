@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Kafka, Message Queues, Distributed Systems, Observability
+Tags: OpenTelemetry, Collector, Kafka, Message Queue, Distributed System, Observability
 
 Description: Master the Kafka receiver in OpenTelemetry Collector for consuming telemetry data from Apache Kafka. Includes configuration examples, consumer group setup, and performance tuning.
 

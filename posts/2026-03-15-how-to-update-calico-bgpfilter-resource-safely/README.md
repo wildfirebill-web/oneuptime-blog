@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, BGP, BGPFilter, Kubernetes, Networking, Operations, DevOps
+Tags: Calico, BGP, BGPFilter, Kubernetes, Networking, Operation, DevOps
 
 Description: Safely update the Calico BGPFilter resource to modify route filtering rules without causing unintended route leaks or connectivity loss.
 

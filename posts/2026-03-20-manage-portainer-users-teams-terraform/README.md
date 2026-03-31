@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Terraform, Users, Teams, Access Control
+Tags: Portainer, Terraform, Users, Team, Access Control
 
 Description: Learn how to define and manage Portainer users, teams, and team memberships using Terraform for consistent, version-controlled access control.
 

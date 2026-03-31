@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Docker Compose, IPv6, Networking, Services
+Tags: Docker, Docker Compose, IPv6, Networking, Service
 
 Description: Configure Docker Compose services with IPv6 networking, define IPv6 subnets in Compose network definitions, and connect multi-container applications over IPv6.
 

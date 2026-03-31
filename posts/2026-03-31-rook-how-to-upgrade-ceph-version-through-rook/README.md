@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Upgrades, Kubernetes, Cluster Management
+Tags: Rook, Ceph, Upgrade, Kubernetes, Cluster Management
 
 Description: Learn how to upgrade the Ceph version in a Rook-managed cluster by updating the container image tag and monitoring the rolling upgrade process.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Performance, Benchmark, Monitoring, Operations
+Tags: Redis, Performance, Benchmark, Monitoring, Operation
 
 Description: Learn how to use redis-benchmark to measure Redis throughput and latency across commands, data sizes, and concurrency levels to validate performance before and after changes.
 

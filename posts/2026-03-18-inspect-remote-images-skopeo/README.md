@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Skopeo, Registry, Image Inspection
+Tags: Podman, Container, DevOps, Skopeo, Registry, Image Inspection
 
 Description: Learn how to use Skopeo to inspect container images in remote registries without downloading them to your local machine.
 

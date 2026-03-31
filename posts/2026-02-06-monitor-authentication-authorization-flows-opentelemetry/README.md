@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Authentication, Authorization, Security, OAuth, RBAC, Tracing, Metrics, Observability
+Tags: OpenTelemetry, Authentication, Authorization, Security, OAuth, RBAC, Tracing, Metric, Observability
 
 Description: Learn how to instrument authentication and authorization flows with OpenTelemetry to detect failures, track token lifecycle, monitor RBAC decisions, and improve security observability.
 

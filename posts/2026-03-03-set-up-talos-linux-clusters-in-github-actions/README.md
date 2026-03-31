@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, GitHub Actions, CI/CD, Kubernetes, Automated Testing
+Tags: Talos Linux, GitHub Action, CI/CD, Kubernetes, Automated Testing
 
 Description: A practical guide to creating Talos Linux Kubernetes clusters inside GitHub Actions workflows for automated integration testing and deployment validation.
 

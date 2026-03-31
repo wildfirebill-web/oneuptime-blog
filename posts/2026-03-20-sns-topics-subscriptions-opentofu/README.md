@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, SNS, Pub/Sub, Messaging, Infrastructure as Code, Notifications
+Tags: OpenTofu, AWS, SNS, Pub/Sub, Messaging, Infrastructure as Code, Notification
 
 Description: Learn how to create AWS SNS topics, subscriptions, and access policies using OpenTofu for reliable pub/sub messaging between services and notification delivery.
 

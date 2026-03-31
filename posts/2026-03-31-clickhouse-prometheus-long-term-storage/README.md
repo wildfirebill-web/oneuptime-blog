@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Prometheus, Long-Term Storage, Observability, Metrics
+Tags: ClickHouse, Prometheus, Long-Term Storage, Observability, Metric
 
 Description: Learn how to configure ClickHouse as a remote write storage backend for Prometheus to retain metrics for months or years at low cost.
 

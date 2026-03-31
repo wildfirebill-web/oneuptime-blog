@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Rollback, Services, DevOps
+Tags: Portainer, Docker Swarm, Rollback, Service, DevOps
 
 Description: Learn how to configure automatic and manual rollback for Docker Swarm services in Portainer to recover quickly from failed deployments.
 

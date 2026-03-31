@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Consul, Service Discovery, Microservices, HashiCorp
+Tags: Go, Consul, Service Discovery, Microservice, HashiCorp
 
 Description: Learn how to build a production-ready Consul service discovery client in Go that handles service registration, health checks, and dynamic service lookup for microservices architectures.
 

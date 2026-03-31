@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, IPAM, IP Reservation, Large Clusters, Networking, Optimization
+Tags: Calico, Kubernetes, IPAM, IP Reservation, Large Cluster, Networking, Optimization
 
 Description: Learn how to optimize IP address reservation in Calico IPAM for large clusters to prevent conflicts with infrastructure IPs, reserve addresses for critical workloads, and manage IP space efficiently.
 

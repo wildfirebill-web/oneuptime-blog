@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: PHP, Laravel, Email, SMTP, Notifications
+Tags: PHP, Laravel, Email, SMTP, Notification
 
 Description: Learn how to configure and send emails in Laravel using various mail drivers, Mailables, queued emails, and testing strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Prometheus, AlertManager, Monitoring, Alert, Observability
+Tags: ClickHouse, Prometheus, Alertmanager, Monitoring, Alert, Observability
 
 Description: Learn how to configure Prometheus alerting rules for ClickHouse and route them through AlertManager to Slack, PagerDuty, and email with inhibition and grouping strategies.
 

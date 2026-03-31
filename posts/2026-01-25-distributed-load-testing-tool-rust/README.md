@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Load Testing, Distributed Systems, Performance, Testing
+Tags: Rust, Load Testing, Distributed System, Performance, Testing
 
 Description: A practical guide to building a distributed load testing tool in Rust that can simulate thousands of concurrent users across multiple nodes.
 

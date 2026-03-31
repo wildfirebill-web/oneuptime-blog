@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Attributes, Truncation, SDK
+Tags: OpenTelemetry, Attribute, Truncation, SDK
 
 Description: Troubleshoot and fix span attribute value truncation caused by SDK attribute length limits that silently cut long values.
 

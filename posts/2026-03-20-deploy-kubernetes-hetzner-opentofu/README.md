@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Hetzner Cloud, Kubernetes, K3s, Infrastructure as Code
+Tags: OpenTofu, Hetzner Cloud, Kubernetes, k3s, Infrastructure as Code
 
 Description: Learn how to deploy a Kubernetes cluster on Hetzner Cloud with OpenTofu using k3s for a lightweight, cost-effective managed-like experience.
 

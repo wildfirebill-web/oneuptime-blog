@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Bitmap, bitmapContains, Set Membership, Sql
+Tags: ClickHouse, Bitmap, bitmapContains, Set Membership, SQL
 
 Description: Learn how to use bitmapContains() in ClickHouse to efficiently check if a specific integer is present in a bitmap for set membership queries.
 

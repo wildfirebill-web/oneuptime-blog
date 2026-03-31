@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, GitHub, CI/CD, App Services
+Tags: MongoDB, Atlas, GitHub, CI/CD, App Service
 
 Description: Learn how to connect MongoDB Atlas App Services to a GitHub repository to enable automatic deployments when you push configuration changes to your main branch.
 

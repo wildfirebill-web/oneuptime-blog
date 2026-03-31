@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, MergeTree, Performance, Settings, Configuration, Optimization, SQL
+Tags: ClickHouse, MergeTree, Performance, Setting, Configuration, Optimization, SQL
 
 Description: Learn the key MergeTree table settings in ClickHouse that control merge behavior, compression, part size, and query performance for optimal throughput.
 

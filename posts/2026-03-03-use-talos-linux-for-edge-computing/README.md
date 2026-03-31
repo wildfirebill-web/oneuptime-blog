@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Edge Computing, Kubernetes, IoT, Distributed Systems
+Tags: Talos Linux, Edge Computing, Kubernetes, IoT, Distributed System
 
 Description: Discover how to deploy and manage Talos Linux clusters at the edge, covering network constraints, offline operation, remote management, and workload scheduling strategies.
 

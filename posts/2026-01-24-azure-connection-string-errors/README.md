@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Connection Strings, Troubleshooting, Storage, SQL, Service Bus, DevOps
+Tags: Azure, Connection String, Troubleshooting, Storage, SQL, Service Bus, DevOps
 
 Description: A practical guide to diagnosing and fixing common Azure connection string errors across storage accounts, SQL databases, and messaging services.
 

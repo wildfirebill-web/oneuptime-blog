@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Gaming, Leaderboard, Schema, Real-time
+Tags: MongoDB, Gaming, Leaderboard, Schema, Real-Time
 
 Description: Learn how to design MongoDB schemas and queries for gaming backends including player profiles, leaderboards, game state persistence, and achievement tracking.
 

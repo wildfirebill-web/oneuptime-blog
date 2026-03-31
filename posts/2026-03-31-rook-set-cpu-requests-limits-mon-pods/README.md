@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Monitor, CPU, Resources, Pod
+Tags: Rook, Ceph, Kubernetes, Monitor, CPU, Resource, Pod
 
 Description: Configure CPU requests and limits for Rook-Ceph MON (monitor) pods in Kubernetes to ensure stable cluster quorum and prevent resource contention with other workloads.
 

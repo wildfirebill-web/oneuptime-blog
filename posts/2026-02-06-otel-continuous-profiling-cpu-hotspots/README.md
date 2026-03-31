@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Continuous Profiling, CPU Profiling, Performance Optimization, Traces
+Tags: OpenTelemetry, Continuous Profiling, CPU Profiling, Performance Optimization, Trace
 
 Description: Use OpenTelemetry continuous profiling to identify CPU hotspots and correlate them with slow trace spans for targeted performance optimization.
 

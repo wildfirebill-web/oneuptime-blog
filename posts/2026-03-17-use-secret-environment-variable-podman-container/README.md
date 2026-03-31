@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Environment Variables, Security
+Tags: Podman, Container, DevOps, Secret, Environment Variable, Security
 
 Description: Learn how to expose Podman secrets as environment variables inside containers for applications that read configuration from the environment.
 

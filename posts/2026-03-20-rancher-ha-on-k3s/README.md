@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, K3s, High Availability, Kubernetes, Lightweight, Edge
+Tags: Rancher, k3s, High Availability, Kubernetes, Lightweight, Edge
 
 Description: Deploy Rancher in HA mode on K3s for resource-constrained environments using embedded etcd, minimal node requirements, and a simple load balancer.
 

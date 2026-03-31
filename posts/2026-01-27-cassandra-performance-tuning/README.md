@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cassandra, Database, Performance Tuning, NoSQL, JVM, Compaction, Caching, Distributed Systems
+Tags: Cassandra, Database, Performance Tuning, NoSQL, JVM, Compaction, Caching, Distributed System
 
 Description: A comprehensive guide to tuning Apache Cassandra for optimal performance, covering JVM settings, compaction strategies, memory configuration, read/write path optimization, and hardware considerations.
 

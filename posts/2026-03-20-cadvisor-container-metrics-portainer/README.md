@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, cAdvisor, Monitoring, Docker, Metrics, Observability
+Tags: Portainer, cAdvisor, Monitoring, Docker, Metric, Observability
 
 Description: Learn how to deploy cAdvisor alongside Portainer to collect and expose per-container resource metrics for Prometheus scraping.
 

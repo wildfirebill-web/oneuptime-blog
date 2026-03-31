@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Transaction, Read concern, Consistency, Replica set
+Tags: MongoDB, Transaction, Read Concern, Consistency, Replica Set
 
 Description: Learn how to choose the right read concern level for MongoDB transactions to balance data freshness, isolation, and performance.
 

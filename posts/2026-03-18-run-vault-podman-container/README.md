@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Vault, Secrets Management, Security, HashiCorp
+Tags: Podman, Container, DevOps, Vault, Secrets Management, Security, HashiCorp
 
 Description: Learn how to run HashiCorp Vault in a Podman container for secrets management with persistent storage, policies, and secret engines.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Sockets, IPv4, TCP, Timeout, Networking, Std::net
+Tags: Rust, Socket, IPv4, TCP, Timeout, Networking, Std::net
 
 Description: Configure read and write timeouts on Rust TcpStream sockets over IPv4 using set_read_timeout and set_write_timeout to prevent blocking operations from hanging indefinitely.
 

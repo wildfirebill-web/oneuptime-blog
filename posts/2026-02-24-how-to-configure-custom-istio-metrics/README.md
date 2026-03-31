@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Custom Metrics, Telemetry, Envoy, Prometheus
+Tags: Istio, Custom Metric, Telemetry, Envoy, Prometheus
 
 Description: Create custom metrics in Istio using the Telemetry API and EnvoyFilter to track business-specific measurements beyond the standard Istio metrics.
 

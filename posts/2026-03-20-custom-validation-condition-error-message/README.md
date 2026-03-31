@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Validation, Variables, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Validation, Variable, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to write precise custom validation conditions and helpful error messages for OpenTofu variables to guide users toward valid configurations.
 

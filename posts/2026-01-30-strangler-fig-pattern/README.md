@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Microservices, Migration, Refactoring, Patterns
+Tags: Microservice, Migration, Refactoring, Pattern
 
 Description: A practical guide to incrementally migrating legacy systems using the Strangler Fig pattern with routing, facades, and parallel running strategies.
 

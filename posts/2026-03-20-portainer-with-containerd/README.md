@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Containerd, Kubernetes, CRI, Containers
+Tags: Portainer, Containerd, Kubernetes, CRI, Container
 
 Description: Deploy and configure Portainer to manage containers running directly on containerd without requiring the Docker daemon.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Image Factory, System Extensions, Kubernetes, Custom Images
+Tags: Talos Linux, Image Factory, System Extensions, Kubernetes, Custom Image
 
 Description: Learn how to use Talos Image Factory to build custom installer images with system extensions for seamless Talos Linux upgrades.
 

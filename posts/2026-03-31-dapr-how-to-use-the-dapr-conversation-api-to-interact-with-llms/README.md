@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Conversation API, LLM, AI, Microservices
+Tags: Dapr, Conversation API, LLM, AI, Microservice
 
 Description: Learn how to use the Dapr Conversation API to send prompts to large language models like OpenAI GPT from your microservices with a unified, provider-agnostic interface.
 

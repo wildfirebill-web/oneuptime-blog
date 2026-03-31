@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Aggregation, Variable
 
-Description: Learn how to use MongoDB's built-in system variables $$ROOT, $$CURRENT, $$NOW, $$CLUSTER_TIME, and $$REMOVE in aggregation pipelines.
+Description: Learn how to use MongoDB built-in system variables $$ROOT, $$CURRENT, $$NOW, $$CLUSTER_TIME, and $$REMOVE in aggregation pipelines.
 
 ---
 

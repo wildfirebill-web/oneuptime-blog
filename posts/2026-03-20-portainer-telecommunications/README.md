@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Telecommunications, NFV, 5G, Network Functions
+Tags: Portainer, Telecommunications, NFV, 5G, Network Function
 
 Description: Deploy and manage Network Function Virtualization (NFV) and telecom-grade containerized workloads using Portainer for multi-site telecommunications infrastructure.
 

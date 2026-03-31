@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NFS, IPv4, Mount, Linux, Client, File Systems
+Tags: NFS, IPv4, Mount, Linux, Client, File System
 
 Description: Mount an NFS share from an IPv4 server address using the mount command, specify NFS version and mount options, and verify the mounted filesystem.
 

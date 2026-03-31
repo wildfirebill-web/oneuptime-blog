@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Expiration, TTL, Commands, Key Management
+Tags: Redis, Expiration, TTL, Command, Key Management
 
 Description: Learn how to use EXPIRETIME and PEXPIRETIME in Redis to retrieve the absolute Unix timestamp at which a key will expire, added in Redis 7.0.
 

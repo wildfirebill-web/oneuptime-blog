@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, VS Code, Local Development, Developer Tools, Azure, Debugging, Setup
+Tags: Azure Function, VS Code, Local Development, Developer Tool, Azure, Debugging, Setup
 
 Description: Complete guide to setting up a productive local development environment for Azure Functions using VS Code with debugging, testing, and local storage emulation.
 

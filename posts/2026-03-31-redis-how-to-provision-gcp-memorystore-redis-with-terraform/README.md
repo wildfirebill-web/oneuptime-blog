@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, GCP, Terraform, Memorystore, Infrastructure As Code
+Tags: Redis, GCP, Terraform, Memorystore, Infrastructure as Code
 
 Description: Learn how to provision Google Cloud Memorystore for Redis using Terraform, including VPC configuration, replica count, auth, and maintenance windows.
 

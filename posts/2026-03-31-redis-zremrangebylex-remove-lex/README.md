@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted set, ZREMRANGEBYLEX, Command
+Tags: Redis, Sorted Set, ZREMRANGEBYLEX, Command
 
 Description: Learn how to use ZREMRANGEBYLEX in Redis to remove members from a sorted set by lexicographic range when all members share the same score.
 

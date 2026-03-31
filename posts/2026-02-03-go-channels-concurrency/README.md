@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Concurrency, Channels, Backend, DevOps
+Tags: Go, Concurrency, Channel, Backend, DevOps
 
 Description: A practical guide to Go channels covering buffered vs unbuffered channels, channel operations, select statements, and common patterns like fan-in, fan-out, and pipelines.
 

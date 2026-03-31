@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, HelmRelease, Kubernetes, GitOps, Helm, Post-Renderers, Resource Requests, Resource Limits
+Tags: Flux, HelmRelease, Kubernetes, GitOps, Helm, Post-Renderers, Resource Requests, Resource Limit
 
 Description: Learn how to override CPU and memory resource requests and limits in Helm chart containers using Flux post-renderers.
 

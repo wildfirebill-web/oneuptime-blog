@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Postfix, TLS, SMTP, IPv4, Email Security, Certificates
+Tags: Postfix, TLS, SMTP, IPv4, Email Security, Certificate
 
 Description: Configure Postfix TLS encryption for both inbound SMTP connections and outbound delivery over IPv4, protecting email in transit.
 

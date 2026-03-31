@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Distributed Systems, Data Structures, Consistency, DevOps
+Tags: Distributed System, Data Structure, Consistency, DevOps
 
 Description: A practical guide to implementing Conflict-free Replicated Data Types (CRDTs) for building distributed systems that achieve eventual consistency without coordination.
 

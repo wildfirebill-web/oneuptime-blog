@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Linux, Cross-Platform, Package Management, Variables
+Tags: Ansible, Linux, Cross-Platform, Package Management, Variable
 
 Description: Map package names across Linux distributions in Ansible so your playbooks work on Debian, RHEL, SUSE, and Arch without modification.
 

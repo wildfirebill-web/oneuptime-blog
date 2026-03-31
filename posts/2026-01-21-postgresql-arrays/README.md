@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Arrays, Data Types, SQL, Query Optimization
+Tags: PostgreSQL, Array, Data Type, SQL, Query Optimization
 
 Description: A comprehensive guide to using PostgreSQL arrays, covering array data types, array operations, array functions, indexing strategies, and practical use cases for storing and querying array data.
 

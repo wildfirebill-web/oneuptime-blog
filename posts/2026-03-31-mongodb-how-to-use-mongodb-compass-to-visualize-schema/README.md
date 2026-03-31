@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, MongoDB Compass, Schema, Data Modeling, Developer Tools
+Tags: MongoDB, MongoDB Compass, Schema, Data Modeling, Developer Tool
 
 Description: Learn how to use MongoDB Compass schema visualization to explore document structure, field types, data distributions, and identify schema inconsistencies.
 

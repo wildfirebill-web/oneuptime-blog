@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Systemd, Linux, DevOps
+Tags: Podman, Container, Systemd, Linux, DevOps
 
 Description: Learn why rootless Podman containers stop when you log out and how to fix it using loginctl enable-linger, systemd user services, and proper session management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Serverless, Kubernetes, Knative, Autoscaling, Functions
+Tags: Serverless, Kubernetes, Knative, Autoscaling, Function
 
 Description: Learn how to deploy serverless workloads on Kubernetes using Knative for auto-scaling, event-driven architectures.
 

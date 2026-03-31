@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Packer, Azure, Custom Images, Immutable Infrastructure
+Tags: OpenTofu, Packer, Azure, Custom Image, Immutable Infrastructure
 
 Description: Learn how to use Packer to build custom Azure Managed Images and reference them in OpenTofu configurations for consistent, immutable VM deployments on Azure.
 

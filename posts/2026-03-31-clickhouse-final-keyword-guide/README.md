@@ -1,6 +1,6 @@
 # What Is FINAL Keyword and When to Use It in ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, FINAL, ReplacingMergeTree, Deduplication, Query
 

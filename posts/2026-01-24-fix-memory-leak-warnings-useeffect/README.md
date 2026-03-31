@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, JavaScript, Debugging, Frontend, Hooks, Performance
+Tags: React, JavaScript, Debugging, Frontend, Hook, Performance
 
 Description: Learn how to fix memory leak warnings in React useEffect by properly cleaning up subscriptions, timers, and async operations.
 

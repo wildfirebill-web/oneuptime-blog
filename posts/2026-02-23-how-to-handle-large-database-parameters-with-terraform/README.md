@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Database, Parameters, RDS, Aurora, Performance Tuning, Infrastructure as Code
+Tags: Terraform, AWS, Database, Parameter, RDS, Aurora, Performance Tuning, Infrastructure as Code
 
 Description: Learn how to manage and tune large sets of database parameters using Terraform for RDS, Aurora, ElastiCache, and other AWS database services effectively.
 

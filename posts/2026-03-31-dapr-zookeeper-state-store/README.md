@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Zookeeper, State Store, Distributed Coordination, Microservice
+Tags: Dapr, ZooKeeper, State Store, Distributed Coordination, Microservice
 
 Description: Learn how to configure Dapr with Apache ZooKeeper as a state store for distributed coordination and configuration state in microservice architectures.
 

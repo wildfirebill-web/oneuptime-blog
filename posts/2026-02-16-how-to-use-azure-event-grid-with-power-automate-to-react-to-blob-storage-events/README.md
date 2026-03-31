@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Event Grid, Power Automate, Blob Storage, Events, Serverless, Power Platform, Azure
+Tags: Azure Event Grid, Power Automate, Blob Storage, Event, Serverless, Power Platform, Azure
 
 Description: Use Azure Event Grid to trigger Power Automate flows when blobs are created or deleted in Azure Blob Storage for automated file processing workflows.
 

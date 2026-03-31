@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, GitHub Actions, CI/CD, Docker, Automation
+Tags: Portainer, GitHub Action, CI/CD, Docker, Automation
 
 Description: Learn how to build a complete CI/CD pipeline using GitHub Actions to build Docker images and deploy them via Portainer.
 

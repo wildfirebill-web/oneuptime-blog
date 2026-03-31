@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Inventory, E-commerce, Atomic Operations, Data Modeling, Stock Management
+Tags: Redis, Inventory, E-Commerce, Atomic Operation, Data Modeling, Stock Management
 
 Description: Model inventory systems in Redis using atomic INCR/DECR, hashes, and Lua scripts to prevent overselling, track stock levels, and handle concurrent reservations.
 

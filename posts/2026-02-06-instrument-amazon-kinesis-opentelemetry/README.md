@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, AWS, Kinesis, Tracing, Streaming, Distributed Systems
+Tags: OpenTelemetry, AWS, Kinesis, Tracing, Streaming, Distributed System
 
 Description: Learn how to instrument Amazon Kinesis producers and consumers with OpenTelemetry for distributed tracing and metrics across your streaming data pipelines.
 

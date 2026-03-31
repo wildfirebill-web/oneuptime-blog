@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Lambda, Serverless, AWS, Infrastructure as Code, Functions
+Tags: OpenTofu, Lambda, Serverless, AWS, Infrastructure as Code, Function
 
 Description: Learn how to deploy AWS Lambda functions with OpenTofu - packaging code, configuring triggers, setting up IAM roles, environment variables, VPC networking, and function URLs.
 

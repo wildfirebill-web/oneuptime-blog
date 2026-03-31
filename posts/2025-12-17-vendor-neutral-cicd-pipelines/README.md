@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CI/CD, DevOps, Bash, Vendor Lock-in, Automation, GitHub Actions, GitLab CI, Jenkins
+Tags: CI/CD, DevOps, Bash, Vendor Lock-in, Automation, GitHub Action, GitLab CI, Jenkins
 
 Description: Build portable CI/CD pipelines by putting your logic in bash scripts instead of vendor-specific syntax.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, OBJECT, Internals, Memory, Debugging
+Tags: Redis, Object, Internal, Memory, Debugging
 
 Description: Learn how to use the Redis OBJECT command family to inspect key internals including encoding, reference count, idle time, and LFU frequency for memory optimization and debugging.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Observability, Configuration
+Tags: OpenTelemetry, Metric, Observability, Configuration
 
 Description: A comprehensive guide to creating and configuring OpenTelemetry Metric Views. Learn how to filter, transform, and customize your metrics pipeline with practical code examples and best practices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Microsoft Teams, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Microsoft Teams, Notification
 
 Description: Learn how to configure ArgoCD to send deployment notifications to Microsoft Teams channels using Incoming Webhooks with adaptive card formatting.
 

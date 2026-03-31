@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, UNION, UNION ALL, Set Operations, Performance, SQL
+Tags: MySQL, UNION, UNION ALL, Set Operation, Performance, SQL
 
 Description: Understand the differences between UNION and UNION ALL in MySQL and learn when to use each based on deduplication needs and performance requirements.
 

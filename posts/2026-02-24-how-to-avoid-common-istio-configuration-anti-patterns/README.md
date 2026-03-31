@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Configuration, Best Practice, Kubernetes, Anti-Patterns
+Tags: Istio, Configuration, Best Practice, Kubernetes, Anti-Pattern
 
 Description: Identify and avoid the most common Istio configuration anti-patterns that cause production issues including security gaps, performance problems, and debugging nightmares.
 

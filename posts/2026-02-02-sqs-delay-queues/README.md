@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SQS, Message Queues, Delay Queue, Serverless, Node.js, Python, Event-Driven Architecture
+Tags: AWS, SQS, Message Queue, Delay Queue, Serverless, Node.js, Python, Event-Driven Architecture
 
 Description: Learn how to implement delay queues in Amazon SQS for scheduled message processing.
 

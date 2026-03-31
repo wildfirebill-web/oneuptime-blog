@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, Streaming, Real-Time, Kafka
+Tags: Data Pipeline, Streaming, Real-Time, Kafka
 
 Description: Learn to build streaming loading for continuous data ingestion into target systems.
 

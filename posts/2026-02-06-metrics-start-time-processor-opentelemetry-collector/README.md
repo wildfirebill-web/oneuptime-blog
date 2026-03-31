@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Processor, Metrics, Start Time, Cumulative Metrics
+Tags: OpenTelemetry, Collector, Processor, Metric, Start Time, Cumulative Metrics
 
 Description: Master the Metrics Start Time processor in the OpenTelemetry Collector to correctly manage cumulative metric start times and prevent data accuracy issues.
 

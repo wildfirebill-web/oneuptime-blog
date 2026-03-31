@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Exec
+Tags: Podman, Container, DevOps, Container Exec
 
 Description: Learn how to execute commands inside a running Podman container using podman exec, including practical examples for debugging, inspection, and administration.
 

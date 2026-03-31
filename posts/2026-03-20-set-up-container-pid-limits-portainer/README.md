@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, PID Limits, Security, Resource Limits, Fork Bomb Protection
+Tags: Portainer, Docker, PID Limits, Security, Resource Limit, Fork Bomb Protection
 
 Description: Configure container PID (process ID) limits in Portainer to prevent fork bombs and runaway processes from exhausting the host's process table and causing system-wide instability.
 

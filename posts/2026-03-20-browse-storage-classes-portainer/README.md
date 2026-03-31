@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Storage Classes, Persistent Storage, DevOps
+Tags: Portainer, Kubernetes, Storage Class, Persistent Storage, DevOps
 
 Description: Learn how to view and understand Kubernetes Storage Classes in Portainer to choose the right storage for your workloads.
 

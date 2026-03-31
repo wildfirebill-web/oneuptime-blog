@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, CronJobs, OpenTofu, Batch Processing, Infrastructure
+Tags: Kubernetes, Job, CronJob, OpenTofu, Batch Processing, Infrastructure
 
 Description: Learn how to create Kubernetes Jobs and CronJobs with OpenTofu for one-time batch tasks, database migrations, and scheduled workloads.
 

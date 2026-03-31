@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Cryptography, Security, Encryption, Sdk
+Tags: Dapr, Go, Cryptography, Security, Encryption, SDK
 
 Description: Encrypt, decrypt, and sign data in Go microservices using the Dapr Cryptography building block without managing keys or crypto libraries directly.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Locust, Performance Analysis, Load Testing, Metrics, Reporting, Data Visualization
+Tags: Locust, Performance Analysis, Load Testing, Metric, Reporting, Data Visualization
 
 Description: Learn how to effectively analyze Locust test results using built-in reports, CSV exports, and custom analysis techniques.
 

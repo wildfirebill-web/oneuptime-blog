@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Services, Replicas, DevOps
+Tags: Portainer, Docker Swarm, Service, Replica, DevOps
 
 Description: Learn how to configure replica counts, placement constraints, and scheduling modes for Docker Swarm services in Portainer.
 

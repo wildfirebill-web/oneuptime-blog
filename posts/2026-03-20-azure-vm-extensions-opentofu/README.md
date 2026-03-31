@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, VM Extension, Custom Scripts, Diagnostics, Monitoring, Infrastructure as Code
+Tags: OpenTofu, Azure, VM Extension, Custom Scripts, Diagnostic, Monitoring, Infrastructure as Code
 
 Description: Learn how to configure Azure VM extensions with OpenTofu to automate post-deployment configuration, monitoring, and management tasks on Linux and Windows VMs.
 

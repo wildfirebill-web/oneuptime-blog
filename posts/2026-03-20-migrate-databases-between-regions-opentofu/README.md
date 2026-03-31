@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, RDS, Database Migrations, Multi-Region, Infrastructure as Code
+Tags: OpenTofu, AWS, RDS, Database Migration, Multi-Region, Infrastructure as Code
 
 Description: Learn how to migrate RDS databases between AWS regions using snapshots, cross-region replication, and read replicas with OpenTofu.
 

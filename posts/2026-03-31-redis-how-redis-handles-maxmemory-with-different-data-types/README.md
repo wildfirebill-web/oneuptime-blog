@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Data Types
+Tags: Redis, Memory, Data Type
 
 Description: Learn how Redis maxmemory enforcement and eviction interact with different data types - strings, hashes, lists, sets, and sorted sets.
 

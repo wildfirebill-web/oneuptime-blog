@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Security, Bind, Protected mode, Network
+Tags: Redis, Security, BIND, Protected Mode, Network
 
 Description: Learn how to configure Redis bind addresses and protected-mode to control network exposure, prevent unauthorized access, and secure your Redis deployment.
 

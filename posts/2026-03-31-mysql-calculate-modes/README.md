@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Query, Statistic
+Tags: MySQL, Query, Statistics
 
 Description: Learn how to calculate the mode (most frequently occurring value) in MySQL using GROUP BY, RANK(), and window functions for single and grouped datasets.
 

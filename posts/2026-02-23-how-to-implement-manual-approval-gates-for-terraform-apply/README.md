@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, Approval Gates, GitHub Actions, DevOps, Infrastructure as Code
+Tags: Terraform, CI/CD, Approval Gates, GitHub Action, DevOps, Infrastructure as Code
 
 Description: Learn how to implement manual approval gates before Terraform apply in CI/CD pipelines using GitHub Actions environments, GitLab manual jobs, and AWS CodePipeline approvals.
 

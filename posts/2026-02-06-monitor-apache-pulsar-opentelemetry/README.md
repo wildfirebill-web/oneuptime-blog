@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Apache Pulsar, Distributed Tracing, Messaging, Observability, Java, Metrics
+Tags: OpenTelemetry, Apache Pulsar, Distributed Tracing, Messaging, Observability, Java, Metric
 
 Description: Learn how to instrument Apache Pulsar producers and consumers with OpenTelemetry for distributed tracing and metrics collection across your messaging infrastructure.
 

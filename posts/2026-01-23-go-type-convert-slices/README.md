@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Slices, Type Conversion, Arrays
+Tags: Go, Golang, Slices, Type Conversion, Array
 
 Description: Learn how to convert between slice types in Go, understand why direct conversion doesn't work, and explore practical patterns for safely transforming slice data.
 

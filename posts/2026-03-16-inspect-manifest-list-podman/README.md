@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Manifest, Multi-Architecture
+Tags: Podman, Container, DevOps, Manifest, Multi-Architecture
 
 Description: Learn how to inspect manifest lists with Podman to view platform entries, digests, sizes, and other metadata for multi-architecture container images.
 

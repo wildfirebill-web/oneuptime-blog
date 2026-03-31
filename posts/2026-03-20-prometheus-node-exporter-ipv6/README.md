@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Node Exporter, IPv6, Metrics, Linux, Monitoring
+Tags: Prometheus, Node Exporter, IPv6, Metric, Linux, Monitoring
 
 Description: A guide to collecting IPv6 network metrics from Linux hosts using Prometheus Node Exporter, including configuration and useful PromQL queries.
 

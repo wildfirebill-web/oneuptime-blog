@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Query
+Tags: MySQL, JSON, Query
 
 Description: Learn how to query, filter, and manipulate JSON array elements in MySQL using path expressions, containment checks, and array-specific functions.
 

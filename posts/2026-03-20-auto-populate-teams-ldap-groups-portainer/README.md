@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, LDAP, Teams, Authentication, Business Edition
+Tags: Portainer, LDAP, Team, Authentication, Business Edition
 
 Description: Configure Portainer Business Edition to automatically create and populate teams based on LDAP group membership.
 

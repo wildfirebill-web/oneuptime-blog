@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ruby, Rails, API, Microservices, Architecture
+Tags: Ruby, Rails, API, Microservice, Architecture
 
 Description: A practical guide to building microservices with Rails API mode, covering project setup, JSON serialization, authentication, inter-service communication, and deployment patterns.
 

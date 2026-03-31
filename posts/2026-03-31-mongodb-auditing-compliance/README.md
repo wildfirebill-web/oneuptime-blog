@@ -1,6 +1,6 @@
 # How to Enable MongoDB Auditing for Compliance
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Auditing, Compliance, Security, Enterprise
 

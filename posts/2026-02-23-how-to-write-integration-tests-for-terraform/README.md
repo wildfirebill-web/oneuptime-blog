@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Testing, Integration Tests, Infrastructure as Code, DevOps
+Tags: Terraform, Testing, Integration Test, Infrastructure as Code, DevOps
 
 Description: Learn how to write integration tests for Terraform that deploy real infrastructure, validate it works correctly, and clean up afterward.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, AWS, ECR, Cloud
+Tags: Podman, Container, DevOps, Registry, AWS, ECR, Cloud
 
 Description: A complete guide to using Amazon Elastic Container Registry with Podman, including authentication, image management, and CI/CD integration.
 

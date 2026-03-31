@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PHP, Laravel, Queue, Worker, Background Jobs
+Tags: PHP, Laravel, Queue, Worker, Background Job
 
 Description: Learn how to use Laravel queue workers for background job processing with Redis, database, and SQS drivers.
 

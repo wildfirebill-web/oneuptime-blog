@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Microsoft Teams, Virtual Classroom, Live Events, Stream Analytics, Education, Online Learning
+Tags: Azure, Microsoft Teams, Virtual Classroom, Live Event, Stream Analytics, Education, Online Learning
 
 Description: Create an Azure-powered virtual classroom using Teams Live Events for broadcasting and Stream Analytics for real-time engagement tracking.
 

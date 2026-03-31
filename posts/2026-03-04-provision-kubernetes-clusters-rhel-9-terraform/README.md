@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Terraform, Kubernetes, IaC, Containers, Linux
+Tags: RHEL, Terraform, Kubernetes, IaC, Container, Linux
 
 Description: Use Terraform to provision Kubernetes clusters on RHEL, covering both cloud-managed clusters and self-hosted deployments with kubeadm.
 

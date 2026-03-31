@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, ALB, Path-Based Routing, Load Balancing, Microservices
+Tags: AWS, EC2, ALB, Path-Based Routing, Load Balancing, Microservice
 
 Description: Learn how to configure path-based routing rules on an AWS Application Load Balancer to route requests to different target groups based on URL paths.
 

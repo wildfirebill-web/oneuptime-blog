@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas Search, Fuzzy matching, Full-text search, Search
+Tags: MongoDB, Atlas Search, Fuzzy Matching, Full-Text Search, Search
 
 Description: Learn how to use fuzzy matching in MongoDB Atlas Search to tolerate typos and spelling variations in user queries using the $search operator.
 

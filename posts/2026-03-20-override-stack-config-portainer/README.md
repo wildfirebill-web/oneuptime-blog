@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Environments, Stacks, DevOps
+Tags: Portainer, Docker Compose, Environment, Stack, DevOps
 
 Description: Use environment-specific configurations and overrides in Portainer stacks for dev, staging, and production deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Federation, Monitoring, Metrics, Scalability, Multi-Cluster
+Tags: Prometheus, Federation, Monitoring, Metric, Scalability, Multi-Cluster
 
 Description: Learn how to configure Prometheus federation to aggregate metrics across multiple Prometheus servers, enabling hierarchical monitoring for large-scale deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Reef, Release, Features, Upgrade
+Tags: Rook, Ceph, Reef, Release, Feature, Upgrade
 
 Description: Explore the key new features and improvements in Ceph Reef (v18), including SMB support, RGW enhancements, BlueStore improvements, and CSI changes.
 

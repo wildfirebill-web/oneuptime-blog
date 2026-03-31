@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Numeric Sequences, Automation
+Tags: Ansible, Loop, Numeric Sequences, Automation
 
 Description: Learn how to generate numeric sequences in Ansible using with_sequence and the modern loop with range for creating numbered resources and iterating over number ranges.
 

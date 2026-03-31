@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Windows, Kubernetes, Storage, Installation
+Tags: Rook, Ceph, Window, Kubernetes, Storage, Installation
 
 Description: Learn how to install and configure Ceph client components on Windows nodes in a Kubernetes cluster to enable Windows workloads to access Ceph storage.
 

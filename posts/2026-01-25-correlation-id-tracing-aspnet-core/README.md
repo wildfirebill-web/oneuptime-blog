@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ASP.NET Core, .NET, Correlation ID, Distributed Tracing, Logging, Observability, Microservices
+Tags: ASP.NET Core, .NET, Correlation ID, Distributed Tracing, Logging, Observability, Microservice
 
 Description: Learn how to implement correlation ID tracing in ASP.NET Core to track requests across microservices, with middleware, HttpClient integration, and structured logging patterns.
 

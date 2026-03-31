@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Functions, Lua, Commands, Redis 7
+Tags: Redis, Function, Lua, Command, Redis 7
 
 Description: Learn how to use FCALL in Redis 7.0+ to invoke registered functions from loaded function libraries, offering a more organized alternative to EVAL scripts.
 

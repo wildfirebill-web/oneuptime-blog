@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Artifacts, CI/CD, Build Management, DevOps, Storage
+Tags: GitHub Action, Artifact, CI/CD, Build Management, DevOps, Storage
 
 Description: Learn how to upload, download, and manage build artifacts in GitHub Actions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions
+Tags: OpenTofu, Terraform, IaC, Function
 
 Description: Learn how to use the alltrue() and anytrue() functions in OpenTofu to evaluate boolean conditions across a collection.
 

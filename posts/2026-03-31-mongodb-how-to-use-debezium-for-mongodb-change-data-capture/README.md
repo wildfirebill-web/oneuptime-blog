@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Debezium, Change Data Capture, Kafka Connect, Event Streaming
+Tags: MongoDB, Debezium, Change Data Capture, Kafka Connect, Event Streaming
 
 Description: Learn how to set up Debezium as a MongoDB CDC connector to capture and stream database changes to Kafka for event-driven architectures.
 

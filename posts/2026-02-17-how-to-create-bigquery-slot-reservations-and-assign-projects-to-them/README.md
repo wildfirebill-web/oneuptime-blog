@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Slots, Reservations, Resource Management, Cost Optimization
+Tags: GCP, BigQuery, Slot, Reservation, Resource Management, Cost Optimization
 
 Description: Learn how to create BigQuery slot reservations and assign projects to them for predictable query performance and cost management.
 

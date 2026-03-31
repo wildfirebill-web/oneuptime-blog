@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Versioning, Microservices, Best Practices
+Tags: Dapr, Workflow, Versioning, Microservice, Best Practice
 
 Description: Learn safe strategies for versioning Dapr workflows to avoid breaking in-flight instances when deploying changes to long-running workflow definitions.
 

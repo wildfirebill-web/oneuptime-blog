@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Status, Monitoring, Operations
+Tags: Dapr, Workflow, Status, Monitoring, Operation
 
 Description: Query Dapr workflow status using the SDK, HTTP API, and CLI to monitor progress, check completion, and build status dashboards for long-running workflows.
 

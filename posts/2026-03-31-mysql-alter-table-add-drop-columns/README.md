@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, ALTER TABLE, Column, Schema, Migration
+Tags: MySQL, SQL, DDL, ALTER TABLE, Column, Schema
 
 Description: Add new columns to an existing MySQL table and remove obsolete ones using ALTER TABLE ADD COLUMN and DROP COLUMN with online DDL considerations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud SQL, Microservices, Database, Migration
+Tags: GCP, Cloud SQL, Microservice, Database, Migration
 
 Description: Learn how to decompose a single monolithic database into separate microservice-owned databases on Google Cloud SQL step by step.
 

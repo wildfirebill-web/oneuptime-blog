@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, OCI Registry, Module Distribution, Containers, Infrastructure
+Tags: OpenTofu, OCI Registry, Module Distribution, Container, Infrastructure
 
 Description: Learn how to package and push OpenTofu modules to OCI-compatible registries for version-controlled module distribution within your organization.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Upgrade, Devops, Database Administration
+Tags: MongoDB, Upgrade, DevOps, Database Administration
 
 Description: Learn how to safely upgrade MongoDB to a new major version on replica sets and standalone instances, including compatibility checks and rollback planning.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, App Services, Security, Authorization
+Tags: MongoDB, Atlas, App Service, Security, Authorization
 
 Description: Learn how to define fine-grained data access rules in MongoDB Atlas App Services to control which users can read or write specific documents and fields.
 

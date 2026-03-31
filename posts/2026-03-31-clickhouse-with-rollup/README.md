@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SELECT, GROUP BY, WITH ROLLUP, Subtotals
+Tags: ClickHouse, SQL, SELECT, GROUP BY, WITH ROLLUP, Subtotal
 
 Description: Generate hierarchical subtotals and grand totals in ClickHouse using GROUP BY WITH ROLLUP, with NULL marking each rollup level and GROUPING() identifying them.
 

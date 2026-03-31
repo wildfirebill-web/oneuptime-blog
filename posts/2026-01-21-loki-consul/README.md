@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana Loki, Consul, Service Discovery, KV Store, Distributed Systems, HashiCorp
+Tags: Grafana Loki, Consul, Service Discovery, KV Store, Distributed System, HashiCorp
 
 Description: A comprehensive guide to using Consul with Grafana Loki for service discovery and KV store, covering Consul configuration, ring setup, multi-datacenter deployments, and production best practices.
 

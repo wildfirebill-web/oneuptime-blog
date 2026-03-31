@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Storage Engine, FEDERATED, Remote Table, Distributed
+Tags: MySQL, Storage Engine, Federated, Remote Table, Distributed
 
 Description: The MySQL FEDERATED storage engine creates a local table definition that maps to a table on a remote MySQL server, enabling transparent access to remote data.
 

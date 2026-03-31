@@ -1,6 +1,6 @@
 # How to Use MULTIPOINT in MySQL
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, SQL, Spatial, GIS, Geometry, Database
 

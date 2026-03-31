@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Troubleshooting, Permissions
+Tags: Podman, Container, DevOps, Rootless, Troubleshooting, Permission
 
 Description: Learn how to diagnose and fix common permission errors when running rootless Podman containers.
 

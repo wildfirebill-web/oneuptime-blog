@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Schema Validation, Database, Configuration
 
-Description: Learn the difference between MongoDB's error and warn validationAction settings, and how to use warn mode to audit schema violations without rejecting writes.
+Description: Learn the difference between MongoDB error and warn validationAction settings, and how to use warn mode to audit schema violations without rejecting writes.
 
 ---
 

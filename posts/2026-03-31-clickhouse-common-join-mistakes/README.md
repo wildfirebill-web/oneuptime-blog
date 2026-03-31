@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, JOIN, Query Optimization, Performance, Distributed Query
+Tags: ClickHouse, Join, Query Optimization, Performance, Distributed Query
 
 Description: Avoid the most common ClickHouse JOIN mistakes that cause OOM errors, slow queries, and wrong results in analytical workloads.
 

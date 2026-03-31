@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, File, DevOps
+Tags: Portainer, Docker, Container, File, DevOps
 
 Description: Use Portainer's interface and Docker commands to copy files between your host system and running containers.
 

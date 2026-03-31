@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Lifecycle, Retirement, Cleanup
+Tags: Feature Flag, Lifecycle, Retirement, Cleanup
 
 Description: Learn how to safely retire feature flags to reduce technical debt.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Change Buffer, Configuration, Performance
+Tags: MySQL, InnoDB, Change Buffer, Configuration, Performance
 
 Description: Learn how to configure the InnoDB change buffer in MySQL to optimize write performance for secondary index modifications on non-resident pages.
 

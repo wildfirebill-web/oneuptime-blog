@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Namespaces, Monitoring
+Tags: Calico, Kubernetes, Network Policy, Namespace, Monitoring
 
 Description: Monitor the effectiveness of Calico namespace-based network policies using metrics, namespace label coverage reports, and cross-namespace traffic analytics.
 

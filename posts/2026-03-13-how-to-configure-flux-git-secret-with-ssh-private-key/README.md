@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, SSH, Git
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, SSH, Git
 
 Description: A step-by-step guide to configuring Flux CD Source Controller to authenticate with Git repositories using an SSH private key.
 

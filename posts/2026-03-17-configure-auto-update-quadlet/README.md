@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Auto-Update
+Tags: Podman, Container, DevOps, Quadlet, Auto-Update
 
 Description: Learn how to enable Podman auto-update for containers managed by Quadlet so they automatically pull and deploy new images.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Troubleshooting, Database, Recovery, Stacks
+Tags: Portainer, Docker, Troubleshooting, Database, Recovery, Stack
 
 Description: Recover missing stacks and configuration after Portainer's BoltDB database becomes corrupted, including database repair and data recovery techniques.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Catalog, E-commerce, Schema, Search
+Tags: MongoDB, Catalog, E-Commerce, Schema, Search
 
 Description: Learn how to design a MongoDB schema for product catalog management with flexible attributes, category hierarchies, faceted search, and variant handling.
 

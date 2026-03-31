@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Auto-Update, Monitoring, Logging
+Tags: Podman, Container, DevOps, Auto-Update, Monitoring, Logging
 
 Description: Learn how to monitor Podman auto-update status, view update history, and check logs for update successes and failures.
 

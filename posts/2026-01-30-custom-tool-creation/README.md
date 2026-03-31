@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AI Agents, Custom Tools, API Integration, Automation
+Tags: AI Agents, Custom Tool, API Integration, Automation
 
 Description: Learn to create custom tools for AI agents with function definitions, parameter schemas, and execution handlers for domain-specific capabilities.
 

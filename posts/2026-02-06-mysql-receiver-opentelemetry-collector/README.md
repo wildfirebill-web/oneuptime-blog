@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, MySQL, Database Monitoring, Metrics, Performance
+Tags: OpenTelemetry, Collector, MySQL, Database Monitoring, Metric, Performance
 
 Description: Complete guide to configuring the MySQL receiver in OpenTelemetry Collector for database performance monitoring with practical YAML examples and optimization strategies.
 

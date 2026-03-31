@@ -1,8 +1,8 @@
 # How to Configure Custom Health Checks for Services in Flux Kustomization
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Flux, GitOps, Kubernetes, Health Check, Services, Kustomization
+Tags: Flux, GitOps, Kubernetes, Health Check, Service, Kustomization
 
 Description: Learn how to configure custom health checks for Service resources in Flux Kustomization to verify network endpoints are properly established.
 

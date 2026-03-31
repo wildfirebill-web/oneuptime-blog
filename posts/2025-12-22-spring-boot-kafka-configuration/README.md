@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Kafka, Messaging, Event-Driven Architecture, Microservices
+Tags: Java, Spring Boot, Kafka, Messaging, Event-Driven Architecture, Microservice
 
 Description: Learn how to configure Apache Kafka with Spring Boot for building event-driven applications.
 

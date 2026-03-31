@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cloud Spanner, Google Cloud, Database, SQL, Distributed Systems, High Availability, DevOps
+Tags: Cloud Spanner, Google Cloud, Database, SQL, Distributed System, High Availability, DevOps
 
 Description: A practical guide to working with Google Cloud Spanner, including schema design, query optimization, and operational best practices for globally distributed databases.
 

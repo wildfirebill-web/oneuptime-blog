@@ -1,6 +1,6 @@
 # How to Fix Health Check Failures with Istio Sidecar
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Health Check, Kubernetes, Sidecar, Troubleshooting
 

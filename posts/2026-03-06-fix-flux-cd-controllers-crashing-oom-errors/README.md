@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, OOM, Out of Memory, Kubernetes, Troubleshooting, GitOps, Resource Limits, Performance
+Tags: Flux CD, OOM, Out of Memory, Kubernetes, Troubleshooting, GitOps, Resource Limit, Performance
 
 Description: A practical guide to diagnosing and fixing Out of Memory (OOM) crashes in Flux CD controllers, covering memory limit tuning, large repository handling, and caching optimization.
 

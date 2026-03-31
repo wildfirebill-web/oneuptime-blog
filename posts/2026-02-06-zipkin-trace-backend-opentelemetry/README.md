@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Zipkin, Distributed Tracing, Observability, Backend, Traces
+Tags: OpenTelemetry, Zipkin, Distributed Tracing, Observability, Backend, Trace
 
 Description: A practical guide to deploying Zipkin as a dedicated trace backend for OpenTelemetry, covering installation, Collector configuration, storage options, and production tuning.
 

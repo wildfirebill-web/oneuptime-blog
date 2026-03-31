@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Exclusion Rules
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Exclusion Rules
 
 Description: Learn how to use the exclusionList field in Flux alerts to suppress unwanted notifications using regex patterns.
 

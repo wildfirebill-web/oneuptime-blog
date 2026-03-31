@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Check, Startup, Interval
+Tags: Podman, Container, DevOps, Health Check, Startup, Interval
 
 Description: Learn how to configure the startup health check interval in Podman to control how frequently the startup probe runs during initialization.
 

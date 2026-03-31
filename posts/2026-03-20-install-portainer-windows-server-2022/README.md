@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Windows Server 2022, Docker, Containers, Self-Hosted
+Tags: Portainer, Windows Server 2022, Docker, Container, Self-Hosted
 
 Description: Learn how to install Portainer CE on Windows Server 2022 to manage Docker containers through a web UI on a Windows environment.
 

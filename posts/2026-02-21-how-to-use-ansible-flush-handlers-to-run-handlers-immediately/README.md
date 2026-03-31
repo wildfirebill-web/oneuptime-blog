@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Handlers, Task Execution, DevOps
+Tags: Ansible, Handler, Task Execution, DevOps
 
 Description: Learn how to use the meta flush_handlers directive in Ansible to trigger pending handlers immediately instead of waiting until the end of the play.
 

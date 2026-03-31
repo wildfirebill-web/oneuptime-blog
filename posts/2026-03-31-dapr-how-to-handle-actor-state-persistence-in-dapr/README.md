@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Actors, State Management, Persistence, Microservices
+Tags: Dapr, Actor, State Management, Persistence, Microservice
 
 Description: Learn how Dapr actor state persistence works, how to configure the state store, and best practices for managing actor state reliably in production.
 

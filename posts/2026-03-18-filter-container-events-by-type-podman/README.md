@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Filtering
+Tags: Podman, Container, DevOps, Monitoring, Event, Filtering
 
 Description: Learn how to filter Podman events by entity type to focus on containers, images, pods, volumes, or system events separately.
 

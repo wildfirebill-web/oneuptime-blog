@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DevOps, DORA Metrics, MTTR, Incident Management
+Tags: DevOps, DORA Metric, MTTR, Incident Management
 
 Description: Learn to implement MTTR tracking with incident lifecycle measurement, bottleneck identification, and recovery time optimization for faster resolution.
 

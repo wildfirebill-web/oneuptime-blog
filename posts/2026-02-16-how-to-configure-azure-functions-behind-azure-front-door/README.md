@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Azure Front Door, CDN, Load Balancing, WAF, Azure, Networking
+Tags: Azure Function, Azure Front Door, CDN, Load Balancing, WAF, Azure, Networking
 
 Description: Set up Azure Front Door in front of your Azure Functions for global load balancing, caching, WAF protection, and custom domain support with SSL.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, InvalidTopicException, Troubleshooting, Error Handling, Topics, DevOps
+Tags: Apache Kafka, InvalidTopicException, Troubleshooting, Error Handling, Topic, DevOps
 
 Description: A comprehensive guide to diagnosing and fixing InvalidTopicException errors in Apache Kafka, covering naming rules, configuration issues, and common pitfalls.
 

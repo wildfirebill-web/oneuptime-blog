@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Message Queues, RabbitMQ, NATS, Consumer, Async
+Tags: Rust, Message Queue, RabbitMQ, NATS, Consumer, Async
 
 Description: A practical guide to building reliable message queue consumers in Rust with RabbitMQ and NATS.
 

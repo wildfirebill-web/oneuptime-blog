@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, sys Schema, Performance Schema, Monitoring, Diagnostics
+Tags: MySQL, sys Schema, Performance Schema, Monitoring, Diagnostic
 
 Description: The MySQL sys schema is a collection of views, functions, and procedures that present Performance Schema data in human-readable format for quick diagnostics.
 

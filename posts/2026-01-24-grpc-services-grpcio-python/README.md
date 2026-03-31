@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, gRPC, Microservices, Protocol Buffers, API Design, Performance
+Tags: Python, gRPC, Microservice, Protocol Buffer, API Design, Performance
 
 Description: Learn how to build high-performance gRPC services in Python using grpcio.
 

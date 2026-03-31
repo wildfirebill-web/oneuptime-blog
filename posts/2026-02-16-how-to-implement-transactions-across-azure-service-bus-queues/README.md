@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Service Bus, Transactions, Atomic Operations, Message Queues, Azure, Reliability, ACID
+Tags: Azure Service Bus, Transaction, Atomic Operation, Message Queue, Azure, Reliability, ACID
 
 Description: Use Azure Service Bus transactions to send and complete messages atomically across queues, ensuring consistency in message-driven workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terragrunt, GitHub Actions, CI/CD, DevOps, Infrastructure as Code
+Tags: Terraform, Terragrunt, GitHub Action, CI/CD, DevOps, Infrastructure as Code
 
 Description: A practical guide to setting up Terragrunt in GitHub Actions with plan-on-PR, apply-on-merge workflows, OIDC authentication, and PR comment integration.
 

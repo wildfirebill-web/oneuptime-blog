@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, DELETE, TRUNCATE, DROP, SQL, DML, DDL
+Tags: MySQL, Delete, TRUNCATE, DROP, SQL, DML, DDL
 
 Description: Learn the differences between MySQL DELETE, TRUNCATE, and DROP and when to use each command based on your data removal needs.
 

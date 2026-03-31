@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Skopeo, Mirroring, Registry, High Availability
+Tags: Podman, Container, DevOps, Skopeo, Mirroring, Registry, High Availability
 
 Description: Learn how to use Skopeo to set up and maintain container image mirrors for high availability, performance, and air-gapped environments.
 

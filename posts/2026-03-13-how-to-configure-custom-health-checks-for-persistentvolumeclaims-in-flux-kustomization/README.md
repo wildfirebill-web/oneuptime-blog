@@ -1,8 +1,8 @@
 # Custom Health Checks for PersistentVolumeClaims in Flux Kustomization
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Flux, GitOps, Kubernetes, Health Check, PersistentVolumeClaims, Storage, Kustomization
+Tags: Flux, GitOps, Kubernetes, Health Check, PersistentVolumeClaim, Storage, Kustomization
 
 Description: Learn how to configure custom health checks for PersistentVolumeClaim resources in Flux Kustomization to ensure storage is provisioned before workloads start.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Engine Settings
+Tags: Podman, Container, DevOps, Configuration, Engine Settings
 
 Description: Learn how to override Podman's default container engine settings including runtime, image handling, and event logging.
 

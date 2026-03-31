@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Rank, Window Functions, Sql, Analytics
+Tags: MySQL, Rank, Window Function, SQL, Analytics
 
 Description: Learn how to use MySQL's RANK() window function to assign rankings to rows, handling ties by assigning the same rank and leaving gaps in the sequence.
 

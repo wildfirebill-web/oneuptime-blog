@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, clickhouse-local, JOIN, Multi-File, Data Analysis
+Tags: ClickHouse, clickhouse-local, Join, Multi-File, Data Analysis
 
 Description: Learn how to join multiple files in different formats with clickhouse-local to combine CSV, JSON, and Parquet data sources using SQL joins.
 

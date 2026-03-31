@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Count-Min Sketch, Probabilistic Data Structures, Frequency Estimation
+Tags: Redis, Count-Min Sketch, Probabilistic Data Structure, Frequency Estimation
 
 Description: Learn how to use CMS.QUERY in Redis to retrieve frequency estimates for items in a Count-Min Sketch without scanning all data.
 

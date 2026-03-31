@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Microservices, Deduplication, Distributed Systems, Idempotency, Event-Driven Architecture, Redis, Kafka, PostgreSQL
+Tags: Microservice, Deduplication, Distributed System, Idempotency, Event-Driven Architecture, Redis, Kafka, PostgreSQL
 
 Description: A practical guide to implementing deduplication strategies in microservices architectures, covering idempotency keys, message deduplication, database-level techniques.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, Metrics, Observability, Collector, Backend
+Tags: OpenTelemetry, Prometheus, Metric, Observability, Collector, Backend
 
 Description: Learn how to configure Prometheus to receive and store OpenTelemetry metrics, including OTLP ingestion, collector setup, and PromQL querying.
 

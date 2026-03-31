@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Build, Debugging, Troubleshooting
+Tags: Podman, Container, DevOps, Build, Debugging, Troubleshooting
 
 Description: Learn practical techniques to diagnose and fix failed Podman container image builds, from reading error output to inspecting intermediate layers.
 

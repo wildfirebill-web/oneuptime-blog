@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Kubernetes, Deployment
+Tags: Podman, Container, DevOps, Podman Desktop, Kubernetes, Deployment
 
 Description: Learn how to deploy your containerized applications to Kubernetes directly from Podman Desktop using built-in tools and generated YAML manifests.
 

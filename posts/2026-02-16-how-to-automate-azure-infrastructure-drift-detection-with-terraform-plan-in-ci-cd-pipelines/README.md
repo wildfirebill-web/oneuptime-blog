@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Drift Detection, CI/CD, Infrastructure as Code, DevOps, GitHub Actions
+Tags: Terraform, Azure, Drift Detection, CI/CD, Infrastructure as Code, DevOps, GitHub Action
 
 Description: Automate Azure infrastructure drift detection by running scheduled Terraform plans in CI/CD pipelines and alerting when reality diverges from code.
 

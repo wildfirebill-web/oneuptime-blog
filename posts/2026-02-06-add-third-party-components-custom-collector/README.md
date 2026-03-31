@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Third-Party, Custom Components, Go
+Tags: OpenTelemetry, Collector, Third-Party, Custom Component, Go
 
 Description: Step-by-step guide to integrating third-party and custom-built components into your OpenTelemetry Collector distribution using the builder tool.
 

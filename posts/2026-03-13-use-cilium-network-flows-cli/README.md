@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, Hubble, CLI, Network Flows, Observability
+Tags: Cilium, Kubernetes, Hubble, CLI, Network Flow, Observability
 
 Description: Use the Hubble CLI to observe, filter, and analyze Cilium network flows for real-time traffic visibility and security auditing.
 

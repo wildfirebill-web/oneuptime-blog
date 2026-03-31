@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cuckoo Filter, RedisBloom, Commands, NoSql
+Tags: Redis, Cuckoo Filter, RedisBloom, Command, NoSQL
 
 Description: Learn how to use CF.DEL in Redis to remove items from a Cuckoo filter, and understand the implications of deleting items that were never inserted.
 

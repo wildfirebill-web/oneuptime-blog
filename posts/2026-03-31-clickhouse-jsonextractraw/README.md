@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how JSONExtractRaw() returns a raw JSON fragment from a field in ClickHouse, preserving nested structure as a String for further processing or forwarding.
 

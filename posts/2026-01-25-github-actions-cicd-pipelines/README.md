@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, DevOps, Automation, Continuous Integration, Continuous Deployment
+Tags: GitHub Action, CI/CD, DevOps, Automation, Continuous Integration, Continuous Deployment
 
 Description: Learn how to build production-ready CI/CD pipelines with GitHub Actions from scratch.
 

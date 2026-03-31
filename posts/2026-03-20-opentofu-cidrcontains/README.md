@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, CIDR, Networking, Validation, Functions
+Tags: OpenTofu, Terraform, CIDR, Networking, Validation, Function
 
 Description: Learn how to use the cidrcontains function in OpenTofu to validate whether IP addresses fall within CIDR ranges, enforce network policies, and prevent misconfigured security rules.
 

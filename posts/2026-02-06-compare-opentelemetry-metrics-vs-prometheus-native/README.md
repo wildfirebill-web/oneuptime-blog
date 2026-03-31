@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, Metrics, Monitoring, Observability
+Tags: OpenTelemetry, Prometheus, Metric, Monitoring, Observability
 
 Description: A technical comparison of OpenTelemetry metrics and Prometheus native metrics, covering data models, instrumentation, collection patterns, and migration strategies.
 

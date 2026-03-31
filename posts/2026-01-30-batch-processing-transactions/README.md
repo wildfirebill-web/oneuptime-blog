@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Batch Processing, Transactions, ACID, Spring Batch
+Tags: Batch Processing, Transaction, ACID, Spring Batch
 
 Description: Learn to build batch transactions for ensuring data consistency and integrity in batch processing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Feature Flags, Feature Toggles, Dashboard, Backend
+Tags: Redis, Feature Flag, Feature Toggle, Dashboard, Backend
 
 Description: Learn how to build a Redis-backed feature toggle system with per-user, percentage rollout, and environment-based flag evaluation.
 

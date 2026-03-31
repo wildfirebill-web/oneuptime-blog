@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenStack, Calico, Documentation, Operations, Networking
+Tags: OpenStack, Calico, Documentation, Operation, Networking
 
 Description: A guide to creating effective operational documentation for OpenStack networking with Calico, including architecture diagrams, troubleshooting runbooks, and on-call reference materials.
 

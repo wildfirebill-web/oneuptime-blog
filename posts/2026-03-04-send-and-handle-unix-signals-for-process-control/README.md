@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Signals, Process Management, Linux
+Tags: RHEL, Signal, Process Management, Linux
 
 Description: Learn how to send and Handle Unix Signals for Process Control on RHEL with step-by-step instructions, configuration examples, and best practices.
 

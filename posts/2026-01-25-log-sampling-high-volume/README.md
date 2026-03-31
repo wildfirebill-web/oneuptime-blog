@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Log Sampling, High Volume Logging, Observability, Performance, Cost Optimization, Distributed Systems
+Tags: Log Sampling, High Volume Logging, Observability, Performance, Cost Optimization, Distributed System
 
 Description: Learn how to implement log sampling strategies for high-volume systems.
 

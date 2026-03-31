@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Managed Grafana, Alerting, Infrastructure Monitoring, Grafana, Azure Monitor, Observability, Notifications
+Tags: Azure Managed Grafana, Alerting, Infrastructure Monitoring, Grafana, Azure Monitor, Observability, Notification
 
 Description: Learn how to configure alerting rules in Azure Managed Grafana to detect infrastructure issues and notify your team through multiple channels.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Troubleshooting, Operations
+Tags: ArgoCD, GitOps, Kubernetes, Troubleshooting, Operation
 
 Description: Fix ArgoCD applications stuck in a deleting state by understanding finalizers, orphan resources, and the correct deletion strategies.
 

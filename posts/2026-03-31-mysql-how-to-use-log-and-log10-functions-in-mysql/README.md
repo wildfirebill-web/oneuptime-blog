@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, LOG, LOG10, Math Functions, Logarithm, SQL
+Tags: MySQL, Log, LOG10, Math Function, Logarithm, SQL
 
 Description: Learn how to use the LOG() and LOG10() functions in MySQL to compute natural logarithms and base-10 logarithms for data analysis and mathematical calculations.
 

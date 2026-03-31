@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, OIDC, Authentication, GitHub Actions, CI/CD, Security
+Tags: AWS, OIDC, Authentication, GitHub Action, CI/CD, Security
 
 Description: Learn how to configure OpenID Connect (OIDC) federation so GitHub Actions and other CI/CD systems can authenticate to AWS without storing long-lived credentials.
 

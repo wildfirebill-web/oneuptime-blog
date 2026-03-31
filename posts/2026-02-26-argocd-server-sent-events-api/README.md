@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Server-Sent Events, Monitoring
+Tags: ArgoCD, GitOps, Kubernetes, Server-Sent Event, Monitoring
 
 Description: Learn how to use the ArgoCD Server-Sent Events (SSE) API for real-time application monitoring, live dashboards, and event-driven automation.
 

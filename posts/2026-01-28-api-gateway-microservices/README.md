@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API Gateway, Microservices, API Management, Architecture, DevOps, Node.js, Kong
+Tags: API Gateway, Microservice, API Management, Architecture, DevOps, Node.js, Kong
 
 Description: A practical guide to implementing API gateways in microservices architectures, covering routing, authentication, rate limiting, and observability patterns.
 

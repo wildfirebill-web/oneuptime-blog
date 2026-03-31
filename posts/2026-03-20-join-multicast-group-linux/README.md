@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Multicast, IGMP, Linux, Sockets, Networking, UDP
+Tags: Multicast, IGMP, Linux, Socket, Networking, UDP
 
 Description: Join IPv4 multicast groups on Linux using socket options, the ip command, and programming interfaces, and verify group membership with system commands.
 

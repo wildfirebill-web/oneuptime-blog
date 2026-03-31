@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging
+Tags: Podman, Container, DevOps, Logging
 
 Description: Learn how to use the --until flag in Podman to view container logs up to a specific point in time, useful for isolating log windows during incident investigation.
 

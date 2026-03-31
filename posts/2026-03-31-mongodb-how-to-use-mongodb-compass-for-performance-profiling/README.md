@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Compass, Performance, Profiling
+Tags: MongoDB, Compass, Performance, Profiling
 
 Description: Learn how to use MongoDB Compass to profile query performance, analyze explain plans, identify slow operations, and use the Performance tab for real-time server monitoring.
 

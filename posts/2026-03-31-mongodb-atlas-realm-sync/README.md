@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Realm Sync, Mobile, Offline-first
+Tags: MongoDB, Atlas, Realm Sync, Mobile, Offline-First
 
-Description: Learn how to configure MongoDB Atlas Device Sync (Realm Sync) to build offline-first mobile apps that automatically sync data with Atlas when connectivity is restored.
+Description: Learn how to configure MongoDB Atlas Device Sync to build offline-first mobile apps that automatically sync data with Atlas when connectivity is restored.
 
 ---
 

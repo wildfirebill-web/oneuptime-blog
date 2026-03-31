@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CI/CD, Container Registry, Image Building
+Tags: Podman, Container, DevOps, CI/CD, Container Registry, Image Building
 
 Description: Learn how to build container images and push them to various registries using Podman in CI/CD pipelines with best practices for tagging and optimization.
 

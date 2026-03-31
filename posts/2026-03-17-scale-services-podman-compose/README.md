@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Scaling
+Tags: Podman, Container, DevOps, podman-compose, Scaling
 
 Description: Learn how to run multiple instances of a service using podman-compose scale for horizontal scaling.
 

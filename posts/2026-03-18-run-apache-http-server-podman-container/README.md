@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Apache, HTTPD, Web Server
+Tags: Podman, Container, DevOps, Apache, HTTPD, Web Server
 
 Description: Learn how to run Apache HTTP Server inside a Podman container with virtual hosts, SSL, and custom modules.
 

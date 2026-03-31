@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Logging, Observability
+Tags: Portainer, Docker, Container, Logging, Observability
 
 Description: Learn how to configure Docker logging drivers for containers in Portainer, including json-file, syslog, Fluentd, and Loki integrations.
 

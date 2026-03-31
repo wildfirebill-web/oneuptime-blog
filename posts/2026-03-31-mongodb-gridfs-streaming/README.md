@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, GridFS, Streaming, File storage, Node.js
+Tags: MongoDB, GridFS, Streaming, File Storage, Node.js
 
 Description: Learn how to stream large files to and from MongoDB GridFS without buffering entire files in memory, using Node.js readable and writable streams.
 

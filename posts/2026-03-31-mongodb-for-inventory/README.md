@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Inventory, E-commerce, Transaction, Schema
+Tags: MongoDB, Inventory, E-Commerce, Transaction, Schema
 
 Description: Learn how to design a MongoDB schema for real-time inventory management with atomic stock updates, reservation patterns, and multi-warehouse tracking.
 

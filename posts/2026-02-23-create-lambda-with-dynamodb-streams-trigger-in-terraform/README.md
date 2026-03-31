@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Lambda, DynamoDB, Streams, Event-Driven, Serverless
+Tags: Terraform, AWS, Lambda, DynamoDB, Stream, Event-Driven, Serverless
 
 Description: Learn how to trigger Lambda functions from DynamoDB Streams using Terraform, including stream configuration, event filtering, batch processing, and error handling patterns.
 

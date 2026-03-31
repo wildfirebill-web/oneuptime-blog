@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, Timezone, Time Zone, DATETIME, Database
+Tags: MySQL, SQL, Timezone, Time Zone, DateTime, Database
 
 Description: Learn how to configure and use the MySQL time_zone system variable to control timezone behavior for TIMESTAMP columns and NOW() at server and session level.
 

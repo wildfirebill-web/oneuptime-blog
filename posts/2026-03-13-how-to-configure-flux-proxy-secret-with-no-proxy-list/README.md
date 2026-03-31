@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, Proxy, No-Proxy, Networking, Bypass
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, Proxy, No-Proxy, Networking, Bypass
 
 Description: How to configure a no-proxy list in Flux CD to bypass the proxy for specific hosts, domains, and internal services.
 

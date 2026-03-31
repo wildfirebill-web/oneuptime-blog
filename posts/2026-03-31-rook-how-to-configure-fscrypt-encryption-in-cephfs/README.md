@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, CephFS, Encryption, fscrypt, Security
+Tags: Ceph, Rook, CephFS, Encryption, Security
 
 Description: Configure fscrypt encryption in CephFS to encrypt file data and metadata at the filesystem level, providing per-directory encryption with kernel-integrated key management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $sortByCount, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $sortByCount, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $sortByCount aggregation stage to group documents by an expression, count occurrences, and return results sorted by count descending.
 

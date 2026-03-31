@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, AWS, Security Groups, Terraform, IaC, DevOps
+Tags: OpenTofu, Infrastructure as Code, AWS, Security Group, Terraform, IaC, DevOps
 
 Description: Learn how to create AWS security groups with OpenTofu using both inline rules and separate rule resources for scalable network access control.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Pods, Runbook
+Tags: Calico, Kubernetes, Pod, Runbook
 
 Description: Create a structured runbook with step-by-step procedures for diagnosing and resolving FailedCreatePodSandBox errors that occur after deploying Calico CNI in Kubernetes.
 

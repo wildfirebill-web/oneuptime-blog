@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Prometheus, Grafana, Observability
+Tags: Podman, Container, DevOps, Monitoring, Event, Prometheus, Grafana, Observability
 
 Description: Learn how to integrate Podman events with external monitoring systems like Prometheus, Grafana, and log aggregators for centralized observability.
 

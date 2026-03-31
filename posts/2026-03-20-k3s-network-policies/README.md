@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Network Policies, Security, Networking, DevOps
+Tags: k3s, Kubernetes, Network Policies, Security, Networking, DevOps
 
 Description: Learn how to implement Kubernetes Network Policies in K3s to control pod-to-pod traffic and enforce zero-trust networking.
 

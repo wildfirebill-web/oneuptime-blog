@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, High Availability, Configuration, Operations
+Tags: MongoDB, Replica Set, High Availability, Configuration, Operation
 
 Description: Step-by-step guide to initializing a MongoDB replica set from standalone mongod instances to enable high availability and automatic failover.
 

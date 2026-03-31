@@ -1,6 +1,6 @@
 # How to Track EV Charging Station Metrics in ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Analytics, Time-Series, Electric Vehicle, IoT
 

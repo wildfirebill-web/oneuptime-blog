@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, Application Management, UI
+Tags: Portainer, Kubernetes, Namespace, Application Management, UI
 
 Description: Learn how to filter and view applications scoped to specific Kubernetes namespaces in Portainer.
 

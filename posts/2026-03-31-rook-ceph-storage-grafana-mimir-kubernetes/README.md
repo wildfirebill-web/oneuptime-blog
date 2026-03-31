@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Grafana, Mimir, Kubernetes, Storage, Metrics
+Tags: Rook, Ceph, Grafana, Mimir, Kubernetes, Storage, Metric
 
 Description: Use Ceph RGW as the S3-compatible object store backend for Grafana Mimir on Kubernetes to enable scalable, long-term metrics storage on-premises.
 

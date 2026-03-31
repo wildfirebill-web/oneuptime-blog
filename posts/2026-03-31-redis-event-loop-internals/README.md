@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Internals, Event Loop, Performance, Architecture
+Tags: Redis, Internal, Event Loop, Performance, Architecture
 
 Description: Explore how the Redis event loop processes commands, manages timers, and handles IO events in a single-threaded loop without blocking.
 

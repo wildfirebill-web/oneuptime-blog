@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Traffic Splitting, Canary Deployments, Istio, Service Mesh
+Tags: Rancher, Kubernetes, Traffic Splitting, Canary Deployment, Istio, Service Mesh
 
 Description: Implement traffic splitting in Rancher for canary deployments, A/B testing, and gradual rollouts using Istio VirtualServices or SMI TrafficSplit resources.
 

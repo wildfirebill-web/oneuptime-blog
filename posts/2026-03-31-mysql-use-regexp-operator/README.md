@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, REGEXP, Regular Expression, Pattern Matching, Query
+Tags: MySQL, Regexp, Regular Expression, Pattern Matching, Query
 
 Description: Learn how to use the REGEXP operator in MySQL to match column values against regular expression patterns for flexible text filtering.
 

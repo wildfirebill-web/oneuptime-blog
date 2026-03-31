@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Production, Checklist, Operations, Deployment
+Tags: ClickHouse, Production, Checklist, Operation, Deployment
 
 Description: A comprehensive checklist for deploying ClickHouse to production, covering hardware, security, replication, monitoring, and backup requirements.
 

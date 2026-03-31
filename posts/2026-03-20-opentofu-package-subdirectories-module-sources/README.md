@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module
 
 Description: Learn how to use the double-slash separator to reference sub-directories within module source packages in OpenTofu for precise module targeting.
 

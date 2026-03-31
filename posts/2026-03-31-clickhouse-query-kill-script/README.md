@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Script, Kill Query, Administration, Operations
+Tags: ClickHouse, Script, KILL QUERY, Administration, Operation
 
 Description: Write a script that identifies and kills long-running ClickHouse queries based on configurable time thresholds, with dry-run and user filtering options.
 

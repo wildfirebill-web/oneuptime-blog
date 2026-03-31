@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, Web Server, DevOps
+Tags: Portainer, Docker, Template, Web Server, DevOps
 
 Description: Learn how to host a custom Portainer template catalog on your own web server for private or internal use.
 

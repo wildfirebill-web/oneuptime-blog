@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Search, Filenames, Text Analysis, File Management, Custom Analyzers
+Tags: Elasticsearch, Search, Filenames, Text Analysis, File Management, Custom Analyzer
 
 Description: Learn how to effectively index and search filenames in Elasticsearch using custom analyzers, edge n-grams, and path hierarchy tokenizers for file system search functionality.
 

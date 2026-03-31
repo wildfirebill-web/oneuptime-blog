@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PHP, Laravel, Artisan, CLI, Commands
+Tags: PHP, Laravel, Artisan, CLI, Command
 
 Description: Learn how to build custom Artisan commands in Laravel. This guide covers command creation, arguments, options, output formatting, and scheduling.
 

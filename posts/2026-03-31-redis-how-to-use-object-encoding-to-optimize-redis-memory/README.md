@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory Optimization, Object Encoding, Data Structures, Performance
+Tags: Redis, Memory Optimization, Object Encoding, Data Structure, Performance
 
 Description: Learn how Redis internal encodings work and how to use OBJECT ENCODING to identify and optimize memory usage across strings, hashes, lists, and sets.
 

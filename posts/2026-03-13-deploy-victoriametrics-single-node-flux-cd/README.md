@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, VictoriaMetrics, Prometheus, Metrics, Observability, HelmRelease
+Tags: Flux CD, Kubernetes, GitOps, VictoriaMetrics, Prometheus, Metric, Observability, HelmRelease
 
 Description: Deploy VictoriaMetrics single-node for high-performance metrics storage using Flux CD HelmRelease as a drop-in Prometheus replacement with superior compression and faster queries.
 

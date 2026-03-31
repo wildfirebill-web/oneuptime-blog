@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Management, DevOps
+Tags: Portainer, Docker, Container, Management, DevOps
 
 Description: View and filter all running containers across multiple environments and Docker hosts from Portainer's central interface.
 

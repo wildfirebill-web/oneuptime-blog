@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Secrets Management, Security, CI/CD, DevOps, Credentials
+Tags: GitHub Action, Secrets Management, Security, CI/CD, DevOps, Credential
 
 Description: Learn how to securely manage secrets in GitHub Actions workflows.
 

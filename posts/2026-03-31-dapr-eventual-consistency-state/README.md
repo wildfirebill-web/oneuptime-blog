@@ -1,6 +1,6 @@
 # How to Use Eventual Consistency for Dapr State Operations
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Consistency, Microservice, Performance
 

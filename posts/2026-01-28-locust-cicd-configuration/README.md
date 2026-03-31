@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Locust, CI/CD, Load Testing, GitHub Actions, Jenkins, Performance Testing, Automation
+Tags: Locust, CI/CD, Load Testing, GitHub Action, Jenkins, Performance Testing, Automation
 
 Description: A complete guide to integrating Locust load tests into CI/CD pipelines with automated pass/fail criteria and result reporting.
 

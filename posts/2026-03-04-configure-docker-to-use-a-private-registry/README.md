@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Container Registry, Linux
+Tags: RHEL, Docker, Container, Container Registry, Linux
 
 Description: Learn how to configure Docker to Use a Private Registry on RHEL with step-by-step instructions, configuration examples, and best practices.
 

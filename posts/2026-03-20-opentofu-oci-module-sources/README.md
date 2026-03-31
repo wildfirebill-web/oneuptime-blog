@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Modules, OCI
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Module, OCI
 
 Description: Learn how to use OCI (Open Container Initiative) registry module sources in OpenTofu to distribute modules as container registry artifacts.
 

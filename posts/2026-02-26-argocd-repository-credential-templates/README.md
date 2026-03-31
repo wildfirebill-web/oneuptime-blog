@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Git, Credentials
+Tags: ArgoCD, GitOps, Kubernetes, Git, Credential
 
 Description: Learn how to use repository credential templates in ArgoCD to automatically apply authentication to multiple repositories without configuring each one individually.
 

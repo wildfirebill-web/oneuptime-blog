@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Client, Monitoring, Commands, Debugging
+Tags: Redis, Client, Monitoring, Command, Debugging
 
 Description: Learn how to use CLIENT INFO in Redis to retrieve detailed information about the current client connection including flags, memory usage, and connection state.
 

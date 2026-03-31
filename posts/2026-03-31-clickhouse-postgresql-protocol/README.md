@@ -1,6 +1,6 @@
 # How to Configure ClickHouse PostgreSQL Protocol Compatibility
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, PostgreSQL, Protocol, Compatibility
 

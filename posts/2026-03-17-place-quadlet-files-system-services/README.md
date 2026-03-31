@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Systemd, System Service, Root
+Tags: Podman, Container, DevOps, Quadlet, Systemd, System Service, Root
 
 Description: Learn where to place Quadlet unit files for system-wide (rootful) Podman services that run at boot with root privileges.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, Federation, Microservices, API Gateway, Apollo, Distributed Systems, Backend Architecture
+Tags: GraphQL, Federation, Microservice, API Gateway, Apollo, Distributed System, Backend Architecture
 
 Description: Learn how to implement GraphQL Federation to unify your microservices into a single, cohesive API layer.
 

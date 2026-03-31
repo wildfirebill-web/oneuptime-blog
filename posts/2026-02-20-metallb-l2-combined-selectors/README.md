@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, Layer 2, Selectors, L2Advertisement, Networking
+Tags: Kubernetes, MetalLB, Layer 2, Selector, L2Advertisement, Networking
 
 Description: Learn how to combine interface selectors and node selectors in MetalLB L2Advertisement resources for precise control over where and how LoadBalancer IPs are advertised.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Control Plane, Kubernetes, Architecture, Operations
+Tags: Dapr, Control Plane, Kubernetes, Architecture, Operation
 
 Description: Understand all five Dapr control plane components - Operator, Sentry, Placement, Scheduler, and Sidecar Injector - their roles, ports, and how they interact with sidecars.
 

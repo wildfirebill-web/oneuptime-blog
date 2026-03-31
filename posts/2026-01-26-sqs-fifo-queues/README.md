@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, SQS, FIFO Queue, Message Ordering, Exactly-Once Processing, Distributed Systems, Message Deduplication
+Tags: AWS, SQS, FIFO Queue, Message Ordering, Exactly-Once Processing, Distributed System, Message Deduplication
 
 Description: A practical guide to configuring Amazon SQS FIFO queues for guaranteed message ordering and exactly-once delivery in your distributed applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PRTG, SNMP, Monitoring, IPv4, Networks, OID, Sensors
+Tags: PRTG, SNMP, Monitoring, IPv4, Network, OID, Sensor
 
 Description: Learn how to configure PRTG Network Monitor to collect metrics from network devices using SNMP sensors for bandwidth, CPU, and interface monitoring.
 

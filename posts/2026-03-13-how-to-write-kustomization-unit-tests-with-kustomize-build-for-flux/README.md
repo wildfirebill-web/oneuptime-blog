@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Testing, Kustomize, Unit Tests, CI/CD
+Tags: Flux, Kubernetes, GitOps, Testing, Kustomize, Unit Test, CI/CD
 
 Description: Learn how to write unit tests for Flux Kustomization overlays using kustomize build to validate manifests before they are applied to your cluster.
 

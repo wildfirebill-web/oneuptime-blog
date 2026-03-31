@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, CI/CD, Validation, GitHub Actions
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, CI/CD, Validation, GitHub Action
 
 Description: Learn how to validate SOPS-encrypted files in your CI/CD pipeline to ensure all secrets are properly encrypted before merging into your Flux repository.
 

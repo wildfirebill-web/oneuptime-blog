@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Testing, Fixtures, Modules, Infrastructure as Code
+Tags: Terraform, Testing, Fixture, Module, Infrastructure as Code
 
 Description: Learn how to create and manage test fixtures for Terraform modules including setup resources, mock data, shared configurations, and cleanup strategies.
 

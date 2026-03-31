@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Locals, Resources, Reference, Infrastructure as Code, DevOps
+Tags: OpenTofu, Local, Resource, Reference, Infrastructure as Code, DevOps
 
 Description: A guide to referencing local values in OpenTofu resource configurations to reduce duplication and improve readability.
 

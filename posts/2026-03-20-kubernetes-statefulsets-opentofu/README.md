@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, StatefulSets, OpenTofu, Database, Persistent Storage, Infrastructure
+Tags: Kubernetes, StatefulSet, OpenTofu, Database, Persistent Storage, Infrastructure
 
 Description: Learn how to create Kubernetes StatefulSets with OpenTofu for stateful applications that require stable network identities, ordered deployment, and persistent storage.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, K3s, Rancher, Virtualization, HCI
+Tags: Harvester, Kubernetes, k3s, Rancher, Virtualization, HCI
 
 Description: Learn how to provision lightweight K3s Kubernetes clusters on Harvester virtual machines for development, edge, and resource-constrained workloads.
 

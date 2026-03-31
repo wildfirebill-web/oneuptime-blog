@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Image Import, Tar
+Tags: Podman, Container, DevOps, Container Image, Image Import, Tar
 
 Description: Learn how to load container images from tar archive files into Podman for use in air-gapped environments, backups, and offline deployments.
 

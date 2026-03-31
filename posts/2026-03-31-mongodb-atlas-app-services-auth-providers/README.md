@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Authentication, App Services, Security
+Tags: MongoDB, Atlas, Authentication, App Service, Security
 
 Description: Learn how to configure authentication providers in MongoDB Atlas App Services including email/password, API key, Google, and custom JWT to secure your application.
 

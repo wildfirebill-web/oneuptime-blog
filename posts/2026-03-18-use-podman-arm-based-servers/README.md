@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, ARM, Containers, Linux, DevOps, AArch64, Raspberry Pi, AWS Graviton, Multi-Architecture
+Tags: Podman, ARM, Container, Linux, DevOps, AArch64, Raspberry Pi, AWS Graviton, Multi-Architecture
 
 Description: Install and use Podman on ARM-based servers like AWS Graviton, Raspberry Pi, and Apple Silicon, covering multi-architecture builds and performance tuning.
 

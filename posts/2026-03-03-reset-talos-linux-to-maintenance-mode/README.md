@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Maintenance Mode, Node Recovery, Kubernetes, Operations
+Tags: Talos Linux, Maintenance Mode, Node Recovery, Kubernetes, Operation
 
 Description: Learn how to reset a Talos Linux node back to maintenance mode for reconfiguration, troubleshooting, and recovery scenarios.
 

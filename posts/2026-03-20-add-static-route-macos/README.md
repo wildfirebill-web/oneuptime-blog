@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: macOS, Static Routes, Routes, Networking, Routing, Network Configuration
+Tags: macOS, Static Routes, Route, Networking, Routing, Network Configuration
 
 Description: Add temporary and persistent static routes on macOS using the route command and System Preferences, or via networksetup for scripted configuration.
 

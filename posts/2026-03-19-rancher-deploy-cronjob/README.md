@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, CronJobs, Workloads
+Tags: Rancher, Kubernetes, CronJob, Workload
 
 Description: Learn how to deploy a CronJob in Rancher to run scheduled tasks on a recurring basis in your Kubernetes cluster.
 

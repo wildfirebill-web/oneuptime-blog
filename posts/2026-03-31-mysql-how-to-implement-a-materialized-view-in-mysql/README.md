@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Materialized View, Performance, Views, Stored Procedures
+Tags: MySQL, Materialized View, Performance, View, Stored Procedure
 
 Description: Learn how to implement materialized views in MySQL using summary tables and scheduled events to cache expensive query results for fast reads.
 

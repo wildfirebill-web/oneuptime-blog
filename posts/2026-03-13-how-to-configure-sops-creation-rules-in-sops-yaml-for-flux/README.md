@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Configuration, Age
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Configuration, Age
 
 Description: A comprehensive guide to configuring SOPS creation rules in .sops.yaml to control how secrets are encrypted across your Flux GitOps repository.
 

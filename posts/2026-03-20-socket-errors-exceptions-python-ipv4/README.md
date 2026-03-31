@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Sockets, IPv4, Error Handling, Exceptions, Networking
+Tags: Python, Socket, IPv4, Error Handling, Exception, Networking
 
 Description: Learn how to properly handle the most common socket errors and exceptions in Python IPv4 networking code for robust, production-ready applications.
 

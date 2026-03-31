@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, App Services, Serverless, Backend
+Tags: MongoDB, Atlas, App Service, Serverless, Backend
 
 Description: Learn how to build a serverless backend using MongoDB Atlas App Services with HTTPS endpoints, triggers, and functions backed by Atlas data.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Enterprise, Migration, Security, Operations
+Tags: MongoDB, Enterprise, Migration, Security, Operation
 
 Description: Learn how to upgrade from MongoDB Community Edition to MongoDB Enterprise, including installation, security features, auditing, and LDAP configuration.
 

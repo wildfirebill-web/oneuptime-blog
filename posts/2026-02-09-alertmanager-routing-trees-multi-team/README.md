@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Alertmanager, Kubernetes, Alerts, Monitoring, Multi-Tenancy
+Tags: Alertmanager, Kubernetes, Alert, Monitoring, Multi-Tenancy
 
 Description: Learn how to design Alertmanager routing trees that intelligently route alerts to different teams based on namespace, severity, and service labels in multi-team Kubernetes clusters.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: SRE, On-Call, Scheduling, Operations
+Tags: SRE, On-Call, Scheduling, Operation
 
 Description: Design effective on-call schedules that balance coverage, fairness, and engineer wellbeing with rotation patterns and handoff procedures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Map
+Tags: ClickHouse, SQL, Data Type, Map
 
 Description: Learn how to store key-value pairs in ClickHouse using Map(K, V), access values by key, and use mapKeys() and mapValues() functions.
 

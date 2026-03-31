@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, CLI, Kubernetes, Tools
+Tags: Cilium, CLI, Kubernetes, Tool
 
 Description: A guide to diagnosing and fixing common Cilium CLI installation problems including download failures, permission errors, and version mismatches.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Google Cloud, Cloud Functions, Serverless, GCP, Python
+Tags: Google Cloud, Cloud Function, Serverless, GCP, Python
 
 Description: Learn how to build and deploy serverless functions on Google Cloud Platform, from simple HTTP triggers to event-driven architectures with Pub/Sub and Cloud Storage.
 

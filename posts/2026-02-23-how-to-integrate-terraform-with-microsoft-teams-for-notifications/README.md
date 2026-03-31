@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Microsoft Teams, DevOps, Notifications, Infrastructure as Code, Automation
+Tags: Terraform, Microsoft Teams, DevOps, Notification, Infrastructure as Code, Automation
 
 Description: Learn how to integrate Terraform with Microsoft Teams to send automated notifications about infrastructure changes, deployments, and alerts to your Teams channels.
 

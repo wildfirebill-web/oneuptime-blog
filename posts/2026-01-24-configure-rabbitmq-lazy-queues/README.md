@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, Performance, Memory Management, DevOps, Messaging, Queue Configuration
+Tags: RabbitMQ, Message Queue, Performance, Memory Management, DevOps, Messaging, Queue Configuration
 
 Description: Learn how to configure RabbitMQ lazy queues to optimize memory usage for high-volume messaging scenarios by storing messages on disk instead of RAM.
 

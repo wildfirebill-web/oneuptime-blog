@@ -1,6 +1,6 @@
 # How to Extend ArgoCD with Custom Health Checks
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ArgoCD, GitOps, Kubernetes, Health Check, Lua
 

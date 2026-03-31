@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker Compose, Containers, Multi-Container, DevOps
+Tags: RHEL, Docker Compose, Container, Multi-Container, DevOps
 
 Description: Learn how to install and use Docker Compose on RHEL to define and run multi-container applications.
 

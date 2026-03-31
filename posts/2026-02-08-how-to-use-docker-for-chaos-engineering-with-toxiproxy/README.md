@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Toxiproxy, Chaos Engineering, Network Testing, Resilience, Proxy, Shopify, Microservices
+Tags: Docker, Toxiproxy, Chaos Engineering, Network Testing, Resilience, Proxy, Shopify, Microservice
 
 Description: Set up Toxiproxy in Docker to simulate network conditions like latency, timeouts, and connection resets between services.
 

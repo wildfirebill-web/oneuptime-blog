@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, TRUNCATE, Table, Administration
+Tags: MySQL, SQL, DDL, TRUNCATE, Table
 
 Description: Remove all rows from a MySQL table instantly with TRUNCATE TABLE, understand how it differs from DELETE, and handle foreign key constraints safely.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Consul, Service Discovery, HashiCorp, Configuration
+Tags: Podman, Container, DevOps, Consul, Service Discovery, HashiCorp, Configuration
 
 Description: Learn how to run HashiCorp Consul in a Podman container for service discovery, health checking, and key-value configuration storage.
 

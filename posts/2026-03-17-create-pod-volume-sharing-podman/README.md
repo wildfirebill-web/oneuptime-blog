@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Volumes, Storage
+Tags: Podman, Container, DevOps, Pod, Volumes, Storage
 
 Description: Learn how to share volumes between containers in a Podman pod for data exchange and persistence.
 

@@ -1,6 +1,6 @@
 # How to Configure Health Checks for Express.js with Istio
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Express.js, Health Check, Node.js, Kubernetes
 

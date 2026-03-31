@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Monitoring, SRE
+Tags: Observability, Metric, Monitoring, SRE
 
 Description: Learn how to calculate and track average metrics for latency, response times, and resource utilization monitoring.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Containers, DevOps, Container Lifecycle
+Tags: Podman, REST API, Container, DevOps, Container Lifecycle
 
 Description: Learn how to start, stop, restart, pause, unpause, and remove containers using the Podman REST API with practical examples.
 

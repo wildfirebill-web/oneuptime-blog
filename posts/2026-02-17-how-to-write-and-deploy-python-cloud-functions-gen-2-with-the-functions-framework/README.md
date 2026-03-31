@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Python, Functions Framework, Serverless
+Tags: GCP, Cloud Function, Python, Functions Framework, Serverless
 
 Description: Learn how to write, test locally, and deploy Python Cloud Functions Gen 2 using the Functions Framework for HTTP triggers, Pub/Sub events, and Cloud Storage events.
 

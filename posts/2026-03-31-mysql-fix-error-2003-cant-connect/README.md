@@ -10,7 +10,7 @@ Description: Learn how to diagnose and fix MySQL ERROR 2003 Can't connect to MyS
 
 ## What Is ERROR 2003?
 
-```
+```text
 ERROR 2003 (HY000): Can't connect to MySQL server on '192.168.1.100' (111)
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Security, HTTP, Vulnerabilities, Web Security, Headers, CRLF Injection
+Tags: Security, HTTP, Vulnerabilities, Web Security, Header, CRLF Injection
 
 Description: Learn how to identify and fix HTTP response splitting vulnerabilities that allow attackers to inject malicious headers and perform cache poisoning attacks.
 

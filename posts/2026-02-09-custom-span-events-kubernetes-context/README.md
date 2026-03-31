@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, OpenTelemetry, Distributed Tracing, Observability, Microservices
+Tags: Kubernetes, OpenTelemetry, Distributed Tracing, Observability, Microservice
 
 Description: Learn how to add custom span events and attributes that capture Kubernetes-specific context in your traces.
 

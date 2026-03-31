@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Async, Background Tasks, Parallel Execution
+Tags: Ansible, Async, Background Task, Parallel Execution
 
 Description: Learn how to run long-running commands in the background with Ansible using async and poll, check job status, and manage multiple concurrent tasks.
 

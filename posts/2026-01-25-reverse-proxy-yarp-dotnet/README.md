@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, YARP, Reverse Proxy, ASP.NET Core, Load Balancing, Microservices, API Gateway
+Tags: .NET, YARP, Reverse Proxy, ASP.NET Core, Load Balancing, Microservice, API Gateway
 
 Description: Learn how to build a high-performance reverse proxy in .NET using YARP (Yet Another Reverse Proxy), including load balancing, request transformation, authentication, and health checks.
 

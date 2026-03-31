@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitHub Actions, CI/CD, AWS, EC2, Auto Scaling, Runner, Infrastructure as Code
+Tags: OpenTofu, GitHub Action, CI/CD, AWS, EC2, Auto Scaling, Runner, Infrastructure as Code
 
 Description: Learn how to deploy self-hosted GitHub Actions runners on AWS EC2 with auto-scaling using OpenTofu, providing cost-effective and secure CI/CD compute that scales with your workload.
 

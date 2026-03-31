@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, PostgreSQL, Database
+Tags: Podman, Container, DevOps, Quadlet, PostgreSQL, Database
 
 Description: Learn how to deploy and manage a PostgreSQL database as a systemd service using Podman Quadlet with persistent storage.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Environment Variables, Configuration
+Tags: Podman, Container, DevOps, podman-compose, Environment Variable, Configuration
 
 Description: Learn how to use .env files and env_file directives in podman-compose to manage environment variables across services.
 

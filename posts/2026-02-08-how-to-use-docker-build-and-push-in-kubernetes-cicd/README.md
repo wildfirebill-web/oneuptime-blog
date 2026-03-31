@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Kubernetes, CI/CD, Container Build, Kaniko, BuildKit, GitHub Actions, DevOps
+Tags: Docker, Kubernetes, CI/CD, Container Build, Kaniko, BuildKit, GitHub Action, DevOps
 
 Description: Practical approaches to building and pushing Docker images within Kubernetes CI/CD pipelines using Kaniko, BuildKit, and more.
 

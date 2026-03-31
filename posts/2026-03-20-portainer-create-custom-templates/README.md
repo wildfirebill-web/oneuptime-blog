@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, Custom Templates, DevOps
+Tags: Portainer, Docker, Template, Custom Templates, DevOps
 
 Description: Learn the different ways to create custom templates in Portainer for reusable container and stack deployments.
 

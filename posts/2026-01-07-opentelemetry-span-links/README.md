@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Observability, Tracing, Span Links, Distributed Systems
+Tags: OpenTelemetry, Observability, Tracing, Span Links, Distributed System
 
 Description: Learn how to use span links to represent complex relationships between traces in OpenTelemetry.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Count, Count.index, HCL, Loops, Infrastructure as Code
+Tags: OpenTofu, Count, Count.index, HCL, Loop, Infrastructure as Code
 
 Description: Learn how to use count and count.index in OpenTofu to create multiple instances of a resource - including patterns for naming, subnet allocation, and when to use for_each instead.
 

@@ -1,6 +1,6 @@
 # How to Configure Health Checks for MetalLB-Exposed Services
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MetalLB, Kubernetes, Health Check, Load Balancing, Reliability, Monitoring, High Availability
 

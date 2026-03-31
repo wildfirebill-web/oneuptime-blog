@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Remote URL
+Tags: Podman, Container, DevOps, Container Image, Build, Remote URL
 
 Description: Learn how to build container images directly from remote URLs with Podman, including tarballs, raw Containerfiles, and remote build contexts.
 

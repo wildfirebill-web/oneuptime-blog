@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $and, Logical Operators, Query, Multiple Conditions, Node.js
+Tags: MongoDB, $and, Logical Operator, Query, Multiple Conditions, Node.js
 
 Description: Learn how to use MongoDB's $and operator to combine multiple query conditions, when it is necessary versus the implicit AND, and how it interacts with indexes.
 

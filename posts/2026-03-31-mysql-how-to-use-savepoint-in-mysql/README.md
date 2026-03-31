@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Savepoint, Transactions, InnoDB, Database Management
+Tags: MySQL, Savepoint, Transaction, InnoDB, Database Management
 
 Description: Learn how to use SAVEPOINTs in MySQL to create partial rollback points within a transaction, enabling fine-grained error recovery.
 

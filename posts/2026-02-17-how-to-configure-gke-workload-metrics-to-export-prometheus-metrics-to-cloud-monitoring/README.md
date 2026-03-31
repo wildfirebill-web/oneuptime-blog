@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, GKE, Prometheus, Cloud Monitoring, Kubernetes, Observability, Metrics
+Tags: GCP, GKE, Prometheus, Cloud Monitoring, Kubernetes, Observability, Metric
 
 Description: Learn how to configure GKE managed Prometheus to scrape and export your application's Prometheus metrics directly into Google Cloud Monitoring.
 

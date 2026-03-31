@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BullMQ, RabbitMQ, AWS SQS, Comparison, Message Queues, Job Queue, Node.js, Redis
+Tags: BullMQ, RabbitMQ, AWS SQS, Comparison, Message Queue, Job Queue, Node.js, Redis
 
 Description: A comprehensive comparison of BullMQ with RabbitMQ and AWS SQS, covering architecture, features, performance, and use cases to help you choose the right queue system for your application.
 

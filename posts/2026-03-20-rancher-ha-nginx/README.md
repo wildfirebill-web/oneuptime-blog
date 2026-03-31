@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, has, Nginx, High Availability, Reverse Proxy
+Tags: Rancher, High Availability, Nginx, Reverse Proxy
 
 Description: Configure NGINX as the reverse proxy and load balancer for Rancher HA deployments with SSL termination, WebSocket support, and upstream health checking.
 

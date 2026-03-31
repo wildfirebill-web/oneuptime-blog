@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Inventory, Groups, Configuration Management
+Tags: Ansible, Inventory, Group, Configuration Management
 
 Description: Learn how to set default groups for all hosts in Ansible inventory to apply shared configurations and variables consistently.
 

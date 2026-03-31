@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Logging, Context, Distributed Systems, Tracing
+Tags: Logging, Context, Distributed System, Tracing
 
 Description: Learn to implement log context propagation for cross-service log correlation.
 

@@ -1,6 +1,6 @@
 # How to Use CONNECTION_ID() in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Function, Connection, Session, Monitoring
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, StatefulSets, Workloads
+Tags: Rancher, Kubernetes, StatefulSet, Workload
 
 Description: Learn how to deploy a StatefulSet workload in Rancher for stateful applications that require stable network identities and persistent storage.
 

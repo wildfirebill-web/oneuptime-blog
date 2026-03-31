@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sessions, Web Development, Authentication, Node.js, Security
+Tags: Redis, Session, Web Development, Authentication, Node.js, Security
 
 Description: Learn how to store web application sessions in Redis for fast, scalable authentication across multiple server instances.
 

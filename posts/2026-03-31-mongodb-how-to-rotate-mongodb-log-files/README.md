@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Logging, Operations, Database Administration
+Tags: MongoDB, Logging, Operation, Database Administration
 
 Description: Learn how to rotate MongoDB log files using the logRotate command, SIGUSR1 signal, and logRotate utility to manage log file size in production.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Testing, Integration Tests, Docker, Testcontainers, CI/CD
+Tags: Testing, Integration Test, Docker, Testcontainers, CI/CD
 
 Description: Learn how to configure and run integration tests that verify your application works correctly with real databases, APIs, and external services.
 

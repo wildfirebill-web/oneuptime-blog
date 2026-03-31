@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Rocket.Chat, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Rocket.Chat, Notification
 
 Description: Learn how to configure ArgoCD to send deployment notifications to Rocket.Chat channels using incoming webhooks with rich attachment formatting.
 

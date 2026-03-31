@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lua, Scripting, Performance, Commands
+Tags: Redis, Lua, Scripting, Performance, Command
 
 Description: Learn how to use SCRIPT LOAD in Redis to preload Lua scripts into the server cache and execute them efficiently with EVALSHA using their SHA1 hash.
 

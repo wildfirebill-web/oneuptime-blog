@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Image Automation, Monorepo, Multi-app
+Tags: Flux CD, GitOps, Kubernetes, Image Automation, Monorepo, Multi-App
 
 Description: Learn how to configure Flux image automation for a monorepo containing multiple applications with separate image update paths.
 

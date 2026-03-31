@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Build Environments, CI/CD, DevOps
+Tags: Podman, Container, Build Environments, CI/CD, DevOps
 
 Description: Learn how to use Podman to create isolated, reproducible build environments that ensure consistent compilation and packaging across all machines and CI pipelines.
 

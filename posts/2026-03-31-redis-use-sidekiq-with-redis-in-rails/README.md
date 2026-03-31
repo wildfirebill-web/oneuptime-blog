@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Ruby On Rails, Sidekiq, Background Jobs, Ruby
+Tags: Redis, Ruby On Rail, Sidekiq, Background Job, Ruby
 
 Description: Set up Sidekiq with Redis in a Rails application to run background jobs reliably with configurable queues, concurrency, and retry logic.
 

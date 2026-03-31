@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Watchtower, Docker, Containers, DevOps, Auto-Update
+Tags: Portainer, Watchtower, Docker, Container, DevOps, Auto-Update
 
 Description: Learn how to exclude specific containers from Watchtower auto-updates using Docker labels, environment variables, and Portainer's interface.
 

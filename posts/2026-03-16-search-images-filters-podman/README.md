@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Registry
+Tags: Podman, Container, DevOps, Container Image, Registry
 
 Description: Learn how to use Podman's search filters to find container images by stars, official status, and automated build status in registries.
 

@@ -1,6 +1,6 @@
 # How to Configure ClickHouse Max Connections and Threads
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, Performance, Concurrency, Server
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Incident Management, SRE, Metrics, MTTR, MTTD, Reliability
+Tags: Incident Management, SRE, Metric, MTTR, MTTD, Reliability
 
 Description: Learn which metrics to track for measuring incident response effectiveness and how to use them to drive continuous improvement.
 

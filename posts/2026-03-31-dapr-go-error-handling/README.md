@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Error Handling, Resilience, Sdk, Microservice
+Tags: Dapr, Go, Error Handling, Resilience, SDK, Microservice
 
 Description: Handle Dapr Go SDK errors using gRPC status codes, structured error inspection, retry patterns, and pub/sub retry semantics for resilient microservices.
 

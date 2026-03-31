@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, .NET, Application Insights, Azure, Migration, Observability, Tracing, Metrics
+Tags: OpenTelemetry, .NET, Application Insights, Azure, Migration, Observability, Tracing, Metric
 
 Description: A step-by-step guide to migrating .NET applications from Azure Application Insights to OpenTelemetry, covering traces, metrics, and logs with practical code examples.
 

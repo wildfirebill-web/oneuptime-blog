@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, CoreDNS, DNS, Networking, DevOps
+Tags: k3s, Kubernetes, CoreDNS, DNS, Networking, DevOps
 
 Description: Learn how to customize CoreDNS configuration in K3s to support custom DNS zones, forwarding rules, search domains, and external DNS resolution.
 

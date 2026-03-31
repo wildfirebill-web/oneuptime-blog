@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Microservices, Choreography, Events, Patterns
+Tags: Microservice, Choreography, Event, Pattern
 
 Description: Learn how to implement the choreography pattern for decoupled, event-driven microservices with saga compensation strategies.
 

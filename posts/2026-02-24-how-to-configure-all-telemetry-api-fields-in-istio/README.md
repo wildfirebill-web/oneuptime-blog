@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Telemetry, Observability, Metrics, Tracing, Kubernetes
+Tags: Istio, Telemetry, Observability, Metric, Tracing, Kubernetes
 
 Description: Complete reference for the Istio Telemetry API covering metrics customization, tracing configuration, access logging, and provider-specific settings.
 

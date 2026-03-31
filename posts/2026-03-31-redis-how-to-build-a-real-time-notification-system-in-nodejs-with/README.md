@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Node.js, Pub/Sub, Real-Time, Notifications, WebSockets
+Tags: Redis, Node.js, Pub/Sub, Real-Time, Notification, WebSocket
 
 Description: Learn how to build a scalable real-time notification system in Node.js using Redis Pub/Sub and WebSockets to push events to connected clients instantly.
 

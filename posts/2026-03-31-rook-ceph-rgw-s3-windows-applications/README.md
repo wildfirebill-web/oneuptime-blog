@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, RGW, S3, Windows, Object Storage, Kubernetes
+Tags: Rook, Ceph, RGW, S3, Window, Object Storage, Kubernetes
 
 Description: Learn how to access Ceph RGW S3-compatible object storage from Windows applications using the AWS SDK, AWS CLI, and native Windows tools.
 

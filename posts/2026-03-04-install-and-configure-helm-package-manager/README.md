@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Helm, Kubernetes, Containers, Linux
+Tags: RHEL, Helm, Kubernetes, Container, Linux
 
 Description: Learn how to install and Configure Helm Package Manager on RHEL 9 with step-by-step instructions, configuration examples, and best practices.
 

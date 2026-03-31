@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Namespaces, Best Practice
+Tags: Calico, Kubernetes, Network Policy, Namespace, Best Practice
 
 Description: Avoid the most common pitfalls when implementing Calico namespace-based network policies that cause security gaps or unexpected traffic blocks.
 

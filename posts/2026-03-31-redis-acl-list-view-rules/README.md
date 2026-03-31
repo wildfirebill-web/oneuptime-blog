@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, ACL LIST, ACL, Security, User management
+Tags: Redis, ACL LIST, ACL, Security, User Management
 
 Description: Learn how to use ACL LIST in Redis to retrieve all user access control rules in a human-readable format for auditing and configuration management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Containers, Migration
+Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Container, Migration
 
 Description: A guide to migrating containerized workloads from another CNI to Calico on a bare metal Kubernetes cluster with minimal disruption.
 

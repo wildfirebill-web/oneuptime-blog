@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Infrastructure as Code, Types, Variables, Object
+Tags: Terraform, HCL, Infrastructure as Code, Type, Variable, Object
 
 Description: Learn how to define custom object types in Terraform variables to create well-structured, validated, and self-documenting infrastructure configurations.
 

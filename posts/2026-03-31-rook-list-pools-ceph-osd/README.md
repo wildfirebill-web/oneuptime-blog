@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Pool, Operations, Storage
+Tags: Rook, Ceph, Kubernetes, Pool, Operation, Storage
 
 Description: Learn how to list and inspect Ceph pools using ceph osd pool ls, ceph osd lspools, and ceph df commands, including filtering by application type and viewing pool details.
 

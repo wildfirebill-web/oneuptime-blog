@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas Search, Autocomplete, Full-text search, Search
+Tags: MongoDB, Atlas Search, Autocomplete, Full-Text Search, Search
 
 Description: Learn how to build a fast search autocomplete feature using MongoDB Atlas Search autocomplete operator and an edge n-gram index analyzer.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Logging, Operations, Administration, Linux
+Tags: MongoDB, Logging, Operation, Administration, Linux
 
 Description: Learn how to configure MongoDB log rotation using built-in commands, logrotate, and systemd, to prevent log files from consuming all available disk space.
 

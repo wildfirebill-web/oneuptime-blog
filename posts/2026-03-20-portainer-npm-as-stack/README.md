@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Nginx Proxy Manager, Stacks, Docker Compose, Deployment
+Tags: Portainer, Nginx Proxy Manager, Stack, Docker Compose, Deployment
 
 Description: Learn how to deploy Nginx Proxy Manager as a Portainer stack with both SQLite and MariaDB backends, manage it through the Portainer UI, and integrate it with other stacks.
 

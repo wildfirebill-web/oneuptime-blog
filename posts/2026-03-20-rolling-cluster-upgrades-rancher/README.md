@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Cluster Upgrade, RKE2, Rolling Updates, Node Management, Maintenance
+Tags: Rancher, Kubernetes, Cluster Upgrade, RKE2, Rolling Update, Node Management, Maintenance
 
 Description: Learn how to perform rolling Kubernetes cluster upgrades through Rancher with minimal downtime by upgrading control plane nodes and worker nodes in sequence.
 

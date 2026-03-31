@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kubernetes, Containers, Storage, NFS, Linux
+Tags: RHEL, Kubernetes, Container, Storage, NFS, Linux
 
 Description: Learn how to configure Kubernetes Persistent Volumes with NFS on RHEL with step-by-step instructions, configuration examples, and best practices.
 

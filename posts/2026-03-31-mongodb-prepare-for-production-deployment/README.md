@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Production, Deployment, Configuration, Operations
+Tags: MongoDB, Production, Deployment, Configuration, Operation
 
 Description: A comprehensive checklist for preparing MongoDB for production including replica sets, security hardening, resource limits, and operational readiness.
 

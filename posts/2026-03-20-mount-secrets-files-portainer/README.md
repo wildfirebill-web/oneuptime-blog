@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Secrets, Volume Mounts, Security
+Tags: Portainer, Kubernetes, Secret, Volume Mounts, Security
 
 Description: Learn how to mount Kubernetes Secrets as files inside container pods through Portainer for certificate and key-based configurations.
 

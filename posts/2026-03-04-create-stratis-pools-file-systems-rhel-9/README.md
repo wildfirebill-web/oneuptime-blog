@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Stratis, Storage, Pools, Filesystem, Linux
+Tags: RHEL, Stratis, Storage, Pool, Filesystem, Linux
 
 Description: Learn how to create and manage Stratis pools and file systems on RHEL, including pool creation, filesystem provisioning, and practical management operations.
 

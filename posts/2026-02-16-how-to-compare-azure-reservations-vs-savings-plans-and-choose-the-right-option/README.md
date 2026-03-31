@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Cost Optimization, Reservations, Savings Plans, Cloud Finance, FinOps, Azure Billing
+Tags: Azure, Cost Optimization, Reservation, Savings Plans, Cloud Finance, FinOps, Azure Billing
 
 Description: Learn how to compare Azure Reservations and Savings Plans side by side so you can pick the discount model that saves the most money for your workloads.
 

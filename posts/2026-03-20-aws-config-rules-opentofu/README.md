@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Configs, Compliance, Infrastructure Governance, Infrastructure as Code
+Tags: OpenTofu, AWS, CONFIG, Compliance, Infrastructure Governance, Infrastructure as Code
 
 Description: Learn how to configure AWS Config Rules with OpenTofu to continuously evaluate AWS resource configurations for compliance with security and operational best practices.
 

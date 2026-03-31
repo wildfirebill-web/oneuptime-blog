@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Business Edition, Support, Troubleshooting, Diagnostics
+Tags: Portainer, Business Edition, Support, Troubleshooting, Diagnostic
 
 Description: Learn how to generate a Portainer Business Edition support bundle containing diagnostic information for escalating issues to Portainer support.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, YARP, Load Balancer, Reverse Proxy, ASP.NET Core, Microservices
+Tags: .NET, C#, YARP, Load Balancer, Reverse Proxy, ASP.NET Core, Microservice
 
 Description: Learn how to build a production-ready load balancer in .NET using YARP (Yet Another Reverse Proxy).
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, Caching, Performance, GitHub Actions, GitLab CI, DevOps
+Tags: Terraform, CI/CD, Caching, Performance, GitHub Action, GitLab CI, DevOps
 
 Description: Speed up your Terraform CI/CD pipelines by caching providers and plugins. Covers GitHub Actions cache, GitLab CI cache, S3 provider mirrors, and filesystem mirrors.
 

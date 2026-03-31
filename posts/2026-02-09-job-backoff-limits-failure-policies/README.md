@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Error Handling
+Tags: Kubernetes, Job, Error Handling
 
 Description: Learn how to configure backoff limits and pod failure policies in Kubernetes Jobs to handle failures intelligently and prevent wasted resources.
 

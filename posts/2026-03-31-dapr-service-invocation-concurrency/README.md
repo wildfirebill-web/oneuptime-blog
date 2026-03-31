@@ -1,6 +1,6 @@
 # How to Configure Concurrency Limits for Dapr Service Invocation
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Service Invocation, Concurrency, Resiliency, Microservice
 

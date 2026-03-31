@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Functions, State Management
+Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Function, State Management
 
 Description: Learn how path_relative_to_include works in Terragrunt with practical examples for state key generation, resource naming, and directory-based configuration.
 

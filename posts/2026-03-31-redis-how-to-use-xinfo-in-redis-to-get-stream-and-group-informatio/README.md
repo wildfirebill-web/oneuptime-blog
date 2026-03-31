@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, XINFO, Consumer Groups, Monitoring
+Tags: Redis, Stream, XINFO, Consumer Group, Monitoring
 
 Description: Learn how to use XINFO in Redis to inspect stream metadata, consumer group state, and individual consumer details for monitoring and debugging.
 

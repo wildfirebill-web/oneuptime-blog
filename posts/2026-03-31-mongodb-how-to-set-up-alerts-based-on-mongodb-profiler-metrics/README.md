@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Profiler, Alerts, Monitoring, Atlas
+Tags: MongoDB, Profiler, Alert, Monitoring, Atlas
 
 Description: Configure alerts for MongoDB slow query metrics using Atlas built-in alerting and custom monitoring scripts that track profiler data in real time.
 

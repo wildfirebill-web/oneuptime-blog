@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Connection Pooling, Database, Performance, Troubleshooting, PostgreSQL, MySQL, Redis, Microservices
+Tags: Connection Pooling, Database, Performance, Troubleshooting, PostgreSQL, MySQL, Redis, Microservice
 
 Description: Learn how to diagnose and fix connection pool exhaustion errors in databases and services, including proper pool configuration, connection leak detection, and monitoring strategies.
 

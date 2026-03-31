@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Named Collections, Security, Configuration, Credentials
+Tags: ClickHouse, Named Collection, Security, Configuration, Credential
 
 Description: Learn how to use ClickHouse Named Collections to store and reuse connection credentials securely without embedding them in queries.
 

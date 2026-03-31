@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Advisory Locks, GET_LOCK, Concurrency, Application Locking
+Tags: MySQL, Advisory Lock, GET_LOCK, Concurrency, Application Locking
 
 Description: Learn how to use MySQL advisory locks with GET_LOCK and RELEASE_LOCK to coordinate concurrent processes at the application level.
 

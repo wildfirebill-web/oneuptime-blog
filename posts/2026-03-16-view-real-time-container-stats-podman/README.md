@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Real-Time Stats
+Tags: Podman, Container, DevOps, Monitoring, Real-Time Stats
 
 Description: Learn how to monitor Podman container resource usage in real time with live-updating stats, custom refresh intervals, and streaming output.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Spring Boot, Custom Spans, Attributes, Java API
+Tags: OpenTelemetry, Spring Boot, Custom Spans, Attribute, Java API
 
 Description: Master the OpenTelemetry API to create custom spans and add attributes for detailed observability in Spring Boot applications.
 

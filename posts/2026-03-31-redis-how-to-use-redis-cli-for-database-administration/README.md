@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Redis-Cli, Database Administration, Operations, Monitoring
+Tags: Redis, Redis-Cli, Database Administration, Operation, Monitoring
 
 Description: Learn how to use redis-cli for common database administration tasks including monitoring, keyspace analysis, configuration management, and troubleshooting.
 

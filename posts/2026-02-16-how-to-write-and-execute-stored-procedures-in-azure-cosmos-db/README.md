@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Cosmos DB, Stored Procedures, JavaScript, Server-Side Programming, Transactions
+Tags: Azure, Cosmos DB, Stored Procedure, JavaScript, Server-Side Programming, Transaction
 
 Description: Learn how to write, register, and execute stored procedures in Azure Cosmos DB for atomic multi-document operations using server-side JavaScript.
 

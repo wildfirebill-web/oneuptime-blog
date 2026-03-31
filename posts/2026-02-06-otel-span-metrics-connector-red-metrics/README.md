@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Span Metrics, RED Metrics, Collector, Traces
+Tags: OpenTelemetry, Span Metrics, RED Metrics, Collector, Trace
 
 Description: Generate RED metrics (Rate, Error, Duration) automatically from your OpenTelemetry trace data using the Span Metrics Connector.
 

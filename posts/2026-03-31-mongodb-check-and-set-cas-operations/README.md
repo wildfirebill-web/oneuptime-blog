@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Concurrency, Optimistic Locking, CAS, Update
+Tags: MongoDB, Concurrency, Optimistic Locking, CA, Update
 
 Description: Learn how to implement check-and-set (CAS) operations in MongoDB using version fields and findOneAndUpdate for safe concurrent updates.
 

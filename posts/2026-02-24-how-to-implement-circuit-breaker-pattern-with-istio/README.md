@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Circuit Breaker, Resilience, DestinationRule, Envoy, Microservices
+Tags: Istio, Circuit Breaker, Resilience, DestinationRule, Envoy, Microservice
 
 Description: A practical guide to implementing the circuit breaker pattern in Istio using DestinationRules with outlier detection and connection pool limits.
 

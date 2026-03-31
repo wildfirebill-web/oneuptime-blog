@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Filtering
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Filtering
 
 Description: Learn how to filter Flux alerts by event reason using exclusion lists to receive only the notifications that matter.
 

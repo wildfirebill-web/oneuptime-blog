@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Default Gateway, Window, Troubleshooting, Networks, TCP/IP
+Tags: Default Gateway, Window, Troubleshooting, Network, TCP/IP
 
 Description: Learn how to fix the 'Default Gateway is not available' error on Windows, which prevents internet access even when the network adapter shows as connected.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Slack, Notifications, DevOps
+Tags: Ansible, Slack, Notification, DevOps
 
 Description: Send deployment notifications, alerts, and status updates to Slack channels from Ansible playbooks using webhooks and the Slack module.
 

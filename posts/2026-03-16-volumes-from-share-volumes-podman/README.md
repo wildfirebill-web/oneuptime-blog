@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Storage, Data Sharing
+Tags: Podman, Container, DevOps, Volumes, Storage, Data Sharing
 
 Description: Learn how to use the --volumes-from flag in Podman to inherit all volume mounts from another container, enabling easy data sharing and sidecar patterns.
 

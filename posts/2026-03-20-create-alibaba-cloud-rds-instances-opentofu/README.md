@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Alibaba Cloud, RDS, Managed Databases, Infrastructure as Code
+Tags: OpenTofu, Alibaba Cloud, RDS, Managed Database, Infrastructure as Code
 
 Description: Learn how to create Alibaba Cloud RDS (Relational Database Service) instances with OpenTofu for managed MySQL and PostgreSQL databases.
 

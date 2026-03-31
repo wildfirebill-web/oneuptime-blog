@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, Manifest List
+Tags: Podman, Container, DevOps, Multi-Architecture, Manifest List
 
 Description: Learn how to remove manifest lists in Podman using the podman manifest rm command, including cleaning up unused manifests and managing multi-arch image references.
 

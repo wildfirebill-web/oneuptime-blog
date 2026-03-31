@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ZooKeeper, Replication, Troubleshooting, Distributed Systems
+Tags: ClickHouse, ZooKeeper, Replication, Troubleshooting, Distributed System
 
 Description: Resolve ClickHouse 'ZooKeeper session expired' errors by tuning session timeouts, fixing network issues, and considering migration to ClickHouse Keeper.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Tags, Playbook Optimization, DevOps
+Tags: Ansible, Tag, Playbook Optimization, DevOps
 
 Description: Learn how to use Ansible tags effectively to run selective tasks, speed up deployments, and organize your playbooks for operational flexibility.
 

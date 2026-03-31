@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Alert, Operations, Disk, Storage
+Tags: MongoDB, Alert, Operation, Disk, Storage
 
 Description: Learn how to diagnose and respond to MongoDB disk space alerts by identifying large collections, compacting storage, and scaling disk capacity before data loss occurs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Scylladb, Low Latency, Performance, Nosql
+Tags: Redis, ScyllaDB, Low Latency, Performance, NoSQL
 
 Description: Compare Redis and ScyllaDB for low-latency data access, examining memory vs disk storage trade-offs, data modeling, throughput, and operational considerations.
 

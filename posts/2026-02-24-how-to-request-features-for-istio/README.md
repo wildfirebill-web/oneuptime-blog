@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Feature Requests, Open Source, Community, Service Mesh
+Tags: Istio, Feature Request, Open Source, Community, Service Mesh
 
 Description: How to effectively request new features for the Istio project by understanding the RFC process, engaging with working groups, and building community support.
 

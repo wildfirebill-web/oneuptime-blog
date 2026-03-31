@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Scripting, Monitoring, Operations, Shell
+Tags: MongoDB, Scripting, Monitoring, Operation, Shell
 
 Description: Learn how to write a shell and Python script to monitor MongoDB health by checking server status, replication lag, connection counts, and slow operation alerts.
 

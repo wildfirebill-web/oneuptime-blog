@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Podman, Environments, Containers, Linux
+Tags: Portainer, Podman, Environment, Container, Linux
 
 Description: Add a Podman environment to Portainer for managing rootless containers on Linux systems without the Docker daemon.
 

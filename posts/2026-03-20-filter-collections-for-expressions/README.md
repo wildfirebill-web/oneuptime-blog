@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, For Expressions, Collections, Filtering, Infrastructure as Code
+Tags: OpenTofu, Terraform, HCL, For Expressions, Collection, Filtering, Infrastructure as Code
 
 Description: Learn how to filter lists and maps in OpenTofu using for expressions with if conditions to select, transform, and reshape collections for use in resource configurations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Contour, Headers
+Tags: Kubernetes, Contour, Header
 
 Description: Learn how to use Contour's HTTPProxy to manipulate request and response headers for security hardening, debugging, routing, and implementing cross-cutting concerns in Kubernetes applications.
 

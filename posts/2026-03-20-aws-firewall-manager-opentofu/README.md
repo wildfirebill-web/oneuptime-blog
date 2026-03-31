@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Firewall Manager, WAF, Security Groups, Organizations, Infrastructure as Code
+Tags: OpenTofu, AWS, Firewall Manager, WAF, Security Group, Organization, Infrastructure as Code
 
 Description: Learn how to configure AWS Firewall Manager with OpenTofu to centrally manage WAF rules, security groups, and Shield Advanced protections across all accounts in an AWS Organization.
 

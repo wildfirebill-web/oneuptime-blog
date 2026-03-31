@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, URL Function, Analytics, Web Analytics, Path
+Tags: ClickHouse, URL Function, Analytics, Web Analytics, PATH
 
 Description: Learn how path() returns the URL path without query string or fragment, while pathFull() includes them, enabling precise route-level traffic analysis in ClickHouse.
 

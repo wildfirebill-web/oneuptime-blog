@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SageMaker, Cost Optimization, Spot Instances, Machine Learning
+Tags: AWS, SageMaker, Cost Optimization, Spot Instance, Machine Learning
 
 Description: Save up to 90% on Amazon SageMaker training costs by using managed spot training with automatic checkpointing and interruption handling.
 

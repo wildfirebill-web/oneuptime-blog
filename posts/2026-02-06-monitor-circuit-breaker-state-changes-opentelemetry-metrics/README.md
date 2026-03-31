@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Circuit Breaker, Resilience, Observability, Microservices
+Tags: OpenTelemetry, Metric, Circuit Breaker, Resilience, Observability, Microservice
 
 Description: Learn how to track circuit breaker state transitions using OpenTelemetry metrics to improve resilience observability in your microservices architecture.
 

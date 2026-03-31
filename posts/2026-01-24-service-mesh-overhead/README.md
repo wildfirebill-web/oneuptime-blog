@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Service Mesh, Istio, Linkerd, Performance, Kubernetes, Microservices, Latency, Sidecar
+Tags: Service Mesh, Istio, Linkerd, Performance, Kubernetes, Microservice, Latency, Sidecar
 
 Description: Learn how to diagnose and reduce service mesh overhead including sidecar optimization, resource tuning, and selective mesh enrollment.
 

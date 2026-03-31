@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Amplify, CloudWatch, Monitoring, Observability, Alerts, DevOps
+Tags: AWS, Amplify, CloudWatch, Monitoring, Observability, Alert, DevOps
 
 Description: Set up comprehensive monitoring for your AWS Amplify hosted applications using CloudWatch metrics, alarms, and dashboards
 

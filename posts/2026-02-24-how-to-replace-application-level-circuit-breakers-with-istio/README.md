@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Circuit Breaker, Resilience, DestinationRule, Microservices
+Tags: Istio, Circuit Breaker, Resilience, DestinationRule, Microservice
 
 Description: Replace application-level circuit breaker implementations like Hystrix, resilience4j, and Polly with Istio DestinationRule outlier detection for infrastructure-level circuit breaking.
 

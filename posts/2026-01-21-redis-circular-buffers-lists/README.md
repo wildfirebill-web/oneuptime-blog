@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lists, Circular Buffer, Ring Buffer, Data Structures, Logging, Recent Activity
+Tags: Redis, List, Circular Buffer, Ring Buffer, Data Structure, Logging, Recent Activity
 
 Description: A comprehensive guide to implementing circular buffers (ring buffers) using Redis lists, perfect for fixed-size logs, recent activity feeds, and bounded queues with automatic old item removal.
 

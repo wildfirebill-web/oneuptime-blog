@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Docker, Containers, Comparison, DevOps
+Tags: Podman, Docker, Container, Comparison, DevOps
 
 Description: A comprehensive comparison of Podman and Docker to help you choose the right container runtime for your project based on architecture, security, tooling, and use case requirements.
 

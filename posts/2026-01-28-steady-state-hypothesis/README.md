@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Chaos Engineering, Steady State Hypothesis, SRE, Resilience Testing, Observability, Metrics
+Tags: Chaos Engineering, Steady State Hypothesis, SRE, Resilience Testing, Observability, Metric
 
 Description: Learn how to define and validate steady state hypotheses to create meaningful chaos experiments that prove system resilience.
 

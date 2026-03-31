@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, Security Groups, IP Whitelisting, OpenTofu, Network Security
+Tags: AWS, Security Group, IP Whitelisting, OpenTofu, Network Security
 
 Description: Learn how to implement IP whitelisting with AWS Security Groups, Azure NSGs, and GCP firewall rules using OpenTofu for restricting access to specific IP ranges.
 

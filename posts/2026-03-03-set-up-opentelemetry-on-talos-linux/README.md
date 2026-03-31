@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, OpenTelemetry, Observability, Kubernetes, Tracing, Metrics, Logging
+Tags: Talos Linux, OpenTelemetry, Observability, Kubernetes, Tracing, Metric, Logging
 
 Description: Deploy the OpenTelemetry Collector on Talos Linux and configure unified observability for traces, metrics, and logs in Kubernetes.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Backup, mysqlpump, Parallel, Performance
+Tags: MySQL, Backup, Mysqlpump, Parallel, Performance
 
 Description: Learn how to use mysqlpump to perform parallel database backups in MySQL, significantly reducing backup time for large databases compared to mysqldump.
 

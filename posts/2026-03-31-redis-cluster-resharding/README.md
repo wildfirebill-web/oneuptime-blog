@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Resharding, Scalability, Operations
+Tags: Redis, Cluster, Resharding, Scalability, Operation
 
 Description: Learn how to reshard slot assignments in Redis Cluster to rebalance data across nodes, add capacity to new nodes, or prepare a node for removal, using redis-cli cluster tools.
 

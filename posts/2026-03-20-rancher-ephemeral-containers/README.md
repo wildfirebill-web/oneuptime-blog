@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Ephemeral Containers, Debugging, Troubleshooting
+Tags: Rancher, Kubernetes, Ephemeral Container, Debugging, Troubleshooting
 
 Description: Master ephemeral containers in Rancher Kubernetes clusters to debug distroless and minimal containers without modifying the original pod specification.
 

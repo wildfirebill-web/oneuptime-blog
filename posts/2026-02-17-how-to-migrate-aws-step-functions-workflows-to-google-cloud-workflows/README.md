@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud Workflows, AWS Step Functions, Serverless, Cloud Migration
+Tags: GCP, Google Cloud Workflows, AWS Step Function, Serverless, Cloud Migration
 
 Description: Learn how to convert AWS Step Functions state machines to Google Cloud Workflows, including state type mapping, error handling, and integration patterns.
 

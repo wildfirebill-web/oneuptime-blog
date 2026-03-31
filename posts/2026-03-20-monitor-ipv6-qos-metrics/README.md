@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, QoS, Monitoring, Metrics, Prometheus, Grafana, Network Performance
+Tags: IPv6, QoS, Monitoring, Metric, Prometheus, Grafana, Network Performance
 
 Description: Monitor IPv6 QoS performance metrics including queue depths, DSCP class statistics, latency, and jitter using command-line tools, Prometheus, and Grafana dashboards.
 

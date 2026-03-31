@@ -1,6 +1,6 @@
 # How to Configure Health Checks for Sealed Secrets in ArgoCD
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ArgoCD, GitOps, Kubernetes, Sealed Secrets, Health Check
 

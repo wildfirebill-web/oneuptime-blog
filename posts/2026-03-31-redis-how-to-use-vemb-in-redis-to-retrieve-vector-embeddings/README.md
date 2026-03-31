@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Sets, Embeddings, Retrieval, Machine Learning
+Tags: Redis, Vector Set, Embedding, Retrieval, Machine Learning
 
 Description: Learn how to use VEMB in Redis to retrieve the stored vector embedding for a specific element in a Vector Set.
 

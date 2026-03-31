@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Feature Flags, DevOps, Infrastructure as Code, LaunchDarkly
+Tags: Terraform, Feature Flag, DevOps, Infrastructure as Code, LaunchDarkly
 
 Description: Learn how to manage feature flags and feature management platform configurations using Terraform for consistent, version-controlled feature rollouts.
 

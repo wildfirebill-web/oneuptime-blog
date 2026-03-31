@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Troubleshooting, Images, Registry
+Tags: Portainer, Docker, Troubleshooting, Image, Registry
 
 Description: Resolve 'Image Not Found' errors in Portainer deployments caused by incorrect image names, missing registry credentials, network issues, or private registry configuration problems.
 

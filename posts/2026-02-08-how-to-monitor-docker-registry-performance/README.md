@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Registry, Monitoring, Prometheus, Grafana, Metrics, Performance, Observability
+Tags: Docker, Docker Registry, Monitoring, Prometheus, Grafana, Metric, Performance, Observability
 
 Description: Set up comprehensive monitoring for your Docker registry with Prometheus metrics, Grafana dashboards, and alerting rules.
 

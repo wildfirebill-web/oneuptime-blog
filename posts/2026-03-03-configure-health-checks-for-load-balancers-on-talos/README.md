@@ -1,6 +1,6 @@
 # How to Configure Health Checks for Load Balancers on Talos
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Talos Linux, Health Check, Load Balancing, Kubernetes, Monitoring, Reliability
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, BlueStore, Monitoring, Performance, Metrics, Prometheus, Grafana
+Tags: Ceph, BlueStore, Monitoring, Performance, Metric, Prometheus, Grafana
 
 Description: Monitor BlueStore OSD performance metrics using Ceph's perf counters, Prometheus, and Grafana to identify bottlenecks.
 

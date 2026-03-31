@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Flagger, New Relic, Metrics, Progressive Delivery, Canary, Kubernetes, GitOps, Observability
+Tags: Flux, Flagger, New Relic, Metric, Progressive Delivery, Canary, Kubernetes, GitOps, Observability
 
 Description: A practical guide to configuring Flagger metrics analysis with New Relic for canary deployment validation using NRQL queries and the New Relic API.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Leader Election, Distributed Systems, High Availability, Coordination
+Tags: Redis, Leader Election, Distributed System, High Availability, Coordination
 
 Description: A comprehensive guide to implementing leader election patterns with Redis for single-leader architectures, including heartbeat mechanisms, failover handling, and production-ready patterns.
 

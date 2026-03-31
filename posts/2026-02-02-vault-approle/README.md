@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HashiCorp Vault, Security, Authentication, Secrets Management, DevOps, Microservices
+Tags: HashiCorp Vault, Security, Authentication, Secrets Management, DevOps, Microservice
 
 Description: A comprehensive guide to implementing Vault AppRole authentication for machine-to-machine scenarios.
 

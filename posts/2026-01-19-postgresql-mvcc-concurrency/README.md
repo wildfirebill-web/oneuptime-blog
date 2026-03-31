@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, MVCC, Concurrency, Transactions, Database Internals, Performance
+Tags: PostgreSQL, MVCC, Concurrency, Transaction, Database Internals, Performance
 
 Description: Understand how PostgreSQL's Multi-Version Concurrency Control (MVCC) works, why it matters for application performance, and how to avoid common pitfalls like table bloat and long-running transactions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Data Completeness, Data Quality, Monitoring, Null, Metric
+Tags: ClickHouse, Data Completeness, Data Quality, Monitoring, NULL, Metric
 
 Description: Track data completeness in ClickHouse by measuring null rates, missing field rates, and coverage metrics to identify columns with systematic data quality issues.
 

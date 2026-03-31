@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, OCI, Container Registry, Artifacts
+Tags: Flux CD, GitOps, Kubernetes, OCI, Container Registry, Artifact
 
 Description: An exploration of how Flux CD supports OCI artifacts as a source, enabling GitOps workflows that use container registries instead of Git repositories for manifest delivery.
 

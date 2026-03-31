@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tshark, Wireshark, Command Line, Packet Analysis, Networks
+Tags: tshark, Wireshark, Command Line, Packet Analysis, Network
 
 Description: Learn how to use tshark, Wireshark's command-line interface, to capture and analyze network packets without a GUI, extract specific fields, generate statistics, and automate packet analysis in...
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Spot Instances, Cost Optimization, Cloud Computing
+Tags: AWS, EC2, Spot Instance, Cost Optimization, Cloud Computing
 
 Description: A practical guide to using EC2 Spot Instances effectively to cut your compute costs by up to 90 percent without sacrificing reliability.
 

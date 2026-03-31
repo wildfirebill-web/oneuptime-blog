@@ -1,8 +1,8 @@
 # What Is ClickHouse Keeper and Why You Need It
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ClickHouse Keeper, Replication, Distributed Systems, ZooKeeper
+Tags: ClickHouse, ClickHouse Keeper, Replication, Distributed System, ZooKeeper
 
 Description: Learn what ClickHouse Keeper is, how it replaces ZooKeeper for ClickHouse replication coordination, and how to deploy and configure it for production clusters.
 

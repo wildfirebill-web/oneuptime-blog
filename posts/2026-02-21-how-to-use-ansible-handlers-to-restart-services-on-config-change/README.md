@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Handlers, Service Management, Configuration Management
+Tags: Ansible, Handler, Service Management, Configuration Management
 
 Description: Learn how to use Ansible handlers to automatically restart or reload services only when configuration files change, avoiding unnecessary downtime.
 

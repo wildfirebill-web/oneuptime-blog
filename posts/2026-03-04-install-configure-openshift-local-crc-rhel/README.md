@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, OpenShift, CRC, Containers, Development
+Tags: RHEL, OpenShift, CRC, Container, Development
 
 Description: Set up OpenShift Local (formerly CodeReady Containers) on RHEL for local OpenShift development and testing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Image Builds, Security
+Tags: Podman, Container, DevOps, Secret, Image Builds, Security
 
 Description: Learn how to use secrets during Podman image builds to access private registries, repositories, and APIs without baking credentials into image layers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, Configuration, Change Notifications, Distributed Systems
+Tags: Redis, Pub/Sub, Configuration, Change Notification, Distributed System
 
 Description: Learn how to broadcast configuration changes across distributed services instantly using Redis Pub/Sub so all instances reload settings without restarts.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Stored Procedure, Error Handling, SIGNAL, RESIGNAL, SQL
+Tags: MySQL, Stored Procedure, Error Handling, Signal, RESIGNAL, SQL
 
 Description: Learn how to raise custom errors with SIGNAL and re-raise caught errors with RESIGNAL inside MySQL stored procedures.
 

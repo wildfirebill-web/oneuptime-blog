@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, BigQuery Editions, Autoscaling, Slots, Cost Management
+Tags: GCP, BigQuery, BigQuery Editions, Autoscaling, Slot, Cost Management
 
 Description: Learn how to set up BigQuery Editions with autoscaling slots to balance performance and cost for your analytical workloads.
 

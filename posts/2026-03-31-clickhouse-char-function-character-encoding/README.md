@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, String, char, Character Encoding, ASCII, Function
+Tags: ClickHouse, String, CHAR, Character Encoding, ASCII, Function
 
 Description: Learn how to use the char() function in ClickHouse to generate characters from ASCII or Unicode code points for string construction and encoding tasks.
 

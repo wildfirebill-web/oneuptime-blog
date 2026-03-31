@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Database, Commands, Namespacing, Configuration
+Tags: Redis, Database, Command, Namespacing, Configuration
 
 Description: Learn how to use SELECT in Redis to switch between logical databases (0-15), understand their limitations in cluster mode, and when to use namespacing instead.
 

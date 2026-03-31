@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Actors, Timers, Scheduled Tasks, Microservices
+Tags: Dapr, Actor, Timer, Scheduled Task, Microservice
 
 Description: Learn how to use actor timers in Dapr to schedule one-time or recurring callbacks within an actor's lifetime for in-process scheduled work.
 

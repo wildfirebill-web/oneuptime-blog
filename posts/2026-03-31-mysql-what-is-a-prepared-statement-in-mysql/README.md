@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Prepared Statements, SQL Injection, Security, Performance, Protocol
+Tags: MySQL, Prepared Statement, SQL Injection, Security, Performance, Protocol
 
 Description: Learn what a MySQL prepared statement is, how it prevents SQL injection, improves performance for repeated queries, and how to use it in SQL and application code.
 

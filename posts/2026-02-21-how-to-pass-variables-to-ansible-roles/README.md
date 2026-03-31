@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Role, Variables, DevOps
+Tags: Ansible, Role, Variable, DevOps
 
 Description: Learn every method for passing variables to Ansible roles including role parameters, defaults, vars files, and dependency variables.
 

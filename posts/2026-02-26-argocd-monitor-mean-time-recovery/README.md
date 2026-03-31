@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, DORA Metrics, Observability
+Tags: ArgoCD, GitOps, Kubernetes, DORA Metric, Observability
 
 Description: Learn how to measure and monitor Mean Time to Recovery (MTTR) for ArgoCD deployments, tracking how quickly your team recovers from production failures.
 

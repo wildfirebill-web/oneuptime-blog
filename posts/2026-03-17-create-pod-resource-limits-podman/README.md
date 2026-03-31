@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Resources, Cgroups, Limit
+Tags: Podman, Container, DevOps, Pod, Resource, Cgroups, Limit
 
 Description: Learn how to set CPU and memory resource limits for containers within a Podman pod.
 

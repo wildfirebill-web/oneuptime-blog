@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, External Events, Orchestration, Microservices
+Tags: Dapr, Workflow, External Event, Orchestration, Microservice
 
 Description: Learn how to use Dapr Workflow external events to pause workflow execution and wait for asynchronous signals like human approvals or payment confirmations.
 

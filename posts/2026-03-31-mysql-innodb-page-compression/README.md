@@ -1,6 +1,6 @@
 # How to Use InnoDB Transparent Page Compression in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, InnoDB, Compression, Storage, Performance
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Load Balancing, Nginx, Traefik, High Availability, Stacks
+Tags: Portainer, Docker, Load Balancing, Nginx, Traefik, High Availability, Stack
 
 Description: Configure load balancing across multiple container replicas in Portainer using Docker Swarm's built-in load balancer or Traefik as a reverse proxy for HTTP traffic distribution.
 

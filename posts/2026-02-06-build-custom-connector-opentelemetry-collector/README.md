@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Connector, Custom Components, Go
+Tags: OpenTelemetry, Collector, Connector, Custom Component, Go
 
 Description: Learn how to build custom connectors for the OpenTelemetry Collector to transform and route telemetry data between pipelines with practical Go examples.
 

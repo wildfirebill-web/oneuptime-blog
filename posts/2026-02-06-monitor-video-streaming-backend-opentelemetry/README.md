@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Video Streaming, Backend Performance, Observability, Metrics, Tracing, HLS, DASH
+Tags: OpenTelemetry, Video Streaming, Backend Performance, Observability, Metric, Tracing, HLS, DASH
 
 Description: Learn how to instrument video streaming backends with OpenTelemetry to monitor transcoding pipelines, CDN origin performance, adaptive bitrate delivery, and viewer experience metrics.
 

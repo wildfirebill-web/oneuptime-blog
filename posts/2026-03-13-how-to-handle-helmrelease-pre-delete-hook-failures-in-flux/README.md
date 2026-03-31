@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, HelmRelease, Kubernetes, GitOps, Helm, Hooks, Pre-Delete, Troubleshooting
+Tags: Flux, HelmRelease, Kubernetes, GitOps, Helm, Hook, Pre-Delete, Troubleshooting
 
 Description: Learn how to diagnose and resolve pre-delete hook failures that prevent HelmRelease uninstallation in Flux CD.
 

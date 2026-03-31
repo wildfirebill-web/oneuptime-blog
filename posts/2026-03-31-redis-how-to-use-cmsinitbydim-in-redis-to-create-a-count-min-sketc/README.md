@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Count-Min Sketch, RedisBloom, Commands, NoSql
+Tags: Redis, Count-Min Sketch, RedisBloom, Command, NoSQL
 
 Description: Learn how to use CMS.INITBYDIM in Redis to create a Count-Min Sketch data structure with explicit width and depth dimensions for frequency estimation.
 

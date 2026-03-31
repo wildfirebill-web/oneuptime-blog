@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Git, Modules, Version Control, Infrastructure as Code
+Tags: Terraform, Git, Module, Version Control, Infrastructure as Code
 
 Description: Learn how to reference Terraform modules from specific Git branches, tags, and commits.
 

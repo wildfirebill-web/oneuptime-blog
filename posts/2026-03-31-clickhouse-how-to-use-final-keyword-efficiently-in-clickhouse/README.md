@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Replacingmergetree, Query Optimization, Performance
+Tags: ClickHouse, ReplacingMergeTree, Query Optimization, Performance
 
 Description: Learn when and how to use the FINAL keyword in ClickHouse ReplacingMergeTree queries, and strategies to avoid its performance costs.
 

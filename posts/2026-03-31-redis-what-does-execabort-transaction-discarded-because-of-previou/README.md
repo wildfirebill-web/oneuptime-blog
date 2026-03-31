@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Error, EXECABORT, Transactions, MULTI, EXEC, Troubleshooting
+Tags: Redis, Error, EXECABORT, Transaction, MULTI, EXEC, Troubleshooting
 
 Description: Learn why Redis returns EXECABORT when executing a transaction, how it differs from runtime errors, and how to write reliable Redis transactions with proper error handling.
 

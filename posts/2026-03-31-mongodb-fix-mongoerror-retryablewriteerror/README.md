@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Retryable Write, Error, Replica Set, Transactions
+Tags: MongoDB, Retryable Write, Error, Replica Set, Transaction
 
 Description: Learn what causes MongoError RetryableWriteError in MongoDB and how to configure retry behavior, handle transactions, and avoid duplicate writes.
 

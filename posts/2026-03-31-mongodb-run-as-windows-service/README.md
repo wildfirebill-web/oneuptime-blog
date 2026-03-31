@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Windows, Administration
+Tags: MongoDB, Window, Administration
 
 Description: Learn how to install, configure, and manage MongoDB as a Windows Service so it starts automatically and runs in the background on Windows Server.
 

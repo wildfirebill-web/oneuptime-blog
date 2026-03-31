@@ -1,6 +1,6 @@
 # How to Set Up CSI Provisioner Secrets for RBD in Rook
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage
 

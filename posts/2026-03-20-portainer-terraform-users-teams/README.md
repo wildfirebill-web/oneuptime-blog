@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Terraform, Users, Teams, RBAC
+Tags: Portainer, Terraform, Users, Team, RBAC
 
 Description: Learn how to define and manage Portainer users, teams, and team memberships using Terraform for automated, version-controlled RBAC configuration.
 

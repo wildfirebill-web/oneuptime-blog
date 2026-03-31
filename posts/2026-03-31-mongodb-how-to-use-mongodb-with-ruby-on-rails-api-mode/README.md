@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Ruby On Rail, Mongoid, Database, Api
+Tags: MongoDB, Ruby On Rail, Mongoid, Database, API
 
 Description: Learn how to integrate MongoDB into a Ruby on Rails API-only application using Mongoid ODM, from setup through querying and deployment.
 

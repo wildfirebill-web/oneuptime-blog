@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, ACM, SSL/TLS, Certificates, Route 53, Infrastructure as Code
+Tags: OpenTofu, AWS, ACM, SSL/TLS, Certificate, Route 53, Infrastructure as Code
 
 Description: Learn how to provision and validate SSL/TLS certificates using AWS Certificate Manager with OpenTofu, including DNS validation with Route 53 and certificate attachment to load balancers.
 

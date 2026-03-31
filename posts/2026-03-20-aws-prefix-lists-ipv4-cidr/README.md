@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, VPC, Prefix Lists, IPv4, Security Groups, Networking
+Tags: AWS, VPC, Prefix Lists, IPv4, Security Group, Networking
 
 Description: Create and use AWS managed prefix lists to group IPv4 CIDR blocks for reuse across security groups and route tables, simplifying firewall rule management.
 

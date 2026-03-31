@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Python, Decorators, Metaprogramming, Functions
+Tags: Python, Decorator, Metaprogramming, Function
 
 Description: Learn how to create Python decorators that accept arguments using nested functions and functools.wraps for flexible behavior.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Redis, Distributed Systems, Redlock, Concurrency, TypeScript, Backend
+Tags: Node.js, Redis, Distributed System, Redlock, Concurrency, TypeScript, Backend
 
 Description: Learn how to implement distributed locks in Node.js using the Redlock algorithm.
 

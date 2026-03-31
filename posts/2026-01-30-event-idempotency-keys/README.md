@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Event-Driven, Idempotency, Distributed Systems, Reliability
+Tags: Event-Driven, Idempotency, Distributed System, Reliability
 
 Description: Learn to create idempotency keys for events to ensure exactly-once processing semantics in distributed systems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kubernetes, Containers, RBAC, Security, Multi-Tenancy, Linux
+Tags: RHEL, Kubernetes, Container, RBAC, Security, Multi-Tenancy, Linux
 
 Description: Learn how to set Up Kubernetes RBAC for Multi-Tenant Clusters on RHEL with step-by-step instructions, configuration examples, and best practices.
 

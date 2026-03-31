@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Full-Text Search, Autocomplete, Atlas Search, Text Index
+Tags: MongoDB, Full-Text Search, Autocomplete, Atlas Search, Text Index
 
 Description: Implement full-text search and autocomplete in MongoDB using Atlas Search indexes with edge n-grams and the $search aggregation stage.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Azure, AKS, Azure Monitor, Observability, Logging, Metrics, Container Insights
+Tags: Flux, Kubernetes, GitOps, Azure, AKS, Azure Monitor, Observability, Logging, Metric, Container Insights
 
 Description: Learn how to deploy and configure the Azure Monitor Agent on AKS using Flux CD for GitOps-managed observability and monitoring.
 

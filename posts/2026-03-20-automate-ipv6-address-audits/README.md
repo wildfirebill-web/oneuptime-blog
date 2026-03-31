@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Audit, Python, Automation, IPAM, Compliance, Networks
+Tags: IPv6, Audit, Python, Automation, IPAM, Compliance, Network
 
 Description: Automate IPv6 address usage audits to detect unused allocations, unauthorized addresses, and IPAM policy violations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Targeting, Segmentation, Personalization
+Tags: Feature Flag, Targeting, Segmentation, Personalization
 
 Description: Learn how to target feature flags to specific user segments.
 

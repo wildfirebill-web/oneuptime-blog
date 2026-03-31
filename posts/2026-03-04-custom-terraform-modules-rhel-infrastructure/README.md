@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Terraform, Modules, IaC, Infrastructure, Linux
+Tags: RHEL, Terraform, Module, IaC, Infrastructure, Linux
 
 Description: Learn how to create reusable Terraform modules for deploying and managing RHEL infrastructure across multiple environments.
 

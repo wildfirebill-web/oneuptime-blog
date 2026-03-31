@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: .NET, C#, HttpClient, Timeout, Exceptions, Resilience, API
+Tags: .NET, C#, HttpClient, Timeout, Exception, Resilience, API
 
 Description: Learn how to properly handle timeout exceptions in HttpClient, configure appropriate timeout values, and implement retry strategies for resilient HTTP communication.
 

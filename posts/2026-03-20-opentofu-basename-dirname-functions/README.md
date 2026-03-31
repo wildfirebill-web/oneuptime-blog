@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Functions, Filesystem
+Tags: OpenTofu, Terraform, Infrastructure as Code, Function, Filesystem
 
 Description: Learn how to use the basename and dirname functions in OpenTofu to extract the filename and directory components of file paths.
 

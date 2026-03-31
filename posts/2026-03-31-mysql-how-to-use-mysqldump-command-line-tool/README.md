@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Backup, Mysqldump, Command Line, Database Administration
+Tags: MySQL, Backup, mysqldump, Command Line, Database Administration
 
 Description: Learn how to use the mysqldump command-line tool to export MySQL databases, tables, and schemas for backup and migration purposes.
 

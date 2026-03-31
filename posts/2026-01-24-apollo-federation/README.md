@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, Apollo Federation, API Gateway, Microservices, Backend, Node.js
+Tags: GraphQL, Apollo Federation, API Gateway, Microservice, Backend, Node.js
 
 Description: A comprehensive guide to setting up Apollo Federation for building a unified GraphQL API from multiple microservices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, High Cardinality, Prometheus, Performance
+Tags: Istio, Metric, High Cardinality, Prometheus, Performance
 
 Description: Strategies for identifying and handling high-cardinality metrics in Istio to prevent Prometheus performance degradation, OOM kills, and excessive storage costs in your service mesh.
 

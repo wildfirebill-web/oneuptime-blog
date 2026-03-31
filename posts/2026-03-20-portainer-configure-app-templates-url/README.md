@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, Configuration, DevOps
+Tags: Portainer, Docker, Template, Configuration, DevOps
 
 Description: Learn how to configure a custom App Templates URL in Portainer to replace or supplement the default template catalog.
 

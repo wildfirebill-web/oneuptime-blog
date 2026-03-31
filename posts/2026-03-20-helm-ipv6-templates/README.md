@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, IPv6, Templates, Kubernetes, Go Templates
+Tags: Helm, IPv6, Template, Kubernetes, Go Templates
 
 Description: Use Helm template functions to handle IPv6 addresses, CIDR blocks, and dual-stack configuration in Kubernetes deployments.
 

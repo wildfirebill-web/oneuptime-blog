@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, MySQL, External Database, High Availability
+Tags: k3s, Kubernetes, Rancher, MySQL, External Database, High Availability
 
 Description: Learn how to configure K3s to use MySQL as an external datastore for highly available clusters without embedded etcd.
 

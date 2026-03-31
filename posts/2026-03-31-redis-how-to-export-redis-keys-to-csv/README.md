@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Csv, Data Export, Node.js, Python
+Tags: Redis, CSV, Data Export, Node.js, Python
 
 Description: Export Redis keys and their values to CSV files using SCAN for safe key enumeration and streaming writes for large datasets without memory issues.
 

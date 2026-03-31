@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Alter Table, Schema Design
+Tags: MySQL, DDL, ALTER TABLE, Schema Design
 
 Description: Learn how to rename a table in MySQL using RENAME TABLE or ALTER TABLE RENAME, with tips on handling foreign keys and application dependencies.
 

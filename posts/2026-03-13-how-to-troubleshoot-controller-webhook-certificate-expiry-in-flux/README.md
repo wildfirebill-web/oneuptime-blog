@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, Webhooks, TLS Certificates, Certificate Expiry, Security
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, Webhook, TLS Certificates, Certificate Expiry, Security
 
 Description: Learn how to diagnose and fix webhook certificate expiry issues in Flux controllers that cause admission webhook failures and blocked resource creation.
 

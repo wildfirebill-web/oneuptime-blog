@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Node.js, JavaScript, Containers, Development
+Tags: Podman, Node.js, JavaScript, Container, Development
 
 Description: A hands-on guide to using Podman for Node.js development, covering project setup, dependency management, Express and Next.js workflows, testing, and debugging.
 

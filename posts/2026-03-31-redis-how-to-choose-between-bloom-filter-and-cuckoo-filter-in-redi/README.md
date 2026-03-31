@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Bloom Filter, Cuckoo Filter, Probabilistic, Data Structures
+Tags: Redis, Bloom Filter, Cuckoo Filter, Probabilistic, Data Structure
 
 Description: Learn the key differences between Redis Bloom and Cuckoo filters and how to choose the right one for your use case based on deletion support and performance.
 

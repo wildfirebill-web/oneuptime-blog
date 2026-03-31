@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, RabbitMQ, Message Queues, High Availability
+Tags: Kubernetes, RabbitMQ, Message Queue, High Availability
 
 Description: Learn how to deploy RabbitMQ using the Cluster Operator on Kubernetes and configure quorum queues for high availability, data safety, and fault tolerance in distributed messaging systems.
 

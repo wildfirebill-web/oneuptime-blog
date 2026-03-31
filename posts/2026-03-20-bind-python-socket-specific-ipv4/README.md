@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Sockets, IPv4, Binding, Networking, Interface
+Tags: Python, Socket, IPv4, Binding, Networking, Interface
 
 Description: Learn how to bind a Python socket to a specific IPv4 address or network interface to control which network traffic the socket sends and receives.
 

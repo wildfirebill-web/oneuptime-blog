@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elemental, Reset, Kubernetes, Edge, Operations
+Tags: Elemental, Reset, Kubernetes, Edge, Operation
 
 Description: Learn how to use Elemental reset plans to wipe and re-provision nodes back to a clean state declaratively.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Flatten, for_each, Collections, Functions
+Tags: OpenTofu, Terraform, Flatten, for_each, Collection, Function
 
 Description: Learn how to use the flatten function and for expressions in OpenTofu to convert nested data structures into flat maps suitable for for_each-based resource creation.
 

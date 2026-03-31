@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $objectToArray, $arrayToObject, Objects, Arrays
+Tags: MongoDB, Aggregation, $objectToArray, $arrayToObject, Object, Array
 
 Description: Learn how to convert objects to arrays and arrays back to objects in MongoDB aggregation using $objectToArray and $arrayToObject operators.
 

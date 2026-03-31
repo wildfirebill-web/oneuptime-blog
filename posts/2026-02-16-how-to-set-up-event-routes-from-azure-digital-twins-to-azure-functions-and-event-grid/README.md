@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Digital Twins, Event Grid, Azure Functions, Event Routes, IoT Event Processing, Serverless, Event-Driven Architecture
+Tags: Azure Digital Twins, Event Grid, Azure Function, Event Routes, IoT Event Processing, Serverless, Event-Driven Architecture
 
 Description: Learn how to set up event routes from Azure Digital Twins to Azure Functions and Event Grid for real-time processing of twin change notifications.
 

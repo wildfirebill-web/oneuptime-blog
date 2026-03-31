@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Admission Webhooks, Security
+Tags: ArgoCD, GitOps, Kubernetes, Admission Webhook, Security
 
 Description: Manage the interaction between ArgoCD and Kubernetes admission webhooks to prevent sync failures, diff issues, and deployment conflicts.
 

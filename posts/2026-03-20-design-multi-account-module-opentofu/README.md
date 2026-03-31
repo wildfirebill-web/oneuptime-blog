@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, AWS Organizations, Multi-Account, Modules, IAM
+Tags: OpenTofu, Terraform, AWS Organizations, Multi-Account, Module, IAM
 
 Description: Learn how to design a multi-account module for OpenTofu that manages AWS Organizations accounts, cross-account roles, and account-level configurations through a centralized structure.
 

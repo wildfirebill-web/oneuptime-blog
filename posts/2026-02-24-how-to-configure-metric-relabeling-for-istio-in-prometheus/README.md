@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Prometheus, Relabeling, Metrics, Cardinality
+Tags: Istio, Prometheus, Relabeling, Metric, Cardinality
 
 Description: Learn how to use Prometheus metric relabeling to filter, rename, and reshape Istio metrics to reduce cardinality and storage costs while keeping useful data.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, topK, Heavy Hitter, Approximate Query, Streaming Analytics
+Tags: ClickHouse, TopK, Heavy Hitter, Approximate Query, Streaming Analytics
 
 Description: Learn how to use topK and topKWeighted in ClickHouse to efficiently detect the most frequent elements in large data streams.
 

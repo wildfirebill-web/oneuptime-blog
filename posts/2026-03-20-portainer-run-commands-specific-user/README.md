@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Security, Linux
+Tags: Portainer, Docker, Container, Security, Linux
 
 Description: Learn how to run commands as a specific user in the Docker container console from Portainer, including running as root for debugging and non-root for security.
 

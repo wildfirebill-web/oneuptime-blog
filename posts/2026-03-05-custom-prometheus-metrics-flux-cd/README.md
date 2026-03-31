@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Prometheus, Custom Metrics, Monitoring
+Tags: Flux CD, GitOps, Kubernetes, Prometheus, Custom Metric, Monitoring
 
 Description: Learn how to extend Flux CD's default Prometheus metrics with custom recording rules, business metrics, and derived indicators for deeper observability.
 

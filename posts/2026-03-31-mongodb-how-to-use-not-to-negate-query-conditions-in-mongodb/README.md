@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $not, Logical Operators, Query Negation, Filter, Node.js
+Tags: MongoDB, $not, Logical Operator, Query Negation, Filter, Node.js
 
 Description: Learn how to use MongoDB's $not operator to negate query conditions, its differences from $ne and $nor, and when to use it for complex filtering logic.
 

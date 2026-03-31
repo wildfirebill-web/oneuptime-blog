@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Security, Firewall, Network, Operations
+Tags: MongoDB, Security, Firewall, Network, Operation
 
 Description: Configure firewall rules to protect MongoDB from unauthorized access while allowing replica set replication and application connections.
 

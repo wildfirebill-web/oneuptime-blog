@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kotlin, Coroutines, Spring WebFlux
+Tags: OpenTelemetry, Kotlin, Coroutine, Spring WebFlux
 
 Description: Fix OpenTelemetry trace context loss when Kotlin coroutines switch threads in Spring WebFlux reactive applications.
 

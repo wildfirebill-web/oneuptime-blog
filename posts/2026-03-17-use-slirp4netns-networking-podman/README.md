@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, slirp4netns, Rootless
+Tags: Podman, Container, DevOps, Networking, slirp4netns, Rootless
 
 Description: Learn how to use slirp4netns as the rootless networking backend in Podman and configure its options.
 

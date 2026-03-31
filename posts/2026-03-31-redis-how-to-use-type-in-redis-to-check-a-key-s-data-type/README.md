@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Data Types, Commands, Key Management, Debugging
+Tags: Redis, Data Type, Command, Key Management, Debugging
 
 Description: Learn how to use the TYPE command in Redis to identify the data type stored at a key, essential for debugging type errors and building type-aware logic.
 

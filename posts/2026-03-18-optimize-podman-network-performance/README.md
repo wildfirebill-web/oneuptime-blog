@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Networking, Performance, DevOps, Containers, DNS, Linux, CNI
+Tags: Podman, Networking, Performance, DevOps, Container, DNS, Linux, CNI
 
 Description: A comprehensive guide to optimizing Podman container network performance, covering network modes, DNS configuration, MTU tuning, and advanced networking techniques.
 

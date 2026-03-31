@@ -1,8 +1,8 @@
 # How to Configure MongoDB maxIncomingConnections
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Connection, Configuration, Performance, Operations
+Tags: MongoDB, Connection, Configuration, Performance, Operation
 
 Description: Learn how to configure MongoDB's maxIncomingConnections setting, choose the right limit for your workload, and monitor connection usage to prevent exhaustion.
 

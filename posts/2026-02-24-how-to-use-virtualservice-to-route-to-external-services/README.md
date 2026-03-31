@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, VirtualService, ServiceEntry, External Services, Traffic Management
+Tags: Istio, VirtualService, ServiceEntry, External Service, Traffic Management
 
 Description: Learn how to use Istio VirtualService with ServiceEntry to route mesh traffic to external services with timeouts, retries, and traffic shifting.
 

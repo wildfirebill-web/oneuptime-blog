@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Security Groups, AWS, Modules, Networking, Security
+Tags: OpenTofu, Terraform, Security Group, AWS, Module, Networking, Security
 
 Description: Learn how to design a reusable security group module for OpenTofu that accepts dynamic ingress and egress rules and supports both CIDR and security group source references.
 

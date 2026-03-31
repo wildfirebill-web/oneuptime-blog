@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Distributed Tracing, Spring Boot, Microservices, Context Propagation
+Tags: OpenTelemetry, Distributed Tracing, Spring Boot, Microservice, Context Propagation
 
 Description: Implement end-to-end distributed tracing across Spring Boot microservices using OpenTelemetry for complete visibility into complex service interactions.
 

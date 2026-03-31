@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Performance, Operations, Diagnostic
+Tags: MongoDB, Monitoring, Performance, Operation, Diagnostic
 
 Description: Learn how to use db.currentOp() in MongoDB to inspect currently running operations, identify long-running queries, and diagnose performance bottlenecks in real time.
 

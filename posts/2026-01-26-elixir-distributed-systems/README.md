@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elixir, Distributed Systems, OTP, BEAM, Concurrency, Fault Tolerance, Clustering
+Tags: Elixir, Distributed System, OTP, BEAM, Concurrency, Fault Tolerance, Clustering
 
 Description: A practical guide to building distributed systems with Elixir, covering node clustering, process distribution, data replication, and fault tolerance patterns.
 

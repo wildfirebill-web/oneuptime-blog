@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, ErrorHandling, JavaScript, BestPractices, Debugging
+Tags: NodeJS, ErrorHandling, JavaScript, BestPractice, Debugging
 
 Description: Learn comprehensive error handling patterns in Node.js including try-catch, async errors, custom error classes, Express middleware, and production-ready error management.
 

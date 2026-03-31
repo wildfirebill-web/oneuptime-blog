@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, State Management, Infrastructure as Code, DevOps, Operations
+Tags: Terraform, State Management, Infrastructure as Code, DevOps, Operation
 
 Description: Learn how to refresh Terraform state to sync it with real infrastructure without making any changes, using terraform refresh and terraform apply -refresh-only.
 

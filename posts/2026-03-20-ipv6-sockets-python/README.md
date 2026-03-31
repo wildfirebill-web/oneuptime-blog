@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Sockets, Networking, AF_INET6, Socket Programming
+Tags: Python, IPv6, Socket, Networking, AF_INET6, Socket Programming
 
 Description: Create IPv6 TCP and UDP sockets in Python using the socket module, build IPv6 servers and clients, and implement protocol-independent networking with getaddrinfo.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Build, Performance, Optimization
+Tags: Podman, Container, DevOps, Build, Performance, Optimization
 
 Description: Learn how to order instructions in your Containerfile to maximize layer cache hits and minimize rebuild times with Podman.
 

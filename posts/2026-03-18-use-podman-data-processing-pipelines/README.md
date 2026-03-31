@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Data Pipelines, ETL, Data Engineering
+Tags: Podman, Container, Data Pipeline, ETL, Data Engineering
 
 Description: Learn how to use Podman to build modular data processing pipelines where each stage runs in its own container, enabling isolation, reusability, and easy debugging.
 

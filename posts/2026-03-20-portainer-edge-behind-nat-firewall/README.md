@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Edge Agent, NAT, Firewall, Networks, Remote Access
+Tags: Portainer, Edge Agent, NAT, Firewall, Network, Remote Access
 
 Description: Deploy and configure Portainer Edge Agents in NAT or firewalled environments where devices don't have public IP addresses.
 

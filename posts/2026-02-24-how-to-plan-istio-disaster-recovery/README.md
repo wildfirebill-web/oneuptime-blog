@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Disaster Recovery, Kubernetes, High Availability, Operations
+Tags: Istio, Disaster Recovery, Kubernetes, High Availability, Operation
 
 Description: Plan and implement disaster recovery for your Istio service mesh covering control plane failures, configuration backup, certificate recovery, and mesh reconstruction.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Homebrew, macOS, Database, Installation
+Tags: MySQL, macOS, Homebrew, Database, Installation
 
 Description: Install MySQL 8.0 on macOS using Homebrew, configure the root account, start the service, and connect with the mysql CLI.
 

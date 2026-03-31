@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, Data Pipelines, Kinesis, Lambda, S3, Glue, Athena, OpenTofu
+Tags: AWS, Data Pipeline, Kinesis, Lambda, S3, Glue, Athena, OpenTofu
 
 Description: Learn how to build a real-time data pipeline on AWS using OpenTofu with Kinesis Data Streams, Lambda processing, S3 data lake, Glue ETL, and Athena for analytics.
 

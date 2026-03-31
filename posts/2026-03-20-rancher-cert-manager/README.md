@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Cert-Manager, TLS, Certificates, Let's Encrypt
+Tags: Rancher, Kubernetes, Cert-Manager, TLS, Certificate, Let's Encrypt
 
 Description: Deploy and configure cert-manager in Rancher to automatically provision and renew TLS certificates from Let's Encrypt, Vault, and other certificate authorities.
 

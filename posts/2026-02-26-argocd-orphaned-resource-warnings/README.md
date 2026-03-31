@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Resource Management, Alerts
+Tags: ArgoCD, GitOps, Kubernetes, Resource Management, Alert
 
 Description: Learn how to configure and customize orphaned resource warnings in ArgoCD projects including notification setup, severity tuning, and integration with monitoring tools.
 

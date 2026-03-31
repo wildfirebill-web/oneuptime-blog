@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, Troubleshooting, AMQP, Backend, Distributed Systems, Error Handling
+Tags: RabbitMQ, Message Queue, Troubleshooting, AMQP, Backend, Distributed System, Error Handling
 
 Description: Learn how to diagnose and fix RabbitMQ precondition failed errors caused by queue and exchange property mismatches.
 

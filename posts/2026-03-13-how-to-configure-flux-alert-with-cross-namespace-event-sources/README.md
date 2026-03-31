@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Alerts, Cross-Namespace, Multi-Tenancy
+Tags: Flux, Kubernetes, GitOps, Alert, Cross-Namespace, Multi-Tenancy
 
 Description: Learn how to configure Flux alerts that monitor event sources across multiple namespaces for centralized notification management.
 

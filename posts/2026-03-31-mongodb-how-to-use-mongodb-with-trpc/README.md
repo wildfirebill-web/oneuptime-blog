@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Trpc, Typescript, Node.Js, Database
+Tags: MongoDB, tRPC, TypeScript, Node.js, Database
 
 Description: Learn how to build a type-safe tRPC API backed by MongoDB using the native Node.js driver, with procedures for querying and mutating documents.
 

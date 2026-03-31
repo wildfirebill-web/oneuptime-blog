@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Fluxcd, OCI, Artifacts, Tags, GitOps, Kubernetes, Container-registry, Versioning
+Tags: Flux, Fluxcd, OCI, Artifact, Tag, GitOps, Kubernetes, Container-registry, Versioning
 
 Description: A practical guide to tagging OCI artifacts with the flux tag artifact command for version management and promotion workflows.
 

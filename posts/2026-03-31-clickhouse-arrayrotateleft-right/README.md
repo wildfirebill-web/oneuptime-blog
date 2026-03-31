@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Array, arrayRotateLeft, arrayRotateRight, Data Transformation, Circular Buffer
+Tags: ClickHouse, Array Function, arrayRotateLeft, arrayRotateRight, Circular Buffer, Data Transformation
 
 Description: Learn how arrayRotateLeft() and arrayRotateRight() cyclically shift array elements in ClickHouse, preserving length and enabling circular buffer operations.
 

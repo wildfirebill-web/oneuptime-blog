@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Object Storage, Obc, S3, Kubernetes
+Tags: Rook, Ceph, Object Storage, OBC, S3, Kubernetes
 
 Description: Learn how to create ObjectBucketClaims in Rook to dynamically provision S3 buckets and inject credentials into applications via Kubernetes Secrets and ConfigMaps.
 

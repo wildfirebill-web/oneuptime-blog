@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, RDS, Parameter Groups, Database, Infrastructure as Code
+Tags: Terraform, AWS, RDS, Parameter Group, Database, Infrastructure as Code
 
 Description: Learn how to create RDS instances with custom parameter groups in Terraform for fine-tuned database configuration including performance tuning and security hardening.
 

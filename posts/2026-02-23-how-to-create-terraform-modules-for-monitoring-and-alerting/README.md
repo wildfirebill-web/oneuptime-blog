@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Monitoring, Alerting, CloudWatch, Observability
+Tags: Terraform, Module, Monitoring, Alerting, CloudWatch, Observability
 
 Description: Build reusable Terraform modules for monitoring and alerting infrastructure including CloudWatch dashboards, alarms, SNS topics, and metric-based alerts.
 

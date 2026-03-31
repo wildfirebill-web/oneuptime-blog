@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Index, reIndex, Maintenance, Performance
+Tags: MongoDB, Index, REINDEX, Maintenance, Performance
 
 Description: Learn when and how to use MongoDB's reIndex() command to drop and rebuild all indexes on a collection, recover from index corruption, and reclaim wasted index space.
 

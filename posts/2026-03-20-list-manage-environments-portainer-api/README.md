@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Environments, Automation, Infrastructure
+Tags: Portainer, API, Environment, Automation, Infrastructure
 
 Description: Learn how to create, update, and manage Portainer environments (endpoints) using the REST API for infrastructure automation.
 

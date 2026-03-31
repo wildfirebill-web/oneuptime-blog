@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Tagging
+Tags: Podman, Container, DevOps, Container Image, Tagging
 
 Description: Learn how to tag container images with Podman, including creating version tags, registry-specific tags, and implementing tagging strategies for CI/CD pipelines.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Chaos Engineering, Observability, Monitoring, OpenTelemetry, SRE, Metrics, Alerting
+Tags: Chaos Engineering, Observability, Monitoring, OpenTelemetry, SRE, Metric, Alerting
 
 Description: Learn how to set up effective monitoring for chaos experiments to capture meaningful data and ensure safety during fault injection.
 

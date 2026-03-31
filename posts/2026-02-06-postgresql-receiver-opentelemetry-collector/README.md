@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, PostgreSQL, Database Monitoring, Metrics, Performance
+Tags: OpenTelemetry, Collector, PostgreSQL, Database Monitoring, Metric, Performance
 
 Description: Comprehensive guide to configuring the PostgreSQL receiver in OpenTelemetry Collector for database monitoring with practical examples, query optimization, and alerting strategies.
 

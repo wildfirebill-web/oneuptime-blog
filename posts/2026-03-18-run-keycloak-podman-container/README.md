@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Keycloak, Authentication, Identity Management, SSO
+Tags: Podman, Container, DevOps, Keycloak, Authentication, Identity Management, SSO
 
 Description: Learn how to run Keycloak in a Podman container for identity and access management with realms, users, and SSO configuration.
 

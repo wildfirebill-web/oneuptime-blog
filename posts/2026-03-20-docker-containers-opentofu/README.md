@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Docker, Infrastructure as Code, IaC, Containers
+Tags: OpenTofu, Docker, Infrastructure as Code, IaC, Container
 
 Description: Learn how to create and manage Docker containers with environment variables, volume mounts, and port bindings using OpenTofu.
 

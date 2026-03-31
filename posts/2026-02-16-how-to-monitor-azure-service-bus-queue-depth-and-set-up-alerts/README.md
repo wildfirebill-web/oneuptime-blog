@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Service Bus, Monitoring, Alerts, Azure Monitor, Queue Management, Observability
+Tags: Azure, Service Bus, Monitoring, Alert, Azure Monitor, Queue Management, Observability
 
 Description: Learn how to monitor Azure Service Bus queue depth metrics and configure alerts to catch message backlogs before they become incidents.
 

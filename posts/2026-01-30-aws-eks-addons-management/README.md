@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EKS, Add-ons, Kubernetes
+Tags: AWS, EKS, Add-on, Kubernetes
 
 Description: A practical guide to managing EKS add-ons including CoreDNS, kube-proxy, VPC-CNI, and EBS CSI driver using eksctl and AWS CLI.
 

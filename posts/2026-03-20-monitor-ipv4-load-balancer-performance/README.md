@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Load Balancing, Monitoring, IPv4, HAProxy, Nginx, AWS, Metrics
+Tags: Load Balancing, Monitoring, IPv4, HAProxy, Nginx, AWS, Metric
 
 Description: Monitor IPv4 load balancer performance metrics including connection rates, latency, backend health, and error rates using HAProxy stats, Nginx status, and cloud provider metrics.
 

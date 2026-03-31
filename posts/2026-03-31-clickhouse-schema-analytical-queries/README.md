@@ -1,6 +1,6 @@
 # How to Optimize ClickHouse Schema for Analytical Queries
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Performance, SQL, Analytics, Database
 

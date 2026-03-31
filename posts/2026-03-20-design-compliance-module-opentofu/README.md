@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Compliance, AWS Config, Security Hub, Modules, Governance
+Tags: OpenTofu, Terraform, Compliance, AWS Config, Security Hub, Module, Governance
 
 Description: Learn how to design a compliance module for OpenTofu that enables AWS Config rules, Security Hub standards, and CloudTrail logging to enforce regulatory requirements.
 

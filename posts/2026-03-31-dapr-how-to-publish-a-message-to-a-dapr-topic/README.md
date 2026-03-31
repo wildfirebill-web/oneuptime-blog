@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Messaging, Kubernetes, Microservices
+Tags: Dapr, Pub/Sub, Messaging, Kubernetes, Microservice
 
 Description: Learn how to publish messages to Dapr pub/sub topics using the HTTP and gRPC APIs, Dapr SDKs, and configure message metadata and delivery guarantees.
 

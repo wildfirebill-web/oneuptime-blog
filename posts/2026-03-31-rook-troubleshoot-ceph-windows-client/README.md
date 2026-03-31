@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Windows, Troubleshooting, RBD, CephFS, Kubernetes
+Tags: Rook, Ceph, Window, Troubleshooting, RBD, CephFS, Kubernetes
 
 Description: Learn how to diagnose and fix common Ceph Windows client issues including connection failures, mount errors, authentication problems, and performance degradation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Performance, Images, WebP, AVIF, CDN, Frontend, Optimization
+Tags: Performance, Image, WebP, AVIF, CDN, Frontend, Optimization
 
 Description: A comprehensive guide to image optimization techniques including format selection, responsive images, lazy loading, and automated optimization pipelines.
 

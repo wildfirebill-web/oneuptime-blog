@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, IPv4, Monitoring, Prometheus, Jaeger, Service Mesh, Observability
+Tags: Microservice, IPv4, Monitoring, Prometheus, Jaeger, Service Mesh, Observability
 
 Description: Monitor inter-service TCP/HTTP communication over IPv4 using Prometheus metrics, distributed tracing with Jaeger, and service mesh observability tools like Istio.
 

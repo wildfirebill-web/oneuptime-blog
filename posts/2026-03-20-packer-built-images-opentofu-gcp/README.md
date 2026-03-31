@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Packer, GCP, Custom Images, Compute Engine
+Tags: OpenTofu, Packer, GCP, Custom Image, Compute Engine
 
 Description: Learn how to build custom GCP Compute Engine images with Packer and reference them in OpenTofu configurations for consistent, immutable VM and MIG deployments.
 

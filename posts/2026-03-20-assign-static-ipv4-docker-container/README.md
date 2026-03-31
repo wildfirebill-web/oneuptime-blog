@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, IPv4, Static IP, Containers, Docker Compose
+Tags: Docker, Networking, IPv4, Static IP, Container, Docker Compose
 
 Description: Assign a static IPv4 address to a Docker container using the --ip flag with docker run or the ipv4_address option in Docker Compose, using a custom user-defined network.
 

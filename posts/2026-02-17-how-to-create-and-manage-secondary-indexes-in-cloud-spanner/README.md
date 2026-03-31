@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Spanner, Indexes, Query Optimization, Database
+Tags: GCP, Cloud Spanner, Index, Query Optimization, Database
 
 Description: A practical guide to creating, managing, and optimizing secondary indexes in Cloud Spanner for faster query performance.
 

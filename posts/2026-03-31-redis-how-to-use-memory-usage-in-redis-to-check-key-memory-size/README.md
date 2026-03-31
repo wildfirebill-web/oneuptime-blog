@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Performance, Optimization, Keys
+Tags: Redis, Memory, Performance, Optimization, Key
 
 Description: Learn how to use MEMORY USAGE in Redis to measure the exact memory footprint of individual keys, helping you identify memory-heavy data structures.
 

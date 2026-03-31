@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Database, Performance, NoSQL
+Tags: MongoDB, Index, Database, Performance, NoSQL
 
 Description: Learn how to design and create effective indexes in MongoDB that improve query performance, avoid common pitfalls, and keep your database running fast at scale.
 

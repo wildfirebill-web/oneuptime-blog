@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, CNI, Networking, Pod Networking, Services, Network Policy
+Tags: Calico, Kubernetes, CNI, Networking, Pod Networking, Service, Network Policy
 
 Description: Kubernetes networking fundamentals explained from a Calico user's perspective, covering the networking model, CNI role, and how Calico implements each requirement.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Secret Manager, Security, Serverless
+Tags: GCP, Cloud Function, Secret Manager, Security, Serverless
 
 Description: Learn how to securely store and access API keys, database passwords, and other sensitive credentials in Cloud Functions using Google Cloud Secret Manager.
 

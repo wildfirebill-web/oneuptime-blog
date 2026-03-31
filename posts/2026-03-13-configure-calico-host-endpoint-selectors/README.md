@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Host Endpoint, Selectors, Configuration
+Tags: Calico, Kubernetes, Networking, Host Endpoint, Selector, Configuration
 
 Description: Learn how to configure Calico host endpoint selectors to target specific nodes and interfaces with precise network policies using label-based selection.
 

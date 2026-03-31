@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cloud Storage, Image Processing, Serverless
+Tags: GCP, Cloud Function, Cloud Storage, Image Processing, Serverless
 
 Description: Build a Cloud Function that automatically resizes images when they are uploaded to Google Cloud Storage, generating thumbnails and optimized versions.
 

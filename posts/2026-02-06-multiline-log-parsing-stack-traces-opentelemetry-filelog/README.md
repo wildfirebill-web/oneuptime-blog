@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Log Parsing, Stack Traces, Filelog Receiver
+Tags: OpenTelemetry, Log Parsing, Stack Trace, Filelog Receiver
 
 Description: Configure the OpenTelemetry filelog receiver to correctly parse multi-line log entries like Java stack traces into single log records.
 

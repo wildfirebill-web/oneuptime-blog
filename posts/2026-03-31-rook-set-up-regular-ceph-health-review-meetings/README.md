@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Operations, Monitoring, Kubernetes
+Tags: Rook, Ceph, Operation, Monitoring, Kubernetes
 
 Description: Learn how to structure regular Ceph health review meetings with automated pre-meeting reports, key metrics dashboards, and a consistent agenda to keep clusters healthy.
 

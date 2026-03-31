@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, Kubernetes
+Tags: Podman, Container, DevOps, Multi-Architecture, Kubernetes
 
 Description: Learn how to build and push multi-architecture container images with Podman that work seamlessly across mixed-architecture Kubernetes clusters.
 

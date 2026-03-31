@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, Migration, Templates, Best Practice
+Tags: Helm, Kubernetes, DevOps, Migration, Template, Best Practice
 
 Description: Step-by-step guide to converting existing Kubernetes YAML manifests into reusable Helm charts with templatization strategies and best practices.
 

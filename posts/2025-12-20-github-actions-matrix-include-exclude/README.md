@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Matrix Builds, Testing, DevOps, Automation
+Tags: GitHub Action, CI/CD, Matrix Builds, Testing, DevOps, Automation
 
 Description: Master GitHub Actions matrix strategies with include and exclude options to create flexible test matrices, handle special cases, and optimize CI pipeline efficiency.
 

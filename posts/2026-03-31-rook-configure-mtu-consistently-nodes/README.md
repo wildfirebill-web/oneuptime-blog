@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Networking, MTU, Configuration, Operations
+Tags: Rook, Ceph, Networking, MTU, Configuration, Operation
 
 Description: Configure consistent MTU settings across all Ceph nodes to prevent packet fragmentation, TCP resets, and silent performance degradation from MTU mismatches in storage traffic.
 

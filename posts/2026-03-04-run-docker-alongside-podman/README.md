@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Podman, Linux
+Tags: RHEL, Docker, Container, Podman, Linux
 
 Description: Learn how to run Docker Alongside Podman on RHEL with step-by-step instructions, configuration examples, and best practices.
 

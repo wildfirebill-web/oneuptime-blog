@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Configuration, Operations, Administration, Linux
+Tags: MongoDB, Configuration, Operation, Administration, Linux
 
 Description: A complete guide to MongoDB's mongod.conf configuration file, covering storage, network, security, replication, and logging options with working examples.
 

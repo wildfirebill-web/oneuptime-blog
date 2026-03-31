@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, GuardDuty, Notifications, Security, EventBridge
+Tags: AWS, GuardDuty, Notification, Security, EventBridge
 
 Description: Learn how to set up automated notifications for Amazon GuardDuty findings using EventBridge, SNS, Lambda, and chat integrations like Slack.
 

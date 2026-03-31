@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted set, ZCARD, Command
+Tags: Redis, Sorted Set, ZCARD, Command
 
 Description: Learn how to use ZCARD in Redis to get the total number of members in a sorted set, with examples for leaderboards, queues, and monitoring.
 

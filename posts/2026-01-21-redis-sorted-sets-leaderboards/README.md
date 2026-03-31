@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, Leaderboards, Ranking, Data Structures, ZADD, ZRANGE, Gaming
+Tags: Redis, Sorted Set, Leaderboard, Ranking, Data Structure, ZADD, ZRANGE, Gaming
 
 Description: A comprehensive guide to using Redis Sorted Sets for building leaderboards and ranking systems, covering ZADD, ZRANGE, ZRANK commands, score-based queries, and practical examples in Python, Node.
 

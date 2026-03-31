@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Data Consistency, Saga Pattern, Event Sourcing, Distributed Transactions, CQRS, Eventual Consistency
+Tags: Microservice, Data Consistency, Saga Pattern, Event Sourcing, Distributed Transaction, CQRS, Eventual Consistency
 
 Description: A practical guide to identifying and fixing data inconsistency issues in microservices architectures using patterns like Saga, Event Sourcing, and CQRS.
 

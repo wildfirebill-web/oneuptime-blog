@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bash, Shell Scripting, Loops, DevOps, Automation
+Tags: Bash, Shell Scripting, Loop, DevOps, Automation
 
 Description: A comprehensive guide to mastering for, while, and until loops in Bash scripts with practical examples and best practices.
 

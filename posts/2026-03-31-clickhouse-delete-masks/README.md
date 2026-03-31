@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Delete Mask, Lightweight Delete, MergeTree, Internals, Data Storage
+Tags: ClickHouse, Delete Mask, Lightweight Delete, MergeTree, Internal, Data Storage
 
 Description: Understand how ClickHouse delete masks work internally to make lightweight DELETEs instantly visible while deferring physical data removal to background merges.
 

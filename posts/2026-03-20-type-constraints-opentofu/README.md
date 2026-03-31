@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Type Constraints, Variables, Type System, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Type Constraints, Variable, Type System, Infrastructure as Code, DevOps
 
 Description: A guide to using type constraints in OpenTofu to enforce input types for variables and outputs, ensuring configuration correctness.
 

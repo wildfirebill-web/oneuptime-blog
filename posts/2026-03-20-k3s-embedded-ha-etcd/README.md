@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, etcd, High Availability, HA Cluster
+Tags: k3s, Kubernetes, Rancher, etcd, High Availability, HA Cluster
 
 Description: Learn how to set up a highly available K3s cluster using embedded etcd for a fully self-contained HA deployment without external databases.
 

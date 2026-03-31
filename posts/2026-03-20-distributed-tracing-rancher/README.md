@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Distributed Tracing, OpenTelemetry, Jaeger, Kubernetes, Microservices
+Tags: Rancher, Distributed Tracing, OpenTelemetry, Jaeger, Kubernetes, Microservice
 
 Description: Configure end-to-end distributed tracing in Rancher by instrumenting applications with OpenTelemetry, deploying collection infrastructure, and visualizing traces.
 

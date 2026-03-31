@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules, GCP
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module, GCP
 
 Description: Learn how to use Google Cloud Storage bucket URLs as module sources in OpenTofu to distribute private modules within GCP environments.
 

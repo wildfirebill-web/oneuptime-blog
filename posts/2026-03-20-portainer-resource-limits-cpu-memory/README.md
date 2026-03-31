@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Performance, DevOps
+Tags: Portainer, Docker, Container, Performance, DevOps
 
 Description: Learn how to set CPU and memory resource limits and reservations on Docker containers in Portainer to prevent resource contention.
 

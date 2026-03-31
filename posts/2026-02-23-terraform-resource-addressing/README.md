@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Resource Addressing, State Management, Infrastructure as Code, Modules
+Tags: Terraform, Resource Addressing, State Management, Infrastructure as Code, Module
 
 Description: Learn how Terraform resource addressing works, including module paths, count and for_each indexes, and how to reference resources in commands and configurations.
 

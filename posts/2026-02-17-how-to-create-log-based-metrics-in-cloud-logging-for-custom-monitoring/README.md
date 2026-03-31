@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Logging, Log-Based Metrics, Cloud Monitoring, Custom Metrics
+Tags: GCP, Cloud Logging, Log-Based Metrics, Cloud Monitoring, Custom Metric
 
 Description: Learn how to create log-based metrics in Cloud Logging to turn log data into Cloud Monitoring metrics for dashboards and alerting policies.
 

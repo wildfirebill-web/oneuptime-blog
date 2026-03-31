@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Data Model, Beginner, Span, Resources, Attributes
+Tags: OpenTelemetry, Data Model, Beginner, Span, Resource, Attribute
 
 Description: A beginner-friendly breakdown of OpenTelemetry's core data model including spans, traces, resources, attributes, and how they fit together to create observability data.
 

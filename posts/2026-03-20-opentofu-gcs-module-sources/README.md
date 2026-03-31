@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Modules, GCP
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Module, GCP
 
 Description: Learn how to use Google Cloud Storage bucket module sources in OpenTofu to host and distribute private modules on GCP.
 

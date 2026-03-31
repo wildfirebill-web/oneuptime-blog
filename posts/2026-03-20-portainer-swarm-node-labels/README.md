@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Node Labels, Constraints, Infrastructure
+Tags: Portainer, Docker Swarm, Node Labels, Constraint, Infrastructure
 
 Description: Add, manage, and use Docker Swarm node labels and placement constraints to control service scheduling via Portainer.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMaps, Volumes, Configuration, DevOps
+Tags: Portainer, Kubernetes, ConfigMap, Volumes, Configuration, DevOps
 
 Description: Learn how to mount Kubernetes ConfigMaps as files inside containers using Portainer, enabling configuration file injection for applications that read from disk.
 

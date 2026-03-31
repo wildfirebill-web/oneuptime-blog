@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Oplog, Replication, Replica Set, Internals
+Tags: MongoDB, Oplog, Replication, Replica Set, Internal
 
 Description: Learn how the MongoDB oplog enables replication across replica set members, including its structure, write ordering guarantees, and operational implications.
 

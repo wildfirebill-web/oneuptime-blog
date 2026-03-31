@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Pod Security, OpenTofu, Security, Namespaces, Infrastructure
+Tags: Kubernetes, Pod Security, OpenTofu, Security, Namespace, Infrastructure
 
 Description: Learn how to enforce Kubernetes Pod Security Standards with OpenTofu using namespace labels to apply privileged, baseline, or restricted security profiles.
 

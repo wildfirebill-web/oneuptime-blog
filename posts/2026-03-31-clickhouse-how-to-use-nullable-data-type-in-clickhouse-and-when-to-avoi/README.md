@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Data Types, Nullable, Performance, Schema Design
+Tags: ClickHouse, Data Type, Nullable, Performance, Schema Design
 
 Description: Understand how to use Nullable types in ClickHouse, the performance trade-offs involved, and when to use alternative approaches instead.
 

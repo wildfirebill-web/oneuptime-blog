@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Network Partitions, High Availability, Sentinel, Cluster, Resilience
+Tags: Redis, Network Partition, High Availability, Sentinel, Cluster, Resilience
 
 Description: Learn how Redis Sentinel and Cluster behave during network partitions, how to configure split-brain protection, and how to write resilient application code.
 

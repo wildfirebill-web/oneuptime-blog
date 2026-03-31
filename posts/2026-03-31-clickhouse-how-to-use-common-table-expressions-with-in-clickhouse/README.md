@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Common Table Expressions, WITH Clause, Query Optimization
+Tags: ClickHouse, SQL, Common Table Expression, WITH Clause, Query Optimization
 
 Description: Learn how to use Common Table Expressions (CTEs) with the WITH clause in ClickHouse to write cleaner, reusable, and recursive SQL queries.
 

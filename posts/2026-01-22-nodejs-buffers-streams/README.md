@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Buffer, Streams, Performance, FileHandling
+Tags: NodeJS, Buffer, Stream, Performance, FileHandling
 
 Description: Learn how to work with Buffers and Streams in Node.js for efficient memory usage when handling binary data, large files, and network operations.
 

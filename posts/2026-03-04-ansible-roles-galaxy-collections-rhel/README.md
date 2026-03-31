@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible, Galaxy, Role, Collections, Automation, Linux
+Tags: RHEL, Ansible, Galaxy, Role, Collection, Automation, Linux
 
 Description: Organize your RHEL automation with Ansible roles and leverage Galaxy collections for pre-built, community-maintained content.
 

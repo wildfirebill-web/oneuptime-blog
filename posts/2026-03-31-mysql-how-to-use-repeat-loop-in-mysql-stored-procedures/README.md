@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Stored Procedures, Loops, Control Flow, Sql
+Tags: MySQL, Stored Procedure, Loop, Control Flow, SQL
 
 Description: Learn how to use the REPEAT...UNTIL loop in MySQL stored procedures to execute statements repeatedly until a condition becomes true.
 

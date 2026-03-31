@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Backup, Cron, Automation, Operations
+Tags: ClickHouse, Backup, Cron, Automation, Operation
 
 Description: Learn how to automate ClickHouse backups using cron jobs with proper error handling, logging, and retention management.
 

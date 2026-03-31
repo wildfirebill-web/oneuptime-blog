@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Bugtool, Automation, Kubernetes, Diagnostics, CI/CD
+Tags: Cilium, Bugtool, Automation, Kubernetes, Diagnostic, CI/CD
 
 Description: Automate cilium-bugtool collection across clusters with scheduled jobs, event-triggered captures, and CI/CD integration for proactive diagnostic data gathering.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, GitOps, Kubernetes, Database, Post-Build Substitution, Secrets
+Tags: Flux, GitOps, Kubernetes, Database, Post-Build Substitution, Secret
 
 Description: Learn how to securely manage and inject database connection strings into your Kubernetes workloads using Flux post-build substitution.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Manifest, Multi-Architecture, Build
+Tags: Podman, Container, DevOps, Manifest, Multi-Architecture, Build
 
 Description: Learn how to use the podman manifest workflow to build, assemble, and publish multi-architecture container images step by step with full control over each platform.
 

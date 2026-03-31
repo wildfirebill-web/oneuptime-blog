@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Ruby, Rails, Development Environments, Docker, Debugging, Bundler
+Tags: Portainer, Ruby, Rails, Development Environment, Docker, Debugging, Bundler
 
 Description: Learn how to set up a Ruby on Rails development environment with hot-reload and remote debugging support in a Docker container managed by Portainer.
 

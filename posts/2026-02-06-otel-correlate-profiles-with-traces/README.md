@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Profiling, Traces, Latency, Performance
+Tags: OpenTelemetry, Profiling, Trace, Latency, Performance
 
 Description: Correlate OpenTelemetry continuous profiling data with traces to identify the exact code responsible for latency in production.
 

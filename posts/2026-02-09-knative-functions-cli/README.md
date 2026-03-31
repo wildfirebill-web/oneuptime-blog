@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Knative, Kubernetes, Serverless, Functions, CLI
+Tags: Knative, Kubernetes, Serverless, Function, CLI
 
 Description: Use Knative Functions CLI (func) to rapidly build, test, and deploy serverless functions on Kubernetes with support for multiple languages and automatic containerization.
 

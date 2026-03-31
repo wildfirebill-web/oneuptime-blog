@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Let's Encrypt, SSL, TLS, Certificates, Linux
+Tags: RHEL, Let's Encrypt, SSL, TLS, Certificate, Linux
 
 Description: A practical guide to obtaining and installing free SSL/TLS certificates from Let's Encrypt on Red Hat Enterprise Linux 9 using Certbot.
 

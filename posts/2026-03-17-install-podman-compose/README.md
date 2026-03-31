@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Installation
+Tags: Podman, Container, DevOps, podman-compose, Installation
 
 Description: Learn how to install podman-compose on Linux, macOS, and other platforms to run Docker Compose files with Podman.
 

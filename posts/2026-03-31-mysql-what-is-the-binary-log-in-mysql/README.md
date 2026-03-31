@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Binary Log, Replication, Point-In-Time Recovery
+Tags: MySQL, Binary Log, Replication, Point-in-Time Recovery
 
 Description: The MySQL binary log records all changes to the database as a sequence of events, enabling replication and point-in-time recovery.
 

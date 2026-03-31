@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Callback Plugins, Performance, Timers
+Tags: Ansible, Callback Plugins, Performance, Timer
 
 Description: Enable the Ansible timer callback plugin to display total playbook execution time and identify slow runs that need optimization.
 

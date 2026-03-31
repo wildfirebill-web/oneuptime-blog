@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Nginx, Logs, Reverse Proxy, Troubleshooting
+Tags: Portainer, Nginx, Log, Reverse Proxy, Troubleshooting
 
 Description: Resolve log streaming problems in Portainer caused by Nginx reverse proxy response buffering configuration.
 

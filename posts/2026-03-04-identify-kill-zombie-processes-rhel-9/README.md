@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Processes, Zombie, Troubleshooting, Linux, System Administration
+Tags: RHEL, Process, Zombie, Troubleshooting, Linux, System Administration
 
 Description: Learn how to identify and eliminate zombie processes on RHEL to maintain system health.
 

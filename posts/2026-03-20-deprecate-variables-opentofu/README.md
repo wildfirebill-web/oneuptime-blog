@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Deprecation, Module Development, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Deprecation, Module Development, Infrastructure as Code, DevOps
 
 Description: A guide to deprecating OpenTofu variables using the deprecated attribute to communicate breaking changes to module users.
 

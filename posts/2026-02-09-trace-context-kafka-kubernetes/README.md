@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kafka, OpenTelemetry, Distributed Tracing, Message Queues
+Tags: Kubernetes, Kafka, OpenTelemetry, Distributed Tracing, Message Queue
 
 Description: Learn how to propagate trace context through Kafka messages in Kubernetes using OpenTelemetry to maintain end-to-end tracing visibility across asynchronous message-driven workflows.
 

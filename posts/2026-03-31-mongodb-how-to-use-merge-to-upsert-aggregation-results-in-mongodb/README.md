@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $merge, Upsert, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $merge, Upsert, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $merge stage to write aggregation results back to a collection, supporting insert, replace, update, and upsert behaviors.
 

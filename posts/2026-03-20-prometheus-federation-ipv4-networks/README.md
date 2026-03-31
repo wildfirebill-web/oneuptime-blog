@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Federation, IPv4, Monitoring, Multi-Datacenter, Configuration, Metrics
+Tags: Prometheus, Federation, IPv4, Monitoring, Multi-Datacenter, Configuration, Metric
 
 Description: Learn how to configure Prometheus federation to aggregate metrics from multiple regional Prometheus instances across IPv4 networks into a global Prometheus.
 

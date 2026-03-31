@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Home Lab, Self-Hosting, Containers, Homelab
+Tags: Podman, Home Lab, Self-Hosting, Container, Homelab
 
 Description: Learn how to build a home lab using Podman to run services like DNS, VPN, dashboards, and monitoring tools in rootless containers on a single machine.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, Metrics, Monitoring, Observability
+Tags: OpenTelemetry, Prometheus, Metric, Monitoring, Observability
 
 Description: Learn how to configure OpenTelemetry applications and collectors to export metrics to Prometheus using remote write or the Prometheus exporter for comprehensive metrics monitoring.
 

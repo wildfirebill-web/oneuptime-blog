@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Latency, Diagnostics, Performance
+Tags: Redis, Latency, Diagnostic, Performance
 
 Description: Learn to use Redis LATENCY DOCTOR for diagnosing latency issues with event monitoring, history analysis, and performance tuning recommendations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Security Groups, VPC, Troubleshooting
+Tags: Terraform, AWS, Security Group, VPC, Troubleshooting
 
 Description: Resolve the DependencyViolation error when deleting security groups that are still in use by EC2 instances, ENIs, Lambda functions, or other AWS resources.
 

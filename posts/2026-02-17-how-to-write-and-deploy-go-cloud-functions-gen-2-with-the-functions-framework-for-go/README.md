@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Go, Serverless, Functions Framework
+Tags: GCP, Cloud Function, Go, Serverless, Functions Framework
 
 Description: Write and deploy Go Cloud Functions Gen 2 using the Functions Framework for Go, covering HTTP triggers, CloudEvent triggers, local testing, and deployment patterns.
 

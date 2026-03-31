@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Metrics, Monitoring, Observability, Prometheus, DevOps
+Tags: NodeJS, Metric, Monitoring, Observability, Prometheus, DevOps
 
 Description: Learn to implement custom business metrics in Node.js applications using Prometheus client libraries, including histograms, gauges, and best practices for metric design.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Longhorn, Kubernetes, Storage, GitOps, Persistent Volumes, Cloud-Native
+Tags: Flux CD, Longhorn, Kubernetes, Storage, GitOps, Persistent Volume, Cloud-Native
 
 Description: A step-by-step guide to deploying Longhorn distributed block storage on Kubernetes using Flux CD for GitOps-driven storage management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Alerts, Severity
+Tags: Flux CD, GitOps, Kubernetes, Notification, Alert, Severity
 
 Description: Learn how to use the eventSeverity field in Flux alerts to filter notifications by info and error severity levels.
 

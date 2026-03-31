@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Kubernetes, Serverless, Fission, Functions
+Tags: Ubuntu, Kubernetes, Serverless, Fission, Function
 
 Description: Step-by-step guide to installing and configuring Fission serverless framework on Kubernetes running on Ubuntu, with examples for deploying and scaling functions.
 

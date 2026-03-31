@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Grafana, Troubleshooting
+Tags: Calico, Kubernetes, Networking, Metric, Grafana, Troubleshooting
 
 Description: Diagnose and resolve common Calico Grafana dashboard issues including missing data, query errors, and incorrect visualizations.
 

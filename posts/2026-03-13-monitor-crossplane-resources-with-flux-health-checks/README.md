@@ -1,6 +1,6 @@
 # How to Monitor Crossplane Resources with Flux Health Checks
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, Crossplane, Health Check, Monitoring, GitOps, Kubernetes, Observability
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Views, SQL, Database Design
+Tags: MySQL, View, SQL, Database Design
 
 Description: Learn how to use the CREATE VIEW statement in MySQL to define reusable virtual tables that simplify complex queries and enforce security.
 

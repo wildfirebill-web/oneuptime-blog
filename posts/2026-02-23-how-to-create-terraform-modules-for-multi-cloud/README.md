@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Multi-Cloud, AWS, Azure, GCP, Infrastructure as Code
+Tags: Terraform, Module, Multi-Cloud, AWS, Azure, GCP, Infrastructure as Code
 
 Description: Learn how to design Terraform modules that work across AWS, Azure, and GCP with abstraction layers, provider-agnostic interfaces, and practical multi-cloud patterns.
 

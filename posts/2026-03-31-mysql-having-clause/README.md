@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, HAVING, GROUP BY, Aggregation, Query, Filter
+Tags: MySQL, SQL, DML, HAVING, GROUP BY, Aggregation
 
 Description: Filter aggregated results in MySQL using the HAVING clause, understand the difference between WHERE and HAVING, and write efficient group-level filters.
 

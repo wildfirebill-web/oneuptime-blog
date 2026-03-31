@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change Streams, Pre-Image, Post-Image, MongoDB 6.0
+Tags: MongoDB, Change Stream, Pre-Image, Post-Image, MongoDB 6.0
 
 Description: Use MongoDB 6.0+ pre-image and post-image change stream features to access the full document state before and after every update or delete operation.
 

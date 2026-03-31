@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Custom Dimensions, Telemetry API, Prometheus
+Tags: Istio, Metric, Custom Dimensions, Telemetry API, Prometheus
 
 Description: How to add custom dimensions and labels to Istio metrics using the Telemetry API and EnvoyFilter, enabling richer metric breakdowns by request headers, paths, and custom attributes.
 

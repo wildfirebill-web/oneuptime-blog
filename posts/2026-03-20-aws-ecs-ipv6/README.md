@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, IPv6, ECS, Containers, Fargate, Task Networking
+Tags: AWS, IPv6, ECS, Container, Fargate, Task Networking
 
 Description: Enable IPv6 for AWS ECS tasks using dual-stack VPC subnets, configure Fargate tasks with IPv6 addresses, and set up load balancing for IPv6 container traffic.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging
+Tags: Podman, Container, DevOps, Logging
 
 Description: Learn how to use the --since flag in Podman to view container logs from a specific point in time, making it easy to investigate incidents and correlate events.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linkerd, Service Mesh, Kubernetes, Retries, Reliability, Microservices, DevOps, SRE
+Tags: Linkerd, Service Mesh, Kubernetes, Retries, Reliability, Microservice, DevOps, SRE
 
 Description: A comprehensive guide to configuring Linkerd retries for improved service reliability, including retry budgets, timeout settings, and best practices for production environments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Storage, Storage Classes, Cost Optimization, Data Management
+Tags: GCP, Cloud Storage, Storage Class, Cost Optimization, Data Management
 
 Description: A practical guide to choosing the right Google Cloud Storage class for your data based on access patterns, cost, and retention requirements.
 

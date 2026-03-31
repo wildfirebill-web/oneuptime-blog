@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Multi-Tenant, SaaS, Kubernetes, Isolation, Namespaces
+Tags: Rancher, Multi-Tenant, SaaS, Kubernetes, Isolation, Namespace
 
 Description: A guide to building a multi-tenant SaaS platform on Rancher, covering tenant isolation, resource quotas, network policies, and self-service provisioning.
 

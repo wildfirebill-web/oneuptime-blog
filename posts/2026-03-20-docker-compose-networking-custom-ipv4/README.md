@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Docker Compose, Networking, IPv4, Subnets, Containers
+Tags: Docker, Docker Compose, Networking, IPv4, Subnets, Container
 
 Description: Configure custom IPv4 subnets for Docker Compose services using the networks section with IPAM configuration, and connect multiple services to different network tiers.
 

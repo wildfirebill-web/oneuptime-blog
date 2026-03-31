@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, SSH, Configs, Multiple Hosts, Linux
+Tags: RHEL, SSH, CONFIG, Multiple Hosts, Linux
 
 Description: Simplify SSH connection management on RHEL by configuring the SSH client config file with host aliases, jump hosts, and per-host settings.
 

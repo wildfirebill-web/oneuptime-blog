@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Data Catalog, Cloud Functions, Automation, Data Governance
+Tags: GCP, Data Catalog, Cloud Function, Automation, Data Governance
 
 Description: Learn how to use Google Cloud Functions to automatically tag BigQuery tables in Data Catalog when they are created or updated, enforcing metadata standards without manual work.
 

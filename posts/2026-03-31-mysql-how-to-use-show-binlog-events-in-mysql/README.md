@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Binary Logs, SHOW BINLOG EVENTS, Replication, Auditing
+Tags: MySQL, Binary Log, SHOW BINLOG EVENTS, Replication, Auditing
 
 Description: Learn how to use SHOW BINLOG EVENTS in MySQL to inspect binary log contents, trace specific transactions, and support point-in-time recovery.
 

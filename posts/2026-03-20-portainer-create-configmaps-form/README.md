@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMaps, Configuration, DevOps
+Tags: Portainer, Kubernetes, ConfigMap, Configuration, DevOps
 
 Description: Learn how to create Kubernetes ConfigMaps using Portainer's form-based interface for storing non-sensitive application configuration data.
 

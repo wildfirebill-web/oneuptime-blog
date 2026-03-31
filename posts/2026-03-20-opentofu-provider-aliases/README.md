@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Provider, Aliases
+Tags: OpenTofu, Terraform, IaC, Provider, Alias
 
 Description: Learn how to use provider aliases in OpenTofu to manage multiple configurations of the same provider within a single workspace.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, RADOS, Architecture, Object Storage, Internals
+Tags: Rook, Ceph, RADOS, Architecture, Object Storage, Internal
 
 Description: Understand how Ceph RGW stores objects, metadata, and indices in RADOS pools, and learn the naming conventions used for internal RADOS objects.
 

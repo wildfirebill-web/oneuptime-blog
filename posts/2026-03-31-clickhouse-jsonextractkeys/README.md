@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how JSONExtractKeys() returns all top-level or nested keys from a JSON object as an Array(String) in ClickHouse, enabling dynamic schema inspection and key enumeration.
 

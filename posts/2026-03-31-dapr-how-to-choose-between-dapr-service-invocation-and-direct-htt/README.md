@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Service Invocation, Microservices, Architecture, Http
+Tags: Dapr, Service Invocation, Microservice, Architecture, HTTP
 
 Description: Compare Dapr service invocation with direct HTTP calls to understand when each approach is appropriate for your microservices architecture.
 

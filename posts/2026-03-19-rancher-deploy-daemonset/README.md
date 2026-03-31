@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, DaemonSet, Workloads
+Tags: Rancher, Kubernetes, DaemonSet, Workload
 
 Description: Learn how to deploy a DaemonSet in Rancher to run a pod on every node in your cluster for logging, monitoring, or networking tasks.
 

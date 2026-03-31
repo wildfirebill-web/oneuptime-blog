@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Modules, AWS
+Tags: OpenTofu, Terraform, Infrastructure as Code, Module, AWS
 
 Description: Learn how to use S3 bucket URLs as module sources in OpenTofu to distribute private modules securely within AWS environments.
 

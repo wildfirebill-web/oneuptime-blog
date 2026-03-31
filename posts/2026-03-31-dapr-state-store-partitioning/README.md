@@ -1,6 +1,6 @@
 # How to Use State Store Partitioning in Dapr
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, Partitioning, Scalability, Microservice
 

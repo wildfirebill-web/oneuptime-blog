@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana Loki, Retention, Compaction, Storage Management, Log Lifecycle, Operations
+Tags: Grafana Loki, Retention, Compaction, Storage Management, Log Lifecycle, Operation
 
 Description: A comprehensive guide to configuring retention and compaction in Grafana Loki, covering retention policies, compactor configuration, storage lifecycle management, and cost optimization strategies.
 

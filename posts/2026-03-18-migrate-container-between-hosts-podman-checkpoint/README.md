@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, CRIU, Containers, Migration, DevOps
+Tags: Podman, CRIU, Container, Migration, DevOps
 
 Description: A complete walkthrough of migrating a running container from one host to another using Podman's checkpoint and restore features, including state export, transfer, and restoration on the target host.
 

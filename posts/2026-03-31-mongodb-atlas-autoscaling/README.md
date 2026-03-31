@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Autoscaling, Cloud, Operations
+Tags: MongoDB, Atlas, Autoscaling, Cloud, Operation
 
 Description: Learn how to configure MongoDB Atlas cluster autoscaling to automatically adjust compute and storage tiers in response to workload changes, reducing cost and manual intervention.
 

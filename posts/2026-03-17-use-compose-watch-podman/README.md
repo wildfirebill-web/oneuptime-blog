@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Watch, Hot Reload
+Tags: Podman, Container, DevOps, podman-compose, Watch, Hot Reload
 
 Description: Learn how to use the Compose watch feature with Podman for automatic file syncing and container rebuilds during development.
 

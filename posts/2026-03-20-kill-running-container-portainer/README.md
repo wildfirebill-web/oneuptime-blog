@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Kill, Signals, Containers
+Tags: Portainer, Docker, Kill, Signal, Container
 
 Description: Force-kill an unresponsive Docker container in Portainer by sending a SIGKILL signal.
 

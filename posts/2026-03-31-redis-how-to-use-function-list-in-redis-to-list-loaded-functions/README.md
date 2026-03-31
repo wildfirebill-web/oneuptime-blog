@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Functions, Lua, Redis 7, Administration
+Tags: Redis, Function, Lua, Redis 7, Administration
 
 Description: Learn how to use FUNCTION LIST in Redis 7.0+ to inspect loaded function libraries, view registered functions, and audit the current function registry.
 

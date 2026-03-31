@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, MHA, High Availability, Failover, Replication, Database, Operations
+Tags: MySQL, MHA, High Availability, Failover, Replication, Database, Operation
 
 Description: MHA (Master High Availability) is an open-source tool for automating MySQL master failover and slave promotion with minimal data loss and downtime.
 
@@ -21,7 +21,7 @@ MHA consists of two main components:
 - **MHA Manager**: Runs on a separate management node. Monitors the master, detects failures, and orchestrates failover. There is typically one manager per replication cluster.
 - **MHA Node**: Installed on every MySQL server in the replication topology (master and all slaves). Provides helper scripts used by the manager to copy relay logs and apply missing events during failover.
 
-```
+```text
    ┌───────────────────┐
    │   MHA Manager     │
    │  (monitoring node)│

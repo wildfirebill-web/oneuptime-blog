@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Window Functions, Lag, Lead, Aggregation
+Tags: MongoDB, Window Function, Lag, LEAD, Aggregation
 
 Description: Learn how to use MongoDB's $shift window operator to access values from previous or future rows within a partition for lag and lead calculations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Air-Gapped, Kubernetes, Offline Install, Private Registry, SUSE Rancher
+Tags: k3s, Air-Gapped, Kubernetes, Offline Install, Private Registry, SUSE Rancher
 
 Description: Learn how to install K3s in an air-gapped environment without internet access by pre-loading container images, using a private registry, and deploying the K3s binary manually.
 

@@ -1,6 +1,6 @@
 # How to Use quantileGK() in ClickHouse
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, SQL, Aggregate Function, Quantile, Statistics
 

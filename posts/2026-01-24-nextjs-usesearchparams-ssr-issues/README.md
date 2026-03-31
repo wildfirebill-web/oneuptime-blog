@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Next.js, React, SSR, UseSearchParams, Hydration, Server Components
+Tags: Next.js, React, SSR, UseSearchParams, Hydration, Server Component
 
 Description: Learn how to diagnose and fix useSearchParams SSR issues in Next.js including hydration mismatches and Suspense boundary requirements.
 

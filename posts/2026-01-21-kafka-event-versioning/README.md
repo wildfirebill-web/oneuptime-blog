@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Event Versioning, Schema Evolution, Event-Driven Architecture, Breaking Changes, Migration
+Tags: Apache Kafka, Event Versioning, Schema Evolution, Event-Driven Architecture, Breaking Change, Migration
 
 Description: A comprehensive guide to implementing event versioning in Apache Kafka, covering strategies for handling breaking changes, version migrations, and maintaining backward compatibility.
 

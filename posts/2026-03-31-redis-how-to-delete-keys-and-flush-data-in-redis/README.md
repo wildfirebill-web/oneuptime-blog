@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Delete, Flush, Keys, Beginner, Data Management, SCAN
+Tags: Redis, Delete, Flush, Key, Beginner, Data Management, SCAN
 
 Description: Learn how to safely delete individual keys, groups of keys, and entire Redis databases using DEL, UNLINK, SCAN, and FLUSHDB commands.
 

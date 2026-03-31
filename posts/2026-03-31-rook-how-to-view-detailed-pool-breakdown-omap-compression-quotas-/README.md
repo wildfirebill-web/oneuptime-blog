@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Pool Statistics, OMAP, Compression, Storage Monitoring
+Tags: Ceph, Rook, Pool Statistics, OMAP, Compression
 
 Description: View detailed Ceph pool breakdowns including OMAP usage, compression savings, quota consumption, and per-pool I/O statistics for capacity planning and troubleshooting.
 

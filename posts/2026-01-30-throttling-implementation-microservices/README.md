@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Throttling, Rate Limiting, API Gateway, Distributed Systems, Node.js, Go, Redis, Resilience
+Tags: Microservice, Throttling, Rate Limiting, API Gateway, Distributed System, Node.js, Go, Redis, Resilience
 
 Description: Learn how to implement production-ready throttling in microservices using token bucket, sliding window, and distributed rate limiting patterns with practical code examples.
 

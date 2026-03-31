@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Feature Flags, Microservices, Distributed Systems, Progressive Delivery, Configuration Management, A/B Testing
+Tags: Feature Flag, Microservice, Distributed System, Progressive Delivery, Configuration Management, A/B Testing
 
 Description: A comprehensive guide to implementing and managing feature flags across microservices architectures, covering consistency, propagation, and testing strategies.
 

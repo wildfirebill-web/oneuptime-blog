@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Custom Images, Build from Source, Kubernetes, Immutable OS
+Tags: Talos Linux, Custom Image, Build from Source, Kubernetes, Immutable OS
 
 Description: Learn how to build custom Talos Linux images from source code, including setting up the build toolchain, configuring build options, and producing bootable artifacts.
 

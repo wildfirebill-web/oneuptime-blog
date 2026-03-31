@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, Multi-Tenancy, Access Control
+Tags: Portainer, Kubernetes, Namespace, Multi-Tenancy, Access Control
 
 Description: Learn how to segment Kubernetes environments by namespace in Portainer to isolate teams and enforce workload separation.
 

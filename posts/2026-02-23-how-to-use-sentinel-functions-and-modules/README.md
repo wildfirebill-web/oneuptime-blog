@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Sentinel, Policy as Code, HashiCorp, Modules, Functions, Governance
+Tags: Terraform, Sentinel, Policy as Code, HashiCorp, Module, Function, Governance
 
 Description: Master Sentinel functions and modules to write reusable, maintainable policy-as-code for Terraform Cloud and Enterprise deployments.
 

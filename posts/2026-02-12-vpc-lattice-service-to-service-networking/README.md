@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, VPC Lattice, Microservices, Networking, Service Mesh
+Tags: AWS, VPC Lattice, Microservice, Networking, Service Mesh
 
 Description: Learn how to set up Amazon VPC Lattice to simplify service-to-service communication across VPCs and accounts without managing load balancers or complex networking.
 

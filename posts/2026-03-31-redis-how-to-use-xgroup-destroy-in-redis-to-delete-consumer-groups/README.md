@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Consumer Groups, Cleanup, Messaging
+Tags: Redis, Stream, Consumer Group, Cleanup, Messaging
 
 Description: Learn how to use XGROUP DESTROY to completely remove a consumer group from a Redis Stream, including all its consumers and pending message tracking.
 

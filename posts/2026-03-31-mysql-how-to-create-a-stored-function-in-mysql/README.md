@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Stored Functions, Sql, Database Programming
+Tags: MySQL, Stored Function, SQL, Database Programming
 
 Description: Learn how to create and use stored functions in MySQL, including scalar functions that return a single value and can be called inside SQL queries.
 

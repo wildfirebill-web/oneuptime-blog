@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, User Namespaces, UID Mapping
+Tags: Podman, Container, DevOps, Rootless, User Namespaces, UID Mapping
 
 Description: Learn how to configure user namespace mappings in Podman to control how container UIDs and GIDs are mapped to host IDs.
 

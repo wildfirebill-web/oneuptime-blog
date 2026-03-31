@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, String
+Tags: OpenTofu, Terraform, IaC, Function, String
 
 Description: Learn how to use strcontains, startswith, and endswith functions in OpenTofu for string checking.
 

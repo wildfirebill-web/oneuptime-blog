@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Elasticsearch, Data Sync, Monstache, Change Streams
+Tags: MongoDB, Elasticsearch, Data Sync, Monstache, Change Stream
 
 Description: Sync MongoDB data to Elasticsearch in real-time using Monstache or the MongoDB Kafka Connector to enable full-text search alongside MongoDB's document store.
 

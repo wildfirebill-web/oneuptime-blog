@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, News Feed, Timeline, Social Media, Sorted Sets
+Tags: Redis, News Feed, Timeline, Social Media, Sorted Set
 
 Description: Learn how to build a scalable news feed and activity timeline system using Redis Sorted Sets with fan-out on write and push-pull hybrid strategies.
 

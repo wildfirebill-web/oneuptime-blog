@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Idempotency, API Design, Redis, FastAPI, Reliability, Distributed Systems
+Tags: Python, Idempotency, API Design, Redis, FastAPI, Reliability, Distributed System
 
 Description: Learn how to implement idempotency in Python APIs to prevent duplicate requests from causing unintended side effects.
 

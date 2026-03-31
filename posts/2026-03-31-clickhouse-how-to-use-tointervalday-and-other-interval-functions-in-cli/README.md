@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Interval Functions, Date Arithmetic, Sql, Data Engineering
+Tags: ClickHouse, Interval Functions, Date Arithmetic, SQL, Data Engineering
 
 Description: Learn how to use toIntervalDay(), toIntervalMonth(), toIntervalHour() and other interval functions in ClickHouse for date arithmetic.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Info, Monitoring, Observability, Administration
+Tags: Redis, INFO, Monitoring, Observability, Administration
 
 Description: Learn how to use INFO all to retrieve all Redis server metrics in one command, with a guide to the most important sections and fields for production monitoring.
 

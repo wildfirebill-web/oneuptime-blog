@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Spot Instances, AWS, GCP, Azure, Cost Optimization, Cloud, Kubernetes, CI/CD, DevOps, FinOps
+Tags: Spot Instance, AWS, GCP, Azure, Cost Optimization, Cloud, Kubernetes, CI/CD, DevOps, FinOps
 
 Description: Learn how to maximize cost savings with spot instances through pricing strategies, interruption handling, instance diversification, and production-ready configurations.
 

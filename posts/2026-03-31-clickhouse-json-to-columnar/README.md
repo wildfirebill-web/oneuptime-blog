@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Schema Design, Performance, Analytics
+Tags: ClickHouse, JSON, Schema Design, Performance, Analytics
 
 Description: Learn how to transform JSON strings stored in ClickHouse into proper columnar format using materialized columns, INSERT SELECT pipelines, and computed column strategies.
 

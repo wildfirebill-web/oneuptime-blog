@@ -1,6 +1,6 @@
 # How to Configure ClickHouse Max Table Size to Drop
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, Safety, Administration, Server
 

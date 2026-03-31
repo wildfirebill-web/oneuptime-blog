@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, RBAC, Namespaces, Access Control
+Tags: Portainer, Kubernetes, RBAC, Namespace, Access Control
 
 Description: Configure access control at the Kubernetes namespace level in Portainer to restrict users to specific namespaces within a cluster.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Cluster Health, Shards, Operations, Troubleshooting, DevOps
+Tags: Elasticsearch, Cluster Health, Shard, Operation, Troubleshooting, DevOps
 
 Description: Learn how to diagnose and fix unassigned shards in Elasticsearch.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Index, B-Tree, InnoDB, Internals
+Tags: MySQL, Index, B-Tree, InnoDB, Internal
 
 Description: Learn how MySQL InnoDB B-Tree indexes are structured internally, how they support lookups and range scans, and how the clustered index differs from secondary indexes.
 

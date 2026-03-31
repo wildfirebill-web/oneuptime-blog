@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Security, Session, Cookies, Authentication
+Tags: Security, Session, Cookie, Authentication
 
 Description: Learn to implement session management for secure user session handling and tracking.
 

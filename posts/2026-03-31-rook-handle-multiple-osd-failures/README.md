@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Troubleshooting, OSD, Recovery, Operations
+Tags: Rook, Ceph, Troubleshooting, OSD, Recovery, Operation
 
 Description: Respond to multiple simultaneous OSD failures in Ceph by assessing data availability, preventing cascading failures with noout flags, and prioritizing recovery operations.
 

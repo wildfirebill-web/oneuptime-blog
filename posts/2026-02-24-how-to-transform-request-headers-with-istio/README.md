@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Headers, Request Transformation, VirtualService, Envoy
+Tags: Istio, Header, Request Transformation, VirtualService, Envoy
 
 Description: Learn how to add, set, and remove HTTP request headers using Istio VirtualService and EnvoyFilter configurations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cloud Scheduler, Cron, Serverless
+Tags: GCP, Cloud Function, Cloud Scheduler, Cron, Serverless
 
 Description: Step-by-step guide to triggering Google Cloud Functions on a recurring schedule using Cloud Scheduler with proper authentication and configuration.
 

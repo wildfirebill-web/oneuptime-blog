@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Rate Limiting, Redis, Distributed Systems, API
+Tags: Rust, Rate Limiting, Redis, Distributed System, API
 
 Description: A hands-on guide to building a production-ready distributed rate limiter in Rust using Redis, covering sliding window algorithms and atomic Lua scripts for high-throughput APIs.
 

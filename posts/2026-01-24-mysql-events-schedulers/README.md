@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MySQL, Database, Automation, Scheduling, Events
+Tags: MySQL, Database, Automation, Scheduling, Event
 
 Description: Learn how to create, manage, and troubleshoot MySQL Event Scheduler for automated database tasks including cleanup jobs, data aggregation, and maintenance routines.
 

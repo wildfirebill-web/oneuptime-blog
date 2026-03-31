@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pub/Sub, PUBSUB, Channel, Monitoring
+Tags: Redis, Pub/Sub, PubSub, Channel, Monitoring
 
 Description: Learn how to use PUBSUB CHANNELS to list all active Redis Pub/Sub channels that currently have at least one subscriber.
 

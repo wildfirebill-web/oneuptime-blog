@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pulumi, Kubernetes, Component, Infrastructure As Code
+Tags: Dapr, Pulumi, Kubernetes, Component, Infrastructure as Code
 
 Description: Use Pulumi TypeScript to deploy and manage Dapr components as typed Kubernetes custom resources, with environment-specific configuration and secret injection.
 

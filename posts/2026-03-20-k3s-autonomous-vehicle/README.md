@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Autonomous Vehicles, Edge Computing, AI, GPU, Real-Time, IoT
+Tags: k3s, Kubernetes, Autonomous Vehicle, Edge Computing, AI, GPU, Real-Time, IoT
 
 Description: Learn how to configure K3s for autonomous vehicle compute platforms, managing sensor fusion, perception, and AI inference workloads with real-time requirements.
 

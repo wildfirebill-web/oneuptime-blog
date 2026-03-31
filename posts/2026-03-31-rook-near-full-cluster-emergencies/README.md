@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Emergency, Capacity, Near-Full, Recovery, Operations
+Tags: Rook, Ceph, Emergency, Capacity, Near-Full, Recovery, Operation
 
 Description: Respond to near-full and full Ceph cluster emergencies with step-by-step procedures to restore write access, free capacity, and stabilize the cluster without data loss.
 

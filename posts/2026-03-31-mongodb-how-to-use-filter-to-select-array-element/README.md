@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Array Operators, $filter, Database
+Tags: MongoDB, Aggregation, Array Operator, $filter, Database
 
 Description: Learn how to use $filter in MongoDB aggregation to select only those array elements that match a given condition, returning a new filtered array.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Review, Governance, Process
+Tags: Feature Flag, Review, Governance, Process
 
 Description: Learn how to establish effective review processes for feature flags.
 

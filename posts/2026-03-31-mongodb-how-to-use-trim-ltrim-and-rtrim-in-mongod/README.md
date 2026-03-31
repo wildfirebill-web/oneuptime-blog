@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, String Functions, Data Cleaning, Database
+Tags: MongoDB, Aggregation, String Function, Data Cleaning, Database
 
 Description: Learn how to use $trim, $ltrim, and $rtrim in MongoDB aggregation to remove whitespace or specific characters from string fields during data processing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Microservices, Service Discovery, Consul, DNS
+Tags: Portainer, Docker, Microservice, Service Discovery, Consul, DNS
 
 Description: Configure automatic service discovery for microservices using Docker's built-in DNS, Consul, or Traefik as a service registry with Portainer.
 

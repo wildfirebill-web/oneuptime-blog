@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Alter Table, Schema Design
+Tags: MySQL, DDL, ALTER TABLE, Schema Design
 
 Description: Learn how to safely drop columns from MySQL tables using ALTER TABLE DROP COLUMN, including handling dependencies and minimizing downtime.
 

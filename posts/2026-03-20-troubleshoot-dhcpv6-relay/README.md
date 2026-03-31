@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCPv6, Relay, Troubleshooting, Diagnostics, Networking
+Tags: DHCPv6, Relay, Troubleshooting, Diagnostic, Networking
 
 Description: Troubleshoot common DHCPv6 relay problems including clients not getting addresses, relay dropping messages, and server not responding.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Stop Timeout, Process Management
+Tags: Podman, Container, DevOps, Stop Timeout, Process Management
 
 Description: Learn how to configure stop timeouts for Podman containers to give applications enough time for graceful shutdown before being force-killed.
 

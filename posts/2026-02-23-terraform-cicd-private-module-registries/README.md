@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, Modules, Registry, DevOps, Infrastructure as Code
+Tags: Terraform, CI/CD, Module, Registry, DevOps, Infrastructure as Code
 
 Description: Configure Terraform CI/CD pipelines to authenticate with private module registries including Terraform Cloud, Artifactory, GitHub, and self-hosted registries.
 

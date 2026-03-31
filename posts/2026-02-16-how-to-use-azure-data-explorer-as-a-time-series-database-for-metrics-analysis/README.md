@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Data Explorer, Time Series, Metrics, KQL, Kusto, Monitoring, Data Analytics
+Tags: Azure Data Explorer, Time Series, Metric, KQL, Kusto, Monitoring, Data Analytics
 
 Description: Use Azure Data Explorer as a time series database for ingesting, storing, and analyzing high-volume metrics data with Kusto Query Language.
 

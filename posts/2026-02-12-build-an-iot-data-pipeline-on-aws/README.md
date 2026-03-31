@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, IoT, Data Pipelines, IoT Core, Kinesis, Timestream, Lambda, MQTT
+Tags: AWS, IoT, Data Pipeline, IoT Core, Kinesis, Timestream, Lambda, MQTT
 
 Description: Build a scalable IoT data pipeline on AWS that ingests, processes, stores, and analyzes data from thousands of connected devices
 

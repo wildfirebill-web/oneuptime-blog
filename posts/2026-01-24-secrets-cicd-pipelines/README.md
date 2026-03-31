@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Security, CI/CD, DevOps, Secrets Management, GitHub Actions
+Tags: Security, CI/CD, DevOps, Secrets Management, GitHub Action
 
 Description: Learn secure practices for managing secrets in CI/CD pipelines including environment variables, secret managers, and preventing accidental exposure.
 

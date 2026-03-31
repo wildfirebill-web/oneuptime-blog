@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, Support Bundle, Diagnostics, Troubleshooting
+Tags: Longhorn, Kubernetes, Storage, Support Bundle, Diagnostic, Troubleshooting
 
 Description: Learn how to generate and configure Longhorn Support Bundles to collect comprehensive diagnostics for troubleshooting and reporting issues.
 

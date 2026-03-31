@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Secrets, Security, Configuration Management
+Tags: Portainer, Kubernetes, Secret, Security, Configuration Management
 
 Description: Learn how to create Kubernetes Secrets and securely attach them to applications in Portainer.
 

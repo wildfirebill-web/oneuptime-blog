@@ -1,6 +1,6 @@
 # How to Configure Health Checks for Spring Boot with Istio
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Spring Boot, Health Check, Kubernetes, Java
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, TLS, Certificates, Ingress
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, TLS, Certificate, Ingress
 
 Description: Learn how to encrypt TLS certificate private keys and certificates using SOPS for secure GitOps management with Flux.
 

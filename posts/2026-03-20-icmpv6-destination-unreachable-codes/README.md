@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMPv6, Destination Unreachable, Error Codes, IPv6, Firewall
+Tags: ICMPv6, Destination Unreachable, Error Code, IPv6, Firewall
 
 Description: Deep-dive into each ICMPv6 Destination Unreachable code, when to generate each, how applications interpret them, and the correct firewall and router behaviors for each code.
 

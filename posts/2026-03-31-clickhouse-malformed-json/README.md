@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Data Quality, Analytics, Query
+Tags: ClickHouse, JSON, Data Quality, Analytics, Query
 
 Description: Learn how ClickHouse handles malformed JSON in JSONExtract functions, how to detect invalid payloads using isValidJSON(), and strategies for quarantining bad data.
 

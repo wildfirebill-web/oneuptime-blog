@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Knative, Eventing, Event-Driven, Serverless, CloudEvents
+Tags: Flux CD, Kubernetes, GitOps, Knative, Eventing, Event-Driven, Serverless, CloudEvent
 
 Description: Deploy Knative Eventing for event-driven architecture using Flux CD to build loosely coupled, scalable event-driven applications on Kubernetes.
 

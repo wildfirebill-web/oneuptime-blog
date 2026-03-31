@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Environment Variables, Stacks, DevOps, Multi-Environment
+Tags: Portainer, Docker Compose, Environment Variable, Stack, DevOps, Multi-Environment
 
 Description: Use Docker Compose override files and Portainer's environment variable editor to maintain a single stack definition that deploys differently across development, staging, and production environments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Secrets, Security, DevOps
+Tags: Portainer, Kubernetes, Secret, Security, DevOps
 
 Description: Learn how to create Kubernetes Secrets and attach them to applications as environment variables or mounted files in Portainer.
 

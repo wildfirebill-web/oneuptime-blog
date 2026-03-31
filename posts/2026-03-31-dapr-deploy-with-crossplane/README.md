@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Crossplane, Kubernetes, Infrastructure As Code, GitOps
+Tags: Dapr, Crossplane, Kubernetes, Infrastructure as Code, GitOps
 
 Description: Use Crossplane's Helm provider to declare Dapr installations as Kubernetes-native resources, enabling GitOps-friendly, operator-managed deployments.
 

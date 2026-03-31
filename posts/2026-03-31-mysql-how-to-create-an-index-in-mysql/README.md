@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Indexes, Query Optimization, Performance, DDL
+Tags: MySQL, Index, Query Optimization, Performance, DDL
 
 Description: Learn how to create indexes in MySQL to speed up queries, including syntax, index types, and best practices for choosing which columns to index.
 

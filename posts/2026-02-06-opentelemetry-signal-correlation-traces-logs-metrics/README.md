@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Signal Correlation, Traces, Logs, Metrics, Observability
+Tags: OpenTelemetry, Signal Correlation, Trace, Log, Metric, Observability
 
 Description: Learn how OpenTelemetry correlates traces, logs, and metrics to provide unified observability across your distributed systems.
 

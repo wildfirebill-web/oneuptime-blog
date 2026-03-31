@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Email, Notifications, CI/CD, DevOps, Automation
+Tags: OpenTofu, Email, Notification, CI/CD, DevOps, Automation
 
 Description: Learn how to send email notifications with OpenTofu plan and apply results using SMTP, AWS SES, or SendGrid from your CI/CD pipelines.
 

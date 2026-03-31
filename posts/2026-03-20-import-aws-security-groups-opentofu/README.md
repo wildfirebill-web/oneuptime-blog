@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, AWS, Security Groups, Import, Networking
+Tags: OpenTofu, Terraform, AWS, Security Group, Import, Networking
 
 Description: Learn how to import existing AWS security groups and their rules into OpenTofu state, handling both inline rules and separate rule resources.
 

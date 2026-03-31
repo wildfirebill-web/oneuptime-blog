@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, App Runner, Containers, Serverless, Auto Scaling, Infrastructure as Code
+Tags: OpenTofu, AWS, App Runner, Container, Serverless, Auto Scaling, Infrastructure as Code
 
 Description: Learn how to deploy containerized applications on AWS App Runner with OpenTofu for fully managed web service hosting with automatic scaling, load balancing, and TLS.
 

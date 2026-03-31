@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, DNS
+Tags: Podman, Container, DevOps, Networking, DNS
 
 Description: Learn how to configure custom DNS servers, search domains, and DNS options for Podman containers to control name resolution behavior.
 

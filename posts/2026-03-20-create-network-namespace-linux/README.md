@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Namespaces, Networking, iproute2, Containers, Isolation
+Tags: Linux, Network Namespaces, Networking, iproute2, Container, Isolation
 
 Description: Create isolated network namespaces on Linux using the ip netns command to provide separate network stacks for processes and containers.
 

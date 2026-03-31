@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Data Cleaning, String, TRIM, Update
+Tags: MySQL, Data Cleaning, String, Trim, Update
 
 Description: Learn how to find and remove leading, trailing, and internal whitespace from all rows in MySQL using TRIM, LTRIM, RTRIM, and REGEXP_REPLACE.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metric Views, Aggregation, Custom SDK, Metrics
+Tags: OpenTelemetry, Metric Views, Aggregation, Custom SDK, Metric
 
 Description: Write custom OpenTelemetry metric views to control aggregation boundaries, histogram buckets, and attribute filtering for your business metrics.
 

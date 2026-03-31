@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Incident Response, Operations, Kubernetes
+Tags: Rook, Ceph, Incident Response, Operation, Kubernetes
 
 Description: Learn how to create structured Ceph incident response procedures covering severity levels, triage steps, escalation paths, and post-incident reviews to minimize recovery time.
 

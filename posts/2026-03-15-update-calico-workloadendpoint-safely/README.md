@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, WorkloadEndpoint, Kubernetes, Networking, Safe Updates, DevOps
+Tags: Calico, WorkloadEndpoint, Kubernetes, Networking, Safe Update, DevOps
 
 Description: Safely update Calico WorkloadEndpoint resources with proper backup, validation, and minimal disruption to network connectivity.
 

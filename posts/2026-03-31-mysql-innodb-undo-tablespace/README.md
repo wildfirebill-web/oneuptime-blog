@@ -1,6 +1,6 @@
 # How to Configure InnoDB Undo Tablespace in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, InnoDB, Undo Tablespace, Configuration, Storage
 

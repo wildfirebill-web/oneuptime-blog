@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Build, Images
+Tags: Podman, Container, DevOps, podman-compose, Build, Image
 
 Description: Learn how to build container images for your services using podman-compose build with Containerfiles and build arguments.
 

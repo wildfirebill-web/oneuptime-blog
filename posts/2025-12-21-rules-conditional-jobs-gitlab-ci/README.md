@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab, CI/CD, Rules, Conditional, Workflow, Pipeline Control
+Tags: GitLab, CI/CD, Rule, Conditional, Workflow, Pipeline Control
 
 Description: Master GitLab CI rules to control when jobs run based on branches, changes, variables, and more. This guide covers rules syntax, common patterns, and best practices for conditional pipelines.
 

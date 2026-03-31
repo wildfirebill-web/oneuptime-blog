@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Pipelining, Batch Operations, Performance, Throughput, Network Optimization, Python, Node.js
+Tags: Redis, Pipelining, Batch Operation, Performance, Throughput, Network Optimization, Python, Node.js
 
 Description: A comprehensive guide to using Redis pipelining for batch operations. Learn how to reduce round-trips, improve throughput, and implement efficient batch processing patterns.
 

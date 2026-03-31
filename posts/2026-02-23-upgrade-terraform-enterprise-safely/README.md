@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terraform Enterprise, Upgrade, Maintenance, DevOps, Operations
+Tags: Terraform, Terraform Enterprise, Upgrade, Maintenance, DevOps, Operation
 
 Description: A step-by-step guide to safely upgrading Terraform Enterprise, covering pre-upgrade checks, backup procedures, upgrade execution, and rollback planning.
 

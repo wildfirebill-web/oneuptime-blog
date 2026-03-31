@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, RBD, Windows, Block Storage, Kubernetes
+Tags: Rook, Ceph, RBD, Window, Block Storage, Kubernetes
 
 Description: Learn how to map and mount Ceph RBD (RADOS Block Device) images on Windows clients for persistent block storage access from Windows workloads.
 

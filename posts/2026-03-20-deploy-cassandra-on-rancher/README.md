@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Cassandra, Kubernetes, NoSQL, StatefulSets, Helm
+Tags: Rancher, Cassandra, Kubernetes, NoSQL, StatefulSet, Helm
 
 Description: A practical guide to deploying an Apache Cassandra cluster on Rancher using Helm with proper storage, resource limits, and cluster validation.
 

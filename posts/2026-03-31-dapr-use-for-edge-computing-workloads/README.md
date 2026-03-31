@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Edge Computing, IoT, K3s, Lightweight
+Tags: Dapr, Edge Computing, IoT, k3s, Lightweight
 
 Description: Deploy Dapr on edge devices using K3s or standalone mode to enable state management, pub/sub, and cloud synchronization for edge computing workloads.
 

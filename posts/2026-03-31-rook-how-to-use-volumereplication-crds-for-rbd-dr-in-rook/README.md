@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Rbd, Volume Replication, Disaster Recovery, Kubernetes
+Tags: Rook, Ceph, RBD, Disaster Recovery, VolumeReplication, Kubernetes
 
-Description: Use Rook VolumeReplication CRDs to configure asynchronous RBD mirroring for disaster recovery between two Kubernetes clusters.
+Description: Learn how to configure VolumeReplication CRDs in Rook-Ceph for RBD disaster recovery, enabling asynchronous replication between clusters.
 
 ---
 

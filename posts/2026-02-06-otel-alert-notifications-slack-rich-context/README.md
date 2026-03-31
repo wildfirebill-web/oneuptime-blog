@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Slack, Alerting, Notifications
+Tags: OpenTelemetry, Slack, Alerting, Notification
 
 Description: Configure OpenTelemetry alert notifications to Slack with rich formatting, trace links, runbook URLs, and contextual metadata for faster incident response.
 

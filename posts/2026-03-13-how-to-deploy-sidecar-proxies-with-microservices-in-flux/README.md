@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Sidecar, Envoy, Service Mesh, Microservices, Kustomization
+Tags: Flux CD, Kubernetes, GitOps, Sidecar, Envoy, Service Mesh, Microservice, Kustomization
 
 Description: Learn how to inject Envoy or other sidecar proxies alongside microservices using Flux CD and Kustomize patch strategies.
 

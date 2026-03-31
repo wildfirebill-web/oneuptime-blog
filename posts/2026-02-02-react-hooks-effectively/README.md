@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: React, Hooks, JavaScript, Frontend, State Management
+Tags: React, Hook, JavaScript, Frontend, State Management
 
 Description: A practical guide to using React hooks correctly, covering common patterns, performance pitfalls, and real-world examples for building maintainable React applications.
 

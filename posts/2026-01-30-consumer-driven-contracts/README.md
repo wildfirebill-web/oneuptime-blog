@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Testing, API, Microservices, DevOps, Contract Testing
+Tags: Testing, API, Microservice, DevOps, Contract Testing
 
 Description: Learn how to implement consumer driven contracts to catch API breaking changes early, improve team collaboration, and ship microservices with confidence.
 

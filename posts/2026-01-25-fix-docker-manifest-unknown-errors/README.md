@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Troubleshooting, Registry, DevOps, Images
+Tags: Docker, Troubleshooting, Registry, DevOps, Image
 
 Description: Diagnose and resolve Docker manifest unknown errors caused by missing images, incorrect tags, platform mismatches, and registry synchronization issues.
 

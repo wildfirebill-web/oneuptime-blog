@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Data Management, Administration, Commands, Safety
+Tags: Redis, Data Management, Administration, Command, Safety
 
 Description: Learn how to use FLUSHDB and FLUSHALL in Redis to clear data from one or all databases, including ASYNC options and safety practices to prevent accidental data loss.
 

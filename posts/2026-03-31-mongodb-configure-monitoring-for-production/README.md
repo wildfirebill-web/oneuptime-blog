@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Production, Metrics, Observability
+Tags: MongoDB, Monitoring, Production, Metric, Observability
 
 Description: Learn how to configure comprehensive MongoDB monitoring for production using Atlas monitoring, mongostat, mongotop, and custom serverStatus metrics.
 

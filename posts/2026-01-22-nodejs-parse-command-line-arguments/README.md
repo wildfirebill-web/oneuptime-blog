@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, CLI, CommandLine, Arguments, JavaScript
+Tags: NodeJS, CLI, CommandLine, Argument, JavaScript
 
 Description: Learn how to parse command line arguments in Node.js using process.argv, yargs, commander, and other libraries to build robust CLI tools.
 

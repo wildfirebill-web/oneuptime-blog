@@ -1,8 +1,8 @@
 # How to Set Up Dapr Pub/Sub with Azure Event Hubs
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Azure, Event Hubs, Streaming
+Tags: Dapr, Pub/Sub, Azure, Event Hub, Streaming
 
 Description: Configure the Dapr Azure Event Hubs pub/sub component to stream high-throughput messages using consumer groups, managed identity, and checkpoint storage in Kubernetes.
 

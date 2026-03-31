@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Firestore, Cloud Storage, Data Export
+Tags: GCP, Cloud Function, Firestore, Cloud Storage, Data Export
 
 Description: Build a scheduled Cloud Function in Python that exports Firestore collections to Cloud Storage as JSON files for backup, analysis, and data warehouse ingestion.
 

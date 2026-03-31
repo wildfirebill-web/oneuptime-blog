@@ -1,6 +1,6 @@
 # How to Tune MySQL for OLAP Workloads
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, OLAP, Performance, Tuning, Analytics
 

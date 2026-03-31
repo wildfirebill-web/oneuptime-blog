@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Monitoring, Performance, DevOps, Prometheus, Grafana, Containers, Observability
+Tags: Podman, Monitoring, Performance, DevOps, Prometheus, Grafana, Container, Observability
 
 Description: Learn how to monitor Podman container performance using built-in tools, Prometheus metrics, and Grafana dashboards for real-time visibility into CPU, memory, network, and I/O usage.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, AWS Lambda, Migration, Serverless
+Tags: GCP, Cloud Function, AWS Lambda, Migration, Serverless
 
 Description: Migrate your AWS Lambda functions to Google Cloud Functions Gen2 with practical code examples covering triggers, environment variables, and dependencies.
 

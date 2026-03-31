@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Benchmarking, fio, RBD, Performance
+Tags: Rook, Ceph, Benchmarking, Fio, RBD, Performance
 
 Description: Learn how to use fio with the librbd engine to benchmark Ceph block storage, testing sequential throughput, random IOPS, mixed workloads, and latency percentiles.
 

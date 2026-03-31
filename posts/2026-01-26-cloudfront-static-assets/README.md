@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CloudFront, CDN, AWS, Static Assets, Performance, S3, Caching
+Tags: CloudFront, CDN, AWS, Static Asset, Performance, S3, Caching
 
 Description: Learn how to configure Amazon CloudFront for static asset delivery with S3 origins, cache behaviors, and invalidation strategies.
 

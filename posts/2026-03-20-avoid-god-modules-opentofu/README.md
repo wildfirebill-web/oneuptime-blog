@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Best Practice, Refactoring, Infrastructure as Code, Architecture
+Tags: OpenTofu, Module, Best Practice, Refactoring, Infrastructure as Code, Architecture
 
 Description: Learn how to identify and break down OpenTofu god modules - modules that try to manage too many unrelated resources - into smaller, composable, single-responsibility modules.
 

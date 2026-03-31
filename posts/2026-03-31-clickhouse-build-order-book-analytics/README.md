@@ -1,8 +1,8 @@
 # How to Build Order Book Analytics with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Finance, Analytics, Tutorial, Order book, Trading
+Tags: ClickHouse, Finance, Analytics, Tutorial, Order Book, Trading
 
 Description: Build an order book analytics system with ClickHouse - covering tick data storage, bid-ask spread analysis, market depth, price impact, and trade execution quality reporting.
 

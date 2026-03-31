@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Traces, Waterfall, Debugging, Distributed Tracing
+Tags: OpenTelemetry, Trace, Waterfall, Debugging, Distributed Tracing
 
 Description: Master the skill of reading trace waterfalls to diagnose latency issues, identify bottlenecks, and understand request flows across distributed systems.
 

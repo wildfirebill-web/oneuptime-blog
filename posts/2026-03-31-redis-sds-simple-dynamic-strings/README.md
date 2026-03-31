@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Internals, String, Memory, Data Structure
+Tags: Redis, Internal, String, Memory, Data Structure
 
 Description: Learn how Redis implements its own string type called SDS to avoid C string limitations, reduce reallocations, and store binary-safe data.
 

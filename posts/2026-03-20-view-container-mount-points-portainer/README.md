@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Volumes, Mount Points, Operations, Storage
+Tags: Portainer, Docker, Volumes, Mount Points, Operation, Storage
 
 Description: Inspect volume and bind mount configurations for running containers in Portainer to understand data persistence and identify misconfigured mounts.
 

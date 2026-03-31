@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Remove, Cleanup, Docker Compose
+Tags: Portainer, Stack, Remove, Cleanup, Docker Compose
 
 Description: Delete a Docker Compose stack in Portainer cleanly, with options to also remove associated volumes.
 

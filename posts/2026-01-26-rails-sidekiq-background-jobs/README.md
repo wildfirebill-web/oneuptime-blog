@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ruby on Rails, Sidekiq, Background Jobs, Redis, Performance, Ruby
+Tags: Ruby On Rail, Sidekiq, Background Job, Redis, Performance, Ruby
 
 Description: A practical guide to implementing background jobs with Sidekiq in Rails applications.
 

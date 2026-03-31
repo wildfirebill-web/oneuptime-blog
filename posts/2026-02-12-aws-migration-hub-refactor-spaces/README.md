@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Migration Hub, Refactor Spaces, Microservices, Migration
+Tags: AWS, Migration Hub, Refactor Spaces, Microservice, Migration
 
 Description: Learn how to use AWS Migration Hub Refactor Spaces to manage incremental application refactoring and route traffic between legacy and modernized services.
 

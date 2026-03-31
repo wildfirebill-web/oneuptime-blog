@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, OCI, Helm, Helm Charts
+Tags: Flux CD, GitOps, Kubernetes, OCI, Helm, Helm Chart
 
 Description: Learn how to package Helm charts as OCI artifacts and deploy them using Flux CD's HelmRepository OCI support and OCIRepository.
 

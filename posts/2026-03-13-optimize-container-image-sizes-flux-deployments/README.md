@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Container Images, Docker, Cost Management, Image Automation, Performance
+Tags: Flux CD, Kubernetes, GitOps, Container Image, Docker, Cost Management, Image Automation, Performance
 
 Description: Reduce container image sizes for faster Flux CD reconciliation, lower registry storage costs, and improved cluster security posture through multi-stage builds and image optimization techniques.
 

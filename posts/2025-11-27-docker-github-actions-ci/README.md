@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, CI/CD, GitHub Actions, Security, DevOps, Automation
+Tags: Docker, CI/CD, GitHub Action, Security, DevOps, Automation
 
 Description: Learn how to build, cache, scan, and publish Docker images inside GitHub Actions using BuildKit, buildx, provenance metadata, and vulnerability checks that keep pipelines fast and compliant.
 

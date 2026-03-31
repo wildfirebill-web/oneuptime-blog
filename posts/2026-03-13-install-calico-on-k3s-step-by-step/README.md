@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Installation, K3s
+Tags: Calico, Kubernetes, Networking, CNI, Installation, k3s
 
 Description: A step-by-step guide to replacing K3s's default Flannel CNI with Calico for advanced network policy support.
 

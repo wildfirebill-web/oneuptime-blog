@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: CSharp, .NET, Channels, Concurrency, Async Programming, Producer Consumer
+Tags: CSharp, .NET, Channel, Concurrency, Async Programming, Producer Consumer
 
 Description: Learn how to build custom channel implementations in .NET using System.Threading.Channels for specialized producer-consumer scenarios, rate limiting, batching, and priority queuing.
 

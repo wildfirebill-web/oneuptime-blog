@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, SNMP, Network Monitoring, Observability, Metrics, Infrastructure
+Tags: OpenTelemetry, Collector, SNMP, Network Monitoring, Observability, Metric, Infrastructure
 
 Description: Complete guide to configuring the SNMP receiver in OpenTelemetry Collector to monitor network devices and infrastructure with practical YAML examples and OID configuration.
 

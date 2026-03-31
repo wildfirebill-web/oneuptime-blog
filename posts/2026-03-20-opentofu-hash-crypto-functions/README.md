@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Crypto
+Tags: OpenTofu, Terraform, IaC, Function, Crypto
 
 Description: Learn how to use md5, sha1, sha256, sha512, and bcrypt functions in OpenTofu for hashing and cryptographic operations.
 

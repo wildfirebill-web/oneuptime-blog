@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, GitOps, Webhooks, DevOps
+Tags: Portainer, Docker, Stack, GitOps, Webhook, DevOps
 
 Description: Learn how to configure Portainer stack webhooks triggered by Git pushes for instant redeployment without polling delays.
 

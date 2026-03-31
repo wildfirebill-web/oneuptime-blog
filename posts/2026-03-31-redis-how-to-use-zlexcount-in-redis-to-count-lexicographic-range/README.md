@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, ZLEXCOUNT, Lexicographic, Commands
+Tags: Redis, Sorted Set, ZLEXCOUNT, Lexicographic, Command
 
 Description: Learn how to use ZLEXCOUNT in Redis to count members within a lexicographic range in a sorted set where all members have the same score.
 

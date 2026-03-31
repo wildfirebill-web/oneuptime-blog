@@ -1,6 +1,6 @@
 # How to Choose the Right Data Format for Your ClickHouse Use Case
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Format, DataIngestion, Performance, BestPractice
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Linux, Security, Capabilities, Hardening
+Tags: Podman, Container, DevOps, Linux, Security, Capabilities, Hardening
 
 Description: Learn how to remove unnecessary Linux capabilities from Podman containers to minimize the attack surface and follow the principle of least privilege.
 

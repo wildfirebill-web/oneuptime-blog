@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data Modeling, One-To-One, Schema Design, Relationships
+Tags: MongoDB, Data Modeling, One-To-One, Schema Design, Relationship
 
 Description: Learn how to design one-to-one relationships in MongoDB using embedding and referencing patterns with practical examples and guidance on when to use each.
 

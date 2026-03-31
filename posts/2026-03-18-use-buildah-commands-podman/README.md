@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Buildah, Image Building, OCI
+Tags: Podman, Container, DevOps, Buildah, Image Building, OCI
 
 Description: Learn how to use Buildah commands alongside Podman for advanced container image building and manipulation.
 

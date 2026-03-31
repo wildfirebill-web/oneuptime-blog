@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Storage, Placement Groups, Distributed Storage
+Tags: Ceph, Rook, Storage, Placement Group, Distributed Storage
 
 Description: Learn what each Ceph placement group state means, how to interpret PG state combinations, and how to respond when PGs are in degraded or blocked states.
 

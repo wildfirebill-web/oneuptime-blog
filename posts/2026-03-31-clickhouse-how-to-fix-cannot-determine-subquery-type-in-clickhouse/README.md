@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Sql, Subqueries, Troubleshooting
+Tags: ClickHouse, SQL, Subqueries, Troubleshooting
 
 Description: Understand why ClickHouse throws 'Cannot determine subquery type' and learn how to rewrite subqueries to resolve the error.
 

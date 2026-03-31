@@ -1,6 +1,6 @@
 # How to Set Up Health Check Endpoints at Istio Gateway
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Health Check, Gateway, Load Balancer, Kubernetes
 

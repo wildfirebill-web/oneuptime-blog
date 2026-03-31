@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, Analytics, Conversion, Experimentation
+Tags: Feature Flag, Analytics, Conversion, Experimentation
 
 Description: Learn how to track conversion rates across feature flag variants.
 

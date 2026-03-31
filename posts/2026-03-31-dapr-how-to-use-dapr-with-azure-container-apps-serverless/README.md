@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Azure Container Apps, Serverless, Cloud, Microservices, Azure
+Tags: Dapr, Azure Container Apps, Serverless, Cloud, Microservice, Azure
 
 Description: Learn how to deploy Dapr-enabled microservices on Azure Container Apps, leveraging built-in Dapr support for service invocation, pub/sub, and state management without managing sidecars.
 

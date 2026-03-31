@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Network Costs, Locality Load Balancing, Cost Optimization, Kubernetes
+Tags: Istio, Network Cost, Locality Load Balancing, Cost Optimization, Kubernetes
 
 Description: Reduce cloud network costs by using Istio locality load balancing to minimize cross-zone and cross-region data transfer in your Kubernetes cluster.
 

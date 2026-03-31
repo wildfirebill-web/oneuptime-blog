@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Automation
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Automation
 
 Description: Learn how to use annotation-based notification subscriptions in ArgoCD to manage alerting at scale, including patterns for bulk annotation management and template-driven subscriptions.
 

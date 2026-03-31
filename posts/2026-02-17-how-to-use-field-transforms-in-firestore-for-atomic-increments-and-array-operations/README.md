@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Firestore, Field Transforms, Atomic Operations, NoSQL
+Tags: GCP, Firestore, Field Transforms, Atomic Operation, NoSQL
 
 Description: Learn how to use Firestore field transforms for atomic increments, array unions, array removals, and server timestamps without read-before-write patterns.
 

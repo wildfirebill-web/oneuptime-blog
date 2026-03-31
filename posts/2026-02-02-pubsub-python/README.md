@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Pub/Sub, Google Cloud, Messaging, Event-Driven Architecture, Microservices
+Tags: Python, Pub/Sub, Google Cloud, Messaging, Event-Driven Architecture, Microservice
 
 Description: A comprehensive guide to implementing Pub/Sub messaging in Python, covering Google Cloud Pub/Sub setup, message publishing, subscription handling, error management, and production best practices.
 

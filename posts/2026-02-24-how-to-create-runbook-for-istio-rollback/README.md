@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Runbook, Rollback, Operations
+Tags: Istio, Kubernetes, Runbook, Rollback, Operation
 
 Description: A step-by-step runbook for rolling back Istio upgrades and configuration changes safely in production environments.
 

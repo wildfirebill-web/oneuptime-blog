@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitOps, CI/CD, Infrastructure as Code, GitHub Actions, Pull Requests, Automation
+Tags: OpenTofu, GitOps, CI/CD, Infrastructure as Code, GitHub Action, Pull Requests, Automation
 
 Description: Learn how to implement a complete GitOps workflow for OpenTofu where all infrastructure changes go through pull requests with automated plan, apply, and drift detection.
 

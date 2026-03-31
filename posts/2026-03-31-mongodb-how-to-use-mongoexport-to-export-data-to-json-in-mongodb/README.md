@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Mongoexport, Json, Data Export, Backup
+Tags: MongoDB, Mongoexport, JSON, Data Export, Backup
 
 Description: Learn how to use mongoexport to export MongoDB collections to JSON files, with options for filtering, field selection, and handling large datasets.
 

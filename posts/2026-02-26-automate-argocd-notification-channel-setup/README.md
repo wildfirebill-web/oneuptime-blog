@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Automation
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Automation
 
 Description: Learn how to automate ArgoCD notification channel setup for Slack, email, webhooks, and other services using scripts and GitOps configuration management.
 

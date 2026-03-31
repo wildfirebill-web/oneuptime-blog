@@ -1,6 +1,6 @@
 # How to Configure ClickHouse Compiled Expression Cache
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, Performance, Cache, JIT
 

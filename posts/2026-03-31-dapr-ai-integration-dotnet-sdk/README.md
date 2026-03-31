@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Ai, Dotnet, Sdk, Microservice, Integration
+Tags: Dapr, AI, DotNet, SDK, Microservice, Integration
 
 Description: Learn how to integrate AI capabilities into your .NET applications using the Dapr AI building block and the official Dapr .NET SDK.
 

@@ -1,8 +1,8 @@
 # How to Build an Ad Click Tracking System with ClickHouse
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Advertising, Analytics, Tutorial, Database, Click tracking
+Tags: ClickHouse, Advertising, Analytics, Tutorial, Database, Click Tracking
 
 Description: Learn how to build a high-throughput ad click tracking system with ClickHouse, covering schema design, deduplication, conversion attribution, and reporting queries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, CloudWatch, Metrics, Monitoring, Infrastructure as Code
+Tags: OpenTofu, AWS, CloudWatch, Metric, Monitoring, Infrastructure as Code
 
 Description: Learn how to define CloudWatch custom metrics, dashboards, and alarms using OpenTofu for application-specific monitoring.
 

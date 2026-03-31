@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Debugging, OBJECT, Memory, Troubleshooting
+Tags: Redis, Debugging, Object, Memory, Troubleshooting
 
 Description: Use Redis OBJECT commands to inspect key encoding, idle time, frequency, and reference counts to identify memory inefficiencies and optimize storage.
 

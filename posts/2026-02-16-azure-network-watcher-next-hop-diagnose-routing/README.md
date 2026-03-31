@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Network Watcher, Next Hop, Routing, Troubleshooting, Networking, Diagnostics
+Tags: Azure, Network Watcher, Next Hop, Routing, Troubleshooting, Networking, Diagnostic
 
 Description: Use Azure Network Watcher Next Hop feature to diagnose and troubleshoot routing problems in your Azure virtual network infrastructure.
 

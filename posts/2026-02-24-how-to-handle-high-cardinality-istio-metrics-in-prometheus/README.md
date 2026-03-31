@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Prometheus, Cardinality, Performance, Metrics
+Tags: Istio, Prometheus, Cardinality, Performance, Metric
 
 Description: Strategies for identifying and reducing high-cardinality Istio metrics in Prometheus to prevent memory issues, slow queries, and storage bloat.
 

@@ -1,6 +1,6 @@
 # How to Use Buffer Tables to Absorb Write Spikes in ClickHouse
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Performance, Database, Infrastructure, SQL
 

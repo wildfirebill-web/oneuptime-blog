@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Azure DevOps, Commit Status, CI/CD
+Tags: Flux CD, GitOps, Kubernetes, Notification, Azure DevOps, Commit Status, CI/CD
 
 Description: Learn how to configure Flux CD's notification controller to update Azure DevOps commit statuses based on Flux reconciliation results using the Provider resource.
 

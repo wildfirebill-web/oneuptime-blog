@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Flink, Streaming, Real-Time, Data Pipelines
+Tags: Kafka, Flink, Streaming, Real-Time, Data Pipeline
 
 Description: Learn how to build real-time data processing pipelines using Apache Kafka for ingestion and Apache Flink for stream processing.
 

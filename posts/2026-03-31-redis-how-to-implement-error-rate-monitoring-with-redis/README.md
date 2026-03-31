@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Error Rate, Monitoring, Counters, Alerting
+Tags: Redis, Error Rate, Monitoring, Counter, Alerting
 
 Description: Monitor error rates in real time using Redis counters with sliding windows to detect anomalies and trigger alerts when error thresholds are exceeded.
 

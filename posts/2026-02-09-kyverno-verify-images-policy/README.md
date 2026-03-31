@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kyverno, Policy, Images, Security
+Tags: Kubernetes, Kyverno, Policy, Image, Security
 
 Description: Master Kyverno verify images rules to enforce image signature verification and source policies.
 

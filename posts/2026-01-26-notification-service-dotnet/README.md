@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, Notifications, Background Services, Email, SMS, Push Notifications, Microservices
+Tags: .NET, C#, Notification, Background Services, Email, SMS, Push Notification, Microservice
 
 Description: Learn how to build a scalable notification service in .NET that handles email, SMS, and push notifications with templating, rate limiting, and delivery tracking.
 

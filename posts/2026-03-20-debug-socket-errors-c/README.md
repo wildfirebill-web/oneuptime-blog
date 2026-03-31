@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, Sockets, Debugging, Errno, POSIX, Networking
+Tags: C, IPv4, Socket, Debugging, Errno, POSIX, Networking
 
 Description: Learn how to diagnose and handle common IPv4 socket errors in C - including ECONNREFUSED, ETIMEDOUT, EADDRINUSE, and ECONNRESET - using errno, perror, and strerror.
 

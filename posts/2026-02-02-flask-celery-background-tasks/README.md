@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Flask, Python, Celery, Background Tasks, Queue
+Tags: Flask, Python, Celery, Background Task, Queue
 
 Description: Learn how to integrate Celery with Flask for background task processing. This comprehensive guide covers setup, task creation, scheduling, error handling, monitoring, and production best practices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Saga Pattern, Distributed Transactions, Microservices, Streams
+Tags: Redis, Saga Pattern, Distributed Transaction, Microservice, Stream
 
 Description: Implement the Saga pattern for distributed transactions using Redis Streams to coordinate multi-step operations with compensating actions on failure.
 

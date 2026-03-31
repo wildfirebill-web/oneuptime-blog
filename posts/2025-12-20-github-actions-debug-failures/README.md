@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Debugging, Troubleshooting, DevOps, Logging
+Tags: GitHub Action, CI/CD, Debugging, Troubleshooting, DevOps, Logging
 
 Description: Learn effective techniques for debugging failed GitHub Actions workflows, including enabling debug logging, using artifacts, SSH access, step debugging.
 

@@ -106,7 +106,7 @@ curl -X PATCH \
 
 ## Expected Storage Savings
 
-```
+```text
 Before Online Archive:
 - live_logs collection: 500GB @ $0.25/GB = $125/month
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Prune, Cleanup, Disk Space
+Tags: Podman, Container, DevOps, Container Image, Prune, Cleanup, Disk Space
 
 Description: Learn how to reclaim disk space by pruning unused container images with Podman, including dangling images, unused images, and filtered cleanup strategies.
 

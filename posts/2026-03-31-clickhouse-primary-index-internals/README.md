@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Primary Index, MergeTree, Internals, Query Optimization
+Tags: ClickHouse, Primary Index, MergeTree, Internal, Query Optimization
 
 Description: A deep dive into how ClickHouse builds and uses the sparse primary index to skip data during queries, with examples showing index granularity and mark files.
 

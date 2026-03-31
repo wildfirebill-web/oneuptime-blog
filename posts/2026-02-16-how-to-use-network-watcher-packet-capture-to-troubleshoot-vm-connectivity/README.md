@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Network Watcher, Packet Capture, Troubleshooting, VM Connectivity, Networking, Diagnostics
+Tags: Azure, Network Watcher, Packet Capture, Troubleshooting, VM Connectivity, Networking, Diagnostic
 
 Description: Learn how to use Azure Network Watcher packet capture to diagnose and troubleshoot virtual machine connectivity problems in your Azure environment.
 

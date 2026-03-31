@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Amazon Q Developer, CodeWhisperer, AI Coding, Developer Tools, Productivity
+Tags: AWS, Amazon Q Developer, CodeWhisperer, AI Coding, Developer Tool, Productivity
 
 Description: Get AI-powered code suggestions in your IDE with Amazon Q Developer (formerly CodeWhisperer) to write code faster with inline completions and chat assistance.
 

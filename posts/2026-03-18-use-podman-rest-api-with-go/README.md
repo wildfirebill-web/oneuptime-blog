@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Go, Golang, Containers
+Tags: Podman, REST API, Go, Golang, Container
 
 Description: Learn how to interact with the Podman REST API using Go, including building HTTP clients for Unix sockets, managing containers, and creating production-ready tooling.
 

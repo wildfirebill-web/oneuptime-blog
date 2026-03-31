@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Audit Trail, Compliance, Streams, Event Logging, Data Modeling
+Tags: Redis, Audit Trail, Compliance, Stream, Event Logging, Data Modeling
 
 Description: Model audit trails in Redis using Streams to capture tamper-evident, ordered event logs for user actions, system changes, and compliance requirements.
 

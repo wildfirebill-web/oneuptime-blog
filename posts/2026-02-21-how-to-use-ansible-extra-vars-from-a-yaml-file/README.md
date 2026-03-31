@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, YAML, Automation
+Tags: Ansible, Variable, YAML, Automation
 
 Description: How to pass extra variables to Ansible playbooks from YAML files using the extra-vars flag for clean, maintainable deployment configurations.
 

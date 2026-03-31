@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Spanner, Go, Transactions, Database, Google Cloud
+Tags: GCP, Cloud Spanner, Go, Transaction, Database, Google Cloud
 
 Description: Learn how to use the Go Cloud Spanner client library for read-write transactions and mutations with practical examples and best practices.
 

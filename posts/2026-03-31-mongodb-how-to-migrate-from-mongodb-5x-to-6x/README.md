@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Migration, Database Upgrade, Aggregation, Compatibility
+Tags: MongoDB, Migration, Database Upgrade, Aggregation, Compatibility
 
 Description: A comprehensive guide to upgrading your MongoDB deployment from version 5.x to 6.x safely using a rolling upgrade strategy.
 

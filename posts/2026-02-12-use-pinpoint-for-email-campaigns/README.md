@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Pinpoint, Email, Marketing, Campaigns
+Tags: AWS, Pinpoint, Email, Marketing, Campaign
 
 Description: Build and manage targeted email campaigns with Amazon Pinpoint, including template creation, audience segmentation, scheduling, A/B testing, and performance analytics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Gitops, Version Control, Components, Infrastructure As Code
+Tags: Dapr, GitOps, Version Control, Component, Infrastructure as Code
 
 Description: Structure and version Dapr component manifests in Git with environment-specific overlays, secrets management, and GitOps deployment patterns.
 

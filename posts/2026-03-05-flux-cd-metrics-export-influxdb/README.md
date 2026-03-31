@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Monitoring, InfluxDB, Metrics, Telegraf
+Tags: Flux CD, GitOps, Kubernetes, Monitoring, InfluxDB, Metric, Telegraf
 
 Description: Learn how to export Flux CD reconciliation and controller metrics to InfluxDB using Telegraf for time-series storage and analysis.
 

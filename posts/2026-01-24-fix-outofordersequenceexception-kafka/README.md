@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, OutOfOrderSequenceException, Idempotent Producer, Transactions, Error Handling, DevOps
+Tags: Apache Kafka, OutOfOrderSequenceException, Idempotent Producer, Transaction, Error Handling, DevOps
 
 Description: A comprehensive guide to understanding and resolving OutOfOrderSequenceException in Kafka, covering idempotent producers, transaction handling, and recovery strategies.
 

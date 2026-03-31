@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Docker, Container Monitoring, Metrics, Observability
+Tags: OpenTelemetry, Collector, Docker, Container Monitoring, Metric, Observability
 
 Description: Complete guide to configuring the Docker Stats receiver in OpenTelemetry Collector to monitor container metrics with practical YAML examples and best practices.
 

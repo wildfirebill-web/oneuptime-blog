@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Azure, Cloud, Documentation, Operations
+Tags: Calico, Kubernetes, Networking, Azure, Cloud, Documentation, Operation
 
 Description: How to create operational documentation for Calico networking on Azure, covering architecture, Azure resource dependencies, runbooks, and change management for VNet-integrated Kubernetes clusters.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, XACK, Consumer Groups, Acknowledgment
+Tags: Redis, Stream, XACK, Consumer Group, Acknowledgment
 
 Description: Learn how to use XACK in Redis Streams to acknowledge message processing within a consumer group, removing messages from the pending entries list.
 

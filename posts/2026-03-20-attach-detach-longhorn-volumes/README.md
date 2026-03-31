@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, Volumes, Operations
+Tags: Longhorn, Kubernetes, Storage, Volumes, Operation
 
 Description: Learn how to attach and detach Longhorn volumes from nodes using the Longhorn UI, kubectl, and the Longhorn API for maintenance and debugging scenarios.
 

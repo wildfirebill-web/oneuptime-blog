@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Rate Limiting, Distributed Systems, API Gateway, Microservices, Scaling
+Tags: Redis, Rate Limiting, Distributed System, API Gateway, Microservice, Scaling
 
 Description: A comprehensive guide to building a distributed rate limiter with Redis for multi-instance deployments, including synchronization strategies, failover handling, and production-ready patterns.
 

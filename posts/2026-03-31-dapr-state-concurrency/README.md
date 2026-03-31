@@ -1,4 +1,4 @@
-# How to Configure Dapr State Store Concurrency (First-Write-Wins vs
+# How to Configure Dapr State Store Concurrency
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

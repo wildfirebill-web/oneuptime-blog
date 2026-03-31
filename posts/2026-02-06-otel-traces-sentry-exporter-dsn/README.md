@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Sentry, Traces, Error Tracking
+Tags: OpenTelemetry, Sentry, Trace, Error Tracking
 
 Description: Configure the OpenTelemetry Collector to export traces to Sentry using the Sentry exporter with DSN-based authentication.
 

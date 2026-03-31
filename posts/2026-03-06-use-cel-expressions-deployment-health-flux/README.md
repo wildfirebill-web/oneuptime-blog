@@ -1,6 +1,6 @@
 # How to Use CEL Expressions for Deployment Health in Flux
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, CEL, Deployment, Health Check, Kubernetes, GitOps, Monitoring
 

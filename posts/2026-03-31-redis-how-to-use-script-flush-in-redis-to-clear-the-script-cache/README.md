@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lua, Scripting, Commands, Administration
+Tags: Redis, Lua, Scripting, Command, Administration
 
 Description: Learn how to use SCRIPT FLUSH in Redis to clear the Lua script cache, including the ASYNC and SYNC options and when to use this command safely.
 

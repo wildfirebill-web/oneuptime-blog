@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, ss, netstat, Sockets, IPv4, Networking, Diagnostics
+Tags: Linux, ss, netstat, Socket, IPv4, Networking, Diagnostic
 
 Description: Use the ss command as a modern, faster replacement for netstat to inspect IPv4 TCP and UDP sockets, listening ports, and connection states.
 

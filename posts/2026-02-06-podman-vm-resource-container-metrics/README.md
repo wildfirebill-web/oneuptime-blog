@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Podman, Metrics, VM Monitoring
+Tags: OpenTelemetry, Podman, Metric, VM Monitoring
 
 Description: Monitor Podman machine VM resource usage and per-container metrics using the OpenTelemetry Collector with the Docker-compatible API.
 

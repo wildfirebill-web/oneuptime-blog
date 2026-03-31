@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Replication, PSYNC, Partial Resync, Internals
+Tags: Redis, Replication, PSYNC, Partial Resync, Internal
 
 Description: A deep dive into how Redis partial resynchronization (PSYNC) works, including replication IDs, offsets, and when full vs partial sync occurs.
 

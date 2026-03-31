@@ -1,6 +1,6 @@
 # How to Build a Healthcare Patient Analytics System with ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Analytics, Healthcare, Patient Data, Time-Series
 

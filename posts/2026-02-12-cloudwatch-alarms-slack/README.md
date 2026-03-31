@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CloudWatch, Slack, Notifications, ChatOps
+Tags: AWS, CloudWatch, Slack, Notification, ChatOps
 
 Description: Step-by-step guide to sending CloudWatch Alarm notifications to Slack channels using SNS, Lambda, and AWS Chatbot for real-time team awareness.
 

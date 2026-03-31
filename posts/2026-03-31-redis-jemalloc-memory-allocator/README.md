@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, jemalloc, Internals, Performance
+Tags: Redis, Memory, Jemalloc, Internal, Performance
 
 Description: Learn how Redis uses jemalloc to manage heap memory, reduce fragmentation, and why memory usage reported by Redis can differ from OS-level readings.
 

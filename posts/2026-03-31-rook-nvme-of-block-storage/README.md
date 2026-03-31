@@ -1,10 +1,10 @@
 # How to Set Up NVMe-oF Block Storage with Rook
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage
 
-Description: Configure Ceph NVMe-oF (NVMe over Fabrics) gateways in Rook to expose block storage with ultra-low latency for high-performance Kubernetes workloads.
+Description: Configure Ceph NVMe-oF gateways in Rook to expose block storage with ultra-low latency for high-performance Kubernetes workloads.
 
 ---
 

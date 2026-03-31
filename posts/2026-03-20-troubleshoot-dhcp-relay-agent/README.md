@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP Relay, Ip helper-address, Troubleshooting, Networks, Cisco
+Tags: DHCP Relay, Ip helper-address, Troubleshooting, Network, Cisco
 
 Description: Learn how to diagnose and fix DHCP relay agent issues where clients in remote subnets cannot get IP addresses because relay agents are not properly forwarding DHCP Discover packets to the DHCP server.
 

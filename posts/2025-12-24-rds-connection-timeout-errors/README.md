@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, RDS, Database, Troubleshooting, Networking, Security Groups, Connection Pooling
+Tags: AWS, RDS, Database, Troubleshooting, Networking, Security Group, Connection Pooling
 
 Description: A practical guide to diagnosing and resolving connection timeout errors with Amazon RDS, covering network configuration, security groups, and connection pooling strategies.
 

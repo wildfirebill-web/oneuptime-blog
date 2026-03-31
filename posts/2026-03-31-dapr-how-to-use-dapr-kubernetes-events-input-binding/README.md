@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Kubernetes, Events, Bindings, Observability
+Tags: Dapr, Kubernetes, Event, Binding, Observability
 
 Description: Learn how to use the Dapr Kubernetes Events input binding to react to Kubernetes cluster events from your microservices in real time.
 

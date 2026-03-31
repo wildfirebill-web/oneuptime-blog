@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Transformation, HCL, Locals, Functions, Infrastructure as Code
+Tags: OpenTofu, Data Transformation, HCL, Local, Function, Infrastructure as Code
 
 Description: Learn how to chain multiple data transformations in OpenTofu locals blocks - building complex data structures from simple inputs through a series of clear, composable transformation steps.
 

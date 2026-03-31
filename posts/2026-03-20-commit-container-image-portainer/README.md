@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Containers, DevOps
+Tags: Portainer, Docker, Image, Container, DevOps
 
 Description: Create a new Docker image from a running or stopped container's current state using Portainer.
 

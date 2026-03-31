@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NestJS, TypeScript, Decorators, Node.js, Backend, API Development
+Tags: NestJS, TypeScript, Decorator, Node.js, Backend, API Development
 
 Description: Learn how to build reusable decorators in NestJS for authentication, validation, caching, and logging.
 

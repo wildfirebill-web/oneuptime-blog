@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Read Preference, Latency, Replication, Multi-region, Driver
+Tags: MongoDB, Read Preference, Latency, Replication, Multi-Region, Driver
 
 Description: Learn how to use read preference nearest in MongoDB to route reads to the replica set member with the lowest network latency for optimal response time.
 
@@ -53,7 +53,7 @@ const doc = await collection.findOne({}, { readPreference: pref });
 
 In a geographically distributed deployment, `nearest` automatically routes each application instance to its closest data center:
 
-```
+```text
 App (US East) --> reads from US East replica
 App (EU West) --> reads from EU West replica
 App (AP South) --> reads from AP South replica

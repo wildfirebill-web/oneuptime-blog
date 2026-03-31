@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Replication, Internals, Architecture
+Tags: Redis, Replication, Internal, Architecture
 
 Description: Understand the exact sequence of events in Redis replication from initial handshake through full sync and ongoing partial sync, with commands to observe each phase.
 

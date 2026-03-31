@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Containerfile
+Tags: Podman, Container, DevOps, Container Image, Build, Containerfile
 
 Description: Learn how to build container images from a Containerfile using Podman, covering syntax, best practices, and practical build examples.
 

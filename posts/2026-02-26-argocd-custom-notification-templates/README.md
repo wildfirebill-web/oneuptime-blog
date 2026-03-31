@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Go Templates
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Go Templates
 
 Description: Learn how to create custom notification templates in ArgoCD using Go templating with conditional logic, loops, helper functions, and multi-service formatting.
 

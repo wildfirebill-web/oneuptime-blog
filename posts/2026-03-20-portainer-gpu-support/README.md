@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, GPU, Machine Learning
+Tags: Portainer, Docker, Container, GPU, Machine Learning
 
 Description: Learn how to enable GPU access for Docker containers in Portainer using NVIDIA Container Toolkit for machine learning and compute workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Installation, Single Node
+Tags: k3s, Kubernetes, Rancher, Installation, Single Node
 
 Description: A beginner-friendly guide to installing K3s on a single Linux node and running your first workload in minutes.
 

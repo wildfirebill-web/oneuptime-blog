@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Transactions, Deadlocks, Innodb
+Tags: MySQL, Transaction, Deadlock, InnoDB
 
 Description: Learn how to detect, diagnose, and resolve MySQL deadlocks using SHOW ENGINE INNODB STATUS, performance_schema, and error log analysis.
 

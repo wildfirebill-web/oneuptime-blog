@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Docker Swarm, Overlay Networking, IPv4, Containers, Clustering
+Tags: Docker, Docker Swarm, Overlay Networking, IPv4, Container, Clustering
 
 Description: Configure Docker Swarm overlay networks with custom IPv4 subnets for service communication and ingress routing, and customize the default address pools to avoid conflicts.
 

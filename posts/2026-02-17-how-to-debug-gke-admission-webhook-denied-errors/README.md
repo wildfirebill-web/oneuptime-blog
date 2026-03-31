@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GKE, Kubernetes, Admission Webhooks, Troubleshooting, Security, GCP
+Tags: GKE, Kubernetes, Admission Webhook, Troubleshooting, Security, GCP
 
 Description: Learn how to diagnose and fix admission webhook denied errors in GKE clusters, including identifying which webhook is blocking requests and resolving configuration issues.
 

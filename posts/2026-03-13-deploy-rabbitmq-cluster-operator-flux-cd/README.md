@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, RabbitMQ, Message Queues, AMQP, Database Operators
+Tags: Flux CD, Kubernetes, GitOps, RabbitMQ, Message Queue, AMQP, Database Operators
 
 Description: Deploy the RabbitMQ Cluster Kubernetes Operator for managed RabbitMQ clusters using Flux CD HelmRelease.
 

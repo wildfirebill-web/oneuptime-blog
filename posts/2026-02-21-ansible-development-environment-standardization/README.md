@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Development Environments, DevOps, Standardization
+Tags: Ansible, Development Environment, DevOps, Standardization
 
 Description: Standardize development environments across your team using Ansible to eliminate works-on-my-machine problems and speed up onboarding.
 

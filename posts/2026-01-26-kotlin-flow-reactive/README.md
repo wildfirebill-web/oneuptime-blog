@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kotlin, Flow, Reactive Programming, Coroutines, Android
+Tags: Kotlin, Flow, Reactive Programming, Coroutine, Android
 
 Description: Learn how to use Kotlin Flow for reactive programming with cold streams, operators, state management, and integration with coroutines.
 

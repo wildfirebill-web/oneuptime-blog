@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Troubleshooting, External Services
+Tags: Calico, Kubernetes, Networking, Troubleshooting, External Service
 
 Description: Prevent pods from losing access to external services by setting natOutgoing on all IP pools, structuring network policies with explicit egress rules, and testing connectivity after policy changes.
 

@@ -1,6 +1,6 @@
 # How to Use Compression with WiredTiger in MongoDB
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, WiredTiger, Compression, Storage, Performance
 

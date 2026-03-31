@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Ephemeral Resources, Temporary Credentials, Secrets, AWS, HCL, Infrastructure as Code
+Tags: OpenTofu, Ephemeral Resources, Temporary Credentials, Secret, AWS, HCL, Infrastructure as Code
 
 Description: Learn how to use ephemeral resources in OpenTofu to obtain and use temporary credentials that are never stored in state, improving security for secrets and access tokens.
 

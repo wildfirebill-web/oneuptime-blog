@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, VictoriaMetrics, Prometheus, Monitoring, Metrics, Time Series, DevOps
+Tags: Docker, VictoriaMetrics, Prometheus, Monitoring, Metric, Time Series, DevOps
 
 Description: Deploy VictoriaMetrics in Docker as a fast, cost-effective Prometheus-compatible time-series database for metrics storage and querying.
 

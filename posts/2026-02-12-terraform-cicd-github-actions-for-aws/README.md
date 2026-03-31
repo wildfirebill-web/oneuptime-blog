@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Terraform, GitHub Actions, CI/CD, DevOps
+Tags: AWS, Terraform, GitHub Action, CI/CD, DevOps
 
 Description: Build a complete Terraform CI/CD pipeline with GitHub Actions for AWS deployments, including plan on PR, apply on merge, OIDC authentication, and approval workflows.
 

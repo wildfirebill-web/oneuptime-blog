@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, RGW, Object Storage, Resources, Pod
+Tags: Rook, Ceph, Kubernetes, RGW, Object Storage, Resource, Pod
 
 Description: Configure CPU and memory resource limits for Rook-Ceph RGW (RADOS Gateway) pods to handle object storage workloads, support large thread pools, and prevent resource contention.
 

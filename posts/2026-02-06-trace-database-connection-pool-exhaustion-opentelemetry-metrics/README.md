@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Database, Connection Pooling, Metrics, Observability, Performance, Troubleshooting
+Tags: OpenTelemetry, Database, Connection Pooling, Metric, Observability, Performance, Troubleshooting
 
 Description: Learn to detect and diagnose database connection pool exhaustion using OpenTelemetry metrics, traces, and practical alerting strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Google Cloud, GCR, Artifact Registry
+Tags: Podman, Container, DevOps, Registry, Google Cloud, GCR, Artifact Registry
 
 Description: Learn how to use Google Container Registry and Artifact Registry with Podman for managing container images on Google Cloud.
 

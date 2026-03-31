@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Aggregate Functions, Resample, Window, Time Series
+Tags: ClickHouse, Aggregate Function, Resample, Window, Time Series
 
 Description: Learn how to use the -Resample combinator in ClickHouse to aggregate data over equal-width intervals of a key column in a single pass without GROUP BY.
 

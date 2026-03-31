@@ -1,8 +1,8 @@
 # How to Monitor MongoDB Sharding with sh.status()
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sharding, Monitoring, Operations, Administration
+Tags: MongoDB, Sharding, Monitoring, Operation, Administration
 
 Description: Learn how to use sh.status() and related config collection queries to monitor your MongoDB sharded cluster's health, chunk distribution, and balancer state.
 

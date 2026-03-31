@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Envoy Proxy, Service Mesh, Load Balancing, DevOps, Microservices
+Tags: Docker, Envoy Proxy, Service Mesh, Load Balancing, DevOps, Microservice
 
 Description: Deploy Envoy Proxy in Docker with load balancing, traffic routing, rate limiting, and observability for microservices
 

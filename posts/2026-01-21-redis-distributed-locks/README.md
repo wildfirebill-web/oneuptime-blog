@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Distributed Locks, Redlock, Concurrency, Distributed Systems, Mutex
+Tags: Redis, Distributed Lock, Redlock, Concurrency, Distributed System, Mutex
 
 Description: A comprehensive guide to implementing distributed locks with Redis using the Redlock algorithm, including lock safety, automatic expiration.
 

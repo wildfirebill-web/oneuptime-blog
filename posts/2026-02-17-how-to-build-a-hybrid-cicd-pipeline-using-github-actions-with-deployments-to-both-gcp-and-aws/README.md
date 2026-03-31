@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, AWS, GitHub Actions, CI/CD, Multi-Cloud
+Tags: GCP, AWS, GitHub Action, CI/CD, Multi-Cloud
 
 Description: Learn how to build a hybrid CI/CD pipeline using GitHub Actions that deploys applications to both Google Cloud Platform and AWS for multi-cloud resilience.
 

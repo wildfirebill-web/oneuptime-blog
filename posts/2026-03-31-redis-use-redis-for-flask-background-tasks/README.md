@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Flask, Background Tasks, RQ, Python
+Tags: Redis, Flask, Background Task, RQ, Python
 
 Description: Use Redis Queue (RQ) with Flask to run background tasks outside the request cycle without the complexity of a full Celery setup.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, WORKDIR, Container Images, DevOps
+Tags: Podman, Containerfile, WORKDIR, Container Image, DevOps
 
 Description: Learn how to use the WORKDIR instruction in Podman Containerfiles to set the working directory for your container builds and runtime, with best practices and common patterns.
 

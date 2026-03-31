@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, OIDC, AWS, Azure, GCP, Security, Cloud Authentication
+Tags: GitHub Action, OIDC, AWS, Azure, GCP, Security, Cloud Authentication
 
 Description: Learn how to use OpenID Connect (OIDC) for secure, keyless authentication to AWS, Azure, and GCP from GitHub Actions. Eliminate long-lived credentials and improve security.
 

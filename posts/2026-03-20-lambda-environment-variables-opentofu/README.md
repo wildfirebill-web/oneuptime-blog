@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Lambda, Environment Variables, KMS, Secrets, Infrastructure as Code
+Tags: OpenTofu, AWS, Lambda, Environment Variable, KMS, Secret, Infrastructure as Code
 
 Description: Learn how to configure Lambda environment variables with encryption using OpenTofu, including best practices for managing secrets and referencing SSM Parameter Store values.
 

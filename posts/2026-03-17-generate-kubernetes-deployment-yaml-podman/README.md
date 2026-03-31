@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, YAML, Deployment
+Tags: Podman, Container, DevOps, Kubernetes, YAML, Deployment
 
 Description: Learn how to generate a Kubernetes Deployment manifest from a Podman container or pod.
 

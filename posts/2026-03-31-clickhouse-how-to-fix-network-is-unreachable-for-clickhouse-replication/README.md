@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Replication, Networking, Troubleshooting, Distributed Systems
+Tags: ClickHouse, Replication, Networking, Troubleshooting, Distributed System
 
 Description: Fix ClickHouse 'Network is unreachable' replication errors by diagnosing inter-node connectivity, DNS resolution, and firewall configuration.
 

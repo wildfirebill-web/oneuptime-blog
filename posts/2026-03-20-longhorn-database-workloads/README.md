@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Database, PostgreSQL, MySQL, Kubernetes, Storage, StatefulSets, Performance
+Tags: Longhorn, Database, PostgreSQL, MySQL, Kubernetes, Storage, StatefulSet, Performance
 
 Description: Learn how to configure Longhorn storage for database workloads including StatefulSets for PostgreSQL and MySQL, with optimizations for data locality, IOPS, and backup scheduling.
 

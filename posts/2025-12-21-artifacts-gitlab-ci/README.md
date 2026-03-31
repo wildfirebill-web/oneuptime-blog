@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab, CI/CD, Artifacts, Build Outputs, Test Reports, Pipeline Data
+Tags: GitLab, CI/CD, Artifact, Build Outputs, Test Reports, Pipeline Data
 
 Description: Master GitLab CI artifacts to pass data between jobs, store build outputs, and generate reports. Learn about artifact types, expiration, dependencies, and best practices.
 

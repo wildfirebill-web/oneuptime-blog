@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Agent, Security, Authentication, Secrets
+Tags: Portainer, Agent, Security, Authentication, Secret
 
 Description: Configure a shared agent secret to secure the communication channel between the Portainer server and its agents.
 

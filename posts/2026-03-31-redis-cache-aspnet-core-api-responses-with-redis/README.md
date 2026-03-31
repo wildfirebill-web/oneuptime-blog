@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Asp.Net Core, Caching, Distributed Cache, C#
+Tags: Redis, ASP.NET Core, Caching, Distributed Cache, C#
 
 Description: Cache ASP.NET Core API responses in Redis using IDistributedCache and custom middleware to reduce database load and improve API performance.
 

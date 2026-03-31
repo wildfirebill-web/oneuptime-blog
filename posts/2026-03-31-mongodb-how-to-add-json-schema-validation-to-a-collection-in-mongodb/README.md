@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Schema Validation, JSON Schema, Data Quality, Collections
+Tags: MongoDB, Schema Validation, JSON Schema, Data Quality, Collection
 
 Description: Enforce data structure rules on MongoDB collections using JSON Schema validation to prevent invalid documents from being inserted or updated.
 

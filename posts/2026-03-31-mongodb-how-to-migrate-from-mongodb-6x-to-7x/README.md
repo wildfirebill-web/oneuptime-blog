@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Migration, Database Upgrade, Atlas, Compatibility
+Tags: MongoDB, Migration, Database Upgrade, Atlas, Compatibility
 
 Description: Learn how to upgrade your MongoDB deployment from 6.x to 7.x with zero downtime using a rolling upgrade approach.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Storage, MergeTree, Internals, Disk
+Tags: ClickHouse, Storage, MergeTree, Internal, Disk
 
 Description: Understand how ClickHouse organizes data into part directories on disk, what each file inside a part contains, and how merges affect storage layout.
 

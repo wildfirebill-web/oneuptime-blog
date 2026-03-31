@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, T-Digest, Percentile Estimation, Probabilistic Data Structures
+Tags: Redis, T-Digest, Percentile Estimation, Probabilistic Data Structure
 
 Description: Learn how to use TDIGEST.CREATE in Redis to initialize a T-Digest structure for accurate percentile and quantile estimation over streaming data.
 

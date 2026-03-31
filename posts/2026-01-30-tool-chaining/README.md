@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AI Agents, LLM, Tools, AI
+Tags: AI Agents, LLM, Tool, AI
 
 Description: A practical guide to building tool chaining systems that enable AI agents to accomplish complex multi-step tasks by connecting and orchestrating multiple tools together.
 

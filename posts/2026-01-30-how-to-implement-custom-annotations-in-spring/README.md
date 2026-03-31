@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Java, Spring, Annotations, AOP
+Tags: Java, Spring, Annotation, AOP
 
 Description: Learn how to create custom annotations in Spring with AOP for cross-cutting concerns like logging, validation, and security.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, Proxy, Load Balancing, Kubernetes, Service Mesh, Microservices, Observability, Traffic Management
+Tags: Envoy, Proxy, Load Balancing, Kubernetes, Service Mesh, Microservice, Observability, Traffic Management
 
 Description: A practical guide to getting started with Envoy Proxy. Learn how to install, configure, and deploy Envoy for load balancing, traffic routing, and observability in modern application architectures.
 

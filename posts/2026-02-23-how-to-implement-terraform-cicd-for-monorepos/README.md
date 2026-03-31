@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, Monorepo, GitHub Actions, DevOps, Infrastructure as Code
+Tags: Terraform, CI/CD, Monorepo, GitHub Action, DevOps, Infrastructure as Code
 
 Description: Learn how to set up efficient Terraform CI/CD pipelines for monorepos with change detection, parallel execution, dependency ordering, and selective plan and apply workflows.
 

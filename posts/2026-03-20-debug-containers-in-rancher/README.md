@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Debugging, Kubernetes, Kubectl debug, Ephemeral Containers, Troubleshooting
+Tags: Rancher, Debugging, Kubernetes, Kubectl debug, Ephemeral Container, Troubleshooting
 
 Description: Use kubectl debug, ephemeral containers, and debug sidecars to troubleshoot running applications in Rancher clusters without modifying production images.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SRE, On-Call, Operations, DevOps, Incident Management, Reliability
+Tags: SRE, On-Call, Operation, DevOps, Incident Management, Reliability
 
 Description: A comprehensive implementation guide for building effective on-call rotations, including scheduling strategies, tooling configuration, automation scripts.
 

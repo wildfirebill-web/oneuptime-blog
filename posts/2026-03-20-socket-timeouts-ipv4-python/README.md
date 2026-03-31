@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Sockets, IPv4, Timeout, Networking, Error Handling
+Tags: Python, Socket, IPv4, Timeout, Networking, Error Handling
 
 Description: Learn how to configure connection and read timeouts for Python IPv4 sockets to prevent applications from hanging indefinitely on slow or unreachable servers.
 

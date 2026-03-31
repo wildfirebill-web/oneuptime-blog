@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Row Formats, Storage, Configuration
+Tags: MySQL, InnoDB, Row Format, Storage, Configuration
 
 Description: Learn the differences between InnoDB row formats - REDUNDANT, COMPACT, DYNAMIC, and COMPRESSED - and how to choose the right one for your tables.
 

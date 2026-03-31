@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Containers, DevOps, Container Creation
+Tags: Podman, REST API, Container, DevOps, Container Creation
 
 Description: Learn how to create and configure containers using the Podman REST API with detailed examples covering port mapping, volumes, environment variables, and resource limits.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Http, Service, Microservice, Sdk
+Tags: Dapr, Go, HTTP, Service, Microservice, SDK
 
 Description: Build a Dapr-enabled Go HTTP service that handles service invocations and pub/sub subscriptions using the official Dapr Go SDK service package.
 

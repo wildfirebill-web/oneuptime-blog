@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Monorepo, Shared Configuration, SDK, Microservices
+Tags: OpenTelemetry, Monorepo, Shared Configuration, SDK, Microservice
 
 Description: Structure your OpenTelemetry SDK configuration in a monorepo so multiple services share a single tracing setup without duplication.
 

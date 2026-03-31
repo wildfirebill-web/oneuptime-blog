@@ -1,6 +1,6 @@
 # How to Configure Reclaim Policies for Rook RBD Volumes
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage
 

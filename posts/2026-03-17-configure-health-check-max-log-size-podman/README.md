@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Check, Logging, Storage
+Tags: Podman, Container, DevOps, Health Check, Logging, Storage
 
 Description: Learn how to configure the maximum size of individual health check log entries in Podman to control storage usage.
 

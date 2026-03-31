@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, .NET, SDK, Durable Execution, Microservices, C#
+Tags: Dapr, Workflow, .NET, SDK, Durable Execution, Microservice, C#
 
 Description: Learn how to build reliable, long-running workflows using the Dapr Workflow .NET SDK, covering orchestration, activities, error handling, and fan-out/fan-in patterns.
 

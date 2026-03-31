@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, RBAC, Security, Access Control, Permissions, Enterprise, Administration
+Tags: Grafana, RBAC, Security, Access Control, Permission, Enterprise, Administration
 
 Description: Learn how to implement Role-Based Access Control in Grafana to manage user permissions, protect sensitive dashboards, and enforce organizational security policies.
 

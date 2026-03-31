@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, TypeScript, Durable Functions, Serverless, Orchestration, Workflow, Node.js
+Tags: Azure Function, TypeScript, Durable Functions, Serverless, Orchestration, Workflow, Node.js
 
 Description: Learn how to create Azure Functions in TypeScript with Durable Functions orchestrations for building reliable, long-running serverless workflows.
 

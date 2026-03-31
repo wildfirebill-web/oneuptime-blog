@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BullMQ, Node.js, Redis, Scheduled Tasks, Cron Jobs, Task Scheduling, Background Jobs, Automation
+Tags: BullMQ, Node.js, Redis, Scheduled Task, Cron Jobs, Task Scheduling, Background Job, Automation
 
 Description: A comprehensive guide to building a scheduled task system with BullMQ, including cron-like scheduling, one-time delayed tasks, recurring jobs, task management, and building a flexible task scheduler.
 

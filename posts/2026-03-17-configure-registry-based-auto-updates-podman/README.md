@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Auto-Update, Registry, Image Management
+Tags: Podman, Container, DevOps, Auto-Update, Registry, Image Management
 
 Description: Learn how to configure registry-based auto-updates in Podman to automatically pull and deploy new container images when they change in the registry.
 

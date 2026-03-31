@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Lists, HCL, Infrastructure as Code
+Tags: Terraform, Variable, List, HCL, Infrastructure as Code
 
 Description: Learn how to declare and use list-type variables in Terraform, including list operations, indexing, iteration with count and for_each, and practical AWS examples.
 

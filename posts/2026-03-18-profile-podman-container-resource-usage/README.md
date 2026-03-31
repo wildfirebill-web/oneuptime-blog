@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Profiling, Containers, Performance, CPU, Memory, DevOps, Linux, Cgroups
+Tags: Podman, Profiling, Container, Performance, CPU, Memory, DevOps, Linux, Cgroups
 
 Description: Learn how to profile CPU, memory, network, and disk resource usage of Podman containers using cgroups, system tools, and container-native profiling techniques.
 

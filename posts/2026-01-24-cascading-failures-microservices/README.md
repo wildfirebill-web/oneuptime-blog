@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Cascading Failures, Circuit Breaker, Resilience, Bulkhead, Timeout, Retry, Fault Tolerance
+Tags: Microservice, Cascading Failure, Circuit Breaker, Resilience, Bulkhead, Timeout, Retry, Fault Tolerance
 
 Description: A practical guide to preventing and recovering from cascading failures in microservices using circuit breakers, bulkheads, timeouts, and graceful degradation patterns.
 

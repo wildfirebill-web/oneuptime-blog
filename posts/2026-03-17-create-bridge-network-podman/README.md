@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Bridge, Linux
+Tags: Podman, Container, DevOps, Networking, Bridge, Linux
 
 Description: Learn how to create and configure bridge networks in Podman for container-to-container communication.
 

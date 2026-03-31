@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, WinRM, Window, Infrastructure as Code
+Tags: OpenTofu, Provisioner, WinRM, Window, Infrastructure as Code
 
 Description: Learn how to configure WinRM connection blocks in OpenTofu to authenticate provisioners to Windows remote resources for file transfers and command execution.
 

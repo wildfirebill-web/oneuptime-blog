@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Manifest, Multi-Architecture
+Tags: Podman, Container, DevOps, Manifest, Multi-Architecture
 
 Description: Learn how to add architecture-specific container images to a Podman manifest list, including local images, remote images, and images with specific platform annotations.
 

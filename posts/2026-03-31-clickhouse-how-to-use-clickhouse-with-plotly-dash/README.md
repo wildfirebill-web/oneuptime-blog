@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Plotly, Dash, Python, Data Visualization, Dashboard
+Tags: ClickHouse, Plotly, DASH, Python, Data Visualization, Dashboard
 
 Description: Connect Plotly Dash to ClickHouse to build interactive, production-grade analytical dashboards with callbacks and real-time chart updates.
 

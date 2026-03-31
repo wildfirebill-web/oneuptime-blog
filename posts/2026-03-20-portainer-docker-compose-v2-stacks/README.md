@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Docker Compose, Stacks, DevOps
+Tags: Portainer, Docker, Docker Compose, Stack, DevOps
 
 Description: Learn how to leverage Docker Compose v2 syntax features in your Portainer stacks for modern container deployments.
 

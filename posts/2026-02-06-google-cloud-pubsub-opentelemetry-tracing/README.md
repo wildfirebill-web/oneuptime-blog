@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Google Cloud Pub/Sub, Tracing, Distributed Systems, Messaging
+Tags: OpenTelemetry, Google Cloud Pub/Sub, Tracing, Distributed System, Messaging
 
 Description: Learn how to trace messages through Google Cloud Pub/Sub using OpenTelemetry for end-to-end visibility across publishers and subscribers.
 

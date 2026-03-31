@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Logging, Metrics, Observability, Loki
+Tags: Logging, Metric, Observability, Loki
 
 Description: Learn to create log metrics generation for deriving metrics from log data.
 

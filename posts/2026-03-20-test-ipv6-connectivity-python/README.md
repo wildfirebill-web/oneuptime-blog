@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Testing, Connectivity, Networks, Unittest
+Tags: Python, IPv6, Testing, Connectivity, Network, Unittest
 
 Description: Test IPv6 network connectivity in Python applications using unit tests, integration tests, and network reachability checks.
 

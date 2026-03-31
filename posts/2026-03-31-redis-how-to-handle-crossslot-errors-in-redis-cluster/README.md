@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, CROSSSLOT, Hash Tags, Multi-Key Operations
+Tags: Redis, Cluster, CROSSSLOT, Hash Tag, Multi-Key Operations
 
 Description: Learn why Redis Cluster throws CROSSSLOT errors for multi-key operations and how to fix them using hash tags and key redesign strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Functions, Lua, Redis 7, Commands
+Tags: Redis, Function, Lua, Redis 7, Command
 
 Description: Learn how to use FUNCTION LOAD in Redis 7.0+ to register Lua function libraries that persist across restarts and provide organized, named callable functions.
 

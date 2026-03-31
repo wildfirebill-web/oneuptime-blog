@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Replication, Source-Replica, High Availability, Administration
+Tags: MySQL, Replication, Source-Replica, High Availability, Administration
 
 Description: Learn how to configure MySQL source-replica (master-slave) replication step by step, including binary log setup, snapshot transfer, and replica configuration.
 

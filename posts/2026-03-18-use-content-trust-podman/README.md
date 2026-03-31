@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Content Trust, Image Verification
+Tags: Podman, Container, DevOps, Security, Content Trust, Image Verification
 
 Description: Learn how to enable and use content trust in Podman to ensure that only verified and trusted container images are pulled and run.
 

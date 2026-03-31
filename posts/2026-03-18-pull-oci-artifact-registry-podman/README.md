@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OCI Artifacts, Registry, Pull
+Tags: Podman, Container, DevOps, OCI Artifacts, Registry, Pull
 
 Description: Learn how to pull OCI artifacts from remote registries into your local Podman artifact store.
 

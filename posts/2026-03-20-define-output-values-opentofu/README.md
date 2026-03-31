@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Output, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to defining and using output values in OpenTofu to expose infrastructure information after deployment.
 

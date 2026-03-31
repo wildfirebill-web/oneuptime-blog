@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Operations, Scalability, Node Management
+Tags: Redis, Cluster, Operation, Scalability, Node Management
 
 Description: Learn how to add new primary and replica nodes to a running Redis Cluster and safely remove nodes by migrating their slots and using CLUSTER FORGET.
 

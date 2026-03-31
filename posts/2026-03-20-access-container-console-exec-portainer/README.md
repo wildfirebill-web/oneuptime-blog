@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Console, Exec, Shell
+Tags: Portainer, Docker, Console, EXEC, Shell
 
 Description: Open an interactive shell session inside a running Docker container directly from the Portainer web interface.
 

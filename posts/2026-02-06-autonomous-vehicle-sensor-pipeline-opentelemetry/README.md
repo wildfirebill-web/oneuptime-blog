@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Autonomous Vehicles, Sensor Fusion, Real-Time Processing, Tracing
+Tags: OpenTelemetry, Autonomous Vehicle, Sensor Fusion, Real-Time Processing, Tracing
 
 Description: Trace autonomous vehicle sensor data processing pipelines with OpenTelemetry to monitor lidar, camera, and radar fusion latency and throughput.
 

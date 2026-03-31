@@ -1,6 +1,6 @@
 # How to Configure Health-Based Load Balancing in Istio
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Load Balancing, Health Check, Kubernetes, Outlier Detection
 

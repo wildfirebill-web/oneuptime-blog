@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Fleet, GitOps, Environments, Kubernetes
+Tags: Rancher, Fleet, GitOps, Environment, Kubernetes
 
 Description: Guide to configuring Rancher Fleet for deploying to multiple environments like dev, staging, and production.
 

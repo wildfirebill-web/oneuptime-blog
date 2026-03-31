@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Workloads
+Tags: Rancher, Kubernetes, Workload
 
 Description: Learn how to configure CPU and memory resource requests and limits for workloads in Rancher to ensure proper resource allocation and cluster stability.
 

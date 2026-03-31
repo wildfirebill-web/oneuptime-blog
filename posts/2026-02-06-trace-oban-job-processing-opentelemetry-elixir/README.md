@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Elixir, Oban, Job Processing, Background Jobs
+Tags: OpenTelemetry, Elixir, Oban, Job Processing, Background Job
 
 Description: Implement comprehensive OpenTelemetry tracing for Oban background jobs to monitor job execution, retries, and performance in Elixir applications.
 

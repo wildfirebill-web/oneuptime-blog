@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Pi-hole, DNS, Ad Blocker, Networks, Tutorial
+Tags: Ubuntu, Pi-hole, DNS, Ad Blocker, Network, Tutorial
 
 Description: Complete guide to installing Pi-hole network-wide ad blocking on Ubuntu.
 

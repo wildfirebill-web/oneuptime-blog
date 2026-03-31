@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Testing, Variables, Precedence, Debugging
+Tags: Ansible, Testing, Variable, Precedence, Debugging
 
 Description: Write tests that verify Ansible variable precedence behavior across inventory, group vars, host vars, and extra vars.
 

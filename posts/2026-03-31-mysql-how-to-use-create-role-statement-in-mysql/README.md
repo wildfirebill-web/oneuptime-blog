@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Roles, Security, Access Control, Privileges
+Tags: MySQL, Role, Security, Access Control, Privilege
 
 Description: Learn how to use the CREATE ROLE statement in MySQL 8.0 to define reusable privilege sets that simplify user access management.
 

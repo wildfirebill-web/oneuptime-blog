@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, Source Controller, Disk Space, Storage, Persistent Volumes
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, Source Controller, Disk Space, Storage, Persistent Volume
 
 Description: Learn how to diagnose and fix disk space exhaustion in the Flux Source Controller caused by artifact accumulation, large repositories, and storage misconfiguration.
 

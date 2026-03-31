@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, WiredTiger, B-Tree, Storage Engine, Internals
+Tags: MongoDB, WiredTiger, B-Tree, Storage Engine, Internal
 
 Description: Understand how WiredTiger uses B-tree data structures to store MongoDB collections and indexes, and how this affects query performance and write amplification.
 

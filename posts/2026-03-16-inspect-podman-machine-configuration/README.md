@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps
 
 Description: Learn how to inspect and examine Podman machine configurations including resource allocations, network settings, and runtime parameters.
 

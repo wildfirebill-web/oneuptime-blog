@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Middleware, WebAssembly, Wasm, HTTP
+Tags: Dapr, Middleware, WebAssembly, WASM, HTTP
 
 Description: Learn how to configure the Dapr Wasm middleware to run custom request and response transformation logic compiled to WebAssembly in the Dapr HTTP pipeline.
 

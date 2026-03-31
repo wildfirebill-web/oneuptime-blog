@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, System Design, Rate Limiter, Interview, Lua
 
-Description: A step-by-step guide to designing a Redis-backed rate limiter in a system design interview, covering fixed window, sliding window, and token bucket algorithms.
+Description: A step-by-step guide to designing a Redis-backed rate limiter in a system design interview, covering fixed window, sliding window, and token bucket.
 
 ---
 

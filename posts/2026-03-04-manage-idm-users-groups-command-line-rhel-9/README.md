@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RHEL, IdM, Identity Management, Users, Groups, CLI, Linux
+Tags: RHEL, IdM, Identity Management, Users, Group, CLI, Linux
 
 Description: Learn how to create, modify, and manage users and groups in Red Hat Identity Management from the command line on RHEL 9.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Pod Scheduling, Control Plane, Kubernetes, Tolerations
+Tags: Talos Linux, Pod Scheduling, Control Plane, Kubernetes, Toleration
 
 Description: Learn multiple approaches to scheduling pods on Talos Linux control plane nodes using tolerations, taints, and cluster configuration.
 

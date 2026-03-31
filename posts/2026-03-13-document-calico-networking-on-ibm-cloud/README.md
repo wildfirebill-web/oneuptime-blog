@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, IBM Cloud, Documentation, Operations
+Tags: Calico, Kubernetes, Networking, IBM Cloud, Documentation, Operation
 
 Description: How to create operational documentation for Calico networking on IBM Cloud, covering IKS managed policy boundaries, VPC network dependencies, and runbooks for IBM Cloud-specific operations.
 

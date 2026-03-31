@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, Flatten, Data Structures, Collections, Infrastructure as Code
+Tags: OpenTofu, Terraform, HCL, Flatten, Data Structure, Collection, Infrastructure as Code
 
 Description: Learn how to use OpenTofu's flatten() function and for expressions to collapse nested lists and complex data structures into flat collections for use with for_each and dynamic blocks.
 

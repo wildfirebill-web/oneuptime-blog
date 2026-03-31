@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Monitoring, Datadog, Metrics, Observability
+Tags: Flux CD, GitOps, Kubernetes, Monitoring, Datadog, Metric, Observability
 
 Description: Learn how to integrate Flux CD with Datadog to monitor reconciliation metrics, controller health, and GitOps pipeline performance in your Datadog dashboards.
 

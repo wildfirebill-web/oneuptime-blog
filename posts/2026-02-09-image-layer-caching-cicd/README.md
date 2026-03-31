@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CI/CD, Docker, Caching, Performance, Images
+Tags: CI/CD, Docker, Caching, Performance, Image
 
 Description: Learn how to optimize CI/CD pipelines with container image layer caching for faster builds.
 

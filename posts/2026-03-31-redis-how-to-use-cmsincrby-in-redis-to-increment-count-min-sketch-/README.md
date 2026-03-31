@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Count-Min Sketch, RedisBloom, Commands, NoSql
+Tags: Redis, Count-Min Sketch, RedisBloom, Command, NoSQL
 
 Description: Learn how to use CMS.INCRBY in Redis to increment frequency counts for one or more items in a Count-Min Sketch for stream frequency estimation.
 

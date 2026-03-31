@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Internal Load Balancer, Networking, OpenTofu, Infrastructure, Microservices
+Tags: GCP, Internal Load Balancer, Networking, OpenTofu, Infrastructure, Microservice
 
 Description: Learn how to create GCP Internal Load Balancers with OpenTofu for distributing traffic between backend services within a VPC without internet exposure.
 

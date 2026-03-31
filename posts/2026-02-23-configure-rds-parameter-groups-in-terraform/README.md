@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, RDS, Parameter Groups, Database Tuning
+Tags: Terraform, AWS, RDS, Parameter Group, Database Tuning
 
 Description: A deep dive into creating and managing RDS parameter groups with Terraform, covering engine-specific tuning, apply methods, lifecycle management, and common configuration patterns.
 

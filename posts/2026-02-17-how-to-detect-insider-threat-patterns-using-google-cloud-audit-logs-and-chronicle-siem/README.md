@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Chronicle SIEM, Audit Logs, Security, Insider Threats
+Tags: GCP, Chronicle SIEM, Audit Log, Security, Insider Threats
 
 Description: Use Google Cloud Audit Logs with Chronicle SIEM to detect insider threat patterns including data exfiltration, privilege abuse, and unauthorized access.
 

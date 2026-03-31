@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Signature Verification, GPG
+Tags: Podman, Container, DevOps, Security, Signature Verification, GPG
 
 Description: Learn how to verify container image signatures in Podman to ensure images are authentic and untampered before running them.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SLAAC, Linux, Verification, IPv6, ip command, Diagnostics
+Tags: SLAAC, Linux, Verification, IPv6, ip command, Diagnostic
 
 Description: Verify that SLAAC is working correctly on Linux by examining address states, checking received prefixes, viewing default routes, and capturing Router Advertisement messages.
 

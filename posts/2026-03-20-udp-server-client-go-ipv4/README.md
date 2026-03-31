@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, UDP, Sockets, IPv4, Networking, Datagram
+Tags: Go, UDP, Socket, IPv4, Networking, Datagram
 
 Description: Learn how to create a UDP server and client in Go using IPv4 with the net package, including reading sender addresses and sending replies.
 

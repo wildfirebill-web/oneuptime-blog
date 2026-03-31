@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Distributed Systems, Conflict Resolution, Database, Replication
+Tags: Distributed System, Conflict Resolution, Database, Replication
 
 Description: Learn how to implement last-write-wins conflict resolution strategy.
 

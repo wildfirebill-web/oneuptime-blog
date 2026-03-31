@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Array Operators, $in Expression, Database
+Tags: MongoDB, Aggregation, Array Operator, $in Expression, Database
 
 Description: Learn how to use the $in aggregation expression in MongoDB to check whether a value exists within an array, returning a boolean result for use in conditions.
 

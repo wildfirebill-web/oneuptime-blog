@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Search, Logs, Full-Text Search, Observability
+Tags: Elasticsearch, Search, Log, Full-Text Search, Observability
 
 Description: A practical guide to getting started with Elasticsearch for log search including index management, mappings, and queries.
 

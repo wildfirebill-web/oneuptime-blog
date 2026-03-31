@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redisearch, Elasticsearch, Full-Text Search, Search Engine, Performance
+Tags: RediSearch, Elasticsearch, Full-Text Search, Search Engine, Performance
 
 Description: A detailed comparison of RediSearch and Elasticsearch covering indexing, analyzers, aggregations, performance, and operational overhead.
 

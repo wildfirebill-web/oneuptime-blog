@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Variables, Infrastructure as Code, DevOps
+Tags: Terraform, HCL, Variable, Infrastructure as Code, DevOps
 
 Description: Learn how to reference input variables throughout your Terraform configuration using the var prefix, including in resources, modules, locals, and expressions.
 

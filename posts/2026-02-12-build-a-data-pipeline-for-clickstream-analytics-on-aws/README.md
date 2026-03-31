@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Clickstream Analytics, Data Pipelines, Kinesis, S3, Athena, Redshift, ETL
+Tags: AWS, Clickstream Analytics, Data Pipeline, Kinesis, S3, Athena, Redshift, ETL
 
 Description: Build a real-time clickstream analytics pipeline on AWS that captures, processes, and analyzes user behavior at scale
 

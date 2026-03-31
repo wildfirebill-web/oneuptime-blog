@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, CSI, Storage, Drivers, Cloud Native
+Tags: Kubernetes, CSI, Storage, Driver, Cloud Native
 
 Description: A guide to Kubernetes Container Storage Interface (CSI) drivers covering architecture, popular drivers, and selection criteria.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Templates, DevOps
+Tags: Portainer, Docker, Stack, Template, DevOps
 
 Description: Learn how to create reusable custom app templates in Portainer that teams can deploy with one click and customizable parameters.
 

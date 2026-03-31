@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, PostgreSQL, Export, Data Transfer, postgresql Table Function
+Tags: ClickHouse, PostgreSQL, Export, Data Transfer, PostgreSQL Table Function
 
 Description: Learn how to export ClickHouse query results to PostgreSQL using the postgresql table function and custom ETL scripts for cross-database data transfers.
 

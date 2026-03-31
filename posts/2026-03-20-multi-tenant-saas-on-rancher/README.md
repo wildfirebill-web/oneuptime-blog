@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Multi-Tenant, SaaS, Kubernetes, Isolation, RBAC, Namespaces
+Tags: Rancher, Multi-Tenant, SaaS, Kubernetes, Isolation, RBAC, Namespace
 
 Description: Build a multi-tenant SaaS platform on Rancher with namespace-per-tenant isolation, tenant-specific resource quotas, network policies, and automated tenant provisioning for software-as-a-service...
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, DigitalOcean, Droplets, Cloud Infrastructure, Infrastructure as Code
+Tags: OpenTofu, DigitalOcean, Droplet, Cloud Infrastructure, Infrastructure as Code
 
 Description: Learn how to provision DigitalOcean Droplets using OpenTofu with the DigitalOcean provider, including SSH keys, user data, and tagging.
 

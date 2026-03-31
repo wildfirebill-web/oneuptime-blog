@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, FROM, Base Images, Multi-Stage Builds
+Tags: Podman, Containerfile, FROM, Base Images, Multi-Stage Build
 
 Description: Master the FROM instruction in Podman Containerfiles to choose optimal base images, leverage multi-stage builds, and create secure, minimal container images.
 

@@ -1,6 +1,6 @@
 # How to Tune MongoDB readConcern for Consistency
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Read Concern, Consistency, Replication, Transaction
 

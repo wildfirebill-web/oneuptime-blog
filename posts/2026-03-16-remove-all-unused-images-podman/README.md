@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Cleanup, Storage
+Tags: Podman, Container, DevOps, Container Image, Cleanup, Storage
 
 Description: Learn how to identify and remove all unused container images with Podman to reclaim disk space and keep your image store clean.
 

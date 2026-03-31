@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Str To Date, Date Parsing, Date Functions, Sql
+Tags: MySQL, Str To Date, Date Parsing, Date Function, SQL
 
 Description: Learn how to use MySQL's STR_TO_DATE() function to parse date and time strings with custom format specifiers into proper DATE or DATETIME values.
 

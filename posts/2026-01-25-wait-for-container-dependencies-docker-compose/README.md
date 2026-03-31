@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Docker Compose, DevOps, Troubleshooting, Microservices
+Tags: Docker, Docker Compose, DevOps, Troubleshooting, Microservice
 
 Description: Learn how to properly handle container startup order and wait for dependencies like databases to be ready before starting your application in Docker Compose.
 

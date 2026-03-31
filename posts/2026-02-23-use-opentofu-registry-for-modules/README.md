@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, Registry, Infrastructure as Code
+Tags: OpenTofu, Terraform, Module, Registry, Infrastructure as Code
 
 Description: Learn how to find, evaluate, and use modules from the OpenTofu Registry to accelerate infrastructure development and follow community best practices.
 

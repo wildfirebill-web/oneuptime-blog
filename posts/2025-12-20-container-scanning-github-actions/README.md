@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Security, Container Scanning, Docker, DevSecOps
+Tags: GitHub Action, CI/CD, Security, Container Scanning, Docker, DevSecOps
 
 Description: Learn how to set up automated container scanning in GitHub Actions to detect vulnerabilities in your Docker images before they reach production using Trivy, Grype, and native GitHub security features.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL Comments, Query Hints, Best Practices, Documentation
+Tags: MySQL, SQL Comments, Query Hint, Best Practice, Documentation
 
 Description: Learn the different comment styles in MySQL, how to use them for documentation and conditional code, and how optimizer hints use the comment syntax.
 

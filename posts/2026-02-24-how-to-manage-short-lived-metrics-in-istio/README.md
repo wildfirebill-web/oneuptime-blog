@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Metrics, Prometheus, Kubernetes, Staleness
+Tags: Istio, Metric, Prometheus, Kubernetes, Staleness
 
 Description: Handle short-lived metrics from ephemeral pods, canary deployments, and autoscaled services in Istio to avoid stale data and broken dashboards.
 

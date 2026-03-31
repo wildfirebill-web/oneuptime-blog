@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Virtual Machine, Containers, Linux, DevOps, QEMU, VirtualBox, VMware
+Tags: Podman, Virtual Machine, Container, Linux, DevOps, QEMU, VirtualBox, VMware
 
 Description: Install and run Podman inside virtual machines using QEMU/KVM, VirtualBox, and VMware, covering VM setup, networking, shared folders, and performance tuning.
 

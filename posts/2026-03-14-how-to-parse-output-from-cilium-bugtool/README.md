@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Bugtool, Parsing, Diagnostics, Scripting, Automation
+Tags: Cilium, Bugtool, Parsing, Diagnostic, Scripting, Automation
 
 Description: Learn how to extract, parse, and analyze the diagnostic data collected by cilium-bugtool, building automated analysis scripts for faster incident resolution.
 

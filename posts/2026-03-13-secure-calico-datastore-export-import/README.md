@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Operations
+Tags: Calico, Kubernetes, Networking, Operation
 
 Description: Secure Calico datastore export and import operations by encrypting backup files, controlling access to export artifacts, and auditing all datastore migration operations.
 

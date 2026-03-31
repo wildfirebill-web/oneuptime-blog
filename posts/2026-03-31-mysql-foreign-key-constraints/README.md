@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, Foreign Key, Constraint, Referential Integrity, InnoDB
+Tags: MySQL, SQL, DDL, Foreign Key, Constraint, InnoDB
 
 Description: Create MySQL tables with foreign key constraints to enforce referential integrity, understand ON DELETE and ON UPDATE actions, and manage FK relationships.
 

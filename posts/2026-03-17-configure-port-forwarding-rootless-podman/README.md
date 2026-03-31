@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Rootless, Port Forwarding
+Tags: Podman, Container, DevOps, Networking, Rootless, Port Forwarding
 
 Description: Learn how to configure port forwarding in rootless Podman including privileged port binding and network backend options.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Podman, Environments, Rootless Containers
+Tags: Portainer, Podman, Environment, Rootless Containers
 
 Description: Connect Portainer to a Podman environment for managing rootless containers and pods via the Portainer web interface.
 

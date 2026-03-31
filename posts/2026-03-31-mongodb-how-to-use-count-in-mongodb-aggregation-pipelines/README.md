@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $count, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $count, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $count aggregation stage to count the number of documents passing through a pipeline and return the result as a named field.
 

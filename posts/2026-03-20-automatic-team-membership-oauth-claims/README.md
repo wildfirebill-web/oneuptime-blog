@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, OAuth, Teams, Claims, Business Edition
+Tags: Portainer, OAuth, Team, Claims, Business Edition
 
 Description: Configure Portainer to automatically assign users to teams based on OAuth claims (groups) returned by your identity provider.
 

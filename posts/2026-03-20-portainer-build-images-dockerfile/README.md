@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Dockerfile, DevOps
+Tags: Portainer, Docker, Image, Dockerfile, DevOps
 
 Description: Learn how to build Docker images directly from a Dockerfile using Portainer's built-in image build feature.
 

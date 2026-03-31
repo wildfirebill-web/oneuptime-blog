@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Remote State, Data Source, Outputs, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Remote State, Data Source, Output, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to read output values from another OpenTofu configuration's remote state using the terraform_remote_state data source.
 

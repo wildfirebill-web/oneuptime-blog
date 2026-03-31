@@ -1,8 +1,8 @@
 # How to Back Up and Restore Dapr State Data
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, State management, Backup, Redis, Kubernetes
+Tags: Dapr, State Management, Backup, Redis, Kubernetes
 
 Description: Learn how to back up and restore Dapr state store data using Redis persistence, kubectl tools, and state migration scripts to protect stateful microservices.
 

@@ -1,6 +1,6 @@
 # How to Use ClickHouse Cloud vs Self-Hosted ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, ClickHouse Cloud, Self-Hosted, Deployment, DevOps
 

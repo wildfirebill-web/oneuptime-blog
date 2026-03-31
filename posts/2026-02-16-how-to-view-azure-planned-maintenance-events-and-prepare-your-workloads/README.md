@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Planned Maintenance, Service Health, High Availability, Operations, Azure Monitor, Infrastructure
+Tags: Azure, Planned Maintenance, Service Health, High Availability, Operation, Azure Monitor, Infrastructure
 
 Description: Learn how to find upcoming Azure planned maintenance events and prepare your workloads so updates do not cause unexpected downtime.
 

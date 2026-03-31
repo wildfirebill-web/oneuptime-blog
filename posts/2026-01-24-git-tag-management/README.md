@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Git, Version Control, DevOps, Release Management, Tags, CI/CD, Versioning
+Tags: Git, Version Control, DevOps, Release Management, Tag, CI/CD, Versioning
 
 Description: Learn how to create, list, push, delete, and manage Git tags for release versioning and deployment workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Tracing, Booking Systems, Reservations, Distributed Tracing, Observability
+Tags: OpenTelemetry, Tracing, Booking Systems, Reservation, Distributed Tracing, Observability
 
 Description: Learn how to instrument booking and reservation systems with OpenTelemetry for end-to-end tracing across availability checks, payments, and confirmations.
 

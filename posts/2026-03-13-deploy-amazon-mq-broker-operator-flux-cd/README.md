@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Amazon MQ, AWS, Message Queues, ACK
+Tags: Flux CD, Kubernetes, GitOps, Amazon MQ, AWS, Message Queue, ACK
 
 Description: Deploy Amazon MQ broker configuration on AWS using Flux CD and the AWS Controllers for Kubernetes (ACK) for GitOps-managed cloud-native messaging.
 

@@ -1,8 +1,8 @@
 # How to Use $setWindowFields for Window Functions in MongoDB
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Window function, Analytics, Pipeline
+Tags: MongoDB, Aggregation, Window Function, Analytics, Pipeline
 
 Description: Learn how to use MongoDB's $setWindowFields stage to compute running totals, moving averages, rankings, and cumulative values without collapsing documents.
 

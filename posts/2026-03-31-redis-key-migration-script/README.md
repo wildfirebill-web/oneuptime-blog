@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Migration, Script, Keys, Data Transfer
+Tags: Redis, Migration, Script, Key, Data Transfer
 
 Description: Migrate Redis keys between instances using DUMP/RESTORE, MIGRATE, and pattern-based SCAN without downtime or data loss.
 

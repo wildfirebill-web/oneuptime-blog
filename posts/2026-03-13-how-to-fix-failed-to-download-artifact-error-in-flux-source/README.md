@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Troubleshooting, Error Messages, Source Controller, Artifacts, OCI
+Tags: Flux, Kubernetes, GitOps, Troubleshooting, Error Messages, Source Controller, Artifact, OCI
 
 Description: Learn how to diagnose and fix the 'failed to download artifact' error in the Flux source-controller when pulling from Git, Helm, or OCI repositories.
 

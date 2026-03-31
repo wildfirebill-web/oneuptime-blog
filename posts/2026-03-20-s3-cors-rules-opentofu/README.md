@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, S3, CORS, Web Applications, Infrastructure as Code, Frontend
+Tags: OpenTofu, AWS, S3, CORS, Web Application, Infrastructure as Code, Frontend
 
 Description: Learn how to configure S3 CORS (Cross-Origin Resource Sharing) rules using OpenTofu to allow web browsers to make cross-origin requests to S3 for static assets and direct uploads.
 

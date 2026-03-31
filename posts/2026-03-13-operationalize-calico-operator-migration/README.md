@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Operator, Migration, Operations
+Tags: Calico, Kubernetes, Networking, Operator, Migration, Operation
 
 Description: Build a repeatable, documented operational process for migrating multiple Calico clusters from manifest to operator-based installation.
 

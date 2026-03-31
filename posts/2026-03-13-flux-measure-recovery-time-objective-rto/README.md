@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Disaster Recovery, RTO, SRE, Metrics
+Tags: Flux CD, Kubernetes, GitOps, Disaster Recovery, RTO, SRE, Metric
 
 Description: Measure and optimize Recovery Time Objective (RTO) for Flux CD managed cluster recovery, with tooling to track and improve your recovery performance over time.
 

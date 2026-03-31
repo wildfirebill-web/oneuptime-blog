@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Multi-Container, Architecture
+Tags: Podman, Container, DevOps, Pod, Multi-Container, Architecture
 
 Description: Learn how to deploy a complete multi-container application stack using a Podman pod.
 

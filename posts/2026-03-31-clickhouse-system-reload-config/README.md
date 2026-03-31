@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SYSTEM, Configuration, Reload
+Tags: ClickHouse, SQL, System, Configuration, Reload
 
 Description: Learn how SYSTEM RELOAD CONFIG reloads ClickHouse server configuration from config.xml and users.xml without requiring a server restart.
 

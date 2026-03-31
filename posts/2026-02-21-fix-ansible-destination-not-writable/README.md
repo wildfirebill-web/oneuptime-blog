@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Troubleshooting, Permissions, Linux, DevOps
+Tags: Ansible, Troubleshooting, Permission, Linux, DevOps
 
 Description: Fix Ansible destination not writable errors by resolving permission issues, directory creation, and become configuration.
 

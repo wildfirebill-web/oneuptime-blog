@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Database, Microservices, Connection Pooling, PostgreSQL, MySQL, Troubleshooting, Performance
+Tags: Database, Microservice, Connection Pooling, PostgreSQL, MySQL, Troubleshooting, Performance
 
 Description: A practical guide to diagnosing and resolving database connection issues in microservices architectures, covering connection pooling, timeouts, and resilience patterns.
 

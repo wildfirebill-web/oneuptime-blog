@@ -1,6 +1,6 @@
 # How to Install Multiple MySQL Instances on the Same Server
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Installation, Configuration, Linux, Database
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SQS, Event-Driven Architecture, Microservices, Message Queues, Serverless, Node.js, Python
+Tags: AWS, SQS, Event-Driven Architecture, Microservice, Message Queue, Serverless, Node.js, Python
 
 Description: Learn how to build event-driven architectures using Amazon SQS.
 

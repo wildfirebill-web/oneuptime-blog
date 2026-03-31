@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Memory usage, Key, Monitoring
+Tags: Redis, Memory, MEMORY USAGE, Key, Monitoring
 
 Description: Learn how to use MEMORY USAGE to measure the RAM consumed by individual Redis keys, including their value, overhead, and nested structures.
 

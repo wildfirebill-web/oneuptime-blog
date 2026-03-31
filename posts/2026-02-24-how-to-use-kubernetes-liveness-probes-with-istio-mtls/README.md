@@ -1,6 +1,6 @@
 # How to Use Kubernetes Liveness Probes with Istio mTLS
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Kubernetes, Health Check, mTLS, Service Mesh
 

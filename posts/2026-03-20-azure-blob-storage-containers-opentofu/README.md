@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Storage, OpenTofu, Terraform, Blob, Infrastructure
+Tags: Azure, Storage, OpenTofu, Terraform, BLOB, Infrastructure
 
 Description: Learn how to create and configure Azure Blob Storage containers with OpenTofu, including access tiers, versioning, and container-level settings.
 

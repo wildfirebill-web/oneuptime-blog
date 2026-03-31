@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Platform Engineering, Onboarding, Developer Experience, Metrics
+Tags: Platform Engineering, Onboarding, Developer Experience, Metric
 
 Description: Learn to build onboarding time tracking for measuring and reducing developer ramp-up time.
 

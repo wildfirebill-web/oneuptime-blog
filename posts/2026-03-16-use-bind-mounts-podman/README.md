@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Bind Mounts, Storage
+Tags: Podman, Container, DevOps, Volumes, Bind Mounts, Storage
 
 Description: Learn how to use bind mounts in Podman to map specific host files and directories into containers, with practical examples for development, testing, and production.
 

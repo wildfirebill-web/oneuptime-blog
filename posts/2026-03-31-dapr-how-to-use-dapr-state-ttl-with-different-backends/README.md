@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, State Management, TTL, Expiration, Redis, PostgreSQL, Microservices
+Tags: Dapr, State Management, TTL, Expiration, Redis, PostgreSQL, Microservice
 
 Description: Learn how to use Dapr's state TTL feature to automatically expire state entries across Redis, PostgreSQL, and Azure Cosmos DB backends with a unified API.
 

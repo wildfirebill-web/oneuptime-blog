@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Keyspace Notifications, Key Expiration, TTL, Events
+Tags: Redis, Keyspace Notification, Key Expiration, TTL, Event
 
 Description: Subscribe to Redis key expiration events using keyspace notifications to trigger application logic when keys with TTLs expire.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Monitoring, SRE
+Tags: Observability, Metric, Monitoring, SRE
 
 Description: Learn how to implement rate metrics for measuring throughput, requests per second, and change velocities in your monitoring systems.
 

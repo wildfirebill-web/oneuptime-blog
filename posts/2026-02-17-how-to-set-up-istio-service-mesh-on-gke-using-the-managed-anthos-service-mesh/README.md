@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, GKE, Istio, Anthos Service Mesh, Service Mesh, Kubernetes, Microservices
+Tags: GCP, GKE, Istio, Anthos Service Mesh, Service Mesh, Kubernetes, Microservice
 
 Description: A complete guide to setting up Istio-based service mesh on GKE using Google's managed Anthos Service Mesh for traffic management, security, and observability.
 

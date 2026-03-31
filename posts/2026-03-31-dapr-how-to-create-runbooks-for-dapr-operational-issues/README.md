@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Operations, Runbooks, Reliability, Sre
+Tags: Dapr, Operation, Runbook, Reliability, SRE
 
 Description: Build operational runbooks for common Dapr issues including sidecar injection failures, state store connectivity, and pub/sub lag.
 

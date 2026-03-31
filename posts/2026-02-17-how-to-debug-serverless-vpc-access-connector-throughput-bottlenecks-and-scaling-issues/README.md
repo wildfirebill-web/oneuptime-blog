@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Serverless VPC Access, Cloud Functions, Cloud Run, Networking
+Tags: GCP, Serverless VPC Access, Cloud Function, Cloud Run, Networking
 
 Description: Debug and resolve throughput bottlenecks and scaling issues with Serverless VPC Access connectors in Google Cloud for Cloud Functions and Cloud Run.
 

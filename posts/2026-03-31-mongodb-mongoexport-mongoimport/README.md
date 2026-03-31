@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Tool, Migration, Data, Operations
+Tags: MongoDB, Tool, Migration, Data, Operation
 
 Description: Learn how to use mongoexport and mongoimport to move MongoDB collection data as JSON or CSV for migrations, seeding, and cross-environment data transfers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WireGuard, Podman, VPN, Containers, Networking, Linux, Security
+Tags: WireGuard, Podman, VPN, Container, Networking, Linux, Security
 
 Description: Learn how to deploy WireGuard VPN inside a Podman container for a secure, lightweight, and easily reproducible VPN setup on any Linux host.
 

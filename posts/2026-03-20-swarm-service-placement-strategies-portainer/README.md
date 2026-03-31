@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Service Placement, Constraints, Infrastructure
+Tags: Portainer, Docker Swarm, Service Placement, Constraint, Infrastructure
 
 Description: Configure Docker Swarm service placement constraints and preferences to control where containers run across the cluster using Portainer's stack management.
 

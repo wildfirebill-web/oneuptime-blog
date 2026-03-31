@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Indexes, Performance, Query Optimization, Database
+Tags: PostgreSQL, Index, Performance, Query Optimization, Database
 
 Description: A practical guide to PostgreSQL indexing including B-tree, GIN, GiST indexes and how to identify missing indexes.
 

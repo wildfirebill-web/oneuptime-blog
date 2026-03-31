@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Debugging
+Tags: Podman, Container, DevOps, Pod, Debugging
 
 Description: Learn how to inspect Podman pods to view their configuration, network settings, and container details.
 

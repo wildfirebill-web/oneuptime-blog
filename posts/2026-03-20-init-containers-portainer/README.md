@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Init Containers, Kubernetes, DevOps
+Tags: Portainer, Docker, Init Container, Kubernetes, DevOps
 
 Description: Configure and deploy init containers in Portainer to run setup tasks before main application containers start.
 

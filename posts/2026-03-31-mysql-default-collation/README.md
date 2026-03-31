@@ -1,6 +1,6 @@
 # How to Set the Default Collation in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Configuration, Collation, Character Set, Database
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CI/CD, Security, Vulnerability Scanning
+Tags: Podman, Container, DevOps, CI/CD, Security, Vulnerability Scanning
 
 Description: Learn how to integrate container image vulnerability scanning into your CI/CD pipeline using Podman with tools like Trivy, Grype, and Syft.
 

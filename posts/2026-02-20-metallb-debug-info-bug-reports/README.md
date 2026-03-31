@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, Debugging, Bug Report, Logs
+Tags: Kubernetes, MetalLB, Debugging, Bug Report, Log
 
 Description: Learn what information to collect when filing MetalLB bug reports including logs, events, configuration dumps, and network state.
 

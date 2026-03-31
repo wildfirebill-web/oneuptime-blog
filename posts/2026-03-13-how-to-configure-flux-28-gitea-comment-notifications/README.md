@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Notifications, Gitea, Self-Hosted
+Tags: Flux, Kubernetes, GitOps, Notification, Gitea, Self-Hosted
 
 Description: Learn how to configure Flux 2.8 to post deployment status comments on Gitea pull requests for self-hosted GitOps workflows.
 

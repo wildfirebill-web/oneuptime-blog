@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Monitoring
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Monitoring
 
 Description: Learn how to configure ArgoCD notification triggers based on sync status changes to alert teams when applications go OutOfSync, sync successfully, or fail during sync operations.
 

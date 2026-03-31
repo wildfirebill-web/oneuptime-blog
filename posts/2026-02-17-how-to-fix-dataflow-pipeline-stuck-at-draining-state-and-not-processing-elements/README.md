@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Dataflow, Apache Beam, Data Pipelines, Google Cloud
+Tags: GCP, Dataflow, Apache Beam, Data Pipeline, Google Cloud
 
 Description: Troubleshoot and resolve Google Cloud Dataflow pipelines that get stuck in the draining state and stop processing elements during shutdown.
 

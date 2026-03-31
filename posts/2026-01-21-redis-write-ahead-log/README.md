@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Write-Ahead Log, WAL, Event Sourcing, Durability, Recovery, Streams
+Tags: Redis, Write-Ahead Log, WAL, Event Sourcing, Durability, Recovery, Stream
 
 Description: A comprehensive guide to implementing Redis as a write-ahead log for event sourcing, crash recovery, and durable event replay patterns.
 

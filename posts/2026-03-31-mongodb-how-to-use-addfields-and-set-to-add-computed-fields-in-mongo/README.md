@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $addFields, $set, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $addFields, $set, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $addFields and $set aggregation stages to append computed fields to documents without removing existing fields.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Object Storage, S3, Kubernetes, Rgw
+Tags: Rook, Ceph, Object Storage, S3, Kubernetes, RGW
 
 Description: Learn how to create a CephObjectStore CRD in Rook to deploy an S3-compatible object storage endpoint backed by Ceph RADOS Gateway.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Learning, Sample, Quickstart, Tutorial
+Tags: Dapr, Learning, SAMPLE, Quickstart, Tutorial
 
 Description: Learn how to use the official Dapr quickstarts and samples repositories to understand building blocks through runnable, hands-on examples.
 

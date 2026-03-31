@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cloud Vision API, Image Processing, Serverless, Cloud Storage
+Tags: GCP, Cloud Function, Cloud Vision API, Image Processing, Serverless, Cloud Storage
 
 Description: A step-by-step guide to building a serverless image processing pipeline on GCP using Cloud Functions for orchestration and Cloud Vision API for analysis.
 

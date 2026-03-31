@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Installation, Linux, Containers, DevOps, Debian
+Tags: Podman, Installation, Linux, Container, DevOps, Debian
 
 Description: Learn how to install and configure Podman on Debian, including setting up rootless containers and verifying your installation.
 

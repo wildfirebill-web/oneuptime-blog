@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Synonyms, Search, Text Analysis, Relevance, NLP
+Tags: Elasticsearch, Synonym, Search, Text Analysis, Relevance, NLP
 
 Description: A comprehensive guide to implementing synonym search in Elasticsearch, covering synonym filters, synonym files, expand vs contract modes, and best practices for improving search recall.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Consul, Service Discovery, HashiCorp, Microservices, Infrastructure as Code
+Tags: OpenTofu, Consul, Service Discovery, HashiCorp, Microservice, Infrastructure as Code
 
 Description: Learn how to deploy HashiCorp Consul on AWS with OpenTofu and configure service discovery, health checks, and DNS for microservices architectures.
 

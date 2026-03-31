@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, SETBIT, GETBIT, Bitmap, Bit, String, Command
+Tags: Redis, SETBIT, GETBIT, Bitmap, BIT, String, Command
 
 Description: Learn how to use Redis SETBIT and GETBIT to store and read individual bits within a string, enabling space-efficient bitmaps for tracking and analytics.
 

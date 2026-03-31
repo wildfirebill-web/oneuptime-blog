@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Systemd, Images
+Tags: Podman, Container, DevOps, Quadlet, Systemd, Image
 
 Description: Learn how to create a Quadlet .image unit file to manage container image pulling and tagging as a systemd resource.
 

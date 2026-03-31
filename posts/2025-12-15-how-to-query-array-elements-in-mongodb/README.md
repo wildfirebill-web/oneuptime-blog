@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Arrays, Queries, Database, NoSQL
+Tags: MongoDB, Array, Queries, Database, NoSQL
 
 Description: Learn how to query array elements in MongoDB using various operators including $elemMatch, $all, $size, and positional operators for efficient array manipulation.
 

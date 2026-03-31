@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, IPv4, IPv6, Dual-Stack
+Tags: Podman, Container, DevOps, Networking, IPv4, IPv6, Dual-Stack
 
 Description: Learn how to configure dual-stack networking in Podman so containers have both IPv4 and IPv6 addresses.
 

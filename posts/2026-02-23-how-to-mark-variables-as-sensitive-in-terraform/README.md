@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Security, Variables, Infrastructure as Code, DevOps
+Tags: Terraform, Security, Variable, Infrastructure as Code, DevOps
 
 Description: Learn how to use the sensitive flag on Terraform variables to prevent secrets like passwords and API keys from appearing in plan output, logs, and the terminal.
 

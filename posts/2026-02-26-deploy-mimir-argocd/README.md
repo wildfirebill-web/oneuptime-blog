@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Mimir, Metrics
+Tags: ArgoCD, GitOps, Kubernetes, Mimir, Metric
 
 Description: Learn how to deploy Grafana Mimir for long-term metrics storage using ArgoCD with scalable configuration, multi-tenancy, and object storage backends.
 

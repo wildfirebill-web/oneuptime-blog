@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Postconditions, Custom Conditions, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, Postconditions, Custom Conditions, Infrastructure as Code, DevOps
 
 Description: A guide to adding postconditions to resources in OpenTofu to validate resource attributes after creation or modification.
 

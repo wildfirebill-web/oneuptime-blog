@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Lookup Plugins, Loops, Iterations
+Tags: Ansible, Lookup Plugins, Loop, Iteration
 
 Description: Learn how to use the Ansible items lookup plugin to iterate over lists and flatten nested structures in your playbook loops.
 

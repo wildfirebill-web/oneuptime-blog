@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, Error Handling, Status Codes, Error details, API Design, Microservices, Protocol Buffers
+Tags: gRPC, Error Handling, Status Code, Error details, API Design, Microservice, Protocol Buffer
 
 Description: Master gRPC error handling with rich error details, including status codes, error details proto, field violations, retry info, and localized error messages for better API experiences.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Chaos Engineering, Microservices, Resilience, Fault Injection, Testing, Site Reliability, Netflix, Gremlin, Observability
+Tags: Chaos Engineering, Microservice, Resilience, Fault Injection, Testing, Site Reliability, Netflix, Gremlin, Observability
 
 Description: A practical guide to implementing chaos engineering practices in microservices architectures to build resilient systems through controlled failure injection.
 

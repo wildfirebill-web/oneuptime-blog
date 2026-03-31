@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Build, Pub/Sub, Slack, Notifications, CI/CD, DevOps
+Tags: GCP, Cloud Build, Pub/Sub, Slack, Notification, CI/CD, DevOps
 
 Description: Set up real-time Cloud Build notifications using Google Pub/Sub and Slack webhooks so your team knows immediately when builds succeed or fail.
 

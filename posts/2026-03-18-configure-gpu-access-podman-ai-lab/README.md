@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, AI, GPU, NVIDIA, CUDA, Machine Learning, Hardware Acceleration
+Tags: Podman, Container, DevOps, AI, GPU, NVIDIA, CUDA, Machine Learning, Hardware Acceleration
 
 Description: Learn how to configure GPU passthrough for Podman AI Lab to accelerate AI model inference with NVIDIA and AMD GPUs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, VM Scale Sets, Spot Instances, Cost Optimization, Cloud Savings, Eviction Policies
+Tags: Azure, VM Scale Sets, Spot Instance, Cost Optimization, Cloud Savings, Eviction Policies
 
 Description: Learn how to use Azure Spot VMs with VM Scale Sets to reduce compute costs by up to 90% while handling eviction gracefully.
 

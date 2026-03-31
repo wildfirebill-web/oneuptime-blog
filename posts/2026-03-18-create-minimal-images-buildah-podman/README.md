@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Buildah, Minimal Images, Security, Optimization
+Tags: Podman, Container, DevOps, Buildah, Minimal Images, Security, Optimization
 
 Description: Learn how to create minimal, production-optimized container images using Buildah and Podman with multi-stage builds and layer optimization.
 

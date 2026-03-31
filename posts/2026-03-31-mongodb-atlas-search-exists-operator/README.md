@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas Search, Exists, Filter, Atlas
+Tags: MongoDB, Atlas Search, EXISTS, Filter, Atlas
 
 Description: Learn how to use the Atlas Search exists operator to find documents where a specific field is present and indexed, filtering out null or missing values.
 

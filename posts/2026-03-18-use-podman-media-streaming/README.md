@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Media Streaming, Jellyfin, Plex, Containers
+Tags: Podman, Media Streaming, Jellyfin, Plex, Container
 
 Description: Learn how to deploy self-hosted media streaming services like Jellyfin, Plex, and Navidrome using Podman containers for managing and streaming your personal media library.
 

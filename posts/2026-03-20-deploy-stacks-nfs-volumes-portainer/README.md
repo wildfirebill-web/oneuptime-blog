@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, NFS, Volumes, Storage, Stacks, Infrastructure
+Tags: Portainer, Docker, NFS, Volumes, Storage, Stack, Infrastructure
 
 Description: Configure Docker stacks with NFS-backed named volumes in Portainer to share persistent storage across multiple containers and hosts in your Docker Swarm cluster.
 

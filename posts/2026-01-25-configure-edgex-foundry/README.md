@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: EdgeX Foundry, IoT, Edge Computing, Microservices, Docker, Device Services, MQTT
+Tags: EdgeX Foundry, IoT, Edge Computing, Microservice, Docker, Device Services, MQTT
 
 Description: Learn how to configure EdgeX Foundry, the open-source IoT edge platform. Set up device services, configure data pipelines, implement rules engine, and integrate with cloud platforms.
 

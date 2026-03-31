@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Hot Reload, Components, Operations, Configuration
+Tags: Dapr, Hot Reload, Component, Operation, Configuration
 
 Description: Learn how to enable Dapr component hot reload so that changes to component configurations take effect without restarting your application or the Dapr sidecar.
 

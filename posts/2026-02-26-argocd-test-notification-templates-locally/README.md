@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Testing
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Testing
 
 Description: Learn how to test ArgoCD notification templates locally before deploying them, using the argocd-notifications CLI tool and mock application data to validate template rendering.
 

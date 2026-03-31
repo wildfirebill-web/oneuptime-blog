@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Aggregation, Security
 
-Description: Learn how to use MongoDB's $redact stage with $$PRUNE, $$DESCEND, and $$KEEP to recursively filter document fields based on access control conditions.
+Description: Learn how to use MongoDB $redact stage with $$PRUNE, $$DESCEND, and $$KEEP to recursively filter document fields based on access control conditions.
 
 ---
 

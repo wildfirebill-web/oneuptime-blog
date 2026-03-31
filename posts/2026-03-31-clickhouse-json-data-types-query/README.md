@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, JSON, Data Types, JSONExtract
+Tags: ClickHouse, SQL, JSON, Data Type, JSONExtract
 
 Description: Learn how to store and query JSON data in ClickHouse using String columns, JSONExtract functions, and the new JSON data type.
 

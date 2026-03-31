@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Storage, Monitoring, Administration
+Tags: Rook, Ceph, Health, Monitoring, Administration
 
-Description: Learn how to use ceph health detail to interpret cluster health checks, understand warning codes, and diagnose Ceph cluster issues systematically.
+Description: Master the ceph health detail command to get comprehensive cluster health information and understand every warning and error code Ceph reports.
 
 ---
 

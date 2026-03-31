@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, AI, Machine Learning, Model Serving, llama.cpp, API
+Tags: Podman, Container, DevOps, AI, Machine Learning, Model Serving, llama.cpp, API
 
 Description: Learn how to set up a local AI model serving infrastructure using Podman containers for private and cost-free inference.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kubernetes, Distributed Tracing, Observability, Microservices
+Tags: OpenTelemetry, Kubernetes, Distributed Tracing, Observability, Microservice
 
 Description: Learn how to trace pod-to-pod communication in Kubernetes using OpenTelemetry distributed tracing to debug latency and connectivity issues.
 

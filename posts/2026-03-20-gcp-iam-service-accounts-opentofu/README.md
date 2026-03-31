@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, IAM, Service Accounts, Google Cloud, Infrastructure as Code, Security
+Tags: OpenTofu, GCP, IAM, Service Account, Google Cloud, Infrastructure as Code, Security
 
 Description: Learn how to create and manage GCP IAM service accounts using OpenTofu to enable secure authentication for applications, VMs, and CI/CD pipelines running on Google Cloud.
 

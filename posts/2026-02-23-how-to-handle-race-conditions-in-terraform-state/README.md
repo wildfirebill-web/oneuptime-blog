@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, State Management, Race Conditions, Concurrency, DevOps, Infrastructure as Code
+Tags: Terraform, State Management, Race Condition, Concurrency, DevOps, Infrastructure as Code
 
 Description: Learn how to identify, prevent, and resolve race conditions in Terraform state when multiple users or pipelines run operations concurrently against shared infrastructure.
 

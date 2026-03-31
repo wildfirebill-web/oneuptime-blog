@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Tags, Registry
+Tags: Portainer, Docker, Image, Tag, Registry
 
 Description: Add or modify tags on Docker images in Portainer for version management and registry organization.
 

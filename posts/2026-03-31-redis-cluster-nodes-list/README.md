@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Monitoring, Operations, CLUSTER NODES
+Tags: Redis, Cluster, Monitoring, Operation, CLUSTER NODES
 
 Description: Learn how to use CLUSTER NODES in Redis to get a complete list of all nodes in the cluster with their IDs, addresses, roles, slot ranges, and replication relationships.
 

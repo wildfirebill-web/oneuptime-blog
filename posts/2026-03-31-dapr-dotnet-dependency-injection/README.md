@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Dotnet, Dependency Injection, Sdk, Microservice, Design Pattern
+Tags: Dapr, DotNet, Dependency Injection, SDK, Microservice, Design Pattern
 
 Description: Learn how to register and inject DaprClient, actor proxies, and Dapr-aware HttpClient using .NET's built-in dependency injection container.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, macOS, Containers, Virtualization, Troubleshooting
+Tags: Podman, macOS, Container, Virtualization, Troubleshooting
 
 Description: A comprehensive guide to diagnosing and fixing Podman machine startup failures on macOS, covering hypervisor issues, resource allocation, corrupted VMs, and Apple Silicon-specific problems.
 

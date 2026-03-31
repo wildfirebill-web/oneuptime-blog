@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Twilio, SMS, Bindings, Notifications
+Tags: Dapr, Twilio, SMS, Binding, Notification
 
 Description: Learn how to use the Dapr Twilio SMS output binding to send text messages from your microservices without embedding the Twilio SDK directly.
 

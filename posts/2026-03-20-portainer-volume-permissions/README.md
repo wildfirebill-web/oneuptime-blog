@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Troubleshooting, Volumes, Permissions, Self-Hosted
+Tags: Portainer, Docker, Troubleshooting, Volumes, Permission, Self-Hosted
 
 Description: Resolve permission denied errors on Portainer data volumes, fix ownership mismatches, and set up proper volume permissions for persistent Portainer storage.
 

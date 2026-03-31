@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Admin Socket, Commands, Debug, Operations
+Tags: Rook, Ceph, Admin Socket, Command, Debug, Operation
 
 Description: List and explore available commands on any Ceph daemon admin socket to discover diagnostics, configuration, and performance tools for live daemon inspection.
 

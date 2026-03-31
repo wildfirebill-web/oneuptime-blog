@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kubernetes, Schedulers, Extenders, Custom Scheduling
+Tags: Kubernetes, Scheduler, Extenders, Custom Scheduling
 
 Description: Learn to implement scheduler extenders for custom scheduling logic with filter, prioritize, and preempt functions for specialized workloads.
 

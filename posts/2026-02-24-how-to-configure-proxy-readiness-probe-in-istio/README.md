@@ -1,6 +1,6 @@
 # How to Configure Proxy Readiness Probe in Istio
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Readiness Probe, Health Check, Kubernetes, Sidecar Proxy
 

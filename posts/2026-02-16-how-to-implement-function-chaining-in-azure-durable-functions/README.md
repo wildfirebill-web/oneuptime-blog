@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Durable Functions, Function Chaining, Orchestration, Serverless, Azure, Workflow, Patterns
+Tags: Azure Durable Functions, Function Chaining, Orchestration, Serverless, Azure, Workflow, Pattern
 
 Description: Build sequential workflows with Azure Durable Functions using the function chaining pattern where each step depends on the output of the previous one.
 

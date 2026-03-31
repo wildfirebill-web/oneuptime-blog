@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPv4, Dual-Stack, Operations, Network Management
+Tags: IPv6, IPv4, Dual-Stack, Operation, Network Management
 
 Description: Learn the operational challenges of running dual-stack networks, including double the configuration surface, asymmetric routing risks, security policy gaps, and monitoring requirements.
 

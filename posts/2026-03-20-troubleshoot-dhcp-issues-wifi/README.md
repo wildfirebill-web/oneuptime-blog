@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, WiFi, Troubleshooting, Networks, IP Address
+Tags: DHCP, WiFi, Troubleshooting, Network, IP Address
 
 Description: Learn how to systematically troubleshoot DHCP failures on WiFi networks, from client-side failures to DHCP server configuration issues.
 

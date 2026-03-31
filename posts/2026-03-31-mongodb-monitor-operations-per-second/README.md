@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Opcounter, Performance, Metrics
+Tags: MongoDB, Monitoring, Opcounter, Performance, Metric
 
 Description: Learn how to monitor MongoDB operations per second using opcounters from serverStatus to track insert, query, update, delete, and command rates in real time.
 

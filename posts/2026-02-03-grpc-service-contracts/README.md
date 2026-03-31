@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, Protocol Buffers, API Design, Microservices, Backend, Distributed Systems
+Tags: gRPC, Protocol Buffer, API Design, Microservice, Backend, Distributed System
 
 Description: A practical guide to designing robust gRPC service contracts using Protocol Buffers, covering message design, RPC patterns, error handling, and API evolution strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, ServiceEntry, External Services, Debugging, Kubernetes
+Tags: Istio, ServiceEntry, External Service, Debugging, Kubernetes
 
 Description: How to troubleshoot connectivity issues to external services from within an Istio mesh including ServiceEntry configuration and outbound policies.
 

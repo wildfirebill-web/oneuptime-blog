@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Composite Alerts, Traces, Metrics, Logs
+Tags: OpenTelemetry, Composite Alerts, Trace, Metric, Log
 
 Description: Build composite alert rules that correlate traces, metrics, and logs from OpenTelemetry to reduce false positives.
 

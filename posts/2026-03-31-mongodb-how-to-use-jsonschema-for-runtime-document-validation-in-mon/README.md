@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $jsonSchema, Schema Validation, Data Quality, Collections, Node.js
+Tags: MongoDB, $jsonSchema, Schema Validation, Data Quality, Collection, Node.js
 
 Description: Learn how to use MongoDB's $jsonSchema validator to enforce document structure at the database level, ensuring data integrity on every insert and update.
 

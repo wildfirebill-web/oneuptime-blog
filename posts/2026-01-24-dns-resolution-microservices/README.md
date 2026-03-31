@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS Resolution, Microservices, Kubernetes, Service Discovery, Networking, Troubleshooting, CoreDNS
+Tags: DNS Resolution, Microservice, Kubernetes, Service Discovery, Networking, Troubleshooting, CoreDNS
 
 Description: A practical guide to diagnosing and fixing DNS resolution issues in microservices environments, covering common problems, debugging techniques, and configuration best practices.
 

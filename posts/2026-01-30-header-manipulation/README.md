@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: API Gateway, Headers, Transformation, Security
+Tags: API Gateway, Header, Transformation, Security
 
 Description: Learn how to manipulate request and response headers in API gateways.
 

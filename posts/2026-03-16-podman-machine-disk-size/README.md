@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps
 
 Description: Learn how to configure and manage disk size for a Podman machine, including setting initial size, monitoring usage, and handling disk space issues.
 

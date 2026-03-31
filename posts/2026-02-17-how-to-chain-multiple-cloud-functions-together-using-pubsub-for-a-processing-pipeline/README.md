@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Pub/Sub, Serverless, Data Pipelines
+Tags: GCP, Cloud Function, Pub/Sub, Serverless, Data Pipeline
 
 Description: Learn how to build a multi-step serverless processing pipeline by chaining Cloud Functions through Google Cloud Pub/Sub topics for reliable event-driven workflows.
 

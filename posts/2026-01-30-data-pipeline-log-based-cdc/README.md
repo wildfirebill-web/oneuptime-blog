@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Data Pipelines, CDC, Debezium, Real-Time
+Tags: Data Pipeline, CDC, Debezium, Real-Time
 
 Description: Learn to implement log-based CDC (Change Data Capture) for real-time data replication from database transaction logs.
 

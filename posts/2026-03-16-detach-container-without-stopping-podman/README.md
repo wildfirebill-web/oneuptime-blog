@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Attach, Detach Keys
+Tags: Podman, Container, DevOps, Container Attach, Detach Keys
 
 Description: Learn how to safely detach from an attached Podman container without stopping its main process using the detach key sequence.
 

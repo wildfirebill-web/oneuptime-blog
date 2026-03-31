@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Exactly-Once, Transactions, Consumer, Idempotent Processing, Distributed Systems
+Tags: Kafka, Exactly-Once, Transaction, Consumer, Idempotent Processing, Distributed System
 
 Description: A comprehensive guide to implementing exactly-once message processing in Apache Kafka consumers using transactions, idempotent producers, and proper offset management.
 

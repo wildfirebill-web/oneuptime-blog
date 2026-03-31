@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Cephadm, Migration, Kubernetes
+Tags: Rook, Ceph, cephadm, Migration, Kubernetes
 
 Description: Learn how to use cephadm adoption to convert an existing Ceph cluster to cephadm management without data loss or downtime.
 

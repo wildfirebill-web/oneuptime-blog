@@ -1,8 +1,8 @@
 # How to Move a Chunk Manually in MongoDB Sharding
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sharding, Chunk, Operations, Administration
+Tags: MongoDB, Sharding, Chunk, Operation, Administration
 
 Description: Learn how to manually move chunks between shards in MongoDB using moveChunk, when manual migration is necessary, and how to verify the move completed.
 

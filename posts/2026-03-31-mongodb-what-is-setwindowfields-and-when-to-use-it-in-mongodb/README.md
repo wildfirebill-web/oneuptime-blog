@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, SetWindowFields, Window Functions, Analytics
+Tags: MongoDB, Aggregation, SetWindowFields, Window Function, Analytics
 
 Description: Learn what MongoDB's $setWindowFields aggregation stage does and when to use it to compute running totals, moving averages, and rankings over ordered data sets.
 

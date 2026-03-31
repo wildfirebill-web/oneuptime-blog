@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, StatefulSets, Docker, Persistent Storage, DevOps
+Tags: Portainer, Kubernetes, StatefulSet, Docker, Persistent Storage, DevOps
 
 Description: Learn how to create and manage Kubernetes StatefulSets through Portainer for stateful applications like databases and message queues.
 

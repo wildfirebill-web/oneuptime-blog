@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, cAdvisor, Metrics, Prometheus, Monitoring
+Tags: Portainer, cAdvisor, Metric, Prometheus, Monitoring
 
 Description: Learn how to deploy cAdvisor as a Portainer stack to collect detailed container performance metrics, expose them to Prometheus, and create useful dashboards for your Docker environment.
 

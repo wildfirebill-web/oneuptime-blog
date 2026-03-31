@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Kubernetes, Finalizer, Cleanup, Troubleshooting
 
-Description: Learn how to identify and remove Rook finalizers from Kubernetes resources that are stuck in Terminating state during Rook-Ceph cluster removal.
+Description: Learn how to identify and remove Rook finalizers from Kubernetes resources stuck in Terminating state during Rook-Ceph cluster removal.
 
 ---
 

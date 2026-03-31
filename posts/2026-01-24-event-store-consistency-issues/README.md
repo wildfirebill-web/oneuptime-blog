@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Event Sourcing, Event Store, Consistency, CQRS, Distributed Systems, Data Integrity, Python
+Tags: Event Sourcing, Event Store, Consistency, CQRS, Distributed System, Data Integrity, Python
 
 Description: Learn how to diagnose and fix common event store consistency issues including ordering problems, duplicate events, and projection drift in event-sourced systems.
 

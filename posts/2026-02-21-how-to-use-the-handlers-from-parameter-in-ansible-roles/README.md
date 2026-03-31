@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Role, Handlers, Event-Driven Automation
+Tags: Ansible, Role, Handler, Event-Driven Automation
 
 Description: Learn how to use the handlers_from parameter in Ansible roles to load specific handler files for different service management scenarios.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Encoding, hex, bin, String Function
+Tags: ClickHouse, SQL, Encoding, HEX, bin, String Function
 
 Description: Learn how to use hex(), unhex(), bin(), and unbin() in ClickHouse to convert numbers and strings to hexadecimal or binary representations and decode them back.
 

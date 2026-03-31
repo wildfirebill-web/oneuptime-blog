@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, AOF, Persistence, Commands, Administration
+Tags: Redis, AOF, Persistence, Command, Administration
 
 Description: Learn how to use BGREWRITEAOF in Redis to compact the Append Only File by rewriting it in the background, reducing disk usage while maintaining data integrity.
 

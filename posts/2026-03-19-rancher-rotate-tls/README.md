@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Security, TLS, Certificates
+Tags: Rancher, Kubernetes, Security, TLS, Certificate
 
 Description: Learn how to rotate TLS certificates for the Rancher management server to maintain security and avoid certificate expiration.
 

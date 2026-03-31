@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Upgrade, Quincy, Reef, Operations
+Tags: Rook, Ceph, Upgrade, Quincy, Reef, Operation
 
 Description: Step-by-step guide to safely upgrading a Rook-managed Ceph cluster from Quincy (v17) to Reef (v18) with pre-upgrade checks and rollback procedures.
 

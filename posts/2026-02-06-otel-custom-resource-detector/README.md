@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Resource Detector, Custom SDK, Auto-Discovery, Environments
+Tags: OpenTelemetry, Resource Detector, Custom SDK, Auto-Discovery, Environment
 
 Description: Implement a custom OpenTelemetry resource detector that automatically discovers and populates deployment environment attributes from your infrastructure.
 

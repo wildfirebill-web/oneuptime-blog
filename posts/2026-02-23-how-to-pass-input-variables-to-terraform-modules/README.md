@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Variables, Infrastructure as Code, DevOps
+Tags: Terraform, Module, Variable, Infrastructure as Code, DevOps
 
 Description: Learn how to define and pass input variables to Terraform modules, including required and optional variables, complex types, validation rules, and best practices.
 

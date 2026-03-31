@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, DevOps
+Tags: ArgoCD, GitOps, Kubernetes, Notification, DevOps
 
 Description: A quick reference cheat sheet for ArgoCD notification templates covering Slack, email, webhooks, and custom Go template syntax for deployment alerts.
 

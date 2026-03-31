@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Transactions, ACID, Database, Data Consistency, Node.js
+Tags: MongoDB, Transaction, ACID, Database, Data Consistency, Node.js
 
 Description: Learn how to implement MongoDB transactions for ACID-compliant operations. This guide covers multi-document transactions, error handling, best practices, and real-world use cases.
 

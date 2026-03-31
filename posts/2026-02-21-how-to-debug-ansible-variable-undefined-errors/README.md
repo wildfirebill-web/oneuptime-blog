@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Debugging, Troubleshooting
+Tags: Ansible, Variable, Debugging, Troubleshooting
 
 Description: Learn how to systematically track down and fix undefined variable errors in Ansible playbooks with practical debugging strategies.
 

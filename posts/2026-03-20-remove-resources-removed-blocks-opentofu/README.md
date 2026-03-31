@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Removed, Resources, Refactoring, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Removed, Resource, Refactoring, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use removed blocks in OpenTofu to stop managing a resource without destroying it, keeping the infrastructure intact.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ruby on Rails, Elasticsearch, Search, Full-Text Search, Searchkick
+Tags: Ruby On Rail, Elasticsearch, Search, Full-Text Search, Searchkick
 
 Description: Learn how to integrate Rails with Elasticsearch using Searchkick for full-text search with indexing, querying, facets, and autocomplete.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, Microsoft Teams, Monitoring
+Tags: Flux CD, GitOps, Kubernetes, Notification, Microsoft Teams, Monitoring
 
 Description: Learn how to configure Flux CD's notification controller to send deployment and reconciliation alerts to Microsoft Teams channels using the Provider resource.
 

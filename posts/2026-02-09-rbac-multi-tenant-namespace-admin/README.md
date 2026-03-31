@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, RBAC, Multi-Tenancy, Security, Namespaces
+Tags: Kubernetes, RBAC, Multi-Tenancy, Security, Namespace
 
 Description: Learn how to implement namespace-scoped admin roles in multi-tenant Kubernetes clusters using RBAC, providing isolated administrative capabilities while maintaining cluster-wide security.
 

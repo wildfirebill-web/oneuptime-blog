@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, IoT, Kinesis, Data Pipelines, Infrastructure as Code
+Tags: OpenTofu, AWS, IoT, Kinesis, Data Pipeline, Infrastructure as Code
 
 Description: Learn how to build end-to-end IoT data pipelines from device ingestion through Kinesis, Lambda, and S3 using OpenTofu.
 

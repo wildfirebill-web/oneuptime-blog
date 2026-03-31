@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, File Mount, Security
+Tags: Podman, Container, DevOps, Secret, File Mount, Security
 
 Description: Learn how to mount Podman secrets as files inside containers for secure access to sensitive data.
 

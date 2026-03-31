@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Age, GPG, Key Management
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Age, GPG, Key Management
 
 Description: Learn how to configure SOPS with multiple encryption keys in Flux to enable redundant decryption and team-based secret management across your GitOps workflow.
 

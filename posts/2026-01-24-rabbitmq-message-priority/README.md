@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Message Queues, Priority Queue, Messaging, Backend, DevOps, Performance
+Tags: RabbitMQ, Message Queue, Priority Queue, Messaging, Backend, DevOps, Performance
 
 Description: Learn how to configure and use message priority in RabbitMQ to ensure critical messages are processed before less important ones.
 

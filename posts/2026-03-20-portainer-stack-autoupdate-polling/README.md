@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, GitOps, Auto-Update, DevOps
+Tags: Portainer, Docker, Stack, GitOps, Auto-Update, DevOps
 
 Description: Learn how to configure Portainer to automatically poll a Git repository and redeploy your stack when the Compose file changes.
 

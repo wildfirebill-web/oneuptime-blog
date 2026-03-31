@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Node Affinity, Tolerations, Kubernetes Scheduling
+Tags: Rook, Ceph, Node Affinity, Toleration, Kubernetes Scheduling
 
 Description: Learn how to configure node affinity, tolerations, and topology spread constraints for Rook-Ceph pods to control where storage daemons are scheduled.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NeuVector, Groups, Policy Management, Container Security, Kubernetes
+Tags: NeuVector, Group, Policy Management, Container Security, Kubernetes
 
 Description: Learn how to create and manage NeuVector security groups to organize containers and apply consistent policies across your Kubernetes workloads.
 

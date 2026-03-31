@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Custom Metrics, Observability, Monitoring, Instrumentation, Performance
+Tags: OpenTelemetry, Metric, Custom Metric, Observability, Monitoring, Instrumentation, Performance
 
 Description: Learn how to implement custom metrics in OpenTelemetry using counters, gauges, and histograms. This guide covers practical examples for Node.js and Python with best practices for metric design.
 

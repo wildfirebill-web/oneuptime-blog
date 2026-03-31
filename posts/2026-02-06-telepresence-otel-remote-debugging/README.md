@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Telepresence, Kubernetes, Remote Debugging, Distributed Systems
+Tags: OpenTelemetry, Telepresence, Kubernetes, Remote Debugging, Distributed System
 
 Description: Use Telepresence to intercept traffic from a remote Kubernetes cluster and debug services locally with full OpenTelemetry tracing.
 

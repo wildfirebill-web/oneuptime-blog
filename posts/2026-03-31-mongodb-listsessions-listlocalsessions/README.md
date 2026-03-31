@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Sessions, Security, $listSessions
+Tags: MongoDB, Aggregation, Session, Security, $listSessions
 
 Description: Learn how to use $listSessions and $listLocalSessions in MongoDB to inspect active client sessions, audit connections, and detect long-running or stale sessions.
 

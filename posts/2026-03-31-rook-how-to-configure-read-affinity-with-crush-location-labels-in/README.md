@@ -1,8 +1,8 @@
-# How to Configure Read Affinity with CRUSH Location Labels in Rook
+# How to Configure Read Affinity with CRUSH Location Labels in Rook CSI
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Read Affinity, Crush, Kubernetes, Performance
+Tags: Rook, Ceph, Read Affinity, CRUSH, Kubernetes, Performance
 
 Description: Configure Rook CSI read affinity using Kubernetes node CRUSH location labels to route RBD reads to the nearest OSD for improved latency and throughput.
 

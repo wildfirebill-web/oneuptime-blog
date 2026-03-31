@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, OCI, Container Runtime, Hooks, Lifecycle Management
+Tags: Kubernetes, OCI, Container Runtime, Hook, Lifecycle Management
 
 Description: Learn how to implement OCI runtime hooks to execute custom logic during container lifecycle events for monitoring, security enforcement, and integration with external systems in Kubernetes.
 

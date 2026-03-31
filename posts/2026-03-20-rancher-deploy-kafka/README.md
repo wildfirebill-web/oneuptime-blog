@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Kafka, Message Queues, Streaming, Strimzi
+Tags: Rancher, Kubernetes, Kafka, Message Queue, Streaming, Strimzi
 
 Description: Deploy Apache Kafka on Rancher-managed Kubernetes clusters using the Strimzi Kafka Operator for distributed event streaming and message processing.
 

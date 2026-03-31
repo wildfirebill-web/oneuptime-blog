@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, Authentication, Environment Variables, CLI, Security, DevOps
+Tags: AWS, Authentication, Environment Variable, CLI, Security, DevOps
 
 Description: Learn how to configure AWS SDK and CLI authentication using environment variables for local development and CI/CD pipelines.
 

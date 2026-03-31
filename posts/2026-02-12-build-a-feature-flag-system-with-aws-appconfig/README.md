@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Feature Flags, AppConfig, Lambda, DevOps
+Tags: AWS, Feature Flag, AppConfig, Lambda, DevOps
 
 Description: Build a production-ready feature flag system using AWS AppConfig with gradual rollouts, targeting rules, and automatic rollback on errors.
 

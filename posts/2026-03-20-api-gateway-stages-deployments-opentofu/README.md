@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, API Gateway, Stages, Deployment, Environments, Infrastructure as Code
+Tags: OpenTofu, AWS, API Gateway, Stage, Deployment, Environment, Infrastructure as Code
 
 Description: Learn how to manage API Gateway stages and deployments with OpenTofu to maintain separate environments (dev, staging, prod) and control API rollouts.
 

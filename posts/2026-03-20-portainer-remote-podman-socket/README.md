@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Podman, Remote, SSH, Containers
+Tags: Portainer, Podman, Remote, SSH, Container
 
 Description: Step-by-step guide to connecting Portainer to a Podman socket running on a remote host using SSH tunneling or TCP socket exposure.
 

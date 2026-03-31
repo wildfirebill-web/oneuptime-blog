@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Scale, Services, Operations
+Tags: Portainer, Docker Swarm, Scale, Service, Operation
 
 Description: Scale Docker Swarm services up or down in Portainer by adjusting replica counts for load management.
 

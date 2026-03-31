@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Semaphore, Concurrency, Distributed Systems, Resource Limiting
+Tags: Redis, Semaphore, Concurrency, Distributed System, Resource Limiting
 
 Description: A comprehensive guide to implementing distributed semaphores with Redis for limiting concurrent access to resources across multiple processes and servers.
 

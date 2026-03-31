@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, RBD, libvirt, Virtualization
+Tags: Rook, Ceph, RBD, Libvirt, Virtualization
 
 Description: Learn how to configure libvirt-managed virtual machines to use Ceph RBD images as storage in Rook-Ceph deployments.
 

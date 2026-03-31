@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, E-Commerce, Recommendations, Caching, Machine Learning, Personalization
+Tags: Redis, E-Commerce, Recommendation, Caching, Machine Learning, Personalization
 
 Description: A comprehensive guide to building a product recommendation cache with Redis for collaborative filtering results, personalized suggestions, and real-time recommendation serving.
 

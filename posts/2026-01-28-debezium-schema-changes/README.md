@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Debezium, Schema Evolution, Change Data Capture, Kafka, Schema Registry, Database Migrations
+Tags: Debezium, Schema Evolution, Change Data Capture, Kafka, Schema Registry, Database Migration
 
 Description: Learn how to handle database schema changes in Debezium CDC pipelines without breaking downstream consumers or losing data.
 

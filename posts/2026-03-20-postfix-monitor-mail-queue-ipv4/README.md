@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Postfix, Mail Queue, Monitoring, IPv4, Linux, Email, Operations
+Tags: Postfix, Mail Queue, Monitoring, IPv4, Linux, Email, Operation
 
 Description: Learn how to monitor the Postfix mail queue to identify stuck messages, per-source statistics, and delivery failures from IPv4 senders.
 

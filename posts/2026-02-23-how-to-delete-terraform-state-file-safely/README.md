@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, State Management, Infrastructure as Code, DevOps, Operations
+Tags: Terraform, State Management, Infrastructure as Code, DevOps, Operation
 
 Description: Learn how to safely delete a Terraform state file without losing track of infrastructure resources, including backup strategies, resource cleanup, and migration approaches.
 

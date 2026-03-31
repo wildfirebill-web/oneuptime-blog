@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Jobs API, Scheduling, Cron, Microservices
+Tags: Dapr, Jobs API, Scheduling, Microservice, Distributed System
 
-Description: Learn how to use the Dapr Jobs API to schedule and manage one-time and recurring jobs in your microservices with cron expressions and durable job storage.
+Description: Learn how to use the Dapr Jobs API to schedule and manage recurring jobs in your microservices with a persistent, distributed job scheduler.
 
 ---
 

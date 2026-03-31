@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Networks, Bonding, Teaming, High Availability, Tutorial
+Tags: Ubuntu, Network, Bonding, Teaming, High Availability, Tutorial
 
 Description: Configure network interface bonding on Ubuntu for increased bandwidth, redundancy, and high availability using Netplan.
 

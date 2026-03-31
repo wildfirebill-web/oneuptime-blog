@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, Git, DevOps
+Tags: Portainer, Docker, Template, Git, DevOps
 
 Description: Learn how to create versioned Portainer custom templates by linking to Compose files stored in a Git repository.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, DevOps, GitHub Actions, GitLab CI, Infrastructure as Code, Automation
+Tags: Terraform, CI/CD, DevOps, GitHub Action, GitLab CI, Infrastructure as Code, Automation
 
 Description: Learn how to automate Terraform workflows with CI/CD pipelines using GitHub Actions, GitLab CI, and other tools. Covers plan reviews, automated applies, and security best practices.
 

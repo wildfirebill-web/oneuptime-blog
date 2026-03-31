@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Build, Jenkins, GitHub Actions, CI/CD, DevOps
+Tags: GCP, Cloud Build, Jenkins, GitHub Action, CI/CD, DevOps
 
 Description: A practical comparison of Cloud Build, Jenkins on GKE, and GitHub Actions for building CI/CD pipelines that deploy to Google Cloud.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Batch, Jobs, DevOps
+Tags: AWS, Batch, Job, DevOps
 
 Description: Learn how to create and configure AWS Batch job definitions and job queues for different workload types, including retry strategies, timeouts, and dependencies.
 

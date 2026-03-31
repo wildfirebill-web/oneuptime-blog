@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Exemplars, Metrics, Traces, Correlation, Observability, SDK
+Tags: OpenTelemetry, Exemplars, Metric, Trace, Correlation, Observability, SDK
 
 Description: Learn how to configure OpenTelemetry exemplars to attach trace context to metric data points, enabling direct navigation from metrics to traces.
 

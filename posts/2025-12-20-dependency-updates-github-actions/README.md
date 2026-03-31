@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Dependabot, Dependencies, Security, DevOps
+Tags: GitHub Action, CI/CD, Dependabot, Dependencies, Security, DevOps
 
 Description: Learn how to set up automated dependency updates in GitHub Actions using Dependabot, Renovate, and custom workflows to keep your projects secure and up-to-date.
 

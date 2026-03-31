@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, MergeTree, TTL, merge_with_ttl_timeout, Settings, Data Lifecycle, SQL
+Tags: ClickHouse, MergeTree, TTL, merge_with_ttl_timeout, Setting, Data Lifecycle, SQL
 
 Description: Learn how merge_with_ttl_timeout controls how often ClickHouse MergeTree triggers TTL-aware merges to expire and delete data, and how to tune it for your retention needs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, DynamoDB, Outbox Pattern, Event-Driven, Microservices, Streams
+Tags: AWS, DynamoDB, Outbox Pattern, Event-Driven, Microservice, Stream
 
 Description: Implement the transactional outbox pattern using DynamoDB Streams to reliably publish domain events from your microservices
 

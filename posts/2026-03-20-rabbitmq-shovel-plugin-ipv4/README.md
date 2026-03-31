@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Shovel, IPv4, AMQP, Messaging, Plugins, Configuration
+Tags: RabbitMQ, Shovel, IPv4, AMQP, Messaging, Plugin, Configuration
 
 Description: Learn how to configure the RabbitMQ Shovel plugin to move messages from a queue on one IPv4 broker to an exchange on another broker.
 

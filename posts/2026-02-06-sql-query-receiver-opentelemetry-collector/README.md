@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, SQL, Database Monitoring, Metrics, Observability
+Tags: OpenTelemetry, Collector, SQL, Database Monitoring, Metric, Observability
 
 Description: Learn how to configure the SQL Query receiver in OpenTelemetry Collector to monitor any SQL database through custom queries, track performance metrics.
 

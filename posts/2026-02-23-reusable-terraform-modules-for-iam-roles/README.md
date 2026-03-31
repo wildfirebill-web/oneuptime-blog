@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, AWS, IAM, Security
+Tags: Terraform, Module, AWS, IAM, Security
 
 Description: Build a reusable Terraform module for AWS IAM roles with assume role policies, managed policies, inline policies, and instance profiles all in one clean interface.
 

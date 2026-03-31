@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, ALTER TABLE, Data Type, Schema, Migration
+Tags: MySQL, SQL, DDL, ALTER TABLE, Data Type, Schema
 
 Description: Change a MySQL column's data type using ALTER TABLE MODIFY COLUMN or CHANGE COLUMN, with safe conversion strategies and data validation tips.
 

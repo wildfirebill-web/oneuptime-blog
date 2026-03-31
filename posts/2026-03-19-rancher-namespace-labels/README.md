@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Namespaces, Projects
+Tags: Rancher, Kubernetes, Namespace, Project
 
 Description: Learn how to use labels and annotations on namespaces in Rancher for organization, policy enforcement, and workload management.
 

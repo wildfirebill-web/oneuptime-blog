@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Select, Database, Administration, Connection
+Tags: Redis, SELECT, Database, Administration, Connection
 
-Description: Learn how to use the SELECT command in Redis to switch between logical databases within a single instance, including use cases, limitations, and best practices.
+Description: Learn how to use the SELECT command to switch between Redis logical databases, including isolation behavior, limitations in Cluster mode, and best practices.
 
 ---
 

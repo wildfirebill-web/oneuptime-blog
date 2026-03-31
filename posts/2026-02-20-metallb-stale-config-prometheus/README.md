@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, Prometheus, Metrics, Monitoring
+Tags: Kubernetes, MetalLB, Prometheus, Metric, Monitoring
 
 Description: Learn how to use the metallb_k8s_client_config_stale_bool Prometheus metric to detect stale MetalLB configuration in your cluster.
 

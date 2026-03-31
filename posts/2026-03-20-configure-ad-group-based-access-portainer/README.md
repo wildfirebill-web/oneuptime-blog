@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Active Directory, RBAC, Teams, Access Control
+Tags: Portainer, Active Directory, RBAC, Team, Access Control
 
 Description: Set up role-based access control in Portainer using Active Directory security groups to map AD groups to Portainer teams and roles.
 

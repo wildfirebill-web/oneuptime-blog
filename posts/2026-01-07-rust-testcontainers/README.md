@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Testing, Integration Tests, Testcontainers, Docker, PostgreSQL, Redis, Database Testing
+Tags: Rust, Testing, Integration Test, Testcontainers, Docker, PostgreSQL, Redis, Database Testing
 
 Description: Learn how to write reliable integration tests for Rust APIs using Testcontainers. This guide covers database testing, Redis, test isolation, parallel test execution, and cleanup patterns.
 

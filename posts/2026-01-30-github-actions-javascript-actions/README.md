@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: GitHub Actions, JavaScript, CI/CD, Automation
+Tags: GitHub Action, JavaScript, CI/CD, Automation
 
 Description: Build custom GitHub Actions using JavaScript with @actions/core and @actions/github for fast, cross-platform automation.
 

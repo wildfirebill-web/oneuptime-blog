@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Kubernetes, HPA, Autoscaling, Custom Metrics
+Tags: Prometheus, Kubernetes, HPA, Autoscaling, Custom Metric
 
 Description: Learn how to deploy the Prometheus Adapter to expose custom metrics for Kubernetes Horizontal Pod Autoscaler based on application-specific metrics.
 

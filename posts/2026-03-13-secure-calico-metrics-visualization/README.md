@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Grafana, Security
+Tags: Calico, Kubernetes, Networking, Metric, Grafana, Security
 
 Description: Secure Calico Grafana dashboards with access controls, read-only roles, and data source restrictions to protect sensitive network topology information.
 

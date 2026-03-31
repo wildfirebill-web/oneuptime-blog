@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SQS, SNS, Architecture, Microservices
+Tags: AWS, SQS, SNS, Architecture, Microservice
 
 Description: Build a decoupled microservices architecture on AWS using SQS for point-to-point messaging and SNS for publish-subscribe patterns with practical examples.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Security, CI/CD
+Tags: Rancher, Kubernetes, RBAC, Permission, Security, CI/CD
 
 Description: Learn how to set up secure RBAC configurations for CI/CD pipelines in Rancher so automated deployments have only the permissions they need.
 

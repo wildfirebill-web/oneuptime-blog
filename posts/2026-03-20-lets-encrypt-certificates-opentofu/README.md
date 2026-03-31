@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Let's Encrypt, TLS, ACME, Certificates, DNS, Infrastructure as Code
+Tags: OpenTofu, Let's Encrypt, TLS, ACME, Certificate, DNS, Infrastructure as Code
 
 Description: Learn how to automatically provision and renew Let's Encrypt TLS certificates using OpenTofu's ACME provider with DNS-01 challenges via Route 53, Cloudflare, or Azure DNS.
 

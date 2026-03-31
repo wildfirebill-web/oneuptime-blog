@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, argon2, Password, Security, Authentication
+Tags: MongoDB, Argon2, Password, Security, Authentication
 
 Description: Learn how to use argon2 - the winner of the Password Hashing Competition - for secure password storage in MongoDB with Node.js.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Logs, Traces, Debugging, Correlation
+Tags: OpenTelemetry, Log, Trace, Debugging, Correlation
 
 Description: Set up OpenTelemetry log-trace correlation to debug production errors by linking structured logs directly to the traces that produced them.
 

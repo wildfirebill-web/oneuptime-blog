@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPsec, Certificates, PKI, strongSwan
+Tags: IPv6, IPsec, Certificate, PKI, strongSwan
 
 Description: Learn how to configure IPv6 IPsec authentication using X.509 certificates with strongSwan, covering CA setup, certificate generation with IPv6 SANs, and connection configuration.
 

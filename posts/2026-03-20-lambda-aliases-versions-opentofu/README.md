@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Lambda, Version, Aliases, Blue-Green Deployment, Infrastructure as Code
+Tags: OpenTofu, AWS, Lambda, Version, Alias, Blue-Green Deployment, Infrastructure as Code
 
 Description: Learn how to manage Lambda function versions and aliases with OpenTofu to enable blue-green deployments, canary releases, and stable API endpoints for Lambda functions.
 

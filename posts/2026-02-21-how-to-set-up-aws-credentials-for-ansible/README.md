@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, AWS, Credentials, IAM, Security
+Tags: Ansible, AWS, Credential, IAM, Security
 
 Description: Configure AWS credentials for Ansible using environment variables, credential files, IAM roles, and AWS SSO for secure cloud automation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Terminate, Operations, Lifecycle
+Tags: Dapr, Workflow, Terminate, Operation, Lifecycle
 
 Description: Learn how to terminate Dapr workflow instances gracefully and forcibly, handle termination in your workflow code, and clean up after terminated workflows.
 

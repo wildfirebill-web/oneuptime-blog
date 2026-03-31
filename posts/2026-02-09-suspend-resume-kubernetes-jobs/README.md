@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Resource Management
+Tags: Kubernetes, Job, Resource Management
 
 Description: Learn how to suspend and resume Kubernetes Jobs to control resource usage, pause processing during maintenance, and implement sophisticated job scheduling patterns.
 

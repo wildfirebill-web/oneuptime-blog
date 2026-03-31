@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Kernel, Troubleshooting, Drivers, System Administration
+Tags: Ubuntu, Kernel, Troubleshooting, Driver, System Administration
 
 Description: Diagnose and fix missing kernel module errors on Ubuntu, from identifying the needed module to installing drivers and rebuilding initramfs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, OLTP, Performance, Tuning, High Concurrency, Transactions
+Tags: PostgreSQL, OLTP, Performance, Tuning, High Concurrency, Transaction
 
 Description: A comprehensive guide to tuning PostgreSQL for OLTP (Online Transaction Processing) workloads, covering memory settings, connection management, checkpoint optimization.
 

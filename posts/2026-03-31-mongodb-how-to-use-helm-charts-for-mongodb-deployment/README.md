@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Helm, Kubernetes, Bitnami, Deployment
+Tags: MongoDB, Helm, Kubernetes, Bitnami, Deployment
 
 Description: Deploy MongoDB on Kubernetes using Helm charts from Bitnami with customized values for replica sets, authentication, and persistent storage.
 

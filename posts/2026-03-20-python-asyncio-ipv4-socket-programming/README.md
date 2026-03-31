@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Asyncio, IPv4, Sockets, Async, Networking, Concurrency
+Tags: Python, Asyncio, IPv4, Socket, Async, Networking, Concurrency
 
 Description: Learn how to use Python's asyncio library to build high-concurrency IPv4 TCP servers and clients without threads or blocking I/O.
 

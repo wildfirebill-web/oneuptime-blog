@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Compute, ECS, EC2, Auto Scaling, Infrastructure as Code
+Tags: Terraform, Module, Compute, ECS, EC2, Auto Scaling, Infrastructure as Code
 
 Description: Build reusable Terraform compute modules for EC2 instances, auto scaling groups, ECS services, and Lambda functions with production-ready patterns.
 

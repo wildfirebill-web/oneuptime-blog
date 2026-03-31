@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Schema design, Index, Range query, Performance
+Tags: MongoDB, Schema Design, Index, Range Query, Performance
 
 Description: Learn how to model documents and indexes in MongoDB to serve fast range queries on dates, numbers, and other ordered fields at scale.
 

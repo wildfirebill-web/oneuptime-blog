@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Python, Messaging, Microservices, Async, Pub/Sub, Queue
+Tags: NATS, Python, Messaging, Microservice, Async, Pub/Sub, Queue
 
 Description: Learn how to use NATS messaging system with Python for building scalable, distributed applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, ObjectStore, RGW, Zone, MultiSite
+Tags: Rook, Ceph, Kubernetes, ObjectStore, RGW, Zone, Multisite
 
 Description: Learn how to create a CephObjectStore in Rook with zone configuration for multi-site object storage deployments and geographic replication.
 

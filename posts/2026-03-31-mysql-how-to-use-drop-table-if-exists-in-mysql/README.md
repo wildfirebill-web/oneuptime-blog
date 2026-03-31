@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Ddl, Sql, Schema Design
+Tags: MySQL, DDL, SQL, Schema Design
 
 Description: Learn how to use DROP TABLE IF EXISTS in MySQL to safely remove tables without errors when the table may or may not exist.
 

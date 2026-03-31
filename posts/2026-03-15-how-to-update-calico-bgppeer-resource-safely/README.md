@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, BGP, BGPPeer, Kubernetes, Networking, Operations, DevOps
+Tags: Calico, BGP, BGPPeer, Kubernetes, Networking, Operation, DevOps
 
 Description: Safely update the Calico BGPPeer resource to modify peering sessions without causing BGP session flaps or connectivity disruptions.
 

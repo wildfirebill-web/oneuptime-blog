@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Resource Quotas, Troubleshooting, Namespaces
+Tags: Portainer, Kubernetes, Resource Quota, Troubleshooting, Namespace
 
 Description: Resolve Kubernetes resource quota exceeded errors by identifying quota limits, current usage, and remediation options through Portainer.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Session, Causal consistency, Replica set, Read
+Tags: MongoDB, Session, Causal Consistency, Replica Set, Read
 
 Description: Learn how MongoDB causally consistent sessions guarantee that reads always see the effects of previous writes in the same session, even across replica set members.
 

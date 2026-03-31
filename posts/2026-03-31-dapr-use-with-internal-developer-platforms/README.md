@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Internal Developer Platform, IDP, Automation, Self-Service
+Tags: Dapr, Internal Developer Platform, IdP, Automation, Self-Service
 
 Description: Learn how to integrate Dapr into an Internal Developer Platform (IDP) using tools like Port, Cortex, or custom tooling to automate component provisioning and service onboarding.
 

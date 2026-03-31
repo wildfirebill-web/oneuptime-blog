@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Optimistic Locking, Concurrency, Transactions, Version Control
+Tags: MongoDB, Optimistic Locking, Concurrency, Transaction, Version Control
 
 Description: Learn how to implement optimistic locking in MongoDB to handle concurrent updates safely using version fields and atomic operations.
 

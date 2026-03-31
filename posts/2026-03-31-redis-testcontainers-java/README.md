@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Java, Testcontainer
+Tags: Redis, Java, Testcontainers
 
 Description: Learn how to use Testcontainers to spin up a real Redis container for Java integration tests, ensuring reliable and reproducible test environments.
 

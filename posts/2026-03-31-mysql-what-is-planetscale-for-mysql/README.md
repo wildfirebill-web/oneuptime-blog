@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Planetscale, Managed Database, Cloud Database
+Tags: MySQL, PlanetScale, Managed Database, Cloud Database
 
 Description: PlanetScale is a serverless MySQL-compatible database platform built on Vitess that offers branching, non-blocking schema migrations, and automatic horizontal scaling.
 

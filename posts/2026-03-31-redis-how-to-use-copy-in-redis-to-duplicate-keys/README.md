@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Key Management, Commands, Data Operations, Redis 6.2
+Tags: Redis, Key Management, Command, Data Operations, Redis 6.2
 
 Description: Learn how to use the COPY command in Redis 6.2+ to duplicate a key to a new name or different database without removing the source, preserving type and TTL.
 

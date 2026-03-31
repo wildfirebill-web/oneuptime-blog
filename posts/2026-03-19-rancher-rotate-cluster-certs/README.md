@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Security, Certificates
+Tags: Rancher, Kubernetes, Security, Certificate
 
 Description: Learn how to rotate internal Kubernetes cluster certificates in Rancher-managed RKE and RKE2 clusters to maintain security.
 

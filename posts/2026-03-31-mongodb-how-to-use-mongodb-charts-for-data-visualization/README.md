@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB Atlas, Charts, Data Visualization, Dashboards, Analytics
+Tags: MongoDB Atlas, Charts, Data Visualization, Dashboard, Analytics
 
 Description: Learn how to create dashboards and visualizations with MongoDB Charts using chart types, aggregation pipelines, filters, and embedding options.
 

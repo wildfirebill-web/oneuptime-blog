@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Networks, Bridge, Networking
+Tags: Portainer, Docker, Network, Bridge, Networking
 
 Description: Create a Docker bridge network in Portainer to provide isolated network communication between containers on the same host.
 

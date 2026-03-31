@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, OpenStack, Ubuntu, Networking, Network Policies, Security Groups
+Tags: Calico, OpenStack, Ubuntu, Networking, Network Policies, Security Group
 
 Description: A guide to testing Calico network policy enforcement for OpenStack virtual machines on Ubuntu.
 

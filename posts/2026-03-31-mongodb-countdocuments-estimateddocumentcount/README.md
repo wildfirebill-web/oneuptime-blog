@@ -1,4 +1,4 @@
-# How to Count Documents in MongoDB with countDocuments() and estimatedDocumentCount()
+# How to Count Documents with countDocuments() in MongoDB
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

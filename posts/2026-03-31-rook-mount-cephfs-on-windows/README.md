@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, CephFS, Windows, Mount
+Tags: Rook, Ceph, CephFS, Window, Mount
 
 Description: Learn how to mount a CephFS filesystem on Windows using the Ceph Windows client to access Rook-Ceph shared storage from Windows hosts.
 

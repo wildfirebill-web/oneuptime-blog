@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Upgrade, Version, Planning, Operations
+Tags: ClickHouse, Upgrade, Version, Planning, Operation
 
 Description: Learn how to plan ClickHouse version upgrades by reviewing release notes, assessing compatibility, testing in staging, and scheduling production rollouts.
 

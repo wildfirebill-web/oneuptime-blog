@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Jaeger, Distributed Tracing, Kubernetes, Observability, Microservices
+Tags: Talos Linux, Jaeger, Distributed Tracing, Kubernetes, Observability, Microservice
 
 Description: Deploy Jaeger on Talos Linux for distributed tracing across your Kubernetes microservices with this step-by-step guide.
 

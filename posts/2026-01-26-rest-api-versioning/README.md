@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: REST API, API Versioning, Web Development, Backend Development, API Design, Semantic Versioning, Microservices
+Tags: REST API, API Versioning, Web Development, Backend Development, API Design, Semantic Versioning, Microservice
 
 Description: A practical guide to implementing REST API versioning strategies that keep your clients happy while allowing your API to evolve.
 

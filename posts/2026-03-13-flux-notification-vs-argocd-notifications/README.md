@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, ArgoCD, Notifications, GitOps, Slack, PagerDuty, Alerting
+Tags: Flux CD, ArgoCD, Notification, GitOps, Slack, PagerDuty, Alerting
 
 Description: Compare Flux Notification Controller and ArgoCD Notifications for deployment alerts, covering supported providers, configuration model, and filtering capabilities.
 

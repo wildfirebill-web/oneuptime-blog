@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, DNS, Network Configuration
+Tags: Podman, Container, DevOps, Container Image, Build, DNS, Network Configuration
 
 Description: Learn how to configure custom DNS settings during Podman image builds for resolving internal hostnames, using private DNS servers, and working in corporate networks.
 

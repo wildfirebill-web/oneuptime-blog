@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, nmcli, NetworkManager, Networking, Diagnostics
+Tags: Linux, nmcli, NetworkManager, Networking, Diagnostic
 
 Description: Use nmcli connection show to inspect all settings, IP addresses, routes, DNS, and state of NetworkManager connection profiles.
 

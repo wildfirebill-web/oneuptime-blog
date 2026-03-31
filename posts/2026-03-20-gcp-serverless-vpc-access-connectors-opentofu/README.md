@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Serverless, VPC Access, OpenTofu, Cloud Run, Cloud Functions
+Tags: GCP, Serverless, VPC Access, OpenTofu, Cloud Run, Cloud Function
 
 Description: Learn how to create GCP Serverless VPC Access Connectors with OpenTofu to allow Cloud Run and Cloud Functions to communicate with resources in a VPC.
 

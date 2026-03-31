@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, ServiceEntry, External Services, Kubernetes, Service Mesh
+Tags: Istio, ServiceEntry, External Service, Kubernetes, Service Mesh
 
 Description: Complete guide to every ServiceEntry field in Istio for registering external services, configuring DNS resolution, endpoints, and workload selectors.
 

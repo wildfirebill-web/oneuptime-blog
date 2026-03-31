@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud, Parallelstore, Cloud Storage, AI, ML, Model Training, Data Pipelines
+Tags: GCP, Google Cloud, Parallelstore, Cloud Storage, AI, ML, Model Training, Data Pipeline
 
 Description: Learn how to efficiently import training data from Google Cloud Storage into Parallelstore for high-performance AI and ML model training workloads.
 

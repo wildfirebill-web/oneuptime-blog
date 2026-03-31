@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: React, Server Components, Next.js, RSC, Performance, SSR, Full Stack, TypeScript
+Tags: React, Server Component, Next.js, RSC, Performance, SSR, Full Stack, TypeScript
 
 Description: Learn how to configure and use React Server Components to build faster applications with reduced client-side JavaScript.
 

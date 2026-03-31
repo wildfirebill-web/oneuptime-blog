@@ -1,6 +1,6 @@
 # How to Implement Data Retention Policies in ClickHouse
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Database, Performance, Storage, SQL
 

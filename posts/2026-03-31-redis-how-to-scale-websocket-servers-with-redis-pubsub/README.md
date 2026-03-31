@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Websockets, Pub/Sub, Scaling, Socket.io, Node.js
+Tags: Redis, WebSocket, Pub/Sub, Scaling, Socket.IO, Node.js
 
 Description: Scale WebSocket servers horizontally across multiple instances using Redis Pub/Sub to broadcast messages to all connected clients regardless of which server they are on.
 

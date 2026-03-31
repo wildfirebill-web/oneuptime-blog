@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Podman Compose, Docker Compose
+Tags: Podman, Container, DevOps, Secret, Podman Compose, Docker Compose
 
 Description: Learn how to define and use secrets in Podman Compose files for multi-container applications.
 

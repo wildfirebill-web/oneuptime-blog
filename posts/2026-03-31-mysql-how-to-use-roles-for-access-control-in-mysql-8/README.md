@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, Roles, Access Control, Mysql 8
+Tags: MySQL, Security, Role, Access Control, MySQL 8
 
 Description: Learn how to create and use roles in MySQL 8 to simplify privilege management by grouping permissions and assigning them to multiple users at once.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OCI Artifacts, Binary Distribution, Release Management
+Tags: Podman, Container, DevOps, OCI Artifacts, Binary Distribution, Release Management
 
 Description: Learn how to use OCI artifacts with Podman to distribute compiled binaries, CLI tools, and release archives through container registries.
 

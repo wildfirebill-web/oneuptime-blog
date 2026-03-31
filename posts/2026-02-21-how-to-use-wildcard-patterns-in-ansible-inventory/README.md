@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Inventory, Wildcard, Patterns, DevOps
+Tags: Ansible, Inventory, Wildcard, Pattern, DevOps
 
 Description: Learn how to use wildcard patterns in Ansible to match groups of hosts by name patterns, domain suffixes, and naming conventions for flexible infrastructure targeting.
 

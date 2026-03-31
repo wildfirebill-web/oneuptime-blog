@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Images, Cleanup, Disk Space, DevOps, Docker Commands, Maintenance
+Tags: Docker, Image, Cleanup, Disk Space, DevOps, Docker Commands, Maintenance
 
 Description: A practical guide to identifying and removing dangling, unreferenced, and unused Docker images to reclaim disk space.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Docker, SDK, API Compatibility, Containers
+Tags: Podman, Docker, SDK, API Compatibility, Container
 
 Description: Learn how to use existing Docker SDKs and tools with Podman's Docker-compatible API, enabling a seamless migration from Docker to Podman without rewriting your automation code.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, E-Commerce, Containers, WooCommerce, Magento
+Tags: Podman, E-Commerce, Container, WooCommerce, Magento
 
 Description: Learn how to deploy and manage e-commerce applications like WooCommerce and custom storefronts using Podman with rootless containers, pod networking, and persistent storage.
 

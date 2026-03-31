@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Database, MergeTree, Configuration, Performance, Operations
+Tags: ClickHouse, Database, MergeTree, Configuration, Performance, Operation
 
 Description: Learn how to tune ClickHouse background merge and mutation settings to balance write throughput, query performance, and resource consumption on MergeTree tables.
 

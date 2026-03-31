@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Monitoring, Performance, Client, Metrics
+Tags: Rook, Ceph, Monitoring, Performance, Client, Metric
 
 Description: Monitor Ceph client-side performance metrics including IOPS, throughput, and latency using built-in Ceph tools and Prometheus/Grafana dashboards.
 

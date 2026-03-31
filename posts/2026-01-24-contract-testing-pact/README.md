@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Contract Testing, Pact, Microservices, API Testing, Consumer-Driven Contracts, Integration Testing, DevOps
+Tags: Contract Testing, Pact, Microservice, API Testing, Consumer-Driven Contracts, Integration Testing, DevOps
 
 Description: A comprehensive guide to setting up and configuring contract testing with Pact to ensure reliable API integrations between microservices.
 

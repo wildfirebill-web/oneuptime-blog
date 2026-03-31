@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Overlay, Storage Driver, Performance, Filesystem, Linux, Containers, DevOps
+Tags: Podman, Overlay, Storage Driver, Performance, Filesystem, Linux, Container, DevOps
 
 Description: A deep dive into configuring and optimizing the overlay storage driver in Podman for maximum container filesystem performance, including rootless setup, kernel requirements, and tuning options.
 

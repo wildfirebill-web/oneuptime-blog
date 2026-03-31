@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ceph, Storage, ObjectStorage, MultiSite
+Tags: Ceph, Storage, ObjectStorage, Multisite
 
 Description: A complete guide to configuring Ceph RGW multisite for geo-distributed object storage with active-active replication, failover, and disaster recovery.
 

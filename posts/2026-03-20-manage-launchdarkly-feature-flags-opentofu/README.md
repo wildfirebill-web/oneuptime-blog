@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, LaunchDarkly, Feature Flags, Infrastructure as Code, Feature Management
+Tags: OpenTofu, LaunchDarkly, Feature Flag, Infrastructure as Code, Feature Management
 
 Description: Learn how to manage LaunchDarkly feature flags, projects, environments, and targeting rules using OpenTofu and the official LaunchDarkly provider.
 

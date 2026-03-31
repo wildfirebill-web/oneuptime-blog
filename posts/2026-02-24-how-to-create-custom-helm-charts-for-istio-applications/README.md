@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Helm, Kubernetes, Custom Charts, Microservices
+Tags: Istio, Helm, Kubernetes, Custom Charts, Microservice
 
 Description: Build custom Helm charts that bundle application deployments with Istio networking and security resources for consistent service mesh configuration.
 

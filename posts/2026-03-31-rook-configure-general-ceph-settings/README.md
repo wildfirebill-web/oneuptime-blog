@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Configuration, Global, Settings
+Tags: Rook, Ceph, Configuration, Global, Setting
 
 Description: Learn how to configure general Ceph global settings including networking, authentication, capacity thresholds, and monitor tuning.
 

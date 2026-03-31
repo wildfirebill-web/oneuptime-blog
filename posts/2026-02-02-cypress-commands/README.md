@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cypress, Testing, E2E, Commands
+Tags: Cypress, Testing, E2E, Command
 
 Description: A comprehensive guide to understanding and handling Cypress commands, covering the command queue, asynchronous execution, retry-ability, chaining patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Reusable, Infrastructure as Code, Best Practice
+Tags: Terraform, Module, Reusable, Infrastructure as Code, Best Practice
 
 Description: Learn how to write reusable Terraform modules with proper input variables, outputs, and versioning for scalable infrastructure.
 

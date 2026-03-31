@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Time series, Index, Secondary index, Performance
+Tags: MongoDB, Time Series, Index, Secondary Index, Performance
 
 Description: Learn how to create secondary indexes on MongoDB time series collections to speed up queries that filter on measurement or metadata fields beyond the default time index.
 

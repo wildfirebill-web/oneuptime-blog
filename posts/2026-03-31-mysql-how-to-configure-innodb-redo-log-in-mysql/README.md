@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Redo Log, Configuration, Durability
+Tags: MySQL, InnoDB, Redo Log, Configuration, Durability
 
 Description: Learn how to configure InnoDB redo log size and related settings in MySQL to balance write performance with crash recovery durability.
 

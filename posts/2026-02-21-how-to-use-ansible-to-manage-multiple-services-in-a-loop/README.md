@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Service Management, Automation
+Tags: Ansible, Loop, Service Management, Automation
 
 Description: Learn how to manage multiple services efficiently using Ansible loops, from simple lists to complex data structures with per-service configuration.
 

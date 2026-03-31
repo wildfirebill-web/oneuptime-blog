@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Testing, Modules, Isolation, Infrastructure as Code
+Tags: OpenTofu, Terraform, Testing, Module, Isolation, Infrastructure as Code
 
 Description: Learn how to test OpenTofu modules in isolation using mock providers, plan-only tests, and fixture configurations to validate module behavior without deploying real infrastructure.
 

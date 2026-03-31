@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Event-Driven Architecture, Kubernetes, Microservices, CQRS, DevOps
+Tags: Talos Linux, Event-Driven Architecture, Kubernetes, Microservice, CQRS, DevOps
 
 Description: Build an event-driven architecture on Talos Linux using Kubernetes-native tools including message brokers, event stores, and processing pipelines.
 

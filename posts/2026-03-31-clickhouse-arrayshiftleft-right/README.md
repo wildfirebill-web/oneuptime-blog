@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Array, arrayShiftLeft, arrayShiftRight, Data Transformation, Sliding Window
+Tags: ClickHouse, Array Function, arrayShiftLeft, arrayShiftRight, Sliding Window, Data Transformation
 
 Description: Learn how arrayShiftLeft() and arrayShiftRight() shift array elements and fill vacated positions with a default or custom value in ClickHouse.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Configuration, DevOps
+Tags: Portainer, Docker, Container, Configuration, DevOps
 
 Description: Learn how to override the default command and entrypoint of a Docker container in Portainer to customize container startup behavior.
 

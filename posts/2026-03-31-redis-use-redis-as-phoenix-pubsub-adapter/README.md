@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Elixir, Phoenix, Pubsub, Distributed Systems
+Tags: Redis, Elixir, Phoenix, PubSub, Distributed System
 
 Description: Learn how to configure Redis as the Phoenix PubSub adapter to broadcast messages across multiple Phoenix nodes without Erlang clustering.
 

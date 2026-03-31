@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Async_status, Background Tasks, Async, DevOps
+Tags: Ansible, Async_status, Background Task, Async, DevOps
 
 Description: Monitor and manage long-running background tasks in Ansible using the async_status module for asynchronous operations.
 

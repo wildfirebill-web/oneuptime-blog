@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Job Dependencies, Workflow Optimization, DevOps, Parallel Jobs
+Tags: GitHub Action, CI/CD, Job Dependencies, Workflow Optimization, DevOps, Parallel Jobs
 
 Description: Master job dependencies in GitHub Actions to build efficient pipelines that run tasks in the right order, share outputs between jobs, and handle failures gracefully.
 

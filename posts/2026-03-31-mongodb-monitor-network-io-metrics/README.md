@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Network, Performance, Metrics
+Tags: MongoDB, Monitoring, Network, Performance, Metric
 
 Description: Learn how to monitor MongoDB network I/O metrics including bytes in, bytes out, and request counts from serverStatus to detect bandwidth saturation and unusual traffic patterns.
 

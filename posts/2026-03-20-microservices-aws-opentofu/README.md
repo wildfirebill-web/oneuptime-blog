@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, Microservices, Architecture, OpenTofu, EKS, Service Mesh, API Gateway
+Tags: AWS, Microservice, Architecture, OpenTofu, EKS, Service Mesh, API Gateway
 
 Description: Learn how to build a production-ready microservices architecture on AWS using OpenTofu with EKS, API Gateway, service discovery via AWS Cloud Map, and distributed tracing.
 

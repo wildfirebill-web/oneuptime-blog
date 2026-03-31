@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Roles, Access Control, Security
+Tags: MySQL, Role, Access Control, Security
 
 Description: A role in MySQL 8 is a named collection of privileges that can be assigned to users, simplifying permission management across multiple accounts.
 

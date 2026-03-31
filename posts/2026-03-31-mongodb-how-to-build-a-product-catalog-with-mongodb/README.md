@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Product Catalog, Schema, Index, Aggregation, E-commerce
+Tags: MongoDB, Product Catalog, Schema, Index, Aggregation, E-Commerce
 
 Description: Learn how to build a scalable product catalog with MongoDB, covering schema design, category hierarchies, faceted search, and inventory tracking.
 

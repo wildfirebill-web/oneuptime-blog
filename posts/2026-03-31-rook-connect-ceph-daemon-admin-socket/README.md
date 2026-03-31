@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Admin Socket, Daemon, Debug, Operations
+Tags: Rook, Ceph, Admin Socket, Daemon, Debug, Operation
 
 Description: Connect to a Ceph daemon admin socket to inspect runtime state, dump performance counters, and issue live commands without restarting the daemon.
 

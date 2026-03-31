@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Feign, Microservices
+Tags: Java, Spring Boot, Feign, Microservice
 
 Description: Build custom error decoders for Feign clients to handle API errors gracefully with proper exception mapping and retry logic.
 

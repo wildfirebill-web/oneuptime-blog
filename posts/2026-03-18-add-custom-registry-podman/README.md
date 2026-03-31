@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Custom Registry, Private Registry
+Tags: Podman, Container, DevOps, Registry, Custom Registry, Private Registry
 
 Description: Step-by-step instructions for adding a custom container registry to Podman, including configuration, authentication, and testing.
 

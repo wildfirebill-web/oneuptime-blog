@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Cephfs, Filesystem, Kubernetes, Storage
+Tags: Rook, Ceph, CephFilesystem, CephFS, Kubernetes, Shared Storage
 
-Description: Create a CephFilesystem CRD in Rook to provision a shared CephFS filesystem with configurable metadata and data pools for multi-pod read-write-many access.
+Description: Learn how to create a CephFilesystem CRD in Rook to deploy a CephFS shared filesystem and expose it as a ReadWriteMany StorageClass in Kubernetes.
 
 ---
 

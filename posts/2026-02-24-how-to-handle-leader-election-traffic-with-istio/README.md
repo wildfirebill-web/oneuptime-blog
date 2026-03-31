@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Leader Election, Distributed Systems, Networking
+Tags: Istio, Kubernetes, Leader Election, Distributed System, Networking
 
 Description: Configure Istio to correctly handle leader election traffic patterns used by distributed systems including lease-based and consensus-based election mechanisms.
 

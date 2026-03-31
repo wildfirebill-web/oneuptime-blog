@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, VXLAN, Overlay Network, Networking, Layer 2, Containers, SDN
+Tags: Linux, VXLAN, Overlay Network, Networking, Layer 2, Container, SDN
 
 Description: Build a complete VXLAN overlay network between two Linux hosts, connecting them at Layer 2 with a shared virtual LAN segment over any IP underlay.
 

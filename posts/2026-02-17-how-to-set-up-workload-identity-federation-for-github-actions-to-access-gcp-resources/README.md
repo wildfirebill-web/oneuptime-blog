@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Workload Identity Federation, GitHub Actions, CI/CD, Security, IAM
+Tags: GCP, Workload Identity Federation, GitHub Action, CI/CD, Security, IAM
 
 Description: A step-by-step guide to configuring Workload Identity Federation in GCP for GitHub Actions, eliminating the need for long-lived service account keys.
 

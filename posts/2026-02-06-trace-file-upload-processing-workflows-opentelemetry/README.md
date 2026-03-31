@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, File Upload, File Processing, Tracing, Observability, Distributed Systems
+Tags: OpenTelemetry, File Upload, File Processing, Tracing, Observability, Distributed System
 
 Description: Learn how to trace file upload and processing workflows with OpenTelemetry for visibility into upload, validation, transformation, and storage stages.
 

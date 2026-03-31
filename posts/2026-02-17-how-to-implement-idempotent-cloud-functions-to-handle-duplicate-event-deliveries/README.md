@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Idempotency, Reliability, Event-Driven
+Tags: GCP, Cloud Function, Idempotency, Reliability, Event-Driven
 
 Description: Learn how to make Google Cloud Functions idempotent so they safely handle duplicate event deliveries from Pub/Sub, Cloud Storage, and Firestore triggers without side effects.
 

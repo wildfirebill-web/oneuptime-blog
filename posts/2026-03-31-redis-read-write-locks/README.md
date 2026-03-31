@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Read-Write Lock, Distributed Lock, Concurrency, Lua
+Tags: Redis, Read-Write Lock, Distributed Lock, Concurrency, Lua Script
 
 Description: Learn how to implement read-write (shared-exclusive) locks in Redis to allow concurrent reads while ensuring exclusive access for write operations.
 

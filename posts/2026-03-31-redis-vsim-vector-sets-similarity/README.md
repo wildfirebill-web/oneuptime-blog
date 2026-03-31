@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Redis, Vector, Database, Search, Machine learning
+Tags: Redis, Vector, Database, Search, Machine Learning
 
 Description: Learn how to use the VSIM command in Redis vector sets to find the most similar vectors to a query, with options for count, filtering, scores, and attribute retrieval.
 

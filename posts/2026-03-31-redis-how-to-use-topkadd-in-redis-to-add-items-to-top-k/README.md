@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Top-K, Heavy Hitters, Probabilistic Data Structures
+Tags: Redis, Top-K, Heavy Hitter, Probabilistic Data Structure
 
 Description: Learn how to use TOPK.ADD in Redis to track the most frequently occurring items in a stream using the Top-K probabilistic data structure.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Java, Workflows, Microservices, Orchestration
+Tags: Dapr, Java, Workflow, Microservice, Orchestration
 
 Description: Learn how to build durable Dapr workflows using the Java SDK, covering activity definitions, orchestration, and parallel execution patterns.
 

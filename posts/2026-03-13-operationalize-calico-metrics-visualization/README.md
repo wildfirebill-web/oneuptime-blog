@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Grafana, Operations
+Tags: Calico, Kubernetes, Networking, Metric, Grafana, Operation
 
 Description: Build operational processes around Calico Grafana dashboards including review cadences, on-call integration, capacity planning workflows, and dashboard governance.
 

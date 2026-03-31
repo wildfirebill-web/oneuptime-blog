@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, NULL Values, Error Handling, HCL, Infrastructure as Code
+Tags: OpenTofu, NULL Value, Error Handling, HCL, Infrastructure as Code
 
 Description: Learn how to handle null values in OpenTofu configurations to build robust modules that work correctly whether optional inputs are provided or omitted.
 

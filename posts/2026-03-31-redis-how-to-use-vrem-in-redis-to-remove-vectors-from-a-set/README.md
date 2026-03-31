@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Sets, Embeddings, Data Management
+Tags: Redis, Vector Set, Embedding, Data Management
 
 Description: Learn how to use VREM in Redis to remove specific vector elements from a Vector Set, keeping your index fresh and accurate.
 

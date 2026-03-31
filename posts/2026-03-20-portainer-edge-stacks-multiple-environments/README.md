@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Edge Computing, DevOps, Stacks
+Tags: Portainer, Docker, Edge Computing, DevOps, Stack
 
 Description: Learn how to use Portainer Edge Stacks to deploy containerized applications to multiple remote edge environments simultaneously.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sentinel, CLI, High Availability, Operations
+Tags: Redis, Sentinel, CLI, High Availability, Operation
 
 Description: Learn how to use the redis-sentinel CLI and redis-cli connected to Sentinel to manage and monitor Redis Sentinel instances, including discovering topology, checking health, and triggering failovers.
 

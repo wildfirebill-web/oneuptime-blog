@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, APT, Package Management, Networks, System Administration
+Tags: Ubuntu, APT, Package Management, Network, System Administration
 
 Description: Learn how to create a full local Ubuntu repository mirror using apt-mirror, configure synchronization schedules, and serve packages to your internal network with nginx.
 

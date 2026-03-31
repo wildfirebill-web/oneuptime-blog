@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Message Queue, Lists, Background Jobs, Beginner, Workers
+Tags: Redis, Message Queue, List, Background Job, Beginner, Worker
 
 Description: A beginner's guide to using Redis lists as a simple, reliable message queue for background job processing in any application.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, templatefile, Templates, User Data, HCL, Infrastructure as Code
+Tags: OpenTofu, templatefile, Template, User Data, HCL, Infrastructure as Code
 
 Description: Learn how to use the templatefile() function in OpenTofu to render dynamic configuration files - generating user data scripts, YAML configs, and JSON policies with variable interpolation.
 

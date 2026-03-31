@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Skiplist, Sorted Sets, Internals, Data Structures
+Tags: Redis, Skiplist, Sorted Set, Internal, Data Structure
 
 Description: Understand how Redis implements skip lists for Sorted Sets, including the multi-level linked list structure that enables O(log N) rank queries and range operations.
 

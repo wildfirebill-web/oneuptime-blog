@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Dependencies, Service Ordering, Stacks, DevOps
+Tags: Portainer, Docker Compose, Dependencies, Service Ordering, Stack, DevOps
 
 Description: Configure service dependency chains in Portainer stacks using depends_on with health conditions to ensure services start and restart in the correct order.
 

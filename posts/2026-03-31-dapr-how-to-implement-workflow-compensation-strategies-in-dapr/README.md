@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Saga Pattern, Compensation, Distributed Transactions, Microservices
+Tags: Dapr, Workflow, Saga Pattern, Compensation, Distributed Transaction, Microservice
 
 Description: Learn how to implement saga-style compensation strategies in Dapr Workflow to roll back distributed transactions when individual steps fail in a microservices system.
 

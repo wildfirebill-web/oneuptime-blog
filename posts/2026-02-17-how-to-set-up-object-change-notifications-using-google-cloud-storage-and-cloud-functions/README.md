@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud Storage, Cloud Functions, Event-Driven, Serverless
+Tags: GCP, Google Cloud Storage, Cloud Function, Event-Driven, Serverless
 
 Description: Learn how to set up object change notifications using Google Cloud Storage event triggers and Cloud Functions to build automated serverless workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, User Namespaces, Security
+Tags: Podman, Container, DevOps, Quadlet, User Namespaces, Security
 
 Description: Learn how to configure user namespace mappings in Podman Quadlet container files for enhanced container isolation.
 

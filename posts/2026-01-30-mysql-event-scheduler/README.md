@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MySQL, Event Scheduler, Scheduled Tasks, Automation
+Tags: MySQL, Event Scheduler, Scheduled Task, Automation
 
 Description: Learn to implement MySQL Event Scheduler for recurring tasks with scheduling patterns, error handling, and maintenance jobs.
 

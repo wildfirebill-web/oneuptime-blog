@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Bitmap, bitmapBuild, Aggregation, Sql
+Tags: ClickHouse, Bitmap, bitmapBuild, Aggregation, SQL
 
 Description: Learn how to use bitmapBuild() in ClickHouse to construct compressed bitmap objects from arrays of unsigned integers for efficient set operations.
 

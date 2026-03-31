@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Healthcheck, Monitoring, Kubernetes, Load Balancer, Operations
+Tags: ClickHouse, HealthCheck, Monitoring, Kubernetes, Load Balancer, Operation
 
 Description: Learn how to implement ClickHouse healthchecks using the HTTP ping endpoint, SQL probes, and Kubernetes liveness and readiness probes to ensure traffic only reaches healthy nodes.
 

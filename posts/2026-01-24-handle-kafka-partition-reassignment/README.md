@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Partition Reassignment, Rebalancing, Consumer Groups, Operations, High Availability, Scaling
+Tags: Kafka, Partition Reassignment, Rebalancing, Consumer Group, Operation, High Availability, Scaling
 
 Description: Learn how to safely execute Kafka partition reassignments for scaling, load balancing, and broker decommissioning while minimizing impact on consumers and maintaining data availability.
 

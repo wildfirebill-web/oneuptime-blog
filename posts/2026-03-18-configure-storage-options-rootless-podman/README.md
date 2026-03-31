@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Storage, Rootless, Security
+Tags: Podman, Container, DevOps, Storage, Rootless, Security
 
 Description: Learn how to configure storage options specifically for rootless Podman to optimize performance and handle user namespace limitations.
 

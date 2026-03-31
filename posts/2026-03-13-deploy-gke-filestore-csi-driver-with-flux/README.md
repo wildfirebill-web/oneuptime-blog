@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, GKE, Google Cloud, Filestore, CSI, Persistent Volumes
+Tags: Flux CD, Kubernetes, GitOps, GKE, Google Cloud, Filestore, CSI, Persistent Volume
 
 Description: Deploy and configure the GKE Filestore CSI driver using Flux CD to provision ReadWriteMany persistent volumes backed by Google Cloud Filestore.
 

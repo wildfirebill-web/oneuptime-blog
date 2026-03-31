@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Online archive, Cold data, Cost optimisation
+Tags: MongoDB, Atlas, Online Archive, Cold data, Cost optimisation
 
 Description: Learn how to configure MongoDB Atlas Online Archive to automatically move old data from your Atlas cluster to cheaper S3-based storage while keeping it queryable.
 

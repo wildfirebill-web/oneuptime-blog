@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, API Keys, Authentication, Security, API
+Tags: Go, API Key, Authentication, Security, API
 
 Description: Implement secure API key authentication in Go with proper key generation, secure storage, rate limiting, and rotation strategies.
 

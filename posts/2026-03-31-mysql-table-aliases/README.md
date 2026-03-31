@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Table Alias, JOIN
+Tags: MySQL, Table Alias, Join
 
 Description: Learn how to use table aliases in MySQL queries to shorten table names, resolve ambiguous column names in JOINs, and enable self-joins.
 

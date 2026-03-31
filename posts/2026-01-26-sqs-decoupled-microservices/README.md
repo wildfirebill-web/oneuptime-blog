@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, SQS, Microservices, Message Queues, Decoupling
+Tags: AWS, SQS, Microservice, Message Queue, Decoupling
 
 Description: Learn how to use Amazon SQS to build decoupled microservices with asynchronous communication, dead letter queues, and error handling patterns.
 

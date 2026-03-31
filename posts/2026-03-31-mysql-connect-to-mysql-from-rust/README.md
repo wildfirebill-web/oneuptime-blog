@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Rust, Driver, Connection, sqlx
+Tags: MySQL, Rust, Driver, Connection, SQLx
 
 Description: Learn how to connect to a MySQL database from Rust using the sqlx crate for async queries and the mysql crate for synchronous access.
 

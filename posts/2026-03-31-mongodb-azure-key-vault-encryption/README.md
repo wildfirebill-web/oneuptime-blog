@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Azure, Key Vault, Encryption, CSFLE
 
-Description: Learn how to configure Azure Key Vault as the KMS provider for MongoDB Client-Side Field Level Encryption to manage Data Encryption Keys with Azure-managed secrets.
+Description: Learn how to configure Azure Key Vault as the KMS provider for MongoDB CSFLE to manage Data Encryption Keys with Azure-managed secrets.
 
 ---
 

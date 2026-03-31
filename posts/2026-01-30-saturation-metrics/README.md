@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Metrics, Saturation, SRE, Observability
+Tags: Metric, Saturation, SRE, Observability
 
 Description: A practical guide to measuring resource saturation, queue depths, and connection pools to catch capacity problems before they become outages.
 

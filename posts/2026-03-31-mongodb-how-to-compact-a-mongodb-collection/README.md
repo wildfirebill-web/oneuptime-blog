@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Storage, Maintenance, Database Administration
+Tags: MongoDB, Storage, Maintenance, Database Administration
 
 Description: Learn how to use MongoDB's compact command to reclaim disk space and defragment storage after large delete operations, including options and best practices.
 

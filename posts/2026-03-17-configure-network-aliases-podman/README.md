@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, DNS, Aliases, Service Discovery
+Tags: Podman, Container, DevOps, Networking, DNS, Alias, Service Discovery
 
 Description: Learn how to configure network aliases in Podman for flexible DNS-based service discovery.
 

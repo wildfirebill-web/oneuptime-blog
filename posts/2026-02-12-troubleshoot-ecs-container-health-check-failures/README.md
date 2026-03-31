@@ -1,6 +1,6 @@
 # How to Troubleshoot ECS Container Health Check Failures
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: AWS, ECS, Troubleshooting, Docker, Health Check
 

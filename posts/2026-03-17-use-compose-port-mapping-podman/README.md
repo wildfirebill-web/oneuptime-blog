@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Ports, Networking
+Tags: Podman, Container, DevOps, podman-compose, Port, Networking
 
 Description: Learn how to configure port mappings in podman-compose to expose container services on the host network.
 

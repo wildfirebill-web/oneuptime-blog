@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Consul, Service Discovery, Microservices, DevOps
+Tags: Ansible, Consul, Service Discovery, Microservice, DevOps
 
 Description: Step-by-step guide to deploying and configuring HashiCorp Consul for service discovery using Ansible playbooks and roles.
 

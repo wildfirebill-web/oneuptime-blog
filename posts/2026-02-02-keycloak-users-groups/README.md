@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Keycloak, Users, Groups, Identity Management, Authentication, RBAC, IAM, Security
+Tags: Keycloak, Users, Group, Identity Management, Authentication, RBAC, IAM, Security
 
 Description: A practical guide to configuring users and groups in Keycloak, covering user creation, group hierarchies, role assignments, attribute mapping.
 

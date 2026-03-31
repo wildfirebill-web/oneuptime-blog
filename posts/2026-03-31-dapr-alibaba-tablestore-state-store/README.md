@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Alibaba Cloud, TableStore, State Store, Cloud
+Tags: Dapr, Alibaba Cloud, Tablestore, State Store, Cloud
 
 Description: Learn how to configure Dapr with Alibaba Cloud TableStore as a state store for microservices deployed on Alibaba Cloud infrastructure.
 

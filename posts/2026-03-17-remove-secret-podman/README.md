@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Management, Cleanup
+Tags: Podman, Container, DevOps, Secret, Management, Cleanup
 
 Description: Learn how to remove secrets from Podman to clean up unused credentials and rotate sensitive data.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Security, Credentials
+Tags: ArgoCD, GitOps, Kubernetes, Security, Credential
 
 Description: Learn how to safely rotate Git repository credentials in ArgoCD without causing sync failures, including strategies for zero-downtime credential rotation.
 

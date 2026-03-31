@@ -1,6 +1,6 @@
 # How to Use BENCHMARK() Function in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Function, Performance, Benchmark, Testing
 

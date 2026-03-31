@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Prometheus, Automation, GitOps
+Tags: Calico, Kubernetes, Networking, Metric, Prometheus, Automation, GitOps
 
 Description: Automate the complete setup of Calico metrics collection, ServiceMonitor creation, alert rules deployment, and Grafana dashboard provisioning using GitOps.
 

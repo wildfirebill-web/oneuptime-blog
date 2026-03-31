@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Prometheus, Scraping, Migration, Metrics
+Tags: OpenTelemetry, Collector, Prometheus, Scraping, Migration, Metric
 
 Description: Learn how to configure the OpenTelemetry Collector to scrape Prometheus endpoints and forward metrics as OTLP, enabling a smooth migration path from Prometheus to OpenTelemetry.
 

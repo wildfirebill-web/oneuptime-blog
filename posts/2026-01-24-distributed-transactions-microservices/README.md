@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Distributed Transactions, Saga Pattern, Event Sourcing, CQRS, Eventual Consistency, DevOps
+Tags: Microservice, Distributed Transaction, Saga Pattern, Event Sourcing, CQRS, Eventual Consistency, DevOps
 
 Description: A practical guide to handling distributed transactions in microservices using the Saga pattern, outbox pattern, and eventual consistency strategies.
 

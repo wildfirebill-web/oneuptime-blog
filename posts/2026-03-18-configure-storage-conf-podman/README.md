@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Storage
+Tags: Podman, Container, DevOps, Configuration, Storage
 
 Description: Learn how to configure storage.conf to control where and how Podman stores container images, layers, and runtime data.
 

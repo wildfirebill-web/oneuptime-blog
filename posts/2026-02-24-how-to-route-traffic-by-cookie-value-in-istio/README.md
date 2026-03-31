@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Traffic Routing, Cookies, A/B Testing, Kubernetes
+Tags: Istio, Traffic Routing, Cookie, A/B Testing, Kubernetes
 
 Description: Use cookie-based traffic routing in Istio to implement sticky sessions, A/B testing, and feature flags without modifying your application code.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Notifications, Monitoring
+Tags: ArgoCD, GitOps, Kubernetes, Notification, Monitoring
 
 Description: Configure ArgoCD notifications to alert only on failed syncs and degraded health, reducing noise while catching real deployment problems.
 

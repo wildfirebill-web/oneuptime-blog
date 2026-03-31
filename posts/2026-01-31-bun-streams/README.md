@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Bun, Streams, JavaScript, Performance
+Tags: Bun, Stream, JavaScript, Performance
 
 Description: A comprehensive guide to working with ReadableStream, WritableStream, TransformStream, and Bun-specific stream APIs for efficient data processing.
 

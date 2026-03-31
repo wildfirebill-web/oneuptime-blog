@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Django, Python, IPv6, ALLOWED_HOSTS, Security, Settings, Host Header
+Tags: Django, Python, IPv6, ALLOWED_HOSTS, Security, Setting, Host Header
 
 Description: Configure Django's ALLOWED_HOSTS setting to correctly accept requests from IPv6 addresses and hostnames, preventing host header injection attacks in IPv6 deployments.
 

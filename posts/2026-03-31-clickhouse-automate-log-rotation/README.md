@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Log Rotation, Automation, Operations, Disk Management
+Tags: ClickHouse, Log Rotation, Automation, Operation, Disk Management
 
 Description: Automate ClickHouse log rotation using built-in config settings and OS-level logrotate to prevent disk exhaustion from unbounded log growth.
 

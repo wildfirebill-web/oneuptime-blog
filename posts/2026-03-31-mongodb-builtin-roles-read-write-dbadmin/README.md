@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Security, Roles, Authorization, Database
+Tags: MongoDB, Security, Role, Authorization, Database
 
-Description: Learn MongoDB's built-in roles including read, readWrite, dbAdmin, and clusterAdmin, what privileges each grants, and how to assign them to users for least-privilege access.
+Description: Learn MongoDB built-in roles including read, readWrite, dbAdmin, and clusterAdmin, what privileges each grants, and how to assign them for least-privilege access.
 
 ---
 

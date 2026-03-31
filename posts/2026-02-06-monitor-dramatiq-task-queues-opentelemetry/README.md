@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Dramatiq, Python, Task Queue, Background Jobs, Monitoring
+Tags: OpenTelemetry, Dramatiq, Python, Task Queue, Background Job, Monitoring
 
 Description: Learn how to implement comprehensive monitoring and distributed tracing for Dramatiq task queues using OpenTelemetry to track job execution, queue performance, and error rates.
 

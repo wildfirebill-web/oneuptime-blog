@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, Sockets, BIND, POSIX, Networking
+Tags: C, IPv4, Socket, BIND, POSIX, Networking
 
 Description: Learn how to bind a TCP or UDP socket to a specific IPv4 address and port in C, covering INADDR_ANY, specific interfaces, SO_REUSEADDR, SO_REUSEPORT, and port 0 for ephemeral binding.
 

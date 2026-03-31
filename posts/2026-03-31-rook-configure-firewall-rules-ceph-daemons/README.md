@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Firewall, Security, Networking, Operations
+Tags: Rook, Ceph, Firewall, Security, Networking, Operation
 
 Description: Configure firewall rules for all Ceph daemons including MON, OSD, MGR, MDS, and RGW to secure cluster communications while allowing required inter-node and client traffic.
 

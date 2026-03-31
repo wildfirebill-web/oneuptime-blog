@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Security, Data Protection, Logs, Metrics, Traces, PII, Compliance
+Tags: OpenTelemetry, Security, Data Protection, Log, Metric, Trace, PII, Compliance
 
 Description: A practical playbook for preventing sensitive data from leaking into telemetry pipelines.
 

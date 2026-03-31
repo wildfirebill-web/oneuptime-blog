@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Configuration, Server Options
+Tags: k3s, Kubernetes, Rancher, Configuration, Server Options
 
 Description: A comprehensive reference for K3s server configuration options, covering network settings, component management, and security configurations.
 

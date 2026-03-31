@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Stop Words, Text Analysis, Search, Indexing, Performance
+Tags: Elasticsearch, Stop Word, Text Analysis, Search, Indexing, Performance
 
 Description: A comprehensive guide to handling stop words in Elasticsearch, covering built-in stop word lists, custom stop words, language-specific configuration, and best practices for search relevance.
 

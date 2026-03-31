@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Window, Not Connected, Troubleshooting, Networks
+Tags: IPv4, Window, Not Connected, Troubleshooting, Network
 
 Description: Learn how to fix the 'IPv4 not connected' status in Windows Network and Sharing Center, covering TCP/IP stack resets, driver fixes, and DHCP troubleshooting.
 

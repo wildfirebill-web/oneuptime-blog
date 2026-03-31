@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Lookup Plugins, Loops, Nested Data
+Tags: Ansible, Lookup Plugins, Loop, Nested Data
 
 Description: Learn how to use the Ansible subelements lookup plugin to iterate over nested lists within complex data structures in your playbooks.
 

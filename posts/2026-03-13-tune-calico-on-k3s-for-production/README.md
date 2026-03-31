@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Performance, Tuning, K3s
+Tags: Calico, Kubernetes, Networking, Performance, Tuning, k3s
 
 Description: Apply production-grade Calico tuning on K3s clusters for edge and IoT production deployments.
 

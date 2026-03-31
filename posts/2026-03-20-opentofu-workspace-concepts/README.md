@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Workspaces, Environments, State Management, Infrastructure as Code
+Tags: OpenTofu, Workspaces, Environment, State Management, Infrastructure as Code
 
 Description: Understand OpenTofu workspaces, what they are, when to use them, and when directory-based environment separation is a better choice.
 

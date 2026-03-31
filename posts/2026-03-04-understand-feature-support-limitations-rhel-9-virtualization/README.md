@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RHEL, KVM, Virtualization, Support, Features, Linux
+Tags: RHEL, KVM, Virtualization, Support, Feature, Linux
 
 Description: Learn about supported features, known limitations, and compatibility considerations for KVM virtualization on RHEL 9.
 

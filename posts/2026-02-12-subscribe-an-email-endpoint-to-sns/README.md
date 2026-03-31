@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SNS, Email, Notifications
+Tags: AWS, SNS, Email, Notification
 
 Description: Learn how to subscribe email addresses to Amazon SNS topics, handle confirmation, set up message filtering, and manage email notification formatting.
 

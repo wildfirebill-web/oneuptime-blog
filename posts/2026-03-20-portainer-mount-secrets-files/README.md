@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Secrets, Volumes, Security, DevOps
+Tags: Portainer, Kubernetes, Secret, Volumes, Security, DevOps
 
 Description: Learn how to mount Kubernetes Secrets as files inside containers using Portainer for secure credential injection, TLS certificates, and SSH key management.
 

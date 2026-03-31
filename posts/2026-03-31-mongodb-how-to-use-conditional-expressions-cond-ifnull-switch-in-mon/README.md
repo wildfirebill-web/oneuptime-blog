@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $cond, $ifNull, $switch, Conditional Expressions
+Tags: MongoDB, Aggregation, $cond, $ifNull, $switch, Conditional Expression
 
 Description: Learn how to use $cond, $ifNull, and $switch conditional expressions in MongoDB aggregation pipelines to handle branching logic.
 

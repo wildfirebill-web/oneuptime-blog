@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Testing, Unit Tests, TDD, Backend, Software Quality
+Tags: Go, Testing, Unit Test, TDD, Backend, Software Quality
 
 Description: A hands-on guide to writing effective unit tests in Go using the built-in testing package, covering test functions, table-driven tests, subtests, helpers, benchmarks, and coverage.
 

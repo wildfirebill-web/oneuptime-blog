@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tcpdump, DNS, Linux, UDP, Networking, Diagnostics
+Tags: tcpdump, DNS, Linux, UDP, Networking, Diagnostic
 
 Description: Capture and analyze DNS query and response packets with tcpdump to debug resolution failures, identify slow DNS servers, and monitor DNS traffic patterns.
 

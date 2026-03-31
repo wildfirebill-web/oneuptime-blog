@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, Multi-Container, DevOps, Microservices
+Tags: Docker, Networking, Multi-Container, DevOps, Microservice
 
 Description: Learn to connect Docker containers across different networks using multiple network attachments, network aliases, and gateway configurations for complex microservice architectures.
 

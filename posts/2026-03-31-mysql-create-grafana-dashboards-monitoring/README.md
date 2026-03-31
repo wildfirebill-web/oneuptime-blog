@@ -35,7 +35,7 @@ To build your own, click "New Dashboard" and add panels manually.
 
 Use this PromQL expression:
 
-```
+```text
 rate(mysql_global_status_questions[5m])
 ```
 
@@ -43,13 +43,13 @@ Set visualization to "Time series", title to "Queries Per Second". This shows ov
 
 ### Panel 2: Active Connections vs Max
 
-```
+```text
 mysql_global_status_threads_connected
 ```
 
 Add a second query for the limit:
 
-```
+```text
 mysql_global_variables_max_connections
 ```
 
@@ -59,7 +59,7 @@ Display both as lines with different colors to visualize how close you are to th
 
 The buffer pool hit rate indicates how often data is served from memory rather than disk:
 
-```
+```text
 rate(mysql_global_status_innodb_buffer_pool_read_requests[5m]) /
 (rate(mysql_global_status_innodb_buffer_pool_read_requests[5m]) +
  rate(mysql_global_status_innodb_buffer_pool_reads[5m]))
@@ -69,7 +69,7 @@ Display as a gauge or stat panel with a threshold: green above 0.99, yellow betw
 
 ### Panel 4: Slow Queries Per Minute
 
-```
+```text
 rate(mysql_global_status_slow_queries[1m]) * 60
 ```
 
@@ -77,7 +77,7 @@ This shows the rate of slow queries. A spike here indicates query performance de
 
 ### Panel 5: Replication Lag (if monitoring replicas)
 
-```
+```text
 mysql_slave_status_seconds_behind_master
 ```
 
@@ -87,7 +87,7 @@ Set thresholds: green under 5 seconds, yellow under 30, red above 30.
 
 Add alert rules directly on panels. For the connection panel:
 
-```
+```text
 mysql_global_status_threads_connected / mysql_global_variables_max_connections > 0.85
 ```
 

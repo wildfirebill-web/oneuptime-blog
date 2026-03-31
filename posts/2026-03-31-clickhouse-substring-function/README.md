@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, String Function, SQL, UTF-8, substring
+Tags: ClickHouse, String Function, SQL, UTF-8, Substring
 
 Description: substring(str, offset, length) extracts a portion of a string by byte position. substringUTF8() counts by Unicode code points for multi-byte text. Includes practical examples.
 

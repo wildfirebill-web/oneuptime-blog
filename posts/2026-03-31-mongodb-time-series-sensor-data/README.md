@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Time series, Sensor data, IoT, Collection
+Tags: MongoDB, Time Series, Sensor Data, IoT, Collection
 
 Description: Learn how to create and use MongoDB time series collections to ingest, store, and query IoT sensor data efficiently with automatic bucketing and compression.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Secret Rotation, Zero Downtime, Security, Operations
+Tags: Dapr, Secret Rotation, Zero Downtime, Security, Operation
 
 Description: Learn strategies for rotating database passwords, API keys, and certificates in Dapr-enabled services without causing service interruptions.
 

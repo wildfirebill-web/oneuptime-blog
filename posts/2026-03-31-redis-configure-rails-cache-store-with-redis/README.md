@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Ruby On Rails, Caching, Cache Store, Ruby
+Tags: Redis, Ruby On Rail, Caching, Cache Store, Ruby
 
 Description: Configure Ruby on Rails to use Redis as the application cache store using the built-in redis-cache-store for fast, distributed caching across processes.
 

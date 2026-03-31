@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Messaging, Kubernetes, Microservices
+Tags: Dapr, Pub/Sub, Messaging, Kubernetes, Microservice
 
 Description: Implement Dapr topic subscriptions using declarative YAML, programmatic subscriptions, and handle messages reliably with retry and dead-letter support.
 

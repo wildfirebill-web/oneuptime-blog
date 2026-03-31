@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Google Cloud Pub/Sub, AWS SNS, Messaging, Notifications, Cloud Migration
+Tags: GCP, Google Cloud Pub/Sub, AWS SNS, Messaging, Notification, Cloud Migration
 
 Description: A practical guide to migrating Amazon SNS notification topics and subscriptions to Google Cloud Pub/Sub push subscriptions for event-driven messaging workflows.
 

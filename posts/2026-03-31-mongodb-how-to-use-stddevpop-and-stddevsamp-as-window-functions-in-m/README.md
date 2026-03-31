@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Window Functions, Statistics, Aggregation, Analytics
+Tags: MongoDB, Window Function, Statistics, Aggregation, Analytics
 
 Description: Learn how to use $stdDevPop and $stdDevSamp as window functions in MongoDB to compute rolling and partition-level standard deviations for statistical analysis.
 

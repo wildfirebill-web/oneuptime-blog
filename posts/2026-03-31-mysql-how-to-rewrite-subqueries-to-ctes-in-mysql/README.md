@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, CTE, Common Table Expressions, Subqueries, Query Optimization
+Tags: MySQL, CTE, Common Table Expression, Subqueries, Query Optimization
 
 Description: Learn how to rewrite complex MySQL subqueries as Common Table Expressions (CTEs) to improve readability, maintainability, and in some cases performance.
 

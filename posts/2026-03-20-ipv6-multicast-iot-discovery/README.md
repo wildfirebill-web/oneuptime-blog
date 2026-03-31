@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Multicast, IoT, MDNS, CoAP, Discovery
+Tags: IPv6, Multicast, IoT, mDNS, CoAP, Discovery
 
 Description: Understand how IPv6 multicast enables efficient IoT device discovery and group communication without broadcast flooding, using mDNS, CoAP multicast, and MLD.
 

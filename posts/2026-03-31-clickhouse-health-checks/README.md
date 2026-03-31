@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Health Check, Monitoring, Kubernetes, Operations
+Tags: ClickHouse, Health Check, Monitoring, Kubernetes, Operation
 
 Description: Learn how to configure ClickHouse health check endpoints, integrate with load balancers and Kubernetes, and build custom liveness probes.
 

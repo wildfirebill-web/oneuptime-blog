@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, CLI, Placement Group, PG, Operations, Troubleshooting
+Tags: Rook, Ceph, CLI, Placement Group, PG, Operation, Troubleshooting
 
 Description: Master the ceph pg commands to inspect, repair, force-recover, and manage placement groups in a Ceph cluster.
 

@@ -1,8 +1,8 @@
-# How to Query Documents with Multiple Conditions on the Same Array Element in MongoDB
+# How to Query MongoDB with Multiple Conditions on Array Elements
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $elemMatch, Array Query, Subdocument, Query Operators
+Tags: MongoDB, $elemMatch, Array Query, Subdocument, Query Operator
 
 Description: Learn how to use $elemMatch in MongoDB to enforce that multiple query conditions apply to the same element within an array field.
 

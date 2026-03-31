@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, OpenTelemetry, Observability, Traces, Metrics, Logs
+Tags: Portainer, Docker, OpenTelemetry, Observability, Trace, Metric, Log
 
 Description: Deploy the OpenTelemetry Collector as a centralized telemetry pipeline via Portainer to collect, process, and export traces, metrics, and logs from containerized applications.
 

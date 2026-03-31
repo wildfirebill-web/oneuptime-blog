@@ -2,7 +2,7 @@
 
 Author: [devneelpatel](https://www.github.com/devneelpatel)
 
-Tags: Observability, OpenTelemetry, Metrics, Traces, Logs, Open Source
+Tags: Observability, OpenTelemetry, Metric, Trace, Log, Open Source
 
 Description: Metrics tell you what changed. Traces tell you where. Logs tell you why. Here’s how to design each signal intentionally with OpenTelemetry (and avoid wasting money or time).
 

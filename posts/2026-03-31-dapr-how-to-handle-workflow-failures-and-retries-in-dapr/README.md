@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Workflow, Error Handling, Retries, Resilience
 
-Description: Learn how to handle failures and configure retry policies in Dapr Workflow so your long-running processes recover gracefully from transient errors.
+Description: Learn how to handle activity failures and configure retry policies in Dapr Workflow to build resilient orchestrations that recover from transient errors automatically.
 
 ---
 

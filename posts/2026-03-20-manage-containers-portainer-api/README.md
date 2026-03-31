@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Containers, Automation, Docker
+Tags: Portainer, API, Container, Automation, Docker
 
 Description: Learn how to list, start, stop, restart, and inspect Docker containers using the Portainer REST API.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Debugging, Variables, Automation, DevOps, Troubleshooting, Register
+Tags: Ansible, Debugging, Variable, Automation, DevOps, Troubleshooting, Register
 
 Description: Learn how to diagnose and fix common Ansible register variable capture errors, including undefined variables, loop handling, and scope issues.
 

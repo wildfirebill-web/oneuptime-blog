@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Migration, K3s, CNI
+Tags: Calico, Kubernetes, Networking, Migration, k3s, CNI
 
 Description: Migrate existing K3s workloads from Flannel to Calico for network policy enforcement without permanent data loss.
 

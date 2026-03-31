@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Resource Management, Container Management
+Tags: Podman, Container, DevOps, Resource Management, Container Management
 
 Description: Learn how to dynamically update CPU, memory, and other resource limits on running Podman containers without restarting them.
 

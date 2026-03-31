@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Operations, DevOps
+Tags: Portainer, Docker, Container, Operation, DevOps
 
 Description: Learn how to pause and unpause Docker containers in Portainer to temporarily freeze container execution without stopping or losing its state.
 

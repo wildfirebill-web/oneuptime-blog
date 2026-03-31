@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, IPv6, Serverless, VPC Connector, Dual-Stack
+Tags: GCP, Cloud Function, IPv6, Serverless, VPC Connector, Dual-Stack
 
 Description: Configure GCP Cloud Functions to use IPv6 networking via VPC Connector for private IPv6 resource access.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cuckoo Filter, RedisBloom, Commands, NoSql
+Tags: Redis, Cuckoo Filter, RedisBloom, Command, NoSQL
 
 Description: Learn how to use CF.EXISTS in Redis to test whether an item is present in a Cuckoo filter, and understand its false positive behavior.
 

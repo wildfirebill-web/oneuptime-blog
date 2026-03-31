@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, CloudEvents, Kubernetes, Knative, Event-Driven
+Tags: Istio, CloudEvent, Kubernetes, Knative, Event-Driven
 
 Description: How to configure Istio service mesh for processing CloudEvents on Kubernetes, including routing based on event attributes, filtering, and observability for event pipelines.
 

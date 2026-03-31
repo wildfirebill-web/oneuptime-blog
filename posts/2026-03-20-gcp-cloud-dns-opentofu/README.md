@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Cloud DNS, DNS, Zones, Record, Private DNS, Infrastructure as Code
+Tags: OpenTofu, GCP, Cloud DNS, DNS, Zone, Record, Private DNS, Infrastructure as Code
 
 Description: Learn how to create and manage GCP Cloud DNS managed zones and record sets using OpenTofu, including public zones, private VPC zones, DNS peering, and forwarding for hybrid connectivity.
 

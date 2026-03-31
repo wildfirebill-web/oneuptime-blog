@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Node.js, Sets, Sorted Sets, ioredis, Leaderboards
+Tags: Redis, Node.js, Set, Sorted Set, ioredis, Leaderboard
 
 Description: Learn how to use Redis Sets and Sorted Sets in Node.js for unique collections, set operations, leaderboards, and ranked data with ioredis.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Tofu Controller, Terraform, ConfigMaps, Variables, GitOps, Kubernetes
+Tags: Flux CD, Tofu Controller, Terraform, ConfigMap, Variable, GitOps, Kubernetes
 
 Description: Pass Terraform variables from Kubernetes ConfigMaps using the Tofu Controller to share non-sensitive configuration across multiple Terraform resources.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Systemd, Reload
+Tags: Podman, Container, DevOps, Quadlet, Systemd, Reload
 
 Description: Learn how to configure reload commands in Quadlet containers to gracefully reload application configuration without restarting the container.
 

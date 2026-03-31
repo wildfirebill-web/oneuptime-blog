@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Semantic Conventions, CloudEvents, Span Attributes
+Tags: OpenTelemetry, Semantic Conventions, CloudEvent, Span Attributes
 
 Description: Apply OpenTelemetry semantic conventions for CloudEvents attributes to ensure consistent and queryable event-driven telemetry data.
 

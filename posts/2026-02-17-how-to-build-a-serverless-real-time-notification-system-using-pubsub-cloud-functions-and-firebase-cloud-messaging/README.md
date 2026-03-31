@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Pub/Sub, Cloud Functions, Firebase Cloud Messaging, Serverless, Notifications
+Tags: GCP, Pub/Sub, Cloud Function, Firebase Cloud Messaging, Serverless, Notification
 
 Description: Build a serverless real-time notification system on Google Cloud using Pub/Sub, Cloud Functions, and Firebase Cloud Messaging for push notifications.
 

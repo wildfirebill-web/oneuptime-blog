@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Performance Advisor, Indexes, Query Optimization
+Tags: MongoDB, Atlas, Performance Advisor, Index, Query Optimization
 
 Description: Use MongoDB Atlas Performance Advisor to automatically identify slow queries and get recommended index improvements for your collections.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Modules, Infrastructure as Code, DevOps
+Tags: Terraform, HCL, Module, Infrastructure as Code, DevOps
 
 Description: Learn how to reference module outputs in Terraform to share data between modules, build modular infrastructure, and create reusable components.
 

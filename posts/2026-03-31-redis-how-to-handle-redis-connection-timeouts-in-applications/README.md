@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Connection Timeouts, Application Performance, Error Handling, Node.js, Python
+Tags: Redis, Connection Timeout, Application Performance, Error Handling, Node.js, Python
 
 Description: Learn how to configure, detect, and gracefully handle Redis connection timeouts in your applications to improve reliability and user experience.
 

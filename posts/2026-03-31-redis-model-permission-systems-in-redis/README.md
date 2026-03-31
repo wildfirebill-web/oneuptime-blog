@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Permissions, RBAC, Authorization, Data Modeling, Access Control
+Tags: Redis, Permission, RBAC, Authorization, Data Modeling, Access Control
 
 Description: Design role-based and attribute-based permission systems in Redis using sets and hashes for fast authorization checks with sub-millisecond latency.
 

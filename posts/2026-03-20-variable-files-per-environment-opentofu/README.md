@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Environment Management, tfvars, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Environment Management, tfvars, Infrastructure as Code, DevOps
 
 Description: Learn how to organize OpenTofu variable files for multiple environments (development, staging, production) with a consistent, maintainable structure.
 

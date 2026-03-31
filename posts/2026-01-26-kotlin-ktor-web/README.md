@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kotlin, Ktor, Web Development, Backend, REST API, Coroutines, JVM
+Tags: Kotlin, Ktor, Web Development, Backend, REST API, Coroutine, JVM
 
 Description: A practical guide to building web applications with Ktor, the asynchronous Kotlin framework from JetBrains. Learn routing, authentication, database integration, and deployment best practices.
 

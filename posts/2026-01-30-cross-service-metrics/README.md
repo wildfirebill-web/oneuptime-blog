@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Microservices, SRE
+Tags: Observability, Metric, Microservice, SRE
 
 Description: Learn how to design metrics that span multiple services for end-to-end visibility.
 

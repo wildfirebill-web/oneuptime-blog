@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Go, Connection Pool, Metrics, Database, Monitoring
+Tags: OpenTelemetry, Go, Connection Pool, Metric, Database, Monitoring
 
 Description: Implement comprehensive monitoring of database connection pools using OpenTelemetry metrics to track utilization, wait times, and connection lifecycle events for optimal resource management.
 

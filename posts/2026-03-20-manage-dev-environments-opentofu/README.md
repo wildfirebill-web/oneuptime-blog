@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Development Environments, Infrastructure as Code, AWS, Workspaces, DevOps, Cost Optimization
+Tags: OpenTofu, Development Environment, Infrastructure as Code, AWS, Workspaces, DevOps, Cost Optimization
 
 Description: Learn how to manage development environments with OpenTofu using right-sized resources, automatic teardown, and environment isolation to balance developer productivity with cost control.
 

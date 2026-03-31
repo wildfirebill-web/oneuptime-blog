@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, DestinationRule, Traffic Policy, Subsets, Kubernetes
+Tags: Istio, DestinationRule, Traffic Policy, Subset, Kubernetes
 
 Description: Learn how to override traffic policies for specific subsets in Istio DestinationRule to apply different settings per service version.
 

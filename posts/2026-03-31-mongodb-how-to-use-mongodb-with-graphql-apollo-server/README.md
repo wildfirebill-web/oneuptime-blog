@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Graphql, Apollo Server, Node.Js, Database
+Tags: MongoDB, GraphQL, Apollo Server, Node.js, Database
 
 Description: Learn how to build a GraphQL API backed by MongoDB using Apollo Server and the native Node.js driver, with resolvers, queries, and mutations.
 

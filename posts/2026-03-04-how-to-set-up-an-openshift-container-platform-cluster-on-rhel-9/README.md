@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Linux, Containers, OpenShift
+Tags: RHEL, Linux, Container, OpenShift
 
 Description: Step-by-step guide on set up an openshift container platform cluster on rhel 9 with practical examples and commands.
 

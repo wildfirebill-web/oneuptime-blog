@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Multi-Tenancy, Object Storage, Rgw, Kubernetes
+Tags: Rook, Ceph, Multi-Tenancy, Object Storage, RGW, Kubernetes
 
 Description: Configure multi-tenancy in Rook Object Store using RGW tenants to isolate buckets and users between teams or customers sharing the same cluster.
 

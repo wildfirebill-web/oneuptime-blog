@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB Atlas, GraphQL, API, App Services, Data Access
+Tags: MongoDB Atlas, GraphQL, API, App Service, Data Access
 
 Description: Learn how to set up and use MongoDB Atlas GraphQL API to query and mutate data with auto-generated schemas, custom resolvers, and authentication.
 

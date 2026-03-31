@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Storage Engine, ARCHIVE, Compression, Log
+Tags: MySQL, Storage Engine, Archive, Compression, Log
 
 Description: The MySQL ARCHIVE storage engine is designed for storing large volumes of compressed, rarely-accessed historical or log data with minimal disk space usage.
 

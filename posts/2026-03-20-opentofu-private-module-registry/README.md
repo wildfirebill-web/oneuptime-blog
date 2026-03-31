@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Private-registry
+Tags: OpenTofu, Terraform, IaC, Module, Private-registry
 
 Description: Learn how to use private module registries in OpenTofu for sharing modules within your organization securely.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Consumer Groups, Rebalancing, Distributed Systems, Message Queues, Performance
+Tags: Kafka, Consumer Group, Rebalancing, Distributed System, Message Queue, Performance
 
 Description: A comprehensive guide to understanding, managing, and optimizing Kafka consumer group rebalancing to minimize processing disruptions and improve application reliability.
 

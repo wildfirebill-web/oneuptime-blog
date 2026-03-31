@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Audit, Logging, Compliance, Security
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Audit, Logging, Compliance, Security
 
 Description: Learn how to set up audit logging for SOPS secret access in Flux to track who decrypts secrets and when for compliance and security monitoring.
 

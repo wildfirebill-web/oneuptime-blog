@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, AI, Machine Learning, Recipes, RAG, Chatbot
+Tags: Podman, Container, DevOps, AI, Machine Learning, Recipes, RAG, Chatbot
 
 Description: Learn how to use the pre-built AI recipes in Podman AI Lab to quickly deploy chatbots, summarizers, and RAG applications.
 

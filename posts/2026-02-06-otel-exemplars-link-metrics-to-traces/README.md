@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Exemplars, Metrics, Traces, Prometheus
+Tags: OpenTelemetry, Exemplars, Metric, Trace, Prometheus
 
 Description: Configure OpenTelemetry exemplars to attach trace context to metric data points so you can jump from a metric spike to related traces.
 

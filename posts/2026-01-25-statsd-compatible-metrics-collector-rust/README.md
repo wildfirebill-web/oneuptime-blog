@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, StatsD, Metrics, Monitoring, Observability
+Tags: Rust, StatsD, Metric, Monitoring, Observability
 
 Description: A hands-on guide to building a StatsD-compatible metrics collector in Rust, covering UDP server implementation, metric parsing, aggregation, and flushing to backends.
 

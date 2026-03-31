@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory Optimization, Compression, Performance, Data Structures
+Tags: Redis, Memory Optimization, Compression, Performance, Data Structure
 
 Description: Learn practical techniques to reduce Redis memory usage through value compression, compact encodings, and efficient data structure choices.
 

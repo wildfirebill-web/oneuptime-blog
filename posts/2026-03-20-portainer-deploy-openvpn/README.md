@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, OpenVPN, VPN, Self-Hosted, Networks, Privacy
+Tags: Portainer, Docker, OpenVPN, VPN, Self-Hosted, Network, Privacy
 
 Description: Deploy OpenVPN via Portainer using the kylemanna/openvpn image for a flexible, widely-compatible VPN server with easy client certificate management.
 

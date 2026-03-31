@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, systemd, Availability, Restart, Operations
+Tags: Redis, Systemd, Availability, Restart, Operation
 
 Description: Configure Redis to restart automatically on failure using systemd, with restart policies, health checks, and alerting for restart events in production.
 

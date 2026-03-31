@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Replicas, Services, High Availability
+Tags: Portainer, Docker Swarm, Replica, Service, High Availability
 
 Description: Set and manage the number of Docker Swarm service replicas in Portainer for availability and performance tuning.
 

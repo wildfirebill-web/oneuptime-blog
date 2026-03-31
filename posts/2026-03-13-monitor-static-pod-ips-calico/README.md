@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, IPAM, Static IP, Monitoring, Networking, StatefulSets
+Tags: Calico, Kubernetes, IPAM, Static IP, Monitoring, Networking, StatefulSet
 
 Description: Learn how to monitor static pod IP assignments in Calico to ensure that pods maintain consistent IP addresses across restarts, which is critical for stateful workloads.
 

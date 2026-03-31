@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, IFNULL, NULL Handling, SQL Functions
+Tags: MySQL, ifNull, NULL Handling, SQL Functions
 
 Description: Learn how to use the IFNULL() function in MySQL to replace NULL values with a default, with practical SELECT and aggregate examples.
 

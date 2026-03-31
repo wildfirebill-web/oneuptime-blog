@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Metrics, Performance, Monitoring, OpenTelemetry, Observability
+Tags: React, Metric, Performance, Monitoring, OpenTelemetry, Observability
 
 Description: Learn how to implement custom metrics in React applications to monitor component render times, user interactions, and business KPIs using OpenTelemetry.
 

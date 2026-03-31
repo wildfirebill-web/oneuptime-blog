@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, CLI, Commands, Infrastructure as Code
+Tags: Terraform, Module, CLI, Command, Infrastructure as Code
 
 Description: Learn how to use Terraform commands to list, inspect, and understand the modules in your configuration for better visibility and management of module dependencies.
 

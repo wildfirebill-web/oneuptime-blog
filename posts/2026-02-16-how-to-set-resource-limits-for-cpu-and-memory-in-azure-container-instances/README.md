@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Container Instances, Resource Limits, CPU, Memory, Performance, Cloud Computing
+Tags: Azure, Container Instances, Resource Limit, CPU, Memory, Performance, Cloud Computing
 
 Description: How to configure CPU and memory resource requests and limits for Azure Container Instances to optimize performance and control costs.
 

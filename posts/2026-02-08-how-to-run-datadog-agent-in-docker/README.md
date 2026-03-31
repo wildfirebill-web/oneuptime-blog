@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Datadog, Monitoring, APM, Observability, DevOps, Metrics
+Tags: Docker, Datadog, Monitoring, APM, Observability, DevOps, Metric
 
 Description: Learn how to deploy the Datadog Agent in Docker to collect metrics, traces, and logs from your containerized applications.
 

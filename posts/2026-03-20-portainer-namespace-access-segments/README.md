@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, RBAC, Security
+Tags: Portainer, Kubernetes, Namespace, RBAC, Security
 
 Description: Learn how to use Kubernetes namespaces with Portainer's access control to segment environments by team, ensuring each team only sees and manages their own workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Google Cloud, Cloud Monitoring, Metrics, Observability
+Tags: OpenTelemetry, Google Cloud, Cloud Monitoring, Metric, Observability
 
 Description: Learn how to export OpenTelemetry metrics to Google Cloud Monitoring using the OTLP exporter and the OpenTelemetry Collector.
 

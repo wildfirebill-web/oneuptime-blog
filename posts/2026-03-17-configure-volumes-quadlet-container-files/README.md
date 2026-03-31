@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Volumes, Storage
+Tags: Podman, Container, DevOps, Quadlet, Volumes, Storage
 
 Description: Learn how to configure bind mounts and named volumes in Podman Quadlet container files for persistent data storage.
 

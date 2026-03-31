@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, Feature Flags, GitOps, ConfigMaps, Progressive Delivery
+Tags: Flux CD, Kubernetes, Feature Flag, GitOps, ConfigMap, Progressive Delivery
 
 Description: A practical guide to implementing feature flags in Kubernetes applications using Flux CD, ConfigMaps, and GitOps workflows.
 

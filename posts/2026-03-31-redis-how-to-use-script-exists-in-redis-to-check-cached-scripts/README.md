@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lua, Scripting, Commands, Cache
+Tags: Redis, Lua, Scripting, Command, Cache
 
 Description: Learn how to use SCRIPT EXISTS in Redis to check whether Lua scripts are present in the server script cache before calling EVALSHA, preventing NOSCRIPT errors.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, GNOME, Extensions, Desktop Customization, Linux
+Tags: RHEL, GNOME, Extension, Desktop Customization, Linux
 
 Description: Install and manage GNOME Shell extensions on RHEL to customize the desktop with additional features like system monitors, clipboard managers, and workspace tools.
 

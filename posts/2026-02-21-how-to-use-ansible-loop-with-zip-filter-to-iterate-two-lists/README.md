@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Jinja2 Filters, Parallel Iteration
+Tags: Ansible, Loop, Jinja2 Filters, Parallel Iteration
 
 Description: Learn how to use the zip filter in Ansible to iterate over two or more lists in parallel, pairing corresponding elements together.
 

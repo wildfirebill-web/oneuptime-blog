@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Array Operators, $map, Database
+Tags: MongoDB, Aggregation, Array Operator, $map, Database
 
 Description: Learn how to use $map in MongoDB aggregation to apply a transformation expression to each element in an array, producing a new transformed array.
 

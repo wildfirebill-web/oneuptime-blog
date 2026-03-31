@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Slack, CI/CD, Notifications, DevOps, Automation
+Tags: OpenTofu, Slack, CI/CD, Notification, DevOps, Automation
 
 Description: Learn how to send Slack notifications from OpenTofu CI/CD pipelines to alert your team about plan changes, apply results, and deployment failures.
 

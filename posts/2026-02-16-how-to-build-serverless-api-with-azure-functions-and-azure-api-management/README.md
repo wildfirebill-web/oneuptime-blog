@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Functions, API Management, Serverless, REST API, Cloud, API Design
+Tags: Azure, Function, API Management, Serverless, REST API, Cloud, API Design
 
 Description: Build a complete serverless REST API using Azure Functions for business logic and Azure API Management for routing, security, and documentation.
 

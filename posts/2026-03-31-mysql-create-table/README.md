@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DDL, Table, Schema, Database
+Tags: MySQL, SQL, DDL, Table, Schema
 
 Description: Create MySQL tables with CREATE TABLE, define columns and data types, add constraints and indexes, and understand InnoDB table options.
 

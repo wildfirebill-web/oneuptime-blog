@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Storage Engine, BLACKHOLE, Replication, Relay
+Tags: MySQL, Storage Engine, Blackhole, Replication, Relay
 
 Description: The MySQL BLACKHOLE storage engine accepts and discards all data written to it while still writing to the binary log, making it useful for replication relay and benchmarking.
 

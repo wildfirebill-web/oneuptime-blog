@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Export, Backup
+Tags: Portainer, Docker, Image, Export, Backup
 
 Description: Export Docker images as tar archives from Portainer for backup, transfer, or use in offline environments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, etcd, RBAC, Documentation, Operations
+Tags: Calico, Kubernetes, Networking, etcd, RBAC, Documentation, Operation
 
 Description: How to create and maintain operational documentation for Calico etcd RBAC configurations, including role inventories, credential management procedures, and incident runbooks.
 

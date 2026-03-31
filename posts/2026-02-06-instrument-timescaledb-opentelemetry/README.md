@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, TimescaleDB, PostgreSQL, Time-Series Database, Observability, Metrics, Tracing, Hypertables
+Tags: OpenTelemetry, TimescaleDB, PostgreSQL, Time-Series Database, Observability, Metric, Tracing, Hypertables
 
 Description: Learn how to instrument TimescaleDB with OpenTelemetry for monitoring hypertable performance, continuous aggregates, compression, and query latency.
 

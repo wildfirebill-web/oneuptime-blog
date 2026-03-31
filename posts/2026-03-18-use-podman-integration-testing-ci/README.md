@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CI/CD, Integration Testing, Testing
+Tags: Podman, Container, DevOps, CI/CD, Integration Testing, Testing
 
 Description: Learn how to use Podman pods and networks to set up multi-service integration testing environments in your CI/CD pipelines.
 

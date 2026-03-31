@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: PostgreSQL, Database, SQL, Data Types
+Tags: PostgreSQL, Database, SQL, Data Type
 
 Description: Create custom data types in PostgreSQL including composite types, enums, domains, and range types for stronger data modeling and validation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Monorepo, CI/CD, DevOps, Automation, Continuous Integration
+Tags: GitHub Action, Monorepo, CI/CD, DevOps, Automation, Continuous Integration
 
 Description: A comprehensive guide to configuring GitHub Actions for monorepo projects.
 

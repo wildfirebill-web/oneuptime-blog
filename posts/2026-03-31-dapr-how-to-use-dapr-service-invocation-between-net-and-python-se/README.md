@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Service Invocation, Dotnet, Python, Microservices
+Tags: Dapr, Service Invocation, DotNet, Python, Microservice
 
 Description: Set up Dapr service invocation between a .NET caller and a Python service, including SDK usage, HTTP API, and error handling patterns.
 

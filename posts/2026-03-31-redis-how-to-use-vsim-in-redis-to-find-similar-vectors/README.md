@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Sets, Similarity Search, Nearest Neighbor, Embeddings
+Tags: Redis, Vector Set, Similarity Search, Nearest Neighbor, Embedding
 
 Description: Learn how to use VSIM in Redis to perform approximate nearest-neighbor search and find the most similar vectors in a Vector Set.
 

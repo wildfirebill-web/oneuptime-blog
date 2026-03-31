@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, SOPS, TLS, Certificates, Security
+Tags: Flux CD, GitOps, Kubernetes, SOPS, TLS, Certificate, Security
 
 Description: Learn how to safely store TLS certificates and private keys in Git using SOPS encryption and deploy them automatically with Flux CD.
 

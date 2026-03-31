@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, S3, Presigned URLs, Security, Access Control
+Tags: AWS, S3, Presigned URL, Security, Access Control
 
 Description: Learn how to generate S3 presigned URLs to provide temporary, secure access to private objects without exposing your AWS credentials.
 

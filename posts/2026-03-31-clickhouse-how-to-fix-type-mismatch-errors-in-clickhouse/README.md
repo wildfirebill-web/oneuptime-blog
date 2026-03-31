@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Data Types, SQL Errors, Troubleshooting, Schema Design
+Tags: ClickHouse, Data Type, SQL Errors, Troubleshooting, Schema Design
 
 Description: Fix ClickHouse type mismatch errors by understanding implicit casting rules, using explicit casts, and aligning column types during schema design.
 

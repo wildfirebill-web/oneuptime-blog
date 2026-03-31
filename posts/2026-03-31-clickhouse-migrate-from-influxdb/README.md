@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, InfluxDB, Migration, Database, Time-series, Metrics
+Tags: ClickHouse, InfluxDB, Migration, Database, Time-Series, Metric
 
 Description: Migrate time-series metrics from InfluxDB to ClickHouse by exporting line protocol data, mapping measurements and tags to columns, and rewriting Flux and InfluxQL queries in SQL.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, OSD, Automation, Replacement, Operations
+Tags: Rook, Ceph, OSD, Automation, Replacement, Operation
 
 Description: Automate the Ceph OSD replacement workflow with a script that safely removes a failed OSD, triggers rebalancing, and prepares the slot for a new drive.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, OpenTelemetry, Observability, Traces, Metrics, Logs, Kubernetes, Helm, Infrastructure as Code
+Tags: OpenTofu, OpenTelemetry, Observability, Trace, Metric, Log, Kubernetes, Helm, Infrastructure as Code
 
 Description: Learn how to deploy the OpenTelemetry Collector on Kubernetes using OpenTofu to collect, process, and export traces, metrics, and logs to multiple backends.
 

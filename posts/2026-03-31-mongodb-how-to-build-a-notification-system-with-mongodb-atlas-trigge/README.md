@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Triggers, Notifications, App Services
+Tags: MongoDB, Atlas, Trigger, Notification, App Service
 
 Description: Build a real-time notification system using MongoDB Atlas database triggers that automatically send alerts when data changes in your collections.
 

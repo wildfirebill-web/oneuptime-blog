@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Registry
+Tags: Podman, Container, DevOps, Container Image, Registry
 
 Description: Learn how to pull container images from specific registries using Podman, including Docker Hub, Quay.io, Red Hat Registry, and private registries.
 

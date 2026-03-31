@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, File Processing, FastAPI, Async, Celery, S3, Background Jobs
+Tags: Python, File Processing, FastAPI, Async, Celery, S3, Background Job
 
 Description: Learn how to build a robust file processing service in Python. This guide covers async file uploads, background processing with Celery, progress tracking, and handling large files efficiently.
 

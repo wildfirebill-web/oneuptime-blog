@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Rbd, Storageclass, Kubernetes, Block Storage
+Tags: Rook, Ceph, RBD, StorageClass, Kubernetes, Block Storage
 
-Description: Create a Kubernetes StorageClass backed by Rook Ceph RBD to provision persistent block volumes dynamically for your workloads.
+Description: Learn how to create and configure a Kubernetes StorageClass for Rook-Ceph RBD block storage, including CSI parameters, volume binding, and reclaim policies.
 
 ---
 

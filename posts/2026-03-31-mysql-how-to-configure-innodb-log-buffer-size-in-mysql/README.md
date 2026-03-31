@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Log Buffer, Configuration, Performance
+Tags: MySQL, InnoDB, Log Buffer, Configuration, Performance
 
 Description: Learn how to configure the InnoDB log buffer size in MySQL to reduce disk I/O for large transactions and improve write throughput.
 

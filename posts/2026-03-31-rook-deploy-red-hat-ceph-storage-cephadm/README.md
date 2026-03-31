@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Red Hat, Cephadm, Deployment, Storage
+Tags: Rook, Ceph, Red Hat, cephadm, Deployment, Storage
 
 Description: Step-by-step guide to deploying Red Hat Ceph Storage using cephadm, covering bootstrap, adding hosts, OSDs, and verifying cluster health.
 

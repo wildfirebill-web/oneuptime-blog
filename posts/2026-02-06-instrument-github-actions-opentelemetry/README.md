@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, GitHub Actions, CI/CD, Tracing, Observability, DevOps
+Tags: OpenTelemetry, GitHub Action, CI/CD, Tracing, Observability, DevOps
 
 Description: Learn how to instrument GitHub Actions workflows with OpenTelemetry to gain full visibility into your CI/CD pipeline performance and failures.
 

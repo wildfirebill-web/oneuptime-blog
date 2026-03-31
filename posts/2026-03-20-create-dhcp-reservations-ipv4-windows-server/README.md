@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Window, DHCP, IPv4, Windows Server, Reservations, PowerShell
+Tags: Window, DHCP, IPv4, Windows Server, Reservation, PowerShell
 
 Description: Create DHCP reservations on Windows Server to ensure specific devices always receive the same IPv4 address based on their MAC address, using both PowerShell and the DHCP Manager GUI.
 

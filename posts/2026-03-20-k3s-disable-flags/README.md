@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Configuration, Disable Flags, Optimization
+Tags: k3s, Kubernetes, Rancher, Configuration, Disable Flags, Optimization
 
 Description: Learn how to use K3s disable flags to turn off built-in components and replace them with alternatives suited to your environment.
 

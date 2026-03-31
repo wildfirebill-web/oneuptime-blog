@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Logical Replication, IPv4, Database, Publication, Subscriptions, Migration
+Tags: PostgreSQL, Logical Replication, IPv4, Database, Publication, Subscription, Migration
 
 Description: Learn how to configure PostgreSQL logical replication to replicate specific tables from an IPv4 publisher to a subscriber for migrations and selective replication.
 

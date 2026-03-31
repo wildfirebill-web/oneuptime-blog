@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Database, Read Replicas, Cross-Region, RDS, Aurora, Infrastructure as Code
+Tags: Terraform, AWS, Database, Read Replica, Cross-Region, RDS, Aurora, Infrastructure as Code
 
 Description: Learn how to create and manage cross-region read replicas using Terraform for RDS and Aurora to improve read performance and enable disaster recovery.
 

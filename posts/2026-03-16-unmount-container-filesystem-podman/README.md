@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Filesystem, Container Mount
+Tags: Podman, Container, DevOps, Filesystem, Container Mount
 
 Description: Learn how to safely unmount a Podman container's filesystem from the host using podman unmount, including handling busy mounts and cleanup procedures.
 

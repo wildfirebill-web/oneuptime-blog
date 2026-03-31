@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Auto-Update, Image Management
+Tags: Podman, Container, DevOps, Auto-Update, Image Management
 
 Description: Learn how to enable automatic image updates for Podman containers so they always run the latest version of their image.
 

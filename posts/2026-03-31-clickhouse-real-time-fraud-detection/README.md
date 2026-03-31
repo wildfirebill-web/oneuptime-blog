@@ -1,6 +1,6 @@
 # How to Build a Real-Time Fraud Detection System with ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Fraud Detection, Real-Time, Analytics, Security
 

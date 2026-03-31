@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, IPv4, Troubleshooting, Networking, Docker, Kubernetes
+Tags: Microservice, IPv4, Troubleshooting, Networking, Docker, Kubernetes
 
 Description: Learn a systematic approach to troubleshooting IPv4 connectivity problems between microservices, covering DNS resolution, port checks, firewall rules, and container networking diagnostics.
 

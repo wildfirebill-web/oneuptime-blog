@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Storage Engine, MERGE, Partition, Table
+Tags: MySQL, Storage Engine, Merge, Partition, Table
 
 Description: The MySQL MERGE storage engine creates a logical union of multiple identical MyISAM tables, allowing them to be queried as a single unified table.
 

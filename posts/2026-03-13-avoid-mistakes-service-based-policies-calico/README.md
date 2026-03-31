@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Services, Best Practice
+Tags: Calico, Kubernetes, Network Policy, Service, Best Practice
 
 Description: Avoid Mistakes with Calico service-based network policies that cause security gaps or unexpected traffic blocks.
 

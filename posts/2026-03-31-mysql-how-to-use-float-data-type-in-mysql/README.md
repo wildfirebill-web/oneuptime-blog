@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Float, Data Types, Floating Point, Numeric
+Tags: MySQL, Float, Data Type, Floating Point, Numeric
 
 Description: The MySQL FLOAT type stores single-precision floating-point numbers suitable for scientific data where approximate values and compact storage matter more than exact precision.
 

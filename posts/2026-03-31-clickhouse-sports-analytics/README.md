@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Sports Analytics, Player Performance, Game Data, Metrics
+Tags: ClickHouse, Sports Analytics, Player Performance, Game Data, Metric
 
 Description: Build sports analytics pipelines with ClickHouse to analyze player performance, game statistics, team trends, and fan engagement metrics at scale.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, Infrastructure as Code, Provisioners, Window
+Tags: Terraform, Troubleshooting, Infrastructure as Code, Provisioner, Window
 
 Description: Fix Terraform WinRM connection errors in provisioners for Windows instances including authentication, HTTPS setup, and firewall configuration.
 

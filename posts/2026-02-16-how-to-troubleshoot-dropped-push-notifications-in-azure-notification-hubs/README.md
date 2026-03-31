@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Notification Hub, Troubleshooting, Push Notifications, Debugging, Diagnostics, Mobile
+Tags: Azure, Notification Hub, Troubleshooting, Push Notification, Debugging, Diagnostic, Mobile
 
 Description: A systematic guide to troubleshooting dropped or missing push notifications in Azure Notification Hubs with practical debugging steps.
 

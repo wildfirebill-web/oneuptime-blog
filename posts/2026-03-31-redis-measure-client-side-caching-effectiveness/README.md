@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Client-Side Caching, Metrics, Performance, Monitoring
+Tags: Redis, Client-Side Caching, Metric, Performance, Monitoring
 
 Description: Learn how to measure Redis client-side caching effectiveness by tracking hit rates, latency reduction, and network savings to validate and optimize your caching strategy.
 

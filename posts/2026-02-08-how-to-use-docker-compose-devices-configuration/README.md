@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Compose, Devices, Hardware Access, GPU, IoT, DevOps
+Tags: Docker, Docker Compose, Device, Hardware Access, GPU, IoT, DevOps
 
 Description: Configure Docker Compose devices to grant containers access to host hardware like GPUs, USB devices, and serial ports.
 

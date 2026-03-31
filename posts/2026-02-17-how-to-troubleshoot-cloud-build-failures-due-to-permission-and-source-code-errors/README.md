@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Build, CI/CD, Permissions, Troubleshooting
+Tags: GCP, Cloud Build, CI/CD, Permission, Troubleshooting
 
 Description: How to diagnose and fix Cloud Build failures caused by permission issues and source code errors, including service account configuration, build log analysis, and common fixes.
 

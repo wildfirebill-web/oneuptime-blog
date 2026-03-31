@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, CRIU, Containers, Restore, DevOps
+Tags: Podman, CRIU, Container, Restore, DevOps
 
 Description: A practical guide to restoring a previously checkpointed container with Podman, covering basic restore operations, verifying state continuity, and handling common restore scenarios.
 

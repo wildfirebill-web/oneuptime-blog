@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Canary, Metrics, Request Success Rate, Kubernetes, Progressive Delivery
+Tags: Flagger, Canary, Metric, Request Success Rate, Kubernetes, Progressive Delivery
 
 Description: Learn how to configure Flagger's built-in request-success-rate metric to ensure your canary deployments meet reliability thresholds before promotion.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Services, Create, Deployment
+Tags: Portainer, Docker Swarm, Service, Create, Deployment
 
 Description: Deploy new Docker Swarm services from the Portainer UI with support for replicas, placement constraints, and update policies.
 

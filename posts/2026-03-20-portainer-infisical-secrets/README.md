@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Infisical, Secrets, Security, Open Source
+Tags: Portainer, Infisical, Secret, Security, Open Source
 
 Description: Deploy Infisical open-source secrets manager via Portainer and use it to manage secrets for containerized applications.
 

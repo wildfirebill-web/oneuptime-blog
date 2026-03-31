@@ -1,6 +1,6 @@
 # What Is the Difference Between Mutations and Lightweight Deletes in ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Mutation, Lightweight Delete, MergeTree, Data Management
 

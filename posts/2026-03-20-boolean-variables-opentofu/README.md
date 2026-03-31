@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Boolean, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Boolean, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to using boolean type variables in OpenTofu to enable or disable features conditionally.
 

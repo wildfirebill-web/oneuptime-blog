@@ -1,6 +1,6 @@
 # How to Build Kubernetes Node Problem Detector
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Kubernetes, Node Problem Detector, Monitoring, Health Check
 

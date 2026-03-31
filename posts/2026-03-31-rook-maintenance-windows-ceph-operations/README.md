@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Maintenance, Window, Operations, Planning, Upgrade, OSD
+Tags: Rook, Ceph, Maintenance, Window, Operation, Planning, Upgrade, OSD
 
 Description: Plan and execute safe Ceph maintenance windows for OSD replacement, cluster upgrades, and configuration changes while minimizing impact on storage clients.
 

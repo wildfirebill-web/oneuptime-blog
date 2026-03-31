@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Metrics, Counter, Prometheus, Monitoring
+Tags: Metric, Counter, Prometheus, Monitoring
 
 Description: Learn to build counter metrics design for tracking cumulative values.
 

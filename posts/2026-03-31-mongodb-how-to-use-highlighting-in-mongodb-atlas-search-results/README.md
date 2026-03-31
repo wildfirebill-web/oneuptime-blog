@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Atlas Search, Highlighting, Search
+Tags: MongoDB, Atlas Search, Highlighting, Search
 
 Description: Learn how to use MongoDB Atlas Search highlighting to return matched text snippets with marked search terms, improving search result display in your application.
 

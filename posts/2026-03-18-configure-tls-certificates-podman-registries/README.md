@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, TLS, Certificates, Security
+Tags: Podman, Container, DevOps, Registry, TLS, Certificate, Security
 
 Description: Learn how to configure TLS certificates for secure communication between Podman and container registries, including custom CAs and mutual TLS.
 

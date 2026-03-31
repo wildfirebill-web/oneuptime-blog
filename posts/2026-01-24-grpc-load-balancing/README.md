@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: gRPC, Load Balancing, Kubernetes, Microservices, High Availability
+Tags: gRPC, Load Balancing, Kubernetes, Microservice, High Availability
 
 Description: Learn how to configure client-side and proxy-based load balancing for gRPC services to achieve high availability and optimal performance.
 

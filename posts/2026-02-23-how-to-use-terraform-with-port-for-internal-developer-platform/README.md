@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Ports, Internal Developer Platform, DevOps, Platform Engineering, Infrastructure as Code
+Tags: Terraform, Port, Internal Developer Platform, DevOps, Platform Engineering, Infrastructure as Code
 
 Description: Learn how to integrate Terraform with Port to build an internal developer platform that enables self-service infrastructure provisioning with a visual software catalog.
 

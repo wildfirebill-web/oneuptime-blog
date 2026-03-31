@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Git, Infrastructure as Code, DevOps
+Tags: Terraform, Module, Git, Infrastructure as Code, DevOps
 
 Description: Learn how to reference Terraform modules stored in Git repositories using HTTPS and SSH URLs, branch references, tags, and subdirectory paths.
 

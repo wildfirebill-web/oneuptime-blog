@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Last Value, Window Functions, Sql, Analytics
+Tags: MySQL, Last Value, Window Function, SQL, Analytics
 
-Description: Learn how to use MySQL's LAST_VALUE() window function to retrieve the last value in an ordered window frame, including the critical frame clause required for correct results.
+Description: Learn how to use MySQL's LAST_VALUE() window function to retrieve the last value in an ordered window frame, including the critical frame clause for correct results.
 
 ---
 

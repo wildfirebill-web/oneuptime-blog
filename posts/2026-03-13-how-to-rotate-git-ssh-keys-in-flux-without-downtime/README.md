@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, SSH, Key Rotation, Security, Git
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, SSH, Key Rotation, Security, Git
 
 Description: A practical guide to rotating SSH keys used by Flux CD for Git repository access without causing reconciliation failures or downtime.
 

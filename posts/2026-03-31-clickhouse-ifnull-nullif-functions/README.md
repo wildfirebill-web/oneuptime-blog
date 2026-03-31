@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, Conditional Function, Data Cleaning
+Tags: ClickHouse, NULL Handling, Conditional Function, Data Cleaning
 
 Description: Learn how to use ifNull() and nullIf() in ClickHouse for NULL replacement, sentinel value patterns, and safe division in analytics queries.
 

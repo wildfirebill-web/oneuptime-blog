@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Messaging, Reliability, Backend, Distributed Systems
+Tags: RabbitMQ, Messaging, Reliability, Backend, Distributed System
 
 Description: Learn how to properly implement message acknowledgments in RabbitMQ to ensure reliable message delivery and prevent data loss.
 

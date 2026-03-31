@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Hub, Images, Search, Registry
+Tags: Portainer, Docker Hub, Image, Search, Registry
 
 Description: Search Docker Hub for available images directly from the Portainer web interface.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Prometheus, Best Practice
+Tags: Calico, Kubernetes, Networking, Metric, Prometheus, Best Practice
 
 Description: Avoid the most common pitfalls when setting up and maintaining Calico Prometheus metrics monitoring, from ServiceMonitor misconfigurations to alert fatigue patterns.
 

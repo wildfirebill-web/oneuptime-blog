@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Filtering, Management
+Tags: Portainer, Docker, Container, Filtering, Management
 
 Description: Use Portainer's filtering capabilities to quickly find containers by status, name, image, or custom labels.
 

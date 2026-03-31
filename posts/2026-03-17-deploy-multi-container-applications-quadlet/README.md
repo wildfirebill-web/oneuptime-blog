@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Multi-Container, Systemd
+Tags: Podman, Container, DevOps, Quadlet, Multi-Container, Systemd
 
 Description: Learn how to deploy multi-container applications using Podman Quadlet with proper networking, dependencies, and shared resources.
 

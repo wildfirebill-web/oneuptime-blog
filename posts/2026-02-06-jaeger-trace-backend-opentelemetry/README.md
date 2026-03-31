@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Jaeger, Distributed Tracing, Traces, Collector, Observability
+Tags: OpenTelemetry, Jaeger, Distributed Tracing, Trace, Collector, Observability
 
 Description: Complete guide to deploying Jaeger as a distributed tracing backend for OpenTelemetry, covering OTLP ingestion, storage options, and production configuration.
 

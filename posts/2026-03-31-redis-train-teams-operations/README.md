@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Training, Operations
+Tags: Redis, Training, Operation
 
 Description: Learn how to build a Redis operations training program for engineers covering hands-on labs, incident simulations, and skill progression from beginner to expert.
 

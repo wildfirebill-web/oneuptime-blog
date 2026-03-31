@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Lightweight Delete, DELETE, Data Management, MergeTree, Performance
+Tags: ClickHouse, Lightweight Delete, Delete, Data Management, MergeTree, Performance
 
 Description: Learn how to use ClickHouse lightweight DELETE to remove rows efficiently without triggering heavy background mutations on MergeTree tables.
 

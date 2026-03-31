@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BullMQ, Node.js, Redis, Data Pipelines, ETL, Stream Processing, Data Engineering, Batch Processing
+Tags: BullMQ, Node.js, Redis, Data Pipeline, ETL, Stream Processing, Data Engineering, Batch Processing
 
 Description: A comprehensive guide to building data processing pipelines with BullMQ, including ETL workflows, stream processing, data transformation, aggregation, and handling large-scale data operations.
 

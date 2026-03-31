@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Lists, Automation
+Tags: Ansible, Loop, List, Automation
 
 Description: Learn how to iterate over lists in Ansible using the loop keyword with practical examples for packages, files, users, and services.
 

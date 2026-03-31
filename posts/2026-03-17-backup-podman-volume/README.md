@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Backup, Storage
+Tags: Podman, Container, DevOps, Volumes, Backup, Storage
 
 Description: Learn how to back up Podman volumes using tar archives, export commands, and automated backup strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Early Evaluation, Variables, OpenTofu 1.8, Infrastructure as Code
+Tags: OpenTofu, Early Evaluation, Variable, OpenTofu 1.8, Infrastructure as Code
 
 Description: Learn how to use early variable evaluation in OpenTofu 1.8 to reference input variables in provider and backend configurations.
 

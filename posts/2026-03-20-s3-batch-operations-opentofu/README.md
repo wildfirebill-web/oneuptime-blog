@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, S3, Batch Operations, Bulk Processing, Lambda, Infrastructure as Code
+Tags: OpenTofu, AWS, S3, Batch Operation, Bulk Processing, Lambda, Infrastructure as Code
 
 Description: Learn how to set up S3 Batch Operations using OpenTofu to perform large-scale bulk actions on millions of S3 objects including copying, tagging, and running custom Lambda functions.
 

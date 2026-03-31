@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, TCP, Retransmission, Networking, Performance, Diagnostics
+Tags: Wireshark, TCP, Retransmission, Networking, Performance, Diagnostic
 
 Description: Use Wireshark display filters and the Expert Information panel to identify TCP retransmissions, duplicate ACKs, and out-of-order packets that indicate network packet loss.
 

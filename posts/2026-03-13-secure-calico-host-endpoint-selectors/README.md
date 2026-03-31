@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Host Endpoint, Selectors, Security, Hardening
+Tags: Calico, Kubernetes, Networking, Host Endpoint, Selector, Security, Hardening
 
 Description: Best practices for securing Calico host endpoint selector configurations to prevent selector bypass attacks and unintended policy escapes in Kubernetes clusters.
 

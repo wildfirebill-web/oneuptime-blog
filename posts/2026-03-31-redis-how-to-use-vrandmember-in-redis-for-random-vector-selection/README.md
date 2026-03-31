@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Vector Sets, Random Sampling, Machine Learning
+Tags: Redis, Vector Set, Random Sampling, Machine Learning
 
 Description: Learn how to use VRANDMEMBER in Redis to randomly sample element IDs from a Vector Set, useful for sampling, testing, and data exploration.
 

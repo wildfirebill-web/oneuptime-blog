@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, VPC Peering, IPv6, Route Exchange, Dual-Stack, Internals
+Tags: GCP, VPC Peering, IPv6, Route Exchange, Dual-Stack, Internal
 
 Description: Configure GCP VPC peering to exchange IPv6 routes between peered VPC networks for private IPv6 connectivity.
 

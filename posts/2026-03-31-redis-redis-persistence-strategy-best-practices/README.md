@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Persistence, RDB, AOF, Durability, Best Practices
+Tags: Redis, Persistence, RDB, AOF, Durability, Best Practice
 
 Description: A practical guide to choosing and configuring the right Redis persistence strategy based on your durability requirements and performance constraints.
 

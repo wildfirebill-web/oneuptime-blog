@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Module Registry, Team Standards, Reusability, Infrastructure as Code
+Tags: OpenTofu, Module, Module Registry, Team Standards, Reusability, Infrastructure as Code
 
 Description: Learn how to build and distribute a shared OpenTofu module library that enforces team standards, reduces duplication, and ensures consistency across multiple projects and teams.
 

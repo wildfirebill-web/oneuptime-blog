@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Environments, Agent, DevOps
+Tags: Portainer, Kubernetes, Environment, Agent, DevOps
 
 Description: Learn how to add an existing Kubernetes cluster as an environment in Portainer using the Portainer Agent.
 

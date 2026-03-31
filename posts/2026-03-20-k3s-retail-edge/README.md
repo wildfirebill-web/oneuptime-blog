@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Edge Computing, Retail, IoT, DevOps
+Tags: k3s, Kubernetes, Edge Computing, Retail, IoT, DevOps
 
 Description: Learn how to deploy K3s in retail environments to manage point-of-sale systems, inventory management, and in-store analytics at the edge.
 

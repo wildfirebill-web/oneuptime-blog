@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vue, Templates, Compilation, Debugging, Frontend, JavaScript, Syntax Errors
+Tags: Vue, Template, Compilation, Debugging, Frontend, JavaScript, Syntax Error
 
 Description: A practical guide to diagnosing and fixing template compilation errors in Vue.js applications, covering syntax issues, directive problems, and build configuration.
 

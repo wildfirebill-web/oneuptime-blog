@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Context Propagation, Distributed Tracing, Microservices, W3C Trace Context, Observability, APM
+Tags: OpenTelemetry, Context Propagation, Distributed Tracing, Microservice, W3C Trace Context, Observability, APM
 
 Description: A practical guide to OpenTelemetry context propagation covering HTTP, gRPC, message queues, and async patterns. Learn to maintain trace continuity across service boundaries in distributed systems.
 

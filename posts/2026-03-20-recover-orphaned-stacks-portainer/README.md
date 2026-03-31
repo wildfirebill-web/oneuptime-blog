@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Orphaned, Recovery, Troubleshooting
+Tags: Portainer, Stack, Orphaned, Recovery, Troubleshooting
 
 Description: Recover stacks that appear as orphaned in Portainer after database loss or migration issues.
 

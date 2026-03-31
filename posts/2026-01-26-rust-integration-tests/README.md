@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Integration Testing, Testing, Cargo, Test Organization, Fixtures, Async Testing
+Tags: Rust, Integration Testing, Testing, Cargo, Test Organization, Fixture, Async Testing
 
 Description: A practical guide to writing integration tests for Rust applications, covering test organization, shared fixtures, async testing patterns, and database testing strategies.
 

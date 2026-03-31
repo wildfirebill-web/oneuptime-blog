@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Analytics, LAG, Window Function, Growth
+Tags: MySQL, Analytics, Lag, Window Function, Growth
 
 Description: Learn how to calculate month-over-month growth rates in MySQL using LAG() window functions, self-joins, and CTEs for trend analysis and reporting.
 

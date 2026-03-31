@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Order By, Sorting, Sql, Database
+Tags: MySQL, ORDER BY, Sorting, SQL, Database
 
 Description: Learn how to sort query results using ORDER BY in MySQL, including ascending, descending, multi-column, and expression-based sorting.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, Logging, Monitoring, Observability, Metrics
+Tags: Nginx, Logging, Monitoring, Observability, Metric
 
 Description: Learn how to configure comprehensive logging and monitoring in Nginx, including custom log formats, real-time metrics, and integration with monitoring systems.
 

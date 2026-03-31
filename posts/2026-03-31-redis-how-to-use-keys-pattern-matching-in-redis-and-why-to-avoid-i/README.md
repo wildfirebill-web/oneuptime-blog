@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Key Management, Performance, Best Practices, Commands
+Tags: Redis, Key Management, Performance, Best Practice, Command
 
 Description: Learn how to use the KEYS command with glob patterns in Redis, understand why it blocks production servers, and discover safe alternatives like SCAN.
 

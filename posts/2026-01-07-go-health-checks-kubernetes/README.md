@@ -1,6 +1,6 @@
 # How to Implement Health Checks in Go for Kubernetes
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Go, Kubernetes, Health Check, DevOps, Reliability, Monitoring
 

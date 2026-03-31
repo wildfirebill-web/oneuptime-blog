@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, AWX, Projects, Git, Automation
+Tags: Ansible, AWX, Project, Git, Automation
 
 Description: Learn how to create and configure AWX projects from Git repositories, local directories, and archives with sync settings.
 

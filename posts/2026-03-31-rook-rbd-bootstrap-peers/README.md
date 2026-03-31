@@ -1,6 +1,6 @@
 # How to Set Up Bootstrap Peers and Peer Tokens for RBD Mirroring in Rook
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Testing, Test Isolation, Unit Tests, Integration Tests, Debugging
+Tags: Testing, Test Isolation, Unit Test, Integration Test, Debugging
 
 Description: Learn how to identify and fix test isolation issues that cause tests to pass or fail depending on execution order or shared state.
 

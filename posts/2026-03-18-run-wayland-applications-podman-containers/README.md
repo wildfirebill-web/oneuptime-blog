@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Wayland, GUI, Containers, Linux Desktop
+Tags: Podman, Wayland, GUI, Container, Linux Desktop
 
 Description: Learn how to run Wayland-native and XWayland applications inside Podman containers, with support for GPU acceleration, input devices, and screen sharing.
 

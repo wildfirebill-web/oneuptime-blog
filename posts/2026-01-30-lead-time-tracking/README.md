@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DevOps, DORA Metrics, Lead Time, Developer Experience
+Tags: DevOps, DORA Metric, Lead Time, Developer Experience
 
 Description: Learn to implement lead time tracking with commit-to-deploy measurement, bottleneck identification, and trend analysis for delivery optimization.
 

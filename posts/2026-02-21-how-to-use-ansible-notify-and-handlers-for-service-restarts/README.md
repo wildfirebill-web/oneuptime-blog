@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Handlers, Service Management, DevOps
+Tags: Ansible, Handler, Service Management, DevOps
 
 Description: Learn how to use Ansible notify and handlers to trigger service restarts and other actions only when configuration changes are detected.
 

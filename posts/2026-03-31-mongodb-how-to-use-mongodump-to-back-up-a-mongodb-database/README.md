@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Backup, Mongodump, Database Administration
+Tags: MongoDB, Backup, Mongodump, Database Administration
 
 Description: Learn how to use mongodump to create backups of MongoDB databases, including full backups, collection-specific backups, and options for replica sets and Atlas.
 

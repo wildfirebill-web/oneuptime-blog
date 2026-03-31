@@ -1,8 +1,8 @@
 # How to Resume a Change Stream from a Resume Token in MongoDB
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Change stream, Resume token, Fault tolerance, Real-time
+Tags: MongoDB, Change Stream, Resume Token, Fault Tolerance, Real-Time
 
 Description: Learn how to save and use MongoDB change stream resume tokens to reliably restart a stream from the last processed position after a restart or failure.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Prometheus, Operations
+Tags: Calico, Kubernetes, Networking, Metric, Prometheus, Operation
 
 Description: Build sustainable operational processes for Calico component metrics, including alert triage procedures, metrics retention policies, and dashboard maintenance.
 

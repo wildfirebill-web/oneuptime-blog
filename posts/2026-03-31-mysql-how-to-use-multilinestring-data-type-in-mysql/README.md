@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Spatial Data, MULTILINESTRING, GIS, Data Types
+Tags: MySQL, Spatial Data, MULTILINESTRING, GIS, Data Type
 
 Description: Learn how to store and query collections of line geometries using the MULTILINESTRING data type in MySQL for GIS and mapping applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Raw Messages, Messaging, Microservices
+Tags: Dapr, Pub/Sub, Raw Message, Messaging, Microservice
 
 Description: Configure Dapr to publish and subscribe to raw messages without CloudEvent wrapping for interoperability with non-Dapr consumers and legacy systems.
 

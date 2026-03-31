@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Next.js, Server Components, API Routes, React, Tracing
+Tags: OpenTelemetry, Next.js, Server Component, API Route, React, Tracing
 
 Description: Master OpenTelemetry tracing for Next.js Server Components and API Routes to gain deep visibility into server-side rendering, data fetching, and request handling.
 

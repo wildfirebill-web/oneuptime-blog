@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Environments, CI/CD, DevOps, Multi-Environment
+Tags: Portainer, Docker, Environment, CI/CD, DevOps, Multi-Environment
 
 Description: Configure separate development, staging, and production environments in Portainer using multiple endpoints, environment-specific stacks, and secrets.
 

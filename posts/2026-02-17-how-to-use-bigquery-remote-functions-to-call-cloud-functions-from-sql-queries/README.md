@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Remote Functions, Cloud Functions, SQL
+Tags: GCP, BigQuery, Remote Functions, Cloud Function, SQL
 
 Description: Learn how to use BigQuery remote functions to call Cloud Functions directly from SQL queries, enabling custom transformations, API calls, and ML inference within your analytics workflows.
 

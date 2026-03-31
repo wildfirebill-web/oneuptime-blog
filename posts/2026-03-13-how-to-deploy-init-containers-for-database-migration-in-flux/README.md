@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Init Containers, Database Migrations, Flyway, Liquibase, Kustomization
+Tags: Flux CD, Kubernetes, GitOps, Init Container, Database Migration, Flyway, Liquibase, Kustomization
 
 Description: Learn how to use Kubernetes init containers to run database migrations automatically before application startup in Flux CD managed deployments.
 

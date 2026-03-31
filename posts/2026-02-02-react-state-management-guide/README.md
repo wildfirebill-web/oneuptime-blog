@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: React, State Management, JavaScript, Hooks, Redux, Context API, Zustand
+Tags: React, State Management, JavaScript, Hook, Redux, Context API, Zustand
 
 Description: A hands-on guide to managing state in React applications, covering useState, useReducer, Context API, Redux Toolkit, and Zustand with practical code examples and real-world patterns.
 

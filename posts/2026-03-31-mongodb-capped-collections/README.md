@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Capped Collection, Operations, Logging, Administration
+Tags: MongoDB, Capped Collection, Operation, Logging, Administration
 
 Description: Learn how to create and use MongoDB capped collections for fixed-size circular buffers ideal for logging, event queues, and audit trails with automatic oldest-first deletion.
 

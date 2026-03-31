@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Configuration
+Tags: Podman, Container, DevOps, Pod, Configuration
 
 Description: Learn how to create Podman pods with custom names for better organization and easier management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: netstat, Linux, Processes, Ports, Diagnostics, TCP
+Tags: netstat, Linux, Process, Port, Diagnostic, TCP
 
 Description: Use netstat with the -p flag to identify which process owns a listening port, combine with grep to quickly find specific services and PIDs.
 

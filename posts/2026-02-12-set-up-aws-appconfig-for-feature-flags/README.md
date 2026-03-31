@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, AppConfig, Feature Flags, Configuration
+Tags: AWS, AppConfig, Feature Flag, Configuration
 
 Description: Learn how to set up AWS AppConfig for feature flag management, including gradual rollouts, percentage-based targeting, validation, and rollback strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Eventarc, Cloud Run, Event-Driven Architecture, Microservices, Serverless
+Tags: GCP, Eventarc, Cloud Run, Event-Driven Architecture, Microservice, Serverless
 
 Description: A practical guide to building event-driven microservices on Google Cloud using Eventarc for event routing and Cloud Run for scalable service execution.
 

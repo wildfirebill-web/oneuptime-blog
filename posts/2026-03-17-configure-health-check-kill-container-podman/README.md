@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Check, Container Management
+Tags: Podman, Container, DevOps, Health Check, Container Management
 
 Description: Learn how to configure Podman health checks to automatically kill a container when it becomes unhealthy.
 

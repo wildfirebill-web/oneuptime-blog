@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Osd, Disk Cleanup, Kubernetes, Storage
+Tags: Rook, Ceph, OSD, Disk Cleanup, Kubernetes, Storage
 
 Description: Learn how to properly clean up OSD data from disks before reusing them in a new Rook-Ceph deployment or for other purposes.
 

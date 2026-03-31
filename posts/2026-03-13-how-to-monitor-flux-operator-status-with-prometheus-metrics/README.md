@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Flux Operator, Prometheus, Monitoring, Kubernetes, Metrics
+Tags: Flux, Flux Operator, Prometheus, Monitoring, Kubernetes, Metric
 
 Description: Learn how to monitor the Flux Operator and FluxInstance status using Prometheus metrics for observability and alerting.
 

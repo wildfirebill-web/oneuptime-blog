@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, TCP, IPv4, Networking, Net Module, Concurrency, Sockets
+Tags: Node.js, TCP, IPv4, Networking, Net Module, Concurrency, Socket
 
 Description: Use the Node.js net module to build a TCP server that handles multiple simultaneous IPv4 client connections with proper event handling and connection lifecycle management.
 

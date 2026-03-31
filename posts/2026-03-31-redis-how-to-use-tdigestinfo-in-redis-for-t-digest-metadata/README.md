@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, T-Digest, Metadata, Monitoring, Diagnostics
+Tags: Redis, T-Digest, Metadata, Monitoring, Diagnostic
 
 Description: Learn how to use TDIGEST.INFO in Redis to inspect T-Digest structure metadata including compression, node counts, weight, and compression history.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Logs, Real-Time, Streaming
+Tags: Portainer, Docker, Log, Real-Time, Streaming
 
 Description: Stream Docker container logs in real time in Portainer to monitor live application output and debug running issues.
 

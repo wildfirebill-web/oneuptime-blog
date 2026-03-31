@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, CQRS, Firestore, Cloud SQL, Microservices, Architecture Patterns
+Tags: GCP, CQRS, Firestore, Cloud SQL, Microservice, Architecture Patterns
 
 Description: Step-by-step guide to implementing the CQRS pattern on Google Cloud, using Cloud SQL for write operations and Firestore for optimized read queries.
 

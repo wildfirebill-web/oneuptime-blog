@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Docker Compose, DevOps
+Tags: Portainer, Docker, Stack, Docker Compose, DevOps
 
 Description: Learn how to create and deploy Docker Compose stacks directly from Portainer's built-in web editor with environment variable support.
 

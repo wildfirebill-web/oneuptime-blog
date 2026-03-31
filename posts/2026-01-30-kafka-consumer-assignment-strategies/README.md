@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kafka, Consumer, Partitioning, Distributed Systems
+Tags: Kafka, Consumer, Partitioning, Distributed System
 
 Description: A practical guide to configuring and understanding Kafka partition assignment strategies for optimal consumer group performance.
 

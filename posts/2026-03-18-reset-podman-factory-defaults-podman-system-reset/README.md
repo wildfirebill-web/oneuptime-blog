@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, System Administration, Troubleshooting
+Tags: Podman, Container, DevOps, System Administration, Troubleshooting
 
 Description: Learn how to use podman system reset to completely wipe your Podman environment and restore it to a clean state for fresh starts or troubleshooting.
 

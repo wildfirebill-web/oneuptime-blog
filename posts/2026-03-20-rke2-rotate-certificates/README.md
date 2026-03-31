@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RKE2, Certificates, TLS, Security, Kubernetes, Certificate Rotation, SUSE Rancher
+Tags: RKE2, Certificate, TLS, Security, Kubernetes, Certificate Rotation, SUSE Rancher
 
 Description: Learn how to rotate RKE2 cluster certificates manually and automatically, including the API server, etcd, and kubelet certificates, to maintain cluster security.
 

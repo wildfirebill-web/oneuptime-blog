@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Microservices, Docker Compose, Networking, Development
+Tags: Podman, Microservice, Docker Compose, Networking, Development
 
 Description: A practical guide to developing microservices locally with Podman, covering inter-service communication, shared networking, service discovery, and orchestration with podman-compose.
 

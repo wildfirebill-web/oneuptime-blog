@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Images, Security, Registry
+Tags: Podman, Container, DevOps, Monitoring, Event, Image, Security, Registry
 
 Description: Learn how to monitor image events with Podman to track image pulls, pushes, removals, and tags for security auditing and operational awareness.
 

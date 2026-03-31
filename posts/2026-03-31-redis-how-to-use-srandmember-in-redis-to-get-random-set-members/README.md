@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sets, SRANDMEMBER, Random, Sampling
+Tags: Redis, Set, SRANDMEMBER, Random, Sampling
 
 Description: Learn how to use SRANDMEMBER in Redis to retrieve one or more random members from a set without removing them, enabling sampling and randomization.
 

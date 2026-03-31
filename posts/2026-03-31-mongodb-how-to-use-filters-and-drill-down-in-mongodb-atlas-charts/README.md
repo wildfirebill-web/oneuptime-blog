@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas Charts, Data Visualization, Filters, Dashboard
+Tags: MongoDB, Atlas Charts, Data Visualization, Filter, Dashboard
 
 Description: Learn how to use dashboard filters, chart-level filters, and drill-down controls in MongoDB Atlas Charts for interactive data exploration.
 

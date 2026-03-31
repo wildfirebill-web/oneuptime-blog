@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, Images, Registry, Troubleshooting
+Tags: Podman, Container, Image, Registry, Troubleshooting
 
 Description: A thorough guide to resolving 'image not known' errors in Podman, covering registry configuration, image naming, storage issues, and rootless vs rootful image stores.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, IPv6-Only, Services, SingleStack, Networking
+Tags: Kubernetes, IPv6, IPv6-Only, Service, SingleStack, Networking
 
 Description: Create and deploy IPv6-only Kubernetes Services that have exclusively IPv6 ClusterIPs, configure workloads to communicate over IPv6 only, and understand use cases for IPv6-only services in...
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Event-Driven, Architecture, Consumer Group
+Tags: Redis, Stream, Event-Driven, Architecture, Consumer Group
 
 Description: Build a reliable event-driven architecture using Redis Streams with consumer groups, acknowledgment, and dead letter handling for at-least-once delivery.
 

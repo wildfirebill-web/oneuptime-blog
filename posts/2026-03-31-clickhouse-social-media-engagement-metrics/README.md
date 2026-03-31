@@ -1,6 +1,6 @@
 # How to Analyze Social Media Engagement Metrics in ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Analytics, Social Media, Engagement, Real-Time
 

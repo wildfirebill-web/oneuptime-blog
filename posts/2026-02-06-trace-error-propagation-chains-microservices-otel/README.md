@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Error Propagation, Microservices, Distributed Tracing
+Tags: OpenTelemetry, Error Propagation, Microservice, Distributed Tracing
 
 Description: Trace how errors propagate across microservices using OpenTelemetry exception span events to find the true root cause fast.
 

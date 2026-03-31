@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CI/CD, Testing, DevOps, GitHub Actions, GitLab CI, Jenkins, Debugging, Continuous Integration
+Tags: CI/CD, Testing, DevOps, GitHub Action, GitLab CI, Jenkins, Debugging, Continuous Integration
 
 Description: A practical guide to diagnosing and fixing test failures that occur in CI pipelines but pass locally, with solutions for common issues.
 

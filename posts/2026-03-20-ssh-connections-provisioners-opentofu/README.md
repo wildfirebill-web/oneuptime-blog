@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, SSH, Connection Blocks, Infrastructure as Code
+Tags: OpenTofu, Provisioner, SSH, Connection Blocks, Infrastructure as Code
 
 Description: Learn how to configure SSH connection blocks in OpenTofu to authenticate provisioners to remote Linux and Unix resources using passwords, key files, or agent forwarding.
 

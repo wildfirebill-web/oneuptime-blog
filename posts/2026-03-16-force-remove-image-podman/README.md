@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Cleanup
+Tags: Podman, Container, DevOps, Container Image, Cleanup
 
 Description: Learn how to force remove container images that are in use by containers using Podman's force flag, and understand the implications of doing so.
 

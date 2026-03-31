@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Streams, TCP, IPv4, Backpressure, Net Module, Performance
+Tags: Node.js, Stream, TCP, IPv4, Backpressure, Net Module, Performance
 
 Description: Use Node.js streams and the net module to efficiently stream large data sets over IPv4 TCP connections with proper backpressure handling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Vertex AI, Experiments, MLOps, Experiment Tracking
+Tags: GCP, Vertex AI, Experiment, MLOps, Experiment Tracking
 
 Description: Learn how to use Vertex AI Experiments to track, compare, and analyze multiple ML training runs side-by-side with code examples.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Storage Management, Cleanup
+Tags: Podman, Container, DevOps, Storage Management, Cleanup
 
 Description: Learn how to use podman system prune to reclaim disk space by removing unused containers, images, volumes, and build cache in one command.
 

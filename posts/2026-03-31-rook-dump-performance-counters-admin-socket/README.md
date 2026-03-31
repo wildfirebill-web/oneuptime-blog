@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Admin Socket, Performance, Metrics, Monitoring
+Tags: Rook, Ceph, Admin Socket, Performance, Metric, Monitoring
 
 Description: Dump and interpret performance counters from Ceph daemons via the admin socket to diagnose bottlenecks, measure throughput, and monitor daemon health in real time.
 

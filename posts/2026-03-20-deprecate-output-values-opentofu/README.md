@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, Deprecation, Module Development, Infrastructure as Code, DevOps
+Tags: OpenTofu, Output, Deprecation, Module Development, Infrastructure as Code, DevOps
 
 Description: A guide to deprecating output values in OpenTofu modules to communicate breaking changes to consumers.
 

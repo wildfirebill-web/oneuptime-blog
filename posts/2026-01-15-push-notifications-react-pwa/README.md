@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Push Notifications, PWA, Web Push, Service Worker, Frontend
+Tags: React, Push Notification, PWA, Web Push, Service Worker, Frontend
 
 Description: Learn how to implement push notifications in React Progressive Web Apps using the Web Push API, service workers, and VAPID keys for secure, real-time user engagement.
 

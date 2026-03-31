@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Docker Compose, Web Editor, DevOps
+Tags: Portainer, Stack, Docker Compose, Web Editor, DevOps
 
 Description: Create a Docker Compose stack in Portainer using the built-in web editor without needing to upload a file.
 

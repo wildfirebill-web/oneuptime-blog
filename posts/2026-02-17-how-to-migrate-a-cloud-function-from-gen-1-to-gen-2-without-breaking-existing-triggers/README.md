@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Migration, Serverless, Google Cloud
+Tags: GCP, Cloud Function, Migration, Serverless, Google Cloud
 
 Description: A practical walkthrough for migrating Google Cloud Functions from Gen 1 to Gen 2 while keeping existing triggers, endpoints, and integrations intact.
 

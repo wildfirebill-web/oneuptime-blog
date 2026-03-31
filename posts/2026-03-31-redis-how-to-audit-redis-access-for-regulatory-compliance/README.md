@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Security, Compliance, Auditing, Access Control, ACL
+Tags: Redis, Security, Compliance, Auditing, Access Control
 
 Description: Learn how to implement Redis access auditing for regulatory compliance using ACL logs, keyspace notifications, and log forwarding to SIEM systems.
 

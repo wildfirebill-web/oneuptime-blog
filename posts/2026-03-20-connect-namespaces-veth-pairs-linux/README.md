@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, Network Namespaces, veth, IPv4, Containers
+Tags: Linux, Networking, Network Namespaces, veth, IPv4, Container
 
 Description: Connect two Linux network namespaces using a virtual Ethernet (veth) pair, assign IPv4 addresses on each end, and verify bidirectional connectivity between isolated network stacks.
 

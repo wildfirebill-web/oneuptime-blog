@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Namespaces, Loopback, iproute2, Networking, Containers
+Tags: Linux, Network Namespaces, Loopback, iproute2, Networking, Container
 
 Description: Enable the loopback interface inside a Linux network namespace so that processes within the namespace can communicate on 127.0.0.1.
 

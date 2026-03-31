@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Prometheus, Alertmanager, Monitoring, Alerts, Self-Hosted
+Tags: Portainer, Docker, Prometheus, Alertmanager, Monitoring, Alert, Self-Hosted
 
 Description: Configure Alertmanager alongside Prometheus in a Portainer stack to route, group, and deliver alerts via Slack, email, and PagerDuty.
 

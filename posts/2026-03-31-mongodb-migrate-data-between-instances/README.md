@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Migration, Mongodump, Mongorestore, Database
+Tags: MongoDB, Migration, Mongodump, mongorestore, Database
 
 Description: Learn how to migrate data between MongoDB instances using mongodump and mongorestore, including full cluster migrations, selective collection copies, and live sync strategies.
 

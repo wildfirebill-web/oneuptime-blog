@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kubernetes, Containers, Calico, Networking, Linux
+Tags: RHEL, Kubernetes, Container, Calico, Networking, Linux
 
 Description: Learn how to install Calico CNI Plugin for Kubernetes on RHEL with step-by-step instructions, configuration examples, and best practices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, YAML, Pods
+Tags: Podman, Container, DevOps, Kubernetes, YAML, Pod
 
 Description: Learn how to create Podman pods from Kubernetes Pod YAML manifests using podman play kube.
 

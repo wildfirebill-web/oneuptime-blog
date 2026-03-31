@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Security
+Tags: Podman, Container, DevOps, Container Image, Security
 
 Description: Learn how to pull container images by their SHA256 digest with Podman to guarantee immutable, reproducible image deployments.
 

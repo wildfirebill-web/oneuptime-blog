@@ -1,6 +1,6 @@
 # How to Use CEL Expressions for Crossplane Resource Health in Flux
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux, GitOps, Kubernetes, CEL, Crossplane, Health Check, Infrastructure
 

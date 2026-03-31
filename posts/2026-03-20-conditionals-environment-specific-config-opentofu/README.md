@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Environments, Conditional, HCL, Best Practice
+Tags: OpenTofu, Terraform, Environment, Conditional, HCL, Best Practice
 
 Description: Learn how to use OpenTofu conditionals to manage environment-specific configurations for dev, staging, and production without duplicating resource definitions.
 

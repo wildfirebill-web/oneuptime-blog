@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Logging, Debugging
+Tags: Podman, Container, DevOps, Logging, Debugging
 
 Description: Learn how to effectively search Podman container logs using grep, including pattern matching, context lines, counting occurrences, and filtering live log streams.
 

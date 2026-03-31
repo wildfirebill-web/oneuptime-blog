@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Fastapi, Python, Rest Api, Motor
+Tags: MongoDB, FastAPI, Python, REST API, Motor
 
 Description: Learn how to build an async REST API with FastAPI and Motor (async MongoDB driver) including Pydantic models, CRUD endpoints, and pagination.
 

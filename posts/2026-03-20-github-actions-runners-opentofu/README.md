@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitHub Actions, CI/CD, Self-Hosted Runners, AWS, Kubernetes, Infrastructure as Code
+Tags: OpenTofu, GitHub Action, CI/CD, Self-Hosted Runners, AWS, Kubernetes, Infrastructure as Code
 
 Description: Learn how to deploy GitHub Actions self-hosted runners on AWS EC2 or Kubernetes using OpenTofu for private network access, custom hardware, and cost control.
 

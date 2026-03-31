@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Storage, Blob, Cloud, Data, DevOps, Security
+Tags: Azure, Storage, BLOB, Cloud, Data, DevOps, Security
 
 Description: A comprehensive guide to managing Azure Blob Storage including container configuration, access control, lifecycle policies, and performance optimization.
 

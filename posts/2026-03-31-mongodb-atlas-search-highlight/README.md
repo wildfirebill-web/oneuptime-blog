@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas Search, Highlighting, Full-text search, Search
+Tags: MongoDB, Atlas Search, Highlighting, Full-Text Search, Search
 
 Description: Learn how to use the highlight option in MongoDB Atlas Search to return matched text snippets so users can see why a document was returned.
 

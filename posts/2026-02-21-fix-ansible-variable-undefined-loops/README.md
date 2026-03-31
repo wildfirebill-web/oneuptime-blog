@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Loops, Troubleshooting, Jinja2
+Tags: Ansible, Variable, Loop, Troubleshooting, Jinja2
 
 Description: Fix Ansible undefined variable errors in loops caused by missing attributes, wrong item references, and scope issues in loop iterations.
 

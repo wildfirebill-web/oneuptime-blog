@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, KEDA, Autoscaling, Kubernetes, Event-Driven, Pub/Sub, Microservices
+Tags: Dapr, KEDA, Autoscaling, Kubernetes, Event-Driven, Pub/Sub, Microservice
 
 Description: Learn how to use KEDA to autoscale Dapr microservices based on pub/sub queue depth, enabling scale-to-zero and demand-driven scaling for event-driven workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Insert Performance, MergeTree, Best Practice, Batch Insert
+Tags: ClickHouse, INSERT Performance, MergeTree, Best Practice, Batch Insert
 
 Description: Explains why frequent small inserts harm ClickHouse performance and how to batch data correctly to keep part counts under control.
 

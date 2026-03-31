@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replica Set, Scaling, Operations, High Availability
+Tags: MongoDB, Replica Set, Scaling, Operation, High Availability
 
 Description: Add new members to a running MongoDB replica set to scale read capacity or improve fault tolerance without disrupting existing operations.
 

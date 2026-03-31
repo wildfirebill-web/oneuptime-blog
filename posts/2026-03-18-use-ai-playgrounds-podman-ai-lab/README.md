@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, AI, Machine Learning, Playground, LLM, Chatbot
+Tags: Podman, Container, DevOps, AI, Machine Learning, Playground, LLM, Chatbot
 
 Description: Learn how to use the AI Playground feature in Podman AI Lab to interactively test and compare AI models through a chat interface.
 

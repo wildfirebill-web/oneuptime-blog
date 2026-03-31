@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Application Insights, Application Map, Microservices, Dependency Tracking, Distributed Tracing, Cloud Monitoring
+Tags: Azure Application Insights, Application Map, Microservice, Dependency Tracking, Distributed Tracing, Cloud Monitoring
 
 Description: Learn how to use the Application Map in Azure Application Insights to visualize dependencies between microservices and quickly identify performance bottlenecks.
 

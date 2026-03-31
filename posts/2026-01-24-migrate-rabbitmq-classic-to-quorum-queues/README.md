@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Quorum Queues, Classic Queues, Migration, High Availability, Message Queues, DevOps, Upgrade
+Tags: RabbitMQ, Quorum Queue, Classic Queues, Migration, High Availability, Message Queue, DevOps, Upgrade
 
 Description: A step-by-step guide to migrating from RabbitMQ classic mirrored queues to quorum queues with minimal downtime and data loss.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Gossip Protocol, Distributed Systems, Internals
+Tags: Redis, Cluster, Gossip Protocol, Distributed System, Internal
 
 Description: Understand how Redis Cluster nodes discover each other, detect failures, and maintain cluster topology using the gossip protocol over the cluster bus port.
 

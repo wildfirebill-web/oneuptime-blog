@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Logging, File
+Tags: Podman, Container, DevOps, Monitoring, Event, Logging, File
 
 Description: Learn how to use the file events logger with Podman to store container events in a plain text file for simple and portable event logging.
 

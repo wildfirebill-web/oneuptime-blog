@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CentOS, RHEL, Linux, Installation, Operations
+Tags: Redis, CentOS, RHEL, Linux, Installation
 
 Description: Step-by-step guide to installing Redis on CentOS 7, CentOS 8, and RHEL 8/9 using package managers and compiling from source for the latest version.
 

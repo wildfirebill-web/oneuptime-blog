@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, E-commerce, TTL, Flash Sale
+Tags: Redis, E-Commerce, TTL, Flash Sale
 
 Description: Implement flash deal countdown timers with Redis TTL and keyspace notifications - track deal expiry, compute time remaining, and trigger automatic deal end events.
 

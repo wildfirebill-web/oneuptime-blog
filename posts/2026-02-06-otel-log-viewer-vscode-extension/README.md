@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, VS Code, Debugging, Traces, Developer Tools
+Tags: OpenTelemetry, VS Code, Debugging, Trace, Developer Tool
 
 Description: Learn how to install and use the OpenTelemetry Log Viewer VS Code extension to debug traces and spans locally without leaving your editor.
 

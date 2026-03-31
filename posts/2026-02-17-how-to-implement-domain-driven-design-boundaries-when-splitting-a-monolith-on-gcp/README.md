@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Domain-Driven Design, Microservices, Monolith Migration, Architecture, Cloud Run
+Tags: GCP, Domain-Driven Design, Microservice, Monolith Migration, Architecture, Cloud Run
 
 Description: Apply domain-driven design principles to identify bounded contexts and define clean service boundaries when decomposing a monolithic application into microservices on Google Cloud Platform.
 

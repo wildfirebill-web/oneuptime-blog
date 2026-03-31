@@ -1,6 +1,6 @@
 # How to Configure MongoDB SCRAM Authentication
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, SCRAM, Authentication, Security, User Management
 

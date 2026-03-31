@@ -1,6 +1,6 @@
 # How to Manage Replication States (Primary, Secondary, Resync) in Rook
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage
 

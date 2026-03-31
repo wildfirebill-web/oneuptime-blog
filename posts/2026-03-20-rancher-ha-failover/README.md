@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, has, Failover Testing, Disaster Recovery, High Availability
+Tags: Rancher, High Availability, Failover Testing, Disaster Recovery
 
 Description: Systematically test Rancher HA failover scenarios including node failures, network partitions, and etcd member loss to validate your high availability configuration.
 

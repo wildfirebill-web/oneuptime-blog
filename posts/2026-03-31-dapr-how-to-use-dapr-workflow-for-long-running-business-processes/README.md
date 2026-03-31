@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Long-Running Processes, Orchestration, Microservices
+Tags: Dapr, Workflow, Long-Running Processes, Orchestration, Microservice
 
 Description: Learn how to implement long-running business processes like loan approvals or order fulfillment using Dapr Workflow with timers, external events, and durability.
 

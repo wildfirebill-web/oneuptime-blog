@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Command Line, Mysql Client, Connection, Cli
+Tags: MySQL, Command Line, Mysql Client, Connection, CLI
 
 Description: Connect to MySQL from the command line using the mysql client with options for host, port, user, password, database, and SSL configuration.
 

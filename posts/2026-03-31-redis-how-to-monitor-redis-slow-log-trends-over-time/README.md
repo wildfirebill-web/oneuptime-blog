@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Slowlog, Monitoring, Performance, Trends
+Tags: Redis, SLOWLOG, Monitoring, Performance, Trend
 
 Description: Learn how to collect, store, and analyze Redis SLOWLOG data over time to identify recurring slow commands and performance degradation patterns.
 

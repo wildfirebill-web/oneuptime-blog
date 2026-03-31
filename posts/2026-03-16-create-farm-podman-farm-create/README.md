@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Farm, Multi-Architecture, Build Farm
+Tags: Podman, Container, DevOps, Podman Farm, Multi-Architecture, Build Farm
 
 Description: Learn how to use the podman farm create command to define build farms that group remote machines for distributed multi-architecture container builds.
 

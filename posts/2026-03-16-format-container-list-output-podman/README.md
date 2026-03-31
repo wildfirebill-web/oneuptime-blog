@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Management, Formatting
+Tags: Podman, Container, DevOps, Container Management, Formatting
 
 Description: Learn how to customize Podman container list output using Go templates, table formats, and JSON for readable and scriptable results.
 

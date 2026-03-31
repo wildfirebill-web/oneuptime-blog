@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, OpenTelemetry, Distributed Tracing, Observability, Microservices, ASP.NET Core
+Tags: .NET, C#, OpenTelemetry, Distributed Tracing, Observability, Microservice, ASP.NET Core
 
 Description: Learn how to implement distributed tracing in .NET applications using OpenTelemetry, with context propagation across HTTP, gRPC, and message queues for complete request visibility.
 

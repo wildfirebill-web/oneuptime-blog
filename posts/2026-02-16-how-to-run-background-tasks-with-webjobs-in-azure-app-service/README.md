@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, App Service, WebJobs, Background Tasks, Cloud Computing, DevOps, Azure Functions
+Tags: Azure, App Service, WebJobs, Background Task, Cloud Computing, DevOps, Azure Function
 
 Description: Learn how to create, deploy, and manage background tasks using WebJobs in Azure App Service for reliable asynchronous processing.
 

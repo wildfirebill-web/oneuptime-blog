@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Events, Time Filtering, Troubleshooting
+Tags: Podman, Container, DevOps, Monitoring, Event, Time Filtering, Troubleshooting
 
 Description: Learn how to view Podman container events since a specific time to investigate incidents and review historical container activity.
 

@@ -1,8 +1,8 @@
 # How to Start and Stop MySQL on Windows
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Service, Windows, Administration, Configuration
+Tags: MySQL, Service, Window, Administration, Configuration
 
 Description: Start, stop, restart, and configure the MySQL Windows service using PowerShell, the Services console, net commands, and the MySQL Notifier tray application.
 

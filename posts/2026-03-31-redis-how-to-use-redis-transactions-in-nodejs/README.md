@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Node.js, Transactions, MULTI, EXEC, ioredis
+Tags: Redis, Node.js, Transaction, MULTI, EXEC, ioredis
 
 Description: Learn how to use Redis MULTI/EXEC transactions in Node.js with ioredis for atomic command execution, including WATCH-based optimistic locking patterns.
 

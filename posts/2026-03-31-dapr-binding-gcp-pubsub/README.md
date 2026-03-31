@@ -1,6 +1,6 @@
 # How to Configure Dapr Binding with GCP Cloud Pub/Sub
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Binding, GCP, Google Cloud, Pub/Sub
 

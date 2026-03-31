@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, FlatList, Performance, Lists, Optimization, Mobile Development
+Tags: React Native, FlatList, Performance, List, Optimization, Mobile Development
 
 Description: Learn how to optimize FlatList performance in React Native for smooth scrolling with large datasets and complex list items.
 

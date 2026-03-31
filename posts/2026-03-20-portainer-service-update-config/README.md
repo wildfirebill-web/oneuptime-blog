@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Update, Services, DevOps
+Tags: Portainer, Docker Swarm, Update, Service, DevOps
 
 Description: Learn how to configure rolling update policies for Docker Swarm services in Portainer for zero-downtime deployments.
 

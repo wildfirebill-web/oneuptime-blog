@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Variance, Var Pop, Statistical Functions, Aggregate Functions
+Tags: MySQL, Variance, Var Pop, Statistical Function, Aggregate Function
 
-Description: Learn how to use MySQL's VARIANCE() and VAR_POP() functions to calculate statistical variance of a dataset, including the difference between population and sample variance.
+Description: Learn how to use MySQL's VARIANCE() and VAR_POP() functions to calculate statistical variance of a dataset, including population and sample variance.
 
 ---
 

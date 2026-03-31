@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, PHP, Laravel, Queue, Jobs, Distributed Tracing
+Tags: OpenTelemetry, PHP, Laravel, Queue, Job, Distributed Tracing
 
 Description: Implement distributed tracing for Laravel queue jobs with OpenTelemetry to track asynchronous operations and debug failures.
 

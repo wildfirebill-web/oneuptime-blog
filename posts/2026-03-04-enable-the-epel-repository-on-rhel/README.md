@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, EPEL, Repository, Packages, Linux
+Tags: RHEL, EPEL, Repository, Package, Linux
 
 Description: Enable the Extra Packages for Enterprise Linux (EPEL) repository on RHEL to access thousands of additional community-maintained packages.
 

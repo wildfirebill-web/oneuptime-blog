@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenStack, Calico, Labels, Documentation, Operations
+Tags: OpenStack, Calico, Labels, Documentation, Operation
 
 Description: A guide to documenting label management and label-based policies in OpenStack with Calico, covering taxonomy standards, policy mappings, and label governance procedures.
 

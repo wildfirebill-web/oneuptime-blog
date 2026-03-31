@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GKE, Kubernetes, GCP, OpenTofu, Containers, Infrastructure
+Tags: GKE, Kubernetes, GCP, OpenTofu, Container, Infrastructure
 
 Description: Learn how to create production-ready GKE Standard clusters with OpenTofu including VPC-native networking, private nodes, and workload identity configuration.
 

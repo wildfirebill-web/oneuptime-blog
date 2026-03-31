@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, Privileges, Access Control, Administration
+Tags: MySQL, Security, Privilege, Access Control, Administration
 
 Description: Learn how to revoke specific and all privileges from MySQL users and roles using the REVOKE statement with practical examples.
 

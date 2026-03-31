@@ -1,6 +1,6 @@
 # How to Export ClickHouse Data to Different File Formats
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Export, Data Engineering, Analytics
 

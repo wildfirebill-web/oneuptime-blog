@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, Destroy-Time, Infrastructure as Code, Cleanup
+Tags: OpenTofu, Provisioner, Destroy-Time, Infrastructure as Code, Cleanup
 
 Description: Learn how to use destroy-time provisioners in OpenTofu to run cleanup tasks-such as deregistering from service registries or archiving data-before a resource is destroyed.
 

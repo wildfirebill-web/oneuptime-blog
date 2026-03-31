@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, Best Practice, Infrastructure as Code, Terraform
+Tags: OpenTofu, Provisioner, Best Practice, Infrastructure as Code, Terraform
 
 Description: Understand why OpenTofu provisioners should be treated as a last resort, what alternatives exist, and how to use them responsibly when no better option is available.
 

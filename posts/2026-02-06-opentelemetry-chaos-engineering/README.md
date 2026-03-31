@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Chaos Engineering, Resilience Testing, Observability, Fault Injection, Microservices
+Tags: OpenTelemetry, Chaos Engineering, Resilience Testing, Observability, Fault Injection, Microservice
 
 Description: Learn how to use OpenTelemetry to observe, measure, and validate chaos engineering experiments, turning fault injection from guesswork into a data-driven practice.
 

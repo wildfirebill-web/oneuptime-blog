@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Services, CNI, Troubleshooting, Best Practice, Kube-proxy
+Tags: Calico, Kubernetes, Service, CNI, Troubleshooting, Best Practice, Kube-proxy
 
 Description: Common service networking mistakes in Calico environments, from ClusterIP policy mismatches to kube-proxy conflicts with eBPF mode.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Troubleshooting, Metrics, Data Loss, Observability
+Tags: OpenTelemetry, Collector, Troubleshooting, Metric, Data Loss, Observability
 
 Description: Learn how to use otelcol_exporter_send_failed_spans and related metrics to diagnose data loss in OpenTelemetry Collector, identify root causes, and implement fixes to ensure telemetry reliability.
 

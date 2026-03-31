@@ -1,6 +1,6 @@
 # How to Delete State Using the Dapr State Management API
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, State Management, API, Microservice
 

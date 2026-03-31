@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory, Monitoring, Operations
+Tags: Redis, Memory, Monitoring, Operation
 
 Description: Monitor the difference between Redis used_memory and RSS to detect fragmentation, swap usage, and OS-level memory pressure before they cause incidents.
 

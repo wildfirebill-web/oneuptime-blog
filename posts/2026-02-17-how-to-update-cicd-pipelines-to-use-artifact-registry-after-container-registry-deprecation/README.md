@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Artifact Registry, CI/CD, Docker, Cloud Build, GitHub Actions
+Tags: GCP, Artifact Registry, CI/CD, Docker, Cloud Build, GitHub Action
 
 Description: Practical guide to updating your CI/CD pipelines to push and pull Docker images from Artifact Registry instead of the deprecated Google Container Registry.
 

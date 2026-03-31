@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Git, Versioning
+Tags: OpenTofu, Terraform, IaC, Module, Git, Versioning
 
 Description: Learn how to version your OpenTofu modules using Git tags for reproducible, pinned module references.
 

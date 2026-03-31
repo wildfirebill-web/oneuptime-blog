@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, SSH, Remote Access, Security
+Tags: Podman, Container, DevOps, SSH, Remote Access, Security
 
 Description: Learn how to configure secure SSH-based remote access to Podman for managing containers on remote hosts from your local workstation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Priority Queue, Message Queue, Sorted Sets, Job Processing
+Tags: Redis, Priority Queue, Message Queue, Sorted Set, Job Processing
 
 Description: Learn how to implement a priority message queue in Redis using sorted sets, with support for multiple priority levels, delayed processing, and consumer patterns.
 

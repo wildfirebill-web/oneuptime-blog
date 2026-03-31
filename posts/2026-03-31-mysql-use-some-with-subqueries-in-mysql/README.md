@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Some Operator, Subquery, Sql, Database
+Tags: MySQL, Some Operator, Subquery, SQL, Database
 
 Description: Learn how to use the SOME operator in MySQL, which is an exact synonym for ANY, to compare a value against at least one result from a subquery.
 

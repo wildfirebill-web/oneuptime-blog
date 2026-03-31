@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Maxmemory, Eviction, Memory, Configuration
+Tags: Redis, maxmemory, Eviction, Memory, Configuration
 
 Description: Learn how to configure Redis maxmemory limits and eviction policies to control memory usage, prevent OOM errors, and tune cache behavior for your workload.
 

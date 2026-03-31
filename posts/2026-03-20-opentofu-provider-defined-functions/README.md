@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Provider, Functions
+Tags: OpenTofu, Terraform, IaC, Provider, Function
 
 Description: Learn how to use provider-defined functions in OpenTofu 1.7+ to call provider-specific logic directly in your configuration.
 

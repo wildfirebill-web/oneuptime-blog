@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Storage, Configuration, Data Directory
+Tags: k3s, Kubernetes, Rancher, Storage, Configuration, Data Directory
 
 Description: Learn how to configure a custom K3s data directory to separate cluster data from the OS partition, improving performance and manageability.
 

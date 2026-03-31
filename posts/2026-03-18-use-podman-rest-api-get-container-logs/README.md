@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, Container Logs, DevOps, Containers
+Tags: Podman, REST API, Container Logs, DevOps, Container
 
 Description: Learn how to retrieve container logs using the Podman REST API, including streaming logs, filtering by timestamp, and handling log output for monitoring and debugging.
 

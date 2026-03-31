@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Concurrency, Race Conditions, Locking, SERIALIZABLE, Advisory Locks
+Tags: PostgreSQL, Concurrency, Race Condition, Locking, SERIALIZABLE, Advisory Lock
 
 Description: Learn how to prevent race conditions in PostgreSQL functions using row locking, advisory locks, and serializable transactions. This guide covers common patterns and practical solutions.
 

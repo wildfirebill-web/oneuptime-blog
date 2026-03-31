@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Network, Messenger, Diagnostics
+Tags: Rook, Ceph, Network, Messenger, Diagnostic
 
 Description: Inspect Ceph messenger connection status, active sessions, and network connectivity between daemons using admin socket commands in Rook clusters.
 

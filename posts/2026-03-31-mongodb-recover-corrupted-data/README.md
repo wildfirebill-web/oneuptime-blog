@@ -1,8 +1,8 @@
 # How to Recover MongoDB from Corrupted Data
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Recovery, Corruption, WiredTiger, Operations
+Tags: MongoDB, Recovery, Corruption, WiredTiger, Operation
 
 Description: Learn how to detect, diagnose, and recover MongoDB from data file corruption using WiredTiger repair, validation, mongodump, and replica set resync.
 

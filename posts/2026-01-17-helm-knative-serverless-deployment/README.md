@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, Knative, Serverless, Functions, Event-Driven
+Tags: Helm, Kubernetes, DevOps, Knative, Serverless, Function, Event-Driven
 
 Description: Complete guide to deploying Knative serverless platform on Kubernetes using Helm charts for running serverless workloads and event-driven applications.
 

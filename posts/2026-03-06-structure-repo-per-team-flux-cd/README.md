@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Repository Structure, Teams, GitOps, Kubernetes, Multi-Tenant, RBAC
+Tags: Flux CD, Repository Structure, Team, GitOps, Kubernetes, Multi-Tenant, RBAC
 
 Description: A practical guide to organizing Git repositories per team for Flux CD, enabling team autonomy while maintaining platform-level governance.
 

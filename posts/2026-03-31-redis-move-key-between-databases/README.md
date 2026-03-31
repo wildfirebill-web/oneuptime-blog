@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Move, Database, Key, Administration
+Tags: Redis, MOVE, Database, Key, Administration
 
-Description: Learn how to use the MOVE command in Redis to atomically move a key from the current database to another database, with practical examples and edge cases.
+Description: Learn how to atomically move a Redis key from the current database to another logical database using the MOVE command, with examples and edge cases.
 
 ---
 

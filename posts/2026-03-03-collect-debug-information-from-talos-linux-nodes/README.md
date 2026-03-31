@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Debugging, Diagnostics, Troubleshooting, Support Bundle
+Tags: Talos Linux, Debugging, Diagnostic, Troubleshooting, Support Bundle
 
 Description: Learn how to collect comprehensive debug information from Talos Linux nodes for troubleshooting, bug reports, and support requests using built-in tools.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Placement Groups, High Availability, Fault Tolerance
+Tags: AWS, EC2, Placement Group, High Availability, Fault Tolerance
 
 Description: Learn how to use EC2 spread placement groups to maximize availability by ensuring instances run on distinct underlying hardware.
 

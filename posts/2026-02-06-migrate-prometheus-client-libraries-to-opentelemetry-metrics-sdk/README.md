@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, Metrics, Migration, SDK, Observability
+Tags: OpenTelemetry, Prometheus, Metric, Migration, SDK, Observability
 
 Description: A practical guide to migrating your application instrumentation from Prometheus client libraries to the OpenTelemetry Metrics SDK with code examples and mapping strategies.
 

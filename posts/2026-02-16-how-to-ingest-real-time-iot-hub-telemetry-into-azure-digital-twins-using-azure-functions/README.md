@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Digital Twins, IoT Hub, Azure Functions, Telemetry Ingestion, Real-Time Data, IoT Integration, Event Processing
+Tags: Azure Digital Twins, IoT Hub, Azure Function, Telemetry Ingestion, Real-Time Data, IoT Integration, Event Processing
 
 Description: Step-by-step guide to building a real-time telemetry ingestion pipeline from Azure IoT Hub to Azure Digital Twins using Azure Functions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Conditional Function, Null Handling, Query Optimization
+Tags: ClickHouse, Conditional Function, NULL Handling, Query Optimization
 
 Description: Learn how to use the if() function in ClickHouse as a ternary conditional with short-circuit evaluation and NULL-safe patterns.
 

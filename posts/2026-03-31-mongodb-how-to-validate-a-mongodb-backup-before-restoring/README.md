@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Backup, Validation, Database Administration
+Tags: MongoDB, Backup, Validation, Database Administration
 
 Description: Learn how to validate MongoDB backups created with mongodump or filesystem snapshots before using them for restoration, including integrity checks and test restores.
 

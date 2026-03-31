@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Scheduled Queries, Access Denied, IAM, Permissions
+Tags: GCP, BigQuery, Scheduled Queries, Access Denied, IAM, Permission
 
 Description: Fix BigQuery scheduled query failures caused by access denied to dataset errors, covering service account permissions, cross-project access, and transfer configurations.
 

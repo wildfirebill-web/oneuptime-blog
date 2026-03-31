@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Cleanup
+Tags: Podman, Container, DevOps, Networking, Cleanup
 
 Description: Learn how to remove Podman networks safely, including handling containers that are still connected.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Containers, Network Policies
+Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Container, Network Policies
 
 Description: A guide to testing Calico network policies on a bare metal Kubernetes cluster running containers to validate traffic isolation behavior.
 

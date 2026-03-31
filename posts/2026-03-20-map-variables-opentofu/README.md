@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Map, Collections, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Map, Collection, Infrastructure as Code, DevOps
 
 Description: A guide to using map type variables in OpenTofu to manage key-value pairs and environment-specific configurations.
 

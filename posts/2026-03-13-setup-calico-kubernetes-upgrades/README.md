@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Upgrade, Operations
+Tags: Calico, Kubernetes, Networking, Upgrade, Operation
 
 Description: A step-by-step guide to upgrading Calico on Kubernetes clusters using the Tigera Operator, ensuring zero network downtime and policy continuity during version transitions.
 

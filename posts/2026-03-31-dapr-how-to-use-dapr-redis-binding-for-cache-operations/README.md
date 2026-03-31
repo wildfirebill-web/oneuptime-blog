@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Redis, Bindings, Caching, Microservices
+Tags: Dapr, Redis, Binding, Caching, Microservice
 
 Description: Learn how to use the Dapr Redis output binding to perform cache operations like get, set, and delete without managing Redis client libraries in your code.
 

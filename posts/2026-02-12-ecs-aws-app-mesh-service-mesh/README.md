@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, ECS, App Mesh, Microservices, Networking
+Tags: AWS, ECS, App Mesh, Microservice, Networking
 
 Description: A practical guide to integrating Amazon ECS with AWS App Mesh for service discovery, traffic management, and observability across your microservices.
 

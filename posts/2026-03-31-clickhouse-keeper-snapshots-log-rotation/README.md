@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ClickHouse Keeper, Snapshot, Log Rotation, Operations
+Tags: ClickHouse, ClickHouse Keeper, Snapshot, Log Rotation, Operation
 
 Description: Learn how to configure ClickHouse Keeper snapshot frequency, log rotation, and retention to control disk usage and ensure fast recovery after a restart.
 

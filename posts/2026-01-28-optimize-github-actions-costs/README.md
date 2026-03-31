@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Cost Optimization, DevOps, Automation
+Tags: GitHub Action, CI/CD, Cost Optimization, DevOps, Automation
 
 Description: Learn practical ways to reduce GitHub Actions costs using caching, workflow tuning, concurrency controls, and self-hosted runners.
 

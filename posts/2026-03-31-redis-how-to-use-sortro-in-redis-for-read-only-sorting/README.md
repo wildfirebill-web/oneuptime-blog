@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorting, Read-Only, Data Structures, Performance
+Tags: Redis, Sorting, Read-Only, Data Structure, Performance
 
 Description: Learn how to use SORT_RO in Redis to sort list, set, or sorted set elements without modifying data, ideal for read replicas and safe queries.
 

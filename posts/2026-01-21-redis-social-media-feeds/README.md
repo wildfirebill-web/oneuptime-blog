@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Social Media, Feeds, Timeline, Fan-Out, Sorted Sets, Performance
+Tags: Redis, Social Media, Feed, Timeline, Fan-Out, Sorted Set, Performance
 
 Description: A comprehensive guide to building social media feeds and timelines with Redis, covering fan-out patterns, timeline generation, infinite scroll pagination, and production scaling strategies.
 

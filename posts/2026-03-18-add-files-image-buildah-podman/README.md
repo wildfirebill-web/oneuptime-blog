@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Buildah, Image Building, File Management
+Tags: Podman, Container, DevOps, Buildah, Image Building, File Management
 
 Description: Learn how to add, copy, and manage files in container images using Buildah copy and add commands with Podman.
 

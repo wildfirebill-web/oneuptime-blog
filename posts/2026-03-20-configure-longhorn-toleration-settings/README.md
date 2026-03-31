@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, Tolerations, Node Scheduling, Configuration
+Tags: Longhorn, Kubernetes, Storage, Toleration, Node Scheduling, Configuration
 
 Description: Configure tolerations for Longhorn components to deploy storage infrastructure on tainted nodes such as dedicated storage nodes or nodes with special hardware.
 

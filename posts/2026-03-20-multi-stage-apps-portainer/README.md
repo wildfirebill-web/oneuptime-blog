@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Stacks, Multi-Stage, DevOps
+Tags: Portainer, Docker Compose, Stack, Multi-Stage, DevOps
 
 Description: Deploy complex multi-stage applications using Portainer stacks with proper service ordering and dependencies.
 

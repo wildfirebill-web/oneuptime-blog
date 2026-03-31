@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Authentication, Security, Git, Registry
+Tags: Terraform, Module, Authentication, Security, Git, Registry
 
 Description: Configure authentication for Terraform module sources including Git over SSH and HTTPS, private registries, S3 buckets, and credential management best practices.
 

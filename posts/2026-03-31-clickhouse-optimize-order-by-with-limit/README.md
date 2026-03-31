@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ORDER BY, LIMIT, Performance, Query Optimization, TopK
+Tags: ClickHouse, ORDER BY, Limit, Performance, Query Optimization, TopK
 
 Description: Learn how to optimize ORDER BY with LIMIT queries in ClickHouse to get top-N results efficiently using partial sorting, index alignment, and pre-aggregation.
 

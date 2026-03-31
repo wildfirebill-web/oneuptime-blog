@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, AWS, S3, DynamoDB, SQS, Monitoring, CloudWatch, Metrics
+Tags: OpenTelemetry, AWS, S3, DynamoDB, SQS, Monitoring, CloudWatch, Metric
 
 Description: Learn how to monitor AWS S3, DynamoDB, and SQS using OpenTelemetry by collecting CloudWatch metrics and tracing SDK calls for full visibility.
 

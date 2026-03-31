@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Nats, JetStream, Pub/Sub, Messaging
+Tags: Dapr, NATS, JetStream, Pub/Sub, Messaging
 
 Description: Configure NATS JetStream as the Dapr pub/sub backend with stream persistence, consumer durability, and delivery policy settings.
 

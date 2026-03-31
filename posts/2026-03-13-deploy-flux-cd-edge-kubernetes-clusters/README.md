@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, Edge Computing, GitOps, K3s, IoT
+Tags: Flux CD, Kubernetes, Edge Computing, GitOps, k3s, IoT
 
 Description: Set up Flux CD on resource-constrained edge Kubernetes clusters, optimizing controller resource usage for minimal footprint deployments.
 

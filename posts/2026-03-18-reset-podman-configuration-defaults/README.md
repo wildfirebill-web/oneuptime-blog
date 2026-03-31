@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Troubleshooting, Reset
+Tags: Podman, Container, DevOps, Configuration, Troubleshooting, Reset
 
 Description: Learn how to reset Podman configuration and storage to factory defaults when troubleshooting issues or starting fresh.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, Containers, DevOps, Optimization
+Tags: Podman, Containerfile, Container, DevOps, Optimization
 
 Description: Learn how to write efficient Containerfiles for Podman that produce smaller, faster, and more secure container images through layering strategies, caching, and best practices.
 

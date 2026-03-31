@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, RabbitMQ, Messaging, AMQP, Microservices
+Tags: Java, Spring Boot, RabbitMQ, Messaging, AMQP, Microservice
 
 Description: Learn how to configure RabbitMQ with Spring Boot for reliable message queuing.
 

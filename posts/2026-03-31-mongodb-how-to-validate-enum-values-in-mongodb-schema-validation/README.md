@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Schema Validation, Enum, JSON Schema, Data Quality
+Tags: MongoDB, Schema Validation, ENUM, JSON Schema, Data Quality
 
 Description: Learn how to use MongoDB's JSON Schema validation to enforce enum constraints on fields, ensuring only allowed values are accepted.
 

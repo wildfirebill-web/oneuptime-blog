@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Backup, mongodump, mongorestore, Data Recovery
+Tags: MongoDB, Backup, Mongodump, mongorestore, Data Recovery
 
 Description: Learn how to use mongodump and mongorestore to back up and restore MongoDB databases, collections, and individual documents with practical examples and best practices.
 

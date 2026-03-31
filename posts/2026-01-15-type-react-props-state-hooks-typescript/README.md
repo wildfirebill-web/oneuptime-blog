@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, TypeScript, Props, State, Hooks, Type Safety
+Tags: React, TypeScript, Props, State, Hook, Type Safety
 
 Description: A comprehensive guide to typing React components, props, state, and hooks with TypeScript for building type-safe, maintainable frontend applications.
 

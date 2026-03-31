@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Pub/Sub, Messaging, Google Cloud, Event-Driven Architecture, Microservices
+Tags: Go, Pub/Sub, Messaging, Google Cloud, Event-Driven Architecture, Microservice
 
 Description: Learn how to implement the Pub/Sub messaging pattern in Go using Google Cloud Pub/Sub, Redis, and NATS. Covers publishers, subscribers, error handling, and production best practices.
 

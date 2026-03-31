@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Plugins, Storage
+Tags: Podman, Container, DevOps, Volumes, Plugin, Storage
 
 Description: Learn how to extend Podman volume capabilities using volume plugins for remote and specialized storage backends.
 

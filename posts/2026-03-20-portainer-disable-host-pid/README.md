@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Security, Docker, Hardening, Containers
+Tags: Portainer, Security, Docker, Hardening, Container
 
 Description: Learn how to prevent non-admin users from running containers with host PID namespace sharing in Portainer, blocking a critical container escape vector.
 

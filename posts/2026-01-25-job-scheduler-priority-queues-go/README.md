@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Job Scheduler, Priority Queue, Background Jobs, Concurrency
+Tags: Go, Job Scheduler, Priority Queue, Background Job, Concurrency
 
 Description: Learn how to build a robust job scheduler in Go using priority queues. This guide covers heap-based implementations, worker pools, and graceful shutdown patterns for production systems.
 

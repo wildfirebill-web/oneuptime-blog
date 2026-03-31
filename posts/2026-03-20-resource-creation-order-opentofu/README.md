@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Dependencies, Creation Order, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, Dependencies, Creation Order, Infrastructure as Code, DevOps
 
 Description: A guide to understanding how OpenTofu determines the order in which resources are created, modified, and destroyed.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, API Gateway, Microservices, HelmRelease, Backend Service
+Tags: Flux CD, Kubernetes, GitOps, API Gateway, Microservice, HelmRelease, Backend Service
 
 Description: Learn how to deploy an API gateway alongside backend microservices using Flux CD with proper dependency ordering and configuration.
 

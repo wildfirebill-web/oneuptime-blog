@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, Versioning, GitOps, Best Practice
+Tags: OpenTofu, Terraform, Module, Versioning, GitOps, Best Practice
 
 Description: Learn how to manage module versions across dev, staging, and production environments in OpenTofu, ensuring changes are validated in lower environments before reaching production.
 

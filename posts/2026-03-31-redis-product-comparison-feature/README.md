@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, E-commerce, Set, User Session
+Tags: Redis, E-Commerce, Set, User Session
 
 Description: Implement a product comparison feature with Redis Sets - let users add products to a comparison basket, enforce limits, and cache comparison views per session.
 

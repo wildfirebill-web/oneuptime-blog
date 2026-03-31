@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Dynamic Blocks, Nested, Collections, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Dynamic Blocks, Nested, Collection, Infrastructure as Code, DevOps
 
 Description: A guide to using nested dynamic blocks in OpenTofu to generate hierarchically structured configuration from complex data.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, DynamoDB, Global Tables, Multi-Region
+Tags: Terraform, AWS, DynamoDB, Global Table, Multi-Region
 
 Description: Learn how to create DynamoDB global tables with Terraform for multi-region, active-active database replication with automatic conflict resolution.
 

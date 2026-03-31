@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Monitoring, Alerts, Notifications, Events
+Tags: Podman, Container, DevOps, Monitoring, Alert, Notification, Event
 
 Description: Learn how to set up automated alerts based on Podman container events to get notified about critical container state changes.
 

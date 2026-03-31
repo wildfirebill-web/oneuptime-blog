@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Secrets, Security, DevOps
+Tags: Portainer, Docker Swarm, Secret, Security, DevOps
 
 Description: Manage Docker Swarm secrets for sensitive configuration data using Portainer's built-in secrets management interface.
 

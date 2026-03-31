@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, Backup, DevOps, Disaster Recovery
+Tags: Podman, Container, Backup, DevOps, Disaster Recovery
 
 Description: A practical guide to backing up Podman containers, covering export methods, metadata preservation, and strategies for reliable container recovery.
 

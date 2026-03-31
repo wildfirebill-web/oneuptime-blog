@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Shared Values, ConfigMaps, Kustomize
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Shared Values, ConfigMap, Kustomize
 
 Description: Learn how to share common Helm values across multiple HelmRelease resources in Flux using ConfigMaps, Secrets, and Kustomize post-build variable substitution.
 

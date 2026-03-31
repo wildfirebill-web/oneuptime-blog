@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, MLD, Multicast, Switch Configuration, Networks
+Tags: IPv6, MLD, Multicast, Switch Configuration, Network
 
 Description: A guide to enabling and configuring MLD snooping on network switches to efficiently forward IPv6 multicast traffic only to ports with active listeners.
 

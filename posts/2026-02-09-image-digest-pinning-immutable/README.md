@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Images, Digest, Immutability, Security
+Tags: Kubernetes, Image, Digest, Immutability, Security
 
 Description: Learn how to use image digest pinning to ensure immutable deployments and prevent image tampering.
 

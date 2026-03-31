@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, JOIN, Database, Query
+Tags: MySQL, SQL, Join, Database, Query
 
 Description: Learn how to use INNER JOIN in MySQL to combine rows from two or more tables based on a matching condition, with practical examples.
 

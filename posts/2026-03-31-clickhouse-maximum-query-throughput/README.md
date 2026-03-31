@@ -1,6 +1,6 @@
 # How to Tune ClickHouse for Maximum Query Throughput
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Performance, Infrastructure, Database, Analytics
 

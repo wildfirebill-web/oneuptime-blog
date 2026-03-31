@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules
+Tags: OpenTofu, Terraform, IaC, Module
 
 Description: Learn the standard file structure for OpenTofu modules including main.tf, variables.tf, outputs.tf, and versions.tf.
 

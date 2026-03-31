@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Elasticsearch, Observability, Metrics, Monitoring
+Tags: OpenTelemetry, Collector, Elasticsearch, Observability, Metric, Monitoring
 
 Description: Learn how to configure the Elasticsearch receiver in OpenTelemetry Collector to monitor your Elasticsearch clusters with real YAML configuration examples and best practices.
 

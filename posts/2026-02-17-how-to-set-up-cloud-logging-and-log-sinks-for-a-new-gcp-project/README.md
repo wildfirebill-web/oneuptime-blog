@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Logging, Log Sinks, Monitoring, Operations, Log Management
+Tags: GCP, Cloud Logging, Log Sinks, Monitoring, Operation, Log Management
 
 Description: Configure Cloud Logging with proper log sinks, retention policies, exclusion filters, and log-based metrics for a new GCP project to enable effective troubleshooting and compliance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, ObjectStore, Zone, ZoneGroup, MultiSite, RGW
+Tags: Rook, Ceph, Kubernetes, ObjectStore, Zone, ZoneGroup, Multisite, RGW
 
 Description: Learn how to configure CephObjectZone and CephObjectZoneGroup CRDs in Rook to build a multi-site object storage topology with data replication.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Background Merges, Monitoring, MergeTree, Performance
+Tags: ClickHouse, Background Merge, Monitoring, MergeTree, Performance
 
 Description: Learn how to monitor ClickHouse background merge operations using system tables and metrics to detect merge backlogs and optimize table performance.
 

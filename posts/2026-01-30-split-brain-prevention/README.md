@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: High Availability, Distributed Systems, Clustering, SRE
+Tags: High Availability, Distributed System, Clustering, SRE
 
 Description: Learn how to prevent split-brain scenarios in clustered systems with quorum and fencing.
 

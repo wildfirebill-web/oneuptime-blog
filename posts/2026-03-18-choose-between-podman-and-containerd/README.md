@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerd, Containers, Kubernetes, Container Runtime
+Tags: Podman, Containerd, Container, Kubernetes, Container Runtime
 
 Description: Compare Podman and containerd as container runtimes to understand their architectures, use cases, and how each fits into container orchestration and standalone deployment scenarios.
 

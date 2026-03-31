@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, OBJECT HELP, Internals, CLI, Documentation
+Tags: Redis, OBJECT HELP, Internal, CLI, Documentation
 
 Description: Learn how to use OBJECT HELP in Redis to list all available OBJECT subcommands directly from the Redis CLI, with an overview of each subcommand's purpose.
 

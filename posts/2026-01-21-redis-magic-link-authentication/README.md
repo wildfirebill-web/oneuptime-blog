@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Authentication, Magic Link, Passwordless, Security, One-Time Tokens
+Tags: Redis, Authentication, Magic Link, Passwordless, Security, One-Time Token
 
 Description: A comprehensive guide to implementing secure magic link authentication with Redis including one-time tokens, rate limiting, and secure login flows.
 

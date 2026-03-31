@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Continuous Testing, CI/CD, Modules, DevOps, Automation
+Tags: Terraform, Continuous Testing, CI/CD, Module, DevOps, Automation
 
 Description: Learn how to implement continuous testing for Terraform modules with scheduled tests, drift detection, provider update monitoring, and automated regression testing.
 

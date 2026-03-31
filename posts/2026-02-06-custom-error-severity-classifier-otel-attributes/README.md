@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Error Severity, Classification, Logs
+Tags: OpenTelemetry, Error Severity, Classification, Log
 
 Description: Build a custom error severity classifier that combines OpenTelemetry span attributes with log severity levels for precise alerting.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Security, Resource Limits, Linux
+Tags: RHEL, Podman, Security, Resource Limit, Linux
 
 Description: Learn how to configure security contexts, capabilities, resource limits, and isolation settings for Podman pods and containers on RHEL.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Grafana Loki, Logs, Structured Metadata
+Tags: OpenTelemetry, Grafana Loki, Log, Structured Metadata
 
 Description: Fix Grafana Loki rejecting OpenTelemetry log records because the allow_structured_metadata configuration option is not enabled.
 

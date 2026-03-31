@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Build, Git
+Tags: Podman, Container, DevOps, Container Image, Build, Git
 
 Description: Learn how to build container images directly from Git repositories with Podman, including branch, tag, and subdirectory targeting.
 

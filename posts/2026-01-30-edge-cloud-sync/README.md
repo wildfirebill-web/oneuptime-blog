@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Edge Computing, Cloud Sync, Distributed Systems, Data Replication
+Tags: Edge Computing, Cloud Sync, Distributed System, Data Replication
 
 Description: Learn to implement edge-cloud synchronization with conflict resolution, eventual consistency, and bandwidth optimization for hybrid architectures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Error Handling, Patterns, Best Practice, Programming
+Tags: Go, Error Handling, Pattern, Best Practice, Programming
 
 Description: Learn Go error handling patterns including sentinel errors, custom error types, wrapping, and the errors package.
 

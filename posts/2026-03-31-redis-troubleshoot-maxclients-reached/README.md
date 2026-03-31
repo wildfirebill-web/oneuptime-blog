@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Connection, Maxclients, Troubleshooting, Performance
+Tags: Redis, Connection, MaxClients, Troubleshooting, Performance
 
-Description: Fix Redis 'ERR max number of clients reached' errors by tuning maxclients, improving connection pooling, and identifying connection leaks in your application.
+Description: Fix Redis ERR max number of clients reached errors by tuning maxclients, improving connection pooling, and identifying connection leaks in your application.
 
 ---
 

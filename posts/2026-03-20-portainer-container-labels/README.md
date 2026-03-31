@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Organizations, DevOps
+Tags: Portainer, Docker, Container, Organization, DevOps
 
 Description: Learn how to add and use Docker container labels in Portainer for organization, service discovery, and integration with tools like Traefik and Prometheus.
 

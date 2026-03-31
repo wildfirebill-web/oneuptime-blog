@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Gateway, Routing, Kubernetes, Microservices
+Tags: Istio, Gateway, Routing, Kubernetes, Microservice
 
 Description: How to expose multiple backend services through a single Istio Gateway using path-based and host-based routing strategies.
 

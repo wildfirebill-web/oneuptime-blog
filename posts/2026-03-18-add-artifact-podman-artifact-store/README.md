@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OCI Artifacts, Artifact Store
+Tags: Podman, Container, DevOps, OCI Artifacts, Artifact Store
 
 Description: Learn how to add OCI artifacts to the Podman artifact store for local management and distribution of non-container content.
 

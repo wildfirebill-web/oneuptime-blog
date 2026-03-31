@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sets, SREM, Commands, Data Structures
+Tags: Redis, Set, SREM, Command, Data Structure
 
 Description: Learn how to use SREM in Redis to remove one or more specific members from a set, with practical examples for managing dynamic collections.
 

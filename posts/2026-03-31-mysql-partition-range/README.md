@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Partition, RANGE, Performance, InnoDB
+Tags: MySQL, Partition, Range, Performance, InnoDB
 
 Description: Learn how to use MySQL RANGE partitioning to split large tables into date or value-based segments, improving query performance and simplifying data lifecycle management.
 

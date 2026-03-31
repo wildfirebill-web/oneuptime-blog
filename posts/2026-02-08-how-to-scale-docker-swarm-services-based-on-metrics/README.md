@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Swarm, Auto Scaling, Prometheus, Monitoring, Metrics, DevOps
+Tags: Docker, Docker Swarm, Auto Scaling, Prometheus, Monitoring, Metric, DevOps
 
 Description: Implement metric-based auto-scaling for Docker Swarm services using Prometheus, custom scripts, and monitoring tools.
 

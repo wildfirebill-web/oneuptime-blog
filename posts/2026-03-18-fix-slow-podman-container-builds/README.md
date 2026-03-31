@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Performance, Build Optimization, DevOps
+Tags: Podman, Container, Performance, Build Optimization, DevOps
 
 Description: A practical guide to diagnosing and fixing slow container builds in Podman, covering layer caching, build context optimization, multi-stage builds, and Podman-specific performance tuning.
 

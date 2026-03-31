@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Event-Driven, Architecture, Events, Async, Patterns
+Tags: Go, Golang, Event-Driven, Architecture, Event, Async, Pattern
 
 Description: A practical guide to building event-driven applications in Go using channels, event buses, and message brokers.
 

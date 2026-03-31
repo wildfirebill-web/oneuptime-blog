@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Compass, Gui, Query Building
+Tags: MongoDB, Compass, GUI, Query Building
 
 Description: Learn how to use MongoDB Compass to build and execute queries visually, explore collections, and analyze query results without writing MongoDB query syntax manually.
 

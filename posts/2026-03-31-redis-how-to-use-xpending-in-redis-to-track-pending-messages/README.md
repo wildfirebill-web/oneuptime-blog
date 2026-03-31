@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Consumer Groups, Pending Messages, Reliability
+Tags: Redis, Stream, Consumer Group, Pending Messages, Reliability
 
 Description: Learn how to use XPENDING in Redis Streams to inspect unacknowledged messages, identify stalled consumers, and build reliable message processing.
 

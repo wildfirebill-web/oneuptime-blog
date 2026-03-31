@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Exemplars, Tracing, Observability, Prometheus, Debugging, Performance
+Tags: OpenTelemetry, Metric, Exemplars, Tracing, Observability, Prometheus, Debugging, Performance
 
 Description: Learn how to configure and use exemplars in OpenTelemetry to link metrics to traces, enabling faster root cause analysis by connecting high-level metrics to detailed trace data.
 

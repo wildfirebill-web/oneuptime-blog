@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, Signature Server, Image Signing
+Tags: Podman, Container, DevOps, Security, Signature Server, Image Signing
 
 Description: Learn how to set up and run a dedicated signature server to host container image signatures for Podman verification.
 

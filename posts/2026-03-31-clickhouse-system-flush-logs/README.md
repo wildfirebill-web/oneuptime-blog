@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SYSTEM, Logs, Flush
+Tags: ClickHouse, SQL, System, Log, Flush
 
 Description: Learn how SYSTEM FLUSH LOGS works in ClickHouse, which system log tables it flushes, and when to use it for accurate observability data.
 

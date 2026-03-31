@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Azure Functions, Durable Functions, Distributed Tracing, Serverless, .NET
+Tags: OpenTelemetry, Azure Function, Durable Functions, Distributed Tracing, Serverless, .NET
 
 Description: Learn how to add OpenTelemetry tracing to Azure Durable Functions orchestrations, activities, and sub-orchestrations for full workflow visibility.
 

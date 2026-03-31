@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Python, boto3, S3, RGW, Storage
+Tags: Rook, Ceph, Python, Boto3, S3, RGW, Storage
 
 Description: Use the Python boto3 library to interact with Ceph RGW S3-compatible API for bucket management, object operations, and presigned URLs in your applications.
 

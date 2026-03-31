@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Namespaces, Resource Quotas
+Tags: Rancher, Kubernetes, Namespace, Resource Quota
 
 Description: Learn how to configure resource limits on individual namespaces in Rancher to control resource consumption and prevent workload interference.
 

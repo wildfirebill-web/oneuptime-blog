@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Teams, RBAC, Automation
+Tags: Portainer, API, Team, RBAC, Automation
 
 Description: Learn how to create and manage Portainer teams, assign users to teams, and configure role-based access to environments via the REST API for automated RBAC management.
 

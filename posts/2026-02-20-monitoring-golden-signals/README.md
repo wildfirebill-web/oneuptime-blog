@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Monitoring, Golden Signals, SRE, Observability, Metrics
+Tags: Monitoring, Golden Signals, SRE, Observability, Metric
 
 Description: Learn how to implement the four golden signals of monitoring - latency, traffic, errors, and saturation - for your services.
 

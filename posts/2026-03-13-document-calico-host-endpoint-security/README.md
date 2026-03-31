@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Security, Host Endpoint, Documentation, Operations
+Tags: Calico, Kubernetes, Networking, Security, Host Endpoint, Documentation, Operation
 
 Description: A guide to creating effective operational documentation for Calico host endpoint security configurations, including runbooks, policy inventories, and change management procedures.
 

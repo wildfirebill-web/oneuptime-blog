@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Monitoring, Document, Metrics, Performance
+Tags: MongoDB, Monitoring, Document, Metric, Performance
 
 Description: Learn how to monitor MongoDB document-level metrics for inserts, updates, and deletes using metrics.document from serverStatus to track write activity over time.
 

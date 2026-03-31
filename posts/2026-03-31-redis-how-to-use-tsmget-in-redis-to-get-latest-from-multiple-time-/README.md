@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Time Series, RedisTimeSeries, Commands, NoSql
+Tags: Redis, Time Series, RedisTimeSeries, Command, NoSQL
 
 Description: Learn how to use TS.MGET in Redis to retrieve the latest data point from multiple time series keys in a single command using label filters.
 

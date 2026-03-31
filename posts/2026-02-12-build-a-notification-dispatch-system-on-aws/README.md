@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, SNS, SES, Lambda, Notifications, EventBridge
+Tags: AWS, SNS, SES, Lambda, Notification, EventBridge
 
 Description: Build a multi-channel notification dispatch system on AWS using SNS, SES, Lambda, and DynamoDB with templates, preferences, and rate limiting.
 

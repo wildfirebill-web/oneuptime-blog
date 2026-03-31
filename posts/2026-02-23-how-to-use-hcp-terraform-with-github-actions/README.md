@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Terraform Cloud, GitHub Actions, CI/CD, Automation, DevOps
+Tags: Terraform, HCP Terraform, Terraform Cloud, GitHub Action, CI/CD, Automation, DevOps
 
 Description: Learn how to integrate HCP Terraform with GitHub Actions for automated Terraform plans on pull requests and applies on merge.
 

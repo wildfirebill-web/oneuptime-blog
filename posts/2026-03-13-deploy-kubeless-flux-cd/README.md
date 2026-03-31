@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Kubeless, Serverless, Functions, FaaS
+Tags: Flux CD, Kubernetes, GitOps, Kubeless, Serverless, Function, FaaS
 
 Description: Deploy Kubeless serverless framework to Kubernetes using Flux CD to run native Kubernetes functions with CRD-based management.
 

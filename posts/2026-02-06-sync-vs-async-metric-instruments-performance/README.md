@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Metrics, Performance, SDK, Instrumentation
+Tags: OpenTelemetry, Metric, Performance, SDK, Instrumentation
 
 Description: A practical guide to choosing between synchronous and asynchronous metric instruments in OpenTelemetry for optimal application performance.
 

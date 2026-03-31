@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, HPA, Prometheus, Custom Metrics, Kubernetes, Autoscaling, Prometheus Adapter
+Tags: Flux CD, HPA, Prometheus, Custom Metric, Kubernetes, Autoscaling, Prometheus Adapter
 
 Description: Configure HPA to scale Kubernetes deployments based on Prometheus metrics using the Prometheus Adapter, managed through Flux CD.
 

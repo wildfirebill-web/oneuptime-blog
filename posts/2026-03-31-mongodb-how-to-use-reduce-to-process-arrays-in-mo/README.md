@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Array Operators, $reduce, Database
+Tags: MongoDB, Aggregation, Array Operator, $reduce, Database
 
 Description: Learn how to use $reduce in MongoDB aggregation to process array elements sequentially with an accumulator, enabling custom aggregations on embedded arrays.
 

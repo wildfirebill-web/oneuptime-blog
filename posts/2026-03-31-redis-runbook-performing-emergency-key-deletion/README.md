@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Keys, Runbook
+Tags: Redis, Key, Runbook
 
 Description: Step-by-step runbook for safely deleting large numbers of Redis keys in an emergency without blocking the server or disrupting production traffic.
 

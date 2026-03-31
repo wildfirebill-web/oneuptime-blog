@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SSL, TLS, IPv6, Certificates, Let's Encrypt, SAN, Security
+Tags: SSL, TLS, IPv6, Certificate, Let's Encrypt, SAN, Security
 
 Description: Learn how to obtain and configure SSL/TLS certificates for servers with only IPv6 addresses, covering certificate authorities, SAN configuration, and DNS-01 validation strategies.
 

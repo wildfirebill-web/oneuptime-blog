@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Terraform, Cloud Functions, Pub/Sub, Serverless, Event-Driven Architecture
+Tags: GCP, Terraform, Cloud Function, Pub/Sub, Serverless, Event-Driven Architecture
 
 Description: Learn how to deploy Google Cloud Functions with Terraform including Pub/Sub triggers, proper IAM configuration, and environment-specific settings for event-driven architectures.
 

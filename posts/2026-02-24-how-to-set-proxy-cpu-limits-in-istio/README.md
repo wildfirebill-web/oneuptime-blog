@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Proxy CPU, Resource Limits, Kubernetes, Performance Tuning
+Tags: Istio, Proxy CPU, Resource Limit, Kubernetes, Performance Tuning
 
 Description: A practical guide to configuring CPU requests and limits for Istio sidecar proxies to balance performance with cluster resource efficiency.
 

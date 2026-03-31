@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json, Function
+Tags: MySQL, JSON, Function
 
 Description: Learn how MySQL's JSON_VALUE() function extracts scalar values from JSON documents with explicit type casting and error handling options.
 

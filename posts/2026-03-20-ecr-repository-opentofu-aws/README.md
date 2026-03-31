@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Infrastructure as Code, IaC, ECR, Docker, Containers
+Tags: OpenTofu, AWS, Infrastructure as Code, IaC, ECR, Docker, Container
 
 Description: Learn how to create AWS Elastic Container Registry repositories with lifecycle policies, image scanning, and cross-account access using OpenTofu.
 

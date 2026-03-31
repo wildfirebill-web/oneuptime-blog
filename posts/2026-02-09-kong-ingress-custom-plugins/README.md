@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Kong, API Gateway, Plugins, Ingresses
+Tags: Kubernetes, Kong, API Gateway, Plugin, Ingresses
 
 Description: Learn how to configure and implement advanced ingress controller features on Kubernetes for production-grade traffic management, security, and performance optimization.
 

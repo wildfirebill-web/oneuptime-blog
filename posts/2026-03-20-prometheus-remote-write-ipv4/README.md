@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Remote Write, IPv4, Metrics, Long-Term Storage, Thanos, VictoriaMetrics
+Tags: Prometheus, Remote Write, IPv4, Metric, Long-Term Storage, Thanos, VictoriaMetrics
 
 Description: Learn how to configure Prometheus remote write to send metrics to a remote storage backend over IPv4 for long-term metric retention.
 

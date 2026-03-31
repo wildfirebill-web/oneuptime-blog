@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, K3s
+Tags: Cilium, Kubernetes, k3s
 
 Description: Set up automated validation checks that run after Cilium installation on K3s to verify networking, policy enforcement, and service connectivity are working correctly.
 

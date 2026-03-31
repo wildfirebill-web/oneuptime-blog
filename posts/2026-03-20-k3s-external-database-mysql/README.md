@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, MySQL, External Database, Kubernetes, High Availability, SUSE Rancher, Cluster Storage
+Tags: k3s, MySQL, External Database, Kubernetes, High Availability, SUSE Rancher, Cluster Storage
 
 Description: Learn how to configure K3s to use an external MySQL database as the cluster datastore instead of the embedded SQLite, enabling multi-server HA deployments.
 

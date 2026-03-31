@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Key Management, Commands, Data Operations
+Tags: Redis, Key Management, Command, Data Operations
 
 Description: Learn how to use RENAME and RENAMENX in Redis to rename keys, understand how they handle existing destination keys, and avoid common pitfalls with TTL behavior.
 

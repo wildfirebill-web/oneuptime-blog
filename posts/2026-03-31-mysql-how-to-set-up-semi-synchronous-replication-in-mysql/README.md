@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Replication, Semi-Synchronous, Durability, High Availability
+Tags: MySQL, Replication, Semi-Synchronous, Durability, High Availability
 
 Description: Learn how to configure MySQL semi-synchronous replication to ensure at least one replica acknowledges each transaction before the source commits, reducing data loss risk.
 

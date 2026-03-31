@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Multicast, Video Streaming, IPTV, Networks
+Tags: IPv6, Multicast, Video Streaming, IPTV, Network
 
 Description: A practical guide to configuring IPv6 multicast for video streaming deployments, including sender configuration, receiver setup, and network optimization.
 

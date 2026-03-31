@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Network Watcher, VPN Troubleshoot, VPN Gateway, Diagnostics, Networking, Troubleshooting
+Tags: Azure, Network Watcher, VPN Troubleshoot, VPN Gateway, Diagnostic, Networking, Troubleshooting
 
 Description: Use Azure Network Watcher VPN Troubleshoot to diagnose and resolve VPN gateway connection issues with detailed diagnostic logs.
 

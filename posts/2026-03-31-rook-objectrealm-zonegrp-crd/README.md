@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, ObjectStore, Realm, ZoneGroup, MultiSite, CRD
+Tags: Rook, Ceph, Kubernetes, ObjectStore, Realm, ZoneGroup, Multisite, CRD
 
 Description: A complete reference for the CephObjectRealm and CephObjectZoneGroup CRDs in Rook, covering setup, status inspection, and period management for multi-site object storage.
 

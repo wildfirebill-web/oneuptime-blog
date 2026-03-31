@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Key-Value Store, Distributed Systems, Messaging, Go, Node.js, DevOps
+Tags: NATS, Key-Value Store, Distributed System, Messaging, Go, Node.js, DevOps
 
 Description: A practical guide to implementing key-value storage with NATS JetStream, covering bucket operations, watchers, TTL configuration, and production deployment patterns.
 

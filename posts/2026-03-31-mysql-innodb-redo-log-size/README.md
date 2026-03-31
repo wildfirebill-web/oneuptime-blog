@@ -1,6 +1,6 @@
 # How to Configure InnoDB Redo Log Size in MySQL
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, InnoDB, Redo Log, Performance, Configuration
 

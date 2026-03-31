@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Ports, Security, IP Binding
+Tags: Podman, Container, DevOps, Networking, Port, Security, IP Binding
 
 Description: Learn how to bind container ports to specific host IP addresses in Podman for network security and multi-interface hosts.
 

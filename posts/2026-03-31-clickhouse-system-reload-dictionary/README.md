@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SYSTEM, Dictionary, Reload
+Tags: ClickHouse, SQL, System, Dictionary, Reload
 
 Description: Learn how to use SYSTEM RELOAD DICTIONARY and SYSTEM RELOAD DICTIONARIES in ClickHouse to refresh dictionary data without restarting the server.
 

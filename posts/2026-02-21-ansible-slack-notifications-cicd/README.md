@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Slack, CI/CD, Notifications
+Tags: Ansible, Slack, CI/CD, Notification
 
 Description: Send Slack notifications from Ansible playbooks during CI/CD deployments to keep your team informed in real time.
 

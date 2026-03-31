@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Ulimit, Resource Limits, Security, Linux, System Tuning
+Tags: Portainer, Docker, Ulimit, Resource Limit, Security, Linux, System Tuning
 
 Description: Configure Linux ulimits for Docker containers in Portainer to control resource limits like open file descriptors, max processes, and stack sizes for production workloads.
 

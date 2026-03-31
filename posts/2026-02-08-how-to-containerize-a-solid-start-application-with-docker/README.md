@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Solid-start, Solidjs, Containerization, Vinxi, Node.js, Multi-Stage Builds
+Tags: Docker, Solid-start, Solidjs, Containerization, Vinxi, Node.js, Multi-Stage Build
 
 Description: Docker setup for Solid Start applications with Vinxi server and production-optimized builds
 

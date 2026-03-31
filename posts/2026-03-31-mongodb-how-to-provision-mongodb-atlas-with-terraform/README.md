@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Terraform, Atlas, Infrastructure As Code, DevOps
+Tags: MongoDB, Terraform, Atlas, Infrastructure as Code, DevOps
 
 Description: Learn how to provision MongoDB Atlas clusters, database users, and network access rules using Terraform with the MongoDB Atlas provider for reproducible infrastructure.
 

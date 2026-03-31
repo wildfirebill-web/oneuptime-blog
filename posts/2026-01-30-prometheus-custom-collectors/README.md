@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Metrics, Monitoring, Go, Observability
+Tags: Prometheus, Metric, Monitoring, Go, Observability
 
 Description: Build custom Prometheus collectors to expose application-specific metrics, external system data, and business KPIs for comprehensive monitoring.
 

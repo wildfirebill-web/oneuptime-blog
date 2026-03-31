@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Serverless, Data Pipelines, Lambda, Kinesis
+Tags: Terraform, AWS, Serverless, Data Pipeline, Lambda, Kinesis
 
 Description: Learn how to build a serverless data processing pipeline with Terraform using Kinesis, Lambda, S3, and other AWS services for scalable event-driven data processing.
 

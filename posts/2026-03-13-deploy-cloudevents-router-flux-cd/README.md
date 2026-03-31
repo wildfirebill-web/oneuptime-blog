@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, CloudEvents, Event Router, Event-Driven, Serverless
+Tags: Flux CD, Kubernetes, GitOps, CloudEvent, Event Router, Event-Driven, Serverless
 
 Description: Deploy a CloudEvents-based event router to Kubernetes using Flux CD to route standardized events between producers and consumers with GitOps-managed routing rules.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, S3, AWS
+Tags: OpenTofu, Terraform, IaC, Module, S3, AWS
 
 Description: Learn how to use Amazon S3 buckets as module sources in OpenTofu for private module distribution.
 

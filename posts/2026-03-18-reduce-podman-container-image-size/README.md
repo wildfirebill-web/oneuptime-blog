@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Docker, Image Optimization, DevOps, Multi-Stage Builds, Linux
+Tags: Podman, Container, Docker, Image Optimization, DevOps, Multi-Stage Build, Linux
 
 Description: A practical guide to reducing Podman container image sizes using multi-stage builds, minimal base images, layer optimization, and dependency management techniques.
 

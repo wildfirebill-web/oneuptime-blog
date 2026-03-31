@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Java, Stack Traces, Multiline Logs, Filelog Receiver
+Tags: OpenTelemetry, Java, Stack Trace, Multiline Logs, Filelog Receiver
 
 Description: Configure the OpenTelemetry filelog receiver to correctly group multiline Java stack traces into single log records.
 

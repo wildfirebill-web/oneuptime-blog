@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cloud Storage, Event-Driven Architecture, Serverless, File Processing
+Tags: GCP, Cloud Function, Cloud Storage, Event-Driven Architecture, Serverless, File Processing
 
 Description: Replace legacy batch file processing with event-driven workflows using Google Cloud Functions and Cloud Storage triggers for real-time, scalable file handling on GCP.
 

@@ -1,6 +1,6 @@
 # How to Build GitOps Audit Trails in ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, GitOps, Audit, DevOps, Kubernetes
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Deno, Deno Deploy, Edge Functions, Tracing, Serverless, Observability
+Tags: OpenTelemetry, Deno, Deno Deploy, Edge Function, Tracing, Serverless, Observability
 
 Description: Learn how to add OpenTelemetry tracing and metrics to Deno Deploy edge functions for full observability across your serverless workloads.
 

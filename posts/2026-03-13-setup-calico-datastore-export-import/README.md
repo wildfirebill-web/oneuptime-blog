@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Operations
+Tags: Calico, Kubernetes, Networking, Operation
 
 Description: Set up Calico datastore export and import using calicoctl datastore migrate export and import to migrate from etcd to Kubernetes API datastore or back up Calico configuration for disaster recovery.
 

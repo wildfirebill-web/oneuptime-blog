@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Unsigned Integer, Data Types, Schema Design, Numeric
+Tags: MySQL, Unsigned Integer, Data Type, Schema Design, Numeric
 
 Description: MySQL unsigned integers store only non-negative values, doubling the positive range compared to signed integers - ideal for IDs and counters.
 

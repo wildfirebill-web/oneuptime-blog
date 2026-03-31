@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: .NET, C#, ASP.NET Core, OpenTelemetry, Observability, Tracing, Metrics, Logging
+Tags: .NET, C#, ASP.NET Core, OpenTelemetry, Observability, Tracing, Metric, Logging
 
 Description: Learn how to set up OpenTelemetry in ASP.NET Core for comprehensive observability. Covers distributed tracing, metrics collection, and structured logging with practical examples.
 

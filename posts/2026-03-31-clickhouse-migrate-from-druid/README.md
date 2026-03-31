@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Druid, Migration, Database, Analytics, Time-series
+Tags: ClickHouse, Druid, Migration, Database, Analytics, Time-Series
 
 Description: Migrate Apache Druid datasources to ClickHouse by exporting segments, mapping Druid dimensions and metrics to ClickHouse columns, and rewriting Druid SQL queries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, API Composition, Microservices, Service Mesh, Traffic Management
+Tags: Istio, API Composition, Microservice, Service Mesh, Traffic Management
 
 Description: Implement the API composition pattern with Istio to aggregate data from multiple microservices into unified API responses with proper timeout and routing configuration.
 

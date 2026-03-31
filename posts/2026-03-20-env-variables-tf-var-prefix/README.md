@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Environment Variables, TF_VAR, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Environment Variable, TF_VAR, Infrastructure as Code, DevOps
 
 Description: A guide to using TF_VAR_ prefixed environment variables to set OpenTofu variable values securely.
 

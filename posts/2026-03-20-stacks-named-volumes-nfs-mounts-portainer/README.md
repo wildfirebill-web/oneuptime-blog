@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Volumes, NFS, Named Volumes, Storage, Stacks
+Tags: Portainer, Docker, Volumes, NFS, Named Volumes, Storage, Stack
 
 Description: Configure named Docker volumes and NFS-backed shared storage in Portainer stacks for persistent, portable data storage that survives container and stack redeployments.
 

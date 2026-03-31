@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Projects, Namespaces, RBAC
+Tags: Rancher, Kubernetes, Project, Namespace, RBAC
 
 Description: A complete guide to creating, configuring, and managing projects in Rancher to organize namespaces and control access to cluster resources.
 

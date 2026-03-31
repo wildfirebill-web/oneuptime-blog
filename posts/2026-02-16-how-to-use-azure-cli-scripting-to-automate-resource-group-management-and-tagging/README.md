@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure CLI, Automation, Resource Groups, Tagging, Azure, DevOps, Cloud Management
+Tags: Azure CLI, Automation, Resource Group, Tagging, Azure, DevOps, Cloud Management
 
 Description: Automate Azure resource group creation, management, and tagging with Azure CLI scripts for consistent and efficient cloud operations.
 

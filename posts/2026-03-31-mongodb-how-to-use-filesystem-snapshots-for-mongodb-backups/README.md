@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Backup, Snapshots, Devops
+Tags: MongoDB, Backup, Snapshot, DevOps
 
 Description: Learn how to use filesystem snapshots (LVM, EBS, ZFS) to create consistent MongoDB backups with minimal downtime, ideal for large databases.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Pub/Sub, Cloud Functions, Saga Pattern, Distributed Transactions, Microservices
+Tags: GCP, Cloud Pub/Sub, Cloud Function, Saga Pattern, Distributed Transaction, Microservice
 
 Description: Learn how to implement the Saga pattern for managing distributed transactions across microservices using Google Cloud Pub/Sub and Cloud Functions with compensating actions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Utc Date, Utc Time, Timezone, Date Functions
+Tags: MySQL, Utc Date, Utc Time, Timezone, Date Function
 
 Description: Learn how to use MySQL's UTC_DATE(), UTC_TIME(), and UTC_TIMESTAMP() functions to work with Coordinated Universal Time in your queries.
 

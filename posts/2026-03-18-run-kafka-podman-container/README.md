@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kafka, Event Streaming, Message Broker
+Tags: Podman, Container, DevOps, Kafka, Event Streaming, Message Broker
 
 Description: Learn how to run Apache Kafka in a Podman container using KRaft mode for distributed event streaming without Zookeeper.
 

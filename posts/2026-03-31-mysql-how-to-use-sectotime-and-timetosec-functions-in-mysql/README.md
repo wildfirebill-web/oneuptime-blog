@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Sec To Time, Time To Sec, Time Functions, Sql
+Tags: MySQL, Sec To Time, Time To Sec, Time Function, SQL
 
 Description: Learn how to use MySQL's TIME_TO_SEC() and SEC_TO_TIME() functions to convert between TIME values and total seconds for arithmetic operations.
 

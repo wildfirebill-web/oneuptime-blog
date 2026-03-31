@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Metrics, Runtime, Monitoring, Performance, Observability
+Tags: Go, Metric, Runtime, Monitoring, Performance, Observability
 
 Description: Monitor Go runtime metrics including goroutine counts, garbage collection stats, and memory allocation for production observability.
 

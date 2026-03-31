@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, E-commerce, Shopping Cart, Inventory, Schema Design
+Tags: MongoDB, E-Commerce, Shopping Cart, Inventory, Schema Design
 
 Description: Design a MongoDB shopping cart with inventory reservation to prevent overselling, handle cart expiration, and ensure consistent checkout using atomic operations.
 

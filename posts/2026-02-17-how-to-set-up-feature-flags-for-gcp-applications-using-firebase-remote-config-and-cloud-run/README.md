@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Firebase Remote Config, Feature Flags, Cloud Run, Progressive Rollout
+Tags: GCP, Firebase Remote Config, Feature Flag, Cloud Run, Progressive Rollout
 
 Description: Learn how to implement feature flags for your GCP applications using Firebase Remote Config with Cloud Run for controlled feature rollouts and A/B testing.
 

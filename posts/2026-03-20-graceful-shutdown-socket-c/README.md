@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, TCP, Sockets, Shutdown, POSIX, Networking
+Tags: C, IPv4, TCP, Socket, Shutdown, POSIX, Networking
 
 Description: Learn how to gracefully shut down IPv4 TCP sockets in C using shutdown() and close(), control half-close, drain in-flight data, and handle SO_LINGER for controlled closure.
 

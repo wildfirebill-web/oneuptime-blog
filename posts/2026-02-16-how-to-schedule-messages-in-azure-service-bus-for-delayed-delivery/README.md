@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Service Bus, Scheduled Messages, Delayed Delivery, Message Queues, Azure, Messaging, Automation
+Tags: Azure Service Bus, Scheduled Messages, Delayed Delivery, Message Queue, Azure, Messaging, Automation
 
 Description: Learn how to schedule messages for future delivery in Azure Service Bus to implement delayed processing, reminders, and time-based workflows.
 

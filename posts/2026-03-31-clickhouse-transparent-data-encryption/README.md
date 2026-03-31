@@ -1,6 +1,6 @@
 # How to Use ClickHouse Transparent Data Encryption
 
-Author: [oneuptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Security, Encryption, Database, Infrastructure
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, Local Development, Kubernetes, Containers, Workflow
+Tags: Rancher Desktop, Local Development, Kubernetes, Container, Workflow
 
 Description: Establish an efficient local development workflow with Rancher Desktop for building and testing containerized applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Compass, GUI, Tools, Development, Administration
+Tags: MongoDB, Compass, GUI, Tool, Development, Administration
 
 Description: A practical guide to MongoDB Compass - connecting to databases, exploring collections, running queries, building aggregation pipelines, managing indexes, and analyzing performance.
 

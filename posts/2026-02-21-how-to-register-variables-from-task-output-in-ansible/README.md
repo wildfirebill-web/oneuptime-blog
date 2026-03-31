@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Task Output, DevOps
+Tags: Ansible, Variable, Task Output, DevOps
 
 Description: Learn how to capture Ansible task output using the register keyword and use the result in subsequent tasks for conditional logic and data processing.
 

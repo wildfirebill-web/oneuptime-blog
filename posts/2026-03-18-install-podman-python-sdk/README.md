@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Python, SDK, Installation, Containers
+Tags: Podman, Python, SDK, Installation, Container
 
 Description: A complete guide to installing the Podman Python SDK on Linux, macOS, and Windows, including prerequisites, virtual environments, and troubleshooting common installation issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: netstat, Linux, Networking, TCP, UDP, Diagnostics
+Tags: netstat, Linux, Networking, TCP, UDP, Diagnostic
 
 Description: Use the netstat command to list all active IPv4 TCP and UDP connections, view listening ports, and understand socket states on Linux.
 

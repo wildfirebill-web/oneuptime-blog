@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Logging, Microservices, Docker, Loki, Monitoring, Observability
+Tags: Portainer, Logging, Microservice, Docker, Loki, Monitoring, Observability
 
 Description: Learn how to monitor and aggregate logs from multiple microservice containers in Portainer, using both the built-in log viewer and centralized logging solutions.
 

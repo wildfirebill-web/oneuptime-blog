@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, OpenTelemetry, Metrics, OTLP, Prometheus, Kubernetes
+Tags: Istio, OpenTelemetry, Metric, OTLP, Prometheus, Kubernetes
 
 Description: Step-by-step guide to exporting Istio service mesh metrics through the OpenTelemetry Protocol for unified metrics collection and backend flexibility.
 

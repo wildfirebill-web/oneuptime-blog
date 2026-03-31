@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data Modeling, Tree Pattern, Nested Sets, Hierarchical Data
+Tags: MongoDB, Data Modeling, Tree Pattern, Nested Set, Hierarchical Data
 
 Description: Learn how to implement the nested sets tree pattern in MongoDB to enable efficient subtree queries and ancestor lookups using left and right boundary values.
 

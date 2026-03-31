@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Sharding, Horizontal Scaling, High Availability, DevOps, Production, Distributed Systems
+Tags: Redis, Cluster, Sharding, Horizontal Scaling, High Availability, DevOps, Production, Distributed System
 
 Description: A comprehensive guide to setting up Redis Cluster for horizontal scaling. Learn about sharding, hash slots, cluster management, and client configuration for distributed Redis deployments.
 

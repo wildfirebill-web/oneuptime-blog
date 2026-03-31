@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MySQL, Stored Procedures, Debugging, Database
+Tags: MySQL, Stored Procedure, Debugging, Database
 
 Description: Learn how to debug MySQL stored procedures effectively with logging and analysis.
 

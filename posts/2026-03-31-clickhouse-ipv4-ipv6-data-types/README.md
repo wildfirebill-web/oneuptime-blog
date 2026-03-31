@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, IPv4, IPv6, Networking
+Tags: ClickHouse, SQL, Data Type, IPv4, IPv6, Networking
 
 Description: Learn how ClickHouse stores IPv4 and IPv6 addresses as compact integers, how to convert strings, and how to run CIDR range queries.
 

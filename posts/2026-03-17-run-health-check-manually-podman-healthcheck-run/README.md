@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Check, Debugging
+Tags: Podman, Container, DevOps, Health Check, Debugging
 
 Description: Learn how to manually trigger health checks on Podman containers using the podman healthcheck run command for testing and debugging.
 

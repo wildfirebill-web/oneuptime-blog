@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Git, Docker Compose, GitOps
+Tags: Portainer, Stack, Git, Docker Compose, GitOps
 
 Description: Deploy a Docker Compose stack in Portainer directly from a Git repository for GitOps-style deployments.
 

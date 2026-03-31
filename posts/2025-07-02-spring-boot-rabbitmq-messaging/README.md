@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, RabbitMQ, Messaging, AMQP, Microservices, Event-Driven
+Tags: Java, Spring Boot, RabbitMQ, Messaging, AMQP, Microservice, Event-Driven
 
 Description: A practical guide to integrating RabbitMQ with Spring Boot for message-driven architectures. Learn exchanges, queues, consumers, and error handling patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, MTU, Fragmentation, Containers, Networking, Linux
+Tags: Docker, MTU, Fragmentation, Container, Networking, Linux
 
 Description: Configure Docker network MTU settings to prevent packet fragmentation in containerized environments, including bridge networks, overlay networks, and Kubernetes.
 

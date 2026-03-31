@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, ZSCORE, Score Lookup, Commands
+Tags: Redis, Sorted Set, ZSCORE, Score Lookup, Command
 
 Description: Learn how to use ZSCORE in Redis to retrieve the floating-point score associated with a specific member in a sorted set.
 

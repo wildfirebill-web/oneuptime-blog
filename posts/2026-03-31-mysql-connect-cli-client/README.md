@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, CLI, Client, Connection, Database, Administration
+Tags: MySQL, CLI, Client, Connection, Database
 
 Description: Connect to a local or remote MySQL server using the mysql CLI client, understand connection options, and use common interactive commands.
 

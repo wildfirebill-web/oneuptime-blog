@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Configuration, TOML
+Tags: Podman, Container, DevOps, Registry, Configuration, TOML
 
 Description: Learn how to edit the registries.conf file to control how Podman discovers, authenticates, and connects to container registries.
 

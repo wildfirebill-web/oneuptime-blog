@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, GitOps, Git, CI/CD, Docker, Automation, Webhooks
+Tags: Portainer, GitOps, Git, CI/CD, Docker, Automation, Webhook
 
 Description: Learn how to configure Portainer to automatically redeploy stacks when you push changes to a Git repository using webhooks and GitOps workflows.
 

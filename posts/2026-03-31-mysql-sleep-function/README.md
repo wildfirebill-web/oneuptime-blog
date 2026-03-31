@@ -1,6 +1,6 @@
 # How to Use SLEEP() Function in MySQL for Testing
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Function, Testing, Performance, Timeout
 

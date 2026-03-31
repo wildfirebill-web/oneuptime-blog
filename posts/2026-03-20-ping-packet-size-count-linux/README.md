@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ping, ICMP, Linux, MTU, Networking, Diagnostics
+Tags: Ping, ICMP, Linux, MTU, Networking, Diagnostic
 
 Description: Control ping packet size, count, and interval on Linux to test specific network conditions, measure throughput potential, and diagnose MTU issues.
 

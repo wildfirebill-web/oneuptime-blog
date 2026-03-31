@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Loki, Observability, Alerting, Rules
+Tags: Loki, Observability, Alerting, Rule
 
 Description: Learn how to configure the Loki Ruler component for creating alerting and recording rules to monitor your log data effectively.
 

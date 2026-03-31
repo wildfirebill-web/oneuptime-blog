@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Azure Cache For Redis, Private Endpoint, Azure Networking, Security
+Tags: Redis, Azure Cache for Redis, Private Endpoint, Azure Networking, Security
 
 Description: Learn how to configure Azure Private Endpoint for Azure Cache for Redis to restrict access to your VNet and eliminate public internet exposure.
 

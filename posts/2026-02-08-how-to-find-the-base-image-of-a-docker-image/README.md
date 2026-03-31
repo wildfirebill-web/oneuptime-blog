@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Images, Base Images, Dockerfile, DevOps, Container Registry
+Tags: Docker, Image, Base Images, Dockerfile, DevOps, Container Registry
 
 Description: Learn multiple techniques to discover the base image of any Docker image, including inspect commands, history analysis, and registry lookups.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, TCP, Sockets, IPv4, Networking, Client
+Tags: Python, TCP, Socket, IPv4, Networking, Client
 
 Description: Learn how to build a TCP client in Python that connects to a server over IPv4, sends data, and receives responses using the socket module.
 

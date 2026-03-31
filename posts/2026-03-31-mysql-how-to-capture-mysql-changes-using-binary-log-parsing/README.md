@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Binary Log, Change Data Capture, Replication, mysqlbinlog
+Tags: MySQL, Binary Log, Change Data Capture, Replication, Mysqlbinlog
 
 Description: Learn how to parse the MySQL binary log directly to capture row-level changes for auditing, CDC pipelines, and data synchronization.
 

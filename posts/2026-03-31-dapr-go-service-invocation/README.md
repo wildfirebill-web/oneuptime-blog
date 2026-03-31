@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Service Invocation, Microservice, Sdk, Rpc
+Tags: Dapr, Go, Service Invocation, Microservice, SDK, RPC
 
 Description: Call other Dapr-enabled microservices from Go using service invocation, with built-in retries, mTLS security, and distributed tracing handled by the sidecar.
 

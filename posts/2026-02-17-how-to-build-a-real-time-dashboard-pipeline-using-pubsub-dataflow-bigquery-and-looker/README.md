@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Pub/Sub, Dataflow, BigQuery, Looker, Real-Time Dashboards, Data Pipelines
+Tags: GCP, Pub/Sub, Dataflow, BigQuery, Looker, Real-Time Dashboards, Data Pipeline
 
 Description: Learn how to build an end-to-end real-time dashboard pipeline that streams events through Pub/Sub, processes them with Dataflow, stores results in BigQuery, and visualizes in Looker.
 

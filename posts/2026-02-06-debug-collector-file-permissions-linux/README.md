@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Troubleshooting, Linux, Permissions, Security, SELinux
+Tags: OpenTelemetry, Collector, Troubleshooting, Linux, Permission, Security, SELinux
 
 Description: A comprehensive guide to diagnosing and fixing file permission issues in OpenTelemetry Collector on Linux, covering common errors, security contexts, user permissions, and production best practices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HashiCorp Vault, PostgreSQL, MySQL, Security, Dynamic Credentials, Database
+Tags: OpenTofu, HashiCorp Vault, PostgreSQL, MySQL, Security, Dynamic Credential, Database
 
 Description: Learn how to configure HashiCorp Vault's database secrets engine to generate dynamic, short-lived database credentials for use with OpenTofu and your applications.
 

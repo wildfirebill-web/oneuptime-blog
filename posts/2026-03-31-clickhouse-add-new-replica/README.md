@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Replication, Cluster, Database, Operations
+Tags: ClickHouse, Replication, Cluster, Database, Operation
 
 Description: Step-by-step guide to adding a new replica to an existing ClickHouse shard, from server provisioning through config setup to verifying full data sync.
 

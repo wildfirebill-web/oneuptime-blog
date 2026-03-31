@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Webhooks, CI/CD, DevOps
+Tags: Portainer, Docker Swarm, Webhook, CI/CD, DevOps
 
 Description: Learn how to configure Portainer service webhooks on Docker Swarm to enable automated image updates triggered by CI/CD pipelines.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Database, Arrays, Queries, Performance
+Tags: MongoDB, Database, Array, Queries, Performance
 
 Description: Learn multiple techniques to query documents by array size in MongoDB, including $size, $expr with $size, dot notation, and aggregation approaches with performance considerations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, AWS, CloudWatch, Metrics, EKS
+Tags: Dapr, AWS, CloudWatch, Metric, EKS
 
 Description: Learn how to forward Dapr Prometheus metrics to AWS CloudWatch using the CloudWatch Agent with Prometheus scraping on Amazon EKS clusters.
 

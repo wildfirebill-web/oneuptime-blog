@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, HTTP Proxy
+Tags: Podman, Container, DevOps, Networking, HTTP Proxy
 
 Description: Learn how to configure HTTP, HTTPS, and no-proxy settings when running containers in Podman for environments that require proxy access.
 

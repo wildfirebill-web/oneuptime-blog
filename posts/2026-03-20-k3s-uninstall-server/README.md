@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Uninstall, DevOps, Linux
+Tags: k3s, Kubernetes, Uninstall, DevOps, Linux
 
 Description: A complete guide to cleanly uninstalling the K3s server, removing all associated services, binaries, and data from your system.
 

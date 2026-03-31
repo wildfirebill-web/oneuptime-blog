@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Permissions, RBAC, Access Control, Security
+Tags: Terraform, HCP Terraform, Permission, RBAC, Access Control, Security
 
 Description: Configure fine-grained workspace permissions in HCP Terraform to control who can plan, apply, manage variables, and administer workspaces.
 

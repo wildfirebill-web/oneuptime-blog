@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Ambassador Pattern, Sidecar, Service Discovery, Microservices
+Tags: Kubernetes, Ambassador Pattern, Sidecar, Service Discovery, Microservice
 
 Description: Master the ambassador sidecar pattern in Kubernetes to simplify service discovery, connection management, and network communication for your applications.
 

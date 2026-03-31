@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Array Updates, arrayFilters, Update Operators, NoSQL
+Tags: MongoDB, Array Updates, arrayFilter, Update Operator, NoSQL
 
 Description: Learn how to use MongoDB's $[identifier] positional operator with arrayFilters to conditionally update specific elements within arrays based on criteria.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Incident Management, Google Cloud Monitoring, Alerting, SRE, Operations
+Tags: GCP, Incident Management, Google Cloud Monitoring, Alerting, SRE, Operation
 
 Description: A practical guide to configuring incident management workflows in Google Cloud Monitoring, including alert routing, incident grouping, and response automation.
 

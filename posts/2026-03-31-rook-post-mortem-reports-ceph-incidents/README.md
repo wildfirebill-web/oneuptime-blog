@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Post-Mortem, Incident, Operations
+Tags: Ceph, Rook, Post-Mortem, Incident, Operation
 
 Description: Write blameless Ceph incident post-mortems that document timeline, root cause, impact, and corrective actions to prevent recurrence and improve team knowledge.
 

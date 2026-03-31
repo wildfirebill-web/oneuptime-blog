@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Prometheus, OTLP, Metrics, Collector, Migration
+Tags: OpenTelemetry, Prometheus, OTLP, Metric, Collector, Migration
 
 Description: A practical guide to converting Prometheus metrics into OTLP format using the OpenTelemetry Collector for unified observability pipelines.
 

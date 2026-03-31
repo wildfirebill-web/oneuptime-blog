@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, Comparison, Query Pattern, Analytics
+Tags: ClickHouse, NULL Handling, Comparison, Query Pattern, Analytics
 
 Description: Learn how to write NULL-safe comparisons in ClickHouse using isNull(), isNotNull(), equals(), and the NULL-safe equality operator to avoid silent NULL-related logic errors.
 

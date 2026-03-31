@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, Erasure Coding, Omap, Object Storage
+Tags: Ceph, Rook, Erasure Coding, OMAP, Object Storage
 
 Description: Understand why erasure coded pools lack omap support in Ceph and how to architect around this limitation using companion replicated pools or RGW index pools.
 

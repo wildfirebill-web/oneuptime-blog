@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Troubleshooting, CLI
+Tags: Podman, Container, DevOps, Troubleshooting, CLI
 
 Description: A practical guide to resolving 'container already exists' errors in Podman, covering container lifecycle management, naming conflicts, cleanup strategies, and automation patterns.
 

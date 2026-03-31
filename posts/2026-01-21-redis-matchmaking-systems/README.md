@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Gaming, Matchmaking, Sorted Sets, Real-Time, Multiplayer, Game Development
+Tags: Redis, Gaming, Matchmaking, Sorted Set, Real-Time, Multiplayer, Game Development
 
 Description: A comprehensive guide to building scalable matchmaking systems with Redis, covering player queues, skill-based matching, lobby management, and real-time game pairing.
 

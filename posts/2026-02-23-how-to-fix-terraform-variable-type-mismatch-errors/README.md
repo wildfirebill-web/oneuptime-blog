@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, Infrastructure as Code, Variables
+Tags: Terraform, Troubleshooting, Infrastructure as Code, Variable
 
 Description: Fix Terraform variable type mismatch errors by understanding type constraints, conversion rules, and common pitfalls with complex types.
 

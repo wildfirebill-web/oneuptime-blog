@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, RBAC, LDAP, Authentication, Groups
+Tags: Kubernetes, RBAC, LDAP, Authentication, Group
 
 Description: Learn how to configure Kubernetes RBAC RoleBindings that reference LDAP groups, enabling centralized access control managed through your existing identity provider.
 

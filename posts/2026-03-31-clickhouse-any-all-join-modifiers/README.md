@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SELECT, JOIN, Any, ALL
+Tags: ClickHouse, SQL, SELECT, Join, Any, ALL
 
 Description: Learn how the ANY and ALL join modifiers change match behavior in ClickHouse JOINs, controlling whether duplicate right-side rows produce duplicate output rows.
 

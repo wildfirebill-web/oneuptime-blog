@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, RDS, Read Replicas, Scalability, Infrastructure as Code, Database
+Tags: OpenTofu, AWS, RDS, Read Replica, Scalability, Infrastructure as Code, Database
 
 Description: Learn how to create RDS read replicas for horizontal read scaling and cross-region disaster recovery using OpenTofu.
 

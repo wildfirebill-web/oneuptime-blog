@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Logging, Performance, Configuration
 
-Description: Learn how to configure MongoDB's logLevel and slowOpThresholdMs to control log verbosity and capture slow operations for performance tuning and debugging.
+Description: Learn how to configure MongoDB logLevel and slowOpThresholdMs to control log verbosity and capture slow operations for performance tuning and debugging.
 
 ---
 

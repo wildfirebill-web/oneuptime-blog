@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: vsftpd, FTPS, SSL, TLS, IPv4, Encryption, Certificates
+Tags: vsftpd, FTPS, SSL, TLS, IPv4, Encryption, Certificate
 
 Description: Configure vsftpd to use SSL/TLS encryption (FTPS) on IPv4, generate or install a certificate, require encrypted connections, and verify with an FTPS client.
 

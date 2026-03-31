@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Rate Limits, API, Performance Optimization
+Tags: Terraform, HCP Terraform, Rate Limit, API, Performance Optimization
 
 Description: Understand HCP Terraform API rate limits, how to detect when you hit them, and strategies for building resilient automation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kerberos, Troubleshooting, Tickets, Linux
+Tags: RHEL, Kerberos, Troubleshooting, Ticket, Linux
 
 Description: A comprehensive troubleshooting guide for Kerberos ticket issues on RHEL, covering common errors, diagnostic tools, and step-by-step resolution procedures.
 

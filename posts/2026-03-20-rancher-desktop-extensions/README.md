@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, Extensions, Plugins, Development Tools
+Tags: Rancher Desktop, Extension, Plugin, Development Tools
 
 Description: Install and manage Rancher Desktop extensions to add functionality like monitoring, debugging, and registry management.
 

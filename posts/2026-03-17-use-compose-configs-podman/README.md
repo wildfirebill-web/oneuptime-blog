@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Configs, Configuration
+Tags: Podman, Container, DevOps, podman-compose, CONFIG, Configuration
 
 Description: Learn how to use the Compose configs directive with Podman to mount configuration files into containers.
 

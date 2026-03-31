@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Secrets, Security, Management, DevOps
+Tags: Portainer, Kubernetes, Secret, Security, Management, DevOps
 
 Description: Learn how to view, search, and manage Kubernetes Secrets in Portainer while maintaining security hygiene and avoiding accidental secret exposure.
 

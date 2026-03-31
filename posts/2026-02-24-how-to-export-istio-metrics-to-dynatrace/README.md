@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Dynatrace, Metrics, Monitoring, Observability, Kubernetes
+Tags: Istio, Dynatrace, Metric, Monitoring, Observability, Kubernetes
 
 Description: Learn how to export Istio service mesh metrics into Dynatrace for unified observability using ActiveGate, OpenTelemetry, and Prometheus integration.
 

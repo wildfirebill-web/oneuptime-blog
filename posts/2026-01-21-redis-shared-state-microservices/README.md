@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Microservices, Distributed State, Shared State, Session Management, Configuration
+Tags: Redis, Microservice, Distributed State, Shared State, Session Management, Configuration
 
 Description: A comprehensive guide to sharing state across microservices using Redis, including session management, distributed configuration, feature flags, and coordination patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Ansible, Containers, Automation, Configuration Management
+Tags: Podman, Ansible, Container, Automation, Configuration Management
 
 Description: Learn how to use Podman with Ansible to automate container management, build images, orchestrate multi-container deployments, and manage container infrastructure at scale.
 

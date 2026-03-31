@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, REST API, curl, Containers, CLI
+Tags: Podman, REST API, curl, Container, CLI
 
 Description: A comprehensive guide to interacting with the Podman REST API using curl, covering container lifecycle management, image operations, and network management with practical examples.
 

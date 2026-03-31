@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Circuit Breaker, Resilience, Fault Tolerance, Microservices, HAProxy, Envoy, Reliability
+Tags: Networking, Circuit Breaker, Resilience, Fault Tolerance, Microservice, HAProxy, Envoy, Reliability
 
 Description: Learn how to implement circuit breakers at the network level to prevent cascading failures. This guide covers HAProxy, Envoy, and application-level implementations with practical configurations.
 

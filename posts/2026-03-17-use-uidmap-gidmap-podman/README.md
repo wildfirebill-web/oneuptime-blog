@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, uidmap, gidmap, User Namespaces
+Tags: Podman, Container, DevOps, Rootless, uidmap, gidmap, User Namespaces
 
 Description: Learn how to use --uidmap and --gidmap flags in Podman for precise control over UID and GID mappings between container and host.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Sampling, Performance, Cost Optimization, Traces
+Tags: OpenTelemetry, Sampling, Performance, Cost Optimization, Trace
 
 Description: Master consistent probability sampling in OpenTelemetry to achieve predictable observability overhead while maintaining statistically valid trace data across distributed systems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, StagedNetworkPolicy, Kubernetes, Network Policy, Safe Updates, Security
+Tags: Calico, StagedNetworkPolicy, Kubernetes, Network Policy, Safe Update, Security
 
 Description: Best practices for safely updating Calico StagedNetworkPolicy resources with backup, validation, and rollback procedures.
 

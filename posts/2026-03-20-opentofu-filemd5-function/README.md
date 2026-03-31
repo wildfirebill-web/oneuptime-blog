@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions, Crypto
+Tags: OpenTofu, Terraform, IaC, Function, Crypto
 
 Description: Learn how to use the filemd5() function in OpenTofu to compute MD5 hashes of files for change detection.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how JSONType() identifies the JSON type of a field in ClickHouse, returning values like String, Int64, Array, or Object to help with dynamic schema inspection.
 

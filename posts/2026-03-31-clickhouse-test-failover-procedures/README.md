@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Failover, Testing, High Availability, Operations
+Tags: ClickHouse, Failover, Testing, High Availability, Operation
 
 Description: Learn how to test ClickHouse failover procedures in a controlled way to validate your cluster's resilience before a real outage occurs.
 

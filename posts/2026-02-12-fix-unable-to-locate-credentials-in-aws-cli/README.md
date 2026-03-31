@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CLI, Troubleshooting, IAM, Credentials
+Tags: AWS, CLI, Troubleshooting, IAM, Credential
 
 Description: Diagnose and fix the 'Unable to locate credentials' error in AWS CLI by checking credential configuration, environment variables, IAM roles, and common misconfigurations.
 

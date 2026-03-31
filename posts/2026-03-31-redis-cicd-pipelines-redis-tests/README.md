@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, CI/CD, Testing, GitHub Actions, Docker
+Tags: Redis, CI/CD, Testing, GitHub Action, Docker
 
 Description: Configure CI/CD pipelines that spin up Redis as a service container for integration tests, covering GitHub Actions, GitLab CI, and environment variable setup.
 

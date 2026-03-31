@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Auto-Update, Local Images
+Tags: Podman, Container, DevOps, Auto-Update, Local Images
 
 Description: Learn how to configure local-based auto-updates in Podman to automatically restart containers when their local image is updated.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RedisGraph, Graph Database, Cypher, Social Networks, Recommendation Systems
+Tags: Redis, RedisGraph, Graph Database, Cypher, Social Network, Recommendation System
 
 Description: A comprehensive guide to using RedisGraph for graph queries, covering Cypher query language, relationship modeling, traversals, and practical use cases like social networks and recommendations.
 

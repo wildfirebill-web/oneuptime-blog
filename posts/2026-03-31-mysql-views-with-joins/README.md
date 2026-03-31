@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, View, JOIN, SQL, Database Administration
+Tags: MySQL, View, Join, SQL, Database Administration
 
 Description: Learn how to create MySQL views that encapsulate multi-table JOINs, when join views are updatable, and how to optimize their performance.
 

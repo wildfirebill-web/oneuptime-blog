@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Backup, Disaster Recovery, DevOps
+Tags: k3s, Kubernetes, Backup, Disaster Recovery, DevOps
 
 Description: Learn how to back up K3s cluster data including etcd snapshots, SQLite databases, and critical configuration files.
 

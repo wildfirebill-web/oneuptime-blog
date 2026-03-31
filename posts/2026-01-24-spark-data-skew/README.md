@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Spark, Data Engineering, Big Data, Performance Tuning, Distributed Systems, PySpark
+Tags: Apache Spark, Data Engineering, Big Data, Performance Tuning, Distributed System, PySpark
 
 Description: Learn how to identify and fix data skew issues in Apache Spark that cause slow jobs, out-of-memory errors, and unbalanced partition processing.
 

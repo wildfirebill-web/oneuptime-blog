@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Timeout, Retry, VirtualService, External Services, Service Mesh
+Tags: Istio, Timeout, Retry, VirtualService, External Service, Service Mesh
 
 Description: Configure timeouts and retry policies for external services in Istio using VirtualService to improve resilience without changing application code.
 

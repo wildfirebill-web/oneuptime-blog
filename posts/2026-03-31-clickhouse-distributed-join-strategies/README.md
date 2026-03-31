@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Distributed, JOIN, Strategy, Performance, Shard
+Tags: ClickHouse, Distributed, Join, Strategy, Performance, Shard
 
 Description: Explore the different strategies ClickHouse offers for executing JOINs across shards and how to pick the right one for your workload.
 

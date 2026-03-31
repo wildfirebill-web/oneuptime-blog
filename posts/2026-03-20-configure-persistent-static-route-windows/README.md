@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Window, Networking, Routes, Static Routes, IPv4, Persistent, Network Configuration
+Tags: Window, Networking, Route, Static Routes, IPv4, Persistent, Network Configuration
 
 Description: Add a persistent static IPv4 route on Windows that survives reboots using route add -p, New-NetRoute in PowerShell, and verify the route persists after a restart.
 

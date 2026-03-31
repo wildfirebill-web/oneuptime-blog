@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Self-Hosted Runners, CI/CD, DevOps, Kubernetes, Infrastructure
+Tags: GitHub Action, Self-Hosted Runners, CI/CD, DevOps, Kubernetes, Infrastructure
 
 Description: Learn how to set up and manage self-hosted runners for GitHub Actions. This guide covers installation, scaling, security hardening, and Kubernetes deployment with Actions Runner Controller.
 

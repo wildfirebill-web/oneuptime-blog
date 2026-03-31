@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Podman, Stacks, Docker Compose, Deployment, Container Orchestration
+Tags: Portainer, Podman, Stack, Docker Compose, Deployment, Container Orchestration
 
 Description: Learn how to deploy Docker Compose stacks to a Podman backend via Portainer, including compatibility notes and workarounds for Podman-specific differences.
 

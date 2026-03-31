@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Go, Golang, CI/CD, Testing, DevOps
+Tags: GitHub Action, Go, Golang, CI/CD, Testing, DevOps
 
 Description: Learn how to build a comprehensive Go CI pipeline with GitHub Actions. This guide covers testing, linting, code coverage, cross-compilation, and release automation.
 

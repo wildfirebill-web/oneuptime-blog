@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, API Gateway, Canary Deployments, Gradual Rollout, Blue-Green, Infrastructure as Code
+Tags: OpenTofu, AWS, API Gateway, Canary Deployment, Gradual Rollout, Blue-Green, Infrastructure as Code
 
 Description: Learn how to configure API Gateway canary deployments with OpenTofu to gradually roll out API changes to a percentage of traffic while monitoring for errors before full promotion.
 

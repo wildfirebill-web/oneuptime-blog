@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Query Optimization, Correlated Subqueries, JOIN, Performance
+Tags: MySQL, Query Optimization, Correlated Subqueries, Join, Performance
 
 Description: Learn how to identify correlated subqueries in MySQL and rewrite them as JOINs to significantly improve query performance and readability.
 

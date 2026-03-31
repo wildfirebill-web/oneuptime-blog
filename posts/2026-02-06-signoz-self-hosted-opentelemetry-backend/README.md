@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, SigNoz, Observability, Self-Hosted, Backend, Traces, Logs, Metrics, Open Source
+Tags: OpenTelemetry, SigNoz, Observability, Self-Hosted, Backend, Trace, Log, Metric, Open Source
 
 Description: Complete guide to deploying SigNoz as a self-hosted OpenTelemetry backend with Docker and Kubernetes, covering all three telemetry signals.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Vertex AI, Search for Commerce, Recommendations, E-Commerce, Machine Learning, Google Cloud
+Tags: GCP, Vertex AI, Search for Commerce, Recommendation, E-Commerce, Machine Learning, Google Cloud
 
 Description: Train a frequently bought together recommendation model using Vertex AI Search for Commerce to increase cross-sell revenue on your e-commerce platform.
 

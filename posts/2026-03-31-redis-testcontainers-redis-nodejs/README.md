@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Node.js, Testcontainer, Integration Testing, Jest
+Tags: Redis, Node.js, Testcontainers, Integration Testing, Jest
 
 Description: Learn how to use Testcontainers to spin up a real Redis instance for Node.js integration tests, ensuring reliable test isolation with no manual setup.
 

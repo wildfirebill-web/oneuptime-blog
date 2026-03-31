@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Volume Snapshots, OpenTofu, Storage, Backup, Infrastructure
+Tags: Kubernetes, Volume Snapshot, OpenTofu, Storage, Backup, Infrastructure
 
 Description: Learn how to create Kubernetes Volume Snapshot Classes with OpenTofu to enable on-demand and scheduled volume snapshots for persistent storage backup and recovery.
 

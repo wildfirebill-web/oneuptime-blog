@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Macos, Homebrew, Installation, Database Setup
+Tags: MySQL, macOS, Homebrew, Installation, Database Setup
 
 Description: Install MySQL on macOS using Homebrew with a few commands, then configure the root account and start the service for local development.
 

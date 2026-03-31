@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Service Bus, Storage Queues, Migration, Messaging, Cloud Architecture, Queue
+Tags: Azure, Service Bus, Storage Queue, Migration, Messaging, Cloud Architecture, Queue
 
 Description: A practical guide to migrating your messaging workloads from Azure Storage Queues to Azure Service Bus with minimal downtime and data loss.
 

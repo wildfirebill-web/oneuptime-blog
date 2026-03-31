@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, K3s
+Tags: Cilium, Kubernetes, k3s
 
 Description: Step-by-step guide to safely upgrading Cilium on K3s clusters, including pre-upgrade checks, Helm-based upgrades, and post-upgrade validation.
 

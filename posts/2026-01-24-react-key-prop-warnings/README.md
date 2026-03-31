@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: React, JavaScript, TypeScript, Performance, Lists, Frontend, Best Practice
+Tags: React, JavaScript, TypeScript, Performance, List, Frontend, Best Practice
 
 Description: A practical guide to understanding and fixing the 'key prop' warning in React, including proper key selection strategies and performance implications.
 

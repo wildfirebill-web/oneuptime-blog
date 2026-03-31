@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SharePoint, Azure Functions, Microsoft Graph, Site Provisioning, Automation, PowerShell, Azure AD
+Tags: SharePoint, Azure Function, Microsoft Graph, Site Provisioning, Automation, PowerShell, Azure AD
 
 Description: Automate SharePoint Online site provisioning using Azure Functions and the Microsoft Graph API with custom templates and configurations.
 

@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, TTL, Message Expiry, Microservices, Messaging
+Tags: Dapr, Pub/Sub, TTL, Message Expiry, Microservice
 
-Description: Learn how to configure message time-to-live (TTL) in Dapr pub/sub at both the component level and per-message level to automatically expire stale messages.
+Description: Configure message time-to-live TTL in Dapr pub/sub to automatically expire stale messages and prevent outdated events from being processed by subscribers.
 
 ---
 

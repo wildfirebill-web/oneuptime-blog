@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Registry, Modules, Best Practice, Community, Infrastructure as Code
+Tags: OpenTofu, Registry, Module, Best Practice, Community, Infrastructure as Code
 
 Description: Learn how to search, evaluate, and safely adopt modules from the OpenTofu Registry in your infrastructure configurations.
 

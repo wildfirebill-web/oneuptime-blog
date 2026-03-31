@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, K3s, Monitoring
+Tags: Cilium, Kubernetes, k3s, Monitoring
 
 Description: Set up monitoring for the K3s master node running Cilium, tracking control plane health, Cilium agent metrics, and resource utilization.
 

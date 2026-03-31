@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RHEL, Storage, Performance, Tuning, Block Devices, Linux
+Tags: RHEL, Storage, Performance, Tuning, Block Device, Linux
 
 Description: Learn how to tune block device queue depth and nr_requests on RHEL to optimize I/O throughput and latency for different storage workloads.
 

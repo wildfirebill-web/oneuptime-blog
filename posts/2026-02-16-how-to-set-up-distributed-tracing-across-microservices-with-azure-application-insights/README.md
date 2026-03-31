@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Application Insights, Distributed Tracing, Microservices, OpenTelemetry, Observability, Azure Monitor, APM
+Tags: Azure Application Insights, Distributed Tracing, Microservice, OpenTelemetry, Observability, Azure Monitor, APM
 
 Description: A hands-on guide to implementing distributed tracing across microservices using Azure Application Insights and OpenTelemetry for end-to-end request visibility.
 

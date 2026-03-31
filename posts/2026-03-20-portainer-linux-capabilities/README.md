@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Security, Linux
+Tags: Portainer, Docker, Container, Security, Linux
 
 Description: Learn how to add and drop Linux capabilities for Docker containers in Portainer to implement least-privilege security without using privileged mode.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kotlin, Coroutines, Spring Boot, Context Propagation
+Tags: OpenTelemetry, Kotlin, Coroutine, Spring Boot, Context Propagation
 
 Description: Learn how to properly configure OpenTelemetry for Kotlin coroutines in Spring Boot applications, ensuring trace context propagation across suspend functions and asynchronous operations.
 

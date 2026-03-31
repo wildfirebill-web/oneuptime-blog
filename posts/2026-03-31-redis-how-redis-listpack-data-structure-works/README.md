@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Listpack, Internals, Memory, Data Structures
+Tags: Redis, Listpack, Internal, Memory, Data Structure
 
-Description: Understand Redis listpack's compact sequential encoding, how it stores elements without per-element pointers, and why it uses less memory than hashtable or skiplist encodings.
+Description: Understand Redis listpack compact sequential encoding, how it stores elements without per-element pointers, and why it uses less memory than hashtable or skiplist.
 
 ---
 

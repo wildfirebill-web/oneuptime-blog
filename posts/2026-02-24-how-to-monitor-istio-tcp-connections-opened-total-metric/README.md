@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, TCP, Metrics, Prometheus, Connection Monitoring
+Tags: Istio, TCP, Metric, Prometheus, Connection Monitoring
 
 Description: Monitor TCP connection patterns in Istio using the istio_tcp_connections_opened_total metric to track database connections, message queues, and TCP-based services.
 

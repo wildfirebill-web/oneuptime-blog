@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Functions, Arguments, Best Practice, Advanced Python
+Tags: Python, Function, Argument, Best Practice, Advanced Python
 
 Description: Master the use of **kwargs in Python functions for flexible argument handling, configuration patterns, and building extensible APIs.
 

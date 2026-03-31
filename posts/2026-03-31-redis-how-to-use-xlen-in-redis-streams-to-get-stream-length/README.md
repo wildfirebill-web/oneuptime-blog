@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, XLEN, Stream Length, Monitoring
+Tags: Redis, Stream, XLEN, Stream Length, Monitoring
 
 Description: Learn how to use XLEN in Redis Streams to retrieve the number of messages in a stream for monitoring, capacity planning, and queue depth tracking.
 

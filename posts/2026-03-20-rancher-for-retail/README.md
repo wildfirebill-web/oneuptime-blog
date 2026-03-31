@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Retail, Edge Computing, K3s, POS, Kubernetes, High Availability
+Tags: Rancher, Retail, Edge Computing, k3s, POS, Kubernetes, High Availability
 
 Description: Configure Rancher for retail environments managing Kubernetes clusters at store edge locations, central data centers, and cloud for POS systems, inventory management, and customer-facing...
 

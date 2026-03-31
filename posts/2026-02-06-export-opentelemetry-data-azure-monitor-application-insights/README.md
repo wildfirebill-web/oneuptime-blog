@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Azure Monitor, Application Insights, Observability, Azure, Tracing, Metrics, Logging
+Tags: OpenTelemetry, Azure Monitor, Application Insights, Observability, Azure, Tracing, Metric, Logging
 
 Description: A practical guide to exporting OpenTelemetry traces, metrics, and logs to Azure Monitor and Application Insights using the Azure Monitor OpenTelemetry Exporter.
 

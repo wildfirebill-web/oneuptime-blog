@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Fleet, GitOps, Kubernetes, CI/CD, GitHub Actions, Automation
+Tags: Rancher, Fleet, GitOps, Kubernetes, CI/CD, GitHub Action, Automation
 
 Description: Learn how to build an end-to-end GitOps pipeline using Rancher Fleet to automatically deploy Kubernetes workloads from a Git repository to multiple clusters.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, LowCardinality, Performance, Storage Optimization, Data Types
+Tags: ClickHouse, LowCardinality, Performance, Storage Optimization, Data Type
 
 Description: Learn how to use the LowCardinality type modifier in ClickHouse to speed up queries and reduce storage for string columns with few distinct values.
 

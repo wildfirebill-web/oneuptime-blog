@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Zabbix, Notifications, Email, Slack, Alerting, Linux
+Tags: RHEL, Zabbix, Notification, Email, Slack, Alerting, Linux
 
 Description: Set up Zabbix alert notifications via email and Slack on RHEL so your team gets immediate alerts when monitoring triggers fire.
 

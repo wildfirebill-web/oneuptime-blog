@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Linux, GitHub Actions, CI/CD, DevOps
+Tags: Ubuntu, Linux, GitHub Action, CI/CD, DevOps
 
 Description: Set up a self-hosted GitHub Actions runner on Ubuntu for faster builds, private network access, and custom environments.
 

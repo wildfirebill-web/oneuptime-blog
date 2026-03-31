@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Hardware, IoT
+Tags: Portainer, Docker, Container, Hardware, IoT
 
 Description: Learn how to map host devices like serial ports, USB devices, and GPUs to Docker containers using Portainer's device mapping configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cloudflare, Cloudflare Workers, Queue, Serverless, Message Queues, Distributed Systems
+Tags: Cloudflare, Cloudflare Workers, Queue, Serverless, Message Queue, Distributed System
 
 Description: Learn how to implement Cloudflare Queues for reliable message processing in your serverless applications.
 

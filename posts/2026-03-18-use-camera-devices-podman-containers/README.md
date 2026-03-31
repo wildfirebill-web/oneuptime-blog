@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Camera, Video, V4L2, Containers, Computer Vision
+Tags: Podman, Camera, Video, V4L2, Container, Computer Vision
 
 Description: Learn how to pass camera and video capture devices into Podman containers for computer vision, video conferencing, surveillance, and media applications.
 

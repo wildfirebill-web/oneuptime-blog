@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Testing, Python, pytest, Testcontainers
+Tags: ClickHouse, Testing, Python, Pytest, Testcontainers
 
 Description: Learn strategies for testing Python code that depends on ClickHouse, including mocking, testcontainers-based integration tests, and fixture patterns.
 

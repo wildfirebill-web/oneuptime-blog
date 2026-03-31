@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Resource Management, Ulimit
+Tags: Podman, Container, DevOps, Resource Management, Ulimit
 
 Description: Learn how to configure ulimit settings for Podman containers to control resource limits like open files, processes, and memory locks.
 

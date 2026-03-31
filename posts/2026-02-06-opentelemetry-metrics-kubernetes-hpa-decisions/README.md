@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kubernetes, HPA, Autoscaling, Custom Metrics
+Tags: OpenTelemetry, Kubernetes, HPA, Autoscaling, Custom Metric
 
 Description: Configure Kubernetes HPA to scale pods based on custom OpenTelemetry application metrics instead of just CPU and memory.
 

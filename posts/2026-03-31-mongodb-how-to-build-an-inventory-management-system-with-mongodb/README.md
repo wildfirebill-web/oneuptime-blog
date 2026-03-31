@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Inventory, Schema, Transaction, Aggregation, E-commerce
+Tags: MongoDB, Inventory, Schema, Transaction, Aggregation, E-Commerce
 
 Description: Learn how to build a robust inventory management system with MongoDB, covering stock tracking, reservation patterns, and low-stock alerts.
 

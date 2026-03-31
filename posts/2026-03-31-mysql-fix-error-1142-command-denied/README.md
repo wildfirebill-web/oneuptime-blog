@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Error, Privileges, Security, Troubleshooting
+Tags: MySQL, Error, Privilege, Security, Troubleshooting
 
 Description: Learn how to fix MySQL ERROR 1142 command denied by identifying missing privileges and granting the correct permissions to the user.
 
@@ -10,7 +10,7 @@ Description: Learn how to fix MySQL ERROR 1142 command denied by identifying mis
 
 ## What Is ERROR 1142?
 
-```
+```text
 ERROR 1142 (42000): SELECT command denied to user 'appuser'@'localhost' for table 'orders'
 ```
 
@@ -78,7 +78,7 @@ SHOW GRANTS FOR 'appuser'@'localhost';
 
 Expected output:
 
-```
+```text
 GRANT SELECT, INSERT, UPDATE, DELETE ON `mydb`.* TO `appuser`@`localhost`
 ```
 

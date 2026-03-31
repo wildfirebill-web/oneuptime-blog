@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Distributed Systems, Concurrency, Architecture, Database
+Tags: Distributed System, Concurrency, Architecture, Database
 
 Description: Learn how to implement vector clocks for tracking causality in distributed systems.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Functions, Path Resolution
+Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Function, Path Resolution
 
 Description: Understand the path_relative_from_include function in Terragrunt - how it differs from path_relative_to_include and when to use it for resolving paths in parent configs.
 

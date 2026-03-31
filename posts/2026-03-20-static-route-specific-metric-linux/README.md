@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Static Routes, Metrics, Routing, iproute2, Networking, Failover
+Tags: Linux, Static Routes, Metric, Routing, iproute2, Networking, Failover
 
 Description: Add static routes with custom metric values on Linux to control route preference, implement backup routing, and manage traffic when multiple paths exist.
 

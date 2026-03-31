@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, VMware, Folders, vSphere, Organizations
+Tags: Ansible, VMware, Folders, vSphere, Organization
 
 Description: Learn how to create and manage VMware vSphere folders with Ansible to organize VMs, templates, and other objects in your datacenter hierarchy.
 

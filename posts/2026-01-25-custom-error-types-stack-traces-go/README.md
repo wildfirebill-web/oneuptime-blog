@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Error Handling, Stack Traces, Debugging, Best Practice
+Tags: Go, Error Handling, Stack Trace, Debugging, Best Practice
 
 Description: Learn how to build custom error types in Go that capture stack traces automatically, making debugging production issues significantly easier without sacrificing performance.
 

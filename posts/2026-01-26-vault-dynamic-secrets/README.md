@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HashiCorp Vault, Dynamic Secrets, Security, Database, DevOps
+Tags: HashiCorp Vault, Dynamic Secret, Security, Database, DevOps
 
 Description: Learn how to use Vault dynamic secrets for databases, AWS, and other services with automatic credential rotation and TTLs.
 

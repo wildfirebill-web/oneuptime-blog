@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Bulkhead Pattern, Microservices, Resilience, Fault Isolation
+Tags: Go, Bulkhead Pattern, Microservice, Resilience, Fault Isolation
 
 Description: Learn how to implement the bulkhead pattern in Go to isolate failures and prevent cascading outages across your microservices architecture.
 

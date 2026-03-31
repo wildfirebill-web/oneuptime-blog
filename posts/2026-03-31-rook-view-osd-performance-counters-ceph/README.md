@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, OSD, Performance, Monitoring, Metrics
+Tags: Ceph, Rook, OSD, Performance, Monitoring, Metric
 
 Description: Access Ceph OSD performance counters to measure IOPS, latency, throughput, and operation queues for diagnosing performance issues.
 

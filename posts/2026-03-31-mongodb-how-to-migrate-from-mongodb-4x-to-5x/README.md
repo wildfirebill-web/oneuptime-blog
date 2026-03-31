@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Migration, Database Upgrade, Replica Set, Compatibility
+Tags: MongoDB, Migration, Database Upgrade, Replica Set, Compatibility
 
 Description: Step-by-step guide to safely migrating your MongoDB deployment from version 4.x to 5.x with minimal downtime.
 

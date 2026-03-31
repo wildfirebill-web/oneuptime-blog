@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, OCI Artifacts, Helm, Kubernetes
+Tags: Podman, Container, DevOps, OCI Artifacts, Helm, Kubernetes
 
 Description: Learn how to store, push, and pull Helm charts as OCI artifacts using Podman and OCI-compliant registries.
 

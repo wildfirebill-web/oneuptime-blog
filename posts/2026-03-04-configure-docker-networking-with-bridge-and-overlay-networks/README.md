@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Networking, Linux
+Tags: RHEL, Docker, Container, Networking, Linux
 
 Description: Learn how to configure Docker Networking with Bridge and Overlay Networks on RHEL with step-by-step instructions, configuration examples, and best practices.
 

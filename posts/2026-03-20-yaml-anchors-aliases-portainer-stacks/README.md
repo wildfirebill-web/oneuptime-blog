@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, YAML, Anchors, Aliases, DRY, Configuration
+Tags: Portainer, Docker Compose, YAML, Anchors, Alias, DRY, Configuration
 
 Description: Use YAML anchors and aliases in Portainer stack definitions to eliminate configuration duplication across similar services like worker pools and microservice replicas.
 

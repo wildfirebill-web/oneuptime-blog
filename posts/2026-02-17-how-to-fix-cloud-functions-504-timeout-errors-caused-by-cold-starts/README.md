@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Cold Start, Serverless, Performance
+Tags: GCP, Cloud Function, Cold Start, Serverless, Performance
 
 Description: Learn how to diagnose and fix 504 timeout errors in Google Cloud Functions caused by cold starts, with strategies for reducing cold start latency and keeping instances warm.
 

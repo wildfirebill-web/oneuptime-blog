@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Troubleshooting, Networking, SSH, Pipes, System Administration, Signals
+Tags: Linux, Troubleshooting, Networking, SSH, Pipe, System Administration, Signal
 
 Description: Learn how to diagnose and fix broken pipe errors in Linux, including SSH disconnections, pipeline failures, and network timeouts.
 

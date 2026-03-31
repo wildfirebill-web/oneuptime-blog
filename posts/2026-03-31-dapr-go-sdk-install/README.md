@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Sdk, Installation, Configuration, Microservice
+Tags: Dapr, Go, SDK, Installation, Configuration, Microservice
 
 Description: Step-by-step guide to installing the Dapr Go SDK, configuring the client connection, and writing your first Go microservice that communicates with the Dapr sidecar.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Kubernetes, Jobs, Batch Processing, Infrastructure as Code
+Tags: Terraform, Kubernetes, Job, Batch Processing, Infrastructure as Code
 
 Description: How to create Kubernetes Jobs with Terraform for running one-off and batch tasks like database migrations, data processing, and backups.
 

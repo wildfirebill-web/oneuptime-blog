@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, InfluxDB, Home Automation, Time Series Database, Metrics, IoT, Docker Compose
+Tags: Docker, InfluxDB, Home Automation, Time Series Database, Metric, IoT, Docker Compose
 
 Description: Learn how to deploy InfluxDB in Docker to collect and query home automation metrics from IoT sensors and smart devices.
 

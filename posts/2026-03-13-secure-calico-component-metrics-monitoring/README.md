@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Prometheus, Security
+Tags: Calico, Kubernetes, Networking, Metric, Prometheus, Security
 
 Description: Secure Calico Prometheus metrics endpoints using TLS, authentication, network policies, and RBAC to prevent unauthorized access to sensitive networking telemetry.
 

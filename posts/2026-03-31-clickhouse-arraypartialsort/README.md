@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Array, arrayPartialSort, Sorting, Top-N, Performance
+Tags: ClickHouse, Array Function, arrayPartialSort, Sorting, Top-N, Performance
 
 Description: Learn how arrayPartialSort() sorts only the first N elements of a ClickHouse array using a partial sort, making top-N extraction faster than a full array sort.
 

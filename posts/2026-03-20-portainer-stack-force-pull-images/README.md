@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Images, DevOps
+Tags: Portainer, Docker, Stack, Image, DevOps
 
 Description: Learn how to force Portainer to pull the latest version of Docker images when updating stacks, ensuring mutable tags like latest always use fresh images.
 

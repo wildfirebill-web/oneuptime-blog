@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Ambient Mode, Production, Kubernetes, Operations
+Tags: Istio, Ambient Mode, Production, Kubernetes, Operation
 
 Description: A comprehensive guide to deploying Istio ambient mode in production covering high availability, resource planning, monitoring, security hardening, and operational best practices.
 

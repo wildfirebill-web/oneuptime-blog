@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Monitoring, Events, Diagnostics
+Tags: Rook, Ceph, Monitoring, Event, Diagnostic
 
 Description: Use ceph -w to stream live cluster events including OSD state changes, PG transitions, and health check updates in your Rook-Ceph cluster.
 

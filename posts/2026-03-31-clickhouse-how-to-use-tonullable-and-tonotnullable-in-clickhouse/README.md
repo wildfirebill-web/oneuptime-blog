@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Nullable, toNullable, toNotNullable, Type System, Sql
+Tags: ClickHouse, Nullable, toNullable, toNotNullable, Type System, SQL
 
 Description: Learn how to use toNullable() and toNotNullable() in ClickHouse to convert between Nullable and non-Nullable column types for type compatibility and performance.
 

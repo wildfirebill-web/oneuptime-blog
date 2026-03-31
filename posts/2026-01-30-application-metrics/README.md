@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Application Performance, SRE
+Tags: Observability, Metric, Application Performance, SRE
 
 Description: Learn how to instrument applications with custom metrics for performance and business visibility.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Memory Management, maxmemory, Configuration, Production, Best Practices
+Tags: Redis, Memory Management, maxmemory, Configuration, Production, Best Practice
 
 Description: Learn why running Redis without a maxmemory limit is dangerous in production and how to set memory limits and eviction policies correctly.
 

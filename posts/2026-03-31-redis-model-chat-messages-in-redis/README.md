@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Chat, Messaging, Streams, Real-Time, Data Modeling
+Tags: Redis, Chat, Messaging, Stream, Real-Time, Data Modeling
 
 Description: Model real-time chat messages in Redis using Streams and sorted sets for ordered message storage, delivery tracking, and efficient history retrieval.
 

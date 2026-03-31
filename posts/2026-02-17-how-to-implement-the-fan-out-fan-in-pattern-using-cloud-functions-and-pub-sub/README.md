@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Fan-Out Fan-In, Cloud Functions, Pub/Sub, Distributed Processing, Serverless
+Tags: GCP, Fan-Out Fan-In, Cloud Function, Pub/Sub, Distributed Processing, Serverless
 
 Description: Learn how to implement the fan-out fan-in pattern on GCP using Cloud Functions for parallel processing and Pub/Sub for message distribution and aggregation.
 

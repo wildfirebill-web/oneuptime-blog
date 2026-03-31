@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, JavaScript, State Management, Frontend, Hooks
+Tags: React, JavaScript, State Management, Frontend, Hook
 
 Description: Learn how to effectively use React useContext for state management, avoiding prop drilling and building scalable component architectures.
 

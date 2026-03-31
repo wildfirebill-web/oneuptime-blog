@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Path Filtering, Monorepo, Optimization, DevOps
+Tags: GitHub Action, CI/CD, Path Filtering, Monorepo, Optimization, DevOps
 
 Description: Learn how to use path filtering in GitHub Actions to run workflows only when specific files change, optimizing CI/CD for monorepos and large codebases.
 

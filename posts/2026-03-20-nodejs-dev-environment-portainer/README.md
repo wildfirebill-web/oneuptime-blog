@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Node.js, Development Environments, Docker, Hot Reload, JavaScript
+Tags: Portainer, Node.js, Development Environment, Docker, Hot Reload, JavaScript
 
 Description: Learn how to set up a Node.js development environment with hot-reload and debugging in a Docker container managed by Portainer.
 

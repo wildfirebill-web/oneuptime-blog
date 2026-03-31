@@ -1,6 +1,6 @@
 # How to Use Multiple $lookup Stages in MongoDB Aggregation
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Aggregation, Lookup, Join, Pipeline
 

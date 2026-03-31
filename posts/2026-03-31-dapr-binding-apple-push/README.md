@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Binding, Push Notification, iOS, APNs
+Tags: Dapr, Binding, Push Notification, IOS, APNs
 
 Description: Learn how to configure the Dapr Apple Push Notification Service binding to send push notifications to iOS devices from any microservice.
 

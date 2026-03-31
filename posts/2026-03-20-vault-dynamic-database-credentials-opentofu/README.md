@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Vault, Dynamic Credentials, Database, PostgreSQL, Security
+Tags: OpenTofu, Vault, Dynamic Credential, Database, PostgreSQL, Security
 
 Description: Learn how to use HashiCorp Vault's database secrets engine with OpenTofu to generate short-lived, automatically rotating database credentials instead of static passwords.
 

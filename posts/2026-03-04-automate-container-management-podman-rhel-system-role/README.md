@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, System Roles, Podman, Containers
+Tags: RHEL, System Roles, Podman, Container
 
 Description: Use the podman RHEL System Role to manage container deployments with Ansible.
 

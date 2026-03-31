@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Images, Update, Monitoring
+Tags: Portainer, Docker Swarm, Image, Update, Monitoring
 
 Description: Track when Docker images used by Swarm services have newer versions available in Portainer.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, A/B Testing, Feature Flags, Experimentation, Backend
+Tags: Redis, A/B Testing, Feature Flag, Experimentation, Backend
 
 Description: Learn how to build a Redis-backed A/B testing framework that assigns users to experiment variants and tracks conversion metrics in real time.
 

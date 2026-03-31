@@ -1,6 +1,6 @@
 # How to Use ST_GeomFromText() in MySQL for Geospatial Queries
 
-Author: [OneUptime](https://www.github.com/OneUptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, SQL, Spatial, GIS, ST_GeomFromText, Database
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Ephemeral Containers, Kubernetes, Debugging, Distroless, Troubleshooting
+Tags: Rancher, Ephemeral Container, Kubernetes, Debugging, Distroless, Troubleshooting
 
 Description: Use Kubernetes ephemeral containers to debug running pods in Rancher without restarting them, enabling live debugging of distroless and minimal container images.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, API Versioning, Metrics, Custom Attributes
+Tags: OpenTelemetry, API Versioning, Metric, Custom Attributes
 
 Description: Track API version usage across multiple endpoint versions using OpenTelemetry custom attributes and metrics for migration planning.
 

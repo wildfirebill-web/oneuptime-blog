@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kafka, Streaming, Observability, Distributed Tracing, Metrics, Java
+Tags: OpenTelemetry, Kafka, Streaming, Observability, Distributed Tracing, Metric, Java
 
 Description: Learn how to build real-time observability for Apache Kafka streaming applications using OpenTelemetry, covering producer and consumer instrumentation, trace propagation.
 

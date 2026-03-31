@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Sentinel, Policy as Code, Network Security, VPC, Security Groups, Firewall
+Tags: Terraform, Sentinel, Policy as Code, Network Security, VPC, Security Group, Firewall
 
 Description: Learn how to write Sentinel policies that enforce network security best practices including VPC configuration, security groups, NACLs, and network segmentation.
 

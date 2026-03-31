@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, On-Call, Incident Response, Operations, SRE
+Tags: Dapr, On-Call, Incident Response, Operation, SRE
 
 Description: Establish effective on-call procedures for Dapr production environments including escalation policies, diagnostic toolkits, and shift handover practices.
 

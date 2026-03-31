@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Server-Sent Events, SSE, Kubernetes, Envoy, Streaming
+Tags: Istio, Server-Sent Event, SSE, Kubernetes, Envoy, Streaming
 
 Description: A practical guide to configuring Istio for Server-Sent Events (SSE) including timeout tuning, buffering issues, and VirtualService configuration for long-lived HTTP streams.
 

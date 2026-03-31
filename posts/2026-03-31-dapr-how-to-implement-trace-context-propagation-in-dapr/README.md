@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, OpenTelemetry, Distributed Tracing, W3C TraceContext, Observability, Microservices
+Tags: Dapr, OpenTelemetry, Distributed Tracing, W3C TraceContext, Observability, Microservice
 
 Description: Learn how Dapr propagates trace context across service boundaries using W3C TraceContext headers, and how to extend traces into your application code with OpenTelemetry.
 

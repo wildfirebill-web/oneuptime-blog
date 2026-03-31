@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Buildah, Debugging, Troubleshooting, Image Building
+Tags: Podman, Container, DevOps, Buildah, Debugging, Troubleshooting, Image Building
 
 Description: Learn how to use Buildah to debug and troubleshoot container image builds by inspecting intermediate states, running commands, and analyzing failures.
 

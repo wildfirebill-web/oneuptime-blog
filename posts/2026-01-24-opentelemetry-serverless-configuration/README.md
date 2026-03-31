@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Serverless, AWS Lambda, Azure Functions, Google Cloud Functions, Observability, Tracing, Metrics
+Tags: OpenTelemetry, Serverless, AWS Lambda, Azure Function, Google Cloud Functions, Observability, Tracing, Metric
 
 Description: Learn how to properly configure OpenTelemetry for serverless environments including AWS Lambda, Azure Functions, and Google Cloud Functions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NATS, Messaging, Distributed Systems, Microservices, Event-Driven Architecture, DevOps
+Tags: NATS, Messaging, Distributed System, Microservice, Event-Driven Architecture, DevOps
 
 Description: Learn how to implement NATS Leaf Node topologies for extending your messaging infrastructure across regions, clouds, and edge locations with practical configurations and deployment patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Karpenter, AWS, Cost Optimization, Spot Instances
+Tags: Kubernetes, Karpenter, AWS, Cost Optimization, Spot Instance
 
 Description: Configure Karpenter to automatically fallback from Spot to On-Demand instances when capacity is unavailable, ensuring workload reliability while maximizing cost savings in Kubernetes clusters.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Type Constraints, Any, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Type Constraints, Any, Infrastructure as Code, DevOps
 
 Description: A guide to understanding and using the any type constraint in OpenTofu variables for flexible but cautious typing.
 

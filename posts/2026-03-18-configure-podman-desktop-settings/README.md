@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Configuration, Settings
+Tags: Podman, Container, DevOps, Podman Desktop, Configuration, Setting
 
 Description: Learn how to configure Podman Desktop settings including registries, proxies, resources, and extensions for an optimized container workflow.
 

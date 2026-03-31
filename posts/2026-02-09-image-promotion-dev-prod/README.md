@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CI/CD, Container Registry, Images, Promotion, Workflow
+Tags: CI/CD, Container Registry, Image, Promotion, Workflow
 
 Description: Learn how to implement secure image promotion workflows from development to production registries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Logging, Monitoring, Diagnostics
+Tags: Rook, Ceph, Logging, Monitoring, Diagnostic
 
 Description: Monitor Ceph cluster and daemon log messages using the ceph log command, admin sockets, and Kubernetes log access to troubleshoot issues in Rook-Ceph.
 

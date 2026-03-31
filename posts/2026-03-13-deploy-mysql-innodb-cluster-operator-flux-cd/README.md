@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, MySQL, InnoDB Cluster, Database Operators, has
+Tags: Flux CD, Kubernetes, GitOps, MySQL, InnoDB Cluster, Database Operators, High Availability
 
 Description: Deploy the MySQL InnoDB Cluster Operator for high-availability MySQL on Kubernetes using Flux CD HelmRelease.
 

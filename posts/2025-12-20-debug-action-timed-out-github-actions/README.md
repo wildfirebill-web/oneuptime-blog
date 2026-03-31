@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Debugging, Timeout, Performance, DevOps, Troubleshooting
+Tags: GitHub Action, CI/CD, Debugging, Timeout, Performance, DevOps, Troubleshooting
 
 Description: Learn how to diagnose and fix timeout issues in GitHub Actions workflows, from identifying slow steps and hung processes to optimizing build times and setting appropriate timeout limits.
 

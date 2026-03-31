@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Columnar Storage, MergeTree, Internals, Performance
+Tags: ClickHouse, Columnar Storage, MergeTree, Internal, Performance
 
 Description: An explanation of how ClickHouse stores data in columns on disk, why this layout benefits analytical queries, and how it interacts with compression and the primary index.
 

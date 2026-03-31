@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Packer, CI/CD, GitHub Actions, Automation, Immutable Infrastructure
+Tags: OpenTofu, Packer, CI/CD, GitHub Action, Automation, Immutable Infrastructure
 
 Description: Learn how to build a CI/CD pipeline that automatically builds Packer images when application code changes and deploys them with OpenTofu, implementing a complete immutable infrastructure workflow.
 

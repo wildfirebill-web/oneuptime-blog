@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, OIDC, Authentication, GitHub Actions, CI/CD
+Tags: OpenTofu, AWS, OIDC, Authentication, GitHub Action, CI/CD
 
 Description: Learn how to configure AWS OIDC authentication for OpenTofu in GitHub Actions and GitLab CI, eliminating the need for long-lived AWS access keys in CI/CD pipelines.
 

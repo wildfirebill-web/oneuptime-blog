@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Slow Query Log, Performance, Profiler, Diagnostics
+Tags: MongoDB, Slow Query Log, Performance, Profiler, Diagnostic
 
 Description: Learn how to enable and configure slow query logging in MongoDB using the profiler and slowOpThresholdMs to identify and fix performance bottlenecks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Docker, Metrics, Docker Stats Receiver
+Tags: OpenTelemetry, Docker, Metric, Docker Stats Receiver
 
 Description: Monitor per-container CPU, memory, network, and block I/O metrics from the Docker engine using the OpenTelemetry Collector Docker stats receiver.
 

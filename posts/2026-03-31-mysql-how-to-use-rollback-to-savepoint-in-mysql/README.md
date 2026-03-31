@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Transactions, Savepoints, Data Integrity
+Tags: MySQL, Transaction, Savepoint, Data Integrity
 
 Description: Learn how to use ROLLBACK TO SAVEPOINT in MySQL to selectively undo part of a transaction while preserving earlier changes.
 

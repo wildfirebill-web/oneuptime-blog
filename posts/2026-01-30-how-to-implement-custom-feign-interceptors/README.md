@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Feign, Microservices, REST API, HTTP Client
+Tags: Java, Spring Boot, Feign, Microservice, REST API, HTTP Client
 
 Description: Learn how to build production-ready Feign interceptors for authentication, logging, retry logic, and request/response manipulation in Spring Boot microservices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OCI, Artifacts, Container Registry, Helm, Storage
+Tags: OCI, Artifact, Container Registry, Helm, Storage
 
 Description: Master OCI artifact storage for storing Helm charts, policies, and other artifacts in container registries.
 

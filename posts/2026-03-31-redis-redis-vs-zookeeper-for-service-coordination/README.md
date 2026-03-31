@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Zookeeper, Distributed Systems, Service Coordination, Leader Election
+Tags: Redis, ZooKeeper, Distributed System, Service Coordination, Leader Election
 
 Description: Compare Redis and Apache ZooKeeper for distributed service coordination, covering leader election, watches, ephemeral nodes, and operational complexity.
 

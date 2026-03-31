@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Debugging, Containers, Development, Troubleshooting
+Tags: Podman, Debugging, Container, Development, Troubleshooting
 
 Description: A practical guide to debugging applications running inside Podman containers, covering remote debuggers, log inspection, interactive shells, and network troubleshooting.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Node Exporter, IPv4, Network Monitoring, Bandwidth, Metrics, Grafana
+Tags: Prometheus, Node Exporter, IPv4, Network Monitoring, Bandwidth, Metric, Grafana
 
 Description: Learn how to use Prometheus and Node Exporter to monitor IPv4 network traffic, bandwidth usage, and packet statistics across server interfaces.
 

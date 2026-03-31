@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, CLI, Click, Developer Tools
+Tags: Python, CLI, Click, Developer Tool
 
 Description: Master building elegant command-line applications in Python using Click, from basic commands to complex nested groups with options, arguments, and validation.
 

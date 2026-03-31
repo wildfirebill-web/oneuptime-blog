@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Workloads
+Tags: Rancher, Kubernetes, Workload
 
 Description: Learn how to configure pod scheduling in Rancher using node selectors, affinity rules, taints, tolerations, and topology spread constraints.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Error, .env, Troubleshooting
+Tags: Portainer, Stack, Error, .env, Troubleshooting
 
 Description: Resolve the common 'stack.env not found' error when deploying Docker Compose stacks in Portainer.
 

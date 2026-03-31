@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Cortex, Prometheus, Metrics, Scalable Storage
+Tags: Istio, Cortex, Prometheus, Metric, Scalable Storage
 
 Description: How to deploy and configure Cortex as a horizontally scalable, multi-tenant metrics backend for Istio service mesh metrics collected by Prometheus.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, Infrastructure as Code, remote-exec, local-exec, Cleanup
+Tags: OpenTofu, Provisioner, Infrastructure as Code, remote-exec, local-exec, Cleanup
 
 Description: Learn how to configure destroy-time provisioners in OpenTofu to run cleanup scripts when resources are destroyed.
 

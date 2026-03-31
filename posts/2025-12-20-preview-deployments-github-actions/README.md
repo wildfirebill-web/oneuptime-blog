@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Preview Deployments, DevOps, Vercel, Netlify, Kubernetes
+Tags: GitHub Action, CI/CD, Preview Deployments, DevOps, Vercel, Netlify, Kubernetes
 
 Description: Learn how to set up preview deployments in GitHub Actions to automatically deploy pull requests to unique URLs for testing and review before merging.
 

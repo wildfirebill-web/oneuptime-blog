@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Redis, Streams, Scalability
+Tags: Kubernetes, Redis, Stream, Scalability
 
 Description: Learn how to implement Redis consumer groups for scalable message processing with load balancing, automatic message distribution, and fault-tolerant consumption patterns.
 

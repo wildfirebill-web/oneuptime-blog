@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Troubleshooting, External Services, NAT
+Tags: Calico, Kubernetes, Networking, Troubleshooting, External Service, NAT
 
 Description: Fix connectivity from Calico pods to external services by resolving NAT misconfiguration, network policy egress blocks, and DNS resolution failures.
 

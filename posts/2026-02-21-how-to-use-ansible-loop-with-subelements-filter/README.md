@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Subelements, Data Structures
+Tags: Ansible, Loop, Subelements, Data Structure
 
 Description: Learn how to use the Ansible subelements filter to loop over nested list attributes within a list of dictionaries for complex data processing.
 

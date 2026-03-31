@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, SYSTEM, Cache, Memory
+Tags: ClickHouse, SQL, System, Cache, Memory
 
 Description: Learn how to use SYSTEM DROP CACHE commands in ClickHouse to clear DNS, mark, uncompressed, and compiled expression caches for debugging and maintenance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Restore, Mysqldump, Disaster Recovery, Administration
+Tags: MySQL, Restore, mysqldump, Disaster Recovery, Administration
 
 Description: Learn how to restore a MySQL database from a mysqldump SQL file, including handling compressed backups and large file restoration tips.
 

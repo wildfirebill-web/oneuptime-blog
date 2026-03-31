@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, CDI, Devices, Containers, GPU, Specification
+Tags: Podman, CDI, Device, Container, GPU, Specification
 
 Description: A complete guide to the Container Device Interface (CDI) specification in Podman, covering how to create CDI specs, use vendor-provided specs, and build custom device configurations.
 

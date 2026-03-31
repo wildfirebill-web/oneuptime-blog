@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Resources, Limits, QoS
+Tags: Rook, Ceph, Kubernetes, Resource, Limit, QoS
 
 Description: Learn how to configure CPU and memory resource requests and limits for all Rook-Ceph daemons to ensure stable coexistence with application workloads.
 

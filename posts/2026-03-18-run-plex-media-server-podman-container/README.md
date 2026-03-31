@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Plex, Podman, Containers, Media Server, Streaming, Linux, Self-Hosted
+Tags: Plex, Podman, Container, Media Server, Streaming, Linux, Self-Hosted
 
 Description: Set up Plex Media Server inside a Podman container to stream your personal media library across all your devices, with hardware transcoding support and persistent storage.
 

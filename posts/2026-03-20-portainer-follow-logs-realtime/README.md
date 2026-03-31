@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Logging, DevOps
+Tags: Portainer, Docker, Container, Logging, DevOps
 
 Description: Learn how to enable real-time log following (tail -f) for Docker containers in Portainer to monitor live application output.
 

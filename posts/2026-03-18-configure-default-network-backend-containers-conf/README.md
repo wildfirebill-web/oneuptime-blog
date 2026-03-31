@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Configuration, Networking
+Tags: Podman, Container, DevOps, Configuration, Networking
 
 Description: Learn how to configure the default network backend in containers.conf to choose between netavark and CNI for Podman container networking.
 

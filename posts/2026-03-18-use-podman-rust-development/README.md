@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Rust, Containers, Development, Systems Programming
+Tags: Podman, Rust, Container, Development, Systems Programming
 
 Description: A hands-on guide to using Podman for Rust development, covering cargo workflows, dependency caching, web development with Actix and Axum, debugging, and building minimal production images.
 

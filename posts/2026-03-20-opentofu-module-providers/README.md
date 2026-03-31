@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Provider
+Tags: OpenTofu, Terraform, IaC, Module, Provider
 
 Description: Learn how to pass provider configurations to child modules in OpenTofu for multi-region and cross-account deployments.
 

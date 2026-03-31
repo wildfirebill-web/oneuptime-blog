@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Analyzers, Text Analysis, Tokenization, Search, NLP
+Tags: Elasticsearch, Analyzer, Text Analysis, Tokenization, Search, NLP
 
 Description: A comprehensive guide to configuring Elasticsearch analyzers including standard, custom, and language-specific analyzers for optimal text processing and search relevance.
 

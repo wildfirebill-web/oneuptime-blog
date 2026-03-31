@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Returns, Reverse Logistics, E-commerce, Analytics, Refund
+Tags: ClickHouse, Return, Reverse Logistics, E-Commerce, Analytics, Refund
 
 Description: Analyze product returns and reverse logistics in ClickHouse - return rates by category, reason codes, refund cycle times, and restocking efficiency.
 

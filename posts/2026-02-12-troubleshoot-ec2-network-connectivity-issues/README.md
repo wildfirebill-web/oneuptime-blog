@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Networking, Troubleshooting, VPC, Security Groups, Debugging
+Tags: AWS, EC2, Networking, Troubleshooting, VPC, Security Group, Debugging
 
 Description: Systematically diagnose and fix EC2 network connectivity problems including security groups, NACLs, routing, DNS, and VPC configuration issues.
 

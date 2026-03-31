@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how visitParamExtractString() extracts string values from visit parameter JSON in ClickHouse, serving as an alias for simpleJSONExtractString() for analytics use cases.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas, Triggers, Event-Driven, App Services
+Tags: MongoDB, Atlas, Trigger, Event-Driven, App Service
 
 Description: Learn how to use MongoDB Atlas Triggers to automatically execute server-side logic in response to database changes, scheduled events, and authentication events.
 

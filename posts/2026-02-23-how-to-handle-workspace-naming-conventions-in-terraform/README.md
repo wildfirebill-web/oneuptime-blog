@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Workspaces, Naming Conventions, Best Practice, Standard
+Tags: Terraform, Workspaces, Naming Convention, Best Practice, Standard
 
 Description: Establish clear workspace naming conventions in Terraform to prevent confusion, enable automation, and keep resource names consistent across environments and teams.
 

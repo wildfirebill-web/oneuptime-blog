@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microservices, Communication, REST, gRPC, Event-Driven
+Tags: Microservice, Communication, REST, gRPC, Event-Driven
 
 Description: A guide to microservices communication patterns including synchronous REST, gRPC, and asynchronous event-driven messaging.
 

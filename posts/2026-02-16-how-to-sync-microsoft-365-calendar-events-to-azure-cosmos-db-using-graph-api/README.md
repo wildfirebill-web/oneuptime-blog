@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Microsoft Graph API, Azure Cosmos DB, Calendar, Microsoft 365, Sync, Azure Functions, Serverless
+Tags: Microsoft Graph API, Azure Cosmos DB, Calendar, Microsoft 365, Sync, Azure Function, Serverless
 
 Description: Build a synchronization pipeline that copies Microsoft 365 calendar events to Azure Cosmos DB using Graph API for custom analytics and search.
 

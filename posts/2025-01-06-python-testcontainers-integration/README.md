@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Testing, Testcontainers, Docker, Integration Tests, PostgreSQL, Redis, Pytest
+Tags: Python, Testing, Testcontainers, Docker, Integration Test, PostgreSQL, Redis, Pytest
 
 Description: Learn how to write reliable integration tests for Python APIs using Testcontainers. This guide covers testing with real PostgreSQL, Redis, and other services in Docker without mocks.
 

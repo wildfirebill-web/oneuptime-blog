@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Go, Channels, Concurrency, Monitoring, Goroutines
+Tags: OpenTelemetry, Go, Channel, Concurrency, Monitoring, Goroutines
 
 Description: Learn advanced techniques for monitoring Go channels, goroutines, and concurrency patterns using OpenTelemetry to debug performance issues in concurrent systems.
 

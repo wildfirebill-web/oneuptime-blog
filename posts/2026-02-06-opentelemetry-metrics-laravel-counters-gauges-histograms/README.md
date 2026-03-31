@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, PHP, Laravel, Metrics, Counter, Gauge, Histogram
+Tags: OpenTelemetry, PHP, Laravel, Metric, Counter, Gauge, Histogram
 
 Description: Learn how to implement OpenTelemetry metrics in Laravel applications using counters, gauges, and histograms for comprehensive performance monitoring.
 

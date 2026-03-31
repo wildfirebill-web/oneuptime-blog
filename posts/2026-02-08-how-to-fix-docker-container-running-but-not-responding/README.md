@@ -1,8 +1,8 @@
 # How to Fix Docker Container Running But Not Responding
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Troubleshooting, Containers, Unresponsive, Health Check, Debugging, Performance
+Tags: Docker, Troubleshooting, Container, Unresponsive, Health Check, Debugging, Performance
 
 Description: Diagnose and fix Docker containers that show as running but do not respond to requests, covering health checks, resource limits, and debugging techniques.
 

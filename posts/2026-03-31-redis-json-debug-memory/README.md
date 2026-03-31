@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, JSON, RedisJSON, Memory, Diagnostics
+Tags: Redis, JSON, RedisJSON, Memory, Diagnostic
 
 Description: Learn how to use JSON.DEBUG MEMORY in Redis to measure the memory consumed by a JSON document or a specific path within it, aiding capacity planning and optimization.
 

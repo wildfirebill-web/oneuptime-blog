@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Json, Json Data Type, Semi-Structured Data, Nosql
+Tags: MySQL, JSON, Json Data Type, Semi-Structured Data, NoSQL
 
 Description: Learn how to store, insert, query, and update JSON data in MySQL using the native JSON data type introduced in MySQL 5.7.
 

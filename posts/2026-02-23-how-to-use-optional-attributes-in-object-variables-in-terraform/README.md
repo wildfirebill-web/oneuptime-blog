@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Object, Optional, HCL
+Tags: Terraform, Variable, Object, Optional, HCL
 
 Description: Learn how to use the optional() modifier in Terraform object variables to make specific attributes optional with default values, reducing boilerplate for module users.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, ss, netstat, IPv4, Ports, Network Diagnostics
+Tags: Linux, Networking, ss, netstat, IPv4, Port, Network Diagnostics
 
 Description: List IPv4 listening ports and established connections on Linux using ss and netstat, filter by protocol and port, and identify which process owns each socket.
 

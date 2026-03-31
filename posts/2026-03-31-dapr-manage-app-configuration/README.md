@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Configuration Management, Application Configuration, Microservice, Operations
+Tags: Dapr, Configuration Management, Application Configuration, Microservice, Operation
 
 Description: A practical guide to managing application configuration across multiple services using the Dapr Configuration API for consistent, centralized config management.
 

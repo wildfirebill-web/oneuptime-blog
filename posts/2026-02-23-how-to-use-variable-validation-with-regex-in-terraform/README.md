@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Validation, Regex, Variables, Infrastructure as Code
+Tags: Terraform, HCL, Validation, Regex, Variable, Infrastructure as Code
 
 Description: Learn how to use regular expressions in Terraform variable validation blocks to enforce naming conventions, format constraints, and input patterns before any resources are created.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Edge Agent, Tunnel Server, Configuration, Networks
+Tags: Portainer, Edge Agent, Tunnel Server, Configuration, Network
 
 Description: Configure the Portainer tunnel server address and port that Edge Agents use to establish their management connection.
 

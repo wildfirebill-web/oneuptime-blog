@@ -1,6 +1,6 @@
 # How to Use BINARY Operator in MySQL for Case-Sensitive Comparison
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Operator, String, Collation, Case Sensitivity
 

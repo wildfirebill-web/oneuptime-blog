@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, Rook, RGW, Swift, OpenStack, Object Storage
+Tags: Ceph, Rook, RGW, Swift, OpenStack
 
 Description: Configure Ceph RGW Swift-compatible settings including ACLs, tenant accounts, URL formats, and object versioning for OpenStack Swift API compatibility.
 

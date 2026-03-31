@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Python, Troubleshooting, Modules, Dependencies
+Tags: Ansible, Python, Troubleshooting, Module, Dependencies
 
 Description: Resolve Ansible no module named errors caused by missing Python libraries, wrong Python interpreter, and collection installation issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Swarm, Containers, Orchestration
+Tags: RHEL, Docker, Swarm, Container, Orchestration
 
 Description: Set up a Docker Swarm cluster on RHEL servers for container orchestration with service deployment and scaling.
 

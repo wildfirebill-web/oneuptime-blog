@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Compose, Telegraf, InfluxDB, Grafana, Monitoring, Metrics, Time Series
+Tags: Docker, Docker Compose, Telegraf, InfluxDB, Grafana, Monitoring, Metric, Time Series
 
 Description: Deploy a complete TIG monitoring stack with Docker Compose to collect, store, and visualize metrics from your infrastructure.
 

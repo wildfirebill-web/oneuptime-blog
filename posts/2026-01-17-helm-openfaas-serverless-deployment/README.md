@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, OpenFaaS, Serverless, Functions, FaaS
+Tags: Helm, Kubernetes, DevOps, OpenFaaS, Serverless, Function, FaaS
 
 Description: Complete guide to deploying OpenFaaS (Functions as a Service) on Kubernetes using Helm charts for building and running serverless functions.
 

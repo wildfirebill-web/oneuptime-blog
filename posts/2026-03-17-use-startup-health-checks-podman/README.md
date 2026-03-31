@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Check, Startup Probes
+Tags: Podman, Container, DevOps, Health Check, Startup Probes
 
 Description: Learn how to use startup health checks in Podman to handle containers with slow initialization independently from regular health checks.
 

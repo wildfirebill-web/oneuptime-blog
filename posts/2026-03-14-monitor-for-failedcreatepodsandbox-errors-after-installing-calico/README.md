@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Pods, Monitoring
+Tags: Calico, Kubernetes, Pod, Monitoring
 
 Description: Set up proactive monitoring and alerting for FailedCreatePodSandBox errors that commonly occur after deploying Calico as your Kubernetes CNI plugin.
 

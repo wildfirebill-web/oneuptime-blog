@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, ip command, iproute2, Routing, Networking, Diagnostics
+Tags: Linux, ip command, iproute2, Routing, Networking, Diagnostic
 
 Description: View and filter routing table entries on Linux using ip route show, including filtering by destination, type, table, and protocol.
 

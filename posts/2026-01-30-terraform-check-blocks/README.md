@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, IaC, Validation, Checks
+Tags: Terraform, IaC, Validation, CHECK
 
 Description: Learn how to use Terraform check blocks to validate your infrastructure meets operational requirements after deployment.
 

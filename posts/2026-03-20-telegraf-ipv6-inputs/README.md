@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Telegraf, IPv6, InfluxDB, Monitoring, Metrics, Time Series
+Tags: Telegraf, IPv6, InfluxDB, Monitoring, Metric, Time Series
 
 Description: A guide to configuring Telegraf input plugins to collect IPv6 metrics, scrape IPv6 endpoints, and report data to InfluxDB or other outputs.
 

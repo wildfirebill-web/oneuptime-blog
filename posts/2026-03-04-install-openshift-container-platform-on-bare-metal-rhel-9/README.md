@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, OpenShift, Kubernetes, Containers, Bare Metal, Linux
+Tags: RHEL, OpenShift, Kubernetes, Container, Bare Metal, Linux
 
 Description: Learn how to install OpenShift Container Platform on Bare-Metal RHEL on RHEL with step-by-step instructions, configuration examples, and best practices.
 

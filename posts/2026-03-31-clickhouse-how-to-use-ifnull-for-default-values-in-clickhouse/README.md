@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Null Handling, ifNull, Default Values, Sql
+Tags: ClickHouse, NULL Handling, ifNull, Default Values, SQL
 
 Description: Learn how to use ifNull() in ClickHouse to substitute default values for NULL entries in Nullable columns, simplifying data transformation and reporting.
 

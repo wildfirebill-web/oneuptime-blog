@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Webhooks, CI/CD, Automation, GitOps
+Tags: Portainer, Docker, Webhook, CI/CD, Automation, GitOps
 
 Description: Configure and use Portainer webhooks to trigger stack redeployments from CI/CD pipelines, GitHub, GitLab, and custom scripts.
 

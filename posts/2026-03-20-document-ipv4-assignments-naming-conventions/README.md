@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPAM, IPv4, Documentation, Naming Conventions, Network Management, Best Practice
+Tags: IPAM, IPv4, Documentation, Naming Convention, Network Management, Best Practice
 
 Description: Establish consistent naming conventions and documentation standards for IPv4 address assignments to make networks maintainable and troubleshootable at scale.
 

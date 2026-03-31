@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, NGINX Ingress, Kubernetes, Canary Deployments, Progressive Delivery
+Tags: Flagger, NGINX Ingress, Kubernetes, Canary Deployment, Progressive Delivery
 
 Description: Learn how to configure Flagger with NGINX Ingress canary annotations for automated canary deployments on Kubernetes.
 

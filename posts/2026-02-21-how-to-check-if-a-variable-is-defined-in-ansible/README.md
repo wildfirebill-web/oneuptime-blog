@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Conditional, Jinja2 Tests, Best Practice
+Tags: Ansible, Variable, Conditional, Jinja2 Tests, Best Practice
 
 Description: Learn multiple ways to check if a variable is defined in Ansible and handle undefined variables gracefully in your playbooks.
 

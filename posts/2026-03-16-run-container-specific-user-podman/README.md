@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Security, User Management
+Tags: Podman, Container, DevOps, Security, User Management
 
 Description: Learn how to run Podman containers as a specific user for security hardening, file permission management, and principle of least privilege.
 

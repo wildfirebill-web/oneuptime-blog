@@ -2,7 +2,7 @@
 
 Author: [mikepearce](https://github.com/MikePearce)
 
-Tags: Workflow, Slack, Components, JSON
+Tags: Workflow, Slack, Component, JSON
 
 Description: Learn how to use workflows to send messages to Slack when incidents are created or updated.
 

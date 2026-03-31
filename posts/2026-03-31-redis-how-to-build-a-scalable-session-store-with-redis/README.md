@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sessions, Authentication, Scalability, Backend
+Tags: Redis, Session, Authentication, Scalability, Backend
 
 Description: Learn how to build a scalable, distributed session store with Redis that supports millions of concurrent users with fast reads and automatic expiry.
 

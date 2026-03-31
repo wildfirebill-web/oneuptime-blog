@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Operations, Performance, Diagnostic, Administration
+Tags: MongoDB, Operation, Performance, Diagnostic, Administration
 
 Description: Learn how to use db.killOp() to terminate long-running or stuck MongoDB operations, and how to safely identify target operations before killing them.
 

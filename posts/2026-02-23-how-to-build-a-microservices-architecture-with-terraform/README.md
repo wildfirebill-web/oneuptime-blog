@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Microservices, ECS, Docker, Infrastructure Patterns, Cloud Architecture
+Tags: Terraform, Microservice, ECS, Docker, Infrastructure Patterns, Cloud Architecture
 
 Description: A practical guide to provisioning a complete microservices architecture on AWS using Terraform, covering ECS Fargate, service discovery, load balancing, and inter-service communication.
 

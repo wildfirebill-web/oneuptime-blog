@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NATS, Message Broker, Pub/Sub, Microservices
+Tags: RHEL, NATS, Message Broker, Pub/Sub, Microservice
 
 Description: Learn how to install and configure NATS server on RHEL for lightweight, high-performance publish-subscribe messaging.
 

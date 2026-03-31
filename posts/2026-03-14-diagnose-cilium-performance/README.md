@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Performance, Diagnostics, eBPF, Kubernetes
+Tags: Cilium, Performance, Diagnostic, eBPF, Kubernetes
 
 Description: Learn how to diagnose performance issues in Cilium using built-in metrics, BPF tools, and systematic analysis to identify bottlenecks in the networking datapath.
 

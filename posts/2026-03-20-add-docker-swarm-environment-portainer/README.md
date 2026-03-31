@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Environments, Configuration, DevOps
+Tags: Portainer, Docker Swarm, Environment, Configuration, DevOps
 
 Description: Connect an existing Docker Swarm cluster to Portainer for centralized management of Swarm services and stacks.
 

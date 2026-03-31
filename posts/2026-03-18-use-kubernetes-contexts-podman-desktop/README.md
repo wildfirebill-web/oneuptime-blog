@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Kubernetes, Context, kubeconfig
+Tags: Podman, Container, DevOps, Podman Desktop, Kubernetes, Context, kubeconfig
 
 Description: Learn how to manage and switch between multiple Kubernetes contexts in Podman Desktop to work with different clusters from a single interface.
 

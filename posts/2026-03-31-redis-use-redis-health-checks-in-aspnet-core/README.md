@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Asp.Net Core, Health Checks, Monitoring, C#
+Tags: Redis, ASP.NET Core, Health Check, Monitoring, C#
 
 Description: Add Redis health checks to ASP.NET Core using the built-in health check framework to monitor Redis availability and report status via a health endpoint.
 

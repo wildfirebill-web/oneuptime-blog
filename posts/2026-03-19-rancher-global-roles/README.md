@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Role, Security
+Tags: Rancher, Kubernetes, RBAC, Permission, Role, Security
 
 Description: A practical guide to creating and managing global roles in Rancher for controlling platform-wide access and permissions.
 

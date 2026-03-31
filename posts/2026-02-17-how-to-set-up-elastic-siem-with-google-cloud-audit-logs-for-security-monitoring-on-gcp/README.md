@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Elastic SIEM, Audit Logs, Security Monitoring, Google Cloud, Elasticsearch
+Tags: GCP, Elastic SIEM, Audit Log, Security Monitoring, Google Cloud, Elasticsearch
 
 Description: Configure Elastic SIEM to ingest Google Cloud Audit Logs for real-time security monitoring, threat detection, and compliance on GCP.
 

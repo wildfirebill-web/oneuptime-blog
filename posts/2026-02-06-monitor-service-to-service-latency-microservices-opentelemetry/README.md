@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Microservices, Latency, Distributed Tracing, Metrics, Observability
+Tags: OpenTelemetry, Microservice, Latency, Distributed Tracing, Metric, Observability
 
 Description: A practical guide to measuring and monitoring service-to-service latency in microservices architectures using OpenTelemetry traces and metrics.
 

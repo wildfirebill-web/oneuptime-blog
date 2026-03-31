@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Event Sourcing, Microservices, Architecture, Node.js
+Tags: MongoDB, Event Sourcing, Microservice, Architecture, Node.js
 
 Description: Learn how to implement event sourcing in a microservices architecture using MongoDB as the event store for reliable, auditable state management.
 

@@ -1,4 +1,4 @@
-# How to Handle Concurrent State Updates with VersionedCollapsingMergeTree in ClickHouse
+# How to Handle Concurrent State Updates with VersionedCollapsingMergeTree
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, .NET, Profiling, Distributed Traces
+Tags: OpenTelemetry, .NET, Profiling, Distributed Trace
 
 Description: Profile .NET applications using OpenTelemetry and link profiling data to distributed traces for deep diagnostics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Secrets, Management
+Tags: Podman, Container, DevOps, Secret, Management
 
 Description: Learn how to list and view secrets stored in Podman for inventory and management purposes.
 

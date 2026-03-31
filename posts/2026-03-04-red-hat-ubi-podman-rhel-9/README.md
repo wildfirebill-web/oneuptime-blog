@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, UBI, Podman, Container Images, Linux
+Tags: RHEL, UBI, Podman, Container Image, Linux
 
 Description: Learn how to use Red Hat Universal Base Images (UBI) with Podman on RHEL for building enterprise-grade containers with RHEL packages, security updates, and Red Hat support.
 

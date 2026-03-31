@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, Sorting, Performance, Indexes
+Tags: MongoDB, Aggregation, Sorting, Performance, Index
 
 Description: Learn how to eliminate blocking sort stages in MongoDB aggregation pipelines by using indexes and rewriting pipelines for better throughput.
 

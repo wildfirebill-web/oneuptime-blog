@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Prometheus, Monitoring
+Tags: Calico, Kubernetes, Networking, Metric, Prometheus, Monitoring
 
 Description: Monitor the health of your Calico metrics collection pipeline itself, detecting gaps in coverage, scrape failures, and stale data that could leave you blind to real Calico issues.
 

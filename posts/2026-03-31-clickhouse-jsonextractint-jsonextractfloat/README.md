@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Json, Analytics, Query
+Tags: ClickHouse, JSON, Analytics, Query
 
 Description: Learn how JSONExtractInt() and JSONExtractFloat() pull numeric values from JSON strings stored in ClickHouse columns, with real query examples and type handling tips.
 

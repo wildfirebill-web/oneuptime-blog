@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitHub, Infrastructure as Code, IaC, Webhooks, Integration
+Tags: OpenTofu, GitHub, Infrastructure as Code, IaC, Webhook, Integration
 
 Description: Learn how to create and configure GitHub webhooks for CI/CD integration and event notifications using OpenTofu.
 

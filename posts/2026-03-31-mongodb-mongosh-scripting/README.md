@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, mongosh, Scripting, Automation, DevOps
+Tags: MongoDB, Mongosh, Scripting, Automation, DevOps
 
 Description: Learn how to write reusable mongosh JavaScript scripts for automating MongoDB tasks like migrations, maintenance, reporting, and user provisioning.
 

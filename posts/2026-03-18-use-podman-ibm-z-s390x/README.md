@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, IBM Z, s390x, Containers, Linux, Mainframe, DevOps, Enterprise
+Tags: Podman, IBM Z, s390x, Container, Linux, Mainframe, DevOps, Enterprise
 
 Description: Learn to install and run Podman on IBM Z (s390x) mainframes, covering RHEL/Ubuntu setup, s390x container images, and crypto hardware acceleration.
 

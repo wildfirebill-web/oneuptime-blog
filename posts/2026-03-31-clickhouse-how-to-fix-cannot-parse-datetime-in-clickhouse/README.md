@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Clickhouse, Datetime, Data Types, Troubleshooting
+Tags: ClickHouse, DateTime, Data Type, Troubleshooting
 
 Description: Fix 'Cannot parse datetime' errors in ClickHouse by understanding supported formats, timezone handling, and the right parsing functions.
 

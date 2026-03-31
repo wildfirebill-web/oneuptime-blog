@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Race Conditions, Async, Context Propagation, Debugging
+Tags: OpenTelemetry, Race Condition, Async, Context Propagation, Debugging
 
 Description: Debug race conditions in asynchronous applications by tracing context propagation through concurrent operations with OpenTelemetry.
 

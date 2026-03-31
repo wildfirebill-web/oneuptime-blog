@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Dataflow, Monitoring, Streaming, Custom Metrics, Cloud Monitoring, Apache Beam
+Tags: GCP, Dataflow, Monitoring, Streaming, Custom Metric, Cloud Monitoring, Apache Beam
 
 Description: Learn how to implement custom metrics in Dataflow streaming pipelines to monitor processing lag, backlog depth, and throughput with actionable alerts.
 

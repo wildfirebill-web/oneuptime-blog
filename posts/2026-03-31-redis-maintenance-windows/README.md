@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Maintenance, Operations
+Tags: Redis, Maintenance, Operation
 
 Description: Learn how to plan and execute Redis maintenance windows with minimal downtime, including pre-maintenance checks, client drain procedures, and post-maintenance validation.
 

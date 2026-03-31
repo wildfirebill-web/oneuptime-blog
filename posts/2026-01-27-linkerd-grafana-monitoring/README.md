@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linkerd, Grafana, Service Mesh, Kubernetes, Monitoring, Observability, Prometheus, Metrics, SRE
+Tags: Linkerd, Grafana, Service Mesh, Kubernetes, Monitoring, Observability, Prometheus, Metric, SRE
 
 Description: A comprehensive guide to monitoring Linkerd service mesh with Grafana dashboards, covering metrics collection, dashboard setup, alerting configuration.
 

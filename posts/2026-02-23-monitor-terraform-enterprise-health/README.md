@@ -1,6 +1,6 @@
 # How to Monitor Terraform Enterprise Health
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Terraform, Terraform Enterprise, Monitoring, Health Check, Observability, DevOps
 

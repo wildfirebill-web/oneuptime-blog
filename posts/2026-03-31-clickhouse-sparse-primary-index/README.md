@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Primary Index, ORDER BY, Granule, Internals
+Tags: ClickHouse, Primary Index, ORDER BY, Granule, Internal
 
 Description: A deep dive into ClickHouse's sparse primary index design, explaining how it differs from B-tree indexes, how granules work, and how queries use the index for range pruning.
 

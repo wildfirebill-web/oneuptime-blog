@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, Pasta, slirp4netns, Migration
+Tags: Podman, Container, DevOps, Networking, Pasta, slirp4netns, Migration
 
 Description: Learn how to migrate from slirp4netns to pasta networking in Podman for better performance and features.
 

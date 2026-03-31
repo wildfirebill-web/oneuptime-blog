@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, DigitalOcean, Managed Databases, PostgreSQL, Infrastructure as Code
+Tags: OpenTofu, DigitalOcean, Managed Database, PostgreSQL, Infrastructure as Code
 
 Description: Learn how to create DigitalOcean managed database clusters with OpenTofu, including PostgreSQL, MySQL, and Redis configurations.
 

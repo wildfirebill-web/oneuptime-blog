@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, OAuth, Admin, Groups, Automation, RBAC
+Tags: Portainer, OAuth, Admin, Group, Automation, RBAC
 
 Description: Automatically assign administrator privileges to Portainer users who belong to specific OAuth identity provider groups.
 

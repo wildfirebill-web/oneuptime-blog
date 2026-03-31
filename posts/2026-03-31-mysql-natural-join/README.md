@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, JOIN, Database, Query
+Tags: MySQL, SQL, Join, Database, Query
 
 Description: Learn how NATURAL JOIN works in MySQL, how it automatically matches columns by name, its risks with schema changes, and when to use explicit JOIN instead.
 

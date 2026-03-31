@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Alerts, Kubernetes, GitOps, Notifications, Events, Reconciliation, Monitoring
+Tags: Flux, Alert, Kubernetes, GitOps, Notification, Event, Reconciliation, Monitoring
 
 Description: Learn how to configure Flux alerts to filter by the ReconciliationFailed event reason for targeted failure notifications.
 

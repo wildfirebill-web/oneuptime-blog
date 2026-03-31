@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, System Design, Shopping Cart, E-Commerce, Hashes, Scalability
+Tags: Redis, System Design, Shopping Cart, E-Commerce, Hash, Scalability
 
 Description: Learn how to design a fast, scalable shopping cart using Redis hashes, TTL, and atomic operations for e-commerce applications.
 

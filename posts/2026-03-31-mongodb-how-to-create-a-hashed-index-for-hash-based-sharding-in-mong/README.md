@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Hashed Index, Sharding, Horizontal Scaling
+Tags: MongoDB, Index, Hashed Index, Sharding, Horizontal Scaling
 
 Description: Learn how to create hashed indexes in MongoDB for hash-based sharding to achieve even data distribution across shards in a cluster.
 

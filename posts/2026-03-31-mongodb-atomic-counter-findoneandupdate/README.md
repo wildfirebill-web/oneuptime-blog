@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atomic, Counter, FindOneAndUpdate, Concurrency
+Tags: MongoDB, Atomic, Counter, findOneAndUpdate, Concurrency
 
 Description: Learn how to implement thread-safe atomic counters in MongoDB using findOneAndUpdate with the $inc operator for sequential ID generation.
 

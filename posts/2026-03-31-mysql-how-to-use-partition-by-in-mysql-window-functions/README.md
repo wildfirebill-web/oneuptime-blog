@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Window Functions, Sql, Analytics
+Tags: MySQL, Window Function, SQL, Analytics
 
 Description: Learn how to use PARTITION BY in MySQL window functions to divide result sets into groups and apply calculations independently within each group.
 

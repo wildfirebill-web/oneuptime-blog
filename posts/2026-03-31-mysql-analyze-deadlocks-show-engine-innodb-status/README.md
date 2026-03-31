@@ -24,7 +24,7 @@ The `\G` formats the output vertically for readability. The output contains mult
 
 A typical deadlock report looks like this:
 
-```
+```text
 ------------------------
 LATEST DETECTED DEADLOCK
 ------------------------

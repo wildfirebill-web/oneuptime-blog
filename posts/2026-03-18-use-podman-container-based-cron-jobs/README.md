@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Cron Jobs, Automation, Scheduling
+Tags: Podman, Container, Cron Jobs, Automation, Scheduling
 
 Description: Learn how to use Podman to run scheduled tasks in containers with systemd timers and traditional cron, providing isolation, reproducibility, and easy management for recurring jobs.
 

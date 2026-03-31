@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, Firebase, Authentication, Serverless
+Tags: GCP, Cloud Function, Firebase, Authentication, Serverless
 
 Description: Learn how to create a Google Cloud Function that automatically triggers whenever a new user signs up through Firebase Authentication, enabling onboarding workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Migration, DevOps
+Tags: Portainer, Docker, Stack, Migration, DevOps
 
 Description: Learn how to migrate Docker Compose stacks from one environment to another in Portainer, including volume data migration and configuration transfer.
 

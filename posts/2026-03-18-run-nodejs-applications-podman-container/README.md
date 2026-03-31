@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Podman, Containers, JavaScript, DevOps, Linux, Containerization, Docker
+Tags: Node.js, Podman, Container, JavaScript, DevOps, Linux, Containerization, Docker
 
 Description: Learn how to containerize and run Node.js applications with Podman, from a basic setup to multi-stage production builds with health checks and resource limits.
 

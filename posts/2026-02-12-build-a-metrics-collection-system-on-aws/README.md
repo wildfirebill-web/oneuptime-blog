@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Metrics, Monitoring, CloudWatch, Prometheus, Grafana, Observability, Timestream
+Tags: AWS, Metric, Monitoring, CloudWatch, Prometheus, Grafana, Observability, Timestream
 
 Description: Build a scalable metrics collection and visualization system on AWS using Timestream, CloudWatch, and Grafana for full observability
 

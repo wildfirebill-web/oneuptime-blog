@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Atlas Search, Compound Query, Search
+Tags: MongoDB, Atlas Search, Compound Query, Search
 
 Description: Learn how to use the compound operator in MongoDB Atlas Search to combine must, should, mustNot, and filter clauses for complex search logic with relevance scoring.
 

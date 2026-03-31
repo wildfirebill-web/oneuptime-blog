@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Nullable, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variable, Nullable, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to using the nullable attribute in OpenTofu variables to control whether null values are accepted.
 

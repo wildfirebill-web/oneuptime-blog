@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, Docker CLI, Containers, Local Development
+Tags: Rancher Desktop, Docker CLI, Container, Local Development
 
 Description: Configure and use the Docker CLI with Rancher Desktop's container runtime for familiar Docker workflows.
 

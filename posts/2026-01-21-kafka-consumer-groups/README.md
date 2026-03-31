@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Consumer Groups, Scalability, Partition Assignment, Rebalancing, Java, Python
+Tags: Apache Kafka, Consumer Group, Scalability, Partition Assignment, Rebalancing, Java, Python
 
 Description: A comprehensive guide to building scalable Kafka consumer groups, covering partition assignment strategies, rebalancing behavior, consumer configuration.
 

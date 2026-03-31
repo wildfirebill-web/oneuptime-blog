@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Dev/Test, Virtual Machine, Kubernetes, Development Environments, SUSE Rancher, HCI
+Tags: Harvester, Dev/Test, Virtual Machine, Kubernetes, Development Environment, SUSE Rancher, HCI
 
 Description: Learn how to set up a Harvester cluster for development and testing environments including self-service VM provisioning, resource quotas, network isolation, and template-based VM creation.
 

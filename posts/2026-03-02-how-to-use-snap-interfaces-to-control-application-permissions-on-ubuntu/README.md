@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Snap, Security, Linux, Permissions
+Tags: Ubuntu, Snap, Security, Linux, Permission
 
 Description: A comprehensive guide to using snap interfaces to control what system resources applications can access on Ubuntu, including listing, connecting, and auditing permissions.
 

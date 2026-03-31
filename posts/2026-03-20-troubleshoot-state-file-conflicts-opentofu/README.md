@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, State, Conflicts, Infrastructure as Code
+Tags: OpenTofu, Troubleshooting, State, Conflict, Infrastructure as Code
 
 Description: Learn how to diagnose and resolve state file conflicts, including stale locks, concurrent apply errors, and state drift caused by out-of-band changes.
 

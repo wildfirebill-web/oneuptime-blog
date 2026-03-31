@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, NATS, Messaging, Microservices, Distributed Systems
+Tags: Go, NATS, Messaging, Microservice, Distributed System
 
 Description: Build lightweight microservice communication in Go using NATS for pub/sub, request/reply patterns, and JetStream for persistence.
 

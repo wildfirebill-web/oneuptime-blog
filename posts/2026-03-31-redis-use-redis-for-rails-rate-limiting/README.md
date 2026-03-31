@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Ruby On Rails, Rate Limiting, Rack Attack, Ruby
+Tags: Redis, Ruby On Rail, Rate Limiting, Rack Attack, Ruby
 
 Description: Implement Redis-backed rate limiting in Rails using Rack::Attack to protect API endpoints and prevent abuse with configurable throttle rules.
 

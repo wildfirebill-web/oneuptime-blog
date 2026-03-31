@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Microservices, Event-Driven Architecture, Kafka, Analytics
+Tags: ClickHouse, Microservice, Event-Driven Architecture, Kafka, Analytics
 
 Description: Use ClickHouse as the analytical backbone of a microservices event-driven architecture by subscribing to domain events and powering cross-service analytics.
 

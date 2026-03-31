@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Ternary Operator, if Function, Conditional, SQL
+Tags: ClickHouse, Ternary Operator, IF Function, Conditional, SQL
 
 Description: Learn how to use ClickHouse's ternary-style conditional expressions with the if() function, multiIf(), and the CASE statement for inline branching logic.
 

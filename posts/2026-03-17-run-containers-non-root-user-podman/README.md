@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Non-Root, Security
+Tags: Podman, Container, DevOps, Rootless, Non-Root, Security
 
 Description: Learn how to run containers as a non-root user with Podman for improved security and reduced attack surface.
 

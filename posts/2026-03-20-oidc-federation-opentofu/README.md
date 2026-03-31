@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, OIDC, GitHub Actions, AWS, IAM, Federation, Infrastructure as Code
+Tags: OpenTofu, OIDC, GitHub Action, AWS, IAM, Federation, Infrastructure as Code
 
 Description: Learn how to configure OIDC federation with AWS IAM using OpenTofu to enable keyless authentication from GitHub Actions, GitLab CI, and other OIDC-capable systems.
 

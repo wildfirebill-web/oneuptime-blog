@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Testing, Integration Tests, Kubernetes, Service Mesh
+Tags: Istio, Testing, Integration Test, Kubernetes, Service Mesh
 
 Description: Learn how to write integration tests that verify your Istio policies work correctly, covering authorization, routing, and traffic management rules.
 

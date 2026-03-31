@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kubernetes, Service Mesh, Istio, Linkerd, Architecture, Microservices, DevOps, Networking
+Tags: Kubernetes, Service Mesh, Istio, Linkerd, Architecture, Microservice, DevOps, Networking
 
 Description: A hands-on guide to implementing production-ready service mesh patterns including sidecar proxy, ambassador, adapter, circuit breaker, and traffic management patterns with Istio and Linkerd.
 

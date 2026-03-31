@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Environment Variables, Configuration, DevOps
+Tags: Portainer, Kubernetes, Environment Variable, Configuration, DevOps
 
 Description: Learn how to configure environment variables for Kubernetes applications in Portainer using direct values, ConfigMaps, and Secrets.
 

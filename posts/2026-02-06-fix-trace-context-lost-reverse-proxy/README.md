@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Trace Context, Reverse Proxy, Headers
+Tags: OpenTelemetry, Trace Context, Reverse Proxy, Header
 
 Description: Fix broken distributed traces caused by reverse proxies or API gateways that strip the traceparent propagation header.
 

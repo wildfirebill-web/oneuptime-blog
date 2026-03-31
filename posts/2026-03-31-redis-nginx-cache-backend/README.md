@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, NGINX, Cache, Reverse Proxy, Performance
+Tags: Redis, Nginx, Cache, Reverse Proxy, Performance
 
-Description: Learn how to use Redis as a cache backend for NGINX using the ngx_http_redis module or OpenResty/lua-resty-redis to serve cached responses directly from Redis.
+Description: Learn how to use Redis as a cache backend for NGINX using the ngx_http_redis module or OpenResty to serve cached responses directly from Redis.
 
 ---
 

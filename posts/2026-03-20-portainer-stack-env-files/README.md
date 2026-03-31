@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Environment Variables, DevOps
+Tags: Portainer, Docker, Stack, Environment Variable, DevOps
 
 Description: Learn how to use .env files with Docker Compose stacks in Portainer for managing environment-specific configurations cleanly.
 

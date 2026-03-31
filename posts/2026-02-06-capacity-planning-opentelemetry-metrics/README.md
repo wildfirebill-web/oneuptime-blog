@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Capacity Planning, Metrics, Observability, Infrastructure, Scaling, Resource Management
+Tags: OpenTelemetry, Capacity Planning, Metric, Observability, Infrastructure, Scaling, Resource Management
 
 Description: Learn how to implement data-driven capacity planning using OpenTelemetry metrics to forecast resource needs, prevent outages, and scale infrastructure efficiently.
 

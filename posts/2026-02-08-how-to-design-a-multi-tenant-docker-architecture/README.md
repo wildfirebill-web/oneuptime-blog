@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Multi-Tenancy, SaaS, Container Architecture, Isolation, Microservices, DevOps
+Tags: Docker, Multi-Tenancy, SaaS, Container Architecture, Isolation, Microservice, DevOps
 
 Description: Design multi-tenant Docker architectures with proper isolation strategies, from shared containers to dedicated stacks per tenant.
 

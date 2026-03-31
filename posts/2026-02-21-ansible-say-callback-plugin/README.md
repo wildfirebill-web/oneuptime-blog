@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Callback Plugins, Text-to-Speech, Notifications
+Tags: Ansible, Callback Plugins, Text-to-Speech, Notification
 
 Description: Configure the Ansible say callback plugin for audible text-to-speech notifications when playbook tasks succeed, fail, or complete.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMaps, Configuration Management, DevOps
+Tags: Portainer, Kubernetes, ConfigMap, Configuration Management, DevOps
 
 Description: Learn how to create Kubernetes ConfigMaps using Portainer's form interface without writing YAML.
 

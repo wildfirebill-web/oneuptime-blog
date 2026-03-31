@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Health, Diagnostics, Operations
+Tags: Rook, Ceph, Kubernetes, Health, Diagnostic, Operation
 
 Description: A systematic guide to checking Rook-Ceph cluster health using kubectl, the Ceph toolbox, and Ceph CLI commands for mon, OSD, PG, and pool status.
 

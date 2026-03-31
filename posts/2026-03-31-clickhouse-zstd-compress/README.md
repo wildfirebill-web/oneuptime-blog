@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Compression, Zstd, String Function, Data Storage
+Tags: ClickHouse, Compression, ZSTD, String Function, Data Storage
 
 Description: Learn how zstdCompress() and zstdDecompress() apply Zstandard compression to String values in ClickHouse, offering excellent compression ratios with fast decompression for analytical workloads.
 

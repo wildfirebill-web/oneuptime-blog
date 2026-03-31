@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kiali, Service Mesh, Observability, Microservices
+Tags: Istio, Kiali, Service Mesh, Observability, Microservice
 
 Description: Learn how to use Kiali's graph features to map and understand service dependencies across your Istio mesh.
 

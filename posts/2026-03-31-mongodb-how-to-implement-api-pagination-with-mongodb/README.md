@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Pagination, Rest Api, Performance, Query Optimization
+Tags: MongoDB, Pagination, REST API, Performance, Query Optimization
 
 Description: Learn how to implement cursor-based and offset-based API pagination with MongoDB, including best practices for large collections and sort stability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Go Templates, Container Inspection
+Tags: Podman, Container, DevOps, Go Templates, Container Inspection
 
 Description: Master Go template syntax for podman inspect to extract and format container data precisely, from simple field access to complex iterations and conditionals.
 

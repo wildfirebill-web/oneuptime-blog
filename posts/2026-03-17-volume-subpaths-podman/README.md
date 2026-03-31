@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Subpaths, Storage
+Tags: Podman, Container, DevOps, Volumes, Subpaths, Storage
 
 Description: Learn how to mount specific subdirectories from a Podman volume into containers using subpath options.
 

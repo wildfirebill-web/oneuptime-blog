@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bash, Shell Scripting, Linux, Variables, Error Handling, Debugging
+Tags: Bash, Shell Scripting, Linux, Variable, Error Handling, Debugging
 
 Description: Learn how to diagnose and resolve read-only variable errors in Bash, including understanding the readonly command, working around limitations, and best practices for variable management.
 

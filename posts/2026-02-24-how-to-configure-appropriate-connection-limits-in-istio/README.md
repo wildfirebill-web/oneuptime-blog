@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Connection Limits, Circuit Breaking, Envoy, Reliability
+Tags: Istio, Connection Limit, Circuit Breaking, Envoy, Reliability
 
 Description: How to set the right connection limits in Istio to protect your services from overload while maintaining availability.
 

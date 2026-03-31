@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Swarm, Migration, Kubernetes, Systemd
+Tags: Podman, Container, DevOps, Docker, Swarm, Migration, Kubernetes, Systemd
 
 Description: Learn how to migrate Docker Swarm services to Podman using pods, systemd services, and Kubernetes as orchestration alternatives.
 

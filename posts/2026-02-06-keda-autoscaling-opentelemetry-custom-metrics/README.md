@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, KEDA, Autoscaling, Kubernetes, Custom Metrics
+Tags: OpenTelemetry, KEDA, Autoscaling, Kubernetes, Custom Metric
 
 Description: Configure KEDA to auto-scale Kubernetes workloads based on OpenTelemetry custom metrics using the Prometheus scaler.
 

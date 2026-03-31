@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, CPU Profiling, Traces, Performance
+Tags: OpenTelemetry, CPU Profiling, Trace, Performance
 
 Description: Correlate CPU profiling data with OpenTelemetry traces to pinpoint the exact code paths consuming CPU time within slow production requests.
 

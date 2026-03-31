@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Batch Processing
+Tags: Kubernetes, Job, Batch Processing
 
 Description: Master the Indexed completion mode in Kubernetes Jobs to assign specific work items to individual pods through deterministic index-based task distribution.
 

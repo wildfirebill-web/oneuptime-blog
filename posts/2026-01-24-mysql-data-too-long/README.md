@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Database, Troubleshooting, Data Types, Schema, SQL
+Tags: MySQL, Database, Troubleshooting, Data Type, Schema, SQL
 
 Description: Learn how to diagnose and fix MySQL 'Data too long for column' errors by understanding column limits, SQL modes, and proper schema design.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Dev Containers, Jaeger, Docker, Local Development
+Tags: OpenTelemetry, Dev Container, Jaeger, Docker, Local Development
 
 Description: Set up a VS Code dev container that includes an OpenTelemetry Collector and Jaeger so every developer gets tracing out of the box.
 

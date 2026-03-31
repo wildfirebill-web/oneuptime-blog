@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, for_each, HCL, Module Composition
+Tags: OpenTofu, Terraform, Module, for_each, HCL, Module Composition
 
 Description: Learn how to use for_each on module blocks in OpenTofu to create multiple instances of a module from a map of configurations, enabling DRY multi-environment and multi-service deployments.
 

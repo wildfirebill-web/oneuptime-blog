@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Dependencies, Graph, Concepts, Infrastructure as Code
+Tags: OpenTofu, Dependencies, Graph, Concept, Infrastructure as Code
 
 Description: Understand how OpenTofu resolves dependencies between resources using a directed acyclic graph, and how to manage explicit and implicit dependencies.
 

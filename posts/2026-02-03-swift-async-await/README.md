@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Swift, IOS, Concurrency, Async/Await, Actors
+Tags: Swift, IOS, Concurrency, Async/Await, Actor
 
 Description: Master Swift's modern concurrency model with async/await, actors, task groups, and structured concurrency for writing safe, readable asynchronous code.
 

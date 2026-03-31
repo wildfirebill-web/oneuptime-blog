@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, YAML, Cleanup
+Tags: Podman, Container, DevOps, Kubernetes, YAML, Cleanup
 
 Description: Learn how to remove pods, containers, and associated resources created by podman kube play using the --down flag.
 

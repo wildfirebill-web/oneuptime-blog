@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, MDNS, Multicast, DNS, Avahi, Linux
+Tags: Networking, mDNS, Multicast, DNS, Avahi, Linux
 
 Description: Configure mDNS on Linux using Avahi to enable zero-configuration hostname resolution across a local network segment without a traditional DNS server.
 

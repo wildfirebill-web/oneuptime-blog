@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, NGINX, TCP Proxy, Load Balancer, Networking, Configuration
+Tags: Redis, Nginx, TCP Proxy, Load Balancer, Networking, Configuration
 
 Description: Configure NGINX as a TCP stream proxy for Redis using the stream module, enabling load balancing, connection limiting, and health checks for Redis deployments.
 

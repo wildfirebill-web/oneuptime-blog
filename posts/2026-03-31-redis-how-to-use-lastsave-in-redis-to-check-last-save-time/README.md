@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Persistence, RDB, Monitoring, Commands
+Tags: Redis, Persistence, RDB, Monitoring, Command
 
 Description: Learn how to use LASTSAVE in Redis to retrieve the Unix timestamp of the last successful RDB snapshot, useful for monitoring data durability and backup freshness.
 

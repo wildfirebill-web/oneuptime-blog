@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, CI/CD, Caching, Build Optimization
+Tags: Podman, Container, DevOps, CI/CD, Caching, Build Optimization
 
 Description: Learn how to cache Podman images and layers in CI/CD pipelines to dramatically reduce build times and speed up your deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Containers, Installation
+Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Container, Installation
 
 Description: A step-by-step guide to installing Calico as the CNI plugin on a Kubernetes cluster running containerized workloads on bare metal servers.
 

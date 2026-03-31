@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Callback Plugins, Outputs, Monitoring
+Tags: Ansible, Callback Plugins, Output, Monitoring
 
 Description: Configure the Ansible oneline callback plugin to display each task result on a single line for concise and scannable playbook output.
 

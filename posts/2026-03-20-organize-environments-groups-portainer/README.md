@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environments, Groups, Organizations, DevOps
+Tags: Portainer, Environment, Group, Organization, DevOps
 
 Description: Use environment groups in Portainer to logically organize and manage multiple environments by site, team, or purpose.
 

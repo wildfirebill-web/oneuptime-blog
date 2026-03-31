@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, GitHub API, Automation, Octokit, DevOps
+Tags: GitHub Action, CI/CD, GitHub API, Automation, Octokit, DevOps
 
 Description: Learn how to use the GitHub API in GitHub Actions to automate repository management, create issues, manage PRs, and build powerful integrations.
 

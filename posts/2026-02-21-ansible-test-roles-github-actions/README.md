@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Testing, GitHub Actions, CI/CD, Molecule
+Tags: Ansible, Testing, GitHub Action, CI/CD, Molecule
 
 Description: Set up GitHub Actions workflows to automatically test Ansible roles with Molecule across multiple platforms on every push.
 

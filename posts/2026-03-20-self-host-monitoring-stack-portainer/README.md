@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Prometheus, Grafana, Monitoring, Docker Compose, Metrics, Self-Hosting
+Tags: Portainer, Prometheus, Grafana, Monitoring, Docker Compose, Metric, Self-Hosting
 
 Description: Learn how to deploy a complete self-hosted monitoring stack with Prometheus, Grafana, and cAdvisor via Portainer for infrastructure and container metrics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Atlas Search, Index, Lifecycle, Operations
+Tags: MongoDB, Atlas Search, Index, Lifecycle, Operation
 
 Description: Learn how to create, update, rebuild, pause, and delete Atlas Search indexes using the Atlas UI, CLI, and Admin API for full index lifecycle management.
 

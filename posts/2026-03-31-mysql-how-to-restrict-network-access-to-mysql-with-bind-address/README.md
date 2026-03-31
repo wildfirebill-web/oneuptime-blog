@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Security, Network, Configuration, Administration
+Tags: MySQL, Security, Network, Configuration, Administration
 
 Description: Learn how to use the bind-address configuration option in MySQL to restrict which network interfaces the server listens on and control remote access.
 

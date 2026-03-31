@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Floor Function, Math, HCL, Infrastructure as Code, Numeric Functions
+Tags: Terraform, Floor Function, Math, HCL, Infrastructure as Code, Numeric Function
 
 Description: Learn how to use the floor function in Terraform to round numbers down to the nearest integer for budget-aware infrastructure sizing and resource allocation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Cascading Failures, Circuit Breaker, Resilience, Kubernetes
+Tags: Istio, Cascading Failure, Circuit Breaker, Resilience, Kubernetes
 
 Description: How to prevent and handle cascading failures in microservices using Istio circuit breakers, retries, timeouts, and load shedding strategies on Kubernetes.
 

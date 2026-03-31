@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Relay Log, Replication, Binary Log, Replica
 
-Description: The MySQL relay log is a set of log files on a replica server that stores events received from the source's binary log before they are applied by the SQL thread.
+Description: The MySQL relay log is a set of log files on a replica server that stores events received from the source binary log before they are applied by the SQL thread.
 
 ---
 

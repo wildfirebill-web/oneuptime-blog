@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, XREADGROUP, Consumer Groups, Messaging
+Tags: Redis, Stream, XREADGROUP, Consumer Group, Messaging
 
 Description: Learn how to use XREADGROUP in Redis Streams to read messages within a consumer group, enabling competing consumer patterns with delivery tracking.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, ConfigMaps, Configuration
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, ConfigMap, Configuration
 
 Description: Learn how to encrypt sensitive ConfigMap data using SOPS in Flux when your application reads credentials from ConfigMaps instead of Secrets.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Amazon Bedrock, Code Generation, AI, Developer Tools
+Tags: AWS, Amazon Bedrock, Code Generation, AI, Developer Tool
 
 Description: Practical guide to using Amazon Bedrock for generating, reviewing, and refactoring code with foundation models in your development workflows.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Explain, Query Optimization, Performance, Select
+Tags: MySQL, EXPLAIN, Query Optimization, Performance, SELECT
 
 Description: Learn how to use EXPLAIN with SELECT queries in MySQL to understand the execution plan and identify performance bottlenecks.
 
@@ -64,7 +64,7 @@ WHERE customer_id = 42 AND status = 'pending';
 ```
 
 Example output:
-```
+```text
 id | select_type | table  | type | possible_keys          | key                | rows | Extra
  1 | SIMPLE      | orders | ref  | idx_customer_id,status | idx_customer_id    |   15 | Using where
 ```

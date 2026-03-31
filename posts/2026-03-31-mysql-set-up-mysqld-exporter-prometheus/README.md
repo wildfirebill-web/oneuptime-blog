@@ -93,7 +93,7 @@ curl -s http://localhost:9104/metrics | head -40
 
 You should see output like:
 
-```
+```text
 # HELP mysql_global_status_connections Total number of connections
 # TYPE mysql_global_status_connections counter
 mysql_global_status_connections 1234
@@ -126,7 +126,7 @@ systemctl reload prometheus
 
 Once scraping is active, these are the most important metrics:
 
-```
+```text
 mysql_global_status_threads_connected       # Active connections
 mysql_global_status_slow_queries            # Slow query count
 mysql_global_status_innodb_buffer_pool_reads # Buffer pool disk reads
@@ -136,7 +136,7 @@ mysql_global_variables_max_connections      # Max connections setting
 
 Query them in Prometheus:
 
-```
+```text
 rate(mysql_global_status_queries[5m])
 mysql_global_status_threads_connected / mysql_global_variables_max_connections * 100
 ```

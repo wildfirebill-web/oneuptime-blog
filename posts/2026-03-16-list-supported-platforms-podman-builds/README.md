@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, Build
+Tags: Podman, Container, DevOps, Multi-Architecture, Build
 
 Description: Learn how to discover which platforms and architectures are available for Podman builds by checking QEMU registrations, base image support, and system capabilities.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Samba, File Sharing, Permissions, Security
+Tags: Ubuntu, Samba, File Sharing, Permission, Security
 
 Description: Configure fine-grained Samba share permissions on Ubuntu using Linux filesystem permissions, smb.conf access controls, and Windows ACL integration.
 

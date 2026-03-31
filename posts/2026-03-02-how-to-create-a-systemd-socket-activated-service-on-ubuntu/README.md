@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Systemd, Services, Linux, Networking
+Tags: Ubuntu, Systemd, Service, Linux, Networking
 
 Description: Configure systemd socket activation on Ubuntu to start services on demand when connections arrive, reducing resource usage and improving boot time for network services.
 

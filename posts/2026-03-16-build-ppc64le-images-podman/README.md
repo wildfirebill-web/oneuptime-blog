@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, ppc64le, IBM Power
+Tags: Podman, Container, DevOps, Multi-Architecture, ppc64le, IBM Power
 
 Description: Learn how to build container images targeting the ppc64le (IBM Power) architecture using Podman, including cross-compilation techniques and QEMU emulation setup.
 

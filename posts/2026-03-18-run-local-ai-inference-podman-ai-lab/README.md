@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, AI, Machine Learning, Inference, LLM, Local AI
+Tags: Podman, Container, DevOps, AI, Machine Learning, Inference, LLM, Local AI
 
 Description: Learn how to run AI inference locally using Podman AI Lab to process prompts and generate text without cloud APIs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Linux, Troubleshooting, DevOps
+Tags: Podman, Container, Linux, Troubleshooting, DevOps
 
 Description: Learn how to diagnose and fix 'too many open files' errors in Podman containers by adjusting ulimits, tuning kernel parameters, and configuring container runtime settings.
 

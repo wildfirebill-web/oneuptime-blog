@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Google Chat, Notifications
+Tags: ArgoCD, GitOps, Kubernetes, Google Chat, Notification
 
 Description: Learn how to configure ArgoCD to send deployment notifications to Google Chat spaces using incoming webhooks with card-formatted messages.
 

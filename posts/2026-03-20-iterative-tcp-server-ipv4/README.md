@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, TCP, Sockets, Iterative Server, C, POSIX, Networking
+Tags: IPv4, TCP, Socket, Iterative Server, C, POSIX, Networking
 
 Description: Learn how to build an iterative (single-threaded, one-at-a-time) IPv4 TCP server in C and Python - the simplest possible server architecture, ideal for understanding the socket API and...
 

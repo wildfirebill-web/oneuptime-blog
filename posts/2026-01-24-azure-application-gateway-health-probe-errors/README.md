@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Application Gateway, Health Probes, Load Balancing, Networking, Troubleshooting
+Tags: Azure, Application Gateway, Health Probe, Load Balancing, Networking, Troubleshooting
 
 Description: A practical guide to diagnosing and fixing Azure Application Gateway health probe failures that cause backend pool unhealthy states.
 

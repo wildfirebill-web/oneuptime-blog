@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Upgrade, Multi-Cluster, Kubernetes, Operations
+Tags: Istio, Upgrade, Multi-Cluster, Kubernetes, Operation
 
 Description: Step-by-step process for safely upgrading Istio across a multi-cluster mesh using canary upgrades and revision-based deployment strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, X-Ray, Tracing, Distributed Systems, Observability
+Tags: AWS, X-Ray, Tracing, Distributed System, Observability
 
 Description: A hands-on guide to setting up AWS X-Ray distributed tracing in your application to track requests across services and identify performance issues.
 

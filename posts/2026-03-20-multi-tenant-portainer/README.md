@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Multi-Tenant, Teams, Access Control, Enterprise
+Tags: Portainer, Docker, Multi-Tenant, Team, Access Control, Enterprise
 
 Description: Configure Portainer for multiple teams with isolated environments, role-based access control, and resource quotas so each tenant manages their own containers securely.
 

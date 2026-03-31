@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Monitoring, INFO Command, Operations, Observability
+Tags: Redis, Monitoring, INFO Command, Operation, Observability
 
 Description: A comprehensive guide to the Redis INFO command sections - server, clients, memory, stats, replication, CPU, and keyspace - with key metrics to watch.
 

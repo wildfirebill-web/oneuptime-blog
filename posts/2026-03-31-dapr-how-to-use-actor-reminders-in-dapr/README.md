@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Actors, Reminders, Scheduled Tasks, Microservices
+Tags: Dapr, Actor, Reminder, Scheduled Task, Microservice
 
 Description: Learn how to use actor reminders in Dapr to schedule durable, persisted callbacks that survive actor deactivation and application restarts.
 

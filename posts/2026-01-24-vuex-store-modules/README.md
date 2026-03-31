@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vue, Vuex, State Management, Modules, JavaScript, TypeScript, Architecture
+Tags: Vue, Vuex, State Management, Module, JavaScript, TypeScript, Architecture
 
 Description: A comprehensive guide to configuring Vuex store modules for scalable Vue.js applications, covering namespacing, nested modules, and best practices.
 

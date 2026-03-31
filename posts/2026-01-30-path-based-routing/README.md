@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: API Gateway, Routing, Microservices, Infrastructure
+Tags: API Gateway, Routing, Microservice, Infrastructure
 
 Description: Learn how to configure path-based routing rules to direct traffic to different backend services based on URL paths.
 

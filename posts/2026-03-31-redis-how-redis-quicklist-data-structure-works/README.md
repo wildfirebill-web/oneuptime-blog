@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Quicklist, Lists, Internals, Data Structures, Memory
+Tags: Redis, Quicklist, List, Internal, Data Structure, Memory
 
 Description: Understand Redis quicklist - the doubly linked list of listpack nodes used for List encoding, and how it balances memory efficiency with O(1) head/tail operations.
 

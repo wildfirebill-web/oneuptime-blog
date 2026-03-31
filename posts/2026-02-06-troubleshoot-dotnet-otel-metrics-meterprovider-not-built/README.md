@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, .NET, Metrics, MeterProvider
+Tags: OpenTelemetry, .NET, Metric, MeterProvider
 
 Description: Diagnose and fix OpenTelemetry metrics not exporting in .NET applications when the MeterProvider is not properly built.
 

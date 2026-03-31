@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Code Coverage, Testing, DevOps, Quality Assurance
+Tags: GitHub Action, CI/CD, Code Coverage, Testing, DevOps, Quality Assurance
 
 Description: Learn how to set up comprehensive code coverage reports in GitHub Actions with PR comments, badges, and coverage tracking over time.
 

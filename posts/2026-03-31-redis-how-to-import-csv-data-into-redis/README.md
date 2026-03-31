@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Csv, Data Import, Pipeline, Node.js
+Tags: Redis, CSV, Data Import, Pipeline, Node.js
 
 Description: Import CSV files into Redis efficiently using pipelining and batch processing, with strategies for Strings, Hashes, and Sets based on data structure.
 

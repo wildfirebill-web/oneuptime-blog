@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ad Hoc Commands, Variables, Automation
+Tags: Ansible, Ad Hoc Commands, Variable, Automation
 
 Description: Learn how to pass extra variables to Ansible ad hoc commands using the -e flag for dynamic and flexible command execution.
 

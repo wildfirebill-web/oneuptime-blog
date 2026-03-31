@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Systemd, Kubernetes, YAML
+Tags: Podman, Container, DevOps, Quadlet, Systemd, Kubernetes, YAML
 
 Description: Learn how to create a Quadlet .kube unit file to run Kubernetes YAML manifests as systemd services using podman kube play.
 

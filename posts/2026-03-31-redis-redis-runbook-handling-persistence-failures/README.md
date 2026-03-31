@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Persistence, Runbook, RDB, AOF, Operations, Incident Response
+Tags: Redis, Persistence, Runbook, RDB, AOF, Operation, Incident Response
 
 Description: A step-by-step operational runbook for diagnosing and recovering from Redis persistence failures, covering RDB snapshot errors and AOF write failures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Monitoring, Prometheus, Grafana, Metrics, Performance
+Tags: IPv6, Monitoring, Prometheus, Grafana, Metric, Performance
 
 Description: Collect, store, and visualize IPv6 performance metrics over time using Prometheus exporters, node_exporter, and Grafana dashboards.
 

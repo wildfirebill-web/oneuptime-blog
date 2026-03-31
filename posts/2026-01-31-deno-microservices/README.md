@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Deno, Microservices, Docker, Distributed Systems
+Tags: Deno, Microservice, Docker, Distributed System
 
 Description: A comprehensive guide to building production-ready microservices with Deno. Learn service communication, API gateway pattern, health checks, logging, tracing, and Docker deployment.
 

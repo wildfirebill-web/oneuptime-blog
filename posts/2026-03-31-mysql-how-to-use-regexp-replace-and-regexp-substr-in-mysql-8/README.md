@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Regular Expressions, REGEXP_REPLACE, REGEXP_SUBSTR, String Functions
+Tags: MySQL, Regular Expression, REGEXP_REPLACE, REGEXP_SUBSTR, String Function
 
 Description: Learn how to use REGEXP_REPLACE() and REGEXP_SUBSTR() in MySQL 8 to clean, extract, and transform text using regular expression patterns.
 

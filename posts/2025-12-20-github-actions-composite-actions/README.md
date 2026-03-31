@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Composite Actions, Reusability, DRY, DevOps
+Tags: GitHub Action, CI/CD, Composite Actions, Reusability, DRY, DevOps
 
 Description: Learn how to create and use composite actions in GitHub Actions to encapsulate reusable workflow logic, reduce duplication, and build a library of standardized CI/CD components for your organization.
 

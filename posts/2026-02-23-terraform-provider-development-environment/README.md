@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Provider Development, Go, DevOps, Development Environments
+Tags: Terraform, Provider Development, Go, DevOps, Development Environment
 
 Description: Learn how to set up a complete development environment for building Terraform providers, including Go tooling, debugging, testing, and local provider installation.
 

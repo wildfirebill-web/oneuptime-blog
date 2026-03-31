@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Uninstall, DevOps, Linux
+Tags: k3s, Kubernetes, Uninstall, DevOps, Linux
 
 Description: Step-by-step instructions for completely removing the K3s agent from a worker node, including cleanup of services, binaries, and network configuration.
 

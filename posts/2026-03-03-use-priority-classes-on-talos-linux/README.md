@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Priority Classes, Kubernetes, Pod Scheduling, Resource Management, Preemption
+Tags: Talos Linux, Priority Class, Kubernetes, Pod Scheduling, Resource Management, Preemption
 
 Description: Learn how to configure and use Kubernetes PriorityClasses on Talos Linux to ensure critical workloads always get scheduled, even during resource contention.
 

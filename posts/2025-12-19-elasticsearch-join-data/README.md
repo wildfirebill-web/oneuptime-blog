@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Data Modeling, Nested Objects, Parent-Child, Denormalization, Query
+Tags: Elasticsearch, Data Modeling, Nested Object, Parent-Child, Denormalization, Query
 
 Description: Learn how to handle relationships and join data in Elasticsearch using nested objects, parent-child relationships, application-side joins, and denormalization strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, User Experience, SRE
+Tags: Observability, Metric, User Experience, SRE
 
 Description: Learn how to implement user-centric metrics for monitoring real user experience and satisfaction.
 

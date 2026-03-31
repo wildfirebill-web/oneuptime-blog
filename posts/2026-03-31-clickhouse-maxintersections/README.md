@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Aggregation, maxIntersections, Interval Overlap, Scheduling, Capacity Planning
+Tags: ClickHouse, Aggregate Function, maxIntersections, Interval Overlap, Capacity Planning, Scheduling
 
 Description: Learn how maxIntersections() computes the maximum number of simultaneously overlapping intervals in ClickHouse for capacity planning and conflict detection.
 

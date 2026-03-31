@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, PromQL, Queries, Logical Operators, Monitoring, Observability, Metrics
+Tags: Prometheus, PromQL, Queries, Logical Operator, Monitoring, Observability, Metric
 
 Description: Learn how to implement OR logical operators in Prometheus queries using the or operator and regex label matchers. This guide covers practical examples for combining multiple conditions in PromQL.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API Gateway, Kong, APISIX, Kubernetes, Microservices, Networking
+Tags: API Gateway, Kong, APISIX, Kubernetes, Microservice, Networking
 
 Description: A practical guide to configuring API gateways for microservices, covering Kong and Apache APISIX setup, authentication, rate limiting, and traffic management patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, YAML, Docker Compose, Stacks, DevOps
+Tags: Portainer, YAML, Docker Compose, Stack, DevOps
 
 Description: Reduce YAML duplication in Portainer stacks using YAML anchors and aliases for DRY configuration.
 

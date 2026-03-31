@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Podman, Troubleshooting, Sockets, Connectivity, API
+Tags: Portainer, Podman, Troubleshooting, Socket, Connectivity, API
 
 Description: Learn how to diagnose and fix Podman socket connection issues when Portainer cannot communicate with the Podman API, including socket permissions and service configuration.
 

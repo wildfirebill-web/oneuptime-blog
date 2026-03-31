@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, IPvlan, Docker Networking, L2 Mode, LAN Access, Networks
+Tags: Portainer, IPvlan, Docker Networking, L2 Mode, LAN Access, Network
 
 Description: Learn how to configure Docker IPvlan L2 mode in Portainer so containers share the host's MAC address while getting unique IP addresses on the LAN.
 

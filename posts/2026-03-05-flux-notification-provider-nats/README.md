@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Notifications, NATS, Messaging, Event Streaming
+Tags: Flux CD, GitOps, Kubernetes, Notification, NATS, Messaging, Event Streaming
 
 Description: Learn how to configure Flux CD's notification controller to publish deployment and reconciliation events to NATS subjects using the Provider resource.
 

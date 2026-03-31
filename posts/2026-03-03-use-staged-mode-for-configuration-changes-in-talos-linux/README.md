@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Staged Configuration, Operations, Maintenance, Kubernetes
+Tags: Talos Linux, Staged Configuration, Operation, Maintenance, Kubernetes
 
 Description: Learn how to use staged mode in Talos Linux to prepare configuration changes that take effect at the next reboot during planned maintenance windows.
 

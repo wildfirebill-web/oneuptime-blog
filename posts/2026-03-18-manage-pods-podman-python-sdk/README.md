@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Python, SDK, Pods, Kubernetes
+Tags: Podman, Python, SDK, Pod, Kubernetes
 
 Description: Learn how to create, manage, and inspect pods using the Podman Python SDK, including adding containers to pods, port mapping, and Kubernetes YAML generation.
 

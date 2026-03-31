@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Terraform, Kubernetes, Component, Infrastructure As Code
+Tags: Dapr, Terraform, Kubernetes, Component, Infrastructure as Code
 
 Description: Manage Dapr component manifests (state stores, pub/sub, bindings) with Terraform using the Kubernetes provider for version-controlled component lifecycle management.
 

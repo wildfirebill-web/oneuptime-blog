@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Replace, Force Recreation, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resource, Replace, Force Recreation, Infrastructure as Code, DevOps
 
 Description: A guide to using the -replace flag in OpenTofu to force specific resources to be destroyed and recreated during apply.
 

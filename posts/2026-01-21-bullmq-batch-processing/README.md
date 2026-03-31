@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BullMQ, Node.js, Redis, Batch Processing, Bulk Operations, Performance, Job Queue
+Tags: BullMQ, Node.js, Redis, Batch Processing, Bulk Operation, Performance, Job Queue
 
 Description: A comprehensive guide to batch processing with BullMQ, including bulk job operations, grouping jobs for batch processing, optimizing throughput, and implementing efficient data processing patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Performance, max_connections, Connections, Tuning
+Tags: MySQL, Performance, max_connections, Connection, Tuning
 
 Description: Learn how to set MySQL max_connections correctly, calculate the right value for your server's RAM, handle connection errors, and monitor connection utilization.
 

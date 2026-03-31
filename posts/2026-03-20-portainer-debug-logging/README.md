@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Debugging, Logging, Troubleshooting, Diagnostics
+Tags: Portainer, Debugging, Logging, Troubleshooting, Diagnostic
 
 Description: A guide to enabling and using debug logging in Portainer for troubleshooting issues and diagnosing problems.
 

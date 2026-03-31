@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ARP, ARP Table, Overflow, Switch, Router, Networks
+Tags: ARP, ARP Table, Overflow, Switch, Router, Network
 
 Description: Learn how to detect and fix ARP table overflow on switches and routers, where the hardware ARP table becomes full and new address resolutions fail, causing intermittent connectivity.
 

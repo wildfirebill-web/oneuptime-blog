@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Debugging, DevOps
+Tags: Portainer, Docker, Image, Debugging, DevOps
 
 Description: Learn how to inspect Docker image details, layers, and metadata in Portainer to understand image composition and diagnose issues.
 

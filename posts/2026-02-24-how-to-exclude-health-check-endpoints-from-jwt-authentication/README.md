@@ -1,6 +1,6 @@
 # How to Exclude Health Check Endpoints from JWT Authentication
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, JWT, Authentication, Kubernetes, Health Check, Security
 

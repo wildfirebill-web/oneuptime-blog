@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, ENV, Environment Variables, Configuration
+Tags: Podman, Containerfile, ENV, Environment Variable, Configuration
 
 Description: Learn how to use the ENV instruction in Podman Containerfiles to configure environment variables for both build-time and runtime, with best practices for security and maintainability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kafka, Messaging, Transactions, Data Consistency
+Tags: Kafka, Messaging, Transaction, Data Consistency
 
 Description: Achieve exactly-once semantics in Kafka with idempotent producers, transactional messaging, and consumer offset management.
 

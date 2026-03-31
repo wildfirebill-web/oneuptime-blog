@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SOUNDEX, String Functions, Fuzzy Search, Phonetic Matching
+Tags: MySQL, SOUNDEX, String Function, Fuzzy Search, Phonetic Matching
 
 Description: Learn how to use the SOUNDEX() function in MySQL to perform phonetic searches that match words that sound similar, even with different spellings.
 

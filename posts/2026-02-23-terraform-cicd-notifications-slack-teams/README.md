@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CI/CD, Slack, Microsoft Teams, Notifications, DevOps
+Tags: Terraform, CI/CD, Slack, Microsoft Teams, Notification, DevOps
 
 Description: Configure Terraform CI/CD pipeline notifications for Slack and Microsoft Teams including plan summaries, apply results, drift alerts, and failure notifications.
 

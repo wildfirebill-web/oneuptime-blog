@@ -1,8 +1,8 @@
 # ClickHouse vs CrateDB for IoT Data
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, CrateDB, IoT, Database, Analytics, Time-series
+Tags: ClickHouse, CrateDB, IoT, Database, Analytics, Time-Series
 
 Description: A balanced comparison of ClickHouse and CrateDB for IoT data workloads, covering ingestion speed, storage efficiency, query performance, and operational complexity.
 

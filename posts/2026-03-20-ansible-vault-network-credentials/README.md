@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Vault, Security, Credentials, Network Automation
+Tags: Ansible, Vault, Security, Credential, Network Automation
 
 Description: Learn how to use Ansible Vault to encrypt network device credentials in your inventory and playbooks, preventing password exposure in source control.
 

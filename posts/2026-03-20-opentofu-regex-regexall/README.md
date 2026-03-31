@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Functions
+Tags: OpenTofu, Terraform, IaC, Function
 
 Description: Learn how to use the regex() and regexall() functions in OpenTofu to match and extract patterns from strings.
 

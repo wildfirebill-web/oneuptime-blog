@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Check, Failure Handling
+Tags: Podman, Container, DevOps, Health Check, Failure Handling
 
 Description: Learn how to use the --health-on-failure option in Podman to automatically take action when a container becomes unhealthy.
 

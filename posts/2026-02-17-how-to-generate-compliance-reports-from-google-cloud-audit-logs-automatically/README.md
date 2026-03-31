@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Compliance, Audit Logs, Automation, Google Cloud Security
+Tags: GCP, Compliance, Audit Log, Automation, Google Cloud Security
 
 Description: Learn how to automatically generate compliance reports from Google Cloud audit logs using BigQuery, Cloud Functions, and scheduled queries for regulatory requirements.
 

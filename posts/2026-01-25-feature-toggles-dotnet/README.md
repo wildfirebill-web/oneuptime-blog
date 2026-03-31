@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, Feature Toggle, Feature Flags, Configuration
+Tags: .NET, C#, Feature Toggle, Feature Flag, Configuration
 
 Description: Learn how to implement feature toggles in .NET applications using Microsoft.FeatureManagement.
 

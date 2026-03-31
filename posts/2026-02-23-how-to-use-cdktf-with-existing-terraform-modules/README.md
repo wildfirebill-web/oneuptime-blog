@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CDKTF, Modules, Infrastructure as Code, Reusability
+Tags: Terraform, CDKTF, Module, Infrastructure as Code, Reusability
 
 Description: Learn how to use existing Terraform modules from the registry and local sources in your CDKTF projects with full type safety and autocompletion.
 

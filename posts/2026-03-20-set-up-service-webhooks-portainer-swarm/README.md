@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Webhooks, Services, CI/CD
+Tags: Portainer, Docker Swarm, Webhook, Service, CI/CD
 
 Description: Configure service-level webhooks in Portainer to trigger automated Swarm service updates from CI/CD pipelines.
 

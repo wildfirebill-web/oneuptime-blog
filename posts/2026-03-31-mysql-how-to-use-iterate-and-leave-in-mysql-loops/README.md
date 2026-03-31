@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, ITERATE, LEAVE, Loops, Stored Procedures, Control Flow
+Tags: MySQL, ITERATE, LEAVE, Loop, Stored Procedure, Control Flow
 
 Description: Learn how to use ITERATE to continue to the next loop iteration and LEAVE to exit loops early in MySQL stored procedures.
 

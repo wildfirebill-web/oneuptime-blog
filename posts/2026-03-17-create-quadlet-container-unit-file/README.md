@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Systemd, Unit Files
+Tags: Podman, Container, DevOps, Quadlet, Systemd, Unit Files
 
 Description: Learn how to create a Quadlet .container unit file to run Podman containers as systemd services with automatic startup and restart.
 

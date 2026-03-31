@@ -1,8 +1,8 @@
 # How to Add Shards to a MongoDB Cluster
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sharding, Cluster, Scalability, Operations
+Tags: MongoDB, Sharding, Cluster, Scalability, Operation
 
 Description: Learn how to add new shards to a running MongoDB sharded cluster, verify balancer activity, and confirm that chunks migrate to the new shard.
 

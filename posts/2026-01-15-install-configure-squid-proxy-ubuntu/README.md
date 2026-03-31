@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Squid, Proxy, Caching, Networks, Tutorial
+Tags: Ubuntu, Squid, Proxy, Caching, Network, Tutorial
 
 Description: Complete guide to setting up Squid as a forward proxy, caching server, or access control gateway on Ubuntu.
 

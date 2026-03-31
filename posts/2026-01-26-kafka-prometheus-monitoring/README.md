@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Prometheus, Monitoring, Observability, Metrics
+Tags: Kafka, Prometheus, Monitoring, Observability, Metric
 
 Description: Set up comprehensive Kafka monitoring with Prometheus, including broker metrics, consumer lag tracking, and alerting for production reliability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Volumes, Storage, Data Sharing
+Tags: Podman, Container, DevOps, Volumes, Storage, Data Sharing
 
 Description: Learn how to share data between Podman containers using named volumes, including patterns for producer-consumer workflows, sidecar containers, and data processing pipelines.
 

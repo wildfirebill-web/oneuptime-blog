@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Filter, Data Transformation, Lists
+Tags: Ansible, Filter, Data Transformation, List
 
 Description: Learn how to use the zip filter in Ansible to combine parallel lists into pairs, create dictionaries, and iterate over multiple lists simultaneously.
 

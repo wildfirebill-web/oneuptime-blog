@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Kubernetes, Redis Operator, Operators, High Availability
+Tags: Redis, Kubernetes, Redis Operator, Operator, High Availability
 
 Description: Learn how to deploy the Redis Operator in Kubernetes to manage Redis clusters, replication, and Sentinel configurations declaratively via custom resources.
 

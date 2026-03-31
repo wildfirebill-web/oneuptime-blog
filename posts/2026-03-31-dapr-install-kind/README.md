@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, KiND, Kubernetes, Installation, Local Development
+Tags: Dapr, Kind, Kubernetes, Installation, Local Development
 
 Description: Install Dapr on a KiND (Kubernetes in Docker) cluster for fast local development and CI pipeline testing of Dapr-enabled microservices.
 

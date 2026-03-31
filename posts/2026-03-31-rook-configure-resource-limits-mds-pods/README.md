@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, MDS, CephFS, Resources, Pod
+Tags: Rook, Ceph, Kubernetes, MDS, CephFS, Resource, Pod
 
 Description: Configure CPU and memory resource limits for Rook-Ceph MDS (metadata server) pods to ensure CephFS performance, prevent cache eviction, and support multi-filesystem deployments.
 

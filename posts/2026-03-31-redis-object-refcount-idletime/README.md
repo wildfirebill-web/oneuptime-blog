@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, OBJECT REFCOUNT, OBJECT IDLETIME, Internals, Memory, Eviction
+Tags: Redis, OBJECT REFCOUNT, OBJECT IDLETIME, Internal, Memory, Eviction
 
 Description: Learn how to use OBJECT REFCOUNT and OBJECT IDLETIME in Redis to inspect key reference counts and last access time for memory debugging and LRU eviction insights.
 

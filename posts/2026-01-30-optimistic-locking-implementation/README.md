@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Database, Concurrency, Locking, Transactions, Data Integrity
+Tags: Database, Concurrency, Locking, Transaction, Data Integrity
 
 Description: Implement optimistic locking with version numbers and timestamps for concurrent data access without database-level locks.
 

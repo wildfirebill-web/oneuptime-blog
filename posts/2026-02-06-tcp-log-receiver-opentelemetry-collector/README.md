@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, TCP, Logs, Network Logging, Observability
+Tags: OpenTelemetry, Collector, TCP, Log, Network Logging, Observability
 
 Description: Complete guide to configuring the TCP Log receiver in OpenTelemetry Collector. Learn about connection handling, parsing strategies, and production deployment patterns.
 

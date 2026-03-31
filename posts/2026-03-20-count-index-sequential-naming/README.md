@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Count, Naming, Resources, Infrastructure as Code
+Tags: OpenTofu, HCL, Count, Naming, Resource, Infrastructure as Code
 
 Description: Learn how to use count.index in OpenTofu to create sequentially named resources like subnets, instances, and security groups.
 

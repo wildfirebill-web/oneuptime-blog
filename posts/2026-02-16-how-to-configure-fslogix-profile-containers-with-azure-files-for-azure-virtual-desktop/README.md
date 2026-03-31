@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Virtual Desktop, FSLogix, Azure Files, Profile Management, VDI, User Profiles
+Tags: Azure, Virtual Desktop, FSLogix, Azure Files, Profile Management, VDI, User Profile
 
 Description: Learn how to configure FSLogix profile containers with Azure Files for Azure Virtual Desktop to provide fast and persistent user profiles across sessions.
 

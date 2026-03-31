@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenVPN, IPv6, Dual-Stack, VPN, Client Configuration, Networks
+Tags: OpenVPN, IPv6, Dual-Stack, VPN, Client Configuration, Network
 
 Description: A guide to configuring OpenVPN for dual-stack clients that can connect using either IPv4 or IPv6 and receive both IPv4 and IPv6 tunnel addresses.
 

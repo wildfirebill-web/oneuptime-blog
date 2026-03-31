@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Feature Flags, A/B Testing, Configuration, Python, Node.js
+Tags: Redis, Feature Flag, A/B Testing, Configuration, Python, Node.js
 
 Description: A comprehensive guide to implementing feature flags with Redis, covering boolean flags, percentage rollouts, user targeting, A/B testing, and production best practices.
 

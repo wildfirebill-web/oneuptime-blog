@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Binary Log, Mysqlbinlog, Point-In-Time Recovery, Replication
+Tags: MySQL, Binary Log, Mysqlbinlog, Point-in-Time Recovery, Replication
 
 Description: Learn how to use the mysqlbinlog tool to read, filter, and replay MySQL binary log files for auditing and point-in-time recovery.
 

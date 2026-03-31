@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Consul, Service Mesh, HashiCorp, Metrics, Observability, Microservices, Monitoring
+Tags: OpenTelemetry, Consul, Service Mesh, HashiCorp, Metric, Observability, Microservice, Monitoring
 
 Description: Learn how to monitor HashiCorp Consul service mesh health, service discovery, and connect proxy performance using OpenTelemetry.
 

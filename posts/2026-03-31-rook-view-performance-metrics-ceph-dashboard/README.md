@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Dashboard, Performance, Metrics, Monitoring
+Tags: Rook, Ceph, Dashboard, Performance, Metric, Monitoring
 
 Description: Navigate and interpret Ceph Dashboard performance metrics including OSD latency histograms, pool throughput, client I/O graphs, and PG recovery statistics.
 

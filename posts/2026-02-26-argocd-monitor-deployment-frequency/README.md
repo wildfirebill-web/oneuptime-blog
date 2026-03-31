@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, DORA Metrics, Monitoring
+Tags: ArgoCD, GitOps, Kubernetes, DORA Metric, Monitoring
 
 Description: Learn how to track and monitor deployment frequency in ArgoCD using Prometheus metrics, custom queries, and dashboards to measure your team's delivery velocity.
 

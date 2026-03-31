@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, toTypeName, Type Inspection, Schema, Sql
+Tags: ClickHouse, toTypeName, Type Inspection, Schema, SQL
 
 Description: Learn how to use toTypeName() in ClickHouse to inspect the data type of any expression or column at query time for debugging and schema validation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Network Security, Security Groups, NACLs, VPC, AWS Config, Infrastructure as Code
+Tags: OpenTofu, Network Security, Security Group, NACLs, VPC, AWS Config, Infrastructure as Code
 
 Description: Learn how to enforce network security policies using OpenTofu, including security group validation, VPC flow logs, AWS Config network rules, and default VPC remediation.
 

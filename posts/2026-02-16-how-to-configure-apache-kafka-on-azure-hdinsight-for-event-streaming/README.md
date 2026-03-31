@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Azure HDInsight, Event Streaming, Message Broker, Distributed Systems, Azure Cloud, Data Pipelines
+Tags: Apache Kafka, Azure HDInsight, Event Streaming, Message Broker, Distributed System, Azure Cloud, Data Pipeline
 
 Description: A hands-on guide to setting up and configuring Apache Kafka on Azure HDInsight for building reliable event streaming pipelines.
 

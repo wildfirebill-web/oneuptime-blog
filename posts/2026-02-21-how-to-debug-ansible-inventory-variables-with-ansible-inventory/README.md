@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Inventory, Debugging, Variables, DevOps
+Tags: Ansible, Inventory, Debugging, Variable, DevOps
 
 Description: Learn how to use the ansible-inventory command to inspect, debug, and trace variable resolution in your Ansible inventory for troubleshooting configuration issues.
 

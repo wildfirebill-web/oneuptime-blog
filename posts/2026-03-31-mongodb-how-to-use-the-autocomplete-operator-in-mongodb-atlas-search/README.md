@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Atlas Search, Autocomplete, Search
+Tags: MongoDB, Atlas Search, Autocomplete, Search
 
 Description: Learn how to implement autocomplete search in MongoDB Atlas Search using the autocomplete operator with edge n-gram tokenization for fast, prefix-based suggestions.
 

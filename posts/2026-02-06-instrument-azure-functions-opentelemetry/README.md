@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Azure Functions, Serverless, Observability, Azure, Tracing, .NET, Python, Node.js
+Tags: OpenTelemetry, Azure Function, Serverless, Observability, Azure, Tracing, .NET, Python, Node.js
 
 Description: Learn how to add OpenTelemetry instrumentation to Azure Functions for distributed tracing, metrics, and logs across your serverless workloads.
 

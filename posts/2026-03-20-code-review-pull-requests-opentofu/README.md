@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Code Review, Pull Requests, GitHub Actions, CI/CD, Team Workflows, Infrastructure as Code
+Tags: OpenTofu, Code Review, Pull Requests, GitHub Action, CI/CD, Team Workflows, Infrastructure as Code
 
 Description: Learn how to establish an effective code review workflow for OpenTofu infrastructure changes, including automated plan comments on PRs, required reviewers, and review checklists.
 

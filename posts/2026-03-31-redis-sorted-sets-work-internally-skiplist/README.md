@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Set, Skiplist, Listpack, Internals
+Tags: Redis, Sorted Set, Skiplist, Listpack, Internal
 
 Description: Learn how Redis sorted sets use listpack for small collections and a skiplist plus hashtable for large ones, enabling O(log n) range queries.
 

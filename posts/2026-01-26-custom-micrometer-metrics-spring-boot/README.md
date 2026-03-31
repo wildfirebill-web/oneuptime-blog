@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Micrometer, Metrics, Observability, Prometheus, Monitoring, Performance
+Tags: Java, Spring Boot, Micrometer, Metric, Observability, Prometheus, Monitoring, Performance
 
 Description: Learn how to create custom Micrometer metrics in Spring Boot to monitor business KPIs and application performance.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, Mustache, DevOps
+Tags: Portainer, Docker, Template, Mustache, DevOps
 
 Description: Learn how to use Mustache syntax to create dynamic, configurable template variables in Portainer custom templates.
 

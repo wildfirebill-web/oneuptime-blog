@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootfs, Container Images
+Tags: Podman, Container, DevOps, Rootfs, Container Image
 
 Description: Learn how to create and run a Podman container directly from a root filesystem directory without a traditional container image.
 

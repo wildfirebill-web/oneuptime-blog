@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Terraform, Kubernetes, Infrastructure As Code, Deployment
+Tags: Dapr, Terraform, Kubernetes, Infrastructure as Code, Deployment
 
 Description: Step-by-step guide to deploying Dapr on Kubernetes using Terraform with the Helm provider for repeatable, version-controlled infrastructure.
 

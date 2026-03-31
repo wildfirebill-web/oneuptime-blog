@@ -1,8 +1,8 @@
 # How to Handle MongoDB Disk Full Situations
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Disk, Operations, Recovery, Administration
+Tags: MongoDB, Disk, Operation, Recovery, Administration
 
 Description: Learn how to respond when MongoDB runs out of disk space, free space safely, prevent data corruption, and set up alerts to avoid future disk full incidents.
 

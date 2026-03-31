@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, VOLUME, Data Persistence, Storage
+Tags: Podman, Containerfile, Volume, Data Persistence, Storage
 
 Description: Learn how to use the VOLUME instruction in Podman Containerfiles to manage persistent data, understand volume types, and implement data persistence patterns for containerized applications.
 

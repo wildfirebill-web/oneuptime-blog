@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Performance, Profiling, System Tables, Trace Log, Debugging
+Tags: ClickHouse, Performance, Profiling, System Table, Trace Log, Debugging
 
 Description: Learn how to use system.trace_log in ClickHouse for CPU profiling, memory sampling, and identifying hot code paths in slow queries.
 

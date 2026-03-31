@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Pipelines, Azure Functions, Deployment Slots, Staging, Swap Deployment, CI/CD, Serverless
+Tags: Azure Pipelines, Azure Function, Deployment Slots, Staging, Swap Deployment, CI/CD, Serverless
 
 Description: Learn how to configure Azure Pipelines to deploy Azure Functions to staging slots and use swap deployment for zero-downtime production releases.
 

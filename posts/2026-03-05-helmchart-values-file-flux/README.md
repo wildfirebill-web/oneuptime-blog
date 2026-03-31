@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Values, Configuration, ConfigMaps
+Tags: Flux CD, GitOps, Kubernetes, Helm, HelmRelease, Value, Configuration, ConfigMap
 
 Description: Learn how to configure Helm chart values in Flux CD using inline values, valuesFrom references, ConfigMaps, Secrets, and multi-environment strategies.
 

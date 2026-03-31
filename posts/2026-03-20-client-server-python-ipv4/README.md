@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, TCP, IPv4, Client-Server, Networking, Sockets
+Tags: Python, TCP, IPv4, Client-Server, Networking, Socket
 
 Description: Learn how to implement the fundamental client-server pattern with IPv4 TCP in Python, covering connection handling, length-prefixed framing, concurrent servers, and graceful shutdown.
 

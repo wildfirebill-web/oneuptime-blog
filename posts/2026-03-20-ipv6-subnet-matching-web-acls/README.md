@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ACL, Web Applications, Python, Subnets, CIDR, Security
+Tags: IPv6, ACL, Web Application, Python, Subnets, CIDR, Security
 
 Description: Implement IPv6 subnet matching in web application access control lists using Python ipaddress module for CIDR-based allow/deny rules.
 

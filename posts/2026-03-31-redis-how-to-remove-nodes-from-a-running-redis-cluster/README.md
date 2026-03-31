@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, Operations, Node Management, Scaling
+Tags: Redis, Cluster, Operation, Node Management, Scaling
 
 Description: A step-by-step guide to safely removing primary and replica nodes from a running Redis Cluster, including slot migration and cluster cleanup.
 

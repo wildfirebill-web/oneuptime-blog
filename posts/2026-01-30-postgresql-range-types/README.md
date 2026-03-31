@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: PostgreSQL, Range Types, Data Types, Temporal Data
+Tags: PostgreSQL, Range Types, Data Type, Temporal Data
 
 Description: Learn to implement range types for intervals, time periods, and numeric ranges with operators, indexes, and exclusion constraints.
 

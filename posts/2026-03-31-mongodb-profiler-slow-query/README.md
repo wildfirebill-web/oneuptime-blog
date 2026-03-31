@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Performance, Profiling, Query Optimization, Operations
+Tags: MongoDB, Performance, Profiling, Query Optimization, Operation
 
 Description: Learn how to enable and use the MongoDB database profiler to capture slow queries, analyze execution stats, and identify performance bottlenecks in your collections.
 

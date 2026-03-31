@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Audit Logging, Security, Compliance, Change Streams
+Tags: MongoDB, Audit Logging, Security, Compliance, Change Stream
 
 Description: Implement audit logging in MongoDB to track who made what changes and when, for security, compliance, and debugging using Change Streams and middleware.
 

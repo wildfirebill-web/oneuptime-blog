@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Lens, Kubernetes, Comparison, Developer Tools
+Tags: Portainer, Lens, Kubernetes, Comparison, Developer Tool
 
 Description: Evaluate Portainer and Lens IDE for Kubernetes management to choose the best tool for your platform engineering team.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Ambient Mode, Upgrade, Kubernetes, Operations
+Tags: Istio, Ambient Mode, Upgrade, Kubernetes, Operation
 
 Description: Step-by-step guide to upgrading Istio ambient mode installations including istiod, ztunnel, istio-cni, and waypoint proxies.
 

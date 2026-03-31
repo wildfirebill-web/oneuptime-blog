@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, NATS, Messaging, Docker, Microservices
+Tags: Portainer, NATS, Messaging, Docker, Microservice
 
 Description: Deploy NATS high-performance messaging system using Portainer for cloud-native microservices communication.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Lists, Data Structures, Deduplication, Performance
+Tags: Python, List, Data Structure, Deduplication, Performance
 
 Description: Learn multiple methods to remove duplicate elements from lists in Python, from simple set conversions to order-preserving techniques and handling complex objects.
 

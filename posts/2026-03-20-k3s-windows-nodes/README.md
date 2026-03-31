@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Window, Mixed Cluster, DevOps, Containers
+Tags: k3s, Kubernetes, Window, Mixed Cluster, DevOps, Container
 
 Description: Learn how to add Windows worker nodes to a K3s cluster to run Windows containerized workloads alongside Linux pods.
 

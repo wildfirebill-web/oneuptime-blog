@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Idempotency, Reliability, Distributed Systems, Transactions
+Tags: MongoDB, Idempotency, Reliability, Distributed System, Transaction
 
 Description: Implement idempotent operations in MongoDB to safely retry failed requests without creating duplicate data or performing operations multiple times.
 

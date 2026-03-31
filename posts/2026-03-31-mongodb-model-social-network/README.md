@@ -1,8 +1,8 @@
 # How to Model a Social Network with Followers in MongoDB
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data modeling, Social network, Schema design, Graph
+Tags: MongoDB, Data Modeling, Social Network, Schema Design, Graph
 
 Description: Learn how to design a MongoDB schema for a social network with followers, feeds, posts, and notifications, choosing the right patterns for scale and query performance.
 

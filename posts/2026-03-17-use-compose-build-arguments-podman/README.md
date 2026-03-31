@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, podman-compose, Build, Arguments
+Tags: Podman, Container, DevOps, podman-compose, Build, Argument
 
 Description: Learn how to pass build arguments to Containerfiles through podman-compose for parameterized image builds.
 

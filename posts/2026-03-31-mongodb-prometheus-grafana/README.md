@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Prometheus, Grafana, Monitoring, Observability, Operations
+Tags: MongoDB, Prometheus, Grafana, Monitoring, Observability, Operation
 
 Description: A step-by-step guide to monitoring MongoDB with Prometheus and Grafana, covering mongodb_exporter setup, key metrics, alerting rules, and dashboard configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Lookup Plugins, Variables, Dynamic Playbooks
+Tags: Ansible, Lookup Plugins, Variable, Dynamic Playbooks
 
 Description: Learn how to use the Ansible vars lookup plugin to dynamically resolve variable names at runtime and build flexible, data-driven playbooks.
 

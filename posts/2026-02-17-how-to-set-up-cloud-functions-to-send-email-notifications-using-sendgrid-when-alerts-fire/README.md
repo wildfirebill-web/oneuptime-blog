@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Functions, SendGrid, Email, Notifications
+Tags: GCP, Cloud Function, SendGrid, Email, Notification
 
 Description: Build a Cloud Function that sends email notifications through SendGrid when monitoring alerts fire, with support for templates, throttling, and multiple recipients.
 

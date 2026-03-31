@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMaps, YAML, DevOps
+Tags: Portainer, Kubernetes, ConfigMap, YAML, DevOps
 
 Description: Learn how to create Kubernetes ConfigMaps using YAML manifests in Portainer's editor for complex configurations, configuration files, and GitOps workflows.
 

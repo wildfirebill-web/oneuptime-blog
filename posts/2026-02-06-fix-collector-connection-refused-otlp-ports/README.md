@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Troubleshooting, OTLP, Networks, Configuration
+Tags: OpenTelemetry, Collector, Troubleshooting, OTLP, Network, Configuration
 
 Description: A practical guide to diagnosing and fixing connection refused errors on OpenTelemetry Collector OTLP ports 4317 and 4318, covering common causes, verification steps, and production-ready solutions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Operations, CLI
+Tags: ArgoCD, GitOps, Kubernetes, Operation, CLI
 
 Description: Learn how to list, filter, and query ArgoCD applications by project using the CLI, API, kubectl, and UI, with practical examples for daily operations and automation scripts.
 

@@ -33,7 +33,7 @@ Click "Add dashboard link" and configure:
 ```yaml
 Type: dashboards
 Title: Related Services
-Tags: [api, backend]
+Tags: Grafana, Dashboard Links, Navigation, Monitoring, Observability, User Experience
 Include current time range: true
 Include current template variable values: true
 Open in new tab: false
@@ -70,13 +70,13 @@ Tag-based links scale better than hardcoded lists. When you create a new service
 # Tag strategy for automatic linking
 
 Dashboard: API Gateway Overview
-Tags: [api, gateway, tier-1]
+Tags: Grafana, Dashboard Links, Navigation, Monitoring, Observability, User Experience
 
 Dashboard: Payment Service
-Tags: [api, payments, tier-1]
+Tags: Grafana, Dashboard Links, Navigation, Monitoring, Observability, User Experience
 
 Dashboard: User Service
-Tags: [api, users, tier-2]
+Tags: Grafana, Dashboard Links, Navigation, Monitoring, Observability, User Experience
 ```
 
 A dashboard link filtering by tag "api" shows all three dashboards in its dropdown.

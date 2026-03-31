@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Infrastructure Automation, Configuration Management
+Tags: Ansible, Variable, Infrastructure Automation, Configuration Management
 
 Description: Learn how to use the Ansible hostvars magic variable to share and access data between different hosts during playbook execution.
 

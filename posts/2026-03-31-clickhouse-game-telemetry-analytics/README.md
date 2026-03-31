@@ -1,6 +1,6 @@
 # How to Analyze Game Telemetry Data with ClickHouse
 
-Author: [OneUptime](https://www.github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Game Analytics, Telemetry, Gaming, Player Analytics
 

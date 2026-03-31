@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Redis, Monitoring, Performance, Memory Usage, Azure Monitor, Azure Cache for Redis
+Tags: Azure, Redis, Monitoring, Performance, MEMORY USAGE, Azure Monitor, Azure Cache for Redis
 
 Description: Learn how to monitor Azure Cache for Redis performance metrics, memory usage, and set up alerts to prevent issues before they impact your application.
 

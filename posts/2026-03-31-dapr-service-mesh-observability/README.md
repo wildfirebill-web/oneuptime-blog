@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Observability, Service Mesh, Tracing, Metrics
+Tags: Dapr, Observability, Service Mesh, Tracing, Metric
 
 Description: Learn how to combine Dapr's built-in observability with service mesh telemetry for complete visibility into microservice communication.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, LLM, Token Usage, Cost Tracking, Latency, Metrics, Observability, Python
+Tags: OpenTelemetry, LLM, Token Usage, Cost Tracking, Latency, Metric, Observability, Python
 
 Description: Learn how to track LLM token usage, calculate prompt costs, and measure model latency using OpenTelemetry metrics and traces, with real-world Python examples and dashboarding strategies.
 

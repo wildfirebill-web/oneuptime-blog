@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Window Functions, Running Totals, Cumulative Sum, Analytics
+Tags: ClickHouse, Window Function, Running Total, Cumulative Sum, Analytics
 
 Description: Learn how to calculate running totals and cumulative aggregations in ClickHouse using window functions with practical business analytics examples.
 

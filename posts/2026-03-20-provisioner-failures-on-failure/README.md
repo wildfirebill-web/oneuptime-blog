@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, Error Handling, Infrastructure as Code, Terraform
+Tags: OpenTofu, Provisioner, Error Handling, Infrastructure as Code, Terraform
 
 Description: Learn how to use the on_failure setting in OpenTofu provisioners to control behavior when provisioner scripts fail, including continue and fail modes.
 

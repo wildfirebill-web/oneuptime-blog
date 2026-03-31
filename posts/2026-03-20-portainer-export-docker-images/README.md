@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Images, Backup, DevOps
+Tags: Portainer, Docker, Image, Backup, DevOps
 
 Description: Learn how to export Docker images from Portainer as tar files for backup, transfer, or air-gapped deployment purposes.
 

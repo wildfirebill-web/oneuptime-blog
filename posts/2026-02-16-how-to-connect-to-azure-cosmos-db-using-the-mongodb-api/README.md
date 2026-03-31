@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Cosmos DB, MongoDB, API Compatibility, NoSQL, Database Migrations
+Tags: Azure, Cosmos DB, MongoDB, API Compatibility, NoSQL, Database Migration
 
 Description: Connect your existing MongoDB applications to Azure Cosmos DB using the MongoDB API with minimal code changes and full managed service benefits.
 

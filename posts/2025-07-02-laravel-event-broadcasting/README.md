@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PHP, Laravel, Events, Broadcasting, WebSocket, Pusher
+Tags: PHP, Laravel, Event, Broadcasting, WebSocket, Pusher
 
 Description: A comprehensive guide to implementing real-time event broadcasting in Laravel.
 

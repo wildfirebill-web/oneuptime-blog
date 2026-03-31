@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Apache, HTTP Server, Metrics, Logs, Web Server, Observability
+Tags: OpenTelemetry, Collector, Apache, HTTP Server, Metric, Log, Web Server, Observability
 
 Description: Learn how to monitor Apache HTTP Server with the OpenTelemetry Collector to collect server metrics, parse access and error logs, and track performance.
 

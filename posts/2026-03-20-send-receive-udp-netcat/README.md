@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, netcat, Linux, Networking, Testing, Sockets
+Tags: UDP, netcat, Linux, Networking, Testing, Socket
 
 Description: Use netcat (nc) to send and receive UDP packets on Linux for testing UDP services, verifying port availability, and debugging UDP-based protocols.
 

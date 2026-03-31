@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, OpenTelemetry, OTEL Collector, Traces, Metrics, Logs
+Tags: ClickHouse, OpenTelemetry, OTEL Collector, Trace, Metric, Log
 
 Description: Learn how to configure the OpenTelemetry Collector to export traces, metrics, and logs to ClickHouse using the clickhouse exporter.
 

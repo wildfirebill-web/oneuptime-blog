@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Istio, Service Mesh, Microservices, Traffic Management
+Tags: Kubernetes, Istio, Service Mesh, Microservice, Traffic Management
 
 Description: Learn how to install and configure Istio service mesh on Kubernetes, including sidecar injection, traffic management, and observability features for your microservices architecture.
 

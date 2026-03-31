@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Docker, Configuration, my.cnf, Performance
+Tags: MySQL, Docker, Configuration, My.cnf, Performance
 
 Description: Mount a custom my.cnf into a MySQL Docker container to override default settings for buffer pool size, connections, slow query logging, and character sets.
 

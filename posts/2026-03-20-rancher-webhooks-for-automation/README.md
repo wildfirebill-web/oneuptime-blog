@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Webhooks, Automation, Integration, Kubernetes, Events
+Tags: Rancher, Webhook, Automation, Integration, Kubernetes, Event
 
 Description: Use Rancher webhooks and Kubernetes admission webhooks to automate responses to cluster events, enforce policies, trigger external systems, and build event-driven automation workflows.
 

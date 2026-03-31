@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, CSI, NFS, Storage, ReadWriteMany, Persistent Volumes
+Tags: Flux CD, Kubernetes, GitOps, CSI, NFS, Storage, ReadWriteMany, Persistent Volume
 
 Description: Deploy and configure the NFS CSI driver for Kubernetes using Flux CD for GitOps-managed NFS-backed PersistentVolumes with dynamic provisioning and static pre-provisioned volumes.
 

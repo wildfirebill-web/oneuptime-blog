@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Splunk, Audit Logs, Dataflow, Cloud Logging, Security, Google Cloud
+Tags: GCP, Splunk, Audit Log, Dataflow, Cloud Logging, Security, Google Cloud
 
 Description: Learn how to stream Google Cloud audit logs to Splunk using a Dataflow pipeline for centralized security monitoring and compliance.
 

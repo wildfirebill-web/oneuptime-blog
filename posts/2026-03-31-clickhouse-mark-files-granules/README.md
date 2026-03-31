@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Mark File, Granule, Primary Index, Internals
+Tags: ClickHouse, Mark File, Granule, Primary Index, Internal
 
 Description: A detailed explanation of ClickHouse mark files and granules, showing how they bridge the sparse primary index and column data files for efficient I/O.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Functions, Configuration Management
+Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Function, Configuration Management
 
 Description: Learn how to use the read_terragrunt_config function in Terragrunt to read and parse external configuration files for building layered, composable infrastructure setups.
 

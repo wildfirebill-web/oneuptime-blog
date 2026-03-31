@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Containers, Cockpit, Linux
+Tags: RHEL, Podman, Container, Cockpit, Linux
 
 Description: Step-by-step guide on set up cockpit-podman for container management using Red Hat Enterprise Linux 9.
 

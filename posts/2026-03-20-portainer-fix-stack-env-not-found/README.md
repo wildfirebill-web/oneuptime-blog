@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Stacks, Troubleshooting, DevOps
+Tags: Portainer, Docker, Stack, Troubleshooting, DevOps
 
 Description: Learn how to diagnose and fix 'stack.env not found' and related environment file errors when deploying or updating stacks in Portainer.
 

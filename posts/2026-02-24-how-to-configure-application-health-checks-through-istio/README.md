@@ -1,6 +1,6 @@
 # How to Configure Application Health Checks Through Istio
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Istio, Health Check, Application Monitoring, Kubernetes, Envoy
 

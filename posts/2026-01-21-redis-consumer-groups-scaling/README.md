@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Consumer Groups, Event Processing, Scaling, Load Balancing, Redis Streams, Parallel Processing
+Tags: Redis, Consumer Group, Event Processing, Scaling, Load Balancing, Redis Streams, Parallel Processing
 
 Description: A comprehensive guide to scaling event consumers with Redis Consumer Groups for parallel processing, load balancing, and fault-tolerant event consumption.
 

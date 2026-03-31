@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, ServiceLB, MetalLB, Load Balancer
+Tags: k3s, Kubernetes, Rancher, ServiceLB, MetalLB, Load Balancer
 
 Description: Learn how to disable K3s's built-in ServiceLB (Klipper) and replace it with MetalLB or other load balancer solutions.
 

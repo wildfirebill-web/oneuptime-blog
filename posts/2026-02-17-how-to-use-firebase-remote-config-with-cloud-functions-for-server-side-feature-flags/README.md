@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Firebase, GCP, Remote Config, Cloud Functions, Feature Flags
+Tags: Firebase, GCP, Remote Config, Cloud Function, Feature Flag
 
 Description: Learn how to implement server-side feature flags using Firebase Remote Config and Cloud Functions for controlled rollouts and A/B testing on GCP.
 

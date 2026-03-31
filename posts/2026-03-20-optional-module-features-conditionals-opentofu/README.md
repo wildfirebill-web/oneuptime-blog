@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, Conditional, Optional, HCL, Design Pattern
+Tags: OpenTofu, Terraform, Module, Conditional, Optional, HCL, Design Pattern
 
 Description: Learn how to design OpenTofu modules with optional feature flags that let callers enable or disable specific capabilities without changing module code.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secrets, TLS, CA Bundle, Certificates, Security
+Tags: Flux, Kubernetes, GitOps, Source Controller, Authentication, Secret, TLS, CA Bundle, Certificate, Security
 
 Description: How to configure Flux CD with a custom CA certificate bundle for connecting to Git and Helm repositories that use internal or self-signed TLS certificates.
 

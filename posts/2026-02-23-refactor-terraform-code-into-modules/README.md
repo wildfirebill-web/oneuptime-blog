@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Refactoring, IaC, DevOps
+Tags: Terraform, Module, Refactoring, IaC, DevOps
 
 Description: A step-by-step guide to refactoring existing Terraform configurations into reusable modules without destroying and recreating resources using moved blocks and state operations.
 

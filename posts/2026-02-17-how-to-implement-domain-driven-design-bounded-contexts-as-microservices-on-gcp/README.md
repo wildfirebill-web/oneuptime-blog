@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Domain-Driven Design, Microservices, Bounded Contexts, Cloud Run, Architecture
+Tags: GCP, Domain-Driven Design, Microservice, Bounded Contexts, Cloud Run, Architecture
 
 Description: Learn how to map Domain-Driven Design bounded contexts to microservices on Google Cloud Platform, with practical examples of context mapping and inter-service communication.
 

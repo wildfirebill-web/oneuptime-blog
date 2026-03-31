@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Wire Protocol, Networking, Driver, Internals
+Tags: MongoDB, Wire Protocol, Networking, Driver, Internal
 
 Description: Understand the MongoDB wire protocol structure, message types, and how drivers communicate with mongod to execute commands and transfer data.
 

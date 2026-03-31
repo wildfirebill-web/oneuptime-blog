@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Variables, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Module, Variable, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to pass input variables from a root module to child modules and how to expose child module outputs back to the caller.
 

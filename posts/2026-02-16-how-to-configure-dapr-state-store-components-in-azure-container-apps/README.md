@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Container Apps, Dapr, State Management, Redis, Cosmos DB, Microservices
+Tags: Azure, Container Apps, Dapr, State Management, Redis, Cosmos DB, Microservice
 
 Description: A hands-on guide to configuring Dapr state store components in Azure Container Apps using Redis, Cosmos DB, and Azure Blob Storage.
 

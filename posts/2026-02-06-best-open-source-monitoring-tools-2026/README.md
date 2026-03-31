@@ -2,7 +2,7 @@
 
 Author: [mallersjamie](https://www.github.com/mallersjamie)
 
-Tags: Open Source, Monitoring, Observability, DevOps, Tools
+Tags: Open Source, Monitoring, Observability, DevOps, Tool
 
 Description: A comprehensive guide to the best open source monitoring and observability tools in 2026, covering infrastructure, APM, logs, and incident management.
 

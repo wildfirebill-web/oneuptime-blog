@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Compliance, Security, Configs, CloudTrail, Audit, Governance, Reporting
+Tags: AWS, Compliance, Security, CONFIG, CloudTrail, Audit, Governance, Reporting
 
 Description: Build an automated compliance reporting system on AWS using Config rules, CloudTrail, Security Hub, and custom dashboards
 

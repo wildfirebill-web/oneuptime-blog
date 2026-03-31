@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, VPC Lattice, Service Networks, Microservices
+Tags: AWS, VPC Lattice, Service Networks, Microservice
 
 Description: A detailed walkthrough of configuring VPC Lattice service networks including access controls, cross-account sharing, and multi-VPC connectivity patterns.
 

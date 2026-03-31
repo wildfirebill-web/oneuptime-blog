@@ -1,6 +1,6 @@
 # How to Configure ClickHouse S3 Disk Storage
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Configuration, S3, ObjectStorage, Tiering
 

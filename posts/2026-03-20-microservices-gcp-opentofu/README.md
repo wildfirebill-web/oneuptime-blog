@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Microservices, Architecture, OpenTofu, GKE, Cloud Endpoints, Pub/Sub
+Tags: GCP, Microservice, Architecture, OpenTofu, GKE, Cloud Endpoints, Pub/Sub
 
 Description: Learn how to build a production-ready microservices architecture on GCP using OpenTofu with GKE, Cloud Endpoints, Pub/Sub event messaging, and Workload Identity.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, macOS, Installation
+Tags: Podman, Container, DevOps, Podman Desktop, macOS, Installation
 
 Description: Learn how to install and set up Podman Desktop on macOS for a graphical container management experience.
 

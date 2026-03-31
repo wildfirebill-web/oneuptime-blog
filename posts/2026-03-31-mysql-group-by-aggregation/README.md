@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, SQL, DML, GROUP BY, Aggregation, Query, Analytics
+Tags: MySQL, SQL, DML, GROUP BY, Aggregation, Query
 
 Description: Aggregate MySQL data with GROUP BY using COUNT, SUM, AVG, MIN, and MAX, combine with HAVING for post-aggregation filtering, and use WITH ROLLUP for subtotals.
 

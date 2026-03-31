@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $exists, Missing Fields, Data Quality, Schema Audit, Node.js
+Tags: MongoDB, $exists, Missing Field, Data Quality, Schema Audit, Node.js
 
 Description: Learn how to use MongoDB's $exists: false to find documents with missing required fields, perform data quality audits, and bulk-fix schema inconsistencies.
 

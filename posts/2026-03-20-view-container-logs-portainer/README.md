@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Logs, Debugging, Operations
+Tags: Portainer, Docker, Log, Debugging, Operation
 
 Description: Access and view Docker container logs in Portainer for troubleshooting application issues and monitoring output.
 

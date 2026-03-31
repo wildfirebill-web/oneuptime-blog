@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Shell, Pipes, Redirect
+Tags: Ansible, Shell, Pipe, Redirect
 
 Description: Learn how to use shell pipes and file redirects in Ansible playbooks using the shell module for data processing tasks.
 

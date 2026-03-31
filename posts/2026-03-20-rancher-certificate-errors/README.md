@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Troubleshooting, Certificates, TLS
+Tags: Rancher, Kubernetes, Troubleshooting, Certificate, TLS
 
 Description: A comprehensive guide to diagnosing and resolving TLS certificate errors in Rancher, covering cert-manager, self-signed CAs, and certificate rotation.
 

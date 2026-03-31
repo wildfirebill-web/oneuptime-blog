@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, IaC, Modules, Documentation
+Tags: OpenTofu, Terraform, IaC, Module, Documentation
 
 Description: Learn how to write clear, comprehensive documentation for your OpenTofu modules that helps users get started quickly.
 

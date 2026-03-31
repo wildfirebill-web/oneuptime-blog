@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ceph, BlueStore, Architecture, Storage, OSD, Performance, Internals
+Tags: Ceph, BlueStore, Architecture, Storage, OSD, Performance, Internal
 
 Description: A deep dive into Ceph BlueStore's architecture, explaining how it directly manages block devices to eliminate double-write overhead.
 

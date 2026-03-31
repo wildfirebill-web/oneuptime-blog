@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Out Of Memory, Troubleshooting, Memory Management, OOM
+Tags: Redis, Out of Memory, Troubleshooting, Memory Management, OOM
 
 Description: Diagnose and resolve Redis OOM (Out of Memory) errors by understanding maxmemory policies, memory usage patterns, and eviction configuration.
 

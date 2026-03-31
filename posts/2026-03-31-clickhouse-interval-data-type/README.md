@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Interval, Date, DateTime
+Tags: ClickHouse, SQL, Data Type, Interval, Date, DateTime
 
 Description: Learn how to use ClickHouse's Interval type for date and time arithmetic with INTERVAL syntax and toInterval functions.
 

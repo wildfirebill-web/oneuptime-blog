@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Fission, Serverless, Functions, Kubernetes, Fast Cold Start
+Tags: Rancher, Fission, Serverless, Function, Kubernetes, Fast Cold Start
 
 Description: Deploy Fission serverless framework on Rancher with pre-warmed pools for fast cold starts, environment management, and function routing.
 

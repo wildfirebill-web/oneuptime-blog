@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Dead Letter, Microservices, Messaging, Error Handling
+Tags: Dapr, Pub/Sub, Dead Letter, Error Handling, Microservice
 
-Description: Learn how to configure dead letter topics in Dapr pub/sub to capture failed messages for later inspection, reprocessing, or alerting.
+Description: Configure dead letter topics in Dapr pub/sub to capture messages that fail repeated delivery, enabling error analysis and manual reprocessing workflows.
 
 ---
 

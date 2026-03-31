@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Troubleshooting, Webhooks
+Tags: Rancher, Kubernetes, Troubleshooting, Webhook
 
 Description: Diagnose and fix Rancher webhook failures that block resource creation, updates, and deletions in Rancher-managed Kubernetes clusters.
 

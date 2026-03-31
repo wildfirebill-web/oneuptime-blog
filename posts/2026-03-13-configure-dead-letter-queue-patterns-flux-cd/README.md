@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Dead Letter Queue, RabbitMQ, Kafka, Message Queues, Error Handling
+Tags: Flux CD, Kubernetes, GitOps, Dead Letter Queue, RabbitMQ, Kafka, Message Queue, Error Handling
 
 Description: Implement dead letter queue patterns in message brokers managed by Flux CD for GitOps-managed error handling in distributed messaging systems.
 

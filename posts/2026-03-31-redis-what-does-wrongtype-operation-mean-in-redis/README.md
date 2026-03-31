@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Error, WRONGTYPE, Data Types, Debugging
+Tags: Redis, Error, WRONGTYPE, Data Type, Debugging
 
 Description: Understand what the Redis WRONGTYPE error means, why it occurs when using commands on the wrong data type, and how to fix it in your application.
 

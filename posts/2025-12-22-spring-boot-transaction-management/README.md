@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, Database, Transactions, JPA, Backend
+Tags: Java, Spring Boot, Database, Transaction, JPA, Backend
 
 Description: Learn how to properly manage database transactions in Spring Boot using @Transactional with practical examples covering propagation, isolation, rollback rules, and common pitfalls.
 

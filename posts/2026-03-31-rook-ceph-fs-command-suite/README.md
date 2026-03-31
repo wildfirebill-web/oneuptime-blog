@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, CLI, CephFS, Filesystem, MDS, Operations
+Tags: Rook, Ceph, CLI, CephFS, Filesystem, MDS, Operation
 
 Description: Manage CephFS filesystems using the ceph fs commands to create, inspect, configure, and troubleshoot distributed file systems.
 

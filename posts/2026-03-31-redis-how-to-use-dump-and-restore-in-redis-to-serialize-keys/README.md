@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Serialization, Key Management, Backup, Commands
+Tags: Redis, Serialization, Key Management, Backup, Command
 
 Description: Learn how to use DUMP and RESTORE in Redis to serialize key values to a binary format and restore them, enabling cross-server data migration and key-level backups.
 

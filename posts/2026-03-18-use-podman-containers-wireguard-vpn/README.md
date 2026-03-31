@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, WireGuard, VPN, Containers, Security, Networking
+Tags: Podman, WireGuard, VPN, Container, Security, Networking
 
 Description: Learn how to route Podman container traffic through a WireGuard VPN tunnel, run WireGuard inside a container, and create secure inter-host container communication.
 

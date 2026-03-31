@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Functions, Path Resolution
+Tags: Terraform, Terragrunt, Infrastructure as Code, DevOps, Function, Path Resolution
 
 Description: Learn how to use get_terragrunt_dir in Terragrunt to resolve file paths relative to the current configuration file for loading configs, scripts, and local modules.
 

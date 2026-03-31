@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Sampling, Tracing, Parent-Based Sampling, Distributed Systems, Observability
+Tags: OpenTelemetry, Sampling, Tracing, Parent-Based Sampling, Distributed System, Observability
 
 Description: Learn how parent-based sampling works in OpenTelemetry to ensure consistent trace decisions across distributed microservices and avoid broken traces.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Configuration, Detach Keys
+Tags: Podman, Container, DevOps, Container Configuration, Detach Keys
 
 Description: Learn how to change the default detach key sequence in Podman globally through configuration files or per-command with the --detach-keys flag.
 

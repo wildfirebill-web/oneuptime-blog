@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Provisioners
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Provisioner
 
 Description: Understand when and why to use provisioners in OpenTofu only as a last resort, and learn the preferred alternatives for common provisioner use cases.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kibana, Elasticsearch, Visualization, ELK Stack
+Tags: Podman, Container, DevOps, Kibana, Elasticsearch, Visualization, ELK Stack
 
 Description: Learn how to run Kibana in a Podman container and connect it to Elasticsearch for log visualization and data exploration.
 

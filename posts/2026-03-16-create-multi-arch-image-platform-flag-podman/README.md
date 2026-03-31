@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Multi-Architecture, Build
+Tags: Podman, Container, DevOps, Multi-Architecture, Build
 
 Description: Learn how to use the --platform flag in Podman to build multi-architecture container images in a single command, targeting multiple platforms simultaneously.
 

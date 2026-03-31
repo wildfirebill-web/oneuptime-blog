@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Troubleshooting, Variables, YAML, Jinja2
+Tags: Ansible, Troubleshooting, Variable, YAML, Jinja2
 
 Description: Fix Ansible dictionary object has no attribute errors caused by incorrect variable access, undefined keys, and type mismatches.
 

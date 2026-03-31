@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, LFU, Eviction, Commands, Memory Management
+Tags: Redis, LFU, Eviction, Command, Memory Management
 
 Description: Learn how to use OBJECT FREQ in Redis to retrieve the LFU (Least Frequently Used) access frequency counter for a key, useful for understanding eviction behavior.
 

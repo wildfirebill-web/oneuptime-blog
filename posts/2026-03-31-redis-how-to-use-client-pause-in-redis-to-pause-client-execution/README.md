@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Client, Administration, Replication, Commands
+Tags: Redis, Client, Administration, Replication, Command
 
 Description: Learn how to use CLIENT PAUSE in Redis to temporarily halt client command processing, useful for maintenance windows, replica promotion, and coordinated failovers.
 

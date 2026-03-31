@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Sockets, IPv4, Error Handling, Net Module, Events
+Tags: Node.js, Socket, IPv4, Error Handling, Net Module, Event
 
 Description: Learn how to handle the most common socket errors and events in Node.js IPv4 TCP and UDP networking for robust, production-ready applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Memorystore, Redis, Maintenance, Operations
+Tags: GCP, Memorystore, Redis, Maintenance, Operation
 
 Description: Configure maintenance windows for your Memorystore Redis instances to control when Google applies updates, patches, and infrastructure changes with minimal impact.
 

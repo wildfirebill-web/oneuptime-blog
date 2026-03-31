@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Slot Usage, Resource Limits, Query Optimization, Cost Management
+Tags: GCP, BigQuery, Slot Usage, Resource Limit, Query Optimization, Cost Management
 
 Description: Learn how to fix BigQuery resource limit errors by understanding slot allocation, optimizing queries, and managing reservations for better performance.
 

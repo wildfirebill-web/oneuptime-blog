@@ -1,6 +1,6 @@
 # How to Map ArgoCD Health Checks to Flux Health Checks
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Flux CD, ArgoCD, Health Check, Migration, GitOps, Kubernetes, Custom Resources
 

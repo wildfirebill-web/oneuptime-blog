@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, SLA, Compliance, Reporting, Metrics, Observability, SLO, Reliability
+Tags: OpenTelemetry, SLA, Compliance, Reporting, Metric, Observability, SLO, Reliability
 
 Description: Learn how to build automated SLA compliance reports using OpenTelemetry metrics and traces, covering uptime calculations, latency commitments, and error rate thresholds.
 

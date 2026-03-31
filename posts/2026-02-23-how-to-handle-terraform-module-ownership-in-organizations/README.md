@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Team Collaboration, Governance, Infrastructure as Code
+Tags: Terraform, Module, Team Collaboration, Governance, Infrastructure as Code
 
 Description: Establish clear Terraform module ownership boundaries in your organization to improve quality, reduce maintenance burden, and enable teams to move independently.
 

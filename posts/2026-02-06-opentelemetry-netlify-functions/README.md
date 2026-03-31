@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Netlify, Serverless, Functions, Tracing, Observability, JavaScript
+Tags: OpenTelemetry, Netlify, Serverless, Function, Tracing, Observability, JavaScript
 
 Description: A practical guide to adding OpenTelemetry instrumentation to Netlify Functions for tracing, error tracking, and observability in serverless environments.
 

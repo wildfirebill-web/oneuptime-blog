@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, IAM, Security, Troubleshooting, Credentials
+Tags: AWS, IAM, Security, Troubleshooting, Credential
 
 Description: Resolve the 'security token included in the request is invalid' error in AWS by identifying expired tokens, misconfigured credentials, and region mismatches.
 

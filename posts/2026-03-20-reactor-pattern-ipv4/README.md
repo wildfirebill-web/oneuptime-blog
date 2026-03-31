@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Reactor, Event-Driven, Selectors, Networking
+Tags: Python, IPv4, Reactor, Event-Driven, Selector, Networking
 
 Description: Learn how to implement the Reactor pattern for high-performance IPv4 socket programming in Python using the selectors module, enabling a single thread to handle many concurrent connections.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Demo, Learning, Tutorial, Microservices, Docker
+Tags: OpenTelemetry, Demo, Learning, Tutorial, Microservice, Docker
 
 Description: A comprehensive guide to using the OpenTelemetry Demo Application as a hands-on learning environment for understanding observability concepts and implementation patterns.
 

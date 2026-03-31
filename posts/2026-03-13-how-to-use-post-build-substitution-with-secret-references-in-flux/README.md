@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, GitOps, Kubernetes, Secrets, Post-Build Substitution, Kustomization
+Tags: Flux, GitOps, Kubernetes, Secret, Post-Build Substitution, Kustomization
 
 Description: Learn how to securely inject secret values into your Kubernetes manifests using Flux post-build substitution with secret references.
 

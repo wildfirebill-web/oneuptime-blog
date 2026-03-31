@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Alertmanager, Kubernetes, Alerts, Inhibition, Observability
+Tags: Alertmanager, Kubernetes, Alert, Inhibition, Observability
 
 Description: Learn how to configure Alertmanager inhibition rules to automatically suppress cascading alerts in Kubernetes and reduce alert noise from infrastructure failures.
 

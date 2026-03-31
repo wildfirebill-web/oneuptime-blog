@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Consul, Watches, Service Discovery, Events, HashiCorp
+Tags: Consul, Watches, Service Discovery, Event, HashiCorp
 
 Description: Learn how to use Consul watches to react to changes in services, keys, nodes, and other Consul data, with practical examples for automation and integration.
 

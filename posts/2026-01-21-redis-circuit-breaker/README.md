@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Circuit Breaker, Microservices, Fault Tolerance, Resilience, Distributed Systems
+Tags: Redis, Circuit Breaker, Microservice, Fault Tolerance, Resilience, Distributed System
 
 Description: A comprehensive guide to implementing distributed circuit breakers with Redis for fault tolerance and automatic recovery in microservices architectures.
 

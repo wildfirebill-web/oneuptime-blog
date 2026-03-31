@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Consul, Service Discovery, HashiCorp, Networking, Microservices
+Tags: Terraform, Consul, Service Discovery, HashiCorp, Networking, Microservice
 
 Description: Learn how to integrate Terraform with HashiCorp Consul for service discovery, health checking, and dynamic configuration management in distributed systems.
 

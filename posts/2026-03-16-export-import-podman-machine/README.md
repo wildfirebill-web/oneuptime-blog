@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Podman Machine, Virtual Machine, Containers, DevOps, Migration
+Tags: Podman, Podman Machine, Virtual Machine, Container, DevOps, Migration
 
 Description: Learn how to export Podman machine disk images and configurations for backup, migration, and sharing with team members.
 

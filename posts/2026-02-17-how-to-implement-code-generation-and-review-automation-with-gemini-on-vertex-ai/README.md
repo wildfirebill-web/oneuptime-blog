@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Vertex AI, Gemini, Code Generation, Developer Tools
+Tags: GCP, Vertex AI, Gemini, Code Generation, Developer Tool
 
 Description: Build automated code generation and review systems using Gemini on Vertex AI to accelerate development workflows with AI-assisted coding and pull request reviews.
 

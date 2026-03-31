@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: RHEL, System Roles, Ansible, Storage, Monitoring, Alerts, Linux
+Tags: RHEL, System Roles, Ansible, Storage, Monitoring, Alert, Linux
 
 Description: Learn how to use RHEL System Roles with Ansible to set up automated disk space monitoring and alerts across your infrastructure.
 

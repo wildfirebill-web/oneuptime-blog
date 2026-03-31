@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ss, Linux, Ports, Listening, Security, Diagnostics
+Tags: ss, Linux, Port, Listening, Security, Diagnostic
 
 Description: Use ss -l to enumerate all listening TCP and UDP ports on a Linux system, with filtering by protocol, process name, and address family for security audits.
 

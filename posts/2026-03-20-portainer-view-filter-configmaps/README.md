@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMaps, Management, DevOps
+Tags: Portainer, Kubernetes, ConfigMap, Management, DevOps
 
 Description: Learn how to view, search, and filter ConfigMaps in Portainer to efficiently manage application configuration across your Kubernetes cluster.
 

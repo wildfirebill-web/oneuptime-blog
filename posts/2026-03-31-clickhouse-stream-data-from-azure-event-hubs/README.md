@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Azure Event Hubs, Azure, Streaming, Kafka, Data Pipeline
+Tags: ClickHouse, Azure Event Hub, Azure, Streaming, Kafka, Data Pipeline
 
 Description: Stream events from Azure Event Hubs into ClickHouse using the Kafka-compatible endpoint or an Azure Function consumer.
 

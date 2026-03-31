@@ -1,6 +1,6 @@
 # How to Configure Health Checks for Istio VirtualService in ArgoCD
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ArgoCD, GitOps, Kubernetes, Istio, Health Check
 

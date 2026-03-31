@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Kubernetes, Distributed Locks, Coordination, ZooKeeper
+Tags: Istio, Kubernetes, Distributed Lock, Coordination, ZooKeeper
 
 Description: Configure Istio for distributed lock services like ZooKeeper, etcd, and Redis-based locking to ensure reliable lock acquisition and release under mesh networking.
 

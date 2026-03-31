@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Monitoring, Performance, Database Tools
+Tags: MongoDB, Monitoring, Performance, Database Tools
 
 Description: Learn how to use mongotop to monitor per-collection read and write activity in MongoDB, helping identify which collections are consuming the most I/O.
 

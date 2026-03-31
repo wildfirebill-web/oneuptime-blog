@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Troubleshooting, Configuration, Modules, DevOps
+Tags: Ansible, Troubleshooting, Configuration, Module, DevOps
 
 Description: Resolve Ansible incompatible options errors by understanding mutually exclusive parameters and correct module usage patterns.
 

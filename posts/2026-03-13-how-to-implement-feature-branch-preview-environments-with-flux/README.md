@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Preview Environments, Feature Branches, CI/CD
+Tags: Flux, Kubernetes, GitOps, Preview Environments, Feature Branch, CI/CD
 
 Description: Learn how to automatically create and destroy preview environments for feature branches using Flux, enabling developers to test changes in isolated Kubernetes namespaces.
 

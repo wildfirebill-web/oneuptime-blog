@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Multikey Index, Arrays, Query Optimization
+Tags: MongoDB, Index, Multikey Index, Array, Query Optimization
 
 Description: Learn how to create multikey indexes on array fields in MongoDB so queries on array element values can use indexes instead of full collection scans.
 

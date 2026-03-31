@@ -1,6 +1,6 @@
 # Using calicoctl ipam check with Practical Examples
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Calico, Calicoctl, IPAM, Health Check, Kubernetes, IP Management
 

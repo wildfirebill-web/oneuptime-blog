@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Traces, Span Suppression, Cost Reduction
+Tags: OpenTelemetry, Trace, Span Suppression, Cost Reduction
 
 Description: Reduce trace data volume by suppressing redundant and low-value spans using OpenTelemetry SDK and Collector techniques.
 

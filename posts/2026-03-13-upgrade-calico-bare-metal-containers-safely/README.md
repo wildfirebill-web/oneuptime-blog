@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Containers, Upgrade
+Tags: Calico, Kubernetes, Networking, CNI, Bare Metal, Container, Upgrade
 
 Description: A guide to safely upgrading Calico on a bare metal Kubernetes cluster running containers while maintaining BGP session stability and pod connectivity.
 

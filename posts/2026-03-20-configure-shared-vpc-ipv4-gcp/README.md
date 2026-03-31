@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Shared VPC, IPv4, Networking, Organizations, Multi-Project
+Tags: GCP, Shared VPC, IPv4, Networking, Organization, Multi-Project
 
 Description: Configure GCP Shared VPC to allow multiple service projects to use subnets from a centrally managed host project, enabling consistent IPv4 networking across teams.
 

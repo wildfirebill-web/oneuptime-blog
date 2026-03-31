@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Fedora Silverblue, Containers, Immutable Desktop, Linux
+Tags: Podman, Fedora Silverblue, Container, Immutable Desktop, Linux
 
 Description: Learn how to use Podman on Fedora Silverblue, the immutable desktop operating system where containers are the primary way to run applications and development environments.
 

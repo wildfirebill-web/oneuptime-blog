@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Timestampadd, Date Arithmetic, Date Functions, Sql
+Tags: MySQL, TIMESTAMPADD, Date Arithmetic, Date Function, SQL
 
 Description: Learn how to use MySQL's TIMESTAMPADD() function to add a specified number of time units to a datetime value for scheduling and expiry calculations.
 

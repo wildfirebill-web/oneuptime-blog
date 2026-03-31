@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Templates, Stacks, DevOps
+Tags: Portainer, Docker, Template, Stack, DevOps
 
 Description: Learn how to deploy multi-service applications from stack templates in Portainer with customizable variables.
 

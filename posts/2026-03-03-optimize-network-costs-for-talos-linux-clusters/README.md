@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Network Costs, Kubernetes, Networking, Cost Optimization, Cloud Infrastructure
+Tags: Talos Linux, Network Cost, Kubernetes, Networking, Cost Optimization, Cloud Infrastructure
 
 Description: Strategies for identifying and reducing network-related costs in Talos Linux Kubernetes clusters running on cloud infrastructure.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Inventory, Transaction, E-commerce
+Tags: Redis, Inventory, Transaction, E-Commerce
 
 Description: Use Redis transactions and atomic counters to implement safe inventory reservation - prevent overselling, handle timeouts, and release held stock automatically.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Query Pipeline, Processor, Parallel Execution, Internals
+Tags: ClickHouse, Query Pipeline, Processor, Parallel Execution, Internal
 
 Description: Explains ClickHouse's query execution pipeline model, how processors connect as a DAG, how parallelism works per-pipeline, and how to inspect pipelines with EXPLAIN PIPELINE.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Annotations, Diff Configuration
+Tags: ArgoCD, GitOps, Kubernetes, Annotation, Diff Configuration
 
 Description: Learn how to use the argocd.argoproj.io/compare-options annotation to customize how ArgoCD compares live and desired state for specific resources.
 

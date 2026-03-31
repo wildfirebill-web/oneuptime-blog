@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Role, Security
+Tags: Rancher, Kubernetes, RBAC, Permission, Role, Security
 
 Description: Learn how to properly configure and differentiate administrator and standard user roles in Rancher for secure platform management.
 

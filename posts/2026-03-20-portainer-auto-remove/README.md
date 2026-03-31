@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Automation, DevOps
+Tags: Portainer, Docker, Container, Automation, DevOps
 
 Description: Learn how to configure Docker container auto-remove in Portainer so containers are automatically deleted when they stop, keeping your environment clean.
 

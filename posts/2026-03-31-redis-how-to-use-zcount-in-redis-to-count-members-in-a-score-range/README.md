@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sorted Sets, ZCOUNT, Score Range, Commands
+Tags: Redis, Sorted Set, ZCOUNT, Score Range, Command
 
 Description: Learn how to use ZCOUNT in Redis to efficiently count the number of members in a sorted set whose scores fall within a specified range.
 

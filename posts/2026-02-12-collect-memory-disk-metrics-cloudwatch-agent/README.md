@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CloudWatch, EC2, Monitoring, Metrics
+Tags: AWS, CloudWatch, EC2, Monitoring, Metric
 
 Description: Practical guide to collecting memory utilization, disk space, swap usage, and inode metrics from EC2 instances using the CloudWatch Agent.
 

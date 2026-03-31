@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Functions, HCL, Infrastructure as Code, Best Practice
+Tags: Terraform, Function, HCL, Infrastructure as Code, Best Practice
 
 Description: A practical guide to selecting the right Terraform function for common infrastructure tasks including string manipulation, collection processing, encoding, and network calculations.
 

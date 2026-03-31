@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Arrays, indexOf, Sql, Data Engineering
+Tags: ClickHouse, Array, indexOf, SQL, Data Engineering
 
 Description: Learn how to use indexOf() in ClickHouse to find the position of an element in an array, and how to handle cases where the element is not found.
 

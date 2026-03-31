@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Windows Storage, Persistent Volumes, SMB, CSI Driver, Kubernetes
+Tags: Rancher, Windows Storage, Persistent Volume, SMB, CSI Driver, Kubernetes
 
 Description: Configure persistent storage for Windows containers in Rancher using SMB CSI driver, hostPath volumes, and Windows-compatible StorageClasses.
 

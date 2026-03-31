@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Grafana Tempo, Distributed Tracing, Metrics, Observability
+Tags: Kubernetes, Grafana Tempo, Distributed Tracing, Metric, Observability
 
 Description: Learn how to configure Grafana Tempo's metrics generator to automatically create Rate, Error.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Jumbo Frames, MTU, Linux, Network Performance, LAN, ethtool
+Tags: Jumbo Frame, MTU, Linux, Network Performance, LAN, ethtool
 
 Description: Learn how to enable jumbo frames (9000-byte MTU) on Linux for local network performance improvement, covering NIC configuration, switch requirements, and verification.
 

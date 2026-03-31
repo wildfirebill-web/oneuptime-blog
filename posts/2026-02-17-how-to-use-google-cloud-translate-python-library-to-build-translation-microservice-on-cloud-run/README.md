@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Translate, Python, Cloud Run, Microservices
+Tags: GCP, Cloud Translate, Python, Cloud Run, Microservice
 
 Description: Build a translation microservice using the google-cloud-translate Python library deployed on Cloud Run for scalable multilingual text translation.
 

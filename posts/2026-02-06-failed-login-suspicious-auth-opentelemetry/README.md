@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Authentication Security, Failed Logins, Custom Metrics
+Tags: OpenTelemetry, Authentication Security, Failed Logins, Custom Metric
 
 Description: Track failed login attempts and suspicious authentication patterns using OpenTelemetry custom metrics for proactive security monitoring.
 

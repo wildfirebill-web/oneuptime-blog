@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, GitHub Actions, CI/CD
+Tags: Rancher, Kubernetes, GitHub Action, CI/CD
 
 Description: Use GitHub Actions to build, test, and deploy applications to Rancher-managed Kubernetes clusters with secure credential management and multi-environment support.
 

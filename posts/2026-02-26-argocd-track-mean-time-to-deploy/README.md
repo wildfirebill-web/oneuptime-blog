@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, DORA Metrics, Monitoring
+Tags: ArgoCD, GitOps, Kubernetes, DORA Metric, Monitoring
 
 Description: Learn how to measure and track mean time to deploy using ArgoCD Prometheus metrics, covering lead time from Git commit to running in production.
 

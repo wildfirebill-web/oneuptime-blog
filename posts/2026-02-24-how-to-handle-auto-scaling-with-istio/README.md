@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Auto-Scaling, HPA, Kubernetes, Performance, Metrics
+Tags: Istio, Auto-Scaling, HPA, Kubernetes, Performance, Metric
 
 Description: How to configure Kubernetes Horizontal Pod Autoscaler to work correctly with Istio, including using Istio metrics for scaling decisions.
 

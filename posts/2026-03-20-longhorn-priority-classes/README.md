@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Priority Classes, Kubernetes, Storage, Resource Management, QoS, SUSE Rancher
+Tags: Longhorn, Priority Class, Kubernetes, Storage, Resource Management, QoS, SUSE Rancher
 
 Description: Learn how to configure Kubernetes PriorityClasses for Longhorn system components to protect storage operations from being preempted during node resource contention.
 

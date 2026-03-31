@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kong, API Gateway, Ubuntu, Microservices, Load Balancing, Authentication, Rate Limiting, DevOps
+Tags: Kong, API Gateway, Ubuntu, Microservice, Load Balancing, Authentication, Rate Limiting, DevOps
 
 Description: A comprehensive guide to installing, configuring, and managing Kong API Gateway on Ubuntu with database and DB-less modes, authentication, plugins, and monitoring.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Partitioning, Java, Message Queues, Distributed Systems
+Tags: Kafka, Partitioning, Java, Message Queue, Distributed System
 
 Description: Create custom Kafka partitioners for intelligent message routing based on business logic, geographic location, or priority levels.
 

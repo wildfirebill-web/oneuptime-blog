@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Resource Requests, Resource Limits, Kubernetes, Capacity Planning, Performance
+Tags: Talos Linux, Resource Requests, Resource Limit, Kubernetes, Capacity Planning, Performance
 
 Description: A practical guide to setting Kubernetes resource requests and limits correctly on Talos Linux for optimal scheduling, performance, and cost efficiency.
 

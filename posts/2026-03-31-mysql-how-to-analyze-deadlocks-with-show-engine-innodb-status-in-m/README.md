@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Deadlocks, Performance, Troubleshooting
+Tags: MySQL, InnoDB, Deadlock, Performance, Troubleshooting
 
 Description: Learn how to detect, read, and resolve deadlocks in MySQL using the SHOW ENGINE INNODB STATUS command and InnoDB diagnostics.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Jobs, Batch Processing
+Tags: Kubernetes, Job, Batch Processing
 
 Description: Master the configuration of parallelism and completions in Kubernetes Jobs to optimize batch processing performance and resource utilization.
 

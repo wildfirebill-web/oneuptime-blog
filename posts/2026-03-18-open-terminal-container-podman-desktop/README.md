@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Terminal, Debugging
+Tags: Podman, Container, DevOps, Podman Desktop, Terminal, Debugging
 
 Description: Learn how to open an interactive terminal session inside a running container using Podman Desktop and the CLI.
 

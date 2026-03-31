@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Configuration, Administration, Commands, Persistence
+Tags: Redis, Configuration, Administration, Command, Persistence
 
 Description: Learn how to use CONFIG REWRITE in Redis to persist runtime configuration changes to redis.conf, ensuring settings survive server restarts.
 

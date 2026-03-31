@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RKE2, Kubernetes, Rancher, Window, Workloads, Multi-OS
+Tags: RKE2, Kubernetes, Rancher, Window, Workload, Multi-OS
 
 Description: A complete guide to setting up Windows worker nodes in an RKE2 cluster and deploying Windows-based containerized workloads.
 

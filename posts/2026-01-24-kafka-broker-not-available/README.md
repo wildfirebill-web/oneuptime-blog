@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Troubleshooting, Connection Errors, Networking, DevOps, Distributed Systems
+Tags: Kafka, Troubleshooting, Connection Errors, Networking, DevOps, Distributed System
 
 Description: A practical guide to diagnosing and resolving 'Broker May Not Be Available' connection errors in Apache Kafka, including network troubleshooting, configuration fixes, and preventive measures.
 

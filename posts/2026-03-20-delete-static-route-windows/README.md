@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Window, Networking, Routes, Static Routes, IPv4, Network Configuration
+Tags: Window, Networking, Route, Static Routes, IPv4, Network Configuration
 
 Description: Delete specific static routes from the Windows routing table using route delete, remove persistent routes, and clean up the routing table after network reconfiguration.
 

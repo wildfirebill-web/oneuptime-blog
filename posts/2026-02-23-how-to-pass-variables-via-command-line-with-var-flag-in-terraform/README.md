@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, CLI, Infrastructure as Code, DevOps
+Tags: Terraform, Variable, CLI, Infrastructure as Code, DevOps
 
 Description: Learn how to pass variable values directly on the command line using the Terraform -var flag, including syntax for different types and practical use cases.
 

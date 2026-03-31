@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, CloudEvents, Kafka, MQTT
+Tags: OpenTelemetry, CloudEvent, Kafka, MQTT
 
 Description: Trace CloudEvents across multiple transport protocols including Kafka, HTTP, and MQTT with consistent OpenTelemetry context propagation.
 

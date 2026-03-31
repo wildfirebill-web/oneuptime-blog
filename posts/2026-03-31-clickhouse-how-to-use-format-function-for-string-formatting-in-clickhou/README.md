@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, String Functions, format, String Formatting, Template
+Tags: ClickHouse, String Function, Format, String Formatting, Template
 
 Description: Learn how to use the format() function in ClickHouse for template-based string formatting with positional placeholders and mixed data types.
 

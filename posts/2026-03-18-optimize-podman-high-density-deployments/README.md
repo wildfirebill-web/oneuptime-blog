@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, High Density, Containers, Performance, DevOps, Scaling, Resource Management, Linux
+Tags: Podman, High Density, Container, Performance, DevOps, Scaling, Resource Management, Linux
 
 Description: Learn how to optimize Podman for running hundreds or thousands of containers on a single host, covering resource limits, kernel tuning, storage optimization, and monitoring strategies.
 

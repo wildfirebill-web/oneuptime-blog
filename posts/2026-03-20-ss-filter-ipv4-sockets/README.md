@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ss, IPv4, Linux, Sockets, Networking, Diagnostics
+Tags: ss, IPv4, Linux, Socket, Networking, Diagnostic
 
 Description: Use ss -4 to filter socket output to IPv4 only, combined with other flags for targeted investigation of IPv4 connections and listening services.
 

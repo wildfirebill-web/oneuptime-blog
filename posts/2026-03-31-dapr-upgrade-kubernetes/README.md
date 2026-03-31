@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Kubernetes, Upgrade, Helm, Operations
+Tags: Dapr, Kubernetes, Upgrade, Helm, Operation
 
 Description: Learn how to safely upgrade Dapr on Kubernetes using the Dapr CLI or Helm, including pre-upgrade checks, rolling upgrade procedures, and rollback steps.
 

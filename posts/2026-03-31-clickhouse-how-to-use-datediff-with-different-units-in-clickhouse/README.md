@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, Date Functions, date_diff, Sql, Analytics
+Tags: ClickHouse, Date Function, date_diff, SQL, Analytics
 
 Description: Learn how to use date_diff() in ClickHouse to calculate the difference between two dates or timestamps in seconds, hours, days, months, and years.
 

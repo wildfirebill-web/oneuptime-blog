@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Gaming, Leaderboards, Achievements, Performance
+Tags: OpenTelemetry, Gaming, Leaderboard, Achievements, Performance
 
 Description: Instrument leaderboard and achievement systems with OpenTelemetry to monitor write throughput, query latency, and ranking accuracy.
 

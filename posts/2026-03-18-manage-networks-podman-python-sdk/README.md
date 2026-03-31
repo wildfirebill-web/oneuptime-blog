@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Python, SDK, Networks, Container Networking
+Tags: Podman, Python, SDK, Network, Container Networking
 
 Description: Learn how to create, configure, inspect, and manage container networks using the Podman Python SDK, including bridge networks, custom subnets, and multi-container networking.
 

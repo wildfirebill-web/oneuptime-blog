@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, AWS Lambda, Serverless, Container Images, Cloud, AWS
+Tags: Dapr, AWS Lambda, Serverless, Container Image, Cloud, AWS
 
 Description: Learn how to run Dapr alongside an AWS Lambda function packaged as a container image, enabling Lambda functions to use Dapr's state store, pub/sub, and service invocation APIs.
 

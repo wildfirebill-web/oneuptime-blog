@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kubernetes, Admission Webhooks, Tracing, Security, Observability
+Tags: OpenTelemetry, Kubernetes, Admission Webhook, Tracing, Security, Observability
 
 Description: Learn how to instrument Kubernetes admission webhooks with OpenTelemetry to trace policy decisions, measure latency, and debug rejection issues.
 

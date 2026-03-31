@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Spot Instances, Cost Optimization, Cloud, AWS, GCP, Azure, DevOps
+Tags: Kubernetes, Spot Instance, Cost Optimization, Cloud, AWS, GCP, Azure, DevOps
 
 Description: A comprehensive guide to using spot instances, preemptible VMs, and spot VMs in Kubernetes, including configuration, workload patterns, and interruption handling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Secrets, Security, DevOps
+Tags: Portainer, Kubernetes, Secret, Security, DevOps
 
 Description: Learn how to create Kubernetes Secrets using Portainer's form-based interface for securely storing sensitive configuration data like passwords, tokens, and certificates.
 

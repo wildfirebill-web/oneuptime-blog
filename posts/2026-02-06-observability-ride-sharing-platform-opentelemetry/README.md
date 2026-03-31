@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Observability, Ride-Sharing, Distributed Tracing, Microservices, Monitoring
+Tags: OpenTelemetry, Observability, Ride-Sharing, Distributed Tracing, Microservice, Monitoring
 
 Description: Learn how to build full-stack observability for a ride-sharing platform using OpenTelemetry, covering tracing, metrics, and logs across matching, pricing, and dispatch services.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Grafana, Dashboards, Data Visualization, Monitoring
+Tags: MySQL, Grafana, Dashboard, Data Visualization, Monitoring
 
 Description: Learn how to connect Grafana to MySQL, write effective dashboard queries, use Grafana variables, and visualize time-series and aggregated data.
 

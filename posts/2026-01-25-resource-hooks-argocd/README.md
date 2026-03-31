@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ArgoCD, Resource Hooks, Kubernetes, GitOps, Automation, Jobs
+Tags: ArgoCD, Resource Hooks, Kubernetes, GitOps, Automation, Job
 
 Description: Learn how to use ArgoCD resource hooks to run jobs and scripts at specific points during the sync lifecycle, including database migrations, notifications, and validation tasks.
 

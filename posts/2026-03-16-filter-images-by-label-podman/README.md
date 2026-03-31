@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Container Images, Labels
+Tags: Podman, Container, DevOps, Container Image, Labels
 
 Description: Learn how to filter container images by their metadata labels using Podman, including filtering by label key, value, and combining label filters.
 

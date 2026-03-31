@@ -1,6 +1,6 @@
 # How to Use Native Format in ClickHouse for Best Performance
 
-Author: [oneuptime](https://github.com/oneuptime)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Binary, Performance, Data Engineering
 

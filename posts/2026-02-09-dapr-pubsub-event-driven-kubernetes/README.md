@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Kubernetes, Event-Driven, Pub-Sub, Microservices
+Tags: Dapr, Kubernetes, Event-Driven, Pub-Sub, Microservice
 
 Description: Build loosely coupled event-driven microservices using Dapr's publish-subscribe API with support for multiple message brokers and cloud-agnostic patterns on Kubernetes.
 

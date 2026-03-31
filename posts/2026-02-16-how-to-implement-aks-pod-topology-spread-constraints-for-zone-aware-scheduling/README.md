@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AKS, Kubernetes, Topology Spread, Scheduling, Availability Zones, Azure, High Availability
+Tags: AKS, Kubernetes, Topology Spread, Scheduling, Availability Zone, Azure, High Availability
 
 Description: Learn how to use pod topology spread constraints on AKS to distribute workloads evenly across availability zones and nodes for high availability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Azure Functions, Blob Storage, Event Grid, Serverless, Event-Driven, Automation
+Tags: Azure, Azure Function, Blob Storage, Event Grid, Serverless, Event-Driven, Automation
 
 Description: Learn how to set up Azure Functions that automatically trigger when blobs are created, updated, or deleted in Azure Blob Storage.
 

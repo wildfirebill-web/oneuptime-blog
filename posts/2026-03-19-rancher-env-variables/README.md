@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Workloads, ConfigMaps, Secrets
+Tags: Rancher, Kubernetes, Workload, ConfigMap, Secret
 
 Description: Learn how to configure environment variables for workloads in Rancher using direct values, ConfigMaps, Secrets, and field references.
 

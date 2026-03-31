@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Fedora, Linux, Installation
+Tags: k3s, Kubernetes, Fedora, Linux, Installation
 
 Description: A guide to installing K3s on Fedora Linux, addressing SELinux, firewalld, and cgroup v2 requirements.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, Kubernetes, CI/CD
+Tags: GitHub Action, Kubernetes, CI/CD
 
 Description: Learn how to use GitHub Actions matrix builds to deploy applications to multiple Kubernetes clusters in parallel, with environment-specific configurations and proper error handling.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Integer, UInt8, UInt16, UInt32, UInt64
+Tags: ClickHouse, SQL, Data Type, Integer, UInt8, UInt16, UInt32, UInt64
 
 Description: Learn how to use unsigned integer types in ClickHouse - UInt8, UInt16, UInt32, and UInt64 - with storage sizes, value ranges, and practical examples.
 

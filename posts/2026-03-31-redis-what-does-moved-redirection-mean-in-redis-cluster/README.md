@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cluster, MOVED, Hash Slots, Sharding, Troubleshooting
+Tags: Redis, Cluster, Moved, Hash Slot, Sharding, Troubleshooting
 
 Description: Understand what the MOVED redirection means in Redis Cluster, how hash slot routing works, and how cluster-aware clients handle MOVED responses automatically.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Query Operators, Modulo, Arithmetic, Database
+Tags: MongoDB, Query Operator, Modulo, Arithmetic, Database
 
 Description: Learn how to use MongoDB's $mod operator to filter documents based on modulo arithmetic, enabling efficient queries on numeric field remainders.
 

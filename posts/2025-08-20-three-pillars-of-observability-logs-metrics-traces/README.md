@@ -2,7 +2,7 @@
 
 Author: [devneelpatel](https://www.github.com/devneelpatel)
 
-Tags: Observability, OpenTelemetry, Logs, Metrics, Traces, Open Source
+Tags: Observability, OpenTelemetry, Log, Metric, Trace, Open Source
 
 Description: A practical, story-driven guide to weaving logs, metrics, and traces into one observability fabric with OpenTelemetry- while avoiding Datadog / New Relic lock‑in and cutting costs using OneUptime.
 

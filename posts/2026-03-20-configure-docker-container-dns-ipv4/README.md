@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, DNS, IPv4, Containers, Configuration
+Tags: Docker, Networking, DNS, IPv4, Container, Configuration
 
 Description: Configure custom DNS servers, search domains, and DNS options for Docker containers using --dns flags and daemon.json to control how containers resolve IPv4 hostnames.
 

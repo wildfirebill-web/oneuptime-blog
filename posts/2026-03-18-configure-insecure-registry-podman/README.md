@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Insecure, TLS, Development
+Tags: Podman, Container, DevOps, Registry, Insecure, TLS, Development
 
 Description: Learn how to configure Podman to work with insecure registries that use HTTP or self-signed certificates for development and testing purposes.
 

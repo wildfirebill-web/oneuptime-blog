@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, InfluxDB, Metrics, Time Series, Migration
+Tags: ClickHouse, InfluxDB, Metric, Time Series, Migration
 
 Description: Replace InfluxDB with ClickHouse for metrics storage to gain SQL flexibility, better compression, and lower operational overhead at scale.
 

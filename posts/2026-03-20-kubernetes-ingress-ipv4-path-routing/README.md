@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Ingress, IPv4, Path Routing, Nginx, Microservices
+Tags: Kubernetes, Ingress, IPv4, Path Routing, Nginx, Microservice
 
 Description: Configure Kubernetes Ingress to route IPv4 HTTP requests to different backend services based on URL path, enabling microservice routing under a single hostname.
 

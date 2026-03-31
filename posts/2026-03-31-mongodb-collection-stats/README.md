@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Collection, Statistic, Performance, Storage
+Tags: MongoDB, Collection, Statistics, Performance, Storage
 
 Description: Learn how to use db.collection.stats() to inspect storage, index sizes, document counts, and other key metrics for a MongoDB collection.
 

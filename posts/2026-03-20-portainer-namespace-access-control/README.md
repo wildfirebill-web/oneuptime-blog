@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, RBAC, Access Control, DevOps
+Tags: Portainer, Kubernetes, Namespace, RBAC, Access Control, DevOps
 
 Description: Learn how to configure namespace-level access control in Portainer to give teams appropriate permissions for their Kubernetes workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Dockerfile, WORKDIR, Containers, Best Practice
+Tags: Docker, Dockerfile, WORKDIR, Container, Best Practice
 
 Description: Understand how the WORKDIR instruction sets the working directory in Dockerfiles and why it matters for clean builds.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, Windows Containers, Linux, GitOps, Mixed Workloads, AKS
+Tags: Flux CD, Kubernetes, Windows Containers, Linux, GitOps, Mixed Workload, AKS
 
 Description: Configure Flux CD to manage deployments across mixed Linux and Windows node pools, ensuring workloads are correctly scheduled and maintained.
 

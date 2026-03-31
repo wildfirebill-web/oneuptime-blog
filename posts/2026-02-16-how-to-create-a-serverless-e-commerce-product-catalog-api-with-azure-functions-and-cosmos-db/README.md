@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Cosmos DB, E-Commerce, Serverless, REST API, Product Catalog, Retail
+Tags: Azure Function, Cosmos DB, E-Commerce, Serverless, REST API, Product Catalog, Retail
 
 Description: Create a serverless e-commerce product catalog API using Azure Functions for compute and Cosmos DB for flexible product data storage.
 

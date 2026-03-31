@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Cold Start, Performance, Serverless, Troubleshooting, Optimization
+Tags: Azure Function, Cold Start, Performance, Serverless, Troubleshooting, Optimization
 
 Description: Diagnose and fix cold start performance issues in Azure Function Apps with practical strategies for reducing startup latency across different hosting plans.
 

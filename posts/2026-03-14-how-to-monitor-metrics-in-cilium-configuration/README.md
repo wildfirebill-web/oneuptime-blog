@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Monitoring, Configuration, Metrics
+Tags: Cilium, Monitoring, Configuration, Metric
 
 Description: A practical guide covering how to monitor metrics in cilium configuration with step-by-step instructions and real-world examples for production Kubernetes clusters.
 

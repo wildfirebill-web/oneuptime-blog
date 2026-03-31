@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Networking, Troubleshooting, DevOps
+Tags: Podman, Container, Networking, Troubleshooting, DevOps
 
 Description: Learn how to diagnose and resolve 'port already in use' errors in Podman, including finding conflicting processes, managing container port mappings, and handling rootless networking constraints.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, Development Environments, DevOps, Ephemeral
+Tags: Podman, Container, Development Environment, DevOps, Ephemeral
 
 Description: Learn how to use Podman to create lightweight, ephemeral development environments that spin up instantly and leave no trace when destroyed.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Internals, Dependency Graph, Algorithms, Infrastructure as Code
+Tags: OpenTofu, Internal, Dependency Graph, Algorithm, Infrastructure as Code
 
 Description: Understand the nine steps OpenTofu performs when walking the resource dependency graph - from configuration loading to post-apply checks - giving you insight into how plan and apply work internally.
 

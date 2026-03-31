@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Annotations, Multi-Tool
+Tags: ArgoCD, GitOps, Kubernetes, Annotation, Multi-Tool
 
 Description: Learn how to link ArgoCD resources to multiple management tools using annotations, deep links, and custom resource configurations for complex toolchains.
 

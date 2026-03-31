@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Sql Mode, Data Validation, Strict Mode
+Tags: MySQL, SQL Mode, Data Validation, Strict Mode
 
 Description: STRICT_TRANS_TABLES is a MySQL SQL mode that causes the server to reject invalid or missing data instead of silently adjusting it.
 

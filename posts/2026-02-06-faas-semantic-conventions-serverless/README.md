@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Serverless, FaaS, AWS Lambda, Semantic Conventions, Observability, Tracing, Cloud Functions
+Tags: OpenTelemetry, Serverless, FaaS, AWS Lambda, Semantic Conventions, Observability, Tracing, Cloud Function
 
 Description: Learn how to implement OpenTelemetry FaaS semantic conventions to trace and monitor serverless functions across AWS Lambda, Azure Functions, and Google Cloud Functions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, TimescaleDB, Migration, Database, Time-series, PostgreSQL
+Tags: ClickHouse, TimescaleDB, Migration, Database, Time-Series, PostgreSQL
 
 Description: Migrate time-series data from TimescaleDB to ClickHouse by exporting hypertables with COPY, mapping compression settings, and rewriting TimescaleDB-specific SQL functions.
 

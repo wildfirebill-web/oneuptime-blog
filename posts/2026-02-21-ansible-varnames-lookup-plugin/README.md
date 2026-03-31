@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Lookup Plugins, Variables, Dynamic Configuration
+Tags: Ansible, Lookup Plugins, Variable, Dynamic Configuration
 
 Description: Learn how to use the Ansible varnames lookup plugin to find variable names matching a pattern and build dynamic, data-driven playbooks.
 

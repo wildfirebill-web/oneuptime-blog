@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Documentation, DevOps
+Tags: Terraform, Module, Documentation, DevOps
 
 Description: Learn how to write effective README documentation for Terraform modules covering usage examples, input/output tables, requirements, and architecture diagrams.
 

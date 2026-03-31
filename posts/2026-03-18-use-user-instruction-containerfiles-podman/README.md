@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, USER, Security, Container Hardening
+Tags: Podman, Containerfile, User, Security, Container Hardening
 
 Description: Learn how to use the USER instruction in Podman Containerfiles to run containers as non-root users, improve security posture, and follow container hardening best practices.
 

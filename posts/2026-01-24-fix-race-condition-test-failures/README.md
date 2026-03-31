@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Testing, Race Conditions, Concurrency, Debugging, Flaky Tests, Async, Multithreading
+Tags: Testing, Race Condition, Concurrency, Debugging, Flaky Tests, Async, Multithreading
 
 Description: Learn how to identify, debug, and fix race condition test failures that cause intermittent test flakiness in concurrent and asynchronous code.
 

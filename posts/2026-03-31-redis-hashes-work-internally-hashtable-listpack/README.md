@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Hash, Hashtable, Listpack, Internals
+Tags: Redis, Hash, Hashtable, Listpack, Internal
 
 Description: Learn how Redis hashes use listpack encoding for small hashes and a hashtable for large ones, and how this affects memory usage for object storage.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Traces, Metrics, Correlation, Prometheus, Observability
+Tags: Istio, Trace, Metric, Correlation, Prometheus, Observability
 
 Description: How to connect distributed traces with Prometheus metrics in Istio for faster root cause analysis and a unified observability experience.
 
@@ -198,7 +198,7 @@ In Jaeger's UI, you can search by time range and filter:
 ```text
 Service: payment-service
 Operation: /api/charge
-Tags: http.status_code=500
+Tags: Istio, Traces, Metric, Correlation, Prometheus, Observability
 Min Duration: 2s
 Lookback: Last 15 minutes
 ```

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Performance, Lists, LRANGE, Anti-Patterns, Best Practices
+Tags: Redis, Performance, List, LRANGE, Anti-Pattern, Best Practice
 
 Description: Learn why LRANGE 0 -1 blocks Redis on long lists and discover efficient alternatives for accessing list data without impacting performance.
 

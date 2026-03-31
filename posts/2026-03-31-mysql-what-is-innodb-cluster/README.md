@@ -22,7 +22,7 @@ Together, these components provide a production-ready HA solution without requir
 
 A typical InnoDB Cluster consists of a minimum of three MySQL instances arranged in a Group Replication group. MySQL Router runs alongside the application and maintains awareness of which member is currently the primary:
 
-```
+```text
 Application -> MySQL Router -> [Primary | Secondary | Secondary]
 ```
 

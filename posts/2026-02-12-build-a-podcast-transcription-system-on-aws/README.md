@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Transcribe, Lambda, S3, Podcasts, Speech-to-Text
+Tags: AWS, Transcribe, Lambda, S3, Podcast, Speech-to-Text
 
 Description: Build an automated podcast transcription system using AWS Transcribe with speaker diarization, custom vocabulary, and searchable transcript storage.
 

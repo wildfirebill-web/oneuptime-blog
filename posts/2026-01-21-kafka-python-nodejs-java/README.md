@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Python, Node.js, Java, Client Libraries, Message Queues, Streaming
+Tags: Apache Kafka, Python, Node.js, Java, Client Libraries, Message Queue, Streaming
 
 Description: A comprehensive guide to connecting to Apache Kafka from Python, Node.
 

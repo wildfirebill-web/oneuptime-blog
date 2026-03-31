@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Mongoose, Projection, Select, Performance
+Tags: MongoDB, Mongoose, Projection, SELECT, Performance
 
 Description: Learn how to use Mongoose select() and schema-level projection to return only the fields you need, reducing query overhead and protecting sensitive data.
 

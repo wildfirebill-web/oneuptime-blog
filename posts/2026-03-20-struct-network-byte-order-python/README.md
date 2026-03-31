@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Struct, Network Byte Order, IPv4, Binary, Networking, Sockets
+Tags: Python, Struct, Network Byte Order, IPv4, Binary, Networking, Socket
 
 Description: Learn how to use Python's struct module to pack and unpack binary data in network byte order (big-endian) for IPv4 socket programming, including IP header parsing and custom protocol framing.
 

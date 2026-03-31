@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Go, Metrics, Cardinality
+Tags: OpenTelemetry, Go, Metric, Cardinality
 
 Description: Identify and fix unbounded memory growth in Go applications caused by high cardinality OpenTelemetry metric attributes.
 

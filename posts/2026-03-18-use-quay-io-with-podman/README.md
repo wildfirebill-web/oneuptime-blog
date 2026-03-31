@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Registry, Quay.io, Red Hat
+Tags: Podman, Container, DevOps, Registry, Quay.io, Red Hat
 
 Description: Learn how to use Quay.io container registry with Podman for pulling, pushing, and managing container images.
 

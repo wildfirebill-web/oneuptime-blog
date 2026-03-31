@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, GKE, Kubernetes, Sidecar Pattern, Microservices, Service Mesh
+Tags: GCP, GKE, Kubernetes, Sidecar Pattern, Microservice, Service Mesh
 
 Description: Learn how to use the sidecar pattern in Google Kubernetes Engine to handle logging, monitoring, authentication, and other cross-cutting concerns without modifying application code.
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Network Partition, High Availability, Replica Set, CAP Theorem
 
-Description: Learn how MongoDB handles network partitions in replica sets, how to configure write and read concerns for partition tolerance, and how to recover from split-brain scenarios.
+Description: Learn how MongoDB handles network partitions in replica sets, how to configure write and read concerns for partition tolerance, and how to recover.
 
 ---
 

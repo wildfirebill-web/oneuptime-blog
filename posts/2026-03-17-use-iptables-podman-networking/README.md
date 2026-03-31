@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Networking, iptables, Security
+Tags: Podman, Container, DevOps, Networking, iptables, Security
 
 Description: Learn how to use iptables rules to control and inspect network traffic for Podman containers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Jobs, CronJobs, Automation
+Tags: Portainer, Kubernetes, Job, CronJob, Automation
 
 Description: Deploy and manage Kubernetes Jobs for one-time tasks and CronJobs for scheduled workloads through Portainer's Kubernetes interface.
 

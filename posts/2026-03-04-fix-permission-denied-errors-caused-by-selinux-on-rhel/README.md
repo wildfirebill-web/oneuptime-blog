@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, SELinux, Permissions, Troubleshooting, Security
+Tags: RHEL, SELinux, Permission, Troubleshooting, Security
 
 Description: Diagnose and resolve permission denied errors caused by SELinux on RHEL by checking contexts, reviewing audit logs, and applying the correct fixes.
 

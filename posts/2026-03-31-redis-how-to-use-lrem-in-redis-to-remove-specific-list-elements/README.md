@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Lists, Commands, Data Structures
+Tags: Redis, List, Command, Data Structure
 
 Description: Learn how to use Redis LREM to remove specific elements from a list by value, controlling count and direction of removal.
 

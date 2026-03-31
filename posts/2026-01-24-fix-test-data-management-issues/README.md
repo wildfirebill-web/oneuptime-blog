@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Testing, Test Data, Fixtures, Database, Quality Assurance, CI/CD, Test Automation, Data Management
+Tags: Testing, Test Data, Fixture, Database, Quality Assurance, CI/CD, Test Automation, Data Management
 
 Description: Learn how to solve common test data management problems including data isolation, seeding strategies, and cleanup patterns for reliable automated tests.
 

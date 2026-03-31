@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Secret Stores, Security, Configuration, Microservices, Kubernetes
+Tags: Dapr, Secret Store, Security, Configuration, Microservice, Kubernetes
 
 Description: Learn how to configure and use multiple secret store components in a single Dapr application to fetch secrets from different providers simultaneously.
 

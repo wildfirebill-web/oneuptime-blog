@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, TLS, Security, Certificates
+Tags: k3s, Kubernetes, Rancher, TLS, Security, Certificate
 
 Description: Learn how to configure TLS Subject Alternative Names (SANs) in K3s to enable secure API access from multiple IP addresses and hostnames.
 

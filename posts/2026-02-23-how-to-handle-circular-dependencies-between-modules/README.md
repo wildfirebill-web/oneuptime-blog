@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Dependencies, Troubleshooting, Infrastructure as Code
+Tags: Terraform, Module, Dependencies, Troubleshooting, Infrastructure as Code
 
 Description: Learn how to identify, diagnose, and resolve circular dependencies between Terraform modules with practical refactoring strategies and design patterns.
 

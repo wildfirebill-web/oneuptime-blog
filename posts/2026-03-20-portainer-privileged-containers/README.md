@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Security, Linux
+Tags: Portainer, Docker, Container, Security, Linux
 
 Description: Learn when and how to run privileged Docker containers in Portainer, along with safer alternatives to avoid using privileged mode.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Networking, DevOps
+Tags: Portainer, Docker, Container, Networking, DevOps
 
 Description: Learn how to configure port mappings for Docker containers in Portainer, including TCP/UDP ports, host binding, and common networking patterns.
 

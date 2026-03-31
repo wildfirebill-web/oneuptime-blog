@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Document Intelligence, OCR, Invoices, Data Extraction, AI, Automation
+Tags: Azure, Document Intelligence, OCR, Invoice, Data Extraction, AI, Automation
 
 Description: Automatically extract structured data from invoices and receipts using Azure Document Intelligence with pre-built and custom models.
 

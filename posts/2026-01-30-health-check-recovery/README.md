@@ -1,6 +1,6 @@
 # How to Build Health Check Recovery
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Health Check, Recovery, Load Balancing, Reliability
 

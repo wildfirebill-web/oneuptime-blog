@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Lifecycle
+Tags: Podman, Container, DevOps, Pod, Lifecycle
 
 Description: Learn how to restart a Podman pod to refresh all its containers in a single command.
 

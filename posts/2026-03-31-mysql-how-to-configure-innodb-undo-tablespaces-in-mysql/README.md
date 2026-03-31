@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mysql, Innodb, Undo Log, Tablespaces, Configuration
+Tags: MySQL, InnoDB, Undo Log, Tablespace, Configuration
 
 Description: Learn how to configure InnoDB undo tablespaces in MySQL 8.0 to manage undo log growth and enable automated truncation for long-running transactions.
 

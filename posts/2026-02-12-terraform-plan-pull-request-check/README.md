@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Terraform, CI/CD, GitHub Actions, DevOps
+Tags: AWS, Terraform, CI/CD, GitHub Action, DevOps
 
 Description: Set up automated Terraform plan checks on pull requests using GitHub Actions to catch infrastructure issues before they hit production.
 

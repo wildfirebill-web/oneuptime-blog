@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Next.js, Route Handlers, API Routes, App Router, Backend, REST API
+Tags: Next.js, Route Handlers, API Route, App Router, Backend, REST API
 
 Description: Create API endpoints in Next.js App Router with route.ts files. Covers GET/POST/PUT/DELETE, reading query params and JSON bodies, authentication middleware, and caching.
 

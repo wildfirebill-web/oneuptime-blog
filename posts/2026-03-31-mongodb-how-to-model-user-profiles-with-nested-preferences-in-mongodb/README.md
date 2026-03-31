@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data Modeling, User Profiles, Preferences, Schema Design
+Tags: MongoDB, Data Modeling, User Profile, Preference, Schema Design
 
 Description: Learn how to design a MongoDB schema for user profiles with nested preferences, notification settings, and extensible metadata using embedding and the attribute pattern.
 

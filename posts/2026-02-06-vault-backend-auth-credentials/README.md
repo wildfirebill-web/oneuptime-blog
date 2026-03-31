@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, HashiCorp Vault, Authentication, Credentials, Collector
+Tags: OpenTelemetry, HashiCorp Vault, Authentication, Credential, Collector
 
 Description: Store backend authentication credentials in HashiCorp Vault and securely retrieve them for OpenTelemetry Collector pipeline exporters.
 

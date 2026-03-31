@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Proxy Memory, Resource Limits, Kubernetes, Performance
+Tags: Istio, Proxy Memory, Resource Limit, Kubernetes, Performance
 
 Description: Learn how to properly set memory requests and limits for Istio sidecar proxies to prevent OOMKills and optimize cluster resource usage.
 

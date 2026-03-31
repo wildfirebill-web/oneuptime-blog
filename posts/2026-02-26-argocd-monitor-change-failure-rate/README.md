@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, DORA Metrics, Monitoring
+Tags: ArgoCD, GitOps, Kubernetes, DORA Metric, Monitoring
 
 Description: Learn how to measure and monitor change failure rate in ArgoCD to track the percentage of deployments that cause failures and improve deployment reliability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Disk I/O, Performance, Schedulers, Linux, Tuning, Storage
+Tags: RHEL, Disk I/O, Performance, Scheduler, Linux, Tuning, Storage
 
 Description: Learn how to tune disk I/O performance and configure I/O schedulers on RHEL for optimal storage throughput and latency.
 

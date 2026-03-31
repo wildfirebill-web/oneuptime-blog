@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: REST API, Bulk Operations, Error Handling, API Design, HTTP Status Codes
+Tags: REST API, Bulk Operation, Error Handling, API Design, HTTP Status Codes
 
 Description: Learn how to design and implement bulk API endpoints that handle partial success gracefully.
 

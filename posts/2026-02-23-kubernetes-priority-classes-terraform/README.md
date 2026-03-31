@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Kubernetes, Priority Classes, Scheduling, Resource Management, DevOps
+Tags: Terraform, Kubernetes, Priority Class, Scheduling, Resource Management, DevOps
 
 Description: Learn how to create and manage Kubernetes PriorityClasses with Terraform to control pod scheduling priority, enable preemption, and protect critical workloads during resource contention.
 

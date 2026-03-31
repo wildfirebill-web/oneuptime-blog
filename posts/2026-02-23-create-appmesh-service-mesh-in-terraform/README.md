@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, App Mesh, Service Mesh, Microservices, Infrastructure as Code
+Tags: Terraform, AWS, App Mesh, Service Mesh, Microservice, Infrastructure as Code
 
 Description: Learn how to create AWS App Mesh service meshes with virtual nodes, virtual services, virtual routers, and routes using Terraform for microservices networking.
 

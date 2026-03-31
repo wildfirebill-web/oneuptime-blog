@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Registry, Components, Collector, Discovery
+Tags: OpenTelemetry, Registry, Component, Collector, Discovery
 
 Description: Learn how to navigate the OpenTelemetry Registry to discover, evaluate, and select compatible components for your collector distribution.
 

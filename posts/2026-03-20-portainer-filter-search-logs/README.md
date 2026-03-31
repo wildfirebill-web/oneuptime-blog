@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Logging, Debugging
+Tags: Portainer, Docker, Container, Logging, Debugging
 
 Description: Learn how to filter, search, and navigate through Docker container logs in Portainer to quickly find the information you need.
 

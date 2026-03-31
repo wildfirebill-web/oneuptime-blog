@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, External Services, Security, TLS Origination, ServiceEntry, Kubernetes
+Tags: Istio, External Service, Security, TLS Origination, ServiceEntry, Kubernetes
 
 Description: How to securely connect to external services from your Istio mesh using ServiceEntries, TLS origination, egress gateways, and access controls.
 

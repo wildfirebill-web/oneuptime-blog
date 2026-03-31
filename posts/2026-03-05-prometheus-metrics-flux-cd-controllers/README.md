@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Prometheus, Metrics, Monitoring, Observability
+Tags: Flux CD, GitOps, Kubernetes, Prometheus, Metric, Monitoring, Observability
 
 Description: Learn how to set up Prometheus to scrape and visualize metrics from Flux CD controllers for monitoring reconciliation health and performance.
 

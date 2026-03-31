@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, MariaDB, MySQL, Podman, Containers
+Tags: RHEL, MariaDB, MySQL, Podman, Container
 
 Description: Run MariaDB and MySQL side by side on RHEL 9 using Podman containers.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Linux, Security, SELinux, Troubleshooting
+Tags: Podman, Container, DevOps, Linux, Security, SELinux, Troubleshooting
 
 Description: Learn how to disable SELinux enforcement for individual Podman containers when mandatory access control policies interfere with your workload.
 

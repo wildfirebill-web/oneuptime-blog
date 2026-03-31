@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Window, Kubernetes, Windows Worker Nodes, Mixed Cluster, Containers
+Tags: Rancher, Window, Kubernetes, Windows Worker Nodes, Mixed Cluster, Container
 
 Description: Add Windows Server worker nodes to a Rancher-managed Kubernetes cluster to run Windows containers alongside Linux workloads.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, ClickHouse Keeper, Monitoring, Prometheus, Metrics, Health Check
+Tags: ClickHouse, ClickHouse Keeper, Monitoring, Prometheus, Metric, Health Check
 
 Description: Learn how to monitor ClickHouse Keeper health using four-letter commands, Prometheus metrics, and system tables to detect issues early.
 

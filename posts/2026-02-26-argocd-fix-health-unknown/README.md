@@ -1,6 +1,6 @@
 # How to Fix ArgoCD Application Health 'Unknown'
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ArgoCD, GitOps, Kubernetes, Troubleshooting, Health Check
 

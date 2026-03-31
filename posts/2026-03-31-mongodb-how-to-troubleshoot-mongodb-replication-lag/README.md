@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Replication, Replica Set, Lag, Operations
+Tags: MongoDB, Replication, Replica Set, Lag, Operation
 
 Description: Learn how to diagnose and fix MongoDB replication lag using rs.status(), oplog window analysis, and secondary performance tuning.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Security, SELinux, RHEL, CentOS
+Tags: k3s, Kubernetes, Security, SELinux, RHEL, CentOS
 
 Description: Learn how to configure and run K3s with SELinux enforcing mode on RHEL, CentOS, and other SELinux-enabled Linux distributions.
 

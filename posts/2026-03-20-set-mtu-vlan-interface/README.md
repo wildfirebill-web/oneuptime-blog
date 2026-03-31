@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MTU, VLAN, Linux, 802.1Q, Ip link, Networking, Jumbo Frames
+Tags: MTU, VLAN, Linux, 802.1Q, Ip link, Networking, Jumbo Frame
 
 Description: Learn how to set the MTU on a Linux VLAN interface, including the relationship between parent interface MTU and VLAN MTU, and how to configure jumbo frames for storage and high-performance networks.
 

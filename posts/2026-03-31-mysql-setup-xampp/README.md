@@ -1,10 +1,10 @@
 # How to Set Up MySQL with XAMPP for Local Development
 
-Author: [OneUptime](https://oneuptime.com)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, XAMPP, Installation, Development, Windows
+Tags: MySQL, XAMPP, Installation, Development, Window
 
-Description: Install XAMPP on Windows or Linux, start the bundled MySQL (MariaDB) server, configure phpMyAdmin, and connect from PHP or Python for local development.
+Description: Install XAMPP on Windows or Linux, start the bundled MySQL server, configure phpMyAdmin, and connect from PHP or Python for local development.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, VPA, Workloads
+Tags: Rancher, Kubernetes, VPA, Workload
 
 Description: Learn how to configure Vertical Pod Autoscaling (VPA) in Rancher to automatically adjust CPU and memory requests for your workloads.
 

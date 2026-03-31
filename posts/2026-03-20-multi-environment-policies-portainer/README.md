@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Policies, Environments, Access Control, Business Edition
+Tags: Portainer, Policies, Environment, Access Control, Business Edition
 
 Description: Configure consistent access control policies that apply across multiple environments simultaneously in Portainer Business Edition.
 

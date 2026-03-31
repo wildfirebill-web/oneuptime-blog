@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Multus, NetworkAttachmentDefinition, Networking
 
-Description: Learn how to create and configure NetworkAttachmentDefinitions (NADs) for Rook-Ceph to separate storage traffic onto dedicated network interfaces using Multus.
+Description: Learn how to create and configure NetworkAttachmentDefinitions for Rook-Ceph to separate storage traffic onto dedicated network interfaces using Multus.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Service Bus, NestJS, Event-Driven, Microservices, TypeScript, Messaging, Queue
+Tags: Azure Service Bus, NestJS, Event-Driven, Microservice, TypeScript, Messaging, Queue
 
 Description: Build an event-driven microservice architecture using Azure Service Bus for messaging and NestJS for the application framework with queues and topics.
 

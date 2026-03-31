@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Team Workflows, Collaboration, CI/CD, Infrastructure as Code, GitHub Actions
+Tags: OpenTofu, Team Workflows, Collaboration, CI/CD, Infrastructure as Code, GitHub Action
 
 Description: Learn how to establish a shared OpenTofu workflow for engineering teams with consistent tooling, automated checks, and clear contribution guidelines.
 

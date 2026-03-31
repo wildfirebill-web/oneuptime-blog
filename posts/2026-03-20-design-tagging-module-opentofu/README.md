@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Tagging, AWS, Modules, Cost Management, Compliance
+Tags: OpenTofu, Terraform, Tagging, AWS, Module, Cost Management, Compliance
 
 Description: Learn how to design a tagging module for OpenTofu that generates consistent, validated tag maps enforcing organizational tagging standards across all resources.
 

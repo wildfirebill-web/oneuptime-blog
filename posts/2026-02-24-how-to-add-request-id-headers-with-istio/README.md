@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Request ID, Distributed Tracing, Observability, Headers
+Tags: Istio, Request ID, Distributed Tracing, Observability, Header
 
 Description: How to configure and use request ID headers in Istio for distributed tracing, debugging, and request correlation across microservices.
 

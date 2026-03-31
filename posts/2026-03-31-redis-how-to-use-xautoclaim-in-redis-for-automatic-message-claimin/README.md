@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Consumer Groups, XAUTOCLAIM, Fault Tolerance, Reliability
+Tags: Redis, Stream, Consumer Group, XAUTOCLAIM, Fault Tolerance, Reliability
 
 Description: Learn how XAUTOCLAIM combines XPENDING and XCLAIM into a single atomic command for efficient recovery of stalled messages in Redis Streams.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Message Queues, Troubleshooting, RabbitMQ, Kafka
+Tags: Rancher, Kubernetes, Message Queue, Troubleshooting, RabbitMQ, Kafka
 
 Description: Diagnose and resolve common message queue issues in Rancher including consumer lag, connection failures, memory pressure, and cluster split-brain scenarios.
 

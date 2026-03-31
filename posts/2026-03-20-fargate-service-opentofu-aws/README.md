@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Infrastructure as Code, IaC, Fargate, ECS, Containers
+Tags: OpenTofu, AWS, Infrastructure as Code, IaC, Fargate, ECS, Container
 
 Description: Learn how to deploy a containerized application as an AWS Fargate service with ECS task definitions, service auto-scaling, and load balancer integration using OpenTofu.
 

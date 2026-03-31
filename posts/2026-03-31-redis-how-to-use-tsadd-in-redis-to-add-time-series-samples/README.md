@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, RedisTimeSeries, Time Series, Metrics, Data Ingestion
+Tags: Redis, RedisTimeSeries, Time Series, Metric, Data Ingestion
 
 Description: Learn how to use TS.ADD in Redis to append timestamped samples to a time series key, with options for auto-timestamps and duplicate handling.
 

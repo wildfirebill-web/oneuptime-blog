@@ -1,8 +1,8 @@
 # How to Model a Shopping Cart in MongoDB
 
-Author: OneUptime Team
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Data modeling, Shopping cart, Schema design, E-commerce
+Tags: MongoDB, Data Modeling, Shopping Cart, Schema Design, E-Commerce
 
 Description: Learn how to design a MongoDB schema for a shopping cart that handles guest and authenticated users, inventory reservations, price snapshots, and cart expiration.
 

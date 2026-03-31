@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, has, RKE2, High Availability, Kubernetes
+Tags: Rancher, High Availability, RKE2, Kubernetes
 
 Description: Deploy Rancher in a highly available configuration on RKE2 with 3 control plane nodes, external load balancer, and proper etcd clustering for production reliability.
 

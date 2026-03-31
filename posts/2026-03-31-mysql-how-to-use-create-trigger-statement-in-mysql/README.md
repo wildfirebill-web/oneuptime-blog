@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Triggers, Database Automation, DDL
+Tags: MySQL, Trigger, Database Automation, DDL
 
 Description: Learn how to use the CREATE TRIGGER statement in MySQL to automatically execute SQL code before or after INSERT, UPDATE, and DELETE operations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Remote, SSH, Distributed
+Tags: Podman, Container, DevOps, Podman Desktop, Remote, SSH, Distributed
 
 Description: Learn how to configure Podman Desktop to manage containers on remote machines using SSH connections and Podman's remote client capabilities.
 

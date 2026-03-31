@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Kubernetes, YAML, DaemonSet
+Tags: Podman, Container, DevOps, Kubernetes, YAML, DaemonSet
 
 Description: Learn how to generate a Kubernetes DaemonSet manifest from a Podman container.
 

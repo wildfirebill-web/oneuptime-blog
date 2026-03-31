@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Metrics, Error Rate, SRE, Monitoring
+Tags: Metric, Error Rate, SRE, Monitoring
 
 Description: Learn to implement error rate calculation for measuring service reliability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, SOPS, Secrets, Encryption, Regex, Configuration
+Tags: Flux, Kubernetes, GitOps, SOPS, Secret, Encryption, Regex, Configuration
 
 Description: Learn how to use regex patterns in SOPS to selectively encrypt specific fields within Kubernetes manifests for your Flux GitOps workflow.
 

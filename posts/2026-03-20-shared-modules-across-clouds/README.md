@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Multi-Cloud, Module Registry, Reusability, Infrastructure as Code
+Tags: OpenTofu, Module, Multi-Cloud, Module Registry, Reusability, Infrastructure as Code
 
 Description: Learn how to design and publish reusable OpenTofu modules that work across multiple cloud providers - using a private module registry, consistent interfaces, and versioning for shared...
 

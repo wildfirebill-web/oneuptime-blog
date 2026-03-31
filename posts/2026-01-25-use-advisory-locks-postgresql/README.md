@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Database, Locking, Concurrency, Advisory Locks, Distributed Systems
+Tags: PostgreSQL, Database, Locking, Concurrency, Advisory Lock, Distributed System
 
 Description: Learn how to use advisory locks in PostgreSQL for application-level locking. This guide covers session locks, transaction locks, and practical patterns for preventing race conditions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, Integer, Int8, Int16, Int32, Int64
+Tags: ClickHouse, SQL, Data Type, Integer, Int8, Int16, Int32, Int64
 
 Description: Learn how to use signed integer types in ClickHouse - Int8, Int16, Int32, and Int64 - including value ranges, storage sizes, and practical query examples.
 

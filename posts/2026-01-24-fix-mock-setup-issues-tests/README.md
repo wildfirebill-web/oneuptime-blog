@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Testing, Mocking, Jest, Unit Tests, Debugging
+Tags: Testing, Mocking, Jest, Unit Test, Debugging
 
 Description: Learn how to diagnose and fix common mock setup issues in unit tests including timing problems, scope errors, and reset failures.
 

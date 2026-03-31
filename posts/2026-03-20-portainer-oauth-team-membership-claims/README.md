@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, OAuth, Teams, Claims, RBAC, Business Edition, Automation
+Tags: Portainer, OAuth, Team, Claims, RBAC, Business Edition, Automation
 
 Description: Use OAuth token claims to automatically assign users to Portainer teams based on their identity provider group membership.
 

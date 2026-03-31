@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Unique Index, Data Integrity, Constraints
+Tags: MongoDB, Index, Unique Index, Data Integrity, Constraint
 
 Description: Learn how to create unique indexes in MongoDB to enforce that no two documents share the same value for a field or combination of fields.
 

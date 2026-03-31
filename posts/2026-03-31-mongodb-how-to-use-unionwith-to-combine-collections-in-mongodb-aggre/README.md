@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Aggregation, $unionWith, Collection Merging, Pipeline Stages, NoSQL
+Tags: MongoDB, Aggregation, $unionWith, Collection Merging, Pipeline Stage, NoSQL
 
 Description: Learn how to use MongoDB's $unionWith stage to combine documents from multiple collections into a single pipeline result, similar to SQL UNION ALL.
 

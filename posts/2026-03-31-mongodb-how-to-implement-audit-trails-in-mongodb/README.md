@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Mongodb, Audit Trail, History, Change Tracking, Compliance
+Tags: MongoDB, Audit Trail, History, Change Tracking, Compliance
 
 Description: Build a complete document history audit trail in MongoDB that records every change to a document so you can reconstruct its state at any point in time.
 

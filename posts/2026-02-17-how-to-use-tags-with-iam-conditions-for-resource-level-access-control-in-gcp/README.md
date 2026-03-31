@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, IAM, Tags, Conditional Access, Security
+Tags: GCP, IAM, Tag, Conditional Access, Security
 
 Description: Learn how to combine GCP resource tags with IAM conditions to create fine-grained, attribute-based access control policies that target specific resources dynamically.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Json Overlaps, Json, Json Functions, Sql
+Tags: MySQL, Json Overlaps, JSON, JSON Function, SQL
 
 Description: Learn how to use MySQL's JSON_OVERLAPS() function to check if two JSON documents share any common elements, introduced in MySQL 8.0.17.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Refactoring, Moved Blocks, Infrastructure as Code
+Tags: OpenTofu, Module, Refactoring, Moved Blocks, Infrastructure as Code
 
 Description: Learn how to safely consolidate multiple OpenTofu modules into a single module using moved blocks to avoid infrastructure disruption.
 

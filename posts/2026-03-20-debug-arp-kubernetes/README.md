@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, ARP, Kubernetes, Containers, Troubleshooting
+Tags: Networking, ARP, Kubernetes, Container, Troubleshooting
 
 Description: Learn how to diagnose and fix ARP-related networking issues in Kubernetes clusters including ARP cache overflow, flannel/Calico ARP behavior, and duplicate IP issues.
 

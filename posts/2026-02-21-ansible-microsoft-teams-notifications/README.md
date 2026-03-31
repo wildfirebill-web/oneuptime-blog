@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Microsoft Teams, CI/CD, Notifications
+Tags: Ansible, Microsoft Teams, CI/CD, Notification
 
 Description: Send deployment notifications to Microsoft Teams channels from Ansible playbooks using incoming webhooks and adaptive cards.
 

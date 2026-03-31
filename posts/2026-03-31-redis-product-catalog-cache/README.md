@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Cache, Hash, E-commerce
+Tags: Redis, Cache, Hash, E-Commerce
 
 Description: Cache your product catalog in Redis using Hashes for individual products and Sorted Sets for category listings - reduce database load and serve catalog pages in under 5ms.
 

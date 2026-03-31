@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Debugging, Loops, Troubleshooting
+Tags: Ansible, Debugging, Loop, Troubleshooting
 
 Description: Learn how to debug and inspect loop variables in Ansible using the debug module, verbose mode, loop_control, and variable introspection techniques.
 

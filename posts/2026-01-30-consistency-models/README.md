@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Distributed Systems, Consistency, CAP Theorem, Database
+Tags: Distributed System, Consistency, CAP Theorem, Database
 
 Description: Learn about consistency models and how to choose the right one for your system.
 

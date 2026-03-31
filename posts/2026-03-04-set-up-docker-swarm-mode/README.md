@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Docker, Containers, Docker Swarm, Linux
+Tags: RHEL, Docker, Container, Docker Swarm, Linux
 
 Description: Learn how to set Up Docker Swarm Mode on RHEL with step-by-step instructions, configuration examples, and best practices.
 

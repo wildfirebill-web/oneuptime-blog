@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Ruby On Rails, Sessions, Authentication, Ruby
+Tags: Redis, Ruby On Rail, Session, Authentication, Ruby
 
 Description: Configure Ruby on Rails to store user sessions in Redis for cross-process session sharing in multi-instance deployments using redis-actionpack.
 

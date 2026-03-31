@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Monitoring, Performance, System Administration, Top, Htop, Processes, Resource Management
+Tags: Linux, Monitoring, Performance, System Administration, Top, Htop, Process, Resource Management
 
 Description: Learn how to effectively monitor system resources using top and htop, including understanding metrics, customizing views, and identifying performance issues.
 

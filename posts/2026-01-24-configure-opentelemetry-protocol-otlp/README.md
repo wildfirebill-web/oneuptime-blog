@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, OTLP, Observability, Tracing, Metrics, Logs, Configuration, Protocol
+Tags: OpenTelemetry, OTLP, Observability, Tracing, Metric, Log, Configuration, Protocol
 
 Description: A complete guide to configuring OpenTelemetry Protocol (OTLP) for exporting traces, metrics, and logs with detailed examples for various languages and scenarios.
 

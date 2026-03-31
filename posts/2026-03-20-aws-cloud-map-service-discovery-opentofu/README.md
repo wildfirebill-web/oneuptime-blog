@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Cloud Map, Service Discovery, Microservices, Infrastructure as Code
+Tags: OpenTofu, AWS, Cloud Map, Service Discovery, Microservice, Infrastructure as Code
 
 Description: Learn how to create AWS Cloud Map namespaces and services for automatic service discovery in microservices architectures using OpenTofu.
 

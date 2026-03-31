@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Idempotency, Message Deduplication, Event-Driven, Microservices
+Tags: Dapr, Pub/Sub, Idempotency, Message Deduplication, Event-Driven, Microservice
 
 Description: Learn how to implement message deduplication in Dapr pub/sub to prevent duplicate processing of events, ensuring exactly-once semantics in event-driven microservices.
 

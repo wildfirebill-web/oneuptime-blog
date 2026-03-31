@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Buildkite, CI/CD, GitOps, Kubernetes, Container Images, Docker, Pipeline
+Tags: Flux CD, Buildkite, CI/CD, GitOps, Kubernetes, Container Image, Docker, Pipeline
 
 Description: A step-by-step guide to integrating Buildkite pipelines with Flux CD for building container images and automating GitOps deployments.
 

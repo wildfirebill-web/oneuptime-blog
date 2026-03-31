@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Podman, Containers, Linux, Permissions, Troubleshooting
+Tags: Podman, Container, Linux, Permission, Troubleshooting
 
 Description: A comprehensive guide to diagnosing and resolving 'permission denied' errors in Podman, covering rootless mode, file ownership, volume mounts, and user namespace mapping.
 

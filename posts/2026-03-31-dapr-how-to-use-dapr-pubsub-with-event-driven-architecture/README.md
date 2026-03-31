@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Pub/Sub, Event-Driven Architecture, Microservices, Kubernetes, Events
+Tags: Dapr, Event-Driven Architecture, Pub/Sub, Microservice, Kubernetes
 
-Description: Learn how to design and implement event-driven microservices using Dapr pub/sub, including event sourcing patterns, saga orchestration, and service decoupling.
+Description: Build a complete event-driven microservices architecture using Dapr pub/sub with proper event design, service decomposition, and end-to-end reliability patterns.
 
 ---
 

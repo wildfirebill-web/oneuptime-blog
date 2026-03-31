@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Metrics, Business Intelligence, SRE
+Tags: Observability, Metric, Business Intelligence, SRE
 
 Description: Learn how to implement business metrics that connect technical performance to business outcomes.
 

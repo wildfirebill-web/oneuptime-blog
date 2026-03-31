@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Lifecycle
+Tags: Podman, Container, DevOps, Pod, Lifecycle
 
 Description: Learn how to start a Podman pod and bring all its containers online.
 

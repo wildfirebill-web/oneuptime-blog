@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, remote-exec, SSH, Infrastructure as Code
+Tags: OpenTofu, Provisioner, remote-exec, SSH, Infrastructure as Code
 
 Description: Learn how to use the `remote-exec` provisioner in OpenTofu to run commands directly on a newly created remote resource over SSH or WinRM.
 

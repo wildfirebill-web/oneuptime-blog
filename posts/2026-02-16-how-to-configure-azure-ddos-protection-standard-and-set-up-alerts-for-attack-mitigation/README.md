@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, DDoS Protection, Network Security, Azure Monitor, Alerts, Mitigation, Public IP
+Tags: Azure, DDoS Protection, Network Security, Azure Monitor, Alert, Mitigation, Public IP
 
 Description: Learn how to enable Azure DDoS Protection Standard, configure it for your virtual networks, and set up alerting to monitor attack mitigation in real time.
 

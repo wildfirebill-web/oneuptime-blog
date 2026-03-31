@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Pods, Troubleshooting, Debugging
+Tags: Podman, Container, DevOps, Pod, Troubleshooting, Debugging
 
 Description: Learn how to diagnose and fix common pod startup failures in Podman.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Consumer, Troubleshooting, Error Handling, Node.js, Python, Message Queues, DevOps
+Tags: RabbitMQ, Consumer, Troubleshooting, Error Handling, Node.js, Python, Message Queue, DevOps
 
 Description: Learn how to diagnose and fix consumer cancelled errors in RabbitMQ, including queue deletion, connection issues, and proper consumer recovery strategies.
 

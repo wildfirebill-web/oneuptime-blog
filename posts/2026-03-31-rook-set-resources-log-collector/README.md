@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Log Collector, Resources, Pod, Logging
+Tags: Rook, Ceph, Kubernetes, Log Collector, Resource, Pod, Logging
 
 Description: Configure resource requests and limits for Rook-Ceph log collector pods to ensure Ceph daemon logs are collected reliably and efficiently across all cluster nodes.
 

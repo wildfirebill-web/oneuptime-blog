@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Flannel, Networking, CNI
+Tags: k3s, Kubernetes, Rancher, Flannel, Networking, CNI
 
 Description: Learn how to configure different Flannel backend modes in K3s including VXLAN, host-gw, WireGuard, and IPsec for optimal networking performance.
 

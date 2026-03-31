@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, AWS, EC2, Compute
+Tags: Terraform, Module, AWS, EC2, Compute
 
 Description: Build a flexible Terraform module for EC2 instances that handles AMI selection, user data, EBS volumes, and instance profiles with clean variable interfaces.
 

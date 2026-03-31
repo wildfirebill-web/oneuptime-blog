@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana Mimir, Metrics, Prometheus, Observability, Time-Series, Multi-Tenancy, Kubernetes, Scalability, Remote Write, Query Federation
+Tags: Grafana Mimir, Metric, Prometheus, Observability, Time-Series, Multi-Tenancy, Kubernetes, Scalability, Remote Write, Query Federation
 
 Description: A comprehensive guide to deploying and using Grafana Mimir for scalable, long-term metrics storage with Prometheus-compatible APIs, multi-tenancy, and query federation.
 

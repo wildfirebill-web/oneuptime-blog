@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Network Isolation, Projects, Security
+Tags: Rancher, Kubernetes, Network Isolation, Project, Security
 
 Description: A step-by-step guide to configuring network isolation between Rancher projects using built-in features and custom NetworkPolicy resources.
 

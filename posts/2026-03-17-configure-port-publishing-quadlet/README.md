@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Quadlet, Networking, Ports
+Tags: Podman, Container, DevOps, Quadlet, Networking, Port
 
 Description: Learn how to publish container ports using Podman Quadlet container files to expose services on the host network.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Troubleshooting, Docker Volumes, Permissions, Linux, Self-Hosting
+Tags: Portainer, Troubleshooting, Docker Volumes, Permission, Linux, Self-Hosting
 
 Description: Learn how to diagnose and fix permission errors on the Portainer data volume, including correct ownership settings for the BoltDB database and TLS certificate files.
 

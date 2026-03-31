@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Testing, Mocking, Unit Tests, Trace Context, JavaScript, Python
+Tags: OpenTelemetry, Testing, Mocking, Unit Test, Trace Context, JavaScript, Python
 
 Description: Learn how to mock and control OpenTelemetry trace context in unit tests to verify context propagation and span relationships.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Microservices, Event-Driven Architecture, Distributed Systems, Outbox Pattern, Event Sourcing
+Tags: Microservice, Event-Driven Architecture, Distributed System, Outbox Pattern, Event Sourcing
 
 Description: A practical guide to maintaining event order across microservices using the Outbox Pattern, transactional messaging, and event sourcing techniques.
 

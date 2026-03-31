@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, $eq, Query Operators, Exact Match, Filter, Node.js
+Tags: MongoDB, $eq, Query Operator, Exact Match, Filter, Node.js
 
 Description: Learn how to use the MongoDB $eq operator for exact field matching, including its implicit usage, explicit syntax, and differences from equality shorthand.
 

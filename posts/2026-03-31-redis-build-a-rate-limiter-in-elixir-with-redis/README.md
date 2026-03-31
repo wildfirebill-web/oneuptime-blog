@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Elixir, Rate Limiting, Redix, Api Security
+Tags: Redis, Elixir, Rate Limiting, Redix, API Security
 
 Description: Learn how to implement a Redis-backed rate limiter in Elixir using the fixed window and sliding window algorithms with Redix and Lua scripts.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Security, TLS, Certificates, DevOps
+Tags: k3s, Kubernetes, Security, TLS, Certificate, DevOps
 
 Description: Learn how to rotate TLS certificates in K3s to maintain security compliance and prevent certificate expiration issues.
 

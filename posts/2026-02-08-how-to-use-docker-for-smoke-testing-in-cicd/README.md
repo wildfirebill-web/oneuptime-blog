@@ -1,6 +1,6 @@
 # How to Use Docker for Smoke Testing in CI/CD
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Docker, Smoke Testing, CI/CD, Testing, Health Check, Deployment, DevOps, Automation
 

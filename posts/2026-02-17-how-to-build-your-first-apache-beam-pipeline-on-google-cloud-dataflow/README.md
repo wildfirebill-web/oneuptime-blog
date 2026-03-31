@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Dataflow, Apache Beam, Data Pipelines, ETL, Stream Processing
+Tags: GCP, Dataflow, Apache Beam, Data Pipeline, ETL, Stream Processing
 
 Description: Learn how to build and run your first Apache Beam data processing pipeline on Google Cloud Dataflow with step-by-step examples.
 

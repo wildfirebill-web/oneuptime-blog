@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Storage Class, Kubernetes, Migration, Operations
+Tags: Rook, Ceph, Storage Class, Kubernetes, Migration, Operation
 
 Description: Learn how to handle StorageClass changes in a running Rook-Ceph cluster - covering parameter updates, PVC migration between storage classes, and zero-downtime transitions.
 

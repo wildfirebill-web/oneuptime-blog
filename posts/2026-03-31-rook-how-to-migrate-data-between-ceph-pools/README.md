@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rook, Ceph, Kubernetes, Storage, Data Migration, Administration
+Tags: Rook, Ceph, Storage, Data Migration, Pool
 
-Description: Learn how to safely migrate data between Ceph pools using rados cppool, rbd migration, and CephFS volume moves in Rook-Ceph clusters.
+Description: Step-by-step guide to migrating data between Ceph pools using rados cppool, rbd migration, and export-import techniques without downtime.
 
 ---
 

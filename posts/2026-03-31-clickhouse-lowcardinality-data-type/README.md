@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, SQL, Data Types, LowCardinality, Compression, Performance
+Tags: ClickHouse, SQL, Data Type, LowCardinality, Compression, Performance
 
 Description: Learn how LowCardinality(T) uses dictionary encoding to compress columns with few distinct values and improve query performance.
 

@@ -1,8 +1,8 @@
 # How to Configure ECS Container Dependency Health Checks
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, ECS, Health Check, Container Dependencies, Docker, Microservices
+Tags: AWS, ECS, Health Check, Container Dependencies, Docker, Microservice
 
 Description: Learn how to configure container dependency health checks in Amazon ECS to ensure proper startup ordering and health verification for multi-container tasks.
 

@@ -1,4 +1,4 @@
-# How to Use BLOB Data Types in MySQL
+# How to Use BLOB Data Types (TINYBLOB, BLOB, MEDIUMBLOB, LONGBLOB) in MySQL
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

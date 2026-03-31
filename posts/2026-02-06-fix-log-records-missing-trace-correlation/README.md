@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Logs, Trace Correlation, Logging Framework
+Tags: OpenTelemetry, Log, Trace Correlation, Logging Framework
 
 Description: Fix missing trace correlation in log records by configuring your logging framework to inject trace_id and span_id automatically.
 

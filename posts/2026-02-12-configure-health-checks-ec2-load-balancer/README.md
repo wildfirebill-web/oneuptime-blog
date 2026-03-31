@@ -1,6 +1,6 @@
 # How to Configure Health Checks for EC2 Behind a Load Balancer
 
-Author: [nawazdhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: AWS, EC2, Load Balancing, Health Check, Monitoring, ALB
 

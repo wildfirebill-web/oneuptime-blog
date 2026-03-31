@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: pfSense, IPv6, Troubleshooting, Diagnostics, Networking
+Tags: pfSense, IPv6, Troubleshooting, Diagnostic, Networking
 
 Description: Diagnose and resolve common IPv6 connectivity issues on pfSense using built-in diagnostic tools and system logs.
 

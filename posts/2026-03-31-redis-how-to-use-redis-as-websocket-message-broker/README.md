@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Websockets, Message Broker, Pub/Sub, Real-Time
+Tags: Redis, WebSocket, Message Broker, Pub/Sub, Real-Time
 
 Description: Use Redis as a message broker between WebSocket servers and backend services to decouple producers from consumers and enable reliable real-time message delivery.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, AI, Machine Learning, Edge Computing, GPU, NVIDIA Jetson, IoT
+Tags: k3s, Kubernetes, AI, Machine Learning, Edge Computing, GPU, NVIDIA Jetson, IoT
 
 Description: Learn how to deploy and serve AI/ML inference models at the edge using K3s on GPU-capable hardware like NVIDIA Jetson devices.
 

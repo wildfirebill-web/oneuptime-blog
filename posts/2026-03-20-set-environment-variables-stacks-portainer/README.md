@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Stacks, Environment Variables, Configuration, Docker Compose
+Tags: Portainer, Stack, Environment Variable, Configuration, Docker Compose
 
 Description: Configure environment variables for Docker Compose stacks in Portainer to manage secrets and configuration without modifying the compose file.
 

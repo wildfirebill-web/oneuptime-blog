@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Filesystem, Container Mount
+Tags: Podman, Container, DevOps, Filesystem, Container Mount
 
 Description: Learn how to mount a Podman container's filesystem directly to the host using podman mount for direct file access, debugging, and analysis.
 

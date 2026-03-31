@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, mongoimport, CSV, Data Import, Custom Delimiter
+Tags: MongoDB, Mongoimport, CSV, Data Import, Custom Delimiter
 
 Description: Learn how to import CSV files with custom delimiters, quoted fields, and type conversions into MongoDB using mongoimport and Python pandas.
 

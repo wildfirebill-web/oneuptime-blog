@@ -27,7 +27,7 @@ Drag fields to the encoding channels:
 - **X Axis** - drag a `Date` field (e.g., `released`). Set the **Date Granularity** to `Year`, `Month`, `Week`, or `Day` depending on your time range.
 - **Y Axis** - drag a numeric field or use `Count` to count documents per time period.
 
-```
+```text
 X Axis:  released    (Date field, Granularity: Year)
 Y Axis:  _id         (Aggregation: Count)
 ```
@@ -38,7 +38,7 @@ This produces a line chart showing the number of movies released per year.
 
 To compare multiple categories on the same line chart, add a field to the **Series** channel:
 
-```
+```text
 X Axis:   released      (Granularity: Month)
 Y Axis:   imdb.rating   (Aggregation: Average)
 Series:   genres        (creates one line per genre)

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Streams, Consumer Groups, Message Replay, Messaging
+Tags: Redis, Stream, Consumer Group, Message Replay, Messaging
 
 Description: Learn how to use XGROUP SETID to reposition a consumer group's last-delivered-id, enabling message replay or skipping ahead in a Redis Stream.
 

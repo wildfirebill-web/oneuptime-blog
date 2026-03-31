@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Workflow, Monitoring, Observability, OpenTelemetry
+Tags: Dapr, Workflow, Monitoring, Observability, Microservice
 
-Description: Learn how to monitor Dapr Workflow execution using the workflow query API, Dapr CLI, OpenTelemetry traces, and Prometheus metrics.
+Description: Learn how to monitor Dapr workflow execution status, query running instances, and use Prometheus metrics to observe workflow health and performance.
 
 ---
 

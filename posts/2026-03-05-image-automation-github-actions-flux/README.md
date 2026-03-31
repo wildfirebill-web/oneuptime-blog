@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Image Automation, GitHub Actions, CI/CD
+Tags: Flux CD, GitOps, Kubernetes, Image Automation, GitHub Action, CI/CD
 
 Description: Learn how to integrate GitHub Actions with Flux CD image automation to build, push, and automatically deploy container images.
 

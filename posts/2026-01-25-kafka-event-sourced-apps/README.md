@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Event Sourcing, Microservices, Architecture, Stream Processing
+Tags: Kafka, Event Sourcing, Microservice, Architecture, Stream Processing
 
 Description: Learn how to implement event sourcing patterns with Apache Kafka, including event store design, aggregate reconstruction, and snapshot strategies for scalable applications.
 
