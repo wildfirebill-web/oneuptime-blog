@@ -1104,6 +1104,8 @@
 - Array Jobs
 - ARRAY JOIN
 - Array Merge
+- Array Modifier
+- Array Operator
 - Array Search
 - arrayAll
 - arrayAvg
@@ -1268,6 +1270,7 @@
 - Athena
 - Atlantis
 - Atlas
+- Atlas Charts
 - Atlas Data Federation
 - Atlas Functions
 - Atlas Search
@@ -1848,6 +1851,7 @@
 - Banking API
 - Banking Middleware
 - Banner
+- Bar Chart
 - Barbican
 - Barcode Scanning
 - Bare Metal
@@ -2401,6 +2405,7 @@
 - Bulk
 - Bulk API
 - Bulk Creation
+- Bulk Delete
 - Bulk Email
 - Bulk Import
 - Bulk Indexing
@@ -2413,6 +2418,7 @@
 - Bulk Publish
 - Bulk Secret
 - Bulk Subscribe
+- Bulk Update
 - Bulk write
 - Bulkhead
 - Bulkhead Pattern
@@ -2766,6 +2772,8 @@
 - ChaosEngineering
 - CHAP
 - char
+- Char Filter
+- Character
 - Character Encoding
 - Character Set
 - Characteristic
@@ -3613,6 +3621,7 @@
 - Conditional Function
 - Conditional Logic
 - Conditional Resources
+- Conditional Update
 - Conditional Writes
 - Conditions
 - Conductor
@@ -4328,6 +4337,7 @@
 - Custom Agents
 - Custom Aggregation
 - Custom AMI
+- Custom Analyzer
 - Custom Analyzers
 - Custom APIs
 - Custom Attributes
@@ -5013,6 +5023,7 @@
 - Delayed Execution
 - DELAYED INSERT
 - Delayed Job
+- Delayed Member
 - Delayed Messages
 - Delayed Replication
 - Delayed Secondary
@@ -5668,9 +5679,11 @@
 - Document Intelligence
 - Document Loaders
 - Document Management
+- Document Model
 - Document Parsing
 - Document Processing
 - Document QA
+- Document Replacement
 - Document Review
 - Document Search
 - Document Security
@@ -6787,6 +6800,7 @@
 - Field Management
 - Field Manager
 - Field Mask
+- Field Selection
 - Field Transforms
 - Field Types
 - Field-Level Encryption
@@ -8823,6 +8837,7 @@
 - Innovation
 - Inotify
 - Inotifywait
+- INPLACE Algorithm
 - Input
 - Input Binding
 - Input Configuration
@@ -9371,6 +9386,7 @@
 - JSON Schema
 - JSON Web Key
 - JSON Web Token
+- JSON_TABLE
 - Json-file
 - JSON-RPC
 - JSON:API
@@ -9963,6 +9979,7 @@
 - Limits
 - Limits.conf
 - LINDEX
+- Line Chart
 - Line Filters
 - Line_profiler
 - Linear Hash
@@ -12070,6 +12087,7 @@
 - NUMA
 - Numastat
 - Number
+- Number Conversion
 - Number Formatting
 - Number Matching
 - Number Portability
@@ -12708,6 +12726,7 @@
 - Paravirtual
 - Parcel Sorting
 - Parent Pipelines
+- Parent Reference
 - Parent-Based Sampling
 - Parent-Child
 - Parent-Child Jobs
@@ -13034,6 +13053,7 @@
 - PID
 - PID Limits
 - PID Namespace
+- Pie Chart
 - PII
 - PII Detection
 - PII Masking
@@ -14566,6 +14586,7 @@
 - Relabeling
 - Relation
 - Relational
+- Relational Data
 - Relational Database
 - Relationship
 - Relationships
@@ -15527,6 +15548,7 @@
 - Scap-security-guide
 - Scapy
 - SCARD
+- Scatter Plot
 - Scatter-Gather
 - SCC
 - SCD
@@ -18368,6 +18390,7 @@
 - Travel Technology
 - Traversal
 - Tree
+- Tree Pattern
 - Tree Shaking
 - Tree Structure
 - Tree Structures
@@ -18820,6 +18843,7 @@
 - USN
 - UTC
 - UTF-8
+- UTF8
 - utf8mb4
 - Utilities
 - Utility
@@ -19590,6 +19614,7 @@
 - Write Distribution
 - Write Error
 - Write Limits
+- Write Operation
 - Write Optimization
 - Write Path
 - Write Performance
@@ -19762,6 +19787,7 @@
 - Zipmap
 - Zitadel
 - ZLEXCOUNT
+- Zlib
 - ZMPOP
 - ZMSCORE
 - Zod
