@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Cursor, Performance, Debugging, Memory
 
-Description: Diagnose and fix MongoDB cursor leaks that cause memory exhaustion and the "cursor id not found" error in long-running applications.
+Description: Diagnose and fix MongoDB cursor leaks that cause memory exhaustion and the 'cursor id not found' error in long-running applications.
 
 ---
 

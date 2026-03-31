@@ -1,10 +1,10 @@
-# How to Fix "Code: 60 Table doesn't exist" in ClickHouse
+# How to Fix 'Code: 60 Table doesn't exist' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Troubleshooting, Error, Table, Schema
 
-Description: Diagnose and fix the "Code: 60, e.DB::Exception: Table doesn't exist" error in ClickHouse caused by wrong database context, case sensitivity, or metadata issues.
+Description: Diagnose and fix the 'Code: 60, e.DB::Exception: Table doesn't exist' error in ClickHouse caused by wrong database context, case sensitivity, or metadata issues.
 
 ---
 

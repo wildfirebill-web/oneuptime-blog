@@ -1,4 +1,4 @@
-# What Does "EXECABORT Transaction discarded" Mean in Redis
+# What Does 'EXECABORT Transaction discarded' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

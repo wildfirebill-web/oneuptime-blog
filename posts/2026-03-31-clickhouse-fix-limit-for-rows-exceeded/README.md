@@ -1,10 +1,10 @@
-# How to Fix "Limit for rows exceeded" in ClickHouse
+# How to Fix 'Limit for rows exceeded' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Row Limit, Error, Query, Troubleshooting
 
-Description: Fix "Limit for rows exceeded" errors in ClickHouse by adjusting result size limits and understanding max_result_rows vs max_rows_to_read settings.
+Description: Fix 'Limit for rows exceeded' errors in ClickHouse by adjusting result size limits and understanding max_result_rows vs max_rows_to_read settings.
 
 ---
 

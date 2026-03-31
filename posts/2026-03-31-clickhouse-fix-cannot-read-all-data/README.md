@@ -1,10 +1,10 @@
-# How to Fix "Cannot read all data" Format Errors in ClickHouse
+# How to Fix 'Cannot read all data' Format Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Troubleshooting, Format, Data Ingestion, Parsing
 
-Description: Fix "Cannot read all data" format errors in ClickHouse caused by malformed input data, incorrect format specification, or corrupted data parts.
+Description: Fix 'Cannot read all data' format errors in ClickHouse caused by malformed input data, incorrect format specification, or corrupted data parts.
 
 ---
 

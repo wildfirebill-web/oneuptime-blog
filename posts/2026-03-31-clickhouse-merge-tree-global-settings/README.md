@@ -1,7 +1,9 @@
 # How to Configure ClickHouse Merge Tree Settings Globally
 
 Author: OneUptime Team
+
 Tags: ClickHouse, Configuration, MergeTree, Storage, Performance
+
 Description: Learn how to configure global MergeTree settings in ClickHouse's config.xml to apply default storage and merge behavior across all MergeTree tables.
 
 ---

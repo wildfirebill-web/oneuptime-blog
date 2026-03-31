@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Collation, Error, Mixed Collation, Join
 
-Description: Learn how to diagnose and fix the "Illegal mix of collations" error in MySQL when joining or comparing columns with different collations.
+Description: Learn how to diagnose and fix the 'Illegal mix of collations' error in MySQL when joining or comparing columns with different collations.
 
 ---
 

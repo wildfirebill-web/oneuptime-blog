@@ -1,4 +1,4 @@
-# How to Fix "Received timeout" Errors in ClickHouse
+# How to Fix 'Received timeout' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

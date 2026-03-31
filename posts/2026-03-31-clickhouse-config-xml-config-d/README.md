@@ -1,7 +1,9 @@
 # How to Use config.xml vs config.d Directory in ClickHouse
 
 Author: OneUptime Team
+
 Tags: ClickHouse, Configuration, Server, BestPractice, Administration
+
 Description: Learn the difference between ClickHouse's main config.xml and the config.d drop-in directory, and how to structure configuration for maintainability.
 
 ---

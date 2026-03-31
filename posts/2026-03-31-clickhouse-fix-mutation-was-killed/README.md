@@ -1,10 +1,10 @@
-# How to Fix "Mutation was killed" in ClickHouse
+# How to Fix 'Mutation was killed' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Mutation, Error, DELETE, UPDATE, Troubleshooting
 
-Description: Fix "Mutation was killed" errors in ClickHouse by identifying the cause, re-running mutations, and configuring mutation settings properly.
+Description: Fix 'Mutation was killed' errors in ClickHouse by identifying the cause, re-running mutations, and configuring mutation settings properly.
 
 ---
 

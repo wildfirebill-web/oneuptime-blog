@@ -1,7 +1,9 @@
 # How to Configure ClickHouse Multiple Disk Volumes
 
 Author: OneUptime Team
+
 Tags: ClickHouse, Configuration, Storage, Disk, Tiering
+
 Description: Learn how to configure multiple disks and storage volumes in ClickHouse using storage_configuration to implement tiered storage and disk policies.
 
 ---

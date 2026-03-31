@@ -1,10 +1,10 @@
-# What Does "ERR syntax error" Mean in Redis
+# What Does 'ERR syntax error' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Error, Debugging, Commands
 
-Description: Understand the Redis "ERR syntax error" message, common causes like wrong argument order or unknown options, and how to fix command syntax issues.
+Description: Understand the Redis 'ERR syntax error' message, common causes like wrong argument order or unknown options, and how to fix command syntax issues.
 
 ---
 

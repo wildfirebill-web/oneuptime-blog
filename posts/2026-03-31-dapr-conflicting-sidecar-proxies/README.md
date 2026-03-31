@@ -1,0 +1,128 @@
+# How to Handle Conflicting Sidecar Proxies with Dapr
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Dapr, Service Mesh, Sidecar, Kubernetes, Troubleshooting
+
+Description: Learn how to resolve conflicts between Dapr sidecars and service mesh proxy sidecars including port conflicts and startup ordering issues.
+
+---
+
+When Dapr and a service mesh both inject sidecar proxies into the same pod, conflicts can arise around port allocation, initialization ordering, and network traffic interception. This guide covers the most common conflict scenarios and how to resolve them.
+
+## Common Conflict Types
+
+1. **Port conflicts**: Dapr and mesh proxies may try to bind the same ports.
+2. **Startup ordering**: If the mesh proxy starts before Dapr, the app's network may not be ready.
+3. **Traffic interception**: The mesh proxy may intercept Dapr's internal health check calls.
+4. **iptables rules**: Both sidecars may configure iptables, causing routing loops.
+
+## Identify Port Conflicts
+
+List all ports used by both sidecars:
+
+```bash
+kubectl exec <pod> -- ss -tlnp
+```
+
+Dapr default ports:
+- 3500: HTTP API
+- 50001: gRPC API
+- 9090: Metrics
+- 7778: Profiling
+
+Istio Envoy default ports:
+- 15000: Admin
+- 15001: Outbound
+- 15006: Inbound
+- 15090: Prometheus
+
+If any overlap with your app port, change the app port:
+
+```yaml
+annotations:
+  dapr.io/app-port: "8080"
+```
+
+## Configure Istio to Skip Dapr Ports
+
+Tell Istio's Envoy to exclude Dapr's ports from traffic interception:
+
+```yaml
+annotations:
+  traffic.sidecar.istio.io/excludeInboundPorts: "3500,50001"
+  traffic.sidecar.istio.io/excludeOutboundPorts: "3500,50001"
+```
+
+This prevents Envoy from intercepting Dapr-to-Dapr internal traffic while still routing app-to-app traffic through the mesh.
+
+## Fix Startup Ordering Issues
+
+Use `postStart` hooks or init containers to ensure correct initialization order:
+
+```yaml
+spec:
+  initContainers:
+  - name: wait-for-mesh
+    image: busybox
+    command: ['sh', '-c', 'until nc -z localhost 15001; do sleep 1; done']
+```
+
+Alternatively, configure Dapr's wait-for-sidecar behavior:
+
+```yaml
+annotations:
+  dapr.io/sidecar-listen-addresses: "0.0.0.0"
+```
+
+## Resolve iptables Conflicts
+
+If both proxies modify iptables rules, check for rule conflicts:
+
+```bash
+kubectl exec <pod> -c istio-proxy -- iptables -t nat -L
+```
+
+For Istio, configure `ISTIO_META_INTERCEPTION_MODE` to `NONE` for the Dapr sidecar specifically:
+
+```yaml
+annotations:
+  sidecar.istio.io/interceptionMode: "NONE"
+```
+
+This disables Envoy's iptables interception for Dapr's traffic paths.
+
+## Handle Health Check Conflicts
+
+Service mesh probes and Dapr health checks can conflict. Configure separate health check ports:
+
+```yaml
+annotations:
+  dapr.io/app-health-check-path: "/health"
+  dapr.io/app-health-probe-interval: "30"
+  dapr.io/app-health-probe-timeout: "5"
+```
+
+And tell Istio to exclude the health check port from interception:
+
+```yaml
+annotations:
+  traffic.sidecar.istio.io/excludeInboundPorts: "8081"
+```
+
+## Verify No Conflicts After Configuration
+
+```bash
+# Check all containers started successfully
+kubectl get pod <pod-name> -o jsonpath='{.status.containerStatuses[*].ready}'
+
+# Verify Dapr sidecar health
+kubectl exec <pod> -c daprd -- wget -qO- http://localhost:3500/v1.0/healthz
+
+# Verify mesh proxy health
+kubectl exec <pod> -c istio-proxy -- pilot-agent request GET healthz/ready
+```
+
+## Summary
+
+Conflicts between Dapr and service mesh sidecars are manageable through careful port exclusion configuration and startup ordering. Use Istio's port exclusion annotations to prevent Envoy from intercepting Dapr's internal API ports, fix startup ordering with init containers, and verify both sidecars report healthy status after applying changes. Clear separation of responsibilities between Dapr's API layer and the mesh's network layer minimizes ongoing conflicts.

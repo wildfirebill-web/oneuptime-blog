@@ -1,10 +1,10 @@
-# What Does "ERR invalid password" Mean in Redis
+# What Does 'ERR invalid password' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Authentication, Error, Security, Debugging
 
-Description: Understand the Redis "ERR invalid password" error, what causes it, and how to fix authentication issues in Redis configuration and client code.
+Description: Understand the Redis 'ERR invalid password' error, what causes it, and how to fix authentication issues in Redis configuration and client code.
 
 ---
 

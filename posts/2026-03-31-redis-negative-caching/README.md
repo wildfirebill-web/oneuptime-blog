@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Cache, Performance, Strategy, API
 
-Description: Learn how to use negative caching in Redis to cache "not found" results and protect your database from repeated lookups of missing data.
+Description: Learn how to use negative caching in Redis to cache 'not found' results and protect your database from repeated lookups of missing data.
 
 ---
 

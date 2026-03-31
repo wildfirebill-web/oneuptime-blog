@@ -1,4 +1,4 @@
-# What Does "NOSCRIPT No matching script" Mean in Redis
+# What Does 'NOSCRIPT No matching script' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

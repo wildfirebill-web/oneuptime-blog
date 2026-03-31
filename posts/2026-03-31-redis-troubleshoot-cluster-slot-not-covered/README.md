@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Cluster, Slot, Troubleshooting, High Availability
 
-Description: Fix Redis cluster "CLUSTERDOWN Hash slot not served" errors by identifying uncovered slots, recovering failed nodes, and reshard or importing slots.
+Description: Fix Redis cluster 'CLUSTERDOWN Hash slot not served' errors by identifying uncovered slots, recovering failed nodes, and reshard or importing slots.
 
 ---
 

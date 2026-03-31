@@ -1,10 +1,10 @@
-# How to Fix "No free disk space" Errors in ClickHouse
+# How to Fix 'No free disk space' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Troubleshooting, Disk Space, Storage, Maintenance
 
-Description: Resolve "No free disk space" errors in ClickHouse by identifying disk consumers, removing old data, configuring TTL, and expanding storage capacity.
+Description: Resolve 'No free disk space' errors in ClickHouse by identifying disk consumers, removing old data, configuring TTL, and expanding storage capacity.
 
 ---
 

@@ -1,10 +1,10 @@
-# How to Use Read Preference "primary" in MongoDB
+# How to Use Read Preference 'primary' in MongoDB
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Read Preference, Replica Set, Consistency, Primary
 
-Description: Learn how MongoDB's read preference "primary" works, why it is the default, and when it is appropriate to route all reads to the primary node.
+Description: Learn how MongoDB's read preference 'primary' works, why it is the default, and when it is appropriate to route all reads to the primary node.
 
 ---
 

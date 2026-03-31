@@ -1,10 +1,10 @@
-# How to Fix "Connection refused" Errors in ClickHouse
+# How to Fix 'Connection refused' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Connection, Error, Troubleshooting, Network
 
-Description: Diagnose and fix "Connection refused" errors when connecting to ClickHouse, covering server state, binding, firewall, and TLS issues.
+Description: Diagnose and fix 'Connection refused' errors when connecting to ClickHouse, covering server state, binding, firewall, and TLS issues.
 
 ---
 

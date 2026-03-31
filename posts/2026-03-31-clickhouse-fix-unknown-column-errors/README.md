@@ -1,10 +1,10 @@
-# How to Fix "Unknown column" Errors in ClickHouse
+# How to Fix 'Unknown column' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Error, Column, Schema, Troubleshooting
 
-Description: Fix "Unknown column" errors in ClickHouse by verifying column names, checking alias scope, and understanding column resolution in subqueries.
+Description: Fix 'Unknown column' errors in ClickHouse by verifying column names, checking alias scope, and understanding column resolution in subqueries.
 
 ---
 

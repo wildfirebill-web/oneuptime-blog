@@ -1,10 +1,10 @@
-# How to Fix "Code: 60 Table doesn't exist" in ClickHouse
+# How to Fix 'Code: 60 Table doesn't exist' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Error, Table, Troubleshooting, DDL
 
-Description: Resolve ClickHouse error Code 60 "Table doesn't exist" by identifying missing tables, detached states, and database context issues.
+Description: Resolve ClickHouse error Code 60 'Table doesn't exist' by identifying missing tables, detached states, and database context issues.
 
 ---
 

@@ -1,10 +1,10 @@
-# How to Fix "Received timeout" Errors in ClickHouse
+# How to Fix 'Received timeout' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Timeout, Error, Troubleshooting, Performance
 
-Description: Diagnose and fix "Received timeout" errors in ClickHouse by tuning connection, query, and receive timeout settings for slow queries.
+Description: Diagnose and fix 'Received timeout' errors in ClickHouse by tuning connection, query, and receive timeout settings for slow queries.
 
 ---
 

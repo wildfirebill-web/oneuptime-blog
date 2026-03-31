@@ -1,10 +1,10 @@
-# How to Fix "Cannot execute query in readonly mode" in ClickHouse
+# How to Fix 'Cannot execute query in readonly mode' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Readonly, Permission, Error, Troubleshooting
 
-Description: Fix "Cannot execute query in readonly mode" errors in ClickHouse by adjusting user readonly settings or fixing the underlying readonly cause.
+Description: Fix 'Cannot execute query in readonly mode' errors in ClickHouse by adjusting user readonly settings or fixing the underlying readonly cause.
 
 ---
 

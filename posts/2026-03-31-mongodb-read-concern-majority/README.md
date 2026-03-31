@@ -1,10 +1,10 @@
-# How to Use Read Concern "majority" in MongoDB
+# How to Use Read Concern 'majority' in MongoDB
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Read Concern, Consistency, Replica Set, Durability
 
-Description: Learn how MongoDB's read concern "majority" guarantees durable reads that cannot be rolled back, and when to use it for strong consistency requirements.
+Description: Learn how MongoDB's read concern 'majority' guarantees durable reads that cannot be rolled back, and when to use it for strong consistency requirements.
 
 ---
 

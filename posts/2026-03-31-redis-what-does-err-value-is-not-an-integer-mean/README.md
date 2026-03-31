@@ -1,10 +1,10 @@
-# What Does "ERR value is not an integer" Mean in Redis
+# What Does 'ERR value is not an integer' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Error, Debugging, Data Types
 
-Description: Understand the Redis "ERR value is not an integer or out of range" error, which commands cause it, and how to validate integer inputs in your application.
+Description: Understand the Redis 'ERR value is not an integer or out of range' error, which commands cause it, and how to validate integer inputs in your application.
 
 ---
 

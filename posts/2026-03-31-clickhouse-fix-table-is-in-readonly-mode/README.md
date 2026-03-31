@@ -1,10 +1,10 @@
-# How to Fix "Table is in readonly mode" in ClickHouse
+# How to Fix 'Table is in readonly mode' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Readonly, ReplicatedMergeTree, ZooKeeper, Troubleshooting
 
-Description: Fix "Table is in readonly mode" errors in ClickHouse ReplicatedMergeTree tables caused by ZooKeeper connectivity or metadata issues.
+Description: Fix 'Table is in readonly mode' errors in ClickHouse ReplicatedMergeTree tables caused by ZooKeeper connectivity or metadata issues.
 
 ---
 

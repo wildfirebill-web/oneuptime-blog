@@ -1,10 +1,10 @@
-# How to Fix "Part is broken" Errors in ClickHouse
+# How to Fix 'Part is broken' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Data Corruption, Error, MergeTree, Troubleshooting
 
-Description: Fix "Part is broken" errors in ClickHouse by identifying corrupted parts, detaching them, and restoring from replicas or backups.
+Description: Fix 'Part is broken' errors in ClickHouse by identifying corrupted parts, detaching them, and restoring from replicas or backups.
 
 ---
 

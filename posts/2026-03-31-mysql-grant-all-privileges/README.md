@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, User, Privilege, Security, Database Administration
 
-Description: Learn how to use GRANT ALL PRIVILEGES in MySQL to give a user full access to a database or globally, and understand what "all privileges" includes.
+Description: Learn how to use GRANT ALL PRIVILEGES in MySQL to give a user full access to a database or globally, and understand what 'all privileges' includes.
 
 ---
 

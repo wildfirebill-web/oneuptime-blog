@@ -1,7 +1,9 @@
 # How to Set max_bytes_to_read in ClickHouse
 
 Author: OneUptime Team
+
 Tags: ClickHouse, Configuration, QueryLimit, Safety, Performance
+
 Description: Learn how to set max_bytes_to_read in ClickHouse to limit the amount of raw data a query can read from disk, protecting shared clusters from expensive scans.
 
 ---

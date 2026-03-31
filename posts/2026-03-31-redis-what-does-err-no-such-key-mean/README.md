@@ -1,10 +1,10 @@
-# What Does "ERR no such key" Mean in Redis
+# What Does 'ERR no such key' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Error, Debugging, Key Management
 
-Description: Understand the Redis "ERR no such key" error, which commands return it, and how to handle missing keys safely in your application code.
+Description: Understand the Redis 'ERR no such key' error, which commands return it, and how to handle missing keys safely in your application code.
 
 ---
 

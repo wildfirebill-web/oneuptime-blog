@@ -1,10 +1,10 @@
-# How to Fix "Replica is not in sync" Errors in ClickHouse
+# How to Fix 'Replica is not in sync' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Troubleshooting, Replication, Replica, Synchronization
 
-Description: Fix "Replica is not in sync" errors in ClickHouse by diagnosing replication lag, forcing synchronization, and recovering stale or detached replicas.
+Description: Fix 'Replica is not in sync' errors in ClickHouse by diagnosing replication lag, forcing synchronization, and recovering stale or detached replicas.
 
 ---
 

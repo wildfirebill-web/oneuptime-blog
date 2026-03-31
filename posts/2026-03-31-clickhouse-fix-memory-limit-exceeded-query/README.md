@@ -1,10 +1,10 @@
-# How to Fix "Memory limit exceeded for query" in ClickHouse
+# How to Fix 'Memory limit exceeded for query' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Troubleshooting, Memory, Query, Optimization
 
-Description: Fix "Memory limit exceeded for query" errors in ClickHouse by increasing query memory limits, enabling external aggregation, and optimizing high-memory queries.
+Description: Fix 'Memory limit exceeded for query' errors in ClickHouse by increasing query memory limits, enabling external aggregation, and optimizing high-memory queries.
 
 ---
 

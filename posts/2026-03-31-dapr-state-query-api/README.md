@@ -1,0 +1,129 @@
+# How to Query State Using the Dapr Query API
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Dapr, State Management, Query, Filter, Search
+
+Description: Learn how to query Dapr state store using the alpha Query API with filtering, sorting, and pagination to find state records matching specific criteria.
+
+---
+
+## What Is the Dapr Query State API?
+
+The Dapr Query State API (alpha) lets you filter, sort, and paginate state records without knowing specific keys. It is useful when you store structured objects and need to find records matching field conditions.
+
+Not all state stores support the query API. MongoDB and Azure Cosmos DB are the primary supported backends.
+
+## Enabling the Query API
+
+Add the feature flag to your Dapr configuration:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Configuration
+metadata:
+  name: appconfig
+spec:
+  features:
+    - name: QueryStateAlpha1
+      enabled: true
+```
+
+## Basic Query
+
+Filter orders by status:
+
+```bash
+curl -X POST \
+  "http://localhost:3500/v1.0-alpha1/state/statestore/query" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "filter": {
+      "EQ": {"value.status": "pending"}
+    }
+  }'
+```
+
+## Using Comparison Operators
+
+```bash
+curl -X POST \
+  "http://localhost:3500/v1.0-alpha1/state/statestore/query" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "filter": {
+      "AND": [
+        {"EQ": {"value.status": "pending"}},
+        {"GT": {"value.amount": 100}}
+      ]
+    }
+  }'
+```
+
+Supported operators: `EQ`, `NEQ`, `GT`, `GTE`, `LT`, `LTE`, `IN`, `AND`, `OR`
+
+## Sorting Results
+
+```bash
+curl -X POST \
+  "http://localhost:3500/v1.0-alpha1/state/statestore/query" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "filter": {
+      "EQ": {"value.status": "pending"}
+    },
+    "sort": [
+      {"key": "value.createdAt", "order": "DESC"}
+    ]
+  }'
+```
+
+## Paginating Results
+
+```bash
+curl -X POST \
+  "http://localhost:3500/v1.0-alpha1/state/statestore/query" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "filter": {"EQ": {"value.status": "pending"}},
+    "page": {
+      "limit": 10,
+      "token": ""
+    }
+  }'
+```
+
+The response includes a `token` for fetching the next page:
+
+```json
+{
+  "results": [...],
+  "token": "eyJwYWdlIjogMn0=",
+  "metadata": {"count": "10"}
+}
+```
+
+Pass the token to get the next page:
+
+```bash
+-d '{"filter": {...}, "page": {"limit": 10, "token": "eyJwYWdlIjogMn0="}}'
+```
+
+## Using the Go SDK
+
+```go
+query := `{
+  "filter": {"EQ": {"value.org": "Engineering"}},
+  "sort": [{"key": "value.person.id", "order": "ASC"}],
+  "page": {"limit": 5}
+}`
+
+result, err := client.QueryStateAlpha1(ctx, "statestore", query, nil)
+for _, item := range result.Results {
+    fmt.Printf("Key: %s, Data: %s\n", item.Key, item.Value)
+}
+```
+
+## Summary
+
+The Dapr Query State API (alpha) enables filtering, sorting, and paginating state records using a JSON query language. Enable it with the `QueryStateAlpha1` feature flag, POST queries to `/v1.0-alpha1/state/{store}/query`, and use the returned pagination token for multi-page results. MongoDB and Cosmos DB are the primary supported state stores.

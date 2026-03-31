@@ -1,10 +1,10 @@
-# How to Fix "Cannot determine subquery type" in ClickHouse
+# How to Fix 'Cannot determine subquery type' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Subquery, Error, SQL, Troubleshooting
 
-Description: Fix "Cannot determine subquery type" errors in ClickHouse by restructuring ambiguous subqueries and ensuring scalar subquery results are properly typed.
+Description: Fix 'Cannot determine subquery type' errors in ClickHouse by restructuring ambiguous subqueries and ensuring scalar subquery results are properly typed.
 
 ---
 

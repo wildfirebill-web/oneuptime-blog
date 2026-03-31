@@ -1,0 +1,134 @@
+# How to Use MySQL Shell with X DevAPI in JavaScript
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: MySQL, MySQL Shell, JavaScript, X DevAPI, Interactive
+
+Description: Learn how to use MySQL Shell in JavaScript mode to interact with MySQL databases and document collections using the X DevAPI interactively.
+
+---
+
+## What is MySQL Shell?
+
+MySQL Shell is an advanced command-line client for MySQL that supports three interactive modes: SQL, JavaScript, and Python. In JavaScript mode, it exposes the full X DevAPI through a built-in `session` object, making it ideal for exploring databases, running scripts, and testing X DevAPI operations interactively.
+
+## Installing MySQL Shell
+
+```bash
+# Ubuntu/Debian
+sudo apt-get install mysql-shell
+
+# macOS
+brew install mysql-shell
+
+# Check version
+mysqlsh --version
+```
+
+## Connecting in X Protocol Mode
+
+```bash
+mysqlsh --uri mysqlx://root@127.0.0.1:33060
+```
+
+Switch to JavaScript mode if not already active:
+
+```javascript
+\js
+```
+
+## Exploring the Session Object
+
+```javascript
+// List databases
+session.getSchemas().then(schemas => schemas.forEach(s => console.log(s.getName())));
+
+// Get a schema
+const db = session.getSchema('mydb');
+
+// List collections and tables
+db.getCollections().then(cols => cols.forEach(c => console.log('Collection:', c.getName())));
+db.getTables().then(tables => tables.forEach(t => console.log('Table:', t.getName())));
+```
+
+## Working with Collections in JavaScript Mode
+
+```javascript
+const col = db.getCollection('products');
+
+// Add documents
+await col.add({ name: 'Widget', price: 9.99, inStock: true }).execute();
+
+// Find and display
+const result = await col.find('inStock = true').sort(['price ASC']).execute();
+result.fetchAll().forEach(doc => print(JSON.stringify(doc)));
+
+// Modify
+await col.modify('name = "Widget"').set('price', 12.99).execute();
+
+// Remove
+await col.remove('inStock = false').execute();
+```
+
+## Running SQL from JavaScript Mode
+
+You can execute raw SQL from within JavaScript mode using `session.sql()`:
+
+```javascript
+const result = await session.sql('SELECT VERSION()').execute();
+console.log(result.fetchOne()[0]);
+
+// Use a specific database
+await session.sql('USE mydb').execute();
+
+// Run a query and iterate rows
+const rows = await session.sql('SELECT id, name FROM customers LIMIT 5').execute();
+rows.fetchAll().forEach(row => console.log(row[0], row[1]));
+```
+
+## Switching Between Modes
+
+```javascript
+\sql
+-- Now in SQL mode
+SHOW TABLES;
+
+\js
+// Back in JavaScript mode
+db.getName()
+```
+
+## Running a JavaScript Script File
+
+Create a file `setup.js`:
+
+```javascript
+const schema = session.getSchema('mydb');
+const orders = schema.getCollection('orders');
+await orders.add({ orderId: 1001, total: 55.00, status: 'new' }).execute();
+print('Order inserted');
+```
+
+Run it from the shell:
+
+```bash
+mysqlsh --uri mysqlx://root:secret@127.0.0.1:33060 --file setup.js
+```
+
+## Using X DevAPI from a Script with Output
+
+```javascript
+// Script: report.js
+const db = session.getSchema('mydb');
+const result = await db.getCollection('orders').find('status = "pending"').execute();
+const pending = result.fetchAll();
+print('Pending orders: ' + pending.length);
+```
+
+```bash
+mysqlsh --uri mysqlx://root:secret@127.0.0.1:33060 --file report.js
+```
+
+## Summary
+
+MySQL Shell in JavaScript mode provides a powerful interactive environment for the X DevAPI. Use it to prototype collection operations, run ad-hoc queries, and automate administrative scripts. The combination of JavaScript X DevAPI methods and inline SQL via `session.sql()` gives you access to both document and relational interfaces in a single shell session.

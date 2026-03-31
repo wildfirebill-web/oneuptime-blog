@@ -1,10 +1,10 @@
-# How to Fix "Table is in readonly mode" in ClickHouse
+# How to Fix 'Table is in readonly mode' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Troubleshooting, Replication, ZooKeeper, Readonly
 
-Description: Fix "Table is in readonly mode" errors in ClickHouse caused by ZooKeeper connectivity issues, stale replicas, or disk space exhaustion.
+Description: Fix 'Table is in readonly mode' errors in ClickHouse caused by ZooKeeper connectivity issues, stale replicas, or disk space exhaustion.
 
 ---
 

@@ -1,10 +1,10 @@
-# How to Fix "All connection tries failed" in ClickHouse
+# How to Fix 'All connection tries failed' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Connection, Distributed, Error, Troubleshooting
 
-Description: Resolve "All connection tries failed" errors in ClickHouse distributed queries by fixing shard connectivity, authentication, and cluster config.
+Description: Resolve 'All connection tries failed' errors in ClickHouse distributed queries by fixing shard connectivity, authentication, and cluster config.
 
 ---
 

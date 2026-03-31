@@ -1,10 +1,10 @@
-# What Does "ERR value is not a valid float" Mean in Redis
+# What Does 'ERR value is not a valid float' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Error, Debugging, Data Types
 
-Description: Understand the Redis "ERR value is not a valid float" error, which commands trigger it, and how to validate numeric inputs before sending to Redis.
+Description: Understand the Redis 'ERR value is not a valid float' error, which commands trigger it, and how to validate numeric inputs before sending to Redis.
 
 ---
 

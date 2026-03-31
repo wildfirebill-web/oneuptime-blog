@@ -1,7 +1,9 @@
 # How to Set max_rows_to_read for Query Limits in ClickHouse
 
 Author: OneUptime Team
+
 Tags: ClickHouse, Configuration, QueryLimit, Safety, Performance
+
 Description: Learn how to set max_rows_to_read in ClickHouse to limit how many rows a query can scan, preventing runaway queries from overloading the server.
 
 ---

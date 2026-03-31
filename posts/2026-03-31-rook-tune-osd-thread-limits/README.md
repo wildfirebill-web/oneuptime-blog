@@ -1,0 +1,108 @@
+# How to Tune OSD Thread Limits in Ceph
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Rook, Ceph, OSD, Performance, Threading
+
+Description: Learn how to configure Ceph OSD thread limits and operation queues to balance throughput, latency, and resource usage in production clusters.
+
+---
+
+## OSD Threading Architecture
+
+Each Ceph OSD uses multiple thread pools to handle client I/O, recovery, scrubbing, and internal operations. Tuning thread counts affects how the OSD balances concurrent work - too few threads limit throughput, too many waste CPU and increase context switching overhead.
+
+## Key Threading Parameters
+
+The main OSD thread settings are:
+
+| Parameter | Default | Description |
+| --- | --- | --- |
+| `osd_op_num_threads_per_shard` | 2 | Threads per I/O shard |
+| `osd_op_num_shards` | 8 | Number of I/O operation shards |
+| `osd_recovery_threads` | 1 | Threads for data recovery |
+| `osd_snap_trim_thread_timeout` | 1800 | Timeout for snapshot trim threads |
+
+## Configuring I/O Threads
+
+The OSD uses a sharded thread pool for client I/O. Increase shards on NVMe-based OSDs:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph config set osd osd_op_num_shards 16
+
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph config set osd osd_op_num_threads_per_shard 2
+```
+
+For HDD-based OSDs, fewer shards are appropriate since HDDs cannot parallelize I/O as effectively:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph config set osd osd_op_num_shards 4
+```
+
+## Recovery Thread Tuning
+
+Recovery threads control how fast Ceph replicates data after an OSD failure:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph config set osd osd_recovery_threads 2
+```
+
+Increasing recovery threads speeds up recovery but competes with client I/O. Pair this with a lower recovery priority:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph config set osd osd_recovery_op_priority 3
+```
+
+## Applying Settings via Rook CephCluster CR
+
+```yaml
+apiVersion: ceph.rook.io/v1
+kind: CephCluster
+metadata:
+  name: rook-ceph
+  namespace: rook-ceph
+spec:
+  cephConfig:
+    osd:
+      osd_op_num_shards: "8"
+      osd_op_num_threads_per_shard: "2"
+      osd_recovery_threads: "1"
+      osd_recovery_op_priority: "3"
+```
+
+## Monitoring Thread Utilization
+
+Check current OSD operation queues to determine if threads are saturated:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph daemon osd.0 ops | head -20
+```
+
+View OSD thread count and CPU usage from within the OSD pod:
+
+```bash
+OSD_POD=$(kubectl -n rook-ceph get pods -l app=rook-ceph-osd,ceph-osd-id=0 -o name)
+kubectl -n rook-ceph exec $OSD_POD -- ps -T -p 1
+```
+
+## Disk Queue Depth
+
+For NVMe OSDs, also tune the bluestore async I/O threads:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph config set osd bluestore_aio_max_queue_depth 64
+
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph config set osd bluestore_rocksdb_threads 8
+```
+
+## Summary
+
+OSD thread tuning controls how Ceph allocates CPU resources across client I/O, recovery, and internal tasks. Use more I/O shards for NVMe OSDs and fewer for HDDs. Keep recovery thread priority low in production to protect client I/O. Apply changes via `ceph config set` or the Rook `CephCluster` CR's `cephConfig` field, and monitor with `ceph daemon osd.X ops`.

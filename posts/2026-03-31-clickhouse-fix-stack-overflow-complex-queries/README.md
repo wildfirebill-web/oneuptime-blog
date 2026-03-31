@@ -1,4 +1,4 @@
-# How to Fix "Stack overflow" in Complex ClickHouse Queries
+# How to Fix 'Stack overflow' in Complex ClickHouse Queries
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

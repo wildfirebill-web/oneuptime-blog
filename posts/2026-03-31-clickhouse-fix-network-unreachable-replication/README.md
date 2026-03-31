@@ -1,10 +1,10 @@
-# How to Fix "Network is unreachable" for ClickHouse Replication
+# How to Fix 'Network is unreachable' for ClickHouse Replication
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Network, Replication, Error, Troubleshooting
 
-Description: Fix "Network is unreachable" errors in ClickHouse replication by diagnosing routing, DNS, firewall rules, and inter-server port access.
+Description: Fix 'Network is unreachable' errors in ClickHouse replication by diagnosing routing, DNS, firewall rules, and inter-server port access.
 
 ---
 

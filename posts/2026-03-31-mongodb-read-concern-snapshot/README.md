@@ -1,10 +1,10 @@
-# How to Use Read Concern "snapshot" in MongoDB
+# How to Use Read Concern 'snapshot' in MongoDB
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Read Concern, Transaction, Snapshot, Consistency
 
-Description: Learn how MongoDB's read concern "snapshot" provides a consistent point-in-time view across multiple documents within multi-document transactions.
+Description: Learn how MongoDB's read concern 'snapshot' provides a consistent point-in-time view across multiple documents within multi-document transactions.
 
 ---
 

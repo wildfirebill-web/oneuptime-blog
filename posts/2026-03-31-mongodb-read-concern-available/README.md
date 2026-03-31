@@ -1,10 +1,10 @@
-# How to Use Read Concern "available" in MongoDB
+# How to Use Read Concern 'available' in MongoDB
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Read Concern, Sharding, Performance, Consistency
 
-Description: Learn how MongoDB's read concern "available" provides the lowest-latency reads from sharded clusters by skipping ownership checks, and understand its consistency trade-offs.
+Description: Learn how MongoDB's read concern 'available' provides the lowest-latency reads from sharded clusters by skipping ownership checks, and understand its consistency trade-offs.
 
 ---
 

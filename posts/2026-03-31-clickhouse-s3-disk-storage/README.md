@@ -1,7 +1,9 @@
 # How to Configure ClickHouse S3 Disk Storage
 
 Author: OneUptime Team
+
 Tags: ClickHouse, Configuration, S3, ObjectStorage, Tiering
+
 Description: Learn how to configure ClickHouse's S3 disk to store data parts directly in S3-compatible object storage for scalable cold or primary storage.
 
 ---

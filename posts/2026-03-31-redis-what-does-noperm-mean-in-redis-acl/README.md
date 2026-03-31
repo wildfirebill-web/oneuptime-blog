@@ -1,4 +1,4 @@
-# What Does "NOPERM" Mean in Redis ACL
+# What Does 'NOPERM' Mean in Redis ACL
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

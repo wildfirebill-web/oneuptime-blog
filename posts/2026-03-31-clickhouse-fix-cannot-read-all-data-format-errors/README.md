@@ -1,10 +1,10 @@
-# How to Fix "Cannot read all data" Format Errors in ClickHouse
+# How to Fix 'Cannot read all data' Format Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Format, Error, Data Ingestion, Troubleshooting
 
-Description: Resolve "Cannot read all data" format errors in ClickHouse caused by truncated input, encoding issues, or mismatched column counts.
+Description: Resolve 'Cannot read all data' format errors in ClickHouse caused by truncated input, encoding issues, or mismatched column counts.
 
 ---
 

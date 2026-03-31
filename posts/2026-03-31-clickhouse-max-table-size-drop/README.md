@@ -1,7 +1,9 @@
 # How to Configure ClickHouse Max Table Size to Drop
 
 Author: OneUptime Team
+
 Tags: ClickHouse, Configuration, Safety, Administration, Server
+
 Description: Learn how to configure max_table_size_to_drop and max_partition_size_to_drop in ClickHouse to protect large tables from accidental deletion.
 
 ---

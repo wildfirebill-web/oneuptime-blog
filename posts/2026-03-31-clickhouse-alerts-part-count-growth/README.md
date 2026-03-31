@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Alert, Part Count, MergeTree, Monitoring
 
-Description: Set up part count growth alerts in ClickHouse to prevent "too many parts" errors that throttle inserts and degrade query performance in MergeTree tables.
+Description: Set up part count growth alerts in ClickHouse to prevent 'too many parts' errors that throttle inserts and degrade query performance in MergeTree tables.
 
 ---
 

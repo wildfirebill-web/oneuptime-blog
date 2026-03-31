@@ -1,10 +1,10 @@
-# How to Fix "Maximum parse depth exceeded" in ClickHouse
+# How to Fix 'Maximum parse depth exceeded' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Parser, Error, SQL, Troubleshooting
 
-Description: Resolve "Maximum parse depth exceeded" errors in ClickHouse caused by deeply nested SQL queries, IN lists, or complex expressions.
+Description: Resolve 'Maximum parse depth exceeded' errors in ClickHouse caused by deeply nested SQL queries, IN lists, or complex expressions.
 
 ---
 

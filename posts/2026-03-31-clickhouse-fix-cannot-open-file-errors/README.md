@@ -1,10 +1,10 @@
-# How to Fix "Cannot open file" Errors in ClickHouse
+# How to Fix 'Cannot open file' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, File, Error, Permissions, Troubleshooting
 
-Description: Fix "Cannot open file" errors in ClickHouse caused by permission problems, missing directories, or exceeding the open file descriptor limit.
+Description: Fix 'Cannot open file' errors in ClickHouse caused by permission problems, missing directories, or exceeding the open file descriptor limit.
 
 ---
 

@@ -1,0 +1,114 @@
+# How to Handle Split-Brain Scenarios in Rook Stretch Clusters
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Rook, Ceph, Split-Brain, Stretch Cluster, Recovery
+
+Description: Learn how to detect and recover from split-brain scenarios in Rook-Ceph stretch clusters where both sites lose visibility of each other simultaneously.
+
+---
+
+## Overview
+
+A split-brain in a Rook-Ceph stretch cluster occurs when zone-a and zone-b lose connectivity with each other AND the tiebreaker arbiter is unreachable from both sides simultaneously. In this scenario, neither site can form quorum, and the cluster will halt I/O to protect data consistency. This guide explains how to detect this condition and recover safely.
+
+## Understanding Split-Brain in Stretch Mode
+
+In a properly configured stretch cluster, the tiebreaker arbiter prevents split-brain. If zone-a loses connectivity to zone-b, the arbiter can still communicate with one side, granting quorum to that side while blocking the other. A true split-brain only occurs when:
+
+1. Zone-a cannot reach zone-b
+2. Zone-a cannot reach the arbiter
+3. Zone-b cannot reach the arbiter
+
+In this case, no side has quorum and writes are blocked cluster-wide.
+
+## Detecting a Split-Brain Event
+
+Signs of a split-brain include all monitors reporting `HEALTH_ERR` and I/O blocking on all zones:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph quorum_status -f json-pretty
+```
+
+If `quorum_names` is empty, no quorum exists:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph quorum_status -f json | python3 -c \
+  "import sys,json; d=json.load(sys.stdin); print('quorum:', d['quorum_names'])"
+```
+
+## Step 1 - Restore Network Connectivity
+
+The safest resolution is always to restore connectivity first. Check the network paths between zones:
+
+```bash
+# From zone-a node, test reachability to zone-b monitors
+ping <zone-b-monitor-ip>
+traceroute <zone-b-monitor-ip>
+
+# Test arbiter reachability
+ping <arbiter-monitor-ip>
+```
+
+Fix any firewall rules, routing issues, or physical connectivity problems before attempting manual quorum recovery.
+
+## Step 2 - Force Quorum on One Side (Last Resort)
+
+If network restoration is not immediately possible and you must restore I/O on one side, you can force a monitor to run with fewer monitors. This should only be done on the site you are certain has the most recent data:
+
+```bash
+# On the surviving site's monitor node (as a last resort)
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph daemon mon.<name> mon_command '{"prefix": "mon force_quorum_update"}'
+```
+
+This is a destructive operation that overrides quorum requirements. Use it only when all network restoration options are exhausted.
+
+## Step 3 - Verify Data Integrity After Recovery
+
+Once quorum is restored and both sites rejoin:
+
+```bash
+# Check for inconsistent placement groups
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph pg dump | grep -i inconsistent
+
+# Run a scrub on affected pools
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph pg deep-scrub <pg-id>
+
+# Check for any unrecoverable objects
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph health detail | grep -i unfound
+```
+
+## Preventing Split-Brain
+
+Best practices to minimize split-brain risk:
+
+```yaml
+# Ensure arbiter monitor has reliable network path to both zones
+# Place arbiter in a third independent facility or cloud region
+# Use dedicated management network for monitor communication
+# Configure redundant network paths between zones
+
+# Monitor connectivity between zones
+spec:
+  mon:
+    count: 5
+    stretchCluster:
+      failureDomainLabel: topology.kubernetes.io/zone
+      zones:
+      - name: zone-a
+        arbiter: false
+      - name: zone-b
+        arbiter: false
+      - name: zone-c
+        arbiter: true
+```
+
+## Summary
+
+Split-brain in Rook stretch clusters only occurs when all inter-zone and arbiter connectivity is lost simultaneously. The primary resolution is always network restoration. Forcing quorum is a last-resort operation that risks data inconsistency. After any split-brain event, run deep scrubs to verify data integrity and review network architecture to prevent recurrence. Placing the arbiter in a genuinely independent third location is the most effective prevention strategy.

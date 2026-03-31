@@ -1,10 +1,10 @@
-# How to Use Read Concern "local" in MongoDB
+# How to Use Read Concern 'local' in MongoDB
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Read Concern, Consistency, Replica Set, Performance
 
-Description: Learn how MongoDB's read concern "local" works, when to use it for lowest-latency reads, and what rollback risk it carries in replica set deployments.
+Description: Learn how MongoDB's read concern 'local' works, when to use it for lowest-latency reads, and what rollback risk it carries in replica set deployments.
 
 ---
 

@@ -1,10 +1,10 @@
-# How to Fix "Duplicate column name" in ClickHouse
+# How to Fix 'Duplicate column name' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Column, Error, Schema, SQL
 
-Description: Resolve "Duplicate column name" errors in ClickHouse caused by star expansion in JOINs, UNION ALL, and DDL statements with repeated column names.
+Description: Resolve 'Duplicate column name' errors in ClickHouse caused by star expansion in JOINs, UNION ALL, and DDL statements with repeated column names.
 
 ---
 

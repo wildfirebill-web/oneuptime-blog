@@ -1,10 +1,10 @@
-# How to Fix "Unable to resolve host" for ClickHouse Distributed Queries
+# How to Fix 'Unable to resolve host' for ClickHouse Distributed Queries
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, DNS, Distributed, Error, Troubleshooting
 
-Description: Fix "Unable to resolve host" errors in ClickHouse distributed queries by correcting hostname configuration, DNS setup, and /etc/hosts entries.
+Description: Fix 'Unable to resolve host' errors in ClickHouse distributed queries by correcting hostname configuration, DNS setup, and /etc/hosts entries.
 
 ---
 

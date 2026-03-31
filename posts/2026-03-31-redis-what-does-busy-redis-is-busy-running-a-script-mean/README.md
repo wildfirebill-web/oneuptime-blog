@@ -1,4 +1,4 @@
-# What Does "BUSY Redis is busy running a script" Mean
+# What Does 'BUSY Redis is busy running a script' Mean
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

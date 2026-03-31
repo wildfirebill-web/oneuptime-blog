@@ -1,10 +1,10 @@
-# How to Use Read Concern "linearizable" in MongoDB
+# How to Use Read Concern 'linearizable' in MongoDB
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Read Concern, Consistency, Replica Set, Linearizability
 
-Description: Learn how MongoDB's read concern "linearizable" provides the strongest consistency guarantee by waiting for all prior writes to be acknowledged before returning data.
+Description: Learn how MongoDB's read concern 'linearizable' provides the strongest consistency guarantee by waiting for all prior writes to be acknowledged before returning data.
 
 ---
 

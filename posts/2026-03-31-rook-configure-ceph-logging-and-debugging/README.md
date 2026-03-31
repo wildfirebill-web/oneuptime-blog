@@ -1,0 +1,109 @@
+# How to Configure Ceph Logging and Debugging
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: Rook, Ceph, Logging, Debugging, Observability
+
+Description: Learn how to configure Ceph logging and debugging levels to troubleshoot cluster issues while minimizing performance overhead.
+
+---
+
+## Ceph Logging Architecture
+
+Ceph daemons write logs to files on each node, and optionally to the system journal. Log verbosity is controlled per-subsystem. Each subsystem has two log levels: the in-memory log level and the on-disk log level. The in-memory buffer is written to disk when an error occurs or when the on-disk level threshold is reached.
+
+In Rook environments, OSD and monitor logs appear in the container stdout and can be retrieved with `kubectl logs`.
+
+## Log Level Syntax
+
+Log levels range from 0 (errors only) to 20 (maximum verbosity). The format is:
+
+```text
+debug_<subsystem> = <memory_level>/<disk_level>
+```
+
+For example, `debug_osd = 5/5` sets both in-memory and on-disk OSD logging to level 5.
+
+## Common Debug Subsystems
+
+```ini
+[global]
+debug_ms = 1/5
+debug_osd = 0/5
+debug_filestore = 0/5
+debug_journal = 0/5
+debug_monc = 0/5
+debug_mon = 0/5
+debug_rgw = 0/5
+debug_mds = 0/5
+```
+
+Setting the memory level to 0 and disk level to 5 means only errors are kept in memory, but verbose logs are written to disk - useful when debugging without impacting performance.
+
+## Enabling Debug Logging Dynamically
+
+You can change log levels at runtime without restarting daemons:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph tell osd.* injectargs '--debug-osd 10'
+```
+
+To increase OSD debug logging on a specific OSD:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph tell osd.2 injectargs '--debug-osd 20/20'
+```
+
+Reset to defaults after debugging:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph tell osd.2 injectargs '--debug-osd 0/5'
+```
+
+## Viewing Logs in Rook
+
+Retrieve logs for a specific OSD pod:
+
+```bash
+kubectl -n rook-ceph logs -l app=rook-ceph-osd,ceph-osd-id=0 --tail=100
+```
+
+Retrieve monitor logs:
+
+```bash
+kubectl -n rook-ceph logs -l app=rook-ceph-mon --tail=200
+```
+
+## Configuring Log Rotation
+
+In Rook, logs are containerized and managed by Kubernetes. For bare-metal Ceph clusters, configure log rotation via `logrotate`:
+
+```text
+/var/log/ceph/*.log {
+    rotate 7
+    daily
+    compress
+    missingok
+    notifempty
+    sharedscripts
+    postrotate
+        pkill -HUP ceph-osd ceph-mon ceph-mds 2>/dev/null || true
+    endscript
+}
+```
+
+## Ceph Log Channels
+
+Ceph also supports named log channels. The `cluster` channel captures cluster-level events:
+
+```bash
+kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
+  ceph log last 100 cluster
+```
+
+## Summary
+
+Ceph logging is per-subsystem and uses a memory/disk dual-level system. Use `ceph tell` with `injectargs` to change log levels dynamically without restarting daemons. In Rook, access logs via `kubectl logs`. Always reset debug levels after troubleshooting to avoid excessive disk usage and performance degradation.
