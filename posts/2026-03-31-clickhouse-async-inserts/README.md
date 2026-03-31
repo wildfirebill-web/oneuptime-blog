@@ -1,175 +1,211 @@
-# How to Use Async Inserts in ClickHouse
+# How to Use Async Inserts in ClickHouse for High Ingestion
 
-Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+Author: [oneuptime](https://www.github.com/oneuptime)
 
-Tags: ClickHouse, SQL, INSERT, Async Insert, Performance, Throughput
+Tags: ClickHouse, Performance, Database, Analytics, Infrastructure
 
-Description: Learn how async inserts buffer small writes in ClickHouse memory and flush them in batches, improving throughput for high-frequency insert workloads.
+Description: Learn how to use ClickHouse async inserts to absorb high-frequency small inserts, reduce part creation, and sustain high ingestion rates without a separate buffer layer.
 
----
+## Introduction
 
-One of the most common ClickHouse performance pitfalls is high-frequency small inserts. Each INSERT normally creates a new part on disk, and hundreds of tiny inserts per second rapidly accumulate parts faster than the background merge process can consolidate them. Async inserts solve this by collecting small writes in a server-side buffer and flushing them as a single large insert. This post explains how async inserts work, how to configure them, and how to use them safely.
+ClickHouse async inserts allow you to send small, frequent inserts to the database without creating a new data part for each one. Instead, ClickHouse buffers the data in memory across multiple insert statements and flushes it to disk as a single larger part once a time or size threshold is reached. This feature is ideal when you cannot batch on the client side - for example, when events arrive one at a time from a large fleet of agents.
+
+Async inserts were introduced in ClickHouse 21.11 and are stable as of 22.8.
 
 ## How Async Inserts Work
 
-When `async_insert = 1`, ClickHouse does not write data to disk immediately. Instead, it:
+Without async inserts:
+1. Client sends INSERT with 100 rows.
+2. ClickHouse writes a new data part immediately.
+3. 1,000 clients sending every second = 1,000 parts per second. Merge queue overwhelmed.
 
-1. Accepts the INSERT and places the data in an in-memory buffer.
-2. Returns an acknowledgment to the client (optionally waiting for flush if `wait_for_async_insert = 1`).
-3. Flushes the buffer to disk as a single part when a threshold is met - either a time limit or a size limit.
-
-This means many small inserts from many clients are coalesced into one large write, reducing part count and merge pressure.
+With async inserts:
+1. Client sends INSERT with 100 rows.
+2. ClickHouse holds the data in a server-side buffer.
+3. When the buffer reaches `async_insert_max_data_size` or `async_insert_busy_timeout_ms` expires, ClickHouse flushes all buffered data from all clients as one large part.
+4. 1,000 clients sending every second = 1 flush per second = 1 part per second. Merge queue healthy.
 
 ## Enabling Async Inserts
 
-Async inserts can be enabled per session or per query with a `SETTINGS` clause.
-
-### Per query
+Async inserts are enabled at the session or user profile level.
 
 ```sql
-INSERT INTO events (event_id, event_name, created_at)
-VALUES (1, 'page_view', '2026-03-31 10:00:00')
-SETTINGS async_insert = 1, wait_for_async_insert = 1;
+-- Enable for the current session
+SET async_insert = 1;
+SET wait_for_async_insert = 0;  -- fire-and-forget (higher throughput)
+-- or
+SET wait_for_async_insert = 1;  -- wait for flush confirmation (lower throughput, higher durability)
+
+-- Then insert as normal
+INSERT INTO events (service, event_time, value)
+VALUES ('api', now(), 42.5);
 ```
 
-### Per user (in users.xml or via SQL)
-
-```sql
-ALTER USER my_app_user SETTINGS async_insert = 1, wait_for_async_insert = 1;
-```
-
-### Server-wide default (in users.xml)
+Enable globally for a user profile in `users.xml`:
 
 ```xml
 <profiles>
-  <default>
-    <async_insert>1</async_insert>
-    <wait_for_async_insert>1</wait_for_async_insert>
-  </default>
+    <ingestion_agent>
+        <async_insert>1</async_insert>
+        <wait_for_async_insert>0</wait_for_async_insert>
+        <async_insert_max_data_size>10485760</async_insert_max_data_size>
+        <async_insert_busy_timeout_ms>200</async_insert_busy_timeout_ms>
+    </ingestion_agent>
 </profiles>
 ```
 
-## Key Settings
-
-### async_insert
-
-Enables asynchronous insert mode.
+## Key Async Insert Settings
 
 ```sql
-SET async_insert = 1;
-```
+-- Maximum buffer size per table before forced flush (default: 10 MB)
+SET async_insert_max_data_size = 10485760;  -- 10 MB
 
-### wait_for_async_insert
-
-- `1` (default): The client waits until the buffer is flushed to disk before receiving a success response. This provides write durability guarantees.
-- `0`: Fire-and-forget. The client gets an immediate acknowledgment. Data may be lost if the server crashes before the flush.
-
-```sql
-SET async_insert = 1;
-SET wait_for_async_insert = 0; -- fire-and-forget mode
-```
-
-### async_insert_max_data_size
-
-Maximum buffer size in bytes before a flush is triggered (default: 10 MB).
-
-```sql
-SET async_insert_max_data_size = 10485760; -- 10 MB
-```
-
-### async_insert_busy_timeout_ms
-
-Maximum time in milliseconds the server waits before flushing a non-full buffer (default: 200 ms).
-
-```sql
+-- Maximum time to wait before flushing even if buffer is not full (default: 200 ms)
 SET async_insert_busy_timeout_ms = 200;
+
+-- Maximum number of queries waiting in the async queue (default: 10)
+SET async_insert_max_query_number = 100;
+
+-- Whether to wait for the data to be flushed to disk before returning
+SET wait_for_async_insert = 0;  -- async (returns immediately)
+SET wait_for_async_insert = 1;  -- sync (returns after flush, confirms durability)
+
+-- Timeout for wait_for_async_insert = 1 (default: 120 seconds)
+SET wait_for_async_insert_timeout = 10;
 ```
 
-## Practical Example
+## Practical Configuration for Different Ingestion Patterns
 
-Imagine an application sending one event per HTTP request. Without async inserts, each request creates a part:
+### High-Frequency Small Events (Application Logging)
 
-```bash
-# Without async inserts - creates a part for every request
-for i in $(seq 1 1000); do
-    curl -s -X POST 'http://localhost:8123/' \
-         --data-binary "INSERT INTO events FORMAT JSONEachRow
-{\"event_id\":$i,\"event_name\":\"click\",\"created_at\":\"2026-03-31 10:00:00\"}"
-done
-```
-
-With async inserts, all 1000 requests are buffered and flushed together:
-
-```bash
-# With async inserts - coalesced into far fewer parts
-for i in $(seq 1 1000); do
-    curl -s -X POST 'http://localhost:8123/?async_insert=1&wait_for_async_insert=1' \
-         --data-binary "INSERT INTO events FORMAT JSONEachRow
-{\"event_id\":$i,\"event_name\":\"click\",\"created_at\":\"2026-03-31 10:00:00\"}"
-done
-```
-
-## Monitoring Async Insert Buffers
-
-Check the current state of pending async insert buffers:
+When thousands of application instances each send 1-10 rows per second:
 
 ```sql
+SET async_insert = 1;
+SET wait_for_async_insert = 0;
+SET async_insert_busy_timeout_ms = 500;
+SET async_insert_max_data_size = 5242880;  -- 5 MB
+```
+
+### Moderate Volume with Durability Requirement
+
+When you need confirmation that data was persisted (e.g., payment events):
+
+```sql
+SET async_insert = 1;
+SET wait_for_async_insert = 1;
+SET wait_for_async_insert_timeout = 5;
+SET async_insert_busy_timeout_ms = 100;
+SET async_insert_max_data_size = 10485760;
+```
+
+### Batch Pipeline Sending Large Inserts
+
+For pipelines that already batch (e.g., 100K rows at a time), async inserts add little value and can slightly increase latency:
+
+```sql
+SET async_insert = 0;
+```
+
+## Monitoring Async Insert Activity
+
+```sql
+-- Check async insert queue and flush statistics
 SELECT
-    database,
     table,
     format,
-    rows,
+    status,
+    elapsed_microseconds,
     bytes,
-    timeout_milliseconds,
-    create_time
+    rows,
+    exception
 FROM system.asynchronous_insert_log
-ORDER BY create_time DESC
-LIMIT 20;
-```
+WHERE event_time >= now() - INTERVAL 10 MINUTE
+ORDER BY event_time DESC
+LIMIT 50;
 
-Track flush history and any errors:
+-- Aggregate: flushes per minute and bytes flushed
+SELECT
+    toStartOfMinute(event_time) AS minute,
+    count()                     AS flush_count,
+    sum(rows)                   AS rows_inserted,
+    formatReadableSize(sum(bytes)) AS bytes_flushed
+FROM system.asynchronous_insert_log
+WHERE status = 'Ok'
+  AND event_time >= now() - INTERVAL 1 HOUR
+GROUP BY minute
+ORDER BY minute;
 
-```sql
+-- Failed async inserts
 SELECT
     event_time,
-    database,
     table,
+    bytes,
     rows,
     exception
 FROM system.asynchronous_insert_log
 WHERE status != 'Ok'
-ORDER BY event_time DESC
-LIMIT 10;
+  AND event_time >= now() - INTERVAL 1 HOUR
+ORDER BY event_time DESC;
 ```
 
 ## Deduplication with Async Inserts
 
-By default, ClickHouse deduplicates synchronous inserts using an insert block checksum. With async inserts, multiple client requests may be merged into one block, so the deduplication behavior differs.
-
-To enable deduplication for async inserts:
+By default, async inserts do not perform insert deduplication. If your pipeline may retry inserts, enable deduplication:
 
 ```sql
 SET async_insert_deduplicate = 1;
 ```
 
-Each individual client insert is assigned a deduplication token. If the same data is re-sent (e.g., on a retry after a timeout), ClickHouse will not insert it twice.
+With deduplication enabled, ClickHouse tracks insert checksums and discards duplicate inserts within the deduplication window.
 
-```sql
-INSERT INTO events VALUES (1, 'page_view', '2026-03-31 10:00:00')
-SETTINGS
-    async_insert = 1,
-    wait_for_async_insert = 1,
-    async_insert_deduplicate = 1;
+## Example: High-Throughput Agent Ingestion
+
+```python
+import clickhouse_driver
+import time
+import random
+
+client = clickhouse_driver.Client(
+    host='clickhouse.internal',
+    settings={
+        'async_insert': 1,
+        'wait_for_async_insert': 0,
+        'async_insert_busy_timeout_ms': 200,
+        'async_insert_max_data_size': 10 * 1024 * 1024,
+    }
+)
+
+services = ['api', 'web', 'worker', 'scheduler']
+
+for i in range(10000):
+    client.execute(
+        'INSERT INTO events (service, value, event_time) VALUES',
+        [{'service': random.choice(services),
+          'value': random.random() * 100,
+          'event_time': int(time.time())}]
+    )
+
+print("All inserts submitted to async buffer")
 ```
 
-## When to Use Async Inserts
+## Comparing Sync vs Async Insert Performance
 
-- Many clients each sending small payloads (IoT sensors, application event tracking, log shippers).
-- When you cannot batch on the client side.
-- As an alternative to a Buffer table when you prefer server-managed buffering.
+```bash
+# Without async: 10,000 single-row inserts (creates 10,000 parts)
+time for i in $(seq 1 10000); do
+    clickhouse-client --query "INSERT INTO events VALUES ('api', now(), 1.0)"
+done
+# Result: ~45 seconds, 10,000 parts created
 
-Avoid async inserts when you need strict transactional guarantees or when you are already batching large payloads on the client.
+# With async inserts enabled
+time for i in $(seq 1 10000); do
+    clickhouse-client --query "INSERT INTO events VALUES ('api', now(), 1.0)" \
+        --async_insert=1 --wait_for_async_insert=0
+done
+# Result: ~3 seconds, ~15 parts created (one per 200ms flush window)
+```
 
 ## Summary
 
-Async inserts let ClickHouse absorb high-frequency small writes by buffering them in memory and flushing them as a single large part. Use `async_insert = 1` with `wait_for_async_insert = 1` for durable writes, tune `async_insert_max_data_size` and `async_insert_busy_timeout_ms` to control flush thresholds, and enable `async_insert_deduplicate` when retries are possible. This feature is the recommended solution for high-cardinality, low-volume-per-request write workloads.
+Async inserts solve the fundamental tension between high-frequency small inserts and ClickHouse's part-based storage model. By buffering inserts server-side and flushing them as large parts, async inserts let you ingest from thousands of agents without creating thousands of parts per second. Configure `async_insert_busy_timeout_ms` to control latency and `async_insert_max_data_size` to control batch size, monitor with `system.asynchronous_insert_log`, and use `wait_for_async_insert = 1` when durability confirmation is required.
