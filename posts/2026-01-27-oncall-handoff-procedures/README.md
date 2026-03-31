@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Site Reliability Engineering, On-Call, Incident Response, Documentation, Best Practices
+Tags: Site Reliability Engineering, On-Call, Incident Response, Documentation, Best Practice
 
 Description: A comprehensive guide to creating effective on-call handoff procedures that ensure smooth transitions, reduce incident response time, and prevent knowledge gaps between shifts.
 

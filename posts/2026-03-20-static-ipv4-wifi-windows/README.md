@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WiFi, Windows, Static IP, IPv4, Network Configuration
+Tags: WiFi, Window, Static IP, IPv4, Network Configuration
 
 Description: Learn how to configure a static IPv4 address for a WiFi adapter on Windows using both the GUI and PowerShell, and when to use static vs DHCP addressing.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Labels, Best Practices
+Tags: Calico, Kubernetes, Network Policy, Labels, Best Practice
 
 Description: Avoid the most common mistakes when using Calico labels for network policy selectors that lead to security gaps or unexpected traffic blocks.
 

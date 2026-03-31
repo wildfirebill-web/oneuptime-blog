@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, Best Practices, Project Structure
+Tags: Terraform, Infrastructure as Code, DevOps, Best Practice, Project Structure
 
 Description: Learn how to structure Terraform folders for scalable, maintainable infrastructure projects.
 

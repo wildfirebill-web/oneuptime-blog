@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, AWS, IAM, Security, Roles
+Tags: Ansible, AWS, IAM, Security, Role
 
 Description: Practical guide to creating and managing AWS IAM roles with Ansible including trust policies, permission boundaries, and cross-account access.
 

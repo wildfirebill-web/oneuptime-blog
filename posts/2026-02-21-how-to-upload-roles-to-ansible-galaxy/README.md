@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ansible Galaxy, Roles, Publishing, Open Source
+Tags: Ansible, Ansible Galaxy, Role, Publishing, Open Source
 
 Description: Complete walkthrough for publishing Ansible roles to Galaxy including metadata setup, GitHub integration, versioning, and quality standards.
 

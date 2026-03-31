@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Grafana, Monitoring, Dashboards, Kubernetes
+Tags: Rancher, Grafana, Monitoring, Dashboard, Kubernetes
 
 Description: Complete guide to deploying Grafana on Rancher for metrics visualization and operational dashboards.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Architecture, Best Practices
+Tags: ArgoCD, GitOps, Kubernetes, Architecture, Best Practice
 
 Description: Learn how to manage Kubernetes resources shared between multiple ArgoCD applications without conflicts, tracking issues, or sync errors.
 

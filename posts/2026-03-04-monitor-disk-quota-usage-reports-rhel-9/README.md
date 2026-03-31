@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Quotas, Monitoring, Reports, Linux
+Tags: RHEL, Quota, Monitoring, Report, Linux
 
 Description: Learn how to monitor disk quota usage and generate automated reports on RHEL to stay ahead of storage problems before they become emergencies.
 

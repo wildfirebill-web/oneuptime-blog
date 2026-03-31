@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Python, Django, Production, Web Development, Best Practices
+Tags: Python, Django, Production, Web Development, Best Practice
 
 Description: A comprehensive guide to building production-ready Django applications, covering project structure, security settings, database optimization, and deployment best practices.
 

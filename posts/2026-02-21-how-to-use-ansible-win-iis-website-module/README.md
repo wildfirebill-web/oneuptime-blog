@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, IIS, Web Server
+Tags: Ansible, Window, IIS, Web Server
 
 Description: Automate IIS website creation and configuration on Windows Server using the Ansible win_iis_website module with real examples.
 

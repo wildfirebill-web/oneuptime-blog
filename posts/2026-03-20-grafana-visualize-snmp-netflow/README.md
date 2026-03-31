@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, SNMP, NetFlow, Visualization, InfluxDB, Dashboards
+Tags: Grafana, SNMP, NetFlow, Visualization, InfluxDB, Dashboard
 
 Description: Learn how to build Grafana dashboards to visualize SNMP-polled metrics and NetFlow traffic data using InfluxDB as the time series database.
 

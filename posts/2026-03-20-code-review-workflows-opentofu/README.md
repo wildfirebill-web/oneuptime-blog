@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Code Review, GitOps, CI/CD, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Code Review, GitOps, CI/CD, Infrastructure as Code, Best Practice
 
 Description: Learn how to set up pull request workflows that automatically run tofu plan and post results as comments, enabling infrastructure changes to be reviewed like application code.
 

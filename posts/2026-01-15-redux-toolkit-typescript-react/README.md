@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Redux Toolkit, TypeScript, State Management, Frontend, Best Practices
+Tags: React, Redux Toolkit, TypeScript, State Management, Frontend, Best Practice
 
 Description: Learn how to implement Redux Toolkit with TypeScript in React applications, including createSlice, RTK Query, proper typing patterns, and best practices for scalable state management.
 

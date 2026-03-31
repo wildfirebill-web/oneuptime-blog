@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Locals, HCL, Best Practices, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variables, Locals, HCL, Best Practice, Infrastructure as Code, DevOps
 
 Description: Learn best practices for combining input variables and local values effectively in OpenTofu to create readable, maintainable configurations.
 

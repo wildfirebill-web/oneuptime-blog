@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, REST API, Versioning, Best Practices
+Tags: Java, Spring Boot, REST API, Versioning, Best Practice
 
 Description: Learn how to implement REST API versioning in Spring Boot using URI paths, request parameters, custom headers, and content negotiation.
 

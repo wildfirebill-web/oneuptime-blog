@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Windows, IIS
+Tags: Kubernetes, Window, IIS
 
 Description: Step-by-step guide to deploying Internet Information Services (IIS) web applications in Windows containers on Kubernetes with configuration best practices.
 

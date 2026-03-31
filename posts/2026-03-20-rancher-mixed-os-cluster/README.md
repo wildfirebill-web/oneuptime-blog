@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Windows, Linux, Mixed OS, Hybrid Cluster
+Tags: Rancher, Window, Linux, Mixed OS, Hybrid Cluster
 
 Description: Configure and operate Rancher Kubernetes clusters with both Linux and Windows worker nodes, managing workload placement, networking, and node lifecycle in a hybrid environment.
 

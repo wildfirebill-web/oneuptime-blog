@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, IP Address, Networking, Best Practices
+Tags: Kubernetes, MetalLB, IP Address, Networking, Best Practice
 
 Description: Learn why .0 and .255 IP addresses can cause problems with some network equipment and how to exclude them from MetalLB address pools.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Kubernetes, Production, High Availability, Best Practices
+Tags: Talos Linux, Kubernetes, Production, High Availability, Best Practice
 
 Description: A complete guide to setting up a Talos Linux cluster that is ready for production workloads with high availability and security.
 

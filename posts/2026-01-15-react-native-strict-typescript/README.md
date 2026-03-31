@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, TypeScript, Configuration, Type Safety, Mobile Development, Best Practices
+Tags: React Native, TypeScript, Configuration, Type Safety, Mobile Development, Best Practice
 
 Description: Learn how to configure strict TypeScript settings in React Native projects for maximum type safety and better code quality.
 

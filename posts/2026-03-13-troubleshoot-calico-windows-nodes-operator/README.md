@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Operator, Networking, CNI, Troubleshooting
+Tags: Calico, Kubernetes, Window, Operator, Networking, CNI, Troubleshooting
 
 Description: A diagnostic guide for resolving Calico installation failures on Windows nodes when using the Tigera Operator.
 

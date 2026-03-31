@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, EnvoyFilter, Envoy, Configuration, Best Practices
+Tags: Istio, EnvoyFilter, Envoy, Configuration, Best Practice
 
 Description: Why excessive EnvoyFilters in Istio create maintenance nightmares and upgrade risks, and how to use higher-level APIs and alternatives instead.
 

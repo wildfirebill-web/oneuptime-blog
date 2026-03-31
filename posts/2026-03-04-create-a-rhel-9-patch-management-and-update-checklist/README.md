@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Best Practices, Linux
+Tags: RHEL, Best Practice, Linux
 
 Description: Step-by-step guide on create a RHEL patch management and update checklist using Red Hat Enterprise Linux 9.
 

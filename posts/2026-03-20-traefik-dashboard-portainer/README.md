@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Traefik, Dashboards, Monitoring, Security
+Tags: Portainer, Traefik, Dashboard, Monitoring, Security
 
 Description: Learn how to enable and secure the Traefik dashboard alongside Portainer, giving you visibility into routes, services, middlewares, and certificate status.
 

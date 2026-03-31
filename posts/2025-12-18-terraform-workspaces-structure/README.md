@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, Best Practices
+Tags: Terraform, Infrastructure as Code, DevOps, Best Practice
 
 Description: Learn how to structure Terraform workspaces effectively for managing multiple environments, including when to use workspaces vs directories and best practices for state management.
 

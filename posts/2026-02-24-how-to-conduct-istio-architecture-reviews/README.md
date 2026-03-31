@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Architecture Review, Platform Engineering, Kubernetes, Best Practices
+Tags: Istio, Architecture Review, Platform Engineering, Kubernetes, Best Practice
 
 Description: Run effective Istio architecture reviews to catch configuration issues, evaluate mesh design decisions, and ensure your service mesh scales with your organization.
 

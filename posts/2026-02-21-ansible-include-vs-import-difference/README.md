@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Import, Include, Best Practices
+Tags: Ansible, Import, Include, Best Practice
 
 Description: A clear explanation of the differences between include and import in Ansible, covering when to use each approach with practical examples.
 

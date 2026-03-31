@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, PowerShell, Windows, WinRM
+Tags: Ansible, PowerShell, Window, WinRM
 
 Description: Learn how to run PowerShell commands and scripts on Windows hosts using Ansible with win_shell, win_command modules, and WinRM connectivity.
 

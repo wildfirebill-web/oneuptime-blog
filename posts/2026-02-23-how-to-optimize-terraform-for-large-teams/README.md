@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, DevOps, Team Collaboration, Infrastructure as Code, Best Practices
+Tags: Terraform, DevOps, Team Collaboration, Infrastructure as Code, Best Practice
 
 Description: Practical strategies for scaling Terraform workflows across large engineering teams without stepping on each other's toes.
 

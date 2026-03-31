@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Security, OWASP, Web Security, Application Security, Best Practices, Compliance
+Tags: Security, OWASP, Web Security, Application Security, Best Practice, Compliance
 
 Description: A practical guide to implementing OWASP security guidelines in your applications with code examples and configuration templates.
 

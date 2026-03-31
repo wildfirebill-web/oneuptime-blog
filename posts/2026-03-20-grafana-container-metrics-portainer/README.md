@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Grafana, cAdvisor, Container Metrics, Dashboards
+Tags: Portainer, Grafana, cAdvisor, Container Metrics, Dashboard
 
 Description: Learn how to build a Grafana dashboard showing per-container CPU, memory, and network metrics sourced from cAdvisor, deployed and managed via Portainer.
 

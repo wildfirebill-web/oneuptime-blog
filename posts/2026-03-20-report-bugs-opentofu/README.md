@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Bug Reporting, Open Source, Community, GitHub, Best Practices
+Tags: OpenTofu, Bug Reporting, Open Source, Community, GitHub, Best Practice
 
 Description: Learn how to write effective bug reports for OpenTofu that help maintainers reproduce and fix issues quickly.
 

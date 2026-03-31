@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, ArgumentNullException, Null Safety, Troubleshooting, Best Practices
+Tags: .NET, C#, ArgumentNullException, Null Safety, Troubleshooting, Best Practice
 
 Description: Learn how to diagnose and prevent ArgumentNullException errors in C# applications.
 

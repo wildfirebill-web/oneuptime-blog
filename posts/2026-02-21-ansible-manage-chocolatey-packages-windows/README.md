@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Chocolatey, Windows, Package Management, DevOps
+Tags: Ansible, Chocolatey, Window, Package Management, DevOps
 
 Description: A practical guide to managing Chocolatey packages on Windows servers and workstations using Ansible, including installation, configuration, and enterprise repository setup.
 

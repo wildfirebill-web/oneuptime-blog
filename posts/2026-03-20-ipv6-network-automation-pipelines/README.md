@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Automation, Pipelines, CI/CD, Ansible, Nornir
+Tags: IPv6, Automation, Pipeline, CI/CD, Ansible, Nornir
 
 Description: Build end-to-end IPv6 network automation pipelines that cover inventory collection, configuration generation, deployment, and continuous compliance verification.
 

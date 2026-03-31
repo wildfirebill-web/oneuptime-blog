@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMPv6, Checksums, IPv6 Pseudo-Header, RFC 4443, Networking
+Tags: ICMPv6, Checksum, IPv6 Pseudo-Header, RFC 4443, Networking
 
 Description: Understand how ICMPv6 checksums are calculated using the IPv6 pseudo-header, implement checksum calculation in Python, and verify checksums for debugging.
 

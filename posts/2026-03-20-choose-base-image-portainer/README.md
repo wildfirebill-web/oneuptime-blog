@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Container Images, Best Practices, DevOps
+Tags: Portainer, Docker, Container Images, Best Practice, DevOps
 
 Description: Select appropriate Docker base images for your containers deployed via Portainer to balance size, security, and compatibility.
 

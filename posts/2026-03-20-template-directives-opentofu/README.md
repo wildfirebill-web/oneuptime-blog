@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Template Directives, For, If, Expressions, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Template Directives, For, If, Expression, Infrastructure as Code, DevOps
 
 Description: A guide to using template directives in OpenTofu HCL to embed conditional logic and loops directly within string templates.
 

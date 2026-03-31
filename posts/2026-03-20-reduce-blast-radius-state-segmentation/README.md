@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Blast Radius, State Segmentation, Risk Management, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Blast Radius, State Segmentation, Risk Management, Infrastructure as Code, Best Practice
 
 Description: Learn how to segment OpenTofu state files along domain and lifecycle boundaries to limit the impact of a failed apply to a small, recoverable subset of infrastructure.
 

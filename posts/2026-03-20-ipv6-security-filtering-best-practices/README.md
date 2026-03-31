@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Security, Filtering, Firewall, Best Practices
+Tags: IPv6, Security, Filtering, Firewall, Best Practice
 
 Description: Learn the comprehensive best practices for IPv6 traffic filtering at both perimeter and host levels, including ICMPv6 policy, bogon filtering, and extension header handling.
 

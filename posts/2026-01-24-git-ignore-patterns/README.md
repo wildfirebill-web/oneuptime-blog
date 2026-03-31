@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Git, Version Control, Configuration, DevOps, Best Practices, Gitignore
+Tags: Git, Version Control, Configuration, DevOps, Best Practice, Gitignore
 
 Description: Learn how to configure .gitignore patterns to exclude files from version control including syntax, common patterns, and troubleshooting.
 

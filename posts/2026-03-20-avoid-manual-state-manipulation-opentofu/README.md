@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, State Management, Best Practices, Safety, Infrastructure as Code
+Tags: OpenTofu, State Management, Best Practice, Safety, Infrastructure as Code
 
 Description: Learn why manually editing the OpenTofu state file is dangerous and how to use proper state management commands for safe state operations.
 

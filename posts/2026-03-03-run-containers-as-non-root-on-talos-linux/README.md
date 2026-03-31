@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Container Security, Non-Root, Kubernetes, Best Practices
+Tags: Talos Linux, Container Security, Non-Root, Kubernetes, Best Practice
 
 Description: A hands-on guide to running containers as non-root users on Talos Linux, covering image configuration, Kubernetes settings, and troubleshooting common issues.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Console Exporter, OTLP, Environment Configuration, Best Practices
+Tags: OpenTelemetry, Console Exporter, OTLP, Environment Configuration, Best Practice
 
 Description: Set up OpenTelemetry to print traces to the console in development and send them over OTLP in production using environment detection.
 

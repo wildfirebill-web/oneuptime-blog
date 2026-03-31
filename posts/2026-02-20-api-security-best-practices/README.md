@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API Security, Authentication, Authorization, OWASP, Best Practices
+Tags: API Security, Authentication, Authorization, OWASP, Best Practice
 
 Description: Essential API security best practices including authentication, input validation, rate limiting, and OWASP API Security Top 10.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Error Handling, API, UX, Best Practices, Frontend
+Tags: React, Error Handling, API, UX, Best Practice, Frontend
 
 Description: Learn to implement robust API error handling in React applications using error boundaries, toast notifications, retry logic, and centralized error management for better user experience.
 

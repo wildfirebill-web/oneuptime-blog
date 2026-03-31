@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Database, Troubleshooting, Roles, Users, Permissions, Authentication
+Tags: PostgreSQL, Database, Troubleshooting, Role, Users, Permissions, Authentication
 
 Description: Learn how to diagnose and fix 'role does not exist' errors in PostgreSQL. This guide covers role creation, permission management, and common authentication issues.
 

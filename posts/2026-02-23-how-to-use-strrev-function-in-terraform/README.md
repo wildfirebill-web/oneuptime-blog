@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, String Functions, HCL, DevOps
+Tags: Terraform, Infrastructure as Code, String Function, HCL, DevOps
 
 Description: Learn how to use the strrev function in Terraform to reverse strings, with practical examples for extracting suffixes, generating identifiers, and creative string manipulation.
 

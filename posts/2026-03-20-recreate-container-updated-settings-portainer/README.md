@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Recreate, Updates, Containers
+Tags: Portainer, Docker, Recreate, Update, Containers
 
 Description: Recreate a running container in Portainer with new configuration settings while minimizing downtime.
 

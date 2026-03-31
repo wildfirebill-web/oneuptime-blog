@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Windows, Kubernetes, Mixed Cluster, Node Selectors, Taints, SUSE Rancher
+Tags: K3s, Window, Kubernetes, Mixed Cluster, Node Selectors, Taints, SUSE Rancher
 
 Description: Learn how to add Windows worker nodes to a K3s cluster for running Windows-native containerized workloads alongside Linux pods in a mixed operating system Kubernetes cluster.
 

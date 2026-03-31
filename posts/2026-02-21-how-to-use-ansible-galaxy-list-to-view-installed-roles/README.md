@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ansible Galaxy, Roles, CLI, Troubleshooting
+Tags: Ansible, Ansible Galaxy, Role, CLI, Troubleshooting
 
 Description: How to use ansible-galaxy list to view installed roles and collections, debug path issues, and audit your Ansible environment.
 

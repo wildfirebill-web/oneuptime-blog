@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Windows, DotNet
+Tags: Kubernetes, Window, DotNet
 
 Description: Complete guide to containerizing and deploying .NET Framework applications on Kubernetes with best practices for legacy Windows workloads.
 

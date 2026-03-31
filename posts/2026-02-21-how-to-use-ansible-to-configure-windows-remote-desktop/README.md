@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Remote Desktop, RDP
+Tags: Ansible, Window, Remote Desktop, RDP
 
 Description: Automate Windows Remote Desktop configuration with Ansible including RDP settings, NLA, firewall rules, and security hardening.
 

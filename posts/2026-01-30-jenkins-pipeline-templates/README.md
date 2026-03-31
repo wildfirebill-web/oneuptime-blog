@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Jenkins, CI/CD, Pipelines, Automation
+Tags: Jenkins, CI/CD, Pipeline, Automation
 
 Description: Build reusable Jenkins pipeline templates with shared libraries for standardized CI/CD workflows across multiple projects.
 

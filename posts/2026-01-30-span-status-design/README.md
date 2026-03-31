@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Tracing, OpenTelemetry, Best Practices
+Tags: Observability, Tracing, OpenTelemetry, Best Practice
 
 Description: Learn how to properly set span status codes for error tracking and trace analysis.
 

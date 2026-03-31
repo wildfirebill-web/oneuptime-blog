@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Checksums, UDP, TCP, ICMPv6, Protocol
+Tags: IPv6, Checksum, UDP, TCP, ICMPv6, Protocol
 
 Description: Understand the IPv6 pseudo-header construction used in TCP, UDP, and ICMPv6 checksum calculations, and why it differs from the IPv4 pseudo-header.
 

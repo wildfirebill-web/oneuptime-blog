@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Django, Python, Caching, Sessions, Celery, Web Development
+Tags: Redis, Django, Python, Caching, Session, Celery, Web Development
 
 Description: A comprehensive guide to integrating Redis with Django applications, covering cache backends, session storage, Celery task queues, and channels for real-time features.
 

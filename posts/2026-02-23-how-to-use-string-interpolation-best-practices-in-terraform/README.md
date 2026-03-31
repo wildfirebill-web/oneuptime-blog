@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, String Interpolation, HCL, Best Practices, Infrastructure as Code
+Tags: Terraform, String Interpolation, HCL, Best Practice, Infrastructure as Code
 
 Description: Master string interpolation in Terraform with best practices covering readability, performance, security, and common pitfalls to avoid in your HCL code.
 

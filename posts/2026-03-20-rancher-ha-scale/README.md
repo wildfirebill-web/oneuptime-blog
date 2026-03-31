@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, HA, Scaling, Control Plane, etcd
+Tags: Rancher, has, Scaling, Control Plane, etcd
 
 Description: Scale your Rancher HA deployment by adding control plane nodes, scaling Rancher replicas, and separating etcd from control plane roles for improved performance.
 

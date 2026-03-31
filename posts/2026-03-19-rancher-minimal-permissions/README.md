@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Security, Roles
+Tags: Rancher, Kubernetes, RBAC, Permissions, Security, Role
 
 Description: A comprehensive guide to hardening your Rancher installation by configuring minimal permissions at every level of the platform.
 

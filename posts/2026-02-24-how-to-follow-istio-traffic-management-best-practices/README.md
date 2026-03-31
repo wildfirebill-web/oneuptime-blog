@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Traffic Management, Best Practices, VirtualService, DestinationRule
+Tags: Istio, Traffic Management, Best Practice, VirtualService, DestinationRule
 
 Description: Best practices for managing traffic in Istio, covering routing, retries, timeouts, circuit breaking, and load balancing.
 

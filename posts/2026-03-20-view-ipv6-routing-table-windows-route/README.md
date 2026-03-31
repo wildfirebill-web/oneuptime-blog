@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Routing, Route print, Network Diagnostics
+Tags: IPv6, Window, Routing, Route print, Network Diagnostics
 
 Description: Learn how to view and interpret the IPv6 routing table on Windows using route print and PowerShell, including filtering routes and understanding route metrics.
 

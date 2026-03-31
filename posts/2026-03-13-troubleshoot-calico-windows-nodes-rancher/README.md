@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Rancher, Networking, CNI, Troubleshooting
+Tags: Calico, Kubernetes, Window, Rancher, Networking, CNI, Troubleshooting
 
 Description: A diagnostic guide for resolving Calico and networking failures on Windows nodes in Rancher-managed Kubernetes clusters.
 

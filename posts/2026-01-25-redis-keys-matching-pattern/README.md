@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Database, Pattern Matching, Performance, Best Practices
+Tags: Redis, Database, Pattern Matching, Performance, Best Practice
 
 Description: Learn how to find Redis keys matching patterns using KEYS and SCAN commands, understand their performance implications, and implement production-safe key discovery.
 

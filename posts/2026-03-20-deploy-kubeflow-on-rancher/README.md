@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubeflow, Machine Learning, MLOps, Kubernetes, Pipelines
+Tags: Rancher, Kubeflow, Machine Learning, MLOps, Kubernetes, Pipeline
 
 Description: Deploy Kubeflow on Rancher for end-to-end ML platform capabilities including notebooks, pipelines, model serving, and experiment tracking.
 

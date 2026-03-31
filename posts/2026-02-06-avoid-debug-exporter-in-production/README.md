@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Production, Best Practices
+Tags: OpenTelemetry, Collector, Production, Best Practice
 
 Description: Learn why the OpenTelemetry debug exporter should never be used in production and how it can crash your Collector under load.
 

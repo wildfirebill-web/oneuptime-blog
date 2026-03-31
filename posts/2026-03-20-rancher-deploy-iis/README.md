@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Windows, IIS, Web Server, ASP.NET
+Tags: Rancher, Window, IIS, Web Server, ASP.NET
 
 Description: Deploy Internet Information Services (IIS) on Windows nodes in Rancher Kubernetes clusters for hosting ASP.NET Framework and classic web applications.
 

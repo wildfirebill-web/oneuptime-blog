@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot 3, REST API, Production, Best Practices
+Tags: Java, Spring Boot 3, REST API, Production, Best Practice
 
 Description: A practical guide to building production-ready REST APIs with Spring Boot 3, covering validation, error handling, security, and observability patterns that scale.
 

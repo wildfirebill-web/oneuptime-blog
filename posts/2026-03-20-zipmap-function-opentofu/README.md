@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Zipmap, Map Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Zipmap, Map Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the zipmap function in OpenTofu to create a map from two parallel lists of keys and values.
 

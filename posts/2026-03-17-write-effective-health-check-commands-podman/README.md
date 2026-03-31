@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Checks, Best Practices
+Tags: Podman, Containers, DevOps, Health Checks, Best Practice
 
 Description: Learn best practices for writing effective health check commands that accurately detect application failures in Podman containers.
 

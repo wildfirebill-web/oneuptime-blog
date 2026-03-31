@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, MSI, Package Management
+Tags: Ansible, Window, MSI, Package Management
 
 Description: Learn how to install, upgrade, and manage MSI packages on Windows hosts using Ansible with the win_package module and practical examples.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Dockerfile, BuildKit, Secrets, Security, DevOps, Best Practices
+Tags: Docker, Dockerfile, BuildKit, Secrets, Security, DevOps, Best Practice
 
 Description: Securely pass secrets like API keys and SSH keys during Docker builds using RUN --mount=type=secret without leaking them into image layers.
 

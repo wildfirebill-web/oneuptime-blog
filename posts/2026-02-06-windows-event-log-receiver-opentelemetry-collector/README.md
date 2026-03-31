@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Windows, Event Log, Logs, Security
+Tags: OpenTelemetry, Collector, Window, Event Log, Logs, Security
 
 Description: Learn how to configure the Windows Event Log Receiver in the OpenTelemetry Collector to collect system, application, and security logs from Windows.
 

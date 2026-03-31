@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, External Data, Table Engines, PostgreSQL, MySQL, S3, HDFS, Federation, Integration
+Tags: ClickHouse, External Data, Table Engine, PostgreSQL, MySQL, S3, HDFS, Federation, Integration
 
 Description: A practical guide to querying external data sources from ClickHouse using table engines and table functions for PostgreSQL, MySQL, S3, HDFS, and remote ClickHouse instances.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Variables, Best Practices
+Tags: Ansible, Role, Variables, Best Practice
 
 Description: Understand the critical differences between role defaults and role vars in Ansible with practical guidelines for when to use each.
 

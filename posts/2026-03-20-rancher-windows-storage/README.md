@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Windows, Storage, CSI, PersistentVolume
+Tags: Rancher, Window, Storage, CSI, PersistentVolume
 
 Description: Configure persistent storage for Windows containers in Rancher using local-path provisioner, iSCSI, and Windows-specific CSI drivers for stateful Windows workloads.
 

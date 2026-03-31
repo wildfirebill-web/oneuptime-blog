@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Upgrade, Docker-standalone, Updates
+Tags: Portainer, Upgrade, Docker-standalone, Update
 
 Description: A step-by-step guide to upgrading Portainer CE on a Docker standalone host, ensuring zero data loss and minimal downtime.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Connection Pooling, Performance, Python, Node.js, Best Practices
+Tags: Redis, Connection Pooling, Performance, Python, Node.js, Best Practice
 
 Description: Learn how to efficiently reuse Redis connections using connection pooling, singleton patterns, and proper connection management to avoid common pitfalls.
 

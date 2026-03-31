@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Next.js, Authentication, Security, JWT, Sessions, NextAuth.js, Web Development
+Tags: Next.js, Authentication, Security, JWT, Session, NextAuth.js, Web Development
 
 Description: Learn how to implement authentication in Next.js using various approaches including JWT, sessions, NextAuth.js, and custom solutions.
 

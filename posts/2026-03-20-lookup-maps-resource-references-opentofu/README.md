@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, Lookup, Maps, Data Transformation
+Tags: OpenTofu, Terraform, HCL, Lookup, Map, Data Transformation
 
 Description: Learn how to build lookup maps in OpenTofu to reference resources by logical names, simplifying complex cross-resource dependencies and reducing hard-coded IDs.
 

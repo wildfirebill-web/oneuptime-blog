@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: TypeScript, NestJS, Modules, Architecture, Best Practices
+Tags: TypeScript, NestJS, Modules, Architecture, Best Practice
 
 Description: Learn how to organize NestJS applications using modules for better code organization, encapsulation, and maintainability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, for_each, Maps, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resources, for_each, Map, Infrastructure as Code, DevOps
 
 Description: A guide to using for_each with map values in OpenTofu to create multiple uniquely-named resources.
 

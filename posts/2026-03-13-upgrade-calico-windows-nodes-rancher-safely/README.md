@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Rancher, Networking, CNI, Upgrade
+Tags: Calico, Kubernetes, Window, Rancher, Networking, CNI, Upgrade
 
 Description: A guide to safely upgrading Calico on Windows nodes in a Rancher-managed Kubernetes cluster.
 

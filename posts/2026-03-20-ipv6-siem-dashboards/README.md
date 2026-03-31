@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, SIEM, Dashboards, Security Monitoring, Grafana, Kibana, Splunk
+Tags: IPv6, SIEM, Dashboard, Security Monitoring, Grafana, Kibana, Splunk
 
 Description: Design and build effective IPv6 security dashboards in Splunk, Kibana, and Grafana to visualize traffic patterns, threats, and protocol health at a glance.
 

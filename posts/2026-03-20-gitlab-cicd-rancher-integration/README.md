@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab, CI/CD, Rancher, Kubernetes, DevOps, Pipelines, Deployment
+Tags: GitLab, CI/CD, Rancher, Kubernetes, DevOps, Pipeline, Deployment
 
 Description: Learn how to integrate GitLab CI/CD pipelines with Rancher to automate Kubernetes deployments, configure service accounts, and enable seamless GitOps-style delivery.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Bugtool, PowerShell, Shell Completion, Windows
+Tags: Cilium, Bugtool, PowerShell, Shell Completion, Window
 
 Description: Set up and use PowerShell tab completion for cilium-bugtool to streamline diagnostic workflows on Windows and cross-platform environments.
 

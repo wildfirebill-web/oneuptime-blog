@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Configuration, DevOps, Best Practices
+Tags: Ansible, Configuration, DevOps, Best Practice
 
 Description: Manage multiple Ansible configuration files for different environments, projects, and teams using practical organizational strategies.
 

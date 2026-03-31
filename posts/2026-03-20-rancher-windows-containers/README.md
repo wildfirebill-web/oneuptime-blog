@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Windows, Containers, Kubernetes, .NET
+Tags: Rancher, Window, Containers, Kubernetes, .NET
 
 Description: Deploy Windows containers in Rancher Kubernetes clusters using proper node selectors, compatible base images, and Windows-specific configuration.
 

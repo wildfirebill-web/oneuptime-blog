@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Git, Version Control, DevOps, Workflow, Best Practices
+Tags: Git, Version Control, DevOps, Workflow, Best Practice
 
 Description: Understand the differences between Git rebase and merge strategies, when to use each, and how to implement them effectively in your workflow.
 

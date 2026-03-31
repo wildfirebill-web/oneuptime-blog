@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, Performance, Multi-Process, Best Practices
+Tags: Cilium, Kubernetes, Performance, Multi-Process, Best Practice
 
 Description: Proactive strategies to prevent performance degradation when running highly parallel 32-process workloads in Cilium-managed clusters.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Best Practices, Kubernetes, Service Mesh, Developer Guide
+Tags: Istio, Best Practice, Kubernetes, Service Mesh, Developer Guide
 
 Description: A comprehensive set of Istio best practices for application developers covering service deployment, traffic management, security, and observability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SQL Server, IPv6, MSSQL, Windows, Database, Networking
+Tags: SQL Server, IPv6, MSSQL, Window, Database, Networking
 
 Description: Configure Microsoft SQL Server to listen on IPv6 addresses and accept client connections from IPv6 networks using SQL Server Configuration Manager.
 

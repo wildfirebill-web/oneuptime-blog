@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Zabbix, SNMP, Network Monitoring, Cisco, Dashboards, Alerting
+Tags: Zabbix, SNMP, Network Monitoring, Cisco, Dashboard, Alerting
 
 Description: Learn how to add network devices to Zabbix using SNMP, apply built-in network device templates, and set up triggers for interface up/down alerting.
 

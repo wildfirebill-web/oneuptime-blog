@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Polaris, Audit, Best Practices, Security
+Tags: Kubernetes, Polaris, Audit, Best Practice, Security
 
 Description: Learn how to use Polaris to audit Kubernetes deployments against best practices, identifying configuration issues around security, reliability, and efficiency.
 

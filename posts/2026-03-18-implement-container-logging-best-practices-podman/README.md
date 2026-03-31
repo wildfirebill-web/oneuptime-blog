@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Logging, Best Practices, Containers, Observability
+Tags: Podman, Logging, Best Practice, Containers, Observability
 
 Description: Learn container logging best practices with Podman including structured logging, log rotation, centralized aggregation, and efficient log management strategies.
 

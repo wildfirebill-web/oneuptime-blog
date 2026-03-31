@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, EC2, Windows, RDP, Remote Desktop
+Tags: AWS, EC2, Window, RDP, Remote Desktop
 
 Description: Step-by-step instructions for connecting to a Windows EC2 instance using Remote Desktop Protocol, including password retrieval and troubleshooting tips.
 

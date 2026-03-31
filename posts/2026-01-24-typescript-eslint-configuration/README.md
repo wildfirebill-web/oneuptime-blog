@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TypeScript, ESLint, Configuration, Linting, Code Quality, Development Tools, Best Practices
+Tags: TypeScript, ESLint, Configuration, Linting, Code Quality, Development Tools, Best Practice
 
 Description: Learn how to set up and configure ESLint with TypeScript for consistent code quality and automated style enforcement in your projects.
 

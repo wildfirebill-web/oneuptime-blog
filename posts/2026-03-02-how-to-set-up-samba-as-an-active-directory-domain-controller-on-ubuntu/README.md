@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Samba, Active Directory, Domain Controller, Windows
+Tags: Ubuntu, Samba, Active Directory, Domain Controller, Window
 
 Description: Provision Samba as a full Active Directory Domain Controller on Ubuntu to manage Windows domain authentication without Windows Server licenses.
 

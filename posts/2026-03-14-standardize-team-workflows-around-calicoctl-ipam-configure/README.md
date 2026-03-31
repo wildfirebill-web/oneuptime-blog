@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Calicoctl, IPAM, Team Workflows, Best Practices
+Tags: Calico, Calicoctl, IPAM, Team Workflows, Best Practice
 
 Description: Establish team-wide standards for IPAM configuration management to ensure consistent IP address allocation behavior across all Calico clusters.
 

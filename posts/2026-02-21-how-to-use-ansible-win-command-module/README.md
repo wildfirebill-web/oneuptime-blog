@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, PowerShell, Automation, DevOps
+Tags: Ansible, Window, PowerShell, Automation, DevOps
 
 Description: Learn how to use the Ansible win_command module to run commands on Windows hosts, including practical examples for system administration tasks.
 

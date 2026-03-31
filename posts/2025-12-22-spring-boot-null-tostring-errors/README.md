@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, NullPointerException, Debugging, Error Handling, Best Practices
+Tags: Java, Spring Boot, NullPointerException, Debugging, Error Handling, Best Practice
 
 Description: Learn how to diagnose and fix the common 'Cannot invoke toString() on null' NullPointerException in Java and Spring Boot applications.
 

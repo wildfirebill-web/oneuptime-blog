@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, Validation, Configuration, Best Practices
+Tags: Cilium, Kubernetes, Validation, Configuration, Best Practice
 
 Description: How to validate Cilium configuration before and after deployment to ensure correct networking, security, and observability settings for production.
 

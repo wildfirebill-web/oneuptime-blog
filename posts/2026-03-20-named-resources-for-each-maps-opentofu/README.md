@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, for_each, Maps, HCL, Resource Creation
+Tags: OpenTofu, Terraform, for_each, Map, HCL, Resource Creation
 
 Description: Learn how to use for_each with maps in OpenTofu to create named resources with stable identities, avoiding the index-shifting problems of count-based iteration.
 

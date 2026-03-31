@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terragrunt, DRY, Infrastructure as Code, Best Practices, DevOps
+Tags: OpenTofu, Terragrunt, DRY, Infrastructure as Code, Best Practice, DevOps
 
 Description: Learn how to eliminate configuration duplication across environments by using Terragrunt's DRY patterns - shared backends, common variables, and generated provider files - with OpenTofu.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Span Status, Error Classification, Best Practices
+Tags: OpenTelemetry, Span Status, Error Classification, Best Practice
 
 Description: Understand when to use Unset, Ok, and Error span status codes in OpenTelemetry for accurate error classification in your traces.
 

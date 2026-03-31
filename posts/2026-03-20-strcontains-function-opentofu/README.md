@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Strcontains, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Strcontains, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the strcontains function in OpenTofu to check whether a string contains a specific substring.
 

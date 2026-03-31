@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Metrics, Grafana, Best Practices
+Tags: Calico, Kubernetes, Networking, Metrics, Grafana, Best Practice
 
 Description: Avoid common Calico Grafana dashboard mistakes including misleading aggregations, incorrect units, missing per-node breakdown, and alert threshold misconfigurations.
 

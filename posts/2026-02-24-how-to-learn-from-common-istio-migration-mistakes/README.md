@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Service Mesh, Migration, Kubernetes, Best Practices
+Tags: Istio, Service Mesh, Migration, Kubernetes, Best Practice
 
 Description: Learn from the most common mistakes teams make when migrating to Istio and how to avoid them in your own service mesh adoption journey.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Project Organization, Best Practices, Infrastructure as Code, DevOps
+Tags: OpenTofu, Project Organization, Best Practice, Infrastructure as Code, DevOps
 
 Description: Best practices and patterns for organizing files and directories in OpenTofu infrastructure projects.
 

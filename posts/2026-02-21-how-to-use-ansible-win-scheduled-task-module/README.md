@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Scheduled Tasks, Automation
+Tags: Ansible, Window, Scheduled Tasks, Automation
 
 Description: Create and manage Windows scheduled tasks with the Ansible win_scheduled_task module for automated maintenance, backups, and monitoring.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ping, Request Timed Out, Troubleshooting, ICMP, Windows
+Tags: Ping, Request Timed Out, Troubleshooting, ICMP, Window
 
 Description: Learn how to diagnose and fix 'Request Timed Out' ping errors on Windows and Linux, which indicate that ICMP packets are being sent but no reply is received within the timeout window.
 

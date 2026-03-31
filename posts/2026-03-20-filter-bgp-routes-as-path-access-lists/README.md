@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, AS-Path, Route Filtering, Cisco IOS, Regular Expressions, Routing
+Tags: BGP, AS-Path, Route Filtering, Cisco IOS, Regular Expression, Routing
 
 Description: Learn how to create AS-path access lists with regular expressions to filter BGP routes based on the AS-path attribute for traffic engineering and security.
 

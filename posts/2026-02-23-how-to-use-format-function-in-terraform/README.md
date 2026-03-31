@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, String Functions, HCL, DevOps
+Tags: Terraform, Infrastructure as Code, String Function, HCL, DevOps
 
 Description: Learn how to use the format function in Terraform to produce formatted strings using printf-style verbs, with practical examples for resource naming and more.
 

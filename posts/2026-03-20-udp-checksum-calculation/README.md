@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Checksums, Networking, Protocol, Linux, Error Detection
+Tags: UDP, Checksum, Networking, Protocol, Linux, Error Detection
 
 Description: Understand how UDP checksum calculation works, when it can be disabled, and how to detect and handle UDP checksum errors.
 

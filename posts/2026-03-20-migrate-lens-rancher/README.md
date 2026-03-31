@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Migration, Lens, Kubernetes, Dashboards
+Tags: Rancher, Migration, Lens, Kubernetes, Dashboard
 
 Description: Guide to transitioning from Lens IDE to Rancher Dashboard for centralized multi-cluster management.
 

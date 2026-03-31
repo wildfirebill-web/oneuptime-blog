@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Images, Updates, DevOps
+Tags: Portainer, Docker Swarm, Images, Update, DevOps
 
 Description: Learn how to use Portainer to monitor Docker image updates for Swarm services and automate or trigger image refreshes.
 

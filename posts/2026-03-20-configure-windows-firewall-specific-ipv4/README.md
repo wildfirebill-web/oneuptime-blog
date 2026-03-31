@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Firewall, IPv4, Security, Netsh, PowerShell
+Tags: Window, Firewall, IPv4, Security, Netsh, PowerShell
 
 Description: Create Windows Firewall rules that allow or block traffic to and from specific IPv4 addresses using netsh advfirewall and PowerShell New-NetFirewallRule.
 

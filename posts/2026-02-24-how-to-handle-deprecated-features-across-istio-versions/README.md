@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Deprecation, Migration, Kubernetes, Best Practices
+Tags: Istio, Deprecation, Migration, Kubernetes, Best Practice
 
 Description: A comprehensive guide to identifying, tracking, and handling deprecated features across Istio versions to keep your mesh configuration current and supported.
 

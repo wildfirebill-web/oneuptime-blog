@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Version Control, Galaxy, DevOps
+Tags: Ansible, Role, Version Control, Galaxy, DevOps
 
 Description: Learn how to pin and lock Ansible role versions in requirements.yml for reproducible builds and safe dependency management.
 

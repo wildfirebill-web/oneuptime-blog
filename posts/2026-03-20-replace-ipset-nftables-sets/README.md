@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: nftables, Linux, Ipset, Firewall, Migration, Sets, Networking
+Tags: nftables, Linux, Ipset, Firewall, Migration, Set, Networking
 
 Description: Migrate from ipset and iptables to nftables native sets, replacing IP blocklists and allowlists with built-in set functionality that requires no separate tools.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Architecture, Best Practices
+Tags: ArgoCD, GitOps, Kubernetes, Architecture, Best Practice
 
 Description: Compare the one-app-per-service and umbrella app patterns in ArgoCD, with guidance on when each approach works best for your team and architecture.
 

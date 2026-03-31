@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Table Storage, OData, Query Filters, NoSQL, Data Retrieval, Cloud Development
+Tags: Azure, Table Storage, OData, Query Filter, NoSQL, Data Retrieval, Cloud Development
 
 Description: Master OData filter expressions to query Azure Table Storage efficiently with examples covering comparison, logical, and type-specific operators.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Best Practices, Edge Computing, IoT, DevOps
+Tags: Portainer, Best Practice, Edge Computing, IoT, DevOps
 
 Description: Follow edge device management best practices with Portainer to ensure reliable and secure remote deployments.
 

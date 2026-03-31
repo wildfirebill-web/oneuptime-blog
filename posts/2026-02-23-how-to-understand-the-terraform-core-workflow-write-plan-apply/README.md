@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Workflow, Best Practices, DevOps, Infrastructure as Code
+Tags: Terraform, Workflow, Best Practice, DevOps, Infrastructure as Code
 
 Description: Understand the Terraform core workflow of Write, Plan, and Apply including how each phase works, what happens behind the scenes, and best practices for each step.
 

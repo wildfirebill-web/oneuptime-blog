@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Documentation, Migration, Best Practices, Infrastructure as Code
+Tags: Terraform, Documentation, Migration, Best Practice, Infrastructure as Code
 
 Description: Learn how to create clear, actionable documentation for Terraform migration procedures that teams can follow reliably and consistently across environments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, Splat Expressions, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Terraform, HCL, Splat Expressions, Infrastructure as Code, Best Practice
 
 Description: Learn how to use splat expressions in OpenTofu to efficiently access attributes from lists of resources or objects without writing explicit loops.
 

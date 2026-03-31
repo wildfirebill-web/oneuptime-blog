@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, StagedKubernetesNetworkPolicy, Kubernetes, Production, Network Security, Best Practices
+Tags: Calico, StagedKubernetesNetworkPolicy, Kubernetes, Production, Network Security, Best Practice
 
 Description: Real-world patterns for using StagedKubernetesNetworkPolicy in production Kubernetes clusters with Calico Enterprise.
 

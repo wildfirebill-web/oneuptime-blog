@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Workflow, Best Practices, Infrastructure as Code, DevOps
+Tags: OpenTofu, Workflow, Best Practice, Infrastructure as Code, DevOps
 
 Description: A comprehensive guide to the core OpenTofu workflow: write configuration, plan changes, and apply them safely.
 

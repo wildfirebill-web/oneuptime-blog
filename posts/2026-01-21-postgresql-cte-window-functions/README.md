@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, CTE, Window Functions, SQL, Analytics, Advanced Queries
+Tags: PostgreSQL, CTE, Window Function, SQL, Analytics, Advanced Queries
 
 Description: A comprehensive guide to PostgreSQL Common Table Expressions (CTEs) and window functions, covering recursive queries, running totals, rankings, and advanced analytical patterns.
 

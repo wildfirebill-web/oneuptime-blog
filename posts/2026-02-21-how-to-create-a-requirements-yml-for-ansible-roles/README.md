@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Requirements, Dependency Management
+Tags: Ansible, Role, Requirements, Dependency Management
 
 Description: Learn how to create and manage a requirements.yml file for Ansible roles with version pinning, multiple sources, and CI integration.
 

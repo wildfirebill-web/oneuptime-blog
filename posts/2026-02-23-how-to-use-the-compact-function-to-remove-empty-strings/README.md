@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Compact Function, Lists, HCL, Infrastructure as Code, String Functions
+Tags: Terraform, Compact Function, Lists, HCL, Infrastructure as Code, String Function
 
 Description: Learn how to use the compact function in Terraform to remove empty string elements from lists and build cleaner configurations with conditional values.
 

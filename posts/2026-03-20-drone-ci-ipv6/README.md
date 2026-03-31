@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Drone CI, CI/CD, Docker, DevOps, Pipelines
+Tags: IPv6, Drone CI, CI/CD, Docker, DevOps, Pipeline
 
 Description: Configure Drone CI server and runners to support IPv6 networking, enable IPv6 in pipeline containers, and test IPv6 connectivity in Drone pipeline steps.
 

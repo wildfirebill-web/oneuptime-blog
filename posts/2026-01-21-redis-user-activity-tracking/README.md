@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, User Activity, Analytics, Clickstream, Behavior Tracking, Sessions
+Tags: Redis, User Activity, Analytics, Clickstream, Behavior Tracking, Session
 
 Description: A comprehensive guide to implementing user activity tracking with Redis for clickstreams, sessions, behavior analysis, and real-time analytics.
 

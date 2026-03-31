@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, ImageSet, Best Practices
+Tags: Calico, Kubernetes, Networking, ImageSet, Best Practice
 
 Description: Identify and avoid the most common mistakes when managing Calico ImageSets, from incorrect digest formats to registry naming pitfalls and version mismatch issues.
 

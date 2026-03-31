@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, SQL, Sequences, Primary Key, SERIAL, Database Administration
+Tags: PostgreSQL, SQL, Sequence, Primary Key, SERIAL, Database Administration
 
 Description: Learn how to reset and synchronize primary key sequences in PostgreSQL after data imports, deletions, or migrations. This guide covers SERIAL columns, identity columns, and manual sequence management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Traefik, Portainer, Docker, Dashboards, Reverse Proxy, Monitoring
+Tags: Traefik, Portainer, Docker, Dashboard, Reverse Proxy, Monitoring
 
 Description: Learn how to deploy Traefik as a reverse proxy with its dashboard enabled alongside Portainer, securing both interfaces with authentication and HTTPS.
 

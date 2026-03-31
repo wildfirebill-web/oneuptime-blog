@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Rancher, Networking, CNI, Configuration
+Tags: Calico, Kubernetes, Window, Rancher, Networking, CNI, Configuration
 
 Description: A guide to configuring Calico networking for Windows nodes when creating a new Rancher-managed mixed Linux/Windows cluster.
 

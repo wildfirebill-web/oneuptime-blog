@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Enums, Pattern Matching, Type System, Data Modeling
+Tags: Rust, Enum, Pattern Matching, Type System, Data Modeling
 
 Description: Master Rust enums that carry data. Learn about tuple variants, struct variants, and how to use pattern matching to work with complex enum types effectively.
 

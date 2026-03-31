@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, CNI, Troubleshooting, Networking, Best Practices, IPAM
+Tags: Calico, Kubernetes, CNI, Troubleshooting, Networking, Best Practice, IPAM
 
 Description: The most common Kubernetes networking mistakes in Calico environments and how to diagnose and prevent them before they become production outages.
 

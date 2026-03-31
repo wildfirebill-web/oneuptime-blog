@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, IIS, Windows, Web Server, Metrics, Performance, Observability
+Tags: OpenTelemetry, Collector, IIS, Window, Web Server, Metrics, Performance, Observability
 
 Description: Learn how to monitor Microsoft IIS web server performance using the OpenTelemetry Collector with Windows performance counters and custom pipelines.
 

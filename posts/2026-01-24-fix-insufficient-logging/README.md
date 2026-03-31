@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Security, Logging, Monitoring, OWASP, Observability, Best Practices
+Tags: Security, Logging, Monitoring, OWASP, Observability, Best Practice
 
 Description: Learn how to identify and fix insufficient logging vulnerabilities in your applications to improve security monitoring and incident response.
 

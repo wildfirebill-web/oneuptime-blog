@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Variables, Configuration Management
+Tags: Ansible, Role, Variables, Configuration Management
 
 Description: Learn how to use the vars_from parameter in Ansible roles to load different variable files for different environments and scenarios.
 

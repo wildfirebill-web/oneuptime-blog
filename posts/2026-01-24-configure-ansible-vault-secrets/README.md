@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, DevOps, Security, Secrets Management, Encryption, Best Practices
+Tags: Ansible, DevOps, Security, Secrets Management, Encryption, Best Practice
 
 Description: Learn how to securely manage sensitive data like passwords, API keys, and certificates using Ansible Vault encryption for your automation workflows.
 

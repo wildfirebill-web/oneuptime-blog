@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Configs, Security, Compliance, Best Practices
+Tags: AWS, Configs, Security, Compliance, Best Practice
 
 Description: Learn how to deploy AWS Config managed rules that enforce security best practices across your AWS environment, covering IAM, encryption, networking, and logging.
 

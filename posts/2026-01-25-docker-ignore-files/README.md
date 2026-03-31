@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Dockerfile, Build Process, Best Practices, DevOps
+Tags: Docker, Dockerfile, Build Process, Best Practice, DevOps
 
 Description: Learn how to use .dockerignore files to exclude unnecessary files from Docker builds, speed up build times, reduce image sizes, and prevent sensitive data from being included in images.
 

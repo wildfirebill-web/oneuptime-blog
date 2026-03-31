@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Build Optimization, DevOps, Performance, Best Practices
+Tags: Docker, Build Optimization, DevOps, Performance, Best Practice
 
 Description: Learn how to use .dockerignore to exclude unnecessary files from Docker build context, dramatically reducing build times and image sizes.
 

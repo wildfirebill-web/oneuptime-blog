@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, XFS, Quotas, Storage, Linux
+Tags: RHEL, XFS, Quota, Storage, Linux
 
 Description: Learn how to enable and manage user and group disk quotas on XFS file systems in RHEL to control storage usage and prevent individual users from consuming excessive disk space.
 

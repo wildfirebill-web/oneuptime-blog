@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Alerting, SRE, Maintenance, Best Practices
+Tags: Alerting, SRE, Maintenance, Best Practice
 
 Description: Learn how to safely retire alerts that are no longer needed or effective.
 

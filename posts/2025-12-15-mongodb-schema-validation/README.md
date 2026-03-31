@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Schema Validation, JSON Schema, Data Quality, Database, Best Practices
+Tags: MongoDB, Schema Validation, JSON Schema, Data Quality, Database, Best Practice
 
 Description: Learn how to implement MongoDB schema validation to enforce data structure and quality. This guide covers JSON Schema syntax, validation rules, and strategies for maintaining data integrity.
 

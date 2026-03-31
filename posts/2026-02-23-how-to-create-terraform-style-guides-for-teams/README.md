@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Style Guide, Best Practices, Team Collaboration, Infrastructure as Code
+Tags: Terraform, Style Guide, Best Practice, Team Collaboration, Infrastructure as Code
 
 Description: Build a comprehensive Terraform style guide that promotes consistency, reduces review friction, and makes infrastructure code easier to read and maintain.
 

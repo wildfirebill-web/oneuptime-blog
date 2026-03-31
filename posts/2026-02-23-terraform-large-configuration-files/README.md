@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Configuration Management, Best Practices, Infrastructure as Code
+Tags: Terraform, Configuration Management, Best Practice, Infrastructure as Code
 
 Description: Learn practical strategies for managing large Terraform configurations, including file splitting, modules, locals, and tooling to keep your codebase maintainable.
 

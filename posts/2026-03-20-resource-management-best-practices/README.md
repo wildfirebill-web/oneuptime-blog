@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Best Practices, Infrastructure as Code, Resource Management, Terraform
+Tags: OpenTofu, Best Practice, Infrastructure as Code, Resource Management, Terraform
 
 Description: A comprehensive guide to OpenTofu resource management best practices, including naming conventions, tagging, lifecycle rules, and state management.
 

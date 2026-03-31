@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Configuration Management, Automation
+Tags: Ansible, Window, Configuration Management, Automation
 
 Description: Learn how to use the Ansible win_lineinfile module to manage lines in text files on Windows hosts with practical examples.
 

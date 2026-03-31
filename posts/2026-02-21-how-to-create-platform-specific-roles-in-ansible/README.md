@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Cross-Platform, Multi-OS
+Tags: Ansible, Role, Cross-Platform, Multi-OS
 
 Description: Learn how to build Ansible roles that work across multiple operating systems using OS-specific tasks, variables, and templates.
 

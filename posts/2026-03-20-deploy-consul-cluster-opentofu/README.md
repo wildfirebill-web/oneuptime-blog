@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Consul, Service Discovery, Service Mesh, HA
+Tags: OpenTofu, Consul, Service Discovery, Service Mesh, has
 
 Description: Learn how to deploy a production-ready HashiCorp Consul cluster on AWS using OpenTofu with EC2 Auto Join, TLS encryption, and ACL bootstrapping for service discovery and service mesh.
 

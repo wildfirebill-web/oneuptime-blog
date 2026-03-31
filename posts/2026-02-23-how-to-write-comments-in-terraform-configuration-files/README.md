@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Infrastructure as Code, Best Practices, Documentation
+Tags: Terraform, HCL, Infrastructure as Code, Best Practice, Documentation
 
 Description: Learn the different comment styles available in Terraform HCL files, when to use each type, and best practices for writing helpful comments in your infrastructure code.
 

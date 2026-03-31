@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Configuration, DevOps, Best Practices
+Tags: Ansible, Configuration, DevOps, Best Practice
 
 Description: Understand Ansible configuration file precedence and learn how to structure configs across global, user, project, and environment variable levels.
 

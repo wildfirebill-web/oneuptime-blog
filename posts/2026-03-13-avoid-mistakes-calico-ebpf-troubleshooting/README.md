@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, eBPF, Troubleshooting, Best Practices
+Tags: Calico, Kubernetes, Networking, eBPF, Troubleshooting, Best Practice
 
 Description: Avoid the most common mistakes when troubleshooting Calico eBPF issues, including misdiagnosis patterns, incorrect fixes, and changes that make problems worse.
 

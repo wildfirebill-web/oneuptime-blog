@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Tracing, OpenTelemetry, Best Practices
+Tags: Observability, Tracing, OpenTelemetry, Best Practice
 
 Description: Learn best practices for naming spans in distributed tracing systems for clarity and consistency.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, GRUB, Boot, Customization, System
+Tags: Ubuntu, GRUB, Boot, Customization, SYSTEM
 
 Description: Customize the GRUB bootloader on Ubuntu by changing the background, colors, timeout, menu entries, resolution, and applying themes for a polished boot screen.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Registry, Container Images, Security, Best Practices, CI/CD
+Tags: Portainer, Docker Registry, Container Images, Security, Best Practice, CI/CD
 
 Description: Manage Docker image registries in Portainer securely with proper credential storage, registry access policies, image scanning, and pull policies for production deployments.
 

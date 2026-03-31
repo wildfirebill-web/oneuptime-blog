@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Security, Cloud Architecture, Best Practices
+Tags: AWS, Security, Cloud Architecture, Best Practice
 
 Description: Learn how to implement a defense in depth strategy on AWS by layering multiple security controls across your infrastructure for comprehensive protection.
 

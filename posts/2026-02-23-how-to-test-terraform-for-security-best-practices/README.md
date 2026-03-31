@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Security, Testing, Best Practices, Infrastructure as Code, DevSecOps
+Tags: Terraform, Security, Testing, Best Practice, Infrastructure as Code, DevSecOps
 
 Description: Learn how to write automated security tests for Terraform configurations to catch misconfigurations like open ports, missing encryption, and overly permissive IAM policies.
 

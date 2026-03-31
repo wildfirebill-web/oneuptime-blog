@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Container Security, Docker, Kubernetes, Security, Best Practices
+Tags: Container Security, Docker, Kubernetes, Security, Best Practice
 
 Description: Comprehensive guide to container security best practices covering image scanning, runtime security, and network policies.
 

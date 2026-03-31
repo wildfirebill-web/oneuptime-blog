@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Windows, Scheduling
+Tags: Kubernetes, Window, Scheduling
 
 Description: Learn how to use pod affinity and anti-affinity rules to control scheduling between Linux and Windows pods for optimal resource utilization and application isolation.
 

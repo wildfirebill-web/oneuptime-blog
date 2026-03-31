@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Idempotency, Shell Commands, Best Practices
+Tags: Ansible, Idempotency, Shell Commands, Best Practice
 
 Description: Learn patterns and techniques to make Ansible shell and command module tasks idempotent so playbooks can be safely run multiple times without side effects.
 

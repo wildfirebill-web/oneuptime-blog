@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Transpose, Map Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Transpose, Map Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the transpose function in OpenTofu to invert a map of lists, swapping keys and values.
 

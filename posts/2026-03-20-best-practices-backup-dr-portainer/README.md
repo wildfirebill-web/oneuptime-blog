@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Best Practices, Backup, Disaster Recovery, DevOps
+Tags: Portainer, Best Practice, Backup, Disaster Recovery, DevOps
 
 Description: Implement comprehensive backup and disaster recovery strategies for Portainer and the workloads it manages.
 

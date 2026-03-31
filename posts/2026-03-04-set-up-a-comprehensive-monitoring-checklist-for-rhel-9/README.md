@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Best Practices, Monitoring, Linux
+Tags: RHEL, Best Practice, Monitoring, Linux
 
 Description: Step-by-step guide on set up a comprehensive monitoring checklist  servers using Red Hat Enterprise Linux 9.
 

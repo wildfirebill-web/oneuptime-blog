@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Testing, Table-Driven Tests, Best Practices
+Tags: Go, Testing, Table-Driven Tests, Best Practice
 
 Description: Master table-driven testing in Go with idiomatic patterns for comprehensive test coverage, subtests, and parallel execution.
 

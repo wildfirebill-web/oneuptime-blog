@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Nesting, Composition
+Tags: Ansible, Role, Nesting, Composition
 
 Description: Learn how to nest Ansible roles within other roles using include_role, import_role, and meta dependencies for composable automation.
 

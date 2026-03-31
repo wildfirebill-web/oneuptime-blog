@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, RBAC, Security, Roles, Authorization
+Tags: Kubernetes, RBAC, Security, Role, Authorization
 
 Description: Step-by-step guide to setting up Kubernetes RBAC including Roles, ClusterRoles, RoleBindings, and best practices for least privilege.
 

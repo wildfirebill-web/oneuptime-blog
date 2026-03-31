@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, netstat, IPv4, Connection, Diagnostics
+Tags: Window, Networking, netstat, IPv4, Connection, Diagnostics
 
 Description: Use netstat on Windows to display active IPv4 TCP connections, listening ports, process associations, and connection state information for network troubleshooting.
 

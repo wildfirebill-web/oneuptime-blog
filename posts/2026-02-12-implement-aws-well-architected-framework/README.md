@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Well-Architected Framework, Cloud Architecture, Best Practices
+Tags: AWS, Well-Architected Framework, Cloud Architecture, Best Practice
 
 Description: A comprehensive guide to implementing the AWS Well-Architected Framework across its six pillars to build secure, reliable, and cost-effective cloud workloads.
 

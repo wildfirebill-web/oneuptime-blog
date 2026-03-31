@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Booleans, Best Practices, Code Style, Conditional
+Tags: Python, Boolean, Best Practice, Code Style, Conditional
 
 Description: Learn the Pythonic way to compare boolean values, understand truthy and falsy concepts, and avoid common comparison mistakes.
 

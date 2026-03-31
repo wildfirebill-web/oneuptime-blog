@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Performance, Large Scale, State Management, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Performance, Large Scale, State Management, Infrastructure as Code, Best Practice
 
 Description: Learn practical techniques for managing hundreds of cloud resources in OpenTofu efficiently, including for_each patterns, state partitioning, and targeted operations.
 

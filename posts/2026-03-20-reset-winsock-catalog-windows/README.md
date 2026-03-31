@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, Winsock, Netsh, Troubleshooting, Network Reset
+Tags: Window, Networking, Winsock, Netsh, Troubleshooting, Network Reset
 
 Description: Reset the Windows Winsock catalog to its default state using netsh winsock reset to fix application-level network failures caused by corrupted LSP (Layered Service Provider) entries.
 

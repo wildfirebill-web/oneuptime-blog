@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Ipconfig, Network Diagnostics, Command Line
+Tags: IPv6, Window, Ipconfig, Network Diagnostics, Command Line
 
 Description: Learn how to use ipconfig to view IPv6 address configuration on Windows, interpret the output, and compare it with PowerShell alternatives.
 

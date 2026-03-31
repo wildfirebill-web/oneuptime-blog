@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Checksums, TCP, UDP, ICMPv6, Networking
+Tags: IPv6, Checksum, TCP, UDP, ICMPv6, Networking
 
 Description: Learn to calculate TCP, UDP, and ICMPv6 checksums over IPv6 including the mandatory pseudo-header, with complete Python implementations for each protocol.
 

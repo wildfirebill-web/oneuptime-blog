@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Inventory, DevOps, Configuration Management, Automation, Infrastructure, Best Practices
+Tags: Ansible, Inventory, DevOps, Configuration Management, Automation, Infrastructure, Best Practice
 
 Description: Learn how to organize and configure Ansible inventory groups for efficient infrastructure management including nested groups, variables, and dynamic inventories.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kotlin, Null Safety, Type System, Best Practices, Android
+Tags: Kotlin, Null Safety, Type System, Best Practice, Android
 
 Description: Master Kotlin's null safety features including nullable types, safe calls, Elvis operator, and smart casts to write safer and more reliable code.
 

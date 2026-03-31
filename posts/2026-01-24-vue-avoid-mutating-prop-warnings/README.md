@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vue, JavaScript, Props, Components, Reactivity, Frontend, Best Practices, Component Communication
+Tags: Vue, JavaScript, Props, Components, Reactivity, Frontend, Best Practice, Component Communication
 
 Description: Learn how to properly handle prop mutations in Vue by understanding one-way data flow and implementing correct patterns for parent-child component communication.
 

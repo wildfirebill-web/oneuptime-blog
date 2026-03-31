@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, MQL, Latency Monitoring, Cloud Monitoring, Percentiles, Google Cloud
+Tags: GCP, MQL, Latency Monitoring, Cloud Monitoring, Percentile, Google Cloud
 
 Description: Learn how to write MQL queries for percentile-based latency monitoring on Google Cloud Platform to catch tail latency issues before they affect users.
 

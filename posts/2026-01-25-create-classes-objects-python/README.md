@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, OOP, Classes, Objects, Object-Oriented Programming
+Tags: Python, OOP, Classes, Object, Object-Oriented Programming
 
 Description: Learn how to create classes and objects in Python. This guide covers class definition, initialization, methods, inheritance, and best practices for object-oriented programming.
 

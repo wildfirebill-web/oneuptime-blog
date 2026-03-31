@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Monorepo, Polyrepo, Repository Structure, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Monorepo, Polyrepo, Repository Structure, Infrastructure as Code, Best Practice
 
 Description: Learn the trade-offs between monorepo and polyrepo approaches for OpenTofu configurations to help you choose the right structure for your team and organization.
 

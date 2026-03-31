@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Firewall, Windows Firewall, PowerShell
+Tags: IPv6, Window, Firewall, Windows Firewall, PowerShell
 
 Description: Learn how to configure Windows Firewall rules for IPv6 traffic using PowerShell and the Windows Firewall GUI, including allowing specific IPv6 addresses and blocking IPv6 subnets.
 

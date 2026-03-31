@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, File Management, DevOps
+Tags: Ansible, Window, File Management, DevOps
 
 Description: Use the Ansible win_file module to create, delete, and manage files and directories on Windows hosts with practical automation examples.
 

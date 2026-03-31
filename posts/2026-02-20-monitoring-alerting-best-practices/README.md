@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Monitoring, Alerting, Best Practices, Alert Fatigue, SRE
+Tags: Monitoring, Alerting, Best Practice, Alert Fatigue, SRE
 
 Description: Best practices for monitoring and alerting to reduce alert fatigue including alert severity, routing, and actionable alerts.
 

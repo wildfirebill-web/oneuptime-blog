@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Datadog, Infrastructure as Code, IaC, Dashboards, Monitoring
+Tags: OpenTofu, Datadog, Infrastructure as Code, IaC, Dashboard, Monitoring
 
 Description: Learn how to create Datadog dashboards with widgets, timeboards, and screenboards using OpenTofu.
 

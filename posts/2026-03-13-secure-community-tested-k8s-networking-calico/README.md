@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Best Practices, CNI
+Tags: Calico, Kubernetes, Networking, Best Practice, CNI
 
 Description: Implement community-recommended security configurations for Calico networking in Kubernetes clusters.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Code Review, Best Practices, Team Collaboration, DevOps
+Tags: Terraform, Code Review, Best Practice, Team Collaboration, DevOps
 
 Description: Establish effective Terraform code review guidelines that catch infrastructure issues early while maintaining team velocity and code quality standards.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Logging, Observability, Best Practices, DevOps
+Tags: Logging, Observability, Best Practice, DevOps
 
 Description: Establish clear log level guidelines for DEBUG, INFO, WARN, and ERROR with practical examples for consistent, actionable logging.
 

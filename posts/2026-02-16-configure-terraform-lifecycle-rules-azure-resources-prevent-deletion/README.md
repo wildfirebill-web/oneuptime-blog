@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Lifecycle Rules, Safety, Infrastructure as Code, DevOps, Best Practices
+Tags: Terraform, Azure, Lifecycle Rules, Safety, Infrastructure as Code, DevOps, Best Practice
 
 Description: Configure Terraform lifecycle rules to prevent accidental deletion of critical Azure resources and manage safe infrastructure changes.
 

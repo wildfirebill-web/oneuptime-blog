@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Plan Review, Best Practices, Safety, Infrastructure as Code
+Tags: OpenTofu, Plan Review, Best Practice, Safety, Infrastructure as Code
 
 Description: Learn why reviewing the OpenTofu plan before every apply is critical, and how to build workflows that enforce this practice even under time pressure.
 

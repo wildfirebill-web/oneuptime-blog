@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WiFi, Windows, No Internet, Secured, Troubleshooting
+Tags: WiFi, Window, No Internet, Secured, Troubleshooting
 
 Description: Learn how to fix the 'No Internet, Secured' WiFi status in Windows, which means you're connected to WiFi but cannot access the internet.
 

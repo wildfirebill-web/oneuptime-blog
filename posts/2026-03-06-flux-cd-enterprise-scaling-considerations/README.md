@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Enterprise, Scaling, Multi-Tenant, Best Practices
+Tags: Flux CD, GitOps, Kubernetes, Enterprise, Scaling, Multi-Tenant, Best Practice
 
 Description: A guide to scaling Flux CD for enterprise environments with multi-cluster, multi-tenant, and high-availability considerations.
 

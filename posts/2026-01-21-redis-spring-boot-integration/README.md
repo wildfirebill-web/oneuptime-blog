@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Spring Boot, Java, Spring Data Redis, Caching, Sessions, Spring Framework
+Tags: Redis, Spring Boot, Java, Spring Data Redis, Caching, Session, Spring Framework
 
 Description: A comprehensive guide to integrating Redis with Spring Boot applications, covering Spring Data Redis, cache annotations, session management, and reactive Redis with practical examples.
 

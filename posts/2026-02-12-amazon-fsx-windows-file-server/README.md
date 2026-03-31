@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, FSx, Windows, SMB, Active Directory
+Tags: AWS, FSx, Window, SMB, Active Directory
 
 Description: Learn how to set up Amazon FSx for Windows File Server with SMB protocol, Active Directory integration, and enterprise features like DFS namespaces and shadow copies.
 

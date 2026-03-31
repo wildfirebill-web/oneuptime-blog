@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Best Practices, Security, RBAC, Teams
+Tags: Portainer, Best Practice, Security, RBAC, Teams
 
 Description: Implement effective user and team management in Portainer with proper role-based access control and permission structures.
 

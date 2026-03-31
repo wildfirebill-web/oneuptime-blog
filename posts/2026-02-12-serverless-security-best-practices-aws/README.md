@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Serverless, Lambda, Security, Best Practices
+Tags: AWS, Serverless, Lambda, Security, Best Practice
 
 Description: A practical guide to securing serverless applications on AWS Lambda covering IAM least privilege, input validation, dependency scanning, and runtime protection.
 

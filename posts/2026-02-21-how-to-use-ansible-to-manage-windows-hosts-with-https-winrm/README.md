@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, WinRM, Security
+Tags: Ansible, Window, WinRM, Security
 
 Description: Set up secure HTTPS WinRM connections between Ansible and Windows hosts with certificate-based authentication and proper configuration.
 

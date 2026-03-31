@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Regular Expressions, Cisco IOS, Netmiko, Network Automation
+Tags: Python, Regular Expression, Cisco IOS, Netmiko, Network Automation
 
 Description: Learn how to parse Cisco IOS 'show ip interface brief' output using Python regular expressions, extracting structured data from unstructured CLI output.
 

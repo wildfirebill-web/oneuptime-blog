@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, AIDE, Reports, Security, Linux
+Tags: RHEL, AIDE, Report, Security, Linux
 
 Description: Learn how to read and interpret AIDE file change reports on RHEL, understand the different change types, and take appropriate action when changes are detected.
 

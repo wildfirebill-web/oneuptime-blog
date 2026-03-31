@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Jenkins, Security, CI/CD, DevOps, Best Practices
+Tags: Jenkins, Security, CI/CD, DevOps, Best Practice
 
 Description: Learn how to harden Jenkins with RBAC, plugin hygiene, credential management, and secure build agents.
 

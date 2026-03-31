@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flagger, Grafana, Dashboards, Prometheus, Monitoring, Canary Deployments
+Tags: Flagger, Grafana, Dashboard, Prometheus, Monitoring, Canary Deployments
 
 Description: Learn how to create a Grafana dashboard for monitoring Flagger canary analysis with real-time traffic and metric visualizations.
 

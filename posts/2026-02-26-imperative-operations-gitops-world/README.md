@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Operations, Best Practices
+Tags: ArgoCD, GitOps, Kubernetes, Operations, Best Practice
 
 Description: Learn how to handle imperative Kubernetes operations like scaling, restarts, and one-off commands within a GitOps workflow using ArgoCD without breaking declarative state.
 

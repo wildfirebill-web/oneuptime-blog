@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Windows, Virtual Machine, Compute, RDP, Infrastructure as Code
+Tags: OpenTofu, Azure, Window, Virtual Machine, Compute, RDP, Infrastructure as Code
 
 Description: Learn how to create Windows Server virtual machines on Azure with OpenTofu, including WinRM configuration, managed disks, and PowerShell DSC extensions.
 

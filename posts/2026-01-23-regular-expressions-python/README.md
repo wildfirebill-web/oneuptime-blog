@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Regex, Regular Expressions, Text Processing, Pattern Matching
+Tags: Python, Regex, Regular Expression, Text Processing, Pattern Matching
 
 Description: Master Python's re module for pattern matching, text extraction, and validation. Learn regex syntax with practical examples for common tasks.
 

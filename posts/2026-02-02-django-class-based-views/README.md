@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Python, Django, CBV, Views, Web Development
+Tags: Python, Django, CBV, View, Web Development
 
 Description: Master Django class-based views with ListView, DetailView, CreateView, UpdateView, and custom mixins for cleaner and more reusable code.
 

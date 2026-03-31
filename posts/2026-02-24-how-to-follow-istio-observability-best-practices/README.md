@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Observability, Monitoring, Best Practices, Prometheus
+Tags: Istio, Observability, Monitoring, Best Practice, Prometheus
 
 Description: Best practices for setting up observability in Istio, including metrics, tracing, logging, and dashboard strategies for production.
 

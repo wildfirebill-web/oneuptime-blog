@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, Ipconfig, IPv4, Network Diagnostics
+Tags: Window, Networking, Ipconfig, IPv4, Network Diagnostics
 
 Description: Use ipconfig and ipconfig /all to display IPv4 addresses, subnet masks, gateways, and DNS servers for all network adapters on Windows.
 

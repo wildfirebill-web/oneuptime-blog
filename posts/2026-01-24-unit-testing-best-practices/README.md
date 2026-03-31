@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Testing, Unit Tests, Best Practices, TDD, Software Quality
+Tags: Testing, Unit Tests, Best Practice, TDD, Software Quality
 
 Description: Learn essential unit testing best practices including test structure, naming conventions, assertion patterns, and maintainability strategies.
 

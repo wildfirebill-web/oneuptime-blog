@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Ingress, CNI, Troubleshooting, Best Practices, Network Policy
+Tags: Calico, Kubernetes, Ingress, CNI, Troubleshooting, Best Practice, Network Policy
 
 Description: The most common Calico ingress policy mistakes, from broken health checks to policy selector mismatches, and how to diagnose and prevent them.
 

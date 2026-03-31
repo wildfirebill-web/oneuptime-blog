@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, RBAC, Security, Roles, Permissions, Access Control
+Tags: PostgreSQL, RBAC, Security, Role, Permissions, Access Control
 
 Description: A comprehensive guide to implementing role-based access control in PostgreSQL, covering role hierarchies, privilege management, and security best practices.
 

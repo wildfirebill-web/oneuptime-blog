@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Windows, Flannel
+Tags: Kubernetes, Window, Flannel
 
 Description: Step-by-step guide to installing and configuring Flannel CNI plugin for Windows worker nodes in a mixed OS Kubernetes cluster.
 

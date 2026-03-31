@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Database, SQL, Aggregate Functions, PL/pgSQL, Analytics
+Tags: PostgreSQL, Database, SQL, Aggregate Function, PL/pgSQL, Analytics
 
 Description: Learn how to create custom aggregate functions in PostgreSQL for specialized analytics.
 

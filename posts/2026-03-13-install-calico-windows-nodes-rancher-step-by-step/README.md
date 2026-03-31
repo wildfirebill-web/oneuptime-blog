@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Rancher, Networking, CNI, Installation
+Tags: Calico, Kubernetes, Window, Rancher, Networking, CNI, Installation
 
 Description: A step-by-step guide to installing Calico on Windows nodes in a Rancher-managed Kubernetes cluster.
 

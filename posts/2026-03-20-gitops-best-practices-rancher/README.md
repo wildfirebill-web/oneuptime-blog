@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, GitOps, Kubernetes, Fleet, CI/CD, DevOps, Best Practices
+Tags: Rancher, GitOps, Kubernetes, Fleet, CI/CD, DevOps, Best Practice
 
 Description: Learn best practices for implementing GitOps workflows with Rancher, including repository structure, branch strategies, environment promotion, and security considerations.
 

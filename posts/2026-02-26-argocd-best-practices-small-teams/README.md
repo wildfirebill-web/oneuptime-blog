@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Best Practices, DevOps
+Tags: ArgoCD, GitOps, Kubernetes, Best Practice, DevOps
 
 Description: Practical ArgoCD best practices for small teams covering simple architecture, minimal overhead setup, repository structure, access control, and efficient workflow patterns.
 

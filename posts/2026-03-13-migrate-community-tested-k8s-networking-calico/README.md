@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Best Practices, CNI
+Tags: Calico, Kubernetes, Networking, Best Practice, CNI
 
 Description: Follow community-tested migration paths when changing Calico networking configurations to minimize risk.
 

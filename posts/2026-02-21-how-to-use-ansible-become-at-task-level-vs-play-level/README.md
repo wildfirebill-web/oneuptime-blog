@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Privilege Escalation, Best Practices, DevOps
+Tags: Ansible, Privilege Escalation, Best Practice, DevOps
 
 Description: Understand when to use Ansible become at the play level versus the task level and how scope inheritance works
 

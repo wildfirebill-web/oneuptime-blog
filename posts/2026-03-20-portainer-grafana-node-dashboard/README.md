@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Grafana, Node Exporter, Dashboards, Host Metrics
+Tags: Portainer, Grafana, Node Exporter, Dashboard, Host Metrics
 
 Description: Learn how to create a comprehensive host metrics dashboard in Grafana using Node Exporter data for your Portainer infrastructure, covering CPU, memory, disk, and network panels with alerting.
 

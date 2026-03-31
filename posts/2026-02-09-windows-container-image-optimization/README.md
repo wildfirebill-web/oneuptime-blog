@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Windows, Docker
+Tags: Kubernetes, Window, Docker
 
 Description: Optimize Windows container images to reduce size, improve pull times, and decrease storage costs with practical Dockerfile techniques and layer caching strategies.
 

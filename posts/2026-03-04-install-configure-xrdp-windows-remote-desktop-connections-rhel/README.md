@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, XRDP, Remote Desktop, RDP, Windows, Linux
+Tags: RHEL, XRDP, Remote Desktop, RDP, Window, Linux
 
 Description: Install and configure XRDP on RHEL to allow Windows Remote Desktop clients to connect directly to the RHEL graphical desktop using the RDP protocol.
 

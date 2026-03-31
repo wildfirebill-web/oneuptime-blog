@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, String Functions, HCL
+Tags: Terraform, Infrastructure as Code, DevOps, String Function, HCL
 
 Description: Learn how to check if a string contains a substring in Terraform using various functions. This guide covers strcontains, regex, and creative workarounds for different Terraform versions and use cases.
 

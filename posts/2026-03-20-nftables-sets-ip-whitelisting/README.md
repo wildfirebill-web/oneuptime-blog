@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: nftables, Linux, Firewall, IP Whitelisting, Sets, Security, Networking
+Tags: nftables, Linux, Firewall, IP Whitelisting, Set, Security, Networking
 
 Description: Use nftables named sets and anonymous sets to efficiently whitelist IP addresses and subnets, allowing only trusted sources to access your services.
 

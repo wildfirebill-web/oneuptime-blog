@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, ASP.NET Core, C#, Configuration, Database, Entity Framework, Best Practices
+Tags: .NET, ASP.NET Core, C#, Configuration, Database, Entity Framework, Best Practice
 
 Description: Learn how to properly configure and manage connection strings in ASP.NET Core applications. This guide covers appsettings.
 

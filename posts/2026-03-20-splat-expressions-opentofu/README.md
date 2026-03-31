@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Splat Expressions, Collections, Expressions, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Splat Expressions, Collections, Expression, Infrastructure as Code, DevOps
 
 Description: A guide to using splat expressions in OpenTofu to extract attributes from all elements of a list or set of resources.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Windows, ARP, IPv4
+Tags: Networking, Window, ARP, IPv4
 
 Description: Learn how to view and interpret the ARP cache on Windows using arp -a and PowerShell commands.
 

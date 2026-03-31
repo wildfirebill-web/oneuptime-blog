@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Kibana, ELK Stack, Dashboards, Network Monitoring
+Tags: IPv6, Kibana, ELK Stack, Dashboard, Network Monitoring
 
 Description: Build Kibana dashboards to visualize IPv6 traffic patterns, create CIDR-based filters, and monitor dual-stack application behavior using Kibana Lens and aggregations.
 

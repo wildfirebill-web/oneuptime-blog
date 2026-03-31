@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Best Practices, DevOps, Docker, Kubernetes
+Tags: Portainer, Best Practice, DevOps, Docker, Kubernetes
 
 Description: Learn the best practices for structuring and organizing Portainer environments to maximize team productivity and operational efficiency.
 

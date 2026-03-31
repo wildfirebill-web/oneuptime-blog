@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Linux, Best Practices
+Tags: RHEL, Linux, Best Practice
 
 Description: Step-by-step guide on implement a patch management strategy for rhel 9 fleets with practical examples and commands.
 

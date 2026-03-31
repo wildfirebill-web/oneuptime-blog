@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: nftables, Linux, Firewall, IP Blacklisting, Sets, Security, Networking
+Tags: nftables, Linux, Firewall, IP Blacklisting, Set, Security, Networking
 
 Description: Build a dynamic IP blacklist using nftables named sets to efficiently block malicious IPs without reloading your entire firewall ruleset.
 

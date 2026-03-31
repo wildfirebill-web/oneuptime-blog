@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Security, Roles
+Tags: Rancher, Kubernetes, RBAC, Permissions, Security, Role
 
 Description: Learn how to create, configure, and manage Kubernetes service account permissions within Rancher for secure workload-to-API communication.
 

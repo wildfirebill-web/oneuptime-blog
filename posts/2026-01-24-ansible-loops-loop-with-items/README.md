@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Loops, Automation, DevOps, Configuration Management, Best Practices
+Tags: Ansible, Loops, Automation, DevOps, Configuration Management, Best Practice
 
 Description: Master Ansible loops using the modern loop keyword and legacy with_items syntax with practical examples for common automation tasks.
 

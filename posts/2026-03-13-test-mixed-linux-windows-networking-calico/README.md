@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Linux, Networking
+Tags: Calico, Kubernetes, Window, Linux, Networking
 
 Description: Test cross-OS pod connectivity in Calico mixed clusters with real Windows and Linux workloads.
 

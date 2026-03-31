@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Materialized Views, Auto-Refresh, Data Staleness, Performance
+Tags: GCP, BigQuery, Materialized View, Auto-Refresh, Data Staleness, Performance
 
 Description: Diagnose and fix BigQuery materialized view auto-refresh failures and staleness issues, including quota limits, query restrictions, and monitoring strategies.
 

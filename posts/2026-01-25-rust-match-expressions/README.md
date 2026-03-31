@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Pattern Matching, Control Flow, Enums, Error Handling
+Tags: Rust, Pattern Matching, Control Flow, Enum, Error Handling
 
 Description: Master Rust's match expressions for powerful pattern matching. Learn patterns, guards, bindings, and best practices for writing clean and expressive control flow.
 

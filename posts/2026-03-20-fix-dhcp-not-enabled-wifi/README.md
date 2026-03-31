@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, WiFi, Windows, Troubleshooting, Networks
+Tags: DHCP, WiFi, Window, Troubleshooting, Networks
 
 Description: Learn how to fix the 'DHCP is not enabled for WiFi' error message that appears when running the Windows network troubleshooter, by re-enabling automatic IP addressing.
 

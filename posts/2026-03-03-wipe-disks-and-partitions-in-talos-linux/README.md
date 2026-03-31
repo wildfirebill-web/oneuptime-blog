@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Disk Management, Partitions, Node Reset, Kubernetes Operations
+Tags: Talos Linux, Disk Management, Partition, Node Reset, Kubernetes Operations
 
 Description: A step-by-step guide to wiping disks and partitions in Talos Linux, covering full resets, selective wipes, and safe recovery procedures.
 

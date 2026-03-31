@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Instrumentation, Best Practices, Performance
+Tags: OpenTelemetry, Instrumentation, Best Practice, Performance
 
 Description: Learn why instrumenting every function creates noisy traces with thousands of spans and how to select meaningful operations instead.
 

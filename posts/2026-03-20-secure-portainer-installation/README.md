@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Security, Hardening, Best Practices, DevOps
+Tags: Portainer, Security, Hardening, Best Practice, DevOps
 
 Description: Learn a comprehensive set of security best practices to harden your Portainer installation against unauthorized access and attacks.
 

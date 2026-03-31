@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Production, Best Practices, Service Mesh, Kubernetes
+Tags: Istio, Production, Best Practice, Service Mesh, Kubernetes
 
 Description: A comprehensive checklist for deploying Istio in production environments.
 

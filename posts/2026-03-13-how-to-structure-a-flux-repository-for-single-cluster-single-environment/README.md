@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Repository Structure, Best Practices
+Tags: Flux, Kubernetes, GitOps, Repository Structure, Best Practice
 
 Description: Learn how to organize your Flux GitOps repository for a single Kubernetes cluster running a single environment.
 

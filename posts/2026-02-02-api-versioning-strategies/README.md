@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API, Versioning, REST, Backend, Best Practices
+Tags: API, Versioning, REST, Backend, Best Practice
 
 Description: A comprehensive guide to implementing API versioning strategies for maintainable and scalable web services.
 

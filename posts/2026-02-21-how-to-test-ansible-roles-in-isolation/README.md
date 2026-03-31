@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Testing, Molecule
+Tags: Ansible, Role, Testing, Molecule
 
 Description: Learn how to test Ansible roles in isolation using Molecule, Docker, and testinfra to catch bugs before they reach production.
 

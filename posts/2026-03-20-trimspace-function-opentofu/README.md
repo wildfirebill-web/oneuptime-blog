@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Trimspace, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Trimspace, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the trimspace function in OpenTofu to remove leading and trailing whitespace from strings, including spaces, tabs, and newlines.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Troubleshooting, Configuration, Galaxy
+Tags: Ansible, Role, Troubleshooting, Configuration, Galaxy
 
 Description: Fix Ansible role not found errors by correcting role paths, installing from Galaxy, and configuring roles_path in ansible.cfg.
 

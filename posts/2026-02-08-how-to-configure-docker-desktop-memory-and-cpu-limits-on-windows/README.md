@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker Desktop, Windows, WSL 2, Memory, CPU, Performance
+Tags: Docker, Docker Desktop, Window, WSL 2, Memory, CPU, Performance
 
 Description: Configure Docker Desktop memory and CPU limits on Windows using WSL 2 backend settings for optimal container performance.
 

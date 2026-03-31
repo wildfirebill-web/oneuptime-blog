@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Firewall, Security, Automation
+Tags: Ansible, Window, Firewall, Security, Automation
 
 Description: Manage Windows Firewall rules with the Ansible win_firewall_rule module including inbound, outbound, port-based, and application rules.
 

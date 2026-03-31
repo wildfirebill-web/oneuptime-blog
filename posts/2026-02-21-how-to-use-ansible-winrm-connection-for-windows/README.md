@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, WinRM, Configuration Management
+Tags: Ansible, Window, WinRM, Configuration Management
 
 Description: Set up Ansible WinRM connections to manage Windows servers including authentication, HTTPS configuration, and common modules.
 

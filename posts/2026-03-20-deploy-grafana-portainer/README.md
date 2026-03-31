@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Grafana, Monitoring, Dashboards, Docker
+Tags: Portainer, Grafana, Monitoring, Dashboard, Docker
 
 Description: Learn how to deploy Grafana via Portainer with persistent storage, pre-configured data sources, and dashboard provisioning for a production-ready monitoring setup.
 

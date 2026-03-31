@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, Infrastructure as Code, CI/CD, Best Practices
+Tags: OpenTofu, Testing, Infrastructure as Code, CI/CD, Best Practice
 
 Description: Understand the difference between plan mode and apply mode in OpenTofu tests and when to use each for effective infrastructure testing.
 

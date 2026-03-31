@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, CI/CD, Testing, Connectivity, DevOps, Pipelines
+Tags: IPv6, CI/CD, Testing, Connectivity, DevOps, Pipeline
 
 Description: Write CI/CD pipeline steps that verify IPv6 connectivity, test dual-stack application behavior, and validate IPv6 address configuration in automated build environments.
 

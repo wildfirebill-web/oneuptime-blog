@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Project Structure, Best Practices, DevOps
+Tags: Ansible, Project Structure, Best Practice, DevOps
 
 Description: Learn how to organize Ansible playbooks, roles, inventories, and variables in a clean project directory structure that scales with your infrastructure.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, String Functions, HCL, DevOps
+Tags: Terraform, Infrastructure as Code, String Function, HCL, DevOps
 
 Description: Learn how to use the join function in Terraform to combine list elements into a single string with a separator, with practical examples for real infrastructure.
 

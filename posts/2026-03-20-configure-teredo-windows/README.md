@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Teredo, Windows, NAT, Tunneling
+Tags: IPv6, Teredo, Window, NAT, Tunneling
 
 Description: Learn how to configure, verify, and disable Teredo IPv6 tunneling on Windows using netsh and PowerShell commands, including enterprise disablement via Group Policy.
 

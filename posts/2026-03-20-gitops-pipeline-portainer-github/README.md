@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, GitHub, GitOps, CI/CD, Pipelines
+Tags: Portainer, GitHub, GitOps, CI/CD, Pipeline
 
 Description: Learn how to build an end-to-end GitOps pipeline where GitHub stores configuration, GitHub Actions builds images, and Portainer handles deployment.
 

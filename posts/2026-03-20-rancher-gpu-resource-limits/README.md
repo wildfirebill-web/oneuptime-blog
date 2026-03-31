@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, GPU, Resource-limits, Kubernetes, Quotas
+Tags: Rancher, GPU, Resource-limits, Kubernetes, Quota
 
 Description: Guide to setting up GPU resource limits, requests, and quotas in Rancher to prevent overallocation and ensure fair GPU sharing.
 

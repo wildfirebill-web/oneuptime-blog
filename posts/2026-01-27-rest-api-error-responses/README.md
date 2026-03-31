@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: REST API, Error Handling, API Design, HTTP Status Codes, Best Practices
+Tags: REST API, Error Handling, API Design, HTTP Status Codes, Best Practice
 
 Description: Learn how to design consistent, informative error responses in REST APIs including status codes, error formats, and client-friendly messages.
 

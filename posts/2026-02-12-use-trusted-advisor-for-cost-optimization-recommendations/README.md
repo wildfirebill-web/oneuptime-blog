@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Trusted Advisor, Cost Optimization, Best Practices
+Tags: AWS, Trusted Advisor, Cost Optimization, Best Practice
 
 Description: Learn how to use AWS Trusted Advisor cost optimization checks to find idle resources, underutilized instances, and savings opportunities across your account.
 

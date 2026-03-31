@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Plan Review, Best Practices, Risk Management, Infrastructure as Code, DevOps
+Tags: OpenTofu, Plan Review, Best Practice, Risk Management, Infrastructure as Code, DevOps
 
 Description: Learn how to read and critically review tofu plan output to catch dangerous changes before they reach production, including what to look for and red flags to watch out for.
 

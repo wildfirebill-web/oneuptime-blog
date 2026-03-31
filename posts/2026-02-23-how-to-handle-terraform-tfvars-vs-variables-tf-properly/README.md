@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Variables, Configuration, Best Practices, Infrastructure as Code
+Tags: Terraform, HCL, Variables, Configuration, Best Practice, Infrastructure as Code
 
 Description: Understand the difference between terraform.tfvars and variables.tf in Terraform, learn when to use each file, and establish proper patterns for managing variable definitions and values.
 

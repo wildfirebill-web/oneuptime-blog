@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Windows, Scoop, Installation, Infrastructure as Code, DevOps
+Tags: OpenTofu, Window, Scoop, Installation, Infrastructure as Code, DevOps
 
 Description: A guide to installing OpenTofu on Windows using the Scoop package manager without requiring administrator privileges.
 

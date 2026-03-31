@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Monorepo, GitOps, Repository Structure, Kubernetes, Best Practices
+Tags: Flux CD, Monorepo, GitOps, Repository Structure, Kubernetes, Best Practice
 
 Description: A practical guide to structuring a monorepo for Flux CD GitOps, covering directory layout, multi-cluster support, and separation of concerns.
 

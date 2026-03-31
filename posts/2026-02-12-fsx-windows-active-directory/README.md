@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, FSx, Windows, Active Directory, SMB
+Tags: AWS, FSx, Window, Active Directory, SMB
 
 Description: Learn how to join Amazon FSx for Windows File Server to both AWS Managed Microsoft AD and self-managed Active Directory for authentication and access control.
 

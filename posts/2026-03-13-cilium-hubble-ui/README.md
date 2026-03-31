@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, Hubble, Observability, Dashboards
+Tags: Cilium, Kubernetes, Hubble, Observability, Dashboard
 
 Description: Use the Hubble UI to visualize Kubernetes service dependencies, observe network flows in real-time, and investigate security policy decisions through an interactive graphical interface.
 

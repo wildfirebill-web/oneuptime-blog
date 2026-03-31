@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Reboot, Automation, DevOps
+Tags: Ansible, Window, Reboot, Automation, DevOps
 
 Description: Safely reboot Windows servers with the Ansible win_reboot module including timeout control, connection testing, and post-reboot validation.
 

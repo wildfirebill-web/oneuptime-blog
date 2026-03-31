@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Remote State, Data Source, State Management, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Remote State, Data Source, State Management, Infrastructure as Code, Best Practice
 
 Description: Learn how to use the terraform_remote_state data source to share outputs between independently-managed OpenTofu configurations without creating a monolithic state file.
 

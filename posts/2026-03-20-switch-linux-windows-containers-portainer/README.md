@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Windows, Linux Containers, Docker, Container Mode
+Tags: Portainer, Window, Linux Containers, Docker, Container Mode
 
 Description: Learn how to switch between Linux and Windows container modes on Windows hosts and how this affects your Portainer environment and running containers.
 

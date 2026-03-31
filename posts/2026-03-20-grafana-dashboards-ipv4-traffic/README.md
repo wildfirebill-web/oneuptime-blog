@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, IPv4, Network Traffic, Dashboards, Prometheus, Visualization
+Tags: Grafana, IPv4, Network Traffic, Dashboard, Prometheus, Visualization
 
 Description: Build Grafana dashboards to visualize IPv4 network traffic metrics from Prometheus, including bandwidth graphs, packet rates, and per-host network utilization panels.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API Keys, Security, Authentication, Best Practices, Key Management
+Tags: API Keys, Security, Authentication, Best Practice, Key Management
 
 Description: Best practices for API key management including generation, storage, rotation, and revocation strategies.
 

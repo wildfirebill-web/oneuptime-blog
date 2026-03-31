@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Validation, Machine Configuration, DevOps, Best Practices
+Tags: Talos Linux, Validation, Machine Configuration, DevOps, Best Practice
 
 Description: Learn how to validate Talos Linux machine configurations before applying them to avoid misconfigurations that could break your cluster.
 

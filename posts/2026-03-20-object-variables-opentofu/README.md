@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Objects, Structural Types, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variables, Object, Structural Types, Infrastructure as Code, DevOps
 
 Description: A guide to using object type variables in OpenTofu for structured configuration with named, typed attributes.
 

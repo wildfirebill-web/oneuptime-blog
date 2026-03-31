@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Conditional Expressions, Ternary, Expressions, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Conditional Expressions, Ternary, Expression, Infrastructure as Code, DevOps
 
 Description: A guide to using conditional expressions in OpenTofu HCL to select values based on boolean conditions.
 

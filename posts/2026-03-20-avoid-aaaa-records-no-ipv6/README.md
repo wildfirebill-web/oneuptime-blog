@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, DNS, AAAA Records, Troubleshooting, Best Practices
+Tags: IPv6, DNS, AAAA Records, Troubleshooting, Best Practice
 
 Description: Learn why adding AAAA records for servers without real IPv6 connectivity causes connection failures and how to safely test before publishing AAAA records.
 

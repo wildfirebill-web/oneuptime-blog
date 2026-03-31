@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TypeScript, Type Guards, Type Narrowing, Programming, Best Practices, Type Safety
+Tags: TypeScript, Type Guards, Type Narrowing, Programming, Best Practice, Type Safety
 
 Description: Learn how to use type guards in TypeScript to narrow types at runtime and write safer, more predictable code.
 

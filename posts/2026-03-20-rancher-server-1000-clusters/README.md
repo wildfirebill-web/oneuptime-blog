@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Enterprise Scale, 1000 Clusters, Performance, Architecture, HA
+Tags: Rancher, Enterprise Scale, 1000 Clusters, Performance, Architecture, has
 
 Description: Architecture and configuration guide for running Rancher Server at 1000+ cluster scale with external databases, horizontal scaling, and optimized agent configurations.
 

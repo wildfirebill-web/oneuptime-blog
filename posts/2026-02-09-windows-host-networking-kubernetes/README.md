@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Windows, Networking
+Tags: Kubernetes, Window, Networking
 
 Description: Learn how to configure host networking mode for Windows pods in Kubernetes to achieve direct host network access without NAT overhead.
 

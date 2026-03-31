@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, OpenAI, GPT-4, Prompt Engineering, AI, Best Practices, NLP
+Tags: Azure, OpenAI, GPT-4, Prompt Engineering, AI, Best Practice, NLP
 
 Description: Practical prompt engineering techniques for Azure OpenAI GPT-4 that improve response quality, consistency, and reliability in production applications.
 

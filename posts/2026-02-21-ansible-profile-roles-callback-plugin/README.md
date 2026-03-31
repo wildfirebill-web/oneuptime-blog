@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Callback Plugins, Performance, Roles
+Tags: Ansible, Callback Plugins, Performance, Role
 
 Description: Use the Ansible profile_roles callback plugin to measure execution time per role and identify which roles slow down your playbooks.
 

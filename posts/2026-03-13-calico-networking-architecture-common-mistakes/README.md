@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Architecture, CNI, Troubleshooting, Best Practices, Felix, Typha
+Tags: Calico, Kubernetes, Architecture, CNI, Troubleshooting, Best Practice, Felix, Typha
 
 Description: Common architectural mistakes in Calico deployments - from under-resourced Felix pods to missing Typha at scale - and how to prevent and fix them.
 

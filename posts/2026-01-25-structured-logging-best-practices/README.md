@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Structured Logging, Observability, Best Practices, JSON Logging, Log Management, DevOps, Monitoring
+Tags: Structured Logging, Observability, Best Practice, JSON Logging, Log Management, DevOps, Monitoring
 
 Description: A comprehensive guide to implementing structured logging best practices in your applications.
 

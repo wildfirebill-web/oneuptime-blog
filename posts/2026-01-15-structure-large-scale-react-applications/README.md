@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Architecture, TypeScript, Frontend, Best Practices, Scalability
+Tags: React, Architecture, TypeScript, Frontend, Best Practice, Scalability
 
 Description: A comprehensive guide to organizing React codebases that scale gracefully, covering folder structures, patterns, and architectural decisions that keep large teams productive and code maintainable.
 

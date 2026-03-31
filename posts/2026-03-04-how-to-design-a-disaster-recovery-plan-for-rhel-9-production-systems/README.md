@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Linux, Best Practices
+Tags: RHEL, Linux, Best Practice
 
 Description: Step-by-step guide on design a disaster recovery plan for rhel 9 production systems with practical examples and commands.
 

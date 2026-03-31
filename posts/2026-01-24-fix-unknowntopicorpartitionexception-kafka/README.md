@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Apache Kafka, Troubleshooting, Topic Management, Partitions, Java, Admin, Configuration
+Tags: Kafka, Apache Kafka, Troubleshooting, Topic Management, Partition, Java, Admin, Configuration
 
 Description: A comprehensive guide to diagnosing and fixing UnknownTopicOrPartitionException in Apache Kafka, including causes, solutions, and best practices for topic and partition management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, String Functions, HCL, DevOps
+Tags: Terraform, Infrastructure as Code, String Function, HCL, DevOps
 
 Description: Learn how to use the trim function in Terraform to remove specific characters from both ends of a string, with practical examples and real-world patterns.
 

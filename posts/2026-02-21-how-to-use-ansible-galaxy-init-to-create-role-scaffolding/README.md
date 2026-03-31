@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ansible Galaxy, Roles, Scaffolding
+Tags: Ansible, Ansible Galaxy, Role, Scaffolding
 
 Description: Learn how to use ansible-galaxy init to quickly scaffold Ansible roles with the correct directory structure and customization options.
 

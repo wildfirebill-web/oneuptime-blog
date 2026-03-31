@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Urlencode, Urldecode, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Urlencode, Urldecode, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the urlencode and urldecode functions in OpenTofu to encode and decode URL-safe strings for use in HTTP requests and resource configurations.
 

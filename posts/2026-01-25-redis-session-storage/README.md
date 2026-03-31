@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sessions, Authentication, Web Development, Scalability
+Tags: Redis, Session, Authentication, Web Development, Scalability
 
 Description: Learn how to implement session storage with Redis, including session management patterns, security considerations, and integration with popular web frameworks.
 

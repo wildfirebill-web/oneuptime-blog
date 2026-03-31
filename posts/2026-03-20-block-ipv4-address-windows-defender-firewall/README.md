@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Firewall, IPv4, Security, Block, Netsh, PowerShell
+Tags: Window, Firewall, IPv4, Security, Block, Netsh, PowerShell
 
 Description: Block all inbound and outbound traffic to and from a specific IPv4 address in Windows Defender Firewall using netsh and PowerShell, and verify the block is effective.
 

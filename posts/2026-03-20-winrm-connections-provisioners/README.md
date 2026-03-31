@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, WinRM, Windows, Provisioners, Infrastructure as Code
+Tags: OpenTofu, Terraform, WinRM, Window, Provisioners, Infrastructure as Code
 
 Description: Learn how to configure WinRM connection blocks in OpenTofu provisioners to remotely execute scripts and commands on Windows instances after they are created.
 

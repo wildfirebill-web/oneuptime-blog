@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Security, SHA256, Checksums, Verification, DevOps, Supply Chain Security
+Tags: Terraform, Security, SHA256, Checksum, Verification, DevOps, Supply Chain Security
 
 Description: Learn how to verify the integrity and authenticity of Terraform binary downloads using SHA256 checksums and GPG signature verification.
 

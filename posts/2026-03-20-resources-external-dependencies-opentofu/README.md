@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, External Dependencies, Data Source, Infrastructure as Code, Best Practices
+Tags: OpenTofu, External Dependencies, Data Source, Infrastructure as Code, Best Practice
 
 Description: Learn how to handle resources that depend on external systems, pre-existing infrastructure, and third-party services using data sources and preconditions in OpenTofu.
 

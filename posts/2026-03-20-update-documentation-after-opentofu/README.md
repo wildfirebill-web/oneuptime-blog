@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Documentation, Migration, Best Practices, Technical Writing
+Tags: OpenTofu, Terraform, Documentation, Migration, Best Practice, Technical Writing
 
 Description: Learn how to systematically update your infrastructure documentation after migrating from Terraform to OpenTofu, covering README files, runbooks, wikis, and auto-generated docs.
 

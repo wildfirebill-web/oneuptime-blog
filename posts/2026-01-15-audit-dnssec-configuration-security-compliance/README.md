@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DNSSEC, Security, Compliance, Auditing, DNS, Best Practices
+Tags: DNSSEC, Security, Compliance, Auditing, DNS, Best Practice
 
 Description: A comprehensive guide to auditing DNSSEC configurations for security compliance, including checklists, tools, compliance framework mappings, and practical validation techniques.
 

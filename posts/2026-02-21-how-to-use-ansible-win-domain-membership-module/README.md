@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Active Directory, Domain Join, Automation
+Tags: Ansible, Window, Active Directory, Domain Join, Automation
 
 Description: Join Windows servers to Active Directory domains and manage domain membership with the Ansible win_domain_membership module.
 

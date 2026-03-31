@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, nslookup, Troubleshooting, Linux, Windows, Networking
+Tags: DNS, nslookup, Troubleshooting, Linux, Window, Networking
 
 Description: Use nslookup to query DNS records, test different resolvers, perform reverse lookups, and diagnose DNS resolution problems on Linux and Windows.
 

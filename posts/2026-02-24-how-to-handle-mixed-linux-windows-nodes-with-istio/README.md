@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Windows, Linux, Hybrid Cluster, Kubernetes, Node Management
+Tags: Istio, Window, Linux, Hybrid Cluster, Kubernetes, Node Management
 
 Description: How to manage Istio in Kubernetes clusters with mixed Linux and Windows nodes including scheduling and policy configuration.
 

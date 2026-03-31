@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Conditional Logic, Dynamic Blocks, HCL, Best Practices
+Tags: Terraform, Conditional Logic, Dynamic Blocks, HCL, Best Practice
 
 Description: Learn how to conditionally include or exclude properties in Terraform resources using conditional expressions, dynamic blocks, and null values for flexible infrastructure configurations.
 

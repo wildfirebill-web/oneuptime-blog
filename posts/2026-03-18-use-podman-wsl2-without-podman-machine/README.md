@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, WSL2, Windows, Containers, Linux
+Tags: Podman, WSL2, Window, Containers, Linux
 
 Description: Learn how to run Podman directly inside WSL2 without using Podman Machine, giving you a lightweight and efficient container runtime on Windows.
 

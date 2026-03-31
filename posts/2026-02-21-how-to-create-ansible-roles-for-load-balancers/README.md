@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, HAProxy, Load Balancing, Roles, DevOps
+Tags: Ansible, HAProxy, Load Balancing, Role, DevOps
 
 Description: Build a production-grade Ansible role for HAProxy load balancer configuration with health checks, SSL termination, and multiple backend support.
 

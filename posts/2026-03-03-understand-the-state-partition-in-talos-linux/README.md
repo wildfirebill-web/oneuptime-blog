@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Partitions, STATE Partition, Machine Configuration, Disk Management, Kubernetes
+Tags: Talos Linux, Partition, STATE Partition, Machine Configuration, Disk Management, Kubernetes
 
 Description: Learn what the STATE partition in Talos Linux stores, how it persists machine configuration, and why it matters for node identity and cluster membership.
 

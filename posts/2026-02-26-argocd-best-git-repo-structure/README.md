@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Best Practices
+Tags: ArgoCD, GitOps, Kubernetes, Best Practice
 
 Description: Compare different Git repository structures for ArgoCD deployments including monorepo, polyrepo, and hybrid approaches with practical recommendations.
 

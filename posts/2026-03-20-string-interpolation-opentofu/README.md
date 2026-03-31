@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, String Interpolation, Expressions, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, String Interpolation, Expression, Infrastructure as Code, DevOps
 
 Description: A guide to using string interpolation in OpenTofu HCL configurations to embed dynamic values within string literals.
 

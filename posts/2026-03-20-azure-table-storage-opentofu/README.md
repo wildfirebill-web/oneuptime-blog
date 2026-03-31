@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Storage, Tables, OpenTofu, NoSQL, Infrastructure
+Tags: Azure, Storage, Table, OpenTofu, NoSQL, Infrastructure
 
 Description: Learn how to create and configure Azure Table Storage with OpenTofu for storing structured NoSQL data at massive scale with low cost.
 

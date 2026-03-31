@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Linux, Networking
+Tags: Calico, Kubernetes, Window, Linux, Networking
 
 Description: Validate connectivity between Linux and Windows pods in a Calico-managed mixed-OS Kubernetes cluster.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, PostgreSQL, Database, HA
+Tags: Helm, Kubernetes, DevOps, PostgreSQL, Database, has
 
 Description: Complete guide to deploying PostgreSQL on Kubernetes using Helm charts, covering single instances, high availability, backups, and production configurations.
 

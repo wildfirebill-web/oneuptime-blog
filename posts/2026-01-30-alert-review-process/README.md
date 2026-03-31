@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Alerting, SRE, Process, Best Practices
+Tags: Alerting, SRE, Process, Best Practice
 
 Description: Learn how to establish an effective alert review process for continuous improvement.
 

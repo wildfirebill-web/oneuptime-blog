@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, TTL, Caching, Performance, Configuration, Best Practices
+Tags: DNS, TTL, Caching, Performance, Configuration, Best Practice
 
 Description: Choose optimal DNS TTL values for different record types and use cases, balancing cache performance against change propagation speed.
 

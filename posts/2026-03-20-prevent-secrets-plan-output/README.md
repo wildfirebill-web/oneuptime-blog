@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Security, Sensitive Variables, Secrets, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Security, Sensitive Variables, Secrets, Infrastructure as Code, Best Practice
 
 Description: Learn how to use OpenTofu's sensitive variable and output markings, along with provider-level suppression, to keep secrets out of plan and apply output.
 

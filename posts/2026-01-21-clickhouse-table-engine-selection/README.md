@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ClickHouse, MergeTree, Database, Table Engines, ReplacingMergeTree, AggregatingMergeTree, SummingMergeTree, Analytics
+Tags: ClickHouse, MergeTree, Database, Table Engine, ReplacingMergeTree, AggregatingMergeTree, SummingMergeTree, Analytics
 
 Description: A comprehensive comparison of ClickHouse table engines including MergeTree, ReplacingMergeTree, SummingMergeTree, AggregatingMergeTree, and CollapsingMergeTree, with guidance on when to use each.
 

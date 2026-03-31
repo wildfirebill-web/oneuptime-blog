@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Maps, Error Handling, HCL, Infrastructure as Code
+Tags: OpenTofu, Map, Error Handling, HCL, Infrastructure as Code
 
 Description: Learn the different techniques for safely accessing map keys that may not exist in OpenTofu configurations to avoid plan failures.
 

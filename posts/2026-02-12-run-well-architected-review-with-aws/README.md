@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Well-Architected, Architecture Review, Best Practices
+Tags: AWS, Well-Architected, Architecture Review, Best Practice
 
 Description: Step-by-step guide to running an AWS Well-Architected Review using the Well-Architected Tool, covering all six pillars, risk identification, and improvement planning.
 

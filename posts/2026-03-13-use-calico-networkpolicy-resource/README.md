@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, NetworkPolicy, Security, Best Practices
+Tags: Calico, Kubernetes, Networking, NetworkPolicy, Security, Best Practice
 
 Description: Practical usage patterns and best practices for Calico NetworkPolicy resources, including common security scenarios, microsegmentation patterns, and multi-tier policy design.
 

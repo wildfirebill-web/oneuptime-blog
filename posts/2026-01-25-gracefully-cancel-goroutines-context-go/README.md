@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Concurrency, Context, Goroutines, Best Practices
+Tags: Go, Concurrency, Context, Goroutines, Best Practice
 
 Description: Learn how to properly cancel long-running goroutines using Go's context package, with practical patterns for timeouts, cancellation propagation, and resource cleanup.
 

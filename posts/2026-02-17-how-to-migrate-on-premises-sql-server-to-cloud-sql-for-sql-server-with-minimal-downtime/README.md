@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud SQL, SQL Server, Database Migrations, Windows
+Tags: GCP, Cloud SQL, SQL Server, Database Migrations, Window
 
 Description: A detailed guide for migrating on-premises SQL Server databases to Cloud SQL for SQL Server on GCP with minimal application downtime.
 

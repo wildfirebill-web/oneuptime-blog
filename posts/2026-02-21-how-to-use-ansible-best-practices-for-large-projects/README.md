@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, DevOps, Best Practices, Enterprise Automation
+Tags: Ansible, DevOps, Best Practice, Enterprise Automation
 
 Description: A comprehensive guide to Ansible best practices for large-scale projects covering roles, testing, performance, and team collaboration strategies.
 

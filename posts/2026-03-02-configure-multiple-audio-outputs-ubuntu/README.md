@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Audio, PipeWire, PulseAudio, System
+Tags: Ubuntu, Audio, PipeWire, PulseAudio, SYSTEM
 
 Description: Configure Ubuntu to route audio to multiple outputs simultaneously, including speakers and headphones, or send different applications to different audio devices.
 

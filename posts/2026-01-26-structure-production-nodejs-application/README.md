@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Project Structure, Backend, Architecture, Express, TypeScript, Best Practices
+Tags: Node.js, Project Structure, Backend, Architecture, Express, TypeScript, Best Practice
 
 Description: Learn how to structure a production-ready Node.js application with a scalable folder organization, separation of concerns, and practical patterns that make your codebase maintainable as it grows.
 

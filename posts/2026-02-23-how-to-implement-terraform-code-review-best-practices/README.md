@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Code Review, DevOps, Infrastructure as Code, Best Practices
+Tags: Terraform, Code Review, DevOps, Infrastructure as Code, Best Practice
 
 Description: A practical guide to establishing effective Terraform code review practices that catch misconfigurations before they reach production.
 

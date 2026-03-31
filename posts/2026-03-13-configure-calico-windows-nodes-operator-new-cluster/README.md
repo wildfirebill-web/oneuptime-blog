@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Operator, Networking, CNI, Configuration
+Tags: Calico, Kubernetes, Window, Operator, Networking, CNI, Configuration
 
 Description: A guide to configuring Calico on Windows nodes via the Tigera Operator, including IP pools, network settings, and Windows-specific operator configuration.
 

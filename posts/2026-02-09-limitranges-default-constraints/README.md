@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Resource Management, LimitRange, Policy Enforcement, Best Practices
+Tags: Kubernetes, Resource Management, LimitRange, Policy Enforcement, Best Practice
 
 Description: Use LimitRanges to enforce default resource constraints, prevent resource hogging, and ensure consistent pod configurations across your cluster.
 

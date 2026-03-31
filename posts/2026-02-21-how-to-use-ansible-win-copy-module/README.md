@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, File Management, Automation
+Tags: Ansible, Window, File Management, Automation
 
 Description: Learn how to use the Ansible win_copy module to transfer files and content to Windows hosts with practical deployment examples.
 

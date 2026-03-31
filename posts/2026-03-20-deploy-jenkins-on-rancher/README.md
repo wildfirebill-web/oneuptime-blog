@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Jenkins, CI/CD, Kubernetes, Helm, Pipelines
+Tags: Rancher, Jenkins, CI/CD, Kubernetes, Helm, Pipeline
 
 Description: Deploy Jenkins on Rancher with Kubernetes plugin for dynamic agent provisioning, persistent configuration storage, and pipeline integration.
 

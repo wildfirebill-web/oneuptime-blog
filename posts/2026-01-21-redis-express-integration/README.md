@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Express.js, Node.js, Caching, Sessions, Rate Limiting, Middleware
+Tags: Redis, Express.js, Node.js, Caching, Session, Rate Limiting, Middleware
 
 Description: A comprehensive guide to integrating Redis with Express.js applications, covering session management, caching middleware, rate limiting, and real-time features with practical examples.
 

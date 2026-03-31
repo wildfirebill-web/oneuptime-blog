@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, Select, Non-Blocking, POSIX, Networking
+Tags: C, IPv4, SELECT, Non-Blocking, POSIX, Networking
 
 Description: Learn how to use the POSIX select() function to multiplex multiple IPv4 TCP connections in a single-threaded C server, avoiding blocking on any one socket.
 

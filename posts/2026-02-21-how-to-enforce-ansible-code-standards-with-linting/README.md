@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Linting, Code Standards, DevOps, Best Practices
+Tags: Ansible, Linting, Code Standards, DevOps, Best Practice
 
 Description: A comprehensive guide to establishing and enforcing Ansible code standards across your team using linting tools, CI pipelines, and governance processes.
 

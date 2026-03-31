@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Scala, Functional Programming, Immutability, Higher-Order Functions, Pattern Matching, JVM
+Tags: Scala, Functional Programming, Immutability, Higher-Order Function, Pattern Matching, JVM
 
 Description: A practical guide to functional programming in Scala covering immutability, pure functions, higher-order functions, pattern matching, and real-world application patterns.
 

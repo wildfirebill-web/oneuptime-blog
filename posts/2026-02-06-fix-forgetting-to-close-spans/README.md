@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Memory Leak, Span, Best Practices
+Tags: OpenTelemetry, Memory Leak, Span, Best Practice
 
 Description: Discover how unclosed OpenTelemetry spans cause memory leaks and learn patterns to ensure every span is properly closed.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provider Upgrades, Breaking Changes, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Provider Upgrades, Breaking Changes, Best Practice, Infrastructure as Code
 
 Description: Learn how to safely upgrade providers with breaking changes in OpenTofu by reviewing changelogs, using version constraints, and performing incremental migrations.
 

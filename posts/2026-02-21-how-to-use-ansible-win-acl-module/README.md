@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Security, File Permissions
+Tags: Ansible, Window, Security, File Permissions
 
 Description: Learn how to manage Windows file and directory permissions using the Ansible win_acl module with practical NTFS ACL examples.
 

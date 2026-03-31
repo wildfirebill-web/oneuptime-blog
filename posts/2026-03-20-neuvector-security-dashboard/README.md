@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NeuVector, Dashboards, Security Monitoring, Kubernetes, Container Security
+Tags: NeuVector, Dashboard, Security Monitoring, Kubernetes, Container Security
 
 Description: Use the NeuVector security dashboard to monitor your cluster's security posture, track vulnerabilities, and visualize container activity in real time.
 

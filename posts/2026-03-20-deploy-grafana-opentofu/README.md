@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Grafana, Kubernetes, Helm, Monitoring, Infrastructure as Code, Dashboards
+Tags: OpenTofu, Grafana, Kubernetes, Helm, Monitoring, Infrastructure as Code, Dashboard
 
 Description: Learn how to deploy Grafana to Kubernetes using OpenTofu with pre-configured data sources, dashboards, and persistent storage for production-ready visualization.
 

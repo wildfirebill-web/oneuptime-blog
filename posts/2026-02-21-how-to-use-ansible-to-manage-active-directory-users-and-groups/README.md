@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Active Directory, Windows, User Management
+Tags: Ansible, Active Directory, Window, User Management
 
 Description: Automate Active Directory user and group management with Ansible using the microsoft.ad collection for scalable identity operations.
 

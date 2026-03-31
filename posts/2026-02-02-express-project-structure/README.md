@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Express, Project Structure, Architecture, Best Practices
+Tags: NodeJS, Express, Project Structure, Architecture, Best Practice
 
 Description: Learn how to organize Express.js applications for scalability with proper folder structure, separation of concerns, and modular architecture patterns.
 

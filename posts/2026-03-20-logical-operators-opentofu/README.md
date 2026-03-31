@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Logical Operators, Expressions, Booleans, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Logical Operators, Expression, Boolean, Infrastructure as Code, DevOps
 
 Description: A guide to using logical operators in OpenTofu HCL expressions to combine boolean conditions for complex configuration logic.
 

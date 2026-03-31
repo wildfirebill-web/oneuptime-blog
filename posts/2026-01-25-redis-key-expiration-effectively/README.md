@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, TTL, Caching, Performance, Best Practices
+Tags: Redis, TTL, Caching, Performance, Best Practice
 
 Description: Master Redis key expiration strategies including TTL management, lazy vs active expiration, handling cache stampedes, and implementing sliding expiration windows.
 

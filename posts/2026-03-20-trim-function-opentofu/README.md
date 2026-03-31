@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Trim, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Trim, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the trim function in OpenTofu to remove specified characters from the beginning and end of a string.
 

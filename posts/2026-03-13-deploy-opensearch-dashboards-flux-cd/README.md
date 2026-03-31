@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Logging, OpenSearch, Dashboards, Visualization
+Tags: Flux CD, Kubernetes, GitOps, Logging, OpenSearch, Dashboard, Visualization
 
 Description: Deploy OpenSearch Dashboards visualization platform to Kubernetes using Flux CD for GitOps-managed log exploration and analytics.
 

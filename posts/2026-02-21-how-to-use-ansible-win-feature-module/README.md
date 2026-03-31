@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Server Roles, IIS, Automation
+Tags: Ansible, Window, Server Roles, IIS, Automation
 
 Description: Install and remove Windows Server roles and features using the Ansible win_feature module with real examples for IIS, DNS, and more.
 

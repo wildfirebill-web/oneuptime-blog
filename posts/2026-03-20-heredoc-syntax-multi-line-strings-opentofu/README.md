@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Heredoc, Multi-Line Strings, HCL, Expressions, Infrastructure as Code
+Tags: OpenTofu, Heredoc, Multi-Line Strings, HCL, Expression, Infrastructure as Code
 
 Description: Learn how to use heredoc syntax in OpenTofu to write multi-line strings for user data scripts, JSON policies, and configuration content.
 

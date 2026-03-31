@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Geospatial, GeoJSON, Location, Database, Maps
+Tags: MongoDB, Geospatial, GeoJSON, Location, Database, Map
 
 Description: Master MongoDB geospatial queries to build location-aware applications. Learn about GeoJSON, spatial indexes, proximity searches, and real-world use cases with practical code examples.
 

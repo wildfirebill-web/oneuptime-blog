@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Best Practices, Infrastructure as Code, DevOps, Code Quality
+Tags: Terraform, Best Practice, Infrastructure as Code, DevOps, Code Quality
 
 Description: A comprehensive guide to Terraform best practices covering code organization, state management, security, testing, and team collaboration patterns for production-ready infrastructure.
 

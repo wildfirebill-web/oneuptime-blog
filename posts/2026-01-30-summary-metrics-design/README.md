@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Metrics, Summaries, Prometheus, Quantiles
+Tags: Metrics, Summaries, Prometheus, Quantile
 
 Description: Learn to build summary metrics design for tracking client-side calculated quantiles.
 

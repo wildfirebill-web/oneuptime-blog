@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Static Address, PowerShell, Netsh
+Tags: IPv6, Window, Static Address, PowerShell, Netsh
 
 Description: Learn how to assign static IPv6 addresses on Windows using PowerShell, netsh, and the GUI, including setting a gateway and DNS servers for full IPv6 connectivity.
 

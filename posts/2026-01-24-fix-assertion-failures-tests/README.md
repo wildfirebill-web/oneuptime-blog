@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Testing, Assertions, Debugging, Unit Tests, Test Failures, Python, JavaScript, Best Practices
+Tags: Testing, Assertions, Debugging, Unit Tests, Test Failures, Python, JavaScript, Best Practice
 
 Description: Learn how to diagnose and fix assertion failures in your test suite, including common causes, debugging strategies, and best practices for writing reliable assertions.
 

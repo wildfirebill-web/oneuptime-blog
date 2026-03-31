@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Logging, Observability, JSON, Best Practices, DevOps
+Tags: Logging, Observability, JSON, Best Practice, DevOps
 
 Description: Implement structured logging with JSON format, consistent fields, context propagation, and log levels for better searchability and analysis.
 

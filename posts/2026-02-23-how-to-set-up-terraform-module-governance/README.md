@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Governance, Best Practices, Infrastructure as Code
+Tags: Terraform, Modules, Governance, Best Practice, Infrastructure as Code
 
 Description: Establish a Terraform module governance framework that ensures quality, security, and consistency across your organization's shared infrastructure modules.
 

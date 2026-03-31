@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Configuration, Automation
+Tags: Ansible, Role, Configuration, Automation
 
 Description: Learn how to use the allow_duplicates setting in Ansible roles to run the same role multiple times with different parameters in a single play.
 

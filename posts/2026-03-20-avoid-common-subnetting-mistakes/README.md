@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Subnetting, Networking, Best Practices, Troubleshooting
+Tags: IPv4, Subnetting, Networking, Best Practice, Troubleshooting
 
 Description: Common subnetting mistakes include subnet overlap, incorrect host counts, misaligned subnet boundaries, and wrong gateway assignments - all of which cause network outages that are difficult to...
 

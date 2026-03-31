@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Prometheus, PromQL, Queries, Instant, Range, Monitoring
+Tags: Grafana, Prometheus, PromQL, Queries, Instant, range, Monitoring
 
 Description: Learn what the 'Instant' checkbox does in Grafana panel queries.
 

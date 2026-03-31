@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Jenkins, CI/CD, Pipelines
+Tags: Podman, Containers, DevOps, Jenkins, CI/CD, Pipeline
 
 Description: Learn how to replace Docker with Podman in Jenkins pipelines for building, testing, and deploying container images with improved security.
 

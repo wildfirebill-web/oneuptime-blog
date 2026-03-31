@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Operator, Migration, Best Practices
+Tags: Calico, Kubernetes, Networking, Operator, Migration, Best Practice
 
 Description: Avoid the most common pitfalls when migrating Calico from manifest to operator installation, including configuration mismatches, skipped backups, and network disruption traps.
 

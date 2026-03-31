@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Best Practices, Volumes, Storage, Docker
+Tags: Portainer, Best Practice, Volumes, Storage, Docker
 
 Description: Manage Docker volumes effectively in Portainer to ensure data persistence, performance, and proper lifecycle management.
 

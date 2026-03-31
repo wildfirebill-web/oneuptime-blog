@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Datadog, Log Management, Pipelines, Infrastructure as Code
+Tags: OpenTofu, Datadog, Log Management, Pipeline, Infrastructure as Code
 
 Description: Learn how to create and manage Datadog log pipelines and processors with OpenTofu to parse, enrich, and route log data at scale.
 

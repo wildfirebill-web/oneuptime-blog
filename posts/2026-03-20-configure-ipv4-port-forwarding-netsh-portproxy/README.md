@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, Netsh, Port Forwarding, IPv4, Portproxy
+Tags: Window, Networking, Netsh, Port Forwarding, IPv4, Portproxy
 
 Description: Configure TCP port forwarding on Windows using netsh interface portproxy to redirect traffic from one IPv4 address and port to another, enabling reverse proxy and service redirection.
 

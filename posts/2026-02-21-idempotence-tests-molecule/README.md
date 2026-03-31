@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Molecule, Idempotence, Testing, Best Practices
+Tags: Ansible, Molecule, Idempotence, Testing, Best Practice
 
 Description: Master Ansible idempotence testing with Molecule to ensure your roles produce consistent results on repeated runs without unwanted changes.
 

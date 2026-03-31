@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, DSC, Configuration Management, PowerShell
+Tags: Ansible, Window, DSC, Configuration Management, PowerShell
 
 Description: Leverage PowerShell DSC resources within Ansible playbooks using the win_dsc module for advanced Windows configuration management.
 

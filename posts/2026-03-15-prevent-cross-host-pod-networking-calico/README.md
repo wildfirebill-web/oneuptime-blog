@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, BGP, Prevention, Best Practices, Infrastructure
+Tags: Calico, Kubernetes, Networking, BGP, Prevention, Best Practice, Infrastructure
 
 Description: Proactive measures to prevent cross-host pod networking failures in Kubernetes clusters running Calico.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Dashboards, Automation, JavaScript
+Tags: Portainer, API, Dashboard, Automation, JavaScript
 
 Description: Build a custom real-time container monitoring dashboard by querying the Portainer REST API using JavaScript and HTML.
 

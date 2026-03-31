@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Lookup, Map Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Lookup, Map Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the lookup function in OpenTofu to retrieve values from a map with a fallback default when the key is not found.
 

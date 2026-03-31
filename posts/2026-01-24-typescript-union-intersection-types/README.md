@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TypeScript, Union Types, Intersection Types, Type System, Programming, Best Practices
+Tags: TypeScript, Union Types, Intersection Types, Type System, Programming, Best Practice
 
 Description: Learn how to effectively use union and intersection types in TypeScript to create flexible and type-safe code structures.
 

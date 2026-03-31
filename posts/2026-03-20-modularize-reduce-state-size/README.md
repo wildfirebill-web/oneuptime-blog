@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Performance, State Management, Modularization, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Performance, State Management, Modularization, Infrastructure as Code, Best Practice
 
 Description: Learn how to break a large monolithic OpenTofu state file into smaller, focused state files to improve plan speed, reduce blast radius, and enable team autonomy.
 

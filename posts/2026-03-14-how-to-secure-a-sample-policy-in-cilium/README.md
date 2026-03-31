@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, Network Policy, Security, Best Practices
+Tags: Cilium, Kubernetes, Network Policy, Security, Best Practice
 
 Description: How to create and secure a sample CiliumNetworkPolicy with best practices for identity-based access control, L7 filtering, and DNS-aware rules.
 

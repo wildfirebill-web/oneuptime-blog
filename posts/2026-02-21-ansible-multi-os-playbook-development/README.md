@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Multi-OS, Cross-Platform, Best Practices, Testing
+Tags: Ansible, Multi-OS, Cross-Platform, Best Practice, Testing
 
 Description: Develop and test Ansible playbooks that work across Linux, FreeBSD, macOS, and Windows using a structured multi-OS development workflow.
 

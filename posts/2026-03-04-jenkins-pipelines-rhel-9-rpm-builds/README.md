@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Jenkins, Pipelines, RPM, CI/CD, Linux
+Tags: RHEL, Jenkins, Pipeline, RPM, CI/CD, Linux
 
 Description: Create Jenkins pipelines that automatically build RPM packages for RHEL, including spec file management and repository publishing.
 

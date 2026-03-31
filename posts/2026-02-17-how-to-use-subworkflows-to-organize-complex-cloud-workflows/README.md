@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Workflows, Subworkflows, Code Organization, Best Practices
+Tags: GCP, Cloud Workflows, Subworkflows, Code Organization, Best Practice
 
 Description: Learn how to use subworkflows in Google Cloud Workflows to break complex processes into reusable, modular components that are easier to maintain and test.
 

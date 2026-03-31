@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Source, Performance, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Data Source, Performance, Best Practice, Infrastructure as Code
 
 Description: Learn how to avoid unnecessary data source calls in OpenTofu that slow down plans, hit API rate limits, and add complexity without benefit.
 

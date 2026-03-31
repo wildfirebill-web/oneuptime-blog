@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, for_each, Sets, Resources, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, for_each, Set, Resources, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use for_each with sets of strings in OpenTofu to create multiple resource instances identified by unique string values.
 

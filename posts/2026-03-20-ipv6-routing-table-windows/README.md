@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Routing Table, Netsh, PowerShell
+Tags: IPv6, Window, Routing Table, Netsh, PowerShell
 
 Description: Learn how to view and interpret the IPv6 routing table on Windows using netsh, route, and PowerShell commands.
 

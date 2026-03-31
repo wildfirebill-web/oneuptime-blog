@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Site Reliability Engineering, SRE, Best Practices, Reliability, Observability, Automation, OpenTelemetry
+Tags: Site Reliability Engineering, SRE, Best Practice, Reliability, Observability, Automation, OpenTelemetry
 
 Description: A prioritized list of SRE practices that deliver outsized reliability gains, with concrete steps and tools to help you start today.
 

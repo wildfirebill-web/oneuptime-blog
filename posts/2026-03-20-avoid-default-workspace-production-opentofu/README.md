@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Workspaces, Best Practices, Production Safety, Infrastructure as Code
+Tags: OpenTofu, Workspaces, Best Practice, Production Safety, Infrastructure as Code
 
 Description: Learn why using the default workspace for production is risky and how to structure environment isolation properly with OpenTofu.
 

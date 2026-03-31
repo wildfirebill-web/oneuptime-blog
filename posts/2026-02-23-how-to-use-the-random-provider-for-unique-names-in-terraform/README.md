@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Random Provider, Naming, Infrastructure as Code, Best Practices
+Tags: Terraform, Random Provider, Naming, Infrastructure as Code, Best Practice
 
 Description: Learn how to use the Terraform random provider to generate unique resource names that prevent naming conflicts across environments and deployments.
 

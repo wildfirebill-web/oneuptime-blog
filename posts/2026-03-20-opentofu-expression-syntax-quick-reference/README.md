@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Expressions, HCL, Quick Reference, Infrastructure as Code
+Tags: OpenTofu, Expression, HCL, Quick Reference, Infrastructure as Code
 
 Description: A quick reference for OpenTofu expression syntax including references, operators, conditionals, for expressions, and splat expressions.
 

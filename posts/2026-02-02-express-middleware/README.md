@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Express, Middleware, API, Best Practices
+Tags: NodeJS, Express, Middleware, API, Best Practice
 
 Description: Master Express middleware patterns including custom middleware, error handling, authentication, logging, and proper middleware ordering.
 

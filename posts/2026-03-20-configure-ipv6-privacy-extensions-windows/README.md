@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Privacy Extensions, Temporary Addresses, PowerShell
+Tags: IPv6, Window, Privacy Extensions, Temporary Addresses, PowerShell
 
 Description: Learn how to configure IPv6 privacy extensions (RFC 4941) on Windows to control temporary address generation and whether the system prefers temporary or stable IPv6 addresses.
 

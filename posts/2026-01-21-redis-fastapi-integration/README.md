@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, FastAPI, Python, Async, Caching, Sessions, Dependency Injection
+Tags: Redis, FastAPI, Python, Async, Caching, Session, Dependency Injection
 
 Description: A comprehensive guide to integrating Redis with FastAPI applications using async clients, covering caching, session management, rate limiting, and dependency injection patterns.
 

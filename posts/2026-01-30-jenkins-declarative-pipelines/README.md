@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Jenkins, Pipelines, CI/CD, Declarative
+Tags: Jenkins, Pipeline, CI/CD, Declarative
 
 Description: A practical guide to writing Jenkins Declarative Pipelines with examples covering stages, agents, post actions, and environment variables.
 

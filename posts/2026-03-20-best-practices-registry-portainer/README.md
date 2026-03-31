@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Best Practices, Docker Registry, Images, Security
+Tags: Portainer, Best Practice, Docker Registry, Images, Security
 
 Description: Manage Docker registries in Portainer securely and efficiently following industry best practices.
 

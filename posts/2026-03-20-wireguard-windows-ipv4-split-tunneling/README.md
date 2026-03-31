@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WireGuard, Windows, VPN, IPv4, Split Tunneling, Networking
+Tags: WireGuard, Window, VPN, IPv4, Split Tunneling, Networking
 
 Description: Install the WireGuard Windows client and configure an IPv4 split tunnel configuration file to route only selected traffic through the VPN.
 

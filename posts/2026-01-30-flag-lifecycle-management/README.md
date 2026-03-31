@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Feature Flags, DevOps, Lifecycle Management, Best Practices
+Tags: Feature Flags, DevOps, Lifecycle Management, Best Practice
 
 Description: Learn how to manage the lifecycle of feature flags from creation to retirement.
 

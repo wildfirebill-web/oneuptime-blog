@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Dependencies, Meta
+Tags: Ansible, Role, Dependencies, Meta
 
 Description: Learn how to declare and manage role dependencies in Ansible using meta/main.yml for automatic dependency resolution and execution.
 

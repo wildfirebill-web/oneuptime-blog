@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SLAAC, Windows, IPv6, Address Autoconfiguration, Netsh, PowerShell
+Tags: SLAAC, Window, IPv6, Address Autoconfiguration, Netsh, PowerShell
 
 Description: Configure and verify IPv6 SLAAC on Windows using netsh and PowerShell commands, including managing temporary addresses and privacy extensions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MySQL, Window Functions, SQL, Analytics
+Tags: MySQL, Window Function, SQL, Analytics
 
 Description: Learn advanced MySQL window functions for complex analytical queries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Automation, DevOps, WinRM, Configuration Management
+Tags: Ansible, Window, Automation, DevOps, WinRM, Configuration Management
 
 Description: A comprehensive guide to configuring Ansible for managing Windows hosts using WinRM, including authentication setup and common tasks.
 

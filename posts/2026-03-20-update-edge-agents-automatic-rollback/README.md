@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Edge Agent, Updates, Rollback, Maintenance
+Tags: Portainer, Edge Agent, Update, Rollback, Maintenance
 
 Description: Update Portainer Edge Agents remotely with automatic rollback capability if the update fails.
 

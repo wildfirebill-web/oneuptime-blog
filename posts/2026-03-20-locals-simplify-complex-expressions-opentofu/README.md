@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Locals, HCL, Infrastructure as Code, Best Practices, DevOps
+Tags: OpenTofu, Locals, HCL, Infrastructure as Code, Best Practice, DevOps
 
 Description: Learn how to use local values to break down complex expressions, reduce duplication, and make your OpenTofu configurations more readable.
 

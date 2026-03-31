@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Power Management, Server Configuration
+Tags: Ansible, Window, Power Management, Server Configuration
 
 Description: Configure Windows power settings with Ansible to ensure servers run on the optimal power plan and prevent unwanted sleep or hibernation.
 

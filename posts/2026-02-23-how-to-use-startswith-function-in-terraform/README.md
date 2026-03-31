@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, String Functions, HCL, DevOps
+Tags: Terraform, Infrastructure as Code, String Function, HCL, DevOps
 
 Description: Learn how to use the startswith function in Terraform to check if a string begins with a specific prefix, with practical examples for validation, filtering, and routing.
 

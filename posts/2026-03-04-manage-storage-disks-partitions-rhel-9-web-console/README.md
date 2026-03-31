@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Cockpit, Storage, Partitions, Linux
+Tags: RHEL, Cockpit, Storage, Partition, Linux
 
 Description: Learn how to manage disks, create partitions, format filesystems, and configure mount points using the Cockpit web console on RHEL.
 

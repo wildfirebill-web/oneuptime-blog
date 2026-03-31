@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Grafana, Monitoring, Dashboards, Kubernetes, Helm
+Tags: Rancher, Grafana, Monitoring, Dashboard, Kubernetes, Helm
 
 Description: Deploy Grafana on Rancher as a standalone visualization platform with persistent dashboard storage, data source configuration, and LDAP authentication.
 

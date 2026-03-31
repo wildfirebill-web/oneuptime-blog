@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache Kafka, Event Schema Design, Event-Driven Architecture, Domain Events, Best Practices
+Tags: Apache Kafka, Event Schema Design, Event-Driven Architecture, Domain Events, Best Practice
 
 Description: A comprehensive guide to designing event schemas for Apache Kafka, covering naming conventions, versioning strategies, and best practices for maintainable event-driven systems.
 

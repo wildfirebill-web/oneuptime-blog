@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, File Organization, Best Practices, Infrastructure as Code
+Tags: Terraform, HCL, File Organization, Best Practice, Infrastructure as Code
 
 Description: Learn how to split Terraform configuration across multiple files for better organization, readability, and maintainability of your infrastructure code.
 

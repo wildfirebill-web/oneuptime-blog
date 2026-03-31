@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Networking, CNI, Upgrade
+Tags: Calico, Kubernetes, Window, Networking, CNI, Upgrade
 
 Description: A guide to safely upgrading Calico on Windows Server nodes in a Kubernetes cluster while maintaining pod networking continuity.
 

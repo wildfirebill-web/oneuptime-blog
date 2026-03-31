@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Replace, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Replace, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the replace function in OpenTofu to substitute occurrences of a substring within a string, including regex-based replacements.
 

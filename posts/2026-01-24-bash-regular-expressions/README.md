@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bash, Shell Scripting, Regular Expressions, Regex, Linux, Pattern Matching, Text Processing
+Tags: Bash, Shell Scripting, Regular Expression, Regex, Linux, Pattern Matching, Text Processing
 
 Description: Learn how to use regular expressions in Bash for pattern matching, text validation, and string manipulation with practical examples.
 

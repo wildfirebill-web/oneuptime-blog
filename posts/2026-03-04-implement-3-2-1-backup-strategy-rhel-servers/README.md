@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Backup Strategy, 3-2-1, Disaster Recovery, Best Practices, Linux
+Tags: RHEL, Backup Strategy, 3-2-1, Disaster Recovery, Best Practice, Linux
 
 Description: Implement the 3-2-1 backup strategy on RHEL servers: three copies of data, on two different media types, with one copy offsite.
 

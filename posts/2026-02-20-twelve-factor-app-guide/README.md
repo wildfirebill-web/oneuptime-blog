@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Twelve-Factor App, Cloud Native, Best Practices, DevOps, Architecture
+Tags: Twelve-Factor App, Cloud Native, Best Practice, DevOps, Architecture
 
 Description: A practical guide to the twelve-factor app methodology for building cloud-native applications that scale reliably.
 

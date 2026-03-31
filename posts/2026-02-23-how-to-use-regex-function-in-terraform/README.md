@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, String Functions, HCL, DevOps, Regular Expressions
+Tags: Terraform, Infrastructure as Code, String Function, HCL, DevOps, Regular Expression
 
 Description: Learn how to use the regex function in Terraform to extract values from strings using regular expressions, with practical examples for parsing and validation.
 

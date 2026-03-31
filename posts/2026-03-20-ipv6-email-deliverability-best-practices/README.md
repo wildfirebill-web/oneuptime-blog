@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Email, Deliverability, SPF, DKIM, DMARC, Best Practices
+Tags: IPv6, Email, Deliverability, SPF, DKIM, DMARC, Best Practice
 
 Description: Understand the key best practices for achieving good email deliverability when sending from IPv6 addresses, covering reputation, authentication, and infrastructure setup.
 

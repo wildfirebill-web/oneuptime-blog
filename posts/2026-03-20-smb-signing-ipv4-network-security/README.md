@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Samba, SMB Signing, IPv4, Security, MITM Protection, Windows, Configuration
+Tags: Samba, SMB Signing, IPv4, Security, MITM Protection, Window, Configuration
 
 Description: Learn how to configure SMB signing on Samba and Windows to prevent man-in-the-middle attacks on IPv4 SMB connections.
 

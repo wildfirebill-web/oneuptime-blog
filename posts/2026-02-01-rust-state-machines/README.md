@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, State Machines, Type State, Design Pattern, Enums
+Tags: Rust, State Machines, Type State, Design Pattern, Enum
 
 Description: A practical guide to implementing type-safe state machines in Rust using enums and the typestate pattern.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provider Versioning, Best Practices, Infrastructure as Code, Dependency Management
+Tags: OpenTofu, Provider Versioning, Best Practice, Infrastructure as Code, Dependency Management
 
 Description: Learn how to pin provider versions in OpenTofu using version constraints and the dependency lock file to ensure reproducible, stable infrastructure deployments.
 

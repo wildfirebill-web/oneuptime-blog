@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Security, NSA, Guidance, Best Practices
+Tags: IPv6, Security, NSA, Guidance, Best Practice
 
 Description: Learn the key security recommendations from NSA's IPv6 security guidance covering risks from accidental activation, tunneling threats, and required security controls.
 

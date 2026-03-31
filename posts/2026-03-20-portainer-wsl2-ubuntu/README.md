@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, WSL2, Ubuntu, Docker, Windows, Self-Hosted, Development
+Tags: Portainer, WSL2, Ubuntu, Docker, Window, Self-Hosted, Development
 
 Description: Run Portainer inside WSL2 on Windows 10/11 using Docker Engine directly in Ubuntu, without Docker Desktop, for a lightweight development container management setup.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Windows, Calico
+Tags: Kubernetes, Window, Calico
 
 Description: Complete guide to installing and configuring Calico CNI for Windows worker nodes with network policies and advanced routing capabilities.
 

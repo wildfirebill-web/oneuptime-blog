@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ansible Galaxy, Roles, Cleanup, Maintenance
+Tags: Ansible, Ansible Galaxy, Role, Cleanup, Maintenance
 
 Description: How to remove Ansible Galaxy roles and collections using the CLI, clean up unused dependencies, and manage role lifecycle properly.
 

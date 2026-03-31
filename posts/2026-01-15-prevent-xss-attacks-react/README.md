@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Security, XSS, OWASP, Frontend, Best Practices
+Tags: React, Security, XSS, OWASP, Frontend, Best Practice
 
 Description: A comprehensive guide to understanding, identifying, and preventing Cross-Site Scripting (XSS) vulnerabilities in React applications with practical code examples and security best practices.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Security, Checksums, Verification, Infrastructure as Code, DevOps
+Tags: OpenTofu, Security, Checksum, Verification, Infrastructure as Code, DevOps
 
 Description: A guide to verifying OpenTofu binary integrity using SHA256 checksums and GPG signature verification.
 

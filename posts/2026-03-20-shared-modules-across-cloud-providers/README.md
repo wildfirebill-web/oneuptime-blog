@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Multi-Cloud, Modules, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Terraform, Multi-Cloud, Modules, Infrastructure as Code, Best Practice
 
 Description: Learn how to design and share OpenTofu modules that work across multiple cloud providers by using abstractions, interfaces, and provider-agnostic patterns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WiFi, Windows, No Internet, IPv4, Troubleshooting, DHCP
+Tags: WiFi, Window, No Internet, IPv4, Troubleshooting, DHCP
 
 Description: Learn how to fix the 'No Internet Access' warning on Windows WiFi when you have an IP address but cannot reach the internet, covering DNS, gateway, and routing issues.
 

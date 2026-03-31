@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kotlin, Data Classes, OOP, Immutability, Best Practices
+Tags: Kotlin, Data Classes, OOP, Immutability, Best Practice
 
 Description: A practical guide to using Kotlin data classes for cleaner, more maintainable code with automatic equals, hashCode, copy, and destructuring capabilities.
 

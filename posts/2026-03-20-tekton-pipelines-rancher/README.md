@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Tekton, Rancher, Kubernetes, CI/CD, Pipelines, GitOps, SUSE Rancher
+Tags: Tekton, Rancher, Kubernetes, CI/CD, Pipeline, GitOps, SUSE Rancher
 
 Description: Learn how to install Tekton Pipelines on a Rancher-managed Kubernetes cluster, create pipeline tasks, and automate container image builds and deployments.
 

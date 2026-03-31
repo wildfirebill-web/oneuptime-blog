@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Resource-Management, Quotas, Best-practices, Kubernetes
+Tags: Rancher, Resource-Management, Quota, Best-practices, Kubernetes
 
 Description: Guide to resource management best practices in Rancher for optimal cluster utilization and workload isolation.
 

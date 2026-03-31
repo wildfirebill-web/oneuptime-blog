@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Technical Debt, Refactoring, Best Practices, Infrastructure as Code
+Tags: Terraform, Technical Debt, Refactoring, Best Practice, Infrastructure as Code
 
 Description: Identify, measure, and systematically reduce Terraform technical debt to keep your infrastructure codebase maintainable, secure, and efficient over time.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Idempotency, API, Reliability, Best Practices
+Tags: Go, Idempotency, API, Reliability, Best Practice
 
 Description: Learn how to implement idempotency keys in Go APIs to prevent duplicate operations during network failures and retries.
 

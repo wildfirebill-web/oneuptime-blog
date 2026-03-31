@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, PowerShell, Automation
+Tags: Ansible, Window, PowerShell, Automation
 
 Description: Master the Ansible win_shell module to run PowerShell and cmd commands on Windows hosts with pipes, redirects, and full shell features.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Pre-Tasks, Post-Tasks
+Tags: Ansible, Role, Pre-Tasks, Post-Tasks
 
 Description: Learn how to use pre_tasks and post_tasks with Ansible roles for setup, validation, health checks, and notification workflows.
 

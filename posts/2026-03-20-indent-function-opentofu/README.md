@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Indent, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Indent, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the indent function in OpenTofu to add consistent indentation to multi-line strings when embedding them in YAML or other indentation-sensitive formats.
 

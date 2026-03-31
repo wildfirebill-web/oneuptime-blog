@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, User Management, Security, SSH, Roles
+Tags: Ansible, User Management, Security, SSH, Role
 
 Description: Build an Ansible role for managing system users, SSH keys, sudo access, and password policies consistently across all your servers.
 

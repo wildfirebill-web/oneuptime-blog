@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, TypeScript, Configuration, Strict Mode, Best Practices, Frontend
+Tags: React, TypeScript, Configuration, Strict Mode, Best Practice, Frontend
 
 Description: Learn how to configure TypeScript with strict mode enabled for React projects to catch bugs early, improve code quality, and ensure type safety across your entire codebase.
 

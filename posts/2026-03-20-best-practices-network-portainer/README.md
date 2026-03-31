@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Best Practices, Networking, Docker, Security
+Tags: Portainer, Best Practice, Networking, Docker, Security
 
 Description: Configure Docker and Kubernetes networks in Portainer following security and performance best practices.
 

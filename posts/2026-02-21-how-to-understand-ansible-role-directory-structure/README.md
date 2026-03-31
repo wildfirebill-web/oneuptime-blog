@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Directory Structure, Configuration Management
+Tags: Ansible, Role, Directory Structure, Configuration Management
 
 Description: A detailed walkthrough of every directory and file in an Ansible role, explaining what each piece does and when to use it.
 

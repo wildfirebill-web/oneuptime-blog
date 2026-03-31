@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Architecture, Best Practices, Modules, Infrastructure as Code
+Tags: OpenTofu, Architecture, Best Practice, Modules, Infrastructure as Code
 
 Description: Learn how to organize OpenTofu configurations by splitting resources across multiple files, modules, and state files to improve maintainability and team collaboration.
 

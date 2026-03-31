@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Code Review, Instrumentation Quality, Best Practices
+Tags: OpenTelemetry, Code Review, Instrumentation Quality, Best Practice
 
 Description: Establish clear code review guidelines that help your team catch instrumentation issues before they reach production and degrade observability.
 

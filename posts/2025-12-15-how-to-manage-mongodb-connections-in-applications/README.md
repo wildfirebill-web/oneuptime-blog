@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Connection Pooling, Node.js, Performance, Database, Best Practices
+Tags: MongoDB, Connection Pooling, Node.js, Performance, Database, Best Practice
 
 Description: Learn best practices for managing MongoDB connections in applications including connection pooling, handling reconnections, proper connection lifecycle management, and avoiding common pitfalls.
 

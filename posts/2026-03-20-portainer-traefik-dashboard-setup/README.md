@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Traefik, Dashboards, Monitoring, Security
+Tags: Portainer, Traefik, Dashboard, Monitoring, Security
 
 Description: Learn how to deploy the Traefik dashboard alongside Portainer with secure authentication, HTTPS access, and IP-based access restrictions to monitor your reverse proxy configuration.
 

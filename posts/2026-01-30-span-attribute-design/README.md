@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Tracing, OpenTelemetry, Best Practices
+Tags: Observability, Tracing, OpenTelemetry, Best Practice
 
 Description: Learn how to design span attributes for rich context and effective trace analysis in OpenTelemetry.
 

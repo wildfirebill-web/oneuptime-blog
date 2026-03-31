@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Repository Structure, Best Practices
+Tags: ArgoCD, GitOps, Kubernetes, Repository Structure, Best Practice
 
 Description: Learn how to organize your Git repositories for a declarative ArgoCD setup that scales across teams, environments, and clusters with clear separation of concerns.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Linux, Best Practices
+Tags: RHEL, Linux, Best Practice
 
 Description: Step-by-step guide on create a monthly maintenance checklist for rhel 9 servers with practical examples and commands.
 

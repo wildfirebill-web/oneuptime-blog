@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Configuration, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Variables, Configuration, Best Practice, Infrastructure as Code
 
 Description: Learn how to organize and manage large variable files in OpenTofu using structured types, partial configurations, and variable composition patterns.
 

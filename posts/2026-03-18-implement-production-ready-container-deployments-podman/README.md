@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Production, Deployment, Containers, DevOps, Best Practices
+Tags: Podman, Production, Deployment, Containers, DevOps, Best Practice
 
 Description: A comprehensive guide to implementing production-ready container deployments with Podman, covering security hardening, high availability, monitoring, backups, and operational procedures.
 

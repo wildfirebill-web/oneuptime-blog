@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Terraform, IaC, Best Practices, DevOps
+Tags: Ansible, Terraform, IaC, Best Practice, DevOps
 
 Description: Establish clear boundaries between Terraform for resource provisioning and Ansible for configuration management in your IaC strategy.
 

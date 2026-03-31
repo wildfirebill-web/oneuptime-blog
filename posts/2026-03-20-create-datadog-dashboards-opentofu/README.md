@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Datadog, Dashboards, Monitoring, Infrastructure as Code
+Tags: OpenTofu, Datadog, Dashboard, Monitoring, Infrastructure as Code
 
 Description: Learn how to create Datadog dashboards with OpenTofu to codify your monitoring views and ensure consistent observability across environments.
 

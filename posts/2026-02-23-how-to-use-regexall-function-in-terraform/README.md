@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, String Functions, HCL, DevOps, Regular Expressions
+Tags: Terraform, Infrastructure as Code, String Function, HCL, DevOps, Regular Expression
 
 Description: Learn how to use the regexall function in Terraform to find all matches of a regular expression in a string, with practical examples for parsing and counting patterns.
 

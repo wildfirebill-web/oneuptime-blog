@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Netsh, Network Configuration, Command Line
+Tags: IPv6, Window, Netsh, Network Configuration, Command Line
 
 Description: A comprehensive reference for netsh interface ipv6 commands on Windows, covering viewing addresses, routes, DNS configuration, and advanced IPv6 settings.
 

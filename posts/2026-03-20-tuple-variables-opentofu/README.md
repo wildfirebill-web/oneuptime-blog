@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Tuples, Structural Types, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variables, Tuple, Structural Types, Infrastructure as Code, DevOps
 
 Description: A guide to using tuple type variables in OpenTofu for fixed-length sequences with mixed types.
 

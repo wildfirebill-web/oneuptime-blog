@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Workflow Templates, DevOps, Automation, Best Practices
+Tags: GitHub Actions, CI/CD, Workflow Templates, DevOps, Automation, Best Practice
 
 Description: Learn how to create and use workflow templates in GitHub Actions to standardize CI/CD pipelines across your organization, reduce duplication, and enforce best practices.
 

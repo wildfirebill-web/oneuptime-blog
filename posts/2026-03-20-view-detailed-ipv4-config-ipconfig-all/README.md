@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, Ipconfig, IPv4, Network Diagnostics, DHCP
+Tags: Window, Networking, Ipconfig, IPv4, Network Diagnostics, DHCP
 
 Description: Use ipconfig /all to view the complete IPv4 network configuration on Windows, including MAC addresses, DHCP lease details, DNS servers, and adapter-specific settings.
 

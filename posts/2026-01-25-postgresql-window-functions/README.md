@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, SQL, Window Functions, Analytics, OVER, PARTITION BY
+Tags: PostgreSQL, SQL, Window Function, Analytics, OVER, PARTITION BY
 
 Description: Master PostgreSQL window functions for advanced analytics. Learn ROW_NUMBER, RANK, LAG, LEAD, running totals, and moving averages with practical examples.
 

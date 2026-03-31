@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Wine, Windows, Compatibility, Tutorial
+Tags: Ubuntu, Wine, Window, Compatibility, Tutorial
 
 Description: Complete guide to installing and configuring Wine for running Windows applications on Ubuntu.
 

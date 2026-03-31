@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Merge, Maps, Functions, Configuration
+Tags: OpenTofu, Terraform, Merge, Map, Functions, Configuration
 
 Description: Learn how to merge multiple maps with priority ordering in OpenTofu using the merge function, enabling layered configuration defaults with environment and service-level overrides.
 

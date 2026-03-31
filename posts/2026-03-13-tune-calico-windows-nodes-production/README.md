@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Networking, CNI, Performance, Production
+Tags: Calico, Kubernetes, Window, Networking, CNI, Performance, Production
 
 Description: A guide to tuning Calico networking performance on Windows Server nodes for production Kubernetes workloads.
 

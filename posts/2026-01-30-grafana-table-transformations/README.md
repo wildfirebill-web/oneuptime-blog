@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Grafana, Observability, Data-Transformation, Tables
+Tags: Grafana, Observability, Data-Transformation, Table
 
 Description: A comprehensive guide to mastering Grafana table transformations for reshaping, filtering, and enriching your observability data.
 

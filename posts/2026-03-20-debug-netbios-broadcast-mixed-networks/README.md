@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, NetBIOS, Broadcast, Windows, Linux, Samba, Troubleshooting
+Tags: Networking, NetBIOS, Broadcast, Window, Linux, Samba, Troubleshooting
 
 Description: Debug NetBIOS name service broadcast failures on mixed Windows and Linux networks by capturing NBT traffic, configuring WINS, and adjusting node types to reduce broadcast dependency.
 

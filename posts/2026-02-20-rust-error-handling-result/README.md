@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Error Handling, Result, Programming, Best Practices
+Tags: Rust, Error Handling, Result, Programming, Best Practice
 
 Description: Learn how to handle errors in Rust using Result types, the ? operator, custom error types, and the thiserror crate.
 

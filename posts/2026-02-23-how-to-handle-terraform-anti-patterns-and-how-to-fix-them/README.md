@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Anti-Patterns, Best Practices, Code Quality, DevOps
+Tags: Terraform, Anti-Patterns, Best Practice, Code Quality, DevOps
 
 Description: Learn to identify and fix common Terraform anti-patterns that lead to fragile infrastructure, slow operations, security vulnerabilities, and maintenance headaches in your organization.
 

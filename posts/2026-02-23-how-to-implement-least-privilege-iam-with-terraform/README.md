@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, IAM, Security, Least Privilege, Best Practices
+Tags: Terraform, AWS, IAM, Security, Least Privilege, Best Practice
 
 Description: Learn how to implement the principle of least privilege for AWS IAM using Terraform with practical strategies for scoping permissions, using conditions, and auditing access.
 

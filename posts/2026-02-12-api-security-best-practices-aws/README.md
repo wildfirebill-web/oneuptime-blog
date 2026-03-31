@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, API Gateway, Security, WAF, Best Practices
+Tags: AWS, API Gateway, Security, WAF, Best Practice
 
 Description: Learn how to secure APIs on AWS using API Gateway with authentication, rate limiting, WAF integration, input validation, and comprehensive monitoring.
 

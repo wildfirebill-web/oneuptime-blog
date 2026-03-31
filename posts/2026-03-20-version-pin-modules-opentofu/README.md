@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Module Versioning, Best Practices, Infrastructure as Code, Dependency Management
+Tags: OpenTofu, Module Versioning, Best Practice, Infrastructure as Code, Dependency Management
 
 Description: Learn how to pin module versions in OpenTofu for registry modules and Git-sourced modules to ensure reproducible infrastructure deployments.
 

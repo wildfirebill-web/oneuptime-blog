@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, WSL2, DevOps, Linux
+Tags: Ansible, Window, WSL2, DevOps, Linux
 
 Description: Complete guide to installing and running Ansible on Windows through WSL2, including WSL setup, Ansible installation, and SSH key configuration.
 

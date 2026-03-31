@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NodeJS, Express, Error Handling, API, Best Practices
+Tags: NodeJS, Express, Error Handling, API, Best Practice
 
 Description: Learn proper error handling in Express applications with custom error classes, centralized error handling, async error catching, and production-ready patterns.
 

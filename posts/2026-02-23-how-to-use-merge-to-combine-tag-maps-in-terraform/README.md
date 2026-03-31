@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, Terraform Functions, Maps, Tagging
+Tags: Terraform, Infrastructure as Code, DevOps, Terraform Functions, Map, Tagging
 
 Description: Learn how to use the merge function in Terraform to combine multiple tag maps, implement tag inheritance, and build consistent tagging strategies across resources.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Migration, Deprecation, Upgrade, Best Practices, DevOps
+Tags: Portainer, Migration, Deprecation, Upgrade, Best Practice, DevOps
 
 Description: A practical guide to migrating from deprecated Portainer features including OpenAMT, Nomad support, KaaS provisioning, and Kompose to modern alternatives.
 

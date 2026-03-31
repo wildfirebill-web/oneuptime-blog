@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Security, Non-Root, Container Security, Best Practices
+Tags: Docker, Security, Non-Root, Container Security, Best Practice
 
 Description: Learn how to run Docker containers as non-root users to improve security and follow container security best practices.
 

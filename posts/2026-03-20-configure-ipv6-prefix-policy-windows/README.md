@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Prefix Policy, Address Selection, RFC 6724
+Tags: IPv6, Window, Prefix Policy, Address Selection, RFC 6724
 
 Description: Learn how to view and modify the IPv6 prefix policy table on Windows (RFC 6724) to control address selection precedence for outgoing connections.
 

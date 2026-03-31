@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPAM, Documentation, Networking, Best Practices
+Tags: IPv6, IPAM, Documentation, Networking, Best Practice
 
 Description: Learn how to create and maintain comprehensive IPv6 address plan documentation using IPAM tools, spreadsheets, and structured formats that keep your network organized.
 

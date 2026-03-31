@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Production, Best Practices, Security, High Availability, DevOps
+Tags: Portainer, Production, Best Practice, Security, High Availability, DevOps
 
 Description: Run Portainer reliably in production with TLS termination, high availability, proper resource allocation, monitoring, and security hardening for enterprise-grade container management.
 

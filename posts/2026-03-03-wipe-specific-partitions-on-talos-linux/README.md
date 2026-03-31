@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Partitions, Disk Management, Kubernetes, Node Maintenance
+Tags: Talos Linux, Partition, Disk Management, Kubernetes, Node Maintenance
 
 Description: Learn how to selectively wipe specific partitions on Talos Linux nodes for targeted cleanup without performing a full node reset.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Best Practices, CNI
+Tags: Calico, Kubernetes, Networking, Best Practice, CNI
 
 Description: Apply community-validated performance optimizations for Calico networking in production Kubernetes clusters.
 

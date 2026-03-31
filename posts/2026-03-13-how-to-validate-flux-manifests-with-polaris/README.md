@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Testing, Polaris, Validation, Security, Best Practices
+Tags: Flux, Kubernetes, GitOps, Testing, Polaris, Validation, Security, Best Practice
 
 Description: Learn how to use Polaris to validate Flux manifests for Kubernetes best practices including security, reliability, and efficiency checks.
 

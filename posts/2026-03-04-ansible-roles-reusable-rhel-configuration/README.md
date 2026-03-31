@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ansible, Roles, Automation
+Tags: RHEL, Ansible, Role, Automation
 
 Description: Use Ansible roles for reusable, modular RHEL configuration that scales.
 

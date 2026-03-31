@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Partitions, Disk Configuration, Storage, Machine Configuration, Kubernetes
+Tags: Talos Linux, Partition, Disk Configuration, Storage, Machine Configuration, Kubernetes
 
 Description: Learn how to configure custom partition layouts in Talos Linux for additional disks, including partitioning, mount points, and storage optimization strategies.
 

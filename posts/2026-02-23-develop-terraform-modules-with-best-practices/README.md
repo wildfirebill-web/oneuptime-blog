@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Best Practices, IaC, DevOps
+Tags: Terraform, Modules, Best Practice, IaC, DevOps
 
 Description: A practical guide to Terraform module development covering naming conventions, variable design, validation, documentation, testing, and publishing best practices.
 

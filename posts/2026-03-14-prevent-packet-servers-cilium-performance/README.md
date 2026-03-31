@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, Performance, Packet Processing, Best Practices
+Tags: Cilium, Kubernetes, Performance, Packet Processing, Best Practice
 
 Description: Best practices for deploying and maintaining reliable packet servers for Cilium performance testing.
 

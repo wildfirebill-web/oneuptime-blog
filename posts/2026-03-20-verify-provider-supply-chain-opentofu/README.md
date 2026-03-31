@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Supply Chain Security, Provider Verification, Checksums, Security, Infrastructure as Code
+Tags: OpenTofu, Supply Chain Security, Provider Verification, Checksum, Security, Infrastructure as Code
 
 Description: Learn how OpenTofu's dependency lock file, provider checksum verification, and signing key validation protect against supply-chain attacks on providers.
 

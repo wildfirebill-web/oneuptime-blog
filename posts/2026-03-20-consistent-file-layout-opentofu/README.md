@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, File Layout, Best Practices, Infrastructure as Code, Organizations, Team Collaboration
+Tags: OpenTofu, File Layout, Best Practice, Infrastructure as Code, Organizations, Team Collaboration
 
 Description: Learn the standard file layout for OpenTofu configurations and modules - what goes in each file and why - so every team member knows exactly where to find and add code.
 

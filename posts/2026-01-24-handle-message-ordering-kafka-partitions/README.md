@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, Message Ordering, Partitions, Distributed Systems, Event-Driven Architecture
+Tags: Kafka, Message Ordering, Partition, Distributed Systems, Event-Driven Architecture
 
 Description: A practical guide to understanding and implementing message ordering guarantees in Apache Kafka partitions for reliable event processing.
 

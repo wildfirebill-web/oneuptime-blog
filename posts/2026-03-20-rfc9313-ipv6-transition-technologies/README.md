@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, RFC 9313, IPv6 Transition, Network Standards, Best Practices
+Tags: IPv6, RFC 9313, IPv6 Transition, Network Standards, Best Practice
 
 Description: A summary of RFC 9313's comparative analysis of IPv6 transition technologies, covering their architectural trade-offs to help network engineers make informed deployment decisions.
 

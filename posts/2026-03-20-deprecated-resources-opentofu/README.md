@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Deprecated Resources, Migration, Provider, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Deprecated Resources, Migration, Provider, Best Practice, Infrastructure as Code
 
 Description: Learn how to identify, migrate from, and safely replace deprecated OpenTofu provider resources without causing infrastructure disruptions.
 

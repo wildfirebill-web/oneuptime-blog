@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, IPv4, Configuration, Monitoring, HTTP, Dashboards
+Tags: Grafana, IPv4, Configuration, Monitoring, HTTP, Dashboard
 
 Description: Configure Grafana to bind to a specific IPv4 address using grafana.ini, set the HTTP port and root URL, and restrict access with firewall rules.
 

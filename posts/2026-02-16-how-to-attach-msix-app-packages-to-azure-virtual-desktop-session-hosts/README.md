@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Virtual Desktop, MSIX, App Attach, Application Delivery, VDI, Windows
+Tags: Azure, Virtual Desktop, MSIX, App Attach, Application Delivery, VDI, Window
 
 Description: Learn how to use MSIX app attach to deliver applications to Azure Virtual Desktop session hosts without installing them directly on the VM images.
 

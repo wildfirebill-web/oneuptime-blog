@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Locals, Expressions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Locals, Expression, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to using local values in OpenTofu to break down complex expressions into readable, maintainable components.
 

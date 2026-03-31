@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Security, Checksums, Installation, GPG, Infrastructure as Code
+Tags: OpenTofu, Security, Checksum, Installation, GPG, Infrastructure as Code
 
 Description: Learn how to verify the integrity of your OpenTofu binary by checking SHA256 checksums and GPG signatures before installation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Reusability, Roles, DevOps
+Tags: Ansible, Reusability, Role, DevOps
 
 Description: Learn techniques for writing reusable Ansible code including parameterized roles, shared task files, custom modules, and collection packaging.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, Geo Search, Location, Geospatial, Maps, Search
+Tags: Elasticsearch, Geo Search, Location, Geospatial, Map, Search
 
 Description: A comprehensive guide to implementing geo search in Elasticsearch, covering geo-point queries, geo-shapes, distance calculations, and location-based filtering and sorting.
 

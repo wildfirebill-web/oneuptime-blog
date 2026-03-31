@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Kernel, Updates, Linux
+Tags: RHEL, Kernel, Update, Linux
 
 Description: A step-by-step guide to safely updating the kernel on RHEL using dnf, covering pre-update checks, the update process itself, verification, rollback options, and kernel lifecycle management.
 

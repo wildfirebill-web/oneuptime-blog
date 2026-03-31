@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Tuples, HCL, Infrastructure as Code
+Tags: Terraform, Variables, Tuple, HCL, Infrastructure as Code
 
 Description: Learn how to use tuple-type variables in Terraform for fixed-length sequences with different element types, including syntax, use cases, and comparison with lists.
 

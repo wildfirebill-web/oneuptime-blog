@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Samba, File Sharing, Windows, SMB
+Tags: Ubuntu, Samba, File Sharing, Window, SMB
 
 Description: Set up a Samba file server on Ubuntu to share directories with Windows clients over SMB, with user authentication and proper permission configuration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Compatibility, Versioning, Stability, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Compatibility, Versioning, Stability, Best Practice, Infrastructure as Code
 
 Description: Learn about OpenTofu's compatibility promises for language features, state formats, provider protocols, and APIs to plan version upgrades confidently.
 

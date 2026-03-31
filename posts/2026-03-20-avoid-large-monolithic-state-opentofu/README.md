@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, State Management, Best Practices, Architecture, Infrastructure as Code
+Tags: OpenTofu, State Management, Best Practice, Architecture, Infrastructure as Code
 
 Description: Learn how to break up large monolithic OpenTofu state files into smaller, manageable pieces to improve performance, reduce blast radius, and enable team autonomy.
 

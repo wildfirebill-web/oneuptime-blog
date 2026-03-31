@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Best Practices, Automation, Configuration Management
+Tags: Ansible, Role, Best Practice, Automation, Configuration Management
 
 Description: Learn how to write well-structured Ansible roles with proper variable handling, handlers, templates, and testing.
 

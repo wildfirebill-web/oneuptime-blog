@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, SELinux, Booleans, Security, Linux
+Tags: RHEL, SELinux, Boolean, Security, Linux
 
 Description: Use SELinux booleans on RHEL to toggle specific policy features without writing custom modules, enabling or restricting service capabilities.
 

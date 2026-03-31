@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Tags, Selective Execution
+Tags: Ansible, Role, Tags, Selective Execution
 
 Description: Learn how to apply and use tags with Ansible roles for selective task execution, faster iteration, and targeted deployments.
 

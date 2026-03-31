@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Environment Promotion, CI/CD, Pipelines
+Tags: Flux CD, GitOps, Kubernetes, Environment Promotion, CI/CD, Pipeline
 
 Description: A practical guide to implementing environment promotion pipelines with Flux CD to safely move changes from dev through staging to production.
 

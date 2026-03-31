@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Grafana, Dashboards, Monitoring, Infrastructure as Code
+Tags: OpenTofu, Grafana, Dashboard, Monitoring, Infrastructure as Code
 
 Description: Learn how to create and manage Grafana dashboards with OpenTofu, including JSON dashboard provisioning and folder organization.
 

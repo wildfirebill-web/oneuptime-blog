@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Release Notes, Updates, Community, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Release Notes, Update, Community, Best Practice, Infrastructure as Code
 
 Description: Learn how to track OpenTofu releases, understand the changelog format, and plan upgrades based on release notes.
 

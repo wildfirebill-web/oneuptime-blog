@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Quotas, Grace Periods, Linux
+Tags: RHEL, Quota, Grace Periods, Linux
 
 Description: Understand and configure soft limits, hard limits, and grace periods for disk quotas on RHEL to give users breathing room while keeping storage under control.
 

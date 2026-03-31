@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ansible Galaxy, GitHub, Roles, Git
+Tags: Ansible, Ansible Galaxy, GitHub, Role, Git
 
 Description: How to install Ansible roles directly from GitHub repositories using ansible-galaxy, including private repos, branches, tags, and SSH access.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Networking, CNI, Installation
+Tags: Calico, Kubernetes, Window, Networking, CNI, Installation
 
 Description: A step-by-step guide to installing Calico networking on Windows Server nodes in a mixed Linux/Windows Kubernetes cluster.
 

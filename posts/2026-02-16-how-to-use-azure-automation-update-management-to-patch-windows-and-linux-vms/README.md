@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Azure Automation, Update Management, Patching, Windows, Linux, Security
+Tags: Azure, Azure Automation, Update Management, Patching, Window, Linux, Security
 
 Description: A practical guide to using Azure Automation Update Management to assess, schedule, and deploy OS patches across your Windows and Linux virtual machines.
 

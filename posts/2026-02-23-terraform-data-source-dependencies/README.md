@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Data Source, Dependencies, Infrastructure as Code, Best Practices
+Tags: Terraform, Data Source, Dependencies, Infrastructure as Code, Best Practice
 
 Description: Learn how to manage data source dependencies in Terraform, including implicit dependencies, explicit ordering, and strategies for handling circular and cross-module references.
 

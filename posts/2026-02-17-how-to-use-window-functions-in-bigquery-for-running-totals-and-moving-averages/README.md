@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, SQL, Window Functions, Data Analytics
+Tags: GCP, BigQuery, SQL, Window Function, Data Analytics
 
 Description: Master BigQuery window functions to calculate running totals, moving averages, rankings, and other analytical computations without self-joins or subqueries.
 

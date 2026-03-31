@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, String Functions, HCL, DevOps, YAML
+Tags: Terraform, Infrastructure as Code, String Function, HCL, DevOps, YAML
 
 Description: Learn how to use the indent function in Terraform to add leading spaces to multi-line strings, with practical examples for YAML generation and template formatting.
 

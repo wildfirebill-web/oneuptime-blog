@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, Best Practices, CNI
+Tags: Calico, Kubernetes, Networking, Best Practice, CNI
 
 Description: Run community-validated test suites against Calico networking to ensure conformance and reliability.
 

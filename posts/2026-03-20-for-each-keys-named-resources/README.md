@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, for_each, HCL, Infrastructure as Code, Named Resources, Maps
+Tags: OpenTofu, Terraform, for_each, HCL, Infrastructure as Code, Named Resources, Map
 
 Description: Learn how to use OpenTofu's for_each with map keys to create multiple named resources, manage them independently, and avoid the pitfalls of count-based resource creation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, CNI, Troubleshooting, Best Practices, Calico Cloud, Calico Enterprise
+Tags: Calico, Kubernetes, CNI, Troubleshooting, Best Practice, Calico Cloud, Calico Enterprise
 
 Description: The most common pitfalls when selecting, deploying, or migrating between Calico editions, and how to avoid them before they become production incidents.
 

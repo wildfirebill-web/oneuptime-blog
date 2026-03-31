@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Security, API, DevOps, Authentication, Best Practices
+Tags: Security, API, DevOps, Authentication, Best Practice
 
 Description: A comprehensive guide to secure API key management including generation, storage, rotation, and revocation strategies for production applications.
 

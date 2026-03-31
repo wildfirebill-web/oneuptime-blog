@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, DNS, BIND, Networking, Roles
+Tags: Ansible, DNS, BIND, Networking, Role
 
 Description: Build an Ansible role for DNS server and client configuration including BIND setup, zone management, and resolver configuration.
 

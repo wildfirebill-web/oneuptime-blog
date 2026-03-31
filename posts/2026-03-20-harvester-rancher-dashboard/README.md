@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, Rancher, Virtualization, HCI, Dashboards
+Tags: Harvester, Kubernetes, Rancher, Virtualization, HCI, Dashboard
 
 Description: Learn how to manage your Harvester HCI cluster, virtual machines, and infrastructure from the Rancher unified management dashboard.
 

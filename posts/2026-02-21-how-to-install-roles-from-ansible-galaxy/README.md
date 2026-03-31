@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ansible Galaxy, Roles, Configuration Management
+Tags: Ansible, Ansible Galaxy, Role, Configuration Management
 
 Description: A practical guide to installing Ansible Galaxy roles including version pinning, custom paths, and bulk installs from requirements files.
 

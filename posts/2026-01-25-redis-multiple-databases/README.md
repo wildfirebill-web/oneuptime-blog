@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Database, Architecture, Best Practices, DevOps
+Tags: Redis, Database, Architecture, Best Practice, DevOps
 
 Description: Learn how to use Redis multiple databases (SELECT command), understand their limitations, and discover when to use them versus separate Redis instances.
 

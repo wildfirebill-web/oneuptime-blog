@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitOps, Multi-Cluster, Kubernetes, Repository Structure, Best Practices
+Tags: GitOps, Multi-Cluster, Kubernetes, Repository Structure, Best Practice
 
 Description: Learn how to organize Git repositories for managing multiple Kubernetes clusters across different environments using GitOps principles and practical patterns.
 

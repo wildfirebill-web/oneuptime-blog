@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Lambda, Idempotency, Serverless, Best Practices, DynamoDB
+Tags: AWS, Lambda, Idempotency, Serverless, Best Practice, DynamoDB
 
 Description: Learn how to make your AWS Lambda functions idempotent to handle retries and duplicate invocations safely
 

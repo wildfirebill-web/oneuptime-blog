@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Security, Read-Only, Container Hardening, Best Practices
+Tags: Portainer, Docker, Security, Read-Only, Container Hardening, Best Practice
 
 Description: Harden containers by enabling read-only root filesystems, using tmpfs for writable directories, and applying immutable infrastructure principles via Portainer.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Package Management, Automation
+Tags: Ansible, Window, Package Management, Automation
 
 Description: Install, update, and remove software on Windows hosts using the Ansible win_package module with MSI, EXE, and network share examples.
 

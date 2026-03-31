@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Caching, Objects, Serialization, Performance
+Tags: Caching, Object, Serialization, Performance
 
 Description: Learn to build object cache design for caching complex objects and entity graphs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, YAML, Best Practices, Code Quality, DevOps
+Tags: Ansible, YAML, Best Practice, Code Quality, DevOps
 
 Description: Best practices for writing clean, readable, and maintainable YAML in Ansible playbooks including formatting, naming, and structural conventions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Validation, Argument Specs
+Tags: Ansible, Role, Validation, Argument Specs
 
 Description: Learn how to validate role arguments in Ansible using argument specs to catch configuration errors before tasks execute.
 

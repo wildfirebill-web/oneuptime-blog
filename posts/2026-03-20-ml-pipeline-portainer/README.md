@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Machine Learning, MLOps, Docker, Pipelines
+Tags: Portainer, Machine Learning, MLOps, Docker, Pipeline
 
 Description: Build a complete end-to-end machine learning pipeline using containerized tools managed by Portainer.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provider, Registry, Quality, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Provider, Registry, Quality, Best Practice, Infrastructure as Code
 
 Description: Learn how to evaluate the quality, maintenance status, and security posture of OpenTofu providers before adopting them in production infrastructure.
 

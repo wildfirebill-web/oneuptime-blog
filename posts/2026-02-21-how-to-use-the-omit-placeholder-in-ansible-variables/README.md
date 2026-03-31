@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Best Practices, Configuration Management
+Tags: Ansible, Variables, Best Practice, Configuration Management
 
 Description: Learn how to use the Ansible omit placeholder to conditionally exclude module parameters, keeping your tasks clean and flexible.
 

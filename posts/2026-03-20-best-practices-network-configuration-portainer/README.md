@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Networking, Security, Best Practices, Network Isolation, Firewall
+Tags: Portainer, Docker Networking, Security, Best Practice, Network Isolation, Firewall
 
 Description: Configure Docker networks in Portainer following security and operational best practices, including network isolation, custom subnets, and segmentation strategies.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, Window Functions, SQL, Analytics, Database, MySQL 8
+Tags: MySQL, Window Function, SQL, Analytics, Database, MySQL 8
 
 Description: A comprehensive guide to using window functions in MySQL 8 for advanced analytics, including ranking, running totals, moving averages, and performance optimization.
 

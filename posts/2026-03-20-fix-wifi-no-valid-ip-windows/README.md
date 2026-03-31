@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WiFi, Windows, IP Configuration, DHCP, Troubleshooting
+Tags: WiFi, Window, IP Configuration, DHCP, Troubleshooting
 
 Description: Learn how to fix the 'WiFi doesn't have a valid IP configuration' error on Windows by resetting the network stack, flushing DHCP, and reconfiguring the wireless adapter.
 

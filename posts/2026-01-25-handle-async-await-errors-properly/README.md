@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NodeJS, JavaScript, Async, Error Handling, Best Practices
+Tags: NodeJS, JavaScript, Async, Error Handling, Best Practice
 
 Description: Learn proper error handling patterns for async/await in Node.js, including try-catch blocks, wrapper functions, Promise.allSettled, and Express.js middleware strategies.
 

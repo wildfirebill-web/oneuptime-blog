@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, IPv6, Dashboards, Prometheus, Monitoring, Visualization
+Tags: Grafana, IPv6, Dashboard, Prometheus, Monitoring, Visualization
 
 Description: A guide to building Grafana dashboards that visualize IPv6 traffic metrics from Prometheus, including throughput, packet rates, and error tracking.
 

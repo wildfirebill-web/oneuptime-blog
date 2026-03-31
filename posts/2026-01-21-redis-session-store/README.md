@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sessions, Authentication, Web Development, Python, Node.js, Express, Flask, Django, Security
+Tags: Redis, Session, Authentication, Web Development, Python, Node.js, Express, Flask, Django, Security
 
 Description: A comprehensive guide to using Redis as a session store for web applications. Learn how to implement secure session management with practical examples for Express, Flask, and Django.
 

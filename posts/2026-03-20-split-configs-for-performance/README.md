@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Performance, Configuration Split, State Management, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Performance, Configuration Split, State Management, Infrastructure as Code, Best Practice
 
 Description: Learn how to split a large monolithic OpenTofu configuration into smaller, independently-managed configurations that plan and apply faster.
 

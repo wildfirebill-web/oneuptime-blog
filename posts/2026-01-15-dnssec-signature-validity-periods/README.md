@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DNSSEC, DNS, Security, Configuration, Best Practices, Infrastructure
+Tags: DNSSEC, DNS, Security, Configuration, Best Practice, Infrastructure
 
 Description: A comprehensive guide to calculating and configuring DNSSEC signature validity periods, covering key types, timing formulas, rollover considerations.
 

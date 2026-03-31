@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Null, Collections, Functions, Filtering
+Tags: OpenTofu, Terraform, NULL, Collections, Functions, Filtering
 
 Description: Learn how to filter null values from lists and maps in OpenTofu using for expressions, compact, and try to build clean, null-safe configurations from optional inputs.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, .NET, Windows, ASP.NET Core, Kubernetes, Microservices
+Tags: Rancher, .NET, Window, ASP.NET Core, Kubernetes, Microservices
 
 Description: Deploy .NET Framework and .NET Core applications on Windows nodes in Rancher with proper image selection, configuration management, and health checks.
 

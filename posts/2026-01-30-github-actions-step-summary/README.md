@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Reports, Automation
+Tags: GitHub Actions, CI/CD, Report, Automation
 
 Description: Learn how to create rich, informative job summaries in GitHub Actions using the GITHUB_STEP_SUMMARY environment file.
 

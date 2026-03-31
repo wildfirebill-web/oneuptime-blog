@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Sensitive Variables, Security, Secrets, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Sensitive Variables, Security, Secrets, Infrastructure as Code, Best Practice
 
 Description: Learn how to declare input variables, locals, and outputs as sensitive in OpenTofu to automatically redact their values from plan and apply terminal output.
 

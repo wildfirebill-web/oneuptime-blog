@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Go, Project Structure, Clean Architecture, Best Practices
+Tags: Go, Project Structure, Clean Architecture, Best Practice
 
 Description: Structure Go projects for maintainability with standard layouts, proper package organization, and dependency injection patterns.
 

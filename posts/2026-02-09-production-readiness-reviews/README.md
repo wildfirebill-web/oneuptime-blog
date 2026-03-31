@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Production Readiness, Automation, Best Practices
+Tags: Kubernetes, Production Readiness, Automation, Best Practice
 
 Description: Implement automated production readiness reviews that validate Kubernetes deployments against best practices before they reach production.
 

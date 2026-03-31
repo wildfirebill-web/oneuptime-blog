@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Windows, .NET, C#, Containers, Kubernetes
+Tags: Rancher, Window, .NET, C#, Containers, Kubernetes
 
 Description: Deploy both .NET Framework and .NET 8 applications on Windows nodes in Rancher Kubernetes clusters with appropriate base images, configuration, and scaling.
 

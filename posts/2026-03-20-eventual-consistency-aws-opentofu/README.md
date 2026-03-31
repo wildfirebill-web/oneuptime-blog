@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Eventual Consistency, AWS, IAM, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Eventual Consistency, AWS, IAM, Best Practice, Infrastructure as Code
 
 Description: Learn how to handle AWS eventual consistency issues in OpenTofu where resources appear created but aren't immediately available for subsequent operations.
 

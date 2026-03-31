@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Documentation, RFC 3849, Networking, Best Practices
+Tags: IPv6, Documentation, RFC 3849, Networking, Best Practice
 
 Description: Learn about the IPv6 documentation prefix 2001:db8::/32 reserved by RFC 3849 for use in examples, training materials, and technical documentation.
 

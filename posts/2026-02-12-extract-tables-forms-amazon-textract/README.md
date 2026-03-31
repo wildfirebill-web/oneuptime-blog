@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Amazon Textract, Tables, Forms, Document Processing
+Tags: AWS, Amazon Textract, Table, Forms, Document Processing
 
 Description: Deep dive into extracting and processing tables and key-value form pairs from documents using Amazon Textract with practical code examples.
 

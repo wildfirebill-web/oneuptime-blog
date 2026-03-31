@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Windows, Linux, Mixed OS, Kubernetes, Networking, Monitoring
+Tags: Calico, Window, Linux, Mixed OS, Kubernetes, Networking, Monitoring
 
 Description: Learn how to monitor Calico networking in hybrid Linux/Windows Kubernetes clusters, including cross-OS pod connectivity, Windows-specific Calico metrics, and network policy enforcement across OS...
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, Netsh, IPv4, Static IP, Network Configuration
+Tags: Window, Networking, Netsh, IPv4, Static IP, Network Configuration
 
 Description: Set a static IPv4 address, subnet mask, and default gateway on a Windows network adapter using the netsh command-line tool from an elevated command prompt.
 

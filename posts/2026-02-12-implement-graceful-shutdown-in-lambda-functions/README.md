@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Lambda, Graceful Shutdown, Serverless, Best Practices
+Tags: AWS, Lambda, Graceful Shutdown, Serverless, Best Practice
 
 Description: A practical guide to implementing graceful shutdown in AWS Lambda functions to clean up resources and flush data before termination
 

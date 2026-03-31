@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Best Practices, Database Design, Architecture, DevOps
+Tags: Redis, Best Practice, Database Design, Architecture, DevOps
 
 Description: Learn Redis key naming conventions and patterns that improve code readability, enable efficient key discovery, and prevent naming collisions in large applications.
 

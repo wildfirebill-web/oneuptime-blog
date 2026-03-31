@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Spinnaker, Migration, GitOps, Kubernetes, CI/CD, Pipelines
+Tags: Flux CD, Spinnaker, Migration, GitOps, Kubernetes, CI/CD, Pipeline
 
 Description: Learn how to migrate from Spinnaker deployment pipelines to Flux CD GitOps workflows, mapping Spinnaker stages to GitOps equivalents.
 

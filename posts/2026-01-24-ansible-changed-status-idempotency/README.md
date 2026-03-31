@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Idempotency, DevOps, Best Practices, Configuration Management, Automation, Troubleshooting
+Tags: Ansible, Idempotency, DevOps, Best Practice, Configuration Management, Automation, Troubleshooting
 
 Description: Learn how to fix Ansible playbooks that report 'changed' status on every run by implementing proper idempotency patterns and best practices.
 

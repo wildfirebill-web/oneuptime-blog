@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Refactoring, Best Practices
+Tags: Ansible, Role, Refactoring, Best Practice
 
 Description: Step-by-step guide to refactoring monolithic Ansible playbooks into reusable roles with proper variable extraction and testing.
 

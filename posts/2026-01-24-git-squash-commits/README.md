@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Git, Version Control, Rebase, Commit History, DevOps, Best Practices
+Tags: Git, Version Control, Rebase, Commit History, DevOps, Best Practice
 
 Description: Learn how to squash Git commits to create a clean, readable commit history using interactive rebase, merge squashing, and soft reset techniques.
 

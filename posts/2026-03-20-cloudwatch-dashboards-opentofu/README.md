@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, CloudWatch, Dashboards, Monitoring, Observability, Infrastructure as Code
+Tags: OpenTofu, AWS, CloudWatch, Dashboard, Monitoring, Observability, Infrastructure as Code
 
 Description: Learn how to create CloudWatch dashboards with OpenTofu to visualize key metrics from Lambda, RDS, API Gateway, and ECS in a centralized operational view.
 

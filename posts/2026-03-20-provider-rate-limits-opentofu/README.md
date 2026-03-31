@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Rate Limits, Provider, AWS, GitHub, Best Practices
+Tags: OpenTofu, Rate Limits, Provider, AWS, GitHub, Best Practice
 
 Description: Learn how to handle provider-specific rate limits in OpenTofu for AWS, GitHub, and other providers using retry configuration and request batching strategies.
 

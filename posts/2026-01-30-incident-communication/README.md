@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Incident Management, SRE, Communication, Best Practices
+Tags: Incident Management, SRE, Communication, Best Practice
 
 Description: Learn how to communicate effectively during incidents with internal teams and external stakeholders.
 

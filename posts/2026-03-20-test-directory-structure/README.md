@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Testing, Project Structure, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Terraform, Testing, Project Structure, Infrastructure as Code, Best Practice
 
 Description: Learn how to organize and structure test directories for OpenTofu modules, including separating unit tests, integration tests, and end-to-end tests for maintainability.
 

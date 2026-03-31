@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Flask, Authentication, Flask-Login, Security, Web Development, Sessions
+Tags: Python, Flask, Authentication, Flask-Login, Security, Web Development, Session
 
 Description: Learn how to implement user authentication in Flask applications using Flask-Login, covering everything from basic setup to remember me functionality and route protection.
 

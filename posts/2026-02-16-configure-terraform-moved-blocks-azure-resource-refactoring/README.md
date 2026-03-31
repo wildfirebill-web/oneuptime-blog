@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Refactoring, State Management, Infrastructure as Code, DevOps, Best Practices
+Tags: Terraform, Azure, Refactoring, State Management, Infrastructure as Code, DevOps, Best Practice
 
 Description: Use Terraform moved blocks to safely refactor Azure resource configurations without destroying and recreating existing cloud resources.
 

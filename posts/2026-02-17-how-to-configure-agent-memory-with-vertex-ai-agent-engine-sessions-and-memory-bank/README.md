@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Vertex AI, Agent Engine, Sessions, Memory Bank
+Tags: GCP, Vertex AI, Agent Engine, Session, Memory Bank
 
 Description: Configure persistent memory for AI agents using Vertex AI Agent Engine sessions and memory bank to enable context-aware multi-turn conversations.
 

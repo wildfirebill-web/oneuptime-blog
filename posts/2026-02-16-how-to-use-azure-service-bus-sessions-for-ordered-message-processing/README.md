@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Service Bus, Sessions, Ordered Processing, Message Queues, Azure, FIFO, Messaging
+Tags: Azure Service Bus, Session, Ordered Processing, Message Queues, Azure, FIFO, Messaging
 
 Description: Implement ordered message processing in Azure Service Bus using sessions to guarantee FIFO delivery and group related messages for sequential handling.
 

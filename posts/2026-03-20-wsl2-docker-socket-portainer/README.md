@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, WSL2, Docker Socket, Troubleshooting, Windows
+Tags: Portainer, WSL2, Docker Socket, Troubleshooting, Window
 
 Description: Learn how to diagnose and fix Docker socket connectivity issues when running Portainer inside WSL2, including permission errors, socket not found errors, and Docker not starting.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, SQL, Case Sensitivity, Identifiers, Database Design, Best Practices
+Tags: PostgreSQL, SQL, Case Sensitivity, Identifier, Database Design, Best Practice
 
 Description: Master PostgreSQL's case sensitivity rules for column names and identifiers. Learn when to use quoted identifiers, how to avoid common pitfalls, and best practices for naming conventions.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Environment Promotion, CI/CD, Infrastructure as Code, DevOps, Pipelines
+Tags: OpenTofu, Environment Promotion, CI/CD, Infrastructure as Code, DevOps, Pipeline
 
 Description: Learn how to build environment promotion pipelines that progressively deploy OpenTofu changes through dev, staging, and production with automated gates and approval steps.
 

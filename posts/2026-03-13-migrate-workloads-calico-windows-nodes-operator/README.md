@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Operator, Networking, CNI, Migration
+Tags: Calico, Kubernetes, Window, Operator, Networking, CNI, Migration
 
 Description: A guide to migrating Windows workloads to operator-managed Calico networking from an existing CNI configuration.
 

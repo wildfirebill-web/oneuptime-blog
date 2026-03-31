@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, YAML, Null, Variables, Configuration
+Tags: Ansible, YAML, NULL, Variables, Configuration
 
 Description: Handle YAML null values properly in Ansible including explicit nulls, omit filter, undefined detection, and default value patterns.
 

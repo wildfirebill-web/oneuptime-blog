@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Agent, Updates, Version Management, Maintenance
+Tags: Portainer, Agent, Update, Version Management, Maintenance
 
 Description: Keep the Portainer Agent version synchronized with your Portainer server version to ensure compatibility and access to new features.
 

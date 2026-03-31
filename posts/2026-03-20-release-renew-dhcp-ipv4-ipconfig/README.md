@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, Ipconfig, DHCP, IPv4, Network Troubleshooting
+Tags: Window, Networking, Ipconfig, DHCP, IPv4, Network Troubleshooting
 
 Description: Use ipconfig /release and ipconfig /renew to release and renew DHCP leases on Windows, and target specific adapters when only one needs to be refreshed.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Samba, SMB, Windows, File Sharing, Linux
+Tags: IPv6, Samba, SMB, Window, File Sharing, Linux
 
 Description: Configure Samba (SMB/CIFS) server on Linux to share files over IPv6, including smb.conf IPv6 binding, Windows client access to IPv6 Samba shares, and firewall configuration.
 

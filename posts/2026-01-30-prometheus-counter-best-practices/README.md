@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Prometheus, Counter, Metrics, Best Practices
+Tags: Prometheus, Counter, Metrics, Best Practice
 
 Description: Learn to implement Prometheus counters with proper naming, labeling, reset handling, and rate calculation for reliable metrics.
 

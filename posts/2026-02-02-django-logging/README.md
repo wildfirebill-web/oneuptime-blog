@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Python, Django, Logging, Observability, Best Practices
+Tags: Python, Django, Logging, Observability, Best Practice
 
 Description: Learn how to configure Django's logging system for development and production, including formatters, handlers, log rotation, and structured logging.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Chocolatey, Package Management, Automation
+Tags: Ansible, Window, Chocolatey, Package Management, Automation
 
 Description: Install, update, and manage Windows software packages using the Ansible win_chocolatey module with the Chocolatey package manager.
 

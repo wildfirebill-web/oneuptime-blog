@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Linux, Best Practices
+Tags: RHEL, Linux, Best Practice
 
 Description: Step-by-step guide on implement capacity planning best practices for rhel 9 environments with practical examples and commands.
 

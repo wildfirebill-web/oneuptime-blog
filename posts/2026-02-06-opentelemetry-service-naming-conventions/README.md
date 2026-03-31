@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Service Naming, Conventions, Best Practices, Configuration
+Tags: OpenTelemetry, Service Naming, Conventions, Best Practice, Configuration
 
 Description: A comprehensive guide to establishing effective service naming conventions in OpenTelemetry for better observability, troubleshooting, and team collaboration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, File Management, Automation
+Tags: Ansible, Window, File Management, Automation
 
 Description: Master the Ansible win_stat module to gather file and directory information on Windows hosts for conditional automation tasks.
 

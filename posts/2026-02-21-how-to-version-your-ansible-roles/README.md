@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Versioning, Semantic Versioning
+Tags: Ansible, Role, Versioning, Semantic Versioning
 
 Description: Learn how to version your Ansible roles using semantic versioning, Git tags, changelogs, and Galaxy metadata for reliable automation.
 

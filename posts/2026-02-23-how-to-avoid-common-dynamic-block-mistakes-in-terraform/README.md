@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Dynamic Blocks, Best Practices, HCL, Troubleshooting, Infrastructure as Code
+Tags: Terraform, Dynamic Blocks, Best Practice, HCL, Troubleshooting, Infrastructure as Code
 
 Description: Identify and avoid the most common mistakes when using dynamic blocks in Terraform, with practical examples showing the wrong way and the right way.
 

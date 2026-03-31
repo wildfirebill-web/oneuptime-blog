@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SUSE Observability, Dashboards, Visualization, Monitoring, Kubernetes
+Tags: SUSE Observability, Dashboard, Visualization, Monitoring, Kubernetes
 
 Description: Build custom dashboards in SUSE Observability to visualize key metrics, health states, and topology data.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Substr, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Substr, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the substr function in OpenTofu to extract a portion of a string by specifying a start offset and length.
 

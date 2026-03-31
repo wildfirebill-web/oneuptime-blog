@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Secrets Management, Security, Kubernetes, Best Practices
+Tags: Talos Linux, Secrets Management, Security, Kubernetes, Best Practice
 
 Description: Best practices and practical approaches for securely managing secrets in Talos Linux including machine configs, Kubernetes secrets, and external secret stores.
 

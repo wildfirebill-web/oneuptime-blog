@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Performance, Optimization, Production, Best Practices, Efficiency
+Tags: OpenTelemetry, Performance, Optimization, Production, Best Practice, Efficiency
 
 Description: Proven strategies to reduce OpenTelemetry instrumentation overhead by 50% in production environments through sampling, configuration optimization, and resource management.
 

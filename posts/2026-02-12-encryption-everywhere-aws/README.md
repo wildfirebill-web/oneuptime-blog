@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Security, Encryption, KMS, Best Practices
+Tags: AWS, Security, Encryption, KMS, Best Practice
 
 Description: A comprehensive guide to implementing encryption at rest and in transit across all AWS services using KMS, ACM, and service-native encryption features.
 

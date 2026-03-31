@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: GraphQL, Error Handling, Resolver, API Development, Node.js, Apollo Server, Best Practices
+Tags: GraphQL, Error Handling, Resolver, API Development, Node.js, Apollo Server, Best Practice
 
 Description: Learn comprehensive strategies for handling errors in GraphQL resolvers including custom error types, error formatting, and client-friendly responses.
 

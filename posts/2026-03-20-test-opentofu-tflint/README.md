@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, TFLint, Linting, Code Quality, Best Practices
+Tags: OpenTofu, TFLint, Linting, Code Quality, Best Practice
 
 Description: Learn how to use tflint to lint OpenTofu configurations, catch deprecated syntax, enforce naming conventions, and validate provider-specific best practices before applying.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Tekton, CI/CD, GitOps, Kubernetes, Container Images, Cloud Native, Pipelines
+Tags: Flux CD, Tekton, CI/CD, GitOps, Kubernetes, Container Images, Cloud Native, Pipeline
 
 Description: A hands-on guide to integrating Tekton Pipelines with Flux CD for Kubernetes-native CI/CD with GitOps-based deployments.
 

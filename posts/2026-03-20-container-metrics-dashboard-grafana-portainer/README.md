@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Grafana, Prometheus, Docker, Monitoring, Dashboards
+Tags: Portainer, Grafana, Prometheus, Docker, Monitoring, Dashboard
 
 Description: Learn how to deploy Prometheus and Grafana alongside Portainer to build a container metrics dashboard with real-time visualizations.
 

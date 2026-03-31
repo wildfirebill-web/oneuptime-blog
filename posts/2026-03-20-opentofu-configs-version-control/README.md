@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Version Control, Git, Best Practices, Infrastructure as Code, GitOps
+Tags: OpenTofu, Version Control, Git, Best Practice, Infrastructure as Code, GitOps
 
 Description: Learn what to commit and what to exclude when storing OpenTofu configurations in Git, including lock files, variable files, and generated code.
 

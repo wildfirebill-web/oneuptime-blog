@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, Security, Best Practices
+Tags: Calico, Kubernetes, Network Policy, Security, Best Practice
 
 Description: Avoid the most common pitfalls when implementing Calico default deny network policies that can cause outages or security gaps.
 

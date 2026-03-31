@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Dependencies, Best Practices, Troubleshooting, Infrastructure as Code
+Tags: OpenTofu, Dependencies, Best Practice, Troubleshooting, Infrastructure as Code
 
 Description: Learn how to identify, diagnose, and fix circular dependencies in OpenTofu configurations.
 

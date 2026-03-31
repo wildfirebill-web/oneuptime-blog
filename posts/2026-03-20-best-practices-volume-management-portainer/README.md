@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Volumes, Data Persistence, Best Practices, Storage, Backup
+Tags: Portainer, Docker Volumes, Data Persistence, Best Practice, Storage, Backup
 
 Description: Manage Docker volumes effectively in Portainer with naming conventions, backup strategies, access controls, and cleanup policies to ensure data durability and disk hygiene.
 

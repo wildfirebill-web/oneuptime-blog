@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: C#, .NET, Async, Await, Concurrency, Performance, Best Practices
+Tags: C#, .NET, Async, Await, Concurrency, Performance, Best Practice
 
 Description: Master async/await patterns in C# with practical examples covering common pitfalls, best practices, and performance optimization techniques for asynchronous programming.
 

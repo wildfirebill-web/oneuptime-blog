@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Sentinel, Policy as Code, Organizations, Governance, Enterprise, Best Practices
+Tags: Terraform, Sentinel, Policy as Code, Organizations, Governance, Enterprise, Best Practice
 
 Description: Learn how to organize and manage Sentinel policies at scale for large organizations with multiple teams, environments, and compliance requirements.
 

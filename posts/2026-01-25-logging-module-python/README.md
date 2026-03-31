@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Logging, Debugging, Observability, Best Practices
+Tags: Python, Logging, Debugging, Observability, Best Practice
 
 Description: Learn how to use Python's logging module effectively. This guide covers log levels, handlers, formatters, configuration, and best practices for application logging.
 

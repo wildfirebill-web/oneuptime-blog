@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Multi-Cluster, Repository Structure, Monorepo, Best Practices
+Tags: Flux, Kubernetes, GitOps, Multi-Cluster, Repository Structure, Monorepo, Best Practice
 
 Description: Learn how to design and organize a Git repository structure for managing multiple Kubernetes clusters with Flux, covering monorepo and multi-repo patterns.
 

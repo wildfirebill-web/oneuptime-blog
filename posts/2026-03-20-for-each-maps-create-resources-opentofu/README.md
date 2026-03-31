@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, for_each, Maps, Resources, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, for_each, Map, Resources, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use for_each with maps to create multiple named resource instances in OpenTofu, where each instance is identified by a stable key.
 

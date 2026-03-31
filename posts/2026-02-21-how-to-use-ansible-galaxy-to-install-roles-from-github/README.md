@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ansible Galaxy, GitHub, Roles
+Tags: Ansible, Ansible Galaxy, GitHub, Role
 
 Description: Learn how to install Ansible roles directly from GitHub repositories using ansible-galaxy with version pinning and authentication.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Startswith, Endswith, String Functions, HCL, Infrastructure as Code
+Tags: OpenTofu, Startswith, Endswith, String Function, HCL, Infrastructure as Code
 
 Description: Learn how to use the startswith and endswith functions in OpenTofu to check whether strings begin or end with specific substrings.
 

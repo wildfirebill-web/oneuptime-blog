@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, RUN, Best Practices, Container Optimization
+Tags: Podman, Containerfile, RUN, Best Practice, Container Optimization
 
 Description: Learn best practices for using the RUN instruction in Podman Containerfiles, including layer optimization, caching strategies, and techniques for keeping images lean and secure.
 

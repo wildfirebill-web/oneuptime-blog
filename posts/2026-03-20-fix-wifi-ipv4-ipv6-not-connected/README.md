@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WiFi, IPv4, IPv6, Not Connected, Windows, Troubleshooting
+Tags: WiFi, IPv4, IPv6, Not Connected, Window, Troubleshooting
 
 Description: Learn how to fix the issue where both IPv4 and IPv6 show 'Not Connected' on Windows WiFi, indicating a complete connectivity failure at the IP layer.
 

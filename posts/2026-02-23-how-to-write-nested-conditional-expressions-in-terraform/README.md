@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Infrastructure as Code, Conditional, Expressions
+Tags: Terraform, HCL, Infrastructure as Code, Conditional, Expression
 
 Description: Learn how to write nested conditional expressions in Terraform, when they make sense, when to use alternatives like maps, and how to keep complex logic readable.
 

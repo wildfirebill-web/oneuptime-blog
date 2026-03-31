@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Service Name, Configuration, Observability, Best Practices, Resource Attributes, Tracing
+Tags: OpenTelemetry, Service Name, Configuration, Observability, Best Practice, Resource Attributes, Tracing
 
 Description: A comprehensive guide to configuring service names in OpenTelemetry, including best practices, common pitfalls, and solutions for multi-service architectures.
 

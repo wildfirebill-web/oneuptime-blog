@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Semantic Conventions, Migration, Telemetry, Observability, Best Practices
+Tags: OpenTelemetry, Semantic Conventions, Migration, Telemetry, Observability, Best Practice
 
 Description: A practical guide to migrating your OpenTelemetry instrumentation from deprecated semantic conventions to the latest stable versions without breaking dashboards or alerts.
 

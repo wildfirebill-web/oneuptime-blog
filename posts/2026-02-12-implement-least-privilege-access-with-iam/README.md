@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, IAM, Security, Best Practices
+Tags: AWS, IAM, Security, Best Practice
 
 Description: A practical guide to implementing the principle of least privilege in AWS IAM, with strategies for right-sizing permissions, monitoring access, and continuous improvement.
 

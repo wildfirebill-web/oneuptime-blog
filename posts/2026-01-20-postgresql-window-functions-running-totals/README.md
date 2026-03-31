@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, SQL, Window Functions, Analytics, Running Totals, Data Analysis
+Tags: PostgreSQL, SQL, Window Function, Analytics, Running Total, Data Analysis
 
 Description: Master PostgreSQL window functions to calculate running totals, moving averages, rankings, and cumulative statistics without complex subqueries or self-joins.
 

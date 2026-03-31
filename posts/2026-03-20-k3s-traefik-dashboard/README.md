@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Traefik, Monitoring, Dashboards, DevOps
+Tags: K3s, Kubernetes, Traefik, Monitoring, Dashboard, DevOps
 
 Description: Learn how to enable, secure, and access the Traefik dashboard in K3s for monitoring ingress routing and service health.
 

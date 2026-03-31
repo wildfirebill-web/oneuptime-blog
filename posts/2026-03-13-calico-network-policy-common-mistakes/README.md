@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Network Policy, CNI, Troubleshooting, Best Practices, Security
+Tags: Calico, Kubernetes, Network Policy, CNI, Troubleshooting, Best Practice, Security
 
 Description: The most common Calico network policy mistakes, from selector mismatches to union semantics surprises, and how to diagnose and prevent them.
 

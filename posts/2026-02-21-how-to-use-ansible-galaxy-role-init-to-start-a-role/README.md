@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ansible Galaxy, Roles, Development, Scaffolding
+Tags: Ansible, Ansible Galaxy, Role, Development, Scaffolding
 
 Description: How to scaffold a new Ansible role using ansible-galaxy role init with proper structure, metadata, and ready-to-use templates.
 

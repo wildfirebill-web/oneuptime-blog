@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Self-Hosted, Home Lab, Dashboards, Homarr, Homer, Heimdall
+Tags: Portainer, Docker, Self-Hosted, Home Lab, Dashboard, Homarr, Homer, Heimdall
 
 Description: Deploy a beautiful self-hosted home lab dashboard using Homarr, Homer, or Heimdall with Portainer to organize all your services.
 

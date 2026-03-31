@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, CDKTF, Aspects, Infrastructure as Code, Best Practices
+Tags: Terraform, CDKTF, Aspects, Infrastructure as Code, Best Practice
 
 Description: Learn how to use CDKTF aspects to apply cross-cutting concerns like tagging, validation, and compliance rules across all resources in your infrastructure.
 

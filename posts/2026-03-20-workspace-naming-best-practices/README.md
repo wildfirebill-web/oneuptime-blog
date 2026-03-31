@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Workspaces, Best Practices
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Workspaces, Best Practice
 
 Description: Learn workspace naming conventions and best practices for OpenTofu to create clear, consistent, and maintainable environment structures.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Security, Hardening, Production, Best Practices
+Tags: Flux CD, GitOps, Kubernetes, Security, Hardening, Production, Best Practice
 
 Description: A comprehensive guide to hardening Flux CD for production environments covering RBAC, network policies, pod security, supply chain verification, and more.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, Routes, Routing Table, IPv4, Diagnostics
+Tags: Window, Networking, Routes, Routing Table, IPv4, Diagnostics
 
 Description: Display and interpret the Windows IPv4 routing table using route print, understand the output columns, and filter for specific routes.
 

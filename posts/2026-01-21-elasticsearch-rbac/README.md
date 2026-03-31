@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elasticsearch, RBAC, Security, Access Control, Users, Roles, Privileges
+Tags: Elasticsearch, RBAC, Security, Access Control, Users, Role, Privileges
 
 Description: A comprehensive guide to implementing Role-Based Access Control (RBAC) in Elasticsearch, covering user management, role creation, privilege assignment, and security best practices.
 

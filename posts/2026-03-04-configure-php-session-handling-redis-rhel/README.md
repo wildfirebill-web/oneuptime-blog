@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, PHP, Redis, Sessions, Performance, Linux
+Tags: RHEL, PHP, Redis, Session, Performance, Linux
 
 Description: Store PHP sessions in Redis on RHEL for faster session access and to enable session sharing across multiple web servers in a load-balanced environment.
 

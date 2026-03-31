@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Production, Best Practices
+Tags: Kubernetes, Production, Best Practice
 
 Description: Learn how to create a comprehensive production readiness checklist for Kubernetes applications covering reliability, security, observability, and operational requirements.
 

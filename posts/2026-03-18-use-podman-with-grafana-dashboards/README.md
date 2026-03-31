@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Grafana, Dashboards, Monitoring, Visualization
+Tags: Podman, Grafana, Dashboard, Monitoring, Visualization
 
 Description: Learn how to deploy Grafana in Podman containers to create rich monitoring dashboards for your containerized applications and infrastructure.
 

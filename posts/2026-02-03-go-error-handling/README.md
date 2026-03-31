@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Error Handling, Best Practices, Software Development, Backend
+Tags: Go, Error Handling, Best Practice, Software Development, Backend
 
 Description: A practical guide to Go's error handling patterns - from the error interface to custom errors, wrapping, sentinel errors, and production-ready techniques.
 

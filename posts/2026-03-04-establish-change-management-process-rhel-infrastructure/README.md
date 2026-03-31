@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Change Management, Operations, Best Practices, Linux
+Tags: RHEL, Change Management, Operations, Best Practice, Linux
 
 Description: Set up a change management process for RHEL infrastructure using built-in tools for tracking, auditing, and rolling back system changes.
 

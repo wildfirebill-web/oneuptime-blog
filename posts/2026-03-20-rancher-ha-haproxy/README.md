@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, HA, HAProxy, High Availability, Load Balancing
+Tags: Rancher, has, HAProxy, High Availability, Load Balancing
 
 Description: Configure HAProxy as the load balancer for Rancher HA deployments with health checks, SSL passthrough, and WebSocket support for reliable cluster management.
 

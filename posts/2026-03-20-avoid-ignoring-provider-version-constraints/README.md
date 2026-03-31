@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provider Versions, Best Practices, Stability, Infrastructure as Code
+Tags: OpenTofu, Provider Versions, Best Practice, Stability, Infrastructure as Code
 
 Description: Learn how to properly set and maintain provider version constraints to prevent unexpected breaking changes from provider upgrades.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, API Throttling, AWS, Performance, Best Practices, Infrastructure as Code
+Tags: OpenTofu, API Throttling, AWS, Performance, Best Practice, Infrastructure as Code
 
 Description: Learn how to handle AWS API throttling errors during large OpenTofu applies by configuring parallelism, retry settings, and breaking up large configurations.
 

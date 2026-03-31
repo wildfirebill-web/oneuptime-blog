@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Authentication, JWT, Sessions, Security, Web Development
+Tags: Authentication, JWT, Session, Security, Web Development
 
 Description: A practical comparison of JWT and session-based authentication patterns including security tradeoffs and use cases.
 

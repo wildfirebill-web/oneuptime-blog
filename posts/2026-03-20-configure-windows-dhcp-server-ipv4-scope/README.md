@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, DHCP, IPv4, Windows Server, Network Configuration, PowerShell
+Tags: Window, DHCP, IPv4, Windows Server, Network Configuration, PowerShell
 
 Description: Configure an IPv4 DHCP scope on Windows Server using the DHCP Manager GUI and PowerShell, including address range, subnet mask, gateway, DNS options, and lease duration.
 

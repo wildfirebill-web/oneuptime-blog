@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RKE2, etcd, Embedded etcd, Kubernetes, SUSE Rancher, Cluster Storage, HA
+Tags: RKE2, etcd, Embedded etcd, Kubernetes, SUSE Rancher, Cluster Storage, has
 
 Description: Learn how to configure and tune RKE2's built-in embedded etcd cluster, including snapshot schedules, compaction settings, and performance tuning for production use.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Rate Limiting, Infrastructure as Code, IaC, Troubleshooting, Best Practices
+Tags: OpenTofu, Rate Limiting, Infrastructure as Code, IaC, Troubleshooting, Best Practice
 
 Description: Learn how to handle API rate limiting in OpenTofu with retry configurations, parallelism tuning, and backoff strategies.
 

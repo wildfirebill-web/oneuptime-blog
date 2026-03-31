@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Configuration, Validation, Best Practices, Kubernetes
+Tags: Istio, Configuration, Validation, Best Practice, Kubernetes
 
 Description: Techniques and tools for validating Istio configuration before applying it to your cluster to prevent misconfigurations and outages.
 

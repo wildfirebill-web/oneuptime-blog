@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Event Logging, Monitoring
+Tags: Ansible, Window, Event Logging, Monitoring
 
 Description: Configure Windows Event Logging with Ansible to manage log sizes, retention policies, and event forwarding across your infrastructure.
 

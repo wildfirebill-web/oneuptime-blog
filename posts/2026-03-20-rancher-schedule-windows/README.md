@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Windows, Scheduling, Node Selectors, Affinity
+Tags: Rancher, Window, Scheduling, Node Selectors, Affinity
 
 Description: Configure Kubernetes scheduling rules to direct Windows workloads to Windows nodes using node selectors, node affinity, taints, and tolerations in Rancher clusters.
 

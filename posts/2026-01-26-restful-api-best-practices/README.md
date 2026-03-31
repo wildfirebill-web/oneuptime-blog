@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: REST API, API Design, Best Practices, Backend Development, Web Development
+Tags: REST API, API Design, Best Practice, Backend Development, Web Development
 
 Description: A comprehensive guide to designing RESTful APIs with proper resource naming, HTTP methods, status codes, versioning, and error handling.
 

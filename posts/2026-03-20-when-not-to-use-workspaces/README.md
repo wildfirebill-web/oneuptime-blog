@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Workspaces, Best Practices
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Workspaces, Best Practice
 
 Description: Learn the limitations and anti-patterns of OpenTofu workspaces to understand when separate configurations and state files are better choices than workspaces.
 

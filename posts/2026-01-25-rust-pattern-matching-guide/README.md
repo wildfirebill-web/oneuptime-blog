@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Pattern Matching, Control Flow, Enums, Destructuring
+Tags: Rust, Pattern Matching, Control Flow, Enum, Destructuring
 
 Description: A comprehensive guide to pattern matching in Rust. Learn match expressions, if let, while let, and advanced patterns for writing expressive and type-safe code.
 

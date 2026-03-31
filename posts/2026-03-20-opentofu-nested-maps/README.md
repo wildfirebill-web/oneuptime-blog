@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Maps, Collections, Data Transformation, Infrastructure
+Tags: OpenTofu, Terraform, Map, Collections, Data Transformation, Infrastructure
 
 Description: Learn how to build nested map structures from flat data in OpenTofu using for expressions, enabling hierarchical configuration management and multi-dimensional resource lookups.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Inventory, Multi-Environment, DevOps, Best Practices
+Tags: Ansible, Inventory, Multi-Environment, DevOps, Best Practice
 
 Description: Learn how to structure Ansible inventory for managing multiple environments like development, staging, and production effectively.
 

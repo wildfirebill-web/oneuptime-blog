@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BullMQ, Node.js, Redis, Job IDs, Idempotency, Queue Management, Best Practices
+Tags: BullMQ, Node.js, Redis, Job IDs, Idempotency, Queue Management, Best Practice
 
 Description: A comprehensive guide to implementing custom job IDs in BullMQ for idempotent job creation, tracking, deduplication, and building predictable job management systems.
 

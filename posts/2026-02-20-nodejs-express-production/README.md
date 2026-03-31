@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Express, Production, API, Best Practices
+Tags: Node.js, Express, Production, API, Best Practice
 
 Description: Learn how to build a production-ready Express API with proper error handling, validation, security middleware, and logging.
 

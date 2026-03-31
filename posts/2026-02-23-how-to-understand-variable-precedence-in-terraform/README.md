@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Configuration, Infrastructure as Code, Best Practices
+Tags: Terraform, Variables, Configuration, Infrastructure as Code, Best Practice
 
 Description: Master Terraform's variable precedence rules to understand which value wins when the same variable is set in multiple places, from defaults to command-line flags.
 

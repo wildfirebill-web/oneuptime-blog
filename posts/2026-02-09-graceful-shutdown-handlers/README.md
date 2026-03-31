@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Graceful Shutdown, Lifecycle Management, Best Practices
+Tags: Kubernetes, Graceful Shutdown, Lifecycle Management, Best Practice
 
 Description: Implement graceful shutdown handlers that allow long-running processes to complete work cleanly before termination, preventing data loss and ensuring clean pod lifecycle management in Kubernetes.
 

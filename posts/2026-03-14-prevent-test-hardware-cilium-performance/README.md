@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, Performance, Hardware, Best Practices
+Tags: Cilium, Kubernetes, Performance, Hardware, Best Practice
 
 Description: Best practices for preventing hardware-related performance testing issues in Cilium, including hardware standardization, automated validation, and capacity monitoring.
 

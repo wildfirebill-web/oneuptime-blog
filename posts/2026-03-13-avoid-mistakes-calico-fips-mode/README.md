@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, FIPS, Best Practices, Compliance
+Tags: Calico, Kubernetes, Networking, FIPS, Best Practice, Compliance
 
 Description: Identify and avoid common pitfalls when deploying Calico in FIPS mode, including partial enablement, image confusion, certificate pitfalls, and configuration drift.
 

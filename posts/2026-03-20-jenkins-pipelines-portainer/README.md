@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Jenkins, CI/CD, DevOps, Automation, Pipelines
+Tags: Portainer, Docker, Jenkins, CI/CD, DevOps, Automation, Pipeline
 
 Description: Configure Jenkins declarative pipelines to build Docker images and deploy stacks to Portainer using the Portainer API and webhooks.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Networking, CNI, Migration
+Tags: Calico, Kubernetes, Window, Networking, CNI, Migration
 
 Description: A guide to migrating Windows container workloads to use Calico networking on Windows Server nodes.
 

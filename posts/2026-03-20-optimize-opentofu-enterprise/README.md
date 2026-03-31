@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Enterprise, Performance, Scale, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Enterprise, Performance, Scale, Infrastructure as Code, Best Practice
 
 Description: Learn the architectural and operational patterns that make OpenTofu scale to enterprise environments with hundreds of engineers and thousands of managed resources.
 

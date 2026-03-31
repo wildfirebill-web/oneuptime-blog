@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Windows, Dual Boot, Installation, Partitioning
+Tags: Ubuntu, Window, Dual Boot, Installation, Partitioning
 
 Description: A safe, step-by-step guide to setting up a dual boot configuration with Ubuntu and Windows 11, preserving your existing data throughout the process.
 

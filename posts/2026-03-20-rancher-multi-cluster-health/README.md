@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Monitoring, Dashboards, Multi-Cluster
+Tags: Rancher, Kubernetes, Monitoring, Dashboard, Multi-Cluster
 
 Description: Build a comprehensive multi-cluster health monitoring setup in Rancher using the built-in dashboard, Prometheus, Grafana, and custom alerting to maintain visibility across all clusters.
 

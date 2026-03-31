@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NDP, Neighbor Cache, Windows, Netsh, PowerShell
+Tags: NDP, Neighbor Cache, Window, Netsh, PowerShell
 
 Description: View and manage the IPv6 neighbor cache on Windows using netsh and PowerShell commands, understand neighbor states, and clear stale entries.
 

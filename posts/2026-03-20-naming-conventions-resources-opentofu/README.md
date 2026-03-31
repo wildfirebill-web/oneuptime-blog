@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Naming Conventions, Best Practices, Infrastructure as Code, Organizations, DevOps
+Tags: OpenTofu, Naming Conventions, Best Practice, Infrastructure as Code, Organizations, DevOps
 
 Description: Learn how to establish consistent naming conventions for OpenTofu resource blocks and cloud resource names to improve readability, searchability, and team collaboration.
 

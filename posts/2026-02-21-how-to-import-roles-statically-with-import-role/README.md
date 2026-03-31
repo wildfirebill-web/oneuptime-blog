@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Static Imports, Playbook Organization
+Tags: Ansible, Role, Static Imports, Playbook Organization
 
 Description: Learn how to use import_role in Ansible for static role imports with full tag support, task visibility, and predictable execution.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, DNS, Networking, Automation
+Tags: Ansible, Window, DNS, Networking, Automation
 
 Description: Configure DNS client settings on Windows hosts using the Ansible win_dns_client module for network adapter DNS server assignments.
 

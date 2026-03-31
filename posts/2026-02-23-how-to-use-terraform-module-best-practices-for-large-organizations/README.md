@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Best Practices, Enterprise, Governance, Infrastructure as Code
+Tags: Terraform, Modules, Best Practice, Enterprise, Governance, Infrastructure as Code
 
 Description: Enterprise-grade best practices for managing Terraform modules at scale including governance, testing, documentation, versioning, and organizational standards.
 

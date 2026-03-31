@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Security, Roles
+Tags: Rancher, Kubernetes, RBAC, Permissions, Security, Role
 
 Description: A comprehensive guide to implementing the principle of least privilege in Rancher to minimize security risks across your Kubernetes clusters.
 

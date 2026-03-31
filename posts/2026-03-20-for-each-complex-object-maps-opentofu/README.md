@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, for_each, Objects, Maps, HCL, Advanced
+Tags: OpenTofu, Terraform, for_each, Object, Map, HCL, Advanced
 
 Description: Learn how to use for_each with maps of complex objects in OpenTofu to create richly configured resources with per-instance settings from structured variable data.
 

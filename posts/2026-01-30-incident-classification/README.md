@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Incident Management, SRE, Process, Best Practices
+Tags: Incident Management, SRE, Process, Best Practice
 
 Description: Learn how to classify incidents by type, severity, and impact for effective triage and response.
 

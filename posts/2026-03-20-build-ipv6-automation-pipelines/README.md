@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Pipelines, CI/CD, Ansible, Python, GitOps, Automation
+Tags: IPv6, Pipeline, CI/CD, Ansible, Python, GitOps, Automation
 
 Description: Build end-to-end IPv6 network automation pipelines from code commit to deployment verification using GitLab CI or GitHub Actions.
 

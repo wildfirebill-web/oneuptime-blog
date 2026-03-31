@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Cluster Management, Directory Structure, Multi-Cluster, GitOps, Kubernetes, Best Practices
+Tags: Flux CD, Cluster Management, Directory Structure, Multi-Cluster, GitOps, Kubernetes, Best Practice
 
 Description: A practical guide to organizing your Flux CD repository around cluster directories for managing multiple Kubernetes clusters with clear separation and consistent deployments.
 

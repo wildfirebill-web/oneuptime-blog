@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Best Practices, Platform Engineering, Center of Excellence
+Tags: Flux CD, GitOps, Kubernetes, Best Practice, Platform Engineering, Center of Excellence
 
 Description: Learn how to establish a Flux CD Center of Excellence in your organization to standardize GitOps practices, create reusable templates, and drive adoption across teams.
 

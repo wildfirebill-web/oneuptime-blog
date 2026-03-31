@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bash, Shell Scripting, Functions, Variable Scope, Linux, Programming, Best Practices
+Tags: Bash, Shell Scripting, Functions, Variable Scope, Linux, Programming, Best Practice
 
 Description: Learn how variable scoping works in Bash functions, including local variables, global scope, and techniques to avoid common pitfalls.
 

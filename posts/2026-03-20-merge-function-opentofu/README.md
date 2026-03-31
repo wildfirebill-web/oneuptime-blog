@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Merge, Map Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Merge, Map Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the merge function in OpenTofu to combine multiple maps into one, with later maps overriding keys from earlier ones.
 

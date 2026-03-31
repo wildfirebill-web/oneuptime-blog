@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Security, Encryption, LUKS, Partitions
+Tags: Ubuntu, Security, Encryption, LUKS, Partition
 
 Description: Step-by-step guide to encrypting individual partitions on an existing Ubuntu installation without reinstalling, covering data backup, LUKS setup, and filesystem migration.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Observability, Tracing, OpenTelemetry, Best Practices
+Tags: Observability, Tracing, OpenTelemetry, Best Practice
 
 Description: Learn how to design and implement span events for capturing significant moments within trace spans.
 

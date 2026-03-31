@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Networking, DNS
+Tags: Ansible, Window, Networking, DNS
 
 Description: Automate Windows network configuration with Ansible including IP addresses, DNS settings, network adapters, and firewall rules.
 

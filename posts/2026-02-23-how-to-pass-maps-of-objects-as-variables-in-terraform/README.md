@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Variables, Maps, Objects, Modules, Infrastructure as Code
+Tags: Terraform, HCL, Variables, Map, Object, Modules, Infrastructure as Code
 
 Description: Learn how to define, pass, and use map of objects variables in Terraform to create multiple resources from structured configuration data with type safety and validation.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Debugging, Roles, Troubleshooting
+Tags: Ansible, Debugging, Role, Troubleshooting
 
 Description: Learn how to use verbose output, debug tasks, and other techniques to troubleshoot and debug Ansible roles effectively.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Hyper-V, Windows, Virtualization, Kubernetes
+Tags: Talos Linux, Hyper-V, Window, Virtualization, Kubernetes
 
 Description: A complete guide to deploying Talos Linux on Microsoft Hyper-V for running Kubernetes clusters on Windows Server infrastructure.
 

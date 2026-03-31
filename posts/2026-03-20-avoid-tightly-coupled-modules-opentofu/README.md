@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Coupling, Best Practices, Architecture, Infrastructure as Code
+Tags: OpenTofu, Modules, Coupling, Best Practice, Architecture, Infrastructure as Code
 
 Description: Learn how to design loosely coupled OpenTofu modules that are reusable across environments and teams by following good interface design principles.
 

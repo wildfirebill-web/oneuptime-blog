@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Terraform, Modules, Roles, Best Practices
+Tags: Ansible, Terraform, Modules, Role, Best Practice
 
 Description: Align Terraform module and Ansible role boundaries for consistent, reusable infrastructure components across your organization.
 

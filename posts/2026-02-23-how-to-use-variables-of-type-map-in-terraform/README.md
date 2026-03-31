@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Variables, Maps, HCL, Infrastructure as Code
+Tags: Terraform, Variables, Map, HCL, Infrastructure as Code
 
 Description: Learn how to declare and use map-type variables in Terraform for key-value lookups, resource tagging, environment-specific configuration, and dynamic resource creation.
 

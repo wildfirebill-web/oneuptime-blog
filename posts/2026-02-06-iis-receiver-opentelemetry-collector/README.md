@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, IIS, Windows, Web Server, Observability, Metrics, Microsoft
+Tags: OpenTelemetry, Collector, IIS, Window, Web Server, Observability, Metrics, Microsoft
 
 Description: Complete guide to configuring the IIS receiver in OpenTelemetry Collector for Windows environments with practical YAML examples and performance counter setup.
 

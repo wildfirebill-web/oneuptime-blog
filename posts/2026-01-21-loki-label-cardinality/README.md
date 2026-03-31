@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana Loki, Label Cardinality, Performance, Cost Optimization, LogQL, Best Practices
+Tags: Grafana Loki, Label Cardinality, Performance, Cost Optimization, LogQL, Best Practice
 
 Description: A comprehensive guide to optimizing label cardinality in Grafana Loki, covering label selection strategies, high-cardinality detection, remediation techniques.
 

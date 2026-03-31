@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Policy Table, Windows, RFC 6724, Address Selection, PowerShell
+Tags: IPv6, Policy Table, Window, RFC 6724, Address Selection, PowerShell
 
 Description: Configure the IPv6 address selection policy table on Windows using netsh and PowerShell to control source and destination address preferences for dual-stack networking.
 

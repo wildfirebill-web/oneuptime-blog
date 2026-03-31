@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, IAM, Trust Policy, Security, Roles
+Tags: Terraform, AWS, IAM, Trust Policy, Security, Role
 
 Description: Learn how to create IAM roles with trust policies in Terraform, including service principals, cross-account trust, federated access, and condition-based trust.
 

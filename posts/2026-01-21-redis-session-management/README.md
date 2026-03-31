@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Sessions, Authentication, Security, Web Development, State Management
+Tags: Redis, Session, Authentication, Security, Web Development, State Management
 
 Description: A comprehensive guide to building a secure session management system with Redis including automatic expiration, session stores, and multi-device support.
 

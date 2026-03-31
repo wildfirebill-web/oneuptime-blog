@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Drift Remediation, Import, State Management, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Drift Remediation, Import, State Management, Infrastructure as Code, Best Practice
 
 Description: Learn how to use tofu import to reconcile drifted resources when state has become desynchronized from the actual cloud configuration.
 

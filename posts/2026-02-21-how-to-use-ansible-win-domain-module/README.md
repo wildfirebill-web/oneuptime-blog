@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Active Directory, Domain, Automation
+Tags: Ansible, Window, Active Directory, Domain, Automation
 
 Description: Create and configure Active Directory domains with the Ansible win_domain module including forest creation and domain setup.
 

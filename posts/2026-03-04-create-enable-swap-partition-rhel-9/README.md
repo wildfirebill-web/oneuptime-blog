@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Swap, Partitions, Memory, Linux
+Tags: RHEL, Swap, Partition, Memory, Linux
 
 Description: Step-by-step guide to creating and enabling a dedicated swap partition on RHEL, including partitioning, formatting, and making it persistent across reboots.
 

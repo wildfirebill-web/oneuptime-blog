@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Helm, Kubernetes, DevOps, Validation, Security, Best Practices
+Tags: Helm, Kubernetes, DevOps, Validation, Security, Best Practice
 
 Description: Complete guide to validating Helm charts using helm lint, kubeval, kubeconform, and Polaris for policy enforcement before deployment.
 

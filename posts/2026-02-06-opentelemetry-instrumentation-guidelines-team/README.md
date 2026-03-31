@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Instrumentation, Guidelines, Best Practices, Team Standards, Documentation
+Tags: OpenTelemetry, Instrumentation, Guidelines, Best Practice, Team Standards, Documentation
 
 Description: Learn how to create practical OpenTelemetry instrumentation guidelines that help your team produce consistent, high-quality telemetry data across all services.
 

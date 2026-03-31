@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Title, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Title, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the title function in OpenTofu to convert strings to title case, capitalizing the first letter of each word.
 

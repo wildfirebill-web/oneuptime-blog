@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DNSSEC, Security, Hardening, DNS, Best Practices, Infrastructure
+Tags: DNSSEC, Security, Hardening, DNS, Best Practice, Infrastructure
 
 Description: A comprehensive guide to hardening your DNSSEC deployment with practical configurations, security checklists, and best practices to protect your DNS infrastructure from attacks.
 

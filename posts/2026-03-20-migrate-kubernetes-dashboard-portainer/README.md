@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Migration, Dashboards, DevOps
+Tags: Portainer, Kubernetes, Migration, Dashboard, DevOps
 
 Description: Migrate your Kubernetes workload management from the default Kubernetes Dashboard to Portainer for enhanced RBAC and multi-cluster support.
 

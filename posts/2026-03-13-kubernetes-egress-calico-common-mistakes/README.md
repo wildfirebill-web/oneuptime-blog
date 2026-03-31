@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Egress, CNI, Troubleshooting, Best Practices, Network Policy
+Tags: Calico, Kubernetes, Egress, CNI, Troubleshooting, Best Practice, Network Policy
 
 Description: Common egress configuration mistakes in Calico deployments and how to prevent them, from broken DNS egress to IP allowlist drift.
 

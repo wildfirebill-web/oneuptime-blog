@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Checksums, Linux, Networking, Hardware, Offload
+Tags: TCP, Checksum, Linux, Networking, Hardware, Offload
 
 Description: Understand why TCP checksum errors appear in packet captures and how to distinguish hardware checksum offload artifacts from genuine checksum failures.
 

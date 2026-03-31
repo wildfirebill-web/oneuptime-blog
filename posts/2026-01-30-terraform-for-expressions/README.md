@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, IaC, Expressions, HCL
+Tags: Terraform, IaC, Expression, HCL
 
 Description: Learn how to use Terraform for expressions to transform and filter collections, create dynamic resource configurations, and write cleaner Infrastructure as Code.
 

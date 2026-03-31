@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Routing, Windows, IPv4
+Tags: Networking, Routing, Window, IPv4
 
 Description: Learn how to view and interpret the IPv4 routing table on Windows using route print and PowerShell commands.
 

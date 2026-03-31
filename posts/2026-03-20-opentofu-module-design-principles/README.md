@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Design Principles, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Modules, Design Principles, Best Practice, Infrastructure as Code
 
 Description: Learn the core principles for designing reusable, maintainable OpenTofu modules that follow established best practices.
 

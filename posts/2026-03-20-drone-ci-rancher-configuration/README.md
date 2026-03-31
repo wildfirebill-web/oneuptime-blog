@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Drone CI, Rancher, Kubernetes, CI/CD, DevOps, Pipelines, Containers
+Tags: Drone CI, Rancher, Kubernetes, CI/CD, DevOps, Pipeline, Containers
 
 Description: Learn how to deploy Drone CI on a Rancher-managed Kubernetes cluster and configure pipelines to build, test, and deploy containerized applications automatically.
 

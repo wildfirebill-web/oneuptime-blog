@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Database, PostgreSQL, Roles, DevOps
+Tags: Ansible, Database, PostgreSQL, Role, DevOps
 
 Description: Build a production-ready Ansible role for database server provisioning including installation, configuration, user management, and backups.
 

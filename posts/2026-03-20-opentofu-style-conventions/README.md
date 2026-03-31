@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Style Guide, Best Practices, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Style Guide, Best Practice, HCL, Infrastructure as Code, DevOps
 
 Description: A guide to OpenTofu HCL style conventions for writing clean, consistent, and maintainable infrastructure code.
 

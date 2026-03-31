@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Disaster Recovery, Testing, SRE, Best Practices
+Tags: Disaster Recovery, Testing, SRE, Best Practice
 
 Description: Learn how to test backup and recovery procedures to ensure they work when needed.
 

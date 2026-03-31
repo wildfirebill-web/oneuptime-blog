@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Partitions, META Partition, Disk Management, Linux, Kubernetes Infrastructure
+Tags: Talos Linux, Partition, META Partition, Disk Management, Linux, Kubernetes Infrastructure
 
 Description: A practical guide to understanding the META partition in Talos Linux, its purpose, structure, and how it stores critical node metadata for cluster operations.
 

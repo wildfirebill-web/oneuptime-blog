@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Timeout, AWS, RDS, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Timeout, AWS, RDS, Infrastructure as Code, Best Practice
 
 Description: Learn how to configure timeouts, use depends_on, and implement retry logic for OpenTofu resources that take a long time to provision.
 

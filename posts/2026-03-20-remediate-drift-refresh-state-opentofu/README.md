@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Drift Remediation, State Refresh, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Drift Remediation, State Refresh, Infrastructure as Code, Best Practice
 
 Description: Learn how to use tofu apply -refresh-only to accept detected infrastructure drift and update OpenTofu state to match the current cloud reality.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, ClusterIP, Networking, Best Practices, Network Policy, Monitoring
+Tags: Calico, Kubernetes, ClusterIP, Networking, Best Practice, Network Policy, Monitoring
 
 Description: Proactive strategies to prevent ClusterIP service reachability failures in Kubernetes clusters using Calico.
 

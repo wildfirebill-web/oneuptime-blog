@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Configuration Management, Kubernetes, GitOps, Best Practices
+Tags: Istio, Configuration Management, Kubernetes, GitOps, Best Practice
 
 Description: How to prevent and clean up Istio configuration sprawl that makes your service mesh hard to understand, debug, and maintain in production environments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Reference, Resource Attributes, Expressions, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Reference, Resource Attributes, Expression, Infrastructure as Code, DevOps
 
 Description: A guide to referencing resource attributes in OpenTofu to build dependencies and pass values between resources.
 

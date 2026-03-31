@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Configuration, GitOps, Kubernetes, Best Practices
+Tags: Istio, Configuration, GitOps, Kubernetes, Best Practice
 
 Description: Practical patterns for organizing Istio configuration files in a way that scales with your team and makes reviews and troubleshooting easier.
 

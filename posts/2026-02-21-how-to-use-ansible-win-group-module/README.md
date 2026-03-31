@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Group Management, Security, Automation
+Tags: Ansible, Window, Group Management, Security, Automation
 
 Description: Manage local Windows groups with the Ansible win_group module for organizing users, controlling access, and enforcing security policies.
 

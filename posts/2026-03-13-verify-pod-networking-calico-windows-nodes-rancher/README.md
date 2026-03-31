@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Rancher, Networking, CNI, Verification
+Tags: Calico, Kubernetes, Window, Rancher, Networking, CNI, Verification
 
 Description: A guide to verifying Calico pod networking on Windows nodes in a Rancher-managed Kubernetes cluster.
 

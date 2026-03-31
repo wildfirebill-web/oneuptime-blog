@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Java, Spring Boot, NullPointerException, Debugging, Best Practices, Backend
+Tags: Java, Spring Boot, NullPointerException, Debugging, Best Practice, Backend
 
 Description: Learn how to prevent, diagnose, and handle NullPointerException errors in Java and Spring Boot applications with practical defensive coding strategies.
 

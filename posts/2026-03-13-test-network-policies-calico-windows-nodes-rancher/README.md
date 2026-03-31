@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Rancher, Networking, Network Policies
+Tags: Calico, Kubernetes, Window, Rancher, Networking, Network Policies
 
 Description: A guide to testing Calico network policy enforcement on Windows nodes in a Rancher-managed mixed Linux/Windows Kubernetes cluster.
 

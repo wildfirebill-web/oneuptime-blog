@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Upgrade, DevOps, Best Practices
+Tags: Ansible, Upgrade, DevOps, Best Practice
 
 Description: A safe step-by-step process for upgrading Ansible to the latest version, including pre-upgrade checks, testing, and rollback strategies.
 

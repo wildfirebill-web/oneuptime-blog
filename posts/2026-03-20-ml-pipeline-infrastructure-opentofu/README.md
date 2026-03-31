@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, MLOps, Machine Learning, Pipelines, Step Functions, Kubeflow, Infrastructure as Code
+Tags: OpenTofu, MLOps, Machine Learning, Pipeline, Step Functions, Kubeflow, Infrastructure as Code
 
 Description: Learn how to provision end-to-end ML pipeline infrastructure using OpenTofu, including data ingestion, feature stores, training orchestration, model registry, and serving infrastructure.
 

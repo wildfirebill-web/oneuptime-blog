@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Python, FastAPI, API, Production, Best Practices
+Tags: Python, FastAPI, API, Production, Best Practice
 
 Description: A comprehensive guide to building production-ready APIs with FastAPI, covering project structure, error handling, testing, security, and deployment patterns.
 

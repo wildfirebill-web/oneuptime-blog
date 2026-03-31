@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Database, Networking, Connection Pooling, Best Practices
+Tags: Portainer, Docker, Database, Networking, Connection Pooling, Best Practice
 
 Description: Connect application containers to database containers in Portainer using shared networks, service names, connection pooling, and health-check dependencies.
 

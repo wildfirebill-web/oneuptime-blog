@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Security, Best Practices, Secrets Management, Infrastructure as Code
+Tags: OpenTofu, Security, Best Practice, Secrets Management, Infrastructure as Code
 
 Description: Learn the essential security best practices for OpenTofu including secrets management, state security, provider authentication, and least privilege configuration.
 

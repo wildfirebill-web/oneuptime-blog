@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Resource Management, Infrastructure as Code, Best Practices, Lifecycle
+Tags: Terraform, Resource Management, Infrastructure as Code, Best Practice, Lifecycle
 
 Description: Learn strategies for handling resource attribute changes in Terraform, including in-place updates, forced replacements, lifecycle rules, and managing breaking changes safely.
 

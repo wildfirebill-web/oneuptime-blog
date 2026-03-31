@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Bugtool, PowerShell, Troubleshooting, Windows
+Tags: Cilium, Bugtool, PowerShell, Troubleshooting, Window
 
 Description: Diagnose and fix issues with cilium-bugtool PowerShell completions including execution policy restrictions and profile loading problems.
 

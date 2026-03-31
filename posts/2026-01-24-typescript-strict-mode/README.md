@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TypeScript, Strict Mode, Configuration, Type Safety, Best Practices, Tsconfig
+Tags: TypeScript, Strict Mode, Configuration, Type Safety, Best Practice, Tsconfig
 
 Description: Learn how to enable and configure TypeScript strict mode options for maximum type safety and better code quality.
 

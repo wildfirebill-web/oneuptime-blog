@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, Resource Management, Best Practices
+Tags: Terraform, Infrastructure as Code, DevOps, Resource Management, Best Practice
 
 Description: Learn how to dynamically vary resource attributes based on count.index in Terraform.
 

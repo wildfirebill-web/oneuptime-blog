@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Site Reliability Engineering, SRE, Configuration, Best Practices, Observability, Monitoring, Reliability
+Tags: Site Reliability Engineering, SRE, Configuration, Best Practice, Observability, Monitoring, Reliability
 
 Description: A practical guide to configuring Site Reliability Engineering practices in your organization, from foundational elements to advanced implementations.
 

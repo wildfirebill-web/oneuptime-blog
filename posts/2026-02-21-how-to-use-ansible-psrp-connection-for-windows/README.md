@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, PSRP, PowerShell Remoting
+Tags: Ansible, Window, PSRP, PowerShell Remoting
 
 Description: Configure the Ansible PSRP connection plugin for managing Windows hosts using the PowerShell Remoting Protocol for better performance.
 

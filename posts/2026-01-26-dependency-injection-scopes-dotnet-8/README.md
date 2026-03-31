@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: .NET, C#, Dependency Injection, DI Scopes, ASP.NET Core, Best Practices
+Tags: .NET, C#, Dependency Injection, DI Scopes, ASP.NET Core, Best Practice
 
 Description: A practical guide to understanding and using dependency injection scopes in .NET 8. Learn when to use Transient, Scoped, and Singleton lifetimes, plus common pitfalls to avoid.
 

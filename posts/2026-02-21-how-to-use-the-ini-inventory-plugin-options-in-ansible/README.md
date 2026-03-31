@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Inventory, INI, Configuration, Best Practices
+Tags: Ansible, Inventory, INI, Configuration, Best Practice
 
 Description: Learn how to use all the options and features of the Ansible INI inventory plugin for static inventory files, including groups, variables, and ranges.
 

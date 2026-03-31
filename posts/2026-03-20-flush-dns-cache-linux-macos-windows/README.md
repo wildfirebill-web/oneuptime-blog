@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, Cache, Linux, macOS, Windows, Troubleshooting
+Tags: DNS, Cache, Linux, macOS, Window, Troubleshooting
 
 Description: Clear DNS cache on Linux (systemd-resolved, nscd, dnsmasq), macOS, and Windows to force fresh DNS lookups after record changes.
 

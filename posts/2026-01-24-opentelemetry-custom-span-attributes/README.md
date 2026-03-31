@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Tracing, Observability, Span Attributes, Best Practices, Python, JavaScript, Go, Java
+Tags: OpenTelemetry, Tracing, Observability, Span Attributes, Best Practice, Python, JavaScript, Go, Java
 
 Description: A comprehensive guide to working with custom span attributes in OpenTelemetry, including naming conventions, data types, semantic conventions, and best practices for effective tracing.
 

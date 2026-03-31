@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, Architecture, Composition, Best Practices
+Tags: OpenTofu, Terraform, Modules, Architecture, Composition, Best Practice
 
 Description: Learn how to design composable OpenTofu module architectures where small, focused modules combine to build complete infrastructure stacks through clear input/output interfaces.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Pandas, Debugging, Data Science, Best Practices
+Tags: Python, Pandas, Debugging, Data Science, Best Practice
 
 Description: Learn how to create minimal, reproducible pandas examples that make debugging easier and help others assist you when asking questions on forums.
 

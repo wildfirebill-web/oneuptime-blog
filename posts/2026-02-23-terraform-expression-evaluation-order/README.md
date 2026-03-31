@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Expressions, Infrastructure as Code, DevOps
+Tags: Terraform, HCL, Expression, Infrastructure as Code, DevOps
 
 Description: Understand how Terraform evaluates expressions, resolves references, and determines the order of operations across variables, locals, resources, and data sources.
 

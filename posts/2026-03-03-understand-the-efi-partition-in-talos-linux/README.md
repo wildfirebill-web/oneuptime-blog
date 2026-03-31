@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, EFI, UEFI, Boot Process, Partitions, Disk Management
+Tags: Talos Linux, EFI, UEFI, Boot Process, Partition, Disk Management
 
 Description: Learn what the EFI partition does in Talos Linux, how UEFI boot works, and how this partition fits into the overall Talos disk layout and boot sequence.
 

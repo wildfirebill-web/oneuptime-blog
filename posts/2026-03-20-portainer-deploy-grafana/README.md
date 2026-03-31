@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Grafana, Monitoring, Dashboards, Self-Hosted
+Tags: Portainer, Docker, Grafana, Monitoring, Dashboard, Self-Hosted
 
 Description: Deploy Grafana via Portainer with persistent storage, pre-configured data sources, and dashboard provisioning for a ready-to-use monitoring visualization platform.
 

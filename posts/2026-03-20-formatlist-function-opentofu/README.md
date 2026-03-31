@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Formatlist, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Formatlist, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the formatlist function in OpenTofu to apply format strings to each element of a list, producing a new list of formatted strings.
 

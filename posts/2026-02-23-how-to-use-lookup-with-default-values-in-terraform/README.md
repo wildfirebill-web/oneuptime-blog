@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, DevOps, Terraform Functions, Maps
+Tags: Terraform, Infrastructure as Code, DevOps, Terraform Functions, Map
 
 Description: Learn how to use the lookup function with default values in Terraform to safely retrieve map values with fallbacks for robust configurations.
 

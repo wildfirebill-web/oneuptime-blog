@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, DNS, PowerShell, Network Configuration
+Tags: IPv6, Window, DNS, PowerShell, Network Configuration
 
 Description: Learn how to configure IPv6 DNS server addresses on Windows using PowerShell, netsh, and the GUI, and verify that DNS resolution works over IPv6.
 

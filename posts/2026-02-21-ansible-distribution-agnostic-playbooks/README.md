@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Linux, Cross-Platform, Best Practices, Portability
+Tags: Ansible, Linux, Cross-Platform, Best Practice, Portability
 
 Description: Write Ansible playbooks that work on any Linux distribution by combining OS detection, variable mapping, and portable modules.
 

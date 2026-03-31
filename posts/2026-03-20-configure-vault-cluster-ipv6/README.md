@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vault, HashiCorp, IPv6, Secrets Management, HA, Cluster, Security
+Tags: Vault, HashiCorp, IPv6, Secrets Management, has, Cluster, Security
 
 Description: Configure HashiCorp Vault in high-availability mode with IPv6 addresses for API listeners, cluster communication, and storage backend connectivity.
 

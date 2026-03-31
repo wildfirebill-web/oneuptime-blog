@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Windows, Installation
+Tags: Podman, Containers, DevOps, Podman Desktop, Window, Installation
 
 Description: Learn how to install and configure Podman Desktop on Windows for graphical container management.
 

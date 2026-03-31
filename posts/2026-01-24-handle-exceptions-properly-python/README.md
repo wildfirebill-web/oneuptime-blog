@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Exception Handling, Error Handling, Best Practices, Debugging
+Tags: Python, Exception Handling, Error Handling, Best Practice, Debugging
 
 Description: Learn Python exception handling best practices including try/except patterns, custom exceptions, context managers, and strategies for building robust applications.
 

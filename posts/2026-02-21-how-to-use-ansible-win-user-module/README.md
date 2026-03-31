@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, User Management, Security, Automation
+Tags: Ansible, Window, User Management, Security, Automation
 
 Description: Manage local Windows user accounts with the Ansible win_user module including creation, password policies, and group membership.
 

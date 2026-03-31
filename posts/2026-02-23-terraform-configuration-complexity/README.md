@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Configuration Management, Best Practices, Modules, Infrastructure as Code
+Tags: Terraform, Configuration Management, Best Practice, Modules, Infrastructure as Code
 
 Description: Practical strategies to manage and reduce complexity in Terraform configurations, from naming conventions and module design to state management and team workflows.
 

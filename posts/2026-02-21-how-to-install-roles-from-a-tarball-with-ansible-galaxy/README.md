@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ansible Galaxy, Roles, Offline Installation
+Tags: Ansible, Ansible Galaxy, Role, Offline Installation
 
 Description: Learn how to install Ansible roles from tarball archives for air-gapped environments, custom distribution, and offline deployments.
 

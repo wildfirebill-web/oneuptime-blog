@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Apache Kafka, Topic Configuration, Partitions, Replication, Retention, Best Practices
+Tags: Apache Kafka, Topic Configuration, Partition, Replication, Retention, Best Practice
 
 Description: Learn Kafka topic configuration best practices including partition count, replication factor, retention settings, and compaction policies for optimal performance and reliability.
 

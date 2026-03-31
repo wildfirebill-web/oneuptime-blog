@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Dockerfile, Hadolint, Linting, Best Practices, DevOps, CI/CD
+Tags: Docker, Dockerfile, Hadolint, Linting, Best Practice, DevOps, CI/CD
 
 Description: Learn how to use Hadolint to catch Dockerfile mistakes, enforce best practices, and integrate linting into your CI pipeline.
 

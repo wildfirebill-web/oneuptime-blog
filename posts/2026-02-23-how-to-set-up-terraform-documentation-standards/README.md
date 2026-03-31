@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Documentation, Best Practices, Team Collaboration, Infrastructure as Code
+Tags: Terraform, Documentation, Best Practice, Team Collaboration, Infrastructure as Code
 
 Description: Create Terraform documentation standards that keep infrastructure knowledge accessible and up to date as your team and codebase grow over time.
 

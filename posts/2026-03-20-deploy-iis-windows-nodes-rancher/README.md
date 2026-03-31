@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, IIS, Windows, Web Server, Kubernetes, Legacy Applications
+Tags: Rancher, IIS, Window, Web Server, Kubernetes, Legacy Applications
 
 Description: Deploy Microsoft IIS web server on Windows nodes in Rancher with static websites, ASP.NET applications, and proper service configuration.
 

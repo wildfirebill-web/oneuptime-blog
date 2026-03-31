@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Lock File, Provider Versions, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Lock File, Provider Versions, Best Practice, Infrastructure as Code
 
 Description: Learn why the OpenTofu dependency lock file is critical for reproducibility, how it works, and what happens when teams ignore it.
 

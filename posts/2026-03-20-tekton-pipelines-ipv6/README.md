@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Tekton, Kubernetes, CI/CD, Pipelines, DevOps
+Tags: IPv6, Tekton, Kubernetes, CI/CD, Pipeline, DevOps
 
 Description: Configure Tekton Pipelines to run in IPv6 Kubernetes clusters, connect to IPv6 Git sources, and test IPv6 connectivity within pipeline tasks.
 

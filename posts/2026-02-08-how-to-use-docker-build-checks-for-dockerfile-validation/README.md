@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Dockerfile, Build Checks, Validation, BuildKit, DevOps, Best Practices
+Tags: Docker, Dockerfile, Build Checks, Validation, BuildKit, DevOps, Best Practice
 
 Description: Learn how to use Docker's built-in build checks to validate Dockerfiles and catch common mistakes before building images.
 

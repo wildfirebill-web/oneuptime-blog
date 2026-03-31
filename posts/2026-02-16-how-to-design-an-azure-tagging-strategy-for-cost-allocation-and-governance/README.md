@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Tagging Strategy, Cost Management, Governance, FinOps, Cloud Management, Best Practices
+Tags: Azure, Tagging Strategy, Cost Management, Governance, FinOps, Cloud Management, Best Practice
 
 Description: Design a comprehensive Azure tagging strategy that enables accurate cost allocation, governance enforcement, and operational automation across your organization.
 

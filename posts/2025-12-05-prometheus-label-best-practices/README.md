@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Labels, Best Practices, Cardinality, Metrics, Data Modeling
+Tags: Prometheus, Labels, Best Practice, Cardinality, Metrics, Data Modeling
 
 Description: Learn Prometheus label best practices to create efficient, queryable metrics while avoiding cardinality explosions that degrade performance.
 

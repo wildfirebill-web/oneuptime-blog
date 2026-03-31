@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, File Sharing, Networking
+Tags: Ansible, Window, File Sharing, Networking
 
 Description: Automate Windows network share creation and management using the Ansible win_share module with step-by-step examples.
 

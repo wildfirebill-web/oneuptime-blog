@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, nftables, Sets, Maps, Linux
+Tags: RHEL, nftables, Set, Map, Linux
 
 Description: Learn how to use nftables sets and maps on RHEL to build efficient firewall rules that can match against large groups of addresses, ports, and more.
 

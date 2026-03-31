@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Storage Account, Key Rotation, Security, Access Keys, Best Practices, Credentials Management
+Tags: Azure, Storage Account, Key Rotation, Security, Access Keys, Best Practice, Credentials Management
 
 Description: A practical guide to rotating Azure Storage account access keys without causing downtime, including automation strategies and migration to managed identities.
 

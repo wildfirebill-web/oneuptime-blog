@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Documentation, Migration, Kubernetes, Best Practices
+Tags: Istio, Documentation, Migration, Kubernetes, Best Practice
 
 Description: How to capture and document lessons learned during an Istio migration so future teams and projects benefit from your experience.
 

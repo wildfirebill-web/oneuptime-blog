@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Windows, Chocolatey, Installation, Infrastructure as Code, DevOps
+Tags: OpenTofu, Window, Chocolatey, Installation, Infrastructure as Code, DevOps
 
 Description: A guide to installing OpenTofu on Windows using the Chocolatey package manager for easy management.
 

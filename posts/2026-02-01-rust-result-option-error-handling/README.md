@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Error Handling, Result, Options, Best Practices
+Tags: Rust, Error Handling, Result, Options, Best Practice
 
 Description: A practical guide to error handling in Rust using Result and Option types with the ? operator and custom error types.
 

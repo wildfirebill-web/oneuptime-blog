@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Azure DevOps, Pipelines, OCI, GitOps, Kubernetes, CI/CD, Automation
+Tags: Flux CD, Azure DevOps, Pipeline, OCI, GitOps, Kubernetes, CI/CD, Automation
 
 Description: A step-by-step guide to integrating Flux CD with Azure DevOps Pipelines for automated OCI artifact publishing and GitOps-driven deployments.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, Architecture, Project Structure, Mobile Development, Best Practices, TypeScript
+Tags: React Native, Architecture, Project Structure, Mobile Development, Best Practice, TypeScript
 
 Description: Learn best practices for structuring large-scale React Native applications with scalable architecture patterns for long-term maintainability.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Monitoring, Prometheus, Node Exporter, Roles
+Tags: Ansible, Monitoring, Prometheus, Node Exporter, Role
 
 Description: Build an Ansible role for deploying and configuring monitoring agents like Prometheus Node Exporter across your entire infrastructure fleet.
 

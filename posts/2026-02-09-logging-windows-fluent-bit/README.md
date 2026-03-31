@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Windows, Logging
+Tags: Kubernetes, Window, Logging
 
 Description: Configure Fluent Bit to collect, process, and forward logs from Windows containers in Kubernetes with parsing, filtering, and multi-destination output.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Database, Materialized Views, Performance, Query Optimization, Caching, SQL
+Tags: PostgreSQL, Database, Materialized View, Performance, Query Optimization, Caching, SQL
 
 Description: Learn how to use materialized views in PostgreSQL to improve query performance. This guide covers creation, refresh strategies, indexing, and best practices for caching expensive queries.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Upgrade, Docker-swarm, Updates
+Tags: Portainer, Upgrade, Docker-swarm, Update
 
 Description: A guide to upgrading Portainer CE deployed on Docker Swarm, covering service updates and maintaining Portainer agent connectivity.
 

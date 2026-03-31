@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Windows, Performance Counters, Monitoring, Infrastructure, Observability
+Tags: OpenTelemetry, Collector, Window, Performance Counters, Monitoring, Infrastructure, Observability
 
 Description: Learn how to collect Windows Performance Counters using the OpenTelemetry Collector's windowsperfcounters receiver with practical configuration and examples.
 

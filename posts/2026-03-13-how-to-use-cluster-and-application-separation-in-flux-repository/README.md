@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Repository Structure, Best Practices, Multi-Cluster
+Tags: Flux, Kubernetes, GitOps, Repository Structure, Best Practice, Multi-Cluster
 
 Description: Learn how to separate cluster configuration from application definitions in your Flux repository for cleaner GitOps workflows.
 

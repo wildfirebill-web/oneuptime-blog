@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Variables, Configuration Management, Best Practices
+Tags: Ansible, Variables, Configuration Management, Best Practice
 
 Description: Master Ansible variable management with best practices for naming, scoping, precedence, and organizing variables across environments and roles.
 

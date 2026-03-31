@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, AWS, IAM, Infrastructure as Code, Security, Roles
+Tags: Terraform, AWS, IAM, Infrastructure as Code, Security, Role
 
 Description: Learn how to attach multiple IAM policies to a single IAM role in Terraform using various approaches including for_each, count, and dynamic policy maps.
 

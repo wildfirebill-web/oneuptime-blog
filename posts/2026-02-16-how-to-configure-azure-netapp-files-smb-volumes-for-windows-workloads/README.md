@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, NetApp Files, SMB, Windows, File Storage, Active Directory, Enterprise Storage
+Tags: Azure, NetApp Files, SMB, Window, File Storage, Active Directory, Enterprise Storage
 
 Description: A practical guide to setting up Azure NetApp Files SMB volumes for Windows workloads including Active Directory integration and performance tuning.
 

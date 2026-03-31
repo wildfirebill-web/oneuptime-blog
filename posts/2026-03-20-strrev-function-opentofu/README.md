@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Strrev, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Strrev, String Function, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the strrev function in OpenTofu to reverse a string, and explore practical uses in infrastructure configurations.
 

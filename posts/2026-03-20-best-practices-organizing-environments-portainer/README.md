@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Best Practices, Environments, Organizations, DevOps, Multi-Environment
+Tags: Portainer, Best Practice, Environments, Organizations, DevOps, Multi-Environment
 
 Description: Learn how to organize Portainer environments effectively using naming conventions, tags, groups, and access policies to scale container management across multiple hosts.
 

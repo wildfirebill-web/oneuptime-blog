@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, Capacitor, Dashboards, Monitoring, UI
+Tags: Flux CD, GitOps, Kubernetes, Capacitor, Dashboard, Monitoring, UI
 
 Description: Learn how to deploy and use the Flux CD Capacitor dashboard to monitor GitOps reconciliation status, view resource details, and troubleshoot issues through a web UI.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Networking, Checksums, Packet Integrity, TCP/IP, Network Security
+Tags: IPv4, Networking, Checksum, Packet Integrity, TCP/IP, Network Security
 
 Description: The IPv4 header checksum is a 16-bit one's complement sum that allows routers to detect corruption in the IP header, and computing or verifying it is essential for low-level packet analysis.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Cilium, Kubernetes, Networking, Performance, Single-Process, Best Practices
+Tags: Cilium, Kubernetes, Networking, Performance, Single-Process, Best Practice
 
 Description: Best practices and proactive configurations to prevent single-process workloads from experiencing CPU contention with Cilium's eBPF datapath.
 

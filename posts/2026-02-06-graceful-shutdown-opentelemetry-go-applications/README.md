@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Go, Graceful Shutdown, Lifecycle, Best Practices
+Tags: OpenTelemetry, Go, Graceful Shutdown, Lifecycle, Best Practice
 
 Description: Master graceful shutdown patterns for OpenTelemetry in Go to ensure all telemetry data is exported before application termination and prevent data loss.
 

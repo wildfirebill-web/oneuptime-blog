@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Import, State Management, AWS, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Import, State Management, AWS, Best Practice, Infrastructure as Code
 
 Description: Learn how to determine and format complex import IDs for AWS resources like IAM policies, DynamoDB tables, and composite-key resources using OpenTofu.
 

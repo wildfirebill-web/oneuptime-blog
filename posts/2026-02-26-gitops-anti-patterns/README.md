@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Best Practices, DevOps
+Tags: ArgoCD, GitOps, Kubernetes, Best Practice, DevOps
 
 Description: Identify and fix common GitOps anti-patterns including secret sprawl, environment drift, monorepo chaos, and broken reconciliation loops in ArgoCD deployments.
 

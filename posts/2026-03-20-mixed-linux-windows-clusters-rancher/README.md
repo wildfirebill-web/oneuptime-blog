@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Mixed Cluster, Windows, Linux, Kubernetes, Node Selectors
+Tags: Rancher, Mixed Cluster, Window, Linux, Kubernetes, Node Selectors
 
 Description: Configure and manage mixed Linux and Windows Kubernetes clusters in Rancher with proper workload scheduling, resource organization, and OS-aware configurations.
 

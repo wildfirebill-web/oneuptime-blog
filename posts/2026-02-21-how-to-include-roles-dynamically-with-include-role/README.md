@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Dynamic Include, Automation
+Tags: Ansible, Role, Dynamic Include, Automation
 
 Description: Learn how to use include_role in Ansible for dynamic role inclusion with conditionals, loops, and runtime decision-making.
 

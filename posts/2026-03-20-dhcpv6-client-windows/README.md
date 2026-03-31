@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCPv6, IPv6, Windows, Networking, PowerShell, Netsh
+Tags: DHCPv6, IPv6, Window, Networking, PowerShell, Netsh
 
 Description: Learn how to configure and manage a DHCPv6 client on Windows using the GUI, netsh, and PowerShell to obtain IPv6 addresses from a DHCPv6 server.
 

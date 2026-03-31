@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Drone CI, Rancher, Kubernetes, CI/CD, Pipelines, GitOps, SUSE Rancher
+Tags: Drone CI, Rancher, Kubernetes, CI/CD, Pipeline, GitOps, SUSE Rancher
 
 Description: Learn how to deploy Drone CI on a Rancher-managed Kubernetes cluster using Helm, connect it to a Git provider, and configure Kubernetes-native pipeline runners.
 

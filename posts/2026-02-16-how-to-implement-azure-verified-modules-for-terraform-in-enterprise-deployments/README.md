@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Terraform, Verified Modules, Enterprise, Infrastructure as Code, Best Practices, Governance
+Tags: Azure, Terraform, Verified Modules, Enterprise, Infrastructure as Code, Best Practice, Governance
 
 Description: Learn how to adopt Azure Verified Modules for Terraform to standardize enterprise Azure deployments with Microsoft-maintained, tested infrastructure modules.
 

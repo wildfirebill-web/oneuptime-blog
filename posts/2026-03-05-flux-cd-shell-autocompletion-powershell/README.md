@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, GitOps, Kubernetes, PowerShell, Shell, Autocompletion, Windows
+Tags: Flux CD, GitOps, Kubernetes, PowerShell, Shell, Autocompletion, Window
 
 Description: Set up Flux CD CLI autocompletion in PowerShell for efficient command completion on Windows, macOS, and Linux.
 

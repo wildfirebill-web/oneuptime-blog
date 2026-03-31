@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Active Directory, LDAP, Authentication, Kubernetes, Windows
+Tags: Talos Linux, Active Directory, LDAP, Authentication, Kubernetes, Window
 
 Description: A complete guide to integrating Microsoft Active Directory with Talos Linux Kubernetes clusters for enterprise authentication and group-based access control.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, OpenTelemetry, OTEL Collector, Pipelines, Observability
+Tags: Flux CD, Kubernetes, GitOps, OpenTelemetry, OTEL Collector, Pipeline, Observability
 
 Description: Learn how to deploy and configure OpenTelemetry Collector pipelines using Flux CD, enabling GitOps-driven observability infrastructure for traces, metrics, and logs.
 

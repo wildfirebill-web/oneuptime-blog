@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure CLI, Windows, Troubleshooting, PATH, Installation, DevOps
+Tags: Azure CLI, Window, Troubleshooting, PATH, Installation, DevOps
 
 Description: Step-by-step fixes for the common 'The term az is not recognized' error when running Azure CLI commands on Windows systems.
 

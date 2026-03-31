@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, IAM, Users, Roles, Security
+Tags: OpenTofu, AWS, IAM, Users, Role, Security
 
 Description: Learn how to provision AWS IAM users, groups, and roles with appropriate policies using OpenTofu.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Lock File, Version Control, Git, Best Practices, Terraform.lock.hcl, Infrastructure as Code
+Tags: OpenTofu, Lock File, Version Control, Git, Best Practice, Terraform.lock.hcl, Infrastructure as Code
 
 Description: Learn why committing the .terraform.lock.hcl dependency lock file to version control is a critical best practice for reproducible OpenTofu deployments and how to set up your team to manage it...
 

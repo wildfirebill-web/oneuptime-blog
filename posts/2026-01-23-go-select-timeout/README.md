@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, Select, Timeout, Channels, Concurrency
+Tags: Go, Golang, SELECT, Timeout, Channels, Concurrency
 
 Description: Learn how to use Go's select statement with timeouts for non-blocking channel operations, deadline handling, and graceful timeout management.
 

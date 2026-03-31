@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Upgrade, Kubernetes, Helm, Updates
+Tags: Portainer, Upgrade, Kubernetes, Helm, Update
 
 Description: A guide to upgrading Portainer CE deployed on Kubernetes using Helm and kubectl, covering data preservation and rollback procedures.
 

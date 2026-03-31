@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WSL2, Docker, Portainer, Windows, Troubleshooting, Docker Socket
+Tags: WSL2, Docker, Portainer, Window, Troubleshooting, Docker Socket
 
 Description: Learn how to diagnose and fix Docker socket connectivity issues between WSL2 and Portainer on Windows, including socket path problems, permissions, and Docker Desktop integration.
 

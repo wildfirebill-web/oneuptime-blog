@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Windows, Networking, CNI, Configuration
+Tags: Calico, Kubernetes, Window, Networking, CNI, Configuration
 
 Description: A guide to configuring Calico networking settings for Windows nodes in a new mixed Linux/Windows Kubernetes cluster.
 

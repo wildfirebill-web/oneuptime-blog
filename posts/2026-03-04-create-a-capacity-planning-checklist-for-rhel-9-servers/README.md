@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Best Practices, Planning, Linux
+Tags: RHEL, Best Practice, Planning, Linux
 
 Description: Step-by-step guide on create a capacity planning checklist  servers using Red Hat Enterprise Linux 9.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Logging, Conventions, Observability, Best Practices
+Tags: Logging, Conventions, Observability, Best Practice
 
 Description: A practical guide to building log message conventions that make debugging faster, alerting smarter, and your codebase more maintainable.
 

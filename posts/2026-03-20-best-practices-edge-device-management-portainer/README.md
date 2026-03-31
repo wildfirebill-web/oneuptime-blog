@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Edge Computing, IoT, Best Practices, Edge Agent, Fleet Management
+Tags: Portainer, Edge Computing, IoT, Best Practice, Edge Agent, Fleet Management
 
 Description: Apply edge device management best practices in Portainer including device grouping, update policies, offline operation, and security hardening for large-scale edge deployments.
 

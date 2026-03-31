@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Automation, DevOps
+Tags: Ansible, Role, Automation, DevOps
 
 Description: Learn how to create an Ansible role from scratch with hands-on examples covering tasks, handlers, variables, templates, and more.
 

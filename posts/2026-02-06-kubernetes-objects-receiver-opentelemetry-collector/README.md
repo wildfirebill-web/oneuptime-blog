@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Kubernetes, Objects, Events, Logs
+Tags: OpenTelemetry, Collector, Kubernetes, Object, Events, Logs
 
 Description: Learn how to configure the Kubernetes Objects Receiver in the OpenTelemetry Collector to collect Kubernetes events and object state changes.
 

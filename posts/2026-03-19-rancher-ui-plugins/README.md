@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, UI Extensions, Plugins, Dashboards
+Tags: Rancher, Kubernetes, UI Extensions, Plugins, Dashboard
 
 Description: Comprehensive guide to developing Rancher UI plugins, covering the plugin architecture, DSL, store access, component reuse, and advanced customization patterns.
 

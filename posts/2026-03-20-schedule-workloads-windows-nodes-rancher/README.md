@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Windows, Scheduling, Kubernetes, Node Affinity, Taints and Tolerations
+Tags: Rancher, Window, Scheduling, Kubernetes, Node Affinity, Taints and Tolerations
 
 Description: Configure Kubernetes scheduling rules in Rancher to place workloads on specific Windows nodes using node selectors, affinity rules, and taints and tolerations.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Multimedia, Codecs, Video Playback, GStreamer, Linux
+Tags: RHEL, Multimedia, Codec, Video Playback, GStreamer, Linux
 
 Description: Install multimedia codecs on RHEL to enable playback of common video and audio formats including H.264, H.265, AAC, and MP3.
 

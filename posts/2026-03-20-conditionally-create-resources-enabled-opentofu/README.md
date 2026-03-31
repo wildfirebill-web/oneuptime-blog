@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, Enabled, Conditional, HCL, Best Practices
+Tags: OpenTofu, Terraform, Modules, Enabled, Conditional, HCL, Best Practice
 
 Description: Learn how to implement an enabled variable pattern in OpenTofu modules to cleanly toggle entire feature sets on and off without changing module interfaces.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Portainer, Migration, Container Management, DevOps, Dashboards
+Tags: Kubernetes, Portainer, Migration, Container Management, DevOps, Dashboard
 
 Description: Learn how to migrate your Kubernetes management workflow from the native Kubernetes Dashboard to Portainer for a richer feature set and unified multi-environment control.
 

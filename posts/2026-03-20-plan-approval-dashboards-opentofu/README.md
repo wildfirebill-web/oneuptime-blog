@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Plan Approval, Dashboards, CI/CD, Infrastructure as Code
+Tags: OpenTofu, Plan Approval, Dashboard, CI/CD, Infrastructure as Code
 
 Description: Learn how to build plan approval dashboards for OpenTofu that give operators a clear view of pending infrastructure changes before approving deployments.
 

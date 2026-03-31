@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Calicoctl, BGP, Team Workflows, Monitoring, Best Practices
+Tags: Calico, Calicoctl, BGP, Team Workflows, Monitoring, Best Practice
 
 Description: Establish team-wide practices for using calicoctl node status as part of operational runbooks, incident response, and regular health monitoring.
 

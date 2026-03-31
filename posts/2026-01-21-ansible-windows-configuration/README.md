@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, WinRM, DevOps, Windows Automation, PowerShell
+Tags: Ansible, Window, WinRM, DevOps, Windows Automation, PowerShell
 
 Description: Manage Windows servers with Ansible using WinRM connectivity, PowerShell modules, and Windows-specific automation for configuration, deployment, and administration.
 

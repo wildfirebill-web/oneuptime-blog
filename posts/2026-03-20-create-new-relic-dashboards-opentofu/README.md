@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, New Relic, Dashboards, Observability, Infrastructure as Code
+Tags: OpenTofu, New Relic, Dashboard, Observability, Infrastructure as Code
 
 Description: Learn how to create New Relic dashboards and visualizations with OpenTofu to codify your observability views alongside your infrastructure.
 

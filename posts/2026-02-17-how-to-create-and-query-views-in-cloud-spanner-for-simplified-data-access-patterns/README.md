@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Cloud Spanner, Database, SQL, Views
+Tags: GCP, Cloud Spanner, Database, SQL, View
 
 Description: Learn how to create and query views in Cloud Spanner to simplify complex data access patterns, reduce query duplication, and improve developer productivity.
 

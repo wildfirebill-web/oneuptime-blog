@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, Networking, NetworkSet, Security, Best Practices
+Tags: Calico, Kubernetes, Networking, NetworkSet, Security, Best Practice
 
 Description: Practical usage patterns for Calico NetworkSet resources, including allowlists for external services, blocklists for threat intelligence feeds, and geographic IP restrictions.
 

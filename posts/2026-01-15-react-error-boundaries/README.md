@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, Error Handling, TypeScript, Frontend, Reliability, Best Practices
+Tags: React, Error Handling, TypeScript, Frontend, Reliability, Best Practice
 
 Description: Learn how to implement Error Boundaries in React to gracefully handle JavaScript errors, prevent app crashes, and provide better user experiences with fallback UIs and error reporting.
 

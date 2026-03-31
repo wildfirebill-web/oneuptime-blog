@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Code Review, Configuration, DevOps, Best Practices
+Tags: Istio, Code Review, Configuration, DevOps, Best Practice
 
 Description: How to establish a configuration review process for Istio changes to prevent misconfigurations and production incidents.
 

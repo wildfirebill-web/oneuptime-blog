@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, IAM, Roles, Authentication, Security, EC2
+Tags: AWS, IAM, Role, Authentication, Security, EC2
 
 Description: Learn how to use AWS IAM roles to grant EC2 instances, Lambda functions, and other services secure, credential-free access to AWS resources.
 

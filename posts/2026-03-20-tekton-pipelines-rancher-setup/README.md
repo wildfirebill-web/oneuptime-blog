@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Tekton, Rancher, Kubernetes, CI/CD, Pipelines, DevOps, Cloud Native
+Tags: Tekton, Rancher, Kubernetes, CI/CD, Pipeline, DevOps, Cloud Native
 
 Description: Learn how to install and configure Tekton Pipelines on a Rancher-managed Kubernetes cluster, create reusable tasks, and build end-to-end CI/CD pipelines for container applications.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, Lists, Nested Structures, Range, Data Generation
+Tags: OpenTofu, Terraform, HCL, Lists, Nested Structures, range, Data Generation
 
 Description: Learn how to generate lists, sequences, and nested data structures in OpenTofu using range(), for expressions, and local values to build dynamic configurations.
 

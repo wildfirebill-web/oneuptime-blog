@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Windows, Security, Windows Containers, Pod Security
+Tags: Kubernetes, Window, Security, Windows Containers, Pod Security
 
 Description: Learn how to configure Windows-specific security context options in Kubernetes for Windows containers, including user context, host process containers, and Group Managed Service Accounts.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Zipmap, Maps, Lists, Data Transformation
+Tags: OpenTofu, HCL, Zipmap, Map, Lists, Data Transformation
 
 Description: Learn how to use OpenTofu's zipmap, tomap, and list manipulation functions to construct and transform data structures in HCL.
 

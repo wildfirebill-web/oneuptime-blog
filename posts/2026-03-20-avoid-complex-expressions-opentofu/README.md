@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Best Practices, HCL, Readability, Infrastructure as Code
+Tags: OpenTofu, Best Practice, HCL, Readability, Infrastructure as Code
 
 Description: Learn how to simplify overly complex OpenTofu expressions by breaking them down into named locals and applying the principle of readable code.
 

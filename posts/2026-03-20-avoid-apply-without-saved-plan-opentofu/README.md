@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Best Practices, Plan, Safety, CI/CD, Infrastructure as Code
+Tags: OpenTofu, Best Practice, Plan, Safety, CI/CD, Infrastructure as Code
 
 Description: Learn why applying without a saved plan is risky and how to enforce plan-then-apply workflows in your team and CI/CD pipelines.
 

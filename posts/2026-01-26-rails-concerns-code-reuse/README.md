@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ruby on Rails, Concerns, Code Reuse, DRY, ActiveSupport, Mixins, Best Practices
+Tags: Ruby on Rails, Concerns, Code Reuse, DRY, ActiveSupport, Mixins, Best Practice
 
 Description: Learn how to use Rails Concerns to extract shared behavior into reusable modules, keeping your models and controllers DRY and maintainable.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Arithmetic, Operator, Expressions, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Arithmetic, Operator, Expression, Infrastructure as Code, DevOps
 
 Description: A guide to using arithmetic operators in OpenTofu HCL expressions for mathematical calculations in infrastructure configurations.
 

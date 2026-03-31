@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Grafana, Monitoring, OpenTofu, Helm, Dashboards, Observability
+Tags: Kubernetes, Grafana, Monitoring, OpenTofu, Helm, Dashboard, Observability
 
 Description: Learn how to deploy Grafana on Kubernetes using OpenTofu and Helm with persistent storage, OIDC authentication, pre-provisioned dashboards, and multiple data sources.
 

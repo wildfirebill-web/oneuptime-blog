@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Security, Baseline, AWS, Best Practices
+Tags: Terraform, Security, Baseline, AWS, Best Practice
 
 Description: Learn how to define and enforce security baselines across your cloud infrastructure using Terraform modules and policies.
 

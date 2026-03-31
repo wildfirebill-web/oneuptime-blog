@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Repository Structure, Best Practices, Infrastructure
+Tags: Flux, Kubernetes, GitOps, Repository Structure, Best Practice, Infrastructure
 
 Description: Learn why and how to separate application and infrastructure manifests in your Flux GitOps repository for better dependency management.
 

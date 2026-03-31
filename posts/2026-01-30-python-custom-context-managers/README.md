@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Context Managers, Resource Management, Best Practices, OOP
+Tags: Python, Context Managers, Resource Management, Best Practice, OOP
 
 Description: Create custom context managers in Python using __enter__/__exit__ methods and the contextlib module for proper resource management.
 

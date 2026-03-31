@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Scheduling, Performance, Best Practices
+Tags: Kubernetes, Scheduling, Performance, Best Practice
 
 Description: Learn how to configure Kubernetes scheduler profiles to optimize pod placement for different workload types including batch jobs, latency-sensitive apps, and high-throughput services.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, DevOps, Configuration Management, Automation, Infrastructure as Code, Roles
+Tags: Ansible, DevOps, Configuration Management, Automation, Infrastructure as Code, Role
 
 Description: A practical guide to managing role dependencies in Ansible, including meta/main.yml configuration, Galaxy requirements, and best practices for complex role hierarchies.
 

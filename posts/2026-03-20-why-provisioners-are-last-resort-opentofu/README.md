@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, Best Practices, Infrastructure as Code, Cloud-init
+Tags: OpenTofu, Provisioners, Best Practice, Infrastructure as Code, Cloud-init
 
 Description: Understand why OpenTofu's own documentation recommends provisioners as a last resort and what better alternatives exist for resource configuration and bootstrapping.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, HA, Health Monitoring, Prometheus, Alerting
+Tags: Rancher, has, Health Monitoring, Prometheus, Alerting
 
 Description: Monitor the health of your Rancher HA deployment with comprehensive checks for etcd, API server, Rancher pods, and managed cluster connectivity.
 

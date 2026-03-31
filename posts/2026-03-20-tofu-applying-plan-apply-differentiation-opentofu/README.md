@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Tofu.applying, Plan, Apply, Expressions, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu.applying, Plan, Apply, Expression, Infrastructure as Code, DevOps
 
 Description: A guide to using the tofu.applying built-in value to differentiate between plan and apply phases in OpenTofu expressions.
 

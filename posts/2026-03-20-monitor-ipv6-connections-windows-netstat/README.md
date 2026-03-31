@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, netstat, Network Monitoring, Command Line
+Tags: IPv6, Window, netstat, Network Monitoring, Command Line
 
 Description: Learn how to use netstat to monitor IPv6 network connections on Windows, view listening ports, active sessions, and connection statistics for IPv6 traffic.
 

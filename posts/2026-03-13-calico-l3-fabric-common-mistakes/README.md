@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Kubernetes, L3, BGP, Networking, Troubleshooting, Best Practices, Routing
+Tags: Calico, Kubernetes, L3, BGP, Networking, Troubleshooting, Best Practice, Routing
 
 Description: Common BGP routing mistakes in Calico deployments - from session flapping to AS number conflicts - and how to diagnose and prevent them.
 

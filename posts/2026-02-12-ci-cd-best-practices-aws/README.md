@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, CI/CD, CodePipeline, DevOps, Best Practices
+Tags: AWS, CI/CD, CodePipeline, DevOps, Best Practice
 
 Description: Learn how to build secure, reliable CI/CD pipelines on AWS using CodePipeline, CodeBuild, and CodeDeploy with automated testing, security scanning, and safe deployments.
 

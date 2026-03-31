@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, String Functions, URL Manipulation, Infrastructure as Code, HCL
+Tags: Terraform, String Function, URL Manipulation, Infrastructure as Code, HCL
 
 Description: Learn how to manipulate URLs in Terraform using built-in string functions like replace, split, join, regex, and trimprefix for dynamic endpoint construction.
 

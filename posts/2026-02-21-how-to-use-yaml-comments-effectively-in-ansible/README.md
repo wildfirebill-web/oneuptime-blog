@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, YAML, Comments, Documentation, Best Practices
+Tags: Ansible, YAML, Comments, Documentation, Best Practice
 
 Description: Best practices for using YAML comments in Ansible playbooks to explain intent, document variables, and improve code readability.
 

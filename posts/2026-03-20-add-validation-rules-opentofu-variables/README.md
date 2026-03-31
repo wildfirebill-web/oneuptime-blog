@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Validation, HCL, Infrastructure as Code, DevOps, Best Practices
+Tags: OpenTofu, Variables, Validation, HCL, Infrastructure as Code, DevOps, Best Practice
 
 Description: Learn how to add validation blocks to OpenTofu variables to catch invalid values early with clear error messages.
 

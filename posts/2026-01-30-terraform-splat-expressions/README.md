@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, IaC, Expressions, HCL
+Tags: Terraform, IaC, Expression, HCL
 
 Description: Learn how to use Terraform splat expressions to efficiently extract and transform data from lists and resources in your infrastructure code.
 

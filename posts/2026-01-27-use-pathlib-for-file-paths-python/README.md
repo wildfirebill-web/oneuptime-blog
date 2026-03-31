@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Pathlib, File Systems, Best Practices, Cross-Platform
+Tags: Python, Pathlib, File Systems, Best Practice, Cross-Platform
 
 Description: Master Python's pathlib module for elegant file path handling. Learn to navigate directories, manipulate paths, and perform file operations with clean, cross-platform code.
 

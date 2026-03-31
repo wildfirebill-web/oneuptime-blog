@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Dockerfile, Best Practices, DevOps, Build Process
+Tags: Docker, Dockerfile, Best Practice, DevOps, Build Process
 
 Description: Understand the differences between COPY and ADD in Dockerfiles, when to use each instruction, and why COPY is preferred for most use cases while ADD serves specific purposes.
 

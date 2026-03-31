@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Windows, Kerberos, Active Directory, Authentication
+Tags: Ansible, Window, Kerberos, Active Directory, Authentication
 
 Description: Set up Kerberos authentication between Ansible and Windows hosts for secure, domain-integrated automation with Active Directory.
 

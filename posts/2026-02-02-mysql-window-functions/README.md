@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: MySQL, Window Functions, SQL, Analytics
+Tags: MySQL, Window Function, SQL, Analytics
 
 Description: Master MySQL ranking functions including ROW_NUMBER, RANK, DENSE_RANK, and NTILE with practical examples for leaderboards, pagination, top-N queries, and performance optimization.
 

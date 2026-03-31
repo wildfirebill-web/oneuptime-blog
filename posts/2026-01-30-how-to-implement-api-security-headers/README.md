@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Security, API, NodeJS, Python, DevOps, Best Practices
+Tags: Security, API, NodeJS, Python, DevOps, Best Practice
 
 Description: Learn how to implement essential API security headers to protect your backend services from common attacks, including CORS, rate limiting headers.
 

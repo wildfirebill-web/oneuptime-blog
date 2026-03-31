@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: AWS, Cost Management, FinOps, Governance, Best Practices
+Tags: AWS, Cost Management, FinOps, Governance, Best Practice
 
 Description: Learn how to implement cost governance on AWS with budgets, alerts, tagging enforcement, rightsizing recommendations, and automated cost optimization.
 

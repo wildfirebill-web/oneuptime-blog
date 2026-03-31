@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, BigQuery, Views, Authorized Views, Data Sharing, Security
+Tags: GCP, BigQuery, View, Authorized Views, Data Sharing, Security
 
 Description: Learn how to create BigQuery views and authorized views to securely share data across datasets and projects without exposing underlying tables directly.
 

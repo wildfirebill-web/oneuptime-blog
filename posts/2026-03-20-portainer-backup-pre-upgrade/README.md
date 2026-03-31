@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Backup, Upgrade, Safety, Best Practices
+Tags: Portainer, Docker, Backup, Upgrade, Safety, Best Practice
 
 Description: Create a safe backup of Portainer's database before performing major upgrades, configuration changes, or experiments to ensure a quick rollback path.
 

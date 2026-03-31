@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: CloudNativePG, Kubernetes, PostgreSQL, Users, Roles, Security, Database Management
+Tags: CloudNativePG, Kubernetes, PostgreSQL, Users, Role, Security, Database Management
 
 Description: A comprehensive guide to managing PostgreSQL users, roles, and databases with CloudNativePG, covering declarative user management, password rotation, RBAC integration, and security best practices.
 

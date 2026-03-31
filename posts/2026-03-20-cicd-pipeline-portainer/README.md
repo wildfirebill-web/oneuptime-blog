@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, CI/CD, DevOps, Jenkins, Gitea, Pipelines
+Tags: Portainer, Docker, CI/CD, DevOps, Jenkins, Gitea, Pipeline
 
 Description: Build a complete self-hosted CI/CD pipeline with Gitea, Jenkins, and Portainer webhooks for automated build, test, and deployment workflows.
 

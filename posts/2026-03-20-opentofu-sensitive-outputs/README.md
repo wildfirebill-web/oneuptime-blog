@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Sensitive Data, Security, Infrastructure as Code, IaC, Best Practices
+Tags: OpenTofu, Sensitive Data, Security, Infrastructure as Code, IaC, Best Practice
 
 Description: Learn how to handle sensitive values in OpenTofu outputs, state files, and logs using the sensitive attribute.
 

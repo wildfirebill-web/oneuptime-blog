@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Networking, Checksums, Packet Header, TCP/IP
+Tags: IPv4, Networking, Checksum, Packet Header, TCP/IP
 
 Description: Learn how the IPv4 header checksum is calculated, verified, and updated at each router hop, with step-by-step examples and Python implementation.
 

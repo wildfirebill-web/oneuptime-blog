@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Volume Management, Disk Resize, Kubernetes Storage, Partitions
+Tags: Talos Linux, Volume Management, Disk Resize, Kubernetes Storage, Partition
 
 Description: Learn how to resize volumes and partitions in Talos Linux, including expanding the EPHEMERAL partition, resizing persistent volumes, and handling disk growth scenarios.
 

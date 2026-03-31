@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Nginx, Configuration, Routing, Web Server, Best Practices
+Tags: Nginx, Configuration, Routing, Web Server, Best Practice
 
 Description: Learn how Nginx evaluates and prioritizes location blocks, including exact matches, prefix matches, and regular expressions, to correctly route requests in your configuration.
 

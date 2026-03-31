@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BullMQ, Node.js, Redis, PDF Generation, Puppeteer, PDFKit, Reports, Document Processing
+Tags: BullMQ, Node.js, Redis, PDF Generation, Puppeteer, PDFKit, Report, Document Processing
 
 Description: A comprehensive guide to building a PDF generation queue with BullMQ, including report generation, invoice creation, HTML to PDF conversion, and handling high-volume document processing.
 

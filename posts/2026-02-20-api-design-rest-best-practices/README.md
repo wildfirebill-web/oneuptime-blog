@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: REST API, API Design, Best Practices, HTTP, Backend
+Tags: REST API, API Design, Best Practice, HTTP, Backend
 
 Description: Essential REST API design best practices including resource naming, HTTP methods, error handling, versioning, and pagination.
 

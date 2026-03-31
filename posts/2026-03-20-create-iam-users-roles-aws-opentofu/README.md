@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, IAM, Users, Roles, Security
+Tags: OpenTofu, AWS, IAM, Users, Role, Security
 
 Description: Learn how to create AWS IAM users, groups, and roles with OpenTofu for managing human and machine identities with least-privilege permissions.
 

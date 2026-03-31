@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Indexes, Performance, Database, Query Optimization, Best Practices
+Tags: MongoDB, Indexes, Performance, Database, Query Optimization, Best Practice
 
 Description: Master MongoDB indexing strategies to dramatically improve query performance. Learn about index types, creation strategies, and optimization techniques with practical examples.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Tekton, CI/CD, Kubernetes, Pipelines, Infrastructure as Code, Cloud Native
+Tags: OpenTofu, Tekton, CI/CD, Kubernetes, Pipeline, Infrastructure as Code, Cloud Native
 
 Description: Learn how to deploy Tekton Pipelines on Kubernetes using OpenTofu to enable cloud-native CI/CD with reusable Tasks and Pipelines defined as Kubernetes resources.
 

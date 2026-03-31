@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Infrastructure as Code, Variables, DevOps, Best Practices
+Tags: Terraform, Infrastructure as Code, Variables, DevOps, Best Practice
 
 Description: A comprehensive guide to Terraform variables and outputs, covering input validation, type constraints, local values, sensitive data handling, and output patterns for module composition.
 

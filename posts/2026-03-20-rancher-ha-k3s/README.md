@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, HA, K3s, High Availability, Lightweight Kubernetes
+Tags: Rancher, has, K3s, High Availability, Lightweight Kubernetes
 
 Description: Deploy Rancher in a highly available configuration on K3s for resource-constrained environments, using embedded or external etcd for cluster state management.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, State Management, Microservices, Architecture, Best Practices
+Tags: OpenTofu, Terraform, State Management, Microservices, Architecture, Best Practice
 
 Description: Learn how to split OpenTofu state files by service or component to reduce plan time, limit blast radius, and enable parallel deployments across independent infrastructure components.
 

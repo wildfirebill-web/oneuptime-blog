@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPv4, Dual-Stack, Address Selection, Linux, Windows, Configuration
+Tags: IPv6, IPv4, Dual-Stack, Address Selection, Linux, Window, Configuration
 
 Description: Configure whether a dual-stack system prefers IPv6 or IPv4 for outgoing connections on Linux, Windows, and macOS, with per-application and per-interface controls.
 

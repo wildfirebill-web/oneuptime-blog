@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ext4, Quotas, Storage, Linux
+Tags: RHEL, Ext4, Quota, Storage, Linux
 
 Description: Learn how to configure and manage user and group disk quotas on ext4 file systems in RHEL to control storage consumption and prevent disk space abuse.
 

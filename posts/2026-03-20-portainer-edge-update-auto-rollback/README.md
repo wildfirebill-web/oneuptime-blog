@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Edge Agent, Updates, Rollback, Business Edition
+Tags: Portainer, Edge Agent, Update, Rollback, Business Edition
 
 Description: Use Portainer Business Edition's edge update schedules with automatic rollback to safely update edge agents across remote environments.
 

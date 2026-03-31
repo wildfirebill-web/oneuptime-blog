@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Headers, Checksums, Performance, Protocol Design
+Tags: IPv6, Headers, Checksum, Performance, Protocol Design
 
 Description: Understand the reasoning behind IPv6's decision to remove the header checksum present in IPv4, and how data integrity is maintained at other layers.
 

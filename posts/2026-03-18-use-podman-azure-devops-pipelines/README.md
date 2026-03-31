@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Azure DevOps, CI/CD, Pipelines
+Tags: Podman, Containers, DevOps, Azure DevOps, CI/CD, Pipeline
 
 Description: Learn how to integrate Podman into Azure DevOps Pipelines for building, testing, and deploying container images to Azure Container Registry.
 

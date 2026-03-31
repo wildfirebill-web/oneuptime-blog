@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Change Management, Dashboards, Observability, GitOps, Infrastructure as Code
+Tags: OpenTofu, Change Management, Dashboard, Observability, GitOps, Infrastructure as Code
 
 Description: Learn how to build a change management dashboard for OpenTofu that tracks infrastructure changes, approvals, and deployment history using Git and CI/CD data.
 

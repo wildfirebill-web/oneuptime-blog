@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Netsh, TCP/IP, Windows, Network Reset, Winsock
+Tags: Netsh, TCP/IP, Window, Network Reset, Winsock
 
 Description: Learn how to use netsh commands to fully reset the Windows TCP/IP stack and Winsock catalog, fixing corrupted network configurations that cause persistent connectivity failures.
 

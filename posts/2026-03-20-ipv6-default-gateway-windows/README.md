@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Default Gateway, Netsh, PowerShell
+Tags: IPv6, Window, Default Gateway, Netsh, PowerShell
 
 Description: Learn how to configure, verify, and troubleshoot the IPv6 default gateway on Windows using the GUI, netsh, and PowerShell.
 

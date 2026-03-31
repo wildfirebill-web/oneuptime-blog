@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, WSL2, Windows, Development
+Tags: Ubuntu, WSL2, Window, Development
 
 Description: Step-by-step guide to installing Ubuntu on WSL 2 in Windows 11 and configuring it for a productive development workflow.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Advisor, Recommendation Management, Cloud Governance, Azure Administration, Noise Reduction, Best Practices
+Tags: Azure Advisor, Recommendation Management, Cloud Governance, Azure Administration, Noise Reduction, Best Practice
 
 Description: Learn how to dismiss, postpone, and suppress Azure Advisor recommendations that are not applicable to your environment to reduce noise and focus on what matters.
 

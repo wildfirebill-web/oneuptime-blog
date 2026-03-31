@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Error Handling, Span, Best Practices
+Tags: OpenTelemetry, Error Handling, Span, Best Practice
 
 Description: Stop marking spans as errors for handled exceptions and learn when to use span status ERROR versus recording informational exceptions.
 

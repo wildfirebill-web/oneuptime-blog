@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Infrastructure as Code, Terraform, IaC, DevOps, Cloud Infrastructure, Best Practices, AWS
+Tags: Infrastructure as Code, Terraform, IaC, DevOps, Cloud Infrastructure, Best Practice, AWS
 
 Description: Learn essential Infrastructure as Code best practices including state management, modular design, testing, and security patterns for reliable infrastructure.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Roles, Reusability, Git
+Tags: Ansible, Role, Reusability, Git
 
 Description: Learn practical strategies for sharing Ansible roles across multiple projects using Git repos, Galaxy, and requirements files.
 

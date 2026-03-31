@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Windows, Troubleshooting, Debugging, Containers
+Tags: Rancher, Window, Troubleshooting, Debugging, Containers
 
 Description: Diagnose and resolve common Windows container issues in Rancher including image pull failures, container startup problems, networking issues, and storage failures.
 

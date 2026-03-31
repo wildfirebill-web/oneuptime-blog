@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RBAC, Permissions, Roles, Security
+Tags: Rancher, Kubernetes, RBAC, Permissions, Role, Security
 
 Description: Learn how to create custom roles in Rancher to define fine-grained access control tailored to your organization's needs.
 

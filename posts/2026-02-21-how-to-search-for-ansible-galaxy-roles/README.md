@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Ansible Galaxy, Roles, DevOps, Automation
+Tags: Ansible, Ansible Galaxy, Role, DevOps, Automation
 
 Description: Learn how to search for Ansible Galaxy roles using the CLI and web interface to find reusable automation content for your infrastructure.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Dashboards, PostgreSQL, MySQL, IPv4, Metrics, Monitoring, Visualization
+Tags: Grafana, Dashboard, PostgreSQL, MySQL, IPv4, Metrics, Monitoring, Visualization
 
 Description: Learn how to build Grafana dashboards to visualize database connection metrics by IPv4 client address using Prometheus data sources.
 
