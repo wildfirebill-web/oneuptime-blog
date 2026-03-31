@@ -10,7 +10,7 @@ Description: Learn how to simulate GROUPING SETS in MySQL using UNION ALL since 
 
 ## What Are GROUPING SETS?
 
-`GROUPING SETS` is a SQL extension that lets you define multiple independent grouping specifications in a single query. For example, you might want totals by `(region, year)`, by `region` alone, and by `year` alone - all in one result set. MySQL 8.0 does not support `GROUPING SETS` natively (unlike PostgreSQL or Oracle), but it can be simulated.
+`GROUPING SETS` is a SQL extension that lets you define multiple independent grouping specifications in a single query. For example, you might want totals by `(region, year)`, by `region` alone, and by `year` alone - all in one result set. MySQL 8.0.1+ supports `GROUPING SETS` natively. For MySQL versions older than 8.0.1, you can simulate it using `UNION ALL`.
 
 ## Simulating GROUPING SETS with UNION ALL
 

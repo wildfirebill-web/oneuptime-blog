@@ -85,7 +85,7 @@ const results = await db.collection("articles").aggregate([
 
 ## Hybrid Search: Combining Vector and Full-Text
 
-Atlas Search and Atlas Vector Search can be combined using `$unionWith` or the `$search` `knnBeta` operator to blend semantic and keyword relevance:
+Atlas Search and Atlas Vector Search can be combined using `$unionWith` to blend semantic and keyword relevance (the deprecated `knnBeta` operator has been replaced by the standalone `$vectorSearch` stage):
 
 ```javascript
 db.articles.aggregate([

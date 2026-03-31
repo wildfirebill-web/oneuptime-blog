@@ -8,6 +8,10 @@ Description: MongoDB Atlas Device Sync synchronizes data between Atlas and mobil
 
 ---
 
+## Deprecation Notice
+
+> **Warning:** MongoDB Atlas Device Sync is deprecated as of September 2025. Check the [Atlas Device Sync end-of-life notice](https://www.mongodb.com/community/forums/t/update-to-end-of-life-and-deprecation-notice/297168) for the latest timeline and migration guidance.
+
 ## Overview
 
 MongoDB Atlas Device Sync (formerly Realm Sync) is a data synchronization service that keeps data in sync between a MongoDB Atlas cluster and the Realm database running on mobile or edge devices. It enables offline-first application development: users can read and write data locally without an internet connection, and Device Sync automatically synchronizes changes with the backend when connectivity is restored, resolving conflicts along the way.

@@ -8,6 +8,10 @@ Description: Learn how to integrate the Realm Kotlin SDK with MongoDB Atlas to b
 
 ---
 
+## Deprecation Notice
+
+> **Warning:** MongoDB Atlas Device Sync and the Realm Kotlin SDK are deprecated as of September 2025. Check the [Atlas Device Sync end-of-life notice](https://www.mongodb.com/community/forums/t/update-to-end-of-life-and-deprecation-notice/297168) for the latest timeline and migration guidance.
+
 ## Overview
 
 The Realm Kotlin SDK provides a local-first embedded database for Android apps that syncs with MongoDB Atlas Device Sync. It supports offline reads and writes, with automatic conflict resolution when connectivity is restored.

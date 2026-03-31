@@ -38,11 +38,11 @@ Vector Sets are a new first-class Redis data type designed for storing and query
 Add vectors to a Vector Set:
 
 ```bash
-redis-cli VADD products:embeddings FP32 \
+redis-cli VADD products:embeddings VALUES 5 \
   0.1 0.2 0.3 0.4 0.5 \
   product:1001
 
-redis-cli VADD products:embeddings FP32 \
+redis-cli VADD products:embeddings VALUES 5 \
   0.15 0.25 0.35 0.45 0.55 \
   product:1002
 ```
@@ -50,7 +50,7 @@ redis-cli VADD products:embeddings FP32 \
 Find similar vectors:
 
 ```bash
-redis-cli VSIM products:embeddings FP32 \
+redis-cli VSIM products:embeddings VALUES 5 \
   0.12 0.22 0.32 0.42 0.52 \
   COUNT 5
 # 1) "product:1001"

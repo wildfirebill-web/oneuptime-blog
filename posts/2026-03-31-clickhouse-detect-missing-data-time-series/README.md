@@ -64,8 +64,8 @@ SELECT
     dateDiff('second', neighbor(event_time, -1), event_time) AS gap_seconds
 FROM events
 WHERE event_time >= now() - INTERVAL 1 HOUR
-ORDER BY event_time
-HAVING gap_seconds > 300;  -- gaps larger than 5 minutes
+HAVING gap_seconds > 300  -- gaps larger than 5 minutes
+ORDER BY event_time;
 ```
 
 ## Method 4 - Expected vs Actual by Source

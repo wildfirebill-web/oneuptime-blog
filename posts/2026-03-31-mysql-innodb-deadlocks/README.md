@@ -76,14 +76,16 @@ SELECT variable_name, variable_value
 FROM performance_schema.global_status
 WHERE variable_name = 'Innodb_deadlocks';
 
--- Lock waits in progress
+-- Lock waits in progress (MySQL 8.0+)
 SELECT r.trx_id waiting_trx,
        r.trx_query waiting_query,
        b.trx_id blocking_trx,
        b.trx_query blocking_query
-FROM information_schema.innodb_lock_waits w
-JOIN information_schema.innodb_trx r ON r.trx_id = w.requesting_trx_id
-JOIN information_schema.innodb_trx b ON b.trx_id = w.blocking_trx_id;
+FROM information_schema.innodb_trx r
+JOIN performance_schema.data_lock_waits dlw
+     ON r.trx_id = dlw.REQUESTING_ENGINE_TRANSACTION_ID
+JOIN information_schema.innodb_trx b
+     ON b.trx_id = dlw.BLOCKING_ENGINE_TRANSACTION_ID;
 ```
 
 ## Deadlock Prevention Strategies

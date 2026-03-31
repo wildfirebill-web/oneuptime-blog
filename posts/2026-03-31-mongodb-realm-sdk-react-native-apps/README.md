@@ -8,6 +8,10 @@ Description: Learn how to use the Realm JavaScript SDK with MongoDB Atlas Device
 
 ---
 
+## Deprecation Notice
+
+> **Warning:** The MongoDB Atlas Device SDK (Realm) for React Native is deprecated as of September 2025. MongoDB recommends evaluating alternative offline-first libraries. Existing applications will continue to work until the end-of-life date. Check the [MongoDB Atlas Device Sync deprecation notice](https://www.mongodb.com/community/forums/t/update-to-end-of-life-and-deprecation-notice/297168) for the latest timeline.
+
 ## Overview
 
 The Realm JavaScript SDK integrates with React Native to provide an embedded local database backed by MongoDB Atlas. Your app reads and writes data locally at all times, and the SDK syncs changes to Atlas when the device is online.

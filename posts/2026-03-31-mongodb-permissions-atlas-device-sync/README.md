@@ -8,6 +8,10 @@ Description: Learn how to define roles and rules for Atlas Device Sync to contro
 
 ---
 
+## Deprecation Notice
+
+> **Warning:** MongoDB Atlas Device Sync is deprecated as of September 2025. Check the [Atlas Device Sync end-of-life notice](https://www.mongodb.com/community/forums/t/update-to-end-of-life-and-deprecation-notice/297168) for the latest timeline and migration guidance.
+
 ## Overview
 
 Atlas Device Sync enforces data access using server-side permissions defined in Atlas App Services. These permissions determine which documents a user can sync to their device and whether they can insert, update, or delete records.

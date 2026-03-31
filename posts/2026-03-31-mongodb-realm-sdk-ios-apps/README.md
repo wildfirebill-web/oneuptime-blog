@@ -8,6 +8,10 @@ Description: Learn how to integrate the Realm Swift SDK with MongoDB Atlas to bu
 
 ---
 
+## Deprecation Notice
+
+> **Warning:** MongoDB Atlas Device Sync and the Realm Swift SDK are deprecated as of September 2025. Check the [Atlas Device Sync end-of-life notice](https://www.mongodb.com/community/forums/t/update-to-end-of-life-and-deprecation-notice/297168) for the latest timeline and migration guidance.
+
 ## Overview
 
 The Realm Swift SDK provides a local-first database for iOS apps with built-in sync to MongoDB Atlas. It lets you read and write data locally even when offline, then automatically syncs changes when connectivity is restored.

@@ -221,7 +221,7 @@ Enable HTTPS in `config.xml`:
         <privateKeyFile>/etc/clickhouse-server/server.key</privateKeyFile>
         <verificationMode>none</verificationMode>
     </server>
-</https_port>
+</openSSL>
 ```
 
 ```bash

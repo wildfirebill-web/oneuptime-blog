@@ -48,7 +48,7 @@ Sample output:
 ]
 ```
 
-Alice and Bob share rank 2; the next rank is 4 (skips 3).
+Bob and Carol share rank 2; the next rank is 4 (skips 3).
 
 ## Using $denseRank for Consecutive Ranking
 

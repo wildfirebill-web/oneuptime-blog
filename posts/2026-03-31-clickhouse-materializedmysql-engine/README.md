@@ -110,7 +110,7 @@ CREATE DATABASE mysql_replica
 ENGINE = MaterializedMySQL('host:3306', 'db', 'user', 'pass')
 SETTINGS
     max_flush_data_time = 1000,
-    enables_query_when_mysql_lost = 1;
+    allows_query_when_mysql_lost = 1;
 ```
 
 ## Summary

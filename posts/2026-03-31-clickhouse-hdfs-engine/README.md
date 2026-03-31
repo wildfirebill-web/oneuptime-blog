@@ -16,11 +16,11 @@ ClickHouse must be able to reach the HDFS NameNode. Configure the HDFS connectio
 
 ```xml
 <!-- /etc/clickhouse-server/config.d/hdfs.xml -->
-<yandex>
+<clickhouse>
   <hdfs>
     <libhdfs3_conf>/etc/hadoop/conf/hdfs-site.xml</libhdfs3_conf>
   </hdfs>
-</yandex>
+</clickhouse>
 ```
 
 ## Creating an HDFS Table

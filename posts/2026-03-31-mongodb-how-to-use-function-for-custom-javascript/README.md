@@ -8,6 +8,10 @@ Description: Learn how to use $function in MongoDB aggregation to execute custom
 
 ---
 
+## Deprecation Notice
+
+> **Warning:** Starting in MongoDB 8.0, `$function` (along with `$accumulator` and `$where`) is deprecated. Prefer native aggregation operators. `$function` continues to work in MongoDB 8.0 but may be removed in a future release.
+
 ## Overview
 
 The `$function` operator (introduced in MongoDB 4.4) allows you to define and execute custom JavaScript functions within aggregation pipeline expressions. Unlike `$accumulator` which is used in `$group` stages for accumulation across documents, `$function` is used in expression contexts like `$project`, `$addFields`, and `$match` to compute values on a per-document basis.
