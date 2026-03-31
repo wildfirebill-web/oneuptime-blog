@@ -1,4 +1,4 @@
-# How to Fix "mds is laggy" in CephFS
+# How to Fix 'mds is laggy' in CephFS
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

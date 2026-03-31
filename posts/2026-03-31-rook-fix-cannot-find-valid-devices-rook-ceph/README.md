@@ -1,10 +1,10 @@
-# How to Fix "cannot find valid devices" in Rook-Ceph
+# How to Fix 'cannot find valid devices' in Rook-Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Troubleshooting, OSD, Device Discovery
 
-Description: Learn how to fix the "cannot find valid devices" error in Rook-Ceph by checking device discovery configuration, device filters, udev rules, and node disk availability.
+Description: Learn how to fix the 'cannot find valid devices' error in Rook-Ceph by checking device discovery configuration, device filters, udev rules, and node disk availability.
 
 ---
 

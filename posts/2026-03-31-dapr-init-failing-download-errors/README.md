@@ -1,10 +1,10 @@
-# How to Fix "dapr init" Failing with Download Errors
+# How to Fix 'dapr init' Failing with Download Errors
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Installation, Troubleshooting, Docker, CLI
 
-Description: Learn how to diagnose and fix "dapr init" command failures caused by download errors, network issues, and proxy settings.
+Description: Learn how to diagnose and fix 'dapr init' command failures caused by download errors, network issues, and proxy settings.
 
 ---
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Secret Store, Security, Access Control, Kubernetes
 
-Description: Resolve Dapr secret store "access denied" errors by fixing RBAC policies, secret store scoping, and access control list configuration.
+Description: Resolve Dapr secret store 'access denied' errors by fixing RBAC policies, secret store scoping, and access control list configuration.
 
 ---
 

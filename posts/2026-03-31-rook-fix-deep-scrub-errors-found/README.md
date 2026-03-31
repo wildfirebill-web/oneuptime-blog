@@ -1,4 +1,4 @@
-# How to Fix "deep-scrub errors found" in Ceph
+# How to Fix 'deep-scrub errors found' in Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

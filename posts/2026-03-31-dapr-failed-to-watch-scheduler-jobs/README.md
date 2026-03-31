@@ -1,10 +1,10 @@
-# How to Fix "Failed to Watch Scheduler Jobs" Error in Dapr
+# How to Fix 'Failed to Watch Scheduler Jobs' Error in Dapr
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Scheduler, Job, Troubleshooting, Kubernetes
 
-Description: Resolve the "Failed to Watch Scheduler Jobs" error in Dapr by fixing scheduler service connectivity, RBAC permissions, and version compatibility issues.
+Description: Resolve the 'Failed to Watch Scheduler Jobs' error in Dapr by fixing scheduler service connectivity, RBAC permissions, and version compatibility issues.
 
 ---
 

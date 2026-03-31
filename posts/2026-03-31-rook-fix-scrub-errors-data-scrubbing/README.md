@@ -1,4 +1,4 @@
-# How to Fix "scrub errors" Detected During Data Scrubbing
+# How to Fix 'scrub errors' Detected During Data Scrubbing
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

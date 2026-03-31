@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Networking, Service Invocation, Troubleshooting, DNS
 
-Description: Diagnose and fix Dapr "host address unreachable" errors when services cannot discover or connect to each other through the Dapr sidecar.
+Description: Diagnose and fix Dapr 'host address unreachable' errors when services cannot discover or connect to each other through the Dapr sidecar.
 
 ---
 

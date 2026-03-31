@@ -1,4 +1,4 @@
-# How to Fix "pgs degraded" After OSD Failure in Ceph
+# How to Fix 'pgs degraded' After OSD Failure in Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

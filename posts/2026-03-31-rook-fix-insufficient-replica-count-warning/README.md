@@ -1,4 +1,4 @@
-# How to Fix "insufficient replica count" Warning in Ceph
+# How to Fix 'insufficient replica count' Warning in Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

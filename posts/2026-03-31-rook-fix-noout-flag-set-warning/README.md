@@ -1,10 +1,10 @@
-# How to Fix "noout flag is set" Warning in Ceph
+# How to Fix 'noout flag is set' Warning in Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Troubleshooting, noout, Flag, OSD, Maintenance
 
-Description: Understand and clear the Ceph "noout flag is set" warning after maintenance operations to restore automatic OSD recovery behavior.
+Description: Understand and clear the Ceph 'noout flag is set' warning after maintenance operations to restore automatic OSD recovery behavior.
 
 ---
 

@@ -1,10 +1,10 @@
-# How to Fix "no osds" Error When Deploying Rook-Ceph
+# How to Fix 'no osds' Error When Deploying Rook-Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Troubleshooting, OSD, Deployment, Error
 
-Description: Diagnose and fix the "no osds" error when deploying Rook-Ceph by checking disk requirements, operator logs, and cluster configuration.
+Description: Diagnose and fix the 'no osds' error when deploying Rook-Ceph by checking disk requirements, operator logs, and cluster configuration.
 
 ---
 

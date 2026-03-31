@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Configuration, API, Troubleshooting, gRPC
 
-Description: Fix the Dapr GetConfiguration "Unimplemented" error by configuring a proper configuration store component and using the correct API version.
+Description: Fix the Dapr GetConfiguration 'Unimplemented' error by configuring a proper configuration store component and using the correct API version.
 
 ---
 
