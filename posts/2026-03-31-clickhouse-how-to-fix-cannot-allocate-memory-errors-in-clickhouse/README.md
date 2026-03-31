@@ -1,10 +1,10 @@
-# How to Fix "Cannot allocate memory" Errors in ClickHouse
+# How to Fix 'Cannot allocate memory' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Memory, Troubleshooting, Out of Memory, Configuration
 
-Description: Fix ClickHouse "Cannot allocate memory" errors by diagnosing memory limits, identifying heavy queries, and tuning memory settings to match your workload.
+Description: Fix ClickHouse 'Cannot allocate memory' errors by diagnosing memory limits, identifying heavy queries, and tuning memory settings to match your workload.
 
 ---
 

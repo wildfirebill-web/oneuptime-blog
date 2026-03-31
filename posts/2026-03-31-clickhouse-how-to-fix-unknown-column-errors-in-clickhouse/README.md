@@ -1,10 +1,10 @@
-# How to Fix "Unknown column" Errors in ClickHouse
+# How to Fix 'Unknown column' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Schema, SQL Errors, Troubleshooting, DDL
 
-Description: Fix ClickHouse "Unknown column" errors caused by typos, schema mismatches, missing aliases, and column visibility in subqueries.
+Description: Fix ClickHouse 'Unknown column' errors caused by typos, schema mismatches, missing aliases, and column visibility in subqueries.
 
 ---
 

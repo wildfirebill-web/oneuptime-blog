@@ -1,10 +1,10 @@
-# How to Fix "osd full" and Cannot Write Data in Ceph
+# How to Fix 'osd full' and Cannot Write Data in Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Troubleshooting, OSD, Capacity
 
-Description: Resolve the "osd full" error in Ceph that blocks all writes by identifying full OSDs, expanding capacity, or freeing space in pools.
+Description: Resolve the 'osd full' error in Ceph that blocks all writes by identifying full OSDs, expanding capacity, or freeing space in pools.
 
 ---
 

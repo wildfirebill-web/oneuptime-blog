@@ -1,4 +1,4 @@
-# How to Fix "Type mismatch" Errors in ClickHouse
+# How to Fix 'Type mismatch' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

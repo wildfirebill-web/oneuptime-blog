@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Configuration, max_connections, Performance Tuning
 
-Description: Learn how to configure MySQL's max_connections setting, calculate an appropriate value, and monitor connection usage to avoid "Too many connections" errors.
+Description: Learn how to configure MySQL's max_connections setting, calculate an appropriate value, and monitor connection usage to avoid 'Too many connections' errors.
 
 ---
 

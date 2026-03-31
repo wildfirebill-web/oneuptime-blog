@@ -1,10 +1,10 @@
-# How to Fix "cannot find valid devices" in Rook-Ceph
+# How to Fix 'cannot find valid devices' in Rook-Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, OSD, Troubleshooting, Kubernetes
 
-Description: Resolve the "cannot find valid devices" error in Rook-Ceph by checking disk conditions, wiping existing signatures, and correcting storage spec configuration.
+Description: Resolve the 'cannot find valid devices' error in Rook-Ceph by checking disk conditions, wiping existing signatures, and correcting storage spec configuration.
 
 ---
 

@@ -1,10 +1,10 @@
-# How to Fix "Cannot parse datetime" in ClickHouse
+# How to Fix 'Cannot parse datetime' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Clickhouse, Datetime, Data Types, Troubleshooting
 
-Description: Fix "Cannot parse datetime" errors in ClickHouse by understanding supported formats, timezone handling, and the right parsing functions.
+Description: Fix 'Cannot parse datetime' errors in ClickHouse by understanding supported formats, timezone handling, and the right parsing functions.
 
 ---
 

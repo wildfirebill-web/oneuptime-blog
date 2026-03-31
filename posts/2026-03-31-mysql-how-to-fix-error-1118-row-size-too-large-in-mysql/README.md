@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Error Handling, Troubleshooting, InnoDB
 
-Description: Learn how to diagnose and fix MySQL ERROR 1118 "Row size too large" by adjusting row format, moving large columns, and optimizing table structure.
+Description: Learn how to diagnose and fix MySQL ERROR 1118 'Row size too large' by adjusting row format, moving large columns, and optimizing table structure.
 
 ---
 

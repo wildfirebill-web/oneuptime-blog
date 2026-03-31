@@ -1,4 +1,4 @@
-# How to Fix "mon is not in quorum" in Ceph
+# How to Fix 'mon is not in quorum' in Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

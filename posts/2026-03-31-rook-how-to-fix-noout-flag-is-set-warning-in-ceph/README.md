@@ -1,10 +1,10 @@
-# How to Fix "noout flag is set" Warning in Ceph
+# How to Fix 'noout flag is set' Warning in Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage, Troubleshooting, OSD
 
-Description: Learn how to diagnose and resolve the "noout flag is set" warning in Ceph that prevents OSDs from being marked out during failures.
+Description: Learn how to diagnose and resolve the 'noout flag is set' warning in Ceph that prevents OSDs from being marked out during failures.
 
 ---
 

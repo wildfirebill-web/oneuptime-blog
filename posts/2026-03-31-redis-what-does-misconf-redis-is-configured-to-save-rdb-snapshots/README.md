@@ -1,4 +1,4 @@
-# What Does "MISCONF Redis is configured to save RDB snapshots" Mean
+# What Does 'MISCONF Redis is configured to save RDB snapshots' Mean
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

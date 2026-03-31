@@ -1,10 +1,10 @@
-# What Does "OOM command not allowed" Mean in Redis
+# What Does 'OOM command not allowed' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Error, OOM, Memory, maxmemory, Troubleshooting
 
-Description: Understand why Redis returns "OOM command not allowed when used memory is greater than maxmemory" and how to fix it with proper memory policies and configuration.
+Description: Understand why Redis returns 'OOM command not allowed when used memory is greater than maxmemory' and how to fix it with proper memory policies and configuration.
 
 ---
 

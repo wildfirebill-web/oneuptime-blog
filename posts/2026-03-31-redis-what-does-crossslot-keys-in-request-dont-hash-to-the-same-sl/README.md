@@ -1,4 +1,4 @@
-# What Does "CROSSSLOT Keys in request don't hash to the same slot" Mean
+# What Does 'CROSSSLOT Keys in request don't hash to the same slot' Mean
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

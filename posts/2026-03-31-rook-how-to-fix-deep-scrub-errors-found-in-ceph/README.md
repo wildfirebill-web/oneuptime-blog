@@ -1,10 +1,10 @@
-# How to Fix "deep-scrub errors found" in Ceph
+# How to Fix 'deep-scrub errors found' in Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rook, Ceph, Kubernetes, Storage, Troubleshooting, Data Integrity
 
-Description: Learn how to diagnose and fix "deep-scrub errors found" in Ceph, including identifying corrupt objects and recovering data integrity.
+Description: Learn how to diagnose and fix 'deep-scrub errors found' in Ceph, including identifying corrupt objects and recovering data integrity.
 
 ---
 

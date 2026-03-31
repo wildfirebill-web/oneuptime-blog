@@ -1,10 +1,10 @@
-# How to Fix "Part is broken" Errors in ClickHouse
+# How to Fix 'Part is broken' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Data Corruption, Storage, Troubleshooting, Recovery
 
-Description: Recover from ClickHouse "Part is broken" errors by identifying corrupt data parts, detaching them, and restoring from replicas or backups.
+Description: Recover from ClickHouse 'Part is broken' errors by identifying corrupt data parts, detaching them, and restoring from replicas or backups.
 
 ---
 

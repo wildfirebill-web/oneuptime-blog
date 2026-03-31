@@ -1,10 +1,10 @@
-# How to Fix "dapr init" Failing with Download Errors
+# How to Fix 'dapr init' Failing with Download Errors
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Dapr, Troubleshooting, Installation, Docker, Networking
 
-Description: Learn how to diagnose and fix common download errors when running "dapr init" in self-hosted or Kubernetes mode.
+Description: Learn how to diagnose and fix common download errors when running 'dapr init' in self-hosted or Kubernetes mode.
 
 ---
 

@@ -1,4 +1,4 @@
-# How to Fix "slow requests are blocked" in Ceph
+# How to Fix 'slow requests are blocked' in Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

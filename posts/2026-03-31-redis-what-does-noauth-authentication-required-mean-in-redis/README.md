@@ -1,4 +1,4 @@
-# What Does "NOAUTH Authentication required" Mean in Redis
+# What Does 'NOAUTH Authentication required' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

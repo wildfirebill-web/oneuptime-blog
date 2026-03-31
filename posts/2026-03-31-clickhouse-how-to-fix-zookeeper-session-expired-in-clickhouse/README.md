@@ -1,10 +1,10 @@
-# How to Fix "ZooKeeper session expired" in ClickHouse
+# How to Fix 'ZooKeeper session expired' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, ZooKeeper, Replication, Troubleshooting, Distributed Systems
 
-Description: Resolve ClickHouse "ZooKeeper session expired" errors by tuning session timeouts, fixing network issues, and considering migration to ClickHouse Keeper.
+Description: Resolve ClickHouse 'ZooKeeper session expired' errors by tuning session timeouts, fixing network issues, and considering migration to ClickHouse Keeper.
 
 ---
 

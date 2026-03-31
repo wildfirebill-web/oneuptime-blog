@@ -1,10 +1,10 @@
-# How to Fix "Cannot insert NULL into non-nullable column" in ClickHouse
+# How to Fix 'Cannot insert NULL into non-nullable column' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, NULL, Schema, Troubleshooting, Data Quality
 
-Description: Fix ClickHouse "Cannot insert NULL into non-nullable column" errors by handling NULL values at the application layer or adjusting column definitions.
+Description: Fix ClickHouse 'Cannot insert NULL into non-nullable column' errors by handling NULL values at the application layer or adjusting column definitions.
 
 ---
 

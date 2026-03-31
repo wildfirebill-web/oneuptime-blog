@@ -1,4 +1,4 @@
-# What Does "MOVED" Redirection Mean in Redis Cluster
+# What Does 'MOVED' Redirection Mean in Redis Cluster
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

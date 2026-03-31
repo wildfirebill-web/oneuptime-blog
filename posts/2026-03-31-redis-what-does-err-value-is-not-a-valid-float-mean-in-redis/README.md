@@ -1,10 +1,10 @@
-# What Does "ERR value is not a valid float" Mean in Redis
+# What Does 'ERR value is not a valid float' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Error, Float, INCRBYFLOAT, ZADD, Data Validation, Troubleshooting
 
-Description: Learn why Redis returns "ERR value is not a valid float" on commands like INCRBYFLOAT and ZADD, and how to validate and convert float values before sending them to Redis.
+Description: Learn why Redis returns 'ERR value is not a valid float' on commands like INCRBYFLOAT and ZADD, and how to validate and convert float values before sending them to Redis.
 
 ---
 

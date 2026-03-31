@@ -1,4 +1,4 @@
-# What Does "CLUSTERDOWN The cluster is down" Mean in Redis
+# What Does 'CLUSTERDOWN The cluster is down' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

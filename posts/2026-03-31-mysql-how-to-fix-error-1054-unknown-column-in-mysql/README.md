@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Error Handling, Troubleshooting, SQL Errors
 
-Description: Learn how to diagnose and fix MySQL ERROR 1054 "Unknown column" caused by typos, missing aliases, scope issues, and schema mismatches.
+Description: Learn how to diagnose and fix MySQL ERROR 1054 'Unknown column' caused by typos, missing aliases, scope issues, and schema mismatches.
 
 ---
 

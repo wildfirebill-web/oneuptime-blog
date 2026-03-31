@@ -1,10 +1,10 @@
-# How to Fix "Authentication failed" in ClickHouse
+# How to Fix 'Authentication failed' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Authentication, Security, Troubleshooting, Access Control
 
-Description: Resolve ClickHouse "Authentication failed" errors by checking user credentials, access control configuration, and allowed host settings.
+Description: Resolve ClickHouse 'Authentication failed' errors by checking user credentials, access control configuration, and allowed host settings.
 
 ---
 

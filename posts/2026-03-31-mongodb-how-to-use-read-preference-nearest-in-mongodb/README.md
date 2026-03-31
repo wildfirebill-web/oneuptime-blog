@@ -1,4 +1,4 @@
-# How to Use Read Preference "nearest" in MongoDB
+# How to Use Read Preference 'nearest' in MongoDB
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

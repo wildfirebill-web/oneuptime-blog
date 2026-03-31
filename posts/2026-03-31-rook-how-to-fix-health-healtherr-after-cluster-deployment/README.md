@@ -1,4 +1,4 @@
-# How to Fix "health HEALTH_ERR" After Cluster Deployment
+# How to Fix 'health HEALTH_ERR' After Cluster Deployment
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

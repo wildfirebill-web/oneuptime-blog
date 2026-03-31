@@ -1,4 +1,4 @@
-# What Does "EXECABORT Transaction discarded because of previous errors" Mean
+# What Does 'EXECABORT Transaction discarded because of previous errors' Mean
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -1,10 +1,10 @@
-# How to Fix "Sorting memory limit exceeded" in ClickHouse
+# How to Fix 'Sorting memory limit exceeded' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Sorting, Memory, Query Optimization, Troubleshooting
 
-Description: Fix ClickHouse "Sorting memory limit exceeded" errors by enabling external sort, reducing sort key cardinality, and rewriting ORDER BY queries.
+Description: Fix ClickHouse 'Sorting memory limit exceeded' errors by enabling external sort, reducing sort key cardinality, and rewriting ORDER BY queries.
 
 ---
 

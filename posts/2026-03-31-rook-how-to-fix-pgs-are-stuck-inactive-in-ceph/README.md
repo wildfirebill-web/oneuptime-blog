@@ -1,4 +1,4 @@
-# How to Fix "pgs are stuck inactive" in Ceph
+# How to Fix 'pgs are stuck inactive' in Ceph
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

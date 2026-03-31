@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Error, Sorting, Memory, Index, Aggregation
 
-Description: Fix the "sort exceeded memory limit" error in MongoDB by adding sort-supporting indexes, using allowDiskUse, or restructuring your aggregation pipeline.
+Description: Fix the 'sort exceeded memory limit' error in MongoDB by adding sort-supporting indexes, using allowDiskUse, or restructuring your aggregation pipeline.
 
 ---
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Troubleshooting, Networking, Connection, DevOps
 
-Description: Diagnose and fix Redis "Connection refused" errors by checking if Redis is running, bind address, firewall rules, and client configuration.
+Description: Diagnose and fix Redis 'Connection refused' errors by checking if Redis is running, bind address, firewall rules, and client configuration.
 
 ---
 

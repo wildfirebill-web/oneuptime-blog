@@ -1,10 +1,10 @@
-# What Does "ERR max number of clients reached" Mean in Redis
+# What Does 'ERR max number of clients reached' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Error, Max Clients, Connection Limit, Troubleshooting
 
-Description: Learn why Redis returns "ERR max number of clients reached", how to diagnose connection exhaustion, and how to fix it with proper connection pooling and configuration.
+Description: Learn why Redis returns 'ERR max number of clients reached', how to diagnose connection exhaustion, and how to fix it with proper connection pooling and configuration.
 
 ---
 

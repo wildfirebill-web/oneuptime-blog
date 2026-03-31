@@ -1,10 +1,10 @@
-# How to Fix "Maximum distributed connections reached" in ClickHouse
+# How to Fix 'Maximum distributed connections reached' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, Distributed, Connection Pool, Troubleshooting, Performance
 
-Description: Resolve ClickHouse "Maximum distributed connections reached" errors by tuning connection pool limits and reducing concurrent distributed query load.
+Description: Resolve ClickHouse 'Maximum distributed connections reached' errors by tuning connection pool limits and reducing concurrent distributed query load.
 
 ---
 

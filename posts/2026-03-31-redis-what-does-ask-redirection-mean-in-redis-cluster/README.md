@@ -1,4 +1,4 @@
-# What Does "ASK" Redirection Mean in Redis Cluster
+# What Does 'ASK' Redirection Mean in Redis Cluster
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

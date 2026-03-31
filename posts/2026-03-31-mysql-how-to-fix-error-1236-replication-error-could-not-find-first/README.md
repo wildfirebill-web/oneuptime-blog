@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Replication, Error Handling, Troubleshooting
 
-Description: Learn how to diagnose and fix MySQL ERROR 1236 "Could not find first log file named in binary log index" in replication setups.
+Description: Learn how to diagnose and fix MySQL ERROR 1236 'Could not find first log file named in binary log index' in replication setups.
 
 ---
 

@@ -1,4 +1,4 @@
-# What Does "WRONGTYPE Operation" Mean in Redis
+# What Does 'WRONGTYPE Operation' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

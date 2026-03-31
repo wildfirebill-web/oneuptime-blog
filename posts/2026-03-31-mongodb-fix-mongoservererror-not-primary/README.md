@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MongoDB, Replica Set, Error, Troubleshooting, High Availability
 
-Description: Understand why MongoDB throws a "not primary" error and learn how to fix it by correcting write routing, connection strings, and replica set configuration.
+Description: Understand why MongoDB throws a 'not primary' error and learn how to fix it by correcting write routing, connection strings, and replica set configuration.
 
 ---
 

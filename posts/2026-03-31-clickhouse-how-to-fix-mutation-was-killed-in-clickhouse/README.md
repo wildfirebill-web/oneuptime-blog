@@ -1,4 +1,4 @@
-# How to Fix "Mutation was killed" in ClickHouse
+# How to Fix 'Mutation was killed' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

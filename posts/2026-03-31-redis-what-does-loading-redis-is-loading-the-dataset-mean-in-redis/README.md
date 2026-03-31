@@ -1,4 +1,4 @@
-# What Does "LOADING Redis is loading the dataset" Mean in Redis
+# What Does 'LOADING Redis is loading the dataset' Mean in Redis
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

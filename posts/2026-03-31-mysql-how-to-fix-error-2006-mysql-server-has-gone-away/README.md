@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, Error Handling, Troubleshooting, Connection Issues
 
-Description: Learn how to diagnose and fix MySQL ERROR 2006 "MySQL server has gone away" caused by timeouts, packet size limits, and connection drops.
+Description: Learn how to diagnose and fix MySQL ERROR 2006 'MySQL server has gone away' caused by timeouts, packet size limits, and connection drops.
 
 ---
 

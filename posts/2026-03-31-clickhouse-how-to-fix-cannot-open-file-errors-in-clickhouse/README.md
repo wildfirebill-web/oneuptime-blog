@@ -1,10 +1,10 @@
-# How to Fix "Cannot open file" Errors in ClickHouse
+# How to Fix 'Cannot open file' Errors in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ClickHouse, File System, Storage, Troubleshooting, Operations
 
-Description: Diagnose and fix ClickHouse "Cannot open file" errors caused by permission issues, missing data files, and filesystem problems.
+Description: Diagnose and fix ClickHouse 'Cannot open file' errors caused by permission issues, missing data files, and filesystem problems.
 
 ---
 

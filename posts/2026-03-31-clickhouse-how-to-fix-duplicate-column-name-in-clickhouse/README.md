@@ -1,10 +1,10 @@
-# How to Fix "Duplicate column name" in ClickHouse
+# How to Fix 'Duplicate column name' in ClickHouse
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Clickhouse, Sql, Schema, Troubleshooting
 
-Description: Fix "Duplicate column name" errors in ClickHouse by aliasing columns, rewriting SELECT statements, and understanding how joins produce duplicates.
+Description: Fix 'Duplicate column name' errors in ClickHouse by aliasing columns, rewriting SELECT statements, and understanding how joins produce duplicates.
 
 ---
 

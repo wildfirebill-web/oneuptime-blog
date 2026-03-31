@@ -1,4 +1,4 @@
-# How to Fix "clock skew detected" in Ceph Monitors
+# How to Fix 'clock skew detected' in Ceph Monitors
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -1,4 +1,4 @@
-# What Does "READONLY You can't write against a read only replica" Mean
+# What Does 'READONLY You can't write against a read only replica' Mean
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

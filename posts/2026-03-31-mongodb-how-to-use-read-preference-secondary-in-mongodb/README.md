@@ -1,4 +1,4 @@
-# How to Use Read Preference "secondary" in MongoDB
+# How to Use Read Preference 'secondary' in MongoDB
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

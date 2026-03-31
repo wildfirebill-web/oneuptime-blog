@@ -1,4 +1,4 @@
-# How to Fix "rgw failed to start" in Ceph RGW
+# How to Fix 'rgw failed to start' in Ceph RGW
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
