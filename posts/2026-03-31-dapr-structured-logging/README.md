@@ -112,6 +112,20 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
+## Defining a Consistent Log Schema
+
+Define a shared log schema across all your services to make cross-service queries predictable:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `time` | string | ISO 8601 timestamp |
+| `level` | string | debug, info, warn, error |
+| `service` | string | Service name matching Dapr app ID |
+| `trace_id` | string | W3C trace ID from traceparent |
+| `msg` | string | Human-readable message |
+
+Add service-specific fields as needed (e.g., `order_id`, `user_id`).
+
 ## Querying Structured Logs
 
 With structured logs in Elasticsearch:
@@ -133,6 +147,12 @@ In Grafana Loki:
 
 ```
 {app="order-service"} | json | level="error" | order_id="12345"
+```
+
+In Datadog:
+
+```
+service:order-service @level:error @order_id:12345
 ```
 
 ## Summary
