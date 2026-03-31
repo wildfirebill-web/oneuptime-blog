@@ -14,7 +14,7 @@ The Dapr Configuration API lets applications read and subscribe to dynamic confi
 
 ## Base URL
 
-```
+```yaml
 http://localhost:{daprPort}/v1.0/configuration/{configStoreName}
 ```
 

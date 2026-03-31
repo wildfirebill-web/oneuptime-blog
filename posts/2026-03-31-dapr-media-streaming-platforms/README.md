@@ -12,7 +12,7 @@ Media streaming platforms handle content at massive scale: video ingestion, mult
 
 ## Media Platform Architecture with Dapr
 
-```
+```text
 Content Upload -> Ingestion Service (Dapr) -> Transcoding Workflow (Dapr)
                                            -> CDN Purge Service (Dapr)
                                            -> Catalog Service (Dapr)

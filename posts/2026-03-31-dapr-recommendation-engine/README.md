@@ -14,7 +14,7 @@ A recommendation engine tracks user behavior, builds interest profiles, and serv
 
 ## Recommendation System Components
 
-```
+```text
 Event Collector --> Pub/Sub --> User Profile Actor --> Recommendation Service
                                       |
                                  ML Model Service (via Dapr service invocation)

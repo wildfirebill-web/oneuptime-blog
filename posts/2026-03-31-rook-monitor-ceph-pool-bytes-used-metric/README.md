@@ -22,7 +22,7 @@ ceph_pool_bytes_used
 
 Sample output:
 
-```
+```text
 ceph_pool_bytes_used{name="replicapool",pool_id="1"} 5.36e+10
 ceph_pool_bytes_used{name="device_health_metrics",pool_id="2"} 2048
 ceph_pool_bytes_used{name=".rgw.root",pool_id="3"} 4096

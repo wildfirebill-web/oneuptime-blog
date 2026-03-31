@@ -26,13 +26,13 @@ Subscribe at: https://lists.ceph.io/postorius/lists/
 
 The subject line matters. Be specific:
 
-```
+```yaml
 Subject: [ceph-users] RGW returning 503 under load after upgrading to Reef 18.2.2
 ```
 
 Your message body should follow this structure:
 
-```
+```yaml
 Hi,
 
 I'm seeing [specific issue] after [what changed].

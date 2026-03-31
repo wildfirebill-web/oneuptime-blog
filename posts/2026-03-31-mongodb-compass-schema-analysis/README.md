@@ -47,7 +47,7 @@ For string fields, Compass shows a bar chart of the most common values and how o
 
 Example: an `orderStatus` field might show:
 
-```
+```text
 "pending"    ████████████████████  45%
 "completed"  ████████████          30%
 "cancelled"  ████████              20%

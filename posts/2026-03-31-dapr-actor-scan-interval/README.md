@@ -14,7 +14,7 @@ The actor scan interval determines how often Dapr scans the list of active actor
 
 These two settings work together:
 
-```
+```yaml
 actorIdleTimeout:  "1h"    <- How long before an actor is eligible for deactivation
 actorScanInterval: "30s"   <- How often Dapr checks for eligible actors
 ```
@@ -53,13 +53,13 @@ A general rule: set scan interval to roughly 5-10% of the idle timeout for timel
 
 A very short scan interval (e.g., 1 second) with many active actors creates CPU overhead:
 
-```
+```text
 10,000 active actors * scan every 1s = 10,000 checks/second
 ```
 
 A balanced scan interval (30s to 5m) for typical workloads:
 
-```
+```text
 10,000 active actors * scan every 30s = ~333 checks/second
 ```
 

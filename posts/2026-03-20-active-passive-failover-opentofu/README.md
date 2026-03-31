@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: High Availability, Active-Passive, Failover, OpenTofu, Route53, Health Checks
+Tags: High Availability, Active-Passive, Failover, OpenTofu, Route53, Health Check
 
 Description: Learn how to configure active-passive failover using OpenTofu with Route53 failover routing, health checks, and standby infrastructure that activates automatically when primary fails.
 

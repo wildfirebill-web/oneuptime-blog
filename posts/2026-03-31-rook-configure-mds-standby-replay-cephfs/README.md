@@ -59,7 +59,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 You should see output similar to:
 
-```
+```yaml
 MDS version: myfs:1
 active:   myfs.a(mds.0)  up:active{0=myfs.a=up:active}
 standby-replay: myfs.b(mds.1)  up:standby-replay{0=myfs.b=up:standby-replay}

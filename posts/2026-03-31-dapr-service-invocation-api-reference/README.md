@@ -14,7 +14,7 @@ The Dapr Service Invocation API enables direct service-to-service calls through 
 
 ## Base URL
 
-```
+```yaml
 http://localhost:{daprPort}/v1.0/invoke/{appId}/method/{methodName}
 ```
 

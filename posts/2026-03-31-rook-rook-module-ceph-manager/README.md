@@ -35,7 +35,7 @@ ceph orch status
 
 Expected output:
 
-```
+```yaml
 Backend: rook
 Available: Yes
 ```
@@ -58,7 +58,7 @@ With the Rook module active, standard orchestrator commands show Kubernetes-mana
 ceph orch ps
 ```
 
-```
+```text
 NAME        HOST    STATUS   REFRESHED
 osd.0       node-1  running  30s ago
 osd.1       node-2  running  30s ago

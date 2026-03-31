@@ -16,7 +16,7 @@ Recurring jobs run on a defined schedule - either a cron expression for calendar
 
 Dapr Jobs uses standard 5-field cron syntax:
 
-```
+```text
 Minute  Hour  DayOfMonth  Month  DayOfWeek
   0      9        *          *      MON-FRI
 ```

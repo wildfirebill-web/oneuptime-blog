@@ -24,7 +24,7 @@ graph TD
 
 Returns a value in the range `[0, 1]`. The first row always gets 0. The formula is:
 
-```
+```text
 PERCENT_RANK = (rank - 1) / (N - 1)
 ```
 
@@ -34,7 +34,7 @@ where `rank` is the row's RANK() value and `N` is the number of rows in the part
 
 Returns the cumulative distribution: the fraction of rows with a value less than or equal to the current row's value. The formula is:
 
-```
+```text
 CUME_DIST = (number of rows with value <= current row value) / N
 ```
 

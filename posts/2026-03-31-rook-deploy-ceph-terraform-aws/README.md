@@ -12,7 +12,7 @@ Deploying Rook-Ceph on AWS with Terraform gives you reproducible, version-contro
 
 ## Project Structure
 
-```
+```text
 ceph-aws/
   main.tf
   variables.tf

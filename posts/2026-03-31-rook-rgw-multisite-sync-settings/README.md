@@ -12,7 +12,7 @@ Ceph RGW multisite allows you to replicate object data across multiple zones in 
 
 ## Multisite Hierarchy
 
-```
+```text
 Realm
   Zone Group (zonegroup)
     Zone

@@ -14,7 +14,7 @@ The Dapr Secrets API provides a uniform interface for retrieving secrets from an
 
 ## Base URL
 
-```
+```yaml
 http://localhost:{daprPort}/v1.0/secrets/{secretStoreName}/{secretName}
 ```
 

@@ -14,7 +14,7 @@ Open Policy Agent (OPA) is a general-purpose policy engine that can enforce fine
 
 ## Architecture
 
-```
+```text
 Client --> RGW (auth check) --> OPA (policy evaluation) --> Allow/Deny
 ```
 

@@ -14,7 +14,7 @@ MongoDB Change Stream resume tokens are backed by the oplog. If a consumer falls
 
 The oplog is a capped collection stored in the `local` database on every replica set member. Its window (in hours) is determined by the rate of writes and the configured maximum oplog size.
 
-```
+```text
 Oplog window (hours) = Oplog max size (GB) / Write rate (GB/hour)
 ```
 

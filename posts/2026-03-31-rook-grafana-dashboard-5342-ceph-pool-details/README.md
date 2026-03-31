@@ -61,7 +61,7 @@ This creates a dropdown listing all Ceph pools. You can switch between pools usi
 
 ## Key Panels in Dashboard 5342
 
-```
+```text
 Row 1: Pool Name | Pool ID | PG Count | Object Count | Used Bytes
 Row 2: Pool Utilization % | Available Space
 Row 3: Client IOPS (Read/Write) | Client Throughput (Read/Write)

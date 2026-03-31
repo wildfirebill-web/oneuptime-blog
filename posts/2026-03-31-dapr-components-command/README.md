@@ -20,7 +20,7 @@ dapr components
 
 Sample output:
 
-```
+```text
   NAME        TYPE              VERSION  SCOPES  CREATED
   statestore  state.redis       v1               2026-03-31 10:00:00
   pubsub      pubsub.redis      v1               2026-03-31 10:00:00
@@ -41,7 +41,7 @@ dapr components -k
 
 Sample output:
 
-```
+```text
   NAMESPACE  NAME        TYPE              VERSION  SCOPES  CREATED
   default    statestore  state.redis       v1               2026-03-31
   default    pubsub      pubsub.rabbitmq   v1       api-svc 2026-03-31

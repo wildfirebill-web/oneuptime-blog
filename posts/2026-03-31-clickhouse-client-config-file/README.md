@@ -18,7 +18,7 @@ This guide covers the config file locations, structure, available options, and h
 
 `clickhouse-client` reads configuration from the following locations, in order (later files override earlier ones):
 
-```
+```text
 /etc/clickhouse-client/config.xml       # system-wide
 ~/.config/clickhouse-client/config.xml  # per-user (preferred)
 ./config.xml                            # current directory
@@ -129,7 +129,7 @@ You can embed per-query settings in the config to apply them to all sessions:
 
 Keep separate configs for development, staging, and production:
 
-```
+```text
 ~/.clickhouse/
     dev.xml
     staging.xml

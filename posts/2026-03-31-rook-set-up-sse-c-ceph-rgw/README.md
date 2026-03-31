@@ -57,7 +57,7 @@ aws s3 cp s3://mybucket/myfile.txt myfile-decrypted.txt \
 
 If you provide the wrong key:
 
-```
+```text
 An error occurred (AccessDenied): The provided key does not match the key used to encrypt the object.
 ```
 

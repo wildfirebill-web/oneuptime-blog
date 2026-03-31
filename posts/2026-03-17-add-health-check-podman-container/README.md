@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Checks, Monitoring
+Tags: Podman, Containers, DevOps, Health Check, Monitoring
 
 Description: Learn how to add health checks to Podman containers to monitor application availability and automatically detect failures.
 

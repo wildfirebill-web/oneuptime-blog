@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, Health Checks, IPv4, Cluster, Monitoring, Resilience
+Tags: Envoy, Health Check, IPv4, Cluster, Monitoring, Resilience
 
 Description: Configure Envoy active health checks for IPv4 cluster endpoints using HTTP, TCP, and gRPC protocols to proactively identify and remove unhealthy backends.
 

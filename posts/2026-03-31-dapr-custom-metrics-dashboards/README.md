@@ -24,7 +24,7 @@ Structure your dashboard in rows by concern: overview, service health, component
 
 Use stat panels for at-a-glance health:
 
-```
+```text
 # Total request rate across all services
 sum(rate(dapr_http_server_request_count[5m]))
 
@@ -47,7 +47,7 @@ sum(dapr_actor_active_actors)
 
 Create a table panel showing all services with color-coded health:
 
-```
+```text
 # Color: green = low error rate, red = high error rate
 sum by (app_id) (rate(dapr_http_server_request_count{status_code!~"2.."}[5m]))
 / sum by (app_id) (rate(dapr_http_server_request_count[5m]))
@@ -59,7 +59,7 @@ Set thresholds: 0=green, 0.01=yellow, 0.05=red.
 
 Show a heatmap of request latency across all services:
 
-```
+```text
 # Heatmap data source query
 sum by (le) (
   rate(dapr_http_server_latency_ms_bucket{app_id=~"$app_id"}[5m])
@@ -72,7 +72,7 @@ Use visualization type "Heatmap" with Y-axis showing latency buckets.
 
 State store and pub/sub error rates in a single table:
 
-```
+```text
 # State store errors
 sum by (component) (
   rate(dapr_component_state_get_failed_total[5m])

@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Example:
 
-```
+```text
 HEALTH_ERR 1 full osd(s); 1 nearfull osd(s)
 osd.2 is full at 96%
 ```

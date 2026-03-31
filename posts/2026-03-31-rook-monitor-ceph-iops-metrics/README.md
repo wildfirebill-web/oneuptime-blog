@@ -77,7 +77,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- bash -c "
 
 The pool stats output shows current IOPS per pool:
 
-```
+```text
 pool rbd id 1
   client io 2456 op/s rd, 890 op/s wr
 ```

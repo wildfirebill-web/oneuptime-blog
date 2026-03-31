@@ -14,7 +14,7 @@ This guide walks through building a small but realistic microservices system in 
 
 ## System Architecture
 
-```
+```text
 Client --> [API Gateway :8080] --> (Dapr) --> [Order Service :8081]
                                       |
                                   pub/sub

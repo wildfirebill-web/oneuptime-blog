@@ -128,7 +128,7 @@ ceph osd tree
 
 Expected output:
 
-```
+```yaml
 cluster:
   id: ...
   health: HEALTH_OK

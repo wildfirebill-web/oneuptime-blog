@@ -14,7 +14,7 @@ As your project grows, you may accumulate dozens of Dapr component files. Withou
 
 ## Recommended Directory Structure
 
-```
+```text
 infra/
   dapr/
     base/
@@ -113,7 +113,7 @@ Consistent naming reduces confusion:
 
 An alternative to env-based structure is grouping by Dapr building block:
 
-```
+```text
 dapr/
   state/
   pubsub/

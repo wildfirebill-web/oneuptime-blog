@@ -117,7 +117,7 @@ With this approach, set `samplingRate: "1"` in Dapr and let the collector make s
 
 At 1000 requests/second with 5 services and a 10-span average:
 
-```
+```text
 Requests/sec: 1000
 Sampling rate: 0.1 (10%)
 Sampled traces/sec: 100
@@ -163,7 +163,7 @@ service:
 
 Then query:
 
-```
+```text
 otelcol_processor_tail_sampling_count_traces_sampled
 otelcol_processor_tail_sampling_count_traces_not_sampled
 ```

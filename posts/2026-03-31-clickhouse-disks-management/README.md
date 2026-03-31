@@ -34,7 +34,7 @@ clickhouse-disks list-disks \
     --config-file /etc/clickhouse-server/config.xml
 ```
 
-```
+```text
 default
 s3_cold
 s3_cache
@@ -136,7 +136,7 @@ clickhouse-disks \
 
 Inside the shell:
 
-```
+```text
 > ls /
 > cd store/abc/def/events/
 > ls

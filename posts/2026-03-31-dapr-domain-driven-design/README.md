@@ -14,7 +14,7 @@ Domain-Driven Design emphasizes bounded contexts, aggregates, and domain events 
 
 ## Bounded Context Mapping
 
-```
+```text
 OrderContext (order-service)
   - Order Aggregate
   - Dapr State Store: order state

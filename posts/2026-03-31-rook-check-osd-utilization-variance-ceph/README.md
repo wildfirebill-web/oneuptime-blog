@@ -33,7 +33,7 @@ The `VAR` column is the most important. A value of `1.0` means the OSD matches t
 
 The last line of `ceph osd df` shows the total and average:
 
-```
+```text
 TOTAL  100 TiB  73 TiB  27 TiB  27.00  MIN/MAX VAR: 0.78/1.32
 ```
 

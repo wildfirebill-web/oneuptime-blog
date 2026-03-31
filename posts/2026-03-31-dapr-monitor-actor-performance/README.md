@@ -31,7 +31,7 @@ curl http://localhost:9090/metrics | grep dapr_actor
 
 ### Active Actor Count
 
-```
+```text
 dapr_actor_active_actors{app_id="counter-service",actor_type="Counter",namespace="default"}
 ```
 
@@ -39,7 +39,7 @@ High counts indicate actors are not being deactivated. Check your idle timeout c
 
 ### Method Invocation Latency
 
-```
+```text
 dapr_actor_method_duration_bucket{app_id="counter-service",actor_type="Counter",method="Increment"}
 ```
 
@@ -47,7 +47,7 @@ Use this histogram to identify slow actor methods.
 
 ### Activation and Deactivation Rate
 
-```
+```text
 dapr_actor_activations_total{actor_type="Counter"}
 dapr_actor_deactivations_total{actor_type="Counter"}
 ```

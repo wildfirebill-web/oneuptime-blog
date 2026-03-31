@@ -16,13 +16,13 @@ Dapr actors use turn-based concurrency - only one method executes at a time per 
 
 **Scenario 1: Circular call chain**
 
-```
+```text
 Actor A (turn locked) -> calls -> Actor B (waiting for turn) -> calls back -> Actor A (locked)
 ```
 
 **Scenario 2: Self-invocation without reentrancy**
 
-```
+```text
 Actor A method1 -> calls Actor A method2 (same actor, different method - blocked)
 ```
 

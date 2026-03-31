@@ -24,7 +24,7 @@ dapr workflow run \
 
 The command returns the workflow instance ID:
 
-```
+```text
 Successfully started workflow. Instance ID: abc12345-1234-1234-1234-abc123456789
 ```
 
@@ -39,7 +39,7 @@ dapr workflow get \
 
 Sample output:
 
-```
+```json
 {
   "instanceID": "abc12345-1234-1234-1234-abc123456789",
   "workflowName": "OrderFulfillmentWorkflow",

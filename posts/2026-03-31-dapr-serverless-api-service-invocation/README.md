@@ -14,7 +14,7 @@ Dapr's service invocation building block provides service discovery, load balanc
 
 ## Architecture
 
-```
+```text
 Client -> API Gateway -> Dapr Sidecar
                               |
                     Service Discovery (Kubernetes DNS)

@@ -55,7 +55,7 @@ kubectl -n kube-system get configmap coredns -o yaml
 
 A typical Corefile:
 
-```
+```text
 .:53 {
     errors
     health
@@ -103,7 +103,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Expected output:
 
-```
+```text
 nameserver 10.96.0.10
 search rook-ceph.svc.cluster.local svc.cluster.local cluster.local
 options ndots:5

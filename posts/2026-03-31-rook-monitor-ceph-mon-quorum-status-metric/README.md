@@ -22,7 +22,7 @@ ceph_mon_quorum_status
 
 Example output:
 
-```
+```text
 ceph_mon_quorum_status{ceph_daemon="mon.a"} 1
 ceph_mon_quorum_status{ceph_daemon="mon.b"} 1
 ceph_mon_quorum_status{ceph_daemon="mon.c"} 0

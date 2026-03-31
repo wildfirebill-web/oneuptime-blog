@@ -60,7 +60,7 @@ ceph orch upgrade status
 
 Sample output:
 
-```
+```yaml
 target_image: quay.io/ceph/ceph:v18.2.0
 upgrading: true
 progress: 8/24 daemons upgraded

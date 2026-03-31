@@ -16,7 +16,7 @@ The Dapr Bot (`@dapr-bot`) is a GitHub automation tool that manages the Dapr pro
 
 Dapr Bot responds to slash commands posted as comments on issues and PRs:
 
-```
+```text
 /ok-to-test       - Approve a PR for CI testing (requires maintainer)
 /assign           - Assign the issue or PR to yourself
 /assign @username - Assign to a specific contributor
@@ -109,7 +109,7 @@ jobs:
 
 The Dapr project uses labels to track PR status:
 
-```
+```text
 needs-review     - Awaiting reviewer
 lgtm             - Looks Good To Me (one approval)
 approved         - Maintainer approved

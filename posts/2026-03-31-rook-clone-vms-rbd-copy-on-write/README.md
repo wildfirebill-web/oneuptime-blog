@@ -123,7 +123,7 @@ rbd du vms/webapp-vm-01
 
 Example output after one hour of use:
 
-```
+```text
 NAME                  PROVISIONED  USED
 ubuntu-22.04-golden   30 GiB       8 GiB
 webapp-vm-01          30 GiB       512 MiB

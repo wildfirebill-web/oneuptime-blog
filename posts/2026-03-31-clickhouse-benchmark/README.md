@@ -74,7 +74,7 @@ clickhouse-benchmark \
 
 ## Sample Output
 
-```
+```yaml
 Loaded 3 queries.
 
 Queries executed: 200.

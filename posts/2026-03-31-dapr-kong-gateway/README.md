@@ -19,7 +19,7 @@ In this setup:
 - Kong routes requests to Dapr-enabled services via the Dapr sidecar HTTP port (3500)
 - Dapr handles service invocation, state, and pub/sub internally
 
-```
+```text
 Client --> Kong Gateway --> Dapr Sidecar (:3500) --> App (:8080)
 ```
 

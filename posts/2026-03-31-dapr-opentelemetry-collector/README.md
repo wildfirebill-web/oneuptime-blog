@@ -14,7 +14,7 @@ The OpenTelemetry Collector is a vendor-neutral agent that receives, processes, 
 
 ## Architecture
 
-```
+```json
 [Dapr Sidecar] --> [OTel Collector] --> [Jaeger]
                                     --> [Zipkin]
                                     --> [Datadog]

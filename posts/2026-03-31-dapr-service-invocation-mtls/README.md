@@ -42,7 +42,7 @@ dapr mtls -k
 
 Expected output:
 
-```
+```text
 Mutual TLS is enabled in your Kubernetes cluster
 ```
 

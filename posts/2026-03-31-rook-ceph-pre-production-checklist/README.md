@@ -12,7 +12,7 @@ A pre-production checklist ensures nothing critical is overlooked before a Ceph 
 
 ## Hardware and OS
 
-```
+```json
 [ ] Minimum 3 MON nodes on separate physical hosts
 [ ] Minimum 3 OSD nodes with dedicated OSD disks (no OS co-location)
 [ ] NTP synchronized across all nodes (max 1 second skew)
@@ -30,7 +30,7 @@ timedatectl show | grep "NTPSynchronized"
 
 ## Network
 
-```
+```json
 [ ] Dedicated cluster network separate from public network
 [ ] Network bandwidth: at least 10 Gbps for production
 [ ] MTU set consistently (9000 for jumbo frames if applicable)
@@ -47,7 +47,7 @@ ping -c 1000 -i 0.01 osd-host-2 | tail -2
 
 ## CRUSH Map
 
-```
+```json
 [ ] Failure domain set to "host" (minimum) or "rack"
 [ ] At least 3 failure domains for replica-3 pools
 [ ] OSD weights reflect actual disk capacity
@@ -61,7 +61,7 @@ ceph osd crush rule dump
 
 ## Pool Configuration
 
-```
+```json
 [ ] Default pools removed or renamed if not needed
 [ ] Replication size = 3 for all production pools
 [ ] min_size = 2 to prevent writes with only 1 replica
@@ -76,7 +76,7 @@ ceph osd pool get rbd all
 
 ## Security
 
-```
+```json
 [ ] CephX authentication enabled
 [ ] Client keyrings scoped to minimum required capabilities
 [ ] Dashboard password changed from default
@@ -85,7 +85,7 @@ ceph osd pool get rbd all
 
 ## Monitoring and Alerting
 
-```
+```json
 [ ] Prometheus metrics endpoint enabled and scraped
 [ ] Grafana dashboards deployed and showing data
 [ ] Alert rules configured for HEALTH_ERR, OSD down, near-full
@@ -94,7 +94,7 @@ ceph osd pool get rbd all
 
 ## Backup and Recovery
 
-```
+```json
 [ ] MON keyring backed up to secure offline location
 [ ] CRUSH map exported and stored in version control
 [ ] Pool configuration documented
@@ -110,7 +110,7 @@ crushtool -d crushmap.bin -o crushmap.txt
 
 ## Final Sign-Off
 
-```
+```json
 [ ] ceph health: HEALTH_OK
 [ ] All PGs: active+clean
 [ ] Baseline performance recorded

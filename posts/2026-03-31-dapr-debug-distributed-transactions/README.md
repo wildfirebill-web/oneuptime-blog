@@ -110,7 +110,7 @@ The trace shows:
 
 A slow downstream service causes timeouts to propagate:
 
-```
+```text
 order-service (5100ms) [TIMEOUT]
   inventory-service (200ms) [OK]
   payment-service (5000ms) [TIMEOUT]
@@ -121,7 +121,7 @@ Fix: Add circuit breakers and reduce timeouts at the Dapr level.
 
 ### Partial Failures
 
-```
+```text
 order-service [ERROR]
   inventory-service [OK] - reserved
   payment-service [ERROR] - charged (but response lost!)

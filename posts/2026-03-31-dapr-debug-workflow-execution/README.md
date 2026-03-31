@@ -53,7 +53,7 @@ kubectl logs order-service-pod -c daprd | grep -i "activity\|workflow" | tail -5
 
 Failed activity log:
 
-```
+```text
 level=error msg="activity task failed" app_id=order-service workflowID=wf-instance-123 taskName=ProcessPayment err="payment gateway timeout"
 ```
 

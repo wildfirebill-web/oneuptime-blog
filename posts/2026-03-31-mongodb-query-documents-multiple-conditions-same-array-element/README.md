@@ -1,4 +1,4 @@
-# How to Query Documents with Multiple Conditions on the Same Array Element in MongoDB
+# How to Query Documents with Multiple Conditions on the Same Array Element in
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -124,7 +124,7 @@ spec:
 
 ## Decision Framework
 
-```
+```text
 Is this for development or CI testing?
   YES -> Use local storage
 
@@ -165,7 +165,7 @@ Application code calls the same component name (`my-crypto`) in all environments
 
 ## Security Hardening Checklist
 
-```
+```text
 - [ ] Production uses HSM-backed provider (Azure Key Vault Premium)
 - [ ] Keys are rotated at least annually
 - [ ] Key access is restricted to the application's identity only

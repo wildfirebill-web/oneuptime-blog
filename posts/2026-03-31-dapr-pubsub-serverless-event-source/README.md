@@ -14,7 +14,7 @@ Dapr pub/sub provides a broker-agnostic messaging layer. When combined with Kube
 
 ## Architecture Overview
 
-```
+```text
 Event Producer -> Pub/Sub Broker (Kafka/RabbitMQ/SNS)
                        |
               Dapr Pub/Sub Component

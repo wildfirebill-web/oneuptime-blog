@@ -14,7 +14,7 @@ A notification system needs to react to business events and dispatch messages ac
 
 ## Architecture
 
-```
+```text
 Order Service      --> publishes to "order-events" topic
 Payment Service    --> publishes to "payment-events" topic
 Notification Service --> subscribes to both, routes to channels

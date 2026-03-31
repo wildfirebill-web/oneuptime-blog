@@ -20,7 +20,7 @@ dapr status -k
 
 Output:
 
-```
+```text
 NAME                   NAMESPACE    HEALTHY  STATUS   VERSION  AGE
 dapr-operator          dapr-system  True     Running  1.13.0   14d
 dapr-sentry            dapr-system  True     Running  1.13.0   14d

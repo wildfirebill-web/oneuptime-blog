@@ -12,7 +12,7 @@ Retrieving a single secret is the most common Dapr secrets operation. This guide
 
 ## HTTP API Format
 
-```
+```text
 GET http://localhost:{daprPort}/v1.0/secrets/{storeName}/{secretName}
 ```
 

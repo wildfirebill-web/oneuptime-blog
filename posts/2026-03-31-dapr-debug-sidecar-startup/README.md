@@ -81,7 +81,7 @@ Common crash causes:
 
 **App port not listening:**
 
-```
+```text
 level=fatal msg="app health checks are failing" app_id=order-service
 ```
 
@@ -93,7 +93,7 @@ kubectl logs order-service-7b4c8d9f6-xk2pq -c order-service -n default
 
 **Placement service unreachable (Actors only):**
 
-```
+```text
 level=error msg="error connecting to placement service" err="context deadline exceeded"
 ```
 

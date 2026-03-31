@@ -22,7 +22,7 @@ A Dapr-aware IDP:
 
 ## IDP Architecture for Dapr
 
-```
+```text
 Developer (UI/API)
      |
 Internal Developer Platform (Port / Cortex / custom)

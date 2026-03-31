@@ -12,7 +12,7 @@ Batch data processing jobs - loading files, transforming records, and writing to
 
 ## Batch Processing Workflow Design
 
-```
+```text
 StartWorkflow -> FetchBatch -> ValidateRecords -> TransformData -> WriteResults -> NotifyComplete
                                     |
                                     V

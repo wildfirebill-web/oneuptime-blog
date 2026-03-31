@@ -68,7 +68,7 @@ curl -s http://localhost:3500/v1.0/metadata | jq '.registeredComponents[].name'
 
 Expected output:
 
-```
+```text
 "statestore"
 "pubsub"
 "vault"

@@ -96,7 +96,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Document your escalation chain clearly:
 
-```
+```text
 L1 On-call engineer
   |-> 15 min no resolution -> L2 Senior Storage Engineer
       |-> 30 min no resolution -> L3 Management + Vendor Support
@@ -108,7 +108,7 @@ Include contact details and on-call rotation links in the runbook document.
 
 After every P1 or P2 incident, complete a post-incident review:
 
-```
+```yaml
 Incident ID: INC-001
 Date: 2026-03-31
 Duration: 45 minutes

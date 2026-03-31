@@ -127,7 +127,7 @@ ENGINE = DeltaLake('/var/lib/clickhouse/user_files/orders/');
 DESCRIBE TABLE delta_orders;
 ```
 
-```
+```text
 Column          Type       Comment
 order_id        Int64
 customer_id     Int64

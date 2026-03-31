@@ -75,7 +75,7 @@ In the oVirt Administration Portal:
 1. Go to Storage -> Domains -> New Domain
 2. Set:
 
-```
+```yaml
 Name: ceph-storage
 Data Center: Default
 Domain Function: Data
@@ -84,7 +84,7 @@ Storage Type: ISCSI (for block) or choose RBD if your version supports it
 
 For Ceph-native RBD integration via oVirt 4.4+:
 
-```
+```yaml
 Storage Type: Ceph RBD
 Monitor Address: mon-a.ceph.svc:6789
 Pool: ovirt
@@ -96,7 +96,7 @@ Password: YOUR_KEY
 
 In oVirt UI, select a VM and choose "Move" to migrate its disk to the Ceph storage domain:
 
-```
+```text
 Storage Domain: ceph-storage
 Disk Format: RAW (recommended for Ceph)
 ```

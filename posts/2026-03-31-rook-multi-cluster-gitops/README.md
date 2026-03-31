@@ -18,7 +18,7 @@ Managing Rook-Ceph across multiple clusters requires a hub-and-spoke model:
 
 ## Repository Structure
 
-```
+```text
 rook-multi-cluster/
   base/
     crds.yaml

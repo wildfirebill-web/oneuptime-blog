@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Auto-Update, sdnotify, Health Checks
+Tags: Podman, Containers, DevOps, Auto-Update, sdnotify, Health Check
 
 Description: Learn how to use sd_notify with Podman auto-update to provide reliable health verification during image updates.
 

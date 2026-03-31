@@ -18,7 +18,7 @@ SET allow_experimental_variant_type = 1;
 
 Without it, creating a `Variant` column raises:
 
-```
+```yaml
 Code: 451. DB::Exception: Variant type is not allowed.
 Set allow_experimental_variant_type = 1 to use it.
 ```

@@ -21,7 +21,7 @@ Terraform is the industry standard for infrastructure-as-code. By using Terrafor
 
 ## Terraform Project Structure
 
-```
+```text
 dapr-terraform/
   main.tf
   variables.tf

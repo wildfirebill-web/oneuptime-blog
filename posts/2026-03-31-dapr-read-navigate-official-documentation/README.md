@@ -26,7 +26,7 @@ Each Dapr building block (service invocation, pub/sub, state management, etc.) h
 
 For example, to find pub/sub subscription configuration:
 
-```
+```text
 Developing applications
   > Message broker
     > How-to: Publish a message
@@ -40,7 +40,7 @@ The API reference section documents every HTTP and gRPC endpoint. When you need 
 
 Example endpoint lookup - to find state store API endpoints:
 
-```
+```text
 Reference
   > Dapr API
     > State management

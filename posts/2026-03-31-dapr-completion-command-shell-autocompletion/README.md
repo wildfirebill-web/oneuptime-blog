@@ -86,7 +86,7 @@ dapr completion powershell >> $PROFILE
 
 After installation, type `dapr ` and press Tab:
 
-```
+```text
 dapr <TAB>
 annotate    build-info  completion  components  configurations
 dashboard   help        init        invoke      list
@@ -97,7 +97,7 @@ workflow
 
 Type `dapr run --` and press Tab to see flag completions:
 
-```
+```text
 --app-id             --app-port           --app-protocol
 --dapr-http-port     --dapr-grpc-port     --enable-api-logging
 --log-level          --resources-path

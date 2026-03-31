@@ -16,7 +16,7 @@ When a method is called on an actor, Dapr's placement service routes the call to
 
 ## Common Error Messages
 
-```
+```text
 error invoking actor: actor not found
 failed to activate actor: error loading state for actor 'MyActor||actor-1'
 actor host failed to register with placement: connection refused
@@ -47,7 +47,7 @@ kubectl logs <pod-name> -c daprd | grep -i "actor\|placement"
 
 You should see:
 
-```
+```text
 INFO  actor host registered with placement service. actorTypes: [MyActor]
 ```
 

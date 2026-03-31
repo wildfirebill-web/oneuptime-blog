@@ -14,7 +14,7 @@ The `$bitsAllSet` operator matches documents where all the bit positions specifi
 
 A bitmask represents a combination of boolean flags packed into a single integer. Each bit position corresponds to one flag:
 
-```
+```yaml
 Bit position:  7  6  5  4  3  2  1  0
 Permission:    -  -  -  -  D  W  R  E
 Value:         0  0  0  0  1  1  0  1  = 13

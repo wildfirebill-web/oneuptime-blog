@@ -14,7 +14,7 @@ Operations runbooks give on-call engineers a structured path through common Dapr
 
 Each Dapr runbook should follow this structure:
 
-```
+```text
 ## Alert: <Alert Name>
 **Severity**: Critical / Warning
 **Team**: Platform Engineering

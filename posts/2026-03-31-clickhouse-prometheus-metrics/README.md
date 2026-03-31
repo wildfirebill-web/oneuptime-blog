@@ -54,7 +54,7 @@ curl http://localhost:9363/metrics | head -40
 
 Expected output:
 
-```
+```text
 # HELP ClickHouseMetrics_Query Number of executing queries
 # TYPE ClickHouseMetrics_Query gauge
 ClickHouseMetrics_Query 3

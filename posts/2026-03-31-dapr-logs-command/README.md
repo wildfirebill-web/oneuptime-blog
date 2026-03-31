@@ -22,7 +22,7 @@ dapr logs --app-id order-service --kubernetes
 
 Sample output:
 
-```
+```text
 time="2026-03-31T10:00:01Z" level=info msg="starting Dapr Runtime -- version 1.13.0"
 time="2026-03-31T10:00:01Z" level=info msg="log level set to: info"
 time="2026-03-31T10:00:02Z" level=info msg="app max concurrency set to unlimited"
@@ -80,7 +80,7 @@ dapr logs --app-id order-service \
 
 When a component fails to load, the sidecar logs show the error clearly:
 
-```
+```text
 level=error msg="error loading component. name: statestore, type: state.redis"
 level=error msg="dial tcp: connection refused"
 ```

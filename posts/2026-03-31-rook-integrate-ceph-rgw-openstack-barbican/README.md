@@ -14,7 +14,7 @@ OpenStack Barbican is a key management service that securely stores encryption k
 
 ## Architecture
 
-```
+```text
 Client --> RGW (SSE request) --> Barbican (key retrieval) --> Object encrypted in RADOS
 ```
 

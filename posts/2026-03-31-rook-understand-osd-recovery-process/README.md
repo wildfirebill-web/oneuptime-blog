@@ -33,7 +33,7 @@ ceph -s
 
 Example output during recovery:
 
-```
+```yaml
 health: HEALTH_WARN
         Degraded data: 23/150 objects degraded (15.333%)
         recovery: 12345 kB/s, 4 keys/s, 1 objects/s

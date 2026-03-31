@@ -63,7 +63,7 @@ spec:
 
 The output binding API:
 
-```
+```text
 POST http://localhost:3500/v1.0/bindings/{binding-name}
 ```
 

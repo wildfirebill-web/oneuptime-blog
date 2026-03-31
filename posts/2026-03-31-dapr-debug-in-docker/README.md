@@ -60,7 +60,7 @@ services:
 
 Debug logs show every request and response between the app and sidecar:
 
-```
+```text
 time="2026-03-31T10:00:00Z" level=debug msg="invoke request" app_id=order-service method=orders
 time="2026-03-31T10:00:00Z" level=debug msg="invoke response" status=200 latency=12ms
 ```

@@ -14,7 +14,7 @@ Ceph RGW (RADOS Gateway) provides S3-compatible object storage on top of Ceph's 
 
 ## Object Storage Workload Characteristics
 
-```
+```text
 Typical object workloads:
 - Large objects: 1MB to 1TB (backups, media, ML datasets)
 - Small objects: 1KB to 1MB (logs, metadata, configs)
@@ -26,7 +26,7 @@ Typical object workloads:
 
 Erasure coding is strongly recommended for object storage:
 
-```
+```yaml
 EC 4+2: 1.5x raw overhead, tolerates 2 OSD failures
 EC 6+3: 1.5x raw overhead, tolerates 3 OSD failures (more nodes)
 EC 8+4: 1.5x raw overhead, tolerates 4 OSD failures (large clusters)
@@ -38,7 +38,7 @@ With 20TB drives: 938TB / 20TB = 47 drives -> 50 drives (6 nodes, 9 drives each)
 
 ## Node and Drive Selection
 
-```
+```text
 For object storage (capacity-optimized):
   Drives: 16TB-20TB SATA HDD (slow is fine)
   Per-node: 8-24 drives

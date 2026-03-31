@@ -12,7 +12,7 @@ Description: Design a video processing pipeline with Dapr for upload, transcodin
 
 Video processing is a classic example of a long-running, resource-intensive pipeline where each stage can scale independently. With Dapr, the pipeline stages communicate via pub/sub, enabling parallel processing (multiple resolutions simultaneously) and resilient retry behavior.
 
-```
+```text
 Upload Service --> [video-uploaded]
     |
     +--> Transcoding Service (360p, 720p, 1080p) [parallel]

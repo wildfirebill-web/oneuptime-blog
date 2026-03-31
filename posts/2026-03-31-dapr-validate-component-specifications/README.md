@@ -74,7 +74,7 @@ spec:
 
 Running `kubectl apply --dry-run=server` on this file produces:
 
-```
+```text
 Error from server: error validating data: ValidationError(Component.spec):
   missing required field "type"
 ```

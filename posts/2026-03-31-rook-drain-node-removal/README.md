@@ -85,7 +85,7 @@ kubectl exec -n rook-ceph deploy/rook-ceph-tools -- ceph health detail
 
 Expected output when safe to proceed:
 
-```
+```yaml
 HEALTH_OK
 mon: 3 daemons, quorum a,b,c (age 5h)
 osd: 12 osds: 12 up, 9 in

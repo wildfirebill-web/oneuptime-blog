@@ -22,7 +22,7 @@ Configure CHAP credentials for a specific initiator using `gwcli`:
 gwcli
 ```
 
-```
+```text
 /> cd /iscsi-targets/iqn.2024-01.com.example:storage/hosts
 /hosts> create iqn.1993-08.org.debian:client01
 /hosts/iqn.1993-08.org.debian:client01/> auth chap=client01/SecurePass123
@@ -41,7 +41,7 @@ Mutual CHAP adds a second layer where the initiator also challenges the target. 
 gwcli
 ```
 
-```
+```text
 /hosts/iqn.1993-08.org.debian:client01/> auth chap=client01/ClientPass123 mutual_chap=target_user/TargetPass123
 ```
 

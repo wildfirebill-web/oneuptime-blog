@@ -69,7 +69,7 @@ VSIM products VALUES 4 0.12 0.88 0.32 0.68 COUNT 2 WITHSCORES WITHATTRIBS
 
 Example output:
 
-```
+```text
 1) "shoes"
 2) "0.99812"
 3) "{\"name\":\"Running Shoes\",\"price\":89.99,\"category\":\"footwear\"}"

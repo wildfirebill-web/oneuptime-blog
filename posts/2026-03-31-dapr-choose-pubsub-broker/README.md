@@ -109,7 +109,7 @@ spec:
 
 ## Decision Flowchart
 
-```
+```text
 Are you on a specific cloud? --> YES --> Use that cloud's managed broker
           |
           NO

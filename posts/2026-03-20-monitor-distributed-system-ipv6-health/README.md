@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Monitoring, Distributed Systems, Prometheus, Health Checks, Alerting
+Tags: IPv6, Monitoring, Distributed Systems, Prometheus, Health Check, Alerting
 
 Description: Implement comprehensive health monitoring for IPv6-enabled distributed systems using Prometheus, custom metrics, and alerting rules to detect failures early.
 

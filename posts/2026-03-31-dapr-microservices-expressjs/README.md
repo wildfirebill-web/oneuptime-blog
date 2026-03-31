@@ -22,7 +22,7 @@ npm install @dapr/dapr express
 
 ## Application Structure
 
-```
+```text
 order-service/
   src/
     app.js

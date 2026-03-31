@@ -16,7 +16,7 @@ When applications use broker-specific SDKs directly, switching from RabbitMQ to 
 
 Your application always calls the same Dapr HTTP or gRPC endpoint regardless of the underlying broker:
 
-```
+```text
 POST http://localhost:3500/v1.0/publish/{pubsubname}/{topic}
 ```
 
@@ -108,7 +108,7 @@ kubectl rollout restart deployment/order-service
 
 Organize components by environment:
 
-```
+```text
 components/
   dev/pubsub.yaml      # Redis
   staging/pubsub.yaml  # RabbitMQ

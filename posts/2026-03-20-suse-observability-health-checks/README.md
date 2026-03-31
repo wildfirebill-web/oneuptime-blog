@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SUSE Observability, Health Checks, Monitoring, Kubernetes, Alerting
+Tags: SUSE Observability, Health Check, Monitoring, Kubernetes, Alerting
 
 Description: Define and configure health check states in SUSE Observability to track component health across your infrastructure.
 

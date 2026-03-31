@@ -21,7 +21,7 @@ Dapr emits component metrics with the label `component_type` and `component_name
 
 ## State Store Health Metrics
 
-```
+```text
 # GET operation error rate
 rate(dapr_component_state_get_failed_total[5m])
 
@@ -41,7 +41,7 @@ rate(dapr_component_state_get_total[5m])
 
 ## Pub/Sub Component Health
 
-```
+```text
 # Messages failing to be published
 rate(dapr_component_pubsub_egress_fail_count[5m])
 
@@ -61,7 +61,7 @@ histogram_quantile(0.95,
 
 ## Binding Component Health
 
-```
+```text
 # Binding invocation errors
 rate(dapr_component_bindings_output_failed_total[5m])
 
@@ -122,7 +122,7 @@ kubectl logs deploy/order-service -c daprd | grep -i "component"
 
 Create a heatmap panel showing error rates across all components:
 
-```
+```text
 # Matrix query - error rate per component
 sum by (component, component_type) (
   rate(dapr_component_state_get_failed_total[5m])

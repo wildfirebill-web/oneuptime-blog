@@ -102,7 +102,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Check via Prometheus:
 
-```
+```text
 ceph_rgw_qlen > 0
 ```
 

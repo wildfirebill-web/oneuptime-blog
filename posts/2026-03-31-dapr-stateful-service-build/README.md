@@ -46,7 +46,7 @@ spec:
 
 ## Project Structure
 
-```
+```text
 orderservice/
   main.py
   orders.py

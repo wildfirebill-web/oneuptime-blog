@@ -14,7 +14,7 @@ Dapr actors are well-suited for session management because each session maps nat
 
 Use the session token or session ID as the actor ID:
 
-```
+```text
 Actor Type: UserSession
 Actor ID:   <session_token>
 ```

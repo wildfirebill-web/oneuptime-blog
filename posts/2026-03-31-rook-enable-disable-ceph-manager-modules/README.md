@@ -83,7 +83,7 @@ ceph status
 
 Look for health warnings that indicate a module failed to start:
 
-```
+```text
 HEALTH_WARN  Module 'influx' has failed: connection refused
 ```
 

@@ -12,7 +12,7 @@ Kustomize is built into `kubectl` and provides a powerful overlay system that is
 
 ## Project Structure
 
-```
+```text
 k8s/
   base/
     kustomization.yaml

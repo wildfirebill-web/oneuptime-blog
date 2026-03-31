@@ -20,7 +20,7 @@ We will build two services:
 
 ## Project Structure
 
-```
+```text
 microservices/
   order-service/
     app.py

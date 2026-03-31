@@ -164,7 +164,7 @@ kubectl logs -l app=my-service -c daprd | grep "component loaded"
 
 If the secret reference fails, you see:
 
-```
+```text
 level=error msg="error loading components: secret redis-credentials not found"
 ```
 

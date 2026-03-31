@@ -73,7 +73,7 @@ The visual tree displays execution stages. Key stages to look for:
 
 Below the visual tree, Compass shows:
 
-```
+```text
 Execution Stats:
   nReturned:          12
   totalDocsExamined:  12

@@ -32,7 +32,7 @@ In Grafana, go to **Dashboards > Import**, upload the JSON file, and select your
 
 Add a panel to track request rates per service:
 
-```
+```text
 # PromQL for HTTP request rate by app
 sum by (app_id) (
   rate(dapr_http_server_request_count[5m])
@@ -46,7 +46,7 @@ Panel settings:
 
 ## Latency Percentile Panel
 
-```
+```text
 # P50, P95, P99 latency for service invocation
 histogram_quantile(0.50, sum by (le, app_id) (rate(dapr_http_server_latency_ms_bucket[5m])))
 histogram_quantile(0.95, sum by (le, app_id) (rate(dapr_http_server_latency_ms_bucket[5m])))
@@ -57,7 +57,7 @@ Use a multi-query panel with different display names for each percentile.
 
 ## Pub/Sub Throughput Panel
 
-```
+```text
 # Messages published per second
 rate(dapr_component_pubsub_egress_count[5m])
 
@@ -69,7 +69,7 @@ rate(dapr_component_pubsub_ingress_count[5m])
 
 Track failed requests to catch regressions:
 
-```
+```text
 # HTTP error rate (non-2xx)
 sum by (app_id) (
   rate(dapr_http_server_request_count{status_code!~"2.."}[5m])
@@ -82,7 +82,7 @@ sum by (app_id) (
 
 ## Actor Activation Panel
 
-```
+```text
 # Actor activation rate
 rate(dapr_actor_activated_total[5m])
 

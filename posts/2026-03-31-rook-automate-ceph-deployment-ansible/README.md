@@ -12,7 +12,7 @@ Automating Ceph deployment with Ansible ensures repeatable, consistent cluster b
 
 ## Project Structure
 
-```
+```text
 ceph-ansible-rook/
   inventory/
     production/

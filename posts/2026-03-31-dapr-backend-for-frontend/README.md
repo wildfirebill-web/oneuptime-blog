@@ -14,7 +14,7 @@ The Backend for Frontend (BFF) pattern creates separate backend services for eac
 
 ## BFF Architecture
 
-```
+```text
 Mobile App --> Mobile BFF --> [user-service, order-service, product-service]
 Web App    --> Web BFF    --> [user-service, order-service, product-service, analytics-service]
 Partner    --> API BFF    --> [product-service, order-service]

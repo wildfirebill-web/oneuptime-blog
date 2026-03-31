@@ -135,7 +135,7 @@ kubectl -n rook-ceph exec -it \
 
 Review RGW metrics via Prometheus:
 
-```
+```text
 ceph_rgw_req
 ceph_rgw_failed_req
 ```

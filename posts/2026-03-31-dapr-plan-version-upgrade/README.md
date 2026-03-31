@@ -79,7 +79,7 @@ Choose an upgrade strategy based on your risk tolerance:
 
 Dapr recommends upgrading control plane before sidecars:
 
-```
+```text
 1. Upgrade Dapr control plane (dapr-operator, dapr-sentry, placement-server)
 2. Restart services one by one to update sidecar versions
 3. Upgrade Dapr CLI on developer workstations

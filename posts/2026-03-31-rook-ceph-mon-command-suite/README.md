@@ -29,7 +29,7 @@ ceph quorum_status | python3 -m json.tool
 
 Example `mon stat` output:
 
-```
+```yaml
 e5: 3 mons at {a=[v2:10.0.0.1:3300/0,v1:10.0.0.1:6789/0],...}, election epoch 12, leader 0 a, quorum 0,1,2 a,b,c
 ```
 
@@ -41,7 +41,7 @@ ceph mon ls
 
 Output:
 
-```
+```json
 [{"name": "a", "rank": 0, "public_addr": "10.0.0.1:6789"},
  {"name": "b", "rank": 1, "public_addr": "10.0.0.2:6789"},
  {"name": "c", "rank": 2, "public_addr": "10.0.0.3:6789"}]

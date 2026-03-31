@@ -41,13 +41,13 @@ flowchart LR
 
 You can authenticate using a connection string:
 
-```
+```text
 DefaultEndpointsProtocol=https;AccountName=myaccount;AccountKey=base64key==;EndpointSuffix=core.windows.net
 ```
 
 Or using a SAS URL:
 
-```
+```yaml
 https://myaccount.blob.core.windows.net/mycontainer?sv=2022-11-02&ss=b&srt=o&sp=rl&se=2025-12-31T00:00:00Z&st=2024-01-01T00:00:00Z&spr=https&sig=...
 ```
 

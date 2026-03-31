@@ -74,7 +74,7 @@ rbd snap ls vms/myvm-disk
 
 Output example:
 
-```
+```text
 SNAPID  NAME               SIZE    PROTECTED  TIMESTAMP
 12      backup-2026-03-30  50 GiB  no         Mon Mar 30 02:00:01 2026
 13      backup-2026-03-31  50 GiB  no         Tue Mar 31 02:00:01 2026

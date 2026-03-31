@@ -16,7 +16,7 @@ In a Dapr microservices architecture, each service and its Dapr sidecar produce 
 
 A typical Dapr log aggregation pipeline looks like:
 
-```
+```json
 [App Container] --> [stdout]
 [Dapr Sidecar]  --> [stdout]    --> Fluent Bit DaemonSet --> Log Backend
 [Dapr Operator] --> [stdout]                                (Loki/ES/Splunk)

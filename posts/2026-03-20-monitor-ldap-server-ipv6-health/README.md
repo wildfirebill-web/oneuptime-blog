@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: LDAP, IPv6, Monitoring, Prometheus, Health Checks, OpenLDAP, Alerting
+Tags: LDAP, IPv6, Monitoring, Prometheus, Health Check, OpenLDAP, Alerting
 
 Description: Monitor LDAP server availability and performance over IPv6 using Prometheus, custom health check scripts, and alerting to ensure directory service reliability.
 

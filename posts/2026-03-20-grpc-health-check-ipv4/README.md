@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, Health Checks, IPv4, Python, Go, Kubernetes
+Tags: gRPC, Health Check, IPv4, Python, Go, Kubernetes
 
 Description: Learn how to implement gRPC health checking using the standard grpc.health.v1 protocol in Python and Go, configure Kubernetes liveness/readiness probes, and use grpc_health_probe to test health...
 

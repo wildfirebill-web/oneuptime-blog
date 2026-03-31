@@ -16,7 +16,7 @@ Currently supported state stores: MongoDB, Azure Cosmos DB, PostgreSQL, Cockroac
 
 ## Query API Endpoint
 
-```
+```text
 POST http://localhost:3500/v1.0-alpha1/state/{storeName}/query
 ```
 

@@ -85,7 +85,7 @@ This bypasses actor method invocation and reads state directly from the state st
 
 This error means the placement service cannot find a host for the actor type:
 
-```
+```text
 level=error msg="error from actor service: ERR_ACTOR_INSTANCE_MISSING"
 ```
 

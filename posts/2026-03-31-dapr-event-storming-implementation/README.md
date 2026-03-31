@@ -29,7 +29,7 @@ Event storming produces these artifacts, which map directly to Dapr concepts:
 
 From an event storming session, you discover this flow:
 
-```
+```json
 [Place Order Command] -> OrderPlaced Event
 OrderPlaced -> [Reserve Inventory Policy] -> InventoryReserved Event
 InventoryReserved -> [Charge Payment Policy] -> PaymentProcessed Event

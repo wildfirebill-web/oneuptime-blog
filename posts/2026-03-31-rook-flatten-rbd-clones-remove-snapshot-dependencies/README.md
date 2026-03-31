@@ -20,7 +20,7 @@ Flattening copies all parent data into the clone, making it fully independent.
 
 ## Understanding the Clone Chain
 
-```
+```text
 golden-image@v1 (snapshot, protected)
   |-- clone-app1 (writes diverge here)
   |-- clone-app2
@@ -35,7 +35,7 @@ rbd info mypool/clone-app1 | grep "parent"
 ```
 
 Output:
-```
+```yaml
 parent: mypool/golden-image@v1
 overlap: 20 GiB
 ```
@@ -53,7 +53,7 @@ rbd status mypool/clone-app1
 ```
 
 Output during flatten:
-```
+```yaml
 Watchers: none
 Migration:
   source: mypool/golden-image@v1 (snap_id: 1)
@@ -119,7 +119,7 @@ rbd snap rm mypool/golden-image@v1
 ```
 
 If clones still depend on it, you'll get:
-```
+```yaml
 librbd: snapshot 'v1' is protected
 ```
 

@@ -54,7 +54,7 @@ func (a *CounterActor) OnActivate() error {
 
 Dapr enforces single-threaded access per actor instance. If two callers invoke methods on the same actor simultaneously, one waits:
 
-```
+```text
 Client A -> Increment(counter-001) -> executes immediately
 Client B -> Increment(counter-001) -> queued, waits for A to complete
 ```

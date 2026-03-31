@@ -42,7 +42,7 @@ Each suggestion includes:
 
 ### Sample Suggestion
 
-```
+```yaml
 Namespace: shop.orders
 Index: { status: 1, createdAt: -1 }
 Average Execution Time: 1,243 ms

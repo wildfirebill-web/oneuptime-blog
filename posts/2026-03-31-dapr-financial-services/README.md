@@ -14,7 +14,7 @@ Financial services demand the highest standards of reliability, security, and au
 
 A typical fintech microservices platform includes:
 
-```
+```text
 API Gateway -> Payment Service (Dapr) -> Account Service (Dapr)
                                       -> Fraud Detection (Dapr)
                                       -> Notification Service (Dapr)

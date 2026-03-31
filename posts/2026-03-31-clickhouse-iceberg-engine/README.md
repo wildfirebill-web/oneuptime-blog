@@ -105,7 +105,7 @@ SETTINGS iceberg_snapshot_timestamp_ms = 1704067200000;
 DESCRIBE TABLE iceberg_sales;
 ```
 
-```
+```text
 Column       Type       Comment
 sale_id      Int64
 product_id   Int64

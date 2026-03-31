@@ -81,7 +81,7 @@ kubectl apply -f otel-collector-deployment.yaml
 
 Query Dapr metrics in Azure Monitor Logs using KQL:
 
-```
+```text
 customMetrics
 | where name startswith "dapr_"
 | summarize avg(value) by name, bin(timestamp, 5m)
@@ -107,7 +107,7 @@ az monitor metrics alert create \
 
 In Application Insights, navigate to the Transaction Search to view end-to-end Dapr traces. Filter by `cloud_RoleName` matching your Dapr app ID:
 
-```
+```text
 requests
 | where cloud_RoleName == "order-service"
 | where duration > 200

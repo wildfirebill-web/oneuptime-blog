@@ -83,7 +83,7 @@ rate(node_network_receive_errs_total{job="node-exporter"}[5m])
 
 Organize panels into rows for clarity:
 
-```
+```text
 Row 1: Client Network
   - Read Throughput (Time series)
   - Write Throughput (Time series)

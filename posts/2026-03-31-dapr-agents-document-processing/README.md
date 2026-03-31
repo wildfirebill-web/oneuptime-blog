@@ -20,7 +20,7 @@ Dapr Agents can automate document workflows including:
 
 ## Architecture
 
-```
+```text
 Document Upload (S3, SharePoint, email)
         |
    Intake Agent (classify document type)

@@ -14,7 +14,7 @@ GitOps treats infrastructure and configuration as code stored in Git. For Dapr d
 
 Organize your GitOps repository with Dapr configuration clearly separated:
 
-```
+```text
 gitops/
   components/               # Dapr component definitions
     base/

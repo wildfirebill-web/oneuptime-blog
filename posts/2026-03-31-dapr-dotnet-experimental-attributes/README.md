@@ -27,7 +27,7 @@ public class DaprWorkflowClient
 
 When you use an experimental API without opting in, the compiler emits a warning:
 
-```
+```text
 warning DAPR001: 'DaprWorkflowClient' is for evaluation purposes only
 and is subject to change or removal in future updates.
 ```

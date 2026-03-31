@@ -59,7 +59,7 @@ For local env var secret store:
 
 ## Available DeepSeek Models
 
-```
+```text
 deepseek-chat     # DeepSeek-V3 - general purpose, fast
 deepseek-reasoner # DeepSeek-R1 - advanced reasoning with chain-of-thought
 ```

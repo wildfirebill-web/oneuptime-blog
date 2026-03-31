@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, NGINX Plus, Load Balancer, Health Checks, Enterprise
+Tags: IPv6, NGINX Plus, Load Balancer, Health Check, Enterprise
 
 Description: Configure NGINX Plus active health checks for IPv6 upstream servers, including health check URI configuration, slow start for IPv6 backends, and dashboard monitoring.
 

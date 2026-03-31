@@ -18,7 +18,7 @@ A good Dapr test environment should be:
 
 ## Directory Structure
 
-```
+```text
 myapp/
   src/           # application code
   tests/         # test projects

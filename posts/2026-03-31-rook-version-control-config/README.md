@@ -20,7 +20,7 @@ Version controlling Rook-Ceph configuration enables:
 
 A well-structured Rook configuration repository:
 
-```
+```text
 rook-ceph-config/
   README.md
   CHANGELOG.md

@@ -126,7 +126,7 @@ The `./components` directory should contain the `local-crypto` component YAML.
 
 ## Organizing Keys by Environment
 
-```
+```text
 keys/
   dev/
     aes-256-key.json
@@ -150,7 +150,7 @@ spec:
 
 The local provider reads individual `.json` files from the directory. Each file's base name (without `.json`) is the key name:
 
-```
+```text
 keys/
   customer-data-key.json    # keyName: "customer-data-key"
   payment-key.json          # keyName: "payment-key"

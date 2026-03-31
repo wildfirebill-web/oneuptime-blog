@@ -16,7 +16,7 @@ Engineering decisions benefit from quantified ROI analysis. Dapr adoption has re
 
 Estimate the time to set up Dapr and migrate the first service:
 
-```
+```text
 Initial setup:              1-2 engineer-days
 First service migration:    2-5 engineer-days
 Team learning:              1-2 days per engineer
@@ -28,7 +28,7 @@ Total initial cost:         ~15-25 engineer-days for a team of 5
 
 Calculate the per-pod resource overhead:
 
-```
+```text
 Per pod: ~50m CPU, ~100Mi memory
 50 pods x $0.048/vCPU-hour x 0.05 vCPU x 730 hours = ~$87/month
 50 pods x $0.006/GB-hour x 0.1 GB x 730 hours = ~$22/month
@@ -62,7 +62,7 @@ For each integration that Dapr replaces, estimate the setup and maintenance time
 - Testing and documentation: ~4 hours
 - Annual maintenance: ~2 hours
 
-```
+```text
 10 integrations x 16 hours = 160 hours saved on initial implementation
 10 integrations x 2 hours/year = 20 hours/year maintenance savings
 At $100/hour: $16,000 upfront + $2,000/year
@@ -72,7 +72,7 @@ At $100/hour: $16,000 upfront + $2,000/year
 
 Dapr's consistent retry, circuit breaker, and dead letter queue implementations reduce infrastructure-related incidents. Estimate your current incident rate and cost:
 
-```
+```text
 Infrastructure incidents per year: 10
 Average resolution time: 4 hours
 Engineer cost: $100/hour x 2 engineers x 4 hours = $800/incident
@@ -85,7 +85,7 @@ Expected reduction with Dapr: 30% = $2,400/year saved
 
 When you need to swap a backend (Redis to DynamoDB, Kafka to Azure Service Bus), Dapr reduces the migration effort:
 
-```
+```text
 Without Dapr: Update 8 services x 3 engineer-days = 24 days = $19,200
 With Dapr: Update 1 component YAML = 0.5 days = $400
 
@@ -94,7 +94,7 @@ Savings per migration: $18,800
 
 ## ROI Calculation
 
-```
+```text
 Year 1:
   Costs:   Setup ($12,000) + Resources ($1,308) + Ops ($400) = $13,708
   Benefits: Dev savings ($16,000) + Incident reduction ($2,400) = $18,400

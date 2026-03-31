@@ -12,7 +12,7 @@ Description: Build a scalable data lake ingestion pipeline with Dapr using pub/s
 
 A data lake ingestion pipeline collects events from operational systems, enriches and validates them, batches for efficiency, and writes to object storage in analytics-friendly formats (Parquet, Delta Lake, JSON).
 
-```
+```toml
 Services (Order, User, Product) --> [events] --> Collector
                                                       |
                                                [batch-ready] --> Validator

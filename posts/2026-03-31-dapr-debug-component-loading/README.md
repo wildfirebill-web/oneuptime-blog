@@ -41,13 +41,13 @@ spec:
 
 Typical successful component loading log:
 
-```
+```text
 time="2026-03-31T10:00:00Z" level=info msg="Component loaded" app_id=order-service name=statestore type=state.redis/v1
 ```
 
 Failed loading log:
 
-```
+```text
 time="2026-03-31T10:00:01Z" level=error msg="Error initializing component" app_id=order-service name=statestore type=state.redis/v1 error="dial tcp redis:6379: connect: connection refused"
 ```
 
@@ -55,7 +55,7 @@ time="2026-03-31T10:00:01Z" level=error msg="Error initializing component" app_i
 
 **1. Connection refused - dependency not ready**
 
-```
+```text
 error="dial tcp redis:6379: connect: connection refused"
 ```
 
@@ -73,7 +73,7 @@ kubectl exec -it redis-pod -- redis-cli ping
 
 **2. Invalid YAML syntax**
 
-```
+```text
 error="error reading component file: yaml: line 5: did not find expected key"
 ```
 
@@ -87,7 +87,7 @@ yamllint ./components/statestore.yaml
 
 **3. Missing secret key reference**
 
-```
+```text
 error="error getting secret: secret redisPassword not found in secretstore kubernetes"
 ```
 

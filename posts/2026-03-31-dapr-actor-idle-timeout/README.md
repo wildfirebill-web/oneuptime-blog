@@ -40,7 +40,7 @@ http.HandleFunc("/dapr/config", func(w http.ResponseWriter, r *http.Request) {
 
 Dapr uses Go duration strings:
 
-```
+```text
 "30s"    // 30 seconds
 "15m"    // 15 minutes
 "2h"     // 2 hours

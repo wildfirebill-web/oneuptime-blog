@@ -53,7 +53,7 @@ curl http://localhost:9090/metrics | grep dapr_
 
 You should see metrics like:
 
-```
+```text
 dapr_grpc_server_io_latency_bucket{...} 0
 dapr_http_server_request_count{...} 42
 dapr_component_pubsub_ingress_latencies_bucket{...} 5
@@ -130,7 +130,7 @@ kubectl port-forward svc/prometheus 9090:9090 -n monitoring
 
 Run a PromQL query:
 
-```
+```text
 rate(dapr_http_server_request_count[5m])
 ```
 

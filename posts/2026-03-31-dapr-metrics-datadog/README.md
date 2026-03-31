@@ -85,7 +85,7 @@ annotations:
 
 Dapr metrics appear in Datadog with the namespace prefix `dapr.*`. Use the Metrics Explorer:
 
-```
+```yaml
 # Request rate per service
 dapr.http.server.request.count{*} by {app_id}.as_rate()
 

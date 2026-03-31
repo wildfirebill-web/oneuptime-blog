@@ -89,7 +89,7 @@ View deployed RGW daemons:
 ceph orch ps --daemon-type rgw
 ```
 
-```
+```text
 NAME              HOST     STATUS   REFRESHED
 rgw.production.0  node-1   running  10s ago
 rgw.production.1  node-2   running  10s ago

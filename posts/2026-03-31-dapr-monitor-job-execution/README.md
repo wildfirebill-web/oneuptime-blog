@@ -31,7 +31,7 @@ spec:
 
 Key job metrics exposed by Dapr sidecar:
 
-```
+```text
 dapr_http_server_request_count{app_id, method, path, status}
 dapr_http_server_latency_ms{app_id, method, path}
 ```
@@ -164,7 +164,7 @@ scrape_configs:
 
 Query for job success rate in Grafana:
 
-```
+```text
 rate(job_runs_total{status="success"}[5m]) /
 rate(job_runs_total[5m])
 ```

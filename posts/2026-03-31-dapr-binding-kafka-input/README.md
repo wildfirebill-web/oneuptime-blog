@@ -300,7 +300,7 @@ docker exec -it kafka kafka-console-producer.sh \
 
 Type messages in `key:value` format:
 
-```
+```yaml
 sensor-001:{"sensorId":"sensor-001","temperature":72.5,"humidity":45.2}
 sensor-002:{"sensorId":"sensor-002","temperature":85.1,"humidity":60.0}
 ```

@@ -25,7 +25,7 @@ Dapr emits these metrics for state operations:
 
 ## Operation Rate Queries
 
-```
+```text
 # GET rate per state store component
 rate(dapr_component_state_get_total{app_id="order-service"}[5m])
 
@@ -45,7 +45,7 @@ sum by (component) (
 
 ## Error Rate Queries
 
-```
+```text
 # GET error rate per component
 rate(dapr_component_state_get_failed_total[5m])
 
@@ -68,7 +68,7 @@ rate(dapr_component_state_set_failed_total[5m])
 
 ## Latency Analysis
 
-```
+```text
 # P99 GET latency
 histogram_quantile(0.99,
   sum by (le, component) (

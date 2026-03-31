@@ -56,7 +56,7 @@ VGETATTR products bag456
 
 Expected output for `VGETATTR products shoes123`:
 
-```
+```text
 "{\"name\":\"Running Shoes\",\"category\":\"footwear\",\"price\":89.99}"
 ```
 

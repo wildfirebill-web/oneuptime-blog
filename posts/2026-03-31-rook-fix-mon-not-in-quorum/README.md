@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Example:
 
-```
+```text
 HEALTH_ERR mon.b is not in quorum; mon.c is not in quorum
 2 mons are not in quorum
 ```

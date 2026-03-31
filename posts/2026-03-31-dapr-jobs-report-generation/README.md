@@ -12,7 +12,7 @@ Automated report generation - daily summaries, weekly analytics, monthly invoice
 
 ## Report Generation Architecture
 
-```
+```text
 Dapr Scheduler
      |
      v

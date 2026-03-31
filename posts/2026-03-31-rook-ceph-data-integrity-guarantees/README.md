@@ -20,7 +20,7 @@ ceph config get osd bluestore_csum_type
 
 Expected output:
 
-```
+```text
 crc32c
 ```
 

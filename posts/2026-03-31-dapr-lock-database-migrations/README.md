@@ -14,7 +14,7 @@ In Kubernetes, rolling deployments or pod restarts can cause multiple applicatio
 
 When 3 pods start simultaneously:
 
-```
+```text
 Pod A: starting... running migrations...
 Pod B: starting... running migrations... (conflict!)
 Pod C: starting... running migrations... (conflict!)

@@ -141,7 +141,7 @@ INFO persistence
 
 And in the Redis logs:
 
-```
+```json
 [1234] 31 Mar 12:30:00.000 # Background saving error
 ```
 

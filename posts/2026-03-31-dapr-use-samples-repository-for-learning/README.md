@@ -19,7 +19,7 @@ cd quickstarts
 
 The quickstarts directory structure maps to Dapr building blocks:
 
-```
+```text
 quickstarts/
   tutorials/          - Multi-step learning paths
   service_invocation/ - Direct service-to-service calls

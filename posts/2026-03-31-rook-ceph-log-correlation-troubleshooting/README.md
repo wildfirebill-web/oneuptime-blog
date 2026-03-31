@@ -14,7 +14,7 @@ Complex Ceph issues often span multiple daemon types. A client write failure may
 
 Ceph assigns a unique transaction ID to operations that appears in logs across all involved daemons. Look for patterns like:
 
-```
+```text
 osd.2 2024-01-15T10:23:45 op 0x5f3a0000002e...
 client.12345 2024-01-15T10:23:45 op 0x5f3a0000002e...
 ```

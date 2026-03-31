@@ -12,7 +12,7 @@ Gaming backends require ultra-low latency, high concurrency, and real-time updat
 
 ## Gaming Architecture with Dapr
 
-```
+```text
 Game Client -> API Gateway -> Player Service (Dapr)
                            -> Matchmaking Service (Dapr)
                            -> Game Session Service (Dapr Actors)

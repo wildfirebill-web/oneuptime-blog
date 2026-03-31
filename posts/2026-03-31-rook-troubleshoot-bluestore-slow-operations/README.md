@@ -19,7 +19,7 @@ ceph health detail
 ```
 
 Look for messages like:
-```
+```text
 HEALTH_WARN 1 ops are blocked > 32 secs
 ```
 

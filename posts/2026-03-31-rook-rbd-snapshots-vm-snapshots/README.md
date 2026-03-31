@@ -117,7 +117,7 @@ kubectl -n rook-ceph exec deploy/rook-ceph-tools -- \
 
 Output shows provisioned vs actual disk usage:
 
-```
+```text
 NAME                    PROVISIONED  USED
 myvm-disk               50 GiB       8.2 GiB
 myvm-disk@pre-upgrade   50 GiB       256 MiB

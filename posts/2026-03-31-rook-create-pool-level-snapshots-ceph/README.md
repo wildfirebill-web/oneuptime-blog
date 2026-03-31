@@ -29,7 +29,7 @@ rados -p mypool lssnap
 ```
 
 Output:
-```
+```text
 1   my-snapshot-20260331  2026.03.31 10:00:00
 ```
 

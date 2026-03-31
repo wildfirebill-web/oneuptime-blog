@@ -136,7 +136,7 @@ dapr status -k
 
 Expected output:
 
-```
+```text
   NAME                   NAMESPACE    HEALTHY  STATUS   REPLICAS  VERSION
   dapr-operator          dapr-system  True     Running  2         1.x.x
   dapr-placement-server  dapr-system  True     Running  3         1.x.x

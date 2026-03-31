@@ -16,7 +16,7 @@ In a standard GKE cluster, the Kubernetes API server (control plane) can reach n
 
 Dapr's admission webhook listens on port 4000 (injector) by default. If GKE's control plane cannot reach this port, pod creation hangs and times out:
 
-```
+```yaml
 Error from server (Timeout): error when creating "deployment.yaml":
 Timeout: request did not complete within requested timeout
 ```

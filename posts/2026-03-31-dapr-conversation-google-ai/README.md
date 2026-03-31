@@ -50,7 +50,7 @@ export GOOGLE_AI_API_KEY=AIzaSy-your-google-api-key
 
 ## Available Gemini Models
 
-```
+```text
 gemini-2.0-flash         # Fast, efficient, best for most tasks
 gemini-2.0-flash-thinking # Enhanced reasoning capabilities
 gemini-1.5-pro           # Long context window (1M tokens)

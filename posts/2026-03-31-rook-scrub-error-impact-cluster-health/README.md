@@ -28,7 +28,7 @@ ceph health detail
 
 Example output when scrub errors exist:
 
-```
+```text
 HEALTH_ERR 1 scrub errors
 OSD_SCRUB_ERRORS 1 scrub errors
     pg 2.5 is inconsistent

@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Example:
 
-```
+```text
 HEALTH_WARN noout flag(s) set
 ```
 
@@ -32,7 +32,7 @@ ceph osd dump | grep flags
 
 Example output:
 
-```
+```text
 flags noout,noin
 ```
 
@@ -121,7 +121,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Monitor for flag warnings via Prometheus:
 
-```
+```text
 ceph_health_status == 2  # HEALTH_ERR
 ceph_health_detail{type="OSDMAP_FLAGS"} > 0
 ```

@@ -14,7 +14,7 @@ The "no osds" error is one of the most common issues when first deploying Rook-C
 
 ## Symptoms
 
-```
+```text
 ceph status shows:
   cluster:
     health: HEALTH_ERR
@@ -24,7 +24,7 @@ ceph status shows:
 
 Or in the operator logs:
 
-```
+```text
 failed to configure OSDs for node "worker-1": no devices were configured
 ```
 

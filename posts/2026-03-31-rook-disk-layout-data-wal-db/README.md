@@ -137,7 +137,7 @@ Look for `db_used_bytes` approaching `db_total_bytes`.
 
 ## Sizing Reference Table
 
-```
+```text
 HDD Size | Recommended DB Size | WAL Size
 ---------|---------------------|----------
 4 TB     | 32 GB               | 1 GB

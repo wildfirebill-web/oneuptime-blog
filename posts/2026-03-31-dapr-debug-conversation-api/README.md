@@ -128,7 +128,7 @@ kubectl logs <pod-name> -c daprd | grep -i conversation
 
 Expected healthy log:
 
-```
+```text
 level=info msg="component loaded" name=openai-conversation type=conversation.openai
 ```
 

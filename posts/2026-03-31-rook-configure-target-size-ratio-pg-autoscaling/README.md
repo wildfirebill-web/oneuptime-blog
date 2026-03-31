@@ -81,7 +81,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- bash -c "
 
 Example output:
 
-```
+```text
 POOL      SIZE  TARGET SIZE  RATE  RAW CAPACITY  RATIO  TARGET RATIO  EFFECTIVE RATIO  BIAS  PG_NUM  NEW PG_NUM  AUTOSCALE
 rbd        50G       0       3.0   300G          0.17   0.40         0.40            1.0    64       128         on
 ```

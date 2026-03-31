@@ -12,7 +12,7 @@ Financial price feeds must deliver market data with minimal latency to potential
 
 ## Price Feed Architecture
 
-```
+```text
 Market Data Provider -> Price Ingestion Service -> Dapr Pub/Sub -> Multiple Consumer Services
                                                                 -> Analytics Service
                                                                 -> Order Matching Engine

@@ -107,7 +107,7 @@ data:
 
 Query Dapr metrics in Kibana using KQL:
 
-```
+```text
 # All Dapr metrics in last hour
 data_stream.type: "metrics" AND prometheus.labels.app_id: "order-service"
 

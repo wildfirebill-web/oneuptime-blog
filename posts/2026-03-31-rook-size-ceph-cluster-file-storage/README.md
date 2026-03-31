@@ -18,7 +18,7 @@ CephFS uses two pools:
 - **Metadata pool**: stores directory trees, inodes, file metadata (replicated, latency-sensitive)
 - **Data pool**: stores actual file contents (replicated or erasure-coded, capacity-optimized)
 
-```
+```text
 Metadata pool size: typically 1-5% of data pool size
 Data pool size: based on expected data capacity
 ```
@@ -27,14 +27,14 @@ Data pool size: based on expected data capacity
 
 For 30TB of usable file storage with 3x replication:
 
-```
+```text
 Data pool raw: 30TB * 3 / 0.8 = 112.5TB
 Metadata pool raw: 112.5TB * 0.02 = ~2.3TB (use SSD)
 ```
 
 ## Hardware Recommendations
 
-```
+```text
 MDS nodes (dedicated or shared):
   CPU: 8-16 cores (MDS is CPU-bound for metadata ops)
   RAM: 32-64GB per active MDS (metadata cache)

@@ -14,7 +14,7 @@ HashiCorp Vault is a widely used secrets management platform. Integrating it wit
 
 ## Architecture
 
-```
+```text
 Client --> RGW (SSE-KMS) --> Vault (Transit secrets engine) --> Key returned --> Object encrypted
 ```
 

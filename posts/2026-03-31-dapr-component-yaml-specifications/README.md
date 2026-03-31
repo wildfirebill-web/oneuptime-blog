@@ -131,7 +131,7 @@ Apps not in the scopes list cannot use this component.
 
 For self-hosted mode, place component files in:
 
-```
+```text
 ~/.dapr/components/          # default
 ./components/                # override with --resources-path
 ```

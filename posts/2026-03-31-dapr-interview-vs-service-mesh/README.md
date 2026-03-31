@@ -16,7 +16,7 @@ Description: Clearly differentiate Dapr from service meshes like Istio and Linke
 
 ## Layer Comparison
 
-```
+```text
 Application Layer (L7+):  Dapr
   - State management
   - Pub/Sub messaging
@@ -66,7 +66,7 @@ Dapr handles application-level concerns (state, pub/sub), while Istio handles ne
 
 ## When to Use Each
 
-```
+```text
 Use Dapr when you need:
 - Portable state management across different backends
 - Event-driven pub/sub with multiple broker options

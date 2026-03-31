@@ -46,7 +46,7 @@ go get github.com/dapr/go-sdk@v1.11.0
 
 Your `go.mod` will show:
 
-```
+```text
 require (
     github.com/dapr/go-sdk v1.11.0
 )
@@ -56,7 +56,7 @@ require (
 
 In `requirements.txt`:
 
-```
+```text
 dapr==1.14.0
 dapr-ext-grpc==1.14.0
 ```

@@ -14,7 +14,7 @@ Connection timeout errors in Dapr can surface in multiple places: service-to-ser
 
 Timeout errors in Dapr usually look like:
 
-```
+```text
 context deadline exceeded
 rpc error: code = DeadlineExceeded
 connection refused: dial tcp 127.0.0.1:6379: connect: connection refused

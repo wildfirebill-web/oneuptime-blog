@@ -36,7 +36,7 @@ kubectl logs deployment/my-service -c daprd | grep "secret"
 
 Sample log output:
 
-```
+```text
 time="2026-03-31T10:23:45Z" level=info msg="SECRET: GET secret name=db-creds, store=k8s-store" app_id=my-service
 ```
 

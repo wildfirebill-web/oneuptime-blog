@@ -14,7 +14,7 @@ The Kubernetes Gateway API is the modern successor to Ingress, offering richer r
 
 External traffic enters through a Gateway and HTTPRoute, then reaches your service pod. Inside the cluster, service-to-service calls go through Dapr sidecars.
 
-```
+```text
 External Client
      |
      v

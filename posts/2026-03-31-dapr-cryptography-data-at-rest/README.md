@@ -14,7 +14,7 @@ Data at rest encryption ensures that stored data is unreadable if the storage la
 
 ## Architecture
 
-```
+```text
 Application --[encrypt]--> Dapr Sidecar --[fetch key]--> Key Vault
 Application --> Encrypted bytes --> Database
 ```

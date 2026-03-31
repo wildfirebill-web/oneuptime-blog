@@ -49,7 +49,7 @@ kubectl exec -it -n rook-ceph deploy/rook-ceph-tools -- bash
 - URL: https://ceph-dashboard.internal.example.com
 - Username: admin
 - Password: stored in 1Password under "Ceph Dashboard - prod"
-```
+```bash
 
 ## 3 - Routine Procedures
 
@@ -73,7 +73,7 @@ kubectl exec -n rook-ceph deploy/rook-ceph-tools -- ceph health detail
 ### Replacing a Failed OSD
 1. Identify the failed OSD: `ceph osd tree | grep down`
 2. Follow runbook: runbooks/osd-replacement.md
-```
+```text
 
 ## 4 - Monitoring and Alerts
 

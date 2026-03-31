@@ -21,7 +21,7 @@ Rook's CRDs are large and complex. ArgoCD has specific limitations that cause sy
 
 Rook CRDs exceed the size limit for `kubectl.kubernetes.io/last-applied-configuration` annotation:
 
-```
+```yaml
 Error: metadata.annotations: Too long: must have at most 262144 bytes
 ```
 

@@ -30,7 +30,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Sample output:
 
-```
+```text
 osd  commit_latency(ms)  apply_latency(ms)
   0                   5                  2
   1                   8                  3

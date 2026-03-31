@@ -85,7 +85,7 @@ Get-SmbMultichannelConnection -ServerName samba01
 
 Expected output:
 
-```
+```text
 Server Name   Client IP   Server IP   Client RSS Capable  Server RSS Capable  Selected
 -----------   ---------   ---------   ------------------  ------------------  --------
 samba01       10.0.1.100  10.0.1.10   True                True                True

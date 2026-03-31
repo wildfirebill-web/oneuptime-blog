@@ -121,7 +121,7 @@ EOF
 
 ## DR Test Checklist
 
-```
+```text
 Monthly Tests:
   [ ] Run daily-dr-check.sh and verify all probes succeed
   [ ] Verify sync lag is within RPO target

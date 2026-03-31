@@ -267,7 +267,7 @@ After setup, search Kibana for Dapr-specific log fields:
 
 Example Kibana query:
 
-```
+```yaml
 app_id: "order-service" AND level: "error"
 ```
 

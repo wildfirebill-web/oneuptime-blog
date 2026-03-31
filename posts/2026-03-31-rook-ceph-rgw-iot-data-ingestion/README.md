@@ -16,7 +16,7 @@ IoT deployments often involve thousands of devices sending small payloads at hig
 
 IoT workloads produce many small objects. To avoid metadata bottlenecks, use multiple buckets organized by device type or time partition:
 
-```
+```yaml
 s3://iot-sensors/temperature/2026/03/31/
 s3://iot-sensors/humidity/2026/03/31/
 s3://iot-gateway/raw-events/device-id/

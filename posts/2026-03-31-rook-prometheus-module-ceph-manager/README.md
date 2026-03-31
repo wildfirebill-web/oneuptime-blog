@@ -34,7 +34,7 @@ ceph mgr services
 
 Sample output:
 
-```
+```json
 {
   "prometheus": "http://192.168.1.10:9283/"
 }

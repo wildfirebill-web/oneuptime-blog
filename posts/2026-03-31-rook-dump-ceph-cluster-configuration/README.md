@@ -22,7 +22,7 @@ ceph config dump
 
 Sample output:
 
-```
+```text
 WHO         MASK  LEVEL    OPTION                    VALUE
 global             basic    auth_cluster_required     cephx
 global             basic    auth_service_required     cephx

@@ -14,7 +14,7 @@ PagerDuty turns Dapr metrics alerts into actionable incidents with escalation, o
 
 The integration works through this chain:
 
-```
+```text
 Dapr Sidecar Metrics -> Prometheus -> Alertmanager -> PagerDuty
 ```
 

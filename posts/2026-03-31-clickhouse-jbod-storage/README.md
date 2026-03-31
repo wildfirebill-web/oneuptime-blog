@@ -123,7 +123,7 @@ GROUP BY disk_name
 ORDER BY disk_name;
 ```
 
-```
+```text
 disk_name   parts   total_bytes
 nvme0       12      42000000000
 nvme1       11      38000000000

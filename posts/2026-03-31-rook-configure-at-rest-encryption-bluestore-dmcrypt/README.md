@@ -73,7 +73,7 @@ ls -la /dev/mapper/ | grep ceph
 ```
 
 You should see entries like:
-```
+```text
 ceph-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx-sdb-block-dmcrypt
 ```
 

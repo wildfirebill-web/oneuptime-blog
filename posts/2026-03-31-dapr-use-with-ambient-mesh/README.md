@@ -14,7 +14,7 @@ Istio Ambient Mesh moves service mesh functionality out of per-pod sidecars into
 
 Traditional service mesh sidecars (Envoy) plus Dapr sidecars means each pod runs two proxy containers. With Ambient Mesh:
 
-```
+```text
 Pod (before ambient):
   [App Container] + [Dapr Sidecar] + [Envoy Sidecar]  = 3 containers
 

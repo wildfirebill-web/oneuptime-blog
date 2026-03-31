@@ -64,7 +64,7 @@ SELECT * FROM ceph_osd_stats LIMIT 10;
 
 Example measurement fields you will see:
 
-```
+```text
 time                apply_latency_ms commit_latency_ms osd_id
 2026-03-31T00:00:00Z 1.2             2.5               0
 2026-03-31T00:00:00Z 0.8             1.9               1

@@ -14,7 +14,7 @@ Ceph RGW multisite replication enables disaster recovery by asynchronously repli
 
 ## Understanding RGW Multisite Architecture
 
-```
+```text
 Realm
   Zone Group (zonegroup)
     Zone A (primary) <---sync---> Zone B (secondary)
@@ -32,7 +32,7 @@ Key concepts:
 
 Before configuring DR, define your objectives:
 
-```
+```text
 RPO (Recovery Point Objective): Maximum acceptable data loss
   - With RGW sync: typically 1-60 minutes depending on sync lag
   - Monitor sync lag to verify RPO is achievable
@@ -89,7 +89,7 @@ radosgw-admin period update --commit
 
 ## DR Runbook Checklist Template
 
-```
+```yaml
 DR Runbook: RGW Zone Failover
 ===============================
 Pre-failover:

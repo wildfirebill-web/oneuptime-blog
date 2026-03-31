@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, High Availability, Monitoring, Health Checks, etcd, Kubernetes
+Tags: Rancher, High Availability, Monitoring, Health Check, etcd, Kubernetes
 
 Description: Monitor Rancher HA cluster health including etcd quorum, pod availability, WebSocket connections, and load balancer health with automated alerting.
 

@@ -14,7 +14,7 @@ Dapr Helm upgrades can time out when control plane components take too long to b
 
 Helm waits for all deployments to roll out successfully within a timeout window (default: 5 minutes). If Dapr's control plane components don't start in time, Helm marks the upgrade as failed:
 
-```
+```yaml
 Error: UPGRADE FAILED: timed out waiting for the condition
 ```
 

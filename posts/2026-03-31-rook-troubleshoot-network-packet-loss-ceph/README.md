@@ -34,7 +34,7 @@ mtr --report --report-cycles=100 <osd_peer_host>
 
 Example `mtr` output showing packet loss at a switch hop:
 
-```
+```yaml
 HOST: node-1            Loss%   Snt   Last   Avg  Best  Wrst StDev
   1. 192.168.1.1        0.0%   100    0.3   0.3   0.2   0.4   0.0
   2. 10.0.0.1           2.1%   100    0.8   1.2   0.7  15.3   1.8

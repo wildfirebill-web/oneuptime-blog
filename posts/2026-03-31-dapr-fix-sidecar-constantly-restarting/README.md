@@ -84,7 +84,7 @@ kubectl describe service redis
 
 Certificate-related crashes appear in logs as:
 
-```
+```text
 level=error msg="failed to initialize security: failed to request cert..."
 ```
 

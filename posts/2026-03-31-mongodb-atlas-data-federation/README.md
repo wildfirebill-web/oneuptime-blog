@@ -32,7 +32,7 @@ flowchart TD
 
 The connection string looks like a standard MongoDB URI:
 
-```
+```yaml
 mongodb://cluster0-shard-00-00.atlas.mongodb.net:27017/?authSource=%24external&ssl=true
 ```
 

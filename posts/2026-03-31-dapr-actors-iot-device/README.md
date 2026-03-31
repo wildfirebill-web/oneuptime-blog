@@ -12,7 +12,7 @@ IoT device management requires per-device state tracking, command dispatching, a
 
 ## Device Twin Actor Design
 
-```
+```text
 Actor Type: DeviceTwin
 Actor ID:   <deviceId>
 ```

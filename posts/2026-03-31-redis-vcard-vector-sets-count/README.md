@@ -37,7 +37,7 @@ VCARD products
 
 Expected output:
 
-```
+```text
 (integer) 3
 ```
 

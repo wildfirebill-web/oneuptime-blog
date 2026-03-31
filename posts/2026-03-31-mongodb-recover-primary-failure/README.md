@@ -50,7 +50,7 @@ rs.status()
 ```
 
 Check application logs for connection errors:
-```
+```yaml
 MongoServerError: not primary
 MongoNotPrimaryError: not primary and secondaryOk=false
 ```

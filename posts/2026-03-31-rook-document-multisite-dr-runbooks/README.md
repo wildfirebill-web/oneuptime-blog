@@ -16,7 +16,7 @@ DR runbooks are step-by-step procedures that enable any qualified engineer to ex
 
 Every DR runbook should include these sections:
 
-```
+```text
 1. Overview - what this runbook covers and when to use it
 2. Prerequisites - tools, access, and knowledge required
 3. Contact list - who to notify and escalate to
@@ -128,7 +128,7 @@ time bash /opt/runbooks/failover.sh
 
 ## Runbook Review Schedule
 
-```
+```text
 - After every DR test or real incident: update with lessons learned
 - Quarterly: review for accuracy, test commands still work
 - Annually: full review including contact lists and DNS details

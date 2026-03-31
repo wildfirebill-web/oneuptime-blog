@@ -14,7 +14,7 @@ The Dapr Placement service maintains a consistent hash ring that maps actor type
 
 ## Placement Service Default Address
 
-```
+```yaml
 localhost:50005  (self-hosted)
 dapr-placement-server.dapr-system.svc.cluster.local:50005  (Kubernetes)
 ```
@@ -61,7 +61,7 @@ grpcurl -plaintext localhost:50005 list
 
 Expected services:
 
-```
+```text
 dapr.proto.placement.v1.Placement
 grpc.health.v1.Health
 ```
@@ -113,7 +113,7 @@ dapr logs --app-id order-service --kubernetes | grep -i "placement"
 
 Expected log line:
 
-```
+```text
 level=info msg="actors: placement tables updated"
 ```
 

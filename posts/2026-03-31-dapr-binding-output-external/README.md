@@ -61,7 +61,7 @@ curl -X POST http://localhost:3500/v1.0/bindings/order-storage \
 
 Different binding types support different operations:
 
-```
+```text
 bindings.aws.s3:     create, get, delete, list
 bindings.kafka:      create
 bindings.redis:      create, get, delete

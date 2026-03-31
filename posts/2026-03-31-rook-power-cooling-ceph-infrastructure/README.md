@@ -78,7 +78,7 @@ echo "Cooling needed: ${TONS_OF_COOLING} tons of cooling"
 
 ## Step 4 - Rack-Level Airflow Design
 
-```
+```text
 Front-to-back airflow (standard):
 - Cold aisle at front of rack
 - Hot aisle at rear

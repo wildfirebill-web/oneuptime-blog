@@ -14,7 +14,7 @@ Description: Learn how to use categoricalInformationValue() in ClickHouse to mea
 
 Information value is derived from the Weight of Evidence (WoE) formula. For each category `c`, ClickHouse computes:
 
-```
+```text
 IV = sum over c of (P(outcome=1 | c) - P(outcome=0 | c)) * WoE(c)
 ```
 

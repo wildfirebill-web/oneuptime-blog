@@ -64,7 +64,7 @@ This populates a dropdown with all OSD daemon names (e.g., `osd.0`, `osd.1`).
 
 Panel overview:
 
-```
+```text
 Row 1: OSD Status | Capacity Used | Apply Latency | Commit Latency
 Row 2: IOPS Over Time | Throughput Over Time
 Row 3: Op Queue Depth | Journal Write Ops

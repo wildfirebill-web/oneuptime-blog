@@ -103,7 +103,7 @@ sh.status()
 
 Look for the collection under the database section:
 
-```
+```yaml
 databases:
   {  "_id" : "ecommerce",  "primary" : "rs-shard1",  "partitioned" : true }
     ecommerce.orders

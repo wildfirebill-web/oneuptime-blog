@@ -21,7 +21,7 @@ ceph pg dump | grep inconsistent
 
 Example health output:
 
-```
+```text
 HEALTH_ERR 3 scrub errors
 OSD_SCRUB_ERRORS 3 scrub errors
     pg 1.3 is inconsistent
@@ -38,7 +38,7 @@ ceph pg map 1.3
 
 Example output:
 
-```
+```text
 osdmap e45 pg 1.3 (1.3) -> up [3,1,5] acting [3,1,5]
 ```
 

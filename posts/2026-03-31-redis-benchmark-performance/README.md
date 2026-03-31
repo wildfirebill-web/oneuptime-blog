@@ -42,7 +42,7 @@ redis-benchmark -q -n 100000
 
 Sample output:
 
-```
+```yaml
 PING_INLINE: 182149.36 requests per second, p50=0.271 msec
 PING_MBULK:  187265.91 requests per second, p50=0.263 msec
 SET:         175438.59 requests per second, p50=0.279 msec
@@ -131,7 +131,7 @@ redis-benchmark -t get -n 1000000 -c 100
 
 Sample output:
 
-```
+```yaml
 GET: 287356.32 requests per second, p50=0.327 msec
 
 Summary:
@@ -149,7 +149,7 @@ The p99 and max values reveal outliers that matter for tail latency.
 redis-benchmark -t set,get,incr -n 100000 -q --csv
 ```
 
-```
+```text
 "SET","175438.59"
 "GET","181818.18"
 "INCR","178890.87"

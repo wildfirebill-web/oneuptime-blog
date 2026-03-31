@@ -14,7 +14,7 @@ Dapr exposes its runtime capabilities through versioned HTTP and gRPC APIs. Unde
 
 Every Dapr HTTP API follows this URL pattern:
 
-```
+```yaml
 http://localhost:{dapr-port}/v{version}/{building-block}/{operation}
 ```
 
@@ -71,7 +71,7 @@ annotations:
 
 The gRPC proto packages follow the same pattern:
 
-```
+```text
 dapr.proto.runtime.v1
 dapr.proto.common.v1
 ```

@@ -44,7 +44,7 @@ In the Duplicati web interface, create a new backup job:
 2. For storage type, select "S3 Compatible"
 3. Fill in the server settings:
 
-```
+```yaml
 Server: Custom server URL
 Server URL: http://ceph-rgw.example.com:7480
 Bucket name: duplicati-backups
@@ -54,7 +54,7 @@ AWS Access Key: YOUR_SECRET_KEY
 
 For the bucket path, use a subfolder to keep backups organized:
 
-```
+```text
 Bucket path: /my-server/
 ```
 

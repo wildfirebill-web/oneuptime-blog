@@ -14,7 +14,7 @@ The `GetConfiguration` unimplemented error occurs when your application calls th
 
 The error typically looks like:
 
-```
+```text
 rpc error: code = Unimplemented
 desc = method GetConfiguration not implemented
 ```

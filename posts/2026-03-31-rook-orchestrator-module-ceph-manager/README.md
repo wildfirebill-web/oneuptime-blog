@@ -42,7 +42,7 @@ ceph orch host ls
 
 Example output:
 
-```
+```text
 HOST          ADDR           LABELS  STATUS
 node-1        192.168.1.11   osd
 node-2        192.168.1.12   osd
@@ -72,7 +72,7 @@ Check the status of individual daemons:
 ceph orch ps
 ```
 
-```
+```text
 NAME        HOST    STATUS   REFRESHED
 osd.0       node-1  running  1m ago
 osd.1       node-2  running  1m ago

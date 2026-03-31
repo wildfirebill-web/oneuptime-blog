@@ -52,7 +52,7 @@ dapr mtls -k
 
 Output:
 
-```
+```text
 Mutual TLS is enabled in your Kubernetes cluster
 ```
 
@@ -185,13 +185,13 @@ kubectl rollout restart deployment/dapr-sentry -n dapr-system
 
 Each Dapr workload certificate uses a SPIFFE (Secure Production Identity Framework for Everyone) identity in the Subject Alternative Name (SAN):
 
-```
+```yaml
 spiffe://{trustDomain}/ns/{namespace}/{appId}
 ```
 
 For example:
 
-```
+```yaml
 spiffe://cluster.local/ns/default/order-service
 ```
 

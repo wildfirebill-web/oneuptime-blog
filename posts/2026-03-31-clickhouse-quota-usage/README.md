@@ -126,7 +126,7 @@ ORDER BY queries_pct DESC;
 
 ## What a Quota Exceeded Error Looks Like
 
-```
+```yaml
 DB::Exception: Quota for user `analyst` for 3600s has been exceeded:
 queries = 1001/1000. Interval will end at 2024-06-01 15:00:00.
 Name: default. (QUOTA_EXCEEDED)

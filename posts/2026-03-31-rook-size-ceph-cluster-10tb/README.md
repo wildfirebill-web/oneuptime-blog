@@ -16,13 +16,13 @@ Sizing a Ceph cluster requires understanding the difference between raw capacity
 
 For a 3-way replication (the default):
 
-```
+```text
 Usable capacity = Raw capacity / replication factor / overhead factor
 ```
 
 To achieve 10TB usable with 3x replication and a 20% safety buffer:
 
-```
+```text
 Raw needed = 10TB * 3 (replication) / 0.8 (buffer) = 37.5TB raw
 ```
 
@@ -32,7 +32,7 @@ Rounding up: provision at least **40TB raw** across your OSDs.
 
 ### Option A: Larger Drives (fewer nodes)
 
-```
+```yaml
 3 nodes * 4 drives * 4TB each = 48TB raw
 Usable: 48 / 3 / 1.2 = ~13TB usable
 ```
@@ -41,7 +41,7 @@ This comfortably covers 10TB with some headroom.
 
 ### Option B: Smaller Drives (more nodes)
 
-```
+```yaml
 5 nodes * 3 drives * 3TB each = 45TB raw
 Usable: 45 / 3 / 1.2 = ~12.5TB usable
 ```
@@ -96,7 +96,7 @@ spec:
 
 For a 10TB cluster with 3 nodes:
 
-```
+```yaml
 Monitors: 3 (one per node)
 Managers: 2 (active + standby)
 MDSes: 2 (only if using CephFS)

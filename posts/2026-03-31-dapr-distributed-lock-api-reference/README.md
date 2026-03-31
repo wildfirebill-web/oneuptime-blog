@@ -14,7 +14,7 @@ The Dapr Distributed Lock API provides mutual exclusion across distributed servi
 
 ## Base URL
 
-```
+```yaml
 http://localhost:{daprPort}/v1.0-alpha1/lock/{storeName}
 ```
 

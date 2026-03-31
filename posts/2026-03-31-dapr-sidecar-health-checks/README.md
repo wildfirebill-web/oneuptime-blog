@@ -16,7 +16,7 @@ The Dapr sidecar exposes its own health endpoint that Kubernetes uses for livene
 
 The Dapr sidecar exposes a health endpoint at:
 
-```
+```text
 GET http://localhost:3500/v1.0/healthz
 ```
 
@@ -93,7 +93,7 @@ kubectl get events --field-selector reason=Unhealthy \
 
 Prometheus query for sidecar restart rate:
 
-```
+```text
 rate(kube_pod_container_status_restarts_total{container="daprd"}[5m]) > 0
 ```
 

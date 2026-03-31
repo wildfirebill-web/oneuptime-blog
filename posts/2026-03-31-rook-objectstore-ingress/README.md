@@ -117,12 +117,12 @@ spec:
 S3 clients use either path-style or virtual-hosted style URLs.
 
 Path-style (easier with Ingress):
-```
+```yaml
 https://s3.example.com/my-bucket/my-object
 ```
 
 Virtual-hosted style (requires wildcard DNS):
-```
+```yaml
 https://my-bucket.s3.example.com/my-object
 ```
 

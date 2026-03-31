@@ -52,7 +52,7 @@ hugo serve
 
 ## File Structure
 
-```
+```text
 daprdocs/
 - content/
   - en/
@@ -128,7 +128,7 @@ annotations:
 {{% /codetab %}}
 
 {{< /tabs >}}
-```
+```bash
 
 ## Submit Your Documentation PR
 

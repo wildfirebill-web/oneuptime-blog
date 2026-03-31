@@ -22,7 +22,7 @@ This architecture enables parallel processing, specialization, and fault isolati
 
 A typical multi-agent pipeline has a coordinator agent that routes tasks to specialist agents:
 
-```
+```text
 User Request
      |
 Coordinator Agent

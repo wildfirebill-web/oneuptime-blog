@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, ALB, Health Checks, IPv4, Load Balancing, Target Groups
+Tags: AWS, ALB, Health Check, IPv4, Load Balancing, Target Groups
 
 Description: Configure HTTP and HTTPS health checks for AWS Application Load Balancer target groups to ensure only healthy IPv4 targets receive traffic.
 

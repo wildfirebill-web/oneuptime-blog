@@ -22,13 +22,13 @@ Setting `pg_num` too low means data concentrates on a few OSDs. Setting it too h
 
 The traditional formula for manual calculation:
 
-```
+```text
 pg_num = (Target PGs per OSD * OSD count * Data Percentage) / Replication Factor
 ```
 
 For example, with 9 OSDs, targeting 100 PGs per OSD, one pool taking 100% of data, and 3x replication:
 
-```
+```text
 pg_num = (100 * 9 * 1.0) / 3 = 300
 ```
 

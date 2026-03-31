@@ -16,7 +16,7 @@ While W3C Trace Context (`traceparent` and `tracestate`) handles trace correlati
 
 The `baggage` header carries key-value pairs that propagate across service boundaries:
 
-```
+```yaml
 baggage: userId=user-42,tenantId=tenant-abc,featureFlag=new-checkout
 ```
 

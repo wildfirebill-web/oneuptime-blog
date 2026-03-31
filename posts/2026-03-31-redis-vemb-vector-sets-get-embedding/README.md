@@ -36,7 +36,7 @@ VEMB docs article1
 
 Expected output:
 
-```
+```text
 1) "0.10000000149011612"
 2) "0.25"
 3) "0.5"

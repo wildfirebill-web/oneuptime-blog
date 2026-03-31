@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer,Docker,Container Configuration,Export,DevOps,Automation
+Tags: Portainer, Docker, Container Configuration, Export, DevOps, Automation
 
 Description: Export a running container's full configuration as a reproducible docker run command for documentation, migration, or converting container configs to Compose stacks.
 

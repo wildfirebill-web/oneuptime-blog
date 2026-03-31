@@ -12,7 +12,7 @@ Description: Learn how to implement job trigger handlers in your Dapr applicatio
 
 When a Dapr job fires, the Dapr Scheduler service calls your application on a specific HTTP endpoint:
 
-```
+```yaml
 POST /job/{job-name}
 Content-Type: application/json
 ```

@@ -14,7 +14,7 @@ Ceph RGW can be exported over NFS using NFS-Ganesha with the `FSAL_RGW` plugin. 
 
 ## Architecture
 
-```
+```text
 NFS Client (POSIX) --> NFS-Ganesha (FSAL_RGW) --> Ceph RGW --> RADOS
 ```
 

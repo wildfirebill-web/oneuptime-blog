@@ -188,7 +188,7 @@ clickhouse-keeper-client \
 
 Run a health check inside the client:
 
-```
+```text
 keeper> ruok
 imok
 ```

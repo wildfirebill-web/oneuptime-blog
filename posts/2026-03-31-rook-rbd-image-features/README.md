@@ -42,7 +42,7 @@ flowchart TD
 ## Default Features in Rook CSI
 
 Rook's default StorageClass uses:
-```
+```yaml
 imageFeatures: layering
 ```
 

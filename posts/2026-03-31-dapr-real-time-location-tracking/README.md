@@ -12,7 +12,7 @@ Real-time location tracking systems - for delivery fleets, ride-sharing, or asse
 
 ## Location Update Pipeline
 
-```
+```text
 Mobile/GPS Device -> Location Update API -> Dapr Pub/Sub -> Location Processor -> State Store
                                                          -> Geofence Checker
                                                          -> Client Dashboard

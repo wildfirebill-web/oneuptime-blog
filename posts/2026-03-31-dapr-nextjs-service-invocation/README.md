@@ -12,7 +12,7 @@ Next.js API routes are ideal for server-side Dapr service invocation because cal
 
 ## Architecture
 
-```
+```text
 Browser -> Next.js Page -> Next.js API Route (with Dapr sidecar) -> Backend Services
 ```
 

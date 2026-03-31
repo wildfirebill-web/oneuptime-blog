@@ -16,7 +16,7 @@ A modular monolith is a single deployable unit organized into well-defined modul
 
 ## Project Structure
 
-```
+```text
 ModularMonolith/
 - Modules/
   - Orders/

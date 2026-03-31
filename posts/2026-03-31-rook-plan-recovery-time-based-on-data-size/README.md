@@ -34,7 +34,7 @@ ceph osd df
 
 Example: if a cluster has 100 TB raw with 3x replication, each OSD holds roughly:
 
-```
+```text
 total_data_per_osd = (total_raw / num_osds)
 ```
 
@@ -59,7 +59,7 @@ Typical recovery throughput:
 
 ## Recovery Time Estimation Formula
 
-```
+```text
 recovery_time_seconds = data_per_osd_bytes / recovery_bandwidth_bytes_per_sec
 ```
 

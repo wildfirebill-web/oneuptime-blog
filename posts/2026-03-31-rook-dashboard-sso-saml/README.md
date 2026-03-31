@@ -32,7 +32,7 @@ kubectl -n rook-ceph exec deploy/rook-ceph-tools -- \
 
 Or access the SP metadata URL from the Dashboard:
 
-```
+```yaml
 https://<dashboard-host>:8443/auth/saml2/metadata
 ```
 

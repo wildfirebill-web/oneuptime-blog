@@ -58,7 +58,7 @@ spec:
 
 For exponential backoff, the total wait time across N retries is approximately:
 
-```
+```text
 Total wait = sum(initialInterval * multiplier^i) for i in 0..N-1
            = initialInterval * (multiplier^N - 1) / (multiplier - 1)
 ```

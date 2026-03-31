@@ -27,7 +27,7 @@ Labels available: `app_id`, `method`, `status_code`, `protocol`
 
 ## Request Rate Queries
 
-```
+```text
 # Incoming request rate per app and method
 sum by (app_id, method) (
   rate(dapr_http_server_request_count[5m])
@@ -46,7 +46,7 @@ sum by (app_id, status_code) (
 
 ## Success Rate per Service
 
-```
+```text
 # Success rate per receiving app
 1 - (
   sum by (app_id) (
@@ -72,7 +72,7 @@ sum by (app_id, status_code) (
 
 The difference between client round-trip and server-side latency reveals network overhead:
 
-```
+```text
 # Server-side P99 latency
 histogram_quantile(0.99,
   sum by (le, app_id) (
@@ -92,7 +92,7 @@ Large differences indicate network or sidecar-to-sidecar communication overhead.
 
 ## Top Callers by Request Volume
 
-```
+```text
 # Top 10 apps by received request volume
 topk(10,
   sum by (app_id) (

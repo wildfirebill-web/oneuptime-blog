@@ -42,7 +42,7 @@ sequenceDiagram
 
 The invocation endpoint follows this pattern:
 
-```
+```text
 POST/GET/PUT/DELETE http://localhost:3500/v1.0/invoke/{app-id}/method/{method-name}
 ```
 

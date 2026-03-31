@@ -103,7 +103,7 @@ DAPR_TEST_REDIS_HOST=localhost:6379 \
 
 Use this decision guide:
 
-```
+```text
 Is the component Stable?
   Yes -> Safe to use in production
   No -> Is it Beta?

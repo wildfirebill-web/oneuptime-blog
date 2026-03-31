@@ -12,7 +12,7 @@ Logistics and supply chain systems handle complex workflows: shipment creation, 
 
 ## Supply Chain Architecture with Dapr
 
-```
+```text
 Order Management -> Shipment Service (Dapr) -> Warehouse Service (Dapr)
                                             -> Carrier Integration (Dapr)
                                             -> Tracking Service (Dapr)

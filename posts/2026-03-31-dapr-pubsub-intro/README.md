@@ -68,7 +68,7 @@ Success: `204 No Content`
 
 The URL format is:
 
-```
+```text
 POST http://localhost:{dapr-port}/v1.0/publish/{pubsub-name}/{topic}
 ```
 

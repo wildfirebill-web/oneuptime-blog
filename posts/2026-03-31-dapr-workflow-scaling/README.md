@@ -153,7 +153,7 @@ curl http://localhost:9090/metrics | grep dapr_workflow
 
 Key metrics to monitor:
 
-```
+```text
 dapr_workflow_activity_execution_time_bucket - activity execution latency
 dapr_workflow_orchestration_execution_time_bucket - orchestration latency
 dapr_workflow_activity_execution_total - total activities executed

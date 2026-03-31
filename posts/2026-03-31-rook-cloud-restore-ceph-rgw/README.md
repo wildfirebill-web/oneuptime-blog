@@ -53,12 +53,12 @@ aws s3api head-object \
 ```
 
 While restoring, the response includes:
-```
+```yaml
 x-amz-restore: ongoing-request="true"
 ```
 
 After completion:
-```
+```yaml
 x-amz-restore: ongoing-request="false", expiry-date="Wed, 07 Apr 2026 00:00:00 GMT"
 ```
 

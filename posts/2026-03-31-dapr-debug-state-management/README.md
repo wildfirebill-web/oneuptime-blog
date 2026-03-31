@@ -38,7 +38,7 @@ kubectl logs deployment/dapr-operator -n dapr-system | grep -i "statestore"
 
 Expected output when healthy:
 
-```
+```text
 INFO component loaded. name: statestore type: state.redis/v1
 ```
 
@@ -182,7 +182,7 @@ curl -s http://localhost:9090/metrics | \
 
 ## Debugging Checklist
 
-```
+```json
 [ ] Component YAML is syntactically valid (kubectl apply succeeds)
 [ ] Component shows "loaded" in Dapr operator logs
 [ ] State store backend is reachable from the Dapr sidecar

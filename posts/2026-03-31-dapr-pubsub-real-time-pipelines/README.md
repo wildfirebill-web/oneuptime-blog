@@ -14,7 +14,7 @@ A real-time data pipeline ingests raw events, transforms them, enriches them wit
 
 ## Pipeline Architecture
 
-```
+```text
 Ingest Topic (raw-events)
     |
     v

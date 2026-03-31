@@ -94,7 +94,7 @@ done
 
 ## Algorithm Selection by Use Case
 
-```
+```text
 Block Storage (Kubernetes PVC)  --> snappy
 Object Storage (cold data)      --> zstd
 Log archives                    --> zstd

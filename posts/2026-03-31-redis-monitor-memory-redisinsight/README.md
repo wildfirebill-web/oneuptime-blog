@@ -95,7 +95,7 @@ INFO memory
 
 Key fields in the output:
 
-```
+```yaml
 used_memory:1073741824
 used_memory_human:1024.00M
 used_memory_rss:1207959552

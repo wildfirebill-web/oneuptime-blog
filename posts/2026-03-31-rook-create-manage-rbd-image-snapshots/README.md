@@ -29,7 +29,7 @@ rbd snap ls mypool/myimage
 ```
 
 Output:
-```
+```text
 SNAPID  NAME            SIZE    PROTECTED  TIMESTAMP
 1       snap-20260331   10 GiB  no         Tue Mar 31 10:00:00 2026
 ```
@@ -106,7 +106,7 @@ rbd du mypool/myimage
 ```
 
 Output:
-```
+```text
 NAME            PROVISIONED  USED
 myimage@snap-1  10 GiB       1.2 GiB
 myimage@snap-2  10 GiB       800 MiB

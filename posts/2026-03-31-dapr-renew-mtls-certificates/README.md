@@ -14,7 +14,7 @@ Dapr uses a certificate hierarchy for mTLS: a root CA certificate and an issuer 
 
 Dapr's certificate chain:
 
-```
+```text
 Root CA Certificate (self-signed, stored in dapr-trust-bundle)
   |
   +-- Issuer Certificate (signed by root CA, used by Sentry)

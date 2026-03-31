@@ -12,7 +12,7 @@ Description: Build a real-time search indexing pipeline with Dapr that extracts,
 
 A search indexing pipeline collects content from multiple source systems (databases, file stores, APIs), processes and enriches it, then writes it to a search index. Dapr's pub/sub and bindings building blocks enable a decoupled, scalable indexing architecture.
 
-```
+```text
 Source Services --> [content-published] --> Extractor
                                                |
                                           [content-extracted] --> Enricher

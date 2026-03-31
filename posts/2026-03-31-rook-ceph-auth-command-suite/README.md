@@ -22,7 +22,7 @@ ceph auth ls
 
 Output shows all entities with their capabilities:
 
-```
+```text
 client.admin
     key: AQBxyz...
     caps: [mds] allow *

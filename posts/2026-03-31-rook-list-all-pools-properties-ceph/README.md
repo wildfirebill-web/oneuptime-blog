@@ -44,7 +44,7 @@ ceph osd pool get replicapool all
 
 Sample output:
 
-```
+```yaml
 size: 3
 min_size: 2
 pg_num: 128

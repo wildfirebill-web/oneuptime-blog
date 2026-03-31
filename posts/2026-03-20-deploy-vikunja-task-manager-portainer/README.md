@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Vikunja,Task Manager,Portainer,Docker,To-Do,Self-Hosted,Productivity
+Tags: Vikunja, Task Manager, Portainer, Docker, To-Do, Self-Hosted, Productivity
 
 Description: Deploy Vikunja open-source task management application via Portainer as a self-hosted alternative to Todoist and Microsoft To-Do.
 

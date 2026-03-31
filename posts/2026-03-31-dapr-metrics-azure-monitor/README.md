@@ -74,7 +74,7 @@ kubectl apply -f ama-metrics-config.yaml
 
 Open the Azure portal and navigate to your Azure Monitor workspace. Use the Metrics Explorer or run PromQL queries:
 
-```
+```text
 # Request rate via Azure Managed Prometheus
 rate(dapr_http_server_request_count[5m])
 ```

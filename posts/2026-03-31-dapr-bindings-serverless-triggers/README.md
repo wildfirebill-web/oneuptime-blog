@@ -166,7 +166,7 @@ spec:
 
 ## Comparing Trigger Approaches
 
-```
+```text
 | Trigger Type    | Dapr Binding Type      | Use Case                    |
 |-----------------|------------------------|-----------------------------|
 | Cron/Schedule   | bindings.cron          | Batch jobs, cleanup tasks   |

@@ -88,7 +88,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Output includes:
 
-```
+```text
 stripe unit: 1 MiB
 stripe count: 4
 ```

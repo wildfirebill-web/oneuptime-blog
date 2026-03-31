@@ -117,7 +117,7 @@ kubectl logs -l app=my-service -c daprd | grep "resiliency"
 
 Expected output:
 
-```
+```text
 level=info msg="Found resiliency policy for component redis-statestore"
 level=info msg="Found resiliency policy for component payment-pubsub"
 ```

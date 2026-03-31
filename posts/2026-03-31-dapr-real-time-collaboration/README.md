@@ -12,7 +12,7 @@ Real-time collaboration features - like Google Docs-style concurrent editing, li
 
 ## Architecture
 
-```
+```text
 User Actions -> WebSocket Server -> Dapr Actor (document state) -> Pub/Sub broadcast -> All users
 ```
 

@@ -143,7 +143,7 @@ mongoldap \
 
 Expected output:
 
-```
+```text
 Running MongoDB LDAP authorization validation checks...
    Provided username: jsmith@example.com
    Transformed username: CN=jsmith,CN=Users,DC=example,DC=com

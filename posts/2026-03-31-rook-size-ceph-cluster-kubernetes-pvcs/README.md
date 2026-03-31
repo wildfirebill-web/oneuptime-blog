@@ -50,7 +50,7 @@ print(f'Total PVC requested: {total} GiB')
 
 Most platforms use an overcommit ratio between 1.5x and 3x:
 
-```
+```yaml
 Overcommit ratio = Total PVC requested / Actual cluster capacity
 
 Conservative: 1.5x (actual usage expected to be 60-70% of requested)
@@ -60,7 +60,7 @@ Aggressive: 3x (dev/test environments with many unused PVCs)
 
 Example sizing:
 
-```
+```text
 200 PVCs averaging 50GB each = 10TB requested
 With 2x overcommit: cluster needs 5TB usable
 With 3x replication: 5TB * 3 / 0.8 = 18.75TB raw
@@ -112,7 +112,7 @@ kubectl get pvc my-db-pvc
 
 Use Prometheus queries to track actual vs. requested:
 
-```
+```text
 # Actual bytes used per PVC
 kubelet_volume_stats_used_bytes{namespace="production"}
 

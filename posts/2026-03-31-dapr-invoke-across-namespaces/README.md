@@ -16,7 +16,7 @@ By default, Dapr service invocation resolves app IDs within the same namespace. 
 
 To invoke a service in a different namespace, use the fully qualified name format:
 
-```
+```json
 {app-id}.{namespace}.svc.cluster.local
 ```
 

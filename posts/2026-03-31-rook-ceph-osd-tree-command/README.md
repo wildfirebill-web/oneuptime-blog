@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph osd tree
 
 Example output:
 
-```
+```text
 ID  CLASS  WEIGHT   TYPE NAME         STATUS  REWEIGHT  PRI-AFF
 -1         3.00000  root default
 -3         1.00000      host worker-1

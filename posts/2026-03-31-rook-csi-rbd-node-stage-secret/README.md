@@ -135,7 +135,7 @@ kubectl get secret rook-csi-rbd-node -n rook-ceph \
 
 Common errors:
 
-```
+```text
 # Wrong credentials
 GRPC error: rpc error: code = Internal desc = ... auth: unable to authenticate
 

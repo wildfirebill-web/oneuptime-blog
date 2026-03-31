@@ -18,13 +18,13 @@ kubectl describe pvc my-pvc
 
 You may see events like:
 
-```
+```text
 Warning  ProvisioningFailed  storageclass.storage.k8s.io "rook-ceph-block" not found
 ```
 
 or:
 
-```
+```text
 Warning  ProvisioningFailed  no volume plugin matched
 ```
 

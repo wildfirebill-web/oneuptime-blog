@@ -35,7 +35,7 @@ smbstatus -B
 
 Example output:
 
-```
+```text
 Samba version 4.19.0
 PID     Username     Group        Machine    Protocol Version  Encryption  Signing
 ------------------------------------------------------------------------
@@ -84,7 +84,7 @@ samba-exporter --port 9922 &
 
 Key metrics exposed:
 
-```
+```text
 samba_active_connections_total
 samba_open_files_total
 samba_bytes_read_total
@@ -105,7 +105,7 @@ scrape_configs:
 
 Create panels for key SMB metrics:
 
-```
+```text
 # Active connections over time
 samba_active_connections_total
 

@@ -16,7 +16,7 @@ Dapr components are Kubernetes custom resources that define connections to criti
 
 Organize Dapr components in a structured Git repository layout:
 
-```
+```text
 infrastructure/
   dapr/
     components/

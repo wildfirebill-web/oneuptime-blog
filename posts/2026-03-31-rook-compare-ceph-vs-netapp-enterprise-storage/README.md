@@ -86,7 +86,7 @@ Ceph advantages:
 
 ## Total Cost of Ownership
 
-```
+```text
 NetApp ONTAP:
 - Hardware: $50,000 - $500,000+
 - Software licenses: $10,000 - $100,000+/year

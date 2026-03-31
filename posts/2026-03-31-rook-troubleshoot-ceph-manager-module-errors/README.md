@@ -20,7 +20,7 @@ ceph health detail
 
 Example output indicating a failed module:
 
-```
+```text
 HEALTH_WARN Module 'influx' has failed: No module named 'influxdb'
 ```
 

@@ -28,7 +28,7 @@ dmesg | grep -i ceph | tail -30
 
 Common messages:
 
-```
+```yaml
 rbd: error mapping block device: -5
 libceph: mon0 10.0.0.10:6789 failed to open socket: -111
 libceph: unable to connect to any monitors

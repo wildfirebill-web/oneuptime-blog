@@ -84,7 +84,7 @@ atlas accessLists list
 
 Output example:
 
-```
+```text
 IP ADDRESS      TYPE    COMMENT                       CREATED
 10.0.0.0/16     CIDR    AWS VPC private range         2026-01-15
 203.0.113.50    IP      Production server static IP   2026-02-01

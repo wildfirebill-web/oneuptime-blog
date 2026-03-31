@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Go, Grpc, Service, Microservice, Sdk
+Tags: Dapr, Go, gRPC, Service, Microservice, Sdk
 
 Description: Build a high-performance Dapr Go microservice using the gRPC service implementation for low-latency service invocation and pub/sub event handling.
 

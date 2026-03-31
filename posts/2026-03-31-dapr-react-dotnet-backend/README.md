@@ -12,7 +12,7 @@ Combining React, .NET, and Dapr gives you a modern full-stack architecture where
 
 ## Architecture Overview
 
-```
+```text
 React (browser) -> React Dev Server -> Dapr HTTP API -> .NET Service
 ```
 

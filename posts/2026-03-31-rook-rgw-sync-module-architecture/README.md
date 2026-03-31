@@ -31,7 +31,7 @@ radosgw-admin zone get --rgw-zone=secondary-zone | jq '.tier_config'
 
 ## Sync Module Components
 
-```
+```text
 Object Write (Primary Zone)
        |
        v

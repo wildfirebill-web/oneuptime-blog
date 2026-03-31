@@ -127,7 +127,7 @@ curl -s http://192.168.1.100:30928/metrics | grep ceph_health_status
 
 Check in Prometheus that targets are UP:
 
-```
+```text
 Status -> Targets -> ceph-rook
 ```
 

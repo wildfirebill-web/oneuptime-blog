@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Example:
 
-```
+```text
 HEALTH_WARN Reduced data availability: 6 pgs inactive; insufficient replica count: 12 pgs
 ```
 

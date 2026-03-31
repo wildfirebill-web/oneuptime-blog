@@ -35,7 +35,7 @@ spec:
 
 Key Prometheus metrics for OSD latency:
 
-```
+```text
 ceph_osd_apply_latency_ms   - Apply latency per OSD in milliseconds
 ceph_osd_commit_latency_ms  - Commit latency per OSD in milliseconds
 ```
@@ -67,7 +67,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- bash -c "
 
 This produces output like:
 
-```
+```text
 osd  commit_latency(ms)  apply_latency(ms)
   0                  2                  1
   1                 45                 40

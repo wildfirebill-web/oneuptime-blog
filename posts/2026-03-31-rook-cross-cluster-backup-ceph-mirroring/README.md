@@ -117,7 +117,7 @@ kubectl -n rook-ceph exec deploy/rook-ceph-tools -- \
 
 Output shows each image's sync state:
 
-```
+```yaml
 health: OK
 images: 5 total
   5 replaying

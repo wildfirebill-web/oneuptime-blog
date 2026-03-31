@@ -39,7 +39,7 @@ platform new-service --name order-processor \
 
 This generates:
 
-```
+```text
 order-processor/
   app.py                          # Application skeleton
   requirements.txt

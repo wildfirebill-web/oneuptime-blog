@@ -16,7 +16,7 @@ High-IOPS workloads - databases, OLTP systems, message queues, and key-value sto
 
 A single NVMe drive delivers approximately 500K-1M IOPS (4K random read). However, Ceph replication means each write goes to 3 OSDs, multiplying the IOPS requirement:
 
-```
+```yaml
 Target: 500K write IOPS from clients
 Each write = 3 OSD writes (3x replication)
 Total OSD IOPS needed: 500K * 3 = 1.5M IOPS
@@ -29,7 +29,7 @@ Target 1M read IOPS / 500K per NVMe = 2 NVMe OSDs minimum
 
 ## Hardware Selection for IOPS
 
-```
+```yaml
 NVMe drives: PCIe Gen4 x4 (Samsung 990 Pro, WD SN850X, etc.)
 Per-drive IOPS: 500K-1.2M (4K random read)
 Per-drive latency: 0.1-0.2ms

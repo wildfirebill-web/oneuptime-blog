@@ -93,7 +93,7 @@ kubectl get svc -n rook-ceph | grep rgw
 
 ## Swift URL Format
 
-```
+```yaml
 http://<rgw-endpoint>/swift/v1/AUTH_<username>/<container>/<object>
 ```
 

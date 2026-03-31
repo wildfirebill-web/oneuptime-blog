@@ -34,7 +34,7 @@ ceph progress
 
 Example output:
 
-```
+```text
 Global Recovery Event
   [========================  ] (Progress: 0.97)
 

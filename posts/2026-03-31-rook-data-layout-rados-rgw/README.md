@@ -41,7 +41,7 @@ cat /tmp/userdata.json
 
 Each bucket has an index object (or multiple shards) in the `default.rgw.buckets.index` pool. The naming convention is:
 
-```
+```text
 .dir.<bucket-marker>.<shard-number>
 ```
 
@@ -64,7 +64,7 @@ rados -p default.rgw.buckets.data ls | grep "$MARKER"
 ```
 
 Object naming format in the data pool:
-```
+```text
 <bucket-marker>_<object-key>
 ```
 

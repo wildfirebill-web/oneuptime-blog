@@ -16,7 +16,7 @@ Raw load test output contains a wealth of information, but understanding what th
 
 A typical `hey` output for Dapr service invocation:
 
-```
+```toml
 Summary:
   Total:        30.0124 secs
   Slowest:      0.8423 secs

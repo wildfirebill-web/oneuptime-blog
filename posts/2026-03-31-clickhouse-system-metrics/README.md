@@ -138,7 +138,7 @@ curl http://localhost:9363/metrics | grep "clickhouse_metrics"
 
 Example output:
 
-```
+```text
 # HELP clickhouse_metrics_Query Number of executing queries
 # TYPE clickhouse_metrics_Query gauge
 clickhouse_metrics_Query 3

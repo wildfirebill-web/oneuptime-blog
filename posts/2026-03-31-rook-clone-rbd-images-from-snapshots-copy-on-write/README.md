@@ -59,7 +59,7 @@ rbd info mypool/clone-for-app1
 ```
 
 Output shows:
-```
+```yaml
 parent: mypool/golden-image@v1
 overlap: 20 GiB
 ```
@@ -71,7 +71,7 @@ rbd children mypool/golden-image@v1
 ```
 
 Output:
-```
+```text
 mypool/clone-for-app1
 mypool/clone-for-app2
 ```

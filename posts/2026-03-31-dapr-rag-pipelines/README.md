@@ -21,7 +21,7 @@ Dapr provides the operational backbone: durable pipelines, state management for 
 
 ## Architecture
 
-```
+```text
 Documents (S3, DB, SharePoint)
          |
    Indexing Pipeline (async)

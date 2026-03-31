@@ -21,7 +21,7 @@ kubectl describe pod <pod-name> -n <namespace> | grep -A5 "Last State"
 
 An OOMKilled container shows:
 
-```
+```text
 Last State:     Terminated
   Reason:       OOMKilled
   Exit Code:    137

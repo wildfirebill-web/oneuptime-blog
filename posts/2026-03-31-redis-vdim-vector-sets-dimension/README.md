@@ -36,7 +36,7 @@ VDIM embeddings
 
 Expected output:
 
-```
+```text
 (integer) 4
 ```
 

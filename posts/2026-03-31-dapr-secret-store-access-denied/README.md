@@ -16,7 +16,7 @@ Dapr reads secrets through its secret store building block. When you reference a
 
 ## Error Messages
 
-```
+```yaml
 error getting secret: forbidden: secrets "myapp-secrets" is forbidden
 ERR_SECRET_GET: error getting secret value: access denied
 failed to get secret from secret store secretstore: permission denied

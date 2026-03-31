@@ -107,7 +107,7 @@ await server.pubsub.subscribe('saga-pubsub', 'payment.charged', async (event) =>
 
 ## Compensation Chain
 
-```
+```text
 order.created
   -> inventory.reserved -> payment.charged -> order.completed
 

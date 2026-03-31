@@ -120,7 +120,7 @@ warp get \
 
 Monitor cache hit rate in Prometheus:
 
-```
+```text
 rate(ceph_rgw_cache_hit[5m]) / rate(ceph_rgw_cache_miss[5m])
 ```
 

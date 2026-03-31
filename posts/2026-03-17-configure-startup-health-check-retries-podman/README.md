@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Checks, Startup, Retries
+Tags: Podman, Containers, DevOps, Health Check, Startup, Retries
 
 Description: Learn how to configure startup health check retries in Podman to control how many attempts are allowed during container initialization.
 

@@ -14,7 +14,7 @@ Ceph monitors (MONs) maintain the authoritative cluster map - tracking OSD statu
 
 ## Monitor Quorum Basics
 
-```
+```text
 Quorum requirement: (N/2) + 1 monitors must be healthy
 
 3 monitors -> need 2 for quorum -> tolerate 1 failure

@@ -1,4 +1,4 @@
-# How to Configure Dapr State Store Concurrency (First-Write-Wins vs Last-Write-Wins)
+# How to Configure Dapr State Store Concurrency (First-Write-Wins vs
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -72,7 +72,7 @@ curl -i http://localhost:3500/v1.0/state/statestore/account:alice
 
 Response:
 
-```
+```yaml
 HTTP/1.1 200 OK
 ETag: "3"
 Content-Type: application/json

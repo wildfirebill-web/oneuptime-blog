@@ -14,7 +14,7 @@ While Dapr manages the `appId||` prefix automatically, the portion of the key yo
 
 ## Key Anatomy
 
-```
+```json
 {daprPrefix}||{yourKeyScheme}
      ^                ^
  managed by Dapr   you control this
@@ -26,7 +26,7 @@ The Dapr prefix is `{appId}||` by default. Everything after that is your key sch
 
 Use a consistent type prefix to group related keys:
 
-```
+```yaml
 order:{orderId}
 user:{userId}
 session:{sessionId}
@@ -49,7 +49,7 @@ curl -X POST http://localhost:3500/v1.0/state/statestore \
 
 For multi-tenant applications, prefix with the tenant ID:
 
-```
+```json
 {tenantId}:{resourceType}:{resourceId}
 ```
 
@@ -68,7 +68,7 @@ Both tenants can have `ord-001` without collision. See the multi-tenancy guide f
 
 Model parent-child relationships:
 
-```
+```json
 {parentId}:{childType}:{childId}
 ```
 
@@ -86,7 +86,7 @@ curl -X POST http://localhost:3500/v1.0/state/statestore \
 
 Append a version for immutable history:
 
-```
+```json
 {resourceId}:v{version}
 ```
 
@@ -104,7 +104,7 @@ curl -X POST http://localhost:3500/v1.0/state/statestore \
 
 For time-series data, bucket by time period:
 
-```
+```yaml
 metrics:{metric}:{yyyymmdd}
 ```
 

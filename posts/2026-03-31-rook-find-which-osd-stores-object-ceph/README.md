@@ -57,7 +57,7 @@ ceph osd map rbd rbd_data.1234abc.0000000000000001
 
 Output:
 
-```
+```text
 osdmap e2145 pool 'rbd' (2) object 'rbd_data.1234abc.0000000000000001' -> pg 2.3a7f8c12 (2.12) -> up ([4,1,7], p4) acting ([4,1,7], p4)
 ```
 

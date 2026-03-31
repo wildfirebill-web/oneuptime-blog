@@ -79,7 +79,7 @@ kubectl logs -l app=myservice -c daprd --since=2m | grep -i "init\|component\|re
 
 A healthy output looks like:
 
-```
+```text
 time="2026-03-31T10:00:01Z" level=info msg="component loaded" name=statestore type=state.redis
 time="2026-03-31T10:00:02Z" level=info msg="dapr initialized. Status: Running"
 ```

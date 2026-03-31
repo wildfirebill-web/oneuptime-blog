@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Health Checks, Container Management, DevOps
+Tags: Portainer, Docker Swarm, Health Check, Container Management, DevOps
 
 Description: Learn how to configure health checks for Docker Swarm services using Portainer, ensuring unhealthy containers are automatically detected and replaced.
 

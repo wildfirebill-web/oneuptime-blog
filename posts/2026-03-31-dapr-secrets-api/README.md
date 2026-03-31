@@ -14,7 +14,7 @@ The Dapr Secrets API provides a unified interface for reading secrets from any s
 
 Your application calls the Dapr sidecar's secrets endpoint. The sidecar handles authentication with the backend secret store and returns the secret value:
 
-```
+```text
 App -> Dapr Sidecar -> Secret Store Backend (Vault, K8s, etc.)
 ```
 

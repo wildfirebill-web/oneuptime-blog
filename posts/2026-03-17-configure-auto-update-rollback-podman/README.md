@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Auto-Update, Rollback, Health Checks
+Tags: Podman, Containers, DevOps, Auto-Update, Rollback, Health Check
 
 Description: Learn how to configure Podman auto-update with rollback so containers automatically revert to the previous image if the new one fails health checks.
 

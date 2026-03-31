@@ -14,7 +14,7 @@ Data analysis pipelines often involve long-running tasks that must survive failu
 
 ## Pipeline Architecture
 
-```
+```text
 Data Source (S3, DB, API)
          |
    Ingestion Agent

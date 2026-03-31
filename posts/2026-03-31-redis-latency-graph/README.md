@@ -30,7 +30,7 @@ LATENCY GRAPH event-name
 
 ## Example Output
 
-```
+```yaml
 127.0.0.1:6379> LATENCY GRAPH command
 
 max latency: 156 ms

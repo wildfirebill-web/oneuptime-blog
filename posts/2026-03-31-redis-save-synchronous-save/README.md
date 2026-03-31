@@ -100,7 +100,7 @@ Monitor with `redis-cli --latency` if you suspect a blocking save is occurring u
 
 ## Detecting a Blocking SAVE in Logs
 
-```
+```json
 [1234] 31 Mar 2026 12:30:00.000 * DB saved on disk
 ```
 

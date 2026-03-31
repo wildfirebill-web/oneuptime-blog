@@ -193,7 +193,7 @@ print()  # newline after completion
 
 Not all providers support streaming equally:
 
-```
+```yaml
 OpenAI:      Full streaming support
 Anthropic:   Full streaming support
 Ollama:      Full streaming support (local)

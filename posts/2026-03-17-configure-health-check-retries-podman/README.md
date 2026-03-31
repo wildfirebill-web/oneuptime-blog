@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Checks, Retries
+Tags: Podman, Containers, DevOps, Health Check, Retries
 
 Description: Learn how to configure health check retries in Podman to control how many consecutive failures mark a container as unhealthy.
 

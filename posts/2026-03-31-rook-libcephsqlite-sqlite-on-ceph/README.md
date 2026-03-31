@@ -80,13 +80,13 @@ conn.close()
 
 The connection URI follows this format:
 
-```
+```yaml
 ceph://[user@cluster]/pool:object-name
 ```
 
 Examples:
 
-```
+```yaml
 ceph:///mypool:app.db
 ceph://admin@ceph/analytics:events.sqlite
 ```

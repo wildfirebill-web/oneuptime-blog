@@ -22,7 +22,7 @@ ceph health detail
 
 Example output:
 
-```
+```text
 HEALTH_WARN clock skew detected on mon.b, mon.c
 MON_CLOCK_SKEW clock skew detected on mon.b
     mon.b clock skew 0.156s > max 0.05s

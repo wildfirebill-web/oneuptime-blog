@@ -22,7 +22,7 @@ dapr status --kubernetes | grep scheduler
 
 Sample output:
 
-```
+```text
   dapr-scheduler-server  dapr-system  True  Running  1  1.14.0  2h
 ```
 

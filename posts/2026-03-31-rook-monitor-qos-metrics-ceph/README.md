@@ -64,7 +64,7 @@ ceph daemon client.1234 perf dump | python3 -m json.tool | grep -i throttle
 
 Ceph exposes QoS-relevant metrics through its built-in Prometheus endpoint:
 
-```
+```text
 # OSD operation queue depth
 ceph_osd_op_wip
 
@@ -91,7 +91,7 @@ scrape_configs:
 
 Create panels to visualize QoS enforcement:
 
-```
+```text
 # Client IOPS per OSD
 rate(ceph_osd_op[5m])
 

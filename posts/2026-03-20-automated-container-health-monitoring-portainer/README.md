@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Monitoring, Docker, Health Checks, Automation, DevOps
+Tags: Portainer, Monitoring, Docker, Health Check, Automation, DevOps
 
 Description: Learn how to configure Docker health checks in Portainer stacks and automate monitoring and alerting for unhealthy containers.
 

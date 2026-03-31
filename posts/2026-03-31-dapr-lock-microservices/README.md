@@ -14,7 +14,7 @@ In a microservices architecture, distributed locks are needed when services acro
 
 Multiple microservices share a single Dapr lock store component. Each service acquires and releases locks via its local Dapr sidecar. The lock store (Redis) acts as the coordination point.
 
-```
+```json
 [Service A sidecar] ----\
 [Service B sidecar] -------> [Redis Lock Store]
 [Service C sidecar] ----/
@@ -65,7 +65,7 @@ This prevents unintended services from acquiring locks.
 
 Establish a naming convention for resource IDs to avoid collisions:
 
-```
+```json
 {domain}-{entity-type}-{entity-id}
 ```
 

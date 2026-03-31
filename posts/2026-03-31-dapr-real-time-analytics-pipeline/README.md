@@ -14,7 +14,7 @@ A real-time analytics pipeline ingests events, aggregates them on the fly, and e
 
 ## Pipeline Architecture
 
-```
+```text
 Event Sources --> Dapr Pub/Sub --> Aggregator Services --> Dashboard API
                                         |
                                    Dapr State (rolling windows)

@@ -25,7 +25,7 @@ kubectl get secret dapr-trust-bundle -n dapr-system -o jsonpath='{.data.issuer\.
 
 Common mTLS error messages in Dapr logs:
 
-```
+```text
 failed to authenticate sidecar: certificate has expired
 failed to verify certificate: x509: certificate signed by unknown authority
 TLS handshake error: remote error: tls: bad certificate

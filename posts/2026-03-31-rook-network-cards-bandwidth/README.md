@@ -14,7 +14,7 @@ Network is often the performance bottleneck in Ceph clusters. Ceph uses two logi
 
 ## Ceph's Two-Network Architecture
 
-```
+```text
 Public Network: Clients -> MON, MDS, RGW, OSD
 Cluster Network: OSD -> OSD (replication, recovery, backfill)
 ```

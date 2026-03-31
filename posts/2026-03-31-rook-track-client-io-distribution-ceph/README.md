@@ -24,7 +24,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- bash -c "
 
 The IO section shows aggregate client read and write rates:
 
-```
+```text
   io:
     client:   read: 250 MiB/s, 3200 op/s
               write: 120 MiB/s, 1800 op/s
@@ -42,7 +42,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- bash -c "
 
 Sample output:
 
-```
+```text
 pool rbd id 1
   client io 2100 op/s rd, 800 op/s wr, 180 MiB/s rd, 90 MiB/s wr
 
@@ -65,7 +65,7 @@ curl -s http://localhost:9091/metrics | grep kubelet_volume_stats
 
 Key metrics to track per PVC:
 
-```
+```text
 kubelet_volume_stats_used_bytes{persistentvolumeclaim="my-pvc"}
 kubelet_volume_stats_capacity_bytes{persistentvolumeclaim="my-pvc"}
 ```
@@ -94,7 +94,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- bash -c "
 
 This shows object count and read/write operations per pool:
 
-```
+```text
 POOL_NAME         USED  OBJECTS  CLONES  COPIES  MISSING_ON_PRIMARY
 rbd              50GiB    12500       0   37500                   0
 cephfs-data      20GiB     4200       0   12600                   0

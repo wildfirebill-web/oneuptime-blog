@@ -77,7 +77,7 @@ dapr run \
 
 ### Plain Text Log Sample
 
-```
+```text
 time="2026-03-31T10:00:00Z" level=info msg="starting Dapr Runtime" app_id=my-service scope=dapr.runtime ver=1.14.0
 ```
 

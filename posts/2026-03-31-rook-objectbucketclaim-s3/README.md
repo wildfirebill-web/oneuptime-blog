@@ -109,7 +109,7 @@ kubectl get secret my-app-bucket -n default -o yaml
 
 The ConfigMap contains:
 
-```
+```yaml
 BUCKET_HOST: rook-ceph-rgw-my-store.rook-ceph.svc
 BUCKET_PORT: "80"
 BUCKET_NAME: my-app-xxxxxx

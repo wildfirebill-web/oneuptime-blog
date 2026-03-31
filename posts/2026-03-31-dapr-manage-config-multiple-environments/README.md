@@ -14,7 +14,7 @@ Managing Dapr configuration across multiple environments is one of the first cha
 
 The simplest approach is to keep environment-specific component files in separate directories and apply them per environment.
 
-```
+```text
 components/
   dev/
     statestore.yaml

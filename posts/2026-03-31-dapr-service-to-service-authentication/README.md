@@ -44,7 +44,7 @@ kubectl logs -n dapr-system -l app=dapr-operator
 
 Each Dapr service gets a SPIFFE identity of the form:
 
-```
+```yaml
 spiffe://cluster.local/ns/{namespace}/app/{app-id}
 ```
 

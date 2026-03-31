@@ -103,7 +103,7 @@ Tanzu clusters run on VMware NSX-T or vSphere networking. Ensure Ceph ports are 
 
 If using NSX-T, create firewall rules allowing Ceph traffic between worker nodes:
 
-```
+```yaml
 Source: worker-node-security-group
 Destination: worker-node-security-group
 Ports: TCP 6789, 3300, 6800-7300

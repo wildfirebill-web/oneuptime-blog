@@ -23,7 +23,7 @@ Dapr exposes these actor lifecycle metrics:
 
 ## Querying Active Actor Count
 
-```
+```text
 # Active actors per type
 dapr_actor_active_actors{app_id="order-processor"}
 
@@ -36,7 +36,7 @@ dapr_actor_active_actors
 
 ## Activation and Deactivation Rate
 
-```
+```text
 # Activation rate (new actors being created)
 rate(dapr_actor_activated_total[5m])
 
@@ -53,7 +53,7 @@ High deactivation rates mean your actors are frequently going idle, which increa
 
 A growing pending call queue indicates actors cannot keep up with demand:
 
-```
+```text
 # Pending calls per actor type
 dapr_actor_pending_actor_calls{actor_type="OrderActor"}
 
@@ -63,7 +63,7 @@ dapr_actor_pending_actor_calls > 100
 
 ## Timer and Reminder Activity
 
-```
+```text
 # Timer firing rate per actor type
 rate(dapr_actor_timers_fired_total[5m])
 
@@ -113,7 +113,7 @@ groups:
 
 Create a dashboard panel showing actor lifecycle over time:
 
-```
+```text
 # Panel 1 - Active actors over time
 dapr_actor_active_actors{app_id="$app_id"}
 

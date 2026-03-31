@@ -61,7 +61,7 @@ EOF
 
 ## Approach 2: Kustomize Overlays
 
-```
+```text
 kubernetes/
   base/
     components/

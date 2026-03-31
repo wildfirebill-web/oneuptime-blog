@@ -12,7 +12,7 @@ Deploying Ceph to dozens of edge locations manually is error-prone and time-cons
 
 ## GitOps Architecture for Edge Ceph
 
-```
+```text
 Git Repository
   |-- base/           (common Rook operator + RBAC)
   |-- edge-profile/   (edge-specific CephCluster template)

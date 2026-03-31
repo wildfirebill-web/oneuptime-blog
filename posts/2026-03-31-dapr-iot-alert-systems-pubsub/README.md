@@ -12,7 +12,7 @@ IoT alert systems detect abnormal conditions from device telemetry and notify op
 
 ## Alert System Architecture
 
-```
+```text
 Telemetry -> Alert Evaluator -> alert-triggered topic -> Deduplicator -> Notification Router
                                                                         -> Email Handler
                                                                         -> SMS Handler

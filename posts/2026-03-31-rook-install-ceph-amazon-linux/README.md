@@ -23,7 +23,7 @@ Amazon Linux 2023 (AL2023) is Amazon's cloud-optimized Linux distribution based 
 
 Allow Ceph traffic between nodes in the cluster security group:
 
-```
+```text
 Inbound Rules:
 - Type: Custom TCP, Port Range: 6789, Source: cluster-sg
 - Type: Custom TCP, Port Range: 3300, Source: cluster-sg

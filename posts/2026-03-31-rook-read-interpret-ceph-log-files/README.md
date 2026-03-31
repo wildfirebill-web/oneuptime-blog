@@ -41,7 +41,7 @@ grep -E "WRN|ERR|HEALTH_WARN|HEALTH_ERR" /var/log/ceph/ceph.log | tail -50
 
 Slow requests are one of the most common entries:
 
-```
+```text
 2026-03-15 14:22:01.123 osd.3 slow request 30.234 seconds
 ```
 
@@ -49,7 +49,7 @@ This indicates an OSD took more than 30 seconds to handle a request - a sign of 
 
 PG state changes appear like this:
 
-```
+```text
 2026-03-15 14:23:11.456 pg 1.3 is active+recovering
 2026-03-15 14:25:00.789 pg 1.3 is active+clean
 ```

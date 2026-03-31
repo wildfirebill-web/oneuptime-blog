@@ -42,7 +42,7 @@ Before enabling autoscaling, review the current MDS setup:
 ceph fs status
 ```
 
-```
+```text
 cephfs - 3 clients
 ========
 RANK  STATE      MDS         ACTIVITY     DNS    INOS   DIRS   CAPS

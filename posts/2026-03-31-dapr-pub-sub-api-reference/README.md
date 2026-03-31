@@ -14,7 +14,7 @@ The Dapr Pub/Sub API lets applications publish messages to topics and subscribe 
 
 ## Base URL
 
-```
+```yaml
 http://localhost:{daprPort}/v1.0/publish/{pubsubName}/{topic}
 ```
 

@@ -100,7 +100,7 @@ Document this in your team wiki and reference it in AlertManager annotations.
 
 Define when to escalate from primary to secondary and beyond:
 
-```
+```text
 Level 1: Primary on-call engineer
   - Initial triage and standard runbook execution
   - Escalate after 20 minutes if unresolved

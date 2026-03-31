@@ -26,7 +26,7 @@ ORDER BY ts;
 
 Error:
 
-```
+```yaml
 Code: 603. DB::Exception: Creating columns of type LowCardinality(Float64) is not allowed
 by default due to expected negative impact on performance.
 Set allow_suspicious_low_cardinality_types = 1 to allow it.

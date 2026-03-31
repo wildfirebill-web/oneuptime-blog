@@ -108,7 +108,7 @@ mount -t nfs4 <loadbalancer-ip>:/exports/data /mnt/cephfs-nfs \
 
 For automount via `/etc/fstab`:
 
-```
+```text
 <lb-ip>:/exports/data  /mnt/cephfs-nfs  nfs4  vers=4.1,proto=tcp,noatime,_netdev  0  0
 ```
 

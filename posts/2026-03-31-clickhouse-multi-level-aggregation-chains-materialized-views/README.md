@@ -1,4 +1,4 @@
-# How to Build Multi-Level Aggregation Chains with Materialized Views in ClickHouse
+# How to Build Multi-Level Aggregation Chains with Materialized Views in
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -79,7 +79,7 @@ radosgw-admin sync status
 
 Expected output includes lines like:
 
-```
+```text
 data sync source: us-east-1/rgw
   syncing shard 0
   syncing shard 1

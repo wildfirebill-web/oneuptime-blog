@@ -12,7 +12,7 @@ Docker Compose is the most accessible way to run Dapr integration tests locally 
 
 ## Project Layout
 
-```
+```text
 project/
   src/
   tests/

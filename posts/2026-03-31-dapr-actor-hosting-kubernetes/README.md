@@ -64,7 +64,7 @@ dapr status -k
 
 Expected output:
 
-```
+```text
   NAME                   NAMESPACE    HEALTHY  STATUS   REPLICAS  VERSION
   dapr-operator          dapr-system  True     Running  1         1.x.x
   dapr-placement-server  dapr-system  True     Running  1         1.x.x
@@ -197,7 +197,7 @@ kubectl logs deployment/actor-service -c daprd | grep -i actor
 
 You should see log lines like:
 
-```
+```toml
 time="..." level=info msg="Actor runtime started. Actor idle timeout: 1h0m0s. Actor scan interval: 30s"
 time="..." level=info msg="Registered actor types: [CounterActor]"
 ```

@@ -72,7 +72,7 @@ kubectl exec my-pod -c daprd -- ss -tlnp
 
 Expected output:
 
-```
+```text
 State  Recv-Q  Send-Q  Local Address:Port
 LISTEN 0       128     0.0.0.0:3500
 LISTEN 0       128     0.0.0.0:3501

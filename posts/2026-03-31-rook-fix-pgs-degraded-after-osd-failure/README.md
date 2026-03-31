@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Example:
 
-```
+```text
 HEALTH_WARN 24 pgs degraded; 1 osd down
 ```
 

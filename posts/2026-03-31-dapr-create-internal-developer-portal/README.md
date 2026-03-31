@@ -59,7 +59,7 @@ Teams can then search the Backstage catalog to discover available Dapr component
 
 For smaller teams, a Confluence or Notion wiki works well. Structure it as:
 
-```
+```text
 Dapr Internal Guide/
   Getting Started/
     Install Dapr locally

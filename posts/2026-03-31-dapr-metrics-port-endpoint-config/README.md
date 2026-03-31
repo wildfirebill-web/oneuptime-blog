@@ -153,7 +153,7 @@ kubectl logs deploy/order-service -c daprd | grep -i "metrics"
 
 Expected output:
 
-```
+```text
 INFO metrics server started on :9090
 ```
 

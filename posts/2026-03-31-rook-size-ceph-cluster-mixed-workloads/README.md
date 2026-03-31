@@ -16,7 +16,7 @@ Most production Ceph clusters serve mixed workloads - databases requiring low-la
 
 Start by categorizing your applications:
 
-```
+```yaml
 IOPS-intensive:  databases (PostgreSQL, MySQL), key-value stores
 Throughput-heavy: ML training, backups, video ingest
 Capacity-heavy:  object storage, archives, cold data

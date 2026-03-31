@@ -134,7 +134,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Expected output shows separate IPs for public and cluster addresses:
 
-```
+```text
 public_addr 10.10.1.11:6800/...
 cluster_addr 10.10.2.11:6801/...
 ```

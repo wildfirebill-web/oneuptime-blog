@@ -21,7 +21,7 @@ The official Dapr documentation at `docs.dapr.io` is organized into several top-
 
 When you need to configure a Dapr component (e.g., a Redis state store), navigate to:
 
-```
+```text
 Reference > Component specs > State stores > Redis
 ```
 
@@ -47,7 +47,7 @@ Each endpoint shows required headers, query parameters, request body schema, and
 
 Use the built-in search and filter by version:
 
-```
+```yaml
 https://docs.dapr.io/search/?q=resiliency+policy
 ```
 

@@ -14,7 +14,7 @@ A finite state machine (FSM) tracks an entity through a well-defined sequence of
 
 ## Order FSM States and Transitions
 
-```
+```text
 draft -> confirmed -> paid -> shipped -> delivered
                  |
                  v

@@ -12,7 +12,7 @@ Event projections transform a stream of domain events into queryable read models
 
 ## Projection Architecture
 
-```
+```text
 Domain Event Published
         |
         v

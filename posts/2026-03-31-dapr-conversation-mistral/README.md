@@ -50,7 +50,7 @@ export MISTRAL_API_KEY=your-mistral-api-key
 
 ## Available Mistral Models
 
-```
+```text
 mistral-large-latest     # Most capable, best for complex tasks
 mistral-small-latest     # Efficient, good price-performance
 codestral-latest         # Optimized for code generation

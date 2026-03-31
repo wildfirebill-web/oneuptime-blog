@@ -16,7 +16,7 @@ Dapr is a CNCF project with a welcoming community and a clear contribution path.
 
 Dapr spans multiple repositories:
 
-```
+```text
 github.com/dapr/dapr          # Core runtime (Go)
 github.com/dapr/components-contrib  # Community components (Go)
 github.com/dapr/docs          # Documentation (Markdown)

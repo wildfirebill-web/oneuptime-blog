@@ -35,7 +35,7 @@ For TypeScript projects, types are included in the package - no separate `@types
 
 ## Basic Project Structure
 
-```
+```text
 my-dapr-app/
   src/
     index.ts

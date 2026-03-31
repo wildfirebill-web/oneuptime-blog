@@ -39,7 +39,7 @@ VLINKS items a
 
 Example output:
 
-```
+```text
 1) 1) "level 0"
    2) 1) "b"
       2) "c"
@@ -54,7 +54,7 @@ VLINKS items a WITHSCORES
 
 Example output:
 
-```
+```text
 1) 1) "level 0"
    2) 1) "b"
       2) "0.97823"

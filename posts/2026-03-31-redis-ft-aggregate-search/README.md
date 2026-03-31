@@ -53,7 +53,7 @@ FT.AGGREGATE idx:orders "*"
 
 Output:
 
-```
+```text
 1) (integer) 3
 2) 1) "status"
    2) "shipped"

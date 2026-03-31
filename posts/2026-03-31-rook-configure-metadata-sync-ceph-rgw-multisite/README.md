@@ -32,7 +32,7 @@ radosgw-admin sync status
 
 Look for output similar to:
 
-```
+```text
 metadata sync: syncing
         full sync: 0/64 shards
         incremental sync: 64/64 shards

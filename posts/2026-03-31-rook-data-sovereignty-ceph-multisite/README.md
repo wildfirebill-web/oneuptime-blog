@@ -14,7 +14,7 @@ Data sovereignty laws like GDPR, data localization requirements in India, and si
 
 Ceph multisite consists of realms, zone groups, and zones. Each zone maps to a physical Ceph cluster in a specific location:
 
-```
+```yaml
 Realm: global-company
   ZoneGroup: eu-region (eu-west)
     Zone: eu-primary (Frankfurt)

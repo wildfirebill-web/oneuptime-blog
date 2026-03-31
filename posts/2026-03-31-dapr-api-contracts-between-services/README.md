@@ -16,7 +16,7 @@ In a Dapr microservices architecture, API contracts define the expected request 
 
 Store OpenAPI specifications alongside each service:
 
-```
+```text
 services/
   order-service/
     contracts/

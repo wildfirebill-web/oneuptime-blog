@@ -110,7 +110,7 @@ SELECT name, type, path, free_space, total_space
 FROM system.disks;
 ```
 
-```
+```text
 name            type    path                            free_space   total_space
 default         local   /var/lib/clickhouse/            250000000000 500000000000
 s3_cold         s3      https://s3.amazonaws.com/...    0            0

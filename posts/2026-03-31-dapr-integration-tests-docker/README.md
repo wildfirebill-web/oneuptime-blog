@@ -16,7 +16,7 @@ Integration tests for Dapr services verify that your application works correctly
 
 Organize tests to keep integration tests separate from unit tests:
 
-```
+```text
 order-service/
   cmd/
   internal/

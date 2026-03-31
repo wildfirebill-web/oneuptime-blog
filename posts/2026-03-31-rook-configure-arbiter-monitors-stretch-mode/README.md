@@ -70,7 +70,7 @@ ceph mon dump | grep arbiter
 
 Expected output:
 
-```
+```text
 mon.mon-arbiter
   addr: 10.0.3.10:6789/0
   crush_location: datacenter=arbiter

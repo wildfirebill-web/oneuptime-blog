@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Load Balancer, Monitoring, Health Checks, Prometheus, Alerting
+Tags: IPv6, Load Balancer, Monitoring, Health Check, Prometheus, Alerting
 
 Description: A guide to monitoring IPv6 load balancer health, backend server availability, and traffic metrics using Prometheus, HAProxy stats, and custom health checks.
 

@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Output:
 
-```
+```text
 HEALTH_WARN clock skew detected on mon.b, mon.c
 mon.b clock skew 0.102 > max 0.050
 ```

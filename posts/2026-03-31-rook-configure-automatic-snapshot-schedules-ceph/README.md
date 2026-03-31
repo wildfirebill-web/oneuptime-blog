@@ -81,7 +81,7 @@ ceph fs snap-schedule status /data --fs myfs
 ```
 
 Output:
-```
+```json
 {
   "fs": "myfs",
   "subvol": null,
@@ -130,7 +130,7 @@ ls /mnt/cephfs/data/.snap/
 ```
 
 Output:
-```
+```text
 _scheduled_2026-03-31-000000_1711843200
 _scheduled_2026-03-30-000000_1711756800
 ```

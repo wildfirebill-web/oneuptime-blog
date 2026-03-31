@@ -20,7 +20,7 @@ dapr configurations --kubernetes
 
 Sample output:
 
-```
+```text
   NAMESPACE  NAME             TRACING-ENABLED  MTLS-ENABLED  AGE
   default    dapr-config      true             true          2h
   default    debug-config     false            true          1h

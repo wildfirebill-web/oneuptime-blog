@@ -12,7 +12,7 @@ Command and control systems send instructions to IoT devices and track whether c
 
 ## Command Flow
 
-```
+```text
 Operator API -> Device Actor (command queue) -> Pub/Sub -> MQTT Gateway -> Device
                                               <- ACK event <- Device
 ```

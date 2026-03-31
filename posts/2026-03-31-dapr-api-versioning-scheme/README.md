@@ -12,7 +12,7 @@ Description: Understand how Dapr versions its HTTP and gRPC APIs, what version l
 
 Dapr uses URL-based versioning for its HTTP API. The current stable API is `v1.0`, with preview features under `v1.0-alpha1`. The pattern follows:
 
-```
+```yaml
 http://localhost:3500/v1.0/{feature}/{...}
 http://localhost:3500/v1.0-alpha1/{preview-feature}/{...}
 ```

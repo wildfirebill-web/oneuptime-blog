@@ -14,7 +14,7 @@ A multi-layer caching strategy maximizes cache hit rates by serving objects from
 
 ## Architecture
 
-```
+```text
 Internet --> CDN/Nginx Cache --> RGW D3N Cache (SSD) --> RADOS
                                       |
                                   Redis Index

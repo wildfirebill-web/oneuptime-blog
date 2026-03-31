@@ -14,7 +14,7 @@ Turn-based concurrency is one of the most valuable features of the Dapr actor mo
 
 When multiple callers invoke methods on the same actor simultaneously, Dapr queues the requests and processes them one at a time:
 
-```
+```text
 Time -->
 Client A: ----[Increment]----done
 Client B:                 ---[Increment]----done  (waited for A)

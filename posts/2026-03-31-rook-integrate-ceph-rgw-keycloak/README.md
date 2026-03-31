@@ -28,7 +28,7 @@ Create a client in Keycloak for RGW:
 - Add a mapper to include a custom claim, e.g., `s3-role`, mapping to a role name
 
 Obtain the JWKS URI from Keycloak:
-```
+```yaml
 http://keycloak.example.com/auth/realms/myrealm/.well-known/openid-configuration
 ```
 

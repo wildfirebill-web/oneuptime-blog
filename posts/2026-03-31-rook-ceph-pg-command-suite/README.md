@@ -26,7 +26,7 @@ ceph pg dump
 
 Example `pg stat` output:
 
-```
+```text
 193 pgs: 193 active+clean; 45 GiB data, 135 GiB used, 865 GiB / 1 TiB avail
 ```
 
@@ -61,7 +61,7 @@ ceph osd map replicapool myobject-name
 
 Output:
 
-```
+```text
 osdmap e45 pool 'replicapool' (1) object 'myobject-name' -> pg 1.a5c2d3e4 (1.4) -> up ([0,2,4], p0) acting ([0,2,4], p0)
 ```
 

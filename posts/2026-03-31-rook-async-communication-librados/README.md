@@ -14,14 +14,14 @@ librados supports asynchronous I/O that allows multiple operations to be in-flig
 
 Synchronous operations serialize each request-response cycle:
 
-```
+```text
 Write A --> Wait --> Write B --> Wait --> Write C --> Wait
 Total time = 3 * (write_time + network_RTT)
 ```
 
 Async operations pipeline multiple requests:
 
-```
+```text
 Write A --> Write B --> Write C --> Wait for all
 Total time ≈ max(write_time) + 1 * network_RTT
 ```

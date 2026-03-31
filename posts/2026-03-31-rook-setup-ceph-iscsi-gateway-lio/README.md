@@ -49,7 +49,7 @@ gwcli
 
 Inside gwcli, configure the gateway:
 
-```
+```text
 /> cd /iscsi-targets
 /iscsi-targets> create iqn.2024-01.com.example:storage
 /iscsi-targets/iqn.../> cd gateways
@@ -59,14 +59,14 @@ Inside gwcli, configure the gateway:
 
 Add the RBD disk:
 
-```
+```text
 /iscsi-targets/iqn.../> cd disks
 /iscsi-targets/iqn.../disks> add rbd iscsi-pool disk1
 ```
 
 Map the disk to the target LUN:
 
-```
+```text
 /iscsi-targets/iqn.../hosts> create iqn.1991-05.com.microsoft:initiator1
 /iscsi-targets/iqn.../hosts/iqn.../> auth chap=initiator1/Password123
 /iscsi-targets/iqn.../hosts/iqn.../luns> add rbd/iscsi-pool/disk1
@@ -98,7 +98,7 @@ targetcli ls
 
 Expected output shows an iSCSI target with at least one LUN and portal:
 
-```
+```text
 o- / .....................................................................
   o- iscsi ................................................................
     o- iqn.2024-01.com.example:storage .................................

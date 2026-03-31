@@ -45,7 +45,7 @@ cookiecutter git@github.com:myorg/dapr-service-template.git
 
 Generated structure:
 
-```
+```text
 order-processor/
 ├── cmd/main.go               # Service entrypoint with Dapr client
 ├── components/

@@ -35,7 +35,7 @@ After Keycloak starts:
 
 Keycloak exposes JWKS at:
 
-```
+```yaml
 https://keycloak.example.com/realms/my-realm/protocol/openid-connect/certs
 ```
 

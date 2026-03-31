@@ -19,7 +19,7 @@ Dapr actors can call other actors, enabling hierarchical designs where parent ac
 
 ## Organization Hierarchy Example
 
-```
+```text
 OrgActor (org-001)
   |- DepartmentActor (dept-eng)
   |    |- TeamActor (team-backend)

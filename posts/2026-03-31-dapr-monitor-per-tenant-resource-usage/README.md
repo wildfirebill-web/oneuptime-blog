@@ -16,7 +16,7 @@ In a multi-tenant Dapr deployment, you need visibility into how much each tenant
 
 Dapr exposes Prometheus metrics with `app_id` and `namespace` labels, making it straightforward to slice metrics by tenant:
 
-```
+```text
 dapr_http_server_request_count{app_id="orders-api", namespace="tenant-a", method="POST", path="/orders", status="200"}
 dapr_component_state_get_total{app_id="orders-api", namespace="tenant-a", component="statestore"}
 dapr_component_pubsub_publish_total{app_id="orders-api", namespace="tenant-a", topic="orders"}
@@ -26,14 +26,14 @@ dapr_component_pubsub_publish_total{app_id="orders-api", namespace="tenant-a", t
 
 In Prometheus or Grafana, query per-tenant request rates:
 
-```
+```text
 # Requests per second by tenant (namespace)
 sum by (namespace) (
   rate(dapr_http_server_request_count[5m])
 )
 ```
 
-```
+```text
 # State operations per tenant per component
 sum by (namespace, component, operation) (
   rate(dapr_component_state_get_total[5m])
@@ -56,7 +56,7 @@ Create a dashboard variable for tenant (namespace) selection:
 
 Then use the variable in panels:
 
-```
+```text
 sum(rate(dapr_http_server_request_count{namespace="$tenant"}[5m]))
 ```
 
@@ -64,14 +64,14 @@ sum(rate(dapr_http_server_request_count{namespace="$tenant"}[5m]))
 
 Track CPU and memory by namespace using Kubernetes resource metrics:
 
-```
+```text
 # Average sidecar CPU by tenant namespace
 avg by (namespace) (
   rate(container_cpu_usage_seconds_total{container="daprd"}[5m])
 )
 ```
 
-```
+```text
 # Total sidecar memory by tenant
 sum by (namespace) (
   container_memory_working_set_bytes{container="daprd"}

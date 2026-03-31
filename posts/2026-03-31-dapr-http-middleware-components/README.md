@@ -16,7 +16,7 @@ Dapr supports middleware components that intercept HTTP requests flowing through
 
 Dapr's HTTP middleware pipeline processes requests in order:
 
-```
+```text
 App -> Dapr HTTP Port (3500) -> [Middleware 1] -> [Middleware 2] -> App Handler
                                                                          |
                                                               Service Invocation / APIs

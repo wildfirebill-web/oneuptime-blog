@@ -30,7 +30,7 @@ zstd --test -v /var/log/app/*.log
 ```
 
 Expected output:
-```
+```text
 app.log: 1.2 MB -> 180 KB (6.7x compression)
 ```
 
@@ -73,7 +73,7 @@ If OSD CPU usage is above 70%, compression will degrade performance.
 
 ## Decision Framework
 
-```
+```text
 Is data text, JSON, logs, or CSV?
   --> YES: Use force mode with zstd
   --> NO:

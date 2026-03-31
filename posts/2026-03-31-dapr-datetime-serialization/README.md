@@ -14,7 +14,7 @@ DateTime serialization is a common source of bugs in distributed systems. In Dap
 
 The standard solution: always serialize DateTimes as ISO 8601 strings in UTC.
 
-```
+```yaml
 Good: "2026-03-31T10:00:00Z"           (UTC, unambiguous)
 Good: "2026-03-31T10:00:00.000Z"       (with milliseconds)
 Avoid: "03/31/2026 10:00:00"           (locale-dependent)

@@ -14,7 +14,7 @@ Kustomize enables environment-specific customization of Kubernetes manifests wit
 
 ## Project Structure
 
-```
+```text
 dapr-config/
   base/
     kustomization.yaml

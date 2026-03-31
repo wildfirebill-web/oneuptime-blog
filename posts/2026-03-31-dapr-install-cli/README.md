@@ -87,7 +87,7 @@ dapr --version
 
 Expected output:
 
-```
+```text
 CLI version: 1.14.x
 Runtime version: n/a
 ```

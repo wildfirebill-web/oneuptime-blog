@@ -36,7 +36,7 @@ Create or update `/etc/multipath.conf`:
 cat /etc/multipath.conf
 ```
 
-```
+```text
 defaults {
     user_friendly_names yes
     find_multipaths yes

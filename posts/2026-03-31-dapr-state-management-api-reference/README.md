@@ -16,7 +16,7 @@ The Dapr State Management API provides a uniform interface for storing and retri
 
 All state management API calls go through the Dapr sidecar:
 
-```
+```yaml
 http://localhost:{daprPort}/v1.0/state/{storeName}
 ```
 

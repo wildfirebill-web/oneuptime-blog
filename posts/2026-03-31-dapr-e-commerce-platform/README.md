@@ -14,7 +14,7 @@ A modern e-commerce platform requires reliable order processing, inventory manag
 
 ## Service Architecture
 
-```
+```text
 API Gateway
   |-- product-service    (catalog, search)
   |-- cart-service       (shopping cart state)

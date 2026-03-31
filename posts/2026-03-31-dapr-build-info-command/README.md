@@ -20,7 +20,7 @@ dapr build-info
 
 Sample output:
 
-```
+```yaml
 Version: 1.13.0
 Commit: a1b2c3d4e5f6789012345678901234567890abcd
 Date: 2026-01-15T10:00:00Z

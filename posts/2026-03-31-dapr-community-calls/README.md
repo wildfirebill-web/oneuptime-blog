@@ -16,7 +16,7 @@ Dapr hosts regular community calls where maintainers present roadmap updates, co
 
 Dapr community calls are held bi-weekly on Thursdays:
 
-```
+```yaml
 Frequency: Every two weeks
 Time: 9:00 AM Pacific / 17:00 UTC
 Platform: Zoom (link in dapr/community repository)
@@ -69,7 +69,7 @@ gh issue comment 123 \
 
 All community call recordings are uploaded to YouTube:
 
-```
+```yaml
 YouTube Playlist: Dapr Community
 https://www.youtube.com/@dapr_io
 ```
@@ -83,7 +83,7 @@ grep -r "workflow" community/meetings/ | head -20
 
 Real-time community discussions happen on Discord:
 
-```
+```text
 Discord server: https://discord.gg/ptHhX6jc34
 
 Key channels:
@@ -104,7 +104,7 @@ Key channels:
 
 Dapr has Special Interest Groups for focused areas:
 
-```
+```text
 SIG Runtime    - Core Dapr runtime development
 SIG API        - API design and versioning
 SIG Security   - Security features and CVEs

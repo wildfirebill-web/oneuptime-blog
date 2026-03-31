@@ -27,7 +27,7 @@ Define clear categories of events before building:
 
 Group related capabilities into bounded contexts:
 
-```
+```text
 Order Service         -> publishes: OrderPlaced, OrderCancelled
 Inventory Service     -> publishes: InventoryReserved, StockLow
 Payment Service       -> publishes: PaymentProcessed, PaymentFailed

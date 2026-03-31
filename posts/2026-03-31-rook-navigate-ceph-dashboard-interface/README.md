@@ -65,7 +65,7 @@ The left sidebar contains these primary sections:
 
 ## Dashboard URL Structure
 
-```
+```yaml
 https://dashboard-host:8443/#/dashboard     - Main overview
 https://dashboard-host:8443/#/hosts         - Cluster hosts
 https://dashboard-host:8443/#/osd           - OSD management

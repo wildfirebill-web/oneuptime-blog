@@ -16,7 +16,7 @@ When a pod with `dapr.io/enabled: "true"` is created, Kubernetes calls the Dapr 
 
 ## Common Error Messages
 
-```
+```text
 Error from server (InternalError): error when creating "deployment.yaml":
 Internal error occurred: failed calling webhook "sidecar-injector.dapr.io":
 Post "https://dapr-sidecar-injector.dapr-system.svc:443/mutate":
@@ -25,7 +25,7 @@ dial tcp: lookup dapr-sidecar-injector.dapr-system.svc: no such host
 
 Or:
 
-```
+```text
 admission webhook "sidecar-injector.dapr.io" denied the request:
 namespace not found
 ```

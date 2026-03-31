@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dapr, Etcd, State Store, Kubernetes, Microservice
+Tags: Dapr, etcd, State Store, Kubernetes, Microservice
 
 Description: Learn how to configure Dapr to use etcd as a state store, leveraging etcd's strongly consistent distributed key-value storage for your microservices.
 

@@ -56,7 +56,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Expected output:
 
-```
+```text
 # HELP ceph_health_status Health status of the cluster
 # TYPE ceph_health_status gauge
 ceph_health_status 0

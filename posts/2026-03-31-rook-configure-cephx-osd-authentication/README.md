@@ -14,7 +14,7 @@ OSD authentication in CephX controls which clients can read and write data, and 
 
 OSD capabilities follow this format:
 
-```
+```text
 allow [rwx] [pool=<pool>] [object_prefix=<prefix>] [namespace=<ns>]
 ```
 

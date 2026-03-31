@@ -16,7 +16,7 @@ In self-hosted ClickHouse, `ReplicatedMergeTree` copies data parts between repli
 
 `SharedMergeTree` stores data parts in shared object storage. All replicas access the same data directly, eliminating inter-node data transfer for replication. Only metadata is coordinated between nodes.
 
-```
+```yaml
 ReplicatedMergeTree:
   Node 1 [local disk: part_1, part_2] <-- ZooKeeper --> Node 2 [local disk: part_1, part_2]
 

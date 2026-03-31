@@ -107,7 +107,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Expected output when encryption is fully enabled:
 
-```
+```text
 ms_cluster_mode    secure
 ms_service_mode    secure
 ms_client_mode     secure

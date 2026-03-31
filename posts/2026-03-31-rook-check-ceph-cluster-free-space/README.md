@@ -22,7 +22,7 @@ ceph df
 
 Sample output:
 
-```
+```text
 --- RAW STORAGE ---
 CLASS  SIZE     AVAIL    USED     RAW USED  %RAW USED
 hdd    100 TiB  73 TiB   27 TiB  27 TiB    27.00

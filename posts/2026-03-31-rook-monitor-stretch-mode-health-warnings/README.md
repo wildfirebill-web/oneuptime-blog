@@ -22,7 +22,7 @@ ceph health detail
 
 This warning appears when one site is down or has fewer OSDs than the other site:
 
-```
+```text
 HEALTH_WARN 1 osds down in stretch mode; 2 pgs degraded
 STRETCH_MODE_DEGRADED 1 osds down in stretch mode
 ```

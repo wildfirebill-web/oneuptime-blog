@@ -203,7 +203,7 @@ kubectl exec -n rook-ceph deploy/rook-ceph-tools -- \
 
 Expected sync status (when caught up):
 
-```
+```yaml
 realm: my-realm
 zonegroup: us
 zone: us-west

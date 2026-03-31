@@ -32,7 +32,7 @@ kubectl logs deployment/my-service -c daprd | grep -i "configuration\|component\
 
 Common initialization errors:
 
-```
+```text
 # Redis keyspace notifications not enabled
 "error initializing configuration store: ERR Redis keyspace notifications are not enabled"
 

@@ -22,7 +22,7 @@ dapr list
 
 Sample output:
 
-```
+```text
   APP ID           HTTP PORT  GRPC PORT  APP PORT  COMMAND        AGE  PID
   order-service    3500       50001      8080      node index.js  10s  12345
   inventory-svc    3501       50002      8081      python app.py  10s  12346
@@ -43,7 +43,7 @@ dapr list -k
 
 Sample output:
 
-```
+```text
   NAMESPACE  APP ID           HTTP PORT  GRPC PORT  AGE  CREATED
   default    order-service    80         50001      2h   2026-03-31 10:00:00
   default    inventory-svc    80         50001      2h   2026-03-31 10:00:01

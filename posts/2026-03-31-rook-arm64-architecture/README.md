@@ -35,7 +35,7 @@ docker buildx imagetools inspect rook/ceph:v1.15.0 | grep -A2 Platform
 
 Expected output should include:
 
-```
+```yaml
 Platform: linux/amd64
 Platform: linux/arm64
 ```

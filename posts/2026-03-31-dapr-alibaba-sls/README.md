@@ -137,7 +137,7 @@ app.use(async (req, res, next) => {
 
 Use SLS query syntax to analyze Dapr service logs:
 
-```
+```sql
 action: "order_created" |
 SELECT COUNT(*) as order_count,
        AVG(amount) as avg_amount

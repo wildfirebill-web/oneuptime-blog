@@ -73,7 +73,7 @@ curl http://localhost:9090/metrics | grep dapr_component_pubsub
 
 Sample output:
 
-```
+```text
 dapr_component_pubsub_ingress_count{app_id="order-processor",component="pubsub",namespace="default",process_status="success",topic="orders"} 1432
 dapr_component_pubsub_ingress_count{app_id="order-processor",component="pubsub",namespace="default",process_status="retry",topic="orders"} 17
 dapr_component_pubsub_ingress_count{app_id="order-processor",component="pubsub",namespace="default",process_status="drop",topic="orders"} 3
@@ -101,7 +101,7 @@ scrape_configs:
 
 ## Grafana Dashboard Queries
 
-```
+```text
 # Messages processed per second (success)
 rate(dapr_component_pubsub_ingress_count{process_status="success"}[5m])
 

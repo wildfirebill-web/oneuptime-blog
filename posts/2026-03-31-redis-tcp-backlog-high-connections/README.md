@@ -54,7 +54,7 @@ CONFIG SET tcp-backlog 1024
 
 The OS kernel also limits the listen backlog. The actual effective value is:
 
-```
+```text
 effective_backlog = min(tcp-backlog, net.core.somaxconn)
 ```
 
@@ -86,7 +86,7 @@ sysctl -w net.ipv4.tcp_max_syn_backlog=1024
 
 If `net.core.somaxconn` is lower than `tcp-backlog`, Redis logs a warning:
 
-```
+```yaml
 WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
 ```
 

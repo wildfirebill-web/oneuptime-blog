@@ -76,7 +76,7 @@ For a cleaner local workflow, use Docker Compose to start both your service cont
 
 Always include a `.dockerignore` file to exclude files that should not be in the image:
 
-```
+```text
 node_modules
 .git
 .env

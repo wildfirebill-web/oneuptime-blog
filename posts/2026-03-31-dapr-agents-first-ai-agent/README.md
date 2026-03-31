@@ -113,7 +113,7 @@ dapr run --app-id weather-agent \
 
 Expected interaction:
 
-```
+```yaml
 Weather Agent ready. Type your question:
 > What is the weather in London and should I bring an umbrella?
 

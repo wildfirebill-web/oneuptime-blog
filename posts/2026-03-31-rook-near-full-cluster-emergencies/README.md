@@ -19,12 +19,12 @@ kubectl -n rook-ceph exec deploy/rook-ceph-tools -- ceph status
 ```
 
 Near-full (85%+):
-```
+```text
 HEALTH_WARN 2 nearfull osd(s)
 ```
 
 Full (95%+):
-```
+```text
 HEALTH_ERR 1 full osd(s); writing blocked
 ```
 

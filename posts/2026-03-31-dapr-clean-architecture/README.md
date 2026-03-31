@@ -14,7 +14,7 @@ Clean Architecture organizes code into concentric layers: Entities (core domain)
 
 ## Project Structure
 
-```
+```text
 src/
 - Domain/
   - Entities/

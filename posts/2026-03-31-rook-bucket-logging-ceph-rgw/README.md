@@ -59,7 +59,7 @@ aws s3 ls s3://access-logs/mybucket-logs/ \
 
 Each log file contains lines like:
 
-```
+```text
 79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be mybucket [10/Jan/2026:09:00:00 +0000] 192.168.1.100 alice REQID REST.GET.OBJECT key.txt "GET /mybucket/key.txt HTTP/1.1" 200 - 2048 2048 30 20 "-" "aws-cli/2.0" -
 ```
 

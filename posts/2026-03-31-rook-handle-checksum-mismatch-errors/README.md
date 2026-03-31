@@ -28,7 +28,7 @@ ceph health detail
 
 Look for output like:
 
-```
+```text
 HEALTH_ERR 1 osds have slow ops; 1 pgs are damaged; 2 bluestore_csum_errors
 ```
 

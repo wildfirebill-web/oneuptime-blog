@@ -97,7 +97,7 @@ watch ceph -s
 
 Expected recovery output:
 
-```
+```yaml
 io:
   recovery: 125 MiB/s, 32 objects/s
 ```

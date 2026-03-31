@@ -55,7 +55,7 @@ dapr run --app-id myapp --log-level debug -- node app.js
 
 Look for log lines related to lock operations:
 
-```
+```text
 time="2026-03-31T10:00:00Z" level=debug msg="TryLock called" resourceID=my-resource lockOwner=worker-1
 time="2026-03-31T10:00:30Z" level=debug msg="Unlock called" resourceID=my-resource lockOwner=worker-1
 ```

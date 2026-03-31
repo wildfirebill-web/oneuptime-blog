@@ -36,7 +36,7 @@ ORDER BY query_start_time DESC;
 
 If the result exceeds 100 000 rows or 100 MB, ClickHouse throws:
 
-```
+```yaml
 Code: 396. DB::Exception: Limit for result exceeded, max rows: 100000
 ```
 

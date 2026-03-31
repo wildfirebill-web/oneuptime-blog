@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, HAProxy, Health Checks, Backend Monitoring, Load Balancer
+Tags: IPv6, HAProxy, Health Check, Backend Monitoring, Load Balancer
 
 Description: Learn how to configure HAProxy health checks for IPv6 backend servers, including TCP checks, HTTP checks, and advanced health check configurations.
 

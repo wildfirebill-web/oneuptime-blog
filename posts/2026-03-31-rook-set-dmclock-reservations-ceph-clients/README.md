@@ -86,14 +86,14 @@ ceph osd perf | sort -k3 -rn | head -10
 
 Use this formula to set safe reservations:
 
-```
+```text
 Safe total reservations per OSD = OSD max IOPS x 0.75
 Per-client reservation = Safe total / number of priority clients
 ```
 
 For example, a 10,000 IOPS NVMe OSD serving four priority clients:
 
-```
+```text
 Safe total = 10000 x 0.75 = 7500 IOPS
 Per-client = 7500 / 4 = 1875 IOPS
 ```

@@ -55,7 +55,7 @@ annotations:
 
 Key health-related metrics to monitor:
 
-```
+```text
 # Sidecar uptime
 dapr_runtime_init_total
 
@@ -101,7 +101,7 @@ kubectl logs my-pod -c daprd | grep -E "error|fatal|failed to init|component err
 
 In Grafana Loki, use a log query to count sidecar errors by app:
 
-```
+```text
 count_over_time({container="daprd"} |= "error" [5m])
 ```
 

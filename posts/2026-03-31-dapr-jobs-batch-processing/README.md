@@ -14,7 +14,7 @@ Batch processing - transforming large datasets, generating aggregated reports, o
 
 The recommended pattern combines Dapr Jobs as the trigger with your existing processing logic:
 
-```
+```text
 Dapr Scheduler --> Job Trigger --> Batch Processor Service --> Data Store
 ```
 

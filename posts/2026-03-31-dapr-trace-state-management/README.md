@@ -141,7 +141,7 @@ curl "http://localhost:16686/api/v2/traces?service=order-service&minDuration=100
 
 In a trace, N+1 state lookups appear as many sequential small spans:
 
-```
+```text
 GET /cart (200ms)
   GET cart:user-1 (5ms)
   GET product:item-1 (5ms)

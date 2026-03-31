@@ -38,7 +38,7 @@ radosgw-admin bucket sync status --bucket=my-bucket
 
 Example output showing healthy sync:
 
-```
+```bash
 data sync: syncing
   source zone: zone1
     full sync: 0/128 shards

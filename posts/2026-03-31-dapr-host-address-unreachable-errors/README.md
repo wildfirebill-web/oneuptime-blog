@@ -16,7 +16,7 @@ Dapr resolves service addresses using name resolution components. On Kubernetes,
 
 A typical unreachable error:
 
-```
+```text
 failed to invoke target myservice: rpc error: code = Unavailable
 address unreachable: no endpoints available for app id myservice
 ```

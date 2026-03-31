@@ -102,7 +102,7 @@ watch kubectl -n rook-ceph get pods
 
 Expected pods after successful deployment:
 
-```
+```text
 rook-ceph-mon-a-xxx        Running
 rook-ceph-mon-b-xxx        Running
 rook-ceph-mon-c-xxx        Running

@@ -90,7 +90,7 @@ Configure the alert to notify the capacity planning team via email with a 24-hou
 
 ## Dashboard Layout
 
-```
+```text
 Row 1: Current State
   - Used / Total (Gauge)
   - Available Bytes (Stat)

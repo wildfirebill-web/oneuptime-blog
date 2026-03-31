@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Sidecar, Cache, Architecture, Pattern
 
-Description: Implement the sidecar cache pattern by deploying a Redis proxy sidecar alongside your service to intercept reads, serve cached responses, and write-through to the origin without changing application code.
+Description: Implement the sidecar cache pattern by deploying a Redis proxy sidecar alongside your service to intercept reads, serve cached responses, and write-through to the origin without changing...
 
 ---
 

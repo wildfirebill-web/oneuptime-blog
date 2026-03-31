@@ -84,7 +84,7 @@ kubectl describe resourcequota -n team-a
 
 Output example:
 
-```
+```yaml
 Name:            storage-quota
 Namespace:       team-a
 Resource         Used    Hard
@@ -117,7 +117,7 @@ done
 
 The 11th PVC should fail with:
 
-```
+```yaml
 Error from server (Forbidden): persistentvolumeclaims "test-pvc-11" is forbidden:
 exceeded quota: storage-quota, requested: persistentvolumeclaims=1,
 used: persistentvolumeclaims=10, limited: persistentvolumeclaims=10

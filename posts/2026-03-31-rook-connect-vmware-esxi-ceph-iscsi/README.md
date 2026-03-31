@@ -47,7 +47,7 @@ esxcli iscsi adapter list
 
 Expected output:
 
-```
+```text
 Adapter  Driver   State   UID            Description
 -------  -------  ------  -------------  ----------------------------------------
 vmhba65  iscsi_vmk  online  iscsi.vmhba65  iSCSI Software Adapter

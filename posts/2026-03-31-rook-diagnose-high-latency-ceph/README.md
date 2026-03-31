@@ -19,7 +19,7 @@ First, measure current latency to understand what "high" means for your cluster:
 ceph osd perf
 ```
 
-```
+```text
 osd  commit_latency(ms)  apply_latency(ms)
  0        2.1                1.8
  1       45.3               44.1   <-- High latency on osd.1
@@ -39,7 +39,7 @@ iostat -x 1 10 /dev/sdb
 # Expected: await < 5ms for SSD, < 20ms for HDD at normal load
 ```
 
-```
+```text
 Device  r/s   w/s    rMB/s  wMB/s  await  svctm  %util
 sdb     120   380    0.47   5.2    48.2   2.4    95.3
 ```

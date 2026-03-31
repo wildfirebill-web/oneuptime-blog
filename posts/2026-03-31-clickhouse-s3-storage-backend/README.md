@@ -156,7 +156,7 @@ WHERE table = 'events' AND active = 1
 GROUP BY disk_name;
 ```
 
-```
+```text
 disk_name   parts   size
 s3_cache    48      14.32 GiB
 ```

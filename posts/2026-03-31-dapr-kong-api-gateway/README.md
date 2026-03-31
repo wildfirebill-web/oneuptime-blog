@@ -34,7 +34,7 @@ helm upgrade --install kong kong/kong \
 
 External clients call Kong Gateway, which routes to Dapr-annotated services. Dapr sidecars handle internal service invocation:
 
-```
+```text
 Client -> Kong Gateway -> Service (with Dapr sidecar) -> Other Dapr services
 ```
 

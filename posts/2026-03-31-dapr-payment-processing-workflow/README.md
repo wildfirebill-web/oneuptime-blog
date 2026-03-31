@@ -14,7 +14,7 @@ Payment processing requires reliability, auditability, and careful failure handl
 
 ## Payment Workflow Stages
 
-```
+```text
 1. Fraud Check         (synchronous, fast)
 2. Payment Authorization (synchronous, reversible)
 3. Order Fulfillment    (async, long-running)

@@ -27,7 +27,7 @@ ceph osd stat
 
 Sample output:
 
-```
+```text
 24 osds: 24 up (since 3w), 24 in (since 3w); epoch: e2145
 ```
 

@@ -50,7 +50,7 @@ watch ceph pg stat
 
 Expected output during site failure:
 
-```
+```text
 3256 pgs: 3256 active+undersized; 1.5 TiB data, 3.0 TiB used, 10 TiB / 13 TiB avail
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Troubleshooting, Health Checks, Containers
+Tags: Portainer, Docker, Troubleshooting, Health Check, Containers
 
 Description: Fix issues where Docker healthcheck status doesn't display correctly in Portainer, including HEALTHCHECK definition, timing configuration, and display refresh issues.
 

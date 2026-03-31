@@ -14,7 +14,7 @@ True end-to-end data integrity means verifying that data written by an applicati
 
 A complete integrity stack for Ceph-backed workloads looks like this:
 
-```
+```text
 Application Layer    -> Application-level checksums (e.g., SHA-256 metadata)
 Network Layer        -> TLS encryption in transit (RBD, CephFS, RGW)
 Ceph Client Layer    -> RADOS write verification (client reads back and verifies)

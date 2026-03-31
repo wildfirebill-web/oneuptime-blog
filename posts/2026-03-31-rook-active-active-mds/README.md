@@ -81,7 +81,7 @@ kubectl exec -n rook-ceph deploy/rook-ceph-tools -- ceph fs status myfs
 
 Example output:
 
-```
+```text
 myfs - 3 clients
 ========
 RANK   STATE            MDS                 ACTIVITY

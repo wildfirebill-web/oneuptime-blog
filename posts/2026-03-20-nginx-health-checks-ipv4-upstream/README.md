@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, Health Checks, IPv4, Upstream, High Availability, Monitoring
+Tags: Nginx, Health Check, IPv4, Upstream, High Availability, Monitoring
 
 Description: Configure passive and active health checks in Nginx to automatically detect and remove failed IPv4 upstream servers from the load balancing pool.
 

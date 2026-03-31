@@ -117,7 +117,7 @@ Check active SMB sessions on a gateway:
 smbstatus --shares
 ```
 
-```
+```text
 Service      pid     Machine       Connected at
 share1       12345   192.168.1.50  Tue Mar 31 09:00:00 2026
 ```

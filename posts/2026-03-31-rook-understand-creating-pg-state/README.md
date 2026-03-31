@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph pg stat
 
 You may see output like:
 
-```
+```text
 128 pgs: 16 creating, 112 active+clean; 500 GiB data
 ```
 

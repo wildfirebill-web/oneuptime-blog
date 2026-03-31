@@ -143,7 +143,7 @@ clickhouse-keeper-client --host keeper-node-1 --port 2181
 
 Inside the client:
 
-```
+```text
 keeper> ls /clickhouse/task_queue/ddl
 keeper> rmr /clickhouse/task_queue/ddl/query-0000001234
 ```
@@ -166,14 +166,14 @@ After the timeout, the operation returns an error to the client, but the DDL tas
 clickhouse-keeper-client --host keeper-node-1 --port 2181
 ```
 
-```
+```text
 keeper> ls /clickhouse/task_queue/ddl
 keeper> get /clickhouse/task_queue/ddl/query-0000000001
 ```
 
 Each node writes its result under the task path:
 
-```
+```text
 keeper> ls /clickhouse/task_queue/ddl/query-0000000001
 # Shows: active_nodes  finished_nodes
 ```

@@ -16,13 +16,13 @@ Scaling Ceph to 100TB requires careful planning across compute, storage, and net
 
 With 3x replication and a 20% safety buffer:
 
-```
+```text
 Raw needed = 100TB * 3 / 0.8 = 375TB raw minimum
 ```
 
 Consider erasure coding (EC) at this scale to reduce overhead:
 
-```
+```text
 EC 4+2 overhead = 1.5x  (vs 3x for replication)
 Raw needed with EC 4+2: 100TB * 1.5 / 0.8 = 188TB raw
 ```
@@ -33,14 +33,14 @@ EC 4+2 cuts raw storage requirements nearly in half, making it the preferred cho
 
 ### Option A: 12 nodes with 16TB drives (replication)
 
-```
+```text
 12 nodes * 8 drives * 8TB = 768TB raw
 Usable (3x): 768 / 3 / 1.2 = 213TB
 ```
 
 ### Option B: 8 nodes with 16TB drives (EC 4+2)
 
-```
+```text
 8 nodes * 10 drives * 8TB = 640TB raw
 Usable (EC 4+2): 640 / 1.5 / 1.2 = 356TB
 ```
@@ -62,7 +62,7 @@ Journals/WAL: Dedicated NVMe for HDD OSD journals
 
 At 100TB scale, a flat 10GbE network becomes a bottleneck. Use dedicated storage networks:
 
-```
+```yaml
 Public network:   25GbE (client I/O)
 Cluster network:  25GbE (OSD replication, recovery)
 Management:       1GbE (admin access)

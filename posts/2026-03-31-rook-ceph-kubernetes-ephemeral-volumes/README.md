@@ -112,7 +112,7 @@ spec:
 
 ## Comparison: Ephemeral Volume Types
 
-```
+```text
 emptyDir       - Node-local, no CSI driver, lost on node restart
 genericEphemeral - CSI-backed (Ceph), durable, auto-cleaned on Pod delete
 CSI ephemeral  - Driver-specific, not all drivers support it

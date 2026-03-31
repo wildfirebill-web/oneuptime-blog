@@ -83,7 +83,7 @@ ceph pg dump_pools | awk '{print $1, $15}' | sort -k2 -n -r
 
 Create a recovery dashboard with Prometheus:
 
-```
+```text
 sum(ceph_pg_recovering_bytes_per_sec) by (pool_id)
 sum(ceph_pg_degraded) by (pool_id)
 ```

@@ -12,7 +12,7 @@ Report generation involves multiple sequential steps: querying data from several
 
 ## Report Generation Workflow
 
-```
+```text
 TriggerReport -> GatherData (parallel) -> AggregateResults -> RenderReport -> StoreReport -> SendReport
                    - SalesData
                    - UserData

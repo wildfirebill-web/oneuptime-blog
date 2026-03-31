@@ -14,7 +14,7 @@ Ceph Manager (ceph-mgr) modules are Python plugins that extend Ceph's management
 
 A Ceph Manager module lives in a directory under the manager's module path. The minimum required file is `module.py`:
 
-```
+```text
 /usr/share/ceph/mgr/hello/
     module.py
 ```

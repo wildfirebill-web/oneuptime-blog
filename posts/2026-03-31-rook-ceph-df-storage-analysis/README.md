@@ -23,7 +23,7 @@ ceph df
 
 Sample output:
 
-```
+```text
 --- RAW STORAGE ---
 CLASS     SIZE    AVAIL    USED  RAW USED  %RAW USED
 hdd     27 TiB  25 TiB  2 TiB   2.1 TiB       7.78
@@ -57,7 +57,7 @@ ceph df detail
 
 This adds per-pool quota information:
 
-```
+```text
 POOL           QUOTA OBJECTS  QUOTA BYTES  DIRTY  USED COMPR  UNDER COMPR
 replicapool          N/A          N/A      130000       0 B         0 B
 ```

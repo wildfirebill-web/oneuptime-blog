@@ -93,7 +93,7 @@ A rough monthly cost comparison for 10,000 secret reads per day:
 
 ## Recommended Decision Tree
 
-```
+```text
 Running on a single cloud?
   YES -> Use the cloud-native managed service
     - AWS -> AWS Secrets Manager or SSM

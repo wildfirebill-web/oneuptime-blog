@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, IPv4, Monitoring, Health Checks, Python, Node.js
+Tags: WebSocket, IPv4, Monitoring, Health Check, Python, Node.js
 
 Description: Learn how to monitor WebSocket connection health over IPv4 using ping/pong keepalives, connection counters, Prometheus metrics, and external health check probes.
 

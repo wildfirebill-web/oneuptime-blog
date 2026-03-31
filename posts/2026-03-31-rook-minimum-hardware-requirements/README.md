@@ -33,14 +33,14 @@ Monitors can run on OSD nodes in smaller clusters.
 
 Per OSD disk:
 
-```
+```yaml
 CPU: 0.5-1 core per OSD (HDD), 2 cores per OSD (NVMe)
 RAM: 4 GB per OSD (minimum), 5-8 GB per OSD (recommended)
 ```
 
 Per node with 12 HDDs:
 
-```
+```yaml
 CPU: 12 x 0.5 = 6 cores minimum, recommend 8-12 cores
 RAM: 12 x 4 GB = 48 GB minimum, recommend 64 GB
 ```
@@ -101,7 +101,7 @@ echo "Minimum cores per node: ${TOTAL}"
 
 ## Step 5 - Network Requirements
 
-```
+```text
 Client/Public network: 10 GbE minimum, 25 GbE recommended
 Cluster/Replication network: 10 GbE minimum, 25 GbE recommended
 Separate VLANs for security and QoS
@@ -109,7 +109,7 @@ Separate VLANs for security and QoS
 
 Rule of thumb: network throughput should exceed total OSD throughput:
 
-```
+```text
 12 HDDs x 200 MB/s = 2.4 GB/s per node
 For 3x replication: 3 x 2.4 = 7.2 GB/s cluster write bandwidth
 25 GbE = ~3 GB/s - need bonded 25 GbE or 100 GbE for full performance

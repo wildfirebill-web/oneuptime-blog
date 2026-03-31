@@ -23,7 +23,7 @@ kubectl -n rook-ceph debug node/worker-1 -- \
 
 Typical output includes:
 
-```
+```text
 SUBSYSTEM=="block", ACTION=="add", RUN+="/usr/bin/rook discover --context=..."
 SUBSYSTEM=="block", ACTION=="change", ENV{ID_FS_TYPE}=="", RUN+="..."
 ```
@@ -36,7 +36,7 @@ To apply custom labels or aliases to devices before Rook provisioning, create a 
 cat /etc/udev/rules.d/60-ceph-devices.rules
 ```
 
-```
+```text
 # Label SSD devices by model
 SUBSYSTEM=="block", KERNEL=="sd*", ATTRS{model}=="Samsung SSD 870*", \
   SYMLINK+="ceph-ssd/$kernel", TAG+="ceph-ssd"

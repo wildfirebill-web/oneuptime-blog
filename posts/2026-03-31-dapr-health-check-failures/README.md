@@ -14,7 +14,7 @@ Dapr health check failures can prevent pods from becoming ready or cause the Dap
 
 The Dapr sidecar exposes a health endpoint at port 3500:
 
-```
+```text
 GET http://localhost:3500/v1.0/healthz
 ```
 
@@ -30,7 +30,7 @@ kubectl describe pod <pod-name> -n <namespace>
 
 Look for lines like:
 
-```
+```text
 Liveness probe failed: HTTP probe failed with statuscode: 500
 Readiness probe failed: Get "http://...": dial tcp: connection refused
 ```

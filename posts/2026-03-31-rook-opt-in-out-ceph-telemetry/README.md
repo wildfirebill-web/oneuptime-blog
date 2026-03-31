@@ -20,7 +20,7 @@ ceph telemetry status
 
 Output example:
 
-```
+```json
 {
     "enabled": true,
     "last_opt_revision": 0,

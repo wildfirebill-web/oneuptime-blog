@@ -21,7 +21,7 @@ kubectl describe obc my-bucket -n my-app
 
 Look for events at the bottom of the `describe` output:
 
-```
+```yaml
 Events:
   Type     Reason       Age   From                              Message
   ----     ------       ----  ----                              -------
@@ -38,7 +38,7 @@ kubectl logs -n rook-ceph deploy/rook-ceph-operator --tail=100 | grep -i "obc\|o
 
 ## Common Failure: StorageClass Not Found
 
-```
+```yaml
 Error: StorageClass "rook-ceph-bucket" not found
 ```
 
@@ -56,7 +56,7 @@ Ensure the provisioner matches `rook-ceph.ceph.rook.io/bucket`.
 
 ## Common Failure: Object Store Not Ready
 
-```
+```yaml
 Error: CephObjectStore my-store not found or not ready
 ```
 
@@ -79,7 +79,7 @@ kubectl logs -n rook-ceph -l app=rook-ceph-rgw --tail=50
 
 ## Common Failure: Quota Exceeded
 
-```
+```yaml
 Error: bucket quota exceeded
 ```
 

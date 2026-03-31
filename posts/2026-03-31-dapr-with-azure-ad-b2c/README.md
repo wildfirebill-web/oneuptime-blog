@@ -24,7 +24,7 @@ Azure AD B2C handles consumer identity: sign-up, sign-in, profile editing, and p
 
 The JWKS endpoint for a user flow:
 
-```
+```yaml
 https://myapp.b2clogin.com/myapp.onmicrosoft.com/B2C_1_signupsignin/discovery/v2.0/keys
 ```
 

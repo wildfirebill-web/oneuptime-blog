@@ -18,7 +18,7 @@ Slow requests appear in cluster health:
 ceph health detail
 ```
 
-```
+```text
 HEALTH_WARN 3 slow ops, oldest one blocked for 32 sec, osd.4 has slow ops
 ```
 

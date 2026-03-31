@@ -107,12 +107,12 @@ histogram_quantile(0.99,
 
 A practical formula for pool sizing:
 
-```
+```text
 pool_size = (avg_requests_per_second * avg_latency_seconds) + buffer
 ```
 
 For an application making 500 requests/second with 20ms average latency:
-```
+```text
 pool_size = (500 * 0.020) + 5 = 15 connections
 ```
 

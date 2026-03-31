@@ -12,7 +12,7 @@ Hybrid cloud deployments run services across on-premises data centers and public
 
 ## Hybrid Cloud Architecture with Dapr
 
-```
+```text
 On-Premises (Private DC)           Cloud (AWS/Azure/GCP)
 [order-service + Dapr]  <-------> [inventory-service + Dapr]
        |                                    |

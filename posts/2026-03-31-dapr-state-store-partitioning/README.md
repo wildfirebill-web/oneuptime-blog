@@ -28,7 +28,7 @@ The state store hashes the key (as stored, including any Dapr prefix) to determi
 
 ### Bad Key Design (Hotspot)
 
-```
+```text
 order-2024-01-01-001
 order-2024-01-01-002
 order-2024-01-01-003
@@ -41,7 +41,7 @@ All keys share the same prefix, and many state stores use prefix-based routing, 
 
 Include a high-cardinality field early in the key:
 
-```
+```json
 {userId}-order-{orderId}
 {sessionId}-cart
 {tenantId}-{resourceType}-{resourceId}

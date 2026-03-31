@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Example:
 
-```
+```text
 HEALTH_ERR 1 pgs inconsistent; 2 scrub errors
 pg 2.f is active+clean+inconsistent, last_scrub_stamp 2026-03-31
 2 errors found in 2 objects in 1 pg

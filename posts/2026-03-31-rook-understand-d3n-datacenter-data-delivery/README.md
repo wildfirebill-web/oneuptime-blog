@@ -21,7 +21,7 @@ D3N operates as a transparent read-through cache. When an RGW receives a GET req
 3. On a cache miss, the object is fetched from the backend Ceph cluster, served to the client, and written into the cache
 4. Subsequent reads for the same object are served from the local cache
 
-```
+```text
 Client --> RGW --> D3N Cache --> (hit) --> Client
                             --> (miss) --> Ceph RADOS --> cache --> Client
 ```

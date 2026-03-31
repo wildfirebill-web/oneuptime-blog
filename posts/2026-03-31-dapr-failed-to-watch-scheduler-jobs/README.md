@@ -16,7 +16,7 @@ The Dapr Scheduler service manages job scheduling for the Jobs API (introduced i
 
 A typical error looks like:
 
-```
+```text
 error watching scheduler jobs: rpc error: code = Unavailable
 desc = connection error: desc = "transport: Error while dialing:
 dial tcp: lookup dapr-scheduler-server: no such host"

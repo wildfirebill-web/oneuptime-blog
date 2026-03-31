@@ -58,12 +58,12 @@ kubectl logs my-actor-pod -c daprd | grep -i "placement"
 ```
 
 Look for successful connection messages:
-```
+```text
 level=info msg="established connection to placement service"
 ```
 
 Or connection errors:
-```
+```text
 level=error msg="error connecting to placement service"
 ```
 

@@ -26,7 +26,7 @@ ceph df detail
 
 Look at the `COMPRESS_UNDER_BYTES` column which shows bytes before compression, and `COMPRESS_BYTES_USED` which shows bytes after compression:
 
-```
+```text
 POOL           USED    COMPRESS_UNDER_BYTES    COMPRESS_BYTES_USED
 mypool         1.2 GiB         4.5 GiB              1.2 GiB
 ```
@@ -46,7 +46,7 @@ ceph osd pool stats mypool
 
 Output:
 
-```
+```text
 pool mypool id 2
   nothing is going on
   client io 12 MB/s wr, 0 op/s rd, 23 op/s wr
@@ -74,7 +74,7 @@ ceph_pool_compress_under_bytes{pool_id="2"}
 
 Calculate ratio in PromQL:
 
-```
+```text
 ceph_pool_compress_under_bytes / ceph_pool_compress_bytes_used
 ```
 

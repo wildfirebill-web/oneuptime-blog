@@ -51,7 +51,7 @@ kubectl -n rook-ceph exec -it rook-ceph-osd-0-<suffix> -- bash -c \
 ```
 
 Expected output includes:
-```
+```yaml
 type:    LUKS2
 cipher:  aes-xts-plain64
 keysize: 512 bits

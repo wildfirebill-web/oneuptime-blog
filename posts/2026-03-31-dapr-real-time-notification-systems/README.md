@@ -12,7 +12,7 @@ Notification systems need to deliver messages reliably across multiple channels 
 
 ## System Architecture
 
-```
+```text
 Event Sources -> notification-topic -> Notification Router -> Channel Workers
                                                             -> email-topic
                                                             -> push-topic

@@ -73,7 +73,7 @@ sha256sum -c /backup/myimage-snap.img.sha256
 
 Expected output:
 
-```
+```text
 /backup/myimage-snap.img: OK
 ```
 

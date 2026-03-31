@@ -189,7 +189,7 @@ invokeWithTimeout('payment-service', 'status', 2000)
 
 When a timeout occurs, the Dapr sidecar returns:
 
-```
+```text
 HTTP 504 Gateway Timeout
 ```
 
@@ -226,7 +226,7 @@ spec:
 
 Dapr emits metrics for timeout events. Query them in Prometheus:
 
-```
+```text
 dapr_resiliency_count{name="service-timeout-policy", namespace="default", policy="timeout", target="payment-service"}
 ```
 

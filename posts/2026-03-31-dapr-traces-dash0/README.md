@@ -161,7 +161,7 @@ Create an alert in the Dash0 UI for high latency:
 
 Dash0 supports OTel-native queries. Use the trace search:
 
-```
+```text
 service.name = "order-service"
 AND span.kind = "server"
 AND span.duration > 500ms

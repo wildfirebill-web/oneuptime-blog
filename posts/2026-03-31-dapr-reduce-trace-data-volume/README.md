@@ -16,7 +16,7 @@ In a production system processing thousands of requests per second, tracing ever
 
 Estimate your trace volume:
 
-```
+```text
 Request rate: 1000 req/s
 Services per request: 5
 Spans per service: 2 (one each sidecar)

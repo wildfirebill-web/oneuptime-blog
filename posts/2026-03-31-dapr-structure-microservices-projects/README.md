@@ -16,7 +16,7 @@ A consistent project structure makes Dapr microservices easier to onboard, test,
 
 For a monorepo containing multiple Dapr services:
 
-```
+```text
 my-platform/
   dapr/
     components/           # Shared Dapr component definitions
@@ -56,7 +56,7 @@ my-platform/
 
 Each service should follow a consistent internal layout:
 
-```
+```text
 order-service/
   src/
     handlers/             # Request handlers (HTTP/gRPC)

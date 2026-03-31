@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph status
 
 Example output:
 
-```
+```yaml
   cluster:
     id:     8a1b2c3d-4e5f-6789-abcd-ef0123456789
     health: HEALTH_OK

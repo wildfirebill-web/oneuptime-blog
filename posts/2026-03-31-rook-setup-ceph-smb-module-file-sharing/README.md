@@ -92,7 +92,7 @@ smbclient -L //samba-node1 -N
 
 Expected output:
 
-```
+```text
 Sharename       Type      Comment
 ---------       ----      -------
 share1          Disk
@@ -110,7 +110,7 @@ mount -t cifs //samba-node1/share1 /mnt/smb \
 
 Or add to `/etc/fstab` for persistence:
 
-```
+```text
 //samba-node1/share1  /mnt/smb  cifs  username=cephuser,password=UserPass123,vers=3.1.1,_netdev  0  0
 ```
 

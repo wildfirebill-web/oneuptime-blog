@@ -34,7 +34,7 @@ flowchart TD
 
 ## Step 1: Understand the Relationship Between Settings
 
-```
+```text
 total replicas = replicasPerFailureDomain x (number of failure domain buckets used)
 ```
 

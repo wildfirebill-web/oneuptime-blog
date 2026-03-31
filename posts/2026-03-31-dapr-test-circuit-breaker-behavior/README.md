@@ -89,7 +89,7 @@ kubectl logs -l app=your-app -c daprd | grep "circuit breaker"
 
 Example log output:
 
-```
+```text
 time="2026-03-31T10:00:00Z" level=info msg="circuit breaker 'targetCB' changed state: half-open"
 time="2026-03-31T10:00:31Z" level=info msg="circuit breaker 'targetCB' changed state: closed"
 ```

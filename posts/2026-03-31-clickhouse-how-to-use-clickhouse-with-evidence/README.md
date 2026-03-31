@@ -103,7 +103,7 @@ FROM default.events
 WHERE toDate(created_at) = '${params.date}'
 GROUP BY event_type
 ```
-```
+```bash
 
 ## Building and Deploying
 

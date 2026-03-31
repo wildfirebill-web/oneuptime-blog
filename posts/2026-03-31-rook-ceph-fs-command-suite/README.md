@@ -26,7 +26,7 @@ ceph fs status
 
 Example `fs status` output:
 
-```
+```text
 myfs - 3 clients
 =====
 RANK  STATE             MDS       ACTIVITY     DNS    INOS   DIRS   CAPS

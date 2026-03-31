@@ -20,7 +20,7 @@ An iSCSI target is the server-side component that exposes storage. Each target h
 
 IQN format follows the convention `iqn.YYYY-MM.domain:identifier`. Choose meaningful names:
 
-```
+```text
 iqn.2024-01.com.example:production-storage
 iqn.2024-01.com.example:backup-storage
 ```
@@ -47,14 +47,14 @@ Start gwcli and create a new iSCSI target:
 gwcli
 ```
 
-```
+```text
 /> cd /iscsi-targets
 /iscsi-targets> create iqn.2024-01.com.example:production-storage
 ```
 
 Add portal IPs (one per gateway node):
 
-```
+```text
 /iscsi-targets/iqn.2024-01.com.example:production-storage/> cd gateways
 /gateways> create gw1 10.0.1.10
 /gateways> create gw2 10.0.1.11
@@ -62,14 +62,14 @@ Add portal IPs (one per gateway node):
 
 ## Adding RBD Disks to the Target
 
-```
+```text
 /iscsi-targets/iqn.../> cd disks
 /disks> add rbd iscsi vol1
 ```
 
 Map the disk to a LUN in the target:
 
-```
+```text
 /iscsi-targets/iqn.../> cd luns
 /luns> add rbd/iscsi/vol1
 ```
@@ -78,14 +78,14 @@ Map the disk to a LUN in the target:
 
 Add the initiator IQN to the ACL:
 
-```
+```text
 /iscsi-targets/iqn.../> cd hosts
 /hosts> create iqn.1993-08.org.debian:prod-server-01
 ```
 
 Assign the LUN to the initiator:
 
-```
+```text
 /hosts/iqn.1993-08.org.debian:prod-server-01/> cd luns
 /luns> add rbd/iscsi/vol1
 ```

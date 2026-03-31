@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Taiga,Project Management,Portainer,Docker,Agile,Scrum,Self-Hosted
+Tags: Taiga, Project Management, Portainer, Docker, Agile, Scrum, Self-Hosted
 
 Description: Deploy Taiga open-source agile project management platform via Portainer for Scrum boards, sprints, and team collaboration.
 

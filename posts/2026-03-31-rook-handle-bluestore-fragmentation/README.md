@@ -42,7 +42,7 @@ ceph daemon osd.0 bluestore allocator score block
 
 Example output:
 
-```
+```json
 {
   "allocator_name": "block",
   "alloc_unit": 4096,

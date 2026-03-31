@@ -14,7 +14,7 @@ Description: Master libcephsqlite connection string syntax and options to config
 
 The libcephsqlite connection string follows SQLite's URI format:
 
-```
+```yaml
 file:<pool>/<object-name>?vfs=ceph[&<option>=<value>...]
 ```
 

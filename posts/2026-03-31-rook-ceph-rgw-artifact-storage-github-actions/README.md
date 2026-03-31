@@ -38,7 +38,7 @@ aws s3 mb s3://github-actions-cache \
 
 In your GitHub repository settings, add secrets:
 
-```
+```text
 CEPH_ENDPOINT=http://rook-ceph-rgw-my-store.rook-ceph:80
 CEPH_ACCESS_KEY=ghaakey
 CEPH_SECRET_KEY=ghaskey

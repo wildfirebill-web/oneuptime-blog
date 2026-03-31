@@ -67,7 +67,7 @@ kubectl get pods -n dapr-system -o jsonpath='{range .items[*]}{.metadata.name}{"
 
 Subscribe to the GitHub releases RSS feed:
 
-```
+```yaml
 https://github.com/dapr/dapr/releases.atom
 ```
 

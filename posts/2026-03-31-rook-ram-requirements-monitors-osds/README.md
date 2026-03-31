@@ -44,7 +44,7 @@ The minimum is 2 GB per OSD, the recommended is 4-8 GB per OSD.
 
 ## Step 2 - Per-OSD Memory Breakdown
 
-```
+```text
 BlueStore write buffer: 256 MB - 1 GB
 BlueStore RocksDB cache: 1-2 GB
 BlueStore data cache (auto): remaining memory target
@@ -72,7 +72,7 @@ echo "Recommended RAM: ${RECOMMENDED} GB"
 
 Example for 12 OSD node:
 
-```
+```text
 12 OSDs x 4 GB = 48 GB
 OS/kernel = 4 GB
 Monitors = 2 GB

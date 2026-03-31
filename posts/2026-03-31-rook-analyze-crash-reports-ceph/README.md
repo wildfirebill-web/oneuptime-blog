@@ -22,7 +22,7 @@ ceph crash ls
 
 Example output:
 
-```
+```text
 2026-03-10_14:23:01.123456Z_osd.5    1 osd.5
 2026-03-09_08:11:44.654321Z_mgr.a    1 mgr.a
 ```
@@ -93,7 +93,7 @@ ceph crash stat
 
 Output shows crash counts by daemon type:
 
-```
+```text
 2 clients reported crashes in the last week:
    1 osd
    1 mgr

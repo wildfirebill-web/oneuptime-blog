@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Self-Healing, Docker, Automation, DevOps, Health Checks, Monitoring
+Tags: Portainer, Self-Healing, Docker, Automation, DevOps, Health Check, Monitoring
 
 Description: Learn how to build a self-healing container system that automatically detects and recovers from container failures using Portainer and Docker health checks.
 

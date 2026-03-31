@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Redis, Cluster, CLUSTER MYID, Node Management, Operations
 
-Description: Learn how to use CLUSTER MYID in Redis to retrieve the unique 40-character node ID of the current node, which is required for CLUSTER REPLICATE, CLUSTER FORGET, and other cluster management operations.
+Description: Learn how to use CLUSTER MYID in Redis to retrieve the unique 40-character node ID of the current node, which is required for CLUSTER REPLICATE, CLUSTER FORGET, and other cluster management...
 
 ---
 

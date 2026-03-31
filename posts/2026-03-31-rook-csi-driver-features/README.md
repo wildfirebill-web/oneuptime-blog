@@ -37,7 +37,7 @@ kubectl get csidrivers
 
 Expected output:
 
-```
+```text
 NAME                            ATTACHREQUIRED   PODINFOONMOUNT   ...
 rook-ceph.cephfs.csi.ceph.com   true             false
 rook-ceph.rbd.csi.ceph.com      true             false

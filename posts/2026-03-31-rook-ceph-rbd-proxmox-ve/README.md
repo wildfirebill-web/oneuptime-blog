@@ -61,7 +61,7 @@ In Proxmox Web UI:
 1. Go to Datacenter -> Storage -> Add -> RBD
 2. Fill in:
 
-```
+```yaml
 ID: ceph-rook
 Monitors: mon-a:6789,mon-b:6789,mon-c:6789
 Pool: proxmox

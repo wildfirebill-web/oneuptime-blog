@@ -81,7 +81,7 @@ radosgw-admin quota enable --uid=alice --quota-scope=user
 
 Upload objects until the limit is hit. Once exceeded, RGW returns:
 
-```
+```text
 An error occurred (QuotaExceeded) when calling the PutObject operation:
 Quota Exceeded
 ```

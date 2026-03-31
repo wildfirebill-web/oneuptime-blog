@@ -24,7 +24,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 ```
 
 Sample output to interpret:
-```
+```text
 realm mycompany (realm-id)
     zonegroup us (zg-id)
         zone us-west (zone-id)
@@ -77,7 +77,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Key Prometheus metrics from the RGW:
 
-```
+```text
 # Scrape from http://rgw-service:7480/metrics
 rgw_sync_seconds_behind - lag in seconds
 rgw_data_sync_status - number of shards behind

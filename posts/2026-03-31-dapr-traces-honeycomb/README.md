@@ -129,7 +129,7 @@ def process_order(order_id: str, customer_id: str):
 
 In Honeycomb's query builder, filter by Dapr-specific fields:
 
-```
+```sql
 WHERE service.name = "checkout-service"
 AND dapr.app_id EXISTS
 GROUP BY dapr.method

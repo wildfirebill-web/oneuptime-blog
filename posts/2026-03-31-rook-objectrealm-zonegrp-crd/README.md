@@ -44,7 +44,7 @@ kubectl get cephobjectrealm -n rook-ceph
 
 Expected output:
 
-```
+```text
 NAME        PHASE
 my-realm    Ready
 ```

@@ -20,7 +20,7 @@ Dapr building blocks live in the outermost ring, injected inward through interfa
 
 ## Layer Structure
 
-```
+```text
 src/
 - Domain/                         # Center - no external dependencies
   - Models/Order.java

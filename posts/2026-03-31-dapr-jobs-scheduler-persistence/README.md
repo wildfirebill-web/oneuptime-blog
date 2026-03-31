@@ -32,7 +32,7 @@ kubectl get pods -n dapr-system | grep scheduler
 
 Expected output:
 
-```
+```text
 NAME                              READY   STATUS    RESTARTS   AGE
 dapr-scheduler-server-0           1/1     Running   0          5m
 ```
@@ -137,7 +137,7 @@ kubectl logs -n dapr-system -l app=dapr-scheduler --tail=50
 
 Look for lines like:
 
-```
+```text
 time="2026-03-31T10:00:00Z" level=info msg="Scheduler started" ...
 time="2026-03-31T10:00:01Z" level=info msg="etcd cluster initialized" ...
 ```

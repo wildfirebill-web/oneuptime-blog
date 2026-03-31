@@ -64,7 +64,7 @@ restic init
 
 Expected output:
 
-```
+```text
 created restic repository abc123 at s3:http://ceph-rgw.example.com:7480/restic-repo
 ```
 

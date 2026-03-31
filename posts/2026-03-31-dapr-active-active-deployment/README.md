@@ -14,7 +14,7 @@ In active-active deployments, multiple regions simultaneously serve live traffic
 
 ## Architecture Overview
 
-```
+```text
 Region US-East              Region EU-West
   +-------------------+      +-------------------+
   | Load Balancer     |      | Load Balancer     |

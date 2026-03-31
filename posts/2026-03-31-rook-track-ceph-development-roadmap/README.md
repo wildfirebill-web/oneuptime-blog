@@ -18,7 +18,7 @@ The primary source for roadmap information is the Ceph issue tracker:
 
 Filter by release to see what is planned for the next version:
 
-```
+```yaml
 # Example URL for Squid (19) roadmap
 https://tracker.ceph.com/projects/ceph/roadmap?completed=0
 ```
@@ -46,7 +46,7 @@ Ceph publishes detailed release notes for every version:
 
 Subscribe to ceph-announce@ceph.io to receive notifications when new versions are released:
 
-```
+```yaml
 Subscribe: https://lists.ceph.io/postorius/lists/ceph-announce.ceph.io/
 ```
 

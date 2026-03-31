@@ -93,7 +93,7 @@ This means if the subscriber crashes during message processing, Dapr backs off b
 
 With `maxRetries: 8`, `initialInterval: 500ms`, `multiplier: 2.0`, and `maxInterval: 30s`, the worst-case total retry time (before jitter) is approximately:
 
-```
+```text
 500ms + 1s + 2s + 4s + 8s + 16s + 30s + 30s = 91.5s
 ```
 

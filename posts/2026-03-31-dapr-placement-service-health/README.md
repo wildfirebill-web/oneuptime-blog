@@ -32,7 +32,7 @@ kubectl get pods -n dapr-system -l app=dapr-placement-server
 
 Expected output for a 3-replica HA setup:
 
-```
+```text
 NAME                        READY   STATUS    RESTARTS   AGE
 dapr-placement-server-0     1/1     Running   0          1d
 dapr-placement-server-1     1/1     Running   0          1d
@@ -52,7 +52,7 @@ annotations:
 
 Key placement service metrics:
 
-```
+```text
 # Number of connected sidecars
 dapr_placement_runtimes_total
 
@@ -106,7 +106,7 @@ kubectl logs -l app=dapr-placement-server -n dapr-system | grep -E "error|warnin
 
 Key log patterns to watch:
 
-```
+```text
 "leader elected"          - Normal, happens at startup
 "leadership transferred"  - A failover occurred
 "raft: failed to"         - Raft consensus error
@@ -123,7 +123,7 @@ kubectl logs my-actor-pod -c daprd | grep -i "placement\|connected\|disconnected
 
 When a sidecar loses its placement service connection, it logs:
 
-```
+```text
 placement service connection error: connection reset
 attempting to reconnect to placement service
 ```

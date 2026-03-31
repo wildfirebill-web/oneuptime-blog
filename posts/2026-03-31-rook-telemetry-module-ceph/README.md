@@ -82,7 +82,7 @@ ceph telemetry status
 
 Example output:
 
-```
+```json
 {
   "enabled": true,
   "last_opt_revision": 3,

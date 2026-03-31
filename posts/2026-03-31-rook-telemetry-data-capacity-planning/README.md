@@ -128,7 +128,7 @@ print(f'Months until {int(threshold*100)}% full: {months_to_threshold:.1f}')
 
 Use Prometheus queries for ongoing capacity tracking:
 
-```
+```text
 # Current utilization percentage
 (ceph_cluster_total_used_bytes / ceph_cluster_total_bytes) * 100
 

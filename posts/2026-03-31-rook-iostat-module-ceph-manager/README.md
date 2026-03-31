@@ -28,7 +28,7 @@ ceph iostat
 
 This streams output in a format similar to `iostat -x`, refreshing every second:
 
-```
+```text
 2026-03-31 10:00:00
                    Read       Write      Read IOPS  Write IOPS
   Client I/O:    128 MiB/s   45 MiB/s    512        180
@@ -56,7 +56,7 @@ ceph osd pool stats
 
 Example output:
 
-```
+```text
 pool production id 1
   client io 65 MiB/s rd, 12 MiB/s wr, 260 op/s rd, 48 op/s wr
 
@@ -72,7 +72,7 @@ For deeper per-OSD metrics, use the performance dump:
 ceph osd perf
 ```
 
-```
+```text
 osd.0  apply_latency_ms  commit_latency_ms
         1.23              2.45
 osd.1   0.98              1.87

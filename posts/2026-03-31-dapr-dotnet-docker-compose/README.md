@@ -14,7 +14,7 @@ Docker Compose is a convenient way to run Dapr .NET applications locally when yo
 
 ## Project Structure
 
-```
+```text
 my-app/
   order-service/
     Dockerfile

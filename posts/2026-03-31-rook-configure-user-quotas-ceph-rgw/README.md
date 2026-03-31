@@ -102,7 +102,7 @@ radosgw-admin user info --uid alice | jq '{quota: .user_quota, stats: .stats}'
 
 When a user tries to upload an object that would exceed their quota, RGW returns:
 
-```
+```xml
 HTTP/1.1 403 Forbidden
 <Error>
   <Code>QuotaExceeded</Code>

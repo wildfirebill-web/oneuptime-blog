@@ -134,7 +134,7 @@ done
 
 When the limit is exceeded you should see:
 
-```
+```text
 Request 21: HTTP 429
 Request 22: HTTP 429
 Request 23: HTTP 429

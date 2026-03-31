@@ -29,7 +29,7 @@ ceph health detail | grep snaptrim
 ```
 
 Example output:
-```
+```text
 HEALTH_WARN 24 pgs snaptrimming; 8 pgs snaptrim_wait
 ```
 

@@ -96,7 +96,7 @@ ceph health detail | grep -i "pg"
 
 Use this formula to estimate the ideal PG count per OSD:
 
-```
+```text
 target_PGs_per_OSD = (total_PGs * pool_size) / num_OSDs
 ```
 

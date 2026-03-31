@@ -14,7 +14,7 @@ On Kubernetes, pluggable components run as additional sidecar containers within 
 
 ## Pod Structure
 
-```
+```yaml
 Pod:
   - Container: app           (your application)
   - Container: daprd         (Dapr sidecar, injected automatically)

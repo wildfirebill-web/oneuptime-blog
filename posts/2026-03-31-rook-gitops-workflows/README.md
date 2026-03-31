@@ -21,7 +21,7 @@ GitOps applies the principles of Git version control to infrastructure managemen
 
 Organize your GitOps repository to separate Rook infrastructure concerns:
 
-```
+```text
 infrastructure/
   rook-ceph/
     operator/

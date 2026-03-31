@@ -32,7 +32,7 @@ LATENCY LATEST
 
 No arguments. Returns a list of arrays, each containing:
 
-```
+```text
 event-name  timestamp  latest-ms  max-ms
 ```
 

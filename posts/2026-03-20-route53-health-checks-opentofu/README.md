@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Route 53, Health Checks, DNS Failover, High Availability, Infrastructure as Code
+Tags: OpenTofu, AWS, Route 53, Health Check, DNS Failover, High Availability, Infrastructure as Code
 
 Description: Learn how to configure Route 53 health checks with OpenTofu to monitor endpoint availability and trigger automatic DNS failover when endpoints become unhealthy.
 

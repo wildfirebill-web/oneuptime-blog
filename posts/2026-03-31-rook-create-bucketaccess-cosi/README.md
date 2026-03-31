@@ -14,7 +14,7 @@ In the COSI (Container Object Storage Interface) framework, `BucketAccess` is th
 
 ## The Relationship Between COSI Resources
 
-```
+```text
 BucketClass          BucketAccessClass
      |                      |
      v                      v

@@ -52,7 +52,7 @@ echo "Available for servers: ${AVAILABLE}U"
 
 ## Step 2 - Compare Disk Density
 
-```
+```text
 Form Factor | Drive Bays | Rack Units | Drives/RU
 ------------|-----------|------------|----------
 1U (LFF)    | 4          | 1          | 4
@@ -66,7 +66,7 @@ For HDD-dense clusters: 4U dense storage servers offer the best rack space effic
 
 ## Step 3 - Consider Cabling and Maintenance
 
-```
+```text
 1U/2U pros:
 - Standard cabling
 - Easier individual drive replacement
@@ -117,7 +117,7 @@ Dense servers may have limited PCIe slots for NICs:
 
 ## Step 6 - Power and Cooling Per Form Factor
 
-```
+```text
 Form Factor | Typical TDP | Drives Included
 ------------|-------------|----------------
 1U (4 HDD)  | 200-300W   | 4 x 3.5" HDD

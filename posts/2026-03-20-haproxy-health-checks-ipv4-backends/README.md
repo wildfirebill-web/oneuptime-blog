@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, Health Checks, IPv4, Backend, Load Balancing, Monitoring
+Tags: HAProxy, Health Check, IPv4, Backend, Load Balancing, Monitoring
 
 Description: Configure TCP and HTTP health checks in HAProxy to automatically detect and remove unhealthy IPv4 backend servers from the pool, with tunable intervals and thresholds.
 

@@ -26,7 +26,7 @@ dapr run --app-id myapp --app-port 50051 --app-protocol grpc -- python app.py
 
 If you configure `--app-protocol grpc` but your app serves HTTP, the sidecar sends a gRPC request and receives an invalid response:
 
-```
+```text
 failed to invoke app: rpc error: code = Internal
 desc = failed to proxy request: invalid gRPC response
 ```

@@ -30,7 +30,7 @@ Key latency metrics include:
 
 Use `histogram_quantile` to compute P50, P95, and P99:
 
-```
+```text
 # P99 HTTP server latency per app
 histogram_quantile(0.99,
   sum by (le, app_id) (
@@ -54,7 +54,7 @@ sum by (app_id) (rate(dapr_http_server_latency_ms_sum[5m]))
 
 Create a panel showing P50/P95/P99 on the same chart:
 
-```
+```text
 # Query A - P50
 histogram_quantile(0.50, sum by (le) (rate(dapr_http_server_latency_ms_bucket{app_id="$app_id"}[5m])))
 
@@ -71,7 +71,7 @@ Set the unit to milliseconds and add thresholds at your SLO boundaries.
 
 High latency often appears alongside errors. Combine the signals:
 
-```
+```text
 # Services with both high latency AND errors
 (
   histogram_quantile(0.99, sum by (le, app_id) (rate(dapr_http_server_latency_ms_bucket[5m]))) > 500

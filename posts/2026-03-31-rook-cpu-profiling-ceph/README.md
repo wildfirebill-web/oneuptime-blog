@@ -45,7 +45,7 @@ google-pprof --pdf /usr/bin/ceph-osd /tmp/ceph-osd.0.cpuprofile > cpu_profile.pd
 
 Example pprof text output:
 
-```
+```yaml
 Total: 1500 samples
      300  20.0%  20.0%      300  20.0%  BlueStore::_do_write
      180  12.0%  32.0%      180  12.0%  PG::do_osd_ops

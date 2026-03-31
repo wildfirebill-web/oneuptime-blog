@@ -1,4 +1,4 @@
-# How to Use New Features in MongoDB 6.0 (Queryable Encryption, Change Stream Pre-Images)
+# How to Use New Features in MongoDB 6.0 (Queryable Encryption, Change Stream
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

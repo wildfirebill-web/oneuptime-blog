@@ -17,7 +17,7 @@ Ceph RGW multisite provides geo-replication for S3-compatible object storage. A 
 
 ## Architecture for Two Zones
 
-```
+```yaml
 Realm: mycompany
   Zone Group: us (us.primary zone + us.secondary zone)
     Zone: us-east (Ceph Cluster A - master zone)

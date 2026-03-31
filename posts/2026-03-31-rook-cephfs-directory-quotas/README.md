@@ -144,7 +144,7 @@ setfattr -n ceph.quota.max_files -v 0 /mnt/cephfs/team-a
 
 When a write exceeds the quota:
 
-```
+```bash
 $ dd if=/dev/zero of=/mnt/cephfs/team-a/bigfile bs=1M count=200
 dd: error writing '/mnt/cephfs/team-a/bigfile': Disk quota exceeded
 ```

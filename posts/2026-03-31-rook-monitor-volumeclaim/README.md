@@ -78,7 +78,7 @@ kubectl -n rook-ceph get pvc | grep mon
 
 Expected output:
 
-```
+```text
 rook-ceph-mon-a   Bound   pvc-xxx   10Gi   RWO   gp3   2m
 rook-ceph-mon-b   Bound   pvc-yyy   10Gi   RWO   gp3   2m
 rook-ceph-mon-c   Bound   pvc-zzz   10Gi   RWO   gp3   2m

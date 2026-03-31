@@ -68,7 +68,7 @@ Get the ETag header:
 curl -i http://localhost:3500/v1.0/state/statestore/order:001
 ```
 
-```
+```yaml
 HTTP/1.1 200 OK
 Content-Type: application/json
 ETag: "1"

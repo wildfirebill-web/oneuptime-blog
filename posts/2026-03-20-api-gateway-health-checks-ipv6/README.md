@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: API Gateway, IPv6, Health Checks, Nginx, Kong, Monitoring
+Tags: API Gateway, IPv6, Health Check, Nginx, Kong, Monitoring
 
 Description: Configure active and passive health checks for API gateway upstream services that communicate over IPv6, covering NGINX, Kong, and AWS configurations.
 

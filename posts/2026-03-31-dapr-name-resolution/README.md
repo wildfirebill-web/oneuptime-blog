@@ -56,7 +56,7 @@ On Kubernetes, Dapr uses the cluster's internal DNS. Each Dapr-enabled app is re
 
 No additional configuration is needed. The sidecar discovers other apps through:
 
-```
+```json
 {app-id}-dapr.{namespace}.svc.cluster.local
 ```
 
@@ -155,7 +155,7 @@ dapr logs --app-id service-a
 
 Look for lines like:
 
-```
+```text
 time="..." level=info msg="Resolved host service-b to address 192.168.1.5:3501"
 ```
 

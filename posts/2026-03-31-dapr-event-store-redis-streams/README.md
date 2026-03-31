@@ -118,7 +118,7 @@ redis-cli CONFIG SET appendfsync everysec
 
 Or in `redis.conf`:
 
-```
+```text
 appendonly yes
 appendfsync everysec
 save 900 1

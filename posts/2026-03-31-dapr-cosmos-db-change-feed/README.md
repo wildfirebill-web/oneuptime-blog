@@ -18,7 +18,7 @@ The integration works in two parts:
 1. Dapr writes state to Cosmos DB
 2. Azure Functions or a Change Feed processor reads the change feed and publishes events back via Dapr pub/sub
 
-```
+```text
 Microservice -> Dapr Sidecar -> Cosmos DB State Store
                                       |
                                Change Feed Processor

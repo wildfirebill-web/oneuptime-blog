@@ -119,13 +119,13 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph mon dump
 ```
 
 For IPv6, Mon addresses appear as:
-```
+```yaml
 v2:[fd00:10::11]:3300/0
 v1:[fd00:10::11]:6789/0
 ```
 
 For dual-stack, you see both:
-```
+```yaml
 v2:10.10.1.11:3300/0
 v2:[fd00:10::11]:3300/0
 ```

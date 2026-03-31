@@ -12,7 +12,7 @@ Azure Kubernetes Service (AKS) combined with Azure Managed Disks provides the co
 
 ## Project Structure
 
-```
+```text
 ceph-azure/
   main.tf
   aks.tf

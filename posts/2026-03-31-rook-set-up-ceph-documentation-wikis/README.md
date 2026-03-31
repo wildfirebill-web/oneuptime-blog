@@ -16,7 +16,7 @@ Ceph clusters evolve over time - nodes are added, pools are tuned, and CRUSH rul
 
 Organize your Ceph wiki with a clear hierarchy:
 
-```
+```text
 ceph-wiki/
   overview/
     cluster-topology.md
@@ -120,7 +120,7 @@ Use a consistent format for all runbooks to speed up incident response:
    ```
 
 3. Wait for PG recovery to complete before removing the OSD.
-```
+```text
 
 ## Change Log Format
 

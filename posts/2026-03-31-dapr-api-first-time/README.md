@@ -32,7 +32,7 @@ This starts the sidecar on port 3500 with access to all default components.
 
 The Dapr HTTP API follows this pattern:
 
-```
+```yaml
 http://localhost:<dapr-http-port>/v1.0/<building-block>/<component-name>/<operation>
 ```
 

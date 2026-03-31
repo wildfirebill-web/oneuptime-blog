@@ -12,7 +12,7 @@ Batch notification processing sends large volumes of push notifications, in-app 
 
 ## Batch Notification Architecture
 
-```
+```text
 Campaign API -> Pub/Sub Queue -> Notification Processor -> Channel Workers
                                     (per-user batches)     - Push (FCM/APNs)
                                                            - In-App

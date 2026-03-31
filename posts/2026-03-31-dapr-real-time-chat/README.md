@@ -14,7 +14,7 @@ A real-time chat application requires message delivery across multiple service i
 
 ## Architecture
 
-```
+```text
 WebSocket Server (multiple replicas)
   |-- Dapr Pub/Sub --> message delivery across instances
   |-- Dapr State   --> message history, user presence

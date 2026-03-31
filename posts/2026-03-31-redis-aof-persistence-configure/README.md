@@ -113,7 +113,7 @@ On `BGREWRITEAOF`, Redis writes an RDB snapshot at the beginning of the new AOF 
 
 ## AOF File Format Example
 
-```
+```bash
 *3
 $3
 SET

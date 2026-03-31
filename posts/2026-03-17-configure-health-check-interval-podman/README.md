@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Checks, Configuration
+Tags: Podman, Containers, DevOps, Health Check, Configuration
 
 Description: Learn how to configure the health check interval in Podman to control how frequently container health is evaluated.
 

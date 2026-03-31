@@ -14,7 +14,7 @@ gRPC offers lower latency and smaller message sizes compared to HTTP/JSON. Dapr 
 
 ## Dapr gRPC Service Invocation Architecture
 
-```
+```json
 [Client App] --> [Client Dapr Sidecar :50001] --> [Target Dapr Sidecar :50001] --> [Target App]
 ```
 

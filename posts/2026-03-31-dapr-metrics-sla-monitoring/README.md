@@ -22,7 +22,7 @@ Common SLIs for Dapr-based services:
 
 ## Availability SLI Query
 
-```
+```text
 # 28-day availability (good requests / total requests)
 sum_over_time(
   (
@@ -36,7 +36,7 @@ sum_over_time(
 
 For a simpler rolling window:
 
-```
+```text
 # Rolling 7-day availability
 1 - (
   sum(rate(dapr_http_server_request_count{status_code=~"5.."}[7d]))
@@ -46,7 +46,7 @@ For a simpler rolling window:
 
 ## Latency SLI Query
 
-```
+```text
 # % of requests completing under 300ms (latency SLI)
 sum(
   rate(dapr_http_server_latency_ms_bucket{le="300", app_id="order-service"}[5m])
@@ -60,7 +60,7 @@ sum(
 
 If your SLO is 99.9% availability, your monthly error budget is 43.8 minutes.
 
-```
+```text
 # Remaining error budget as a fraction (30-day window)
 1 - (
   (1 - 0.999)  # SLO target
@@ -132,7 +132,7 @@ groups:
 
 Create a stat panel showing current availability vs SLO target:
 
-```
+```text
 # Current 7-day availability
 1 - (
   sum(rate(dapr_http_server_request_count{status_code=~"5.."}[7d]))

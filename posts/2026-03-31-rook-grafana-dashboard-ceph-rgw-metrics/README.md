@@ -103,7 +103,7 @@ ceph_rgw_qlen{namespace="rook-ceph"}
 
 ## Dashboard Sections
 
-```
+```text
 Row 1: Overview
   - Total Requests/sec (Stat)
   - Error Rate % (Gauge with threshold)

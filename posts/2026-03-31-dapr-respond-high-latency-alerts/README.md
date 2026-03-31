@@ -23,7 +23,7 @@ kubectl port-forward svc/prometheus 9090:9090 -n monitoring
 
 Query in Prometheus:
 
-```
+```text
 histogram_quantile(0.99,
   sum by (le, app_id, method) (
     rate(dapr_http_server_request_duration_seconds_bucket[5m])
@@ -33,7 +33,7 @@ histogram_quantile(0.99,
 
 For gRPC service invocation:
 
-```
+```text
 histogram_quantile(0.99,
   sum by (le, app_id) (
     rate(dapr_grpc_io_server_completed_rpcs_seconds_bucket[5m])
@@ -52,7 +52,7 @@ kubectl top pods --containers -n my-namespace | grep daprd
 
 If backend (state store or pub/sub) latency is high, query backend-specific metrics:
 
-```
+```text
 dapr_component_state_get_duration_seconds
 dapr_component_pubsub_publish_duration_seconds
 ```

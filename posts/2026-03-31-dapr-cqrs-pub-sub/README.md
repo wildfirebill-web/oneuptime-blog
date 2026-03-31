@@ -14,7 +14,7 @@ CQRS (Command Query Responsibility Segregation) separates read and write models.
 
 ## Architecture
 
-```
+```text
 Client --> Command Service --> Dapr State (write model)
                            --> Dapr Pub/Sub --> Event Handler --> Read Model Store
 Client --> Query Service  --> Read Model Store

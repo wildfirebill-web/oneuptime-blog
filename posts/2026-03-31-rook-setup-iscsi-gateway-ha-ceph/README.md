@@ -61,7 +61,7 @@ Use `gwcli` from either node to configure the target with both gateways:
 gwcli
 ```
 
-```
+```text
 /> cd /iscsi-targets
 /iscsi-targets> create iqn.2024-01.com.example:ha-storage
 /iscsi-targets/iqn.../> cd gateways

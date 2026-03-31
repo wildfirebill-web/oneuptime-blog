@@ -21,7 +21,7 @@ kubectl get crd | grep dapr
 ```
 
 Output:
-```
+```text
 components.dapr.io
 configurations.dapr.io
 resiliencies.dapr.io

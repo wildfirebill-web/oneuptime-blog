@@ -14,7 +14,7 @@ Hexagonal Architecture (also called Ports and Adapters) places the application c
 
 ## Hexagonal Structure for a Dapr Service
 
-```
+```text
 src/
 - core/                          # Application core
   - domain/

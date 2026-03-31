@@ -14,7 +14,7 @@ While Dapr has a dedicated Workflow API, actors are a powerful alternative for i
 
 Model the workflow as a state machine where each workflow instance is an actor:
 
-```
+```yaml
 Actor Type: OrderWorkflow
 Actor ID:   <workflowId>
 States:     pending -> payment_processing -> payment_confirmed -> fulfillment -> shipped -> completed

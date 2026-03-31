@@ -170,7 +170,7 @@ kubectl logs -n default deploy/webhook-receiver --tail=20
 
 Expected log output:
 
-```
+```yaml
 Event: ObjectCreated:Put, Bucket: my-events-bucket, Key: data.json, Size: 1024
 ```
 

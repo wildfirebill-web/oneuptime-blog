@@ -118,7 +118,7 @@ ceph osd perf
 
 Use Prometheus queries (if Ceph metrics are scraped):
 
-```
+```text
 ceph_osd_op_w_latency_sum / ceph_osd_op_w_latency_count
 ceph_pg_recovering_bytes_per_sec
 ```

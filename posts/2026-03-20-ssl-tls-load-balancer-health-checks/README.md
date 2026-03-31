@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TLS, SSL, Load Balancer, Health Checks, HAProxy, Nginx, Backend, HTTPS
+Tags: TLS, SSL, Load Balancer, Health Check, HAProxy, Nginx, Backend, HTTPS
 
 Description: Learn how to configure SSL/TLS termination on a load balancer and enable HTTPS health checks for backend servers to ensure encrypted end-to-end connectivity validation.
 

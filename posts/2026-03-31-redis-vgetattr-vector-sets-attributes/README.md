@@ -36,7 +36,7 @@ VGETATTR products product:1001
 
 Expected output:
 
-```
+```text
 "{\"name\":\"Wireless Headphones\",\"price\":79.99,\"category\":\"electronics\",\"in_stock\":true}"
 ```
 

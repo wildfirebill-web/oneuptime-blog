@@ -37,7 +37,7 @@ VINFO products
 
 Example output:
 
-```
+```text
  1) "vector-dim"
  2) (integer) 4
  3) "vector-count"

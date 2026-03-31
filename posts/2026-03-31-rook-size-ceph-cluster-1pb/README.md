@@ -16,13 +16,13 @@ At petabyte scale, Ceph remains one of the most widely deployed storage platform
 
 With 3x replication (not recommended at this scale):
 
-```
+```text
 Raw needed = 1PB * 3 / 0.8 = 3.75PB raw
 ```
 
 With erasure coding EC 8+3:
 
-```
+```text
 EC 8+3 overhead = 1.375x
 Raw needed = 1PB * 1.375 / 0.8 = 1.72PB raw
 ```
@@ -33,7 +33,7 @@ EC 8+3 is standard at petabyte scale, saving over 2PB of raw hardware compared t
 
 ### Node Sizing
 
-```
+```text
 Minimum per storage node:
   CPU: 32 cores (modern AMD EPYC or Intel Xeon)
   RAM: 128-256GB
@@ -44,7 +44,7 @@ Minimum per storage node:
 
 ### Cluster Topology
 
-```
+```yaml
 Target: 1PB usable with EC 8+3
 
 Per node capacity: 24 * 20TB = 480TB raw
@@ -56,7 +56,7 @@ Recommended for fault tolerance: 12+ nodes (1 per rack)
 
 With 12 nodes at 480TB each = 5.76PB raw, yielding:
 
-```
+```text
 5760TB / 1.375 / 1.2 = ~3.5PB usable
 ```
 
@@ -89,7 +89,7 @@ kubectl label node node03 topology.kubernetes.io/zone=rack2
 
 ## Network Design at Petabyte Scale
 
-```
+```text
 Spine-leaf topology required:
   Spine switches: 100GbE uplinks
   Leaf switches: 25-100GbE to nodes

@@ -16,7 +16,7 @@ Dapr uses its own name resolution to discover services and calls them via the si
 
 When Dapr invokes `order-service`, the call goes:
 
-```
+```text
 app -> daprd (port 3500) -> Envoy sidecar -> network -> Envoy sidecar -> daprd -> target app
 ```
 

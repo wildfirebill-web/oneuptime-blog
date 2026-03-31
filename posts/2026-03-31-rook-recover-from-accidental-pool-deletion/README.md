@@ -53,7 +53,7 @@ ceph osd pool ls detail | grep -E "nodelete|flags"
 
 If the pool had `nodelete true`, the deletion would have been blocked:
 
-```
+```text
 Error EPERM: pool deletion is disabled; you must unset the nodelete flag for the pool first
 ```
 

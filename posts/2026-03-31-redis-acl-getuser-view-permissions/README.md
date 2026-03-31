@@ -33,7 +33,7 @@ flowchart LR
 
 A typical ACL GETUSER response:
 
-```
+```text
  1) "flags"
  2) 1) "on"
  3) "passwords"

@@ -58,7 +58,7 @@ Dapr JSON logs include structured fields:
 
 Use the Log Explorer with structured queries:
 
-```
+```text
 resource.type="k8s_container"
 resource.labels.cluster_name="dapr-cluster"
 jsonPayload.app_id="order-service"
@@ -67,7 +67,7 @@ jsonPayload.level="error"
 
 Find slow requests:
 
-```
+```text
 resource.type="k8s_container"
 jsonPayload.scope="dapr.runtime.http"
 jsonPayload.msg=~".*latency.*"

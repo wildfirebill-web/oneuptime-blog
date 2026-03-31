@@ -44,7 +44,7 @@ dapr init -k
 
 Expected output:
 
-```
+```yaml
 Making the jump to hyperspace...
 Note: To install Dapr using Helm, see here: https://docs.dapr.io/getting-started/install-dapr-kubernetes/
 
@@ -83,7 +83,7 @@ dapr status -k
 
 Expected output:
 
-```
+```text
 NAME                   NAMESPACE    HEALTHY  STATUS    REPLICAS  VERSION
 dapr-sentry            dapr-system  True     Running   1         1.14.x
 dapr-operator          dapr-system  True     Running   1         1.14.x

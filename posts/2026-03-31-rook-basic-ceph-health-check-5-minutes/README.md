@@ -43,7 +43,7 @@ ceph log last 10
 
 The most important fields:
 
-```
+```yaml
   cluster:
     health: HEALTH_OK          # Should be HEALTH_OK
 

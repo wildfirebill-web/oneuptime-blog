@@ -16,7 +16,7 @@ Ceph RGW has evolved to support multiple caching strategies. Understanding the d
 
 Out of the box, Ceph RGW forwards every GET request directly to the RADOS object store. There is no local caching.
 
-```
+```text
 Client --> RGW --> RADOS --> Client
 ```
 
@@ -38,7 +38,7 @@ Before D3N, Ceph had an earlier datacache feature. It was limited and not widely
 
 D3N is the modern, actively maintained cache layer for RGW:
 
-```
+```text
 Client --> RGW --> D3N Cache (local SSD) --> (hit) --> Client
                                          --> (miss) --> RADOS --> cache --> Client
 ```

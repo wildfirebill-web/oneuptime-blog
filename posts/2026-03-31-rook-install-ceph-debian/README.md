@@ -112,7 +112,7 @@ ceph df
 
 Expected healthy output:
 
-```
+```yaml
 cluster:
   health: HEALTH_OK
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Monitoring, Health Checks, Automation, Docker
+Tags: Portainer, Monitoring, Health Check, Automation, Docker
 
 Description: Configure comprehensive automated health monitoring for Docker containers managed by Portainer using built-in health checks and external monitoring integration.
 

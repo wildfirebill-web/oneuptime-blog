@@ -36,14 +36,14 @@ kubectl top pods --containers -A | grep daprd | \
 
 Use the Prometheus query for a time-series view:
 
-```
+```text
 # Memory over 24h by pod
 max_over_time(
   container_memory_working_set_bytes{container="daprd"}[24h]
 )
 ```
 
-```
+```text
 # CPU over 24h
 max_over_time(
   rate(container_cpu_usage_seconds_total{container="daprd"}[5m])[24h:]

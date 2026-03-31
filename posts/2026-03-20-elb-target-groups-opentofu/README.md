@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, ELB, Target Groups, Load Balancing, Health Checks, Infrastructure as Code
+Tags: OpenTofu, AWS, ELB, Target Groups, Load Balancing, Health Check, Infrastructure as Code
 
 Description: Learn how to configure Elastic Load Balancing target groups with OpenTofu for ALB, NLB, and GWLB, including health checks, stickiness, and target registration.
 

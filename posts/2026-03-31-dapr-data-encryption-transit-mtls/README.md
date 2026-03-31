@@ -20,7 +20,7 @@ Dapr's Sentry component acts as the certificate authority (CA). When a sidecar s
 4. All sidecar communication uses these certificates for mTLS
 
 The trust chain:
-```
+```text
 Sentry (Root CA) -> Sidecar Certificate -> mTLS Connection
 ```
 

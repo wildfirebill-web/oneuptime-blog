@@ -14,7 +14,7 @@ Multi-cloud strategies reduce vendor lock-in and improve resilience. Dapr's comp
 
 The application never imports cloud-specific SDKs. All cloud interactions go through Dapr building blocks:
 
-```
+```text
 Your App Code
    uses: dapr.SaveState("statestore", ...)
          dapr.PublishEvent("pubsub", ...)
@@ -102,7 +102,7 @@ spec:
 
 Manage multi-cloud component configs with Kustomize:
 
-```
+```text
 base/
   deployment.yaml
   subscription.yaml

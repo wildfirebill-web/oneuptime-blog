@@ -77,7 +77,7 @@ sequenceDiagram
 
 Subscribers receive a three-element array:
 
-```
+```text
 1) "message"
 2) "<channel-name>"
 3) "<message-body>"
@@ -85,7 +85,7 @@ Subscribers receive a three-element array:
 
 For pattern subscribers (PSUBSCRIBE), the format adds the matched pattern:
 
-```
+```text
 1) "pmessage"
 2) "<pattern>"
 3) "<channel-name>"

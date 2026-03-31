@@ -29,7 +29,7 @@ kubectl get secret dapr-trust-bundle -n dapr-system \
 ```
 
 Expected output:
-```
+```text
 notBefore=Mar 31 00:00:00 2025 GMT
 notAfter=Mar 31 00:00:00 2026 GMT
 ```

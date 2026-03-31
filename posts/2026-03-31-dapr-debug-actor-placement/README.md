@@ -47,13 +47,13 @@ kubectl logs order-service-7b4c8d9f6-xk2pq -c daprd -n default | grep -i "placem
 
 Successful registration:
 
-```
+```text
 level=info msg="actors: host added" app_id=order-service address=10.244.0.15:50002
 ```
 
 Failed registration:
 
-```
+```text
 level=error msg="error connecting to placement service" err="rpc error: code = Unavailable"
 ```
 
@@ -78,7 +78,7 @@ spec:
 
 If the actor state store is not configured, you will see:
 
-```
+```text
 level=error msg="error initializing actors" err="actors: actor state store does not exist or is not properly configured"
 ```
 

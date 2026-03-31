@@ -20,7 +20,7 @@ Docker Compose simplifies local development by running all services and their de
 
 ## Project Structure
 
-```
+```text
 my-dapr-app/
   docker-compose.yml
   components/

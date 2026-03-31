@@ -110,7 +110,7 @@ echo "Audit evidence collected in $OUTPUT_DIR"
 
 Store all compliance documentation in Git alongside your Rook manifests:
 
-```
+```text
 rook-infra/
   manifests/
     ceph-cluster.yaml

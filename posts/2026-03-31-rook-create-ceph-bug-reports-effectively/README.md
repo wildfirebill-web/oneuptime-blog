@@ -50,7 +50,7 @@ Good titles are specific:
 
 List steps in numbered order:
 
-```
+```text
 1. Deploy a 3-node Ceph cluster on Ubuntu 22.04 with kernel 5.15
 2. Create an RBD pool with replication factor 3
 3. Mount the RBD image on a client

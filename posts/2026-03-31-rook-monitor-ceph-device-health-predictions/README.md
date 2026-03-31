@@ -36,7 +36,7 @@ ceph device ls
 
 Example output:
 
-```
+```text
 DEVICE                        HOST:DEV        DAEMONS        WEAR  LIFE_EXPECTANCY
 SAMSUNG_MZQL2960HCJR_S641NY0R osd-node1:sda   osd.0 osd.3  51%   >5y
 WDC_WD40EFRX_WD-WCC4E2345678  osd-node2:sdb   osd.5         -     -

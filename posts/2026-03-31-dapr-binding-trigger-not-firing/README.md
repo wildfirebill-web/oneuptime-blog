@@ -26,7 +26,7 @@ kubectl logs <pod-name> -c daprd | grep -i "binding\|component"
 
 Look for:
 
-```
+```text
 INFO  component loaded. name: myqueue, type: bindings.rabbitmq/v1
 ```
 

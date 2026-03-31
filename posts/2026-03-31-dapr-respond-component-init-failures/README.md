@@ -26,7 +26,7 @@ kubectl logs my-pod -c daprd | grep -i "component\|init\|error\|failed"
 ```
 
 Example failure output:
-```
+```text
 time="2026-03-31T10:00:00Z" level=error msg="error initializing state store component 'statestore'"
 error="redis: dial tcp 10.0.0.5:6379: connect: connection refused"
 ```
@@ -109,7 +109,7 @@ kubectl logs deployment/orders-api -c daprd | grep "component loaded"
 ```
 
 A successful load shows:
-```
+```text
 component loaded. name: statestore, type: state.redis/v1
 ```
 

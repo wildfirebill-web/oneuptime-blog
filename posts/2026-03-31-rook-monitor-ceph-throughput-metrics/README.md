@@ -72,7 +72,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- bash -c "
 
 The `ceph -s` output shows current read/write throughput in the `io:` section:
 
-```
+```text
   cluster:
     id:     ...
     health: HEALTH_OK

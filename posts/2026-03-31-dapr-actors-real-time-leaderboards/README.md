@@ -14,7 +14,7 @@ Leaderboards require high-frequency score updates with consistent ordering and f
 
 Use a single actor per leaderboard context (global, per-game, per-region):
 
-```
+```text
 Actor Type: Leaderboard
 Actor ID:   global | match-001 | region-us-west
 ```

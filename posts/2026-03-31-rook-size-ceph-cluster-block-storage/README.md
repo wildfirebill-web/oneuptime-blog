@@ -14,7 +14,7 @@ Ceph RBD (RADOS Block Device) is the most common storage type provisioned by Roo
 
 ## Block Storage Characteristics
 
-```
+```text
 RBD workloads:
 - Kubernetes PVCs (databases, stateful apps)
 - Virtual machine disks
@@ -27,7 +27,7 @@ RBD workloads:
 
 RBD pools always use replication (not EC) because RBD requires the layering feature:
 
-```
+```text
 Usable = Raw / replication_factor / overhead
 Raw needed = Desired usable * 3 * 1.2
 
@@ -37,7 +37,7 @@ Raw = 50TB * 3 * 1.2 = 180TB raw
 
 ## Drive Type Selection
 
-```
+```yaml
 Database PVCs:      NVMe (< 1ms latency, 500K+ IOPS)
 General-purpose:    SSD (< 5ms latency, 50K-100K IOPS)
 Dev/test PVCs:      HDD (< 50ms latency, 200 IOPS - cost effective)

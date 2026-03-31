@@ -69,7 +69,7 @@ INFO persistence
 
 A bloated AOF might look like this before the rewrite:
 
-```
+```bash
 *3
 $3
 SET
@@ -93,7 +93,7 @@ newvalue
 
 After `BGREWRITEAOF`, only the final state is recorded:
 
-```
+```bash
 *3
 $3
 SET

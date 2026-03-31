@@ -28,7 +28,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Sample output:
 
-```
+```text
 --- RAW STORAGE ---
 CLASS     SIZE    AVAIL    USED  RAW USED  %RAW USED
 ssd      30 TiB  28 TiB  2 TiB    2 TiB       6.67

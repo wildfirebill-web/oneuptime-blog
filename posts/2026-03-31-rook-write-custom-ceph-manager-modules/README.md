@@ -14,7 +14,7 @@ Custom Ceph Manager modules let you extend Ceph's management capabilities with P
 
 Create a directory under the manager module path:
 
-```
+```text
 /usr/share/ceph/mgr/
     mymodule/
         module.py

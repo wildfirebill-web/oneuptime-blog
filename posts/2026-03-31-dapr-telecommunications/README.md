@@ -12,7 +12,7 @@ Telecommunications systems process millions of events per second: call detail re
 
 ## Telecom Architecture with Dapr
 
-```
+```text
 Network Elements -> Event Ingestion (Dapr) -> CDR Processing (Dapr)
                                            -> Billing Service (Dapr)
                                            -> Subscriber Service (Dapr)

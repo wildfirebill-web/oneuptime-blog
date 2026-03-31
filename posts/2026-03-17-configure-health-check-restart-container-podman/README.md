@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Checks, Auto-Restart, Self-Healing
+Tags: Podman, Containers, DevOps, Health Check, Auto-Restart, Self-Healing
 
 Description: Learn how to configure Podman health checks to automatically restart containers when they become unhealthy.
 

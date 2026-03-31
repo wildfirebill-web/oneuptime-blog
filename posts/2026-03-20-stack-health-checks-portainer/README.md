@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Health Checks, Monitoring, Stacks
+Tags: Portainer, Docker Compose, Health Check, Monitoring, Stacks
 
 Description: Configure comprehensive health checks for every service in a Portainer stack to enable automatic recovery and monitoring.
 

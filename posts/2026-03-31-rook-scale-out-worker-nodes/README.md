@@ -158,7 +158,7 @@ watch kubectl exec -n rook-ceph deploy/rook-ceph-tools -- ceph status
 
 Rebalancing completes when:
 
-```
+```yaml
 health: HEALTH_OK
 0 bytes misplaced
 ```

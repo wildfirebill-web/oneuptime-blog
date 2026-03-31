@@ -26,7 +26,7 @@ radosgw-admin sync status
 
 Example output:
 
-```
+```text
 realm 12345 (production)
     zonegroup 67890 (us)
         period 98765

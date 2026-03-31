@@ -12,7 +12,7 @@ Sending thousands of emails reliably requires rate limiting, retry logic, and tr
 
 ## Email Sending Architecture
 
-```
+```text
 Trigger (Job/API) -> Dapr Workflow -> Fetch Recipients -> Fan-out: Send Email Per Recipient
                                                        -> Track Delivery Status
                                                        -> Summary Notification

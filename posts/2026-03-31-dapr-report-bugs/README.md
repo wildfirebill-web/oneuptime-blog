@@ -149,13 +149,13 @@ The state store returns the saved value.
 Returns error: `connection refused`
 
 ## Logs
-```
+```json
 [paste relevant logs here]
 ```
 
 ## Additional Context
 Any other context about the problem.
-```
+```text
 
 ## Submit the Bug Report
 

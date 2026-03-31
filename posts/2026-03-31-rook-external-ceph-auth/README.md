@@ -251,7 +251,7 @@ kubectl describe cephcluster rook-ceph-external -n rook-ceph-external | grep -A5
 
 Expected output:
 
-```
+```text
 NAME                  DATADIRHOSTPATH   MONCOUNT   AGE   PHASE       MESSAGE
 rook-ceph-external    /var/lib/rook                5m    Connected   Cluster connected successfully
 ```

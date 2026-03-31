@@ -14,7 +14,7 @@ The Dapr Workflow API manages long-running, durable workflow instances. Workflow
 
 ## Base URL
 
-```
+```yaml
 http://localhost:{daprPort}/v1.0-beta1/workflows/{workflowComponentName}/{workflowName}
 ```
 

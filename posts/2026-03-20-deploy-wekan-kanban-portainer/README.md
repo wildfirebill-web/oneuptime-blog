@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wekan,Kanban,Portainer,Docker,Project Management,Self-Hosted
+Tags: Wekan, Kanban, Portainer, Docker, Project Management, Self-Hosted
 
 Description: Deploy Wekan open-source Kanban board via Portainer with MongoDB persistence for team task management and project tracking.
 

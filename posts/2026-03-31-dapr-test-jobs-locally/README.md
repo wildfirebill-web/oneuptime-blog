@@ -21,7 +21,7 @@ dapr status
 
 Expected output includes:
 
-```
+```text
 NAME            VERSION     STATUS      PID
 dapr-scheduler  1.x.x       Running     12345
 dapr-placement  1.x.x       Running     12346

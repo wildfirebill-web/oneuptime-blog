@@ -232,13 +232,13 @@ await client.state.delete("statestore", "user:alice");
 
 Dapr prefixes all state keys with the app ID to avoid collisions. The key format in Redis is:
 
-```
+```json
 {app-id}||{key}
 ```
 
 For example, if your app ID is `myapp` and the key is `user:alice`, Redis stores it as:
 
-```
+```text
 myapp||user:alice
 ```
 

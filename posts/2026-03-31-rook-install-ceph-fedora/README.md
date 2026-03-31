@@ -104,7 +104,7 @@ ceph osd tree
 
 Expected output for single-node:
 
-```
+```yaml
 cluster:
   health: HEALTH_WARN
          1 pool(s) have no replicas configured

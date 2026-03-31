@@ -27,7 +27,7 @@ BlueStore addresses all of these.
 
 BlueStore consists of four main components:
 
-```
+```text
 +------------------+
 |   BlueStore OSD  |
 +--------+---------+
@@ -75,7 +75,7 @@ BlueStore uses BlueFS, a minimal log-structured filesystem, solely to host the R
 
 ## Data Write Path in BlueStore
 
-```
+```text
 Client Write Request
         |
         v

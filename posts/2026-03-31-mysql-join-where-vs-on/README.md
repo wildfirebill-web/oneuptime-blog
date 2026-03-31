@@ -12,7 +12,7 @@ One of the most common sources of subtle bugs in SQL is putting a filter conditi
 
 ## How the logical order works
 
-```
+```dockerfile
 FROM / JOIN (including ON) -> WHERE -> GROUP BY -> HAVING -> SELECT
 ```
 

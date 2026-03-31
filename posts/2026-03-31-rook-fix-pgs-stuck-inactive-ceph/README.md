@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Look for output like:
 
-```
+```text
 HEALTH_ERR 5 pgs are stuck inactive for more than 300 seconds
 5 pgs are stuck inactive
 ```
@@ -39,7 +39,7 @@ ceph pg map 1.5
 
 Output:
 
-```
+```text
 osdmap e123 pg 1.5 (1.5) -> up [2,4,7] acting [2,4,7]
 ```
 

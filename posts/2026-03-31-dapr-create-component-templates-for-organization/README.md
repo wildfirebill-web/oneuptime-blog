@@ -38,7 +38,7 @@ Templates codify the correct pattern once and eliminate the wrong one.
 
 Create a Helm chart for your organization's standard Dapr components:
 
-```
+```text
 dapr-components/
   Chart.yaml
   values.yaml
@@ -102,7 +102,7 @@ helm upgrade --install dapr-components ./dapr-components \
 
 For teams using Kustomize, provide a base layer:
 
-```
+```text
 base/
   statestore.yaml
   pubsub.yaml

@@ -92,7 +92,7 @@ The dashboard uses a variable `datasource` to select the Prometheus instance. Ve
 
 Key panels included:
 
-```
+```yaml
 Top row:   Health Status | Monitors | OSDs Up | OSDs In | PGs Active+Clean
 Second row: Capacity Used % | Used Bytes | Available Bytes
 Third row:  Client IOPS | Client Throughput | Recovery Rate

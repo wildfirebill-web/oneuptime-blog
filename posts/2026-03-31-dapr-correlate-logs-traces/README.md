@@ -14,7 +14,7 @@ Log-trace correlation lets you jump from a log entry showing an error directly t
 
 When Dapr handles a service invocation or pub/sub message, it propagates the `traceparent` header using the W3C TraceContext format:
 
-```
+```yaml
 traceparent: 00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01
              ^^  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^  ^^
              version  trace-id (32 hex chars)        span-id          flags
@@ -120,7 +120,7 @@ Query logs by trace ID in Kibana:
 
 Create a Kibana Canvas or Dashboard that links the `trace_id` field to your Jaeger or Zipkin instance:
 
-```
+```yaml
 https://jaeger.yourcompany.com/trace/${trace_id}
 ```
 

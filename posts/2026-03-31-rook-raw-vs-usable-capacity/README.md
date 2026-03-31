@@ -14,7 +14,7 @@ The distinction between raw and usable capacity is fundamental to Ceph planning.
 
 ## The Basic Formula
 
-```
+```text
 Usable Capacity = Raw Capacity / Replication Factor x (1 - full_threshold)
 ```
 
@@ -29,7 +29,7 @@ kubectl -n rook-ceph exec deploy/rook-ceph-tools -- \
 
 Output:
 
-```
+```text
 --- RAW STORAGE ---
 CLASS     SIZE      AVAIL     USED     RAW USED  %RAW USED
 hdd       300 TiB   287 TiB   4.4 TiB  13 TiB    4.33
@@ -79,7 +79,7 @@ kubectl -n rook-ceph exec deploy/rook-ceph-tools -- \
 
 Shows used space per pool. Note that pool capacity counts raw used, not logical:
 
-```
+```yaml
 POOLS:
 POOL              ID   STORED   COPIES   USED     %USED
 replicapool        1   10 GiB      3     30 GiB   10.0

@@ -62,7 +62,7 @@ kubectl logs my-pod -c daprd | grep -i "connection pool\|max connections\|timeou
 
 Some component implementations may not release memory properly under certain workloads. Check if memory grows continuously over time using Prometheus:
 
-```
+```text
 container_memory_working_set_bytes{container="daprd"}
 ```
 

@@ -106,7 +106,7 @@ FROM categories;
 
 Result:
 
-```
+```text
 Electronics
     Computers
         Laptops

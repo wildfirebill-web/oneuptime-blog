@@ -14,7 +14,7 @@ Dapr supports WebAssembly (WASM) as a middleware component type, allowing you to
 
 WASM middleware runs in the Dapr sidecar's HTTP middleware pipeline. When a request passes through the sidecar (inbound or outbound), the compiled WASM module can inspect and modify the request or response.
 
-```
+```text
 Client Request
      |
      v

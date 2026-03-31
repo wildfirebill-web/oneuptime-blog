@@ -30,7 +30,7 @@ ceph crash ls
 
 Example output:
 
-```
+```text
 ID                                           ENTITY   NEW
 2026-03-31_09:22:11.abc123_osd.5            osd.5    *
 2026-03-31_08:10:05.def456_mon.a            mon.a
@@ -72,7 +72,7 @@ ceph crash stat
 
 Example output:
 
-```
+```text
 8 crashes recorded
 1 crashes are new
 ```

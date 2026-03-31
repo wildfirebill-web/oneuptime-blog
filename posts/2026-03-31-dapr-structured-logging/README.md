@@ -13,7 +13,7 @@ Structured logging replaces unformatted text with machine-readable JSON objects.
 ## Why Structured Logging Matters
 
 With unstructured logs:
-```
+```text
 2026-03-31 10:00:01 Processing order 12345 for customer abc
 ```
 
@@ -145,13 +145,13 @@ With structured logs in Elasticsearch:
 
 In Grafana Loki:
 
-```
+```json
 {app="order-service"} | json | level="error" | order_id="12345"
 ```
 
 In Datadog:
 
-```
+```yaml
 service:order-service @level:error @order_id:12345
 ```
 

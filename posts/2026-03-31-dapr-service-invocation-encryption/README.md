@@ -34,7 +34,7 @@ mtls:
 
 The `dapr-sentry` service acts as a certificate authority. Each sidecar gets a certificate with a SPIFFE ID format:
 
-```
+```yaml
 spiffe://cluster.local/ns/{namespace}/dapr-id/{app-id}
 ```
 

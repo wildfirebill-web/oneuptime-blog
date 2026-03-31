@@ -14,7 +14,7 @@ Dapr and eBPF tools like Cilium operate at different layers of the networking st
 
 Dapr operates at the application layer - it provides building blocks for state, messaging, and service invocation via the sidecar pattern. eBPF tools like Cilium operate at the kernel network layer, intercepting network traffic without requiring application code changes or additional proxy sidecars.
 
-```
+```text
 Application Code
      |
 Dapr Sidecar (L7 - application building blocks)

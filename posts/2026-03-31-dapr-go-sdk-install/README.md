@@ -26,7 +26,7 @@ go get github.com/dapr/go-sdk/service/http@latest
 
 Your `go.mod` should now reference the SDK:
 
-```
+```text
 require github.com/dapr/go-sdk v1.11.0
 ```
 

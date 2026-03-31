@@ -25,7 +25,7 @@ stats.forEach((s) => {
 ```
 
 Example output:
-```
+```yaml
 _id_: 45231 ops since 2025-01-01T00:00:00Z
 status_1_createdAt_-1: 12045 ops since 2025-01-01T00:00:00Z
 customerId_1: 0 ops since 2025-01-01T00:00:00Z

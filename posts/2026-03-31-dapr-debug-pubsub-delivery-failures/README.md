@@ -24,7 +24,7 @@ kubectl logs <subscriber-pod> -c daprd --tail=100
 
 Look for errors mentioning `pubsub`, `delivery`, or your component name. A failed broker connection looks like:
 
-```
+```text
 level=error msg="error publishing message: connection refused" component=kafka
 ```
 

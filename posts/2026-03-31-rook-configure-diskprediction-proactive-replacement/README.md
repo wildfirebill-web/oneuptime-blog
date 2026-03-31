@@ -103,7 +103,7 @@ for d in devices:
 
 Prometheus metrics for device health:
 
-```
+```text
 ceph_device_health_forecast_score
 ```
 

@@ -31,13 +31,13 @@ flowchart LR
 
 Each entry in the ACL LIST output is a string in the format:
 
-```
+```text
 user <name> <flags> <passwords> <keys> <channels> <commands>
 ```
 
 Example output:
 
-```
+```text
 1) "user default on nopass ~* &* +@all"
 2) "user app_user on #a665a45920422f9d417e4867efdc4fb8... ~app:* &* -@all +GET +SET +DEL"
 3) "user readonly on #3d7c6b5... ~cache:* resetchannels -@all +@read"
@@ -46,7 +46,7 @@ Example output:
 
 ### Reading a rule line
 
-```
+```text
 user readonly on #3d7c6b5a... ~cache:* resetchannels -@all +@read
   |       |   |  |              |           |            |       |
   |       |   |  |              |           |            |       +-- Allow @read category

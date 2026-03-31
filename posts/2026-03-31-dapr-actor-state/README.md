@@ -214,13 +214,13 @@ func (a *OrderActor) PlaceOrder(ctx context.Context, req *PlaceOrderRequest) (*P
 
 Actor state is stored in the configured state store with a key format of:
 
-```
+```json
 {app-id}||{actor-type}-{actor-id}-{state-key}
 ```
 
 For example:
 
-```
+```text
 order-service||OrderActor-order-42-order_state
 ```
 

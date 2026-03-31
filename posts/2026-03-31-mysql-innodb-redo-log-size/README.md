@@ -165,7 +165,7 @@ Recovery time scales roughly linearly with the amount of unapplied redo data. Fo
 
 The redo log capacity should be proportional to the buffer pool size. A general guideline:
 
-```
+```text
 recommended redo log = 25% of innodb_buffer_pool_size
 minimum redo log = 10% of innodb_buffer_pool_size
 ```

@@ -147,7 +147,7 @@ dapr status -k
 
 All components should show `HEALTHY: True`:
 
-```
+```text
   NAME                   NAMESPACE    HEALTHY  STATUS   REPLICAS  VERSION
   dapr-operator          dapr-system  True     Running  2         1.14.0
   dapr-placement-server  dapr-system  True     Running  3         1.14.0

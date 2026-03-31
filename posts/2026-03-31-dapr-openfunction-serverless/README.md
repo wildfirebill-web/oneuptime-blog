@@ -14,7 +14,7 @@ OpenFunction is a cloud-agnostic, open-source serverless platform for Kubernetes
 
 ## Architecture
 
-```
+```text
 Event Source (Kafka/Redis/HTTP)
         |
     Dapr Input Binding

@@ -127,7 +127,7 @@ mongomirror performs an initial sync (copying all data), then enters continuous 
 
 mongomirror logs progress to stdout. Look for:
 
-```
+```json
 [2026-03-31T10:00:00] Initial sync progress: 85% (850000/1000000 docs)
 [2026-03-31T10:05:00] Initial sync complete. Entering continuous replication mode.
 [2026-03-31T10:05:01] Oplog lag: 2s

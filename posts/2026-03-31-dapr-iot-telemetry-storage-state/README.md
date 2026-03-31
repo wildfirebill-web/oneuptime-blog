@@ -12,7 +12,7 @@ IoT telemetry storage has two distinct access patterns: fast lookup of the curre
 
 ## Two-Tier Storage Architecture
 
-```
+```text
 Device Telemetry -> Dapr Pub/Sub -> Telemetry Handler
                                       -> Dapr State (latest readings - hot path)
                                       -> InfluxDB Binding (historical - cold path)

@@ -21,7 +21,7 @@ DingTalk is Alibaba Cloud's enterprise communication and collaboration platform,
 5. Enable security settings - use "Signature" for production
 
 The webhook URL looks like:
-```
+```yaml
 https://oapi.dingtalk.com/robot/send?access_token=<your-token>
 ```
 

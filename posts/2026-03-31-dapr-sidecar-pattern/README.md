@@ -14,7 +14,7 @@ The sidecar pattern deploys a helper process alongside the main application cont
 
 ## How Dapr's Sidecar Works
 
-```
+```text
 Pod
 +-----------------------------+
 |  App Container (port 8080)  |

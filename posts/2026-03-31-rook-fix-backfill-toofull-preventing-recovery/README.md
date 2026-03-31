@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Example:
 
-```
+```text
 HEALTH_WARN backfill_toofull; 8 pgs are stuck unclean for more than 300 sec
 8 pgs backfill_toofull
 ```

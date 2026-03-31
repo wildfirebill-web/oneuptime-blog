@@ -14,7 +14,7 @@ Kafka Schema Registry centralizes schema management for Kafka topics, preventing
 
 ## Architecture Overview
 
-```
+```json
 [App] --> [Avro Serialize] --> [Dapr Publish] --> [Kafka Topic]
                                                          |
 [App] <-- [Avro Deserialize] <-- [Dapr Subscribe] <------

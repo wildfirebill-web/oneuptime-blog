@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Checks, Timeout
+Tags: Podman, Containers, DevOps, Health Check, Timeout
 
 Description: Learn how to configure the health check timeout in Podman to define how long a health check command can run before being considered failed.
 

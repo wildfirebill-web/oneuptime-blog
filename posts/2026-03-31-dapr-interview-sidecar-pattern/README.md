@@ -36,7 +36,7 @@ spec:
         dapr.io/app-protocol: "http"
 ```
 
-```
+```bash
 # 2. Kubernetes Admission Webhook fires on pod creation
 kubectl apply -f deployment.yaml
 
@@ -52,7 +52,7 @@ kubectl get pod orderservice-xxx -o jsonpath='{.spec.containers[*].name}'
 
 ## Communication Between App and Sidecar
 
-```
+```yaml
 Direction: App -> Sidecar (outbound calls)
 Endpoint:  http://localhost:3500 (HTTP) or localhost:50001 (gRPC)
 Example:   App saves state by calling localhost:3500/v1.0/state/statestore

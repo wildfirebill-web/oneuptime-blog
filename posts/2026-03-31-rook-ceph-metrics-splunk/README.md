@@ -96,7 +96,7 @@ exporters:
 
 Once metrics arrive in Splunk, use SPL to query them:
 
-```
+```sql
 | mstats avg("ceph.health_status") as health WHERE index=infra_metrics span=5m
 | eval health_label=case(health=0,"OK",health=1,"WARN",health=2,"ERR")
 | timechart avg(health) by health_label

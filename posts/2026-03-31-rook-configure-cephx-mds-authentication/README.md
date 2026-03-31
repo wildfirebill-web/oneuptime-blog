@@ -14,7 +14,7 @@ The Ceph Metadata Server (MDS) manages CephFS directory metadata. CephX authenti
 
 MDS capabilities control filesystem access:
 
-```
+```text
 allow [rwp] [path=<path>] [uid=<uid>] [gid=<gid>]
 ```
 

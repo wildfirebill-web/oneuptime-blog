@@ -30,13 +30,13 @@ curl -i http://localhost:3500/v1.0/healthz
 
 Response when healthy:
 
-```
+```text
 HTTP/1.1 204 No Content
 ```
 
 Response when unhealthy (e.g., sidecar still initializing):
 
-```
+```text
 HTTP/1.1 500 Internal Server Error
 ```
 

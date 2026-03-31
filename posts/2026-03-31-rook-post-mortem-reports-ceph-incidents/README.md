@@ -25,7 +25,7 @@ A useful Ceph post-mortem has six sections:
 
 Write a one-paragraph summary that anyone on the team can read in 30 seconds:
 
-```
+```text
 On 2026-03-15 at 14:22 UTC, the Ceph cluster entered HEALTH_ERR state due to
 OSD 4 crashing after a disk controller firmware update. The cluster was
 degraded for 2 hours and 15 minutes. No data was lost. Read and write
@@ -43,7 +43,7 @@ journalctl -u "ceph-osd@*" --since "2026-03-15 14:00" --until "2026-03-15 16:30"
 
 Format as a table:
 
-```
+```text
 14:22 UTC - OSD 4 marked down
 14:23 UTC - HEALTH_WARN: 1 OSD down
 14:27 UTC - PGs begin recovering
@@ -56,7 +56,7 @@ Format as a table:
 
 Use the "5 Whys" technique:
 
-```
+```text
 Why did the cluster degrade?
   - OSD 4 crashed.
 Why did OSD 4 crash?
@@ -73,7 +73,7 @@ Why is there no change management process?
 
 List specific, assigned, time-bounded actions:
 
-```
+```json
 [DONE]   Rolled back disk controller firmware to 3.1.8 on all nodes.
 [TODO]   Create firmware update SOP that requires Ceph maintenance window. (Owner: Alice, Due: 2026-04-15)
 [TODO]   Add firmware version to Ceph pre-update checklist. (Owner: Bob, Due: 2026-04-01)

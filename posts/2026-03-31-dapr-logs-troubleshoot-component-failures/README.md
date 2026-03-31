@@ -39,7 +39,7 @@ kubectl logs deploy/order-service -c daprd | grep "redis\|state"
 ```
 
 Common error:
-```
+```text
 level=error msg="error initializing component" component=statestore
   error="failed to create Redis client: dial tcp 10.0.0.5:6379: connection refused"
 ```
@@ -64,7 +64,7 @@ kubectl logs deploy/consumer-service -c daprd | grep "kafka\|pubsub"
 ```
 
 Error pattern:
-```
+```text
 level=error msg="error initializing component" component=pubsub
   error="kafka: client has run out of available brokers to talk to"
 ```
@@ -89,7 +89,7 @@ kubectl logs deploy/order-service -c daprd | grep -i "secret\|credential"
 ```
 
 Error:
-```
+```text
 level=error msg="error getting secret" storeName=kubernetes secretName=redis-auth
   error="secret 'redis-auth' not found"
 ```

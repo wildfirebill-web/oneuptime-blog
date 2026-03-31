@@ -35,7 +35,7 @@ Your `./components/statestore.yaml` becomes available at `/components/statestore
 
 Organize components by environment to make switching easy:
 
-```
+```text
 components/
   local/
     statestore.yaml
@@ -126,7 +126,7 @@ docker logs order-service-dapr | grep -i "component"
 
 You should see lines like:
 
-```
+```text
 time="2026-03-31T10:00:00Z" level=info msg="Component loaded" name=statestore type=state.redis/v1
 ```
 

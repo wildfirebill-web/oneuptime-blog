@@ -16,7 +16,7 @@ Combining Dapr with Spring Boot gives you the best of both worlds: Spring Boot's
 
 A typical Dapr + Spring Boot microservices setup:
 
-```
+```text
 order-service/         # Handles order creation
 inventory-service/     # Manages product inventory
 notification-service/  # Sends email/SMS notifications

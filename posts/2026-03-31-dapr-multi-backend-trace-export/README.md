@@ -14,7 +14,7 @@ Organizations often need traces in multiple systems: a compliance-oriented backe
 
 ## Collector Fan-Out Architecture
 
-```
+```text
 Dapr Sidecar (OTLP) --> OTel Collector --> Jaeger (internal debugging)
                                        --> Tempo (long-term storage)
                                        --> Honeycomb (developer analysis)

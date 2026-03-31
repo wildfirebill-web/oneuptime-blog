@@ -23,7 +23,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Default output:
 
-```
+```text
 full_ratio 0.95
 backfillfull_ratio 0.9
 nearfull_ratio 0.85

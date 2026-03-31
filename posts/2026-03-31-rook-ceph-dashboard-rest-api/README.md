@@ -32,7 +32,7 @@ echo "Token: $TOKEN"
 
 The Dashboard provides a built-in Swagger UI:
 
-```
+```yaml
 https://localhost:8443/api/swagger-ui
 ```
 

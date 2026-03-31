@@ -26,7 +26,7 @@ ceph mgr dump
 
 Example `mgr stat` output:
 
-```
+```json
 {
   "epoch": 14,
   "available": true,

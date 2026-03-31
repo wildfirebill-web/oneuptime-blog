@@ -25,7 +25,7 @@ If the OSD crashes between steps 2 and 3, the WAL replays on restart to complete
 
 BlueStore uses three logical storage areas:
 
-```
+```text
 +------------------+------------------+------------------+
 | Main Block Dev   | WAL Device       | RocksDB (DB)     |
 | Object data      | Pending writes   | Metadata index   |

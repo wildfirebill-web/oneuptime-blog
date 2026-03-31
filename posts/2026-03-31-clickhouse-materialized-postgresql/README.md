@@ -32,7 +32,7 @@ flowchart LR
 
 In `postgresql.conf`:
 
-```
+```text
 wal_level = logical
 max_replication_slots = 10
 max_wal_senders = 10
@@ -50,7 +50,7 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO ch_replicati
 
 ### 3. Verify the pg_hba.conf allows replication connections
 
-```
+```text
 host    replication    ch_replication    10.0.0.10/32    md5
 ```
 

@@ -12,7 +12,7 @@ E-commerce platforms are classic microservices use cases: high traffic spikes, d
 
 ## E-Commerce Architecture with Dapr
 
-```
+```text
 Web/Mobile -> API Gateway -> Product Service (Dapr)
                           -> Cart Service (Dapr)
                           -> Order Service (Dapr)

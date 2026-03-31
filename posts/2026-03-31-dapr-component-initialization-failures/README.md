@@ -14,7 +14,7 @@ Dapr components (state stores, pub/sub brokers, bindings, secret stores) must su
 
 Component initialization errors appear in the Dapr sidecar logs at startup:
 
-```
+```text
 error initializing state store component: dial tcp: connection refused
 failed to init component redis: ERR AUTH required
 component failed to initialize: error connecting to Kafka broker

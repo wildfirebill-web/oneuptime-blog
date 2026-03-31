@@ -50,7 +50,7 @@ export HUGGINGFACE_API_TOKEN=hf_your_token_here
 
 ## Popular Models on Hugging Face
 
-```
+```text
 meta-llama/Meta-Llama-3-8B-Instruct     # Llama 3 8B - fast general purpose
 meta-llama/Meta-Llama-3-70B-Instruct    # Llama 3 70B - high quality
 mistralai/Mistral-7B-Instruct-v0.3      # Mistral 7B

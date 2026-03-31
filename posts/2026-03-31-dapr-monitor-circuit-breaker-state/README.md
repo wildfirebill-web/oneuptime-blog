@@ -48,7 +48,7 @@ curl http://localhost:9090/metrics | grep dapr_resiliency
 
 Relevant metric labels:
 
-```
+```text
 dapr_resiliency_count{
   app_id="checkout-service",
   name="serviceCB",

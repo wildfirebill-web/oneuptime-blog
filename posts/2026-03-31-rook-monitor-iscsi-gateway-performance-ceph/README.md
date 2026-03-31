@@ -62,7 +62,7 @@ rbd perf image iostat --pool iscsi
 
 Example output:
 
-```
+```text
 NAME       WR       RD  WR_BYTES  RD_BYTES     WR_LAT   RD_LAT
 vol1      120        5   61440B   2560B    0.5ms   0.3ms
 ```
@@ -120,13 +120,13 @@ echo "* * * * * root /usr/local/bin/iscsi-metrics.sh > /var/lib/node_exporter/te
 
 Create a Grafana panel to visualize iSCSI throughput using PromQL:
 
-```
+```text
 rate(node_network_receive_bytes_total{device="eth1"}[5m]) * 8
 ```
 
 For RBD latency from Ceph's built-in metrics:
 
-```
+```text
 ceph_rbd_write_latency_sum / ceph_rbd_write_latency_count
 ```
 

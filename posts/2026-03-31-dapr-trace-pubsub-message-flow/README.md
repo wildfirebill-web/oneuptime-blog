@@ -103,7 +103,7 @@ def extract_trace_id(req):
 
 In Jaeger or Zipkin, the trace shows:
 
-```
+```text
 checkout-service (100ms total)
   |-- POST /checkout (30ms)
   |-- dapr.publish: order-completed (70ms)
@@ -122,7 +122,7 @@ Note: The async gap may span seconds or minutes. Trace viewers show this as sepa
 
 When a subscriber fails, Dapr retries. Each retry creates a new span under the same trace:
 
-```
+```text
 order-processor
   Attempt 1: dapr.subscribe (FAILED - 500ms)
   Attempt 2: dapr.subscribe (FAILED - 500ms)

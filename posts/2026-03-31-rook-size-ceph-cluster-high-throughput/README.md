@@ -16,7 +16,7 @@ High-throughput workloads such as video ingest, ML training data pipelines, and 
 
 A single SATA HDD delivers roughly 200MB/s sequential throughput. A Ceph cluster's aggregate throughput scales roughly linearly with OSD count (assuming the network is not the bottleneck):
 
-```
+```yaml
 Target: 10GB/s aggregate write throughput
 Per-HDD sequential write: ~150MB/s (conservative)
 OSDs needed: 10,000MB/s / 150MB/s = 67 OSDs minimum
@@ -28,7 +28,7 @@ Adjusted OSDs needed: 10,000 * 3 / 150 = 200 OSDs
 
 For NVMe drives (3GB/s each):
 
-```
+```text
 OSDs needed for 10GB/s: 10,000 * 3 / 3,000 = 10 NVMe OSDs
 ```
 
@@ -67,7 +67,7 @@ spec:
 
 The public network must handle aggregate client throughput. For 10GB/s:
 
-```
+```text
 10GB/s = 80Gbps
 With 10 nodes: 8Gbps per node -> 10GbE per node is the bottleneck
 Use 25GbE or 100GbE per node for headroom

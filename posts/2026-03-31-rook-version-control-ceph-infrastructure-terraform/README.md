@@ -12,7 +12,7 @@ Version controlling your Ceph infrastructure with Terraform means every change i
 
 ## Repository Structure
 
-```
+```text
 ceph-infra/
   environments/
     dev/

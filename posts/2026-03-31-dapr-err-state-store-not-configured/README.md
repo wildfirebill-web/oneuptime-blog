@@ -14,7 +14,7 @@ The `ERR_STATE_STORE_NOT_CONFIGURED` error occurs when your application tries to
 
 When you call the Dapr state API and receive this error, it means Dapr's sidecar started successfully but no state store component was loaded. The full error typically looks like:
 
-```
+```text
 error saving state: rpc error: code = FailedPrecondition
 desc = state store statestore is not configured
 ```
@@ -99,7 +99,7 @@ kubectl logs <pod-name> -c daprd | grep -i "state"
 
 For local runs, you will see a log line confirming the component initialized:
 
-```
+```text
 INFO  Starting Dapr Runtime -- version 1.13 ...
 INFO  component loaded. name: statestore, type: state.redis/v1
 ```

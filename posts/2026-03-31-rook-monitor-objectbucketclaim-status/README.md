@@ -42,7 +42,7 @@ kubectl describe obc app-bucket -n my-app
 
 Look for the `Status` and `Conditions` sections:
 
-```
+```yaml
 Status:
   Phase: Bound
 Conditions:

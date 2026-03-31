@@ -33,7 +33,7 @@ ORDER BY (ts, id);
 
 Without enabling the setting, attempting to create a table with `Object('json')` raises:
 
-```
+```yaml
 Code: 451. DB::Exception: Experimental Object type is not allowed.
 Set allow_experimental_object_type = 1 to use it.
 ```

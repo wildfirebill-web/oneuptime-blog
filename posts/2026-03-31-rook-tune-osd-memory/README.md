@@ -59,7 +59,7 @@ spec:
 
 A good rule of thumb is:
 
-```
+```text
 osd_memory_target = K8s memory limit - 1 GiB (OS/process overhead)
 ```
 

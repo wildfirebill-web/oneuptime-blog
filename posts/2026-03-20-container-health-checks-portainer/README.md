@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Health Checks, Monitoring, DevOps
+Tags: Portainer, Docker, Health Check, Monitoring, DevOps
 
 Description: Set up comprehensive health checks for containers in Portainer to enable automatic recovery and monitoring.
 

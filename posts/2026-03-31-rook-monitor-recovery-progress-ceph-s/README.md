@@ -18,7 +18,7 @@ ceph -s
 
 Example output during active recovery:
 
-```
+```yaml
 cluster:
   id:     abc123
   health: HEALTH_WARN
@@ -113,7 +113,7 @@ ceph tell osd.* bench
 
 Monitor recovery through the Ceph manager dashboard or Prometheus:
 
-```
+```text
 ceph_pg_recovering_bytes_per_sec
 ceph_pg_degraded
 ```

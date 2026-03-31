@@ -92,7 +92,7 @@ curl -v -X OPTIONS \
 
 You should see response headers like:
 
-```
+```text
 < Access-Control-Allow-Origin: https://app.example.com
 < Access-Control-Allow-Methods: PUT
 < Access-Control-Allow-Headers: Content-Type

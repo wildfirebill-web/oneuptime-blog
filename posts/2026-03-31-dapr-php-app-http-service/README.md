@@ -21,7 +21,7 @@ dapr init
 
 ## Application Structure
 
-```
+```text
 php-service/
   public/
     index.php

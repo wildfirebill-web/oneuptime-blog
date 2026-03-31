@@ -14,7 +14,7 @@ Kustomize overlays allow you to define a base Rook-Ceph configuration and apply 
 
 ## Repository Structure
 
-```
+```text
 rook-kustomize/
   base/
     kustomization.yaml

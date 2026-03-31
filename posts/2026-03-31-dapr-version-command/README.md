@@ -20,7 +20,7 @@ dapr version
 
 Sample output:
 
-```
+```text
 CLI version: 1.13.0
 Runtime version: 1.13.0
 ```
@@ -52,7 +52,7 @@ Sample JSON output:
 
 Dapr follows a supported version policy. The CLI and runtime should be on the same minor version. A mismatch warning is printed when they differ:
 
-```
+```yaml
 CLI version: 1.13.0
 Runtime version: 1.12.5
 WARNING: mismatched CLI and runtime versions

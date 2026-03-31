@@ -16,7 +16,7 @@ Dapr's pub/sub, bindings, and workflow components enable serverless-style event 
 
 A typical serverless event processing pipeline:
 
-```
+```json
 [External Event Source] -> [Input Binding / Pub/Sub] -> [Dapr App] -> [Workflow] -> [Output Binding]
 ```
 

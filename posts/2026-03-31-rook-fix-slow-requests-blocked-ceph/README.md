@@ -20,7 +20,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Example:
 
-```
+```text
 HEALTH_WARN 8 slow requests are blocked for more than 32 sec
 8 slow requests are blocked
 ```

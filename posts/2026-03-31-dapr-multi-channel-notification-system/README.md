@@ -14,7 +14,7 @@ A notification system receives events from multiple upstream services and delive
 
 With Dapr, each channel becomes a dedicated subscriber that reads from a shared pub/sub topic, enabling independent scaling and channel-specific retry policies.
 
-```
+```text
 Order Service --> [pubsub: notifications] --> Email Service
                                            --> SMS Service
                                            --> Push Service

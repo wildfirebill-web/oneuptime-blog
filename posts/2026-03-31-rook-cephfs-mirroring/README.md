@@ -178,7 +178,7 @@ ceph fs snapshot mirror status myfs /volumes/team-a
 
 Example output:
 
-```
+```yaml
   /volumes/team-a:
     state: up
     peers:

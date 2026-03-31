@@ -29,7 +29,7 @@ kubectl top pod order-service-xxx --containers -n default
 
 Output shows both your app container and the `daprd` container:
 
-```
+```text
 POD                        NAME           CPU(cores)   MEMORY(bytes)
 order-service-7d8f9c-xyz   order-service  15m          128Mi
 order-service-7d8f9c-xyz   daprd          8m           64Mi
@@ -39,7 +39,7 @@ order-service-7d8f9c-xyz   daprd          8m           64Mi
 
 Use container-level metrics from kube-state-metrics and cAdvisor:
 
-```
+```text
 # CPU usage for all daprd containers
 rate(container_cpu_usage_seconds_total{container="daprd"}[5m])
 
@@ -55,7 +55,7 @@ rate(container_cpu_throttled_seconds_total{container="daprd"}[5m])
 
 Dapr also exposes internal Go runtime metrics. Check for goroutine count and heap usage:
 
-```
+```text
 # Go heap in use
 go_memstats_heap_inuse_bytes{app="daprd"}
 
@@ -85,7 +85,7 @@ metadata:
 
 Run this PromQL query to rank services by sidecar memory:
 
-```
+```text
 topk(10,
   avg by (pod, namespace) (
     container_memory_working_set_bytes{container="daprd"}
@@ -95,7 +95,7 @@ topk(10,
 
 And by CPU:
 
-```
+```text
 topk(10,
   avg by (pod, namespace) (
     rate(container_cpu_usage_seconds_total{container="daprd"}[5m])
@@ -107,7 +107,7 @@ topk(10,
 
 Add a panel to your Dapr Grafana dashboard:
 
-```
+```text
 # Legend: {{pod}}
 avg by (pod) (
   container_memory_working_set_bytes{container="daprd", namespace="$namespace"}

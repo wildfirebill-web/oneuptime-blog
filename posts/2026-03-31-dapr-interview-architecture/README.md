@@ -18,7 +18,7 @@ A strong interview answer covers three layers: the sidecar process, building blo
 
 ## Architecture Diagram to Draw
 
-```
+```json
 [App]---localhost:3500---[Dapr Sidecar (daprd)]---[Redis/Kafka/etc]
                                 |
                          [Control Plane]
@@ -30,7 +30,7 @@ A strong interview answer covers three layers: the sidecar process, building blo
 
 ## Building Blocks - Be Ready to List All
 
-```
+```text
 1. Service Invocation     - synchronous HTTP/gRPC between services
 2. State Management       - CRUD on key/value store
 3. Pub/Sub Messaging      - async event-driven messaging
@@ -45,7 +45,7 @@ A strong interview answer covers three layers: the sidecar process, building blo
 
 ## Control Plane Components
 
-```
+```text
 Placement Service    - tracks actor distribution across pods
 Sentry               - certificate authority for mTLS
 Operator             - manages component and configuration CRDs
@@ -73,7 +73,7 @@ metadata:
 
 ## Data Flow for a State Management Call
 
-```
+```text
 App calls: GET http://localhost:3500/v1.0/state/statestore/key123
 
 1. App -> Dapr sidecar HTTP API (localhost:3500)

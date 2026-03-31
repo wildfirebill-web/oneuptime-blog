@@ -124,7 +124,7 @@ net ads join -U administrator
 
 Expected output:
 
-```
+```text
 Using short domain name -- EXAMPLE
 Joined 'SAMBA01' to dns domain 'example.com'
 ```

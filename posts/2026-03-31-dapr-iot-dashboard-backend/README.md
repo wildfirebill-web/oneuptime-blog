@@ -12,7 +12,7 @@ An IoT dashboard backend serves two functions: providing current device state fo
 
 ## Dashboard Backend Architecture
 
-```
+```text
 Browser -> REST API (initial load) -> Dapr State Store
         -> WebSocket (real-time)   -> Dapr Pub/Sub -> WebSocket Push
 Devices -> Telemetry Pipeline      -> Dapr State + Pub/Sub

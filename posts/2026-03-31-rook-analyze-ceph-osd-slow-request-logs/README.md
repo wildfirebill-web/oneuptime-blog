@@ -14,7 +14,7 @@ Slow OSD requests are one of the most common performance issues in Ceph clusters
 
 When an OSD request exceeds `osd_op_complaint_time` (default 30 seconds), Ceph logs a warning:
 
-```
+```text
 2024-01-15T10:23:45.123+0000 osd.2 slow request 30.123 seconds old, received at 2024-01-15T09:53:15
 ```
 

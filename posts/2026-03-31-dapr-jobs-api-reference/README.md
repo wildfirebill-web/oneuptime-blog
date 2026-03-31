@@ -14,7 +14,7 @@ The Dapr Jobs API schedules persistent, durable jobs that survive pod restarts a
 
 ## Base URL
 
-```
+```yaml
 http://localhost:{daprPort}/v1.0-alpha1/jobs/{jobName}
 ```
 

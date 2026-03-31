@@ -39,7 +39,7 @@ spec:
 
 Each event is stored as a JSON value with a structured key format:
 
-```
+```yaml
 Key: {aggregateType}:{aggregateId}:{sequenceNumber}
 Value: {eventType, payload, metadata, timestamp}
 ```

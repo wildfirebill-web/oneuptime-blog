@@ -14,7 +14,7 @@ End-to-end tracing covers the full journey of a request from the user-facing API
 
 ## Architecture
 
-```
+```json
 [Client] --> [Nginx Ingress] --> [API Gateway (Dapr)] --> [Order Service (Dapr)]
                                                                |
                                                     --> [Payment Service (Dapr)]

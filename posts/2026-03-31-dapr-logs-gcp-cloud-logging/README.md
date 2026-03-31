@@ -55,7 +55,7 @@ spec:
 
 Use the Logs Explorer with filter queries:
 
-```
+```text
 # All Dapr sidecar errors
 resource.type="k8s_container"
 labels.k8s-pod/app="analytics-service"

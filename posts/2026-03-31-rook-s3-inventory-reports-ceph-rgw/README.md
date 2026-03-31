@@ -106,7 +106,7 @@ head /tmp/inventory.csv
 
 Sample CSV output:
 
-```
+```text
 "my-bucket","uploads/data.json","2026-03-31T10:00:00.000Z","1024","abc123","STANDARD","false","NOT-REPLICATED","NOT-SSE"
 "my-bucket","logs/app.log","2026-03-31T09:00:00.000Z","4096","def456","STANDARD","false","NOT-REPLICATED","NOT-SSE"
 ```

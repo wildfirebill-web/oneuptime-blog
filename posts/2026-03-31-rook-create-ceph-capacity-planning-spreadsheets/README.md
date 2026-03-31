@@ -37,19 +37,19 @@ Key numbers to record:
 
 For replicated pools, usable capacity is:
 
-```
+```text
 Usable = Raw / Replication Factor
 ```
 
 For a 3-replica pool across 100 TiB raw:
 
-```
+```text
 Usable = 100 TiB / 3 = ~33.3 TiB
 ```
 
 For erasure-coded pools (e.g., k=4, m=2):
 
-```
+```text
 Usable = Raw * (k / (k + m)) = Raw * (4 / 6) = ~66.7%
 ```
 
@@ -57,13 +57,13 @@ Usable = Raw * (k / (k + m)) = Raw * (4 / 6) = ~66.7%
 
 Create a spreadsheet with the following columns:
 
-```
+```text
 Pool Name | Type | Raw TiB | Replication | Usable TiB | Used TiB | Used % | Projected Full Date
 ```
 
 Populate it with data from `ceph df detail`. For the "Projected Full Date" column, use a growth rate formula:
 
-```
+```text
 Days to Full = (Usable TiB - Used TiB) / Daily Growth TiB
 Projected Full Date = Today + Days to Full
 ```

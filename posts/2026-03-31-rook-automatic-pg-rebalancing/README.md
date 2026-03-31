@@ -14,7 +14,7 @@ Placement groups (PGs) are the fundamental unit of data distribution in Ceph. Ha
 
 Each OSD can efficiently handle 100-200 PGs. The recommended PG count for a pool is:
 
-```
+```text
 PGs = (OSDs * 100) / Replicas
 ```
 

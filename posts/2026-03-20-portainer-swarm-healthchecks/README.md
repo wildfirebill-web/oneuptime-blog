@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Health Checks, Reliability, Monitoring
+Tags: Portainer, Docker Swarm, Health Check, Reliability, Monitoring
 
 Description: Configure Docker health checks for Swarm services managed by Portainer to enable automatic container replacement on failure.
 

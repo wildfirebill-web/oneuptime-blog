@@ -14,7 +14,7 @@ Dapr service invocation on Azure Container Apps lets services call each other us
 
 ## Architecture
 
-```
+```text
 checkout-service
   -> localhost:3500/v1.0/invoke/inventory-service/method/getStock
     -> Dapr sidecar resolves "inventory-service" by app ID

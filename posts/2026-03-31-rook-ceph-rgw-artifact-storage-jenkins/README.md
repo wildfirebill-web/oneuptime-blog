@@ -36,7 +36,7 @@ In Jenkins: Manage Jenkins > Plugins > Available > search "S3 Artifact Manager" 
 
 In Jenkins: Manage Jenkins > System > Artifact Management for Builds:
 
-```
+```text
 S3 provider:
   S3 bucket: jenkins-artifacts
   Endpoint override: http://rook-ceph-rgw-my-store.rook-ceph:80

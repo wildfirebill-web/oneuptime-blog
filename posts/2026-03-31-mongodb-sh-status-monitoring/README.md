@@ -26,7 +26,7 @@ sh.status(true)
 
 A typical `sh.status()` output has three sections:
 
-```
+```json
 --- Sharding Status ---
 sharding version: { "_id" : 1, "minCompatibleVersion" : 5, "currentVersion" : 6 }
 

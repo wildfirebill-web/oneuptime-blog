@@ -198,7 +198,7 @@ curl -X POST http://localhost:3500/v1.0/invoke/checkout-service/method/checkout 
 
 Expected response:
 
-```
+```json
 {"error":"ERR_ACCESS_CONTROL_NOT_ENOUGH_PERMISSIONS"}
 ```
 

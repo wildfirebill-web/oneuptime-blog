@@ -30,7 +30,7 @@ composer require dapr/php-sdk
 
 ## Project Structure
 
-```
+```text
 my-dapr-app/
   src/
     app.php

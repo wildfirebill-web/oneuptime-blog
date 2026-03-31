@@ -43,7 +43,7 @@ scrape_configs:
 
 Check operator health:
 
-```
+```text
 # Operator reconciliation errors
 rate(dapr_operator_reconcile_errors_total[5m])
 
@@ -53,7 +53,7 @@ dapr_operator_components_loaded
 
 Monitor sentry certificate issuance:
 
-```
+```text
 # Certificate issuance rate
 rate(dapr_sentry_cert_sign_request_received_total[5m])
 
@@ -66,7 +66,7 @@ histogram_quantile(0.99, rate(dapr_sentry_cert_sign_duration_seconds_bucket[5m])
 
 Track placement health:
 
-```
+```text
 # Active placement streams (connected runtimes)
 dapr_placement_runtimes_total
 

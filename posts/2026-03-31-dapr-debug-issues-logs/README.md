@@ -35,7 +35,7 @@ kubectl logs deploy/order-service -c daprd | grep -i "component\|init"
 ```
 
 Look for:
-```
+```text
 level=error msg="error initializing component" component=statestore error="dial tcp redis:6379: connection refused"
 ```
 
@@ -77,7 +77,7 @@ kubectl logs deploy/consumer-service -c daprd | grep -i "topic\|sub"
 ```
 
 Expected successful subscription log:
-```
+```toml
 level=info msg="app is subscribed to the following topics: [orders] through pubsub=pubsub"
 ```
 

@@ -23,13 +23,13 @@ repl-backlog-size 1mb
 
 The default of 1 MB is often too small for production. Calculate a better value:
 
-```
+```text
 backlog_size = write_rate_per_second * max_expected_disconnect_seconds
 ```
 
 For a Redis instance writing 50 MB/s that needs to handle 30-second disconnections:
 
-```
+```text
 50 MB/s * 30s = 1500 MB
 ```
 

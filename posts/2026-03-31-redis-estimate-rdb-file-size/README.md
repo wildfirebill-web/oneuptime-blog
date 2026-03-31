@@ -100,7 +100,7 @@ df -h $(redis-cli CONFIG GET dir | tail -1)
 
 During BGSAVE, Redis writes a temporary file alongside the existing RDB. You need enough space for both:
 
-```
+```text
 Required free space = (estimated RDB size) * 2 + 10% buffer
 ```
 

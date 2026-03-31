@@ -14,7 +14,7 @@ Vertical Slice Architecture organizes code by feature (vertical slice through th
 
 ## Project Structure
 
-```
+```text
 src/
 - Features/
   - Orders/

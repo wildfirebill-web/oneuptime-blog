@@ -149,7 +149,7 @@ rs.printReplicationInfo();
 
 Output:
 
-```
+```yaml
 configured oplog size:   5120MB
 log length start to end: 86400secs (24hrs)
 oplog first event time:  Mon Mar 30 2024 12:00:00
@@ -165,7 +165,7 @@ rs.printSecondaryReplicationInfo();
 
 Output:
 
-```
+```yaml
 source: server2.example.com:27018
     syncedTo: Tue Mar 31 2024 11:59:58 GMT
     2 secs (0 hrs) behind the primary

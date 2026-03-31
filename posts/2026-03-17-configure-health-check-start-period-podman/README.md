@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Checks, Start Period
+Tags: Podman, Containers, DevOps, Health Check, Start Period
 
 Description: Learn how to configure the health check start period in Podman to give containers time to initialize before health checks begin counting failures.
 

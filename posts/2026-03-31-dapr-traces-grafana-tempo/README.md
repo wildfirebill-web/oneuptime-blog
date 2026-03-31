@@ -16,7 +16,7 @@ Grafana Tempo is a cost-efficient distributed tracing backend that stores traces
 
 The trace pipeline is:
 
-```
+```text
 Dapr Sidecar --> OpenTelemetry Collector --> Grafana Tempo --> Grafana UI
 ```
 

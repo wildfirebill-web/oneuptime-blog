@@ -20,7 +20,7 @@ dapr mtls --kubernetes
 
 Sample output:
 
-```
+```text
 Mutual TLS is enabled in your Kubernetes cluster
 ```
 
@@ -34,7 +34,7 @@ dapr mtls expiry --kubernetes
 
 Sample output:
 
-```
+```text
 Root certificate expires: 2027-03-31 10:00:00 +0000 UTC
 Issuer service certificate expires: 2026-09-15 10:00:00 +0000 UTC
 ```

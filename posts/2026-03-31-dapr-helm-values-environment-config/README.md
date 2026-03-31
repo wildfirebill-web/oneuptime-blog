@@ -12,7 +12,7 @@ Helm is widely used for packaging and deploying Kubernetes applications. When yo
 
 ## Chart Structure
 
-```
+```text
 mychart/
   Chart.yaml
   values.yaml

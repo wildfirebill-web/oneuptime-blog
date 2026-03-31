@@ -160,7 +160,7 @@ kubectl logs deployment/your-app -c daprd | grep -i lock
 
 You should see:
 
-```
+```text
 level=info msg="Component loaded: redislock (lock.redis/v1)"
 ```
 

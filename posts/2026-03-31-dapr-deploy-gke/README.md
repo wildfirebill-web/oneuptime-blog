@@ -69,7 +69,7 @@ kubectl get pods -n dapr-system
 
 Expected output:
 
-```
+```text
 NAME                                     READY   STATUS    RESTARTS
 dapr-dashboard-5d7b47f6-4xjks           1/1     Running   0
 dapr-operator-7d6b9d8b4-pqrst           1/1     Running   0

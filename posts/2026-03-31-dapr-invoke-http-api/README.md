@@ -14,7 +14,7 @@ Dapr intercepts HTTP calls between services and handles service discovery, retri
 
 The URL format is:
 
-```
+```yaml
 http://localhost:3500/v1.0/invoke/{app-id}/method/{method-name}
 ```
 

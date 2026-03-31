@@ -177,7 +177,7 @@ It is important not to confuse the log buffer with the redo log files:
 
 A rough guideline:
 
-```
+```text
 innodb_log_buffer_size >= 2 * (average transaction size in bytes)
 ```
 

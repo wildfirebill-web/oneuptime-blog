@@ -98,7 +98,7 @@ kubectl describe cephfilesystemsubvolumegroup production-group -n rook-ceph
 
 Expected status:
 
-```
+```yaml
 Status:
   Conditions:
     Message:               Resource is Ready

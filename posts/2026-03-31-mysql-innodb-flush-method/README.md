@@ -61,7 +61,7 @@ innodb_flush_method = O_DIRECT_NO_FSYNC
 
 The default `fsync` method writes data through the OS page cache:
 
-```
+```text
 InnoDB buffer pool --> OS page cache --> disk
 ```
 

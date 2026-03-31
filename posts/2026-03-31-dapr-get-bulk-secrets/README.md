@@ -12,7 +12,7 @@ The Dapr bulk secrets endpoint retrieves all secrets accessible in a secret stor
 
 ## Bulk Secrets HTTP API
 
-```
+```text
 GET http://localhost:{daprPort}/v1.0/secrets/{storeName}/bulk
 ```
 

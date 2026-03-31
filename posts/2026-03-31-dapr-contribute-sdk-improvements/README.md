@@ -12,7 +12,7 @@ Description: Contribute improvements to Dapr SDKs including adding missing API c
 
 Each SDK is maintained in a separate repository:
 
-```
+```text
 github.com/dapr/dotnet-sdk    # C# / .NET
 github.com/dapr/python-sdk    # Python
 github.com/dapr/java-sdk      # Java / Spring Boot

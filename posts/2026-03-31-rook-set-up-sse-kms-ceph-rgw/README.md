@@ -14,7 +14,7 @@ SSE-KMS (Server-Side Encryption with KMS-Managed Keys) is an S3-compatible encry
 
 ## Architecture
 
-```
+```text
 Client --> Ceph RGW --> HashiCorp Vault (key retrieval)
                    --> OSD (encrypted data storage)
 ```

@@ -220,7 +220,7 @@ kubectl describe pv <pv-name> | grep "pool"
 
 Expected output showing zone affinity:
 
-```
+```text
 Node Affinity:
   Required Terms:
     Term 0:

@@ -23,7 +23,7 @@ type MiddlewareFunc func(next http.Handler) http.Handler
 
 ## Project Structure
 
-```
+```text
 custom-middleware/
   middleware/
     audit.go

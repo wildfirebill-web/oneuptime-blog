@@ -43,7 +43,7 @@ dapr init
 
 Expected output:
 
-```
+```text
 Making the jump to hyperspace...
 Installing runtime version 1.14.x
 Downloading binaries and setting up components...
@@ -69,7 +69,7 @@ docker ps
 
 You should see:
 
-```
+```text
 CONTAINER ID   IMAGE                    PORTS
 ...            daprio/dapr              0.0.0.0:50005->50005/tcp
 ...            redis:6                  0.0.0.0:6379->6379/tcp
@@ -140,7 +140,7 @@ dapr status
 
 Expected output:
 
-```
+```text
 NAME            NAMESPACE  HEALTHY  STATUS   REPLICAS  VERSION  AGE
 dapr_placement  dapr       True     Running  1         1.14.x   1m
 ```

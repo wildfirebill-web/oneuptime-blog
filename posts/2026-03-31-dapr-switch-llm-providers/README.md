@@ -14,7 +14,7 @@ One of the most powerful features of the Dapr Conversation API is provider abstr
 
 Your application always calls the same endpoint pattern:
 
-```
+```text
 POST /v1.0-alpha1/conversation/{component-name}/converse
 ```
 

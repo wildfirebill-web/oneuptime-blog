@@ -14,7 +14,7 @@ Okta issues signed JWTs for user authentication and machine-to-machine scenarios
 
 ## Okta Application Setup
 
-```
+```text
 1. In Okta Admin Console:
    - Applications > Create App Integration
    - Select "API Services" for M2M, or "OIDC Web App" for user flows
@@ -28,7 +28,7 @@ Okta issues signed JWTs for user authentication and machine-to-machine scenarios
 
 ## JWKS Endpoint
 
-```
+```yaml
 https://your-org.okta.com/oauth2/default/v1/keys
 # or for custom auth server:
 https://your-org.okta.com/oauth2/aus1ab2cd3ef4gh5ij/v1/keys
@@ -132,7 +132,7 @@ func main() {
 
 In Okta Authorization Server, add a custom claim:
 
-```
+```yaml
 Name: groups
 Value type: Groups
 Filter: Starts with "app-"

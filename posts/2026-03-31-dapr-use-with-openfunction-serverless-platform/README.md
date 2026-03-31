@@ -12,7 +12,7 @@ OpenFunction is a CNCF sandbox project that provides a serverless FaaS platform 
 
 ## OpenFunction Architecture with Dapr
 
-```
+```text
 External Event Source (Kafka, Redis, HTTP)
      |
      v

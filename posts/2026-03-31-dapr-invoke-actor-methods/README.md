@@ -14,7 +14,7 @@ Dapr actors expose methods that can be invoked from other services or clients. U
 
 The Dapr HTTP API for actor method invocation follows this pattern:
 
-```
+```text
 POST http://localhost:{daprPort}/v1.0/actors/{actorType}/{actorId}/method/{methodName}
 ```
 

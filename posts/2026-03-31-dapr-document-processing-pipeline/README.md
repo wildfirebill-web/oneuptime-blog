@@ -14,7 +14,7 @@ A document processing pipeline receives raw documents (PDFs, Word files, images)
 
 With Dapr, each stage is an independent microservice connected via pub/sub topic chaining:
 
-```
+```text
 Upload --> [doc-uploaded] --> Extraction Service
                                    |
                               [doc-extracted] --> Transformation Service

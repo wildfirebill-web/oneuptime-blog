@@ -16,7 +16,7 @@ Dapr Component, Configuration, Resiliency, and Subscription CRDs are configurati
 
 Organize your Dapr manifests in a structured GitOps repository:
 
-```
+```text
 gitops-repo/
   clusters/
     production/

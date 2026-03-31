@@ -22,7 +22,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph health detail
 
 Example output:
 
-```
+```text
 HEALTH_ERR 1 filesystem is damaged; 2 pgs are degraded; mon quorum is not live
 ```
 

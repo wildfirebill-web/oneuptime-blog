@@ -12,7 +12,7 @@ Building chatbots requires managing conversation history, maintaining context ac
 
 ## Chatbot Architecture with Dapr
 
-```
+```text
 User Request --> API Gateway
                      |
                      v

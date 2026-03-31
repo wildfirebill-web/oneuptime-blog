@@ -18,7 +18,7 @@ The Dapr workflow subsystem consists of three key components:
 2. **Workflow Actor** - a virtual actor that stores workflow state and schedules activities
 3. **Activity Worker** - your application code that executes activities
 
-```
+```json
 [Your App] <--> [Dapr Sidecar / Workflow Engine] <--> [State Store (Redis/CosmosDB)]
                           |
                    [Activity Dispatch]
@@ -30,7 +30,7 @@ The Dapr workflow subsystem consists of three key components:
 
 Dapr workflows use an event-sourced execution model. The workflow state is stored as a sequence of events:
 
-```
+```text
 Event Log:
 1. WorkflowStarted  { input: {...} }
 2. ActivityScheduled { name: "validate_order" }

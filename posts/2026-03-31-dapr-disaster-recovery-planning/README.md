@@ -68,7 +68,7 @@ kubectl get components --all-namespaces -o json | jq '
 
 Design your DR topology with primary and standby regions:
 
-```
+```text
 Primary Region (us-east-1)
   Kubernetes Cluster A
   - Dapr runtime

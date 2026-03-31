@@ -12,7 +12,7 @@ Data replication via pub/sub is a core pattern for maintaining eventual consiste
 
 ## Architecture: Pub/Sub Data Replication
 
-```
+```text
 Source Service -> Publishes Event -> Dapr Pub/Sub -> Subscriber Services
                                                    -> Update Local State Store
 ```

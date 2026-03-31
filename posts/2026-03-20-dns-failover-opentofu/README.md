@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, DNS, Failover, Route53, High Availability, Health Checks, Infrastructure as Code
+Tags: OpenTofu, DNS, Failover, Route53, High Availability, Health Check, Infrastructure as Code
 
 Description: Learn how to implement DNS-based failover using Route 53 health checks and failover routing policies with OpenTofu for automatic traffic routing to a secondary region when primary fails.
 

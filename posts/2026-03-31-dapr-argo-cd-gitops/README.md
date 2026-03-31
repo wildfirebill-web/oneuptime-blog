@@ -22,7 +22,7 @@ Argo CD is a declarative GitOps continuous delivery tool for Kubernetes. Combini
 
 Organize your Git repository for GitOps:
 
-```
+```text
 dapr-gitops/
   apps/
     order-service/

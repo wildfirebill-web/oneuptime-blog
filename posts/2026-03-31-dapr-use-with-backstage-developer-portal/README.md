@@ -136,7 +136,7 @@ spec:
 
 Once catalog entities reference Dapr components via `dependsOn`, the Backstage dependency graph shows which services use which Dapr components:
 
-```
+```text
 order-service
   depends on: statestore-prod (Redis)
   depends on: pubsub-prod (Kafka)

@@ -80,7 +80,7 @@ curl -v -X OPTIONS \
 
 The response should include:
 
-```
+```yaml
 Access-Control-Allow-Origin: https://app.example.com
 Access-Control-Allow-Methods: GET, PUT, POST, DELETE
 Access-Control-Max-Age: 3600

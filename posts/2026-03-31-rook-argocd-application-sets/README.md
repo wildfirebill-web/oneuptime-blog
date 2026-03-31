@@ -16,7 +16,7 @@ ArgoCD ApplicationSets enable templated, multi-cluster Rook deployments from a s
 
 Organize your Rook configuration for ApplicationSet compatibility:
 
-```
+```text
 rook-gitops/
   base/
     crds.yaml

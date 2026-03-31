@@ -12,7 +12,7 @@ Azure API Management (APIM) acts as a gateway for Dapr services, providing rate 
 
 ## Architecture Overview
 
-```
+```text
 Client -> APIM -> Dapr Sidecar -> Microservice
                       |
               [State/PubSub/Secrets]

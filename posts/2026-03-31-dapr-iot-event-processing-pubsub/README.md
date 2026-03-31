@@ -12,7 +12,7 @@ IoT deployments generate millions of events per day from sensors, actuators, and
 
 ## IoT Event Processing Architecture
 
-```
+```text
 Device -> MQTT/HTTP Gateway -> Dapr Pub/Sub
                                 -> Raw Storage (all events)
                                 -> Anomaly Detector

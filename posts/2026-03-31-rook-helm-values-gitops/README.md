@@ -14,7 +14,7 @@ Helm values files provide a clean separation between the chart logic (maintained
 
 ## Repository Structure
 
-```
+```text
 rook-helm-gitops/
   environments/
     base-values.yaml

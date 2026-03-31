@@ -24,7 +24,7 @@ ceph -s
 
 Sample output:
 
-```
+```yaml
   cluster:
     id:     a7f8c123-4567-89ab-cdef-0123456789ab
     health: HEALTH_OK

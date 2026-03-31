@@ -14,7 +14,7 @@ Data import workflows receive data from external systems - file uploads, message
 
 When data arrives on a configured source (a file in S3, a message on Kafka, a cron tick), Dapr calls a matching endpoint in your service:
 
-```
+```text
 External Source -> Dapr Sidecar (Input Binding) -> POST /binding-name -> Your Service
 ```
 

@@ -16,7 +16,7 @@ Ceph stretch mode depends on CRUSH (Controlled Replication Under Scalable Hashin
 
 The recommended CRUSH hierarchy for stretch mode looks like this:
 
-```
+```text
 root default
   datacenter dc1
     host host-dc1a
@@ -69,7 +69,7 @@ ceph osd tree
 
 Expected output:
 
-```
+```text
 ID  CLASS  WEIGHT   TYPE NAME       STATUS
 -1         16.00000 root default
 -3          8.00000     datacenter dc1

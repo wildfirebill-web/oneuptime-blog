@@ -12,7 +12,7 @@ ETL (Extract, Transform, Load) pipelines move data between systems - from databa
 
 ## ETL Architecture with Dapr Bindings
 
-```
+```text
 Source System -> Input Binding -> Transform Service -> Output Binding -> Target System
   (Kafka, S3,                                                           (PostgreSQL,
    MySQL CDC,                                                            Redis, S3,

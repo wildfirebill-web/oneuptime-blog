@@ -98,7 +98,7 @@ kubectl logs <your-pod-name> -c daprd --tail=50
 
 Look for entries like:
 
-```
+```text
 level=error msg="error invoking app" error="POST http://localhost:6001/job/test-job returned 500"
 ```
 

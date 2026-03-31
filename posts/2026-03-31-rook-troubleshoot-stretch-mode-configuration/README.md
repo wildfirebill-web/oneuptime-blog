@@ -111,7 +111,7 @@ ceph osd dump | grep -E "stretch|flags"
 
 Expected output when stretch mode is correctly enabled:
 
-```
+```text
 flags stretch_mode_enabled
 ```
 

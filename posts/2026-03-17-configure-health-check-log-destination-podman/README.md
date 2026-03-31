@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Checks, Logging
+Tags: Podman, Containers, DevOps, Health Check, Logging
 
 Description: Learn how to configure the health check log destination in Podman to control where health check results are stored.
 

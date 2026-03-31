@@ -46,7 +46,7 @@ annotations:
 
 Track these Dapr metrics for cost optimization:
 
-```
+```text
 # Request rate per app - identifies high-traffic apps needing more resources
 sum by (app_id, namespace) (
   rate(dapr_http_server_request_count[5m])
@@ -123,7 +123,7 @@ curl "http://kubecost:9090/model/allocation?window=7d&aggregate=container&filter
 
 Use this query to find sidecars with very low CPU utilization:
 
-```
+```text
 # Sidecars using less than 5% of their CPU limit
 (
   rate(container_cpu_usage_seconds_total{container="daprd"}[1h])

@@ -121,7 +121,7 @@ ORDER BY id;
 
 Result:
 
-```
+```text
 Root
   Child
     Grandchild

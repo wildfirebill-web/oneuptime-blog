@@ -98,7 +98,7 @@ curl http://localhost:9090/metrics | grep dapr_actor_active_actors
 
 Expected output shows balanced distribution:
 
-```
+```text
 dapr_actor_active_actors{app_id="counter-service",actor_type="Counter",namespace="default"} 342
 ```
 

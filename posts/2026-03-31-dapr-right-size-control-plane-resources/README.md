@@ -28,14 +28,14 @@ kubectl top pods -n dapr-system --containers
 
 Use Prometheus for historical data:
 
-```
+```text
 # Max CPU usage over 7 days
 max_over_time(
   rate(container_cpu_usage_seconds_total{namespace="dapr-system"}[5m])[7d:]
 )
 ```
 
-```
+```text
 # Max memory usage over 7 days
 max_over_time(
   container_memory_working_set_bytes{namespace="dapr-system"}[7d]

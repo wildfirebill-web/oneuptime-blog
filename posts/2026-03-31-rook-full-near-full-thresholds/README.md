@@ -14,7 +14,7 @@ Ceph has built-in capacity thresholds that trigger warnings and eventually block
 
 ## Ceph Threshold Levels
 
-```
+```text
 nearfull_ratio (default: 0.85)
   - HEALTH_WARN state
   - Alerts issued, writes still work normally
@@ -88,7 +88,7 @@ kubectl -n rook-ceph exec deploy/rook-ceph-tools -- \
 
 Output shows each OSD's utilization:
 
-```
+```text
 ID  CLASS  WEIGHT  REWEIGHT  SIZE    USE    AVAIL   %USE  VAR  PGS
  3  hdd    10.910  1.00000  10.91T  8.73T  2.18T  79.96  1.08  176
  7  hdd    10.910  1.00000  10.91T  8.52T  2.39T  78.08  1.06  168

@@ -13,7 +13,7 @@ Dapr's default log format is plain text, which is human-readable but difficult f
 ## Default vs JSON Log Format
 
 Default plain text format:
-```
+```text
 time="2026-03-31T10:00:00.000Z" level=info msg="component loaded" component=statestore type=state.redis
 ```
 
@@ -125,7 +125,7 @@ Configure FluentD to parse Dapr JSON logs:
 
 With JSON format enabled:
 
-```
+```text
 # Filter by log level
 {app="daprd"} | json | level="error"
 

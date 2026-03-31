@@ -14,7 +14,7 @@ Dapr is natively single-cluster - by default, service invocation resolves app ID
 
 In a multi-cluster Dapr setup, service mesh handles cross-cluster network routing while Dapr handles application-level building blocks:
 
-```
+```text
 Cluster A                          Cluster B
 [order-service]                    [inventory-service]
 [Dapr Sidecar] ---> East-West GW <--- East-West GW <--- [Dapr Sidecar]

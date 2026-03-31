@@ -14,7 +14,7 @@ While Dapr's pub/sub building block handles asynchronous messaging, many use cas
 
 ## Service Invocation Architecture
 
-```
+```text
 Client Service --> Dapr Sidecar --> Dapr Sidecar --> Target Service
 (Port 3500)                                          (Port 8080)
 ```

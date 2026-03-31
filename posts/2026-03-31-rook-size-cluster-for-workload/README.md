@@ -16,7 +16,7 @@ Ceph cluster sizing requires matching hardware to workload characteristics. A cl
 
 Define your workload requirements:
 
-```
+```yaml
 Workload type: Block (RBD), File (CephFS), or Object (RGW)
 Capacity target: Total usable storage needed
 Throughput: Peak MB/s read and write

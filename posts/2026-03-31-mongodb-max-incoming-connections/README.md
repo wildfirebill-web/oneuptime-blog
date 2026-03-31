@@ -73,7 +73,7 @@ db.adminCommand({ getParameter: 1, maxIncomingConnections: 1 })
 
 A rough formula:
 
-```
+```text
 maxIncomingConnections = (Available RAM for connections) / (Memory per connection)
 ```
 
@@ -83,7 +83,7 @@ Each connection uses approximately:
 
 Example for a 32 GB server with 8 GB reserved for WiredTiger cache and 4 GB for OS:
 
-```
+```text
 Available for connections: 32 - 8 - 4 = 20 GB = 20,000 MB
 Safe max connections: 20,000 / 1 MB = ~20,000 (conservative estimate)
 ```

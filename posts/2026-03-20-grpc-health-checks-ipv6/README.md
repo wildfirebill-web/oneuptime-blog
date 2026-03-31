@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, IPv6, Health Checks, Kubernetes, Monitoring
+Tags: gRPC, IPv6, Health Check, Kubernetes, Monitoring
 
 Description: Implement the standard gRPC health check protocol over IPv6 for Kubernetes liveness probes, load balancers, and monitoring systems.
 

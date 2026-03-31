@@ -12,7 +12,7 @@ The `HAVING` clause filters groups after `GROUP BY` aggregation. A subquery in `
 
 ## How HAVING with a subquery differs from WHERE
 
-```
+```dockerfile
 FROM -> JOIN -> WHERE (row filter) -> GROUP BY -> HAVING (group filter) -> SELECT
 ```
 

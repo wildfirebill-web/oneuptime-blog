@@ -12,7 +12,7 @@ OpsGenie provides on-call scheduling, escalation policies, and alert routing for
 
 ## Integration Architecture
 
-```
+```text
 Dapr Metrics -> Prometheus -> Alertmanager -> OpsGenie API -> On-Call Team
 ```
 

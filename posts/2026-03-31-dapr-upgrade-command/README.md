@@ -84,7 +84,7 @@ dapr status --kubernetes
 
 Expected output:
 
-```
+```text
   NAME                   NAMESPACE    HEALTHY  STATUS    VERSION
   dapr-operator          dapr-system  True     Running   1.14.0
   dapr-placement-server  dapr-system  True     Running   1.14.0

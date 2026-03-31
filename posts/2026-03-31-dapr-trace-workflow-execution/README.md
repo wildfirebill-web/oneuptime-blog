@@ -109,7 +109,7 @@ with DaprClient() as client:
 
 In Jaeger, a workflow trace looks like:
 
-```
+```text
 order-processing-workflow (5200ms total)
   |-- StartWorkflow (10ms)
   |-- Activity: reserve_inventory (200ms)

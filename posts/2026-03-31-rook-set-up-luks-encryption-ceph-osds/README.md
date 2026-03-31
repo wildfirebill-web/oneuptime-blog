@@ -59,7 +59,7 @@ cryptsetup luksDump /dev/sdb
 ```
 
 Expected output includes:
-```
+```yaml
 Version:       2
 Cipher:        aes-xts-plain64
 Cipher key:    512 bits

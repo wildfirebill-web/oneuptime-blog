@@ -14,7 +14,7 @@ When a scale-to-zero service receives its first request, the pod must start befo
 
 ## Typical Dapr Cold Start Timeline
 
-```
+```text
 0ms   - Pod scheduled
 200ms - Container image pulled (if not cached)
 500ms - Application container starting

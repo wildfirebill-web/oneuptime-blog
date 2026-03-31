@@ -28,7 +28,7 @@ rbd mirror pool status replicapool --format json | jq .
 ```
 
 Example output:
-```
+```yaml
 health: OK
 daemon health: OK
 image health: OK

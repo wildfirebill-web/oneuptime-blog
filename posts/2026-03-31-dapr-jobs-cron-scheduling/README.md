@@ -16,7 +16,7 @@ Dapr Jobs supports two scheduling formats: standard cron expressions and interva
 
 **Cron expressions** (7-field format including seconds):
 
-```
+```text
 * * * * * * *
 | | | | | | |
 | | | | | | day of week (0-7)
@@ -29,7 +29,7 @@ Dapr Jobs supports two scheduling formats: standard cron expressions and interva
 
 **Interval shorthand:**
 
-```
+```text
 @every <duration>  # e.g., @every 5m, @every 1h30m
 @daily             # once per day at midnight
 @weekly            # once per week

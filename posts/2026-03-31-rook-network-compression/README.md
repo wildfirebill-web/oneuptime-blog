@@ -77,7 +77,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Expected output when compression is enabled:
 
-```
+```text
 ms_compress_msgs    true
 ```
 

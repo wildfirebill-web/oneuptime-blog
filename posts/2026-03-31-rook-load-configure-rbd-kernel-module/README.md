@@ -88,7 +88,7 @@ rbd device list
 
 Sample output:
 
-```
+```text
 id  pool     namespace  image    snap  device
 0   mypool              myimage  -     /dev/rbd0
 ```

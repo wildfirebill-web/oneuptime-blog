@@ -12,7 +12,7 @@ Real-time dashboards require low-latency data pipelines from source events to th
 
 ## Architecture Overview
 
-```
+```text
 Data Source -> Dapr Publisher -> Message Broker -> Dapr Subscriber -> WebSocket Server -> Browser
 ```
 

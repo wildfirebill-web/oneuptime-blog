@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer,Docker,Health Checks,Operations,Monitoring,Debugging
+Tags: Portainer, Docker, Health Check, Operations, Monitoring, Debugging
 
 Description: Monitor container health check status in Portainer, interpret health states, and diagnose health check failures for running Docker containers.
 

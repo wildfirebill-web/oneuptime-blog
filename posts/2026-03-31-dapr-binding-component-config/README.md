@@ -108,7 +108,7 @@ Only applications with matching `app-id` values can invoke this binding.
 
 For local development, place components in the default directory:
 
-```
+```text
 ~/.dapr/components/
   kafka-binding.yaml
   smtp-binding.yaml

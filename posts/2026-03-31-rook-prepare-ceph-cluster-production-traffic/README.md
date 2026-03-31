@@ -80,7 +80,7 @@ ceph osd pool autoscale-status
 
 Ensure runbooks exist for the most common incidents:
 
-```
+```text
 - OSD Down
 - Near-Full Pool
 - MON Quorum Loss
@@ -100,7 +100,7 @@ curl -s http://prometheus:9090/api/v1/rules | python3 -m json.tool | grep '"name
 
 ### On-Call Setup
 
-```
+```json
 [ ] Alert routing configured to notify on-call rotation
 [ ] PagerDuty or equivalent configured for HEALTH_ERR alerts
 [ ] Escalation path defined for data loss scenarios

@@ -27,7 +27,7 @@ Dapr tracks metrics for both the publisher side (egress) and subscriber side (in
 
 ## Publish Success Rate
 
-```
+```text
 # Publish success rate per topic
 1 - (
   rate(dapr_component_pubsub_egress_fail_count[5m])
@@ -40,7 +40,7 @@ rate(dapr_component_pubsub_egress_count[5m])
 
 ## Message Processing Rate
 
-```
+```text
 # Messages processed per second per topic
 rate(dapr_component_pubsub_ingress_count[5m])
 
@@ -55,7 +55,7 @@ rate(dapr_component_pubsub_ingress_count[5m])
 
 Message drops indicate the subscriber cannot keep up or there is a configuration issue:
 
-```
+```text
 # Drop rate - any drops mean potential message loss
 rate(dapr_component_pubsub_drop_count[5m])
 
@@ -66,7 +66,7 @@ rate(dapr_component_pubsub_drop_count[5m])
 
 ## Processing Latency
 
-```
+```text
 # P99 message processing time per topic
 histogram_quantile(0.99,
   sum by (le, topic, component) (
@@ -121,7 +121,7 @@ groups:
 
 Dapr does not expose consumer lag directly, but you can approximate it from processing latency trends:
 
-```
+```text
 # Rising processing latency trend suggests growing lag
 deriv(
   histogram_quantile(0.50,

@@ -14,7 +14,7 @@ The Dapr Actors API implements the virtual actor pattern, where each actor insta
 
 ## Base URL
 
-```
+```yaml
 http://localhost:{daprPort}/v1.0/actors/{actorType}/{actorId}
 ```
 

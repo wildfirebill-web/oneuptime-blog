@@ -42,7 +42,7 @@ dmesg | grep -i "ceph\|FEATURE" | tail -20
 
 Common error:
 
-```
+```yaml
 ceph: required feature FEATURE_X is not supported by this kernel
 ```
 

@@ -163,7 +163,7 @@ app.listen(6001);
 
 Common model IDs for use in the `model` metadata field:
 
-```
+```text
 anthropic.claude-3-5-sonnet-20241022-v2:0
 anthropic.claude-3-haiku-20240307-v1:0
 amazon.titan-text-express-v1

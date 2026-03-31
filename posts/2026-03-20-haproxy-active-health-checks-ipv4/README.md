@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, Health Checks, IPv4, High Availability, Monitoring, Backend
+Tags: HAProxy, Health Check, IPv4, High Availability, Monitoring, Backend
 
 Description: Configure HAProxy active health checks to continuously monitor IPv4 backend server availability and automatically remove unhealthy servers from the load balancing pool.
 

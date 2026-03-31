@@ -154,7 +154,7 @@ The `imageFeatures: layering` value uses only the `layering` feature, which is s
 
 If a pod fails to mount a PVC with:
 
-```
+```text
 MountVolume.MountDevice failed for volume ... rbd: map failed
 ```
 
@@ -166,7 +166,7 @@ dmesg | grep -i rbd | tail -20
 
 If you see:
 
-```
+```yaml
 rbd: module not found
 ```
 

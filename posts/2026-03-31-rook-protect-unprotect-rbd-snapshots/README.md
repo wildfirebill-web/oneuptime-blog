@@ -36,7 +36,7 @@ rbd snap ls mypool/golden-image
 ```
 
 Output:
-```
+```text
 SNAPID  NAME  SIZE    PROTECTED  TIMESTAMP
 1       v1    20 GiB  yes        Tue Mar 31 10:00:00 2026
 ```
@@ -48,7 +48,7 @@ rbd snap rm mypool/golden-image@v1
 ```
 
 Error:
-```
+```yaml
 librbd: snapshot 'v1' is protected
 rbd: failed to remove snapshot: (16) Device or resource busy
 ```
@@ -86,7 +86,7 @@ rbd snap unprotect mypool/golden-image@v1
 ```
 
 Error:
-```
+```yaml
 librbd: snapshot 'v1' has children
 ```
 

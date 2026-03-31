@@ -48,7 +48,7 @@ pip install dapr[grpc]
 
 ## Project Structure
 
-```
+```text
 my-dapr-app/
   app.py
   requirements.txt

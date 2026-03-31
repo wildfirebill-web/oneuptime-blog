@@ -22,7 +22,7 @@ kubectl -n rook-ceph logs -l app=rook-ceph-osd --tail=50 | grep -i "failed\|erro
 
 Common error:
 
-```
+```text
 unable to open OSD superblock on /dev/sdb: No such file or directory
 ```
 
@@ -99,7 +99,7 @@ Configure udev rules to create stable symlinks:
 cat /etc/udev/rules.d/61-ceph-stable.rules
 ```
 
-```
+```text
 SUBSYSTEM=="block", ENV{ID_SERIAL}=="?*", \
   SYMLINK+="ceph-by-serial/$env{ID_SERIAL}"
 ```

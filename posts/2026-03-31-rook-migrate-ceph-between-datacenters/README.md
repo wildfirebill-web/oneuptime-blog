@@ -97,7 +97,7 @@ ceph-diff-stream source-pool dest-pool
 
 ## Cutover Sequence
 
-```
+```text
 Day 1-N: Run parallel sync (multi-site, RBD mirror)
 Day N:   1. Put application in maintenance mode
           2. Wait for sync to complete (check sync lag)

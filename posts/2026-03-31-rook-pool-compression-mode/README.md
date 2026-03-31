@@ -120,7 +120,7 @@ ceph osd df | awk '{print $1, $6, $7}'
 
 Example output:
 
-```
+```text
 POOL               STORED  COMPRESS_UNDER_BYTES  COMPRESS_BYTES_USED
 compressed-pool    12 GiB  16 GiB                8 GiB
 ```

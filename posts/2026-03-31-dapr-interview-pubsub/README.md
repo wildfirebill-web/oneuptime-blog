@@ -95,7 +95,7 @@ spec:
 
 ## At-Least-Once Delivery
 
-```
+```yaml
 Delivery Guarantee: At-least-once (default)
 
 Flow:

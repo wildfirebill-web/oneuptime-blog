@@ -30,7 +30,7 @@ rbd snap ls mypool/myimage
 ```
 
 Output:
-```
+```text
 SNAPID  NAME            SIZE    PROTECTED  TIMESTAMP
 1       snap-before-upgrade  10 GiB  no  Tue Mar 31 09:00:00 2026
 2       snap-after-deploy    10 GiB  no  Tue Mar 31 11:00:00 2026
@@ -60,7 +60,7 @@ rbd snap rollback mypool/myimage@snap-before-upgrade
 This rewrites the image to match the snapshot state. The time taken depends on how much data changed after the snapshot.
 
 Progress output:
-```
+```text
 Rolling back to snapshot: 100% complete...done.
 ```
 

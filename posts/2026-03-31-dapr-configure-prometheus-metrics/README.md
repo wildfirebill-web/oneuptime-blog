@@ -130,7 +130,7 @@ Navigate to `http://localhost:9090/targets` and look for the `dapr-sidecars` job
 
 ## Useful Prometheus Queries
 
-```
+```text
 # Request rate per Dapr app
 rate(dapr_http_server_request_count[5m])
 

@@ -24,7 +24,7 @@ ceph quorum_status
 
 Example showing a minority side:
 
-```
+```text
 2024-03-10T14:22:01.123456+0000 mon.a (rank 0) 3 mons at
 {a=192.168.1.1:6789/0,b=192.168.1.2:6789/0,c=192.168.1.3:6789/0},
 election epoch 18, quorum 0 a

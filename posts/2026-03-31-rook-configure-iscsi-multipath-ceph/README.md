@@ -92,7 +92,7 @@ iscsiadm -m session
 
 Expected output:
 
-```
+```yaml
 tcp: [1] 10.0.1.10:3260,1 iqn.2024-01.com.example:storage
 tcp: [2] 10.0.1.11:3260,1 iqn.2024-01.com.example:storage
 ```
@@ -107,7 +107,7 @@ multipath -ll
 
 Expected output:
 
-```
+```text
 mpatha (360014051d23f9c1 ...) dm-2 LIO-ORG,TCMU device
 size=100G features='0' hwhandler='1 alua' wp=rw
 |-+- policy='round-robin 0' prio=50 status=active

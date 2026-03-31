@@ -14,7 +14,7 @@ An actor pipeline is a processing chain where each stage is an actor. Data flows
 
 ## Pipeline Design
 
-```
+```text
 raw-event -> [EnrichmentActor] -> [ValidationActor] -> [TransformActor] -> [StorageActor]
 ```
 

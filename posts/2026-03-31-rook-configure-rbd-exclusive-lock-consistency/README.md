@@ -53,7 +53,7 @@ kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- \
 
 Output example:
 
-```
+```text
 There is 1 exclusive lock on this image.
 Locker      ID          Address
 client.4567 auto 1234   192.168.1.10:0/67890

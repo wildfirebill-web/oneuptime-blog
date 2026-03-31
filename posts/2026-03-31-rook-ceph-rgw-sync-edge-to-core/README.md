@@ -12,7 +12,7 @@ Ceph RGW (RADOS Gateway) multi-site sync enables asynchronous object replication
 
 ## Architecture Overview
 
-```
+```text
 Edge Site                          Core Datacenter
 +-----------+                      +-----------+
 | RGW Zone  |  --async-sync-->     | RGW Zone  |
@@ -101,7 +101,7 @@ radosgw-admin sync status
 
 Expected output:
 
-```
+```text
           realm 1234-abcd (global)
       zonegroup main (main)
            zone edge-zone (edge-zone)

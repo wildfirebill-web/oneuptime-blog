@@ -33,7 +33,7 @@ dapr run --app-id myapp --log-level debug -- node app.js
 
 Look for lines like:
 
-```
+```text
 time="2024-01-15T10:00:00Z" level=error msg="error invoking app" app_id=order-service err="connection refused"
 ```
 

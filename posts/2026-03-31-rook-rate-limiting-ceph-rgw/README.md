@@ -100,7 +100,7 @@ radosgw-admin ratelimit enable \
 
 When a user or bucket exceeds their rate limit, RGW returns HTTP 503:
 
-```
+```xml
 HTTP/1.1 503 SlowDown
 <Error>
   <Code>SlowDown</Code>

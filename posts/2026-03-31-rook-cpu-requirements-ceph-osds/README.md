@@ -61,7 +61,7 @@ ceph config get osd osd_max_backfills
 
 Budget for recovery to run simultaneously with normal I/O:
 
-```
+```text
 Recovery adds ~50% CPU overhead during active recovery
 Total CPU = (Normal load CPU) x 1.5
 ```

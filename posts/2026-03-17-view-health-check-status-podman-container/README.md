@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Health Checks, Monitoring, Status
+Tags: Podman, Containers, DevOps, Health Check, Monitoring, Status
 
 Description: Learn how to view and interpret the health check status of Podman containers for monitoring and debugging.
 

@@ -14,7 +14,7 @@ Dapr middleware components are applied in the order they are listed in the `http
 
 ## Pipeline Execution Order
 
-```
+```toml
 Client Request
      |
      v

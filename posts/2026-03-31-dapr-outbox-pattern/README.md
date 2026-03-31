@@ -16,7 +16,7 @@ The Outbox pattern solves dual-write problems in event-driven systems. Instead o
 
 Without the outbox pattern:
 
-```
+```text
 1. Save order to database  - SUCCESS
 2. Publish order event     - FAILURE (message broker down)
 ```

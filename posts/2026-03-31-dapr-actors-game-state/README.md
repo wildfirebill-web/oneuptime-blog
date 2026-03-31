@@ -12,7 +12,7 @@ Online games require fast, consistent per-entity state management. Dapr actors a
 
 ## Game Room Actor Design
 
-```
+```text
 Actor Type: GameRoom
 Actor ID:   <roomId>
 

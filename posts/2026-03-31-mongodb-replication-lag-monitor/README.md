@@ -58,7 +58,7 @@ rs.printSecondaryReplicationInfo();
 
 Output:
 
-```
+```yaml
 source: secondary1.example.com:27018
     syncedTo: Tue Mar 31 2024 11:59:58 GMT
     2 secs (0 hrs) behind the primary

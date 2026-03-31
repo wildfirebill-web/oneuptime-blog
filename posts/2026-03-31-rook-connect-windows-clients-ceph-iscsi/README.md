@@ -49,7 +49,7 @@ Get-IscsiTarget
 
 Expected output:
 
-```
+```text
 NodeAddress                                          IsConnected
 -----------                                          -----------
 iqn.2024-01.com.example:production-storage           False

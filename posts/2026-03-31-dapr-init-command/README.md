@@ -60,7 +60,7 @@ kubectl get pods -n dapr-system
 
 Expected output:
 
-```
+```text
 NAME                                     READY   STATUS    RESTARTS
 dapr-dashboard-5d5b6ccf-abc12            1/1     Running   0
 dapr-operator-7d7d8d6c9b-xyz34           1/1     Running   0
@@ -93,7 +93,7 @@ After initialization, confirm the CLI and runtime match:
 dapr version
 ```
 
-```
+```text
 CLI version: 1.13.0
 Runtime version: 1.13.0
 ```

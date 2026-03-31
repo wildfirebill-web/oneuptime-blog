@@ -12,7 +12,7 @@ Google Cloud Platform's GKE and Persistent Disks provide a solid foundation for 
 
 ## Project Structure
 
-```
+```text
 ceph-gcp/
   main.tf
   gke.tf

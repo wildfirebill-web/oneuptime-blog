@@ -12,7 +12,7 @@ Healthcare system integration involves connecting EHRs (Electronic Health Record
 
 ## Healthcare Architecture with Dapr
 
-```
+```text
 EHR System -> HL7/FHIR Adapter Service -> Dapr Pub/Sub
                                         -> Patient Service
                                         -> Lab Service

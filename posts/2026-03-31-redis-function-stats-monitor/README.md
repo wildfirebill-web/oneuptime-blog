@@ -34,7 +34,7 @@ flowchart TD
 
 A typical FUNCTION STATS response looks like this:
 
-```
+```text
 1) "running_script"
 2) 1) "duration_ms"
    2) (integer) 0
@@ -54,7 +54,7 @@ A typical FUNCTION STATS response looks like this:
 
 When a function is actively running, `running_script` contains its details:
 
-```
+```text
 1) "running_script"
 2) 1) "duration_ms"
    2) (integer) 4823

@@ -97,7 +97,7 @@ Find where modules are installed on manager nodes:
 ls /usr/share/ceph/mgr/
 ```
 
-```
+```text
 balancer/    crash/       dashboard/   influx/
 iostat/      nfs/         prometheus/  rbd_support/
 rgw/         telegraf/    telemetry/   volumes/

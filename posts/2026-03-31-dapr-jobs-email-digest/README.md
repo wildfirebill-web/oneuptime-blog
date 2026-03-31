@@ -12,7 +12,7 @@ Email digests - daily summaries, weekly newsletters, or activity roundups - requ
 
 ## Architecture for Email Digest Scheduling
 
-```
+```text
 Dapr Jobs (trigger) --> Digest Service
                              |
                              +-- Query activity data

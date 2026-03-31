@@ -80,7 +80,7 @@ ORDER BY month;
 DESCRIBE TABLE orders_delta;
 ```
 
-```
+```text
 Column          Type
 order_id        Int64
 customer_id     Int64

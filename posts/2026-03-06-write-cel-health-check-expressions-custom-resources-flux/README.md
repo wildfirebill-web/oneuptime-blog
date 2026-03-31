@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, CEL, Health Checks, Custom Resources, Kubernetes, GitOps, Expression
+Tags: Flux CD, CEL, Health Check, Custom Resources, Kubernetes, GitOps, Expression
 
 Description: A comprehensive guide to writing Common Expression Language (CEL) health check expressions for custom Kubernetes resources in Flux CD Kustomizations.
 

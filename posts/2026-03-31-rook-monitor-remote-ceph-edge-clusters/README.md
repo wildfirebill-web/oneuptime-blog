@@ -12,7 +12,7 @@ Managing many edge clusters means you cannot log into each one individually to c
 
 ## Architecture
 
-```
+```text
 Edge Site 1: Ceph MGR Exporter -> Prometheus (edge) -> Federate
 Edge Site 2: Ceph MGR Exporter -> Prometheus (edge) -> Federate
 Edge Site N: Ceph MGR Exporter -> Prometheus (edge) -> Federate

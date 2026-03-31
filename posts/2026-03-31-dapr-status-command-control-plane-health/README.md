@@ -20,7 +20,7 @@ dapr status --kubernetes
 
 Sample output:
 
-```
+```text
   NAME                   NAMESPACE    HEALTHY  STATUS    REPLICAS  VERSION  AGE
   dapr-dashboard         dapr-system  True     Running   1         0.14.0   2h
   dapr-operator          dapr-system  True     Running   1         1.13.0   2h

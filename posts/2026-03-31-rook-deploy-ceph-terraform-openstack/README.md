@@ -12,7 +12,7 @@ OpenStack is a popular private cloud platform for running Ceph on-premises. Terr
 
 ## Project Structure
 
-```
+```text
 ceph-openstack/
   main.tf
   network.tf

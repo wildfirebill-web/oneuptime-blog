@@ -106,7 +106,7 @@ vault kv list rook/osd/
 ```
 
 Expected output:
-```
+```text
 Keys
 ----
 osd-0

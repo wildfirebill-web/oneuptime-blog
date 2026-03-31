@@ -56,7 +56,7 @@ ceph osd pool stats mypool
 
 Example output:
 
-```
+```text
 pool mypool id 3
   client io 245 MiB/s rd, 12 MiB/s wr, 1.23k op/s rd, 512 op/s wr
 ```
@@ -71,13 +71,13 @@ ceph mgr module enable prometheus
 
 Client metrics are exposed at:
 
-```
+```yaml
 http://<mgr-host>:9283/metrics
 ```
 
 Key metrics to monitor:
 
-```
+```text
 ceph_osd_op_r_latency_sum
 ceph_osd_op_w_latency_sum
 ceph_pool_rd_bytes

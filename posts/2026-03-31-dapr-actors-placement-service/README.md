@@ -19,7 +19,7 @@ The Dapr placement service is the backbone of actor distribution. It maintains a
 
 ## Placement Service Architecture
 
-```
+```text
 Client Sidecar
      |
      v
@@ -85,7 +85,7 @@ dapr_placement:
 
 The placement service uses a virtual node consistent hash ring. Each host is assigned multiple virtual nodes for better distribution:
 
-```
+```text
 Actor ID "counter-001" -> hash -> maps to Host Pod B
 Actor ID "counter-002" -> hash -> maps to Host Pod A
 Actor ID "counter-003" -> hash -> maps to Host Pod C

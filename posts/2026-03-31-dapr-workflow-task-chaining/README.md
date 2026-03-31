@@ -12,7 +12,7 @@ Task chaining is the most fundamental workflow pattern: a sequence of activities
 
 ## What is Task Chaining?
 
-```
+```text
 Input -> [Activity A] -> [Activity B] -> [Activity C] -> Output
 ```
 

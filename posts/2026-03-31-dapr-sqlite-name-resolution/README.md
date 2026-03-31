@@ -75,7 +75,7 @@ sqlite3 /tmp/dapr-nameresolution.db \
 
 Expected output:
 
-```
+```text
 order-service|127.0.0.1|50001|2026-03-31T12:00:00Z
 payment-service|127.0.0.1|50002|2026-03-31T12:00:01Z
 ```

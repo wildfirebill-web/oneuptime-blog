@@ -14,7 +14,7 @@ A centralized logging and monitoring platform collects structured logs, metrics,
 
 ## Architecture
 
-```
+```text
 Services --> Dapr Pub/Sub (logs/metrics topics) --> Log Aggregator Service
          --> Dapr Sidecar (auto traces) --> OpenTelemetry Collector --> Jaeger/Tempo
 ```

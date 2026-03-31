@@ -178,7 +178,7 @@ def record_prometheus_metrics(metrics: ConversationMetrics):
 
 Key Prometheus queries for an LLM usage dashboard:
 
-```
+```text
 # Request rate per minute
 rate(llm_requests_total[1m])
 
